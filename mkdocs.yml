@@ -1,7 +1,7 @@
 # Copyright (c) 2016-2023 Martin Donath <martin.donath@squidfunk.com>
 # Project information
 site_name: Teobald Software Helpcenter
-site_url: http://helpcenter.theobald-software.com/
+site_url: http://helpcenter.theobald-software.github.io/
 #site_author: Valerie Schipka
 # site_description: >-
 #  Write your documentation in Markdown and create a professional static site in
@@ -92,10 +92,10 @@ plugins:
   #    include_dir: docs/includes
 
   # Continuous integration
-  - group:
-      enabled: !ENV CI
-      plugins:
-         - optimize
+#  - group:
+#      enabled: !ENV CI
+ #     plugins:
+#         - optimize
 #        - minify:
 #            minify_html: true
 
