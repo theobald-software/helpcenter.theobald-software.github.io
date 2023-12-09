@@ -9,6 +9,47 @@ hide:
 
 Choose your product:
 
+::cards:: cols=3
+
+- title: Xtract Universal
+  content: |
+    The flexible SAP interface for databases, analytics, BI or cloud solutions.
+  image: ./assets/images/XtractUniversal.png
+  url: https://help.theobald-software.com/en/xtract-universal/
+  
+- title: Xtract IS
+  content: |
+    The powerful SAP plug-in for SQL Server Integration Services to extract mass data.
+  image: ./assets/images/XtractIS.png
+  url: https://help.theobald-software.com/en/xtract-is/
+  
+- title: Xtract for Alteryx
+  content: |
+    Integrate your SAP data into Alteryx with this drag & drop toolbox for the Alteryx Designer.
+  image: ./assets/images/XtractAlteryx.png
+  url: https://help.theobald-software.com/en/xtract-for-alteryx/
+  
+- title: Board Connector
+  content: |
+    Access your SAP data directly from Board, without an additional data warehouse.
+  image: ./assets/images/Board.png
+  url: https://help.theobald-software.com/en/board-connector/
+  
+- title: yunIO
+  content: |
+    SAP process automation via web services for cloud environments.
+  image: ./assets/images/YunIO.png
+  url: https://help.theobald-software.com/en/yunio/
+  
+- title: ERPConnect
+  content: |
+    The .NET programming library to develop your own SAP interfaces.
+  image: ./assets/images/ERPConnect.png
+  url: https://help.theobald-software.com/en/erpconnect/
+  
+::/cards::
+
+<!---
 <div class="grid cards" markdown>
 
 -   ![xu](assets/images/XtractUniversal.png){ .lg .middle width="50px"} __Xtract Universal__
@@ -60,3 +101,4 @@ Choose your product:
     [:octicons-arrow-right-24: ERPConnect](https://help.theobald-software.com/en/erpconnect/)
 
 </div>
+-->

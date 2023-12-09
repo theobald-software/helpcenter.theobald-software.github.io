@@ -1,7 +1,7 @@
 # Copyright (c) 2016-2023 Martin Donath <martin.donath@squidfunk.com>
 # Project information
-site_name: Teobald Software Helpcenter
-site_url: http://helpcenter.theobald-software.github.io/
+site_name: Theobald Software Helpcenter
+site_url: https://helpcenter.theobald-software.com/
 #site_author: Valerie Schipka
 # site_description: >-
 #  Write your documentation in Markdown and create a professional static site in
@@ -71,6 +71,10 @@ theme:
   favicon: assets/images/favicon.png 
   logo: assets/images/logo.png 
 
+# Custom CSS
+extra_css:
+  - assets/stylesheets/neoteroi-cards.css
+  
 # Plugins
 plugins:
   - meta
@@ -78,7 +82,7 @@ plugins:
       hoisting: false
  # - search:
  #     separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
-  - typeset
+ # - typeset
  # - git-revision-date-localized:
         #enable_creation_date: true
         #type: timeago
@@ -167,7 +171,8 @@ markdown_extensions:
           case: lower
   - pymdownx.tasklist:
       custom_checkbox: true
-      
+  - neoteroi.cards
+  
  # Page tree
 #nav:
 #  - Home: index.md
