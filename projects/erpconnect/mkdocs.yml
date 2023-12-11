@@ -109,6 +109,7 @@ extra:
   status:
     new: Recently added
     deprecated: Deprecated
+    beta: Beta
   generator: false #footer display Made with Material for MkDocs
   analytics:
     provider: google
