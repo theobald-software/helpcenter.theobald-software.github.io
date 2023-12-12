@@ -49,7 +49,6 @@ Choose your product:
   url: https://help.theobald-software.com/en/erpconnect/
   
 ::/cards::
--->
 
 [project://erpconnect/index.md](project://erpconnect/index.md)
 
@@ -59,6 +58,7 @@ Choose your product:
 
 [project://erpconnect/docs/index](project://erpconnect/docs/index)
 
+-->
 
 <div class="grid cards" markdown>
 
