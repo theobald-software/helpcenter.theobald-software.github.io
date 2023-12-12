@@ -78,7 +78,7 @@ extra_css:
 # Plugins
 plugins:
   - meta
-  #- projects:
+  - projects
   #    enabled: !ENV [CI, false]
   #    hoisting: false
  # - search:
