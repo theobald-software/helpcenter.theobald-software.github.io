@@ -51,14 +51,6 @@ Choose your product:
 ::/cards::
 -->
 
-[project://erpconnect/index.md](project://erpconnect/index.md)
-
-[project://erpconnect/index](project://erpconnect/index)
-
-[project://erpconnect/docs/index.md](project://erpconnect/docs/index.md)
-
-[project://erpconnect/docs/index](project://erpconnect/docs/index)
-
 
 <div class="grid cards" markdown>
 
@@ -112,3 +104,11 @@ Choose your product:
 
 </div>
 
+
+[project://erpconnect/index.md](project://erpconnect/index.md)
+
+[project://erpconnect/index](project://erpconnect/index)
+
+[project://erpconnect/docs/index.md](project://erpconnect/docs/index.md)
+
+[project://erpconnect/docs/index](project://erpconnect/docs/index)
