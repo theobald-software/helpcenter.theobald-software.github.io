@@ -9,6 +9,7 @@ hide:
 
 Choose your product:
 
+<!---
 ::cards:: cols=3
 
 - title: Xtract Universal
@@ -48,7 +49,7 @@ Choose your product:
   url: https://help.theobald-software.com/en/erpconnect/
   
 ::/cards::
-
+-->
 
 [project://erpconnect/index.md](project://erpconnect/index.md)
 
@@ -58,7 +59,7 @@ Choose your product:
 
 [project://erpconnect/docs/index](project://erpconnect/docs/index)
 
-<!---
+
 <div class="grid cards" markdown>
 
 -   ![xu](assets/images/XtractUniversal.png){ .lg .middle width="50px"} __Xtract Universal__
@@ -110,4 +111,4 @@ Choose your product:
     [:octicons-arrow-right-24: ERPConnect](https://help.theobald-software.com/en/erpconnect/)
 
 </div>
--->
+
