@@ -78,7 +78,10 @@ extra_css:
 # Plugins
 plugins:
   - meta
-  - projects
+  - projects:
+      enabled: !ENV [CI, false]
+      cache: false
+      hoisting: false
  # - search:
  #     separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
  # - typeset
