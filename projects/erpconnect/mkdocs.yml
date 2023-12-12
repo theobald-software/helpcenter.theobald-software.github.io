@@ -87,7 +87,7 @@ plugins:
         #enable_creation_date: true
         #type: timeago
   - macros:
-      include_dir: includes
+      include_dir: ../../includes
   #- swagger-ui-tag
   #- glightbox #image zoom
   - awesome-pages
