@@ -80,18 +80,18 @@ extra_css:
 # Plugins
 plugins:
   - meta
-  - search:
-      separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+  #- search:
+  #    separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
   - typeset
-  - git-revision-date-localized:
+  #- git-revision-date-localized:
         #enable_creation_date: true
         #type: timeago
   #- macros:
   #    include_dir: ../../includes
   #- swagger-ui-tag
   #- glightbox #image zoom
-  - awesome-pages
-  - tags
+  #- awesome-pages
+  #- tags
   #- pdf-export:
   #     combined: false
 
