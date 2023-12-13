@@ -80,7 +80,7 @@ plugins:
       cache: false
       hoisting: true
       #projects_config_transform: !!python/name:projects.transform
-  #- pdf-export:
+  - pdf-export
   #     combined: false # specify if the whole documentation is exported (true) or if only the active page is exported (false)
 
 # Continuous integration
