@@ -34,6 +34,7 @@ jobs:
       - run: pip install mkdocs-awesome-pages-plugin
       - run: pip install mkdocs-table-reader-plugin
       - run: pip install mkdocs-pdf-export-plugin
+      - run: pip install termynal
       - run: pip install neoteroi-mkdocs
       - run: mkdocs gh-deploy --force
 env:
