@@ -73,8 +73,7 @@ theme:
 
 # Plugins
 plugins:
-  - meta
-  - typeset
+
   - projects:
       projects_dir: projects
       cache: false
@@ -91,54 +90,6 @@ plugins:
 #        - minify: # minifies HTML by stripping all whitespace from the generated documentation
 #            minify_html: true
 
-# Additional configuration
-extra:
-  generator: false #footer display Made with Material for MkDocs
-  social:
-    - icon: fontawesome/brands/linkedin 
-      link: https://www.linkedin.com/company/theobald-software/
-    - icon: fontawesome/brands/youtube 
-      link: https://www.youtube.com/user/TheobaldSoftware
-    - icon: fontawesome/brands/instagram 
-      link: https://www.instagram.com/theobaldsoftware/
-    - icon: fontawesome/solid/envelope
-      link: https://theobald-software.com/en/newsletter/
-      
-# Extensions
-markdown_extensions:
-  - abbr
-  - admonition
-  - attr_list
-  - def_list
-  - md_in_html
-  - tables
-  - toc:
-      toc_depth: 3
-      permalink: true
-  - pymdownx.betterem: #improves bold/italic formatting (https://facelessuser.github.io/pymdown-extensions/extensions/betterem/)
-      smart_enable: all
-  - pymdownx.details #unfolding content, e.g., FAQs (https://facelessuser.github.io/pymdown-extensions/extensions/details/)
-  - pymdownx.emoji:
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
-  - pymdownx.highlight:
-      anchor_linenums: true
-      line_spans: __span
-      pygments_lang_class: true
-  - pymdownx.inlinehilite #code highlighter (https://facelessuser.github.io/pymdown-extensions/extensions/inlinehilite/)
-  - pymdownx.keys #styling for keys, e.g., ++ctrl+alt+delete++ (https://facelessuser.github.io/pymdown-extensions/extensions/keys/)
-  - pymdownx.smartsymbols
- # - pymdownx.snippets:
- #     base_path: includes
-  - pymdownx.superfences
-  - pymdownx.tabbed: #adds tabs (https://facelessuser.github.io/pymdown-extensions/extensions/tabbed/)
-      alternate_style: true
-      combine_header_slug: true
-      slugify: !!python/object/apply:pymdownx.slugs.slugify
-        kwds:
-          case: lower
-  - pymdownx.tasklist:
-      custom_checkbox: true
-  
+
 nav:
   - ERPConnect: project://erpconnect
