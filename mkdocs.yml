@@ -73,7 +73,7 @@ theme:
 
 # Plugins
 plugins:
-  - projects
+  #- projects
       #projects_dir: projects
       #cache: false
       #hoisting: true
