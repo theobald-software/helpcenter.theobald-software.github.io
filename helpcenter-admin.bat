@@ -13,5 +13,5 @@ if _%1_==_payload_  goto :payload
 ::ENTER YOUR CODE BELOW::
 cd C:\Source\helpcenter.theobald-software.github.io
 start "HelpCenter" /B mkdocs serve -a localhost:8000 
-start "" /B http://localhost:8000/
+rem start "" /B http://localhost:8000/
 pause

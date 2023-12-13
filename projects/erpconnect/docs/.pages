@@ -1,4 +1,4 @@
-title: Main Menu
+
 nav:
     - Home: index.md
     - API Reference: erpconnect-api

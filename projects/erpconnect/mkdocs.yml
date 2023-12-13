@@ -75,7 +75,7 @@ theme:
 # Custom CSS
 extra_css:
   - assets/stylesheets/extra.css
-  - stylesheets/neoteroi-cards.css 
+  - assets/stylesheets/neoteroi-cards.css 
   
 # Plugins
 plugins:
@@ -92,8 +92,8 @@ plugins:
 
         #enable_creation_date: true
         #type: timeago
-  #- macros:
-  #    include_dir: ../../includes
+  - macros:
+      include_dir: includes
   #- swagger-ui-tag
   #- glightbox #image zoom
   - awesome-pages
@@ -114,8 +114,8 @@ markdown_extensions:
       toc_depth: 3
       permalink: "#"
       separator: "-"
-  #- pymdownx.snippets:
-  #    base_path: ../../../includes
+  - pymdownx.snippets:
+      base_path: includes
   - pymdownx.superfences #for content tabs (version history)
   - pymdownx.tabbed:
       alternate_style: true
@@ -175,5 +175,6 @@ extra:
       link: https://www.instagram.com/theobaldsoftware/
     - icon: fontawesome/solid/envelope
       link: https://theobald-software.com/en/newsletter/
+  product: ERPConnect
   #variable: SSIS variable
   #variables: SSIS variables
