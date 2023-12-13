@@ -75,8 +75,8 @@ theme:
 plugins:
   - projects:
       projects_dir: projects
-      cache: false
-      hoisting: true
+      cache: true
+      hoisting: false
       #projects_config_transform: !!python/name:projects.transform
   #- pdf-export
   #     combined: false # specify if the whole documentation is exported (true) or if only the active page is exported (false)
