@@ -140,5 +140,5 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
   
-#nav:
-#  - ERPConnect: project://erpconnect
+nav:
+  - ERPConnect: project://erpconnect
