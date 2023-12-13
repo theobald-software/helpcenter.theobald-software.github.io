@@ -80,7 +80,7 @@ extra_css:
 # Plugins
 plugins:
   - meta
-  #- git-revision-date-localized
+  - git-revision-date-localized
   - termynal:
       title: "Youpi"
       prompt_literal_start:
