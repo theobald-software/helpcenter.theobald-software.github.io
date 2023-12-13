@@ -19,4 +19,93 @@ copyright: Copyright &copy; 2024 Theobald Software GmbH #<br>“The best SAP int
 theme:
   name: material
 #  custom_dir: material/overrides
+  features:
+    # - announce.dismiss
+    # - content.action.edit
+    # - content.action.view
+    # - content.code.annotate
+    # - content.code.copy
+    # - content.code.select
+    # - content.tabs.link
+     - content.tooltips
+    # - header.autohide
+     - navigation.expand #displays all pages in the navigation
+    # - navigation.footer
+    # - navigation.indexes #adds landing pages for groups
+     - navigation.instant
+    # - navigation.instant.prefetch
+    # - navigation.instant.progress
+     - navigation.path #adds breadcrumbs
+    # - navigation.prune
+    # - navigation.sections #no groups in the navigation
+     - navigation.tabs
+     - navigation.tabs.sticky
+     - navigation.top #add a "back to top" button
+     - navigation.tracking #instantly adds the current headline to the URL
+    # - toc.follow
+    # - toc.integrate #adds the toc to the navigation
+  palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/link
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: red
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: red
+      toggle:
+        icon: material/toggle-switch-off
+        name: Switch to system preference
+  font:
+    text: Poppins
+    code: Roboto Mono
+  favicon: assets/ERPConnect.png
+  logo: assets/ERPConnect.png 
 
+# Custom CSS
+extra_css:
+  - assets/stylesheets/extra.css
+  - stylesheets/neoteroi-cards.css 
+  
+
+# Additional configuration
+extra:
+  status:
+    new: Recently added
+    deprecated: Deprecated
+    beta: Beta
+  generator: false #footer display Made with Material for MkDocs
+  analytics:
+    provider: google
+    property: !ENV GOOGLE_ANALYTICS_KEY
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: material/emoticon-happy-outline
+          name: This page was helpful
+          data: 1
+          note: Thanks for your feedback!
+        - icon: material/emoticon-sad-outline
+          name: This page could be improved
+          data: 0
+          note: >-
+            Thanks for your feedback! Help us improve this page by
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSe8L5YDggZiVjgvBKfv-XCdbQAEJrseRh8MBh-jS92TU2aqzw/viewform?usp=pp_url&entry.853143515={url}" target=_blank>telling us what you're missing</a>.
+  social:
+    - icon: fontawesome/brands/linkedin 
+      link: https://www.linkedin.com/company/theobald-software/
+    - icon: fontawesome/brands/youtube 
+      link: https://www.youtube.com/user/TheobaldSoftware
+    - icon: fontawesome/brands/instagram 
+      link: https://www.instagram.com/theobaldsoftware/
+    - icon: fontawesome/solid/envelope
+      link: https://theobald-software.com/en/newsletter/
+  #variable: SSIS variable
+  #variables: SSIS variables
