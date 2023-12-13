@@ -75,10 +75,10 @@ theme:
 plugins:
   - meta
   - typeset
-  - projects:
-      projects_dir: projects
-      cache: false
-      hoisting: true
+  #- projects:
+  #    projects_dir: projects
+  #    cache: false
+  #    hoisting: true
       #projects_config_transform: !!python/name:projects.transform
   #- pdf-export
   #     combined: false # specify if the whole documentation is exported (true) or if only the active page is exported (false)
@@ -140,5 +140,5 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
   
-nav:
-  - ERPConnect: project://erpconnect
+#nav:
+#  - ERPConnect: project://erpconnect
