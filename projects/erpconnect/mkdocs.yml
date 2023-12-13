@@ -42,6 +42,9 @@ theme:
      - navigation.tabs.sticky
      - navigation.top #add a "back to top" button
      - navigation.tracking #instantly adds the current headline to the URL
+     - search.highlight
+     - search.share
+     - search.suggest
     # - toc.follow
     # - toc.integrate #adds the toc to the navigation
   palette:
@@ -74,3 +77,108 @@ extra_css:
   - assets/stylesheets/extra.css
   - stylesheets/neoteroi-cards.css 
   
+# Plugins
+plugins:
+  - meta
+  - git-revision-date-localized
+  - termynal:
+      title: "Youpi"
+      prompt_literal_start:
+        - "$"
+        - ">"
+  - search:
+      separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+  - typeset
+
+        #enable_creation_date: true
+        #type: timeago
+  #- macros:
+  #    include_dir: ../../includes
+  #- swagger-ui-tag
+  #- glightbox #image zoom
+  #- awesome-pages
+  #- tags
+  #- pdf-export:
+  #     combined: false
+
+
+  # Continuous integration
+#  - group:
+ #     enabled: !ENV CI
+#      plugins:
+#         - optimize
+#        - minify:
+#            minify_html: true
+
+
+# Additional configuration
+extra:
+  status:
+    new: Recently added
+    deprecated: Deprecated
+    beta: Beta
+  generator: false #footer display Made with Material for MkDocs
+  analytics:
+    provider: google
+    property: !ENV GOOGLE_ANALYTICS_KEY
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: material/emoticon-happy-outline
+          name: This page was helpful
+          data: 1
+          note: Thanks for your feedback!
+        - icon: material/emoticon-sad-outline
+          name: This page could be improved
+          data: 0
+          note: >-
+            Thanks for your feedback! Help us improve this page by
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSe8L5YDggZiVjgvBKfv-XCdbQAEJrseRh8MBh-jS92TU2aqzw/viewform?usp=pp_url&entry.853143515={url}" target=_blank>telling us what you're missing</a>.
+  social:
+    - icon: fontawesome/brands/linkedin 
+      link: https://www.linkedin.com/company/theobald-software/
+    - icon: fontawesome/brands/youtube 
+      link: https://www.youtube.com/user/TheobaldSoftware
+    - icon: fontawesome/brands/instagram 
+      link: https://www.instagram.com/theobaldsoftware/
+    - icon: fontawesome/solid/envelope
+      link: https://theobald-software.com/en/newsletter/
+  #variable: SSIS variable
+  #variables: SSIS variables
+  
+       
+# Extensions
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - md_in_html
+  - tables
+  - toc:
+      toc_depth: 3
+      permalink: true
+  - pymdownx.betterem: #improves bold/italic formatting (https://facelessuser.github.io/pymdown-extensions/extensions/betterem/)
+      smart_enable: all
+  - pymdownx.details #unfolding content, e.g., FAQs (https://facelessuser.github.io/pymdown-extensions/extensions/details/)
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite #code highlighter (https://facelessuser.github.io/pymdown-extensions/extensions/inlinehilite/)
+  - pymdownx.keys #styling for keys, e.g., ++ctrl+alt+delete++ (https://facelessuser.github.io/pymdown-extensions/extensions/keys/)
+  - pymdownx.smartsymbols
+ # - pymdownx.snippets:
+ #     base_path: includes
+  - pymdownx.superfences
+  - pymdownx.tabbed: #adds tabs (https://facelessuser.github.io/pymdown-extensions/extensions/tabbed/)
+      alternate_style: true
+      combine_header_slug: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+  - pymdownx.tasklist:
+      custom_checkbox: true
