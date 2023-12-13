@@ -38,6 +38,12 @@ jobs:
       - run: pip install mkdocs-pdf-export-plugin
       - run: pip install termynal
       - run: pip install neoteroi-mkdocs
-      - run: mkdocs gh-deploy --force
+      
+      - name: Deploy documentation
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          PYTHONPATH: .
+        run: |
+          mkdocs gh-deploy --force
 env:
   GH_TOKEN: ${{ secrets.GH_TOKEN }} 
