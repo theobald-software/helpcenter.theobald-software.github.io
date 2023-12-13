@@ -49,6 +49,17 @@ Choose your product:
   url: https://help.theobald-software.com/en/erpconnect/
   
 ::/cards::
+
+[project://erpconnect](project://erpconnect)
+
+[project://erpconnect/index](project://erpconnect/index)
+
+[project://erpconnect/docs/index.md](project://erpconnect/docs/index.md)
+
+[project://erpconnect/docs/index](project://erpconnect/docs/index)
+
+[project://erpconnect/index.md#faqs](project://erpconnect/index.md#faqs)
+
 -->
 
 
@@ -100,15 +111,7 @@ Choose your product:
 
     The .NET programming library to develop your own SAP interfaces.
 
-    [:octicons-arrow-right-24: ERPConnect](https://help.theobald-software.com/en/erpconnect/)
+    [:octicons-arrow-right-24: ERPConnect](https://helpcenter.theobald-software.com/erpconnect)
 
 </div>
 
-
-[project://erpconnect/index.md](project://erpconnect/index.md)
-
-[project://erpconnect/index](project://erpconnect/index)
-
-[project://erpconnect/docs/index.md](project://erpconnect/docs/index.md)
-
-[project://erpconnect/docs/index](project://erpconnect/docs/index)

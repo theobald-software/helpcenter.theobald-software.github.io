@@ -13,39 +13,38 @@ repo_name: theobald-software/helpcenter.theobald-software.github.io
 
 # Copyright
 copyright: Copyright &copy; 2024 Theobald Software GmbH #<br>“The best SAP interface is the one you don’t even notice.” - Patrick Theobald
-
 # Configuration
 theme:
   name: material
-  #custom_dir: material/overrides
+#  custom_dir: material/overrides
   features:
-    #- announce.dismiss
+    # - announce.dismiss
     # - content.action.edit
     # - content.action.view
     # - content.code.annotate
     # - content.code.copy
     # - content.code.select
     # - content.tabs.link
-    # - content.tooltips
+     - content.tooltips
     # - header.autohide
-    # - navigation.expand
+    # - navigation.expand #displays all pages in the navigation
     # - navigation.footer
-    # - navigation.indexes
+    # - navigation.indexes #adds landing pages for groups
     # - navigation.instant
     # - navigation.instant.prefetch
     # - navigation.instant.progress
-    # - navigation.path
+    # - navigation.path #adds breadcrumbs
     # - navigation.prune
-    # - navigation.sections
+    # - navigation.sections #no groups in the navigation
     # - navigation.tabs
     # - navigation.tabs.sticky
-    # - navigation.top
-    # - navigation.tracking
+    # - navigation.top #add a "back to top" button
+    # - navigation.tracking #instantly adds the current headline to the URL
     # - search.highlight
     # - search.share
     # - search.suggest
     # - toc.follow
-    # - toc.integrate
+    # - toc.integrate #adds the toc to the navigation
   palette:
     - media: "(prefers-color-scheme)"
       toggle:
@@ -68,38 +67,35 @@ theme:
   font:
     text: Poppins
     code: Roboto Mono
-  favicon: assets/images/favicon.png 
+  favicon: assets/images/favicon.png
   logo: assets/images/logo.png 
 
-# Custom CSS
-extra_css:
-  - assets/stylesheets/neoteroi-cards.css
   
 # Plugins
 plugins:
   - meta
-  - projects
-  #    enabled: !ENV [CI, false]
-  #    hoisting: false
- # - search:
- #     separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
- # - typeset
- # - git-revision-date-localized:
+  #- search:
+  #    separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+  - typeset
+  - projects:
+      projects_dir: projects
+  #- git-revision-date-localized:
         #enable_creation_date: true
         #type: timeago
+  #- macros:
+  #    include_dir: ../../includes
   #- swagger-ui-tag
   #- glightbox #image zoom
   #- awesome-pages
   #- tags
   #- pdf-export:
   #     combined: false
-  # - macros:
-  #    include_dir: docs/includes
+
 
   # Continuous integration
 #  - group:
-#      enabled: !ENV CI
- #     plugins:
+ #     enabled: !ENV CI
+#      plugins:
 #         - optimize
 #        - minify:
 #            minify_html: true
@@ -109,25 +105,24 @@ extra:
   status:
     new: Recently added
     deprecated: Deprecated
-  #variable: SSIS variable
-  #variables: SSIS variables
+    beta: Beta
   generator: false #footer display Made with Material for MkDocs
-  #analytics:
-  #  provider: google
-  #  property: !ENV GOOGLE_ANALYTICS_KEY
-  #  feedback:
-  #    title: Was this page helpful?
-  #    ratings:
-  #      - icon: material/emoticon-happy-outline
-  #        name: This page was helpful
-  #        data: 1
-  #        note: Thanks for your feedback!
-  #      - icon: material/emoticon-sad-outline
-  #        name: This page could be improved
-  #        data: 0
-  #        note: >-
-  #          Thanks for your feedback! Help us improve this page by
-  #          <a href="https://docs.google.com/forms/d/e/1FAIpQLSe8L5YDggZiVjgvBKfv-XCdbQAEJrseRh8MBh-jS92TU2aqzw/viewform?usp=pp_url&entry.853143515={url}" target=_blank>telling us what you're missing</a>.
+  analytics:
+    provider: google
+    property: !ENV GOOGLE_ANALYTICS_KEY
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: material/emoticon-happy-outline
+          name: This page was helpful
+          data: 1
+          note: Thanks for your feedback!
+        - icon: material/emoticon-sad-outline
+          name: This page could be improved
+          data: 0
+          note: >-
+            Thanks for your feedback! Help us improve this page by
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSe8L5YDggZiVjgvBKfv-XCdbQAEJrseRh8MBh-jS92TU2aqzw/viewform?usp=pp_url&entry.853143515={url}" target=_blank>telling us what you're missing</a>.
   social:
     - icon: fontawesome/brands/linkedin 
       link: https://www.linkedin.com/company/theobald-software/
@@ -137,6 +132,8 @@ extra:
       link: https://www.instagram.com/theobaldsoftware/
     #- icon: fontawesome/classic/envelope
     #  link: https://theobald-software.com/en/newsletter/
+  #variable: SSIS variable
+  #variables: SSIS variables
 
 # Extensions
 markdown_extensions:
@@ -145,6 +142,7 @@ markdown_extensions:
   - attr_list
   - def_list
   - md_in_html
+  - tables
   - toc:
       toc_depth: 3
       permalink: true
@@ -172,9 +170,7 @@ markdown_extensions:
           case: lower
   - pymdownx.tasklist:
       custom_checkbox: true
-  - neoteroi.cards
   
- # Page tree
 #nav:
 #  - Home: index.md
-#  - ERPConnect: project://erpconnect # -> projects/product-a/docs/index.md
+#  - project://erpconnect
