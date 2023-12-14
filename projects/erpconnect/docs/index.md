@@ -18,9 +18,9 @@ How can we help you?
 
 -   [:material-download-circle: Download latest software version](https://my.theobald-software.com/)
 
--   [:material-run-fast: How to get started](#)
+-   [:material-run-fast: How to get started](quick-start.md)
 
--   [:material-update: Latest updates](version-history.md)
+-   [:material-update: Latest updates](changelog.md)
 
 -   [:material-file-document-outline: Code samples and use cases](#)
 
