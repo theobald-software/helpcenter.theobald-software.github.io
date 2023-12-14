@@ -20,7 +20,7 @@ How can we help you?
 
 -   [:material-run-fast: How to get started](#)
 
--   [:material-update: Latest updates](./version-history)
+-   [:material-update: Latest updates](version-history.md)
 
 -   [:material-file-document-outline: Code samples and use cases](#)
 
