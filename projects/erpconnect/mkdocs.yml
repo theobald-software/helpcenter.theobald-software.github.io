@@ -29,7 +29,7 @@ theme:
     # - content.tabs.link
      - content.tooltips
     # - header.autohide
-     - navigation.expand #displays all pages in the navigation
+    # - navigation.expand #displays all pages in the navigation (not good for API Reference)
     # - navigation.footer
      - navigation.indexes #adds landing pages for groups
      - navigation.instant

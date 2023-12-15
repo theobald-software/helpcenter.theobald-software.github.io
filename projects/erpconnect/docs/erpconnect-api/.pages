@@ -1,4 +1,5 @@
 nav:
+    - index.md
     - ERPConnect: erpconnect
     - ERPConnect.BW: erpconnect-bw
     - ERPConnect.Idocs: erpconnect-idocs
@@ -9,4 +10,4 @@ nav:
     - Theobald.Common: theobald-common
     - Theobald.Ogc: theobald-ogc
 hide: false
-collapse_single_pages: false
+collapse: true

@@ -5,7 +5,7 @@ hide:
   - toc
 ---
 
-# Welcome to the ERPConnect HelpCenter.
+# Welcome to the ERPConnect HelpCenter
 
 <!-- termynal: {"prompt_literal_start": [">"], title: ERPConnect} -->
 
