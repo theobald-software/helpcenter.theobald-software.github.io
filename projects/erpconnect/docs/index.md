@@ -13,6 +13,7 @@ hide:
 > Welcome to ERPConnect
 How can we help you?
 ```
+<!--
 
 <div class="grid cards" markdown>
 
@@ -31,6 +32,9 @@ How can we help you?
 -   [:material-comment-quote: Give Feedback](#)
 
 </div>
+
+-->
+
 
 <!---
 [:material-download-circle: Download the latest software version](https://my.theobald-software.com/)

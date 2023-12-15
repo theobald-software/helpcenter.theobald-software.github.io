@@ -92,11 +92,11 @@ plugins:
 
         #enable_creation_date: true
         #type: timeago
+  - awesome-pages
   - macros:
       include_dir: includes
   #- swagger-ui-tag
   #- glightbox #image zoom
-  - awesome-pages
   #- tags
   #- pdf-export:
   #     combined: false # specify if the whole documentation is exported (true) or if only the active page is exported (false)

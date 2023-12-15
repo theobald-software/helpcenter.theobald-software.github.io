@@ -1,0 +1,4 @@
+
+.md-tabs__item:nth-child(1) { 
+  display: none;
+}

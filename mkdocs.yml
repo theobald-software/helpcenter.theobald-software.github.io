@@ -19,7 +19,7 @@ copyright: Copyright &copy; 2024 Theobald Software GmbH <p style="color:#808080"
 theme:
   name: material
   features:
-    # - announce.dismiss
+    # - announce.dismiss # adds a dismissal option to announcements 
     # - content.action.edit
     # - content.action.view
     # - content.code.annotate
@@ -27,16 +27,16 @@ theme:
     # - content.code.select
     # - content.tabs.link
      - content.tooltips
-    # - header.autohide
-    # - navigation.expand #displays all pages in the navigation
+    # - header.autohide + hides the header when scrolling down
+     - navigation.expand # displays all pages in the navigation by default
     # - navigation.footer
-     - navigation.indexes #adds landing pages for groups
+     - navigation.indexes # adds landing pages for groups (index.md)
      - navigation.instant
     # - navigation.instant.prefetch
     # - navigation.instant.progress
-    # - navigation.path #adds breadcrumbs
-    # - navigation.prune
-    # - navigation.sections #no groups in the navigation
+    # - navigation.path # adds breadcrumbs
+    # - navigation.prune # renders only HTML files of pages that are visible in the navigation
+    # - navigation.sections # no groups in the navigation
      - navigation.tabs
      - navigation.tabs.sticky
     # - navigation.top #add a "back to top" button
@@ -44,7 +44,7 @@ theme:
     # - search.highlight
     # - search.share
     # - search.suggest
-    # - toc.follow
+     - toc.follow
     # - toc.integrate #adds the toc to the navigation
   palette:
     - media: "(prefers-color-scheme)"
@@ -71,10 +71,17 @@ theme:
   favicon: assets/images/favicon.png
   logo: assets/images/logo.png 
 
+# Custom CSS
+extra_css:
+  - assets/stylesheets/extra.css
+  - assets/stylesheets/neoteroi-cards.css 
+#extra_javascript:
+
 # Plugins
 plugins:
   - meta
   - typeset
+  - awesome-pages
   - projects:
       projects_dir: projects
       cache: false
@@ -138,5 +145,3 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
   
-nav:
-  - ERPConnect: project://erpconnect
