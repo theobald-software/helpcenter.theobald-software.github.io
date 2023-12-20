@@ -13,7 +13,7 @@ site_name: ERPConnect Helpcenter
 #repo_url: https://github.com/theobald-software/oh.theobald-software.github.io.git
 
 # Copyright
-copyright: Copyright &copy; 2024 Theobald Software GmbH #<br>“The best SAP interface is the one you don’t even notice.” - Patrick Theobald
+copyright: Copyright &copy; 2024 Theobald Software GmbH <p style="color:#808080";>“The best SAP interface is the one you don’t even notice.” - Patrick Theobald</p>
 
 # Configuration
 theme:
@@ -23,11 +23,10 @@ theme:
     # - announce.dismiss
     # - content.action.edit
     # - content.action.view
-    # - content.code.annotate
-    # - content.code.copy
-    # - content.code.select
-    # - content.tabs.link
-     - content.tooltips
+     - content.code.copy #adds copy button in code blocks
+     - content.code.select # adds select button in code blocks
+     - content.tabs.link # adds anchors when switching tabs
+     - content.tooltips # ebables adding tooltips to links
     # - header.autohide
     # - navigation.expand #displays all pages in the navigation (not good for API Reference)
     # - navigation.footer

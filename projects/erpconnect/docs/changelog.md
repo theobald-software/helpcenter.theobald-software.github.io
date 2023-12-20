@@ -1,4 +1,6 @@
 ---
+search:
+  exclude: true
 title: Version History
 icon: material/history
 hide:

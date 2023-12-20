@@ -1,0 +1,13 @@
+nav:
+    - About ERPConnect: about-erpconnect.md
+    - Introduction: introduction
+    - SAP-Connection: sap-connection
+    - ABAP Code: abap
+    - BAPIs/Function Modules: bapis-and-function-modules
+    - BW Cubes/Queries: bw-cubes-and-bw-queries
+    - IDocs: idocs
+    - Queries: queries
+    - RFC Server Fuctions: rfc-server
+    - Table: table
+    - Transactions: transactions
+collapse: false

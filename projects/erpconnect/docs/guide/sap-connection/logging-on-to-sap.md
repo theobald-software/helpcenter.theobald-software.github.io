@@ -1,19 +1,13 @@
 ---
-ref: ec-sap-connection-01
-layout: page
-title: Logging on to SAP
-description: Logging on to SAP
-product: erpconnect
-parent: sap-connection
-permalink: /:collection/:path
-weight: 1
-lang: en_GB
-old_url: /ERPConnect-EN/default.aspx?pageid=logging-on-to-sap
+title: Connect to SAP
+description: Log on to SAP
 ---
 
-There are two ways to log on to your SAP system with ERPConnect:
+There are multiple ways to log on to your SAP system with ERPConnect:
+
 - Connect to a single application server.
 - Connect to a message server (Load Balancing). 
+- Connect via WebSockets.
 
 ### Input Parameters
 
@@ -35,82 +29,84 @@ Both connection methods require the following input:
 3. Establish the connection using `Open`. <br>
 To connect via Load Balancing, use `Open(true)`. For the single server approach, use `Open(false)`. 
 
-Example for single server login:
 
-```csharp
-using (R3Connection con = new R3Connection())
-{
-    con.UserName = "SAPUser";
-    con.Password = "SAPPassword";
-    con.Language = "EN";
-    con.Client = "800";
-    con.Host = "sap-erp-as05.example.com";
-    con.SystemNumber = 00;
-    con.Protocol = ClientProtocol.NWRFC;
+=== "Single Server login"
 
-    con.Open();
-}
-```
+    ```csharp linenums="1"
+	using (R3Connection con = new R3Connection())
+	{
+		con.UserName = "SAPUser";
+		con.Password = "SAPPassword";
+		con.Language = "EN";
+		con.Client = "800";
+		con.Host = "sap-erp-as05.example.com";
+		con.SystemNumber = 00;
+		con.Protocol = ClientProtocol.NWRFC;
 
-Example for Load Balancing:
+		con.Open();
+	}
+	```
 
-```csharp
-using (R3Connection con = new R3Connection())
-{
-    con.UserName = "SAPUser";
-    con.Password = "SAPPassword";
-    con.Language = "DE";
-    con.Client = "800";
-    con.MessageServer = "sap-erp-as05.example.com";
-    con.LogonGroup = "PUBLIC";
-    con.SID = "ECC";
-    con.Protocol = ClientProtocol.NWRFC;
-    con.UsesLoadBalancing = true;
+=== "Load Balancing"
 
-    con.Open();
-}
-```
+    ```csharp linenums="1"
+	using (R3Connection con = new R3Connection())
+	{
+		con.UserName = "SAPUser";
+		con.Password = "SAPPassword";
+		con.Language = "DE";
+		con.Client = "800";
+		con.MessageServer = "sap-erp-as05.example.com";
+		con.LogonGroup = "PUBLIC";
+		con.SID = "ECC";
+		con.Protocol = ClientProtocol.NWRFC;
+		con.UsesLoadBalancing = true;
 
-Example for RFC over WebSocket:
+		con.Open();
+	}
+	```
+	
+=== "RFC via WebSocket"
 
-```csharp
-using (R3Connection con = new R3Connection())
-{
-    con.UsesWebSocket = true;
-    con.WebSocketHost = "myinstance-api.s4hana.cloud.sap";
-    con.WebSocketPort = 443;
-    con.TlsSettings = new TlsSettings
-    {
-        TrustAll = false,
-        CryptoLibrary = @"C:\lib\sapcrypto.dll",
-        ClientPse = "CLIENT.PSE"
-    };
+	```csharp linenums="1"
+	using (R3Connection con = new R3Connection())
+	{
+		con.UsesWebSocket = true;
+		con.WebSocketHost = "myinstance-api.s4hana.cloud.sap";
+		con.WebSocketPort = 443;
+		con.TlsSettings = new TlsSettings
+		{
+			TrustAll = false,
+			CryptoLibrary = @"C:\lib\sapcrypto.dll",
+			ClientPse = "CLIENT.PSE"
+		};
 
-    con.AliasUser = "TESTUSER",
-    con.Password = "Password",
+		con.AliasUser = "TESTUSER",
+		con.Password = "Password",
 
-    con.Open();
-}
-```
+		con.Open();
+	}
+	```
+
 
 The default encoding for an SAP connection is SAP code page 1100 (iso-8859-1). When using the NW RFC protocol you can explicitly set an encoding.
 This is necessary if your SAP credentials contain characters that are not part of SAP code page 1100.
 
 
-```csharp
-conn.Protocol = ClientProtocol.NWRFC; 
-conn.InitialEncoding = SAPEncodingInfo.UTF16LittleEndian;
+```csharp linenums="1"
+con.Protocol = ClientProtocol.NWRFC; 
+con.InitialEncoding = SAPEncodingInfo.UTF16LittleEndian;
 ```
 
 !!! note
     For more information on authentication, see [SSO with Log On Tickets](./sso-with-log-on-tickets) and [SSO with SNC](sso-with-snc).
 
-### Router
+### Connect via Router
 
 When accessing an SAP system via a Router, the router string must be set before the host name or the name of the message server.<br>
 For more information on route strings, see [SAP Help- Route String Entry for SAProuter](https://help.sap.com/saphelp_erp60_sp/helpdata/en/4f/992df1446d11d189700000e8322d00/frameset.htm).
 
-```csharp
+```csharp linenums="1"
 using (R3Connection con = new R3Connection())
 {
     con.UserName = "SAPUser";
@@ -126,29 +122,31 @@ using (R3Connection con = new R3Connection())
 }
 ```
 
-### Connection String
+### Connect via Connection String
 
 You can use a connection string to open an SAP connection. 
+Examples:
 
-Example for single server login:
 
-```csharp
-R3Connection con = new R3Connection();
-string ConnectionString = "USER=YourUser LANG=EN CLIENT=800 SYSNR=00 ASHOST=sap-erp-as05.example.com PASSWD=YourPassword";
+=== "Single Server login"
 
-con.ParseConnectionString(ConnectionString);
-con.Open();
-```
+    ```csharp linenums="1"
+	R3Connection con = new R3Connection();
+	string ConnectionString = "USER=YourUser LANG=EN CLIENT=800 SYSNR=00 ASHOST=sap-erp-as05.example.com PASSWD=YourPassword";
 
-Example for Load Balancing:
+	con.ParseConnectionString(ConnectionString);
+	con.Open();
+	```
 
-```csharp
-R3Connection con = new R3Connection();
-string ConnectionString = "R3NAME=con GROUP=ADAPTER MSHOST=MSSERVER CLIENT=800 LANG=EN USER=YourUserName PASSWD=YourPassword";
+=== "Load Balancing"
 
-con.ParseConnectionString(ConnectionString);
-con.Open();
-```
+    ```csharp linenums="1"
+	R3Connection con = new R3Connection();
+	string ConnectionString = "R3NAME=con GROUP=ADAPTER MSHOST=MSSERVER CLIENT=800 LANG=EN USER=YourUserName PASSWD=YourPassword";
+
+	con.ParseConnectionString(ConnectionString);
+	con.Open();
+	```
 
 The default client protocol is the NWRFC Protocol. To use the old RFC Protocol add the following command:<br>
 `conn.Protocol = ClientProtocol.RFC;`

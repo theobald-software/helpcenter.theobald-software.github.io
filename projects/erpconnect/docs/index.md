@@ -57,23 +57,26 @@ How can we help you?
 
 <div class="grid cards" markdown>
 
--   12/2023 | **RFC Connection via WebSocket added**
+-   **RFC Connection via WebSocket added**
 
     ---
 	
 	See ... for code samples.
+	<br><br>12/2023
 
--   03/2023 | **R3Connection API updated**
+-   **R3Connection API updated**
 
     ---
 	
-	This release has breaking changes, see release notes...
+	This release has breaking changes, see [release notes]()...
+	<br><br>03/2023
 
--   06/2022 | **ERPConnect45.dll removed**
+-   **ERPConnect45.dll removed**
 
     ---
 	
 	Please use ERPConnectStandard20.dll or ERPConnect35.dll instead
+	<br><br>06/2022 
 
 </div>
 

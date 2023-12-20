@@ -1,14 +1,6 @@
 ---
-ref: ec-sap-connection-03
-layout: page
 title: SSO with Log On Tickets
 description: SSO with Log On Tickets
-product: erpconnect
-parent: sap-connection
-permalink: /:collection/:path
-weight: 3
-lang: en_GB
-old_url: /ERPConnect-EN/default.aspx?pageid=sso-single-sign-on
 ---
 
 As of ERPConnect version 1.6 SSO scenarios are supported.<br>
@@ -19,11 +11,11 @@ There are several methods to get an SSO Ticket depending on the SAP Infrastructu
 
 ### Logon with SSO-Tickets
 
-#### Creating SSO-Tickets
+#### Create an SSO-Ticket
 To create an SSO ticket the *R3Connection* class provides the method `GetSSOTicket`. 
 All logon data must be provided once to create the ticket as shown in the code below.
 
-```csharp
+```csharp linenums="1"
 using(ERPConnect.R3Connection cont = new ERPConnect.R3Connection())
 {
     cont.Host = "sap-erp-as05.example.com";
@@ -38,9 +30,9 @@ using(ERPConnect.R3Connection cont = new ERPConnect.R3Connection())
 ```
 
 #### Logon
-If there is a ticket available, you can use *OpenSSO* to establish the connection without user credentials:
+If there is a ticket available, you can establish the connection without user credentials:
 
-```csharp
+```csharp linenums="1"
 using (ERPConnect.R3Connection conts = new ERPConnect.R3Connection())
 {
     conts.Host = "sap-erp-as05.example.com";
@@ -53,5 +45,5 @@ using (ERPConnect.R3Connection conts = new ERPConnect.R3Connection())
 }
 ```
 
-For information on how to login to SAP using the cookie from the SAP Portal Ticketissuer, refer to the knowledge base article [Login to SAP with an SSO Logonticket](https://kb.theobald-software.com/erpconnect-samples/login-to-sap-with-an-sso-logonticket).
+For information on how to login to SAP using the cookie from the SAP Portal Ticketissuer, refer to [Login to SAP with an SSO Logonticket](https://kb.theobald-software.com/erpconnect-samples/login-to-sap-with-an-sso-logonticket).
 

@@ -1,31 +1,32 @@
 ---
-ref: ec-sap-connection-05
-layout: page
 title: SSO with SNC
 description: SSO with SNC
-product: erpconnect
-parent: sap-connection
-permalink: /:collection/:path
-weight: 5
-lang: en_GB
-old_url: /ERPConnect-EN/default.aspx?pageid=sso-with-snc
-progressstate: 5
 ---
 
-You can create a SAP connection using Single-Sign-On (SSO) and Secure Network Communication (SNC) as of ERPConnect version 4.1.59.  
+You can create a SAP connection using Single-Sign-On (SSO) and Secure Network Communication (SNC) as of ERPConnect version 4.1.59.
 If you use SNC in your project, you can choose between the [NTLM](#ntlm) or the [Kerberos5](#Kerberos) mechanism. 
 
 ### Prerequisites
 
 The following DLLs from SAP need to be present in the `%SYSTEMROOT%\System32` directory of your system:
 
-For 32-bit:
-- NTLM: gssntlm.dll
-- Kerberos: gsskrb5.dll
+<div class="grid cards" markdown>
 
-For 64-bit x86:
-- NTLM:  gx64ntlm.dll
-- Kerberos: gx64krb5.dll
+-   __For 32-bit:__
+
+	---
+	
+    - NTLM: gssntlm.dll
+	- Kerberos: gsskrb5.dll
+
+-   __For 64-bit x86:__
+
+    ---
+
+    - NTLM:  gx64ntlm.dll
+    - Kerberos: gx64krb5.dll
+	
+</div> 
 
 The DLLs are available via the [SNOTE 2115486](http://service.sap.com/sap/support/notes/2115486). 
 
@@ -46,49 +47,47 @@ If the Kerberos authentication is not possible, NTLM is used automatically.
 If you do not want to use the SNC properties to create a connection, set *SNCEnabled* to false. 
 It disables all settings without changing the other SNC parameter. 
 
-
-### Samples
 The following example codes show how to pass the necessary parameters for an SNC connection to an R3Connection object.
 
-****
 
-**Using the SNC Mechanism:**
+=== "SNC Mechanism"
 
-```csharp
-using (R3Connection con = new R3Connection())
-{
-    con.Host = "sap-erp-as05.example.com";
-    con.SystemNumber = 7;
-    con.Client = "800";
-    con.Language = "DE";
-    con.SNCSettings.Enabled = true;
-    con.SNCSettings.PartnerName = "p:SAPServiceNSP@THEOBALD";
-    con.SNCSettings.Mechanism = SNCMechanism.NTLM;
-    con.SNCSettings.QualityOfProtection = SNCQualityOfProtection.Maximum;
+    ```csharp linenums="1"
+	using (R3Connection con = new R3Connection())
+	{
+		con.Host = "sap-erp-as05.example.com";
+		con.SystemNumber = 7;
+		con.Client = "800";
+		con.Language = "DE";
+		con.SNCSettings.Enabled = true;
+		con.SNCSettings.PartnerName = "p:SAPServiceNSP@THEOBALD";
+		con.SNCSettings.Mechanism = SNCMechanism.NTLM;
+		con.SNCSettings.QualityOfProtection = SNCQualityOfProtection.Maximum;
 
-    con.Open();
-    // define your application
-}
-```
+		con.Open();
+		// define your application
+	}
+	```
 
-**Using individual SNC DLL path:**
+=== "Individual SNC DLL path"
 
-```csharp
-using (R3Connection con = new R3Connection())
-{
-    con.Host = "sap-erp-as05.example.com";
-    con.SystemNumber = 7;
-    con.Client = "800";
-    con.Language = "DE";
-    con.SNCSettings.Enabled = true;
-    con.SNCSettings.PartnerName = "p:SAPServiceNSP@THEOBALD";
-    con.SNCSettings.LibraryPath = @"C:\Windows\SysWOW64\sncgss32.dll";
-    con.SNCSettings.QualityOfProtection = SNCQualityOfProtection.Maximum;
+    ```csharp linenums="1"
+	using (R3Connection con = new R3Connection())
+	{
+		con.Host = "sap-erp-as05.example.com";
+		con.SystemNumber = 7;
+		con.Client = "800";
+		con.Language = "DE";
+		con.SNCSettings.Enabled = true;
+		con.SNCSettings.PartnerName = "p:SAPServiceNSP@THEOBALD";
+		con.SNCSettings.LibraryPath = @"C:\Windows\SysWOW64\sncgss32.dll";
+		con.SNCSettings.QualityOfProtection = SNCQualityOfProtection.Maximum;
 
-    con.Open();
-    // define your application
-}
-```
+		con.Open();
+		// define your application
+	}
+	```
+
 
 !!! note
     As of ERP Connect version 4.2.3 you can set a security level with the property *QualityOfProtection*.
