@@ -8,7 +8,6 @@ The IDoc class of ERPConnect offers support for both the IDoc schema and IDoc da
 
 The *IDoc-Schema-Generator* provided by ERPConnect generates an XML file that can be used to load IDoc schemas.<br>
 Loading IDoc schemas via XML usually has higher performance than loading them via `CreateIdoc` or `CreateEmptyIdoc`, because no SAP connection is necessary.<br>
-See [XML-Support for IDoc programming](../receiving-and-sending-idocs/xml-support-for-idoc-programming) for more information on using the generated XML file.
 
 !!! note
     IDoc schema files contain the structure of an IDoc while IDoc data files contain the actual content of the IDoc.

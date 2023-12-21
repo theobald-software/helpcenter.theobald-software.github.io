@@ -19,7 +19,8 @@
 
 /* Grid sets the width of the main content */
 .md-grid {
-  max-width: 1500px; 
+  max-width: initial; 
+  padding: 0 120px 0 120px;
 }
 
 }

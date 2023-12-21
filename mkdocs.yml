@@ -19,33 +19,20 @@ copyright: Copyright &copy; 2024 Theobald Software GmbH <p style="color:#808080"
 theme:
   name: material
   features:
-    # - announce.dismiss # adds a dismissal option to announcements 
-    # - content.action.edit
-    # - content.action.view
-    # - content.code.annotate
-    # - content.code.copy
-    # - content.code.select
-    # - content.tabs.link
-     - content.tooltips
-    # - header.autohide + hides the header when scrolling down
+     - content.tooltips # ebables adding tooltips to links
+    # - header.autohide # hides the header when scrolling down
      - navigation.expand # displays all pages in the navigation by default
     # - navigation.footer
      - navigation.indexes # adds landing pages for groups (index.md)
-     - navigation.instant
-    # - navigation.instant.prefetch
-    # - navigation.instant.progress
+    # - navigation.instant # load faster (no page reload for internal links)
+    # - navigation.instant.prefetch # load faster (start loading content when hovering)
+    # - navigation.instant.progress # enables a progress indicator 
     # - navigation.path # adds breadcrumbs
     # - navigation.prune # renders only HTML files of pages that are visible in the navigation
     # - navigation.sections # no groups in the navigation
      - navigation.tabs
      - navigation.tabs.sticky
-    # - navigation.top #add a "back to top" button
-    # - navigation.tracking #instantly adds the current headline to the URL
-    # - search.highlight
-    # - search.share
-    # - search.suggest
-     - toc.follow
-    # - toc.integrate #adds the toc to the navigation
+    # - navigation.top # add a "back to top" button
   palette:
     - media: "(prefers-color-scheme)"
       toggle:

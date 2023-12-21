@@ -6,4 +6,5 @@ nav:
     - Samples: samples
     - API Reference: erpconnect-api
     - ChangeLog: changelog.md
+    - Troubleshooting: troubleshooting.md
     - Support: https://support.theobald-software.com/helpdesk

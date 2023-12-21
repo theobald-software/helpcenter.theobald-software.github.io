@@ -12,9 +12,9 @@ Follow the steps below to call BAPIs/Function Modules:
 1. Connect to the SAP system using `R3Connection`.
 2. Create an RFCFunction object using `CreateFunction`.
 3. Provide values to export parameters, table parameters or import parameters for the RFCFunction objects. 
-- Export parameters: `Exports["parameter_name"].ParamValue` or `Exports["structure_name"].ToStructure()["parameter:name"]`.
-- Table parameters: `Tables["table_name"]["parameter_name"].ParamValue`
-- Import parameters: `Imports["parameter_name"].ToStructure()`
+	- Export parameters: `Exports["parameter_name"].ParamValue` or `Exports["structure_name"].ToStructure()["parameter:name"]`.
+	- Table parameters: `Tables["table_name"]["parameter_name"].ParamValue`
+	- Import parameters: `Imports["parameter_name"].ToStructure()`
 4. Execute the BAPIs/function modules using `Execute`.
 
 ### Samples

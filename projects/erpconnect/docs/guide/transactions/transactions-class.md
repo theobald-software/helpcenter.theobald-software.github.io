@@ -3,21 +3,18 @@ title: Transaction Class
 description: Managing and  Executing Transactions- The Class Transaction
 ---
 
-This section shows how to use the *Transaction* class to execute SAP transactions in the foreground as well as in a background process (Batch Input).<br>
-When executing transactions in a background process, mass data can be processed and transferred to the SAP system. 
-This technique is often used if no suitable BAPI exists.
+The following sample application shows how to use the *Transaction* class to directly execute an SAP transaction.<br>
 
 ### How to use SAP Transactions 
 
-The following sample application shows how to use the *Transaction* class to directly execute an SAP transaction.<br>
-In this application the user can enter a material number and the name of a plant. 
+In this sample application the user can enter a material number and the name of a plant. 
 By clicking a button, the SAP GUI is launched and the transaction **MMBE** (stock overview) is executed to list the entered materials and plants. 
 
 ![Call-Transaction-002]( ../../assets/images/Call-Transaction-002.png){:class="img-responsive" width="300px" }
 
 !!! tip
     The installation package of ERPConnect includes the *Transaction-Recorder* tool.
-    This tool records transactions and implements them to code, see [Transaction-Recorder](../tools/transaction-recorder).
+    This tool records transactions and implements them to code, see [Transaction-Recorder](./transaction-recorder.md).
 
 The code below shows how to add batch steps with the method *AddStep*. <br>
 When connecting to SAP set the *UseGui* property to true. 

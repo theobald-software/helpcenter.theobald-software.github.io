@@ -1,5 +1,4 @@
 nav:
-    - About ERPConnect: about-erpconnect.md
     - Introduction: introduction
     - SAP-Connection: sap-connection
     - ABAP Code: abap

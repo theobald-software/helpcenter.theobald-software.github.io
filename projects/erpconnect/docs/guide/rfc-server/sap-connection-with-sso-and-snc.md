@@ -4,10 +4,10 @@ description: SAP connection with SSO and SNC
 ---
 
 The RFCServer class supports SAP connection with SSO and SNC.<br>
-The RFCServer class works similarly to the R3Connection class, see [ERPConnect with SSO with SNC](../sap-connection/sso-with-snc).
+The RFCServer class works similarly to the R3Connection class, see [ERPConnect with SSO with SNC](../sap-connection/sso-with-snc.md).
 
 !!! note
-    Note the prerequisites described in [SSO with SNC - Prerequisites](../sap-connection/sso-with-snc#prerequisites) beschrieben.
+    Note the prerequisites described in [SSO with SNC - Prerequisites](../sap-connection/sso-with-snc.md#prerequisites) beschrieben.
 
 
 ### SAP Connection with SSO and SNC

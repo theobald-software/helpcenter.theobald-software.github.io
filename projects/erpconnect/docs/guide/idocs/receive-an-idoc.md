@@ -4,7 +4,7 @@ description: Example- Receiving an IDoc
 ---
 
 This section shows how to receive and process an IDoc.<br>
-To configure your SAP system to receive IDocs, see [Set Up a Test Environment for IDocs](./prerequisites#set-up-a-test-environment-for-idocs).
+To configure your SAP system to receive IDocs, see [Set Up a Test Environment for IDocs](./prerequisites.md#set-up-a-test-environment-for-idocs).
 
 ### About
 
@@ -22,7 +22,7 @@ Within this segment, several *E2MAKTM001* child segments contain material descri
 
 Follow the steps below to receive a MATMAS IDoc:
 
-1. Create an RFC Server object to accept calls from SAP, see [RFC Server](../rfc-server/example) for more information.
+1. Create an RFC Server object to accept calls from SAP, see [RFC Server](../rfc-server/create-rfc-functions.md) for more information.
 2. To receive IDocs with the *RFCServer* object, set the property *CanReceiveIdocs* to true.<br>
 3. When an IDoc is received by ERPConnect, the event *IncomingIdoc* is triggered and a reference to the *RFCServer* object and to the *IDoc* object is transferred. 
 4. Use the *IncomingIdoc* event to read the data buffer of the child segment *E2MAKTM001*. 
@@ -83,9 +83,9 @@ In this case, 5 *E2MAKTM001* segments were found so 5 texts are passed. <br>
 
 
 !!! note
-    If you do not want to read the data buffer with offset and length of the texts, you can load an XML Schema instead, see [Using XMLs for IDocs](./xml-support-for-idoc-programming).
+    If you do not want to read the data buffer with offset and length of the texts, you can load an XML Schema instead, see [Templates](./idocs-schema-generator.md).
 
 *****
 #### Related Links
-- [Setting Up a Test Environment for IDocs](./prerequisites#set-up-a-test-environment-for-idocs)
-- [Set Up Receiving IDocs](./prerequisites#setting-up-receiving-idocs)
+- [Setting Up a Test Environment for IDocs](./prerequisites.md#set-up-a-test-environment-for-idocs)
+- [Set Up Receiving IDocs](./prerequisites.md#set-up-receiving-idocs)

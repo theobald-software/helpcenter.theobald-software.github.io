@@ -20,32 +20,32 @@ theme:
   name: material
 #  custom_dir: material/overrides
   features:
-    # - announce.dismiss
-    # - content.action.edit
-    # - content.action.view
-     - content.code.copy #adds copy button in code blocks
+    # - announce.dismiss # adds a dismissal option to announcements 
+    # - content.action.edit # adds an edit button to the pages
+    # - content.action.view # adds a view source button to the pages
+     - content.code.copy # adds copy button in code blocks
      - content.code.select # adds select button in code blocks
      - content.tabs.link # adds anchors when switching tabs
      - content.tooltips # ebables adding tooltips to links
-    # - header.autohide
+    # - header.autohide # hides the header when scrolling down
     # - navigation.expand #displays all pages in the navigation (not good for API Reference)
     # - navigation.footer
      - navigation.indexes #adds landing pages for groups
-     - navigation.instant
-    # - navigation.instant.prefetch
-    # - navigation.instant.progress
-     - navigation.path #adds breadcrumbs
-    # - navigation.prune
-    # - navigation.sections #no groups in the navigation
-     - navigation.tabs
-     - navigation.tabs.sticky
-     - navigation.top #add a "back to top" button
-     - navigation.tracking #instantly adds the current headline to the URL
-     - search.highlight
-     - search.share
-     - search.suggest
-    # - toc.follow
-    # - toc.integrate #adds the toc to the navigation
+    # - navigation.instant # load faster (no page reload for internal links)
+    # - navigation.instant.prefetch # load faster (start loading content when hovering)
+     - navigation.instant.progress # enables a progress indicator 
+    # - navigation.path #adds breadcrumbs
+     - navigation.prune # only the visible navigation items are included in the rendered HTML, reducing the size of the built site by 33% or more
+    # - navigation.sections # top level pages are rendered as groups in the navigation
+     - navigation.tabs # add 1st level navigation to the header
+     - navigation.tabs.sticky # tabs do not disappear when scrolling
+     - navigation.top # add a "back to top" button
+     - navigation.tracking # instantly adds the current headline to the URL
+     - search.highlight # highlights the search entry in the results
+     - search.share # adds a share link option to the search
+     - search.suggest # enables auto-complete in search
+     - toc.follow # sidebar is automatically scrolled so that the active anchor is always visible
+    # - toc.integrate # adds the toc to the navigation
   palette:
     - media: "(prefers-color-scheme)"
       toggle:
@@ -78,8 +78,13 @@ extra_css:
   
 # Plugins
 plugins:
+  - privacy:
+      links_attr_map:
+        target: _blank # opens all external links in new tabs
   - meta
-  - git-revision-date-localized
+  - git-revision-date-localized # adds information when pages were last updated
+        #enable_creation_date: true
+        #type: timeago
   - termynal:
       title: "Youpi"
       prompt_literal_start:
@@ -88,19 +93,16 @@ plugins:
   - search:
       separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
   - typeset
-
-        #enable_creation_date: true
-        #type: timeago
   - awesome-pages
   - macros:
       include_dir: includes
   #- swagger-ui-tag
   #- glightbox #image zoom
-  #- tags
+  - tags
   #- pdf-export:
   #     combined: false # specify if the whole documentation is exported (true) or if only the active page is exported (false)
 
-  # Continuous integration
+# Continuous integration
 #  - group:
  #     enabled: !ENV CI
 #      plugins:
@@ -110,7 +112,7 @@ plugins:
 
 markdown_extensions:
   - toc:
-      toc_depth: 3
+      toc_depth: 3 # define the depth of headlines for the table of content
       permalink: "#"
       separator: "-"
   - pymdownx.snippets:

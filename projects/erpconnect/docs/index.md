@@ -7,13 +7,18 @@ hide:
 
 # Welcome to the ERPConnect HelpCenter
 
+
 <!-- termynal: {"prompt_literal_start": [">"], title: ERPConnect} -->
+
+<!--
 
 ```sh
 > Welcome to ERPConnect
 How can we help you?
 ```
-<!--
+-->
+
+### How can we help?
 
 <div class="grid cards" markdown>
 
@@ -33,10 +38,10 @@ How can we help you?
 
 </div>
 
--->
 
 
 <!---
+
 [:material-download-circle: Download the latest software version](https://my.theobald-software.com/)
 
 [:material-run-fast: How to get started](#)
@@ -50,6 +55,34 @@ How can we help you?
 [:material-lightbulb: Common error messages](https://support.theobald-software.com/helpdesk/KB)
 
 [:material-comment-quote: Give Feedback](#)
+
+
+### How can we help?
+
+::cards:: cols=4
+
+- title: Download the latest version
+  url: https://my.theobald-software.com/
+  
+- title: How to get started
+  url: ./quick-start.md
+  
+- title: Code samples and use cases
+  url: ./samples/index.md
+  
+- title: Latest updates
+  url: ./changelog.md
+  
+- title: Contact Support
+  url: https://support.theobald-software.com/helpdesk
+  
+- title: Common error messages
+  url: https://support.theobald-software.com/helpdesk/KB
+
+- title: Give Feedback
+  url: #
+  
+::/cards::
 
 -->
 

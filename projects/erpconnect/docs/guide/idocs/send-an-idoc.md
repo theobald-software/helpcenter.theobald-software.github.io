@@ -4,7 +4,7 @@ description: Example- Sending an IDoc from your .Net Application
 ---
 
 This section shows how to send an IDoc.<br>
-To configure your SAP system to send IDocs, see [Set Up a Test Environment for IDocs](./prerequisites#set-up-a-test-environment-for-idocs).
+To configure your SAP system to send IDocs, see [Set Up a Test Environment for IDocs](./prerequisites.md#set-up-a-test-environment-for-idocs).
 
 There are two ways to create an IDoc object: 
 
@@ -20,7 +20,7 @@ when a subsystem receives an IDoc and acknowledges the receive with a status cha
 *STATUS* is a simple IDoc that contains only one data record.
 
 !!! note
-    Make sure to configure your SAP system to receive IDocs, see [Set Up Receiving IDocs](./prerequisites#setting-up-receiving-idocs).
+    Make sure to configure your SAP system to receive IDocs, see [Set Up Receiving IDocs](./prerequisites.md#set-up-receiving-idocs').
 
 ### Send a STATUS IDoc
 
@@ -98,5 +98,5 @@ The status code of the manipulated IDoc increases from 3 (Data passed...) to 12 
 - [Send an ORDER IDoc](https://kb.theobald-software.com/erpconnect-samples/send-an-order-idoc)
 - [Send a MATMAS IDoc](https://kb.theobald-software.com/erpconnect-samples/send-a-matmas-idoc)
 - [Resend IDocs which where set to CPICERR in SM58](https://kb.theobald-software.com/erpconnect-samples/resend-idocs-which-where-set-to-cpicerr-in-sm58)
-- [Set Up an RFC-Destination](./prerequisites#setting-up-an-rfc-destination)
+- [Set Up an RFC-Destination](./prerequisites.md#set-up-an-rfc-destination')
 

@@ -6,7 +6,7 @@ description: SAP Connection
 This section contains information on how to connect to SAP systems.
 
 ### Prerequisites
-ERPConnect requires an RFC library, see [SAP Libraries](../introduction/saplibraries/).
+ERPConnect requires an RFC library, see [SAP Libraries](../introduction/saplibraries.md).
 
 The RFC API (Remote Function Call) enables an RFC connection between an SAP system and an external system that can communicate with SAP as a client or server.
 The RFC API has two versions:

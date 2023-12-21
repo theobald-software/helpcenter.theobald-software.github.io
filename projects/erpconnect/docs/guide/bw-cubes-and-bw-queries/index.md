@@ -9,7 +9,7 @@ The *BW* class was developed to extract data from SAP BW InfoCubes and QueryCube
 A common approach for using the *BW* class is to build and extract a BEx query that meets your business requirements.
 
 !!! note
-    This section refers to BW Queries, for information on queries created by the SAP transactions **SQ02** and **SQ01**, see [SAP Query](./sap-queries).
+    This section refers to BW Queries, for information on queries created by the SAP transactions **SQ02** and **SQ01**, see [SAP Query](../queries/index.md).
 
 ### About BEx Queries and InfoCubes
  
