@@ -2,4 +2,4 @@ nav:
     - index.md
     - transactions-class.md
     - transaction-recorder.md
-collapse: false
+collapse_single_pages: false

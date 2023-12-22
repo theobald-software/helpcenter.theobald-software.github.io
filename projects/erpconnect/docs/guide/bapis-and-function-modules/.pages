@@ -3,4 +3,4 @@ nav:
     - bapis-and-function-modules.md
     - web-applications.md
     - function-template-generator.md
-collapse: false
+collapse_single_pages: false

@@ -3,4 +3,4 @@ nav:
     - log-on-to-sap.md
     - sso-with-log-on-tickets.md
     - sso-with-snc.md
-collapse: false
+collapse_single_pages: false

@@ -4,4 +4,4 @@ nav:
     - saplibraries.md
     - installation.md
     - licensing.md
-collapse: false
+collapse_single_pages: false

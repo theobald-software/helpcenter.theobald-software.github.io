@@ -2,4 +2,4 @@ nav:
     - index.md
     - read-table-class.md
     - data-type-mapping.md
-collapse: false
+collapse_single_pages: false

@@ -1,4 +1,4 @@
 nav:
     - editorial-guide
     - ERPConnect: project://erpconnect
-collapse: false
+collapse_single_pages: false

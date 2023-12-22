@@ -1,4 +1,11 @@
 nav:
-    - index.md
-hide: false
-collapse: false
+    - SAP Connection: sap-connection
+    - ABAP Code: abap
+    - BAPIs/Function Modules: bapis-and-function-modules
+    - BW Cubes/Queries: bw-cubes-and-bw-queries
+    - IDocs: idocs
+    - Queries: queries
+    - RFC Server Functions: rfc-server
+    - Table: table
+    - Transactions: transactions
+collapse_single_pages: false

@@ -4,4 +4,4 @@ nav:
     - send-an-idoc.md
     - receive-an-idoc.md
     - idocs-schema-generator.md
-collapse: false
+collapse_single_pages: false
