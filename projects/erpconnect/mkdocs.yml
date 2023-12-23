@@ -18,7 +18,7 @@ copyright: Copyright &copy; 2024 Theobald Software GmbH <p style="color:#808080"
 # Configuration
 theme:
   name: material
-#  custom_dir: material/overrides
+  custom_dir: overrides #announcements and custom templates
   features:
     # - announce.dismiss # adds a dismissal option to announcements 
     # - content.action.edit # adds an edit button to the pages

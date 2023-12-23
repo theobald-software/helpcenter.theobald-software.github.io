@@ -18,6 +18,7 @@ copyright: Copyright &copy; 2024 Theobald Software GmbH <p style="color:#808080"
 # Configuration
 theme:
   name: material
+  custom_dir: overrides
   features:
      - content.tooltips # ebables adding tooltips to links
     # - header.autohide # hides the header when scrolling down

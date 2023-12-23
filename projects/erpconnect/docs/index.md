@@ -1,4 +1,5 @@
 ---
+template: landing-page.html
 title: ERPConnect HelpCenter
 hide:
   - navigation
@@ -17,8 +18,6 @@ hide:
 How can we help you?
 ```
 -->
-
-### How can we help?
 
 <div class="grid cards" markdown>
 
