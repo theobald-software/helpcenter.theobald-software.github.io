@@ -113,8 +113,9 @@ plugins:
 markdown_extensions:
   - toc:
       toc_depth: 3 # define the depth of headlines for the table of content
-      permalink: "#"
+      #permalink: "#"
       separator: "-"
+      # title: On this Page:
   - pymdownx.snippets:
       base_path: includes
   - pymdownx.superfences #for content tabs (version history)
