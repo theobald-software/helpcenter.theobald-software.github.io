@@ -1,6 +1,7 @@
 ---
 template: landing-page.html
 title: ERPConnect HelpCenter
+loc: index
 hide:
   - navigation
   - toc
