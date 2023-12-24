@@ -74,4 +74,4 @@ static string ParseCookie(string cookie)
 ****
 
 #### Related Link:
-- [Online Help: SSO with Logon Tickets](https://help.theobald-software.com/en/erpconnect/sap-connection/sso-with-log-on-tickets). 
+- [Complete Guide: SSO with Logon Tickets](../../guide/sap-connection/sso-with-log-on-tickets.md). 

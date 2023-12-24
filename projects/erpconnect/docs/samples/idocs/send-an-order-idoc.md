@@ -23,7 +23,7 @@ The field QUALF is therefore set to "002" and the material number is written int
 
 ### Prerequisites
 
-Set up an RFC destination to enable calls from an SAP system to a subsystem, see [Online Help: IDocs Prerequisites](https://help.theobald-software.com/en/erpconnect/receiving-and-sending-idocs/prerequisites).<br>
+Set up an RFC destination to enable calls from an SAP system to a subsystem, see [Complete Guide: IDocs Prerequisites](../../guide/idocs/prerequisites.md).<br>
 If there is no partner profile found for an incoming IDoc, no order will be created.
 
 ### Send an ORDER IDoc

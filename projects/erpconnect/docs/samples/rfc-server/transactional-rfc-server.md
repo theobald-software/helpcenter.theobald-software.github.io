@@ -15,7 +15,7 @@ How it works:
 - The strings are merged in .NET and inserted into an SQL server table. 
 - Within a tRFC context only export parameters and tables are sent to the RFC server. 
 
-For more information on how to create RFC functions, see [Online Help: RFC Server](https://help.theobald-software.com/en/erpconnect/rfc-server).
+For more information on how to create RFC functions, see [Complete Guide: RFC Server](../../guide/rfc-server/index.md).
 
 !!! note
     A transactional RFC call cannot receive results.

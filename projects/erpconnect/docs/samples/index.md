@@ -139,7 +139,7 @@ Ask dev to create a script that automatically updates this page
   content: |
     The .NET programming library to develop your own SAP interfaces.
   image: ../../assets/images/ERPConnect.png
-  url: https://help.theobald-software.com/en/erpconnect/
+  url: ../../guide/
 
 - title: RFC Server Functions
   content: |
@@ -157,7 +157,7 @@ Ask dev to create a script that automatically updates this page
   content: |
     The .NET programming library to develop your own SAP interfaces.
   image: ../../assets/images/ERPConnect.png
-  url: https://help.theobald-software.com/en/erpconnect/
+  url: ../../guide/
 ::/cards::
 
 

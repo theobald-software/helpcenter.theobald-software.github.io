@@ -8,7 +8,7 @@ weight: 3
 
 
 <!---
-move to: https://help.theobald-software.com/en/erpconnect/special-classes/managing-and-executing-transactions-the-class-transaction
+move to: ../../guide/special-classes/managing-and-executing-transactions-the-class-transaction
 -->
 
 
@@ -23,7 +23,7 @@ By clicking a button, the SAP GUI is launched and the transaction MMBE (stock ov
 
 !!! tip
     The installation package of ERPConnect includes the *Transaction-Recorder* tool.
-    This tool records transactions and implements them to code, see [Transaction-Recorder](https://help.theobald-software.com/en/erpconnect/tools/transaction-recorder).
+    This tool records transactions and implements them to code, see [Transaction-Recorder](../../guide/transactions/transaction-recorder.md).
 
 The code below shows how to add batch steps with the method *AddStep*. <br>
 When connecting to SAP set the *UseGui* property to true. 

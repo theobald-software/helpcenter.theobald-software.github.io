@@ -36,6 +36,8 @@ How can we help you?
 
 -   [:material-comment-quote: Give Feedback](#)
 
+-   [:material-information: Get Product Information](https://theobald-software.com/en/erpconnect/)
+
 </div>
 
 
