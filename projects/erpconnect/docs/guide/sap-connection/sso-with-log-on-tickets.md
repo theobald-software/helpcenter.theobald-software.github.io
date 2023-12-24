@@ -45,5 +45,5 @@ using (ERPConnect.R3Connection conts = new ERPConnect.R3Connection())
 }
 ```
 
-For information on how to login to SAP using the cookie from the SAP Portal Ticketissuer, refer to [Login to SAP with an SSO Logonticket](https://kb.theobald-software.com/erpconnect-samples/login-to-sap-with-an-sso-logonticket).
+For information on how to login to SAP using the cookie from the SAP Portal Ticketissuer, refer to [Login to SAP with an SSO Logonticket](../../samples/sap-connection/login-to-sap-with-an-sso-logonticket.md).
 

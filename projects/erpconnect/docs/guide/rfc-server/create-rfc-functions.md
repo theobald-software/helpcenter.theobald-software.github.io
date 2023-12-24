@@ -91,7 +91,7 @@ The screenshot below shows the running ABAP program:<br>
 
 *****
 #### Related Links
-- [Transactional RFC Server](https://kb.theobald-software.com/erpconnect-samples/transactional-rfc-server)
-- [RFC Server with tables](https://kb.theobald-software.com/erpconnect-samples/rfc-server-with-tables)
-- [RFC Server with structures](https://kb.theobald-software.com/erpconnect-samples/rfc-server-with-structures)
-- [Calculate the length of the SAP type QUAN when setting up an RFC-Server](https://kb.theobald-software.com/erpconnect-samples/calculate-the-length-of-the-sap-type-quan--when-setting-up-an-rfc-server)
+- [Transactional RFC Server](../../samples/rfc-server/transactional-rfc-server.md)
+- [RFC Server with tables](../../samples/rfc-server/rfc-server-with-tables.md)
+- [RFC Server with structures](../../samples/rfc-server/rfc-server-with-structures.md)
+- [Calculate the length of the SAP type QUAN when setting up an RFC-Server](../../samples/rfc-server/calculate-the-length-of-the-sap-type-quan--when-setting-up-an-rfc-server.md)

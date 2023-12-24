@@ -142,4 +142,4 @@ using (R3Connection con = new R3Connection())
 #### Related Links
 - [SSO with Log On Tickets](./sso-with-log-on-tickets.md).
 - [SSO with SNC](./sso-with-snc.md).
-- [Implement a connection pool](https://kb.theobald-software.com/erpconnect-samples/implement-a-connection-pool)
+- [Implement a connection pool](../../samples/sap-connection/implement-a-connection-pool.md)

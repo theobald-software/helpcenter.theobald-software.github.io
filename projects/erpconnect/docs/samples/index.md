@@ -53,6 +53,14 @@ Ask dev to create a script that automatically updates this page
 
 </div>
 
+### BW Cubes and BW Queries
+
+<div class="grid cards" markdown>
+
+-   - [Execute BW Queries](./bw-cubes-and-bw-queries/execute-bw-queries.md)
+
+</div>
+
 ### IDocs
 
 <div class="grid cards" markdown>

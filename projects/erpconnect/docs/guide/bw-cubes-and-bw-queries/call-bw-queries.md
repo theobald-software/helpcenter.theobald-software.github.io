@@ -116,4 +116,4 @@ Clearing value in document currency (SAP Demo): 0,00
 
 ****
 #### Related Links
-- [Execute BW Queries](https://kb.theobald-software.com/erpconnect-samples/execute-bw-queries)
+- [Execute BW Queries](../../samples/bw-cubes-and-bw-queries/execute-bw-queries.md)

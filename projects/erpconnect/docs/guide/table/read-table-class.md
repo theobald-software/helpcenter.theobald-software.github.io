@@ -77,6 +77,6 @@ Output:
 
 ****
 #### Related Links
-- [Transfer data packets with ReadTable class](https://kb.theobald-software.com/erpconnect-samples/transfer-data-packets-with-readtable-class)
-- [Get meta data of a table](https://kb.theobald-software.com/erpconnect-samples/get-meta-data-of-a-table)
-- [Get CostCenter hierarchies](https://kb.theobald-software.com/erpconnect-samples/get-costcenter-hierarchies)
+- [Transfer data packets with ReadTable class](../../samples/table/transfer-data-packets-with-readtable-class.md)
+- [Get meta data of a table](../../samples/table/get-meta-data-of-a-table.md)
+- [Get CostCenter hierarchies](../../samples/table/get-costcenter-hierarchies.md)
