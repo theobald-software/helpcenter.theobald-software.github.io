@@ -10,6 +10,20 @@ ERPConnect is a flexible and modular .NET library that has been certified by SAP
 ### Features
 
 
+|  Functionality / SAP Objects  |  Description   |  
+|----------|-------------|
+|  [__ABAP Code__](../abap/index.md) | Generate and execute ABAP code on-the-fly. |
+|   [__BAPIs and Function Modules__](../bapis-and-function-modules/index.md) | Access BAPIs and RFC function modules to read and write data from and to SAP. |
+|   [__BW Cube and BEx Queries__](../bw-cubes-and-bw-queries/index.md) | Extract data from SAP BW InfoCubes and BEx Queries. |
+|   [__IDocs__](../idocs/index.md) | Send and receive SAP IDocs. |
+|   [__Queries__](../queries/index.md) | Extract SAP queries (not BEx queries). |
+|   [__RFC Server Functions__](../rfc-server/index.md) | Create, register and use RFC server functions. |
+|   [__Tables__](../table/index.md) | Read SAP Tables directly via RFC. |
+|   [__Transactions__](../transactions/index.md) | Execute SAP transactions via batch input. |
+
+
+<!---
+
 <div class="grid cards" markdown>
 -   [__ABAP Code__](../abap/index.md)
 
@@ -60,6 +74,8 @@ ERPConnect is a flexible and modular .NET library that has been certified by SAP
     Execute SAP transactions via batch input.
 	
 </div>
+
+-->
 
 ### Tools
 

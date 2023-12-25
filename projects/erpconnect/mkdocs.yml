@@ -25,7 +25,7 @@ theme:
     # - content.action.view # adds a view source button to the pages
      - content.code.copy # adds copy button in code blocks
      - content.code.select # adds select button in code blocks
-     - content.tabs.link # adds anchors when switching tabs
+    # - content.tabs.link # adds anchors when switching tabs
      - content.tooltips # ebables adding tooltips to links
     # - header.autohide # hides the header when scrolling down
     # - navigation.expand #displays all pages in the navigation (not good for API Reference)
@@ -82,16 +82,13 @@ plugins:
       links_attr_map:
         target: _blank # opens all external links in new tabs
   - meta
-  - git-revision-date-localized # adds information when pages were last updated
-        #enable_creation_date: true
-        #type: timeago
   - termynal:
       title: "Youpi"
       prompt_literal_start:
         - "$"
         - ">"
   - search:
-      separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+      separator: '[\s\-,:!=\[\]()"/]+'
   - typeset
   - awesome-pages
   - macros:
@@ -103,10 +100,13 @@ plugins:
   #     combined: false # specify if the whole documentation is exported (true) or if only the active page is exported (false)
 
 # Continuous integration
-#  - group:
- #     enabled: !ENV CI
-#      plugins:
-#         - optimize
+  - group:
+      enabled: !ENV CI
+      plugins:
+         - git-revision-date-localized # adds information when pages were last updated
+        #enable_creation_date: true
+        #type: timeago
+#        - optimize
 #        - minify:
 #            minify_html: true
 

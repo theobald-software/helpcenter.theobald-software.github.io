@@ -1,8 +1,7 @@
 ---
 search:
   exclude: true
-title: Version History
-icon: material/history
+title: ChangeLog
 hide:
   - navigation
   - feedback

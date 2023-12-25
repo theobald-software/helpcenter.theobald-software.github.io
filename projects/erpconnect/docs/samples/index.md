@@ -10,10 +10,11 @@ Ask dev to create a script that automatically updates this page
 
 <div class="grid cards" markdown>
 
--   - [Get a List of all SAP users](./sap-connection/get-a-list-of-all-users.md)<br>
+-   - [Authorization Objects - SAP User Rights](./sap-connection/authority-objects-sap-user-rights.md)<br>
 	- [Implement a connection pool](./sap-connection/implement-a-connection-pool.md)<br>
-	- [Login to SAP with an SSO Logon Ticket](./sap-connection/login-to-sap-with-an-sso-logonticket.md)
--	- [Reset the Password of an SAP User](./sap-connection/reset-users-password.md)<br>
+	- [Get a List of all SAP users](./sap-connection/get-a-list-of-all-users.md)
+-	- [Login to SAP with an SSO Logon Ticket](./sap-connection/login-to-sap-with-an-sso-logonticket.md)
+	- [Reset the Password of an SAP User](./sap-connection/reset-users-password.md)<br>
 	- [Use ERPConnect in PowerShell](./sap-connection/use-erpconnect-in-powershell.md)
 
 </div>
