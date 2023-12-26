@@ -1,17 +1,27 @@
 ---
-title: Read Tables
-description: Reading SAP Tables Directly with ReadTable
+title: Read SAP Tables Directly
+description: Reading SAP Tables Directly
 ---
 
-The following sample shows how to use the *ReadTable* class to read data from an SAP table and how to process the ADO.NET result table object. 
+<!---
+move to: https://help.theobald-software.com/en/erpconnect/special-classes/reading-sap-tables-directly-with-readtable
+-->
 
-### Read Data From Tables
+The following sample shows how to use the *ReadTable* class to select data from the SAP table *MAKT* and how to process the ADO.NET result table object. 
 
-This sample reads the material description texts of the SAP table *MAKT*. 
+### About
 
-- Read the columns *MATNR* (material number) and *MAKTX* (material text).
+The SAP table MAKT contains material descriptions.
+- This sample reads the material description texts of *MAKT*. 
+For this the columns *MATNR* (material number) and *MAKTX* (material text) are needed.
 - Add a corresponding WHERE statement `SPRAS='EN'` to make sure only the English language texts are read (SPRAS is the column that contains the language keys).
 
+!!! note
+    The *RFC_READ_TABLE* function module for table extractions is not suitable for mass data extraction, see [Table Restrictions](#table-restrictions).
+
+### Read the SAP Table MAKT
+
+The following sample code reads the English material description texts of the SAP table MAKT:
 
 ``` csharp linenums="1"
 using System;
@@ -72,11 +82,4 @@ Output:
 000000000000000098 PCB Subassembly
 ```
 
-![ReadTable-Console]( ../../assets/images/ReadTable-Console.png){:class="img-responsive" }
-
-
-****
-#### Related Links
-- [Transfer data packets with ReadTable class](../../samples/transfer-data-packets-with-readtable-class.md)
-- [Get meta data of a table](../../samples/get-meta-data-of-a-table.md)
-- [Get CostCenter hierarchies](../../samples/get-costcenter-hierarchies.md)
+![ReadTableDemoConsole](../assets/images/samples/ReadTableDemoConsole.jpg){:class="img-responsive"}

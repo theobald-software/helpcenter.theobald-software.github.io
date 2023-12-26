@@ -1,26 +1,21 @@
 ---
-title: Send IDocs
-description: Example- Sending an IDoc from your .Net Application
+layout: page
+title: Send a STATUS IDoc
+description: Send a simple STATUS IDoc
+permalink: /:collection/:path
+weight: 19
 ---
 
-This section shows how to send an IDoc.<br>
-To configure your SAP system to send IDocs, see [Set Up a Test Environment for IDocs](./prerequisites.md#set-up-a-test-environment-for-idocs).
+The example below shows how to send a STATUS IDoc. 
 
-There are two ways to create an IDoc object: 
-
-- The `CreateIdoc` method creates an IDoc with all segments located in the segment collections. This is useful for sending simple IDocs. 
-- The `CreateEmptyIdoc` method in combination with the `CreateSegment` method creates only the needed segments. 
-
-### About
-
-This section shows how to write a sample console program that sends a *STATUS IDoc* using the `CreateIdoc` method.
+### About 
 
 The *STATUS* message type is used to manipulate the status of another outbound IDoc e.g., 
 when a subsystem receives an IDoc and acknowledges the receive with a status change.
 *STATUS* is a simple IDoc that contains only one data record.
 
 !!! note
-    Make sure to configure your SAP system to receive IDocs, see [Set Up Receiving IDocs](./prerequisites.md#set-up-receiving-idocs').
+    Make sure to configure your SAP system to receive IDocs.
 
 ### Send a STATUS IDoc
 
@@ -38,7 +33,7 @@ Follow the steps below to send a STATUS IDoc:
 6. Send the IDoc using the `Send`. <br> 
 7. Run the program using and check the result.<br>
 
-```csharp linenums="1" title="Send a STATUS IDocs"
+```csharp linenums="1"
 
 using System;
 using ERPConnect;
@@ -91,12 +86,4 @@ Console.ReadLine();
 Output:
 
 The status code of the manipulated IDoc increases from 3 (Data passed...) to 12 (Dispatch OK). <br>
-![SAP-Send-IDoc-001]( ../../assets/images/SAP-Send-IDoc-001.png){:class="img-responsive" width="400px" }
-
-****
-#### Related Links
-- [Send an ORDER IDoc](../../samples/send-an-order-idoc.md)
-- [Send a MATMAS IDoc](../../samples/send-a-matmas-idoc.md)
-- [Resend IDocs which where set to CPICERR in SM58](../../samples/resend-idocs-which-where-set-to-cpicerr-in-sm58.md)
-- [Set Up an RFC-Destination](./prerequisites.md#set-up-an-rfc-destination)
-
+![IdocSend2](../assets/images/samples/IdocSend2.jpg){:class="img-responsive"}

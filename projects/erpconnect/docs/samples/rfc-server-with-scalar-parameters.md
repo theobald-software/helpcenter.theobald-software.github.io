@@ -1,9 +1,14 @@
 ---
-title: Create RFC Functions
-description: Sample
+layout: page
+title: RFC Server with scalar parameters
+description: RFC Server with scalar parameters
+permalink: /:collection/:path
+weight: 4
 ---
 
 This section shows how to create, register and use RFC server functions.
+
+### About
 
 In the following application sample a simple RFC server function is created that allows ABAP programs to add numbers.<br>
 Two input parameters (*NUMBER1* and *NUMBER2*) are added and result (*RES*) is passed back to the calling ABAP program.  
@@ -11,7 +16,7 @@ Two input parameters (*NUMBER1* and *NUMBER2*) are added and result (*RES*) is p
 ### Register the RFC Server Function
 
 1. Initialize an *RFCServer* object by providing the gateway host, the gateway service and the program ID to register on the SAP gateway.
-For this, the program ID must be available as a registered destination in SAP, see [Set Up an RFC Destination](./prerequisites.md). 
+For this, the program ID must be available as a registered destination in SAP, see [Setting Up an RFC Destination](../guide/rfc-server/prerequisites.md). 
 2. Use the method *RegisteredFunctions.Add* to register an *RFCServerFunction* object.
 An *RFCServer* object can hold more than one *RFCServerFunction* object.  
 3. Add Imports and Exports. They are handled the same way as when calling RFC functions as a client. 
@@ -22,7 +27,7 @@ If you use C#, you must define the event call-back with a separate line of code.
 !!! note
     If the RFC destination is set to Unicode (SAP transaction code **SM59**), the property *IsUnicode* of the *RFCServer* object must be set to true.
 
-```csharp linenums="1" title="How to register an RFC Server function"
+```csharp linenums="1"
 using ERPConnect; 
   
 static void Main(string[] args) 
@@ -69,7 +74,8 @@ The import parameters are passed by the calling SAP system. <br>
 The export parameters are passed back to SAP.<br>
 
 ### Call RFC Server Functions in ABAP
-In this example the following ABAP code is used to call the new function **Z_ADD** in the remote destination *ERPTEST*.
+
+In this example the following ABAP code is used to call the new function **Z_ADD** in the remote destination *ERPTEST*. <br>
 The two numbers 26 and 25 are passed, and the result 51 is passed back. 
 
 ```abap
@@ -87,11 +93,4 @@ CALL FUNCTION 'Z_ADD' DESTINATION 'ERPTEST'
 ```
 
 The screenshot below shows the running ABAP program:<br>
-![RFCServer-Console]( ../../assets/images/RFCServer-Console.png) 
-
-*****
-#### Related Links
-- [Transactional RFC Server](../../samples/transactional-rfc-server.md)
-- [RFC Server with tables](../../samples/rfc-server-with-tables.md)
-- [RFC Server with structures](../../samples/rfc-server-with-structures.md)
-- [Calculate the length of the SAP type QUAN when setting up an RFC-Server](../../samples/calculate-the-length-of-the-sap-type-quan--when-setting-up-an-rfc-server.md)
+![Z_add_output](../assets/images/samples/Z_add_output.jpg){:class="img-responsive"}

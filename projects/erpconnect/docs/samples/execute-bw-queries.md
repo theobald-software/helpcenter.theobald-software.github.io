@@ -1,15 +1,17 @@
 ---
-title: Call BW Queries
-description: Call BW Queries
+layout: page
+title: Execute BW Queries
+description: Executing BW Queries
+permalink: /:collection/:path
+weight: 31
 ---
 
 The following sample shows how to fetch data from a BW Query using ERPConnect.
 
 ### About
 This example uses the BW query *ZSIMPLEQUERY* which is based on the cube *0D_DECU*. <br>
-The following screenshot shows the query in the designer. 
-
-![BW-001]( ../../assets/images/BW-001.png){:class="img-responsive" }
+The following screenshot shows the query in the designer. <br>
+![BW-001](../assets/images/samples/BW-001.png){:class="img-responsive" }
 
 !!! note
     To allow external access to a BW Query the checkbox **Allow external access** has to be set to active in the preferences for the query.
@@ -17,9 +19,9 @@ The following screenshot shows the query in the designer.
 The dimensions *Material* and *Sold-to party* as well as the key figures *Billed Quantity* and *Costs* are drawn into a *DataGrid*, see screenshot below. <br>
 The dimension has a variable called *MAT01* that allows a limitation to the material number.
 
-![BW-002]( ../../assets/images/BW-002.png){:class="img-responsive" width="600px" }
+![BW-002](../assets/images/samples/BW-002.png){:class="img-responsive" width="600px" }
 
-### Call BW Queries
+### Executing Queries
 1. Open a client connection to the R/3 system using the *R3Connection* class.
 2. Create a BWCube object using `CreateCube`. Its name is made up of the cube name and query name.
 3. The cube object offers a collection for all contained dimensions (Dimensions) and key figures (Measures). 
@@ -32,8 +34,10 @@ Add the dimensions *Material* and *Sold-to party* and the key figures *Billed Qu
     The denomination of the key figures via the query generation in the designer does not conform to the original
     technical name. That means key figures are addressed by the ordinal number, not the name.
 
+### Sample Code
 
-```csharp linenums="1" hl_lines="22 23 24 25 26 27 28 29 30" title="How to call BW Queries"
+
+```csharp linenums="1"
 using System;
 using System.Data;
 using ERPConnect;
@@ -114,6 +118,3 @@ Net&value of the invoice item in the docCurrency (SAP Demo): 11118,00
 Clearing value in document currency (SAP Demo): 0,00
 ```
 
-****
-#### Related Links
-- [Execute BW Queries](../../samples/execute-bw-queries.md)

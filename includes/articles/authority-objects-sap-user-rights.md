@@ -14,17 +14,17 @@ You can download the SAP profiles and upload them to your SAP system:
 
 Component / Extraction Type  | SAP Role File
 ------------ | -------------
-[General authorization objects](#general-authorization-objects) | [ZXTGENERAL.SAP](../../assets/files/sap_roles/ZXTGENERAL.SAP)
-[BAPI](#bapi) | [ZXTBAPI.SAP](../../assets/files/sap_roles/ZXTBAPI.SAP)
-[BW Cube](#bw-cube--bw-query)|[ZXTQUERY.SAP](../../assets/files/sap_roles/ZXTQUERY.SAP) {% if page.meta.product != "erpconnect" %}
-[BW Hierarchy](#bw-hierarchy) |[ZXTBWHIERARCHY.SAP](../../assets/files/sap_roles/ZXTBWHIERARCHY.SAP)
-[ODP (Operational Data Provisioning)](#odp) |[ZXTODP.SAP](../../assets/files/sap_roles/ZXTODP.SAP)
-[OHS (Open Hub Services)](#ohs) |[ZXTOHS.SAP](../../assets/files/sap_roles/ZXTOHS.SAP) {% endif %}
-[Query](#query)|[ZXTQUERY.SAP](../../assets/files/sap_roles/ZXTQUERY.SAP) {% if page.meta.product != "erpconnect" %}
-[Report](#report)|[ZXREPORT.SAP](../../assets/files/sap_roles/ZXREPORT.SAP) {% endif %}
-[Table](#table) | [ZXTABLE.SAP](../../assets/files/sap_roles/ZXTABLE.SAP) {% if page.meta.product != "erpconnect" %}
-[Table CDC](#table-cdc) | [ZXTABLECDC.SAP](../../assets/files/sap_roles/ZXTABLECDC.SAP)
-[DeltaQ (depricated)](#deltaq-depricated) |[ZXTDELTAQ.SAP](/files/sap_roles/ZXTDELTAQ.SAP),[DELTAQ_CUSTOMIZING_CHECK](../../assets/files/sap_roles/DELTAQ_CUSTOMIZING_CHECK.SAP)
+[General authorization objects](#general-authorization-objects) | [ZXTGENERAL.SAP](../assets/files/sap_roles/ZXTGENERAL.SAP)
+[BAPI](#bapi) | [ZXTBAPI.SAP](../assets/files/sap_roles/ZXTBAPI.SAP)
+[BW Cube](#bw-cube--bw-query)|[ZXTQUERY.SAP](../assets/files/sap_roles/ZXTQUERY.SAP) {% if page.meta.product != "erpconnect" %}
+[BW Hierarchy](#bw-hierarchy) |[ZXTBWHIERARCHY.SAP](../assets/files/sap_roles/ZXTBWHIERARCHY.SAP)
+[ODP (Operational Data Provisioning)](#odp) |[ZXTODP.SAP](../assets/files/sap_roles/ZXTODP.SAP)
+[OHS (Open Hub Services)](#ohs) |[ZXTOHS.SAP](../assets/files/sap_roles/ZXTOHS.SAP) {% endif %}
+[Query](#query)|[ZXTQUERY.SAP](../assets/files/sap_roles/ZXTQUERY.SAP) {% if page.meta.product != "erpconnect" %}
+[Report](#report)|[ZXREPORT.SAP](../assets/files/sap_roles/ZXREPORT.SAP) {% endif %}
+[Table](#table) | [ZXTABLE.SAP](../assets/files/sap_roles/ZXTABLE.SAP) {% if page.meta.product != "erpconnect" %}
+[Table CDC](#table-cdc) | [ZXTABLECDC.SAP](../assets/files/sap_roles/ZXTABLECDC.SAP)
+[DeltaQ (depricated)](#deltaq-depricated) |[ZXTDELTAQ.SAP](/files/sap_roles/ZXTDELTAQ.SAP),[DELTAQ_CUSTOMIZING_CHECK](../assets/files/sap_roles/DELTAQ_CUSTOMIZING_CHECK.SAP)
 {% endif %}
 
 !!! note
@@ -39,7 +39,7 @@ S_RFC            RFC_TYPE=FUGR; RFC_NAME=SRFC; ACTVT=16
 S_RFC            RFC_TYPE=FUGR; RFC_NAME=RFC1; ACTVT=16
 ```
 
-Download the corresponding SAP role --- [SAP profile for general authorization](../../assets/files/sap_roles/ZXTGENERAL.SAP).
+Download the corresponding SAP role --- [SAP profile for general authorization](../assets/files/sap_roles/ZXTGENERAL.SAP).
 
 ### BAPI
 
@@ -47,7 +47,7 @@ Download the corresponding SAP role --- [SAP profile for general authorization](
 S_RFC            ACTVT=16; RFC_TYPE=FUGR; RFC_NAME=DDIF_FIELDINFO_GET, SDIFRUNTIME     
 ```
 
-Download the corresponding SAP role --- [SAP profile for BAPI Extractions](../../assets/files/sap_roles/ZXTBAPI.SAP).
+Download the corresponding SAP role --- [SAP profile for BAPI Extractions](../assets/files/sap_roles/ZXTBAPI.SAP).
 
 ### BW Cube / BW Query 
 
@@ -86,7 +86,7 @@ Authorizations for the underlying Queries, Cubes, InfoAreas and analysis need to
 
 Alternatively, you can assign the SAP role template  ```S_RS_RREPU```. <br>
 
-Download the corresponding SAP role --- [SAP profile for BW Cube / BW Query](../../assets/files/sap_roles/ZXTQUERY.SAP).
+Download the corresponding SAP role --- [SAP profile for BW Cube / BW Query](../assets/files/sap_roles/ZXTQUERY.SAP).
 
 
 {% if page.meta.product != "erpconnect" %}
@@ -113,7 +113,7 @@ S_TABU_NAM     ACTVT=02, 03; TABLE=ENLFDIR
 S_TABU_NAM     ACTVT=02, 03; TABLE=RSHIEDIR
 ```
 
-Download the corresponding SAP role --- [SAP profile for BW Hierarchy](../../assets/files/sap_roles/ZXTBWHIERARCHY.SAP).
+Download the corresponding SAP role --- [SAP profile for BW Hierarchy](../assets/files/sap_roles/ZXTBWHIERARCHY.SAP).
 
 ### ODP
 
@@ -123,7 +123,7 @@ For a complete and detailed list of authorization objects refer to [SAP Note 285
 S_TABU_NAM       ACTVT=03; TABLE=TCURX
 ```
 
-Download the corresponding SAP role ---  [SAP profile for ODP](../../assets/files/sap_roles/ZXTODP.SAP). 
+Download the corresponding SAP role ---  [SAP profile for ODP](../assets/files/sap_roles/ZXTODP.SAP). 
 
 
 ### OHS
@@ -148,7 +148,7 @@ S_RS_AUTH  BIAUTH=0BI_ALL
 S_ADMI_FCD S_ADMI_FCD=ST0R
 ```
 
-Download the corresponding SAP role ---  [SAP profile for OHS](../../assets/files/sap_roles/ZXTOHS.SAP).
+Download the corresponding SAP role ---  [SAP profile for OHS](../assets/files/sap_roles/ZXTOHS.SAP).
 
 {% endif %}
 
@@ -158,7 +158,7 @@ Download the corresponding SAP role ---  [SAP profile for OHS](../../assets/file
 S_RFC            RFC_TYPE=FUGR; RFC_NAME=AQRC; ACTVT=16 
 ```
 
-Download the corresponding SAP role ---  [SAP profile for SAP Query](../../assets/files/sap_roles/ZXTQUERY.SAP).
+Download the corresponding SAP role ---  [SAP profile for SAP Query](../assets/files/sap_roles/ZXTQUERY.SAP).
 
 {% if page.meta.product != "erpconnect" %}
 
@@ -178,7 +178,7 @@ S_BTCH_JOB       JOBGROUP=*; JOBACTION=RELE
     The necessary transport request for function group *ZXTRACTABAP* is located in the following path: ```C:\Program Files\[XtractProduct]\ABAP\Report\Z_XTRACT_IS_REMOTE_REPORT-transport.zip``` of the default installation.
 
 
-Download the corresponding SAP role ---  [SAP profile for Report](../../assets/files/sap_roles/ZXREPORT.SAP).
+Download the corresponding SAP role ---  [SAP profile for Report](../assets/files/sap_roles/ZXREPORT.SAP).
 
 {% endif %}
 
@@ -194,9 +194,12 @@ S_DSAUTH         ACTVT=16;
 XXXX (stands for a placeholder) is the authorization group for the table. To determine, which authorization group belongs to which table, check the table TDDAT - Maintenance Areas for Tables. 
 If the table is not listed, the authorization group is &NC&. For authorizing specific tables use authorization object S_TABU_NAM instead of S_TABU_DIS.
 
+{% if page.meta.product != "erpconnect" %}
+
 
 !!! note
     The transport request for function group */THEO/READ_TABLE* and *Z_THEO_READ_TABLE* is located in the following path: ```C:\Program Files\[XtractProduct]\ABAP\Table``` of the default installation. 
+
 
 When executing the custom function module Z_THEO_READ_TABLE in the background:
 
@@ -219,9 +222,8 @@ When executing the custom function module Z_THEO_READ_TABLE in the background:
 	S_TABU_NAM       ACTVT=03; TABLE=TCURX
 	```
 
-Download the corresponding SAP role ---  [SAP profile for Table](../../assets/files/sap_roles/ZXTABLE.SAP). 
+Download the corresponding SAP role ---  [SAP profile for Table](../assets/files/sap_roles/ZXTABLE.SAP). 
 
-{% if page.meta.product != "erpconnect" %}
 
 ### Table CDC
 
@@ -236,7 +238,7 @@ XXXX (stands for a placeholder) is the authorization group for the source table.
 !!! note
     The transport requests for the required function groups */THEO/READ_TABLE* are located in ```C:\Program Files\[XtractProduct]\ABAP\TableCDC``` and ```C:\Program Files\[XtractProduct]\ABAP\Table```. 
 
-Download the corresponding SAP role ---  [SAP profile for Table CDC](../../assets/files/sap_roles/ZXTABLECDC.SAP).
+Download the corresponding SAP role ---  [SAP profile for Table CDC](../assets/files/sap_roles/ZXTABLECDC.SAP).
 
 ### DeltaQ (Depricated)
 
@@ -306,7 +308,7 @@ Download the corresponding SAP role ---  [SAP profile for Table CDC](../../asset
 	S_RO_OSOA        OLTPSOURCE=*; OSOAAPCO=*; OSOAPART=DATA; ACTVT=03;  | Only in SAP Releases  7.0 and higher
 	```
 
-Download the corresponding SAP roles ---  [SAP profile for DeltaQ](../../assets/files/sap_roles/ZXTDELTAQ.SAP), [SAP profile for DeltaQ Customizing Check](../../assets/files/sap_roles/DELTAQ_CUSTOMIZING_CHECK.SAP). 
+Download the corresponding SAP roles ---  [SAP profile for DeltaQ](../assets/files/sap_roles/ZXTDELTAQ.SAP), [SAP profile for DeltaQ Customizing Check](../assets/files/sap_roles/DELTAQ_CUSTOMIZING_CHECK.SAP). 
 
 {% endif %}
 

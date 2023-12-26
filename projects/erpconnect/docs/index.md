@@ -28,13 +28,13 @@ How can we help you?
 
 -   [:material-update: Latest updates](changelog.md)
 
--   [:material-file-document-outline: Code samples and use cases](#)
+-   [:material-file-document-outline: Code samples and use cases](samples/index.md)
 
 -   [:material-email: Contact Support](https://support.theobald-software.com/helpdesk)
 
 -   [:material-lightbulb: Common errors](https://support.theobald-software.com/helpdesk/KB)
 
--   [:material-comment-quote: Give Feedback](#)
+-   [:material-comment-quote: Give Feedback](https://theobald-software.typeform.com/to/CnpfiiIN)
 
 -   [:material-information: Get Product Information](https://theobald-software.com/en/erpconnect/)
 

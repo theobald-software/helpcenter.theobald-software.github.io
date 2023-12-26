@@ -1,5 +1,5 @@
 nav:
-    - index.md
+    - access-api-in-vs.md
     - ERPConnect: erpconnect
     - ERPConnect.BW: erpconnect-bw
     - ERPConnect.Idocs: erpconnect-idocs
