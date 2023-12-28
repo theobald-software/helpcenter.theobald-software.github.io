@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Calculate the length of the SAP type QUAN when setting up an RFC-Server
+title: Calculate the length of the SAP type QUAN when using an RFC-Server
 description: How to calculate the length of the SAP type QUAN when setting up an RFC-Server
 permalink: /:collection/:path
 weight: 32

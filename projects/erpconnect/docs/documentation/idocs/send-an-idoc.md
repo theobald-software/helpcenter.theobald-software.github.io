@@ -8,95 +8,79 @@ To configure your SAP system to send IDocs, see [Set Up a Test Environment for I
 
 There are two ways to create an IDoc object: 
 
-- The `CreateIdoc` method creates an IDoc with all segments located in the segment collections. This is useful for sending simple IDocs. 
-- The `CreateEmptyIdoc` method in combination with the `CreateSegment` method creates only the needed segments. 
+<!---
+<div class="grid cards" markdown>
+-   `CreateIdoc` 
 
-### About
+	---
+	
+	Creates an IDoc with all segments located in the segment collections. 
+	This is useful for sending simple IDocs. 
+	
+-   `CreateEmptyIdoc` and `CreateSegment` 
 
-This section shows how to write a sample console program that sends a *STATUS IDoc* using the `CreateIdoc` method.
+	---
+	
+	Creates only the needed segments. 
+</div>
+-->
 
-The *STATUS* message type is used to manipulate the status of another outbound IDoc e.g., 
-when a subsystem receives an IDoc and acknowledges the receive with a status change.
-*STATUS* is a simple IDoc that contains only one data record.
+- `CreateIdoc` creates an IDoc with all segments located in the segment collections. <br>
+This is useful for sending simple IDocs. 
+- `CreateEmptyIdoc` and `CreateSegment` create only the needed segments. 
+
+
+
+### Send an IDoc
+
+Follow the steps below to send IDocs:
+
+1. Connect to the SAP system using `R3Connection`. 
+2. Use `CreateIdoc` or `CreateEmptyIdoc` to instance a valid *IDoc* object. Provide an object type for the IDocs, e.g., "SYSTAT01", "MATMAS01", "ORDERS01", etc.
+3. Provide receiver and sender information. 
+4. Fill in the fields in the IDoc segments.
+5. Send the IDoc using `Send`. 
+6. Run the program and check the result.
+
+!!! tip
+    Use SAP transaction WE60 to look up the segment documentation of IDocs.
 
 !!! note
-    Make sure to configure your SAP system to receive IDocs, see [Set Up Receiving IDocs](./prerequisites.md#set-up-receiving-idocs').
+    Make sure to configure your SAP system to receive IDocs.
 
-### Send a STATUS IDoc
+Examples:
 
-Follow the steps below to send a STATUS IDoc:
+=== "Send a STATUS IDoc"
 
-1. Open a client connection to the R/3 system using the *R3Connection* class. 
-2. Inquire the IDoc number of the IDoc to be manipulated and read the input.
-3. Use `CreateIdoc` to instance a valid *IDoc* object. 
-"SYSTAT01" is the IDoc type for the appropriate message type STATUS. 
-4. Provide receiver and sender information. 
-5. Fill in the following fields in segment *E1STATS*: 
-	- the new status code (*STATUS*)
-	- date and time (*LOGDAT*, *LOGTIM*) 
-	- the number of the IDoc to be manipulated
-6. Send the IDoc using the `Send`. <br> 
-7. Run the program using and check the result.<br>
+	{% include "erpconnect/code/send-status-idocs.md" %}
 
-```csharp linenums="1" title="Send a STATUS IDocs"
+	Output:
 
-using System;
-using ERPConnect;
-using ERPConnect.Utils;
+	The status code of the manipulated IDoc increases from 3 (Data passed...) to 12 (Dispatch OK). <br>
+	![SAP-Send-IDoc-001]( ../../assets/images/SAP-Send-IDoc-001.png){:class="img-responsive" width="400px" }
 
-// Set your ERPConnect license
-LIC.SetLic("xxxx");
+=== "Send a MATMAS IDoc"
 
-using var connection = new R3Connection(
-    host: "server.acme.org",
-    systemNumber: 00,
-    userName: "user",
-    password: "passwd",
-    language: "EN",
-    client: "001")
-{
-    Protocol = ClientProtocol.NWRFC,
-};
+	{% include "erpconnect/code/send-matmas-idocs.md" %}
 
-connection.Open(false);
-        
-Console.WriteLine("Which IDoc number would you like to manipulate?");  
-string IdocNo = Console.ReadLine(); 
-        
-Idoc i = connection.CreateIdoc("SYSTAT01","");
- 
-// Fill Message Type 
-i.MESTYP = "STATUS"; 
-  
-// Fill Information about IDoc Reciever 
-i.RCVPRN = "PT4_800"; // Partner number 
-i.RCVPRT = "LS"; // Partner type 
-  
-// Fill information about IDoc sender 
-i.SNDPOR = "ERPCONNECT"; // Partner port 
-i.SNDPRN = "ERPCONNECT"; // Partner number 
-i.SNDPRT = "LS"; // Partner type
+	Output:
 
-// Fill the right fields in the segments 
-i.Segments["E1STATS",0].Fields["LOGDAT"].FieldValue = "20210901";
-i.Segments["E1STATS",0].Fields["LOGTIM"].FieldValue = "152301"; 
-i.Segments["E1STATS",0].Fields["STATUS"].FieldValue = "12"; 
-i.Segments["E1STATS",0].Fields["DOCNUM"].FieldValue = IdocNo; 
-  
-i.Send(); 
-Console.WriteLine("IDoc sent"); 
-Console.ReadLine();
-```
+	![MatmasSend](../../assets/images/samples/MatmasSend.jpg){:class="img-responsive"}
 
-Output:
+=== "Send an ORDER IDoc"
 
-The status code of the manipulated IDoc increases from 3 (Data passed...) to 12 (Dispatch OK). <br>
-![SAP-Send-IDoc-001]( ../../assets/images/SAP-Send-IDoc-001.png){:class="img-responsive" width="400px" }
+	{% include "erpconnect/code/send-order-idocs.md" %}
+
+	Output:
+
+	![IdocSalesOrder](../../assets/images/samples/IdocSalesOrder.png){:class="img-responsive"}
+
 
 ****
 #### Related Links
 - [Send an ORDER IDoc](../../samples/send-an-order-idoc.md)
 - [Send a MATMAS IDoc](../../samples/send-a-matmas-idoc.md)
+- [Send a STATUS IDoc](../../samples/send-a-simple-status-idoc.md)
 - [Resend IDocs which where set to CPICERR in SM58](../../samples/resend-idocs-which-where-set-to-cpicerr-in-sm58.md)
 - [Set Up an RFC-Destination](./prerequisites.md#set-up-an-rfc-destination)
 

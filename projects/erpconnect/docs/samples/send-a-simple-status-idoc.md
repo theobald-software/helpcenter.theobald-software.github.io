@@ -1,9 +1,6 @@
 ---
-layout: page
 title: Send a STATUS IDoc
 description: Send a simple STATUS IDoc
-permalink: /:collection/:path
-weight: 19
 ---
 
 The example below shows how to send a STATUS IDoc. 
@@ -21,7 +18,7 @@ when a subsystem receives an IDoc and acknowledges the receive with a status cha
 
 Follow the steps below to send a STATUS IDoc:
 
-1. Open a client connection to the R/3 system using the *R3Connection* class. 
+1. Connect to the SAP system using `R3Connection`. 
 2. Inquire the IDoc number of the IDoc to be manipulated and read the input.
 3. Use `CreateIdoc` to instance a valid *IDoc* object. 
 "SYSTAT01" is the IDoc type for the appropriate message type STATUS. 
@@ -33,57 +30,18 @@ Follow the steps below to send a STATUS IDoc:
 6. Send the IDoc using the `Send`. <br> 
 7. Run the program using and check the result.<br>
 
-```csharp linenums="1"
 
-using System;
-using ERPConnect;
-using ERPConnect.Utils;
-
-// Set your ERPConnect license
-LIC.SetLic("xxxx");
-
-using var connection = new R3Connection(
-    host: "server.acme.org",
-    systemNumber: 00,
-    userName: "user",
-    password: "passwd",
-    language: "EN",
-    client: "001")
-{
-    Protocol = ClientProtocol.NWRFC,
-};
-
-connection.Open(false);
-        
-Console.WriteLine("Which IDoc number would you like to manipulate?");  
-string IdocNo = Console.ReadLine(); 
-        
-Idoc i = connection.CreateIdoc("SYSTAT01","");
- 
-// Fill Message Type 
-i.MESTYP = "STATUS"; 
-  
-// Fill Information about IDoc Reciever 
-i.RCVPRN = "PT4_800"; // Partner number 
-i.RCVPRT = "LS"; // Partner type 
-  
-// Fill information about IDoc sender 
-i.SNDPOR = "ERPCONNECT"; // Partner port 
-i.SNDPRN = "ERPCONNECT"; // Partner number 
-i.SNDPRT = "LS"; // Partner type
-
-// Fill the right fields in the segments 
-i.Segments["E1STATS",0].Fields["LOGDAT"].FieldValue = "20210901";
-i.Segments["E1STATS",0].Fields["LOGTIM"].FieldValue = "152301"; 
-i.Segments["E1STATS",0].Fields["STATUS"].FieldValue = "12"; 
-i.Segments["E1STATS",0].Fields["DOCNUM"].FieldValue = IdocNo; 
-  
-i.Send(); 
-Console.WriteLine("IDoc sent"); 
-Console.ReadLine();
-```
+{% include "erpconnect/code/send-status-idocs.md" %}
 
 Output:
 
 The status code of the manipulated IDoc increases from 3 (Data passed...) to 12 (Dispatch OK). <br>
 ![IdocSend2](../assets/images/samples/IdocSend2.jpg){:class="img-responsive"}
+
+*****
+
+#### Related Links
+- [Prerequisites for working with IDocs](../documentation/idocs/prerequisites.md)
+- [Reveive an IDoc](receive-an-idoc.md)
+- [Send an ORDER IDoc](send-an-order-idoc.md)
+- [Send a MATMAS IDoc](send-a-matmas-idoc.md)

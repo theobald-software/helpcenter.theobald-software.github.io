@@ -1,10 +1,12 @@
 ---
 title: API Documentation
+hide:
+   - toc
 ---
 
 # API Documentation in Visual Studio
 
-The ERPConnect API documentation is available in the Object Browser in Visual Studio.
+The ERPConnect API documentation is available in the Object Browser in Visual Studio.<br>
 To view the Object Browser, navigate to the menu **View -> Object Browser**. 
 
 Note that the file ERPConnectXX.xml must be in the same folder as the ERPConnectXX.dll.

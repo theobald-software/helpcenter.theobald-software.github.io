@@ -2,108 +2,103 @@
 title: Samples
 ---
 
-<!---
-Ask dev to create a script that automatically updates this page
--->
 
 ### SAP Connection
 
-<div class="grid cards" markdown>
+<div class="mdx-columns" markdown>
 
--   - [Authorization Objects - SAP User Rights](authority-objects-sap-user-rights.md)<br>
-	- [Implement a connection pool](implement-a-connection-pool.md)<br>
-	- [Get a List of all SAP users](get-a-list-of-all-users.md)
--	- [Login to SAP with an SSO Logon Ticket](login-to-sap-with-an-sso-logonticket.md)
-	- [Reset the Password of an SAP User](reset-users-password.md)<br>
-	- [Use ERPConnect in PowerShell](use-erpconnect-in-powershell.md)
+- [Authorization Objects - SAP User Rights](authority-objects-sap-user-rights.md)
+- [Implement a connection pool](implement-a-connection-pool.md)
+- [Login to SAP with an SSO Logon Ticket](login-to-sap-with-an-sso-logonticket.md)
+- [Use ERPConnect in PowerShell](use-erpconnect-in-powershell.md)
 
 </div>
 
 ### ABAP Code 
 
-<div class="grid cards" markdown>
+<div class="mdx-columns" markdown>
 
--   - [Create an ABP Interpreter](abap-interpreter.md)
+- [Create an ABP Interpreter](abap-interpreter.md)
 
 </div>
 
 ### BAPIs and Function Modules
 
-<div class="grid cards" markdown>
+<div class="mdx-columns" markdown>
 
--   - [Change Batch Value of an Outbound Delivery](change-batch-value-of-an-outbound-delivery.md)<br>
-	- [Change Production Order](change-production-order.md)<br>
-	- [Create Equipment](create-equipment.md)<br>
-	- [Create Functional Location](create-functional-location.md)<br>
-	- [Create a Purchase Order](create-a-purchase-order.md)<br>
-	- [Download Business Object Attachments](download-business-object-attachments.md)<br>
-	- [Get Purchase Requisition Details](get-purchase-requisition-details.md)<br>
-	- [Get a List of all SAP users](get-a-list-of-all-users.md)<br>
-	- [Get an Equipment List](get-an-equipment-list.md)<br>
-	- [Look up Purchase Orders](look-up-purchase-orders.md)<br>
-	- [Post Goods Movement](post-goods-movement.md)<br>
--	- [Read Material BOM](read-material-bom.md)<br>
-	- [Read Personnel Data](call-a-bapi-bapi_employee_getdata.md)<br>
-	- [Read/Write Material Master Data](readwrite-material-master-data.md)<br>
-	- [Reset the Password of an SAP User](reset-users-password.md)<br>
-	- [Retrieve Stock Quantity](retrieve-stock-quantity.md)<br>
-	- [Retrieve Texts from a Sales Order](retrieve-texts-from-a-sales-order.md)<br>
-	- [Retrieve the Quantity of a Purchase Order that has already been received](retrieve-the-quantity-of-a-purchase-order-that-has-already-been-received.md)<br>
-	- [Upload Documents to the BDS](upload-documents-to-the-bds.md)<br>
-	- [Use the ArchiveLink BAPI to send Barcodes to SAP](use-the-archivelink-bapi-to-send-barcodes-to-sap.md)
+- [Change Batch Value of an Outbound Delivery](change-batch-value-of-an-outbound-delivery.md)
+- [Change Production Order](change-production-order.md)
+- [Create Equipment](create-equipment.md)
+- [Create Functional Location](create-functional-location.md)
+- [Create a Purchase Order](create-a-purchase-order.md)
+- [Download Business Object Attachments](download-business-object-attachments.md)
+- [Get Purchase Requisition Details](get-purchase-requisition-details.md)
+- [Get a List of all SAP users](get-a-list-of-all-users.md)
+- [Get an Equipment List](get-an-equipment-list.md)
+- [Look up Purchase Orders](look-up-purchase-orders.md)
+- [Post Goods Movement](post-goods-movement.md)
+- [Read Material BOM](read-material-bom.md)
+- [Read Personnel Data](call-a-bapi-bapi_employee_getdata.md)
+- [Read/Write Material Master Data](readwrite-material-master-data.md)
+- [Reset the Password of an SAP User](reset-users-password.md)
+- [Retrieve Stock Quantity](retrieve-stock-quantity.md)
+- [Retrieve Texts from a Sales Order](retrieve-texts-from-a-sales-order.md)
+- [Retrieve the Quantity of a Purchase Order that has already been received](retrieve-the-quantity-of-a-purchase-order-that-has-already-been-received.md)
+- [Upload Documents to the BDS](upload-documents-to-the-bds.md)
+- [Use the ArchiveLink BAPI to send Barcodes to SAP](use-the-archivelink-bapi-to-send-barcodes-to-sap.md)
 
 </div>
 
 ### BW Cubes and BW Queries
 
-<div class="grid cards" markdown>
+<div class="mdx-columns" markdown>
 
--   - [Execute BW Queries](execute-bw-queries.md)
+- [Execute BW Queries](execute-bw-queries.md)
 
 </div>
 
 ### IDocs
 
-<div class="grid cards" markdown>
+<div class="mdx-columns" markdown>
 
--   - [Receive an IDoc](receive-an-idoc.md)<br>
-	- [Resend IDocs which where set to CPICERR in SM58](resend-idocs-which-where-set-to-cpicerr-in-sm58.md)<br>
-	- [Send a MATMAS IDoc](send-a-matmas-idoc.md)
--	- [Send a STATUS IDoc](send-a-simple-status-idoc.md)<br>
-	- [Send an ORDER IDoc](send-an-order-idoc.md)
+- [Receive an IDoc](receive-an-idoc.md)
+- [Resend IDocs which where set to CPICERR in SM58](resend-idocs-which-where-set-to-cpicerr-in-sm58.md)
+- [Send a MATMAS IDoc](send-a-matmas-idoc.md)
+- [Send a STATUS IDoc](send-a-simple-status-idoc.md)
+- [Send an ORDER IDoc](send-an-order-idoc.md)
 
 </div>
 
 ### RFC Server Functions
 
-<div class="grid cards" markdown>
+<div class="mdx-columns" markdown>
 
--   - [Calculate the length of the SAP type QUAN when setting up an RFC-Server](calculate-the-length-of-the-sap-type-quan--when-setting-up-an-rfc-server.md)
-	- [RFC Server Functions](rfc-server-functions.md)
--	- [Transactional RFC Server](transactional-rfc-server.md)
+- [Calculate the length of the SAP type QUAN](calculate-the-length-of-the-sap-type-quan--when-setting-up-an-rfc-server.md)
+- [RFC Server Functions](rfc-server-functions.md)
+- [Transactional RFC Server](transactional-rfc-server.md)
 
 </div>
 
 ### Tables
 
-<div class="grid cards" markdown>
+<div class="mdx-columns" markdown>
 
--   - [Download Business Object Attachments](download-business-object-attachments.md)
-	- [Get CostCenter Hierarchies](get-costcenter-hierarchies.md)
-	- [Read meta data of a table](get-meta-data-of-a-table.md)
-	- [Read SAP Tables Directly](read-sap-tables-directly.md)
--   - [Read meta data of a table](get-meta-data-of-a-table.md)
-	- [Transfer data packets with ReadTable](transfer-data-packets-with-readtable-class.md)
-	- [Use ERPConnect in PowerShell](use-erpconnect-in-powershell.md)
+- [Download Business Object Attachments](download-business-object-attachments.md)
+- [Get CostCenter Hierarchies](get-costcenter-hierarchies.md)
+- [Read meta data of a table](get-meta-data-of-a-table.md)
+- [Read SAP Tables Directly](read-sap-tables-directly.md)
+- [Read meta data of a table](get-meta-data-of-a-table.md)
+- [Transfer data packets with ReadTable](transfer-data-packets-with-readtable-class.md)
+- [Use ERPConnect in PowerShell](use-erpconnect-in-powershell.md)
 
 </div>
 
 ### Transactions
 
-<div class="grid cards" markdown>
+<div class="mdx-columns" markdown>
 
--   - [Create New Customers using Batch Input](create-new-customers-using-batch-input.md)
--   - [Manage and Execute Batch Input Transactions](manage-and-execute-batch-input-transactions.md)
+- [Create New Customers using Batch Input](create-new-customers-using-batch-input.md)
+- [Manage and Execute Batch Input Transactions](manage-and-execute-batch-input-transactions.md)
 
 </div>
 
