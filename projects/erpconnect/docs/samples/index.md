@@ -79,10 +79,8 @@ Ask dev to create a script that automatically updates this page
 <div class="grid cards" markdown>
 
 -   - [Calculate the length of the SAP type QUAN when setting up an RFC-Server](calculate-the-length-of-the-sap-type-quan--when-setting-up-an-rfc-server.md)
-	- [RFC Server with scalar parameters](rfc-server-with-scalar-parameters.md)
-	- [RFC Server with structures](rfc-server-with-structures.md)
--   - [RFC Server with tables](rfc-server-with-tables.md)
-	- [Transactional RFC Server](transactional-rfc-server.md)
+	- [RFC Server Functions](rfc-server-functions.md)
+-	- [Transactional RFC Server](transactional-rfc-server.md)
 
 </div>
 
@@ -148,7 +146,7 @@ Ask dev to create a script that automatically updates this page
   content: |
     The .NET programming library to develop your own SAP interfaces.
   image: ../assets/images/ERPConnect.png
-  url: ../guide/
+  url: ../documentation/
 
 - title: RFC Server Functions
   content: |
@@ -166,7 +164,7 @@ Ask dev to create a script that automatically updates this page
   content: |
     The .NET programming library to develop your own SAP interfaces.
   image: ../assets/images/ERPConnect.png
-  url: ../guide/
+  url: ../documentation/
 ::/cards::
 
 

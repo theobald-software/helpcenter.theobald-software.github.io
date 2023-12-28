@@ -2,7 +2,7 @@
 nav:
     - Home: index.md
     - QuickStart: quick-start.md
-    - Complete Guide: guide
+    - Documentation: documentation
     - Samples: samples
     - API Reference: erpconnect-api
     - ChangeLog: changelog.md

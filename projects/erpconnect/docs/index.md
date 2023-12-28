@@ -9,7 +9,6 @@ hide:
 
 # Welcome to the ERPConnect HelpCenter
 
-
 <!-- termynal: {"prompt_literal_start": [">"], title: ERPConnect} -->
 
 <!--

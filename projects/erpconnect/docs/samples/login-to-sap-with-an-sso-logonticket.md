@@ -74,4 +74,4 @@ static string ParseCookie(string cookie)
 ****
 
 #### Related Link:
-- [Complete Guide: SSO with Logon Tickets](../guide/sap-connection/sso-with-log-on-tickets.md). 
+- [Complete Guide: SSO with Logon Tickets](../documentation/sap-connection/sso-with-log-on-tickets.md). 
