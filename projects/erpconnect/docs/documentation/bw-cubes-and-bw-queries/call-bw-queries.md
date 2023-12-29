@@ -20,7 +20,8 @@ The dimension has a variable called *MAT01* that allows a limitation to the mate
 ![BW-002]( ../../assets/images/BW-002.png){:class="img-responsive" width="600px" }
 
 ### Call BW Queries
-1. Open a client connection to the R/3 system using the *R3Connection* class.
+
+1. Connect to the SAP system using `R3Connection`.
 2. Create a BWCube object using `CreateCube`. Its name is made up of the cube name and query name.
 3. The cube object offers a collection for all contained dimensions (Dimensions) and key figures (Measures). 
 If the attribute *SelectForFlatMDX* is set to *true*, the component is added to the query output. <br>

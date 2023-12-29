@@ -1,9 +1,6 @@
 ---
-layout: page
 title: Upload Documents to the BDS
 description: Upload Documents to the BDS
-permalink: /:collection/:path
-weight: 35
 ---
 
 This sample shows how to upload documents to the BDS (Business Document Service) using the function module BDS_BUSINESSDOCUMENT_CREA_TAB.

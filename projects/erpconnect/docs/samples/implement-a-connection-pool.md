@@ -1,9 +1,6 @@
 ---
-layout: page
 title: Implement a connection pool
 description: How to implement a connection pool
-permalink: /:collection/:path
-weight: 34
 ---
 
 This sample shows how to implement a connection pool for SAP connections.

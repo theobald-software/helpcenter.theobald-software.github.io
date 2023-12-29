@@ -160,7 +160,7 @@ The following code shows how the *IncomingCall* event is handled:
 
 	The result is returned in the scalar export parameter *RES*.
 	
-=== "Table parameters"
+=== "Table Parameters"
 
 	``` csharp linenums="1"
 	static void s_IncomingCall(RFCServer Sender, RFCServerFunction CalledFunction)
@@ -234,7 +234,7 @@ The export parameters are passed back to SAP.<br>
 
 The following ABAP code is used to call the new function *Z_ADD* in the remote destination *ERPTEST*.
 
-=== "RExample with Scalar Parameters"
+=== "Example with Scalar Parameters"
 
 	```abap
 	REPORT z_add_test 
@@ -251,7 +251,7 @@ The following ABAP code is used to call the new function *Z_ADD* in the remote d
 
 	The two numbers 26 and 25 are passed, and the result 51 is passed back. 
 	
-=== "Table parameters"
+=== "Table Parameters"
 
 	```abap
 	REPORT  zaddtest2 

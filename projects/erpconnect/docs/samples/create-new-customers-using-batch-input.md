@@ -1,9 +1,6 @@
 ---
-layout: page
 title: Create New Customers using Batch Input
 description: Create New Customers using Batch Input
-permalink: /:collection/:path
-weight: 46
 ---
 
 This sample shows how to use batch input with SAP transaction XD01 in ERPConnect to create new customers in SAP.

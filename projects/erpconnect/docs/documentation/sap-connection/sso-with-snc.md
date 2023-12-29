@@ -3,8 +3,10 @@ title: SSO with SNC
 description: SSO with SNC
 ---
 
-You can create a SAP connection using Single-Sign-On (SSO) and Secure Network Communication (SNC) as of ERPConnect version 4.1.59.
-If you use SNC in your project, you can choose between the [NTLM](#ntlm) or the [Kerberos5](#Kerberos) mechanism. 
+Secure Network Communication (SNC) enables authentication and transport encryption between SAP systems and between SAP systems and third-party tools like Xtract Universal and Board Connector. 
+For more information on SNC, see [SAP Documentation: SNC](https://help.sap.com/doc/saphelp_nw73ehp1/7.31.19/en-US/e6/56f466e99a11d1a5b00000e835363f/content.htm?no_cache=true).
+
+When using SNC you can choose between the [NTLM](#ntlm) or the [Kerberos5](#Kerberos) mechanism. 
 
 ### Prerequisites
 
@@ -33,7 +35,7 @@ The DLLs are available via the [SNOTE 2115486](http://service.sap.com/sap/suppor
 When using Kerberos authentication, apply the Kerberos SNC settings as described in the [SAP Help - Single Sign-On with Microsoft Kerberos SSP](https://help.sap.com/viewer/e815bb97839a4d83be6c4fca48ee5777/7.5.9/EN-US/440ebf6c9b2b0d1ae10000000a114a6b.html) to your SAP system. <br>
 
 !!! note
-    Before continuing, we recommend testing the connection between SAP and the client.
+    It is recommended to test the connection between SAP and the client before continuing.
 
 ### About SNC in ERPConnect
 

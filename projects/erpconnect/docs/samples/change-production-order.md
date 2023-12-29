@@ -1,9 +1,6 @@
 ---
-layout: page
 title: Change Production Order
 description: Change Production Order
-permalink: /:collection/:path
-weight: 44
 ---
 
 This sample shows how to change a production order using the function module CLOI_CHANGES_UPL_31. 
@@ -23,7 +20,6 @@ Typical applications include:
 - rescheduling the production order using the field METHOD with the value "SCHEDULE"
 
 The table CLOI_MESSAGE_LOG_EXP contains the message codes of the function module. 
-
 
 
 ### Call CLOI_CHANGES_UPL_31

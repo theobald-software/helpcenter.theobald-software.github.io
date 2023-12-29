@@ -1,9 +1,6 @@
 ---
-layout: page
 title: Create Equipment
 description: Create Equipment
-permalink: /:collection/:path
-weight: 42
 ---
 
 This sample shows how to create equipment in SAP using the BAPI BAPI_EQMT_MODIFY.

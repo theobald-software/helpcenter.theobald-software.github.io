@@ -1,9 +1,6 @@
 ---
-layout: page
 title: Read Personnel Data
 description: Call a BAPI- BAPI_EMPLOYEE_GETDATA
-permalink: /:collection/:path
-weight: 15
 ---
 
 

@@ -1,9 +1,6 @@
 ---
-layout: page
 title: Get an Equipment List
 description: Getting an equipment list by using BAPI EQUI GETLIST / Using Select Ranges
-permalink: /:collection/:path
-weight: 43
 ---
 
 This sample shows how to get a (filtered) equipment list using the function module BAPI_EQUI_GETLIST. 

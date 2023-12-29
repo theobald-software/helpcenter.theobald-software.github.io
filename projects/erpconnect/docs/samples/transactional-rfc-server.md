@@ -1,9 +1,6 @@
 ---
-layout: page
 title: Transactional RFC Server
 description: Transactional RFC Server
-permalink: /:collection/:path
-weight: 29
 ---
 
 This sample shows how to build an RFC server that supports transactional RFCs.

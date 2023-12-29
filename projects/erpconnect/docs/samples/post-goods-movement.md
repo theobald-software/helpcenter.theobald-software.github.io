@@ -1,9 +1,6 @@
 ---
-layout: page
 title: Post Goods Movement
 description: Post Goods Movement
-permalink: /:collection/:path
-weight: 27
 ---
 
 This sample shows how to create a goods receipt for a goods movement using the BAPI BAPI_GOODSMVT_CREATE. 

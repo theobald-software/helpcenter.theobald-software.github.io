@@ -1,14 +1,7 @@
 ---
-layout: page
 title: Create a Purchase Order
 description: ERPConnect in a web application- Creating a Purchase Order via BAPI
-permalink: /:collection/:path
-weight: 14
 ---
-
-<!---
-move to: https://help.theobald-software.com/en/erpconnect/calling-bapis-and-function-modules/using-erpconnect-in-a-web-application
--->
 
 
 The following sample shows how to create a purchase order using the *BAPI_PO_CREATE*.

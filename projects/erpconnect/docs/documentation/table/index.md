@@ -8,7 +8,7 @@ A recurrent task when working with SAP and .NET applications is to read directly
 The *ReadTable* class enables access to that data.
 
 !!! note
-    The *RFC_READ_TABLE* function module for table extractions is not suitable for mass data extraction, see [Table Restrictions](#table-restrictions).
+    The *RFC_READ_TABLE* function module for table extractions is not suitable for mass data extraction, see [Restrictions](#restrictions).
 
 
 ### Restrictions

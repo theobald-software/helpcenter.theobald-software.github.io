@@ -1,9 +1,6 @@
 ---
-layout: page
 title: Change Batch Value of an Outbound Delivery
 description: Change Batch value of an Outbound delivery
-permalink: /:collection/:path
-weight: 47
 ---
 
 This sample shows how to change the batch values in SAP in an outbound delivery using the BAPI BAPI_OUTB_DELIVERY_CHANGE. 

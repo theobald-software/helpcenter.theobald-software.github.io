@@ -1,9 +1,6 @@
 ---
-layout: page
 title: Login to SAP with an SSO Logon Ticket
 description: How to Login to SAP with an SSO Logonticket
-permalink: /:collection/:path
-weight: 25
 ---
 
 This sample shows how to login to SAP with an SSO Logon Ticket.<br>

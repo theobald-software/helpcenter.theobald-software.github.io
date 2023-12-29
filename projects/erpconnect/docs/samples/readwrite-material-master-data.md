@@ -1,9 +1,6 @@
 ---
-layout: page
 title: Read/Write Material Master Data
 description: Read/Write material master data
-permalink: /:collection/:path
-weight: 16
 ---
 
 This sample shows how to create and read material master data in SAP using the BAPI BAPI_MATERIAL_SAVEDATA. 

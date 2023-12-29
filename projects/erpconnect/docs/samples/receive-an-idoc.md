@@ -1,14 +1,11 @@
 ---
-layout: page
 title: Receive an IDoc
 description: Receiving an IDoc
-permalink: /:collection/:path
-weight: 36
 ---
 
 
 This section shows how to receive and process a *MATMAS* IDoc.<br>
-To configure your SAP system to send *MATMAS* IDocs, see [Setting Up a Test Environment for IDocs](../documentation/idocs/prerequisites.md#set-up-a-test-environment-for-idocs).
+To configure your SAP system to send *MATMAS* IDocs, see [Set Up a Test Environment for IDocs](../documentation/idocs/prerequisites.md#set-up-a-test-environment-for-idocs).
 
 ### About
 
@@ -19,7 +16,7 @@ The IDoc is analyzed using the *E2MARAM005* segment.
 Within this segment, several *E2MAKTM001* child segments contain material descriptions.
 
 !!! tip
-    You can use the transaction **WE60** to look up the structures of IDocs in SAP.
+    You can use the transaction WE60 to look up the structures of IDocs in SAP.
 
 
 ### Receive a MATMAS IDoc

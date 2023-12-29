@@ -8,7 +8,7 @@ The following sample application shows how to use the *Transaction* class to dir
 ### How to use SAP Transactions 
 
 In this sample application the user can enter a material number and the name of a plant. 
-By clicking a button, the SAP GUI is launched and the transaction **MMBE** (stock overview) is executed to list the entered materials and plants. 
+By clicking a button, the SAP GUI is launched and the transaction MMBE (stock overview) is executed to list the entered materials and plants. 
 
 ![Call-Transaction-002]( ../../assets/images/Call-Transaction-002.png){:class="img-responsive" width="300px" }
 
@@ -16,9 +16,9 @@ By clicking a button, the SAP GUI is launched and the transaction **MMBE** (stoc
     The installation package of ERPConnect includes the *Transaction-Recorder* tool.
     This tool records transactions and implements them to code, see [Transaction-Recorder](./transaction-recorder.md).
 
-The code below shows how to add batch steps with the method *AddStep*. <br>
+The code below shows how to add batch steps using `AddStep`. <br>
 When connecting to SAP set the *UseGui* property to true. 
-The SAP GUI is launched using the method *Execute*.
+The SAP GUI is launched using `Execute`.
 
 
 ```csharp linenums="1"
@@ -82,7 +82,7 @@ Output:
 ### Background Processing (Batch Input)
 
 The following sample shows how to create a purchase order using Batch Input techniques in background processing.
-The transaction for creating a purchase order is **ME21**.
+The transaction for creating a purchase order is ME21.
 
 At the end the code loops over the *Returns* collection to check the *BatchReturn* objects that contain the return messages of the Batch Input transaction. 
 

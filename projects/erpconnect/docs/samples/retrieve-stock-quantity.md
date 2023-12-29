@@ -1,9 +1,6 @@
 ---
-layout: page
 title: Retrieve Stock Quantity
 description: Retrieving Stock Quantity via BAPI
-permalink: /:collection/:path
-weight: 13
 ---
 
 This sample shows how to check the availability of materials using the BAPI BAPI_MATERIAL_AVAILABILITY.

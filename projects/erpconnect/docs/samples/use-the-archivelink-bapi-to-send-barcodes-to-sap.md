@@ -1,9 +1,6 @@
 ---
-layout: page
 title: Use the ArchiveLink BAPI to send Barcodes to SAP
 description: Using the ArchiveLink BAPI to send barcodes to SAP
-permalink: /:collection/:path
-weight: 8
 ---
 
 This sample shows how to use the BAPI BAPI_BARCODE_SENDLIST to send a list of barcodes to SAP. <br>

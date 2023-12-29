@@ -1,9 +1,6 @@
 ---
-layout: page
 title: Transfer data packets with ReadTable
 description: Transferring data packets with ReadTable class
-permalink: /:collection/:path
-weight: 6
 ---
 
 This sample shows how to use the data packaging mechanism of the *ReadTable* class.

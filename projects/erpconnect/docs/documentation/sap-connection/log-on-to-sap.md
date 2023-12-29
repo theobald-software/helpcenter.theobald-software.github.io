@@ -3,7 +3,7 @@ title: Connect to SAP
 description: Log on to SAP
 ---
 
-There are multiple ways to log on to your SAP system with ERPConnect:
+ERPConnect supports the following connection methods to SAP systems:
 
 - Connect to a single application server.
 - Connect to a message server (Load Balancing).

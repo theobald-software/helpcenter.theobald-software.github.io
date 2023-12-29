@@ -1,9 +1,6 @@
 ---
-layout: page
 title: Retrieve Texts from a Sales Order
 description: Retrieve texts from a sales order by using RFC_READ_TEXT
-permalink: /:collection/:path
-weight: 45
 ---
 
 This sample shows how to get texts from sales orders using the function module RFC_READ_TEXT.
@@ -20,10 +17,6 @@ RFC_READ_TEXT requires the following table input (table TEXT_LINES) for each tex
 - TDID is the text ID that defines the text type, e.g., 0001 for Material sales text.
 - TDSPRAS is the language key.
 
-<!--- 
-The following screenshot shows the texts of order items in a sales order. 
-![ReadTextVA01](../assets/images/samples/ReadTextVA01.jpg){:class="img-responsive"}
--->
 
 ### Look up Text Information in SAP
 
@@ -35,7 +28,7 @@ Follow the steps below to look up the correct text name, text object and text ID
 ![TextDetails](../assets/images/samples/TextDetails.png){:class="img-responsive"}
 
 !!! tip
-    Use SAP transaction SE75 to look up all available text objects and the underlaying text IDs.
+    Use SAP transaction SE75 to look up all available text objects and the underlying text IDs.
 
 ### Call RFC_READ_TEXT
 

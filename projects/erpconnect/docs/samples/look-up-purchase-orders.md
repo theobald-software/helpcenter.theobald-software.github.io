@@ -1,9 +1,6 @@
 ---
-layout: page
 title: Look up Purchase Orders
 description: Look up purchase orders
-permalink: /:collection/:path
-weight: 26
 ---
 
 This sample shows how to get a list of purchase orders using the BAPI BAPI_PO_GETITEMS. 

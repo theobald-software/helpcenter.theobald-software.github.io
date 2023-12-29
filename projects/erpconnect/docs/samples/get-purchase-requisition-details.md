@@ -1,9 +1,6 @@
 ---
-layout: page
 title: Get Purchase Requisition Details
 description: Get Requisition Detail by using BAPI_REQUISITION_GETDETAIL
-permalink: /:collection/:path
-weight: 40
 ---
 
 This sample shows how to list detailed data of a purchase requisition using the BAPI BAPI_REQUISITION_GETDETAIL.

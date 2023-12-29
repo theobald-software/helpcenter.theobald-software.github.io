@@ -1,16 +1,7 @@
 ---
-layout: page
 title: Manage and Execute Batch Input Transactions
 description: Managing and Executing Batch Input Transactions
-permalink: /:collection/:path
-weight: 3
 ---
-
-
-<!---
-move to: ../documentation/special-classes/managing-and-executing-transactions-the-class-transaction
--->
-
 
 The following sample application shows how to execute the SAP transaction MMBE (stock overview) using the *Transaction* class.
 
@@ -25,9 +16,9 @@ By clicking a button, the SAP GUI is launched and the transaction MMBE (stock ov
     The installation package of ERPConnect includes the *Transaction-Recorder* tool.
     This tool records transactions and implements them to code, see [Transaction-Recorder](../documentation/transactions/transaction-recorder.md).
 
-The code below shows how to add batch steps with the method *AddStep*. <br>
+The code below shows how to add batch steps using `AddStep`. <br>
 When connecting to SAP set the *UseGui* property to true. 
-The SAP GUI is launched using the method *Execute*.
+The SAP GUI is launched using `Execute`.
 
 ### Execute SAP Transactions
 

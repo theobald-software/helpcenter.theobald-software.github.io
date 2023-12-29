@@ -1,9 +1,6 @@
 ---
-layout: page
 title: Create Functional Location
 description: Create Functional Location
-permalink: /:collection/:path
-weight: 41
 ---
 
 This sample shows how to create a [Functional Location](https://help.sap.com/doc/saphelp_nw70/7.0.12/ja-JP/01/d5438b4ab311d189740000e8322d00/content.htm?no_cache=true) in SAP using the BAPI BAPI_FUNCLOC_CREATE. 

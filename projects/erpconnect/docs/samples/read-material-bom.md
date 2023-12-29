@@ -1,9 +1,6 @@
 ---
-layout: page
 title: Read Material BOM
 description: Reading material BOM
-permalink: /:collection/:path
-weight: 38
 ---
 
 This sample shows how to obtain the components of a material BOM using the function module CSAP_MAT_BOM_READ.

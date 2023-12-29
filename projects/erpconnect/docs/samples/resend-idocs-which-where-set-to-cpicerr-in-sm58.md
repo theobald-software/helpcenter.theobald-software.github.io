@@ -1,9 +1,6 @@
 ---
-layout: page
 title: Resend IDocs which where set to CPICERR in SM58
 description: Resend IDocs which where set to CPICERR in SM58
-permalink: /:collection/:path
-weight: 33
 ---
 
 This sample shows how to resend IDocs that are flagged with an error in the tRFC monitor.

@@ -1,9 +1,6 @@
 ---
-layout: page
 title: Read meta data of a table
 description: Get meta data of a table
-permalink: /:collection/:path
-weight: 10
 ---
 
 This sample shows how to read the meta data of an SAP table using the *ReadTable* class.<br>
