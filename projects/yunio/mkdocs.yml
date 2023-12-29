@@ -1,7 +1,7 @@
 # Copyright (c) 2016-2023 Martin Donath <martin.donath@squidfunk.com>
 
 # Project information
-site_name: ERPConnect Helpcenter
+site_name: yunIO Helpcenter
 #site_url: http://erpconnect.theobald-software.com/
 #site_author: Valerie Schipka
 # site_description: >-
@@ -54,22 +54,22 @@ theme:
     - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: custom
-      accent: red
+      accent: custom
       toggle:
         icon: material/toggle-switch
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: custom
-      accent: red
+      accent: custom
       toggle:
         icon: material/toggle-switch-off
         name: Switch to system preference
   font:
     text: Poppins
     code: Roboto Mono
-  favicon: assets/ERPConnect.png
-  logo: assets/ERPConnect.png 
+  favicon: assets/YunIO.png
+  logo: assets/YunIO.png 
 
 # Custom CSS
 extra_css:
@@ -88,7 +88,7 @@ plugins:
   - awesome-pages
   - macros:
       include_dir: includes
-  #- swagger-ui-tag
+  - swagger-ui-tag
   #- glightbox #image zoom
   - tags
   #- pdf-export:
@@ -172,6 +172,6 @@ extra:
       link: https://www.instagram.com/theobaldsoftware/
     - icon: fontawesome/solid/envelope
       link: https://theobald-software.com/en/newsletter/
-  product: ERPConnect
+  product: yunIO
   #variable: SSIS variable
   #variables: SSIS variables

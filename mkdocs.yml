@@ -13,7 +13,7 @@ repo_name: theobald-software/helpcenter.theobald-software.github.io
 #repo_url: https://github.com/theobald-software/helpcenter.theobald-software.github.io.git
 
 # Copyright
-copyright: Copyright &copy; 2024 Theobald Software GmbH <p style="color:#808080";>“The best SAP interface is the one you don’t even notice.” - Patrick Theobald</p>
+copyright: Copyright &copy; 2024 Theobald Software GmbH <br> <span style="color:#808080">“The best SAP interface is the one you don’t even notice.” - Patrick Theobald </span>
 
 # Configuration
 theme:
@@ -31,8 +31,8 @@ theme:
     # - navigation.path # adds breadcrumbs
     # - navigation.prune # renders only HTML files of pages that are visible in the navigation
     # - navigation.sections # no groups in the navigation
-     - navigation.tabs
-     - navigation.tabs.sticky
+    # - navigation.tabs
+    # - navigation.tabs.sticky
     # - navigation.top # add a "back to top" button
   palette:
     - media: "(prefers-color-scheme)"
@@ -70,6 +70,8 @@ plugins:
   - meta
   - typeset
   - awesome-pages
+  #- macros:
+  #    include_dir: includes
   - projects:
       projects_dir: projects
       cache: false
