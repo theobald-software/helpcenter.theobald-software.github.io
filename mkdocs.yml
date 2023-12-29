@@ -18,7 +18,7 @@ copyright: Copyright &copy; 2024 Theobald Software GmbH <br> <span style="color:
 # Configuration
 theme:
   name: material
-  # custom_dir: overrides enable for announcements
+  custom_dir: overrides # overrides enable for announcements
   features:
      - content.tooltips # ebables adding tooltips to links
     # - header.autohide # hides the header when scrolling down
