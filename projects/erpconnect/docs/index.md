@@ -35,7 +35,7 @@ How can we help you?
 
 -   [:material-comment-quote: Give Feedback](https://theobald-software.typeform.com/to/CnpfiiIN)
 
--   [:material-information: Get Product Information](https://theobald-software.com/en/erpconnect/)
+-   [:material-information: Product Information](https://theobald-software.com/en/erpconnect/)
 
 </div>
 
@@ -116,7 +116,7 @@ How can we help you?
 
     ---
 	
-	`R3Connection.GetSSOTicket()` now supports Secure Network Connection with NetWeaver RFC, see [SAP Connection_ SSO with SNC](documentation/sap-connection/sso-with-snc.md).
+	`R3Connection.GetSSOTicket()` now supports Secure Network Connection with NetWeaver RFC, see [SAP Connection: SSO with SNC](documentation/sap-connection/sso-with-snc.md).
 	
 	---
 	
