@@ -61,7 +61,6 @@ theme:
 
 # Custom CSS
 extra_css:
-  - assets/stylesheets/extra.css
   - assets/stylesheets/neoteroi-cards.css 
 #extra_javascript:
 

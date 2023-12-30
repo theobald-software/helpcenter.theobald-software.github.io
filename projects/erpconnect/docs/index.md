@@ -91,26 +91,36 @@ How can we help you?
 
 <div class="grid cards" markdown>
 
+-   :material-alert-outline: **R3Connection API updated**
+
+    ---
+	
+	Breaking Changes: <br>
+	Obsolete APIs in the *R3Connection* class have been removed, see [Release Notes](https://helpcenter.theobald-software.com/release-notes/ERPConnect-7.6.0).
+	
+	---
+	
+	2023-12-18
+	
 -   **RFC Connection via WebSocket added**
 
     ---
-	
-	See ... for code samples.
-	<br><br>12/2023
 
--   **R3Connection API updated**
+	Connect to a single application server or public or private cloud instance via RFC over WebSocket, see [SAP Connection](documentation/sap-connection/log-on-to-sap.md).
+	
+	---
+	
+	2023-12-07
+
+-   **Support for SNC SSO with NWRFC added**
 
     ---
 	
-	This release has breaking changes, see [release notes]()...
-	<br><br>03/2023
-
--   **ERPConnect45.dll removed**
-
-    ---
+	`R3Connection.GetSSOTicket()` now supports Secure Network Connection with NetWeaver RFC, see [SAP Connection_ SSO with SNC](documentation/sap-connection/sso-with-snc.md).
 	
-	Please use ERPConnectStandard20.dll or ERPConnect35.dll instead
-	<br><br>06/2022 
+	---
+	
+	2023-04-05
 
 </div>
 

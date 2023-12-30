@@ -26,7 +26,7 @@ jobs:
           path: .cache
           restore-keys: |
             mkdocs-material-
-      - run: pip install git+https://${GH_TOKEN}@github.com/squidfunk/mkdocs-material-insiders.git
+      - run: pip install git+https://${GH_TOKEN}@github.com/squidfunk/mkdocs-material-insiders.git@9.5.2+insiders.4.47.1
       - run: pip install "mkdocs-material[imaging]"
       - run: pip install mkdocs-swagger-ui-tag
       - run: pip install mkdocs-git-revision-date-localized-plugin
@@ -34,7 +34,7 @@ jobs:
       - run: pip install mkdocs-awesome-pages-plugin
       - run: pip install mkdocs-table-reader-plugin
       - run: pip install mkdocs-pdf-export-plugin
-      - run: pip install termynal
+      - run: pip install mkdocs-redirects
       - run: pip install neoteroi-mkdocs
       - run: mkdocs gh-deploy --force
 env:

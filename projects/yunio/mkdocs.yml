@@ -78,6 +78,11 @@ extra_css:
   
 # Plugins
 plugins:
+  #- redirects: #redirect URLs when renaming/moving .md files
+  #    redirect_maps:
+  #      'old.md': 'new.md'
+  #      'old/file.md': 'new/file.md'
+  #      'some_file.md': 'http://external.url.com/foobar'
   - privacy:
       links_attr_map:
         target: _blank # opens all external links in new tabs
