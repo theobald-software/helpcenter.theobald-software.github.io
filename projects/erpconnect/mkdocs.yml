@@ -92,13 +92,14 @@ plugins:
   - typeset
   - awesome-pages
   - macros:
-      include_dir: includes
+      include_dir: includes # ../../includes for ERPConnect only
   #- swagger-ui-tag
   #- glightbox #image zoom
   - tags
   #- pdf-export:
-  #     combined: false # specify if the whole documentation is exported (true) or if only the active page is exported (false)
-
+  #     combined: true # specify if the whole documentation is exported (true) or if only the active page is exported (false)
+  #- with-pdf
+  
 # Continuous integration
   - group:
       enabled: !ENV CI

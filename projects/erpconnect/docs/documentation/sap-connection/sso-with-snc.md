@@ -6,7 +6,7 @@ description: SSO with SNC
 Secure Network Communication (SNC) enables authentication and transport encryption between SAP systems and between SAP systems and third-party tools like Xtract Universal and Board Connector. 
 For more information on SNC, see [SAP Documentation: SNC](https://help.sap.com/doc/saphelp_nw73ehp1/7.31.19/en-US/e6/56f466e99a11d1a5b00000e835363f/content.htm?no_cache=true).
 
-When using SNC you can choose between the [NTLM](#ntlm) or the [Kerberos5](#Kerberos) mechanism. 
+When using SNC you can choose between the [NTLM](#ntlm) or the [Kerberos5](#kerberos) mechanism. 
 
 ### Prerequisites
 
@@ -43,7 +43,7 @@ The R3Connection object automatically determines the needed SNC DLL based on the
 With the *SNCLibraryPath* property you can specify the path to the SNC DLL manually. 
 In this case the automatic detection of the DLL is disabled and the setting for *SNCMechanism* are ignored.
 
-If you specify the *SNCMechanism*, you can choose between the [NTLM](#ntlm) and the [Kerberos5](#Kerberos) mechanism.<br>
+If you specify the *SNCMechanism*, you can choose between the [NTLM](#ntlm) and the [Kerberos](#kerberos) mechanism.<br>
 If the Kerberos authentication is not possible, NTLM is used automatically.
  
 If you do not want to use the SNC properties to create a connection, set *SNCEnabled* to false. 
