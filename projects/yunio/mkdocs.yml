@@ -90,14 +90,13 @@ plugins:
   - search:
       separator: '[\s\-,:!=\[\]()"/]+'
   - typeset
+  - minify
   - awesome-pages
   - macros:
       include_dir: includes
   - swagger-ui-tag
   #- glightbox #image zoom
   - tags
-  #- pdf-export:
-  #     combined: false # specify if the whole documentation is exported (true) or if only the active page is exported (false)
 
 # Continuous integration
   - group:

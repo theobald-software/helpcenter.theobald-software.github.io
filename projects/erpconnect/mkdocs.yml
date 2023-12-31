@@ -70,7 +70,6 @@ theme:
 extra_css:
   - assets/stylesheets/extra.css
   - assets/stylesheets/neoteroi-cards.css 
-
 # Plugins
 plugins:
   #- redirects: #redirect URLs when renaming/moving .md files
@@ -85,15 +84,26 @@ plugins:
   - search:
       separator: '[\s\-,:!=\[\]()"/]+'
   - typeset
+  - minify
   - awesome-pages
   - macros:
-      include_dir: includes # ../../includes for ERPConnect only
+      include_dir: ../../includes # ../../includes for ERPConnect only
   #- swagger-ui-tag
   #- glightbox #image zoom
   - tags
-  #- pdf-export:
-  #     combined: true # specify if the whole documentation is exported (true) or if only the active page is exported (false)
-  #- with-pdf
+  #- with-pdf: # creates .pdf, see https://pypi.org/project/mkdocs-with-pdf/
+  #    author: Dec 2023
+  #    copyright: Copyright &copy; 2024 Theobald Software GmbH
+  #    cover_logo: https://help.theobald-software.com/img/company/theobald_onlinehelplogo.svg
+  #    cover_title: ERPConnect 
+  #    cover_subtitle: Documentation
+  #    exclude_pages:
+  #        - ^$
+  #        - 'erpconnect-api/'
+  #        - 'samples/'
+  #        - 'changelog/'
+  #        - 'troubleshooting/'
+  #    output_path: C:/Source/helpcenter.theobald-software.github.io/ERPConnect_Documentation.pdf
   
 # Continuous integration
   - group:
@@ -112,7 +122,7 @@ markdown_extensions:
       separator: "-"
       # title: On this Page:
   - pymdownx.snippets:
-      base_path: includes
+      base_path: ../../includes
   - pymdownx.superfences #for content tabs (version history)
   - pymdownx.tabbed:
       alternate_style: true

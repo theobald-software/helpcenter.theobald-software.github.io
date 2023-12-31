@@ -33,7 +33,8 @@ jobs:
       - run: pip install mkdocs-macros-plugin
       - run: pip install mkdocs-awesome-pages-plugin
       - run: pip install mkdocs-table-reader-plugin
-      - run: pip install mkdocs-pdf-export-plugin
+      - run: pip install mkdocs-with-pdf
+      - run: pip install mkdocs-minify-plugin
       - run: pip install mkdocs-redirects
       - run: pip install neoteroi-mkdocs
       - run: mkdocs gh-deploy --force
