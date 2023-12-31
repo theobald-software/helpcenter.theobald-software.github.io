@@ -14,8 +14,8 @@ if _%1_==_payload_  goto :payload
 cd C:\Source\helpcenter.theobald-software.github.io\projects\erpconnect
 setlocal enableextensions disabledelayedexpansion
 
-set "search=: ../../includes"
-set "replace=: includes"
+set "search=: includes"
+set "replace=: ../../includes"
 
 set "textFile=mkdocs.yml"
 
@@ -26,7 +26,6 @@ for /f "delims=" %%i in ('type "%textFile%" ^& break ^> "%textFile%" ') do (
     endlocal
 )
 
-cd C:\Source\helpcenter.theobald-software.github.io
-start "HelpCenter" /B mkdocs serve --dirtyreload
-rem start "" /B http://localhost:8000/
+start "ERPConnect" /B mkdocs serve --dirtyreload -a localhost:8001
+rem start "" /B http://localhost:8001/
 pause

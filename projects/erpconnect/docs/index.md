@@ -100,7 +100,7 @@ How can we help you?
 	
 	---
 	
-	2023-12-18
+	:material-clock-time-two-outline: 2023-12-18
 	
 -   **RFC Connection via WebSocket added**
 
@@ -110,7 +110,7 @@ How can we help you?
 	
 	---
 	
-	2023-12-07
+	:material-clock-time-two-outline: 2023-12-07
 
 -   **Support for SNC SSO with NWRFC added**
 
@@ -120,7 +120,7 @@ How can we help you?
 	
 	---
 	
-	2023-04-05
+	:material-clock-time-two-outline: 2023-04-05
 
 </div>
 
