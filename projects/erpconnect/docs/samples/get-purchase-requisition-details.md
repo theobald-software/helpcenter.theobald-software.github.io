@@ -11,6 +11,7 @@ To get the processing status of a purchase requisition, send the purchase requis
 If the call is successful, the item data is returned in the Table REQUISITION_ITEMS.
 
 Possible processing statuses returned by BAPI_REQUISITION_GETDETAIL:
+
 - N - Not edited
 - B - PO created
 - A - RFQ created

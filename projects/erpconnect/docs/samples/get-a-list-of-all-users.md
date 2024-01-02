@@ -10,7 +10,7 @@ This sample shows how to read the user names and address data of all users in th
 
 The following sample code reads user names and address data of SAP users using uses selection parameters for the import Table (SELECTION_FOR_HELPVALUES) of BAPI_HELPVALUES_GET.
 
-```csharp linenums="1" title=BAPI_HELPVALUES_GET"
+```csharp linenums="1" title="BAPI_HELPVALUES_GET"
 static ArrayList getUserList(string sign, string option, string low, string high)
         { 
   

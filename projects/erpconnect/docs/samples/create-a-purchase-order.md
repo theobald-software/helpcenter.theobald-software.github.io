@@ -6,6 +6,23 @@ description: ERPConnect in a web application- Creating a Purchase Order via BAPI
 
 The following sample shows how to create a purchase order using the *BAPI_PO_CREATE*.
 
+
+### Call BAPI_PO_CREATE
+
+To create a purchase order using the *BAPI_PO_CREATE* BAPI, follow the steps below:
+
+1. Establish a connection to the SAP system 
+2. Create an RFC-Function object for the BAPI *BAPI_PO_CREATE*.
+3. Fill the structure *PO_HEADER* with the following values: 
+	- DOC_TYPE -> Order type (NB normal order)
+	- PURCH_ORG -> Purchasing organization
+	- PUR_GROUP -> Purchasing group
+	- DOC_DATE -> Date 
+	- VENDOR -> Vendor number
+4. Define the items *PLANT* and *PUR_MAT* (material number) in the table *PO_ITEMS*. <br>
+5. The values for the quantity (*QUANTITY*) and the delivery date (*DELIV_DATE*) must be placed in the table *PO_ITEM_SHEDULES*.
+6. Execute the BAPI and process the return messages.
+
 Input:
 ```
 Vendor: 0000001070
@@ -13,21 +30,6 @@ Material: B-7000
 Plant: 1000
 Quantity: 10
 ```
-
-### Call BAPI_PO_CREATE
-
-To create a purchase order using the *BAPI_PO_CREATE* BAPI, follow the steps below:
-1. Establish a connection to the SAP system 
-2. Create an RFC-Function object for the BAPI *BAPI_PO_CREATE*.
-3. Fill the structure *PO_HEADER* with the following values: 
-- DOC_TYPE -> Order type (NB normal order)
-- PURCH_ORG -> Purchasing organization
-- PUR_GROUP -> Purchasing group
-- DOC_DATE -> Date 
-- VENDOR -> Vendor number
-4. Define the items *PLANT* and *PUR_MAT* (material number) in the table *PO_ITEMS*. <br>
-5. The values for the quantity (*QUANTITY*) and the delivery date (*DELIV_DATE*) must be placed in the table *PO_ITEM_SHEDULES*.
-6. Execute the BAPI and process the return messages.
 
 ```csharp linenums="1" title="BAPI_PO_CREATE"
 using System;

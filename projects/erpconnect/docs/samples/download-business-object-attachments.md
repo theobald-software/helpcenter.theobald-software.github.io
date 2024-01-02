@@ -9,6 +9,7 @@ This sample shows how to download attached files from common business objects us
 ### About
 
 As of SAP rel. 4.6 users can attach documents to all common business objects, e.g., purchase orders:
+
 ![POAttachment01](../assets/images/samples/POAttachment01.png){:class="img-responsive"}
 
 This sample uses the following workflow to download attachment files:
@@ -25,6 +26,7 @@ This sample uses the following workflow to download attachment files:
 #### Get a List of Object IDs
 
 The following sample code reads the table SRGBTBREL to obtain all document IDs attached to a business object. 
+
 - The object key is the document number, e.g., the purchase number
 - The object type is the name of the business object, e.g., BUS2012 for POs or BUS2010 for RFQs). 
 
@@ -56,7 +58,8 @@ public static string[] GetAllAttachmentKeys(R3Connection connection,
 
 #### Get a List of File Names
 
-The following sample code reads the table SOOD to get the file name of each attachment. <br>
+The following sample code reads the table SOOD to get the file name of each attachment.
+
 - The primary key of the table entry is defined by parts of the document IDs provided by the function `GetAllAttachmentKeys` above. 
 - The file name of the attachment can be created by concatenating OBJDES and FILE_EXT.
 
@@ -89,6 +92,7 @@ public static string GetFileName(R3Connection connection, string DocID)
 ### Download SAP Attachment Files
 
 The following sample code downloads an attachment with a given object ID using the function module SO_DOCUMENT_READ_API1.
+
 - The returning structure DOCUMENT_DATA contains information about the file, e.g., DOC_SIZE. 
 - The table OBJECT_CONTENT returns the binary content of the attachment as a string. 
 - The strings are converted into byte arrays and stored to the disk.

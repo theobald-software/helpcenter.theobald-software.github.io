@@ -16,6 +16,6 @@ Example:
 
 The following code converts a QUAN field in SAP with the length 13,3:
 
-```csharp linenums="1"
+```csharp 
 MYRFCTable.Columns.Add("BREIT", 7, 3, RFCTYPE.BCD);
 ```

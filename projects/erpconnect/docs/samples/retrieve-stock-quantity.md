@@ -10,6 +10,7 @@ This sample shows how to check the availability of materials using the BAPI BAPI
 BAPI_MATERIAL_AVAILABILITY shows the availability of a material. 
 This availability provides the so-called ATP (stock quantity Available To Promise). 
 BAPI_MATERIAL_AVAILABILITY requires at least three import parameters: 
+
 - the Plant (PLANT)
 - the material number (MATERIAL) 
 - the unit (UNIT) 

@@ -12,6 +12,7 @@ Each view may exist multiple times, e.g., one plant view for plant 1000 and one 
 To keep it simple, the provided sample code only shows how to handle the basic views. The other views work the same way. 
 
 The attributes of the basic view include:
+
 - the Material Number
 - the Old Material Number (which can come from a legacy system)
 - the Industry Sector 

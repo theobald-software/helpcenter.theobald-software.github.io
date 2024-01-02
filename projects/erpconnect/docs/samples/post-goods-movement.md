@@ -9,16 +9,19 @@ This sample shows how to create a goods receipt for a goods movement using the B
 
 The BAPI BAPI_GOODSMVT_CREATE requires multiple parameters to create a goods receipt for a goods movement.<br>
 The export parameter GM_CODE of BAPI_GOODSMVT_CREATE represents the transaction code that would be used to post the movement as a dialog user. Values for GM_CODE include: 
+
 - “01” is replaced by SAP with the transaction code MB01 that creates a goods receipt for purchase orders. 
 - “02” is replaced by SAP with the transaction code MB31 for goods receipt for production orders.
 - "05" is replaced by SAP with the transaction code MB1C for other goods receipts.
 
 Other export parameters for BAPI_GOODSMVT_CREATE include:
+
 - the Posting Date of the Document
 - the Username
 - the Document Date. 
 
 The table parameters for BAPI_GOODSMVT_CREATE include:
+
 - PLANT (Plant)
 - PO_NUMBER (Purchase Order Number) 
 - PO_ITEM (Purchase Order Item)

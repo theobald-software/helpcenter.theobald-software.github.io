@@ -21,6 +21,7 @@ RFC_READ_TEXT requires the following table input (table TEXT_LINES) for each tex
 ### Look up Text Information in SAP
 
 Follow the steps below to look up the correct text name, text object and text ID of a text in SAP:
+
 1. Open the sales order.
 2. Access item texts via **More > Goto > Item > Texts** or access header texts via **More > Goto > Header > Texts**.
 3. Click **[Detail]** (magnifying glass icon). The text editor opens.

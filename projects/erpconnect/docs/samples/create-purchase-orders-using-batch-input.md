@@ -5,13 +5,6 @@ description: Create Purchase Orders using Batch Input and Background Processing
 
 This sample shows how to execute the SAP transaction ME21 (create purchase order) as a background process.
 
-### About
-
-The following sample shows how to create a purchase order using Batch Input techniques in background processing.
-The transaction for creating a purchase order is ME21.
-
-At the end the code loops over the *Returns* collection to check the *BatchReturn* objects that contain the return messages of the Batch Input transaction. 
-
 !!! tip
     The installation package of ERPConnect includes the *Transaction-Recorder* tool.
     This tool records transactions and implements them to code, see [Transaction-Recorder](../documentation/transactions/transaction-recorder.md).
@@ -54,3 +47,5 @@ using (R3Connection con = new R3Connection("SAPServer", 00, "SAPUser", "Password
 		MessageBox.Show("No Messages");
     }
 ```
+
+At the end the code loops over the *Returns* collection to check the *BatchReturn* objects that contain the return messages of the Batch Input transaction. 

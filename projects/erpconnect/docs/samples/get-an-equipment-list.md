@@ -12,6 +12,7 @@ To get an equipment list you can use the function module BAPI_EQUI_GETLIST or th
 The function module offers selection ranges to filter the equipment. 
 This sample shows how to use selection ranges for plants. 
 Selection ranges use the following properties:
+
 - SIGN defines whether to include or exclude the defined selection. 
 - OPTION defines the operator. 
 - The columns LOW and HIGH define the filter values.

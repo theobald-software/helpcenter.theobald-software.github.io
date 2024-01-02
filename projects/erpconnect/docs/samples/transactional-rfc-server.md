@@ -8,6 +8,7 @@ This sample shows how to build an RFC server that supports transactional RFCs.
 ### About
 
 How it works:
+
 - An ABAP program sends two strings as export parameters to .NET. 
 - The strings are merged in .NET and inserted into an SQL server table. 
 - Within a tRFC context only export parameters and tables are sent to the RFC server. 
