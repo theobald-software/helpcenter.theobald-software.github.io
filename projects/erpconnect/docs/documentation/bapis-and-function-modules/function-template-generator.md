@@ -21,7 +21,7 @@ The *Function-Template-Generator* provided by ERPConnect generates reusable XML 
 3. Load the XML file into your program as shown in the sample code below.<br>
 Now you can use the RFCFunction-object instead of the `CreateFunction` / `CreateBAPI` methods.
 
-```csharp linenums="1" title="How to use XML Templates"
+```csharp linenums="1" title="Load XML Templates"
 using (R3Connection con = new R3Connection("SAPServer", 00, "SAPUser", "Password", "EN", "800"))
 {
     RFCFunction f = new RFCFunction("BAPI_CUSTOMER_GETDETAIL");

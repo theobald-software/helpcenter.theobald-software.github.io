@@ -10,7 +10,7 @@ Follow the steps below to create an ABAP interpreter:
 
 The following sample shows how to create a simple ABAP interpreter that executes a dynamic SQL statement.<br>
 
-```csharp linenums="1" hl_lines="36 37 38 39 40 41 42 43 44 45 47 48 49 50 51 52 53"
+```csharp linenums="1" hl_lines="36-45 47-53" title="ABAP Interpreter"
 using System;
 using ERPConnect;
 using ERPConnect.Utils;

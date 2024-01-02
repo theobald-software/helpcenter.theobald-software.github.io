@@ -9,7 +9,7 @@ This sample shows how to get a list of purchase orders using the BAPI BAPI_PO_GE
 
 The following sample code retrieves a list of purchase orders from SAP:
 
-```csharp linenums="1"
+```csharp linenums="1" title="BAPI_PO_GETITEMS"
 using System;
 using System.Globalization;
 using ERPConnect;

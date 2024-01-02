@@ -9,7 +9,7 @@ This sample shows how to change the batch values in SAP in an outbound delivery 
 
 The following sample code changes the batch values in SAP in an outbound delivery:
 
-```csharp linenums="1"
+```csharp linenums="1" title="BAPI_OUTB_DELIVERY_CHANGE"
 using System;
 using ERPConnect;
 

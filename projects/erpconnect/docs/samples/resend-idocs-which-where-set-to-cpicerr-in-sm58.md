@@ -14,7 +14,7 @@ The calls are resent automatically after minutes depending on the system configu
 
 The following code sample looks up all errors in the table ARFCSSTATE of a given destination and then calls ARFC_RUN_NOWAIT to resend each call.
 
-```csharp linenums="1"
+```csharp linenums="1" title="ARFC_RUN_NOWAIT & Table ARFCSSTATE"
 using System;
 using ERPConnect;
 using ERPConnect.Utils;

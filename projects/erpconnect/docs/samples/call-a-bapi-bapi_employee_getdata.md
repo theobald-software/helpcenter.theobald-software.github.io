@@ -23,7 +23,7 @@ Follow the steps below to call the BAPI BAPI_EMPLOYEE_GETDATA:
 5. The function module returns the table parameter *PERSONAL_DATA*.
 The table fields PERNO (personnel number), LAST_NAME (last name) and FIRSTNAME (first name) are written to the console. 
 
-```csharp linenums="1"
+```csharp linenums="1" title="BAPI_EMPLOYEE_GETDATA"
 using System;
 using ERPConnect;
 
@@ -122,7 +122,7 @@ The table fields USRID_LONG (email address) is written to the console.
 7. The function module returns the table parameter *INTERNAL_CONTROL*.
 The table fields PHONENO1 (phone number) is written to the console. 
 
-``` csharp linenums="1"
+``` csharp linenums="1" title="BAPI_EMPLOYEE_GETDATA"
 using System;
 using ERPConnect;
 

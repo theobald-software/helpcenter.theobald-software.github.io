@@ -21,7 +21,7 @@ For more information on how to create RFC functions, see [Complete Guide: RFC Se
 
 The following code creates an RFC function Z_TRFC that reads two strings provided by an ABAP program:
 
-```csharp linenums="1"
+```csharp linenums="1" title="Transactional RFCs"
 static RFCServer s = new RFCServer();
         static SqlConnection SQLConn = null;
   

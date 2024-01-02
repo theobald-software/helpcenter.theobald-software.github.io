@@ -69,6 +69,14 @@ title: Samples
 
 </div>
 
+### Queries
+
+<div class="mdx-columns" markdown>
+
+- [Fetch Data from an SAP Query](fetch-data-from-an-sap-query.md)
+
+</div>
+
 ### RFC Server Functions
 
 <div class="mdx-columns" markdown>
@@ -87,7 +95,6 @@ title: Samples
 - [Get CostCenter Hierarchies](get-costcenter-hierarchies.md)
 - [Read meta data of a table](get-meta-data-of-a-table.md)
 - [Read SAP Tables Directly](read-sap-tables-directly.md)
-- [Read meta data of a table](get-meta-data-of-a-table.md)
 - [Transfer data packets with ReadTable](transfer-data-packets-with-readtable-class.md)
 - [Use ERPConnect in PowerShell](use-erpconnect-in-powershell.md)
 
@@ -97,8 +104,9 @@ title: Samples
 
 <div class="mdx-columns" markdown>
 
+- [Access Stock Overview using Batch Input](access-stock-overview-using-batch-input.md)
 - [Create New Customers using Batch Input](create-new-customers-using-batch-input.md)
-- [Manage and Execute Batch Input Transactions](manage-and-execute-batch-input-transactions.md)
+- [Create Purchase Orders using Batch Input and Background Processing](create-purchase-orders-using-batch-input.md)
 
 </div>
 

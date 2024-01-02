@@ -9,7 +9,7 @@ BAPI_BARCODE_SENDLIST is part of the ArchiveLink BAPI.
 ### Call BAPI_BARCODE_SENDLIST
 The following sample code sends a list of barcodes to SAP:
 
-```csharp linenums="1"
+```csharp linenums="1" title="BAPI_BARCODE_SENDLIST"
 using System;
 using ERPConnect;
 using ERPConnect.Utils;

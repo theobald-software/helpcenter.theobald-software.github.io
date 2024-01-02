@@ -21,7 +21,7 @@ Follow the steps below to set up data packaging:
 2. Set the *ReadTable* property `RaiseIncomingPackageEvent` to *true* to raise an event `IncomingPackage` when a new data packet is processed.
 3. Implement the `IncomingPackage` event to process each data packet. The packet is provided as a *Datatable* object.
 
-```csharp linenums="1" 
+```csharp linenums="1" title="Table MKPF"
 using System;
 using System.Data;
 using ERPConnect;
@@ -30,20 +30,20 @@ using ERPConnect.Utils;
 // Set your ERPConnect license
 LIC.SetLic("xxxx");
 
-using var connection = new R3Connection(
-    host: "server.acme.org",
-    systemNumber: 00,
-    userName: "user",
-    password: "passwd",
-    language: "EN",
-    client: "001")
+using (R3Connection con = new R3Connection())
 {
-    Protocol = ClientProtocol.NWRFC,
-};
+    con.UserName = "SAPUser";
+    con.Password = "SAPPassword";
+    con.Language = "EN";
+    con.Client = "800";
+    con.Host = "sap-erp-as05.example.com";
+    con.SystemNumber = 00;
+    con.Protocol = ClientProtocol.NWRFC; //use ClientProtocol.RFC for classic RFC library
 
-connection.Open();
+    con.Open();
+}
 
-var read = new ReadTable(connection)
+var read = new ReadTable(con)
 {
     PackageSize = 10000,
     RaiseIncomingPackageEvent = true,
@@ -65,6 +65,7 @@ static void OnIncomingPackage(ReadTable sender, DataTable packageResult)
 ```
 
 Output:
+
 ```
 Processing data package with 10000 rows
 Processing data package with 10000 rows

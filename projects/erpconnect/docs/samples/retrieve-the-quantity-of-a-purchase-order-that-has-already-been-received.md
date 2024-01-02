@@ -5,7 +5,7 @@ description: Retrieving the quantity of a purchase order that has already been r
 
 This sample shows how to get the history of a purchase order using BAPI_PO_GETDETAIL to find out which part of the quantity has already been received.
 
-```csharp linenums="1"
+```csharp linenums="1" title="BAPI_PO_GETDETAIL"
 public Decimal GetPODetail(string BestellNr, string BestellPos)
 {
      

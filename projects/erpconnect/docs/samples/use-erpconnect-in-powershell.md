@@ -15,7 +15,7 @@ This sample shows how to use ERPConnect in Windows PowerShell to connect to SAP,
 
 The following sample code calls connects to SAP and extracts the data of SAP table MAKT directly in Powershell or within the Powershell ISE:
 
-```powershell
+```powershell title="Table MAKT"
 $ErrorActionPreference = "Stop"
 
 # If ERPConnect is registered in the GAC then use the following line

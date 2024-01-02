@@ -43,7 +43,7 @@ To create a purchase order using the *BAPI_PO_CREATE* BAPI, follow the steps bel
 5. The values for the quantity (*QUANTITY*) and the delivery date (*DELIV_DATE*) must be placed in the table *PO_ITEM_SHEDULES*.
 6. Execute the BAPI and process the return messages.
 
-```csharp linenums="1" title="How to Create a Purchase Order"
+```csharp linenums="1" title="BAPI_PO_CREATE & Table PO_ITEMS"
 private void Button1_Click(object sender, System.EventArgs e)
 {
    // Set your ERPConnect license

@@ -6,7 +6,7 @@ description: Get meta data of a table
 This sample shows how to read the meta data of an SAP table using the *ReadTable* class.<br>
 
 
-```csharp linenums="1"
+```csharp linenums="1" title="Table MKPF"
 using System;
 using ERPConnect;
 using ERPConnect.Utils;

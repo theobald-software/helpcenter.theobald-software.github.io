@@ -34,28 +34,28 @@ Follow the steps below to look up the correct text name, text object and text ID
 
 The following sample code calls RFC_READ_TEXT to query the item text of a sales order:
 
-```csharp linenums="1"
+```csharp linenums="1" title="RFC_READ_TEXT"
 using System;
 using ERPConnect;
 
 // Set your ERPConnect license
 LIC.SetLic("xxxx");
 
-using var connection = new R3Connection(
-    host: "server.acme.org",
-    systemNumber: 00,
-    userName: "user",
-    password: "passwd",
-    language: "EN",
-    client: "001")
+using (R3Connection con = new R3Connection())
 {
-    Protocol = ClientProtocol.NWRFC,
-};
+    con.UserName = "SAPUser";
+    con.Password = "SAPPassword";
+    con.Language = "EN";
+    con.Client = "800";
+    con.Host = "sap-erp-as05.example.com";
+    con.SystemNumber = 00;
+    con.Protocol = ClientProtocol.NWRFC; //use ClientProtocol.RFC for classic RFC library
 
-connection.Open();
+    con.Open();
+}
   
 // Create function object
-RFCFunction func = connection.CreateFunction("RFC_READ_TEXT");
+RFCFunction func = con.CreateFunction("RFC_READ_TEXT");
   
 // Add a new table row and fill it
 RFCStructure newrow = func.Tables["TEXT_LINES"].Rows.Add();
@@ -71,7 +71,7 @@ func.Execute();
 foreach(RFCStructure row in func.Tables["TEXT_LINES"].Rows)
     Console.WriteLine(row["TDLINE"].ToString());
   
-connection.Close();
+con.Close();
   
 Console.WriteLine("");
 Console.WriteLine("Press enter to quit.");

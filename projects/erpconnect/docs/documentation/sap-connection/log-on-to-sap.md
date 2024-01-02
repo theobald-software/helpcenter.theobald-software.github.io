@@ -46,8 +46,9 @@ con.InitialEncoding = SAPEncodingInfo.UTF16LittleEndian;
 #### Client Protocol
 
 The default client protocol is the NWRFC Protocol. To use the old RFC Protocol add the following command:<br>
-`conn.Protocol = ClientProtocol.RFC;`
-
+```csharp linenums="1"
+con.Protocol = ClientProtocol.RFC;
+```
 
 !!! tip
     If you use the constructor of the R3Connection class to provide the login properties, you can save lines.<br>
@@ -62,7 +63,7 @@ The default client protocol is the NWRFC Protocol. To use the old RFC Protocol a
 When accessing an SAP system via a Router, the router string must be set before the host name or the name of the message server.<br>
 For more information on route strings, see [SAP Help- Route String Entry for SAProuter](https://help.sap.com/saphelp_erp60_sp/helpdata/en/4f/992df1446d11d189700000e8322d00/frameset.htm).
 
-```csharp linenums="1"
+```csharp linenums="1" title="Connect to SAP via Router"
 using (R3Connection con = new R3Connection())
 {
     con.UserName = "SAPUser";
@@ -77,7 +78,6 @@ using (R3Connection con = new R3Connection())
     con.Open();
 }
 ```
-
 
 
 ****

@@ -15,9 +15,9 @@ After having used the connection it is freed by the process and can be used by a
 ### Prerequisites
 
 Before the ConnectionPool class can be used, the *R3Connection* class must be extended by inheriting it.<br>
-The two new properties *LastUsage* and *IsInUse* will be used later.
+The two new properties `LastUsage` and `IsInUse` are used later.
 
-```csharp linenums="1"
+```csharp linenums="1" title="Extend R3Connection Class"
 class R3ConnectionEx : ERPConnect.R3Connection
 {
     private DateTime _LastUsage = DateTime.Now;
@@ -38,190 +38,201 @@ class R3ConnectionEx : ERPConnect.R3Connection
 
 ### The ConnectionPool Class
 
-The following sample code shows how to use the methods of the ConnectionPool class.
+The following sample code shows how to use the methods of the *ConnectionPool* class.
 
-In the constructor of the class a timer is initialized. 
-The timer is responsible for closing connections that are not used for a certain period of time.
+=== "Class R3ConnectionPool"
 
-```csharp linenums="1"
-class R3ConnectionPool
-{
-  
-    private System.Timers.Timer MyTimer = new System.Timers.Timer();
-    public R3ConnectionPool()
-    {
-        // When this static class is created
-        // initialize the timer and handle elapsed event
-        MyTimer.Interval = 1000;
-        MyTimer.Elapsed += new System.Timers.ElapsedEventHandler(MyTimer_Elapsed);
-        MyTimer.Enabled = true;
-    }
-  
-    private Int32 _MaxNoOfConnection = 10;
-    public Int32 MaxNoOfConnection
-    {
-        get { return _MaxNoOfConnection; }
-        set { _MaxNoOfConnection = value; }
-    }
-  
-    private string _ConnectionString = "";
-    public string ConnectionString
-    {
-        set { _ConnectionString = value; }
-    }
-  
-    public Int32 CurrentNumberOfConnection
-    {
-        get { return MyConnectionList.Count; }
-    }
-```
+	In the constructor of the class a timer is initialized. <br>
+	The timer is responsible for closing connections that are not used for a certain period of time.
 
-The generic list *MyConnectionList* holds all active connections. 
-When the last usage was more than 60 seconds ago and it is not currently in use, the connection is closed and removed from the list.
+	```csharp linenums="1" 
+	class R3ConnectionPool
+	{
+	  
+		private System.Timers.Timer MyTimer = new System.Timers.Timer();
+		public R3ConnectionPool()
+		{
+			// When this static class is created
+			// initialize the timer and handle elapsed event
+			MyTimer.Interval = 1000;
+			MyTimer.Elapsed += new System.Timers.ElapsedEventHandler(MyTimer_Elapsed);
+			MyTimer.Enabled = true;
+		}
+	  
+		private Int32 _MaxNoOfConnection = 10;
+		public Int32 MaxNoOfConnection
+		{
+			get { return _MaxNoOfConnection; }
+			set { _MaxNoOfConnection = value; }
+		}
+	  
+		private string _ConnectionString = "";
+		public string ConnectionString
+		{
+			set { _ConnectionString = value; }
+		}
+	  
+		public Int32 CurrentNumberOfConnection
+		{
+			get { return MyConnectionList.Count; }
+		}
+	```
 
-```csharp linenums="1"
-private System.Collections.Generic.List
-    MyConnectionList = new System.Collections.Generic.List();
-  
-private void MyTimer_Elapsed(object sender, System.Timers.ElapsedEventArgs e)
-{
-    // Loop through the list
-    // and check, if a connection is not used for more than 60 second,
-    // if so, close it an remove it from the list
-    lock (MyConnectionList)
-    {
-        foreach (R3ConnectionEx con in MyConnectionList)
-        {
-            if (!con.IsInUse && con.LastUsage.AddSeconds(60) < DateTime.Now)
-            {
-                con.Close();
-                MyConnectionList.Remove(con);
-                return;
-            }
-        }
-    }
-}
-```
+=== "MyTimer_Elapsed"
 
-The two internal private functions `AllocConnection()` and `FreeConnection()` are for allocating and deallocating connections. 
-If there is no free connection available a new connection is created and added to the connection list.
+	The generic list *MyConnectionList* holds all active connections. <br>
+	When the last usage was more than 60 seconds ago and it is not currently in use, the connection is closed and removed from the list.
 
-```csharp linenums="1"
-private R3ConnectionEx AllocConnection()
-{
-    lock (MyConnectionList)
-    {
-        foreach (R3ConnectionEx con in MyConnectionList)
-        {
-            if (!con.IsInUse)
-            {
-                con.IsInUse = true;
-                return con;
-            }
-        }
-  
-        if (MyConnectionList.Count < this.MaxNoOfConnection)
-        {
-            R3ConnectionEx con = new R3ConnectionEx();
-            con.Open(this._ConnectionString);
-            this.MyConnectionList.Add(con);
-            con.IsInUse = true;
-            return con;
-        }
-  
-        if (MyConnectionList.Count >= this.MaxNoOfConnection)
-            throw new Exception("Maximun Number of connection exceeded");
-        else
-            throw new Exception("Unable to allocate a new connection");
-    }
-}
-  
-private void FreeConnection(R3ConnectionEx con)
-{
-    con.LastUsage = DateTime.Now;
-    con.IsInUse = false;
-}
-```
+	```csharp linenums="1"
+	private System.Collections.Generic.List
+		MyConnectionList = new System.Collections.Generic.List();
+	  
+	private void MyTimer_Elapsed(object sender, System.Timers.ElapsedEventArgs e)
+	{
+		// Loop through the list
+		// and check, if a connection is not used for more than 60 second,
+		// if so, close it an remove it from the list
+		lock (MyConnectionList)
+		{
+			foreach (R3ConnectionEx con in MyConnectionList)
+			{
+				if (!con.IsInUse && con.LastUsage.AddSeconds(60) < DateTime.Now)
+				{
+					con.Close();
+					MyConnectionList.Remove(con);
+					return;
+				}
+			}
+		}
+	}
+	```
 
-Without the pool you would call `CreateFunction()` directly, e.g., `MyConnection.CreateFunction()`). 
-When using the new pool class the `CreateFunction()` method is called by the pool after having allocated a connection dynamically. 
-The RFCFunction object is cashed with the help of XML serialization and deserialization. 
-This avoids retrieving the function's meta data from SAP every time `CreateFunction()` is called.
+=== "AllocConnection & FreeConnection"
 
-```csharp linenums="1"
-private Hashtable FunctionHash = new Hashtable();
-public RFCFunction CreateFunction(string FunctionName)
-{
-  
-    lock (FunctionHash)
-    {
-        string xml = (string)FunctionHash[FunctionName];
-  
-        if (xml == null)
-        {
-            // The function has not been created yet in this pool
-            R3ConnectionEx con = this.AllocConnection();
-            try
-            {
-                RFCFunction func = con.CreateFunction(FunctionName);
-                FreeConnection(con);
-                // store in hash for later use
-                FunctionHash.Add(FunctionName, func.SaveToXML());
-                return func;
-            }
-            catch (Exception e1)
-            {
-                // Check if connection is still alive
-                // if not, remove it
-                if (!con.Ping())
-                    MyConnectionList.Remove(con);
-                else
-                    FreeConnection(con);
-                // rethrow exception
-                throw e1;
-            }
-  
-        }
-        else
-        {
-            // We can create the function object without calling the CreateFunction method
-            RFCFunction func = new RFCFunction(FunctionName);
-            func.LoadFromXMLString(xml);
-            return func;
-        }
-    }
-}
-```
+	The two private functions `AllocConnection()` and `FreeConnection()` are for allocating and deallocating connections.<br> 
+	If there is no free connection available a new connection is created and added to the connection list.
 
-The execution of the function uses the same principle as `CreateFunction()`: 
-- Allocate connection
-- Execute
-- Deallocate
+	```csharp linenums="1"
+	private R3ConnectionEx AllocConnection()
+	{
+		lock (MyConnectionList)
+		{
+			foreach (R3ConnectionEx con in MyConnectionList)
+			{
+				if (!con.IsInUse)
+				{
+					con.IsInUse = true;
+					return con;
+				}
+			}
+	  
+			if (MyConnectionList.Count < this.MaxNoOfConnection)
+			{
+				R3ConnectionEx con = new R3ConnectionEx();
+				con.Open(this._ConnectionString);
+				this.MyConnectionList.Add(con);
+				con.IsInUse = true;
+				return con;
+			}
+	  
+			if (MyConnectionList.Count >= this.MaxNoOfConnection)
+				throw new Exception("Maximun Number of connection exceeded");
+			else
+				throw new Exception("Unable to allocate a new connection");
+		}
+	}
+	  
+	private void FreeConnection(R3ConnectionEx con)
+	{
+		con.LastUsage = DateTime.Now;
+		con.IsInUse = false;
+	}
+	```
 
-```csharp linenums="1"
-public void ExecuteFunction(RFCFunction func)
-{
-    R3ConnectionEx con = this.AllocConnection();
-    try
-    {
-        func.Connection = (R3Connection)con;
-        func.Execute();
-  
-    }
-    catch (Exception e1)
-    {
-        // Check if connection is still alive
-        // if not, remove it
-        if (!con.Ping())
-            MyConnectionList.Remove(con);
-        FreeConnection(con);
-        // rethrow exception
-        throw e1;
-    }
-  
-    FreeConnection(con);
-}
-```
+=== "CreateFunction"
+
+	Without the pool you would call `CreateFunction()` directly, e.g., `con.CreateFunction()`. 
+	When using the new pool class the `CreateFunction()` method is called by the pool after having allocated a connection dynamically. <br>
+	The RFCFunction object is cashed with the help of XML serialization and deserialization. 
+	This avoids retrieving the function's meta data from SAP every time `CreateFunction()` is called.
+
+	```csharp linenums="1"
+	private Hashtable FunctionHash = new Hashtable();
+	public RFCFunction CreateFunction(string FunctionName)
+	{
+	  
+		lock (FunctionHash)
+		{
+			string xml = (string)FunctionHash[FunctionName];
+	  
+			if (xml == null)
+			{
+				// The function has not been created yet in this pool
+				R3ConnectionEx con = this.AllocConnection();
+				try
+				{
+					RFCFunction func = con.CreateFunction(FunctionName);
+					FreeConnection(con);
+					// store in hash for later use
+					FunctionHash.Add(FunctionName, func.SaveToXML());
+					return func;
+				}
+				catch (Exception e1)
+				{
+					// Check if connection is still alive
+					// if not, remove it
+					if (!con.Ping())
+						MyConnectionList.Remove(con);
+					else
+						FreeConnection(con);
+					// rethrow exception
+					throw e1;
+				}
+	  
+			}
+			else
+			{
+				// We can create the function object without calling the CreateFunction method
+				RFCFunction func = new RFCFunction(FunctionName);
+				func.LoadFromXMLString(xml);
+				return func;
+			}
+		}
+	}
+	```
+
+=== "ExecuteFunction"
+
+	The execution of the function uses the same principle as `CreateFunction()`: 
+
+	- Allocate connection
+	- Execute
+	- Deallocate
+
+	```csharp linenums="1"
+	public void ExecuteFunction(RFCFunction func)
+	{
+		R3ConnectionEx con = this.AllocConnection();
+		try
+		{
+			func.Connection = (R3Connection)con;
+			func.Execute();
+	  
+		}
+		catch (Exception e1)
+		{
+			// Check if connection is still alive
+			// if not, remove it
+			if (!con.Ping())
+				MyConnectionList.Remove(con);
+			FreeConnection(con);
+			// rethrow exception
+			throw e1;
+		}
+	  
+		FreeConnection(con);
+	}
+	```
 
 
 ### Test the connection pool
@@ -245,7 +256,7 @@ The output shows:
 
 Source code of the sample program:
 
-```csharp linenums="1"
+```csharp linenums="1" title="Use a Connection Pool"
 class Program
 {
     static R3ConnectionPool ConPool = new R3ConnectionPool();

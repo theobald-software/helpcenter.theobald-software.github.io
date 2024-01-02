@@ -34,7 +34,7 @@ Follow the steps below to call the BAPI API_MATERIAL_AVAILABILITY:
 If no error occurred, the BAPI returns the parameter *AV_QTY_PLT* that contains the stock quantity in the given unit. 
 Display the stock quantity in the Windows form.
 
-```csharp linenums="1"
+```csharp linenums="1" title="BAPI_MATERIAL_AVAILABILITY"
 private void btnGetQuantity_Click(object sender, System.EventArgs e)
         {
             try

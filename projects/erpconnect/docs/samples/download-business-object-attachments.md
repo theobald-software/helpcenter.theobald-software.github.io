@@ -30,7 +30,7 @@ The following sample code reads the table SRGBTBREL to obtain all document IDs a
 
 The function returns an array of strings each representing a key to a downloadable attachment.
 
-```csharp linenums="1"
+```csharp linenums="1" title="Table SRGBTBREL"
 public static string[] GetAllAttachmentKeys(R3Connection connection, 
     string ObjectType, string ObjectKey)
 {
@@ -60,7 +60,7 @@ The following sample code reads the table SOOD to get the file name of each atta
 - The primary key of the table entry is defined by parts of the document IDs provided by the function `GetAllAttachmentKeys` above. 
 - The file name of the attachment can be created by concatenating OBJDES and FILE_EXT.
 
-```csharp linenums="1"
+```csharp linenums="1" title="Table SOOD"
 public static string GetFileName(R3Connection connection, string DocID)
 {
     string OBJTP = DocID.Substring(17, 3);
@@ -93,7 +93,7 @@ The following sample code downloads an attachment with a given object ID using t
 - The table OBJECT_CONTENT returns the binary content of the attachment as a string. 
 - The strings are converted into byte arrays and stored to the disk.
 
-```csharp linenums="1"
+```csharp linenums="1" title="SO_DOCUMENT_READ_API1"
 public static void DownloadDocument(R3Connection connection, string Path, string key)
 {
     RFCFunction func = connection.CreateFunction("SO_DOCUMENT_READ_API1");
@@ -136,7 +136,7 @@ public static void DownloadDocument(R3Connection connection, string Path, string
 The following sample code queries a list of available attachments and downloads the attachments to the disk.<br>
 To download attachments of other business objects, change the object type, e.g., BUS2010 for RFQ.
 
-```csharp linenums="1"
+```csharp linenums="1" title="Read and Download Attachments"
 using System;
 using ERPConnect;
 

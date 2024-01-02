@@ -12,7 +12,7 @@ This sample shows how to obtain the components of a material BOM using the funct
 ### Call CSAP_MAT_BOM_READ
 The following sample code retrieves the components of a material BOM:
 
-```csharp linenums="1"
+```csharp linenums="1" title="CSAP_MAT_BOM_READ"
 using System;
 using ERPConnect;
 

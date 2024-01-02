@@ -9,7 +9,7 @@ This sample shows how to reset the password of an SAP user using the BAPI BAPI_U
 !!! tip
     Resetting the password of SAP users can be useful in web portals with employee self services.
 
-```csharp linenums="1"
+```csharp linenums="1" title="BAPI_USER_CHANGE"
 using System;
 using ERPConnect;
 using ERPConnect.Utils;

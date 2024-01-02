@@ -18,7 +18,7 @@ You can export the default value for the superior functional location under data
 
 The following sample code calls the BAPI BAPI_FUNCLOC_CREATE to create a Functional Location in SAP:
 
-```csharp linenums="1"
+```csharp linenums="1" title="BAPI_FUNCLOC_CREATE"
 using System;
 using ERPConnect;
 

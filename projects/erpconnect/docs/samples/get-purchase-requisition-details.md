@@ -22,7 +22,7 @@ Possible processing statuses returned by BAPI_REQUISITION_GETDETAIL:
 
 The following sample code calls the BAPI BAPI_REQUISITION_GETDETAIL to get the processing status of a purchase requisition:
 
-```csharp linenums="1"
+```csharp linenums="1" title="BAPI_REQUISITION_GETDETAIL"
 public static void BanfStatus(string Banf_Number)
 {
     RFCFunction func = connection.CreateFunction("BAPI_REQUISITION_GETDETAIL");

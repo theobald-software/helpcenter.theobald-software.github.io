@@ -32,7 +32,7 @@ The table parameters for BAPI_GOODSMVT_CREATE include:
 The following code sample calls the BAPI BAPI_GOODSMVT_CREATE.
 If a goods receipt is successfully created the function returns the material document number and the year.
 
-```csharp linenums="1"
+```csharp linenums="1" title="BAPI_GOODSMVT_CREATE"
 using System;
 using ERPConnect;
 

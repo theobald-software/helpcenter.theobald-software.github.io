@@ -18,7 +18,7 @@ Use the [transaction recorder](../documentation/transactions/transaction-recorde
 
 The following sample code calls SAP transaction XD01 to create new customers in SAP:
 
-```csharp linenums="1"
+```csharp linenums="1" title="Transaction XD01"
 using System;
 using ERPConnect;
 using ERPConnect.Utils;

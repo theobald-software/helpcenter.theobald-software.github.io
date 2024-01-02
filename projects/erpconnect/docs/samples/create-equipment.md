@@ -16,7 +16,7 @@ The fields EQUITYPE,INVENTORY and MANFACTURE are optional.
 
 The following sample code creates equipment in SAP using the BAPI BAPI_EQMT_MODIFY:
 
-```csharp linenums="1"
+```csharp linenums="1" title="BAPI_EQMT_MODIFY"
 using System;
 using ERPConnect;
 

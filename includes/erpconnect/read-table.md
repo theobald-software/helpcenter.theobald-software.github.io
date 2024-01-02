@@ -1,11 +1,6 @@
 
-This sample reads the material description texts of the SAP table *MAKT*. 
 
-- Read the columns *MATNR* (material number) and *MAKTX* (material text).
-- Add a corresponding WHERE statement `SPRAS='EN'` to make sure only the English language texts are read (SPRAS is the column that contains the language keys).
-
-
-``` csharp linenums="1"
+``` csharp linenums="1" hl_lines="23-28 31 32 34" title="Table MAKT"
 using System;
 using System.Data;
 using ERPConnect;

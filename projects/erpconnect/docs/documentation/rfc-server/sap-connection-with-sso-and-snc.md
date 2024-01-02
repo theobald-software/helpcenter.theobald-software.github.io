@@ -14,7 +14,7 @@ The RFCServer class works similarly to the R3Connection class, see [ERPConnect w
 The RFCServer class provides the property *SNCSettings*. 
 Assign the partner name in the SAP transaction **SM59** (e.g. p:RFCServerSNC@THEOBALD) to the property *OwnName* of *SNCSettings*.
   
-```csharp linenums="1"
+```csharp linenums="1" title="SSO and SNC"
 RFCServer rfcServer = new RFCServer();
 rfcServer.GatewayHost = "sap-erp-as05.example.com";
 rfcServer.GatewayService = "sapgw00";

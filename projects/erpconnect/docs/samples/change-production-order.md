@@ -28,7 +28,7 @@ The table CLOI_MESSAGE_LOG_EXP contains the message codes of the function module
 
 The following sample code changes the start date (Field GSTRP) and the end date (Field GLTRP) of a production order.
 
-```csharp linenums="1"
+```csharp linenums="1" title="CLOI_CHANGES_UPL_31"
 public static string ChangeProductionOrder(string AUFNR, string VORNR, string APLFL)
  {
    string rMessage = "";
@@ -90,7 +90,7 @@ It changes the start and end dates of a given operation defined in the variable 
 
 To reschedule all the item data of the production order the value of the field METHOD is set to "DISPATCH". 
 
-```csharp linenums="1"
+```csharp linenums="1" title="CLOI_CHANGES_UPL_31"
 public static string ChangeProductionOrderPos(string AUFNR, string VORNR, string APLFL)
  {
    string rMessage = "";
