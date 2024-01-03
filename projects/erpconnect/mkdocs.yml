@@ -50,14 +50,14 @@ theme:
     - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: custom
-      accent: red
+      accent: custom
       toggle:
         icon: material/toggle-switch
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: custom
-      accent: red
+      accent: custom
       toggle:
         icon: material/toggle-switch-off
         name: Switch to system preference
@@ -88,7 +88,7 @@ plugins:
   - typeset
   - awesome-pages
   - macros:
-      include_dir: ../../includes # ../../includes for ERPConnect only
+      include_dir: includes # ../../includes for ERPConnect only
   #- swagger-ui-tag
   #- glightbox #image zoom
   - tags
@@ -124,7 +124,7 @@ markdown_extensions:
       separator: "-"
       # title: On this Page:
   - pymdownx.snippets:
-      base_path: ../../includes
+      base_path: includes
   - pymdownx.superfences #for content tabs (version history)
   - pymdownx.tabbed:
       alternate_style: true

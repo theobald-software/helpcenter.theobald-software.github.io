@@ -15,7 +15,7 @@ There are several methods to get an SSO Ticket depending on the SAP Infrastructu
 To create an SSO ticket the *R3Connection* class provides the method `GetSSOTicket`. 
 All logon data must be provided once to create the ticket as shown in the code below.
 
-```csharp linenums="1"
+```csharp linenums="1" title="Create SSO Ticket"
 using(ERPConnect.R3Connection cont = new ERPConnect.R3Connection())
 {
     cont.Host = "sap-erp-as05.example.com";
@@ -32,7 +32,7 @@ using(ERPConnect.R3Connection cont = new ERPConnect.R3Connection())
 #### Logon
 If there is a ticket available, you can establish the connection without user credentials:
 
-```csharp linenums="1"
+```csharp linenums="1" title="Connect to SAP via SSO Ticket"
 using (ERPConnect.R3Connection conts = new ERPConnect.R3Connection())
 {
     conts.Host = "sap-erp-as05.example.com";
@@ -47,3 +47,9 @@ using (ERPConnect.R3Connection conts = new ERPConnect.R3Connection())
 
 For information on how to login to SAP using the cookie from the SAP Portal Ticketissuer, refer to [Login to SAP with an SSO Logonticket](../../samples/login-to-sap-with-an-sso-logonticket.md).
 
+****
+
+#### Related Links
+- [Login to SAP with an SSO Logonticket from the SAP Portal Ticketissuer](../../samples/login-to-sap-with-an-sso-logonticket.md)
+- [SAP Help - Single Sign-On Configuration](https://help.sap.com/doc/saphelp_nw75/7.5.5/en-US/48/ca0fe42fbb5c97e10000000a42189d/content.htm?no_cache=true)
+- [SSO with SNC](sso-with-snc.md)

@@ -6,7 +6,7 @@ description: How to Login to SAP with an SSO Logonticket
 This sample shows how to login to SAP with an SSO Logon Ticket.<br>
 The following sample code retrieves the cookie from the SAP Portal Ticketissuer that contains the SSO Ticket using an HTTP Request with a Basic Authentication:
 
-```csharp linenums="1"
+```csharp linenums="1" title="Retrieve Cookie from the SAP Portal Ticketissuer"
 using System;
 using System.Net;
 using System.Text;
@@ -71,4 +71,4 @@ static string ParseCookie(string cookie)
 ****
 
 #### Related Link:
-- [Complete Guide: SSO with Logon Tickets](../documentation/sap-connection/sso-with-log-on-tickets.md). 
+- [Documentation: SSO with Logon Tickets](../documentation/sap-connection/sso-with-log-on-tickets.md). 

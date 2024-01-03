@@ -111,8 +111,8 @@ Choose your product:
     ---
 
     The .NET programming library to develop your own SAP interfaces.
-
-    [:octicons-arrow-right-24: ERPConnect](https://help.theobald-software.com/en/erpconnect/)
+	
+	[:octicons-arrow-right-24: ERPConnect](https://helpcenter.theobald-software.com/erpconnect)
 
 </div>
 
