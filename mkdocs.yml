@@ -72,7 +72,7 @@ plugins:
   #    include_dir: includes
   - projects:
       projects_dir: projects
-      cache: false
+      cache: true
       hoisting: true
       #projects_config_transform: !!python/name:projects.transform
   
