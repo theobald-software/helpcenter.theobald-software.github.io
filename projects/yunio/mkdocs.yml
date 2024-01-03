@@ -1,0 +1,187 @@
+# Copyright (c) 2016-2023 Martin Donath <martin.donath@squidfunk.com>
+
+# Project information
+site_name: yunIO Helpcenter
+#site_url: http://erpconnect.theobald-software.com/
+#site_author: Valerie Schipka
+# site_description: >-
+#  Write your documentation in Markdown and create a professional static site in
+#  minutes – searchable, customizable, in 60+ languages, for all devices
+
+# Repository
+# repo_name: theobald-software/helpcenter.theobald-software.github.io
+#repo_url: https://github.com/theobald-software/oh.theobald-software.github.io.git
+
+# Copyright
+copyright: Copyright &copy; 2024 Theobald Software GmbH <br> <span style="color:#808080">“The best SAP interface is the one you don’t even notice.” - Patrick Theobald </span>
+
+# Configuration
+theme:
+  name: material
+  custom_dir: overrides #announcements and custom templates
+  features:
+     - announce.dismiss # adds a dismissal option to announcements 
+    # - content.action.edit # adds an edit button to the pages
+    # - content.action.view # adds a view source button to the pages
+     - content.code.copy # adds copy button in code blocks
+     - content.code.select # adds select button in code blocks
+     - content.tabs.link # adds anchors when switching tabs
+     - content.tooltips # ebables adding tooltips to links
+    # - header.autohide # hides the header when scrolling down
+    # - navigation.expand #displays all pages in the navigation (not good for API Reference)
+    # - navigation.footer
+     - navigation.indexes #adds landing pages for groups
+    # - navigation.instant # load faster (no page reload for internal links)
+    # - navigation.instant.prefetch # load faster (start loading content when hovering)
+     - navigation.instant.progress # enables a progress indicator 
+    # - navigation.path #adds breadcrumbs
+     - navigation.prune # only the visible navigation items are included in the rendered HTML, reducing the size of the built site by 33% or more
+    # - navigation.sections # top level pages are rendered as groups in the navigation
+     - navigation.tabs # add 1st level navigation to the header
+     - navigation.tabs.sticky # tabs do not disappear when scrolling
+     - navigation.top # add a "back to top" button
+     - navigation.tracking # instantly adds the current headline to the URL
+     - search.highlight # highlights the search entry in the results
+     - search.share # adds a share link option to the search
+     - search.suggest # enables auto-complete in search
+     - toc.follow # sidebar is automatically scrolled so that the active anchor is always visible
+    # - toc.integrate # adds the toc to the navigation
+  palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/link
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/toggle-switch-off
+        name: Switch to system preference
+  font:
+    text: Poppins
+    code: Roboto Mono
+  favicon: assets/YunIO.png
+  logo: assets/YunIO.png 
+
+# Custom CSS
+extra_css:
+  - assets/stylesheets/extra.css
+  - assets/stylesheets/neoteroi-cards.css 
+  
+# Plugins
+plugins:
+  #- redirects: #redirect URLs when renaming/moving .md files
+  #    redirect_maps:
+  #      'old.md': 'new.md'
+  #      'old/file.md': 'new/file.md'
+  #      'some_file.md': 'http://external.url.com/foobar'
+  - privacy:
+      links_attr_map:
+        target: _blank # opens all external links in new tabs
+  - meta
+  - search:
+      separator: '[\s\-,:!=\[\]()"/]+'
+  - typeset
+  - awesome-pages
+  - macros:
+      include_dir: includes
+  - swagger-ui-tag
+  #- glightbox #image zoom
+  - tags
+
+# Continuous integration
+  - group:
+      enabled: !ENV CI
+      plugins:
+         - git-revision-date-localized # adds information when pages were last updated
+        #enable_creation_date: true
+        #type: timeago
+#        - optimize
+         - minify:
+             minify_html: true
+
+markdown_extensions:
+  - toc:
+      toc_depth: 3 # define the depth of headlines for the table of content
+      #permalink: "#"
+      separator: "-"
+      # title: On this Page:
+  - pymdownx.snippets:
+      base_path: includes
+  - pymdownx.superfences #for content tabs (version history)
+  - pymdownx.tabbed:
+      alternate_style: true
+  - tables
+# notes, warnings, etc
+  - admonition
+  - pymdownx.details
+# code blocks  
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+# images & grids
+  - attr_list
+  - md_in_html
+  - neoteroi.cards
+# lists
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+# icons
+  - pymdownx.emoji: 
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+
+# Additional configuration
+extra:
+  status:
+    new: Recently added
+    deprecated: Deprecated
+    beta: Beta
+  generator: false #footer display Made with Material for MkDocs
+  consent:
+    title: Cookie consent
+    description: >- 
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
+  analytics:
+    provider: google
+    property: !ENV GOOGLE_ANALYTICS_KEY
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: material/emoticon-happy-outline
+          name: This page was helpful
+          data: 1
+          note: Thanks for your feedback!
+        - icon: material/emoticon-sad-outline
+          name: This page could be improved
+          data: 0
+          note: >-
+            Thank you for your feedback! Help us improve our help and our product by
+            <a href="https://theobald-software.typeform.com/to/CnpfiiIN" target=_blank>telling us what you're missing</a>.
+  social:
+    - icon: fontawesome/brands/linkedin 
+      link: https://www.linkedin.com/company/theobald-software/
+    - icon: fontawesome/brands/youtube 
+      link: https://www.youtube.com/user/TheobaldSoftware
+    - icon: fontawesome/brands/instagram 
+      link: https://www.instagram.com/theobaldsoftware/
+    - icon: fontawesome/solid/envelope
+      link: https://theobald-software.com/en/newsletter/
+  product: yunIO
+  #variable: SSIS variable
+  #variables: SSIS variables

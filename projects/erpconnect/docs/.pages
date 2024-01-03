@@ -1,0 +1,10 @@
+
+nav:
+    - Home: index.md
+    - QuickStart: quick-start.md
+    - Documentation: documentation
+    - Samples: samples
+    - API Reference: erpconnect-api
+    - ChangeLog: changelog.md
+    - Troubleshooting: troubleshooting.md
+    - Support: https://support.theobald-software.com/helpdesk

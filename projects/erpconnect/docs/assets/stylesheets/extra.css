@@ -2,7 +2,8 @@
   --md-primary-fg-color:        #ED1A33;
   --md-primary-fg-color--light: #ED2939;
   --md-primary-fg-color--dark:  #7a1b21;
-  --md-accent-fg-color: ED1A33;
+  --md-accent-fg-color: #ED1A33;
+  --md-color-accent: #ED1A33;
   
   /* Theo red
   --md-primary-fg-color:        #FF003C;
@@ -19,7 +20,8 @@
 
 /* Grid sets the width of the main content */
 .md-grid {
-  max-width: 1500px; 
+  max-width: initial; 
+  padding: 0 120px 0 120px;
 }
 
 }
@@ -55,3 +57,4 @@
       &:hover {
         background-color: hsla(var(--md-primary-fg-color--light), 50%, 50%, 0.5);
     }
+	

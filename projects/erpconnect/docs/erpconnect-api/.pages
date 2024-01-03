@@ -1,0 +1,13 @@
+nav:
+    - access-api-in-vs.md
+    - ERPConnect: erpconnect
+    - ERPConnect.BW: erpconnect-bw
+    - ERPConnect.Idocs: erpconnect-idocs
+    - ERPConnect.LINQ: erpconnect-linq
+    - ERPConnect.Queries: erpconnect-queries
+    - ERPConnect.Queries.QueryHelper: erpconnect-queryhelper
+    - ERPConnect.Utils: erpconnect-utils
+    - Theobald.Common: theobald-common
+    - Theobald.Ogc: theobald-ogc
+hide: false
+collapse: true

@@ -1,0 +1,3 @@
+order: asc
+order_by: title
+collapse_single_pages: false

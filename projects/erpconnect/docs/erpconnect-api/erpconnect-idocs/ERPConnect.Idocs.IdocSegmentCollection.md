@@ -1,0 +1,98 @@
+
+Namespace: [ERPConnect.Idocs](index.md)  
+Assembly: ERPConnect35.dll  
+
+Represents a collection over several IdocSegment objects which are related to each other.
+
+```csharp
+public class IdocSegmentCollection : CollectionBase, IList, ICollection, IEnumerable
+```
+
+#### Inheritance
+
+[object](https://learn.microsoft.com/dotnet/api/system.object) ← 
+[CollectionBase](https://learn.microsoft.com/dotnet/api/system.collections.collectionbase) ← 
+[IdocSegmentCollection](ERPConnect.Idocs.IdocSegmentCollection.md)
+
+#### Implements
+
+[IList](https://learn.microsoft.com/dotnet/api/system.collections.ilist), 
+[ICollection](https://learn.microsoft.com/dotnet/api/system.collections.icollection), 
+[IEnumerable](https://learn.microsoft.com/dotnet/api/system.collections.ienumerable)
+
+#### Inherited Members
+
+[CollectionBase.Clear\(\)](https://learn.microsoft.com/dotnet/api/system.collections.collectionbase.clear), 
+[CollectionBase.RemoveAt\(int\)](https://learn.microsoft.com/dotnet/api/system.collections.collectionbase.removeat), 
+[CollectionBase.GetEnumerator\(\)](https://learn.microsoft.com/dotnet/api/system.collections.collectionbase.getenumerator), 
+[CollectionBase.OnSet\(int, object, object\)](https://learn.microsoft.com/dotnet/api/system.collections.collectionbase.onset), 
+[CollectionBase.OnInsert\(int, object\)](https://learn.microsoft.com/dotnet/api/system.collections.collectionbase.oninsert), 
+[CollectionBase.OnClear\(\)](https://learn.microsoft.com/dotnet/api/system.collections.collectionbase.onclear), 
+[CollectionBase.OnRemove\(int, object\)](https://learn.microsoft.com/dotnet/api/system.collections.collectionbase.onremove), 
+[CollectionBase.OnValidate\(object\)](https://learn.microsoft.com/dotnet/api/system.collections.collectionbase.onvalidate), 
+[CollectionBase.OnSetComplete\(int, object, object\)](https://learn.microsoft.com/dotnet/api/system.collections.collectionbase.onsetcomplete), 
+[CollectionBase.OnInsertComplete\(int, object\)](https://learn.microsoft.com/dotnet/api/system.collections.collectionbase.oninsertcomplete), 
+[CollectionBase.OnClearComplete\(\)](https://learn.microsoft.com/dotnet/api/system.collections.collectionbase.onclearcomplete), 
+[CollectionBase.OnRemoveComplete\(int, object\)](https://learn.microsoft.com/dotnet/api/system.collections.collectionbase.onremovecomplete), 
+[CollectionBase.InnerList](https://learn.microsoft.com/dotnet/api/system.collections.collectionbase.innerlist), 
+[CollectionBase.List](https://learn.microsoft.com/dotnet/api/system.collections.collectionbase.list), 
+[CollectionBase.Capacity](https://learn.microsoft.com/dotnet/api/system.collections.collectionbase.capacity), 
+[CollectionBase.Count](https://learn.microsoft.com/dotnet/api/system.collections.collectionbase.count), 
+[object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
+[object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
+[object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
+[object.ReferenceEquals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.referenceequals), 
+[object.GetHashCode\(\)](https://learn.microsoft.com/dotnet/api/system.object.gethashcode), 
+[object.GetType\(\)](https://learn.microsoft.com/dotnet/api/system.object.gettype), 
+[object.MemberwiseClone\(\)](https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone)
+
+## Constructors
+
+### <a id="ERPConnect_Idocs_IdocSegmentCollection__ctor"></a> IdocSegmentCollection\(\)
+
+```csharp
+public IdocSegmentCollection()
+```
+
+## Properties
+
+### <a id="ERPConnect_Idocs_IdocSegmentCollection_Item_System_Int32_"></a> this\[int\]
+
+Returns a IdocSegment object at a given position
+
+```csharp
+public virtual IdocSegment this[int Index] { get; }
+```
+
+#### Property Value
+
+ [IdocSegment](ERPConnect.Idocs.IdocSegment.md)
+
+### <a id="ERPConnect_Idocs_IdocSegmentCollection_Item_System_String_System_Int32_"></a> this\[string, int\]
+
+Returns a IdocSegment object by providing the name of the segment. Attention!! The name may be not unique, so an Index must be provided too.
+
+```csharp
+public virtual IdocSegment this[string SegmentName, int Index] { get; }
+```
+
+#### Property Value
+
+ [IdocSegment](ERPConnect.Idocs.IdocSegment.md)
+
+## Methods
+
+### <a id="ERPConnect_Idocs_IdocSegmentCollection_Add_ERPConnect_Idocs_IdocSegment_"></a> Add\(IdocSegment\)
+
+Adds a new segment object to the collection.
+
+```csharp
+public virtual void Add(IdocSegment NewSegment)
+```
+
+#### Parameters
+
+`NewSegment` [IdocSegment](ERPConnect.Idocs.IdocSegment.md)
+
+The segment to be aded
+

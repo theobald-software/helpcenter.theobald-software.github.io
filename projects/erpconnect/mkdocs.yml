@@ -1,5 +1,4 @@
 # Copyright (c) 2016-2023 Martin Donath <martin.donath@squidfunk.com>
-
 # Project information
 site_name: ERPConnect Helpcenter
 #site_url: http://erpconnect.theobald-software.com/
@@ -7,46 +6,42 @@ site_name: ERPConnect Helpcenter
 # site_description: >-
 #  Write your documentation in Markdown and create a professional static site in
 #  minutes – searchable, customizable, in 60+ languages, for all devices
-
 # Repository
 # repo_name: theobald-software/helpcenter.theobald-software.github.io
 #repo_url: https://github.com/theobald-software/oh.theobald-software.github.io.git
-
 # Copyright
-copyright: Copyright &copy; 2024 Theobald Software GmbH #<br>“The best SAP interface is the one you don’t even notice.” - Patrick Theobald
-
+copyright: Copyright &copy; 2024 Theobald Software GmbH <br> <span style="color:#808080">“The best SAP interface is the one you don’t even notice.” - Patrick Theobald </span>
 # Configuration
 theme:
   name: material
-#  custom_dir: material/overrides
+  custom_dir: overrides #announcements and custom templates
   features:
-    # - announce.dismiss
-    # - content.action.edit
-    # - content.action.view
-    # - content.code.annotate
-    # - content.code.copy
-    # - content.code.select
-    # - content.tabs.link
-     - content.tooltips
-    # - header.autohide
-     - navigation.expand #displays all pages in the navigation
+     - announce.dismiss # adds a dismissal option to announcements 
+    # - content.action.edit # adds an edit button to the pages
+    # - content.action.view # adds a view source button to the pages
+     - content.code.copy # adds copy button in code blocks
+     - content.code.select # adds select button in code blocks
+     - content.tabs.link # adds anchors when switching tabs
+     - content.tooltips # enables adding tooltips to links
+    # - header.autohide # hides the header when scrolling down
+    # - navigation.expand #displays all pages in the navigation (not good for API Reference)
     # - navigation.footer
-    # - navigation.indexes #adds landing pages for groups
-     - navigation.instant
-    # - navigation.instant.prefetch
-    # - navigation.instant.progress
-     - navigation.path #adds breadcrumbs
-    # - navigation.prune
-    # - navigation.sections #no groups in the navigation
-     - navigation.tabs
-     - navigation.tabs.sticky
-     - navigation.top #add a "back to top" button
-     - navigation.tracking #instantly adds the current headline to the URL
-     - search.highlight
-     - search.share
-     - search.suggest
-    # - toc.follow
-    # - toc.integrate #adds the toc to the navigation
+     - navigation.indexes #adds landing pages for groups
+    # - navigation.instant # load faster (no page reload for internal links)
+    # - navigation.instant.prefetch # load faster (start loading content when hovering)
+     - navigation.instant.progress # enables a progress indicator 
+    # - navigation.path #adds breadcrumbs
+     - navigation.prune # only the visible navigation items are included in the rendered HTML, reducing the size of the built site by 33% or more
+    # - navigation.sections # top level pages are rendered as groups in the navigation
+     - navigation.tabs # add 1st level navigation to the header
+     - navigation.tabs.sticky # tabs do not disappear when scrolling
+     - navigation.top # add a "back to top" button
+     - navigation.tracking # instantly adds the current headline to the URL
+     - search.highlight # highlights the search entry in the results
+     - search.share # adds a share link option to the search
+     - search.suggest # enables auto-complete in search
+     - toc.follow # sidebar is automatically scrolled so that the active anchor is always visible
+    # - toc.integrate # adds the toc to the navigation
   palette:
     - media: "(prefers-color-scheme)"
       toggle:
@@ -55,14 +50,14 @@ theme:
     - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: custom
-      accent: red
+      accent: custom
       toggle:
         icon: material/toggle-switch
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: custom
-      accent: red
+      accent: custom
       toggle:
         icon: material/toggle-switch-off
         name: Switch to system preference
@@ -71,46 +66,91 @@ theme:
     code: Roboto Mono
   favicon: assets/ERPConnect.png
   logo: assets/ERPConnect.png 
-
+  
 # Custom CSS
 extra_css:
   - assets/stylesheets/extra.css
-  - stylesheets/neoteroi-cards.css 
+  - assets/stylesheets/neoteroi-cards.css 
   
 # Plugins
 plugins:
+  #- redirects: #redirect URLs when renaming/moving .md files
+  #    redirect_maps:
+  #      'old.md': 'new.md'
+  #      'old/file.md': 'new/file.md'
+  #      'some_file.md': 'http://external.url.com/foobar'
+  - privacy:
+      links_attr_map:
+        target: _blank # opens all external links in new tabs
   - meta
-  - git-revision-date-localized
-  - termynal:
-      title: "Youpi"
-      prompt_literal_start:
-        - "$"
-        - ">"
   - search:
-      separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+      separator: '[\s\-,:!=\[\]()"/]+'
   - typeset
-
-        #enable_creation_date: true
-        #type: timeago
-  #- macros:
-  #    include_dir: ../../includes
+  - awesome-pages
+  - macros:
+      include_dir: includes # ../../includes for ERPConnect only
   #- swagger-ui-tag
   #- glightbox #image zoom
-  #- awesome-pages
-  #- tags
-  #- pdf-export:
-  #     combined: false
-
-
-  # Continuous integration
-#  - group:
- #     enabled: !ENV CI
-#      plugins:
-#         - optimize
-#        - minify:
-#            minify_html: true
-
-
+  - tags
+  #- with-pdf: # creates .pdf, see https://pypi.org/project/mkdocs-with-pdf/
+  #    author: Dec 2023
+  #    copyright: Copyright &copy; 2024 Theobald Software GmbH
+  #    cover_logo: https://help.theobald-software.com/img/company/theobald_onlinehelplogo.svg
+  #    cover_title: ERPConnect 
+  #    cover_subtitle: Documentation
+  #    exclude_pages:
+  #        - ^$
+  #        - 'erpconnect-api/'
+  #        - 'samples/'
+  #        - 'changelog/'
+  #        - 'troubleshooting/'
+  #    output_path: C:/Source/helpcenter.theobald-software.github.io/ERPConnect_Documentation.pdf
+  
+# Continuous integration
+  - group:
+      enabled: !ENV CI
+      plugins:
+         - git-revision-date-localized # adds information when pages were last updated
+        #enable_creation_date: true
+        #type: timeago
+#        - optimize
+         - minify:
+             minify_html: true
+            
+markdown_extensions:
+  - toc:
+      toc_depth: 3 # define the depth of headlines for the table of content
+      #permalink: "#"
+      separator: "-"
+      # title: On this Page:
+  - pymdownx.snippets:
+      base_path: includes
+  - pymdownx.superfences #for content tabs (version history)
+  - pymdownx.tabbed:
+      alternate_style: true
+  - tables
+# notes, warnings, etc
+  - admonition
+  - pymdownx.details
+# code blocks  
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+# images & grids
+  - attr_list
+  - md_in_html
+  - neoteroi.cards
+# lists
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+# icons
+  - pymdownx.emoji: 
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      
 # Additional configuration
 extra:
   status:
@@ -118,6 +158,13 @@ extra:
     deprecated: Deprecated
     beta: Beta
   generator: false #footer display Made with Material for MkDocs
+  consent:
+    title: Cookie consent
+    description: >- 
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
   analytics:
     provider: google
     property: !ENV GOOGLE_ANALYTICS_KEY
@@ -132,8 +179,8 @@ extra:
           name: This page could be improved
           data: 0
           note: >-
-            Thanks for your feedback! Help us improve this page by
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSe8L5YDggZiVjgvBKfv-XCdbQAEJrseRh8MBh-jS92TU2aqzw/viewform?usp=pp_url&entry.853143515={url}" target=_blank>telling us what you're missing</a>.
+            Thank you for your feedback! Help us improve our help and our product by
+            <a href="https://theobald-software.typeform.com/to/CnpfiiIN" target=_blank>telling us what you're missing</a>.
   social:
     - icon: fontawesome/brands/linkedin 
       link: https://www.linkedin.com/company/theobald-software/
@@ -143,42 +190,6 @@ extra:
       link: https://www.instagram.com/theobaldsoftware/
     - icon: fontawesome/solid/envelope
       link: https://theobald-software.com/en/newsletter/
+  product: ERPConnect
   #variable: SSIS variable
   #variables: SSIS variables
-  
-       
-# Extensions
-markdown_extensions:
-  - abbr
-  - admonition
-  - attr_list
-  - def_list
-  - md_in_html
-  - tables
-  - toc:
-      toc_depth: 3
-      permalink: true
-  - pymdownx.betterem: #improves bold/italic formatting (https://facelessuser.github.io/pymdown-extensions/extensions/betterem/)
-      smart_enable: all
-  - pymdownx.details #unfolding content, e.g., FAQs (https://facelessuser.github.io/pymdown-extensions/extensions/details/)
-  - pymdownx.emoji:
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
-  - pymdownx.highlight:
-      anchor_linenums: true
-      line_spans: __span
-      pygments_lang_class: true
-  - pymdownx.inlinehilite #code highlighter (https://facelessuser.github.io/pymdown-extensions/extensions/inlinehilite/)
-  - pymdownx.keys #styling for keys, e.g., ++ctrl+alt+delete++ (https://facelessuser.github.io/pymdown-extensions/extensions/keys/)
-  - pymdownx.smartsymbols
- # - pymdownx.snippets:
- #     base_path: includes
-  - pymdownx.superfences
-  - pymdownx.tabbed: #adds tabs (https://facelessuser.github.io/pymdown-extensions/extensions/tabbed/)
-      alternate_style: true
-      combine_header_slug: true
-      slugify: !!python/object/apply:pymdownx.slugs.slugify
-        kwds:
-          case: lower
-  - pymdownx.tasklist:
-      custom_checkbox: true

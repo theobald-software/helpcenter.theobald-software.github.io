@@ -1,0 +1,7 @@
+nav:
+    - index.md
+    - prerequisites.md
+    - send-an-idoc.md
+    - receive-an-idoc.md
+    - idocs-schema-generator.md
+collapse_single_pages: false

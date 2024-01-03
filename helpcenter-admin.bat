@@ -11,7 +11,23 @@ if _%1_==_payload_  goto :payload
  goto :eof
  :payload
 ::ENTER YOUR CODE BELOW::
+
+cd C:\Source\helpcenter.theobald-software.github.io\projects\erpconnect
+setlocal enableextensions disabledelayedexpansion
+
+set "search=: ../../includes"
+set "replace=: includes"
+
+set "textFile=mkdocs.yml"
+
+for /f "delims=" %%i in ('type "%textFile%" ^& break ^> "%textFile%" ') do (
+    set "line=%%i"
+    setlocal enabledelayedexpansion
+    >>"%textFile%" echo(!line:%search%=%replace%!
+    endlocal
+)
+
 cd C:\Source\helpcenter.theobald-software.github.io
-start "HelpCenter" /B mkdocs serve -a localhost:8000
-start "" /B http://localhost:8000/
+start "HelpCenter" /B mkdocs serve 
+rem start "" /B http://localhost:8000/
 pause

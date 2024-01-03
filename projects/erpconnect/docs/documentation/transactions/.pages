@@ -1,0 +1,5 @@
+nav:
+    - index.md
+    - transactions-class.md
+    - transaction-recorder.md
+collapse_single_pages: false

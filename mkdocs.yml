@@ -13,39 +13,27 @@ repo_name: theobald-software/helpcenter.theobald-software.github.io
 #repo_url: https://github.com/theobald-software/helpcenter.theobald-software.github.io.git
 
 # Copyright
-copyright: Copyright &copy; 2024 Theobald Software GmbH <p style="color:#808080";>“The best SAP interface is the one you don’t even notice.” - Patrick Theobald</p>
+copyright: Copyright &copy; 2024 Theobald Software GmbH <br> <span style="color:#808080">“The best SAP interface is the one you don’t even notice.” - Patrick Theobald </span>
 
 # Configuration
 theme:
   name: material
+  custom_dir: overrides # overrides enable for announcements
   features:
-    # - announce.dismiss
-    # - content.action.edit
-    # - content.action.view
-    # - content.code.annotate
-    # - content.code.copy
-    # - content.code.select
-    # - content.tabs.link
-     - content.tooltips
-    # - header.autohide
-    # - navigation.expand #displays all pages in the navigation
+     - content.tooltips # ebables adding tooltips to links
+    # - header.autohide # hides the header when scrolling down
+     - navigation.expand # displays all pages in the navigation by default
     # - navigation.footer
-     - navigation.indexes #adds landing pages for groups
-     - navigation.instant
-    # - navigation.instant.prefetch
-    # - navigation.instant.progress
-    # - navigation.path #adds breadcrumbs
-    # - navigation.prune
-    # - navigation.sections #no groups in the navigation
-     - navigation.tabs
-     - navigation.tabs.sticky
-    # - navigation.top #add a "back to top" button
-    # - navigation.tracking #instantly adds the current headline to the URL
-    # - search.highlight
-    # - search.share
-    # - search.suggest
-    # - toc.follow
-    # - toc.integrate #adds the toc to the navigation
+     - navigation.indexes # adds landing pages for groups (index.md)
+    # - navigation.instant # load faster (no page reload for internal links)
+    # - navigation.instant.prefetch # load faster (start loading content when hovering)
+    # - navigation.instant.progress # enables a progress indicator 
+    # - navigation.path # adds breadcrumbs
+    # - navigation.prune # renders only HTML files of pages that are visible in the navigation
+    # - navigation.sections # no groups in the navigation
+    # - navigation.tabs
+    # - navigation.tabs.sticky
+    # - navigation.top # add a "back to top" button
   palette:
     - media: "(prefers-color-scheme)"
       toggle:
@@ -71,16 +59,23 @@ theme:
   favicon: assets/images/favicon.png
   logo: assets/images/logo.png 
 
+# Custom CSS
+extra_css:
+  - assets/stylesheets/neoteroi-cards.css 
+
 # Plugins
 plugins:
-  #- projects
-      #projects_dir: projects
-      #cache: false
-      #hoisting: true
+  - meta
+  - typeset
+  - awesome-pages
+  #- macros:
+  #    include_dir: includes
+  - projects:
+      projects_dir: projects
+      cache: false
+      hoisting: true
       #projects_config_transform: !!python/name:projects.transform
-  #- pdf-export
-  #     combined: false # specify if the whole documentation is exported (true) or if only the active page is exported (false)
-
+  
 # Continuous integration
 #  - group:
  #     enabled: !ENV CI
@@ -91,27 +86,7 @@ plugins:
 
 # Additional configuration
 extra:
-  status:
-    new: Recently added
-    deprecated: Deprecated
-    beta: Beta
   generator: false #footer display Made with Material for MkDocs
-  analytics:
-    provider: google
-    property: !ENV GOOGLE_ANALYTICS_KEY
-    feedback:
-      title: Was this page helpful?
-      ratings:
-        - icon: material/emoticon-happy-outline
-          name: This page was helpful
-          data: 1
-          note: Thanks for your feedback!
-        - icon: material/emoticon-sad-outline
-          name: This page could be improved
-          data: 0
-          note: >-
-            Thanks for your feedback! Help us improve this page by
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSe8L5YDggZiVjgvBKfv-XCdbQAEJrseRh8MBh-jS92TU2aqzw/viewform?usp=pp_url&entry.853143515={url}" target=_blank>telling us what you're missing</a>.
   social:
     - icon: fontawesome/brands/linkedin 
       link: https://www.linkedin.com/company/theobald-software/
@@ -121,8 +96,7 @@ extra:
       link: https://www.instagram.com/theobaldsoftware/
     - icon: fontawesome/solid/envelope
       link: https://theobald-software.com/en/newsletter/
-
-      
+   
 # Extensions
 markdown_extensions:
   - abbr
@@ -158,6 +132,4 @@ markdown_extensions:
           case: lower
   - pymdownx.tasklist:
       custom_checkbox: true
-      
-nav:
-  - ERPConnect: project://erpconnect
+  
