@@ -43,23 +43,17 @@ theme:
      - toc.follow # sidebar is automatically scrolled so that the active anchor is always visible
     # - toc.integrate # adds the toc to the navigation
   palette:
-    - media: "(prefers-color-scheme)"
-      toggle:
-        icon: material/link
-        name: Switch to light mode
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
+    - scheme: default
       primary: custom
       accent: custom
       toggle:
-        icon: material/toggle-switch
+        icon: material/brightness-4
         name: Switch to dark mode
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
+    - scheme: slate
       primary: custom
       accent: custom
       toggle:
-        icon: material/toggle-switch-off
+        icon: material/brightness-7
         name: Switch to system preference
   font:
     text: Poppins
@@ -92,6 +86,7 @@ plugins:
   #- swagger-ui-tag
   #- glightbox #image zoom
   - tags
+  - git-revision-date-localized
   #- with-pdf: # creates .pdf, see https://pypi.org/project/mkdocs-with-pdf/
   #    author: Dec 2023
   #    copyright: Copyright &copy; 2024 Theobald Software GmbH
@@ -156,7 +151,7 @@ extra:
   status:
     new: Recently added
     deprecated: Deprecated
-    beta: Beta
+    beta: Still in beta
   generator: false #footer display Made with Material for MkDocs
   consent:
     title: Cookie consent

@@ -47,29 +47,23 @@ theme:
      - toc.follow # sidebar is automatically scrolled so that the active anchor is always visible
     # - toc.integrate # adds the toc to the navigation
   palette:
-    - media: "(prefers-color-scheme)"
-      toggle:
-        icon: material/link
-        name: Switch to light mode
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
+    - scheme: default
       primary: custom
       accent: custom
       toggle:
-        icon: material/toggle-switch
+        icon: material/brightness-4
         name: Switch to dark mode
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
+    - scheme: slate
       primary: custom
       accent: custom
       toggle:
-        icon: material/toggle-switch-off
+        icon: material/brightness-7
         name: Switch to system preference
   font:
     text: Poppins
     code: Roboto Mono
   favicon: assets/XtractIS.png
-  logo: assets/xtractIS.png 
+  logo: assets/XtractIS.png 
 
 # Custom CSS
 extra_css:

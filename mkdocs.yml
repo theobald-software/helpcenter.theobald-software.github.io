@@ -35,23 +35,17 @@ theme:
     # - navigation.tabs.sticky
     # - navigation.top # add a "back to top" button
   palette:
-    - media: "(prefers-color-scheme)"
-      toggle:
-        icon: material/link
-        name: Switch to light mode
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
+    - scheme: default
       primary: black
       accent: red
       toggle:
-        icon: material/toggle-switch
+        icon: material/brightness-4
         name: Switch to dark mode
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
+    - scheme: slate
       primary: black
       accent: red
       toggle:
-        icon: material/toggle-switch-off
+        icon: material/brightness-7
         name: Switch to system preference
   font:
     text: Poppins

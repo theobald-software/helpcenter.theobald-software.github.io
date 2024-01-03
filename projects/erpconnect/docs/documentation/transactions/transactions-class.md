@@ -1,6 +1,7 @@
 ---
 title: Transaction Class 
 description: Managing and  Executing Transactions- The Class Transaction
+status: beta
 ---
 
 The following sample application shows how to use the *Transaction* class to execute an SAP transaction.<br>

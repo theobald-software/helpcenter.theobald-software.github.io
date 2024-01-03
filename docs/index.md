@@ -88,7 +88,7 @@ Choose your product:
 
     Integrate your SAP data into Alteryx with this drag & drop toolbox for the Alteryx Designer.
 
-    [:octicons-arrow-right-24: Axtract for Alteryx](https://help.theobald-software.com/en/xtract-for-alteryx/)
+    [:octicons-arrow-right-24: Xtract for Alteryx](https://help.theobald-software.com/en/xtract-for-alteryx/)
 
 -   ![bc](assets/images/Board.png){ .lg .middle width="50px"} __Board Connector__
 

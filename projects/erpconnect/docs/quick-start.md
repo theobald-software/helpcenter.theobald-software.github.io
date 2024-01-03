@@ -4,6 +4,8 @@ hide:
   - navigation
 ---
 
+This section shows how to install and set up ERPConnect.
+
 ### Installation and Setup
 
 1. [Download](https://theobald-software.com/testversion-herunterladen) a 30 days trial version of ERPConnect.
