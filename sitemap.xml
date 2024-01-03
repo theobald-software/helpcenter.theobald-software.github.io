@@ -2,7 +2,57 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://helpcenter.theobald-software.com/</loc>
-         <lastmod>2023-12-13</lastmod>
+         <lastmod>2024-01-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://helpcenter.theobald-software.com/markdown-sample/</loc>
+         <lastmod>2024-01-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://helpcenter.theobald-software.com/editorial-guide/</loc>
+         <lastmod>2024-01-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://helpcenter.theobald-software.com/editorial-guide/markdown-sample/</loc>
+         <lastmod>2024-01-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://helpcenter.theobald-software.com/release-notes/ERPConnect-5.0.0/</loc>
+         <lastmod>2024-01-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://helpcenter.theobald-software.com/release-notes/ERPConnect-6.1.0/</loc>
+         <lastmod>2024-01-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://helpcenter.theobald-software.com/release-notes/ERPConnect-6.10.0/</loc>
+         <lastmod>2024-01-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://helpcenter.theobald-software.com/release-notes/ERPConnect-6.13.0/</loc>
+         <lastmod>2024-01-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://helpcenter.theobald-software.com/release-notes/ERPConnect-6.14.19/</loc>
+         <lastmod>2024-01-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://helpcenter.theobald-software.com/release-notes/ERPConnect-6.3.0/</loc>
+         <lastmod>2024-01-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://helpcenter.theobald-software.com/release-notes/ERPConnect-7.6.0/</loc>
+         <lastmod>2024-01-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

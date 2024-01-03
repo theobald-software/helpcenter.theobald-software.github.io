@@ -1,0 +1,60 @@
+:root {
+  --md-primary-fg-color:        #ED1A33;
+  --md-primary-fg-color--light: #ED2939;
+  --md-primary-fg-color--dark:  #7a1b21;
+  --md-accent-fg-color: #ED1A33;
+  --md-color-accent: #ED1A33;
+  
+  /* Theo red
+  --md-primary-fg-color:        #FF003C;
+  --md-primary-fg-color--light: #ED2939;
+  --md-primary-fg-color--dark:  #7a1b21;
+  --md-accent-fg-color: FF003C;
+  */
+  
+.md-typeset .admonition,
+.md-typeset details {
+  border-width: 0;
+  border-left-width: 4px;
+}
+
+/* Grid sets the width of the main content */
+.md-grid {
+  max-width: initial; 
+  padding: 0 120px 0 120px;
+}
+
+}
+
+/* Custom beta status */
+.md-status--beta::after {
+    background-color: var(--md-default-fg-color--light);
+    border-radius: 0.2rem;
+    color: white;
+    content: "beta";
+    font-size: 0.5rem;
+    height: auto;       
+    padding: 0.1rem;
+    -webkit-mask-image: none;
+    width: auto;
+}
+.md-status:hover:after {
+   background-color: var(--md-default-fg-color--light);
+} 
+
+.md-search__form {
+	/*
+      background-color: hsla(var(--md-hue), 0%, 0%, 0.07);
+
+      // Search form on hover
+      &:hover {
+        background-color: hsla(var(--md-hue), 0%, 0%, 0.32);
+      }
+	  */
+	  background-color: hsla(var(--md-hue), 0%, 0%, 0.5);
+
+      // Search form on hover
+      &:hover {
+        background-color: hsla(var(--md-primary-fg-color--light), 50%, 50%, 0.5);
+    }
+	

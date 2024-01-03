@@ -1,0 +1,5289 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://helpcenter.theobald-software.com/erpconnect/erpconnect-api/erpconnect-idocs/ERPConnect.Idocs.Idoc/">
+      
+      
+        <link rel="prev" href="../">
+      
+      
+        <link rel="next" href="../ERPConnect.Idocs.IdocSegment/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/ERPConnect.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.2+insiders-4.47.1">
+    
+    
+      
+        <title>ERPConnect.Idocs.Idoc - ERPConnect Helpcenter</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.78d85e4f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        
+        <link rel="stylesheet" href="../../../assets/external/fonts.googleapis.com/css.9a3d0420.css">
+        <style>:root{--md-text-font:"Poppins";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/neoteroi-cards.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config",""),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
+  
+    <script>var consent;"undefined"==typeof __md_analytics||(consent=__md_get("__consent"))&&consent.analytics&&__md_analytics()</script>
+  
+
+    
+    
+  <link rel="stylesheet" href="../../../assets/stylesheets/custom.00c04c01.min.css">
+
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#constructors" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+        <aside class="md-banner">
+          <div class="md-banner__inner md-grid md-typeset">
+            
+              <button class="md-banner__button md-icon" aria-label="Don't show this again">
+                
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+              </button>
+            
+            
+  <p><b>Announcement:</b> The ERPConnect HelpCenter will soon replace the ERPConnect Online Help!<p>
+
+          </div>
+          
+            <script>var content,el=document.querySelector("[data-md-component=announce]");el&&(content=el.querySelector(".md-typeset"),__md_hash(content.innerHTML)===__md_get("__announce")&&(el.hidden=!0))</script>
+          
+        </aside>
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="ERPConnect Helpcenter" class="md-header__button md-logo" aria-label="ERPConnect Helpcenter" data-md-component="logo">
+      
+  <img src="../../../assets/ERPConnect.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ERPConnect Helpcenter
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              ERPConnect.Idocs.Idoc
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1M8 13h8v-2H8v2m9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1 0 1.71-1.39 3.1-3.1 3.1h-4V17h4a5 5 0 0 0 5-5 5 5 0 0 0-5-5Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5M7 15a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../quick-start/" class="md-tabs__link">
+        
+  
+    
+  
+  QuickStart
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../documentation/introduction/" class="md-tabs__link">
+          
+  
+    
+  
+  Documentation
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../samples/" class="md-tabs__link">
+          
+  
+    
+  
+  Samples
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../access-api-in-vs/" class="md-tabs__link">
+          
+  
+    
+  
+  API Reference
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../changelog/" class="md-tabs__link">
+        
+  
+    
+  
+  ChangeLog
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../troubleshooting/" class="md-tabs__link">
+        
+  
+    
+  
+  Troubleshooting
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="https://support.theobald-software.com/helpdesk" class="md-tabs__link" target="_blank" rel="noopener">
+        
+  
+    
+  
+  Support
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="ERPConnect Helpcenter" class="md-nav__button md-logo" aria-label="ERPConnect Helpcenter" data-md-component="logo">
+      
+  <img src="../../../assets/ERPConnect.png" alt="logo">
+
+    </a>
+    ERPConnect Helpcenter
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../quick-start/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    QuickStart
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    
+  
+    Documentation
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Documentation
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../documentation/introduction/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    
+  
+    Introduction
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../documentation/sap-connection/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    
+  
+    SAP-Connection
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../documentation/abap/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    
+  
+    ABAP Code
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../documentation/bapis-and-function-modules/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    
+  
+    BAPIs/Function Modules
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../documentation/bw-cubes-and-bw-queries/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    
+  
+    BW Cubes/Queries
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../documentation/idocs/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    
+  
+    IDocs
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../documentation/queries/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    
+  
+    Queries
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../documentation/rfc-server/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    
+  
+    RFC Server Fuctions
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../documentation/table/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    
+  
+    Table
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../documentation/transactions/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    
+  
+    Transactions
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../samples/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    
+  
+    Samples
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Samples
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../sap-connection" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    SAP Connection
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../abap" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    ABAP Code
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../bapis-and-function-modules" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    BAPIs/Function Modules
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../bw-cubes-and-bw-queries" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    BW Cubes/Queries
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../idocs" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    IDocs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../queries" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Queries
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../rfc-server" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    RFC Server Functions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../table" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Table
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../transactions" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Transactions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    
+  
+    API Reference
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    API Reference
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../access-api-in-vs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    API Documentation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../erpconnect/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    
+  
+    ERPConnect
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../erpconnect-bw/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    
+  
+    ERPConnect.BW
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_4" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    
+  
+    ERPConnect.Idocs
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5_4" id="__nav_5_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    ERPConnect.Idocs
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    
+  
+    ERPConnect.Idocs.Idoc
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    ERPConnect.Idocs.Idoc
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#constructors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Constructors
+        </span>
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Constructors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#idoc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           Idoc()
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#idocstring-string" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           Idoc(string, string)
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Properties
+        </span>
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Properties">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#arckey" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           ARCKEY
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cimtyp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           CIMTYP
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#credat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           CREDAT
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cretim" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           CRETIM
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#connection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           Connection
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#direct" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           DIRECT
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#docnum" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           DOCNUM
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#docrel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           DOCREL
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           Description
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exprss" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           EXPRSS
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#idoctyp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           IDOCTYP
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lasttid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           LastTID
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mandt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           MANDT
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mescod" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           MESCOD
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mesfct" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           MESFCT
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mestyp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           MESTYP
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#outmod" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           OUTMOD
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rcvlad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           RCVLAD
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rcvpfc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           RCVPFC
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rcvpor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           RCVPOR
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rcvprn" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           RCVPRN
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rcvprt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           RCVPRT
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rcvsad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           RCVSAD
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#refgrp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           REFGRP
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#refint" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           REFINT
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#refmes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           REFMES
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#serial" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           SERIAL
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sndlad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           SNDLAD
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sndpfc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           SNDPFC
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sndpor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           SNDPOR
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sndprn" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           SNDPRN
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sndprt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           SNDPRT
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sndsad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           SNDSAD
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#status" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           STATUS
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#std" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           STD
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stdmes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           STDMES
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stdvrs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           STDVRS
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#segments" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           Segments
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#skiphlevel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           SkipHLevel
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tabnam" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           TABNAM
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#test" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           TEST
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#templatesegments" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           TemplateSegments
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Methods
+        </span>
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#createsegmentstring" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           CreateSegment(string)
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getcurrentstatus" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           GetCurrentStatus()
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getidocschemastring" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           GetIdocSchemaString()
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#loadidocschemastring" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           LoadIdocSchema(string)
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#loadidocschemastreamreader" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           LoadIdocSchema(StreamReader)
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#loadidocschematextreader" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           LoadIdocSchema(TextReader)
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#loadplaindatastreamreader" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           LoadPlainData(StreamReader)
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#loadplaindatastring" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           LoadPlainData(string)
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#loadplaindatastringstring" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           LoadPlainDataString(string)
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#loadxmldatastring" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           LoadXMLData(string)
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#loadxmldatatextreader" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           LoadXMLData(TextReader)
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#saveidocschemastring" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           SaveIdocSchema(string)
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#saveidocschemaxmlwriter" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           SaveIdocSchema(XmlWriter)
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#saveplaindatastreamwriter" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           SavePlainData(StreamWriter)
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#saveplaindata" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           SavePlainData()
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#saveplaindatastring" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           SavePlainData(string)
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#saveplaindatastring-encoding" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           SavePlainData(string, Encoding)
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#savexmldatatextwriter" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           SaveXMLData(TextWriter)
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#savexmldatastring" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           SaveXMLData(string)
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#savexmldatastring-string" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           SaveXMLData(string, string)
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sendstring-string" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           Send(string, string)
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sendstring" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           Send(string)
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#send" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           Send()
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sendandwait" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           SendAndWait()
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tostring" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           ToString()
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ERPConnect.Idocs.IdocSegment/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    ERPConnect.Idocs.IdocSegment
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ERPConnect.Idocs.IdocSegmentCollection/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    ERPConnect.Idocs.IdocSegmentCollection
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ERPConnect.Idocs.IdocSegmentField/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    ERPConnect.Idocs.IdocSegmentField
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ERPConnect.Idocs.IdocSegmentFieldCollection/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    ERPConnect.Idocs.IdocSegmentFieldCollection
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ERPConnect.Idocs.IdocStatus/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    ERPConnect.Idocs.IdocStatus
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../erpconnect-linq/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    
+  
+    ERPConnect.LINQ
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../erpconnect-queries/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    
+  
+    ERPConnect.Queries
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../erpconnect-queryhelper/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    
+  
+    ERPConnect.Queries.QueryHelper
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../erpconnect-utils/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    
+  
+    ERPConnect.Utils
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../theobald-common/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    
+  
+    Theobald.Common
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../theobald-ogc/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    
+  
+    Theobald.Ogc
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../changelog/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    ChangeLog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../troubleshooting/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Troubleshooting
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://support.theobald-software.com/helpdesk" class="md-nav__link" target="_blank" rel="noopener">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Support
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#constructors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Constructors
+        </span>
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Constructors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#idoc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           Idoc()
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#idocstring-string" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           Idoc(string, string)
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Properties
+        </span>
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Properties">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#arckey" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           ARCKEY
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cimtyp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           CIMTYP
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#credat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           CREDAT
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cretim" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           CRETIM
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#connection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           Connection
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#direct" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           DIRECT
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#docnum" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           DOCNUM
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#docrel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           DOCREL
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           Description
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exprss" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           EXPRSS
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#idoctyp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           IDOCTYP
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lasttid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           LastTID
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mandt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           MANDT
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mescod" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           MESCOD
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mesfct" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           MESFCT
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mestyp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           MESTYP
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#outmod" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           OUTMOD
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rcvlad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           RCVLAD
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rcvpfc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           RCVPFC
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rcvpor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           RCVPOR
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rcvprn" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           RCVPRN
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rcvprt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           RCVPRT
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rcvsad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           RCVSAD
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#refgrp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           REFGRP
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#refint" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           REFINT
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#refmes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           REFMES
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#serial" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           SERIAL
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sndlad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           SNDLAD
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sndpfc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           SNDPFC
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sndpor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           SNDPOR
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sndprn" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           SNDPRN
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sndprt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           SNDPRT
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sndsad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           SNDSAD
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#status" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           STATUS
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#std" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           STD
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stdmes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           STDMES
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stdvrs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           STDVRS
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#segments" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           Segments
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#skiphlevel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           SkipHLevel
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tabnam" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           TABNAM
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#test" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           TEST
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#templatesegments" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           TemplateSegments
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Methods
+        </span>
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#createsegmentstring" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           CreateSegment(string)
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getcurrentstatus" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           GetCurrentStatus()
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getidocschemastring" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           GetIdocSchemaString()
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#loadidocschemastring" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           LoadIdocSchema(string)
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#loadidocschemastreamreader" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           LoadIdocSchema(StreamReader)
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#loadidocschematextreader" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           LoadIdocSchema(TextReader)
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#loadplaindatastreamreader" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           LoadPlainData(StreamReader)
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#loadplaindatastring" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           LoadPlainData(string)
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#loadplaindatastringstring" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           LoadPlainDataString(string)
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#loadxmldatastring" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           LoadXMLData(string)
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#loadxmldatatextreader" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           LoadXMLData(TextReader)
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#saveidocschemastring" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           SaveIdocSchema(string)
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#saveidocschemaxmlwriter" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           SaveIdocSchema(XmlWriter)
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#saveplaindatastreamwriter" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           SavePlainData(StreamWriter)
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#saveplaindata" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           SavePlainData()
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#saveplaindatastring" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           SavePlainData(string)
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#saveplaindatastring-encoding" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           SavePlainData(string, Encoding)
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#savexmldatatextwriter" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           SaveXMLData(TextWriter)
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#savexmldatastring" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           SaveXMLData(string)
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#savexmldatastring-string" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           SaveXMLData(string, string)
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sendstring-string" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           Send(string, string)
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sendstring" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           Send(string)
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#send" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           Send()
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sendandwait" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           SendAndWait()
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tostring" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+           ToString()
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>ERPConnect.Idocs.Idoc</h1>
+
+<p>Namespace: <a href="../">ERPConnect.Idocs</a><br />
+Assembly: ERPConnect35.dll  </p>
+<p>Represents a single IDoc including its segments</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">public</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">Idoc</span>
+</span></code></pre></div>
+<h4 id="inheritance">Inheritance</h4>
+<p><a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener">object</a> ← 
+<a href="./">Idoc</a></p>
+<h4 id="inherited-members">Inherited Members</h4>
+<p><a href="https://learn.microsoft.com/dotnet/api/system.object.tostring" target="_blank" rel="noopener">object.ToString()</a>, 
+<a href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)" target="_blank" rel="noopener">object.Equals(object)</a>, 
+<a href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)" target="_blank" rel="noopener">object.Equals(object, object)</a>, 
+<a href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals" target="_blank" rel="noopener">object.ReferenceEquals(object, object)</a>, 
+<a href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode" target="_blank" rel="noopener">object.GetHashCode()</a>, 
+<a href="https://learn.microsoft.com/dotnet/api/system.object.gettype" target="_blank" rel="noopener">object.GetType()</a>, 
+<a href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone" target="_blank" rel="noopener">object.MemberwiseClone()</a></p>
+<h2 id="constructors">Constructors</h2>
+<h3 id="idoc"><a id="ERPConnect_Idocs_Idoc__ctor"></a> Idoc()</h3>
+<p>Initializes an empty Idoc object</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">public</span><span class="w"> </span><span class="nf">Idoc</span><span class="p">()</span>
+</span></code></pre></div>
+<h3 id="idocstring-string"><a id="ERPConnect_Idocs_Idoc__ctor_System_String_System_String_"></a> Idoc(string, string)</h3>
+<p>initializes an empty Idoc object</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">public</span><span class="w"> </span><span class="nf">Idoc</span><span class="p">(</span><span class="kt">string</span><span class="w"> </span><span class="n">IdocType</span><span class="p">,</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">Extension</span><span class="p">)</span>
+</span></code></pre></div>
+<h4 id="parameters">Parameters</h4>
+<p><code>IdocType</code> <a href="https://learn.microsoft.com/dotnet/api/system.string" target="_blank" rel="noopener">string</a></p>
+<p>Name of the idoc type</p>
+<p><code>Extension</code> <a href="https://learn.microsoft.com/dotnet/api/system.string" target="_blank" rel="noopener">string</a></p>
+<p>Name of the extension. If no extension is requiered, set to ""</p>
+<h2 id="properties">Properties</h2>
+<h3 id="arckey"><a id="ERPConnect_Idocs_Idoc_ARCKEY"></a> ARCKEY</h3>
+<p>Key for external message archive</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">public</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">ARCKEY</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">get</span><span class="p">;</span><span class="w"> </span><span class="k">set</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+</span></code></pre></div>
+<h4 id="property-value">Property Value</h4>
+<p><a href="https://learn.microsoft.com/dotnet/api/system.string" target="_blank" rel="noopener">string</a></p>
+<h3 id="cimtyp"><a id="ERPConnect_Idocs_Idoc_CIMTYP"></a> CIMTYP</h3>
+<p>Extension (defined by customer)</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">public</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">CIMTYP</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">get</span><span class="p">;</span><span class="w"> </span><span class="k">set</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+</span></code></pre></div>
+<h4 id="property-value_1">Property Value</h4>
+<p><a href="https://learn.microsoft.com/dotnet/api/system.string" target="_blank" rel="noopener">string</a></p>
+<h3 id="credat"><a id="ERPConnect_Idocs_Idoc_CREDAT"></a> CREDAT</h3>
+<p>Created on</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="k">public</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">CREDAT</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">get</span><span class="p">;</span><span class="w"> </span><span class="k">set</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+</span></code></pre></div>
+<h4 id="property-value_2">Property Value</h4>
+<p><a href="https://learn.microsoft.com/dotnet/api/system.string" target="_blank" rel="noopener">string</a></p>
+<h3 id="cretim"><a id="ERPConnect_Idocs_Idoc_CRETIM"></a> CRETIM</h3>
+<p>Time Created</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="k">public</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">CRETIM</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">get</span><span class="p">;</span><span class="w"> </span><span class="k">set</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+</span></code></pre></div>
+<h4 id="property-value_3">Property Value</h4>
+<p><a href="https://learn.microsoft.com/dotnet/api/system.string" target="_blank" rel="noopener">string</a></p>
+<h3 id="connection"><a id="ERPConnect_Idocs_Idoc_Connection"></a> Connection</h3>
+<p>R3Connection object to which the Idoc will be sent</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="k">public</span><span class="w"> </span><span class="n">R3Connection</span><span class="w"> </span><span class="n">Connection</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">get</span><span class="p">;</span><span class="w"> </span><span class="k">set</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+</span></code></pre></div>
+<h4 id="property-value_4">Property Value</h4>
+<p><a href="../../erpconnect/ERPConnect.R3Connection/">R3Connection</a></p>
+<h3 id="direct"><a id="ERPConnect_Idocs_Idoc_DIRECT"></a> DIRECT</h3>
+<p>Direction</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="k">public</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">DIRECT</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">get</span><span class="p">;</span><span class="w"> </span><span class="k">set</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+</span></code></pre></div>
+<h4 id="property-value_5">Property Value</h4>
+<p><a href="https://learn.microsoft.com/dotnet/api/system.string" target="_blank" rel="noopener">string</a></p>
+<h3 id="docnum"><a id="ERPConnect_Idocs_Idoc_DOCNUM"></a> DOCNUM</h3>
+<p>IDoc number</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="k">public</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">DOCNUM</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">get</span><span class="p">;</span><span class="w"> </span><span class="k">set</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+</span></code></pre></div>
+<h4 id="property-value_6">Property Value</h4>
+<p><a href="https://learn.microsoft.com/dotnet/api/system.string" target="_blank" rel="noopener">string</a></p>
+<h3 id="docrel"><a id="ERPConnect_Idocs_Idoc_DOCREL"></a> DOCREL</h3>
+<p>SAP Release for IDoc</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="k">public</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">DOCREL</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">get</span><span class="p">;</span><span class="w"> </span><span class="k">set</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+</span></code></pre></div>
+<h4 id="property-value_7">Property Value</h4>
+<p><a href="https://learn.microsoft.com/dotnet/api/system.string" target="_blank" rel="noopener">string</a></p>
+<h3 id="description"><a id="ERPConnect_Idocs_Idoc_Description"></a> Description</h3>
+<p>Description</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="k">public</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">Description</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">get</span><span class="p">;</span><span class="w"> </span><span class="k">set</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+</span></code></pre></div>
+<h4 id="property-value_8">Property Value</h4>
+<p><a href="https://learn.microsoft.com/dotnet/api/system.string" target="_blank" rel="noopener">string</a></p>
+<h3 id="exprss"><a id="ERPConnect_Idocs_Idoc_EXPRSS"></a> EXPRSS</h3>
+<p>Overriding in inbound processing</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="k">public</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">EXPRSS</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">get</span><span class="p">;</span><span class="w"> </span><span class="k">set</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+</span></code></pre></div>
+<h4 id="property-value_9">Property Value</h4>
+<p><a href="https://learn.microsoft.com/dotnet/api/system.string" target="_blank" rel="noopener">string</a></p>
+<h3 id="idoctyp"><a id="ERPConnect_Idocs_Idoc_IDOCTYP"></a> IDOCTYP</h3>
+<p>Name of basic type</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="k">public</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">IDOCTYP</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">get</span><span class="p">;</span><span class="w"> </span><span class="k">set</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+</span></code></pre></div>
+<h4 id="property-value_10">Property Value</h4>
+<p><a href="https://learn.microsoft.com/dotnet/api/system.string" target="_blank" rel="noopener">string</a></p>
+<h3 id="lasttid"><a id="ERPConnect_Idocs_Idoc_LastTID"></a> LastTID</h3>
+<p>Transaction ID of last outbound call</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="k">public</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">LastTID</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">get</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+</span></code></pre></div>
+<h4 id="property-value_11">Property Value</h4>
+<p><a href="https://learn.microsoft.com/dotnet/api/system.string" target="_blank" rel="noopener">string</a></p>
+<h3 id="mandt"><a id="ERPConnect_Idocs_Idoc_MANDT"></a> MANDT</h3>
+<p>Client</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="k">public</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">MANDT</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">get</span><span class="p">;</span><span class="w"> </span><span class="k">set</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+</span></code></pre></div>
+<h4 id="property-value_12">Property Value</h4>
+<p><a href="https://learn.microsoft.com/dotnet/api/system.string" target="_blank" rel="noopener">string</a></p>
+<h3 id="mescod"><a id="ERPConnect_Idocs_Idoc_MESCOD"></a> MESCOD</h3>
+<p>Message code</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="k">public</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">MESCOD</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">get</span><span class="p">;</span><span class="w"> </span><span class="k">set</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+</span></code></pre></div>
+<h4 id="property-value_13">Property Value</h4>
+<p><a href="https://learn.microsoft.com/dotnet/api/system.string" target="_blank" rel="noopener">string</a></p>
+<h3 id="mesfct"><a id="ERPConnect_Idocs_Idoc_MESFCT"></a> MESFCT</h3>
+<p>Message function</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="k">public</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">MESFCT</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">get</span><span class="p">;</span><span class="w"> </span><span class="k">set</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+</span></code></pre></div>
+<h4 id="property-value_14">Property Value</h4>
+<p><a href="https://learn.microsoft.com/dotnet/api/system.string" target="_blank" rel="noopener">string</a></p>
+<h3 id="mestyp"><a id="ERPConnect_Idocs_Idoc_MESTYP"></a> MESTYP</h3>
+<p>Message type</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="k">public</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">MESTYP</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">get</span><span class="p">;</span><span class="w"> </span><span class="k">set</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+</span></code></pre></div>
+<h4 id="property-value_15">Property Value</h4>
+<p><a href="https://learn.microsoft.com/dotnet/api/system.string" target="_blank" rel="noopener">string</a></p>
+<h3 id="outmod"><a id="ERPConnect_Idocs_Idoc_OUTMOD"></a> OUTMOD</h3>
+<p>Output mode</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="k">public</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">OUTMOD</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">get</span><span class="p">;</span><span class="w"> </span><span class="k">set</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+</span></code></pre></div>
+<h4 id="property-value_16">Property Value</h4>
+<p><a href="https://learn.microsoft.com/dotnet/api/system.string" target="_blank" rel="noopener">string</a></p>
+<h3 id="rcvlad"><a id="ERPConnect_Idocs_Idoc_RCVLAD"></a> RCVLAD</h3>
+<p>Logical address of recipient</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="k">public</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">RCVLAD</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">get</span><span class="p">;</span><span class="w"> </span><span class="k">set</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+</span></code></pre></div>
+<h4 id="property-value_17">Property Value</h4>
+<p><a href="https://learn.microsoft.com/dotnet/api/system.string" target="_blank" rel="noopener">string</a></p>
+<h3 id="rcvpfc"><a id="ERPConnect_Idocs_Idoc_RCVPFC"></a> RCVPFC</h3>
+<p>Partner function of recipient</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="k">public</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">RCVPFC</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">get</span><span class="p">;</span><span class="w"> </span><span class="k">set</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+</span></code></pre></div>
+<h4 id="property-value_18">Property Value</h4>
+<p><a href="https://learn.microsoft.com/dotnet/api/system.string" target="_blank" rel="noopener">string</a></p>
+<h3 id="rcvpor"><a id="ERPConnect_Idocs_Idoc_RCVPOR"></a> RCVPOR</h3>
+<p>Receiver port</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-22-1"><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="k">public</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">RCVPOR</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">get</span><span class="p">;</span><span class="w"> </span><span class="k">set</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+</span></code></pre></div>
+<h4 id="property-value_19">Property Value</h4>
+<p><a href="https://learn.microsoft.com/dotnet/api/system.string" target="_blank" rel="noopener">string</a></p>
+<h3 id="rcvprn"><a id="ERPConnect_Idocs_Idoc_RCVPRN"></a> RCVPRN</h3>
+<p>Partner number of recipient</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-23-1"><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="k">public</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">RCVPRN</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">get</span><span class="p">;</span><span class="w"> </span><span class="k">set</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+</span></code></pre></div>
+<h4 id="property-value_20">Property Value</h4>
+<p><a href="https://learn.microsoft.com/dotnet/api/system.string" target="_blank" rel="noopener">string</a></p>
+<h3 id="rcvprt"><a id="ERPConnect_Idocs_Idoc_RCVPRT"></a> RCVPRT</h3>
+<p>Partner Type of receiver</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-24-1"><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a><span class="k">public</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">RCVPRT</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">get</span><span class="p">;</span><span class="w"> </span><span class="k">set</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+</span></code></pre></div>
+<h4 id="property-value_21">Property Value</h4>
+<p><a href="https://learn.microsoft.com/dotnet/api/system.string" target="_blank" rel="noopener">string</a></p>
+<h3 id="rcvsad"><a id="ERPConnect_Idocs_Idoc_RCVSAD"></a> RCVSAD</h3>
+<p>Recipient address (SADR)</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-25-1"><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a><span class="k">public</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">RCVSAD</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">get</span><span class="p">;</span><span class="w"> </span><span class="k">set</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+</span></code></pre></div>
+<h4 id="property-value_22">Property Value</h4>
+<p><a href="https://learn.microsoft.com/dotnet/api/system.string" target="_blank" rel="noopener">string</a></p>
+<h3 id="refgrp"><a id="ERPConnect_Idocs_Idoc_REFGRP"></a> REFGRP</h3>
+<p>Message group (EDI Message Group)</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-26-1"><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a><span class="k">public</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">REFGRP</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">get</span><span class="p">;</span><span class="w"> </span><span class="k">set</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+</span></code></pre></div>
+<h4 id="property-value_23">Property Value</h4>
+<p><a href="https://learn.microsoft.com/dotnet/api/system.string" target="_blank" rel="noopener">string</a></p>
+<h3 id="refint"><a id="ERPConnect_Idocs_Idoc_REFINT"></a> REFINT</h3>
+<p>Transmission file (EDI Interchange)</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-27-1"><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a><span class="k">public</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">REFINT</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">get</span><span class="p">;</span><span class="w"> </span><span class="k">set</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+</span></code></pre></div>
+<h4 id="property-value_24">Property Value</h4>
+<p><a href="https://learn.microsoft.com/dotnet/api/system.string" target="_blank" rel="noopener">string</a></p>
+<h3 id="refmes"><a id="ERPConnect_Idocs_Idoc_REFMES"></a> REFMES</h3>
+<p>Message (EDI Message)</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-28-1"><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a><span class="k">public</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">REFMES</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">get</span><span class="p">;</span><span class="w"> </span><span class="k">set</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+</span></code></pre></div>
+<h4 id="property-value_25">Property Value</h4>
+<p><a href="https://learn.microsoft.com/dotnet/api/system.string" target="_blank" rel="noopener">string</a></p>
+<h3 id="serial"><a id="ERPConnect_Idocs_Idoc_SERIAL"></a> SERIAL</h3>
+<p>Serialization</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-29-1"><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a><span class="k">public</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">SERIAL</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">get</span><span class="p">;</span><span class="w"> </span><span class="k">set</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+</span></code></pre></div>
+<h4 id="property-value_26">Property Value</h4>
+<p><a href="https://learn.microsoft.com/dotnet/api/system.string" target="_blank" rel="noopener">string</a></p>
+<h3 id="sndlad"><a id="ERPConnect_Idocs_Idoc_SNDLAD"></a> SNDLAD</h3>
+<p>Logical address of sender</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-30-1"><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a><span class="k">public</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">SNDLAD</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">get</span><span class="p">;</span><span class="w"> </span><span class="k">set</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+</span></code></pre></div>
+<h4 id="property-value_27">Property Value</h4>
+<p><a href="https://learn.microsoft.com/dotnet/api/system.string" target="_blank" rel="noopener">string</a></p>
+<h3 id="sndpfc"><a id="ERPConnect_Idocs_Idoc_SNDPFC"></a> SNDPFC</h3>
+<p>Partner Function of Sender</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-31-1"><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a><span class="k">public</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">SNDPFC</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">get</span><span class="p">;</span><span class="w"> </span><span class="k">set</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+</span></code></pre></div>
+<h4 id="property-value_28">Property Value</h4>
+<p><a href="https://learn.microsoft.com/dotnet/api/system.string" target="_blank" rel="noopener">string</a></p>
+<h3 id="sndpor"><a id="ERPConnect_Idocs_Idoc_SNDPOR"></a> SNDPOR</h3>
+<p>Sender port (SAP System, external subsystem)</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-32-1"><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a><span class="k">public</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">SNDPOR</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">get</span><span class="p">;</span><span class="w"> </span><span class="k">set</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+</span></code></pre></div>
+<h4 id="property-value_29">Property Value</h4>
+<p><a href="https://learn.microsoft.com/dotnet/api/system.string" target="_blank" rel="noopener">string</a></p>
+<h3 id="sndprn"><a id="ERPConnect_Idocs_Idoc_SNDPRN"></a> SNDPRN</h3>
+<p>Partner Number of Sender</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-33-1"><a id="__codelineno-33-1" name="__codelineno-33-1" href="#__codelineno-33-1"></a><span class="k">public</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">SNDPRN</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">get</span><span class="p">;</span><span class="w"> </span><span class="k">set</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+</span></code></pre></div>
+<h4 id="property-value_30">Property Value</h4>
+<p><a href="https://learn.microsoft.com/dotnet/api/system.string" target="_blank" rel="noopener">string</a></p>
+<h3 id="sndprt"><a id="ERPConnect_Idocs_Idoc_SNDPRT"></a> SNDPRT</h3>
+<p>Partner type of sender</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-34-1"><a id="__codelineno-34-1" name="__codelineno-34-1" href="#__codelineno-34-1"></a><span class="k">public</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">SNDPRT</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">get</span><span class="p">;</span><span class="w"> </span><span class="k">set</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+</span></code></pre></div>
+<h4 id="property-value_31">Property Value</h4>
+<p><a href="https://learn.microsoft.com/dotnet/api/system.string" target="_blank" rel="noopener">string</a></p>
+<h3 id="sndsad"><a id="ERPConnect_Idocs_Idoc_SNDSAD"></a> SNDSAD</h3>
+<p>Sender address (SADR)</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-35-1"><a id="__codelineno-35-1" name="__codelineno-35-1" href="#__codelineno-35-1"></a><span class="k">public</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">SNDSAD</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">get</span><span class="p">;</span><span class="w"> </span><span class="k">set</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+</span></code></pre></div>
+<h4 id="property-value_32">Property Value</h4>
+<p><a href="https://learn.microsoft.com/dotnet/api/system.string" target="_blank" rel="noopener">string</a></p>
+<h3 id="status"><a id="ERPConnect_Idocs_Idoc_STATUS"></a> STATUS</h3>
+<p>Status of IDoc</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-36-1"><a id="__codelineno-36-1" name="__codelineno-36-1" href="#__codelineno-36-1"></a><span class="k">public</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">STATUS</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">get</span><span class="p">;</span><span class="w"> </span><span class="k">set</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+</span></code></pre></div>
+<h4 id="property-value_33">Property Value</h4>
+<p><a href="https://learn.microsoft.com/dotnet/api/system.string" target="_blank" rel="noopener">string</a></p>
+<h3 id="std"><a id="ERPConnect_Idocs_Idoc_STD"></a> STD</h3>
+<p>EDI standard, flag</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-37-1"><a id="__codelineno-37-1" name="__codelineno-37-1" href="#__codelineno-37-1"></a><span class="k">public</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">STD</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">get</span><span class="p">;</span><span class="w"> </span><span class="k">set</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+</span></code></pre></div>
+<h4 id="property-value_34">Property Value</h4>
+<p><a href="https://learn.microsoft.com/dotnet/api/system.string" target="_blank" rel="noopener">string</a></p>
+<h3 id="stdmes"><a id="ERPConnect_Idocs_Idoc_STDMES"></a> STDMES</h3>
+<p>EDI message type</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-38-1"><a id="__codelineno-38-1" name="__codelineno-38-1" href="#__codelineno-38-1"></a><span class="k">public</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">STDMES</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">get</span><span class="p">;</span><span class="w"> </span><span class="k">set</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+</span></code></pre></div>
+<h4 id="property-value_35">Property Value</h4>
+<p><a href="https://learn.microsoft.com/dotnet/api/system.string" target="_blank" rel="noopener">string</a></p>
+<h3 id="stdvrs"><a id="ERPConnect_Idocs_Idoc_STDVRS"></a> STDVRS</h3>
+<p>EDI standard, version and release</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-39-1"><a id="__codelineno-39-1" name="__codelineno-39-1" href="#__codelineno-39-1"></a><span class="k">public</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">STDVRS</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">get</span><span class="p">;</span><span class="w"> </span><span class="k">set</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+</span></code></pre></div>
+<h4 id="property-value_36">Property Value</h4>
+<p><a href="https://learn.microsoft.com/dotnet/api/system.string" target="_blank" rel="noopener">string</a></p>
+<h3 id="segments"><a id="ERPConnect_Idocs_Idoc_Segments"></a> Segments</h3>
+<p>Collection of all segment that are child relation to the current segment</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-40-1"><a id="__codelineno-40-1" name="__codelineno-40-1" href="#__codelineno-40-1"></a><span class="k">public</span><span class="w"> </span><span class="n">IdocSegmentCollection</span><span class="w"> </span><span class="n">Segments</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">get</span><span class="p">;</span><span class="w"> </span><span class="k">set</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+</span></code></pre></div>
+<h4 id="property-value_37">Property Value</h4>
+<p><a href="../ERPConnect.Idocs.IdocSegmentCollection/">IdocSegmentCollection</a></p>
+<h3 id="skiphlevel"><a id="ERPConnect_Idocs_Idoc_SkipHLevel"></a> SkipHLevel</h3>
+<p>DO NOT USE!!!! FOR INTERNAL USE ONLY!!!</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-41-1"><a id="__codelineno-41-1" name="__codelineno-41-1" href="#__codelineno-41-1"></a><span class="k">public</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">SkipHLevel</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">get</span><span class="p">;</span><span class="w"> </span><span class="k">set</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+</span></code></pre></div>
+<h4 id="property-value_38">Property Value</h4>
+<p><a href="https://learn.microsoft.com/dotnet/api/system.boolean" target="_blank" rel="noopener">bool</a></p>
+<h3 id="tabnam"><a id="ERPConnect_Idocs_Idoc_TABNAM"></a> TABNAM</h3>
+<p>Name of table structure</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-42-1"><a id="__codelineno-42-1" name="__codelineno-42-1" href="#__codelineno-42-1"></a><span class="k">public</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">TABNAM</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">get</span><span class="p">;</span><span class="w"> </span><span class="k">set</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+</span></code></pre></div>
+<h4 id="property-value_39">Property Value</h4>
+<p><a href="https://learn.microsoft.com/dotnet/api/system.string" target="_blank" rel="noopener">string</a></p>
+<h3 id="test"><a id="ERPConnect_Idocs_Idoc_TEST"></a> TEST</h3>
+<p>Test flag</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-43-1"><a id="__codelineno-43-1" name="__codelineno-43-1" href="#__codelineno-43-1"></a><span class="k">public</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">TEST</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">get</span><span class="p">;</span><span class="w"> </span><span class="k">set</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+</span></code></pre></div>
+<h4 id="property-value_40">Property Value</h4>
+<p><a href="https://learn.microsoft.com/dotnet/api/system.string" target="_blank" rel="noopener">string</a></p>
+<h3 id="templatesegments"><a id="ERPConnect_Idocs_Idoc_TemplateSegments"></a> TemplateSegments</h3>
+<p>Gets a collection of available template segments retrieved or loaded
+from a schema by calling <xref href="ERPConnect.R3Connection.CreateEmptyIdoc(System.String%2cSystem.String)" data-throw-if-not-resolved="false"></xref>
+or <xref href="ERPConnect.Idocs.Idoc.LoadIdocSchema(System.String)" data-throw-if-not-resolved="false"></xref>.</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-44-1"><a id="__codelineno-44-1" name="__codelineno-44-1" href="#__codelineno-44-1"></a><span class="k">public</span><span class="w"> </span><span class="n">Dictionary</span><span class="o">&lt;</span><span class="kt">string</span><span class="p">,</span><span class="w"> </span><span class="n">IdocSegment</span><span class="o">&gt;</span><span class="w"> </span><span class="n">TemplateSegments</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">get</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+</span></code></pre></div>
+<h4 id="property-value_41">Property Value</h4>
+<p><a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2" target="_blank" rel="noopener">Dictionary</a>&lt;<a href="https://learn.microsoft.com/dotnet/api/system.string" target="_blank" rel="noopener">string</a>, <a href="../ERPConnect.Idocs.IdocSegment/">IdocSegment</a>&gt;</p>
+<h2 id="methods">Methods</h2>
+<h3 id="createsegmentstring"><a id="ERPConnect_Idocs_Idoc_CreateSegment_System_String_"></a> CreateSegment(string)</h3>
+<p>Creates a new segment with fields to be filled with data.</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-45-1"><a id="__codelineno-45-1" name="__codelineno-45-1" href="#__codelineno-45-1"></a><span class="k">public</span><span class="w"> </span><span class="n">IdocSegment</span><span class="w"> </span><span class="nf">CreateSegment</span><span class="p">(</span><span class="kt">string</span><span class="w"> </span><span class="n">SegmentName</span><span class="p">)</span>
+</span></code></pre></div>
+<h4 id="parameters_1">Parameters</h4>
+<p><code>SegmentName</code> <a href="https://learn.microsoft.com/dotnet/api/system.string" target="_blank" rel="noopener">string</a></p>
+<p>Name of the segment. Please refer to transaction WE60 to find out which segments can be used for the idoc type.</p>
+<h4 id="returns">Returns</h4>
+<p><a href="../ERPConnect.Idocs.IdocSegment/">IdocSegment</a></p>
+<p>A newly created IdocSegment object</p>
+<h3 id="getcurrentstatus"><a id="ERPConnect_Idocs_Idoc_GetCurrentStatus"></a> GetCurrentStatus()</h3>
+<p>Returns an IdocStatus object which represents the current status of the IDoc</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-46-1"><a id="__codelineno-46-1" name="__codelineno-46-1" href="#__codelineno-46-1"></a><span class="k">public</span><span class="w"> </span><span class="n">IdocStatus</span><span class="w"> </span><span class="nf">GetCurrentStatus</span><span class="p">()</span>
+</span></code></pre></div>
+<h4 id="returns_1">Returns</h4>
+<p><a href="../ERPConnect.Idocs.IdocStatus/">IdocStatus</a></p>
+<p>IdocStatus object</p>
+<h3 id="getidocschemastring"><a id="ERPConnect_Idocs_Idoc_GetIdocSchemaString"></a> GetIdocSchemaString()</h3>
+<p>Gets the IDoc schema as string</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-47-1"><a id="__codelineno-47-1" name="__codelineno-47-1" href="#__codelineno-47-1"></a><span class="k">public</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="nf">GetIdocSchemaString</span><span class="p">()</span>
+</span></code></pre></div>
+<h4 id="returns_2">Returns</h4>
+<p><a href="https://learn.microsoft.com/dotnet/api/system.string" target="_blank" rel="noopener">string</a></p>
+<p>String with IDoc schema data</p>
+<h3 id="loadidocschemastring"><a id="ERPConnect_Idocs_Idoc_LoadIdocSchema_System_String_"></a> LoadIdocSchema(string)</h3>
+<p>Loads a schema file and stores the segments internally for further use (e.g. for the CreateSegment method)</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-48-1"><a id="__codelineno-48-1" name="__codelineno-48-1" href="#__codelineno-48-1"></a><span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">LoadIdocSchema</span><span class="p">(</span><span class="kt">string</span><span class="w"> </span><span class="n">SchemaFileName</span><span class="p">)</span>
+</span></code></pre></div>
+<h4 id="parameters_2">Parameters</h4>
+<p><code>SchemaFileName</code> <a href="https://learn.microsoft.com/dotnet/api/system.string" target="_blank" rel="noopener">string</a></p>
+<p>Filename</p>
+<h4 id="remarks">Remarks</h4>
+<p>Please use the IDocSchemaGenerator tool that is included in the ERPConnect installation package</p>
+<h3 id="loadidocschemastreamreader"><a id="ERPConnect_Idocs_Idoc_LoadIdocSchema_System_IO_StreamReader_"></a> LoadIdocSchema(StreamReader)</h3>
+<p>Loads a schema file and stores the segments internally for further use (e.g. for the CreateSegment method)</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-49-1"><a id="__codelineno-49-1" name="__codelineno-49-1" href="#__codelineno-49-1"></a><span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">LoadIdocSchema</span><span class="p">(</span><span class="n">StreamReader</span><span class="w"> </span><span class="n">IdocSchemaStreamReader</span><span class="p">)</span>
+</span></code></pre></div>
+<h4 id="parameters_3">Parameters</h4>
+<p><code>IdocSchemaStreamReader</code> <a href="https://learn.microsoft.com/dotnet/api/system.io.streamreader" target="_blank" rel="noopener">StreamReader</a></p>
+<p>StreamReader object that points to an resource file</p>
+<h4 id="remarks_1">Remarks</h4>
+<p>Please use the IDocSchemaGenerator tool that is included in the ERPConnect installation package</p>
+<h3 id="loadidocschematextreader"><a id="ERPConnect_Idocs_Idoc_LoadIdocSchema_System_IO_TextReader_"></a> LoadIdocSchema(TextReader)</h3>
+<p>Loads a schema and stores the segments internally for further use (e.g. for the CreateSegment method)</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-50-1"><a id="__codelineno-50-1" name="__codelineno-50-1" href="#__codelineno-50-1"></a><span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">LoadIdocSchema</span><span class="p">(</span><span class="n">TextReader</span><span class="w"> </span><span class="n">TextReader</span><span class="p">)</span>
+</span></code></pre></div>
+<h4 id="parameters_4">Parameters</h4>
+<p><code>TextReader</code> <a href="https://learn.microsoft.com/dotnet/api/system.io.textreader" target="_blank" rel="noopener">TextReader</a></p>
+<p>TextReader</p>
+<h4 id="remarks_2">Remarks</h4>
+<p>Please use the IDocSchemaGenerator tool that is included in the ERPConnect installation package</p>
+<h3 id="loadplaindatastreamreader"><a id="ERPConnect_Idocs_Idoc_LoadPlainData_System_IO_StreamReader_"></a> LoadPlainData(StreamReader)</h3>
+<p>Loads IDoc from a single plain file. You must make sure to have a shema loaded before calling this function</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-51-1"><a id="__codelineno-51-1" name="__codelineno-51-1" href="#__codelineno-51-1"></a><span class="k">public</span><span class="w"> </span><span class="k">virtual</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">LoadPlainData</span><span class="p">(</span><span class="n">StreamReader</span><span class="w"> </span><span class="n">strm</span><span class="p">)</span>
+</span></code></pre></div>
+<h4 id="parameters_5">Parameters</h4>
+<p><code>strm</code> <a href="https://learn.microsoft.com/dotnet/api/system.io.streamreader" target="_blank" rel="noopener">StreamReader</a></p>
+<p>A StreamReader object</p>
+<h3 id="loadplaindatastring"><a id="ERPConnect_Idocs_Idoc_LoadPlainData_System_String_"></a> LoadPlainData(string)</h3>
+<p>Loads IDoc from a single plain file. You must make sure to have a shema loaded before calling this function</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-52-1"><a id="__codelineno-52-1" name="__codelineno-52-1" href="#__codelineno-52-1"></a><span class="k">public</span><span class="w"> </span><span class="k">virtual</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">LoadPlainData</span><span class="p">(</span><span class="kt">string</span><span class="w"> </span><span class="n">FileName</span><span class="p">)</span>
+</span></code></pre></div>
+<h4 id="parameters_6">Parameters</h4>
+<p><code>FileName</code> <a href="https://learn.microsoft.com/dotnet/api/system.string" target="_blank" rel="noopener">string</a></p>
+<p>Filename</p>
+<h3 id="loadplaindatastringstring"><a id="ERPConnect_Idocs_Idoc_LoadPlainDataString_System_String_"></a> LoadPlainDataString(string)</h3>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-53-1"><a id="__codelineno-53-1" name="__codelineno-53-1" href="#__codelineno-53-1"></a><span class="k">public</span><span class="w"> </span><span class="k">virtual</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">LoadPlainDataString</span><span class="p">(</span><span class="kt">string</span><span class="w"> </span><span class="n">Content</span><span class="p">)</span>
+</span></code></pre></div>
+<h4 id="parameters_7">Parameters</h4>
+<p><code>Content</code> <a href="https://learn.microsoft.com/dotnet/api/system.string" target="_blank" rel="noopener">string</a></p>
+<h3 id="loadxmldatastring"><a id="ERPConnect_Idocs_Idoc_LoadXMLData_System_String_"></a> LoadXMLData(string)</h3>
+<p>Loads a XML IDoc data file.</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-54-1"><a id="__codelineno-54-1" name="__codelineno-54-1" href="#__codelineno-54-1"></a><span class="k">public</span><span class="w"> </span><span class="k">virtual</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">LoadXMLData</span><span class="p">(</span><span class="kt">string</span><span class="w"> </span><span class="n">IdocFile</span><span class="p">)</span>
+</span></code></pre></div>
+<h4 id="parameters_8">Parameters</h4>
+<p><code>IdocFile</code> <a href="https://learn.microsoft.com/dotnet/api/system.string" target="_blank" rel="noopener">string</a></p>
+<p>Filename</p>
+<h4 id="remarks_3">Remarks</h4>
+<p>Please make sure to use LoadIdocSchema or RFCConnection.CreateEmptyIdoc before loading the IDoc data.
+It is not possible to load data without having defined the segments:</p>
+<pre><code class="lang-csharp">R3Connection con = new R3Connection("hamlet",90,"RFCTestUser","pass01","DE","800");
+con.Open(false);
+
+Idoc i = new Idoc();
+i.Connection = con;
+
+i.LoadIdocSchema(@"c:\ORDERS01.xsd");
+i.LoadData(@"c:\Order.xml");
+
+i.Send();
+
+con.Close();</code></pre>
+
+<h3 id="loadxmldatatextreader"><a id="ERPConnect_Idocs_Idoc_LoadXMLData_System_IO_TextReader_"></a> LoadXMLData(TextReader)</h3>
+<p>Loads a XML IDoc data file.</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-55-1"><a id="__codelineno-55-1" name="__codelineno-55-1" href="#__codelineno-55-1"></a><span class="k">public</span><span class="w"> </span><span class="k">virtual</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">LoadXMLData</span><span class="p">(</span><span class="n">TextReader</span><span class="w"> </span><span class="n">IdocFileTextReader</span><span class="p">)</span>
+</span></code></pre></div>
+<h4 id="parameters_9">Parameters</h4>
+<p><code>IdocFileTextReader</code> <a href="https://learn.microsoft.com/dotnet/api/system.io.textreader" target="_blank" rel="noopener">TextReader</a></p>
+<p>XML TextReader</p>
+<h3 id="saveidocschemastring"><a id="ERPConnect_Idocs_Idoc_SaveIdocSchema_System_String_"></a> SaveIdocSchema(string)</h3>
+<p>Saves the schema file of this IDoc type and enhancement to a file</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-56-1"><a id="__codelineno-56-1" name="__codelineno-56-1" href="#__codelineno-56-1"></a><span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">SaveIdocSchema</span><span class="p">(</span><span class="kt">string</span><span class="w"> </span><span class="n">SchemaFileName</span><span class="p">)</span>
+</span></code></pre></div>
+<h4 id="parameters_10">Parameters</h4>
+<p><code>SchemaFileName</code> <a href="https://learn.microsoft.com/dotnet/api/system.string" target="_blank" rel="noopener">string</a></p>
+<h3 id="saveidocschemaxmlwriter"><a id="ERPConnect_Idocs_Idoc_SaveIdocSchema_System_Xml_XmlWriter_"></a> SaveIdocSchema(XmlWriter)</h3>
+<p>Saves the schema file of this IDoc type and enhancement to a XmlWriter object</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-57-1"><a id="__codelineno-57-1" name="__codelineno-57-1" href="#__codelineno-57-1"></a><span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">SaveIdocSchema</span><span class="p">(</span><span class="n">XmlWriter</span><span class="w"> </span><span class="n">XmlWriter</span><span class="p">)</span>
+</span></code></pre></div>
+<h4 id="parameters_11">Parameters</h4>
+<p><code>XmlWriter</code> <a href="https://learn.microsoft.com/dotnet/api/system.xml.xmlwriter" target="_blank" rel="noopener">XmlWriter</a></p>
+<h3 id="saveplaindatastreamwriter"><a id="ERPConnect_Idocs_Idoc_SavePlainData_System_IO_StreamWriter_"></a> SavePlainData(StreamWriter)</h3>
+<p>Writes the whole IDoc to a single file</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-58-1"><a id="__codelineno-58-1" name="__codelineno-58-1" href="#__codelineno-58-1"></a><span class="k">public</span><span class="w"> </span><span class="k">virtual</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">SavePlainData</span><span class="p">(</span><span class="n">StreamWriter</span><span class="w"> </span><span class="n">writer</span><span class="p">)</span>
+</span></code></pre></div>
+<h4 id="parameters_12">Parameters</h4>
+<p><code>writer</code> <a href="https://learn.microsoft.com/dotnet/api/system.io.streamwriter" target="_blank" rel="noopener">StreamWriter</a></p>
+<p>A StreamWriter object</p>
+<h3 id="saveplaindata"><a id="ERPConnect_Idocs_Idoc_SavePlainData"></a> SavePlainData()</h3>
+<p>Writes the whole IDoc to a single file</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-59-1"><a id="__codelineno-59-1" name="__codelineno-59-1" href="#__codelineno-59-1"></a><span class="k">public</span><span class="w"> </span><span class="k">virtual</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="nf">SavePlainData</span><span class="p">()</span>
+</span></code></pre></div>
+<h4 id="returns_3">Returns</h4>
+<p><a href="https://learn.microsoft.com/dotnet/api/system.string" target="_blank" rel="noopener">string</a></p>
+<h3 id="saveplaindatastring"><a id="ERPConnect_Idocs_Idoc_SavePlainData_System_String_"></a> SavePlainData(string)</h3>
+<p>Writes the whole IDoc to a single file</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-60-1"><a id="__codelineno-60-1" name="__codelineno-60-1" href="#__codelineno-60-1"></a><span class="k">public</span><span class="w"> </span><span class="k">virtual</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">SavePlainData</span><span class="p">(</span><span class="kt">string</span><span class="w"> </span><span class="n">FileName</span><span class="p">)</span>
+</span></code></pre></div>
+<h4 id="parameters_13">Parameters</h4>
+<p><code>FileName</code> <a href="https://learn.microsoft.com/dotnet/api/system.string" target="_blank" rel="noopener">string</a></p>
+<p>Filename</p>
+<h3 id="saveplaindatastring-encoding"><a id="ERPConnect_Idocs_Idoc_SavePlainData_System_String_System_Text_Encoding_"></a> SavePlainData(string, Encoding)</h3>
+<p>Writes the whole IDoc to a single file</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-61-1"><a id="__codelineno-61-1" name="__codelineno-61-1" href="#__codelineno-61-1"></a><span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">SavePlainData</span><span class="p">(</span><span class="kt">string</span><span class="w"> </span><span class="n">FileName</span><span class="p">,</span><span class="w"> </span><span class="n">Encoding</span><span class="w"> </span><span class="n">Encoding</span><span class="p">)</span>
+</span></code></pre></div>
+<h4 id="parameters_14">Parameters</h4>
+<p><code>FileName</code> <a href="https://learn.microsoft.com/dotnet/api/system.string" target="_blank" rel="noopener">string</a></p>
+<p>Filename</p>
+<p><code>Encoding</code> <a href="https://learn.microsoft.com/dotnet/api/system.text.encoding" target="_blank" rel="noopener">Encoding</a></p>
+<p>Encoding</p>
+<h3 id="savexmldatatextwriter"><a id="ERPConnect_Idocs_Idoc_SaveXMLData_System_IO_TextWriter_"></a> SaveXMLData(TextWriter)</h3>
+<p>Saves the IDoc to an XML file (including all segments)</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-62-1"><a id="__codelineno-62-1" name="__codelineno-62-1" href="#__codelineno-62-1"></a><span class="k">public</span><span class="w"> </span><span class="k">virtual</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">SaveXMLData</span><span class="p">(</span><span class="n">TextWriter</span><span class="w"> </span><span class="n">IdocFileTextWriter</span><span class="p">)</span>
+</span></code></pre></div>
+<h4 id="parameters_15">Parameters</h4>
+<p><code>IdocFileTextWriter</code> <a href="https://learn.microsoft.com/dotnet/api/system.io.textwriter" target="_blank" rel="noopener">TextWriter</a></p>
+<p>TextWriter</p>
+<h3 id="savexmldatastring"><a id="ERPConnect_Idocs_Idoc_SaveXMLData_System_String_"></a> SaveXMLData(string)</h3>
+<p>Saves the IDoc to an XML file (including all segments)</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-63-1"><a id="__codelineno-63-1" name="__codelineno-63-1" href="#__codelineno-63-1"></a><span class="k">public</span><span class="w"> </span><span class="k">virtual</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">SaveXMLData</span><span class="p">(</span><span class="kt">string</span><span class="w"> </span><span class="n">IdocFileName</span><span class="p">)</span>
+</span></code></pre></div>
+<h4 id="parameters_16">Parameters</h4>
+<p><code>IdocFileName</code> <a href="https://learn.microsoft.com/dotnet/api/system.string" target="_blank" rel="noopener">string</a></p>
+<p>Filename and path</p>
+<h3 id="savexmldatastring-string"><a id="ERPConnect_Idocs_Idoc_SaveXMLData_System_String_System_String_"></a> SaveXMLData(string, string)</h3>
+<p>Saves the IDoc to an XML file (including all segments)</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-64-1"><a id="__codelineno-64-1" name="__codelineno-64-1" href="#__codelineno-64-1"></a><span class="k">public</span><span class="w"> </span><span class="k">virtual</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">SaveXMLData</span><span class="p">(</span><span class="kt">string</span><span class="w"> </span><span class="n">IdocFileName</span><span class="p">,</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">XMLEncoding</span><span class="p">)</span>
+</span></code></pre></div>
+<h4 id="parameters_17">Parameters</h4>
+<p><code>IdocFileName</code> <a href="https://learn.microsoft.com/dotnet/api/system.string" target="_blank" rel="noopener">string</a></p>
+<p>Filename and path</p>
+<p><code>XMLEncoding</code> <a href="https://learn.microsoft.com/dotnet/api/system.string" target="_blank" rel="noopener">string</a></p>
+<p>XML Encoding e.g. ISO-8859-1</p>
+<h3 id="sendstring-string"><a id="ERPConnect_Idocs_Idoc_Send_System_String_System_String_"></a> Send(string, string)</h3>
+<p>Sends the Idoc to the SAP system within a qRFC context of the given TID and inbound queue</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-65-1"><a id="__codelineno-65-1" name="__codelineno-65-1" href="#__codelineno-65-1"></a><span class="k">public</span><span class="w"> </span><span class="k">virtual</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">Send</span><span class="p">(</span><span class="kt">string</span><span class="w"> </span><span class="n">tid</span><span class="p">,</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">queue</span><span class="p">)</span>
+</span></code></pre></div>
+<h4 id="parameters_18">Parameters</h4>
+<p><code>tid</code> <a href="https://learn.microsoft.com/dotnet/api/system.string" target="_blank" rel="noopener">string</a></p>
+<p>Transaction ID</p>
+<p><code>queue</code> <a href="https://learn.microsoft.com/dotnet/api/system.string" target="_blank" rel="noopener">string</a></p>
+<p>Inbound queue</p>
+<h3 id="sendstring"><a id="ERPConnect_Idocs_Idoc_Send_System_String_"></a> Send(string)</h3>
+<p>Sends the Idoc to the SAP system within a tRFC context of the given TID and inbound queue</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-66-1"><a id="__codelineno-66-1" name="__codelineno-66-1" href="#__codelineno-66-1"></a><span class="k">public</span><span class="w"> </span><span class="k">virtual</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">Send</span><span class="p">(</span><span class="kt">string</span><span class="w"> </span><span class="n">tid</span><span class="p">)</span>
+</span></code></pre></div>
+<h4 id="parameters_19">Parameters</h4>
+<p><code>tid</code> <a href="https://learn.microsoft.com/dotnet/api/system.string" target="_blank" rel="noopener">string</a></p>
+<p>Transaction ID</p>
+<h3 id="send"><a id="ERPConnect_Idocs_Idoc_Send"></a> Send()</h3>
+<p>Sends the Idoc to the SAP system</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-67-1"><a id="__codelineno-67-1" name="__codelineno-67-1" href="#__codelineno-67-1"></a><span class="k">public</span><span class="w"> </span><span class="k">virtual</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">Send</span><span class="p">()</span>
+</span></code></pre></div>
+<h3 id="sendandwait"><a id="ERPConnect_Idocs_Idoc_SendAndWait"></a> SendAndWait()</h3>
+<p>Sends the IDocs and waits until the IDocs is processed. You can call GetCurrentStatus after SendAndWait()</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-68-1"><a id="__codelineno-68-1" name="__codelineno-68-1" href="#__codelineno-68-1"></a><span class="k">public</span><span class="w"> </span><span class="k">virtual</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="nf">SendAndWait</span><span class="p">()</span>
+</span></code></pre></div>
+<h4 id="returns_4">Returns</h4>
+<p><a href="https://learn.microsoft.com/dotnet/api/system.boolean" target="_blank" rel="noopener">bool</a></p>
+<p>IDoc is processed successfully true/false</p>
+<h3 id="tostring"><a id="ERPConnect_Idocs_Idoc_ToString"></a> ToString()</h3>
+<p>Returns the idoc as string for debugging purpose</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-69-1"><a id="__codelineno-69-1" name="__codelineno-69-1" href="#__codelineno-69-1"></a><span class="k">public</span><span class="w"> </span><span class="k">override</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="nf">ToString</span><span class="p">()</span>
+</span></code></pre></div>
+<h4 id="returns_5">Returns</h4>
+<p><a href="https://learn.microsoft.com/dotnet/api/system.string" target="_blank" rel="noopener">string</a></p>
+<p>Idoc as string</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+
+
+
+  <form class="md-feedback" name="feedback" hidden>
+    <fieldset>
+      <legend class="md-feedback__title">
+        Was this page helpful?
+      </legend>
+      <div class="md-feedback__inner">
+        <div class="md-feedback__list">
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page was helpful" data-md-value="1">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 12a8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8 8 8 0 0 0 8-8m2 0a10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2a10 10 0 0 1 10 10M10 9.5c0 .8-.7 1.5-1.5 1.5S7 10.3 7 9.5 7.7 8 8.5 8s1.5.7 1.5 1.5m7 0c0 .8-.7 1.5-1.5 1.5S14 10.3 14 9.5 14.7 8 15.5 8s1.5.7 1.5 1.5m-5 7.73c-1.75 0-3.29-.73-4.19-1.81L9.23 14c.45.72 1.52 1.23 2.77 1.23s2.32-.51 2.77-1.23l1.42 1.42c-.9 1.08-2.44 1.81-4.19 1.81Z"/></svg>
+            </button>
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page could be improved" data-md-value="0">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 12a8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8 8 8 0 0 0 8-8m2 0a10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2a10 10 0 0 1 10 10m-6.5-4c.8 0 1.5.7 1.5 1.5s-.7 1.5-1.5 1.5-1.5-.7-1.5-1.5.7-1.5 1.5-1.5M10 9.5c0 .8-.7 1.5-1.5 1.5S7 10.3 7 9.5 7.7 8 8.5 8s1.5.7 1.5 1.5m2 4.5c1.75 0 3.29.72 4.19 1.81l-1.42 1.42C14.32 16.5 13.25 16 12 16s-2.32.5-2.77 1.23l-1.42-1.42C8.71 14.72 10.25 14 12 14Z"/></svg>
+            </button>
+          
+        </div>
+        <div class="md-feedback__note">
+          
+            <div data-md-value="1" hidden>
+              
+              
+                
+              
+              Thanks for your feedback!
+            </div>
+          
+            <div data-md-value="0" hidden>
+              
+              
+                
+              
+              Thank you for your feedback! Help us improve our help and our product by <a href="https://theobald-software.typeform.com/to/CnpfiiIN" target="_blank" rel="noopener">telling us what you're missing</a>.
+            </div>
+          
+        </div>
+      </div>
+    </fieldset>
+  </form>
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2024 Theobald Software GmbH <br> <span style="color:#808080">“The best SAP interface is the one you don’t even notice.” - Patrick Theobald </span>
+    </div>
+  
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/company/theobald-software/" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.youtube.com/user/TheobaldSoftware" target="_blank" rel="noopener" title="www.youtube.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.instagram.com/theobaldsoftware/" target="_blank" rel="noopener" title="www.instagram.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://theobald-software.com/en/newsletter/" target="_blank" rel="noopener" title="theobald-software.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4l217.6 163.2c11.4 8.5 27 8.5 38.4 0l217.6-163.2c12.1-9.1 19.2-23.3 19.2-38.4 0-26.5-21.5-48-48-48H48zM0 176v208c0 35.3 28.7 64 64 64h384c35.3 0 64-28.7 64-64V176L294.4 339.2a63.9 63.9 0 0 1-76.8 0L0 176z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+      <div class="md-consent" data-md-component="consent" id="__consent" hidden>
+        <div class="md-consent__overlay"></div>
+        <aside class="md-consent__inner">
+          <form class="md-consent__form md-grid md-typeset" name="consent">
+            
+
+  
+    
+  
+
+
+
+
+  
+
+
+<h4>Cookie consent</h4>
+<p>We use cookies to recognize your repeated visits and preferences, as well as to measure the effectiveness of our documentation and whether users find what they're searching for. With your consent, you're helping us to make our documentation better.</p>
+<input class="md-toggle" type="checkbox" id="__settings" >
+<div class="md-consent__settings">
+  <ul class="task-list">
+    
+      
+      
+        
+        
+      
+      <li class="task-list-item">
+        <label class="task-list-control">
+          <input type="checkbox" name="analytics" checked>
+          <span class="task-list-indicator"></span>
+          Google Analytics
+        </label>
+      </li>
+    
+  </ul>
+</div>
+<div class="md-consent__controls">
+  
+    
+      <button class="md-button md-button--primary">Accept</button>
+    
+    
+    
+  
+    
+    
+    
+      <label class="md-button" for="__settings">Manage settings</label>
+    
+  
+</div>
+          </form>
+        </aside>
+      </div>
+      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout(function(){document.querySelector("[data-md-component=consent]").hidden=!1},250);var action,form=document.forms.consent;for(action of["submit","reset"])form.addEventListener(action,function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map(function(e){return[e,!0]}))),location.hash="",location.reload()})</script>
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["announce.dismiss", "content.code.copy", "content.code.select", "content.tabs.link", "content.tooltips", "navigation.indexes", "navigation.instant.progress", "navigation.prune", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../../../assets/javascripts/workers/search.1e90e0fb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+  
+      <script src="../../../assets/javascripts/bundle.8e8db93a.min.js"></script>
+      
+    
+  <script src="../../../assets/javascripts/custom.9c11c319.min.js"></script>
+
+  </body>
+</html>
