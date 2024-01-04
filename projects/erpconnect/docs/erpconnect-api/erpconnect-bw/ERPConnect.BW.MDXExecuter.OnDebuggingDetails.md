@@ -1,6 +1,6 @@
 
 Namespace: [ERPConnect.BW](index.md)  
-Assembly: ERPConnect35.dll  
+Assembly: ERPConnectStandard20.dll  
 
 ```csharp
 public delegate void MDXExecuter.OnDebuggingDetails(MDXExecuter Sender, string Message)

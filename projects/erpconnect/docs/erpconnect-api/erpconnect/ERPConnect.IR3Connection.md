@@ -1,6 +1,6 @@
 
 Namespace: [ERPConnect](index.md)  
-Assembly: ERPConnect35.dll  
+Assembly: ERPConnectStandard20.dll  
 
 Represents a connection to a SAP R/3 System
 

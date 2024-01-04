@@ -6,9 +6,9 @@ title: Theobald.Ogc
 
  [CircularString<T\>](Theobald.Ogc.CircularString\-1.md)
 
- [Geometry](Theobald.Ogc.Geometry.md)
-
  [Geometry<T\>](Theobald.Ogc.Geometry\-1.md)
+
+ [Geometry](Theobald.Ogc.Geometry.md)
 
  [LineString<T\>](Theobald.Ogc.LineString\-1.md)
 

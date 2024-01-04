@@ -1,6 +1,6 @@
 
 Namespace: [ERPConnect.BW](index.md)  
-Assembly: ERPConnect35.dll  
+Assembly: ERPConnectStandard20.dll  
 
 This enum represents the SelectionType of a BWVariable
 

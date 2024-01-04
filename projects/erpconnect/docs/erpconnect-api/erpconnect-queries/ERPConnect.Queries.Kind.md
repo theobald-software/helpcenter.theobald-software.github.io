@@ -1,6 +1,6 @@
 
 Namespace: [ERPConnect.Queries](index.md)  
-Assembly: ERPConnect35.dll  
+Assembly: ERPConnectStandard20.dll  
 
 Enum for the two kinds of selection parameters
 

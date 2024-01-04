@@ -98,6 +98,8 @@ title: ERPConnect()
 
  [SlimXmlReader](ERPConnect.SlimXmlReader.md)
 
+ [TlsSettings](ERPConnect.TlsSettings.md)
+
 ### Structs
 
  [AbapDate](ERPConnect.AbapDate.md)
@@ -127,6 +129,8 @@ title: ERPConnect()
  [SNCQualityOfProtection](ERPConnect.SNCQualityOfProtection.md)
 
  [SlimXmlReadResult](ERPConnect.SlimXmlReadResult.md)
+
+ [TraceLevel](ERPConnect.TraceLevel.md)
 
 ### Delegates
 

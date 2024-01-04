@@ -1,6 +1,6 @@
 
 Namespace: [Theobald.Ogc](index.md)  
-Assembly: ERPConnect35.dll  
+Assembly: ERPConnectStandard20.dll  
 
 ```csharp
 public enum WkbByteOrder : byte

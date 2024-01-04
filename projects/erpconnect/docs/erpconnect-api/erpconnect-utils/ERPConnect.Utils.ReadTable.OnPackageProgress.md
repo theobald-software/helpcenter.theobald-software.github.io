@@ -1,6 +1,6 @@
 
 Namespace: [ERPConnect.Utils](index.md)  
-Assembly: ERPConnect35.dll  
+Assembly: ERPConnectStandard20.dll  
 
 ```csharp
 public delegate void ReadTable.OnPackageProgress(ReadTable sender, int packageRowsCount)

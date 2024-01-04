@@ -1,6 +1,6 @@
 
 Namespace: [ERPConnect.Utils](index.md)  
-Assembly: ERPConnect35.dll  
+Assembly: ERPConnectStandard20.dll  
 
 Transaction represents a single SAP transction
 
@@ -15,13 +15,13 @@ public class Transaction
 
 #### Inherited Members
 
-[object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
-[object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
-[object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
-[object.ReferenceEquals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.referenceequals), 
-[object.GetHashCode\(\)](https://learn.microsoft.com/dotnet/api/system.object.gethashcode), 
 [object.GetType\(\)](https://learn.microsoft.com/dotnet/api/system.object.gettype), 
-[object.MemberwiseClone\(\)](https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone)
+[object.MemberwiseClone\(\)](https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone), 
+[object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
+[object.Equals\(object?\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
+[object.Equals\(object?, object?\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
+[object.ReferenceEquals\(object?, object?\)](https://learn.microsoft.com/dotnet/api/system.object.referenceequals), 
+[object.GetHashCode\(\)](https://learn.microsoft.com/dotnet/api/system.object.gethashcode)
 
 ## Constructors
 
@@ -35,7 +35,7 @@ public Transaction(R3Connection Connection)
 
 #### Parameters
 
-`Connection` [R3Connection](../erpconnect/../erpconnect/ERPConnect.R3Connection.md)
+`Connection` [R3Connection](../erpconnect/ERPConnect.R3Connection.md)
 
 A valid R3Connection object
 
@@ -71,7 +71,7 @@ public R3Connection Connection { get; set; }
 
 #### Property Value
 
- [R3Connection](../erpconnect/../erpconnect/ERPConnect.R3Connection.md)
+ [R3Connection](../erpconnect/ERPConnect.R3Connection.md)
 
 ### <a id="ERPConnect_Utils_Transaction_ExecutionMode"></a> ExecutionMode
 

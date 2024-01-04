@@ -1,6 +1,6 @@
 
 Namespace: [ERPConnect](index.md)  
-Assembly: ERPConnect35.dll  
+Assembly: ERPConnectStandard20.dll  
 
 Enum which defines all possible RFC-types
 

@@ -1,6 +1,6 @@
 
 Namespace: [ERPConnect](index.md)  
-Assembly: ERPConnect35.dll  
+Assembly: ERPConnectStandard20.dll  
 
 R3Connection represents a connection to a SAP R/3 System
 
@@ -20,13 +20,13 @@ public class R3Connection : IR3Connection, IDisposable
 
 #### Inherited Members
 
-[object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
-[object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
-[object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
-[object.ReferenceEquals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.referenceequals), 
-[object.GetHashCode\(\)](https://learn.microsoft.com/dotnet/api/system.object.gethashcode), 
 [object.GetType\(\)](https://learn.microsoft.com/dotnet/api/system.object.gettype), 
-[object.MemberwiseClone\(\)](https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone)
+[object.MemberwiseClone\(\)](https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone), 
+[object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
+[object.Equals\(object?\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
+[object.Equals\(object?, object?\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
+[object.ReferenceEquals\(object?, object?\)](https://learn.microsoft.com/dotnet/api/system.object.referenceequals), 
+[object.GetHashCode\(\)](https://learn.microsoft.com/dotnet/api/system.object.gethashcode)
 
 ## Constructors
 
@@ -37,19 +37,6 @@ Initializes a new instance of the R3Connection class
 ```csharp
 public R3Connection()
 ```
-
-### <a id="ERPConnect_R3Connection__ctor_System_String_"></a> R3Connection\(string\)
-
-Obsolete. Please use <xref href="ERPConnect.R3Connection.ParseConnectionString(System.String)" data-throw-if-not-resolved="false"></xref>. Will be removed 2023-10-01.
-
-```csharp
-[Obsolete("Please use ParseConnectionString(). Will be removed 2023-10-01.")]
-public R3Connection(string connectionString)
-```
-
-#### Parameters
-
-`connectionString` [string](https://learn.microsoft.com/dotnet/api/system.string)
 
 ### <a id="ERPConnect_R3Connection__ctor_System_String_System_Int32_System_String_System_String_System_String_System_String_"></a> R3Connection\(string, int, string, string, string, string\)
 
@@ -118,6 +105,16 @@ Logon client
 
 ## Properties
 
+### <a id="ERPConnect_R3Connection_AliasUser"></a> AliasUser
+
+```csharp
+public string AliasUser { get; set; }
+```
+
+#### Property Value
+
+ [string](https://learn.microsoft.com/dotnet/api/system.string)
+
 ### <a id="ERPConnect_R3Connection_CacheMetadata"></a> CacheMetadata
 
 Get / sets whether the meta data of functions, queries etc. is stored and recycled when a new Create...
@@ -147,19 +144,6 @@ public string Client { get; set; }
 
 ```csharp
 public string Codepage { get; }
-```
-
-#### Property Value
-
- [string](https://learn.microsoft.com/dotnet/api/system.string)
-
-### <a id="ERPConnect_R3Connection_ConnectionString"></a> ConnectionString
-
-Obsolete. Please use <xref href="ERPConnect.R3Connection.ParseConnectionString(System.String)" data-throw-if-not-resolved="false"></xref>. Will be removed 2023-10-01.
-
-```csharp
-[Obsolete("Please use ParseConnectionString(). Will be removed 2023-10-01.")]
-public string ConnectionString { get; set; }
 ```
 
 #### Property Value
@@ -355,6 +339,19 @@ public string MessageServer { get; set; }
 
 Required for logon via load balancing
 
+### <a id="ERPConnect_R3Connection_MessageServerService"></a> MessageServerService
+
+Gets or sets the non-standard service the message server listens on.
+Corresponds to NetWeaver connection parameter "MSSERV".
+
+```csharp
+public string MessageServerService { get; set; }
+```
+
+#### Property Value
+
+ [string](https://learn.microsoft.com/dotnet/api/system.string)
+
 ### <a id="ERPConnect_R3Connection_PartnerRelease"></a> PartnerRelease
 
 The release number of the SAP-BASIS of the system
@@ -419,6 +416,20 @@ public SAPEncodingInfo SAPEncodingInfo { get; }
 #### Property Value
 
  [SAPEncodingInfo](ERPConnect.SAPEncodingInfo.md)
+
+### <a id="ERPConnect_R3Connection_SAProuterString"></a> SAProuterString
+
+Gets or sets the parameters to use when the connection should be made
+through a SAProuter.
+Corresponds to NetWeaver connection parameter "SAPROUTER".
+
+```csharp
+public string SAProuterString { get; set; }
+```
+
+#### Property Value
+
+ [string](https://learn.microsoft.com/dotnet/api/system.string)
 
 ### <a id="ERPConnect_R3Connection_SID"></a> SID
 
@@ -485,6 +496,52 @@ public int SystemNumber { get; set; }
 
 Only required when using logon to a single application server
 
+### <a id="ERPConnect_R3Connection_TlsSettings"></a> TlsSettings
+
+Gets or sets TLS settings to use when connecting using WebSockets.
+Corresponds to NetWeaver connection parameters related to TLS.
+Only used when <xref href="ERPConnect.R3Connection.UsesWebSocket" data-throw-if-not-resolved="false"></xref> is set to true and
+using <xref href="ERPConnect.ClientProtocol.NWRFC" data-throw-if-not-resolved="false"></xref>.
+
+```csharp
+public TlsSettings TlsSettings { get; set; }
+```
+
+#### Property Value
+
+ [TlsSettings](ERPConnect.TlsSettings.md)
+
+#### Remarks
+
+SAP systems require you to use TLS (<xref href="ERPConnect.R3Connection.TlsSettings" data-throw-if-not-resolved="false"></xref>) when
+connecting with RFC over WebSocket.
+
+### <a id="ERPConnect_R3Connection_TraceLevel"></a> TraceLevel
+
+Verbosity of NetWeaver RFC library trace messages.
+
+```csharp
+public TraceLevel TraceLevel { get; set; }
+```
+
+#### Property Value
+
+ [TraceLevel](ERPConnect.TraceLevel.md)
+
+### <a id="ERPConnect_R3Connection_UseDeltaManager"></a> UseDeltaManager
+
+Gets or sets whether the delta manager is to be used for (de-)serializing
+TABLES parameters. If unset (null) the default NetWeaver library value is used.
+Corresponds to NetWeaver connection parameter "DELTA".
+
+```csharp
+public bool? UseDeltaManager { get; set; }
+```
+
+#### Property Value
+
+ [bool](https://learn.microsoft.com/dotnet/api/system.boolean)?
+
 ### <a id="ERPConnect_R3Connection_UseGui"></a> UseGui
 
 Defines whether the SAP GUI should be used
@@ -520,6 +577,60 @@ public bool UsesLoadBalancing { get; set; }
 #### Property Value
 
  [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
+
+### <a id="ERPConnect_R3Connection_UsesWebSocket"></a> UsesWebSocket
+
+Gets or sets whether to use RFC over WebSocket. When set to true
+the following properties have to be specified:
+<ul><li><xref href="ERPConnect.R3Connection.WebSocketHost" data-throw-if-not-resolved="false"></xref></li><li><xref href="ERPConnect.R3Connection.WebSocketPort" data-throw-if-not-resolved="false"></xref></li><li><xref href="ERPConnect.R3Connection.TlsSettings" data-throw-if-not-resolved="false"></xref></li></ul>
+
+```csharp
+public bool UsesWebSocket { get; set; }
+```
+
+#### Property Value
+
+ [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
+
+#### Remarks
+
+SAP systems require you to use TLS (<xref href="ERPConnect.R3Connection.TlsSettings" data-throw-if-not-resolved="false"></xref>) when
+connecting with RFC over WebSocket.
+
+### <a id="ERPConnect_R3Connection_WebSocketHost"></a> WebSocketHost
+
+Gets or sets the hostname to use when connecting using WebSockets.
+Corresponds to NetWeaver connection parameter "WSHOST".
+Only used when <xref href="ERPConnect.R3Connection.UsesWebSocket" data-throw-if-not-resolved="false"></xref> is set to true and
+using <xref href="ERPConnect.ClientProtocol.NWRFC" data-throw-if-not-resolved="false"></xref>.
+
+```csharp
+public string WebSocketHost { get; set; }
+```
+
+#### Property Value
+
+ [string](https://learn.microsoft.com/dotnet/api/system.string)
+
+#### Remarks
+
+SAP systems require you to use TLS (<xref href="ERPConnect.R3Connection.TlsSettings" data-throw-if-not-resolved="false"></xref>) when
+connecting with RFC over WebSocket.
+
+### <a id="ERPConnect_R3Connection_WebSocketPort"></a> WebSocketPort
+
+Gets or sets the WebSocket port to use when connecting using WebSockets.
+Corresponds to NetWeaver connection parameter "WSPORT".
+Only used when <xref href="ERPConnect.R3Connection.UsesWebSocket" data-throw-if-not-resolved="false"></xref> is set to true and
+using <xref href="ERPConnect.ClientProtocol.NWRFC" data-throw-if-not-resolved="false"></xref>.
+
+```csharp
+public ushort WebSocketPort { get; set; }
+```
+
+#### Property Value
+
+ [ushort](https://learn.microsoft.com/dotnet/api/system.uint16)
 
 ### <a id="ERPConnect_R3Connection_X509Certificate"></a> X509Certificate
 
@@ -835,6 +946,20 @@ public void Execute(RFCFunction function)
 
 `function` [RFCFunction](ERPConnect.RFCFunction.md)
 
+### <a id="ERPConnect_R3Connection_FromConnectionString_System_String_"></a> FromConnectionString\(string\)
+
+```csharp
+public static R3Connection FromConnectionString(string connectionString)
+```
+
+#### Parameters
+
+`connectionString` [string](https://learn.microsoft.com/dotnet/api/system.string)
+
+#### Returns
+
+ [R3Connection](ERPConnect.R3Connection.md)
+
 ### <a id="ERPConnect_R3Connection_GetConnectionStringParameterValue_System_String_System_String_"></a> GetConnectionStringParameterValue\(string, string\)
 
 Extracts the value of a parameter from a connection string
@@ -859,26 +984,7 @@ The name of the parameter of which the value should be extracted
 
 The value of the parameter
 
-### <a id="ERPConnect_R3Connection_GetSSOTicket_System_Boolean_"></a> GetSSOTicket\(bool\)
-
-Obsolete. Please set <xref href="ERPConnect.R3Connection.UsesLoadBalancing" data-throw-if-not-resolved="false"></xref>. Will be removed 2023-10-01.
-
-```csharp
-[Obsolete("Please set UsesLoadBalancing property instead.")]
-public string GetSSOTicket(bool loadBalancing)
-```
-
-#### Parameters
-
-`loadBalancing` [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
-
-#### Returns
-
- [string](https://learn.microsoft.com/dotnet/api/system.string)
-
 ### <a id="ERPConnect_R3Connection_GetSSOTicket"></a> GetSSOTicket\(\)
-
-Authenticates with user and password and retrieves a SAP logon ticket
 
 ```csharp
 public string GetSSOTicket()
@@ -887,8 +993,6 @@ public string GetSSOTicket()
 #### Returns
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
-
-SSO ticket
 
 ### <a id="ERPConnect_R3Connection_IsSystemEditable"></a> IsSystemEditable\(\)
 
@@ -928,60 +1032,6 @@ public void Open()
 
 For opening via Load Balancing please set <xref href="ERPConnect.R3Connection.UsesLoadBalancing" data-throw-if-not-resolved="false"></xref> = true
 
-### <a id="ERPConnect_R3Connection_Open_System_String_"></a> Open\(string\)
-
-Obsolete. Please use <xref href="ERPConnect.R3Connection.ParseConnectionString(System.String)" data-throw-if-not-resolved="false"></xref>. Will be removed 2023-10-01.
-
-```csharp
-[Obsolete("Please use ParseConnectionString(). Will be removed 2023-10-01.")]
-public void Open(string rfcConnectionString)
-```
-
-#### Parameters
-
-`rfcConnectionString` [string](https://learn.microsoft.com/dotnet/api/system.string)
-
-### <a id="ERPConnect_R3Connection_Open_System_Boolean_"></a> Open\(bool\)
-
-Obsolete. Please set <xref href="ERPConnect.R3Connection.UsesLoadBalancing" data-throw-if-not-resolved="false"></xref>. Will be removed 2023-10-01.
-
-```csharp
-[Obsolete("Please set UsesLoadBalancing property instead. Will be removed 2023-10-01.")]
-public void Open(bool useLoadBalancing)
-```
-
-#### Parameters
-
-`useLoadBalancing` [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
-
-### <a id="ERPConnect_R3Connection_OpenSSO_System_String_System_Boolean_"></a> OpenSSO\(string, bool\)
-
-Obsolete. Please set <xref href="ERPConnect.R3Connection.LogonTicket" data-throw-if-not-resolved="false"></xref> and <xref href="ERPConnect.R3Connection.UsesLoadBalancing" data-throw-if-not-resolved="false"></xref>. Will be removed 2023-10-01.
-
-```csharp
-[Obsolete("Please set LogonTicket and UsesLoadBalancing properties instead. Will be removed 2023-10-01.")]
-public void OpenSSO(string ticket, bool loadBalancing)
-```
-
-#### Parameters
-
-`ticket` [string](https://learn.microsoft.com/dotnet/api/system.string)
-
-`loadBalancing` [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
-
-### <a id="ERPConnect_R3Connection_OpenSSO_System_String_"></a> OpenSSO\(string\)
-
-Obsolete. Please set <xref href="ERPConnect.R3Connection.LogonTicket" data-throw-if-not-resolved="false"></xref>. Will be removed 2023-10-01.
-
-```csharp
-[Obsolete("Please set LogonTicket property instead. Will be removed 2023-10-01.")]
-public void OpenSSO(string ticket)
-```
-
-#### Parameters
-
-`ticket` [string](https://learn.microsoft.com/dotnet/api/system.string)
-
 ### <a id="ERPConnect_R3Connection_ParseConnectionString_System_String_"></a> ParseConnectionString\(string\)
 
 Parses a connection string and sets all properties accordingly
@@ -1015,19 +1065,6 @@ Whether the operation was successful. No exception is thrown
 #### Remarks
 
 Marks the connection as closed if the operation is not successful.
-
-### <a id="ERPConnect_R3Connection_SetAbapDebug_System_Boolean_"></a> SetAbapDebug\(bool\)
-
-Obsolete. Please use external breakpoints in ABAP debugger instead. Will be removed 2023-10-01.
-
-```csharp
-[Obsolete("Please use external breakpoints in ABAP debugger instead. Will be removed 2023-10-01.")]
-public void SetAbapDebug(bool enabled)
-```
-
-#### Parameters
-
-`enabled` [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
 
 ### <a id="ERPConnect_R3Connection_ToConnectionString"></a> ToConnectionString\(\)
 

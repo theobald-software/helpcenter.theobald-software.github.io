@@ -1,12 +1,12 @@
 
 Namespace: [ERPConnect.Linq](index.md)  
-Assembly: ERPConnect35.dll  
+Assembly: ERPConnectStandard20.dll  
 
 This attribute is used to set the original column name.
 
 ```csharp
 [AttributeUsage(AttributeTargets.Property, AllowMultiple = false)]
-public class ERPColumnAttribute : Attribute, _Attribute
+public class ERPColumnAttribute : Attribute
 ```
 
 #### Inheritance
@@ -14,10 +14,6 @@ public class ERPColumnAttribute : Attribute, _Attribute
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
 [Attribute](https://learn.microsoft.com/dotnet/api/system.attribute) ← 
 [ERPColumnAttribute](ERPConnect.Linq.ERPColumnAttribute.md)
-
-#### Implements
-
-[\_Attribute](https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.\_attribute)
 
 #### Inherited Members
 
@@ -53,18 +49,18 @@ public class ERPColumnAttribute : Attribute, _Attribute
 [Attribute.IsDefined\(Assembly, Type, bool\)](https://learn.microsoft.com/dotnet/api/system.attribute.isdefined\#system\-attribute\-isdefined\(system\-reflection\-assembly\-system\-type\-system\-boolean\)), 
 [Attribute.GetCustomAttribute\(Assembly, Type\)](https://learn.microsoft.com/dotnet/api/system.attribute.getcustomattribute\#system\-attribute\-getcustomattribute\(system\-reflection\-assembly\-system\-type\)), 
 [Attribute.GetCustomAttribute\(Assembly, Type, bool\)](https://learn.microsoft.com/dotnet/api/system.attribute.getcustomattribute\#system\-attribute\-getcustomattribute\(system\-reflection\-assembly\-system\-type\-system\-boolean\)), 
-[Attribute.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.attribute.equals), 
+[Attribute.Equals\(object?\)](https://learn.microsoft.com/dotnet/api/system.attribute.equals), 
 [Attribute.GetHashCode\(\)](https://learn.microsoft.com/dotnet/api/system.attribute.gethashcode), 
-[Attribute.Match\(object\)](https://learn.microsoft.com/dotnet/api/system.attribute.match), 
+[Attribute.Match\(object?\)](https://learn.microsoft.com/dotnet/api/system.attribute.match), 
 [Attribute.IsDefaultAttribute\(\)](https://learn.microsoft.com/dotnet/api/system.attribute.isdefaultattribute), 
 [Attribute.TypeId](https://learn.microsoft.com/dotnet/api/system.attribute.typeid), 
-[object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
-[object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
-[object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
-[object.ReferenceEquals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.referenceequals), 
-[object.GetHashCode\(\)](https://learn.microsoft.com/dotnet/api/system.object.gethashcode), 
 [object.GetType\(\)](https://learn.microsoft.com/dotnet/api/system.object.gettype), 
-[object.MemberwiseClone\(\)](https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone)
+[object.MemberwiseClone\(\)](https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone), 
+[object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
+[object.Equals\(object?\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
+[object.Equals\(object?, object?\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
+[object.ReferenceEquals\(object?, object?\)](https://learn.microsoft.com/dotnet/api/system.object.referenceequals), 
+[object.GetHashCode\(\)](https://learn.microsoft.com/dotnet/api/system.object.gethashcode)
 
 ## Constructors
 

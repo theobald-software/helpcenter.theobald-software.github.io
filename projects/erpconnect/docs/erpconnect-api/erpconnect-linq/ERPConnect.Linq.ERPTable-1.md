@@ -1,11 +1,11 @@
 
 Namespace: [ERPConnect.Linq](index.md)  
-Assembly: ERPConnect35.dll  
+Assembly: ERPConnectStandard20.dll  
 
 Represents a table for a particular type in the underlying SAP system database.
 
 ```csharp
-public class ERPTable<TEntity> : IOrderedQueryable<TEntity>, IQueryable<TEntity>, IEnumerable<TEntity>, IOrderedQueryable, IQueryable, IEnumerable, IQueryProvider, IListSource
+public class ERPTable<TEntity> : IOrderedQueryable<TEntity>, IOrderedQueryable, IQueryable<TEntity>, IEnumerable<TEntity>, IQueryable, IEnumerable, IQueryProvider, IListSource
 ```
 
 #### Type Parameters
@@ -20,9 +20,9 @@ public class ERPTable<TEntity> : IOrderedQueryable<TEntity>, IQueryable<TEntity>
 #### Implements
 
 [IOrderedQueryable<TEntity\>](https://learn.microsoft.com/dotnet/api/system.linq.iorderedqueryable\-1), 
+[IOrderedQueryable](https://learn.microsoft.com/dotnet/api/system.linq.iorderedqueryable), 
 [IQueryable<TEntity\>](https://learn.microsoft.com/dotnet/api/system.linq.iqueryable\-1), 
 [IEnumerable<TEntity\>](https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable\-1), 
-[IOrderedQueryable](https://learn.microsoft.com/dotnet/api/system.linq.iorderedqueryable), 
 [IQueryable](https://learn.microsoft.com/dotnet/api/system.linq.iqueryable), 
 [IEnumerable](https://learn.microsoft.com/dotnet/api/system.collections.ienumerable), 
 [IQueryProvider](https://learn.microsoft.com/dotnet/api/system.linq.iqueryprovider), 
@@ -30,13 +30,13 @@ public class ERPTable<TEntity> : IOrderedQueryable<TEntity>, IQueryable<TEntity>
 
 #### Inherited Members
 
-[object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
-[object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
-[object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
-[object.ReferenceEquals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.referenceequals), 
-[object.GetHashCode\(\)](https://learn.microsoft.com/dotnet/api/system.object.gethashcode), 
 [object.GetType\(\)](https://learn.microsoft.com/dotnet/api/system.object.gettype), 
-[object.MemberwiseClone\(\)](https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone)
+[object.MemberwiseClone\(\)](https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone), 
+[object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
+[object.Equals\(object?\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
+[object.Equals\(object?, object?\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
+[object.ReferenceEquals\(object?, object?\)](https://learn.microsoft.com/dotnet/api/system.object.referenceequals), 
+[object.GetHashCode\(\)](https://learn.microsoft.com/dotnet/api/system.object.gethashcode)
 
 ## Constructors
 

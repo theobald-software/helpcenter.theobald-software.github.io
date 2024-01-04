@@ -1,6 +1,6 @@
 
 Namespace: [ERPConnect.Queries](index.md)  
-Assembly: ERPConnect35.dll  
+Assembly: ERPConnectStandard20.dll  
 
 Enum for options for including or excluding values of ranges.
 

@@ -1,6 +1,6 @@
 
 Namespace: [ERPConnect](index.md)  
-Assembly: ERPConnect35.dll  
+Assembly: ERPConnectStandard20.dll  
 
 ```csharp
 public delegate void RFCServer.OnUnknownIncomingFunction(RFCServer sender, string functionName, ref bool ignore)
