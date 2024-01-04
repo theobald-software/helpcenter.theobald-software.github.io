@@ -4,9 +4,8 @@
 site_name: Xtract for Alteryx Helpcenter
 #site_url: http://erpconnect.theobald-software.com/
 #site_author: Valerie Schipka
-# site_description: >-
-#  Write your documentation in Markdown and create a professional static site in
-#  minutes – searchable, customizable, in 60+ languages, for all devices
+site_description: >-
+  Integrate your SAP data into Alteryx with the Xtract for Alteryx drag & drop toolbox for the Alteryx Designer.
 
 # Repository
 # repo_name: theobald-software/helpcenter.theobald-software.github.io
@@ -24,7 +23,7 @@ theme:
     # - content.action.edit # adds an edit button to the pages
     # - content.action.view # adds a view source button to the pages
      - content.code.copy # adds copy button in code blocks
-     - content.code.select # adds select button in code blocks
+    # - content.code.select # adds select button in code blocks
      - content.tabs.link # adds anchors when switching tabs
      - content.tooltips # ebables adding tooltips to links
     # - header.autohide # hides the header when scrolling down
@@ -58,7 +57,7 @@ theme:
       accent: custom
       toggle:
         icon: material/brightness-7
-        name: Switch to system preference
+        name: Switch to light mode
   font:
     text: Poppins
     code: Roboto Mono
@@ -80,16 +79,16 @@ plugins:
   - privacy:
       links_attr_map:
         target: _blank # opens all external links in new tabs
-  - meta
+  - meta # define front matter of multiple ,md files in .meta.yml file 
   - search:
       separator: '[\s\-,:!=\[\]()"/]+'
-  - typeset
-  - awesome-pages
+  - typeset # preserve format of titles and headlines in navigation and toc
+  - awesome-pages # define navigation in .pages files
   #- macros:
   #    include_dir: includes
   #- swagger-ui-tag
   #- glightbox #image zoom
-  - tags
+  - tags # enables tags in front matter
 
 # Continuous integration
   - group:
@@ -102,6 +101,7 @@ plugins:
          - minify:
              minify_html: true
 
+# Extensions for Markdown Syntax  
 markdown_extensions:
   - toc:
       toc_depth: 3 # define the depth of headlines for the table of content
@@ -136,13 +136,12 @@ markdown_extensions:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
-
 # Additional configuration
 extra:
   status:
     new: Recently added
     deprecated: Deprecated
-    beta: Beta
+    beta: Still in beta
   generator: false #footer display Made with Material for MkDocs
   consent:
     title: Cookie consent
@@ -170,12 +169,16 @@ extra:
   social:
     - icon: fontawesome/brands/linkedin 
       link: https://www.linkedin.com/company/theobald-software/
+      name: LinkedIn
     - icon: fontawesome/brands/youtube 
       link: https://www.youtube.com/user/TheobaldSoftware
+      name: Youtube
     - icon: fontawesome/brands/instagram 
       link: https://www.instagram.com/theobaldsoftware/
+      name: Instagram
     - icon: fontawesome/solid/envelope
       link: https://theobald-software.com/en/newsletter/
+      name: Newsletter
   #product: Xtract for Alteryx
-  #variable: SSIS variable
-  #variables: SSIS variables
+  #variable: runtime parameter
+  #variables: runtime parameters

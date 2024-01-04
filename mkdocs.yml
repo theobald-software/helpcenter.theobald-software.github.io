@@ -5,8 +5,7 @@ site_name: Theobald Software Helpcenter
 site_url: https://helpcenter.theobald-software.com/
 #site_author: Valerie Schipka
 #site_description: >-
-#  Write your documentation in Markdown and create a professional static site in
-#  minutes – searchable, customizable, in 60+ languages, for all devices
+#  Write your documentation in Markdown and create a professional static site.
 
 # Repository
 repo_name: theobald-software/helpcenter.theobald-software.github.io
@@ -21,19 +20,8 @@ theme:
   custom_dir: overrides # overrides enable for announcements
   features:
      - content.tooltips # ebables adding tooltips to links
-    # - header.autohide # hides the header when scrolling down
      - navigation.expand # displays all pages in the navigation by default
-    # - navigation.footer
      - navigation.indexes # adds landing pages for groups (index.md)
-    # - navigation.instant # load faster (no page reload for internal links)
-    # - navigation.instant.prefetch # load faster (start loading content when hovering)
-    # - navigation.instant.progress # enables a progress indicator 
-    # - navigation.path # adds breadcrumbs
-    # - navigation.prune # renders only HTML files of pages that are visible in the navigation
-    # - navigation.sections # no groups in the navigation
-    # - navigation.tabs
-    # - navigation.tabs.sticky
-    # - navigation.top # add a "back to top" button
   palette:
     - scheme: default
       primary: black
@@ -46,7 +34,7 @@ theme:
       accent: red
       toggle:
         icon: material/brightness-7
-        name: Switch to system preference
+        name: Switch to light mode
   font:
     text: Poppins
     code: Roboto Mono
@@ -66,15 +54,15 @@ plugins:
   #    include_dir: includes
   - projects:
       projects_dir: projects
-      cache: true
-      hoisting: true
+      #cache: false
+      #hoisting: true
       #projects_config_transform: !!python/name:projects.transform
   
 # Continuous integration
 #  - group:
  #     enabled: !ENV CI
 #      plugins:
-#         - optimize # compresses images and files
+#        - optimize # compresses images and files
 #        - minify: # minifies HTML by stripping all whitespace from the generated documentation
 #            minify_html: true
 
@@ -84,14 +72,18 @@ extra:
   social:
     - icon: fontawesome/brands/linkedin 
       link: https://www.linkedin.com/company/theobald-software/
+      name: LinkedIn
     - icon: fontawesome/brands/youtube 
       link: https://www.youtube.com/user/TheobaldSoftware
+      name: Youtube
     - icon: fontawesome/brands/instagram 
       link: https://www.instagram.com/theobaldsoftware/
+      name: Instagram
     - icon: fontawesome/solid/envelope
       link: https://theobald-software.com/en/newsletter/
+      name: Newsletter
    
-# Extensions
+# Extensions for Markdown Syntax  
 markdown_extensions:
   - abbr
   - admonition
