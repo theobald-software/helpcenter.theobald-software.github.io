@@ -240,8 +240,9 @@ The following sample code shows how to use the methods of the *ConnectionPool* c
 The following console program shows how to test and apply the connection pool class.
 
 How it works:
+
 - First 3 separate threads are started. 
-- After pressing Enter 3 more threads are started. 
+- After pressing **[Enter]** 3 more threads are started. 
 - The timer shows the current number of active connections.
 - Depending on how many threads have already finished after the new ones have been started, the connections are recycled or newly connected.
 

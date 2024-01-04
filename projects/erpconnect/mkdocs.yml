@@ -86,7 +86,7 @@ plugins:
   #- swagger-ui-tag
   #- glightbox #image zoom
   - tags
-  - git-revision-date-localized
+  #- git-revision-date-localized
   #- with-pdf: # creates .pdf, see https://pypi.org/project/mkdocs-with-pdf/
   #    author: Dec 2023
   #    copyright: Copyright &copy; 2024 Theobald Software GmbH
