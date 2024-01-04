@@ -85,8 +85,8 @@ plugins:
       separator: '[\s\-,:!=\[\]()"/]+'
   - typeset
   - awesome-pages
-  - macros:
-      include_dir: includes
+  #- macros:
+  #    include_dir: includes
   - swagger-ui-tag
   #- glightbox #image zoom
   - tags
@@ -176,6 +176,6 @@ extra:
       link: https://www.instagram.com/theobaldsoftware/
     - icon: fontawesome/solid/envelope
       link: https://theobald-software.com/en/newsletter/
-  product: yunIO
+  #product: yunIO
   #variable: SSIS variable
   #variables: SSIS variables

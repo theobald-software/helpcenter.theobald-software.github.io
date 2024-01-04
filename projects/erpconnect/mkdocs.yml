@@ -81,8 +81,8 @@ plugins:
       separator: '[\s\-,:!=\[\]()"/]+'
   - typeset
   - awesome-pages
-  - macros:
-      include_dir: includes # ../../includes for ERPConnect only
+  #- macros:
+  #    include_dir: includes # ../../includes for ERPConnect only
   #- swagger-ui-tag
   #- glightbox #image zoom
   - tags
