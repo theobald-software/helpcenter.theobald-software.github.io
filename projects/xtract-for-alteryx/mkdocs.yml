@@ -151,7 +151,7 @@ extra:
       make our documentation better.
   analytics:
     provider: google
-    property: !ENV GOOGLE_ANALYTICS_KEY
+    property: G-GVBJSXCV3V
     feedback:
       title: Was this page helpful?
       ratings:

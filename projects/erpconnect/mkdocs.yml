@@ -159,7 +159,7 @@ extra:
       We use cookies to measure the effectiveness of our documentation and whether users
       find what they're searching for. With your consent, you're helping us to
       make our documentation better.
-    analytics:
+  analytics:
     provider: google
     property: G-GVBJSXCV3V
     feedback:
