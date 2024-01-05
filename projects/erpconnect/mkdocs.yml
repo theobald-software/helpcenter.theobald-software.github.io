@@ -1,5 +1,4 @@
 # Copyright (c) 2016-2023 Martin Donath <martin.donath@squidfunk.com>
-
 # Project information
 site_name: ERPConnect Helpcenter
 #site_url: https://helpcenter.theobald-software.com/erpconnect/
@@ -10,10 +9,8 @@ site_description: >-
 # Repository
 # repo_name: theobald-software/helpcenter.theobald-software.github.io
 # repo_url: https://github.com/theobald-software/oh.theobald-software.github.io.git
-
 # Copyright
 copyright: Copyright &copy; 2024 Theobald Software GmbH <br> <span style="color:#808080">“The best SAP interface is the one you don’t even notice.” - Patrick Theobald </span>
-
 # Configuration
 theme:
   name: material
@@ -89,7 +86,7 @@ plugins:
   #- swagger-ui-tag # enables OpenAPI elements in docu
   #- glightbox #image zoom
   #- tags # enables tags in front matter
-  - git-revision-date-localized # adds information when pages were last updated
+  #- git-revision-date-localized # adds information when pages were last updated
   #- with-pdf: # creates .pdf, see https://pypi.org/project/mkdocs-with-pdf/
   #    author: Dec 2023
   #    copyright: Copyright &copy; 2024 Theobald Software GmbH
@@ -108,12 +105,12 @@ plugins:
   - group:
       enabled: !ENV CI
       plugins:
-        # - git-revision-date-localized # adds information when pages were last updated
+        - git-revision-date-localized # adds information when pages were last updated
         #enable_creation_date: true
         #type: timeago
-#        - optimize
-         - minify:
-             minify_html: true
+        - optimize
+        - minify:
+            minify_html: true
 # Extensions for Markdown Syntax            
 markdown_extensions:
   - toc:
@@ -159,13 +156,12 @@ extra:
   consent:
     title: Cookie consent
     description: >- 
-      We use cookies to recognize your repeated visits and preferences, as well
-      as to measure the effectiveness of our documentation and whether users
+      We use cookies to measure the effectiveness of our documentation and whether users
       find what they're searching for. With your consent, you're helping us to
       make our documentation better.
-  analytics:
+    analytics:
     provider: google
-    property: !ENV GOOGLE_ANALYTICS_KEY
+    property: G-GVBJSXCV3V
     feedback:
       title: Was this page helpful?
       ratings:

@@ -4,34 +4,34 @@
 site_name: Theobald Software Helpcenter
 site_url: https://helpcenter.theobald-software.com/
 #site_author: Valerie Schipka
-#site_description: >-
-#  Write your documentation in Markdown and create a professional static site.
+site_description: >-
+  The Theobald Software HelpCenters contains all documentation about our products.
 
 # Repository
 repo_name: theobald-software/helpcenter.theobald-software.github.io
 #repo_url: https://github.com/theobald-software/helpcenter.theobald-software.github.io.git
 
 # Copyright
-copyright: Copyright &copy; 2024 Theobald Software GmbH <br> <span style="color:#808080">“The best SAP interface is the one you don’t even notice.” - Patrick Theobald </span>
+copyright: Copyright &copy; 2024 Theobald Software GmbH <br><span style="color:#808080">“The best SAP interface is the one you don’t even notice.” - Patrick Theobald </span>
 
 # Configuration
 theme:
   name: material
   custom_dir: overrides # overrides enable for announcements
   features:
-     - content.tooltips # ebables adding tooltips to links
+     - content.tooltips # enables adding tooltips to links
      - navigation.expand # displays all pages in the navigation by default
      - navigation.indexes # adds landing pages for groups (index.md)
   palette:
     - scheme: default
       primary: black
-      accent: red
+      accent: custom
       toggle:
         icon: material/brightness-4
         name: Switch to dark mode
     - scheme: slate
       primary: black
-      accent: red
+      accent: custom
       toggle:
         icon: material/brightness-7
         name: Switch to light mode
@@ -43,6 +43,7 @@ theme:
 
 # Custom CSS
 extra_css:
+  - assets/stylesheets/extra.css
   - assets/stylesheets/neoteroi-cards.css 
 
 # Plugins
@@ -50,8 +51,6 @@ plugins:
   - meta
   - typeset
   - awesome-pages
-  #- macros:
-  #    include_dir: includes
   - projects:
       projects_dir: projects
       #cache: false
@@ -59,12 +58,12 @@ plugins:
       #projects_config_transform: !!python/name:projects.transform
   
 # Continuous integration
-#  - group:
- #     enabled: !ENV CI
-#      plugins:
-#        - optimize # compresses images and files
-#        - minify: # minifies HTML by stripping all whitespace from the generated documentation
-#            minify_html: true
+  - group:
+      enabled: !ENV CI
+      plugins:
+        - optimize # compresses images and files
+        - minify: # minifies HTML by stripping all whitespace from the generated documentation
+            minify_html: true
 
 # Additional configuration
 extra:
@@ -93,7 +92,7 @@ markdown_extensions:
   - tables
   - toc:
       toc_depth: 3
-      permalink: true
+      #permalink: true
   - pymdownx.betterem: #improves bold/italic formatting (https://facelessuser.github.io/pymdown-extensions/extensions/betterem/)
       smart_enable: all
   - pymdownx.details #unfolding content, e.g., FAQs (https://facelessuser.github.io/pymdown-extensions/extensions/details/)
