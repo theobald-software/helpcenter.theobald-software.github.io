@@ -11,17 +11,11 @@
   --md-primary-fg-color--dark:  #7a1b21;
   --md-accent-fg-color: FF003C;
   */
-  
-.md-typeset .admonition,
-.md-typeset details {
-  border-width: 0;
-  border-left-width: 4px;
-}
+
 
 /* Grid sets the width of the main content */
 .md-grid {
-  max-width: initial; 
-  padding: 0 120px 0 120px;
+  max-width: 1500px; 
 }
 
 }
