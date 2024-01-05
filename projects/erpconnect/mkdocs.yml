@@ -108,7 +108,7 @@ plugins:
         - git-revision-date-localized # adds information when pages were last updated
         #enable_creation_date: true
         #type: timeago
-        - optimize
+        #- optimize
         - minify:
             minify_html: true
 # Extensions for Markdown Syntax            

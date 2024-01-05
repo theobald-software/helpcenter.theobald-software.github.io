@@ -61,7 +61,7 @@ plugins:
   - group:
       enabled: !ENV CI
       plugins:
-        - optimize # compresses images and files
+        #- optimize # compresses images and files
         - minify: # minifies HTML by stripping all whitespace from the generated documentation
             minify_html: true
 
