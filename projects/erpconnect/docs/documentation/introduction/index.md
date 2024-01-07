@@ -5,7 +5,7 @@ description: Prerequisites and Installation
 
 <div class="grid cards" markdown>
 
--   ![img](../../assets/theo-thumbs.png){ .lg .middle width="30px"} This section shows how to use ERPConnect.
+-   ![img](../../assets/theo-thumbs.png){ .lg .middle width="30px"} This section contains a documentation that shows how to use ERPConnect.
 
 </div>
 

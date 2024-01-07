@@ -10,7 +10,7 @@ hide:
 
 </div>
 
-### Installation and Setup
+### Installation
 
 1. [Download](https://theobald-software.com/testversion-herunterladen) a 30 days trial version of ERPConnect.
 2. Run the ERPConnect executable to install ERPConnect.

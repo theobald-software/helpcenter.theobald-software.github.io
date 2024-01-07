@@ -9,7 +9,7 @@ hide:
 
 <div class="grid cards" markdown>
 
--   ![img](assets/theo-thumbs.png){ .lg .middle width="30px"} This section contains a list of software updates for ERPConnect.
+-   ![img](assets/theo-thumbs.png){ .lg .middle width="30px"} This section contains a version history for ERPConnect.
 
 </div>
 
