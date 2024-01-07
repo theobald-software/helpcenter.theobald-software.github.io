@@ -4,7 +4,11 @@ hide:
   - navigation
 ---
 
-This section shows how to install and set up ERPConnect.
+<div class="grid cards" markdown>
+
+-   ![img](assets/theo-thumbs.png){ .lg .middle width="30px"} This section shows how to install and set up ERPConnect for the first time.
+
+</div>
 
 ### Installation and Setup
 

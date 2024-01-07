@@ -2,6 +2,11 @@
 title: Samples
 ---
 
+<div class="grid cards" markdown>
+
+-   ![img](../assets/theo-thumbs.png){ .lg .middle width="30px"} This section contains code samples and use cases for ERPConnect.
+
+</div>
 
 ### SAP Connection
 

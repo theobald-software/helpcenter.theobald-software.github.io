@@ -1,7 +1,15 @@
 ---
-title: About ERPConnect
+title: Introduction
 description: Prerequisites and Installation
 ---
+
+<div class="grid cards" markdown>
+
+-   ![img](../../assets/theo-thumbs.png){ .lg .middle width="30px"} This section shows how to use ERPConnect.
+
+</div>
+
+### About ERPConnect
 
 ERPConnect is a flexible and modular .NET library that has been certified by SAP for integration with SAP ECC and SAP S/4HANA.
 

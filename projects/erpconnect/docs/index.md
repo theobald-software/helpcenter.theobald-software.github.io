@@ -9,84 +9,58 @@ hide:
 
 # Welcome to the ERPConnect HelpCenter
 
+<div class="grid cards" markdown>
 
-<!-- termynal: {"prompt_literal_start": [">"], title: ERPConnect} -->
+-   ![img](assets/theo-thumbs.png){ .lg width="30px"} Hi, I'm Theo. I'll be your guide.
+
+</div>
 
 <!--
+<div class="grid cards" markdown>
 
-```sh
-> Welcome to ERPConnect
-How can we help you?
-```
+-   [:material-download-circle: Download ERPConnect](https://my.theobald-software.com/)
+
+-   [:material-update: Latest updates](changelog.md)
+
+-   [:material-run-fast: How to get started](quick-start.md)
+
+-   [:material-file-document-outline: Code samples and use cases](samples/index.md)
+
+-   [:material-lightbulb: Common Errors](https://support.theobald-software.com/helpdesk/KB)
+
+-   [:material-email: Contact Support](https://support.theobald-software.com/helpdesk)
+
+-   [:material-information: Product Information](https://theobald-software.com/en/erpconnect/)
+
+-   [:material-comment-quote: Feedback](https://theobald-software.typeform.com/to/CnpfiiIN)
+
+</div>
 -->
 
 <div class="grid cards" markdown>
 
--   [:material-download-circle: Download latest software version](https://my.theobald-software.com/)
+-   **Update ERPConnect:**
 
--   [:material-run-fast: How to get started](quick-start.md)
+	[:material-download-circle: Download ERPConnect](https://my.theobald-software.com/)<br>
+    [:material-update: Latest updates](changelog.md)
+	
+-   **Ressources:**
 
--   [:material-update: Latest updates](changelog.md)
+	[:material-run-fast: How to get started](quick-start.md)<br>
+    [:material-file-document-outline: Code samples and use cases](samples/index.md)
+	
+-   **Troubleshooting:**
 
--   [:material-file-document-outline: Code samples and use cases](samples/index.md)
+	[:material-lightbulb: Common Errors](https://support.theobald-software.com/helpdesk/KB)<br>
+    [:material-email: Contact Support](https://support.theobald-software.com/helpdesk)
+	
+-   **General:**
 
--   [:material-email: Contact Support](https://support.theobald-software.com/helpdesk)
-
--   [:material-lightbulb: Common errors](https://support.theobald-software.com/helpdesk/KB)
-
--   [:material-comment-quote: Give Feedback](https://theobald-software.typeform.com/to/CnpfiiIN)
-
--   [:material-information: Product Information](https://theobald-software.com/en/erpconnect/)
-
+	[:material-information: Product Information](https://theobald-software.com/en/erpconnect/)<br>
+	[:material-comment-quote: Feedback](https://theobald-software.typeform.com/to/CnpfiiIN)
+    
 </div>
 
-
-
-<!---
-
-[:material-download-circle: Download the latest software version](https://my.theobald-software.com/)
-
-[:material-run-fast: How to get started](#)
-
-[:material-file-document-outline: Code samples and use cases](#)
-
-[:material-update: Latest updates](./version-history)
-
-[:material-email: Contact Support](https://support.theobald-software.com/helpdesk)
-
-[:material-lightbulb: Common error messages](https://support.theobald-software.com/helpdesk/KB)
-
-[:material-comment-quote: Give Feedback](#)
-
-
-### How can we help?
-
-::cards:: cols=4
-
-- title: Download the latest version
-  url: https://my.theobald-software.com/
-  
-- title: How to get started
-  url: ./quick-start.md
-  
-- title: Code samples and use cases
-  url: ./samples/index.md
-  
-- title: Latest updates
-  url: ./changelog.md
-  
-- title: Contact Support
-  url: https://support.theobald-software.com/helpdesk
-  
-- title: Common error messages
-  url: https://support.theobald-software.com/helpdesk/KB
-
-- title: Give Feedback
-  url: #
-  
-::/cards::
-
--->
 
 ### What's New?
 
