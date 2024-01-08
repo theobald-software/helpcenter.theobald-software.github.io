@@ -16,6 +16,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://helpcenter.theobald-software.com/erpconnect/samples/</loc>
+         <lastmod>2024-01-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://helpcenter.theobald-software.com/erpconnect/troubleshooting/</loc>
          <lastmod>2024-01-08</lastmod>
          <changefreq>daily</changefreq>
@@ -1007,11 +1012,6 @@
     </url>
     <url>
          <loc>https://helpcenter.theobald-software.com/erpconnect/erpconnect-api/theobald-ogc/Theobald.Ogc.Xyzm/</loc>
-         <lastmod>2024-01-08</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://helpcenter.theobald-software.com/erpconnect/samples/</loc>
          <lastmod>2024-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
