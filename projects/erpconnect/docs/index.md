@@ -47,7 +47,7 @@ hide:
 -   **Ressources:**
 
 	[:material-run-fast: How to get started](quick-start.md)<br>
-    [:material-file-document-outline: Code samples and use cases](samples/index.md)
+    [:material-file-document-outline: Code samples and use cases](samples.md)
 	
 -   **Troubleshooting:**
 
