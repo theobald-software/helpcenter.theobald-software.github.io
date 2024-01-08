@@ -1,5 +1,7 @@
 ---
 title: Samples
+hide:
+  - navigation
 ---
 
 <div class="grid cards" markdown>
