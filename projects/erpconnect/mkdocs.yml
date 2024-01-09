@@ -81,6 +81,7 @@ plugins:
       separator: '[\s\-,:!=\[\]()"/]+'
   - typeset # preserve format of titles and headlines in navigation and toc
   - awesome-pages # define navigation in .pages files
+  - site-urls
   - macros:
       include_dir: includes # ../../includes for ERPConnect only
   #- swagger-ui-tag # enables OpenAPI elements in docu

@@ -84,8 +84,9 @@ plugins:
       separator: '[\s\-,:!=\[\]()"/]+'
   - typeset # preserve format of titles and headlines in navigation and toc
   - awesome-pages # define navigation in .pages files
-  #- macros:
-  #    include_dir: includes
+  - site-urls
+  - macros:
+      include_dir: includes
   - swagger-ui-tag
   #- glightbox #image zoom
   #- tags # enables tags in front matter
