@@ -114,7 +114,7 @@ plugins:
             
 # Hook for Relative Links
 hooks:
-  - site-urls.py
+  - overrides/site-urls.py
             
 # Extensions for Markdown Syntax            
 markdown_extensions:

@@ -3,3 +3,16 @@ site
 projects/erpconnect/site
 
 # Cache
+.cache
+projects/erpconnect/.cache
+projects/erpconnect/overrides/__pycache__
+projects/board-connector/.cache
+projects/board-connector/overrides/__pycache__
+projects/xtract-for-alteryx/.cache
+projects/xtract-for-alteryx/overrides/__pycache__
+projects/xtract-is/.cache
+projects/xtract-is/overrides/__pycache__
+projects/xtract-universal/.cache
+projects/xtract-universal/overrides/__pycache__
+projects/yunio/.cache
+projects/yunio/overrides/__pycache__
