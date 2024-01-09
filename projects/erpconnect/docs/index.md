@@ -49,21 +49,21 @@ hide:
 
 	[:material-run-fast: How to get started](quick-start.md)<br>
 	[:material-book-open-page-variant-outline: Documentation](documentation/introduction/index.md)<br>
-    [:material-file-document-outline: Code samples and use cases](samples.md)<br>
+    [:material-file-document-outline: Code Samples](samples.md)<br>
 	[:material-api: API Reference](erpconnect-api/access-api-in-vs.md)
 	
 -   **Troubleshooting:**
 	
 	[:material-frequently-asked-questions: FAQs](#faqs)<br>
 	[:material-lightbulb: Common Errors](https://support.theobald-software.com/helpdesk/KB)<br>
-    [:material-email: Contact Support](https://support.theobald-software.com/helpdesk)
+    [:material-email-outline: Contact Support](https://support.theobald-software.com/helpdesk)
 	
 -   **General:**
 
-	[:material-web: Theobald Software Website](https://theobald-software.com)<br>
+	[:material-web: Theobald Software](https://theobald-software.com)<br>
 	[:material-email-newsletter: Newsletters](https://theobald-software.com/newsletter/)<br>
 	[:material-comment-question: Short Survey](https://theobald-software.typeform.com/to/Ss7ZQbqp?typeform-source=support.theobald-software.com)<br>
-	[:material-comment-quote: Feedback](https://theobald-software.typeform.com/to/CnpfiiIN)
+	[:material-comment-quote: Feedback Form](https://theobald-software.typeform.com/to/CnpfiiIN)
     
 </div>
 
