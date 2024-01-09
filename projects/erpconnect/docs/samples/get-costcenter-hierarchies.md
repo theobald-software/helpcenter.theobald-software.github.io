@@ -20,7 +20,7 @@ The Windows form for the treeview should contain following elements:
 - One DataGridView: *dgContArea* 
 - One TreeView: *tvCC*
 
-![CostCenterHier](../assets/images/samples/CostCenterHier.jpg){:class="img-responsive"}
+![CostCenterHier]( site:assets/images/erpconnect/samples/CostCenterHier.jpg){:class="img-responsive"}
 
 Follow the steps below to build a treeview during *FormLoad*:
 

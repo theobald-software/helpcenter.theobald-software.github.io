@@ -84,7 +84,7 @@ else
 
 Output:
 
-![BAPI_EMPLOYEE_GETDATA](../assets/images/samples/BAPI_EMPLOYEE_GETDATA.jpg){:class="img-responsive"}
+![BAPI_EMPLOYEE_GETDATA]( site:assets/images/erpconnect/samples/BAPI_EMPLOYEE_GETDATA.jpg){:class="img-responsive"}
 
 <!---
 Input/Output:
@@ -182,4 +182,4 @@ Console.ReadKey();
 
 Output:
 
-![HRDemo01](../assets/images/samples/HRDemoCon01.jpg){:class="img-responsive"}
+![HRDemo01]( site:assets/images/erpconnect/samples/HRDemoCon01.jpg){:class="img-responsive"}

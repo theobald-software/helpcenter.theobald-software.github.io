@@ -26,7 +26,7 @@ Follow the steps below to look up the correct text name, text object and text ID
 2. Access item texts via **More > Goto > Item > Texts** or access header texts via **More > Goto > Header > Texts**.
 3. Click **[Detail]** (magnifying glass icon). The text editor opens.
 4. Navigate to **Goto > Header**. The window "Text Header" opens.<br>
-![TextDetails](../assets/images/samples/TextDetails.png){:class="img-responsive"}
+![TextDetails]( site:assets/images/erpconnect/samples/TextDetails.png){:class="img-responsive"}
 
 !!! tip
     Use SAP transaction SE75 to look up all available text objects and the underlying text IDs.
@@ -81,4 +81,4 @@ Console.ReadLine();
 
 Output:
 
-![ReadTextConsole](../assets/images/samples/ReadTextConsole.jpg){:class="img-responsive"}
+![ReadTextConsole]( site:assets/images/erpconnect/samples/ReadTextConsole.jpg){:class="img-responsive"}

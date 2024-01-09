@@ -253,7 +253,7 @@ The output shows:
 - 3 news threads are started
 - Result: 4 active SAP connections, because after 2 have finished only 1 more is needed.
 
-![ThreadPoolDemo](../assets/images/samples/ThreadPoolDemo.png){:class="img-responsive"}
+![ThreadPoolDemo]( site:assets/images/erpconnect/samples/ThreadPoolDemo.png){:class="img-responsive"}
 
 Source code of the sample program:
 

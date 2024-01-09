@@ -86,7 +86,7 @@ Output:
 The material SAMPLE001 has been created or extended
 ```
 
-![Material-Sample-002](../assets/images/samples/Material-Sample-002.png){:class="img-responsive"}
+![Material-Sample-002]( site:assets/images/erpconnect/samples/Material-Sample-002.png){:class="img-responsive"}
 
 ### Read Material Master Data
 

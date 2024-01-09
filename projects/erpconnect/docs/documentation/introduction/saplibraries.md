@@ -14,7 +14,7 @@ Copy the 32-Bit Version of librfc32.dll to the `\SysWoW64` folder.
 
 Note that the files have the same file name, only the file size varies.
 
-![librfc32dll]( ../../assets/images/librfc32dll.png){:class="img-responsive" width="300px" }
+![librfc32dll]( site:assets/images/erpconnect/librfc32dll.png){:class="img-responsive" width="300px" }
 
 To use the Classic RFC Protocol, set the Property *Protocol* of the *R3Connection* object to *ClientProtocol.RFC* before you open the connection.
 

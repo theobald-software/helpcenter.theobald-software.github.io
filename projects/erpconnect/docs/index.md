@@ -11,7 +11,7 @@ hide:
 
 <div class="grid cards" markdown>
 
--   ![img](assets/theo-thumbs.png){ .lg width="30px"} Hi, I'm Theo. I'll be your guide.
+-   ![img](site:assets/images/icons/theo-thumbs.png){ .lg width="30px"} Hi, I'm Theo. I'll be your guide.
 
 </div>
 

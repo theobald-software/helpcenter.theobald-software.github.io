@@ -12,7 +12,7 @@ Administrator permissions are required to install ERPConnect.
 `ERPConnectSetup.exe` is an industry standard setup. Execute the `ERPConnectSetup.exe` file and follow the instructions of the setup. <br>
 The installation process copies the class library and all available tools into the program directory.
 
-![ERPConnect_Setup]( ../../assets/images/ERPConnect_Setup.png){:class="img-responsive" }
+![ERPConnect_Setup]( site:assets/images/erpconnect/ERPConnect_Setup.png){:class="img-responsive" }
 
 After the installation you are able to use ERPConnect in your .NET environment.<br>
 The license installation procedure is described in the section [Installing the license](./licensing.md).

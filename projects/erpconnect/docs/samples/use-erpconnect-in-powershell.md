@@ -56,7 +56,7 @@ $result
 
 Output:
 
-![644px-Powershell](../assets/images/samples/644px-Powershell.jpg){:class="img-responsive"}
+![644px-Powershell]( site:assets/images/erpconnect/samples/644px-Powershell.jpg){:class="img-responsive"}
 
 <!---
 ```

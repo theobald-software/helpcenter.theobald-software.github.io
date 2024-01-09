@@ -10,7 +10,7 @@ This sample shows how to download attached files from common business objects us
 
 As of SAP rel. 4.6 users can attach documents to all common business objects, e.g., purchase orders:
 
-![POAttachment01](../assets/images/samples/POAttachment01.png){:class="img-responsive"}
+![POAttachment01]( site:assets/images/erpconnect/samples/POAttachment01.png){:class="img-responsive"}
 
 This sample uses the following workflow to download attachment files:
 1. Read the table SRGBTBREL to get all object IDs that are attached to business objects.

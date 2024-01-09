@@ -35,7 +35,7 @@ The Windows form for the sales order contains the following elements:
 
 Output:
 
-![IdocSalesOrder](../assets/images/samples/IdocSalesOrder.png){:class="img-responsive"}
+![IdocSalesOrder]( site:assets/images/erpconnect/samples/IdocSalesOrder.png){:class="img-responsive"}
 
 *****
 

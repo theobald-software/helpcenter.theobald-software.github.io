@@ -57,7 +57,7 @@ Examples:
 	Output:
 
 	The status code of the manipulated IDoc increases from 3 (Data passed...) to 12 (Dispatch OK). <br>
-	![SAP-Send-IDoc-001]( ../../assets/images/SAP-Send-IDoc-001.png){:class="img-responsive" width="400px" }
+	![SAP-Send-IDoc-001]( site:assets/images/erpconnect/SAP-Send-IDoc-001.png){:class="img-responsive" width="400px" }
 
 === "Send a MATMAS IDoc"
 
@@ -65,7 +65,7 @@ Examples:
 
 	Output:
 
-	![MatmasSend](../../assets/images/samples/MatmasSend.jpg){:class="img-responsive"}
+	![MatmasSend](site:assets/images/erpconnect/samples/MatmasSend.jpg){:class="img-responsive"}
 
 === "Send an ORDER IDoc"
 
@@ -73,7 +73,7 @@ Examples:
 
 	Output:
 
-	![IdocSalesOrder](../../assets/images/samples/IdocSalesOrder.png){:class="img-responsive"}
+	![IdocSalesOrder](site:assets/images/erpconnect/samples/IdocSalesOrder.png){:class="img-responsive"}
 
 
 ****

@@ -36,7 +36,7 @@ Follow the steps below to send a STATUS IDoc:
 Output:
 
 The status code of the manipulated IDoc increases from 3 (Data passed...) to 12 (Dispatch OK). <br>
-![IdocSend2](../assets/images/samples/IdocSend2.jpg){:class="img-responsive"}
+![IdocSend2]( site:assets/images/erpconnect/samples/IdocSend2.jpg){:class="img-responsive"}
 
 *****
 

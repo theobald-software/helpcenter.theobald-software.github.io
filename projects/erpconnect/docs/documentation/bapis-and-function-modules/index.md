@@ -15,5 +15,5 @@ An exchange of tables is also possible.
 
 The figure below shows the object hierarchy that is provided by ERPConnect to manage the exchange of imports, exports and table parameters.
 
-![clientarchitecture](../../assets/images/erpconnect-client-architecture.png){:class="img-responsive"  width="450"}  
+![clientarchitecture](site:assets/images/erpconnect/erpconnect-client-architecture.png){:class="img-responsive"  width="450"}  
 

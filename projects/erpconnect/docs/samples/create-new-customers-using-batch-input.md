@@ -12,7 +12,7 @@ This sample shows how to use batch input with SAP transaction XD01 in ERPConnect
 
 Use the [transaction recorder](../documentation/transactions/transaction-recorder.md) tool located in the installation directory of ERPConnect (`C:\Program Files\ERPConnect`) to create a code template for the SAP transaction XD01:
 
-![CreateCustomerBatchInput00](../assets/images/samples/CreateCustomerBatchInput00.png){:class="img-responsive"}
+![CreateCustomerBatchInput00]( site:assets/images/erpconnect/samples/CreateCustomerBatchInput00.png){:class="img-responsive"}
 
 ### Call Transaction XD01
 
@@ -141,4 +141,4 @@ Console.ReadLine();
 
 Output:
 
-![CreateCustomerBatchInput01](../assets/images/samples/CreateCustomerBatchInput01.png){:class="img-responsive"}
+![CreateCustomerBatchInput01]( site:assets/images/erpconnect/samples/CreateCustomerBatchInput01.png){:class="img-responsive"}

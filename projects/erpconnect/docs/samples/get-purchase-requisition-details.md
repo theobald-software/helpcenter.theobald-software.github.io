@@ -49,5 +49,5 @@ public static void BanfStatus(string Banf_Number)
 
 Output:
 
-![BanfStatusEn](../assets/images/samples/BanfStatusEn.jpg){:class="img-responsive"}
+![BanfStatusEn]( site:assets/images/erpconnect/samples/BanfStatusEn.jpg){:class="img-responsive"}
 

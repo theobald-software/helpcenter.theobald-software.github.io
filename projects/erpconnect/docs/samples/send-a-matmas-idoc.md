@@ -25,7 +25,7 @@ Follow the steps below to send a MATMAS IDoc:
 
 Output:
 
-![MatmasSend](../assets/images/samples/MatmasSend.jpg){:class="img-responsive"}
+![MatmasSend]( site:assets/images/erpconnect/samples/MatmasSend.jpg){:class="img-responsive"}
 
 
 *****

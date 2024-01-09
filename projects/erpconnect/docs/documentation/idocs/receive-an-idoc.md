@@ -8,7 +8,7 @@ To configure your SAP system to receive IDocs, see [Set Up a Test Environment fo
 
 {% include "erpconnect/receive-an-idoc.md" %}
 
-![SAP-Receive-IDoc]( ../../assets/images/SAP-Receive-IDoc.png){:class="img-responsive" width="800px" }
+![SAP-Receive-IDoc]( site:assets/images/erpconnect/SAP-Receive-IDoc.png){:class="img-responsive" width="800px" }
 
 
 !!! note

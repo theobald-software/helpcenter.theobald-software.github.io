@@ -268,7 +268,7 @@ To reschedule all item data of the production order the value of the field METHO
 
 Output:
 
-![Cloi_Success_Message01](../assets/images/samples/Cloi_Success_Message01.jpg){:class="img-responsive"}
+![Cloi_Success_Message01]( site:assets/images/erpconnect/samples/Cloi_Success_Message01.jpg){:class="img-responsive"}
 
 !!! tip
      Use SAP transaction SE91 to look up all message codes. The Messagecode C7 - 071 means "Operation has been scheduled".

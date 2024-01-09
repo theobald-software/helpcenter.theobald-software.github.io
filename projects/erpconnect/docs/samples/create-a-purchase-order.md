@@ -102,4 +102,4 @@ Output:
 Message: Standard PO created under the number 4500018292
 ```
 
-![CreatePuchaseOrderME23](../assets/images/samples/CreatePuchaseOrderME23.jpg){:class="img-responsive"}
+![CreatePuchaseOrderME23]( site:assets/images/erpconnect/samples/CreatePuchaseOrderME23.jpg){:class="img-responsive"}

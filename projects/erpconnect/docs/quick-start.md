@@ -6,7 +6,7 @@ hide:
 
 <div class="grid cards" markdown>
 
--   ![img](assets/theo-thumbs.png){ .lg .middle width="30px"} This section shows how to install and set up ERPConnect for the first time.
+-   ![img](site:assets/images/icons/theo-thumbs.png){ .lg .middle width="30px"} This section shows how to install and set up ERPConnect for the first time.
 
 </div>
 
@@ -45,13 +45,4 @@ For more information, see [Connect to SAP](documentation/sap-connection/log-on-t
 
 ERPConnect offers the following features for reading and writing data from and to SAP:
 
-|  Functionality / SAP Objects  |  Description   |  
-|----------|-------------|
-|  [__ABAP Code__](documentation/abap/index.md) | Generate and execute ABAP code on-the-fly. |
-|   [__BAPIs and Function Modules__](documentation/bapis-and-function-modules/index.md) | Access BAPIs and RFC function modules to read and write data from and to SAP. |
-|   [__BW Cube and BEx Queries__](documentation/bw-cubes-and-bw-queries/index.md) | Extract data from SAP BW InfoCubes and BEx Queries. |
-|   [__IDocs__](documentation/idocs/index.md) | Send and receive SAP IDocs. |
-|   [__Queries__](documentation/queries/index.md) | Extract SAP queries (not BEx queries). |
-|   [__RFC Server Functions__](documentation/rfc-server/index.md) | Create, register and use RFC server functions. |
-|   [__Tables__](documentation/table/index.md) | Read SAP Tables directly via RFC. |
-|   [__Transactions__](documentation/transactions/index.md) | Execute SAP transactions via batch input. |
+{% include "erpconnect/features.md" %}

@@ -17,7 +17,7 @@ The following section shows the development process for an ASP.NET/ERPConnect pr
 
 The following sample shows how to create a purchase order using the *BAPI_PO_CREATE*.
 The sample uses an ASP page to enter data for a purchase order, see screenshot below. <br>
-![purchase-order1]( ../../assets/images/Create-Purchase-Order-IE.png){:class="img-responsive"}  
+![purchase-order1](site:assets/images/erpconnect/Create-Purchase-Order-IE.png)
 
 Input:
 ```
@@ -100,7 +100,7 @@ Output:
 Message: Standard PO created under the number 4500018292
 ```
 
-![purchase-order2]( ../../assets/images/create-purchase-order-ie_02.png){:class="img-responsive"}  
+![purchase-order2](site:assets/images/erpconnect/create-purchase-order-ie_02.png)
   
 ****
 #### Related Links

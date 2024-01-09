@@ -18,7 +18,7 @@ The values are represented by ranges.
 In addition, a query object contains a *Fields* collection that in turn contains the output fields.
 
 The figure below shows the object hierarchy that is provided by the Queries classes in ERPConnect.<br>
-![SAP Query Object Model](../../assets/images/SAP-Query-Object-Model.png){:class="img-responsive" width="450"}
+![SAP Query Object Model](site:assets/images/erpconnect/SAP-Query-Object-Model.png){:class="img-responsive" width="450"}
 
 ****
 More information on working with the ERPConnect Queries classes is provided in the following sections:

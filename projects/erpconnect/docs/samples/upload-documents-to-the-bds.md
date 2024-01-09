@@ -18,7 +18,7 @@ With small code changes to the document class, the document and MIME-type you ca
 In the sample code the class name (BKPF) represents the Accounting document type. You can find other classes in the Document Navigator (TA OAOR).<br>
 The object key (100000000115642009) for BKPF is build from the company code, document number and the fiscal year.
 
-![BusinessDocumentNavigator01](../assets/images/samples/BusinessDocumentNavigator01.png){:class="img-responsive"}
+![BusinessDocumentNavigator01]( site:assets/images/erpconnect/samples/BusinessDocumentNavigator01.png){:class="img-responsive"}
 
 ### Upload an Excel File to the BDS
 
@@ -127,4 +127,4 @@ static void Main(string[] args)
 
 Output:
 
-![BDNDisplayDocument](../assets/images/samples/BDNDisplayDocument.png){:class="img-responsive"}
+![BDNDisplayDocument]( site:assets/images/erpconnect/samples/BDNDisplayDocument.png){:class="img-responsive"}
