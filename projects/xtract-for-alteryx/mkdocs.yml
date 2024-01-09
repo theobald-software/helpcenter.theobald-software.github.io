@@ -61,8 +61,8 @@ theme:
   font:
     text: Poppins
     code: Roboto Mono
-  favicon: assets/XtractAlteryx.png
-  logo: assets/XtractAlteryx.png 
+  favicon: assets/images/icons/products/XtractAlteryx.png
+  logo: assets/images/icons/products/XtractAlteryx.png 
 
 # Custom CSS
 extra_css:

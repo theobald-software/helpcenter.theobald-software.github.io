@@ -61,8 +61,8 @@ theme:
   font:
     text: Poppins
     code: Roboto Mono
-  favicon: assets/Board.png
-  logo: assets/Board.png 
+  favicon: assets/images/icons/products/Board.png
+  logo: assets/images/icons/products/Board.png 
 
 # Custom CSS
 extra_css:
