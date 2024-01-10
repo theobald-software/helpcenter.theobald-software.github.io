@@ -97,7 +97,7 @@ bool Logging { get; set; }
 
 #### Remarks
 
-Must be set before the connection is opened. <xref href="ERPConnect.IR3Connection.LogDir" data-throw-if-not-resolved="false"></xref> must also be set.
+Must be set before the connection is opened. `ERPConnect.IR3Connection.LogDir` must also be set.
 
 ### <a id="ERPConnect_IR3Connection_PartnerRelease"></a> PartnerRelease
 
@@ -117,7 +117,7 @@ string PartnerRelease { get; }
 
 ### <a id="ERPConnect_IR3Connection_Protocol"></a> Protocol
 
-The <xref href="ERPConnect.ClientProtocol" data-throw-if-not-resolved="false"></xref> used for the communication between client and SAP server
+The `ERPConnect.ClientProtocol` used for the communication between client and SAP server
 
 ```csharp
 ClientProtocol Protocol { get; }
@@ -129,8 +129,8 @@ ClientProtocol Protocol { get; }
 
 ### <a id="ERPConnect_IR3Connection_ReadTableFunctionName"></a> ReadTableFunctionName
 
-Gets or sets the name of the function module that is used by <xref href="ERPConnect.Utils.ReadTable" data-throw-if-not-resolved="false"></xref>.
-            This will be overriden by <xref href="ERPConnect.Utils.ReadTable.SetCustomFunctionName(System.String)" data-throw-if-not-resolved="false"></xref>.
+Gets or sets the name of the function module that is used by `ERPConnect.Utils.ReadTable`.
+            This will be overriden by `ERPConnect.Utils.ReadTable.SetCustomFunctionName(System.String)`.
 
 ```csharp
 string ReadTableFunctionName { get; set; }
@@ -268,7 +268,7 @@ The following example demonstrates, how to logon, to create a function object an
 
 ### <a id="ERPConnect_IR3Connection_Execute_ERPConnect_RFCFunction_"></a> Execute\(RFCFunction\)
 
-Assigns this connection to the supplied <xref href="ERPConnect.RFCFunction" data-throw-if-not-resolved="false"></xref> and then executes the function.
+Assigns this connection to the supplied `ERPConnect.RFCFunction` and then executes the function.
 
 ```csharp
 void Execute(RFCFunction function)

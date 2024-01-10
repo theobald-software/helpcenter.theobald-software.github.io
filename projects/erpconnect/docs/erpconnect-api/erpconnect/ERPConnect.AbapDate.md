@@ -27,7 +27,7 @@ The date range from 1582-10-05 to 1582-10-14 is invalid.
 
 ### <a id="ERPConnect_AbapDate__ctor_System_UInt16__System_Byte__System_Byte__"></a> AbapDate\(in ushort, in byte, in byte\)
 
-Initializes a new instance of <xref href="ERPConnect.AbapDate" data-throw-if-not-resolved="false"></xref> using
+Initializes a new instance of `ERPConnect.AbapDate` using
 a 1-based year, month and day.
 
 ```csharp
@@ -52,7 +52,7 @@ The date is invalid. e.g. month 13 or 29.02. in any other year than a leap year.
 
 ### <a id="ERPConnect_AbapDate_Day"></a> Day
 
-Gets the current day in currently represented <xref href="ERPConnect.AbapDate.Month" data-throw-if-not-resolved="false"></xref> and <xref href="ERPConnect.AbapDate.Year" data-throw-if-not-resolved="false"></xref>.
+Gets the current day in currently represented `ERPConnect.AbapDate.Month` and `ERPConnect.AbapDate.Year`.
 
 ```csharp
 public byte Day { get; }
@@ -100,7 +100,7 @@ public static AbapDate MinValue { get; }
 
 ### <a id="ERPConnect_AbapDate_Month"></a> Month
 
-Gets the current month in currently represented <xref href="ERPConnect.AbapDate.Year" data-throw-if-not-resolved="false"></xref>.
+Gets the current month in currently represented `ERPConnect.AbapDate.Year`.
 
 ```csharp
 public byte Month { get; }
@@ -186,7 +186,7 @@ public override string ToString()
 
 ### <a id="ERPConnect_AbapDate_TryToDateTime_System_Nullable_System_DateTime___"></a> TryToDateTime\(out DateTime?\)
 
-Tries to convert to the corresponding <xref href="System.DateTime" data-throw-if-not-resolved="false"></xref> value.
+Tries to convert to the corresponding `System.DateTime` value.
 
 ```csharp
 public bool TryToDateTime(out DateTime? value)
@@ -204,11 +204,11 @@ public bool TryToDateTime(out DateTime? value)
 
 The ABAP values 0001-01-01 and 0001-01-02 cannot be converted.
 Assuming the proleptic Julian calendar, they would correspond to 0000-12-30 and 0000-12-31,
-which is out of range for <xref href="System.DateTime" data-throw-if-not-resolved="false"></xref>.
+which is out of range for `System.DateTime`.
 
 ### <a id="ERPConnect_AbapDate_UtcToday"></a> UtcToday\(\)
 
-Gets an <xref href="ERPConnect.AbapDate" data-throw-if-not-resolved="false"></xref> representing the current date (UTC).
+Gets an `ERPConnect.AbapDate` representing the current date (UTC).
 
 ```csharp
 public static AbapDate UtcToday()

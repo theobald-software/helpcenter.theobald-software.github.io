@@ -20,5 +20,5 @@ RFC protocol, NetWeaver API
 
 RFC protocol, classic API
 
-Obsolete and not supported by SAP any more. Please use <xref href="ERPConnect.ClientProtocol.NWRFC" data-throw-if-not-resolved="false"></xref> instead.
+Obsolete and not supported by SAP any more. Please use `ERPConnect.ClientProtocol.NWRFC` instead.
 

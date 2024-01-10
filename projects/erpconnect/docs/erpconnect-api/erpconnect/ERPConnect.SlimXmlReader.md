@@ -69,10 +69,10 @@ public SlimXmlReadResult Read()
 
 ### <a id="ERPConnect_SlimXmlReader_ReadElementString"></a> ReadElementString\(\)
 
-Assumes current position is <xref href="ERPConnect.SlimXmlReadResult.StartTag" data-throw-if-not-resolved="false"></xref>.
+Assumes current position is `ERPConnect.SlimXmlReadResult.StartTag`.
 Expects the content of the element to contain no child elements.
 Returns the unescaped content and advances the current position to
-<xref href="ERPConnect.SlimXmlReadResult.EndTag" data-throw-if-not-resolved="false"></xref>.
+`ERPConnect.SlimXmlReadResult.EndTag`.
 
 ```csharp
 public string ReadElementString()

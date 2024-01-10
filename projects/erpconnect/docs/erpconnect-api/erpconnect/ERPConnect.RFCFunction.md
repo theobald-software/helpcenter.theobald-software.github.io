@@ -184,7 +184,7 @@ Transaction ID
 ### <a id="ERPConnect_RFCFunction_Execute"></a> Execute\(\)
 
 Executes the function module.
-Consider using <xref href="ERPConnect.R3Connection.Execute(ERPConnect.RFCFunction)" data-throw-if-not-resolved="false"></xref> instead.
+Consider using `ERPConnect.R3Connection.Execute(ERPConnect.RFCFunction)` instead.
 
 ```csharp
 public virtual void Execute()

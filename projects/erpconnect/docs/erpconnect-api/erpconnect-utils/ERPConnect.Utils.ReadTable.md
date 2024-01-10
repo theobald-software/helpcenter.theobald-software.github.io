@@ -198,7 +198,7 @@ public void Run()
 ### <a id="ERPConnect_Utils_ReadTable_SetCustomFunctionName_System_String_"></a> SetCustomFunctionName\(string\)
 
 Call this method to use a custom function module. This
-overrides <xref href="ERPConnect.IR3Connection.ReadTableFunctionName" data-throw-if-not-resolved="false"></xref>.
+overrides `ERPConnect.IR3Connection.ReadTableFunctionName`.
 
 ```csharp
 public void SetCustomFunctionName(string name)

@@ -204,12 +204,12 @@ public SAPEncodingInfo InitialEncoding { get; set; }
 
 #### Remarks
 
-<xref href="ERPConnect.ClientProtocol.NWRFC" data-throw-if-not-resolved="false"></xref> only.
+`ERPConnect.ClientProtocol.NWRFC` only.
 
 ### <a id="ERPConnect_R3Connection_IsOpen"></a> IsOpen
 
 Gets a value indicating whether this connection has been successfully established and has been valid when the
-last message has been received/sent. To actively check the current state, please use <xref href="ERPConnect.R3Connection.Ping" data-throw-if-not-resolved="false"></xref>
+last message has been received/sent. To actively check the current state, please use `ERPConnect.R3Connection.Ping`
 
 ```csharp
 public bool IsOpen { get; }
@@ -295,7 +295,7 @@ public bool Logging { get; set; }
 
 #### Remarks
 
-Must be set before the connection is opened. <xref href="ERPConnect.IR3Connection.LogDir" data-throw-if-not-resolved="false"></xref> must also be set.
+Must be set before the connection is opened. `ERPConnect.IR3Connection.LogDir` must also be set.
 
 ### <a id="ERPConnect_R3Connection_LogonGroup"></a> LogonGroup
 
@@ -382,7 +382,7 @@ public string Password { get; set; }
 
 ### <a id="ERPConnect_R3Connection_Protocol"></a> Protocol
 
-Get / sets the <xref href="ERPConnect.ClientProtocol" data-throw-if-not-resolved="false"></xref> for the communication between client and SAP server
+Get / sets the `ERPConnect.ClientProtocol` for the communication between client and SAP server
 
 ```csharp
 public ClientProtocol Protocol { get; set; }
@@ -394,8 +394,8 @@ public ClientProtocol Protocol { get; set; }
 
 ### <a id="ERPConnect_R3Connection_ReadTableFunctionName"></a> ReadTableFunctionName
 
-Gets or sets the name of the function module that is used by <xref href="ERPConnect.Utils.ReadTable" data-throw-if-not-resolved="false"></xref>.
-            This will be overriden by <xref href="ERPConnect.Utils.ReadTable.SetCustomFunctionName(System.String)" data-throw-if-not-resolved="false"></xref>.
+Gets or sets the name of the function module that is used by `ERPConnect.Utils.ReadTable`.
+            This will be overriden by `ERPConnect.Utils.ReadTable.SetCustomFunctionName(System.String)`.
 
 ```csharp
 public string ReadTableFunctionName { get; set; }
@@ -500,8 +500,8 @@ Only required when using logon to a single application server
 
 Gets or sets TLS settings to use when connecting using WebSockets.
 Corresponds to NetWeaver connection parameters related to TLS.
-Only used when <xref href="ERPConnect.R3Connection.UsesWebSocket" data-throw-if-not-resolved="false"></xref> is set to true and
-using <xref href="ERPConnect.ClientProtocol.NWRFC" data-throw-if-not-resolved="false"></xref>.
+Only used when `ERPConnect.R3Connection.UsesWebSocket` is set to true and
+using `ERPConnect.ClientProtocol.NWRFC`.
 
 ```csharp
 public TlsSettings TlsSettings { get; set; }
@@ -513,7 +513,7 @@ public TlsSettings TlsSettings { get; set; }
 
 #### Remarks
 
-SAP systems require you to use TLS (<xref href="ERPConnect.R3Connection.TlsSettings" data-throw-if-not-resolved="false"></xref>) when
+SAP systems require you to use TLS (`ERPConnect.R3Connection.TlsSettings`) when
 connecting with RFC over WebSocket.
 
 ### <a id="ERPConnect_R3Connection_TraceLevel"></a> TraceLevel
@@ -582,7 +582,7 @@ public bool UsesLoadBalancing { get; set; }
 
 Gets or sets whether to use RFC over WebSocket. When set to true
 the following properties have to be specified:
-<ul><li><xref href="ERPConnect.R3Connection.WebSocketHost" data-throw-if-not-resolved="false"></xref></li><li><xref href="ERPConnect.R3Connection.WebSocketPort" data-throw-if-not-resolved="false"></xref></li><li><xref href="ERPConnect.R3Connection.TlsSettings" data-throw-if-not-resolved="false"></xref></li></ul>
+<ul><li>`ERPConnect.R3Connection.WebSocketHost`</li><li>`ERPConnect.R3Connection.WebSocketPort`</li><li>`ERPConnect.R3Connection.TlsSettings`</li></ul>
 
 ```csharp
 public bool UsesWebSocket { get; set; }
@@ -594,15 +594,15 @@ public bool UsesWebSocket { get; set; }
 
 #### Remarks
 
-SAP systems require you to use TLS (<xref href="ERPConnect.R3Connection.TlsSettings" data-throw-if-not-resolved="false"></xref>) when
+SAP systems require you to use TLS (`ERPConnect.R3Connection.TlsSettings`) when
 connecting with RFC over WebSocket.
 
 ### <a id="ERPConnect_R3Connection_WebSocketHost"></a> WebSocketHost
 
 Gets or sets the hostname to use when connecting using WebSockets.
 Corresponds to NetWeaver connection parameter "WSHOST".
-Only used when <xref href="ERPConnect.R3Connection.UsesWebSocket" data-throw-if-not-resolved="false"></xref> is set to true and
-using <xref href="ERPConnect.ClientProtocol.NWRFC" data-throw-if-not-resolved="false"></xref>.
+Only used when `ERPConnect.R3Connection.UsesWebSocket` is set to true and
+using `ERPConnect.ClientProtocol.NWRFC`.
 
 ```csharp
 public string WebSocketHost { get; set; }
@@ -614,15 +614,15 @@ public string WebSocketHost { get; set; }
 
 #### Remarks
 
-SAP systems require you to use TLS (<xref href="ERPConnect.R3Connection.TlsSettings" data-throw-if-not-resolved="false"></xref>) when
+SAP systems require you to use TLS (`ERPConnect.R3Connection.TlsSettings`) when
 connecting with RFC over WebSocket.
 
 ### <a id="ERPConnect_R3Connection_WebSocketPort"></a> WebSocketPort
 
 Gets or sets the WebSocket port to use when connecting using WebSockets.
 Corresponds to NetWeaver connection parameter "WSPORT".
-Only used when <xref href="ERPConnect.R3Connection.UsesWebSocket" data-throw-if-not-resolved="false"></xref> is set to true and
-using <xref href="ERPConnect.ClientProtocol.NWRFC" data-throw-if-not-resolved="false"></xref>.
+Only used when `ERPConnect.R3Connection.UsesWebSocket` is set to true and
+using `ERPConnect.ClientProtocol.NWRFC`.
 
 ```csharp
 public ushort WebSocketPort { get; set; }
@@ -936,7 +936,7 @@ public void Dispose()
 
 ### <a id="ERPConnect_R3Connection_Execute_ERPConnect_RFCFunction_"></a> Execute\(RFCFunction\)
 
-Assigns this connection to the supplied <xref href="ERPConnect.RFCFunction" data-throw-if-not-resolved="false"></xref> and then executes the function.
+Assigns this connection to the supplied `ERPConnect.RFCFunction` and then executes the function.
 
 ```csharp
 public void Execute(RFCFunction function)
@@ -1030,7 +1030,7 @@ public void Open()
 
 #### Remarks
 
-For opening via Load Balancing please set <xref href="ERPConnect.R3Connection.UsesLoadBalancing" data-throw-if-not-resolved="false"></xref> = true
+For opening via Load Balancing please set `ERPConnect.R3Connection.UsesLoadBalancing` = true
 
 ### <a id="ERPConnect_R3Connection_ParseConnectionString_System_String_"></a> ParseConnectionString\(string\)
 
@@ -1046,7 +1046,7 @@ public void ParseConnectionString(string connectionString)
 
 #### Remarks
 
-Does not change the <xref href="ERPConnect.R3Connection.ConnectionString" data-throw-if-not-resolved="false"></xref> property
+Does not change the `ERPConnect.R3Connection.ConnectionString` property
 
 ### <a id="ERPConnect_R3Connection_Ping"></a> Ping\(\)
 
@@ -1068,7 +1068,7 @@ Marks the connection as closed if the operation is not successful.
 
 ### <a id="ERPConnect_R3Connection_ToConnectionString"></a> ToConnectionString\(\)
 
-Generates a connection string based on the values of properties (ignores the <xref href="ERPConnect.R3Connection.ConnectionString" data-throw-if-not-resolved="false"></xref>
+Generates a connection string based on the values of properties (ignores the `ERPConnect.R3Connection.ConnectionString`
 property).
 
 ```csharp

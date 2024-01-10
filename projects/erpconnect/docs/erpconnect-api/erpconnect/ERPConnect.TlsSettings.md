@@ -32,7 +32,7 @@ public TlsSettings()
 
 ### <a id="ERPConnect_TlsSettings_ClientCertificateLogon"></a> ClientCertificateLogon
 
-Gets or sets whether a certificate found in the <xref href="ERPConnect.TlsSettings.ClientPse" data-throw-if-not-resolved="false"></xref>
+Gets or sets whether a certificate found in the `ERPConnect.TlsSettings.ClientPse`
 should be used for authentication instead of user and password. If unset
 (null) the default NetWeaver library value is used.
 Corresponds to NetWeaver connection parameter "TLS_CLIENT_CERTIFICATE_LOGON".
@@ -48,7 +48,7 @@ public bool? ClientCertificateLogon { get; set; }
 ### <a id="ERPConnect_TlsSettings_ClientPse"></a> ClientPse
 
 The name of the client PSE file to use.
-When using <xref href="ERPConnect.TlsSettings.ClientCertificateLogon" data-throw-if-not-resolved="false"></xref> it should also
+When using `ERPConnect.TlsSettings.ClientCertificateLogon` it should also
 contain the client certificate used for authentication.
 Corresponds to NetWeaver connection parameter "TLS_CLIENT_PSE".
 
@@ -63,8 +63,8 @@ public string ClientPse { get; set; }
 ### <a id="ERPConnect_TlsSettings_CryptoLibrary"></a> CryptoLibrary
 
 Gets or sets the path to the crypto library to use. The library will be loaded
-when opening an <xref href="ERPConnect.R3Connection" data-throw-if-not-resolved="false"></xref> and cannot be changed once loaded for
-the current process, even when using a different <xref href="ERPConnect.R3Connection" data-throw-if-not-resolved="false"></xref>.
+when opening an `ERPConnect.R3Connection` and cannot be changed once loaded for
+the current process, even when using a different `ERPConnect.R3Connection`.
 Corresponds fo NetWeaver ini parameter "TLS_SAPCRYPTOLIB".
 
 ```csharp

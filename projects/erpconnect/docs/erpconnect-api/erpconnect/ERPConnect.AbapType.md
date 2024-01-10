@@ -55,7 +55,7 @@ Decimal floating point number with 34 places
 
 `DecimalTimeStampSeconds = 17` 
 
-Timestamp accurate to seconds, stored as <xref href="ERPConnect.AbapType.PackedNumber" data-throw-if-not-resolved="false"></xref>, 15 digits, 0 decimals
+Timestamp accurate to seconds, stored as `ERPConnect.AbapType.PackedNumber`, 15 digits, 0 decimals
 (DDIC data element TIMESTAMP).
 Uses Julian calendar for dates before 1582-10-15.
 
@@ -63,7 +63,7 @@ Uses Julian calendar for dates before 1582-10-15.
 
 `DecimalTimeStampTicks = 18` 
 
-Timestamp accurate to ticks (100 nanoseconds), stored as <xref href="ERPConnect.AbapType.PackedNumber" data-throw-if-not-resolved="false"></xref>, 21 digits, 7 decimals
+Timestamp accurate to ticks (100 nanoseconds), stored as `ERPConnect.AbapType.PackedNumber`, 21 digits, 7 decimals
 (DDIC data element TIMESTAMPL).
 Uses Julian calendar for dates before 1582-10-15.
 
@@ -95,7 +95,7 @@ Geometric data in extended well-known binary representation (DDIC type GEOM_EWKB
 
 `NativeTimeStamp = 16` 
 
-Timestamp accurate to ticks (100 nanoseconds), internally stored as <xref href="ERPConnect.AbapType.EightByteInteger" data-throw-if-not-resolved="false"></xref>
+Timestamp accurate to ticks (100 nanoseconds), internally stored as `ERPConnect.AbapType.EightByteInteger`
 (ABAP type utclong, DDIC type UTCLONG).
 Uses Julian calendar for dates before 1582-10-15.
 

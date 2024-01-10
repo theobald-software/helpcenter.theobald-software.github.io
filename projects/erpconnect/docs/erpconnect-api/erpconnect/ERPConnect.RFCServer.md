@@ -141,7 +141,7 @@ public string GatewayHost { get; set; }
 
 #### Remarks
 
-Have a look at <xref href="ERPConnect.RFCServer.Start?text=ERPConnect.RFCServer.Start" data-throw-if-not-resolved="false"></xref> for a complete example.
+Have a look at `ERPConnect.RFCServer.Start?text=ERPConnect.RFCServer.Start` for a complete example.
 
 ### <a id="ERPConnect_RFCServer_GatewayService"></a> GatewayService
 
@@ -157,7 +157,7 @@ public string GatewayService { get; set; }
 
 #### Remarks
 
-Have a look at <xref href="ERPConnect.RFCServer.Start?text=ERPConnect.RFCServer.Start" data-throw-if-not-resolved="false"></xref> for a complete example.
+Have a look at `ERPConnect.RFCServer.Start?text=ERPConnect.RFCServer.Start` for a complete example.
 
 ### <a id="ERPConnect_RFCServer_IsRunning"></a> IsRunning
 
@@ -173,7 +173,7 @@ public bool IsRunning { get; }
 
 #### Remarks
 
-Have a look at <xref href="ERPConnect.RFCServer.Start?text=ERPConnect.RFCServer.Start" data-throw-if-not-resolved="false"></xref> for a complete example.
+Have a look at `ERPConnect.RFCServer.Start?text=ERPConnect.RFCServer.Start` for a complete example.
 
 ### <a id="ERPConnect_RFCServer_IsUnicode"></a> IsUnicode
 
@@ -237,7 +237,7 @@ public string ProgramID { get; set; }
 
 #### Remarks
 
-Have a look at <xref href="ERPConnect.RFCServer.Start?text=ERPConnect.RFCServer.Start" data-throw-if-not-resolved="false"></xref> for a complete example.
+Have a look at `ERPConnect.RFCServer.Start?text=ERPConnect.RFCServer.Start` for a complete example.
 
 ### <a id="ERPConnect_RFCServer_Protocol"></a> Protocol
 
@@ -265,7 +265,7 @@ public RFCServerFunctionCollection RegisteredFunctions { get; }
 
 #### Remarks
 
-Have a look at <xref href="ERPConnect.RFCServer.Start?text=ERPConnect.RFCServer.Start" data-throw-if-not-resolved="false"></xref> for a complete example.
+Have a look at `ERPConnect.RFCServer.Start?text=ERPConnect.RFCServer.Start` for a complete example.
 
 ### <a id="ERPConnect_RFCServer_SAPEncodingInfo"></a> SAPEncodingInfo
 
@@ -363,7 +363,7 @@ public void Stop()
 
 #### Remarks
 
-Have a look at <xref href="ERPConnect.RFCServer.Start?text=ERPConnect.RFCServer.Start" data-throw-if-not-resolved="false"></xref> for a complete example.
+Have a look at `ERPConnect.RFCServer.Start?text=ERPConnect.RFCServer.Start` for a complete example.
 
 ### <a id="ERPConnect_RFCServer_Authorizing"></a> Authorizing
 

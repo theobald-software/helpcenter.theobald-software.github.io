@@ -548,8 +548,8 @@ public string TEST { get; set; }
 ### <a id="ERPConnect_Idocs_Idoc_TemplateSegments"></a> TemplateSegments
 
 Gets a collection of available template segments retrieved or loaded
-from a schema by calling <xref href="ERPConnect.R3Connection.CreateEmptyIdoc(System.String%2cSystem.String)" data-throw-if-not-resolved="false"></xref>
-or <xref href="ERPConnect.Idocs.Idoc.LoadIdocSchema(System.String)" data-throw-if-not-resolved="false"></xref>.
+from a schema by calling `ERPConnect.R3Connection.CreateEmptyIdoc(System.String%2cSystem.String)`
+or `ERPConnect.Idocs.Idoc.LoadIdocSchema(System.String)`.
 
 ```csharp
 public Dictionary<string, IdocSegment> TemplateSegments { get; }

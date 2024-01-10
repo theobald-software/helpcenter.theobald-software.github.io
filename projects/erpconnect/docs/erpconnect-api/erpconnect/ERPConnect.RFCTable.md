@@ -208,7 +208,7 @@ public void CopyValues(RFCTable copyFrom)
 
 ### <a id="ERPConnect_RFCTable_NewRows"></a> NewRows\(\)
 
-Replaces the current <xref href="ERPConnect.RFCTable.Rows" data-throw-if-not-resolved="false"></xref> instance with a new one
+Replaces the current `ERPConnect.RFCTable.Rows` instance with a new one
 
 ```csharp
 public void NewRows()

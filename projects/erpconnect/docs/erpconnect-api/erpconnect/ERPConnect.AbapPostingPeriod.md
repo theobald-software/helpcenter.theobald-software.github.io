@@ -127,7 +127,7 @@ public override string ToString()
 
 ### <a id="ERPConnect_AbapPostingPeriod_UtcToday"></a> UtcToday\(\)
 
-Gets an <xref href="ERPConnect.AbapPostingPeriod" data-throw-if-not-resolved="false"></xref> representing the current date (UTC).
+Gets an `ERPConnect.AbapPostingPeriod` representing the current date (UTC).
 
 ```csharp
 public static AbapPostingPeriod UtcToday()

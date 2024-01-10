@@ -47,7 +47,7 @@ public bool Enabled { get; set; }
 ### <a id="ERPConnect_SNCSettings_ExternalIdData"></a> ExternalIdData
 
 When authenticating via External ID, provide the username etc. using this property.
-Please make sure to set the correct <xref href="ERPConnect.SNCSettings.ExternalIdType" data-throw-if-not-resolved="false"></xref> as well.
+Please make sure to set the correct `ERPConnect.SNCSettings.ExternalIdType` as well.
 
 ```csharp
 public string ExternalIdData { get; set; }
@@ -59,7 +59,7 @@ public string ExternalIdData { get; set; }
 
 ### <a id="ERPConnect_SNCSettings_ExternalIdType"></a> ExternalIdType
 
-The type of <xref href="ERPConnect.SNCSettings.ExternalIdData" data-throw-if-not-resolved="false"></xref>.
+The type of `ERPConnect.SNCSettings.ExternalIdData`.
 
 ```csharp
 public ExternalIdType ExternalIdType { get; set; }

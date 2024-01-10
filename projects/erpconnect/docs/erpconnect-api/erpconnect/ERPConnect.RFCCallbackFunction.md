@@ -24,7 +24,7 @@ public sealed class RFCCallbackFunction
 
 ### <a id="ERPConnect_RFCCallbackFunction__ctor_System_String_System_Action_ERPConnect_RFCCallbackFunction__"></a> RFCCallbackFunction\(string, Action<RFCCallbackFunction\>\)
 
-Initializes a new <xref href="ERPConnect.RFCCallbackFunction" data-throw-if-not-resolved="false"></xref> object
+Initializes a new `ERPConnect.RFCCallbackFunction` object
 
 ```csharp
 public RFCCallbackFunction(string name, Action<RFCCallbackFunction> callback)

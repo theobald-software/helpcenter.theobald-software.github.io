@@ -2,7 +2,7 @@
 Namespace: [ERPConnect](index.md)  
 Assembly: ERPConnectStandard20.dll  
 
-Represents an SAP timestamp, similar to <xref href="System.DateTime" data-throw-if-not-resolved="false"></xref>.
+Represents an SAP timestamp, similar to `System.DateTime`.
 Accuracy is ticks (100 nanoseconds).
 Both packed numbers (data elements TIMESTAMP, TIMESTAMPL) and native (type utclong)
 representations are supported.
@@ -36,7 +36,7 @@ The date range from 1582-10-05 to 1582-10-14 is invalid.
 
 ### <a id="ERPConnect_AbapTimestamp__ctor_System_UInt64__"></a> AbapTimestamp\(in ulong\)
 
-Initializes a new instance of <xref href="ERPConnect.AbapTimestamp" data-throw-if-not-resolved="false"></xref>
+Initializes a new instance of `ERPConnect.AbapTimestamp`
 from total ticks (100 nanoseconds passed since 01.01.0001).
 
 ```csharp
@@ -55,7 +55,7 @@ Ticks are outside the valid min or max range
 
 ### <a id="ERPConnect_AbapTimestamp__ctor_System_UInt16__System_Byte__System_Byte__"></a> AbapTimestamp\(in ushort, in byte, in byte\)
 
-Initializes a new instance of <xref href="ERPConnect.AbapTimestamp" data-throw-if-not-resolved="false"></xref> using
+Initializes a new instance of `ERPConnect.AbapTimestamp` using
 a 1-based year, month and day.
 
 ```csharp
@@ -78,7 +78,7 @@ The date is invalid. e.g. month 13 or 29.02. in any other year than a leap year.
 
 ### <a id="ERPConnect_AbapTimestamp__ctor_System_UInt16__System_Byte__System_Byte__System_TimeSpan__"></a> AbapTimestamp\(in ushort, in byte, in byte, in TimeSpan\)
 
-Initializes a new instance of <xref href="ERPConnect.AbapTimestamp" data-throw-if-not-resolved="false"></xref> using
+Initializes a new instance of `ERPConnect.AbapTimestamp` using
 a 1-based year, month, day and the time of day.
 
 ```csharp
@@ -105,7 +105,7 @@ The date is invalid. e.g. month 13 or 29.02. in any other year than a leap year.
 
 ### <a id="ERPConnect_AbapTimestamp_Day"></a> Day
 
-Gets the current day in currently represented <xref href="ERPConnect.AbapTimestamp.Month" data-throw-if-not-resolved="false"></xref> and <xref href="ERPConnect.AbapTimestamp.Year" data-throw-if-not-resolved="false"></xref>.
+Gets the current day in currently represented `ERPConnect.AbapTimestamp.Month` and `ERPConnect.AbapTimestamp.Year`.
 
 ```csharp
 public byte Day { get; }
@@ -155,7 +155,7 @@ public static AbapTimestamp MinValue { get; }
 
 ### <a id="ERPConnect_AbapTimestamp_Month"></a> Month
 
-Gets the current month in currently represented <xref href="ERPConnect.AbapTimestamp.Year" data-throw-if-not-resolved="false"></xref>.
+Gets the current month in currently represented `ERPConnect.AbapTimestamp.Year`.
 
 ```csharp
 public byte Month { get; }
@@ -224,7 +224,7 @@ public AbapTimestamp AddDays(in int days)
 
  [ArgumentOutOfRangeException](https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception)
 
-The resulting <xref href="ERPConnect.AbapTimestamp" data-throw-if-not-resolved="false"></xref> is out of range of a representable date
+The resulting `ERPConnect.AbapTimestamp` is out of range of a representable date
 
 ### <a id="ERPConnect_AbapTimestamp_AddHours_System_Int32__"></a> AddHours\(in int\)
 
@@ -247,7 +247,7 @@ public AbapTimestamp AddHours(in int hours)
 
  [ArgumentOutOfRangeException](https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception)
 
-The resulting <xref href="ERPConnect.AbapTimestamp" data-throw-if-not-resolved="false"></xref> is out of range of a representable date
+The resulting `ERPConnect.AbapTimestamp` is out of range of a representable date
 
 ### <a id="ERPConnect_AbapTimestamp_AddMinutes_System_Int64__"></a> AddMinutes\(in long\)
 
@@ -270,7 +270,7 @@ public AbapTimestamp AddMinutes(in long minutes)
 
  [ArgumentOutOfRangeException](https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception)
 
-The resulting <xref href="ERPConnect.AbapTimestamp" data-throw-if-not-resolved="false"></xref> is out of range of a representable date
+The resulting `ERPConnect.AbapTimestamp` is out of range of a representable date
 
 ### <a id="ERPConnect_AbapTimestamp_AddSeconds_System_Int64__"></a> AddSeconds\(in long\)
 
@@ -293,7 +293,7 @@ public AbapTimestamp AddSeconds(in long seconds)
 
  [ArgumentOutOfRangeException](https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception)
 
-The resulting <xref href="ERPConnect.AbapTimestamp" data-throw-if-not-resolved="false"></xref> is out of range of a representable date
+The resulting `ERPConnect.AbapTimestamp` is out of range of a representable date
 
 ### <a id="ERPConnect_AbapTimestamp_AddTicks_System_Int64__"></a> AddTicks\(in long\)
 
@@ -415,7 +415,7 @@ public override string ToString()
 
 ### <a id="ERPConnect_AbapTimestamp_TryToDateTime_System_Nullable_System_DateTime___"></a> TryToDateTime\(out DateTime?\)
 
-Tries to convert to the corresponding <xref href="System.DateTime" data-throw-if-not-resolved="false"></xref> value.
+Tries to convert to the corresponding `System.DateTime` value.
 
 ```csharp
 public bool TryToDateTime(out DateTime? value)
@@ -433,11 +433,11 @@ public bool TryToDateTime(out DateTime? value)
 
 The ABAP values 0001-01-01 and 0001-01-02 cannot be converted.
 Assuming the proleptic Julian calendar, they would correspond to 0000-12-30 and 0000-12-31,
-which is out of range for <xref href="System.DateTime" data-throw-if-not-resolved="false"></xref>.
+which is out of range for `System.DateTime`.
 
 ### <a id="ERPConnect_AbapTimestamp_UtcNow"></a> UtcNow\(\)
 
-Gets an <xref href="ERPConnect.AbapTimestamp" data-throw-if-not-resolved="false"></xref> representing the current date and time (UTC).
+Gets an `ERPConnect.AbapTimestamp` representing the current date and time (UTC).
 
 ```csharp
 public static AbapTimestamp UtcNow()
@@ -449,7 +449,7 @@ public static AbapTimestamp UtcNow()
 
 ### <a id="ERPConnect_AbapTimestamp_UtcToday"></a> UtcToday\(\)
 
-Gets an <xref href="ERPConnect.AbapTimestamp" data-throw-if-not-resolved="false"></xref> representing the current date (UTC).
+Gets an `ERPConnect.AbapTimestamp` representing the current date (UTC).
 
 ```csharp
 public static AbapTimestamp UtcToday()
