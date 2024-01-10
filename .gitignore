@@ -1,6 +1,6 @@
 # Build files
-site
-projects/erpconnect/site
+site/
+projects/erpconnect/site/
 
 # Cache
 .cache
