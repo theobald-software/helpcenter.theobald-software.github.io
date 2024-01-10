@@ -22,7 +22,7 @@ theme:
      - content.code.copy # adds copy button in code blocks
     # - content.code.select # adds select button in code blocks
      - content.tabs.link # adds anchors when switching tabs
-     - content.tooltips # enables adding tooltips to links
+    # - content.tooltips # enables adding tooltips to links
     # - header.autohide # hides the header when scrolling down
     # - navigation.expand #displays all pages in the navigation (not good for API Reference)
     # - navigation.footer
@@ -80,6 +80,7 @@ plugins:
   - search:
       separator: '[\s\-,:!=\[\]()"/]+'
   - typeset # preserve format of titles and headlines in navigation and toc
+  #- tooltipster-links
   - awesome-pages # define navigation in .pages files
   - macros:
       include_dir: includes # ../../includes for ERPConnect only
