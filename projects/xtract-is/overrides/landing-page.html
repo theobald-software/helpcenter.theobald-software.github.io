@@ -4,11 +4,5 @@
 {% extends "main.html" %}
 {% block header %}
   {{ super() }}
-  <style>.md-header{position:initial}.container{position:relative;font-family:'Poppins';}.product-title{position:absolute;left:33%;top:45%;transform:translate(-50%,-50%);}</style>
-   <div class="container" style="background-image:url('banner.jpg'); width:100%; background-repeat:no-repeat; background-size:100%;">
-  <div class="md-grid" style="margin-bottom:35px; margin-top:35px; padding-left:20px;">
-  <h1 style="font-size:36px;">Welcome to Xtract IS!</h1>
-  <p style="font-size:16px; text-shadow: #FFFFFF 1px 0 5px;">{{ config.site_description }}</p>
-  </div>
- </div>
+  <img src="banner.jpg" alt="Banner">
 {% endblock %}

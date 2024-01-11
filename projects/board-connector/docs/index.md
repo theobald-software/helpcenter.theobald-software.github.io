@@ -6,9 +6,7 @@ hide:
   - navigation
   - toc
 ---
-<style>
-  .md-typeset h1{
-    display: none;
-  }
-}
-</style>
+
+# Welcome to {{ product }}!
+
+{{ config.site_description }}
