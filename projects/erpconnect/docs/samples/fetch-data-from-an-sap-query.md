@@ -3,7 +3,7 @@ title: Fetch Data from an SAP Query
 description: Fetch Data from an SAP Query
 ---
 
-This sample shows how to fetch flight information of airplanes from an SAP Query
+The following sample shows how to fetch flight information of airplanes from an SAP Query
 
 ### About 
 This sample uses the training Query *D3* that contains flight information of airplanes. <br>

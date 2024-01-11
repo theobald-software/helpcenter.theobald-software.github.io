@@ -1,10 +1,14 @@
 ---
 template: landing-page.html
-title: Home
+title: yunIO HelpCenter
 loc: index
 hide:
   - navigation
   - toc
 ---
-
-# Welcome to the yunIO HelpCenter
+<style>
+  .md-typeset h1{
+    display: none;
+  }
+}
+</style>

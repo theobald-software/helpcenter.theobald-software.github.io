@@ -1,11 +1,12 @@
 # Copyright (c) 2016-2023 Martin Donath <martin.donath@squidfunk.com>
 
 # Project information
-site_name: yunIO Helpcenter
+site_name: yunIO HelpCenter
 #site_url: http://erpconnect.theobald-software.com/
 #site_author: Valerie Schipka
 site_description: >-
-  SAP process automation via web services for cloud environments.
+  yunIO enables SAP process automation via web services for cloud environments.<br>
+  Learn how to use yunIO by browsing our quick start guide, documentation, samples and more.
 
 # Repository
 # repo_name: theobald-software/helpcenter.theobald-software.github.io
@@ -111,7 +112,7 @@ markdown_extensions:
       toc_depth: 3 # define the depth of headlines for the table of content
       #permalink: "#"
       separator: "-"
-      # title: On this Page:
+      title: On this Page
   - pymdownx.snippets:
       base_path: includes
   - pymdownx.superfences #for content tabs (version history)

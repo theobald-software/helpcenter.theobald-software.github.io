@@ -1,7 +1,7 @@
 # Copyright (c) 2016-2023 Martin Donath <martin.donath@squidfunk.com>
 
 # Project information
-site_name: Theobald Software Helpcenter
+site_name: Theobald Software HelpCenter
 site_url: https://helpcenter.theobald-software.com/
 #site_author: Valerie Schipka
 site_description: >-
@@ -15,7 +15,7 @@ repo_name: theobald-software/helpcenter.theobald-software.github.io
 copyright: Copyright &copy; 2024 Theobald Software GmbH <br><span style="color:#808080">“The best SAP interface is the one you don’t even notice.” - Patrick Theobald </span>
 watch:
   - includes
-  
+
 # Configuration
 theme:
   name: material

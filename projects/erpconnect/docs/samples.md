@@ -60,7 +60,7 @@ hide:
 
 <div class="mdx-columns" markdown>
 
-- [Execute BW Queries](samples/execute-bw-queries.md)
+- [Fetch Data from a BW Query](samples/execute-bw-queries.md)
 
 </div>
 

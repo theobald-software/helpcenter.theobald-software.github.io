@@ -1,12 +1,12 @@
 ---
-title: Execute BW Queries
+title: Fetch Data from a BW Query
 description: Executing BW Queries
 ---
 
 The following sample shows how to fetch data from a BW Query using ERPConnect.
 
 ### About
-This example uses the BW query *ZSIMPLEQUERY* which is based on the cube *0D_DECU*. <br>
+This sample uses the BW query *ZSIMPLEQUERY* which is based on the cube *0D_DECU*. <br>
 The following screenshot shows the query in the designer. 
 
 ![BW-001]( site:assets/images/erpconnect/samples/BW-001.png){:class="img-responsive" }

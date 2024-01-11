@@ -1,10 +1,14 @@
 ---
 template: landing-page.html
-title: Home
+title: Xtract for Alteryx HelpCenter
 loc: index
 hide:
   - navigation
   - toc
 ---
-
-# Welcome to the Xtract for Alteryx HelpCenter
+<style>
+  .md-typeset h1{
+    display: none;
+  }
+}
+</style>

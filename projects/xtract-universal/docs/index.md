@@ -1,10 +1,14 @@
 ---
 template: landing-page.html
-title: Home
+title: Xtract Universal HelpCenter
 loc: index
 hide:
   - navigation
   - toc
 ---
-
-# Welcome to the Xtract Universal HelpCenter
+<style>
+  .md-typeset h1{
+    display: none;
+  }
+}
+</style>

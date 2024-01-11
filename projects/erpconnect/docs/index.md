@@ -6,44 +6,21 @@ hide:
   - navigation
   - toc
 ---
-
-# Welcome to the ERPConnect HelpCenter
-
-<div class="grid cards" markdown>
-
--   ![img](site:assets/images/icons/theo-thumbs.png){ .lg width="30px"} Hi, I'm Theo. I'll be your guide.
-
-</div>
-
-<!--
-<div class="grid cards" markdown>
-
--   [:material-download-circle: Download ERPConnect](https://my.theobald-software.com/)
-
--   [:material-update: Latest updates](changelog.md)
-
--   [:material-run-fast: How to get started](quick-start.md)
-
--   [:material-file-document-outline: Code samples and use cases](samples/index.md)
-
--   [:material-lightbulb: Common Errors](https://support.theobald-software.com/helpdesk/KB)
-
--   [:material-email: Contact Support](https://support.theobald-software.com/helpdesk)
-
--   [:material-information: Product Information](https://theobald-software.com/en/erpconnect/)
-
--   [:material-comment-quote: Feedback](https://theobald-software.typeform.com/to/CnpfiiIN)
-
-</div>
--->
+<style>
+  .md-typeset h1{
+    display: none;
+  }
+}
+</style>
 
 <div class="grid cards" markdown>
 
 -   **ERPConnect:**
 
 	[:material-information-outline: Product Information](https://theobald-software.com/en/erpconnect/)<br>
+	[:material-download-circle: Download Trial Version](https://theobald-software.com/en/download-trial/)<br>
 	[:material-download-circle: Download ERPConnect](https://my.theobald-software.com/)<br>
-    [:material-update: Latest updates](changelog.md)
+    [:material-update: Changelog](changelog.md)
 	
 -   **Ressources:**
 

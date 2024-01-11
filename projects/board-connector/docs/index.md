@@ -1,10 +1,14 @@
 ---
 template: landing-page.html
-title: Home
+title: Board Connector HelpCenter
 loc: index
 hide:
   - navigation
   - toc
 ---
-
-# Welcome to the Board Connector HelpCenter
+<style>
+  .md-typeset h1{
+    display: none;
+  }
+}
+</style>

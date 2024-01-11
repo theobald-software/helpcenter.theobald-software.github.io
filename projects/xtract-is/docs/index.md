@@ -1,10 +1,14 @@
 ---
 template: landing-page.html
-title: Home
+title: Xtract IS HelpCenter
 loc: index
 hide:
   - navigation
   - toc
 ---
-
-# Welcome to the Xtract IS HelpCenter
+<style>
+  .md-typeset h1{
+    display: none;
+  }
+}
+</style>

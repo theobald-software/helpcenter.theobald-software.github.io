@@ -12,7 +12,7 @@ hide:
 
 ### Installation
 
-1. [Download](https://theobald-software.com/testversion-herunterladen) a 30 days trial version of ERPConnect.
+1. [Download](https://theobald-software.com/en/download-trial/) a 30 days trial version of ERPConnect.
 2. Run the ERPConnect executable to install ERPConnect.
 For information on system requirements, see [Requirements](documentation/introduction/requirements.md).
 3. Download one of the following SAP libraries from the SAP Marketplace download area: 
