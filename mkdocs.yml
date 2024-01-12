@@ -119,4 +119,5 @@ markdown_extensions:
           case: lower
   - pymdownx.tasklist:
       custom_checkbox: true
-  
+  # breakless lists (for migration)
+  - mdx_breakless_lists
