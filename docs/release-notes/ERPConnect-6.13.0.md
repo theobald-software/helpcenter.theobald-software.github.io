@@ -1,6 +1,3 @@
----
-layout: releaseNotes
----
 
 # ERPConnect 6.13.0
 

@@ -1,6 +1,3 @@
----
-layout: releaseNotes
----
 
 # ERPConnect 5.0.0 Release Note
 

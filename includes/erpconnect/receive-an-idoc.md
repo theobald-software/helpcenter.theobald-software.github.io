@@ -15,7 +15,7 @@ Within this segment, several *E2MAKTM001* child segments contain material descri
 
 Follow the steps below to receive a MATMAS IDoc:
 
-1. Create an RFC Server object to accept calls from SAP, see [RFC Server](site:documentation/rfc-server/create-rfc-functions.md) for more information.
+1. Create an RFC Server object to accept calls from SAP, see [RFC Server](site:documentation/rfc-server/create-rfc-functions) for more information.
 2. To receive IDocs with the *RFCServer* object, set the property `CanReceiveIdocs` to *true*.<br>
 3. When an IDoc is received by ERPConnect, the event `IncomingIdoc` is triggered and a reference to the *RFCServer* object and to the *IDoc* object is transferred. 
 4. Use the `IncomingIdoc` event to read the data buffer of the child segment *E2MAKTM001*. 
