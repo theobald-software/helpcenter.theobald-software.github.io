@@ -1,4 +1,5 @@
 nav:
     - index.md
     - markdown-sample.md
+    - administration.md
 collapse: false
