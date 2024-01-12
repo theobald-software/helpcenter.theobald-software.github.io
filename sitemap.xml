@@ -6,11 +6,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://helpcenter.theobald-software.com/markdown-sample/</loc>
-         <lastmod>2024-01-12</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://helpcenter.theobald-software.com/editorial-guide/</loc>
          <lastmod>2024-01-12</lastmod>
          <changefreq>daily</changefreq>
@@ -22,6 +17,11 @@
     </url>
     <url>
          <loc>https://helpcenter.theobald-software.com/editorial-guide/glossary/</loc>
+         <lastmod>2024-01-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://helpcenter.theobald-software.com/editorial-guide/link-checker/</loc>
          <lastmod>2024-01-12</lastmod>
          <changefreq>daily</changefreq>
     </url>

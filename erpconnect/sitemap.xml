@@ -26,6 +26,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://helpcenter.theobald-software.com/erpconnect/documentation/about/</loc>
+         <lastmod>2024-01-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://helpcenter.theobald-software.com/erpconnect/documentation/abap/</loc>
          <lastmod>2024-01-12</lastmod>
          <changefreq>daily</changefreq>

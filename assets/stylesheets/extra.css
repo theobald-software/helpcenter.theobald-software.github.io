@@ -16,3 +16,6 @@
   --md-color-accent: #FF003C;
   */
   
+.md-tabs {
+  display: none;
+}
