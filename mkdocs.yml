@@ -21,7 +21,7 @@ theme:
   name: material
   custom_dir: overrides # overrides enable for announcements
   features:
-     - content.tooltips # enables adding tooltips to links
+     - content.code.copy # adds copy button in code blocks
      - navigation.expand # displays all pages in the navigation by default
      - navigation.indexes # adds landing pages for groups (index.md)
   palette:

@@ -76,7 +76,7 @@ Note that some plugins can be incompatible with other plugins.
 
 Here is a list with some available plugins: [Best-of Catalog](https://github.com/best-of-lists/best-of).
 
-### Upgrade the Material Theme
+### Upgrade Material Theme
 
 - Look up your current version: 
 	
@@ -101,14 +101,14 @@ How to upgrade:
 
 	=== "Upgrade Material to latest release"
 
-		When prompted, authorize the upgrade using the TSDEV GitHub account in your browser.
+		When prompted, authorize the upgrade using the TSEDV GitHub account in your browser.
 		
 		```
 		pip install --upgrade --force-reinstall mkdocs-material
 		pip install --upgrade git+https://${GH_TOKEN}@github.com/squidfunk/mkdocs-material-insiders.git
 		```
 
-4. After the upgrade is finished, log out of the TSDEV account.
+4. After the upgrade is finished, log out of the TSEDV account.
 
 !!! note
 	To upgrade the hosted version of the HelpCenter to a specific release, edit the the following line of the GitHub workflow in `C:\Source\helpcenter.theobald-software.github.io\.github\workflows`:
