@@ -1,3 +1,4 @@
 nav:
-    - editorial-guide
+    - Editorial Guide: editorial-guide
+    - Release Notes: release-notes
 collapse_single_pages: false

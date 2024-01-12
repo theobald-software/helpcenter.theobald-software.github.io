@@ -13,7 +13,7 @@ Highlighted folders are linked to each other via symlink.
 │   └───workflows #contains the GitHub workflow for publishing
 ├───docs
 │   ├───assets #contains images and stylesheets for the product page
-│   ├───editorial-guide #contains content and images of the editorial guide
+│   ├───editorial-guide #contains content of the editorial guide
 │   └───release-notes #contains release-notes for all products
 ├───files #contains downloadable files
 ├───images #contains images for all products
@@ -133,7 +133,7 @@ How to upgrade:
 	- [ ] track search bars
 	- [ ] track "Was this page helpful?"
 - [x] Breakless Lists (for Migration)
-- [ ] LinkChecker
+- [x] LinkChecker
 - [ ] [SpellChecker](https://github.com/pawamoy/mkdocs-spellcheck) 
 - [ ] Customizations:
 	- [ ] Custom header

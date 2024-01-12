@@ -9,4 +9,5 @@ nav:
     - RFC Server Fuctions: rfc-server
     - Table: table
     - Transactions: transactions
+    - About this Documentation: about.md
 collapse_single_pages: false

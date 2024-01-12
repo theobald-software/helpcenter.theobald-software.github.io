@@ -19,7 +19,7 @@ An existing RFC destination is necessary for sending IDocs.
 If everything works well, you should see a screen like the one below:<br>
 ![rfcdestination02](site:assets/images/erpconnect/Maintain-RFC-Destination-002.png)
 
-An example for a simple RFC server program can be found in section [RFC-Server](site:documentation/rfc-server/create-rfc-functions.md)
+An example for a simple RFC server program can be found in section [RFC-Server](site:documentation/rfc-server/create-rfc-functions/)
 
 !!! note
     If the RFC Destination is set to Unicode, the property *IsUnicode* of the RFCServer object must be set to *true*.

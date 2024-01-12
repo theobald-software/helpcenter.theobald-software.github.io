@@ -1,5 +1,4 @@
 ---
-template: overview.html
 title: Theobald Software HelpCenter
 hide:
   - navigation
