@@ -2,6 +2,17 @@
 title: Glossary
 ---
 
+### `Front Matter`
+
+:   Front matter refers to the section of a markdown file at the beginning of the file that gives context to the content of the file, e.g., title, status, etc.
+	
+	```
+	---
+	title: Glossary
+	description: A brief dictionary.
+	---
+	```
+	
 ### `Insiders`
 
 :   The sponsorship program of the Material theme. Access to Insiders means access to exclusive features, as well as prioritized support.

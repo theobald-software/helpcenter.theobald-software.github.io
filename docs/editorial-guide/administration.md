@@ -2,51 +2,6 @@
 title: Administration
 ---
 
-### Folder Structure
-
-The following treeview illustrates the general folder structure in the HelpCenter repository.
-Highlighted folders are linked to each other via symlink.
-
-``` bash hl_lines="8 9 23 24"
-├───.cache
-├───.github
-│   └───workflows #contains the GitHub workflow for publishing
-├───docs
-│   ├───assets #contains images and stylesheets for the product page
-│   ├───editorial-guide #contains content of the editorial guide
-│   └───release-notes #contains release-notes for all products
-├───files #contains downloadable files
-├───images #contains images for all products
-│   ├───[product name] #contains images for the specific product
-│   │   └───articles #contains images from the old Knowledge Base
-│   └───icons 
-├───includes #contains .md files that can be referenced in all products
-│   ├───articles #contains general content from the old Knowledge Base
-│   ├───[product name] #contains content for the specific product 
-│   ├───requirements #contains general content from the old Online Help
-│   └───version-history #contains the version history of all products
-├───overrides #contains custom designs, e.g., 404 page
-├───projects #contains content of product pages
-│   └───[product name]
-│       ├───docs #contains the content pages of the HelpCenter
-│       │   ├───assets #contains images, files and stylesheets for the product
-│       │   │   ├───files #reference to parent folder
-│       │   │   ├───images #reference to parent folder
-│       │   │   └───stylesheets
-│       │   ├───documentation #contains the migrated Online Help
-│       │   └───articles #contains the migrated Knowledge Base
-│       ├───overrides #contains custom designs, e.g. banner & announcements
-│       ├───projects
-│       └───site  #contains the built html product page
-└───site #contains the built html pages of all products
-```
-
-<!---
-<div class="result" markdown>
-Test results
-</div>
--->
-
 ### Install External Plugins
 
 External plugins need to be explicitly installed, while [build-in plugins](https://squidfunk.github.io/mkdocs-material/plugins/) only need to be activated in the mkdocs.yml file.
@@ -90,7 +45,7 @@ Here is a list with some available plugins: [Best-of Catalog](https://github.com
 
 How to upgrade:
 
-1. Log in to GitHub with the TSDEV account (credentials and TOTP authenticator “GitHub General Account” are available in Psono).
+1. Log in to GitHub with the TSEDV account (credentials and TOTP authenticator “GitHub General Account” are available in Psono).
 2. === "Upgrade Material to specific release"
 
 		Replace the tag at the end of the URL of the command given below. 
@@ -134,7 +89,6 @@ How to upgrade:
 	- [ ] track "Was this page helpful?"
 - [x] Breakless Lists (for Migration)
 - [x] LinkChecker
-- [ ] [SpellChecker](https://github.com/pawamoy/mkdocs-spellcheck) 
 - [ ] Customizations:
 	- [ ] Custom header
 	- [ ] Table filters for changelog
@@ -150,6 +104,7 @@ How to upgrade:
 
 #### Optional
 
+- [ ] [SpellChecker](https://github.com/pawamoy/mkdocs-spellcheck) 
 - [ ] [Automatic Title Casing](https://github.com/mattchristopher314/mkdocs-title-casing-plugin)
 - [ ] [Tooltips Preview](https://github.com/zachhannum/mkdocs-tooltipster-links-plugin) (optional)
 - [ ] [Unused Files](https://github.com/wilhelmer/mkdocs-unused-files) (obsolete with latest ImageReferenceChecker?)

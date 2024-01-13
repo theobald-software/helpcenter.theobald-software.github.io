@@ -2,7 +2,8 @@ nav:
     - Guidelines:
         - markdown-sample.md
     - Administration:
-        - administration.md
-        - link-checker.md
         - glossary.md
+        - administration.md
+        - files-and-folders.md
+        - link-checker.md
 collapse: false
