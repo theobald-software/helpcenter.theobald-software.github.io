@@ -106,7 +106,7 @@ tags:
 
 	=== "Regular .md files"
 		Directory:<br>
-		`helpcenter.theobald-software.github.io\projects\erpconnect\docs\{==documentation\introduction\requirements.md==}`
+		`helpcenter.theobald-software.github.io\projects\erpconnect\{==docs\documentation\introduction\requirements.md==}`
 		
 		URL:<br>
 		`https://helpcenter.theobald-software.com/erpconnect/{==documentation/introduction/requirements/==}`
