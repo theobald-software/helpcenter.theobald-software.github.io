@@ -1,5 +1,5 @@
 ---
-title: Link Checker
+title: LinkChecker
 ---
 
 ### About LinkChecker

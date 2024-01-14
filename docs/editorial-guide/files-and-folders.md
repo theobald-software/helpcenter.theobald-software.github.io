@@ -13,6 +13,9 @@ Highlighted folders are linked to each other via symlink.
 │   └───workflows #contains the GitHub workflow for publishing
 ├───docs
 │   ├───assets #contains images and stylesheets for the product page
+│   │   ├───images
+│   │   │   └───editorial-guide #contains images for the editorial-guide
+│   │   └───stylesheets 
 │   ├───editorial-guide #contains content of the editorial guide
 │   └───release-notes #contains release-notes for all products
 ├───files #contains downloadable files
@@ -46,36 +49,38 @@ Highlighted folders are linked to each other via symlink.
 Every product has a `/docs` folder that should contain the following files and folders:
 
 ``` bash 
-├───articles ##contains images from the old Knowledge Base (this folder is named "samples" in ERPConnect)
-│   ├───... #migrated articles from the old Online Help
-│   ├───.pages
-│   └───.meta.yml
+├───articles.md #contains a list of articles (this file is named "samples" in ERPConnect)
+├───articles #contains articles (this folder is named "samples" in ERPConnect)
+│   ├───... #migrated content from the old Knowledge Base
+│   ├───.pages #contains the navigation for this folder
+│   └───.meta.yml #contains front matter items that are added to all files in this folder
 ├───assets
 │   ├───files
-│   │   └───sap_roles
+│   │   └───... #downloadable files
 │   ├───images
 │   │	├───[product name] #contains images for the specific product
-│   │   │	└───articles #contains images from the old Knowledge Base
+│   │   │	└───articles #contains images from the old Knowledge Base (exists in every product)
 │   │   └───icons
 │   │       ├───components
 │   │       └───products
-│   └───stylesheets
+│   └───stylesheets #contains additional/custom Designs for the product
 ├───documentation
-│   ├───... #migrated content from the Online Help
-│   ├───.pages
-│   └───.meta.yml
+│   ├───about.md #contains disclaimers (former "About this Online Help"
+│   ├───... #migrated content from the old Online Help
+│   ├───.pages #contains the navigation for this folder
+│   └───.meta.yml #contains front matter items that are added to all files in this folder
 ├───.pages
-├───changelog.md #page for the new version history
+├───changelog.md #contains the new version history
 ├───index.md #landing page of the product
 ├───quick-start.md #migrated "getting started" page from the old Online Help (if quickstart consists of multiple pages, create a folder instead)
-└───troubleshooting.md #list of troubleshooting articles in jitbit
+└───troubleshooting.md #contains a list of troubleshooting articles in jitbit
 ```
 
 ### Front Matter Items
 
 List of available front matter items:
 
-``` bash
+``` yaml
 ---
 search: 
   - exclude: true
@@ -94,3 +99,56 @@ tags:
   - random
 ---
 ```
+
+### How to add new content
+
+1. Choose a directory / URL for the new content. The URL is relative to the docs directory. Example:<br>
+
+	=== "Regular .md files"
+		Directory:<br>
+		`helpcenter.theobald-software.github.io\projects\erpconnect\docs\{==documentation\introduction\requirements.md==}`
+		
+		URL:<br>
+		`https://helpcenter.theobald-software.com/erpconnect/{==documentation/introduction/requirements/==}`
+
+	=== "index.md files"
+		Directory:<br>
+		`helpcenter.theobald-software.github.io\projects\erpconnect\docs\{==documentation\introduction\index.md==}`
+		
+		URL:<br>
+		`https://helpcenter.theobald-software.com/erpconnect/{==documentation/introduction/==}`
+		
+2. Create a new .md file in the chosen directory. Filenames use "-" instead of empty spaces, e.g., `bapis-and-function-modules.md`.
+3. Define the following front matter items in the .md file:
+
+	``` yaml
+	title: Page Title
+	description: I’m a description
+	status: new # this is optional, available are "new", "deprecated" or "beta" 
+	```
+	Other front matter items are usually defined in .meta.yml files.
+4. Fill the .md file with content.
+5. Open the .pages file that is located in the same directory as the .md file. If no .pages file exists, create one.
+6. Add the name of the new .md file to the list of pages in the navigation. 
+The sequence of the listed files directly translates to the sequence of the rendered navigation items.
+
+	``` yaml
+	nav:
+		- index.md
+		- requirements.md
+		- saplibraries.md
+		- installation.md
+		- licensing.md
+	collapse_single_pages: false
+	```
+	
+	!!! warning 
+		The list uses a special format, so simply pressing enter after a list item to add a new item will throw an error.
+		Copy and paste an existing line and only replace the name of the .md file.
+7. Build a preview of the project without the `dirtyreload` option.
+8. Run [LinkChecker](linkchecker.md) on your preview page to check if references in the new .md file are valid. Example:
+	```
+	linkchecker http://localhost:8000/erpconnect/documentation/introduction/requirements/
+	```
+9. Review the content and push it to GitHub.
+

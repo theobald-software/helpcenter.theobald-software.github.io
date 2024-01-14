@@ -94,6 +94,7 @@ markdown_extensions:
   - def_list
   - md_in_html
   - tables
+  - pymdownx.critic
   - toc:
       toc_depth: 3
       #permalink: true

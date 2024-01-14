@@ -149,10 +149,6 @@ You can use regular markdown syntax in grid cards to add links, images, etc. Exa
 
 Coming soon...
 
-### Variables
-
-Coming soon...
-
-### Meta Data
+### Variables & Meta Data
 
 Coming soon...

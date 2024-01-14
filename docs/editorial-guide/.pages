@@ -5,5 +5,5 @@ nav:
         - glossary.md
         - administration.md
         - files-and-folders.md
-        - link-checker.md
+        - linkchecker.md
 collapse: false

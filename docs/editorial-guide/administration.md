@@ -4,7 +4,8 @@ title: Administration
 
 ### Install External Plugins
 
-External plugins need to be explicitly installed, while [build-in plugins](https://squidfunk.github.io/mkdocs-material/plugins/) only need to be activated in the mkdocs.yml file.
+!!! note
+	External plugins need to be explicitly installed, while [build-in plugins](https://squidfunk.github.io/mkdocs-material/plugins/) only need to be activated in the mkdocs.yml file.
 
 1. Install the plugin on your machine using the `pip` command in the commandline tool. Example:
 
@@ -89,6 +90,9 @@ How to upgrade:
 	- [ ] track "Was this page helpful?"
 - [x] Breakless Lists (for Migration)
 - [x] LinkChecker
+- [ ] Troubleshooting
+	- [ ] update / define which troubleshooting articles to include in the HelpCenter (add new tag for articles)
+	- [ ] automate article list
 - [ ] Customizations:
 	- [ ] Custom header
 	- [ ] Table filters for changelog
