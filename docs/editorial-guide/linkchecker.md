@@ -11,8 +11,10 @@ Additionally, all external links pointing outside of www.example.org will be che
 For more information, see [LinkChecker Website](https://linkchecker.github.io/linkchecker/install.html).
 
 !!! note
-	Run the LinkChecker after every release.
-	
+	LinkChecker does not work well with images. Check images using the warnings in the console when serving a project:<br>
+	![broken-links-in-console](../assets/images/editorial-guide/broken-links-in-console.png)
+
+
 ### Install LinkChecker
 
 Open the commandline tool and run the following command:
@@ -23,32 +25,42 @@ pip install LinkChecker
 
 ### Use LinkChecker
 
-Open the commandline tool and run the following command:
+Open the commandline tool and run one of the following commands:
 
 === "Check all pages"
 
 	```
-	linkchecker https://helpcenter.theobald-software.com/
+	linkchecker --no-warnings --no-status https://helpcenter.theobald-software.com/
 	```
 
 === "Check specific product"
 
 	```
-	linkchecker https://helpcenter.theobald-software.com/erpconnect/
+	linkchecker --no-warnings --no-status https://helpcenter.theobald-software.com/erpconnect/
 	```
+
+=== "Check single pages"
+
+	```
+	linkchecker --no-warnings --no-status -r 0 https://helpcenter.theobald-software.com/
+	```
+
+!!! note
+	LinkChecker can be used to validate links in local .html files and local builds. <br>
+	:octicons-arrow-right-24: Use LinkChecker to check links in your localhost preview (product-level only) before pushing new content to GitHub.
 
 #### Results
 
 LinkChecker returns information about broken links, runtime and statistics about the linked content.
 
-If broken links are detected, the following information are printed into the console:
+If broken links are detected, the following information is printed to the console:
 
 | Result | Description |
 | -------- | ------- |
 | URL| Link as defined in the source page   |
 | Name | Name of the link   |
-| Parent URL | Source page (page that contains the link)    |
-| Real URL    | Target page   |
+| Parent URL | Source page that contains the link    |
+| Real URL    | Target page that is linked to  |
 | Result    | HTML return code, e.g., 404, 200, etc.  |
 
 Examples:

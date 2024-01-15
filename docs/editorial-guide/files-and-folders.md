@@ -105,17 +105,17 @@ tags:
 1. Choose a directory / URL for the new content. The URL is relative to the docs directory. Example:<br>
 
 	=== "Regular .md files"
-		Directory:<br>
+		- Directory:
 		`helpcenter.theobald-software.github.io\projects\erpconnect\{==docs\documentation\introduction\requirements.md==}`
 		
-		URL:<br>
+		- URL:
 		`https://helpcenter.theobald-software.com/erpconnect/{==documentation/introduction/requirements/==}`
 
 	=== "index.md files"
-		Directory:<br>
-		`helpcenter.theobald-software.github.io\projects\erpconnect\docs\{==documentation\introduction\index.md==}`
+		- Directory:
+		`helpcenter.theobald-software.github.io\projects\erpconnect\{==docs\documentation\introduction\index.md==}`
 		
-		URL:<br>
+		- URL:
 		`https://helpcenter.theobald-software.com/erpconnect/{==documentation/introduction/==}`
 		
 2. Create a new .md file in the chosen directory. Filenames use "-" instead of empty spaces, e.g., `bapis-and-function-modules.md`.
@@ -143,12 +143,12 @@ The sequence of the listed files directly translates to the sequence of the rend
 	```
 	
 	!!! warning 
-		The list uses a special format, so simply pressing enter after a list item to add a new item will throw an error.
+		The navigation list uses a special format, so simply pressing enter after a list item to add a new item will throw an error.
 		Copy and paste an existing line and only replace the name of the .md file.
 7. Build a preview of the project without the `dirtyreload` option.
 8. Run [LinkChecker](linkchecker.md) on your preview page to check if references in the new .md file are valid. Example:
 	```
-	linkchecker http://localhost:8000/erpconnect/documentation/introduction/requirements/
+	linkchecker linkchecker --no-warnings --no-status -r 0 http://localhost:8000/erpconnect/documentation/introduction/requirements/
 	```
 9. Review the content and push it to GitHub.
 
