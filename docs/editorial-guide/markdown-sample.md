@@ -4,6 +4,8 @@ title: Markdown Samples
 
 Migrate content from the Editorial Guide.
 
+## New Features
+
 ### Content Tabs
 
 Use content tabs for code blocks and the changelog.

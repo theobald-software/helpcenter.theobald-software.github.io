@@ -52,7 +52,7 @@ hide:
     ---
 	
 	Breaking Changes: <br>
-	Obsolete APIs in the *R3Connection* class have been removed, see [Release Notes](https://helpcenter.theobald-software.com/release-notes/ERPConnect-7.6.0).
+	Obsolete APIs in the *R3Connection* class have been removed, see [Release Notes](https://helpcenter.theobald-software.com/release-notes/ERPConnect-7.6.0/).
 	
 	---
 	
@@ -113,14 +113,16 @@ hide:
 	The tables that cause the bug contain at least one column of type F (floating point). <br>
 	There are two ways to avoid this error:
 	<li> Create a view in SAP over the table that causes the error. Leave out all columns of type F and use the `ReadTable` class to run the view instead of the table.</li>
-	<li> Install the function module [Z_XTRACT_IS_TABLE](https://help.theobald-software.com/en/xtract-universal/sap-customizing/custom-function-module-for-table-extraction) into your system. Then call the method `ReadTable.SetCustomFunctionModule(“Z_XTRACT_IS_TABLE”)` before running the extraction. </li>
+	<li> Install the function module [Z_XTRACT_IS_TABLE](https://help.theobald-software.com/en/xtract-universal/sap-customizing/custom-function-module-for-table-extraction) into your system. 
+	Then call the method `ReadTable.SetCustomFunctionModule(“Z_XTRACT_IS_TABLE”)` before running the extraction. </li>
 
 ??? question "What do I do when I get the exception `DATA_BUFFER_EXCEEDED`?"
 	This error is caused by a bug in one of the SAP’s own function modules. 
 	The tables that cause the bug contain at least one column of type F (floating point). <br>
 	There are two ways to avoid this error:
 	<li> Create a view in SAP over the table that causes the error. Leave out all columns of type F and use the `ReadTable` class to run the view instead of the table.</li>
-	<li> Install the function module [Z_XTRACT_IS_TABLE](https://help.theobald-software.com/en/xtract-universal/sap-customizing/custom-function-module-for-table-extraction) into your system. Then call the method `ReadTable.SetCustomFunctionModule(“Z_XTRACT_IS_TABLE”)` before running the extraction. </li>
+	<li> Install the function module [Z_XTRACT_IS_TABLE](https://help.theobald-software.com/en/xtract-universal/sap-customizing/custom-function-module-for-table-extraction) into your system. 
+	Then call the method `ReadTable.SetCustomFunctionModule(“Z_XTRACT_IS_TABLE”)` before running the extraction. </li>
 
 ??? question "How can I fix the error `Entry too long (please enter in the format --____)` when using date parameters?"
 	Use the technical format YYYYMMDD, e.g., 20240711 for date values. Date formats such as "11-07-2024" are not accepted.

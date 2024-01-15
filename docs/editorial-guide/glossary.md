@@ -12,6 +12,14 @@ title: Glossary
 	description: A brief dictionary.
 	---
 	```
+
+### `GitHub Workflow`
+
+:   The GitHub workflow defines what happens when content is pushed to the main branch in GitHub. 
+	It contains the version of Material and Insiders as well as the plugins that are used when hosting the HelpCenter.
+	
+	The workflow is located in `C:\Source\helpcenter.theobald-software.github.io\.github\workflows`. 
+	Once the workflow is triggered, it can be [monitored](https://github.com/theobald-software/helpcenter.theobald-software.github.io/actions/workflows/ci.yml) on GitHub.
 	
 ### `Insiders`
 
@@ -21,6 +29,12 @@ title: Glossary
 
 :   An open source framework to create static websites (Jekyll alternative with a focus on documentation).
 
+### `mkdocs.yml`
+
+:   The configuration file for MKDocs projects. The mkdocs.yml file contains the setup of the Material theme, plugins, variables and other important definitions used in an MKDocs project. 
+	
+	The file is located in the root directory of an MKDocs project. Every Theobald Software product has it's own mkdocs.yml file. 
+
 ### `Material Theme`
 
 :   An open source theme for MKDocs that comes with multiple features and plugins.
@@ -29,7 +43,12 @@ title: Glossary
 
 :   Additional syntax that can be used in .md files, e.g., to define admonitions, tabbed content, grid cards.
 	To activate a markdown extension in MKDocs, it needs to be listed in the mkdocs.yml.
-	
+
+### `pip`
+
+:   `pip` is Python tool to download and install packages from PyPI and other Python package indexes. 
+	The `pip` command can be used in the Windows commandline tool to install plugins for MKDocs.
+
 ### `Plugin`
 
 :   Additional features that can be added to MKDocs. 

@@ -126,6 +126,6 @@ For more information on the SSO configuration, see [SAP Help - Single Sign-On Co
 
 ****
 #### Related Links
-- [Knowledge Base Article - SNC/SSO User Rights](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights).
+- [Knowledge Base Article - SNC/SSO User Rights](../../samples/authority-objects-sap-user-rights.md).
 - [SAP Help - Secure Network Communications (SNC)](http://help.sap.com/saphelp_nw70ehp1/helpdata/en/e6/56f466e99a11d1a5b00000e835363f/content.htm).
 - [SAP Help - Single Sign-On](https://help.sap.com/viewer/e815bb97839a4d83be6c4fca48ee5777/7.5.9/en-US/89d115110d444d85a94dff7ffd0e2b7f.html)

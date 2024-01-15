@@ -2,6 +2,49 @@
 title: Administration
 ---
 
+
+### To-Do List
+
+- [x] Setup repository
+- [x] Setup folder structure 
+- [x] Setup product overview (landing page)
+- [x] Setup projects for products
+- [x] Setup symlinks for images and files
+- [x] Setup hidden content for editorial guide + release notes
+- [x] Migrate ERPConnect content
+- [x] Setup GitHub Pages
+- [ ] Setup Google Analytics:
+	- [x] track users
+	- [x] track search bars
+	- [ ] track "Was this page helpful?"
+- [x] Breakless Lists (for migration)
+- [x] LinkChecker
+- [ ] Troubleshooting
+	- [ ] update / define which troubleshooting articles to include in the HelpCenter (add new tag for articles)
+	- [ ] automate article list
+- [ ] Customizations:
+	- [ ] Custom header
+	- [ ] Table filters for changelog
+- [ ] Add a "summary" admonition
+- [ ] Editorial Guide:
+	- [ ] Migrate and update current [editorial guide](https://help.theobald-software.com/en/editorial-guide)
+	- [ ] Front matter items (how and when to use them)
+	- [ ] Tags (how and when to use them)
+	- [ ] Variables (how and when to use them)
+	- [ ] Meta data (how and when to use them)
+- [ ] UI for building local previews
+- [ ] Setup a template for bug reports
+- [ ] Test language setup
+- [ ] .pdf export (define a template)
+
+#### Optional
+
+- [ ] [Tooltips Preview](https://github.com/zachhannum/mkdocs-tooltipster-links-plugin)
+- [ ] [SpellChecker](https://github.com/pawamoy/mkdocs-spellcheck) 
+- [ ] [Automatic Title Casing](https://github.com/mattchristopher314/mkdocs-title-casing-plugin)
+- [ ] [Unused Files](https://github.com/wilhelmer/mkdocs-unused-files) (obsolete with latest ImageReferenceChecker?)
+
+
 ### Install External Plugins
 
 !!! note
@@ -34,6 +77,8 @@ Here is a list with some available plugins: [Best-of Catalog](https://github.com
 
 ### Upgrade Material Theme
 
+Before you start:
+
 - Look up your current version: 
 	
 	```
@@ -64,54 +109,15 @@ How to upgrade:
 		pip install --upgrade git+https://${GH_TOKEN}@github.com/squidfunk/mkdocs-material-insiders.git
 		```
 
-4. After the upgrade is finished, log out of the TSEDV account.
-
-!!! note
-	To upgrade the hosted version of the HelpCenter to a specific release, edit the the following line of the GitHub workflow in `C:\Source\helpcenter.theobald-software.github.io\.github\workflows`:
+4. After the upgrade is done, log out of the TSEDV account.
+5. Build a preview of the project and test backward compatibility.
+6. If the tests are successful, edit the the material and insiders version in the following line of the GitHub workflow in `C:\Source\helpcenter.theobald-software.github.io\.github\workflows`:
 
 	```
 	- run: pip install git+https://${GH_TOKEN}@github.com/squidfunk/mkdocs-material-insiders.git@9.5.3-insiders-4.49.0
 	```
-	
-	To avoid breaking changes, do not set the workflow to update to the latest release.
 
-
-### To-Do List
-
-- [x] Setup folder structure 
-- [x] Setup symlinks for images and files
-- [x] Setup product overview (landing page)
-- [x] Setup hidden content for editorial guide + release notes
-- [x] Migrate ERPConnect content
-- [x] Setup GitHub Pages
-- [ ] Setup Google Analytics:
-	- [x] track users
-	- [ ] track search bars
-	- [ ] track "Was this page helpful?"
-- [x] Breakless Lists (for Migration)
-- [x] LinkChecker
-- [ ] Troubleshooting
-	- [ ] update / define which troubleshooting articles to include in the HelpCenter (add new tag for articles)
-	- [ ] automate article list
-- [ ] Customizations:
-	- [ ] Custom header
-	- [ ] Table filters for changelog
-- [ ] Editorial Guide:
-	- [ ] Migrate and update current [editorial guide](https://help.theobald-software.com/en/editorial-guide)
-	- [ ] Front matter items (how and when to use them)
-	- [ ] Tags (how and when to use them)
-	- [ ] Variables (how and when to use them)
-	- [ ] Meta data (how and when to use them)
-- [ ] .pdf export (define a template)
-- [ ] Setup a template for bug reports
-- [ ] Test language setup
-
-#### Optional
-
-- [ ] [SpellChecker](https://github.com/pawamoy/mkdocs-spellcheck) 
-- [ ] [Automatic Title Casing](https://github.com/mattchristopher314/mkdocs-title-casing-plugin)
-- [ ] [Tooltips Preview](https://github.com/zachhannum/mkdocs-tooltipster-links-plugin) (optional)
-- [ ] [Unused Files](https://github.com/wilhelmer/mkdocs-unused-files) (obsolete with latest ImageReferenceChecker?)
+7. Push the changes to GitHub.
 
 
 ### Important Links
@@ -132,4 +138,4 @@ Troubleshooting:
 
 - [Material Issue Tracker](https://github.com/squidfunk/mkdocs-material/issues)
 - [Material Discussion Board](https://github.com/squidfunk/mkdocs-material/discussions)
-- [Material - How te report a bug](https://squidfunk.github.io/mkdocs-material/contributing/reporting-a-bug/)
+- [Material - How to report a bug](https://squidfunk.github.io/mkdocs-material/contributing/reporting-a-bug/)

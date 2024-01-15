@@ -51,8 +51,6 @@ Open the commandline tool and run one of the following commands:
 
 #### Results
 
-LinkChecker returns information about broken links, runtime and statistics about the linked content.
-
 If broken links are detected, the following information is printed to the console:
 
 | Result | Description |

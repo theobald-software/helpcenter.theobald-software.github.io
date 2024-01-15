@@ -87,11 +87,11 @@ Copy the 32-Bit Version of librfc32.dll to the `\SysWoW64` folder.
 
 ### Security Settings
  	
-- For logging on to SAP, a system or dialog user with appropriate [authority objects](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights) is required.
+- For logging on to SAP, a system or dialog user with appropriate [authority objects](../../samples/authority-objects-sap-user-rights.md) is required.
 - Plain authentication (user/password), Secure Network Communications (SNC) with and without Single Sign-On (SSO) and SAP Logon Tickets (MYSAPSSO2) are supported.
 
 
 ### Network Settings
  	
 Ports need to be opened depending on the SAP System connection technique.
-Details can be found in the knowledge base article [How to check the accessibility to a SAP System](https://kb.theobald-software.com/sap/how-to-check-the-accessibility-to-a-sap-system).
+Details can be found in the knowledge base article [How to check the accessibility to a SAP System](../../samples/how-to-check-the-accessibility-to-a-sap-system.md).
