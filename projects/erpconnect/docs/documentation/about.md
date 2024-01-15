@@ -1,5 +1,5 @@
 ---
-title: About this Online Help
+title: Disclaimer
 description: General information on Online Help content
 ---
 

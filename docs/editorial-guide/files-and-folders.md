@@ -43,7 +43,7 @@ Highlighted folders are linked to each other via symlink.
 └───site #contains the built html pages of all products
 ```
 
-### Content of `/docs` Folders
+### Files in `/docs` Folders
 
 Every product has a `/docs` folder that should contain the following files and folders:
 
@@ -51,7 +51,6 @@ Every product has a `/docs` folder that should contain the following files and f
 ├───articles.md #contains a list of articles (this file is named "samples" in ERPConnect)
 ├───articles #contains articles (this folder is named "samples" in ERPConnect)
 │   ├───... #migrated content from the old Knowledge Base
-│   ├───.pages #contains the navigation for this folder
 │   └───.meta.yml #contains front matter items that are added to all files in this folder
 ├───assets
 │   ├───files
@@ -133,10 +132,10 @@ The sequence of the listed files directly translates to the sequence of the rend
 
 	``` yaml
 	nav:
-		- index.md
-		- requirements.md
+		- index.md #adds a landing page to a folder
+		- requirements.md #adds a page (.md file)
 		- saplibraries.md
-		- installation.md
+		- installation #adds a subfolder
 		- licensing.md
 	collapse_single_pages: false
 	```
