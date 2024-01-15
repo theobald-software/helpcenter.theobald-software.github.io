@@ -66,12 +66,6 @@ theme:
 extra_css:
   - assets/stylesheets/extra.css
   - assets/stylesheets/neoteroi-cards.css 
-  - assets/stylesheets/tooltipster.bundle.min.css 
-  
-# Custom JavaScripts
-extra_javascript: 
-  - assets/javascripts/tooltipster.bundle.min.js
-  
 # Plugins
 plugins:
   #- redirects: #redirect URLs when renaming/moving .md files
@@ -86,7 +80,7 @@ plugins:
   - search:
       separator: '[\s\-,:!=\[\]()"/]+'
   - typeset # preserve format of titles and headlines in navigation and toc
-  - tooltipster-links
+  #- tooltipster-links
   - awesome-pages # define navigation in .pages files
   - macros:
       include_dir: includes # ../../includes for ERPConnect only

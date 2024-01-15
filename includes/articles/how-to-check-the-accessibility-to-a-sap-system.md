@@ -20,7 +20,7 @@ Use the following syntax with paping.exe:
 	paping.exe 192.168.0.9 -p 3305 -c 3
 	```
 
-![paping](../../assets/images/articles/paping.png){:class="img-responsive"}
+![paping](../assets/images/articles/paping.png){:class="img-responsive"}
 
 ### Port Numbers
 
