@@ -1121,6 +1121,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://helpcenter.theobald-software.com/erpconnect/samples/how-to-check-the-accessibility-to-a-sap-system/</loc>
+         <lastmod>2024-01-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://helpcenter.theobald-software.com/erpconnect/samples/implement-a-connection-pool/</loc>
          <lastmod>2024-01-15</lastmod>
          <changefreq>daily</changefreq>
