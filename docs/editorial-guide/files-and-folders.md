@@ -7,7 +7,7 @@ title: Files & Folders
 The following treeview illustrates the general folder structure in the HelpCenter repository.
 Highlighted folders are linked to each other via symlink.
 
-``` bash hl_lines="8 9 23 24"
+``` bash hl_lines="11 12 26 27"
 ├───.cache
 ├───.github
 │   └───workflows #contains the GitHub workflow for publishing
@@ -39,7 +39,6 @@ Highlighted folders are linked to each other via symlink.
 │       │   ├───documentation #contains the migrated Online Help
 │       │   └───articles #contains the migrated Knowledge Base
 │       ├───overrides #contains custom designs, e.g. banner & announcements
-│       ├───projects
 │       └───site  #contains the built html product page
 └───site #contains the built html pages of all products
 ```
