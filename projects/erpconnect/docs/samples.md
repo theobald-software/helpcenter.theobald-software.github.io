@@ -15,7 +15,7 @@ hide:
 <div class="mdx-columns" markdown>
 
 - [Authorization Objects - SAP User Rights](samples/authority-objects-sap-user-rights.md)
-- [How to check the accessibility to an SAP System](samples/how-to-check-the-accessibility-to-a-sap-system.md)
+- [Check the Accessibility to an SAP System](samples/how-to-check-the-accessibility-to-a-sap-system.md)
 - [Implement a connection pool](samples/implement-a-connection-pool.md)
 - [Login to SAP with an SSO Logon Ticket](samples/login-to-sap-with-an-sso-logonticket.md)
 - [Use ERPConnect in PowerShell](samples/use-erpconnect-in-powershell.md)

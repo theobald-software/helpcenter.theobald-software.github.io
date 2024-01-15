@@ -1,5 +1,5 @@
 ---
-title: Check the accessibility to an SAP System
+title: Check the Accessibility to an SAP System
 description: How to check the accessibility to an SAP System
 ---
 

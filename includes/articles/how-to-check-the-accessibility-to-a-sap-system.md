@@ -25,7 +25,7 @@ Use the following syntax with paping.exe:
 ### Port Numbers
 
 If an SAP-Router is used, the ports are 3299 and 3399. <br>
-If not, the ports are 32XX and 33XX. XX is usually the system number (like 00, or 05).
+If not, the ports are 32XX and 33XX. XX is usually the system number, e.g., 00, or 05.
 
 Some important port numbers:
 
