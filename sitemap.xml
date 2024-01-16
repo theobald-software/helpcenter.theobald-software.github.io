@@ -6,11 +6,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://helpcenter.theobald-software.com/editorial-guide/</loc>
-         <lastmod>2024-01-16</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://helpcenter.theobald-software.com/editorial-guide/administration/</loc>
          <lastmod>2024-01-16</lastmod>
          <changefreq>daily</changefreq>
@@ -22,6 +17,11 @@
     </url>
     <url>
          <loc>https://helpcenter.theobald-software.com/editorial-guide/glossary/</loc>
+         <lastmod>2024-01-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://helpcenter.theobald-software.com/editorial-guide/guidelines/</loc>
          <lastmod>2024-01-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
