@@ -25,6 +25,7 @@ title: Administration
 - [ ] Customizations:
 	- [ ] Custom header
 	- [ ] Table filters for changelog
+- [ ] Inherit congig settings
 - [ ] Add a "summary" admonition
 - [ ] Editorial Guide:
 	- [ ] Migrate and update current [editorial guide](https://help.theobald-software.com/en/editorial-guide)

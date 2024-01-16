@@ -1,4 +1,4 @@
-title HelpCenter
+title ERPConnect
 @echo off
 if _%1_==_payload_  goto :payload
 :getadmin

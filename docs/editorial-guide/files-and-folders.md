@@ -125,6 +125,7 @@ tags:
 	status: new # this is optional, available are "new", "deprecated" or "beta" 
 	```
 	Other front matter items are usually defined in .meta.yml files.
+	
 4. Fill the .md file with content.
 5. Open the .pages file that is located in the same directory as the .md file. If no .pages file exists, create one.
 6. Add the name of the new .md file to the list of pages in the navigation. 
