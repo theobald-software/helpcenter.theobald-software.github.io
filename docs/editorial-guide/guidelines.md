@@ -1,5 +1,5 @@
 ---
-title: Editorial Guide
+title: Editorial Guidelines
 ---
 
 

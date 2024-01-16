@@ -8,7 +8,7 @@ Migrate content from the Editorial Guide.
 
 ### Content Tabs
 
-Use content tabs for code blocks and the changelog.
+Use content tabs for code blocks and changelogs in combination with the snippet markdown extension.
 
 ``` title="Content tabs with code blocks"
 === "C"
@@ -60,7 +60,6 @@ Use content tabs for code blocks and the changelog.
 
 </div>
 
-Use content tabs in combination with the snippet markdown extension to create changelogs. Example:
 
 ``` title="Content tabs with changelogs"
 
@@ -78,7 +77,7 @@ Use content tabs in combination with the snippet markdown extension to create ch
 The list syntax is a shortcut for card grids and consists of an unordered (or ordered) list wrapped by a `div` with both, the `grid` and `cards` classes:
 
 
-``` html title="Card grid"
+``` html title="Grid Cards"
 <div class="grid cards" markdown>
 
 - :fontawesome-brands-html5: __HTML__ for content and structure
@@ -103,7 +102,7 @@ The list syntax is a shortcut for card grids and consists of an unordered (or or
 
 You can use regular markdown syntax in grid cards to add links, images, etc. Example:
 
-``` html title="Card grid, complex example"
+``` html title="Grid Cards, complex example"
 <div class="grid cards" markdown>
 
 -   ![xu](../assets/images/XtractUniversal.png){ .lg .middle width="50px"} __Xtract Universal__
@@ -146,6 +145,10 @@ You can use regular markdown syntax in grid cards to add links, images, etc. Exa
 
   </div>
 </div>
+
+### Announcements
+
+Coming soon...
 
 ### Tags
 

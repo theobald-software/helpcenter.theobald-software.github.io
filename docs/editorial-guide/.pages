@@ -1,6 +1,6 @@
 nav:
-    - Guidelines:
-        - markdown-sample.md
+    - guidelines.md
+    - markdown-sample.md
     - Administration:
         - glossary.md
         - administration.md

@@ -144,6 +144,7 @@ The sequence of the listed files directly translates to the sequence of the rend
 	!!! warning 
 		The navigation list uses a special format, so simply pressing enter after a list item to add a new item will throw an error.
 		Copy and paste an existing line and only replace the name of the .md file.
+		
 7. Build a preview of the project without the `dirtyreload` option.
 8. Run [LinkChecker](linkchecker.md) on your preview page to check if references in the new .md file are valid. Example:
 	```
