@@ -4,6 +4,14 @@ title: Markdown Samples
 
 Migrate content from the Editorial Guide.
 
+### Admonitions
+
+!!! summary
+
+	- I am a list
+	- I summarize long passages of text
+
+
 ## New Features
 
 ### Content Tabs

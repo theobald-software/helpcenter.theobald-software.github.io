@@ -2,6 +2,7 @@
 title: Samples
 hide:
   - navigation
+  - path
 ---
 
 <div class="grid cards" markdown>

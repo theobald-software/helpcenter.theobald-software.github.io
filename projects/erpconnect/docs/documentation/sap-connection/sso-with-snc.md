@@ -37,7 +37,7 @@ When using Kerberos authentication, apply the Kerberos SNC settings as described
 !!! note
     It is recommended to test the connection between SAP and the client before continuing.
 
-### About SNC in ERPConnect
+### SNC in ERPConnect
 
 The R3Connection object automatically determines the needed SNC DLL based on the settings of *SNCMechanism*. 
 With the *SNCLibraryPath* property you can specify the path to the SNC DLL manually. 
@@ -113,17 +113,23 @@ For more information on Kerberos, see [Microsoft Documentation - Kerberos Authen
 
 Double hop describes the passing of authentication information across two or more computers (hops).<br>
 For technical reasons NTLM only works with one hop. 
-For security reasons Kerberos transmits authentication data only in one hop by default, but it can be configured to send data over two or more hops.<br>
+For security reasons Kerberos transmits authentication data only in one hop by default, but it can be configured to send data over two or more hops.
+Examples:
 
-Example 1: If you use Xtract PPV as the consumer of the SAP data, it has to run on the same computer that Xtract PPV Server and PowerPivot run on. 
-The domain controller and the SAP system can run on different computer. In this case you can also use NTML and Kerberos.
+=== "Xtract PPV Server & PowerPivot on the same machine" 
 
-Example 2: If you use Xtract PPV as the comsumer for the SAP data and the Xtract PPV Server and PowerPivot run on different computers, you have 
-to use Kerberos which can be configured to handle the Double Hop Problem. <br>
-For more information on the Kerberos configuration, see [Microsoft Techcommunity - Understanding Kerberos Double Hop](https://techcommunity.microsoft.com/t5/ask-the-directory-services-team/understanding-kerberos-double-hop/ba-p/395463).
+	If you use Xtract PPV as the consumer of the SAP data, it has to run on the same computer that Xtract PPV Server and PowerPivot run on. 
+	The domain controller and the SAP system can run on different computer. In this case you can also use NTML and Kerberos.
+
+=== "Xtract PPV Server & PowerPivot on different machines" 
+
+	If you use Xtract PPV as the comsumer for the SAP data and the Xtract PPV Server and PowerPivot run on different computers, you have 
+	to use Kerberos which can be configured to handle the Double Hop Problem.
+	For more information on the Kerberos configuration, see [Microsoft Techcommunity - Understanding Kerberos Double Hop](https://techcommunity.microsoft.com/t5/ask-the-directory-services-team/understanding-kerberos-double-hop/ba-p/395463).
 
 For more information on the SSO configuration, see [SAP Help - Single Sign-On Configuration](https://help.sap.com/doc/saphelp_nw75/7.5.5/en-US/48/ca0fe42fbb5c97e10000000a42189d/content.htm?no_cache=true)
 
+	
 ****
 #### Related Links
 - [Knowledge Base Article - SNC/SSO User Rights](../../samples/authority-objects-sap-user-rights.md).
