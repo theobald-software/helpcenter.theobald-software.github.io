@@ -170,7 +170,7 @@ extra:
             using our <a href="https://theobald-software.typeform.com/to/CnpfiiIN" target="_blank" rel="noopener">feedback form</a>.
         - icon: material/emoticon-sad-outline
           name: This page could be improved
-          data: 0
+          data: -1
           note: >- 
             Thank you for your feedback! <br>Help us improve our products by
             using our <a href="https://theobald-software.typeform.com/to/CnpfiiIN" target="_blank" rel="noopener">feedback form</a>.
