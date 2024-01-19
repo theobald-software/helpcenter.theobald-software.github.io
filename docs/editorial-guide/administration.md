@@ -20,7 +20,7 @@ title: Administration
 - [x] Breakless Lists (for migration)
 - [x] LinkChecker
 - [ ] Troubleshooting
-	- [ ] update / define which troubleshooting articles to include in the HelpCenter (add new tag for articles)
+	- [x] update / define which troubleshooting articles to include in the HelpCenter (new tag #hec1 for ERPConnect articles)
 	- [ ] automate article list
 - [ ] Customizations:
 	- [ ] Custom header
@@ -33,7 +33,7 @@ title: Administration
 	- [ ] Tags (how and when to use them)
 	- [ ] Variables (how and when to use them)
 	- [ ] Meta data (how and when to use them)
-- [ ] UI for building local previews
+- [ ] UI/console program for building local previews
 - [ ] Setup a template for bug reports
 - [ ] Test language setup
 - [ ] .pdf export (define a template)

@@ -23,7 +23,7 @@ Open the commandline tool and run the following command:
 pip install LinkChecker
 ```
 
-### Use LinkChecker
+### How to Use LinkChecker
 
 Open the commandline tool and run one of the following commands:
 

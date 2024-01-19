@@ -11,8 +11,8 @@ if _%1_==_payload_  goto :payload
  goto :eof
  :payload
 ::ENTER YOUR CODE BELOW::
-cd C:\Source\helpcenter.theobald-software.github.io\projects\erpconnect
+cd C:\Source\helpcenter.theobald-software.github.io\projects\yunio
 
-start "ERPConnect" /B mkdocs serve -a localhost:8001
-rem start "" /B http://localhost:8001/
+start "yunIO" /B mkdocs serve -a localhost:8002
+rem start "" /B http://localhost:8002/
 pause

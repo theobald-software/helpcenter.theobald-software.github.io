@@ -15,8 +15,6 @@ BAPI_MATERIAL_AVAILABILITY requires at least three import parameters:
 - the material number (MATERIAL) 
 - the unit (UNIT) 
 
-### Call BAPI_MATERIAL_AVAILABILITY
-
 The Windows form for the BAPI BAPI_MATERIAL_AVAILABILITY contains the following elements:
 
 - Three text boxes for import parameters: *txtPlant*, *txtMaterial* and *txtUnit* 
@@ -24,6 +22,8 @@ The Windows form for the BAPI BAPI_MATERIAL_AVAILABILITY contains the following 
 - Two text boxes to display results: *txtStock* and *txtBAPIMessage*
 
 ![BAPIStockQuan]( site:assets/images/erpconnect/samples/BAPIStockQuant.jpg){:class="img-responsive"}
+
+### Call BAPI_MATERIAL_AVAILABILITY
 
 Follow the steps below to call the BAPI API_MATERIAL_AVAILABILITY:
 
@@ -77,8 +77,9 @@ private void btnGetQuantity_Click(object sender, System.EventArgs e)
         }
 ```
 
-The screenshots below show the sample program in action. <br>
-On the first try, the user types a non-existing material number so an error message is given by the BAPI. 
+Output:
 
+- User enters a non-existing material number:<br>
 ![ScreenshotBeispielBapi1]( site:assets/images/erpconnect/samples/ScreenshotBeispielBapi01.jpg){:class="img-responsive"}
+- User enters a valid material number:<br>
 ![ScreenshotBeispielBapi2]( site:assets/images/erpconnect/samples/ScreenshotBeispielBapi02.jpg){:class="img-responsive"}

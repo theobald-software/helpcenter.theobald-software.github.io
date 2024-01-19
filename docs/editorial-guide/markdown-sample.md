@@ -16,7 +16,7 @@ Migrate content from the Editorial Guide.
 
 ### Content Tabs
 
-Use content tabs for code blocks and changelogs in combination with the snippet markdown extension.
+Use content tabs for code blocks and changelogs.
 
 ``` title="Content tabs with code blocks"
 === "C"

@@ -7,7 +7,7 @@ title: Files & Folders
 The following treeview illustrates the general folder structure in the HelpCenter repository.
 Highlighted folders are linked to each other via symlink.
 
-``` bash hl_lines="11 12 26 27"
+``` bash hl_lines="11 12 16 26 27 31"
 ├───.cache
 ├───.github
 │   └───workflows #contains the GitHub workflow for publishing
@@ -38,6 +38,7 @@ Highlighted folders are linked to each other via symlink.
 │       │   │   └───stylesheets
 │       │   ├───documentation #contains the migrated Online Help
 │       │   └───articles #contains the migrated Knowledge Base
+│       ├───includes #reference to parent folder for local build
 │       ├───overrides #contains custom designs, e.g. banner & announcements
 │       └───site  #contains the built html product page
 └───site #contains the built html pages of all products
@@ -124,7 +125,7 @@ tags:
 	description: I’m a description
 	status: new # this is optional, available are "new", "deprecated" or "beta" 
 	```
-	Other front matter items are usually defined in .meta.yml files.
+	Additional front matter items are usually defined in .meta.yml files.
 	
 4. Fill the .md file with content.
 5. Open the .pages file that is located in the same directory as the .md file. If no .pages file exists, create one.
@@ -142,7 +143,7 @@ The sequence of the listed files directly translates to the sequence of the rend
 	```
 	
 	!!! warning 
-		The navigation list uses a special format, so simply pressing enter after a list item to add a new item will throw an error.
+		The navigation list uses a special format, so simply pressing enter after a list item to add a new item results in an error.
 		Copy and paste an existing line and only replace the name of the .md file.
 		
 7. Build a preview of the project without the `dirtyreload` option.
