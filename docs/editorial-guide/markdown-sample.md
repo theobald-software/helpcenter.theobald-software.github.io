@@ -14,6 +14,23 @@ Migrate content from the Editorial Guide.
 
 ## New Features
 
+### Announcements
+
+Material for MkDocs includes an announcement bar to display product news or other important information.
+
+- Open the following file: `helpcenter.theobald-software.github.io\projects\[product-name]\overrides\main.html`.
+- Add an `announce` block in the main.html file:
+
+	``` html
+	{% extends "base.html" %}
+
+	{% block announce %}
+	  <p>The ERPConnect HelpCenter will soon replace the ERPConnect Online Help!<p>
+	{% endblock %}
+	```
+
+To delete an announcement, remove the `announce` block from the file.
+
 ### Content Tabs
 
 Use content tabs for code blocks and changelogs.
@@ -154,14 +171,55 @@ You can use regular markdown syntax in grid cards to add links, images, etc. Exa
   </div>
 </div>
 
-### Announcements
-
-Coming soon...
-
 ### Tags
 
 Coming soon...
 
-### Variables & Meta Data
+### Variables 
 
-Coming soon...
+Variables are placeholders for product specific words, e.g., "runtime parameters" versus "SSIS variables".
+They can be used in the products and in reusable texts in the `includes` directory. 
+
+How to define and use variables:
+
+1. Open the mkdocs.yml file of a product.
+2. Define variables under `extra`:
+
+	``` yaml
+	extra:
+	  variable-name: value
+	  product: Xtract Universal
+	```
+	
+3. Use the variable in reusable or regular text using the following syntax:
+
+	```
+	{{ variable-name }}
+	```
+
+Example:
+
+=== ".md file"
+
+	```
+	Welcome to {{ product }}!
+	```
+
+=== "ERPConnect product page"
+
+	Welcome to ERPConnect!
+
+=== "Xtract Universal product page"
+
+	Welcome to Xtract Universal!
+
+#### List of Variables
+
+| Variable     | ERPConnect | Xtract IS            | Xtract for Alteryx       | Xtract Universal           |  yunIO          |
+|--------------|------------|----------------------|--------------------------|----------------------------|-----------------|
+| product      | ERPconnect | Xtract IS            | Xtract for Alteryx       | Xtract Unversal            | yunIO           |
+| variable     | -          | SSIS variable        | runtime parameter        | runtime parameter          | -               |
+| variables    | -          | SSIS variables       | runtime parameters       | runtime parameters         | -               |
+| settings     | -          | settings             | extraction settings      | extraction settings        | server settings |
+| settings-btn | -          | **Settings**         | **[Extraction Settings]**|**Extraction Settings**     | **Settings**    |
+| parameter-btn| -          | **Edit parameters**  | **[Edit parameters]**    |**Edit runtime parameters** | -               |

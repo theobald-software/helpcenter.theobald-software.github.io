@@ -87,7 +87,6 @@ plugins:
   #- swagger-ui-tag # enables OpenAPI elements in docu
   #- glightbox #image zoom
   #- tags # enables tags in front matter
-  #- git-revision-date-localized # adds information when pages were last updated
   #- with-pdf: # creates .pdf, see https://pypi.org/project/mkdocs-with-pdf/
   #    author: Dec 2023
   #    copyright: Copyright &copy; 2024 Theobald Software GmbH
