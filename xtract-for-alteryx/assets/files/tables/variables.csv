@@ -1,0 +1,7 @@
+﻿Variable;Board Connector;ERPConnect;Xtract IS;Xtract for Alteryx;Xtract Universal;yunIO
+product;Board Connector;ERPConnect;Xtract IS;Xtract for Alteryx;Xtract Universal;yunIO
+variable;runtime parameter;-;SSIS variable;runtime parameter;runtime parameter;-
+variables;runtime parameters;-;SSIS variables;runtime parameters;runtime parameters;-
+settings;extraction settings;-;settings;extraction settings;extraction settings;server settings
+settings-btn;**Extraction Settings**;-;**Settings**;**[Extraction Settings]**;**Extraction Settings**;**Settings**
+parameter-btn;**Edit runtime parameters**;-;**Edit parameters**;**[Edit parameters]**;**Edit runtime parameters**;-
