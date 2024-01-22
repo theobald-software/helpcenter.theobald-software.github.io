@@ -34,7 +34,7 @@ title: Administration
 	- [x] Variables (how and when to use them)
 	- [ ] Meta data (how and when to use them)
 - [ ] UI/console program for building local previews
-- [ ] Setup a template for bug reports
+- [x] Setup a template for bug reports
 - [ ] Test language setup
 - [ ] .pdf export (define a template)
 
@@ -119,6 +119,17 @@ How to upgrade:
 	```
 
 7. Push the changes to GitHub.
+
+### Bug Reports
+
+Before creating a bug report upgrade to the latest version and check the following resources:
+
+- [Material Issue Tracker](https://github.com/squidfunk/mkdocs-material/issues)
+- [Material Discussion Board](https://github.com/squidfunk/mkdocs-material/discussions)
+
+An empty reproduction project required for bug reports is located in `X:\Online-Help\helpcenter bug reports`.
+
+For information on how to create a bug report, see [Material for MKDocs: Bug reports](https://squidfunk.github.io/mkdocs-material/contributing/reporting-a-bug/).
 
 
 ### Important Links
