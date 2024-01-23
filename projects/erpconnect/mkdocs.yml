@@ -11,7 +11,8 @@ site_description: >-
 # repo_name: theobald-software/helpcenter.theobald-software.github.io
 # repo_url: https://github.com/theobald-software/oh.theobald-software.github.io.git
 # Copyright
-copyright: Copyright &copy; 2024 Theobald Software GmbH <br> <span style="color:#808080">“The best SAP interface is the one you don’t even notice.” - Patrick Theobald </span>
+copyright: Copyright &copy; 2024 Theobald Software GmbH <br> <span style="color:#ED1A33"><a  style="color:#ED1A33" href="privacy-policy/" target="_blank" rel="noopener">privacy policy</a> - <a  style="color:#ED1A33" href="https://theobald-software.com/en/legal-notice" target="_blank" rel="noopener">legal notice</a> - <a style="color:#ED1A33" href="https://theobald-software.com/en/" target="_blank" rel="noopener">website</a></span>
+
 # Configuration
 theme:
   name: material
@@ -163,9 +164,13 @@ extra:
   consent:
     title: Cookie consent
     description: >- 
-      We use cookies to measure the effectiveness of our documentation and whether users
-      find what they're searching for. With your consent, you're helping us to
-      make our documentation better.
+      We use cookies to measure the effectiveness of our documentation and whether users find what they're searching for. 
+      With your consent, you're helping us to make our documentation better. 
+      For more information, refer to our <a href="https://theobald-software.com/en/privacy-policy/" target="_blank" rel="noopener">privacy policy</a>.
+    actions:
+      - accept
+      - reject
+      #- manage
   analytics:
     provider: google
     property: G-GVBJSXCV3V

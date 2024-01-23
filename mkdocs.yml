@@ -29,13 +29,13 @@ theme:
   palette:
     - scheme: default
       primary: black
-      accent: custom
+      #accent: custom
       toggle:
         icon: material/brightness-4
         name: Switch to dark mode
     - scheme: slate
       primary: black
-      accent: custom
+      #accent: custom
       toggle:
         icon: material/brightness-7
         name: Switch to light mode

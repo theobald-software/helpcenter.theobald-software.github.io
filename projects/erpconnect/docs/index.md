@@ -126,3 +126,4 @@ hide:
 
 ??? question "How can I fix the error `Entry too long (please enter in the format --____)` when using date parameters?"
 	Use the technical format YYYYMMDD, e.g., 20240711 for date values. Date formats such as "11-07-2024" are not accepted.
+
