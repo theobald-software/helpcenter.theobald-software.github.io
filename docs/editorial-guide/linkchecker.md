@@ -30,19 +30,19 @@ Open the commandline tool and run one of the following commands:
 === "Check all pages"
 
 	```
-	linkchecker --no-warnings --no-robots --check-extern https://helpcenter.theobald-software.com/
+	linkchecker --no-warnings --check-extern https://helpcenter.theobald-software.com/
 	```
 
 === "Check specific product"
 
 	```
-	linkchecker --no-warnings --no-robots --check-extern https://helpcenter.theobald-software.com/erpconnect/
+	linkchecker --no-warnings --check-extern https://helpcenter.theobald-software.com/erpconnect/
 	```
 
 === "Check single pages"
 
 	```
-	linkchecker --no-warnings --no-robots --check-extern -r 0 https://helpcenter.theobald-software.com/
+	linkchecker --no-warnings --check-extern -r 0 https://helpcenter.theobald-software.com/
 	```
 
 !!! note

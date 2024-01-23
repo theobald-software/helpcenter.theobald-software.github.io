@@ -1,6 +1,6 @@
 ---
 title: Transactions
-description: Managing and  Executing Transactions- The Class Transaction
+description: The Class Transaction
 ---
 
 This section shows how to use the *Transaction* class to execute SAP transactions in the foreground as well as in a background process (Batch Input).<br>

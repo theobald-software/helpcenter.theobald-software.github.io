@@ -1,6 +1,6 @@
 ---
 title: Execute Transactions 
-description: Managing and Executing Transactions- The Class Transaction
+description: Managing and Executing Transactions
 ---
 
 The following sample application shows how to use the *Transaction* class to execute an SAP transaction.<br>
