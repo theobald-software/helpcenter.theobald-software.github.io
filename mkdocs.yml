@@ -5,7 +5,7 @@ site_name: Theobald Software HelpCenter
 site_url: https://helpcenter.theobald-software.com/
 #site_author: Valerie Schipka
 site_description: >-
-  The Theobald Software HelpCenters contains all documentation about our products.
+  The Theobald Software HelpCenters contain all documentation about our products.
 
 # Repository
 repo_name: theobald-software/helpcenter.theobald-software.github.io
@@ -30,13 +30,13 @@ theme:
   palette:
     - scheme: default
       primary: black
-      #accent: custom
+      accent: default
       toggle:
         icon: material/brightness-4
         name: Switch to dark mode
     - scheme: slate
       primary: black
-      #accent: custom
+      accent: default
       toggle:
         icon: material/brightness-7
         name: Switch to light mode
@@ -89,40 +89,41 @@ extra:
    
 # Extensions for Markdown Syntax  
 markdown_extensions:
-  - abbr
-  - admonition
-  - attr_list
-  - def_list
-  - md_in_html
-  - tables
-  - pymdownx.critic
   - toc:
-      toc_depth: 3
-      #permalink: true
-  - pymdownx.betterem: #improves bold/italic formatting (https://facelessuser.github.io/pymdown-extensions/extensions/betterem/)
-      smart_enable: all
-  - pymdownx.details #unfolding content, e.g., FAQs (https://facelessuser.github.io/pymdown-extensions/extensions/details/)
-  - pymdownx.emoji:
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      toc_depth: 3 # define the depth of headlines for the table of content
+      #permalink: "#"
+      separator: "-"
+      title: On this Page
+  - pymdownx.snippets:
+      base_path: includes
+  - pymdownx.superfences #for content tabs (version history)
+  - pymdownx.tabbed:
+      alternate_style: true
+  - tables
+# notes, warnings, etc
+  - admonition
+  - pymdownx.details
+# code blocks  
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
       pygments_lang_class: true
-  - pymdownx.inlinehilite #code highlighter (https://facelessuser.github.io/pymdown-extensions/extensions/inlinehilite/)
-  - pymdownx.keys #styling for keys, e.g., ++ctrl+alt+delete++ (https://facelessuser.github.io/pymdown-extensions/extensions/keys/)
-  - pymdownx.smartsymbols
+  - pymdownx.inlinehilite
+# images & grids
+  - attr_list
+  - md_in_html
   - neoteroi.cards
- # - pymdownx.snippets:
- #     base_path: includes
-  - pymdownx.superfences
-  - pymdownx.tabbed: #adds tabs (https://facelessuser.github.io/pymdown-extensions/extensions/tabbed/)
-      alternate_style: true
-      combine_header_slug: true
-      slugify: !!python/object/apply:pymdownx.slugs.slugify
-        kwds:
-          case: lower
+# lists
+  - def_list
   - pymdownx.tasklist:
       custom_checkbox: true
+# icons
+  - pymdownx.emoji: 
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      options:
+        custom_icons:
+          - overrides/.icons
   # breakless lists (for migration)
   #- mdx_breakless_lists
+

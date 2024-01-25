@@ -11,6 +11,91 @@ Migrate content from the Editorial Guide.
 	- I am a list
 	- I summarize long passages of text
 
+### Icons
+
+Icons can be integrated in flowing text via `:[folder]-[name-of-the-icon]:`. 
+They can be used in the following manner:
+
+Click :material-pencil-outline: to edit an entry.
+
+- Additional clarification that an icon is an icon is unnecessary. 
+- Make sure not to write “click on”.
+- Product or component logos are not icons.
+
+
+=== "Xtract"
+
+	:simple-sap: `:simple-sap:`
+
+	:glasses-button: `:glasses-button:`
+
+	:magnifying-glass: `:magnifying-glass:`
+
+	:pen-button: `:pen-button:`
+
+	:refresh: `:refresh:`
+
+	:trashbin: `:trashbin:`
+
+	:runtime-parameters-dynamic: `:runtime-parameters-dynamic:`
+
+	:runtime-parameters-static: `:runtime-parameters-static:`
+
+	:x-button: `:x-button:`
+
+	:material-checkbox-blank-outline: `:material-checkbox-blank-outline:`
+
+	:material-checkbox-outline: `:material-checkbox-outline:`
+
+=== "WHERE Clause Editor"
+
+	:where-clause-add: `:where-clause-add:`
+	
+	:where-clause-add-group: `:where-clause-add-group:`
+	
+	:where-clause-add-literal: `:where-clause-add-literal:`
+	
+	:material-code-brackets: `:material-code-brackets:`
+	
+	:where-clause-column: `:where-clause-column:`
+
+	:where-clause-warning: `:where-clause-warning:`
+
+	:where-clause-remove: `:where-clause-remove:`
+
+=== "yunIO"
+
+	:yunio-nav-access-control: `:yunio-nav-access-control:`
+
+	:yunio-nav-connections: `:yunio-nav-connections:`
+
+	:yunio-nav-license: `:yunio-nav-license:`
+
+	:yunio-nav-logs: `:yunio-nav-logs:`
+
+	:yunio-nav-services: `:yunio-nav-services:`
+
+	:yunio-nav-settings: `:yunio-nav-settings:`
+
+	:yunio-nav-user: `:yunio-nav-user:`
+
+	:yunio-copy: `:yunio-copy:`
+
+	:yunio-delete: `:yunio-delete:`
+
+	:yunio-download: `:yunio-download:`
+
+	:yunio-edit: `:yunio-edit:`
+	
+	:yunio-rename-icon: `:yunio-edit-general:`
+
+	:yunio-run: `:yunio-run:`
+
+Old syntax:
+
+```
+![dustbin](/img/content/icons/trashbin.png){:class="img-responsive" style="display:inline"}
+```
 
 ## New Features
 
@@ -18,7 +103,8 @@ Migrate content from the Editorial Guide.
 
 Material for MkDocs includes an announcement bar to display product news or other important information.
 
-- Open the following file: `helpcenter.theobald-software.github.io\projects\[product-name]\overrides\main.html`.
+- Open the following file: <br>
+`helpcenter.theobald-software.github.io\projects\[product-name]\overrides\main.html`.
 - Add an `announce` block in the main.html file:
 
 	``` html

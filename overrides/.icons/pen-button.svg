@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.8.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1"
+	 id="Layer_1" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" image-rendering="optimizeQuality"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1024px" height="1024px"
+	 viewBox="0 0 1024 1024" style="enable-background:new 0 0 1024 1024;" xml:space="preserve">
+
+<path id="curve2" d="M122.2,792.8l24.9,24.9l-0.4,1l48,48l1-0.4l24.8,24.8l-90.7,34.2c-12.3,4.7-25.5,2.3-34.8-7
+	c-9.3-9.3-11.6-22.4-7-34.7L122.2,792.8z"/>
+<path id="curve1" d="M146.7,818.7l48,48l133.7-50.4L197.1,684.9L146.7,818.7z M624.8,343.3c-12.4-12.5-32.8-12.5-45.2,0
+	L285.4,637.5c-12.5,12.4-12.5,32.8,0,45.2c12.5,12.5,32.8,12.5,45.3,0l294.1-294.1C637.3,376.1,637.3,355.8,624.8,343.3z
+	 M602.2,230.2l181,181L353.3,841.1l-133.8,50.4l-97.6-97.6l50.4-133.8L602.2,230.2z"/>
+<path id="curve0" d="M896.3,207.5L805.8,117c-24.9-24.9-65.6-24.9-90.5,0l-90.5,90.5l181,181.1l90.5-90.6
+	C921.3,273.1,921.3,232.5,896.3,207.5z M783.2,184.9c12.5,12.5,12.5,32.8,0,45.3s-32.7,12.5-45.2,0s-12.5-32.8,0-45.3
+	S770.7,172.4,783.2,184.9z"/>
+<path d="M0,0v1024h1024V0H0z M995.7,995.7H28.3V28.3h967.3V995.7z"/>
+</svg>

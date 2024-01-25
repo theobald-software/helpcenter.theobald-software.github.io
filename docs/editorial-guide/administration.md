@@ -27,6 +27,7 @@ title: Administration
 	- [ ] Table filters for changelog
 - [ ] Inherit config settings
 - [x] Add a "summary" admonition
+- [x] Setup Custom Icons
 - [ ] Editorial Guide:
 	- [ ] Migrate and update current [editorial guide](https://help.theobald-software.com/en/editorial-guide)
 	- [ ] Front matter items (how and when to use them)

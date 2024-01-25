@@ -36,6 +36,11 @@
           mask-image: var(--md-admonition-icon--summary);
 }
 
+/* dark mode colors
+[data-md-color-scheme="slate"] {
+  --md-hue: 210; 
+}*/
+
 /* minimize space between banner and content on landing pages*/
 .md-typeset .grid {
     grid-gap: 0.4rem;
