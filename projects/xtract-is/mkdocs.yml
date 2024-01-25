@@ -64,8 +64,8 @@ theme:
   font:
     text: Poppins
     code: Roboto Mono
-  favicon: assets/images/icons/products/XtractIS.png
-  logo: assets/images/icons/products/XtractIS.png 
+  favicon: assets/images/logos/products/XtractIS.png
+  logo: assets/images/logos/products/XtractIS.png 
 
 # Custom CSS
 extra_css:

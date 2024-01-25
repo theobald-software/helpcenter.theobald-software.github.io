@@ -62,8 +62,8 @@ theme:
   font:
     text: Poppins
     code: Roboto Mono
-  favicon: assets/images/icons/products/ERPConnect.png
-  logo: assets/images/icons/products/ERPConnect.png 
+  favicon: assets/images/logos/products/ERPConnect.png
+  logo: assets/images/logos/products/ERPConnect.png 
   
 # Custom CSS
 extra_css:

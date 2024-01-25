@@ -6,7 +6,7 @@ hide:
 
 <div class="grid cards" markdown>
 
--   ![img](site:assets/images/icons/theo-thumbs.png){ .lg .middle width="30px"} This section shows how to install and set up ERPConnect for the first time.
+-   ![img](site:assets/images/logos/theo-thumbs.png){ .lg .middle width="30px"} This section shows how to install and set up ERPConnect for the first time.
 
 </div>
 

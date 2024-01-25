@@ -4,7 +4,7 @@ title: About
 
 <div class="grid cards" markdown>
 
--   ![img](site:assets/images/icons/theo-thumbs.png){ .lg .middle width="30px"} This section contains an auto-generated API documentation.
+-   ![img](site:assets/images/logos/theo-thumbs.png){ .lg .middle width="30px"} This section contains an auto-generated API documentation.
 
 </div>
 

@@ -7,7 +7,7 @@ hide:
 
 <div class="grid cards" markdown>
 
--   ![img](site:assets/images/icons/theo-thumbs.png){ .lg .middle width="30px"} This section contains code samples and use cases for ERPConnect.
+-   ![img](site:assets/images/logos/theo-thumbs.png){ .lg .middle width="30px"} This section contains code samples and use cases for ERPConnect.
 
 </div>
 

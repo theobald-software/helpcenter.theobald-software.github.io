@@ -75,29 +75,6 @@ Every product has a `/docs` folder that should contain the following files and f
 └───troubleshooting.md #contains a list of troubleshooting articles in jitbit
 ```
 
-### Front Matter Items
-
-List of available front matter items:
-
-``` yaml
----
-search: 
-  - exclude: true
-  - boost: 2
-title: Page Title
-description: I’m a description
-template: home.html # only needed for custom page designs, e.g., landing page
-status: new # new, deprecated or beta 
-component: table # for if-conditions in includes
-product: xtract-universal # for if-conditions in includes
-hide:
-  - navigation
-  - toc
-  - feedback
-tags:
-  - random
----
-```
 
 ### How to add new content
 
