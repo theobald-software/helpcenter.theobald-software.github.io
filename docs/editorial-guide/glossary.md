@@ -54,4 +54,8 @@ title: Glossary
 :   Additional features that can be added to MKDocs. 
 	We differentiate between Material build-in plugins that are installed as part of the Material theme and external plugins, that need to be installed separately using the `pip` command.
 	To activate a plugin in MKDocs, it needs to be listed in the mkdocs.yml file.
-	
+
+### `Symlink / Symbolic Link`
+
+:   A symbolic link is a file that points to a target file or a target directory. The symbolic link is a second file that exists independently of its target. 
+	If a symbolic link is deleted, its target remains unaffected.

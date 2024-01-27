@@ -76,9 +76,71 @@ Every product has a `/docs` folder that should contain the following files and f
 ```
 
 
+### .pages Files
+
+.pages files contain a list of navigation items.
+
+- Every folder in the `/docs` directory contains a .pages file that defines the sequence of navigation items in the directory it is located in. 
+- .pages files are used to define the sequence of navigation items.
+- To hide a page from the navigation, remove it from the .pages file. 
+
+=== "Define Navigation Items"
+
+	``` yaml
+	nav:
+		- index.md #adds a landing page to a folder
+		- requirements.md #adds a page (.md file)
+		- installation #adds a subfolder
+	collapse_single_pages: false 
+	```
+
+=== "Sort Navigation Items Alphabetically"
+
+	``` yaml
+	order: asc
+	order_by: title
+	collapse_single_pages: false
+	```
+	
+!!! warning 
+	The navigation list uses a special format, so simply pressing enter after a list item to add a new item results in an error.
+	Copy and paste an existing line and only replace the name of the .md file.
+
+
+### .meta.yml Files
+
+.meta.yml files contain a list of metadata.<br>
+When serving / building the project the metadata is added to all pages that are located in the same folder as the .meta.yml file.
+
+Use cases:
+
+- exclude all pages in a folder from the search 
+- add the front matter item `product` to all pages in the product folder
+- add the front matter item `component` to all pages in a folder
+
+
+``` yaml title="List of Front Matter Items"
+search: 
+  - exclude: true
+  - boost: 2
+title: Page Title
+description: I’m a description
+author: Valerie Schipka, Fabian Steffan #recommended for articles
+template: home.html # only needed for custom page designs, e.g., landing page
+status: new # new, deprecated or beta 
+component: table # for if-conditions in includes
+product: xtract-universal # for if-conditions in includes
+hide:
+  - navigation
+  - toc
+  - feedback
+tags:
+  - random
+```
+
 ### How to add new content
 
-1. Choose a directory / URL for the new content. The URL is relative to the docs directory. Example:<br>
+1. Choose a directory / URL for the new content. The URL is relative to the `/docs` directory. Example:<br>
 
 	=== "Regular .md files"
 		- Directory:
@@ -101,28 +163,14 @@ Every product has a `/docs` folder that should contain the following files and f
 	title: Page Title
 	description: I’m a description
 	status: new # this is optional, available are "new", "deprecated" or "beta" 
+	tags: 
+	   - some tag # this is optional, add tags 
 	```
-	Additional front matter items are usually defined in .meta.yml files.
+	Additional front matter items are usually defined in [.meta.yml files](#metayml-files).
 	
 4. Fill the .md file with content.
-5. Open the .pages file that is located in the same directory as the .md file. If no .pages file exists, create one.
-6. Add the name of the new .md file to the list of pages in the navigation. 
-The sequence of the listed files directly translates to the sequence of the rendered navigation items.
-
-	``` yaml
-	nav:
-		- index.md #adds a landing page to a folder
-		- requirements.md #adds a page (.md file)
-		- saplibraries.md
-		- installation #adds a subfolder
-		- licensing.md
-	collapse_single_pages: false
-	```
-	
-	!!! warning 
-		The navigation list uses a special format, so simply pressing enter after a list item to add a new item results in an error.
-		Copy and paste an existing line and only replace the name of the .md file.
-		
+5. Open the [.pages file](#pages-files) that is located in the same directory as the .md file. If no .pages file exists, create one.
+6. Add the name of the new .md file to the list of navigation items in the .pages file.
 7. Build a preview of the project without the `dirtyreload` option.
 8. Run [LinkChecker](linkchecker.md) on your preview page to check if references in the new .md file are valid. Example:
 	```

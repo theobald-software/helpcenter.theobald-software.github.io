@@ -552,32 +552,12 @@ This is only displayed on pages that are **not** Xtract Universal.
 ```
 
 Most .md files only use the front matter items `title` and `description`. 
-Metadata like `product` or `component` are usually defined in the .meta.yml file of the folder or root folder of .md files.
+Metadata like `product` or `component` are usually defined in the [.meta.yml file](./files-and-folders.md#metayml-files) of the folder or root folder of .md files.
 	
 !!! note
 
 	Use [variables](#variables) to switch between {==recurring words==} based on the products.
 	
-#### List of Front Matter Items
-
-``` yaml
-search: 
-  - exclude: true
-  - boost: 2
-title: Page Title
-description: I’m a description
-template: home.html # only needed for custom page designs, e.g., landing page
-status: new # new, deprecated or beta 
-component: table # for if-conditions in includes
-product: xtract-universal # for if-conditions in includes
-hide:
-  - navigation
-  - toc
-  - feedback
-tags:
-  - random
-```
-
 ### Redirect Links
 
 When moving/deleting .md files or changing the name of the files, a redirection link can be added to the mkdocs.yml of the product to redirect from the old file to the new file.
