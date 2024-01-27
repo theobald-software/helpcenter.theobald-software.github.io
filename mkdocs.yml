@@ -21,6 +21,10 @@ watch:
 theme:
   name: material
   custom_dir: overrides # overrides enable for announcements
+  icon:
+    admonition:
+      tip: material/lightbulb
+      note: fontawesome/solid/circle-info
   features:
      - content.code.copy # adds copy button in code blocks
      - navigation.expand # displays all pages in the navigation by default

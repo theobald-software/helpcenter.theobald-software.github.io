@@ -83,6 +83,22 @@ The content of a box must be indenting. An admonition ends after 1 unindented em
 		- I summarize long passages of text
 
 	</div>	
+
+=== "FAQs"
+
+	``` markdown
+	??? question "Am I a question?"
+
+		Yes and I am the answer to the question.
+	```
+
+	<div class="result" markdown>
+
+	??? question "Am I a question?"
+
+		Yes and I am the answer to the question.
+
+	</div>	
 	
 	
 ### Animations
