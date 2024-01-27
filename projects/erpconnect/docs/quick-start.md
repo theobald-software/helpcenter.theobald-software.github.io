@@ -1,7 +1,10 @@
 ---
 title: Quick Start
+tags:
+  - Getting Started
 hide:
   - navigation
+  - tags
 ---
 
 <div class="grid cards" markdown>
