@@ -28,7 +28,7 @@ jobs:
           path: .cache
           restore-keys: |
             mkdocs-material-
-      - run: pip install git+https://${GH_TOKEN}@github.com/squidfunk/mkdocs-material-insiders.git@9.5.4-insiders-4.50.0
+      - run: pip install git+https://${GH_TOKEN}@github.com/squidfunk/mkdocs-material-insiders.git@9.5.6-insiders-4.52.0
       - run: pip install "mkdocs-material[imaging]"
       - run: pip install mkdocs-swagger-ui-tag
       - run: pip install mkdocs-git-revision-date-localized-plugin
