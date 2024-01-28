@@ -17,7 +17,7 @@ hide:
 
 ### Installation
 
-1. [Download](https://theobald-software.com/en/download-trial/) a 30 days trial version of ERPConnect.
+1. [Download](https://theobald-software.com/en/download-trial/){ data-preview } a 30 days trial version of ERPConnect.
 2. Run the ERPConnect executable to install ERPConnect.
 For information on system requirements, see [Requirements](documentation/introduction/requirements.md).
 3. Download one of the following SAP libraries from the SAP Marketplace download area: 
@@ -28,12 +28,12 @@ When using a 32-bit system, copy the 32-Bit Version of librfc32.dll to the `\Sys
 5. Add the ERPConnect.dll class library as a reference to your project. <br>
 The library is located in the ERPConnect installation directory, e.g., `C:\Program Files\ERPConnect`.
 
-For more information, see [Installation](documentation/introduction/installation.md).
+For more information, see [Installation](documentation/introduction/installation.md/#setup).
 
 ### Connect to SAP
 
 1. Create an `R3Connection` object and define all [input parameters](documentation/sap-connection/log-on-to-sap.md/#input-parameters).<br>
-Make sure to use an SAP dialog user with sufficient SAP authorization, see [Authorization Objects - SAP User Rights](samples/authority-objects-sap-user-rights.md)
+Make sure to use an SAP dialog user with sufficient SAP authorization, see [Authorization Objects - SAP User Rights](samples/authority-objects-sap-user-rights.md).
 {% include "erpconnect/code/sap-connection.md" %}
 2. Establish the connection using `Open()`.
 3. Run the program to test the SAP connection.

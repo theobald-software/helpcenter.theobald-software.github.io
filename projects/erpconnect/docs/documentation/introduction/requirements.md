@@ -3,6 +3,8 @@ title: Requirements
 description: System Requirements
 ---
 
+This section contains information about system requirements and compatible SAP system for ERPConnect.
+
 ### .NET Framework
 
 ERPConnect (without LINQ to ERP) consists of two .NET assemblies that [target different frameworks](https://docs.microsoft.com/en-US/dotnet/standard/frameworks):
