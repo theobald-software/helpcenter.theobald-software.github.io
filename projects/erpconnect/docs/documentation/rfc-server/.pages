@@ -4,4 +4,3 @@ nav:
     - create-rfc-functions.md
     - sap-connection-with-sso-and-snc.md
     - connection-time-outs.md
-collapse_single_pages: false

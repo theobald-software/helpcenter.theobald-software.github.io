@@ -49,6 +49,18 @@ Open the commandline tool and run one of the following commands:
 	LinkChecker can be used to validate links in local .html files and local builds. <br>
 	:octicons-arrow-right-24: Use LinkChecker to check links in your localhost preview (product-level only) before pushing new content to GitHub.
 
+!!! tip
+	Use the following command to print the results in an html file that can be viewed in your browser:
+	
+	```
+	linkchecker --no-warnings --check-extern --file-output=html/C:\Source\helpcenter.theobald-software.github.io\linkckecker.html https://helpcenter.theobald-software.com/
+	```
+	
+	<div class="result" markdown>
+	`C:\Source\helpcenter.theobald-software.github.io\linkckecker.html`
+	</div>	
+	
+	
 #### Results
 
 If broken links are detected, the following information is printed to the console:

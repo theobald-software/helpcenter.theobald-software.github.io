@@ -2,4 +2,3 @@ nav:
     - index.md
     - execute-transactions.md
     - transaction-recorder.md
-collapse_single_pages: false

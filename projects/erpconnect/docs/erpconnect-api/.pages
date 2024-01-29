@@ -10,4 +10,3 @@ nav:
     - Theobald.Common: theobald-common
     - Theobald.Ogc: theobald-ogc
 hide: false
-collapse: true

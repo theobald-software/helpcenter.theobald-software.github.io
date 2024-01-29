@@ -10,4 +10,3 @@ nav:
     - Table: table
     - Transactions: transactions
     - Disclaimer: about.md
-collapse_single_pages: false

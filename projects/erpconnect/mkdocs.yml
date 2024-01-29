@@ -40,7 +40,7 @@ theme:
      - navigation.instant.progress # enables a progress indicator 
      - navigation.instant.preview
     # - navigation.path #adds breadcrumbs
-     - navigation.prune # only the visible navigation items are included in the rendered HTML, reducing the size of the built site by 33% or more
+    # - navigation.prune # only the visible navigation items are included in the rendered HTML, reducing the size of the built site by 33% or more
     # - navigation.sections # top level pages are rendered as groups in the navigation
      - navigation.tabs # add 1st level navigation to the header
      - navigation.tabs.sticky # tabs do not disappear when scrolling

@@ -41,7 +41,7 @@ title: Administration
 
 #### Optional
 
-- [ ] [Tooltips Preview](https://github.com/zachhannum/mkdocs-tooltipster-links-plugin)
+- [x] [Tooltips Preview](https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#instant-previews)
 - [ ] [SpellChecker](https://github.com/pawamoy/mkdocs-spellcheck) 
 - [ ] [Automatic Title Casing](https://github.com/mattchristopher314/mkdocs-title-casing-plugin)
 - [ ] [Unused Files](https://github.com/wilhelmer/mkdocs-unused-files) (obsolete with latest ImageReferenceChecker?)
