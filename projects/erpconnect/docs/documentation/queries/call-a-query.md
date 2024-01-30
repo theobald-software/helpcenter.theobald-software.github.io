@@ -1,5 +1,5 @@
 ---
-title: Call Queries
+title: Execute Queries
 description: Example for calling a query
 ---
 

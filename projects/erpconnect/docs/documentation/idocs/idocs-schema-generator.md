@@ -1,5 +1,5 @@
 ---
-title: Templates
+title: XML Templates
 description: XML-Support for IDoc programming
 ---
 

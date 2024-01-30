@@ -1,5 +1,5 @@
 ---
-title: Call BW Queries
+title: Execute BW Queries
 description: Call BW Queries
 ---
 

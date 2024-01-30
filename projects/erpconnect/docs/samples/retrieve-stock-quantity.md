@@ -37,44 +37,44 @@ Display the stock quantity in the Windows form.
 
 ```csharp linenums="1" title="BAPI_MATERIAL_AVAILABILITY"
 private void btnGetQuantity_Click(object sender, System.EventArgs e)
+    {
+        try
         {
-            try
-            {
         
-                // Set your ERPConnect license
-                LIC.SetLic("xxxx");
+            // Set your ERPConnect license
+            LIC.SetLic("xxxx");
 
-                // Open the connection to SAP
-                using var connection = new R3Connection(
-                    host: "server.acme.org",
-                    systemNumber: 00,
-                    userName: "user",
-                    password: "passwd",
-                    language: "EN",
-                    client: "001")
-                {
-                    Protocol = ClientProtocol.NWRFC,
-                };
+            // Open the connection to SAP
+            using var connection = new R3Connection(
+                host: "server.acme.org",
+                systemNumber: 00,
+                userName: "user",
+                password: "passwd",
+                language: "EN",
+                client: "001")
+            {
+                Protocol = ClientProtocol.NWRFC,
+            };
 
-                connection.Open();
+            connection.Open();
                 
-                // Create a Bapi object, fill parameters and execute
-                RFCFunction f = connection.CreateFunction("BAPI_MATERIAL_AVAILABILITY");
-                f.Exports["PLANT"].ParamValue = txtPlant.Text;
-                f.Exports["MATERIAL"].ParamValue = txtMaterial.Text;
-                f.Exports["UNIT"].ParamValue = txtUnit.Text;
-                f.Execute();
+            // Create a Bapi object, fill parameters and execute
+            RFCFunction f = connection.CreateFunction("BAPI_MATERIAL_AVAILABILITY");
+            f.Exports["PLANT"].ParamValue = txtPlant.Text;
+            f.Exports["MATERIAL"].ParamValue = txtMaterial.Text;
+            f.Exports["UNIT"].ParamValue = txtUnit.Text;
+            f.Execute();
   
-                // Read the import structure RETURN to provide possible Messages
-                RFCStructure BapiRet = f.Imports["RETURN"].ToStructure();
-                txtBAPIMessage.Text = BapiRet["MESSAGE"].ToString();
+            // Read the import structure RETURN to provide possible Messages
+            RFCStructure BapiRet = f.Imports["RETURN"].ToStructure();
+            txtBAPIMessage.Text = BapiRet["MESSAGE"].ToString();
   
-                // Fill textbox with stock quantity
-                txtStock.Text = f.Imports["AV_QTY_PLT"].ToString();
-            }
-            catch (ERPException e1)
-            { MessageBox.Show(e1.Message); }
+            // Fill textbox with stock quantity
+            txtStock.Text = f.Imports["AV_QTY_PLT"].ToString();
         }
+        catch (ERPException e1)
+        { MessageBox.Show(e1.Message); }
+    }
 ```
 
 Output:
