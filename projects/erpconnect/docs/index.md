@@ -23,7 +23,7 @@ hide:
 	
 -   **Ressources:**
 
-	[:material-run-fast: How to get started](quick-start.md)<br>
+	[:material-run-fast: How to get started](getting-started.md)<br>
 	[:material-book-open-page-variant-outline: Documentation](documentation/introduction/index.md)<br>
     [:material-file-document-outline: Code Samples](samples/index.md)<br>
 	[:material-api: API Reference](erpconnect-api/access-api-in-vs.md)

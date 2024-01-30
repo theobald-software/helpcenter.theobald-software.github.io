@@ -669,11 +669,11 @@ tags:
 A list of defined tags and their associated pages is available on the following pages:
 
 - :products-erpconnect: [tags](https://helpcenter.theobald-software.com/erpconnect/tags/)
-- :products-board-connector: [tags](https://helpcenter.theobald-software.com/erpconnect/tags/)
-- :products-xtract-for-alteryx: [tags](https://helpcenter.theobald-software.com/erpconnect/tags/)
-- :products-xtract-is: [tags](https://helpcenter.theobald-software.com/erpconnect/tags/)
-- :products-xtract-universal: [tags](https://helpcenter.theobald-software.com/erpconnect/tags/)
-- :products-yunio: [tags](https://helpcenter.theobald-software.com/erpconnect/tags/)
+- :products-board-connector: [tags](https://helpcenter.theobald-software.com/board-connector/tags/)
+- :products-xtract-for-alteryx: [tags](https://helpcenter.theobald-software.com/xtract-for-alteryx/tags/)
+- :products-xtract-is: [tags](https://helpcenter.theobald-software.com/xtract-is/tags/)
+- :products-xtract-universal: [tags](https://helpcenter.theobald-software.com/xtract-universal/tags/)
+- :products-yunio: [tags](https://helpcenter.theobald-software.com/yunio/tags/)
 	
 
 ### Variables 

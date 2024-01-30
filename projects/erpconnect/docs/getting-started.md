@@ -1,6 +1,5 @@
 ---
-title: Quick Start
-author: Valerie Schipka, Fabian Steffan
+title: Getting Started
 tags:
   - getting started
 hide:
