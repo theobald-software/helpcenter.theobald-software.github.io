@@ -3,6 +3,7 @@ title: Troubleshooting
 product: erpconnect
 hide:
   - navigation
+  - tags
 ---
 
 <div class="grid cards" markdown>

@@ -31,7 +31,7 @@ title: Administration
 - [ ] Editorial Guide:
 	- [ ] Migrate and update current [editorial guide](https://help.theobald-software.com/en/editorial-guide)
 	- [x] Front matter items (how and when to use them)
-	- [ ] Tags (how and when to use them)
+	- [x] Tags (how and when to use them)
 	- [x] Variables (how and when to use them)
 	- [x] Metadata (how and when to use them)
 - [ ] UI/console program for building local previews

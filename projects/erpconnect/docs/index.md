@@ -4,6 +4,7 @@ title: ERPConnect HelpCenter
 loc: index
 hide:
   - navigation
+  - tags
   - toc
 ---
 

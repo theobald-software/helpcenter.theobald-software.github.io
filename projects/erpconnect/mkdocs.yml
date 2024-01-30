@@ -85,7 +85,7 @@ plugins:
       links_attr_map:
         target: _blank # opens all external links in new tabs
   - meta # define front matter of multiple ,md files in .meta.yml file 
-  #- tags # enables tags in front matter
+  - tags # enables tags in front matter
   - search:
       separator: '[\s\-,:!=\[\]()"/]+'
   - typeset # preserve format of titles and headlines in navigation and toc
@@ -127,8 +127,6 @@ hooks:
 # Extensions for Markdown Syntax            
 markdown_extensions:
   - toc:
-      toc_depth: 3 # define the depth of headlines for the table of content
-      #permalink: "#"
       separator: "-"
       title: On this Page
   - pymdownx.snippets:

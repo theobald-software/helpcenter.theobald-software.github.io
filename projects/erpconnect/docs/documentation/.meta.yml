@@ -1,2 +1,3 @@
 product: erpconnect
-loc: docu
+hide:
+   - tags

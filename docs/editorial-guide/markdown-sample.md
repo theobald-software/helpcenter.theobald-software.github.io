@@ -307,6 +307,21 @@ Click :material-pencil-outline: to edit an entry.
 - Make sure not to write “click on”.
 - Product or component logos are not icons.
 
+=== "Products"
+
+	:products-erpconnect: `:products-erpconnect:`
+
+	:products-board-connector: `:products-board-connector:`
+
+	:products-xtract-for-alteryx: `:products-xtract-for-alteryx:`
+
+	:products-xtract-is: `:products-xtract-is:`
+	
+	:products-xtract-is-for-azure: `:products-xtract-is-for-azure:`
+	
+	:products-xtract-universal: `:products-xtract-universal:`
+	
+	:products-yunio: `:products-yunio:`
 
 === "Xtract"
 
@@ -636,13 +651,35 @@ The style of the table is defined in the theme of the HelpCenter and cannot be m
 
 ### Tags
 
-Coming soon...
+Tags can be used to add hidden keywords to a page. 
+The keywords are included in the search functionality of the HelpCenters.
+
+Use case:
+When there are multiple terms to describe an important object / process, etc., our documentation usually only uses one of those terms.
+Adding the synonyms as tags ensures that users who are not familiar with that term can still find results when searching the documentation.
+
+To add tags, use the following syntax in the front matter of an .md file:
+
+``` yaml
+tags:
+  - version
+  - getting started
+```
+
+A list of defined tags and their associated pages is available on the following pages:
+
+- :products-erpconnect: [tags](https://helpcenter.theobald-software.com/erpconnect/tags/)
+- :products-board-connector: [tags](https://helpcenter.theobald-software.com/erpconnect/tags/)
+- :products-xtract-for-alteryx: [tags](https://helpcenter.theobald-software.com/erpconnect/tags/)
+- :products-xtract-is: [tags](https://helpcenter.theobald-software.com/erpconnect/tags/)
+- :products-xtract-universal: [tags](https://helpcenter.theobald-software.com/erpconnect/tags/)
+- :products-yunio: [tags](https://helpcenter.theobald-software.com/erpconnect/tags/)
+	
 
 ### Variables 
 
 Variables are placeholders for product specific words, e.g., "runtime parameters" versus "SSIS variables".
-They can be used in the products and in reusable texts in the `includes` directory. 
-
+They can be used in products and in reusable texts (includes). <br>
 How to define and use variables:
 
 1. Open the mkdocs.yml file of a product.

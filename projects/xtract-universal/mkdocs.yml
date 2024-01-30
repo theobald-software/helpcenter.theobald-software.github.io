@@ -115,8 +115,6 @@ hooks:
 # Extensions for Markdown Syntax  
 markdown_extensions:
   - toc:
-      toc_depth: 3 # define the depth of headlines for the table of content
-      #permalink: "#"
       separator: "-"
       title: On this Page
   - pymdownx.snippets:

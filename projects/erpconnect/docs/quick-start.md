@@ -2,7 +2,7 @@
 title: Quick Start
 author: Valerie Schipka, Fabian Steffan
 tags:
-  - Getting Started
+  - getting started
 hide:
   - navigation
   - tags
