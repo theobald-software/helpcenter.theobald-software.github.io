@@ -49,8 +49,8 @@ Highlighted folders are linked to each other via symlink.
 Every product has a `/docs` folder that should contain the following files and folders:
 
 ``` bash 
-├───articles.md #contains a list of articles (this file is named "samples" in ERPConnect)
 ├───articles #contains articles (this folder is named "samples" in ERPConnect)
+│   ├───index.md #contains a list of articles
 │   ├───... #migrated content from the old Knowledge Base
 │   └───.meta.yml #contains front matter items that are added to all files in this folder
 ├───assets

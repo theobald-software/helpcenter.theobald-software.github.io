@@ -38,7 +38,7 @@ The default encoding for an SAP connection is SAP code page 1100 (iso-8859-1). W
 This is necessary if your SAP credentials contain characters that are not part of SAP code page 1100.
 
 
-```csharp linenums="1"
+```csharp 
 con.Protocol = ClientProtocol.NWRFC; 
 con.InitialEncoding = SAPEncodingInfo.UTF16LittleEndian;
 ```
@@ -46,7 +46,7 @@ con.InitialEncoding = SAPEncodingInfo.UTF16LittleEndian;
 #### Client Protocol
 
 The default client protocol is the NWRFC Protocol. To use the old RFC Protocol add the following command:<br>
-```csharp linenums="1"
+```csharp 
 con.Protocol = ClientProtocol.RFC;
 ```
 

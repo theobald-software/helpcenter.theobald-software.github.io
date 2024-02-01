@@ -31,15 +31,15 @@ hide:
 -   **Troubleshooting:**
 	
 	[:material-frequently-asked-questions: FAQs](#faqs)<br>
-	[:material-lightbulb: Common mistakes](https://support.theobald-software.com/helpdesk/KB)<br>
+	[:material-lightbulb: Common Mistakes](https://support.theobald-software.com/helpdesk/KB)<br>
     [:material-email-outline: Contact Support](https://support.theobald-software.com/helpdesk)
 	
 -   **General:**
 
-	[:material-web: Theobald Software](https://theobald-software.com)<br>
+	[:material-web: Theobald Software Homepage](https://theobald-software.com)<br>
 	[:material-email-newsletter: Newsletters](https://theobald-software.com/newsletter/)<br>
 	[:material-comment-question: Survey: SAP S/4 HANA Cloud](https://theobald-software.typeform.com/to/Ss7ZQbqp?typeform-source=support.theobald-software.com)<br>
-	[:material-comment-quote: Feedback Form](https://theobald-software.typeform.com/to/CnpfiiIN)
+	[:material-comment-quote: Want to give Feedback?](https://theobald-software.typeform.com/to/CnpfiiIN)
     
 </div>
 

@@ -1,7 +1,5 @@
 ---
 title: Getting Started
-tags:
-  - getting started
 hide:
   - navigation
   - tags
