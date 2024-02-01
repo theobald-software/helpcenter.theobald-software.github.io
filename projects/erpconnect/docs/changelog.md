@@ -1,9 +1,5 @@
 ---
-search:
-  exclude: true
 title: ChangeLog
-tags:
-  - version
 hide:
   - navigation
   - feedback

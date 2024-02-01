@@ -16,3 +16,6 @@ projects/xtract-universal/.cache
 projects/xtract-universal/overrides/__pycache__
 projects/yunio/.cache
 projects/yunio/overrides/__pycache__
+
+# LinkChecker
+linkchecker.html
