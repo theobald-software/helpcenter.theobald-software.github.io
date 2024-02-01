@@ -16,5 +16,5 @@ Format: **A.B.C [X]**
     * *M - Medium*: Install within your usual update interval.
     * *L - Low*:    Install only if advised by the support team.
 
-### Changelogs { data-search-exclude }
+### Latest Software Updates { data-search-exclude }
 

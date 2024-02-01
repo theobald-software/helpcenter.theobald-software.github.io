@@ -28,7 +28,6 @@ hide:
 
 - [Enabling Secure Network Communication (SNC) via X.509 certificate](https://support.theobald-software.com/helpdesk/KB/View/13349-enabling-secure-network-communication-snc-via-x-509-certificate)
 - [Registering RFC Server in SAP Releases in Kernel Release 720 and higher](https://support.theobald-software.com/helpdesk/KB/View/13348-registering-rfc-server-in-sap-releases-in-kernel-release-720-and-higher)
-- [Authority Objects - SAP User Rights](https://support.theobald-software.com/helpdesk/KB/View/13298-authority-objects-sap-user-rights)
 - [Authority Check Trace](https://support.theobald-software.com/helpdesk/KB/View/13799-authority-check-trace)
 - [How to check the accessibility to a SAP System](https://support.theobald-software.com/helpdesk/KB/View/13350-how-to-check-the-accessibility-to-a-sap-system)
 

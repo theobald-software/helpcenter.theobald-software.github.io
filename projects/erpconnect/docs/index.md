@@ -39,7 +39,7 @@ hide:
 	[:material-web: Theobald Software Homepage](https://theobald-software.com)<br>
 	[:material-email-newsletter: Newsletters](https://theobald-software.com/newsletter/)<br>
 	[:material-comment-question: Survey: SAP S/4 HANA Cloud](https://theobald-software.typeform.com/to/Ss7ZQbqp?typeform-source=support.theobald-software.com)<br>
-	[:material-comment-quote: Want to give Feedback?](https://theobald-software.typeform.com/to/CnpfiiIN)
+	[:material-comment-quote: Feedback](https://theobald-software.typeform.com/to/CnpfiiIN)
     
 </div>
 
