@@ -720,11 +720,22 @@ Example:
 	
 #### List of Variables
 
-| Variable     | ERPConnect | Xtract IS            | Xtract for Alteryx       | Xtract Universal           |  yunIO          |
-|--------------|------------|----------------------|--------------------------|----------------------------|-----------------|
-| product      | ERPconnect | Xtract IS            | Xtract for Alteryx       | Xtract Unversal            | yunIO           |
-| variable     | -          | SSIS variable        | runtime parameter        | runtime parameter          | -               |
-| variables    | -          | SSIS variables       | runtime parameters       | runtime parameters         | -               |
-| settings     | -          | settings             | extraction settings      | extraction settings        | server settings |
-| settings-btn | -          | **Settings**         | **[Extraction Settings]**|**Extraction Settings**     | **Settings**    |
-| parameter-btn| -          | **Edit parameters**  | **[Edit parameters]**    |**Edit runtime parameters** | -               |
+| Variable     | ERPConnect | Xtract IS            | Xtract for Alteryx       | Xtract Universal           |  Board Connector            |  yunIO          |
+|--------------|------------|----------------------|--------------------------|----------------------------|-----------------------------|-----------------|
+| product      | ERPConnect | Xtract IS            | Xtract for Alteryx       | Xtract Universal           | Board Connector             | yunIO           |
+| variable     | -          | SSIS variable        | runtime parameter        | runtime parameter          | runtime parameter           | -               |
+| variables    | -          | SSIS variables       | runtime parameters       | runtime parameters         | runtime parameters          | -               |
+| settings     | -          | settings             | extraction settings      | extraction settings        | extraction settings         | -               |
+| settings-btn | -          | **Settings**         | **[Extraction Settings]**|**Extraction Settings**     | **Extraction Settings**     | -               |
+| parameter-btn| -          | **Edit parameters**  | **[Edit parameters]**    |**Edit runtime parameters** | **Edit runtime parameters** | -               |
+| table        | -          | Xtract Table         | Xtract Table             |Table                       | Table                       | SAP Tables and Views |
+| table-cdc    | -          | Xtract Table CDC     | Xtract Table CDC         |Table CDC                   | Table CDC                   | -               |
+| bapi         | -          | Xtract BAPI          | Xtract BAPI              |BAPI                        | BAPI                        |Function Module / BAPI  |
+| bw-cube      | -          | Xtract BW Cube       | Xtract Cube              |BW Cube                     | BW Cube                     | -               |
+| hierarchy    | -          | Xtract Hierarchy     | Xtract Hierarchy         |BW Hierarchy                | BW Hierarchy                | -               |
+| deltaq       | -          | Xtract DeltaQ        | -                        |DeltaQ                      | DeltaQ                      | -               |
+| odp          | -          | Xtract ODP           | Xtract ODP               |ODP                         | ODP                         | -               |
+| ohs          | -          | Xtract OHS           | Xtract OHS               |OHS                         | OHS                         | -               |
+| query        | -          | Xtract Query         | Xtract Query             |SAP Query                   | SAP Query                   | -               |
+| report       | -          | Xtract Report        | Xtract Report            |Report                      | Report                      | Report          |
+| component    | -          | component            | component                |extraction type             | extraction type             | integration type|
