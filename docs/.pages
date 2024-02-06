@@ -1,4 +1,5 @@
 nav:
     - Editorial Guide: editorial-guide
     - Release Notes: release-notes
+    - Changelog: changelog
 collapse_single_pages: false

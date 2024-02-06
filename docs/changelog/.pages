@@ -1,0 +1,8 @@
+nav:
+    - ERPConnect.md
+    - Xtract IS: XtractIS.md
+    - Xtract for Alteryx: XtractForAlteryx.md
+    - Xtract Universal: XtractUniversal.md
+    - Board Connector: BOARDConnector.md
+    - yunIO: Yunio.md
+collapse: false
