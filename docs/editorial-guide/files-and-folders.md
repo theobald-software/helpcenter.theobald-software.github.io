@@ -71,7 +71,7 @@ Every product has a `/docs` folder that should contain the following files and f
 ├───.pages
 ├───changelog.md #contains the new version history
 ├───index.md #landing page of the product
-├───quick-start.md #migrated "getting started" page from the old Online Help (if quickstart consists of multiple pages, create a folder instead)
+├───getting-started.md #migrated "getting started" page from the old Online Help (if getting started consists of multiple pages, create a folder instead)
 ├───tags.md #a hidden page that contains a list of tags used in the product
 └───troubleshooting.md #contains a list of troubleshooting articles in jitbit
 ```

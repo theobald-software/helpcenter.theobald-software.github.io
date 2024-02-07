@@ -14,7 +14,7 @@ You can export the default value for the superior functional location under data
       To change a Functional Location replace the function module "BAPI_FUNCLOC_CREATE" with the function module "BAPI_FUNCLOC_CHANGE".
 
 
-### Call BAPI_FUNCLOC_CREATE
+### Call BAPI_FUNCLOC_CREATE { data-search-exclude }
 
 The following sample code calls the BAPI BAPI_FUNCLOC_CREATE to create a Functional Location in SAP:
 
