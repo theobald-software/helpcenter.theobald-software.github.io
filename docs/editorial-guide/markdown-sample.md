@@ -133,6 +133,19 @@ Material for MkDocs includes an announcement bar to display product news or othe
 
 To delete an announcement, remove the `announce` block from the file.
 
+### Buttons
+
+Links can be rendered as buttons. They are used for download links.
+
+```
+[Button](../assets/files/sap_roles/ZXTQUERY.SAP){ .md-button }
+```
+
+<div class="result" markdown>
+
+[Download-Button](../assets/files/sap_roles/ZXTQUERY.SAP){ .md-button }
+
+</div>
 
 ### Code Blocks
 
