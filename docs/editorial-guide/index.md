@@ -1,6 +1,2 @@
----
-title: Editorial Guidelines
----
 
-
-Migrate content from the Editorial Guide.
+This section contains the Theobald Software editorial guide.

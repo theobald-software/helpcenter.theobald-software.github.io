@@ -301,7 +301,7 @@ You can use regular markdown syntax in grid cards to add links, images, etc:
 Icons can be integrated in flowing text via `:[folder]-[name-of-the-icon]:`. 
 They can be used in the following manner:
 
-Click :material-pencil-outline: to edit an entry.
+Click **[:material-pencil-outline:]** to edit an entry.
 
 - Additional clarification that an icon is an icon is unnecessary. 
 - Make sure not to write “click on”.
@@ -392,6 +392,18 @@ Click :material-pencil-outline: to edit an entry.
 	:yunio-rename-icon: `:yunio-edit-general:`
 
 	:yunio-run: `:yunio-run:`
+	
+	:yunio-run-collapse: `:yunio-run-collapse:`
+
+	:yunio-run-expand: `:yunio-run-expand:`
+
+	:yunio-run-download: `:yunio-run-download:`
+	
+	:yunio-run-upload: `:yunio-run-upload:`
+	
+	:yunio-run-reset: `:yunio-run-reset:`
+	
+	:yunio-run-fullscreen: `:yunio-run-fullscreen:`
 
 Old syntax:
 
@@ -622,6 +634,44 @@ plugins:
 	-	https://help.theobald-software.com/en/xtract-universal/destinations/csv-via-http#csv-settings
 	-	https://help.theobald-software.com/en/xtract-universal/destinations/csv-via-http#convert--encoding
 
+### Search
+
+The Material search function allows to exclude pages and single sections of text from the search results.
+It also allows ranking pages.
+
+=== "Exclude page"
+
+	``` yaml
+	---
+	search:
+	  exclude: true
+	---
+	```
+	
+=== "Exclude section"
+
+	```
+	### I'm a Headline { data-search-exclude }
+	```
+
+=== "Rank up pages"
+
+	``` yaml
+	---
+	search:
+	  boost: 2 
+	---
+	```
+
+=== "Rank down pages"
+
+	``` yaml
+	---
+	search:
+	  boost: 0.5
+	---
+	```
+	
 
 ### Tables
 

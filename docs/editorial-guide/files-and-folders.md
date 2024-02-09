@@ -139,7 +139,7 @@ tags:
   - random
 ```
 
-### How to add new content
+### How to add new pages
 
 1. Choose a directory / URL for the new content. The URL is relative to the `/docs` directory. Example:<br>
 
