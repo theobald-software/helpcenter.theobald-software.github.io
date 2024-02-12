@@ -25,7 +25,7 @@ title: Administration
 - [ ] Customizations:
 	- [ ] Custom header
 	- [ ] Table filters for changelog
-- [ ] Inherit config settings
+- [ ] Inherit config settings (incompatibility with projects plugin, waiting for upgrades)
 - [x] Add a "summary" admonition
 - [x] Setup Custom Icons
 - [ ] Editorial Guide:
@@ -36,7 +36,7 @@ title: Administration
 	- [x] Metadata (how and when to use them)
 - [ ] UI/console program for building local previews
 - [x] Setup a template for bug reports
-- [ ] Test language setup
+- [x] Test language setup
 - [ ] .pdf export (define a template)
 
 #### Optional
@@ -44,7 +44,7 @@ title: Administration
 - [x] [Tooltips Preview](https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#instant-previews)
 - [ ] [SpellChecker](https://github.com/pawamoy/mkdocs-spellcheck) 
 - [ ] [Automatic Title Casing](https://github.com/mattchristopher314/mkdocs-title-casing-plugin)
-- [ ] [Unused Files](https://github.com/wilhelmer/mkdocs-unused-files) (obsolete with latest ImageReferenceChecker?)
+- [ ] [Unused Files](https://github.com/wilhelmer/mkdocs-unused-files) (obsolete with FileReferenceHandler)
 
 
 ### Install External Plugins
