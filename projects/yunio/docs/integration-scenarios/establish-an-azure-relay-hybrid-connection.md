@@ -37,7 +37,7 @@ There are multiple ways to check the connection between Azure and yunIO:
 - Check the Hybrid Connection in Azure: <br>The number of Listeners that are connected to a Hybrid Connection is displayed in the *Overview* screen of Azure Relay. If the connection to yunIO is established succesfully, the number of Listeners equals 1.<br>
 ![check-azure-hybrid-connection](../assets/images/yunio/articles/check-azure-hybrid-connection.png){:class="img-responsive"}
 - Check the yunIO logs: <br>
-Open the *Logs* menu in yunIO and display the latest logs, see [yunIO Help: Logs](https://help.theobald-software.com/en/yunio/logs). If the connection to Azure Relay is established succesfully, the following log entries are displayed:<br>
+Open the *Logs* menu in yunIO and display the latest logs, see [Documentation: Logs](https://help.theobald-software.com/en/yunio/logs). If the connection to Azure Relay is established succesfully, the following log entries are displayed:<br>
 ```
 PT00H00M26.576S I AzureRelayListener: Found a connection string setting.
 PT00H00M26.578S I AzureRelayListener: Online. Listening...
@@ -49,6 +49,6 @@ PT00H00M26.578S I AzureRelayListener: Server listening...
 ******
 
 #### Related Links
-- [yunIO Help: Server Settings](https://help.theobald-software.com/en/yunio/server-settings)
+- [Documentation: Server Settings](https://help.theobald-software.com/en/yunio/server-settings)
 - [Microsoft Documentation: What is Azure Relay?](https://learn.microsoft.com/en-us/azure/azure-relay/relay-what-is-it)
 - [Microsoft Documentation: Get started with Relay Hybrid Connections HTTP requests in .NET](https://learn.microsoft.com/en-us/azure/azure-relay/relay-hybrid-connections-http-requests-dotnet-get-started)

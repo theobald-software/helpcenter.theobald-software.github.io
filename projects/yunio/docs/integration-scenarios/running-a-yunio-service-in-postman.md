@@ -65,4 +65,4 @@ The results are displayed in the **Response** section of Postman.
 - [Web Version of Postman](https://www.postman.com/)
 - [Postman Documentation](https://learning.postman.com/docs/getting-started/introduction/)
 - [Using Variables in Postman](https://learning.postman.com/docs/sending-requests/variables/)
-- [yunIO Help: How to Run a Service](https://help.theobald-software.com/en/yunio#how-to-run-a-service)
+- [Documentation: How to Run a Service](https://help.theobald-software.com/en/yunio#how-to-run-a-service)

@@ -16,7 +16,7 @@ For more Information on Power Automate see [Microsoft Power Automate Documentati
 The service has the following settings:<br>
 - Set the Import Parameter NAME1 to *Supplied by Caller*.
 - Select all fields in the Table *CUSTOMER_T* for the output.
-2. Click :yunio-run: to testrun the service in yunIO (1). For more information, see [Online Help: Testing a Service](https://help.theobald-software.com/en/yunio/run-services#testing-a-service).
+2. Click :yunio-run: to testrun the service in yunIO (1). For more information, see [Documentation: Testing a Service](https://help.theobald-software.com/en/yunio/run-services#testing-a-service).
 3. Click :yunio-run-download: to download the service definition (2).<br>
 ![yunio-Services-Function-Download](../assets/images/yunio/articles/yunio-run-services-function-download.png){:class="img-responsive" width="800px"}
 
@@ -76,4 +76,4 @@ After a connector is successfully tested, it can be used in a Flow.
 
 #### Related Links
 - [Youtube Tutorial: SAP process automation - Power Automate SAP Connector](https://www.youtube.com/watch?v=k_yL8Bphfus)
-- [yunIO Help: How to Run a Service](https://help.theobald-software.com/en/yunio#how-to-run-a-service)
+- [Documentation: How to Run a Service](https://help.theobald-software.com/en/yunio#how-to-run-a-service)

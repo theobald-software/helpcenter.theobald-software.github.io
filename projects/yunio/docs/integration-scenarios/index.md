@@ -16,6 +16,7 @@ hide:
 <div class="mdx-columns" markdown>
 
 - [Authorization Objects - SAP User Rights](authority-objects-sap-user-rights.md)
+- [Enabling Secure Network Communication (SNC) via X.509 certificate](enable-snc-using-pse-file.md)
 
 </div>
 

@@ -26,7 +26,7 @@ The Alteryx Data Connection Manager (DCM) opens.<br>
 8. In the subsection *Connection* select one of the following authentication methods: <br>
 - *No Credentials* (if no authentication is set up in yunIO).
 - *Username* (if no authentication is set up in yunIO).
-- *Username and password* (if Basic Authentication is set up in yunIO, see [yunIO Online Help: Access Control](https://help.theobald-software.com/en/yunio/access-control#global-access-control)).
+- *Username and password* (if Basic Authentication is set up in yunIO, see [yunIO Documentation: Access Control](https://help.theobald-software.com/en/yunio/access-control#global-access-control)).
 9. Select an existing credential or click **+ Connect Credential** to create a new credential that can access and run yunIO services.
 10. Click **[Link]** / **[Create and link]** to link the credential to the connection.<br>
 ![yunio-credentials](../assets/images/yunio/articles/yunio-credentials.png){:class="img-responsive"}

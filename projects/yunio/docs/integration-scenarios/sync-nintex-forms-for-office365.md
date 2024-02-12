@@ -27,7 +27,7 @@ The depicted example uses the integration type *SAP Table or View* for the servi
 3. [Look up](https://help.theobald-software.com/en/yunio/bapis-and-function-modules#look-up-a-function-module--bapi) the table MAKT that contains material descriptions. 
 4. Select the columns MATNR, SPRAS and MAKTX for the output of the service.<br>
 ![nintex-office-design](../assets/images/yunio/articles/nintex-office-yunIO.png){:class="img-responsive" }
-5. Click :yunio-run: to testrun the service in yunIO (1). For more information, see [Online Help: Testing a Service](https://help.theobald-software.com/en/yunio/run-services#testing-a-service).
+5. Click :yunio-run: to testrun the service in yunIO (1). For more information, see [Documentation: Testing a Service](https://help.theobald-software.com/en/yunio/run-services#testing-a-service).
 6. Click :yunio-run-download: to download the service definition (2).<br>
 ![yunio-Services-Function-Download](../assets/images/yunio/articles/yunio-run-services-function-download.png){:class="img-responsive" width="800px"}
 

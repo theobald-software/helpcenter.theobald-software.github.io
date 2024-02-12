@@ -24,11 +24,11 @@ The following 3 examples for SAP interaction with drop down controls in Power Ap
 	- Create a Function Module service that calls the function SD_RFC_CUSTOMER_GET with the following settings:<br>
 	Set the input parameter NAME1 (Customer's Name) to *Supplied by caller*.
 	Select all fields in the table *CUSTOMER_T* for the output.<br>
-2. Click :yunio-run: to testrun the service in yunIO (1). For more information, see [Online Help: Testing a Service](https://help.theobald-software.com/en/yunio/run-services#testing-a-service).
+2. Click :yunio-run: to testrun the service in yunIO (1). For more information, see [Documentation: Testing a Service](https://help.theobald-software.com/en/yunio/run-services#testing-a-service).
 3. Click :yunio-run-download: to download the service definition (2).<br>
 ![yunio-Services-Function-Download](../assets/images/yunio/articles/yunio-run-services-function-download.png){:class="img-responsive" width="800px"}
 
-For more information on how to create services, see [Online Help: Creating a Service](https://help.theobald-software.com/en/yunio/getting-started#creating-a-service).
+For more information on how to create services, see [Documentation: Creating a Service](https://help.theobald-software.com/en/yunio/getting-started#creating-a-service).
 
 !!! note
     In Power Apps every data source is limited to 500 items. Therefore, it is recommended to pre-filter requests to a manageable amount of data e.g., by using a row limit in the yunIO service.
@@ -133,4 +133,4 @@ Concatenate(CustomerGetResult.NAME1," ",CustomerGetResult.KUNNR)
 - [Youtube Tutorial: SAP process automation - Power Automate SAP Connector](https://www.youtube.com/watch?v=k_yL8Bphfus&t=2s)
 - [Microsoft Documentation: Drop down control](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/controls/control-drop-down)
 - [Microsoft Documentation: Text input control](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/controls/control-text-input)
-- [yunIO Help: How to Run a Service](https://help.theobald-software.com/en/yunio#how-to-run-a-service)
+- [Documentation: How to Run a Service](https://help.theobald-software.com/en/yunio#how-to-run-a-service)

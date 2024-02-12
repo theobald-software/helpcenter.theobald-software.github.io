@@ -30,12 +30,12 @@ Follow the steps below to set up a yunIO service that creates sick leaves in SAP
 2. [Create a new service](https://help.theobald-software.com/en/yunio/getting-started#creating-a-service) in yunIO. The depicted example uses the integration type *Transaction* for the service.
 3. Record the SAP transaction PA30 to create a new sick leave in SAP, e.g., for an annual sick leave (*Infotype* 2001 and *STy* 0100). <br>
 ![yunio-pa30](../assets/images/yunio/articles/yunio-pa30.gif){:class="img-responsive" style="border:1px solid black;"}
-4. Set parameters for the following input options. For more information on how to parameterize transactions, see [Online Help: Parameterize Transactions](https://help.theobald-software.com/en/yunio/transactions#parameterize-transactions).
+4. Set parameters for the following input options. For more information on how to parameterize transactions, see [Documentation: Parameterize Transactions](https://help.theobald-software.com/en/yunio/transactions#parameterize-transactions).
 	- Employee number
 	- Start date of the sick leave
 	- End date of the sick leave
 5. Click **[Save]** to save the service.
-6. Click :yunio-run: to testrun the service in yunIO (1). For more information, see [Online Help: Testing a Service](https://help.theobald-software.com/en/yunio/run-services#testing-a-service).
+6. Click :yunio-run: to testrun the service in yunIO (1). For more information, see [Documentation: Testing a Service](https://help.theobald-software.com/en/yunio/run-services#testing-a-service).
 7. Click :yunio-run-download: to download the service definition (2).<br>
 ![yunio-Services-Function-Download](../assets/images/yunio/articles/yunio-run-services-function-download.png){:class="img-responsive" width="800px"}
 8. Repeat steps 3 to 7 to create a service for every relevant type of sick leave:

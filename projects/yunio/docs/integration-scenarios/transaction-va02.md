@@ -32,7 +32,7 @@ All fields that need to be parameterized must be available in the section *GUI S
 ![change-sales-order4](../assets/images/yunio/articles/va02.gif){:class="img-responsive" style="border:1px solid black;"}
 8. Click **Sales document > Save** to save any changes in SAP.
 9. Click **[Save]** to save the service.<br>
-10. Edit the service to add parameters to the service, see [yunIO Help: Parameterize Transactions](https://help.theobald-software.com/en/yunio/transactions#parameterize-transactions).
+10. Edit the service to add parameters to the service, see [Documentation: Parameterize Transactions](https://help.theobald-software.com/en/yunio/transactions#parameterize-transactions).
 
 
 !!! note
@@ -42,6 +42,5 @@ All fields that need to be parameterized must be available in the section *GUI S
 ******
 
 #### Related Links
-- [yunIO Help: Getting Started](https://help.theobald-software.com/en/yunio/getting-started)
-- [yunIO Help: Transactions](https://help.theobald-software.com/en/yunio/transactions)
-- [yunIO Help: Parameterize Transactions](https://help.theobald-software.com/en/yunio/transactions#parameterize-transactions)
+- [Documentation: Transactions](https://help.theobald-software.com/en/yunio/transactions)
+- [Documentation: Parameterize Transactions](https://help.theobald-software.com/en/yunio/transactions#parameterize-transactions)

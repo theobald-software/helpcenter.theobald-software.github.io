@@ -32,9 +32,9 @@ Example: to parameterize a field in a specific tap or menu, the tab or menu must
 6. Click **[Equipment] > [Save]** to save the new equipment in SAP.<br>
 ![yunio-Transaction-IE01-Save](../assets/images/yunio/articles/transaction-save-equipment.png){:class="img-responsive"}
 7. Click **[Save]** to save your actions. <br>
-Alternatively, click **[Stop]** to start parameterizing, see [yunIO Help: Parameterize Transactions](https://help.theobald-software.com/en/yunio/transactions#parameterize-transactions).
+Alternatively, click **[Stop]** to start parameterizing, see [Documentation: Parameterize Transactions](https://help.theobald-software.com/en/yunio/transactions#parameterize-transactions).
 8. Copy the URL of the service definition ( :yunio-copy: icon) or download the service definition ( :yunio-run-download: icon) to integrate the service in your workflow.<br>
-For information on how to use yunIO services in Power Automate or Nintex, see [Integrating a yunIO Service with Power Automate](integrating-a-yunio-service-with-power-automate) or [Integrating a yunIO Service with Nintex](https://kb.theobald-software.com/yunio/integrating-a-yunio-service-with-nintex).
+For information on how to use yunIO services in Power Automate or Nintex, see [Integrating a yunIO Service with Power Automate](integrating-a-yunio-service-with-power-automate.md) or [Integrating a yunIO Service with Nintex](integrating-a-yunio-service-with-nintex.md).
 ![yunio-Services](../assets/images/yunio/articles/yunio-run-services.png){:class="img-responsive"}
 
 !!! note
@@ -46,6 +46,5 @@ For information on how to use yunIO services in Power Automate or Nintex, see [I
 ******
 
 #### Related Links
-- [yunIO Help: Getting Started](https://help.theobald-software.com/en/yunio/getting-started)
-- [yunIO Help: Transactions](https://help.theobald-software.com/en/yunio/transactions)
+- [Documentation: Transactions](https://help.theobald-software.com/en/yunio/transactions)
 - [SAP Help: Creating a Piece of Equipment](https://help.sap.com/viewer/f0e0dd7850e64947aa66a647f8d3af09/6.18.latest/en-US/bc78bb53707db44ce10000000a174cb4.html).

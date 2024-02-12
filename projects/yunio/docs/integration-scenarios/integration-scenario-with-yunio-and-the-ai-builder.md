@@ -49,7 +49,7 @@ The depicted example uses the BAPI_INCOMINGINVOICE_CREATE1 to create an incoming
 	- ITEM_AMOUNT (Amount in document currency)<br>
 	- QUANTITY (Quantity)<br>
 	- PO_UNIT (Purchase Order Unit of Measure)	<br>
-6. Click :yunio-run: to testrun the service in yunIO (1). For more information, see [Online Help: Testing a Service](https://help.theobald-software.com/en/yunio/run-services#testing-a-service).
+6. Click :yunio-run: to testrun the service in yunIO (1). For more information, see [Documentation: Testing a Service](https://help.theobald-software.com/en/yunio/run-services#testing-a-service).
 7. Click :yunio-run-download: to download the service definition (2).<br>
 ![yunio-Services-Function-Download](../assets/images/yunio/articles/yunio-run-services-function-download.png){:class="img-responsive" width="800px"}
 
@@ -78,7 +78,7 @@ Keep in mind that some fields need fixed values required by SAP (INVOICESTATUS, 
 Because the table ITEMDATA is used in a BAPI that can process multiple invoice items, Power Automate automatically sets an *Apply to each* action as the next workflow step. 
 This example demonstrates a simple case with a single invoice line item. 
 ![Power-Automate-AI-Builder-mapping1.png](../assets/images/yunio/articles/yunio-power-automate-ai-builder-mapping1.png){:class="img-responsive"}
-6. Use an expression to automatically convert the date fields into an SAP compliant format, see [Formats and Conversions in Power Automate](./conversion-in-power-automate). 
+6. Use an expression to automatically convert the date fields into an SAP compliant format, see [Formats and Conversions in Power Automate](./conversion-in-power-automate.md). 
 7. Optional: Add an email notification action to get notified about the newly created incoming invoice.
 Use the output parameters INVOICEDOCNUMBER and FISCALYEAR in the notification email to see if the invoice was successfully created.
 Other SAP output information (i.e. table RETURN) can be extracted to analyze the data in case of workflow failures. <br>
@@ -92,7 +92,7 @@ Other SAP output information (i.e. table RETURN) can be extracted to analyze the
 ### Test the Workflow
 
 1. Upload a suitable invoice PDF-document. 
-If needed, [download a sample EXCEL file (.xlsx)](/files/yunio/Invoice_Easy_Computer_Software-AI-Builder-Sample.xlsx){:download="Invoice_Easy_Computer_Software-AI-Builder-Sample.xlsx"} that can be used as an invoice document.<br>
+If needed, [download a sample EXCEL file (.xlsx)](../assets/files/yunio/Invoice_Easy_Computer_Software-AI-Builder-Sample.xlsx){:download="Invoice_Easy_Computer_Software-AI-Builder-Sample.xlsx"} that can be used as an invoice document.<br>
 Note that a purchase order on which the incoming invoice can be booked, must already exist in the SAP ERP system. 
 For more information on incoming invoices, see [SAP Documentation: Incoming Invoice](https://help.sap.com/docs/SAP_ERP/ffc393c91a904eb5b0bec93aa34e42d8/dc6eb6531de6b64ce10000000a174cb4.html?version=6.02.latest&locale=en-US).<br>
 ![Power-Automate-AI-Builder-run-flow.png](../assets/images/yunio/articles/yunio-ai-builder-run-flow.png){:class="img-responsive"}
@@ -103,5 +103,5 @@ For more information on incoming invoices, see [SAP Documentation: Incoming Invo
 
 #### Related Links
 - [Youtube Tutorial: SAP process automation - Power Automate SAP Connector](https://www.youtube.com/watch?v=k_yL8Bphfus)
-- [yunIO Help: How to Run a Service](https://help.theobald-software.com/en/yunio#how-to-run-a-service)
+- [Documentation: How to Run a Service](https://help.theobald-software.com/en/yunio#how-to-run-a-service)
 - [SAP Documentation: Incoming Invoice](https://help.sap.com/docs/SAP_ERP/ffc393c91a904eb5b0bec93aa34e42d8/dc6eb6531de6b64ce10000000a174cb4.html?version=6.02.latest&locale=en-US)

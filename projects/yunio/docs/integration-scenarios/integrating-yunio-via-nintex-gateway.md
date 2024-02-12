@@ -12,12 +12,12 @@ The Nintex Gateway is an on-premises application that enables Nintex Automation 
 - Install and configure the [Nintex Gateway](https://help.nintex.com/en-US/nwc/Content/Gateway/InstallAndConfigure.htm).
 - Make sure that the Nintex Gateway has a valid API key for authentication.
 - Install yunIO version 1.26.3 or higher.
-- Set up Basic Authentication in yunIO, see [Online Help: Access Control](https://help.theobald-software.com/en/yunio/access-control#global-access-control). 
+- Set up Basic Authentication in yunIO, see [Documentation: Access Control](https://help.theobald-software.com/en/yunio/access-control#global-access-control). 
 
 ### Creating a yunIO Service for Nintex Gateway
 
 1. Create a service in yunIO. The depicted example uses the BAPI SD_RFC_CUSTOMER_GET to search and extract customer data from SAP. 
-2. Click :yunio-run: to testrun the service in yunIO (1). For more information, see [Online Help: Testing a Service](https://help.theobald-software.com/en/yunio/run-services#testing-a-service).
+2. Click :yunio-run: to testrun the service in yunIO (1). For more information, see [Documentation: Testing a Service](https://help.theobald-software.com/en/yunio/run-services#testing-a-service).
 3. Navigate to **Settings** and select *Nintex Gateway* as the **OpenAPI Target Kind** to add predefined Nintex Gateway properties to the service definition.<br>
 ![nintex-gateway-target](../assets/images/yunio/articles/nintex-gateway-target.png){:class="img-responsive"}
 4. Navigate to **Services** and click :yunio-run-download: to download the service definition (2).<br>

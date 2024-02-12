@@ -39,7 +39,7 @@ This option is mandatory when using BAPI_COSTCENTER_CREATEMULTIPLE.<br>
 	- CURRENCY_ISO<br>
 	- PROFIT_CTR<br>
 	- NAME<br>
-6. Click :yunio-run: to testrun the service in yunIO (1). For more information, see [Online Help: Testing a Service](https://help.theobald-software.com/en/yunio/run-services#testing-a-service).
+6. Click :yunio-run: to testrun the service in yunIO (1). For more information, see [Documentation: Testing a Service](https://help.theobald-software.com/en/yunio/run-services#testing-a-service).
 7. Click :yunio-run-download: to download the service definition (2).<br>
 ![yunio-Services-Function-Download](../assets/images/yunio/articles/yunio-run-services-function-download.png){:class="img-responsive" width="800px"}
 
@@ -101,5 +101,5 @@ Check if the cost centers from the input data sets are created in SAP (table CSK
 #### Related Links
 - [Youtube Tutorial: SAP process automation - Power Automate SAP Connector](https://youtu.be/k_yL8Bphfus)
 - [Microsoft Community Post: Example for Item Arrays](https://powerusers.microsoft.com/t5/Building-Flows/Build-JSON-object/m-p/113188#M11041)
-- [yunIO Help: How to Run a Service](https://help.theobald-software.com/en/yunio#how-to-run-a-service)
+- [Documentation: How to Run a Service](https://help.theobald-software.com/en/yunio#how-to-run-a-service)
 

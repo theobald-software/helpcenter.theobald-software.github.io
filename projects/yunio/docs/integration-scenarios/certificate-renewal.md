@@ -51,6 +51,6 @@ The `yunio-le.ps1` script requires 2 input parameters:
 ******
 
 #### Related Links
-- [Installing an X.509 Certificate](./x509-certificate).
-- [Enabling Secure Network Communication (SNC) via X.509 certificate](../sap/enable-snc-using-pse-file)
-- [Online Help: yunIO - Server Settings](https://help.theobald-software.com/en/yunio/server-settings)
+- [Installing an X.509 Certificate](./x509-certificate.md)
+- [Enabling Secure Network Communication (SNC) via X.509 certificate](./enable-snc-using-pse-file.md)
+- [Documentation: Server Settings](https://help.theobald-software.com/en/yunio/server-settings)

@@ -28,7 +28,7 @@ Have a TLS certificate issued by your IT network team considering the following 
 
 !!! note
     The Windows Certificate Store works with most browsers. Note that Mozilla Firefox offers its own certificate storage.
-    Configure your Firefox browser to trust certificates in the Windows certificate store or import the certificate via an enterprise ploicy, see [Mozilla Support: Setting Up Certificate Authorities (CAs) in Firefox](https://support.mozilla.org/en-US/kb/setting-certificate-authorities-firefox).
+    Configure your Firefox browser to trust certificates in the Windows certificate store or import the certificate via an enterprise policy, see [Mozilla Support: Setting Up Certificate Authorities (CAs) in Firefox](https://support.mozilla.org/en-US/kb/setting-certificate-authorities-firefox).
 
 ### Import an X.509 Certificate
 
@@ -39,12 +39,12 @@ In the example shown, the server name is "sherri":
 3. Click **[Pick Certificate]** to reference the X.509 certificate.<br>
 Information about the currently saved certificate is displayed in the Transport Layer Security section of the menu.<br>
 ![import-certificate](../assets/images/yunio/articles/certificate-settings.png){:class="img-responsive"}
-4. Click **Enable TLS** to activate Transport Layer Security, see [Online Help: yunIO - Server Settings](https://help.theobald-software.com/en/yunio/server-settings).
+4. Click **Enable TLS** to activate Transport Layer Security, see [Documentation: Server Settings](https://help.theobald-software.com/en/yunio/server-settings).
 5. Click **[Save]** and restart the yunIO Windows service to implement the changes.
 
 The yunIO Designer and the services created in yunIO are now accessible via https protocol. 
 
 #### Related Links:
-- [Certificate Renewal for TLS](./certificate-renewal)
-- [Enabling Secure Network Communication (SNC) via X.509 certificate](../sap/enable-snc-using-pse-file)
-- [Online Help: yunIO - Server Settings](https://help.theobald-software.com/en/yunio/server-settings)
+- [Certificate Renewal for TLS](./certificate-renewal.md)
+- [Enabling Secure Network Communication (SNC) via X.509 certificate](./enable-snc-using-pse-file.md)
+- [Documentation: Server Settings](https://help.theobald-software.com/en/yunio/server-settings)

@@ -29,9 +29,9 @@ All fields that need to be parameterized must be available in the section *GUI S
 7. Click **[Customer] > [Save]** to save the changes in SAP.<br>
 ![change-customer-master4](../assets/images/yunio/articles/change-customer-master4.png){:class="img-responsive"}
 6. Click **[Save]** to save your actions. <br>
-Alternatively, click **[Stop]** to start parameterizing, see [yunIO Help: Parameterize Transactions](https://help.theobald-software.com/en/yunio/transactions#parameterize-transactions).
+Alternatively, click **[Stop]** to start parameterizing, see [Documentation: Parameterize Transactions](https://help.theobald-software.com/en/yunio/transactions#parameterize-transactions).
 7. Copy the URL of the service definition ( :yunio-copy: icon) or download the service definition ( :yunio-run-download: icon) to integrate the service in your workflow.<br>
-For information on how to use yunIO services in Power Automate or Nintex, see [Integrating a yunIO Service with Power Automate](integrating-a-yunio-service-with-power-automate) or [Integrating a yunIO Service with Nintex](https://kb.theobald-software.com/yunio/integrating-a-yunio-service-with-nintex).
+For information on how to use yunIO services in Power Automate or Nintex, see [Integrating a yunIO Service with Power Automate](integrating-a-yunio-service-with-power-automate.md) or [Integrating a yunIO Service with Nintex](integrating-a-yunio-service-with-nintex.md).
 ![yunio-Services](../assets/images/yunio/articles/yunio-run-services.png){:class="img-responsive"}
 
 
@@ -42,6 +42,5 @@ For information on how to use yunIO services in Power Automate or Nintex, see [I
 ******
 
 #### Related Links
-- [yunIO Help: Getting Started](https://help.theobald-software.com/en/yunio/getting-started)
-- [yunIO Help: Transactions](https://help.theobald-software.com/en/yunio/transactions)
-- [yunIO Help: Parameterize Transactions](https://help.theobald-software.com/en/yunio/transactions#parameterize-transactions)
+- [Documentation: Transactions](https://help.theobald-software.com/en/yunio/transactions)
+- [Documentation: Parameterize Transactions](https://help.theobald-software.com/en/yunio/transactions#parameterize-transactions)
