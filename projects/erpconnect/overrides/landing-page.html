@@ -4,5 +4,8 @@
 {% extends "main.html" %}
 {% block header %}
   {{ super() }}
-  <img src="banner.jpg" alt="Banner">
+  <picture>
+    <source srcset="banner-mobile.jpg" media="(orientation: portrait)" />
+    <img class="header-banner" src="banner.jpg" alt="Banner">
+  </picture>
 {% endblock %}

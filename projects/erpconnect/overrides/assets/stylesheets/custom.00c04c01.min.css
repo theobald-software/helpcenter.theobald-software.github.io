@@ -470,3 +470,13 @@
 .md-typeset .mdx-sponsorship-total {
   font-weight: 700;
 }
+
+.header-banner {
+  position: relative;
+  width: 100%;
+}
+
+#welcome-to-erpconnect {
+  position: absolute;
+  transform: translateY(-190px);
+}
