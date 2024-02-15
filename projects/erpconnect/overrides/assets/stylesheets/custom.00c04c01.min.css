@@ -476,7 +476,18 @@
   width: 100%;
 }
 
-#welcome-to-erpconnect {
+.banner-text {
+  color: #3c3c3b;
   position: absolute;
-  transform: translateY(-190px);
+  transform: translateY(-230px);
+}
+
+.banner-text h1 {
+  color: #3c3c3b;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.banner-text p {
+  max-width: 700px;
 }
