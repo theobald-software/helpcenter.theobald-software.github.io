@@ -9,7 +9,7 @@ hide:
 ---
 <div class="full-width-background"></div>
 <div class="banner-text">
-	<h1> Welcome to {{ product }}!</h1>
+	<h1> &lt; Welcome to {{ product }}! &gt; </h1>
 	<p>{{ config.site_description }}</p>
 </div>
 
