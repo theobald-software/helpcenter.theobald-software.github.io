@@ -480,15 +480,22 @@
   top: 0;
   left: 0;
   width: 100vw;
-  height: 230px; 
-  background: url('../image/banner-mobile.jpg') no-repeat center center;
+  height: 300px; 
+  background: url('../image/banner-mobile.png') no-repeat center center;
   background-size: cover;
   z-index: -1; 
 }
 
-.banner-text {
-  color: white;
-  margin: auto;
+@media screen and (min-width: 394px) {
+  .full-width-background {
+    height: 250px; 
+  }
+}
+
+@media screen and (min-width: 604px) {
+  .full-width-background {
+    height: 220px; 
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -509,6 +516,11 @@
     background-image: url("../image/banner.png");
     height: 250px; 
   }
+}
+
+.banner-text {
+  color: white;
+  margin: auto;
 }
 
 .banner-text h1 {
