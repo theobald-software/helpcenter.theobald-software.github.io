@@ -7,10 +7,11 @@ hide:
   - tags
   - toc
 ---
-
-# Welcome to {{ product }}!
-
-{{ config.site_description }}
+<div class="full-width-background"></div>
+<div class="banner-text">
+	<h1> Welcome to {{ product }}!</h1>
+	<p>{{ config.site_description }}</p>
+</div>
 
 <div class="grid cards" markdown>
 
