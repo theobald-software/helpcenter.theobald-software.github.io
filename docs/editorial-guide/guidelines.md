@@ -9,6 +9,17 @@ What to consider when creating new documentation pages:
 - Create new documentation pages in the `documentation` folder of the product.
 - Filenames use "-" instead of empty spaces, e.g., `bapis-and-function-modules.md`.
 - The URL of the file is relative to the `/docs` directory. Example:<br>
+
+	=== "Regular .md files"
+		Directory: `helpcenter.theobald-software.github.io\projects\erpconnect\{==docs\documentation\intro\requirements.md==}`
+		
+		:octicons-arrow-right-24: `https://helpcenter.theobald-software.com/erpconnect/{==documentation/intro/requirements/==}`
+
+	=== "index.md files"
+		Directory: `helpcenter.theobald-software.github.io\projects\erpconnect\{==docs\documentation\intro\index.md==}`
+		
+		:octicons-arrow-right-24: `https://helpcenter.theobald-software.com/erpconnect/{==documentation/intro/==}`
+		
 - Define the following front matter items in the .md file:
 
 	``` yaml
@@ -46,7 +57,7 @@ What to consider when creating new articles:
 	```
 	
 - Add the article in the index page of the `articles` folder.
-- Mark new articles in the index page using :material-alert-decagram:. Remove the status after a month.
+- Mark new articles in the index page using :material-alert-decagram:. Remove the status after a month. Example:
 
 	``` markdown
 	- [Authorization Objects - SAP User Rights {==:material-alert-decagram:==}](authority-objects-sap-user-rights.md) 
