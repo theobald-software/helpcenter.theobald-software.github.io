@@ -488,13 +488,13 @@
 
 @media screen and (min-width: 394px) {
   .full-width-background {
-    height: 275px; 
+    height: 270px; 
   }
 }
 
 @media screen and (min-width: 458px) {
   .full-width-background {
-    height: 250px; 
+    height: 245px; 
   }
 }
 
