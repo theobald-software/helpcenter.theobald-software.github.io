@@ -60,6 +60,7 @@ plugins:
   - meta
   - typeset
   - awesome-pages
+  - pagenav-generator
   - tags
   - privacy:
       links_attr_map:
@@ -69,7 +70,6 @@ plugins:
       #cache: false
       hoisting: false
       #projects_config_transform: !!python/name:projects.transform
-  
 # Continuous integration
   - group:
       enabled: !ENV CI

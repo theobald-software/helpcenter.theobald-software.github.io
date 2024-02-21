@@ -8,7 +8,6 @@ title: About
 
 </div>
 
-### Access API Documentation in Visual Studio
 The ERPConnect API documentation is available in the Object Browser in Visual Studio.<br>
 To view the Object Browser, navigate to the menu **View -> Object Browser**. 
 

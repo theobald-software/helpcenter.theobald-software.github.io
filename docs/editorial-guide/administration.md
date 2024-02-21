@@ -21,30 +21,27 @@ title: Administration
 - [x] LinkChecker
 - [ ] Troubleshooting
 	- [x] update / define which troubleshooting articles to include in the HelpCenter (new tag #hec1 for ERPConnect articles)
-	- [ ] automate article list
+	- [ ] automate article list (dev)
 - [ ] Customizations:
-	- [ ] Custom header
-	- [ ] Table filters for changelog
+	- [x] Custom header
+	- [ ] Table filters for changelog (dev + Talgat)
 - [ ] Inherit config settings (incompatibility with projects plugin, waiting for upgrades)
 - [x] Add a "summary" admonition
 - [x] Setup Custom Icons
 - [ ] Editorial Guide:
-	- [ ] Migrate and update current [editorial guide](https://help.theobald-software.com/en/editorial-guide)
-	- [x] Front matter items (how and when to use them)
-	- [x] Tags (how and when to use them)
-	- [x] Variables (how and when to use them)
-	- [x] Metadata (how and when to use them)
-- [ ] UI/console program for building local previews
+	- [ ] Migrate [editorial guide](https://help.theobald-software.com/en/editorial-guide) (Maia)
+	- [x] Front matter items 
+	- [x] Tags 
+	- [x] Variables
+	- [x] Metadata
+- [ ] UI/console program for building local previews (dev)
 - [x] Setup a template for bug reports
 - [x] Test language setup
-- [ ] .pdf export (define a template)
 
 #### Optional
 
 - [x] [Tooltips Preview](https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#instant-previews)
-- [ ] [SpellChecker](https://github.com/pawamoy/mkdocs-spellcheck) 
 - [ ] [Automatic Title Casing](https://github.com/mattchristopher314/mkdocs-title-casing-plugin)
-- [ ] [Unused Files](https://github.com/wilhelmer/mkdocs-unused-files) (obsolete with FileReferenceHandler)
 
 
 ### Install External Plugins
