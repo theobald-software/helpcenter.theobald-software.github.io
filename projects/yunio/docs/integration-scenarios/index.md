@@ -47,7 +47,7 @@ hide:
 
 </div>
 
-### Executing SAP Transactions via yunIO
+### SAP Transactions via yunIO
 
 <div class="mdx-columns" markdown>
 
