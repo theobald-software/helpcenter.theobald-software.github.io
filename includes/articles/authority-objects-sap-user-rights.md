@@ -38,7 +38,7 @@ S_RFC            RFC_TYPE=FUGR; RFC_NAME=SRFC; ACTVT=16
 S_RFC            RFC_TYPE=FUGR; RFC_NAME=RFC1; ACTVT=16
 ```
 
-[Download SAP profile for general authorization](../assets/files/sap_roles/ZXTGENERAL.SAP){ .md-button }
+[:material-download-circle: Download SAP profile for general authorization](../assets/files/sap_roles/ZXTGENERAL.SAP){ .md-button }
 
 
 ### BAPI
@@ -47,7 +47,7 @@ S_RFC            RFC_TYPE=FUGR; RFC_NAME=RFC1; ACTVT=16
 S_RFC            ACTVT=16; RFC_TYPE=FUGR; RFC_NAME=DDIF_FIELDINFO_GET, SDIFRUNTIME     
 ```
 
-[Download SAP profile for BAPI Extractions](../assets/files/sap_roles/ZXTBAPI.SAP){ .md-button }
+[:material-download-circle: Download SAP profile for BAPI Extractions](../assets/files/sap_roles/ZXTBAPI.SAP){ .md-button }
 
 ### BW Cube / BW Query 
 
@@ -86,7 +86,7 @@ Authorizations for the underlying Queries, Cubes, InfoAreas and analysis need to
 
 Alternatively, you can assign the SAP role template  ```S_RS_RREPU```. <br>
 
-[Download SAP profile for BW Cube / BW Query](../assets/files/sap_roles/ZXTQUERY.SAP){ .md-button }
+[:material-download-circle: Download SAP profile for BW Cube / BW Query](../assets/files/sap_roles/ZXTQUERY.SAP){ .md-button }
 
 
 {% if page.meta.product != "erpconnect" %}
@@ -113,7 +113,7 @@ S_TABU_NAM     ACTVT=02, 03; TABLE=ENLFDIR
 S_TABU_NAM     ACTVT=02, 03; TABLE=RSHIEDIR
 ```
 
-[Download SAP profile for BW Hierarchy](../assets/files/sap_roles/ZXTBWHIERARCHY.SAP){ .md-button }
+[:material-download-circle: Download SAP profile for BW Hierarchy](../assets/files/sap_roles/ZXTBWHIERARCHY.SAP){ .md-button }
 
 ### ODP
 
@@ -123,7 +123,7 @@ For a complete and detailed list of authorization objects refer to [SAP Note 285
 S_TABU_NAM       ACTVT=03; TABLE=TCURX
 ```
 
-[Download SAP profile for ODP](../assets/files/sap_roles/ZXTODP.SAP){ .md-button }
+[:material-download-circle: Download SAP profile for ODP](../assets/files/sap_roles/ZXTODP.SAP){ .md-button }
 
 
 ### OHS
@@ -148,7 +148,7 @@ S_RS_AUTH  BIAUTH=0BI_ALL
 S_ADMI_FCD S_ADMI_FCD=ST0R
 ```
 
-[Download SAP profile for OHS](../assets/files/sap_roles/ZXTOHS.SAP){ .md-button }
+[:material-download-circle: Download SAP profile for OHS](../assets/files/sap_roles/ZXTOHS.SAP){ .md-button }
 
 {% endif %}
 
@@ -158,7 +158,7 @@ S_ADMI_FCD S_ADMI_FCD=ST0R
 S_RFC            RFC_TYPE=FUGR; RFC_NAME=AQRC; ACTVT=16 
 ```
 
-[Download SAP profile for SAP Query](../assets/files/sap_roles/ZXTQUERY.SAP){ .md-button }
+[:material-download-circle: Download SAP profile for SAP Query](../assets/files/sap_roles/ZXTQUERY.SAP){ .md-button }
 
 {% if page.meta.product != "erpconnect" %}
 
@@ -178,7 +178,7 @@ S_BTCH_JOB       JOBGROUP=*; JOBACTION=RELE
     The necessary transport request for function group *ZXTRACTABAP* is located in the following path: ```C:\Program Files\[XtractProduct]\ABAP\Report\Z_XTRACT_IS_REMOTE_REPORT-transport.zip``` of the default installation.
 
 
-[download SAP profile for Report](../assets/files/sap_roles/ZXREPORT.SAP){ .md-button }
+[:material-download-circle: Download SAP profile for Report](../assets/files/sap_roles/ZXREPORT.SAP){ .md-button }
 
 {% endif %}
 
@@ -225,7 +225,7 @@ When executing the custom function module Z_THEO_READ_TABLE in the background:
 
 {% endif %}
 
-[Download SAP profile for Table](../assets/files/sap_roles/ZXTABLE.SAP){ .md-button }
+[:material-download-circle: Download SAP profile for Table](../assets/files/sap_roles/ZXTABLE.SAP){ .md-button }
 
 {% if page.meta.product != "erpconnect" %}
 
@@ -245,7 +245,7 @@ XXXX (stands for a placeholder) is the authorization group for the source table.
 !!! note
     The transport requests for the required function groups */THEO/READ_TABLE* are located in ```C:\Program Files\[XtractProduct]\ABAP\TableCDC``` and ```C:\Program Files\[XtractProduct]\ABAP\Table```. 
 
-[Download SAP profile for Table CDC](../assets/files/sap_roles/ZXTABLECDC.SAP){ .md-button }
+[:material-download-circle: Download SAP profile for Table CDC](../assets/files/sap_roles/ZXTABLECDC.SAP){ .md-button }
 
 ### DeltaQ (Depricated)
 
@@ -315,9 +315,9 @@ XXXX (stands for a placeholder) is the authorization group for the source table.
 	S_RO_OSOA        OLTPSOURCE=*; OSOAAPCO=*; OSOAPART=DATA; ACTVT=03;  | Only in SAP Releases  7.0 and higher
 	```
 
-[Download SAP profile for DeltaQ](../assets/files/sap_roles/ZXTDELTAQ.SAP){ .md-button }
+[:material-download-circle: Download SAP profile for DeltaQ](../assets/files/sap_roles/ZXTDELTAQ.SAP){ .md-button }
 
-[Download SAP profile for DeltaQ Customizing Check](../assets/files/sap_roles/DELTAQ_CUSTOMIZING_CHECK.SAP){ .md-button }
+[:material-download-circle: Download SAP profile for DeltaQ Customizing Check](../assets/files/sap_roles/DELTAQ_CUSTOMIZING_CHECK.SAP){ .md-button }
 
 {% endif %}
 
