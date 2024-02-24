@@ -47,6 +47,7 @@ title: Administration
 
 - [x] check if KB articles are up-to-date (use introduction sentences)
 - [ ] check if version history and release notes are available in `includes\version-history` and `docs\release-notes`
+- [ ] get input for glossary?
 - [ ] create Changelog page
 - [ ] create empty Troubleshooting page and check if tag #hy1 is available
 - [ ] create link to support portal in header
