@@ -200,5 +200,17 @@ extra:
       link: https://theobald-software.com/en/newsletter/
       name: Newsletter
   product: Xtract IS
-  #variable: SSIS variable
-  #variables: SSIS variables
+  component: component
+  bapi: Xtract BAPI
+  table: Xtract Table
+  tablecdc: Xtract Table CDC
+  bapi: Xtract BAPI
+  # bwcube: Xtract BW Cube	
+  deltaq: Xtract DeltaQ
+  odp: Xtract ODP
+  ohs: Xtract OHS
+  query: Xtract Query
+  report: Xtract Report
+  variable: SSIS variable
+  variables: SSIS variables
+  extraction: SSIS package
