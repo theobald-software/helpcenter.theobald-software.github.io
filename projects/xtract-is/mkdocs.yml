@@ -214,3 +214,5 @@ extra:
   variable: SSIS variable
   variables: SSIS variables
   extraction: SSIS package
+  settings: settings
+  settingsBtn: __Settings__
