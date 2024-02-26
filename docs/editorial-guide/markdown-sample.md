@@ -521,7 +521,7 @@ The folder contains the following subfolders:
 
 Open the correct folder and create a new .md file.
 Make sure there is no front matter in the file (no `---` lines at the top of content pages).
-To inject the content of the file in a page, use the following syntax:
+To inject the content of the file, use the following syntax:
 
 ```
 {% include "subfolder/filename.md" %}
@@ -808,5 +808,6 @@ Example:
 
 	Use the following syntax to format variables in .yml files:
 	
+	- Regular: `test` :octicons-arrow-right-24: test
 	- Bold: `__test__` :octicons-arrow-right-24: __test__
 	- Italic: `_test_`:octicons-arrow-right-24: _test_

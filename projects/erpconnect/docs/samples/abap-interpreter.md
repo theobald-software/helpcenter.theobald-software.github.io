@@ -5,7 +5,7 @@ description: ABAPCode class
 
 The following sample shows how to create a simple ABAP interpreter that executes a dynamic SQL statement.<br>
 
-### How to the Use ABAP Code Class
+### Workflow
 
 {% include "erpconnect/abap-interpreter.md" %}
 
