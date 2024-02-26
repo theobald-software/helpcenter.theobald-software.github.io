@@ -789,12 +789,12 @@ Example:
 | variable     | SSIS variable        | runtime parameter        | runtime parameter          | runtime parameter           | -               |
 | variables    | SSIS variables       | runtime parameters       | runtime parameters         | runtime parameters          | -               |
 | settings     | settings             | extraction settings      | extraction settings        | extraction settings         | -               |
-| settings-btn | **Settings**         | **[Extraction Settings]**|**Extraction Settings**     | **Extraction Settings**     | -               |
-| parameter-btn| **Edit parameters**  | **[Edit parameters]**    |**Edit runtime parameters** | **Edit runtime parameters** | -               |
+| settingsBtn | **Settings**         | **[Extraction Settings]**|**Extraction Settings**     | **Extraction Settings**     | -               |
+| parameterBtn| **Edit parameters**  | **[Edit parameters]**    |**Edit runtime parameters** | **Edit runtime parameters** | -               |
 | table        | Xtract Table         | Xtract Table             |Table                       | Table                       | SAP Tables and Views |
-| table-cdc    | Xtract Table CDC     | Xtract Table CDC         |Table CDC                   | Table CDC                   | -               |
+| tableCDC    | Xtract Table CDC     | Xtract Table CDC         |Table CDC                   | Table CDC                   | -               |
 | bapi         | Xtract BAPI          | Xtract BAPI              |BAPI                        | BAPI                        |Function Module / BAPI  |
-| bw-cube      | Xtract BW Cube       | Xtract Cube              |BW Cube                     | BW Cube                     | -               |
+| bwcube      | Xtract BW Cube       | Xtract Cube              |BW Cube                     | BW Cube                     | -               |
 | hierarchy    | Xtract Hierarchy     | Xtract Hierarchy         |BW Hierarchy                | BW Hierarchy                | -               |
 | deltaq       | Xtract DeltaQ        | -                        |DeltaQ                      | DeltaQ                      | -               |
 | odp          | Xtract ODP           | Xtract ODP               |ODP                         | ODP                         | -               |
@@ -802,3 +802,11 @@ Example:
 | query        | Xtract Query         | Xtract Query             |SAP Query                   | SAP Query                   | -               |
 | report       | Xtract Report        | Xtract Report            |Report                      | Report                      | Report          |
 | component    | component            | component                |extraction type             | extraction type             | integration type|
+| extraction   | SSIS package         | workflow                 |extraction                  | extraction                  | service         |
+
+!!! note
+
+	Use the following syntax to format variables in .yml files:
+	
+	- Bold: `__test__` :octicons-arrow-right-24: __test__
+	- Italic: `_test_`:octicons-arrow-right-24: _test_
