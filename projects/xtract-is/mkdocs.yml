@@ -199,19 +199,20 @@ extra:
     - icon: fontawesome/solid/envelope
       link: https://theobald-software.com/en/newsletter/
       name: Newsletter
-  product: Xtract IS
+  productName: Xtract IS
   component: component
   bapi: Xtract BAPI
   table: Xtract Table
   tablecdc: Xtract Table CDC
   bapi: Xtract BAPI
   # bwcube: Xtract BW Cube	
+  hierarchy: Xtract Hierarchy
   deltaq: Xtract DeltaQ
   odp: Xtract ODP
   ohs: Xtract OHS
   query: Xtract Query
   report: Xtract Report
-  variable: SSIS variable
+  variable: an SSIS variable
   variables: SSIS variables
   extraction: SSIS package
   settings: settings

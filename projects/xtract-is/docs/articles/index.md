@@ -39,3 +39,21 @@ hide:
 
 </div>
 
+### Xtract Table
+
+<div class="mdx-columns" markdown>
+
+- [Change Data Capture with CDHDR](change-data-capture-with-cdhdr.md)
+- [Delta Table Extraction](delta-table-extraction.md)
+- [Working with Lists in the WHERE-Clause Editor](where-clause-editor-lists.md)
+- [Working with LIKE operand in WHERE-Clauses](like-operand-where-clause.md)
+
+</div>
+
+### Xtract Table CDC
+
+<div class="mdx-columns" markdown>
+
+- [Delta Mechanism of Table CDC](table-cdc-mechanism.md)
+
+</div>
