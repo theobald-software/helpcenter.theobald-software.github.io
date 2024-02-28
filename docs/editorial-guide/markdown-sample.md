@@ -785,7 +785,7 @@ Example:
 
 | Variable     | Xtract IS            | Xtract for Alteryx       | Xtract Universal           |  Board Connector            |  yunIO          |
 |--------------|----------------------|--------------------------|----------------------------|-----------------------------|-----------------|
-| product      | Xtract IS            | Xtract for Alteryx       | Xtract Universal           | Board Connector             | yunIO           |
+| productName  | Xtract IS            | Xtract for Alteryx       | Xtract Universal           | Board Connector             | yunIO           |
 | variable     | SSIS variable        | runtime parameter        | runtime parameter          | runtime parameter           | -               |
 | variables    | SSIS variables       | runtime parameters       | runtime parameters         | runtime parameters          | -               |
 | settings     | settings             | extraction settings      | extraction settings        | extraction settings         | -               |
