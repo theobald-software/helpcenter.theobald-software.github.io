@@ -45,6 +45,7 @@ hide:
 
 - [Change Data Capture with CDHDR](change-data-capture-with-cdhdr.md)
 - [Delta Table Extraction](delta-table-extraction.md)
+- [Dynamization of WHERE Conditions](dynamization-of-where-conditions.md)
 - [Working with Lists in the WHERE-Clause Editor](where-clause-editor-lists.md)
 - [Working with LIKE operand in WHERE-Clauses](like-operand-where-clause.md)
 
