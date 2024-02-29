@@ -56,5 +56,6 @@ hide:
 <div class="mdx-columns" markdown>
 
 - [Delta Mechanism of Table CDC](table-cdc-mechanism.md)
+- [Initial Table Load in SAP Versions < 7.10](table-cdc-initial-table-load.md)
 
 </div>
