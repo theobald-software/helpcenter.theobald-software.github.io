@@ -12,39 +12,8 @@ hide:
 	<p>{{ config.site_description }}</p>
 </div>
 
-<div class="grid cards" markdown>
 
--   **ERPConnect:**
-
-	[:material-information-outline: Product Information](https://theobald-software.com/en/erpconnect/)<br>
-	[:material-download-circle: Download Trial Version](https://theobald-software.com/en/download-trial/)<br>
-	[:material-download-circle: Download ERPConnect](https://my.theobald-software.com/)<br>
-    [:material-update: Changelog](changelog.md)
-	
--   **Ressources:**
-
-	[:material-run-fast: Getting started](getting-started.md)<br>
-	[:material-book-open-page-variant-outline: Documentation](documentation/introduction/index.md)<br>
-    [:material-file-document-outline: Code Samples](samples/index.md)<br>
-	[:material-api: API Reference](erpconnect-api/access-api-in-vs.md)
-	
--   **Troubleshooting:**
-	
-	[:material-frequently-asked-questions: FAQs](#faqs)<br>
-	[:material-lightbulb: Common Mistakes](https://support.theobald-software.com/helpdesk/KB)<br>
-    [:material-email-outline: Contact Support](https://support.theobald-software.com/helpdesk)
-	
--   **General:**
-
-	[:material-web: Theobald Software Homepage](https://theobald-software.com)<br>
-	[:material-email-newsletter: Newsletters](https://theobald-software.com/newsletter/)<br>
-	[:material-comment-question: Survey: SAP S/4 HANA Cloud](https://theobald-software.typeform.com/to/Ss7ZQbqp?typeform-source=support.theobald-software.com)<br>
-	[:material-comment-quote: Feedback](https://theobald-software.typeform.com/to/CnpfiiIN)
-    
-</div>
-
-
-### What's New?
+### Latest News
 
 <div class="grid cards" markdown>
 
@@ -81,50 +50,69 @@ hide:
 
 </div>
 
-### FAQs
+### Related Links
 
-??? question "How do I determine if my SAP connection is valid?"
-	Use the `ping()` method of the ERPConnect.R3Connection object. It does not raise exceptions, it only returns *true* or *false* depending on if the connection is active and usable.
+<!---
 
+::cards::
 
-??? question "What do I do when I get the exception `System.BadImageFormatException`?"
-	If you use a 64-Bit system, you have to copy a 64-Bit version of the librfc32.dll in your `Windows\System32` folder. 
-	The 32-Bit version of the librfc32.dll has to be copied in the `Windows\SysWow64` folder.
+- title: Documentation
+  image: ./assets/images/logos/theo-thumbs.png
+  url: /documentation
+  
+- title: Changelog
+  image: ./assets/images/logos/theo-thumbs.png
+  url: /changelog
 
+- title: Knowledge Base Articles
+  image: ./assets/images/logos/theo-thumbs.png
+  url: /sap-objects/#materials-management
 
-??? question "How can I establish an SNC (Secure Network Connection) to SAP?"
-	Use the SNC functionality and commit all logon parameters in a single connection string. 
-	You can use the constructor or the connection string property of the R3Connection object to set the connection string. Example:<br>
-	``` csharp
-	string ConnStr = “ashost=myapphost client=000 snc_mode=1 sysnr=00 type=3 user=SAPDOTNET snc_partnername="p:SAPServiceCS2@nt5.sap-ag.de";
-	```
-	For more information, see [About SNC in ERPConnect](https://help.theobald-software.com/en/erpconnect/sap-connection/sso-with-snc#about-snc-in-erpconnect).
+- title: API Reference
+  image: ./assets/images/logos/theo-thumbs.png
+  url: /api-reference
+  
+- title: Troubleshooting
+  image: ./assets/images/logos/theo-thumbs.png
+  url: /atroubleshooting
 
-??? question "Which ports are used by SAP to establish the connection?"
-	If an SAP-Router is used, the ports are 3299 and 3399. If not, the ports are 32XX and 33XX. XX is usually the System number, e.g., 00, or 05.
+- title: Support
+  image: ./assets/images/logos/theo-thumbs.png
+  url: https://support.theobald-software.com/helpdesk
+  
+::/cards::
 
-??? question "Can I use a password with blanks inside?"
-	You can use blank characters in your password, if you quote the password using double quotes. Example:
-	``` csharp
-	R3Connection con = new ERPConnect.R3Connection("ptmalg", 05, "User", "\"My Password\"", "EN", "800");
-	```
+-->
 
-??? question "Why do some tables cause an error in the ASSIGN statement in the program SAPLSDTX?"
-	This error is caused by a bug in one of the SAP’s own function modules. 
-	The tables that cause the bug contain at least one column of type F (floating point). <br>
-	There are two ways to avoid this error:
-	<li> Create a view in SAP over the table that causes the error. Leave out all columns of type F and use the `ReadTable` class to run the view instead of the table.</li>
-	<li> Install the function module [Z_XTRACT_IS_TABLE](https://help.theobald-software.com/en/xtract-universal/sap-customizing/custom-function-module-for-table-extraction) into your system. 
-	Then call the method `ReadTable.SetCustomFunctionModule(“Z_XTRACT_IS_TABLE”)` before running the extraction. </li>
+<div class="grid cards" markdown>
 
-??? question "What do I do when I get the exception `DATA_BUFFER_EXCEEDED`?"
-	This error is caused by a bug in one of the SAP’s own function modules. 
-	The tables that cause the bug contain at least one column of type F (floating point). <br>
-	There are two ways to avoid this error:
-	<li> Create a view in SAP over the table that causes the error. Leave out all columns of type F and use the `ReadTable` class to run the view instead of the table.</li>
-	<li> Install the function module [Z_XTRACT_IS_TABLE](https://help.theobald-software.com/en/xtract-universal/sap-customizing/custom-function-module-for-table-extraction) into your system. 
-	Then call the method `ReadTable.SetCustomFunctionModule(“Z_XTRACT_IS_TABLE”)` before running the extraction. </li>
+-   **ERPConnect:**
 
-??? question "How can I fix the error `Entry too long (please enter in the format --____)` when using date parameters?"
-	Use the technical format YYYYMMDD, e.g., 20240711 for date values. Date formats such as "11-07-2024" are not accepted.
+	[:material-information-outline: Product Information](https://theobald-software.com/en/erpconnect/)<br>
+	[:material-download-circle: Download Trial Version](https://theobald-software.com/en/download-trial/)<br>
+	[:material-download-circle: Download ERPConnect](https://my.theobald-software.com/)<br>
+    [:material-update: Changelog](changelog.md)
+	
+-   **Ressources:**
+
+	[:material-run-fast: Getting started](getting-started.md)<br>
+	[:material-book-open-page-variant-outline: Documentation](documentation/introduction/index.md)<br>
+    [:material-file-document-outline: Code Samples](samples/index.md)<br>
+	[:material-api: API Reference](erpconnect-api/access-api-in-vs.md)
+	
+-   **Troubleshooting:**
+	
+	[:material-frequently-asked-questions: FAQs](#faqs)<br>
+	[:material-lightbulb: Common Mistakes](https://support.theobald-software.com/helpdesk/KB)<br>
+    [:material-email-outline: Contact Support](https://support.theobald-software.com/helpdesk)
+	
+-   **General:**
+
+	[:material-web: Theobald Software Homepage](https://theobald-software.com)<br>
+	[:material-email-newsletter: Newsletters](https://theobald-software.com/newsletter/)<br>
+	[:material-comment-question: Survey: SAP S/4 HANA Cloud](https://theobald-software.typeform.com/to/Ss7ZQbqp?typeform-source=support.theobald-software.com)<br>
+	[:material-comment-quote: Feedback](https://theobald-software.typeform.com/to/CnpfiiIN)
+    
+</div>
+
 
