@@ -5,5 +5,7 @@ nav:
         - glossary.md
         - administration.md
         - files-and-folders.md
-        - linkchecker.md
+    - LinkChecker:
+        - about-linkchecker.md
+        - Broken Links: https://helpcenter.theobald-software.com/editorial-guide/linkchecker/
 collapse: false

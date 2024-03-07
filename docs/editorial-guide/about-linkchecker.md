@@ -1,8 +1,7 @@
 ---
-title: LinkChecker
+title: About LinkChecker
 ---
 
-### About LinkChecker
 
 LinkChecker checks links in web documents or full websites.
 This check validates recursively all pages starting with `http://www.example.org/myhomepage/`. 

@@ -35,7 +35,7 @@ What to consider when creating new documentation pages:
 	
 - Add the name of the new .md file to the list of navigation items in the [.pages file](files-and-folders.md#pages-files) that is located in the same directory. 
 If no .pages file exists, create one.
-- Preview and check the content before running [LinkChecker](linkchecker.md) on the new page. Example:
+- Preview and check the content before running [LinkChecker](about-linkchecker.md) on the new page. Example:
 
 	```
 	linkchecker --no-warnings --no-status -r 0 http://localhost:8000/erpconnect/documentation/introduction/requirements/
