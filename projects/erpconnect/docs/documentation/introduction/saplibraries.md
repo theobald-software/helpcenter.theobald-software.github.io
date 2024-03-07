@@ -1,7 +1,6 @@
 ---
 title: SAP Libraries
 description: SAP Libraries
-status: new
 ---
 
 

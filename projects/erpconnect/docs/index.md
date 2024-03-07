@@ -85,27 +85,22 @@ hide:
 -->
 
 <div class="grid cards" markdown>
-
--   **ERPConnect:**
-
-	[:material-information-outline: Product Information](https://theobald-software.com/en/erpconnect/)<br>
-	[:material-download-circle: Download Trial Version](https://theobald-software.com/en/download-trial/)<br>
-	[:material-download-circle: Download ERPConnect](https://my.theobald-software.com/)<br>
-    [:material-update: Changelog](changelog.md)
 	
 -   **Ressources:**
 
 	[:material-run-fast: Getting started](getting-started.md)<br>
 	[:material-book-open-page-variant-outline: Documentation](documentation/introduction/index.md)<br>
     [:material-file-document-outline: Code Samples](samples/index.md)<br>
-	[:material-api: API Reference](erpconnect-api/access-api-in-vs.md)
+	[:material-api: API Reference](erpconnect-api/access-api-in-vs.md)<br>
+	[:material-lightbulb: Troubleshooting](https://support.theobald-software.com/helpdesk/KB)<br>
 	
--   **Troubleshooting:**
-	
-	[:material-frequently-asked-questions: FAQs](#faqs)<br>
-	[:material-lightbulb: Common Mistakes](https://support.theobald-software.com/helpdesk/KB)<br>
-    [:material-email-outline: Contact Support](https://support.theobald-software.com/helpdesk)
-	
+-   **ERPConnect:**
+
+	[:material-information-outline: Product Information](https://theobald-software.com/en/erpconnect/)<br>
+	[:material-download-circle: Download Trial Version](https://theobald-software.com/en/download-trial/)<br>
+	[:material-download-circle: Download ERPConnect](https://my.theobald-software.com/)<br>
+    [:material-update: Changelog](changelog.md)
+
 -   **General:**
 
 	[:material-web: Theobald Software Homepage](https://theobald-software.com)<br>
