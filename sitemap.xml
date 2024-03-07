@@ -46,6 +46,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://helpcenter.theobald-software.com/editorial-guide/about-linkchecker/</loc>
+         <lastmod>2024-03-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://helpcenter.theobald-software.com/editorial-guide/administration/</loc>
          <lastmod>2024-03-07</lastmod>
          <changefreq>daily</changefreq>
@@ -62,11 +67,6 @@
     </url>
     <url>
          <loc>https://helpcenter.theobald-software.com/editorial-guide/guidelines/</loc>
-         <lastmod>2024-03-07</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://helpcenter.theobald-software.com/editorial-guide/linkchecker/</loc>
          <lastmod>2024-03-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
