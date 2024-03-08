@@ -240,73 +240,54 @@ Use content tabs for code blocks and changelogs.
 
 The list syntax is a shortcut for card grids and consists of an unordered (or ordered) list wrapped by a `div` with both, the `grid` and `cards` classes:
 
+=== "Simple Grid Cards"
+	``` html
+	<div class="grid cards" markdown>
 
-``` html title="Grid Cards"
-<div class="grid cards" markdown>
+	- :fontawesome-brands-html5: __HTML__ for content and structure
+	- :fontawesome-brands-js: __JavaScript__ for interactivity
+	- :fontawesome-brands-css3: __CSS__ for text running out of boxes
 
-- :fontawesome-brands-html5: __HTML__ for content and structure
-- :fontawesome-brands-js: __JavaScript__ for interactivity
-- :fontawesome-brands-css3: __CSS__ for text running out of boxes
-- :fontawesome-brands-internet-explorer: __Internet Explorer__ ... huh?
+	</div>
+	```
 
-</div>
-```
+	<div class="result" markdown>
+	<div class="grid cards" markdown>
 
-<div class="result" markdown>
-  <div class="grid cards" markdown>
+	- :fontawesome-brands-html5: **HTML** for content and structure
+	- :fontawesome-brands-js: **JavaScript** for interactivity
+	- :fontawesome-brands-css3: **CSS** for text running out of boxes
 
-- :fontawesome-brands-html5: **HTML** for content and structure
-- :fontawesome-brands-js: **JavaScript** for interactivity
-- :fontawesome-brands-css3: **CSS** for text running out of boxes
-- :fontawesome-brands-internet-explorer: **Internet Explorer** ... huh?
+	</div>
+	</div>
 
-  </div>
-</div>
+=== "Complex Grid Cards"
+	``` html 
+	<div class="grid cards" markdown>
 
+	-   ![xu](../assets/images/XtractUniversal.png){ .lg .middle width="50px"} __Xtract Universal__
 
-You can use regular markdown syntax in grid cards to add links, images, etc:
+		---
+		
+		The flexible SAP interface for databases, analytics, BI or cloud solutions.<br>
+		[:octicons-arrow-right-24: Xtract Universal](https://help.theobald-software.com/en/xtract-universal/)
 
-``` html title="Grid Cards, complex example"
-<div class="grid cards" markdown>
+	</div>
+	```
 
--   ![xu](../assets/images/XtractUniversal.png){ .lg .middle width="50px"} __Xtract Universal__
+	<div class="result" markdown>
+	<div class="grid cards" markdown>
 
-	---
-	
-    The flexible SAP interface for databases, analytics, BI or cloud solutions.<br>
-    [:octicons-arrow-right-24: Xtract Universal](https://help.theobald-software.com/en/xtract-universal/)
+	 -   ![xu](../assets/images/XtractUniversal.png){ .lg .middle width="50px"} __Xtract Universal__
 
--   ![xis](../assets/images/XtractIS.png){ .lg .middle width="50px"} __Xtract IS__
+		---
+		
+		The flexible SAP interface for databases, analytics, BI or cloud solutions.
 
-    ---
+		[:octicons-arrow-right-24: Xtract Universal](https://help.theobald-software.com/en/xtract-universal/)
 
-    The powerful SAP plug-in for SQL Server Integration Services to extract mass data.<br>
-    [:octicons-arrow-right-24: Xtract IS](https://help.theobald-software.com/en/xtract-is/)
-
-</div>
-```
-
-<div class="result" markdown>
-  <div class="grid cards" markdown>
-
--   ![xu](../assets/images/XtractUniversal.png){ .lg .middle width="50px"} __Xtract Universal__
-
-	---
-	
-    The flexible SAP interface for databases, analytics, BI or cloud solutions.
-
-    [:octicons-arrow-right-24: Xtract Universal](https://help.theobald-software.com/en/xtract-universal/)
-
--   ![xis](../assets/images/XtractIS.png){ .lg .middle width="50px"} __Xtract IS__
-
-    ---
-
-    The powerful SAP plug-in for SQL Server Integration Services to extract mass data.
-
-    [:octicons-arrow-right-24: Xtract IS](https://help.theobald-software.com/en/xtract-is/)
-
-  </div>
-</div>
+	</div>
+	</div>
 
 
 ### Icons
@@ -432,8 +413,8 @@ The folder contains the following subfolders:
 
 | subfolder|  content     | 
 |----------|:-------------|
+| `[product-name]`|  images used in a specific product |   
 | `articles` |  images for general knowledge base articles, e.g., about SAP | 
-| `[product-name]`|  images used in a specific product - this subfolder contains another subfolder `articles` for product-specific knowledge base articles|   
 | `logos`|  product and component logos |  
 | `components`|  images used by Xtract components, e.g., Table, BWCube, etc. | 
 
@@ -464,16 +445,6 @@ When adding images in [reusable text](#include-reusable-text), you can use the f
 This makes it possible to include images independently from the location in the directory. Downside: broken links to images do not cause errors or warnings when building the project.
 
 #### Additional Options
-
-=== "Specific Image Size"
-
-	```
-	![favicon](../assets/images/favicon.png){:height="150px" width="150px" class="img-responsive"}
-	```
-
-	Be aware that if a big size is set and the image is viewed on mobile,
-	it does shrink to the screen size (to prevent sideways scrolling), but does not scale proportionally.
-	Therefore it is advised that {==if height and width are added, the class img-responsive is also added==}, so images scale proportionally on small screens.
 
 === "Image Align Left"
 
@@ -506,6 +477,16 @@ This makes it possible to include images independently from the location in the 
     massa, nec semper lorem quam in massa.
 
     </div>
+
+=== "Specific Image Size"
+
+	```
+	![favicon](../assets/images/favicon.png){:height="150px" width="150px" class="img-responsive"}
+	```
+
+	Be aware that if a big size is set and the image is viewed on mobile,
+	it does shrink to the screen size (to prevent sideways scrolling), but does not scale proportionally.
+	Therefore it is advised that {==if height and width are added, the class img-responsive is also added==}, so images scale proportionally on small screens.
 
 
 ### Include Reusable Text

@@ -45,7 +45,7 @@ If no .pages file exists, create one.
 
 What to consider when creating new articles:
 
-- Create new articles in the `articles` directory of the product.
+- Create new articles in the `knowledge-base` directory of the product.
 - Use an introduction sentence: "The following article shows / describes / contains..."
 - Add authors to the front matter of an article:
 
@@ -56,7 +56,7 @@ What to consider when creating new articles:
 	---
 	```
 	
-- Add the article in the index page of the `articles` folder.
+- Add the article in the index page of the `knowledge-base` folder.
 - Mark new articles in the index page using :material-alert-decagram:. Remove the status after a month. Example:
 
 	``` markdown
