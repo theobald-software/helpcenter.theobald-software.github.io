@@ -1,8 +1,14 @@
 The following article shows how to handle the initial table load for delta extractions using the {{ tablecdc }} {{ component }}.
+The article applies in the following situation:
 
-When using the {{ tablecdc }} {{ component }} for delta extractions, the initial table load can run into timeouts on SAP systems < 7.10.
-The function module used by the {{ tablecdc }} {{ component }} to extract tables only supports SAP data extraction in background mode as of SAP version 7.10.
-For SAP systems < 7.10 it is therefore recommended to execute the initial table load using the {{ table }} {{ component }}.
+- The {{ tablecdc }} {{ component }} is run on SAP releases < 7.10
+- The option **Extract table on first run** (Delta initialization) is activated.
+- The delta initialization takes longer than the maximum processing time specified in the SAP profile parameter **rdisp/max_wprun_time**.
+- The extraction aborts with an error message, e.g., `ERPConnect.ABAPRuntimeException: RfcInvoke failed(RFC_ABAP_RUNTIME_FAILURE): TIME_OUT - Time limit exceeded`.
+
+!!! note
+	The custom function module /THEO/READ_TABLE used by the Table CDC component to extract the table does not support background mode on SAP releases < 7.10.
+	The background mode would avoid the timeout mentioned above.
 
 ### Recommended Workflow
 
@@ -10,10 +16,9 @@ For SAP systems < 7.10 it is therefore recommended to execute the initial table 
 ![table-cdc-delta-init](../assets/images/articles/table-cdc/table-cdc-delta-init.png){:class="img-responsive"}
 2. Run the {{ tablecdc }} {{ component }} to initialize the delta extractions before extracting the initial table with the {{ table }} {{ component }}. 
 This ensures that no data is missed between table extraction and delta initialization.
-3. Set up a regular table extraction with the {{ table }} {{ component }}. Make sure to select a function module that supports extracting data in background mode in the **Extraction Settings**, e.g., RFC_READ_TABLE.<br>
+3. Set up a regular table extraction with the {{ table }} {{ component }}. Make sure to select an SAP standard function module, e.g., RFC_READ_TABLE.<br>
 ![table-cdc-initial-table-load-extraction-settings](../assets/images/articles/table-cdc//table-cdc-initial-table-load-extraction-settings.png){:class="img-responsive"}
 4. Run the table extraction.
-5. Optional: Merge the data of the first delta run with the extracted initial table using a processing tool of your choice.
 
 ****
 
