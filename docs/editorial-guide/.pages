@@ -2,9 +2,10 @@ nav:
     - guidelines.md
     - markdown-sample.md
     - Administration:
-        - glossary.md
-        - administration.md
+        - plugins-and-theme.md
         - files-and-folders.md
+        - glossary.md
+        - to-do-lists.md
     - LinkChecker:
         - about-linkchecker.md
         - Broken Links: https://helpcenter.theobald-software.com/editorial-guide/linkchecker
