@@ -1,7 +1,7 @@
 ---
 title: Screenshot conventions
-
 ---
+
 ### About screenshot conventions
 The following section contains information on creating consistent screenshots.<br>
 
@@ -44,7 +44,7 @@ The quality does not decrease  when it's cropped. <br>
 
 
 
-{: .box-warning } 
+!!! warning
 **Quality loss** <br>
 Don't use resize option in Greenshot. It always leads to quality loss. Use the crop option instead.<br>
 
@@ -63,8 +63,8 @@ When creating a part of a screen, use *Capture region* (**[Print]**) or / then c
 
 ![Shadow test](../assets/images/editorial-guide/screenshot-conventions/shadow.png){:class="img-responsive"}
 
-{: .box-note }
-**Note** <br> When placing an image within a text block, make sure to place a break and an additional return to mainain space between the text and the image.
+!!! note
+ When placing an image within a text block, make sure to place a break and an additional return to maintain space between the text and the image.
 When placing an image within a list (OL or UL) avoid breaks and returns after a step to maintain the proper formatting: images in the same horizontal line as the numbers or bullet points.
 
 ### Highlighting 
@@ -87,8 +87,8 @@ The following guidelines refer to the color, style and usage of highlighting ele
 
 Generally, use squares to highlight parts of a screenshot. It is easier to keep them consistent, as there is no need to take care of the angle as in case of arrows. It also doesn't look cluttered when there are many squares necessary. <br>
 
-{: .box-tip }
-**Tip:** It is better not to use shadows for the highlighting as it might cover important information. <br>
+!!! tip
+It is better not to use shadows for the highlighting as it might cover important information. <br>
 
 Avoid arrows, use arrows only for movement (e.g. Drag&Drop). <br>
 Avoid mixture of elements, don't use ovals. <br>
