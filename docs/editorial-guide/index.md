@@ -10,10 +10,11 @@ This section contains the Theobald Software editorial guide for the Help Center.
 The editorial guidelines of Theobald software are a set of recommendations for writing online help content of Theobald Software products. The guidelines are not binding rules, but serve to improve quality of the content of the online help.
 
 The editorial guidelines consist of the following parts:
+
 - [Style guide](https://theobaldsoftware.sharepoint.com/sites/PresalesSupportProdMgmtDoc/Freigegebene%20Dokumente/Style%20Guide_version_1.pdf) <!-- hier benoetigen wir Version 2--->
 - [Administrative / Folder structure / organizational information](#link) <!-- braucht eine bessere Bezeichnung--->
-- [Document template](#link)
-- [Conventions for creating screenshots](#link)
+- [Document template / Markdown Sample](markdown-sample.md)
+- [Conventions for creating screenshots](screenshot-conventions.md)
 - [Editorial processes - visualized ](https://theobaldsoftware.sharepoint.com/:f:/s/PresalesSupportProdMgmtDoc/EqxZ6qf_qmVMvwsmkZPIHD4BlR6W0kYCFxwQ7iRg7SJ1ZQ?e=Jy4oN5)
 
 ### Example Values for Help Center Content

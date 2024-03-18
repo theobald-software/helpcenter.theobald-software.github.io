@@ -6,5 +6,5 @@ nav:
         - administration.md
         - files-and-folders.md
         - linkchecker.md
-	- screenshot-conventions.md
+        - screenshot-conventions.md
 collapse: false
