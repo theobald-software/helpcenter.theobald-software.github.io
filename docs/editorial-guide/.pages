@@ -1,6 +1,7 @@
 nav:
     - guidelines.md
     - markdown-sample.md
+    - screenshot-conventions.md
     - Administration:
         - plugins-and-theme.md
         - files-and-folders.md
