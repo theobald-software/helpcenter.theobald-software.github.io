@@ -1,1 +1,1 @@
-
+RFC Connection via WebSocket addedConnect to a single application server or public or private cloud instance via RFC over WebSocket, see [SAP Connection](./documentation/sap-connection/log-on-to-sap.md). 2023-12-07
