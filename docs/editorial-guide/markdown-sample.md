@@ -27,14 +27,16 @@ The content of a box must be indenting. An admonition ends after 1 unindented em
 === "Warning"
 
 	``` markdown
-	!!! warning "Warning! Missing Authorization"
+	!!! warning
+		**Missing Authorization**<br>
 		Explanation of warning or error message.
 	```
 
 	<div class="result" markdown>
 
-	!!! warning "Warning! Missing Authorization"
-		Explanation of warning / error message.
+	!!! warning
+		**Missing Authorization**<br>
+		Explanation of warning or error message.
 
 	</div>	
 

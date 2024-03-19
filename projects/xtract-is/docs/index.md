@@ -11,3 +11,7 @@ hide:
 	<h1> &lt; Welcome to {{ productName }}! &gt; </h1>
 	<p>{{ config.site_description }}</p>
 </div>
+
+### Latest News
+
+{% include "newsfeed/xtract-is-news.md" %}
