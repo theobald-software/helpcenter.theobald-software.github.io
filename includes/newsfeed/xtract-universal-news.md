@@ -1,1 +1,1 @@
-
+R3Connection API updatedBreaking Changes: <br>Obsolete APIs in the R3Connection class have been removed, see [Release Notes](https://helpcenter.theobald-software.com/release-notes/ERPConnect-7.6.0/).2023-12-18
