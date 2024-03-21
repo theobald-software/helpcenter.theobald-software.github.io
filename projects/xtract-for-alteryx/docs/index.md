@@ -12,6 +12,9 @@ hide:
 	<p>{{ config.site_description }}</p>
 </div>
 
+<!---
+
 ### Latest News
 
 {% include "newsfeed/xtract-for-alteryx-news.md" %}
+-->
