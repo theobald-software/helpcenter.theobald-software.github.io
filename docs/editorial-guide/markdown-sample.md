@@ -303,6 +303,19 @@ Click **[:material-pencil-outline:]** to edit an entry.
 - Make sure not to write “click on”.
 - Product or component logos are not icons.
 
+
+<div class="mdx-iconsearch" data-mdx-component="iconsearch">
+  <input
+    class="md-input md-input--stretch mdx-iconsearch__input"
+    placeholder="Search the icon and emoji database"
+    data-mdx-component="iconsearch-query"
+  />
+  <div class="mdx-iconsearch-result" data-mdx-component="iconsearch-result">
+    <div class="mdx-iconsearch-result__meta"></div>
+    <ol class="mdx-iconsearch-result__list"></ol>
+  </div>
+</div>
+
 === "Products"
 
 	:products-erpconnect: `:products-erpconnect:`

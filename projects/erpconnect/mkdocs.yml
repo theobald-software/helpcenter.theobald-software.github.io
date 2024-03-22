@@ -74,6 +74,10 @@ theme:
 extra_css:
   - assets/stylesheets/extra.css
   - assets/stylesheets/neoteroi-cards.css 
+  - assets/stylesheets/hyperscript.css
+extra_javascript:
+  - assets/javascripts/hyperscript.min.js
+  
 # Plugins
 plugins:
   #- redirects: #redirect URLs when renaming/moving .md files
