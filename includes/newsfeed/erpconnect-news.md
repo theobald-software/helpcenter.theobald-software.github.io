@@ -1,14 +1,14 @@
 <div class="grid cards" markdown>
 
 
--   **R3Connection API updated**
+-   **RFC Connection via WebSocket added**
 
     ---
 
-    Breaking Changes: <br>Obsolete APIs in the R3Connection class have been removed, see [Release Notes](https://helpcenter.theobald-software.com/release-notes/ERPConnect-7.6.0/).
+    Connect to a single application server or public or private cloud instance via RFC over WebSocket, see [SAP Connection](./documentation/sap-connection/log-on-to-sap.md). 
 
     ---
 
-    :material-clock-time-two-outline: 2023-12-18
+    :material-clock-time-two-outline: 2023-12-07
 
 </div>
