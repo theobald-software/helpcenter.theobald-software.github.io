@@ -5,7 +5,7 @@
 
     ---
 
-    Missing something?<br> Try our new search function or browse our [documentation](documentation/introduction/index.md).
+    Looking for something?<br> Try our new search function or browse our [documentation](documentation/introduction/index.md).
 
     ---
 
