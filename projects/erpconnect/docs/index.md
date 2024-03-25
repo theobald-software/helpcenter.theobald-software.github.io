@@ -21,7 +21,7 @@ hide:
 
 </div>
 
-[:octicons-arrow-right-24: Show more](news.md)
+[:octicons-arrow-right-24: Show more...](news.md)
 
 <!---
 
