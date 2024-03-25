@@ -1,7 +1,7 @@
 <div class="grid cards" markdown>
 
 
--   **Welcome to the {{ product }} HelpCenter!**
+-   **Welcome to the Theobald Software HelpCenter!**
 
     ---
 
@@ -30,5 +30,15 @@
     ---
 
     :material-clock-time-two-outline: 2023-12-07
+
+-   **Support for SNC SSO with NWRFC added**
+
+    ---
+
+    `R3Connection.GetSSOTicket()` now supports Secure Network Connection with NetWeaver RFC, see [SAP Connection: SSO with SNC](documentation/sap-connection/sso-with-snc.md).
+
+    ---
+
+    :material-clock-time-two-outline: 2023-04-05
 
 </div>
