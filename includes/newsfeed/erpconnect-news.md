@@ -1,7 +1,7 @@
 <div class="grid cards" markdown>
 
 
--   **Welcome to the Theobald Software HelpCenter!**
+-   **Welcome to the new HelpCenter!**
 
     ---
 
