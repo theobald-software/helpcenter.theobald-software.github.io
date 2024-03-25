@@ -1,11 +1,11 @@
 <div class="grid cards" markdown>
 
 
--   **Welcome to the {product} HelpCenter!**
+-   **Welcome to the {{ product }} HelpCenter!**
 
     ---
 
-    Don't find what you're looking for? Try our new search function or browse the [documentation](documentation/introduction/index.md).
+    Don't find what you're looking for?<br> Try our new search function or browse our [documentation](documentation/introduction/index.md).
 
     ---
 
