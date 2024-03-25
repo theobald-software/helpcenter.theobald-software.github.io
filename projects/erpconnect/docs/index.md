@@ -15,8 +15,13 @@ hide:
 
 ### Latest News
 
+<div class="grid cards" markdown>
 
-{% include "newsfeed/erpconnect-news.md" %}
+--8<-- "newsfeed/erpconnect-news.md:3:33"
+
+</div>
+
+[:octicons-arrow-right-24: Show more](news.md)
 
 <!---
 
