@@ -102,7 +102,9 @@ plugins:
   - group:
       enabled: !ENV CI
       plugins:
-         - git-revision-date-localized # adds information when pages were last updated
+         - git-revision-date-localized:
+             exclude:
+               - index.md
         #enable_creation_date: true
         #type: timeago
 #        - optimize
