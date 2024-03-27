@@ -25,7 +25,7 @@ hide:
 
 ### Chatbot (experimental)
 
-<!DOCTYPE html><html><body><iframe src="https://web.powerva.microsoft.com/environments/41e09977-f8d8-eaf5-a62c-60d413bb8345/bots/cr66a_helpCoPilot/webchat?__version__=2" frameborder="0" style="border-color:red ; width: 100%; height: 500px;"></iframe></body></html>
+<iframe src="theo-chatbot.html" title="test" frameborder="1" style="border-color: red; width: 40%; height: 500px;"></iframe>
 
 <!---
 
