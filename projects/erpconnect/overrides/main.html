@@ -30,27 +30,50 @@
     <style>
         #chatbot_iframe {
             position: fixed;
-            bottom: 20px; /* Adjust as needed */
+            bottom: 80px; /* Adjust as needed */
             right: 20px; /* Adjust as needed */
             z-index: 9999; /* Ensure it's above other elements */
+			display: block; /* Open initially */
+        }
+		#open_button, #close_button {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            margin: 10px;
+            cursor: pointer;
+			padding: 10px 20px; /* Adjust padding */
+			/*width: 150px; /* Fixed width for both buttons */
+            /*height: 50px; /* Adjust height */
+            border-radius: 20px; /* Rounded corners */
         }
     </style>
 </head>
 <body>
 
+<!-- Open button -->
+<button class="btn-clear md-button md-button--primary" id="open_button" onclick="openChatbot()" style="display: none;">Open Chatbot</button>
+
+<!-- Close button -->
+<button class="btn-clear md-button md-button--primary" id="close_button" onclick="closeChatbot()">Close Chatbot</button>
+
 <iframe id="chatbot_iframe" src="https://helpcenter.theobald-software.com/erpconnect/theo-chatbot.html" frameborder="1" style="border-color: #ED1A33;width: 300px; height: 400px;"></iframe>
 
-<!-- Close button/icon 
-<div id="close_button" onclick="closeChatbot()">Close Chatbot</div>
-
 <script>
+    function openChatbot() {
+        var chatbotIframe = document.getElementById("chatbot_iframe");
+        chatbotIframe.style.display = "block"; // Show the chatbot iframe
+        document.getElementById("open_button").style.display = "none"; // Hide the open button
+        document.getElementById("close_button").style.display = "block"; // Show the close button
+    }
+
     function closeChatbot() {
         var chatbotIframe = document.getElementById("chatbot_iframe");
         chatbotIframe.style.display = "none"; // Hide the chatbot iframe
-        // You can also use chatbotIframe.parentNode.removeChild(chatbotIframe); to remove the iframe from the DOM
+        document.getElementById("open_button").style.display = "block"; // Show the open button
+        document.getElementById("close_button").style.display = "none"; // Hide the close button
     }
 </script>
--->
+
 </body>
 </html>
 

@@ -23,7 +23,6 @@ hide:
 
 [:octicons-arrow-right-24: Show more](news.md)
 
-
 <!---
 ### Related Links
 
