@@ -15,3 +15,43 @@
   {{ super() }}
   <script src="{{ 'assets/javascripts/custom.9c11c319.min.js' | url }}"></script>
 {% endblock %}
+
+{% block content %}
+  <!-- Add scripts that need to run before here -->
+
+  {{ super() }}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Integration</title>
+    <style>
+        #chatbot_iframe {
+            position: fixed;
+            bottom: 20px; /* Adjust as needed */
+            right: 20px; /* Adjust as needed */
+            z-index: 9999; /* Ensure it's above other elements */
+        }
+    </style>
+</head>
+<body>
+
+<iframe id="chatbot_iframe" src="https://helpcenter.theobald-software.com/erpconnect/theo-chatbot.html" frameborder="1" style="border-color: #ED1A33;width: 300px; height: 400px;"></iframe>
+
+<!-- Close button/icon -->
+<div id="close_button" onclick="closeChatbot()">Close Chatbot</div>
+
+<script>
+    function closeChatbot() {
+        var chatbotIframe = document.getElementById("chatbot_iframe");
+        chatbotIframe.style.display = "none"; // Hide the chatbot iframe
+        // You can also use chatbotIframe.parentNode.removeChild(chatbotIframe); to remove the iframe from the DOM
+    }
+</script>
+
+</body>
+</html>
+
+{% endblock %}

@@ -23,14 +23,9 @@ hide:
 
 [:octicons-arrow-right-24: Show more](news.md)
 
-### Chatbot (experimental)
-
-<iframe src="theo-chatbot.html" title="test" frameborder="1" style="border-color: red; width: 40%; height: 500px;"></iframe>
 
 <!---
-
 ### Related Links
-
 
 ::cards::
 
