@@ -26,37 +26,40 @@ hide:
 
 
 <!---
-### Related Links
+### Additional Resources
 
-::cards::
+::cards:: cols=3
 
-- title: Documentation
-  image: ./assets/images/logos/theo-thumbs.png
-  url: /documentation
+- title: Product Information
+  image: ./assets/images/logos/business-content/human.png
+  content: I'm additional text. I'm optional and can give context to a link card.
+  url: /sap-objects/#human-resources
   
-- title: Changelog
-  image: ./assets/images/logos/theo-thumbs.png
-  url: /changelog
-
-- title: Knowledge Base Articles
-  image: ./assets/images/logos/theo-thumbs.png
+- title: Download ERPConnect
+  image: ./assets/images/logos/business-content/production.png
+  url: /sap-objects/#customer-relationship-management
+  
+- title: Newsletters
+  image: ./assets/images/logos/business-content/material.png
   url: /sap-objects/#materials-management
 
-- title: API Reference
-  image: ./assets/images/logos/theo-thumbs.png
-  url: /api-reference
+- title: Success Stories
+  image: ./assets/images/logos/business-content/human.png
+  url: /sap-objects/#human-resources
   
-- title: Troubleshooting
-  image: ./assets/images/logos/theo-thumbs.png
-  url: /atroubleshooting
+- title: Partners
+  image: ./assets/images/logos/business-content/production.png
+  url: /sap-objects/#customer-relationship-management
 
-- title: Support
-  image: ./assets/images/logos/theo-thumbs.png
-  url: https://support.theobald-software.com/helpdesk
-  
+- title: Feedback
+  image: ./assets/images/logos/business-content/production.png
+  url: /sap-objects/#production-planning
+
 ::/cards::
+-->
 
 
+<!---
 <div class="grid cards" markdown>
 	
 -   **Ressources:**
@@ -82,6 +85,5 @@ hide:
 	[:material-comment-quote: Feedback](https://theobald-software.typeform.com/to/CnpfiiIN)
     
 </div>
-
 
 -->
