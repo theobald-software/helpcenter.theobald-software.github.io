@@ -41,15 +41,30 @@
         top: 50px;
         width: 100%;
       }
+	  
     </style>
   </head>
   <body>
     <div>
-      <div id="banner">
+      <!-- <div id="banner">
         <h1>Theo Chatbot</h1>
-      </div>
+		<button id="close-chatbot" style="position: fixed; right: 8px">X</button> 
+      </div>-->
       <div id="webchat" role="main"></div>
     </div>
+
+
+ <script>
+	document.getElementById('close-chatbot').addEventListener('click', function(e) {
+	var d = window.parent.document;
+    var frame = d.getElementById('chatbot_iframe');
+    frame.parentNode.removeChild(frame);
+    e.preventDefault();
+	//d.getElementById('open_button').style.display = "block";
+	});
+ </script>
+
+
 
     <!--
       In this sample, the latest version of Web Chat is being used.

@@ -17,10 +17,9 @@
 {% endblock %}
 
 {% block content %}
-  <!-- Add scripts that need to run before here -->
-
   {{ super() }}
 
+  <!-- Chatbot -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,51 +28,78 @@
     <title>Chatbot Integration</title>
     <style>
         #chatbot_iframe {
-            position: fixed;
-            bottom: 80px; /* Adjust as needed */
-            right: 20px; /* Adjust as needed */
-            z-index: 9999; /* Ensure it's above other elements */
-			display: block; /* Open initially */
+			border-color: #ED1A33;
+            z-index: 9998; /* Ensure it's above other elements */
         }
-		#open_button, #close_button {
+		#open_button {
             position: fixed;
             bottom: 0;
             right: 0;
-            margin: 10px;
+            margin: 20px;
             cursor: pointer;
 			padding: 10px 20px; /* Adjust padding */
-			/*width: 150px; /* Fixed width for both buttons */
-            /*height: 50px; /* Adjust height */
-            border-radius: 20px; /* Rounded corners */
+			width: 80px; /* Fixed width for both buttons */
+            height: 80px; /* Adjust height */
+            border-radius: 40px; /* Rounded corners */
         }
+		#open_button:hover {
+		  background-color: #891A33;
+		  border-color: #891A33;
+		}
+		#container {
+		  position: fixed;
+		  width: 350px;
+		  height: 400px;
+          bottom: 20px; /* Adjust as needed */
+          right: 20px; /* Adjust as needed */
+		}
+		#banner{
+		  position: absolute;
+		  top: 0;
+		  left: 0;
+		  width: 100%;
+		  height: 50px;
+		  background-color: #ED1A33;
+		  align-items: center;
+		  display: flex;
+	    }
+		#close_button {
+            position: absolute; 
+			right: 10px; 
+			color: white;
+        }
+		#close_button:hover {
+		  background-color: #891A33;
+		  border-color: #891A33;
     </style>
 </head>
 <body>
 
-<!-- Open button -->
-<button class="btn-clear md-button md-button--primary" id="open_button" onclick="openChatbot()" style="display: none;">Open Chatbot</button>
-
-<!-- Close button -->
-<button class="btn-clear md-button md-button--primary" id="close_button" onclick="closeChatbot()">Close Chatbot</button>
-
-<iframe id="chatbot_iframe" src="https://helpcenter.theobald-software.com/erpconnect/theo-chatbot.html" frameborder="1" style="border-color: #ED1A33;width: 300px; height: 400px;"></iframe>
-
 <script>
     function openChatbot() {
-        var chatbotIframe = document.getElementById("chatbot_iframe");
+        var chatbotIframe = document.getElementById("container");
         chatbotIframe.style.display = "block"; // Show the chatbot iframe
-        document.getElementById("open_button").style.display = "none"; // Hide the open button
-        document.getElementById("close_button").style.display = "block"; // Show the close button
+		document.getElementById("open_button").style.display = "none"; // Hide the open button
     }
 
     function closeChatbot() {
-        var chatbotIframe = document.getElementById("chatbot_iframe");
-        chatbotIframe.style.display = "none"; // Hide the chatbot iframe
-        document.getElementById("open_button").style.display = "block"; // Show the open button
-        document.getElementById("close_button").style.display = "none"; // Hide the close button
+       var chatbotIframe = document.getElementById("container");
+       chatbotIframe.style.display = "none"; // Hide the chatbot iframe
+	   document.getElementById("open_button").style.display = "block"; // Show the open button
     }
 </script>
 
+<!-- Open button -->
+<button class="btn-clear md-button md-button--primary" title="Open Chatbot" id="open_button" onclick="openChatbot()"><span class="twemoji" style="font-size: 30px">{% include ".icons/fontawesome/solid/comments.svg" %} </span></button>
+
+<!-- Chatbot Container -->
+<div id="container" style="display: none;">
+   <iframe id="chatbot_iframe" src="https://helpcenter.theobald-software.com/erpconnect/theo-chatbot.html" frameborder="1" style="width: 100%; height: 100%;"></iframe>
+   <div id="banner""> 
+		<p style="font-family: inherit; font-size: 16px; color: white; line-height: 20px; position: absolute; left: 15px;">Theo Chatbot</p>
+		<button id="close_button" onclick="closeChatbot()" title="Close Chatbot" style="position: absolute; right: 10px; color: white"><span class="twemoji" style="font-size: 20px">{% include ".icons/material/close.svg" %} </span</button> 
+	</div>
+</div>
 </body>
 </html>
 

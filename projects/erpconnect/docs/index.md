@@ -6,6 +6,7 @@ hide:
   - tags
   - toc
 ---
+
 <div class="full-width-background"></div>
 <div class="banner-text">
 	<h1> &lt; Welcome to {{ product }}! &gt; </h1>
@@ -22,6 +23,7 @@ hide:
 </div>
 
 [:octicons-arrow-right-24: Show more](news.md)
+
 
 <!---
 ### Related Links
