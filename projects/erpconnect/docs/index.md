@@ -24,7 +24,6 @@ hide:
 
 [:octicons-arrow-right-24: Show more](news.md)
 
-
 <!---
 ### Additional Resources
 
