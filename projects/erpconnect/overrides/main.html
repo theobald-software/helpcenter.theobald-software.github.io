@@ -9,7 +9,7 @@
 
 {% block extrahead %}
   <link rel="stylesheet" href="{{ 'assets/stylesheets/custom.00c04c01.min.css' | url }}">
-{% endblock %}
+  {% endblock %}
 
 {% block scripts %}
   {{ super() }}
@@ -27,6 +27,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chatbot Integration</title>
     <style>
+	
+		/* Define the beat animation */
+		@keyframes fa-beat {
+		  0%, 100% {
+			transform: scale(1);
+		  }
+		  50% {
+			transform: scale(1.1);
+		  }
+		}
+		
+		/* Apply the animation to the icon */
+		.twemoji .fa-beat {
+		  animation: fa-beat 1s infinite;
+		}
+		
         #chatbot_iframe {
 			border-color: #ED1A33;
             z-index: 9998; /* Ensure it's above other elements */
@@ -104,7 +120,8 @@
 </script>
 
 <!-- Open button -->
-<button class="btn-clear md-button md-button--primary" title="Open Chatbot" id="open_button" onclick="openChatbot()"><span class="twemoji" style="font-size: 30px">{% include ".icons/fontawesome/solid/comments.svg" %} </span></button>
+<button class="btn-clear md-button md-button--primary" title="Open Chatbot" id="open_button" onclick="openChatbot()">
+<span class="twemoji" style="font-size: 35px";"><div class="fa-beat" style="margin-top: -5px;">{% include ".icons/fontawesome/solid/comments.svg" %} </div></span></button>
 
 <!-- Chatbot Container -->
 <div id="container" style="display: none;">
@@ -112,7 +129,7 @@
    <div id="resize-handler"></div>
    <div id="banner"">
 		<p style="font-family: inherit; font-size: 16px; color: white; line-height: 20px; position: absolute; left: 15px;">Theo Chatbot</p>
-		<button id="close_button" onclick="closeChatbot()" title="Close Chatbot" style="position: absolute; right: 10px; color: white"><span class="twemoji" style="font-size: 20px">{% include ".icons/material/close.svg" %} </span</button> 
+		<button id="close_button" onclick="closeChatbot()" title="Close Chatbot" style="position: absolute; right: 10px; color: white"><span class="twemoji" style="font-size: 20px">{% include ".icons/material/close.svg" %} </span></button> 
 	</div>
 </div>
 </body>
