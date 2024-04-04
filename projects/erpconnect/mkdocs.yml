@@ -24,7 +24,7 @@ theme:
       tip: material/lightbulb
       note: fontawesome/solid/circle-info
   features:
-     - announce.dismiss # adds a dismissal option to announcements 
+    # - announce.dismiss # adds a dismissal option to announcements 
     # - content.action.edit # adds an edit button to the pages
     # - content.action.view # adds a view source button to the pages
      - content.code.copy # adds copy button in code blocks
@@ -74,6 +74,10 @@ theme:
 extra_css:
   - assets/stylesheets/extra.css
   - assets/stylesheets/neoteroi-cards.css 
+  - assets/stylesheets/hyperscript.css
+extra_javascript:
+  - assets/javascripts/hyperscript.min.js
+  
 # Plugins
 plugins:
   #- redirects: #redirect URLs when renaming/moving .md files
@@ -113,10 +117,12 @@ plugins:
   - group:
       enabled: !ENV CI
       plugins:
-        - git-revision-date-localized # adds information when pages were last updated
+        - git-revision-date-localized:
+             exclude:
+               - index.md
         #enable_creation_date: true
         #type: timeago
-        #- optimize
+        - optimize #requires pngquant to be installed, see https://github.com/squidfunk/mkdocs-material/discussions/4989
         - minify:
             minify_html: true        
             

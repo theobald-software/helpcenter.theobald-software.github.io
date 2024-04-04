@@ -37,7 +37,7 @@ Highlighted folders are linked to each other via symlink.
 │       │   │   ├───images #reference to parent folder
 │       │   │   └───stylesheets
 │       │   ├───documentation #contains the migrated Online Help
-│       │   └───articles #contains the migrated Knowledge Base
+│       │   └───knowledge-base #contains the migrated Knowledge Base
 │       ├───includes #reference to parent folder for local build
 │       ├───overrides #contains custom designs, e.g. banner & announcements
 │       └───site  #contains the built html product page
@@ -49,10 +49,6 @@ Highlighted folders are linked to each other via symlink.
 Every product has a `/docs` folder that should contain the following files and folders:
 
 ``` bash 
-├───articles #contains articles (this folder is named "samples" in ERPConnect)
-│   ├───index.md #contains a list of articles
-│   ├───... #migrated content from the old Knowledge Base
-│   └───.meta.yml #contains front matter items that are added to all files in this folder
 ├───assets
 │   ├───files
 │   │   └───... #downloadable files
@@ -67,6 +63,10 @@ Every product has a `/docs` folder that should contain the following files and f
 │   ├───about.md #contains disclaimers (former "About this Online Help"
 │   ├───... #migrated content from the old Online Help
 │   ├───.pages #contains the navigation for this folder
+│   └───.meta.yml #contains front matter items that are added to all files in this folder
+├───knowledge-base #contains articles (this folder is named "samples" in ERPConnect)
+│   ├───index.md #contains a list of articles
+│   ├───... #migrated content from the old Knowledge Base
 │   └───.meta.yml #contains front matter items that are added to all files in this folder
 ├───.pages
 ├───changelog.md #contains the new version history

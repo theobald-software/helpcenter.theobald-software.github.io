@@ -27,14 +27,16 @@ The content of a box must be indenting. An admonition ends after 1 unindented em
 === "Warning"
 
 	``` markdown
-	!!! warning "Warning! Missing Authorization"
+	!!! warning
+		**Missing Authorization**<br>
 		Explanation of warning or error message.
 	```
 
 	<div class="result" markdown>
 
-	!!! warning "Warning! Missing Authorization"
-		Explanation of warning / error message.
+	!!! warning
+		**Missing Authorization**<br>
+		Explanation of warning or error message.
 
 	</div>	
 
@@ -240,73 +242,54 @@ Use content tabs for code blocks and changelogs.
 
 The list syntax is a shortcut for card grids and consists of an unordered (or ordered) list wrapped by a `div` with both, the `grid` and `cards` classes:
 
+=== "Simple Grid Cards"
+	``` html
+	<div class="grid cards" markdown>
 
-``` html title="Grid Cards"
-<div class="grid cards" markdown>
+	- :fontawesome-brands-html5: __HTML__ for content and structure
+	- :fontawesome-brands-js: __JavaScript__ for interactivity
+	- :fontawesome-brands-css3: __CSS__ for text running out of boxes
 
-- :fontawesome-brands-html5: __HTML__ for content and structure
-- :fontawesome-brands-js: __JavaScript__ for interactivity
-- :fontawesome-brands-css3: __CSS__ for text running out of boxes
-- :fontawesome-brands-internet-explorer: __Internet Explorer__ ... huh?
+	</div>
+	```
 
-</div>
-```
+	<div class="result" markdown>
+	<div class="grid cards" markdown>
 
-<div class="result" markdown>
-  <div class="grid cards" markdown>
+	- :fontawesome-brands-html5: **HTML** for content and structure
+	- :fontawesome-brands-js: **JavaScript** for interactivity
+	- :fontawesome-brands-css3: **CSS** for text running out of boxes
 
-- :fontawesome-brands-html5: **HTML** for content and structure
-- :fontawesome-brands-js: **JavaScript** for interactivity
-- :fontawesome-brands-css3: **CSS** for text running out of boxes
-- :fontawesome-brands-internet-explorer: **Internet Explorer** ... huh?
+	</div>
+	</div>
 
-  </div>
-</div>
+=== "Complex Grid Cards"
+	``` html 
+	<div class="grid cards" markdown>
 
+	-   ![xu](../assets/images/XtractUniversal.png){ .lg .middle width="50px"} __Xtract Universal__
 
-You can use regular markdown syntax in grid cards to add links, images, etc:
+		---
+		
+		The flexible SAP interface for databases, analytics, BI or cloud solutions.<br>
+		[:octicons-arrow-right-24: Xtract Universal](https://help.theobald-software.com/en/xtract-universal/)
 
-``` html title="Grid Cards, complex example"
-<div class="grid cards" markdown>
+	</div>
+	```
 
--   ![xu](../assets/images/XtractUniversal.png){ .lg .middle width="50px"} __Xtract Universal__
+	<div class="result" markdown>
+	<div class="grid cards" markdown>
 
-	---
-	
-    The flexible SAP interface for databases, analytics, BI or cloud solutions.<br>
-    [:octicons-arrow-right-24: Xtract Universal](https://help.theobald-software.com/en/xtract-universal/)
+	 -   ![xu](../assets/images/XtractUniversal.png){ .lg .middle width="50px"} __Xtract Universal__
 
--   ![xis](../assets/images/XtractIS.png){ .lg .middle width="50px"} __Xtract IS__
+		---
+		
+		The flexible SAP interface for databases, analytics, BI or cloud solutions.
 
-    ---
+		[:octicons-arrow-right-24: Xtract Universal](https://help.theobald-software.com/en/xtract-universal/)
 
-    The powerful SAP plug-in for SQL Server Integration Services to extract mass data.<br>
-    [:octicons-arrow-right-24: Xtract IS](https://help.theobald-software.com/en/xtract-is/)
-
-</div>
-```
-
-<div class="result" markdown>
-  <div class="grid cards" markdown>
-
--   ![xu](../assets/images/XtractUniversal.png){ .lg .middle width="50px"} __Xtract Universal__
-
-	---
-	
-    The flexible SAP interface for databases, analytics, BI or cloud solutions.
-
-    [:octicons-arrow-right-24: Xtract Universal](https://help.theobald-software.com/en/xtract-universal/)
-
--   ![xis](../assets/images/XtractIS.png){ .lg .middle width="50px"} __Xtract IS__
-
-    ---
-
-    The powerful SAP plug-in for SQL Server Integration Services to extract mass data.
-
-    [:octicons-arrow-right-24: Xtract IS](https://help.theobald-software.com/en/xtract-is/)
-
-  </div>
-</div>
+	</div>
+	</div>
 
 
 ### Icons
@@ -319,6 +302,19 @@ Click **[:material-pencil-outline:]** to edit an entry.
 - Additional clarification that an icon is an icon is unnecessary. 
 - Make sure not to write “click on”.
 - Product or component logos are not icons.
+
+
+<div class="mdx-iconsearch" data-mdx-component="iconsearch">
+  <input
+    class="md-input md-input--stretch mdx-iconsearch__input"
+    placeholder="Search the icon and emoji database"
+    data-mdx-component="iconsearch-query"
+  />
+  <div class="mdx-iconsearch-result" data-mdx-component="iconsearch-result">
+    <div class="mdx-iconsearch-result__meta"></div>
+    <ol class="mdx-iconsearch-result__list"></ol>
+  </div>
+</div>
 
 === "Products"
 
@@ -432,8 +428,8 @@ The folder contains the following subfolders:
 
 | subfolder|  content     | 
 |----------|:-------------|
+| `[product-name]`|  images used in a specific product |   
 | `articles` |  images for general knowledge base articles, e.g., about SAP | 
-| `[product-name]`|  images used in a specific product - this subfolder contains another subfolder `articles` for product-specific knowledge base articles|   
 | `logos`|  product and component logos |  
 | `components`|  images used by Xtract components, e.g., Table, BWCube, etc. | 
 
@@ -464,16 +460,6 @@ When adding images in [reusable text](#include-reusable-text), you can use the f
 This makes it possible to include images independently from the location in the directory. Downside: broken links to images do not cause errors or warnings when building the project.
 
 #### Additional Options
-
-=== "Specific Image Size"
-
-	```
-	![favicon](../assets/images/favicon.png){:height="150px" width="150px" class="img-responsive"}
-	```
-
-	Be aware that if a big size is set and the image is viewed on mobile,
-	it does shrink to the screen size (to prevent sideways scrolling), but does not scale proportionally.
-	Therefore it is advised that {==if height and width are added, the class img-responsive is also added==}, so images scale proportionally on small screens.
 
 === "Image Align Left"
 
@@ -507,6 +493,16 @@ This makes it possible to include images independently from the location in the 
 
     </div>
 
+=== "Specific Image Size"
+
+	```
+	![favicon](../assets/images/favicon.png){:height="150px" width="150px" class="img-responsive"}
+	```
+
+	Be aware that if a big size is set and the image is viewed on mobile,
+	it does shrink to the screen size (to prevent sideways scrolling), but does not scale proportionally.
+	Therefore it is advised that {==if height and width are added, the class img-responsive is also added==}, so images scale proportionally on small screens.
+
 
 ### Include Reusable Text
 To write content that can be injected in other pages, navigate to the folder `/includes`.
@@ -521,7 +517,7 @@ The folder contains the following subfolders:
 
 Open the correct folder and create a new .md file.
 Make sure there is no front matter in the file (no `---` lines at the top of content pages).
-To inject the content of the file in a page, use the following syntax:
+To inject the content of the file, use the following syntax:
 
 ```
 {% include "subfolder/filename.md" %}
@@ -785,16 +781,16 @@ Example:
 
 | Variable     | Xtract IS            | Xtract for Alteryx       | Xtract Universal           |  Board Connector            |  yunIO          |
 |--------------|----------------------|--------------------------|----------------------------|-----------------------------|-----------------|
-| product      | Xtract IS            | Xtract for Alteryx       | Xtract Universal           | Board Connector             | yunIO           |
+| productName  | Xtract IS            | Xtract for Alteryx       | Xtract Universal           | Board Connector             | yunIO           |
 | variable     | SSIS variable        | runtime parameter        | runtime parameter          | runtime parameter           | -               |
 | variables    | SSIS variables       | runtime parameters       | runtime parameters         | runtime parameters          | -               |
 | settings     | settings             | extraction settings      | extraction settings        | extraction settings         | -               |
-| settings-btn | **Settings**         | **[Extraction Settings]**|**Extraction Settings**     | **Extraction Settings**     | -               |
-| parameter-btn| **Edit parameters**  | **[Edit parameters]**    |**Edit runtime parameters** | **Edit runtime parameters** | -               |
+| settingsBtn | **Settings**         | **[Extraction Settings]**|**Extraction Settings**     | **Extraction Settings**     | -               |
+| parameterBtn| **Edit parameters**  | **[Edit parameters]**    |**Edit runtime parameters** | **Edit runtime parameters** | -               |
 | table        | Xtract Table         | Xtract Table             |Table                       | Table                       | SAP Tables and Views |
-| table-cdc    | Xtract Table CDC     | Xtract Table CDC         |Table CDC                   | Table CDC                   | -               |
+| tableCDC    | Xtract Table CDC     | Xtract Table CDC         |Table CDC                   | Table CDC                   | -               |
 | bapi         | Xtract BAPI          | Xtract BAPI              |BAPI                        | BAPI                        |Function Module / BAPI  |
-| bw-cube      | Xtract BW Cube       | Xtract Cube              |BW Cube                     | BW Cube                     | -               |
+| bwcube      | Xtract BW Cube       | Xtract Cube              |BW Cube                     | BW Cube                     | -               |
 | hierarchy    | Xtract Hierarchy     | Xtract Hierarchy         |BW Hierarchy                | BW Hierarchy                | -               |
 | deltaq       | Xtract DeltaQ        | -                        |DeltaQ                      | DeltaQ                      | -               |
 | odp          | Xtract ODP           | Xtract ODP               |ODP                         | ODP                         | -               |
@@ -802,3 +798,12 @@ Example:
 | query        | Xtract Query         | Xtract Query             |SAP Query                   | SAP Query                   | -               |
 | report       | Xtract Report        | Xtract Report            |Report                      | Report                      | Report          |
 | component    | component            | component                |extraction type             | extraction type             | integration type|
+| extraction   | SSIS package         | workflow                 |extraction                  | extraction                  | service         |
+
+!!! note
+
+	Use the following syntax to format variables in .yml files:
+	
+	- Regular: `test` :octicons-arrow-right-24: test
+	- Bold: `__test__` :octicons-arrow-right-24: __test__
+	- Italic: `_test_`:octicons-arrow-right-24: _test_

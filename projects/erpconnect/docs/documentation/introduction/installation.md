@@ -1,7 +1,6 @@
 ---
 title: Installation
 description: Installation specifics
-status: deprecated
 ---
 
 ### Prerequisites

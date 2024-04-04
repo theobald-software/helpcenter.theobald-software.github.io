@@ -1,7 +1,6 @@
 ---
 title: Licensing
 description: Licensing
-status: beta
 ---
 
 A demo license is automatically installed with the installation of ERPConnect.<br>
