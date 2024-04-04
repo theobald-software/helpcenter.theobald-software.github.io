@@ -28,6 +28,7 @@ jobs:
           path: .cache
           restore-keys: |
             mkdocs-material-
+      - run: apt-get install pngquant
       - run: pip install git+https://${GH_TOKEN}@github.com/squidfunk/mkdocs-material-insiders.git@9.5.6-insiders-4.52.1
       - run: pip install "mkdocs-material[imaging]"
       - run: pip install mkdocs-swagger-ui-tag
@@ -39,7 +40,6 @@ jobs:
       - run: pip install mkdocs-redirects
       - run: pip install neoteroi-mkdocs
       - run: pip install mdx-breakless-lists
-      - run: pip install pngquant
       - run: mkdocs gh-deploy --force
 env:
   GH_TOKEN: ${{ secrets.GH_TOKEN }} 
