@@ -30,7 +30,7 @@ hide:
 - [Allow external access to BW Queries](https://support.theobald-software.com/helpdesk/KB/View/13800-allow-external-access-to-bw-queries)
 - [Authority Check Trace](https://support.theobald-software.com/helpdesk/KB/View/13799-authority-check-trace)
 - [Enabling Secure Network Communication (SNC) via X.509 certificate](https://support.theobald-software.com/helpdesk/KB/View/13349-enabling-secure-network-communication-snc-via-x-509-certificate)
-- [How to check the accessibility to a SAP System](https://support.theobald-software.com/helpdesk/KB/View/13350-how-to-check-the-accessibility-to-a-sap-system)
+- [How to check the accessibility to an SAP System](https://support.theobald-software.com/helpdesk/KB/View/13350-how-to-check-the-accessibility-to-a-sap-system)
 - [Registering RFC Server in SAP Releases in Kernel Release 720 and higher](https://support.theobald-software.com/helpdesk/KB/View/13348-registering-rfc-server-in-sap-releases-in-kernel-release-720-and-higher)
 
 </div>
