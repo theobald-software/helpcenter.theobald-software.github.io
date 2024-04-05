@@ -33,7 +33,7 @@ snc/identity/as | Application server's SNC name Syntax: p:\<Distinguished_Name\>
 ### Step-by-Step Guide
 
 1. Generate certificate for the application server and AD-user context from common Certificate Authority (ca).<br>
-![X.509 Certificate Details](../assets/images/articles/x509-certificate_example.png){:class="img-responsive"}
+![X.509 Certificate Details](site:assets/images/articles/x509-certificate_example.png){:class="img-responsive"}
 
 	!!! note
 		The X.509 certificate is available when placed in folder **Certmgr > Personal > Certificates** within Windows certificate store (user).
@@ -41,7 +41,7 @@ snc/identity/as | Application server's SNC name Syntax: p:\<Distinguished_Name\>
 2. Convert pfx file to SAP PSE format e.g., `sapgenpse.exe import_p12 -p cert.pse cert.pfx`.
 3. Import the created PSE file via **TA STRUST > Edit mode > PSE Import > PSE Save as SNC Libcrypto**.
 4. Edit the SNC configuration of the corresponding SAP user via transaction **SU01** (1), **SNC** (2), **SNC Name** (3) = p:\<Full Distinguished_Name\> <br> e.g., `p:EMAIL="RandomUser@domain",CN="Random User",OU="Users",OU="TheobaldSoftware",DC="theobald",DC="local"`.
-![SNC User Settings](../assets/images/articles/snc_user_settings.png){:class="img-responsive"}
+![SNC User Settings](site:assets/images/articles/snc_user_settings.png){:class="img-responsive"}
 5. Set up SNC authentication in the SAP connection settings.
 
 ****

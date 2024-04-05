@@ -1,0 +1,10 @@
+nav:
+    - index.md
+    - Network & Communication: network-and-communication
+    - Microsoft Power Automate: microsoft-power-automate-integration
+    - Nintex Automation Cloud: nintex-automation-cloud-integration
+    - Alteryx: integrating-a-yunio-service-with-alteryx.md
+    - Postman: running-a-yunio-service-in-postman.md
+    - SwaggerHub: running-a-yunio-service-in-swagger-hub.md
+    - SAP Transactions: transactions
+

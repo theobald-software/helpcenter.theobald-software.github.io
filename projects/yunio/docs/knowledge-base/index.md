@@ -1,5 +1,5 @@
 ---
-title: Integration Scenarios
+title: Knowledge Base
 hide:
   - navigation
   - path
@@ -11,7 +11,21 @@ hide:
 
 </div>
 
-### Integration with Microsoft Power Automate
+### :material-network: Network & Communication
+
+<div class="mdx-columns" markdown>
+
+- [Certificate Renewal for TLS](certificate-renewal.md)
+- [Enabling Secure Network Communication (SNC) via X.509 certificate](enable-snc-using-pse-file.md)
+- [Establish an Azure Relay Hybrid Connection to yunIO](establish-an-azure-relay-hybrid-connection.md)
+- [Installing an X.509 Certificate](x509-certificate.md)
+- [yunIO Networking Scenarios](networking.md)
+
+</div>
+
+---
+
+### :simple-powerautomate: Microsoft Power Automate Integration
 
 <div class="mdx-columns" markdown>
 
@@ -27,7 +41,9 @@ hide:
 
 </div>
 
-### Integration with Nintex Automation Cloud
+---
+
+### Nintex Automation Cloud Integration
 
 <div class="mdx-columns" markdown>
 
@@ -39,7 +55,9 @@ hide:
 
 </div>
 
-### Integration with Alteryx
+---
+
+### :simple-alteryx: Alteryx Integration
 
 <div class="mdx-columns" markdown>
 
@@ -47,14 +65,39 @@ hide:
 
 </div>
 
-### SAP Transactions via yunIO
+---
+
+
+### :simple-postman: Postman Integration
 
 <div class="mdx-columns" markdown>
 
-- [Working with Transactions - Table Parameters](transaction-table-parameters.md)
+- [Running a yunIO Service in Postman](running-a-yunio-service-in-postman.md)
+
+</div>
+
+---
+
+### :simple-swagger: SwaggerHub Integration
+
+<div class="mdx-columns" markdown>
+
+- [Running a yunIO Service in SwaggerHub](running-a-yunio-service-in-swagger-hub.md)
+
+</div>
+
+---
+
+### :simple-sap: SAP Transactions
+
+<div class="mdx-columns" markdown>
+
 - [Working with Transaction IE01](transaction-ie01.md)
 - [Working with Transaction PA40](transaction-pa40.md)
 - [Working with Transaction VA02](transaction-va02.md)
 - [Working with Transaction XD02](transaction-xd02.md)
+- [Working with Transactions - Table Parameters](transaction-table-parameters.md)
 
 </div>
+
+---
