@@ -17,6 +17,7 @@ hide:
 
 - [Authorization Objects - SAP User Rights](authority-objects-sap-user-rights.md)
 - [Check the Accessibility to an SAP System](how-to-check-the-accessibility-to-a-sap-system.md)
+- [Create a Client PSE to connect to SAP Cloud Systems :material-alert-decagram:](create-personal-security-environment.md)
 - [Implement a connection pool](implement-a-connection-pool.md)
 - [Login to SAP with an SSO Logon Ticket](login-to-sap-with-an-sso-logonticket.md)
 - [Use ERPConnect in PowerShell](use-erpconnect-in-powershell.md)
