@@ -2,7 +2,7 @@
 
 setlocal enabledelayedexpansion
 
-echo Enter numbers between 0 and 6 to serve websites. Separate multiple numbers with spaces.
+echo Enter numbers between 0 and 6 to serve websites. Separate multiple numbers with spaces:
 echo 0 - All
 echo 1 - ERPConnect
 echo 2 - yunIO
@@ -18,7 +18,7 @@ echo dirty - only re-build files that have changed
 echo help - show all input options
 echo quiet - silence warnings
 echo strict - abort the build on any warnings
-echo watch PATH - a directory or file to watch for live reloading (an be supplied multiple times)
+echo watch PATH - a directory or file to watch for live reloading (can be supplied multiple times)
 set /p optional_args=
 
 
