@@ -22,7 +22,8 @@ The connection methods require the following input:
 | Name of the application server (*Host* property)| Name of the message server (*MessageServer* property)| WebSocket host (*WebSocketHost* property)|
 | System number between 0 and 99 (*SystemNumber* property)| System ID (*SID* property e.g., MBS)| WebSocket port (*WebSocketPort* property)|
 | | Name of the group (*LogonGroup* property e.g., PUBLIC)| *AliasUser* property instead of *UserName* for cloud systems|
-||| Various TLS settings (*TlsSettings* property)|
+||| Various TLS settings (*TlsSettings* property), e.g., *CryptoLibrary*, [*ClientPse*](../../samples/create-personal-security-environment.md)|
+
 
 ### Connect to SAP
 

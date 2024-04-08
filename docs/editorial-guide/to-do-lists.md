@@ -54,10 +54,15 @@ title: To-Do Lists
 - [ ] create a Getting Started page
 	- [ ] migrate Getting Started from OH
 - [ ] create Articles/Integration Scenarios folder
-	- [ ] migrate articles from KB
+	- [x] migrate articles/images from KB
+	- [ ] adjust links to OH
 - [ ] create Documentation folder
-	- [ ] migrate content from OH
-- [ ] create content for the product landing page (list of links & What's New?)
+	- [ ] migrate content/images from OH
+	- [ ] adjust links to KB
+- [ ] create content for the product landing page 
+	- [ ] Latest News
+	- [ ] Chatbot
+	- [ ] Link Additional Resources
 
 ### Xtract
 
@@ -71,7 +76,7 @@ title: To-Do Lists
 	- [ ] :products-xtract-universal:
 	- [ ] :products-xtract-is: 
 	- [ ] :products-xtract-for-alteryx: 
-- [ ] create empty Troubleshooting page and check if tags are available
+- [ ] create empty Troubleshooting page and check tags in support portal
 	- [ ] :products-board-connector: (#hbc1)
 	- [ ] :products-xtract-universal: (#hxu1)
 	- [ ] :products-xtract-is: (#hxis1)
@@ -96,8 +101,16 @@ title: To-Do Lists
 	- [ ] :products-xtract-universal: migrate articles from OH
 	- [ ] :products-xtract-is: migrate articles from OH
 	- [ ] :products-xtract-for-alteryx: migrate articles from OH
-- [ ] create content for the product landing page (list of links & What's New?)
-	- [ ] :products-board-connector:
-	- [ ] :products-xtract-universal:
-	- [ ] :products-xtract-is: 
-	- [ ] :products-xtract-for-alteryx: 
+- [ ] create content for the product landing page 
+	- [ ] :products-board-connector: Latest News
+	- [ ] :products-board-connector: Chatbot
+	- [ ] :products-board-connector: Link Additional Resources
+	- [ ] :products-xtract-universal: Latest News
+	- [ ] :products-xtract-universal: Chatbot
+	- [ ] :products-xtract-universal: Link Additional Resources
+	- [ ] :products-xtract-is: Latest News
+	- [ ] :products-xtract-is: Chatbot
+	- [ ] :products-xtract-is: Link Additional Resources
+	- [ ] :products-xtract-for-alteryx: Latest News
+	- [ ] :products-xtract-for-alteryx: Chatbot
+	- [ ] :products-xtract-for-alteryx: Link Additional Resources

@@ -1,6 +1,6 @@
 ### About the Documentation Content of Theobald Software
 
-The documentation of Theobald Software is designed to introduce readers to the main functions of {{ product }}.
+The documentation of Theobald Software is designed to introduce readers to the main functions of {{ productName }}.
 
 Theobald Software's claim is to keep the documentation up to date according to the latest product version. 
 Information concerning the older version is removed gradually from the documentation content. 
@@ -11,7 +11,7 @@ Theobald Software's claim is to always update all the used screenshots of other 
 ©2024 Theobald Software GmbH. All rights reserved.
 
 ### Target group and audience
-This documentation is intended for all users of {{ product }}. 
+This documentation is intended for all users of {{ productName }}. 
 The documentation offers an overview of the interface, of the navigation and of the basic information to the users who have never or rarely worked with the product. 
 Experienced users can find more detailed information on more complex topics and use the documentation for reference.
 
