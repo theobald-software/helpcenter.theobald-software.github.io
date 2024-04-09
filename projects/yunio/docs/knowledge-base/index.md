@@ -43,7 +43,7 @@ hide:
 
 ---
 
-### Nintex Automation Cloud Integration
+### :3rd-party-nintex: Nintex Automation Cloud Integration
 
 <div class="mdx-columns" markdown>
 
@@ -57,7 +57,7 @@ hide:
 
 ---
 
-### :simple-alteryx: Alteryx Integration
+### :3rd-party-alteryx: Alteryx Integration
 
 <div class="mdx-columns" markdown>
 
