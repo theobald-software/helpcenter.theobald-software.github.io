@@ -79,14 +79,16 @@ For more information on Team Forms, see [Team Forms Documentation](https://docs.
 6. Add the corresponding yunIO connector created in step 1 for each each leave type (2).<br>
 7. Map the data from the Team form to the input parameters of yunIO (3). 
 8. Make sure the input uses the right format, e.g., dates use the format `DD.mm.YYYY`.<br>
-**Tip:** The following code reformats dates returned by the Teams form from `yyyy-MM-dd'T'HH:mm:ss*SSSZZZZ` to `DD.mm.YYYY`:
+	
+	!!! Tip
+		The following code reformats dates returned by the Teams form from `yyyy-MM-dd'T'HH:mm:ss*SSSZZZZ` to `DD.mm.YYYY`:
 
-	 ```
-	 #Start date:
-	 concat(substring(triggerOutputs()?['body/data/startDate'], 8, 2), '.', substring(triggerOutputs()?['body/data/startDate'], 5, 2), '.', substring(triggerOutputs()?['body/data/startDate'], 0, 4))
-	 #End date:
-	 concat(substring(triggerOutputs()?['body/data/endDate'], 8, 2), '.', substring(triggerOutputs()?['body/data/endDate'], 5, 2), '.', substring(triggerOutputs()?['body/data/endDate'], 0, 4))
-	 ```
+		 ```
+		 #Start date:
+		 concat(substring(triggerOutputs()?['body/data/startDate'], 8, 2), '.', substring(triggerOutputs()?['body/data/startDate'], 5, 2), '.', substring(triggerOutputs()?['body/data/startDate'], 0, 4))
+		 #End date:
+		 concat(substring(triggerOutputs()?['body/data/endDate'], 8, 2), '.', substring(triggerOutputs()?['body/data/endDate'], 5, 2), '.', substring(triggerOutputs()?['body/data/endDate'], 0, 4))
+		 ```
 9. Optional: Send notifications when a sick leave is requested. 
 10. Turn on the workflow.
 

@@ -38,8 +38,9 @@ If that is not possible, requests to the yunIO server can be made from untrusted
 ### Direct Connection
 
 A direct connection can be established, if firewall rules allow incoming requests from the caller's network to the yunIO/SAP network. 
-HTTPS should always be enabled for direct connections to protect the confidentiality and integrity of the communication, see [yunIO Server Settings: Transport Layer Security](https://help.theobald-software.com/en/yunio/server-settings#transport-layer-security).
-Note that the ports for service calls and for accessing the designer must be open, see [yunIO Server Settings: Services, Designer and WebSockets](https://help.theobald-software.com/en/yunio/server-settings#services-designer-and-websockets).
+HTTPS should be enabled for direct connections to protect the confidentiality and integrity of the communication, see [yunIO Server Settings: Transport Layer Security](https://help.theobald-software.com/en/yunio/server-settings#transport-layer-security).
+The ports for service calls and for accessing the designer are open, see [yunIO Server Settings: Services, Designer and WebSockets](https://help.theobald-software.com/en/yunio/server-settings#services-designer-and-websockets).
+
 For callers in cloud environments, it might not be possible to restrict requests to the yunIO server to trusted origins through firewall rules.
 
 1. The caller sends the request directly to the yunIO server via HTTPS.

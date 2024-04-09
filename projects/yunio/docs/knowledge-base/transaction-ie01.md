@@ -33,7 +33,7 @@ Example: to parameterize a field in a specific tap or menu, the tab or menu must
 ![yunio-Transaction-IE01-Save](../assets/images/yunio/articles/transaction-save-equipment.png){:class="img-responsive"}
 7. Click **[Save]** to save your actions. <br>
 Alternatively, click **[Stop]** to start parameterizing, see [Documentation: Parameterize Transactions](https://help.theobald-software.com/en/yunio/transactions#parameterize-transactions).
-8. Copy the URL of the service definition ( :yunio-copy: icon) or download the service definition ( :yunio-run-download: icon) to integrate the service in your workflow.<br>
+8. Copy the URL of the service definition ( :yunio-copy: icon) or download the service definition ( :yunio-run-download: icon) to integrate the service in your workflow.
 For information on how to use yunIO services in Power Automate or Nintex, see [Integrating a yunIO Service with Power Automate](integrating-a-yunio-service-with-power-automate.md) or [Integrating a yunIO Service with Nintex](integrating-a-yunio-service-with-nintex.md).
 ![yunio-Services](../assets/images/yunio/articles/yunio-run-services.png){:class="img-responsive"}
 

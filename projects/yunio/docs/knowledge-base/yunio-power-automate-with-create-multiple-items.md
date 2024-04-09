@@ -88,7 +88,7 @@ Use *Compose* to create the body of the yunIO web service that contains the tabl
 7. Add an *Append to array variable* action to *Apply to each*. 
 Select the initialized array and add the output of the *Compose* action to **Value**.
 8. Add the yunIO custom connector for creating cost centers after the *Apply to each* action.<br>
-Enter a value for the import parameter CONTROLLINGAREA and assign the filled array variable to the table parameter COSTCENTERLIST.
+Enter a value for the import parameter CONTROLLINGAREA and assign the filled array variable to the table parameter COSTCENTERLIST.<br>
 ![Power-Automate-yunIO-Service](../assets/images/yunio/articles/Power-Automate-yunIO-Service.png){:class="img-responsive" width="800px"}
 9. Optional: Add an email notification action to get notified about the newly created cost centers.
 10.	Test the workflow.<br>
