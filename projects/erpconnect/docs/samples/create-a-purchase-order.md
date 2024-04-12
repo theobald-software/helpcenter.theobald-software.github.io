@@ -1,8 +1,6 @@
 ---
 title: Create a Purchase Order
 description: ERPConnect in a web application- Creating a Purchase Order via BAPI
-tags:
-  - me23
 ---
 
 
