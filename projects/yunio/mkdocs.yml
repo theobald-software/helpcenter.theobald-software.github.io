@@ -76,6 +76,9 @@ theme:
 extra_css:
   - assets/stylesheets/extra.css
   - assets/stylesheets/neoteroi-cards.css 
+  - assets/stylesheets/hyperscript.css
+extra_javascript:
+  - assets/javascripts/hyperscript.min.js
   
 # Plugins
 plugins:
@@ -202,5 +205,8 @@ extra:
       link: https://theobald-software.com/en/newsletter/
       name: Newsletter
   productName: yunIO
+  product: yunio
+  Component: Integration Type
   component: integration type
   components: integration types
+  table: SAP Tables and Views

@@ -1,15 +1,9 @@
 ---
 title: Glossary
-product: yunio
-hide:
-  - navigation
+description: An overview of terms used in association with yunIO
 ---
 
-<div class="grid cards" markdown>
-
--   ![img](site:assets/images/logos/theo-thumbs.png){ .lg .middle width="30px"} This section contains an alphabetical list of words often used in relation to yunIO.
-
-</div>
+This section contains an alphabetical list of words often used in relation to yunIO.
 
 ### `Basic Authentication`
 

@@ -122,12 +122,6 @@ For more information on parameterizing services, refer to the following knowledg
 
 {% include _content/en/tables/table-joins.md  %}
 
-## SAP Customizing
-
-!!! note
-    SAP customizing is optional. The installation of the custom function module `/THEO/READ_TABLE` is recommended.
-
-{% include _content/en/sap-customizing/custom-function-module-for-table-extraction.md  %}
 
 *****
 #### Related Links

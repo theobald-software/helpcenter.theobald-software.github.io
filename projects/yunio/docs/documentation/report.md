@@ -127,7 +127,3 @@ The following example shows how to set up a yunIO service that extracts the SAP 
 7. Test the output of the service, see [Testing a Service](./run-services#testing-a-service).<br>
 ![report-response.png](../assets/images/yunio/report-response.png){:class="img-responsive"}
 
-
-## SAP Customizing
-
-{% include _content/en/sap-customizing/install-report-custom-function-module.md  %}

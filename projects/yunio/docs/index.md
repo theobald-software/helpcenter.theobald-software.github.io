@@ -1,8 +1,8 @@
 ---
 title: yunIO HelpCenter
-loc: index
 hide:
   - navigation
+  - tags
   - toc
 ---
 
@@ -12,9 +12,13 @@ hide:
 	<p>{{ config.site_description }}</p>
 </div>
 
-<!---
 
 ### Latest News
 
-{% include "newsfeed/yunio-news.md" %}
--->
+<div class="grid cards" markdown>
+
+--8<-- "newsfeed/yunio-news.md:3:33"
+
+</div>
+
+[:octicons-arrow-right-24: Show more](news.md)
