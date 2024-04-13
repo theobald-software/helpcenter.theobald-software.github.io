@@ -64,6 +64,11 @@ Web services created with yunIO can be integrated into all cloud applications th
 
 For more information about running services and passing parameters, see [Run Services](./documentation/run-services).
 
+User: help<br>
+Password: yunIO-Demo
+
+<swagger-ui src="http://localhost:8002/assets/files/yunio/KNA1.swagger.json"/>
+
 *****
 #### Related Links
 - [SAP Table or Views](./documentation/table-and-views)
