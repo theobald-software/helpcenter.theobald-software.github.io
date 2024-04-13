@@ -1,15 +1,8 @@
 ---
-ref: yunio-transaction-01
-layout: page
 title: Transactions
 description: Transactions
-product: yunio
-parent: yunio
-permalink: /:collection/:path
-weight: 19
-lang: en_GB
-old_url: /Xtract-Universal-EN/default.aspx?pageid=define-a-bapi-extraction
 ---
+
 This section shows how to use the integration type *Transaction*.<br>
 Use *Transaction* to access, configure and parameterize SAP transactions for automation.
 
@@ -69,11 +62,34 @@ When `skipPopups` is set to *true*, the following actions apply:
 | x |  | The service ignores the recorded screen and continues to the next screen. |
 |  | x | The popup is confirmed (Return/Enter key). |
 
+### Sample Services
+
+::cards:: cols=4
+
+- title: Transaction IE01
+  image: ../assets/images/logos/business-content/material.png
+  content: How to create new equipment in SAP.
+  url: /../knowledge-base/transaction-ie01
+  
+- title: Transaction PA40
+  image: ../assets/images/logos/business-content/human.png
+  content: How to define personnel actions in SAP.
+  url: /../knowledge-base/transaction-pa40
+  
+- title: Transaction VA02
+  image: ../assets/images/logos/business-content/finance.svg
+  content: How to change sales orders in SAP.
+  url: /../knowledge-base/transaction-va02
+
+- title: Transaction XD02
+  image: ../assets/images/logos/business-content/human.png
+  content: How to change customer data in SAP.
+  url: /../knowledge-base/transaction-xd02
+
+
+::/cards::
+
 
 ****
 #### Related Links
 - [Knowledge Base Article: Working with Transactions - Table Parameters](https://kb.theobald-software.com/yunio/transaction-table-parameters)
-- [Knowledge Base Article: Working with Transaction IE01](https://kb.theobald-software.com/yunio/transaction-ie01)
-- [Knowledge Base Article: Working with Transaction PA40](https://kb.theobald-software.com/yunio/transaction-pa40)
-- [Knowledge Base Article: Working with Transaction VA02](https://kb.theobald-software.com/yunio/transaction-va02)
-- [Knowledge Base Article: Working with Transaction XD02](https://kb.theobald-software.com/yunio/transaction-xd02)

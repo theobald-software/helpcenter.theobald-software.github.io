@@ -12,17 +12,18 @@ Follow the steps below to pass parameters and testrun the service directly in yu
 
 1. Click :yunio-run: to open the *Run Service* menu.<br>
 ![yunIO-Services](../assets/images/yunio/yunio-run-services1.png){:class="img-responsive" }
-2. If [Global Access Control](./access-control#global-access-control) and/or [Service Access Control](./access-control#service-access-control) is enabled, enter valid credentials (1).
-3. If the service requires input parameters, enter values for the parameters listed under *Input Parameters* (2). Use the **[ + ]** button to display nested items.
-The depicted example uses an input parameter *NAME*.<br>
+2. If [Global Access Control](./access-control#global-access-control) and/or [Service Access Control](./access-control#service-access-control) is enabled, enter valid credentials (1).<br>
 ![Run-Service](../assets/images/yunio/run-service.png){:class="img-responsive" }
-4. Click **[Run]**. The response body of the service is displayed under *Output Parameters* (3).<br>
-If the service returns multiple items, expand the items to view the content or use the control buttons to adjust the display of the parameters.<br>
-If the response body returns an error message, click **[Logs]** to open the [logs](./logs) of the service run.
+3. If the service requires input parameters, enter values for the parameters (2). Use the **[ + ]** button to display nested items.
+The depicted example uses an input parameter *NAME*.
+4. Click **[Run]**. The response body of the service is displayed under *Output Parameters* (3).
+	- If the service returns multiple items, expand the items to view the content or use the control buttons to adjust the display of the parameters.<br>
+	- If the response body returns an error message, click **[Logs]** to open the [logs](./logs) of the service run.
 5. Click **[Close]** to close the *Run Service* menu.
 
 !!! tip
     Click **[Edit]** to edit the service or add parameters.
+
 
 #### Run Menu
 
