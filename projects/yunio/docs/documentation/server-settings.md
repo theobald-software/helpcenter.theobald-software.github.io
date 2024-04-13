@@ -1,15 +1,6 @@
 ---
-ref: yunio-07
-layout: page
 title: Server Settings
 description: Server
-product: yunio
-parent: yunio
-childidentifier: server
-permalink: /:collection/:path
-weight: 30
-lang: en_GB
-old_url: /Xtract-Universal-DE/default.aspx?pageid=server
 ---
  
 
@@ -65,11 +56,11 @@ The certificate must have *Subject Alternative Name* set. When activating TLS, t
 A custom hostname can be entered in the [Services Endpoint](#endpoint) setting.
 3. After importing the desired X.509 certificate, manage its private keys to add a permission entry for the Windows user. 
 4. Click **[Pick Certificate]** and select an X.509 certificate from the list of available certificates.
-5. Enter "NT Service\yunIO Service" within the Object picker UI, check the granted permission and apply the changes. 
+5. Enter "NT Service\yunIO Service" within the Object picker UI, check the granted permission and apply the changes. <br>
 ![Access](../assets/images/yunio/x509-certificate-permission.png){:class="img-responsive" }
 
 
-For information on how to renew a certificate, refer to our knowledge base article [Certificate Renewal for TLS](https://kb.theobald-software.com/yunio/certificate-renewal).
+For information on how to renew a certificate, see [Certificate Renewal for TLS](https://kb.theobald-software.com/yunio/certificate-renewal).
 
 #### TLS enabled
 Once a certificate is selected, the option **TLS enabled** is available.<br>
