@@ -202,3 +202,5 @@ extra:
       link: https://theobald-software.com/en/newsletter/
       name: Newsletter
   productName: yunIO
+  component: integration type
+  components: integration types
