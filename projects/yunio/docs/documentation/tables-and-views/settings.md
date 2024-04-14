@@ -1,11 +1,12 @@
 ---
-title: Settings Overview
+title: Settings
 description: An overview and description of all table settings
 ---
 
-The following section contains an overview and description of all available table settings.
+The following section contains an overview and description of all available {{ table }} settings.
 
-The *SAP Table or View* settings consist of the following subsections:
+The {{ table }} settings consist of the following subsections:
+- [Control Buttons](#control-buttons) to close, save or delete the service.
 - [Table or View](#table-or-view) displays the name and description of the selected SAP Table or View.
 - [Advanced Settings](#advanced-settings) define how the data is extract from SAP.
 - [Output Columns](#output-columns) define what columns to extract.
@@ -13,6 +14,9 @@ The *SAP Table or View* settings consist of the following subsections:
 - [Joins](#joins) joins two or more tables and extracts the result of the join.
 
 ![yunIO-table](../../assets/images/yunio/table-settings.png){:class="img-responsive"}
+
+
+{% include "yunio/control-buttons.md" %}
 
 ### Table or View
 

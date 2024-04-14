@@ -1,0 +1,14 @@
+nav:
+    - Introduction: introduction
+    - Setup: setup
+    - Setup in SAP: setup-in-sap
+    - Designer/GUI: designer-gui.md
+    - SAP Connection: sap-connection
+    - Integrate Tables / Views: tables-and-views
+    - Integrate Function Modules / BAPIs: function-modules-and-bapis
+    - Integrate Transactions: transactions
+    - Integrate Reports: reports
+    - Run Services: run-services.md
+    - Access Restrictions: access-restrictions
+    - Server Settings: server-settings.md
+    - Logs: logs.md

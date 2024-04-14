@@ -1,15 +1,6 @@
 ---
-ref: yunio-06
-layout: page
 title: User Management
-description: User Management
-product: yunio
-parent: yunio
-childidentifier: integration
-permalink: /:collection/:path
-weight: 22
-lang: en_GB
-progressstate: 5
+description: Create users
 ---
 
 The yunIO user management allows you to create custom users with credentials to restrict access to the yunIO Designer and to yunIO services.

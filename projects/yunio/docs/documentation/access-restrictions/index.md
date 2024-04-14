@@ -1,15 +1,6 @@
 ---
-ref: yunio-08
-layout: page
-title: Access Control
+title: Access Restriction
 description: Access Control
-product: yunio
-parent: yunio
-childidentifier: integration
-permalink: /:collection/:path
-weight: 25
-lang: en_GB
-progressstate: 5
 ---
 
 The yunIO access control allows you to define the following user authorizations:

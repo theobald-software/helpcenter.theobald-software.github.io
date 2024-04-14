@@ -14,7 +14,7 @@ old_url: /Xtract-Universal-DE/default.aspx?pageid=server
 
 The following section contains information on the server and transaction logs created by yunIO.
 
-### Display Logs
+### Display Logs in Designer
 The logs are located in the *Logs* section of the yunIO Designer. <br>
 There are three types of logs:
 - **Service Runs:** Displays a list of the latest service runs, including the status of the service run.

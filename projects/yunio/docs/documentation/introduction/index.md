@@ -19,15 +19,15 @@ The web services can be easily integrated into your process automation solutions
 
 === "Automation"
 
-	![yunIO-Automation](../assets/images/yunio/yunio-automation.png){:class="img-responsive" width="800px" }<br>
+	![yunIO-Automation](../../assets/images/yunio/yunio-automation.png){:class="img-responsive" width="800px" }<br>
 
 === "Business Processes"
 
-	![yunIO-Business-Processes](../assets/images/yunio/yunio-business.png){:class="img-responsive" width="800px" }<br>
+	![yunIO-Business-Processes](../../assets/images/yunio/yunio-business.png){:class="img-responsive" width="800px" }<br>
 
 === "Data Management"
 
-	![yunIO-Data-Management](../assets/images/yunio/yunio-data-management.png){:class="img-responsive" width="800px" }
+	![yunIO-Data-Management](../../assets/images/yunio/yunio-data-management.png){:class="img-responsive" width="800px" }
 
 
 ### Software Architecture
@@ -36,7 +36,7 @@ yunIO comes with an embedded Web UI, the yunIO Designer, that can be accessed th
 The yunIO service is installed on a local or cloud-hosted Windows server environment. <br>
 If yunIO is installed on a local server environment, a Gateway instance of your choice (e.g. Microsoft om-premises data gateway) can be used to securely tunnel the connection. <br> 
 
-![yunIO-Components](../assets/images/yunio/theobald-software_architecture_yunio.png){:class="img-responsive" width="800px" }
+![yunIO-Components](../../assets/images/yunio/theobald-software_architecture_yunio.png){:class="img-responsive" width="800px" }
 
 ### Integration Types
 

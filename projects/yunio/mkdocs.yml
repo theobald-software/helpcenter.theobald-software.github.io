@@ -209,4 +209,7 @@ extra:
   Component: Integration Type
   component: integration type
   components: integration types
-  table: SAP Tables and Views
+  table: _SAP Table and View_
+  transaction: _Transaction_
+  report: _Report_
+  bapi: _Function module / BAPI_

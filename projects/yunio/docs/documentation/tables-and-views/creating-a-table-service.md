@@ -5,10 +5,7 @@ description: How to create a service to extract data from an SAP Table and View
 
 This section shows how to create a service that extracts data from an SAP Table and View.
 
-!!! warning 
-	**Missing Authorization**<br>
-    To use the Table component, access to the designated authority objects (RFC) in SAP must be available.
-    For more information, see [SAP Authority Objects](../setup-in-sap/sap-authority-object.md/#table).
+### Create a new Service
 
 
 ### Look Up an SAP Table or View
@@ -30,7 +27,7 @@ The following option are available to filter, ...
 - Define a [WHERE clause](where-clause.md) to filter table records. By default all data is extracted.
 - Edit the [Advanced Settings](settings-overview.md/#advanced-settings) to define how the data is extract from SAP.
 
-For more information on {{ table }} settings, see [Settings Overview](settings-overview.md).
+For more information on {{ table }} settings, see [Settings](settings.md).
 
 *****
 #### Related Links
