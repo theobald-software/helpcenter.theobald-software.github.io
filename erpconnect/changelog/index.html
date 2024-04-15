@@ -1148,7 +1148,7 @@ Tabs:
     |1.53.1 [L]|2024-02-28|Table|Fixed a bug where in some cases changing extraction settings would reset changes made to WHERE and HAVING clauses.|
     |1.53.0 [L]|2024-02-27|ODP|Added direct read mode with support for aggregating fields|
     |1.52.27 [L]|2024-02-27|ODP|Fixed an issue that caused errors during extraction when the data contained invalid time or date values.|
-    |[1.52.26 [L]](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.52.26.html)|2024-02-23|Table|Updated /THEO/READ_TABLE to version 3.4.([Release note](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.52.26.html))|
+    |[1.52.26 [L]](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.52.26)|2024-02-23|Table|Updated /THEO/READ_TABLE to version 3.4.([Release note](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.52.26))|
     |1.52.25 [L]|2024-02-23|TableCDC|There are now 2 different transports for S4 systems. One for S4 systems up to 7.55 and one for 7.55 and newer|
     |1.52.24 [L]|2024-02-21|TableCDC|Fixed a bug that caused initial load rollback to not completely remove log table metadata from the SAP system|
     |1.52.23 [L]|2024-02-15|TableCDC|Results are now ordered by sequence number to prevent "Invalid result order" error during delta extractions.|
@@ -1164,21 +1164,21 @@ Tabs:
     |1.52.13 [L]|2024-01-19|TableCDC|Fix for trigger syntax error in IBM DB for z/os (DB6). Requires update of /THEO/CDC_ECC|
     |1.52.12 [L]|2024-01-18|TableCDC|Fixed a bug where trigger creation failed if ".INCLUDE" structures were part of the primary key of the source table. Requires update of /THEO/CDC_* package.|
     |1.52.11 [L]|2024-01-16|Hierarchy|Removed debug logging statement that wrote the first 2 items of the extracted data into the log|
-    |[1.52.10 [M]](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.52.10.html)|2024-01-11|TableCDC|Fixed a bug where log table creation failed due to missing namespace license. Requires update of /THEO/CDC_* package. Check release notes for details([Release note](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.52.10.html))|
+    |[1.52.10 [M]](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.52.10)|2024-01-11|TableCDC|Fixed a bug where log table creation failed due to missing namespace license. Requires update of /THEO/CDC_* package. Check release notes for details([Release note](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.52.10))|
     |1.52.9 [L]|2024-01-09|TableCDC|Log table key field number and maintenance level is now set explicitly. Fixed a bug where fallback logic would not work if system language is set to 'D'.|
-    |[1.52.8 [M]](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.52.8.html)|2024-01-08|DeltaQ|Fixed a bug in the activation process for DeltaQ hierarchy extractions([Release note](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.52.8.html))|
-    |[1.52.7 [L]](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.52.7.html)|2024-01-03|Table|Fixed a bug where table settings UI would cause an error when saving. Updated /THEO/READ_TABLE to version 3.2 (see notes).([Release note](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.52.7.html))|
-    |[1.52.6 [L]](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.52.6.html)|2023-12-29|DeltaQ|Fixed bugs in the DeltaQ extractor - Details in release notes([Release note](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.52.6.html))|
+    |[1.52.8 [M]](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.52.8)|2024-01-08|DeltaQ|Fixed a bug in the activation process for DeltaQ hierarchy extractions([Release note](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.52.8))|
+    |[1.52.7 [L]](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.52.7)|2024-01-03|Table|Fixed a bug where table settings UI would cause an error when saving. Updated /THEO/READ_TABLE to version 3.2 (see notes).([Release note](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.52.7))|
+    |[1.52.6 [L]](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.52.6)|2023-12-29|DeltaQ|Fixed bugs in the DeltaQ extractor - Details in release notes([Release note](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.52.6))|
     |1.52.5 [L]|2023-12-20|BAPI|Fixed a bug that caused obscure error messages in case of special library errors |
     |1.52.4 [L]|2023-12-20|TableCDC|Improved error handling in log table creation step|
     |1.52.3 [M]|2023-12-19|TableCDC|Added support for SAP Max DB databases|
     |1.52.2 [L]|2023-12-13|TableCDC|Fixed a bug that caused Delta extractions to fail if source table was client-independent|
     |1.52.1 [L]|2023-12-08|TableCDC|Create table statement will now be logged in CDC initialization step.|
-    |[1.52.0 [H]](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.52.0.html)|2023-12-06|TableCDC|Released /THEO/CDC package. **Breaking changes** - Please see release notes for details.([Release note](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.52.0.html))|
+    |[1.52.0 [H]](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.52.0)|2023-12-06|TableCDC|Released /THEO/CDC package. **Breaking changes** - Please see release notes for details.([Release note](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.52.0))|
     |1.51.0 [L]|2023-12-04|General|Added the result columns custom order implementation|
     |1.50.9 [L]|2023-11-24|TableCDC|Fixed a bug where Z_THEO_READ_TABLE could not be used as fallback to /THEO/READ_TABLE|
     |1.50.8 [L]|2023-11-23|Hierarchy|Added /THEO/READ_TABLE as most preferred internal table extraction function module|
-    |[1.50.7 [L]](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.50.7.html)|2023-11-23|Table|Updated /THEO/READ_TABLE to version 3.1([Release note](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.50.7.html))|
+    |[1.50.7 [L]](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.50.7)|2023-11-23|Table|Updated /THEO/READ_TABLE to version 3.1([Release note](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.50.7))|
     |1.50.6 [L]|2023-11-22|Hierarchy|Fixed a bug where no description texts were retrieved. Extractor now uses a fallback logic where the longest available and non-empty text is retrieved.|
     |1.50.5 [L]|2023-11-20|Table|Fixed an issue where data would not be properly extracted when using STREAM_READ_TABLE function modules in combination with some SAP code pages.|
     |1.50.4 [L]|2023-11-09|Table|Added a separate /THEO/READ_TABLE transport request for SAP versions 6.40 to 7.03.|
@@ -1224,7 +1224,7 @@ Tabs:
     |1.43.7 [L]|2023-06-04|BW Cube|BICS: Fixed data type of integer characteristics|
     |1.43.6 [L]|2023-06-01|BW Cube|BICS: Fixed data type of timestamp characteristics|
     |1.43.5 [L]|2023-05-26|BW Cube|MDX: fixed a bug that caused errors when deselecting all measures|
-    |[1.43.4 [L]](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.43.4.html)|2023-05-22|Table|Multiple UI fixes and usability improvements.([Release note](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.43.4.html))|
+    |[1.43.4 [L]](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.43.4)|2023-05-22|Table|Multiple UI fixes and usability improvements.([Release note](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.43.4))|
     |1.43.3 [L]|2023-05-17|BW Cube|BICS: Added safeguards against truncated CHAR / NUMC characteristic values|
     |1.43.2 [L]|2023-05-16|BW Cube|BICS: Filter is applied for characteristics that are not selected for output|
     |1.43.1 [L]|2023-05-16|BW Cube|BICS: Fix for result copying|
@@ -1265,17 +1265,17 @@ Tabs:
     |1.39.3 [L]|2023-02-15|Report|Improved error message for when report lookup by TCODE fails.|
     |1.39.2 [L]|2023-02-13|BW Cube|Fixed a bug in MDX metadata refresh that caused invalid selections when a selected measure or dimension does not exist after refresh anymore.|
     |1.39.1 [L]|2023-02-06|Report|Report component UI improvements.|
-    |[1.39.0 [L]](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.39.0.html)|2023-01-27|BW Cube|Various improvements and new features in BICS cube extractor([Release note](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.39.0.html))|
+    |[1.39.0 [L]](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.39.0)|2023-01-27|BW Cube|Various improvements and new features in BICS cube extractor([Release note](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.39.0))|
     |1.38.2 [L]|2023-01-26|Report|Report helper and Report tests|
     |1.38.1 [M]|2023-01-23|BAPI|Only send scalar parameters if value has been provided|
     |1.38.0 [L]|2023-01-16|General|Adjustments for new conversion architecture (internal changes)|
     |1.37.1 [L]|2023-01-15|Security|Updated Bouncy Castle to version 2.0|
     |1.37.0 [H]|2023-01-15|TableCDC|Added Table CDC extractor|
-    |[1.36.0 [L]](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.36.0.html)|2023-01-11|Report|Updated Z_XTRACT_IS_REMOTE_REPORT to version 1.2. (Breaking change)([Release note](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.36.0.html))|
+    |[1.36.0 [L]](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.36.0)|2023-01-11|Report|Updated Z_XTRACT_IS_REMOTE_REPORT to version 1.2. (Breaking change)([Release note](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.36.0))|
     |1.35.3 [L]|2023-01-11|BW Cube|Fix for possible error when saving dimension filters in MDX mode|
     |1.35.2 [L]|2023-01-09|General|Added range checks for SapDateConverter|
     |1.35.1 [L]|2023-01-09|BW Cube|Fix for error on InfoCube load in MDX mode|
-    |[1.35.0 [L]](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.35.0.html)|2023-01-04|Hierarchy|New Hierarchy Extractor([Release note](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.35.0.html))|
+    |[1.35.0 [L]](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.35.0)|2023-01-04|Hierarchy|New Hierarchy Extractor([Release note](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.35.0))|
     |1.34.1 [L]|2022-12-21|BW Cube|Fix for incorrect unit column values in MDX mode.|
     |1.34.0 [L]|2022-12-20|BW Cube|Added the option to select a custom structure on the columns axis for MDX extractions.|
     |1.33.5 [L]|2022-12-13|Table|Fix for Table preview's grid row header style|
@@ -1287,14 +1287,14 @@ Tabs:
     |1.32.2 [L]|2022-11-04|General|Added more date/time result types|
     |1.32.1 [L]|2022-11-03|Table|Values of RfcReadTableResult instances can now be accessed by column name.|
     |1.32.0 [L]|2022-10-28|General|Added column mapping feature|
-    |[1.31.6 [L]](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.31.6.html)|2022-10-24|Table|Updated Z_THEO_READ_TABLE to version 2.15.([Release note](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.31.6.html))|
+    |[1.31.6 [L]](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.31.6)|2022-10-24|Table|Updated Z_THEO_READ_TABLE to version 2.15.([Release note](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.31.6))|
     |1.31.5 [L]|2022-10-21|BW Cube|Fixed a bug that caused measures in MDX mode being handled as strings instead of numbers when the formatted values option is enabled.|
     |1.31.4 [L]|2022-10-19|General|The extractors now use the new ILog interface. The BAPIExtractor now can take a callback being called when the data has arrived from the SAP system.|
-    |[1.31.3 [L]](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.31.3.html)|2022-10-14|Table|Updated Z_THEO_READ_TABLE to version 2.14([Release note](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.31.3.html))|
-    |[1.31.2 [L]](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.31.2.html)|2022-10-14|Report|Non executable ABAP programs can't be selected in report lookup anymore.([Release note](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.31.2.html))|
+    |[1.31.3 [L]](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.31.3)|2022-10-14|Table|Updated Z_THEO_READ_TABLE to version 2.14([Release note](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.31.3))|
+    |[1.31.2 [L]](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.31.2)|2022-10-14|Report|Non executable ABAP programs can't be selected in report lookup anymore.([Release note](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.31.2))|
     |1.31.1 [M]|2022-10-06|BAPI|Fixed a bug that caused errors during metadata retrieval if the function module contains include structures that don't exist|
     |1.31.0 [L]|2022-09-26|Table|added support for function modules /BODS/RFC_STREAM_READ_TABLE and /SAPDS/RFC_STREAM_READ_TABLE|
-    |[1.30.12 [L]](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.30.12.html)|2022-09-14|Table|Updated Z_THEO_READ_TABLE to version 2.13.([Release note](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.30.12.html))|
+    |[1.30.12 [L]](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.30.12)|2022-09-14|Table|Updated Z_THEO_READ_TABLE to version 2.13.([Release note](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.30.12))|
     |1.30.11 [M]|2022-09-13|OHS|Fixed assembly version of Theobald.Extractors.Ohs.dll|
     |1.30.10 [M]|2022-08-29|ODP|Fixed an issue where trailing zeros of RAW fields where truncated|
     |1.30.9 [L]|2022-08-09|Report|Fixed a bug where TCODE lookup would not work with some newer SAP systems.|
@@ -1302,7 +1302,7 @@ Tabs:
     |1.30.7 [L]|2022-08-08|Table|Fixed a bug in WHERE clause editor where using numeric values in value blocks would in some cases not result a correct WHERE clause.|
     |1.30.6 [H]|2022-08-04|BAPI|Fix for structure includes|
     |1.30.5 [L]|2022-07-27|BW Cube|Fix for failing mdx extractions with packaging enabled and only dimensions selected.|
-    |[1.30.4 [L]](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.30.4.html)|2022-07-22|Table|Updated Z_THEO_READ_TABLE to version 2.12([Release note](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.30.4.html))|
+    |[1.30.4 [L]](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.30.4)|2022-07-22|Table|Updated Z_THEO_READ_TABLE to version 2.12([Release note](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.30.4))|
     |1.30.3 [L]|2022-07-18|BW Cube|Refactored all MDX RFC Functions to static creation; added support for non-unicode SAP systems.|
     |1.30.2 [L]|2022-07-18|BW Cube|Cube BICS mode now supports list parameters in filters and variables.|
     |1.30.1 [H]|2022-07-07|BW Cube|Fix for asynchronous processing problems|
@@ -1312,7 +1312,7 @@ Tabs:
     |1.29.12 [M]|2022-06-07|ODP|Fixed a bug that caused extractions to fail with "Expected new buffer marker" error|
     |1.29.11 [L]|2022-06-02|BW Cube|MDX mode: invalid measure values 'X' are now written to the output as NULL.|
     |1.29.10 [L]|2022-06-01|BW Cube|Fix for disabled measures/dimensions tree in MDX mode when a query does not have any measures.|
-    |[1.29.9 [L]](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.29.9.html)|2022-05-30|BW Cube|Support for Only_Structures behavior in MDX BEx Queries. Various bug fixes and general improvements for the Cube component.([Release note](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.29.9.html))|
+    |[1.29.9 [L]](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.29.9)|2022-05-30|BW Cube|Support for Only_Structures behavior in MDX BEx Queries. Various bug fixes and general improvements for the Cube component.([Release note](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.29.9))|
     |1.29.8 [L]|2022-05-23|General|Extractors that implement the complex parameter interface must also implement scalar parameter interface|
     |1.29.7 [L]|2022-05-12|BW Cube|Fix for date columns being 0 and in wrong format in date columns of BICS extractions.|
     |1.29.6 [L]|2022-05-09|BW Cube|Fix for unavailable runtime parameters in dimension range filters.|
@@ -1328,7 +1328,7 @@ Tabs:
     |1.27.0 [M]|2022-04-04|BW Cube|Updates to the BWCube component for increased stability, performance and compatibility.|
     |1.26.1 [L]|2022-02-09|Report|Fixed a bug where the report lookup would throw an error when the new version of RFC_READ_TABLE was used.|
     |1.26.0 [L]|2022-02-08|Table|Updated Z_THEO_READ_TABLE to version 2.11. Background job timeout can now be set manually in extraction settings.|
-    |[1.25.1 [L]](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.25.1.html)|2022-02-03|Table|Fixed a bug where metadata of views was not retrieved correctly.([Release note](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.25.1.html))|
+    |[1.25.1 [L]](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.25.1)|2022-02-03|Table|Fixed a bug where metadata of views was not retrieved correctly.([Release note](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.25.1))|
     |1.25.0 [M]|2022-01-27|ODP|Metadata can now be refreshed without performing a new lookup|
     |1.24.1 [L]|2021-12-08|General|Fix for BCD length conversion|
     |1.24.0 [M]|2021-12-03|BAPI|Added description texts for data elements|
@@ -1336,11 +1336,11 @@ Tabs:
     |1.23.1 [M]|2021-11-29|General|Table & ODP: Now set currency decimals to 4 when using "adjust currency decimals"|
     |1.23.0 [L]|2021-11-12|BAPI|Reworked parameterization|
     |1.22.1 [L]|2021-11-12|Report|Fixed a bug where report rows without pipes in them were being skipped even if the extraction was ran without dynamic column widths and offsets setting turned on. This change is breaking.|
-    |[1.22.0 [L]](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.22.0.html)|2021-11-03|General|Table and ODP: Added setting to automatically adjust currency decimals based on reference field([Release note](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.22.0.html))|
+    |[1.22.0 [L]](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.22.0)|2021-11-03|General|Table and ODP: Added setting to automatically adjust currency decimals based on reference field([Release note](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.22.0))|
     |1.21.1 [L]|2021-10-05|Report|Fixed a bug where fetching report selection parameters would not use the custom function module defined in extraction settings and would override that setting with the default value of Z_XTRACT_IS_REMOTE_REPORT.|
-    |[1.21.0 [L]](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.21.0.html)|2021-09-24|BW Cube|Updated cube component with new BICS mode (beta).([Release note](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.21.0.html))|
+    |[1.21.0 [L]](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.21.0)|2021-09-24|BW Cube|Updated cube component with new BICS mode (beta).([Release note](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.21.0))|
     |1.20.27 [L]|2021-09-13|Report|Fixed a bug where automatic column detection didn't work for reports where rows don't begin with a pipe.|
-    |[1.20.26 [L]](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.20.26.html)|2021-09-08|Report|Fixed function module recognition based on signature.([Release note](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.20.26.html))|
+    |[1.20.26 [L]](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.20.26)|2021-09-08|Report|Fixed function module recognition based on signature.([Release note](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.20.26))|
     |1.20.25 [L]|2021-09-06|Report|Output columns now have length of 255 characters when dynamic column widths and offsets is turned on. |
     |1.20.24 [M]|2021-08-05|OHS|Third-party mode: Fix for empty packets|
     |1.20.23 [L]|2021-07-30|OHS|Improved error handling for unsupported destination types|
@@ -1370,13 +1370,13 @@ Tabs:
     |1.19.7 [L]|2021-03-15|Report|Fixed a bug where performing automatic column detection after running a preview would enable dynamic column widths and offsets.|
     |1.19.6 [L]|2021-03-05|Table|Fixed a bug where in certain cases not all fields of views would be shown in the extraction definition UI.|
     |1.19.5 [L]|2021-03-04|General|Added possibility to signal success/failure of result processing after run|
-    |[1.19.4 [L]](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.19.4.html)|2021-03-04|Report|Multiple bug fixes and improvements([Release note](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.19.4.html))|
+    |[1.19.4 [L]](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.19.4)|2021-03-04|Report|Multiple bug fixes and improvements([Release note](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.19.4))|
     |1.19.3 [L]|2021-03-02|Report|Added support for runtime parameters.|
     |1.19.2 [M]|2021-03-02|General|Fixed two issues with runtime parameters where assigning selection parameters would not be saved and the default type was set to an invalid value|
     |1.19.1 [L]|2021-02-23|Table|Fix for using Z_THEO_READ_TABLE (bug introduced in 1.18)|
     |1.19.0 [M]|2021-02-23|OHS|Added OHS|
     |1.18.0 [M]|2021-02-23|Report|Added report component|
-    |[1.17.0 [L]](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.17.0.html)|2021-02-10|BAPI|Several improvements and new features([Release note](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.17.0.html))|
+    |[1.17.0 [L]](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.17.0)|2021-02-10|BAPI|Several improvements and new features([Release note](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.17.0))|
     |1.16.3 [M]|2021-02-05|Table|Fixed a bug where fetching the field metadata for views would not work if multiple fields of the view referenced the same table fields.|
     |1.16.2 [L]|2021-02-05|Table|Fixed a bug where field descriptions of views would not be fetched on newer SAP BW systems.|
     |1.16.1 [L]|2021-02-01|ODP|Fixed an issue where extractions would fail for big-endian SAP systems when NetWeaver libraries were used|
@@ -1385,20 +1385,20 @@ Tabs:
     |1.15.9 [M]|2020-12-17|ODP|Fixed an issue where init simulations (delta initializations without extracting data) could cause subsequent delta requests to not load any data|
     |1.15.8 [M]|2020-11-06|Table|Fix for empty packages when using NWRFC + Z_THEO_READ_TABLE|
     |1.15.7 [L]|2020-10-29|General|Table and ODP: Reference fields (and tables) for currencies and quantities are now saved|
-    |[1.15.6 [M]](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.15.6.html)|2020-10-09|Table|Various fixes & improvements for Table GUI([Release note](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.15.6.html))|
+    |[1.15.6 [M]](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.15.6)|2020-10-09|Table|Various fixes & improvements for Table GUI([Release note](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.15.6))|
     |1.15.5 [M]|2020-10-06|ODP|Improved logging on delta updates|
     |1.15.4 [L]|2020-09-28|Table|Workaround for length problems when extracting integers with conversion routines and Z_XTRACT_IS_TABLE_COMPRESSION|
     |1.15.3 [L]|2020-09-24|Table|Workaround for length problems when extracting floating point with conversion routines and Z_XTRACT_IS_TABLE_COMPRESSION|
     |1.15.2 [L]|2020-09-23|Table|Workaround for length problems when extracting packed numbers with conversion routines and Z_XTRACT_IS_TABLE_COMPRESSION|
-    |[1.15.1 [L]](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.15.1.html)|2020-09-07|ODP|Added subscription suffix ([Release note](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.15.1.html))|
+    |[1.15.1 [L]](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.15.1)|2020-09-07|ODP|Added subscription suffix ([Release note](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.15.1))|
     |1.15.0 [M]|2020-07-15|General|Support for new data types DATN, D34N, D16N, TIMN, UTCLONG. Corrected typing for decimal floating point values (now string) for ODP.|
     |1.14.12 [L]|2020-06-12|General|Function module for internal table reads (metadata) can be specified now|
-    |[1.14.11 [L]](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.14.11.html)|2020-05-27|ODP|Improved monitoring for subscriptions and requests([Release note](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.14.11.html))|
+    |[1.14.11 [L]](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.14.11)|2020-05-27|ODP|Improved monitoring for subscriptions and requests([Release note](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.14.11))|
     |1.14.10 [L]|2020-05-14|Table|Global conversion checkbox is now tri-state and allows to enable conversion on all the fields that have a conversion exit in SAP, all at once. Fixed a bug where the 1.x versions of Z_THEO_READ_TABLE would continue running after an exception in extractor occurred.|
     |1.14.9 [L]|2020-05-07|Table|Improved the error message for when Z_THEO_READ_TABLE is used and conversion is enabled on a field that does not have a conversion exit defined in SAP.|
     |1.14.8 [L]|2020-05-05|Table|Fixed a bug where enabling conversion on all the fields that have conversion exit defined in SAP, would enable conversion on all the fields in the table UI.|
     |1.14.7 [M]|2020-04-30|Table|Fixed a bug where table extractions with Z_XTRACT_IS_TABLE_COMPRESSION function module would not work.|
-    |[1.14.6 [M]](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.14.6.html)|2020-04-14|Table|Updated Z_THEO_READ_TABLE to version 2.10. ([Release note](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.14.6.html))|
+    |[1.14.6 [M]](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.14.6)|2020-04-14|Table|Updated Z_THEO_READ_TABLE to version 2.10. ([Release note](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.14.6))|
     |1.14.5 [M]|2020-03-11|Table|Fixed metadata refresh|
     |1.14.4 [M]|2020-03-10|ODP|Fix for parameters in higher value for ranged selections|
     |1.14.3 [M]|2020-03-09|Table|Z_THEO_READ_TABLE exception and error callbacks don't cause short dumps anymore|
@@ -1412,7 +1412,7 @@ Tabs:
     |1.11.1 [M]|2019-12-04|Hierarchy|Fix for lookup|
     |1.11.0 [L]|2019-12-04|Table|Length restrictions of STRING/XSTRING are reflected in persistence / result metadata|
     |1.10.19 [M]|2019-12-04|Table|Updated Z_THEO_READ_TABLE to version 2.7|
-    |[1.10.18 [M]](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.10.18.html)|2019-12-03|ODP|Several fixes for execution([Release note](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.10.18.html))|
+    |[1.10.18 [M]](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.10.18)|2019-12-03|ODP|Several fixes for execution([Release note](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.10.18))|
     |1.10.17 [L]|2019-12-02|Table|UI improvements for removing tables|
     |1.10.16 [L]|2019-11-29|ODP|GUI: Fixed a bug that caused delta columns to be deselected when changing from Delta to Recovery mode|
     |1.10.15 [L]|2019-11-13|Table|Fix for 99h error during lookup|
@@ -1420,7 +1420,7 @@ Tabs:
     |1.10.13 [M]|2019-11-07|Table|Updated Z_THEO_READ_TABLE to version 2.6|
     |1.10.12 [M]|2019-11-06|Table|Updated Z_THEO_READ_TABLE to version 2.5|
     |1.10.11 [M]|2019-11-04|ODP|Added support for parameterizing selections|
-    |[1.10.10 [M]](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.10.10.html)|2019-10-23|General|Fixed the preview GUI. Removed the broken alias functionality from table subcomponent([Release note](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.10.10.html))|
+    |[1.10.10 [M]](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.10.10)|2019-10-23|General|Fixed the preview GUI. Removed the broken alias functionality from table subcomponent([Release note](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.10.10))|
     |1.10.9 [M]|2019-10-07|Table|Another fix for RFC_CONVERSION_FIELD when calling Z_THEO_READ_TABLE 2.x on Big Endian systems|
     |1.10.8 [M]|2019-09-30|Table|Fix for RFC_CONVERSION_FIELD when calling Z_THEO_READ_TABLE 2.x on Big Endian systems|
     |1.10.7 [L]|2019-09-27|General|Adjustments for column name conversion of result columns|
@@ -1442,7 +1442,7 @@ Tabs:
     |1.8.5 [L]|2019-09-02|BW Cube|Fix for properties with same names on different dimensions.|
     |1.8.4 [L]|2019-08-30|BW Cube|Fix for selecting properties in cube extractor.|
     |1.8.3 [L]|2019-08-28|ERPConnect|Updated to 6.8.0.11|
-    |[1.8.2 [M]](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.8.2.html)|2019-08-26|Table|Added an icon indicating whether a table field is indexed. Number of rows can now be counted (only with Z_THEO_READ_TABLE) or estimated (using other function modules) in the editor GUI.([Release note](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.8.2.html))|
+    |[1.8.2 [M]](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.8.2)|2019-08-26|Table|Added an icon indicating whether a table field is indexed. Number of rows can now be counted (only with Z_THEO_READ_TABLE) or estimated (using other function modules) in the editor GUI.([Release note](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.8.2))|
     |1.8.1 [L]|2019-08-22|Table|Updated Z_THEO_READ_TABLE to version 2.1|
     |1.8.0 [M]|2019-08-20|Table|Updated Z_THEO_READ_TABLE to version 2.0|
     |1.7.4 [L]|2019-08-15|ERPConnect|Updated to 6.7.3.6|
@@ -1455,9 +1455,9 @@ Tabs:
     |1.6.0 [M]|2019-08-02|ODP|Added support for recovering the previous delta run |
     |1.5.10 [L]|2019-08-01|Table|Added UI to enable conversion routines|
     |1.5.9 [M]|2019-07-30|ODP|Improved exception handling and logging in case of errors|
-    |[1.5.8 [M]](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.5.8.html)|2019-07-30|Table|Improvements for detecting possible joins and bug fixes related to editing joins([Release note](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.5.8.html))|
+    |[1.5.8 [M]](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.5.8)|2019-07-30|Table|Improvements for detecting possible joins and bug fixes related to editing joins([Release note](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.5.8))|
     |1.5.7 [L]|2019-07-29|ERPConnect|Updated ERPConnect 6.6.2.0|
-    |[1.5.6 [M]](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.5.6.html)|2019-07-29|ODP|Fixed two bugs related to columns in the GUI of ODP extractions([Release note](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.5.6.html))|
+    |[1.5.6 [M]](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.5.6)|2019-07-29|ODP|Fixed two bugs related to columns in the GUI of ODP extractions([Release note](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.5.6))|
     |1.5.5 [M]|2019-07-25|ODP|Fixed a bug that would reset the TransferDataOnDeltaInit property to false|
     |1.5.4 [L]|2019-07-17|ERPConnect|Updated to 6.6.1.5|
     |1.5.3 [M]|2019-07-17|Table|Improved error handling for value access / conversion|
