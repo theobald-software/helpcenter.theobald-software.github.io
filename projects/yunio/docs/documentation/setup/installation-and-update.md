@@ -54,7 +54,7 @@ The list below shows several important files that are placed into the default di
 | yunIOLicense.json | License file with information about the component and runtime. |
 
 
-### New Installation and Update																																										   
+### Update																																										   
 
 !!! warning "Warning! Data loss:"
     System updates or changes can restrict software functionalities and this may lead to data loss.
@@ -77,12 +77,25 @@ knowledge base to check, if an update is needed.
     Subscribe via [email](mailto:info@theobald-software.com) to Theobald Software’s regular newsletter that
     informs about changes in the version history and release notes.
 
+### Access to the yunIO Designer
+
+To access the yunIO Designer, enter the designer-URL in a [web browser](https://help.theobald-software.com/en/yunio/introduction/requirements#supported-web-browsers).<br>
+The URL pattern to access the yunIO Designer is `http(s)://[host or IP address]:[port]`.<br>
+- If the yunIO service runs on a local server, replace `[host]` with *localhost*.
+- If the yunIO service does not run on the same machine as the browser, replace `[host]` with the name or IP address of the host on which the service runs.
+- After the installation the yunIO Designer is accessible under the default port 8077. <br>
+You can configure the port under *Settings* in the yunIO Designer.
+
+!!! note
+    Make sure that the *yunIO* service is running and that the default port 8077 is not blocked by your firewall.
+
 ### Version Number
 
 To check your current version number, navigate to **About** menu in the yunIO Designer. <br>
 The version number is displayed next to the page title.
 
 ![Demo_License](../../assets/images/yunio/About.png){:class="img-responsive"}
+
 
 ****
 #### Related links

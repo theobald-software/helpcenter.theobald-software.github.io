@@ -3,37 +3,37 @@ title: Getting Started
 description: Getting Started
 hide:
   - navigation
+  - tags
 ---
 
+<div class="grid cards" markdown>
 
-The following section gives a general introduction to working with yunIO. 
-The information described in the following section is a prerequisite for all subsequent sections.
+-   ![img](site:assets/images/logos/theo-thumbs.png){ .lg .middle width="30px"} This section shows how to install and set up yunIO for the first time.
 
-### Starting yunIO
+</div>
 
-To access the yunIO Designer, enter the designer-URL in a [web browser](https://help.theobald-software.com/en/yunio/introduction/requirements#supported-web-browsers).<br>
-The URL pattern to access the yunIO Designer is `http(s)://[host]:[port]`.<br>
-- If the yunIO service runs on a local server, replace `[host]` with *localhost*.
-- If the yunIO service does not run on the same machine as the browser, replace `[host]` with the name or IP address of the host on which the service runs.
-- After the installation the yunIO Designer is accessible under the default port 8077. <br>
-You can configure the port under *Settings* in the yunIO Designer.
+### Installation
 
-!!! note
-    Make sure that the *yunIO* service is running and that the default port 8077 is not blocked by your firewall.
+1. [Download](https://theobald-software.com/en/download-trial/){ data-preview } a 30 days trial version of yunIO.
+2. Run the yunIO executable (yunIOSetup.exe) to install yunIO.
+For information on system requirements, see [Requirements](documentation/setup/requirements.md).
+3. Make sure that the Windows YunIO Service is running and that the default port 8077 is not blocked by your firewall.<br>
+![yunio-windows-service](./assets/images/yunio/getting-started/yunio-windows-service.png){:class="img-responsive" }
+4. Open the yunIO Designer at `http://localhost:8077/` in a [web browser](https://help.theobald-software.com/en/yunio/introduction/requirements#supported-web-browsers) of your choice.<br>
+If the yunIO service does not run on the same machine as the browser, replace `localhost` with the name or IP address of the host on which the service runs.
 
+For more information, see [Installation](documentation/setup/installation.md/#setup).
 
-### Adding an SAP Connection
+### Connect to SAP
 
-In the *Connection* menu you can add new SAP connections and edit or delete existing connections.
-
-1. To add a new SAP connection, click **[Add Connection]** (1).<br>
-To edit an existing connection, click X...X next to the connection you want to edit.
-![web-ui](./assets/images/yunio/web-ui.png){:class="img-responsive"}
-2. Enter the connection information of your SAP system under *System* (2).<br>
+1. Navigate to the :yunio-nav-connections: *Connections* menu in the left side navigation of the Designer.
+2. Click **[Add Connection]** (1) to create a new SAP connection.<br>
+![web-ui](./assets/images/yunio/getting-started/add-connection.png){:class="img-responsive"}
+3. Enter the connection information of your SAP system under *System* (2).<br>
 ![yunIO-connection](./assets/images/yunio/yunio-connections.png){:class="img-responsive" width="750px" }
-3. Enter your SAP credentials under *Authentication* (3).
-4. To validate the connection parameters, click **[Test Connection]** (4). A window with a status message opens.
-5. Click **[Save]** to save the connection settings. <br>
+4. Enter your SAP credentials under *Authentication* (3).
+5. To validate the connection parameters, click **[Test Connection]** (4). A window with a status message opens.
+6. Click **[Save]** to save the connection settings. <br>
 
 For more detailed information on establishing an SAP connection, see [SAP Connection](./sap-connection).
 
