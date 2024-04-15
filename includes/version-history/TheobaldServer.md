@@ -1,27 +1,27 @@
 |Version|Date    |Component   |Description|
 |:-----:|:------:|:----------:|:----------|
-|[4.2.0 [L]](https://helpcenter.theobald-software.com/release-notes/TheobaldServer-4.2.0.html)|2024-04-11|General|Implement subdirectory support for the run endpoint base ([Release note](https://helpcenter.theobald-software.com/release-notes/TheobaldServer-4.2.0.html))|
+|[4.2.0 [L]](https://helpcenter.theobald-software.com/release-notes/TheobaldServer-4.2.0)|2024-04-11|General|Implement subdirectory support for the run endpoint base ([Release note](https://helpcenter.theobald-software.com/release-notes/TheobaldServer-4.2.0))|
 |4.1.3 [L]|2024-02-28|General|Fixed a bug where retrying to write the extractions status information would abort preemptively.|
 |4.1.2 [L]|2024-02-19|General|Fixed a bug where cloning an extraction would not be possible due to the required item privilege being too high.|
 |4.1.1 [L]|2024-02-13|General|Fixed legacy update type runtime parameter for DeltaQ|
-|[4.1.0 [L]](https://helpcenter.theobald-software.com/release-notes/TheobaldServer-4.1.0.html)|2024-02-12|General|Implemented subdirectory support for the stores([Release note](https://helpcenter.theobald-software.com/release-notes/TheobaldServer-4.1.0.html))|
+|[4.1.0 [L]](https://helpcenter.theobald-software.com/release-notes/TheobaldServer-4.1.0)|2024-02-12|General|Implemented subdirectory support for the stores([Release note](https://helpcenter.theobald-software.com/release-notes/TheobaldServer-4.1.0))|
 |4.0.29 [H]|2024-02-08|General|Fixed an issue that caused the result cache to be used independently from caller supplied SAP credentials|
 |4.0.28 [L]|2024-02-05|General|Fixed a bug where an extractions directory would not be deleted entirely when deleting the extraction in the designer. Fixed the error message sent by the HTTP-server if supplied parameters are ambiguous.|
 |4.0.27 [L]|2024-02-02|General|Fixed a bug in the HTTP server causing the request to hang and massive memory usage.|
-|[4.0.26 [L]](https://helpcenter.theobald-software.com/release-notes/TheobaldServer-4.0.26.html)|2024-01-31|General|Fixed multiple run information and cache issues.([Release note](https://helpcenter.theobald-software.com/release-notes/TheobaldServer-4.0.26.html))|
+|[4.0.26 [L]](https://helpcenter.theobald-software.com/release-notes/TheobaldServer-4.0.26)|2024-01-31|General|Fixed multiple run information and cache issues.([Release note](https://helpcenter.theobald-software.com/release-notes/TheobaldServer-4.0.26))|
 |4.0.25 [M]|2024-01-25|General|Fixed DeltaQ update mode runtime parameter handling|
 |4.0.24 [L]|2024-01-24|General|Fixed a bug where cleaning up old cache entries would not correctly purge all obsolete entries.|
 |4.0.23 [L]|2024-01-23|General|Fixed a bug causing authentication in the webserver to fail when the username had different casing.|
 |4.0.22 [L]|2024-01-10|General|Fixed a bug where the server would try to read the SAP password from json file even though SSO is enabled and fail if none is found. Fixed a bug where destination settings would not be applied correctly when switching the parameter with the "destination" parameter in a web API call.|
 |4.0.21 [L]|2023-12-18|General|Fixed authentication logic for extractions when using source impersonation with Kerberos authentication.|
 |4.0.20 [L]|2023-12-04|General|Added the mapping for the result columns custom order file and its logic for column transformation in runtime|
-|[4.0.19 [L]](https://helpcenter.theobald-software.com/release-notes/TheobaldServer-4.0.19.html)|2023-11-24|General|Fixes for HTTP based Windows authentication and Table runtime parameters and logging improvements for extraction runs.([Release note](https://helpcenter.theobald-software.com/release-notes/TheobaldServer-4.0.19.html))|
+|[4.0.19 [L]](https://helpcenter.theobald-software.com/release-notes/TheobaldServer-4.0.19)|2023-11-24|General|Fixes for HTTP based Windows authentication and Table runtime parameters and logging improvements for extraction runs.([Release note](https://helpcenter.theobald-software.com/release-notes/TheobaldServer-4.0.19))|
 |4.0.18 [L]|2023-11-24|General|Fixed a bug causing failed extractions when using Not Assigned (#) member in MDX cube filter.|
 |4.0.17 [L]|2023-11-20|General|Fixed a bug where a cache entry would not be invalidated when aborting the extraction. Fixed a bug where the cache entries for an extraction would not get deleted due to wrong directory operations.|
 |4.0.16 [L]|2023-11-15|General|Fixed a bug causing cache entries of failed extractions to not be invalidated correctly. Fixed the timestamp format for script expression of `Extraction.Timestamp`.|
 |4.0.15 [L]|2023-11-09|General|Fixed a bug where runtime parameters were not passed on to the destination.|
 |4.0.14 [L]|2023-11-03|General|Only override SNC library path for Designer connections, if environment variable is set|
-|[4.0.13 [L]](https://helpcenter.theobald-software.com/release-notes/TheobaldServer-4.0.13.html)|2023-10-27|General|Small fixes and improvements to error handling, scripting and logging.([Release note](https://helpcenter.theobald-software.com/release-notes/TheobaldServer-4.0.13.html))|
+|[4.0.13 [L]](https://helpcenter.theobald-software.com/release-notes/TheobaldServer-4.0.13)|2023-10-27|General|Small fixes and improvements to error handling, scripting and logging.([Release note](https://helpcenter.theobald-software.com/release-notes/TheobaldServer-4.0.13))|
 |4.0.12 [L]|2023-10-24|General|Fixed a bug that caused custom runtime parameter values to not be passed to the Query extractor.|
 |4.0.11 [L]|2023-10-13|General|Fix & improve parameter output processing|
 |4.0.10 [L]|2023-10-13|General|Fixed a bug, where the runtime would hang if an error happened at a specific time. Improved logging for certain errors.|
@@ -34,11 +34,11 @@
 |4.0.3 [L]|2023-09-12|General|Fixed the value of the 'WWW-Authenticate' header for the extraction run endpoint.|
 |4.0.2 [L]|2023-09-11|General|Fixed inconsistencies in the authentication logic and connection handling|
 |4.0.1 [L]|2023-09-11|General|Fixed a bug which caused failed extractions to contain in "running" state.|
-|[4.0.0 [L]](https://helpcenter.theobald-software.com/release-notes/TheobaldServer-4.0.0.html)|2023-09-07|General|The new runtime is now feature complete and generally available.([Release note](https://helpcenter.theobald-software.com/release-notes/TheobaldServer-4.0.0.html))|
+|[4.0.0 [L]](https://helpcenter.theobald-software.com/release-notes/TheobaldServer-4.0.0)|2023-09-07|General|The new runtime is now feature complete and generally available.([Release note](https://helpcenter.theobald-software.com/release-notes/TheobaldServer-4.0.0))|
 |3.9.3 [L]|2023-09-05|General|Fixed a bug where the new runtime would use the wrong extraction method for BAPI extractions.|
 |3.9.2 [L]|2023-08-14|General|Fixed a bug where parameters supplied as JSON to table extractions would be ignored. Reworked the license check of the new runtime.|
 |3.9.1 [L]|2023-08-03|General|Fixed an error when wrapping up transaction extraction execution.|
-|[3.9.0 [L]](https://helpcenter.theobald-software.com/release-notes/TheobaldServer-3.9.0.html)|2023-08-02|General|Fixes and refactoring for new runtime. Fixes for CORS and error handling in HTTP server.([Release note](https://helpcenter.theobald-software.com/release-notes/TheobaldServer-3.9.0.html))|
+|[3.9.0 [L]](https://helpcenter.theobald-software.com/release-notes/TheobaldServer-3.9.0)|2023-08-02|General|Fixes and refactoring for new runtime. Fixes for CORS and error handling in HTTP server.([Release note](https://helpcenter.theobald-software.com/release-notes/TheobaldServer-3.9.0))|
 |3.8.8 [M]|2023-08-02|General|Non-admin users can now set their own password|
 |3.8.6 [L]|2023-07-24|General|Fixed a bug which caused the server to not attach the www-authenticate header on invalid credentials.|
 |3.8.5 [L]|2023-07-07|General|Fixed CORS for specific domains|
@@ -46,7 +46,7 @@
 |3.8.3 [L]|2023-07-06|General|Fix auth / cors sequence, logic|
 |3.8.2 [L]|2023-06-30|General|Fix clean up logic for HTTP bytes responses.|
 |3.8.1 [L]|2023-06-22|General|Fixed a bug where the authorization procedure for AD-users would not use the correct identifier.|
-|[3.8.0 [L]](https://helpcenter.theobald-software.com/release-notes/TheobaldServer-3.8.0.html)|2023-06-06|General|Added common base for web worker, HTTP server backend and running extractions. An accompanying framework for writing tests for this stack was added as well. Various bug fixes.([Release note](https://helpcenter.theobald-software.com/release-notes/TheobaldServer-3.8.0.html))|
+|[3.8.0 [L]](https://helpcenter.theobald-software.com/release-notes/TheobaldServer-3.8.0)|2023-06-06|General|Added common base for web worker, HTTP server backend and running extractions. An accompanying framework for writing tests for this stack was added as well. Various bug fixes.([Release note](https://helpcenter.theobald-software.com/release-notes/TheobaldServer-3.8.0))|
 |3.7.0 [L]|2023-06-01|General|Common log cleanup base|
 |3.6.20 [L]|2023-05-05|General|Fixed a bug where the requested resource of a HTTP request would not get decoded properly.|
 |3.6.19 [L]|2023-04-27|General|Improved logging for Logon Ticket SSO|
@@ -57,12 +57,12 @@
 |3.6.14 [H]|2023-03-23|General|Security fix: Negotiate authentication is required for all requests instead of only for the first request of each TCP connection|
 |3.6.13 [L]|2023-03-21|General|Fixed a bug, where the WWW-Authenticate HTTP header would be sent anymore.|
 |3.6.12 [M]|2023-03-09|General|Transaction: Fixed a bug that caused errors on special compression scenarios|
-|[3.6.11 [M]](https://helpcenter.theobald-software.com/release-notes/TheobaldServer-3.6.11.html)|2023-03-07|General|Custom authentication related security fixes and improvements.([Release note](https://helpcenter.theobald-software.com/release-notes/TheobaldServer-3.6.11.html))|
+|[3.6.11 [M]](https://helpcenter.theobald-software.com/release-notes/TheobaldServer-3.6.11)|2023-03-07|General|Custom authentication related security fixes and improvements.([Release note](https://helpcenter.theobald-software.com/release-notes/TheobaldServer-3.6.11))|
 |3.6.10 [L]|2023-03-06|General|Fix a bug where the HTTP server would not attach CORS headers on failed authentication attempts. Rework the handling of parameters in the new runtime.|
 |3.6.9 [L]|2023-02-23|General|License check for number of extractions|
 |3.6.8 [L]|2023-02-21|General|RPC bapi / report metadata|
 |3.6.7 [L]|2023-02-18|General|Fix for SNC with Windows impersonation (broken since 3.6.0)|
-|[3.6.6 [L]](https://helpcenter.theobald-software.com/release-notes/TheobaldServer-3.6.6.html)|2023-02-09|General|Logging consistency and SAP authentication fixes for the new runtime.([Release note](https://helpcenter.theobald-software.com/release-notes/TheobaldServer-3.6.6.html))|
+|[3.6.6 [L]](https://helpcenter.theobald-software.com/release-notes/TheobaldServer-3.6.6)|2023-02-09|General|Logging consistency and SAP authentication fixes for the new runtime.([Release note](https://helpcenter.theobald-software.com/release-notes/TheobaldServer-3.6.6))|
 |3.6.5 [L]|2023-02-01|General|Report Exchange|
 |3.6.4 [L]|2023-01-25|General|experimental rpc exchange: get-license-status|
 |3.6.3 [L]|2023-01-21|General|Using logged in Designer user for server RFC connection test|
