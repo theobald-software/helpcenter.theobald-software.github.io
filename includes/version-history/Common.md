@@ -1,5 +1,6 @@
 |Version|Date    |Component   |Description|
 |:-----:|:------:|:----------:|:----------|
+|2.23.18 [L]|2024-02-15|WPF|Added input dialog|
 |2.23.17 [L]|2024-01-26|Licensing|Removed internal references of defunct products (XtractPPV, XtractQV, XtractRS) and destinations (AlteryxConnect, GoodData, MicroStrategy, ODataAtom, PowerBI, TableauConnector, Teradata, Vertica) from code base|
 |2.23.16 [L]|2024-01-23|General|Allow for dynamic buffers in encoding classes. Add helper functions for ignoring exceptions.|
 |2.23.15 [L]|2023-10-19|Licensing|Removed Hadoop from license library|
@@ -18,7 +19,7 @@
 |2.23.1 [L]|2023-04-26|General|Added Update-Reminder feature|
 |2.23.0 [L]|2023-03-29|Licensing|Internal changes due to changed licensing model for TableCdc component.|
 |2.22.1 [L]|2023-03-23|General|VC++ 2013 setup was replaced by directly used DLLs (msvcp120.dll and msvcr120.dll)|
-|[2.22.0 [L]](https://kb.theobald-software.com/release-notes/Common-2.22.0.html)|2023-03-15|General|Added ByteSerialization and ByteBufferManager classes([Release note](https://kb.theobald-software.com/release-notes/Common-2.22.0.html))|
+|[2.22.0 [L]](https://helpcenter.theobald-software.com/release-notes/Common-2.22.0.html)|2023-03-15|General|Added ByteSerialization and ByteBufferManager classes([Release note](https://helpcenter.theobald-software.com/release-notes/Common-2.22.0.html))|
 |2.21.15 [L]|2023-03-07|General|Increased the number of iterations for PBKDF2. Implemented constant time byte array comparison. Added test cases for constant time array comparison.|
 |2.21.14 [L]|2023-02-15|General|Logging cleanup & refactoring|
 |2.21.13 [L]|2023-01-31|General|Method for JSON serialization of empty array|
@@ -89,12 +90,12 @@
 |2.14.9 [L]|2021-03-31|Licensing|Added sources limit.|
 |2.14.8 [L]|2021-03-23|General|Some additions for reading/writing JSON and file I/O|
 |2.14.7 [L]|2021-03-02|General|CsvReader overhaul|
-|[2.14.6 [L]](https://kb.theobald-software.com/release-notes/Common-2.14.6.html)|2021-02-22|WPF|Introduced new messaging system([Release note](https://kb.theobald-software.com/release-notes/Common-2.14.6.html))|
+|[2.14.6 [L]](https://helpcenter.theobald-software.com/release-notes/Common-2.14.6.html)|2021-02-22|WPF|Introduced new messaging system([Release note](https://helpcenter.theobald-software.com/release-notes/Common-2.14.6.html))|
 |2.14.5 [L]|2021-02-10|General|Added custom Number struct and ReadNumber method to JsonReader|
 |2.14.4 [L]|2021-01-28|Licensing|Added new License Destination for Sql Server Reporting Services|
 |2.14.3 [L]|2021-01-22|General|7Bit encoding stream extensions for i32 and BigInteger|
 |2.14.2 [L]|2021-01-20|General|Fixed a bug where the CSVReader would not correctly signal a new line, Fixed a bug where the CSVReader would ignore a line break after a quoted cell|
-|[2.14.1 [L]](https://kb.theobald-software.com/release-notes/Common-2.14.1.html)|2021-01-19|General|Fix for writing TimeSpan on JsonWriter class([Release note](https://kb.theobald-software.com/release-notes/Common-2.14.1.html))|
+|[2.14.1 [L]](https://helpcenter.theobald-software.com/release-notes/Common-2.14.1.html)|2021-01-19|General|Fix for writing TimeSpan on JsonWriter class([Release note](https://helpcenter.theobald-software.com/release-notes/Common-2.14.1.html))|
 |2.14.0 [L]|2021-01-15|General|CsvReader class which implements reading CSV data as specified in RFC4180. (Beta)|
 |2.13.12 [M]|2021-01-13|General|Fix for ambiguous timestamps during daylight saving time transition|
 |2.13.11 [L]|2021-01-07|General|JsonReader ReadBooleans() and ReadDoubles() added for arrays|
@@ -129,7 +130,7 @@
 |2.4.0 [M]|2020-02-04|WPF|Updated to .NET Framework 4.7.2|
 |2.3.1 [H]|2020-01-16|General|RemoveControlCharacters() accidentally removed everything except ASCII since version 2.2.1|
 |2.3.0 [M]|2019-12-18|General|Moved log splitting to LoggerMulti to properly support XU config / web server logs|
-|[2.2.4 [L]](https://kb.theobald-software.com/release-notes/Common-2.2.4.html)|2019-11-26|General|New DeleteFile method in IOHelper([Release note](https://kb.theobald-software.com/release-notes/Common-2.2.4.html))|
+|[2.2.4 [L]](https://helpcenter.theobald-software.com/release-notes/Common-2.2.4.html)|2019-11-26|General|New DeleteFile method in IOHelper([Release note](https://helpcenter.theobald-software.com/release-notes/Common-2.2.4.html))|
 |2.2.3 [M]|2019-11-15|General|Updated gacutil to 4.7.2558.0|
 |2.2.2 [M]|2019-11-15|General|Updated Installer for XIS/XRS|
 |2.2.1 [L]|2019-11-15|General|RemoveControlCharacters now also removes chars from the C1 range|
