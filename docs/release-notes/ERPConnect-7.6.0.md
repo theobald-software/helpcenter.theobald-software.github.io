@@ -1,3 +1,6 @@
+---
+layout: releaseNotes
+---
 
 # Changes to R3Connection
 The following properties/methods have been removed.
