@@ -43,10 +43,10 @@ If yunIO is installed on a local server environment, a Gateway instance of your 
 yunIO offers the following {{ components }} to cover a wide range of integration scenarios.
 
 
-|  Functionality / SAP Objects  |  Description   |  
+|  {{ Component }}  |  Description   |  
 |----------|-------------|
-| [**Function Module / BAPI**](./bapis-and-function-modules.md) | Execute BAPIs and Function Modules. |
-| [**Report**](./report.md) | Extract SAP ABAP reports. | 
-| [**SAP Table or View**](./table-and-views.md) | Extract data from SAP tables and views. |
-| [**Transaction**](./transactions.md) | Execute SAP transactions without SAP GUI interaction. |
+| [{{ bapi }}](./bapis-and-function-modules.md) | Execute BAPIs and Function Modules. |
+| [{{ report }}](./report.md) | Extract SAP ABAP reports. | 
+| [{{ table }}](./table-and-views.md) | Extract data from SAP tables and views. |
+| [{{ transaction }}](./transactions.md) | Execute SAP transactions without SAP GUI interaction. |
 

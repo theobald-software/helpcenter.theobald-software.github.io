@@ -63,7 +63,7 @@ You can download the SAP profiles and upload them to your SAP system:
     If you still get an authorization error, ask SAP Basis to record an ST01-/ or SU53-authorization trace in SAP. This trace shows which authorizations objects are missing.
 
 ### General authorization objects
-The following objects are required to establish a connection to SAP. 
+The following authorization objects are required to establish a connection to SAP. 
 
 ``` title="Necessary SAP authorizations"
 S_RFC            RFC_TYPE=FUGR; RFC_NAME=SYST; ACTVT=16
