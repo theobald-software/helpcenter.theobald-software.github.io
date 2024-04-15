@@ -1,10 +1,15 @@
 |Version|Date    |Component   |Description|
 |:-----:|:------:|:----------:|:----------|
+|[6.3.0 [L]](https://helpcenter.theobald-software.com/release-notes/BOARDConnector-6.3.0.html)|2024-04-11|Server|Introduce new endpoint to run/start extractions ([Release note](https://helpcenter.theobald-software.com/release-notes/BOARDConnector-6.3.0.html))|
+|6.2.3 [L]|2024-02-27|BW Cube|Fixed a bug in the config converter that caused broken key figures and custom column order for extractions originally created in version 2.11.0 and before.|
+|6.2.2 [M]|2024-02-19|Server|Hotfix: Fixed the format for `duration` and `timestamp` properties in the config and logs API. The issues were introduced in 6.2.|
+|6.2.1 [H]|2024-02-16|Server|Reverted a change in 6.2.0, where extraction names in Config-API response would be erroneously written as array|
+|[6.2.0 [L]](https://helpcenter.theobald-software.com/release-notes/BOARDConnector-6.2.0.html)|2024-02-13|Server|Implemented a new log endpoint with responses in JSON format.  Fixed bugs in the web server. ([Release note](https://helpcenter.theobald-software.com/release-notes/BOARDConnector-6.2.0.html))|
 |6.1.2 [L]|2024-01-30|General|Fixed an error that caused CSV output to fail when an empty result set (no rows or columns) was extracted|
 |6.1.1 [L]|2024-01-25|BW Cube|Cube config converter: improved logging of warnings and fix for failing conversion of extractions created in Board Connector 2.11.4 or lower.|
-|[6.1.0 [L]](https://kb.theobald-software.com/release-notes/BOARDConnector-6.1.0.html)|2023-12-04|General|Added the result columns custom order feature([Release note](https://kb.theobald-software.com/release-notes/BOARDConnector-6.1.0.html))|
+|[6.1.0 [L]](https://helpcenter.theobald-software.com/release-notes/BOARDConnector-6.1.0.html)|2023-12-04|General|Added the result columns custom order feature([Release note](https://helpcenter.theobald-software.com/release-notes/BOARDConnector-6.1.0.html))|
 |6.0.1 [L]|2023-11-29|General|Fixed a bug where the server would erroneously detect a version from version.txt as invalid and not start.|
-|[6.0.0 [L]](https://kb.theobald-software.com/release-notes/BOARDConnector-6.0.0.html)|2023-11-15|General|*BREAKING CHANGES:* Please see release notes for more information.([Release note](https://kb.theobald-software.com/release-notes/BOARDConnector-6.0.0.html))|
+|[6.0.0 [L]](https://helpcenter.theobald-software.com/release-notes/BOARDConnector-6.0.0.html)|2023-11-15|General|*BREAKING CHANGES:* Please see release notes for more information.([Release note](https://helpcenter.theobald-software.com/release-notes/BOARDConnector-6.0.0.html))|
 |5.14.0 [L]|2023-08-22|DeltaQ|Added the new DeltaQ component|
 |5.13.6 [L]|2023-08-16|General|Fixed a bug where validation of a valid license file might fail.|
 |5.13.5 [M]|2023-08-07|DeltaQ|Fixed conversion errors for some data types|
@@ -12,21 +17,21 @@
 |5.13.3 [L]|2023-08-03|General|Filterboxes will now be cleared after disconnecting.|
 |5.13.2 [L]|2023-06-30|General|Added filterboxes in the designer for name, type, source and destination. Changed initial sorting order for dates, removed the old filter tool and implemented right-click option in the datagrid to add keywords to several selected extractions|
 |5.13.1 [L]|2023-06-22|Server|Fixed a bug where logging into the Designer with a valid AD-User would result in an authorization error.|
-|[5.13.0 [L]](https://kb.theobald-software.com/release-notes/BOARDConnector-5.13.0.html)|2023-04-27|Hierarchy|New Hierarchy Extractor - POSSIBLE BREAKING CHANGES for Hierarchy extractions([Release note](https://kb.theobald-software.com/release-notes/BOARDConnector-5.13.0.html))|
+|[5.13.0 [L]](https://helpcenter.theobald-software.com/release-notes/BOARDConnector-5.13.0.html)|2023-04-27|Hierarchy|New Hierarchy Extractor - POSSIBLE BREAKING CHANGES for Hierarchy extractions([Release note](https://helpcenter.theobald-software.com/release-notes/BOARDConnector-5.13.0.html))|
 |5.12.3 [L]|2023-04-26|General|Added update reminder that will periodically show a pop up asking for an update.|
 |5.12.2 [L]|2023-04-20|Designer|Added hotkey (F1) to open online help of current window|
 |5.12.1 [L]|2023-03-31|Setup|Setup now checks if there are any running processes and offers option to abort setup.|
 |5.12.0 [H]|2023-03-29|TableCDC|Table CDC is now generally available.|
 |5.11.7 [L]|2023-03-10|TableCDC|Table CDC: Log table size can now be limited.|
 |5.11.6 [L]|2023-03-08|BW Cube|Fix for column order changes in MDX mode when adding filter selections or selecting and deselecting a dimension.|
-|[5.11.5 [M]](https://kb.theobald-software.com/release-notes/BOARDConnector-5.11.5.html)|2023-03-07|Security|Custom authentication related security fixes and improvements.([Release note](https://kb.theobald-software.com/release-notes/BOARDConnector-5.11.5.html))|
+|[5.11.5 [M]](https://helpcenter.theobald-software.com/release-notes/BOARDConnector-5.11.5.html)|2023-03-07|Security|Custom authentication related security fixes and improvements.([Release note](https://helpcenter.theobald-software.com/release-notes/BOARDConnector-5.11.5.html))|
 |5.11.4 [L]|2023-03-06|General|New EULA|
 |5.11.3 [L]|2023-02-10|General|Fix extraction cache getting checked despite being disabled. Fix possible race condition in the RPC worker.|
 |5.11.2 [L]|2023-02-10|General|Removed "Support Client" from Help menus. Added extraction type (Cube, Table, ...) being executed in extraction and server logs|
 |5.11.1 [L]|2023-01-31|General|Fix a bug where empty lists in column transformation information would not correctly be serialized to JSON.|
 |5.11.0 [L]|2023-01-16|General|New conversion architecture (internal changes)|
 |5.10.0 [H]|2023-01-16|TableCDC|Added Table CDC extractor (preview)|
-|[5.9.0 [L]](https://kb.theobald-software.com/release-notes/BOARDConnector-5.9.0.html)|2023-01-10|General|Removed config conversion of version 2.x([Release note](https://kb.theobald-software.com/release-notes/BOARDConnector-5.9.0.html))|
+|[5.9.0 [L]](https://helpcenter.theobald-software.com/release-notes/BOARDConnector-5.9.0.html)|2023-01-10|General|Removed config conversion of version 2.x([Release note](https://helpcenter.theobald-software.com/release-notes/BOARDConnector-5.9.0.html))|
 |5.8.1 [L]|2022-10-26|Server|Fixed a bug where extractions would run into an error if the source or destination parameter is set.|
 |5.8.0 [M]|2022-09-08|OHS|New OHS component (with Table extraction mode and support for BW/4HANA 2.0)|
 |5.7.3 [H]|2022-08-04|BAPI|Fix for structures with includes, please refresh metadata|
@@ -38,7 +43,7 @@
 |5.6.1 [L]|2022-05-17|Designer|Fix for change source window call|
 |5.6.0 [L]|2022-04-28|Server|Enabled JSON metadata API|
 |5.5.1 [M]|2022-04-07|BW Cube|Now allowing extractions without measure selections in MDX mode. Added support for additional options in interval/complex BEx variable selections.|
-|[5.5.0 [M]](https://kb.theobald-software.com/release-notes/BOARDConnector-5.5.0.html)|2022-04-04|BW Cube|New BWCube extractor (breaking)([Release note](https://kb.theobald-software.com/release-notes/BOARDConnector-5.5.0.html))|
+|[5.5.0 [M]](https://helpcenter.theobald-software.com/release-notes/BOARDConnector-5.5.0.html)|2022-04-04|BW Cube|New BWCube extractor (breaking)([Release note](https://helpcenter.theobald-software.com/release-notes/BOARDConnector-5.5.0.html))|
 |5.4.0 [M]|2022-03-31|Table Join|Removed deprecated TableJoin component (JOINS are still supported by the Table component)|
 |5.3.4 [L]|2022-03-28|Designer|About window was refactored|
 |5.3.3 [L]|2022-03-25|General|Added upload check script in order to confirm if the setup file has the expected version|
@@ -46,14 +51,14 @@
 |5.3.1 [M]|2022-03-08|General|Fixed an issue where system clock changes could cause errors |
 |5.3.0 [M]|2022-02-17|BAPI|Reworked BAPI component|
 |5.2.0 [M]|2022-02-15|General|Added support for certificate SSO and reworked source details GUI|
-|[5.1.1 [L]](https://kb.theobald-software.com/release-notes/BOARDConnector-5.1.1.html)|2022-02-15|Designer|Various fixes and improvements following the 5.1.0 release.([Release note](https://kb.theobald-software.com/release-notes/BOARDConnector-5.1.1.html))|
-|[5.1.0 [L]](https://kb.theobald-software.com/release-notes/BOARDConnector-5.1.0.html)|2022-02-08|Designer|Make sure to update designer AND server!([Release note](https://kb.theobald-software.com/release-notes/BOARDConnector-5.1.0.html))|
+|[5.1.1 [L]](https://helpcenter.theobald-software.com/release-notes/BOARDConnector-5.1.1.html)|2022-02-15|Designer|Various fixes and improvements following the 5.1.0 release.([Release note](https://helpcenter.theobald-software.com/release-notes/BOARDConnector-5.1.1.html))|
+|[5.1.0 [L]](https://helpcenter.theobald-software.com/release-notes/BOARDConnector-5.1.0.html)|2022-02-08|Designer|Make sure to update designer AND server!([Release note](https://helpcenter.theobald-software.com/release-notes/BOARDConnector-5.1.0.html))|
 |5.0.5 [M]|2022-01-18|General|Support for DLL licenses will be removed in June 2022. Please download your JSON licenses from my.theobald-software.com.|
 |5.0.4 [L]|2021-12-10|Designer|Fixed missing Theobald.Persistence.dll on designer-only installation|
 |5.0.3 [L]|2021-11-09|Table Join|TableJoin will be removed March 2022|
 |5.0.2 [M]|2021-11-09|Designer|Fix for license display and service restart (broken since 5.0)|
 |5.0.1 [M]|2021-10-20|Setup|Config conversion is now performed before starting service during setup|
-|[5.0.0 [M]](https://kb.theobald-software.com/release-notes/BOARDConnector-5.0.0.html)|2021-10-18|General|SAP passwords are encrypted in context of BC Service Account (breaking)([Release note](https://kb.theobald-software.com/release-notes/BOARDConnector-5.0.0.html))|
+|[5.0.0 [M]](https://helpcenter.theobald-software.com/release-notes/BOARDConnector-5.0.0.html)|2021-10-18|General|SAP passwords are encrypted in context of BC Service Account (breaking)([Release note](https://helpcenter.theobald-software.com/release-notes/BOARDConnector-5.0.0.html))|
 |4.9.4 [L]|2021-10-06|General|Fixed the preview mode setting, which was incorrectly disabled|
 |4.9.3 [M]|2021-09-30|Report|Fixed a bug (introduced in 4.9.0) where fetching metadata of report extractions did not work.|
 |4.9.2 [L]|2021-07-23|Designer|Designer startup logic refactored to WPF standards|
@@ -63,21 +68,21 @@
 |4.8.5 [L]|2021-04-26|Designer|Fix for General Settings window, in order to display cache configuration correctly|
 |4.8.4 [M]|2021-04-23|General|Fixed bug that prevented cache creation when datetime conversion was enabled|
 |4.8.3 [M]|2021-04-23|General|Fixed bug that prevented extraction's result to be cached when column level encryption was disabled|
-|[4.8.2 [M]](https://kb.theobald-software.com/release-notes/BOARDConnector-4.8.2.html)|2021-04-23|BOARD API|Fix for column name style in API's response on method GetExtractionMetadata(string)([Release note](https://kb.theobald-software.com/release-notes/BOARDConnector-4.8.2.html))|
+|[4.8.2 [M]](https://helpcenter.theobald-software.com/release-notes/BOARDConnector-4.8.2.html)|2021-04-23|BOARD API|Fix for column name style in API's response on method GetExtractionMetadata(string)([Release note](https://helpcenter.theobald-software.com/release-notes/BOARDConnector-4.8.2.html))|
 |4.8.1 [L]|2021-03-02|Designer|Fix for General Settings dialog, which had a checkbox for a feature, unavailable in BOARD Connector (column encryption)|
-|[4.8.0 [L]](https://kb.theobald-software.com/release-notes/BOARDConnector-4.8.0.html)|2021-01-28|General|Added support for column name styling and date converting([Release note](https://kb.theobald-software.com/release-notes/BOARDConnector-4.8.0.html))|
+|[4.8.0 [L]](https://helpcenter.theobald-software.com/release-notes/BOARDConnector-4.8.0.html)|2021-01-28|General|Added support for column name styling and date converting([Release note](https://helpcenter.theobald-software.com/release-notes/BOARDConnector-4.8.0.html))|
 |4.7.3 [L]|2021-01-27|Designer|Fix for Designer disconnection handling|
 |4.7.2 [L]|2021-01-25|Designer|Column filter and several other improvements and fixes for the main window|
 |4.7.1 [M]|2021-01-13|Server|Fix for ambiguous local timestamps during daylight saving time transition|
 |4.7.0 [L]|2020-11-11|Setup|New Setup|
-|[4.6.0 [M]](https://kb.theobald-software.com/release-notes/BOARDConnector-4.6.0.html)|2020-11-06|Server|Web server access can now be restricted to custom users([Release note](https://kb.theobald-software.com/release-notes/BOARDConnector-4.6.0.html))|
+|[4.6.0 [M]](https://helpcenter.theobald-software.com/release-notes/BOARDConnector-4.6.0.html)|2020-11-06|Server|Web server access can now be restricted to custom users([Release note](https://helpcenter.theobald-software.com/release-notes/BOARDConnector-4.6.0.html))|
 |4.5.5 [M]|2020-10-12|Table|New/removed/renamed columns are now properly updated in GUI during metadata refresh|
 |4.5.4 [M]|2020-10-06|ODP|Added 'extractDataOnDeltaInit' run parameter|
-|[4.5.3 [L]](https://kb.theobald-software.com/release-notes/BOARDConnector-4.5.3.html)|2020-09-29|Designer|New status bar([Release note](https://kb.theobald-software.com/release-notes/BOARDConnector-4.5.3.html))|
+|[4.5.3 [L]](https://helpcenter.theobald-software.com/release-notes/BOARDConnector-4.5.3.html)|2020-09-29|Designer|New status bar([Release note](https://helpcenter.theobald-software.com/release-notes/BOARDConnector-4.5.3.html))|
 |4.5.2 [L]|2020-09-11|Designer|New about window|
 |4.5.1 [L]|2020-09-07|ODP|Added 'subscription suffix' and 'update mode' run parameters|
 |4.5.0 [L]|2020-08-07|Designer|General WPF migration for BoardConnectorDesigner and other small UI improvements|
-|[4.4.11 [H]](https://kb.theobald-software.com/release-notes/BOARDConnector-4.4.11.html)|2020-07-31|Security|Enforcement of access restriction for the web server([Release note](https://kb.theobald-software.com/release-notes/BOARDConnector-4.4.11.html))|
+|[4.4.11 [H]](https://helpcenter.theobald-software.com/release-notes/BOARDConnector-4.4.11.html)|2020-07-31|Security|Enforcement of access restriction for the web server([Release note](https://helpcenter.theobald-software.com/release-notes/BOARDConnector-4.4.11.html))|
 |4.4.10 [L]|2020-07-03|Server|Fixed a bug where web requests with invalid URLs did not get a proper response|
 |4.4.9 [L]|2020-06-29|Designer|Fix for horizontal scrolling in log window|
 |4.4.8 [L]|2020-06-26|Designer|Main window's title fix|
@@ -100,17 +105,17 @@
 |4.0.13 [M]|2020-01-31|Server|Fix for extracting binary values via BAPI, OHS & Query (...unable to cast...)|
 |4.0.12 [L]|2019-12-19|DeltaQ|Fix for scripted expressions in selections|
 |4.0.11 [M]|2019-12-18|Server|Fix for server not accepting any connections after 99h runtime|
-|[4.0.10 [H]](https://kb.theobald-software.com/release-notes/BOARDConnector-4.0.10.html)|2019-12-03|ODP|Several fixes (Bugs introduced in 4.0.8.9)([Release note](https://kb.theobald-software.com/release-notes/BOARDConnector-4.0.10.html))|
+|[4.0.10 [H]](https://helpcenter.theobald-software.com/release-notes/BOARDConnector-4.0.10.html)|2019-12-03|ODP|Several fixes (Bugs introduced in 4.0.8.9)([Release note](https://helpcenter.theobald-software.com/release-notes/BOARDConnector-4.0.10.html))|
 |4.0.9 [L]|2019-11-14|Table Join|Fixes for creating deprecated Table Join extractions|
 |4.0.8 [M]|2019-11-05|Server|Fixed a bug that caused column names to be converted to UPPERCASE which caused problems for Hierarchy, Report and DeltaQ extractions|
-|[4.0.7 [M]](https://kb.theobald-software.com/release-notes/BOARDConnector-4.0.7.html)|2019-10-23|Table|Several fixes and improvements([Release note](https://kb.theobald-software.com/release-notes/BOARDConnector-4.0.7.html))|
+|[4.0.7 [M]](https://helpcenter.theobald-software.com/release-notes/BOARDConnector-4.0.7.html)|2019-10-23|Table|Several fixes and improvements([Release note](https://helpcenter.theobald-software.com/release-notes/BOARDConnector-4.0.7.html))|
 |4.0.6 [L]|2019-10-08|Server|Fixed a bug that caused the servers to crash when clients closed the connection before it could be handled|
 |4.0.5 [L]|2019-09-20|Server|Fixes for chaching results of Table (Compression FM) and ODP (non-Hierarchy)|
 |4.0.4 [M]|2019-09-06|Table|Fixed a bug that caused scripted expressions to not be evaluated for the preview|
 |4.0.3 [M]|2019-09-04|Server|Fixed a bug that could cause some of multiple simultaneous extraction starts to fail |
 |4.0.2 [L]|2019-08-20|General|Fix for converting date format of old (e. g. 2.12.6.1) extractions|
 |4.0.1 [M]|2019-08-12|General|Fixed config conversion for primary keys when upgrading from versions before 4.0|
-|[4.0.0 [M]](https://kb.theobald-software.com/release-notes/BOARDConnector-4.0.0.html)|2019-08-08|General|This release contains general changes, changes to the existing Table component as well as a new ODP component.([Release note](https://kb.theobald-software.com/release-notes/BOARDConnector-4.0.0.html))|
+|[4.0.0 [M]](https://helpcenter.theobald-software.com/release-notes/BOARDConnector-4.0.0.html)|2019-08-08|General|This release contains general changes, changes to the existing Table component as well as a new ODP component.([Release note](https://helpcenter.theobald-software.com/release-notes/BOARDConnector-4.0.0.html))|
 |3.7.8 [M]|2019-07-23|General|Updated NW RFC to 7.50 PL 4|
 |3.7.7 [L]|2019-06-25|General|Updated product icon|
 |3.7.6 [M]|2019-06-03|Server|Fixes & improvements for logging|
@@ -123,9 +128,9 @@
 |3.6.3 [L]|2019-05-08|Setup|Fixed FileNotFoundException that might occur after installing version 3.6.2.12.|
 |3.6.2 [M]|2019-04-18|Server|Fixed a bug where starting multiple extractions at the same time caused some of them to fail|
 |3.6.1 [L]|2019-03-29|Designer|UI improvements for Connect window|
-|[3.6.0 [M]](https://kb.theobald-software.com/release-notes/BOARDConnector-3.6.0.html)|2019-03-26|General|Updated to .NET Framework 4.6.1([Release note](https://kb.theobald-software.com/release-notes/BOARDConnector-3.6.0.html))|
+|[3.6.0 [M]](https://helpcenter.theobald-software.com/release-notes/BOARDConnector-3.6.0.html)|2019-03-26|General|Updated to .NET Framework 4.6.1([Release note](https://helpcenter.theobald-software.com/release-notes/BOARDConnector-3.6.0.html))|
 |3.5.1 [M]|2019-03-12|Server|Fix for aborting extractions and clearing result cache (Bug introduced in 3.5.0)|
-|[3.5.0 [M]](https://kb.theobald-software.com/release-notes/BOARDConnector-3.5.0.html)|2019-03-08|Security|Access to the web server can now be restricted to Active Directory users with Designer read access.([Release note](https://kb.theobald-software.com/release-notes/BOARDConnector-3.5.0.html))|
+|[3.5.0 [M]](https://helpcenter.theobald-software.com/release-notes/BOARDConnector-3.5.0.html)|2019-03-08|Security|Access to the web server can now be restricted to Active Directory users with Designer read access.([Release note](https://helpcenter.theobald-software.com/release-notes/BOARDConnector-3.5.0.html))|
 |3.4.0 [L]|2019-03-01|General|Removed support for 32 bit versions of Windows|
 |3.3.11 [M]|2019-02-18|Table|Updated Z_THEO_READ_TABLE to 1.10|
 |3.3.10 [M]|2019-02-13|Table|Reverted back to Z_THEO_READ_TABLE 1.9|
@@ -138,7 +143,7 @@
 |3.3.3 [L]|2019-01-23|Setup|Improved error message when Designer is still running during setup|
 |3.3.2 [M]|2019-01-23|Table|Updated Z_THEO_READ_TABLE to 1.4|
 |3.3.1 [L]|2019-01-23|Setup|Silent setup doesn't initiate config conversion|
-|[3.3.0 [L]](https://kb.theobald-software.com/release-notes/BOARDConnector-3.3.0.html)|2019-01-22|Table|Added ABAP code + transport request for Z_THEO_READ_TABLE, removed old ABAP files([Release note](https://kb.theobald-software.com/release-notes/BOARDConnector-3.3.0.html))|
+|[3.3.0 [L]](https://helpcenter.theobald-software.com/release-notes/BOARDConnector-3.3.0.html)|2019-01-22|Table|Added ABAP code + transport request for Z_THEO_READ_TABLE, removed old ABAP files([Release note](https://helpcenter.theobald-software.com/release-notes/BOARDConnector-3.3.0.html))|
 |3.2.13 [M]|2019-01-16|Report|Fix for empty column descriptions|
 |3.2.12 [M]|2018-11-22|Designer|Fixed links of question mark icons|
 |3.2.11 [M]|2018-11-22|Designer|Fix for Designer/Server communication ("The output byte buffer is too small to contain the encoded data")|
@@ -170,7 +175,7 @@
 |3.0.3 [L]|2018-07-05|Server|Server configuration: Fix for converting default Int values from V2.x (e. g. config server starting on port 0 in some cases)|
 |3.0.2 [M]|2018-07-05|Server|Fix for BAPI, BWCube (Bex Mode), Hierarchy, OHS, Query (Specified cast is not valid)|
 |3.0.1 [M]|2018-07-05|Designer|Added support for warnings to Log Viewer|
-|[3.0.0 [M]](https://kb.theobald-software.com/release-notes/BOARDConnector-3.0.0.html)|2018-06-29|General|Improvements for network communication, security and configuration persistence([Release note](https://kb.theobald-software.com/release-notes/BOARDConnector-3.0.0.html))|
+|[3.0.0 [M]](https://helpcenter.theobald-software.com/release-notes/BOARDConnector-3.0.0.html)|2018-06-29|General|Improvements for network communication, security and configuration persistence([Release note](https://helpcenter.theobald-software.com/release-notes/BOARDConnector-3.0.0.html))|
 |2.30.20 [L]|2018-04-17|General|Updated EULA|
 |2.30.18 [L]|2018-01-15|Server|Improved handling of multiple http requests to the board connector server.|
 |2.30.17 [L]|2017-11-30|General|Updated transport for Z_XTRACT_IS_TABLE_JOIN|
