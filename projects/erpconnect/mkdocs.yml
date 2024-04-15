@@ -24,7 +24,7 @@ theme:
       tip: material/lightbulb
       note: fontawesome/solid/circle-info
   features:
-    # - announce.dismiss # adds a dismissal option to announcements 
+     - announce.dismiss # adds a dismissal option to announcements 
     # - content.action.edit # adds an edit button to the pages
     # - content.action.view # adds a view source button to the pages
      - content.code.copy # adds copy button in code blocks

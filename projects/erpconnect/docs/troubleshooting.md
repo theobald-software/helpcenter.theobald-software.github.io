@@ -23,6 +23,8 @@ hide:
 
 </div>
 
+---
+
 ### SAP
 
 <div class="mdx-columns" markdown>
@@ -35,6 +37,8 @@ hide:
 
 </div>
 
+---
+ 
 ### Errors
 
 <div class="mdx-columns" markdown>
@@ -47,3 +51,5 @@ hide:
 - [Non-Unicode destinations are not supported by SAP](https://support.theobald-software.com/helpdesk/KB/View/17021-non-unicode-destinations-are-not-supported-by-sap)
 
 </div>
+
+---
