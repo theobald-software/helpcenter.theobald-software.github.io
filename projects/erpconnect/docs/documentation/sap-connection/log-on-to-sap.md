@@ -1,6 +1,8 @@
 ---
 title: Connect to SAP
 description: Log on to SAP
+tags:
+   - ssl
 ---
 
 ERPConnect supports the following connection methods to SAP systems:
