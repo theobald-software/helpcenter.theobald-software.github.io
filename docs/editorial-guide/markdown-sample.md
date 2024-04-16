@@ -331,7 +331,33 @@ Click **[:material-pencil-outline:]** to edit an entry.
 	:products-xtract-universal: `:products-xtract-universal:`
 	
 	:products-yunio: `:products-yunio:`
+	
+=== "Numbers"
 
+	:number-1: `:number-1:`
+
+	:number-2: `:number-2:`
+
+	:number-3: `:number-3:`
+
+	:number-4: `:number-4:`
+	
+	:number-5: `:number-5:`
+
+	:number-6: `:number-6:`
+
+	:number-7: `number-7`
+
+	:number-8: `:number-8:`
+	
+	:number-9: `:number-9:`
+
+	:number-10: `:number-10:`
+	
+	:number-11: `:number-11:`
+
+	:number-12: `:number-12:`
+	
 === "Xtract"
 
 	:simple-sap: `:simple-sap:`

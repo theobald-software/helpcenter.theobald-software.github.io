@@ -1,6 +1,6 @@
 nav:
-    - Introduction: introduction
-    - Setup: setup
+    - Introduction: introduction.md
+    - Setup for Admins: setup
     - Setup in SAP: setup-in-sap
     - Designer/GUI: designer-gui.md
     - SAP Connection: sap-connection
@@ -9,6 +9,6 @@ nav:
     - Integrate Transactions: transactions
     - Integrate Reports: reports
     - Run Services: run-services.md
-    - Access Restrictions: access-restrictions
+    - Access Restriction: access-restrictions
     - Server Settings: server-settings.md
     - Logs: logs.md

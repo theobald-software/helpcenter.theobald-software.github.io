@@ -43,7 +43,7 @@ The input parameter `skipPopups` in the request body of the service defines how 
 
 When `skipPopups` is set to *true*, the following actions apply:
 
-| Popup in Recording | Popup during a service run | Action |
+| Popup during recording | Popup during a service run | Action |
 | :------: |:---: | :--- |
 | x | x | The popup is handled like a regular screen. |
 | x |  | The service ignores the recorded screen and continues to the next screen. |

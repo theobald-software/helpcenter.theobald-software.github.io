@@ -13,9 +13,6 @@ hide:
 </div>
 
 
-<swagger-ui src="http://localhost:8002/assets/files/yunio/KNA1.swagger.json"/>
-
-
 ### Installation
 
 1. [Download](https://theobald-software.com/en/download-trial/){ data-preview } a 30 days trial version of yunIO.
@@ -26,22 +23,21 @@ For information on system requirements, see [Requirements](documentation/setup/r
 4. Open the yunIO Designer at `http://localhost:8077/` in a [web browser](https://help.theobald-software.com/en/yunio/introduction/requirements#supported-web-browsers) of your choice.<br>
 If the yunIO service does not run on the same machine as the browser, replace `localhost` with the name or IP address of the host on which the service runs.
 
-For more information, see [Installation](documentation/setup/installation.md/#setup).
+For more information, see [Documentation: Installation](documentation/setup/installation.md/#setup).
 
 ### Connect to SAP
 
 Before connecting to SAP for the first time, set up an SAP dialog user with the necessary [SAP Authorization Objects](documentation/setup-in-sap/sap-authority-objects.md/#sap-authorization-profiles).
 
-1. Navigate to the :yunio-nav-connections: *Connections* menu in the left side navigation of the Designer.
+1. Navigate to the  :yunio-nav-connections: *Connections* menu in the left side navigation of the Designer.
 2. Click **[Add Connection]** to create a new SAP connection.<br>
 3. Enter the connection information of your SAP system in the subsection *System*.<br>
 4. Enter the SAP credentials of the SAP dialog user in the subsection *Authentication*.
 5. Click **[Test Connection]** to validate the connection parameters. A window with a status message opens.
-6. Click **[Save]** to save the connection settings. 
-
+6. Click **[Save]** to save the connection settings. <br>
 ![yunIO-connection](./assets/images/yunio/getting-started/yunio-connections.gif){:class="img-responsive" style="border:1px solid black" }
 
-For more information on establishing an SAP connection, see [SAP Connection](./documentation/sap-connection/index.md).
+For more information, see [Documentation: SAP Connection](documentation/sap-connection/index.md).
 
 <!---
 ![web-ui](./assets/images/yunio/getting-started/add-connection.png){:class="img-responsive"}
@@ -50,35 +46,35 @@ For more information on establishing an SAP connection, see [SAP Connection](./d
 
 ### Create a Service
 
-1. Navigate to the :yunio-nav-services: *Services* menu in the left side navigation of the Designer.
+1. Navigate to the  :yunio-nav-services: *Services* menu in the left side navigation of the Designer.
 2. Click **[Add Service]** to create a new web service.
 3. Enter a name and a short description of the service. 
 4. Select an existing SAP connection under **Connection**.
 5. Select one of the following {{ components }} under **Type**: 
-	- [{{ bapi }}](./documentation/function-modules-and-bapis/index.md) to execute BAPIs and Function Modules.
-	- [{{ table }}](./documentation/table-and-views/index.md) to extract SAP ABAP reports.
-	- [{{ transaction }}](./documentation/table-and-views/index.md) to extract data from SAP tables and views.
-	- [{{ report }}](./documentation/table-and-views/index.md) to execute SAP transactions without SAP GUI interaction.
+	- [{{ bapi }}](./documentation/function-modules-and-bapis/index.md) - executes BAPIs and function modules
+	- [{{ table }}](./documentation/tables-and-views/index.md) - extracts data from SAP tables and views
+	- [{{ transaction }}](./documentation/transactions/index.md) - executes SAP transactions without SAP GUI interaction
+	- [{{ report }}](./documentation/reports/index.md) - extracts SAP ABAP reports
 6. Click **[Save and edit]**.
-The settings of the selected {{ component }} open and the service is now available in the :yunio-nav-services: *Services* menu of yunIO.
-
+The settings of the selected {{ component }} open and the service is now available in the :yunio-nav-services: *Services* menu of yunIO.<br>
 ![yunIO-service](./assets/images/yunio/getting-started/yunio-services.gif){:class="img-responsive" style="border:1px solid black" }
 
 Click :yunio-edit-general: to edit the name, description and source of an existing service.<br>
 Click :yunio-edit: to edit the {{ component }} settings of the service. <br>
 
-!!! tip "Tip: Follow the steps below to create a simple service that extracts customer master data from SAP"
 
-	1. [Create a service](#create-a-service) that uses the {{ component }} {{ table }}.
-	2. In the **Search SAP tables and views** menu, enter the name of the SAP standard table KNA1. Use wildcards ( * ) if needed.
-	3. Click **[Search]** to display the tables found in the SAP system.
-	4. Select KNA1 from the search results. The settings of the {{ component }} {{ table }} open automatically.
-	5. Optional: Select the table columns you want to extract. By default all columns are extracted. 
-	For more information on filter options and advanced settings, see [Documentation: Creating a Table Service](documentation/tables-and-views/creating-a-table-service.md/#settings).
-	6. Click **[Save]** to save the service.
-	
-	![yunIO-sample-service](./assets/images/yunio/getting-started/yunio-sample-service.gif){:class="img-responsive" style="border:1px solid black" }
+#### How to Create a Simple Service for Beginners
 
+Follow the steps below to create a simple service that extracts customer master data from SAP:
+
+1. [Create a service](#create-a-service) that uses the {{ component }} {{ table }}.
+2. In the **Search SAP tables and views** menu, enter the name of the SAP standard table KNA1. Use wildcards ( * ) if needed.
+3. Click **[Search]** to display the tables found in the SAP system.
+4. Select KNA1 from the search results. The settings of the {{ component }} {{ table }} open automatically.
+5. Optional: Select the table columns you want to extract. By default all columns are extracted. 
+For more information on filter options and advanced settings, see [Documentation: Creating a Table Service](documentation/tables-and-views/creating-a-table-service.md/#settings).
+6. Click **[Save]** to save the service.<br>
+![yunIO-sample-service](./assets/images/yunio/getting-started/yunio-sample-service.gif){:class="img-responsive" style="border:1px solid black" }
 
 <!---
 ![yunIO-new-service](./assets/images/yunio/yunio-services.png){:class="img-responsive" width="750px"}
@@ -93,52 +89,77 @@ yunIO offers the following features for reading and writing data from and to SAP
 | [{{ transaction }}](./documentation/table-and-views/index.md) | Extract data from SAP tables and views. |
 | [{{ report }}](./documentation/table-and-views/index.md)  | Execute SAP transactions without SAP GUI interaction. |
 
--->
+!!! tip 
 
-### Sample
-
-Follow the steps below to create a simple service that extracts customer master data from SAP:
-
-1. [Create a service](#create-a-service) that uses the {{ component }} {{ table }}.
-2. In the **Search SAP tables and views** menu, enter the name of the SAP standard table KNA1. Use wildcards ( * ) if needed.
-3. Click **[Search]** to display the tables found in the SAP system.
-4. Select KNA1 from the search results. The settings of the {{ component }} {{ table }} open automatically.
-5. Optional: Select the table columns you want to extract. By default all columns are extracted. 
-For more information on filter options and advanced settings, see [Documentation: Creating a Table Service](documentation/tables-and-views/creating-a-table-service.md/#settings).
-6. Click **[Save]** to save the service.
+	Follow the steps below to create a simple test service that extracts customer master data from SAP
 	
-![yunIO-sample-service](./assets/images/yunio/getting-started/yunio-sample-service.gif){:class="img-responsive" style="border:1px solid black" }
-
-
-
-??? tip "Try it out!"
-	User: yunIOAdmin<br>
-	Password: yunIODemo.2021!
-	<swagger-ui src="http://localhost:8002/assets/files/yunio/KNA1.swagger.json"/>
+	1. [Create a service](#create-a-service) that uses the {{ component }} {{ table }}.
+	2. In the **Search SAP tables and views** menu, enter the name of the SAP standard table KNA1. Use wildcards ( * ) if needed.
+	3. Click **[Search]** to display the tables found in the SAP system.
+	4. Select KNA1 from the search results. The settings of the {{ component }} {{ table }} open automatically.
+	5. Optional: Select the table columns you want to extract. By default all columns are extracted. 
+	For more information on filter options and advanced settings, see [Documentation: Creating a Table Service](documentation/tables-and-views/creating-a-table-service.md/#settings).
+	6. Click **[Save]** to save the service.<br>
+	![yunIO-sample-service](./assets/images/yunio/getting-started/yunio-sample-service.gif){:class="img-responsive" style="border:1px solid black" }
 
 
 ### Run a Service
 
-Web services created with yunIO can be integrated into all cloud applications that support REST API/Swagger (OpenAPI), e.g. Power Automate, Nintex, etc.
-
 Follow the steps below to testrun a service directly in yunIO:
 
-[Testing a Service](./documentation/run-services#testing-a-service). 
+1. Navigate to the :yunio-nav-services: *Services* menu in the left side navigation of the Designer.
+2. Click :yunio-run: to open the *Run Service* menu of a service.
+3. Click **[Run]** to execute the service. <br>
+The response body of the service is displayed under *Output Parameters (Response)*.
+4. Click **[Close]** to close the *Run Service* menu.<br>
+![yunIO-service](./assets/images/yunio/getting-started/yunio-run.gif){:class="img-responsive" style="border:1px solid black" }
 
+For more information about running services and passing parameters, see [Documentation: Run Services](./documentation/run-services.md).
 
-Click :yunio-copy: or :yunio-download: to copy or download the service definition. 
-For more information on how to integrate yunIO web services into 3rd-party-tools, see [Documentation: Integrating a Service](./documentation/run-services#integrating-a-service).
+#### How to Integrate yunIO Services with 3rd-Party-Tools
+1. Navigate to the  :yunio-nav-services: *Services* menu in the left side navigation of the Designer.
+2. Click :yunio-copy: to copy or :yunio-download: to download the service definition for integration with 3rd-party-tools. 
 
-For more information about running services and passing parameters, see [Run Services](./documentation/run-services.md).
+Web services created with yunIO can be integrated into all cloud applications that support REST API/Swagger (OpenAPI), e.g. Power Automate, Nintex, etc.
+{% include "yunio/3rd-party-integration.md" %}
 
-
-<!---
-![yunIO-Services](./assets/images/yunio/yunio-run-services.png){:class="img-responsive" }
 -->
 
-*****
-#### Related Links
-- [SAP Table or Views](./documentation/table-and-views)
-- [Function Module / BAPI](./documentation/bapis-and-function-modules)
-- [Transactions](./documentation/transactions)
-- [Report](./documentation/report)
+### Run and Integrate Services
+
+Follow the steps below to run services:
+
+=== "Testrun Services in the browser"
+
+	1. Navigate to the :yunio-nav-services: *Services* menu in the left side navigation of the Designer.
+	2. Click :yunio-copy: under *Service* to copy the service URL of a service.
+	3. Open a new tab in your browser and paste the service URL in the address bar.
+	4. Press **Enter** to trigger a service run. The response body of the service is displayed in the browser.
+	
+	!!! note
+		This approach only works with simple services that do not use parameters.
+		For more information about running services and passing parameters, see [Documentation: Run Services](./documentation/run-services.md).
+
+
+=== "Testrun Services in yunIO"
+
+	1. Navigate to the :yunio-nav-services: *Services* menu in the left side navigation of the Designer.
+	2. Click :yunio-run: to open the *Run Service* menu of a service.
+	3. If no parameters are defined, click **[Run]** to execute the service. The response body of the service is displayed under *Output Parameters (Response)*.
+	4. Click **[Close]** to close the *Run Service* menu.<br>
+	![yunIO-service](./assets/images/yunio/getting-started/yunio-run.gif){:class="img-responsive" style="border:1px solid black" }
+
+	For more information about running services and passing parameters, see [Documentation: Run Services](./documentation/run-services.md).
+
+=== "Integrate Services in 3rd-Party-Tools"
+
+	1. Navigate to the  :yunio-nav-services: *Services* menu in the left side navigation of the Designer.
+	2. Click :yunio-copy: to copy or :yunio-download: to download the service definition for integration with 3rd-party-tools. <br>
+	![yunIO-service](./assets/images/yunio/getting-started/yunio-services.png){:class="img-responsive"}
+
+	For more information about integrating services and passing parameters, see [Documentation: Run Services](./documentation/run-services.md/#integrating-services-in-3rd-party-tools).
+
+
+Web services created with yunIO can be integrated into all cloud applications that support REST API/Swagger (OpenAPI), e.g. Power Automate, Nintex, etc.
+{% include "yunio/3rd-party-integration.md" %}
+

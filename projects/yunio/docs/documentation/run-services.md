@@ -1,31 +1,36 @@
 ---
 title: Run Services
-description: Run Services
+description: How to testrun services directly in yunIO ad hwo to integrate services in 3rd-party-tool
 ---
 
 The following section shows how to test, integrate and pass parameters to services created in yunIO.
 
 
-### Testing a Service in yunIO
+### Running Services in yunIO
 
 Follow the steps below to pass parameters and testrun the service directly in yunIO:
 
-1. Click :yunio-run: to open the *Run Service* menu.<br>
+1. Navigate to the  :yunio-nav-services: *Services* menu in the left side navigation of the Designer.
+2. Click :yunio-run: to open the *Run Service* menu of a service.<br>
 ![yunIO-Services](../assets/images/yunio/yunio-run-services1.png){:class="img-responsive" }
-2. If [Global Access Control](./access-control#global-access-control) and/or [Service Access Control](./access-control#service-access-control) is enabled, enter valid credentials (1).<br>
+2. If [Access Restrictions](./access-restrictions/index.md) are enabled, enter valid user credentials :number-1:. 
+If no restrictions apply, the credentials input is grayed out.<br>
 ![Run-Service](../assets/images/yunio/run-service.png){:class="img-responsive" }
-3. If the service requires input parameters, enter values for the parameters (2). Use the **[ + ]** button to display nested items.
+3. If the service requires input parameters, enter values for the parameters :number-2:. Use the **[ + ]** button to display nested items.
 The depicted example uses an input parameter *NAME*.
-4. Click **[Run]**. The response body of the service is displayed under *Output Parameters* (3).
-	- If the service returns multiple items, expand the items to view the content or use the control buttons to adjust the display of the parameters.<br>
-	- If the response body returns an error message, click **[Logs]** to open the [logs](./logs) of the service run.
+
+	!!! tip
+		Click **[Edit]** to add or delete parameters.
+		
+4. Click **[Run]** to execute the service. The response body of the service is displayed under *Output Parameters* :number-3:.
+
+	!!! tip
+		If the response body returns an error message, click **[Logs]** to open the [logs](logs.md) of the service run.
+
 5. Click **[Close]** to close the *Run Service* menu.
 
-!!! tip
-    Click **[Edit]** to edit the service or add parameters.
 
-
-#### Run Menu
+#### Control Buttons
 
 The following control buttons in the *Run Service* menu regulate the display of input and output parameters.
 
@@ -37,7 +42,7 @@ The following control buttons in the *Run Service* menu regulate the display of 
 - :yunio-run-fullscreen: displays the parameters in a full screen view. To close the full screen view, click **[ X ]**.
 
  
-### Integrating a Service
+### Integrating Services in 3rd-Party-Tools
 
 Web services created with yunIO can be integrated into all cloud applications that support REST API/Swagger (OpenAPI), e.g. Power Automate, Nintex, etc.
 
@@ -49,14 +54,7 @@ The JSON file can be imported into third-party tools.
 
 ![yunIO-Services](../assets/images/yunio/yunio-run-services-https.png){:class="img-responsive" }
 
-Examples for integrating yunIO services in third-party-tools:
-
-[:simple-powerautomate: Integrating a yunIO Service with Power Automate](../knowledge-base/index.md/#microsoft-power-automate-integration)
-
-[:3rd-party-nintex: Integrating a yunIO Service with Nintex](../knowledge-base/index.md/#nintex-automation-cloud-integration)
-
-[:3rd-party-alteryx: Integrating a yunIO Service with Alteryx](../knowledge-base/index.md/#alteryx-integration)
-
+{% include "yunio/3rd-party-integration.md" %}
 
 ### Passing Parameters
 

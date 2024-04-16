@@ -10,9 +10,6 @@ A report extraction is possible if the report returns a table-like structure in 
 The following graphic shows the general workflow of setting up report services with yunIO:<br>
 ![Report-Workflow](../../assets/images/yunio/report-general-workflow-yunIO.png){:class="img-responsive" width="400px"}
 
-### Create a new Service
-
-
 ## Look Up a Report
 
 1. Create a new [*Service*](./getting-started#creating-a-service) of type *Report*. 
