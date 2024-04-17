@@ -7,7 +7,6 @@ description: Join two or more tables and extracts the result of the join.
 
 {% include _content/en/tables/table-joins.md  %}
 
-
 *****
 #### Related Links
 - [Integration Scenarios](./integration)

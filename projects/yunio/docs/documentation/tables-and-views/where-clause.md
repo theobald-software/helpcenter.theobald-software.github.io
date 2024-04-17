@@ -9,6 +9,7 @@ Enter WHERE clauses manually in *Text mode* or use the [WHERE Clause Editor](#wh
 
 {% include _content/en/tables/where-clause-syntax.md%}
 
+
 #### How to use the WHERE Clause in SwaggerHub
 
 The WHERE-Clause can be parameterized in the request body of the service. Example:<br>
@@ -22,7 +23,6 @@ For more information on parameterizing services, refer to the following knowledg
 
 !!! note
     The WHERE clause is overridden when a WHERE clause is entered in the designated text field or if a WHERE clause is entered in the body of the service definition when running a service.
-
 
 
 *****
