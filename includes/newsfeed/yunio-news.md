@@ -1,6 +1,16 @@
 <div class="grid cards" markdown>
 
 
+-   **Welcome to the yunIO HelpCenter**
+
+    ---
+
+    Looking for something?<br> Try the search bar, our new Theo chatbot  or browse our [documentation](documentation/introduction.md).
+
+    ---
+
+    :material-clock-time-two-outline: 2024-04-17
+
 -   **:material-video-box: Webinar**
 
     ---
