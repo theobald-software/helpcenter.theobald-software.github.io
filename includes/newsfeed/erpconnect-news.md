@@ -11,8 +11,7 @@
 
     :material-clock-time-two-outline: 2024-04-15
 
-
--   **Welcome to the new HelpCenter!**
+-   **Welcome to the RPConnect HelpCenter!**
 
     ---
 
@@ -51,6 +50,5 @@
     ---
 
     :material-clock-time-two-outline: 2023-04-05
-
 
 </div>
