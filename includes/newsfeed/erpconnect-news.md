@@ -11,7 +11,7 @@
 
     :material-clock-time-two-outline: 2024-04-15
 
--   **Welcome to the RPConnect HelpCenter!**
+-   **Welcome to the ERPConnect HelpCenter!**
 
     ---
 
