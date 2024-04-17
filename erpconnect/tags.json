@@ -1,1 +1,1 @@
-{"mappings": [{"item": {"url": "documentation/sap-connection/log-on-to-sap/", "title": "Connect to SAP"}, "tags": ["ssl"]}]}
+{"mappings": [{"item": {"url": "documentation/sap-connection/log-on-to-sap/", "title": "Connect to SAP"}, "tags": ["ssl"]}, {"item": {"url": "samples/authority-objects-sap-user-rights/", "title": "Authorization Objects - SAP User Rights"}, "tags": ["permissions"]}]}
