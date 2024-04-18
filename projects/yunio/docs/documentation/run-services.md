@@ -29,18 +29,16 @@ The depicted example uses an input parameter *NAME*.
 
 5. Click **[Close]** to close the *Run Service* menu.
 
-
-#### Control Buttons
-
 The following control buttons in the *Run Service* menu regulate the display of input and output parameters.
-
-- :yunio-run-collapse: collapses all parameter items.
-- :yunio-run-expand: expands all parameter items.
-- :yunio-run-download: saves all entered parameters in a .json file. The file can be used to reload the parameter values or to share values with other yunIO instances.
-- :yunio-run-upload: uploads parameter values from a local .json file. The json file can be created using :yunio-run-download:.
-- :yunio-run-reset: removes all defined input parameters. This option is only available for input parameters.
-- :yunio-run-fullscreen: displays the parameters in a full screen view. To close the full screen view, click **[ X ]**.
-
+	
+| Button | Description |
+|:---: | :--- |
+| :yunio-run-collapse: | Collapses all parameter items. |
+| :yunio-run-expand: | Expands all parameter items. |
+| :yunio-run-download: | Saves all entered parameters in a .json file. The file can be used to reload the parameter values or to share values with other yunIO instances. |
+| :yunio-run-upload: | Uploads parameter values from a local .json file. The json file can be created using :yunio-run-download:. |
+| :yunio-run-reset: | Removes all defined input parameters. This option is only available for input parameters. |
+| :yunio-run-fullscreen: | Displays the parameters in a full screen view. To close the full screen view, click **[ X ]**. |
  
 ### Integrating Services in 3rd-Party-Tools
 
@@ -91,13 +89,3 @@ yunIO services support the http methods `POST` and `GET`.
 	We recommend using the POST method with [Transport Layer Security](./server-settings) (HTTPS) to ensure data protection.
     Do not use the GET method to send sensible data, e.g. credentials.
 
-When using the OpenAPI/Swagger definition, `POST` and `GET` are both available. Select the method you want to use:<br>
-![yunIO-HTTP-POST-GET](../assets/images/yunio/http-post-get.png){:class="img-responsive" }
-
-
-*****
-#### Related Links
-- [SAP Table or Views](./table-and-views)
-- [Function Module / BAPI](./bapis-and-function-modules)
-- [Transactions](./transactions)
-- [Report](./report)

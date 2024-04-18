@@ -20,9 +20,9 @@ progressstate: 5
 
 SAP connections are located in the *Connection* section of the yunIO Designer.
 - To add a new SAP connection, click **[Add Connection]** (1).<br>
-- To edit an existing connection, click ![Edit](../assets/images/yunio/edit.png).
+- To edit an existing connection, click ![Edit](../../assets/images/yunio/edit.png).
 
-![yunIO-Create-Connection](../assets/images/yunio/web-ui.png){:class="img-responsive" }
+![yunIO-Create-Connection](../../assets/images/yunio/web-ui.png){:class="img-responsive" }
 
 ### Connection Details
 
@@ -32,7 +32,7 @@ The menu to create and edit SAP connections is divided into 3 sections:
 - [Test Connection](#test-the-sap-connection) (4)
 
 Fill out the connection details and click **[Save]** to establish an SAP connection.<br>
-![yunIO-Create-Connection](../assets/images/yunio/yunio-connections.png){:class="img-responsive" }
+![yunIO-Create-Connection](../../assets/images/yunio/yunio-connections.png){:class="img-responsive" }
 
 ### System
 There are two possibilities to connect to an SAP source system:
@@ -67,7 +67,7 @@ The following authentication methods are supported:
 - Secure Network Communication (SNC) - username and password via basic authentication.
 <!----- [SNC with SSO](../advanced-techniques/sap-single-sign-on) (Single Sign On) (3) --->
 
-![yunIO-Authentication](../assets/images/yunio/yunio-authentication.png){:class="img-responsive" }
+![yunIO-Authentication](../../assets/images/yunio/yunio-authentication.png){:class="img-responsive" }
 
 
 #### Plain

@@ -1,5 +1,5 @@
 ---
-title: Custom function module for Report
+title: Function Module for Reports
 description: Custom function module for Report
 ---
 

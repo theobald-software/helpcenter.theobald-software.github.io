@@ -18,8 +18,7 @@ hide:
 1. [Download](https://theobald-software.com/en/download-trial/){ data-preview } a 30 days trial version of yunIO.
 2. Run the yunIO executable (yunIOSetup.exe) to install yunIO.
 For information on system requirements, see [Requirements](documentation/setup/requirements.md).
-3. Make sure that the Windows YunIO Service is running and that the default port 8077 is not blocked by your firewall.<br>
-![yunio-windows-service](./assets/images/yunio/getting-started/yunio-windows-service.png){:class="img-responsive" }
+3. Make sure that the YunIO Service is running on your windows system and that the default port 8077 is not blocked by your firewall.<br>
 4. Open the yunIO Designer at `http://localhost:8077/` in a [web browser](https://help.theobald-software.com/en/yunio/introduction/requirements#supported-web-browsers) of your choice.<br>
 If the yunIO service does not run on the same machine as the browser, replace `localhost` with the name or IP address of the host on which the service runs.
 
@@ -35,6 +34,7 @@ Before connecting to SAP for the first time, set up an SAP dialog user with the 
 4. Enter the SAP credentials of the SAP dialog user in the subsection *Authentication*.
 5. Click **[Test Connection]** to validate the connection parameters. A window with a status message opens.
 6. Click **[Save]** to save the connection settings. <br>
+
 ![yunIO-connection](./assets/images/yunio/getting-started/yunio-connections.gif){:class="img-responsive" style="border:1px solid black" }
 
 For more information, see [Documentation: SAP Connection](documentation/sap-connection/index.md).
@@ -57,10 +57,12 @@ For more information, see [Documentation: SAP Connection](documentation/sap-conn
 	- [{{ report }}](./documentation/reports/index.md) - extracts SAP ABAP reports
 6. Click **[Save and edit]**.
 The settings of the selected {{ component }} open and the service is now available in the :yunio-nav-services: *Services* menu of yunIO.<br>
+
 ![yunIO-service](./assets/images/yunio/getting-started/yunio-services.gif){:class="img-responsive" style="border:1px solid black" }
 
-Click :yunio-edit-general: to edit the name, description and source of an existing service.<br>
-Click :yunio-edit: to edit the {{ component }} settings of the service. <br>
+!!! note
+	Click :yunio-rename-icon: to edit the name, description and source of an existing service.<br>
+	Click :yunio-edit: to edit the {{ component }} settings of the service. <br>
 
 
 #### How to Create a Simple Service for Beginners
@@ -74,6 +76,7 @@ Follow the steps below to create a simple service that extracts customer master 
 5. Optional: Select the table columns you want to extract. By default all columns are extracted. 
 For more information on filter options and advanced settings, see [Documentation: Creating a Table Service](documentation/tables-and-views/creating-a-table-service.md/#settings).
 6. Click **[Save]** to save the service.<br>
+
 ![yunIO-sample-service](./assets/images/yunio/getting-started/yunio-sample-service.gif){:class="img-responsive" style="border:1px solid black" }
 
 <!---
@@ -147,6 +150,7 @@ Follow the steps below to run services:
 	2. Click :yunio-run: to open the *Run Service* menu of a service.
 	3. If no parameters are defined, click **[Run]** to execute the service. The response body of the service is displayed under *Output Parameters (Response)*.
 	4. Click **[Close]** to close the *Run Service* menu.<br>
+	
 	![yunIO-service](./assets/images/yunio/getting-started/yunio-run.gif){:class="img-responsive" style="border:1px solid black" }
 
 	For more information about running services and passing parameters, see [Documentation: Run Services](./documentation/run-services.md).
@@ -155,6 +159,7 @@ Follow the steps below to run services:
 
 	1. Navigate to the  :yunio-nav-services: *Services* menu in the left side navigation of the Designer.
 	2. Click :yunio-copy: to copy or :yunio-download: to download the service definition for integration with 3rd-party-tools. <br>
+	
 	![yunIO-service](./assets/images/yunio/getting-started/yunio-services.png){:class="img-responsive"}
 
 	For more information about integrating services and passing parameters, see [Documentation: Run Services](./documentation/run-services.md/#integrating-services-in-3rd-party-tools).

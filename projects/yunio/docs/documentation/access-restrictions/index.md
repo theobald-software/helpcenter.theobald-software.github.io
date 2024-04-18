@@ -15,14 +15,26 @@ YunIO allows you to restrict access to the Server and Designer (global access), 
 
 More information on access restriction is provided in the following sections:
 
+<div class="grid cards" markdown>
+
+- [:yunio-nav-access-control:  Restrict Server & Designer Access](global-access.md)
+- [:yunio-nav-access-control:  Restrict Service Access](service-access.md)
+
+</div>
+
+<!---
+- [Restrict Server & Designer Access](global-access.md)
+- [Restrict Service Access](service-access.md)
+
 ::cards:: cols=2
 
-- title: Restrict Server & Designer Access<br>(Global Access)
+- title: Server & Designer Access
   image: ../../assets/images/logos/business-content/key.svg
   url: /global-access/
   
-- title: Restrict Service Access<br>(Service Access)
+- title: Service Access
   image: ../../assets/images/logos/business-content/key.svg
   url: /service-access/
   
 ::/cards::
+-->

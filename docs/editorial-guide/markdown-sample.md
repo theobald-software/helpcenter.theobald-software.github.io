@@ -424,7 +424,9 @@ Click **[:material-pencil-outline:]** to edit an entry.
 
 	:yunio-edit: `:yunio-edit:`
 	
-	:yunio-rename-icon: `:yunio-edit-general:`
+	:yunio-rename-icon: `:yunio-rename-icon:`
+	
+	:yunio-edit-general: `:yunio-edit-general:`
 
 	:yunio-run: `:yunio-run:`
 	

@@ -5,5 +5,5 @@ nav:
     - Documentation: documentation
     - KnowledgeBase: knowledge-base
     - Changelog: changelog.md
-    - Troubleshooting: troubleshooting.md
+    # - Troubleshooting: troubleshooting.md
     - Support: https://support.theobald-software.com/helpdesk

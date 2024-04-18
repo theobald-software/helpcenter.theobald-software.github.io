@@ -1,6 +1,6 @@
 ---
-title: Backup and Migration
-description: Backup and Migration
+title: Backup & Migration
+description: How to make backup and migrate configurations to a different machine
 ---
 
 A backup allows you to easily switch back to a previous product version or to migrate your existing product configuration to a different machine. 
@@ -66,5 +66,5 @@ For a partial migration only copy subfolders of the `config` folder to the new m
 
 ****
 #### Related Links
-- [Installation and Update](./installation-and-update)
-- [Version History](https://kb.theobald-software.com/version-history/yunio-version-history)
+- [Installation & Update](installation-and-update.md)
+- [Changelog](../../changelog.md)

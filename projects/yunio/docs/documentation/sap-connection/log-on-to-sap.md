@@ -1,15 +1,6 @@
 ---
-ref: yunio-introduction-05
-layout: page
-title: SAP Connection
-description: SAP Connection
-product: yunio
-parent: yunio
-permalink: /:collection/:path
-weight: 10
-lang: en_GB
-old_url: /Xtract-Universal-EN/default.aspx?pageid=sap-connection
-progressstate: 5
+title: SAP Authentication
+description: How to connect to SAP
 ---
 
 !!! warning "Warning! Missing Authorization"
@@ -19,22 +10,22 @@ progressstate: 5
 ### Creating an SAP Connection
 
 SAP connections are located in the *Connection* section of the yunIO Designer.
-- To add a new SAP connection, click **[Add Connection]** (1).<br>
-- To edit an existing connection, click ![Edit](../assets/images/yunio/edit.png).
+- To add a new SAP connection, click **[Add Connection]** :number-1:.<br>
+- To edit an existing connection, click :yunio-edit-general:.
 
-![yunIO-Create-Connection](../assets/images/yunio/web-ui.png){:class="img-responsive" }
+![yunIO-Create-Connection](../../assets/images/yunio/web-ui.png){:class="img-responsive" }
 
-### Connection Details
-
-The menu to create and edit SAP connections is divided into 3 sections:
-- [System](#system) (2)
-- [Authentication](#authentication) (3)
-- [Test Connection](#test-the-sap-connection) (4)
-
-Fill out the connection details and click **[Save]** to establish an SAP connection.<br>
-![yunIO-Create-Connection](../assets/images/yunio/yunio-connections.png){:class="img-responsive" }
 
 ### System
+
+Fill out the connection details and click **[Save]** to establish an SAP connection.<br>
+
+yunIO supports the following connection methods to SAP systems:
+
+- Connection to a single application server.
+- Connection to a message server (Load Balancing), see [SAP Documentation: Load Balancing](https://help.sap.com/saphelp_nwpi711/helpdata/en/c4/3a644c505211d189550000e829fbbd/content.htm?no_cache=true).
+
+
 There are two possibilities to connect to an SAP source system:
 - Use a Single Application Server
 	- **Host**:  host name or IP address of the application server (Property Host). 
@@ -67,7 +58,7 @@ The following authentication methods are supported:
 - Secure Network Communication (SNC) - username and password via basic authentication.
 <!----- [SNC with SSO](../advanced-techniques/sap-single-sign-on) (Single Sign On) (3) --->
 
-![yunIO-Authentication](../assets/images/yunio/yunio-authentication.png){:class="img-responsive" }
+![yunIO-Authentication](../../assets/images/yunio/yunio-authentication.png){:class="img-responsive" }
 
 
 #### Plain
