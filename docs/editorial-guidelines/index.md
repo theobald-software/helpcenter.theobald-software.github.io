@@ -1,17 +1,17 @@
 ---
-title: Editorial Guide
+title: Editorial Guidelines
 hide:
   - nav
 ---
 
-This section contains the Theobald Software editorial guide for the Help Center.
+This section contains the Theobald Software editorial guidelines for the Help Center.
 
-### About the Editorial Guide
-The editorial guidelines of Theobald software are a set of recommendations for writing online help content of Theobald Software products. The guidelines are not binding rules, but serve to improve quality of the content of the online help.
+### About the Editorial Guidelines
+The editorial guidelines of Theobald software are a set of recommendations for writing documentation pages as in helo content of Theobald Software products. The guidelines are not binding rules, but serve to improve quality of the content of the online help.
 
 The editorial guidelines consist of the following parts:
 
-- [Style guide](https://theobaldsoftware.sharepoint.com/sites/PresalesSupportProdMgmtDoc/Freigegebene%20Dokumente/Style%20Guide_version_1.pdf) <!-- hier benoetigen wir Version 2--->
+- [Style guide](style-guide.md)
 - [Administrative / Folder structure / organizational information](#link) <!-- braucht eine bessere Bezeichnung--->
 - [Document template / Markdown Sample](markdown-sample.md)
 - [Conventions for creating screenshots](screenshot-conventions.md)
