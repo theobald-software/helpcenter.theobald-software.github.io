@@ -1,10 +1,11 @@
 nav:
-    - guidelines.md
+    - style-guide.md
     - markdown-sample.md
     - screenshot-conventions.md
     - Administration:
         - plugins-and-theme.md
         - files-and-folders.md
+        - pages-and-articles.md
         - glossary.md
         - to-do-lists.md
         - about-linkchecker.md
