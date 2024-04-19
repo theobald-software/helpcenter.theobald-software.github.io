@@ -50,16 +50,8 @@ Select import parameters using the drop-down list next to the parameter:
  
 ![BAPI export parameters](../../assets/images/yunio/BAPI-input.png){:class="img-responsive"}
 
-
-#### How to Parameterize Import Parameters
-
-Import parameters can be parameterized in the request body of the service.
-
-Example: The Import Parameter *MAXROWS* of BAPI_CUSTOMER_GETLIST is set to *Supplied by Caller* and can be parameterized in the request body of the service:<br>
-![BAPI export parameters](../../assets/images/yunio/swagger-inspector-parameter.png){:class="img-responsive"}
-
-!!! note
-    When parameterzing the import parameters of the service, make sure the input matches the data type of the parameters.<br>
+!!! tip
+	To use tables as input parameters, see [Table Parameters](#table-parameters).
 
 ### Export Parameters
 Export parameters represent the output values sent from SAP back to the client after the execution of a Function Module.
@@ -67,6 +59,9 @@ In the tab **Export** you can select the items you want to add to the output of 
 
 ![BAPI export parameters](../../assets/images/yunio/BAPI-output.png){:class="img-responsive"}
 
+!!! tip
+	To use tables as output parameters, see [Table Parameters](#table-parameters).
+	
 ### Changing Parameters
 
 Changing parameters represent parameters that can be used for input and output. In the tab **Changing** you can define the changing parameters.

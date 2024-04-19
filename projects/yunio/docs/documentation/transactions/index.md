@@ -15,14 +15,6 @@ They can be used in the SAP command field to quickly go to an SAP task and start
 A transaction code consists of letters and/or numbers, e.g., *VA01* to create sales orders, *ME21N* to create purchase orders, etc. 
 For information on how to use and find transaction codes, see [SAP Documentation: Using Transaction Codes](https://help.sap.com/docs/SAP_NETWEAVER_740/b1c834a22d05483b8a75710743b5ff26/f735dd776e724195b5562592a5e88b45.html)
 
-### Prerequisites
-
-- A connection to an SAP system, see [SAP Connection](../sap-connection/index.md) is available.
-- The SAP connection assigned to a transaction service must use an SAP dialog user. 
-
-!!! tip
-    The transaction feature offers the same functionality as the SAP GUI.
-    Therefore knowing how to navigate the SAP GUI makes it easier to use the transaction feature.
 
 ### Samples
 

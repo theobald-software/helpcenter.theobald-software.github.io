@@ -22,10 +22,3 @@ They can be executed via transaction codes.
 
 {% include "/components/abap-reports/support-disclaimer.md" %}
 
-### Prerequisites
-
-- A connection to an SAP system, see [SAP Connection](../sap-connection/index.md) is available.
-- The SAP user has sufficient user rights, see [SAP Authority Objects](../setup-in-sap/sap-authority-object.md/#report).
-- The custom function module `Z_XTRACT_IS_REMOTE_REPORT` is installed in your SAP system, see [Installation of Z_XTRACT_IS_REMOTE_REPORT](#sap-customizing).
-- The report returns a table-like structure in SAP.
-

@@ -5,10 +5,18 @@ description: How to create a web service that executes SAP Transaction
 
 The following section shows how to use the {{ transaction }} {{ component }}.
 
+### Prerequisites
+
+- A connection to an SAP system is available, see [SAP Connection](../sap-connection/index.md).
+- The SAP connection assigned to a transaction service must use an SAP dialog user. 
+
+!!! tip
+    The transaction feature offers the same functionality as the SAP GUI.
+    Therefore knowing how to navigate the SAP GUI makes it easier to use the transaction feature.
 
 ### Record Transactions
 
-1. [Create a new service](../../getting-started.md/#connect-to-sap) of {{ component }} {{ transaction }}. 
+1. [Create a new service](../../getting-started.md/#create-a-service) of {{ component }} {{ transaction }}. 
 2. Enter a transaction code :number-1:. <br>
 ![transaction](../../assets/images/yunio/transaction.png){:class="img-responsive"}
 3. Click **[Start]** to run the transaction. Content from the SAP GUI is displayed. 

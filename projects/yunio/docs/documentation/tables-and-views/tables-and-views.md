@@ -5,9 +5,14 @@ description: How to create a service to extract data from an SAP Table and View
 
 This section shows how to create a service that extracts data from an SAP Table and View.
 
+### Prerequisites
+
+- A connection to an SAP system is available, see [SAP Connection](../sap-connection/index.md).
+- The SAP user has sufficient user rights, see [SAP Authority Objects](../setup-in-sap/sap-authority-objects.md/#table).
+
 ### Look Up an SAP Table or View
 
-1. [Create a new service](../../getting-started.md/#connect-to-sap) of {{ component }} {{ table }}. 
+1. [Create a new service](../../getting-started.md/#create-a-service) of {{ component }} {{ table }}. 
 2. In the *Search SAP Table or View* menu, enter the name or description of the Table or View to be extracted :number-1:. Use wildcards ( * ) if needed.
 ![SAP-Table-or-Views](../../assets/images/yunio/search-table-view.png){:class="img-responsive" width="750px"}
 3. Click **[Search]** to display the search results.

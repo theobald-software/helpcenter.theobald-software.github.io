@@ -25,8 +25,3 @@ When extracting tables from older SAP releases you may encounter restrictions wh
 Possible restrictions include poor performance with large tables, limited width of columns, etc.
 
 To avoid restrictions, install the Theobald Software custom function module /THEO/READ_TABLE on your SAP system, see [Custom Function Modules for Tables](../setup-in-sap/custom-function-module-for-table-extraction.md).
-
-### Prerequisites
-
-- A connection to an SAP system, see [SAP Connection](../sap-connection/index.md) is available.
-- The SAP user has sufficient user rights, see [SAP Authority Objects](../setup-in-sap/sap-authority-object.md/#table).

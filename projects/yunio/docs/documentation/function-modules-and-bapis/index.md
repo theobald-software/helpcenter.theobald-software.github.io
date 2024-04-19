@@ -24,8 +24,3 @@ These parameters are used to pass or get scalar values. An exchange of tables is
 
 {% include "/components/bapis-and-function-modules/support-disclaimer.md" %}
 
-### Prerequisites
-
-- A connection to an SAP system, see [SAP Connection](../sap-connection/index.md) is available.
-- The SAP user has sufficient user rights, see [SAP Authority Objects](../setup-in-sap/sap-authority-object.md/#bapi).
-

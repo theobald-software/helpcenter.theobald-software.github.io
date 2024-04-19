@@ -10,9 +10,16 @@ A report extraction is possible if the report returns a table-like structure in 
 The following graphic shows the general workflow of setting up report services with yunIO:<br>
 ![Report-Workflow](../../assets/images/yunio/report-general-workflow-yunIO.png){:class="img-responsive" width="400px"}
 
+### Prerequisites
+
+- A connection to an SAP system is available, see [SAP Connection](../sap-connection/index.md).
+- The SAP user has sufficient user rights, see [SAP Authority Objects](../setup-in-sap/sap-authority-objects.md/#report).
+- The custom function module `Z_XTRACT_IS_REMOTE_REPORT` is installed in your SAP system, see [Installation of Z_XTRACT_IS_REMOTE_REPORT](../setup-in-sap/custom-function-module-for-reports.md/#installation-of-z_xtract_is_remote_report).
+- The report must return a table-like structure in SAP.
+
 ### Look Up a Report
 
-1. [Create a new service](../../getting-started.md/#connect-to-sap) of {{ component }} {{ report }}. 
+1. [Create a new service](../../getting-started.md/#create-a-service) of {{ component }} {{ report }}. 
 2. In the *Search SAP Reports* menu, enter the name or TCODE of a report :number-1:. The use of wildcards ( * ) is only supported for report names.<br>
 ![SAP-Table-or-Views](../../assets/images/yunio/report-lookup.png){:class="img-responsive" width="750px"}
 3. Click **[Search]** to look up the name of a report or click **[By TCODE]** to look up the TCODE.
