@@ -1,5 +1,6 @@
 |Version|Date    |Component   |Description|
 |:-----:|:------:|:----------:|:----------|
+|6.4.2 [L]|2024-04-19|BAPI|Add support for S4H cloud systems|
 |[6.4.1 [L]](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-6.4.1)|2024-04-11|Destinations|Json Destination: Implement file split functionality.([Release note](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-6.4.1))|
 |[6.4.0 [L]](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-6.4.0)|2024-04-11|Server|Introduce new endpoint to run/start extractions ([Release note](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-6.4.0))|
 |[6.3.11 [L]](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-6.3.11)|2024-03-26|Destinations|Redshift destination: improvements, bug fixes and ODBC driver upgrade to version 2.1.0.0 (BREAKING). ([Release note](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-6.3.11))|
