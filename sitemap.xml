@@ -41,47 +41,57 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://helpcenter.theobald-software.com/editorial-guide/</loc>
+         <loc>https://helpcenter.theobald-software.com/editorial-guidelines/</loc>
          <lastmod>2024-04-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://helpcenter.theobald-software.com/editorial-guide/about-linkchecker/</loc>
+         <loc>https://helpcenter.theobald-software.com/editorial-guidelines/about-linkchecker/</loc>
          <lastmod>2024-04-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://helpcenter.theobald-software.com/editorial-guide/files-and-folders/</loc>
+         <loc>https://helpcenter.theobald-software.com/editorial-guidelines/files-and-folders/</loc>
          <lastmod>2024-04-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://helpcenter.theobald-software.com/editorial-guide/glossary/</loc>
+         <loc>https://helpcenter.theobald-software.com/editorial-guidelines/glossary/</loc>
          <lastmod>2024-04-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://helpcenter.theobald-software.com/editorial-guide/guidelines/</loc>
+         <loc>https://helpcenter.theobald-software.com/editorial-guidelines/guidelines/</loc>
          <lastmod>2024-04-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://helpcenter.theobald-software.com/editorial-guide/markdown-sample/</loc>
+         <loc>https://helpcenter.theobald-software.com/editorial-guidelines/markdown-sample/</loc>
          <lastmod>2024-04-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://helpcenter.theobald-software.com/editorial-guide/plugins-and-theme/</loc>
+         <loc>https://helpcenter.theobald-software.com/editorial-guidelines/pages-articles/</loc>
          <lastmod>2024-04-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://helpcenter.theobald-software.com/editorial-guide/screenshot-conventions/</loc>
+         <loc>https://helpcenter.theobald-software.com/editorial-guidelines/plugins-and-theme/</loc>
          <lastmod>2024-04-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://helpcenter.theobald-software.com/editorial-guide/to-do-lists/</loc>
+         <loc>https://helpcenter.theobald-software.com/editorial-guidelines/screenshot-conventions/</loc>
+         <lastmod>2024-04-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://helpcenter.theobald-software.com/editorial-guidelines/style-guide/</loc>
+         <lastmod>2024-04-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://helpcenter.theobald-software.com/editorial-guidelines/to-do-lists/</loc>
          <lastmod>2024-04-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
