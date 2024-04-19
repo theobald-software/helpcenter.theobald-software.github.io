@@ -1,8 +1,8 @@
 ---
-title: Editorial Guidelines
+title: Documentation Pages and Knowledge Base Articles
 ---
 
-### Documentation
+### Documentation pages
 
 What to consider when creating new documentation pages:
 
