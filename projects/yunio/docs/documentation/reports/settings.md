@@ -6,11 +6,11 @@ description: An overview and description of all Report settings
 The following section contains an overview and description of all available {{ report }} settings.
 
 The {{ report }} settings consist of the following subsections:
-- [Control Buttons](#control-buttons) to close, save or delete the service.
-- [Report](#report) displays the name and description of the selected report.
-- [Advanced Settings](#advanced-settings) define how the data is extracted from SAP.
-- [Selection Parameters](#selection-parameters) define the input for the yunIO service.
-- [Output Columns](#output-columns) define the output of the yunIO service.
+- [Control Buttons](#control-buttons) to close, save or delete the service :number-1:.
+- [Report](#report) displays the name and description of the selected report :number-2:.
+- [Advanced Settings](#advanced-settings) define how the data is extracted from SAP :number-3:.
+- [Selection Parameters](#selection-parameters) define the input for the yunIO service :number-4:.
+- [Output Columns](#output-columns) define the output of the yunIO service :number-5:.
 
 ![yunIO-table](../../assets/images/yunio/report.png){:class="img-responsive"}
 

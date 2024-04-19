@@ -1,15 +1,7 @@
 ---
-ref: yunio-introduction-05
-layout: page
 title: SAP Connection
+# icon: simple/sap
 description: SAP Connection
-product: yunio
-parent: yunio
-permalink: /:collection/:path
-weight: 10
-lang: en_GB
-old_url: /Xtract-Universal-EN/default.aspx?pageid=sap-connection
-progressstate: 5
 ---
 
 !!! warning "Warning! Missing Authorization"

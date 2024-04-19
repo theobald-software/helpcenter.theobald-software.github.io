@@ -1,22 +1,22 @@
 ---
-title: Create a Transaction Service
+title: Create a Transaction Services
 description: How to create a web service that executes SAP Transaction
 ---
 
-The following section shows how to use the {{ transaction }} { component }}.
+The following section shows how to use the {{ transaction }} {{ component }}.
 
-### Create a new Service
 
 ### Record Transactions
 
-1. Enter a transaction code (1). <br>
+1. [Create a new service](../../getting-started.md/#connect-to-sap) of {{ component }} {{ transaction }}. 
+2. Enter a transaction code :number-1:. <br>
 ![transaction](../../assets/images/yunio/transaction.png){:class="img-responsive"}
-2. Click **[Start]** to run the transaction. Content from the SAP GUI is displayed. 
-3. Fill out the input fields as you would in the SAP GUI. Input fields can be parameterized once the transaction is recorded, see [Parameterize Transactions](#parameterize-transactions).
-4. Click **[Submit]** (2) to enter your input.
-All executed actions are logged in the section *GUI Steps* (3). <br>
+3. Click **[Start]** to run the transaction. Content from the SAP GUI is displayed. 
+4. Fill out the input fields as you would in the SAP GUI. Input fields can be parameterized once the transaction is recorded, see [Parameterize Transactions](#parameterize-transactions).
+5. Click **[Submit]** to enter your input :number-2:.
+All executed actions are logged in the section *GUI Steps* :number-3:. <br>
 ![transaction-va02](../../assets/images/yunio/transaction-va02.png){:class="img-responsive"}
-5. Click **[Save]** once you finished recording.<br>
+6. Click **[Save]** once you finished recording.<br>
 Alternatively, click **[Stop]** to start parameterizing, see [Parameterize Transactions](#parameterize-transactions).
 
 ### Parameterize Transactions

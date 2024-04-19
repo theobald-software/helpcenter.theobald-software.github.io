@@ -1,5 +1,6 @@
 ---
 title: Integrate Transactions
+# icon: component/transaction
 description: Information about the integration type Transactions
 ---
 

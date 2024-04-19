@@ -51,17 +51,21 @@ For more information, see [Documentation: SAP Connection](documentation/sap-conn
 3. Enter a name and a short description of the service. 
 4. Select an existing SAP connection under **Connection**.
 5. Select one of the following {{ components }} under **Type**: 
-	- [{{ bapi }}](./documentation/function-modules-and-bapis/index.md) - executes BAPIs and function modules
-	- [{{ table }}](./documentation/tables-and-views/index.md) - extracts data from SAP tables and views
-	- [{{ transaction }}](./documentation/transactions/index.md) - executes SAP transactions without SAP GUI interaction
-	- [{{ report }}](./documentation/reports/index.md) - extracts SAP ABAP reports
+
+	|  {{ Component }}  |  Description   |  
+	|----------|-------------|
+	| [{{ bapi }}](./documentation/function-modules-and-bapis/index.md) | Executes BAPIs and Function Modules. |
+	| [{{ table }}](./documentation/table-and-views/index.md) | Extracts SAP ABAP reports. | 
+	| [{{ transaction }}](./documentation/table-and-views/index.md) | Extracts data from SAP tables and views. |
+	| [{{ report }}](./documentation/table-and-views/index.md)  | Executes SAP transactions without SAP GUI interaction. |
+
 6. Click **[Save and edit]**.
 The settings of the selected {{ component }} open and the service is now available in the :yunio-nav-services: *Services* menu of yunIO.<br>
 
 ![yunIO-service](./assets/images/yunio/getting-started/yunio-services.gif){:class="img-responsive" style="border:1px solid black" }
 
 !!! note
-	Click :yunio-rename-icon: to edit the name, description and source of an existing service.<br>
+	Click :yunio-edit-general: to edit the name, description and source of an existing service.<br>
 	Click :yunio-edit: to edit the {{ component }} settings of the service. <br>
 
 
@@ -85,12 +89,10 @@ For more information on filter options and advanced settings, see [Documentation
 
 yunIO offers the following features for reading and writing data from and to SAP:
 
-|  {{ Component }}  |  Description   |  
-|----------|-------------|
-| [{{ bapi }}](./documentation/function-modules-and-bapis/index.md) | Execute BAPIs and Function Modules. |
-| [{{ table }}](./documentation/table-and-views/index.md) | Extract SAP ABAP reports. | 
-| [{{ transaction }}](./documentation/table-and-views/index.md) | Extract data from SAP tables and views. |
-| [{{ report }}](./documentation/table-and-views/index.md)  | Execute SAP transactions without SAP GUI interaction. |
+	- [{{ bapi }}](./documentation/function-modules-and-bapis/index.md) - executes BAPIs and function modules
+	- [{{ table }}](./documentation/tables-and-views/index.md) - extracts data from SAP tables and views
+	- [{{ transaction }}](./documentation/transactions/index.md) - executes SAP transactions without SAP GUI interaction
+	- [{{ report }}](./documentation/reports/index.md) - extracts SAP ABAP reports
 
 !!! tip 
 

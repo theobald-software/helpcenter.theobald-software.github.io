@@ -331,6 +331,32 @@ Click **[:material-pencil-outline:]** to edit an entry.
 	:products-xtract-universal: `:products-xtract-universal:`
 	
 	:products-yunio: `:products-yunio:`
+
+=== "Components"
+
+	:component-bapi: `:component-bapi:`
+
+	:component-bwcube: `:component-bwcube:`
+
+	:component-bwloader: `:component-bwloader:`
+
+	:component-deltaq: `:component-deltaq:`
+	
+	:component-hierarchy: `:component-hierarchy:`
+	
+	:component-odp: `:component-odp:`
+	
+	:component-ohs: `:component-ohs:`
+	
+	:component-query: `:component-query:`
+
+	:component-report: `:component-report:`
+	
+	:component-table: `:component-table:`
+	
+	:component-table-cdc: `:component-table-cdc:`
+	
+	:component-transaction: `:component-transaction:`
 	
 === "Numbers"
 
@@ -424,9 +450,9 @@ Click **[:material-pencil-outline:]** to edit an entry.
 
 	:yunio-edit: `:yunio-edit:`
 	
-	:yunio-rename-icon: `:yunio-rename-icon:`
-	
 	:yunio-edit-general: `:yunio-edit-general:`
+	
+	:yunio-edit-connection: `:yunio-edit-connection:`
 
 	:yunio-run: `:yunio-run:`
 	

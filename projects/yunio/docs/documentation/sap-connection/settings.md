@@ -4,13 +4,13 @@ description: How to connect to SAP
 ---
 
 The following section contains an overview of the yunIO connection settings in the :yunio-nav-connections: *Connections* menu. 
-To open the connection settings of an existing SAP connection, click :yunio-edit-general: next to the connection.
+To open the connection settings of an existing SAP connection, click :yunio-edit-connection: next to the connection.
 
 The connection settings consist of the following subsections:
 
-- [System :number-1:](#system) 
-- [Authentication :number-2:](#authentication) 
-- [Test Connection :number-3:](#test-the-sap-connection) 
+- [System](#system) defines how to reach your SAP system :number-1:.
+- [Authentication](#authentication) defines the login details of the SAP user :number-2:.
+- [Test Connection](#test-the-sap-connection) verifies the system and authentication data :number-3:.
 
 ![yunIO-Create-Connection](../../assets/images/yunio/yunio-connections.png){:class="img-responsive" }
 

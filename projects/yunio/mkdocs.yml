@@ -213,3 +213,5 @@ extra:
   transaction: _Transaction_
   report: _Report_
   bapi: _Function module / BAPI_
+  previewBtn: __[Run]__
+  extraction: service

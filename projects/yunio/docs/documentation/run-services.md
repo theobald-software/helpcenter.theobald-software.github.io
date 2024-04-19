@@ -40,7 +40,7 @@ The following control buttons in the *Run Service* menu regulate the display of 
 | :yunio-run-reset: | Removes all defined input parameters. This option is only available for input parameters. |
 | :yunio-run-fullscreen: | Displays the parameters in a full screen view. To close the full screen view, click **[ X ]**. |
  
-### Integrating Services in 3rd-Party-Tools
+### Integrating Services with 3rd-Party-Tools
 
 Web services created with yunIO can be integrated into all cloud applications that support REST API/Swagger (OpenAPI), e.g. Power Automate, Nintex, etc.
 

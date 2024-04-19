@@ -6,56 +6,64 @@ description: An overview and description of all BAPI settings
 The following section contains an overview and description of all available {{ bapi }} settings.
 
 The {{ bapi }} settings consist of the following subsections:
-- [Control Buttons](#control-buttons) to close, save or delete the service.
-- [Function Module](#function-module) displays the name and description of the selected Function Module / BAPI.
-- [Advanced Settings](#advanced-settings) define how data is committed to and from SAP.
-- [Function Module Interface Parameters](#function-module-interface-parameters) (6) define what data is committed to and from SAP.
+- [Control Buttons](#control-buttons) to close, save or delete the service :number-1:.
+- [Function Module](#function-module) displays the name and description of the selected Function Module / BAPI :number-2:.
+- [Advanced Settings](#advanced-settings) define how data is committed to and from SAP :number-3:.
+- [Function Module Interface Parameters](#function-module-interface-parameters) define what data is committed to and from SAP :number-4:.
 
 ![yunIO-function-module](../../assets/images/yunio/bapi-settings.png){:class="img-responsive"}
 
 
 {% include "yunio/control-buttons.md" %}
 
-## Function Module
+### Function Module
 
-The **Function Module** section displays the name and description of the selected function module or BAPI. <br>
+The **Function Module** section displays the name and description of the selected function module or BAPI.
 To select a different source file, click **Select** in the upper right corner of the section.
 
-## Advanced Settings
+### Advanced Settings
 
 #### Commits Transaction
 
 If this option is active, the function module "BAPI_TRANSACTION_COMMIT" is called after processing the selected Function Module / BAPI. 
 Some SAP Function Modules (e.g., BAPI_PO_CREATE) require this commit function to successfully update data in the database.
 
-## Function Module Interface Parameters
+### Function Module Interface Parameters
 
 In the *Function Module Interface Parameters* section all parameters of the selected Function Module / BAPI are displayed.
-Function Modules / BAPIs can have up to four parameter types: [Import](#import-parameters), [Export](#export-parameters), [Changing](#changing-parameters) and [Table](#table-parameters).
+Function Modules / BAPIs can have up to four parameter types: 
+- [Import](#import-parameters)
+- [Export](#export-parameters)
+- [Changing](#changing-parameters)
+- [Table](#table-parameters)
 
 ### Import Parameters
 Import parameters represent the input values sent from the client to SAP. In the tab **Import** you can define import parameters.
- 
-Select import parameters using the drop-down list next to the parameter:
-- Items set to *Supplied by Caller* become available as parameters in the request body of the service and can be filled at runtime.
-- Items set to *Default (defined in SAP)* use the default values from SAP.
-- Items set to *Constant* use the value that is entered in the **Value** field.
 
+Select import parameters using the drop-down list next to the parameter:
+
+|  Input  |  Description   |  
+|----------|-------------|
+| *Supplied by Caller* | The item becomes available as a parameter in the request body of the service and can be set at runtime. |
+| *Default <br>(defined in SAP)* | The item uses the default values from SAP. This is the default setting. |
+| *Constant* | The item uses the value that is entered in the **Value** field.|
+ 
 ![BAPI export parameters](../../assets/images/yunio/BAPI-input.png){:class="img-responsive"}
+
+
+#### How to Parameterize Import Parameters
+
+Import parameters can be parameterized in the request body of the service.
+
+Example: The Import Parameter *MAXROWS* of BAPI_CUSTOMER_GETLIST is set to *Supplied by Caller* and can be parameterized in the request body of the service:<br>
+![BAPI export parameters](../../assets/images/yunio/swagger-inspector-parameter.png){:class="img-responsive"}
 
 !!! note
     When parameterzing the import parameters of the service, make sure the input matches the data type of the parameters.<br>
 
-#### How to use Import Parameters in SwaggerHub
-
-Example: The Import Parameter MAXROWS of BAPI_CUSTOMER_GETLIST is set to *Supplied by Caller* and can be parameterized in the request body of the service:<br>
-![BAPI export parameters](../../assets/images/yunio/swagger-inspector-parameter.png){:class="img-responsive"}
-
 ### Export Parameters
 Export parameters represent the output values sent from SAP back to the client after the execution of a Function Module.
-In the tab **Export** you can select the items you want to add to the output of the Function Module / BAPI: 
-- To add an item to the output of the Function Module / BAPI, mark the checkbox in the *Output* column.<br>
-Optional: you can change the name of the output parameter. Tables must use the following format: `[Table name].[column name]`.
+In the tab **Export** you can select the items you want to add to the output of the Function Module / BAPI and change their name: 
 
 ![BAPI export parameters](../../assets/images/yunio/BAPI-output.png){:class="img-responsive"}
 
@@ -68,18 +76,20 @@ Changing parameters represent parameters that can be used for input and output. 
 Table parameters are parameters presented in a table structure consisting of multiple rows. Tables can be used for input and output.
 In the tab **Tables** you can define table parameters for importing and exporting data into and from an SAP Function Module or BAPI.
 
-**Tables as input parameters:**<br>
-- Items set to *Supplied by Caller* become available as parameters in the request body of the service and can be filled at runtime.
-- Items that are left on *Default (defined in SAP)* use the default values from SAP.
-- Items set to *Constant* use the value that is entered in the **Value** field.
+#### Tables as Input Parameters
 
-**Tables as output parameters**<br>
-- To add an item to the output of the Function Module / BAPI, mark the checkbox on the right.<br>
-Optional: change the name of the output parameter. Table parameters use the following format: `[Table name].[column name]`.
+Select tables fields as input parameters for the service using the drop-down list next to the table field:
+
+|  Input  |  Description   |  
+|----------|-------------|
+| *Supplied by Caller* | The item becomes available as a parameter in the request body of the service and can be set at runtime. |
+| *Default <br>(defined in SAP)* | The item uses the default values from SAP. This is the default setting. |
+| *Constant* | The item uses the value that is entered in the **Value** field.|
+
+#### Tables as Output Parameters
+
+- Select the table fields you want to add to the output of the service.
+- Optional: change the name of the output parameter. Table parameters use the following naming format: `[Table name].[column name]`.
+
 
 ![BAPI table](../../assets/images/yunio/BAPI-table.png){:class="img-responsive"}
-
-*****
-#### Related Links
-- [Integration Scenarios](./integration)
-- [Knowledge Base Article: Integrating a yunIO Service with Power Automate](https://kb.theobald-software.com/yunio/integrating-a-yunio-service-with-power-automate)

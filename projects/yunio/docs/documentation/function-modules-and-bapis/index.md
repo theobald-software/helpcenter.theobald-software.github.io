@@ -1,5 +1,6 @@
 ---
 title: Integrate Function Modules / BAPIs
+# icon: component/bapi
 description: Information about the integration type Function Module / BAPI
 ---
 
@@ -15,9 +16,11 @@ The {{ bapi }} {{ component }} can be used to parameterize and execute SAP funct
 Function modules are procedures that encapsulate and reuse global functions in the SAP system. 
 SAP systems contain several predefined functions modules that can be called from any ABAP program. 
 A Business Application Programming Interface (BAPI) is a remote function module that can access business data and processes of an SAP system from different systems.
-
+<!---
 Every Function Module / BAPI provides import and export parameters. 
 These parameters are used to pass or get scalar values. An exchange of tables is also possible.
+-->
+
 
 {% include "/components/bapis-and-function-modules/support-disclaimer.md" %}
 
@@ -26,7 +29,3 @@ These parameters are used to pass or get scalar values. An exchange of tables is
 - A connection to an SAP system, see [SAP Connection](../sap-connection/index.md) is available.
 - The SAP user has sufficient user rights, see [SAP Authority Objects](../setup-in-sap/sap-authority-object.md/#bapi).
 
-*****
-#### Related Links
-- [Integration Scenarios](./integration)
-- [Knowledge Base Article: Integrating a yunIO Service with Power Automate](https://kb.theobald-software.com/yunio/integrating-a-yunio-service-with-power-automate)

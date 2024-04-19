@@ -1,0 +1,6 @@
+nav:
+    - index.md
+    - tables-and-views.md
+    - settings.md
+    - where-clause.md
+    - table-join.md

@@ -6,12 +6,12 @@ description: An overview and description of all table settings
 The following section contains an overview and description of all available {{ table }} settings.
 
 The {{ table }} settings consist of the following subsections:
-- [Control Buttons](#control-buttons) to close, save or delete the service.
-- [Table or View](#table-or-view) displays the name and description of the selected SAP Table or View.
-- [Advanced Settings](#advanced-settings) define how the data is extract from SAP.
-- [Output Columns](#output-columns) define what columns to extract.
-- [WHERE Clause](#where-clause) and [WHERE Clause Editor](#where-clause-editor) define what rows to extract.
-- [Joins](#joins) joins two or more tables and extracts the result of the join.
+- [Control Buttons](#control-buttons) to close, save or delete the service :number-1:.
+- [Table or View](#table-or-view) displays the name and description of the selected SAP Table or View :number-2:.
+- [Advanced Settings](#advanced-settings) define how the data is extract from SAP :number-3:.
+- [Output Columns](#output-columns) define what columns to extract :number-4:.
+- [WHERE Clause](#where-clause) and [WHERE Clause Editor](#where-clause-editor) define what rows to extract :number-5:.
+- [Joins](#joins) joins two or more tables and extracts the result of the join :number-6:.
 
 ![yunIO-table](../../assets/images/yunio/table-settings.png){:class="img-responsive"}
 
@@ -22,8 +22,10 @@ The {{ table }} settings consist of the following subsections:
 
 The **Table or View** section displays the name and description of the selected table or view.<br>
 
-:where-clause-add: adds a table or view to the service.<br>
-:yunio-delete: removes a table or view from the service. 
+| Icon | Description| 
+|--------|--------|
+| :where-clause-add: | Adds a table or view to the service. |
+| :yunio-delete: | Removes a table or view from the service. |
 
 ### Advanced Settings
 
@@ -81,10 +83,11 @@ Deselect the columns you don’t want to extract.
 
 ### WHERE Clause
 A WHERE clause can be used to filter table records, see [SAP ABAP Documentation: SELECT-WHERE](https://help.sap.com/doc/abapdocu_750_index_htm/7.50/en-us/abapwhere.htm).
-Enter WHERE clauses manually in *Text mode* or use the [WHERE Clause Editor](#where-clause-editor) in *Editor Mode*.<br>
+Enter WHERE clauses manually in *Text mode* or use the [WHERE Clause Editor](where-clause.md/#where-clause-editor) in *Editor Mode*.<br>
 
 ### Joins
-
+The Join functionality allows joining two or more SAP tables and extract the result of the join, see [SAP Documentation: Inner Join and Outer Join](https://help.sap.com/doc/saphelp_nwpi71/7.1/en-US/cf/21ec77446011d189700000e8322d00/content.htm?no_cache=true). 
+For information on how to join tables in {{ productName }}, see [Table Joins](table-joins.md).
 
 *****
 #### Related Links

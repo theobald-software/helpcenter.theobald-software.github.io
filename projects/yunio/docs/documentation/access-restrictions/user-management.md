@@ -34,7 +34,7 @@ Follow the steps below to delete existing users:
 Follow the steps below to change the password of a user:
 
 1. Navigate to the  :yunio-nav-user: *Users* menu.
-2. Click :yunio-edit-general:. The user details open.
+2. Click :yunio-edit-connection:. The user details open.
 ![Edit-Users](../../assets/images/yunio/yunio-users-edit.png){:class="img-responsive" }
 3. Change the password of the user. The password must be at least 8 characters long.
 4. Re-enter the new password to avoid spelling mistakes.
