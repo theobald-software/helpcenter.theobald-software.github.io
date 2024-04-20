@@ -13,7 +13,7 @@ The following SAP Systems are supported:
 
 	<div class="mdx-columns" markdown>
 
-	- [SAP S/4HANA](https://kb.theobald-software.com/sap/supported-sap-and-hana-versions-by-theobald-software-products)
+	- [SAP S/4HANA](../../knowledge-base/supported-sap-and-hana-versions.md)
 	- mySAP
 	- SAP Application Server ABAP
 	- Message Server

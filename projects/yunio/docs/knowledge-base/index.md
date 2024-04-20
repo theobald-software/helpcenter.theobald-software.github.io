@@ -11,6 +11,20 @@ hide:
 
 </div>
 
+
+### :simple-sap: SAP
+
+<div class="mdx-columns" markdown>
+
+- [Authorizing Access to Reports via Authorization Groups](authorizing-access-to-specific-reports.md)
+- [How to Create the Custom Authorization Object Z_TS_PROG](how-to-create-the-custom-authority-object-z-ts-prog.md)
+- [How to Import an SAP Transport Request](how-to-import-an-sap-transport-request.md)
+- [Supported SAP S/4HANA Versions](supported-sap-and-hana-versions.md)
+
+</div>
+
+---
+
 ### :material-network: Network & Communication
 
 <div class="mdx-columns" markdown>

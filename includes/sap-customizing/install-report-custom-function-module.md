@@ -15,12 +15,12 @@ The transport request needs to be imported into SAP by your SAP Basis team.
 
 As of Z_XTRACT_IS_REMOTE_REPORT version 1.2 access to reports must be explicitly granted.<br>
 There are 2 ways to verify that the SAP user is allowed to extract a report:
-- Use authentication groups, see [Authorizing Access to Reports via Authorization Groups](https://kb.theobald-software.com/sap/authorizing-access-to-specific-reports){:target="_blank"}.
+- Use authentication groups, see [Authorizing Access to Reports via Authorization Groups](../../knowledge-base/authorizing-access-to-specific-reports.md).
 - Use the custom authorization object Z_TS_PROG. 
 
 
 ***********
 #### Related Links
-- [How to import an SAP Transport Request with the Transport Management System STMS](https://kb.theobald-software.com/sap/how-to-import-an-sap-transport-request-with-the-transport-management-system-stms)
-- [Authorizing Access to Specific Reports](https://kb.theobald-software.com/sap/authorizing-access-to-specific-reports)
-- [Create Function Group](https://help.sap.com/viewer/bd833c8355f34e96a6e83096b38bf192/7.52.0/en-US/d1801ef5454211d189710000e8322d00.html)
+- [How to import an SAP Transport Request with the Transport Management System STMS](../../knowledge-base/how-to-import-an-sap-transport-request.md)
+- [Authorizing Access to Specific Reports](../../knowledge-base/authorizing-access-to-specific-reports.md)
+- [SAP Documentation: Create Function Group](https://help.sap.com/viewer/bd833c8355f34e96a6e83096b38bf192/7.52.0/en-US/d1801ef5454211d189710000e8322d00.html)

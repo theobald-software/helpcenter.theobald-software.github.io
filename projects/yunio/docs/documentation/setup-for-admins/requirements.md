@@ -7,7 +7,6 @@ This section contains information about system requirements and compatible SAP s
 
 {% include "requirements/sap-releases.md" %}
 
-{% include "requirements/sap-authentication-xtract.md" %}
 {% include "requirements/sap-misc.md" %}
 {% include "requirements/operating-systems.md" %}
 
