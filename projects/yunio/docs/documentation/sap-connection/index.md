@@ -4,16 +4,64 @@ title: SAP Connection
 description: SAP Connection
 ---
 
+This section shows how to connect to SAP.
+
 !!! warning "Warning! Missing Authorization"
     To establish a connection to SAP, the access to general authority objects must be available.
     For more information, see [SAP Authority Objects](../setup-in-sap/sap-authority-objects.md/#sap-authorization-profiles).
 
-### Supported Connection Methods
-
+Supported Connection Methods:
 - Connect to a single application server.
 - Connect to a message server (Load Balancing).
 
-### Supported Authentication Methods
+Supported Authentication Methods:
+- [Plain login](#connect-to-sap-using-plain-authentication) using SAP username and password (system or dialogue user).
+- [Secure Network Communication (SNC)](#connect-to-sap-using-snc-authentication) using username and password via basic authentication.
 
-- [Plain login](log-on-to-sap.md#connect-via-plain-authentication) using SAP username and password (system or dialogue user).
-- [Secure Network Communication (SNC)](log-on-to-sap.md#connect-via-snc-authentication) using username and password via basic authentication.
+## Connect to SAP using Plain Authentication
+
+Follow the steps below to set up an SAP connection that uses an SAP username and password for authentication.
+
+1. Navigate to the  :yunio-nav-connections: *Connections* menu in the left side navigation of the Designer.
+2. Click **[Add Connection]** to create a new SAP connection or click :yunio-edit-connection: to edit an existing SAP connection.<br>
+![yunIO-Create-Connection](../../assets/images/yunio/web-ui.png){:class="img-responsive" }
+3. Enter the system details of your SAP system in the subsection [*System*](settings.md/#system).<br>
+4. Set the toggle in the subsection [*Authentication*](settings.md/#authenticatin) to :material-toggle-switch-off: *Plain* authentication.
+5. Enter the SAP username and password of an SAP system or dialogue user.
+6. Click **[Test Connection]** to validate the connection parameters. <br>
+A window with a status message opens in the bottom right corner of the window.
+7. Click **[Save]** to save the connection settings. <br>
+
+!!! tip
+    Activate the option *Request credentials from callers when running services* to pass valid SAP credentials via Basic Authentication. 
+	To pass credentials, the access control setting [*Anonymous*](../access-restrictions/global-access.md/#settings) must be activated.
+
+## Connect to SAP using SNC Authentication
+
+Secure Network Connection (SNC) enables authentication and transport encryption between SAP systems and third-party tools similar to yunIO.
+The credentials are provided via Basic Authentication.
+
+Follow the steps below to set up an SAP connection that uses SNC:
+
+1. Check the SAP profile parameter *snc/gssapi_lib* in SAP (transaction RZ10) to determine, which library is used for encryption in your SAP system. 
+Your SAP Basis has to import and configure the same library on the application server and on the machine that runs yunIO.
+1. Navigate to the  :yunio-nav-connections: *Connections* menu in the left side navigation of the Designer.
+2. Click **[Add Connection]** to create a new SAP connection or click :yunio-edit-connection: to edit an existing SAP connection.<br>
+![yunIO-Create-Connection](../../assets/images/yunio/web-ui.png){:class="img-responsive" }
+3. Enter the system details of your SAP system in the subsection *System*.<br>
+4. Set the toggle in the subsection *Authentication* to :material-toggle-switch: *Secure Network Communication* authentication.
+5. Enter the complete path to the library location in the field **SNC library path**, e.g., `C:\Program Files\SAP\FrontEnd\SecureLogin\lib\sapcrypto.dll`.<br>
+![yunIO-Authentication](../../assets/images/yunio/yunio-authentication.png){:class="img-responsive" }
+6. Enter the SAP partner name configured for the SAP application server in the field **SNC partner name**, e.g., `p:SAPserviceERP/Alice@THEOBALD.LOCAL`.
+7. Click **[Test Connection]** to validate the connection parameters. <br>
+A window with a status message opens in the bottom right corner of the window.
+7. Click **[Save]** to save the connection settings. <br>
+
+## Connect via Router
+
+If you access the SAP source system (Application server or Message server) via an SAP router, set the router string before the host name. 
+For more information on SAP routers, see [SAP Documentation: SAP-Router](https://help.sap.com/viewer/6d9a59096c4b1014b507f15bed51571f/7.01.22/en-US/486b41efb74c07bee10000000a42189d.html).
+
+Example:
+If the application server is "hamlet" and the router string is ``/H/lear.theobald-software.com/H/``, set the host property to ``/H/lear.theobald-software.com/H/hamlet``.
+

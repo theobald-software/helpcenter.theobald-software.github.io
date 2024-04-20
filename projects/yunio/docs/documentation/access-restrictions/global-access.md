@@ -43,7 +43,7 @@ By default, the access restrictions also apply to services.
 To define custom access restrictions for services, see [Service Access](service-access.md).
 
 1. Navigate to the  :yunio-nav-settings: *Settings* menu.
-2. Enable *Transport Layer Security*, see [Server Settings: Transport Layer Security](../server-settings#transport-layer-security).<br>
+2. Enable *Transport Layer Security*, see [Server Settings: Transport Layer Security](../server-settings.md#transport-layer-security).<br>
 3. Restart the Windows yunIO service and connect to the Designer using an HTTPS connection.
 4. Navigate to the  :yunio-nav-access-control: *Access Control* menu.
 5. Set the *Server Access* to **Authenticated**, see [Server Access](#settings) :number-1:. <br>
@@ -60,6 +60,6 @@ When connecting to the Designer, you are now prompted to enter user credentials:
     Restart the yunIO server afterwards.
 
 !!! tip
-    You can also use SAP credentials for basic authentication, see [SAP Connection: Authentication](../sap-connection#authentication).
+    You can also use SAP credentials for basic authentication, see [SAP Connection](../sap-connection/index.md).
     Using SAP credentials and custom user credentials for basic authentication in parallel is not supported.
 

@@ -26,14 +26,14 @@ To use table join, the function module {% if page.meta.product == "yunio" %}[/TH
 The following example shows how to join the tables KNA1 and KNVV.
 
 1. [Create a new service](../../getting-started.md/#create-a-service) of type {{ table }} or click :yunio-edit: to edit an existing service.
-2. [look up](./creating-a-table-service.md/#look-up-an-sap-table-or-view) the first table or view for the join, e.g, KNA1.
+2. [look up](tables-and-views.md/#look-up-an-sap-table-or-view) the first table or view for the join, e.g, KNA1.
 3. Click :where-clause-add: to add the additional tables for the join, e.g., KNVV :number-1:.<br>
 ![table-joins](../../assets/images/yunio/table-joins.png){:class="img-responsive"}
 4. Define the [output columns](#output-columns) you want to extract for both tables :number-2:.
 5. Optional: define a [WHERE clause](#where-clause-editor) for the tables.
 
 	!!! note
-		Be careful of [WHERE clause restrictions ](./where-clause#where-clause-restrictions) when specifying a WHERE-clause to the right table of table joins using a LEFT OUTER JOIN.
+		Be careful of [WHERE clause restrictions ](where-clause.md/#where-clause-restrictions) when specifying a WHERE-clause to the right table of table joins using a LEFT OUTER JOIN.
 
 6. Click **[Add join]** :number-3:. The *Join Editor* opens.
 7. If necessary, change the default values of *Left Table*, *Right Table* and *Join Type*. <br>
@@ -61,7 +61,7 @@ The following example shows how to join the tables KNA1 and KNVV.
 4. Optional: Switch to the *WHERE clause* tab and specify a [WHERE clause](./where-clause).
 
 !!! note
-	Be careful of [WHERE clause restrictions ](./where-clause#where-clause-restrictions) when specifying a WHERE-clause to the right table of table joins using a LEFT OUTER JOIN.
+	Be careful of [WHERE clause restrictions ](where-clause.md/#where-clause-restrictions) when specifying a WHERE-clause to the right table of table joins using a LEFT OUTER JOIN.
 
 In the *Joins* tab, click ![pen](../../assets/images/icons/pen.png) to display joining options. <br>
 In the depicted example a left outer join on tables KNA1 (left table) and KNVV (right table) on the field KUNNR is performed. A WHERE clause on *KNA1~LAND1 = 'DE'* is specified. 

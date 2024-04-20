@@ -3,7 +3,7 @@ title: User Management
 description: Create users
 ---
 
-The following section shows how to manage users in the  :yunio-nav-user: *Users* menu of the Designer.
+This section shows how to manage users in the  :yunio-nav-user: *Users* menu of the Designer.
 The yunIO user management allows you to create custom users with credentials to restrict access to the yunIO Server / Designer and to specific yunIO services.
 
 ### Creating Users

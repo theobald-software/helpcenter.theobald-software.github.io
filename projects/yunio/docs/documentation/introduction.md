@@ -19,15 +19,15 @@ The web services can be easily integrated into your process automation solutions
 
 === "Automation"
 
-	![yunIO-Automation](../../assets/images/yunio/yunio-automation.png){:class="img-responsive" width="800px" }<br>
+	![yunIO-Automation](../assets/images/yunio/yunio-automation.png){:class="img-responsive" width="800px" }<br>
 
 === "Business Processes"
 
-	![yunIO-Business-Processes](../../assets/images/yunio/yunio-business.png){:class="img-responsive" width="800px" }<br>
+	![yunIO-Business-Processes](../assets/images/yunio/yunio-business.png){:class="img-responsive" width="800px" }<br>
 
 === "Data Management"
 
-	![yunIO-Data-Management](../../assets/images/yunio/yunio-data-management.png){:class="img-responsive" width="800px" }
+	![yunIO-Data-Management](../assets/images/yunio/yunio-data-management.png){:class="img-responsive" width="800px" }
 
 
 ### Software Architecture
@@ -36,7 +36,7 @@ yunIO comes with an embedded Web UI, the yunIO Designer, that can be accessed th
 The yunIO service is installed on a local or cloud-hosted Windows server environment. <br>
 If yunIO is installed on a local server environment, a Gateway instance of your choice (e.g. Microsoft om-premises data gateway) can be used to securely tunnel the connection. <br> 
 
-![yunIO-Components](../../assets/images/yunio/theobald-software_architecture_yunio.png){:class="img-responsive" width="800px" }
+![yunIO-Components](../assets/images/yunio/theobald-software_architecture_yunio.png){:class="img-responsive" width="800px" }
 
 ### Integration Types
 
@@ -45,8 +45,8 @@ yunIO offers the following {{ components }} to cover a wide range of integration
 
 |  {{ Component }}  |  Description   |  
 |----------|-------------|
-| [{{ bapi }}](./bapis-and-function-modules.md) | Execute BAPIs and Function Modules. |
-| [{{ report }}](./report.md) | Extract SAP ABAP reports. | 
-| [{{ table }}](./table-and-views.md) | Extract data from SAP tables and views. |
-| [{{ transaction }}](./transactions.md) | Execute SAP transactions without SAP GUI interaction. |
+| [{{ bapi }}](function-modules-and-bapis/index.md) | Execute BAPIs and Function Modules. |
+| [{{ report }}](reports/index.md) | Extract SAP ABAP reports. | 
+| [{{ table }}](tables-and-views/index.md) | Extract data from SAP tables and views. |
+| [{{ transaction }}](transactions/index.md) | Execute SAP transactions without SAP GUI interaction. |
 

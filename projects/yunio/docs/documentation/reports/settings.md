@@ -3,7 +3,7 @@ title: Settings
 description: An overview and description of all Report settings
 ---
 
-The following section contains an overview and description of all available {{ report }} settings.
+This section contains an overview and description of all available {{ report }} settings.
 
 The {{ report }} settings consist of the following subsections:
 - [Control Buttons](#control-buttons) to close, save or delete the service :number-1:.

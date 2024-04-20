@@ -3,7 +3,7 @@ title: Access Restriction
 description: Access Control
 ---
 
-The following section contains information on how to set up access restrictions.
+This section contains information on how to set up access restrictions.
 YunIO allows you to restrict access to the Server and Designer (global access), as well as for specific services (service access).
 
 

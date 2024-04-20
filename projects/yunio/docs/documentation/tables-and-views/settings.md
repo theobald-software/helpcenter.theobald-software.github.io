@@ -3,7 +3,7 @@ title: Settings
 description: An overview and description of all table settings
 ---
 
-The following section contains an overview and description of all available {{ table }} settings.
+This section contains an overview and description of all available {{ table }} settings.
 
 The {{ table }} settings consist of the following subsections:
 - [Control Buttons](#control-buttons) to close, save or delete the service :number-1:.
@@ -47,9 +47,9 @@ The following function modules can be used to extract tables:
 	**Duplicates in the target environment!**<br>
     The SAP standard modules for table extraction do not have pointers for table fields.
     In larger tables this may cause low performance and duplicates in the target environment.
-    Use the function module [THEO/READ_TABLE](#installation-of-theoread_table) from Theobald Software to ensure smooth extractions.
+    Use the function module [THEO/READ_TABLE](../setup-in-sap/custom-function-module-for-table-extraction.md/#installation-of-theoread_table) from Theobald Software to ensure smooth extractions.
 
-Note the necessary [SAP Authority Objects](../setup-in-sap/sap-authority-object.md/#table):
+Note the necessary [SAP Authority Objects](../setup-in-sap/sap-authority-objects.md/#table):
 
 ```
 S_TABU_NAM ACTVT=03; TABLE=ENLFDIR
@@ -87,9 +87,5 @@ Enter WHERE clauses manually in *Text mode* or use the [WHERE Clause Editor](whe
 
 ### Joins
 The Join functionality allows joining two or more SAP tables and extract the result of the join, see [SAP Documentation: Inner Join and Outer Join](https://help.sap.com/doc/saphelp_nwpi71/7.1/en-US/cf/21ec77446011d189700000e8322d00/content.htm?no_cache=true). 
-For information on how to join tables in {{ productName }}, see [Table Joins](table-joins.md).
+For information on how to join tables in {{ productName }}, see [Table Joins](table-join.md).
 
-*****
-#### Related Links
-- [Integration Scenarios](./integration)
-- [Knowledge Base Article: Integrating a yunIO Service with Power Automate](https://kb.theobald-software.com/yunio/integrating-a-yunio-service-with-power-automate)

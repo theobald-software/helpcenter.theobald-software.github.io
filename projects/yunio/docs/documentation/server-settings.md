@@ -6,7 +6,7 @@ tags:
 ---
  
 
-The following section contains an overview of the yunIO server settings in the  :yunio-nav-settings: *Settings* menu. 
+This section contains an overview of the yunIO server settings in the  :yunio-nav-settings: *Settings* menu. 
 Any changes made in this menu only take effect after clicking **[Save]** and restarting the yunIO Windows service.
 
 ### Services Endpoint

@@ -36,7 +36,7 @@ The following restriction levels are available:
 
 ### How to Restrict Access to Services
 
-By default services inherit access restrictions from the server-level, see [Global Access](global-access.ms).
+By default services inherit access restrictions from the server-level, see [Global Access](global-access.md).
 Follow the steps below to further restrict access on the service-level:
 
 1. Navigate to the  :yunio-nav-services:  *Services* menu.

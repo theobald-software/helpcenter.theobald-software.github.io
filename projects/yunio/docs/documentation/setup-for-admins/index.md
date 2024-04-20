@@ -3,7 +3,7 @@ title: Setup for Admins
 description: How to install yunIO, make backups, etc.
 ---
 
-The following section covers setup and maintenance topics for IT admins.
+This section covers setup and maintenance topics for IT admins.
 This includes system requirements, installation and license information.
 For information on requirements in the SAP system, e.g., user rights and customization, see [Setup in SAP](../setup-in-sap/index.md).
 

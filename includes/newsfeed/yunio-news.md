@@ -4,7 +4,7 @@
 
     ---
 
-    Looking for something?<br> Try the search bar, our new Theo chatbot or browse our [documentation](documentation/introduction/index.md).
+    Looking for something?<br> Try the search bar, our new Theo chatbot or browse our [documentation](documentation/introduction.md).
 
     ---
 

@@ -3,7 +3,7 @@ title: Settings
 description: An overview and description of all transaction settings
 ---
 
-The following section contains an overview and description of all available {{ transaction }} settings.
+This section contains an overview and description of all available {{ transaction }} settings.
 
 The {{ transaction }} settings consist of the following subsections:
 - [Control Buttons](#control-buttons) to close, save or delete the service.

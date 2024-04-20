@@ -3,7 +3,7 @@ title: Create a Report Service
 description: How to create a web service that executes function modules / BAPIs
 ---
 
-The following section shows how to use the {{ report }} {{ component }}.<br>
+This section shows how to use the {{ report }} {{ component }}.<br>
 A report extraction is possible if the report returns a table-like structure in SAP.
 
 ### General Workflow
@@ -52,6 +52,6 @@ Follow the steps below to create a simple service that extracts the SAP ABAP rep
 ![SAP-Table-or-Views](../../assets/images/yunio/report-sap3.png){:class="img-responsive"}
 5. Click **[Detect Columns]** to automatically detect the columns of the report. The detected columns are displayed in the section *Output Columns*.
 6. Click **[Save]** to save the service.
-7. Click **[Run]** to check the output of the service, see [Running Services in yunIO](./un-services/#running-services-in-yunio).<br>
+7. Click **[Run]** to check the output of the service, see [Running Services in yunIO](../run-services.md/#running-services-in-yunio).<br>
 ![report-response.png](../../assets/images/yunio/report-response.png){:class="img-responsive"}
 

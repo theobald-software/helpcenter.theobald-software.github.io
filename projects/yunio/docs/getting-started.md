@@ -15,14 +15,14 @@ hide:
 
 ### Installation
 
-1. [Download](https://theobald-software.com/en/download-trial/){ data-preview } a 30 days trial version of yunIO.
+1. [Download](https://theobald-software.com/en/download-trial/) a 30 days trial version of yunIO.
 2. Run the yunIO executable (yunIOSetup.exe) to install yunIO.
-For information on system requirements, see [Requirements](documentation/setup/requirements.md).
+For information on system requirements, see [Requirements](documentation/setup-for-admins/requirements.md).
 3. Make sure that the YunIO Service is running on your windows system and that the default port 8077 is not blocked by your firewall.<br>
-4. Open the yunIO Designer at `http://localhost:8077/` in a [web browser](https://help.theobald-software.com/en/yunio/introduction/requirements#supported-web-browsers) of your choice.<br>
+4. Open the yunIO Designer at `http://localhost:8077/` in a [web browser](documentation/setup-for-admins/requirements.md#supported-web-browsers) of your choice.<br>
 If the yunIO service does not run on the same machine as the browser, replace `localhost` with the name or IP address of the host on which the service runs.
 
-For more information, see [Documentation: Installation](documentation/setup/installation.md/#setup).
+For more information, see [Documentation: Installation](documentation/setup-for-admins/installation-and-update.md).
 
 ### Connect to SAP
 
@@ -30,7 +30,7 @@ Before connecting to SAP for the first time, set up an SAP dialog user with the 
 
 1. Navigate to the  :yunio-nav-connections: *Connections* menu in the left side navigation of the Designer.
 2. Click **[Add Connection]** to create a new SAP connection.<br>
-3. Enter the connection information of your SAP system in the subsection *System*.<br>
+3. Enter the system details of your SAP system in the subsection *System*.<br>
 4. Enter the SAP credentials of the SAP dialog user in the subsection *Authentication*.
 5. Click **[Test Connection]** to validate the connection parameters. A window with a status message opens.
 6. Click **[Save]** to save the connection settings. <br>
@@ -54,10 +54,10 @@ For more information, see [Documentation: SAP Connection](documentation/sap-conn
 
 	|  {{ Component }}  |  Description   |  
 	|----------|-------------|
-	| [{{ bapi }}](./documentation/function-modules-and-bapis/index.md) | Executes BAPIs and Function Modules. |
-	| [{{ table }}](./documentation/table-and-views/index.md) | Extracts SAP ABAP reports. | 
-	| [{{ transaction }}](./documentation/table-and-views/index.md) | Extracts data from SAP tables and views. |
-	| [{{ report }}](./documentation/table-and-views/index.md)  | Executes SAP transactions without SAP GUI interaction. |
+	| [{{ bapi }}](documentation/function-modules-and-bapis/index.md) | Executes BAPIs and Function Modules. |
+	| [{{ table }}](documentation/tables-and-views/index.md) | Extracts SAP ABAP reports. | 
+	| [{{ transaction }}](documentation/transactions/index.md) | Extracts data from SAP tables and views. |
+	| [{{ report }}](documentation/reports/index.md)  | Executes SAP transactions without SAP GUI interaction. |
 
 6. Click **[Save and edit]**.
 The settings of the selected {{ component }} open and the service is now available in the :yunio-nav-services: *Services* menu of yunIO.<br>
@@ -78,7 +78,7 @@ Follow the steps below to create a simple service that extracts customer master 
 3. Click **[Search]** to display the tables found in the SAP system.
 4. Select KNA1 from the search results. The settings of the {{ component }} {{ table }} open automatically.
 5. Optional: Select the table columns you want to extract. By default all columns are extracted. 
-For more information on filter options and advanced settings, see [Documentation: Creating a Table Service](documentation/tables-and-views/creating-a-table-service.md/#settings).
+For more information on filter options and advanced settings, see [Documentation: Creating a Table Service](documentation/tables-and-views/tables-and-views.md/#next-steps).
 6. Click **[Save]** to save the service.<br>
 
 ![yunIO-sample-service](./assets/images/yunio/getting-started/yunio-sample-service.gif){:class="img-responsive" style="border:1px solid black" }

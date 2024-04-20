@@ -3,7 +3,7 @@ title: Create a BAPI Service
 description: How to create a web service that executes function modules / BAPIs
 ---
 
-The following section shows how to use the {{ bapi }} {{ component }}.
+This section shows how to use the {{ bapi }} {{ component }}.
 
 ### Prerequisites
 

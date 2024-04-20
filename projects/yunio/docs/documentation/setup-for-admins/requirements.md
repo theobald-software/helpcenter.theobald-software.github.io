@@ -3,6 +3,8 @@ title: Requirements
 description: System requirements for installing and using yunIO
 ---
 
+This section contains information about system requirements and compatible SAP system for {{ productName }}.
+
 {% include "requirements/sap-releases.md" %}
 
 {% include "requirements/sap-authentication-xtract.md" %}

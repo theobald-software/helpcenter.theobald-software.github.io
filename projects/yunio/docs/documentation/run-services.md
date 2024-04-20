@@ -3,7 +3,7 @@ title: Run Services
 description: How to testrun services directly in yunIO ad hwo to integrate services in 3rd-party-tool
 ---
 
-The following section shows how to test, integrate and pass parameters to services created in yunIO.
+This section shows how to test, integrate and pass parameters to services created in yunIO.
 
 
 ### Running Services in yunIO
@@ -86,6 +86,6 @@ yunIO services support the http methods `POST` and `GET`.
 | Data Types | No restrictions. | Only supports ASCII characters. |
 
 !!! tip "Recommendation"
-	We recommend using the POST method with [Transport Layer Security](./server-settings) (HTTPS) to ensure data protection.
+	We recommend using the POST method with [Transport Layer Security](server-settings.md) (HTTPS) to ensure data protection.
     Do not use the GET method to send sensible data, e.g. credentials.
 

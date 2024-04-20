@@ -17,7 +17,7 @@ Use the `config` folder for setting up a version control system or for creating 
 |:-------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |`extractions` |Contains the [service definitions](../../getting-started.md/#create-a-service).          |
 |`servers`      |Contains the [server settings](../server-settings.md).                                                                                        |
-|`sources`     |Contains the [SAP connections](../sap-connection/log-on-to-sap.md/#creating-an-sap-connection).                                              |
+|`sources`     |Contains the [SAP connections](../sap-connection/index.md).                                              |
 |`users` |Contains the [user settings](../access-restrictions/user-management.md).|
 
 

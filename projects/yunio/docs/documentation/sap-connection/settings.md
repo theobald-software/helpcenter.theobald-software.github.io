@@ -1,9 +1,9 @@
 ---
-title: Settings
-description: How to connect to SAP
+title: Connection Settings
+description: Overview of SAP connection settings
 ---
 
-The following section contains an overview of the yunIO connection settings in the :yunio-nav-connections: *Connections* menu. 
+This section contains an overview of the yunIO connection settings in the :yunio-nav-connections: *Connections* menu. 
 To open the connection settings of an existing SAP connection, click :yunio-edit-connection: next to the connection.
 
 The connection settings consist of the following subsections:
@@ -50,7 +50,7 @@ Use the toggle to switch between the connection methods.
 The following authentication methods are supported:
 - :material-toggle-switch-off: Plain uses the SAP username and password of a system or dialogue user.
 - :material-toggle-switch: Secure Network Communication (SNC) uses the username and password provided via basic authentication.
-SNC enables authentication and transport encryption between SAP systems and third-party tools similar to yunIO, see [How to Setup SNC](log-on-to-sap.md).
+SNC enables authentication and transport encryption between SAP systems and third-party tools similar to yunIO, see [Connect to SAP using Plain Authentication](index.md/#connect-to-sap-using-plain-authentication).
 
 Use the toggle to switch between the authentication methods.
 
@@ -65,7 +65,7 @@ Use the toggle to switch between the authentication methods.
 	| **Request credentials from callers when running services** | If this checkbox is active, SAP credentials are used to restrict service access. Any valid SAP credentials can be passed via Basic Authentication to allow access to a yunIO service.|
 
 	!!! note
-		To use *Request credentials from callers when running services*, the [*Anonymous Access*](./server-settings#anonymous-access) option must be activated.
+		To use *Request credentials from callers when running services*, the [*Anonymous Access*](../access-restrictions/global-access.md/#settings) option must be activated.
 
 === ":material-toggle-switch: Secure Network Connection (SNC)"
 

@@ -3,7 +3,7 @@ title: Create a Transaction Services
 description: How to create a web service that executes SAP Transaction
 ---
 
-The following section shows how to use the {{ transaction }} {{ component }}.
+This section shows how to use the {{ transaction }} {{ component }}.
 
 ### Prerequisites
 
@@ -53,8 +53,8 @@ Ouput parameters are now accessible in the response body of the service.<br>
 
 ****
 #### Related Links
-- [Working with Transactions - Table Parameters](../knowledge-base/transaction-table-parameters.md)
-- [Working with Transaction IE01](../knowledge-base/transaction-ie01.md)
-- [Working with Transaction PA40](../knowledge-base/transaction-pa40.md)
-- [Working with Transaction VA02](../knowledge-base/transaction-va02.md)
-- [Working with Transaction XD02 ](../knowledge-base/transaction-xd02.ms)
+- [Working with Transactions - Table Parameters](../../knowledge-base/transaction-table-parameters.md)
+- [Working with Transaction IE01](../../knowledge-base/transaction-ie01.md)
+- [Working with Transaction PA40](../../knowledge-base/transaction-pa40.md)
+- [Working with Transaction VA02](../../knowledge-base/transaction-va02.md)
+- [Working with Transaction XD02 ](../../knowledge-base/transaction-xd02.md)

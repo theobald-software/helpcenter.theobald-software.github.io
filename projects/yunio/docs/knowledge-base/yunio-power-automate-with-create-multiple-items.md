@@ -54,10 +54,12 @@ For information on how to integrate a yunIO service with Power Automate, see [In
 
 ### Creating Input Data 
 
-- Create data sets that include values for all fields in the table COSTCENTERLIST that are set to *Supplied by Caller* in the yunIO service.<br>
-If needed, [download a sample EXCEL file (.xlsx)](/files/yunio/Create_Multiple_Cost_Centers.xlsx){:download="Create_Multiple_Cost_Centers.xlsx"}.
+- Create data sets that include values for all fields in the table COSTCENTERLIST that are set to *Supplied by Caller* in the yunIO service.
+If needed, download the sample EXCEL file below.
 - Upload the data sets to the SharePoint document library or any other location that is accessible for Power Automate.
- 
+
+[:material-download-circle: Download EXCEL File](../assets/files/yunio/Create_Multiple_Cost_Centers.xlsx){ .md-button }
+
 ### Creating a Power Automate Flow for Multiple Items 
 
 The following workflow reads and processes data from a table and to create new cost centers in the SAP cost center master data.
