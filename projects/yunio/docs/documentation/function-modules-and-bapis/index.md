@@ -9,7 +9,8 @@ The {{ bapi }} {{ component }} can be used to parameterize and execute SAP funct
 
 
 !!! warning "Warning! Missing Authorization"
-    To use the integration type *Function Module / BAPI*, access to the designated authority objects (RFC) in SAP must be available. For more information, see the knowledge base article on [SAP User Rights: BAPI](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights#bapi).
+    To use the {{ bapi }} {{ component }}, access to the designated authority objects (RFC) in SAP must be available. 
+	For more information, see [SAP Authority Objects: BAPI](../setup-in-sap/sap-authority-objects.md/#bapi).
 
 ### About Function Modules / BAPIs
 

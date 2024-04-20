@@ -39,7 +39,7 @@ The following buttons and options are available in the WHERE Clause Editor:
 | :where-clause-column: | Column    | adds a column. Click on the component to select a column from the available tables. | 
 | :where-clause-add-sql:| SQL       |  adds an Open SQL statement, see [SAP Documentation: Open SQL](https://help.sap.com/doc/abapdocu_750_index_htm/7.50/en-us/abenopensql.htm).      |  
 | :material-not-equal-variant:| Operator  | adds an operator e.g., =, <, >, etc. |  
-| :where-clause-add-literal: | Value | adds a static value of type *String*, *Number*, *Flag* or *List*. *List* offers a separate editor to create lists of type *String*, *Number* or *Select*. *Select* enables usage of SELECT statements. For more information, refer to the knowledge base article [Working with Lists in the WHERE-Clause Editor](https://kb.theobald-software.com/tables/where-clause-editor-lists). |
+| :where-clause-add-literal: | Value | adds a static value of type *String*, *Number*, *Flag* or *List*. *List* offers a separate editor to create lists of type *String*, *Number* or *Select*. *Select* enables usage of SELECT statements. {% if page.meta.product != "yunio" %}For more information, see [Working with Lists in the WHERE-Clause Editor](../knowledge-base/tables/where-clause-editor-lists.md). {% endif %}|
 | :where-clause-add: | Criteria | adds a new criteria after the selected criteria. |
 | :where-clause-add-group: | Group | adds a new group of criteria the selected criteria. | 
 {% if page.meta.product != "yunio" and page.meta.parent != "table-cdc" %}| :material-code-brackets: | Parameter | adds a previously defined runtime parameter, see [Using Runtime Parameters in the WHERE Clause Editor](#using-runtime-parameters-in-the-where-clause-editor).|{% endif %} 

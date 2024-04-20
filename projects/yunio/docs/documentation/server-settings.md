@@ -22,7 +22,7 @@ The *Service URL Kind* defines the URL that is used to connect to yunIO services
 |----------|-------------|
 | *Default* | If TLS is active, the first *Subject Alternative Name* provided by the X.509 certificate is used as the hostname, see [Transport Layer Security](#transport-layer-security). |
 | *Custom* | Allows you to enter a custom hostname. Enter the hostname in the field **Custom Hostname** and click **[Save]** to update the OpenAPI definitions of all existing services. |
-| *Azure Relay Hybrid Connection* | When an Azure Relay Hybrid Connection is set up, yunIO services use an Azure Relay address to become accessible to applications running in the Azure cloud. For more information on Azure Relay, refer to the knowledge base article [Establish an Azure Relay Hybrid Connection to yunIO](https://kb.theobald-software.com/yunio/establish-an-azure-relay-hybrid-connection). |
+| *Azure Relay Hybrid Connection* | When an Azure Relay Hybrid Connection is set up, yunIO services use an Azure Relay address to become accessible to applications running in the Azure cloud. For more information on Azure Relay, see [Establish an Azure Relay Hybrid Connection to yunIO](../knowledge-base/establish-an-azure-relay-hybrid-connection.md). |
 
 !!! note
     Wildcard certificates are supported. Enter the hostname of the certificate as a custom endpoint.
@@ -38,14 +38,14 @@ The *OpenAPI Target Kind* defines properties that can be added to the Swagger/Op
 |  *OpenAPI Target Kind*  |  Description   |  
 |----------|-------------|
 | *Default* | If this option is active, the Swagger/OpenAPI json file contains no additional properties. |
-| *Nintex Gateway* | Select this option when integrating yunIO services with the [Nintex Gateway](https://help.nintex.com/en-US/nwc/Content/Gateway/InstallAndConfigure.htm). Nintex properties are added to into Swagger/OpenAPI json file and there is no need to manually change the swagger definition. For more information, refer to the knowledge base article [Integrating a yunIO Service via Nintex Gateway](https://kb.theobald-software.com/yunio/integrating-yunio-via-nintex-gateway).|
+| *Nintex Gateway* | Select this option when integrating yunIO services with the [Nintex Gateway](https://help.nintex.com/en-US/nwc/Content/Gateway/InstallAndConfigure.htm). Nintex properties are added to into Swagger/OpenAPI json file and there is no need to manually change the swagger definition. For more information, see [Integrating a yunIO Service via Nintex Gateway](../knowledge-base/integrating-yunio-via-nintex-gateway.md).|
 
 ### Transport Layer Security
 
 ![Server-Settings-TLS](../assets/images/yunio/server-settings-tls.png){:class="img-responsive"}
 
 Transport Layer Security (TLS) protocol allows the user to communicate with the respective service in a secure way by encrypting the communication with that service (HTTPS).
-This requires the installation of an X.509 certificate, see [Knowledge Base: Installing an X.509 Certificate](https://kb.theobald-software.com/yunio/x509-certificate). <br>
+This requires the installation of an X.509 certificate, see [Installing an X.509 Certificate](../knowledge-base/x509-certificate.md). <br>
 For more information on TLS, see [Microsoft: Transport Layer Security Protocol](https://docs.microsoft.com/en-us/windows/win32/secauthn/transport-layer-security-protocol).
 
 !!! note
@@ -62,7 +62,7 @@ A custom hostname can be entered in the [Services Endpoint](#endpoint) setting.
 5. Enter "NT Service\yunIO Service" within the Object picker UI, check the granted permission and apply the changes. <br>
 ![Access](../assets/images/yunio/x509-certificate-permission.png){:class="img-responsive" width="500px"}
 
-For information on how to renew a certificate, see [Knowledge Base: Certificate Renewal for TLS](https://kb.theobald-software.com/yunio/certificate-renewal).
+For information on how to renew a certificate, see [Certificate Renewal for TLS](../knowledge-base/certificate-renewal.md).
 
 #### TLS enabled
 

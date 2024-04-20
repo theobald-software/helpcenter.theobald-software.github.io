@@ -9,7 +9,7 @@ The {{ report }} {{ component }} can be used to extracts data from ABAP reports 
 
 !!! warning "Warning! Missing Authorization"
     To use Reports in yunIO, access to the designated authority objects (RFC) in SAP must be available.
-    For more information, refer to the knowledge base article [SAP User Rights: Report](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights#report).
+    For more information, refer to the knowledge base article [SAP Authority Objects: Report](../setup-in-sap/sap-authority-objects.md/#report).
 
 ### About Reports
 
