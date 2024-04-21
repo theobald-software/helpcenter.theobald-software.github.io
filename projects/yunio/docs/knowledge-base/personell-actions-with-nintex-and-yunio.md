@@ -22,20 +22,29 @@ For more information on yunIO, see [Theobald Software: yunIO](https://theobald-s
 !!! note
     The parameters that are needed to create new employees are dependent on your customized SAP settings.
 
-1. Define a [connection to your SAP system](https://help.theobald-software.com/en/yunio/sap-connection) in yunIO. 
-2. [Create a new service](https://help.theobald-software.com/en/yunio/getting-started#creating-a-service) in yunIO. 
+1. [Create a service](../getting-started.md/#create-a-service) in yunIO.
 The depicted example uses the integration type *Transaction* for the service.
-3. Record SAP transactions to create a new employee in SAP, see [Working with Transaction PA40](https://kb.theobald-software.com/yunio/transaction-pa40). Example:<br>
-![PA40](../assets/images/yunio/articles/pa40.gif){:class="img-responsive" width="800px" style="border:1px solid black;"}
-4. Parameterize all mandatory SAP fields in the yunIO service. 
-For information on how to parameterize services, see [Documentation: Parameterize Transactions](https://help.theobald-software.com/en/yunio/transactions#parameterize-transactions).<br>
+2. Record SAP transactions to create a new employee in SAP, see [Working with Transaction PA40](transaction-pa40.md). Example:<br>
+![PA40](../assets/images/yunio/articles/pa40.gif){:class="img-responsive"  style="border:1px solid black;"}
+3. Parameterize all mandatory SAP fields in the yunIO service. 
+For information on how to parameterize services, see [Documentation: Parameterize Transactions](../documentation/transactions/transactions.md/#parameterize-transactions).
 The depicted example uses the following input parameters:
-*EntryDate*, *FirstName*, *LastName*, *BirthDate*, *BirthPlace*, *Language*, *Nationality*, *Street*, *City*, *PostalCode*.<br>
-The input parameters can be adjusted according to your individual scenario requirements.
-![PA40](../assets/images/yunio/articles/pa40-parameters.gif){:class="img-responsive" width="800px" style="border:1px solid black;"}
-5. Click :yunio-run: to testrun the service in yunIO (1). For more information, see [Documentation: Testing a Service](https://help.theobald-software.com/en/yunio/run-services#testing-a-service).
-6. Click :yunio-run-download: to download the service definition (2).<br>
-![yunio-Services-Function-Download](../assets/images/yunio/articles/yunio-run-services-function-download.png){:class="img-responsive" width="800px"}
+	- *EntryDate*
+	- *FirstName*
+	- *LastName*
+	- *BirthDate*
+	- *BirthPlace*
+	- *Language*
+	- *Nationality*
+	- *Street*
+	- *City*
+	- *PostalCode*
+	
+	The input parameters can be adjusted according to your individual scenario requirements.
+	![PA40](../assets/images/yunio/articles/pa40-parameters.gif){:class="img-responsive"  style="border:1px solid black;"}
+4. Click :yunio-run: to testrun the service in yunIO :number-1:. For more information, see [Documentation: Running Services in yunIO](../documentation/run-services.md/#running-services-in-yunio).
+5. Click :yunio-run-download: to download the service definition :number-2:.<br>
+![yunio-Services-Function-Download](../assets/images/yunio/articles/yunio-run-services-function-download.png){:class="img-responsive" }
 
 <!---
 &bull; Entry Date <br>
@@ -52,7 +61,7 @@ The input parameters can be adjusted according to your individual scenario requi
 
 ### Setup in Nintex
 
-1. Integrate the yunIO service created in [Setup in yunIO](#setup-in-yunio) as an Xtension in Nintex, see [Integrating a yunIO Service with Nintex: Configuring a yunIO Xtension in Nintex](https://kb.theobald-software.com/yunio/integrating-a-yunio-service-with-nintex#configuring-a-yunio-xtension-in-nintex).
+1. Integrate the yunIO service created in [Setup in yunIO](#setup-in-yunio) as an Xtension in Nintex, see [Integrating a yunIO Service with Nintex: Configuring a yunIO Xtension in Nintex](integrating-a-yunio-service-with-nintex.md/#configuring-a-yunio-xtension-in-nintex).
 2. Import the Nintex template for Employee Onboarding to your tenant, see [Nintex Gallery: Employee Onboarding](https://gallery.nintex.com/t/employee-onboarding).
 3. Open the imported Nintex workflow.
 4. Add the yunIO Xtension from step 1 after the contract is signed.<br>
@@ -69,7 +78,6 @@ The input parameters can be adjusted according to your individual scenario requi
 
 *****
 #### Related Links
-- [yunIO Online Help](https://help.theobald-software.com/en/yunio/)
-- [yunIO Documentation: Transactions](https://help.theobald-software.com/en/yunio/transactions)
+- [yunIO Documentation: Transactions](../documentation/transactions/index.md)
 - [Nintex Gallery: Employee Onboarding](https://gallery.nintex.com/t/employee-onboarding)
-- [Integrating a yunIO Service with Nintex](https://kb.theobald-software.com/yunio/integrating-a-yunio-service-with-nintex)
+- [Integrating a yunIO Service with Nintex](integrating-a-yunio-service-with-nintex.md)

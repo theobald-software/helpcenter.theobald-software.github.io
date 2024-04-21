@@ -14,14 +14,14 @@ The following article shows how to manually and automatically renew a X.509 cert
 #### Renew a Certificate with New Key
 
 1. Before the old certificate expires, install a new certificate on the server machine.
-2. Open the yunIO Designer and switch to the new certificate, see [Server Settings - Transport Layer Security](https://help.theobald-software.com/en/yunio/server-settings#transport-layer-security).
+2. Open the yunIO Designer and switch to the new certificate, see [Server Settings - Transport Layer Security](../documentation/server-settings.md/#transport-layer-security).
 3. Delete the old certificate from the Microsoft Certificate Store.
 
 #### Renew a Certificate with the Same Key
 
 1. Block external access to yunIO using the firewall.
-2. Open the yunIO Designer and enable anonymous access, see [Server Settings - Anonymous Access](https://help.theobald-software.com/en/yunio/server-settings).
-3. Disable TLS in the Designer, see [Server Settings - Transport Layer Security](https://help.theobald-software.com/en/yunio/server-settings#transport-layer-security).
+2. Open the yunIO Designer and enable anonymous access, see [Access Restrictions - Anonymous Access](../documentation/access-restrictions/global-access.md/#settings).
+3. Disable TLS in the Designer, see [Server Settings - Transport Layer Security](../documentation/server-settings.md/#transport-layer-security).
 4. Renew the certificate with the same key using Windows AD Certificate Services.
 5. Enable TLS in the Designer with the new certificate.
 6. Disable anonymous access in the Designer.
@@ -51,6 +51,6 @@ The `yunio-le.ps1` script requires 2 input parameters:
 ******
 
 #### Related Links
-- [Installing an X.509 Certificate](./x509-certificate.md)
-- [Enabling Secure Network Communication (SNC) via X.509 certificate](./enable-snc-using-pse-file.md)
-- [Documentation: Server Settings](https://help.theobald-software.com/en/yunio/server-settings)
+- [Installing an X.509 Certificate](x509-certificate.md)
+- [Enabling Secure Network Communication (SNC) via X.509 certificate](enable-snc-using-pse-file.md)
+- [Documentation: Server Settings](../documentation/server-settings.md)

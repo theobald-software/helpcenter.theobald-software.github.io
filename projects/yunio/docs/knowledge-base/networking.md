@@ -38,8 +38,8 @@ If that is not possible, requests to the yunIO server can be made from untrusted
 ### Direct Connection
 
 A direct connection can be established, if firewall rules allow incoming requests from the caller's network to the yunIO/SAP network. 
-HTTPS should be enabled for direct connections to protect the confidentiality and integrity of the communication, see [yunIO Server Settings: Transport Layer Security](https://help.theobald-software.com/en/yunio/server-settings#transport-layer-security).
-The ports for service calls and for accessing the designer are open, see [yunIO Server Settings: Services, Designer and WebSockets](https://help.theobald-software.com/en/yunio/server-settings#services-designer-and-websockets).
+HTTPS should be enabled for direct connections to protect the confidentiality and integrity of the communication, see [yunIO Server Settings: Transport Layer Security](../documentation/server-settings.md/#transport-layer-security).
+The ports for service calls and for accessing the designer are open, see [yunIO Server Settings: Services, Designer and WebSockets](../documentation/server-settings.md/#services-designer-and-websockets).
 
 For callers in cloud environments, it might not be possible to restrict requests to the yunIO server to trusted origins through firewall rules.
 
@@ -60,7 +60,7 @@ b) The request is forwarded through the secure tunnel to the yunIO server.
 3. The yunIO server communicates with SAP. The response is sent back to the caller. <br>
 ![Add parameters](../assets/images/yunio/articles/ts-knowledge-base_azure-relay.png){:class="img-responsive" width="600px"}
 
-For information on how to set up an Azure Relay Hybrid Connection with yunIO, see [Establish an Azure Relay Hybrid Connection to yunIO](./establish-an-azure-relay-hybrid-connection.md).
+For information on how to set up an Azure Relay Hybrid Connection with yunIO, see [Establish an Azure Relay Hybrid Connection to yunIO](establish-an-azure-relay-hybrid-connection.md).
 
 ### Azure VPN
 The caller and yunIO/SAP can be connected through a secure tunnel and joined to the same VNet in Azure.
@@ -97,6 +97,6 @@ c) The request is forwarded to the yunIO server.
 ******
 #### Related Links:
 
-- [yunIO Online Help](https://help.theobald-software.com/en/yunio/)
+- [yunIO Documentation](../documentation/introduction.md)
 - [Microsoft Documentation: Azure Relay](https://docs.microsoft.com/en-gb/azure/azure-relay/relay-what-is-it)
 - [Microsoft Documentation: On-premises Data Gateway](https://docs.microsoft.com/en-gb/data-integration/gateway/service-gateway-onprem)

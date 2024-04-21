@@ -41,7 +41,7 @@ In the request body, the columns of the table are represented by their SAP techn
 You can look up the description of the SAP technical names in the OpenAPI/Swagger definition, e.g., [Swagger Editor](https://editor.swagger.io/).
 
 !!! tip
-    Test the service and pass parameters in yunIO before integrating the service, see [Documentation: Testing a Service](https://help.theobald-software.com/en/yunio/run-services#testing-a-service).
+    Test the service and pass parameters in yunIO before integrating the service, see [Documentation: Running Services in yunIO](../documentation/run-services.md/#running-services-in-yunio).
 
 <table>
 <tr><th>
@@ -152,5 +152,5 @@ The depicted example adds a new item at the 4th row of the table:
 ******
 
 #### Related Links
-- [Documentation: Transactions](https://help.theobald-software.com/en/yunio/transactions)
-- [Documentation: Parameterize Transactions](https://help.theobald-software.com/en/yunio/transactions#parameterize-transactions)
+- [Documentation: Transactions](../documentation/transactions/index.md)
+- [Documentation: Parameterize Transactions](../documentation/transactions/transactions.md/#parameterize-transactions)

@@ -20,7 +20,7 @@ The SAP connection assigned to a transaction service must use an SAP dialog user
 
 Follow the steps below to create a new equipment in SAP.<br>
 
-1. Create a new Service with the integration type *Transaction*. For more information on creating a service, see [Creating a Service](https://help.theobald-software.com/en/yunio/getting-started#creating-a-service).
+1. Create a new Service with the integration type *Transaction*. For more information on creating a service, see [Create a Service](../getting-started.md/#create-a-service).
 2. In the transaction service enter the transaction IE01 and press **[Start]**. A replicated SAP GUI of the transaction IE01 is displayed.<br>
 ![yunio-Transaction](../assets/images/yunio/articles/transaction.png){:class="img-responsive"}
 3. Edit the fields according to the kind of equipment you want to create e.g., enter a new equipment.
@@ -32,7 +32,7 @@ Example: to parameterize a field in a specific tap or menu, the tab or menu must
 6. Click **[Equipment] > [Save]** to save the new equipment in SAP.<br>
 ![yunio-Transaction-IE01-Save](../assets/images/yunio/articles/transaction-save-equipment.png){:class="img-responsive"}
 7. Click **[Save]** to save your actions. <br>
-Alternatively, click **[Stop]** to start parameterizing, see [Documentation: Parameterize Transactions](https://help.theobald-software.com/en/yunio/transactions#parameterize-transactions).
+Alternatively, click **[Stop]** to start parameterizing, see [Documentation: Parameterize Transactions](../documentation/transactions/transactions.md/#parameterize-transactions).
 8. Copy the URL of the service definition ( :yunio-copy: icon) or download the service definition ( :yunio-run-download: icon) to integrate the service in your workflow.
 For information on how to use yunIO services in Power Automate or Nintex, see [Integrating a yunIO Service with Power Automate](integrating-a-yunio-service-with-power-automate.md) or [Integrating a yunIO Service with Nintex](integrating-a-yunio-service-with-nintex.md).
 ![yunio-Services](../assets/images/yunio/articles/yunio-run-services.png){:class="img-responsive"}
@@ -46,5 +46,5 @@ For information on how to use yunIO services in Power Automate or Nintex, see [I
 ******
 
 #### Related Links
-- [Documentation: Transactions](https://help.theobald-software.com/en/yunio/transactions)
+- [Documentation: Transactions](../documentation/transactions/index.md)
 - [SAP Help: Creating a Piece of Equipment](https://help.sap.com/viewer/f0e0dd7850e64947aa66a647f8d3af09/6.18.latest/en-US/bc78bb53707db44ce10000000a174cb4.html).

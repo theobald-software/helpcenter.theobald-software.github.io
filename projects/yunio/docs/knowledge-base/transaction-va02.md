@@ -18,7 +18,7 @@ The SAP connection assigned to a transaction service must use an SAP dialog user
 
 The depicted example application uses a yunIO service to change items in a sales order in SAP.
 
-1. Create a new Service with the integration type *Transaction*. For more information on creating a service, see [Creating a Service](https://help.theobald-software.com/en/yunio/getting-started#creating-a-service).
+1. Create a new Service with the integration type *Transaction*. For more information on creating a service, see [Create a Service](../getting-started.md/#create-a-service).
 2. In the transaction service enter the transaction VA02 and press **[Start]**. A replicated SAP GUI of the transaction VA02 is displayed.
 ![change-sales-order](../assets/images/yunio/articles/change-sales-order.png){:class="img-responsive"}
 3. Enter an order number between 1 - 4999999.<br>
@@ -32,7 +32,7 @@ All fields that need to be parameterized must be available in the section *GUI S
 ![change-sales-order4](../assets/images/yunio/articles/va02.gif){:class="img-responsive" style="border:1px solid black;"}
 8. Click **Sales document > Save** to save any changes in SAP.
 9. Click **[Save]** to save the service.<br>
-10. Edit the service to add parameters to the service, see [Documentation: Parameterize Transactions](https://help.theobald-software.com/en/yunio/transactions#parameterize-transactions).
+10. Edit the service to add parameters to the service, see [Documentation: Parameterize Transactions](../documentation/transactions/transactions.md/#parameterize-transactions).
 
 
 !!! note
@@ -42,5 +42,5 @@ All fields that need to be parameterized must be available in the section *GUI S
 ******
 
 #### Related Links
-- [Documentation: Transactions](https://help.theobald-software.com/en/yunio/transactions)
-- [Documentation: Parameterize Transactions](https://help.theobald-software.com/en/yunio/transactions#parameterize-transactions)
+- [Documentation: Transactions](../documentation/transactions/index.md)
+- [Documentation: Parameterize Transactions](../documentation/transactions/transactions.md/#parameterize-transactions)

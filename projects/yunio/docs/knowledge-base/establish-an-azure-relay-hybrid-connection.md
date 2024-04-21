@@ -24,9 +24,9 @@ The Azure Relay Hybrid Connection is now ready to use.
 The following settings are required in yunIO:
 
 1. Open the *Settings* menu in yunIO.
-2. Set **Service URL Kind** to *Azure Relay Hybrid Connection* (1).<br>
+2. Set **Service URL Kind** to *Azure Relay Hybrid Connection* :number-1:.<br>
 ![azure-server-settings](../assets/images/yunio/articles/azure-server-settings.png){:class="img-responsive"}
-3. Paste the primary connection string from the *Shared Access Policy* of the Azure Hybrid Connection in the field **Azure Relay Connection String** (2).
+3. Paste the primary connection string from the *Shared Access Policy* of the Azure Hybrid Connection in the field **Azure Relay Connection String** :number-2:.
 4. Click **[Save]** and restart the YunIO service to complete the registration.
 
 The Azure Relay Hybrid Connection in yunIO is now ready to use.
@@ -37,7 +37,7 @@ There are multiple ways to check the connection between Azure and yunIO:
 - Check the Hybrid Connection in Azure: <br>The number of Listeners that are connected to a Hybrid Connection is displayed in the *Overview* screen of Azure Relay. If the connection to yunIO is established succesfully, the number of Listeners equals 1.<br>
 ![check-azure-hybrid-connection](../assets/images/yunio/articles/check-azure-hybrid-connection.png){:class="img-responsive"}
 - Check the yunIO logs: <br>
-Open the *Logs* menu in yunIO and display the latest logs, see [Documentation: Logs](https://help.theobald-software.com/en/yunio/logs). If the connection to Azure Relay is established succesfully, the following log entries are displayed:<br>
+Open the *Logs* menu in yunIO and display the latest logs, see [Documentation: Logs](../documentation/logs.md). If the connection to Azure Relay is established successfully, the following log entries are displayed:<br>
 ```
 PT00H00M26.576S I AzureRelayListener: Found a connection string setting.
 PT00H00M26.578S I AzureRelayListener: Online. Listening...
@@ -49,6 +49,6 @@ PT00H00M26.578S I AzureRelayListener: Server listening...
 ******
 
 #### Related Links
-- [Documentation: Server Settings](https://help.theobald-software.com/en/yunio/server-settings)
+- [Documentation: Server Settings](../documentation/server-settings.md)
 - [Microsoft Documentation: What is Azure Relay?](https://learn.microsoft.com/en-us/azure/azure-relay/relay-what-is-it)
 - [Microsoft Documentation: Get started with Relay Hybrid Connections HTTP requests in .NET](https://learn.microsoft.com/en-us/azure/azure-relay/relay-hybrid-connections-http-requests-dotnet-get-started)

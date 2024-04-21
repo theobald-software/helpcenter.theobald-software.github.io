@@ -21,7 +21,7 @@ Create a yunIO service that creates cost centers in the SAP cost center master d
 !!! note
     The parameters that are needed to create cost centers are dependent on your customized SAP settings.
 
-1. Create a service in yunIO. For this example we use the BAPI_COSTCENTER_CREATEMULTIPLE to create multiple cost centers in SAP.
+1. [Create a service](../getting-started.md/#create-a-service) in yunIO. For this example we use the BAPI_COSTCENTER_CREATEMULTIPLE to create multiple cost centers in SAP.
 2. Activate **Commit Transaction** in the *Advanced Settings* of the service.
 This option is mandatory when using BAPI_COSTCENTER_CREATEMULTIPLE.<br>
 ![service-multiple-items](../assets/images/yunio/articles/service-multiple-items.png){:class="img-responsive" width="800px"}
@@ -39,9 +39,9 @@ This option is mandatory when using BAPI_COSTCENTER_CREATEMULTIPLE.<br>
 	- CURRENCY_ISO<br>
 	- PROFIT_CTR<br>
 	- NAME<br>
-6. Click :yunio-run: to testrun the service in yunIO (1). For more information, see [Documentation: Testing a Service](https://help.theobald-software.com/en/yunio/run-services#testing-a-service).
-7. Click :yunio-run-download: to download the service definition (2).<br>
-![yunio-Services-Function-Download](../assets/images/yunio/articles/yunio-run-services-function-download.png){:class="img-responsive" width="800px"}
+6. Click :yunio-run: to testrun the service in yunIO :number-1:. For more information, see [Documentation: Running Services in yunIO](../documentation/run-services.md/#running-services-in-yunio).
+7. Click :yunio-run-download: to download the service definition :number-2:.<br>
+![yunio-Services-Function-Download](../assets/images/yunio/articles/yunio-run-services-function-download.png){:class="img-responsive" }
 
 ### Configuring a yunIO Custom Connector in Power Automate
 
@@ -103,5 +103,5 @@ Check if the cost centers from the input data sets are created in SAP (table CSK
 #### Related Links
 - [Youtube Tutorial: SAP process automation - Power Automate SAP Connector](https://youtu.be/k_yL8Bphfus)
 - [Microsoft Community Post: Example for Item Arrays](https://powerusers.microsoft.com/t5/Building-Flows/Build-JSON-object/m-p/113188#M11041)
-- [Documentation: How to Run a Service](https://help.theobald-software.com/en/yunio#how-to-run-a-service)
+- [Getting Started: Run and Integrate Services](../getting-started.md/#run-and-integrate-services)
 

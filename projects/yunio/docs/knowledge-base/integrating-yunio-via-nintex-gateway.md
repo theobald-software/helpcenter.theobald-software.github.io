@@ -12,16 +12,16 @@ The Nintex Gateway is an on-premises application that enables Nintex Automation 
 - Install and configure the [Nintex Gateway](https://help.nintex.com/en-US/nwc/Content/Gateway/InstallAndConfigure.htm).
 - Make sure that the Nintex Gateway has a valid API key for authentication.
 - Install yunIO version 1.26.3 or higher.
-- Set up Basic Authentication in yunIO, see [Documentation: Access Control](https://help.theobald-software.com/en/yunio/access-control#global-access-control). 
+- Set up Basic Authentication in yunIO, see [Documentation: Access Restrictions](../documentation/access-restrictions/index.md). 
 
 ### Creating a yunIO Service for Nintex Gateway
 
-1. Create a service in yunIO. The depicted example uses the BAPI SD_RFC_CUSTOMER_GET to search and extract customer data from SAP. 
-2. Click :yunio-run: to testrun the service in yunIO (1). For more information, see [Documentation: Testing a Service](https://help.theobald-software.com/en/yunio/run-services#testing-a-service).
+1. [Create a service](../getting-started.md/#create-a-service) in yunIO. The depicted example uses the BAPI SD_RFC_CUSTOMER_GET to search and extract customer data from SAP. 
+2. Click :yunio-run: to testrun the service in yunIO :number-1:. For more information, see [Documentation: Running Services in yunIO](../documentation/run-services.md/#running-services-in-yunio).
 3. Navigate to **Settings** and select *Nintex Gateway* as the **OpenAPI Target Kind** to add predefined Nintex Gateway properties to the service definition.<br>
 ![nintex-gateway-target](../assets/images/yunio/articles/nintex-gateway-target.png){:class="img-responsive"}
-4. Navigate to **Services** and click :yunio-run-download: to download the service definition (2).<br>
-![yunio-Services-Function-Download](../assets/images/yunio/articles/yunio-run-services-function-download.png){:class="img-responsive" width="800px"}
+4. Navigate to **Services** and click :yunio-run-download: to download the service definition :number-2:.<br>
+![yunio-Services-Function-Download](../assets/images/yunio/articles/yunio-run-services-function-download.png){:class="img-responsive" }
 5. Open the service definition and check if the following properties are available at the end of the service definition:
 ```json linenums="256" title="Nintex Properties"
 "securityDefinitions": {
@@ -76,9 +76,9 @@ The Nintex Gateway is an on-premises application that enables Nintex Automation 
 ### Configuring a yunIO Xtension in Nintex
 
 1. Open your Nintex Automation Cloud tenancy.
-2. Click **Xtensions** (1) in the dashboard to open the Xtensions page.
-3. Click ![nintex-add](../assets/images/yunio/articles/nintex-add.png) (2) in the Private connector list.
-4. Click **[Choose a file]** (3). Navigate to the yunIO service definition from [Creating a yunIO Service for Nintex Gateway](#creating-a-yunio-service-for-nintex-gateway).<br>
+2. Click **Xtensions** in the dashboard to open the Xtensions page :number-1:.
+3. Click ![nintex-add](../assets/images/yunio/articles/nintex-add.png) in the Private connector list :number-2:.
+4. Click **[Choose a file]** :number-3:. Navigate to the yunIO service definition from [Creating a yunIO Service for Nintex Gateway](#creating-a-yunio-service-for-nintex-gateway).<br>
 ![nintex-xtensions1](../assets/images/yunio/articles/nintex-xtension.png){:class="img-responsive"}
 5. Wait for the Nintex Automation Cloud to validate the file.
 6. Click **[Next]**. Nintex Workflow Cloud detects the basic authentication security template.
@@ -86,13 +86,13 @@ The Nintex Gateway is an on-premises application that enables Nintex Automation 
 8. Edit the **Name** of the Xtension. The entered name becomes the name of the action group in the workflow.
 9. Edit the **Description** of the Xtension. This appears in the Private connector list in the Xtensions page.
 10. Optional: select or upload an icon for the Xtension.
-11. Click **[Publish]** (4).<br>
+11. Click **[Publish]** :number-4:.<br>
 ![nintex-xtensions2](../assets/images/yunio/articles/nintex-xtension2.png){:class="img-responsive"}
 
 ### Configuring a yunIO Connection in Nintex
 
-1. Click **Connections** (5) in the dashboard to open the Connections page.
-2. Click **[Add Connection]** (6) in the Connector list.<br>
+1. Click **Connections** in the dashboard to open the Connections page :number-5:.
+2. Click **[Add Connection]** in the Connector list :number-6:.<br>
 ![nintex-connections](../assets/images/yunio/articles/nintex-connections.png){:class="img-responsive"}
 3. Select the yunIO connector from [Configuring a yunIO Xtension in Nintex](#configuring-a-yunio-xtension-in-nintex).
 4. Click **[Next]**.
@@ -110,10 +110,10 @@ The Nintex Gateway is an on-premises application that enables Nintex Automation 
 
 After an Xtension and a Connection is created, the yunIO service can be used in a workflow. 
 
-1. Drag&Drop the yunIO Xtension from [Configuring a yunIO Xtension in Nintex](#configuring-a-yunio-xtension-in-nintex) into the workflow (7).
-2. Select the connection from [Configuring a yunIO Connection in Nintex](#configuring-a-yunio-connection-in-nintex) (8).<br>
+1. Drag&Drop the yunIO Xtension from [Configuring a yunIO Xtension in Nintex](#configuring-a-yunio-xtension-in-nintex) into the workflow :number-7:.
+2. Select the connection from [Configuring a yunIO Connection in Nintex](#configuring-a-yunio-connection-in-nintex) :number-8:.<br>
 ![nintex-gateway-workflow](../assets/images/yunio/articles/nintex-gateway-workflow.png){:class="img-responsive"}
-3. Parameterize the input fields (9). 
+3. Parameterize the input fields :number-9:. 
 
 ******
 

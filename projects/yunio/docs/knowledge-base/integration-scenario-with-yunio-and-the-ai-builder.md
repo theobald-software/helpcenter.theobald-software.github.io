@@ -21,7 +21,7 @@ Create a yunIO service for incoming invoices.<br>
 !!! note
     The parameters that are needed to create an incoming invoice are dependent on your customized SAP settings for the invoicing process.
 
-1. Create a service in yunIO. Select *Function Module / BAPI* as the extraction type for the service. <br>
+1. [Create a service](../getting-started.md/#create-a-service) in yunIO. Select {{ bapi }} as the {{ component }} for the service. <br>
 The depicted example uses the BAPI_INCOMINGINVOICE_CREATE1 to create an incoming invoice in SAP. 
 2. Set the following import parameters to *Supplied by Caller* (Structure *HEADERDATA*):<br>
 	- INVOICE_IND (Indicator: post invoice)<br>
@@ -48,18 +48,18 @@ The depicted example uses the BAPI_INCOMINGINVOICE_CREATE1 to create an incoming
 	- ITEM_AMOUNT (Amount in document currency)<br>
 	- QUANTITY (Quantity)<br>
 	- PO_UNIT (Purchase Order Unit of Measure)	<br>
-6. Click :yunio-run: to testrun the service in yunIO (1). For more information, see [Documentation: Testing a Service](https://help.theobald-software.com/en/yunio/run-services#testing-a-service).
-7. Click :yunio-run-download: to download the service definition (2).<br>
-![yunio-Services-Function-Download](../assets/images/yunio/articles/yunio-run-services-function-download.png){:class="img-responsive" width="800px"}
+6. Click :yunio-run: to testrun the service in yunIO :number-1:. For more information, see [Documentation: Running Services in yunIO](../documentation/run-services.md/#running-services-in-yunio).
+7. Click :yunio-run-download: to download the service definition :number-2:.<br>
+![yunio-Services-Function-Download](../assets/images/yunio/articles/yunio-run-services-function-download.png){:class="img-responsive"}
 
 ### Configuring a yunIO Custom Connector in Power Automate
 
 To use the service created in [Creating a Service in yunIO](#creating-a-service-in-yunio) with Power Automate, it must be available as a custom connector in Power Automate. 
-For information on how to integrate a yunIO service with Power Automate, see [Integrating a yunIO Service with Power Automate](https://kb.theobald-software.com/yunio/integrating-a-yunio-service-with-power-automate).
+For information on how to integrate a yunIO service with Power Automate, see [Integrating a yunIO Service with Power Automate](integrating-a-yunio-service-with-power-automate.md).
 
 !!! note
     When integrating services from a local yunIO installation with a cloud hosted platform like Power Automate, a gateway to tunnel the connection is recommended, e.g., the [**Microsoft On-premises data gateway**](https://docs.microsoft.com/en-us/data-integration/gateway/).
-    For more information about yunIO networking settings, see [yunIO Networking Scenarios](https://kb.theobald-software.com/yunio/networking).
+    For more information about yunIO networking settings, see [yunIO Networking Scenarios](networking.md).
 
 ### Creating a Power Automate Flow for Invoice processing
 
@@ -102,5 +102,5 @@ For more information on incoming invoices, see [SAP Documentation: Incoming Invo
 
 #### Related Links
 - [Youtube Tutorial: SAP process automation - Power Automate SAP Connector](https://www.youtube.com/watch?v=k_yL8Bphfus)
-- [Documentation: How to Run a Service](https://help.theobald-software.com/en/yunio#how-to-run-a-service)
+- [Documentation: Running Services in yunIO](../documentation/run-services.md/#running-services-in-yunio)
 - [SAP Documentation: Incoming Invoice](https://help.sap.com/docs/SAP_ERP/ffc393c91a904eb5b0bec93aa34e42d8/dc6eb6531de6b64ce10000000a174cb4.html?version=6.02.latest&locale=en-US)

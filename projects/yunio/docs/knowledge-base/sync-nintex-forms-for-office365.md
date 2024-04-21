@@ -21,15 +21,15 @@ This article leads you through all necessary steps to set up the following proce
 yunIO is the connector that reads and writes data from and to SAP.
 For more information on yunIO, see [Theobald Software: yunIO](https://theobald-software.com/en/yunio/).
 
-1. Define a [connection to your SAP system](https://help.theobald-software.com/en/yunio/sap-connection) in yunIO. 
-2. [Create a new service](https://help.theobald-software.com/en/yunio/getting-started#creating-a-service) in yunIO. 
+1. [Create an SAP connection](../getting-started.md/#connect-to-sap) in yunIO. 
+2. [Create a service](../getting-started.md/#create-a-service) in yunIO. 
 The depicted example uses the integration type *SAP Table or View* for the service.
-3. [Look up](https://help.theobald-software.com/en/yunio/bapis-and-function-modules#look-up-a-function-module--bapi) the table MAKT that contains material descriptions. 
+3. [Look up](../documentation/tables-and-views/tables-and-views.md/#look-up-an-sap-table-or-view) the table MAKT that contains material descriptions. 
 4. Select the columns MATNR, SPRAS and MAKTX for the output of the service.<br>
 ![nintex-office-design](../assets/images/yunio/articles/nintex-office-yunIO.png){:class="img-responsive" }
-5. Click :yunio-run: to testrun the service in yunIO (1). For more information, see [Documentation: Testing a Service](https://help.theobald-software.com/en/yunio/run-services#testing-a-service).
-6. Click :yunio-run-download: to download the service definition (2).<br>
-![yunio-Services-Function-Download](../assets/images/yunio/articles/yunio-run-services-function-download.png){:class="img-responsive" width="800px"}
+5. Click :yunio-run: to testrun the service in yunIO :number-1:. For more information, see [Documentation: Running Services in yunIO](../documentation/run-services.md/#running-services-in-yunio).
+6. Click :yunio-run-download: to download the service definition :number-2:.<br>
+![yunio-Services-Function-Download](../assets/images/yunio/articles/yunio-run-services-function-download.png){:class="img-responsive" }
 
 ### Setup in SharePoint
 
@@ -128,6 +128,6 @@ Follow the steps below to integrate the script in your Nintex Form:
 
 ******
 #### Related Links:
-- [yunIO Online Help](https://help.theobald-software.com/en/yunio/)
+- [yunIO Documentation](../documentation/introduction.md)
 - [Nintex Documentation: Office 365 Forms](https://help.nintex.com/en-US/office365/Forms/DesignForms.htm)
 - [Theobald Software GitHub: JavaScript library for REST services](https://github.com/theobald-software/static.theobald-software.github.io/tree/main/theobald.yunio.client.js)

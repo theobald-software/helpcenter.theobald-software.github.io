@@ -26,18 +26,18 @@ Follow the steps below to set up a yunIO service that creates sick leaves in SAP
 !!! note
     The parameters that are needed to create a sick leave are dependent on your customized SAP settings.
 
-1. Define a [connection to your SAP system](https://help.theobald-software.com/en/yunio/sap-connection) in yunIO. 
-2. [Create a new service](https://help.theobald-software.com/en/yunio/getting-started#creating-a-service) in yunIO. The depicted example uses the integration type *Transaction* for the service.
+1. [Create an SAP connection](../getting-started.md/#connect-to-sap) in yunIO. 
+2. [Create a service](../getting-started.md/#create-a-service) in yunIO. The depicted example uses the integration type *Transaction* for the service.
 3. Record the SAP transaction PA30 to create a new sick leave in SAP, e.g., for an annual sick leave (*Infotype* 2001 and *STy* 0100). <br>
 ![yunio-pa30](../assets/images/yunio/articles/yunio-pa30.gif){:class="img-responsive" style="border:1px solid black;"}
-4. Set parameters for the following input options. For more information on how to parameterize transactions, see [Documentation: Parameterize Transactions](https://help.theobald-software.com/en/yunio/transactions#parameterize-transactions).
+4. Set parameters for the following input options. For more information on how to parameterize transactions, see [Documentation: Parameterize Transactions](../documentation/transactions/transactions.md/#parameterize-transactions).
 	- Employee number
 	- Start date of the sick leave
 	- End date of the sick leave
 5. Click **[Save]** to save the service.
-6. Click :yunio-run: to testrun the service in yunIO (1). For more information, see [Documentation: Testing a Service](https://help.theobald-software.com/en/yunio/run-services#testing-a-service).
-7. Click :yunio-run-download: to download the service definition (2).<br>
-![yunio-Services-Function-Download](../assets/images/yunio/articles/yunio-run-services-function-download.png){:class="img-responsive" width="800px"}
+6. Click :yunio-run: to testrun the service in yunIO :number-1:. For more information, see [Documentation: Running Services in yunIO](../documentation/run-services.md/#running-services-in-yunio).
+7. Click :yunio-run-download: to download the service definition :number-2:.<br>
+![yunio-Services-Function-Download](../assets/images/yunio/articles/yunio-run-services-function-download.png){:class="img-responsive" }
 8. Repeat steps 3 to 7 to create a service for every relevant type of sick leave:
 	- Illness with certificate (*Infotype* 2001 and *STy* 0200)
 	- Parental leave (*Infotype* 2001 and *STy* 0600)
@@ -71,13 +71,13 @@ For more information on Team Forms, see [Team Forms Documentation](https://docs.
 
 ### Setup in Power Automate
 
-1. Integrate the yunIO services created in [Setup in yunIO](#setup-in-yunio) as Custom Connectors in Power Automate, see [Integrating a yunIO Service with Power Automate](https://kb.theobald-software.com/yunio/integrating-a-yunio-service-with-power-automate#configuring-a-yunio-custom-connector-in-power-automate).
+1. Integrate the yunIO services created in [Setup in yunIO](#setup-in-yunio) as Custom Connectors in Power Automate, see [Integrating a yunIO Service with Power Automate](integrating-a-yunio-service-with-power-automate.md#configuring-a-yunio-custom-connector-in-power-automate).
 2. Create a new workflow that is triggered when a new Team form is submitted.
 3. Optional: Add an approval process for the leave request to the workflow.
-5. Add a *Switch* action to the workflow that queries the value of the leave type defined in the Team form (1).<br>
+5. Add a *Switch* action to the workflow that queries the value of the leave type defined in the Team form :number-1:.<br>
 ![teams-workflow](../assets/images/yunio/articles/teams-workflow.png){:class="img-responsive" }
-6. Add the corresponding yunIO connector created in step 1 for each each leave type (2).<br>
-7. Map the data from the Team form to the input parameters of yunIO (3). 
+6. Add the corresponding yunIO connector created in step 1 for each each leave type :number-2:.<br>
+7. Map the data from the Team form to the input parameters of yunIO :number-3:. 
 8. Make sure the input uses the right format, e.g., dates use the format `DD.mm.YYYY`.<br>
 	
 	!!! Tip

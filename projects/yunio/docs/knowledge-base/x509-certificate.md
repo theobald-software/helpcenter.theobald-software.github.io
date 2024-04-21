@@ -39,7 +39,7 @@ In the example shown, the server name is "sherri":
 3. Click **[Pick Certificate]** to reference the X.509 certificate.<br>
 Information about the currently saved certificate is displayed in the Transport Layer Security section of the menu.<br>
 ![import-certificate](../assets/images/yunio/articles/certificate-settings.png){:class="img-responsive"}
-4. Click **Enable TLS** to activate Transport Layer Security, see [Documentation: Server Settings](https://help.theobald-software.com/en/yunio/server-settings).
+4. Click **Enable TLS** to activate Transport Layer Security, see [Documentation: Server Settings](../documentation/server-settings.md).
 5. Click **[Save]** and restart the yunIO Windows service to implement the changes.
 
 The yunIO Designer and the services created in yunIO are now accessible via https protocol. 
@@ -47,4 +47,4 @@ The yunIO Designer and the services created in yunIO are now accessible via http
 #### Related Links:
 - [Certificate Renewal for TLS](./certificate-renewal.md)
 - [Enabling Secure Network Communication (SNC) via X.509 certificate](./enable-snc-using-pse-file.md)
-- [Documentation: Server Settings](https://help.theobald-software.com/en/yunio/server-settings)
+- [Documentation: Server Settings](../documentation/server-settings.md)

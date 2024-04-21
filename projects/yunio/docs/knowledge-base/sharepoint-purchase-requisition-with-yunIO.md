@@ -23,9 +23,9 @@ Follow the steps below to set up a yunIO service that creates purchase requisiti
 !!! note
     The parameters that are needed to create purchase requisitions are dependent on your customized SAP settings.
 
-1. Define a [connection to your SAP system](https://help.theobald-software.com/en/yunio/sap-connection) in yunIO. 
-2. [Create a new service](https://help.theobald-software.com/en/yunio/getting-started#creating-a-service) in yunIO. The depicted example uses the integration type *Function Module* for the service.
-3. [Look up](https://help.theobald-software.com/en/yunio/bapis-and-function-modules#look-up-a-function-module--bapi) the standard BAPI, BAPI_PR_CREATE that creates purchase requisitions in SAP. 
+1. [Create an SAP connection](../getting-started.md/#connect-to-sap) in yunIO. 
+2. [Create a service](../getting-started.md/#create-a-service) in yunIO. The depicted example uses the integration type *Function Module* for the service.
+3. [Look up](https://help.theobald-software.com/7en/yunio/bapis-and-function-modules#look-up-a-function-module--bapi) the standard BAPI, BAPI_PR_CREATE that creates purchase requisitions in SAP. 
 4. Set the following import parameters to *Supplied by Caller*: 
 
 	| Table | Field | Description |
@@ -72,9 +72,9 @@ Follow the steps below to set up a yunIO service that creates purchase requisiti
 8. Activate the advanced setting **Commits Transaction**. If this option is active, the function module “BAPI_TRANSACTION_COMMIT” is called after processing the selected Function Module / BAPI. 
 BAPI_PR_CREATE require this commit function to successfully update data in the database.<br>
 ![SAPPurchaseRequisitionCreate-export](../assets/images/yunio/articles/SAPPurchaseRequisitionCreate-export.png){:class="img-responsive"}
-9. Click :yunio-run: to testrun the service in yunIO (1). For more information, see [Documentation: Testing a Service](https://help.theobald-software.com/en/yunio/run-services#testing-a-service).
-10. Click :yunio-run-download: to download the service definition (2).<br>
-![yunio-Services-Function-Download](../assets/images/yunio/articles/yunio-run-services-function-download.png){:class="img-responsive" width="800px"}
+9. Click :yunio-run: to testrun the service in yunIO :number-1:. For more information, see [Documentation: Running Services in yunIO](../documentation/run-services.md/#running-services-in-yunio).
+10. Click :yunio-run-download: to download the service definition :number-2:.<br>
+![yunio-Services-Function-Download](../assets/images/yunio/articles/yunio-run-services-function-download.png){:class="img-responsive" }
 
 ### Setup in SharePoint
 

@@ -10,12 +10,12 @@ For more information on Postman, see [Postman Documentation](https://learning.po
 
 ### Prerequisites in yunIO
 
-1. Create a service in yunIO. The depicted example uses the BAPI SD_RFC_CUSTOMER_GET to search and extract customer data from SAP. 
+1. [Create a service](../getting-started.md/#create-a-service) in yunIO. The depicted example uses the BAPI SD_RFC_CUSTOMER_GET to search and extract customer data from SAP. 
 The service has the following settings:<br>
 - Set the Import Parameter NAME1 to *Supplied by Caller*.
 - Select all fields in the Table *CUSTOMER_T* for the output.
-2. Click :yunio-copy: to copy the URL of the service definition or click :yunio-run-download: to download the service definition.<br>
-![yunio-Services](../assets/images/yunio/articles/yunio-run-services.png){:class="img-responsive" width="800px"}
+2. Click :yunio-copy: to copy the URL of the service definition or click :yunio-download: to download the service definition.<br>
+![yunio-Services](../assets/images/yunio/articles/yunio-run-services.png){:class="img-responsive" }
 
 
 ### Loading a yunIO Service in Postman
@@ -48,7 +48,7 @@ For more information on variables in Postman, see [Using Variables in Postman](h
 ### Running the Service
 
 !!! note
-    If the option [*Request credentials from callers when running services*](https://help.theobald-software.com/en/yunio/sap-connection#authentication) is active in the connection settings in yunIO,
+    If the option [*Request credentials from callers when running services*](../documentation/sap-connection/settings.md/#authentication) is active in the connection settings in yunIO,
     you have to select *Basic Authentication* in the *Authentication* tab of Postman and enter your SAP credentials before running the service.
 
 After importing the service definition, the URL of the service endpoint is available in the main URI input line.
@@ -65,4 +65,4 @@ The results are displayed in the **Response** section of Postman.
 - [Web Version of Postman](https://www.postman.com/)
 - [Postman Documentation](https://learning.postman.com/docs/getting-started/introduction/)
 - [Using Variables in Postman](https://learning.postman.com/docs/sending-requests/variables/)
-- [Documentation: How to Run a Service](https://help.theobald-software.com/en/yunio#how-to-run-a-service)
+- [Getting Started: Run and Integrate Services](../getting-started.md/#run-and-integrate-services)

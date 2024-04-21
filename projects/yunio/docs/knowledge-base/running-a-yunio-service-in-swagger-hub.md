@@ -9,11 +9,11 @@ For more information on the SwaggerHub, see [SwaggerHub Documentation](https://s
 
 ### Prerequisites in yunIO
 
-1. Create a service in yunIO. The depicted example uses a Table service with the following settings:<br>
+1. [Create a service](../getting-started.md/#create-a-service) in yunIO. The depicted example uses a Table service with the following settings:<br>
 ![Table-Extraction](../assets/images/yunio/articles/table-settings.png){:class="img-responsive" width="800px" }
-2. Click :yunio-run: to testrun the service in yunIO (1). For more information, see [Documentation: Testing a Service](https://help.theobald-software.com/en/yunio/run-services#testing-a-service).
-3. Click :yunio-run-download: to download the service definition (2).<br>
-![yunio-Services-Function-Download](../assets/images/yunio/articles/yunio-run-services-function-download.png){:class="img-responsive" width="800px"}
+2. Click :yunio-run: to testrun the service in yunIO :number-1:. For more information, see [Documentation: Running Services in yunIO](../documentation/run-services.md/#running-services-in-yunio).
+3. Click :yunio-run-download: to download the service definition :number-2:.<br>
+![yunio-Services-Function-Download](../assets/images/yunio/articles/yunio-run-services-function-download.png){:class="img-responsive" }
 
 ### Loading and Running a yunIO Service in SwaggerHub
 
@@ -40,4 +40,4 @@ Do not use the GET method to send sensible data, e.g., credentials.<br>
 
 #### Related Links
 - [SwaggerHub Documentation](https://support.smartbear.com/swaggerhub-explore/docs/en/get-started.html)
-- [Documentation: How to Run a Service](https://help.theobald-software.com/en/yunio#how-to-run-a-service)
+- [Getting Started: Run and Integrate Services](../getting-started.md/#run-and-integrate-services)

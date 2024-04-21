@@ -73,7 +73,7 @@ A newer version can be installed over the older version. All settings and create
 
 ### Access the yunIO Designer
 
-To access the yunIO Designer, enter the designer-URL in a [web browser](https://help.theobald-software.com/en/yunio/introduction/requirements#supported-web-browsers).<br>
+To access the yunIO Designer, enter the designer-URL in a [web browser](requirements.md/#supported-web-browsers).<br>
 The URL pattern to access the yunIO Designer is `http(s)://[host or IP address]:[port]`.<br>
 - If the yunIO service runs on a local server, replace `[host]` with *localhost*.
 - If the yunIO service does not run on the same machine as the browser, replace `[host]` with the name or IP address of the host on which the service runs.

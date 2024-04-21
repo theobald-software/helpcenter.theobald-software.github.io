@@ -21,7 +21,7 @@ The depicted example application uses a yunIO service to create a new employee i
 !!! note
     The parameters that are needed to create new employees are dependent on your customized SAP settings.
 
-1. Create a new Service with the integration type *Transaction*. For more information on creating a service, see [Creating a Service](https://help.theobald-software.com/en/yunio/getting-started#creating-a-service).
+1. Create a new Service with the integration type *Transaction*. For more information on creating a service, see [Create a Service](../getting-started.md/#create-a-service).
 2. In the transaction service enter the transaction PA40 and press **[Start]**. A replicated SAP GUI of the transaction PA40 is displayed.
 ![personnel-actions](../assets/images/yunio/articles/personnel-actions.png){:class="img-responsive"}
 3. Enter a start date for the new employee in the format `DD.mm.YYYY`. This input can be replaced with a runtime parameter after the transaction is recorded.
@@ -37,7 +37,7 @@ Click **[Continue]** to close any pop-up windows and continue to the next screen
 10. Once all necessary data is entered, click **[Infotype] > [Exit]** to stop the input. Example:<br>
 ![personnel-actions](../assets/images/yunio/articles/pa40.gif){:class="img-responsive" style="border:1px solid black;"}
 11. Click **[Save]** to save your actions. <br>
-Alternatively, click **[Stop]** to start parameterizing, see [Documentation: Parameterize Transactions](https://help.theobald-software.com/en/yunio/transactions#parameterize-transactions).
+Alternatively, click **[Stop]** to start parameterizing, see [Documentation: Parameterize Transactions](../documentation/transactions/transactions.md/#parameterize-transactions).
 12. Copy the URL of the service definition ( :yunio-copy: icon) or download the service definition ( :yunio-run-download: icon) to integrate the service in your workflow.
 For information on how to use yunIO services in Power Automate or Nintex, see [Integrating a yunIO Service with Power Automate](integrating-a-yunio-service-with-power-automate.md) or [Integrating a yunIO Service with Nintex](integrating-a-yunio-service-with-nintex.md).
 ![yunio-Services](../assets/images/yunio/articles/yunio-run-services.png){:class="img-responsive"}
@@ -57,5 +57,5 @@ EE subgroup DN -> monthly wage earner
 ******
 
 #### Related Links
-- [Documentation: Transactions](https://help.theobald-software.com/en/yunio/transactions)
-- [Documentation: Parameterize Transactions](https://help.theobald-software.com/en/yunio/transactions#parameterize-transactions)
+- [Documentation: Transactions](../documentation/transactions/index.md)
+- [Documentation: Parameterize Transactions](../documentation/transactions/transactions.md/#parameterize-transactions)

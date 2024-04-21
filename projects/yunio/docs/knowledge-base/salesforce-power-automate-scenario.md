@@ -13,7 +13,7 @@ This article leads you through all necessary steps to set up the following proce
 
 - When an account in the *Sales Console* of Salesforce is modified, a Power Automate workflow is triggered.
 - The workflow checks if the type of the account is set to *Customer - Direct* and if the customer exists in SAP.
-- If both conditions are true, a [yunIO](https://help.theobald-software.com/en/yunio/) service that writes customer data from Salesforce to SAP is executed.
+- If both conditions are true, a yunIO service that writes customer data from Salesforce to SAP is executed.
 - When the customer is created in SAP, the new SAP customer number is written back to the Salesforce sales account.
 
 ### Setup in yunIO
@@ -21,16 +21,16 @@ This article leads you through all necessary steps to set up the following proce
 yunIO is the connector that reads and writes data from and to SAP.
 For more information on yunIO, see [Theobald Software: yunIO](https://theobald-software.com/en/yunio/).
 
-1. Define a [connection to your SAP system](https://help.theobald-software.com/en/yunio/sap-connection) in yunIO. 
-2. [Create a new service](https://help.theobald-software.com/en/yunio/getting-started#creating-a-service) in yunIO. 
+1. [Create an SAP connection](../getting-started.md/#create-a-service) in yunIO. 
+2. [Create a service](../getting-started.md/#create-a-service) in yunIO. 
 The depicted example uses the integration type *Function Module* for the service.
-3. [Look up](https://help.theobald-software.com/en/yunio/bapis-and-function-modules#look-up-a-function-module--bapi) the standard BAPI BAPI_CUSTOMER_CREATEFROMDATA1 that creates customers in SAP. 
+3. [Look up](../documentation/function-modules-and-bapis/bapis-and-function-modules.md/#look-up-a-function-module-bapi) the standard BAPI BAPI_CUSTOMER_CREATEFROMDATA1 that creates customers in SAP. 
 4. Set all import parameters you want to transfer from Salesforce to SAP to *Supplied by Caller* e.g., NAME, CITY, POSTL_COD1, STREET, etc.
 5. Select CUSTOMERNO for export. This Export parameter contains the newly created SAP customer number that is written back to Salesforce.<br>
 ![yunio-Services-Function-Download](../assets/images/yunio/articles/yunio-bapi-createcustomer.png){:class="img-responsive"}
-6. Click :yunio-run: to testrun the service in yunIO (1). For more information, see [Documentation: Testing a Service](https://help.theobald-software.com/en/yunio/run-services#testing-a-service).
-7. Click :yunio-run-download: to download the service definition (2).<br>
-![yunio-Services-Function-Download](../assets/images/yunio/articles/yunio-run-services-function-download.png){:class="img-responsive" width="800px"}
+6. Click :yunio-run: to testrun the service in yunIO :number-1:. For more information, see [Documentation: Running Services in yunIO](../documentation/run-services.md/#running-services-in-yunio).
+7. Click :yunio-run-download: to download the service definition :number-2:.<br>
+![yunio-Services-Function-Download](../assets/images/yunio/articles/yunio-run-services-function-download.png){:class="img-responsive" }
 
 ### Setup in Salesforce
 
@@ -49,17 +49,17 @@ For more information on how to customize fields in Salesforce, see [Salesforce D
 
 ### Setup in Power Automate
 
-1. Integrate the yunIO service created in [Setup in yunIO](#setup-in-yunio) as a Custom Connector in Power Automate, see [Integrating a yunIO Service with Power Automate](https://kb.theobald-software.com/yunio/integrating-a-yunio-service-with-power-automate#configuring-a-yunio-custom-connector-in-power-automate).
-2. Create a new workflow that is triggered when a Salesforce account is modified (1).
-3. Check if the account type in Salesforce is set to *Customer - Direct* and if the customer does not yet exist in SAP (2).<br>
-If one or both conditions are false, end the workflow (3).
-If both conditions are true, execute the yunIO service to write the customer data to SAP (4).<br>
+1. Integrate the yunIO service created in [Setup in yunIO](#setup-in-yunio) as a Custom Connector in Power Automate, see [Integrating a yunIO Service with Power Automate](integrating-a-yunio-service-with-power-automate.md#configuring-a-yunio-custom-connector-in-power-automate).
+2. Create a new workflow that is triggered when a Salesforce account is modified :number-1:.
+3. Check if the account type in Salesforce is set to *Customer - Direct* and if the customer does not yet exist in SAP :number-2:.<br>
+If one or both conditions are false, end the workflow :number-3:.
+If both conditions are true, execute the yunIO service to write the customer data to SAP :number-4:.<br>
 ![power-automate-salesforce-conditions](../assets/images/yunio/articles/power-automate-salesforce-conditions.png){:class="img-responsive"}
 4. Add the yunIO connector created in step 1 to the workflow and map the customer data from Salesforce to the input parameters of yunIO.<br>
 ![power-automate-yunio-parameters](../assets/images/yunio/articles/power-automate-yunio-parameters.png){:class="img-responsive"}
-5. Check if the SAP customer was created using the yunIO return field TYPE (5). <br>
+5. Check if the SAP customer was created using the yunIO return field TYPE :number-5:. <br>
 If TYPE does not equal 'E' (error), the SAP customer number is written back to Salesforce.
-6. When updating the Salesforce account (6), assign the CUSTOMERNO from yunIO to *SAP ID* and set the checkbox *In SAP* to 'Yes'.<br>
+6. When updating the Salesforce account, assign the CUSTOMERNO from yunIO to *SAP ID* and set the checkbox *In SAP* to 'Yes' :number-6:.<br>
 ![power-automate-write-to-salesforce](../assets/images/yunio/articles/power-automate-write-to-salesforce.png){:class="img-responsive"}
 7. Optional: Send notifications when a customer is created or log all synchronized Salesforce accounts e.g., in a SharePoint Online list. 
 8. Turn on the workflow.
