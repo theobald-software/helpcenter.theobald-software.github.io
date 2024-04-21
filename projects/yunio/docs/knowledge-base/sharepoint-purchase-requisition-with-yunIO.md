@@ -25,7 +25,7 @@ Follow the steps below to set up a yunIO service that creates purchase requisiti
 
 1. [Create an SAP connection](../getting-started.md/#connect-to-sap) in yunIO. 
 2. [Create a service](../getting-started.md/#create-a-service) in yunIO. The depicted example uses the integration type *Function Module* for the service.
-3. [Look up](https://help.theobald-software.com/7en/yunio/bapis-and-function-modules#look-up-a-function-module--bapi) the standard BAPI, BAPI_PR_CREATE that creates purchase requisitions in SAP. 
+3. [Look up](../documentation/function-modules-and-bapis/bapis-and-function-modules.md/#look-up-a-function-module-bapi) the standard BAPI, BAPI_PR_CREATE that creates purchase requisitions in SAP. 
 4. Set the following import parameters to *Supplied by Caller*: 
 
 	| Table | Field | Description |
@@ -95,17 +95,17 @@ For more information on SharePoint lists, see [Microsoft Documentation: Introduc
     Defining other input parameters in SharePoint is optional as they can also be set as static values in Power Automate.
 
 !!! tip
-    You can use a Power App form to simplify and validate the SharePoint input, see [Using yunIO Services in Power Apps](https://kb.theobald-software.com/yunio/populating-drop-down-controls-in-power-apps#using-yunio-services-in-power-apps).
+    You can use a Power App form to simplify and validate the SharePoint input, see [Using yunIO Services in Power Apps](populating-drop-down-controls-in-power-apps.md#using-yunio-services-in-power-apps).
 
 
 ### Setup in Power Automate
 
-1. Integrate the yunIO service created in [Setup in yunIO](#setup-in-yunio) as a Custom Connector in Power Automate, see [Integrating a yunIO Service with Power Automate](https://kb.theobald-software.com/yunio/integrating-a-yunio-service-with-power-automate#configuring-a-yunio-custom-connector-in-power-automate).
+1. Integrate the yunIO service created in [Setup in yunIO](#setup-in-yunio) as a Custom Connector in Power Automate, see [Integrating a yunIO Service with Power Automate](integrating-a-yunio-service-with-power-automate.md#configuring-a-yunio-custom-connector-in-power-automate).
 2. Create a new workflow that is triggered when a new item is added to the SharePoint list.
 3. Add the yunIO connector created in step 1 to the workflow and map the purchase requisition data from SharePoint to the input parameters of yunIO.<br>
 ![sharepoint-purchase-requisition3](../assets/images/yunio/articles/sharepoint-purchase-requisition3.png){:class="img-responsive"}
 4. Make sure that the SharePoint input uses the right format, e.g., the delivery date must have the SAP format `YYYYmmDD` and the cost center must have 10 characters, including leading zeroes.
-For conversion tips and code templates, see [Formats and Conversions in Power Automate](https://kb.theobald-software.com/yunio/conversion-in-power-automate).
+For conversion tips and code templates, see [Formats and Conversions in Power Automate](conversion-in-power-automate.md).
 5. Add a SharePoint **Update Item** tool to write the purchase requisition number from the yunIO Custom Connector back to the SharePoint list.<br>
 ![sharepoint-purchase-requisition2](../assets/images/yunio/articles/sharepoint-purchase-requisition2.png){:class="img-responsive"}
 7. Optional: Send notifications when a purchase requisition is created. 
