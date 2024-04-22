@@ -3,7 +3,7 @@ title: Documentation Style Guide
 ---
 
 ## General
-### About this guide
+### About Documentation Style Guide
 The Documentation Style Guide (Version 2.0) of Theobald Software provides a set of guidelines for writing documentation pages as in help content and knowledge base articles for all Thobald Software products. The guidelines are not binding rules that must be applied in every case. However, it is recommended to follow the Style Guide to improve the quality of the textual and language content of the user documentation in terms of consistency and correctness.
 The Style Guide of Theobald Software should be used as a reference containing the most important recommendations. The provided cheat sheet is a short collection of the most important Style Guide items. More information can be found in the Google Developer Documentation Style Guide. The Style Guide of Theobald Software is loosely based on Google Developer Style Guide and is a living document and can be changed and improved over time. Some of the guidelines collected in the Style Guide do not comply with the Google Style guide as Theobald Software products have needs that are not covered by Google.
 
