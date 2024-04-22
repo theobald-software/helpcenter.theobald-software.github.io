@@ -12,10 +12,10 @@ The Documentation Style Guide of Theobald Software applies to the creation of co
 Other publications such as blog articles or any marketing publication do not have to comply with the Style Guide.
 The Documentation Style Guide of Theobald Software addresses the following topics:
 
-• Style and choice of words
-• Spelling and grammar
-• Punctuation
-• Standard phrases (growing)
+- Style and choice of words
+- Spelling and grammar
+- Punctuation
+- Standard phrases (growing)
 
 Any information on formatting of the documents is not part of the Style Guide. To address formatting Theobald Software created a document template.
 
@@ -23,6 +23,6 @@ Any information on formatting of the documents is not part of the Style Guide. T
 It is advisable to read all dedicated pages at least once and then use it as a reference and search for an item, if needed. 
 Ground rules for using the Documentation Style Guide of Theobald Software:
 
-• Always use the latest version of the Style Guide
-• Discuss any deviations from the Style Guide with responsible colleagues
-• Ideas, changes and extensions are welcome and should be added to the Style Guide in cooperation with a technical writer
+- Always use the latest version of the Style Guide
+- Discuss any deviations from the Style Guide with responsible colleagues
+- Ideas, changes and extensions are welcome and should be added to the Style Guide in cooperation with a technical writer
