@@ -5,7 +5,7 @@ nav:
     - Administration:
         - plugins-and-theme.md
         - files-and-folders.md
-        - pages-and-articles.md
+        - pages-articles.md
         - glossary.md
         - to-do-lists.md
         - about-linkchecker.md

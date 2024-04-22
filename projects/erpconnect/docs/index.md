@@ -24,38 +24,83 @@ hide:
 
 [:octicons-arrow-right-24: Show more](news.md)
 
-<!---
+![threshold](assets/images/logos/threshold.png)
+
 ### Additional Resources
 
-::cards:: cols=3
+<!---
 
-- title: Product Information
-  image: ./assets/images/logos/business-content/human.png
+![horizontal-line](./assets/images/logos/business-content/horizontal-line.png)
+
+- title: Getting Started
+  image: ./assets/images/logos/business-content/finance.svg
   content: I'm additional text. I'm optional and can give context to a link card.
+  url: /sap-objects/#finance
+  
+- title: Documentation
+  image: ./assets/images/logos/business-content/sales-distribution.svg
+  content: I'm additional text. I'm optional and can give context to a link card.
+  url: /sap-objects/#sales-and-distribution
+
+- title: Knowledge Base
+  image: ./assets/images/logos/business-content/sales-distribution.svg
+  content: I'm additional text. I'm optional and can give context to a link card.
+  url: /sap-objects/#sales-and-distribution
+
+- title: Web-API
+  image: ./assets/images/logos/business-content/material.png
+  content: I'm additional text. I'm optional and can give context to a link card.
+  url: /sap-objects/#materials-management
+
+- title: Troubleshooting
+  image: ./assets/images/logos/business-content/production.png
+  content: I'm additional text. I'm optional and can give context to a link card.
+  url: /sap-objects/#production-planning
+
+- title: Changelog
+  image: ./assets/images/logos/business-content/finance.svg
+  url: /sap-objects/#finance
+  
+
+- title: Support
+  image: ./assets/images/logos/business-content/human.png
+  url: /sap-objects/#human-resources
+-->
+
+::cards:: cols=3
+  
+- title: Product Information
+  image: ./assets/images/logos/business-content/sales-distribution.svg
+  content: Visit our official ERPConnect website to take a look at the advantages ERPConnect offers, a list of FAQs and more.
   url: /sap-objects/#human-resources
   
 - title: Download ERPConnect
-  image: ./assets/images/logos/business-content/production.png
+  image: ./assets/images/logos/business-content/material.png
+  content: After purchasing ERPConnect, your license and the latest version of ERPConnect is available in the *My Theobald Software* customer portal.
+  url: /sap-objects/#customer-relationship-management
+
+- title: Events & Webinars
+  image: ./assets/images/logos/business-content/human.png
+  content: Find out about upcoming events and Webinars. <br>Join our live webinars and experience interactive communication or visit our SAP experts live at an event. 
+  url: /sap-objects/#human-resources
+
+- title: Blog
+  image: ./assets/images/logos/business-content/finance.svg
+  content: Discover exciting articles and helpful tips about SAP data and cloud integration, SAP process automation and more.
   url: /sap-objects/#customer-relationship-management
   
-- title: Newsletters
+- title: Technical Newsletter
   image: ./assets/images/logos/business-content/material.png
+  content: Our technical newsletter informs you once a month about new features, releases, breaking changes and articles.
   url: /sap-objects/#materials-management
 
-- title: Success Stories
-  image: ./assets/images/logos/business-content/human.png
-  url: /sap-objects/#human-resources
-  
-- title: Partners
+- title: Feedback Form
   image: ./assets/images/logos/business-content/production.png
-  url: /sap-objects/#customer-relationship-management
-
-- title: Feedback
-  image: ./assets/images/logos/business-content/production.png
+  content: We are constantly striving to improve our products and would love to get your feedback. Our feedback form is very short, just write down what you want us to know :octicons-smiley-24:.
   url: /sap-objects/#production-planning
 
 ::/cards::
--->
+
 
 
 <!---
