@@ -1,6 +1,6 @@
 ---
 title: Integrate Function Modules / BAPIs
-# icon: component/bapi
+icon: component/bapi
 description: Information about the integration type Function Module / BAPI
 ---
 

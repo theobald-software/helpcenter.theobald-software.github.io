@@ -1,6 +1,6 @@
 ---
 title: Integrate Tables / Views
-# icon: component/table
+icon: component/table
 description: Information about the integration type SAP tables or views
 ---
 

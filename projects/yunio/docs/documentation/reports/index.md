@@ -1,6 +1,6 @@
 ---
 title: Integrate Reports
-# icon: component/report
+icon: component/report
 description: Information about the integration type Report
 ---
 

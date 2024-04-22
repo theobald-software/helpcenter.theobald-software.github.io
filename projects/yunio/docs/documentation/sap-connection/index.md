@@ -1,6 +1,6 @@
 ---
 title: SAP Connection
-# icon: simple/sap
+icon: simple/sap
 description: SAP Connection
 ---
 
