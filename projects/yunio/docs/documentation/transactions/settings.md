@@ -6,10 +6,12 @@ description: An overview and description of all transaction settings
 This section contains an overview and description of all available {{ transaction }} settings.
 
 The {{ transaction }} settings consist of the following subsections:
-- [Control Buttons](#control-buttons) to close, save or delete the service.
-- [GUI Steps](#gui-steps) displays the recorded actions.
-- [Transaction](#transaction) displays input screens that represent the SAP GUI.
+- [Control Buttons](#control-buttons) to close, save or delete the service :number-1:.
+- [GUI Steps](#gui-steps) displays the recorded actions :number-2:.
+- [Transaction](#transaction) displays input screens that represent the SAP GUI :number-3:.
 - [Skip Popups](#skip-popups) is available in the request body of the service and defines how to handle popup screen.
+
+![transaction-settings](../../assets/images/yunio/transaction-settings.png)
 
 {% include "yunio/control-buttons.md" %}
 
@@ -21,6 +23,8 @@ Once the recording is finished, clicking actions opens the corresponding screen.
 This functionality is used to parameterize the values from in the initial recording, see [Parameterize Transactions](./transactions.md).
 
 ### Transaction
+
+When starting a transaction recording, the subsection *Transaction* displays the content of the SAP GUI.
 
 **[Start]**<br>
 Starts the recording of a transaction code.
