@@ -14,7 +14,7 @@ This section shows how to create a service that extracts data from an SAP Table 
 
 1. [Create a new service](../../getting-started.md/#create-a-service) of {{ component }} {{ table }}. 
 2. In the *Search SAP Table or View* menu, enter the name or description of the Table or View to be extracted :number-1:. Use wildcards ( * ) if needed.
-![SAP-Table-or-Views](../../assets/images/yunio/search-table-view.png){:class="img-responsive" width="750px"}
+![SAP-Table-or-Views](../../assets/images/yunio/search-table--or-view.png){:class="img-responsive" width="750px"}
 3. Click **[Search]** to display the search results.
 4. Select a table / view from the list of available search results :number-2:. 
 
@@ -32,5 +32,3 @@ The following options are available to filter data, add data from other tables, 
 
 For more information on {{ table }} settings, see [Settings](settings.md).
 
-!!! tip
-	
