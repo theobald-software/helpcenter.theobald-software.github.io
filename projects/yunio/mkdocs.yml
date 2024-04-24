@@ -155,6 +155,8 @@ markdown_extensions:
           - overrides/.icons
 # breakless lists (for migration)
   - mdx_breakless_lists
+# complex tables
+  - markdown_grid_tables
 
 # Additional configuration
 extra:

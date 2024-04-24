@@ -16,3 +16,10 @@ The following table lists all available SAP S/4HANA on premise systems and their
 
 ![Available-S/4HANA-Systems2](../assets/images/articles/sap/SAP-systems-premise-overview.png){:class="img-responsive"}
 
+
+SAP S/4HANA Cloud Edition  (called Cloud ERP ):
+
+| | S/4HANA Cloud Essentials Edition (ES) | S/4HANA Cloud Extended Edition (ED) | RISE with SAP S/4HANA Cloud Private Edition  |     
+|--|---------------------------------------|-------------------------------------|---------------------------------------------|
+| Previously known as:| Multi Tenant Edition (MTE)    | Single Tenant Edition (STE)      | Private Cloud Edition (PCE)          | 
+| Compatible with {{ productName }}:| :x:           | :white_check_mark: (with limitations) | :white_check_mark:                | 
