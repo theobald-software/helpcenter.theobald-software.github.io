@@ -14,7 +14,7 @@ site_description: >-
 copyright: Copyright &copy; 2024 Theobald Software GmbH <br> <span style="color:#ED1A33"><a  style="color:#ED1A33" href="https://theobald-software.com/en/privacy-policy/" target="_blank" rel="noopener">privacy policy</a> - <a  style="color:#ED1A33" href="https://theobald-software.com/en/legal-notice" target="_blank" rel="noopener">legal notice</a> - <a style="color:#ED1A33" href="https://theobald-software.com/en/" target="_blank" rel="noopener">website</a></span>
 watch:
   - includes
-
+  - overrides
 # Configuration
 theme:
   name: material
