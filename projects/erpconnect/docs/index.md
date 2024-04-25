@@ -39,7 +39,7 @@ hide:
 - title: Success Stories
   image: ./assets/images/logos/business-content/material.png
   content: Get to know real customer scenarios with ERPConnect by reading one of our success stories.
-  url: https://theobald-software.com/en/resources/success-stories/
+  url: https://theobald-software.com/en/resources/success-stories?filter_one=default&filter_two=erpconnect
 
 - title: Blog
   image: ./assets/images/logos/business-content/finance.svg
