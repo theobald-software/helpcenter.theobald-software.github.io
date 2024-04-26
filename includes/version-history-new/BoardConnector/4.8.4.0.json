@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed bug that prevented cache creation when datetime conversion was enabled",
+        "Component": "General",
+        "Product": "BoardConnector"
+    }
+]

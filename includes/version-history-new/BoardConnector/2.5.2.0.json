@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Removed user and passwd run parameters",
+        "Component": "Security",
+        "Product": "BoardConnector"
+    }
+]

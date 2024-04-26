@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "Improved exceptions for logon/communication",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Updated to 4.38.3.0",
+        "Component": "ERPConnect",
+        "Product": "XtractKernel"
+    }
+]

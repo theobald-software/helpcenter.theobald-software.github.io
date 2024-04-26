@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for extraction logs not beeing displayed since 1.4.0",
+        "Component": "Designer",
+        "Product": "BoardConnector"
+    }
+]

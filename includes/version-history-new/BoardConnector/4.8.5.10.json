@@ -1,0 +1,17 @@
+[
+    {
+        "Message": "Message box for showing certificates\nWebrequest wrapper for better tls error messages\ncertificate pinning and tls error handling infrastructure",
+        "Component": "General",
+        "Product": "Common"
+    },
+    {
+        "Message": "Fixed a bug where ABAP exceptions that occur when running preview would crash the UI.",
+        "Component": "Report",
+        "Product": "Theobald.Extractors"
+    },
+    {
+        "Message": "CertificatePinning support and better TLS error message support for AuthClient",
+        "Component": "General",
+        "Product": "Theobald.Server"
+    }
+]

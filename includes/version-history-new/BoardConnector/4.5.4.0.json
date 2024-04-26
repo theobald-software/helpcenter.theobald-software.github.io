@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added 'extractDataOnDeltaInit' run parameter",
+        "Component": "ODP",
+        "Product": "BoardConnector"
+    }
+]

@@ -1,0 +1,49 @@
+[
+    {
+        "Message": "Fix for negative INT2 values (classic RFC)",
+        "Component": "General",
+        "Product": "ERPConnect",
+        "IsCritical": true
+    },
+    {
+        "Message": "Added support for connection strings (NW RFC)",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Added XML logging (NW RFC)",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Fix for missing BCD values (NW RFC)",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Fixed bug with manifest file for LINQ to SAP.",
+        "Component": "LINQtoERP",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "LINQ to SAP now supports Visual Studio 2013.",
+        "Component": "LINQtoERP",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Fixed bug with manifest file for LINQ to SAP.",
+        "Component": "LINQtoERP",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "LINQ to SAP now supports Visual Studio 2013.",
+        "Component": "LINQtoERP",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Updated to 4.17.1.0",
+        "Component": "ERPConnect",
+        "Product": "XtractKernel",
+        "IsCritical": true
+    }
+]

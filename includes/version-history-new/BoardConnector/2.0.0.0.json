@@ -1,0 +1,8 @@
+[
+    {
+        "Message": "Several fixes and improvements, major internal changes",
+        "Component": "General",
+        "Product": "BoardConnector",
+        "IsBreaking": true
+    }
+]

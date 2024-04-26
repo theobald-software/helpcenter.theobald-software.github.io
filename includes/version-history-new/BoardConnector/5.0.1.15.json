@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for reading unit errors in legacy RPC",
+        "Component": "General",
+        "Product": "Theobald.Server"
+    }
+]

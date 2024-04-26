@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "CSV: Improved error message",
+        "Component": "Server",
+        "Product": "BoardConnector"
+    }
+]

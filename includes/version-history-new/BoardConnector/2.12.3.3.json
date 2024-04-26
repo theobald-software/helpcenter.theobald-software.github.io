@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "Improved result processing & modeling",
+        "Component": "General",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Correction for trimming behaviour: If a column is a non-CHAR field (e.g. CURR or DEC) leading spaces are trimmed",
+        "Component": "DeltaQ",
+        "Product": "XtractKernel"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for loading iDoc Schema after loading plain data",
+        "Component": "Idoc",
+        "Product": "ERPConnect"
+    }
+]

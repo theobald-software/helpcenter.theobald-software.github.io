@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for \"invalid value\" error message if value of text parameter is empty (Run dialog)",
+        "Component": "Designer",
+        "Product": "BoardConnector"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Selections can now be parameterized with lists of strings",
+        "Component": "ODP",
+        "Product": "Theobald.Extractors"
+    }
+]

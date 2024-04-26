@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Improved logging for errors while loading extractions",
+        "Component": "Server",
+        "Product": "BoardConnector"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for STRING/XSTRING columns with NWRFC",
+        "Component": "Table",
+        "Product": "Theobald.Extractors"
+    }
+]

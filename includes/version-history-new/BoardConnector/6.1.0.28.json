@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed a bug where the server would try to read the SAP password from json file even though SSO is enabled and fail if none is found.\nFixed a bug where destination settings would not be applied correctly when switching the parameter with the \"destination\" parameter in a web API call.",
+        "Component": "General",
+        "Product": "Theobald.Server"
+    }
+]

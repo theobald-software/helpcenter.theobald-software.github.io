@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for \"cannot assign value...\"",
+        "Component": "BAPI",
+        "Product": "BoardConnector"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added option to configure package size for initial load.",
+        "Component": "TableCDC",
+        "Product": "Theobald.Extractors"
+    }
+]

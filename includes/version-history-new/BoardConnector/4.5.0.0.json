@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "General WPF migration for BoardConnectorDesigner and other small UI improvements",
+        "Component": "Designer",
+        "Product": "BoardConnector"
+    }
+]

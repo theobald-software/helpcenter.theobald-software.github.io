@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Metadata can now be refreshed without performing a new lookup",
+        "Component": "ODP",
+        "Product": "Theobald.Extractors"
+    }
+]

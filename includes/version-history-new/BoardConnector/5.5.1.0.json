@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "Now allowing extractions without measure selections in MDX mode. Added support for additional options in interval/complex BEx variable selections.",
+        "Component": "BW Cube",
+        "Product": "BoardConnector"
+    },
+    {
+        "Message": "Now allowing extractions without measure selections in MDX mode. Added support for additional options in interval/complex BEx variable selections.",
+        "Component": "BW Cube",
+        "Product": "Theobald.Extractors"
+    }
+]

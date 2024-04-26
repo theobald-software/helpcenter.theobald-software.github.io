@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "BICS: Added support for time, date and null key figure values",
+        "Component": "BW Cube",
+        "Product": "Theobald.Extractors"
+    }
+]

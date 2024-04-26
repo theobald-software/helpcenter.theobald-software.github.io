@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Improved handling of empty results",
+        "Component": "Server",
+        "Product": "BoardConnector"
+    }
+]

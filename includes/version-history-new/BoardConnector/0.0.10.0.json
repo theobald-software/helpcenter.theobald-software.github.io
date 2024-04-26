@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Removed output configuration in General Settings",
+        "Component": "Designer",
+        "Product": "BoardConnector"
+    }
+]

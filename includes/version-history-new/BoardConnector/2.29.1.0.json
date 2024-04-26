@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for \"Keyset does not exist\" in certain AD environments",
+        "Component": "General",
+        "Product": "BoardConnector"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Reduced amount of messages in server log",
+        "Component": "Server",
+        "Product": "BoardConnector"
+    }
+]

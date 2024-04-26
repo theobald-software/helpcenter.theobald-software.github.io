@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed a bug where description texts were not extracted when the InfoObject name was shorter than expected.",
+        "Component": "Hierarchy",
+        "Product": "Theobald.Extractors"
+    }
+]

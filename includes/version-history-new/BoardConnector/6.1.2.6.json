@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed a bug in the HTTP server causing the request to hang and massive memory usage.",
+        "Component": "General",
+        "Product": "Theobald.Server"
+    }
+]

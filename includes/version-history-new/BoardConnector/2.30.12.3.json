@@ -1,0 +1,27 @@
+[
+    {
+        "Message": "Classic RFC: Fix for spaces in SNC library path",
+        "Component": "RFCServer",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Added R3Connection.ToConnectionString() and R3Connection.AppendToConnectionString()",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Fix for customizing check (NetWeaver RFC)",
+        "Component": "DeltaQ",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Updated to 5.4.4.0",
+        "Component": "ERPConnect",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Updated to 5.4.3.0",
+        "Component": "ERPConnect",
+        "Product": "XtractKernel"
+    }
+]

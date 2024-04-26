@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix extraction cache getting checked despite being disabled. Fix possible race condition in the RPC worker.",
+        "Component": "General",
+        "Product": "BoardConnector"
+    }
+]

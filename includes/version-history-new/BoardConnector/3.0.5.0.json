@@ -1,0 +1,8 @@
+[
+    {
+        "Message": "Fix for chunked transfer encoding (caused invalid data in some cases, broken since 3.0.0)",
+        "Component": "Server",
+        "Product": "BoardConnector",
+        "IsCritical": true
+    }
+]

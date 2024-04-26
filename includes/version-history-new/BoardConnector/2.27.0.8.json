@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Backward compatibility for old extractions with erroneous field lengths",
+        "Component": "DeltaQ",
+        "Product": "XtractKernel"
+    }
+]

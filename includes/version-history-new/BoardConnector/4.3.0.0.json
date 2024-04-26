@@ -1,0 +1,17 @@
+[
+    {
+        "Message": "Disabled TLS 1.1, enabled TLS 1.3",
+        "Component": "Security",
+        "Product": "BoardConnector"
+    },
+    {
+        "Message": "Added retry logic for accessing files in use",
+        "Component": "General",
+        "Product": "Common"
+    },
+    {
+        "Message": "Extended JSON Writer",
+        "Component": "General",
+        "Product": "Common"
+    }
+]

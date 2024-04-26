@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "Fix for starving the threadpool while waiting for spawned thread",
+        "Component": "General",
+        "Product": "Common"
+    },
+    {
+        "Message": "Performance improvement for ForkingWaitHandleServer on machines with few cores.",
+        "Component": "General",
+        "Product": "Theobald.Server"
+    }
+]

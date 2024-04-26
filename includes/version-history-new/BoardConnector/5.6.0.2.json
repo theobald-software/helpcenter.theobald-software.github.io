@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Cube legacy mode: fix for duplicate property column names",
+        "Component": "BW Cube",
+        "Product": "Theobald.Extractors"
+    }
+]

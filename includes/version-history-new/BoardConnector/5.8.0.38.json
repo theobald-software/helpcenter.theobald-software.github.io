@@ -1,0 +1,8 @@
+[
+    {
+        "Message": "Updated licensing logic to no longer care about Sources limits where possible. Marked various helper methods as Obosolete. Existing licenses with Sources limit are still supported.\nRemoved display of Sources limit from About dialog.",
+        "Component": "Licensing",
+        "Product": "Common",
+        "ReleaseNote": "Applications should update their license validation logic to ignore a Sources limit if the license contains one."
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for output transformation (did not work since version 2.0.0.x)",
+        "Component": "BW Cube",
+        "Product": "BoardConnector"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Columns without value are passed as empty strings instead of DBNull.",
+        "Component": "Report",
+        "Product": "XtractKernel"
+    }
+]

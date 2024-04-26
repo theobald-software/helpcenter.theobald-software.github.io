@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for variable problems under BEX mode on certain BW release above rel. 7.01",
+        "Component": "BW Cube",
+        "Product": "BoardConnector"
+    }
+]

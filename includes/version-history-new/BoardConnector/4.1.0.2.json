@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed warning for ENLFDIR permissions",
+        "Component": "General",
+        "Product": "Theobald.Extractors"
+    }
+]

@@ -1,0 +1,14 @@
+[
+    {
+        "Message": "Updated Z_XTRACT_IS_REMOTE_REPORT to version 1.2. (Breaking change)",
+        "Component": "Report",
+        "Product": "Theobald.Extractors",
+        "IsBreaking": true,
+        "ReleaseNote": "*Changes in Z_XTRACT_IS_REMOTE_REPORT*:\n- Added Z_TS_PROG authorization object\n- Authority check on Z_TS_PROG is now performed at the beginning of extraction. Should the authority check fail and the report is assigned to an authorization group, another authority check on S_PROGRAM is performed. If both authority checks fail, the extraction is aborted with an error.\n- *IMPORTANT:* Reports not assigned to an authorization group can't be extracted anymore without having an appropriate Z_TS_PROG authorization object assigned to user."
+    },
+    {
+        "Message": "Fix for possible error when saving dimension filters in MDX mode",
+        "Component": "BW Cube",
+        "Product": "Theobald.Extractors"
+    }
+]

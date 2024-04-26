@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Names are checked after converting from paths, and logged/filtered when enumerating",
+        "Component": "General",
+        "Product": "Theobald.Server"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix: Service stopped unexpectedly on certain power events",
+        "Component": "Service",
+        "Product": "BoardConnector"
+    }
+]
