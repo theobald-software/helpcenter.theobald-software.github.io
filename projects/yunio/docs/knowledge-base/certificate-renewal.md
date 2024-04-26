@@ -5,29 +5,29 @@ description: Certificate Renewal for TLS
 
 The following article shows how to manually and automatically renew a X.509 certificate used for TLS in yunIO.
 
-### Renewing a Certificate Manually
+### Renew a Certificate Manually
 
 !!! warning "Warning! The certificate is already expired:"
     To access the Designer after a certificate has expired, delete the `tls.json` file in the installation directory of yunIO and restart the yunIO service.
     This resets all TLS settings in yunIO, including the certificate selection.
 
-#### Renew a Certificate with New Key
+=== "Renew a Certificate with New Key"
 
-1. Before the old certificate expires, install a new certificate on the server machine.
-2. Open the yunIO Designer and switch to the new certificate, see [Server Settings - Transport Layer Security](../documentation/server-settings.md/#transport-layer-security).
-3. Delete the old certificate from the Microsoft Certificate Store.
+	1. Before the old certificate expires, install a new certificate on the server machine.
+	2. Open the yunIO Designer and switch to the new certificate, see [Server Settings - Transport Layer Security](../documentation/server-settings.md/#transport-layer-security).
+	3. Delete the old certificate from the Microsoft Certificate Store.
 
-#### Renew a Certificate with the Same Key
+=== "Renew a Certificate with the Same Key"
 
-1. Block external access to yunIO using the firewall.
-2. Open the yunIO Designer and enable anonymous access, see [Access Restrictions - Anonymous Access](../documentation/access-restrictions/global-access.md/#settings).
-3. Disable TLS in the Designer, see [Server Settings - Transport Layer Security](../documentation/server-settings.md/#transport-layer-security).
-4. Renew the certificate with the same key using Windows AD Certificate Services.
-5. Enable TLS in the Designer with the new certificate.
-6. Disable anonymous access in the Designer.
-7. Allow external access to yunIO using the firewall.
+	1. Block external access to yunIO using the firewall.
+	2. Open the yunIO Designer and enable anonymous access, see [Access Restrictions - Anonymous Access](../documentation/access-restrictions/global-access.md/#settings).
+	3. Disable TLS in the Designer, see [Server Settings - Transport Layer Security](../documentation/server-settings.md/#transport-layer-security).
+	4. Renew the certificate with the same key using Windows AD Certificate Services.
+	5. Enable TLS in the Designer with the new certificate.
+	6. Disable anonymous access in the Designer.
+	7. Allow external access to yunIO using the firewall.
 
-### Renewing a Certificate Automatically
+### Renew a Certificate Automatically
 
 If you're using [win-acme](https://www.win-acme.com/reference/plugins/installation/script) for the renewal of Letsencrypt certificates, run the following PowerShell script with the same client that runs win-acme.
 
@@ -51,6 +51,6 @@ The `yunio-le.ps1` script requires 2 input parameters:
 ******
 
 #### Related Links
-- [Installing an X.509 Certificate](x509-certificate.md)
-- [Enabling Secure Network Communication (SNC) via X.509 certificate](enable-snc-using-pse-file.md)
-- [Documentation: Server Settings](../documentation/server-settings.md)
+- [Install an X.509 Certificate](x509-certificate.md)
+- [Enable Secure Network Communication (SNC) via X.509 certificate](enable-snc-using-pse-file.md)
+- [yunIO Documentation: Server Settings](../documentation/server-settings.md)

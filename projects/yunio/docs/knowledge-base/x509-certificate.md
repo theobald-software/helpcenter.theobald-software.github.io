@@ -1,6 +1,6 @@
 ---
 title: Install an X.509 Certificate
-description: Installing an X.509 Certificate for transport encryption
+description: Install an X.509 Certificate for transport encryption
 ---
 
 The following article shows how to install an X.509 certificate for Transport encryption.<br>
@@ -46,5 +46,5 @@ The yunIO Designer and the services created in yunIO are now accessible via http
 
 #### Related Links:
 - [Certificate Renewal for TLS](./certificate-renewal.md)
-- [Enabling Secure Network Communication (SNC) via X.509 certificate](./enable-snc-using-pse-file.md)
+- [Enable Secure Network Communication (SNC) via X.509 certificate](./enable-snc-using-pse-file.md)
 - [Documentation: Server Settings](../documentation/server-settings.md)

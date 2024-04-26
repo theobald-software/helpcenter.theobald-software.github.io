@@ -45,7 +45,7 @@ The *OpenAPI Target Kind* defines properties that can be added to the Swagger/Op
 ![Server-Settings-TLS](../assets/images/yunio/server-settings-tls.png){:class="img-responsive"}
 
 Transport Layer Security (TLS) protocol allows the user to communicate with the respective service in a secure way by encrypting the communication with that service (HTTPS).
-This requires the installation of an X.509 certificate, see [Installing an X.509 Certificate](../knowledge-base/x509-certificate.md). <br>
+This requires the installation of an X.509 certificate, see [Install an X.509 Certificate](../knowledge-base/x509-certificate.md). <br>
 For more information on TLS, see [Microsoft: Transport Layer Security Protocol](https://docs.microsoft.com/en-us/windows/win32/secauthn/transport-layer-security-protocol).
 
 !!! note

@@ -49,6 +49,6 @@ PT00H00M26.578S I AzureRelayListener: Server listening...
 ******
 
 #### Related Links
-- [Documentation: Server Settings](../documentation/server-settings.md)
+- [yunIO Documentation: Server Settings](../documentation/server-settings.md)
 - [Microsoft Documentation: What is Azure Relay?](https://learn.microsoft.com/en-us/azure/azure-relay/relay-what-is-it)
 - [Microsoft Documentation: Get started with Relay Hybrid Connections HTTP requests in .NET](https://learn.microsoft.com/en-us/azure/azure-relay/relay-hybrid-connections-http-requests-dotnet-get-started)
