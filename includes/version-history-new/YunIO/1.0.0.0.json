@@ -1,0 +1,8 @@
+[
+    {
+        "Message": "First official relase, end of public beta",
+        "Component": "General",
+        "Product": "YunIO",
+        "IsBreaking": true
+    }
+]

@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "Added TraceLevel property to R3Connection",
+        "Component": "NWRFC",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Fixed a bug where a cache entry would not be invalidated when aborting the extraction.\nFixed a bug where the cache entries for an extraction would not get deleted due to wrong directory operations.",
+        "Component": "General",
+        "Product": "Theobald.Server"
+    }
+]

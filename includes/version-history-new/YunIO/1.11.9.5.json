@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "Added SNCSettings.RunImpersonated",
+        "Component": "SNC",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Fix for SNC with Windows impersonation (broken since 3.6.0)",
+        "Component": "General",
+        "Product": "Theobald.Server"
+    }
+]

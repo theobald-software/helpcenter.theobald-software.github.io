@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for JSON if more than one structure is selected for output",
+        "Component": "Runtime",
+        "Product": "YunIO"
+    }
+]

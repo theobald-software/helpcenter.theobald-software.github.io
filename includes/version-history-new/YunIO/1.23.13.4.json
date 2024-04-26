@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "Added JsonReader.ReadObjectDynamicObject() and JsonReader.ReadDynamicArray()",
+        "Component": "General",
+        "Product": "Common"
+    },
+    {
+        "Message": "Fixed the value of the 'WWW-Authenticate' header for the extraction run endpoint.",
+        "Component": "General",
+        "Product": "Theobald.Server"
+    }
+]

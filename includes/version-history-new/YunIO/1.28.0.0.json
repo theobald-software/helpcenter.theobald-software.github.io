@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Designer improvements: user management (respects current user's permissions, password strength hint). Explicit removal of connection password. Clearer messages for issues with connection password. Better support for long service names.",
+        "Component": "Designer",
+        "Product": "YunIO"
+    }
+]

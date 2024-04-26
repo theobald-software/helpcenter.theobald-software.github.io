@@ -1,0 +1,9 @@
+[
+    {
+        "Message": "The new parts of yunIO's UI following the new Style Guide.",
+        "Component": "Designer",
+        "Product": "YunIO",
+        "IsCritical": true,
+        "ReleaseNote": "Including all aspects: JS, HTML, CSS changes."
+    }
+]

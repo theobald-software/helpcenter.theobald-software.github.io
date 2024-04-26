@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "User management. Login for the designer and basic authentication for the web services. TLS must be enabled.",
+        "Component": "Management",
+        "Product": "YunIO"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed a bug where searching for tables and BAPIs in SAP would throw an error due to broken javascript references.",
+        "Component": "Designer",
+        "Product": "YunIO"
+    }
+]

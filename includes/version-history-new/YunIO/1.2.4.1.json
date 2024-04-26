@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "Refactoring for the certificate pinning and TLS error handling interfaces",
+        "Component": "General",
+        "Product": "Common"
+    },
+    {
+        "Message": "Usage of the new certificate pinning and TLS error handling interface",
+        "Component": "General",
+        "Product": "Theobald.Server"
+    }
+]

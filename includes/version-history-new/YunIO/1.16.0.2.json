@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for \"Dimension on columns\" setting not working correctly for MDX Query extractions with \"Only Structures\" set to false.",
+        "Component": "BW Cube",
+        "Product": "Theobald.Extractors"
+    }
+]

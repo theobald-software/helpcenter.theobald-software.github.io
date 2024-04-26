@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Replaced Swabian HTTP status reason phrases with English ones",
+        "Component": "General",
+        "Product": "Theobald.Server"
+    }
+]
