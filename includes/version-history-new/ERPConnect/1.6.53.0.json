@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Bug Fix: Crash when template saved to XML with function module parameter contains ?",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

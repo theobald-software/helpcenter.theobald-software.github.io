@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for missing BCD values (NW RFC)",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    }
+]

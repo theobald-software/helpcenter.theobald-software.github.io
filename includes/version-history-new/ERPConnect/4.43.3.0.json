@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Improved error message for missing table authorization",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    }
+]

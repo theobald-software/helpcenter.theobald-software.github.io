@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Calls on multiple RFCServers were not processed in parallel since version 4.2.2.0",
+        "Component": "RFCServer",
+        "Product": "ERPConnect"
+    }
+]

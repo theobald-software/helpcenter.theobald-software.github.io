@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Bugfix for STRING Import parameters in RFCServer",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added SNCSettings.RunImpersonated",
+        "Component": "SNC",
+        "Product": "ERPConnect"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for LINQ: Code generation produced syntax error with parameters that contain a slash in the name",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

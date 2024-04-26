@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "R3Connection.UserName and R3Connection.Password are no longer ignored if SNC is used",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    }
+]

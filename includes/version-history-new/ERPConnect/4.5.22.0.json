@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for integer table row members with big endian systems",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

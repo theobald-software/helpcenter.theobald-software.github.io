@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Query: added support for INT2 and INT1",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    }
+]

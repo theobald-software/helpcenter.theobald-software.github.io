@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Corrections when using STRING and XSTRING parameters in RFC server projects",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Libraries for NetWeaver RFC SDK support are loaded dynamically only when needed",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

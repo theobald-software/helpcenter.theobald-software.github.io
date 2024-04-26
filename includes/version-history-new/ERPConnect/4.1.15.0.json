@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Corrected typo: R3Connection.SetAbabDebug() is now R3Connection.SetAbapDebug()",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

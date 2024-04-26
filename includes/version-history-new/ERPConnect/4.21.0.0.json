@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "R3Connection.CreateFunction() now supports ABAP types decfloat16 and decfloat34 (transferred as byte arrays)",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    }
+]

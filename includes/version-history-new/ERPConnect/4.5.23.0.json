@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Some cleanup in Converts.cs (removed unused methods, corrected access modifiers, better understandable implementation of Integer/Float conversion, ...)",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

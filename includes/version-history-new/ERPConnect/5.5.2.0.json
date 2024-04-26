@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Function: Fix for empty tables - return (bug introduced in 5.4.9)",
+        "Component": "LINQtoERP",
+        "Product": "ERPConnect"
+    }
+]

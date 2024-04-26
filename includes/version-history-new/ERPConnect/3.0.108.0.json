@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added SegmentType and GRP_OCCMAX (as MaxOccur) for class IdocSegment; Changes also to RFCConnection (InternalCreateIdoc)",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

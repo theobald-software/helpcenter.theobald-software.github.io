@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for quotes in passwords",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    }
+]

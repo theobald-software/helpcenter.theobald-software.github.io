@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added support for non-Unicode destinations on big endian systems",
+        "Component": "RFCServer",
+        "Product": "ERPConnect"
+    }
+]

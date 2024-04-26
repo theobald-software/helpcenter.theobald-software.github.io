@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for OutOfMemory-exception with certain UNIX-based SAP ERP-kernels",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

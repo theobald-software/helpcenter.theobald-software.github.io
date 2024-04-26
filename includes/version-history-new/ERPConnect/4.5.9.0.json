@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for parameters which use a projection view as data type",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

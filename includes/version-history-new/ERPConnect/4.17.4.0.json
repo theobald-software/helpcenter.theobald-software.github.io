@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added Obfuscation support for custom encoding, key and IV and binary data",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

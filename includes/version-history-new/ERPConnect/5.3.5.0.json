@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for BWCube column positions",
+        "Component": "LINQtoERP",
+        "Product": "ERPConnect"
+    }
+]

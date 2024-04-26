@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added support for new OLAP BAPIs in the classes BWCube and MDXExecuter (see property UseNewOlapBapis for details), see SAP note 1232751",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

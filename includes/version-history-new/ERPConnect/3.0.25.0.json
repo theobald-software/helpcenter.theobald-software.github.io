@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Bugfix with data type INT in RFC server structures",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

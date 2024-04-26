@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added property RFCServer.SAPEncodingInfo",
+        "Component": "RFCServer",
+        "Product": "ERPConnect"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Updated error message for missing NW libraries (NWSDK 7.50)",
+        "Component": "NWRFC",
+        "Product": "ERPConnect"
+    }
+]

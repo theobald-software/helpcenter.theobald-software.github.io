@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added support for nested tables and structures for NW RFC API",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for receiving strings with more than 255 characters inside of deep structures/table types (NW)",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

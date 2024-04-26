@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Correction for BW.MDXExecuter class. Dataset object was not disposed correctly in BW which lead to increased memory consumption in BW",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Classic: Workaround for opening/closing SNC connections multiple times in a row (missing language etc.)",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    }
+]

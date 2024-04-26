@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "ReadTableField is sealed now",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

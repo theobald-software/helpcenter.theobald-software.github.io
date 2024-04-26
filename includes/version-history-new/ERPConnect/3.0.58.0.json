@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Correct date and time conversion when using SOAP XML in mutlinested parameters",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added support for table types in RFCFunction.Imports (SOAP)",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    }
+]

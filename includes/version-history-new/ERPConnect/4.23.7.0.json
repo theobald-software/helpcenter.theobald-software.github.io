@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for R3Connection constructor (SOAP)",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    }
+]

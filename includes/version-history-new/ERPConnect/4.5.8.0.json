@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Idoc.SendAndWait() returned the wrong value. This is fixed now. In case of succes true is returned.",
+        "Component": "Idoc",
+        "Product": "ERPConnect"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for Multiple Single variables in the LINQ dialogs for BW queries",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

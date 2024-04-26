@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Bugfix in SSO process when not using a connection string",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

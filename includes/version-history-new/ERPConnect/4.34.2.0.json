@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for manually generated TIDs (NW)",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    }
+]

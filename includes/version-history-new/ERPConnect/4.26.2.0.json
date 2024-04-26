@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Updated property naming in LINQ code generation to suppress names starting with underscore",
+        "Component": "LINQtoERP",
+        "Product": "ERPConnect"
+    }
+]

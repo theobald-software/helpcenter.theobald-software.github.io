@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixes for removal of SOAP support",
+        "Component": "LINQtoERP",
+        "Product": "ERPConnect"
+    }
+]

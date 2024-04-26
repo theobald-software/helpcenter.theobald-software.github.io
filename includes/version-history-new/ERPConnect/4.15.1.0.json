@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed bug with manifest file for LINQ to SAP.",
+        "Component": "LINQtoERP",
+        "Product": "ERPConnect"
+    }
+]

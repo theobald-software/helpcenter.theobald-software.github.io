@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for multiple AppDomains in the same process (classic RFC)",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

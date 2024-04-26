@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for sequential execution of functions with same callback names but different metadata",
+        "Component": "NWRFC",
+        "Product": "ERPConnect"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "BWCube: Added fallback mechanism for undefined decimals",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

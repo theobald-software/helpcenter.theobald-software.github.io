@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Bugfix for non-remote-enabled function with meta data with length = 0 on unicode systems",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

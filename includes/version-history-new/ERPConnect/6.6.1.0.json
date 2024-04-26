@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed a memory leak that affected RFC functions that contain deep structures or tables",
+        "Component": "NWRFC",
+        "Product": "ERPConnect"
+    }
+]

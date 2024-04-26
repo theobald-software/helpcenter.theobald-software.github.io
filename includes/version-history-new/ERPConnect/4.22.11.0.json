@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "New lines of tables were appended in reverse order (classic RFC)",
+        "Component": "RFCServer",
+        "Product": "ERPConnect"
+    }
+]

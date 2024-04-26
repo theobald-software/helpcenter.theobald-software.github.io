@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "R3Connection.IsSystemEditable hinzugefügt, um abzuprüfen, ob dynamischer ABAP-Code ausgeführt werden kann",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

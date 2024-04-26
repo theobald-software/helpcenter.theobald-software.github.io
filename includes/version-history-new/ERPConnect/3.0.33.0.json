@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Correction in Idoc Schema Generator when MaxOccurs = 0 in segment (sample: MATMAS05 under ECC 6.0)",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "On some BI 7.0 systems the BWLoader class crashes because of unicode <-> non-unicode conversion errors in RequestID",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for very big decimals like 111111111111111.111111111111111",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Bug fix for using < or > sign in IDoc segment description texts while saving the Schema to an XML file",
+        "Component": "Idoc",
+        "Product": "ERPConnect"
+    }
+]

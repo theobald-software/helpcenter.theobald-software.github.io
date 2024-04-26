@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for logon properties check",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    }
+]

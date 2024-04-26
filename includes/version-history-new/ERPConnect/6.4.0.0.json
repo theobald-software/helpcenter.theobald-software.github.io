@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Removed support for VS2008",
+        "Component": "LINQtoERP",
+        "Product": "ERPConnect"
+    }
+]

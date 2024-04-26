@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "The property SID of the R3Connection class is filled always, even if a connection string is used for logon",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

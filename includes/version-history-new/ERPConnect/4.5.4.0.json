@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added support for loading and saving RFCServerFunction objects from/to an XML string",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]
