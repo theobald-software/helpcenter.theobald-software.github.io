@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "SNC authentification available in connection manager",
+        "Component": "Security",
+        "Product": "XtractIS"
+    },
+    {
+        "Message": "Fix for known issue that resending tRFC calls fail when RFC destination and Program ID have different values",
+        "Component": "DeltaQ",
+        "Product": "XtractKernel"
+    }
+]

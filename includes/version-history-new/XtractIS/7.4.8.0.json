@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed date conversion handling for DeltaQ",
+        "Component": "DeltaQ",
+        "Product": "XtractIS"
+    }
+]

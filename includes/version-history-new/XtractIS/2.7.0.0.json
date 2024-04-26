@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added support for SNC RFC destinations",
+        "Component": "DeltaQ",
+        "Product": "XtractIS"
+    }
+]

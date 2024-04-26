@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed a bug to read variables on check and activation operations - introduced in 7.4.3",
+        "Component": "DeltaQ",
+        "Product": "XtractIS"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Moved Json files to XtractKernel.Extractors",
+        "Component": "JSON",
+        "Product": "XtractKernel"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed a bug where Cube extractions might fail because of a FormatException.",
+        "Component": "BW Cube",
+        "Product": "XtractIS"
+    }
+]

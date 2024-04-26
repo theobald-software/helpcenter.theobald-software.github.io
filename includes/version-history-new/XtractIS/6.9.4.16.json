@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added SnapsToDevicePixels=true to Style",
+        "Component": "WPF",
+        "Product": "Common"
+    }
+]

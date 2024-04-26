@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed a bug where data was not converted to XIS data types.",
+        "Component": "Query",
+        "Product": "XtractIS"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added new ProgressDialog class for running tasks with a progress dialog.",
+        "Component": "WPF",
+        "Product": "Common"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for missing .NET 3.5",
+        "Component": "General",
+        "Product": "XtractIS"
+    }
+]

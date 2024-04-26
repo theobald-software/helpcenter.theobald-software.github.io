@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "Removed deprecated TableJoin component (JOINS are still supported by the Table component)",
+        "Component": "Table Join",
+        "Product": "XtractIS"
+    },
+    {
+        "Message": "Removed TableJoin",
+        "Component": "Table Join",
+        "Product": "XtractKernel"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "SSIS log contains version of Theobald.Extractors, version numbers are logged in output of InstallXtractIS",
+        "Component": "General",
+        "Product": "XtractIS"
+    }
+]

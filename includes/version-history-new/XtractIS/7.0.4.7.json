@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Introduced a new type for ergonomic handling of the logger.\nExtended JSON writer to write ulong types.\nIntroduced a new interface for the LicenseLoader.",
+        "Component": "General",
+        "Product": "Common"
+    }
+]

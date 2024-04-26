@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Bugfix for Hebrew and Thai characters in non-unicode SAP systems",
+        "Component": "General",
+        "Product": "XtractIS"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Marked LicenseLoader as obsolete; introduced new LicenseValidator class instead which can perform license validation checks; added method CheckProductAndKind to ProductLicense; added unit tests",
+        "Component": "Licensing",
+        "Product": "Common"
+    }
+]

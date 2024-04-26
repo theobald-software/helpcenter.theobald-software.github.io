@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed performance issues with dispatcher service",
+        "Component": "DeltaQ",
+        "Product": "XtractIS"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for connection loss when using BAPIs within a SSIS loop with no outbound, but only inbound tables",
+        "Component": "BAPI",
+        "Product": "XtractIS"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for uploading hierarchies to 7.X data sources",
+        "Component": "BW Loader",
+        "Product": "XtractIS"
+    }
+]

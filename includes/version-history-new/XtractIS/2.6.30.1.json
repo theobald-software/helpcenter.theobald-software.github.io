@@ -1,0 +1,62 @@
+[
+    {
+        "Message": "Fix for X characters in measures of BW queries",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Fix for dev_rfc.trc files (NW)",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Fix for error handling / ABAP exceptions (NW)",
+        "Component": "RFCServer",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Added support for multiple parallel RFC servers in same process (NW)",
+        "Component": "RFCServer",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Re-added support for non-Unicode RFC server (NW)",
+        "Component": "RFCServer",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Fix for garbage collection of static delegates (NW)",
+        "Component": "RFCServer",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Fix for empty imports/exports/tables (NW)",
+        "Component": "RFCServer",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Fix for imports (NW)",
+        "Component": "RFCServer",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Fix for logging (NW)",
+        "Component": "RFCServer",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Client fully supports multi-threading with both Classic and NetWeaver libraries",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "New implementation of RFC library interfaces. ERPConnectNWxy.dll is no longer needed.",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Fix for X in measures",
+        "Component": "BW Cube",
+        "Product": "XtractKernel"
+    }
+]

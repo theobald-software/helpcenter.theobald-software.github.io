@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "Update license check.",
+        "Component": "General",
+        "Product": "XtractIS"
+    },
+    {
+        "Message": "Added sources limit.",
+        "Component": "Licensing",
+        "Product": "Common"
+    }
+]

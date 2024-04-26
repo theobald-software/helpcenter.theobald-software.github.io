@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Small Bugfix for customers who want to migrate from very old versions to the latest version with their existing packages (message: Wrong input string format)",
+        "Component": "DeltaQ",
+        "Product": "XtractIS"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Improvement for date values, that have not a 19 or 20 prefix in the year (e.g. 12 is converted to 2012 automatically)",
+        "Component": "Table",
+        "Product": "XtractIS"
+    }
+]

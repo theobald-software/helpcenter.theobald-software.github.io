@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Correction for decimal fields with NULL when using automatic data type conversion",
+        "Component": "DeltaQ",
+        "Product": "XtractIS"
+    }
+]

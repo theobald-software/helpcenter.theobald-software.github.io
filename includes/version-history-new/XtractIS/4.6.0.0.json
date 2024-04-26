@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Improved restart, added support for Unicode, NWRFC, trace",
+        "Component": "BINotificationServer",
+        "Product": "XtractIS"
+    }
+]

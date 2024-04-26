@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for editing DeltaQ component after adding (bug introduced in 6.1.0)",
+        "Component": "DeltaQ",
+        "Product": "XtractIS"
+    }
+]

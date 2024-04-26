@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed an issue that caused failed license checks in some Azure IR environments.",
+        "Component": "General",
+        "Product": "XtractIS"
+    }
+]

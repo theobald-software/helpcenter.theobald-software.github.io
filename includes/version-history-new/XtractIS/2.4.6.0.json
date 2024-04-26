@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Moved implementation of password obfuscation to ERPConnect",
+        "Component": "General",
+        "Product": "XtractIS"
+    }
+]

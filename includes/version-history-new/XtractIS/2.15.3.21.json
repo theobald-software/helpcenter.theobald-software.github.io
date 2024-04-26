@@ -1,0 +1,17 @@
+[
+    {
+        "Message": "Improved error messages for nonexistent column names",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "NW: Fix for null-terminators in imports/exports/changings of ABAP type string",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Updated to 4.43.6.0",
+        "Component": "ERPConnect",
+        "Product": "XtractKernel"
+    }
+]

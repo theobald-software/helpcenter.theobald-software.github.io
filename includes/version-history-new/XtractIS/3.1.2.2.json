@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "Classic RFC: Fix for TimeoutException when invalid connection parameters are used",
+        "Component": "RFCServer",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Updated to 5.0.8.0",
+        "Component": "ERPConnect",
+        "Product": "XtractKernel"
+    }
+]

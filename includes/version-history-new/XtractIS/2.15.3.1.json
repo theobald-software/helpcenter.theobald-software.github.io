@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "Introduced NoAuthorityException, improved error messages",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Updated to 4.43.4.0",
+        "Component": "ERPConnect",
+        "Product": "XtractKernel"
+    }
+]

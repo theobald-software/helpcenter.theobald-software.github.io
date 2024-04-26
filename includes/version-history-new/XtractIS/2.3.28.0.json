@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Bug fix for export params with data type Byte[] that are sent to the pipe",
+        "Component": "BAPI",
+        "Product": "XtractIS"
+    }
+]

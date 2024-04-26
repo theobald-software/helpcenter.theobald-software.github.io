@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for field lengths (automatic data conversion disabled)",
+        "Component": "DeltaQ",
+        "Product": "XtractIS"
+    }
+]

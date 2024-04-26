@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed a bug that caused hex strings with uneven length to be parsed incorrectly",
+        "Component": "General",
+        "Product": "XtractKernel"
+    }
+]

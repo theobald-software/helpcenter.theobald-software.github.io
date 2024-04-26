@@ -1,0 +1,27 @@
+[
+    {
+        "Message": "Added flag for BW DATS datatypes",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Updated property naming in LINQ code generation to suppress names starting with underscore",
+        "Component": "LINQtoERP",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Bug fix for escaping // characters in SavePlainData function",
+        "Component": "Idoc",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Removed R3Connection.IsBusy (has been marked as obsolete since 27.03.2014)",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Marked ClientProtocol.HttpSoap as obsolete",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    }
+]

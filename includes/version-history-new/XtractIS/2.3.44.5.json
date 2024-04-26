@@ -1,0 +1,17 @@
+[
+    {
+        "Message": "Fix for EBCDIC systems",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Added SNC support RFC Server (classic RFC SDK)",
+        "Component": "SNC",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Fix for ERPConnectNW35 and ERPConnectNW40 assembly version numbers",
+        "Component": "NWRFC",
+        "Product": "ERPConnect"
+    }
+]

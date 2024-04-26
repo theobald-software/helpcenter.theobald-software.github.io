@@ -1,0 +1,8 @@
+[
+    {
+        "Message": "Fix for writing TimeSpan on JsonWriter class",
+        "Component": "General",
+        "Product": "Common",
+        "ReleaseNote": "##2.14.1 - Fix for writing TimeSpan on JsonWriter class\n\n* Fixed bug for writing TimeSpan on JsonWriter class, which caused an addition of an extra hour to its total time when the minutes property had its value greater or equal to 30\n* Centralization of TimeSpan serialization to string in StringHelper.ToIso8601Duration(TimeSpan)\n* Addition of unit tests for JsonWriter.Write(string, Timespan) and StringHelper.ToIso8601Duration(TimeSpan)"
+    }
+]

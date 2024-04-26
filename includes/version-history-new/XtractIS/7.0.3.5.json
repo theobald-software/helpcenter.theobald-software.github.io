@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Packed numbers that exceed the range of System.Decimal throw an exception instead of being cut off silently",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

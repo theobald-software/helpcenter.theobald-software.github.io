@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Connection managers can now be changed using the tool editor GUI",
+        "Component": "BAPI",
+        "Product": "XtractIS"
+    }
+]

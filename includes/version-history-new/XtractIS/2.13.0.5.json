@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Receiving an empty data package won't result in canceling the whole extraction anymore.",
+        "Component": "OHS",
+        "Product": "XtractKernel"
+    }
+]

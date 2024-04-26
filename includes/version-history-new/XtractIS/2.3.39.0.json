@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Support for OHS table extraction is withdrawn. Please use Compression instead (which is faster anyway)",
+        "Component": "Table",
+        "Product": "XtractIS"
+    }
+]

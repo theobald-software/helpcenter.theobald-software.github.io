@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for variable OLTP source name",
+        "Component": "DeltaQ",
+        "Product": "XtractIS"
+    }
+]

@@ -1,0 +1,22 @@
+[
+    {
+        "Message": "Marked ReadTable.AddCriteria() as obsolete",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Updated to 5.4.2.1",
+        "Component": "ERPConnect",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Fix for checking activation timestamp with multiple source systems",
+        "Component": "DeltaQ",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Added support for NetWeaver RFC libraries",
+        "Component": "DeltaQ",
+        "Product": "XtractKernel"
+    }
+]

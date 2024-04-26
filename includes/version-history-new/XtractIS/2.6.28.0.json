@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Additional option for hierarchy extraction to collect all data before sending to avoid text loss",
+        "Component": "DeltaQ",
+        "Product": "XtractIS"
+    }
+]

@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "Fix for auto slicing MDX syntax on older SAP BW systems.",
+        "Component": "BW Cube",
+        "Product": "XtractIS"
+    },
+    {
+        "Message": "Fix for auto slicing MDX syntax on older SAP BW systems.",
+        "Component": "BW Cube",
+        "Product": "XtractKernel"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for NullReferenceExcpetions that may have occured on editing some DeltaQ packages.",
+        "Component": "DeltaQ",
+        "Product": "XtractIS"
+    }
+]

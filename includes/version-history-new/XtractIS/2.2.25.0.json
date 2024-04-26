@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "BAPI_BW_FUNCTION_EXISTS now implemented",
+        "Component": "BINotificationServer",
+        "Product": "XtractIS"
+    }
+]

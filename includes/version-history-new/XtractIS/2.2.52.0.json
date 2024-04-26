@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Correction for long text fields (error DoesNotFitBufferException)",
+        "Component": "Query",
+        "Product": "XtractIS"
+    }
+]

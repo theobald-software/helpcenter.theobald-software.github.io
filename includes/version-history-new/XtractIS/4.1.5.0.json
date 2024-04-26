@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for preview (max rows, connection closed)",
+        "Component": "Query",
+        "Product": "XtractIS"
+    }
+]

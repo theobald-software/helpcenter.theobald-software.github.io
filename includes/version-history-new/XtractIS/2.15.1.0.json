@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Improved error handling for BW cube date conversion (during lookup)",
+        "Component": "BW Cube",
+        "Product": "XtractIS"
+    }
+]

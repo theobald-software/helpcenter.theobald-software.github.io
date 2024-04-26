@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "Removed LINQtoERP VS2012",
+        "Component": "LINQtoERP",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Added Table CDC as new LicenseComponent",
+        "Component": "Licensing",
+        "Product": "Common"
+    }
+]

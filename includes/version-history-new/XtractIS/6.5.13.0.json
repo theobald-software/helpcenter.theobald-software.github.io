@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for instance number check on connection manager window, which was not allowing the value 98 for this property",
+        "Component": "General",
+        "Product": "XtractIS"
+    }
+]

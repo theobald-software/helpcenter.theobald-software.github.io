@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Additional setting available to surpress resending of tRFC errors. This feature might be used by customers to avoid the ARFC-Jobs that are created automatically during communication failure. ",
+        "Component": "DeltaQ",
+        "Product": "XtractIS"
+    }
+]

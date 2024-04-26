@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Date in automatic type conversion is now converted into DT_DBTIMESTAMP",
+        "Component": "DeltaQ",
+        "Product": "XtractIS"
+    }
+]

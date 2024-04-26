@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Backward compatibilty fix: Compression function module was ignored in old packages, that had only \"Use Compression\" enabled, but not \"Use custom function\"",
+        "Component": "Table",
+        "Product": "XtractIS"
+    }
+]

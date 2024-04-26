@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed an issue where the component could not be edited when there are variables/parameters of type DateTime defined in the package",
+        "Component": "BAPI",
+        "Product": "XtractIS"
+    }
+]

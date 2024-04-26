@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "Workaround for result column length of some queries",
+        "Component": "Query",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Implemented ReportDefinition.SearchForReports(…) and ReportDefinition.SearchForReportVariants(…) ",
+        "Component": "Report",
+        "Product": "XtractKernel"
+    }
+]

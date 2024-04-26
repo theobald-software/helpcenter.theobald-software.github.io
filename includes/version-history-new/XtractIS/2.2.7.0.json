@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Bugfix for accounts with user name containing the characters LANG",
+        "Component": "General",
+        "Product": "XtractIS"
+    }
+]

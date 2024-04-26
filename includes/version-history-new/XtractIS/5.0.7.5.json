@@ -1,0 +1,28 @@
+[
+    {
+        "Message": "Updated Theobald.Common 1.0.0.128",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Improvements for detecting possible joins and bug fixes related to editing joins",
+        "Component": "Table",
+        "Product": "Theobald.Extractors",
+        "ReleaseNote": "The changes contained in this release only affect the GUI and do not change behavior of extractions.\n\n### Join detection\nUpon adding a new table to the extraction the GUI will attempt to automatically create joins based on the references in the SAP system. Detection will take the following steps to map fields with matching names:\n\n1. Primary keys that directly reference another table\n2. Primary keys that both reference the same table which does not exist in the extraction\n3. All fields that directly reference another table\n4. All fields that both reference the same table which does not exist in the extraction\n\n### Bug fixes\n- fixed a bug where editing of joins was not possible after saving an extraction"
+    },
+    {
+        "Message": "Updated ERPConnect 6.6.2.0",
+        "Component": "ERPConnect",
+        "Product": "Theobald.Extractors"
+    },
+    {
+        "Message": "Updated to 1.5.8.1",
+        "Component": "Theobald.Extractors",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Updated to 1.5.7.0",
+        "Component": "Theobald.Extractors",
+        "Product": "XtractKernel"
+    }
+]

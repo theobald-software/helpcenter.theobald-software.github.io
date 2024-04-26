@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Report name can be set dynamically through a variable (place @ before report to indentify variable)",
+        "Component": "Report",
+        "Product": "XtractIS"
+    }
+]

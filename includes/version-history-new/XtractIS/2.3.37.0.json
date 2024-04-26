@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for SNC settings which contain spaces",
+        "Component": "General",
+        "Product": "XtractIS"
+    }
+]

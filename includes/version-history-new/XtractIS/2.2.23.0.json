@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for incorrect Timeout setting",
+        "Component": "Report",
+        "Product": "XtractIS"
+    }
+]

@@ -1,0 +1,27 @@
+[
+    {
+        "Message": "Removed XISDispatcher service",
+        "Component": "DeltaQ",
+        "Product": "XtractIS"
+    },
+    {
+        "Message": "Classic: Removed queueing of tRFC requests/dynamic server registration",
+        "Component": "RFCServer",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Removed option for resending errors",
+        "Component": "DeltaQ",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Removed Dispatcher Service (no longer needed)",
+        "Component": "DeltaQ",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "DeltaQ server pool is run in separate process now",
+        "Component": "DeltaQ",
+        "Product": "XtractKernel"
+    }
+]

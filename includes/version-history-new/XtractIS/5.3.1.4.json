@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Workaround for an SAP bug that caused the package size to increase (roughly double) with each package",
+        "Component": "ODP",
+        "Product": "Theobald.Extractors"
+    }
+]

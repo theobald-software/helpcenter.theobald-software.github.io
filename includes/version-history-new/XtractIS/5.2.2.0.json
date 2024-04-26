@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for missing resources in SQL Server 2012",
+        "Component": "Report",
+        "Product": "XtractIS"
+    }
+]

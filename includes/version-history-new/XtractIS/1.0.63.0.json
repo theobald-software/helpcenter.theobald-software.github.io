@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "More test pings implemented for the DeltaQ server pool (for slow network connections)",
+        "Component": "DeltaQ",
+        "Product": "XtractIS"
+    }
+]

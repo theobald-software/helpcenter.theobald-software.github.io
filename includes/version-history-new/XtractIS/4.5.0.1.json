@@ -1,0 +1,22 @@
+[
+    {
+        "Message": "Adjustments for FIPS compliance",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Fixed text encoding of TIDs (NWRFC)",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Added support for setting SNCSettings.OwnName on client connections",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Updated to 5.7.3.0",
+        "Component": "ERPConnect",
+        "Product": "XtractKernel"
+    }
+]

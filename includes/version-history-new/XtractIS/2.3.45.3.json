@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added support for pure MDX execution",
+        "Component": "BW Cube",
+        "Product": "XtractKernel"
+    }
+]

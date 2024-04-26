@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for String Conversion to VARCHAR",
+        "Component": "DeltaQ",
+        "Product": "XtractIS"
+    }
+]

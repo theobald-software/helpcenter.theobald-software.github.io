@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix: In some situations DeltaQ fetched the wrong timestamp from SAP",
+        "Component": "DeltaQ",
+        "Product": "XtractIS"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed a bug that caused using the wrong function module for loading axis data in MDX extractions.",
+        "Component": "BW Cube",
+        "Product": "Theobald.Extractors"
+    }
+]

@@ -1,0 +1,47 @@
+[
+    {
+        "Message": "Removed Support for UseWrapper function of RFCFunction object",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Removed Support for AskUserAndOpen() function of R3Connection object",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Added support for loading and saving RFCServerFunction objects from/to an XML string",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Added support for unknown dimensions in BWCube (dimension type 0)",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Added support for non-aggregation dimensions in BWCube (dimension type 4)",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Improved support for changing parameters",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Another fix for hierarchies with multiple matching entries in RSRHIEDIR_OLAP",
+        "Component": "Hierarchy",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Fix for hierarchies with multiple matching entries in RSRHIEDIR_OLAP",
+        "Component": "Hierarchy",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Optimization for ReplaceSpecialCharacters()",
+        "Component": "General",
+        "Product": "XtractKernel"
+    }
+]

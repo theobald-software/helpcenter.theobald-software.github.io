@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "BEX mode variables now work also with multiple SSIS variables by using the delimiter",
+        "Component": "BW Cube",
+        "Product": "XtractIS"
+    }
+]

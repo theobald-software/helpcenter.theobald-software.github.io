@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Correction for crashing DeltaQDispatcher Service (e.g. 0MATERIAL_TEXT)",
+        "Component": "DeltaQ",
+        "Product": "XtractIS"
+    }
+]
