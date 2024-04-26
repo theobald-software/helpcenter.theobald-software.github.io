@@ -1,6 +1,6 @@
 ---
-title: Integrating a yunIO Service with Alteryx
-description: Integrating a yunIO Service with Alteryx
+title: Integrate a yunIO Service with Alteryx
+description: Integrate a yunIO Service with Alteryx
 ---
 
 
@@ -48,7 +48,7 @@ Follow the steps below to call yunIO services in Alteryx:<br>
 
 1. [Create a new SAP Connection](../getting-started.md#connect-to-sap) in yunIO. 
 2. [Create a new service](../getting-started.md#create-a-service) in yunIO.
-This example uses a yunIO transaction service that changes customer master data in SAP, see [Working with Transaction XD02](transaction-xd02.md).<br>
+This example uses a yunIO transaction service that changes customer master data in SAP, see [Transaction XD02 - Change Customer Master Data](transaction-xd02.md).<br>
 3. Open or create a new Alteryx workflow.<br>
 ![yunio-workflow](../assets/images/yunio/articles/yunIO-workflow.png){:class="img-responsive"}
 4. Add an **Input Data** tool :number-1: that provides values for the input parameters of the yunIO service. Example:

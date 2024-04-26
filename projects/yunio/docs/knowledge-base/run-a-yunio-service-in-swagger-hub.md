@@ -1,6 +1,6 @@
 ---
-title: Running a yunIO Service in SwaggerHub
-description: Running a yunIO Service in SwaggerHub
+title: Run a yunIO Service in SwaggerHub
+description: Run a yunIO Service in SwaggerHub
 ---
 
 The following article shows how to run a yunIO service in SwaggerHub.<br>
@@ -15,7 +15,7 @@ For more information on the SwaggerHub, see [SwaggerHub Documentation](https://s
 3. Click :yunio-run-download: to download the service definition :number-2:.<br>
 ![yunio-Services-Function-Download](../assets/images/yunio/articles/yunio-run-services-function-download.png){:class="img-responsive" }
 
-### Loading and Running a yunIO Service in SwaggerHub
+### Loading and Run a yunIO Service in SwaggerHub
 
 1. Open [SwaggerHub](https://app.swaggerhub.com/home) in your browser.
 2. Click **Create New > Import and Document API**.<br>

@@ -38,7 +38,7 @@ The *OpenAPI Target Kind* defines properties that can be added to the Swagger/Op
 |  *OpenAPI Target Kind*  |  Description   |  
 |----------|-------------|
 | *Default* | If this option is active, the Swagger/OpenAPI json file contains no additional properties. |
-| *Nintex Gateway* | Select this option when integrating yunIO services with the [Nintex Gateway](https://help.nintex.com/en-US/nwc/Content/Gateway/InstallAndConfigure.htm). Nintex properties are added to into Swagger/OpenAPI json file and there is no need to manually change the swagger definition. For more information, see [Integrating a yunIO Service via Nintex Gateway](../knowledge-base/integrating-yunio-via-nintex-gateway.md).|
+| *Nintex Gateway* | Select this option when integrating yunIO services with the [Nintex Gateway](https://help.nintex.com/en-US/nwc/Content/Gateway/InstallAndConfigure.htm). Nintex properties are added to into Swagger/OpenAPI json file and there is no need to manually change the swagger definition. For more information, see [Integrate a yunIO Service via Nintex Gateway](../knowledge-base/integrate-yunio-via-nintex-gateway.md).|
 
 ### Transport Layer Security
 

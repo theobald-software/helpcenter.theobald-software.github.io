@@ -4,7 +4,7 @@ description: Transactions Table Parameters
 ---
 
 The following article shows how to pass tables as input parameters to *Transaction* services.<br>
-The depicted example application uses the transaction VA02 to change a sales order in SAP, see [Working with Transaction VA02](./transaction-va02.md).
+The depicted example application uses the transaction VA02 to change a sales order in SAP, see [Transaction VA02 - Change Sales Order](./transaction-va02.md).
 
 ### Prerequisites
 
@@ -17,7 +17,7 @@ Use an SAP dialog user with sufficient access rights to edit sales orders for th
 ### Selecting a Table as an Input Parameter
 
 1. Create a transaction service that uses tables. <br>
-The depicted example uses a service that changes sales orders via transaction VA02, see [Working with Transaction VA02](./transaction-va02.md). 
+The depicted example uses a service that changes sales orders via transaction VA02, see [Transaction VA02 - Change Sales Order](./transaction-va02.md). 
 2. Click :yunio-edit: to open the service. <br>
 ![change-sales-order](../assets/images/yunio/articles/transaction-edit.png){:class="img-responsive"}
 3. Click on the documented actions in the section *GUI Steps* to navigate to the screen that contains the table you want to parameterize.<br>

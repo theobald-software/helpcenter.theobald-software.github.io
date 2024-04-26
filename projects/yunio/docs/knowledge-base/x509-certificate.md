@@ -1,6 +1,6 @@
 ---
-title: Installing an X.509 Certificate
-description: Installing an X.509 Certificate
+title: Install an X.509 Certificate
+description: Installing an X.509 Certificate for transport encryption
 ---
 
 The following article shows how to install an X.509 certificate for Transport encryption.<br>

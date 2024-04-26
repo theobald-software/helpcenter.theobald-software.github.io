@@ -21,4 +21,4 @@ Access to the report can then be granted through the S_PROGRAM authorization obj
 
 *****
 #### Related Links
-- [How to Create the Custom Authorization Object Z_TS_PROG](how-to-create-the-custom-authority-object-z-ts-prog.md)
+- [How to Create the Custom Authorization Object Z_TS_PROG](create-the-custom-authority-object-z-ts-prog.md)

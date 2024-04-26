@@ -1,5 +1,5 @@
 ---
-title: Integrating a yunIO Scenario with Power Automate and AI Builder
+title: Integrate yunIO with Power Automate and the AI Builder
 description: Integation scenario with yunIO and the AI Builder
 ---
 
@@ -55,7 +55,7 @@ The depicted example uses the BAPI_INCOMINGINVOICE_CREATE1 to create an incoming
 ### Configuring a yunIO Custom Connector in Power Automate
 
 To use the service created in [Creating a Service in yunIO](#creating-a-service-in-yunio) with Power Automate, it must be available as a custom connector in Power Automate. 
-For information on how to integrate a yunIO service with Power Automate, see [Integrating a yunIO Service with Power Automate](integrating-a-yunio-service-with-power-automate.md).
+For information on how to integrate a yunIO service with Power Automate, see [Integrate a yunIO Service with Power Automate](integrate-a-yunio-service-with-power-automate.md).
 
 !!! note
     When integrating services from a local yunIO installation with a cloud hosted platform like Power Automate, a gateway to tunnel the connection is recommended, e.g., the [**Microsoft On-premises data gateway**](https://docs.microsoft.com/en-us/data-integration/gateway/).

@@ -50,7 +50,7 @@ For more information on how to customize table fields via custom development, se
 
 Follow the steps below to synchronize customer data in Dynamics 356 Business Central with customer data in SAP:
 
-1. Integrate the yunIO service created in [Setup in yunIO](#setup-in-yunio) as a custom connector in Power Automate, see [Integrating a yunIO Service with Power Automate](integrating-a-yunio-service-with-power-automate.md#configuring-a-yunio-custom-connector-in-power-automate).
+1. Integrate the yunIO service created in [Setup in yunIO](#setup-in-yunio) as a custom connector in Power Automate, see [Integrate a yunIO Service with Power Automate](integrate-a-yunio-service-with-power-automate.md#configuring-a-yunio-custom-connector-in-power-automate).
 2. Create a new workflow that is triggered when a customer data is modified in the Dynamics 365 Business Central table *customers*.
 3. Use a *RowID* to keep track of the modified record.<br>
 ![dynamics-get-data](../assets/images/yunio/articles/dynamics-get-data.png){:class="img-responsive"}

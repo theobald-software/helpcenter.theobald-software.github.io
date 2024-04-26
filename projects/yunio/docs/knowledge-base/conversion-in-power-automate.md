@@ -56,5 +56,5 @@ Example: the English `ClearCollect(SAPData,yunIO_1.ReadCSKT());` becomes `ClearC
 ******
 
 #### Related Links
-- [How to use yunIO to populate Drop Down Controls in Power Apps](./populating-drop-down-controls-in-power-apps.md)
+- [How to use yunIO to populate Drop Down Controls in Power Apps](./populate-drop-down-controls-in-power-apps.md)
 - [Sync Salesforce with SAP using Power Automate and yunIO](./salesforce-power-automate-scenario.md)

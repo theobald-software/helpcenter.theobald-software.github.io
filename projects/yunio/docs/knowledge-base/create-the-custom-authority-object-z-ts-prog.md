@@ -1,5 +1,5 @@
 ---
-title: How to Create the Custom Authorization Object Z_TS_PROG
+title: Create the Custom Authorization Object Z_TS_PROG
 description: How to Create the Custom Authorization Object Z_TS_PROG for Report Extractions
 ---
 

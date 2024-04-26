@@ -1,6 +1,6 @@
 ---
-title: Integrating a yunIO Service via Nintex Gateway
-description: Integrating a yunIO Service with Nintex
+title: Integrate a yunIO Service via Nintex Gateway
+description: Integrate a yunIO Service with Nintex
 ---
 
 

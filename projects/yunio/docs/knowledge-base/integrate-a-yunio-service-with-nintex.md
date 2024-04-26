@@ -1,6 +1,6 @@
 ---
-title: Integrating a yunIO Service with Nintex
-description: Integrating a yunIO Service with Nintex
+title: Integrate a yunIO Service with Nintex
+description: Integrate a yunIO Service with Nintex
 ---
 
 

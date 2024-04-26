@@ -1,6 +1,6 @@
 ---
-title: Working with Transaction VA02
-description: Working with Transaction VA02
+title: Transaction VA02 - Change Sales Order
+description: Transaction VA02 - Change Sales Order
 ---
 
 The following article shows how to use the integration type *Transaction* with transaction VA02 in yunIO.<br>

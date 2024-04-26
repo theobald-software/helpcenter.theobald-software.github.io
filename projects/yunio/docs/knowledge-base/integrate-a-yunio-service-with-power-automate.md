@@ -1,5 +1,5 @@
 ---
-title: Integrating a yunIO Service with Power Automate
+title: Integrate a yunIO Service with Power Automate
 description: Running a yunIO Service with Power Automate
 ---
 

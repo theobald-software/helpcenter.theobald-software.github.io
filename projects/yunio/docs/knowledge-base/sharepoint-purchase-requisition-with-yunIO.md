@@ -95,12 +95,12 @@ For more information on SharePoint lists, see [Microsoft Documentation: Introduc
     Defining other input parameters in SharePoint is optional as they can also be set as static values in Power Automate.
 
 !!! tip
-    You can use a Power App form to simplify and validate the SharePoint input, see [Using yunIO Services in Power Apps](populating-drop-down-controls-in-power-apps.md#using-yunio-services-in-power-apps).
+    You can use a Power App form to simplify and validate the SharePoint input, see [Using yunIO Services in Power Apps](populate-drop-down-controls-in-power-apps.md#using-yunio-services-in-power-apps).
 
 
 ### Setup in Power Automate
 
-1. Integrate the yunIO service created in [Setup in yunIO](#setup-in-yunio) as a Custom Connector in Power Automate, see [Integrating a yunIO Service with Power Automate](integrating-a-yunio-service-with-power-automate.md#configuring-a-yunio-custom-connector-in-power-automate).
+1. Integrate the yunIO service created in [Setup in yunIO](#setup-in-yunio) as a Custom Connector in Power Automate, see [Integrate a yunIO Service with Power Automate](integrate-a-yunio-service-with-power-automate.md#configuring-a-yunio-custom-connector-in-power-automate).
 2. Create a new workflow that is triggered when a new item is added to the SharePoint list.
 3. Add the yunIO connector created in step 1 to the workflow and map the purchase requisition data from SharePoint to the input parameters of yunIO.<br>
 ![sharepoint-purchase-requisition3](../assets/images/yunio/articles/sharepoint-purchase-requisition3.png){:class="img-responsive"}

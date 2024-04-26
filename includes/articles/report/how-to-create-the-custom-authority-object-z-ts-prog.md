@@ -22,5 +22,5 @@ Text: Theobald Software Report Authorization<br>
 
 *****
 #### Related Links
-- [Authorizing Access to Reports via Authorization Groups](authorizing-access-to-specific-reports.md)
+- [Authorizing Access to Reports via Authorization Groups](authorize-access-to-specific-reports.md)
 - [Z_XTRACT_IS_REMOTE_REPORT](../documentation/setup-in-sap/custom-function-module-for-reports.md)

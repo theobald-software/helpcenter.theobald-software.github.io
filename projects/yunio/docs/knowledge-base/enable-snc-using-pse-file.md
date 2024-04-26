@@ -1,5 +1,5 @@
 ---
-title: Enabling Secure Network Communication (SNC) via X.509 certificate
+title: Enable Secure Network Communication (SNC) via X.509 certificate
 description: Enabling Secure Network Communication (SNC) via X.509 certificate 
 ---
 

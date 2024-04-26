@@ -24,7 +24,7 @@ For more information on yunIO, see [Theobald Software: yunIO](https://theobald-s
 
 1. [Create a service](../getting-started.md/#create-a-service) in yunIO.
 The depicted example uses the integration type *Transaction* for the service.
-2. Record SAP transactions to create a new employee in SAP, see [Working with Transaction PA40](transaction-pa40.md). Example:<br>
+2. Record SAP transactions to create a new employee in SAP, see [Transaction PA40 - Personnel Actions](transaction-pa40.md). Example:<br>
 ![PA40](../assets/images/yunio/articles/pa40.gif){:class="img-responsive"  style="border:1px solid black;"}
 3. Parameterize all mandatory SAP fields in the yunIO service. 
 For information on how to parameterize services, see [Documentation: Parameterize Transactions](../documentation/transactions/transactions.md/#parameterize-transactions).
@@ -61,7 +61,7 @@ The depicted example uses the following input parameters:
 
 ### Setup in Nintex
 
-1. Integrate the yunIO service created in [Setup in yunIO](#setup-in-yunio) as an Xtension in Nintex, see [Integrating a yunIO Service with Nintex: Configuring a yunIO Xtension in Nintex](integrating-a-yunio-service-with-nintex.md/#configuring-a-yunio-xtension-in-nintex).
+1. Integrate the yunIO service created in [Setup in yunIO](#setup-in-yunio) as an Xtension in Nintex, see [Integrate a yunIO Service with Nintex: Configuring a yunIO Xtension in Nintex](integrate-a-yunio-service-with-nintex.md/#configuring-a-yunio-xtension-in-nintex).
 2. Import the Nintex template for Employee Onboarding to your tenant, see [Nintex Gallery: Employee Onboarding](https://gallery.nintex.com/t/employee-onboarding).
 3. Open the imported Nintex workflow.
 4. Add the yunIO Xtension from step 1 after the contract is signed.<br>
@@ -80,4 +80,4 @@ The depicted example uses the following input parameters:
 #### Related Links
 - [yunIO Documentation: Transactions](../documentation/transactions/index.md)
 - [Nintex Gallery: Employee Onboarding](https://gallery.nintex.com/t/employee-onboarding)
-- [Integrating a yunIO Service with Nintex](integrating-a-yunio-service-with-nintex.md)
+- [Integrate a yunIO Service with Nintex](integrate-a-yunio-service-with-nintex.md)

@@ -1,6 +1,6 @@
 ---
-title: Running a yunIO Service in Postman
-description: Running a yunIO Service in Postman
+title: Run a yunIO Service in Postman
+description: Run a yunIO Service in Postman
 ---
 
 The following article shows how to run a yunIO service in Postman.

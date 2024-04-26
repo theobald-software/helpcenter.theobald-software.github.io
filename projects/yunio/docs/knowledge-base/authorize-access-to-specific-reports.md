@@ -1,5 +1,5 @@
 ---
-title: Authorizing Access to Reports via Authorization Groups
+title: Authorize Access to Reports via Authorization Groups
 description: How to authorize access to Reports via Authorization Groups
 ---
 

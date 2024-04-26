@@ -71,7 +71,7 @@ For more information on Team Forms, see [Team Forms Documentation](https://docs.
 
 ### Setup in Power Automate
 
-1. Integrate the yunIO services created in [Setup in yunIO](#setup-in-yunio) as Custom Connectors in Power Automate, see [Integrating a yunIO Service with Power Automate](integrating-a-yunio-service-with-power-automate.md#configuring-a-yunio-custom-connector-in-power-automate).
+1. Integrate the yunIO services created in [Setup in yunIO](#setup-in-yunio) as Custom Connectors in Power Automate, see [Integrate a yunIO Service with Power Automate](integrate-a-yunio-service-with-power-automate.md#configuring-a-yunio-custom-connector-in-power-automate).
 2. Create a new workflow that is triggered when a new Team form is submitted.
 3. Optional: Add an approval process for the leave request to the workflow.
 5. Add a *Switch* action to the workflow that queries the value of the leave type defined in the Team form :number-1:.<br>

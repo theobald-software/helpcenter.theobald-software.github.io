@@ -54,7 +54,7 @@ Ouput parameters are now accessible in the response body of the service.<br>
 ****
 #### Related Links
 - [Working with Transactions - Table Parameters](../../knowledge-base/transaction-table-parameters.md)
-- [Working with Transaction IE01](../../knowledge-base/transaction-ie01.md)
-- [Working with Transaction PA40](../../knowledge-base/transaction-pa40.md)
-- [Working with Transaction VA02](../../knowledge-base/transaction-va02.md)
-- [Working with Transaction XD02 ](../../knowledge-base/transaction-xd02.md)
+- [Transaction IE01 - Create Equipment](../../knowledge-base/transaction-ie01.md)
+- [Transaction PA40 - Personnel Actions](../../knowledge-base/transaction-pa40.md)
+- [Transaction VA02 - Change Sales Order](../../knowledge-base/transaction-va02.md)
+- [Transaction XD02 - Change Customer Master Data ](../../knowledge-base/transaction-xd02.md)

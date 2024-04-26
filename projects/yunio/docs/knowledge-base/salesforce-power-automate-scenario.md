@@ -49,7 +49,7 @@ For more information on how to customize fields in Salesforce, see [Salesforce D
 
 ### Setup in Power Automate
 
-1. Integrate the yunIO service created in [Setup in yunIO](#setup-in-yunio) as a Custom Connector in Power Automate, see [Integrating a yunIO Service with Power Automate](integrating-a-yunio-service-with-power-automate.md#configuring-a-yunio-custom-connector-in-power-automate).
+1. Integrate the yunIO service created in [Setup in yunIO](#setup-in-yunio) as a Custom Connector in Power Automate, see [Integrate a yunIO Service with Power Automate](integrate-a-yunio-service-with-power-automate.md#configuring-a-yunio-custom-connector-in-power-automate).
 2. Create a new workflow that is triggered when a Salesforce account is modified :number-1:.
 3. Check if the account type in Salesforce is set to *Customer - Direct* and if the customer does not yet exist in SAP :number-2:.<br>
 If one or both conditions are false, end the workflow :number-3:.

@@ -1,5 +1,5 @@
 ---
-title: How to use yunIO to populate Drop Down Controls in Power Apps
+title: Populate Drop Down Controls in Power Apps
 description: How to use yunIO to populate Drop Down Controls in Power Apps with SAP data
 ---
 
@@ -37,7 +37,7 @@ For more information on how to create services, see [Create a Service](../gettin
 ### Configuring a yunIO Custom Connector in Power Automate
 
 To use the service created in [Creating a Service in yunIO](##creating-a-service-in-yunio) with Power Apps, it must be available as a custom connector in Power Automate. 
-For information on how to integrate a yunIO service with Power Automate, see [Integrating a yunIO Service with Power Automate](integrating-a-yunio-service-with-power-automate.md). 
+For information on how to integrate a yunIO service with Power Automate, see [Integrate a yunIO Service with Power Automate](integrate-a-yunio-service-with-power-automate.md). 
 
 !!! note
     When integrating services from a local yunIO installation with a cloud hosted platform like Power Automate, a gateway to tunnel the connection is recommended, e.g., the [**Microsoft On-premises data gateway**](https://docs.microsoft.com/en-us/data-integration/gateway/).

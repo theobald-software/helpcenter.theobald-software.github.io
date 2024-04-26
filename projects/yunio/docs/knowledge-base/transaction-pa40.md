@@ -1,6 +1,6 @@
 ---
-title: Working with Transaction PA40
-description: Working with Transaction PA40
+title: Transaction PA40 - Personnel Actions
+description: Transaction PA40 - Personnel Actions
 ---
 
 The following article shows how to use the integration type *Transaction* with transaction PA40 in yunIO.<br>
@@ -39,7 +39,7 @@ Click **[Continue]** to close any pop-up windows and continue to the next screen
 11. Click **[Save]** to save your actions. <br>
 Alternatively, click **[Stop]** to start parameterizing, see [Documentation: Parameterize Transactions](../documentation/transactions/transactions.md/#parameterize-transactions).
 12. Copy the URL of the service definition ( :yunio-copy: icon) or download the service definition ( :yunio-run-download: icon) to integrate the service in your workflow.
-For information on how to use yunIO services in Power Automate or Nintex, see [Integrating a yunIO Service with Power Automate](integrating-a-yunio-service-with-power-automate.md) or [Integrating a yunIO Service with Nintex](integrating-a-yunio-service-with-nintex.md).
+For information on how to use yunIO services in Power Automate or Nintex, see [Integrate a yunIO Service with Power Automate](integrate-a-yunio-service-with-power-automate.md) or [Integrate a yunIO Service with Nintex](integrate-a-yunio-service-with-nintex.md).
 ![yunio-Services](../assets/images/yunio/articles/yunio-run-services.png){:class="img-responsive"}
 
 <!---
