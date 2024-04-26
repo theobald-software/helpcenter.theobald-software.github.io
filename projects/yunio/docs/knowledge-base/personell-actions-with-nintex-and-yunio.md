@@ -42,7 +42,7 @@ The depicted example uses the following input parameters:
 	
 	The input parameters can be adjusted according to your individual scenario requirements.
 	![PA40](../assets/images/yunio/articles/pa40-parameters.gif){:class="img-responsive"  style="border:1px solid black;"}
-4. Click :yunio-run: to testrun the service in yunIO :number-1:. For more information, see [Documentation: Running Services in yunIO](../documentation/run-services.md/#running-services-in-yunio).
+4. Click :yunio-run: to testrun the service in yunIO :number-1:. For more information, see [Documentation: Running Services in yunIO](../documentation/run-services.md/#run-services-in-yunio).
 5. Click :yunio-run-download: to download the service definition :number-2:.<br>
 ![yunio-Services-Function-Download](../assets/images/yunio/articles/yunio-run-services-function-download.png){:class="img-responsive" }
 

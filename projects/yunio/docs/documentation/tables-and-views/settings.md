@@ -59,7 +59,7 @@ S_TABU_NAM ACTVT=03; TABLE=ENLFDIR
 Specifies the maximum number of extracted records. 0 extracts the entire table.
 
 #### Rows per Package
-The extracted data will be split into packages of the defined size. The default value is 50000 lines.<br>
+The extracted data is be split into packages of the defined size. The default value is 50000 lines.<br>
 A package size between 20000 and 50000 is advisable for large amounts of data. 0 means no packaging. 
 Not using packaging can lead to an RFC timeout for large data extracts.
 
@@ -82,10 +82,10 @@ Per default all columns are selected to be extracted.
 Deselect the columns you don’t want to extract.
 
 ### WHERE Clause
-A WHERE clause can be used to filter table records, see [SAP ABAP Documentation: SELECT-WHERE](https://help.sap.com/doc/abapdocu_750_index_htm/7.50/en-us/abapwhere.htm).
+You can use a WHERE clause to filter table records, see [SAP ABAP Documentation: SELECT-WHERE](https://help.sap.com/doc/abapdocu_750_index_htm/7.50/en-us/abapwhere.htm).
 Enter WHERE clauses manually in *Text mode* or use the [WHERE Clause Editor](where-clause.md/#where-clause-editor) in *Editor Mode*.<br>
 
 ### Joins
-The Join functionality allows joining two or more SAP tables and extract the result of the join, see [SAP Documentation: Inner Join and Outer Join](https://help.sap.com/doc/saphelp_nwpi71/7.1/en-US/cf/21ec77446011d189700000e8322d00/content.htm?no_cache=true). 
+You can join two or more SAP tables and extract the result of the join, see [SAP Documentation: Inner Join and Outer Join](https://help.sap.com/doc/saphelp_nwpi71/7.1/en-US/cf/21ec77446011d189700000e8322d00/content.htm?no_cache=true). 
 For information on how to join tables in {{ productName }}, see [Table Joins](table-join.md).
 

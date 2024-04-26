@@ -6,7 +6,7 @@ description: How to testrun services directly in yunIO ad hwo to integrate servi
 This section shows how to test, integrate and pass parameters to services created in yunIO.
 
 
-### Running Services in yunIO
+### Run Services in yunIO
 
 Follow the steps below to pass parameters and testrun the service directly in yunIO:
 
@@ -40,7 +40,7 @@ The following control buttons in the *Run Service* menu regulate the display of 
 | :yunio-run-reset: | Removes all defined input parameters. This option is only available for input parameters. |
 | :yunio-run-fullscreen: | Displays the parameters in a full screen view. To close the full screen view, click **[ X ]**. |
  
-### Integrating Services with 3rd-Party-Tools
+### Integrate Services with 3rd-Party-Tools
 
 Web services created with yunIO can be integrated into all cloud applications that support REST API/Swagger (OpenAPI), e.g. Power Automate, Nintex, etc.
 
@@ -54,7 +54,7 @@ The JSON file can be imported into third-party tools.
 
 {% include "yunio/3rd-party-integration.md" %}
 
-### Passing Parameters
+### Pass Parameters
 
 How parameters are passed to a yunIO service, depends on the http method that is used to call the service.
 yunIO supports the http methods `POST` and `GET`, see [POST vs GET](#post-vs-get).

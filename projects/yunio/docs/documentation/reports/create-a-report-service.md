@@ -36,7 +36,7 @@ The following options are available to filter data, detect columns, etc:
 2. Optional: In the subsection [*Selection Parameters*](settings.md/#selection-parameters), enter values for selection criteria you want to change or dynamize.
 3. Click **[Detect Columns]** to execute the report based on the selected variant or selections and detect columns automatically. 
 The detected columns are displayed in the subsection *Output columns*. This step is mandatory for using the service.
-4. Click **[Run]** to check the results, see [Running Services in yunIO](../run-services.md/#running-services-in-yunio).
+4. Click **[Run]** to check the results, see [Running Services in yunIO](../run-services.md/#run-services-in-yunio).
 
 For more information on {{ report }} settings, see [Settings](settings.md).
 
@@ -52,6 +52,6 @@ Follow the steps below to create a simple service that extracts the SAP ABAP rep
 ![SAP-Table-or-Views](../../assets/images/yunio/report-sap3.png){:class="img-responsive"}
 5. Click **[Detect Columns]** to automatically detect the columns of the report. The detected columns are displayed in the section *Output Columns*.
 6. Click **[Save]** to save the service.
-7. Click **[Run]** to check the output of the service, see [Running Services in yunIO](../run-services.md/#running-services-in-yunio).<br>
+7. Click **[Run]** to check the output of the service, see [Running Services in yunIO](../run-services.md/#run-services-in-yunio).<br>
 ![report-response.png](../../assets/images/yunio/report-response.png){:class="img-responsive"}
 

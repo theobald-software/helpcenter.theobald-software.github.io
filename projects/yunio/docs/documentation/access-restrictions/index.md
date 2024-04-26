@@ -7,7 +7,7 @@ This section contains information on how to set up access restrictions.
 YunIO allows you to restrict access to the Server and Designer (global access), as well as for specific services (service access).
 
 
-### How to Set Up Access Restrictions
+### Workflow
 
 1. If no users exist, [create a new user](user-management.md).
 2. Assign [global access rights](global-access.md) to the user in the  :yunio-nav-access-control: *Access Control* menu.

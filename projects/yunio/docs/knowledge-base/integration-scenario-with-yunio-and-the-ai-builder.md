@@ -48,7 +48,7 @@ The depicted example uses the BAPI_INCOMINGINVOICE_CREATE1 to create an incoming
 	- ITEM_AMOUNT (Amount in document currency)<br>
 	- QUANTITY (Quantity)<br>
 	- PO_UNIT (Purchase Order Unit of Measure)	<br>
-6. Click :yunio-run: to testrun the service in yunIO :number-1:. For more information, see [Documentation: Running Services in yunIO](../documentation/run-services.md/#running-services-in-yunio).
+6. Click :yunio-run: to testrun the service in yunIO :number-1:. For more information, see [Documentation: Running Services in yunIO](../documentation/run-services.md/#run-services-in-yunio).
 7. Click :yunio-run-download: to download the service definition :number-2:.<br>
 ![yunio-Services-Function-Download](../assets/images/yunio/articles/yunio-run-services-function-download.png){:class="img-responsive"}
 
@@ -102,5 +102,5 @@ For more information on incoming invoices, see [SAP Documentation: Incoming Invo
 
 #### Related Links
 - [Youtube Tutorial: SAP process automation - Power Automate SAP Connector](https://www.youtube.com/watch?v=k_yL8Bphfus)
-- [Documentation: Running Services in yunIO](../documentation/run-services.md/#running-services-in-yunio)
+- [Documentation: Running Services in yunIO](../documentation/run-services.md/#run-services-in-yunio)
 - [SAP Documentation: Incoming Invoice](https://help.sap.com/docs/SAP_ERP/ffc393c91a904eb5b0bec93aa34e42d8/dc6eb6531de6b64ce10000000a174cb4.html?version=6.02.latest&locale=en-US)

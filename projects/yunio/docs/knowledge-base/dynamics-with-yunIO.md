@@ -24,11 +24,11 @@ Follow the steps below to set up a yunIO service that adds customers to the cust
 1. [Create a new SAP Connection](../getting-started.md#connect-to-sap) in yunIO. 
 2. [Create a new service](../getting-started.md#create-a-service) in yunIO. 
 This example uses the integration type *Function Module* for the service.
-3. [Look up](../documentation/function-modules-and-bapis/bapis-and-function-modules.md/#look-up-a-function-module-bapi) the standard BAPI BAPI_CUSTOMER_CREATEFROMDATA1 that creates customers in SAP. 
+3. [Look up](../documentation/function-modules-and-bapis/create-a-bapi-service.md/#look-up-a-function-module-bapi) the standard BAPI BAPI_CUSTOMER_CREATEFROMDATA1 that creates customers in SAP. 
 4. Set all import parameters you want to transfer from Dynamics 365 Business Central to SAP to *Supplied by Caller* e.g., NAME, CITY, POSTL_COD1, STREET, etc.<br>
 5. Select CUSTOMERNO for export. This Export parameter contains the newly created SAP customer number that is written back to Dynamics 365 Business Central.<br>
 ![yunio-Services-Function-Download](../assets/images/yunio/articles/yunio-bapi-createcustomer.png){:class="img-responsive"}
-6. Click :yunio-run: to testrun the service in yunIO :number-1:. For more information, see [Documentation: Running Services in yunIO](../documentation/run-services.md/#running-services-in-yunio).
+6. Click :yunio-run: to testrun the service in yunIO :number-1:. For more information, see [Documentation: Running Services in yunIO](../documentation/run-services.md/#run-services-in-yunio).
 7. Click :yunio-run-download: to download the service definition :number-2:.<br>
 ![yunio-Services-Function-Download](../assets/images/yunio/articles/yunio-run-services-function-download.png){:class="img-responsive" }
 

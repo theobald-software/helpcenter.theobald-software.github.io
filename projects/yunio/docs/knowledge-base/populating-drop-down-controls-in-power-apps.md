@@ -24,7 +24,7 @@ The following 3 examples for SAP interaction with drop down controls in Power Ap
 	- Create a Function Module service that calls the function SD_RFC_CUSTOMER_GET with the following settings:<br>
 	Set the input parameter NAME1 (Customer's Name) to *Supplied by caller*.
 	Select all fields in the table *CUSTOMER_T* for the output.<br>
-2. Click :yunio-run: to testrun the service in yunIO :number-1:. For more information, see [Documentation: Running Services in yunIO](../documentation/run-services.md/#running-services-in-yunio).
+2. Click :yunio-run: to testrun the service in yunIO :number-1:. For more information, see [Documentation: Running Services in yunIO](../documentation/run-services.md/#run-services-in-yunio).
 3. Click :yunio-run-download: to download the service definition :number-2:.<br>
 ![yunio-Services-Function-Download](../assets/images/yunio/articles/yunio-run-services-function-download.png){:class="img-responsive" }
 

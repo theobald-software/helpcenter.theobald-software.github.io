@@ -41,7 +41,7 @@ In the request body, the columns of the table are represented by their SAP techn
 You can look up the description of the SAP technical names in the OpenAPI/Swagger definition, e.g., [Swagger Editor](https://editor.swagger.io/).
 
 !!! tip
-    Test the service and pass parameters in yunIO before integrating the service, see [Documentation: Running Services in yunIO](../documentation/run-services.md/#running-services-in-yunio).
+    Test the service and pass parameters in yunIO before integrating the service, see [Documentation: Running Services in yunIO](../documentation/run-services.md/#run-services-in-yunio).
 
 <table>
 <tr><th>

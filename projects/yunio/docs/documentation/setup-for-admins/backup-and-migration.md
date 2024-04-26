@@ -21,7 +21,7 @@ Use the `config` folder for setting up a version control system or for creating 
 |`users` |Contains the [user settings](../access-restrictions/user-management.md).|
 
 
-### How to Create a Backup
+### Create a Backup
 
 1. Open the yunIO installation directory of the machine that runs yunIO, e.g., `C:\Program Files\Theobald Software\yunIO`.
 2. Copy the complete `config` folder of the yunIO installation directory and save the folder at a secure location.
@@ -32,7 +32,7 @@ Use the `config` folder for setting up a version control system or for creating 
 	**Data security**<br>
     Both `config` and `logs` directories may contain sensitive information.
 
-### How to Restore a Backup
+### Restore a Backup
 
 1. Open the yunIO installation directory of the machine that runs yunIO, e.g., `C:\Program Files\Theobald Software\yunIO`.
 2. Remove the `config` folder from the installation directory.
@@ -43,7 +43,7 @@ Use the `config` folder for setting up a version control system or for creating 
 	**Data Loss!**<br>
     Restoring the backup of the `config` directory replaces the exisiting configuration. Make sure to remove the existing files before restoring the backups.
 
-### How to Migrate to a Different Machine
+### Migrate to a Different Machine
 
 !!! note
     When migrating to a new server, a new license file must be issued for that server.<br>

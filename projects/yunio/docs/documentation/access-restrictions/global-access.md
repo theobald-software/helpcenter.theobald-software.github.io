@@ -36,7 +36,7 @@ The following restriction levels are available:
 | *No access* | The user can not login to the Designer or run any services. This option can be used to temporarily disable users from using yunIO. |
 
 
-### How to Restrict Designer and Server Access
+### Restrict Designer and Server Access
 
 Follow the steps below to restrict the access to the Designer and the server. 
 By default, the access restrictions also apply to services.

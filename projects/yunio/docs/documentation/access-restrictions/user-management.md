@@ -6,7 +6,7 @@ description: Create users
 This section shows how to manage users in the  :yunio-nav-user: *Users* menu of the Designer.
 The yunIO user management allows you to create custom users with credentials to restrict access to the yunIO Server / Designer and to specific yunIO services.
 
-### Creating Users
+### Create Users
 
 Follow the steps below to create new users:
 
@@ -19,7 +19,7 @@ Follow the steps below to create new users:
 5. Re-enter the password to avoid spelling mistakes.
 5. Click **[Save]** to save the credentials.
 
-### Deleting Users
+### Delete Users
 
 Follow the steps below to delete existing users:
 
@@ -29,7 +29,7 @@ Follow the steps below to delete existing users:
 3. Click **[OK]** to confirm the deletion of the user.
 
 
-### Changing Passwords
+### Change Passwords
 
 Follow the steps below to change the password of a user:
 

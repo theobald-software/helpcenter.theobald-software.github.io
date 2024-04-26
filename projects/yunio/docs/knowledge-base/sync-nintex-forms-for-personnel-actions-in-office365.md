@@ -24,10 +24,10 @@ For more information on yunIO, see [Theobald Software: yunIO](https://theobald-s
 1. [Create an SAP connection](../getting-started.md/#connect-to-sap) in yunIO. 
 2. [Create a service](../getting-started.md/#create-a-service) in yunIO. 
 The depicted example uses the integration type *SAP Table or View* for the service.
-3. [Look up](../documentation/tables-and-views/tables-and-views.md/#look-up-an-sap-table-or-view) the table PA0002 that contains HR master data. 
+3. [Look up](../documentation/tables-and-views/create-a-table-service.md/#look-up-an-sap-table-or-view) the table PA0002 that contains HR master data. 
 4. Select the columns PERNR, NACHN and VORNA for the output of the service.<br>
 ![nintex-office-design](../assets/images/yunio/articles/nintex-office-yunIO2.png){:class="img-responsive" }
-5. Click :yunio-run: to testrun the service in yunIO :number-1:. For more information, see [Documentation: Running Services in yunIO](../documentation/run-services.md/#running-services-in-yunio).
+5. Click :yunio-run: to testrun the service in yunIO :number-1:. For more information, see [Documentation: Running Services in yunIO](../documentation/run-services.md/#run-services-in-yunio).
 6. Click :yunio-run-download: to download the service definition :number-2:.<br>
 ![yunio-Services-Function-Download](../assets/images/yunio/articles/yunio-run-services-function-download.png){:class="img-responsive" }
 

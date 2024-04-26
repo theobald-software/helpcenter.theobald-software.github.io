@@ -35,7 +35,7 @@ Follow the steps below to set up a yunIO service that creates sick leaves in SAP
 	- Start date of the sick leave
 	- End date of the sick leave
 5. Click **[Save]** to save the service.
-6. Click :yunio-run: to testrun the service in yunIO :number-1:. For more information, see [Documentation: Running Services in yunIO](../documentation/run-services.md/#running-services-in-yunio).
+6. Click :yunio-run: to testrun the service in yunIO :number-1:. For more information, see [Documentation: Running Services in yunIO](../documentation/run-services.md/#run-services-in-yunio).
 7. Click :yunio-run-download: to download the service definition :number-2:.<br>
 ![yunio-Services-Function-Download](../assets/images/yunio/articles/yunio-run-services-function-download.png){:class="img-responsive" }
 8. Repeat steps 3 to 7 to create a service for every relevant type of sick leave:

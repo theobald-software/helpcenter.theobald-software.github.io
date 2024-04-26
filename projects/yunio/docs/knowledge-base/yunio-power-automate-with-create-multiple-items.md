@@ -39,7 +39,7 @@ This option is mandatory when using BAPI_COSTCENTER_CREATEMULTIPLE.<br>
 	- CURRENCY_ISO<br>
 	- PROFIT_CTR<br>
 	- NAME<br>
-6. Click :yunio-run: to testrun the service in yunIO :number-1:. For more information, see [Documentation: Running Services in yunIO](../documentation/run-services.md/#running-services-in-yunio).
+6. Click :yunio-run: to testrun the service in yunIO :number-1:. For more information, see [Documentation: Running Services in yunIO](../documentation/run-services.md/#run-services-in-yunio).
 7. Click :yunio-run-download: to download the service definition :number-2:.<br>
 ![yunio-Services-Function-Download](../assets/images/yunio/articles/yunio-run-services-function-download.png){:class="img-responsive" }
 

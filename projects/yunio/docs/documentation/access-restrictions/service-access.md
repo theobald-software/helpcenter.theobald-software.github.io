@@ -34,7 +34,7 @@ The following restriction levels are available:
 | *Read / Execute* | The user can read and run the service. |
 | *No access* | The user can not access, modify, read or run the service.|
 
-### How to Restrict Access to Services
+### Restrict Access to Services
 
 By default services inherit access restrictions from the server-level, see [Global Access](global-access.md).
 Follow the steps below to further restrict access on the service-level:

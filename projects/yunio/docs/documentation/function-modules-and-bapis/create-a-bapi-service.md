@@ -29,9 +29,9 @@ The necessary parameters of a {{ bapi }} service vary depending on the BAPI.
 1. Add input parameters (data you want to send to SAP) to the service, see [Import Parameters](settings.md/#import-parameters).
 2. Add output parameters (data you want to receive from SAP) to the service, see [Export Parameters](settings.md/#export-parameters).<br>
 ![BAPI export parameters](../../assets/images/yunio/bapi-steps.png){:class="img-responsive"}
-3. Click **[Run]** to check the results, see [Running Services in yunIO](../run-services.md/#running-services-in-yunio).
+3. Click **[Run]** to check the results, see [Running Services in yunIO](../run-services.md/#run-services-in-yunio).
 
-### How to Parameterize Import Parameters
+### Parameterize Import Parameters
 
 Import parameters can be parameterized in the request body of the service.
 

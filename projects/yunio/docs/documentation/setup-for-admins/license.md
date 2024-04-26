@@ -12,7 +12,7 @@ A regular license is provided in the [Theobald Software Costumer Portal](https:/
 The product license is bound to your company and the server on which the yunIO server runs.<br>
  
 
-### Installing the yunIO License
+### Install the yunIO License
 
 Follow the steps below to the upload a license file to yunIO:
 

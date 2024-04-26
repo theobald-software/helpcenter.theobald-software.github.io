@@ -18,7 +18,7 @@ Supported Authentication Methods:
 - [Plain login](#connect-to-sap-using-plain-authentication) using SAP username and password (system or dialogue user).
 - [Secure Network Communication (SNC)](#connect-to-sap-using-snc-authentication) using username and password via basic authentication.
 
-## Connect to SAP using Plain Authentication
+### Connect to SAP
 
 Follow the steps below to set up an SAP connection that uses an SAP username and password for authentication.
 
@@ -36,7 +36,7 @@ A window with a status message opens in the bottom right corner of the window.
     Activate the option *Request credentials from callers when running services* to pass valid SAP credentials via Basic Authentication. 
 	To pass credentials, the access control setting [*Anonymous*](../access-restrictions/global-access.md/#settings) must be activated.
 
-## Connect to SAP using SNC Authentication
+### Connect to SAP using SNC Authentication
 
 Secure Network Connection (SNC) enables authentication and transport encryption between SAP systems and third-party tools similar to yunIO.
 The credentials are provided via Basic Authentication.
@@ -57,7 +57,7 @@ Your SAP Basis has to import and configure the same library on the application s
 A window with a status message opens in the bottom right corner of the window.
 7. Click **[Save]** to save the connection settings. <br>
 
-## Connect via Router
+### Connect via Router
 
 If you access the SAP source system (Application server or Message server) via an SAP router, set the router string before the host name. 
 For more information on SAP routers, see [SAP Documentation: SAP-Router](https://help.sap.com/viewer/6d9a59096c4b1014b507f15bed51571f/7.01.22/en-US/486b41efb74c07bee10000000a42189d.html).

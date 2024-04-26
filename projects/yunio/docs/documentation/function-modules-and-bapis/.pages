@@ -1,4 +1,4 @@
 nav:
     - index.md
-    - bapis-and-function-modules.md
+    - create-a-bapi-service.md
     - settings.md

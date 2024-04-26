@@ -25,15 +25,15 @@ The list of service runs consists of the following columns:
 - Duration of the service run
 - State of the service run (*Running*, *FinishedErrors*, *FinishedNoErrors*)
 
-Click a service run to display the corresponding extraction log, see :number-1:.
+Click a service run to display the corresponding extraction log :number-1:.
 
 ![yunIO-Logs](../assets/images/yunio/yunIO-Run-Logs.png){:class="img-responsive"}
 
 ### Service Workers and Transaction Workers
 
 The logs of the service worker and transaction worker consist of two sections:
-- Timestamps of the logs, see :number-1:
-- Content of the logs, see :number-2:
+- Timestamps of the logs :number-1:
+- Content of the logs :number-2:
 
 Click a timestamp to open the corresponding logs.
 

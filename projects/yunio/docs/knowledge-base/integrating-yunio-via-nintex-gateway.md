@@ -17,7 +17,7 @@ The Nintex Gateway is an on-premises application that enables Nintex Automation 
 ### Creating a yunIO Service for Nintex Gateway
 
 1. [Create a service](../getting-started.md/#create-a-service) in yunIO. The depicted example uses the BAPI SD_RFC_CUSTOMER_GET to search and extract customer data from SAP. 
-2. Click :yunio-run: to testrun the service in yunIO :number-1:. For more information, see [Documentation: Running Services in yunIO](../documentation/run-services.md/#running-services-in-yunio).
+2. Click :yunio-run: to testrun the service in yunIO :number-1:. For more information, see [Documentation: Running Services in yunIO](../documentation/run-services.md/#run-services-in-yunio).
 3. Navigate to **Settings** and select *Nintex Gateway* as the **OpenAPI Target Kind** to add predefined Nintex Gateway properties to the service definition.<br>
 ![nintex-gateway-target](../assets/images/yunio/articles/nintex-gateway-target.png){:class="img-responsive"}
 4. Navigate to **Services** and click :yunio-run-download: to download the service definition :number-2:.<br>

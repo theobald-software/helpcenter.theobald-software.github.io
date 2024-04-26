@@ -21,12 +21,12 @@ To use table join, the function module {% if page.meta.product == "yunio" %}[/TH
 
 
 {% if page.meta.product == "yunio" %}
-### How to Join Tables
+### Join Tables
 
 The following example shows how to join the tables KNA1 and KNVV.
 
 1. [Create a new service](../../getting-started.md/#create-a-service) of type {{ table }} or click :yunio-edit: to edit an existing service.
-2. [look up](tables-and-views.md/#look-up-an-sap-table-or-view) the first table or view for the join, e.g, KNA1.
+2. [Look up](tables-and-views.md/#look-up-an-sap-table-or-view) the first table or view for the join, e.g, KNA1.
 3. Click :where-clause-add: to add the additional tables for the join, e.g., KNVV :number-1:.<br>
 ![table-joins](../../assets/images/yunio/table-joins.png){:class="img-responsive"}
 4. Define the [output columns](#output-columns) you want to extract for both tables :number-2:.
@@ -50,7 +50,7 @@ The following example shows how to join the tables KNA1 and KNVV.
 
 {% else %} 
 
-### Joining two Tables
+### Join two Tables
 The following example shows how to join the tables KNA1 and KNVV.
 
 ![Table join steps](../../assets/images/join_steps_1.png){:class="img-responsive"}
@@ -87,7 +87,7 @@ The **[Auto-map]** button deletes existing join conditions and performs a new fi
 ![Table-Join-Automapping](../../assets/images/join_automap.png){:class="img-responsive"}
 
 
-### Joining three Tables
+### Join three Tables
 Example of a join with a third table KNB1:
 
 ![Table-Join-Verknüpfungen2](../../assets/images/join_verknüpfungen_02.png){:class="img-responsive"}

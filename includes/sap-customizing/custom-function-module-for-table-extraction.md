@@ -34,7 +34,7 @@ It is recommended to install the latest custom function module THEO/READ_TABLE:
 
 When importing the transport requests on older SAP releases a syntax error may occur. Contact [Theobald Support](https://support.theobald-software.com) and send the dedicated error message text.
 
-#### Testing the Function Module in SAP
+#### Test the Function Module in SAP
 
 !!! warning 
 	**Generating Short Dumps**<br>
