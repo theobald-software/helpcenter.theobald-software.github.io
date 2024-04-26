@@ -1,5 +1,5 @@
 ---
-title: How to use yunIO with Power Automate to create multiple items in SAP
+title: Use yunIO with Power Automate to create multiple items in SAP
 description: How to use yunIO with Power Automate to create multiple items in SAP
 ---
 
@@ -14,7 +14,7 @@ In this example, multiple items are passed to the SAP function via an Excel spre
 Other options are SharePoint lists, a Power App with *Gallery Control* for multiple line items, a Nintex Form with a repeating section and others.
 - Create a Power Automate workflow that reads and processes data from the input table to run the yunIO service.
 
-### Creating a Service in yunIO
+### Create a Service in yunIO
 
 Create a yunIO service that creates cost centers in the SAP cost center master data.
 
@@ -39,20 +39,20 @@ This option is mandatory when using BAPI_COSTCENTER_CREATEMULTIPLE.<br>
 	- CURRENCY_ISO<br>
 	- PROFIT_CTR<br>
 	- NAME<br>
-6. Click :yunio-run: to testrun the service in yunIO :number-1:. For more information, see [Documentation: Running Services in yunIO](../documentation/run-services.md/#run-services-in-yunio).
+6. Click :yunio-run: to testrun the service in yunIO :number-1:. For more information, see [Documentation: Run Services in yunIO](../documentation/run-services.md/#run-services-in-yunio).
 7. Click :yunio-run-download: to download the service definition :number-2:.<br>
 ![yunio-Services-Function-Download](../assets/images/yunio/articles/yunio-run-services-function-download.png){:class="img-responsive" }
 
-### Configuring a yunIO Custom Connector in Power Automate
+### Configure a yunIO Custom Connector in Power Automate
 
-To use the service created in [Creating a Service in yunIO](#creating-a-service-in-yunio) with Power Apps, it must be available as a custom connector in Power Automate. 
+To use the service created in [Create a Service in yunIO](#create-a-service-in-yunio) with Power Apps, it must be available as a custom connector in Power Automate. 
 For information on how to integrate a yunIO service with Power Automate, see [Integrate a yunIO Service with Power Automate](integrate-a-yunio-service-with-power-automate.md). 
 
 !!! note
     When integrating services from a local yunIO installation with a cloud hosted platform like Power Automate, a gateway to tunnel the connection is recommended, e.g., the [**Microsoft On-premises data gateway**](https://docs.microsoft.com/en-us/data-integration/gateway/).
     For more information about yunIO networking settings, see [yunIO Networking Scenarios](networking.md).
 
-### Creating Input Data 
+### Create Input Data 
 
 - Create data sets that include values for all fields in the table COSTCENTERLIST that are set to *Supplied by Caller* in the yunIO service.
 If needed, download the sample EXCEL file below.
@@ -60,12 +60,12 @@ If needed, download the sample EXCEL file below.
 
 [:material-download-circle: Download EXCEL File](../assets/files/yunio/Create_Multiple_Cost_Centers.xlsx){ .md-button }
 
-### Creating a Power Automate Flow for Multiple Items 
+### Create a Power Automate Flow for Multiple Items 
 
 The following workflow reads and processes data from a table and to create new cost centers in the SAP cost center master data.
 1. Create a new workflow.
 2. Add a manual trigger to test the workflow when necessary.
-3. Add a List rows present in table action to read the input data for the yunIO service. In this example, the data is hosted on SharePoint, see [Creating Input Data](#creating-input-data).<br>
+3. Add a List rows present in table action to read the input data for the yunIO service. In this example, the data is hosted on SharePoint, see [Create Input Data](#create-input-data).<br>
 ![Power-Automate-Read-Data](../assets/images/yunio/articles/Power-Automate-Read-Data.png){:class="img-responsive" width="800px"}
 4. Add an *Initialize variable* action to create an array that can store multiple items. Leave **Value** empty.<br>
 ![Power-Automate-Variable](../assets/images/yunio/articles/Power-Automate-Variable.png){:class="img-responsive" width="800px"}

@@ -35,7 +35,7 @@ Follow the steps below to set up a yunIO service that creates sick leaves in SAP
 	- Start date of the sick leave
 	- End date of the sick leave
 5. Click **[Save]** to save the service.
-6. Click :yunio-run: to testrun the service in yunIO :number-1:. For more information, see [Documentation: Running Services in yunIO](../documentation/run-services.md/#run-services-in-yunio).
+6. Click :yunio-run: to testrun the service in yunIO :number-1:. For more information, see [Documentation: Run Services in yunIO](../documentation/run-services.md/#run-services-in-yunio).
 7. Click :yunio-run-download: to download the service definition :number-2:.<br>
 ![yunio-Services-Function-Download](../assets/images/yunio/articles/yunio-run-services-function-download.png){:class="img-responsive" }
 8. Repeat steps 3 to 7 to create a service for every relevant type of sick leave:
@@ -71,7 +71,7 @@ For more information on Team Forms, see [Team Forms Documentation](https://docs.
 
 ### Setup in Power Automate
 
-1. Integrate the yunIO services created in [Setup in yunIO](#setup-in-yunio) as Custom Connectors in Power Automate, see [Integrate a yunIO Service with Power Automate](integrate-a-yunio-service-with-power-automate.md#configuring-a-yunio-custom-connector-in-power-automate).
+1. Integrate the yunIO services created in [Setup in yunIO](#setup-in-yunio) as Custom Connectors in Power Automate, see [Integrate a yunIO Service with Power Automate](integrate-a-yunio-service-with-power-automate.md#configure-a-yunio-custom-connector-in-power-automate).
 2. Create a new workflow that is triggered when a new Team form is submitted.
 3. Optional: Add an approval process for the leave request to the workflow.
 5. Add a *Switch* action to the workflow that queries the value of the leave type defined in the Team form :number-1:.<br>
@@ -93,7 +93,7 @@ For more information on Team Forms, see [Team Forms Documentation](https://docs.
 10. Turn on the workflow.
 
 
-### Triggering the Process
+### Trigger the Process
 
 1. Open the Teams form and fill out the details of your sick leave.<br>
 Enter the SAP employee number, select the leave type and the start and end date of the sick leave.

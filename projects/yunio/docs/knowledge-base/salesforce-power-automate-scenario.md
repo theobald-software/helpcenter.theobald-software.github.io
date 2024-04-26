@@ -28,7 +28,7 @@ The depicted example uses the integration type *Function Module* for the service
 4. Set all import parameters you want to transfer from Salesforce to SAP to *Supplied by Caller* e.g., NAME, CITY, POSTL_COD1, STREET, etc.
 5. Select CUSTOMERNO for export. This Export parameter contains the newly created SAP customer number that is written back to Salesforce.<br>
 ![yunio-Services-Function-Download](../assets/images/yunio/articles/yunio-bapi-createcustomer.png){:class="img-responsive"}
-6. Click :yunio-run: to testrun the service in yunIO :number-1:. For more information, see [Documentation: Running Services in yunIO](../documentation/run-services.md/#run-services-in-yunio).
+6. Click :yunio-run: to testrun the service in yunIO :number-1:. For more information, see [Documentation: Run Services in yunIO](../documentation/run-services.md/#run-services-in-yunio).
 7. Click :yunio-run-download: to download the service definition :number-2:.<br>
 ![yunio-Services-Function-Download](../assets/images/yunio/articles/yunio-run-services-function-download.png){:class="img-responsive" }
 
@@ -49,7 +49,7 @@ For more information on how to customize fields in Salesforce, see [Salesforce D
 
 ### Setup in Power Automate
 
-1. Integrate the yunIO service created in [Setup in yunIO](#setup-in-yunio) as a Custom Connector in Power Automate, see [Integrate a yunIO Service with Power Automate](integrate-a-yunio-service-with-power-automate.md#configuring-a-yunio-custom-connector-in-power-automate).
+1. Integrate the yunIO service created in [Setup in yunIO](#setup-in-yunio) as a Custom Connector in Power Automate, see [Integrate a yunIO Service with Power Automate](integrate-a-yunio-service-with-power-automate.md#configure-a-yunio-custom-connector-in-power-automate).
 2. Create a new workflow that is triggered when a Salesforce account is modified :number-1:.
 3. Check if the account type in Salesforce is set to *Customer - Direct* and if the customer does not yet exist in SAP :number-2:.<br>
 If one or both conditions are false, end the workflow :number-3:.
@@ -65,7 +65,7 @@ If TYPE does not equal 'E' (error), the SAP customer number is written back to S
 8. Turn on the workflow.
 
 
-### Triggering the Process
+### Trigger the Process
 
 1. Open Salesforce and change the account type from *Prospect* to *Customer - Direct*.
 Make sure that the checkbox *In SAP* is deactivated.

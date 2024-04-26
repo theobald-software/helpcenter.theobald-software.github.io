@@ -8,7 +8,7 @@ This article shows how to integrate a yunIO service with Alteryx.<br>
 Alteryx is a software platform, which allows accessing, cleansing, testing, combining and analyzing output data. 
 For more Information on Alteryx, see [Alteryx Official Website](https://www.alteryx.com/).
 
-### Integrating yunIO in Alteryx
+### Integrate yunIO in Alteryx
 
 yunIO is the connector, which reads and writes data from and to SAP.
 For more information on yunIO, see [Theobald Software: yunIO](https://theobald-software.com/en/yunio/).
@@ -33,7 +33,7 @@ The Alteryx Data Connection Manager (DCM) opens.<br>
 11. Click **[Connect]** to establish a connection to yunIO. The Data Connection Manager closes.<br>
 ![yunio-data-source](../assets/images/yunio/articles/yunIO-data-source-connect.png){:class="img-responsive"}
 12. Use the name of a yunIO service as input for the **Download** tool to call the service. <br>
-For more information about calling and passing parameters to yunIO services, see [Calling yunIO Services in Alteryx](#calling-yunio-services-in-alteryx).
+For more information about calling and passing parameters to yunIO services, see [Call yunIO Services in Alteryx](#call-yunio-services-in-alteryx).
 
 For more information about the Alteryx **Download** tool, see [Alteryx Designer Documentation: Download-Tool](https://help.alteryx.com/20231/designer/download-tool).
 
@@ -42,7 +42,7 @@ For more information about the Alteryx **Download** tool, see [Alteryx Designer 
     The Alteryx Data Connection Manager is available as of Alteryx Designer version 2021.4.
     -->
 
-### Calling yunIO Services in Alteryx
+### Call yunIO Services in Alteryx
 
 Follow the steps below to call yunIO services in Alteryx:<br>
 
@@ -71,7 +71,7 @@ This example uses a yunIO transaction service that changes customer master data 
 6. Add a **Formula** tool :number-3: to add a new column *Service* to the result of the **JSON Build** tool. 
 The column contains the name of the service you want to call e.g., `/Customer_Change_Alteryx`.<br>
 ![alteryx-formula](../assets/images/yunio/articles/alteryx-formula.png){:class="img-responsive"}
-7. Add a **Download** tool :number-4: to your workflow and set up a connection to yunIO, see [Integrating yunIO in Alteryx](#integrating-yunio-in-alteryx). 
+7. Add a **Download** tool :number-4: to your workflow and set up a connection to yunIO, see [Integrate yunIO in Alteryx](#integrate-yunio-in-alteryx). 
 8. Select the *Service* column that contains the name of the service as the input for the URL field. Make sure that the combination of the base URL and the service name represents a valid URL e.g., `https://yunio.example.com:8175/services/Customer_Change_Alteryx`.<br>
 ![yunio-download-tool](../assets/images/yunio/articles/yunio-download-tool.png){:class="img-responsive"}
 8. Add a **JSON Parse** tool :number-5: to parse the JSON results returned by the service. 
@@ -79,6 +79,7 @@ The column contains the name of the service you want to call e.g., `/Customer_Ch
 10. Run the workflow. If the run is successful, the workflow returns the following message:<br>
 "Changes have been made".
 
+### Sample Workflow
 
 [Download yunIO_Customer_Update.yxwz](../assets/files/yunio/yunIO_Customer_Update.yxwz){ .md-button }
 

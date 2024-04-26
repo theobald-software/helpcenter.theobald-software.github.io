@@ -72,7 +72,7 @@ Follow the steps below to set up a yunIO service that creates purchase requisiti
 8. Activate the advanced setting **Commits Transaction**. If this option is active, the function module “BAPI_TRANSACTION_COMMIT” is called after processing the selected Function Module / BAPI. 
 BAPI_PR_CREATE require this commit function to successfully update data in the database.<br>
 ![SAPPurchaseRequisitionCreate-export](../assets/images/yunio/articles/SAPPurchaseRequisitionCreate-export.png){:class="img-responsive"}
-9. Click :yunio-run: to testrun the service in yunIO :number-1:. For more information, see [Documentation: Running Services in yunIO](../documentation/run-services.md/#run-services-in-yunio).
+9. Click :yunio-run: to testrun the service in yunIO :number-1:. For more information, see [Documentation: Run Services in yunIO](../documentation/run-services.md/#run-services-in-yunio).
 10. Click :yunio-run-download: to download the service definition :number-2:.<br>
 ![yunio-Services-Function-Download](../assets/images/yunio/articles/yunio-run-services-function-download.png){:class="img-responsive" }
 
@@ -100,7 +100,7 @@ For more information on SharePoint lists, see [Microsoft Documentation: Introduc
 
 ### Setup in Power Automate
 
-1. Integrate the yunIO service created in [Setup in yunIO](#setup-in-yunio) as a Custom Connector in Power Automate, see [Integrate a yunIO Service with Power Automate](integrate-a-yunio-service-with-power-automate.md#configuring-a-yunio-custom-connector-in-power-automate).
+1. Integrate the yunIO service created in [Setup in yunIO](#setup-in-yunio) as a Custom Connector in Power Automate, see [Integrate a yunIO Service with Power Automate](integrate-a-yunio-service-with-power-automate.md#configure-a-yunio-custom-connector-in-power-automate).
 2. Create a new workflow that is triggered when a new item is added to the SharePoint list.
 3. Add the yunIO connector created in step 1 to the workflow and map the purchase requisition data from SharePoint to the input parameters of yunIO.<br>
 ![sharepoint-purchase-requisition3](../assets/images/yunio/articles/sharepoint-purchase-requisition3.png){:class="img-responsive"}
@@ -112,7 +112,7 @@ For conversion tips and code templates, see [Formats and Conversions in Power Au
 8. Turn on the workflow.
 
 
-### Triggering the Process
+### Trigger the Process
 
 1. Open SharePoint and add a new purchase requisition.
 2. The Power Automate workflow runs and creates the purchase requisition in SAP.

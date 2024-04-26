@@ -42,7 +42,7 @@ The depicted example uses the following input parameters:
 	
 	The input parameters can be adjusted according to your individual scenario requirements.
 	![PA40](../assets/images/yunio/articles/pa40-parameters.gif){:class="img-responsive"  style="border:1px solid black;"}
-4. Click :yunio-run: to testrun the service in yunIO :number-1:. For more information, see [Documentation: Running Services in yunIO](../documentation/run-services.md/#run-services-in-yunio).
+4. Click :yunio-run: to testrun the service in yunIO :number-1:. For more information, see [Documentation: Run Services in yunIO](../documentation/run-services.md/#run-services-in-yunio).
 5. Click :yunio-run-download: to download the service definition :number-2:.<br>
 ![yunio-Services-Function-Download](../assets/images/yunio/articles/yunio-run-services-function-download.png){:class="img-responsive" }
 
@@ -61,7 +61,7 @@ The depicted example uses the following input parameters:
 
 ### Setup in Nintex
 
-1. Integrate the yunIO service created in [Setup in yunIO](#setup-in-yunio) as an Xtension in Nintex, see [Integrate a yunIO Service with Nintex: Configuring a yunIO Xtension in Nintex](integrate-a-yunio-service-with-nintex.md/#configuring-a-yunio-xtension-in-nintex).
+1. Integrate the yunIO service created in [Setup in yunIO](#setup-in-yunio) as an Xtension in Nintex, see [Integrate a yunIO Service with Nintex: Configure a yunIO Xtension in Nintex](integrate-a-yunio-service-with-nintex.md/#configure-a-yunio-xtension-in-nintex).
 2. Import the Nintex template for Employee Onboarding to your tenant, see [Nintex Gallery: Employee Onboarding](https://gallery.nintex.com/t/employee-onboarding).
 3. Open the imported Nintex workflow.
 4. Add the yunIO Xtension from step 1 after the contract is signed.<br>

@@ -28,7 +28,7 @@ This example uses the integration type *Function Module* for the service.
 4. Set all import parameters you want to transfer from Dynamics 365 Business Central to SAP to *Supplied by Caller* e.g., NAME, CITY, POSTL_COD1, STREET, etc.<br>
 5. Select CUSTOMERNO for export. This Export parameter contains the newly created SAP customer number that is written back to Dynamics 365 Business Central.<br>
 ![yunio-Services-Function-Download](../assets/images/yunio/articles/yunio-bapi-createcustomer.png){:class="img-responsive"}
-6. Click :yunio-run: to testrun the service in yunIO :number-1:. For more information, see [Documentation: Running Services in yunIO](../documentation/run-services.md/#run-services-in-yunio).
+6. Click :yunio-run: to testrun the service in yunIO :number-1:. For more information, see [Documentation: Run Services in yunIO](../documentation/run-services.md/#run-services-in-yunio).
 7. Click :yunio-run-download: to download the service definition :number-2:.<br>
 ![yunio-Services-Function-Download](../assets/images/yunio/articles/yunio-run-services-function-download.png){:class="img-responsive" }
 
@@ -50,7 +50,7 @@ For more information on how to customize table fields via custom development, se
 
 Follow the steps below to synchronize customer data in Dynamics 356 Business Central with customer data in SAP:
 
-1. Integrate the yunIO service created in [Setup in yunIO](#setup-in-yunio) as a custom connector in Power Automate, see [Integrate a yunIO Service with Power Automate](integrate-a-yunio-service-with-power-automate.md#configuring-a-yunio-custom-connector-in-power-automate).
+1. Integrate the yunIO service created in [Setup in yunIO](#setup-in-yunio) as a custom connector in Power Automate, see [Integrate a yunIO Service with Power Automate](integrate-a-yunio-service-with-power-automate.md#configure-a-yunio-custom-connector-in-power-automate).
 2. Create a new workflow that is triggered when a customer data is modified in the Dynamics 365 Business Central table *customers*.
 3. Use a *RowID* to keep track of the modified record.<br>
 ![dynamics-get-data](../assets/images/yunio/articles/dynamics-get-data.png){:class="img-responsive"}
@@ -71,7 +71,7 @@ If TYPE does not equal ‘E’ (error), the SAP customer number is written back 
     As of Business Central 2022 wave 2 (BC21) any changes in Dynamics 365 Business Central are saved automatically.
     To avoid triggering the Power Automate workflow multiple times due to auto-save actions, add a **Delay** tool after the workflow trigger or schedule the SAP synchronization, e.g., once a day.
 
-### Triggering the Process
+### Trigger the Process
 
 1. Open Dynamics 365 Business Central and add a new customer.
 2. The Power Automate workflow runs and creates the customer in SAP.
@@ -79,7 +79,7 @@ If TYPE does not equal ‘E’ (error), the SAP customer number is written back 
 ![dynamics-test-result](../assets/images/yunio/articles/dynamics-test-result.png){:class="img-responsive" }
 
 ***
-### Related Links
-- [AL Development Environment](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-reference-overview) 
+#### Related Links
+- [Microsoft Documentation: AL Development Environment](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-reference-overview) 
 - [Microsoft Apps](https://appsource.microsoft.com/en-us/marketplace/apps) 
 - [Microsoft Documentation: Development - Table Object](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-table-object)

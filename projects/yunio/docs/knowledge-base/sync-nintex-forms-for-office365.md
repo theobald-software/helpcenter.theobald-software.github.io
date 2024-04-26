@@ -27,7 +27,7 @@ The depicted example uses the integration type *SAP Table or View* for the servi
 3. [Look up](../documentation/tables-and-views/create-a-table-service.md/#look-up-an-sap-table-or-view) the table MAKT that contains material descriptions. 
 4. Select the columns MATNR, SPRAS and MAKTX for the output of the service.<br>
 ![nintex-office-design](../assets/images/yunio/articles/nintex-office-yunIO.png){:class="img-responsive" }
-5. Click :yunio-run: to testrun the service in yunIO :number-1:. For more information, see [Documentation: Running Services in yunIO](../documentation/run-services.md/#run-services-in-yunio).
+5. Click :yunio-run: to testrun the service in yunIO :number-1:. For more information, see [Documentation: Run Services in yunIO](../documentation/run-services.md/#run-services-in-yunio).
 6. Click :yunio-run-download: to download the service definition :number-2:.<br>
 ![yunio-Services-Function-Download](../assets/images/yunio/articles/yunio-run-services-function-download.png){:class="img-responsive" }
 
@@ -65,7 +65,7 @@ Follow the steps below to set up the Nintex form for the SharePoint custom list 
 ![nintex-office-output](../assets/images/yunio/articles/nintex-office-output.png){:class="img-responsive" }
 14. Add a **[Save]** and **[Cancel]** button to the form.
 
-### Integrating JavaScript Code in Nintex
+### Integrate JavaScript Code in Nintex
 
 The [JavaScript library for REST services](https://github.com/theobald-software/static.theobald-software.github.io/tree/main/theobald.yunio.client.js) by Theobald Software enables the use of yunIO services via JavaScript.<br>
 The depicted example uses the following JavaScript code for the following:
@@ -117,7 +117,7 @@ Follow the steps below to integrate the script in your Nintex Form:
 2. Click **[Save]**.
 
 
-### Running the Nintex Form
+### Run the Nintex Form
 1. Preview or publish the Nintex form.
 2. When prompted, enter your username and password to establish a connection to yunIO.
 3. Enter a material number. The hits for the entry are read from SAP and displayed in the dropdown list "Suggested Materials".

@@ -11,11 +11,11 @@ For more information on the SwaggerHub, see [SwaggerHub Documentation](https://s
 
 1. [Create a service](../getting-started.md/#create-a-service) in yunIO. The depicted example uses a Table service with the following settings:<br>
 ![Table-Extraction](../assets/images/yunio/articles/table-settings.png){:class="img-responsive" width="800px" }
-2. Click :yunio-run: to testrun the service in yunIO :number-1:. For more information, see [Documentation: Running Services in yunIO](../documentation/run-services.md/#run-services-in-yunio).
+2. Click :yunio-run: to testrun the service in yunIO :number-1:. For more information, see [Documentation: Run Services in yunIO](../documentation/run-services.md/#run-services-in-yunio).
 3. Click :yunio-run-download: to download the service definition :number-2:.<br>
 ![yunio-Services-Function-Download](../assets/images/yunio/articles/yunio-run-services-function-download.png){:class="img-responsive" }
 
-### Loading and Run a yunIO Service in SwaggerHub
+### Load and Run a yunIO Service in SwaggerHub
 
 1. Open [SwaggerHub](https://app.swaggerhub.com/home) in your browser.
 2. Click **Create New > Import and Document API**.<br>

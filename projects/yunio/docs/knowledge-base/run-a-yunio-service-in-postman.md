@@ -18,7 +18,7 @@ The service has the following settings:<br>
 ![yunio-Services](../assets/images/yunio/articles/yunio-run-services.png){:class="img-responsive" }
 
 
-### Loading a yunIO Service in Postman
+### Load a yunIO Service in Postman
 
 1. Open Postman in your browser or on your desktop.
 2. To load a service definition in Postman, navigate to your workspace and click **[Import]**.<br>
@@ -34,7 +34,7 @@ The service definition is now available in your workspace. <br>
     If you don’t have any authentication, headers, or parameters to add to the service, open a new tab and paste the URL of your yunIO service endpoint into the main URL input line.
     Select *POST* from the method drop-down list and click **[Send]** to execute the service.
 
-### Parameterizing the Service
+### Parameterize the Service
 
 All parameters defined in yunIO are accessible in the request body of the service. <br>
 To set parameters, edit the *Body* accordingly e.g., set the input parameter NAME1 to "John%" to get all data of customers whose names starts with "John".<br>
@@ -45,7 +45,7 @@ For more information on variables in Postman, see [Using Variables in Postman](h
 
 ![Postman-Import](../assets/images/yunio/articles/postman-body.png){:class="img-responsive"}
 
-### Running the Service
+### Run the Service
 
 !!! note
     If the option [*Request credentials from callers when running services*](../documentation/sap-connection/settings.md/#authentication) is active in the connection settings in yunIO,
@@ -63,6 +63,5 @@ The results are displayed in the **Response** section of Postman.
 
 #### Related Links
 - [Web Version of Postman](https://www.postman.com/)
-- [Postman Documentation](https://learning.postman.com/docs/getting-started/introduction/)
-- [Using Variables in Postman](https://learning.postman.com/docs/sending-requests/variables/)
+- [Postman Documentation: Using Variables in Postman](https://learning.postman.com/docs/sending-requests/variables/)
 - [Getting Started: Run and Integrate Services](../getting-started.md/#run-and-integrate-services)

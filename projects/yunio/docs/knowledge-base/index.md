@@ -44,7 +44,7 @@ hide:
 <div class="mdx-columns" markdown>
 
 - [Integrate a yunIO Service with Power Automate](integrate-a-yunio-service-with-power-automate.md)
-- [Integrate yunIO with Power Automate and the AI Builder](integrate-yunio-with power-automate-and-the-ai-builder.md)
+- [Integrate yunIO with Power Automate and the AI Builder](integrate-yunio-with-power-automate-and-the-ai-builder.md)
 - [Formats and Conversions in Power Automate](conversion-in-power-automate.md)
 - [Sync Dynamics 365 with SAP using Power Automate and yunIO](dynamics-with-yunIO.md)
 - [Sync Salesforce with SAP using Power Automate and yunIO](salesforce-power-automate-scenario.md)
@@ -107,7 +107,7 @@ hide:
 <div class="mdx-columns" markdown>
 
 - [Transaction IE01 - Create Equipment](transaction-ie01.md)
-- [Transaction PA40 - Personnel Actions(transaction-pa40.md)
+- [Transaction PA40 - Personnel Actions](transaction-pa40.md)
 - [Transaction VA02 - Change Sales Order](transaction-va02.md)
 - [Transaction XD02 - Change Customer Master Data](transaction-xd02.md)
 - [Transactions - Table Parameters](transaction-table-parameters.md)
