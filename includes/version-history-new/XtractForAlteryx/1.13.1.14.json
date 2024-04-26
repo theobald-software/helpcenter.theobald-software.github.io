@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Derived classes of ERPException are Serializable now",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

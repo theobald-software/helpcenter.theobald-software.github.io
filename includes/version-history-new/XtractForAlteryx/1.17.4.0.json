@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added option to abort setup in case of running processes (Alteryx Designer and Server).\nFixed bug where the wrong version number was displayed in the about window of the BAPI tool.",
+        "Component": "Setup",
+        "Product": "XtractForAlteryx"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for RFC_CONVERSION_FIELD when calling Z_THEO_READ_TABLE 2.x on Big Endian systems",
+        "Component": "Table",
+        "Product": "Theobald.Extractors"
+    }
+]

@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "Fixed output metadata of tools to improve compatibility with other tools.",
+        "Component": "General",
+        "Product": "XtractForAlteryx"
+    },
+    {
+        "Message": "UI fixes and improvements in performance and stability.",
+        "Component": "Table",
+        "Product": "Theobald.Extractors"
+    }
+]

@@ -1,0 +1,22 @@
+[
+    {
+        "Message": "Improvements for the uninstalling script",
+        "Component": "Setup",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Hierarchy texts for merged segments now use the language of the connection ",
+        "Component": "ODP",
+        "Product": "Theobald.Extractors"
+    },
+    {
+        "Message": "Updated Z_THEO_READ_TABLE to version 2.6",
+        "Component": "Table",
+        "Product": "Theobald.Extractors"
+    },
+    {
+        "Message": "Updated Z_THEO_READ_TABLE to version 2.5",
+        "Component": "Table",
+        "Product": "Theobald.Extractors"
+    }
+]

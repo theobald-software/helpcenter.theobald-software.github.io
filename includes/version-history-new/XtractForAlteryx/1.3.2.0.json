@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Textbox for connection name is read-only now for existing connections",
+        "Component": "Designer",
+        "Product": "XtractForAlteryx"
+    }
+]

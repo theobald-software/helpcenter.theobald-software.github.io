@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "Updated to 6.5.7.20",
+        "Component": "ERPConnect",
+        "Product": "Theobald.Extractors"
+    },
+    {
+        "Message": "Fix for extractions using Z_XTRACT_IS_TABLE_COMPRESSION",
+        "Component": "Table",
+        "Product": "Theobald.Extractors"
+    }
+]

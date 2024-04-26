@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Using table name for tool instead of RFC function, fix for ABAP strings vs. NET",
+        "Component": "Table",
+        "Product": "XtractForAlteryx"
+    }
+]

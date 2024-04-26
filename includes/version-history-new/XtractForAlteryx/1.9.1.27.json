@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed a bug where enabling conversion on all the fields that have conversion exit defined in SAP, would enable conversion on all the fields in the table UI.",
+        "Component": "Table",
+        "Product": "Theobald.Extractors"
+    }
+]

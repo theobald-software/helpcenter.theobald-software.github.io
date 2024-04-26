@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "Fixed a bug that caused range selections to reset to 'Equal' after saving the extraction",
+        "Component": "ODP",
+        "Product": "Theobald.Extractors"
+    },
+    {
+        "Message": "Reverted Z_THEO_READ_TABLE back to v1.11 for systems before 740SP05",
+        "Component": "Table",
+        "Product": "Theobald.Extractors"
+    }
+]

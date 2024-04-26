@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for automatic join detection on tables where unknown fields are defined in SAP",
+        "Component": "Table",
+        "Product": "Theobald.Extractors"
+    }
+]

@@ -1,0 +1,22 @@
+[
+    {
+        "Message": "Using MSBuild 16.0",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Using MSBuild 16",
+        "Component": "General",
+        "Product": "Theobald.Extractors"
+    },
+    {
+        "Message": "Updated to 6.5.9.3",
+        "Component": "ERPConnect",
+        "Product": "Theobald.Extractors"
+    },
+    {
+        "Message": "Updated to .NET Framework 4.7.1",
+        "Component": "General",
+        "Product": "Theobald.Extractors"
+    }
+]

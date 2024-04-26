@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "Fix for loading iDoc Schema after loading plain data",
+        "Component": "Idoc",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Logger throws InvalidOperationException if used without calling Start()",
+        "Component": "General",
+        "Product": "Common"
+    }
+]

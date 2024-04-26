@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Classic: Fix for reading structures in response with less members than defined in local function object",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    }
+]

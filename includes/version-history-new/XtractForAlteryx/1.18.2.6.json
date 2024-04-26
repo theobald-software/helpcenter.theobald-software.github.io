@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Workaround for SAP returning dates in inconsistent formats ",
+        "Component": "ODP",
+        "Product": "Theobald.Extractors"
+    }
+]

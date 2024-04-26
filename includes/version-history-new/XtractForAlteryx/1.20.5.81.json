@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for using /THEO/READ_TABLE on big endian systems",
+        "Component": "Table",
+        "Product": "Theobald.Extractors"
+    }
+]

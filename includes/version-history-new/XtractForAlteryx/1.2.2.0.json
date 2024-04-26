@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "Fixes and improvements for error handling",
+        "Component": "Designer",
+        "Product": "XtractForAlteryx"
+    },
+    {
+        "Message": "Improvements for error handling in UI",
+        "Component": "General",
+        "Product": "Theobald.Extractors"
+    }
+]
