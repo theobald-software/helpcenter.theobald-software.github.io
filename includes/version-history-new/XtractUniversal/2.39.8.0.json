@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Oracle: Values were inserted into the wrong columns in some cases, if bulk operations had been disabled ",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for a possible collation issue when using the Prepare Merge statement in the Microsoft SQL Server destination.",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

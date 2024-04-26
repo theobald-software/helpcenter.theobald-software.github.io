@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed a bug where the requested resource of a HTTP request would not get decoded properly.",
+        "Component": "General",
+        "Product": "Theobald.Server"
+    }
+]

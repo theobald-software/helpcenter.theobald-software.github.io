@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Removed internal references of defunct products (XtractPPV, XtractQV, XtractRS) and destinations (AlteryxConnect, GoodData, MicroStrategy, ODataAtom, PowerBI, TableauConnector, Teradata, Vertica) from code base",
+        "Component": "Licensing",
+        "Product": "Common"
+    }
+]

@@ -1,0 +1,19 @@
+[
+    {
+        "Message": "Custom authentication related security fixes and improvements.",
+        "Component": "Security",
+        "Product": "XtractUniversal",
+        "ReleaseNote": "## Xtract Universal 5.21.14\n\nIncrease PBKDF2 iterations. Existing passwords will be rehashed on successful login.\nRework authentication procedure to account for old PBKDF2 configurations.\nPBKDF2 iterations and algorithm is now serialized to the user information.\nRemoved a side channel from the custom authentication of the RPC protocol."
+    },
+    {
+        "Message": "Increased the number of iterations for PBKDF2.\nImplemented constant time byte array comparison.\nAdded test cases for constant time array comparison.",
+        "Component": "General",
+        "Product": "Common"
+    },
+    {
+        "Message": "Custom authentication related security fixes and improvements.",
+        "Component": "General",
+        "Product": "Theobald.Server",
+        "ReleaseNote": "## Theobald Server 3.6.11\n\nIncrease PBKDF2 iterations. Existing passwords will be rehashed on successful login.\nRework authentication procedure to account for old PBKDF2 configurations.\nPBKDF2 iterations and algorithm is now serialized to the user information.\nRemoved a side channel from the custom authentication of the RPC protocol."
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed CSV Parsing Bug in SSRS Data Extension",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

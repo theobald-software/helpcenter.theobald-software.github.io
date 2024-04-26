@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixes for value conversion in Redshift destination.",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

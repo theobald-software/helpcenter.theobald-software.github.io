@@ -1,0 +1,8 @@
+[
+    {
+        "Message": "Json Destination: Implement file split functionality.",
+        "Component": "Destinations",
+        "Product": "XtractUniversal",
+        "ReleaseNote": "# Xtarct Universal 6.4.1\nThe folowing destinations are affected by this change:\n- FlatFileJson\n- Google Cloud Storage\n- Huawei OBS\n"
+    }
+]

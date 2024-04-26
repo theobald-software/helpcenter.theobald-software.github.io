@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixes & improvements for converting configuration & logs from Xtract Universal before 3.x and Xtract QV",
+        "Component": "Server",
+        "Product": "XtractUniversal"
+    }
+]

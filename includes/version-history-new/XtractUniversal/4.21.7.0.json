@@ -1,0 +1,8 @@
+[
+    {
+        "Message": "Added support for SAP Data Warehouse Cloud.",
+        "Component": "Destinations",
+        "Product": "XtractUniversal",
+        "ReleaseNote": "Installing HANA Client 2.6.61 is required for using the HANA destination."
+    }
+]

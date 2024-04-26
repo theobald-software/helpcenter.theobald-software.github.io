@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed a bug in the MicroStrategy destination, that caused cubes to be unintentionally replaced in some situations.",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

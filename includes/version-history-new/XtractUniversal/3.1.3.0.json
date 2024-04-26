@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "GUI fixes (buttons not visible at some screen resolutions etc.)",
+        "Component": "Designer",
+        "Product": "XtractUniversal"
+    }
+]

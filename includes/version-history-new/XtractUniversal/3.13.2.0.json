@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added support for extraction variables in Power BI custom connector",
+        "Component": "General",
+        "Product": "XtractUniversal"
+    }
+]

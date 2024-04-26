@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for result caching on \"Int8\" data type.",
+        "Component": "Server",
+        "Product": "XtractUniversal"
+    }
+]

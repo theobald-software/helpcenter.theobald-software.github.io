@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "CSV: Column headers are written even if extraction result is empty",
+        "Component": "Server",
+        "Product": "XtractUniversal"
+    }
+]

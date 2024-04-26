@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Bulk operations can be disabled via extractions-specific settings for debugging (Oracle, SQL Server)",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

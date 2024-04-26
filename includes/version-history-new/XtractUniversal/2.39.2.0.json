@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for custom parameters when using the xu.exe button to execute the extraction",
+        "Component": "General",
+        "Product": "XtractUniversal"
+    }
+]

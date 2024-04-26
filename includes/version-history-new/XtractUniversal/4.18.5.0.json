@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for custom sql window to accept new line and tab space creation",
+        "Component": "Designer",
+        "Product": "XtractUniversal"
+    }
+]

@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "BWCube date exception handling improved",
+        "Component": "BW Cube",
+        "Product": "XtractUniversal"
+    },
+    {
+        "Message": "Added new ERPException - NotAuthorizedException\nOptimized BWCube exception handling for dates",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

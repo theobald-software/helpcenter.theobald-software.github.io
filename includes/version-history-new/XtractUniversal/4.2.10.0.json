@@ -1,0 +1,8 @@
+[
+    {
+        "Message": "Several fixes and enhancements for Snowflake destination",
+        "Component": "Destinations",
+        "Product": "XtractUniversal",
+        "ReleaseNote": "- Remove SnowSql and related files uninstallation\n- Fix for PK script generation in drop and create, create if exists and merge statements\n- Enhancements for logging\n- Removed wildcards from setup"
+    }
+]

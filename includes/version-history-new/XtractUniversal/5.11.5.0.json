@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed a bug where converting report extractions from pre 4.31.0 version would fail, if range selection options (between / not between) were defined on report parameters.",
+        "Component": "Report",
+        "Product": "XtractUniversal"
+    }
+]

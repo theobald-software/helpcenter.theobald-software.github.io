@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for parsing escaped backslash in connection string",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    }
+]

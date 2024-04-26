@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "In some cases extractions were run despite load errors",
+        "Component": "Server",
+        "Product": "XtractUniversal"
+    }
+]

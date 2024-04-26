@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for clearing result cache of extractions without source.json",
+        "Component": "Server",
+        "Product": "XtractUniversal"
+    }
+]

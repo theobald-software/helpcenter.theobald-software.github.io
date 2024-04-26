@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for Alteryx and Qlik support in xu.exe",
+        "Component": "General",
+        "Product": "XtractUniversal"
+    }
+]

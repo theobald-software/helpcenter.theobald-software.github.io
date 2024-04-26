@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added filterboxes in the designer for name, type, source and destination. Changed initial sorting order for dates, removed the old filter tool and implemented right-click option in the datagrid to add keywords to several selected extractions",
+        "Component": "General",
+        "Product": "XtractUniversal"
+    }
+]

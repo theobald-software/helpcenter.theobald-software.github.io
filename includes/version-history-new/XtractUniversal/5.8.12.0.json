@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed a bug where primary keys where missing after upgrading",
+        "Component": "BAPI",
+        "Product": "XtractUniversal"
+    }
+]

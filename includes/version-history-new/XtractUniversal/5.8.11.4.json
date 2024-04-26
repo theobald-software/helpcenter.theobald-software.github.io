@@ -1,0 +1,17 @@
+[
+    {
+        "Message": "The progress dialog now always runs the work load on a background thread.",
+        "Component": "WPF",
+        "Product": "Common"
+    },
+    {
+        "Message": "Fix for disabled measures/dimensions tree in MDX mode when a query does not have any measures.",
+        "Component": "BW Cube",
+        "Product": "Theobald.Extractors"
+    },
+    {
+        "Message": "Subdirectory support for persistence and RPC server/client.",
+        "Component": "General",
+        "Product": "Theobald.Server"
+    }
+]

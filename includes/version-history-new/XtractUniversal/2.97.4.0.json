@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Renamed \"Upsert\" statment to \"Merge (Upsert)\"",
+        "Component": "Designer",
+        "Product": "XtractUniversal"
+    }
+]

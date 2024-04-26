@@ -1,0 +1,13 @@
+[
+    {
+        "Message": "Make sure to update designer AND server!",
+        "Component": "Designer",
+        "Product": "XtractUniversal",
+        "ReleaseNote": "* Overhaul for the designer backend\n* Improvements for stability\n* Cleanup for the handling of disconnects\n* New log window"
+    },
+    {
+        "Message": "Client side implementation to match Xtract Universal server; Fixes for client side notification handling; Server error information is now a JSON object\n",
+        "Component": "General",
+        "Product": "Theobald.Server"
+    }
+]

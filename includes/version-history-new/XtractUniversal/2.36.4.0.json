@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed: Empty date fields no longer throw an exception in Tableau destination",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

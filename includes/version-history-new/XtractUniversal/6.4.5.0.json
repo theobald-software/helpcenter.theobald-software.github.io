@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Hotfix: Fixed a bug which can cause the extraction request to fail, when the client does not supply a user-agent header in certain circumstances. The bug was introduced in 6.4.4",
+        "Component": "Server",
+        "Product": "XtractUniversal"
+    }
+]

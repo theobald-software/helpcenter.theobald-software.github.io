@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Changed names of SQL-Parameters for cases in which column names cannot be used (can break existing Custom SQL)",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed a bug which would crash the configuration converter when an unhandled property was read in a legacy server file.",
+        "Component": "Server",
+        "Product": "XtractUniversal"
+    }
+]

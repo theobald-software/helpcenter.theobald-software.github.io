@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for ambiguous local timestamps during daylight saving time transition",
+        "Component": "Server",
+        "Product": "XtractUniversal"
+    }
+]

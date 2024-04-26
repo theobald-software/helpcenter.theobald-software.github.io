@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed a bug that caused the servers to crash when clients closed the connection before it could be handled",
+        "Component": "Server",
+        "Product": "XtractUniversal"
+    }
+]

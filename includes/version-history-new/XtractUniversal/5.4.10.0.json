@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Azure Storage destination: fixed a bug where extraction would run into an error when using Append Blob type (bug introduced in 5.1.17)",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

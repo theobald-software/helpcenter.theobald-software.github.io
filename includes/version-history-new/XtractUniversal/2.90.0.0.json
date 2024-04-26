@@ -1,0 +1,17 @@
+[
+    {
+        "Message": "All hierarchies may be activated now",
+        "Component": "DeltaQ",
+        "Product": "XtractUniversal"
+    },
+    {
+        "Message": "Added RFCServer.Logged event to get RFC server log messages without activating traces",
+        "Component": "RFCServer",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Several fixes and improvements (esp. hierarchies)",
+        "Component": "DeltaQ",
+        "Product": "XtractKernel"
+    }
+]

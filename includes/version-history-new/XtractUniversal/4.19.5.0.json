@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Azure Storage destination: fixed connectivity issues to Azure Storage. Fixed a bug where if connection issues occurred during the upload of the last package, the data would not get sent again during retry.",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

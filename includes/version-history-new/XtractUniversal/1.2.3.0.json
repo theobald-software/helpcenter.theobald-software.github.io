@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for invalid output column reordering (output window could not be opened)",
+        "Component": "BW Cube",
+        "Product": "XtractUniversal"
+    }
+]

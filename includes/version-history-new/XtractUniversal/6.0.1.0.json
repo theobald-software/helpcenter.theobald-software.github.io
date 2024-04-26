@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed a bug where the web server port was not known after the update to version 6.",
+        "Component": "Server",
+        "Product": "XtractUniversal"
+    }
+]

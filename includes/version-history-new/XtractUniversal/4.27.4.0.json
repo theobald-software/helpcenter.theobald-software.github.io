@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added referenceTable field to result columns JSON HTTP API",
+        "Component": "Server",
+        "Product": "XtractUniversal"
+    }
+]

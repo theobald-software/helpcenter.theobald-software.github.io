@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "EXASOL: Fix for null values and improved error message",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

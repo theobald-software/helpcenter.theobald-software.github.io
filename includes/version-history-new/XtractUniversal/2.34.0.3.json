@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for using cubes or queries with namespace slashes in BEX mode",
+        "Component": "BW Cube",
+        "Product": "XtractKernel"
+    }
+]

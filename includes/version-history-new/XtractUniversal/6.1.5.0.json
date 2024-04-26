@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "Fixed an issue that caused errors when using MDX cube selections with list runtime parameters in script expressions ",
+        "Component": "BW Cube",
+        "Product": "XtractUniversal"
+    },
+    {
+        "Message": "Improved handling of list runtime parameters in MDX filter selections",
+        "Component": "BW Cube",
+        "Product": "Theobald.Extractors"
+    }
+]

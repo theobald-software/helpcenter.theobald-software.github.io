@@ -1,0 +1,14 @@
+[
+    {
+        "Message": "New implementation of ReadTable class & support for non-Unicode multibyte codepages",
+        "Component": "General",
+        "Product": "ERPConnect",
+        "IsBreaking": true,
+        "ReleaseNote": "# ERPConnect 6.1\n\nThis release adds support for multibyte codepages on non-Unicode SAP systems.\nFurthermore, the ReadTable class has been re-engineered, which includes a few breaking changes:\n\n### Removed ReadTable.AddCriteria()\nThis method had several unexpected consquences. Please use the WhereClause property instead.\n\n### Removed ReadTable.Delimiter\nThis used to be a workaround for non-Unicode multibyte codepages. Full multibyte support has been implemented, therefore the delimiter is not needed anymore.\n\n### Removed ReadTable.UsePrimaryKeyPackaging\nPackaging is primarily performed on the ABAP side. Please use custom function modules if you have special requirements for packaging.\n\n### ReadTable.Fields behaves differently\nThe Fields collection is used for both field selection and result metadata. Calling ReadTable.AddField() will add a field to this collection. In previous versions, the collection had only been used for result metadata.\n\nIn combination with RetrieveAllFieldsOfTable() that means, you can remove the fields that you don't want to extract from the Fields collection. If you want to use AddField(), please clear the collection after calling RetrieveAllFieldsOfTable() or use separate ReadTable instances.\n\n### Removed UseMultibyteExtraction flag from LINQtoERP\nThis flag has no use anymore, since multibyte codepages are fully supported without setting any flags or using other workarounds.\n\n### IncomingPackage & PackageProgress\nPackageProgress is fired always - RaiseIncomingPackageEvent no longer disables PackageProgress event.\n\nIncomingPackage is no longer fired  if package is empty."
+    },
+    {
+        "Message": "Updated ERPConnect to 6.1.0.0, removed old Table features",
+        "Component": "General",
+        "Product": "XtractKernel"
+    }
+]

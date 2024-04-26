@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Improved error handling for unsupported destination types",
+        "Component": "OHS",
+        "Product": "Theobald.Extractors"
+    }
+]

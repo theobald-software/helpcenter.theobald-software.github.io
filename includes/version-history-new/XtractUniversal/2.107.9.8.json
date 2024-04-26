@@ -1,0 +1,42 @@
+[
+    {
+        "Message": "RFCTable.Rows is cleared after call now, if function in SAP clears the table",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Function: Fix for empty tables - pass (bug introduced in 5.4.9)",
+        "Component": "LINQtoERP",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Function: Fix for empty tables - return (bug introduced in 5.4.9)",
+        "Component": "LINQtoERP",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Classic: Fix for unsupplied XML parameters",
+        "Component": "RFCServer",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Function: Inconsistent metadata of existing structures can be updated now (VS2015, VS2017)",
+        "Component": "LINQtoERP",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Function: Fixes for metadata mismatch in structures/tables",
+        "Component": "LINQtoERP",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Added R3Connection.CpicConversationId",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Updated to 5.5.4.0",
+        "Component": "ERPConnect",
+        "Product": "XtractKernel"
+    }
+]

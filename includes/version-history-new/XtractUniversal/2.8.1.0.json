@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix: LogDir setting got lost when using a custom connection",
+        "Component": "General",
+        "Product": "XtractUniversal"
+    }
+]

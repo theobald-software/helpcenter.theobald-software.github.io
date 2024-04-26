@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for access restriction grid control, which was requiring a double click to change its combo boxes check state",
+        "Component": "Designer",
+        "Product": "XtractUniversal"
+    }
+]

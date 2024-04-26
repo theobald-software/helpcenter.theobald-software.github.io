@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix tables in tables",
+        "Component": "BAPI",
+        "Product": "Theobald.Extractors"
+    }
+]

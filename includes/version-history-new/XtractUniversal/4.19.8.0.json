@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "S3 destination now supports splitting for Parquet and CSV files.",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

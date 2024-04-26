@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Correction for extractions to flat files with a backslash in the OLTP source name",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

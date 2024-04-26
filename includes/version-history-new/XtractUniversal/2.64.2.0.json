@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for Tableau Destination on Server 2008",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

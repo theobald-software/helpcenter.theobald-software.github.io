@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed the default setting of the config converter for the XU 6 upgrade.\nFixed the web worker log window not showing any logs.\nFixed some typos in the XU 6.0.0 release notes.",
+        "Component": "General",
+        "Product": "XtractUniversal"
+    }
+]

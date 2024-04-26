@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for File - CSV (didn't work since version 2.35.0)",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

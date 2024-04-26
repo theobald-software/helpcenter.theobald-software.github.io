@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Bug fix for broken connections in Redshift destination.",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

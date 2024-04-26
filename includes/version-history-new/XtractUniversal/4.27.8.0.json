@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for handling date type in deprecated CSV metadata API (please use JSON API instead)",
+        "Component": "Server",
+        "Product": "XtractUniversal"
+    }
+]

@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "Fix for setting the target principal automatically on the connect window",
+        "Component": "Designer",
+        "Product": "XtractUniversal"
+    },
+    {
+        "Message": "Fix for displaying messages when no possible window owner is found for the message dialog",
+        "Component": "WPF",
+        "Product": "Common"
+    }
+]

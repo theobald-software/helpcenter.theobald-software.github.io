@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Bugfix for tree view UI element on the left side. Double clicking lead to strange error message in rare cases",
+        "Component": "BW Cube",
+        "Product": "XtractUniversal"
+    }
+]

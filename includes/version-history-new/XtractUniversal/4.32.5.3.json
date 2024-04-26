@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Reverted default package size, this fixes an issue where the package size doubles leading to an error",
+        "Component": "ODP",
+        "Product": "Theobald.Extractors"
+    }
+]

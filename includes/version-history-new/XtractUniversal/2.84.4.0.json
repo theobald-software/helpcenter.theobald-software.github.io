@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Increased timeout for finalization statement to 30 minutes",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for TableJoin (broken since 3.14.0).",
+        "Component": "Designer",
+        "Product": "XtractUniversal"
+    }
+]

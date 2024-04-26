@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added support for Content-Encoding: gzip",
+        "Component": "Server",
+        "Product": "XtractUniversal"
+    }
+]

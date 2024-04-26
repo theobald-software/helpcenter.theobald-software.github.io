@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Removed Sources restriction check during license validation logic. Existing licenses will continue to work but the Sources restriction will not have any effect anymore.",
+        "Component": "General",
+        "Product": "XtractUniversal"
+    }
+]

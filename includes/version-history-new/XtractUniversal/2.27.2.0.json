@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "filterDebug=true is also available for live log of non-HTTP destinations now",
+        "Component": "Server",
+        "Product": "XtractUniversal"
+    }
+]

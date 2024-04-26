@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Bug fix for using MEMBER_CAPTION keyword in MDX with MDXExecuter class",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

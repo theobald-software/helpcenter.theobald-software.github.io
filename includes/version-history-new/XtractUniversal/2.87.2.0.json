@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixes for Tableau destination (older Windows versions, 32-bit)",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

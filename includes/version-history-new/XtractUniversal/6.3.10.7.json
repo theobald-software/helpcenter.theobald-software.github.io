@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "RfcLibraryHelper now loads the VC++ dependencies before loading the RFC SDK dlls",
+        "Component": "General",
+        "Product": "Theobald.Extractors"
+    }
+]

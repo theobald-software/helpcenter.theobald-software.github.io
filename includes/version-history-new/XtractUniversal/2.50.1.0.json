@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Enabled arithmetic overflow/underflow checks for all projects\nGrouped projects in solution directories",
+        "Component": "General",
+        "Product": "XtractUniversal"
+    }
+]

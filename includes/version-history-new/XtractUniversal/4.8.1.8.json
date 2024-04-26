@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Moved CertificateInfo class to Theobald.Net (previously Theobald.Web)",
+        "Component": "General",
+        "Product": "Theobald.Server"
+    }
+]

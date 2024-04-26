@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Bug fix for Null values in Tableau destination",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

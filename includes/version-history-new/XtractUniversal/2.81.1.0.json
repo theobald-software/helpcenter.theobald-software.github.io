@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "SharePointDestination: Implemented custom name converter to handle character limitations properly.",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

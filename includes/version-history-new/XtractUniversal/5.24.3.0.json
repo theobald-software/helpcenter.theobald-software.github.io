@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "Added option to run initial load as background job",
+        "Component": "TableCDC",
+        "Product": "XtractUniversal"
+    },
+    {
+        "Message": "Added option to run initial load as background job",
+        "Component": "TableCDC",
+        "Product": "Theobald.Extractors"
+    }
+]

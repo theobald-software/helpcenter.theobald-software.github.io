@@ -1,0 +1,13 @@
+[
+    {
+        "Message": "Added the new DeltaQ component",
+        "Component": "DeltaQ",
+        "Product": "XtractUniversal",
+        "ReleaseNote": "**XU 5.27.0**\nThe DeltaQ component has been moved frm the XtractKernel component into the Theobald.Extractors.\nAll windows have been re-written in WPF."
+    },
+    {
+        "Message": "Ported the DeltaQ component from XtractKernel with new UI",
+        "Component": "DeltaQ",
+        "Product": "Theobald.Extractors"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added doc strings to interface IR3Connection. Cleanup, corrections, and some see and seealso references added to comments on both IR3Connection and R3Connection",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

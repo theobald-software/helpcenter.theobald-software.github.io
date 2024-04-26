@@ -1,0 +1,8 @@
+[
+    {
+        "Message": "Azure Storage now has folder path setting in both destination definition settings and in extraction specific destination settings. Fixed a bug where using special characters in folder paths would cause an error during upload to Azure Storage.",
+        "Component": "Destinations",
+        "Product": "XtractUniversal",
+        "ReleaseNote": "- Azure Storage now has folder path in both destination definition settings and in extraction specific destination settings. The folder path in extraction specific destination settings extends the folder path from the destination definition settings.\n- Fixed a bug where using some special characters in folder paths would cause an error."
+    }
+]

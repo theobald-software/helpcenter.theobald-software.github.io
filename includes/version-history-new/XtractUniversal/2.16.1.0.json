@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed SQL for DB2 (increased length of string types)",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Start processes using P/Invoke instead of System.Diagnostics.Process",
+        "Component": "General",
+        "Product": "Common"
+    }
+]

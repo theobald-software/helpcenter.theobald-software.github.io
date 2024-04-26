@@ -1,0 +1,8 @@
+[
+    {
+        "Message": "Various fixes and improvements for Tableau",
+        "Component": "Destinations",
+        "Product": "XtractUniversal",
+        "ReleaseNote": "# Xtract Universal 4.18.4 - Various fixes and improvements for Tableau\n\n* Updated Tableau Extract API 2.0 to 2019.2.6\n* XtractCleanup should now cleanup all Tableau logs\n* Fixed type mapping for Unicode strings"
+    }
+]

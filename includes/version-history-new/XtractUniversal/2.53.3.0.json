@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Removed workaround for OData consumer timeouts (2.48.0)",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

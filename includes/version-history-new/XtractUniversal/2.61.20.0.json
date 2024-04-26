@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added new setting 'Accept Gaps In Data Package Id' for users who are using OLTP datasources where data is filtered in a way that it leads to gaps between the packet numbers. This setting turns off a certain consistency check. ",
+        "Component": "DeltaQ",
+        "Product": "XtractUniversal"
+    }
+]

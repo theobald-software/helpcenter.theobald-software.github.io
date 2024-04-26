@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix on message for .Net Framework installation check on setup, according to validation for version 4.7.1",
+        "Component": "Setup",
+        "Product": "XtractUniversal"
+    }
+]

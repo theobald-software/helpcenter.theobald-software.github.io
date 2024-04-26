@@ -1,0 +1,32 @@
+[
+    {
+        "Message": "Bug fix for time formatting in CSV destinations",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    },
+    {
+        "Message": "R3Connection.CreateFunction() now supports ABAP types decfloat16 and decfloat34 (transferred as byte arrays)",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Bug fix for using < or > sign in IDoc segment description texts while saving the Schema to an XML file",
+        "Component": "Idoc",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Correction for inadequate info message when receiving an empty resultset \"Failing to rename column...\" ",
+        "Component": "BW Cube",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Updated to 4.21.0.3",
+        "Component": "ERPConnect",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "BAPIDefinition.Columns contains only columns, which are part of the result now",
+        "Component": "BAPI",
+        "Product": "XtractKernel"
+    }
+]

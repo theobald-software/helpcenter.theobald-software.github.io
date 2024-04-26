@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed an error that caused CSV destinations to fail when an empty result set (no rows or columns) was extracted",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

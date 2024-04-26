@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed bug on extraction settings window when extraction was not yet fully configured",
+        "Component": "Designer",
+        "Product": "XtractUniversal"
+    }
+]

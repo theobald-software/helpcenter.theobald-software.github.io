@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Tableau: Fix for multiple instances of TDE SDK on same machine",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Improved the error message for when Z_THEO_READ_TABLE is used and conversion is enabled on a field that does not have a conversion exit defined in SAP.",
+        "Component": "Table",
+        "Product": "Theobald.Extractors"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for converting old extractions that were restricted to built-in admin/administrators only",
+        "Component": "Security",
+        "Product": "XtractUniversal"
+    }
+]
