@@ -42,7 +42,8 @@ Recommendation | Green | Theobald Software recommendations and best practices ad
 
 Example:
 
-!!! warning "Single Sign-On availability"
+!!! warning  
+	**Single Sign-On availability.**<br>
 	ABAP application server has to run on a Windows OS and SNC with Kerberos encryption setup on SAP.
 
 

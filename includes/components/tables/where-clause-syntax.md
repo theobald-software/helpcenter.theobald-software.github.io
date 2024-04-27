@@ -5,8 +5,8 @@ The WHERE clause text mode allows you to directly enter a WHERE clauses. {% if p
 
 {% if page.meta.product != "yunio" %}
 
-!!! warning
-	**Extraction fails due to incorrect syntax!** <br>
+!!! warning 
+	**Extraction fails due to incorrect syntax.** <br>
 	The extractions fail, if incorrect syntax is used in the WHERE clause. Make sure to use correct SAP OpenSQL syntax. Several important syntax rules are listed in this help section.
 
 !!! tip
