@@ -50,7 +50,7 @@ Use the toggle to switch between the connection methods.
 The following authentication methods are supported:
 - :material-toggle-switch-off: Plain uses the SAP username and password of a system or dialogue user.
 - :material-toggle-switch: Secure Network Communication (SNC) uses the username and password provided via basic authentication.
-SNC enables authentication and transport encryption between SAP systems and third-party tools similar to yunIO, see [Connect to SAP](index.md/#connect-to-sap).
+SNC enables authentication and transport encryption between SAP systems and third-party tools similar to yunIO, see [Connect to SAP](index.md/#connect-to-sap-using-plain-authentication).
 
 Use the toggle to switch between the authentication methods.
 

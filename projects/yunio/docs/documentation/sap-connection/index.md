@@ -15,7 +15,7 @@ Supported Connection Methods  | Supported Authentication Methods
 Connection to a single application server | [Plain login](#connect-to-sap-using-plain-authentication) using SAP username and password (system or dialogue user)
 Connection to a message server (Load Balancing) | [Secure Network Communication (SNC)](#connect-to-sap-using-snc-authentication) using username and password via basic authentication
 
-### Connect to SAP
+### Connect to SAP using Plain Authentication
 
 Follow the steps below to set up an SAP connection that uses an SAP username and password for authentication.
 
@@ -24,10 +24,11 @@ Follow the steps below to set up an SAP connection that uses an SAP username and
 ![yunIO-Create-Connection](../../assets/images/yunio/web-ui.png){:class="img-responsive" }
 3. Enter the system details of your SAP system in the subsection [*System*](settings.md/#system) :number-1:.<br>
 ![yunIO-Create-Connection](../../assets/images/yunio/yunio-connections.png){:class="img-responsive" }
-4. Enter the SAP username and password of an SAP system or dialogue user in the subsection [*Authentication*](settings.md/#authenticatin) :number-2:.
-5. Click **[Test Connection]** to validate the connection parameters :number-3:. <br>
+4. Make sure the toggle in the subsection [*Authentication*](settings.md/#authentication) :number-2: is set to :material-toggle-switch-off: *Plain* authentication.
+5. Enter the SAP username and password of an SAP system or dialogue user.
+6. Click **[Test Connection]** to validate the connection parameters :number-3:. <br>
 A window with a status message opens in the bottom right corner of the window.
-6. Click **[Save]** to save the connection settings. <br>
+7. Click **[Save]** to save the connection settings. <br>
 
 !!! tip
     Activate the option *Request credentials from callers when running services* to pass valid SAP credentials via Basic Authentication. 

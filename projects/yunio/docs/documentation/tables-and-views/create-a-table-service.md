@@ -1,5 +1,5 @@
 ---
-title: Creating a Table Service
+title: Create a Table Service
 description: How to create a service to extract data from an SAP Table and View
 ---
 
