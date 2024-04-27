@@ -51,8 +51,9 @@ The list below shows several important files that are placed into the default di
 
 ### Update																																										   
 
-!!! warning 
-	**Data loss:** System updates or changes can restrict software functionalities and this may lead to data loss.
+!!! warning  
+	**Data loss.**<br>
+	System updates or changes can restrict software functionalities and this may lead to data loss.
     [Create a backup](backup-and-migration.md) of the directory: `C:\Program Files\Theobald Software\yunIO\config` at regular intervals.
 
 It is recommended to update the software regularly, as regular updates are crucial for a stable performance.

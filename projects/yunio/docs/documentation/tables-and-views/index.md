@@ -8,7 +8,7 @@ This section shows how to use the {{ table }} {{ component }}.<br>
 The {{ table }} {{ component }} can be used to extract contents from SAP tables and views.
 
 !!! warning 
-	**Missing Authorization**<br>
+	**Missing Authorization.**<br>
     To use the Table component, access to the designated authority objects (RFC) in SAP must be available.
     For more information, see [SAP Authority Objects](../setup-in-sap/sap-authority-objects.md/#table).
 

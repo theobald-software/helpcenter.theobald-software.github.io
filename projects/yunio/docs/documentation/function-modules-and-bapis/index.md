@@ -8,7 +8,8 @@ This section shows how to use the {{ bapi }} {{ component }}.<br>
 The {{ bapi }} {{ component }} can be used to parameterize and execute SAP function modules and BAPIs for automation.
 
 
-!!! warning "Warning! Missing Authorization"
+!!! warning 
+	**Missing Authorization.**<br>
     To use the {{ bapi }} {{ component }}, access to the designated authority objects (RFC) in SAP must be available. 
 	For more information, see [SAP Authority Objects: BAPI](../setup-in-sap/sap-authority-objects.md/#bapi).
 
