@@ -25,7 +25,7 @@ hide:
         set my value to ''
         trigger keyup
       else
-        show <tr/> in next <tbody/> when its textContent.toLowerCase() contains my value.toLowerCase()" />
+        show <tr/> in <tbody/> when its textContent.toLowerCase() contains my value.toLowerCase()" />
 
   <button class="btn-clear md-button md-button--primary"
     _="on click set #search.value to '' then trigger keyup on #search">Clear</button>
