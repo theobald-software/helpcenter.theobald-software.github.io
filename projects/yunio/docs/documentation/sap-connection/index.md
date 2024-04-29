@@ -4,7 +4,7 @@ icon: simple/sap
 description: SAP Connection
 ---
 
-This section shows how to connect to SAP.
+This page shows how to connect yunIO to SAP.
 
 !!! warning 
 	**Missing Authorization.**<br>

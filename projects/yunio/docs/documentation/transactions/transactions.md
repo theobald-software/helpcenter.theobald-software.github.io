@@ -3,7 +3,7 @@ title: Create a Transaction Services
 description: How to create a web service that executes SAP Transaction
 ---
 
-This section shows how to use the {{ transaction }} {{ component }}.
+This page shows how to use the {{ transaction }} {{ component }}.
 
 ### Prerequisites
 

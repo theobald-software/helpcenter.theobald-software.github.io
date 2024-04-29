@@ -3,7 +3,7 @@ title: Create a Table Service
 description: How to create a service to extract data from an SAP Table and View
 ---
 
-This section shows how to create a service that extracts data from an SAP Table and View.
+This page shows how to create a service that extracts data from an SAP Table and View.
 
 ### Prerequisites
 

@@ -3,7 +3,7 @@ title: Run Services
 description: How to testrun services directly in yunIO ad hwo to integrate services in 3rd-party-tool
 ---
 
-This section shows how to test, integrate and pass parameters to services created in yunIO.
+This page shows how to test, integrate and pass parameters to services created in yunIO.
 
 
 ### Run Services in yunIO

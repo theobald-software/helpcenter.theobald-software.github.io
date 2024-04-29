@@ -4,7 +4,7 @@ icon: component/table
 description: Information about the integration type SAP tables or views
 ---
 
-This section shows how to use the {{ table }} {{ component }}.<br>
+This page shows how to use the {{ table }} {{ component }}.<br>
 The {{ table }} {{ component }} can be used to extract contents from SAP tables and views.
 
 !!! warning 

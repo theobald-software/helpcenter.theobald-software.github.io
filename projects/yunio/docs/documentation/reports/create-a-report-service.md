@@ -3,7 +3,7 @@ title: Create a Report Service
 description: How to create a web service that executes function modules / BAPIs
 ---
 
-This section shows how to use the {{ report }} {{ component }}.<br>
+This page shows how to use the {{ report }} {{ component }}.<br>
 A report extraction is possible if the report returns a table-like structure in SAP.
 
 ### General Workflow

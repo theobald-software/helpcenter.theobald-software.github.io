@@ -4,7 +4,7 @@ icon: component/report
 description: Information about the integration type Report
 ---
 
-This section shows how to use the {{ report }} {{ component }}.<br>
+This page shows how to use the {{ report }} {{ component }}.<br>
 The {{ report }} {{ component }} can be used to extracts data from ABAP reports and SAP transactions.
 
 !!! warning 

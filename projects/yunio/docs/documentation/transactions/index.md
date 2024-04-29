@@ -4,7 +4,7 @@ icon: component/transaction
 description: Information about the integration type Transactions
 ---
 
-This section shows how to use the {{ transaction }} {{ component }}.<br>
+This page shows how to use the {{ transaction }} {{ component }}.<br>
 The {{ transaction }} {{ component }} can be used to access, configure and parameterize SAP transactions for automation.
 
 
