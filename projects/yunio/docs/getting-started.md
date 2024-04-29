@@ -28,7 +28,7 @@ For more information, see [Documentation: Installation](documentation/setup-for-
 
 Before connecting to SAP for the first time, set up an SAP dialog user with the necessary [SAP Authorization Objects](documentation/setup-in-sap/sap-authority-objects.md/#general-authorization-objects).
 
-1. Navigate to the  :yunio-nav-connections: *Connections* menu in the left side navigation of the Designer.
+1. Navigate to the  :yunio-nav-connections: *Connections* menu at the left side navigation area of the Designer.
 2. Click **[Add Connection]** to create a new SAP connection.<br>
 3. Enter the system details of your SAP system in the subsection *System*.<br>
 4. Enter the SAP credentials of the SAP dialog user in the subsection *Authentication*.
@@ -46,7 +46,7 @@ For more information, see [Documentation: SAP Connection](documentation/sap-conn
 
 ### Create a Service
 
-1. Navigate to the  :yunio-nav-services: *Services* menu in the left side navigation of the Designer.
+1. Navigate to the  :yunio-nav-services: *Services* menu at the left side navigation are of the Designer.
 2. Click **[Add Service]** to create a new web service.
 3. Enter a name and a short description of the service. 
 4. Select an existing SAP connection under **Connection**.
@@ -112,7 +112,7 @@ yunIO offers the following features for reading and writing data from and to SAP
 
 Follow the steps below to testrun a service directly in yunIO:
 
-1. Navigate to the :yunio-nav-services: *Services* menu in the left side navigation of the Designer.
+1. Navigate to the :yunio-nav-services: *Services* menu at the left side navigation area of the Designer.
 2. Click :yunio-run: to open the *Run Service* menu of a service.
 3. Click **[Run]** to execute the service. <br>
 The response body of the service is displayed under *Output Parameters (Response)*.
@@ -122,7 +122,7 @@ The response body of the service is displayed under *Output Parameters (Response
 For more information about running services and passing parameters, see [Documentation: Run Services](./documentation/run-services.md).
 
 #### How to Integrate yunIO Services with 3rd-Party-Tools
-1. Navigate to the  :yunio-nav-services: *Services* menu in the left side navigation of the Designer.
+1. Navigate to the  :yunio-nav-services: *Services* menu at the left side navigation are of the Designer.
 2. Click :yunio-copy: to copy or :yunio-download: to download the service definition for integration with 3rd-party-tools. 
 
 Web services created with yunIO can be integrated into all cloud applications that support REST API/Swagger (OpenAPI), e.g. Power Automate, Nintex, etc.
@@ -136,7 +136,7 @@ Follow the steps below to run services:
 
 === "Testrun Services in the browser"
 
-	1. Navigate to the :yunio-nav-services: *Services* menu in the left side navigation of the Designer.
+	1. Navigate to the :yunio-nav-services: *Services* menu at the left side navigation area of the Designer.
 	2. Click :yunio-copy: under *Service* to copy the service URL of a service.
 	3. Open a new tab in your browser and paste the service URL in the address bar.
 	4. Press **Enter** to trigger a service run. The response body of the service is displayed in the browser.
@@ -148,7 +148,7 @@ Follow the steps below to run services:
 
 === "Testrun Services in yunIO"
 
-	1. Navigate to the :yunio-nav-services: *Services* menu in the left side navigation of the Designer.
+	1. Navigate to the :yunio-nav-services: *Services* menu at the left side navigation area of the Designer.
 	2. Click :yunio-run: to open the *Run Service* menu of a service.
 	3. If no parameters are defined, click **[Run]** to execute the service. The response body of the service is displayed under *Output Parameters (Response)*.
 	4. Click **[Close]** to close the *Run Service* menu.<br>
@@ -159,7 +159,7 @@ Follow the steps below to run services:
 
 === "Integrate Services in 3rd-Party-Tools"
 
-	1. Navigate to the  :yunio-nav-services: *Services* menu in the left side navigation of the Designer.
+	1. Navigate to the  :yunio-nav-services: *Services* menu at the left side navigation area of the Designer.
 	2. Click :yunio-copy: to copy or :yunio-download: to download the service definition for integration with 3rd-party-tools. <br>
 	
 	![yunIO-service](./assets/images/yunio/getting-started/yunio-services.png){:class="img-responsive"}

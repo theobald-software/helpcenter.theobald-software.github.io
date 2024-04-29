@@ -20,7 +20,7 @@ Connection to a message server (Load Balancing) | [Secure Network Communication 
 
 Follow the steps below to set up an SAP connection that uses an SAP username and password for authentication.
 
-1. Navigate to the  :yunio-nav-connections: *Connections* menu in the left side navigation of the Designer.
+1. Navigate to the  :yunio-nav-connections: *Connections* menu at the left side navigation area of the Designer.
 2. Click **[Add Connection]** to create a new SAP connection or click :yunio-edit-connection: to edit an existing SAP connection.<br>
 ![yunIO-Create-Connection](../../assets/images/yunio/web-ui.png){:class="img-responsive" }
 3. Enter the system details of your SAP system in the subsection [*System*](settings.md/#system) :number-1:.<br>
@@ -44,7 +44,7 @@ Follow the steps below to set up an SAP connection that uses SNC:
 
 1. Check the SAP profile parameter *snc/gssapi_lib* in SAP (transaction RZ10) to determine, which library is used for encryption in your SAP system. 
 Your SAP Basis has to import and configure the same library on the application server and on the machine that runs yunIO.
-1. Navigate to the :yunio-nav-connections: *Connections* menu in the left side navigation of the Designer.
+1. Navigate to the :yunio-nav-connections: *Connections* menu at the left side navigation area of the Designer.
 2. Click **[Add Connection]** to create a new SAP connection or click :yunio-edit-connection: to edit an existing SAP connection.<br>
 ![yunIO-Create-Connection](../../assets/images/yunio/web-ui.png){:class="img-responsive" }
 3. Enter the system details of your SAP system in the subsection *System*.

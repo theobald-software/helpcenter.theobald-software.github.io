@@ -10,7 +10,7 @@ This section shows how to test, integrate and pass parameters to services create
 
 Follow the steps below to pass parameters and testrun the service directly in yunIO:
 
-1. Navigate to the  :yunio-nav-services: *Services* menu in the left side navigation of the Designer.
+1. Navigate to the  :yunio-nav-services: *Services* menu at the left side navigation area of the Designer.
 2. Click :yunio-run: to open the *Run Service* menu of a service.<br>
 ![yunIO-Services](../assets/images/yunio/yunio-run-services1.png){:class="img-responsive" }
 2. If [Access Restrictions](./access-restrictions/index.md) are enabled, enter valid user credentials :number-1:. 
