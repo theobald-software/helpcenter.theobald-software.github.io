@@ -8,7 +8,7 @@ hide:
 
 <div class="grid cards" markdown>
 
--   ![img](site:assets/images/logos/theo-thumbs.png){ .lg .middle width="30px"} This page shows how to install and set up yunIO for the first time.
+-   ![img](site:assets/images/logos/theo-thumbs.png){ .lg .middle width="30px"} This section shows how to install and set up yunIO for the first time.
 
 </div>
 
