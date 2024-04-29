@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added extraction timestamp on response header upon runtime server error",
+        "Component": "General",
+        "Product": "Theobald.Server"
+    }
+]
