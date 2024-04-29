@@ -1,5 +1,13 @@
 [
     {
+        "Version": "6.4.6.0",
+        "LegacyReleaseDate": "2024-04-29 10:55:52Z"
+    },
+    {
+        "Version": "6.4.5.3",
+        "LegacyReleaseDate": "2024-04-29 00:00:00Z"
+    },
+    {
         "Version": "6.4.5.2",
         "LegacyReleaseDate": "2024-04-25 00:00:00Z"
     },
