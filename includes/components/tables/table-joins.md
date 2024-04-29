@@ -25,8 +25,8 @@ To use table join, the function module {% if page.meta.product == "yunio" %}[/TH
 
 The following example shows how to join the tables KNA1 and KNVV.
 
-1. [Create a new service](../../getting-started.md/#create-a-service) of type {{ table }} or click :yunio-edit: to edit an existing service.
-2. [Look up](tables-and-views.md/#look-up-an-sap-table-or-view) the first table or view for the join, e.g, KNA1.
+1. [Create a new service](../../getting-started.md/#create-a-service) of type {{ table }} or edit an existing service.
+2. [Look up](tables-and-views.md/#look-up-an-sap-table-or-view) the first table or view, e.g, KNA1.
 3. Click :where-clause-add: to add the additional tables for the join, e.g., KNVV :number-1:.<br>
 ![table-joins](../../assets/images/yunio/table-joins.png){:class="img-responsive"}
 4. Define the [output columns](#output-columns) you want to extract for both tables :number-2:.
