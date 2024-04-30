@@ -80,7 +80,8 @@ The ERPConnect*.dll is delivered with ERPConnect. The other DLLs can be download
 Copy the 64-bit version of librfc32.dll to the `\System32` folder. <br>
 Copy the 32-Bit Version of librfc32.dll to the `\SysWoW64` folder.
 
-!!! warning "Warning! ERPConnect.ERPException: Cannot access librfc32.dll."
+!!! warning  
+	**ERPConnect.ERPException: Cannot access librfc32.dll.**<br>
     To use ERPConnect in 64-Bit mode, you need a 64-Bit version of the SAP library **librfc32.dll**.
     Copy the 64-bit version of librfc32.dll to the direcory `C:\Windows\System32`.
     To use ERPConnect in 32-Bit mode, copy the 32-Bit version of the librfc32.dll to the directory `C:\Windows\SysWOW64`.
