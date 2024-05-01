@@ -78,7 +78,7 @@ Follow the steps below to create a simple service that extracts customer master 
 3. Click **[Search]** to display the tables found in the SAP system.
 4. Select KNA1 from the search results. The settings of the {{ component }} {{ table }} open automatically.
 5. Optional: Select the table columns you want to extract. By default all columns are extracted. 
-For more information on filter options and advanced settings, see [Documentation: Creating a Table Service](documentation/tables-and-views/tables-and-views.md/#next-steps).
+For more information on filter options and advanced settings, see [Documentation: Creating a Table Service](documentation/tables-and-views/create-a-table-service.md/#next-steps).
 6. Click **[Save]** to save the service.<br>
 
 ![yunIO-sample-service](./assets/images/yunio/getting-started/yunio-sample-service.gif){:class="img-responsive" style="border:1px solid black" }
@@ -130,11 +130,11 @@ Web services created with yunIO can be integrated into all cloud applications th
 
 -->
 
-### Run and Integrate Services
+### Run Services
 
 Follow the steps below to run services:
 
-=== "Testrun Services in the browser"
+=== ":material-web: Testrun Services in the browser"
 
 	1. Navigate to the :yunio-nav-services: *Services* menu at the left side navigation area of the Designer.
 	2. Click :yunio-copy: under *Service* to copy the service URL of a service.
@@ -142,11 +142,11 @@ Follow the steps below to run services:
 	4. Press **Enter** to trigger a service run. The response body of the service is displayed in the browser.
 	
 	!!! note
-		This approach only works with simple services that do not use parameters.
+		This approach only works with simple services that do not use input parameters.
 		For more information about running services and passing parameters, see [Documentation: Run Services](./documentation/run-services.md).
 
 
-=== "Testrun Services in yunIO"
+=== ":products-yunio: Testrun Services in yunIO"
 
 	1. Navigate to the :yunio-nav-services: *Services* menu at the left side navigation area of the Designer.
 	2. Click :yunio-run: to open the *Run Service* menu of a service.
@@ -155,17 +155,14 @@ Follow the steps below to run services:
 	
 	![yunIO-service](./assets/images/yunio/getting-started/yunio-run.gif){:class="img-responsive" style="border:1px solid black" }
 
-	For more information about running services and passing parameters, see [Documentation: Run Services](./documentation/run-services.md).
+For more information about running services and passing parameters, see [Documentation: Run Services](./documentation/run-services.md).
 
-=== "Integrate Services in 3rd-Party-Tools"
+### Integrate Services in 3rd-Party-Tools"
 
-	1. Navigate to the  :yunio-nav-services: *Services* menu at the left side navigation area of the Designer.
-	2. Click :yunio-copy: to copy or :yunio-download: to download the service definition for integration with 3rd-party-tools. <br>
+1. Navigate to the  :yunio-nav-services: *Services* menu at the left side navigation area of the Designer.
+2. Click :yunio-copy: to copy or :yunio-download: to download the service definition for integration with 3rd-party-tools. <br>
 	
-	![yunIO-service](./assets/images/yunio/getting-started/yunio-services.png){:class="img-responsive"}
-
-	For more information about integrating services and passing parameters, see [Documentation: Run Services](./documentation/run-services.md/#integrating-services-in-3rd-party-tools).
-
+![yunIO-service](./assets/images/yunio/getting-started/yunio-services.png){:class="img-responsive"}
 
 Web services created with yunIO can be integrated into all cloud applications that support REST API/Swagger (OpenAPI), e.g. Power Automate, Nintex, etc.
 {% include "yunio/3rd-party-integration.md" %}
