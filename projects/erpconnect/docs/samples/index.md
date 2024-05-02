@@ -20,6 +20,7 @@ hide:
 - [Create a Client PSE to connect to SAP Cloud Systems :material-alert-decagram:](create-personal-security-environment.md)
 - [Implement a connection pool](implement-a-connection-pool.md)
 - [Login to SAP with an SSO Logon Ticket](login-to-sap-with-an-sso-logonticket.md)
+- [Supported SAP S/4HANA Versions](supported-sap-and-hana-versions.md)
 - [Use ERPConnect in PowerShell](use-erpconnect-in-powershell.md)
 
 </div>

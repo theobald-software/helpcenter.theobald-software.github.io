@@ -4,7 +4,7 @@ description: SAP user rights, customization and installation of custom function 
 ---
 
 This section covers user rights and customization topics for the SAP Basis.<br>
-For information on [supported SAP systems](../setup-for-admins/requirements.md/#supported-sap-systems-and-releases) and other IT topics, see [Setup for Admins](../setup-for-admins/index.md).
+For information on [supported SAP systems](../setup/requirements.md/#supported-sap-systems-and-releases) and other IT topics, see [Setup for Admins](../setup/index.md).
 
 ### Popular Topics
 

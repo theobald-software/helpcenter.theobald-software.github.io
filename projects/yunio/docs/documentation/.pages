@@ -1,8 +1,8 @@
 nav:
-    - Introduction: introduction.md
     - About this Documentation: about-this-documentation.md
-    - Setup: setup-for-admins
-    - SAP Customizing: setup-in-sap
+    - Introduction: introduction.md
+    - Setup: setup
+    - Setup in SAP: setup-in-sap
     #- Designer/GUI: designer-gui.md
     - SAP Connection: sap-connection
     - Integrate Tables & Views: tables-and-views

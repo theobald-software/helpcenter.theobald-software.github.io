@@ -17,12 +17,12 @@ hide:
 
 1. [Download](https://theobald-software.com/en/download-trial/) a 30 days trial version of yunIO.
 2. Run the yunIO executable (yunIOSetup.exe) to install yunIO.
-For information on system requirements, see [Requirements](documentation/setup-for-admins/requirements.md).
+For information on system requirements, see [Requirements](documentation/setup/requirements.md).
 3. Make sure that the YunIO Service is running on your windows system and that the default port 8077 is not blocked by your firewall.<br>
-4. Open the yunIO Designer at `http://localhost:8077/` in a [web browser](documentation/setup-for-admins/requirements.md#supported-web-browsers) of your choice.<br>
+4. Open the yunIO Designer at `http://localhost:8077/` in a [web browser](documentation/setup/requirements.md#supported-web-browsers) of your choice.<br>
 If the yunIO service does not run on the same machine as the browser, replace `localhost` with the name or IP address of the host on which the service runs.
 
-For more information, see [Documentation: Installation](documentation/setup-for-admins/installation-and-update.md).
+For more information, see [Documentation: Installation](documentation/setup/installation-and-update.md).
 
 ### Connect to SAP
 
@@ -159,11 +159,12 @@ For more information about running services and passing parameters, see [Documen
 
 ### Integrate Services in 3rd-Party-Tools"
 
+Web services created with yunIO can be integrated into all cloud applications that support REST API/Swagger (OpenAPI), e.g. Power Automate, Nintex, etc.
+
 1. Navigate to the  :yunio-nav-services: *Services* menu at the left side navigation area of the Designer.
 2. Click :yunio-copy: to copy or :yunio-download: to download the service definition for integration with 3rd-party-tools. <br>
 	
 ![yunIO-service](./assets/images/yunio/getting-started/yunio-services.png){:class="img-responsive"}
 
-Web services created with yunIO can be integrated into all cloud applications that support REST API/Swagger (OpenAPI), e.g. Power Automate, Nintex, etc.
 {% include "yunio/3rd-party-integration.md" %}
 
