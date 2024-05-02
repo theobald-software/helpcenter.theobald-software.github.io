@@ -112,7 +112,7 @@ Use the future tense only when you need to emphasize that something will occur l
 |Instruction|Example|  
 |----------|-------------|
 |Use present tense and avoid “will/would future”. |:white_check_mark: Xtract Universal is installed along with a trial license. <br> :x: Xtract Universal *will* be installed along with a trial license.|
-|- |:white_check_mark:Both values are readable in the connection string. <br> :x: Both values would be readable in the connection string.|
+|- |:white_check_mark: Both values are readable in the connection string. <br> :x: Both values would be readable in the connection string.|
 |Avoid perfect (have done, had done etc.) and continuous (is doing, was doing).|:white_check_mark: Only changes from last transfer are extracted. <br> :x: Then, only the changes will be extracted which have been made since the last transfer. |
 
 ### Active Voice
@@ -140,8 +140,7 @@ Using second person “you” is recommended. Avoid using first person “we” 
 |Instruction|Example|  
 |----------|-------------|
 |Use you, avoid “we” or “I”, “our”, “us”|:white_check_mark: To avoid possible restrictions, install the Theobald Software custom function module for table extraction. <br> :x: In order to avoid possible restrictions with table extractions we recommend installation of our custom function module for table extraction. |
-|Use the noun and not a pronoun to avoid ambiguity and unclear sentences.|:white_check_mark: To create new columns, use the report column editor at the bottom of the window “XYZ” and the table in the section “Report columns”. The following parameters can be defined for the new columns: name, offset and length. <br> :x: Use the report column editor at the bottom and the table on the upper right to define new columns. A column is defined by its* name, offset and length. <br>
-*It could maybe also be understood as “report column editor”.|
+|Use the noun and not a pronoun to avoid ambiguity and unclear sentences.|:white_check_mark: To create new columns, use the report column editor at the bottom of the window “XYZ” and the table in the section “Report columns”. The following parameters can be defined for the new columns: name, offset and length. <br> :x: Use the report column editor at the bottom and the table on the upper right to define new columns. A column is defined by its* name, offset and length. <br> * It could maybe also be understood as “report column editor”.|
 |Avoid demonstrative pronouns such as "this", "these", "those" |:white_check_mark: Background processing is an obsolete function. Use the Z_XTRACT_IS_TABLE_COMPRESSION module instead. <br> :x: *This* function module is obsolete. Please use instead the function module Z_XTRACT_IS_TABLE_COMPRESSION. |
 |It is always better to state the noun. Where possible, put a noun after this or that for clarity. If doing so results in clunky text, rephrase the text. Generally, try thinking about what the noun would be. Avoid using possessive pronouns such as their, his, her etc. |:white_check_mark: Within the “Execute Function Activity Dialog” there are sections **IMPORTS**, **EXPORTS**, **TABLES**. The sections contain the input and the output parameters and the respective mappings. <br> :x: Below the name are the IMPORTS, EXPORTS, TABLES and Output parameters of the function module, with *their* mappings. |
 
@@ -172,5 +171,103 @@ When writing procedures, try to use the non-modal verb, when possible (e.g., <de
 ### Abbreviations and contractions
 Abbreviations include acronyms, initialisms, shortened words, and contractions. Some words have a long version and a short version: demonstration and demo, application and app etc.
 
+|Instruction|Example|  
+|----------|-------------|
+|Use known abbreviations. Known abbreviations are e.g., min/max, min (for minutes), PC etc. Avoid company’s own abbreviations.|:white_check_mark: Closing Alteryx Designer during the installation of Xtract for Alteryx ensures that all components are correctly displayed in your Alteryx Designer after the restart. <br>  :x: This procedure ensures that the *XfA* components are available and can be displayed in the Alteryx Designer.|
+|When shortening the words, be consistent.|:white_check_mark: Param. is always used for parameter. <br> :x: Para and param are both used for parameter.|
+|Use contractions “don’t”, “doesn’t”, “can’t”. Avoid contractions formed from nouns and verbs.|:white_check_mark: The browser is fast, simple, and secure<br> :x: The *browser’s* fast, simple, and secure.|
 
-||:white_check_mark: |
+### Cross-references
+Cross-references guide the user to additional information that helps him to understand the text or to perform the task.
+
+|Instruction|Example|  
+|----------|-------------|
+|Use meaningful link text. |:white_check_mark:Set the preferred security level with the property Quality Of Protection. For more information, see [Secure Network Communications (SNC)](https://help.sap.com/docs/SAP_NETWEAVER_701/6f3e0bea6c4b101484fcf5305b4d624b/e656f466e99a11d1a5b00000e835363f.html?version=7.01.22). <br> :x: The preferred security level can be set with the property Quality Of Protection. More details can be found here: http://help.sap.com/saphelp_nw70ehp1/helpdata/en/e6/56f466e99a11d1a5b00000e835363f/content.htm.|
+|Do not use full URLs, phrases such as “click this link”, “here”, “this chapter” etc.|:white_check_mark: To [disable the standard mode](https://help.qlik.com/en-US/sense/2.2/Subsystems/Hub/Content/LoadData/disable-standard-mode.htm), follow the steps described in the Qlik help.<br> :x: Do a search for ‘Disabling standard mode’ or check the following [link](https://help.qlik.com/en-US/sense/2.2/Subsystems/Hub/Content/LoadData/disable-standard-mode.htm).|
+|Give a short explanation, if the reason for the link is not obvious|:white_check_mark: See also the knowledge base article on [how to insert extraction events into the windows logs](#link).<br> :x: See also <br> [How to insert Xtract Universal Extraction Events into the windows logs and show them in the Event Viewer (English)](#link)|
+
+### Capitalization
+Make sure to use standard American capitalization and do not confuse it with German.
+
+|Example||  
+|----------|-------------|
+|:white_check_mark: |To set a filter, see the section “Datasource parameters”.|
+|:x:|To set a *Filter* see the section Datasource parameters.|
+
+Do not use capitalization to emphasize a word. Do not use all caps, only if it’s e.g., a name in GUI or a given name (e.g., 0D_MATERIAL).
+
+|Example||  
+|----------|-------------|
+|:white_check_mark: |Note: <br> For extractions created with an Xtract Universal version from February 2015 or earlier, check the flag legacy metadata retrieval in the extraction settings.|
+|:x:|**ATTENTION:** For extractions that were created with an Xtract Universal version from February 2015 or earlier, please check the flag Legacy metadata retrieval in the Extraction Settings.|
+
+Use capitalization in all types of lists and tables (contents, headings, labels, and captions).
+
+## Punctuation
+Punctuation means the use of special symbols that you add to writing to separate phrases and sentences to show that something is a question, etc. The most common punctuation marks in English are: capital letters and full stops, question marks, commas, colons and semi-colons, exclamation marks and quotation marks.
+
+### Text body – normal text
+#### Commas
+Use commas to separate items in series and use commas to separate certain kinds of clauses.
+When a conjunction (and, but, or, nor, for, so, or yet) separates two independent clauses (sentence within a sentence), insert a comma after the first clause (before the conjunction) unless both clauses are very short.
+
+|Example||  
+|----------|-------------|
+|:white_check_mark: |Values between 10,000 and 100,000 are useful, but only if the data volume is large enough.|
+|:x:|ERPConnect Services Runtime (ECSR) offers the following authentication options for the SAP connection, that are available while creating the ECS Service Application:|
+
+In general, put a comma before the word “which” at the start of a nonrestrictive clause, but don’t use any commas before “that”. Use a comma after “e.g.,”.
+#### Semicolons
+Use a semicolon between two closely related independent clauses that are too related for a full stop (period), but where a comma isn’t enough.
+
+|Example||  
+|----------|-------------|
+|:white_check_mark: |The URL from which a video ad loads; that is, the URL to use to fetch that video ad.|
+
+### Lists
+As in regular text, it is important to punctuate lists correctly. If the list is made up of phrases, capitalize the first word of each list item. Do not end each list item with a comma or full-stop (period).
+
+=== "List with items"
+
+	
+	<div class="result" markdown>
+
+    The new Skoda Fabia has the following benefits:
+
+	- Greater fuel efficiency
+    - Expanded head room
+    - Expanded rear leg room
+
+    When items are complete sentences, begin with a capital and end with a period.
+
+	</div>	
+
+=== "List with sentences"
+
+	
+	<div class="result" markdown>
+
+    The new Skoda Fabia has the following benefits:
+
+	- The fuel efficiency is greater.
+    - There is more head room.
+    - There is increased rear leg room.
+
+	List items are sometimes an initial phrase followed by a complete sentence. In that case, use capital letters and full stops (periods) for the phrases as well as the complete sentences.
+
+	</div>	
+
+
+### Numbers
+
+Use commas and decimal points in accordance with standard American number-formatting. Make sure not to confuse with the German number-formatting rules.
+
+|Example||  
+|----------|-------------|
+|:white_check_mark: |The limit is 1,532,784 bytes per day.|
+|:x:| The limit is 1.532.784 bytes per day.|
+
+## Standard Sentences
+- The window “XYZ name of the window” opens… e.g., The window “Settings” opens.
+- Click [OK] – not click on OK.
+- In this page, see section… - for linking within a document.

@@ -37,6 +37,7 @@ It is recommended to use the following example values when creating content for 
 #### Numbers
 
 5, 23, 42, 1337
+See also [Numbers](style-guide.md#numbers)
 
 #### Generic Strings
 
