@@ -1,5 +1,5 @@
 ---
-title: Setup for Admins
+title: Setup
 description: How to install yunIO, make backups, etc.
 ---
 

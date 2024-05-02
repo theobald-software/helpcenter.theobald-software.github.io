@@ -1,20 +1,21 @@
 
-To use Theobald Software products you need an SAP connection user with sufficient authorization in SAP. Authorizations are assigned via authorization objects in SAP. <br>
+To use {{ productName }} you need an SAP connection user with sufficient authorization in SAP. 
+Authorizations are assigned via authorization objects in SAP. 
+Redirect this page to your SAP Basis administrators to get the relevant authorization objects for your SAP connection user.  
 
 The authorizations in the section [General authorization objects](#general-authorization-objects) are required to establish an SAP connection with the SAP application server. 
-The required authorizations for each extraction type are listed in their respective section.  
+The required authorizations for each {{ component }} are listed in their respective section.  
 
-Redirect this article to your SAP Basis administrators to get the relevant authorization objects for your SAP connection user.  
 
 ### SAP Authorization Profiles
 
-Theobald Software collected and combined the necessary authorizations for all extraction types into corresponding SAP roles. <br>
+Theobald Software collected and combined the necessary authorizations for all {{ component }} into SAP roles. <br>
 You can download the SAP profiles and upload them to your SAP system:
 
 {% if page.meta.product == "erpconnect" %}
 {{ Component }}  | SAP Role File
 ------------ | -------------
-[General authorization objects](#general-authorization-objects) | [ZXTGENERAL.SAP](site:assets/files/sap_roles/ZXTGENERAL.SAP)
+[General Authorization Objects](#general-authorization-objects) | [ZXTGENERAL.SAP](site:assets/files/sap_roles/ZXTGENERAL.SAP)
 [BAPI](#bapi) | [ZXTBAPI.SAP](site:assets/files/sap_roles/ZXTBAPI.SAP)
 [BW Cube](#bw-cube--bw-query)|[ZXTQUERY.SAP](site:assets/files/sap_roles/ZXTQUERY.SAP) 
 [Query](#query)|[ZXTQUERY.SAP](site:assets/files/sap_roles/ZXTQUERY.SAP) 
@@ -24,7 +25,7 @@ You can download the SAP profiles and upload them to your SAP system:
 {% if page.meta.product == "yunio" %}
 {{ Component }}  | SAP Role File
 ------------ | -------------
-[General authorization objects](#general-authorization-objects) | [ZXTGENERAL.SAP](site:assets/files/sap_roles/ZXTGENERAL.SAP)
+[General Authorization Objects](#general-authorization-objects) | [ZXTGENERAL.SAP](site:assets/files/sap_roles/ZXTGENERAL.SAP)
 [BAPI](#bapi) | [ZXTBAPI.SAP](site:assets/files/sap_roles/ZXTBAPI.SAP)
 [Report](#report)|[ZXREPORT.SAP](site:assets/files/sap_roles/ZXREPORT.SAP)
 [Table](#table) | [ZXTABLE.SAP](site:assets/files/sap_roles/ZXTABLE.SAP) 
@@ -33,7 +34,7 @@ You can download the SAP profiles and upload them to your SAP system:
 {% if page.meta.product == "xtract-universal" or page.meta.product == "board-connector" or page.meta.product == "xtract-is"%}
 {{ Component }}  | SAP Role File
 ------------ | -------------
-[General authorization objects](#general-authorization-objects) | [ZXTGENERAL.SAP](site:assets/files/sap_roles/ZXTGENERAL.SAP)
+[General Authorization Objects](#general-authorization-objects) | [ZXTGENERAL.SAP](site:assets/files/sap_roles/ZXTGENERAL.SAP)
 [BAPI](#bapi) | [ZXTBAPI.SAP](site:assets/files/sap_roles/ZXTBAPI.SAP)
 [BW Cube](#bw-cube--bw-query)|[ZXTQUERY.SAP](../assets/files/sap_roles/ZXTQUERY.SAP) 
 [BW Hierarchy](#bw-hierarchy) |[ZXTBWHIERARCHY.SAP](site:assets/files/sap_roles/ZXTBWHIERARCHY.SAP)
@@ -49,7 +50,7 @@ You can download the SAP profiles and upload them to your SAP system:
 {% if page.meta.product == "xtract-for-alteryx" %}
 {{ Component }}  | SAP Role File
 ------------ | -------------
-[General authorization objects](#general-authorization-objects) | [ZXTGENERAL.SAP](site:assets/files/sap_roles/ZXTGENERAL.SAP)
+[General Authorization Objects](#general-authorization-objects) | [ZXTGENERAL.SAP](site:assets/files/sap_roles/ZXTGENERAL.SAP)
 [BAPI](#bapi) | [ZXTBAPI.SAP](site:assets/files/sap_roles/ZXTBAPI.SAP)
 [BW Cube](#bw-cube--bw-query)|[ZXTQUERY.SAP](site:assets/files/sap_roles/ZXTQUERY.SAP) 
 [BW Hierarchy](#bw-hierarchy) |[ZXTBWHIERARCHY.SAP](site:assets/files/sap_roles/ZXTBWHIERARCHY.SAP)
@@ -62,7 +63,7 @@ You can download the SAP profiles and upload them to your SAP system:
 !!! note
     If you still get an authorization error, ask SAP Basis to record an ST01-/ or SU53-authorization trace in SAP. This trace shows which authorizations objects are missing.
 
-### General authorization objects
+### General Authorization Objects
 The following authorization objects are required to establish a connection to SAP. 
 
 ``` title="Necessary SAP authorizations"

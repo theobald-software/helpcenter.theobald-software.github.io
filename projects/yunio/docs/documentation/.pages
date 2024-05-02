@@ -1,8 +1,7 @@
 nav:
-    - About this Documentation: about-this-documentation.md
     - Introduction: introduction.md
     - Setup: setup
-    - Setup in SAP: setup-in-sap
+    - SAP Customization: setup-in-sap
     #- Designer/GUI: designer-gui.md
     - SAP Connection: sap-connection
     - Integrate Tables & Views: tables-and-views
@@ -13,3 +12,4 @@ nav:
     - Access Restriction: access-restrictions
     - Server Settings: server-settings.md
     - Logs: logs.md
+    - About this Documentation: about-this-documentation.md

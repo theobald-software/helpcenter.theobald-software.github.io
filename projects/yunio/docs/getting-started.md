@@ -157,7 +157,7 @@ Follow the steps below to run services:
 
 For more information about running services and passing parameters, see [Documentation: Run Services](./documentation/run-services.md).
 
-### Integrate Services in 3rd-Party-Tools"
+### Integrate Services in 3rd-Party-Tools
 
 Web services created with yunIO can be integrated into all cloud applications that support REST API/Swagger (OpenAPI), e.g. Power Automate, Nintex, etc.
 
