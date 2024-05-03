@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed missing Theobald.Persistence.dll on designer-only installation",
+        "Component": "Designer",
+        "Product": "BoardConnector"
+    }
+]

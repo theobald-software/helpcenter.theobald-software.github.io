@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added support for setting installation directory for silent install",
+        "Component": "Setup",
+        "Product": "XtractIS"
+    }
+]

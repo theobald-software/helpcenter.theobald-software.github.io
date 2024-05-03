@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "Hierarchy lookup - fix for empty language",
+        "Component": "DeltaQ",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Performance improvements",
+        "Component": "DeltaQ",
+        "Product": "XtractKernel"
+    }
+]

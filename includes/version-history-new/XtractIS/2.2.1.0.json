@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Bugfix for RequestIDs that are provided within a variable for non-Repair-Requests",
+        "Component": "DeltaQ",
+        "Product": "XtractIS"
+    }
+]

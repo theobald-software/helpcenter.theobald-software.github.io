@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for using LoadIdocSchema() function with segment suffix of more than 3 characters (e.g. _001)",
+        "Component": "Idoc",
+        "Product": "ERPConnect"
+    }
+]

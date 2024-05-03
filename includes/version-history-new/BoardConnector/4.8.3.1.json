@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed a bug where metadata refresh would not work when more than one table was selected for extraction.",
+        "Component": "Table",
+        "Product": "Theobald.Extractors"
+    }
+]

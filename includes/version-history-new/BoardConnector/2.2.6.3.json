@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "Optimization for ReplaceSpecialCharacters()",
+        "Component": "General",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Bug fix for non-aggregated dimensions (dimension type 4)",
+        "Component": "BW Cube",
+        "Product": "XtractKernel"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for manually created structures with alignment gaps",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "Fixed a bug where the xu.exe cli tool got confused by an ambiguous 'WWW-Authenticate' header from the server. Fixed an error which could occur during database destination clean up procedures and hide another original error.",
+        "Component": "Server",
+        "Product": "XtractUniversal"
+    },
+    {
+        "Message": "Fixed the value of the 'WWW-Authenticate' header for the extraction run endpoint.",
+        "Component": "General",
+        "Product": "Theobald.Server"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for Tableau on 32-bit systems",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

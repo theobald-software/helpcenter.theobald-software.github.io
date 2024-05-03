@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for displaying list runtime parameters, which affected source and destination parameters on run window",
+        "Component": "Designer",
+        "Product": "XtractUniversal"
+    }
+]

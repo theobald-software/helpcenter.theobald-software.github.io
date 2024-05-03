@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for structure elements type decimal with more than 11 decimals digits (index must not be zero length exception)",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

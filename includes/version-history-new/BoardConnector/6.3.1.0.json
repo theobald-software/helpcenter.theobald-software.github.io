@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Add support for S4H cloud systems",
+        "Component": "BAPI",
+        "Product": "BoardConnector"
+    }
+]

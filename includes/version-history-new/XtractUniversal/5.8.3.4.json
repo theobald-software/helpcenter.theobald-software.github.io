@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed a bug where the CsvLineReader would return lines multiple times if the buffer is small enough.",
+        "Component": "General",
+        "Product": "Common"
+    }
+]

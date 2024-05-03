@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added support for all BMP Unicode Characters in Table Type Import/Export Parameters",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

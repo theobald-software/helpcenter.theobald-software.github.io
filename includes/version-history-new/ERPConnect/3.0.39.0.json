@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "RFCServer.Ping() established to force the component to check, if the RFCServer is available",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

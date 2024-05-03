@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixes for unknown server functions  (bug introduced in 6.3.0)",
+        "Component": "RFCServer",
+        "Product": "ERPConnect"
+    }
+]

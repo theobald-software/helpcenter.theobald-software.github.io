@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for BAPI, BWCube (Bex Mode), Hierarchy, OHS, Query (Specified cast is not valid)",
+        "Component": "Server",
+        "Product": "BoardConnector"
+    }
+]

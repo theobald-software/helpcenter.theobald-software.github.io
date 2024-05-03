@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "Added support for alternative BAPI for reading tables",
+        "Component": "Hierarchy",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Made DataTableMetadata.TableName writable, fixed typos \"Paramter\"",
+        "Component": "General",
+        "Product": "XtractKernel"
+    }
+]

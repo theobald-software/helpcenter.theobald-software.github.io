@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added metadata retrieval via HTTP for Table & DeltaQ",
+        "Component": "Server",
+        "Product": "BoardConnector"
+    }
+]

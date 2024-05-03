@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added support for VS 2022 for SSRS/Power BI Report Server Plugin",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

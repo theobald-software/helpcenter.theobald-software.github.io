@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added possibility to signal success/failure of result processing after run",
+        "Component": "General",
+        "Product": "Theobald.Extractors"
+    }
+]

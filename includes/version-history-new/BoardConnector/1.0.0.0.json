@@ -1,0 +1,9 @@
+[
+    {
+        "Message": "BOARD Connector first public release",
+        "Component": "General",
+        "Product": "BoardConnector",
+        "IsBreaking": true,
+        "IsCritical": true
+    }
+]

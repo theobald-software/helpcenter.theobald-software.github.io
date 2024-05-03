@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "It's now possible to define primary key columns for automatic incremental updates in all push destinations",
+        "Component": "DeltaQ",
+        "Product": "XtractUniversal"
+    }
+]

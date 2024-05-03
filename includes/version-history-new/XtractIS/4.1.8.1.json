@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for automatic column detection",
+        "Component": "Report",
+        "Product": "XtractKernel"
+    }
+]

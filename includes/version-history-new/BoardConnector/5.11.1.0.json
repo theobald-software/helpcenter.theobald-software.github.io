@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "Fix a bug where empty lists in column transformation information would not correctly be serialized to JSON.",
+        "Component": "General",
+        "Product": "BoardConnector"
+    },
+    {
+        "Message": "Method for JSON serialization of empty array",
+        "Component": "General",
+        "Product": "Common"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed a bug where the new runtime would use the wrong extraction method for BAPI extractions.",
+        "Component": "General",
+        "Product": "Theobald.Server"
+    }
+]

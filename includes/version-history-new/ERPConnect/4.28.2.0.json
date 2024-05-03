@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added UnicodeAdjustment flag to VS2013 ERP context file  to support different unicode SAP systems (UC/NonUC) with one auto-generated context class.",
+        "Component": "LINQtoERP",
+        "Product": "ERPConnect"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Finalization statement is skipped now in case of errors",
+        "Component": "Server",
+        "Product": "XtractUniversal"
+    }
+]

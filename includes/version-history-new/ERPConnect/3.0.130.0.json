@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for logon data that contains a ; character in the UserName property",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

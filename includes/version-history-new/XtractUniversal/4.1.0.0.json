@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Removed Power BI Service Destination (has been replaced by Power BI Connector Destination)",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

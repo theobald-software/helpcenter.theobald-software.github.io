@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Updated LINQtoSAP to support .NET4.5+",
+        "Component": "LINQtoERP",
+        "Product": "ERPConnect"
+    }
+]

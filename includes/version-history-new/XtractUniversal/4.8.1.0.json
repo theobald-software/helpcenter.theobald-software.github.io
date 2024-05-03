@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added default destination 'http-json'",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

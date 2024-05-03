@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Support for new OLAP BAPIs (see SAP note 1232751). The feature can be switched on in the settings dialog.",
+        "Component": "BW Cube",
+        "Product": "XtractIS"
+    }
+]

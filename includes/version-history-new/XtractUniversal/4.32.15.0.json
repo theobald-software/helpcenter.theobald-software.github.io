@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed a Bug in the SSRS Plugins for the Power BI Report Server (and VS). When the connection was configured to use the identity of the user viewing the report, the credentials of the Report Server (or VS) process were used instead. This caused the HTTPS/Kerberos authentication against XU to fail.",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

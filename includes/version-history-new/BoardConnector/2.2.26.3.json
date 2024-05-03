@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "Disabled .NET Code in WHERE clause",
+        "Component": "Table",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Improvement for Dispatcher Service",
+        "Component": "DeltaQ",
+        "Product": "XtractKernel"
+    }
+]

@@ -1,5 +1,6 @@
 |Version|Date    |Component   |Description|
 |:-----:|:------:|:----------:|:----------|
+|1.20.6 [L]|2024-03-25|Designer|Added refresh metadata functionality in the Table tool.|
 |1.20.5 [L]|2023-09-28|Designer|Enable f1 hotkey to link window specific online help entry.|
 |1.20.4 [M]|2023-09-27|General|Fixed a bug that caused errors on the Alteryx Server when DCM connections were used (Bug introduced in 1.20.3)|
 |1.20.3 [M]|2023-09-13|Designer|Improved error handling for Alteryx DCM integration|
@@ -18,7 +19,7 @@
 |1.17.3 [L]|2023-03-23|General|The setup can now be run without admin privileges to install for user-only Alteryx instances|
 |1.17.2 [L]|2023-03-06|General|New EULA|
 |1.17.1 [L]|2023-02-23|BW Cube|Added refresh metadata button and fixed an issue where some property texts may not be displayed in MDX extractions created with Xtract for Alteryx versions older than 1.15.0.|
-|[1.17.0 [L]](https://kb.theobald-software.com/release-notes/XtractForAlteryx-1.17.0.html)|2023-01-04|Hierarchy|Improved Hierarchy Extractor. Now full support for Links, Intervals, and all variants of time dependent Hierarchy structure. Performance tested for Hierarchies with up to 1 million rows.([Release note](https://kb.theobald-software.com/release-notes/XtractForAlteryx-1.17.0.html))|
+|[1.17.0 [L]](https://helpcenter.theobald-software.com/release-notes/XtractForAlteryx-1.17.0)|2023-01-04|Hierarchy|Improved Hierarchy Extractor. Now full support for Links, Intervals, and all variants of time dependent Hierarchy structure. Performance tested for Hierarchies with up to 1 million rows.([Release note](https://helpcenter.theobald-software.com/release-notes/XtractForAlteryx-1.17.0))|
 |1.16.6 [L]|2022-11-16|General|Switched default RFC library to NWRFC|
 |1.16.5 [L]|2022-09-26|Table|added support for function modules /BODS/RFC_STREAM_READ_TABLE and /SAPDS/RFC_STREAM_READ_TABLE|
 |1.16.4 [L]|2022-05-30|BW Cube|Support for Only_Structures behavior in MDX BEx Queries. Various bug fixes and general improvements for the Cube component.|
@@ -32,7 +33,7 @@
 |1.14.1 [L]|2022-03-25|General|Added upload check script in order to confirm if the setup file has the expected version|
 |1.14.0 [M]|2022-02-17|BAPI|General Availability (end of beta)|
 |1.13.1 [M]|2021-11-17|BAPI|Fix for data types when using workflow tables as input|
-|[1.13.0 [L]](https://kb.theobald-software.com/release-notes/XtractForAlteryx-1.13.0.html)|2021-09-24|BW Cube|Updated cube component adding BICS extraction mode.([Release note](https://kb.theobald-software.com/release-notes/XtractForAlteryx-1.13.0.html))|
+|[1.13.0 [L]](https://helpcenter.theobald-software.com/release-notes/XtractForAlteryx-1.13.0)|2021-09-24|BW Cube|Updated cube component adding BICS extraction mode.([Release note](https://helpcenter.theobald-software.com/release-notes/XtractForAlteryx-1.13.0))|
 |1.12.3 [L]|2021-04-06|ODP|Added HierarchyName property to allow parameterization|
 |1.12.2 [L]|2021-04-01|Setup|Fix for message displaying when no Alteryx installation is found during setup|
 |1.12.1 [M]|2021-03-04|General|Fixed a bug where message dialogs would not show properly.|
@@ -46,15 +47,15 @@
 |1.9.2 [L]|2020-05-14|General|Fix for name validation in edit connection window.|
 |1.9.1 [M]|2020-02-05|Designer|Fixes for showing error messages while retrieving available Table function modules (e. g. missing authorizations for ENLFDIR)|
 |1.9.0 [M]|2020-02-04|General|Updated to .NET Framework 4.7.2|
-|[1.8.0 [M]](https://kb.theobald-software.com/release-notes/XtractForAlteryx-1.8.0.html)|2020-01-28|BAPI|Input and output improvements([Release note](https://kb.theobald-software.com/release-notes/XtractForAlteryx-1.8.0.html))|
+|[1.8.0 [M]](https://helpcenter.theobald-software.com/release-notes/XtractForAlteryx-1.8.0)|2020-01-28|BAPI|Input and output improvements([Release note](https://helpcenter.theobald-software.com/release-notes/XtractForAlteryx-1.8.0))|
 |1.7.9 [L]|2020-01-22|Setup|Improvement for uninstalling script|
-|[1.7.8 [M]](https://kb.theobald-software.com/release-notes/XtractForAlteryx-1.7.8.html)|2019-12-03|ODP|Several fixes (Bugs introduced in 1.7.6.1)([Release note](https://kb.theobald-software.com/release-notes/XtractForAlteryx-1.7.8.html))|
+|[1.7.8 [M]](https://helpcenter.theobald-software.com/release-notes/XtractForAlteryx-1.7.8)|2019-12-03|ODP|Several fixes (Bugs introduced in 1.7.6.1)([Release note](https://helpcenter.theobald-software.com/release-notes/XtractForAlteryx-1.7.8))|
 |1.7.7 [L]|2019-11-22|General|Removed unnecessary call to RFC_PING during connection test|
 |1.7.6 [L]|2019-11-06|Setup|Improvements for the uninstalling script|
 |1.7.5 [L]|2019-11-04|ODP|Selections can now be parameterized |
-|[1.7.4 [M]](https://kb.theobald-software.com/release-notes/XtractForAlteryx-1.7.4.html)|2019-10-23|General|Fixed the preview GUI. Removed the broken alias functionality from table tool([Release note](https://kb.theobald-software.com/release-notes/XtractForAlteryx-1.7.4.html))|
+|[1.7.4 [M]](https://helpcenter.theobald-software.com/release-notes/XtractForAlteryx-1.7.4)|2019-10-23|General|Fixed the preview GUI. Removed the broken alias functionality from table tool([Release note](https://helpcenter.theobald-software.com/release-notes/XtractForAlteryx-1.7.4))|
 |1.7.3 [L]|2019-10-15|BAPI|The tool can now accept incoming connections which can be mapped to table parameters (beta)|
-|[1.7.2 [L]](https://kb.theobald-software.com/release-notes/XtractForAlteryx-1.7.2.html)|2019-09-27|BW Cube|Improvements to cube dimension property naming.([Release note](https://kb.theobald-software.com/release-notes/XtractForAlteryx-1.7.2.html))|
+|[1.7.2 [L]](https://helpcenter.theobald-software.com/release-notes/XtractForAlteryx-1.7.2)|2019-09-27|BW Cube|Improvements to cube dimension property naming.([Release note](https://helpcenter.theobald-software.com/release-notes/XtractForAlteryx-1.7.2))|
 |1.7.1 [L]|2019-09-24|General|Updated TheobaldExtractors to version 1.10.4|
 |1.7.0 [L]|2019-09-20|BAPI|Added BAPI tool (beta)|
 |1.6.0 [L]|2019-09-11|Hierarchy|Added hierarchy tool (beta).|
@@ -80,7 +81,7 @@
 |1.1.0 [M]|2019-05-08|General|Updated to .NET Framework 4.7.1|
 |1.0.2 [M]|2019-05-06|General|Fix for NetWeaver RFC|
 |1.0.1 [M]|2019-04-23|Table|Fix for function module dropdown not showing available modules|
-|[1.0.0 [M]](https://kb.theobald-software.com/release-notes/XtractForAlteryx-1.0.0.html)|2019-04-10|General|General Availibility (end of beta)([Release note](https://kb.theobald-software.com/release-notes/XtractForAlteryx-1.0.0.html))|
+|[1.0.0 [M]](https://helpcenter.theobald-software.com/release-notes/XtractForAlteryx-1.0.0)|2019-04-10|General|General Availibility (end of beta)([Release note](https://helpcenter.theobald-software.com/release-notes/XtractForAlteryx-1.0.0))|
 |0.0.14 [L]|2019-03-21|Designer|Fixed license check.|
 |0.0.13 [L]|2019-01-29|BW Cube|Fixed an error in cube filter serialization.|
 |0.0.12 [L]|2019-01-29|General|Fixed an issue that may have caused errors when using snc authentication.|

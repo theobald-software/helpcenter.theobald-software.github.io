@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "File CSV & Alteryx: Fix for InvalidCast while reading from buffer",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

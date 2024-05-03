@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed a bug that caused the connection manager to not be saved when multiple XTRACT connection managers exist",
+        "Component": "General",
+        "Product": "XtractIS"
+    }
+]

@@ -1,0 +1,8 @@
+[
+    {
+        "Message": "Updated Z_THEO_READ_TABLE to version 2.14",
+        "Component": "Table",
+        "Product": "Theobald.Extractors",
+        "ReleaseNote": "*Changes in Z_THEO_READ_TABLE:*\n-  Changed how the run time is calculated. This prevents overflow when high timeout values are used."
+    }
+]

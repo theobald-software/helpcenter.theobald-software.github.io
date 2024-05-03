@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Bugfix for non-remote-enabled functions that doesn't consist of correct meta data (e.g. AIPA_READ_VALUES_SINGLE). Exception: TABLE_NOT_ACTIVE",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

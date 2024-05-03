@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "IDOC_NOT_SAVED was thrown when using IDoc.SendAndWait() with ECC 6.0 / Unicode",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

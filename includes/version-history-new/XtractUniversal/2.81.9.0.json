@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Increased default for ListenerThreads to 8",
+        "Component": "Server",
+        "Product": "XtractUniversal"
+    }
+]

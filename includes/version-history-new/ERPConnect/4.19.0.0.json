@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added XML tracing for SOAP connections",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added support for unknown dimensions in BWCube (dimension type 0)",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

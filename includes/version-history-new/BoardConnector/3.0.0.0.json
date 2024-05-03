@@ -1,0 +1,9 @@
+[
+    {
+        "Message": "Improvements for network communication, security and configuration persistence",
+        "Component": "General",
+        "Product": "BoardConnector",
+        "IsBreaking": true,
+        "ReleaseNote": "# BOARD Connector 3.0\n\nThis release includes major changes related to the communication between BOARD Connector Server and BOARD Connector Designer / BOARD. Transport security and access control has been improved. The file format and folder structure for persisting extractions, sources, logs, etc. has undergone major changes as well.\nThe server uses multiple proceses now instead of one, which makes it more robust and improves parallelization.\n\n## Communication with BOARD Connector Designer \n\n* Transport security has been improved - Kerberos and TLS 1.1/1.2 are supported now\n* Active Directory single-sign on is supported\n* Active Directory logon uses Kerberos instead of LDAP (breaking change)\n\n## Communication with BOARD\n\n* TCP keep-alives avoid connection timeouts with long quiet periods and BOARD cloud instances\n* X.509 certificate can be set directly in BOARD Connector\n* HTTP access restrictions are no longer available - please use Windows firewall or other firewall solutions to implement these rules\n\n## Access Control\n\n* Individual server permission for custom users\n* Individual read/write permission for extractions and sources\n* Support for Active Directory groups (breaking change: AD users can no longer be member of an custom user group)\n\n## Files/Folders/Persistence\n\nThe config directory uses a new structure for files and folders. Existing configurations (extractions, sources, etc.) can be converted to the new format during setup, or manually by running ConfigConverter.exe from the program directory.\n"
+    }
+]

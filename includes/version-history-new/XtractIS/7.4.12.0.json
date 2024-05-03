@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed a bug that prevented the extractor from being notified about successful processing of result table",
+        "Component": "TableCDC",
+        "Product": "XtractIS"
+    }
+]

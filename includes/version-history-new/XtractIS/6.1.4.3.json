@@ -1,0 +1,8 @@
+[
+    {
+        "Message": "RemoveControlCharacters() accidentally removed everything except ASCII since version 2.2.1",
+        "Component": "General",
+        "Product": "Common",
+        "IsCritical": true
+    }
+]

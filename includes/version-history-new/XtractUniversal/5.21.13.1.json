@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix a bug where the HTTP server would not attach CORS headers on failed authentication attempts.\nRework the handling of parameters in the new runtime.",
+        "Component": "General",
+        "Product": "Theobald.Server"
+    }
+]

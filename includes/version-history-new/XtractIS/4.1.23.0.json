@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for VS2017",
+        "Component": "Setup",
+        "Product": "XtractIS"
+    }
+]

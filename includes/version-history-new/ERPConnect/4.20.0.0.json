@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "If SNC is enabled and a password is provided, logon via SNC without SSO is performed (NWRFC only)",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    }
+]

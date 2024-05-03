@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "R3Connection closes connection to SAP when disposed/finalized",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

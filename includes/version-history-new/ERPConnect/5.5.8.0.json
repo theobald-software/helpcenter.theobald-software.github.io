@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Removed Newtonsoft.Json license file",
+        "Component": "Setup",
+        "Product": "ERPConnect"
+    }
+]

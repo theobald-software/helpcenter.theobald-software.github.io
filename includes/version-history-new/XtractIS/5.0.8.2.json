@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Improved exception handling and logging in case of errors",
+        "Component": "ODP",
+        "Product": "Theobald.Extractors"
+    }
+]

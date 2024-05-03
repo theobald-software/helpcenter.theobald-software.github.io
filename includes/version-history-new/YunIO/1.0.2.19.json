@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Updated Z_THEO_READ_TABLE to version 2.11. Background job timeout can now be set manually in extraction settings.",
+        "Component": "Table",
+        "Product": "Theobald.Extractors"
+    }
+]

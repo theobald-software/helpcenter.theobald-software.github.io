@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for Azure Blob & S3 Destination (Could not load System.Net.Http)",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

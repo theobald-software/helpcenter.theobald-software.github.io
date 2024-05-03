@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed a bug causing an error on no fields being selected when editing a table extraction.",
+        "Component": "Designer",
+        "Product": "XtractUniversal"
+    }
+]

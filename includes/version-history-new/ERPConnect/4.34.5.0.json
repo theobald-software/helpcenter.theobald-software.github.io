@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for sending NUMC, DATS, TIMS to non-Unicode systems",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

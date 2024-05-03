@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "Fixed an issue where the configuration server would send inconsistent data upon reading extraction runs if the user does not have access to the extraction.",
+        "Component": "Server",
+        "Product": "XtractUniversal"
+    },
+    {
+        "Message": "Fixed an issue where the configuration server would send inconsistent data upon reading extraction runs if the user does not have access to the extraction",
+        "Component": "General",
+        "Product": "Theobald.Server"
+    }
+]

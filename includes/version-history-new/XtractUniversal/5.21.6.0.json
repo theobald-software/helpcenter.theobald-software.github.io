@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "GCS-Destination with file split: Aborting extraction deletes all uploaded parts.",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

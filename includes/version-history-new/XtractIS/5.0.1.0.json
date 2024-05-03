@@ -1,0 +1,13 @@
+[
+    {
+        "Message": "Fixed a bug that caused extractions to fail and possible data loss in the SSIS pipeline (only affects the ODP component)",
+        "Component": "ODP",
+        "Product": "XtractIS",
+        "IsCritical": true
+    },
+    {
+        "Message": "Fixed a bug that caused merged hierarchy extractions to fail with IndexOutOfRange",
+        "Component": "ODP",
+        "Product": "Theobald.Extractors"
+    }
+]

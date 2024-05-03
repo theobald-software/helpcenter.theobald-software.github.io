@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added BWVariable.UID property which contains the internal BW identifier for a variable",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

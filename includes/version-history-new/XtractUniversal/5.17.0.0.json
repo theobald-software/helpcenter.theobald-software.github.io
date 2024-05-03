@@ -1,0 +1,8 @@
+[
+    {
+        "Message": "Internal changes for extraction-specific file destination settings (config conversion required)",
+        "Component": "Destinations",
+        "Product": "XtractUniversal",
+        "ReleaseNote": "ConfigConverter needs to be run for extraction-specific settings of the following destination types:\n* Amazon S3\n* Azure Storage\n* Google Cloud Storage\n* Hadoop\n* Flat File CSV\n* Flat File JSON"
+    }
+]

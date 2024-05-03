@@ -1,0 +1,27 @@
+[
+    {
+        "Message": "Updated to .NET Framework 4.7.2",
+        "Component": "General",
+        "Product": "XtractUniversal"
+    },
+    {
+        "Message": "Updated to .NET Framework 4.7.2",
+        "Component": "WPF",
+        "Product": "Common"
+    },
+    {
+        "Message": "Updated to .NET Framework 4.7.2",
+        "Component": "General",
+        "Product": "Theobald.Extractors"
+    },
+    {
+        "Message": "Added support for multiple output tables",
+        "Component": "BAPI",
+        "Product": "Theobald.Extractors"
+    },
+    {
+        "Message": "Updated to .NET Framework 4.7.2",
+        "Component": "General",
+        "Product": "XtractKernel"
+    }
+]

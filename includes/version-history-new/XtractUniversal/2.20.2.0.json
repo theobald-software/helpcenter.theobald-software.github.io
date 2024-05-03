@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Disabled connection pooling in Teradata to make sure all volatile tables are deleted",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

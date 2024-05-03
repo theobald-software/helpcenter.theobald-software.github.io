@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Bugfix when filling the RequestID for a Repair run through a variable",
+        "Component": "DeltaQ",
+        "Product": "XtractIS"
+    }
+]

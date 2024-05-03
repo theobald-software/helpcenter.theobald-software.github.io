@@ -1,0 +1,37 @@
+[
+    {
+        "Message": "Correction for crashing DeltaQDispatcher Service (e.g. 0MATERIAL_TEXT)",
+        "Component": "DeltaQ",
+        "Product": "XtractIS"
+    },
+    {
+        "Message": "Bug fix for persisting RFCServerFunction objects with INT2 data types",
+        "Component": "RFCServer",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Added support for X.509 client certificates (classic RFC, NW RFC)",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Fix for integer/float export parameters and big endian systems (classic RFC)",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Updated to 4.23.0.5",
+        "Component": "ERPConnect",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Correction for column naming in case of using description texts for naming with multiple columns with the same description",
+        "Component": "BW Cube",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Updated to 4.22.17.0",
+        "Component": "ERPConnect",
+        "Product": "XtractKernel"
+    }
+]

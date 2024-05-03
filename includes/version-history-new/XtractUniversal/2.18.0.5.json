@@ -1,0 +1,22 @@
+[
+    {
+        "Message": "R3Connection.UseGui works with NW RFC SDK now",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Correction for ReadTable class when using PrimaryKeyPackaging",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "R3Connection.UserName and R3Connection.Password are no longer ignored if SNC is used",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Fix for metadate issue when using DeltaQ hierarchies in natural representation",
+        "Component": "DeltaQ",
+        "Product": "XtractKernel"
+    }
+]

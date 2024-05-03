@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Existing extractions were broken, if the type of their assigned destination had changed to HTTP - CSV",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

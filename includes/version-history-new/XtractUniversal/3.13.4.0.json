@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added a warning to the log, when bulk operations are disabled",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

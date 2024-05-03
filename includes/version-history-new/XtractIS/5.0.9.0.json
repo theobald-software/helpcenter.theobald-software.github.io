@@ -1,0 +1,28 @@
+[
+    {
+        "Message": "Added recovery mode",
+        "Component": "ODP",
+        "Product": "XtractIS",
+        "ReleaseNote": "The update mode can be set using the `UpdateMode` property of the ODP Component. It supports parameterization and expressions."
+    },
+    {
+        "Message": "Added support for recovering the previous delta run ",
+        "Component": "ODP",
+        "Product": "Theobald.Extractors"
+    },
+    {
+        "Message": "Added UI to enable conversion routines",
+        "Component": "Table",
+        "Product": "Theobald.Extractors"
+    },
+    {
+        "Message": "Updated to 1.6.0.0",
+        "Component": "Theobald.Extractors",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Updated to 1.5.10.0",
+        "Component": "Theobald.Extractors",
+        "Product": "XtractKernel"
+    }
+]

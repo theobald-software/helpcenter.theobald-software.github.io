@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Cube config converter: improved logging of warnings and fix for failing conversion of extractions created in Xtract Universal 2.46.0 or lower.",
+        "Component": "BW Cube",
+        "Product": "XtractUniversal"
+    }
+]

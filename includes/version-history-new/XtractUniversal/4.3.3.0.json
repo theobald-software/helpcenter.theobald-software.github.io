@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Azure Storage destination now allows splitting the output into multiple CSV files.",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

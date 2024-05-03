@@ -1,0 +1,22 @@
+[
+    {
+        "Message": "Fix for missing registration in transaction SMQS",
+        "Component": "DeltaQ",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Fix for auto-sync",
+        "Component": "DeltaQ",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Fixes & improvements for parallel extractions",
+        "Component": "DeltaQ",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Compression feature: Fix for parallel extractions on shared connection",
+        "Component": "Table",
+        "Product": "XtractKernel"
+    }
+]

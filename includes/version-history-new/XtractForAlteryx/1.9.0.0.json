@@ -1,0 +1,17 @@
+[
+    {
+        "Message": "Updated to .NET Framework 4.7.2",
+        "Component": "General",
+        "Product": "XtractForAlteryx"
+    },
+    {
+        "Message": "Updated to .NET Framework 4.7.2",
+        "Component": "WPF",
+        "Product": "Common"
+    },
+    {
+        "Message": "Updated to .NET Framework 4.7.2",
+        "Component": "General",
+        "Product": "Theobald.Extractors"
+    }
+]

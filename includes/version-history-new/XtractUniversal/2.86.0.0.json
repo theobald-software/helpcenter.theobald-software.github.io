@@ -1,0 +1,17 @@
+[
+    {
+        "Message": "Added support for export parameters & multiple tables in result",
+        "Component": "BAPI",
+        "Product": "XtractUniversal"
+    },
+    {
+        "Message": "Added support for multiple tables/exports in result",
+        "Component": "BAPI",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Added support for export parameters in result",
+        "Component": "BAPI",
+        "Product": "XtractKernel"
+    }
+]

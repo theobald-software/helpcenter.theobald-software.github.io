@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Timeout message with DeltaQ processes, that are processed extremely fast by SAP",
+        "Component": "DeltaQ",
+        "Product": "XtractIS"
+    }
+]

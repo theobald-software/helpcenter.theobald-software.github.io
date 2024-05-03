@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "16-Bit character code points are now correctly displayed in JSON strings",
+        "Component": "General",
+        "Product": "Common"
+    }
+]

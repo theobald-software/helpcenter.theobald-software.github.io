@@ -1,0 +1,23 @@
+[
+    {
+        "Message": "New runtime.",
+        "Component": "Runtime",
+        "Product": "YunIO",
+        "ReleaseNote": "# yunIO 1.8\n- yunIO now uses the new runtime, since it already supports the yunIO feature set.\n- No new features are introduced by that at the moment.\n- Errors from the SAP system when processing the request should now be reported to the caller more clearly."
+    },
+    {
+        "Message": "Introduced ILog interface to reduce coupling with specific log implementations.",
+        "Component": "General",
+        "Product": "Common"
+    },
+    {
+        "Message": "The extractors now use the new ILog interface. The BAPIExtractor now can take a callback being called when the data has arrived from the SAP system.",
+        "Component": "General",
+        "Product": "Theobald.Extractors"
+    },
+    {
+        "Message": "A new runtime was implemented. It provides only a subset of the current runtime but will grow its feature set in the near future.\nVarious modules use the new ILog interface.",
+        "Component": "General",
+        "Product": "Theobald.Server"
+    }
+]

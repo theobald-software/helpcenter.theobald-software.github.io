@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "SQLServer / AzureDWH: Set command timeouts to 4h",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "S3 destination now allows to save the files to folders and subfolders inside buckets.",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

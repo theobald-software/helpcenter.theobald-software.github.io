@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed an issue where the service would not start and quit with an error in case of missing designer files instead of fixing them.",
+        "Component": "Theobald.Server",
+        "Product": "YunIO"
+    }
+]

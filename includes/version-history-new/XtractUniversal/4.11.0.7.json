@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added ReadDecimal, ReadDouble, ReadInt64 to JsonReader. Fixed double in JsonWriter",
+        "Component": "General",
+        "Product": "Common"
+    }
+]

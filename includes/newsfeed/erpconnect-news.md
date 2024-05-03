@@ -1,11 +1,11 @@
 <div class="grid cards" markdown>
 
 
--   **Welcome to the new HelpCenter!**
+-   **Welcome to the ERPConnect HelpCenter**
 
     ---
 
-    Looking for something?<br> Try the search bar, our new Theo chatbot  or browse our [documentation](documentation/introduction/index.md).
+    Looking for something? <br>Try the search bar, our new Theo chatbot or browse our [documentation](documentation/introduction/index.md).
 
     ---
 

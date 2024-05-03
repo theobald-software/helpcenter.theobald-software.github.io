@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for error handling / ABAP exceptions (NW)",
+        "Component": "RFCServer",
+        "Product": "ERPConnect"
+    }
+]

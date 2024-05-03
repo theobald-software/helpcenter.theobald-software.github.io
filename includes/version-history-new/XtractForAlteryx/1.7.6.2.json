@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "Improvements for the uninstalling script",
+        "Component": "Setup",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Fix for 99h error during lookup",
+        "Component": "Table",
+        "Product": "Theobald.Extractors"
+    }
+]

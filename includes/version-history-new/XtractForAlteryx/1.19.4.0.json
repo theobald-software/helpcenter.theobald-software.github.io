@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "Runtime parameters of type list can now be used for (NOT) IN operators in the where builder",
+        "Component": "Table",
+        "Product": "XtractForAlteryx"
+    },
+    {
+        "Message": "Added support for list parameters ",
+        "Component": "Table",
+        "Product": "Theobald.Extractors"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "	INT4 columns on very old SAP system caused a crash due to hexadecimal formatting",
+        "Component": "Table",
+        "Product": "XtractIS"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Report variant combobox is not editable anymore. Instead, the selected variant can be cleared with a button.",
+        "Component": "Report",
+        "Product": "Theobald.Extractors"
+    }
+]

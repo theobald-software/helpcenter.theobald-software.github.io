@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for missing Messages resource in ERPConnect40.dll",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

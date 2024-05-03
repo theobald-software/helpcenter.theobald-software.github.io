@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed a bug that causes errors in subsequent tools when copying Xtract tools and using the old Alteryx engine",
+        "Component": "General",
+        "Product": "XtractForAlteryx"
+    }
+]

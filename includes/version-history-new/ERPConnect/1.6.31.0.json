@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Idoc.SaveToXML and Idoc.LoadFromXML now support TextReader / TextWriter objects not only file names",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

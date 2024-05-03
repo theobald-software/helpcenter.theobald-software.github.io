@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "The Designer users privilege level is now correctly fetched from the server.",
+        "Component": "Designer",
+        "Product": "XtractUniversal"
+    },
+    {
+        "Message": "A Rpc client can now request its current privilege level.",
+        "Component": "General",
+        "Product": "Theobald.Server"
+    }
+]

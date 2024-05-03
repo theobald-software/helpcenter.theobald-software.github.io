@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added new feature for manual slicing/filtering dimensions in an OLAP extraction",
+        "Component": "BW Cube",
+        "Product": "XtractUniversal"
+    }
+]

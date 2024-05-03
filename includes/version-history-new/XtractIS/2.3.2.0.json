@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Correction for type conversion for table columns with type INT1",
+        "Component": "Table",
+        "Product": "XtractIS"
+    }
+]

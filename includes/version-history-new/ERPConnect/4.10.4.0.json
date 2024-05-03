@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for MDX statements that result in non-unique column names",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

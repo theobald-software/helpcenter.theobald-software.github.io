@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Source settings: Fix for checkboxes in Plain/Ticket Issuer tab getting unticked",
+        "Component": "Designer",
+        "Product": "XtractUniversal"
+    }
+]

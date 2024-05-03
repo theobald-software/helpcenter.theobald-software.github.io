@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added support for HTTP HEAD requests",
+        "Component": "Server",
+        "Product": "XtractUniversal"
+    }
+]

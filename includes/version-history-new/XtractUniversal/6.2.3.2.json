@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Improved error handling in log table creation step",
+        "Component": "TableCDC",
+        "Product": "Theobald.Extractors"
+    }
+]

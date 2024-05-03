@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added new query extractor",
+        "Component": "Query",
+        "Product": "Theobald.Extractors"
+    }
+]

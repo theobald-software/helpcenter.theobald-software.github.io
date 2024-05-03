@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Stack Overflow Int32 bei Baustein PO_CREATE_PO2 wegen beschissen vieler Nachkommastellen",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

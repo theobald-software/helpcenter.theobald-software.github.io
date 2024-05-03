@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed CodeAnalysis for hana destination",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Catch SocketException during shutdown",
+        "Component": "General",
+        "Product": "Theobald.Server"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Variables for GatewayHost, GatewayService and ProgramID are now supported",
+        "Component": "Query",
+        "Product": "XtractIS"
+    }
+]

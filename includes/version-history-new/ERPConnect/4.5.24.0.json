@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "New property MDXExecuter.MaxRows introduced to be used to limit the number of rows",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

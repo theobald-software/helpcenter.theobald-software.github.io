@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed a bug where tables with built-in types were not created correctly using R3Connection.CreateFunction",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    }
+]

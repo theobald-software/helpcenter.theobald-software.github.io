@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Readded former Snowflake Azure regions to keep backward compatibility",
+        "Component": "Designer",
+        "Product": "XtractUniversal"
+    }
+]

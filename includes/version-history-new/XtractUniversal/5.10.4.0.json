@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Azure Storage destination: fixed a bug where connection to Azure didn't work. (Bug introduced in 5.9.4)",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for missing primary key when order of output columns is modified",
+        "Component": "BW Cube",
+        "Product": "XtractUniversal"
+    }
+]

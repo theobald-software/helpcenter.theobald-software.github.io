@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Support input runtime parameters of type Flag",
+        "Component": "BAPI",
+        "Product": "Theobald.Extractors"
+    }
+]

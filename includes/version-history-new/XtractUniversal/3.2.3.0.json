@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Explicitly enabled TLS1.1 & 1.2, disabled TLS1.0 & SSL3",
+        "Component": "Security",
+        "Product": "XtractUniversal"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added URL parameter \"logonTicket\" for SAP authentication via logon tickets",
+        "Component": "Security",
+        "Product": "XtractUniversal"
+    }
+]

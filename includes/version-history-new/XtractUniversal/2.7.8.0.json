@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added default values for invalid source data (Oracle)",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

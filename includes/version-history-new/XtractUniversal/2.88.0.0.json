@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Queued data packages are dropped now in case of errors",
+        "Component": "Server",
+        "Product": "XtractUniversal"
+    }
+]

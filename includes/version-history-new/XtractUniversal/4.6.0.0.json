@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixes & improvements for result cache. Result cache is restricted to pull destinations now.",
+        "Component": "Server",
+        "Product": "XtractUniversal"
+    }
+]

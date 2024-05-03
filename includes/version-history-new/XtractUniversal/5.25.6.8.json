@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed handling of extractions with empty result sets.",
+        "Component": "General",
+        "Product": "Theobald.Server"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added Azure Blob Storage destination",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

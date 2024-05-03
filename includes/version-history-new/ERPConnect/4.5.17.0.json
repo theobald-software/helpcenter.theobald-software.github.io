@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for R3Connection.Ping() and ERPDataContext.Dispose()",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

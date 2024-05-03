@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for using variables in low/high values of the selection table",
+        "Component": "Query",
+        "Product": "XtractUniversal"
+    }
+]

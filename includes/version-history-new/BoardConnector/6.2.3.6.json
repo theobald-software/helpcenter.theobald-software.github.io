@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added the option on FilterTextBox to handle multiple entries separated by whitespace",
+        "Component": "General",
+        "Product": "Theobald.Extractors"
+    }
+]

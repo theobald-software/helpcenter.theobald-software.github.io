@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for server not accepting any connections after 99h runtime",
+        "Component": "Server",
+        "Product": "BoardConnector"
+    }
+]

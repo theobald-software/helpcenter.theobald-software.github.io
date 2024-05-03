@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed a bug where custom parameters in the finalization step in snowflake destinations would not be evaluated.\nThe columns in the Designer's main view now allow more flexibility when resizing.\nThe run window does not show an error anymore when trying to abort an extraction, which just finished.",
+        "Component": "General",
+        "Product": "XtractUniversal"
+    }
+]

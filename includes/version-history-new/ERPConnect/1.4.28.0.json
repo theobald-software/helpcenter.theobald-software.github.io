@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Initial-Werte bei NUMC in Strukturen werden fälschlicherweise mit Leerzeichen initialisiert, Vorschlagswerte bei skalaren NUMC-Parametern wurden nicht beachtet",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

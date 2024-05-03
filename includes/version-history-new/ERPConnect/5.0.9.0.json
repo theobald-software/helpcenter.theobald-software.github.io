@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Classic RFC: Improved error message for failures while waiting for function results",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    }
+]

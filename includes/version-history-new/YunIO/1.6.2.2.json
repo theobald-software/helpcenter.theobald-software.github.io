@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "JSON serialization for date/time",
+        "Component": "General",
+        "Product": "Common"
+    },
+    {
+        "Message": "Added IResultTables for value conversion",
+        "Component": "General",
+        "Product": "Theobald.Extractors"
+    }
+]

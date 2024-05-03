@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for *RFC_READ_TABLE2 variants with custom names",
+        "Component": "Table",
+        "Product": "Theobald.Extractors"
+    }
+]

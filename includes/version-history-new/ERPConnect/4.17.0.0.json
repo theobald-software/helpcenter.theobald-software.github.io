@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added support for connection strings (NW RFC)",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    }
+]

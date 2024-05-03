@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Bugfix for BWCube class when using properties with special characters in the caption value while persisting the object to XML (SaveToXML method)",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

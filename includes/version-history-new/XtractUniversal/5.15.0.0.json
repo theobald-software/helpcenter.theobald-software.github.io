@@ -1,0 +1,13 @@
+[
+    {
+        "Message": "Added column mapping feature, enabled for the file csv and Tableau destinations",
+        "Component": "General",
+        "Product": "XtractUniversal",
+        "ReleaseNote": "**Xtract Universal 5.15.0**\n\nAdded the column mapping feature, which allows the columns of one extraction to be mapped according to an existing file or some other entity.\nInitially this feature is enabled for the file csv and Tableau destinations."
+    },
+    {
+        "Message": "Added column mapping feature",
+        "Component": "General",
+        "Product": "Theobald.Extractors"
+    }
+]

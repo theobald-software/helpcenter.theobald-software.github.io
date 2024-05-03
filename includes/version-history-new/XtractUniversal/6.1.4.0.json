@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "Slightly refactored some DeltaQ windows",
+        "Component": "DeltaQ",
+        "Product": "XtractUniversal"
+    },
+    {
+        "Message": "Slightly refactored the DeltaQ extractor",
+        "Component": "DeltaQ",
+        "Product": "Theobald.Extractors"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "ConfigConverter renames old destinations containing space or @-symbol",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Bugfix for multi-nested structures in the Imports collection, that contain only one single element within the structure",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

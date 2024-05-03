@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Oracle: Fix for binary types larger than 1000 bytes (BLOB, e. g. table STXL), updated ODP.NET to 12.2",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

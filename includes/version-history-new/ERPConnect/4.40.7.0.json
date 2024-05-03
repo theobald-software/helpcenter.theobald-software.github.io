@@ -1,0 +1,8 @@
+[
+    {
+        "Message": "Classic: Errors during execution are no longer ignored (bug introduced in 4.40.1.0)",
+        "Component": "RFC Client",
+        "Product": "ERPConnect",
+        "IsCritical": true
+    }
+]

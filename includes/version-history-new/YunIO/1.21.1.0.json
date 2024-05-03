@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed download behavior for OpenApi/Swagger files. Fixed internal server error when requesting the servers version information.",
+        "Component": "Theobald.Server",
+        "Product": "YunIO"
+    }
+]

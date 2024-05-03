@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "In case of 0 records the IncomingPackage event was fired twice accidently when using the ReadTable class",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

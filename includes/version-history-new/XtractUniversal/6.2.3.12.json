@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Log table key field number and maintenance level is now set explicitly. Fixed a bug where fallback logic would not work if system language is set to 'D'.",
+        "Component": "TableCDC",
+        "Product": "Theobald.Extractors"
+    }
+]

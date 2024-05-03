@@ -1,0 +1,17 @@
+[
+    {
+        "Message": "Improved exception handling",
+        "Component": "RFCServer",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Server pool: improved error handling",
+        "Component": "DeltaQ",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Updated to 5.0.12.0",
+        "Component": "ERPConnect",
+        "Product": "XtractKernel"
+    }
+]

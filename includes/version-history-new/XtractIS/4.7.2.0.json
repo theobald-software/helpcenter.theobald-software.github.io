@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "Fix for type & length of SSTRING columns",
+        "Component": "Table",
+        "Product": "XtractIS"
+    },
+    {
+        "Message": "Fix for SSTRING length",
+        "Component": "General",
+        "Product": "XtractKernel"
+    }
+]

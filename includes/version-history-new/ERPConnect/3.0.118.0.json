@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Data type XSTRING does not lead to exceptions anymore when using the pocket dll (ERPConnectPocket20.dll)",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

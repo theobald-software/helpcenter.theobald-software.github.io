@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed an issue that caused the component to get stuck when using pipeline inputs inside of loops",
+        "Component": "BAPI",
+        "Product": "XtractIS"
+    }
+]

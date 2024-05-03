@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Extractors that implement the complex parameter interface must also implement scalar parameter interface",
+        "Component": "General",
+        "Product": "Theobald.Extractors"
+    }
+]

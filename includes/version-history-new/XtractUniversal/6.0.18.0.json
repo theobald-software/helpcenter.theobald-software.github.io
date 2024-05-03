@@ -1,0 +1,17 @@
+[
+    {
+        "Message": "Enable destination settings to link their entry in the online help when pressing f1.",
+        "Component": "Designer",
+        "Product": "XtractUniversal"
+    },
+    {
+        "Message": "Added a hotkey window",
+        "Component": "WPF",
+        "Product": "Common"
+    },
+    {
+        "Message": "Enable f1 help hotkey for extraction windows. These link to the online help entry.",
+        "Component": "General",
+        "Product": "Theobald.Extractors"
+    }
+]

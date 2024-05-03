@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Option \"Require SAP credentials\" implicitly disables result cache now",
+        "Component": "Security",
+        "Product": "XtractUniversal"
+    }
+]

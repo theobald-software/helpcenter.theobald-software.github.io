@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix when using a variable to fill InternalXML property",
+        "Component": "DeltaQ",
+        "Product": "XtractIS"
+    }
+]

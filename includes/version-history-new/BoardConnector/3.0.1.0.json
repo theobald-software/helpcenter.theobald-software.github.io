@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added support for warnings to Log Viewer",
+        "Component": "Designer",
+        "Product": "BoardConnector"
+    }
+]

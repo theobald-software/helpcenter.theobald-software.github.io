@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for names starting with numbers in Table Types",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

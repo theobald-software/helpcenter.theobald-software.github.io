@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "Log RFC server registration errors to extraction log",
+        "Component": "DeltaQ",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Aborting extraction if errors occur while sending request IDoc",
+        "Component": "DeltaQ",
+        "Product": "XtractKernel"
+    }
+]

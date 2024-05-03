@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "Added report tool (beta)",
+        "Component": "Report",
+        "Product": "XtractForAlteryx"
+    },
+    {
+        "Message": "Added report component",
+        "Component": "Report",
+        "Product": "Theobald.Extractors"
+    }
+]

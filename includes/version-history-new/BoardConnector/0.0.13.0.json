@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Bugfix for URL parameter 'requestid'. The parameter did not override the original value correctly",
+        "Component": "DeltaQ",
+        "Product": "BoardConnector"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "BICS: Added safeguards against truncated CHAR / NUMC characteristic values",
+        "Component": "BW Cube",
+        "Product": "Theobald.Extractors"
+    }
+]

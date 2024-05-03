@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Property AutoCloseConnection added to the LINQ context class, which can be used to avoid automatic closing of the SAP connection",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

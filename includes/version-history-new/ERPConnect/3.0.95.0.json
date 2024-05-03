@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for LINQ to SAP: Using the LINQ dialogs under XP with Silver Theme caused strange behaviour",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

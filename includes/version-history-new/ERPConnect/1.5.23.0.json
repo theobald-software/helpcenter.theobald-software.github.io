@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "FIX: SystemLockException geworfen, wenn in nicht-Multithreading-Umgebungen eine Exception im FuBa aufgeteten ist",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

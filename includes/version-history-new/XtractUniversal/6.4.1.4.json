@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed a visual bug where when scrolling the selection screen some parameters would have values from other parameters displayed. Fixed a bug where double clicking the 'Load Preview' button would cause an error.",
+        "Component": "Report",
+        "Product": "Theobald.Extractors"
+    }
+]

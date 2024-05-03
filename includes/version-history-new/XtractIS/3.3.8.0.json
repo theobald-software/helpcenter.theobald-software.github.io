@@ -1,0 +1,22 @@
+[
+    {
+        "Message": "Backward-compatibility for DATS as strings with type conversion enabled (cMORE/Connect)",
+        "Component": "DeltaQ",
+        "Product": "XtractIS"
+    },
+    {
+        "Message": "Fix for missing registration in transaction SMQS",
+        "Component": "DeltaQ",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Fix for auto-sync",
+        "Component": "DeltaQ",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Fixes & improvements for parallel extractions",
+        "Component": "DeltaQ",
+        "Product": "XtractKernel"
+    }
+]

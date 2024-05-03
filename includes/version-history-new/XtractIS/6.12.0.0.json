@@ -1,0 +1,8 @@
+[
+    {
+        "Message": "Fixed two issues related to parameterization when upgrading from versions before 6.10.0",
+        "Component": "BAPI",
+        "Product": "XtractIS",
+        "ReleaseNote": "# Xtract IS 6.12.0\n\nFixed a bug that caused\n- parameters inside of table rows to be treated as plain text\n- parameters inside of loops to not be updated correctly"
+    }
+]

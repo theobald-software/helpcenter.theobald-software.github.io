@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Workaround for OData consumer timeouts (e. g. Power Query)",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

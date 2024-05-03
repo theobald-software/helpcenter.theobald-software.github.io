@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added http-csv, http-odata-atom and http-xml as default destinations",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

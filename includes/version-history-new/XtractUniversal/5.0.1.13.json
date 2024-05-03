@@ -1,0 +1,8 @@
+[
+    {
+        "Message": "Added new web server implementation",
+        "Component": "General",
+        "Product": "Theobald.Server",
+        "IsBreaking": true
+    }
+]

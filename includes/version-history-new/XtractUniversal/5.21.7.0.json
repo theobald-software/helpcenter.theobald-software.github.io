@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Removed \"Support Client\" from Help menus. Added extraction type (Cube, Table, ...) being executed in extraction and server logs",
+        "Component": "General",
+        "Product": "XtractUniversal"
+    }
+]

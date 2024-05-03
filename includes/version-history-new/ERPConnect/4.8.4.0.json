@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for InternalException event (was not fired in some cases since 4.7.1)",
+        "Component": "RFCServer",
+        "Product": "ERPConnect"
+    }
+]

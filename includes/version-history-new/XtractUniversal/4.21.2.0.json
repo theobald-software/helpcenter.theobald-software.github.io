@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added new AWS regions to S3 destination.",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

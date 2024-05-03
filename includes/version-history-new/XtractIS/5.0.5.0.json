@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed a bug that caused the preview to fail when SSIS parameters were used in the where clause",
+        "Component": "Table",
+        "Product": "XtractIS"
+    }
+]

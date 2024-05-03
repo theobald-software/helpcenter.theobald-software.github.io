@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "In case of extraction errors, Oracle Destination was sometimes left in a locked state (ORA-00054)",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

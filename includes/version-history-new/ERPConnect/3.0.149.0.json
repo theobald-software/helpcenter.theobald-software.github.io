@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Improved checking and error message if ERPConnect is used without a proper librfc32.dll",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

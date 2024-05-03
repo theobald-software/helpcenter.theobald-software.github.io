@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Removed Z_XTRACT_DELTAQ_CUST from transport request, because of problems with missing data types",
+        "Component": "DeltaQ",
+        "Product": "XtractUniversal"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for Snowflake settings serialization",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

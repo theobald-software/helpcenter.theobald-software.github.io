@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Oracle: Disabled connection pooling to make sure no inactive sessions are left behind",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for HTTP - JSON destination",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

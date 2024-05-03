@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed a bug where an exception that occurred while calling a client function could be replaced by a NullReferenceException",
+        "Component": "NWRFC",
+        "Product": "ERPConnect"
+    }
+]

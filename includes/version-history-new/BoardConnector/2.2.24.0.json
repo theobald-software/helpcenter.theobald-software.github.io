@@ -1,0 +1,27 @@
+[
+    {
+        "Message": "Logged on user is automatically added to the list of allowed users/groups if he activates access restriction for an extraction",
+        "Component": "Security",
+        "Product": "BoardConnector"
+    },
+    {
+        "Message": "Changed DataTableMetadata constructor to use IList instead of IColllection",
+        "Component": "General",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Correction for misformated PERIO field like in CE1* tables when using compression",
+        "Component": "Table",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Added IsPrimaryKey to ColumnMetaData",
+        "Component": "General",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Added support for alternative BAPI for reading tables",
+        "Component": "Hierarchy",
+        "Product": "XtractKernel"
+    }
+]

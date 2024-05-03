@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Moved GuiFunctions.cs to XtractKernel.WinForms",
+        "Component": "Designer",
+        "Product": "BoardConnector"
+    }
+]

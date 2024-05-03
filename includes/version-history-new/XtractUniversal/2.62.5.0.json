@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Workaround for PowerPivot 2010 bug (no HTTP compression while retrieving service document)",
+        "Component": "Server",
+        "Product": "XtractUniversal"
+    }
+]

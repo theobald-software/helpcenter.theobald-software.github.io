@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added TraceLevel property to R3Connection",
+        "Component": "NWRFC",
+        "Product": "ERPConnect"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed a bug where extractions could not be aborted in the run dialog when using windows AD authentication",
+        "Component": "Designer",
+        "Product": "XtractUniversal"
+    }
+]

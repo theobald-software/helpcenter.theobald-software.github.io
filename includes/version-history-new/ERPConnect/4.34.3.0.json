@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for deadlock by incoming RFC server calls during tRFC client call (NW)",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

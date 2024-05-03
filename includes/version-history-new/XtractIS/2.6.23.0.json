@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Correction for length value for DEC data types. The length was calculated too short in some cases which lead to lost sign.",
+        "Component": "DeltaQ",
+        "Product": "XtractIS"
+    }
+]

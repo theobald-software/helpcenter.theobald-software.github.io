@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added support for runtime parameters",
+        "Component": "Query",
+        "Product": "Theobald.Extractors"
+    }
+]

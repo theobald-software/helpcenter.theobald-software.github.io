@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Parquet: Added option to not replace some special characters in column names when using Spark compatibility mode",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

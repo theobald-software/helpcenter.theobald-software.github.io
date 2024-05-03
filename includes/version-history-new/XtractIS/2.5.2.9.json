@@ -1,0 +1,37 @@
+[
+    {
+        "Message": "Bug fix when executing MDX and using two properties of different dimensions with the same name",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Fix for deserialization of empty XSTRINGs (RFCFunction.LoadFromXML(), R3Connection.CacheMetadata)",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "If SNC is enabled and a password is provided, logon via SNC without SSO is performed (NWRFC only)",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Obsolete method ERPException.GetObjectData() withdrawn",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "SOAP requests are compressed with gzip if they exceed 8192 bytes, Accept-Encoding: gzip is sent",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "SOAP request/response logs are written to R3Connection.LogDir now instead of working directory",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Added XML tracing for SOAP connections",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    }
+]

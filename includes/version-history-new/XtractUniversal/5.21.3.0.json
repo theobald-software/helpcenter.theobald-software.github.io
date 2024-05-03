@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Azure Storage: Added option to specify custom name for manifest file. Data will be placed in a separate folder that has the same name as the entity name.",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

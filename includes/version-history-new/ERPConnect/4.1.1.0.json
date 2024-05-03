@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added RowSkip and RowCount display to LINQ logging (ERPTable)",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

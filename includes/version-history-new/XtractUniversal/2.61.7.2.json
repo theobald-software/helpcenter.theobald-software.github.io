@@ -1,0 +1,22 @@
+[
+    {
+        "Message": "Correction for handling certain BCD datatypes which were calculated too small (e.g. LIPS-UEBTO)",
+        "Component": "General",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Fixed bug in table lookup form",
+        "Component": "Table",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Fixed bug in table filterbox to allow deleting text input.",
+        "Component": "TQB",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Added setter for isABAPStringFormat of DataTableMetaData",
+        "Component": "General",
+        "Product": "XtractKernel"
+    }
+]

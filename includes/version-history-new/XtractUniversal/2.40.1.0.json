@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed default time format (CSV, XML)",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

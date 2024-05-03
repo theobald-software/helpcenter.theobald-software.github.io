@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Introduced NoAuthorityException, improved error messages",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

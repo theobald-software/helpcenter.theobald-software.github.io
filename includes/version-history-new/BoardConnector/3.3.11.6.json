@@ -1,0 +1,17 @@
+[
+    {
+        "Message": "Fixed a bug where the number of max connections was determined incorrectly on little endian systems",
+        "Component": "DeltaQ",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Improved function module detection for Z_THEO_READ_TABLE",
+        "Component": "Table",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Fixed a bug that caused hex strings with uneven length to be parsed incorrectly",
+        "Component": "General",
+        "Product": "XtractKernel"
+    }
+]

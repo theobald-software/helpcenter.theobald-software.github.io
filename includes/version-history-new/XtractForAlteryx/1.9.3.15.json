@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Removed LINQ to ERP support for Visual Studio 2010",
+        "Component": "LINQtoERP",
+        "Product": "ERPConnect"
+    }
+]

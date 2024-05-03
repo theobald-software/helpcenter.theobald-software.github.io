@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "ProcessChain and DestinationName in OHS component can now be set through SSIS variable",
+        "Component": "OHS",
+        "Product": "XtractIS"
+    }
+]

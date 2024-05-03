@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Reverted C++ service project to VS2013 (build fails on build server)",
+        "Component": "Service",
+        "Product": "XtractUniversal"
+    }
+]

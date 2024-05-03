@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed a bug that caused log table creation to fail when \".INCLUDE\" structures were part of primary keys in source table.",
+        "Component": "TableCDC",
+        "Product": "Theobald.Extractors"
+    }
+]

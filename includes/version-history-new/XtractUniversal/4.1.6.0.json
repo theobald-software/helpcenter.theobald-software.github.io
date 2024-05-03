@@ -1,0 +1,13 @@
+[
+    {
+        "Message": "Fixes for column names of database destinations and improved XSTRING support.",
+        "Component": "Destinations",
+        "Product": "XtractUniversal",
+        "ReleaseNote": "# Xtract Universal 4.1.6\n\n## Table Destinations\n- Improved support for XSTRING.\n\n## Bug fixes\n- Fixed a bug where column name styles were not applied in table destinations.\n- Fixed a bug where table column names might be out of the range of allowed identifiers for some database destinations."
+    },
+    {
+        "Message": "Adjustments for column name conversion of result columns",
+        "Component": "General",
+        "Product": "Theobald.Extractors"
+    }
+]

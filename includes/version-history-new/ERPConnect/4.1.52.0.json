@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "R3Connection.LogDir is also used for RFC traces now",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

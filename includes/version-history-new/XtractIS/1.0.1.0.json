@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix: Table component crashed on 64 bit windows when using package sizes greater ",
+        "Component": "Table",
+        "Product": "XtractIS"
+    }
+]

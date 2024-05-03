@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed a bug where updating multiple destinations would not update the last selected destination (introduced in 4.0.0) and improved destination settings UI",
+        "Component": "Designer",
+        "Product": "XtractUniversal"
+    }
+]

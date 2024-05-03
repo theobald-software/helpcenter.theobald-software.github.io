@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed a bug where WebSocket RFC properties would not be cloned when calling R3Connection.Clone",
+        "Component": "NWRFC",
+        "Product": "ERPConnect"
+    }
+]

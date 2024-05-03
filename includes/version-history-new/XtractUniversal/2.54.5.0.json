@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed OData service document for /OData.svc/ URLs",
+        "Component": "Server",
+        "Product": "XtractUniversal"
+    }
+]

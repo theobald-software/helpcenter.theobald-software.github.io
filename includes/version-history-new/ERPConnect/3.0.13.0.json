@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Bugfix: System Exception with ReadTable.RetrieveAllFieldsOfTable() function under rel. 4.6c",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "New BWCube look-up",
+        "Component": "BW Cube",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Bug fix for serialisation info when using DeltaQ in a push destination",
+        "Component": "DeltaQ",
+        "Product": "XtractKernel"
+    }
+]

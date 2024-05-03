@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for SAP EBCDIC code page 0700",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

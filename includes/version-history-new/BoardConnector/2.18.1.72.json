@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for Json arrays in writer",
+        "Component": "JSON",
+        "Product": "XtractKernel"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "MDX mode: invalid measure values 'X' are now written to the output as NULL.",
+        "Component": "BW Cube",
+        "Product": "Theobald.Extractors"
+    }
+]

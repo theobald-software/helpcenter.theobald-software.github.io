@@ -1,0 +1,32 @@
+[
+    {
+        "Message": "Correction and fix for customers who have not yet implemented SAP note 1273946",
+        "Component": "OHS",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Added WriteJSON to LogEntry",
+        "Component": "General",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Added Read IJSONSerializable arrays and some unit tests",
+        "Component": "JSON",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "JsonReader and Writer are able now to read/ write String and Int Arrays",
+        "Component": "JSON",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "IJsonSerializable ReadJson returns now bool.  ",
+        "Component": "JSON",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Added WriteName method to JsonWriter",
+        "Component": "BAPI",
+        "Product": "XtractKernel"
+    }
+]

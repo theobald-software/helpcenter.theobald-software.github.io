@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed an issue where data would not be properly extracted when using STREAM_READ_TABLE function modules in combination with some SAP code pages.",
+        "Component": "Table",
+        "Product": "Theobald.Extractors"
+    }
+]

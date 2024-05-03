@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for installing old DLL licenses",
+        "Component": "License Manager",
+        "Product": "XtractIS"
+    }
+]

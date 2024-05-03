@@ -1,0 +1,13 @@
+[
+    {
+        "Message": "Added an icon indicating whether a table field is indexed. Number of rows can now be counted (only with Z_THEO_READ_TABLE) or estimated (using other function modules) in the editor GUI.",
+        "Component": "Table",
+        "Product": "Theobald.Extractors",
+        "ReleaseNote": "### Indexed table fields\n- This function displays an icon indicating whether the field is indexed and the sort direction (ascending/descending).\n\n\n### Counting / Estimating number of rows\n- When using **Z_THEO_READ_TABLE** the result rows will be counted using a real query. This means, the resulting row count respects current *joins* and the *where clause*.\n- Other function modules will use the function module **EM_GET_NUMBER_OF_ENTRIES** to get the maximum number of available rows.\n\n### Required persmissions\nThose two new features require following permissions on the SAP system\n- **Indexed fields**: Read from table **DD17S**\n- **Estimate row count (other than *Z_THEO_READ_TABLE*)**: Execute function module **EM_GET_NUMBER_OF_ENTRIES**"
+    },
+    {
+        "Message": "Updated Z_THEO_READ_TABLE to version 2.1",
+        "Component": "Table",
+        "Product": "Theobald.Extractors"
+    }
+]

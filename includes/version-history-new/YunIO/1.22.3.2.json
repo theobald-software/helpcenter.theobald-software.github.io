@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "Ported the DeltaQ component from XtractKernel with new UI",
+        "Component": "DeltaQ",
+        "Product": "Theobald.Extractors"
+    },
+    {
+        "Message": "The maximum allowed value for the log table size limit has been raised to 200.000 entries.",
+        "Component": "TableCDC",
+        "Product": "Theobald.Extractors"
+    }
+]

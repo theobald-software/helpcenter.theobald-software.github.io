@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixes for OLTP timestamps",
+        "Component": "DeltaQ",
+        "Product": "XtractKernel"
+    }
+]

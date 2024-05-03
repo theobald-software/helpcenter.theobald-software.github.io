@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added HTTP/CSV API for destinations",
+        "Component": "Server",
+        "Product": "XtractUniversal"
+    }
+]

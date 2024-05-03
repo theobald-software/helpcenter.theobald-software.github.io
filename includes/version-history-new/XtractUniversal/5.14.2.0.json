@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed an error that caused parquet to always use the column name style Code",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

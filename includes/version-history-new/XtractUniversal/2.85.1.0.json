@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Removed client, mshost, r3name, group, ashost, sysnr, ashost connection parameters",
+        "Component": "General",
+        "Product": "XtractUniversal"
+    }
+]

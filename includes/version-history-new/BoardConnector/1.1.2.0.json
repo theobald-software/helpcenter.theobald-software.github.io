@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Timeout value can be adjusted manually in the DeltaQ settings dialog",
+        "Component": "DeltaQ",
+        "Product": "BoardConnector"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "R3Connection.GetSSOTicket() and R3Connection.OpenSSO() are now supported for use with NW RFC library",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    }
+]

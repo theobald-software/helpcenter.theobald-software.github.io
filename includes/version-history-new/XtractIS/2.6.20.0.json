@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added new property MDXVariable to provide a SSIS variable's name to store the MDX command in (for customers who want to create their own logging)",
+        "Component": "BW Cube",
+        "Product": "XtractIS"
+    }
+]

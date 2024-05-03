@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added support for key pair authentication on Snowflake destination",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

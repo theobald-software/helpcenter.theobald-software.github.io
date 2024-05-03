@@ -1,0 +1,32 @@
+[
+    {
+        "Message": "Fix for integer import structure members with big endian systems",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Bugfix for MDXExecuter class when packaging is turned on and no measure is selected in MDX",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Bugfix for MDXExecuter class when using MEMBER_UNIQUE_NAME within MDX statement",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Bugfix for certain MDX statements used with MDXExecuter class",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Fix for R3Connection.Ping() and ERPDataContext.Dispose()",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Various bugfixes within the low level MDX generator unit",
+        "Component": "BW Cube",
+        "Product": "XtractKernel"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Incorrect format when saving an IDoc to XML that has segments that start with blanks",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

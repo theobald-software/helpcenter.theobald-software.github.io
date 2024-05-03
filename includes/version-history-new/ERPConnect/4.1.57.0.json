@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Idoc.SaveXMLData() saves values without trailing spaces",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

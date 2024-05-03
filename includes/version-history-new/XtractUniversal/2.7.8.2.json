@@ -1,0 +1,62 @@
+[
+    {
+        "Message": "Correction for misleading error message when using BWCube class with packaging while an empty resultset is returned from SAP",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Updated logic in code generation for SAP queries (MaxRows setting) of the LINQ designers.",
+        "Component": "LINQtoERP",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Performance tweak for character-like values in tables/structures",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "New version for testing purpose. Please ignore!",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Fixed ERPConnect references after changes to support Final Builder.",
+        "Component": "LINQtoERP",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Performance tweaks for tables/structures ",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Fix for memory leaks in R3Connection.ConfirmTID() and RFCFunction.Execute(tid)",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Changed DataTableMetadata constructor to use IList instead of IColllection",
+        "Component": "General",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Correction for misformated PERIO field like in CE1* tables when using compression",
+        "Component": "Table",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Added IsPrimaryKey to ColumnMetaData",
+        "Component": "General",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Added support for alternative BAPI for reading tables",
+        "Component": "Hierarchy",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Made DataTableMetadata.TableName writable, fixed typos \"Paramter\"",
+        "Component": "General",
+        "Product": "XtractKernel"
+    }
+]

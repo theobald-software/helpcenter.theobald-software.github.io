@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "Fixed the abort endpoint routing. Fixed various cache clean up and invalidation issues. Improved behavior of the run dialog when fetching extraction logs. Fixed timeout in xu.exe and xu.elf.",
+        "Component": "General",
+        "Product": "XtractUniversal"
+    },
+    {
+        "Message": "Fixed and improve behavior and logging of the extraction cache, its clean up and when aborting extractions.",
+        "Component": "General",
+        "Product": "Theobald.Server"
+    }
+]

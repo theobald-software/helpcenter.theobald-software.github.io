@@ -1,0 +1,8 @@
+[
+    {
+        "Message": "Fixed a bug where table settings UI would cause an error when saving. Updated /THEO/READ_TABLE to version 3.2 (see notes).",
+        "Component": "Table",
+        "Product": "Theobald.Extractors",
+        "ReleaseNote": "# Updated /THEO/READ_TABLE to version 3.2\n- Fixed a bug where extracting floating point data would cause an error."
+    }
+]

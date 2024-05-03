@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for using WITH statement together with MDXExecuter class",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

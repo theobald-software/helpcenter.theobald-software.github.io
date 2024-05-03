@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed a bug where fetching the field metadata for views would not work if multiple fields of the view referenced the same table fields.",
+        "Component": "Table",
+        "Product": "Theobald.Extractors"
+    }
+]

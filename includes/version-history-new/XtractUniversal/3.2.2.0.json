@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for missing log run in browser (Azure Blob & S3)",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

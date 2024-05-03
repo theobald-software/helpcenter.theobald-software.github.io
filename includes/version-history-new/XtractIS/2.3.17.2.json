@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Correction for incorrect negative currency conversion fields when using compression and field exits at the same time",
+        "Component": "Table",
+        "Product": "XtractKernel"
+    }
+]

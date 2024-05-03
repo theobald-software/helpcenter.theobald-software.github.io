@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for BCD values with small length and no decimals on Chinese systems",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Azure Blob destination now allows saving blobs in folders inside containers.",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

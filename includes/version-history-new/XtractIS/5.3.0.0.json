@@ -1,0 +1,8 @@
+[
+    {
+        "Message": "Added support for property expressions / parameterization, backward-compatibility fixes",
+        "Component": "Table",
+        "Product": "XtractIS",
+        "ReleaseNote": "# Xtract IS 5.3.0\n\n## New Features\n* Table properties are now available in the *Parameterize* context menu of the data flow\n* Table properties are now available in the *Expressions* property of the data flow\n\n## Backward-Compatibility Fixes\n* Fix for updating variables (e. g. loop containers)\n* Fix for variables in MaxRows & PackageSize\n* Fix for *DBNull* errors when opening components in VS\n* Using defaults of date conversion settings for legacy extractions, if date conversion is disabled"
+    }
+]

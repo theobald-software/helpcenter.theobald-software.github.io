@@ -1,0 +1,17 @@
+[
+    {
+        "Message": "NWRFC: Added support for RFC callbacks",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Added support for Z_THEO_READ_TABLE",
+        "Component": "Table",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Updated to 6.5.0.2",
+        "Component": "ERPConnect",
+        "Product": "XtractKernel"
+    }
+]

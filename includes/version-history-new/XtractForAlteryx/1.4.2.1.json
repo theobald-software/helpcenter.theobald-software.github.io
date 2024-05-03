@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed a bug that would reset the TransferDataOnDeltaInit property to false",
+        "Component": "ODP",
+        "Product": "Theobald.Extractors"
+    }
+]

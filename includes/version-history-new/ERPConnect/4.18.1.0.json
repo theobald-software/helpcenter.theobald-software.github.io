@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added support for IDoc Send methods with TID parameter in LINQtoSAP; updated escaping logic for IDoc descriptions",
+        "Component": "LINQtoERP",
+        "Product": "ERPConnect"
+    }
+]

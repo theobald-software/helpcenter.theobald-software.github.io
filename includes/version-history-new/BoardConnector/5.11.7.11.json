@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed a bug, where the WWW-Authenticate HTTP header would be sent anymore.",
+        "Component": "General",
+        "Product": "Theobald.Server"
+    }
+]

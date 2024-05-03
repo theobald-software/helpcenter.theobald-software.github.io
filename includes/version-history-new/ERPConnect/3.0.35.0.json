@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "New IDoc function SaveIdocSchema() to create IDoc schema files by program, not only by IDoc Schema Generator",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

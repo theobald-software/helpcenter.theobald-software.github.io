@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "Fixes for GUI scaling",
+        "Component": "General",
+        "Product": "XtractIS"
+    },
+    {
+        "Message": "Fixes for GUI scaling",
+        "Component": "General",
+        "Product": "XtractKernel"
+    }
+]

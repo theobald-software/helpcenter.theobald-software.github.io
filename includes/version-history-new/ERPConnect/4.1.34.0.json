@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added support for Japanese language in LINQToERP setup",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

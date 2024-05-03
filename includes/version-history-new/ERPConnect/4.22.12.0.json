@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for loading INT2 values from XML (broken since 4.22.10)",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

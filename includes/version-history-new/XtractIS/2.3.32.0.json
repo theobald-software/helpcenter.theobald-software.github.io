@@ -1,0 +1,17 @@
+[
+    {
+        "Message": "New setting \"Use field exits\" added",
+        "Component": "Table",
+        "Product": "XtractIS"
+    },
+    {
+        "Message": "Correction for using * in the report's Select Options",
+        "Component": "Report",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Bugfix for BEX extraction with empty column headers",
+        "Component": "BW Cube",
+        "Product": "XtractKernel"
+    }
+]

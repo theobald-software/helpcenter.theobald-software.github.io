@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "Packed numbers that exceed the precision of System.Decimal throw an exception instead of being rounded",
+        "Component": "General",
+        "Product": "Common"
+    },
+    {
+        "Message": "Updated gacutil",
+        "Component": "General",
+        "Product": "Common"
+    }
+]

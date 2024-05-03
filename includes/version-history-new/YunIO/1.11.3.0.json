@@ -1,0 +1,17 @@
+[
+    {
+        "Message": "Fixed a bug where an error during a CORS request would not send CORS headers. This would cause the client to not be able to access the error information sent in the response.\nService executions now have their dedicated log file.\nFixed a bug where table services would not finish if the result set was empty.",
+        "Component": "General",
+        "Product": "YunIO"
+    },
+    {
+        "Message": "Introduced a new type for ergonomic handling of the logger.\nExtended JSON writer to write ulong types.\nIntroduced a new interface for the LicenseLoader.",
+        "Component": "General",
+        "Product": "Common"
+    },
+    {
+        "Message": "Fixed a bug in the HTTP server which caused CORS headers to be omitted in certain error cases.\nThe new runtime is now able to execute Report extractions.\nThe new runtime does now create dedicated logs and status information for each extraction execution.",
+        "Component": "General",
+        "Product": "Theobald.Server"
+    }
+]

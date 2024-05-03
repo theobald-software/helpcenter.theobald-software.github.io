@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added static Product class for product-specific implementations as a replacement for compiler flags",
+        "Component": "General",
+        "Product": "XtractUniversal"
+    }
+]

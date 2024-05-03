@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for RFCFunction XML loading with slashes in parameter names ",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

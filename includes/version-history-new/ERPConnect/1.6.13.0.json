@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Problems with CreateBAPI method on SAP Release ECC 600 and Unicode (case-sensitive method name spelling)",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

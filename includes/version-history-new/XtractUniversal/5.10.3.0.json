@@ -1,0 +1,8 @@
+[
+    {
+        "Message": "Introduced ODBC command timeouts for the Snowflake destination",
+        "Component": "Destinations",
+        "Product": "XtractUniversal",
+        "ReleaseNote": "**Xtract Universal 5.10.3**\n\nSince the query_timeout parameter passed in the Snowflake connection string seems to be ignored when running commands from the ODBC driver, we started to use the ODBC.CommandTimout property."
+    }
+]

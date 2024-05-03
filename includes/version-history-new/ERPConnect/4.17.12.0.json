@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Updated logic to set MaxLength property for result data tables in XtractQL.",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

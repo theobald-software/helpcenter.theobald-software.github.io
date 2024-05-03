@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix: R3Connection.CacheMetaData was not working properly in some situations.",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

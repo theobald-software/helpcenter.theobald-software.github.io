@@ -1,0 +1,27 @@
+[
+    {
+        "Message": "Added column name styles",
+        "Component": "Table",
+        "Product": "XtractForAlteryx"
+    },
+    {
+        "Message": "Fixed a memory leak that affected RFC functions that contain deep structures or tables",
+        "Component": "NWRFC",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "TransactionRecorder: Added support for NWRFC & SNC",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "NWRFC: Fixes for character encoding on Big Endian systems (broken since 6.5.0)",
+        "Component": "RFCServer",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Table and ODP: Added column name styles",
+        "Component": "General",
+        "Product": "Theobald.Extractors"
+    }
+]

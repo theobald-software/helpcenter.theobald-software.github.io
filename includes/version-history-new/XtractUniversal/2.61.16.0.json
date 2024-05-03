@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Bugfix for merging BW Cube extractions with SharePoint destinations",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

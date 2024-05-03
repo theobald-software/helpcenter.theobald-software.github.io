@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Workaround for missing data at the end of some very wide table lines (librfc32.dll bug)",
+        "Component": "RFCFunction.Tables",
+        "Product": "ERPConnect"
+    }
+]

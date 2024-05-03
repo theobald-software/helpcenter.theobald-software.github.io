@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for ConfigConverter auto detection during setup",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

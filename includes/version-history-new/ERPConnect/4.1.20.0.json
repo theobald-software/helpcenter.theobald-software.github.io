@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for manually created nested parameters if offsets & structure lengths are not set manually",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

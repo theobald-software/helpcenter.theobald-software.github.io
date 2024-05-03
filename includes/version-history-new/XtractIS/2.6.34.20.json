@@ -1,0 +1,22 @@
+[
+    {
+        "Message": "Fix for Unicode big endian systems",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Linq to SAP designer supports Netweaver libary now.",
+        "Component": "LINQtoERP",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Idocs with column names like metadata columns now supported.",
+        "Component": "Idoc",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Updated to 4.36.1.0",
+        "Component": "ERPConnect",
+        "Product": "XtractKernel"
+    }
+]

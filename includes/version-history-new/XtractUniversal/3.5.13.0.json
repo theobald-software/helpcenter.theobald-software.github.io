@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for Designer/Server communication (\"The output byte buffer is too small to contain the encoded data\")",
+        "Component": "Designer",
+        "Product": "XtractUniversal"
+    }
+]

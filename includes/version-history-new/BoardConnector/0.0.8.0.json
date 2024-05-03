@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for 'The specified network password is not correct'",
+        "Component": "General",
+        "Product": "BoardConnector"
+    }
+]

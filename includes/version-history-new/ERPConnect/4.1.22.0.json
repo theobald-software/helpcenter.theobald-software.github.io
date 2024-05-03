@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Increased performance of ConversionUtils.SAPDate2NetDate() for invalid SAP date values",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

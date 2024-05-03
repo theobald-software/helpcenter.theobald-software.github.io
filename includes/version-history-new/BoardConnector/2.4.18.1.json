@@ -1,0 +1,27 @@
+[
+    {
+        "Message": "Fix for include structures (calculated offsets were wrong in some cases)",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Fix for XML unescaping (error introduced in 4.14.0)",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "New implementation for table types and structures which contain STRING/XSTRING members in Import/Export/Changing parameters (classic SDK)",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "RFCTable.ToString() returns raw XML even if errors occur",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Control characters are now allowed in lines of table type import/export/changing parameters",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

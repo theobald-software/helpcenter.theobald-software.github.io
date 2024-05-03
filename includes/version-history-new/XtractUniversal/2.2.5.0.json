@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Bugfix in UI when switch from BEX mode to non-BEX mode and back",
+        "Component": "BW Cube",
+        "Product": "XtractUniversal"
+    }
+]

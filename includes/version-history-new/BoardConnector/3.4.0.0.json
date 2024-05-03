@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Removed support for 32 bit versions of Windows",
+        "Component": "General",
+        "Product": "BoardConnector"
+    }
+]

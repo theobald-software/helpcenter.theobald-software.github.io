@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix: In rare cases the select options were deleted completely when pressing the cancel button in the Range dialog",
+        "Component": "DeltaQ",
+        "Product": "XtractUniversal"
+    }
+]

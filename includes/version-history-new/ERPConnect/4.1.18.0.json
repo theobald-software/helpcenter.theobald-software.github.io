@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Changed modifiers of RFCTableColumn.IsNonStructureLineType and RFCTableColumnCollection.Align() to public for manual creating of some types of structures",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

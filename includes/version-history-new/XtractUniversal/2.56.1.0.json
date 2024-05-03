@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Button for managing destinations is disabled if user does not have admin privileges",
+        "Component": "Designer",
+        "Product": "XtractUniversal"
+    }
+]

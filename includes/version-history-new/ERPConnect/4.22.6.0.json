@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Correction for escaping special characters when saving/loading IDoc data from plain files ",
+        "Component": "Idoc",
+        "Product": "ERPConnect"
+    }
+]

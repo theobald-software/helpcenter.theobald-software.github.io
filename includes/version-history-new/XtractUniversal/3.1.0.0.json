@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added \"Require SAP credentials\" to source, removed X.509 certificate path\n(please configure via SNC solution)",
+        "Component": "Security",
+        "Product": "XtractUniversal"
+    }
+]

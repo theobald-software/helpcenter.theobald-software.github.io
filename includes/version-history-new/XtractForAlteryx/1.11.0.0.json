@@ -1,0 +1,18 @@
+[
+    {
+        "Message": "The tool now supports EXPORT parameters that will be merged and output into the E pipeline. Table EXPORT parameters will be mapped to connections 1-5.",
+        "Component": "BAPI",
+        "Product": "XtractForAlteryx"
+    },
+    {
+        "Message": "Added custom Number struct and ReadNumber method to JsonReader",
+        "Component": "General",
+        "Product": "Common"
+    },
+    {
+        "Message": "Several improvements and new features",
+        "Component": "BAPI",
+        "Product": "Theobald.Extractors",
+        "ReleaseNote": "# Improvements for BAPI extractor\n\nThe internal representation has changed, **old extractions will no longer work and need to be recreated.** The new BAPI component packs several new features:\n\n- EXPORTS\n- CHANGINGS\n- nested structures and tables\n- transaction commit by calling `BAPI_TRANSACTION_COMMIT`\n- values for tables can now be entered or parameterized per row\n- Now specifies whether a parameter is supplied or requested from the SAP system. This allows for optimizations when using NWRFC and for the function modules default values to be used."
+    }
+]

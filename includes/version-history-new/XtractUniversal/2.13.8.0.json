@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Errors while writing extraction log do not lead to server termination anymore",
+        "Component": "Server",
+        "Product": "XtractUniversal"
+    }
+]

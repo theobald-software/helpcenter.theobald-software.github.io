@@ -1,0 +1,37 @@
+[
+    {
+        "Message": "In case of 0 records the IncomingPackage event was fired twice accidently when using the ReadTable class",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Fix for XSTRING import parameters (NWRFC)",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Added UnicodeAdjustment flag to VS2015 ERP context file  to support different unicode SAP systems (UC/NonUC) with one auto-generated context class.",
+        "Component": "LINQtoERP",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Added UnicodeAdjustment flag to VS2013 ERP context file  to support different unicode SAP systems (UC/NonUC) with one auto-generated context class.",
+        "Component": "LINQtoERP",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Added UnicodeAdjustment flag to VS2012 ERP context file  to support different unicode SAP systems (UC/NonUC) with one auto-generated context class.",
+        "Component": "LINQtoERP",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Uses better custom functions as default",
+        "Component": "Table",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "The output of the customizing check can be sent directly to the clipboard.",
+        "Component": "DeltaQ",
+        "Product": "XtractKernel"
+    }
+]

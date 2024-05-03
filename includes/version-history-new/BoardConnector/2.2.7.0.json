@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Output column reordering (BW Cube) was ignored in metadata since 2.x",
+        "Component": "BOARD API",
+        "Product": "BoardConnector"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Azure Storage: Added option to generate and upload CDM files alongside the data. (preview)",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

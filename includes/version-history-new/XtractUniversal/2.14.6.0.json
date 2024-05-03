@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for extractions which have very short running times (<50ms)  ",
+        "Component": "Server",
+        "Product": "XtractUniversal"
+    }
+]

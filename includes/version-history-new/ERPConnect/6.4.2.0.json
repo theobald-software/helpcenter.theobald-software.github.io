@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Removed RFCServer.Ping() (was marked for \"internal use only\", had various issues)",
+        "Component": "RFCServer",
+        "Product": "ERPConnect"
+    }
+]

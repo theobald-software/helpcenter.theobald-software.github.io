@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added support for server side RFC connection test with SSO configurations",
+        "Component": "Designer",
+        "Product": "XtractUniversal"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "One-Byte-Shift in resultset (not on all systems, only some patch levels)",
+        "Component": "OHS",
+        "Product": "XtractIS"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for Windows Server 2003 and XP",
+        "Component": "Service",
+        "Product": "BoardConnector"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added padding for log entries in txt files and 'copy to clipboard' feature",
+        "Component": "General",
+        "Product": "BoardConnector"
+    }
+]

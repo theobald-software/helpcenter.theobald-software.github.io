@@ -1,0 +1,17 @@
+[
+    {
+        "Message": "NWRFC: Fix for ambigous import/export parameters",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Classic RFC: Improved error messages",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Updated to 5.5.6.0",
+        "Component": "ERPConnect",
+        "Product": "XtractKernel"
+    }
+]

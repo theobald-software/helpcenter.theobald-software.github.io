@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Correction for multiple measures with the same name when using caption for pipeline element name",
+        "Component": "BW Cube",
+        "Product": "XtractIS"
+    }
+]

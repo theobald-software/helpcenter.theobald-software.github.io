@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added some ergonomics for arrays and DateTime formats.\nAdded JSON serialization for various classes.",
+        "Component": "General",
+        "Product": "Common"
+    }
+]

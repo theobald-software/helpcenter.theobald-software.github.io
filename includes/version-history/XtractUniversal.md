@@ -1,5 +1,30 @@
 |Version|Date    |Component   |Description|
 |:-----:|:------:|:----------:|:----------|
+|6.4.9 [L]|2024-05-03|Designer|Fixed a bug that caused errors when using the run dialog to run extractions with the "Request SAP credentials from caller when running extractions" option enabled on the source.|
+|6.4.8 [L]|2024-05-03|General|Fixed a bug where xu.exe was not able to handle URIs for running an extraction correctly. The issue was introduced in 6.4.0.|
+|6.4.7 [L]|2024-05-02|Designer|Fixed a bug where extractions could not be aborted in the run dialog when using windows AD authentication|
+|6.4.6 [L]|2024-04-29|Designer|Fixed a bug on the run window, which would not show logs when extraction failed before the prepare results step|
+|6.4.5 [M]|2024-04-23|Server|Hotfix: Fixed a bug which can cause the extraction request to fail, when the client does not supply a user-agent header in certain circumstances. The bug was introduced in 6.4.4|
+|6.4.4 [L]|2024-04-22|Server|Fixed a bug where the Power BI Plugin would erroneously receive dummy data on data load. Updating the plugin is NOT required.|
+|6.4.3 [L]|2024-04-22|Destinations|Fixed a bug where generating a Qlik Sense script failed.|
+|6.4.2 [L]|2024-04-19|BAPI|Add support for S4H cloud systems|
+|[6.4.1 [L]](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-6.4.1)|2024-04-11|Destinations|Json Destination: Implement file split functionality.([Release note](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-6.4.1))|
+|[6.4.0 [L]](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-6.4.0)|2024-04-11|Server|Introduce new endpoint to run/start extractions ([Release note](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-6.4.0))|
+|[6.3.11 [L]](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-6.3.11)|2024-03-26|Destinations|Redshift destination: improvements, bug fixes and ODBC driver upgrade to version 2.1.0.0 (BREAKING). ([Release note](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-6.3.11))|
+|6.3.10 [L]|2024-02-29|Destinations|Added the .csv extension to Snowflake's staged file name|
+|6.3.9 [L]|2024-02-27|BW Cube|Fixed a bug in the config converter that caused broken key figures and custom column order for extractions originally created in version 2.46.0 and before.|
+|6.3.8 [L]|2024-02-27|ODP|Fixed an issue that caused errors during extraction when the data contained invalid time or date values. The values are now passed through or converted according to the destination conversion settings.|
+|6.3.7 [L]|2024-02-23|Destinations|Fixed the file name generator for Snowflake's internal csv destination|
+|6.3.6 [L]|2024-02-21|Setup|Installation of Power BI Report Server Plugin is now an optional component in the setup and not selected by default.|
+|6.3.5 [L]|2024-02-19|Server|Fixed a bug where cloning an extraction would not be possible due to the required item privilege being too high.|
+|6.3.4 [M]|2024-02-19|Server|Hotfix: Fixed the format for `duration` and `timestamp` properties in the config and logs API. The issues were introduced in 6.3.|
+|6.3.3 [L]|2024-02-16|Destinations|Alteryx: Do not pass values for rows parameter to XU, that are out of range|
+|6.3.2 [L]|2024-02-16|Destinations|Flat File Parquet: Fixed an issue with files being kept open for longer than needed potentially causing errors when trying to open the file in another application|
+|6.3.1 [H]|2024-02-16|Server|Reverted a change in 6.3.0, where extraction names in Config-API response would be erroneously written as array|
+|[6.3.0 [L]](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-6.3.0)|2024-02-12|Server|Implemented a new log endpoint with responses in JSON format.  Fixed bugs in the web server.  ([Release note](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-6.3.0))|
+|6.2.14 [L]|2024-02-12|Server|Fixed a bug where the configured maximum age of log files would be ignored and always be the default of seven days.|
+|6.2.13 [H]|2024-02-08|Security|Fixed an issue that caused the result cache to be used independently from caller supplied SAP credentials|
+|6.2.12 [L]|2024-02-07|Designer|Renamed some destination types in order to increase clarity and align with online help. List of destination types is now sorted alphabetically.|
 |6.2.11 [L]|2024-02-01|Destinations|Power BI: Fixed an issue that caused extractions to be missing or authentication errors in the connector UI due to caching issues|
 |6.2.10 [L]|2024-01-31|Server|Fixed a bug which would crash the configuration converter when an unhandled property was read in a legacy server file.|
 |6.2.9 [L]|2024-01-30|Destinations|Fixed an error that caused CSV destinations to fail when an empty result set (no rows or columns) was extracted|
@@ -7,11 +32,11 @@
 |6.2.7 [L]|2024-01-23|Destinations|Upgraded SQL driver for PostgreSql destination to version 8.0.1. Fixed a bug that was present in build 6.2.6.12 released on 22.01.2024 - if you have that version installed and if you are using the PostgreSql destination, please upgrade to a newer version.|
 |6.2.6 [L]|2024-01-16|Destinations|Google Cloud Storage: added support for Script Expressions in destination folder field.|
 |6.2.5 [L]|2024-01-16|BW Cube|Fixed a bug for BWCube extractions with filters on dimensions that have a slash in their name.|
-|[6.2.4 [M]](https://kb.theobald-software.com/release-notes/XtractUniversal-6.2.4.html)|2024-01-15|DeltaQ|Fixed some bugs related to legacy DeltaQ extractions conversion (see release notes for more details)([Release note](https://kb.theobald-software.com/release-notes/XtractUniversal-6.2.4.html))|
+|[6.2.4 [M]](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-6.2.4)|2024-01-15|DeltaQ|Fixed some bugs related to legacy DeltaQ extractions conversion (see release notes for more details)([Release note](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-6.2.4))|
 |6.2.3 [L]|2023-12-18|Server|Fixed source impersonation with Kerberos authentication when running extractions.|
 |6.2.2 [L]|2023-12-07|General|Fixed a bug where custom parameters in the finalization step in snowflake destinations would not be evaluated. The columns in the Designer's main view now allow more flexibility when resizing. The run window does not show an error anymore when trying to abort an extraction, which just finished.|
 |6.2.1 [L]|2023-12-05|BW Cube|Fix an issue that made ConfigConverter fail to upgrade some extractions containing orphaned filters|
-|[6.2.0 [L]](https://kb.theobald-software.com/release-notes/XtractUniversal-6.2.0.html)|2023-12-04|General|Added the result columns custom order feature([Release note](https://kb.theobald-software.com/release-notes/XtractUniversal-6.2.0.html))|
+|[6.2.0 [L]](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-6.2.0)|2023-12-04|General|Added the result columns custom order feature([Release note](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-6.2.0))|
 |6.1.12 [L]|2023-11-24|BW Cube|Fixed a bug causing failed extractions when using Not Assigned (#) member in MDX cube filter.|
 |6.1.11 [L]|2023-11-20|Server|Fixed a bug where a cache entry would not be invalidated when aborting the extraction. Fixed an error when invalidating the cache for an extraction after editing.|
 |6.1.10 [L]|2023-11-15|Server|Fixed a bug causing cache entries of failed extractions to not be invalidated correctly. Fixed the timestamp format for script expression of `Extraction.Timestamp`.|
@@ -23,7 +48,7 @@
 |6.1.4 [L]|2023-11-02|DeltaQ|Slightly refactored some DeltaQ windows|
 |6.1.3 [L]|2023-10-31|Query|Fixed a bug that caused legacy queries with obligatory selection parameters to not be converted correctly.|
 |6.1.2 [L]|2023-10-31|Destinations|Changed Snowflake definition window to list only internal stages to be selected|
-|[6.1.1 [L]](https://kb.theobald-software.com/release-notes/XtractUniversal-6.1.1.html)|2023-10-27|Server|Small fixes and improvements for error handling, scripting and logging.([Release note](https://kb.theobald-software.com/release-notes/XtractUniversal-6.1.1.html))|
+|[6.1.1 [L]](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-6.1.1)|2023-10-27|Server|Small fixes and improvements for error handling, scripting and logging.([Release note](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-6.1.1))|
 |6.1.0 [L]|2023-10-19|Destinations|Removed the Hadoop destination|
 |6.0.24 [L]|2023-10-17|General|Fixed RequestSize error in xu.exe. Removed an external dependency of xu.exe.|
 |6.0.23 [L]|2023-10-13|Server|Fixed a bug where the web worker would not send a response when running an extraction in case of errors occurring at destination setup. Fixed the xu.exe command in the Run Dialog, which could get out of sync with the actual command used.|
@@ -37,7 +62,7 @@
 |6.0.15 [L]|2023-09-25|Destinations|Alteryx: Improved detection for installed Alteryx instances when installing the plugin|
 |6.0.14 [L]|2023-09-22|Server|Fixed crashes when fetching parameter and result column information for various extraction types.|
 |6.0.13 [L]|2023-09-22|Server|Parameters for table and query extractions with values larger than allowed do now default to the configured values from the extraction.|
-|[6.0.12 [L]](https://kb.theobald-software.com/release-notes/XtractUniversal-6.0.12.html)|2023-09-15|Destinations|SSRS / Power BI Report Server Data Extension: fixed crash due a bad assembly reference that was introduced in XtractUniversal 6.0 ([Release note](https://kb.theobald-software.com/release-notes/XtractUniversal-6.0.12.html))|
+|[6.0.12 [L]](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-6.0.12)|2023-09-15|Destinations|SSRS / Power BI Report Server Data Extension: fixed crash due a bad assembly reference that was introduced in XtractUniversal 6.0 ([Release note](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-6.0.12))|
 |6.0.11 [L]|2023-09-15|Designer|Added sort option on designer's main window's state column|
 |6.0.10 [L]|2023-09-15|Destinations|Added role setting on Snowflake destination|
 |6.0.9 [L]|2023-09-14|General|Fixed web server issues causing responses to be in the wrong format. This affected Qlik and Knime destinations. Fixed a confusing error message when opening the destination settings for a malformed extraction.|
@@ -49,8 +74,8 @@
 |6.0.3 [L]|2023-09-11|Server|Fixed a bug which could cause the server start to fail because of inconsistent state.|
 |6.0.2 [L]|2023-09-08|General|Fixed the default setting of the config converter for the XU 6 upgrade. Fixed the web worker log window not showing any logs. Fixed some typos in the XU 6.0.0 release notes.|
 |6.0.1 [L]|2023-09-08|Server|Fixed a bug where the web server port was not known after the update to version 6.|
-|[6.0.0 [L]](https://kb.theobald-software.com/release-notes/XtractUniversal-6.0.0.html)|2023-09-07|General|**Breaking Changes!** We have rewritten the web API and runtime to improve long term ergonomics, stability and maintainability.([Release note](https://kb.theobald-software.com/release-notes/XtractUniversal-6.0.0.html))|
-|[5.27.0 [L]](https://kb.theobald-software.com/release-notes/XtractUniversal-5.27.0.html)|2023-08-22|DeltaQ|Added the new DeltaQ component([Release note](https://kb.theobald-software.com/release-notes/XtractUniversal-5.27.0.html))|
+|[6.0.0 [L]](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-6.0.0)|2023-09-07|General|**Breaking Changes!** We have rewritten the web API and runtime to improve long term ergonomics, stability and maintainability.([Release note](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-6.0.0))|
+|[5.27.0 [L]](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-5.27.0)|2023-08-22|DeltaQ|Added the new DeltaQ component([Release note](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-5.27.0))|
 |5.26.6 [L]|2023-08-08|Destinations|Fixed Snowflake connection test for non-default schemas|
 |5.26.5 [M]|2023-08-07|DeltaQ|Fixed conversion errors for some data types|
 |5.26.4 [L]|2023-08-07|Destinations|Hana destination: upgraded data provider to version 2.17.22.0 and added support for BIGINT.|
@@ -77,23 +102,23 @@
 |5.24.3 [L]|2023-05-11|TableCDC|Added option to run initial load as background job|
 |5.24.2 [M]|2023-05-09|TableCDC|Fixed a bug that could cause multiple records with the same key to be included in a CDC extraction result|
 |5.24.1 [M]|2023-05-04|General|Table CDC extractions can now be created using xu-config|
-|[5.24.0 [L]](https://kb.theobald-software.com/release-notes/XtractUniversal-5.24.0.html)|2023-04-27|Hierarchy|New Hierarchy Extractor - POSSIBLE BREAKING CHANGES for Hierarchy extractions([Release note](https://kb.theobald-software.com/release-notes/XtractUniversal-5.24.0.html))|
+|[5.24.0 [L]](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-5.24.0)|2023-04-27|Hierarchy|New Hierarchy Extractor - POSSIBLE BREAKING CHANGES for Hierarchy extractions([Release note](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-5.24.0))|
 |5.23.4 [L]|2023-04-26|General|Added update reminder that will periodically show a pop up asking for an update.|
 |5.23.3 [L]|2023-04-20|Designer|Added hotkey (F1) to open online help of current window|
 |5.23.2 [L]|2023-04-13|Destinations|Fix for missing type handling on Snowflake destination (would crash with surrogate key)|
-|[5.23.1 [L]](https://kb.theobald-software.com/release-notes/XtractUniversal-5.23.1.html)|2023-04-12|Destinations|Tableau destination now uses personal access tokens for authentication on Tableau Server/Cloud([Release note](https://kb.theobald-software.com/release-notes/XtractUniversal-5.23.1.html))|
+|[5.23.1 [L]](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-5.23.1)|2023-04-12|Destinations|Tableau destination now uses personal access tokens for authentication on Tableau Server/Cloud([Release note](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-5.23.1))|
 |5.23.0 [L]|2023-04-06|General|Added surrogate key feature|
 |5.22.1 [L]|2023-03-31|Setup|Setup now checks if there are any running processes and offers option to abort setup.|
 |5.22.0 [H]|2023-03-29|TableCDC|Table CDC is now generally available.|
-|[5.21.17 [L]](https://kb.theobald-software.com/release-notes/XtractUniversal-5.21.17.html)|2023-03-23|General|Fixed Kerberos Authentication issue in Power BI Report Server plugin for Report Server caused by connection pooling of net framework([Release note](https://kb.theobald-software.com/release-notes/XtractUniversal-5.21.17.html))|
+|[5.21.17 [L]](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-5.21.17)|2023-03-23|General|Fixed Kerberos Authentication issue in Power BI Report Server plugin for Report Server caused by connection pooling of net framework([Release note](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-5.21.17))|
 |5.21.16 [L]|2023-03-13|Designer|Fix for server name validation on connect window|
 |5.21.15 [L]|2023-03-10|TableCDC|Table CDC: Log table size can now be limited.|
-|[5.21.14 [M]](https://kb.theobald-software.com/release-notes/XtractUniversal-5.21.14.html)|2023-03-07|Security|Custom authentication related security fixes and improvements.([Release note](https://kb.theobald-software.com/release-notes/XtractUniversal-5.21.14.html))|
+|[5.21.14 [M]](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-5.21.14)|2023-03-07|Security|Custom authentication related security fixes and improvements.([Release note](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-5.21.14))|
 |5.21.13 [L]|2023-03-06|General|New EULA|
 |5.21.12 [L]|2023-02-24|Designer|Fix for column mapping validation on designer, which would not allow to change the destination settings|
 |5.21.11 [L]|2023-02-23|Destinations|Added support for key pair authentication on Snowflake destination|
 |5.21.10 [L]|2023-02-14|Designer|Fix for designer unexpectedly closing the server connection when opening an unconverted extraction.|
-|[5.21.9 [L]](https://kb.theobald-software.com/release-notes/XtractUniversal-5.21.9.html)|2023-02-10|Destinations|Oracle data provider updated and added support for connections to Oracle Autonomous DB.([Release note](https://kb.theobald-software.com/release-notes/XtractUniversal-5.21.9.html))|
+|[5.21.9 [L]](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-5.21.9)|2023-02-10|Destinations|Oracle data provider updated and added support for connections to Oracle Autonomous DB.([Release note](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-5.21.9))|
 |5.21.8 [L]|2023-02-10|General|Fix extraction cache getting checked despite being disabled. Fix possible race condition in the RPC worker.|
 |5.21.7 [L]|2023-02-10|General|Removed "Support Client" from Help menus. Added extraction type (Cube, Table, ...) being executed in extraction and server logs|
 |5.21.6 [L]|2023-02-02|Destinations|GCS-Destination with file split: Aborting extraction deletes all uploaded parts.|
@@ -111,13 +136,13 @@
 |5.18.3 [L]|2023-01-12|Destinations|Fixes for column name style|
 |5.18.2 [L]|2023-01-11|Designer|Fix for minor displaying bug on the log window|
 |5.18.1 [L]|2023-01-10|Destinations|Added append operation for Hadoop destination (only valid for csv files)|
-|[5.18.0 [L]](https://kb.theobald-software.com/release-notes/XtractUniversal-5.18.0.html)|2023-01-10|General|Adjustments for ConfigConverter and date conversion (config conversion required)([Release note](https://kb.theobald-software.com/release-notes/XtractUniversal-5.18.0.html))|
+|[5.18.0 [L]](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-5.18.0)|2023-01-10|General|Adjustments for ConfigConverter and date conversion (config conversion required)([Release note](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-5.18.0))|
 |5.17.2 [L]|2023-01-09|Destinations|Fix for ConfigConverter auto detection during setup|
 |5.17.1 [L]|2023-01-09|Destinations|Fix for date zero replacement default (bug introduced in 5.17.0)|
-|[5.17.0 [L]](https://kb.theobald-software.com/release-notes/XtractUniversal-5.17.0.html)|2023-01-08|Destinations|Internal changes for extraction-specific file destination settings (config conversion required)([Release note](https://kb.theobald-software.com/release-notes/XtractUniversal-5.17.0.html))|
+|[5.17.0 [L]](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-5.17.0)|2023-01-08|Destinations|Internal changes for extraction-specific file destination settings (config conversion required)([Release note](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-5.17.0))|
 |5.16.15 [L]|2023-01-07|Destinations|Internal changes to destination setting serialization|
-|[5.16.14 [L]](https://kb.theobald-software.com/release-notes/XtractUniversal-5.16.14.html)|2023-01-02|Destinations|Snowflake now deletes the remote staged file automatically([Release note](https://kb.theobald-software.com/release-notes/XtractUniversal-5.16.14.html))|
-|[5.16.13 [L]](https://kb.theobald-software.com/release-notes/XtractUniversal-5.16.13.html)|2022-12-29|Destinations|Added support for Snowflake organization account identifier([Release note](https://kb.theobald-software.com/release-notes/XtractUniversal-5.16.13.html))|
+|[5.16.14 [L]](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-5.16.14)|2023-01-02|Destinations|Snowflake now deletes the remote staged file automatically([Release note](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-5.16.14))|
+|[5.16.13 [L]](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-5.16.13)|2022-12-29|Destinations|Added support for Snowflake organization account identifier([Release note](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-5.16.13))|
 |5.16.12 [L]|2022-12-20|Destinations|Fix for a possible collation issue when using the Prepare Merge statement in the Microsoft SQL Server destination.|
 |5.16.11 [L]|2022-12-20|Destinations|Power BI Connector: Fixed an issue that caused the connector .pqx file to not be recognized by Power BI Desktop (Bug introduced in November 2022)|
 |5.16.10 [L]|2022-12-19|General|SSRS Plugin now writes xml files with "pretty" formatting enabled.|
@@ -128,10 +153,10 @@
 |5.16.5 [L]|2022-11-28|Server|Fixed a bug introduced in 5.14.1 where the JSON representation of the API for extractions sources and destinations erroneously was an array.|
 |5.16.4 [L]|2022-11-25|Destinations|Azure Storage destination now logs WebExceptionStatus when an error in network communication with Azure occurs.|
 |5.16.3 [L]|2022-11-23|Destinations|Qlik Sense: connection variable in script now automatically adapts to server settings.|
-|[5.16.2 [L]](https://kb.theobald-software.com/release-notes/XtractUniversal-5.16.2.html)|2022-11-23|Destinations|Snowflake custom SQL fix and removal of timestamp on staged csv file name([Release note](https://kb.theobald-software.com/release-notes/XtractUniversal-5.16.2.html))|
+|[5.16.2 [L]](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-5.16.2)|2022-11-23|Destinations|Snowflake custom SQL fix and removal of timestamp on staged csv file name([Release note](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-5.16.2))|
 |5.16.1 [L]|2022-11-21|Destinations|Tableau definition window now can display the site's projects hierarchy|
 |5.16.0 [L]|2022-11-09|Setup|Added logic to abort setup due to running processes.|
-|[5.15.0 [L]](https://kb.theobald-software.com/release-notes/XtractUniversal-5.15.0.html)|2022-10-28|General|Added column mapping feature, enabled for the file csv and Tableau destinations([Release note](https://kb.theobald-software.com/release-notes/XtractUniversal-5.15.0.html))|
+|[5.15.0 [L]](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-5.15.0)|2022-10-28|General|Added column mapping feature, enabled for the file csv and Tableau destinations([Release note](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-5.15.0))|
 |5.14.3 [L]|2022-10-26|Server|Fixed a bug where extractions would run into an error if the source or destination parameter is set.|
 |5.14.2 [L]|2022-10-26|Destinations|Fixed an error that caused parquet to always use the column name style Code|
 |5.14.1 [L]|2022-10-20|Designer|Fixed an error, which made it impossible to create new extractions. Fixed the handling of default values for the source of a new extraction.|
@@ -147,13 +172,13 @@
 |5.12.0 [M]|2022-09-08|OHS|New OHS component (with Table extraction mode and support for BW/4HANA 2.0)|
 |5.11.22 [L]|2022-09-08|Designer|The Designer users privilege level is now correctly fetched from the server.|
 |5.11.21 [L]|2022-09-06|Destinations|Qlik Sense: Script generator now creates a fail safe script|
-|[5.11.20 [L]](https://kb.theobald-software.com/release-notes/XtractUniversal-5.11.20.html)|2022-09-06|Destinations|Where clause is now accessible through script expressions in destination folder path.([Release note](https://kb.theobald-software.com/release-notes/XtractUniversal-5.11.20.html))|
+|[5.11.20 [L]](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-5.11.20)|2022-09-06|Destinations|Where clause is now accessible through script expressions in destination folder path.([Release note](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-5.11.20))|
 |5.11.19 [M]|2022-08-29|BAPI|Fixed a bug that caused errors during metadata retrieval if the BAPI contains parameters where the same structure is included multiple times (bug introduced in 5.11.15)|
 |5.11.18 [L]|2022-08-26|Designer|Fixed a bug where Primary Key settings would not be stored when editing an extraction.|
 |5.11.17 [L]|2022-08-26|Destinations|Google Cloud Storage: Fixed a bug where users would not be able to run extractions when using service account authentication if XU Designer runs on different machine than XU Server.|
 |5.11.16 [L]|2022-08-24|Destinations|Google Cloud Storage: Service account authentication is now supported.|
 |5.11.15 [L]|2022-08-23|BAPI|Fixed a bug that caused legacy conversion for BAPI extractions to be skipped (introduced in 5.11.6)|
-|[5.11.14 [L]](https://kb.theobald-software.com/release-notes/XtractUniversal-5.11.14.html)|2022-08-19|Destinations|Introduced empty value as null setting for the Snowflake destination([Release note](https://kb.theobald-software.com/release-notes/XtractUniversal-5.11.14.html))|
+|[5.11.14 [L]](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-5.11.14)|2022-08-19|Destinations|Introduced empty value as null setting for the Snowflake destination([Release note](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-5.11.14))|
 |5.11.13 [L]|2022-08-18|Designer|Fixed a bug causing an error on no fields being selected when editing a table extraction.|
 |5.11.12 [L]|2022-08-17|Designer|Fixed a bug where deselecting all primary keys would result in restoring the default configuration for the primary keys|
 |5.11.11 [L]|2022-08-17|Destinations|MySQL data provider updated to latest version (8.0.30)|
@@ -163,17 +188,17 @@
 |5.11.7 [L]|2022-08-08|Designer|Fixed an issue where editing an extraction could cause the primary key information to get out of sync with the source system. Fixed an issue where when using AD-Authentication unnecessary AD-requests would slow down some designer actions|
 |5.11.6 [H]|2022-08-04|BAPI|Fix for structures with includes, please refresh metadata|
 |5.11.5 [L]|2022-07-28|Report|Fixed a bug where converting report extractions from pre 4.31.0 version would fail, if range selection options (between / not between) were defined on report parameters.|
-|[5.11.4 [L]](https://kb.theobald-software.com/release-notes/XtractUniversal-5.11.4.html)|2022-07-26|Destinations|Introduced Tableau column mapping for existing .hyper files. It is required to update the Tableau Export Library folder.([Release note](https://kb.theobald-software.com/release-notes/XtractUniversal-5.11.4.html))|
+|[5.11.4 [L]](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-5.11.4)|2022-07-26|Destinations|Introduced Tableau column mapping for existing .hyper files. It is required to update the Tableau Export Library folder.([Release note](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-5.11.4))|
 |5.11.3 [L]|2022-07-26|Destinations|Parquet: Added compatibility for BigQuery naming requirements|
 |5.11.2 [L]|2022-07-21|BW Cube|Fix for converting ranges in variable and filter selections when running the config converter on BW Cube extractions.|
-|[5.11.1 [L]](https://kb.theobald-software.com/release-notes/XtractUniversal-5.11.1.html)|2022-07-21|General|Added a popup on run window to get SAP credentials from caller([Release note](https://kb.theobald-software.com/release-notes/XtractUniversal-5.11.1.html))|
+|[5.11.1 [L]](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-5.11.1)|2022-07-21|General|Added a popup on run window to get SAP credentials from caller([Release note](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-5.11.1))|
 |5.11.0 [L]|2022-07-20|Destinations|Removed MicroStrategy destination|
 |5.10.5 [L]|2022-07-08|General|Cleaning the result cache does now use the new RPC server/client capabilities instead of the Web server, which cause issues with custom authentication in the past.|
 |5.10.4 [L]|2022-07-06|Destinations|Azure Storage destination: fixed a bug where connection to Azure didn't work. (Bug introduced in 5.9.4)|
-|[5.10.3 [L]](https://kb.theobald-software.com/release-notes/XtractUniversal-5.10.3.html)|2022-07-04|Destinations|Introduced ODBC command timeouts for the Snowflake destination([Release note](https://kb.theobald-software.com/release-notes/XtractUniversal-5.10.3.html))|
+|[5.10.3 [L]](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-5.10.3)|2022-07-04|Destinations|Introduced ODBC command timeouts for the Snowflake destination([Release note](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-5.10.3))|
 |5.10.2 [M]|2022-07-01|Security|Fix for requesting SAP credentials at runtime|
 |5.10.1 [M]|2022-07-01|Server|Fixed a bug that caused list runtime parameters to be ignored (Bug introduced in 5.8.4)|
-|[5.10.0 [L]](https://kb.theobald-software.com/release-notes/XtractUniversal-5.10.0.html)|2022-07-01|General|Added extractions limit check([Release note](https://kb.theobald-software.com/release-notes/XtractUniversal-5.10.0.html))|
+|[5.10.0 [L]](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-5.10.0)|2022-07-01|General|Added extractions limit check([Release note](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-5.10.0))|
 |5.9.4 [L]|2022-06-30|Destinations|Fixed a bug in S3 destination, where manually input bucket name would not be saved when IAM role authentication was selected.|
 |5.9.3 [L]|2022-06-23|Destinations|Alteryx: Fixed a bug that caused errors when disabling date conversion|
 |5.9.2 [L]|2022-06-17|Designer|Fixed a bug which cause threading related exceptions in various dialogs.|
@@ -196,74 +221,74 @@
 |5.8.1 [L]|2022-05-16|Destinations|The flat-file CSV destination does now support file splitting.|
 |5.8.0 [L]|2022-05-09|Destinations|Introduced KNIME destination|
 |5.7.2 [L]|2022-05-05|Designer|Fix for displaying list runtime parameters, which affected source and destination parameters on run window|
-|[5.7.1 [L]](https://kb.theobald-software.com/release-notes/XtractUniversal-5.7.1.html)|2022-05-04|General|New features for xu-config.exe([Release note](https://kb.theobald-software.com/release-notes/XtractUniversal-5.7.1.html))|
+|[5.7.1 [L]](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-5.7.1)|2022-05-04|General|New features for xu-config.exe([Release note](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-5.7.1))|
 |5.7.0 [L]|2022-04-25|Table|Added graphical where clause editor.|
 |5.6.3 [L]|2022-04-11|ODP|Selections can now be parameterized with lists of strings|
 |5.6.2 [M]|2022-04-07|BW Cube|Now allowing extractions without measure selections in MDX mode. Added support for additional options in interval/complex BEx variable selections.|
 |5.6.1 [L]|2022-04-05|Destinations|Exasol destination: fixed support for INT8 columns & data provider update to version 7.1.4|
-|[5.6.0 [M]](https://kb.theobald-software.com/release-notes/XtractUniversal-5.6.0.html)|2022-04-04|BW Cube|New BWCube extractor (breaking)([Release note](https://kb.theobald-software.com/release-notes/XtractUniversal-5.6.0.html))|
+|[5.6.0 [M]](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-5.6.0)|2022-04-04|BW Cube|New BWCube extractor (breaking)([Release note](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-5.6.0))|
 |5.5.0 [M]|2022-03-31|Table Join|Removed deprecated TableJoin component (JOINS are still supported by the Table component)|
 |5.4.22 [L]|2022-03-28|Designer|About window was refactored|
-|[5.4.21 [L]](https://kb.theobald-software.com/release-notes/XtractUniversal-5.4.21.html)|2022-03-28|Designer|Improvement on change source and change destination windows' click flows.([Release note](https://kb.theobald-software.com/release-notes/XtractUniversal-5.4.21.html))|
-|[5.4.20 [L]](https://kb.theobald-software.com/release-notes/XtractUniversal-5.4.20.html)|2022-03-25|Designer|Fix for log window's date filters([Release note](https://kb.theobald-software.com/release-notes/XtractUniversal-5.4.20.html))|
+|[5.4.21 [L]](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-5.4.21)|2022-03-28|Designer|Improvement on change source and change destination windows' click flows.([Release note](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-5.4.21))|
+|[5.4.20 [L]](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-5.4.20)|2022-03-25|Designer|Fix for log window's date filters([Release note](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-5.4.20))|
 |5.4.19 [L]|2022-03-23|General|Added upload check script in order to confirm if the setup file has the expected version|
 |5.4.18 [L]|2022-03-16|BAPI|Fixed an issue where runtime parameters inside of table rows were not applied correctly (Bug introduced in 5.4.0)|
-|[5.4.17 [L]](https://kb.theobald-software.com/release-notes/XtractUniversal-5.4.17.html)|2022-03-15|Designer|Fix for the destination settings dialog, which was not correctly loading existing settings. Fix for an issue in the run window, where long running extraction involving a SQL destination would crash the designer.([Release note](https://kb.theobald-software.com/release-notes/XtractUniversal-5.4.17.html))|
+|[5.4.17 [L]](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-5.4.17)|2022-03-15|Designer|Fix for the destination settings dialog, which was not correctly loading existing settings. Fix for an issue in the run window, where long running extraction involving a SQL destination would crash the designer.([Release note](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-5.4.17))|
 |5.4.16 [L]|2022-03-14|General|TLS errors when opening a Postgres connection are now more descriptive.|
 |5.4.15 [L]|2022-03-10|General|Fixed occasional crashes in cached Cube and Bapi extractions. These Extraction types can contain empty cells, even in numeric columns. The cache did not handle this case and tried parse the empty string a a number. Added special cases to the cache reader.|
-|[5.4.14 [M]](https://kb.theobald-software.com/release-notes/XtractUniversal-5.4.14.html)|2022-03-10|Destinations|Fix for Snowflake destination transaction control([Release note](https://kb.theobald-software.com/release-notes/XtractUniversal-5.4.14.html))|
+|[5.4.14 [M]](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-5.4.14)|2022-03-10|Destinations|Fix for Snowflake destination transaction control([Release note](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-5.4.14))|
 |5.4.13 [M]|2022-03-08|General|Fixed an issue where system clock changes could cause errors |
-|[5.4.12 [L]](https://kb.theobald-software.com/release-notes/XtractUniversal-5.4.12.html)|2022-03-07|Setup|Python setup script([Release note](https://kb.theobald-software.com/release-notes/XtractUniversal-5.4.12.html))|
+|[5.4.12 [L]](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-5.4.12)|2022-03-07|Setup|Python setup script([Release note](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-5.4.12))|
 |5.4.11 [L]|2022-02-28|Designer|Fixed the destination settings window, which did not load existing configurations. Improved error handling for corrupted extractions.|
 |5.4.10 [L]|2022-02-25|Destinations|Azure Storage destination: fixed a bug where extraction would run into an error when using Append Blob type (bug introduced in 5.1.17)|
-|[5.4.9 [L]](https://kb.theobald-software.com/release-notes/XtractUniversal-5.4.9.html)|2022-02-25|Designer|Various UI/UX improvements([Release note](https://kb.theobald-software.com/release-notes/XtractUniversal-5.4.9.html))|
+|[5.4.9 [L]](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-5.4.9)|2022-02-25|Designer|Various UI/UX improvements([Release note](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-5.4.9))|
 |5.4.8 [M]|2022-02-24|Designer|Improvements for Designer authentication|
 |5.4.7 [M]|2022-02-24|Designer|Source settings: Fix for checkboxes in Plain/Ticket Issuer tab getting unticked|
-|[5.4.6 [L]](https://kb.theobald-software.com/release-notes/XtractUniversal-5.4.6.html)|2022-02-24|Designer|Fixes for handling corrupt/empty directories and files in the config and logs directories([Release note](https://kb.theobald-software.com/release-notes/XtractUniversal-5.4.6.html))|
+|[5.4.6 [L]](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-5.4.6)|2022-02-24|Designer|Fixes for handling corrupt/empty directories and files in the config and logs directories([Release note](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-5.4.6))|
 |5.4.5 [L]|2022-02-24|Server|Fix for clearing result cache of extractions without source.json|
-|[5.4.4 [L]](https://kb.theobald-software.com/release-notes/XtractUniversal-5.4.4.html)|2022-02-22|Designer|Fixed issues on the run window regarding the output displayer for Sql Server destination([Release note](https://kb.theobald-software.com/release-notes/XtractUniversal-5.4.4.html))|
+|[5.4.4 [L]](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-5.4.4)|2022-02-22|Designer|Fixed issues on the run window regarding the output displayer for Sql Server destination([Release note](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-5.4.4))|
 |5.4.3 [L]|2022-02-21|Designer|Fix for log window refreshing bug when no run is selected|
-|[5.4.2 [L]](https://kb.theobald-software.com/release-notes/XtractUniversal-5.4.2.html)|2022-02-18|General|Destination settings window uses the SAP object's name again and improvements on handling the designer disconnecting.([Release note](https://kb.theobald-software.com/release-notes/XtractUniversal-5.4.2.html))|
+|[5.4.2 [L]](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-5.4.2)|2022-02-18|General|Destination settings window uses the SAP object's name again and improvements on handling the designer disconnecting.([Release note](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-5.4.2))|
 |5.4.1 [L]|2022-02-17|Destinations|Fixed possible IndexOutOfRangeException in Oracle destination when using custom parameters e.g. in table where clauses.|
 |5.4.0 [M]|2022-02-17|BAPI|Reworked BAPI component|
-|[5.3.3 [L]](https://kb.theobald-software.com/release-notes/XtractUniversal-5.3.3.html)|2022-02-16|General|Fix for a connection issue and the designer becoming unresponsive in the destination settings.([Release note](https://kb.theobald-software.com/release-notes/XtractUniversal-5.3.3.html))|
-|[5.3.2 [L]](https://kb.theobald-software.com/release-notes/XtractUniversal-5.3.2.html)|2022-02-15|Designer|Various fixes and improvements following the 5.2.0 release.([Release note](https://kb.theobald-software.com/release-notes/XtractUniversal-5.3.2.html))|
+|[5.3.3 [L]](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-5.3.3)|2022-02-16|General|Fix for a connection issue and the designer becoming unresponsive in the destination settings.([Release note](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-5.3.3))|
+|[5.3.2 [L]](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-5.3.2)|2022-02-15|Designer|Various fixes and improvements following the 5.2.0 release.([Release note](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-5.3.2))|
 |5.3.1 [M]|2022-02-15|General|Fix for possibility of server not starting on fresh installations (broken since 5.2.0)|
 |5.3.0 [M]|2022-02-15|General|Added support for certificate SSO and reworked source details GUI|
 |5.2.1 [L]|2022-02-10|Designer|Fixed a bug where the log viewer for the web server would show the wrong logs.|
-|[5.2.0 [L]](https://kb.theobald-software.com/release-notes/XtractUniversal-5.2.0.html)|2022-02-08|Designer|Make sure to update designer AND server!([Release note](https://kb.theobald-software.com/release-notes/XtractUniversal-5.2.0.html))|
+|[5.2.0 [L]](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-5.2.0)|2022-02-08|Designer|Make sure to update designer AND server!([Release note](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-5.2.0))|
 |5.1.17 [L]|2022-02-07|Destinations|S3, Azure Storage, Google Cloud Storage: Removed unused certificate pinning from code.|
 |5.1.16 [L]|2022-02-03|Destinations|Improved error message in SSRS Destination if an Extraction did not finish successfully.|
 |5.1.15 [L]|2022-01-24|Designer|Disabling the output displaying for Sql Server destination on the run window|
 |5.1.14 [M]|2022-01-18|General|Support for DLL licenses will be removed in June 2022. Please download your JSON licenses from my.theobald-software.com.|
 |5.1.13 [M]|2022-01-17|Designer|Fix for run window that could not display the output for extractions with certain characters in their names|
-|[5.1.12 [M]](https://kb.theobald-software.com/release-notes/XtractUniversal-5.1.12.html)|2022-01-14|Destinations|Parquet: Fix for Spark compatibility mode column names that contain not supported symbols([Release note](https://kb.theobald-software.com/release-notes/XtractUniversal-5.1.12.html))|
+|[5.1.12 [M]](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-5.1.12)|2022-01-14|Destinations|Parquet: Fix for Spark compatibility mode column names that contain not supported symbols([Release note](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-5.1.12))|
 |5.1.11 [L]|2022-01-07|Destinations|Updated Tableau destination to VC++ 2015|
 |5.1.10 [L]|2022-01-03|Destinations|Hadoop destination now supports script expressions in its remote folder setting|
-|[5.1.9 [L]](https://kb.theobald-software.com/release-notes/XtractUniversal-5.1.9.html)|2022-01-03|Setup|Tableau's files are not anymore shipped along with XtractUniversal's setup([Release note](https://kb.theobald-software.com/release-notes/XtractUniversal-5.1.9.html))|
+|[5.1.9 [L]](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-5.1.9)|2022-01-03|Setup|Tableau's files are not anymore shipped along with XtractUniversal's setup([Release note](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-5.1.9))|
 |5.1.8 [L]|2021-12-22|Designer|Introducing combo runtime parameters (source and destination) and URL copy notification on run window|
 |5.1.7 [M]|2021-12-15|Designer|Fixed daylight saving time transition issue on log window|
 |5.1.6 [L]|2021-12-10|Destinations|Adding column comments for tables created by the Snowflake destination|
-|[5.1.5 [L]](https://kb.theobald-software.com/release-notes/XtractUniversal-5.1.5.html)|2021-12-09|Destinations|Introducing file size limit setting for the Snowflake destination([Release note](https://kb.theobald-software.com/release-notes/XtractUniversal-5.1.5.html))|
+|[5.1.5 [L]](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-5.1.5)|2021-12-09|Destinations|Introducing file size limit setting for the Snowflake destination([Release note](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-5.1.5))|
 |5.1.4 [L]|2021-12-02|Destinations|Fix for uploading data into Snowflake when path or file have white spaces or special characters|
-|[5.1.3 [M]](https://kb.theobald-software.com/release-notes/XtractUniversal-5.1.3.html)|2021-12-01|Designer|Improvements and fixes for the run window([Release note](https://kb.theobald-software.com/release-notes/XtractUniversal-5.1.3.html))|
+|[5.1.3 [M]](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-5.1.3)|2021-12-01|Designer|Improvements and fixes for the run window([Release note](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-5.1.3))|
 |5.1.2 [L]|2021-11-09|Table Join|TableJoin will be removed March 2022|
 |5.1.1 [L]|2021-11-05|Destinations|Fixed intermittent Deadlocks/Timeouts in the SSRS/PBIRS Data Extension in Visual Studio.|
 |5.1.0 [L]|2021-11-04|Destinations|Introduced the Hadoop destination|
 |5.0.3 [L]|2021-11-04|Setup|Fixed missing library issue (Theobald.Persistence) for Designer-only installation|
 |5.0.2 [H]|2021-10-28|Designer|Fixed a bug that caused seemingly arbitrary error messages and erroneous dialog output after viewing extraction logs |
 |5.0.1 [M]|2021-10-20|Server|Fixes & improvements for configuration version check|
-|[5.0.0 [M]](https://kb.theobald-software.com/release-notes/XtractUniversal-5.0.0.html)|2021-10-18|General|SAP passwords are encrypted in context of XU service account (breaking)([Release note](https://kb.theobald-software.com/release-notes/XtractUniversal-5.0.0.html))|
+|[5.0.0 [M]](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-5.0.0)|2021-10-18|General|SAP passwords are encrypted in context of XU service account (breaking)([Release note](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-5.0.0))|
 |4.32.19 [L]|2021-10-13|General|Added timestamp to the metadata API. Each extraction now shows when the last run was started, too.|
 |4.32.18 [L]|2021-10-13|Destinations|Fix for handling correctly stage name's case sensitiveness on Snowflake destination|
-|[4.32.17 [L]](https://kb.theobald-software.com/release-notes/XtractUniversal-4.32.17.html)|2021-10-11|Destinations|Fixed a Bug in the PowerBI Report Server (SSRS) Destination. All pending HttpRequests were cancelled everytime the DataExtension finished generating a Report. This caused intermittent failures when multiple reports were rendered at the same time by the Report Server.([Release note](https://kb.theobald-software.com/release-notes/XtractUniversal-4.32.17.html))|
+|[4.32.17 [L]](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-4.32.17)|2021-10-11|Destinations|Fixed a Bug in the PowerBI Report Server (SSRS) Destination. All pending HttpRequests were cancelled everytime the DataExtension finished generating a Report. This caused intermittent failures when multiple reports were rendered at the same time by the Report Server.([Release note](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-4.32.17))|
 |4.32.16 [L]|2021-10-06|General|Fixed the preview mode setting, which was incorrectly disabled|
 |4.32.15 [L]|2021-09-28|Destinations|Fixed a Bug in the SSRS Plugins for the Power BI Report Server (and VS). When the connection was configured to use the identity of the user viewing the report, the credentials of the Report Server (or VS) process were used instead. This caused the HTTPS/Kerberos authentication against XU to fail.|
 |4.32.14 [L]|2021-09-23|Destinations|Power BI Destination: Fixed a bug where an error would occur in Power BI when an extraction returns 0 rows|
 |4.32.13 [L]|2021-09-22|Server|Fix for log file collision when running many extractions at once. Fix for timeout when starting more extractions than cores in the machine at once.|
 |4.32.12 [L]|2021-09-22|Destinations|Alteryx: Fixed a bug where RAW types changed from String to Blob and caused extractions to fail (introduced in 4.27.1). Updated the Alteryx SDK dependency version|
 |4.32.11 [L]|2021-09-22|Destinations|MySQL destination allows entering custom server ports and was updated to use the latest data provider for MySQL (8.0.26.0) |
-|[4.32.10 [L]](https://kb.theobald-software.com/release-notes/XtractUniversal-4.32.10.html)|2021-09-15|Destinations|S3 destination: fixed a bug in the rollback logic. Multiple internal changes.([Release note](https://kb.theobald-software.com/release-notes/XtractUniversal-4.32.10.html))|
+|[4.32.10 [L]](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-4.32.10)|2021-09-15|Destinations|S3 destination: fixed a bug in the rollback logic. Multiple internal changes.([Release note](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-4.32.10))|
 |4.32.9 [L]|2021-08-18|Destinations|Snowflake can read runtime parameters on custom sql statements|
 |4.32.8 [M]|2021-08-12|Server|Increased timeouts for starting worker processes|
 |4.32.7 [L]|2021-08-07|Designer|Option to set the bucket owner as object owner in S3 destination. (Beta) If listing S3 buckets failed, the name can now be set directly.|
@@ -272,18 +297,18 @@
 |4.32.4 [L]|2021-07-07|Destinations|Fixed a bug in MicroStrategy Attributes and Metrics generator.|
 |4.32.3 [L]|2021-07-02|Destinations|Fixed CSV Parsing Bug in SSRS Data Extension|
 |4.32.2 [L]|2021-07-02|Destinations|Fix for displaying the modes for Parquet files in Google Cloud Storage destination definition window|
-|[4.32.1 [L]](https://kb.theobald-software.com/release-notes/XtractUniversal-4.32.1.html)|2021-07-01|Designer|Several UI/UX changes([Release note](https://kb.theobald-software.com/release-notes/XtractUniversal-4.32.1.html))|
+|[4.32.1 [L]](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-4.32.1)|2021-07-01|Designer|Several UI/UX changes([Release note](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-4.32.1))|
 |4.32.0 [L]|2021-06-25|General|xu.exe/xu.elf: Added support for HTTP Basic authentication|
 |4.31.1 [L]|2021-06-23|Server|Multi-process architecture for configuration server|
 |4.31.0 [M]|2021-06-16|Report|Report component has been reworked.|
 |4.30.0 [L]|2021-06-10|Destinations|Added Query Builder UI for Reporting Services (SSRS) Data Extension in Visual Studio. Includes option to parameterize the Query String with dynamic runtime parameters. This is a breaking change for old reports (if query parameters were used). Added support for HTTPS authentication methods.|
-|[4.29.6 [L]](https://kb.theobald-software.com/release-notes/XtractUniversal-4.29.6.html)|2021-05-28|Destinations|MicroStrategy folders are now entered by their ID instead of their name. This change is breaking.([Release note](https://kb.theobald-software.com/release-notes/XtractUniversal-4.29.6.html))|
+|[4.29.6 [L]](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-4.29.6)|2021-05-28|Destinations|MicroStrategy folders are now entered by their ID instead of their name. This change is breaking.([Release note](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-4.29.6))|
 |4.29.5 [L]|2021-05-20|Designer|Fix for setting the target principal automatically on the connect window|
 |4.29.4 [L]|2021-05-19|Server|New web listener implementation|
 |4.29.3 [L]|2021-05-19|Destinations|S3 destination: when using file splitting, the uploaded part files will now be deleted when an error occurs during extraction.|
-|[4.29.2 [L]](https://kb.theobald-software.com/release-notes/XtractUniversal-4.29.2.html)|2021-05-18|Destinations|S3, Azure Storage & Google Cloud Storage destination now prepend an 'x' to object names if they don't begin with a letter. This change is breaking.([Release note](https://kb.theobald-software.com/release-notes/XtractUniversal-4.29.2.html))|
+|[4.29.2 [L]](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-4.29.2)|2021-05-18|Destinations|S3, Azure Storage & Google Cloud Storage destination now prepend an 'x' to object names if they don't begin with a letter. This change is breaking.([Release note](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-4.29.2))|
 |4.29.1 [L]|2021-05-07|Destinations|S3 destination: fixed an issue where after creating a new S3 destination or editing an existing one, the destination could not be saved.|
-|[4.29.0 [L]](https://kb.theobald-software.com/release-notes/XtractUniversal-4.29.0.html)|2021-05-07|Destinations|Added new Destination "Sql Server Reporting Services" and corresponding Data Extension Plug-ins for Visual Studio and Power BI Report Server.([Release note](https://kb.theobald-software.com/release-notes/XtractUniversal-4.29.0.html))|
+|[4.29.0 [L]](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-4.29.0)|2021-05-07|Destinations|Added new Destination "Sql Server Reporting Services" and corresponding Data Extension Plug-ins for Visual Studio and Power BI Report Server.([Release note](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-4.29.0))|
 |4.28.8 [L]|2021-05-06|Security|Better TLS error messages for cloud destinations, Xu.exe/ Xu.elf and the ConnectWindow CertificatePinning for the ConnectWindow (ConfigServer) Several behavior fixes for the ConnectWindow|
 |4.28.7 [L]|2021-04-27|ODP|Added package size setting as run parameter|
 |4.28.6 [M]|2021-04-26|General|Various fixes for date conversion|
@@ -292,7 +317,7 @@
 |4.28.3 [M]|2021-04-23|General|Fixed bug that prevented extraction's result to be cached when column level encryption was disabled|
 |4.28.2 [L]|2021-04-22|Destinations|MicroStrategy: Fixed an error in JSON creation|
 |4.28.1 [L]|2021-04-22|Destinations|Column encryption - dynamic metadata file names|
-|[4.28.0 [M]](https://kb.theobald-software.com/release-notes/XtractUniversal-4.28.0.html)|2021-04-21|Destinations|Extended script expressions in folder paths (Amazon S3 & Azure Storage)([Release note](https://kb.theobald-software.com/release-notes/XtractUniversal-4.28.0.html))|
+|[4.28.0 [M]](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-4.28.0)|2021-04-21|Destinations|Extended script expressions in folder paths (Amazon S3 & Azure Storage)([Release note](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-4.28.0))|
 |4.27.18 [L]|2021-04-19|Designer|Fix for SharePoint on Premise connection test|
 |4.27.17 [M]|2021-04-08|Destinations|Fixed bug for handling invalid TIME value on PostgreSql destination|
 |4.27.16 [L]|2021-04-07|Destinations|AzureDWH destination has been renamed to Azure Synapse Analytics (SQL pool)|
@@ -305,16 +330,16 @@
 |4.27.9 [L]|2021-03-16|Designer|Improvements for the run window and fix for displaying not handled errors|
 |4.27.8 [L]|2021-03-02|Server|Fix for handling date type in deprecated CSV metadata API (please use JSON API instead)|
 |4.27.7 [M]|2021-03-02|Destinations|Fix for HTTP - JSON destination|
-|[4.27.6 [L]](https://kb.theobald-software.com/release-notes/XtractUniversal-4.27.6.html)|2021-03-02|Setup|Fixed an Alteryx plugin installation issue and added service start conditions([Release note](https://kb.theobald-software.com/release-notes/XtractUniversal-4.27.6.html))|
+|[4.27.6 [L]](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-4.27.6)|2021-03-02|Setup|Fixed an Alteryx plugin installation issue and added service start conditions([Release note](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-4.27.6))|
 |4.27.5 [L]|2021-03-01|Destinations|Exasol: fix for invalid character error when writing DATE fields.|
 |4.27.4 [L]|2021-02-25|Server|Added referenceTable field to result columns JSON HTTP API|
 |4.27.3 [M]|2021-02-23|Destinations|Salesforce: Fixed two issues that caused extractions to fail when description texts of fields were empty or when date conversion was enabled.|
 |4.27.2 [M]|2021-02-22|Server|Fixed a bug where the parameter HTTP-API failed for BAPI, BW Cube and TableJoin extractions. This also affected the Power BI connector and Alteryx plugin (Bug introduced in 4.27.1)|
-|[4.27.1 [L]](https://kb.theobald-software.com/release-notes/XtractUniversal-4.27.1.html)|2021-02-17|Server|Added JSON HTTP API for extractions([Release note](https://kb.theobald-software.com/release-notes/XtractUniversal-4.27.1.html))|
+|[4.27.1 [L]](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-4.27.1)|2021-02-17|Server|Added JSON HTTP API for extractions([Release note](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-4.27.1))|
 |4.27.0 [L]|2021-02-11|Designer|New run extraction window|
 |4.26.2 [H]|2021-02-08|Destinations|Parquet: Fixed a bug where NULL values could cause invalid files|
 |4.26.1 [L]|2021-01-29|Server|xu-config (experimental): Fix for "License has expired" error|
-|[4.26.0 [M]](https://kb.theobald-software.com/release-notes/XtractUniversal-4.26.0.html)|2021-01-29|Destinations|Azure Storage: Added support for script expressions in folder names([Release note](https://kb.theobald-software.com/release-notes/XtractUniversal-4.26.0.html))|
+|[4.26.0 [M]](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-4.26.0)|2021-01-29|Destinations|Azure Storage: Added support for script expressions in folder names([Release note](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-4.26.0))|
 |4.25.3 [L]|2021-01-27|General|Fixed a bug where an unsupported file type was selectable in S3 and Azure Storage destinations. Fixed an issue in the Destination-Details window, where the resizing did not work properly. Fixed the logging when running extractions with column encryption enabled.|
 |4.25.2 [M]|2021-01-27|Server|Fixed a bug where the /metadata HTTP API did not work when date conversion was enabled in the destination settings. This affected our external plugins (i.e. Alteryx & Power BI Connector/Script) (Bug introduced in 4.25.0)|
 |4.25.1 [L]|2021-01-27|Designer|Fix for Designer disconnection handling|
@@ -323,19 +348,19 @@
 |4.24.2 [L]|2021-01-14|Designer|General improvements for the certificate select window|
 |4.24.1 [M]|2021-01-13|Server|Fix for ambiguous local timestamps during daylight saving time transition|
 |4.24.0 [L]|2021-01-08|Destinations|Removed OData destination|
-|[4.23.0 [L]](https://kb.theobald-software.com/release-notes/XtractUniversal-4.23.0.html)|2021-01-07|Destinations|Removed support for Tableau TDE([Release note](https://kb.theobald-software.com/release-notes/XtractUniversal-4.23.0.html))|
+|[4.23.0 [L]](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-4.23.0)|2021-01-07|Destinations|Removed support for Tableau TDE([Release note](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-4.23.0))|
 |4.22.1 [L]|2020-12-18|Destinations|Updated Exasol data provider to version 7.0.4 and improved write performance to support larger packages.|
 |4.22.0 [M]|2020-12-10|Destinations|Qlik: It is now possible to select "Column Name Styles" in the settings of the destination to avoid duplicate column names in Qlik. The "use description text for column names" option was removed.|
 |4.21.8 [L]|2020-12-02|Destinations|Performance improvements in HANA destination.|
-|[4.21.7 [L]](https://kb.theobald-software.com/release-notes/XtractUniversal-4.21.7.html)|2020-12-02|Destinations|Added support for SAP Data Warehouse Cloud.([Release note](https://kb.theobald-software.com/release-notes/XtractUniversal-4.21.7.html))|
-|[4.21.6 [M]](https://kb.theobald-software.com/release-notes/XtractUniversal-4.21.6.html)|2020-12-01|Destinations|Snowflake destination driver change: SnowSql was replaced with ODBC([Release note](https://kb.theobald-software.com/release-notes/XtractUniversal-4.21.6.html))|
+|[4.21.7 [L]](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-4.21.7)|2020-12-02|Destinations|Added support for SAP Data Warehouse Cloud.([Release note](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-4.21.7))|
+|[4.21.6 [M]](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-4.21.6)|2020-12-01|Destinations|Snowflake destination driver change: SnowSql was replaced with ODBC([Release note](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-4.21.6))|
 |4.21.5 [M]|2020-11-30|Destinations|Fix for Alteryx Plugin to support authentication with custom and windows AD users|
 |4.21.4 [L]|2020-11-27|Designer|Included vertical scroll bar in source definition window|
-|[4.21.3 [L]](https://kb.theobald-software.com/release-notes/XtractUniversal-4.21.3.html)|2020-11-20|Designer|UI fixes and improvements([Release note](https://kb.theobald-software.com/release-notes/XtractUniversal-4.21.3.html))|
+|[4.21.3 [L]](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-4.21.3)|2020-11-20|Designer|UI fixes and improvements([Release note](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-4.21.3))|
 |4.21.2 [L]|2020-11-13|Destinations|Added new AWS regions to S3 destination.|
 |4.21.1 [L]|2020-11-13|Designer|Fix for displaying extraction's primary key settings correctly |
 |4.21.0 [L]|2020-11-11|Setup|New Setup|
-|[4.20.0 [M]](https://kb.theobald-software.com/release-notes/XtractUniversal-4.20.0.html)|2020-11-06|Server|Web server access can now be restricted to custom users([Release note](https://kb.theobald-software.com/release-notes/XtractUniversal-4.20.0.html))|
+|[4.20.0 [M]](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-4.20.0)|2020-11-06|Server|Web server access can now be restricted to custom users([Release note](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-4.20.0))|
 |4.19.10 [L]|2020-11-05|Designer|Fixed an issue where certain UI elements in some windows looked blurry.|
 |4.19.9 [M]|2020-11-02|Destinations|Fix for connecting to Tableau Online|
 |4.19.8 [L]|2020-10-30|Destinations|S3 destination now supports splitting for Parquet and CSV files.|
@@ -350,31 +375,31 @@
 |4.18.11 [L]|2020-10-02|Destinations|Google Cloud Storage: A progress dialog is now shown during the communication with Google auth servers while going through the OAuth procedure.|
 |4.18.10 [L]|2020-09-30|Destinations|Fix for Snowflake row delimiter constant in the default file format creation statement|
 |4.18.9 [M]|2020-09-28|Destinations|Qlik, PowerBI: Fixed a bug where extractions would fail when no data arrives.|
-|[4.18.8 [L]](https://kb.theobald-software.com/release-notes/XtractUniversal-4.18.8.html)|2020-09-22|Designer|New status bar and other UI improvements([Release note](https://kb.theobald-software.com/release-notes/XtractUniversal-4.18.8.html))|
+|[4.18.8 [L]](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-4.18.8)|2020-09-22|Designer|New status bar and other UI improvements([Release note](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-4.18.8))|
 |4.18.7 [L]|2020-09-18|Designer|Qlik Sense: script generator now considers all possible parameters when creating the script.|
 |4.18.6 [M]|2020-09-18|Server|Fix for cleaning Tableau temporary files|
 |4.18.5 [L]|2020-09-17|Designer|Fix for custom sql window to accept new line and tab space creation|
-|[4.18.4 [M]](https://kb.theobald-software.com/release-notes/XtractUniversal-4.18.4.html)|2020-09-16|Destinations|Various fixes and improvements for Tableau([Release note](https://kb.theobald-software.com/release-notes/XtractUniversal-4.18.4.html))|
+|[4.18.4 [M]](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-4.18.4)|2020-09-16|Destinations|Various fixes and improvements for Tableau([Release note](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-4.18.4))|
 |4.18.3 [L]|2020-09-16|Designer|Fix for access restriction grid control, which was requiring a double click to change its combo boxes check state|
-|[4.18.2 [L]](https://kb.theobald-software.com/release-notes/XtractUniversal-4.18.2.html)|2020-09-15|Destinations|Included Google Cloud Platform regions for Snowflake destination ([Release note](https://kb.theobald-software.com/release-notes/XtractUniversal-4.18.2.html))|
-|[4.18.1 [M]](https://kb.theobald-software.com/release-notes/XtractUniversal-4.18.1.html)|2020-09-14|Destinations|Implemented retry logic for web requests in Azure Storage destination and in AWS S3 destination.([Release note](https://kb.theobald-software.com/release-notes/XtractUniversal-4.18.1.html))|
+|[4.18.2 [L]](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-4.18.2)|2020-09-15|Destinations|Included Google Cloud Platform regions for Snowflake destination ([Release note](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-4.18.2))|
+|[4.18.1 [M]](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-4.18.1)|2020-09-14|Destinations|Implemented retry logic for web requests in Azure Storage destination and in AWS S3 destination.([Release note](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-4.18.1))|
 |4.18.0 [M]|2020-09-14|Destinations|Added Google-Cloud-Storage destination.|
 |4.17.1 [L]|2020-09-11|Designer|New about window|
-|[4.17.0 [L]](https://kb.theobald-software.com/release-notes/XtractUniversal-4.17.0.html)|2020-09-10|Destinations|The Parquet destination now offers a compatibility mode for Apache Spark([Release note](https://kb.theobald-software.com/release-notes/XtractUniversal-4.17.0.html))|
+|[4.17.0 [L]](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-4.17.0)|2020-09-10|Destinations|The Parquet destination now offers a compatibility mode for Apache Spark([Release note](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-4.17.0))|
 |4.16.7 [L]|2020-09-07|ODP|Added 'subscription suffix' and 'update mode' run parameters|
 |4.16.6 [L]|2020-09-03|Destinations|UI fix for escape character parameter in CSV destination|
-|[4.16.5 [M]](https://kb.theobald-software.com/release-notes/XtractUniversal-4.16.5.html)|2020-08-26|Destinations|SnowSql driver version 1.2.9 is now recommended for the Snowflake destination([Release note](https://kb.theobald-software.com/release-notes/XtractUniversal-4.16.5.html))|
+|[4.16.5 [M]](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-4.16.5)|2020-08-26|Destinations|SnowSql driver version 1.2.9 is now recommended for the Snowflake destination([Release note](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-4.16.5))|
 |4.16.4 [M]|2020-08-21|Designer|Fix for bug on saving bucket in S3 definition window when using IAM role authentication mode|
 |4.16.3 [L]|2020-08-17|Designer|General UI improvements and fixes|
-|[4.16.2 [L]](https://kb.theobald-software.com/release-notes/XtractUniversal-4.16.2.html)|2020-08-17|Destinations|Qlike(Sense): Fixed a bug where QlikSense timed out after 5 minutes on the initial request ([Release note](https://kb.theobald-software.com/release-notes/XtractUniversal-4.16.2.html))|
-|[4.16.1 [L]](https://kb.theobald-software.com/release-notes/XtractUniversal-4.16.1.html)|2020-08-13|Destinations|S3 destination now logs the requests to AWS S3 API.([Release note](https://kb.theobald-software.com/release-notes/XtractUniversal-4.16.1.html))|
+|[4.16.2 [L]](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-4.16.2)|2020-08-17|Destinations|Qlike(Sense): Fixed a bug where QlikSense timed out after 5 minutes on the initial request ([Release note](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-4.16.2))|
+|[4.16.1 [L]](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-4.16.1)|2020-08-13|Destinations|S3 destination now logs the requests to AWS S3 API.([Release note](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-4.16.1))|
 |4.16.0 [L]|2020-08-07|Designer|General WPF migration for XtractDesigner and other small UI improvements|
 |4.15.0 [L]|2020-08-04|Destinations|OData destination is deprecated now. Creating/modifying destinations of type OData Atom is no longer possible. Running existing extractions is still supported until 2020-12-31.|
-|[4.14.3 [H]](https://kb.theobald-software.com/release-notes/XtractUniversal-4.14.3.html)|2020-07-31|Security|Enforcement of access restriction for the web server([Release note](https://kb.theobald-software.com/release-notes/XtractUniversal-4.14.3.html))|
+|[4.14.3 [H]](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-4.14.3)|2020-07-31|Security|Enforcement of access restriction for the web server([Release note](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-4.14.3))|
 |4.14.2 [L]|2020-07-30|Designer|Qlik Sense Script: Single quotes in where statements are now escaped; Run parameters now only appear in the script if they are selected in the Run-Dialogue.|
 |4.14.1 [L]|2020-07-27|Designer|Qlik Sense script now formats fields of type decimal and minds date conversion checkbox when formatting dates.|
-|[4.14.0 [M]](https://kb.theobald-software.com/release-notes/XtractUniversal-4.14.0.html)|2020-07-23|Destinations|Several improvements related to Parquet([Release note](https://kb.theobald-software.com/release-notes/XtractUniversal-4.14.0.html))|
-|[4.13.1 [L]](https://kb.theobald-software.com/release-notes/XtractUniversal-4.13.1.html)|2020-07-16|Destinations|Azure Storage now has folder path setting in both destination definition settings and in extraction specific destination settings. Fixed a bug where using special characters in folder paths would cause an error during upload to Azure Storage.([Release note](https://kb.theobald-software.com/release-notes/XtractUniversal-4.13.1.html))|
+|[4.14.0 [M]](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-4.14.0)|2020-07-23|Destinations|Several improvements related to Parquet([Release note](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-4.14.0))|
+|[4.13.1 [L]](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-4.13.1)|2020-07-16|Destinations|Azure Storage now has folder path setting in both destination definition settings and in extraction specific destination settings. Fixed a bug where using special characters in folder paths would cause an error during upload to Azure Storage.([Release note](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-4.13.1))|
 |4.13.0 [M]|2020-07-14|Setup|Removed SnowSQL installer|
 |4.12.1 [M]|2020-07-10|Destinations|Salesforce: Fixes for merge row processing and column name style CodeAndText with multiple primary keys|
 |4.12.0 [L]|2020-07-09|Destinations|Removed Alteryx Connect destination|
@@ -390,7 +415,7 @@
 |4.11.17 [M]|2020-06-22|Destinations|PowerBI & Alteryx plugins: Fixes & improvements for data type mapping|
 |4.11.16 [L]|2020-06-22|Server|HTTP metadata API: Fixed letter case of ABAP type IDs|
 |4.11.15 [H]|2020-06-22|Destinations|Enhancements in the communication between XtractUniversal and Snowflake's driver, SnowSql|
-|[4.11.14 [M]](https://kb.theobald-software.com/release-notes/XtractUniversal-4.11.14.html)|2020-06-17|General|Fixes for timeouts and connection issues([Release note](https://kb.theobald-software.com/release-notes/XtractUniversal-4.11.14.html))|
+|[4.11.14 [M]](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-4.11.14)|2020-06-17|General|Fixes for timeouts and connection issues([Release note](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-4.11.14))|
 |4.11.13 [L]|2020-06-12|Destinations|Salesforce: Added support for sandbox systems|
 |4.11.12 [H]|2020-06-10|Destinations|Fix for Snowflake PUT command execution and increase of log verbosity for the same destination|
 |4.11.11 [L]|2020-06-09|Destinations|Fixes for Salesforce destination|
@@ -447,22 +472,22 @@
 |4.2.26 [L]|2019-12-16|Destinations|Updates for Exasol and MySQL destination. Their data providers are now included in setup.|
 |4.2.25 [L]|2019-12-10|Destinations|Power BI: Adjusted the loading script so runtime parameters can be defined more easily|
 |4.2.24 [M]|2019-12-05|Destinations|Tableau fix for integer type handling and general enhancements|
-|[4.2.23 [H]](https://kb.theobald-software.com/release-notes/XtractUniversal-4.2.23.html)|2019-12-03|ODP|Several fixes (Bugs introduced in 4.2.15.2)([Release note](https://kb.theobald-software.com/release-notes/XtractUniversal-4.2.23.html))|
+|[4.2.23 [H]](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-4.2.23)|2019-12-03|ODP|Several fixes (Bugs introduced in 4.2.15.2)([Release note](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-4.2.23))|
 |4.2.22 [L]|2019-12-02|Destinations|Renamed "Azure Blob Storage" to "Azure Storage (Blob / Data Lake)"|
 |4.2.21 [L]|2019-11-27|Destinations|Azure Blob Storage destination: Block Blob is now the default setting (previously Append Blob)|
 |4.2.20 [M]|2019-11-22|Setup|Fixed installation of Tableau API|
 |4.2.19 [L]|2019-11-21|Setup|Improvement for uninstalling script|
-|[4.2.18 [L]](https://kb.theobald-software.com/release-notes/XtractUniversal-4.2.18.html)|2019-11-15|General|A portable version of the xu.exe running on x64 Linux can now be downloaded([Release note](https://kb.theobald-software.com/release-notes/XtractUniversal-4.2.18.html))|
+|[4.2.18 [L]](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-4.2.18)|2019-11-15|General|A portable version of the xu.exe running on x64 Linux can now be downloaded([Release note](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-4.2.18))|
 |4.2.17 [L]|2019-11-14|Table Join|Fixes for creating deprecated Table Join extractions|
 |4.2.16 [L]|2019-11-13|Destinations|Azure Blob destination now allows saving blobs in folders inside containers.|
 |4.2.15 [M]|2019-11-12|Destinations|Snowflake's driver, SnowSql, upgraded to version 1.2.0|
-|[4.2.14 [M]](https://kb.theobald-software.com/release-notes/XtractUniversal-4.2.14.html)|2019-11-11|Server|This version fixes two issues related to primary keys([Release note](https://kb.theobald-software.com/release-notes/XtractUniversal-4.2.14.html))|
+|[4.2.14 [M]](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-4.2.14)|2019-11-11|Server|This version fixes two issues related to primary keys([Release note](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-4.2.14))|
 |4.2.13 [M]|2019-11-05|Server|Fixed a bug that caused column names to be converted to UPPERCASE which caused problems for Hierarchy, Report and DeltaQ extractions|
 |4.2.12 [M]|2019-11-04|Server|Fixed a bug that caused preview runs to fail (Bug introduced in 4.2.8)|
 |4.2.11 [L]|2019-10-28|Destinations|Fix for slow performance on some Oracle destination extractions.|
-|[4.2.10 [M]](https://kb.theobald-software.com/release-notes/XtractUniversal-4.2.10.html)|2019-10-25|Destinations|Several fixes and enhancements for Snowflake destination([Release note](https://kb.theobald-software.com/release-notes/XtractUniversal-4.2.10.html))|
+|[4.2.10 [M]](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-4.2.10)|2019-10-25|Destinations|Several fixes and enhancements for Snowflake destination([Release note](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-4.2.10))|
 |4.2.9 [M]|2019-10-24|Server|Fixed a bug that caused results of delta extractions (ODP and DeltaQ) to be cached and loaded from cache (Bug introduced in 4.0.0)|
-|[4.2.8 [M]](https://kb.theobald-software.com/release-notes/XtractUniversal-4.2.8.html)|2019-10-23|Table|Several fixes and improvements([Release note](https://kb.theobald-software.com/release-notes/XtractUniversal-4.2.8.html))|
+|[4.2.8 [M]](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-4.2.8)|2019-10-23|Table|Several fixes and improvements([Release note](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-4.2.8))|
 |4.2.7 [M]|2019-10-21|Server|Fixed a bug that caused the metadata API to yield an empty list of columns. This also affects the Alteryx Plugin and Power BI Connector|
 |4.2.6 [L]|2019-10-14|Designer|Fixed a bug where updating multiple destinations would not update the last selected destination (introduced in 4.0.0) and improved destination settings UI|
 |4.2.5 [L]|2019-10-10|Destinations|Fixed the UI for CSV based destinations|
@@ -471,13 +496,13 @@
 |4.2.2 [M]|2019-10-02|Destinations|Fix for column name style in the Alteryx plugin.|
 |4.2.1 [M]|2019-10-01|Designer|Fixed a bug that prevented editing of freshly created extractions until the designer was refreshed (Bug introduced in 4.1.6.0)|
 |4.2.0 [M]|2019-09-27|Destinations|Added Snowflake destination|
-|[4.1.6 [M]](https://kb.theobald-software.com/release-notes/XtractUniversal-4.1.6.html)|2019-09-27|Destinations|Fixes for column names of database destinations and improved XSTRING support.([Release note](https://kb.theobald-software.com/release-notes/XtractUniversal-4.1.6.html))|
+|[4.1.6 [M]](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-4.1.6)|2019-09-27|Destinations|Fixes for column names of database destinations and improved XSTRING support.([Release note](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-4.1.6))|
 |4.1.5 [L]|2019-09-26|Destinations|Power BI Connector: Workaround for a timeout bug in Power BI|
 |4.1.4 [M]|2019-09-20|Server|Fixes for chaching results of Table (Compression FM) and ODP (non-Hierarchy)|
 |4.1.2 [L]|2019-09-19|Destinations|Azure Blob and AWS S3: fixed a bug where column name style option was not respected.|
-|[4.1.1 [L]](https://kb.theobald-software.com/release-notes/XtractUniversal-4.1.1.html)|2019-09-19|Destinations|Power BI Connector is now signed and can be trusted to keep the Power BI security settings on the recommended level([Release note](https://kb.theobald-software.com/release-notes/XtractUniversal-4.1.1.html))|
+|[4.1.1 [L]](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-4.1.1)|2019-09-19|Destinations|Power BI Connector is now signed and can be trusted to keep the Power BI security settings on the recommended level([Release note](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-4.1.1))|
 |4.1.0 [L]|2019-09-10|Destinations|Removed Power BI Service Destination (has been replaced by Power BI Connector Destination)|
-|[4.0.9 [M]](https://kb.theobald-software.com/release-notes/XtractUniversal-4.0.9.html)|2019-09-09|Destinations|Fixes for Column Name Style related issues introduced in version 4.0.0([Release note](https://kb.theobald-software.com/release-notes/XtractUniversal-4.0.9.html))|
+|[4.0.9 [M]](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-4.0.9)|2019-09-09|Destinations|Fixes for Column Name Style related issues introduced in version 4.0.0([Release note](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-4.0.9))|
 |4.0.8 [M]|2019-09-06|Table|Fixed a bug that caused scripted expressions to not be evaluated for the preview|
 |4.0.7 [M]|2019-09-06|Destinations|Fixed a bug that caused extractions with custom SQL statements that contain variables to fail|
 |4.0.6 [H]|2019-09-05|Destinations|Power BI Connector: Fixed an issue where Power BI would confuse regional settings causing conversion errors. Please update the .mez connector file|
@@ -486,9 +511,9 @@
 |4.0.3 [L]|2019-08-29|Destinations|New encryption option for PostgreSql destination|
 |4.0.2 [M]|2019-08-12|General|Fixed config conversion for primary keys when upgrading from versions before 4.0|
 |4.0.1 [L]|2019-08-09|Destinations|Azure Blob Storage destination now supports extractions to block blobs.|
-|[4.0.0 [M]](https://kb.theobald-software.com/release-notes/XtractUniversal-4.0.0.html)|2019-08-08|General|This release contains general changes, changes to the existing Table component as well as a new ODP component.([Release note](https://kb.theobald-software.com/release-notes/XtractUniversal-4.0.0.html))|
+|[4.0.0 [M]](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-4.0.0)|2019-08-08|General|This release contains general changes, changes to the existing Table component as well as a new ODP component.([Release note](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-4.0.0))|
 |3.14.22 [L]|2019-08-07|Setup|Fixes for portable Designer zip|
-|[3.14.21 [L]](https://kb.theobald-software.com/release-notes/XtractUniversal-3.14.21.html)|2019-07-29|Destinations|Power BI Connector: General Availibility (end of beta)([Release note](https://kb.theobald-software.com/release-notes/XtractUniversal-3.14.21.html))|
+|[3.14.21 [L]](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-3.14.21)|2019-07-29|Destinations|Power BI Connector: General Availibility (end of beta)([Release note](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-3.14.21))|
 |3.14.20 [M]|2019-07-23|General|Updated NW RFC to 7.50 PL 4|
 |3.14.19 [L]|2019-07-18|Destinations|Friendly message for failed destinations that require extra components and PostgreSQL full server version. |
 |3.14.18 [L]|2019-07-15|General|Alteryx Plugin: Fixed app.config for plugin setup|
@@ -520,14 +545,14 @@
 |3.12.3 [L]|2019-03-29|Designer|UI improvements for Connect window|
 |3.12.2 [L]|2019-03-29|Destinations|Fixed a bug in the Exasol destination that caused invalid casts.|
 |3.12.1 [L]|2019-03-28|Destinations|Fix for handling empty key fields in Redshift destination.|
-|[3.12.0 [M]](https://kb.theobald-software.com/release-notes/XtractUniversal-3.12.0.html)|2019-03-26|General|Fixes & improvements for text encodings (CSV, OData) and xu.exe, updated to .NET Framework 4.6.1([Release note](https://kb.theobald-software.com/release-notes/XtractUniversal-3.12.0.html))|
+|[3.12.0 [M]](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-3.12.0)|2019-03-26|General|Fixes & improvements for text encodings (CSV, OData) and xu.exe, updated to .NET Framework 4.6.1([Release note](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-3.12.0))|
 |3.11.2 [L]|2019-03-15|Destinations|ConfigConverter renames old destinations containing space or @-symbol|
 |3.11.1 [M]|2019-03-12|Server|Fix for aborting extractions and clearing result cache (Bug introduced in 3.11.0)|
-|[3.11.0 [M]](https://kb.theobald-software.com/release-notes/XtractUniversal-3.11.0.html)|2019-03-08|Security|Access to the web server can now be restricted to Active Directory users with Designer read access([Release note](https://kb.theobald-software.com/release-notes/XtractUniversal-3.11.0.html))|
+|[3.11.0 [M]](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-3.11.0)|2019-03-08|Security|Access to the web server can now be restricted to Active Directory users with Designer read access([Release note](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-3.11.0))|
 |3.10.1 [L]|2019-03-06|Destinations|Fixes for compatibility to MicroStrategy 2019.|
 |3.10.0 [L]|2019-03-01|General|Removed support for 32 bit versions of Windows|
 |3.9.1 [L]|2019-02-22|Destinations|Fixed a bug where the extracted row count was calculated wrong in Azure Blob destination|
-|[3.9.0 [L]](https://kb.theobald-software.com/release-notes/XtractUniversal-3.9.0.html)|2019-02-22|Server|The server can now impersonate Active Directory users using Kerberos([Release note](https://kb.theobald-software.com/release-notes/XtractUniversal-3.9.0.html))|
+|[3.9.0 [L]](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-3.9.0)|2019-02-22|Server|The server can now impersonate Active Directory users using Kerberos([Release note](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-3.9.0))|
 |3.8.7 [M]|2019-02-18|Table|Updated Z_THEO_READ_TABLE to 1.10|
 |3.8.6 [L]|2019-02-18|Destinations|Fixes for value conversion in Redshift destination.|
 |3.8.5 [M]|2019-02-13|Table|Reverted back to Z_THEO_READ_TABLE 1.9|
@@ -546,14 +571,14 @@
 |3.7.3 [M]|2019-01-23|Table|Updated Z_THEO_READ_TABLE to 1.4|
 |3.7.2 [L]|2019-01-23|Setup|Silent setup installs Tableau API and doesn't initiate config conversion|
 |3.7.1 [L]|2019-01-23|Destinations|Changed isolation level to READ COMMITTED for Oracle destination to fix an error that may occur in some recent db releases.|
-|[3.7.0 [L]](https://kb.theobald-software.com/release-notes/XtractUniversal-3.7.0.html)|2019-01-22|Table|Added ABAP code + transport request for Z_THEO_READ_TABLE, removed old ABAP files([Release note](https://kb.theobald-software.com/release-notes/XtractUniversal-3.7.0.html))|
+|[3.7.0 [L]](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-3.7.0)|2019-01-22|Table|Added ABAP code + transport request for Z_THEO_READ_TABLE, removed old ABAP files([Release note](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-3.7.0))|
 |3.6.6 [M]|2019-01-16|Report|Fix for empty column descriptions|
-|[3.6.5 [M]](https://kb.theobald-software.com/release-notes/XtractUniversal-3.6.5.html)|2019-01-16|Destinations|Updated data provider support for the HANA and Oracle destinations.([Release note](https://kb.theobald-software.com/release-notes/XtractUniversal-3.6.5.html))|
+|[3.6.5 [M]](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-3.6.5)|2019-01-16|Destinations|Updated data provider support for the HANA and Oracle destinations.([Release note](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-3.6.5))|
 |3.6.4 [L]|2019-01-10|Destinations|Alteryx: Fix for column name style|
 |3.6.3 [L]|2019-01-07|Server|Fixed a bug where the libraries for Tableau destination could not be found|
 |3.6.2 [M]|2019-01-03|DeltaQ|Fix for empty column description texts|
 |3.6.1 [M]|2018-12-10|Security|Fix for converting old extractions that were restricted to built-in admin/administrators only|
-|[3.6.0 [M]](https://kb.theobald-software.com/release-notes/XtractUniversal-3.6.0.html)|2018-12-04|General|Improved server robustness and parallelization([Release note](https://kb.theobald-software.com/release-notes/XtractUniversal-3.6.0.html))|
+|[3.6.0 [M]](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-3.6.0)|2018-12-04|General|Improved server robustness and parallelization([Release note](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-3.6.0))|
 |3.5.14 [M]|2018-11-22|Designer|Fixed links of question mark icons|
 |3.5.13 [M]|2018-11-22|Designer|Fix for Designer/Server communication ("The output byte buffer is too small to contain the encoded data")|
 |3.5.12 [L]|2018-10-19|Query|Fixed a bug that caused queries without selection parameters to fail|
@@ -616,7 +641,7 @@
 |3.0.3 [M]|2018-05-24|Security|Option "Require SAP credentials" implicitly disables result cache now|
 |3.0.2 [H]|2018-05-24|Security|Option "Require SAP credentials" could not be modified for all extraction types except for Hierarchy, Query and Table|
 |3.0.1 [M]|2018-05-22|Server|Fix for converting security settings|
-|[3.0.0 [M]](https://kb.theobald-software.com/release-notes/XtractUniversal-3.0.0.html)|2018-05-17|General|Improvements for Designer/Server communication, security and configuration persistence([Release note](https://kb.theobald-software.com/release-notes/XtractUniversal-3.0.0.html))|
+|[3.0.0 [M]](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-3.0.0)|2018-05-17|General|Improvements for Designer/Server communication, security and configuration persistence([Release note](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-3.0.0))|
 |2.109.7 [M]|2018-05-16|BW Cube|Fix for decimal count in MDX mode|
 |2.109.6 [L]|2018-04-17|General|Updated EULA|
 |2.109.5 [L]|2018-04-06|Destinations|Extended error logging in exasol destination.|

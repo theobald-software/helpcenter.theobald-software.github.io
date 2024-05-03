@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "Fixed installation of Tableau API",
+        "Component": "Setup",
+        "Product": "XtractUniversal"
+    },
+    {
+        "Message": "Fix for loading iDoc Schema after loading plain data",
+        "Component": "Idoc",
+        "Product": "ERPConnect"
+    }
+]

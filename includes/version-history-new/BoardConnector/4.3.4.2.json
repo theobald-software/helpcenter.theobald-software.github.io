@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for \"timeout while trying to lock server list\"",
+        "Component": "DeltaQ",
+        "Product": "XtractKernel"
+    }
+]

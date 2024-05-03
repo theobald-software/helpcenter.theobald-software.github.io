@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for incomplete logon data in some rare cases",
+        "Component": "SNC",
+        "Product": "ERPConnect"
+    }
+]

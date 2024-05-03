@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for integer/float export parameters and big endian systems (classic RFC)",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    }
+]

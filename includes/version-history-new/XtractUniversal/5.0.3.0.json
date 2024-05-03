@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed missing library issue (Theobald.Persistence) for Designer-only installation",
+        "Component": "Setup",
+        "Product": "XtractUniversal"
+    }
+]

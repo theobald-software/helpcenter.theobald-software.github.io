@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Property DecimalSeparator of MDXExecuter class is withdrawn. It's not necessary anymore to set this value.",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

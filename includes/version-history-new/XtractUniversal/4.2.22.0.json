@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Renamed \"Azure Blob Storage\" to \"Azure Storage (Blob / Data Lake)\"",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

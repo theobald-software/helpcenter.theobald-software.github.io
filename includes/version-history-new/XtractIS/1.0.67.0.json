@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for multiple, parallel table extractions in background (better management for timestamps",
+        "Component": "Table",
+        "Product": "XtractIS"
+    }
+]

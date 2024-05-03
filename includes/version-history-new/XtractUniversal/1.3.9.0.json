@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Some fixes for CSV value formatting",
+        "Component": "Server",
+        "Product": "XtractUniversal"
+    }
+]

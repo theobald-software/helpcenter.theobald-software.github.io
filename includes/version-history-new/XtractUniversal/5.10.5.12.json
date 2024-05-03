@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Refactored all MDX RFC Functions to static creation; added support for non-unicode SAP systems.",
+        "Component": "BW Cube",
+        "Product": "Theobald.Extractors"
+    }
+]

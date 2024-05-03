@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Bugfix for logging function modules that contain slashes in their name",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

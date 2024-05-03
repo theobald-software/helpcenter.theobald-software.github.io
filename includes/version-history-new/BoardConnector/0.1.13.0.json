@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "ExtractionMetadata.Description returns the value of ExtractionMetadata.Name if the description is empty",
+        "Component": "BOARD API",
+        "Product": "BoardConnector"
+    }
+]

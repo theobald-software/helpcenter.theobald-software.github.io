@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed intermittent Deadlocks/Timeouts in the SSRS/PBIRS Data Extension in Visual Studio.",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

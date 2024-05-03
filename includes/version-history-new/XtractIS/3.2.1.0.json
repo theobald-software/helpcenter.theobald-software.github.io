@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added support for SNC RFC destination",
+        "Component": "BW Loader",
+        "Product": "XtractIS"
+    }
+]

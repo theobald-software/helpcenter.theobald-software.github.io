@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for Drop And Create update policy in MicroStrategy destination.",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

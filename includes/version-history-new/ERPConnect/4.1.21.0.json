@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for IdocSchemaGenerator for SAP user names that contain a blank",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]
