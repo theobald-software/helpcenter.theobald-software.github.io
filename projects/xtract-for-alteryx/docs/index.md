@@ -57,7 +57,7 @@ Coming soon...
   url: https://theobald-software.com/en/resources/events-and-webinars/
   
 - title: Technical Newsletter
-  image: ./assets/images/logos/business-content/technical-newsletter-XfA.svg
+  image: ./assets/images/logos/business-content/technical-newsletterXfA.svg
   content: Our technical newsletter informs you once a month about new features, releases, breaking changes and articles.
   url: https://theobald-software.com/en/newsletter/
 
