@@ -13,7 +13,7 @@ site_description: >-
 #repo_url: https://github.com/theobald-software/oh.theobald-software.github.io.git
 
 # Copyright
-copyright: Copyright &copy; 2024 Theobald Software GmbH <br> <span style="color:#ED1A33"><a  style="color:#ED1A33" href="https://theobald-software.com/en/privacy-policy/" target="_blank" rel="noopener">privacy policy</a> - <a  style="color:#ED1A33" href="https://theobald-software.com/en/legal-notice" target="_blank" rel="noopener">legal notice</a> - <a style="color:#ED1A33" href="https://theobald-software.com/en/" target="_blank" rel="noopener">website</a></span>
+copyright: Copyright &copy; 2024 Theobald Software GmbH <br> <span style="color:#0076BE"><a  style="color:#0076BE" href="https://theobald-software.com/en/privacy-policy/" target="_blank" rel="noopener">privacy policy</a> - <a  style="color:#0076BE" href="https://theobald-software.com/en/legal-notice" target="_blank" rel="noopener">legal notice</a> - <a style="color:#0076BE" href="https://theobald-software.com/en/" target="_blank" rel="noopener">website</a></span>
 watch:
   - includes
 
