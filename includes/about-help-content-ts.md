@@ -1,8 +1,8 @@
-### About the Documentation Content of Theobald Software
+### About the User Documentation of Theobald Software
 
-The documentation of Theobald Software is designed to introduce readers to the main functions of {{ productName }}.
+The user documentation of Theobald Software is designed to introduce readers to the main functions of {{ productName }}.
 
-Theobald Software's claim is to keep the documentation up to date according to the latest product version. 
+Theobald Software's claim is to keep the user documentation up to date according to the latest product version. 
 Information concerning the older version is removed gradually from the documentation content. 
 It is generally recommended to always install the latest version of the product.
 
@@ -11,11 +11,11 @@ Theobald Software's claim is to always update all the used screenshots of other 
 ©2024 Theobald Software GmbH. All rights reserved.
 
 ### Target group and audience
-This documentation is intended for all users of {{ productName }}. 
-The documentation offers an overview of the interface, of the navigation and of the basic information to the users who have never or rarely worked with the product. 
-Experienced users can find more detailed information on more complex topics and use the documentation for reference.
+This documentation is created for all users of {{ productName }}. 
+The user documentation offers an overview of the interface, of the navigation and of the basic information to the users who never or rarely worked with the product. 
+Experienced users can find more detailed information on more complex topics and use the user documentation for reference.
 
-Reading the "QuickStart" section is the prerequisite for working with the product. 
+Reading the "Getting Started" section is the prerequisite for working with the product. 
 The documentation can also be useful during the evaluation phase. 
 
 ### Typographical conventions
@@ -44,7 +44,7 @@ Example:
 
 !!! warning  
 	**Single Sign-On availability.**<br>
-	ABAP application server has to run on a Windows OS and SNC with Kerberos encryption setup on SAP.
+	Make sure that ABAP application server runs on a Windows OS and SNC with Kerberos encryption setup on SAP.
 
 
 !!! note
