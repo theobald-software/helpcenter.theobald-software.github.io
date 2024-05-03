@@ -1,0 +1,8 @@
+[
+    {
+        "Message": "Removed support for Tableau TDE",
+        "Component": "Destinations",
+        "Product": "XtractUniversal",
+        "ReleaseNote": "# Xtract Universal 4.23.0\n\nTableau TDE support has been removed. All existing destinations will produce .hyper files instead of .tde files now. No manual action required."
+    }
+]

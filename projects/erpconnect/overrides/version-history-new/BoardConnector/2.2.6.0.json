@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "All column names are now backward-compatible with data readers before 2.x",
+        "Component": "General",
+        "Product": "BoardConnector"
+    }
+]

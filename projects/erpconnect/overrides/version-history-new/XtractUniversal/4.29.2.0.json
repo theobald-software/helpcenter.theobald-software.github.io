@@ -1,0 +1,9 @@
+[
+    {
+        "Message": "S3, Azure Storage & Google Cloud Storage destination now prepend an 'x' to object names if they don't begin with a letter. This change is breaking.",
+        "Component": "Destinations",
+        "Product": "XtractUniversal",
+        "IsBreaking": true,
+        "ReleaseNote": "- If the name of an uploaded object does not begin with letter, it will be prefixed with an 'x'. \nE.g. an object that would normally be called `_namespace_tabname.csv` will now be called\n`x_namespace_tabname.csv` when uploaded to S3, Azure Storage or Google Cloud Storage.\n- This change is to make sure that all uploaded object are compatible with Azure Data Factory, \nHadoop and Spark, which require object names to begin with a letter or give special meaning to \nobjects whose name starts with certain non-alphabetic characters. E.g. in Spark all objects that\nbegin with an `_` or `.` are hidden.\n- This change is breaking."
+    }
+]

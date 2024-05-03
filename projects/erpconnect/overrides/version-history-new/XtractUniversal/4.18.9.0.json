@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Qlik, PowerBI: Fixed a bug where extractions would fail when no data arrives.",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

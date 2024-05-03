@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Improved error message when Designer is still running during setup",
+        "Component": "Setup",
+        "Product": "BoardConnector"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "R3Connection.Clone() copies SNCSettings.OwnName now",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    }
+]

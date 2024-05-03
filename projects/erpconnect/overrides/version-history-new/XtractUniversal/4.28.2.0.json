@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "MicroStrategy: Fixed an error in JSON creation",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

@@ -1,0 +1,8 @@
+[
+    {
+        "Message": "Power BI Connector: Fixed an issue where Power BI would confuse regional settings causing conversion errors. Please update the .mez connector file",
+        "Component": "Destinations",
+        "Product": "XtractUniversal",
+        "IsCritical": true
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Classic RFC: Fixed memory leak",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

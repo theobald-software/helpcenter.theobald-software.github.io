@@ -1,0 +1,13 @@
+[
+    {
+        "Message": "Added some ergonomics for arrays and DateTime formats.\nAdded JSON serialization for various classes.",
+        "Component": "General",
+        "Product": "Common"
+    },
+    {
+        "Message": "Added common base for web worker, HTTP server backend and running extractions. An accompanying framework for writing tests for this stack was added as well. Various bug fixes.",
+        "Component": "General",
+        "Product": "Theobald.Server",
+        "ReleaseNote": "## Theobald Server 3.8\n\n- Added common base for web worker, HTTP server backend and running extractions.\n- An accompanying framework for writing tests for this stack was added as well.\n- Fixed some authentication and authorization issues in the new web server backend.\n- Fixed a bug in the HTTP server causing it to carry state to a new request if the previous one ran into an error.\n- Added service and source level support for the new runtime and web server.\n- Refactored the handling of parameters for running extractions."
+    }
+]

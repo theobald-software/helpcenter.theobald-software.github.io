@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "BWCube and MDXExecuter class now support formatted measures (use property UseFormattedValue to turn this feature on)",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

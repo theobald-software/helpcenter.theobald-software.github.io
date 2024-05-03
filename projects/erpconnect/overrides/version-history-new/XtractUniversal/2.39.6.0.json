@@ -1,0 +1,62 @@
+[
+    {
+        "Message": "Set \"Auto Repair\" option to invisible",
+        "Component": "DeltaQ",
+        "Product": "XtractUniversal"
+    },
+    {
+        "Message": "Correction for line feed symbols in OLAP cells",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Correction for escaping special characters when saving/loading IDoc data from plain files ",
+        "Component": "Idoc",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Connection is closed properly when receiving an SSO ticket",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Lowered probability of name collisions for XML trace files",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Fix for assigning localized strings (e. g. \"23,5\") to numeric parameters / structure elements (was broken since 4.19.3)",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Improved error message for conversion errors before sending values to SAP",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Fix for range check of BCD values",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "New algorithm for creating TIDs",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Fix for manually created string TIDs with less than 24 characters",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Correction for carriage return symbols in certain resultsets",
+        "Component": "BW Cube",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Correction for empty cells at the end of resultsets produced by BEX mode extractions",
+        "Component": "BW Cube",
+        "Product": "XtractKernel"
+    }
+]

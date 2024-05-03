@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed a bug where extractions would run into an error if the source or destination parameter is set.",
+        "Component": "Server",
+        "Product": "XtractUniversal"
+    }
+]

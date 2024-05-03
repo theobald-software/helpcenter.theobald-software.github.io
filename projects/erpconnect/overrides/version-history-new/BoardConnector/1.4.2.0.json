@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Table packages are now always processed asynchronous",
+        "Component": "Table",
+        "Product": "BoardConnector"
+    }
+]

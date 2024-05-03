@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for crash on Report dialog when function module is not installed properly",
+        "Component": "Report",
+        "Product": "BoardConnector"
+    }
+]

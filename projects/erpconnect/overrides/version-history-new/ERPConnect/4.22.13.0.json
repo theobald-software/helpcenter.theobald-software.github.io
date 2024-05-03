@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added support for String.Compare method in LINQ provider.",
+        "Component": "LINQtoERP",
+        "Product": "ERPConnect"
+    }
+]

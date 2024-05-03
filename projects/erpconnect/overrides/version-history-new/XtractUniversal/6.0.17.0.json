@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Salesforce: Fixed a bug that caused the extraction to fail when multiple primary keys were selected",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

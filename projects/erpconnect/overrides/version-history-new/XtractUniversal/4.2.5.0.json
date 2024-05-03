@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed the UI for CSV based destinations",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "CSV: Empty column/row/decimal separtors and quote symbol are replaced with defaults",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

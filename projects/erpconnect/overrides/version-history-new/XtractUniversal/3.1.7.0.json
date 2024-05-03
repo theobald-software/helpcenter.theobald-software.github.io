@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for connect window showing when connected",
+        "Component": "Designer",
+        "Product": "XtractUniversal"
+    }
+]

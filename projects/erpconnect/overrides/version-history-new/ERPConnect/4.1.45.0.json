@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Bugfix for BCD values in tables",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

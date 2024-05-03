@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added UAC manifest to installer",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

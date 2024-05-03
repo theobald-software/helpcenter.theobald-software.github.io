@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Updated Bouncy Castle to version 2.0",
+        "Component": "Security",
+        "Product": "Theobald.Extractors"
+    }
+]

@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "Classic RFC: Fixed memory leak",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Updated to 5.2.1.0",
+        "Component": "ERPConnect",
+        "Product": "XtractKernel"
+    }
+]

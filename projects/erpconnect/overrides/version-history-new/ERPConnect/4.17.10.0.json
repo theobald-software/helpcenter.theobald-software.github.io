@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for receiving INT in table parameters from big endian systems (classic RFC)",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    }
+]

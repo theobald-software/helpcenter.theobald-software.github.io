@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "Added default server and port for xu.exe",
+        "Component": "General",
+        "Product": "XtractUniversal"
+    },
+    {
+        "Message": "Uses better custom functions as default",
+        "Component": "Table",
+        "Product": "XtractKernel"
+    }
+]

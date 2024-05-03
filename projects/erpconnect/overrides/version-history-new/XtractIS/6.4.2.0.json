@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "License forward compatibility improvement for supported components.",
+        "Component": "General",
+        "Product": "XtractIS"
+    },
+    {
+        "Message": "License forward compatibility improvement for supported components and destinations.",
+        "Component": "Licensing",
+        "Product": "Common"
+    }
+]

@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "Fixed byte buffer manager empty string writing",
+        "Component": "General",
+        "Product": "Common"
+    },
+    {
+        "Message": "Fixed column encryption buffer writing validation",
+        "Component": "General",
+        "Product": "Theobald.Extractors"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed a bug where web requests with invalid URLs did not get a proper response",
+        "Component": "Server",
+        "Product": "BoardConnector"
+    }
+]

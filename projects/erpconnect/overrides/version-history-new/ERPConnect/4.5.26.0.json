@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added support for integer components in export structures with big endian systems",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for Date and Decimal values in EXASOL destination",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

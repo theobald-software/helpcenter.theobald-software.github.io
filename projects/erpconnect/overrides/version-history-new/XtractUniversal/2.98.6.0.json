@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Select options support either variables or scripted expression, but not both",
+        "Component": "DeltaQ",
+        "Product": "XtractUniversal"
+    }
+]

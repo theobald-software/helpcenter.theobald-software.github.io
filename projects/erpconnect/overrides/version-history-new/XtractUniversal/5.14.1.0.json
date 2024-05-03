@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "Fixed an error, which made it impossible to create new extractions.\nFixed the handling of default values for the source of a new extraction.",
+        "Component": "Designer",
+        "Product": "XtractUniversal"
+    },
+    {
+        "Message": "Removed a senseless default for the associated source of an extraction.",
+        "Component": "General",
+        "Product": "Theobald.Server"
+    }
+]

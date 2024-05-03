@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Installation of Power BI Report Server Plugin is now an optional component in the setup and not selected by default.",
+        "Component": "Setup",
+        "Product": "XtractUniversal"
+    }
+]

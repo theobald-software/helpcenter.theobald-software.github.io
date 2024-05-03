@@ -1,0 +1,8 @@
+[
+    {
+        "Message": "SnowSql driver version 1.2.9 is now recommended for the Snowflake destination",
+        "Component": "Destinations",
+        "Product": "XtractUniversal",
+        "ReleaseNote": "### SnowSql driver version 1.2.9 is now recommended for the Snowflake destination\n\nThis includes the following:\n- Test of XtractUniversal + SnowSql 1.2.9 + Snowflake\n- Improvement for SQL statements identing within Snowflake destination\n- Fix for displaying the server version when testing Snowflake connection"
+    }
+]

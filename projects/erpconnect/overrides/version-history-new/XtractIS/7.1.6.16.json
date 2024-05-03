@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Enabled 'dateTo' property of Hierarchy catalog entry to be set by runtime parameter. Improved value validation and error handling.",
+        "Component": "Hierarchy",
+        "Product": "Theobald.Extractors"
+    }
+]

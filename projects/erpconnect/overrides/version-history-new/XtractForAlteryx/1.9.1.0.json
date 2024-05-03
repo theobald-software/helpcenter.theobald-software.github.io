@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "Fixes for showing error messages while retrieving available Table function modules (e. g. missing authorizations for ENLFDIR)",
+        "Component": "Designer",
+        "Product": "XtractForAlteryx"
+    },
+    {
+        "Message": "Fixed warning for ENLFDIR permissions",
+        "Component": "General",
+        "Product": "Theobald.Extractors"
+    }
+]

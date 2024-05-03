@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Replaced AbapSignedNumericCharacter.ToLong() with AbapSignedNumericCharacter.ToDecimal()",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

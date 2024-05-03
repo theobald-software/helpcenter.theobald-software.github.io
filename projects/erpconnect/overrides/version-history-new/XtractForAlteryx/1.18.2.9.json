@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "BICS: Fix for result copying",
+        "Component": "BW Cube",
+        "Product": "Theobald.Extractors"
+    }
+]

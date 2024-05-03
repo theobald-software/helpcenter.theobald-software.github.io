@@ -1,0 +1,13 @@
+[
+    {
+        "Message": "Fixed an Alteryx plugin installation issue and added service start conditions",
+        "Component": "Setup",
+        "Product": "XtractUniversal",
+        "ReleaseNote": "## Xtract Universal - 4.27.6\n- To find a valid Alteryx installation, XU's setup will not only check its folder, but for the file \bin\RunTimeData\DefaultSettings.xml, which is mandatory for the plugin installation. If it is not found, setup will consider that there is no Alteryx instance was found.\n\n- XtractUniversal's service now is started according to some conditions after installation:\n	1. Service is freshly installed\n	2. Service existed before and is set to start automatically\n	3. Service existed before, is set to start manually, but was running before new installation"
+    },
+    {
+        "Message": "Fixed two issues with runtime parameters where assigning selection parameters would not be saved and the default type was set to an invalid value",
+        "Component": "General",
+        "Product": "Theobald.Extractors"
+    }
+]

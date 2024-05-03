@@ -1,0 +1,17 @@
+[
+    {
+        "Message": "The setup can now be run without admin privileges to install for user-only Alteryx instances",
+        "Component": "General",
+        "Product": "XtractForAlteryx"
+    },
+    {
+        "Message": "Classic RFC: Fixed a bug that caused import parameters in server and callback functions to be filled with garbage values when the application server did not supply them in the call ",
+        "Component": "RFCServer",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "VC++ 2013 setup was replaced by directly used DLLs (msvcp120.dll and msvcr120.dll)",
+        "Component": "General",
+        "Product": "Common"
+    }
+]

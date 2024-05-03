@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "Fixed a bug where the HTTP server would not attach CORS headers on failed authentication attempts.\nRework the handling of parameters in the new runtime.\nServices with scalar runtime parameters now support the GET request type. Values for the scalar parameters can be supplied as query parameter.",
+        "Component": "Runtime",
+        "Product": "YunIO"
+    },
+    {
+        "Message": "Fix a bug where the HTTP server would not attach CORS headers on failed authentication attempts.\nRework the handling of parameters in the new runtime.",
+        "Component": "General",
+        "Product": "Theobald.Server"
+    }
+]

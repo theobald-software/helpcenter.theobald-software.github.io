@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "NW: Added error message for unsupported non-Unicode destinations ",
+        "Component": "RFCServer",
+        "Product": "ERPConnect"
+    }
+]

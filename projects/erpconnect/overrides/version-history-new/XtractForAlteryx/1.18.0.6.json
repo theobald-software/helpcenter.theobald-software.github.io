@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "BICS: Fixes for filter preview",
+        "Component": "BW Cube",
+        "Product": "Theobald.Extractors"
+    },
+    {
+        "Message": "BICS: Improve session initialization",
+        "Component": "BW Cube",
+        "Product": "Theobald.Extractors"
+    }
+]

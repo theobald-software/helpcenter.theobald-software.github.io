@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed a bug that caused extractions with empty result sets to fail.",
+        "Component": "BW Cube",
+        "Product": "Theobald.Extractors"
+    }
+]

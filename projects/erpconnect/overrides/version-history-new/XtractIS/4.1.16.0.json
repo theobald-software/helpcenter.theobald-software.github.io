@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "Improved error dialogs",
+        "Component": "General",
+        "Product": "XtractIS"
+    },
+    {
+        "Message": "Improved error dialogs",
+        "Component": "General",
+        "Product": "XtractKernel"
+    }
+]

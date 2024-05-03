@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed a bug in the ConnectionManager",
+        "Component": "General",
+        "Product": "XtractIS"
+    }
+]

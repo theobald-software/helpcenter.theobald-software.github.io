@@ -1,0 +1,8 @@
+[
+    {
+        "Message": "Various fixes & improvements for Table GUI",
+        "Component": "Table",
+        "Product": "Theobald.Extractors",
+        "ReleaseNote": "## Theobald.Extractors 1.15.6\n\n* Checking/unchecking conversion routing of a single column no longer affects other columns\n* Metadata refresh doesn't disable conversion routines any more\n* Metadata refresh retrieves index information now\n\n"
+    }
+]

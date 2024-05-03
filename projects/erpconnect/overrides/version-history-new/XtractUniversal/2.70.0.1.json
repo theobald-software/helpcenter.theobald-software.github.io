@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for BEX mode. Commands are ignored when resultset is empty to prevent short dump in SAP.",
+        "Component": "BW Cube",
+        "Product": "XtractKernel"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for selecting X.509 certificates",
+        "Component": "Server",
+        "Product": "BoardConnector"
+    }
+]

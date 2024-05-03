@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "Improvements for certificate enrollment",
+        "Component": "General",
+        "Product": "Common"
+    },
+    {
+        "Message": "Improvements from Code Review for License Creation logic.",
+        "Component": "Licensing",
+        "Product": "Common"
+    }
+]

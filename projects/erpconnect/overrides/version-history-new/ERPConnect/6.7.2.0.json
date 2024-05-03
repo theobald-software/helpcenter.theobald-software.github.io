@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "ReadTable: Workaround for SAP 4.6C bug with WHERE clauses containing IN condition",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    }
+]

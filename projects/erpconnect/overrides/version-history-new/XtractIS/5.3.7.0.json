@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for MaxRows & PackageSize properties (bug introduced in 5.3.0)",
+        "Component": "Table",
+        "Product": "XtractIS"
+    }
+]

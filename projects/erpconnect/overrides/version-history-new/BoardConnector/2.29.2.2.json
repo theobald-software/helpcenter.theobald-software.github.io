@@ -1,0 +1,17 @@
+[
+    {
+        "Message": "ERPConnect35.dll and ERPConnnect45.dll are built by MSBuild 15.0 now",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Updated to 5.0.7.2",
+        "Component": "ERPConnect",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Updated build tools to MSBuild 15.0",
+        "Component": "General",
+        "Product": "XtractKernel"
+    }
+]

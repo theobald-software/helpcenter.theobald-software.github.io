@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "NW: improved handling of ABAP messages/exceptions",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

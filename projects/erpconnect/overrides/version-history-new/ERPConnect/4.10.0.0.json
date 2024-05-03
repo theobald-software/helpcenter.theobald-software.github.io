@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added support for NW RFC API",
+        "Component": "RFCServer",
+        "Product": "ERPConnect"
+    }
+]

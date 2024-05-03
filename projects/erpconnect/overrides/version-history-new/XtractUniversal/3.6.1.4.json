@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for Delta Init with selection filter",
+        "Component": "DeltaQ",
+        "Product": "XtractKernel"
+    }
+]

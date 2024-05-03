@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixes & improvements for result cache.",
+        "Component": "Server",
+        "Product": "BoardConnector"
+    }
+]

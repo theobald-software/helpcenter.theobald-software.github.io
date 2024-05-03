@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "SOAP requests are compressed with gzip if they exceed 8192 bytes, Accept-Encoding: gzip is sent",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    }
+]

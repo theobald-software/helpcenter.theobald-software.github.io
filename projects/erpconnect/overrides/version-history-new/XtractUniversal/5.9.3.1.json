@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed Bug around License Business Rules for YunIO licenses.",
+        "Component": "Licensing",
+        "Product": "Common"
+    }
+]

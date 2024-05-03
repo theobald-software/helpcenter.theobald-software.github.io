@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for buffer BufferLifespanMinutes",
+        "Component": "Server",
+        "Product": "XtractUniversal"
+    }
+]

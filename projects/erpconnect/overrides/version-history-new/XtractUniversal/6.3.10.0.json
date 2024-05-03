@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added the .csv extension to Snowflake's staged file name",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

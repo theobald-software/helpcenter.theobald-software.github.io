@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "NWRFC: Fix for non-structure line types in imports/exports/changings (e. g. STRINGTAB)",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

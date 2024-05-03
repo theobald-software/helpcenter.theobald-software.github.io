@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for variable length buffer (third party mode)",
+        "Component": "OHS",
+        "Product": "Theobald.Extractors"
+    }
+]

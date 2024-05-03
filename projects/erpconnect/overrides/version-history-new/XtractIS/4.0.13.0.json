@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for log message text in log output",
+        "Component": "DeltaQ",
+        "Product": "XtractIS"
+    }
+]

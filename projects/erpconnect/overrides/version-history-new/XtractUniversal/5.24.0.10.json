@@ -1,0 +1,17 @@
+[
+    {
+        "Message": "Fixed a bug that caused an IndexOutOfRangeException when incoming tables were disconnected previously",
+        "Component": "BAPI",
+        "Product": "Theobald.Extractors"
+    },
+    {
+        "Message": "BICS: Fixes for filter preview",
+        "Component": "BW Cube",
+        "Product": "Theobald.Extractors"
+    },
+    {
+        "Message": "BICS: Improve session initialization",
+        "Component": "BW Cube",
+        "Product": "Theobald.Extractors"
+    }
+]

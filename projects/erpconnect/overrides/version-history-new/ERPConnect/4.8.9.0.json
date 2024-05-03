@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added UnknownIncomingFunction event to RFCServer to enable adding items to RegisteredFunctions collection dynmically.",
+        "Component": "RFCServer",
+        "Product": "ERPConnect"
+    }
+]

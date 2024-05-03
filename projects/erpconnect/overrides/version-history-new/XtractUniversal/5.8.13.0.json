@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Introduced truncate only statement for Snowflake destination",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

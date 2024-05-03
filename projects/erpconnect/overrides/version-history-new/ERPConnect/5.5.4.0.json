@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "RFCTable.Rows is cleared after call now, if function in SAP clears the table",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    }
+]

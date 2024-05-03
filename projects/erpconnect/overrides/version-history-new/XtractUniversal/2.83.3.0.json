@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for Power BI with an old access token",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

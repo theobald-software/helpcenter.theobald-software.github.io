@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed a bug that caused the result optimization to not work properly if fields of type \"RAW\" were part of the source table primary key",
+        "Component": "TableCDC",
+        "Product": "Theobald.Extractors"
+    }
+]

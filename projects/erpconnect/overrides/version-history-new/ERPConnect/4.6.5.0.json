@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Updated IDisposable interface logic in a couple of RFC classes to pass MSOCAF code analysis.",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

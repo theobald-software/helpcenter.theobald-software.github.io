@@ -1,0 +1,17 @@
+[
+    {
+        "Message": "Cleaning the result cache does now use the new RPC server/client capabilities instead of the Web server, which cause issues with custom authentication in the past.",
+        "Component": "General",
+        "Product": "XtractUniversal"
+    },
+    {
+        "Message": "Non-blocking (async) versions of the IO helper functions were added",
+        "Component": "General",
+        "Product": "Common"
+    },
+    {
+        "Message": "The RPC Server does now support cleaning the result cache. The RPC client does now support requesting to clean the result cache.",
+        "Component": "General",
+        "Product": "Theobald.Server"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix: Tables that don't have multinested structures but are used as Import / Export parameters stay empty after the call",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added new Add(ItemStructure) method in Table object to support serialization (e.g. for WebServices) in LINQ to SAP (only VS2010)",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

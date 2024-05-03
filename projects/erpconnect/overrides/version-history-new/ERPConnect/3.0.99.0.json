@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for LINQ to SAP code generation with complex table elements (IndexOutOfRange exception during execution)",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

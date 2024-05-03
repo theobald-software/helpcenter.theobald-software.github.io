@@ -1,0 +1,42 @@
+[
+    {
+        "Message": "XML dumps are only created if R3Connection.Logging = true",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "NW: Fix for non-Unicode systems",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "NW: Fix for RFCServer restarts",
+        "Component": "RFCServer",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "NW: Fix for codepage detection",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Calling R3Connection.Ping() after ABAP exception: workaround for connection breakdown (NW library bug)",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "SOAP: Added support for X509 client certificates",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "NW: Added error message for unsupported non-Unicode destinations ",
+        "Component": "RFCServer",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Updated to 4.35.9.0",
+        "Component": "ERPConnect",
+        "Product": "XtractKernel"
+    }
+]

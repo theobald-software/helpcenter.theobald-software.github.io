@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "TableauDestination: Added option to delete local files after upload, added remote replace when 'append' is selected, minor UI changes.",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

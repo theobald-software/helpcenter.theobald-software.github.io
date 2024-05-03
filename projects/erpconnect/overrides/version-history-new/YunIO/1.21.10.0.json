@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "Improved Azure logic for long running requests",
+        "Component": "Gateway",
+        "Product": "YunIO"
+    },
+    {
+        "Message": "Fixed a bug that caused unexpected measure precision in MDX query extractions.",
+        "Component": "BW Cube",
+        "Product": "Theobald.Extractors"
+    }
+]

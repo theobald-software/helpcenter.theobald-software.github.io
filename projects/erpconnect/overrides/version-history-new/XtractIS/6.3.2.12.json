@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Z_THEO_READ_TABLE exception and error callbacks don't cause short dumps anymore",
+        "Component": "Table",
+        "Product": "Theobald.Extractors"
+    }
+]

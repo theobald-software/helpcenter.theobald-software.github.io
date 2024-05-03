@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added support for Tableau server 10.2",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

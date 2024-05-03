@@ -1,0 +1,57 @@
+[
+    {
+        "Message": "BCD in tables were not sent correctly in some cases since version 4.7.2",
+        "Component": "RFCServer",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Some fixes for big endian systems",
+        "Component": "RFCServer",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Default values of parameters of type BYTE were wrong since 4.7.0",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Fix for InternalException event (was not fired in some cases since 4.7.1)",
+        "Component": "RFCServer",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Fix for non-existent/inactive includes in structures/tables",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Fix for RFCServer with big endian systems (Integers & Float)",
+        "Component": "RFCServer",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Libraries for NetWeaver RFC SDK support are loaded dynamically only when needed",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Changed NetWeaver RFC SDK support from one library to dedicated libraries for each .NET Framework version",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "R3Connection.Ping() was returning inverse value since 4.7.x",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Improved logging in case of syntax error in WHERE clause",
+        "Component": "Table",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Fix for known issue that resending tRFC calls fail when RFC destination and Program ID have different values",
+        "Component": "DeltaQ",
+        "Product": "XtractKernel"
+    }
+]

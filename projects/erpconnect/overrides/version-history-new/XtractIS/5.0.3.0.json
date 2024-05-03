@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Removed .NET version check from InstallXtractIS.exe (already checked by setup)",
+        "Component": "Setup",
+        "Product": "XtractIS"
+    }
+]

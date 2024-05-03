@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed a bug that caused the preview button to be disabled after initial lookup regardless of whether previewing was supported by the provider",
+        "Component": "ODP",
+        "Product": "Theobald.Extractors"
+    }
+]

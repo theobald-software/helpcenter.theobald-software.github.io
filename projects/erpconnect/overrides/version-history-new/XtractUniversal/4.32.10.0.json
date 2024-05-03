@@ -1,0 +1,13 @@
+[
+    {
+        "Message": "S3 destination: fixed a bug in the rollback logic. Multiple internal changes.",
+        "Component": "Destinations",
+        "Product": "XtractUniversal",
+        "ReleaseNote": "- Fixed a bug in the rollback logic, where if an extraction error occurred before any data was uploaded to S3, the destination would try to roll back the upload and run into an error since there was no data to delete.\n- Multiple internal code changes and improvements in the S3 destination."
+    },
+    {
+        "Message": "Fixed an issue where an RFCServer would not update its code page when using NWRFC",
+        "Component": "RFCServer",
+        "Product": "ERPConnect"
+    }
+]

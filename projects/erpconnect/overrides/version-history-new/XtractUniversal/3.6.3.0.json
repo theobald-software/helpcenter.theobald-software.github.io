@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed a bug where the libraries for Tableau destination could not be found",
+        "Component": "Server",
+        "Product": "XtractUniversal"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix in xu.exe for extraction names with length of 1 character.",
+        "Component": "General",
+        "Product": "XtractUniversal"
+    }
+]

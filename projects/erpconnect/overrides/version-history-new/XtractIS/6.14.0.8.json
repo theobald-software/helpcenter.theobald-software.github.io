@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added new field Extractions to ProductLicense and updated Tests and LicenseBuilders accordingly. Moved shared code from License creation applications to Common.",
+        "Component": "Licensing",
+        "Product": "Common"
+    }
+]

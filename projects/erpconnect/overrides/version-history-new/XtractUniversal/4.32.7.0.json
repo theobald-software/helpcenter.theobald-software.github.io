@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Option to set the bucket owner as object owner in S3 destination. (Beta)\nIf listing S3 buckets failed, the name can now be set directly.",
+        "Component": "Designer",
+        "Product": "XtractUniversal"
+    }
+]

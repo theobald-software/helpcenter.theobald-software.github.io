@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "NW: Fix for table structures with padding at the end",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    }
+]

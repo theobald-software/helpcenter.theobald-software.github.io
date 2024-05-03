@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "Fix for retrieving latest runs",
+        "Component": "General",
+        "Product": "Theobald.Server"
+    },
+    {
+        "Message": "Fixes & improvements for configuration version check",
+        "Component": "General",
+        "Product": "Theobald.Server"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "ConfigConverter now fixes invalid 3.x Table extractions using Z_THEO_READ_TABLE and conversion routines",
+        "Component": "Server",
+        "Product": "XtractUniversal"
+    }
+]

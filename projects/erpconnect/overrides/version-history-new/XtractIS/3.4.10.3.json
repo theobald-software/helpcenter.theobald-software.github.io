@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "Reduced peak memory consumption while receiving tables",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Updated to 5.3.3.0",
+        "Component": "ERPConnect",
+        "Product": "XtractKernel"
+    }
+]

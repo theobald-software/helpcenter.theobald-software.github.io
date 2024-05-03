@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "S3 destination now has the option to inherit the credentials from IAM role that is assigned to the EC2 instance where Xtract Universal server is running.",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

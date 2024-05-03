@@ -1,0 +1,17 @@
+[
+    {
+        "Message": "Added support for new ABAP type utclong",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Added TimeStamp data type (utclong)",
+        "Component": "General",
+        "Product": "Common"
+    },
+    {
+        "Message": "Support for new data types DATN, D34N, D16N, TIMN, UTCLONG. Corrected typing for decimal floating point values (now string) for ODP.",
+        "Component": "General",
+        "Product": "Theobald.Extractors"
+    }
+]

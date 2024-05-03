@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "Fixed an error that sometimes caused an extraction to abort with error when extraction result has 0 rows and 0 packages",
+        "Component": "OHS",
+        "Product": "XtractIS"
+    },
+    {
+        "Message": "Ignoring SAP error 307 (empty result)",
+        "Component": "OHS",
+        "Product": "XtractKernel"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Improved logging for graceful shutdown",
+        "Component": "General",
+        "Product": "Theobald.Server"
+    }
+]

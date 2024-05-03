@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Workaround for length problems when extracting floating point with conversion routines and Z_XTRACT_IS_TABLE_COMPRESSION",
+        "Component": "Table",
+        "Product": "Theobald.Extractors"
+    }
+]

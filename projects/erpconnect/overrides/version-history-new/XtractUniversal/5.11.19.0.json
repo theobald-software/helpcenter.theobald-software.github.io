@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed a bug that caused errors during metadata retrieval if the BAPI contains parameters where the same structure is included multiple times (bug introduced in 5.11.15)",
+        "Component": "BAPI",
+        "Product": "XtractUniversal"
+    }
+]

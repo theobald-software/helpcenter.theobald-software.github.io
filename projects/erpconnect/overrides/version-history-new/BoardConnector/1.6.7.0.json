@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Changed behavior of min/max parameters for log retrieval via HTTP",
+        "Component": "Server",
+        "Product": "BoardConnector"
+    }
+]

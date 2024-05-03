@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "ReadTable: Fix for Big Endian + NWRFC",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    }
+]

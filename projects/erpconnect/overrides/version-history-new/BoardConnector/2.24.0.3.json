@@ -1,0 +1,22 @@
+[
+    {
+        "Message": "Improved error handling for IDocs",
+        "Component": "RFCServer",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "BWCube: Added fallback mechanism for undefined decimals",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Workaorund for invalid codepage announcement on Unicode RFC destination",
+        "Component": "RFCServer",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Updated to 4.41.1.0",
+        "Component": "ERPConnect",
+        "Product": "XtractKernel"
+    }
+]

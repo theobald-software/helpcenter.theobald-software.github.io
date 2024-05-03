@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for X509 certificate logon option (SNC is required to be disabled now instead of enabled)",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    }
+]

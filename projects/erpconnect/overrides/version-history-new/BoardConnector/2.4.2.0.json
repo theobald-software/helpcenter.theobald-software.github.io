@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for error message during service start on 32-bit OS",
+        "Component": "Setup",
+        "Product": "BoardConnector"
+    }
+]

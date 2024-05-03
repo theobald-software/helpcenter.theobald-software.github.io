@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Stability improvements for broken extractions (Alteryx, CSV API)",
+        "Component": "Server",
+        "Product": "XtractUniversal"
+    }
+]

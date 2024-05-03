@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Setup works now if .NET 4.0 or above is available but .NET 2.0/3.5 is not installed",
+        "Component": "Setup",
+        "Product": "XtractIS"
+    }
+]

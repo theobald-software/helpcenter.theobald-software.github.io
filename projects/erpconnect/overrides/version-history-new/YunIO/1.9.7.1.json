@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Rpc server now checks all payload for illegal bytes before sending",
+        "Component": "General",
+        "Product": "Theobald.Server"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix when using a variable to fill InternalXML property of Report component",
+        "Component": "Report",
+        "Product": "XtractIS"
+    }
+]

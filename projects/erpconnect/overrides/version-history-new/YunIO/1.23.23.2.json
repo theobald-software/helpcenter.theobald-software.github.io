@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed and improve behavior and logging of the extraction cache, its clean up and when aborting extractions.",
+        "Component": "General",
+        "Product": "Theobald.Server"
+    }
+]

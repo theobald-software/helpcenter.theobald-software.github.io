@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for bug on saving bucket in S3 definition window when using IAM role authentication mode",
+        "Component": "Designer",
+        "Product": "XtractUniversal"
+    }
+]

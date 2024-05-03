@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "7Bit encoding stream extensions for i32 and BigInteger",
+        "Component": "General",
+        "Product": "Common"
+    },
+    {
+        "Message": "Fixed a bug where the CSVReader would not correctly signal a new line,\nFixed a bug where the CSVReader would ignore a line break after a quoted cell",
+        "Component": "General",
+        "Product": "Common"
+    }
+]

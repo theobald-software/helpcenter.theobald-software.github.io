@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Reference to System.Web does not longer exist. So it's easier to handle ERPConnect within the SQL Server CLR",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

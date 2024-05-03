@@ -1,0 +1,47 @@
+[
+    {
+        "Message": "ReadTable: Fix for Big Endian + NWRFC",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "NWRFC: Fix for table / deep structure imports (bug introduced in 6.4.5)",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Changed the behavior of the new ReadTable implementation to be more consistent with the old implementation in terms of RowState of the resulting DataTable",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "R3Connection.ParseConnectionString() parses SNC_MYNAME now",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "R3Connection.Clone() copies SNCSettings.OwnName now",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "NWRFC: Fix for table / deep structure exports",
+        "Component": "RFCServer",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Fixes for unknown server functions  (bug introduced in 6.3.0)",
+        "Component": "RFCServer",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Changed default length from 0 to 1 for RFCParameters",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Updated to 6.4.10.0",
+        "Component": "ERPConnect",
+        "Product": "XtractKernel"
+    }
+]

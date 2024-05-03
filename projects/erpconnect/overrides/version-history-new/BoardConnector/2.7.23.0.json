@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed re-ordering of columns (headers were not re-ordered)",
+        "Component": "BW Cube",
+        "Product": "BoardConnector"
+    }
+]

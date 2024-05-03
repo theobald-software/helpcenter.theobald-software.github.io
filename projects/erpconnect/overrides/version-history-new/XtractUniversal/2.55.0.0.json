@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Removed custom destinations. Legacy custom destinations are read-only.",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

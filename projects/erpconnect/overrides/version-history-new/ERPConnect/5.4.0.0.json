@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added support for variable default values (e. g. SY-SAPRL). Added property RFCParameter.IsSupplied",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

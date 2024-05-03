@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Classic RFC: Fixed a bug that caused an AccessViolationException when adding rows to a table that is defined in the server function, but not actually part of the call initiated by the SAP application server",
+        "Component": "RFCServer",
+        "Product": "ERPConnect"
+    }
+]

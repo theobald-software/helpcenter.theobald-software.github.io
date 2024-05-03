@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Bugfix in IDisposable implementation (ReadTable class).",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

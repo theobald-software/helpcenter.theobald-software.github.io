@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed a bug where no new connections could be created with Alteryx Designer versions below 2022.3",
+        "Component": "General",
+        "Product": "XtractForAlteryx"
+    }
+]

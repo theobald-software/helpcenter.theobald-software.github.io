@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Improved exception handling",
+        "Component": "RFCServer",
+        "Product": "ERPConnect"
+    }
+]

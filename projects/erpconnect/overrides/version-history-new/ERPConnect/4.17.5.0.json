@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added support for SAP Codepage 6300 (Eurojapan)",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

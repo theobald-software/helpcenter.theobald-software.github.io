@@ -1,0 +1,9 @@
+[
+    {
+        "Message": "This release contains general changes, changes to the existing Table component as well as a new ODP component.",
+        "Component": "General",
+        "Product": "XtractIS",
+        "IsBreaking": true,
+        "ReleaseNote": "# Xtract IS 5.0\n\nThis release contains general changes, changes to the existing Table component as well as a new ODP component.\n\n### General\n\n- .NET Framework version has been updated to 4.7.1\n- support for SQL Server 2008 has been discontinued\n\n### ODP\n\n- using SAP's ODP 2.0 API\n- several contexts\n- full and delta extractions\n- merging hierarchy segments \n\n### Table\n\n- new UI\n- now supports table joins (requires TableJoin license)\n- new date conversion with more replacement settings\n\n#### Compatibility:\n\n- Existing Table extractions will automatically refresh metadata on execution for legacy compatibility. To avoid this, you can manually refresh the metadata in the component UI and save the changes.\n- NVarChar and VarChar conversion has been removed, existing extractions will respect this setting, but it will always be NVarChar for new extractions\n\n### Connection Handling\n\n- Adjustments and improvements for internal SAP connection handling. This fixes several connection related issues.\n\n### Miscellaneous\n\n##### OHS\n- Introduced flag for OHS to asynchronously start process chains. The flag can be set by using the `AsyncProcessStart` property of the OHS component."
+    }
+]

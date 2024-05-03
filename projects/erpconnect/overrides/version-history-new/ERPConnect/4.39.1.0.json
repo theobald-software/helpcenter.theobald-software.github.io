@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for very big tables",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

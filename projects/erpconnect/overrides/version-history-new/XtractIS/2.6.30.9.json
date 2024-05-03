@@ -1,0 +1,17 @@
+[
+    {
+        "Message": "Re-added support for tables in import/export/changing parameters, STRING/XSTRING components in structures, deep structures etc. (NW)",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Added JSON serialization",
+        "Component": "Hierarchy",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Updated to 4.34.0.0",
+        "Component": "ERPConnect",
+        "Product": "XtractKernel"
+    }
+]

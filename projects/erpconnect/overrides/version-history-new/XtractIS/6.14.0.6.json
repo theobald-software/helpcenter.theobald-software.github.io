@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added unit and integration tests for Table Extractor",
+        "Component": "General",
+        "Product": "Theobald.Extractors"
+    }
+]

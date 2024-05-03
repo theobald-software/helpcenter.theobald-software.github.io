@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for default values for DATS parameters that have an invalid date (e.g. L_TO_CREATE_SINGLE)",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    }
+]

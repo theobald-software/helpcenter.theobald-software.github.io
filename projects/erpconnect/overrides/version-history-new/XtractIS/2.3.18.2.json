@@ -1,0 +1,52 @@
+[
+    {
+        "Message": "Correction for misleading error message when using BWCube class with packaging while an empty resultset is returned from SAP",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Updated logic in code generation for SAP queries (MaxRows setting) of the LINQ designers.",
+        "Component": "LINQtoERP",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Performance tweak for character-like values in tables/structures",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "New version for testing purpose. Please ignore!",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Fixed ERPConnect references after changes to support Final Builder.",
+        "Component": "LINQtoERP",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Performance tweaks for tables/structures ",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Fix for memory leaks in R3Connection.ConfirmTID() and RFCFunction.Execute(tid)",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Correction for renaming columns in OLAP mode (error message: Cannot find column XX)",
+        "Component": "BW Cube",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "A new dialog for maintaining the Delta requests was added to the settings dialog",
+        "Component": "DeltaQ",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Fix for packed numbers (DEC, QUAN, etc.)",
+        "Component": "BAPI",
+        "Product": "XtractKernel"
+    }
+]

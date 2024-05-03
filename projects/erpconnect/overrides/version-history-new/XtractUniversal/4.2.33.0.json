@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Support for 64-bit signed integer in Sql Server destination",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

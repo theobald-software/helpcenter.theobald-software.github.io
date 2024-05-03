@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix: BWCube.RefreshMetaData didn't refresh the variables collection properly",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

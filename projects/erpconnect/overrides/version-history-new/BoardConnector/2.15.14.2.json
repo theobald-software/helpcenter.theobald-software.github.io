@@ -1,0 +1,17 @@
+[
+    {
+        "Message": "Updated criteria designer to catch enter key in editing mode for value text box.",
+        "Component": "Table Join",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Changed SQL text box in SQL dialog to be read only in TQB.",
+        "Component": "TQB",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Added special About dialog to designer.",
+        "Component": "TQB",
+        "Product": "XtractKernel"
+    }
+]

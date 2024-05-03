@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix: Primary Key Packaging crashed when a language key was contained in primary key columns",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

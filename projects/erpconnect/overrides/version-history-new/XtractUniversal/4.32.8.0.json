@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Increased timeouts for starting worker processes",
+        "Component": "Server",
+        "Product": "XtractUniversal"
+    }
+]

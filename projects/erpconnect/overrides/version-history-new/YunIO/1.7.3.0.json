@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for redirecting unknown Designer URLs",
+        "Component": "Designer",
+        "Product": "YunIO"
+    }
+]

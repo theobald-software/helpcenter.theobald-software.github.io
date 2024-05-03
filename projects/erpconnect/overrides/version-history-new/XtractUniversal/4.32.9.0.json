@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Snowflake can read runtime parameters on custom sql statements",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

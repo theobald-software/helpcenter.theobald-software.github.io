@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for non-Unicode RFC destinations",
+        "Component": "DeltaQ",
+        "Product": "XtractKernel"
+    }
+]

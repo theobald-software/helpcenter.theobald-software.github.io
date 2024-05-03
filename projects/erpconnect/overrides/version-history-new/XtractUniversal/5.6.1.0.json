@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Exasol destination: fixed support for INT8 columns & data provider update to version 7.1.4",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "S3 Destination: fixed a bug where when file splitting was turned on and a folder path specified, only the first part file would end up in the correct folder in S3.",
+        "Component": "Designer",
+        "Product": "XtractUniversal"
+    }
+]

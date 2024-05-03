@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added the OneTransaction transaction style in the Snowflake destination",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Improved logging in case of syntax error in WHERE clause",
+        "Component": "Table",
+        "Product": "XtractKernel"
+    }
+]

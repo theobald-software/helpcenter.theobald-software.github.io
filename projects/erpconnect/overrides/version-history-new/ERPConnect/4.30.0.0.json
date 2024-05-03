@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "New implementation of RFC library interfaces. ERPConnectNWxy.dll is no longer needed.",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Extractions are terminated if client closes HTTP connection (non-HTTP destinations)",
+        "Component": "Server",
+        "Product": "XtractUniversal"
+    }
+]

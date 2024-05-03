@@ -1,0 +1,13 @@
+[
+    {
+        "Message": "Table and ODP API: New parameter for adjusting currency decimals",
+        "Component": "General",
+        "Product": "XtractIS"
+    },
+    {
+        "Message": "Table and ODP: Added setting to automatically adjust currency decimals based on reference field",
+        "Component": "General",
+        "Product": "Theobald.Extractors",
+        "ReleaseNote": "- design and runtime SAP users need access to table TCURX\n- existing extractions require metadata refresh (Table) or new lookup (ODP)\n- metadata will be adjusted to fixed decimal with 14 decimal places"
+    }
+]

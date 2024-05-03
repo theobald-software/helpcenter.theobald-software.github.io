@@ -1,0 +1,17 @@
+[
+    {
+        "Message": "Correction for using BWCube.RefreshMetaData() with queries that contain structures",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Fixed hierarchy metadata (parent/child)",
+        "Component": "Hierarchy",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Correction for using BWCube's Refresh button with queries that contain structures",
+        "Component": "BW Cube",
+        "Product": "XtractKernel"
+    }
+]

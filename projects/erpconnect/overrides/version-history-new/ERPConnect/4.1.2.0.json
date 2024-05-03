@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Bugfix for certain Hebrew Characters in non-unicode SAP systems",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

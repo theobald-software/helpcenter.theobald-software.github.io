@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for long where statements in report variant lookup",
+        "Component": "Report",
+        "Product": "XtractKernel"
+    }
+]

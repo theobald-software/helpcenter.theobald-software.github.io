@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Removed all #if constructs from XtractServer.cs. Functionality moved to child classes and Product.cs.",
+        "Component": "Server",
+        "Product": "BoardConnector"
+    }
+]

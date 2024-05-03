@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for RFCServer with big endian systems (Integers & Float)",
+        "Component": "RFCServer",
+        "Product": "ERPConnect"
+    }
+]

@@ -1,0 +1,8 @@
+[
+    {
+        "Message": "Parquet: Fixed a bug where NULL values could cause invalid files",
+        "Component": "Destinations",
+        "Product": "XtractUniversal",
+        "IsCritical": true
+    }
+]

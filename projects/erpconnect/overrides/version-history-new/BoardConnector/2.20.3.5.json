@@ -1,0 +1,17 @@
+[
+    {
+        "Message": "BWCube: Fixes for metadata retrieval/update",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Fixes for column order",
+        "Component": "BW Cube",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Updated to 4.39.2.0",
+        "Component": "ERPConnect",
+        "Product": "XtractKernel"
+    }
+]

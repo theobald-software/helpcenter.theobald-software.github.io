@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added support for non-aggregation dimensions in BWCube (dimension type 4)",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

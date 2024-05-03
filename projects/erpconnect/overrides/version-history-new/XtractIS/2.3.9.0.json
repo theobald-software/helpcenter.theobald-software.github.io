@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Correction for metadata support for FLOAT data types (which were accidently converted to STRING in SSIS)",
+        "Component": "Table",
+        "Product": "XtractIS"
+    }
+]

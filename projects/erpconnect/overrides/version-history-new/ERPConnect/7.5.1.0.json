@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "BWCube: fix for invalid MDX when selecting a hierarchy and a property on the same dimension",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

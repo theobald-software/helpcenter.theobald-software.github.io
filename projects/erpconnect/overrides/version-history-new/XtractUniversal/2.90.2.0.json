@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for preparation command timeout (DB destinations)",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for tables in import/export/changing parameters, STRING/XSTRING components in structures, deep structures etc. (NW)",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Improved error message for trying to run an extraction which has no destination",
+        "Component": "Designer",
+        "Product": "XtractUniversal"
+    }
+]

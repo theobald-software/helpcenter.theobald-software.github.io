@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Increased RFC network timeouts to 5 seconds",
+        "Component": "General",
+        "Product": "XtractUniversal"
+    }
+]

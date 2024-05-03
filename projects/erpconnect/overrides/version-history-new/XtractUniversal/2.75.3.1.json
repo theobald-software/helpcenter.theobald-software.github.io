@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added script expressions to table join queries",
+        "Component": "Table Join",
+        "Product": "XtractKernel"
+    }
+]

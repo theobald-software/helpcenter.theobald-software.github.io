@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for multiple RFCServers with multiple threads",
+        "Component": "RFCServer",
+        "Product": "ERPConnect"
+    }
+]

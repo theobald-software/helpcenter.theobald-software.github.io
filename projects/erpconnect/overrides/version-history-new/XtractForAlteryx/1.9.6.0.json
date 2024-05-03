@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "New about window",
+        "Component": "Designer",
+        "Product": "XtractForAlteryx"
+    },
+    {
+        "Message": "Generic about window created",
+        "Component": "WPF",
+        "Product": "Common"
+    }
+]

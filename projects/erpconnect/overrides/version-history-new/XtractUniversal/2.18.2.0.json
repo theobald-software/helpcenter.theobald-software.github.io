@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "XtractUniversalCmd.exe tool now returns 100 in case of an error",
+        "Component": "General",
+        "Product": "XtractUniversal"
+    }
+]

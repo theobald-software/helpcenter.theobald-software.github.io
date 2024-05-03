@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for an Integer Bug under Unix SAP system with certain patch levels",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

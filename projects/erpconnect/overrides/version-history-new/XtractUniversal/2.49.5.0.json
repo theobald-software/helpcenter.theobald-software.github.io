@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Additional feature to add unit columns to each measure when using the OLAP mode",
+        "Component": "BW Cube",
+        "Product": "XtractUniversal"
+    }
+]

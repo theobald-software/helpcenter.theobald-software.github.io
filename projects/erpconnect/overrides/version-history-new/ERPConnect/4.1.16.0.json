@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for CreateFunction() with SAP 4.7 systems",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

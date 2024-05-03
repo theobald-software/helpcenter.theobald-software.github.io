@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for missing type handling on Snowflake destination (would crash with surrogate key)",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

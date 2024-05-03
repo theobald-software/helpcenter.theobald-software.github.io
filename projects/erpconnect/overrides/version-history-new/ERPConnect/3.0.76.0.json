@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for queries with negative integer columns",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

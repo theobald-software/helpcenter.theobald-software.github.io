@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for crash when executing RFCs with internal tables within an export structure",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

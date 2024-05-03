@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Compression feature: Fix for parallel extractions on shared connection",
+        "Component": "Table",
+        "Product": "XtractKernel"
+    }
+]

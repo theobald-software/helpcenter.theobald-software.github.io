@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed a bug where in certain cases not all fields of views would be shown in the extraction definition UI.",
+        "Component": "Table",
+        "Product": "Theobald.Extractors"
+    }
+]

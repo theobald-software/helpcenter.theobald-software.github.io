@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed a bug that could cause some of multiple simultaneous extraction starts to fail ",
+        "Component": "Server",
+        "Product": "BoardConnector"
+    }
+]

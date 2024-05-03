@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added support for parallel SSIS packages on same RFC destination without XISDispatcher service. Changed format of request Ids.",
+        "Component": "DeltaQ",
+        "Product": "XtractIS"
+    }
+]

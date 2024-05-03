@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Improved error message for unkown SAP codepage",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    }
+]

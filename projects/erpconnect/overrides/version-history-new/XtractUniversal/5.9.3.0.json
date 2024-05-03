@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Alteryx: Fixed a bug that caused errors when disabling date conversion",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

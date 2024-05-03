@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added basic support for /THEO/READ_TABLE",
+        "Component": "Table",
+        "Product": "Theobald.Extractors"
+    }
+]

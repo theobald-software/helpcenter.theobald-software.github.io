@@ -1,0 +1,8 @@
+[
+    {
+        "Message": "Fix for Snowflake PUT command execution and increase of log verbosity for the same destination",
+        "Component": "Destinations",
+        "Product": "XtractUniversal",
+        "IsCritical": true
+    }
+]

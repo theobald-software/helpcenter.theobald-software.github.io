@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed a bug that prevented required libraries from being loaded",
+        "Component": "DeltaQ",
+        "Product": "XtractIS"
+    }
+]

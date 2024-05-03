@@ -1,0 +1,8 @@
+[
+    {
+        "Message": "Fixed a Bug in the PowerBI Report Server (SSRS) Destination. All pending HttpRequests were cancelled everytime the DataExtension finished generating a Report. This caused intermittent failures when multiple reports were rendered at the same time by the Report Server.",
+        "Component": "Destinations",
+        "Product": "XtractUniversal",
+        "ReleaseNote": "Customers should update the Plugin on the Report Server. Updating the Plugins in Visual Studio is not necessary."
+    }
+]

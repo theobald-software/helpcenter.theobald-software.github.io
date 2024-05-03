@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "DeltaQ preview functionality is deactivated as it sometimes lead to excessive generation of background jobs when used not responsibly especially with large extractions.",
+        "Component": "DeltaQ",
+        "Product": "XtractIS"
+    }
+]

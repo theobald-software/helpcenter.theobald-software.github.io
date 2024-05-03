@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed a bug that caused errors while converting old tasks (created in versions earlier than 6.10.0) that assigned a single variable to multiple parameters",
+        "Component": "BAPI",
+        "Product": "XtractIS"
+    }
+]

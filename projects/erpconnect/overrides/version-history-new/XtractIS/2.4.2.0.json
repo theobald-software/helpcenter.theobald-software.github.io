@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Correction for automatic date conversion for dates between 9999-01-01 and 9999-12-31. These dates are now not consolidated to 9999-12-31 anymore.",
+        "Component": "DeltaQ",
+        "Product": "XtractIS"
+    }
+]

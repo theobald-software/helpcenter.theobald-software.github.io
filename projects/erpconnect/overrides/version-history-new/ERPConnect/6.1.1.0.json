@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for Idoc code generator (broken since 5.7.0)",
+        "Component": "LINQtoERP",
+        "Product": "ERPConnect"
+    }
+]

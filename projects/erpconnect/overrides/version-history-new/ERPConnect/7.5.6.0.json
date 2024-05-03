@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Replaced the local byte serialization/deserialization on Ewkb with the ByteSerialization from Theobald.Common (introduced on 2.22.0)",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

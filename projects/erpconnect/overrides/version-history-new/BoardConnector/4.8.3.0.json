@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed bug that prevented extraction's result to be cached when column level encryption was disabled",
+        "Component": "General",
+        "Product": "BoardConnector"
+    }
+]

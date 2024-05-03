@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "Fix for very big tables",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Updated to 4.39.1.0",
+        "Component": "ERPConnect",
+        "Product": "XtractKernel"
+    }
+]

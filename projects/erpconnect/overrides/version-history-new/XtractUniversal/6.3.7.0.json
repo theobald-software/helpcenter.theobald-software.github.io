@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed the file name generator for Snowflake's internal csv destination",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "WHERE clause can now be dynamically updated using Alteryx Actions",
+        "Component": "Table",
+        "Product": "XtractForAlteryx"
+    }
+]

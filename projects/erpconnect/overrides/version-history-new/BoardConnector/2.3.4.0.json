@@ -1,0 +1,7 @@
+[
+    {
+        "Message": ".NET 4 is used, if 3.5 SP1 is not installed",
+        "Component": "General",
+        "Product": "BoardConnector"
+    }
+]

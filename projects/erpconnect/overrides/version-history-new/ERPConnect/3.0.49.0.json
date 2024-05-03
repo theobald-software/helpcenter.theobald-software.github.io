@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for crash with BCD data types on windows with chinese language settings",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

@@ -1,0 +1,8 @@
+[
+    {
+        "Message": "Several UI/UX changes",
+        "Component": "Designer",
+        "Product": "XtractUniversal",
+        "ReleaseNote": "### 4.32.1 - Several UI/UX changes\n\n- Extraction main window size adjustment for 1920x1080x1.25%\n- Preview mode removed from extraction general settings\n- Delete multiple extraction with single confirmation\n- Source and destination list windows display the default entry as selected"
+    }
+]

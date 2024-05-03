@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Internal adjustments to BEx variable dialog button behavior in BICS mode.",
+        "Component": "BW Cube",
+        "Product": "Theobald.Extractors"
+    }
+]

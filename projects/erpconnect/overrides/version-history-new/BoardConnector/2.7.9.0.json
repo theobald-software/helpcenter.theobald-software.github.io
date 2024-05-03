@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Removed byte-order mark from UTF-8 encoded data",
+        "Component": "Server",
+        "Product": "BoardConnector"
+    }
+]

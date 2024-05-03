@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for several code conflicts between Kernel and Kernel consumer",
+        "Component": "General",
+        "Product": "XtractKernel"
+    }
+]

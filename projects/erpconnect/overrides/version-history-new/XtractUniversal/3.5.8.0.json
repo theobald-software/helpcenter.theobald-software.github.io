@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for converting sources from version 2.x (bug introduced in 3.5.2)",
+        "Component": "Server",
+        "Product": "XtractUniversal"
+    }
+]

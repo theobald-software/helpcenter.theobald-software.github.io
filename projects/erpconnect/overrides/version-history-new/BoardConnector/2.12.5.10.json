@@ -1,0 +1,27 @@
+[
+    {
+        "Message": "Fix for invalid unicode characters with dispatcher service",
+        "Component": "RFCServer",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Fix for sending integers & floats in tables to big endian systems",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Property ReadTable.RowSkips is not ignored anymore when using packaging",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Updated to 4.24.4.0",
+        "Component": "ERPConnect",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Metadata modeling cleanup & improvements",
+        "Component": "General",
+        "Product": "XtractKernel"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for Greek non-Unicode source systems",
+        "Component": "General",
+        "Product": "XtractIS"
+    }
+]

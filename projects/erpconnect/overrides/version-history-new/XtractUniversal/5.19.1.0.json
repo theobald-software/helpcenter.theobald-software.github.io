@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "Fixes for column encryption metadata",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    },
+    {
+        "Message": "Updated Bouncy Castle to version 2.0",
+        "Component": "Security",
+        "Product": "Theobald.Extractors"
+    }
+]

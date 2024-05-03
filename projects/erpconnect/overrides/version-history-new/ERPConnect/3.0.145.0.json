@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Bugfix for RAW values when using SOAP instead of RFC",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

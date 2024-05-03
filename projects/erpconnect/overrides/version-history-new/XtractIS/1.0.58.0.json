@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "	Fix for crash when using more than one DeltaQ instance with the same ",
+        "Component": "DeltaQ",
+        "Product": "XtractIS"
+    }
+]

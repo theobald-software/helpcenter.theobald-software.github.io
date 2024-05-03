@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "The self-managing windows service executable was ported to rust, replacing a Windows-only C++ implementation. The same was done for the listeners, which accept incoming network connections.",
+        "Component": "Theobald.Server",
+        "Product": "YunIO"
+    }
+]

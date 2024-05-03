@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "Fixed a bug where the browser would not ask for credentials anymore when running a service.",
+        "Component": "Theobald.Server",
+        "Product": "YunIO"
+    },
+    {
+        "Message": "Fixed a bug, where the WWW-Authenticate HTTP header would be sent anymore.",
+        "Component": "General",
+        "Product": "Theobald.Server"
+    }
+]

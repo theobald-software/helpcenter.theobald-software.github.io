@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added DecimalSeparator query string paramter",
+        "Component": "General",
+        "Product": "BoardConnector"
+    }
+]

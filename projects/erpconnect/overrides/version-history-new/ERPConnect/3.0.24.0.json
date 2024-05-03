@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "RFCServer.CallbakServer introduced to enable RFCServer callback during a client call",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

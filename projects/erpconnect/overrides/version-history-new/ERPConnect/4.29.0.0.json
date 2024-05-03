@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "NWException now derives from ERPException. Added INWException interface",
+        "Component": "NWRFC",
+        "Product": "ERPConnect"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "added icon for table cdc extractions shown in extractions list",
+        "Component": "TableCDC",
+        "Product": "XtractUniversal"
+    }
+]

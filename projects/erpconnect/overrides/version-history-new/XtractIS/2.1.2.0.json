@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for passwords that contain a blank",
+        "Component": "General",
+        "Product": "XtractIS"
+    }
+]

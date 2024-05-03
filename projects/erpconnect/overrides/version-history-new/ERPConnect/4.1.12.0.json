@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Improved error message for metadata parsing failures",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

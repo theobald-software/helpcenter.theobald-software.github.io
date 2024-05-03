@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for memory leak when using multi nested XML based export parameters",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

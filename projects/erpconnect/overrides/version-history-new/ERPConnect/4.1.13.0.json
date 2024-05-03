@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed resizing bug in SQP Query dialog for LINQ to SAP (VS2008 and VS2010)",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

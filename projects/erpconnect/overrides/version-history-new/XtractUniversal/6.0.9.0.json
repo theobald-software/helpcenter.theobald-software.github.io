@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed web server issues causing responses to be in the wrong format. This affected Qlik and Knime destinations.\nFixed a confusing error message when opening the destination settings for a malformed extraction.",
+        "Component": "General",
+        "Product": "XtractUniversal"
+    }
+]

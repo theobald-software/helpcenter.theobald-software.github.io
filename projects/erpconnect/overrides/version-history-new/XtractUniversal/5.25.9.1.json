@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "Replaced AbapSignedNumericCharacter.ToLong() with AbapSignedNumericCharacter.ToDecimal()",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "BICS: Fixes for SNUMC characteristics",
+        "Component": "BW Cube",
+        "Product": "Theobald.Extractors"
+    }
+]

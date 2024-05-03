@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed deletion in edit view. Improved error handling on TCODE search (Report).",
+        "Component": "Designer",
+        "Product": "YunIO"
+    }
+]

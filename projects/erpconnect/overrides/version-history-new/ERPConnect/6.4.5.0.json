@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "NWRFC: Fix for table / deep structure exports",
+        "Component": "RFCServer",
+        "Product": "ERPConnect"
+    }
+]

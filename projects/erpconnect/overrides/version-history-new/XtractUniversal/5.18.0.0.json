@@ -1,0 +1,8 @@
+[
+    {
+        "Message": "Adjustments for ConfigConverter and date conversion (config conversion required)",
+        "Component": "General",
+        "Product": "XtractUniversal",
+        "ReleaseNote": "# Removed config conversion of version 2.x\nConfig Converter no longer supports direct upgrades from configuration files of XU version 2.x. Please first upgrade to version between 3.0 and 5.17.2, and then upgrade to 5.18 or higher as a second step.\n\n# Internal changes for date conversion\n* ConfigConverter must be run when upgrading from 5.17.2 or lower\n* Minor UI adjustments"
+    }
+]

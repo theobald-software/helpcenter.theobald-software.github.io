@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "Optimized internal dependencies.",
+        "Component": "General",
+        "Product": "BoardConnector"
+    },
+    {
+        "Message": "rpc lib added, theo.net uses framework, nugets not in output, web has websocket over http class",
+        "Component": "General",
+        "Product": "Theobald.Server"
+    }
+]

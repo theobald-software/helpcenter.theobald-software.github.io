@@ -1,0 +1,22 @@
+[
+    {
+        "Message": "Added InternalTableFunction property to ConnectionManager",
+        "Component": "General",
+        "Product": "XtractIS"
+    },
+    {
+        "Message": "Added R3Connection.ReadTableFunctionName",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Updated to 6.1.5.1",
+        "Component": "ERPConnect",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Updated to 6.1.4.6",
+        "Component": "ERPConnect",
+        "Product": "XtractKernel"
+    }
+]

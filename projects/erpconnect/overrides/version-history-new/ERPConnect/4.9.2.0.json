@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Better Exception in case MDXExecuter or BWCube classes receive an error from SAP",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "Length restrictions of STRING/XSTRING are reflected in persistence / result metadata",
+        "Component": "Table",
+        "Product": "Theobald.Extractors"
+    },
+    {
+        "Message": "Updated Z_THEO_READ_TABLE to version 2.7",
+        "Component": "Table",
+        "Product": "Theobald.Extractors"
+    }
+]

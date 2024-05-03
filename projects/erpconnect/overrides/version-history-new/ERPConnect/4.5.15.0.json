@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Updated logic in code generation for SAP queries (MaxRows setting) of the LINQ designers.",
+        "Component": "LINQtoERP",
+        "Product": "ERPConnect"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "The tool can now accept incoming connections which can be mapped to table parameters (beta)",
+        "Component": "BAPI",
+        "Product": "XtractForAlteryx"
+    }
+]

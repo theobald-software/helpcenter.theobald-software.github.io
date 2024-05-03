@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed timeout error for alteryx destination.",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

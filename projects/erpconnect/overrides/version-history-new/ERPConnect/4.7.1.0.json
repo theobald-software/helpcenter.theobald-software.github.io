@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "New internal implementation of RFCServer",
+        "Component": "RFCServer",
+        "Product": "ERPConnect"
+    }
+]

@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "Removed XML config converter code for Hierarchy in old XML file format.",
+        "Component": "Hierarchy",
+        "Product": "BoardConnector"
+    },
+    {
+        "Message": "Removed Hierarchy",
+        "Component": "Hierarchy",
+        "Product": "XtractKernel"
+    }
+]

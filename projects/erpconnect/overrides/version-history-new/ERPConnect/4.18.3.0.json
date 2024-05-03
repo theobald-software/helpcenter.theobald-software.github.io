@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Invalid control characters (XML 1.0) are dropped when building XML for SOAP and RfcServerFunction.SaveToXML()",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

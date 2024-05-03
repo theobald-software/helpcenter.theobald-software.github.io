@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for overwriting existing versions of Xtract IS",
+        "Component": "Setup",
+        "Product": "XtractIS"
+    }
+]

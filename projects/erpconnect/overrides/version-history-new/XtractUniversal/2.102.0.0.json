@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added transaction selection dropdown to table destinations. Switched to the Redshift ODBC driver. Fixed HANA transaction commit issues.",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

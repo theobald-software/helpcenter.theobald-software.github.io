@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix: Xtract IS Query crashed in preview with queries with more than one list ID",
+        "Component": "Query",
+        "Product": "XtractIS"
+    }
+]

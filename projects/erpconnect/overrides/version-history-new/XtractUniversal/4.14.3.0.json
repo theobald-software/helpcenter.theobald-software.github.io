@@ -1,0 +1,9 @@
+[
+    {
+        "Message": "Enforcement of access restriction for the web server",
+        "Component": "Security",
+        "Product": "XtractUniversal",
+        "IsCritical": true,
+        "ReleaseNote": "# Xtract Universal 4.14.3\n\nEnforcement of access restriction for the web server\n\n## Source\n\nThe web server now correctly enforces source-level permissions. \nTo run an extraction the user needs to have read access for the extraction and the source. \n\n## Bugs\n\n- [H] Fixed a bug where the extraction list API would list extractions the user was not allowed to read\n- [L] Fixed a bug where the /status web API would not respond to requests with a missing timestamp argument"
+    }
+]

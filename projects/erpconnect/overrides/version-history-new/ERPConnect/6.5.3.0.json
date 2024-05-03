@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for R3Connection IDisposable implementation",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    }
+]

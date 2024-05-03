@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for output column reordering and metadata refresh",
+        "Component": "BW Cube",
+        "Product": "BoardConnector"
+    }
+]

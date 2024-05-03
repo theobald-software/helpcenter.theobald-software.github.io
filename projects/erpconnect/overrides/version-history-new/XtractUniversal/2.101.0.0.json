@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added Extraction.RunState and Extraction.Timestamp for scripted expressions",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

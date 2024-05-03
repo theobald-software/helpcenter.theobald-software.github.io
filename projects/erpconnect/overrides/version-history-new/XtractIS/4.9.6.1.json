@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "Fix for R3Connection.CreateFunction() on some non-Unicode systems (TABLE_NOT_ACTIVE, bug introduced in 6.2.1).",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Updated to 6.2.2.0",
+        "Component": "ERPConnect",
+        "Product": "XtractKernel"
+    }
+]

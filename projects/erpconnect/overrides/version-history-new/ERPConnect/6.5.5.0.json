@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "NWRFC: Fixed alignment issue related to includes",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    }
+]

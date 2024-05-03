@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "dev_rfc.trc files which contain only messages about changing the global trace directory are not generated any more (NW RFC)",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

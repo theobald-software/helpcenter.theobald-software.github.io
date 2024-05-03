@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Power BI Connector: Compatibility fix for older systems where all cells had conversion errors",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

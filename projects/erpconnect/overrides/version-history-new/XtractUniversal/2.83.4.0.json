@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "Improved handling of empty results",
+        "Component": "Server",
+        "Product": "XtractUniversal"
+    },
+    {
+        "Message": "Fix for empty results",
+        "Component": "BW Cube",
+        "Product": "XtractKernel"
+    }
+]

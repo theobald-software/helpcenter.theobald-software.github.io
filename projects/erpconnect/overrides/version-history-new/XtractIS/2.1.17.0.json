@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Timeouts during the resending of tRFC errors don't lead to an SSIS exception anymore",
+        "Component": "DeltaQ",
+        "Product": "XtractIS"
+    }
+]

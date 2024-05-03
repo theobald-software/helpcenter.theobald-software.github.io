@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Improved result column size calculation for cube and table extractions. Added automatic detection of unit of measurement of cube measures.",
+        "Component": "General",
+        "Product": "XtractForAlteryx"
+    }
+]

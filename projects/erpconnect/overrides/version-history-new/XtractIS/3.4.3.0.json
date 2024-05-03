@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed an error that caused packages with table sources in loops to fail.",
+        "Component": "Table",
+        "Product": "XtractIS"
+    }
+]

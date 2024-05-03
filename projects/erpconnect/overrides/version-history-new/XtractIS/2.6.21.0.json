@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Correction for handling of data type XSTRING in export structures",
+        "Component": "BAPI",
+        "Product": "XtractIS"
+    }
+]

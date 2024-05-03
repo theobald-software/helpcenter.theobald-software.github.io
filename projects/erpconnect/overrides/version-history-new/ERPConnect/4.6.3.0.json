@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Improved logging for general errors in RFCServer class when logging is switched on (RFCServer.LogDir is set to valid path)",
+        "Component": "RFCServer",
+        "Product": "ERPConnect"
+    }
+]

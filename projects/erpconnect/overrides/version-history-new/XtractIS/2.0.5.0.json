@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "new setting Buffer Location for customers who want to buffer their data snapshots in files and not in table ZXTRACTBUFFER",
+        "Component": "Table",
+        "Product": "XtractIS"
+    }
+]

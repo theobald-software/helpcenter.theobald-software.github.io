@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for not recognizing client disconnect with very small data amounts",
+        "Component": "Server",
+        "Product": "BoardConnector"
+    }
+]

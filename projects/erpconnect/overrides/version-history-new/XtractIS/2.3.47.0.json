@@ -1,0 +1,27 @@
+[
+    {
+        "Message": "Fix for variable problems under BEX mode on certain BW release above rel. 7.01",
+        "Component": "BW Cube",
+        "Product": "XtractIS"
+    },
+    {
+        "Message": "Property BWVariable.UID withdrawn -> was useless",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Added BWVariable.UID property which contains the internal BW identifier for a variable",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Fix for tracing",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Fix for variable handling in BEX mode under certain release > 7.01",
+        "Component": "BW Cube",
+        "Product": "XtractKernel"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for login (bug introduced int 1.11.0)",
+        "Component": "Designer",
+        "Product": "YunIO"
+    }
+]

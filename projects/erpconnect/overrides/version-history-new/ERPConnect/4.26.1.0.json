@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Bug fix for escaping // characters in SavePlainData function",
+        "Component": "Idoc",
+        "Product": "ERPConnect"
+    }
+]

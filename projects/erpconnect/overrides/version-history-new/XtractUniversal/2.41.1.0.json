@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added support for DNS SRV responses without additional A records (Active Directory authentication)",
+        "Component": "Security",
+        "Product": "XtractUniversal"
+    }
+]

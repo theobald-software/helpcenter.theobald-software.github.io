@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Power BI: Adjusted the loading script so runtime parameters can be defined more easily",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

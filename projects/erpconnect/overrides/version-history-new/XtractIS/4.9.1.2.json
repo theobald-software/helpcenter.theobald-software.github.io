@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for very wide tables (e. g.  STXL with all fields selected)",
+        "Component": "Table",
+        "Product": "XtractKernel"
+    }
+]

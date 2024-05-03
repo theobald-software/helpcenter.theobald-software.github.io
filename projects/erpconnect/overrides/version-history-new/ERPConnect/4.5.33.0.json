@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Replaced 'obsolete' API calls for table handling with new ones",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

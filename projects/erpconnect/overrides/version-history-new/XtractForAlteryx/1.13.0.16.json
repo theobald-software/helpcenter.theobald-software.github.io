@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added LicenseSerialNumber and tests to Theobald.Licensing. Contains all business rules to create a LicenseSerialNumber as it is used in CRM. For automation of the License File creation, this code should be centrally available.",
+        "Component": "Licensing",
+        "Product": "Common"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added payload loading and saving in the Run Dialog. The runtime parameter values of last run are saved in the browser.",
+        "Component": "Designer",
+        "Product": "YunIO"
+    }
+]

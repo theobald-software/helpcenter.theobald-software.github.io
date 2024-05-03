@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "Classic: Workaround for opening/closing SNC connections multiple times in a row (missing language etc.)",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Updated to 4.39.3.0",
+        "Component": "ERPConnect",
+        "Product": "XtractKernel"
+    }
+]

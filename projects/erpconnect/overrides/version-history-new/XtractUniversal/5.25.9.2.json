@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "BICS: Fixed direct extraction of SNUMC InfoObjects",
+        "Component": "BW Cube",
+        "Product": "Theobald.Extractors"
+    }
+]

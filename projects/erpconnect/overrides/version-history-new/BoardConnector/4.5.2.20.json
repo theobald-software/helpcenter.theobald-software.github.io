@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for a bug where the new progress dialog would pop up as the top most window instead of a modal dialog.",
+        "Component": "WPF",
+        "Product": "Common"
+    }
+]

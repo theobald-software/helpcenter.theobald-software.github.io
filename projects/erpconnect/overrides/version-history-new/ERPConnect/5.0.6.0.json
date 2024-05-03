@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for sending nested structures",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

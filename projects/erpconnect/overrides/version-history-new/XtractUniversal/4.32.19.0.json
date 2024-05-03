@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added timestamp to the metadata API. Each extraction now shows when the last run was started, too.",
+        "Component": "General",
+        "Product": "XtractUniversal"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Update type is set correctly when overriding through URL parameter",
+        "Component": "DeltaQ",
+        "Product": "BoardConnector"
+    }
+]

@@ -1,0 +1,22 @@
+[
+    {
+        "Message": "Licensed server is ignored in VS runtime now, instead of client OS",
+        "Component": "General",
+        "Product": "XtractIS"
+    },
+    {
+        "Message": "Changed default install directory to \"Program Files\ERPConnect\" on x64 systems",
+        "Component": "Setup",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Removed support for VS2008",
+        "Component": "LINQtoERP",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Updated to 6.4.1.1",
+        "Component": "ERPConnect",
+        "Product": "XtractKernel"
+    }
+]

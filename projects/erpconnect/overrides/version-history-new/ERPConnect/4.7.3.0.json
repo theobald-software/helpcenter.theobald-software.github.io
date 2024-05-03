@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "R3Connection.Ping() was returning inverse value since 4.7.x",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

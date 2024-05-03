@@ -1,0 +1,8 @@
+[
+    {
+        "Message": "Fixed issues on the run window regarding the output displayer for Sql Server destination",
+        "Component": "Designer",
+        "Product": "XtractUniversal",
+        "ReleaseNote": "Xtract Universal 5.4.4\n\nRe-enabled output displayer for Sql Server destination, unmaking the change committed on version 5.1.15"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Create table statement will now be logged in CDC initialization step.",
+        "Component": "TableCDC",
+        "Product": "Theobald.Extractors"
+    }
+]

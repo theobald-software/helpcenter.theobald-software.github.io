@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Moved SNC properties to separate class, added QoP property",
+        "Component": "SNC",
+        "Product": "ERPConnect"
+    }
+]

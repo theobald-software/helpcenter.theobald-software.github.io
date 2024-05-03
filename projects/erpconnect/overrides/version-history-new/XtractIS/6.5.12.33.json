@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed version numbers of Theobald.Extractors.Hierarchy.dll and Theobald.Extractors.Hierarchy.Gui.dll",
+        "Component": "Hierarchy",
+        "Product": "Theobald.Extractors"
+    }
+]

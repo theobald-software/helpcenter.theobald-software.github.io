@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added new MySQL ADO.NET driver support",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

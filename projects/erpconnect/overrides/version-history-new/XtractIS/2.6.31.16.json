@@ -1,0 +1,32 @@
+[
+    {
+        "Message": "NW: Added CPIC tracing",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "NW: improved handling of ABAP messages/exceptions",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Query: added support for INT2 and INT1",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Updated TQB table metadata creation logic",
+        "Component": "TQB",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Updated to 4.35.2.0",
+        "Component": "ERPConnect",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Added DateFrom/DateTo for temporal hierarchy join",
+        "Component": "Hierarchy",
+        "Product": "XtractKernel"
+    }
+]

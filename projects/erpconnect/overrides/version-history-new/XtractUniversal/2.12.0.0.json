@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added date conversion for DB2, EXASOL, Oracle and SQLServer",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

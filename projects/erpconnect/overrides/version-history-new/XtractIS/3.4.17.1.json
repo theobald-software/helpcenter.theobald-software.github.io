@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for MDX extraction without metadata",
+        "Component": "BW Cube",
+        "Product": "XtractKernel"
+    }
+]
