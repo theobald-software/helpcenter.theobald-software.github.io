@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Improvement / bugfixes for sessions handling when using SOAP instead of RFC",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

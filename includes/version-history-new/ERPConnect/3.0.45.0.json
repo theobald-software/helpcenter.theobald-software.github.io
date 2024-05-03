@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for Crash when reading DEBMAS IDoc shemas together with an IDoc XML data file",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

@@ -1,0 +1,8 @@
+[
+    {
+        "Message": "Updated /THEO/READ_TABLE to version 3.1",
+        "Component": "Table",
+        "Product": "Theobald.Extractors",
+        "ReleaseNote": "**Update /THEO/READ_TABLE to version 3.1**\n- Fixed a bug where STRING and SSTRING columns would not be properly extracted when using NW library"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed a bug where the extracted row count was calculated wrong in Azure Blob destination",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

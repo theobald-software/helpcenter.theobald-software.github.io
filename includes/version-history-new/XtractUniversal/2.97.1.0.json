@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed wrong table name generation in HANA destination",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

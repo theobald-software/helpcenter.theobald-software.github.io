@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for special characters in the description texts for table columns under LINQ",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

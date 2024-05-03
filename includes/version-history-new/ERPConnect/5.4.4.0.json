@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Classic RFC: Fix for spaces in SNC library path",
+        "Component": "RFCServer",
+        "Product": "ERPConnect"
+    }
+]

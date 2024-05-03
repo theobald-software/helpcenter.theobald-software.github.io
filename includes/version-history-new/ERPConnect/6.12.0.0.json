@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added support for new ABAP type utclong",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

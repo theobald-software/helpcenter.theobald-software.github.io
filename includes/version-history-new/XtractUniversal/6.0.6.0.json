@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Oracle: Added support for INT8 (Int64) types as NUMBER(19)",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

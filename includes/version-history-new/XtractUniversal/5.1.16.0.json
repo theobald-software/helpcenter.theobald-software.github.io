@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Improved error message in SSRS Destination if an Extraction did not finish successfully.",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

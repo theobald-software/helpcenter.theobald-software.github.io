@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for log entries containing mode \"Console\" if server was running as a service",
+        "Component": "Server",
+        "Product": "XtractUniversal"
+    }
+]

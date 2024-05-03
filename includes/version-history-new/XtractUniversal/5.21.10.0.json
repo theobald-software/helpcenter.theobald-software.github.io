@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for designer unexpectedly closing the server connection when opening an unconverted extraction.",
+        "Component": "Designer",
+        "Product": "XtractUniversal"
+    }
+]

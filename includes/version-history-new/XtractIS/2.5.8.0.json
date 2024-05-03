@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Query Views can be set through an SSIS variable now",
+        "Component": "BW Cube",
+        "Product": "XtractIS"
+    }
+]

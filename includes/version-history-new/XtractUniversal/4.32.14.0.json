@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Power BI Destination: Fixed a bug where an error would occur in Power BI when an extraction returns 0 rows",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

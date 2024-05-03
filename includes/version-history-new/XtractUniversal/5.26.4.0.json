@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Hana destination: upgraded data provider to version 2.17.22.0 and added support for BIGINT.",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

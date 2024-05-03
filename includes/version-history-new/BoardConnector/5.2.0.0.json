@@ -1,0 +1,22 @@
+[
+    {
+        "Message": "Added support for certificate SSO and reworked source details GUI",
+        "Component": "General",
+        "Product": "BoardConnector"
+    },
+    {
+        "Message": "TheoAuth: Added support for WebSockets",
+        "Component": "General",
+        "Product": "Theobald.Server"
+    },
+    {
+        "Message": "Fixed issues where the Rpc client did not correctly close the connection when asked to.",
+        "Component": "General",
+        "Product": "Theobald.Server"
+    },
+    {
+        "Message": "Added support for certificate SSO and reworked logic for opening SAP connections",
+        "Component": "General",
+        "Product": "Theobald.Server"
+    }
+]

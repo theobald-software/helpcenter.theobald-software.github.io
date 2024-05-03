@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "Fix for using Delta Init with data sources like 0FI_GL_10 and 0FI_GL_14",
+        "Component": "DeltaQ",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Fix for parsing empty strings",
+        "Component": "General",
+        "Product": "XtractKernel"
+    }
+]

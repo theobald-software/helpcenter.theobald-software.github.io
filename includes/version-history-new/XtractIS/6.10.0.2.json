@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Removed BAPI extractor",
+        "Component": "BAPI",
+        "Product": "XtractKernel"
+    }
+]

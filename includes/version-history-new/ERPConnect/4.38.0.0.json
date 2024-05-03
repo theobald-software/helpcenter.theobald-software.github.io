@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added support for SNC (NW)",
+        "Component": "RFCServer",
+        "Product": "ERPConnect"
+    }
+]

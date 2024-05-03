@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for being unable to connect to server with many extractions (about 100 and above)",
+        "Component": "General",
+        "Product": "BoardConnector"
+    }
+]

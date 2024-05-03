@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for converting ranges in variable and filter selections when running the config converter on BW Cube extractions.",
+        "Component": "BW Cube",
+        "Product": "XtractUniversal"
+    }
+]

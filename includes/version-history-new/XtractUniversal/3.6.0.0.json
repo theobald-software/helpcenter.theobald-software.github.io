@@ -1,0 +1,8 @@
+[
+    {
+        "Message": "Improved server robustness and parallelization",
+        "Component": "General",
+        "Product": "XtractUniversal",
+        "ReleaseNote": "# Xtract Universal 3.6\n\nThe server uses multiple processes now instead of one, which makes it more robust and improves parallelization.\n\n## Running extractions\n\n* TCP keep-alives avoid connection timeouts with long quiet periods and pull destinations\n* X.509 certificate can be set directly in Xtract Universal\n* HTTP access restrictions are no longer available - please use Windows firewall or other firewall solutions to implement these rules\n* HTTPS requires TLS1.1 or above \n* Removed \"Max. parallel requests\" setting"
+    }
+]

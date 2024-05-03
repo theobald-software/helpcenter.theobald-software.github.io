@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Correction for column naming in case of using description texts for naming with multiple columns with the same description",
+        "Component": "BW Cube",
+        "Product": "XtractKernel"
+    }
+]

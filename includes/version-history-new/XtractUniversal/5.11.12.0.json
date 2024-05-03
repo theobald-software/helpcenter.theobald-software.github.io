@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed a bug where deselecting all primary keys would result in restoring the default configuration for the primary keys",
+        "Component": "Designer",
+        "Product": "XtractUniversal"
+    }
+]

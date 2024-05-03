@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for missing backslash at the end of FlatFileDestination directory",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

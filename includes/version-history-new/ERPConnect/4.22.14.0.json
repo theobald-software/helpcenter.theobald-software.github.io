@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added Web API OData support for simple string comparison filter functions in LINQ provider.",
+        "Component": "LINQtoERP",
+        "Product": "ERPConnect"
+    }
+]

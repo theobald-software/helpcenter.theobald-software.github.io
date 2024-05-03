@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for table names containing single quotes from script expressions in SQL Server destination.",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

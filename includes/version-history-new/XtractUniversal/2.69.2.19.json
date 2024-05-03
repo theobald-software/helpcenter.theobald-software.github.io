@@ -1,0 +1,87 @@
+[
+    {
+        "Message": "NWException now derives from ERPException. Added INWException interface",
+        "Component": "NWRFC",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Fixed \"position\" in metadata of Table and OHS (was 1-based instead of 0-based)",
+        "Component": "General",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Columns can be added to ResultMetadata, independent of original size",
+        "Component": "General",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Moved Json files to XtractKernel.Extractors",
+        "Component": "JSON",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Correction and fix for customers who have not yet implemented SAP note 1273946",
+        "Component": "OHS",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Added WriteJSON to LogEntry",
+        "Component": "General",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Added Read IJSONSerializable arrays and some unit tests",
+        "Component": "JSON",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "JsonReader and Writer are able now to read/ write String and Int Arrays",
+        "Component": "JSON",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "IJsonSerializable ReadJson returns now bool.  ",
+        "Component": "JSON",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Added WriteName method to JsonWriter",
+        "Component": "BAPI",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Updated to 4.29.0.3",
+        "Component": "ERPConnect",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Duplicates in basic characteristic are ignored now",
+        "Component": "Hierarchy",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Improved error message for node conflicts",
+        "Component": "Hierarchy",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Implemented SAP note 1866743 for error message \"Cannot lock request\", increased parameter I_ENQUEUE_LOOP_COUNT to 300",
+        "Component": "OHS",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Added a form to look up report variants.",
+        "Component": "Report",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Moved JSON serialization from XU to Kernel",
+        "Component": "General",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Added IJsonSerializable to LogEntry.cs",
+        "Component": "General",
+        "Product": "XtractKernel"
+    }
+]

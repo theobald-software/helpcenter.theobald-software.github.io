@@ -1,0 +1,17 @@
+[
+    {
+        "Message": "Fix for General Settings dialog, which had a checkbox for a feature, unavailable in BOARD Connector (column encryption)",
+        "Component": "Designer",
+        "Product": "BoardConnector"
+    },
+    {
+        "Message": "CsvReader overhaul",
+        "Component": "General",
+        "Product": "Common"
+    },
+    {
+        "Message": "Added support for runtime parameters.",
+        "Component": "Report",
+        "Product": "Theobald.Extractors"
+    }
+]

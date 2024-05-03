@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Changed data type for ABAP type RAW to SQL type CHARACTER",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

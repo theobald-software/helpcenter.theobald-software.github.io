@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "SharePoint: Fix of the merge operation for some users (GetListItems failed).",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

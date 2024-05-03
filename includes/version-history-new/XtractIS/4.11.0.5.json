@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "Removed RFCServer.Ping() (was marked for \"internal use only\", had various issues)",
+        "Component": "RFCServer",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Updated to 6.4.2.0",
+        "Component": "ERPConnect",
+        "Product": "XtractKernel"
+    }
+]

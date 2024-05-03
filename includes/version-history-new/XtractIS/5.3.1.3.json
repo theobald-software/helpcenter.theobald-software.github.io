@@ -1,0 +1,17 @@
+[
+    {
+        "Message": "Updated Z_THEO_READ_TABLE for releases 740SP05 and newer to version 2.2",
+        "Component": "Table",
+        "Product": "Theobald.Extractors"
+    },
+    {
+        "Message": "Added hierarchy component (beta)",
+        "Component": "Hierarchy",
+        "Product": "Theobald.Extractors"
+    },
+    {
+        "Message": "Updated to 1.9.1",
+        "Component": "Theobald.Extractors",
+        "Product": "XtractKernel"
+    }
+]

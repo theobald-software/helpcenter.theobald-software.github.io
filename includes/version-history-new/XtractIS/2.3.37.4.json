@@ -1,0 +1,32 @@
+[
+    {
+        "Message": "Fix for receiving tables over NW RFC API",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Added support for sending tables over NW RFC API",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Added support for NW RFC API",
+        "Component": "RFCServer",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Better Exception in case MDXExecuter or BWCube classes receive an error from SAP",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Fix for wrong job state detection when performing repairs to delta updates which failed with an aborted job",
+        "Component": "DeltaQ",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Improved error message in case of SAP errors",
+        "Component": "BW Cube",
+        "Product": "XtractKernel"
+    }
+]

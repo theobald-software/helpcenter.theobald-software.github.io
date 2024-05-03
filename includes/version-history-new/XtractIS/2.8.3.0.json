@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for FormatException",
+        "Component": "BW Cube",
+        "Product": "XtractIS"
+    }
+]

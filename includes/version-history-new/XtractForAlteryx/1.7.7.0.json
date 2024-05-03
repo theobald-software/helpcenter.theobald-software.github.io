@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Removed unnecessary call to RFC_PING during connection test",
+        "Component": "General",
+        "Product": "XtractForAlteryx"
+    }
+]

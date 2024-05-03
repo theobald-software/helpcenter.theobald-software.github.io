@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added support for tRFC over NW RFC API",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Idoc.SaveXMLData() and Idoc.LoadXMLData() now support Message Types and Segment Names containing slashes",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

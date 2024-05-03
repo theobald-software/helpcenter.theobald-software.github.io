@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for strange error message that was popping up when filling BAPI static table cells with empty values and pushing the preview button",
+        "Component": "BAPI",
+        "Product": "XtractIS"
+    }
+]

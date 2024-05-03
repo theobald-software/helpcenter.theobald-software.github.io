@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "SSIS Variables where not resolved properly in the High Value field of complex BW Cube variables",
+        "Component": "BW Cube",
+        "Product": "XtractIS"
+    }
+]

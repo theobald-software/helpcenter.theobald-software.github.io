@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Avoid InternalException call when RFCServer is stopped when using RFCServer.Stop()",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

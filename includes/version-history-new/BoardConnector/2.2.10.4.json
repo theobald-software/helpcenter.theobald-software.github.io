@@ -1,0 +1,52 @@
+[
+    {
+        "Message": "Fix for parameters which use a projection view as data type",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Idoc.SendAndWait() returned the wrong value. This is fixed now. In case of succes true is returned.",
+        "Component": "Idoc",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Fix for ERPException.ABAPException with Changing parameters (was always null since 4.5.1.x)",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Added output length and conversion routine name to TableColumn",
+        "Component": "Table",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Automatic detection of Request ID when doing a Repair Request",
+        "Component": "DeltaQ",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Added metadata retrieval to TableDefinition and TableLookUp",
+        "Component": "Table",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Fix for parameters of ABAP type p",
+        "Component": "BAPI",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Added addtional checks for Data Package Verification",
+        "Component": "DeltaQ",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Added feature to always use the raw hierarchy table for backward-compatiblity",
+        "Component": "Hierarchy",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "New feature was added to enable two additional columns in DeltaQ output: DataPackageID and RowCounter",
+        "Component": "DeltaQ",
+        "Product": "XtractKernel"
+    }
+]

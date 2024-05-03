@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for LINQ to SAP with RFC function: Offset value is provided during code generation ",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

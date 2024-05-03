@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for run parameter 'destination'",
+        "Component": "Server",
+        "Product": "XtractUniversal"
+    }
+]

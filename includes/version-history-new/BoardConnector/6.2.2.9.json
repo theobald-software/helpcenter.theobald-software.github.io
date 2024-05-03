@@ -1,0 +1,13 @@
+[
+    {
+        "Message": "Fixed an issue that caused errors during extraction when the data contained invalid time or date values.",
+        "Component": "ODP",
+        "Product": "Theobald.Extractors"
+    },
+    {
+        "Message": "Updated /THEO/READ_TABLE to version 3.4.",
+        "Component": "Table",
+        "Product": "Theobald.Extractors",
+        "ReleaseNote": "**Update /THEO/READ_TABLE to version 3.4**\n- Fixed a bug where extracting decfloat16 and decfloat34 types did not work.\n- Fixed a bug where extracting empty NUMC values would cause extraction to fail."
+    }
+]

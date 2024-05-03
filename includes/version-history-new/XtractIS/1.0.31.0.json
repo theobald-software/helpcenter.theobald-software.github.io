@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "	Fix: SSIS Variables in BAPI output structures crashed with source type BCD",
+        "Component": "BAPI",
+        "Product": "XtractIS"
+    }
+]

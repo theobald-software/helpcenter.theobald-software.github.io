@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "OData destination is deprecated now. Creating/modifying destinations of type OData Atom is no longer possible. Running existing extractions is still supported until 2020-12-31.",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

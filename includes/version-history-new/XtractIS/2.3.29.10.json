@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Maximum Packagesize was increased from 100000 to 500000",
+        "Component": "Table",
+        "Product": "XtractKernel"
+    }
+]

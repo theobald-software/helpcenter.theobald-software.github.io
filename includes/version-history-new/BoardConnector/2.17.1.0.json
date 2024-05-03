@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Upgraded C++ service project to VS2015",
+        "Component": "Service",
+        "Product": "BoardConnector"
+    }
+]

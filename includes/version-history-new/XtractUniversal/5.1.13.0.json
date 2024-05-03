@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for run window that could not display the output for extractions with certain characters in their names",
+        "Component": "Designer",
+        "Product": "XtractUniversal"
+    }
+]

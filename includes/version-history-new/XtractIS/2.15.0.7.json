@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added verification of column lengths in transfer structure",
+        "Component": "DeltaQ",
+        "Product": "XtractKernel"
+    }
+]

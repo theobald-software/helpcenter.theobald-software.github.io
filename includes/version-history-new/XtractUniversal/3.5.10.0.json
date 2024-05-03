@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for converting primary keys of query extractions from versions before 3.0",
+        "Component": "Server",
+        "Product": "XtractUniversal"
+    }
+]

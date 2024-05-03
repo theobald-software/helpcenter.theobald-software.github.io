@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed bug in changing parameter handling in VS2013+",
+        "Component": "LINQtoERP",
+        "Product": "ERPConnect"
+    }
+]

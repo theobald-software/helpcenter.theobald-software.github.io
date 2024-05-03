@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for queries: Units are sometimes not properly processed",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

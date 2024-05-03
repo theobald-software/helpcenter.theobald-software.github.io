@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "added support for function modules /BODS/RFC_STREAM_READ_TABLE and /SAPDS/RFC_STREAM_READ_TABLE",
+        "Component": "Table",
+        "Product": "XtractUniversal"
+    },
+    {
+        "Message": "added support for function modules /BODS/RFC_STREAM_READ_TABLE and /SAPDS/RFC_STREAM_READ_TABLE",
+        "Component": "Table",
+        "Product": "Theobald.Extractors"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Azure Blob and AWS S3: fixed a bug where column name style option was not respected.",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

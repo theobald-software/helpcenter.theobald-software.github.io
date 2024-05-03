@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "Fixed a bug where logging into the Designer with a valid AD-User would result in an authorization error.",
+        "Component": "Server",
+        "Product": "XtractUniversal"
+    },
+    {
+        "Message": "Fixed a bug where the authorization procedure for AD-users would not use the correct identifier.",
+        "Component": "General",
+        "Product": "Theobald.Server"
+    }
+]

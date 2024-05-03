@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for nested structures (table types) in changing parameters",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

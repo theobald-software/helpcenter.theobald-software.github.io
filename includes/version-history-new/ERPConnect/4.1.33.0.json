@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added new logic to differentiate the target .NET version while adding a new ERP file in LINQ to SAP (LINQToERPVS project with IWizard interface)",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

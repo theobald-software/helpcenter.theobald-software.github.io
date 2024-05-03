@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for auto-selection of function module",
+        "Component": "Table",
+        "Product": "Theobald.Extractors"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Updated SharePoint destination: Added list creation in sub-sites. Optimized key matching. New columns are added to default view in SharePoint.",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

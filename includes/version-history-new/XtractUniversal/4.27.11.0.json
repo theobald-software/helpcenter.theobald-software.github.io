@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed an issue where the custom primary key selections were ignored ",
+        "Component": "General",
+        "Product": "XtractUniversal"
+    }
+]

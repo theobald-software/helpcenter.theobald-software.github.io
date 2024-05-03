@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed a bug that caused errors on the Alteryx Server when DCM connections were used (Bug introduced in 1.20.3)",
+        "Component": "General",
+        "Product": "XtractForAlteryx"
+    }
+]

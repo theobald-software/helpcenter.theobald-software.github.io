@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added nested structure and table support for LINQ to SAP (only VS2010)",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

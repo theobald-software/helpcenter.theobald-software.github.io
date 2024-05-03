@@ -1,0 +1,17 @@
+[
+    {
+        "Message": "Fix for CreateFunction() for older SAP releases (bug accidentally introduced in 4.5.21)",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Added structure alignment calculation for includes",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Added support for structures/tables which contain alignment gaps caused by includes",
+        "Component": "BAPI",
+        "Product": "XtractKernel"
+    }
+]

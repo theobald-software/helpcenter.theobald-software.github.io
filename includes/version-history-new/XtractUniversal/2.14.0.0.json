@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added scripting for custom SQL preparation statements",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

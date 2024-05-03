@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added SNC support RFC Server (classic RFC SDK)",
+        "Component": "SNC",
+        "Product": "ERPConnect"
+    }
+]

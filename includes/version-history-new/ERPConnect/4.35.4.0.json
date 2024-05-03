@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "SOAP: Added support for X509 client certificates",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    }
+]

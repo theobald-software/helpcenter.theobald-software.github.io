@@ -1,0 +1,107 @@
+[
+    {
+        "Message": "Fix for the edit selection link. It appeared sometimes even no selection is allowed according to SAP's metadata.",
+        "Component": "DeltaQ",
+        "Product": "XtractUniversal"
+    },
+    {
+        "Message": "Added support for non-Unicode destinations on big endian systems",
+        "Component": "RFCServer",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Updated the table field filter box to support clear button.",
+        "Component": "TQB",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Updated table join dialog in TQB.",
+        "Component": "TQB",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Added support to display dynamic tooltips for table join definitions in TQB.",
+        "Component": "TQB",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Added support to import and export query in TQB",
+        "Component": "TQB",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Added date recognition for BW Cubes",
+        "Component": "BW Cube",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Fixed minor bugs,",
+        "Component": "TQB",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Added support for variable definition used by Xtract IS for grouping criteria in TQB.",
+        "Component": "TQB",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Fixed bug in drag and drop logic of the table filterbox in TQB.",
+        "Component": "TQB",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Now auto-join feature is supported for pasted tables in TQB.",
+        "Component": "TQB",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Added support to sort table fields by name in TQB.",
+        "Component": "TQB",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Updated auto-join feature in TQB.",
+        "Component": "TQB",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Added support for non-unicode RFC destinations on big endian systems",
+        "Component": "OHS",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Updated to 4.27.0.0",
+        "Component": "ERPConnect",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Changed recent used objects (RUO) sorting in table lookup dialog.",
+        "Component": "TQB",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Added new auto-join feature in TQB.",
+        "Component": "TQB",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Added new filterbox to filter table fields if table contains a large number of fields,",
+        "Component": "TQB",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Fixed bugs with aggregate function combobox in output field selection panel.",
+        "Component": "TQB",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Fixed bugs with alias naming in TQB.",
+        "Component": "TQB",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Updated resource loading problem once TQB is referenced in related products.",
+        "Component": "TQB",
+        "Product": "XtractKernel"
+    }
+]

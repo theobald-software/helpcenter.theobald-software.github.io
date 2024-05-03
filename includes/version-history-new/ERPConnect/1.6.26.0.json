@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "New Function BWCube.Variables[X].GetMembers() to obtain valid values for a BW variable",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

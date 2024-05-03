@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Warning message in Xtract IS Table appears when field MANDT is used in WHERE clause",
+        "Component": "Table",
+        "Product": "XtractIS"
+    }
+]

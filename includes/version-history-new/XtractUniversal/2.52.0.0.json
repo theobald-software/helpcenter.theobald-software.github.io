@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Changed default for table/file name to name of extraction (DB2, EXASOL, MySQL, Oracle, Redshift, SQLServer, Tableau, Teradata)",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

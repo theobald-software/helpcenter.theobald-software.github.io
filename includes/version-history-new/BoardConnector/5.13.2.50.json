@@ -1,0 +1,18 @@
+[
+    {
+        "Message": "DateTime to/from string conversion helpers. Function for opening a file with timeout.",
+        "Component": "General",
+        "Product": "Common"
+    },
+    {
+        "Message": "Function for BapiExtractor which communicates when data was received from the SAP system.",
+        "Component": "BAPI",
+        "Product": "Theobald.Extractors"
+    },
+    {
+        "Message": "Fixes and refactoring for new runtime. Fixes for CORS and error handling in HTTP server.",
+        "Component": "General",
+        "Product": "Theobald.Server",
+        "ReleaseNote": "# Theobald Server 3.9\n\nFixes and refactoring for new runtime. Fixes for CORS and error handling in HTTP server.\n\n## New Runtime\n- Refactor internals for simplicity and maintainability.\n- Implement additional extraction types.\n- Implement capability to start an extraction without waiting for it to finish.\n- Fix internal clean up procedures.\n- Fix logging.\n- Implement new result cache.\n- Rework parameter handling.\n- Fix extraction status updates.\n\n## HTTP server\n\n- Fix CORS handling.\n- Fix error handling for errors during the authentication step.\n"
+    }
+]

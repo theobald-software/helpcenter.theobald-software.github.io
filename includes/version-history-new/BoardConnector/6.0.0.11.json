@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed a bug where Z_THEO_READ_TABLE could not be used as fallback to /THEO/READ_TABLE",
+        "Component": "TableCDC",
+        "Product": "Theobald.Extractors"
+    }
+]

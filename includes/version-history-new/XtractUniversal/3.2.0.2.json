@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for DeltaQ customizing check (RFC server)",
+        "Component": "DeltaQ",
+        "Product": "XtractKernel"
+    }
+]

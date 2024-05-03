@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "Fix for customizing check that failed accidently when using NW libraries instead of librfc32",
+        "Component": "DeltaQ",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Added methode ReadFile to class LogEntry.cs to get all LogEntries of a File",
+        "Component": "General",
+        "Product": "XtractKernel"
+    }
+]

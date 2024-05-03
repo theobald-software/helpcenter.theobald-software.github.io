@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed a bug with extraction metadata.",
+        "Component": "Server",
+        "Product": "XtractUniversal"
+    }
+]

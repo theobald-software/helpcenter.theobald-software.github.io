@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed a bug where no description texts were retrieved. Extractor now uses a fallback logic where the longest available and non-empty text is retrieved.",
+        "Component": "Hierarchy",
+        "Product": "Theobald.Extractors"
+    }
+]

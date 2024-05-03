@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Leerzeichen im IDoc-Buffer werden jetzt abgeschnitten",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

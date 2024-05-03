@@ -1,0 +1,22 @@
+[
+    {
+        "Message": "Fix for integer/float export parameters and big endian systems (classic RFC)",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Updated to 4.22.17.0",
+        "Component": "ERPConnect",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Fix for DF* data types in table extraction",
+        "Component": "Table",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Updated to 4.22.16.2",
+        "Component": "ERPConnect",
+        "Product": "XtractKernel"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for ERPConnectNW35 and ERPConnectNW40 assembly version numbers",
+        "Component": "NWRFC",
+        "Product": "ERPConnect"
+    }
+]

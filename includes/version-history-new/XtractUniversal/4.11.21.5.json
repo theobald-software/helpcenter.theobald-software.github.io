@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for cut off version numbers in the version history window.",
+        "Component": "WPF",
+        "Product": "Common"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix: Double columns in MDX resultset when two dimension are to be extracted with properties of the same name",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

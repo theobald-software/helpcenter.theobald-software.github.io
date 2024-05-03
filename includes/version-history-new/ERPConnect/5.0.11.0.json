@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Classic RFC: Fix for missing ABAP exception names with old RFC libraries",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

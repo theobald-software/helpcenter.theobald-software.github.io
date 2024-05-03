@@ -1,0 +1,62 @@
+[
+    {
+        "Message": "dev_rfc.trc files which contain only messages about changing the global trace directory are not generated any more (NW RFC)",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Added CommitWork and RollbackWork methods to ERPDataContext for LINQtoERP.",
+        "Component": "LINQtoERP",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Added LINQtoERP support to Visual Studio 2015.",
+        "Component": "LINQtoERP",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Fixed tracing (NWRFC)",
+        "Component": "RFCServer",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Updated support client to 10.0.43879.0 and added shortcut",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Fix for cookies (SOAP)",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Fix for sending integers & floats to big endian systems",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Correction for certain SSTRING columns",
+        "Component": "Table Join",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Added logic to scroll last added output field into view once it got added.",
+        "Component": "TQB",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Updated logic to highlight output field during moving actions (move up/down).",
+        "Component": "TQB",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Added logic to add and delete all table fields from the output field selection list.",
+        "Component": "TQB",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Updated validation logic to check table references in criteria clauses once a table will be deleted.",
+        "Component": "TQB",
+        "Product": "XtractKernel"
+    }
+]

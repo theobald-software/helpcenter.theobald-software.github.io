@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Logon crashed with passwords containing ; or , characters ",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

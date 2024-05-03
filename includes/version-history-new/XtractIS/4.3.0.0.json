@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Convert date 00000000 to NULL, if conversion is enabled (Table & DeltaQ)",
+        "Component": "General",
+        "Product": "XtractIS"
+    }
+]

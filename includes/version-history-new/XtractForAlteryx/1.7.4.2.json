@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added support for parameterizing selections",
+        "Component": "ODP",
+        "Product": "Theobald.Extractors"
+    }
+]

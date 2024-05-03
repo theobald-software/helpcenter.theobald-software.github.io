@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Destination of an extraction could not be changed from a non-existing shared destination to a valid one",
+        "Component": "Designer",
+        "Product": "XtractUniversal"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed a bug that caused faulty log table metadata when decimal places of a source table primary key type was not 0",
+        "Component": "TableCDC",
+        "Product": "Theobald.Extractors"
+    }
+]

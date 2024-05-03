@@ -1,0 +1,8 @@
+[
+    {
+        "Message": "Multiple UI fixes and usability improvements.",
+        "Component": "Table",
+        "Product": "Theobald.Extractors",
+        "ReleaseNote": "## Multiple UI fixes and usability improvements\n- Fixed a bug where an error would be thrown when trying to edit joins on same tables\n- Window for JOIN definitions now doesn't allow to define joins without specifying tables\n- It is no longer possible to add joins in extraction that has no tables defined"
+    }
+]

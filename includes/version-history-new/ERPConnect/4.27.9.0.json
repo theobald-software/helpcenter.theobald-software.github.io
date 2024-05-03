@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Updated BWCube code generation to support row indexes instead of names (VS2013).",
+        "Component": "LINQtoERP",
+        "Product": "ERPConnect"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix clean up logic for HTTP bytes responses.",
+        "Component": "General",
+        "Product": "Theobald.Server"
+    }
+]

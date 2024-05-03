@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "R3Connection.SetEncoding() didn't work for Kyrillian codepage 1251",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

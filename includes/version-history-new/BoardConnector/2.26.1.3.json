@@ -1,0 +1,17 @@
+[
+    {
+        "Message": "Fix for transferring empty NUMC/DATS/TIMS parameters to non-Unicode systems",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Fixed bug in changing parameter handling in VS2013+",
+        "Component": "LINQtoERP",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Updated to 4.42.3.1",
+        "Component": "ERPConnect",
+        "Product": "XtractKernel"
+    }
+]

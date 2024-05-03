@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "BICS: Fixed data type of integer characteristics",
+        "Component": "BW Cube",
+        "Product": "Theobald.Extractors"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for column/table names which are longer than 30 characters",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

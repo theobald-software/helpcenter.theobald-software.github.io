@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for table name (could not change back to SAP object if custom name was used)",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "Added range checks for SapDateConverter",
+        "Component": "General",
+        "Product": "Theobald.Extractors"
+    },
+    {
+        "Message": "Fix for error on InfoCube load in MDX mode",
+        "Component": "BW Cube",
+        "Product": "Theobald.Extractors"
+    }
+]

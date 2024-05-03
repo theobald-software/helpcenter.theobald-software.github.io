@@ -1,0 +1,17 @@
+[
+    {
+        "Message": "Added support for X.509 client certificate file for SNC",
+        "Component": "Security",
+        "Product": "XtractUniversal"
+    },
+    {
+        "Message": "Added support for X.509 client certificates (classic RFC, NW RFC)",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Updated to 4.23.0.5",
+        "Component": "ERPConnect",
+        "Product": "XtractKernel"
+    }
+]

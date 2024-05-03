@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Removed default values of client and language for new connections; changed tab order",
+        "Component": "Designer",
+        "Product": "BoardConnector"
+    }
+]

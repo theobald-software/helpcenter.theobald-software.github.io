@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Improved logging & buffer",
+        "Component": "Server",
+        "Product": "BoardConnector"
+    }
+]

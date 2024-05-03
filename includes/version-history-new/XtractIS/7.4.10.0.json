@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed a date conversion bug on DeltaQ",
+        "Component": "DeltaQ",
+        "Product": "XtractIS"
+    }
+]

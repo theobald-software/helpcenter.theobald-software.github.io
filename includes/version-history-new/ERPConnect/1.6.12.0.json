@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Problem with large internal tables on x64 os",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

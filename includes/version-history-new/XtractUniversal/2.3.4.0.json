@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for tables with emtpy column descriptions (since 2.3.3.x)",
+        "Component": "Table",
+        "Product": "XtractUniversal"
+    }
+]

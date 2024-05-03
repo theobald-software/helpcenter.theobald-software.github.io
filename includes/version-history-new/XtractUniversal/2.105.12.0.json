@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "Enabled automatic synchronization by default",
+        "Component": "DeltaQ",
+        "Product": "XtractUniversal"
+    },
+    {
+        "Message": "Improved automatic synchronization",
+        "Component": "DeltaQ",
+        "Product": "XtractKernel"
+    }
+]

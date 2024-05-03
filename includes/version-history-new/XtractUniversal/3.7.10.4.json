@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Removed IDocs status check (obsolete)",
+        "Component": "DeltaQ",
+        "Product": "XtractKernel"
+    }
+]

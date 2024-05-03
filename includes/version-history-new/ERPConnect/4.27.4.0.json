@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed tracing (NWRFC)",
+        "Component": "RFCServer",
+        "Product": "ERPConnect"
+    }
+]

@@ -1,0 +1,22 @@
+[
+    {
+        "Message": "Added logic to scroll last added output field into view once it got added.",
+        "Component": "TQB",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Updated logic to highlight output field during moving actions (move up/down).",
+        "Component": "TQB",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Added logic to add and delete all table fields from the output field selection list.",
+        "Component": "TQB",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Updated validation logic to check table references in criteria clauses once a table will be deleted.",
+        "Component": "TQB",
+        "Product": "XtractKernel"
+    }
+]

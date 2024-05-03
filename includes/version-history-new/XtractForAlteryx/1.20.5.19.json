@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Improved handling of list runtime parameters in MDX filter selections",
+        "Component": "BW Cube",
+        "Product": "Theobald.Extractors"
+    }
+]

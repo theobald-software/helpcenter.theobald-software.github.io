@@ -1,0 +1,8 @@
+[
+    {
+        "Message": "Added Table CDC extractor (preview)",
+        "Component": "TableCDC",
+        "Product": "BoardConnector",
+        "IsCritical": true
+    }
+]

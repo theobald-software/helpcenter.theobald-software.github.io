@@ -1,0 +1,22 @@
+[
+    {
+        "Message": "Third-party mode: Fix for empty packets",
+        "Component": "OHS",
+        "Product": "Theobald.Extractors"
+    },
+    {
+        "Message": "Improved error handling for unsupported destination types",
+        "Component": "OHS",
+        "Product": "Theobald.Extractors"
+    },
+    {
+        "Message": "Reverted default package size, this fixes an issue where the package size doubles leading to an error",
+        "Component": "ODP",
+        "Product": "Theobald.Extractors"
+    },
+    {
+        "Message": "Fixed a bug where fetching the metadata of certain views would run into an error.",
+        "Component": "Table",
+        "Product": "Theobald.Extractors"
+    }
+]

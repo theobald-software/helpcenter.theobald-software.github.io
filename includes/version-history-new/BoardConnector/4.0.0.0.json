@@ -1,0 +1,35 @@
+[
+    {
+        "Message": "This release contains general changes, changes to the existing Table component as well as a new ODP component.",
+        "Component": "General",
+        "Product": "BoardConnector",
+        "IsBreaking": true,
+        "ReleaseNote": "# BOARD Connector 4.0\n\n## General \n- New table component. **Table Join component is now obsolete**. Please use the new Table component for joins.\n- New ODP component\n- Introduced new column name style `PrefixedCode`. Column names will be in the format `SAPObject~ColumnName` (or adjusted to valid destination name).\n- Improvements for UI and UX\n- Minor bug fixes\n\n## Compatibility\nThe setup will automatically (unless started in silent mode or manually changed during installation) start the conversion of legacy configuration files. You can also manually run the `ConfigConverter.exe` after installation.\n\n## Bug fixes\n- Fixed a bug that prevented the Designer from clearing the result cache and aborting extractions when Active Directory Access Control was activated on the web server"
+    },
+    {
+        "Message": "Added UI to enable conversion routines",
+        "Component": "Table",
+        "Product": "Theobald.Extractors"
+    },
+    {
+        "Message": "Improved exception handling and logging in case of errors",
+        "Component": "ODP",
+        "Product": "Theobald.Extractors"
+    },
+    {
+        "Message": "Improvements for detecting possible joins and bug fixes related to editing joins",
+        "Component": "Table",
+        "Product": "Theobald.Extractors",
+        "ReleaseNote": "The changes contained in this release only affect the GUI and do not change behavior of extractions.\n\n### Join detection\nUpon adding a new table to the extraction the GUI will attempt to automatically create joins based on the references in the SAP system. Detection will take the following steps to map fields with matching names:\n\n1. Primary keys that directly reference another table\n2. Primary keys that both reference the same table which does not exist in the extraction\n3. All fields that directly reference another table\n4. All fields that both reference the same table which does not exist in the extraction\n\n### Bug fixes\n- fixed a bug where editing of joins was not possible after saving an extraction"
+    },
+    {
+        "Message": "Updated to 1.5.10.0",
+        "Component": "Theobald.Extractors",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Updated to 1.5.8.1",
+        "Component": "Theobald.Extractors",
+        "Product": "XtractKernel"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed a bug where the windows service could not be stopped when Azure Relay was active.",
+        "Component": "Management",
+        "Product": "YunIO"
+    }
+]

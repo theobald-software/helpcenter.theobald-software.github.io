@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added support for recovering the previous delta run ",
+        "Component": "ODP",
+        "Product": "Theobald.Extractors"
+    }
+]

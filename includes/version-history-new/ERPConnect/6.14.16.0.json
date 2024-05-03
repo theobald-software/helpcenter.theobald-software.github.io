@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for tracing null values",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added RequestID & RowCount columns to logs via HTTP",
+        "Component": "Server",
+        "Product": "BoardConnector"
+    }
+]

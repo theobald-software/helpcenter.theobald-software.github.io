@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed a bug where the HTTP server would not send a valid HTTP response when the chunk encoded body was empty.",
+        "Component": "General",
+        "Product": "Theobald.Server"
+    }
+]

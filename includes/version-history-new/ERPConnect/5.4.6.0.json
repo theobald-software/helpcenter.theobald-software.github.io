@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "NWRFC: Added R3Connection.InitialEncoding for special characters in passwords",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    }
+]

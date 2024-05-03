@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for truncate statement and introduced handling for multiple statements in the Snowflake destination",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

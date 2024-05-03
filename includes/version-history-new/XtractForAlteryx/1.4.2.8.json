@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixes for variable names (RSZGLOBV)",
+        "Component": "BW Cube",
+        "Product": "Theobald.Extractors"
+    }
+]

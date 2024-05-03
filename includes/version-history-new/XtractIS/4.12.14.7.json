@@ -1,0 +1,27 @@
+[
+    {
+        "Message": "Fix for sequential execution of functions with same callback names but different metadata",
+        "Component": "NWRFC",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Fix for R3Connection IDisposable implementation",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Fix for quotes in passwords",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "NWRFC: Fix for connection strings on localized systems",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Updated to 6.5.4.1",
+        "Component": "ERPConnect",
+        "Product": "XtractKernel"
+    }
+]

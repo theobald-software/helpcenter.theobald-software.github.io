@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Correction for using BWCube.RefreshMetaData() with queries that contain structures",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

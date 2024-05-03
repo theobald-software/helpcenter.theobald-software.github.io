@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "ArgumentOutOfRangeException in case of some RETURN structures (Problem with fixed length)",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

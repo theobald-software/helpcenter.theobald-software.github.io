@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Correction for misplaced decimal separator in BEX mode under SSIS 2008",
+        "Component": "BW Cube",
+        "Product": "XtractIS"
+    }
+]

@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "Added the result columns custom order implementation",
+        "Component": "General",
+        "Product": "Theobald.Extractors"
+    },
+    {
+        "Message": "Added the mapping for the result columns custom order file and its logic for column transformation in runtime",
+        "Component": "General",
+        "Product": "Theobald.Server"
+    }
+]

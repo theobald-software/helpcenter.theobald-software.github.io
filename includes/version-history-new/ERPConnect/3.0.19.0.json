@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Bugfix for MDX statements that are executed with packaging and contain null values in the result set",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

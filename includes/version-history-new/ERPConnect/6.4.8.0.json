@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Changed the behavior of the new ReadTable implementation to be more consistent with the old implementation in terms of RowState of the resulting DataTable",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    }
+]

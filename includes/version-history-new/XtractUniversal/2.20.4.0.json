@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added DataServiceVersion HTTP-header",
+        "Component": "Server",
+        "Product": "XtractUniversal"
+    }
+]

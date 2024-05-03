@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "UI update.",
+        "Component": "General",
+        "Product": "XtractForAlteryx"
+    },
+    {
+        "Message": "Added support for RFC_READ_TABLE2 function modules in ReadTable",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Better error message for errors while retrieving Table metadata",
+        "Component": "Table",
+        "Product": "BoardConnector"
+    }
+]

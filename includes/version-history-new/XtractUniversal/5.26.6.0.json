@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed Snowflake connection test for non-default schemas",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

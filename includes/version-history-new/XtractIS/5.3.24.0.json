@@ -1,0 +1,14 @@
+[
+    {
+        "Message": "Several fixes (Bugs introduced in 5.3.15.1)",
+        "Component": "ODP",
+        "Product": "XtractIS",
+        "ReleaseNote": "#Xtract IS 5.3.24\n\n- Fix for *\"XML format  currently not supported\"* error when result was empty\n- Fix for very wide (~200+ columns) extractors that caused the extraction to fail\n- RAW byte arrays with all bytes set to **0** now have correct values instead of `null`\n"
+    },
+    {
+        "Message": "Several fixes for execution",
+        "Component": "ODP",
+        "Product": "Theobald.Extractors",
+        "ReleaseNote": "# Theobald.Extractors 1.10.18\n\n- Fix for *\"XML format  currently not supported\"* error when result was empty\n- Fix for very wide (~200+ columns) extractors that caused the extraction to fail\n- RAW byte arrays with all bytes set to **0** now have correct values instead of `null`"
+    }
+]

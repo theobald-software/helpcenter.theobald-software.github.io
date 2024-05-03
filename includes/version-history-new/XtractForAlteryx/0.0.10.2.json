@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for Big Endian + NWRFC",
+        "Component": "Table",
+        "Product": "Theobald.Extractors"
+    }
+]

@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "BICS: Fix result metadata of key figures",
+        "Component": "BW Cube",
+        "Product": "Theobald.Extractors"
+    },
+    {
+        "Message": "BICS: Fix caching of results",
+        "Component": "BW Cube",
+        "Product": "Theobald.Extractors"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Qlik Sense Script: Single quotes in where statements are now escaped; Run parameters now only appear in the script if they are selected in the Run-Dialogue.",
+        "Component": "Designer",
+        "Product": "XtractUniversal"
+    }
+]

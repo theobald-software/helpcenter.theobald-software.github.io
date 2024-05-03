@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed an issue where system clock changes could cause errors ",
+        "Component": "General",
+        "Product": "BoardConnector"
+    }
+]

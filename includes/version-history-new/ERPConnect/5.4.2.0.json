@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Marked ReadTable.AddCriteria() as obsolete",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    }
+]

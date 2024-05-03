@@ -1,0 +1,8 @@
+[
+    {
+        "Message": "Fix for Snowflake destination transaction control",
+        "Component": "Destinations",
+        "Product": "XtractUniversal",
+        "ReleaseNote": "** XtractUniversal - 5.4.14 **\n\nFix for Snowflake destination transaction control for RowProcessingOnly extraction step.\nBecause Snowflake does not support explicit transaction control for DDL statements, RowProcessingOnly is the only option available for this destination."
+    }
+]

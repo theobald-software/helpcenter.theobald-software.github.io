@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed SAP connection management in the new runtime. This caused severe performance regression under high load. Fixed a deadlock which could occur under high load in the HTTP server.",
+        "Component": "General",
+        "Product": "Theobald.Server"
+    }
+]

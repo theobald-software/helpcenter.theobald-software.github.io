@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for date columns being 0 and in wrong format in date columns of BICS extractions.",
+        "Component": "BW Cube",
+        "Product": "Theobald.Extractors"
+    }
+]

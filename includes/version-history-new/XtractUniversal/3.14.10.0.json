@@ -1,0 +1,28 @@
+[
+    {
+        "Message": "Fixes & improvements for logging",
+        "Component": "Server",
+        "Product": "XtractUniversal"
+    },
+    {
+        "Message": "Updated to 6.5.9.16",
+        "Component": "ERPConnect",
+        "Product": "Theobald.Extractors"
+    },
+    {
+        "Message": "Fixed a bug where Z_THEO_READ_TABLE would continue running after the table authorization check had failed.",
+        "Component": "Table",
+        "Product": "Theobald.Extractors",
+        "IsCritical": true
+    },
+    {
+        "Message": "Improved logging",
+        "Component": "General",
+        "Product": "Theobald.Extractors"
+    },
+    {
+        "Message": "Updated to 1.3.6.16",
+        "Component": "Theobald.Extractors",
+        "Product": "XtractKernel"
+    }
+]

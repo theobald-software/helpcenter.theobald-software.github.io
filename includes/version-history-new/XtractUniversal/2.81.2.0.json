@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "SharePointDestination: Fixed exception handling in connection test for SharePoint Online.",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

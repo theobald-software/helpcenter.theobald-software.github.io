@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Output columns now have length of 255 characters when dynamic column widths and offsets is turned on. ",
+        "Component": "Report",
+        "Product": "Theobald.Extractors"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix: StackOverflow-Exception when converting BCDRawBytes to Decimal in very large structures",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added direct read mode with support for aggregating fields",
+        "Component": "ODP",
+        "Product": "Theobald.Extractors"
+    }
+]

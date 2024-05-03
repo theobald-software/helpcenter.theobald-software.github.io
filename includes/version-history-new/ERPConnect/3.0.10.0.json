@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Bug: Sometimes Integers in Rows of tables are not transferred correctly",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

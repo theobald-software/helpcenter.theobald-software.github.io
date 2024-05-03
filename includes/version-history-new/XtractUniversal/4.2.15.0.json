@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Snowflake's driver, SnowSql, upgraded to version 1.2.0",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

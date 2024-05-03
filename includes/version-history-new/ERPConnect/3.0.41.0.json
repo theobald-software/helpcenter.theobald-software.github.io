@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Visual Studio crashed under Vista when using ERPConnect in a Visual Studio related PlugIn (that is based on VS SDK)",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

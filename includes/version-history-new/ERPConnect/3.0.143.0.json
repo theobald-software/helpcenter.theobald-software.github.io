@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Bugfix fpr Queries with mixed Chinese and Western characters",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

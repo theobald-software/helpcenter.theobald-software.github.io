@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Only send scalar parameters if value has been provided",
+        "Component": "BAPI",
+        "Product": "Theobald.Extractors"
+    }
+]

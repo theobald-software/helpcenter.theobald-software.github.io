@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Correction for timeout issue when previewing a long running report",
+        "Component": "Report",
+        "Product": "BoardConnector"
+    }
+]

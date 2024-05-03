@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "New extension to enable mixed single-byte / multi-byte extractions from non-Unicode systems",
+        "Component": "Table",
+        "Product": "XtractIS"
+    }
+]

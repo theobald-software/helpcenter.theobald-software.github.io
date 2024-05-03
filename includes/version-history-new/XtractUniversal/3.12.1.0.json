@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for handling empty key fields in Redshift destination.",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

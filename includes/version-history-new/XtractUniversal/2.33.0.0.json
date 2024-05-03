@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Removed custom parameters from scripted expressions for security reasons",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

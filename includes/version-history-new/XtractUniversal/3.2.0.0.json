@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added support for non-Unicode multibyte systems (Asian characters), removed background extraction (Table)",
+        "Component": "General",
+        "Product": "XtractUniversal"
+    }
+]

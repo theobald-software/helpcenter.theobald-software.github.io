@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for IntegerType intial value (RFCServer)",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

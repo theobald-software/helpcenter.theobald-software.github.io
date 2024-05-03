@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed the installation for 64 bit SQL Server versions (Bug introduced in 6.5.0)",
+        "Component": "Setup",
+        "Product": "XtractIS"
+    }
+]

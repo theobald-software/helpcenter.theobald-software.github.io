@@ -1,0 +1,57 @@
+[
+    {
+        "Message": "Using MSBuild 16.0",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Connection strings: Fix for backslashes inside quotes (broken since 6.5.2)",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Using MSBuild 16",
+        "Component": "General",
+        "Product": "Theobald.Extractors"
+    },
+    {
+        "Message": "Updated to 6.5.9.3",
+        "Component": "ERPConnect",
+        "Product": "Theobald.Extractors"
+    },
+    {
+        "Message": "Updated to .NET Framework 4.7.1",
+        "Component": "General",
+        "Product": "Theobald.Extractors"
+    },
+    {
+        "Message": "Fix for automatic join detection on tables where unknown fields are defined in SAP",
+        "Component": "Table",
+        "Product": "Theobald.Extractors"
+    },
+    {
+        "Message": "Updated to 6.5.8.0",
+        "Component": "ERPConnect",
+        "Product": "Theobald.Extractors"
+    },
+    {
+        "Message": "Using MSBuild 16",
+        "Component": "General",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Updated to 1.3.2.0",
+        "Component": "Theobald.Extractors",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Updated to .NET Framework 4.7.1",
+        "Component": "General",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Updated to 1.2.2.0",
+        "Component": "Theobald.Extractors",
+        "Product": "XtractKernel"
+    }
+]

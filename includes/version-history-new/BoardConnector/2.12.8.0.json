@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Delete button & menu item is disabled in GUI if user does not has appropriate privileges",
+        "Component": "Designer",
+        "Product": "BoardConnector"
+    }
+]

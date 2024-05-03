@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Introduced Execute(RFCFunction) method to IR3Connection interface to improve testability of R3Connection dependent code",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    }
+]

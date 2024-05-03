@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed a bug where INT1 was being cast to Int32 instead of Byte in generated code",
+        "Component": "LINQtoERP",
+        "Product": "ERPConnect"
+    }
+]

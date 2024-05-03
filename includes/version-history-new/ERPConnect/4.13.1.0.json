@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "RFCTable no longer implements ITypedList, IBindingList",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

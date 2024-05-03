@@ -1,0 +1,13 @@
+[
+    {
+        "Message": "New setup",
+        "Component": "Setup",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Improved monitoring for subscriptions and requests",
+        "Component": "ODP",
+        "Product": "Theobald.Extractors",
+        "ReleaseNote": "# Theobald.Extractors 1.14.11\n\nImproved monitoring for subscriptions and requests\n\n## Active Subscriptions window\n- Fixed a bug where the window would not show subscriptions with zero requests\n- Added a filter input for the queue name\n- Window can be resized now\n\n## Logging\n\nThe component now logs subscriber type, name, process and run"
+    }
+]

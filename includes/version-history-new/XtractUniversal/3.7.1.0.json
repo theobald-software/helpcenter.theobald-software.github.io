@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Changed isolation level to READ COMMITTED for Oracle destination to fix an error that may occur in some recent db releases.",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

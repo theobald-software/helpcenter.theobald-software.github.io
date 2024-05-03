@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added SAP codepage 1610 (ISO 8859-9 Turkish)",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

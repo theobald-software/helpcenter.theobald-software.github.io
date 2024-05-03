@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "Added missing authority check for object S_RO_OSOA to customizing check",
+        "Component": "DeltaQ",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "New Create() method for DeltaQDefinition",
+        "Component": "DeltaQ",
+        "Product": "XtractKernel"
+    }
+]

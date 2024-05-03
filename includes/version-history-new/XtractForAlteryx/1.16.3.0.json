@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed a bug where scalar parameters disappeared from the tool properties",
+        "Component": "General",
+        "Product": "XtractForAlteryx"
+    }
+]

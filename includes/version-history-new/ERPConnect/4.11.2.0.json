@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Implemented RFCServer.Ping() over NW RFC API",
+        "Component": "RFCServer",
+        "Product": "ERPConnect"
+    }
+]

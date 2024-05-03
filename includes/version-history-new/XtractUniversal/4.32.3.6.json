@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed serialization of X.509 certificate info",
+        "Component": "General",
+        "Product": "Theobald.Server"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Azure Blob Storage destination now supports extractions to block blobs.",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

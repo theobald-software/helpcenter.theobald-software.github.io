@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Improvement for BEX mode in BW Cube component when using older releases (3.5 or lower)",
+        "Component": "BW Cube",
+        "Product": "XtractKernel"
+    }
+]

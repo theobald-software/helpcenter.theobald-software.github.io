@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Adding column comments for tables created by the Snowflake destination",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

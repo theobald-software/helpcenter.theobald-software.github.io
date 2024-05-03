@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix: INT2 and ABAP type \"s\" problem\nFix: Bapi return messages with strange Code-problem ",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

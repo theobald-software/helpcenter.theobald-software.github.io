@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for logging (NW)",
+        "Component": "RFCServer",
+        "Product": "ERPConnect"
+    }
+]

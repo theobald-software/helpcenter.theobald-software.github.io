@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for sending certain Unicode characters to big endian systems",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

@@ -1,0 +1,22 @@
+[
+    {
+        "Message": "Updated TheobaldExtractors to version 1.10.4",
+        "Component": "General",
+        "Product": "XtractForAlteryx"
+    },
+    {
+        "Message": "Fixed incorrect window parent",
+        "Component": "Hierarchy",
+        "Product": "Theobald.Extractors"
+    },
+    {
+        "Message": "Updated to 6.8.1.5",
+        "Component": "ERPConnect",
+        "Product": "Theobald.Extractors"
+    },
+    {
+        "Message": "Fix for copying results of Table (Compression FM) and ODP (non-Hierarchy)",
+        "Component": "General",
+        "Product": "Theobald.Extractors"
+    }
+]

@@ -1,0 +1,8 @@
+[
+    {
+        "Message": "Added support for .NET Standard 2.0 (ERPConnectStandard20.dll) and RFC callbacks, fixed SQL Server support",
+        "Component": "General",
+        "Product": "ERPConnect",
+        "IsBreaking": true
+    }
+]

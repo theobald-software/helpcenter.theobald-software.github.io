@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Buffer was not working with OData URLs (added in 2.22.0)",
+        "Component": "Server",
+        "Product": "XtractUniversal"
+    }
+]

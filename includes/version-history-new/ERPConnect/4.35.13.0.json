@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "NW: Improved error message for SetABAPDebug()",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

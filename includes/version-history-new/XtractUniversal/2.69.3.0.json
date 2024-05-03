@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for OData metadata (was broken since 2.65.0)",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

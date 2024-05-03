@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Special characters (like slashes) are no longer replaced with underscores in column names (HTTP - CSV, Flat File - CSV, GoodData)",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

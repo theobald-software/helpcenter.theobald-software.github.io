@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for admin login messages (server log)",
+        "Component": "Server",
+        "Product": "BoardConnector"
+    }
+]

@@ -1,0 +1,17 @@
+[
+    {
+        "Message": "NWException now derives from ERPException. Added INWException interface",
+        "Component": "NWRFC",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Updated to 4.29.0.3",
+        "Component": "ERPConnect",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Duplicates in basic characteristic are ignored now",
+        "Component": "Hierarchy",
+        "Product": "XtractKernel"
+    }
+]

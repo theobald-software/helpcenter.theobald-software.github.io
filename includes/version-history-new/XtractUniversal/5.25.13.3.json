@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed a bug which caused the server to not attach the www-authenticate header on invalid credentials.",
+        "Component": "General",
+        "Product": "Theobald.Server"
+    }
+]

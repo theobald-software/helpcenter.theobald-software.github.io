@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "Removed OHS",
+        "Component": "OHS",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Removed Report",
+        "Component": "Report",
+        "Product": "XtractKernel"
+    }
+]

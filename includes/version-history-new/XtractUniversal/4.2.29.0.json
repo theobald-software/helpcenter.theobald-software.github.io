@@ -1,0 +1,37 @@
+[
+    {
+        "Message": "Fix for server not accepting any connections after 99h runtime",
+        "Component": "Server",
+        "Product": "XtractUniversal"
+    },
+    {
+        "Message": "Classic RFC: Fixed memory leak in tRFC (e. g. Idoc.Send())",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "NWRFC: Fixed memory leak in tRFC / qRFC (e. g. Idoc.Send())",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Adjustments for demo licenses.",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Moved log splitting to LoggerMulti to properly support XU config / web server logs",
+        "Component": "General",
+        "Product": "Common"
+    },
+    {
+        "Message": "Updated Z_THEO_READ_TABLE to version 2.8",
+        "Component": "Table",
+        "Product": "Theobald.Extractors"
+    },
+    {
+        "Message": "Fix for lookup",
+        "Component": "Hierarchy",
+        "Product": "Theobald.Extractors"
+    }
+]

@@ -1,0 +1,8 @@
+[
+    {
+        "Message": "Fixed issues related to legacy table extraction function modules when editing table components",
+        "Component": "Table",
+        "Product": "XtractIS",
+        "ReleaseNote": "Legacy function modules (Z_XTRACT_IS_TABLE_COMPRESSION, Z_XTRACT_IS_TABLE) are now\n- automatically selected for new table components when Z_THEO_READ_TABLE is not installed\n- suggested in the drop down in the extraction settings dialog\n- supported when running the preview"
+    }
+]

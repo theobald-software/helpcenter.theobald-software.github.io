@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added support for MicroStrategy 10.11.",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

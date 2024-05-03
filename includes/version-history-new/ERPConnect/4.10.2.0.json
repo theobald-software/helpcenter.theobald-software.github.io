@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for receiving tables over NW RFC API",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    }
+]

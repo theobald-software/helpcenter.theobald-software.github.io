@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added missing Snowflake legacy Azure region \"North Europe (legacy)\"",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

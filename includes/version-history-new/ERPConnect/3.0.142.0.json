@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Bugfix for BCD values in deep structures (e.g. in SXMB_GET_MESSAGE_LIST)",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

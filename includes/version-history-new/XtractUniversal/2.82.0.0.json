@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added \"wait\" parameter for running extractions",
+        "Component": "Server",
+        "Product": "XtractUniversal"
+    }
+]

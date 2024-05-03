@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added RFCAPI.RequestWaitTime and RFCAPI.SynchronizationEnabled for classic RFC SDK performance tuning",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

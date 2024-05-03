@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixes for connecting as external program to gateway (classic RFC)",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    }
+]

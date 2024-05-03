@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed an issue where an RFCServer would not update its code page when using NWRFC",
+        "Component": "RFCServer",
+        "Product": "ERPConnect"
+    }
+]

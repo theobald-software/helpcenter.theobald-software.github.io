@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Updated Exasol data provider to version 7.0.4 and improved write performance to support larger packages.",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

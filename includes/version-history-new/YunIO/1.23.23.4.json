@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed a bug, where the runtime would hang if an error happened at a specific time.\nImproved logging for certain errors.",
+        "Component": "General",
+        "Product": "Theobald.Server"
+    }
+]

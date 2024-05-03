@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for DB2 destination",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

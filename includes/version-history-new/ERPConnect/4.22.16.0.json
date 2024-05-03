@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for STRING/XSTRING in export parameters (classic RFC, broken since 4.22.9)",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

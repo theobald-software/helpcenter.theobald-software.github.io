@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for \"Prepare Merge\" (broken since 2.61.24)",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

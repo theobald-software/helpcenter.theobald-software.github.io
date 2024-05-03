@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Bug fix for very large double precision floating point columns",
+        "Component": "Table",
+        "Product": "XtractIS"
+    }
+]

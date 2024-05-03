@@ -1,0 +1,8 @@
+[
+    {
+        "Message": "Snowflake now deletes the remote staged file automatically",
+        "Component": "Destinations",
+        "Product": "XtractUniversal",
+        "ReleaseNote": "**XtractUniversal 5.16.14 - PURGE parameter**\n\nAdded the parameter PURGE = TRUE for the COPY command, which will delete the staged remote file on Snowflake after the command succeeds. The \"manual\" deletion request executed from XU was removed."
+    }
+]

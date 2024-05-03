@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed a bug that caused scripted expressions to not be evaluated for the preview",
+        "Component": "Table",
+        "Product": "BoardConnector"
+    }
+]

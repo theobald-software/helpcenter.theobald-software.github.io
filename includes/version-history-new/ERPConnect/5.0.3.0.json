@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Removed references to old ERPConnect versions.",
+        "Component": "LINQtoERP",
+        "Product": "ERPConnect"
+    }
+]

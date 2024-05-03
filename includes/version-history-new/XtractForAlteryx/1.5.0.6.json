@@ -1,0 +1,17 @@
+[
+    {
+        "Message": "ReadTable: Workaround for SAP 4.6C bug with WHERE clauses containing IN condition",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Fixes for connecting as external program to gateway (classic RFC)",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Workaround for SAP 4.6C bug with WHERE clauses containing IN condition",
+        "Component": "Table",
+        "Product": "Theobald.Extractors"
+    }
+]

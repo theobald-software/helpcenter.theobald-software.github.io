@@ -1,0 +1,42 @@
+[
+    {
+        "Message": "New implementation for BCD/Decimal conversion",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "New internal implementation of RFCServer",
+        "Component": "RFCServer",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Added synchronization for classic RFC SDK API calls",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "TEST flag was not transmitted correctly when sending IDocs",
+        "Component": "Idoc",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Bugfix in IDisposable implementation (ReadTable class).",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Updated logic to display additional error information when SAP object structures are created within the LINQ designer.",
+        "Component": "LINQtoERP",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Bug fix for R3Connection.Clone() function used together with SNC",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Updated IDisposable interface logic in a couple of RFC classes to pass MSOCAF code analysis.",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

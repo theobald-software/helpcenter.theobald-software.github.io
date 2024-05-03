@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Automatic removal of Xml declaration when ParamValue of Table Type parameters is set to a string",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

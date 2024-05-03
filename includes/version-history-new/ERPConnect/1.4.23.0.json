@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "RFCServer.Start(true/false) -> definiert, ob der Server blockiert oder nicht",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

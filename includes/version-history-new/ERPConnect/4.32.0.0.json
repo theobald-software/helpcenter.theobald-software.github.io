@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Re-added support for non-Unicode RFC server (NW)",
+        "Component": "RFCServer",
+        "Product": "ERPConnect"
+    }
+]

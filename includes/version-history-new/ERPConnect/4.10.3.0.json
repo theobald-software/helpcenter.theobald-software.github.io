@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added Contains() function to parameter collection to check, if a parameter is available after creating the RFCFunction object with CreateFunction()",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    }
+]

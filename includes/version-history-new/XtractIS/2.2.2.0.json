@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Bugfix for transfers with unicode double byte characters, where RFC destination is set to Unicode",
+        "Component": "DeltaQ",
+        "Product": "XtractIS"
+    }
+]

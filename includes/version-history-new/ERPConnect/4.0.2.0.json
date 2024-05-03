@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Second fix for integer types on Unix servers",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added R3Connection.ParseConnectionString()",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    }
+]

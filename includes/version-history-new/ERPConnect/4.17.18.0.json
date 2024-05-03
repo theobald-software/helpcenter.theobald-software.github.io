@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for non-unicode systems (NW RFC)",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

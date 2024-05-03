@@ -1,0 +1,22 @@
+[
+    {
+        "Message": "Correction for renaming columns in OLAP mode (error message: Cannot find column XX)",
+        "Component": "BW Cube",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "A new dialog for maintaining the Delta requests was added to the settings dialog",
+        "Component": "DeltaQ",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Fix for packed numbers (DEC, QUAN, etc.)",
+        "Component": "BAPI",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Correction for incorrect negative currency conversion fields when using compression and field exits at the same time",
+        "Component": "Table",
+        "Product": "XtractKernel"
+    }
+]

@@ -1,0 +1,8 @@
+[
+    {
+        "Message": "Improvements and fixes for the run window",
+        "Component": "Designer",
+        "Product": "XtractUniversal",
+        "ReleaseNote": "**Xtract Universal  5.1.3 - Improvements for the run window**\n\n- New log viewer with a grid\n- New output viewer with grid and column filters (only for CSV, Json, SqlServer, SQL Server Reporting Services, Alteryx and Qlik destinations)\n- Performance and stability improvements"
+    }
+]

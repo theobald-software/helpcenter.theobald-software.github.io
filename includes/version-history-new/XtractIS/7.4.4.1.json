@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "Migrated XtractKernel.Scripting",
+        "Component": "General",
+        "Product": "Theobald.Extractors"
+    },
+    {
+        "Message": "Removed XtractKernel.Scripting",
+        "Component": "Scripting",
+        "Product": "XtractKernel"
+    }
+]

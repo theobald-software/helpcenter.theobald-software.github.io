@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Changed default RFC library to NWRFC",
+        "Component": "General",
+        "Product": "Theobald.Server"
+    }
+]

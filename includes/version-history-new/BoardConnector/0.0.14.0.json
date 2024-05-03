@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added debug logging for output stream errors",
+        "Component": "Server",
+        "Product": "BoardConnector"
+    }
+]

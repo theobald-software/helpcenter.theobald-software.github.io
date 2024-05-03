@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "DeltaQ / OHS extractions with shared connection could not be created since version 2.41.0",
+        "Component": "Designer",
+        "Product": "XtractUniversal"
+    }
+]

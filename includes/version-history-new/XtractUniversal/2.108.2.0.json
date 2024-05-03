@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Improved error handling for S3 destination",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

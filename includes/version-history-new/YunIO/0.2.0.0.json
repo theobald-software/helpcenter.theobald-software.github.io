@@ -1,0 +1,8 @@
+[
+    {
+        "Message": "Various fixes & improvements (see release note for details)",
+        "Component": "General",
+        "Product": "YunIO",
+        "ReleaseNote": "* 'Check all'-checkbox for output\n* About Page\n* EmptyState fixes\n* Fixed HttpServer error in case of duplicate headers\n* Download option for swagger and openapi files"
+    }
+]

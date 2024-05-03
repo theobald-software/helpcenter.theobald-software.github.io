@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Table & ODP: Now set currency decimals to 4 when using \"adjust currency decimals\"",
+        "Component": "General",
+        "Product": "Theobald.Extractors"
+    }
+]

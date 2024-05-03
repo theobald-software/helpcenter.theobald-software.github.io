@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "SQLServer/AzureDWH: Increased timeouts to 30 minutes",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

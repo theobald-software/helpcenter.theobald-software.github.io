@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "Fixed an issue that caused errors while loading dependencies on SQL Server instances",
+        "Component": "General",
+        "Product": "XtractIS"
+    },
+    {
+        "Message": "RfcLibraryHelper now loads the VC++ dependencies before loading the RFC SDK dlls",
+        "Component": "General",
+        "Product": "Theobald.Extractors"
+    }
+]

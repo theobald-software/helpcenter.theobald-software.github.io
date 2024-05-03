@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Workaorund for invalid codepage announcement on Unicode RFC destination",
+        "Component": "RFCServer",
+        "Product": "ERPConnect"
+    }
+]

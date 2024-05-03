@@ -1,0 +1,32 @@
+[
+    {
+        "Message": "Added BAPI tool (beta)",
+        "Component": "BAPI",
+        "Product": "XtractForAlteryx"
+    },
+    {
+        "Message": "Added RFCTYPE.DECF16 and RFCTYPE.DECF34",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Added BAPI component (beta)",
+        "Component": "BAPI",
+        "Product": "Theobald.Extractors"
+    },
+    {
+        "Message": "Updated ABAP README",
+        "Component": "Table",
+        "Product": "Theobald.Extractors"
+    },
+    {
+        "Message": "Fix for decimal floats",
+        "Component": "Table",
+        "Product": "Theobald.Extractors"
+    },
+    {
+        "Message": "Improved error handling for TABLE_NOT_ACCESSIBLE errors. Updated Z_THEO_READ_TABLE to version 2.3.",
+        "Component": "Table",
+        "Product": "Theobald.Extractors"
+    }
+]

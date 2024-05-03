@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for strings with 0-characters in SAP PI",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

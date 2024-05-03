@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "IDisposable interface was removed from ReadTable class because it's not necessary anymore",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added support for IDocs over NW RFC API",
+        "Component": "Idoc",
+        "Product": "ERPConnect"
+    }
+]

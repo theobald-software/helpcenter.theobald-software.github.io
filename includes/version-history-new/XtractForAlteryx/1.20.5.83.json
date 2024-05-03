@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Enabled column selection for hierarchy extractors, so that selectors can be used.\nAdded proper message to inform that DeltaQ does not support variable length strings.",
+        "Component": "DeltaQ",
+        "Product": "Theobald.Extractors"
+    }
+]

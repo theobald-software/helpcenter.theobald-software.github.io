@@ -1,0 +1,17 @@
+[
+    {
+        "Message": "About window was refactored",
+        "Component": "Designer",
+        "Product": "BoardConnector"
+    },
+    {
+        "Message": "About window was refactored",
+        "Component": "WPF",
+        "Product": "Common"
+    },
+    {
+        "Message": "Added a LoggerTrace which logs to the Debug Console. That allows to debug GUI applications because they don't have a console to write to.",
+        "Component": "General",
+        "Product": "Common"
+    }
+]

@@ -1,0 +1,17 @@
+[
+    {
+        "Message": "Added a form to look up report variants.",
+        "Component": "Report",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Moved JSON serialization from XU to Kernel",
+        "Component": "General",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Added IJsonSerializable to LogEntry.cs",
+        "Component": "General",
+        "Product": "XtractKernel"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for changing primary key of Query and Table extractions",
+        "Component": "Designer",
+        "Product": "XtractUniversal"
+    }
+]

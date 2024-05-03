@@ -1,0 +1,28 @@
+[
+    {
+        "Message": "Fixes & improvements for SAP connections (ticket issuer, timeouts)",
+        "Component": "General",
+        "Product": "XtractForAlteryx"
+    },
+    {
+        "Message": "Updated to 6.5.9.16",
+        "Component": "ERPConnect",
+        "Product": "Theobald.Extractors"
+    },
+    {
+        "Message": "Fixed a bug where Z_THEO_READ_TABLE would continue running after the table authorization check had failed.",
+        "Component": "Table",
+        "Product": "Theobald.Extractors",
+        "IsCritical": true
+    },
+    {
+        "Message": "Improved logging",
+        "Component": "General",
+        "Product": "Theobald.Extractors"
+    },
+    {
+        "Message": "Added backward-compatibility support for Conversion Routines (Z_XTRACT_IS_TABLE_COMPRESSION)",
+        "Component": "Table",
+        "Product": "Theobald.Extractors"
+    }
+]

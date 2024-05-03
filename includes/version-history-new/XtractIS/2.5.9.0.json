@@ -1,0 +1,22 @@
+[
+    {
+        "Message": "Query View SSIS variable applies to preview mode as well as to regular execution",
+        "Component": "BW Cube",
+        "Product": "XtractIS"
+    },
+    {
+        "Message": "New Create() method for DeltaQDefinition",
+        "Component": "DeltaQ",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Correction for using query views under BW rel. 7.4 and above",
+        "Component": "BW Cube",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "The setting \"RFC Server tracing\" is withdrawn. To trace the RFC Server activity switch the logging of the client connection on.",
+        "Component": "DeltaQ",
+        "Product": "XtractKernel"
+    }
+]

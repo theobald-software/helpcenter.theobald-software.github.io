@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for BW Cube measures decimal separator if 'Use Caption for Pipline' is set",
+        "Component": "BW Cube",
+        "Product": "BoardConnector"
+    }
+]

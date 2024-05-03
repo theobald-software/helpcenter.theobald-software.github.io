@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Empty results do not create a dummy line anymore if read from buffer",
+        "Component": "Server",
+        "Product": "XtractUniversal"
+    }
+]

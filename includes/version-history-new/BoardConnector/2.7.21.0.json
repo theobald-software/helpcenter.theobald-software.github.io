@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Set start timeout to 3 minutes (for slow systems)",
+        "Component": "Service",
+        "Product": "BoardConnector"
+    }
+]

@@ -1,0 +1,22 @@
+[
+    {
+        "Message": "Duration of extraction runs is now recoreded and displayed in main window and log viewer",
+        "Component": "General",
+        "Product": "BoardConnector"
+    },
+    {
+        "Message": "Added R3Connection.ReadTableFunctionName",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Updated to 6.1.5.2",
+        "Component": "ERPConnect",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Updated to 6.1.5.1",
+        "Component": "ERPConnect",
+        "Product": "XtractKernel"
+    }
+]

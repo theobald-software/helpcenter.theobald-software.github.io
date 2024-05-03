@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Classic RFC: Fix for changing parameters (string, xstring, table types, deep structures)",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    }
+]

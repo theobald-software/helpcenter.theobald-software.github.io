@@ -1,0 +1,8 @@
+[
+    {
+        "Message": "Extended script expressions in folder paths (Amazon S3 & Azure Storage)",
+        "Component": "Destinations",
+        "Product": "XtractUniversal",
+        "ReleaseNote": "# Update for script expressions in folder paths\n\n* ODP Selections are available in script expressions: `#{Extraction.Fields[\"SPRAS\"].Selections[0].Value}#`\n* Script expressions in folder paths are available for Amazon S3 destination\n* Folder path on destination level is available for Amazon S3 destination\n"
+    }
+]

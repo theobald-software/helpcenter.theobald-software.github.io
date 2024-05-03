@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Alteryx Plugin: adjustment for Alteryx SDK for columns with more than 15 decimals places",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

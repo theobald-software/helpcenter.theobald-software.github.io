@@ -1,0 +1,8 @@
+[
+    {
+        "Message": "Fixed a bug where metadata of views was not retrieved correctly.",
+        "Component": "Table",
+        "Product": "Theobald.Extractors",
+        "ReleaseNote": "- Fixed a bug where the metadata of dynamic fields of views would not get fetched on table lookup.\n- Fixed a bug where columns of views were not in correct order. The columns are now in the same order they are defined in in SAP."
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "RFC Service objects are now excluded from /THEO/CDC_ECC to avoid issues during import of the transport request.",
+        "Component": "TableCDC",
+        "Product": "Theobald.Extractors"
+    }
+]

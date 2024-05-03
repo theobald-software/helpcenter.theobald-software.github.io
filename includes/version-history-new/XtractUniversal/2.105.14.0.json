@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "License: Added support for server names longer than 15 bytes",
+        "Component": "General",
+        "Product": "XtractUniversal"
+    }
+]

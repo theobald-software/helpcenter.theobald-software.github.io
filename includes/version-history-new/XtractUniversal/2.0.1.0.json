@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Re-added decimalSeparator URL-parameter (was missing since version 2.0.0.x)",
+        "Component": "General",
+        "Product": "XtractUniversal"
+    }
+]

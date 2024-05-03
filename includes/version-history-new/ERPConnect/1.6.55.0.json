@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "ERPException class is now serializable (for customers who use ERPConnect in a remoting environment)",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for Unicode detection",
+        "Component": "BW Loader",
+        "Product": "XtractIS"
+    }
+]

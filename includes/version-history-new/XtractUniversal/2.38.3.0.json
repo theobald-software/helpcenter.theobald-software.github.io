@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Users could not see restricted extractions if they had logged on with a name in different character casing than their actual name (e. g. logon as \"User01\" if actual name was \"user01\")",
+        "Component": "Security",
+        "Product": "XtractUniversal"
+    }
+]

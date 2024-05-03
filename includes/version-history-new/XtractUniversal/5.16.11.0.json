@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Power BI Connector: Fixed an issue that caused the connector .pqx file to not be recognized by Power BI Desktop (Bug introduced in November 2022)",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

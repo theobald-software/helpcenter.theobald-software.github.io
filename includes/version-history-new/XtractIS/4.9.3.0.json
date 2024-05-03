@@ -1,0 +1,17 @@
+[
+    {
+        "Message": "Added support for RFC_READ_TABLE2 function modules",
+        "Component": "Table",
+        "Product": "XtractIS"
+    },
+    {
+        "Message": "Added support for RFC_READ_TABLE2 function modules in ReadTable",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Updated to 6.2.0.5",
+        "Component": "ERPConnect",
+        "Product": "XtractKernel"
+    }
+]

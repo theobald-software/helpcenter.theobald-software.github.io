@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix in log window to show datetime using the 24 hours format",
+        "Component": "Designer",
+        "Product": "XtractUniversal"
+    }
+]

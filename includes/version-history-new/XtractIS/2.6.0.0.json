@@ -1,0 +1,17 @@
+[
+    {
+        "Message": "Refactored look-up & metadata retrieval",
+        "Component": "General",
+        "Product": "XtractIS"
+    },
+    {
+        "Message": "Refactored look-up & metadata retrieval",
+        "Component": "Table",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Fixed Extractors project file - Code Analysis wasn't working properly",
+        "Component": "General",
+        "Product": "XtractKernel"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Better encoding for transaction IDs when using SAP XI / PI",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Classic: Removed queueing of tRFC requests/dynamic server registration",
+        "Component": "RFCServer",
+        "Product": "ERPConnect"
+    }
+]

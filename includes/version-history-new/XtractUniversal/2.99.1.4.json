@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Zombie RFC server connections are terminated before extraction starts",
+        "Component": "DeltaQ",
+        "Product": "XtractKernel"
+    }
+]

@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "Fixed a bug where custom SQL ad-hoc parameters were not evaluated.",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    },
+    {
+        "Message": "Fixed a bug where runtime parameters were not passed on to the destination.",
+        "Component": "General",
+        "Product": "Theobald.Server"
+    }
+]

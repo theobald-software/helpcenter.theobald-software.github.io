@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for zero node ids with some hierarchies	",
+        "Component": "Hierarchy",
+        "Product": "XtractUniversal"
+    }
+]

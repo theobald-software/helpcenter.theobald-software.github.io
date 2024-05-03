@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Transaction: Fixed an issue that could cause (semi-)infinite loops when \"skip popups\" was enabled",
+        "Component": "Runtime",
+        "Product": "YunIO"
+    }
+]

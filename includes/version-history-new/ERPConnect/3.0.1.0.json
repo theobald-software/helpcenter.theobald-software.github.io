@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Wrong resultset when call ReadTable class together with Primary Key Packaging and Z-function module",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

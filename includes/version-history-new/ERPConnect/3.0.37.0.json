@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Bugfix: Using RFC server together with an RFC client in the same process on a unicode SAP system may lead to conversion errors",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

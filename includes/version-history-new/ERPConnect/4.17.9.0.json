@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Disabled code signing for ERPConnect DLLs (signature check leads to high latency in some cases)",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

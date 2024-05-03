@@ -1,0 +1,8 @@
+[
+    {
+        "Message": "Implemented subdirectory support for the stores",
+        "Component": "General",
+        "Product": "Theobald.Server",
+        "ReleaseNote": "## TheobaldServer 4.1.0\n- Implemented subdirectory capabilities for the stores \n- Standardized way of writing json arrays as response payload \n\n- Improvements \n  - Reduced memory consumption of stores significantly\n\n- Bug fixes\n  - Fixed cleanup logic for requests which are using Keberos authentication\n  - Fixed a bug where data cached by the webserver would be erroneously deleted"
+    }
+]

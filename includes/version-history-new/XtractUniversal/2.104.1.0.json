@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "Fixes for destination multiselect",
+        "Component": "Designer",
+        "Product": "XtractUniversal"
+    },
+    {
+        "Message": "Fixes for OLTP timestamps",
+        "Component": "DeltaQ",
+        "Product": "XtractKernel"
+    }
+]

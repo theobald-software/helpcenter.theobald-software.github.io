@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Connection is closed properly when receiving an SSO ticket",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    }
+]

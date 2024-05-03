@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "The IDoc receiver now also supports very old 3.X IDoc formats",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

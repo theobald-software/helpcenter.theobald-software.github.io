@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Wegen des Bausteins SAP_WAPI_CREATE_WORKLIST einiges umgestellt -> Tabellen / Zeiletyp innerhalb der Struktur",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

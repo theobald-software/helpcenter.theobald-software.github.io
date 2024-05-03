@@ -1,0 +1,8 @@
+[
+    {
+        "Message": "Security fix: if no security settings existed, server had to be restarted for 'read extractions' restriction to take effect",
+        "Component": "Security",
+        "Product": "BoardConnector",
+        "IsCritical": true
+    }
+]

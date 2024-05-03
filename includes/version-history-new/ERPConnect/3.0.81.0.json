@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for possible memory leak",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

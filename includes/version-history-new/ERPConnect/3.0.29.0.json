@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Bugfix for non-remote-enabled function with meta data with length = 0 (e.g. AIPA_READ_VALUES_SINGLE)",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

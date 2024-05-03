@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed lookup button for trace directory in the connection manager",
+        "Component": "Designer",
+        "Product": "BoardConnector"
+    }
+]

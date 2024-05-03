@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "RFC Server Ping removed in customizing check to avoid trouble with certain SAP patches",
+        "Component": "DeltaQ",
+        "Product": "XtractKernel"
+    }
+]

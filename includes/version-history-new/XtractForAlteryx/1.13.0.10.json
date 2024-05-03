@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "Delimiter for rows can now be set in CsvReader ",
+        "Component": "General",
+        "Product": "Common"
+    },
+    {
+        "Message": "Add constructor to initialize NamedList from IEnumerable",
+        "Component": "General",
+        "Product": "Common"
+    }
+]

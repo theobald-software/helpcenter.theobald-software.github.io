@@ -1,0 +1,22 @@
+[
+    {
+        "Message": "Re-added support for iDocs (NW)",
+        "Component": "RFCServer",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Fix for deadlock by incoming RFC server calls during tRFC client call (NW)",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Fix for non-Unicode RFC destinations",
+        "Component": "DeltaQ",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Updated to 4.34.4.0",
+        "Component": "ERPConnect",
+        "Product": "XtractKernel"
+    }
+]

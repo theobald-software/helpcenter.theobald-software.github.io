@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Migrated from unmanaged to managed ODP.NET driver (Oracle)",
+        "Component": "Destinations",
+        "Product": "XtractUniversal"
+    }
+]

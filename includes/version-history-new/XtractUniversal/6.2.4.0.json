@@ -1,0 +1,8 @@
+[
+    {
+        "Message": "Fixed some bugs related to legacy DeltaQ extractions conversion (see release notes for more details)",
+        "Component": "DeltaQ",
+        "Product": "XtractUniversal",
+        "ReleaseNote": "## XtractUniversal 6.2.4\n\n- convert correctly length for non-unicode legacy fields\n- consider legacy empty transfer mode as tRFC (default option)\n- handle null selection type and description on legacy oltp fields conversion"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added error message for cluster tables",
+        "Component": "Table Join",
+        "Product": "XtractKernel"
+    }
+]

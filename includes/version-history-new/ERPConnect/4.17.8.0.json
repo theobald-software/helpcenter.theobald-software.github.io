@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Temporarily re-added R3Connection.IsBusy (deprecated, will be removed again)",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    }
+]

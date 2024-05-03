@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for big endian non-Unicode systems",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    }
+]

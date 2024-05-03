@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Very, very large tables (>70.000 rows) caused crash in 64 Bit environment",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

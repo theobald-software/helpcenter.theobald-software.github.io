@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix an issue that made ConfigConverter fail to upgrade some extractions containing orphaned filters",
+        "Component": "BW Cube",
+        "Product": "XtractUniversal"
+    }
+]
