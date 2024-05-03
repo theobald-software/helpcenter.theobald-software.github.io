@@ -93,6 +93,29 @@ hide:
     addEventListeners(); // Add event listeners after the table is populated
   };
 
+
+  const parseMarkdown = (markdownText) => {
+    // Replace Markdown syntax with corresponding HTML tags
+    let htmlText = markdownText
+      .replace(/^#\s+(.*)$/gm, '<h1>$1</h1>')
+      .replace(/^##\s+(.*)$/gm, '<h2>$1</h2>')
+      .replace(/^###\s+(.*)$/gm, '<h3>$1</h3>')
+      .replace(/^####\s+(.*)$/gm, '<h4>$1</h4>')
+      .replace(/^#####\s+(.*)$/gm, '<h5>$1</h5>')
+      .replace(/^######\s+(.*)$/gm, '<h6>$1</h6>')
+      .replace(/\*\*\*(.*?)\*\*\*/g, '<strong><em>$1</em></strong>')
+      .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+      .replace(/\*(.*?)\*/g, '<em>$1</em>')
+      .replace(/^\*\s+(.*)$/gm, '<li>$1</li>')
+      .replace(/^(\d+)\.\s+(.*)$/gm, '<li>$2</li>')
+      .replace(/<\/li>\s+<li>/g, '</li><li>')
+      .replace(/^\>(.*)$/gm, '<blockquote>$1</blockquote>')
+      .replace(/^\s*\*\s*\*\s*\*.*$/gm, '<hr>');
+
+    htmlText = htmlText.replace(/^(?!<h[1-6]>)(.*)$/gm, '<p>$1</p>');
+
+    return htmlText;
+  }
   // Add event listeners for filtering and "Show More" buttons
   const addEventListeners = () => {
     // Filtering
@@ -110,31 +133,6 @@ hide:
         });
       });
     }
-
-    const parseMarkdown = (markdownText) => {
-        // Replace Markdown syntax with corresponding HTML tags
-        let htmlText = markdownText
-            .replace(/^#\s+(.*)$/gm, '<h1>$1</h1>')
-            .replace(/^##\s+(.*)$/gm, '<h2>$1</h2>')
-            .replace(/^###\s+(.*)$/gm, '<h3>$1</h3>')
-            .replace(/^####\s+(.*)$/gm, '<h4>$1</h4>')
-            .replace(/^#####\s+(.*)$/gm, '<h5>$1</h5>')
-            .replace(/^######\s+(.*)$/gm, '<h6>$1</h6>')
-            .replace(/\*\*\*(.*?)\*\*\*/g, '<strong><em>$1</em></strong>')
-            .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
-            .replace(/\*(.*?)\*/g, '<em>$1</em>')
-            .replace(/^\*\s+(.*)$/gm, '<li>$1</li>')
-            .replace(/^(\d+)\.\s+(.*)$/gm, '<li>$2</li>')
-            .replace(/<\/li>\s+<li>/g, '</li><li>')
-            .replace(/^\>(.*)$/gm, '<blockquote>$1</blockquote>')
-            .replace(/^\s*\*\s*\*\s*\*.*$/gm, '<hr>');
-
-        htmlText = htmlText.replace(/^(?!<h[1-6]>)(.*)$/gm, '<p>$1</p>');
-
-        return htmlText;
-    }
-
-
     // Show More button
     const catalogTable = document.getElementById('catalogTable');
     if (catalogTable) {
