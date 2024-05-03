@@ -94,25 +94,46 @@ hide:
   };
 
 
+  const isMarkdown = (content) => {
+      const markdownSyntax = ['*', '_', '**', '__', '[', ']', '`', '#', '##', '###', '####', '#####', '######'];
+      return markdownSyntax.some((syntax) => content.includes(syntax));
+  };
+
   const parseMarkdown = (markdownText) => {
+    console.log("markdownText: ", markdownText)
+    // Replace Markdown syntax with corresponding HTML tags
+    if (!isMarkdown(markdownText)) {
+        // If not, return the input text wrapped in <p> tags
+      return `<p>${markdownText}</p>`;
+    }
+
+
     // Replace Markdown syntax with corresponding HTML tags
     let htmlText = markdownText
+        // Handle headings
       .replace(/^#\s+(.*)$/gm, '<h1>$1</h1>')
       .replace(/^##\s+(.*)$/gm, '<h2>$1</h2>')
       .replace(/^###\s+(.*)$/gm, '<h3>$1</h3>')
       .replace(/^####\s+(.*)$/gm, '<h4>$1</h4>')
       .replace(/^#####\s+(.*)$/gm, '<h5>$1</h5>')
       .replace(/^######\s+(.*)$/gm, '<h6>$1</h6>')
-      .replace(/\*\*\*(.*?)\*\*\*/g, '<strong><em>$1</em></strong>')
-      .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
-      .replace(/\*(.*?)\*/g, '<em>$1</em>')
+      // Handle bold and italic
+      .replace(/\*\*\*(.*?)\*\*\*/g, '<strong><em>$1</em></strong>') // Bold and italic
+      .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>') // Bold
+      .replace(/\*(.*?)\*/g, '<em>$1</em>') // Italic
+      // Handle lists
       .replace(/^\*\s+(.*)$/gm, '<li>$1</li>')
       .replace(/^(\d+)\.\s+(.*)$/gm, '<li>$2</li>')
-      .replace(/<\/li>\s+<li>/g, '</li><li>')
+      .replace(/<\/li>\s+<li>/g, '</li><li>') // Fix multiple list items
+      // Handle blockquotes
       .replace(/^\>(.*)$/gm, '<blockquote>$1</blockquote>')
-      .replace(/^\s*\*\s*\*\s*\*.*$/gm, '<hr>');
-
-    htmlText = htmlText.replace(/^(?!<h[1-6]>)(.*)$/gm, '<p>$1</p>');
+      // Handle code blocks
+      // Handle horizontal rules
+      .replace(/^\s*\*\s*\*\s*\*.*$/gm, '<hr>')
+      // Handle ReleaseNote with new line
+      .replace(/^ReleaseNote:\s*"([^"]+)"$/gm, '<div class="release-note">$1</div>')
+        // Handle paragraphs
+      .replace(/^(?!<h[1-6]>)(?!<div class="release-note">)(.*)$/gm, '<p>$1</p>');
 
     return htmlText;
   }
@@ -143,6 +164,7 @@ hide:
           const version = versionCell.textContent;
           const additionalData = await fetchAdditionalData(version);
           if (additionalData) {
+            console.log("ReleaseNote", additionalData);
             // Create new <td> elements for each piece of additional data
             additionalData.forEach(dataObj => {
 
@@ -154,8 +176,8 @@ hide:
               messageCell.textContent = dataObj.Message;
               versionRow.appendChild(messageCell);
 
-              if (dataObj.IsBreaking) {
-                versionRow.classList.add('isBreaking');
+
+              if ( dataObj.ReleaseNote !== undefined) {
                 const noteCell = document.createElement('td');
                 noteCell.innerHTML = parseMarkdown(dataObj.ReleaseNote);
                 versionRow.appendChild(noteCell);
