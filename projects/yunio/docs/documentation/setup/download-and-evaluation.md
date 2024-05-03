@@ -5,7 +5,7 @@ description: Where to download yunIO and how to contact the tech support during 
 
 ### Download yunIO
 
-You can download a trial version from the [Theobald Software website](https://theobald-software.com/en/download-trial/) and evaluate it for 30 days.
+You can download a 30 day trial version from the [Theobald Software website](https://theobald-software.com/en/download-trial/).
 The trial version is only time limited and works otherwise without any restrictions.
 
 ### Evaluate yunIO

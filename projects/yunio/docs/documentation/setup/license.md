@@ -5,11 +5,11 @@ description: About the licensing model of yunIO and how to install a license
 
 ### About the Licensing Concept of yunIO
 
-yunIO is licensed per Windows server where the solution is installed.
-A demo license valid for 30 days is automatically provided with the installation of yunIO.
+yunIO is licensed per Windows server, where the solution is installed.
+A trial license valid for 30 days is automatically provided with the installation of yunIO.
 
-A regular license is provided in the [Theobald Software Costumer Portal](https://my.theobald-software.com/) after purchasing the product. 
-The product license is bound to your company and the server on which the yunIO server runs.<br>
+
+A regular license is provided in the [Theobald Software Costumer Portal](https://my.theobald-software.com/) after purchasing the product. The product license is bound to your company, and the server on which the yunIO server runs.<br>
  
 
 ### Install the yunIO License
