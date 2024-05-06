@@ -426,6 +426,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-2.0.0/</loc>
+         <lastmod>2024-05-06</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://helpcenter.theobald-software.com/release-notes/TheobaldServer-3.6.11/</loc>
          <lastmod>2024-05-06</lastmod>
          <changefreq>daily</changefreq>
