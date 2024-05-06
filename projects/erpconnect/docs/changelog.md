@@ -36,7 +36,6 @@ hide:
     <tr>
       <th>Version</th>
       <th>Release Date</th>
-      <th>Button</th>
       <th>Component</th>
       <th>Description</th>
     </tr>
