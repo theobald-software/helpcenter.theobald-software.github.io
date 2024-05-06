@@ -138,18 +138,44 @@ hide:
   // Add event listeners for filtering and "Show More" buttons
   const addEventListeners = () => {
     // Function to filter rows based on the search parameter
-    const filterRows = (filterValue) => {
-      document.querySelectorAll('#catalogBody tr').forEach(row => {
-        const versionCell = row.querySelector('td:first-child');
-        const version = versionCell.textContent.toLowerCase();
-        
-        if (version.includes(filterValue)) {
-          row.style.display = '';
-        } else {
-          row.style.display = 'none';
-        }
-      });
-    };
+  const filterRows = (filterValue) => {
+    const comparisonOperator = filterValue.charAt(0);
+    const versionNumber = filterValue.slice(1).trim();
+
+    document.querySelectorAll('#catalogBody tr').forEach(row => {
+      const versionCell = row.querySelector('td:first-child');
+      const version = versionCell.textContent.trim();
+
+      // Compare versions based on the operator
+      let displayRow = false;
+      if (comparisonOperator === '>') {
+        displayRow = compareVersions(version, versionNumber) > 0;
+      } else if (comparisonOperator === '<') {
+        displayRow = compareVersions(version, versionNumber) < 0;
+      } else {
+        // Default behavior for other operators or invalid input
+        displayRow = version.includes(versionNumber);
+      }
+
+      // Set display style based on comparison result
+      row.style.display = displayRow ? '' : 'none';
+    });
+  };
+
+  // Function to compare versions (e.g., "5.6", "6.0")
+  const compareVersions = (version1, version2) => {
+    const parts1 = version1.split('.').map(part => parseInt(part));
+    const parts2 = version2.split('.').map(part => parseInt(part));
+
+    for (let i = 0; i < Math.min(parts1.length, parts2.length); i++) {
+      if (parts1[i] !== parts2[i]) {
+        return parts1[i] - parts2[i];
+      }
+    }
+
+    // If all parts are equal, consider the longer version as greater
+    return parts1.length - parts2.length;
+  };
 
     // Reading the search parameter from the URL and applying the filter
     const urlSearchParams = new URLSearchParams(window.location.search);
