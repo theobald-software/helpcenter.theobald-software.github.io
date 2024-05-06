@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Tables for extractions without primary key are created as MULTISET tables in Teradata now ",
-        "Component": "Destinations",
-        "Product": "XtractUniversal"
-    }
-]

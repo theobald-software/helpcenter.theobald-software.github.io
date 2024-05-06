@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for RFCServer when using NetWeaver 7.50",
-        "Component": "RFCServer",
-        "Product": "ERPConnect"
-    }
-]

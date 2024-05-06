@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed daylight saving time transition issue on log window",
-        "Component": "Designer",
-        "Product": "XtractUniversal"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixes for creating deprecated Table Join extractions",
-        "Component": "Table Join",
-        "Product": "XtractUniversal"
-    }
-]

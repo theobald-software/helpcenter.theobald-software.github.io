@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug where the parameter HTTP-API failed for BAPI, BW Cube and TableJoin extractions. This also affected the Power BI connector and Alteryx plugin (Bug introduced in 4.27.1)",
-        "Component": "Server",
-        "Product": "XtractUniversal"
-    }
-]

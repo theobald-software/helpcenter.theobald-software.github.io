@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Add logic to support OData query options $top, $skip and $count.",
-        "Component": "LINQtoERP",
-        "Product": "ERPConnect"
-    }
-]

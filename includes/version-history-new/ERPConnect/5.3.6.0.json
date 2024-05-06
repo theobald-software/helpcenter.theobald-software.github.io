@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Removed old workaround for parsing BCD values",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

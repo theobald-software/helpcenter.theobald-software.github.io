@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "A Rpc client can now request its current privilege level.",
-        "Component": "General",
-        "Product": "Theobald.Server"
-    }
-]

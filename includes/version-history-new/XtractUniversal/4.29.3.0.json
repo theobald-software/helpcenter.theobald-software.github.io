@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "S3 destination: when using file splitting, the uploaded part files will now be deleted when an error occurs during extraction.",
-        "Component": "Destinations",
-        "Product": "XtractUniversal"
-    }
-]

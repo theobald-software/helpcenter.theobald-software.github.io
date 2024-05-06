@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Broken extraction files don't break OData $metadata anymore",
-        "Component": "Destinations",
-        "Product": "XtractUniversal"
-    }
-]

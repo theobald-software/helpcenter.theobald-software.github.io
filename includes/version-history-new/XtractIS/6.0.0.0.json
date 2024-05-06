@@ -1,8 +1,0 @@
-[
-    {
-        "Message": "Support for SQLServer 2019",
-        "Component": "General",
-        "Product": "XtractIS",
-        "IsBreaking": true
-    }
-]

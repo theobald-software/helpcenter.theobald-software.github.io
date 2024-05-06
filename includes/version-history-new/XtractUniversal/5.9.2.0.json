@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug which cause threading related exceptions in various dialogs.",
-        "Component": "Designer",
-        "Product": "XtractUniversal"
-    }
-]

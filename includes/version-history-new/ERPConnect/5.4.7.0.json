@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Big Endian: Fix for overflow exceptions when receiving negative values",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

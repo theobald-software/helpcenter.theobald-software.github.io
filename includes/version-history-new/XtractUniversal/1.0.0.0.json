@@ -1,9 +1,0 @@
-[
-    {
-        "Message": "First official release",
-        "Component": "General",
-        "Product": "XtractUniversal",
-        "IsBreaking": true,
-        "IsCritical": true
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for some errors not being communicated to the caller.",
-        "Component": "General",
-        "Product": "Theobald.Server"
-    }
-]

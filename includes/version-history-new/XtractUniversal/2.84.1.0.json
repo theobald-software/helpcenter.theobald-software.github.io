@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fallback mechanism for unsupported legacy destinations (e. g. XQV XML)",
-        "Component": "Destinations",
-        "Product": "XtractUniversal"
-    }
-]

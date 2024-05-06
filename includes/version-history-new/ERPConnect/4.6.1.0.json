@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "New table lines are zero filled now to avoid random data if actual row contains less columns than defined in metadata",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

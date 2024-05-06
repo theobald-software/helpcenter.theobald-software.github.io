@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Azure Relay Manager decides more reliability when to reconnect.",
-        "Component": "Gateway",
-        "Product": "YunIO"
-    }
-]

@@ -1,8 +1,0 @@
-[
-    {
-        "Message": "Fix for the destination settings dialog, which was not correctly loading existing settings. Fix for an issue in the run window, where long running extraction involving a SQL destination would crash the designer.",
-        "Component": "Designer",
-        "Product": "XtractUniversal",
-        "ReleaseNote": "# Xtract Universal Designer 5.4.17\n* Fixed the logic loading existing destination settings in the destination settings dialog\n  * Fix for some settings getting not loaded at all\n  * Fix for a race condition when initially opening the dialog, causing an inconsistent representation\n* Fixed an occasional crash in the run window, when an extraction with a SQL destination takes longer than 30 seconds\n  * The run window now waits for the extraction to finish before loading the data from the server for the output view"
-    }
-]

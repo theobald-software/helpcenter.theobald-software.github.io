@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "	Fix for exception that was thrown when setting an obligatory parameter through a variant",
-        "Component": "Query",
-        "Product": "XtractIS"
-    }
-]

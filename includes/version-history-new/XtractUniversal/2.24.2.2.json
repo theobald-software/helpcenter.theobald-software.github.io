@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for parsing empty strings",
-        "Component": "General",
-        "Product": "XtractKernel"
-    }
-]

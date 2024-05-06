@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for Reuse Classes logic for function modules (with nested structures) in LINQ to SAP",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

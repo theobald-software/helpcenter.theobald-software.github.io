@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed bug in code generation for skipped properties.",
-        "Component": "LINQtoERP",
-        "Product": "ERPConnect"
-    }
-]

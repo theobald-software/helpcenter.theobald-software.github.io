@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for silent uninstaller",
-        "Component": "Setup",
-        "Product": "BoardConnector"
-    }
-]

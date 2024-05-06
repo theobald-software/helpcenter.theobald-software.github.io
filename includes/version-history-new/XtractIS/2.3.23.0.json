@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix: Dialog for request maintenance didn't work properly when logical system was set through a SSIS variable",
-        "Component": "DeltaQ",
-        "Product": "XtractIS"
-    }
-]

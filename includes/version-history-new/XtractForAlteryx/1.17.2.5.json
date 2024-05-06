@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Table CDC: Log table size can now be limited. Internal improvements.",
-        "Component": "TableCDC",
-        "Product": "Theobald.Extractors"
-    }
-]

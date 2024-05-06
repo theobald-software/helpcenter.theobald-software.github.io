@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for XML unescaping (error introduced in 4.14.0)",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

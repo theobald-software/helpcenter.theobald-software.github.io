@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for requesting SAP credentials at runtime",
-        "Component": "Security",
-        "Product": "XtractUniversal"
-    }
-]

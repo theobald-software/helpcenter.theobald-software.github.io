@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for Hierarchy or OHS extractions with DB2, EXASOL, Oracle, SQLServer or Teradata destinations",
-        "Component": "General",
-        "Product": "XtractUniversal"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for RFC Wrapper with BDC columns within a table",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

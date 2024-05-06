@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug that would not allow changing source for multiple extractions",
-        "Component": "Designer",
-        "Product": "XtractUniversal"
-    }
-]

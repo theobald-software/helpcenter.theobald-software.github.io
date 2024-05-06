@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixes for name-delimiters in column names (DB destinations)",
-        "Component": "Destinations",
-        "Product": "XtractUniversal"
-    }
-]

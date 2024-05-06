@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Updated SAPDate2NetDate to handle \"00000000\" and \"99999999\" values",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

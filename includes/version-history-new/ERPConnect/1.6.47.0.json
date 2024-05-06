@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Removed Application.DoEvents() in CreateFunction() method",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

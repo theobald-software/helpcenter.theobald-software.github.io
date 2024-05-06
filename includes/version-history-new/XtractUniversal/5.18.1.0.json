@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Added append operation for Hadoop destination (only valid for csv files)",
-        "Component": "Destinations",
-        "Product": "XtractUniversal"
-    }
-]

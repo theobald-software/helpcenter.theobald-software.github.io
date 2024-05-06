@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for uncomplete packets when using the component with Mode E under BI 7.1",
-        "Component": "OHS",
-        "Product": "XtractIS"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug that caused preview runs to fail (Bug introduced in 4.2.8)",
-        "Component": "Server",
-        "Product": "XtractUniversal"
-    }
-]

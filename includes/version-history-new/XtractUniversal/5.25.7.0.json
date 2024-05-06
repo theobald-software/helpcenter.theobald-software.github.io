@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for not correctly escaped column names in Qlik scripts.",
-        "Component": "Destinations",
-        "Product": "XtractUniversal"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Bugfix for MDXExecuter class when using MEMBER_UNIQUE_NAME within MDX statement",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

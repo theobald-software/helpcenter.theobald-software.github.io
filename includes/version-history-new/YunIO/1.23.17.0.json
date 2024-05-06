@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Disabled a conversion routine for date types which was erroneously applied in table services.",
-        "Component": "Runtime",
-        "Product": "YunIO"
-    }
-]

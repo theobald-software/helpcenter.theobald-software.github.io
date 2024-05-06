@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Added TemplateSegments property to access IDoc schema information",
-        "Component": "Idoc",
-        "Product": "ERPConnect"
-    }
-]

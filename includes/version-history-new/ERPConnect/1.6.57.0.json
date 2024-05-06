@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Problems with length of FLTP fields in ReadTable class when using a custom function for extraction",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

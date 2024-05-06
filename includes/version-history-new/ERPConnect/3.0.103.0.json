@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for codepage conversion for \"ISO-8859-5\" characters (e.g.Croatian)",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

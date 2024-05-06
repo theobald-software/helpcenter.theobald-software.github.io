@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for running DeltaQ in a loop container",
-        "Component": "DeltaQ",
-        "Product": "XtractIS"
-    }
-]

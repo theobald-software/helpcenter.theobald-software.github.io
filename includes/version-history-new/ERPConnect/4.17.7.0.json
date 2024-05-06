@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "R3Connection.Close() does not throw exceptions anymore (SOAP)",
-        "Component": "RFC Client",
-        "Product": "ERPConnect"
-    }
-]

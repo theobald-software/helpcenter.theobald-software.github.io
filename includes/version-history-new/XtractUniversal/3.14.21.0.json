@@ -1,8 +1,0 @@
-[
-    {
-        "Message": "Power BI Connector: General Availibility (end of beta)",
-        "Component": "Destinations",
-        "Product": "XtractUniversal",
-        "ReleaseNote": "### Compatibility\n\n- existing Power BI Connector destinations have to be deleted and created again, beta destinations  are **not compatible** with the newest version"
-    }
-]

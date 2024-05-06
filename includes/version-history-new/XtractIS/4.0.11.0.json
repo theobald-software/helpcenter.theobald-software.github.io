@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for data types of RowCounter and DataPackageID if data type conversion is disabled",
-        "Component": "DeltaQ",
-        "Product": "XtractIS"
-    }
-]

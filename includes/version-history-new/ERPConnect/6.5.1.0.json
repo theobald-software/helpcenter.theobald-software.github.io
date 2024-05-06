@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "NWRFC: Fix for connection strings on localized systems",
-        "Component": "RFC Client",
-        "Product": "ERPConnect"
-    }
-]

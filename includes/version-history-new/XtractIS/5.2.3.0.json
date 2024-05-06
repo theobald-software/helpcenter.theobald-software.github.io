@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "BI Notification Server now supports to answer the calls of BAPI_DSOURCE_IS_SUPPORTED correctly which is necessary to setup external systems on newer BW instances.",
-        "Component": "BINotificationServer",
-        "Product": "XtractIS"
-    }
-]

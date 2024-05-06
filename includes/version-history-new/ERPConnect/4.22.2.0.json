@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Improved error message for conversion errors before sending values to SAP",
-        "Component": "RFC Client",
-        "Product": "ERPConnect"
-    }
-]

@@ -1,8 +1,0 @@
-[
-    {
-        "Message": "S3 destination now logs the requests to AWS S3 API.",
-        "Component": "Destinations",
-        "Product": "XtractUniversal",
-        "ReleaseNote": "### S3 destination now logs information about the requests made to AWS S3 API.\n\nThis includes the following:\n- Request URL\n- HTTP Method (POST, GET, PUT or DELETE)\n- Request ID pair (https://aws.amazon.com/premiumsupport/knowledge-center/s3-request-id-values/)"
-    }
-]

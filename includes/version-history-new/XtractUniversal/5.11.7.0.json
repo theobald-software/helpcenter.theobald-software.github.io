@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed an issue where editing an extraction could cause the primary key information to get out of sync with the source system.\nFixed an issue where when using AD-Authentication unnecessary AD-requests would slow down some designer actions",
-        "Component": "Designer",
-        "Product": "XtractUniversal"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for EBCDIC systems",
-        "Component": "RFC Client",
-        "Product": "ERPConnect"
-    }
-]

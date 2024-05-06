@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for column name style in the Alteryx plugin.",
-        "Component": "Destinations",
-        "Product": "XtractUniversal"
-    }
-]

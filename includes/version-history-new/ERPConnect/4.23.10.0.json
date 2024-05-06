@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for receiving STRING values",
-        "Component": "RFC Client",
-        "Product": "ERPConnect"
-    }
-]

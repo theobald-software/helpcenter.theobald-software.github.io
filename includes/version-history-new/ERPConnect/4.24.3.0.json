@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Property ReadTable.RowSkips is not ignored anymore when using packaging",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

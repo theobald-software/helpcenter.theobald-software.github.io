@@ -1,8 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug where all extractions would fail with a license expired error. **Issue affects all XU releases since 6.0.0** If you have any version of XtractUniversal starting with 6.x.x please update immediately to this or any newer version.",
-        "Component": "General",
-        "Product": "XtractUniversal",
-        "IsCritical": true
-    }
-]

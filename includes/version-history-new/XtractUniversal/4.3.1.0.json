@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Power BI: Dates before 01.01.0100 are now considered as invalid and converted accordingly",
-        "Component": "Destinations",
-        "Product": "XtractUniversal"
-    }
-]

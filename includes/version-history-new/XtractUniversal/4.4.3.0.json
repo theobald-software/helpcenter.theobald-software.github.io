@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Power BI: Fixed a bug in packaging that caused extractions to fail on the client side",
-        "Component": "Destinations",
-        "Product": "XtractUniversal"
-    }
-]

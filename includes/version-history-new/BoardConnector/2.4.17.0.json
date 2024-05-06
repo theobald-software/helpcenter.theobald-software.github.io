@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for using Header Pattern with Automatic Column Detection",
-        "Component": "Report",
-        "Product": "BoardConnector"
-    }
-]

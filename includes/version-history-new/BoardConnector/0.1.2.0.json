@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for server hang of version 0.1.1 (DeltaQ run & Table abort)",
-        "Component": "Server",
-        "Product": "BoardConnector"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for CURR values that are extremely big (greater than a length of 13). These were truncated sometimes accidently.",
-        "Component": "DeltaQ",
-        "Product": "XtractIS"
-    }
-]

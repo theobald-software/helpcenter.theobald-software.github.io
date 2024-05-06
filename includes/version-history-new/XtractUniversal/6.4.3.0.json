@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug where generating a Qlik Sense script failed.",
-        "Component": "Destinations",
-        "Product": "XtractUniversal"
-    }
-]

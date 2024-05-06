@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Hotfix: Fixed the format for `duration` and `timestamp` properties in the config and logs API. The issues were introduced in 6.3.",
-        "Component": "Server",
-        "Product": "XtractUniversal"
-    }
-]

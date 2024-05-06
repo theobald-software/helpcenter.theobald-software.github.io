@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "RFCFunction with SOAP: Fix for import / export values that contain XML escape sequences (e.g. &amp;)",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "LINQ fixes: InList() extension method won't crash anymore, LINQ enabled RFC functions won't produce a syntax error under VB.NET anymore",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

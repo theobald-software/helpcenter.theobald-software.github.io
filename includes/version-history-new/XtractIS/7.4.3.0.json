@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Replaced the XtractKernel.DeltaQ component with Theobald.Extractors.DeltaQ",
-        "Component": "DeltaQ",
-        "Product": "XtractIS"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Improved handling of multiple http requests to the board connector server.",
-        "Component": "Server",
-        "Product": "BoardConnector"
-    }
-]

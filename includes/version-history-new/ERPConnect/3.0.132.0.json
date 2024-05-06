@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for apostrophe characters within the column decription of an SAP table used in LINQ dialog",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

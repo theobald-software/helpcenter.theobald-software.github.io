@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed escaping of table names that contain brackets",
-        "Component": "Destinations",
-        "Product": "XtractUniversal"
-    }
-]

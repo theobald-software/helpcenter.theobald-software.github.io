@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Improvement in behaviour for multiple LINQ queries with multiple WHERE statements",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

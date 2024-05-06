@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for scripted expressions in WHERE (not working since 3.0.0.0)",
-        "Component": "Table",
-        "Product": "XtractUniversal"
-    }
-]

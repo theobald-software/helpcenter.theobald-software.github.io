@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for trimming spaces at the end",
-        "Component": "DeltaQ",
-        "Product": "XtractKernel"
-    }
-]

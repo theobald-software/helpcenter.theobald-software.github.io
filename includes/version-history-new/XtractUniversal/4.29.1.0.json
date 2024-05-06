@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "S3 destination: fixed an issue where after creating a new S3 destination or editing an existing one, the destination could not be saved.",
-        "Component": "Destinations",
-        "Product": "XtractUniversal"
-    }
-]

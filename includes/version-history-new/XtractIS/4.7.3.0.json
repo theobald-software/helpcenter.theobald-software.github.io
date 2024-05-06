@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for RAW columns in exports",
-        "Component": "BAPI",
-        "Product": "XtractIS"
-    }
-]

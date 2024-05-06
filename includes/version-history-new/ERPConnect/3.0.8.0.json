@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Exception when using IDoc segments with fields that contain /",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

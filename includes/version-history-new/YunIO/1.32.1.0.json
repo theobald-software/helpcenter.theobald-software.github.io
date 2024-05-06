@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug in rendering of complex structures in the run dialog (output).",
-        "Component": "Designer",
-        "Product": "YunIO"
-    }
-]

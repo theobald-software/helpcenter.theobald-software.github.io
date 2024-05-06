@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Improvement for error messages when conversion errors occur while executing a query",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for 'unexpected )' (EXASOL, error introduced in 2.13.7)",
-        "Component": "Destinations",
-        "Product": "XtractUniversal"
-    }
-]

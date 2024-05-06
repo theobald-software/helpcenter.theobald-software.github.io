@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "ReadTable class fix: Leading space was automatically deleted from table cells. This may cause duplicated primary keys.",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

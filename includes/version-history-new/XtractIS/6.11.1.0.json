@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug where some BAPI settings might not be converted correctly when updating from versions prior to 6.10.0",
-        "Component": "BAPI",
-        "Product": "XtractIS"
-    }
-]

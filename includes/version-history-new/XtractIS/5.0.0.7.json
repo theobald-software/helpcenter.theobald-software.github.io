@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug that caused the extraction settings window to not show available function modules",
-        "Component": "Table",
-        "Product": "Theobald.Extractors"
-    }
-]

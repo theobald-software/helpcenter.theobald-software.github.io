@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for empty imports/exports/tables (NW)",
-        "Component": "RFCServer",
-        "Product": "ERPConnect"
-    }
-]

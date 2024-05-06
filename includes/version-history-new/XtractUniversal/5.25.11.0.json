@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed the 'hierarchyName' runtime parameter for Hierarchy extractions being ignored.",
-        "Component": "Hierarchy",
-        "Product": "XtractUniversal"
-    }
-]

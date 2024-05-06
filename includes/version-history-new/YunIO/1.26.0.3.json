@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Added a separate /THEO/READ_TABLE transport request for SAP versions 6.40 to 7.03.",
-        "Component": "Table",
-        "Product": "Theobald.Extractors"
-    }
-]

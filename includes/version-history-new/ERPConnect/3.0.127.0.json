@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for ABAP type v within a structure (multiple table types within a structure)",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

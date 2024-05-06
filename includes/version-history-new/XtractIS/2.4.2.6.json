@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for value help for logical destination: Destinations are now also shown, when the description in logon language is not maintained",
-        "Component": "DeltaQ",
-        "Product": "XtractKernel"
-    }
-]

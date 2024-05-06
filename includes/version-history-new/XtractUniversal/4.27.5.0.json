@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Exasol: fix for invalid character error when writing DATE fields.",
-        "Component": "Destinations",
-        "Product": "XtractUniversal"
-    }
-]

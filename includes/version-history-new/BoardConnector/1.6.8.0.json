@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for connections using Load Balancing",
-        "Component": "General",
-        "Product": "BoardConnector"
-    }
-]

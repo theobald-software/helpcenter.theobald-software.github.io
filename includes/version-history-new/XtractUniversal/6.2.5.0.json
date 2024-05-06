@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug for BWCube extractions with filters on dimensions that have a slash in their name.",
-        "Component": "BW Cube",
-        "Product": "XtractUniversal"
-    }
-]

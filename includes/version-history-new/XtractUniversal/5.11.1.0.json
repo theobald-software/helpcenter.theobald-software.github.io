@@ -1,8 +1,0 @@
-[
-    {
-        "Message": "Added a popup on run window to get SAP credentials from caller",
-        "Component": "General",
-        "Product": "XtractUniversal",
-        "ReleaseNote": "**Xtract Universal 5.11.1**\n\nWhen the source is set with the option \"Request SAP credentials from caller when running extractions\" to true, a popup will be displayed from the run window asking for credentials."
-    }
-]

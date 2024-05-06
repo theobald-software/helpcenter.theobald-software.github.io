@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for sending Idocs via qRFC",
-        "Component": "Idoc",
-        "Product": "ERPConnect"
-    }
-]

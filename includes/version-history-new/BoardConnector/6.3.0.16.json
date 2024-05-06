@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Added an RPC exchange for refreshing the metadata (table, BAPI).",
-        "Component": "General",
-        "Product": "Theobald.Server"
-    }
-]

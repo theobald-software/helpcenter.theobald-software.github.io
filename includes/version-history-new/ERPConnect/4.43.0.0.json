@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "tRFC: Added support for queuing parallel connections",
-        "Component": "RFCServer",
-        "Product": "ERPConnect"
-    }
-]

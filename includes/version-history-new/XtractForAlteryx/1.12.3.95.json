@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug where automatic column detection didn't work for reports where rows don't begin with a pipe.",
-        "Component": "Report",
-        "Product": "Theobald.Extractors"
-    }
-]

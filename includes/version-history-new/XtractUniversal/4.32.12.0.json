@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Alteryx: Fixed a bug where RAW types changed from String to Blob and caused extractions to fail (introduced in 4.27.1). Updated the Alteryx SDK dependency version",
-        "Component": "Destinations",
-        "Product": "XtractUniversal"
-    }
-]

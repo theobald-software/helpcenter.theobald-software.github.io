@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Default HTTPS port changed to 8197",
-        "Component": "Server",
-        "Product": "BoardConnector"
-    }
-]

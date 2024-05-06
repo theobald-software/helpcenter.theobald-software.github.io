@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug that caused extractions with custom SQL statements that contain variables to fail",
-        "Component": "Destinations",
-        "Product": "XtractUniversal"
-    }
-]

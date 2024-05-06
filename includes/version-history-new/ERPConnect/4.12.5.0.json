@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Improved error message if SetAbapDebug() is called on invalid R3Connection objects",
-        "Component": "RFC Client",
-        "Product": "ERPConnect"
-    }
-]

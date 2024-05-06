@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for table look up dialog for tables which description text is not available in the logon language",
-        "Component": "Table",
-        "Product": "XtractIS"
-    }
-]

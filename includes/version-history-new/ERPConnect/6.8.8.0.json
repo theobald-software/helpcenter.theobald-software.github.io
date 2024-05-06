@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for \"Cannot execute NwFunction more than once\" (NWRFC)",
-        "Component": "RFCServer",
-        "Product": "ERPConnect"
-    }
-]

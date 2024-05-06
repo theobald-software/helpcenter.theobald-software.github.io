@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix metadata of decimal float as packed number",
-        "Component": "General",
-        "Product": "Theobald.Extractors"
-    }
-]

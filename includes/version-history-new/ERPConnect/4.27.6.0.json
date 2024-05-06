@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Added CommitWork and RollbackWork methods to ERPDataContext for LINQtoERP.",
-        "Component": "LINQtoERP",
-        "Product": "ERPConnect"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Bug fix for R3Connection.Clone() function used together with SNC",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

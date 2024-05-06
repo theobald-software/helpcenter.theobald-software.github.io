@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for SAP codepage 300 and ReadTable class",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

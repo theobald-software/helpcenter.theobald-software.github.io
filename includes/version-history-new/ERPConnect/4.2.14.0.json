@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed bug in IDOC code generation in UpdateChildSegmentList method (ChildSegments) and extended reserved names list for VB.NET.",
-        "Component": "LINQtoERP",
-        "Product": "ERPConnect"
-    }
-]

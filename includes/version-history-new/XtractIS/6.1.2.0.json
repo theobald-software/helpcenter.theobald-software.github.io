@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for processing OHS notifications",
-        "Component": "BINotificationServer",
-        "Product": "XtractIS"
-    }
-]

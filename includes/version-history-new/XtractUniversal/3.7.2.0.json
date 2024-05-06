@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Silent setup installs Tableau API and doesn't initiate config conversion",
-        "Component": "Setup",
-        "Product": "XtractUniversal"
-    }
-]

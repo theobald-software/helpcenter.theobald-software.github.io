@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for langauge key during lookup",
-        "Component": "DeltaQ",
-        "Product": "XtractKernel"
-    }
-]

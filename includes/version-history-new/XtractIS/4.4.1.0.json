@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug with the length of columns of type RAW",
-        "Component": "Table",
-        "Product": "XtractIS"
-    }
-]

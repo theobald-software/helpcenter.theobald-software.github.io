@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "BCD values in tables are now initialized to 0 for new rows",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

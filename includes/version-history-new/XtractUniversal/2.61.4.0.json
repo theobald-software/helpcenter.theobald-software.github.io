@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for error on buffer and preview extractions from BAPI, BW Cube OLAP, DeltaQ non-hierarchy, Hierarchy parent/child, OHS or Query to EXASOL and Tableau destinations",
-        "Component": "Destinations",
-        "Product": "XtractUniversal"
-    }
-]

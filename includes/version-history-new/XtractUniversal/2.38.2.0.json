@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Not all administrator privileges were granted, if logon as \"admin\" was performed with different character casing (e. g. \"Admin\").",
-        "Component": "Security",
-        "Product": "XtractUniversal"
-    }
-]

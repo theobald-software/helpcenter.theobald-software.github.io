@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug where the SSRS/Power BI Report Server Destination would output rows multiple times. Was caused by an unfortunate combination of the buffer size used and a bug in the internal CSV parsing.",
-        "Component": "Destinations",
-        "Product": "XtractUniversal"
-    }
-]

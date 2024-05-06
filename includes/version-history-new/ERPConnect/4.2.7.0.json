@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Changed R3Connection.Ping() to avoid \"Attempt to read or write protected memory\" error which occurred at arbitrary times",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

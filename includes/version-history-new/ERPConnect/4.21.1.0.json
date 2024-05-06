@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for manually created string TIDs with less than 24 characters",
-        "Component": "RFC Client",
-        "Product": "ERPConnect"
-    }
-]

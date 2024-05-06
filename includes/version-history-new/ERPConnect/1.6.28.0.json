@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Codepage bug fixed (strange characters in idoc file when having a client connection open at the same time",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

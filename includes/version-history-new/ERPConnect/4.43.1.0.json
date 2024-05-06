@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Added new ERPException - NotAuthorizedException\nOptimized BWCube exception handling for dates",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

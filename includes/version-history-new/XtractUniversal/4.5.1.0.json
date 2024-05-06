@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for silent installation not to hang when some prerequisites do not meet",
-        "Component": "Setup",
-        "Product": "XtractUniversal"
-    }
-]

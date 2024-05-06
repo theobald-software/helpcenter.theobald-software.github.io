@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Qlik Sense script now formats fields of type decimal and minds date conversion checkbox when formatting dates.",
-        "Component": "Designer",
-        "Product": "XtractUniversal"
-    }
-]

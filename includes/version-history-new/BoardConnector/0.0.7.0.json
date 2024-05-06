@@ -1,8 +1,0 @@
-[
-    {
-        "Message": "Security fix: Changing group rights to a less privileged level did not work",
-        "Component": "Security",
-        "Product": "BoardConnector",
-        "IsCritical": true
-    }
-]

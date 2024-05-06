@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "System.Byte, System.Int16 and System.Int64 can now also be used for integer parameters ",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

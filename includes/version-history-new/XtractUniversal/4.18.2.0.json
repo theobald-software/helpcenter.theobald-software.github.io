@@ -1,8 +1,0 @@
-[
-    {
-        "Message": "Included Google Cloud Platform regions for Snowflake destination ",
-        "Component": "Destinations",
-        "Product": "XtractUniversal",
-        "ReleaseNote": "## Google Cloud Platform regions for Snowflake destination \n\nThe following GCP regions are now available for the Snowflake destination:\n\n- US Central1 (Iowa) - us-central1.gcp\n- Europe West2 (London) - europe-west2.gcp\n- Europe West4 (Netherlands) - europe-west4.gcp"
-    }
-]

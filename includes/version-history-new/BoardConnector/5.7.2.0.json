@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed several issues that caused errors when retrieving metadata",
-        "Component": "BOARD API",
-        "Product": "BoardConnector"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Control characters are now allowed in lines of table type import/export/changing parameters",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

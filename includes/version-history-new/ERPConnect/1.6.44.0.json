@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Avoid HashTable exception when SAP sends inconsistant IDocs",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

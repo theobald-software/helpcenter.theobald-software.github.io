@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for timestamp issue. Sometimes the timestamp was not updated when moving a DeltaQ instance from one SAP system to another",
-        "Component": "DeltaQ",
-        "Product": "XtractIS"
-    }
-]

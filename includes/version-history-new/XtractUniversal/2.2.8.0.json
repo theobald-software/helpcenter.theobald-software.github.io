@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for \"DateFormat\" server setting (didn't work since 2.x)",
-        "Component": "Server",
-        "Product": "XtractUniversal"
-    }
-]

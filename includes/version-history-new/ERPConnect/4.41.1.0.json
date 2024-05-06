@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Improved error handling for IDocs",
-        "Component": "RFCServer",
-        "Product": "ERPConnect"
-    }
-]

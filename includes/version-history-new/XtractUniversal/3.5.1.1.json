@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for showing error dialogs during lookup (e. g. missing authorization for DD02V).",
-        "Component": "General",
-        "Product": "XtractKernel"
-    }
-]

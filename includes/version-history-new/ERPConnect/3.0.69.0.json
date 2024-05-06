@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Improvement for RFCServerException handling when throwing an exception during the IncomingIDoc event",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

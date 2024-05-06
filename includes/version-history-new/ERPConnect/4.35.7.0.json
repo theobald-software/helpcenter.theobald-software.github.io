@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "NW: Fix for RFCServer restarts",
-        "Component": "RFCServer",
-        "Product": "ERPConnect"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "RFCTable.ToString() returns raw XML even if errors occur",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

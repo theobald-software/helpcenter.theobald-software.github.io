@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Google Cloud Storage: added support for Script Expressions in destination folder field.",
-        "Component": "Destinations",
-        "Product": "XtractUniversal"
-    }
-]

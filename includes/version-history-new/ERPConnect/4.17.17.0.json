@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for system numbers 1 to 9 (NW RFC)",
-        "Component": "RFC Client",
-        "Product": "ERPConnect"
-    }
-]

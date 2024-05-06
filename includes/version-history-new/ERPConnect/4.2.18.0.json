@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "All trace files can be configured via R3Connection.Logging and R3Connection.LogDir now",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

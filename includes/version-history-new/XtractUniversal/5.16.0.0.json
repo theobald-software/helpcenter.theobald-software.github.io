@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Added logic to abort setup due to running processes.",
-        "Component": "Setup",
-        "Product": "XtractUniversal"
-    }
-]

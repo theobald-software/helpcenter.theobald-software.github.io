@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix: Queries with obligatory parameters caused an exception when the parameter was set through a variant",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

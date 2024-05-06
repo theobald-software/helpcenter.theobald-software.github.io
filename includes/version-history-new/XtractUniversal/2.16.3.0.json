@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Server will start up even if extraction metadata is corrupted",
-        "Component": "Server",
-        "Product": "XtractUniversal"
-    }
-]

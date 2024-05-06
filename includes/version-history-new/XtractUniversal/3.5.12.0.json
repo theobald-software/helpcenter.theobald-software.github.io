@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug that caused queries without selection parameters to fail",
-        "Component": "Query",
-        "Product": "XtractUniversal"
-    }
-]

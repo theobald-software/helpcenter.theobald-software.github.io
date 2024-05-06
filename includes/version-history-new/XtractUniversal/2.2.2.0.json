@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Sometimes extraction runs were declared 'successful' even though errors occured",
-        "Component": "Server",
-        "Product": "XtractUniversal"
-    }
-]

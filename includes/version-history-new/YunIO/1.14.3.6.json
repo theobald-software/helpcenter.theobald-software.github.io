@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix in BICS mode for possible NullReferenceException during preview and extraction run",
-        "Component": "BW Cube",
-        "Product": "Theobald.Extractors"
-    }
-]

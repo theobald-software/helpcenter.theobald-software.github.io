@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "&-Zeichen in den Captions eines BW-Cubes haben beim XML-Speichern zum Abstürz geführt",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

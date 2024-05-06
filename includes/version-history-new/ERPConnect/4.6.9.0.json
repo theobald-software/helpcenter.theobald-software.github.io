@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "TEST flag was not transmitted correctly when sending IDocs",
-        "Component": "Idoc",
-        "Product": "ERPConnect"
-    }
-]

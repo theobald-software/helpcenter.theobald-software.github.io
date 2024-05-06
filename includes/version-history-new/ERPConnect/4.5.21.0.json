@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for integer import structure members with big endian systems",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix: Idoc.SaveXMLData generated buggy XML-File which could not be processed via LoadXMLData",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

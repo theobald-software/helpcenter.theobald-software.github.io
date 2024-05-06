@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "CSV: Values which contain row separator are enclosed in quote symbols now",
-        "Component": "Server",
-        "Product": "XtractUniversal"
-    }
-]

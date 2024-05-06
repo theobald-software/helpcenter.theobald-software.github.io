@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for switching between non-Unicode and Unicode systems",
-        "Component": "BAPI",
-        "Product": "XtractUniversal"
-    }
-]

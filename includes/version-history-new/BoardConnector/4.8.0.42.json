@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for using Z_THEO_READ_TABLE (bug introduced in 1.18)",
-        "Component": "Table",
-        "Product": "Theobald.Extractors"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for friendly domain names / FQDN (Active Directory)",
-        "Component": "Security",
-        "Product": "XtractUniversal"
-    }
-]

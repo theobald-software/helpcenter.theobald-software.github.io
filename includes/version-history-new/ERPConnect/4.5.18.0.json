@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Bugfix for certain MDX statements used with MDXExecuter class",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

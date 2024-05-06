@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "The ISerializable interface is added to the ERPException class (in addition to the Serializable attribute)",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Added HierarchyName property to allow parameterization",
-        "Component": "ODP",
-        "Product": "XtractForAlteryx"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed DeltaQ update mode runtime parameter handling",
-        "Component": "General",
-        "Product": "Theobald.Server"
-    }
-]

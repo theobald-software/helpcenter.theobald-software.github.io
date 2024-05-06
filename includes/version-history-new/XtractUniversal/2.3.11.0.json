@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for non-unicode systems (version 2.x and later)",
-        "Component": "BAPI",
-        "Product": "XtractUniversal"
-    }
-]
