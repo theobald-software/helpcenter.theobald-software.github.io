@@ -77,7 +77,7 @@ hide:
     row.innerHTML = `
       <td>${item.Version}</td>
       <td>${item.LegacyReleaseDate.split(' ')[0]}</td>
-      <td><button class="showMoreBtn" style="border-radius: 5px; padding: 3px 6px; background-color: #007bff; color: #ffffff;">Show More</button></td>
+      <td><button class="showMoreBtn" style="cursor: pointer; text-decoration: underline;">Show More</button></td>
     `;
     return row;
   };
@@ -106,7 +106,6 @@ hide:
         // If not, return the input text wrapped in <p> tags
       return `<p>${markdownText}</p>`;
     }
-
 
     // Replace Markdown syntax with corresponding HTML tags
     let htmlText = markdownText
@@ -139,60 +138,72 @@ hide:
   }
   // Add event listeners for filtering and "Show More" buttons
   const addEventListeners = () => {
-    // Filtering
-    const filterInput = document.getElementById('filterInput');
+    // Function to filter rows based on the search parameter
+    const filterRows = (filterValue) => {
+      document.querySelectorAll('#catalogBody tr').forEach(row => {
+        const versionCell = row.querySelector('td:first-child');
+        const version = versionCell.textContent.toLowerCase();
+        
+        if (version.includes(filterValue)) {
+          row.style.display = '';
+        } else {
+          row.style.display = 'none';
+        }
+      });
+    };
+
+    // Reading the search parameter from the URL and applying the filter
+    const urlSearchParams = new URLSearchParams(window.location.search);
+    const filterValue = urlSearchParams.get('filter');
+    const filterInput = document.getElementById('search');
     if (filterInput) {
+      filterInput.value = filterValue || ''; // Set input value to the filter parameter
+      filterRows(filterValue || ''); // Apply initial filter
+
+      // Add event listener to update filter on input change
       filterInput.addEventListener('input', () => {
-        const filterValue = filterInput.value.toLowerCase();
-        document.querySelectorAll('#catalogBody tr').forEach(row => {
-          const version = row.firstChild.textContent.toLowerCase();
-          if (version.includes(filterValue)) {
-            row.style.display = '';
-          } else {
-            row.style.display = 'none';
-          }
-        });
+        const newFilterValue = filterInput.value.toLowerCase();
+        filterRows(newFilterValue);
+
+        // Update URL with new filter value
+        urlSearchParams.set('filter', newFilterValue);
+        const newUrl = `${window.location.pathname}?${urlSearchParams.toString()}`;
+        window.history.pushState({}, '', newUrl);
       });
     }
-    // Show More button
+
+    // Event listener for the "Show More" button
     const catalogTable = document.getElementById('catalogTable');
     if (catalogTable) {
       catalogTable.addEventListener('click', async (event) => {
         if (event.target.classList.contains('showMoreBtn')) {
+          // Your existing logic here
           const versionRow = event.target.closest('tr');
           const versionCell = versionRow.querySelector('td:first-child');
           const version = versionCell.textContent;
           const additionalData = await fetchAdditionalData(version);
           if (additionalData) {
             console.log("ReleaseNote", additionalData);
-            // Create new <td> elements for each piece of additional data
+
             additionalData.forEach(dataObj => {
-
-              const componentCell = document.createElement('td');
-              componentCell.textContent = dataObj.Component;
-              versionRow.appendChild(componentCell);
-
+              event.target.textContent = `${dataObj.Component}`;
               const messageCell = document.createElement('td');
               messageCell.textContent = dataObj.Message;
               versionRow.appendChild(messageCell);
 
-
-              if ( dataObj.ReleaseNote !== undefined) {
+              if (dataObj.ReleaseNote !== undefined) {
                 const noteCell = document.createElement('td');
                 noteCell.innerHTML = parseMarkdown(dataObj.ReleaseNote);
                 versionRow.appendChild(noteCell);
               }
-
-            });
-
-            event.target.remove();
+            })
           }
         }
       });
     }
-
-
   };
+
+  // Call the function to add event listeners
 
   populateTable();
 </script>
