@@ -1,7 +1,7 @@
 # Copyright (c) 2016-2023 Martin Donath <martin.donath@squidfunk.com>
 # Project information
 site_name: ERPConnect HelpCenter
-#site_url: https://helpcenter.theobald-software.com/erpconnect/
+site_url: https://helpcenter.theobald-software.com/erpconnect/
 #site_author: Valerie Schipka
 site_description: >-
   ERPConnect is a .NET programming library to develop your own SAP interfaces.<br>
@@ -35,8 +35,8 @@ theme:
     # - navigation.expand #displays all pages in the navigation (not good for API Reference)
     # - navigation.footer
      - navigation.indexes #adds landing pages for groups
-    # # - navigation.instant # load faster (no page reload for internal links)
-    # # - navigation.instant.prefetch # load faster (start loading content when hovering)
+     - navigation.instant # load faster (no page reload for internal links)
+     - navigation.instant.prefetch # load faster (start loading content when hovering)
      - navigation.instant.progress # enables a progress indicator 
      - navigation.instant.preview
      - navigation.path #adds breadcrumbs
