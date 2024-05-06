@@ -58,7 +58,7 @@ S_TABU_NAM ACTVT=03; TABLE=ENLFDIR
 #### Row Limit
 Specifies the maximum number of extracted records. 0 extracts the entire table.
 
-#### Rows per Package
+#### Rows per package
 The extracted data is be split into packages of the defined size. The default value is 50000 lines.<br>
 A package size between 20000 and 50000 is advisable for large amounts of data. 0 means no packaging. 
 Not using packaging can lead to an RFC timeout for large data extracts.
@@ -74,6 +74,15 @@ Activate the setting **Run in background** for long-running extractions with a l
 
 !!! tip
     The extraction jobs can be found in the SAP JobLog (**SM37**) under the JobName *theo_read_table*.
+
+#### Refresh metadata
+A new lookup is performed on the selected table(s). 
+Existing mappings and field selections are kept, which is not the case when the table is added again.
+Use this function to resolve data inconsistencies that can occur in the following situations:
+
+- the structure of the source table has been changed in SAP
+- another SAP source system has been connected
+- the SAP source system has been updated
 
 ### Output Columns
 
