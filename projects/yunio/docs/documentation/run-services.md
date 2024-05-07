@@ -62,13 +62,13 @@ yunIO supports the http methods `POST` and `GET`, see [POST vs GET](#post-vs-get
 === "POST"
 
 	Parameters are listed in the request body of a service.
-	Edit the request body to assign values to the parameters. The depicted example uses an input parameter *NAME1*:<br>
+	Edit the request body to assign values to the parameters. The depicted example uses an input parameter *NAME*:<br>
 	![yunIO-HTTP-POST](../assets/images/yunio/http-post.png){:class="img-responsive" }
 
 === "GET"
 
 	Parameters are available as query parameters in the service URL. 
-	Use query parameters to assign values or add the values directly in the service URL. The depicted example uses an input parameter *NAME1*:<br>
+	Use query parameters to assign values or add the values directly in the service URL. The depicted example uses an input parameter *NAME*:<br>
 	![yunIO-HTTP-GET](../assets/images/yunio/http-get.png){:class="img-responsive" }
 
 !!! note

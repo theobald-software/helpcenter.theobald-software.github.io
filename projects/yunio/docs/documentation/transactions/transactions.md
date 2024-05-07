@@ -46,9 +46,9 @@ All fields that can be parameterized are highlighted in green when hovering over
 7. Click **[OK]** to confirm your input.
 8. Click **[Save]** to save your changes.
 
-Input parameters are now accessible in the request body of the service.<br>
-Ouput parameters are now accessible in the response body of the service.<br>
-![transaction-copy-download](../../assets/images/yunio/transaction-swagger-inspector.png){:class="img-responsive"}
+Input parameters are now accessible in the request body of the service :number-1:.<br>
+Ouput parameters are now accessible in the response body of the service :number-2:.<br>
+![transaction-copy-download](../../assets/images/yunio/postman-input-transaction.png){:class="img-responsive"}
 
 
 ****

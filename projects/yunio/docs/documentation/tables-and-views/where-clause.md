@@ -14,7 +14,7 @@ Enter WHERE clauses manually in *Text mode* or use the [WHERE Clause Editor](#wh
 
 The WHERE clause can be parameterized in the request body of the service. 
 
-![WHERE-Clause in SwaggerHub](../../assets/images/yunio/swagger-inspector.png){:class="img-responsive"}
+![WHERE-Clause in Postman](../../assets/images/yunio/postman-input.png){:class="img-responsive"}
 
 For more information on parameterizing services, see [Passing Parameters](../run-services.md/#pass-parameters).
 

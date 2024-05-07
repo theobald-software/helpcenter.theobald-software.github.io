@@ -34,9 +34,9 @@ The necessary parameters of a {{ bapi }} service vary depending on the BAPI.
 ### Parameterize Import Parameters
 
 Import parameters can be parameterized in the request body of the service.
+The depicted example shows the request body of a service where the Import Parameter *NAME* is set to *Supplied by Caller*.
 
-Example: The Import Parameter *MAXROWS* of BAPI_CUSTOMER_GETLIST is set to *Supplied by Caller* and can be parameterized in the request body of the service:<br>
-![BAPI export parameters](../../assets/images/yunio/swagger-inspector-parameter.png){:class="img-responsive"}
+![BAPI import parameters](../../assets/images/yunio/postman-input-bapi.png){:class="img-responsive"}
 
 !!! note
     When parameterzing the import parameters of the service, make sure the input matches the data type of the parameters.<br>
