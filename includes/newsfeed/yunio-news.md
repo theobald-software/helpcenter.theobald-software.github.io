@@ -21,7 +21,7 @@
 
     :material-clock-time-two-outline: 2024-04-08
 
--   **More Support for Nintex Xtensions**
+-   **More Support for Nintex Integration**
 
     ---
 
