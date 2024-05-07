@@ -2,7 +2,7 @@
 
 # Project information
 site_name: yunIO HelpCenter
-#site_url: http://erpconnect.theobald-software.com/
+site_url: http://helpcenter.theobald-software.com/yunio/
 #site_author: Valerie Schipka
 site_description: >-
   yunIO enables SAP process automation via web services for cloud environments.<br>
@@ -76,6 +76,9 @@ theme:
 extra_css:
   - assets/stylesheets/extra.css
   - assets/stylesheets/neoteroi-cards.css 
+  - assets/stylesheets/hyperscript.css
+extra_javascript:
+  - assets/javascripts/hyperscript.min.js
   
 # Plugins
 plugins:
@@ -153,6 +156,7 @@ markdown_extensions:
 # breakless lists (for migration)
   - mdx_breakless_lists
 
+
 # Additional configuration
 extra:
   status:
@@ -202,3 +206,13 @@ extra:
       link: https://theobald-software.com/en/newsletter/
       name: Newsletter
   productName: yunIO
+  product: yunio
+  Component: Integration Type
+  component: integration type
+  components: integration types
+  table: _SAP Table and View_
+  transaction: _Transaction_
+  report: _Report_
+  bapi: _Function module / BAPI_
+  previewBtn: __[Run]__
+  extraction: service

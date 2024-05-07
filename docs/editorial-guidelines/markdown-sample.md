@@ -332,6 +332,58 @@ Click **[:material-pencil-outline:]** to edit an entry.
 	
 	:products-yunio: `:products-yunio:`
 
+=== "Components"
+
+	:component-bapi: `:component-bapi:`
+
+	:component-bwcube: `:component-bwcube:`
+
+	:component-bwloader: `:component-bwloader:`
+
+	:component-deltaq: `:component-deltaq:`
+	
+	:component-hierarchy: `:component-hierarchy:`
+	
+	:component-odp: `:component-odp:`
+	
+	:component-ohs: `:component-ohs:`
+	
+	:component-query: `:component-query:`
+
+	:component-report: `:component-report:`
+	
+	:component-table: `:component-table:`
+	
+	:component-table-cdc: `:component-table-cdc:`
+	
+	:component-transaction: `:component-transaction:`
+	
+=== "Numbers"
+
+	:number-1: `:number-1:`
+
+	:number-2: `:number-2:`
+
+	:number-3: `:number-3:`
+
+	:number-4: `:number-4:`
+	
+	:number-5: `:number-5:`
+
+	:number-6: `:number-6:`
+
+	:number-7: `number-7`
+
+	:number-8: `:number-8:`
+	
+	:number-9: `:number-9:`
+
+	:number-10: `:number-10:`
+	
+	:number-11: `:number-11:`
+
+	:number-12: `:number-12:`
+	
 === "Xtract"
 
 	:simple-sap: `:simple-sap:`
@@ -398,7 +450,9 @@ Click **[:material-pencil-outline:]** to edit an entry.
 
 	:yunio-edit: `:yunio-edit:`
 	
-	:yunio-rename-icon: `:yunio-edit-general:`
+	:yunio-edit-general: `:yunio-edit-general:`
+	
+	:yunio-edit-connection: `:yunio-edit-connection:`
 
 	:yunio-run: `:yunio-run:`
 	

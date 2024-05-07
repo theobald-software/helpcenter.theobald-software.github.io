@@ -1,8 +1,8 @@
 ---
 title: yunIO HelpCenter
-loc: index
 hide:
   - navigation
+  - tags
   - toc
 ---
 
@@ -12,11 +12,8 @@ hide:
 	<p>{{ config.site_description }}</p>
 </div>
 
+
 ### Latest News
-
-Coming soon...
-
-<!---
 
 <div class="grid cards" markdown>
 
@@ -25,7 +22,7 @@ Coming soon...
 </div>
 
 [:octicons-arrow-right-24: Show more](news.md)
--->
+
 
 ![threshold](assets/images/datastream/DataStream_yunIO.png)
 
@@ -64,4 +61,3 @@ Coming soon...
   url: https://theobald-software.typeform.com/to/CnpfiiIN
 
 ::/cards::
-
