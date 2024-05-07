@@ -8,11 +8,11 @@ The transport requests are available in the installation directory of {{ product
 The following {{ components}} require the installation of a custom function module:
 
 
-| {{ Component }} | Custom Function Module | 
-| :------ |:--- | 
-| {{ report }} | [Z_XTRACT_IS_REMOTE_REPORT](custom-function-module-for-reports.md) |
-| {{ table }} | [/THEO/READ_TABLE](custom-function-module-for-table-extraction.md) | 
-{% if page.meta.product == "xtract-universal" or page.meta.product == "xtract-is" or page.meta.product == "board-connector" %}-| {{ tableCDC }} | [/THEO/READ_TABLE](custom-function-module-for-table-extraction.md) and [THEO_CDC](custom-function-module-for-tablecdc.md/#installation-of-theo_cdc_ecc-or-theo_cdc_s4)| {% endif %}
+| {{ Component }} | Custom Function Module | Installation |
+| :------ |:--- |:--- | 
+| {{ report }} | [Z_XTRACT_IS_REMOTE_REPORT](custom-function-module-for-reports.md) | Required |
+| {{ table }} | [/THEO/READ_TABLE](custom-function-module-for-table-extraction.md) | Recommended |
+{% if page.meta.product == "xtract-universal" or page.meta.product == "xtract-is" or page.meta.product == "board-connector" %}-| {{ tableCDC }} | [/THEO/READ_TABLE](custom-function-module-for-table-extraction.md) and [THEO_CDC](custom-function-module-for-tablecdc.md/#installation-of-theo_cdc_ecc-or-theo_cdc_s4)| Required | {% endif %}
 
 For information on how to use transport request, see [Import an SAP Transport Request](site:knowledge-base/import-an-sap-transport-request.md). <br>
 
