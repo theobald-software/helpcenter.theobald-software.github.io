@@ -7,10 +7,10 @@ description: Information about the integration type Report
 This page shows how to use the {{ report }} {{ component }}.<br>
 The {{ report }} {{ component }} can be used to extracts data from ABAP reports and SAP transactions.
 
-!!! warning 
+!!! warning  
 	**Missing Authorization.**<br>
     To use Reports in yunIO, access to the designated authority objects (RFC) in SAP must be available.
-    For more information, refer to the knowledge base article [SAP Authority Objects: Report](../setup-in-sap/sap-authority-objects.md/#report).
+    Adjust [SAP Authority Objects: Report](../setup-in-sap/sap-authority-objects.md/#report) accordingly.
 
 ### About Reports
 

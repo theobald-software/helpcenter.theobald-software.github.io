@@ -43,7 +43,7 @@ The following function modules can be used to extract tables:
 - Z_THEO_READ_TABLE
 - THEO/READ_TABLE
 
-!!! warning  
+!!! warning   
 	**Duplicates in the target environment.**<br>
     The SAP standard modules for table extraction do not have pointers for table fields.
     In larger tables this may cause low performance and duplicates in the target environment.
@@ -63,7 +63,7 @@ The extracted data is be split into packages of the defined size. The default va
 A package size between 20000 and 50000 is advisable for large amounts of data. 0 means no packaging. 
 Not using packaging can lead to an RFC timeout for large data extracts.
 
-!!! warning  
+!!! warning   
 	**RFC_ERROR_SYSTEM_FAILURE - No more storage space available for extending an internal table**<br>
     To avoid a memory overflow on the SAP source system and to avoid huge overheads, choose a package size that suits your memory capacity.
 

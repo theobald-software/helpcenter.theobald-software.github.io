@@ -6,10 +6,10 @@ description: SAP Connection
 
 This page shows how to connect to SAP.
 
-!!! warning 
+!!! warning  
 	**Missing Authorization.**<br>
     To establish a connection to SAP, the access to general authority objects must be available.
-    For more information, see [SAP Authority Objects](../setup-in-sap/sap-authority-objects.md/#sap-authorization-profiles).
+    Adjust the [SAP Authority Objects](../setup-in-sap/sap-authority-objects.md/#sap-authorization-profiles) accordingly.
 
 Supported Connection Methods  | Supported Authentication Methods
 ------------ | -------------

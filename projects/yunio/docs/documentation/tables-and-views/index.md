@@ -7,10 +7,10 @@ description: Information about the integration type SAP tables or views
 This page shows how to use the {{ table }} {{ component }}.<br>
 The {{ table }} {{ component }} can be used to extract contents from SAP tables and views.
 
-!!! warning 
+!!! warning  
 	**Missing Authorization.**<br>
     To use the Table component, access to the designated authority objects (RFC) in SAP must be available.
-    For more information, see [SAP Authority Objects](../setup-in-sap/sap-authority-objects.md/#table).
+    Adjust [SAP Authority Objects](../setup-in-sap/sap-authority-objects.md/#table) accordingly.
 
 ### Supported SAP Objects 
 - Transparent tables

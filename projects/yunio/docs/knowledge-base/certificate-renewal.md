@@ -8,8 +8,9 @@ The following article shows how to manually and automatically renew a X.509 cert
 ### Renew a Certificate Manually
 
 !!! warning  
-	**The certificate is already expired.**<br>
-    To access the Designer after a certificate has expired, delete the `tls.json` file in the installation directory of yunIO and restart the yunIO service.
+	**Expired Certificate.**<br>
+    Cryptographic key pair associated with the certificate is no longer valid and this may cause security risks.
+	Always use a valid certificate. To access the Designer after a certificate has expired, delete the `tls.json` file in the installation directory of yunIO and restart the yunIO service.
     This resets all TLS settings in yunIO, including the certificate selection.
 
 === "Renew a Certificate with New Key"

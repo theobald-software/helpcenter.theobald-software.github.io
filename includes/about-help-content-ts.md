@@ -40,11 +40,27 @@ Warning | Yellow | Information that is important for executing an error free pro
 Tip| Green | Tips
 Recommendation | Green | Theobald Software recommendations and best practices advice
 
+Warning Messages comply with EN 82079 and formulated according the SAFE-method that is derived from German.
+The SAFE method is a procedure for systematically designing safety instructions. The severity of the danger as well as the source of the danger. <br>
+
+**"SAFE"** stands for:
+
+**S**chwere der Gefahr (Signalwort)
+**A**rt und Quelle der Gefahr
+**F**olgen bei Missachtung der Gefahr
+**E**ntkommen (Maßnahmen zur Abwehr der Gefahr)
+
+Translation: 
+Severity of the danger (Signal word)
+Type and source of the danger
+Consequences of disregarding the danger
+Escape (measures to avert the danger)
+
 Example:
 
-!!! warning  
-	**Single Sign-On availability.**<br>
-	Make sure that ABAP application server runs on a Windows OS and SNC with Kerberos encryption setup on SAP.
+!!! warning   
+	**RFC_ERROR_SYSTEM_FAILURE - No more storage space available for extending an internal table**<br>
+    To avoid a memory overflow on the SAP source system and to avoid huge overheads, choose a package size that suits your memory capacity.
 
 
 !!! note

@@ -14,8 +14,9 @@ Especially with older SAP releases you may encounter a few restrictions when usi
  
 When facing restrictions, install the Theobald Software custom function module */THEO/READ_TABLE* on your SAP system. 
 
-!!! warning 
-	**Error while converting value '\*.0' of row 1530, column 3.**<br>
+!!! warning  
+	**Converting issues**
+	Error while converting value '\*.0' of row 1530, column 3.<br>
 	The SAP standard module *RFC_READ_TABLE* for table extraction can only extract the ABAP data type DEC to a limited extent. This leads to the mentioned example error during extraction.
 	Use the function module from Theobald Software */THEO/READ_TABLE*.
 
@@ -40,10 +41,12 @@ It is recommended to install the latest custom function module THEO/READ_TABLE:
 When importing the transport requests on older SAP releases a syntax error may occur. Contact [Theobald Support](https://support.theobald-software.com) and send the dedicated error message text.
 
 
-!!! warning  
+!!! warning   
 	**Generating Short Dumps.**<br>
 	The function modules /THEO/READ_TABLE and Z_THEO_READ_TABLE can only be called by Theobald products due to the callback function of the module.
 	Testing the function modules on an SAP system is therefore not possible.
+	Make sure to test the function modules differently.
+
 
 
 ### Supported Features

@@ -4,6 +4,9 @@ description: Getting Started
 hide:
   - navigation
   - tags
+tags:
+  - quickstart
+  - quick start  
 ---
 
 <div class="grid cards" markdown>

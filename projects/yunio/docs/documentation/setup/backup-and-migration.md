@@ -28,9 +28,10 @@ Use the `config` folder for setting up a version control system or for creating 
 3. Optional: copy the complete `logs` folder of the yunIO installation directory to create a backup of the log files. 
 4. To backup your license, create a copy of your `yunIOLicense.json` file.
 
-!!! warning  
+!!! warning   
 	**Data security.**<br>
-    Both `config` and `logs` directories may contain sensitive information.
+    Both `config` and `logs` directories may contain sensitive information. Unauthorized access may lead to data breaches. <br>
+    Make sure to secure the backup location.
 
 ### Restore a Backup
 
@@ -39,9 +40,9 @@ Use the `config` folder for setting up a version control system or for creating 
 3. Copy the backup of the `config` folder into the installation directory.
 4. To restore the license, replace the `yunIOLicense.json` file in the installation directory with the backup.
 
-!!! warning  
+!!! warning   
 	**Data Loss.**<br>
-    Restoring the backup of the `config` directory replaces the exisiting configuration. Make sure to remove the existing files before restoring the backups.
+    Restoring the backup of the `config` directory **replaces** the existing configuration. Make sure to remove the existing files before restoring the backups.
 
 ### Migrate to a Different Machine
 
