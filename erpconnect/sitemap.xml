@@ -1226,6 +1226,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://helpcenter.theobald-software.com/erpconnect/samples/supported-sap-and-hana-versions/</loc>
+         <lastmod>2024-05-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://helpcenter.theobald-software.com/erpconnect/samples/transactional-rfc-server/</loc>
          <lastmod>2024-05-07</lastmod>
          <changefreq>daily</changefreq>
