@@ -64,4 +64,4 @@ The results are displayed in the **Response** section of Postman.
 #### Related Links
 - [Web Version of Postman](https://www.postman.com/)
 - [Postman Documentation: Using Variables in Postman](https://learning.postman.com/docs/sending-requests/variables/)
-- [Getting Started: Run and Integrate Services](../getting-started.md/#run-and-integrate-services)
+- [Getting Started: Run and Integrate Services](../getting-started.md/#run-services)

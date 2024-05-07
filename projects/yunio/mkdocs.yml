@@ -37,8 +37,8 @@ theme:
     # - navigation.expand #displays all pages in the navigation (not good for API Reference)
     # - navigation.footer
      - navigation.indexes #adds landing pages for groups
-    # # - navigation.instant # load faster (no page reload for internal links)
-    # # - navigation.instant.prefetch # load faster (start loading content when hovering)
+     - navigation.instant # load faster (no page reload for internal links)
+     - navigation.instant.prefetch # load faster (start loading content when hovering)
      - navigation.instant.progress # enables a progress indicator 
      - navigation.instant.preview
      - navigation.path #adds breadcrumbs
@@ -70,7 +70,7 @@ theme:
     text: Poppins
     code: Roboto Mono
   favicon: assets/images/logos/products/YunIO.png
-  logo: assets/images/logos/logo.png
+  logo: assets/images/logos/products/YunIO.png
 
 # Custom CSS
 extra_css:

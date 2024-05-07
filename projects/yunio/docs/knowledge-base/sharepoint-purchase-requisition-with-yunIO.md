@@ -95,7 +95,7 @@ For more information on SharePoint lists, see [Microsoft Documentation: Introduc
     Defining other input parameters in SharePoint is optional as they can also be set as static values in Power Automate.
 
 !!! tip
-    You can use a Power App form to simplify and validate the SharePoint input, see [Using yunIO Services in Power Apps](populate-drop-down-controls-in-power-apps.md#using-yunio-services-in-power-apps).
+    You can use a Power App form to simplify and validate the SharePoint input, see [Using yunIO Services in Power Apps](populate-drop-down-controls-in-power-apps.md#integrate-yunio-services-in-power-apps).
 
 
 ### Setup in Power Automate

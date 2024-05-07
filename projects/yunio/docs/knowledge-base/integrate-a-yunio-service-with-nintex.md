@@ -11,7 +11,7 @@ The platform can be used to create automated workflows between different cloud a
 For more Information on Nintex, see [Nintex Official Website](https://www.nintex.com/).
 
 
-### Create a Service in yunIO
+### Setup in yunIO
 
 1. [Create a service](../getting-started.md/#create-a-service) in yunIO. For this example we use the BAPI SD_RFC_CUSTOMER_GET to search and extract customer data from SAP. 
 The service has the following settings:<br>
@@ -30,7 +30,7 @@ The service has the following settings:<br>
 1. Open your Nintex Automation Cloud tenancy.
 2. Click **Xtensions** in the dashboard to open the Xtensions page :number-1:.
 3. Click ![nintex-add](../assets/images/yunio/articles/nintex-add.png) in the Private connector list :number-2:.
-4. Click **[Choose a file]** :number-3:. Navigate to the yunIO service definition from [Create a Service in yunIO](#create-a-service-in-yunio).<br>
+4. Click **[Choose a file]** :number-3:. Navigate to the yunIO service definition from [Setup in yunIO](#setup-in-yunio).<br>
 ![nintex-xtensions1](../assets/images/yunio/articles/nintex-xtension.png){:class="img-responsive"}
 5. Wait for the Nintex Automation Cloud to validate the file.
 6. Click **[Next]**. Nintex Workflow Cloud detects the basic authentication security template.
@@ -52,6 +52,6 @@ After an Xtension is created, it can be used in a workflow.
 ******
 
 #### Related Links
-- [yunIO Documentation: Run and Integrate Services](../getting-started.md/#run-and-integrate-services)
+- [yunIO Documentation: Run Services](../getting-started.md/#run-services)
 - [Nintex Documentation: Integrate with Theobald yunIO via Nintex Gateway](https://help.nintex.com/en-US/xtensions/04_Reference/Examples/EXM_04SAPTheobaldyunIO.htm)
 - [Nintex Gateway](https://help.nintex.com/en-us/nwc/Content/Gateway/InstallAndConfigure.htm)

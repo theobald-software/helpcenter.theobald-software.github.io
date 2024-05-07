@@ -14,14 +14,14 @@ The following 3 examples for SAP interaction with drop down controls in Power Ap
 - Populating a drop down control with SAP data returned from a function module call. <!--- The input parameter\ search filter is provided by a separate input box.  -->
 
 
-### Create a Service in yunIO
+### Setup in yunIO
 
 1. The example applications in this article use multiple yunIO services. Create the following 3 services in yunIO: 
-	- Create a Table service to query data from the SAP table MAKT with the following settings:<br>
+	1. Create a Table service to query data from the SAP table MAKT with the following settings:<br>
 	Select the table fields MATNR (Material Number), SPRAS (Language Key) and MAKTX (Material Description) for output. Set the row limit to 100 rows. <br>
-	- Create a Table service to query data from the SAP table CSKT with the following settings:<br>
+	2. Create a Table service to query data from the SAP table CSKT with the following settings:<br>
 	Select the table fields KOSTL (Cost Center), KTEXT (General Name) and LTEXT (Description) for output. Set the row limit to 100 rows. <br>
-	- Create a Function Module service that calls the function SD_RFC_CUSTOMER_GET with the following settings:<br>
+	3. Create a Function Module service that calls the function SD_RFC_CUSTOMER_GET with the following settings:<br>
 	Set the input parameter NAME1 (Customer's Name) to *Supplied by caller*.
 	Select all fields in the table *CUSTOMER_T* for the output.<br>
 2. Click :yunio-run: to testrun the service in yunIO :number-1:. For more information, see [Documentation: Run Services in yunIO](../documentation/run-services.md/#run-services-in-yunio).
@@ -36,7 +36,7 @@ For more information on how to create services, see [Create a Service](../gettin
 
 ### Configure a yunIO Custom Connector in Power Automate
 
-To use the service created in [Create a Service in yunIO](#create-a-service-in-yunio) with Power Apps, it must be available as a custom connector in Power Automate. 
+To use the service created in [Setup in yunIO](#setup-in-yunio) with Power Apps, it must be available as a custom connector in Power Automate. 
 For information on how to integrate a yunIO service with Power Automate, see [Integrate a yunIO Service with Power Automate](integrate-a-yunio-service-with-power-automate.md). 
 
 !!! note
@@ -139,4 +139,4 @@ The depicted examples show how to populate drop down lists with different kinds 
 - [Youtube Tutorial: SAP process automation - Power Automate SAP Connector](https://www.youtube.com/watch?v=k_yL8Bphfus&t=2s)
 - [Microsoft Documentation: Drop down control](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/controls/control-drop-down)
 - [Microsoft Documentation: Text input control](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/controls/control-text-input)
-- [Getting Started: Run and Integrate Services](../getting-started.md/#run-and-integrate-services)
+- [Getting Started: Run and Integrate Services](../getting-started.md/#run-services)

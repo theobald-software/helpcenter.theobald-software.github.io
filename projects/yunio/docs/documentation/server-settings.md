@@ -56,7 +56,7 @@ For more information on TLS, see [Microsoft: Transport Layer Security Protocol](
 1. Import the certificate to the Windows Certificate Store using the Microsoft Management Console (mmc).
 2. If the certificate is not listed in the menu or in the Windows certificate store, install the X.509 certificate.
 The certificate must have an *Subject Alternative Name*. When activating TLS, the *Subject Alternative Name* is used as the new hostname. 
-A custom hostname can be entered in the [Services Endpoint](#endpoint) setting.
+A custom hostname can be entered in the [Services Endpoint](#services-endpoint) setting.
 3. After importing the desired X.509 certificate, manage its private keys to add a permission entry for the Windows user. 
 4. Click **[Pick Certificate]** and select an X.509 certificate from the list of available certificates.
 5. Enter "NT Service\yunIO Service" within the Object picker UI, check the granted permission and apply the changes. <br>

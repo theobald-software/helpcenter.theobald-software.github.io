@@ -14,7 +14,7 @@ In the SAP system an incoming invoice for a previously created purchase order is
 - The process for incoming invoice creation must be customized and ready to use in SAP.  
 - Test the BAPI/function call in SAP with transaction SE37 before building the web service. Note which parameters are needed for the call.
 
-### Create a Service in yunIO
+### Setup in yunIO
 
 Create a yunIO service for incoming invoices.<br>
 
@@ -54,7 +54,7 @@ The depicted example uses the BAPI_INCOMINGINVOICE_CREATE1 to create an incoming
 
 ### Configure a yunIO Custom Connector in Power Automate
 
-To use the service created in [Create a Service in yunIO](#create-a-service-in-yunio) with Power Automate, it must be available as a custom connector in Power Automate. 
+To use the service created in [Setup in yunIO](#setup-in-yunio) with Power Automate, it must be available as a custom connector in Power Automate. 
 For information on how to integrate a yunIO service with Power Automate, see [Integrate a yunIO Service with Power Automate](integrate-a-yunio-service-with-power-automate.md).
 
 !!! note

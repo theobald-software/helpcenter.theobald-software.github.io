@@ -14,7 +14,7 @@ The Nintex Gateway is an on-premises application that enables Nintex Automation 
 - Install yunIO version 1.26.3 or higher.
 - Set up Basic Authentication in yunIO, see [Documentation: Access Restrictions](../documentation/access-restrictions/index.md). 
 
-### Create a yunIO Service for Nintex Gateway
+### Setup in yunIO
 
 1. [Create a service](../getting-started.md/#create-a-service) in yunIO. The depicted example uses the BAPI SD_RFC_CUSTOMER_GET to search and extract customer data from SAP. 
 2. Click :yunio-run: to testrun the service in yunIO :number-1:. For more information, see [Documentation: Run Services in yunIO](../documentation/run-services.md/#run-services-in-yunio).
@@ -78,7 +78,7 @@ The Nintex Gateway is an on-premises application that enables Nintex Automation 
 1. Open your Nintex Automation Cloud tenancy.
 2. Click **Xtensions** in the dashboard to open the Xtensions page :number-1:.
 3. Click ![nintex-add](../assets/images/yunio/articles/nintex-add.png) in the Private connector list :number-2:.
-4. Click **[Choose a file]** :number-3:. Navigate to the yunIO service definition from [Create a yunIO Service for Nintex Gateway](#create-a-yunio-service-for-nintex-gateway).<br>
+4. Click **[Choose a file]** :number-3:. Navigate to the yunIO service definition from [Setup in yunIO](#setup-in-yunio).<br>
 ![nintex-xtensions1](../assets/images/yunio/articles/nintex-xtension.png){:class="img-responsive"}
 5. Wait for the Nintex Automation Cloud to validate the file.
 6. Click **[Next]**. Nintex Workflow Cloud detects the basic authentication security template.

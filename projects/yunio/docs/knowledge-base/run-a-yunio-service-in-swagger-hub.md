@@ -40,4 +40,4 @@ Do not use the GET method to send sensible data, e.g., credentials.<br>
 
 #### Related Links
 - [SwaggerHub Documentation](https://support.smartbear.com/swaggerhub-explore/docs/en/get-started.html)
-- [Getting Started: Run and Integrate Services](../getting-started.md/#run-and-integrate-services)
+- [Getting Started: Run and Integrate Services](../getting-started.md/#run-services)

@@ -10,7 +10,7 @@ The connection settings consist of the following subsections:
 
 - [System](#system) defines how to reach your SAP system :number-1:.
 - [Authentication](#authentication) defines the login details of the SAP user :number-2:.
-- [Test Connection](#test-the-sap-connection) verifies the system and authentication data :number-3:.
+- [Test Connection](#test-connection) verifies the system and authentication data :number-3:.
 
 ![yunIO-Create-Connection](../../assets/images/yunio/yunio-connections.png){:class="img-responsive" }
 

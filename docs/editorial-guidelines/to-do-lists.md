@@ -37,6 +37,7 @@ title: To-Do Lists
 - [ ] UI/console program for building local previews (dev)
 - [x] Setup a template for bug reports
 - [x] Test language setup
+- [ ] Add Google Tag Manager
 
 #### Optional
 
@@ -46,23 +47,23 @@ title: To-Do Lists
 ### yunIO
 
 - [x] check if KB articles are up-to-date (use introduction sentences)
-- [ ] check if version history and release notes are available in `includes\version-history` and `docs\release-notes`
+- [x] check if version history and release notes are available in `includes\version-history` and `docs\release-notes`
 - [ ] get input for glossary?
-- [ ] create Changelog page
+- [x] create Changelog page
 - [ ] create empty Troubleshooting page and check if tag #hy1 is available
-- [ ] create link to support portal in header
-- [ ] create a Getting Started page
-	- [ ] migrate Getting Started from OH
-- [ ] create Articles/Integration Scenarios folder
+- [x] create link to support portal in header
+- [x] create a Getting Started page
+	- [x] migrate Getting Started from OH
+- [x] create Articles/Integration Scenarios folder
 	- [x] migrate articles/images from KB
-	- [ ] adjust links to OH
-- [ ] create Documentation folder
-	- [ ] migrate content/images from OH
-	- [ ] adjust links to KB
+	- [x] adjust links to OH
+- [x] create Documentation folder
+	- [x] migrate content/images from OH
+	- [x] adjust links to KB
 - [ ] create content for the product landing page 
-	- [ ] Latest News
+	- [x] Latest News
 	- [ ] Chatbot
-	- [ ] Link Additional Resources
+	- [x] Link Additional Resources
 
 ### Xtract
 
