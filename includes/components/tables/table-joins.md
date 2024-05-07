@@ -26,14 +26,15 @@ To use table join, the function module {% if page.meta.product == "yunio" %}[/TH
 The following example shows how to join the tables KNA1 and KNVV.
 
 1. [Create a new service](../../getting-started.md/#create-a-service) of type {{ table }} or edit an existing service.
-2. [Look up](tables-and-views.md/#look-up-an-sap-table-or-view) the first table or view, e.g, KNA1.
+2. [Look up](create-a-table-service.md/#look-up-an-sap-table-or-view) the first table or view, e.g, KNA1.
 3. Click :where-clause-add: to add the additional tables for the join, e.g., KNVV :number-1:.<br>
 ![table-joins](../../assets/images/yunio/table-joins.png){:class="img-responsive"}
-4. Define the [output columns](#output-columns) you want to extract for both tables :number-2:.
-5. Optional: define a [WHERE clause](#where-clause-editor) for the tables.
+4. Define the [output columns](settings.md/#output-columns) you want to extract for both tables :number-2:.
+5. Optional: define a [WHERE clause](where-clause.md) for the tables.
 
 	!!! note
-		Be careful of [WHERE clause restrictions ](where-clause.md/#where-clause-restrictions) when specifying a WHERE-clause to the right table of table joins using a LEFT OUTER JOIN.
+		Specifying a WHERE-clause to the right table of a LEFT OUTER JOIN is only possible as of SAP Release 7.40, SP05.
+		If your SAP system is older than SAP Release 7.40, SP05, the following error occurs: *RFC_ERROR_SYSTEM_FAILURE - Illegal access to the right table of a LEFT OUTER JOIN*.
 
 6. Click **[Add join]** :number-3:. The *Join Editor* opens.
 7. If necessary, change the default values of *Left Table*, *Right Table* and *Join Type*. <br>
