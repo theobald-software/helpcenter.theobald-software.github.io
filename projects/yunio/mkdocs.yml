@@ -39,7 +39,7 @@ theme:
      - navigation.indexes #adds landing pages for groups
      #- navigation.instant # load faster (no page reload for internal links)
      #- navigation.instant.prefetch # load faster (start loading content when hovering)
-     - navigation.instant.progress # enables a progress indicator 
+     #- navigation.instant.progress # enables a progress indicator 
      #- navigation.instant.preview
      - navigation.path #adds breadcrumbs
     # - navigation.prune # only the visible navigation items are included in the rendered HTML, reducing the size of the built site by 33% or more
