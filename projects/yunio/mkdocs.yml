@@ -16,7 +16,7 @@ site_description: >-
 copyright: Copyright &copy; 2024 Theobald Software GmbH <br> <span style="color:#22A285"><a  style="color:#22A285" href="https://theobald-software.com/en/privacy-policy/" target="_blank" rel="noopener">privacy policy</a> - <a  style="color:#22A285" href="https://theobald-software.com/en/legal-notice" target="_blank" rel="noopener">legal notice</a> - <a style="color:#22A285" href="https://theobald-software.com/en/" target="_blank" rel="noopener">website</a></span>
 watch:
   - includes
-
+  - overrides
 # Configuration
 theme:
   name: material
@@ -37,10 +37,10 @@ theme:
     # - navigation.expand #displays all pages in the navigation (not good for API Reference)
     # - navigation.footer
      - navigation.indexes #adds landing pages for groups
-     #- navigation.instant # load faster (no page reload for internal links)
-     #- navigation.instant.prefetch # load faster (start loading content when hovering)
-     #- navigation.instant.progress # enables a progress indicator 
-     #- navigation.instant.preview
+     - navigation.instant # load faster (no page reload for internal links)
+     - navigation.instant.prefetch # load faster (start loading content when hovering)
+     - navigation.instant.progress # enables a progress indicator 
+     - navigation.instant.preview
      - navigation.path #adds breadcrumbs
     # - navigation.prune # only the visible navigation items are included in the rendered HTML, reducing the size of the built site by 33% or more
     # - navigation.sections # top level pages are rendered as groups in the navigation
@@ -91,6 +91,7 @@ plugins:
       links_attr_map:
         target: _blank # opens all external links in new tabs
   - meta # define front matter of multiple ,md files in .meta.yml file 
+  - tags # enables tags in front matter
   - search:
       separator: '[\s\-,:!=\[\]()"/]+'
   - typeset # preserve format of titles and headlines in navigation and toc
@@ -98,7 +99,7 @@ plugins:
   - macros:
       include_dir: includes
   #- glightbox #image zoom
-  #- tags # enables tags in front matter
+
 
 # Continuous integration
   - group:
@@ -154,7 +155,6 @@ markdown_extensions:
           - overrides/.icons
 # breakless lists (for migration)
   - mdx_breakless_lists
-
 
 # Additional configuration
 extra:
