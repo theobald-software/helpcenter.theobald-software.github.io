@@ -13,7 +13,7 @@ hide:
 
 
 ### Latest News
-Coming soon...
+Coming soon..
 
 <!---
 <div class="grid cards" markdown>

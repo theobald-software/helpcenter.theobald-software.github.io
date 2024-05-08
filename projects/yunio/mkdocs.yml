@@ -6,7 +6,7 @@ site_url: http://helpcenter.theobald-software.com/yunio/
 #site_author: Valerie Schipka
 site_description: >-
   yunIO enables SAP process automation via web services for cloud environments.<br>
-  Learn how to use yunIO by browsing our documentation, samples and more.<br>
+  Learn how to use yunIO by browsing our documentation, samples and more.
 
 # Repository
 # repo_name: theobald-software/helpcenter.theobald-software.github.io
@@ -207,3 +207,11 @@ extra:
   productName: yunIO
   product: yunio
   Component: Integration Type
+  component: integration type
+  components: integration types
+  table: _SAP Table and View_
+  transaction: _Transaction_
+  report: _Report_
+  bapi: _Function module / BAPI_
+  previewBtn: __[Run]__
+  extraction: service
