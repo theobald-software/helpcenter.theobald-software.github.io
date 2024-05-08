@@ -2,7 +2,6 @@
 title: yunIO HelpCenter
 hide:
   - navigation
-  - tags
   - toc
 ---
 
@@ -14,7 +13,9 @@ hide:
 
 
 ### Latest News
+Coming soon...
 
+<!---
 <div class="grid cards" markdown>
 
 --8<-- "newsfeed/yunio-news.md:3:33"
@@ -22,7 +23,7 @@ hide:
 </div>
 
 [:octicons-arrow-right-24: Show more](news.md)
-
+-->
 
 ![threshold](assets/images/datastream/DataStream_yunIO.png)
 
