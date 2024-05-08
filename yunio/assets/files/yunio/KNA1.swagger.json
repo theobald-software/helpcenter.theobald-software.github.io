@@ -1,0 +1,154 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "title": "yunIO",
+        "version": "1.0.0"
+    },
+    "host": "yunioservices.theobald-software.com:8175",
+    "basePath": "/services",
+    "schemes": [
+        "https"
+    ],
+	"tags": [
+    {
+      "name": "KNA1",
+      "description": "Extract customer master data from SAP table KNA1"
+	}
+	],
+    "paths": {
+        "/KNA1": {
+            "post": {
+				"tags": [
+				  "KNA1"
+				],
+                "summary": "customer master data",
+                "operationId": "post-KNA1",
+                "consumes": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "in": "body",
+                        "name": "body",
+                        "description": "JSON data for runtime parameters",
+                        "required": false,
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "whereClause": {
+                                    "type": "string",
+                                    "default": "LAND1 = 'DE'",
+                                    "description": "Where clause, use % as a pattern."
+                                }
+                            }
+                        }
+                    }
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successful operation",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "properties": {
+                                    "KUNNR": {
+                                        "type": "string",
+                                        "maxLength": 10,
+                                        "readOnly": true
+                                    },
+                                    "LAND1": {
+                                        "type": "string",
+                                        "maxLength": 3,
+                                        "readOnly": true
+                                    },
+                                    "NAME1": {
+                                        "type": "string",
+                                        "maxLength": 35,
+                                        "readOnly": true
+                                    },
+                                    "ORT01": {
+                                        "type": "string",
+                                        "maxLength": 35,
+                                        "readOnly": true
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "No basic auth provided"
+                    }
+                }
+            },
+            "get": {
+				"tags": [
+				  "KNA1"
+				],
+                "summary": "customer master data",
+                "operationId": "get-KNA1",
+                "parameters": [
+                    {
+                        "in": "query",
+                        "name": "whereClause",
+                        "type": "string",
+                        "description": "Where clause, use % as a pattern."
+                    }
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successful operation",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "properties": {
+                                    "KUNNR": {
+                                        "type": "string",
+                                        "maxLength": 10,
+                                        "readOnly": true
+                                    },
+                                    "LAND1": {
+                                        "type": "string",
+                                        "maxLength": 3,
+                                        "readOnly": true
+                                    },
+                                    "NAME1": {
+                                        "type": "string",
+                                        "maxLength": 35,
+                                        "readOnly": true
+                                    },
+                                    "ORT01": {
+                                        "type": "string",
+                                        "maxLength": 35,
+                                        "readOnly": true
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "No basic auth provided"
+                    }
+                }
+            }
+        }
+    },
+    "securityDefinitions": {
+        "basic": {
+            "type": "basic"
+        }
+    },
+    "security": [
+        {
+            "basic": []
+        }
+    ],
+    "x-ntx-render-version": 2
+}
