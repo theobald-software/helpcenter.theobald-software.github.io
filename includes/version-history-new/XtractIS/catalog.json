@@ -1,5 +1,45 @@
 [
   {
+    "Version": "7.5.0.2",
+    "LegacyReleaseDate": "2024-05-06 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "BW Cube",
+        "Message": "Fix dimension on columns deserialization"
+      }
+    ]
+  },
+  {
+    "Version": "7.5.0.1",
+    "LegacyReleaseDate": "2024-05-06 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "BW Cube",
+        "Message": "Add backward-compatibility for dimension on columns feature"
+      }
+    ]
+  },
+  {
+    "Version": "7.5.0.0",
+    "LegacyReleaseDate": "2024-05-06 20:51:36Z",
+    "IsBreaking": true,
+    "Changes": [
+      {
+        "Product": "XtractIS",
+        "Component": "General",
+        "Message": "Use new parameter system"
+      },
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "General",
+        "Message": "New selection & parameter system",
+        "HasReleaseNote": true
+      }
+    ]
+  },
+  {
     "Version": "7.4.15.11",
     "LegacyReleaseDate": "2024-04-25 00:00:00Z",
     "IsCritical": true,

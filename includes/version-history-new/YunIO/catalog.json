@@ -1,5 +1,66 @@
 [
   {
+    "Version": "1.32.10.0",
+    "LegacyReleaseDate": "2024-05-07 16:50:38Z",
+    "Changes": [
+      {
+        "Product": "YunIO",
+        "Component": "Designer",
+        "Message": "Transaction: Add support for checkboxes"
+      },
+      {
+        "Product": "Theobald.Server",
+        "Component": "General",
+        "Message": "Transaction: Add support for checkboxes"
+      }
+    ]
+  },
+  {
+    "Version": "1.32.9.2",
+    "LegacyReleaseDate": "2024-05-06 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "BW Cube",
+        "Message": "Fix dimension on columns deserialization"
+      }
+    ]
+  },
+  {
+    "Version": "1.32.9.1",
+    "LegacyReleaseDate": "2024-05-06 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "BW Cube",
+        "Message": "Add backward-compatibility for dimension on columns feature"
+      }
+    ]
+  },
+  {
+    "Version": "1.32.9.0",
+    "LegacyReleaseDate": "2024-05-06 20:54:14Z",
+    "IsBreaking": true,
+    "Changes": [
+      {
+        "Product": "YunIO",
+        "Component": "General",
+        "Message": "Use new parameter system"
+      },
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "General",
+        "Message": "New selection & parameter system",
+        "HasReleaseNote": true
+      },
+      {
+        "Product": "Theobald.Server",
+        "Component": "General",
+        "Message": "Adjustments for new parameter system"
+      }
+    ]
+  },
+  {
     "Version": "1.32.8.1",
     "LegacyReleaseDate": "2024-04-29 00:00:00Z",
     "Changes": [
