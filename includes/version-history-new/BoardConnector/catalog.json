@@ -1,5 +1,61 @@
 [
   {
+    "Version": "6.4.0.3",
+    "LegacyReleaseDate": "2024-05-07 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Server",
+        "Component": "General",
+        "Message": "Transaction: Add support for checkboxes"
+      }
+    ]
+  },
+  {
+    "Version": "6.4.0.2",
+    "LegacyReleaseDate": "2024-05-06 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "BW Cube",
+        "Message": "Fix dimension on columns deserialization"
+      }
+    ]
+  },
+  {
+    "Version": "6.4.0.1",
+    "LegacyReleaseDate": "2024-05-06 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "BW Cube",
+        "Message": "Add backward-compatibility for dimension on columns feature"
+      }
+    ]
+  },
+  {
+    "Version": "6.4.0.0",
+    "LegacyReleaseDate": "2024-05-06 20:58:05Z",
+    "IsBreaking": true,
+    "Changes": [
+      {
+        "Product": "BoardConnector",
+        "Component": "General",
+        "Message": "Use new parameter system"
+      },
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "General",
+        "Message": "New selection & parameter system",
+        "HasReleaseNote": true
+      },
+      {
+        "Product": "Theobald.Server",
+        "Component": "General",
+        "Message": "Adjustments for new parameter system"
+      }
+    ]
+  },
+  {
     "Version": "6.3.1.0",
     "LegacyReleaseDate": "2024-04-30 12:18:10Z",
     "Changes": [
