@@ -2,11 +2,11 @@
 
 # Project information
 site_name: yunIO HelpCenter
-#site_url: http://erpconnect.theobald-software.com/
+site_url: http://helpcenter.theobald-software.com/yunio/
 #site_author: Valerie Schipka
 site_description: >-
   yunIO enables SAP process automation via web services for cloud environments.<br>
-  Learn how to use yunIO by browsing our documentation, samples and more.<br>
+  Learn how to use yunIO by browsing our documentation, samples and more.
 
 # Repository
 # repo_name: theobald-software/helpcenter.theobald-software.github.io
@@ -16,7 +16,7 @@ site_description: >-
 copyright: Copyright &copy; 2024 Theobald Software GmbH <br> <span style="color:#22A285"><a  style="color:#22A285" href="https://theobald-software.com/en/privacy-policy/" target="_blank" rel="noopener">privacy policy</a> - <a  style="color:#22A285" href="https://theobald-software.com/en/legal-notice" target="_blank" rel="noopener">legal notice</a> - <a style="color:#22A285" href="https://theobald-software.com/en/" target="_blank" rel="noopener">website</a></span>
 watch:
   - includes
-
+  - overrides
 # Configuration
 theme:
   name: material
@@ -37,8 +37,8 @@ theme:
     # - navigation.expand #displays all pages in the navigation (not good for API Reference)
     # - navigation.footer
      - navigation.indexes #adds landing pages for groups
-    # # - navigation.instant # load faster (no page reload for internal links)
-    # # - navigation.instant.prefetch # load faster (start loading content when hovering)
+     - navigation.instant # load faster (no page reload for internal links)
+     - navigation.instant.prefetch # load faster (start loading content when hovering)
      - navigation.instant.progress # enables a progress indicator 
      - navigation.instant.preview
      - navigation.path #adds breadcrumbs
@@ -70,12 +70,15 @@ theme:
     text: Poppins
     code: Roboto Mono
   favicon: assets/images/logos/products/YunIO.png
-  logo: assets/images/logos/logo.png
+  logo: assets/images/logos/products/YunIO.png
 
 # Custom CSS
 extra_css:
   - assets/stylesheets/extra.css
   - assets/stylesheets/neoteroi-cards.css 
+  - assets/stylesheets/hyperscript.css
+extra_javascript:
+  - assets/javascripts/hyperscript.min.js
   
 # Plugins
 plugins:
@@ -88,15 +91,15 @@ plugins:
       links_attr_map:
         target: _blank # opens all external links in new tabs
   - meta # define front matter of multiple ,md files in .meta.yml file 
+  - tags # enables tags in front matter
   - search:
       separator: '[\s\-,:!=\[\]()"/]+'
   - typeset # preserve format of titles and headlines in navigation and toc
   - awesome-pages # define navigation in .pages files
   - macros:
       include_dir: includes
-  - swagger-ui-tag
   #- glightbox #image zoom
-  #- tags # enables tags in front matter
+
 
 # Continuous integration
   - group:
@@ -107,7 +110,7 @@ plugins:
                - index.md
         #enable_creation_date: true
         #type: timeago
-         - optimize
+         ##- optimize
          - minify:
              minify_html: true
 
@@ -202,3 +205,13 @@ extra:
       link: https://theobald-software.com/en/newsletter/
       name: Newsletter
   productName: yunIO
+  product: yunio
+  Component: Integration Type
+  component: integration type
+  components: integration types
+  table: _SAP Table and View_
+  transaction: _Transaction_
+  report: _Report_
+  bapi: _Function module / BAPI_
+  previewBtn: __[Run]__
+  extraction: service
