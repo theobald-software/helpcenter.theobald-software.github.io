@@ -12,7 +12,7 @@ The [knowledge base](site:knowledge-base/) contains articles about multiple inte
   
 - title: Alteryx Integration
   image: site:assets/images/logos/business-content/Alteryx-Logo.png
-  url: yknowledge-base/integrate-a-yunio-service-with-alteryx/
+  url: site:knowledge-base/integrate-a-yunio-service-with-alteryx/
 
 
 ::/cards::
