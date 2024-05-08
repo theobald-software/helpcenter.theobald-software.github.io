@@ -25,22 +25,22 @@ The knowledge base contains articles on how to create services for the following
 - title: IE01
   image: ../../assets/images/logos/business-content/material.png
   content: How to create new equipment in SAP.
-  url: /../knowledge-base/transaction-ie01
+  url: yunio/knowledge-base/transaction-ie01/
   
 - title: PA40
   image: ../../assets/images/logos/business-content/human.png
   content: How to define personnel actions in SAP.
-  url: /../knowledge-base/transaction-pa40
+  url: yunio/knowledge-base/transaction-pa40/
   
 - title: VA02
   image: ../../assets/images/logos/business-content/finance.svg
   content: How to change sales orders in SAP.
-  url: /../knowledge-base/transaction-va02
+  url: yunio/knowledge-base/transaction-va02/
 
 - title: XD02
   image: ../../assets/images/logos/business-content/human.png
   content: How to change customer data in SAP.
-  url: /../knowledge-base/transaction-xd02
+  url: yunio/knowledge-base/transaction-xd02/
 
 
 ::/cards::

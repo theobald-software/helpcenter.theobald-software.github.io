@@ -14,7 +14,7 @@ The following {{ components}} require the installation of a custom function modu
 | {{ table }} | [/THEO/READ_TABLE](custom-function-module-for-table-extraction.md) | Recommended |
 {% if page.meta.product == "xtract-universal" or page.meta.product == "xtract-is" or page.meta.product == "board-connector" %}-| {{ tableCDC }} | [/THEO/READ_TABLE](custom-function-module-for-table-extraction.md) and [THEO_CDC](custom-function-module-for-tablecdc.md/#installation-of-theo_cdc_ecc-or-theo_cdc_s4)| Required | {% endif %}
 
-For information on how to use transport request, see [Import an SAP Transport Request](site:knowledge-base/import-an-sap-transport-request.md). <br>
+For information on how to use transport request, see [Import an SAP Transport Request](site:knowledge-base/import-an-sap-transport-request). <br>
 
 !!! note
 	All objects that come with any of the transport requests, can be deleted by importing the `Z_THEO_READ_TABLE-deletion_request.zip` transport request.
