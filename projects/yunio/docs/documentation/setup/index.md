@@ -18,12 +18,12 @@ This includes system requirements, backups and license information.
 - title: Server Settings
   image: site:assets/images/logos/business-content/yunio-settings.svg
   content: Setup the server URL, ports and data security.
-  url: site:documentation/server-settings
+  url: site:documentation/server-settings/
 
 - title: Access Restriction
   image: site:assets/images/logos/business-content/key.svg
   content: Create and manage users with access restrictions.
-  url: site:documentation/integrate-a-yunio-service-with-nintex/
+  url: site:documentation/access-restrictions/
 
 ::/cards::
 
