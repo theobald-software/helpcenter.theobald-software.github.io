@@ -207,11 +207,3 @@ extra:
   productName: yunIO
   product: yunio
   Component: Integration Type
-  component: integration type
-  components: integration types
-  table: _SAP Table and View_
-  transaction: _Transaction_
-  report: _Report_
-  bapi: _Function module / BAPI_
-  previewBtn: __[Run]__
-  extraction: service
