@@ -1,7 +1,0 @@
----
-title: Table Joins
-description: Join two or more tables and extracts the result of the join.
----
-
-{% include "components/tables/table-joins.md"  %}
-
