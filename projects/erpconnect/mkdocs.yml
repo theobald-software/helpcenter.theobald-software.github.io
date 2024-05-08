@@ -93,26 +93,11 @@ plugins:
   - search:
       separator: '[\s\-,:!=\[\]()"/]+'
   - typeset # preserve format of titles and headlines in navigation and toc
-  #- tooltipster-links
   - awesome-pages # define navigation in .pages files
   - macros:
       include_dir: includes # ../../includes for ERPConnect only
-  #- swagger-ui-tag # enables OpenAPI elements in docu
   #- glightbox #image zoom
-  #- with-pdf: # creates .pdf, see https://pypi.org/project/mkdocs-with-pdf/
-  #    author: Dec 2023
-  #    copyright: Copyright &copy; 2024 Theobald Software GmbH
-  #    cover_logo: https://help.theobald-software.com/img/company/theobald_onlinehelplogo.svg
-  #    cover_title: ERPConnect 
-  #    cover_subtitle: Documentation
-  #    exclude_pages:
-  #        - ^$
-  #        - 'erpconnect-api/'
-  #        - 'samples/'
-  #        - 'changelog/'
-  #        - 'troubleshooting/'
-  #    output_path: C:/Source/helpcenter.theobald-software.github.io/ERPConnect_Documentation.pdf
-  
+
 # Continuous integration
   - group:
       enabled: !ENV CI

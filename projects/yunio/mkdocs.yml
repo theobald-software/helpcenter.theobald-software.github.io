@@ -1,5 +1,4 @@
 # Copyright (c) 2016-2023 Martin Donath <martin.donath@squidfunk.com>
-
 # Project information
 site_name: yunIO HelpCenter
 site_url: http://helpcenter.theobald-software.com/yunio/
@@ -11,7 +10,6 @@ site_description: >-
 # Repository
 # repo_name: theobald-software/helpcenter.theobald-software.github.io
 #repo_url: https://github.com/theobald-software/oh.theobald-software.github.io.git
-
 # Copyright
 copyright: Copyright &copy; 2024 Theobald Software GmbH <br> <span style="color:#22A285"><a  style="color:#22A285" href="https://theobald-software.com/en/privacy-policy/" target="_blank" rel="noopener">privacy policy</a> - <a  style="color:#22A285" href="https://theobald-software.com/en/legal-notice" target="_blank" rel="noopener">legal notice</a> - <a style="color:#22A285" href="https://theobald-software.com/en/" target="_blank" rel="noopener">website</a></span>
 watch:
@@ -100,19 +98,18 @@ plugins:
       include_dir: includes
   #- glightbox #image zoom
 
-
 # Continuous integration
   - group:
       enabled: !ENV CI
       plugins:
-         - git-revision-date-localized:
+        - git-revision-date-localized:
              exclude:
                - index.md
         #enable_creation_date: true
         #type: timeago
-         ##- optimize
-         - minify:
-             minify_html: true
+        #- optimize #requires pngquant to be installed, see https://github.com/squidfunk/mkdocs-material/discussions/4989
+        - minify:
+            minify_html: true  
 
 # Hook for Relative Links
 hooks:
@@ -204,6 +201,7 @@ extra:
     - icon: fontawesome/solid/envelope
       link: https://theobald-software.com/en/newsletter/
       name: Newsletter
+      
   productName: yunIO
   product: yunio
   Component: Integration Type
@@ -215,3 +213,4 @@ extra:
   bapi: _Function module / BAPI_
   previewBtn: __[Run]__
   extraction: service
+  
