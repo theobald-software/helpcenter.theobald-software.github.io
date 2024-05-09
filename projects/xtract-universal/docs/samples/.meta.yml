@@ -1,6 +1,0 @@
-hide:
-   - navigation
-   - tags
-product: erpconnect
-search:
-  boost: 0.5
