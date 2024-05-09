@@ -1,0 +1,5 @@
+nav:
+    - index.md
+    - bapis-and-function-modules.md
+    - web-applications.md
+    - function-template-generator.md

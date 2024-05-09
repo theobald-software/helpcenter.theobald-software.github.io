@@ -1,0 +1,5 @@
+nav:
+    - index.md
+    - log-on-to-sap.md
+    - sso-with-log-on-tickets.md
+    - sso-with-snc.md
