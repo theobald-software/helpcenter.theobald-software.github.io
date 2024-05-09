@@ -67,3 +67,7 @@ Coming soon...
   url: https://theobald-software.typeform.com/to/CnpfiiIN
 
 ::/cards::
+
+
+### About ERPConnect
+ERPConnect is a flexible and modular .NET library that has been certified by SAP for integration with SAP ECC and SAP S/4HANA.

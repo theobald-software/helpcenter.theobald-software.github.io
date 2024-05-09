@@ -66,6 +66,3 @@ Example:
 !!! note
 	The corresponding SQL command is generated dynamically and executed on the SAP server.
 
-
-### About ERPConnect
-ERPConnect is a flexible and modular .NET library that has been certified by SAP for integration with SAP ECC and SAP S/4HANA.
