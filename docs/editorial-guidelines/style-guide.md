@@ -33,20 +33,20 @@ The style guidelines are based on the rules of the Chicago Manual of Style. The 
 
 ### Tone
 Tone is the narrative attitude towards the conveyed information being told. In non-technical texts examples for tone can be the following: irony, humor, sympathy or emotion, etc.
-For technical user documentation the tone must be neutral and without any evaluation (e.g., “the option XYZ is the **best**” is evaluating). It is important not to try to influence the reader as it is common for marketing texts.
+For technical user documentation the tone must be neutral and without any evaluation (e.g., "the option XYZ is the **best**" is evaluating). It is important not to try to influence the reader as it is common for marketing texts.
 
 #### Examples
 
 |Instruction|Example|  
 |----------|-------------|
-| Friendly and respectful but avoid “please” as it is unnecessary.|:white_check_mark: To see the details of the license, navigate to the menu bar of the designer and select **[Help > Info]**.  <br> :x: To see the details of the license, please go to *Help -> Info.* |
+| Friendly and respectful but avoid "please" as it is unnecessary.|:white_check_mark: To see the details of the license, navigate to the menu bar of the designer and select **[Help > Info]**.  <br> :x: To see the details of the license, please go to *Help -> Info.* |
 |Avoid colloquial expressions & slang| :white_check_mark: The following section contains answers to frequently asked questions about LINQ to SAP. <br> :x: Before we delve deeper into LINQ to SAP in this chapter, let’s first have a look at some answers to a few important questions that some readers might be dying to ask.|
 |Don’t write exactly the way you speak| :white_check_mark: The following section is about inserting JavaScript code for calling the SAP function module.<br> :x: Now let’s take a look at the step with JavaScript code for calling the SAP function module.|
 |Don’t try to be funny|:white_check_mark: The final formatting and design adaptation can be performed in later interactions. <br> :x: They shouldn’t think about details such as whether the data is exactly formatted correctly or if the design is cool enough - these touches can be finished in later interactions (you put the hood on after you get the engine running, right?) (source: Microsoft Business Intelligence For Dummies)|
 |Avoid judgements | :white_check_mark: Tables can be comfortably further processed or linked to a control element. <br> :x: They [tables] can therefore be *very easily* further processed or linked to a control element.|
 |Avoid placeholder phrases & useless words|:white_check_mark: Download a trial version from the Theobald Software website and try out [Product Name] using your systems and scenarios. **Recommendation:** To avoid possible restrictions, install the Theobald Software custom function module for table extraction. <br> :x: Of course, you can download a demo version from our website and try it by yourself. <br> :x: In order to avoid possible restrictions with table extractions we recommend installation of our custom function module for table extraction.|
 |Use exclamation rarely|:white_check_mark: The following sections assumes basic knowledge of Xtract Universal. <br> :x: For this chapter the knowledge about the basic usage of Xtract Universal is **assumed**!|
-|Avoid “let’s… + verb”|:white_check_mark: The following example shows how to edit to extracted data. The field name2 is updated with the value *Hamburg*. <br> :x:*Let's* make some changes to the extracted data. We will update the field name2 with the value ‘Hamburg’.|
+|Avoid "let’s… + verb"|:white_check_mark: The following example shows how to edit to extracted data. The field name2 is updated with the value *Hamburg*. <br> :x:*Let's* make some changes to the extracted data. We will update the field name2 with the value ‘Hamburg’.|
 
 ### Choice of words
 The choice of words is a very important part of any communication. Each author should try to use correct and precise words to convey the correct message. Incorrect word choice leads to misunderstandings among the audience. In technical user documentation it is not advisable to use synonyms – it is against the goal of consistent terminology. The following list of examples depicts the main principles of correct choice of words when creating documentation for users.
@@ -57,20 +57,52 @@ Other examples: email vs. e-mail, address vs. adress, definite vs. definet.
 |Instruction|Example|  
 |----------|-------------|
 |Use simple words that are easy to understand. |:white_check_mark: In the following example the already existing Secure Store Service Application is used to enable the individual SAP access.  <br> :x: In the following steps, we will *utilize* an already existing Secure Store Service Application. <br> #link|
-|Choose consistent words. Always use the same name for the same thing. Avoid synonyms. |:white_check_mark: Use words consistently “dialog” and “window” and do not interchange them. Decide to only use one version: <br>  :x:: <br> <code>&nbsp;</code> a) When you click on the run *Dialog*, the Extraction Parameters tab offers the following parameters that can be overwritten. <br> <code>&nbsp;</code> b) If a destination of type “Qlik” is assigned to an extraction and when clicking on the Run button a button labeled Generate Qlik Script will be available in the pop up *window*. <br> <code>&nbsp;</code> c) Below the Operations *window*, select the New button. |
+|Choose consistent words. Always use the same name for the same thing. Avoid synonyms. |:white_check_mark: Use words consistently "dialog" and "window" and do not interchange them. Decide to only use one version: <br>  :x:: <br> <code>&nbsp;</code> a) When you click on the run *Dialog*, the Extraction Parameters tab offers the following parameters that can be overwritten. <br> <code>&nbsp;</code> b) If a destination of type "Qlik" is assigned to an extraction and when clicking on the Run button a button labeled Generate Qlik Script will be available in the pop up *window*. <br> <code>&nbsp;</code> c) Below the Operations *window*, select the New button. |
 |Use consistent spelling|:white_check_mark: Use the same spelling – US EN; check the capitalization. <br> :x:: <br> <code>&nbsp;</code> 1. Double-click the icon to launch the editor. Click the binocular button to open up the search *dialogue* as shown below. <br> <code>&nbsp;</code> 2. When you click on the run *Dialog*, the Extraction Parameters tab offers the following parameters that can be overwritten.|
 
 ### Word List
 Check the [Google Developer’s Guide](https://developers.google.com/style/word-list#tldr) for more information. Be aware that some of the recommendations in the following list vary from the Google Developer’s guide.
 
-|WORD|Explanation|  
+|Word|Explanation|  
 |----------|-------------|
-|but|Use the word “but” carefully. Many sentences within the user assistance content that contain the word “but” are grammatically questionable.|
-|chapter|When referring to documentation that isn’t in the form of a book, don’t use the term chapter. Instead, refer to documents, pages, or sections.|
-|||
+|but|Use the word "but" carefully. Many sentences within the user assistance content that contain the word "but" are grammatically questionable.|
+|<del>chapter</del>|When referring to documentation that isn’t in the form of a book, don’t use the term chapter. Instead, refer to documents, pages, or sections.|
+|Click <del>on</del>|Use click for most targets, such as buttons, links, list items, and radio buttons. Hyphenate right-click, left-click, and double-click. When a click or tap action reveals a collapsed list, you can write click to expand or simply expand.|
+|Clear <br> <del>Deselect</del> <br> <del>Uncheck</del> |Example: You can select and clear the structure fields required in the window…|
+|CSV file .csv file <br> <del>.csv file</del>|Don’t use a filename extension to refer to a type of file. For example, use CSV file rather than .csv file.|
+|Data type <br> <del>datatype</del>||
+|Trial <br> <del>demo</del>||
+|<del>desire(d)</del> <br> want, necessary| <del>Set the value to the size that you desire. Set the value to the desired size.</del> <br> Set the value to the size you want. set necessary value.|
+|Dialog Window|Use the word dialog only when it is specified in the UI. Use word window instead.|
+|directory, folder|Directory in command-line context, folder in GUI context|
+|Display vs. appear|*Use display always with an object and in passive form:* <br> The Output Directories area displays the vector image. <br> <del>The Output Directories area is displayed.</del> <br> The Output Directories area displays. *"Appears" or "opens" can be used without an object*: <br> The Output Directories area appears.|
+|drop-down <br> <del> dropdown</del> ||
+|Dummy <br> <del>placeholder</del>||
+|<del>easy</del>|"easy" is often a qualifier that assumes subjective evaluation, the meaning of a sentence normally does not change without the word easy.|
+|e.g.,|Use with comma accordingly to Chicago Manual of Style |
+|email|Avoid other spelling|
+|Enable vs. turn on|Enable is better than turn on.|
+|Execute vs. run|Verb commonly used to refer to function calls, SQL queries, and other processes. For more general cases, use run.|
+|Filename <br> <del>file name</del>||
+|<del>For instance</del> <br> e.g.,||
+|<del>grayed-out</del> <br> unavailable||
+|Hostname <br> <del>host name</del>||
+|<del>in order to</del> <br> to|Avoid, if possible, don’t use in order to; instead, use "to". Very occasionally, in order to does clarify meaning or make something easier to read.|
+|IP address <br> <del>IP</del>|IP alone is an abbreviation for intellectual property. If you mean an IP address, write IP address.|
+|<del>Just</del>|Don’t use. Usually, you can eliminate this word from a sentence and still convey the same meaning.|
+|Metadata <br> <del> meta data </del>||
+|On-premises <br> <del>on prem </del><br> <del>on premise </del>||
+|Populate vs. fill in/out|A process can populate a table or other entity. <br> A person can only fill in a table, form etc. <br> The SQL command populates the table with sample data. <br> <del>When you have finished populating the form ... </del><br> When you have finished filling in the form ...|
+|real time (noun), <br> real-time (adjective)||
+|Screenshot <br> <del> screen shot </del>||
+| <del>Simple, simply </del>| see easy|
+| <del>terminate </del>|avoid, only when process is terminated.|
+| </del>traditional </del>|avoid|
+|Username <br> <del>User name </del>||
+|Window <br> <del>dialog </del>|see dialog|
 
 ### Simplicity – easy-to-read content
-When writing information for users it is important to produce easy-to-read texts. The concept of “easy-to-read” is not universal and it will not be possible to write a text that will suit every reader. Easy-to-read content is generally characterized by:
+When writing information for users it is important to produce easy-to-read texts. The concept of "easy-to-read" is not universal and it will not be possible to write a text that will suit every reader. Easy-to-read content is generally characterized by:
 - The use of a simple, straightforward language
 - Only one main idea per sentence
 - No usage of abbreviations that were not introduced or not well-known (e.g., XU vs. PC)
@@ -93,7 +125,7 @@ Easy-to read content is automatically easier to translate and localize into othe
 |Use positive formulations |:white_check_mark: Map the list field **Customer Name** as an import parameter to the request body. <br> :x: *Don’t forget* to map list field Customer Name as an import parameter to the request body.|
 |Use positive verbs|:white_check_mark: If you have any further questions, contact us via phone or email. <br> :x: If you have any further questions, please don’t *hesitate* to contact us via phone or mail.|
 |Write in short sentences. Avoid sentences longer than 25 words.|:white_check_mark: After the installation Xtract for Alteryx components are available in the separate tab in the toolbox within Alteryx designer. Use drag and drop to use the Xtract for Alteryx components in your workflow. <br> :x: If you start Alteryx after installation, the XfA components are available in a separate tab in the toolbox within the Alteryx UI and can be dragged and dropped onto the workflow as usual|
-|Avoid filler words that don’t have an explicit meaning (“in order to”, “however” etc.). The argument “it is nicer to read” does not apply in technical user documentation.|:white_check_mark: librfc32 is discontinued by SAP and is officially no longer supported. Based on experience, librfc32 is a more stable library that uses less resources than [...]. <br> :x: librfc32 has been discontinued by SAP and is officially no longer supported. *However*, it is more stable and uses less resources than the Netweaver library recommended by SAP.|
+|Avoid filler words that don’t have an explicit meaning ("in order to", "however" etc.). The argument "it is nicer to read" does not apply in technical user documentation.|:white_check_mark: librfc32 is discontinued by SAP and is officially no longer supported. Based on experience, librfc32 is a more stable library that uses less resources than [...]. <br> :x: librfc32 has been discontinued by SAP and is officially no longer supported. *However*, it is more stable and uses less resources than the Netweaver library recommended by SAP.|
 |Avoid nested sentences – better split into several sentences. |:white_check_mark: In Nintex Forms it is possible to add JavaScript statements, which enable the integration of the ECS Runtime JavaScript library and can be used to access SAP data. <br> :x: In Nintex Forms the adding of JavaSript code is possible which enables the calling of the ECS Runtime JavaScript library and to use it for accessing SAP data.|
 
 
@@ -111,7 +143,7 @@ Use the future tense only when you need to emphasize that something will occur l
 
 |Instruction|Example|  
 |----------|-------------|
-|Use present tense and avoid “will/would future”. |:white_check_mark: Xtract Universal is installed along with a trial license. <br> :x: Xtract Universal *will* be installed along with a trial license.|
+|Use present tense and avoid "will/would future". |:white_check_mark: Xtract Universal is installed along with a trial license. <br> :x: Xtract Universal *will* be installed along with a trial license.|
 |- |:white_check_mark: Both values are readable in the connection string. <br> :x: Both values would be readable in the connection string.|
 |Avoid perfect (have done, had done etc.) and continuous (is doing, was doing).|:white_check_mark: Only changes from last transfer are extracted. <br> :x: Then, only the changes will be extracted which have been made since the last transfer. |
 
@@ -133,16 +165,16 @@ There are exceptions to using of active voice that are legitimate, see the follo
 |To de-emphasize a subject or actor. |:white_check_mark: Application examples can be found in the section Parameter Mapping.|
 |If the readers don’t need to know who’s responsible for the action. |:white_check_mark: If an ID is logged, you can be sure that the purchase requisition was created in SAP.|
 
-### Pronouns – “you”, “we”, “us”, “this”, “that” etc.
-Users are more engaged with documentation when you use second person (that is, you address the user as “you”).
-Using second person “you” is recommended. Avoid using first person “we” or “I” at all times. Also avoid possessive pronouns such as “our”, “us” and other derivations from the first person.
+### Pronouns – "you", "we", "us", "this", "that" etc.
+Users are more engaged with documentation when you use second person (that is, you address the user as "you").
+Using second person "you" is recommended. Avoid using first person "we" or "I" at all times. Also avoid possessive pronouns such as "our", "us" and other derivations from the first person.
 
 |Instruction|Example|  
 |----------|-------------|
-|Use you, avoid “we” or “I”, “our”, “us”|:white_check_mark: To avoid possible restrictions, install the Theobald Software custom function module for table extraction. <br> :x: In order to avoid possible restrictions with table extractions we recommend installation of our custom function module for table extraction. |
-|Use the noun and not a pronoun to avoid ambiguity and unclear sentences.|:white_check_mark: To create new columns, use the report column editor at the bottom of the window “XYZ” and the table in the section “Report columns”. The following parameters can be defined for the new columns: name, offset and length. <br> :x: Use the report column editor at the bottom and the table on the upper right to define new columns. A column is defined by its* name, offset and length. <br> * It could maybe also be understood as “report column editor”.|
+|Use you, avoid "we" or "I", "our", "us"|:white_check_mark: To avoid possible restrictions, install the Theobald Software custom function module for table extraction. <br> :x: In order to avoid possible restrictions with table extractions we recommend installation of our custom function module for table extraction. |
+|Use the noun and not a pronoun to avoid ambiguity and unclear sentences.|:white_check_mark: To create new columns, use the report column editor at the bottom of the window "XYZ" and the table in the section "Report columns". The following parameters can be defined for the new columns: name, offset and length. <br> :x: Use the report column editor at the bottom and the table on the upper right to define new columns. A column is defined by its* name, offset and length. <br> * It could maybe also be understood as "report column editor".|
 |Avoid demonstrative pronouns such as "this", "these", "those" |:white_check_mark: Background processing is an obsolete function. Use the Z_XTRACT_IS_TABLE_COMPRESSION module instead. <br> :x: *This* function module is obsolete. Please use instead the function module Z_XTRACT_IS_TABLE_COMPRESSION. |
-|It is always better to state the noun. Where possible, put a noun after this or that for clarity. If doing so results in clunky text, rephrase the text. Generally, try thinking about what the noun would be. Avoid using possessive pronouns such as their, his, her etc. |:white_check_mark: Within the “Execute Function Activity Dialog” there are sections **IMPORTS**, **EXPORTS**, **TABLES**. The sections contain the input and the output parameters and the respective mappings. <br> :x: Below the name are the IMPORTS, EXPORTS, TABLES and Output parameters of the function module, with *their* mappings. |
+|It is always better to state the noun. Where possible, put a noun after this or that for clarity. If doing so results in clunky text, rephrase the text. Generally, try thinking about what the noun would be. Avoid using possessive pronouns such as their, his, her etc. |:white_check_mark: Within the "Execute Function Activity Dialog" there are sections **IMPORTS**, **EXPORTS**, **TABLES**. The sections contain the input and the output parameters and the respective mappings. <br> :x: Below the name are the IMPORTS, EXPORTS, TABLES and Output parameters of the function module, with *their* mappings. |
 
 ### Clause Order
 When writing English texts, generally avoid direct translation from German into English. Most of the times German syntax (order of words in a sentence) is very different to the English.
@@ -151,22 +183,22 @@ When writing English texts, generally avoid direct translation from German into 
 |----------|-------------|
 |Avoid German syntax |:white_check_mark: The debug logging should usually be activated upon request of the support team. <br> :x: Please note that the debug logging *usually* should be activated by request of the support team.|
 |Put conditional clauses i.e. actual information before instructions. |:white_check_mark: To run an extraction, click **[Run]**. <br> :x: Click **[Run]** if you want to run an extraction. |
-|Use correct English grammar (e.g., do not write “will” after if). Generally, try to avoid “will”. |:white_check_mark: If you buy the software, you get a new license key. <br> :x: If you buy the software you *will* get a new license key. |
+|Use correct English grammar (e.g., do not write "will" after if). Generally, try to avoid "will". |:white_check_mark: If you buy the software, you get a new license key. <br> :x: If you buy the software you *will* get a new license key. |
 
-### Modal auxiliary verbs – “can”, “must” etc.
-Modal auxiliary verbs, such as “must, can, need, shall, should, may, will” have a special and differentiated meaning in English.
+### Modal auxiliary verbs – "can", "must" etc.
+Modal auxiliary verbs, such as "must, can, need, shall, should, may, will" have a special and differentiated meaning in English.
 When writing procedures, try to use the non-modal verb, when possible (e.g., <del>You have to </del> create the connection before running an extraction).
 
 |Verb|Meaning|Example|Usage|  
 |----------|-------------|-----|----|
-|Must| “Must” and “must not”are words of obligation. The obligation comes from the user, e.g., if he wants to perform a task, he must do xyz. Failing to obey an instruction with a “must” will definitely lead to a problem.| A scripted expression has a C#.NET similar syntax and must start with #{ and end with #}. <br> (Otherwise it will not work) | For important commandments and prohibitions <br> Better option: <br> have to or need| 
-|Have to |“Have to” is a less strong obligation that comes outside the user’s power e.g., if he wants to perform a task, but there is an outer requirement. Failing to obey an instruction with a “have to” might stop a function. |The following settings have to be defined to use the Salesforce destination. <br> (It is a condition that comes outside the power of the user). |For common obligations|
+|Must| "Must" and "must not"are words of obligation. The obligation comes from the user, e.g., if he wants to perform a task, he must do xyz. Failing to obey an instruction with a "must" will definitely lead to a problem.| A scripted expression has a C#.NET similar syntax and must start with #{ and end with #}. <br> (Otherwise it will not work) | For important commandments and prohibitions <br> Better option: <br> have to or need| 
+|Have to |"Have to" is a less strong obligation that comes outside the user’s power e.g., if he wants to perform a task, but there is an outer requirement. Failing to obey an instruction with a "have to" might stop a function. |The following settings have to be defined to use the Salesforce destination. <br> (It is a condition that comes outside the power of the user). |For common obligations|
 |Need |Need expresses a requirement and a necessity. |To use ERPConnect you need also the following SAP libraries. |For common obligations|
 |Should|Advice or recommendation, see also [Google Developer’s guide](https://developers.google.com/style/word-list#letter-s).|In an environment with a multiple users access to the same repository, you <del>should</del> need to run the Server as a Windows Service on a central server. <br> You <del>should</del> can download the latest version from the software vendor’s website.| Avoid, as it is not precise. <br> Better option: <br> Can, need|
 |Can| To convey permission or to state a probable possibility. Advice for an alternative|ODP can be used to extract data from Business Content DataSource (Extractors).|Use when something can occur|
-|Could| Probable possibility, more polite than can.| If some components <del>could not</del> cannot be acquired and installed automatically, they appear on the “Prerequisites” screen.|Avoid, as it is not precise. <br> Better option: <br> Can|
+|Could| Probable possibility, more polite than can.| If some components <del>could not</del> cannot be acquired and installed automatically, they appear on the "Prerequisites" screen.|Avoid, as it is not precise. <br> Better option: <br> Can|
 |May|Used for official policy or legal considerations. To convey possibility, use might instead. To convey permission, use can instead.|Depending on the SAP version there <del>may</del> can be other restrictions.|Avoid. <br> Better option: <br> Can|
-|Might|To convey possibility, but less probable than may|The startup process of the IR might can take 20 to 30 minutes. <br> Otherwise you <del>might</del> have gaps in your data.| Use in warnings or “an error might occur”, otherwise use "can"|
+|Might|To convey possibility, but less probable than may|The startup process of the IR might can take 20 to 30 minutes. <br> Otherwise you <del>might</del> have gaps in your data.| Use in warnings or "an error might occur", otherwise use "can"|
 
 ### Abbreviations and contractions
 Abbreviations include acronyms, initialisms, shortened words, and contractions. Some words have a long version and a short version: demonstration and demo, application and app etc.
@@ -175,7 +207,7 @@ Abbreviations include acronyms, initialisms, shortened words, and contractions. 
 |----------|-------------|
 |Use known abbreviations. Known abbreviations are e.g., min/max, min (for minutes), PC etc. Avoid company’s own abbreviations.|:white_check_mark: Closing Alteryx Designer during the installation of Xtract for Alteryx ensures that all components are correctly displayed in your Alteryx Designer after the restart. <br>  :x: This procedure ensures that the *XfA* components are available and can be displayed in the Alteryx Designer.|
 |When shortening the words, be consistent.|:white_check_mark: Param. is always used for parameter. <br> :x: Para and param are both used for parameter.|
-|Use contractions “don’t”, “doesn’t”, “can’t”. Avoid contractions formed from nouns and verbs.|:white_check_mark: The browser is fast, simple, and secure<br> :x: The *browser’s* fast, simple, and secure.|
+|Use contractions "don’t", "doesn’t", "can’t". Avoid contractions formed from nouns and verbs.|:white_check_mark: The browser is fast, simple, and secure<br> :x: The *browser’s* fast, simple, and secure.|
 
 ### Cross-references
 Cross-references guide the user to additional information that helps him to understand the text or to perform the task.
@@ -183,7 +215,7 @@ Cross-references guide the user to additional information that helps him to unde
 |Instruction|Example|  
 |----------|-------------|
 |Use meaningful link text. |:white_check_mark:Set the preferred security level with the property Quality Of Protection. For more information, see [Secure Network Communications (SNC)](https://help.sap.com/docs/SAP_NETWEAVER_701/6f3e0bea6c4b101484fcf5305b4d624b/e656f466e99a11d1a5b00000e835363f.html?version=7.01.22). <br> :x: The preferred security level can be set with the property Quality Of Protection. More details can be found here: http://help.sap.com/saphelp_nw70ehp1/helpdata/en/e6/56f466e99a11d1a5b00000e835363f/content.htm.|
-|Do not use full URLs, phrases such as “click this link”, “here”, “this chapter” etc.|:white_check_mark: To [disable the standard mode](https://help.qlik.com/en-US/sense/2.2/Subsystems/Hub/Content/LoadData/disable-standard-mode.htm), follow the steps described in the Qlik help.<br> :x: Do a search for ‘Disabling standard mode’ or check the following [link](https://help.qlik.com/en-US/sense/2.2/Subsystems/Hub/Content/LoadData/disable-standard-mode.htm).|
+|Do not use full URLs, phrases such as "click this link", "here", "this chapter" etc.|:white_check_mark: To [disable the standard mode](https://help.qlik.com/en-US/sense/2.2/Subsystems/Hub/Content/LoadData/disable-standard-mode.htm), follow the steps described in the Qlik help.<br> :x: Do a search for ‘Disabling standard mode’ or check the following [link](https://help.qlik.com/en-US/sense/2.2/Subsystems/Hub/Content/LoadData/disable-standard-mode.htm).|
 |Give a short explanation, if the reason for the link is not obvious|:white_check_mark: See also the knowledge base article on [how to insert extraction events into the windows logs](#link).<br> :x: See also <br> [How to insert Xtract Universal Extraction Events into the windows logs and show them in the Event Viewer (English)](#link)|
 
 ### Capitalization
@@ -191,7 +223,7 @@ Make sure to use standard American capitalization and do not confuse it with Ger
 
 |Example||  
 |----------|-------------|
-|:white_check_mark: |To set a filter, see the section “Datasource parameters”.|
+|:white_check_mark: |To set a filter, see the section "Datasource parameters".|
 |:x:|To set a *Filter* see the section Datasource parameters.|
 
 Do not use capitalization to emphasize a word. Do not use all caps, only if it’s e.g., a name in GUI or a given name (e.g., 0D_MATERIAL).
@@ -216,7 +248,7 @@ When a conjunction (and, but, or, nor, for, so, or yet) separates two independen
 |:white_check_mark: |Values between 10,000 and 100,000 are useful, but only if the data volume is large enough.|
 |:x:|ERPConnect Services Runtime (ECSR) offers the following authentication options for the SAP connection, that are available while creating the ECS Service Application:|
 
-In general, put a comma before the word “which” at the start of a nonrestrictive clause, but don’t use any commas before “that”. Use a comma after “e.g.,”.
+In general, put a comma before the word "which" at the start of a nonrestrictive clause, but don’t use any commas before "that". Use a comma after "e.g.,".
 #### Semicolons
 Use a semicolon between two closely related independent clauses that are too related for a full stop (period), but where a comma isn’t enough.
 
@@ -268,6 +300,6 @@ Use commas and decimal points in accordance with standard American number-format
 |:x:| The limit is 1.532.784 bytes per day.|
 
 ## Standard Sentences
-- The window “XYZ name of the window” opens… e.g., The window “Settings” opens.
+- The window "XYZ name of the window" opens… e.g., The window "Settings" opens.
 - Click [OK] – not click on OK.
 - In this page, see section… - for linking within a document.
