@@ -31,32 +31,32 @@ hide:
 ::cards:: cols=3
   
 - title: Product Information
-  image: ./assets/images/logos/business-content/product-information-ERPConnect.svg
+  image: ./assets/images/logos/business-content/product-information-ERPConnect.png
   content: Visit our official ERPConnect website to take a look at the advantages ERPConnect offers, a list of FAQs and more.
   url: https://theobald-software.com/en/erpconnect/
   
 - title: Success Stories
-  image: ./assets/images/logos/business-content/success-stories-ERPConnect.svg
+  image: ./assets/images/logos/business-content/success-stories-ERPConnect.png
   content: Get to know real customer scenarios with ERPConnect by reading one of our success stories.
   url: https://theobald-software.com/en/resources/success-stories?filter_one=default&filter_two=erpconnect
 
 - title: Blog
-  image: ./assets/images/logos/business-content/blog-ERPConnect.svg
+  image: ./assets/images/logos/business-content/blog-ERPConnect.png
   content: Discover exciting articles and helpful tips about SAP data and cloud integration, SAP process automation and more.
   url: https://theobald-software.com/en/blog/
   
 - title: Events & Webinars
-  image: ./assets/images/logos/business-content/events-webinars-ERPConnect.svg
+  image: ./assets/images/logos/business-content/events-webinars-ERPConnect.png
   content: Find out about upcoming events and Webinars. <br>Join our live webinars and experience interactive communication or visit our SAP experts live at an event. 
   url: https://theobald-software.com/en/resources/events-and-webinars/
   
 - title: Technical Newsletter
-  image: ./assets/images/logos/business-content/technical-newsletter-ERPConnect.svg
+  image: ./assets/images/logos/business-content/technical-newsletter-ERPConnect.png
   content: Our technical newsletter informs you once a month about new features, releases, breaking changes and articles.
   url: https://theobald-software.com/en/newsletter/
 
 - title: Feedback Form
-  image: ./assets/images/logos/business-content/feedback-form-ERPConnect.svg
+  image: ./assets/images/logos/business-content/feedback-form-ERPConnect.png
   content: We are constantly striving to improve our products and would love to get your feedback. Our feedback form is very short, just write down what you want us to know :octicons-smiley-24:.
   url: https://theobald-software.typeform.com/to/CnpfiiIN
 
