@@ -1,5 +1,60 @@
 [
   {
+    "Version": "1.21.1.0",
+    "LegacyReleaseDate": "2024-05-14 16:29:37Z",
+    "Changes": [
+      {
+        "Product": "XtractForAlteryx",
+        "Component": "ODP",
+        "Message": "Fixed metadata and data retrieval for DF16_DEC and DF34_DEC"
+      }
+    ]
+  },
+  {
+    "Version": "1.21.0.8",
+    "LegacyReleaseDate": "2024-05-13 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "Table",
+        "Message": "Improved table lookup window to not allow certain characters that would otherwise lead to errors on lookup."
+      }
+    ]
+  },
+  {
+    "Version": "1.21.0.7",
+    "LegacyReleaseDate": "2024-05-13 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "ODP",
+        "Message": "Fixed metadata and data retrieval for DF16_DEC and DF34_DEC"
+      }
+    ]
+  },
+  {
+    "Version": "1.21.0.6",
+    "LegacyReleaseDate": "2024-05-13 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "Table",
+        "Message": "Fixed a bug that caused refresh metadata to not work properly\n"
+      }
+    ]
+  },
+  {
+    "Version": "1.21.0.4",
+    "LegacyReleaseDate": "2024-05-11 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "General",
+        "Message": "Reflect user changes in parameter default values"
+      }
+    ]
+  },
+  {
     "Version": "1.21.0.2",
     "LegacyReleaseDate": "2024-05-06 00:00:00Z",
     "Changes": [
