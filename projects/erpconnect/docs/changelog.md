@@ -89,7 +89,7 @@ hide:
       const row = renderRow(item);
       tableBody.appendChild(row);
     });
-    addEventListeners(); // Add event listeners after the table is populated
+    addEventListeners();
   };
 
 
