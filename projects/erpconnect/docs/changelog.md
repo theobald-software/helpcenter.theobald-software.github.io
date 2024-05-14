@@ -196,7 +196,17 @@ hide:
         window.history.pushState({}, '', newUrl);
       });
     }
-
+    
+    const clearButton = document.querySelector('.btn-clear');
+    if (clearButton) {
+      clearButton.addEventListener('click', () => {
+        filterInput.value = ''; // Clear the input field
+        filterRows(''); // Reset the filter
+        urlSearchParams.delete('filter'); // Remove the filter parameter from the URL
+        const newUrl = `${window.location.pathname}?${urlSearchParams.toString()}`;
+        window.history.pushState({}, '', newUrl);
+      });
+    }
     // Event listener for the "Show More" button
     const catalogTable = document.getElementById('catalogTable');
     if (catalogTable) {
