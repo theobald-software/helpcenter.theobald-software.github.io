@@ -1,5 +1,60 @@
 [
   {
+    "Version": "1.32.10.8",
+    "LegacyReleaseDate": "2024-05-14 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Server",
+        "Component": "General",
+        "Message": "Fixed a race condition which would not handle over server side errors"
+      }
+    ]
+  },
+  {
+    "Version": "1.32.10.7",
+    "LegacyReleaseDate": "2024-05-13 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "Table",
+        "Message": "Improved table lookup window to not allow certain characters that would otherwise lead to errors on lookup."
+      }
+    ]
+  },
+  {
+    "Version": "1.32.10.6",
+    "LegacyReleaseDate": "2024-05-13 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "ODP",
+        "Message": "Fixed metadata and data retrieval for DF16_DEC and DF34_DEC"
+      }
+    ]
+  },
+  {
+    "Version": "1.32.10.5",
+    "LegacyReleaseDate": "2024-05-13 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "Table",
+        "Message": "Fixed a bug that caused refresh metadata to not work properly\n"
+      }
+    ]
+  },
+  {
+    "Version": "1.32.10.3",
+    "LegacyReleaseDate": "2024-05-11 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "General",
+        "Message": "Reflect user changes in parameter default values"
+      }
+    ]
+  },
+  {
     "Version": "1.32.10.0",
     "LegacyReleaseDate": "2024-05-07 16:50:38Z",
     "Changes": [
