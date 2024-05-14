@@ -1,5 +1,82 @@
 [
   {
+    "Version": "6.4.2.0",
+    "LegacyReleaseDate": "2024-05-14 16:29:25Z",
+    "Changes": [
+      {
+        "Product": "BoardConnector",
+        "Component": "ODP",
+        "Message": "Fixed metadata and data retrieval for DF16_DEC and DF34_DEC"
+      }
+    ]
+  },
+  {
+    "Version": "6.4.1.4",
+    "LegacyReleaseDate": "2024-05-14 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Server",
+        "Component": "General",
+        "Message": "Fixed a race condition which would not handle over server side errors"
+      }
+    ]
+  },
+  {
+    "Version": "6.4.1.3",
+    "LegacyReleaseDate": "2024-05-13 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "Table",
+        "Message": "Improved table lookup window to not allow certain characters that would otherwise lead to errors on lookup."
+      }
+    ]
+  },
+  {
+    "Version": "6.4.1.2",
+    "LegacyReleaseDate": "2024-05-13 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "ODP",
+        "Message": "Fixed metadata and data retrieval for DF16_DEC and DF34_DEC"
+      }
+    ]
+  },
+  {
+    "Version": "6.4.1.1",
+    "LegacyReleaseDate": "2024-05-13 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "Table",
+        "Message": "Fixed a bug that caused refresh metadata to not work properly\n"
+      }
+    ]
+  },
+  {
+    "Version": "6.4.1.0",
+    "LegacyReleaseDate": "2024-05-11 20:06:45Z",
+    "Changes": [
+      {
+        "Product": "BoardConnector",
+        "Component": "Server",
+        "Message": "Parameter HTTP API: Respect user changes in default values (was broken since 6.4)"
+      }
+    ]
+  },
+  {
+    "Version": "6.4.0.5",
+    "LegacyReleaseDate": "2024-05-11 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "General",
+        "Message": "Reflect user changes in parameter default values"
+      }
+    ]
+  },
+  {
     "Version": "6.4.0.3",
     "LegacyReleaseDate": "2024-05-07 00:00:00Z",
     "Changes": [
