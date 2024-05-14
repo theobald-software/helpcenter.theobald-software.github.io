@@ -48,5 +48,5 @@ yunIO offers the following {{ components }} to cover a wide range of integration
 | [{{ bapi }}](function-modules-and-bapis/index.md) | Execute BAPIs and Function Modules. |
 | [{{ table }}](tables-and-views/index.md) | Extract data from SAP tables and views. |
 | [{{ transaction }}](transactions/index.md) | Execute SAP transactions without SAP GUI interaction. |
-| [{{ report }}](reports/index.md) | Extract SAP ABAP reports. | 
+| [{{ report }}](reports/index.md) | Extract data from SAP ABAP reports. | 
 
