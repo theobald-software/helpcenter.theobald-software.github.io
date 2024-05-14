@@ -3,7 +3,7 @@ title: SAP Customization
 description: SAP user rights, customization and installation of custom function modules
 ---
 
-This section covers user rights and customization topics for the SAP Basis.<br>
+This section covers [user rights](sap-authority-objects.md) and customization topics for the SAP Basis.<br>
 For information on [supported SAP systems](../setup/requirements.md/#supported-sap-systems-and-releases) and other IT topics, see [Setup](../setup/index.md).
 
 {% include "sap-customizing/sap-customization.md" %}

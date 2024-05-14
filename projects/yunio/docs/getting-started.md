@@ -146,7 +146,6 @@ Follow the steps below to run services:
 	
 	!!! note
 		This approach only works with simple services that do not use input parameters.
-		For more information about running services and passing parameters, see [Documentation: Run Services](./documentation/run-services.md).
 
 
 === ":products-yunio: Testrun Services in yunIO"
