@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Set max rows of Query to 200.000",
-        "Component": "LINQtoERP",
-        "Product": "ERPConnect"
-    }
-]

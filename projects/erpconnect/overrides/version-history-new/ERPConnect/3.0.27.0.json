@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Introduced R3Connection.AllowStartProgram to enable SAP to start an application via RFC (Required for CAD-Dektop-Integration)",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

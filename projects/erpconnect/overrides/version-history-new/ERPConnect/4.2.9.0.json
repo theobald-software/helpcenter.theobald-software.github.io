@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for missing segment values in some cases if schema and XML data were loaded",
-        "Component": "Idoc",
-        "Product": "ERPConnect"
-    }
-]

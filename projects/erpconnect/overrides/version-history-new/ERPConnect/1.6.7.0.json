@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Bei der ReadTable-Klasse wird bei SAP-Releases < 4.7 eine Exception geworfen bei RetrieveAllFieldsOfTable. Das liegt an dem DDIF_FIELDINFO_GET-Baustein und den Nested Structures",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

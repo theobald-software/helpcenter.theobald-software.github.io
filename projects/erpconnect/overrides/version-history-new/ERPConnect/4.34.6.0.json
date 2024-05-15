@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixes for tables in Import/Export/Changing parameters, structures with STRING/XSTRING etc.",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

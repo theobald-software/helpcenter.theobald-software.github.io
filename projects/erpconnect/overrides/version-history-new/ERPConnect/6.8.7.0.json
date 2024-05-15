@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Classic RFC: Fixed memory leak in tRFC (e. g. Idoc.Send())",
-        "Component": "RFC Client",
-        "Product": "ERPConnect"
-    }
-]

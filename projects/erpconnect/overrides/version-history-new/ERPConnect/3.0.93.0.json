@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix: SaveToXML() and LoadFromXML() didn't work properly for function with multi-nested import parameters",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

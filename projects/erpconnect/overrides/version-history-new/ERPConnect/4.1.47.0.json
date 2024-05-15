@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix of small memory leak in R3Connection.Ping()",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

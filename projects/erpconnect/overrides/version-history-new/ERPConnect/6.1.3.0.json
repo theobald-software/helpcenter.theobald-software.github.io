@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Improved error message for missing/corrupt librfc32.dll",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

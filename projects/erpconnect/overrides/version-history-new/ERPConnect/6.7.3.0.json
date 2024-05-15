@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "ReadTable: Fix for determining lengths of columns",
-        "Component": "RFC Client",
-        "Product": "ERPConnect"
-    }
-]

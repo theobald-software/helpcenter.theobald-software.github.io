@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "XML traces are now written to log directory if logging is enabled",
-        "Component": "RFCServer",
-        "Product": "ERPConnect"
-    }
-]

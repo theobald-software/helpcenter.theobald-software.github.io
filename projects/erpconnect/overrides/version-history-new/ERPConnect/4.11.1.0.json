@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Implemented R3Connection.Ping() over NW RFC API",
-        "Component": "RFC Client",
-        "Product": "ERPConnect"
-    }
-]

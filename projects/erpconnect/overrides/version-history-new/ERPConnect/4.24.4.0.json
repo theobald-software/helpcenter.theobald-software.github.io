@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for sending integers & floats in tables to big endian systems",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

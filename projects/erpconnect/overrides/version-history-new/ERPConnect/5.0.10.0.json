@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "RFCServerFunction.SaveToXML(): replacing invalid control characters with space instead of dropping them to preserve lengths & offsets",
-        "Component": "RFCServer",
-        "Product": "ERPConnect"
-    }
-]

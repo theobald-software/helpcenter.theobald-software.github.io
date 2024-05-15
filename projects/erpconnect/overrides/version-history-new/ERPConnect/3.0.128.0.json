@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for multi-nested export parameters under SOAP (no impact on RFC protocol)",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Problem bei negativen Zahlen beim Baustein BAPI_FI_TV_RECEIPT_GETDETAIL",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

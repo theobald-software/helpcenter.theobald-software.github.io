@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Automatic name conversion in LINQ when dropping two functions into the same context with structures that are named equally",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "RFCStructureCollection no longer implements ITypedList",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

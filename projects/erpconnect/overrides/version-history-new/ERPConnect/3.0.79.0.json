@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "ERPConnectPocket will always throw ERPException instead of regular Exceptions",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

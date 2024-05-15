@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Connection strings: Fix for backslashes inside quotes (broken since 6.5.2)",
-        "Component": "RFC Client",
-        "Product": "ERPConnect"
-    }
-]

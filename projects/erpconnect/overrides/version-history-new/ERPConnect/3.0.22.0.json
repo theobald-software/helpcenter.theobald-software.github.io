@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Better error message when BW loading processes fail due to conversion problems",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

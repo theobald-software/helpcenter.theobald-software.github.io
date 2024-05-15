@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for binding LINQ sources to controls: No other columns than the original source columns will appear in control",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for MDX queries with hierarchies to be executed with MDXExecuter class",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

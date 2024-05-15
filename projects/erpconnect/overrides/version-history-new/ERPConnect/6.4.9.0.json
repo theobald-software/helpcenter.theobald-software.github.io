@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "NWRFC: Fix for table / deep structure imports (bug introduced in 6.4.5)",
-        "Component": "RFC Client",
-        "Product": "ERPConnect"
-    }
-]

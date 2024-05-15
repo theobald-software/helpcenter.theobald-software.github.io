@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for sending Table parameters to big endian systems",
-        "Component": "RFC Client",
-        "Product": "ERPConnect"
-    }
-]

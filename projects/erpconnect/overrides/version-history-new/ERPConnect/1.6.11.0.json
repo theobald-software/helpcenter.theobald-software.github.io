@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "\"Returns\" property of Transaction class  not accessible due to error in obfuscator tool",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

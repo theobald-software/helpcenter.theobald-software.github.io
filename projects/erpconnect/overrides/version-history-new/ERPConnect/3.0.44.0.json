@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for receiving AND sending unicode data within the same thread (e.g. when calling a client function within the IncomingIDoc event)",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

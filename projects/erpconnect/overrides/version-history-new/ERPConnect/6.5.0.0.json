@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "NWRFC: Added support for RFC callbacks",
-        "Component": "RFC Client",
-        "Product": "ERPConnect"
-    }
-]

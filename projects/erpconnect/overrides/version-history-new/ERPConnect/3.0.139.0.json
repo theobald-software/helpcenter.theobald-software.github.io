@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Byte[] values are handled correctly when converting an RFCTable object to a DataTable object with the usage of ToADOTable()",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Concurrent calls from different AppDomains within the same process are no longer supported (classic RFC)",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

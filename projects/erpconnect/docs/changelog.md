@@ -58,25 +58,17 @@ hide:
     }
   };
 
-  // Function to fetch additional data for a specific version
-  const fetchAdditionalData = async (version) => {
-    try {
-      const response = await fetch(`../version-history-new/ERPConnect/${version}.json`);
-      const additionalData = await response.json();
-      return additionalData;
-    } catch (error) {
-      console.error(`Error fetching additional data for ${version}:`, error);
-      return null;
-    }
-  };
-
   // Function to render a row in the table
   const renderRow = (item) => {
     const row = document.createElement('tr');
+    if(item.IsBreaking) {
+      row.setAttribute('class', 'is-breaking'); 
+    }
     row.innerHTML = `
       <td>${item.Version}</td>
       <td>${item.LegacyReleaseDate.split(' ')[0]}</td>
-      <td><button class="showMoreBtn" style="cursor: pointer; text-decoration: underline;">Show More</button></td>
+      <td>${item.Changes[0].Component}</td>
+      <td>${item.Changes[0].Message}</td>
     `;
     return row;
   };
@@ -89,7 +81,7 @@ hide:
       const row = renderRow(item);
       tableBody.appendChild(row);
     });
-    addEventListeners();
+    addEventListeners(); // Add event listeners after the table is populated
   };
 
 
@@ -196,7 +188,7 @@ hide:
         window.history.pushState({}, '', newUrl);
       });
     }
-    
+
     const clearButton = document.querySelector('.btn-clear');
     if (clearButton) {
       clearButton.addEventListener('click', () => {
@@ -207,34 +199,16 @@ hide:
         window.history.pushState({}, '', newUrl);
       });
     }
-    // Event listener for the "Show More" button
+    //Event listener for the "Show More" button
     const catalogTable = document.getElementById('catalogTable');
     if (catalogTable) {
-      catalogTable.addEventListener('click', async (event) => {
-        if (event.target.classList.contains('showMoreBtn')) {
+
           // Your existing logic here
           const versionRow = event.target.closest('tr');
           const versionCell = versionRow.querySelector('td:first-child');
           const version = versionCell.textContent;
-          const additionalData = await fetchAdditionalData(version);
-          if (additionalData) {
-            console.log("ReleaseNote", additionalData);
+          
 
-            additionalData.forEach(dataObj => {
-              event.target.textContent = `${dataObj.Component}`;
-              const messageCell = document.createElement('td');
-              messageCell.textContent = dataObj.Message;
-              versionRow.appendChild(messageCell);
-
-              if (dataObj.ReleaseNote !== undefined) {
-                const noteCell = document.createElement('td');
-                noteCell.innerHTML = parseMarkdown(dataObj.ReleaseNote);
-                versionRow.appendChild(noteCell);
-              }
-            })
-          }
-        }
-      });
     }
   };
 

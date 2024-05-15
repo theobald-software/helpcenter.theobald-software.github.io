@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "RFCServer connection broke down when connection to other server within the same process could not be established",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

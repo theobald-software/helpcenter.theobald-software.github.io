@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "PrimaryKeyPackaging in ReadTable class is available for table with more than 6 primary key columns",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

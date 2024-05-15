@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Lowered probability of name collisions for XML trace files",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for uploading data to more than one single BI InfoPackage at the same time (BWLoader class)",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

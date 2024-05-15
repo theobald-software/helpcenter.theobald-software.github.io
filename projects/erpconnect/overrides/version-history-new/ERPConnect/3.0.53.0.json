@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for crash of converting decimal data from SAP to .NET on Chinese systems",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

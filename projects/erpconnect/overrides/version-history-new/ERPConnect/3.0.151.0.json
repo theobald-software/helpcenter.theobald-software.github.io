@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Corrected memory deallocation for RFCServer Export parameters",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

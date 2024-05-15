@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Korrektur bei Date-NUM, Time-Datentypen in Verbindung mit Unicode",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Added support for BCD, STRING and XSTRING",
-        "Component": "NWRFC",
-        "Product": "ERPConnect"
-    }
-]

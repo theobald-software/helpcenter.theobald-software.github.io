@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for ERPException.ABAPException with Changing parameters (was always null since 4.5.1.x)",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

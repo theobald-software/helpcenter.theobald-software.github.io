@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for LINQToERP setup on 64 bit",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Changed default install directory to \"Program Files\ERPConnect\" on x64 systems",
-        "Component": "Setup",
-        "Product": "ERPConnect"
-    }
-]

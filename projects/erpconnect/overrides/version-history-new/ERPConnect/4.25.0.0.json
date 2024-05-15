@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Marked ClientProtocol.HttpSoap as obsolete",
-        "Component": "RFC Client",
-        "Product": "ERPConnect"
-    }
-]

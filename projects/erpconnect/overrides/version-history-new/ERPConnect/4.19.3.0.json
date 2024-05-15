@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Obsolete method ERPException.GetObjectData() withdrawn",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

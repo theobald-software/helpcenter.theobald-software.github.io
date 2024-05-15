@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Added R3Connection.ToConnectionString() and R3Connection.AppendToConnectionString()",
-        "Component": "RFC Client",
-        "Product": "ERPConnect"
-    }
-]

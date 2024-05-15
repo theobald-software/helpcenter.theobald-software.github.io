@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed default value of R3Connection.MultithreadingEnvironment (was false)",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

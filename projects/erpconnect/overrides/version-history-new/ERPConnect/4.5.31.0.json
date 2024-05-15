@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Added support for floating point components in Imports/Exports/Changings structures with big endian systems",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

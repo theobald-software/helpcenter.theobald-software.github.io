@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Function: Fix for empty tables - pass (bug introduced in 5.4.9)",
-        "Component": "LINQtoERP",
-        "Product": "ERPConnect"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for ReadTable extraction with more than 20 mio rows",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

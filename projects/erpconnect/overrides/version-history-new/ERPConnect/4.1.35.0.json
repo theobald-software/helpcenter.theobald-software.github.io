@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix: MessageType (MEYTYP) was set incorrectly when loading IDoc schemas",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

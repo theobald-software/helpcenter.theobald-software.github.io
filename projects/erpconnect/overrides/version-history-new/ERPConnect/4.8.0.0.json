@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Changed NetWeaver RFC SDK support from one library to dedicated libraries for each .NET Framework version",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

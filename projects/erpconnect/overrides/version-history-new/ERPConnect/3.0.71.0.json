@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "ReuseClass flag can be set in LINQ context to enable reuse of generated classes (e.g. two functions that have the same table parameter now can share one single structure class)",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "NW: Fix for codepage detection",
-        "Component": "RFC Client",
-        "Product": "ERPConnect"
-    }
-]

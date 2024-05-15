@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Changed type mapping for INT2 from int to short",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Classic RFC: Fixed memory leak (receiving STRING/XSTRING/XMLDATA)",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

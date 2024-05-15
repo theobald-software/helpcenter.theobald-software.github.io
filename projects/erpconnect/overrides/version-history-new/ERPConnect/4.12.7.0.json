@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Correction for ReadTable class when using PrimaryKeyPackaging",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

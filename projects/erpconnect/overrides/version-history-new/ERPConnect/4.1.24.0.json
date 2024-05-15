@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for fetching metadata on systems with SAP_BASIS 72L",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

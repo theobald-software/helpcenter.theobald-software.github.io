@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Added RFCServer.Logged event to get RFC server log messages without activating traces",
-        "Component": "RFCServer",
-        "Product": "ERPConnect"
-    }
-]

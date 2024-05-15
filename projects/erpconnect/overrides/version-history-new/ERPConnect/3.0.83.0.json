@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for BWCube: method SaveToXML() crashed with hierarchies that contain a & character",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]
