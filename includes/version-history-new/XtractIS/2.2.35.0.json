@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Added substitution date to the settings to replace bad date values during automatic date conversion",
-        "Component": "DeltaQ",
-        "Product": "XtractIS"
-    }
-]

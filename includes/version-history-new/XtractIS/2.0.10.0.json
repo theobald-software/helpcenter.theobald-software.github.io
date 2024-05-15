@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Improved error message if no or a corrupt version of librfc32.dll resides on the system",
-        "Component": "General",
-        "Product": "XtractIS"
-    }
-]

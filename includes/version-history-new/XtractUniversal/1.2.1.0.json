@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for metadata of extractions with output column transformation",
-        "Component": "BW Cube",
-        "Product": "XtractUniversal"
-    }
-]

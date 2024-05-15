@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Improved XML logging of RFC_SYSTEM_INFO, fix for SAP_BASIS 72L",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

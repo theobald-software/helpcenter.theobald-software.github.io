@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for BW Query variables when using the BEX mode (variables got lost under certain circumstances)",
-        "Component": "BW Cube",
-        "Product": "XtractIS"
-    }
-]

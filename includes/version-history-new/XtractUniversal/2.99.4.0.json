@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Improved error messages for failed HANA connection tests.",
-        "Component": "Destinations",
-        "Product": "XtractUniversal"
-    }
-]

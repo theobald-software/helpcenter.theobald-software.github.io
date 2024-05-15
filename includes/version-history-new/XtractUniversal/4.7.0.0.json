@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Disabled TLS 1.1, enabled TLS 1.3",
-        "Component": "Security",
-        "Product": "XtractUniversal"
-    }
-]

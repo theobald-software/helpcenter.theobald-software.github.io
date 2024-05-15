@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for natural hierarchy representation of hierarchies with higher NodeIDs than the number of nodes",
-        "Component": "Hierarchy",
-        "Product": "BoardConnector"
-    }
-]

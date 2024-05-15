@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for date zero replacement default (bug introduced in 5.17.0)",
-        "Component": "Destinations",
-        "Product": "XtractUniversal"
-    }
-]

@@ -1,8 +1,0 @@
-[
-    {
-        "Message": "Updated transaction, existing transaction services need to be re-created.",
-        "Component": "General",
-        "Product": "YunIO",
-        "ReleaseNote": "- default values are no longer sent when replaying transactions\n- added diagnostic output / tracing"
-    }
-]

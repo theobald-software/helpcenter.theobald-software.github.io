@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Salesforce: Floating point values are now supported (they will be of type Text in Salesforce due to Number limitations)",
-        "Component": "Destinations",
-        "Product": "XtractUniversal"
-    }
-]

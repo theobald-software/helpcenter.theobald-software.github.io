@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug that caused obscure error messages in case of special library errors ",
-        "Component": "BAPI",
-        "Product": "Theobald.Extractors"
-    }
-]

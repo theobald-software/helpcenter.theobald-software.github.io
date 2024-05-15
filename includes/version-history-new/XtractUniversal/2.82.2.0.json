@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Disabled caching for all update types except \"full\"",
-        "Component": "DeltaQ",
-        "Product": "XtractUniversal"
-    }
-]

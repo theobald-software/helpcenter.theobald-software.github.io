@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for unwanted serialization info in DeltaQ result tables.",
-        "Component": "DeltaQ",
-        "Product": "XtractIS"
-    }
-]

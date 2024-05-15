@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for primary key with all extraction types except Hierarchy, Table and Query (broken since 3.0).",
-        "Component": "General",
-        "Product": "XtractUniversal"
-    }
-]

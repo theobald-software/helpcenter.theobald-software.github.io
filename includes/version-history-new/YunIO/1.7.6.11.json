@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug that caused errors during metadata retrieval if the function module contains include structures that don't exist",
-        "Component": "BAPI",
-        "Product": "Theobald.Extractors"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Increased the number of iterations for PBKDF2.\nImplemented constant time byte array comparison.\nAdded test cases for constant time array comparison.",
-        "Component": "General",
-        "Product": "Common"
-    }
-]

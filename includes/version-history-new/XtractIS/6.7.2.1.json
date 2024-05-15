@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug where metadata refresh did not work.",
-        "Component": "Table",
-        "Product": "Theobald.Extractors"
-    }
-]

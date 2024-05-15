@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for Active Directory login (failed always)",
-        "Component": "Security",
-        "Product": "XtractUniversal"
-    }
-]

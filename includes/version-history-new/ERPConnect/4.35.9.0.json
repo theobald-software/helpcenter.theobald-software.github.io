@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "XML dumps are only created if R3Connection.Logging = true",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

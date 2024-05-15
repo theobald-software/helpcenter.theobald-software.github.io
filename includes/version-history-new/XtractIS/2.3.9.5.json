@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Bug fix for non-aggregated dimensions (dimension type 4)",
-        "Component": "BW Cube",
-        "Product": "XtractKernel"
-    }
-]

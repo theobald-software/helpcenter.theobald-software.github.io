@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed occasional crashes in cached Cube and Bapi extractions. These Extraction types can contain empty cells, even in numeric columns. The cache did not handle this case and tried parse the empty string a a number. Added special cases to the cache reader.",
-        "Component": "General",
-        "Product": "XtractUniversal"
-    }
-]

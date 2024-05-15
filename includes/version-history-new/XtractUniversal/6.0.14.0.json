@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed crashes when fetching parameter and result column information for various extraction types.",
-        "Component": "Server",
-        "Product": "XtractUniversal"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug that caused the metadata API to yield an empty list of columns. This also affects the Alteryx Plugin and Power BI Connector",
-        "Component": "Server",
-        "Product": "XtractUniversal"
-    }
-]

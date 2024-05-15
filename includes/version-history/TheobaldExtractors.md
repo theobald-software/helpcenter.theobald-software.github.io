@@ -1,5 +1,12 @@
 |Version|Date    |Component   |Description|
 |:-----:|:------:|:----------:|:----------|
+|2.0.6 [M]|2024-05-13|Table|Improved table lookup window to not allow certain characters that would otherwise lead to errors on lookup.|
+|2.0.5 [L]|2024-05-13|ODP|Fixed metadata and data retrieval for DF16_DEC and DF34_DEC|
+|2.0.4 [L]|2024-05-13|Table|Fixed a bug that caused refresh metadata to not work properly |
+|2.0.3 [L]|2024-05-11|General|Reflect user changes in parameter default values|
+|2.0.2 [L]|2024-05-06|BW Cube|Fix dimension on columns deserialization|
+|2.0.1 [L]|2024-05-06|BW Cube|Add backward-compatibility for dimension on columns feature|
+|[2.0.0 [M]](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-2.0.0)|2024-05-06|General|New selection & parameter system([Release note](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-2.0.0))|
 |1.53.18 [H]|2024-04-25|TableCDC|Delta extractions now only fetch data up to the maximum log table sequence number at the start of the extraction to avoid cursor concurrency conflicts with simultaneous inserts. Update of /THEO/CDC required.|
 |1.53.17 [L]|2024-04-18|BW Cube|MDX: Members named "all" are no longer removed from slicing|
 |1.53.16 [L]|2024-04-16|Report|Fixed a visual bug where when scrolling the selection screen some parameters would have values from other parameters displayed. Fixed a bug where double clicking the 'Load Preview' button would cause an error.|

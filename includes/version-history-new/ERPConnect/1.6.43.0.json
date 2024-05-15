@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Transaction classes converted field values to upper case when it should not do",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

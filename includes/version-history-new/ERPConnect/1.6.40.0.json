@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "E_HANDLE ComException fixed. Occured when trying to use XML strings as import parameter with Length = 0",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

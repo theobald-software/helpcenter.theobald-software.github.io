@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for table types in import parameters",
-        "Component": "BAPI",
-        "Product": "XtractIS"
-    }
-]

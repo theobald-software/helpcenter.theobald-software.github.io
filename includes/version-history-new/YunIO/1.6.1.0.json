@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Swagger/OpenAPI: Removed writeOnly from whereClause",
-        "Component": "Designer",
-        "Product": "YunIO"
-    }
-]

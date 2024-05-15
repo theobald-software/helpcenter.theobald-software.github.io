@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Removed R3Connection.IsBusy (has been marked as obsolete since 27.03.2014)",
-        "Component": "RFC Client",
-        "Product": "ERPConnect"
-    }
-]

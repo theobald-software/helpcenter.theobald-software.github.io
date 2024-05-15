@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Refactored SharePoint destination, added conversion classes, completed code analysis.",
-        "Component": "Destinations",
-        "Product": "XtractUniversal"
-    }
-]

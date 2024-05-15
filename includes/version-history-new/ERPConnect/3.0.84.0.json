@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "NULL values in IDoc fields are now generating an ERPException ",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

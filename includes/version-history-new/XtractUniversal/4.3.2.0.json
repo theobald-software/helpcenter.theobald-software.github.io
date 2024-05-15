@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixes for showing error messages while retrieving available Table function modules (e. g. missing authorizations for ENLFDIR)",
-        "Component": "Designer",
-        "Product": "XtractUniversal"
-    }
-]

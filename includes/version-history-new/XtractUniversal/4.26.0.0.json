@@ -1,8 +1,0 @@
-[
-    {
-        "Message": "Azure Storage: Added support for script expressions in folder names",
-        "Component": "Destinations",
-        "Product": "XtractUniversal",
-        "ReleaseNote": "# Supported custom script variables for folder names\n\n* `Source.Name`\n* `Extraction.ExtractionName`\n* `Extraction.Type`\n* `Extraction.SapObjectName`\n* `Extraction.Context` (only contains values for ODP extractions)\n* `Extraction.Timestamp`\n\n# Additional changes\n\n* File splitting uses the JEDEC definition of MB now, i. e. it counts powers of two instead of ten (all destinations)\n* Folder name for Azure Storage is written to extraciton log"
-    }
-]

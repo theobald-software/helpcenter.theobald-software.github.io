@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Bugfix for using floating point columns in a LINQ table",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

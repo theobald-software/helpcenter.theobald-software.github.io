@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for default console encoding with preambles",
-        "Component": "General",
-        "Product": "Theobald.Server"
-    }
-]

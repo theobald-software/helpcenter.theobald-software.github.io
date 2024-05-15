@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "SOAP request/response logs are written to R3Connection.LogDir now instead of working directory",
-        "Component": "RFC Client",
-        "Product": "ERPConnect"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Added support for Visual Studio LightSwitch (OData)",
-        "Component": "Destinations",
-        "Product": "XtractUniversal"
-    }
-]

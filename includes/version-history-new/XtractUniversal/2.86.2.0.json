@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for HTTP content type when running extractions with push destinations",
-        "Component": "Server",
-        "Product": "XtractUniversal"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Parquet: Added compatibility for BigQuery naming requirements",
-        "Component": "Destinations",
-        "Product": "XtractUniversal"
-    }
-]

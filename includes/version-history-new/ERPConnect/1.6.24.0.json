@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Added looging functions (R3Connection.LogDir and R3Connection.Log())",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

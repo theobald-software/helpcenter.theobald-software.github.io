@@ -21,4 +21,14 @@
 
     :material-clock-time-two-outline: 2024-04-08
 
+-   **More Support for Nintex Integration**
+
+    ---
+
+    A new setting is introduced that makes service definitions compatible with the OpenAPI format for Nintex xtensions, see [Server Settings - OpenAPI Kind](documentation/server-settings.md/#openapi-target-kind).
+
+    ---
+
+    :material-clock-time-two-outline: 2023-11-13
+
 </div>

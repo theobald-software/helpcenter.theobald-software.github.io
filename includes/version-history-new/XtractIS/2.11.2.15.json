@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for number of decimals in BW cubes with data type CURR. Set to 3 regardless of SAP BW metadata.",
-        "Component": "BW Cube",
-        "Product": "XtractKernel"
-    }
-]

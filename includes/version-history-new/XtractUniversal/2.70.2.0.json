@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "File CSV: Fix for 'column separator after last row'",
-        "Component": "Destinations",
-        "Product": "XtractUniversal"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Classic: Fix for codepage/endianess",
-        "Component": "RFCServer",
-        "Product": "ERPConnect"
-    }
-]

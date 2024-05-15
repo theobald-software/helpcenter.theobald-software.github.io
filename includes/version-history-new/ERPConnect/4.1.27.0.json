@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for non-ASCII characters in structures with STRING/XSTRING components/table types on non-Unicode systems",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

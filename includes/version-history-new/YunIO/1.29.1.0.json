@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug in the designer run dialog, which serialized service payload's number type as string to JSON .",
-        "Component": "Designer",
-        "Product": "YunIO"
-    }
-]

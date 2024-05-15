@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix: BW Loader crashed with exception when trying to upload an empty resultset",
-        "Component": "BW Loader",
-        "Product": "XtractIS"
-    }
-]

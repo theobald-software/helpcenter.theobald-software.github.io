@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Process-Deadlock when trying to load XML idoc files without having loaded a XSD file before",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

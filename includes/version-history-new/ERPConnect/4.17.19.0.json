@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "New implementation for passing RFCTYPE.BYTE values as hexadecimal strings",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

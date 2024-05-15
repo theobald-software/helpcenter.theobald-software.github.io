@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Correction for for AutoCloseConnection property of LINQ context, which did not work properly in some cases",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

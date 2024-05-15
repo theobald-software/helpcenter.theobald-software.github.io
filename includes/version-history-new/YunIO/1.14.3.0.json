@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Setup now checks if there are any running processes and offers option to abort setup.",
-        "Component": "General",
-        "Product": "YunIO"
-    }
-]

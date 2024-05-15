@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for X characters in measures of BW queries",
-        "Component": "RFC Client",
-        "Product": "ERPConnect"
-    }
-]

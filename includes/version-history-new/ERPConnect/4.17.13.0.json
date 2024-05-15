@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "All data conversion/parsing of Table parameters is now performed by ERPConnect instead of the classic RFC SDK.",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

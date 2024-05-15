@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "German special characters (Umlaute) are now correctly converted within nested structures",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

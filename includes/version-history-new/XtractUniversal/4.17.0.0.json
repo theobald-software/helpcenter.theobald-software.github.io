@@ -1,8 +1,0 @@
-[
-    {
-        "Message": "The Parquet destination now offers a compatibility mode for Apache Spark",
-        "Component": "Destinations",
-        "Product": "XtractUniversal",
-        "ReleaseNote": "# Xtract Universal 4.17.0\n\nThe Parquet destination now offers a compatibility mode for Apache Spark\n\n- Time values will not be converted and saved as strings\n- Single byte values (UINT8 / INT1) will be saved as INT16"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug where during authentication the users groups where not checked correctly.",
-        "Component": "Designer",
-        "Product": "XtractUniversal"
-    }
-]

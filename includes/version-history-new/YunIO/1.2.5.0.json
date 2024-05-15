@@ -1,8 +1,0 @@
-[
-    {
-        "Message": "Security fix: \"User is allowed to log in\" is also checked when running services now",
-        "Component": "Runtime",
-        "Product": "YunIO",
-        "IsCritical": true
-    }
-]

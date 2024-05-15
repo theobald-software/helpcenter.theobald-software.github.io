@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Refactoring for the certificate pinning and TLS error handling interfaces",
-        "Component": "General",
-        "Product": "Common"
-    }
-]

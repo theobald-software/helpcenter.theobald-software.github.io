@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix: SaveToXML and LoadFromXML crashed with Byte[] parameters",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

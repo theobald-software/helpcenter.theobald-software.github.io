@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Bug fix when executing MDX and using two properties of different dimensions with the same name",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

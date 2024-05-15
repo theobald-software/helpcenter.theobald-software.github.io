@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug where field descriptions of views would not be fetched on newer SAP BW systems.",
-        "Component": "Table",
-        "Product": "Theobald.Extractors"
-    }
-]

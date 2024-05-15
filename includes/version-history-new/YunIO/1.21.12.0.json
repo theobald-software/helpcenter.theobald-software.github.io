@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Transaction: Fixed a bug that caused the service execution to fail when the result contained non-ascii data",
-        "Component": "Runtime",
-        "Product": "YunIO"
-    }
-]

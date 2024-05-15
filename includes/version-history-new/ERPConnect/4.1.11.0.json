@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for CreateFunction() with ECC5.0 and older systems",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

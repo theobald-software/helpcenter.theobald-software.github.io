@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Improved performance for big objects in the run dialog for non-table services.",
-        "Component": "Designer",
-        "Product": "YunIO"
-    }
-]

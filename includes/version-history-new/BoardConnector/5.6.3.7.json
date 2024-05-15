@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Added Access-Control-Allow-Origin header in responses for legacy implementation",
-        "Component": "General",
-        "Product": "Theobald.Server"
-    }
-]

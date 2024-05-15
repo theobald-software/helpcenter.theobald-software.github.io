@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Workaround for 1 byte data loss resulting from incorrect lengths of table columns (datatype raw) in Unicode environments",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

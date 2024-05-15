@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Added LINQ to SAP support to Visual Studio 2017",
-        "Component": "LINQtoERP",
-        "Product": "ERPConnect"
-    }
-]

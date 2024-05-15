@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for third party mode when columns are spread across table buffer rows",
-        "Component": "OHS",
-        "Product": "Theobald.Extractors"
-    }
-]

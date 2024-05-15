@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug where an unsupported file type was selectable in S3 and Azure Storage destinations.\nFixed an issue in the Destination-Details window, where the resizing did not work properly.\nFixed the logging when running extractions with column encryption enabled.",
-        "Component": "General",
-        "Product": "XtractUniversal"
-    }
-]

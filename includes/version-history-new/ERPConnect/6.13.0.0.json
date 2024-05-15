@@ -1,8 +1,0 @@
-[
-    {
-        "Message": "Various small API changes (see release notes for details)",
-        "Component": "General",
-        "Product": "ERPConnect",
-        "ReleaseNote": "# ERPConnect 6.13.0\n\n* fix for parameters with decfloat types\n* added RFCParameter.SetValueInternal()\n* marked RFCParameter.GetLength() as obsolete\n* removed RFCServerFunctionCollection.Find() (obsolete)\n* removed RFCTableColumn.FixedLength (obsolete) - this also affects LINQtoERP, please regenerate your code"
-    }
-]

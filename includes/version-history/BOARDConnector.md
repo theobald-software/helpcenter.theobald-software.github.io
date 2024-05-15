@@ -1,5 +1,8 @@
 |Version|Date    |Component   |Description|
 |:-----:|:------:|:----------:|:----------|
+|6.4.2 [L]|2024-05-14|ODP|Fixed metadata and data retrieval for DF16_DEC and DF34_DEC|
+|6.4.1 [L]|2024-05-11|Server|Parameter HTTP API: Respect user changes in default values (was broken since 6.4)|
+|6.4.0 [M]|2024-05-06|General|Use new parameter system|
 |6.3.1 [L]|2024-04-30|BAPI|Add support for S4H cloud systems|
 |[6.3.0 [L]](https://helpcenter.theobald-software.com/release-notes/BOARDConnector-6.3.0)|2024-04-11|Server|Introduce new endpoint to run/start extractions ([Release note](https://helpcenter.theobald-software.com/release-notes/BOARDConnector-6.3.0))|
 |6.2.3 [L]|2024-02-27|BW Cube|Fixed a bug in the config converter that caused broken key figures and custom column order for extractions originally created in version 2.11.0 and before.|

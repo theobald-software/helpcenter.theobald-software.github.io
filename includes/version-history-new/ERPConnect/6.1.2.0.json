@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for WHERE clause on some SAP releases that don't support splitting of string literals (e. g. 740 SP 4)",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

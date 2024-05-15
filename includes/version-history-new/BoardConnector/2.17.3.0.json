@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Undefined execution states are set to \"finished with errors\" at server startup",
-        "Component": "Server",
-        "Product": "BoardConnector"
-    }
-]

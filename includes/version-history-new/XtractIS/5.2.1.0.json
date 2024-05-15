@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Table Join component is now deprecated. Please use the Table component for joining tables",
-        "Component": "Table Join",
-        "Product": "XtractIS"
-    }
-]

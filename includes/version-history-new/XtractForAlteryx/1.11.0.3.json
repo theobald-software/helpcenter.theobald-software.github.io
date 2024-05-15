@@ -1,8 +1,0 @@
-[
-    {
-        "Message": "Introduced new messaging system",
-        "Component": "WPF",
-        "Product": "Common",
-        "ReleaseNote": "##Theobald.Common 2.14.6\n- Introduced new WPF window based messaging system, which allows the displaying of message windows always on screen's top most position, overlapping all current opened windows. \n- The messages are displayed always on the center of the screen\n- No owner parameter is needed, as it considers always the current active window for it.\n- All calls can be done through TheoMessageHelper.\n- MessageBoxHelper is still available, but was marked as obsolete."
-    }
-]

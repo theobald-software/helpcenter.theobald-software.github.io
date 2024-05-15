@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for handling correctly stage name's case sensitiveness on Snowflake destination",
-        "Component": "Destinations",
-        "Product": "XtractUniversal"
-    }
-]

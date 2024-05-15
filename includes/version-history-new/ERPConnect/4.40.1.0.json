@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for tables larger than 2 GB (64-bit only)",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

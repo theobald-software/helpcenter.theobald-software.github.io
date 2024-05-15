@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Authorization can now be checked via Authorizing event before accepting a function call ",
-        "Component": "RFCServer",
-        "Product": "ERPConnect"
-    }
-]

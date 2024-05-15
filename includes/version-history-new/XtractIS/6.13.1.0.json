@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed several issues related to the conversion of legacy BAPI tables ",
-        "Component": "BAPI",
-        "Product": "XtractIS"
-    }
-]

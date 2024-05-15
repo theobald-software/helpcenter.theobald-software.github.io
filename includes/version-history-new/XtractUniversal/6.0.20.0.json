@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed SSRS destination writing invalid JSON.",
-        "Component": "Destinations",
-        "Product": "XtractUniversal"
-    }
-]

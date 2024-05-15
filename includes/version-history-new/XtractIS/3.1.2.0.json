@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Updated build tools to MSBuild 15.0",
-        "Component": "General",
-        "Product": "XtractIS"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for RFCFunction.LoadFromXML() and characters with enconding value < 0x20",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

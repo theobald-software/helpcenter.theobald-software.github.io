@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "NWRFC: Fixed memory leak in tRFC / qRFC (e. g. Idoc.Send())",
-        "Component": "RFC Client",
-        "Product": "ERPConnect"
-    }
-]

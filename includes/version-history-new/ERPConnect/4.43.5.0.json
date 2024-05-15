@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "NW: Fix for null-terminators in imports/exports/changings of ABAP type string",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

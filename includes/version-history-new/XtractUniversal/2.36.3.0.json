@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed data duplication when skipping Null values in Tableau destination",
-        "Component": "Destinations",
-        "Product": "XtractUniversal"
-    }
-]

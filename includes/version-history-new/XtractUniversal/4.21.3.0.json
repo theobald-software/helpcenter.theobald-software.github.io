@@ -1,8 +1,0 @@
-[
-    {
-        "Message": "UI fixes and improvements",
-        "Component": "Designer",
-        "Product": "XtractUniversal",
-        "ReleaseNote": "## Xtract Universal 4.21.3\n\n* Fixed issue in connect window, that prevented connection if hitting enter instead of clicking on the confirm button\n* Fixed issue that would not enable the certificate selection button on window start even if HTTPS was activated in Server Settings - Web Server\n* Improvement for access management control for better displaying access levels. So when checking any access level, all its lower levels are automatically checked and when unchecking, its upper levels are automatically unchecked. \n* Deleting multiple extractions now is correctly supported through the main window\n\n"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed text encoding of TIDs (NWRFC)",
-        "Component": "RFC Client",
-        "Product": "ERPConnect"
-    }
-]

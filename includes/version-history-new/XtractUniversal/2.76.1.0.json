@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "DB2 & Vertica: improved SQL lengths for NUMC and RAW (were larger than neccessary)",
-        "Component": "Destinations",
-        "Product": "XtractUniversal"
-    }
-]

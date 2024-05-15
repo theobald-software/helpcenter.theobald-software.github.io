@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "SAP connections are stored in config/sources now, as JSON files",
-        "Component": "General",
-        "Product": "XtractUniversal"
-    }
-]

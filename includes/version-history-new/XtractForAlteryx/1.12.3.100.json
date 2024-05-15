@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for starving the threadpool while waiting for spawned thread",
-        "Component": "General",
-        "Product": "Common"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for memory leaks in R3Connection.ConfirmTID() and RFCFunction.Execute(tid)",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

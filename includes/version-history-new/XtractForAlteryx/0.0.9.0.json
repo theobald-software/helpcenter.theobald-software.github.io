@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed an error that caused cubes not to be loaded after selection.",
-        "Component": "BW Cube",
-        "Product": "XtractForAlteryx"
-    }
-]

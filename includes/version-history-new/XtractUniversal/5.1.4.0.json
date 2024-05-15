@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for uploading data into Snowflake when path or file have white spaces or special characters",
-        "Component": "Destinations",
-        "Product": "XtractUniversal"
-    }
-]

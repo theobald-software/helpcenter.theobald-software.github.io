@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for General Settings window, in order to display cache configuration correctly",
-        "Component": "Designer",
-        "Product": "BoardConnector"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for Unicode big endian systems",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

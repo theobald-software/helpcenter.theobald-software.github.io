@@ -2,10 +2,10 @@
 
 # Project information
 site_name: Xtract IS HelpCenter
-#site_url: http://erpconnect.theobald-software.com/
+site_url: https://helpcenter.theobald-software.com/xtract-is/
 #site_author: Valerie Schipka
 site_description: >-
-  Xtract IS is a powerful SAP plug-in for SQL Server Integration Services to extract mass data.<br>
+  Xtract IS is a powerful SAP plug-in for SQL Server Integration Services to extract mass data.
   Learn how to use Xtract IS by browsing our documentation, articles and more.
 
 # Repository
@@ -13,7 +13,7 @@ site_description: >-
 #repo_url: https://github.com/theobald-software/oh.theobald-software.github.io.git
 
 # Copyright
-copyright: Copyright &copy; 2024 Theobald Software GmbH <br> <span style="color:#ED1A33"><a  style="color:#ED1A33" href="https://theobald-software.com/en/privacy-policy/" target="_blank" rel="noopener">privacy policy</a> - <a  style="color:#ED1A33" href="https://theobald-software.com/en/legal-notice" target="_blank" rel="noopener">legal notice</a> - <a style="color:#ED1A33" href="https://theobald-software.com/en/" target="_blank" rel="noopener">website</a></span>
+copyright: Copyright &copy; 2024 Theobald Software GmbH <br> <span style="color:#0076BE"><a  style="color:#0076BE" href="https://theobald-software.com/en/privacy-policy/" target="_blank" rel="noopener">privacy policy</a> - <a  style="color:#0076BE" href="https://theobald-software.com/en/legal-notice" target="_blank" rel="noopener">legal notice</a> - <a style="color:#0076BE" href="https://theobald-software.com/en/" target="_blank" rel="noopener">website</a></span>
 watch:
   - includes
 
@@ -37,8 +37,8 @@ theme:
     # - navigation.expand #displays all pages in the navigation (not good for API Reference)
     # - navigation.footer
      - navigation.indexes #adds landing pages for groups
-    # # - navigation.instant # load faster (no page reload for internal links)
-    # # - navigation.instant.prefetch # load faster (start loading content when hovering)
+     - navigation.instant # load faster (no page reload for internal links)
+     - navigation.instant.prefetch # load faster (start loading content when hovering)
      - navigation.instant.progress # enables a progress indicator 
      - navigation.instant.preview
      - navigation.path #adds breadcrumbs
@@ -70,7 +70,7 @@ theme:
     text: Poppins
     code: Roboto Mono
   favicon: assets/images/logos/products/XtractIS.png
-  logo: assets/images/logos/logo.png
+  logo: assets/images/logos/products/XtractIS.png
 
 # Custom CSS
 extra_css:
@@ -107,7 +107,7 @@ plugins:
                - index.md
         #enable_creation_date: true
         #type: timeago
-         - optimize
+         #- optimize
          - minify:
              minify_html: true
 

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "New implementation for table types and structures which contain STRING/XSTRING members in Import/Export/Changing parameters (classic SDK)",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

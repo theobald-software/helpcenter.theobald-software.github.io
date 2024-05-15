@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Small fix for RFCServer class and tables (crash when defining a table when no table is provided by SAP)",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

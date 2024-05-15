@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed wrong decimal precision error in Exasol destination",
-        "Component": "Destinations",
-        "Product": "XtractUniversal"
-    }
-]

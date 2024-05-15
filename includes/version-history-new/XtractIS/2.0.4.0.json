@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Bugfix for BAPIs without any tables while using the setting 'Send Exports to Pipeline'. No doubled entries anymore",
-        "Component": "BAPI",
-        "Product": "XtractIS"
-    }
-]

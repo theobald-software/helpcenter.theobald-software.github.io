@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "The flat-file CSV destination does now support file splitting.",
-        "Component": "Destinations",
-        "Product": "XtractUniversal"
-    }
-]

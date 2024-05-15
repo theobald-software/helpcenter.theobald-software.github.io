@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug causing failed extractions when using Not Assigned (#) member in MDX cube filter.",
-        "Component": "General",
-        "Product": "Theobald.Server"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Improved error handling for tRFC. Changed TRFCCommit signature.",
-        "Component": "RFCServer",
-        "Product": "ERPConnect"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Bugfix for Greek characters (codepage 0700)",
-        "Component": "General",
-        "Product": "XtractIS"
-    }
-]

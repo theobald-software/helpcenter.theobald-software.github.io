@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Upgraded SQL driver for PostgreSql destination to version 8.0.1. Fixed a bug that was present in build 6.2.6.12 released on 22.01.2024 - if you have that version installed and if you are using the PostgreSql destination, please upgrade to a newer version.",
-        "Component": "Destinations",
-        "Product": "XtractUniversal"
-    }
-]

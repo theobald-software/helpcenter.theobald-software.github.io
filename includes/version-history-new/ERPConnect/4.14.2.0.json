@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for include structures (calculated offsets were wrong in some cases)",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

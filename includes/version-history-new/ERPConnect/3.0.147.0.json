@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix für MDX queries that contain NULL values in their measure's cells",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for preview without columns but \"automatic column detection\" enabled",
-        "Component": "Report",
-        "Product": "XtractUniversal"
-    }
-]

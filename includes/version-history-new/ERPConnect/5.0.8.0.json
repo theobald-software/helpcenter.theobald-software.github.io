@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Classic RFC: Fix for TimeoutException when invalid connection parameters are used",
-        "Component": "RFCServer",
-        "Product": "ERPConnect"
-    }
-]

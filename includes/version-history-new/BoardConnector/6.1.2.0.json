@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed an error that caused CSV output to fail when an empty result set (no rows or columns) was extracted",
-        "Component": "General",
-        "Product": "BoardConnector"
-    }
-]

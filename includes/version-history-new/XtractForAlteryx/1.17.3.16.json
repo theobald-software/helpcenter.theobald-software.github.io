@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "R3Connection.GetSSOTicket() now supports SNC SSO with NWRFC",
-        "Component": "RFC Client",
-        "Product": "ERPConnect"
-    }
-]

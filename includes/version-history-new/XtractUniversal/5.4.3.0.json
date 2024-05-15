@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for log window refreshing bug when no run is selected",
-        "Component": "Designer",
-        "Product": "XtractUniversal"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug that caused extractions to get stuck on \"running\"",
-        "Component": "Server",
-        "Product": "BoardConnector"
-    }
-]

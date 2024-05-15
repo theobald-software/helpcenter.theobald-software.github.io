@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "SharePointDestination: Changed mode 'Drop & Create' to 'Drop, Create & Insert', set as default for newly created destinations.",
-        "Component": "Destinations",
-        "Product": "XtractUniversal"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Consolidated duplicated code for deleting services/sources functionality (part of the big refactoring task)",
-        "Component": "Designer",
-        "Product": "YunIO"
-    }
-]

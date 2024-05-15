@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "INT2 and INT1 values are converted to int instead of short/byte to match QueryFields before Execute()",
-        "Component": "Query",
-        "Product": "ERPConnect"
-    }
-]

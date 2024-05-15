@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for queries with more than one list ID",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

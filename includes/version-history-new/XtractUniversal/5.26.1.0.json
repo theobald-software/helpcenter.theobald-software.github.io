@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for rollback in Exasol destination not working properly when using transaction style OneTransaction.",
-        "Component": "Destinations",
-        "Product": "XtractUniversal"
-    }
-]

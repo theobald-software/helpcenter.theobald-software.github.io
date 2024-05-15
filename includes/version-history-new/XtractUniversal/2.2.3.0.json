@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Bug fix for exception when using ADO.NET provider together with Layer2 Sharepoint integration",
-        "Component": "General",
-        "Product": "XtractUniversal"
-    }
-]

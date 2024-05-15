@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for assigning localized strings (e. g. \"23,5\") to numeric parameters / structure elements (was broken since 4.19.3)",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

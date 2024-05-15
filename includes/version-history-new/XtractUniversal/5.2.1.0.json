@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug where the log viewer for the web server would show the wrong logs.",
-        "Component": "Designer",
-        "Product": "XtractUniversal"
-    }
-]

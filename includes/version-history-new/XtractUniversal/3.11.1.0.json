@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for aborting extractions and clearing result cache (Bug introduced in 3.11.0)",
-        "Component": "Server",
-        "Product": "XtractUniversal"
-    }
-]

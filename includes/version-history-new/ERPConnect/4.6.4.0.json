@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Improved multithreading behaviour when using RFCServer class",
-        "Component": "RFCServer",
-        "Product": "ERPConnect"
-    }
-]

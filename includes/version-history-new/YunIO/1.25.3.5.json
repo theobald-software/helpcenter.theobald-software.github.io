@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Only override SNC library path for Designer connections, if environment variable is set",
-        "Component": "General",
-        "Product": "Theobald.Server"
-    }
-]

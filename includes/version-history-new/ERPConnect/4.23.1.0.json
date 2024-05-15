@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Bug fix for persisting RFCServerFunction objects with INT2 data types",
-        "Component": "RFCServer",
-        "Product": "ERPConnect"
-    }
-]

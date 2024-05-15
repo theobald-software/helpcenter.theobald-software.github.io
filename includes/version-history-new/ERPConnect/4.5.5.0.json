@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Removed Support for AskUserAndOpen() function of R3Connection object",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

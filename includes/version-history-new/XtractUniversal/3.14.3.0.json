@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug that caused Kerberos requests to be rejected",
-        "Component": "Server",
-        "Product": "XtractUniversal"
-    }
-]

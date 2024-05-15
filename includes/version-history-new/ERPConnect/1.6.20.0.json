@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "InfoPackage triggering failed on unicode systems with NotifyOnly property set to true",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

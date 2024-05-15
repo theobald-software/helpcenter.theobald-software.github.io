@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug in MicroStrategy Attributes and Metrics generator.",
-        "Component": "Destinations",
-        "Product": "XtractUniversal"
-    }
-]

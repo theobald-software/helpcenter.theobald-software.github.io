@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Added query string option filterDebug=true to exclude debug log entries",
-        "Component": "Server",
-        "Product": "XtractUniversal"
-    }
-]

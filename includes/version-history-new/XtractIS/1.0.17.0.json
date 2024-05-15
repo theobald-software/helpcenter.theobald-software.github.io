@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "The extraction mode (Delta, Full...) can now be set dynamically with a variable",
-        "Component": "DeltaQ",
-        "Product": "XtractIS"
-    }
-]

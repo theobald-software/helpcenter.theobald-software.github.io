@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug that caused Delta extractions to fail if source table was client-independent",
-        "Component": "TableCDC",
-        "Product": "Theobald.Extractors"
-    }
-]

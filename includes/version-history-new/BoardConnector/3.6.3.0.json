@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed FileNotFoundException that might occur after installing version 3.6.2.12.",
-        "Component": "Setup",
-        "Product": "BoardConnector"
-    }
-]

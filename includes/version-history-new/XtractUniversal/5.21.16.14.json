@@ -1,8 +1,0 @@
-[
-    {
-        "Message": "Security fix: Negotiate authentication is required for all requests instead of only for the first request of each TCP connection",
-        "Component": "General",
-        "Product": "Theobald.Server",
-        "IsCritical": true
-    }
-]

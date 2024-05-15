@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed wrong field length for table fields containing data with SAP type RAW",
-        "Component": "Destinations",
-        "Product": "XtractUniversal"
-    }
-]

@@ -1,8 +1,0 @@
-[
-    {
-        "Message": "Fixes for Column Name Style related issues introduced in version 4.0.0",
-        "Component": "Destinations",
-        "Product": "XtractUniversal",
-        "ReleaseNote": "- Description for style `CodeAndText` and `TextAndCode` is no longer appended twice\n- Qlik destination respects proper capitalization of column names\n- Qlik destination uses correct Column Name Style (`Code`) for script generation and data transfer\n- Alteryx Plugin and Power BI Connector correctly respect the selected Column Name Style"
-    }
-]

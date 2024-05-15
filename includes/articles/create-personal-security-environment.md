@@ -46,8 +46,9 @@ Follow the steps below to create a client PSE file that trusts the server certif
 	The tool creates its own repository in a standard path, unless the path is changed by the environment variable SECUDIR or by specifying an absolute path. 
 	
 	!!! warning
-		
-		The PSE must be created without a password/pin, otherwise reading is not possible. 
+		**Restricted Access**
+		The PSE must be created without a password/pin, otherwise reading is not possible.
+		Make sure not to secure the PSE. 
 	
 6. Use the following command to add the certificate chain from step 3 to the client PSE:
 

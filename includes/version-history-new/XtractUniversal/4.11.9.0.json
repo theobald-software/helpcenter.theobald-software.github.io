@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "ConfigConverter: Fix for Console buffers wider than 120",
-        "Component": "Server",
-        "Product": "XtractUniversal"
-    }
-]

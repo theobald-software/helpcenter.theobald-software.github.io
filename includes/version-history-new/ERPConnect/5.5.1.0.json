@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Classic: Fix for unsupplied XML parameters",
-        "Component": "RFCServer",
-        "Product": "ERPConnect"
-    }
-]

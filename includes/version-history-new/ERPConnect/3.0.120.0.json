@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for DATS and TIMS Export parameters with Unicode RFC Servers",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

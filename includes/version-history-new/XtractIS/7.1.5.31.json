@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "New FolderBrowserDialog: Increased search depth, changed icons to windows stock icons, hide system entries and hidden folders, added manual path input field and improved perfomance.",
-        "Component": "WPF",
-        "Product": "Common"
-    }
-]

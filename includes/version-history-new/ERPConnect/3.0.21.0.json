@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Bugfix for MDXExecuter class with hierarchy variables under BW 3.0",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

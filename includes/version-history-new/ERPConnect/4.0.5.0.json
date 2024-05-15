@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for BW queries with a name that starts with a slash",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

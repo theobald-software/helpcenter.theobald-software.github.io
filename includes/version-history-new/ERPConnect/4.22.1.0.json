@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for range check of BCD values",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

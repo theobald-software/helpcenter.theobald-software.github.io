@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Bugfix for BW Loader when using Continuation Flag in wide datasets",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

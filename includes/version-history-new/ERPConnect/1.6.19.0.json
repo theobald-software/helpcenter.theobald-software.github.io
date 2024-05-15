@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Bug in decimal digit handling within nested XML structure while calling ToTable() method",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

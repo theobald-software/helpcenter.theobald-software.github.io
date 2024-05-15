@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed the behavior in the log on of the designer, which made it impossible to specify the domain name for windows authentication with different user.",
-        "Component": "Designer",
-        "Product": "XtractUniversal"
-    }
-]

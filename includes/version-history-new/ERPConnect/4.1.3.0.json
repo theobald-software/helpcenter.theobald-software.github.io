@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Bugfix for Thai characters in non-Unicode systems",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]
