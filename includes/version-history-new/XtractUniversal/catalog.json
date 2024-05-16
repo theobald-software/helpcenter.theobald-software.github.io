@@ -1,5 +1,16 @@
 [
   {
+    "Version": "6.5.2.3",
+    "LegacyReleaseDate": "2024-05-15 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Server",
+        "Component": "General",
+        "Message": "Refactor load & start code for extractions"
+      }
+    ]
+  },
+  {
     "Version": "6.5.2.0",
     "LegacyReleaseDate": "2024-05-14 16:29:10Z",
     "Changes": [
