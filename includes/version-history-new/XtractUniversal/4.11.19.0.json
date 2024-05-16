@@ -1,8 +1,0 @@
-[
-    {
-        "Message": "Snowflake's driver auto upgrade disabled",
-        "Component": "Destinations",
-        "Product": "XtractUniversal",
-        "IsCritical": true
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug that caused the preview to fail when two columns with the same name were selected for output",
-        "Component": "Table",
-        "Product": "Theobald.Extractors"
-    }
-]

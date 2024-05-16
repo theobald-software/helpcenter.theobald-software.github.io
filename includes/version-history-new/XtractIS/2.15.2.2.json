@@ -1,8 +1,0 @@
-[
-    {
-        "Message": "Fix for race condition (first data package got lost in some cases)",
-        "Component": "DeltaQ",
-        "Product": "XtractKernel",
-        "IsCritical": true
-    }
-]

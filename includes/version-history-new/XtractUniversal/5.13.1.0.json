@@ -1,8 +1,0 @@
-[
-    {
-        "Message": "Azure: Fixed a bug where using the Parquet Spark compatibility mode would not replace special characters in column names (breaking change)",
-        "Component": "Destinations",
-        "Product": "XtractUniversal",
-        "IsBreaking": true
-    }
-]

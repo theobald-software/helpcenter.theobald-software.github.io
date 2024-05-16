@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Correction for misleading error message when using BWCube class with packaging while an empty resultset is returned from SAP",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

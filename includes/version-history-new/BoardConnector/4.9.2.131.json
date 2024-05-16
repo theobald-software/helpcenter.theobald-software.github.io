@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for timeout while stopping servers",
-        "Component": "General",
-        "Product": "Theobald.Server"
-    }
-]

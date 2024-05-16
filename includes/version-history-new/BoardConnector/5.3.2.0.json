@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed an issue where runtime parameters inside of table rows were not applied correctly (Bug introduced in 5.3.0)",
-        "Component": "BAPI",
-        "Product": "BoardConnector"
-    }
-]

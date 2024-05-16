@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Service did not start after reboot sometimes (service dependencies were missing)",
-        "Component": "Service",
-        "Product": "BoardConnector"
-    }
-]

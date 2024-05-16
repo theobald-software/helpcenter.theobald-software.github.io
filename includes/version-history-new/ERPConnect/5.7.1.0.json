@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Added support for setting SNCSettings.OwnName on client connections",
-        "Component": "RFC Client",
-        "Product": "ERPConnect"
-    }
-]

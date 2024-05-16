@@ -1,9 +1,0 @@
-[
-    {
-        "Message": "MicroStrategy folders are now entered by their ID instead of their name. This change is breaking.",
-        "Component": "Destinations",
-        "Product": "XtractUniversal",
-        "IsBreaking": true,
-        "ReleaseNote": "# How to upgrade your extraction\n\nIf you use a MicroStrategy folder for your extractions you have to enter it´s ID instead of the name into the folder ID textbox of the destination settings of your extraction.\nYou can find the ID of a folder by right clicking it in the MicroStrategy Workstation and select Properties."
-    }
-]

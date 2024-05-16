@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug where SSIS variables weren't working for BW Cube in MDX mode",
-        "Component": "BW Cube",
-        "Product": "XtractIS"
-    }
-]

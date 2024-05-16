@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Bei Baustein DDIF_FIELDINFO_GET treten eigenartige Effekte auf. Das liegt an den Zeilentypen, die in diesem Baustein vorhanden sind.",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

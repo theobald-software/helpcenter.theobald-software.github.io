@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Added classes to convert geometry EWKB to WKB and WKT",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

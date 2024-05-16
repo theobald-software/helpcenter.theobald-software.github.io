@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for slow performance on some Oracle destination extractions.",
-        "Component": "Destinations",
-        "Product": "XtractUniversal"
-    }
-]

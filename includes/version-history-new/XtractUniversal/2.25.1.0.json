@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Improved error messages for row processing (DB2, Oracle, SQL Server, Teradata)",
-        "Component": "Destinations",
-        "Product": "XtractUniversal"
-    }
-]

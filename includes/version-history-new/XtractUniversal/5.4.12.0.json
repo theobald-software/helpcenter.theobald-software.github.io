@@ -1,8 +1,0 @@
-[
-    {
-        "Message": "Python setup script",
-        "Component": "Setup",
-        "Product": "XtractUniversal",
-        "ReleaseNote": "** Xtract Universal 5.4.12 **\n\nThe setup creation from this version on is based on a Python script that can be also manually executed"
-    }
-]

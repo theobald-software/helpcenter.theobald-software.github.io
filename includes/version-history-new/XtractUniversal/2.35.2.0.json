@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for possible server hang with non-HTTP destinations, if client disconnects at a certain time before extraction is finished",
-        "Component": "Server",
-        "Product": "XtractUniversal"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixes for SaveToXml (control characters & Tables collection)",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

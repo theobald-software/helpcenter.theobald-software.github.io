@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Request maintenance GUI: requests are only deleted when answering 'Yes'",
-        "Component": "DeltaQ",
-        "Product": "XtractKernel"
-    }
-]

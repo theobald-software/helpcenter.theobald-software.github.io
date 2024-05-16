@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug that caused legacy queries with obligatory selection parameters to not be converted correctly.",
-        "Component": "Query",
-        "Product": "XtractUniversal"
-    }
-]

@@ -1,8 +1,0 @@
-[
-    {
-        "Message": "Enhancements in the communication between XtractUniversal and Snowflake's driver, SnowSql",
-        "Component": "Destinations",
-        "Product": "XtractUniversal",
-        "IsCritical": true
-    }
-]

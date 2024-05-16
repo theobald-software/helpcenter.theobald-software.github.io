@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "SaveToXML(), LoadFromXML() and LoadFromXMLString() now support STRING and XSTRING",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

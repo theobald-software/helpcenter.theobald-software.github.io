@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Corrected error message in ERPConnectPocket.dll when trying to log on with a wrong password",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

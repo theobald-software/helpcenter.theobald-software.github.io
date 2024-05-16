@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Bug Fix: Strange characters when storing IDocs with eastern characters to disk",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

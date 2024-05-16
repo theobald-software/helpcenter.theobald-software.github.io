@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for ToTable() function when RFCParameter class is used with nested XML tables",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

@@ -1,8 +1,0 @@
-[
-    {
-        "Message": "Updated Z_THEO_READ_TABLE to version 2.15.",
-        "Component": "Table",
-        "Product": "Theobald.Extractors",
-        "ReleaseNote": "*Changes in Z_THEO_READ_TABLE*:\n- Code style change"
-    }
-]

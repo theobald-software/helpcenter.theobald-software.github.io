@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Correction for date to int conversion in case of emtpy date",
-        "Component": "DeltaQ",
-        "Product": "XtractIS"
-    }
-]

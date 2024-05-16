@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug in the Exasol destination that caused invalid casts.",
-        "Component": "Destinations",
-        "Product": "XtractUniversal"
-    }
-]

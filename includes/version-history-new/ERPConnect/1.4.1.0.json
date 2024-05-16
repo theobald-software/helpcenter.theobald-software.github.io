@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fehler beim Schließen von RFC-Server-Verbindungen und vernüftiges Exception-Handling, wenn der Connect zum RFC-Server fehlschlägt.",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

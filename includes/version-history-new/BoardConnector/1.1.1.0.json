@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Improved sending of Request IDoc at DeltaQ extraction with timestamp",
-        "Component": "DeltaQ",
-        "Product": "BoardConnector"
-    }
-]

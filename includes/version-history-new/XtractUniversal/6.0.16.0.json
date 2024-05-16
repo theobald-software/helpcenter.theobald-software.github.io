@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug causing parameters to be ignored in ODP extractions. Fixed parameter handling in table and query extractions causing issue in Alteryx Designer. Fixed errors when fetching parameter information for some extraction types.",
-        "Component": "Server",
-        "Product": "XtractUniversal"
-    }
-]

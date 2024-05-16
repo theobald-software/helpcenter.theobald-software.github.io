@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed ERPConnect references after changes to support Final Builder.",
-        "Component": "LINQtoERP",
-        "Product": "ERPConnect"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Reverted date format to yyyMMdd (accidentally changed to yyyy-MM-dd in 2.8.1)",
-        "Component": "Server",
-        "Product": "BoardConnector"
-    }
-]

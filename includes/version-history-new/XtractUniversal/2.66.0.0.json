@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Extended TableauDestination to allow uploads to Tableau Server",
-        "Component": "Destinations",
-        "Product": "XtractUniversal"
-    }
-]

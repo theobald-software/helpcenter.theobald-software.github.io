@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Bugfix for using RFC Server functions together with import structures (null reference exception, e.g. function module SX_OBJECT_RECEIVE)",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

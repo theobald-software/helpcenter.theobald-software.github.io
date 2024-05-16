@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for possible error when saving dimension filters in MDX mode",
-        "Component": "BW Cube",
-        "Product": "Theobald.Extractors"
-    }
-]

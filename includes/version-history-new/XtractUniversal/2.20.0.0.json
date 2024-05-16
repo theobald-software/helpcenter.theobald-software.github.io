@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Added primary key constraint to CREATE TABLE SQL",
-        "Component": "Destinations",
-        "Product": "XtractUniversal"
-    }
-]

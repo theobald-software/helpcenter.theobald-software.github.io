@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for crash at BWCube.CreateCube() function when using with certain SAP BW patch levels",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for Power Pivot Excel 2010 (was broken since 2.24.0)",
-        "Component": "Server",
-        "Product": "XtractUniversal"
-    }
-]

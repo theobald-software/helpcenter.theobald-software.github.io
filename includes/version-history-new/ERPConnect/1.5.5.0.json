@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Synchrones Senden von IDoc, Status-Abruf mit Idoc.GetCurrentStatus",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

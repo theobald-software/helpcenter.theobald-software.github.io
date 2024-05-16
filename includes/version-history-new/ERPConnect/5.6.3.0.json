@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Made the behaviour for when a non-registered function on RFCServer is called consistent across RFC and NW. Improved the corresponding error message for RFC.",
-        "Component": "RFCServer",
-        "Product": "ERPConnect"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for deserialization of empty XSTRINGs (RFCFunction.LoadFromXML(), R3Connection.CacheMetadata)",
-        "Component": "RFC Client",
-        "Product": "ERPConnect"
-    }
-]

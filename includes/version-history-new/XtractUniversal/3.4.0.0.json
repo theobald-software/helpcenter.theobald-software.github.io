@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Alteryx Plugin: SAP credentials and run parameters can now be mapped to input fields for dynamic population at workflow runtime",
-        "Component": "Destinations",
-        "Product": "XtractUniversal"
-    }
-]

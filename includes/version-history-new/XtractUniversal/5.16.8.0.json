@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for opening correctly the destination settings window (bug introduced in 5.16.7)",
-        "Component": "Designer",
-        "Product": "XtractUniversal"
-    }
-]

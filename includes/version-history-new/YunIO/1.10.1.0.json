@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed the logging of the service, which was too verbose.",
-        "Component": "Theobald.Server",
-        "Product": "YunIO"
-    }
-]

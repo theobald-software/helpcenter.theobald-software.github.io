@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for missing RequestID column in metadata retrieval via HTTP (DeltaQ)",
-        "Component": "DeltaQ",
-        "Product": "BoardConnector"
-    }
-]

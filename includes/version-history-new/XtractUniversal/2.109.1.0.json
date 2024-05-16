@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Improved handling of multiple http requests to the xtract universal server.",
-        "Component": "Server",
-        "Product": "XtractUniversal"
-    }
-]

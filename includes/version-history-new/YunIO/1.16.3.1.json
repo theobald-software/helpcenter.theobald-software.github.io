@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "MDX: fixed a bug that caused errors when deselecting all measures",
-        "Component": "BW Cube",
-        "Product": "Theobald.Extractors"
-    }
-]

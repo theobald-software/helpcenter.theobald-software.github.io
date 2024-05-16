@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for Greek non-Unicode systems (SAP codepage 1700)",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

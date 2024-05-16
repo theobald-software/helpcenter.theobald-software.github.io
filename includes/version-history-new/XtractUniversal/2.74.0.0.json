@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Added support for run parameters to Alteryx destination",
-        "Component": "Destinations",
-        "Product": "XtractUniversal"
-    }
-]

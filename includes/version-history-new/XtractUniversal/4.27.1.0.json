@@ -1,8 +1,0 @@
-[
-    {
-        "Message": "Added JSON HTTP API for extractions",
-        "Component": "Server",
-        "Product": "XtractUniversal",
-        "ReleaseNote": "JSON API endpoints:\n- `/config/extractions/<extraction_name>/result-columns`\n- `/config/extractions/<extraction_name>/parameters`\n- `/config/extractions/[?destinationType=typename]`"
-    }
-]

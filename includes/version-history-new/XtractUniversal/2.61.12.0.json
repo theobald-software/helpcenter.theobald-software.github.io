@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for OData metadata document and Code+Text, Text+Code settings",
-        "Component": "Destinations",
-        "Product": "XtractUniversal"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Added support for automatic detection of SNC own name (classic)",
-        "Component": "RFCServer",
-        "Product": "ERPConnect"
-    }
-]

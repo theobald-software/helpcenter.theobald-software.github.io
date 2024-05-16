@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed RequestSize error in xu.exe. Removed an external dependency of xu.exe.",
-        "Component": "General",
-        "Product": "XtractUniversal"
-    }
-]

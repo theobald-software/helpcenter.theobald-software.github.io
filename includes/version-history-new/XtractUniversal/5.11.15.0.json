@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug that caused legacy conversion for BAPI extractions to be skipped (introduced in 5.11.6)",
-        "Component": "BAPI",
-        "Product": "XtractUniversal"
-    }
-]

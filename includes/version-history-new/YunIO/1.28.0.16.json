@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug that may cause missing fields in RFCFunction parameters if they contain table types with one unique key component.",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

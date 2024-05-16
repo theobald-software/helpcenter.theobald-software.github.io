@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug that caused extractions to fail with \"Expected new buffer marker\" error",
-        "Component": "ODP",
-        "Product": "Theobald.Extractors"
-    }
-]

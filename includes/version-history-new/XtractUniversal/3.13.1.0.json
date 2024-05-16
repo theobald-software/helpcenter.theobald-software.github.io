@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug where starting multiple extractions at the same time caused some of them to fail",
-        "Component": "Server",
-        "Product": "XtractUniversal"
-    }
-]

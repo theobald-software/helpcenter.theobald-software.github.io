@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for code generation with LINQ under VS 2010 and VB.net",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

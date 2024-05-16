@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Added error messages when using connection manager properties in legacy storage mode",
-        "Component": "General",
-        "Product": "XtractIS"
-    }
-]

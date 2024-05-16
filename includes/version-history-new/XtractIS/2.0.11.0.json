@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Additional option available to suppress ABAP exceptions to lead to an SSIS exception",
-        "Component": "BAPI",
-        "Product": "XtractIS"
-    }
-]

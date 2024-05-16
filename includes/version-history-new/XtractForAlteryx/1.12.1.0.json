@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug where message dialogs would not show properly.",
-        "Component": "General",
-        "Product": "XtractForAlteryx"
-    }
-]

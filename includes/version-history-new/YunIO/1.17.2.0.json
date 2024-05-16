@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Added check in the setup to prevent that the designer gets started in browser after installation without running service.",
-        "Component": "General",
-        "Product": "YunIO"
-    }
-]

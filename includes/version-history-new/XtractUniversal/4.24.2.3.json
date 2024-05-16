@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "CsvReader class which implements reading CSV data as specified in RFC4180. (Beta)",
-        "Component": "General",
-        "Product": "Common"
-    }
-]

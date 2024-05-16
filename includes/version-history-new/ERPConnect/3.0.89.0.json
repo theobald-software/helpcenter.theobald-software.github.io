@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for LINQ to IDoc (crash in designer with certain description texts)",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

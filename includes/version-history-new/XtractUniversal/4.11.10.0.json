@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "New rules for names of extractions, sources and destinations: Letters a-z, numbers 0-9, minus (-) or underscore (_). Names no longer have to start with a letter.",
-        "Component": "Designer",
-        "Product": "XtractUniversal"
-    }
-]

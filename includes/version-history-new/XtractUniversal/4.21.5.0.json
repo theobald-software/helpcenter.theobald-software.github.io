@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for Alteryx Plugin to support authentication with custom and windows AD users",
-        "Component": "Destinations",
-        "Product": "XtractUniversal"
-    }
-]

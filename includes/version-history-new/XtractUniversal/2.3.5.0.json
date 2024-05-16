@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Moved license check to separate class in Theobald.Distillery.Server",
-        "Component": "Server",
-        "Product": "XtractUniversal"
-    }
-]

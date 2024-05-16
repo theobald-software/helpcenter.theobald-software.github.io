@@ -1,8 +1,0 @@
-[
-    {
-        "Message": "This version fixes two issues related to primary keys",
-        "Component": "Server",
-        "Product": "XtractUniversal",
-        "ReleaseNote": "# Xtract Universal 4.2.14\n\nThis version fixes two issues related to primary keys\n\n## Fixed issues\n- custom SQL generator now correctly uses the selected primary keys\n- deselection of all primary keys now causes no primary keys to be used instead of the defaults"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for transferring empty NUMC/DATS/TIMS parameters to non-Unicode systems",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

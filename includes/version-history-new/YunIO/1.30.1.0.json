@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug that caused errors on transaction recording or replay when specific tables were present",
-        "Component": "General",
-        "Product": "YunIO"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Added support for Table Join",
-        "Component": "BOARD API",
-        "Product": "BoardConnector"
-    }
-]

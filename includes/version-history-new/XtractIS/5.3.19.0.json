@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Another fix for overwriting existing versions of Xtract IS (bug introduced in 5.3.14)",
-        "Component": "Setup",
-        "Product": "XtractIS"
-    }
-]

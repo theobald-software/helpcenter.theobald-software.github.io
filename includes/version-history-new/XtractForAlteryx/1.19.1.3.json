@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "BICS: Fixed integer, decimal and partial float key figure values",
-        "Component": "BW Cube",
-        "Product": "Theobald.Extractors"
-    }
-]

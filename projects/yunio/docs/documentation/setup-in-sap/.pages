@@ -1,0 +1,5 @@
+nav:
+    - index.md
+    - sap-authority-objects.md
+    - custom-function-module-for-table-extraction.md
+    - custom-function-module-for-reports.md

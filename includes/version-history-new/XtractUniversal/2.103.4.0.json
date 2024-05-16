@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed wrong xu.exe exit code when extraction was aborted",
-        "Component": "General",
-        "Product": "XtractUniversal"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Bugfix for LINQToERP when installing for Visual Studio 2010 in French language",
-        "Component": "LINQtoERP",
-        "Product": "ERPConnect"
-    }
-]

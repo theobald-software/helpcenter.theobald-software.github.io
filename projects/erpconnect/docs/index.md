@@ -1,6 +1,5 @@
 ---
 title: ERPConnect HelpCenter
-loc: index
 hide:
   - navigation
   - tags
@@ -24,38 +23,44 @@ hide:
 
 [:octicons-arrow-right-24: Show more](news.md)
 
-<!---
+![threshold](assets/images/datastream/DataStream_ERPConnect.png)
+
 ### Additional Resources
 
+
 ::cards:: cols=3
-
+  
 - title: Product Information
-  image: ./assets/images/logos/business-content/human.png
-  content: I'm additional text. I'm optional and can give context to a link card.
-  url: /sap-objects/#human-resources
+  image: ./assets/images/logos/business-content/product-information-ERPConnect.svg
+  content: Visit our official ERPConnect website to take a look at the advantages ERPConnect offers, a list of FAQs and more.
+  url: https://theobald-software.com/en/erpconnect/
   
-- title: Download ERPConnect
-  image: ./assets/images/logos/business-content/production.png
-  url: /sap-objects/#customer-relationship-management
-  
-- title: Newsletters
-  image: ./assets/images/logos/business-content/material.png
-  url: /sap-objects/#materials-management
-
 - title: Success Stories
-  image: ./assets/images/logos/business-content/human.png
-  url: /sap-objects/#human-resources
-  
-- title: Partners
-  image: ./assets/images/logos/business-content/production.png
-  url: /sap-objects/#customer-relationship-management
+  image: ./assets/images/logos/business-content/success-stories-ERPConnect.svg
+  content: Get to know real customer scenarios with ERPConnect by reading one of our success stories.
+  url: https://theobald-software.com/en/resources/success-stories?filter_one=default&filter_two=erpconnect
 
-- title: Feedback
-  image: ./assets/images/logos/business-content/production.png
-  url: /sap-objects/#production-planning
+- title: Blog
+  image: ./assets/images/logos/business-content/blog-ERPConnect.svg
+  content: Discover exciting articles and helpful tips about SAP data and cloud integration, SAP process automation and more.
+  url: https://theobald-software.com/en/blog/
+  
+- title: Events & Webinars
+  image: ./assets/images/logos/business-content/events-webinars-ERPConnect.svg
+  content: Find out about upcoming events and Webinars. <br>Join our live webinars and experience interactive communication or visit our SAP experts live at an event. 
+  url: https://theobald-software.com/en/resources/events-and-webinars/
+  
+- title: Technical Newsletter
+  image: ./assets/images/logos/business-content/technical-newsletter-ERPConnect.svg
+  content: Our technical newsletter informs you once a month about new features, releases, breaking changes and articles.
+  url: https://theobald-software.com/en/newsletter/
+
+- title: Feedback Form
+  image: ./assets/images/logos/business-content/feedback-form-ERPConnect.svg
+  content: We are constantly striving to improve our products and would love to get your feedback. Our feedback form is very short, just write down what you want us to know :octicons-smiley-24:.
+  url: https://theobald-software.typeform.com/to/CnpfiiIN
 
 ::/cards::
--->
 
 
 <!---

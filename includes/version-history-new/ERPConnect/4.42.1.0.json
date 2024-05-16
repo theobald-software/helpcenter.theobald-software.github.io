@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for more than one call per LUW (classic, tRFC)",
-        "Component": "RFCServer",
-        "Product": "ERPConnect"
-    }
-]

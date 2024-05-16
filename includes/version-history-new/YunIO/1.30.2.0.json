@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "transaction: Fixed an issue that caused errors when starting services with table inputs from the run dialog.",
-        "Component": "Runtime",
-        "Product": "YunIO"
-    }
-]

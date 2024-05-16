@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug that prevented log table create statement from being generated on S4 systems with SAP_BASIS version 7.53 or below. Requires update of /THEO/CDC_S4.",
-        "Component": "TableCDC",
-        "Product": "Theobald.Extractors"
-    }
-]

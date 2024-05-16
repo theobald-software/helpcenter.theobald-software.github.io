@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "New/removed/renamed columns are now properly updated in GUI during metadata refresh",
-        "Component": "Table",
-        "Product": "XtractUniversal"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Upgrade of PostgreSql driver, Npgsql, to version 4.1.8",
-        "Component": "Destinations",
-        "Product": "XtractUniversal"
-    }
-]

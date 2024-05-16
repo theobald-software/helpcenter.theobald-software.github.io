@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Correction for delta inits for 0ME_ISM* OLTP datasources. A timestamp was not set correctly.",
-        "Component": "DeltaQ",
-        "Product": "XtractKernel"
-    }
-]

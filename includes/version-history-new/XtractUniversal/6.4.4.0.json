@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug where the Power BI Plugin would erroneously receive dummy data on data load. Updating the plugin is NOT required.",
-        "Component": "Server",
-        "Product": "XtractUniversal"
-    }
-]

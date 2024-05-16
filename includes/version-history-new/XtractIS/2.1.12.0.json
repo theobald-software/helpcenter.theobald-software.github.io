@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Bugfix: Activation crashed when using OLTP sources with a namespace in the source's name (e.g. /XXX/YYYY)",
-        "Component": "DeltaQ",
-        "Product": "XtractIS"
-    }
-]

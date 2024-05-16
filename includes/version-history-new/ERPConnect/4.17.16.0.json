@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Added constructor RFCTable(string name, RFCTableColumnCollection columns)",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

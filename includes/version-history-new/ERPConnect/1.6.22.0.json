@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Transaction class was unusable with SAP ECC 600 or higher and unicode",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

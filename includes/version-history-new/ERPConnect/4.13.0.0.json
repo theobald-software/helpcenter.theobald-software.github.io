@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "RFCStructure no longer implements ICustomTypeDescriptor, IEditableObject  ",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "AzureDWH destination has been renamed to Azure Synapse Analytics (SQL pool)",
-        "Component": "Destinations",
-        "Product": "XtractUniversal"
-    }
-]

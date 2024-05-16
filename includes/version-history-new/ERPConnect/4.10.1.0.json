@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Added support for sending tables over NW RFC API",
-        "Component": "RFC Client",
-        "Product": "ERPConnect"
-    }
-]

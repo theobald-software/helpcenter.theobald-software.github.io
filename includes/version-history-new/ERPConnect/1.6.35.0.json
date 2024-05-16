@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Error in MDXExecuter when using empty values with UseFormattedValues property set to true",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

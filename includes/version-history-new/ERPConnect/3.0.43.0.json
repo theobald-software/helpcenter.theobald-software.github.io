@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "LINQ resultsets can be easily bound to DatagGridView object directly; SELECT statements can be executed without a WHERE statement",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

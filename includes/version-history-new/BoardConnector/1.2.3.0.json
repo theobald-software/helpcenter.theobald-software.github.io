@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for logging fatal errors of versions >= 1.2.0",
-        "Component": "General",
-        "Product": "BoardConnector"
-    }
-]

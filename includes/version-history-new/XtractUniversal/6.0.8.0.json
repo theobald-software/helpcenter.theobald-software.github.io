@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug which deleted all Tableau hyper sdk files before installation",
-        "Component": "Setup",
-        "Product": "XtractUniversal"
-    }
-]

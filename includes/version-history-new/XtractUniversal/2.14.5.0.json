@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Time values could not be written to database destinations if data was read from buffer",
-        "Component": "Destinations",
-        "Product": "XtractUniversal"
-    }
-]

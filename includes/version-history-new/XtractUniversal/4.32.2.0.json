@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for displaying the modes for Parquet files in Google Cloud Storage destination definition window",
-        "Component": "Destinations",
-        "Product": "XtractUniversal"
-    }
-]

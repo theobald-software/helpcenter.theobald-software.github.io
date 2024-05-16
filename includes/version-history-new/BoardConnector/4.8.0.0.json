@@ -1,8 +1,0 @@
-[
-    {
-        "Message": "Added support for column name styling and date converting",
-        "Component": "General",
-        "Product": "BoardConnector",
-        "ReleaseNote": "##Board Connector - 4.8.0\n- Added support for column name styling and date converting, which can be changed in the extraction's general settings window"
-    }
-]

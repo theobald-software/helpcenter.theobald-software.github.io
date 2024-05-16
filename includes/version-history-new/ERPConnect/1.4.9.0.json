@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix bei Strings mit Umlauten (nur skalare Parameter, Fehler tritt nicht bei Strukuren oder Tabellen auf ",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

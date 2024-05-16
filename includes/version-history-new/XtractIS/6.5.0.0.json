@@ -1,8 +1,0 @@
-[
-    {
-        "Message": "New Setup",
-        "Component": "Setup",
-        "Product": "XtractIS",
-        "ReleaseNote": "# Xtract IS 6.5.0\n\nThe command line interface (CLI) of the setup application has changed. \n\n## Parameters\n\nThe setup now supports the following parameters:\n\n- **`--no-gui`** runs in console mode and prints log and status messages to stdout\n- **`--silent`** runs in console mode and does not output anything to stdout\n\n## Xtract IS for Azure\n\nBecause of the change to the CLI the *main.cmd* file needs to be updated."
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Bug fix for corrupted serialisation info when using DeltaQ in a push destination",
-        "Component": "DeltaQ",
-        "Product": "XtractUniversal"
-    }
-]

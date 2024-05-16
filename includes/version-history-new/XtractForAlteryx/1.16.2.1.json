@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Added overload to ProductLicense.Sign which allows to specify a CreationDate. ",
-        "Component": "Licensing",
-        "Product": "Common"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for non-existent/inactive includes in structures/tables",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

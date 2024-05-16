@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Changing destination from shared to custom without clicking on the settings button left the extraction without destination",
-        "Component": "Destinations",
-        "Product": "XtractUniversal"
-    }
-]

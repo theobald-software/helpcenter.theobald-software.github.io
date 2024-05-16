@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug that caused $metadata requests to be rejected (Bug introduced in 3.11.0)",
-        "Component": "OData",
-        "Product": "XtractUniversal"
-    }
-]

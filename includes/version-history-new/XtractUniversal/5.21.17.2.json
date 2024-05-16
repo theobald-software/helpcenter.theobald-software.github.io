@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Reduced max value for log table size limit to 100.000 rows.",
-        "Component": "TableCDC",
-        "Product": "Theobald.Extractors"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for lengths (bug introduced in 2.4.8)",
-        "Component": "DeltaQ",
-        "Product": "XtractKernel"
-    }
-]

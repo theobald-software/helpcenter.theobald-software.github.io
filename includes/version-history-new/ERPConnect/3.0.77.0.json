@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "CreateEmptyIdoc() failed on some systems when using a long IDoc name",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

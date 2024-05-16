@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Added support for searching Active Directory users/groups in other domains",
-        "Component": "Designer",
-        "Product": "BoardConnector"
-    }
-]

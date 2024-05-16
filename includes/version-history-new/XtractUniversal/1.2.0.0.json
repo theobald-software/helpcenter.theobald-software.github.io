@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Added extraction list via HTTP, name filter for logs via HTTP",
-        "Component": "Server",
-        "Product": "XtractUniversal"
-    }
-]

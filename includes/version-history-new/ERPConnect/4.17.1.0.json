@@ -1,8 +1,0 @@
-[
-    {
-        "Message": "Fix for negative INT2 values (classic RFC)",
-        "Component": "General",
-        "Product": "ERPConnect",
-        "IsCritical": true
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed an issue in S3 destination where extracting a large amount of rows would cause an overflow",
-        "Component": "Destinations",
-        "Product": "XtractUniversal"
-    }
-]

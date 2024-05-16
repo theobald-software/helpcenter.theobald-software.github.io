@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "BICS: Removed redundant characteristics id serialization",
-        "Component": "BW Cube",
-        "Product": "Theobald.Extractors"
-    }
-]

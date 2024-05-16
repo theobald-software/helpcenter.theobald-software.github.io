@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug introduced in 5.14.1 where the JSON representation of the API for extractions sources and destinations erroneously was an array.",
-        "Component": "Server",
-        "Product": "XtractUniversal"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "In BICS mode it is now possible to deselect dimensions that are defined on rows in a query extraction.",
-        "Component": "BW Cube",
-        "Product": "Theobald.Extractors"
-    }
-]

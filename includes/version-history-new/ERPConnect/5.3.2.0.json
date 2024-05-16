@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for missing table data (bug introduced in 5.3.1)",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

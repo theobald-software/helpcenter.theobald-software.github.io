@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug where fetching report selection parameters would not use the custom function module defined in extraction settings and would override that setting with the default value of Z_XTRACT_IS_REMOTE_REPORT.",
-        "Component": "Report",
-        "Product": "Theobald.Extractors"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Correction for \"Cannot convert\" error message when using Tableau Destination with BEX queries",
-        "Component": "Destinations",
-        "Product": "XtractUniversal"
-    }
-]

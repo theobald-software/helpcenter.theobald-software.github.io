@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Transaction: Fixed a bug where the menu and toolbar would disappear after popup dialogs",
-        "Component": "Designer",
-        "Product": "YunIO"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "FIX: Exception bei eingehenden IDocs mit Paketgröße > 1",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

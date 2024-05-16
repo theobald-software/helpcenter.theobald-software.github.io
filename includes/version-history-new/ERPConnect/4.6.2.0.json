@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "R3Connection.Close() did not work since 4.6.0 if NetWeaver DLLs were missing even with classic RFC or SOAP ",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

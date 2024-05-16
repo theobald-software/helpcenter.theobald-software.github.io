@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for Snowflake row delimiter constant in the default file format creation statement",
-        "Component": "Destinations",
-        "Product": "XtractUniversal"
-    }
-]

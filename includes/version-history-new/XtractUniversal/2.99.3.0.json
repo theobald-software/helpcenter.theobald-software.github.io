@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Bug fix in data conversion for HANA destinations.",
-        "Component": "Destinations",
-        "Product": "XtractUniversal"
-    }
-]

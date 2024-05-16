@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for multiple languages in table look-up",
-        "Component": "Table",
-        "Product": "XtractKernel"
-    }
-]

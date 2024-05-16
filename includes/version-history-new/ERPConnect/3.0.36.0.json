@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Conversion error in LINQ tables fixed for negative decimal numbers",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

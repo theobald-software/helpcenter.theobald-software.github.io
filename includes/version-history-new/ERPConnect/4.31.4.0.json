@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for garbage collection of static delegates (NW)",
-        "Component": "RFCServer",
-        "Product": "ERPConnect"
-    }
-]

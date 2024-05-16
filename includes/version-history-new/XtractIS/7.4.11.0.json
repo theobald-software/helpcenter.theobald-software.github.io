@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug that caused XtractExtensions.xml file to not get updated during setup",
-        "Component": "Setup",
-        "Product": "XtractIS"
-    }
-]

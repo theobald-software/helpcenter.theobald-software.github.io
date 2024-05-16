@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for invalid unicode characters with dispatcher service",
-        "Component": "RFCServer",
-        "Product": "ERPConnect"
-    }
-]

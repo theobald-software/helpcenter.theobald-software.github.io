@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug that caused list runtime parameters to be ignored (Bug introduced in 5.8.4)",
-        "Component": "Server",
-        "Product": "XtractUniversal"
-    }
-]

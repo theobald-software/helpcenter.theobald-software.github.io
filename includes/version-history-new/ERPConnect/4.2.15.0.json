@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed bug in IDOC code generation (String data types und double quotes).",
-        "Component": "LINQtoERP",
-        "Product": "ERPConnect"
-    }
-]

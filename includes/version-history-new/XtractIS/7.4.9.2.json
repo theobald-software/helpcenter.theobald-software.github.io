@@ -1,8 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug in the activation process for DeltaQ hierarchy extractions",
-        "Component": "DeltaQ",
-        "Product": "Theobald.Extractors",
-        "ReleaseNote": "**Theobald.Extractors 1.52.8**\n\nThis bug would prevent the update of segment names for intervals, nodes and descriptions during the extraction activation.\n\nIt was introduced in the version 1.47.0"
-    }
-]

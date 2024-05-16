@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Bugfix: Wrong mapping between query fields and result columns when the query contains a currency field / column",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

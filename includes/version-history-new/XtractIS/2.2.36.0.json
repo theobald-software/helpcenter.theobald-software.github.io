@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Correction for tRFC based data sources with a length of exact 1000 bytes",
-        "Component": "DeltaQ",
-        "Product": "XtractIS"
-    }
-]

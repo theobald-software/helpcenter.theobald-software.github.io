@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Idoc.LoadIdocSchema() and Idoc.SaveIdocSchema() now support names/types containing slashes",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

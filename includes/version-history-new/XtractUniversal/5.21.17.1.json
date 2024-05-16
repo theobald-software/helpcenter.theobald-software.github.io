@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug that caused errors with obsolete LIKE typed parameters",
-        "Component": "BAPI",
-        "Product": "Theobald.Extractors"
-    }
-]

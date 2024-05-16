@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Updated logic to display additional error information when SAP object structures are created within the LINQ designer.",
-        "Component": "LINQtoERP",
-        "Product": "ERPConnect"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Improved exception message in case of invalid property values",
-        "Component": "RFC Client",
-        "Product": "ERPConnect"
-    }
-]

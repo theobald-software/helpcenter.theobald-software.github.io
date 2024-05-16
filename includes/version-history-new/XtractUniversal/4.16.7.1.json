@@ -1,8 +1,0 @@
-[
-    {
-        "Message": "Added subscription suffix ",
-        "Component": "ODP",
-        "Product": "Theobald.Extractors",
-        "ReleaseNote": "# Theobald.Extractors 1.15.1\n\nThe subscription suffix can be set during runtime and is used to differentiate two subscriptions (inits) on a single SAP system (e.g. dev and test on a single QA SAP system)."
-    }
-]

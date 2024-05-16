@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "SQLServer - Prepare Merge: Fix for collations",
-        "Component": "Destinations",
-        "Product": "XtractUniversal"
-    }
-]

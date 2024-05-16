@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for LINQ to IDoc dialog (when a segment's name is a key word of the programming language)",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Added support for multiple parallel RFC servers in same process (NW)",
-        "Component": "RFCServer",
-        "Product": "ERPConnect"
-    }
-]

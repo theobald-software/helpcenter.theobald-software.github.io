@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for codepages (classic RFC, partially broken since 4.22.9)",
-        "Component": "RFCServer",
-        "Product": "ERPConnect"
-    }
-]

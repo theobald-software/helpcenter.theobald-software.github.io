@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Detect ineffective attempts to change SNC library after it has already been loaded",
-        "Component": "SNC",
-        "Product": "ERPConnect"
-    }
-]

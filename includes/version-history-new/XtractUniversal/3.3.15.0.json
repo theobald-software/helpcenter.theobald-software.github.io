@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed missing row restriction in live preview (Table, TableJoin)",
-        "Component": "Server",
-        "Product": "XtractUniversal"
-    }
-]

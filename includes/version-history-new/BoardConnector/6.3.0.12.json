@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Unicode control characters are now deleted before serializing log messages",
-        "Component": "General",
-        "Product": "Common"
-    }
-]

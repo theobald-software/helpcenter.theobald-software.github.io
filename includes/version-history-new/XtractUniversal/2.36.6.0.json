@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Added functionality to define custom formats for time data in CSV destinations.",
-        "Component": "Designer",
-        "Product": "XtractUniversal"
-    }
-]

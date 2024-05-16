@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug where cloning an extraction would not be possible due to the required item privilege being too high.",
-        "Component": "General",
-        "Product": "Theobald.Server"
-    }
-]

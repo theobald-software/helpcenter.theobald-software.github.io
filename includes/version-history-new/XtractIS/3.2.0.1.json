@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for NullReferenceException during early/late abort",
-        "Component": "DeltaQ",
-        "Product": "XtractKernel"
-    }
-]

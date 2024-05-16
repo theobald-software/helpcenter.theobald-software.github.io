@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Calling R3Connection.Ping() after ABAP exception: workaround for connection breakdown (NW library bug)",
-        "Component": "RFC Client",
-        "Product": "ERPConnect"
-    }
-]

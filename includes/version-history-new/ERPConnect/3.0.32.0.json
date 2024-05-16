@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Bugfix / Workaround for wrong meta data that is delivered by SAP 4.6C with XML based datatypes like in function DDIF_FIELDINFO_GET",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

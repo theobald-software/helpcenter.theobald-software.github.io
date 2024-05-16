@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Bugfix: Crash when loading or saving RFCFunction objects to xml that contain elements (Imports, Exports, Tables) with slashes in it",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

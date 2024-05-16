@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Date values from the SAP source are treated as real date by default for any destination",
-        "Component": "Destinations",
-        "Product": "XtractUniversal"
-    }
-]

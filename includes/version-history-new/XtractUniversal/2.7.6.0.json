@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Logged on user is automatically added to the list of allowed users/groups if he activates access restriction for an extraction",
-        "Component": "Security",
-        "Product": "XtractUniversal"
-    }
-]

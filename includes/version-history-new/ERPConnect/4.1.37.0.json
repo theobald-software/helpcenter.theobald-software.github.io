@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Added ITAB support to changing parameters of function modules in LINQ to SAP (only VS2010), but this is currently not supported by ERPConnect",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

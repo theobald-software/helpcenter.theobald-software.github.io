@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Azure Relay: Enable log file switching every 24h",
-        "Component": "General",
-        "Product": "YunIO"
-    }
-]

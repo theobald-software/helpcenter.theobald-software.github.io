@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Correction for certain SSTRING columns",
-        "Component": "Table Join",
-        "Product": "XtractKernel"
-    }
-]
