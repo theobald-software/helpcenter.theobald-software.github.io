@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /editorial-guidelines/*
+Disallow: /changelog/*

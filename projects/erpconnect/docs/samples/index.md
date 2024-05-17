@@ -17,11 +17,15 @@ hide:
 
 - [Authorization Objects - SAP User Rights](authority-objects-sap-user-rights.md)
 - [Check the Accessibility to an SAP System](how-to-check-the-accessibility-to-a-sap-system.md)
+- [Create a Client PSE to connect to SAP Cloud Systems :material-alert-decagram:](create-personal-security-environment.md)
 - [Implement a connection pool](implement-a-connection-pool.md)
 - [Login to SAP with an SSO Logon Ticket](login-to-sap-with-an-sso-logonticket.md)
+- [Supported SAP S/4HANA Versions](supported-sap-and-hana-versions.md)
 - [Use ERPConnect in PowerShell](use-erpconnect-in-powershell.md)
 
 </div>
+
+---
 
 ### ABAP Code 
 
@@ -30,6 +34,8 @@ hide:
 - [Create an ABP Interpreter](abap-interpreter.md)
 
 </div>
+
+---
 
 ### BAPIs and Function Modules
 
@@ -58,6 +64,8 @@ hide:
 
 </div>
 
+---
+
 ### BW Cubes and BW Queries
 
 <div class="mdx-columns" markdown>
@@ -65,6 +73,8 @@ hide:
 - [Fetch Data from a BW Query](execute-bw-queries.md)
 
 </div>
+
+---
 
 ### IDocs
 
@@ -78,6 +88,8 @@ hide:
 
 </div>
 
+---
+
 ### Queries
 
 <div class="mdx-columns" markdown>
@@ -85,6 +97,8 @@ hide:
 - [Fetch Data from an SAP Query](fetch-data-from-an-sap-query.md)
 
 </div>
+
+---
 
 ### RFC Server Functions
 
@@ -95,6 +109,8 @@ hide:
 - [Transactional RFC Server](transactional-rfc-server.md)
 
 </div>
+
+---
 
 ### Tables
 
@@ -109,6 +125,8 @@ hide:
 
 </div>
 
+---
+
 ### Transactions
 
 <div class="mdx-columns" markdown>
@@ -119,3 +137,4 @@ hide:
 
 </div>
 
+---

@@ -1,7 +1,7 @@
 # Copyright (c) 2016-2023 Martin Donath <martin.donath@squidfunk.com>
 # Project information
 site_name: ERPConnect HelpCenter
-#site_url: https://helpcenter.theobald-software.com/erpconnect/
+site_url: https://helpcenter.theobald-software.com/erpconnect/
 #site_author: Valerie Schipka
 site_description: >-
   ERPConnect is a .NET programming library to develop your own SAP interfaces.<br>
@@ -14,7 +14,7 @@ site_description: >-
 copyright: Copyright &copy; 2024 Theobald Software GmbH <br> <span style="color:#ED1A33"><a  style="color:#ED1A33" href="https://theobald-software.com/en/privacy-policy/" target="_blank" rel="noopener">privacy policy</a> - <a  style="color:#ED1A33" href="https://theobald-software.com/en/legal-notice" target="_blank" rel="noopener">legal notice</a> - <a style="color:#ED1A33" href="https://theobald-software.com/en/" target="_blank" rel="noopener">website</a></span>
 watch:
   - includes
-
+  - overrides
 # Configuration
 theme:
   name: material
@@ -35,8 +35,8 @@ theme:
     # - navigation.expand #displays all pages in the navigation (not good for API Reference)
     # - navigation.footer
      - navigation.indexes #adds landing pages for groups
-    # # - navigation.instant # load faster (no page reload for internal links)
-    # # - navigation.instant.prefetch # load faster (start loading content when hovering)
+     - navigation.instant # load faster (no page reload for internal links)
+     - navigation.instant.prefetch # load faster (start loading content when hovering)
      - navigation.instant.progress # enables a progress indicator 
      - navigation.instant.preview
      - navigation.path #adds breadcrumbs
@@ -68,12 +68,16 @@ theme:
     text: Poppins
     code: Roboto Mono
   favicon: assets/images/logos/products/ERPConnect.png
-  logo: assets/images/logos/logo.png
+  logo: assets/images/logos/products/ERPConnect.png
   
 # Custom CSS
 extra_css:
   - assets/stylesheets/extra.css
   - assets/stylesheets/neoteroi-cards.css 
+  - assets/stylesheets/hyperscript.css
+extra_javascript:
+  - assets/javascripts/hyperscript.min.js
+  
 # Plugins
 plugins:
   #- redirects: #redirect URLs when renaming/moving .md files
@@ -89,34 +93,21 @@ plugins:
   - search:
       separator: '[\s\-,:!=\[\]()"/]+'
   - typeset # preserve format of titles and headlines in navigation and toc
-  #- tooltipster-links
   - awesome-pages # define navigation in .pages files
   - macros:
       include_dir: includes # ../../includes for ERPConnect only
-  #- swagger-ui-tag # enables OpenAPI elements in docu
   #- glightbox #image zoom
-  #- with-pdf: # creates .pdf, see https://pypi.org/project/mkdocs-with-pdf/
-  #    author: Dec 2023
-  #    copyright: Copyright &copy; 2024 Theobald Software GmbH
-  #    cover_logo: https://help.theobald-software.com/img/company/theobald_onlinehelplogo.svg
-  #    cover_title: ERPConnect 
-  #    cover_subtitle: Documentation
-  #    exclude_pages:
-  #        - ^$
-  #        - 'erpconnect-api/'
-  #        - 'samples/'
-  #        - 'changelog/'
-  #        - 'troubleshooting/'
-  #    output_path: C:/Source/helpcenter.theobald-software.github.io/ERPConnect_Documentation.pdf
-  
+
 # Continuous integration
   - group:
       enabled: !ENV CI
       plugins:
-        - git-revision-date-localized # adds information when pages were last updated
+        - git-revision-date-localized:
+             exclude:
+               - index.md
         #enable_creation_date: true
         #type: timeago
-        #- optimize
+        #- optimize #requires pngquant to be installed, see https://github.com/squidfunk/mkdocs-material/discussions/4989
         - minify:
             minify_html: true        
             
@@ -210,4 +201,5 @@ extra:
     - icon: fontawesome/solid/envelope
       link: https://theobald-software.com/en/newsletter/
       name: Newsletter
-  product: ERPConnect
+  productName: ERPConnect
+  Component: Feature / SAP Objects

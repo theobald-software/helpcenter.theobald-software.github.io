@@ -1,8 +1,8 @@
-### About the Documentation Content of Theobald Software
+### About the User Documentation of Theobald Software
 
-The documentation of Theobald Software is designed to introduce readers to the main functions of {{ product }}.
+The user documentation of Theobald Software is designed to introduce readers to the main functions of {{ productName }}.
 
-Theobald Software's claim is to keep the documentation up to date according to the latest product version. 
+Theobald Software's claim is to keep the user documentation up to date according to the latest product version. 
 Information concerning the older version is removed gradually from the documentation content. 
 It is generally recommended to always install the latest version of the product.
 
@@ -11,11 +11,11 @@ Theobald Software's claim is to always update all the used screenshots of other 
 ©2024 Theobald Software GmbH. All rights reserved.
 
 ### Target group and audience
-This documentation is intended for all users of {{ product }}. 
-The documentation offers an overview of the interface, of the navigation and of the basic information to the users who have never or rarely worked with the product. 
-Experienced users can find more detailed information on more complex topics and use the documentation for reference.
+This documentation is created for all users of {{ productName }}. 
+The user documentation offers an overview of the interface, of the navigation and of the basic information to the users who never or rarely worked with the product. 
+Experienced users can find more detailed information on more complex topics and use the user documentation for reference.
 
-Reading the "QuickStart" section is the prerequisite for working with the product. 
+Reading the "Getting Started" section is the prerequisite for working with the product. 
 The documentation can also be useful during the evaluation phase. 
 
 ### Typographical conventions
@@ -40,10 +40,27 @@ Warning | Yellow | Information that is important for executing an error free pro
 Tip| Green | Tips
 Recommendation | Green | Theobald Software recommendations and best practices advice
 
+Warning Messages comply with EN 82079 and formulated according the SAFE-method that is derived from German.
+The SAFE method is a procedure for systematically designing safety instructions. The severity of the danger as well as the source of the danger. <br>
+
+**"SAFE"** stands for:
+
+**S**chwere der Gefahr (Signalwort)
+**A**rt und Quelle der Gefahr
+**F**olgen bei Missachtung der Gefahr
+**E**ntkommen (Maßnahmen zur Abwehr der Gefahr)
+
+Translation: 
+Severity of the danger (Signal word)
+Type and source of the danger
+Consequences of disregarding the danger
+Escape (measures to avert the danger)
+
 Example:
 
-!!! warning "Single Sign-On availability"
-	ABAP application server has to run on a Windows OS and SNC with Kerberos encryption setup on SAP.
+!!! warning   
+	**RFC_ERROR_SYSTEM_FAILURE - No more storage space available for extending an internal table**<br>
+    To avoid a memory overflow on the SAP source system and to avoid huge overheads, choose a package size that suits your memory capacity.
 
 
 !!! note

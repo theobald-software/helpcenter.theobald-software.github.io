@@ -45,10 +45,10 @@
 }
 
 [data-md-color-scheme=slate] .nt-card {
-  box-shadow: 0 2px 2px 0 rgba(30, 30, 30, 0.14), 0 3px 1px -2px rgba(40, 86, 94, 0.47), 0 1px 5px 0 rgba(200, 200, 200, 0.64);
+  box-shadow: 0 2px 2px 0 rgba(40,40,40,0.14), 0 3px 1px -2px rgba(80, 80,88, 0.47), 0 1px 5px 0 rgba(150,150,150,0.64);
 }
 [data-md-color-scheme=slate] .nt-card:hover {
-  box-shadow: 0 2px 2px 0 rgba(200, 200, 200, 0.14), 0 3px 1px -2px rgba(120, 120, 10, 0.47), 0 1px 5px 0 rgba(250, 250, 250, 0.64);
+  box-shadow: 0 2px 2px 0 rgba(100,100,100, 0.14), 0 3px 1px -2px rgba(80,80,80,0.47), 0 1px 5px 0 rgba(180,180,180,0.64);
 }
 
 .nt-card > a {
@@ -69,6 +69,7 @@
   font-weight: bold;
   margin: 4px 0 8px 0;
   line-height: 22px;
+  text-align: center;
 }
 
 .nt-card-content {
@@ -76,9 +77,10 @@
 }
 
 .nt-card-text {
-  font-size: 16px;
+  font-size: 14px;
   padding: 0;
   margin: 0;
+  text-align: center;
 }
 
 .nt-card .nt-card-image {
@@ -89,12 +91,10 @@
   background-repeat: no-repeat;
   background-width: 100%;
   min-height: 120px;
-  border-bottom: 1px solid #dedede;
 }
 
 .nt-card .nt-card-image.tags img {
   margin-top: 12px;
-  margin-bottom: 10px;
 }
 
 .nt-card .nt-card-image img {

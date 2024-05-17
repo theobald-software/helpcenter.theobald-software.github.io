@@ -1,5 +1,6 @@
 |Version|Date    |Component   |Description|
 |:-----:|:------:|:----------:|:----------|
+|7.9.1 [L]|2024-02-01|NWRFC|Fixed a bug where WebSocket RFC properties would not be cloned when calling R3Connection.Clone|
 |7.9.0 [M]|2023-12-18|General|Removed obsolete APIs as announced in 7.6.0|
 |7.8.1 [L]|2023-12-11|General|Fixed a bug that may cause missing fields in RFCFunction parameters if they contain table types with one unique key component.|
 |7.8.0 [M]|2023-12-07|NWRFC|Changed the default R3Connection Protocol to NWRFC as announced in 7.6.0. Added support for RFC over WebSocket.|
@@ -8,7 +9,7 @@
 |7.7.1 [L]|2023-07-12|General|Replaced AbapSignedNumericCharacter.ToLong() with AbapSignedNumericCharacter.ToDecimal()|
 |7.7.0 [L]|2023-06-04|General|Added AbapSignedNumericCharacter|
 |7.6.1 [L]|2023-04-05|RFC Client|R3Connection.GetSSOTicket() now supports SNC SSO with NWRFC|
-|[7.6.0 [M]](https://helpcenter.theobald-software.com/release-notes/ERPConnect-7.6.0/)|2023-03-31|RFC Client|Various breaking changes to R3Connection API([Release note](https://helpcenter.theobald-software.com/release-notes/ERPConnect-7.6.0/))|
+|[7.6.0 [M]](https://helpcenter.theobald-software.com/release-notes/ERPConnect-7.6.0)|2023-03-31|RFC Client|Various breaking changes to R3Connection API([Release note](https://helpcenter.theobald-software.com/release-notes/ERPConnect-7.6.0))|
 |7.5.8 [M]|2023-03-22|RFCServer|Classic RFC: Fixed a bug that caused import parameters in server and callback functions to be filled with garbage values when the application server did not supply them in the call |
 |7.5.7 [M]|2023-03-21|RFCServer|Classic RFC: Fixed a bug that caused an AccessViolationException when adding rows to a table that is defined in the server function, but not actually part of the call initiated by the SAP application server|
 |7.5.6 [L]|2023-03-15|General|Replaced the local byte serialization/deserialization on Ewkb with the ByteSerialization from Theobald.Common (introduced on 2.22.0)|
@@ -26,7 +27,7 @@
 |7.1.1 [M]|2022-10-06|General|Packed numbers that exceed the range of System.Decimal throw an exception instead of being cut off silently|
 |7.1.0 [L]|2022-08-30|RFC Client|Introduced Execute(RFCFunction) method to IR3Connection interface to improve testability of R3Connection dependent code|
 |7.0.0 [M]|2022-06-15|General|Removed ERPConnect45.dll - please use ERPConnectStandard20.dll or ERPConnect35.dll instead|
-|[6.14.19 [L]](https://helpcenter.theobald-software.com/release-notes/ERPConnect-6.14.19/)|2022-05-17|Idoc|Fixed a bug where saving an Idoc schema incorrectly changed field names([Release note](https://helpcenter.theobald-software.com/release-notes/ERPConnect-6.14.19/))|
+|[6.14.19 [L]](https://helpcenter.theobald-software.com/release-notes/ERPConnect-6.14.19)|2022-05-17|Idoc|Fixed a bug where saving an Idoc schema incorrectly changed field names([Release note](https://helpcenter.theobald-software.com/release-notes/ERPConnect-6.14.19))|
 |6.14.18 [L]|2022-05-10|RFC Client|Fixed a bug where tables with built-in types were not created correctly using R3Connection.CreateFunction|
 |6.14.17 [L]|2022-03-25|General|Introduced Interface IR3Connection to make consumers of R3Connection testable.|
 |6.14.16 [L]|2021-12-28|General|Fix for tracing null values|
@@ -47,11 +48,11 @@
 |6.14.1 [L]|2020-10-08|General|Added RFCTable.IsSupplied and RFCStructure.SetValueInternal()|
 |6.14.0 [L]|2020-08-19|General|Added support for Linux and macOS (ERPConnectStandard20.dll with NWRFC only)|
 |6.13.1 [L]|2020-08-11|General|Only update R3Connection.SID after connection has been established, if no SID was set|
-|[6.13.0 [L]](https://helpcenter.theobald-software.com/release-notes/ERPConnect-6.13.0/)|2020-07-23|General|Various small API changes (see release notes for details)([Release note](https://helpcenter.theobald-software.com/release-notes/ERPConnect-6.13.0))|
+|[6.13.0 [L]](https://helpcenter.theobald-software.com/release-notes/ERPConnect-6.13.0)|2020-07-23|General|Various small API changes (see release notes for details)([Release note](https://helpcenter.theobald-software.com/release-notes/ERPConnect-6.13.0))|
 |6.12.0 [M]|2020-07-15|General|Added support for new ABAP type utclong|
 |6.11.0 [L]|2020-07-09|LINQtoERP|Removed LINQ to ERP support for Visual Studio 2010|
 |6.10.1 [L]|2020-06-23|NWRFC|Fix for nested structures in export parameters when using NWRFC|
-|[6.10.0 [M]](https://helpcenter.theobald-software.com/release-notes/ERPConnect-6.10.0/)|2020-06-17|General|IsSupplied Property is now also persisted when serializing RFCParameter.([Release note](https://helpcenter.theobald-software.com/release-notes/ERPConnect-6.10.0/))|
+|[6.10.0 [M]](https://helpcenter.theobald-software.com/release-notes/ERPConnect-6.10.0)|2020-06-17|General|IsSupplied Property is now also persisted when serializing RFCParameter.([Release note](https://helpcenter.theobald-software.com/release-notes/ERPConnect-6.10.0))|
 |6.9.0 [L]|2020-05-26|Setup|New setup|
 |6.8.9 [M]|2020-01-16|RFCServer|Fix for parallel RFC servers using NWRFC|
 |6.8.8 [M]|2020-01-14|RFCServer|Fix for "Cannot execute NwFunction more than once" (NWRFC)|
@@ -91,7 +92,7 @@
 |6.4.2 [L]|2018-11-26|RFCServer|Removed RFCServer.Ping() (was marked for "internal use only", had various issues)|
 |6.4.1 [L]|2018-11-14|Setup|Changed default install directory to "Program Files\ERPConnect" on x64 systems|
 |6.4.0 [L]|2018-11-14|LINQtoERP|Removed support for VS2008|
-|[6.3.0 [M]](https://helpcenter.theobald-software.com/release-notes/ERPConnect-6.3.0/)|2018-11-04|General|Some collections are implementing generic IList<T> now instead of non-generic interfaces([Release note](https://helpcenter.theobald-software.com/release-notes/ERPConnect-6.3.0/))|
+|[6.3.0 [M]](https://helpcenter.theobald-software.com/release-notes/ERPConnect-6.3.0)|2018-11-04|General|Some collections are implementing generic IList<T> now instead of non-generic interfaces([Release note](https://helpcenter.theobald-software.com/release-notes/ERPConnect-6.3.0))|
 |6.2.3 [M]|2018-10-29|RFC Client|Another fix for R3Connection.CreateFunction() on some non-Unicode systems (TABLE_NOT_ACTIVE, bug introduced in 6.2.1).|
 |6.2.2 [M]|2018-10-16|RFC Client|Fix for R3Connection.CreateFunction() on some non-Unicode systems (TABLE_NOT_ACTIVE, bug introduced in 6.2.1).|
 |6.2.1 [L]|2018-10-09|Idoc|Fix for sending Idocs via qRFC|
@@ -101,7 +102,7 @@
 |6.1.3 [M]|2018-08-27|General|Improved error message for missing/corrupt librfc32.dll|
 |6.1.2 [L]|2018-08-15|General|Fix for WHERE clause on some SAP releases that don't support splitting of string literals (e. g. 740 SP 4)|
 |6.1.1 [M]|2018-07-31|LINQtoERP|Fix for Idoc code generator (broken since 5.7.0)|
-|[6.1.0 [M]](https://helpcenter.theobald-software.com/release-notes/ERPConnect-6.1.0/)|2018-07-24|General|New implementation of ReadTable class & support for non-Unicode multibyte codepages([Release note](https://helpcenter.theobald-software.com/release-notes/ERPConnect-6.1.0/))|
+|[6.1.0 [M]](https://helpcenter.theobald-software.com/release-notes/ERPConnect-6.1.0)|2018-07-24|General|New implementation of ReadTable class & support for non-Unicode multibyte codepages([Release note](https://helpcenter.theobald-software.com/release-notes/ERPConnect-6.1.0))|
 |6.0.2 [L]|2018-06-28|General|Updated EULA|
 |6.0.1 [L]|2018-06-19|General|NWRFC: Fix for non-structure line types in imports/exports/changings (e. g. STRINGTAB)|
 |6.0.0 [M]|2018-05-18|General|Added support for .NET Standard 2.0 (ERPConnectStandard20.dll) and RFC callbacks, fixed SQL Server support|
@@ -160,7 +161,7 @@
 |5.0.3 [L]|2017-02-22|LINQtoERP|Removed references to old ERPConnect versions.|
 |5.0.2 [L]|2017-02-22|Query|INT2 and INT1 values are converted to int instead of short/byte to match QueryFields before Execute()|
 |5.0.1 [L]|2017-02-10|LINQtoERP|Set max rows of Query to 200.000|
-|[5.0.0 [M]](https://helpcenter.theobald-software.com/release-notes/ERPConnect-5.0.0/)|2017-01-27|General|Removed ERPConnect20.dll & ERPConnect40.dll, updated ERPConnect45.dll to .NET Framework 4.5.2, removed support for SOAP([Release note](https://helpcenter.theobald-software.com/release-notes/ERPConnect-5.0.0/))|
+|[5.0.0 [M]](https://helpcenter.theobald-software.com/release-notes/ERPConnect-5.0.0)|2017-01-27|General|Removed ERPConnect20.dll & ERPConnect40.dll, updated ERPConnect45.dll to .NET Framework 4.5.2, removed support for SOAP([Release note](https://helpcenter.theobald-software.com/release-notes/ERPConnect-5.0.0))|
 |4.43.7 [L]|2017-01-09|Setup|Removed old example code|
 |4.43.6 [M]|2017-01-09|General|Improved error messages for nonexistent column names|
 |4.43.5 [M]|2016-12-23|General|NW: Fix for null-terminators in imports/exports/changings of ABAP type string|

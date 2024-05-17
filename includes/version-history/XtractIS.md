@@ -1,5 +1,11 @@
 |Version|Date    |Component   |Description|
 |:-----:|:------:|:----------:|:----------|
+|7.6.1 [L]|2024-05-17|BAPI|Remove deselected exports from output|
+|7.6.0 [L]|2024-05-17|TableCDC|Released Monitoring Feature for Log Tables and Triggers. Update of /THEO/CDC* package required.|
+|7.5.1 [L]|2024-05-14|ODP|Fixed metadata and data retrieval for DF16_DEC and DF34_DEC|
+|7.5.0 [M]|2024-05-06|General|Use new parameter system|
+|7.4.15 [L]|2024-04-08|DeltaQ|Fixed a bug to read variables on check and activation operations - introduced in 7.4.3|
+|7.4.14 [L]|2024-03-19|General|Fixed an issue that caused errors while loading dependencies on SQL Server instances|
 |7.4.13 [L]|2024-01-29|DeltaQ|Fixed a bug introduced in version 7.4.10, which crashed VS on new extraction creation.|
 |7.4.12 [L]|2024-01-15|TableCDC|Fixed a bug that prevented the extractor from being notified about successful processing of result table|
 |7.4.11 [L]|2024-01-11|Setup|Fixed a bug that caused XtractExtensions.xml file to not get updated during setup|
@@ -17,7 +23,7 @@
 |7.3.0 [M]|2023-09-05|TableCDC|Added Table CDC component|
 |7.2.2 [L]|2023-08-31|General|Added additional check in the setup for process DTExec|
 |7.2.1 [L]|2023-08-10|Setup|Improved wording in setup dialog when SSIS server seems to be currently busy|
-|[7.2.0 [L]](https://kb.theobald-software.com/release-notes/XtractIS-7.2.0.html)|2023-08-02|Hierarchy|New Hierarchy Extractor - POSSIBLE BREAKING CHANGES for Hierarchy extractions([Release note](https://kb.theobald-software.com/release-notes/XtractIS-7.2.0.html))|
+|[7.2.0 [L]](https://helpcenter.theobald-software.com/release-notes/XtractIS-7.2.0)|2023-08-02|Hierarchy|New Hierarchy Extractor - POSSIBLE BREAKING CHANGES for Hierarchy extractions([Release note](https://helpcenter.theobald-software.com/release-notes/XtractIS-7.2.0))|
 |7.1.6 [L]|2023-06-12|General|Fixed a bug that caused the connection manager to not be saved when multiple XTRACT connection managers exist|
 |7.1.5 [L]|2023-04-17|BAPI|Connection managers can now be changed using the tool editor GUI|
 |7.1.4 [L]|2023-03-31|Setup|Setup now checks if there are any running processes and offers option to abort setup.|
@@ -36,7 +42,7 @@
 |6.13.1 [M]|2022-06-02|BAPI|Fixed several issues related to the conversion of legacy BAPI tables |
 |6.13.0 [L]|2022-04-25|Table|Added graphical where clause editor.|
 |6.12.1 [M]|2022-04-11|BAPI|Fixed an issue where the component could not be edited when there are variables/parameters of type DateTime defined in the package|
-|[6.12.0 [M]](https://kb.theobald-software.com/release-notes/XtractIS-6.12.0.html)|2022-04-11|BAPI|Fixed two issues related to parameterization when upgrading from versions before 6.10.0([Release note](https://kb.theobald-software.com/release-notes/XtractIS-6.12.0.html))|
+|[6.12.0 [M]](https://helpcenter.theobald-software.com/release-notes/XtractIS-6.12.0)|2022-04-11|BAPI|Fixed two issues related to parameterization when upgrading from versions before 6.10.0([Release note](https://helpcenter.theobald-software.com/release-notes/XtractIS-6.12.0))|
 |6.11.1 [M]|2022-04-01|BAPI|Fixed a bug where some BAPI settings might not be converted correctly when updating from versions prior to 6.10.0|
 |6.11.0 [M]|2022-03-31|Table Join|Removed deprecated TableJoin component (JOINS are still supported by the Table component)|
 |6.10.3 [L]|2022-03-28|General|About window was refactored|
@@ -46,7 +52,7 @@
 |6.9.4 [M]|2022-01-18|General|Support for DLL licenses will be removed in June 2022. Please download your JSON licenses from my.theobald-software.com.|
 |6.9.3 [L]|2021-12-01|General|Removed French translation|
 |6.9.2 [L]|2021-11-09|Table Join|TableJoin will be removed March 2022|
-|[6.9.1 [L]](https://kb.theobald-software.com/release-notes/XtractIS-6.9.1.html)|2021-11-08|Report|Report component: multiple fixes.([Release note](https://kb.theobald-software.com/release-notes/XtractIS-6.9.1.html))|
+|[6.9.1 [L]](https://helpcenter.theobald-software.com/release-notes/XtractIS-6.9.1)|2021-11-08|Report|Report component: multiple fixes.([Release note](https://helpcenter.theobald-software.com/release-notes/XtractIS-6.9.1))|
 |6.8.0 [M]|2021-09-07|Report|Reworked the report component.|
 |6.7.6 [L]|2021-09-01|General|Updated license check.|
 |6.7.5 [L]|2021-04-27|ODP|Added package size setting as component property|
@@ -70,7 +76,7 @@
 |6.5.3 [L]|2020-09-07|ODP|Added 'subscription suffix' property|
 |6.5.2 [M]|2020-08-13|Setup|Fixed the installation for 64 bit SQL Server versions (Bug introduced in 6.5.0)|
 |6.5.1 [L]|2020-08-10|General|Windows' titles standardization|
-|[6.5.0 [L]](https://kb.theobald-software.com/release-notes/XtractIS-6.5.0.html)|2020-07-09|Setup|New Setup([Release note](https://kb.theobald-software.com/release-notes/XtractIS-6.5.0.html))|
+|[6.5.0 [L]](https://helpcenter.theobald-software.com/release-notes/XtractIS-6.5.0)|2020-07-09|Setup|New Setup([Release note](https://helpcenter.theobald-software.com/release-notes/XtractIS-6.5.0))|
 |6.4.2 [L]|2020-05-20|General|License forward compatibility improvement for supported components.|
 |6.4.1 [L]|2020-05-14|OHS|Main window is resizable now.|
 |6.4.0 [L]|2020-05-14|OHS|Removed preview button|
@@ -87,7 +93,7 @@
 |6.1.0 [M]|2019-12-11|DeltaQ|Added support for expression properties|
 |6.0.0 [M]|2019-12-05|General|Support for SQLServer 2019|
 |5.4.0 [L]|2019-12-04|Table|Added UsesWideStrings property & backward-compatibility for StringConversion|
-|[5.3.24 [M]](https://kb.theobald-software.com/release-notes/XtractIS-5.3.24.html)|2019-12-03|ODP|Several fixes (Bugs introduced in 5.3.15.1)([Release note](https://kb.theobald-software.com/release-notes/XtractIS-5.3.24.html))|
+|[5.3.24 [M]](https://helpcenter.theobald-software.com/release-notes/XtractIS-5.3.24)|2019-12-03|ODP|Several fixes (Bugs introduced in 5.3.15.1)([Release note](https://helpcenter.theobald-software.com/release-notes/XtractIS-5.3.24))|
 |5.3.23 [L]|2019-11-27|Setup|Added XtractISVersionInfo.exe|
 |5.3.22 [M]|2019-11-26|Setup|Another fix for overwriting old versions (bug introduced in 5.3.14)|
 |5.3.21 [L]|2019-11-22|Setup|Installer removes some unnecessary files of old XIS versions|
@@ -99,11 +105,11 @@
 |5.3.15 [L]|2019-11-12|ODP|Fixed a bug that caused the update mode to reset to Full when updating from versions before 5.1.0|
 |5.3.14 [L]|2019-11-12|General|SSIS log contains version of Theobald.Extractors, version numbers are logged in output of InstallXtractIS|
 |5.3.13 [L]|2019-11-12|DeltaQ|More fixes for String Conversion to VARCHAR|
-|[5.3.12 [M]](https://kb.theobald-software.com/release-notes/XtractIS-5.3.12.html)|2019-11-07|Table|Fixed several issues with date conversion and legacy behavior([Release note](https://kb.theobald-software.com/release-notes/XtractIS-5.3.12.html))|
+|[5.3.12 [M]](https://helpcenter.theobald-software.com/release-notes/XtractIS-5.3.12)|2019-11-07|Table|Fixed several issues with date conversion and legacy behavior([Release note](https://helpcenter.theobald-software.com/release-notes/XtractIS-5.3.12))|
 |5.3.11 [L]|2019-11-06|Setup|Improvements for the uninstalling script|
 |5.3.10 [L]|2019-11-04|ODP|Selections can now be parameterized |
 |5.3.9 [L]|2019-10-29|DeltaQ|Fix for String Conversion to VARCHAR|
-|[5.3.8 [M]](https://kb.theobald-software.com/release-notes/XtractIS-5.3.8.html)|2019-10-23|Table|Several fixes and improvements([Release note](https://kb.theobald-software.com/release-notes/XtractIS-5.3.8.html))|
+|[5.3.8 [M]](https://helpcenter.theobald-software.com/release-notes/XtractIS-5.3.8)|2019-10-23|Table|Several fixes and improvements([Release note](https://helpcenter.theobald-software.com/release-notes/XtractIS-5.3.8))|
 |5.3.7 [M]|2019-10-08|Table|Fix for MaxRows & PackageSize properties (bug introduced in 5.3.0)|
 |5.3.6 [L]|2019-10-07|BW Loader|Main form is now resizable|
 |5.3.5 [L]|2019-10-07|BW Loader|Fix for uploading hierarchies to 7.X data sources|
@@ -111,7 +117,7 @@
 |5.3.3 [M]|2019-09-25|Table|Fixed a bug that caused recent changes to the where clause to be ignored in the editor preview|
 |5.3.2 [M]|2019-09-20|Table|Backward-compatibility fixes for packages from before XIS 5.0|
 |5.3.1 [L]|2019-09-11|BINotificationServer|Fixed installation of BINotificationService|
-|[5.3.0 [M]](https://kb.theobald-software.com/release-notes/XtractIS-5.3.0.html)|2019-09-09|Table|Added support for property expressions / parameterization, backward-compatibility fixes([Release note](https://kb.theobald-software.com/release-notes/XtractIS-5.3.0.html))|
+|[5.3.0 [M]](https://helpcenter.theobald-software.com/release-notes/XtractIS-5.3.0)|2019-09-09|Table|Added support for property expressions / parameterization, backward-compatibility fixes([Release note](https://helpcenter.theobald-software.com/release-notes/XtractIS-5.3.0))|
 |5.2.6 [M]|2019-08-30|Table|Fixed a bug that caused "Conversion Routines" to be disabled when editing table components that previously had this setting enabled|
 |5.2.5 [M]|2019-08-20|General|Version history dialog now also shows Theobald.Extractors history|
 |5.2.4 [M]|2019-08-15|Setup|Fixed a bug that caused packages containing ODP components to fail after upgrading to 5.x without previously uninstalling the older version|
@@ -119,16 +125,16 @@
 |5.2.2 [L]|2019-08-12|Report|Fix for missing resources in SQL Server 2012|
 |5.2.1 [M]|2019-08-12|Table Join|Table Join component is now deprecated. Please use the Table component for joining tables|
 |5.2.0 [M]|2019-08-07|General|Added support for INT8|
-|[5.1.0 [M]](https://kb.theobald-software.com/release-notes/XtractIS-5.1.0.html)|2019-08-02|ODP|Added recovery mode([Release note](https://kb.theobald-software.com/release-notes/XtractIS-5.1.0.html))|
+|[5.1.0 [M]](https://helpcenter.theobald-software.com/release-notes/XtractIS-5.1.0)|2019-08-02|ODP|Added recovery mode([Release note](https://helpcenter.theobald-software.com/release-notes/XtractIS-5.1.0))|
 |5.0.8 [L]|2019-07-30|General|ODP and Table GUI: Adjusted minimum size of windows to fit smaller resolutions|
 |5.0.7 [M]|2019-07-23|General|Updated NW RFC to 7.50 PL 4|
-|[5.0.6 [M]](https://kb.theobald-software.com/release-notes/XtractIS-5.0.6.html)|2019-07-23|Table|Fixed issues related to legacy table extraction function modules when editing table components([Release note](https://kb.theobald-software.com/release-notes/XtractIS-5.0.6.html))|
+|[5.0.6 [M]](https://helpcenter.theobald-software.com/release-notes/XtractIS-5.0.6)|2019-07-23|Table|Fixed issues related to legacy table extraction function modules when editing table components([Release note](https://helpcenter.theobald-software.com/release-notes/XtractIS-5.0.6))|
 |5.0.5 [L]|2019-07-22|Table|Fixed a bug that caused the preview to fail when SSIS parameters were used in the where clause|
 |5.0.4 [M]|2019-07-16|Table|Added property to choose from various column name styles |
 |5.0.3 [L]|2019-07-15|Setup|Removed .NET version check from InstallXtractIS.exe (already checked by setup)|
 |5.0.2 [M]|2019-07-15|General|Fixed app.config files|
 |5.0.1 [H]|2019-07-05|ODP|Fixed a bug that caused extractions to fail and possible data loss in the SSIS pipeline (only affects the ODP component)|
-|[5.0.0 [M]](https://kb.theobald-software.com/release-notes/XtractIS-5.0.0.html)|2019-07-01|General|This release contains general changes, changes to the existing Table component as well as a new ODP component.([Release note](https://kb.theobald-software.com/release-notes/XtractIS-5.0.0.html))|
+|[5.0.0 [M]](https://helpcenter.theobald-software.com/release-notes/XtractIS-5.0.0)|2019-07-01|General|This release contains general changes, changes to the existing Table component as well as a new ODP component.([Release note](https://helpcenter.theobald-software.com/release-notes/XtractIS-5.0.0))|
 |4.13.3 [L]|2019-06-17|Table|Fix for custom function module usage after upgrading from 2.x |
 |4.13.2 [M]|2019-05-16|Table|Updated Z_THEO_READ_TABLE to 1.11|
 |4.13.1 [L]|2019-05-08|General|Using MSBuild 16|
@@ -149,7 +155,7 @@
 |4.12.3 [M]|2019-01-28|Table|Updated Z_THEO_READ_TABLE to 1.6|
 |4.12.2 [M]|2019-01-25|Table|Updated Z_THEO_READ_TABLE to 1.5|
 |4.12.1 [M]|2019-01-23|Table|Updated Z_THEO_READ_TABLE to 1.4|
-|[4.12.0 [L]](https://kb.theobald-software.com/release-notes/XtractIS-4.12.0.html)|2019-01-22|Table|Added ABAP code + transport request for Z_THEO_READ_TABLE, removed old ABAP files([Release note](https://kb.theobald-software.com/release-notes/XtractIS-4.12.0.html))|
+|[4.12.0 [L]](https://helpcenter.theobald-software.com/release-notes/XtractIS-4.12.0)|2019-01-22|Table|Added ABAP code + transport request for Z_THEO_READ_TABLE, removed old ABAP files([Release note](https://helpcenter.theobald-software.com/release-notes/XtractIS-4.12.0))|
 |4.11.5 [L]|2019-01-18|Table|Fix for data types when using Z_THEO_READ_TABLE|
 |4.11.4 [M]|2019-01-16|Report|Fix for empty column descriptions|
 |4.11.3 [M]|2018-12-20|BAPI|Fix for table types in import parameters|

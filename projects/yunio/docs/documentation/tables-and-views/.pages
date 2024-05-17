@@ -1,0 +1,6 @@
+nav:
+    - index.md
+    - create-a-table-service.md
+    - where-clause.md
+    - table-join.md
+    - settings.md
