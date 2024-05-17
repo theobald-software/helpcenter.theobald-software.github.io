@@ -12,21 +12,26 @@ hide:
 </div>
 
 
-
-
 {nav}
 
 
-### SAP Connection
+### :simple-sap: SAP Connection
 
 <div class="mdx-columns" markdown>
 
-- [Authorization Objects - SAP User Rights](authority-objects-sap-user-rights.md)
-- [Check the Accessibility to an SAP System](how-to-check-the-accessibility-to-a-sap-system.md)
+- [Authorize Access to Reports via Authorization Groups](authorize-access-to-specific-reports.md)
+- [Check the Accessibility to an SAP System](check-the-accessibility-to-an-sap-system.md)
+- [Create a Client PSE to connect to SAP Cloud Systems](create-personal-security-environment.md)
+- [Create the Custom Authorization Object Z_TS_PROG](create-the-custom-authority-object-z-ts-prog.md)
+- [Enable Secure Network Communication (SNC) via X.509 certificate](enable-snc-using-pse-file.md)
+- [Import an SAP Transport Request](import-an-sap-transport-request.md)
+- [Supported SAP S/4HANA Versions](supported-sap-and-hana-versions.md)
 
 </div>
 
-### Xtract BAPI
+---
+
+### :component-bapi: Xtract BAPI
 
 <div class="mdx-columns" markdown>
 
@@ -35,7 +40,9 @@ hide:
 
 </div>
 
-### Xtract Report
+---
+
+### :component-report: Xtract Report
 
 <div class="mdx-columns" markdown>
 
@@ -45,19 +52,24 @@ hide:
 
 </div>
 
-### Xtract Table
+---
+
+### :component-table: Xtract Table
 
 <div class="mdx-columns" markdown>
 
 - [Change Data Capture with CDHDR](change-data-capture-with-cdhdr.md)
 - [Delta Table Extraction](delta-table-extraction.md)
 - [Dynamization of WHERE Conditions](dynamization-of-where-conditions.md)
+- [Read data from Cluster Fields in Tables PCL1 and PCL2 (Payroll)](read-data-from-cluster-fields-in-the-tables-pcl1-and-pcl2-payroll)
 - [Working with Lists in the WHERE-Clause Editor](where-clause-editor-lists.md)
 - [Working with LIKE operand in WHERE-Clauses](like-operand-where-clause.md)
 
 </div>
 
-### Xtract Table CDC
+---
+
+### :component-table-cdc: Xtract Table CDC
 
 <div class="mdx-columns" markdown>
 
@@ -65,3 +77,5 @@ hide:
 - [Initial Table Load in SAP Versions < 7.10](table-cdc-initial-table-load.md)
 
 </div>
+
+---
