@@ -1,5 +1,5 @@
 
-The following article shows how to use the {{ bapi }} {{ component }} to write products data to SAP.<br>
+The following article shows how to use the {{ bapi }} {{ component }} to write product data to SAP.<br>
 The depicted example uses the custom function module Z_ECS_PRODUCT_CREATE_MULTI to add new products to SAP.
 A table that contains the product information and is stored on an SQL Server is used as input for the function module.
 

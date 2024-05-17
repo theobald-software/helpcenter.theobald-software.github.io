@@ -16,7 +16,7 @@ This also applies in particular to operands of the type string with trailing bla
 | `MSEG~MBLNR LIKE '0049%'`|Filters all records of the table column MSEG~MBLNR that return the Number of Material Document starting with the value *0049*.|
 | `BKPF~BUKRS LIKE '__1_'` | Filters all records that have a *1* in the third digit of the value for the company code (BKPF~BUKRS).| 
 
-=== "`MSEG~MJAHR LIKE '20__'`"
+=== "`MSEG~MJAHR LIKE '00490002'`"
 
 	![like_](../assets/images/articles/table/like_operator.png){:class="img-responsive"}
 
@@ -30,5 +30,5 @@ This also applies in particular to operands of the type string with trailing bla
 
 
 ****
-### Related Links
+#### Related Links
 - [SAP Documentation: Open SQL - Operands and Expressions - LIKE ](https://help.sap.com/doc/abapdocu_752_index_htm/7.52/en-US/abenwhere_logexp_like.htm)

@@ -5,13 +5,10 @@ The following article shows how to upload CATS data from an SQL server table usi
 
 The BAPI BAPI_CATIMESHEETMGR_INSERT creates Time Sheet entries in SAP.
 
+- Input: Relevant import parameters are PROFILE and TESTRUN and the table CATSRECORDS_IN.  
+- Output: The results are available in the tables CATSRECORDS_OUT and RETURN. <br>
+The RETURN table contains different types of messages, e.g., warnings, information, errors, etc.  
 
-- Input:<br>
-Relevant import parameters are PROFILE and TESTRUN and the table CATSRECORDS_IN. 
-
-- Output:<br>
-The results are available in the tables CATSRECORDS_OUT and RETURN. <br>
-The RETURN table contains different types of messages, e.g., warnings, information, errors, etc. 
 
 #### Troubleshooting
 If the input records do not have any errors, the table CATSRECORDS_OUT are populated with the same number of input records, otherwise it does not contain any entries. <br>
