@@ -12,10 +12,7 @@ hide:
 </div>
 
 
-{nav}
-
-
-### :simple-sap: SAP Connection
+### :simple-sap: SAP
 
 <div class="mdx-columns" markdown>
 
@@ -28,6 +25,20 @@ hide:
 - [Register an RFC Server in SAP Releases with Kernel Release 720 and higher](register-rfc-server-in-sap-releases-in-kernel-release-720-and-higher.md)
 - [Supported SAP S/4HANA Versions](supported-sap-and-hana-versions.md)
 - [TCP/IP Ports of SAP](sap-tcpip-ports.md)
+
+</div>
+
+---
+
+
+### :material-cloud-key: SSO Scenarios
+
+<div class="mdx-columns" markdown>
+
+- [SSO with Client Certificates](sso-with-client-certificates.md)
+- [SSO with External ID](sso-with-external-id.md)
+- [SSO with Kerberos SNC](sso-with-kerberos-snc.md)
+- [SSO with Logon Ticket](sso-with-logon-ticket.md)
 
 </div>
 
