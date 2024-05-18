@@ -25,7 +25,9 @@ hide:
 - [Create the Custom Authorization Object Z_TS_PROG](create-the-custom-authority-object-z-ts-prog.md)
 - [Enable Secure Network Communication (SNC) via X.509 certificate](enable-snc-using-pse-file.md)
 - [Import an SAP Transport Request](import-an-sap-transport-request.md)
+- [Register an RFC Server in SAP Releases with Kernel Release 720 and higher](register-rfc-server-in-sap-releases-in-kernel-release-720-and-higher.md)
 - [Supported SAP S/4HANA Versions](supported-sap-and-hana-versions.md)
+- [TCP/IP Ports of SAP](sap-tcpip-ports.md)
 
 </div>
 
@@ -37,6 +39,16 @@ hide:
 
 - [Write CATS Data to SAP](write-cats-data-to-sap.md)
 - [Write Product Data to SAP](write-product-data-to-sap.md)
+
+</div>
+
+---
+
+### :component-deltaq: Xtract DeltaQ
+
+<div class="mdx-columns" markdown>
+
+- [Register an RFC Server in SAP Releases with Kernel Release 720 and higher](register-rfc-server-in-sap-releases-in-kernel-release-720-and-higher.md)
 
 </div>
 
