@@ -44,12 +44,33 @@ hide:
 
 ---
 
+### :products-xtract-is: Xtract IS
+
+<div class="mdx-columns" markdown>
+
+- [Determine the Azure SSIS-IR Cluster ID](determine-the-azure-cluster-ID.md)
+- [Execute SSIS Packages between Cloud Data Stores and a Private Network Data Storage](execute-ssis-packages-between-cloud-data-stores-and-a-private-network-data-storage.md)
+
+</div>
+
+---
+
 ### :component-bapi: Xtract BAPI
 
 <div class="mdx-columns" markdown>
 
 - [Write CATS Data to SAP](write-cats-data-to-sap.md)
 - [Write Product Data to SAP](write-product-data-to-sap.md)
+
+</div>
+
+---
+
+### :component-bwloader: Xtract BWLoader
+
+<div class="mdx-columns" markdown>
+
+- [Load data into a BW Infoobject with Xtract BW Loader](load-data-into-a-bw-infoobject-with-xtract-bw-loader.md)
 
 </div>
 
