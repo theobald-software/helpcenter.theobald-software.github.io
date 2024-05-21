@@ -57,10 +57,10 @@ For more information, see [Documentation: SAP Connection](documentation/sap-conn
 
 	|  {{ Component }}  |  Description   |  
 	|----------|-------------|
-	| [{{ bapi }}](function-modules-and-bapis/index.md) | Execute BAPIs and Function Modules. |
-	| [{{ table }}](tables-and-views/index.md) | Extract data from SAP tables and views. |
-	| [{{ transaction }}](transactions/index.md) | Execute SAP transactions without SAP GUI interaction. |
-	| [{{ report }}](reports/index.md) | Extract data from SAP ABAP reports. | 
+	| [{{ bapi }}](documentation/function-modules-and-bapis/index.md) | Execute BAPIs and Function Modules. |
+	| [{{ table }}](documentation/tables-and-views/index.md) | Extract data from SAP tables and views. |
+	| [{{ transaction }}](documentation/transactions/index.md) | Execute SAP transactions without SAP GUI interaction. |
+	| [{{ report }}](documentation/reports/index.md) | Extract data from SAP ABAP reports. | 
 
 6. Click **[Save and edit]**.
 The settings of the selected {{ component }} open and the service is now available in the :yunio-nav-services: *Services* menu of yunIO.<br>
