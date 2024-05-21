@@ -9,12 +9,17 @@ This page shows how to connect to SAP.
 !!! warning  
 	**Missing Authorization.**<br>
     To establish a connection to SAP, the access to general authority objects must be available.
-    Adjust the [SAP Authority Objects](../setup-in-sap/sap-authority-objects.md/#sap-authorization-profiles) accordingly.
+    Adjust the [SAP Authority Objects](../setup-in-sap/sap-authority-objects.md/#general-authorization-objects) accordingly.
 
-Supported Connection Methods  | Supported Authentication Methods
------------- | -------------
-Connection to a single application server | [Plain login](#connect-to-sap-using-plain-authentication) using SAP username and password (system or dialogue user)
-Connection to a message server (Load Balancing) | [Secure Network Communication (SNC)](#connect-to-sap-using-snc-authentication) using username and password via basic authentication
+**Supported Connection Methods** 
+
+- Connection to a single application server
+- Connection to a message server (Load Balancing) 
+
+**Supported Authentication Methods**
+
+- [Plain login](#connect-to-sap-using-plain-authentication) using SAP username and password (system or dialogue user)
+- [Secure Network Communication (SNC)](#connect-to-sap-using-snc-authentication) using username and password via basic authentication
 
 ### Connect to SAP using Plain Authentication
 
