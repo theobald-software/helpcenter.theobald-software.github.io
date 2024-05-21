@@ -59,18 +59,21 @@ hide:
   };
 
   // Function to render a row in the table
-  const renderRow = (item) => {
-    const row = document.createElement('tr');
-    if(item.IsBreaking) {
-      row.setAttribute('class', 'is-breaking'); 
-    }
-    row.innerHTML = `
-      <td>${item.Version}</td>
-      <td>${item.LegacyReleaseDate.split(' ')[0]}</td>
-      <td>${item.Changes[0].Component}</td>
-      <td>${item.Changes[0].Message}</td>
-    `;
-    return row;
+const renderRow = (item) => {
+    const rows = item.Changes.map(change => {
+      const row = document.createElement('tr');
+      if (item.IsBreaking) {
+        row.setAttribute('class', 'is-breaking');
+      }
+      row.innerHTML = `
+        <td>${item.Version}</td>
+        <td>${item.LegacyReleaseDate.split(' ')[0]}</td>
+        <td>${change.Component}</td>
+        <td>${change.Message}</td>
+      `;
+      return row;
+    });
+    return rows;
   };
 
   // Populate the table with data
@@ -78,8 +81,8 @@ hide:
     const data = await fetchData();
     const tableBody = document.getElementById('catalogBody');
     data.forEach(item => {
-      const row = renderRow(item);
-      tableBody.appendChild(row);
+      const rows = renderRow(item);
+      rows.forEach(row => tableBody.appendChild(row));
     });
     addEventListeners(); // Add event listeners after the table is populated
   };
