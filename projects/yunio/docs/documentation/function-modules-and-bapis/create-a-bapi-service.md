@@ -31,7 +31,7 @@ The necessary parameters of a {{ bapi }} service vary depending on the BAPI.
 ![BAPI export parameters](../../assets/images/yunio/bapi-steps.png){:class="img-responsive"}
 3. Click **[Run]** to check the results, see [Running Services in yunIO](../run-services.md/#run-services-in-yunio).
 
-### Parameterize Import Parameters
+### Parameterize the Service
 
 Import parameters can be parameterized in the request body of the service.
 The depicted example shows the request body of a service where the Import Parameter *NAME* is set to *Supplied by Caller*.
