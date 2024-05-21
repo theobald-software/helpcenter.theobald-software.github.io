@@ -41,7 +41,10 @@ move to: https://help.theobald-software.com/en/erpconnect/special-classes/readin
 <span class=normal><a href=#__codelineno-0-39>39</a></span>
 <span class=normal><a href=#__codelineno-0-40>40</a></span>
 <span class=normal><a href=#__codelineno-0-41>41</a></span>
-<span class=normal><a href=#__codelineno-0-42>42</a></span></pre></div></td><td class=code><div><pre><span></span><code><span id=__span-0-1><a id=__codelineno-0-1 name=__codelineno-0-1></a><span class=k>using</span><span class=w> </span><span class=nn>System</span><span class=p>;</span>
+<span class=normal><a href=#__codelineno-0-42>42</a></span>
+<span class=normal><a href=#__codelineno-0-43>43</a></span>
+<span class=normal><a href=#__codelineno-0-44>44</a></span>
+<span class=normal><a href=#__codelineno-0-45>45</a></span></pre></div></td><td class=code><div><pre><span></span><code><span id=__span-0-1><a id=__codelineno-0-1 name=__codelineno-0-1></a><span class=k>using</span><span class=w> </span><span class=nn>System</span><span class=p>;</span>
 </span><span id=__span-0-2><a id=__codelineno-0-2 name=__codelineno-0-2></a><span class=k>using</span><span class=w> </span><span class=nn>System.Data</span><span class=p>;</span>
 </span><span id=__span-0-3><a id=__codelineno-0-3 name=__codelineno-0-3></a><span class=k>using</span><span class=w> </span><span class=nn>ERPConnect</span><span class=p>;</span>
 </span><span id=__span-0-4><a id=__codelineno-0-4 name=__codelineno-0-4></a><span class=k>using</span><span class=w> </span><span class=nn>ERPConnect.Utils</span><span class=p>;</span>
@@ -69,20 +72,23 @@ move to: https://help.theobald-software.com/en/erpconnect/special-classes/readin
 </span></span><span id=__span-0-26><a id=__codelineno-0-26 name=__codelineno-0-26></a><span class=hll><span class=w>    </span><span class=n>TableName</span><span class=w> </span><span class=o>=</span><span class=w> </span><span class=s>&quot;MAKT&quot;</span><span class=p>,</span>
 </span></span><span id=__span-0-27><a id=__codelineno-0-27 name=__codelineno-0-27></a><span class=hll><span class=w>    </span><span class=n>RowCount</span><span class=w> </span><span class=o>=</span><span class=w> </span><span class=m>10</span>
 </span></span><span id=__span-0-28><a id=__codelineno-0-28 name=__codelineno-0-28></a><span class=hll><span class=p>};</span>
-</span></span><span id=__span-0-29><a id=__codelineno-0-29 name=__codelineno-0-29></a>
-</span><span id=__span-0-30><a id=__codelineno-0-30 name=__codelineno-0-30></a><span class=c1>// Select columns to read</span>
-</span><span id=__span-0-31><a id=__codelineno-0-31 name=__codelineno-0-31></a><span class=hll><span class=n>table</span><span class=p>.</span><span class=n>AddField</span><span class=p>(</span><span class=s>&quot;MATNR&quot;</span><span class=p>);</span>
+</span></span><span id=__span-0-29><a id=__codelineno-0-29 name=__codelineno-0-29></a><span class=hll>
+</span></span><span id=__span-0-30><a id=__codelineno-0-30 name=__codelineno-0-30></a><span class=hll><span class=c1>// Select columns to read</span>
+</span></span><span id=__span-0-31><a id=__codelineno-0-31 name=__codelineno-0-31></a><span class=hll><span class=n>table</span><span class=p>.</span><span class=n>AddField</span><span class=p>(</span><span class=s>&quot;MATNR&quot;</span><span class=p>);</span>
 </span></span><span id=__span-0-32><a id=__codelineno-0-32 name=__codelineno-0-32></a><span class=hll><span class=n>table</span><span class=p>.</span><span class=n>AddField</span><span class=p>(</span><span class=s>&quot;MAKTX&quot;</span><span class=p>);</span>
-</span></span><span id=__span-0-33><a id=__codelineno-0-33 name=__codelineno-0-33></a>
-</span><span id=__span-0-34><a id=__codelineno-0-34 name=__codelineno-0-34></a><span class=hll><span class=n>table</span><span class=p>.</span><span class=n>Run</span><span class=p>();</span>
-</span></span><span id=__span-0-35><a id=__codelineno-0-35 name=__codelineno-0-35></a>
-</span><span id=__span-0-36><a id=__codelineno-0-36 name=__codelineno-0-36></a><span class=n>DataTable</span><span class=w> </span><span class=n>result</span><span class=w> </span><span class=o>=</span><span class=w> </span><span class=n>table</span><span class=p>.</span><span class=n>Result</span><span class=p>;</span>
-</span><span id=__span-0-37><a id=__codelineno-0-37 name=__codelineno-0-37></a><span class=k>for</span><span class=w> </span><span class=p>(</span><span class=kt>int</span><span class=w> </span><span class=n>i</span><span class=w> </span><span class=o>=</span><span class=w> </span><span class=m>0</span><span class=p>;</span><span class=w> </span><span class=n>i</span><span class=w> </span><span class=o>&lt;</span><span class=w> </span><span class=n>result</span><span class=p>.</span><span class=n>Rows</span><span class=p>.</span><span class=n>Count</span><span class=p>;</span><span class=w> </span><span class=n>i</span><span class=o>++</span><span class=p>)</span>
-</span><span id=__span-0-38><a id=__codelineno-0-38 name=__codelineno-0-38></a><span class=p>{</span>
-</span><span id=__span-0-39><a id=__codelineno-0-39 name=__codelineno-0-39></a><span class=w>    </span><span class=n>Console</span><span class=p>.</span><span class=n>WriteLine</span><span class=p>(</span><span class=s>$&quot;{result.Rows[i][&quot;</span><span class=n>MATNR</span><span class=s>&quot;]} {result.Rows[i][&quot;</span><span class=n>MAKTX</span><span class=s>&quot;]}&quot;</span><span class=p>);</span>
-</span><span id=__span-0-40><a id=__codelineno-0-40 name=__codelineno-0-40></a><span class=p>}</span>
-</span><span id=__span-0-41><a id=__codelineno-0-41 name=__codelineno-0-41></a>
-</span><span id=__span-0-42><a id=__codelineno-0-42 name=__codelineno-0-42></a><span class=n>Console</span><span class=p>.</span><span class=n>ReadLine</span><span class=p>();</span>
+</span></span><span id=__span-0-33><a id=__codelineno-0-33 name=__codelineno-0-33></a><span class=hll>
+</span></span><span id=__span-0-34><a id=__codelineno-0-34 name=__codelineno-0-34></a><span class=hll><span class=c1>// Specify a function module that is used to read the table</span>
+</span></span><span id=__span-0-35><a id=__codelineno-0-35 name=__codelineno-0-35></a><span class=hll><span class=n>table</span><span class=p>.</span><span class=n>SetCustomFunctionName</span><span class=p>(</span><span class=s>&quot;RFC_READ_TABLE&quot;</span><span class=p>);</span>
+</span></span><span id=__span-0-36><a id=__codelineno-0-36 name=__codelineno-0-36></a><span class=hll>
+</span></span><span id=__span-0-37><a id=__codelineno-0-37 name=__codelineno-0-37></a><span class=hll><span class=n>table</span><span class=p>.</span><span class=n>Run</span><span class=p>();</span>
+</span></span><span id=__span-0-38><a id=__codelineno-0-38 name=__codelineno-0-38></a>
+</span><span id=__span-0-39><a id=__codelineno-0-39 name=__codelineno-0-39></a><span class=n>DataTable</span><span class=w> </span><span class=n>result</span><span class=w> </span><span class=o>=</span><span class=w> </span><span class=n>table</span><span class=p>.</span><span class=n>Result</span><span class=p>;</span>
+</span><span id=__span-0-40><a id=__codelineno-0-40 name=__codelineno-0-40></a><span class=k>for</span><span class=w> </span><span class=p>(</span><span class=kt>int</span><span class=w> </span><span class=n>i</span><span class=w> </span><span class=o>=</span><span class=w> </span><span class=m>0</span><span class=p>;</span><span class=w> </span><span class=n>i</span><span class=w> </span><span class=o>&lt;</span><span class=w> </span><span class=n>result</span><span class=p>.</span><span class=n>Rows</span><span class=p>.</span><span class=n>Count</span><span class=p>;</span><span class=w> </span><span class=n>i</span><span class=o>++</span><span class=p>)</span>
+</span><span id=__span-0-41><a id=__codelineno-0-41 name=__codelineno-0-41></a><span class=p>{</span>
+</span><span id=__span-0-42><a id=__codelineno-0-42 name=__codelineno-0-42></a><span class=w>    </span><span class=n>Console</span><span class=p>.</span><span class=n>WriteLine</span><span class=p>(</span><span class=s>$&quot;{result.Rows[i][&quot;</span><span class=n>MATNR</span><span class=s>&quot;]} {result.Rows[i][&quot;</span><span class=n>MAKTX</span><span class=s>&quot;]}&quot;</span><span class=p>);</span>
+</span><span id=__span-0-43><a id=__codelineno-0-43 name=__codelineno-0-43></a><span class=p>}</span>
+</span><span id=__span-0-44><a id=__codelineno-0-44 name=__codelineno-0-44></a>
+</span><span id=__span-0-45><a id=__codelineno-0-45 name=__codelineno-0-45></a><span class=n>Console</span><span class=p>.</span><span class=n>ReadLine</span><span class=p>();</span>
 </span></code></pre></div></td></tr></table></div> <p>Output: <div class="language-text highlight"><pre><span></span><code><span id=__span-1-1><a id=__codelineno-1-1 name=__codelineno-1-1 href=#__codelineno-1-1></a>000000000000000023 Pawan Kalyan_08
 </span><span id=__span-1-2><a id=__codelineno-1-2 name=__codelineno-1-2 href=#__codelineno-1-2></a>000000000000000038 Test US colleagues upd4
 </span><span id=__span-1-3><a id=__codelineno-1-3 name=__codelineno-1-3 href=#__codelineno-1-3></a>000000000000000043 English Check 25_01
