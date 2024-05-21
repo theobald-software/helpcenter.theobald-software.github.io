@@ -14,11 +14,11 @@ Follow the steps below to read tables from SAP:
 3. Specify the name of the SAP table using `TableName`.
 4. Specify the columns you want to read using `AddField()`.
 5. Optional: Specify additional parameters, e.g., WHERE Clause (`WhereClause` or maximum number of rows `RowCount`).
-6. Read the SAP table using `Run()`.
-7. Access the table using the `Result` attribute.
+6. Optional: Specify the function module that is used to read the table using `SetCustomFunctionName()`. The default is RFC_READ_TABLE.
+7. Read the SAP table using `Run()`.
+8. Access the table using the `Result` attribute.
 
 {% include "erpconnect/read-table.md" %}
-
 
 ****
 #### Related Links

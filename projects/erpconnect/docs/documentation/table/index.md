@@ -45,3 +45,9 @@ Follow the steps below to create a custom function module Z_XTRACT_IS_TABLE in S
 6. Download the file [Z_XTRACT_IS_TABLE.txt](../../assets/files/ABAPcode/Z_XTRACT_IS_TABLE.txt){:download="Z_XTRACT_IS_TABLE"} that contains the ABAP code for the function module. 
 7. Use **[Ctrl + C]** and **[Ctrl + V]** to paste the ABAP code into the source code editor.
 8. Save the function module and activate it.
+
+To use the new custom function module with the *ReadTable* class, use the `SetCustomFunctionName()` command before reading the table. Example:
+
+```
+table.SetCustomFunctionName("Z_XTRACT_IS_TABLE");
+```

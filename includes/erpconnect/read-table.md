@@ -1,6 +1,6 @@
 
 
-``` csharp linenums="1" hl_lines="23-28 31 32 34" title="Table MAKT"
+``` csharp linenums="1" hl_lines="23-37" title="Table MAKT"
 using System;
 using System.Data;
 using ERPConnect;
@@ -33,6 +33,9 @@ var table = new ReadTable(connection)
 // Select columns to read
 table.AddField("MATNR");
 table.AddField("MAKTX");
+
+// Specify a function module that is used to read the table
+table.SetCustomFunctionName("RFC_READ_TABLE");
 
 table.Run();
 
