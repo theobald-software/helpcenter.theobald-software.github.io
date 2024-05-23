@@ -1,5 +1,125 @@
 [
   {
+    "Version": "6.7.0.6",
+    "LegacyReleaseDate": "2024-05-21 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Common",
+        "Component": "WPF",
+        "Message": "Extended the CopyPasteTextBox to support error display."
+      }
+    ]
+  },
+  {
+    "Version": "6.7.0.2",
+    "LegacyReleaseDate": "2024-05-21 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "General",
+        "Message": "Fixed a bug where refreshing the metadata without any objects selected for extraction would cause an unexpected error."
+      }
+    ]
+  },
+  {
+    "Version": "6.7.0.0",
+    "LegacyReleaseDate": "2024-05-21 12:37:16Z",
+    "Changes": [
+      {
+        "Product": "XtractUniversal",
+        "Component": "Designer",
+        "Message": "Added extraction subdirectories support"
+      }
+    ]
+  },
+  {
+    "Version": "6.6.1.5",
+    "LegacyReleaseDate": "2024-05-17 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Common",
+        "Component": "General",
+        "Message": "Allow empty names in NamedList"
+      },
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "BAPI",
+        "Message": "Fix non-structure table line types"
+      }
+    ]
+  },
+  {
+    "Version": "6.6.1.4",
+    "LegacyReleaseDate": "2024-05-17 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "General",
+        "Message": "Fix deletion of renamed parameters"
+      }
+    ]
+  },
+  {
+    "Version": "6.6.1.3",
+    "LegacyReleaseDate": "2024-05-17 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "BW Cube",
+        "Message": "MDX: Fix column order of legacy extractions with key figures on rows"
+      }
+    ]
+  },
+  {
+    "Version": "6.6.1.2",
+    "LegacyReleaseDate": "2024-05-17 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "BW Cube",
+        "Message": "MDX: Support legacy extractions with key figures on rows"
+      }
+    ]
+  },
+  {
+    "Version": "6.6.1.1",
+    "LegacyReleaseDate": "2024-05-17 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "DeltaQ",
+        "Message": "Fixed a bug which would display only data sources using the language set in the connection (introduced in 1.47.0)"
+      }
+    ]
+  },
+  {
+    "Version": "6.6.1.0",
+    "LegacyReleaseDate": "2024-05-17 14:47:54Z",
+    "Changes": [
+      {
+        "Product": "XtractUniversal",
+        "Component": "BW Cube",
+        "Message": "Fix for config converter not converting custom column order in BW Cube extractions."
+      }
+    ]
+  },
+  {
+    "Version": "6.6.0.0",
+    "LegacyReleaseDate": "2024-05-17 09:55:13Z",
+    "Changes": [
+      {
+        "Product": "XtractUniversal",
+        "Component": "TableCDC",
+        "Message": "Released Monitoring Feature for Log Tables and Triggers. Update of /THEO/CDC* package required."
+      },
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "TableCDC",
+        "Message": "Released Monitoring Feature for Log Tables and Triggers. Update of /THEO/CDC* package required."
+      }
+    ]
+  },
+  {
     "Version": "6.5.2.3",
     "LegacyReleaseDate": "2024-05-15 00:00:00Z",
     "Changes": [
@@ -61,7 +181,7 @@
       {
         "Product": "Theobald.Extractors",
         "Component": "Table",
-        "Message": "Fixed a bug that caused refresh metadata to not work properly\n"
+        "Message": "Fixed a bug that caused refresh metadata to not work properly"
       }
     ]
   },
@@ -134,7 +254,7 @@
         "Product": "Theobald.Extractors",
         "Component": "General",
         "Message": "New selection & parameter system",
-        "HasReleaseNote": true
+        "ReleaseNote": "# Theobald.Extractors 2.0\n\n* BW Cube filter / variables UI is the same as for other extraction types \n* BW Cube MDX generator produces more concise queries\n* DeltaQ uses explicitly defined parameters instead of @-prefixes"
       },
       {
         "Product": "Theobald.Server",
@@ -300,7 +420,7 @@
         "Product": "XtractUniversal",
         "Component": "Destinations",
         "Message": "Json Destination: Implement file split functionality.",
-        "HasReleaseNote": true
+        "ReleaseNote": "# Xtarct Universal 6.4.1\nThe folowing destinations are affected by this change:\n- FlatFileJson\n- Google Cloud Storage\n- Huawei OBS\n"
       }
     ]
   },
@@ -312,13 +432,13 @@
         "Product": "XtractUniversal",
         "Component": "Server",
         "Message": "Introduce new endpoint to run/start extractions ",
-        "HasReleaseNote": true
+        "ReleaseNote": "## XtractUniversal 6.4.0 \nThis release introduces two new API endpoints which allow the execution of extractions. Therefore the extraction \nname is provided as part of the URL path. This leads to the following structure:\n\n- /run/$extractionName/\n  - This endpoint runs the extraction and waits for it to finish \n- /start/$extractionName/\n  - This endpoint starts the extraction and doesn't wait for the extraction to finish \n\n- Run window uses the new endpoints \n- xu.exe uses the new endpoints \n  \n- Improvements \n  - Improved structure of URLs with different endpoints for waiting or just starting an extraction \n\n- Bug fixes \n  - Fixed a bug where the user-agent was expected as URL parameter instead of http header \n"
       },
       {
         "Product": "Theobald.Server",
         "Component": "General",
         "Message": "Implement subdirectory support for the run endpoint base ",
-        "HasReleaseNote": true
+        "ReleaseNote": "## TheobaldServer 4.2.0\n- Implemented subdirectory support for the common run endpoint logic \n\n- Bug fixes \n  - Fixed a bug where user-agent was expected as query parameter instead of http header \n"
       }
     ]
   },
@@ -412,7 +532,7 @@
         "Product": "XtractUniversal",
         "Component": "Destinations",
         "Message": "Redshift destination: improvements, bug fixes and ODBC driver upgrade to version 2.1.0.0 (BREAKING). ",
-        "HasReleaseNote": true
+        "ReleaseNote": "# Xtract Universal 6.3.11\n\n## Redshift ODBC Driver upgrade\n\nThe Redshift destination was upgraded to use the latest Redshift ODBC driver version 2.1.0.0. The new implementation is not compatible to version 1.x ODBC drivers and will not work anymore with these versions.\n\n**These changes are only breaking for customers using the Redshift destination**\n\n## Improved data type mapping for Redshift destination\n\nThe Redshift destination now has improved data type mapping as follow:\n\n* Int4 type source fields are now mapped to INTEGER columns in the destination table instead of DECIMAL(10,0)\n* Int2 type source fields are now mapped to SMALLINT columns in the destination table instead of DECIMAL(5,0)\n* Raw type source fields are now mapped to VARBINARY columns in the destination table instead of VARCHAR\n\n## Bug fix for special characters in result sets\n\nThe data handling for INSERT operations was improved. E.g. some special characters have caused problems with data loads which is fixed in this version.\n\n## Increased row processing timeout\n\nThe timeout for row processing commands was increased to 300 seconds in order to now fail on long running insert operations."
       }
     ]
   },
@@ -544,7 +664,7 @@
         "Product": "Theobald.Extractors",
         "Component": "Table",
         "Message": "Updated /THEO/READ_TABLE to version 3.4.",
-        "HasReleaseNote": true
+        "ReleaseNote": "**Update /THEO/READ_TABLE to version 3.4**\n- Fixed a bug where extracting decfloat16 and decfloat34 types did not work.\n- Fixed a bug where extracting empty NUMC values would cause extraction to fail."
       }
     ]
   },
@@ -705,13 +825,13 @@
         "Product": "XtractUniversal",
         "Component": "Server",
         "Message": "Implemented a new log endpoint with responses in JSON format. \nFixed bugs in the web server. \n",
-        "HasReleaseNote": true
+        "ReleaseNote": "## XtractUniversal 6.3.0\nThis release introduces a new log API returning payloads in JSON format. The API has the following structure:\n- /logs/web\n  - web server log names  \n- /logs/web/$timestamp\n  - log entries for web server log $timestamp\n- /logs/extractions \n  - extraction run and status information \n- /logs/extractions/$name\n  - run and status information for extraction $name \n- /logs/extractions/$name/$timestamp\n  - run and status information for run $timestamp \n- /logs/extractions/$name/$timestamp/log\n  - run information and log entries for run $timestamp \n\n**https://help.theobald-software.com/en/xtract-universal/web-api**\n\n- Improvements\n  - Improved structure of the URLs where resources are identified by paths instead of URL parameters \n  - Improved error messages when logs contain corrupted data  \n  \n- Bug fixes \n  - Fixed a bug where the `/CurrentVersion` API endpoint would return invalid CSV\n  - Fixed a bug where subsequent requests for the favicon would fail"
       },
       {
         "Product": "Theobald.Server",
         "Component": "General",
         "Message": "Implemented subdirectory support for the stores",
-        "HasReleaseNote": true
+        "ReleaseNote": "## TheobaldServer 4.1.0\n- Implemented subdirectory capabilities for the stores \n- Standardized way of writing json arrays as response payload \n\n- Improvements \n  - Reduced memory consumption of stores significantly\n\n- Bug fixes\n  - Fixed cleanup logic for requests which are using Keberos authentication\n  - Fixed a bug where data cached by the webserver would be erroneously deleted"
       }
     ]
   },
@@ -850,7 +970,7 @@
         "Product": "Theobald.Server",
         "Component": "General",
         "Message": "Fixed multiple run information and cache issues.",
-        "HasReleaseNote": true
+        "ReleaseNote": "## TheobaldServer 4.0.26\n\n- The runtime will now retry to write the extractions status information if it fails. Retries will end after 15 seconds\n- Fixed the logic of whether to use the cache or not for delta extractions (ODP and DeltaQ)\n- Fixed a but where finalization of a failed extraction would not complete correctly due to follow up errors"
       }
     ]
   },
@@ -1060,7 +1180,7 @@
         "Product": "XtractUniversal",
         "Component": "DeltaQ",
         "Message": "Fixed some bugs related to legacy DeltaQ extractions conversion (see release notes for more details)",
-        "HasReleaseNote": true
+        "ReleaseNote": "## XtractUniversal 6.2.4\n\n- convert correctly length for non-unicode legacy fields\n- consider legacy empty transfer mode as tRFC (default option)\n- handle null selection type and description on legacy oltp fields conversion"
       }
     ]
   },
@@ -1072,7 +1192,7 @@
         "Product": "Theobald.Extractors",
         "Component": "TableCDC",
         "Message": "Fixed a bug where log table creation failed due to missing namespace license. Requires update of /THEO/CDC_* package. Check release notes for details",
-        "HasReleaseNote": true
+        "ReleaseNote": "- Log table names are now prefixed with 'ZTSCDC_' instead of '/THEO/CDC_'. The latter one could not be inserted into SAP table TADIR due to missing license for /THEO/ namespace."
       }
     ]
   },
@@ -1106,7 +1226,7 @@
         "Product": "Theobald.Extractors",
         "Component": "DeltaQ",
         "Message": "Fixed a bug in the activation process for DeltaQ hierarchy extractions",
-        "HasReleaseNote": true
+        "ReleaseNote": "**Theobald.Extractors 1.52.8**\n\nThis bug would prevent the update of segment names for intervals, nodes and descriptions during the extraction activation.\n\nIt was introduced in the version 1.47.0"
       }
     ]
   },
@@ -1118,7 +1238,7 @@
         "Product": "Theobald.Extractors",
         "Component": "Table",
         "Message": "Fixed a bug where table settings UI would cause an error when saving. Updated /THEO/READ_TABLE to version 3.2 (see notes).",
-        "HasReleaseNote": true
+        "ReleaseNote": "# Updated /THEO/READ_TABLE to version 3.2\n- Fixed a bug where extracting floating point data would cause an error."
       }
     ]
   },
@@ -1130,7 +1250,7 @@
         "Product": "Theobald.Extractors",
         "Component": "DeltaQ",
         "Message": "Fixed bugs in the DeltaQ extractor - Details in release notes",
-        "HasReleaseNote": true
+        "ReleaseNote": "**Theobald Extractors 1.52.6**\n\n- fixed a bug which would finish the extraction erroneously as success, when a timeout failure was expected\n- fixed check window fatal error, which would crash the designer on rfc server check failure\n- fixed default timeout reading"
       }
     ]
   },
@@ -1259,7 +1379,7 @@
         "Product": "Theobald.Extractors",
         "Component": "TableCDC",
         "Message": "Released /THEO/CDC package. **Breaking changes** - Please see release notes for details.",
-        "HasReleaseNote": true
+        "ReleaseNote": "### Breaking changes\n\n- Extractions that were created with a previous version will only work if /THEO/CDC package is installed. Deleting CDC resources will however still work even without our package.\n\n### Changes\n\n- Added support for the following databases\n - IBM DB2\n - IBM for i (DB4)\n - IBM for z/os (DB6)\n - ORACLE\n\n- The package resides in the /THEO/ namespace.\n- Improved error messages."
       }
     ]
   },
@@ -1282,7 +1402,7 @@
         "Product": "XtractUniversal",
         "Component": "General",
         "Message": "Added the result columns custom order feature",
-        "HasReleaseNote": true
+        "ReleaseNote": "**XtractUniversal 6.2.0**\n\n\nThis feature allows users to change the default order of the output columns of an extraction.\nWhen migrating from versions below 5.6.0, BW Cube extractions legacy columns order will be converted into the new one, if the ConfigConverter is selected during installation."
       },
       {
         "Product": "Theobald.Extractors",
@@ -1315,7 +1435,7 @@
         "Product": "Theobald.Server",
         "Component": "General",
         "Message": "Fixes for HTTP based Windows authentication and Table runtime parameters and logging improvements for extraction runs.",
-        "HasReleaseNote": true
+        "ReleaseNote": "## TheobaldServer 4.0.19\n\n- Fixed a bug where the HttpServer would append `realm=simple` to the `Negotiate` scheme in the `WWW-Authenticate` header.\n- Fixed a bug in the parsing logic of ad-hoc parameters in the whereClause of Table extractions.\n- Improved logging of parameter, source, destination and connection information when running an extraction."
       }
     ]
   },
@@ -1360,7 +1480,7 @@
         "Product": "Theobald.Extractors",
         "Component": "Table",
         "Message": "Updated /THEO/READ_TABLE to version 3.1",
-        "HasReleaseNote": true
+        "ReleaseNote": "**Update /THEO/READ_TABLE to version 3.1**\n- Fixed a bug where STRING and SSTRING columns would not be properly extracted when using NW library"
       }
     ]
   },
@@ -1606,13 +1726,13 @@
         "Product": "XtractUniversal",
         "Component": "Server",
         "Message": "Small fixes and improvements for error handling, scripting and logging.",
-        "HasReleaseNote": true
+        "ReleaseNote": "## Xtract Universal 6.1.1\n\n### Fixes\n\n- Fixed extraction errors being suppressed in certain situations\n- Fixed the script expressions which were trying to access source information\n- The Web Server will handle error caused by the client closing the connection more gracefully now\n\n### Features\n\n- The \"X-XU-Is-Pull-Destination\" header will now always be sent by the web server\n- The runtime now logs the servers version after creating the extraction log\n"
       },
       {
         "Product": "Theobald.Server",
         "Component": "General",
         "Message": "Small fixes and improvements to error handling, scripting and logging.",
-        "HasReleaseNote": true
+        "ReleaseNote": "## Theobald Server 4.0.13\n\n### Fixes\n\n- Fixed errors being suppressed in certain situations\n- Fixed the scripting object types to be backwards compatible\n- Fixed inconsistencies in handling the runtimes state in the error path\n- The HTTP Server will handle errors caused by the client closing the connection more gracefully now\n\n### Features\n\n- Exposed Odp UpdateMode to the scripting engine\n- The runtime now logs an application header right after creating the run log\n"
       }
     ]
   },
@@ -1973,7 +2093,7 @@
         "Product": "XtractUniversal",
         "Component": "Destinations",
         "Message": "SSRS / Power BI Report Server Data Extension: fixed crash due a bad assembly reference that was introduced in XtractUniversal 6.0\n",
-        "HasReleaseNote": true
+        "ReleaseNote": "The data extension plugin no longer uses Theobald.Distillery.Common.dll. File has been removed from the SSRS setup and will no longer be installed into Report Server / Visual Studio."
       }
     ]
   },
@@ -2133,13 +2253,13 @@
         "Product": "XtractUniversal",
         "Component": "General",
         "Message": "**Breaking Changes!** We have rewritten the web API and runtime to improve long term ergonomics, stability and maintainability.",
-        "HasReleaseNote": true
+        "ReleaseNote": "## Xtract Universal 6.0.0\n\n### Breaking changes\n\n- Web API\n  - /log?req_type=all has been removed\n    - To fetch the full logs for an extraction the prefered workflow is:\n      - Get the timestamp for the extraction from the xu.exe output or the header of the HTTP response.\n      - Request the run log for the extraction with log?req_type=extraction&name=extractionname&timestamp=extractionTimestamp\n      - If that does not hold the desired information:\n        - There now is a 'WebLog' column when listing the extractions runs with log?req_type=extraction&name=extractionname\n        - Use this timestamp to request the corresponding server log for the extraction with log?req_type=server&timestamp=serverTimestamp\n  - /log?req_type=server now yields the worker instead of listener log\n  - /metadata?name=extractionName has been removed\n    - Use [json endpoint](https://help.theobald-software.com/en/xtract-universal/advanced-techniques/metadata-access-via-http-json) instead\n  - /parameters?name=extractionName has been removed\n    - Use [json endpoint](https://help.theobald-software.com/en/xtract-universal/advanced-techniques/metadata-access-via-http-json) instead\n  - /clearResultCache has been removed\n  - /CurrentVersion does now serve a json payload\n    - it also does only serve one version, since the kernel dependency was dropped\n\nWe aim to provide a more consistent and useful Web API as part of upcoming releases.\n\n### Deprecations\n\n- The 'clearBuffer' parameter for extraction requests was renamed to 'ignoreCache' and does just that instead of purging the whole cache\n  - 'clearBuffer' will be removed in a future release\n\n### Other\n\n- Web server, result cache and the engine which runs the extractions (runtime) were rewritten.\n- When running extractions the web server now responds with an HTTP error code and an error message instead of a 200 without any data or information if the SAP system yielded an error or preparing the destination failed\n  - an error while writing the data to the destination will still only show up in the logs\n- Web server authentication: HTTPS + Designer Read access is now the same as HTTPS + Anonymous if Designer access is not restricted\n  - Before one had to supply (any) Basic credentials but they were not checked."
       },
       {
         "Product": "Theobald.Server",
         "Component": "General",
         "Message": "The new runtime is now feature complete and generally available.",
-        "HasReleaseNote": true
+        "ReleaseNote": "## Theobald Server 4.0.0\n\n- the new runtime enters general availability\n- refactoring and simplification of the new runtime\n- server code unification for running extractions against the new runtime\n- a new extraction cache for the new runtime was implemented\n- removed old HTTP server\n- the HTTP server now supports compression (gzip)\n- fixed some HTTP server bugs\n  - CORS headers did not always have the correct value\n- extractors clean up step is now correctly called after all data was processed and in any case of errors"
       }
     ]
   },
@@ -2184,7 +2304,7 @@
         "Product": "XtractUniversal",
         "Component": "DeltaQ",
         "Message": "Added the new DeltaQ component",
-        "HasReleaseNote": true
+        "ReleaseNote": "**XU 5.27.0**\nThe DeltaQ component has been moved frm the XtractKernel component into the Theobald.Extractors.\nAll windows have been re-written in WPF."
       },
       {
         "Product": "Theobald.Extractors",
@@ -2391,7 +2511,7 @@
         "Product": "Theobald.Server",
         "Component": "General",
         "Message": "Fixes and refactoring for new runtime. Fixes for CORS and error handling in HTTP server.",
-        "HasReleaseNote": true
+        "ReleaseNote": "# Theobald Server 3.9\n\nFixes and refactoring for new runtime. Fixes for CORS and error handling in HTTP server.\n\n## New Runtime\n- Refactor internals for simplicity and maintainability.\n- Implement additional extraction types.\n- Implement capability to start an extraction without waiting for it to finish.\n- Fix internal clean up procedures.\n- Fix logging.\n- Implement new result cache.\n- Rework parameter handling.\n- Fix extraction status updates.\n\n## HTTP server\n\n- Fix CORS handling.\n- Fix error handling for errors during the authentication step.\n"
       }
     ]
   },
@@ -2813,7 +2933,7 @@
         "Product": "Theobald.Server",
         "Component": "General",
         "Message": "Added common base for web worker, HTTP server backend and running extractions. An accompanying framework for writing tests for this stack was added as well. Various bug fixes.",
-        "HasReleaseNote": true
+        "ReleaseNote": "## Theobald Server 3.8\n\n- Added common base for web worker, HTTP server backend and running extractions.\n- An accompanying framework for writing tests for this stack was added as well.\n- Fixed some authentication and authorization issues in the new web server backend.\n- Fixed a bug in the HTTP server causing it to carry state to a new request if the previous one ran into an error.\n- Added service and source level support for the new runtime and web server.\n- Refactored the handling of parameters for running extractions."
       }
     ]
   },
@@ -2940,7 +3060,7 @@
         "Product": "Theobald.Extractors",
         "Component": "Table",
         "Message": "Multiple UI fixes and usability improvements.",
-        "HasReleaseNote": true
+        "ReleaseNote": "## Multiple UI fixes and usability improvements\n- Fixed a bug where an error would be thrown when trying to edit joins on same tables\n- Window for JOIN definitions now doesn't allow to define joins without specifying tables\n- It is no longer possible to add joins in extraction that has no tables defined"
       }
     ]
   },
@@ -3160,7 +3280,7 @@
         "Product": "XtractUniversal",
         "Component": "Hierarchy",
         "Message": "New Hierarchy Extractor - POSSIBLE BREAKING CHANGES for Hierarchy extractions",
-        "HasReleaseNote": true
+        "ReleaseNote": "* The algorithm for Hierarchy extractions has been completely rewritten. It's now much faster, displays results as shown in SAP GUI and the extraction results can be used more flexibly. Depending on your use case, upgrading to the new extractor could cause some issues.\n* Hierarchies with up to 1 million rows can now be extracted within minutes\n* New Hierarchy extraction editor window with option to retrieve a live preview\n* Order of entries is now identical to order shown in SAP GUI. This includes the Node Ids (for Parent-Child representation) that are now also identical to those shown in SAP GUI.\n* Additional representation: Parent-Child with Node Names. This representation is somewhere in the middle between Parent-Child and Natural representation. It contains the Id of each Node and the Id of that Node's parent. It also contains the Name of the parent Node and the InfoObject name of the parent Node.\n* Newly created Hierarchy extractions now contain two additional columns: Link and Row (see below). These new columns are only enabled for newly created Hierarchy extractions. Existing extractions will not contain these columns (to avoid breaking existing extractions due to new columns).\n* The row column indicates the row number of that row. You can use this as a primary key in databases and/or ordering criterium. This allows you to restore the order as shown in SAP just by sorting by the row column.\n* The Link column is relevant for Hierarchies with link nodes. It shows the Node Id (Parent-Child, Parent-Child with Node Names representation) or Row Number (Natural representation) of the \"original\" Node that this Node is linking to. Otherwise this column will be zero.\n* Natural Representation now correctly extracts zero SAP dates (\"00000000\") as such instead of an invalid date. If you are using Date Conversion, this could yield different results than before.\n* The configuration files of existing extractions are backwards-compatible to previous versions, even when you edit them, as long as you choose Parent-Child or Natural representation."
       }
     ]
   },
@@ -3276,7 +3396,7 @@
         "Product": "XtractUniversal",
         "Component": "Destinations",
         "Message": "Tableau destination now uses personal access tokens for authentication on Tableau Server/Cloud",
-        "HasReleaseNote": true
+        "ReleaseNote": "**Xtract Universal 5.23.1**\n\n\nAfter Tableau's MFA enforcement, the authentication with username and password through the rest api is not possible anymore, therefore the Tableau destination was changed to connect to Server or Cloud using personal access tokens."
       }
     ]
   },
@@ -3366,7 +3486,7 @@
         "Product": "ERPConnect",
         "Component": "RFC Client",
         "Message": "Various breaking changes to R3Connection API",
-        "HasReleaseNote": true
+        "ReleaseNote": "# Changes to R3Connection\nThe following properties/methods have been removed.\n\n* `MultithreadingEnvironment` The feature is always active and cannot be disabled.\n* `AllowStartProgram(string programList)`. Please contact support if you really need this feature.\n\n\nThe following properties/constructors/methods have been marked as obsolete and will be removed 2023-10-01.\n\n* `ConnectionString` --> Please use `ParseConnectionString()` instead.\n* `R3Connection(string connectionString)` --> Please use `ParseConnectionString()` instead.\n* `Open(string rfcConnectionString)`--> Please use `ParseConnectionString()` instead.\n* `OpenSSO(string ticket, bool loadBalancing)` --> Please set `LogonTicket` and `UsesLoadBalancing` instead.\n* `OpenSSO(string ticket)` --> Please set `LogonTicket` instead.\n* `Open(bool useLoadBalancing)` --> Please set `UsesLoadBalancing` instead.\n* `GetSSOTicket(bool loadBalancing)` -->  Please set `UsesLoadBalancing` instead.\n* `SetAbapDebug(bool enabled)` --> Please use external breakpoints in ABAP debugger instead.\n\n\n`ClientProtocol.RFC` has been marked as obsolete. Please use `ClientProtocol.NWRFC` instead. The default value will be switched to NWRFC 2023-10-01."
       }
     ]
   },
@@ -3477,7 +3597,7 @@
         "Product": "XtractUniversal",
         "Component": "General",
         "Message": "Fixed Kerberos Authentication issue in Power BI Report Server plugin for Report Server caused by connection pooling of net framework",
-        "HasReleaseNote": true
+        "ReleaseNote": "As recommended by Microsoft, the XU Data Extension plugin to Power Bi Report Server used a static instance of HttpClient to make requests to the XU web server when generating reports. When multiple users were generating reports at the same time, HttpClient reused existing connections as long as they made requests to the same destination (the XU web server).\n\nThe result was that the connection was authenticated using the credentials of the first user to generate a report. If another report was generated (by a different user) while that connection was still open, the credentials of the new user were ignored and the data was fetched in the name of the first user. Additionally, HttpClient was at liberty to keep connections open for an undefined amount of time. The XU webserver was not expecting this behaviour and was not enforcing a new authentication. Both issues have now been fixed.\n\nA new instance of HttpClient is now created for every connection object that the report server creates using the plugin. This guarantees a new connection being opened for each report generation."
       }
     ]
   },
@@ -3566,7 +3686,7 @@
         "Product": "Common",
         "Component": "General",
         "Message": "Added ByteSerialization and ByteBufferManager classes",
-        "HasReleaseNote": true
+        "ReleaseNote": "- Theobald.Common 2.22.0\n\nByteSerialization has implementations, in little and big endian, for serializing and deserializing different dotnet types in/from raw bytes.\n\nByteBufferManager references the ByteSerialization (according to the given endianness) and implements methods to handle writing, reading and slicing a byte buffer."
       },
       {
         "Product": "Theobald.Extractors",
@@ -3648,7 +3768,7 @@
         "Product": "XtractUniversal",
         "Component": "Security",
         "Message": "Custom authentication related security fixes and improvements.",
-        "HasReleaseNote": true
+        "ReleaseNote": "## Xtract Universal 5.21.14\n\nIncrease PBKDF2 iterations. Existing passwords will be rehashed on successful login.\nRework authentication procedure to account for old PBKDF2 configurations.\nPBKDF2 iterations and algorithm is now serialized to the user information.\nRemoved a side channel from the custom authentication of the RPC protocol."
       },
       {
         "Product": "Common",
@@ -3659,7 +3779,7 @@
         "Product": "Theobald.Server",
         "Component": "General",
         "Message": "Custom authentication related security fixes and improvements.",
-        "HasReleaseNote": true
+        "ReleaseNote": "## Theobald Server 3.6.11\n\nIncrease PBKDF2 iterations. Existing passwords will be rehashed on successful login.\nRework authentication procedure to account for old PBKDF2 configurations.\nPBKDF2 iterations and algorithm is now serialized to the user information.\nRemoved a side channel from the custom authentication of the RPC protocol."
       }
     ]
   },
@@ -3846,7 +3966,7 @@
         "Product": "XtractUniversal",
         "Component": "Destinations",
         "Message": "Oracle data provider updated and added support for connections to Oracle Autonomous DB.",
-        "HasReleaseNote": true
+        "ReleaseNote": "# Support for Oracle Autonomous DB\n\nThis release contains adjustments to support connecting to Oracle Autonomous databases with and without mTLS.\n\n# Updated Oracle destination UI \n\nThe Oracle destination UI was updated in order to cleanly display the different ways of connecting to an Oracle database:\n\n* Default connections by providing a host, port, Service name/SID, User and Password as in previous versions\n* Wallet connections needing the path to a wallet, the database user and password and the tns name of the requested connection from the wallet e.g. for connecting to an Oracle Autonomous DB with mTLS required\n* Connect Descriptor using an Oracle Connect Descriptor, user name and password e.g. for connecting to an Oracle Autonomous DB without mTLS required"
       }
     ]
   },
@@ -3880,7 +4000,7 @@
         "Product": "Theobald.Server",
         "Component": "General",
         "Message": "Logging consistency and SAP authentication fixes for the new runtime.",
-        "HasReleaseNote": true
+        "ReleaseNote": "# TheobaldServer 3.6.6\n- New runtime: Fixed a bug where extraction logs would end up in the webserver logs and vice versa\n- New runtime: Fixed a bug where the pass through of the SAP password for sources with SAP authentication enabled would not work correctly\n- Improved log entry format consistency"
       }
     ]
   },
@@ -3985,7 +4105,7 @@
         "Product": "Theobald.Extractors",
         "Component": "BW Cube",
         "Message": "Various improvements and new features in BICS cube extractor",
-        "HasReleaseNote": true
+        "ReleaseNote": "# New BICS feature: Member display \nAllows to define how members are displayed in result set: \"Text\", \"Key\" or \"Text and Key\". Selecting \"Text and Key\" will add an additional column for each selected dimension and property containing the key.\n\n# Improved metadata retrieval\nImproved the metadata retrieval especially when using BEx Queries with mandatory variables. \n\n# Internal improvements\nInternal improvements to increase extraction performance and stability. The \"BICS Fast Mode\" is not available anymore because of an improved, more efficient extraction logic."
       }
     ]
   },
@@ -4256,7 +4376,7 @@
         "Product": "Theobald.Extractors",
         "Component": "Report",
         "Message": "Updated Z_XTRACT_IS_REMOTE_REPORT to version 1.2. (Breaking change)",
-        "HasReleaseNote": true
+        "ReleaseNote": "*Changes in Z_XTRACT_IS_REMOTE_REPORT*:\n- Added Z_TS_PROG authorization object\n- Authority check on Z_TS_PROG is now performed at the beginning of extraction. Should the authority check fail and the report is assigned to an authorization group, another authority check on S_PROGRAM is performed. If both authority checks fail, the extraction is aborted with an error.\n- *IMPORTANT:* Reports not assigned to an authorization group can't be extracted anymore without having an appropriate Z_TS_PROG authorization object assigned to user."
       }
     ]
   },
@@ -4301,7 +4421,7 @@
         "Product": "XtractUniversal",
         "Component": "General",
         "Message": "Adjustments for ConfigConverter and date conversion (config conversion required)",
-        "HasReleaseNote": true
+        "ReleaseNote": "# Removed config conversion of version 2.x\nConfig Converter no longer supports direct upgrades from configuration files of XU version 2.x. Please first upgrade to version between 3.0 and 5.17.2, and then upgrade to 5.18 or higher as a second step.\n\n# Internal changes for date conversion\n* ConfigConverter must be run when upgrading from 5.17.2 or lower\n* Minor UI adjustments"
       }
     ]
   },
@@ -4357,7 +4477,7 @@
         "Product": "XtractUniversal",
         "Component": "Destinations",
         "Message": "Internal changes for extraction-specific file destination settings (config conversion required)",
-        "HasReleaseNote": true
+        "ReleaseNote": "ConfigConverter needs to be run for extraction-specific settings of the following destination types:\n* Amazon S3\n* Azure Storage\n* Google Cloud Storage\n* Hadoop\n* Flat File CSV\n* Flat File JSON"
       }
     ]
   },
@@ -4391,7 +4511,7 @@
         "Product": "Theobald.Extractors",
         "Component": "Hierarchy",
         "Message": "New Hierarchy Extractor",
-        "HasReleaseNote": true
+        "ReleaseNote": "* Completely rewritten algorithm + unit and integration tests\n* Now supports Links, Intervals, and all variations of Time Dependent Hierarchies\n* Order and Ids of retrieved elements now identical to values displayed in SAP GUI / rsh1\n* Old json configuration files still working\n* New configuration options: debug logging, show link & row column\n* New columns Link and Row only extracted for new extractions (for backwards compatibility)\n* New Representation: ParentChildWithNodeNames"
       }
     ]
   },
@@ -4403,7 +4523,7 @@
         "Product": "XtractUniversal",
         "Component": "Destinations",
         "Message": "Snowflake now deletes the remote staged file automatically",
-        "HasReleaseNote": true
+        "ReleaseNote": "**XtractUniversal 5.16.14 - PURGE parameter**\n\nAdded the parameter PURGE = TRUE for the COPY command, which will delete the staged remote file on Snowflake after the command succeeds. The \"manual\" deletion request executed from XU was removed."
       }
     ]
   },
@@ -4415,7 +4535,7 @@
         "Product": "XtractUniversal",
         "Component": "Destinations",
         "Message": "Added support for Snowflake organization account identifier",
-        "HasReleaseNote": true
+        "ReleaseNote": "**Xtract Universal 5.16.13**\n\nFrom this version on users can connect to Snowflake either using the organization account identifier, which is recommended by Snowflake, or the legacy account identifier, that relies on Snowflake regions.\n\nFor more information about Snowflake account identifiers, please check the [documentation page](\nhttps://docs.snowflake.com/en/user-guide/admin-account-identifier.html)"
       }
     ]
   },
@@ -4618,7 +4738,7 @@
         "Product": "XtractUniversal",
         "Component": "Destinations",
         "Message": "Snowflake custom SQL fix and removal of timestamp on staged csv file name",
-        "HasReleaseNote": true
+        "ReleaseNote": "- **Xtract Universal 5.16.2**\n1. Fixed custom SQL statements generation to consider correctly the bucket and file format names\n2. Removed the timestamp that was appended on the staged csv file name, to make it possible to reference it"
       }
     ]
   },
@@ -4844,7 +4964,7 @@
         "Product": "XtractUniversal",
         "Component": "General",
         "Message": "Added column mapping feature, enabled for the file csv and Tableau destinations",
-        "HasReleaseNote": true
+        "ReleaseNote": "**Xtract Universal 5.15.0**\n\nAdded the column mapping feature, which allows the columns of one extraction to be mapped according to an existing file or some other entity.\nInitially this feature is enabled for the file csv and Tableau destinations."
       },
       {
         "Product": "Theobald.Extractors",
@@ -4883,7 +5003,7 @@
         "Product": "Theobald.Extractors",
         "Component": "Table",
         "Message": "Updated Z_THEO_READ_TABLE to version 2.15.",
-        "HasReleaseNote": true
+        "ReleaseNote": "*Changes in Z_THEO_READ_TABLE*:\n- Code style change"
       }
     ]
   },
@@ -4943,7 +5063,7 @@
         "Product": "Common",
         "Component": "Licensing",
         "Message": "Updated licensing logic to no longer care about Sources limits where possible. Marked various helper methods as Obosolete. Existing licenses with Sources limit are still supported.\nRemoved display of Sources limit from About dialog.",
-        "HasReleaseNote": true
+        "ReleaseNote": "Applications should update their license validation logic to ignore a Sources limit if the license contains one."
       }
     ]
   },
@@ -4966,7 +5086,7 @@
         "Product": "Theobald.Extractors",
         "Component": "Table",
         "Message": "Updated Z_THEO_READ_TABLE to version 2.14",
-        "HasReleaseNote": true
+        "ReleaseNote": "*Changes in Z_THEO_READ_TABLE:*\n-  Changed how the run time is calculated. This prevents overflow when high timeout values are used."
       }
     ]
   },
@@ -4989,7 +5109,7 @@
         "Product": "Theobald.Extractors",
         "Component": "Report",
         "Message": "Non executable ABAP programs can't be selected in report lookup anymore.",
-        "HasReleaseNote": true
+        "ReleaseNote": "- Non executable ABAP programs can't be selected in report lookup anymore and an error is shown instead. This way users will be informed about report not being extractable already during the lookup, instead of at runtime."
       }
     ]
   },
@@ -5100,7 +5220,7 @@
         "Product": "Theobald.Extractors",
         "Component": "Table",
         "Message": "Updated Z_THEO_READ_TABLE to version 2.13.",
-        "HasReleaseNote": true
+        "ReleaseNote": "*Changes in Z_THEO_READ_TABLE*:\n- Shared memory area now expires after 1 minute without read access, instead of 1 minute without write access. This prevents extractions that take longer that 1 minute to fetch or process one package from failing."
       }
     ]
   },
@@ -5210,7 +5330,7 @@
         "Product": "XtractUniversal",
         "Component": "Destinations",
         "Message": "Where clause is now accessible through script expressions in destination folder path.",
-        "HasReleaseNote": true
+        "ReleaseNote": "Where clause is now accessible through script expressions in destination folder path in AWS S3, Hadoop and Azure Storage destinations.\n\nThe syntax is `#{TableExtraction.WhereClause}#` and only works with table type extractions."
       }
     ]
   },
@@ -5299,7 +5419,7 @@
         "Product": "XtractUniversal",
         "Component": "Destinations",
         "Message": "Introduced empty value as null setting for the Snowflake destination",
-        "HasReleaseNote": true
+        "ReleaseNote": "**XtractUniversal 5.11.14**\n\nAdded a new setting that allows users to control the Snowflake File Format parameter EMPTY_FIELD_AS_NULL.\nWhen it is true, empty values are delivered as SQL NULL into the target table on Snowflake.\nThe default value is true both on XtractUniversal and Snowflake."
       }
     ]
   },
@@ -5459,7 +5579,7 @@
         "Product": "XtractUniversal",
         "Component": "Destinations",
         "Message": "Introduced Tableau column mapping for existing .hyper files. It is required to update the Tableau Export Library folder.",
-        "HasReleaseNote": true
+        "ReleaseNote": "**Xtract Universal 5.11.4**\n\nWhen the append results setting is selected, Xtract Universal will map the columns from the running extraction with the existing Tableau file's (is there is one). The mapping is based on each column's name.\n\nThis is useful if an extraction has different columns' order when compared to existing Tableau file.\n\nIt is important to update the tableau folder on Xtract Universal's installation folder, for that download\nthe files from this [link](https://s3.eu-central-1.amazonaws.com/cdn-files.theobald-software.com/download/XtractUniversal/tableau.zip) and check the [Tableau documentation's page](https://help.theobald-software.com/en/xtract-universal/destinations/tableau#requirements)"
       }
     ]
   },
@@ -5482,7 +5602,7 @@
         "Product": "Theobald.Extractors",
         "Component": "Table",
         "Message": "Updated Z_THEO_READ_TABLE to version 2.12",
-        "HasReleaseNote": true
+        "ReleaseNote": "*Changes in Z_THEO_READ_TABLE*:\n- Fixed a bug where when data was fetched and sent to extractor too fast, it could cause some data packages to be sent multiple times\n- Background job log now displays package numbers"
       }
     ]
   },
@@ -5505,7 +5625,7 @@
         "Product": "XtractUniversal",
         "Component": "General",
         "Message": "Added a popup on run window to get SAP credentials from caller",
-        "HasReleaseNote": true
+        "ReleaseNote": "**Xtract Universal 5.11.1**\n\nWhen the source is set with the option \"Request SAP credentials from caller when running extractions\" to true, a popup will be displayed from the run window asking for credentials."
       }
     ]
   },
@@ -5627,7 +5747,7 @@
         "Product": "XtractUniversal",
         "Component": "Destinations",
         "Message": "Introduced ODBC command timeouts for the Snowflake destination",
-        "HasReleaseNote": true
+        "ReleaseNote": "**Xtract Universal 5.10.3**\n\nSince the query_timeout parameter passed in the Snowflake connection string seems to be ignored when running commands from the ODBC driver, we started to use the ODBC.CommandTimout property."
       }
     ]
   },
@@ -5661,7 +5781,7 @@
         "Product": "XtractUniversal",
         "Component": "General",
         "Message": "Added extractions limit check",
-        "HasReleaseNote": true
+        "ReleaseNote": "**Xtract Universal 5.10.0**\n\nAdded a feature which will control the amount of extractions according to the limit defined in the license.\n\nAdditionally new fields were added in the status bar to make this information more visible."
       },
       {
         "Product": "Common",
@@ -5962,7 +6082,7 @@
         "Product": "Theobald.Extractors",
         "Component": "BW Cube",
         "Message": "Support for Only_Structures behavior in MDX BEx Queries. Various bug fixes and general improvements for the Cube component.",
-        "HasReleaseNote": true
+        "ReleaseNote": "Added option \"Only Structures\" in Lookup window for MDX Queries. Enables the same behavior as the \"Legacy Metadata Retrieval\" option before XU 5.6. This must be set during lookup and can not be changed later. Customers that have Cube extractions which used the \"Legacy Metadata retrieval\" option before should run the Config Converter again."
       }
     ]
   },
@@ -6073,7 +6193,7 @@
         "Product": "ERPConnect",
         "Component": "Idoc",
         "Message": "Fixed a bug where saving an Idoc schema incorrectly changed field names",
-        "HasReleaseNote": true
+        "ReleaseNote": "# ERPConnect 6.14.19\n\nIdoc segment field names had `ST_` and `FZ_` at their beginning replaced with `USTU-` and `UFZU-`. This is due to a bug in the internal name escaping logic. This fix might break existing code that already circumvents this bug. "
       }
     ]
   },
@@ -6189,7 +6309,7 @@
         "Product": "XtractUniversal",
         "Component": "General",
         "Message": "New features for xu-config.exe",
-        "HasReleaseNote": true
+        "ReleaseNote": "**XtractUniversal 5.7.1 - xu-config.exe**\n\n- ODP extraction creation\n- Azure and S3 destinations creation\n- Created and LastChanged information for extractions\n- Extraction destination SAP object name mode and timestamp append"
       }
     ]
   },
@@ -6327,7 +6447,7 @@
         "Product": "XtractUniversal",
         "Component": "BW Cube",
         "Message": "New BWCube extractor (breaking)",
-        "HasReleaseNote": true
+        "ReleaseNote": "# Xtract Universal 5.6\n\nConfig files need to be [converted when upgrading.](https://help.theobald-software.com/en/xtract-universal/introduction/installation-and-update#upgrading-major-releases---configconverter)\n\nThere is a [knowledge base article](https://kb.theobald-software.com/cubes/bwcube-component) with some general information about the new component.\n\n## General improvements\n- Introduction of a new column name style \"Text\" that replaces the \"Use description for columns\" setting. Column names might not be unique with this style. Use at own risk.\n- Definition of runtime parameters as known from other extractors for manual filters and BEx variables\n- Introduced new runtime parameter type List\n\n## Reworked MDX Cube extraction mode\nPrevious extractions will be upgraded by our converter tool (See breaking changes)\n		\n- Updated internal structure with improvements to allow implementation of new features in the future\n- Improved extraction performance\n- Various minor bug fixes\n- New and improved GUI\n- MDX Cube extraction preview in Designer\n			\n## New BICS Cube extraction mode (BETA)\n- Replaces the previous BEx 3.x mode\n- Extraction of Infocubes and Queries using the BICS interface\n- This mode is still in beta. Use it with caution. Multiple breaking changes until final release are possible and likely\n- For using the BICS mode the user needs the [permissions as described in our knowledge base](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights#bw-query--bw-cube)\n	\n## Breaking changes\n- Custom MDX mode not supported and will not be converted. Please contact our support if you are using this mode\n- BEx 3.x mode not supported and will not be converted. Please contact our support if you are using this mode\n- Column order and naming might change\n	- Corner case: combination of column name style TextAndCode or CodeAndText and \"Use description for columns\" setting will set column name style to Text\n- Converted extractions will work as before as long as they stay unchanged	\n	- Making changes to converted extractions requires a metadata refresh. After editing the new naming scheme will be used\n- Non-Unicode systems may not be compatible with the new cube component\n\n## Known issues\n- Renaming already assigned list parameters is not yet supported and will cause issues\n- BICS metadata retrieval may fail on some systems. Please send in traces if you encounter issues with metadata retrieval"
       },
       {
         "Product": "Theobald.Extractors",
@@ -6387,7 +6507,7 @@
         "Product": "XtractUniversal",
         "Component": "Designer",
         "Message": "Improvement on change source and change destination windows' click flows.",
-        "HasReleaseNote": true
+        "ReleaseNote": "**XtractUniversal 5.4.21**\n\nThe three dots button on the change source and change destination, from this version, takes the users to the selected source's or destination's settings.\nA new button to add a source or destination was added also in both windows.\n"
       }
     ]
   },
@@ -6399,7 +6519,7 @@
         "Product": "XtractUniversal",
         "Component": "Designer",
         "Message": "Fix for log window's date filters",
-        "HasReleaseNote": true
+        "ReleaseNote": "**XtractUniversal 5.4.20**\nXtractUniversal was comparing the UI calender's date with the stored logs in UTC time, this could cause some logs to be not properly displayed or hidden when the difference between UTC and local time would change the date of the log entry."
       }
     ]
   },
@@ -6477,7 +6597,7 @@
         "Product": "XtractUniversal",
         "Component": "Designer",
         "Message": "Fix for the destination settings dialog, which was not correctly loading existing settings. Fix for an issue in the run window, where long running extraction involving a SQL destination would crash the designer.",
-        "HasReleaseNote": true
+        "ReleaseNote": "# Xtract Universal Designer 5.4.17\n* Fixed the logic loading existing destination settings in the destination settings dialog\n  * Fix for some settings getting not loaded at all\n  * Fix for a race condition when initially opening the dialog, causing an inconsistent representation\n* Fixed an occasional crash in the run window, when an extraction with a SQL destination takes longer than 30 seconds\n  * The run window now waits for the extraction to finish before loading the data from the server for the output view"
       }
     ]
   },
@@ -6521,7 +6641,7 @@
         "Product": "XtractUniversal",
         "Component": "Destinations",
         "Message": "Fix for Snowflake destination transaction control",
-        "HasReleaseNote": true
+        "ReleaseNote": "** XtractUniversal - 5.4.14 **\n\nFix for Snowflake destination transaction control for RowProcessingOnly extraction step.\nBecause Snowflake does not support explicit transaction control for DDL statements, RowProcessingOnly is the only option available for this destination."
       }
     ]
   },
@@ -6544,7 +6664,7 @@
         "Product": "XtractUniversal",
         "Component": "Setup",
         "Message": "Python setup script",
-        "HasReleaseNote": true
+        "ReleaseNote": "** Xtract Universal 5.4.12 **\n\nThe setup creation from this version on is based on a Python script that can be also manually executed"
       }
     ]
   },
@@ -6578,7 +6698,7 @@
         "Product": "XtractUniversal",
         "Component": "Designer",
         "Message": "Various UI/UX improvements",
-        "HasReleaseNote": true
+        "ReleaseNote": "**XtractUniversal 5.4.9**\n\n- Improved \"loading\" dialog usage on log window (displayed only when fetching data from server)\n- Added \"Rows\" column on log window\n- Multiple extractions deletion was reworked, in order to display one single message to confirm all operation\n- Better message for invalid source name"
       }
     ]
   },
@@ -6634,7 +6754,7 @@
         "Product": "XtractUniversal",
         "Component": "Designer",
         "Message": "Fixes for handling corrupt/empty directories and files in the config and logs directories",
-        "HasReleaseNote": true
+        "ReleaseNote": "## XtractUniversal Designer 5.4.6\n* Fixed a bug, where the designer would become unusable, when an empty directory which does not match an extraction is located in the logs directory.\n* Adjusted some error messages which appeared on corrupted extractions to be more descriptive."
       }
     ]
   },
@@ -6657,7 +6777,7 @@
         "Product": "XtractUniversal",
         "Component": "Designer",
         "Message": "Fixed issues on the run window regarding the output displayer for Sql Server destination",
-        "HasReleaseNote": true
+        "ReleaseNote": "Xtract Universal 5.4.4\n\nRe-enabled output displayer for Sql Server destination, unmaking the change committed on version 5.1.15"
       }
     ]
   },
@@ -6691,7 +6811,7 @@
         "Product": "XtractUniversal",
         "Component": "General",
         "Message": "Destination settings window uses the SAP object's name again and improvements on handling the designer disconnecting.",
-        "HasReleaseNote": true
+        "ReleaseNote": "# Xtract Universal Designer 5.4.2\n* Fixed the destination settings window, which did not load the SAP extraction information correctly and thus showed the SAP object name as \"UNDEFINED\".\n* Fixed an issue where the designer would disconnect from the server but refuse a new login with a \"already connected\" message.\n\n# Xtract Universal Server 5.4.2\n* Fixed an issue where the server would not gracefully shutdown the connection.\n  This caused unnecessary error messages in the designer."
       }
     ]
   },
@@ -6730,7 +6850,7 @@
         "Product": "XtractUniversal",
         "Component": "General",
         "Message": "Fix for a connection issue and the designer becoming unresponsive in the destination settings.",
-        "HasReleaseNote": true
+        "ReleaseNote": "# Xtract Universal Designer 5.3.3\n* A bug was fixed which caused the destination settings window to become unresponsive when fetching metadata for certain extraction types\n# Xtract Universal Server 5.3.3\n* A bug was fixed which caused the server to close the connection with a client after a successful keep alive exchange"
       },
       {
         "Product": "Theobald.Server",
@@ -6758,7 +6878,7 @@
         "Product": "XtractUniversal",
         "Component": "Designer",
         "Message": "Various fixes and improvements following the 5.2.0 release.",
-        "HasReleaseNote": true
+        "ReleaseNote": "# Xtract Universal Designer 5.3.2\n* Fixed a bug where the Connect Window would not correctly abort, when the server connection breaks\n* Fixed a bug where on broken server connections on logon multiple cryptic error message would appear\n* The \"ObjectDisposed\" error for an internal semaphore was reworked to be less technical.\n* Fixed a bug where permissions would not be applied correctly when logging into the designer\n* Fixed a bug that left the designer in an unusable state, when restarting the server"
       },
       {
         "Product": "Theobald.Server",
@@ -6835,7 +6955,7 @@
         "Product": "XtractUniversal",
         "Component": "Designer",
         "Message": "Make sure to update designer AND server!",
-        "HasReleaseNote": true
+        "ReleaseNote": "* Overhaul for the designer backend\n* Improvements for stability\n* Cleanup for the handling of disconnects\n* New log window"
       },
       {
         "Product": "Theobald.Server",
@@ -6868,7 +6988,7 @@
         "Product": "Theobald.Extractors",
         "Component": "Table",
         "Message": "Fixed a bug where metadata of views was not retrieved correctly.",
-        "HasReleaseNote": true
+        "ReleaseNote": "- Fixed a bug where the metadata of dynamic fields of views would not get fetched on table lookup.\n- Fixed a bug where columns of views were not in correct order. The columns are now in the same order they are defined in in SAP."
       }
     ]
   },
@@ -6957,7 +7077,7 @@
         "Product": "XtractUniversal",
         "Component": "Destinations",
         "Message": "Parquet: Fix for Spark compatibility mode column names that contain not supported symbols",
-        "HasReleaseNote": true
+        "ReleaseNote": "Column names can only contain `a-z`, `A-Z`, `0-9` and underscore (`_`), all other symbols will be replaced by underscores (`_`).\nThe previous implementation was not fully compatible with Apache Spark implementations."
       }
     ]
   },
@@ -7023,7 +7143,7 @@
         "Product": "XtractUniversal",
         "Component": "Setup",
         "Message": "Tableau's files are not anymore shipped along with XtractUniversal's setup",
-        "HasReleaseNote": true
+        "ReleaseNote": "**Xtract Universal 5.1.9**\n\nTableau's files, from this version, will not be shipped anymore along with XtractUniversal's setup, therefore these files must be manually downloaded and placed in the correct place.\n\nFor more information about it, please check the *[Tableau destination documentation page](https://help.theobald-software.com/en/xtract-universal/destinations/tableau \"Xtract Universal docu\")*"
       }
     ]
   },
@@ -7090,7 +7210,7 @@
         "Product": "XtractUniversal",
         "Component": "Destinations",
         "Message": "Introducing file size limit setting for the Snowflake destination",
-        "HasReleaseNote": true
+        "ReleaseNote": "**Xtract Universal 5.1.5**\n\nThe file size limit setting for the Snowflake destination makes it possible to control the data volume update, avoiding too small or too big uploads."
       }
     ]
   },
@@ -7179,7 +7299,7 @@
         "Product": "XtractUniversal",
         "Component": "Designer",
         "Message": "Improvements and fixes for the run window",
-        "HasReleaseNote": true
+        "ReleaseNote": "**Xtract Universal  5.1.3 - Improvements for the run window**\n\n- New log viewer with a grid\n- New output viewer with grid and column filters (only for CSV, Json, SqlServer, SQL Server Reporting Services, Alteryx and Qlik destinations)\n- Performance and stability improvements"
       }
     ]
   },
@@ -7324,7 +7444,7 @@
         "Product": "Theobald.Extractors",
         "Component": "General",
         "Message": "Table and ODP: Added setting to automatically adjust currency decimals based on reference field",
-        "HasReleaseNote": true
+        "ReleaseNote": "- design and runtime SAP users need access to table TCURX\n- existing extractions require metadata refresh (Table) or new lookup (ODP)\n- metadata will be adjusted to fixed decimal with 14 decimal places"
       }
     ]
   },
@@ -7432,7 +7552,7 @@
         "Product": "XtractUniversal",
         "Component": "General",
         "Message": "SAP passwords are encrypted in context of XU service account (breaking)",
-        "HasReleaseNote": true
+        "ReleaseNote": "# Xtract Universal 5.0\nConfig files need to be [converted when upgrading.](\nhttps://help.theobald-software.com/en/xtract-universal/introduction/installation-and-update#upgrading-major-releases---configconverter)\n\n## SAP passwords are encrypted in context of XU Service Account (breaking)\nWhen creating new sources or editing existing ones, the SAP passwords\nare encrypted with a key that is derived from the Windows account that\nis configured to run the XU service.\nThe passwords can only be accessed from the same service account,\nwhen restoring a backup or moving the files to a different machine.\nIf the service account changes, passwords need to be re-entered manually.\n\n## SAP passwords are stored seperately\nPasswords are no longer part of sources/[name]/general.json.\nThey are stored in sources/[name]/password.json now.\n\n## Various changes\n* Using new TheoRPC implementation for Designer/Server communication\n* Removed backward compatibility for custom users before XU 3.0\n* Table Join extractions cannot be created any more\n* Renamed XtractWebServer.exe to Theobald.Xu.Web.Listener.exe\n* Renamed XtractRun.exe to Theobald.Xu.Web.Worker.exe"
       },
       {
         "Product": "Theobald.Server",
@@ -7471,7 +7591,7 @@
         "Product": "XtractUniversal",
         "Component": "Destinations",
         "Message": "Fixed a Bug in the PowerBI Report Server (SSRS) Destination. All pending HttpRequests were cancelled everytime the DataExtension finished generating a Report. This caused intermittent failures when multiple reports were rendered at the same time by the Report Server.",
-        "HasReleaseNote": true
+        "ReleaseNote": "Customers should update the Plugin on the Report Server. Updating the Plugins in Visual Studio is not necessary."
       }
     ]
   },
@@ -7599,7 +7719,7 @@
         "Product": "Theobald.Extractors",
         "Component": "BW Cube",
         "Message": "Updated cube component with new BICS mode (beta).",
-        "HasReleaseNote": true
+        "ReleaseNote": "The cube component got a major update containing new features and internal improvements.\n\n## MDX mode\n\n- **Improved performance** through some internal optimizations\n- **Runtime Parameter** are supported in variables and dimension filters\n\n## BICS mode (Beta)\n\nWe have added a new cube extraction mode using the BICS interface. This interface is currently in a public beta stadium and should only be used for preview and testing purposes. There can be major breaking changes until the stable release."
       }
     ]
   },
@@ -7686,7 +7806,7 @@
         "Product": "XtractUniversal",
         "Component": "Destinations",
         "Message": "S3 destination: fixed a bug in the rollback logic. Multiple internal changes.",
-        "HasReleaseNote": true
+        "ReleaseNote": "- Fixed a bug in the rollback logic, where if an extraction error occurred before any data was uploaded to S3, the destination would try to roll back the upload and run into an error since there was no data to delete.\n- Multiple internal code changes and improvements in the S3 destination."
       },
       {
         "Product": "ERPConnect",
@@ -7752,7 +7872,7 @@
         "Product": "Theobald.Extractors",
         "Component": "Report",
         "Message": "Fixed function module recognition based on signature.",
-        "HasReleaseNote": true
+        "ReleaseNote": "## Fixed function module recognition based on signature.\n\nIn cases where the name of the used function module is unknown, the extractor tries to identify and verify the function module based on its signature. This check has now been fixed."
       }
     ]
   },
@@ -7972,7 +8092,7 @@
         "Product": "XtractUniversal",
         "Component": "Designer",
         "Message": "Several UI/UX changes",
-        "HasReleaseNote": true
+        "ReleaseNote": "### 4.32.1 - Several UI/UX changes\n\n- Extraction main window size adjustment for 1920x1080x1.25%\n- Preview mode removed from extraction general settings\n- Delete multiple extraction with single confirmation\n- Source and destination list windows display the default entry as selected"
       }
     ]
   },
@@ -8096,7 +8216,7 @@
         "Product": "XtractUniversal",
         "Component": "Destinations",
         "Message": "MicroStrategy folders are now entered by their ID instead of their name. This change is breaking.",
-        "HasReleaseNote": true
+        "ReleaseNote": "# How to upgrade your extraction\n\nIf you use a MicroStrategy folder for your extractions you have to enter it´s ID instead of the name into the folder ID textbox of the destination settings of your extraction.\nYou can find the ID of a folder by right clicking it in the MicroStrategy Workstation and select Properties."
       }
     ]
   },
@@ -8169,7 +8289,7 @@
         "Product": "XtractUniversal",
         "Component": "Destinations",
         "Message": "S3, Azure Storage & Google Cloud Storage destination now prepend an 'x' to object names if they don't begin with a letter. This change is breaking.",
-        "HasReleaseNote": true
+        "ReleaseNote": "- If the name of an uploaded object does not begin with letter, it will be prefixed with an 'x'. \nE.g. an object that would normally be called `_namespace_tabname.csv` will now be called\n`x_namespace_tabname.csv` when uploaded to S3, Azure Storage or Google Cloud Storage.\n- This change is to make sure that all uploaded object are compatible with Azure Data Factory, \nHadoop and Spark, which require object names to begin with a letter or give special meaning to \nobjects whose name starts with certain non-alphabetic characters. E.g. in Spark all objects that\nbegin with an `_` or `.` are hidden.\n- This change is breaking."
       }
     ]
   },
@@ -8203,7 +8323,7 @@
         "Product": "XtractUniversal",
         "Component": "Destinations",
         "Message": "Added new Destination \"Sql Server Reporting Services\" and corresponding Data Extension Plug-ins for Visual Studio and Power BI Report Server.",
-        "HasReleaseNote": true
+        "ReleaseNote": "Data Extension Plug-ins are compatible with Visual Studio 2017, Visual Studio 2019, and Power BI Report Server January 2020 or later."
       }
     ]
   },
@@ -8395,7 +8515,7 @@
         "Product": "XtractUniversal",
         "Component": "Destinations",
         "Message": "Extended script expressions in folder paths (Amazon S3 & Azure Storage)",
-        "HasReleaseNote": true
+        "ReleaseNote": "# Update for script expressions in folder paths\n\n* ODP Selections are available in script expressions: `#{Extraction.Fields[\"SPRAS\"].Selections[0].Value}#`\n* Script expressions in folder paths are available for Amazon S3 destination\n* Folder path on destination level is available for Amazon S3 destination\n"
       }
     ]
   },
@@ -8719,7 +8839,7 @@
         "Product": "Theobald.Extractors",
         "Component": "Report",
         "Message": "Multiple bug fixes and improvements",
-        "HasReleaseNote": true
+        "ReleaseNote": "- Fixed a bug where cancelling the edits of the a report extraction would still overwrite selection values and column changes with new values.\n- Fixed a bug where using runtime parameters would make it impossible to run automatic column detection or preview.\n- Improved the UI for selection parameters to better support runtime parameters."
       }
     ]
   },
@@ -8769,7 +8889,7 @@
         "Product": "XtractUniversal",
         "Component": "Setup",
         "Message": "Fixed an Alteryx plugin installation issue and added service start conditions",
-        "HasReleaseNote": true
+        "ReleaseNote": "## Xtract Universal - 4.27.6\n- To find a valid Alteryx installation, XU's setup will not only check its folder, but for the file \bin\RunTimeData\DefaultSettings.xml, which is mandatory for the plugin installation. If it is not found, setup will consider that there is no Alteryx instance was found.\n\n- XtractUniversal's service now is started according to some conditions after installation:\n	1. Service is freshly installed\n	2. Service existed before and is set to start automatically\n	3. Service existed before, is set to start manually, but was running before new installation"
       },
       {
         "Product": "Theobald.Extractors",
@@ -8846,7 +8966,7 @@
         "Product": "Common",
         "Component": "WPF",
         "Message": "Introduced new messaging system",
-        "HasReleaseNote": true
+        "ReleaseNote": "##Theobald.Common 2.14.6\n- Introduced new WPF window based messaging system, which allows the displaying of message windows always on screen's top most position, overlapping all current opened windows. \n- The messages are displayed always on the center of the screen\n- No owner parameter is needed, as it considers always the current active window for it.\n- All calls can be done through TheoMessageHelper.\n- MessageBoxHelper is still available, but was marked as obsolete."
       }
     ]
   },
@@ -8869,7 +8989,7 @@
         "Product": "XtractUniversal",
         "Component": "Server",
         "Message": "Added JSON HTTP API for extractions",
-        "HasReleaseNote": true
+        "ReleaseNote": "JSON API endpoints:\n- `/config/extractions/<extraction_name>/result-columns`\n- `/config/extractions/<extraction_name>/parameters`\n- `/config/extractions/[?destinationType=typename]`"
       }
     ]
   },
@@ -8897,7 +9017,7 @@
         "Product": "Theobald.Extractors",
         "Component": "BAPI",
         "Message": "Several improvements and new features",
-        "HasReleaseNote": true
+        "ReleaseNote": "# Improvements for BAPI extractor\n\nThe internal representation has changed, **old extractions will no longer work and need to be recreated.** The new BAPI component packs several new features:\n\n- EXPORTS\n- CHANGINGS\n- nested structures and tables\n- transaction commit by calling `BAPI_TRANSACTION_COMMIT`\n- values for tables can now be entered or parameterized per row\n- Now specifies whether a parameter is supplied or requested from the SAP system. This allows for optimizations when using NWRFC and for the function modules default values to be used."
       }
     ]
   },
@@ -8965,7 +9085,7 @@
         "Product": "XtractUniversal",
         "Component": "Destinations",
         "Message": "Azure Storage: Added support for script expressions in folder names",
-        "HasReleaseNote": true
+        "ReleaseNote": "# Supported custom script variables for folder names\n\n* `Source.Name`\n* `Extraction.ExtractionName`\n* `Extraction.Type`\n* `Extraction.SapObjectName`\n* `Extraction.Context` (only contains values for ODP extractions)\n* `Extraction.Timestamp`\n\n# Additional changes\n\n* File splitting uses the JEDEC definition of MB now, i. e. it counts powers of two instead of ten (all destinations)\n* Folder name for Azure Storage is written to extraciton log"
       }
     ]
   },
@@ -9097,7 +9217,7 @@
         "Product": "Common",
         "Component": "General",
         "Message": "Fix for writing TimeSpan on JsonWriter class",
-        "HasReleaseNote": true
+        "ReleaseNote": "##2.14.1 - Fix for writing TimeSpan on JsonWriter class\n\n* Fixed bug for writing TimeSpan on JsonWriter class, which caused an addition of an extra hour to its total time when the minutes property had its value greater or equal to 30\n* Centralization of TimeSpan serialization to string in StringHelper.ToIso8601Duration(TimeSpan)\n* Addition of unit tests for JsonWriter.Write(string, Timespan) and StringHelper.ToIso8601Duration(TimeSpan)"
       }
     ]
   },
@@ -9191,7 +9311,7 @@
         "Product": "XtractUniversal",
         "Component": "Destinations",
         "Message": "Removed support for Tableau TDE",
-        "HasReleaseNote": true
+        "ReleaseNote": "# Xtract Universal 4.23.0\n\nTableau TDE support has been removed. All existing destinations will produce .hyper files instead of .tde files now. No manual action required."
       }
     ]
   },
@@ -9291,7 +9411,7 @@
         "Product": "XtractUniversal",
         "Component": "Destinations",
         "Message": "Added support for SAP Data Warehouse Cloud.",
-        "HasReleaseNote": true
+        "ReleaseNote": "Installing HANA Client 2.6.61 is required for using the HANA destination."
       }
     ]
   },
@@ -9303,7 +9423,7 @@
         "Product": "XtractUniversal",
         "Component": "Destinations",
         "Message": "Snowflake destination driver change: SnowSql was replaced with ODBC",
-        "HasReleaseNote": true
+        "ReleaseNote": "##Xtract Universal 4.21.6\n**Snowflake destination driver change: SnowSql was replaced with ODBC**\n\nDue to this change, the performance for this destination was considerably improved."
       }
     ]
   },
@@ -9370,7 +9490,7 @@
         "Product": "XtractUniversal",
         "Component": "Designer",
         "Message": "UI fixes and improvements",
-        "HasReleaseNote": true
+        "ReleaseNote": "## Xtract Universal 4.21.3\n\n* Fixed issue in connect window, that prevented connection if hitting enter instead of clicking on the confirm button\n* Fixed issue that would not enable the certificate selection button on window start even if HTTPS was activated in Server Settings - Web Server\n* Improvement for access management control for better displaying access levels. So when checking any access level, all its lower levels are automatically checked and when unchecking, its upper levels are automatically unchecked. \n* Deleting multiple extractions now is correctly supported through the main window\n\n"
       }
     ]
   },
@@ -9457,7 +9577,7 @@
         "Product": "XtractUniversal",
         "Component": "Server",
         "Message": "Web server access can now be restricted to custom users",
-        "HasReleaseNote": true
+        "ReleaseNote": "# Xtract Universal 4.20.0\n\nWeb server access can now be restricted to custom users. Users will have to authenticate using *HTTP Basic* authentication.\n\nPasswords for custom users now have to be at least eight characters long. This does not affect already existing passwords."
       }
     ]
   },
@@ -9601,7 +9721,7 @@
         "Product": "Theobald.Extractors",
         "Component": "Table",
         "Message": "Various fixes & improvements for Table GUI",
-        "HasReleaseNote": true
+        "ReleaseNote": "## Theobald.Extractors 1.15.6\n\n* Checking/unchecking conversion routing of a single column no longer affects other columns\n* Metadata refresh doesn't disable conversion routines any more\n* Metadata refresh retrieves index information now\n\n"
       }
     ]
   },
@@ -9750,7 +9870,7 @@
         "Product": "XtractUniversal",
         "Component": "Designer",
         "Message": "New status bar and other UI improvements",
-        "HasReleaseNote": true
+        "ReleaseNote": "# Xtract Universal 4.18.8 - New status bar and other UI improvements\n\n* New status bar that displays connection, current authentication mode and license information\n* Layout change for various windows\n* Fixed bug for S3 destination definition window, that would not allow users to type the bucket name manually when using the IAM role authentication mode\n* User name now is saved independently from the remember password control's check state on the connect window"
       }
     ]
   },
@@ -9795,7 +9915,7 @@
         "Product": "XtractUniversal",
         "Component": "Destinations",
         "Message": "Various fixes and improvements for Tableau",
-        "HasReleaseNote": true
+        "ReleaseNote": "# Xtract Universal 4.18.4 - Various fixes and improvements for Tableau\n\n* Updated Tableau Extract API 2.0 to 2019.2.6\n* XtractCleanup should now cleanup all Tableau logs\n* Fixed type mapping for Unicode strings"
       }
     ]
   },
@@ -9818,7 +9938,7 @@
         "Product": "XtractUniversal",
         "Component": "Destinations",
         "Message": "Included Google Cloud Platform regions for Snowflake destination ",
-        "HasReleaseNote": true
+        "ReleaseNote": "## Google Cloud Platform regions for Snowflake destination \n\nThe following GCP regions are now available for the Snowflake destination:\n\n- US Central1 (Iowa) - us-central1.gcp\n- Europe West2 (London) - europe-west2.gcp\n- Europe West4 (Netherlands) - europe-west4.gcp"
       }
     ]
   },
@@ -9830,7 +9950,7 @@
         "Product": "XtractUniversal",
         "Component": "Destinations",
         "Message": "Implemented retry logic for web requests in Azure Storage destination and in AWS S3 destination.",
-        "HasReleaseNote": true
+        "ReleaseNote": "## Retry logic for cloud storage destinations.\n\nImplemented retry logic for web requests in Azure Storage destination and in AWS S3 destination. Now when Azure Storage destination or AWS S3 destination send a request to the API during an upload, if the request fails, it will be resent. The delay between each retry grows exponentially, starting at 1 second. Maximum delay is 60 seconds, after which the extraction fails.\n\nThis change will prevent extractions from failing due to transient faults in connection between Xtract Universal and S3 / Azure Storage or short service downtimes in the cloud environemnts.\n\n### More technical information:\n\nhttps://docs.aws.amazon.com/apigateway/api-reference/handling-errors/\n\nhttps://docs.microsoft.com/en-us/azure/architecture/best-practices/retry-service-specific#general-rest-and-retry-guidelines"
       }
     ]
   },
@@ -9886,7 +10006,7 @@
         "Product": "XtractUniversal",
         "Component": "Destinations",
         "Message": "The Parquet destination now offers a compatibility mode for Apache Spark",
-        "HasReleaseNote": true
+        "ReleaseNote": "# Xtract Universal 4.17.0\n\nThe Parquet destination now offers a compatibility mode for Apache Spark\n\n- Time values will not be converted and saved as strings\n- Single byte values (UINT8 / INT1) will be saved as INT16"
       }
     ]
   },
@@ -9898,7 +10018,7 @@
         "Product": "Theobald.Extractors",
         "Component": "ODP",
         "Message": "Added subscription suffix ",
-        "HasReleaseNote": true
+        "ReleaseNote": "# Theobald.Extractors 1.15.1\n\nThe subscription suffix can be set during runtime and is used to differentiate two subscriptions (inits) on a single SAP system (e.g. dev and test on a single QA SAP system)."
       }
     ]
   },
@@ -9943,7 +10063,7 @@
         "Product": "XtractUniversal",
         "Component": "Destinations",
         "Message": "SnowSql driver version 1.2.9 is now recommended for the Snowflake destination",
-        "HasReleaseNote": true
+        "ReleaseNote": "### SnowSql driver version 1.2.9 is now recommended for the Snowflake destination\n\nThis includes the following:\n- Test of XtractUniversal + SnowSql 1.2.9 + Snowflake\n- Improvement for SQL statements identing within Snowflake destination\n- Fix for displaying the server version when testing Snowflake connection"
       }
     ]
   },
@@ -9988,7 +10108,7 @@
         "Product": "XtractUniversal",
         "Component": "Destinations",
         "Message": "Qlike(Sense): Fixed a bug where QlikSense timed out after 5 minutes on the initial request ",
-        "HasReleaseNote": true
+        "ReleaseNote": "# Xtract Universal 4.16.2\n\nThis fixes a timeout issue in QlikSense when no data arrived for 5 minutes on the initial request. QlikSense now respects the *Timeout* setting of the REST connection instead.\n\n**Note**: This fix might require you to adjust this setting for existing REST connections to XU as the default is 30 seconds. "
       }
     ]
   },
@@ -10011,7 +10131,7 @@
         "Product": "XtractUniversal",
         "Component": "Destinations",
         "Message": "S3 destination now logs the requests to AWS S3 API.",
-        "HasReleaseNote": true
+        "ReleaseNote": "### S3 destination now logs information about the requests made to AWS S3 API.\n\nThis includes the following:\n- Request URL\n- HTTP Method (POST, GET, PUT or DELETE)\n- Request ID pair (https://aws.amazon.com/premiumsupport/knowledge-center/s3-request-id-values/)"
       }
     ]
   },
@@ -10068,7 +10188,7 @@
         "Product": "XtractUniversal",
         "Component": "Security",
         "Message": "Enforcement of access restriction for the web server",
-        "HasReleaseNote": true
+        "ReleaseNote": "# Xtract Universal 4.14.3\n\nEnforcement of access restriction for the web server\n\n## Source\n\nThe web server now correctly enforces source-level permissions. \nTo run an extraction the user needs to have read access for the extraction and the source. \n\n## Bugs\n\n- [H] Fixed a bug where the extraction list API would list extractions the user was not allowed to read\n- [L] Fixed a bug where the /status web API would not respond to requests with a missing timestamp argument"
       }
     ]
   },
@@ -10124,7 +10244,7 @@
         "Product": "ERPConnect",
         "Component": "General",
         "Message": "Various small API changes (see release notes for details)",
-        "HasReleaseNote": true
+        "ReleaseNote": "# ERPConnect 6.13.0\n\n* fix for parameters with decfloat types\n* added RFCParameter.SetValueInternal()\n* marked RFCParameter.GetLength() as obsolete\n* removed RFCServerFunctionCollection.Find() (obsolete)\n* removed RFCTableColumn.FixedLength (obsolete) - this also affects LINQtoERP, please regenerate your code"
       },
       {
         "Product": "ERPConnect",
@@ -10141,7 +10261,7 @@
         "Product": "XtractUniversal",
         "Component": "Destinations",
         "Message": "Several improvements related to Parquet",
-        "HasReleaseNote": true
+        "ReleaseNote": "# Xtract Universal 4.14.0\n\nSeveral improvements related to Parquet\n\n## Features\n- Parquet files are now compressed using *GZIP* \n- Parquet file format can now be selected *in S3 AWS* and *Azure* destinations\n- Time values will automatically be converted to TIME_MILLIS type <br> Exceptions:\n  - `'______'` (*whitespaces*) -> 00:00:00\n  - `'240000'` -> 23:59:59\n\n## Bugs\n- Fixed a bug where empty results created invalid Parquet files\n- Fixed a bug where packed numbers had an incorrect total length"
       }
     ]
   },
@@ -10153,7 +10273,7 @@
         "Product": "XtractUniversal",
         "Component": "Destinations",
         "Message": "Azure Storage now has folder path setting in both destination definition settings and in extraction specific destination settings. Fixed a bug where using special characters in folder paths would cause an error during upload to Azure Storage.",
-        "HasReleaseNote": true
+        "ReleaseNote": "- Azure Storage now has folder path in both destination definition settings and in extraction specific destination settings. The folder path in extraction specific destination settings extends the folder path from the destination definition settings.\n- Fixed a bug where using some special characters in folder paths would cause an error."
       }
     ]
   },
@@ -10386,7 +10506,7 @@
         "Product": "ERPConnect",
         "Component": "General",
         "Message": "IsSupplied Property is now also persisted when serializing RFCParameter.",
-        "HasReleaseNote": true
+        "ReleaseNote": "This change was made to fix a bug where deserializing an RFCFunction via LoadFromXML would deserialize all the export parameters as `IsSupplied = true` causing an empty string to be sent to SAP. This in turn would cause SAP to not use the default values for those parameters."
       }
     ]
   },
@@ -10398,7 +10518,7 @@
         "Product": "XtractUniversal",
         "Component": "General",
         "Message": "Fixes for timeouts and connection issues",
-        "HasReleaseNote": true
+        "ReleaseNote": "# Xtract Universal 4.11.14\n\nFixes for timeouts and connection issues\n\n- Fixed a bug that could cause extractions to get stuck in a running state while not actually running anymore\n- Increased initial connection timeout for xu.exe from 10 to 60 seconds\n- Introduced a new return code for timeouts in xu.exe (1040)"
       }
     ]
   },
@@ -10477,7 +10597,7 @@
         "Product": "Theobald.Extractors",
         "Component": "ODP",
         "Message": "Improved monitoring for subscriptions and requests",
-        "HasReleaseNote": true
+        "ReleaseNote": "# Theobald.Extractors 1.14.11\n\nImproved monitoring for subscriptions and requests\n\n## Active Subscriptions window\n- Fixed a bug where the window would not show subscriptions with zero requests\n- Added a filter input for the queue name\n- Window can be resized now\n\n## Logging\n\nThe component now logs subscriber type, name, process and run"
       }
     ]
   },
@@ -10807,7 +10927,7 @@
         "Product": "Theobald.Extractors",
         "Component": "Table",
         "Message": "Updated Z_THEO_READ_TABLE to version 2.10. ",
-        "HasReleaseNote": true
+        "ReleaseNote": "- Z_THEO_READ_TABLE now supports conversion exits\n- Fixed timeout issues when extraction was ran in a background job and processing of a data package on the client side took longer than 90 seconds\n- Background job log in SM37 is now more verbose"
       }
     ]
   },
@@ -11473,13 +11593,13 @@
         "Product": "XtractUniversal",
         "Component": "ODP",
         "Message": "Several fixes (Bugs introduced in 4.2.15.2)",
-        "HasReleaseNote": true
+        "ReleaseNote": "# Xtract Universal 4.2.23\n\n- Fix for hierarchies in **merged** mode where caching could possibly cause data loss\n- Fix for *\"XML format  currently not supported\"* error when result was empty\n- Fix for very wide (~200+ columns) extractors that caused the extraction to fail\n- RAW byte arrays with all bytes set to **0** now have correct values instead of `null`"
       },
       {
         "Product": "Theobald.Extractors",
         "Component": "ODP",
         "Message": "Several fixes for execution",
-        "HasReleaseNote": true
+        "ReleaseNote": "# Theobald.Extractors 1.10.18\n\n- Fix for *\"XML format  currently not supported\"* error when result was empty\n- Fix for very wide (~200+ columns) extractors that caused the extraction to fail\n- RAW byte arrays with all bytes set to **0** now have correct values instead of `null`"
       }
     ]
   },
@@ -11491,7 +11611,7 @@
         "Product": "Common",
         "Component": "General",
         "Message": "New DeleteFile method in IOHelper",
-        "HasReleaseNote": true
+        "ReleaseNote": "Move DeleteFile method from Xtract.Server.Persistence.StatisticsStore to Theobald.Common.IOHelper"
       },
       {
         "Product": "Theobald.Extractors",
@@ -11562,7 +11682,7 @@
         "Product": "XtractUniversal",
         "Component": "General",
         "Message": "A portable version of the xu.exe running on x64 Linux can now be downloaded",
-        "HasReleaseNote": true
+        "ReleaseNote": "https://cdn-files.theobald-software.com/download/XtractUniversal/xu.elf.tar.gz"
       }
     ]
   },
@@ -11655,7 +11775,7 @@
         "Product": "XtractUniversal",
         "Component": "Server",
         "Message": "This version fixes two issues related to primary keys",
-        "HasReleaseNote": true
+        "ReleaseNote": "# Xtract Universal 4.2.14\n\nThis version fixes two issues related to primary keys\n\n## Fixed issues\n- custom SQL generator now correctly uses the selected primary keys\n- deselection of all primary keys now causes no primary keys to be used instead of the defaults"
       }
     ]
   },
@@ -11705,7 +11825,7 @@
         "Product": "XtractUniversal",
         "Component": "Destinations",
         "Message": "Several fixes and enhancements for Snowflake destination",
-        "HasReleaseNote": true
+        "ReleaseNote": "- Remove SnowSql and related files uninstallation\n- Fix for PK script generation in drop and create, create if exists and merge statements\n- Enhancements for logging\n- Removed wildcards from setup"
       }
     ]
   },
@@ -11728,13 +11848,13 @@
         "Product": "XtractUniversal",
         "Component": "Table",
         "Message": "Several fixes and improvements",
-        "HasReleaseNote": true
+        "ReleaseNote": "### ODP/Table GUI Preview\n- Correctly displays records again\n- Column names now match the selected column name style\n\n### Table\n- The Alias for table fields was removed as it was not working correctly. To prevent naming conflicts when joining tables please use the *PrefixedCode* column name style.\n- Aggregated fields now have a generated column name with the aggregate function name preceeding the column name (e.g. *Minimum_MARA~BRGEW*). **This could break existing workflows that use aggregate functions.** "
       },
       {
         "Product": "Theobald.Extractors",
         "Component": "General",
         "Message": "Fixed the preview GUI. Removed the broken alias functionality from table subcomponent",
-        "HasReleaseNote": true
+        "ReleaseNote": "### ODP/Table GUI Preview\n- Correctly displays records again\n- Column names now match the selected column name style\n\n### Table\n- The Alias for table fields was removed as it was not working correctly. To prevent naming conflicts when joining tables please use the *PrefixedCode* column name style.\n- Aggregated fields now have a generated column name with the aggregate function name preceeding the column name (e.g. *Minimum_MARA~BRGEW*). **This could break existing workflows that use aggregate functions.** "
       }
     ]
   },
@@ -11856,7 +11976,7 @@
         "Product": "XtractUniversal",
         "Component": "Destinations",
         "Message": "Fixes for column names of database destinations and improved XSTRING support.",
-        "HasReleaseNote": true
+        "ReleaseNote": "# Xtract Universal 4.1.6\n\n## Table Destinations\n- Improved support for XSTRING.\n\n## Bug fixes\n- Fixed a bug where column name styles were not applied in table destinations.\n- Fixed a bug where table column names might be out of the range of allowed identifiers for some database destinations."
       },
       {
         "Product": "Theobald.Extractors",
@@ -11999,7 +12119,7 @@
         "Product": "XtractUniversal",
         "Component": "Destinations",
         "Message": "Power BI Connector is now signed and can be trusted to keep the Power BI security settings on the recommended level",
-        "HasReleaseNote": true
+        "ReleaseNote": "#### Installation\nMove the **.pqx** file to **%userprofile%\Documents\Power BI Desktop\Custom Connectors**. You can remove the **.mez** file if it exists.\n\n\n#### Trusting the connector\nMicrosoft's documentation on how to trust connectors for Power BI can be found [here](https://docs.microsoft.com/en-us/power-bi/desktop-trusted-third-party-connectors).\nThe certificate thumbprint can be found in the *thumbprint.txt* file in the *powerbi* subdirectory.\n\nAlternatively, you can run the *trust-connector.ps1* script as administrator to automatically modify the registry on your machine."
       }
     ]
   },
@@ -12085,7 +12205,7 @@
         "Product": "XtractUniversal",
         "Component": "Destinations",
         "Message": "Fixes for Column Name Style related issues introduced in version 4.0.0",
-        "HasReleaseNote": true
+        "ReleaseNote": "- Description for style `CodeAndText` and `TextAndCode` is no longer appended twice\n- Qlik destination respects proper capitalization of column names\n- Qlik destination uses correct Column Name Style (`Code`) for script generation and data transfer\n- Alteryx Plugin and Power BI Connector correctly respect the selected Column Name Style"
       }
     ]
   },
@@ -12164,7 +12284,7 @@
         "Product": "Theobald.Extractors",
         "Component": "Table",
         "Message": "Added an icon indicating whether a table field is indexed. Number of rows can now be counted (only with Z_THEO_READ_TABLE) or estimated (using other function modules) in the editor GUI.",
-        "HasReleaseNote": true
+        "ReleaseNote": "### Indexed table fields\n- This function displays an icon indicating whether the field is indexed and the sort direction (ascending/descending).\n\n\n### Counting / Estimating number of rows\n- When using **Z_THEO_READ_TABLE** the result rows will be counted using a real query. This means, the resulting row count respects current *joins* and the *where clause*.\n- Other function modules will use the function module **EM_GET_NUMBER_OF_ENTRIES** to get the maximum number of available rows.\n\n### Required persmissions\nThose two new features require following permissions on the SAP system\n- **Indexed fields**: Read from table **DD17S**\n- **Estimate row count (other than *Z_THEO_READ_TABLE*)**: Execute function module **EM_GET_NUMBER_OF_ENTRIES**"
       },
       {
         "Product": "Theobald.Extractors",
@@ -12322,7 +12442,7 @@
         "Product": "XtractUniversal",
         "Component": "General",
         "Message": "This release contains general changes, changes to the existing Table component as well as a new ODP component.",
-        "HasReleaseNote": true
+        "ReleaseNote": "# Xtract Universal 4.0\n\n## General \n- New table component. **Table Join component is now obsolete**. Please use the new Table component for joins.\n- New ODP component\n- Introduced new column name style `PrefixedCode`. Column names will be in the format `SAPObject~ColumnName` (or adjusted to valid destination name).\n- Improvements for UI and UX\n- Minor bug fixes\n\n## Compatibility\nThe setup will automatically (unless started in silent mode or manually changed during installation) start the conversion of legacy configuration files. You can also manually run the `ConfigConverter.exe` after installation.\n\n## Other features\n- Changing the destination of multiple extractions at once now asks if settings should be copied or left as-is\n\n## Bug fixes\n- Fixed a bug that prevented the Designer from clearing the result cache and aborting extractions when Active Directory Access Control was activated on the web server\n- Fixed a bug where the mass-update of destination settings used the last selected extraction as template instead of the extraction which was selected first"
       },
       {
         "Product": "Theobald.Extractors",
@@ -12338,7 +12458,7 @@
         "Product": "Theobald.Extractors",
         "Component": "Table",
         "Message": "Improvements for detecting possible joins and bug fixes related to editing joins",
-        "HasReleaseNote": true
+        "ReleaseNote": "The changes contained in this release only affect the GUI and do not change behavior of extractions.\n\n### Join detection\nUpon adding a new table to the extraction the GUI will attempt to automatically create joins based on the references in the SAP system. Detection will take the following steps to map fields with matching names:\n\n1. Primary keys that directly reference another table\n2. Primary keys that both reference the same table which does not exist in the extraction\n3. All fields that directly reference another table\n4. All fields that both reference the same table which does not exist in the extraction\n\n### Bug fixes\n- fixed a bug where editing of joins was not possible after saving an extraction"
       },
       {
         "Product": "XtractKernel",
@@ -12381,7 +12501,7 @@
         "Product": "Theobald.Extractors",
         "Component": "ODP",
         "Message": "Fixed two bugs related to columns in the GUI of ODP extractions",
-        "HasReleaseNote": true
+        "ReleaseNote": "## Fixed bugs:\n- all columns were selected for output after editing an existing extraction\n- delta columns were displayed although the extraction is using full mode"
       },
       {
         "Product": "Theobald.Extractors",
@@ -12413,7 +12533,7 @@
         "Product": "XtractUniversal",
         "Component": "Destinations",
         "Message": "Power BI Connector: General Availibility (end of beta)",
-        "HasReleaseNote": true
+        "ReleaseNote": "### Compatibility\n\n- existing Power BI Connector destinations have to be deleted and created again, beta destinations  are **not compatible** with the newest version"
       }
     ]
   },
@@ -13009,7 +13129,7 @@
         "Product": "XtractUniversal",
         "Component": "General",
         "Message": "Fixes & improvements for text encodings (CSV, OData) and xu.exe, updated to .NET Framework 4.6.1",
-        "HasReleaseNote": true
+        "ReleaseNote": "# Xtract Universal 3.12\n\n## Text Encodings for *HTTP - CSV*, *Flat File - CSV* and *OData Atom* destinations\n\nThe large list of legacy encodings has been replaced with the following:\n\n* UTF-8\n* UTF-16LE\n* UTF-16BE\n* GB18030\n\nIt seems that these encodings should cover most common use cases. **If you have requirements for special encodings, that are not available anymore, please contact support.**\n\n\n## Byte Order Marks / Preambles and *xu.exe* output redirection\n\nThe encodings listed above are used without preamble / BOM in *HTTP - CSV* and *OData Atom*. The *Flat File - CSV* destination on the other hand, uses preambles / BOMs. When redirecting standard output of *xu.exe* (e. g. to a file), preambles / BOMs will be used.\n\n## Updated to .NET Framework 4.6.1\n\nThe target framework of all components has been updated from 4.5.2 to 4.6.1. **That means, you need .NET Framework 4.6.1 or higher to run Xtract Universal.**"
       },
       {
         "Product": "ERPConnect",
@@ -13076,7 +13196,7 @@
         "Product": "XtractUniversal",
         "Component": "Security",
         "Message": "Access to the web server can now be restricted to Active Directory users with Designer read access",
-        "HasReleaseNote": true
+        "ReleaseNote": "# Xtract Universal 3.11\n\nAccess to the web server can now be restricted to Active Directory users with Designer read access.\nIn order to use this feature Kerberos has to be configured to work with the XU server.\nFor security reasons it is no longer possible to have *HTTP* and *HTTPS* enabled at the same time (breaking change). If both *HTTP* and *HTTPS* were enabled the server will automatically disable *HTTP* and only use *HTTPS*."
       }
     ]
   },
@@ -13201,7 +13321,7 @@
         "Product": "XtractUniversal",
         "Component": "Server",
         "Message": "The server can now impersonate Active Directory users using Kerberos",
-        "HasReleaseNote": true
+        "ReleaseNote": "# Xtract Universal 3.9\n\nThe server can now impersonate Active Directory users using Kerberos. This allows SSO on SAP systems and SQL server destinations from various clients including the *Alteryx Plugin* and *xu.exe*. \n\nFor security reasons this feature requires the usage of *HTTPS*. Using **\"Require SAP credentials to be explicitly supplied for execution\"** also requires *HTTPS* now, which is a breaking change."
       }
     ]
   },
@@ -13460,7 +13580,7 @@
         "Product": "XtractUniversal",
         "Component": "Table",
         "Message": "Added ABAP code + transport request for Z_THEO_READ_TABLE, removed old ABAP files",
-        "HasReleaseNote": true
+        "ReleaseNote": "# Xtract Universal 3.7.0\n\nThe **ABAP** subdirectory now contains the following transport requests:\n\n### Z_THEO_READ_TABLE.zip\nTransport request for new table custom function module *Z_THEO_READ_TABLE*. This is the successor to *Z_XTRACT_IS_TABLE_COMPRESSION*.\nThe old table function module *Z_XTRACT_IS_TABLE_COMPRESSION* will continue to work with our products, but is no longer being maintained. Please consider adjusting your table extractions to use *Z_THEO_READ_TABLE* instead of *Z_XTRACT_IS_TABLE_COMPRESSION*.\nThis version of the transport request requires SAP Release 7.40 SP05 or later and supports sub-selects in WHERE-clauses.\n\n### Z_THEO_READ_TABLE-before_740SP05.zip\nSame as above, but for SAP Releases older than 7.40 SP05. This version does not support sub-selects in WHERE-clauses.\n\n### thtrans.zip\nTransport request for Report component custom function *Z_XTRACT_IS_REMOTE_REPORT* and Table Join component custom function *Z_XTRACT_IS_TABLE_JOIN*. This transport request no longer contains *Z_XTRACT_IS_TABLE_COMPRESSION*, since it has been deprecated. Please use *Z_THEO_READ_TABLE* instead."
       }
     ]
   },
@@ -13494,7 +13614,7 @@
         "Product": "XtractUniversal",
         "Component": "Destinations",
         "Message": "Updated data provider support for the HANA and Oracle destinations.",
-        "HasReleaseNote": true
+        "ReleaseNote": "* Added support for the HANA data provider version 2.3.130.\n* Added support for the Oracle data provider version 4.122.1.0 (ODAC 12.2.0.1.0)\n\nPlease install these versions before updating to the latest Xtract Universal release."
       }
     ]
   },
@@ -13638,7 +13758,7 @@
         "Product": "XtractUniversal",
         "Component": "General",
         "Message": "Improved server robustness and parallelization",
-        "HasReleaseNote": true
+        "ReleaseNote": "# Xtract Universal 3.6\n\nThe server uses multiple processes now instead of one, which makes it more robust and improves parallelization.\n\n## Running extractions\n\n* TCP keep-alives avoid connection timeouts with long quiet periods and pull destinations\n* X.509 certificate can be set directly in Xtract Universal\n* HTTP access restrictions are no longer available - please use Windows firewall or other firewall solutions to implement these rules\n* HTTPS requires TLS1.1 or above \n* Removed \"Max. parallel requests\" setting"
       }
     ]
   },
@@ -13666,7 +13786,7 @@
         "Product": "ERPConnect",
         "Component": "General",
         "Message": "Some collections are implementing generic IList<T> now instead of non-generic interfaces",
-        "HasReleaseNote": true
+        "ReleaseNote": "# ERPConnect 6.3\n\nThe base class / collection interface of following classes have changed:\n- RFCParameterCollection\n- RFCServerFunctionCollection\n- RFCStructureCollection\n- RFCTableCollection\n- RFCTableColumnCollection\n\nThese classes don't inherit from CollectionBase any more and no longer implement non-generic collection interfaces like IList. They now implement the generic IList<T> interface.\nThis is a breaking change, but it shouldn't require any code adjustments in most cases."
       },
       {
         "Product": "XtractKernel",
@@ -14308,7 +14428,7 @@
         "Product": "ERPConnect",
         "Component": "General",
         "Message": "New implementation of ReadTable class & support for non-Unicode multibyte codepages",
-        "HasReleaseNote": true
+        "ReleaseNote": "# ERPConnect 6.1\n\nThis release adds support for multibyte codepages on non-Unicode SAP systems.\nFurthermore, the ReadTable class has been re-engineered, which includes a few breaking changes:\n\n### Removed ReadTable.AddCriteria()\nThis method had several unexpected consquences. Please use the WhereClause property instead.\n\n### Removed ReadTable.Delimiter\nThis used to be a workaround for non-Unicode multibyte codepages. Full multibyte support has been implemented, therefore the delimiter is not needed anymore.\n\n### Removed ReadTable.UsePrimaryKeyPackaging\nPackaging is primarily performed on the ABAP side. Please use custom function modules if you have special requirements for packaging.\n\n### ReadTable.Fields behaves differently\nThe Fields collection is used for both field selection and result metadata. Calling ReadTable.AddField() will add a field to this collection. In previous versions, the collection had only been used for result metadata.\n\nIn combination with RetrieveAllFieldsOfTable() that means, you can remove the fields that you don't want to extract from the Fields collection. If you want to use AddField(), please clear the collection after calling RetrieveAllFieldsOfTable() or use separate ReadTable instances.\n\n### Removed UseMultibyteExtraction flag from LINQtoERP\nThis flag has no use anymore, since multibyte codepages are fully supported without setting any flags or using other workarounds.\n\n### IncomingPackage & PackageProgress\nPackageProgress is fired always - RaiseIncomingPackageEvent no longer disables PackageProgress event.\n\nIncomingPackage is no longer fired  if package is empty."
       },
       {
         "Product": "XtractKernel",
@@ -14672,7 +14792,7 @@
         "Product": "XtractUniversal",
         "Component": "General",
         "Message": "Improvements for Designer/Server communication, security and configuration persistence",
-        "HasReleaseNote": true
+        "ReleaseNote": "# Xtract Universal 3.0\n\nThis release includes major changes related to the communication between Xtract Universal Server and Xtract Universal Designer. Transport security and access control has been improved. The file format and folder structure for persisting extractions, sources, destinations, logs, etc. has undergone major changes as well.\n\n## Designer/Server Communication\n\n* Transport security has been improved - Kerberos and TLS 1.1/1.2 are supported now\n* Active Directory single-sign on is supported\n* Active Directory logon uses Kerberos instead of LDAP (breaking change)\n\n## Access Control\n\n* Individual server permission for custom users\n* Individual read/write permission for extractions and sources\n* Support for Active Directory groups (breaking change: AD users can no longer be member of an XU user group)\n\n## Files/Folders/Persistence\n\nThe config directory uses a new structure for files and folders. Existing configurations (extractions, sources, destinations etc.) can be converted to the new format during setup, or manually by running ConfigConverter.exe from the XU program directory.\n"
       },
       {
         "Product": "ERPConnect",
@@ -16371,7 +16491,7 @@
         "Product": "ERPConnect",
         "Component": "General",
         "Message": "Removed ERPConnect20.dll & ERPConnect40.dll, updated ERPConnect45.dll to .NET Framework 4.5.2, removed support for SOAP",
-        "HasReleaseNote": true
+        "ReleaseNote": "# ERPConnect 5.0.0 Release Note\n\n## ERPConnect20.dll\n\nERPConnect20.dll has been around since the early days of .NET 2.0 in 2005.\nOn July 12, 2011 Microsoft stopped supporting .NET Framework\n[2.0](https://support.microsoft.com/en-us/lifecycle/search/?p1=8291) and \n[3.x prior to 3.5 SP1](https://support.microsoft.com/en-us/lifecycle/search/?p1=12292).\nThat means, there have been no updates published by Microsoft for more than five years now for these .NET versions, not even security patches.  \nSupport by Microsoft for\n[Visual Studio 2005](https://blogs.msdn.microsoft.com/visualstudio/2016/03/11/support-ending-for-visual-studio-2005/)\nended on April 12, 2016.\nTherefore, we decided to remove ERPConnect20.dll. It can be easly replaced with ERPConnect35.dll or ERPConnect45.dll\n\n## ERPConnect40.dll and ERPConnect45.dll\n\nSupport by Microsoft  for .NET Framework\n[4, 4.5 and 4.5.1](https://support.microsoft.com/en-us/lifecycle/search/?p1=14380)\nended on January 12, 2016.\n\nThat means there have been no updates and no security patches for these .NET versions for more that a year now.\nTherefore, we also decided to remove ERPConnect40.dll. Like ERPConnect20.dll, it can be easly replaced with ERPConnect35.dll or ERPConnect45.dll.\nWe also updated the target for ERPConnect45.dll to .NET Framework 4.5.2.\n\n## Migration\n\nIf you have been using ERPConnect20.dll or ERPConnect40.dll in your projects,\nplease replace all references to those assemblies with either ERPConnect35.dll or ERPConnect45.dll.\n\nIf you want your software to run on CLR2, use ERPConnect35.dll and target NET Framework 3.5 / .NET Framework 3.5 Client Profile.\n\nIf you don't need to support CLR2, use ERPConnect45.dll and target .NET Framework 4.5.2 or higher\n\n[Common Langauge Runtime (CLR)](https://msdn.microsoft.com/en-us/library/8bs2ecf4.aspx)  \n[How to: Target a Version of the .NET Framework](https://msdn.microsoft.com/en-us/library/bb398202.aspx)\n\n## SOAP is no longer supported by ERPConnect\n\nBecause of performance issues related to the verbosity of XML and low customer demand, support for SOAP connections has been removed. SOAP had been marked as deprecated since May 06, 2015. Please use `ClientProtocol.NWRFC` or `ClientProtocol.RFC instead`.\n"
       },
       {
         "Product": "ERPConnect",

@@ -8,11 +8,10 @@ SAP S/4HANA Cloud Edition (Cloud ERP):
 
 <div class="annotate" markdown>
 
-| | S/4HANA Cloud Essentials Edition (ES) | S/4HANA Cloud Extended Edition (ED)  | RISE with SAP S/4HANA Cloud Private Edition  |     
+| | S/4HANA Public Cloud | S/4HANA Private Cloud  | RISE with SAP S/4HANA Cloud Private Edition  |     
 |--|---------------------------------------|-------------------------------------|---------------------------------------------|
-| Previously called:| Multi Tenant Edition (MTE)  | Single Tenant Edition (STE)  |  Private Cloud Edition (PCE)          | 
-| Compatible with {{ productName }}:| :x:           | :white_check_mark: (with limitations)|  :white_check_mark:        | 
-| Limitations:|     -     | The installation of custom function modules is restricted. {% if  page.meta.product != "erpconnect" %}Transport requests for [Table](../documentation/setup-in-sap/custom-function-module-for-table-extraction.md) and [Report](../documentation/setup-in-sap/custom-function-module-for-reports.md) cannot be imported by customers, but must be requested from SAP.{% endif %} |     -    | 
+| **Compatible with {{ productName }}:**| {% if  page.meta.product == "yunio" %} :x: {% else %} :white_check_mark: (with limitations) {% endif %}  | :white_check_mark: {% if  page.meta.product != "erpconnect" %} (with limitations) {% endif %}|  :white_check_mark:        | 
+| **Limitations:**|  {% if  page.meta.product == "yunio" %} - {% else %} Only Remote Function Modules (BAPIs) released via Communication Scenario are supported. {% endif %} |  {% if  page.meta.product != "erpconnect" %}The installation of custom function modules is restricted.<br>Transport requests for [Table](../documentation/setup-in-sap/custom-function-module-for-table-extraction.md) and [Report](../documentation/setup-in-sap/custom-function-module-for-reports.md) cannot be imported by customers, but must be requested from SAP.{% else %} - {% endif %} |     -    | 
 
 <!---
 Public Cloud {% if  page.meta.product == "yunio" %} - {% else %} Only Remote Function Modules (BAPIs) released via Communication Scenario are supported. {% endif %} |
