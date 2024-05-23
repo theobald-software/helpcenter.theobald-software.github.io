@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug that caused merged hierarchy extractions to fail with IndexOutOfRange",
-        "Component": "ODP",
-        "Product": "Theobald.Extractors"
-    }
-]

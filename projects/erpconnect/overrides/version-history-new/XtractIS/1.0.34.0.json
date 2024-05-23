@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for hierarchy upload with BW Loader under BI 7.0",
-        "Component": "BW Loader",
-        "Product": "XtractIS"
-    }
-]

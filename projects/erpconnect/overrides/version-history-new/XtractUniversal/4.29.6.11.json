@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Byte token support for line reader\nPerformance optimization for line reader",
-        "Component": "General",
-        "Product": "Common"
-    }
-]

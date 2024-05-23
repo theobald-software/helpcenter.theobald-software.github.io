@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for server name validation on connect window",
-        "Component": "Designer",
-        "Product": "XtractUniversal"
-    }
-]

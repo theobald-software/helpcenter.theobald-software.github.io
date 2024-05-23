@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Added backward compatibility for very old extractions with columns which contain special characters (like slashes, dashes, etc.) and use custom HTTP - CSV destinations",
-        "Component": "Destinations",
-        "Product": "XtractUniversal"
-    }
-]

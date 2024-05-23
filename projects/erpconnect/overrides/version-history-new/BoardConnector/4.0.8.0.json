@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug that caused column names to be converted to UPPERCASE which caused problems for Hierarchy, Report and DeltaQ extractions",
-        "Component": "Server",
-        "Product": "BoardConnector"
-    }
-]

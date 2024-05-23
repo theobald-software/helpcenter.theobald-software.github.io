@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Power BI: Fixed an issue that caused extractions to be missing or authentication errors in the connector UI due to caching issues",
-        "Component": "Destinations",
-        "Product": "XtractUniversal"
-    }
-]

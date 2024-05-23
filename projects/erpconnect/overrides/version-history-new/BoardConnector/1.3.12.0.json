@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for Designer crash when right-clicking on extraction list header with empty extraction list",
-        "Component": "Designer",
-        "Product": "BoardConnector"
-    }
-]

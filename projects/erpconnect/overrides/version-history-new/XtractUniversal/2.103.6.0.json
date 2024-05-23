@@ -1,8 +1,0 @@
-[
-    {
-        "Message": "CSV: Fix for missing values (bug introduced in 2.103.3)",
-        "Component": "Destinations",
-        "Product": "XtractUniversal",
-        "IsCritical": true
-    }
-]

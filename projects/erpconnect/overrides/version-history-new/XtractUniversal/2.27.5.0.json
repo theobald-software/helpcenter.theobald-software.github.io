@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Added $top=n to generate n preview rows (OData)",
-        "Component": "Destinations",
-        "Product": "XtractUniversal"
-    }
-]

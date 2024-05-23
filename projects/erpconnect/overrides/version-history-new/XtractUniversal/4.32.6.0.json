@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "xu.exe/xu.elf: Improved error message when directory is provided instead of file for option -f",
-        "Component": "General",
-        "Product": "XtractUniversal"
-    }
-]

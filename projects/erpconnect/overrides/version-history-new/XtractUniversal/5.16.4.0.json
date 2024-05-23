@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Azure Storage destination now logs WebExceptionStatus when an error in network communication with Azure occurs.",
-        "Component": "Destinations",
-        "Product": "XtractUniversal"
-    }
-]

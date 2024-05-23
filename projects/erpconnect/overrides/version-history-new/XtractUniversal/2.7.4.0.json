@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Access restriction changes performed by non-admin users were not saved correctly in some cases",
-        "Component": "Security",
-        "Product": "XtractUniversal"
-    }
-]

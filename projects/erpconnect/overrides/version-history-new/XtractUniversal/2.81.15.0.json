@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Increased SQL server command timeout to 600 sec.",
-        "Component": "Destinations",
-        "Product": "XtractUniversal"
-    }
-]

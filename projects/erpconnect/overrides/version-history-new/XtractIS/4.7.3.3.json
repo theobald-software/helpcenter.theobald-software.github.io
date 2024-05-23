@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Compression: Fix for newlines with multibyte encodings on non-Unicode systems (e. g.  Korean)",
-        "Component": "Table",
-        "Product": "XtractKernel"
-    }
-]

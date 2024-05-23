@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Added support for X.509 client certificate file for SNC",
-        "Component": "Security",
-        "Product": "BoardConnector"
-    }
-]

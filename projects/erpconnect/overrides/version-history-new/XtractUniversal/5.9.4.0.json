@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug in S3 destination, where manually input bucket name would not be saved when IAM role authentication was selected.",
-        "Component": "Destinations",
-        "Product": "XtractUniversal"
-    }
-]

@@ -1,8 +1,0 @@
-[
-    {
-        "Message": "Snowflake destination driver change: SnowSql was replaced with ODBC",
-        "Component": "Destinations",
-        "Product": "XtractUniversal",
-        "ReleaseNote": "##Xtract Universal 4.21.6\n**Snowflake destination driver change: SnowSql was replaced with ODBC**\n\nDue to this change, the performance for this destination was considerably improved."
-    }
-]

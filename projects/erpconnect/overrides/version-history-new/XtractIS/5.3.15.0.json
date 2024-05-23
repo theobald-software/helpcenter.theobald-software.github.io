@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug that caused the update mode to reset to Full when updating from versions before 5.1.0",
-        "Component": "ODP",
-        "Product": "XtractIS"
-    }
-]

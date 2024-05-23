@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Disabled \"...\" button when creating new extraction without admin privileges",
-        "Component": "Designer",
-        "Product": "XtractUniversal"
-    }
-]

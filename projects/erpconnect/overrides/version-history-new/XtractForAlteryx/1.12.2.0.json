@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for message displaying when no Alteryx installation is found during setup",
-        "Component": "Setup",
-        "Product": "XtractForAlteryx"
-    }
-]

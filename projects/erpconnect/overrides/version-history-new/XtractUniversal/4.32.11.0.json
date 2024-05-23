@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "MySQL destination allows entering custom server ports and was updated to use the latest data provider for MySQL (8.0.26.0) ",
-        "Component": "Destinations",
-        "Product": "XtractUniversal"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug where extractions of type Query, DeltaQ and Hierarchy could not be ran. (Bug introduced in 5.11.20)",
-        "Component": "General",
-        "Product": "XtractUniversal"
-    }
-]

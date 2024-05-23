@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Added update reminder that will periodically show a pop up asking for an update.",
-        "Component": "General",
-        "Product": "BoardConnector"
-    }
-]

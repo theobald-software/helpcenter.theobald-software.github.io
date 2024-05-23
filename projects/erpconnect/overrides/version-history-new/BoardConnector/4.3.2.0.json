@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for STRING/XSTRING",
-        "Component": "BAPI",
-        "Product": "BoardConnector"
-    }
-]

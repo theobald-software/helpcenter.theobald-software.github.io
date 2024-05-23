@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for batch timeout when previewing the report",
-        "Component": "Report",
-        "Product": "XtractIS"
-    }
-]

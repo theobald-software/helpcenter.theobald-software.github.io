@@ -1,8 +1,0 @@
-[
-    {
-        "Message": "Fixed an issue that caused the result cache to be used independently from caller supplied SAP credentials",
-        "Component": "General",
-        "Product": "Theobald.Server",
-        "IsCritical": true
-    }
-]

@@ -1,8 +1,0 @@
-[
-    {
-        "Message": "New features for xu-config.exe",
-        "Component": "General",
-        "Product": "XtractUniversal",
-        "ReleaseNote": "**XtractUniversal 5.7.1 - xu-config.exe**\n\n- ODP extraction creation\n- Azure and S3 destinations creation\n- Created and LastChanged information for extractions\n- Extraction destination SAP object name mode and timestamp append"
-    }
-]

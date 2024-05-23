@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "MDX: Fixed result columns of converted extractions (was broken since 1.34)",
-        "Component": "BW Cube",
-        "Product": "Theobald.Extractors"
-    }
-]

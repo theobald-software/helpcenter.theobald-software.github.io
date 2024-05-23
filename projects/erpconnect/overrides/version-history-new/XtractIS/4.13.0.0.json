@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Added support for SQL Server Management Studio Deployment Wizard 2017",
-        "Component": "Setup",
-        "Product": "XtractIS"
-    }
-]

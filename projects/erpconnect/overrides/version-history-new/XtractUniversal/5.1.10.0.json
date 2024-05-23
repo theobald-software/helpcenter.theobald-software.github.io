@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Hadoop destination now supports script expressions in its remote folder setting",
-        "Component": "Destinations",
-        "Product": "XtractUniversal"
-    }
-]

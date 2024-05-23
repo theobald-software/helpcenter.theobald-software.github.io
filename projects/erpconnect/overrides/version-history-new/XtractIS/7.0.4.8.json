@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Added the option to select a custom structure on the columns axis for MDX extractions.",
-        "Component": "BW Cube",
-        "Product": "Theobald.Extractors"
-    }
-]

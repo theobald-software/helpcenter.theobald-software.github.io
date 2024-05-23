@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Update of BouncyCastle library to 1.8.10",
-        "Component": "Security",
-        "Product": "Theobald.Extractors"
-    }
-]

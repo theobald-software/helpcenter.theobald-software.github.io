@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed config conversion for primary keys when upgrading from versions before 4.0",
-        "Component": "General",
-        "Product": "XtractUniversal"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed an issue where certain UI elements in some windows looked blurry.",
-        "Component": "Designer",
-        "Product": "XtractUniversal"
-    }
-]

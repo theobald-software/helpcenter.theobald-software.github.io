@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug where Primary Key settings would not be stored when editing an extraction.",
-        "Component": "Designer",
-        "Product": "XtractUniversal"
-    }
-]

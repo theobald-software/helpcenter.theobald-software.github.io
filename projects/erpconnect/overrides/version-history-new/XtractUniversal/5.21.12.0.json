@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for column mapping validation on designer, which would not allow to change the destination settings",
-        "Component": "Designer",
-        "Product": "XtractUniversal"
-    }
-]

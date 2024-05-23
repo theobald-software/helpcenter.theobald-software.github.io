@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Values of RfcReadTableResult instances can now be accessed by column name.",
-        "Component": "Table",
-        "Product": "Theobald.Extractors"
-    }
-]

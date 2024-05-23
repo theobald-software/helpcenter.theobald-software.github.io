@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Better consistency for read-only permissions throughout the designer. Popup with an error includes complete error on copy now.",
-        "Component": "Designer",
-        "Product": "YunIO"
-    }
-]

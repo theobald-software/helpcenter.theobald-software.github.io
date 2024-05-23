@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug where Azure Storage destination didn't properly react to extractions failing.",
-        "Component": "Destinations",
-        "Product": "XtractUniversal"
-    }
-]

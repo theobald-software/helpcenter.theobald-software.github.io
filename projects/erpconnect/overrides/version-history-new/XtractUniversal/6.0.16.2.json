@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed the handling of invalid parameters for table and query extractions.",
-        "Component": "General",
-        "Product": "Theobald.Server"
-    }
-]

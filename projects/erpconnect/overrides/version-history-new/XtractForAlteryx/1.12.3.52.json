@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug where the report ruler would stop scrolling horizontally with wider reports.",
-        "Component": "Report",
-        "Product": "Theobald.Extractors"
-    }
-]

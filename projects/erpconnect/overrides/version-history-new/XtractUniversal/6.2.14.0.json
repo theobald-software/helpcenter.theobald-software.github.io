@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug where the configured maximum age of log files would be ignored and always be the default of seven days.",
-        "Component": "Server",
-        "Product": "XtractUniversal"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Azure Storage destination now support authentication with Azure Active Directory",
-        "Component": "Destinations",
-        "Product": "XtractUniversal"
-    }
-]

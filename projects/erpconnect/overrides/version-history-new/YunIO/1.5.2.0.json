@@ -1,8 +1,0 @@
-[
-    {
-        "Message": "Introduced progress dialog",
-        "Component": "Designer",
-        "Product": "YunIO",
-        "ReleaseNote": "**YunIO 1.5.2**\nIntroduced progress dialog that is being used in this version in the following places:\n\n- Source connection test\n- SAP objects search for table and function modules\n- SAP metadata fetch for table and function modules"
-    }
-]

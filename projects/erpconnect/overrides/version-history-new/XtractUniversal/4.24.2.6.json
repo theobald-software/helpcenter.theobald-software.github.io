@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for bug introduced in 1.0.9 when running as Windows Application",
-        "Component": "General",
-        "Product": "Theobald.Server"
-    }
-]

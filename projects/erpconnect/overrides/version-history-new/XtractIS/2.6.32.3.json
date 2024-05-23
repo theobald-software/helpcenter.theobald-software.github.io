@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Lock timeout in case of multiple DeltaQ processes increased from 10 to 30 seconds.",
-        "Component": "DeltaQ",
-        "Product": "XtractKernel"
-    }
-]

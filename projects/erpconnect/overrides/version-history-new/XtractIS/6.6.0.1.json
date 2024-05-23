@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug where performing automatic column detection after running a preview would enable dynamic column widths and offsets.",
-        "Component": "Report",
-        "Product": "Theobald.Extractors"
-    }
-]

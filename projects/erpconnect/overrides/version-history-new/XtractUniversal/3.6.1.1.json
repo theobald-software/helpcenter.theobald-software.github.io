@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Stopping RFC server earlier (was running longer than required)",
-        "Component": "OHS",
-        "Product": "XtractKernel"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug on Tableau destination that broke the communication with Tableau Server",
-        "Component": "Destinations",
-        "Product": "XtractUniversal"
-    }
-]

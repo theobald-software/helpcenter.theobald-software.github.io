@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Config conversion is now performed before starting service during setup",
-        "Component": "Setup",
-        "Product": "BoardConnector"
-    }
-]

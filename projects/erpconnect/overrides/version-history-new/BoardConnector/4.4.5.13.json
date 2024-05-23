@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug that allowed dots in names",
-        "Component": "General",
-        "Product": "Theobald.Server"
-    }
-]

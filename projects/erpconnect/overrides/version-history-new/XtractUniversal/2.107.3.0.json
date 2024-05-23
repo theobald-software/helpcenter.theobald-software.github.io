@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for Oracle Destination (bug introduced in 2.107.0.0)",
-        "Component": "Destinations",
-        "Product": "XtractUniversal"
-    }
-]

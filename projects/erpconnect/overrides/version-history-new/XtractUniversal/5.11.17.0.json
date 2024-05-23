@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Google Cloud Storage: Fixed a bug where users would not be able to run extractions when using service account authentication if XU Designer runs on different machine than XU Server.",
-        "Component": "Destinations",
-        "Product": "XtractUniversal"
-    }
-]

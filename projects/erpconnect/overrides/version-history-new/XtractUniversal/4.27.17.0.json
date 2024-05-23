@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed bug for handling invalid TIME value on PostgreSql destination",
-        "Component": "Destinations",
-        "Product": "XtractUniversal"
-    }
-]

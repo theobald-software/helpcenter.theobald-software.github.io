@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for DeltaQ customizing check (RFC server connection)",
-        "Component": "DeltaQ",
-        "Product": "XtractKernel"
-    }
-]

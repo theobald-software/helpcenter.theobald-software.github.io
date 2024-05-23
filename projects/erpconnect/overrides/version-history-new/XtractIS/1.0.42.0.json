@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Bugfix for DeltaQ: Sometimes data was shifted between columns when adding additional columns ",
-        "Component": "DeltaQ",
-        "Product": "XtractIS"
-    }
-]

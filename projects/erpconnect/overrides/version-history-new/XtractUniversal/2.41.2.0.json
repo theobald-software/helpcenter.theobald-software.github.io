@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Updated SharePoint destination: Removed 'Title' field from default view and added primary keys as new required fields in edit forms.",
-        "Component": "Destinations",
-        "Product": "XtractUniversal"
-    }
-]

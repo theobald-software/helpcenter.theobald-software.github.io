@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Alteryx: Do not pass values for rows parameter to XU, that are out of range",
-        "Component": "Destinations",
-        "Product": "XtractUniversal"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixes for OpenApi-file generation and input validation. Rework of password handling when editing a Connection.",
-        "Component": "General",
-        "Product": "YunIO"
-    }
-]

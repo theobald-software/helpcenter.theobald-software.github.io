@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed the issue in table component with column lengths of raw datatypes",
-        "Component": "Table",
-        "Product": "XtractKernel"
-    }
-]

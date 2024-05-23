@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug where validation of a valid license file might fail.",
-        "Component": "General",
-        "Product": "BoardConnector"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for CrLf handling in CharsToLines, including UnitTests;\nLineToCells for splitting CSV lines into the cells.",
-        "Component": "General",
-        "Product": "Common"
-    }
-]

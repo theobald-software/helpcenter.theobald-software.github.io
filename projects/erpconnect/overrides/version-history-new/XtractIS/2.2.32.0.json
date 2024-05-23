@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Added pattern for detection of report header during autmatic column detection",
-        "Component": "Report",
-        "Product": "XtractIS"
-    }
-]

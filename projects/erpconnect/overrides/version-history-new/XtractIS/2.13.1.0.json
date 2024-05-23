@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed an error that caused a wrong result string length, when the source value is a byte sequence.",
-        "Component": "Table Join",
-        "Product": "XtractIS"
-    }
-]

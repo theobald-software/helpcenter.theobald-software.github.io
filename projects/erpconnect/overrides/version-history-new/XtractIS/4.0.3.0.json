@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for long error messages in log output",
-        "Component": "DeltaQ",
-        "Product": "XtractIS"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "UI fix for escape character parameter in CSV destination",
-        "Component": "Destinations",
-        "Product": "XtractUniversal"
-    }
-]

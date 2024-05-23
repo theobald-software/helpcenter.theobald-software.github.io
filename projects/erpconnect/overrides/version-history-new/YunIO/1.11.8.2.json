@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug in MDX metadata refresh that caused invalid selections when a selected measure or dimension does not exist after refresh anymore.",
-        "Component": "BW Cube",
-        "Product": "Theobald.Extractors"
-    }
-]

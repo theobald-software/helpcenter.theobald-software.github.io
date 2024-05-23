@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed an issue where hierarchies in natural representation had no object name specified",
-        "Component": "Hierarchy",
-        "Product": "XtractKernel"
-    }
-]

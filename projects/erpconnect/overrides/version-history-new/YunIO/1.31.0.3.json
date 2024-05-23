@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for trigger syntax error in IBM DB for z/os (DB6). Requires update of /THEO/CDC_ECC",
-        "Component": "TableCDC",
-        "Product": "Theobald.Extractors"
-    }
-]

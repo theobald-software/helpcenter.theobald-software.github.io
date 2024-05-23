@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug on method SapTimeConverter.ConvertToTimeSpan(string), which would not allow values greater than \"235959\" to be converted to TimeSpan. Unit tests were introduced.",
-        "Component": "General",
-        "Product": "Theobald.Extractors"
-    }
-]

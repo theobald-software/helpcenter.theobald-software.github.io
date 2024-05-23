@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Preview is using real data instead of dummy data (this was accidentally changed in 1.6.3).",
-        "Component": "Table",
-        "Product": "BoardConnector"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "WHERE-clause supports either variables or scripted expression, but not both",
-        "Component": "Table",
-        "Product": "XtractUniversal"
-    }
-]

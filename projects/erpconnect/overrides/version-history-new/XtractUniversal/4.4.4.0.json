@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Azure Storage destination now sets the MD5 hash of the blob when extracting to block blobs. This allows the uploaded files to be processed by AzCopy without having to turn off the MD5 check.",
-        "Component": "Destinations",
-        "Product": "XtractUniversal"
-    }
-]

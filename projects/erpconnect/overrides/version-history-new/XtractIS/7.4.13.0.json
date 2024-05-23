@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug introduced in version 7.4.10, which crashed VS on new extraction creation.",
-        "Component": "DeltaQ",
-        "Product": "XtractIS"
-    }
-]

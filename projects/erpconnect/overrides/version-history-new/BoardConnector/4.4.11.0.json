@@ -1,9 +1,0 @@
-[
-    {
-        "Message": "Enforcement of access restriction for the web server",
-        "Component": "Security",
-        "Product": "BoardConnector",
-        "IsCritical": true,
-        "ReleaseNote": "# BOARDConnector 4.4.11\n\nEnforcement of access restriction for the web server\n\n## Source\n\nThe web server now correctly enforces source-level permissions. \nTo run an extraction the user needs to have read access for the extraction and the source. \n\n## Bugs\n\n- Fixed a bug where the extraction list API would list extractions the user was not allowed to read"
-    }
-]

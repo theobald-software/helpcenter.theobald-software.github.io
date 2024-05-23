@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for GUI bugs when the first shared destination is created and selected",
-        "Component": "Designer",
-        "Product": "XtractUniversal"
-    }
-]

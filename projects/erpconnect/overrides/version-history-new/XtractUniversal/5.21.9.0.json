@@ -1,8 +1,0 @@
-[
-    {
-        "Message": "Oracle data provider updated and added support for connections to Oracle Autonomous DB.",
-        "Component": "Destinations",
-        "Product": "XtractUniversal",
-        "ReleaseNote": "# Support for Oracle Autonomous DB\n\nThis release contains adjustments to support connecting to Oracle Autonomous databases with and without mTLS.\n\n# Updated Oracle destination UI \n\nThe Oracle destination UI was updated in order to cleanly display the different ways of connecting to an Oracle database:\n\n* Default connections by providing a host, port, Service name/SID, User and Password as in previous versions\n* Wallet connections needing the path to a wallet, the database user and password and the tns name of the requested connection from the wallet e.g. for connecting to an Oracle Autonomous DB with mTLS required\n* Connect Descriptor using an Oracle Connect Descriptor, user name and password e.g. for connecting to an Oracle Autonomous DB without mTLS required"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Changed DeltaQ legacy reader to skip selection filters without corresponding field",
-        "Component": "DeltaQ",
-        "Product": "XtractIS"
-    }
-]

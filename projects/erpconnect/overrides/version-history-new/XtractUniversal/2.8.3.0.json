@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for merge if primary consists of more than one column (Oracle)",
-        "Component": "Destinations",
-        "Product": "XtractUniversal"
-    }
-]

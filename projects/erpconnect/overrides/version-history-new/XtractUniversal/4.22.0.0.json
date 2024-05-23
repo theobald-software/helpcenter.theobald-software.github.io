@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Qlik: It is now possible to select \"Column Name Styles\" in the settings of the destination to avoid duplicate column names in Qlik. The \"use description text for column names\" option was removed.",
-        "Component": "Destinations",
-        "Product": "XtractUniversal"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "NULLIn the Connection Manager Additions it is possible now to apply another table read BAPI than RFC_READ_TABLE (for customers who don't allow RFC_READ_TABLE due to security policy)",
-        "Component": "General",
-        "Product": "XtractIS"
-    }
-]

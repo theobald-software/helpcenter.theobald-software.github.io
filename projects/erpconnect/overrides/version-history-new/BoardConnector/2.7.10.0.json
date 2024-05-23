@@ -1,8 +1,0 @@
-[
-    {
-        "Message": "Double quotes in data were duplicated, if data was loaded from buffer",
-        "Component": "Server",
-        "Product": "BoardConnector",
-        "IsCritical": true
-    }
-]

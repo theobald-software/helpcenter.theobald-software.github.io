@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed the destination settings window, which did not load existing configurations. Improved error handling for corrupted extractions.",
-        "Component": "Designer",
-        "Product": "XtractUniversal"
-    }
-]
