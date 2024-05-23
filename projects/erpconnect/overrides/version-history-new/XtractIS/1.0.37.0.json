@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Asynchronous table extraction job added to Xtract IS table (see manual for details)",
+        "Component": "Table",
+        "Product": "XtractIS"
+    }
+]

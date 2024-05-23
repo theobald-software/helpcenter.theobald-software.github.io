@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "BICS: Fixed data type of timestamp characteristics",
+        "Component": "BW Cube",
+        "Product": "Theobald.Extractors"
+    }
+]

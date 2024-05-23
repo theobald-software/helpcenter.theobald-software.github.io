@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixes & improvements for converting configuration & logs from BOARD Connector before 3.0",
+        "Component": "Server",
+        "Product": "BoardConnector"
+    }
+]

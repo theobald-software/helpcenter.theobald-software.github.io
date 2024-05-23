@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed an issue where extractions would fail for big-endian SAP systems when NetWeaver libraries were used",
+        "Component": "ODP",
+        "Product": "Theobald.Extractors"
+    }
+]

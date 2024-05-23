@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "Classic RFC: Fix for table memory leak (bug introduced in 5.3.3.0).",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Updated to 5.3.4.0",
+        "Component": "ERPConnect",
+        "Product": "XtractKernel"
+    }
+]

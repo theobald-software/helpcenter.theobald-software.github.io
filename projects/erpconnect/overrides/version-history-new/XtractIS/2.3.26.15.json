@@ -1,0 +1,17 @@
+[
+    {
+        "Message": "New property MDXExecuter.MaxRows introduced to be used to limit the number of rows",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Improved logging for DeltaQ Dispatcher Service",
+        "Component": "DeltaQ",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "New feature: .NET code can be used within a WHERE clause to enable dynamic WHERE statements with or without variables",
+        "Component": "Table",
+        "Product": "XtractKernel"
+    }
+]

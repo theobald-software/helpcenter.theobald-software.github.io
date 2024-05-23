@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "Marked NWRFC as not supported at the moment",
+        "Component": "OHS",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Marked NWRFC as not supported at the moment",
+        "Component": "DeltaQ",
+        "Product": "XtractKernel"
+    }
+]

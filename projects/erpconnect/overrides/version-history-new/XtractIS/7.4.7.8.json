@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Changed the default R3Connection Protocol to NWRFC as announced in 7.6.0. Added support for RFC over WebSocket.",
+        "Component": "NWRFC",
+        "Product": "ERPConnect"
+    }
+]

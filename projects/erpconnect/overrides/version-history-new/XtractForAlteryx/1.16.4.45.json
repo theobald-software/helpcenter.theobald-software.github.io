@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for failing mdx extractions with packaging enabled and only dimensions selected.",
+        "Component": "BW Cube",
+        "Product": "Theobald.Extractors"
+    }
+]

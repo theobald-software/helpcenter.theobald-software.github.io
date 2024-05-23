@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Bugfix for measures, that contain a NULL value (not 0 but NULL)",
+        "Component": "BW Cube",
+        "Product": "XtractIS"
+    }
+]

@@ -1,0 +1,17 @@
+[
+    {
+        "Message": "Fix for function module dropdown not showing available modules",
+        "Component": "Table",
+        "Product": "XtractForAlteryx"
+    },
+    {
+        "Message": "Updated to 6.5.7.19",
+        "Component": "ERPConnect",
+        "Product": "Theobald.Extractors"
+    },
+    {
+        "Message": "Fixes for numeric & binary values via RFC_READ_TABLE & Co.",
+        "Component": "Table",
+        "Product": "Theobald.Extractors"
+    }
+]

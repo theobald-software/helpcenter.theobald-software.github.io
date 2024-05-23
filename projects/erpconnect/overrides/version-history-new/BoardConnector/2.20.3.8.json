@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for order of currency columns",
+        "Component": "BW Cube",
+        "Product": "XtractKernel"
+    }
+]

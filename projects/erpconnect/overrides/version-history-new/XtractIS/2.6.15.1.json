@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "Increased performance of dispatcher service",
+        "Component": "DeltaQ",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Fixed bug in the search of reports",
+        "Component": "Report",
+        "Product": "XtractKernel"
+    }
+]

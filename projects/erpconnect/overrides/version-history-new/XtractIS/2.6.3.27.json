@@ -1,0 +1,42 @@
+[
+    {
+        "Message": "Added support for non-Unicode destinations on big endian systems",
+        "Component": "RFCServer",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Added support for non-unicode RFC destinations on big endian systems",
+        "Component": "OHS",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Updated to 4.27.0.0",
+        "Component": "ERPConnect",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Changed recent used objects (RUO) sorting in table lookup dialog.",
+        "Component": "TQB",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Added new auto-join feature in TQB.",
+        "Component": "TQB",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Added new filterbox to filter table fields if table contains a large number of fields,",
+        "Component": "TQB",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Fixed bugs with aggregate function combobox in output field selection panel.",
+        "Component": "TQB",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Fixed bugs with alias naming in TQB.",
+        "Component": "TQB",
+        "Product": "XtractKernel"
+    }
+]

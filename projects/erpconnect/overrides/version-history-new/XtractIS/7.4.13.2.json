@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed a bug that caused the BAPI result row count to be 1 when it was actually 0",
+        "Component": "BAPI",
+        "Product": "Theobald.Extractors"
+    }
+]

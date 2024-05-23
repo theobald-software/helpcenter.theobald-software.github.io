@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed a bug that could cause extractions to get stuck in a running state while not actually running anymore",
+        "Component": "General",
+        "Product": "BoardConnector"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Silent setup doesn't initiate config conversion",
+        "Component": "Setup",
+        "Product": "BoardConnector"
+    }
+]

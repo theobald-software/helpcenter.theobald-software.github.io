@@ -1,0 +1,43 @@
+[
+    {
+        "Message": "Fixed a bug where WebSocket RFC properties would not be cloned when calling R3Connection.Clone",
+        "Component": "NWRFC",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Removed internal references of defunct products (XtractPPV, XtractQV, XtractRS) and destinations (AlteryxConnect, GoodData, MicroStrategy, ODataAtom, PowerBI, TableauConnector, Teradata, Vertica) from code base",
+        "Component": "Licensing",
+        "Product": "Common"
+    },
+    {
+        "Message": "Fixed a bug, introduced in 1.47.0, that would not create the LeafFrom and LeaftTo columns for hierarchy extractors",
+        "Component": "DeltaQ",
+        "Product": "Theobald.Extractors"
+    },
+    {
+        "Message": "Fixed a bug that caused the BAPI result row count to be 1 when it was actually 0",
+        "Component": "BAPI",
+        "Product": "Theobald.Extractors"
+    },
+    {
+        "Message": "Add deletion transport request for Z_THEO_DELETE_LOG_ENTRIES function module.",
+        "Component": "TableCDC",
+        "Product": "Theobald.Extractors"
+    },
+    {
+        "Message": "Fixed a bug where an extractions directory would not be deleted entirely when deleting the extraction in the designer. Fixed the error message sent by the HTTP-server if supplied parameters are ambiguous.",
+        "Component": "General",
+        "Product": "Theobald.Server"
+    },
+    {
+        "Message": "Fixed a bug in the HTTP server causing the request to hang and massive memory usage.",
+        "Component": "General",
+        "Product": "Theobald.Server"
+    },
+    {
+        "Message": "Fixed multiple run information and cache issues.",
+        "Component": "General",
+        "Product": "Theobald.Server",
+        "ReleaseNote": "## TheobaldServer 4.0.26\n\n- The runtime will now retry to write the extractions status information if it fails. Retries will end after 15 seconds\n- Fixed the logic of whether to use the cache or not for delta extractions (ODP and DeltaQ)\n- Fixed a but where finalization of a failed extraction would not complete correctly due to follow up errors"
+    }
+]

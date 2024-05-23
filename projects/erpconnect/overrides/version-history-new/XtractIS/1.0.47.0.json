@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for crash when an InfoObject of a cube contains an & sign in the name of its hierarchy",
+        "Component": "BW Cube",
+        "Product": "XtractIS"
+    }
+]

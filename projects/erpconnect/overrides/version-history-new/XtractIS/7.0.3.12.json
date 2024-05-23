@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "Introduced ILog interface to reduce coupling with specific log implementations.",
+        "Component": "General",
+        "Product": "Common"
+    },
+    {
+        "Message": "The extractors now use the new ILog interface. The BAPIExtractor now can take a callback being called when the data has arrived from the SAP system.",
+        "Component": "General",
+        "Product": "Theobald.Extractors"
+    }
+]

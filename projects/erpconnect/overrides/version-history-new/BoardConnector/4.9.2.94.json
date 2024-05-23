@@ -1,0 +1,8 @@
+[
+    {
+        "Message": "Fixed function module recognition based on signature.",
+        "Component": "Report",
+        "Product": "Theobald.Extractors",
+        "ReleaseNote": "## Fixed function module recognition based on signature.\n\nIn cases where the name of the used function module is unknown, the extractor tries to identify and verify the function module based on its signature. This check has now been fixed."
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for \"undefined\" status of process chain",
+        "Component": "OHS",
+        "Product": "Theobald.Extractors"
+    }
+]

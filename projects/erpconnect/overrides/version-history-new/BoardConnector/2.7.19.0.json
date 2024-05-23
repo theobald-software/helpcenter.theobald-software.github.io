@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "Server had to be restarted, if errors occurred while loading an extraction",
+        "Component": "Server",
+        "Product": "BoardConnector"
+    },
+    {
+        "Message": "Added OrderBy property to ReadTable class",
+        "Component": "General",
+        "Product": "ERPConnect"
+    }
+]

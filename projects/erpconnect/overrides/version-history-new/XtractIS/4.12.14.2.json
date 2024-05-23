@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed a bug where the number of max connections was determined incorrectly on little endian systems",
+        "Component": "DeltaQ",
+        "Product": "XtractKernel"
+    }
+]

@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "Setting R3Connection.Host/R3Connection.SystemNumber  for monitoring of load balancing scenarios",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Updated to 4.41.2.0",
+        "Component": "ERPConnect",
+        "Product": "XtractKernel"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed problems that caused extractions to fail after upgrading from versions before 6.10.0",
+        "Component": "BAPI",
+        "Product": "XtractIS"
+    }
+]

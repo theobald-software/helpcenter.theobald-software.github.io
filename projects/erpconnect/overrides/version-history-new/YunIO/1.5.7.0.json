@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed a bug where loading the source for transaction would result in an error.",
+        "Component": "General",
+        "Product": "YunIO"
+    }
+]

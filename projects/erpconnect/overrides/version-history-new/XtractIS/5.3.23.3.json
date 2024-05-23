@@ -1,0 +1,23 @@
+[
+    {
+        "Message": "New DeleteFile method in IOHelper",
+        "Component": "General",
+        "Product": "Common",
+        "ReleaseNote": "Move DeleteFile method from Xtract.Server.Persistence.StatisticsStore to Theobald.Common.IOHelper"
+    },
+    {
+        "Message": "Updated gacutil to 4.7.2558.0",
+        "Component": "General",
+        "Product": "Common"
+    },
+    {
+        "Message": "UI improvements for removing tables",
+        "Component": "Table",
+        "Product": "Theobald.Extractors"
+    },
+    {
+        "Message": "GUI: Fixed a bug that caused delta columns to be deselected when changing from Delta to Recovery mode",
+        "Component": "ODP",
+        "Product": "Theobald.Extractors"
+    }
+]

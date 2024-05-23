@@ -1,0 +1,37 @@
+[
+    {
+        "Message": "Improved error message if SetAbapDebug() is called on invalid R3Connection objects",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Property BWVariable.UID withdrawn -> was useless",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Added BWVariable.UID property which contains the internal BW identifier for a variable",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Fix for tracing",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Fix for EBCDIC systems",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Fix for variable handling in BEX mode under certain release > 7.01",
+        "Component": "BW Cube",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Added support for pure MDX execution",
+        "Component": "BW Cube",
+        "Product": "XtractKernel"
+    }
+]

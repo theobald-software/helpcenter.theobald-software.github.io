@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for missing values in extractor 0EPM_EMPLOYEE_ORG_HIER",
+        "Component": "DeltaQ",
+        "Product": "XtractKernel"
+    }
+]

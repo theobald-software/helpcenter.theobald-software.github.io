@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "CsvReader overhaul",
+        "Component": "General",
+        "Product": "Common"
+    },
+    {
+        "Message": "Added support for runtime parameters.",
+        "Component": "Report",
+        "Product": "Theobald.Extractors"
+    }
+]

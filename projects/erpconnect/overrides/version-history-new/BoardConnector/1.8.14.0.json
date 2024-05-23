@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for Designer failing to connect in some environments",
+        "Component": "General",
+        "Product": "BoardConnector"
+    }
+]

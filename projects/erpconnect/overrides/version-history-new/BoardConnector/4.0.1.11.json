@@ -1,0 +1,37 @@
+[
+    {
+        "Message": "Added support for Visual Studio 2019",
+        "Component": "LINQtoERP",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "ReadTable: Fix for determining lengths of columns",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Updated Z_THEO_READ_TABLE to version 2.0",
+        "Component": "Table",
+        "Product": "Theobald.Extractors"
+    },
+    {
+        "Message": "Updated to 6.7.3.6",
+        "Component": "ERPConnect",
+        "Product": "Theobald.Extractors"
+    },
+    {
+        "Message": "Various fixes for variables",
+        "Component": "BW Cube",
+        "Product": "Theobald.Extractors"
+    },
+    {
+        "Message": "Updated to 1.8.0",
+        "Component": "Theobald.Extractors",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Updated to 1.7.4.3",
+        "Component": "Theobald.Extractors",
+        "Product": "XtractKernel"
+    }
+]

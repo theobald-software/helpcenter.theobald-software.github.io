@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed a bug that caused an IndexOutOfRangeException when incoming tables were disconnected previously",
+        "Component": "BAPI",
+        "Product": "Theobald.Extractors"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added access restriction for shared connections",
+        "Component": "Security",
+        "Product": "BoardConnector"
+    }
+]

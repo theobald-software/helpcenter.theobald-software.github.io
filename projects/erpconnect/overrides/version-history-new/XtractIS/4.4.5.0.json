@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed an error in BWCube column order handling when using measure structures.",
+        "Component": "BW Cube",
+        "Product": "XtractIS"
+    }
+]

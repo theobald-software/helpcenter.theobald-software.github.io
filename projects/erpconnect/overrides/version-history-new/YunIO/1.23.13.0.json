@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed some inconsistencies in the authentication logic",
+        "Component": "Theobald.Server",
+        "Product": "YunIO"
+    }
+]

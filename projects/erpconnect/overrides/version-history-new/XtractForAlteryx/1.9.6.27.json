@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "IoHelper.OpenFileRetryWrite() now has FileMode parameter instead of bool",
+        "Component": "General",
+        "Product": "Common"
+    }
+]

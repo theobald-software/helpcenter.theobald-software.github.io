@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "Improved error messages related  to function module failures",
+        "Component": "Table",
+        "Product": "Theobald.Extractors"
+    },
+    {
+        "Message": "Updated to 6.5.7.14",
+        "Component": "ERPConnect",
+        "Product": "Theobald.Extractors"
+    }
+]

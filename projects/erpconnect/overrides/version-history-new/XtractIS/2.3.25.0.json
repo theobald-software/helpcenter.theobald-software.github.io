@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Correction for OutOfMemory exception in certain SAP environments",
+        "Component": "General",
+        "Product": "XtractIS"
+    }
+]

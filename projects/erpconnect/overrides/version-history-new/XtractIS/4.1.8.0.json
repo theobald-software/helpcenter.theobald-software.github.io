@@ -1,0 +1,13 @@
+[
+    {
+        "Message": "Fix for \"Convert Strings To VarChar\"",
+        "Component": "Table",
+        "Product": "XtractIS"
+    },
+    {
+        "Message": "Added JSON serialization for Table, Query & Hierarchy. Various fixes & improvements.",
+        "Component": "General",
+        "Product": "XtractKernel",
+        "IsBreaking": true
+    }
+]

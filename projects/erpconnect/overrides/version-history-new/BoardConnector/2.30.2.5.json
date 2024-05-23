@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Increased timeout for registering RFC servers",
+        "Component": "DeltaQ",
+        "Product": "XtractKernel"
+    }
+]

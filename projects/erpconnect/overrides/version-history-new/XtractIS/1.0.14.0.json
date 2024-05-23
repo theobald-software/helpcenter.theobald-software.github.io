@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "	Fix in connection manager when using Load Balancing with a group name with blanks",
+        "Component": "General",
+        "Product": "XtractIS"
+    }
+]

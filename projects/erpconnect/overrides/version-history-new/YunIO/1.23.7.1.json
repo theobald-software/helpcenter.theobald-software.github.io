@@ -1,0 +1,9 @@
+[
+    {
+        "Message": "The new runtime is now feature complete and generally available.",
+        "Component": "General",
+        "Product": "Theobald.Server",
+        "IsBreaking": true,
+        "ReleaseNote": "## Theobald Server 4.0.0\n\n- the new runtime enters general availability\n- refactoring and simplification of the new runtime\n- server code unification for running extractions against the new runtime\n- a new extraction cache for the new runtime was implemented\n- removed old HTTP server\n- the HTTP server now supports compression (gzip)\n- fixed some HTTP server bugs\n  - CORS headers did not always have the correct value\n- extractors clean up step is now correctly called after all data was processed and in any case of errors"
+    }
+]

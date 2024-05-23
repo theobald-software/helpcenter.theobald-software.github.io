@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Yet another fix for hierarchies with multiple matching entries in RSRHIEDIR_OLAP",
+        "Component": "Hierarchy",
+        "Product": "XtractKernel"
+    }
+]

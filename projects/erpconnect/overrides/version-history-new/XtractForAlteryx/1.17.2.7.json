@@ -1,0 +1,18 @@
+[
+    {
+        "Message": "Replaced the local byte serialization/deserialization on Ewkb with the ByteSerialization from Theobald.Common (introduced on 2.22.0)",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Added ByteSerialization and ByteBufferManager classes",
+        "Component": "General",
+        "Product": "Common",
+        "ReleaseNote": "- Theobald.Common 2.22.0\n\nByteSerialization has implementations, in little and big endian, for serializing and deserializing different dotnet types in/from raw bytes.\n\nByteBufferManager references the ByteSerialization (according to the given endianness) and implements methods to handle writing, reading and slicing a byte buffer."
+    },
+    {
+        "Message": "Replaced the local byte buffer handling for column encryption with the ByteBufferManager from Theobald.Common (introduced on 2.22.0)\n",
+        "Component": "General",
+        "Product": "Theobald.Extractors"
+    }
+]

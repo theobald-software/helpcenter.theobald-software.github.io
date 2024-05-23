@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for data types when using workflow tables as input",
+        "Component": "BAPI",
+        "Product": "XtractForAlteryx"
+    }
+]

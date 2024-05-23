@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for table columns type FLOAT. The data type was not mapped correctly",
+        "Component": "BAPI",
+        "Product": "XtractIS"
+    }
+]

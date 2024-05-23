@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "OLTP timestamp can be set through a variable",
+        "Component": "DeltaQ",
+        "Product": "XtractIS"
+    }
+]

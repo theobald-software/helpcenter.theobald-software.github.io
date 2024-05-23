@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "NW: Fix for table structures with padding at the end",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Updated to 4.38.2.0",
+        "Component": "ERPConnect",
+        "Product": "XtractKernel"
+    }
+]

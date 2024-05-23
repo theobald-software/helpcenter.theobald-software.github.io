@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "CORS: improved allowed origins header",
+        "Component": "Theobald.Server",
+        "Product": "YunIO"
+    }
+]

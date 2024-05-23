@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed a bug that caused initial load rollback to not completely remove log table metadata from the SAP system",
+        "Component": "TableCDC",
+        "Product": "Theobald.Extractors"
+    }
+]

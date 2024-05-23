@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Settings Max Rows, Package Size and Custom Function can be set now through SSIS variables",
+        "Component": "Table",
+        "Product": "XtractIS"
+    }
+]

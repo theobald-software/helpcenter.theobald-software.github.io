@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Small fix for previous release, so the Services can be created.",
+        "Component": "Designer",
+        "Product": "YunIO"
+    }
+]

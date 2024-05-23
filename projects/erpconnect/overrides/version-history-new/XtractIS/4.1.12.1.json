@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Improved error message of pool connections.",
+        "Component": "DeltaQ",
+        "Product": "XtractKernel"
+    }
+]

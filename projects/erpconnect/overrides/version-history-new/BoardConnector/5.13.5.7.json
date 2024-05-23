@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Updated & improved texts for various licensing error messages; fixed possible bugs",
+        "Component": "Licensing",
+        "Product": "Common"
+    }
+]

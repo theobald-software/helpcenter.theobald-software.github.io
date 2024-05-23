@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Removed optional business rule ServerNameShouldBeSet for XtractForAlteryx Designer (\"Desktop\") licenses. Since we can't enforce this limit it doesnt make sense to save it into the licenses. With this business rule gone, the automated license tool can now create new XfA Designer licenses without a server name (field is entirely optional now).",
+        "Component": "Licensing",
+        "Product": "Common"
+    }
+]

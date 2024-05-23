@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for tables with emtpy column descriptions (since 2.2.10.x)",
+        "Component": "Table",
+        "Product": "BoardConnector"
+    }
+]

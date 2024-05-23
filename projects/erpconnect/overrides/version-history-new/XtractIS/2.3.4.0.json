@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Correction for negative numbers in currency conversion fields ( e.g. table VBRK with field KURRF) ",
+        "Component": "Table",
+        "Product": "XtractIS"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed a bug where in some cases changing extraction settings would reset changes made to WHERE and HAVING clauses.",
+        "Component": "Table",
+        "Product": "Theobald.Extractors"
+    }
+]

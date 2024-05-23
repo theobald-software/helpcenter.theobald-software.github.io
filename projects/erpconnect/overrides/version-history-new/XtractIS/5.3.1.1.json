@@ -1,0 +1,22 @@
+[
+    {
+        "Message": "Fixed a bug that caused range selections to reset to 'Equal' after saving the extraction",
+        "Component": "ODP",
+        "Product": "Theobald.Extractors"
+    },
+    {
+        "Message": "Reverted Z_THEO_READ_TABLE back to v1.11 for systems before 740SP05",
+        "Component": "Table",
+        "Product": "Theobald.Extractors"
+    },
+    {
+        "Message": "Fix for properties with same names on different dimensions.",
+        "Component": "BW Cube",
+        "Product": "Theobald.Extractors"
+    },
+    {
+        "Message": "Fix for selecting properties in cube extractor.",
+        "Component": "BW Cube",
+        "Product": "Theobald.Extractors"
+    }
+]

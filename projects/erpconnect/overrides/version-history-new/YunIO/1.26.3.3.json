@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed a bug causing cache entries of failed extractions to not be invalidated correctly.\nFixed the timestamp format for script expression of `Extraction.Timestamp`.",
+        "Component": "General",
+        "Product": "Theobald.Server"
+    }
+]

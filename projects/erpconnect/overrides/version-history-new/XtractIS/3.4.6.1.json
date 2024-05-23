@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "Fix for missing table data (bug introduced in 5.3.1)",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Updated to 5.3.2.0",
+        "Component": "ERPConnect",
+        "Product": "XtractKernel"
+    }
+]

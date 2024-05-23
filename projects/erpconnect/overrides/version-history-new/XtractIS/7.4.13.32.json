@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Removed table parameter values from log output",
+        "Component": "BAPI",
+        "Product": "Theobald.Extractors"
+    }
+]

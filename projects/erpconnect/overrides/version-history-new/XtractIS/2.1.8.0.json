@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Wrong fields lengths in DeltaQ metadata which might lead to column shifting is now repaired automatically during extraction",
+        "Component": "DeltaQ",
+        "Product": "XtractIS"
+    }
+]

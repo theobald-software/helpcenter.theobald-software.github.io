@@ -1,0 +1,137 @@
+[
+    {
+        "Message": "All data conversion/parsing of Table parameters is now performed by ERPConnect instead of the classic RFC SDK.",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Updated logic to set MaxLength property for result data tables in XtractQL.",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Reverted changes from 4.17.10",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Fix for receiving INT in table parameters from big endian systems (classic RFC)",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Disabled code signing for ERPConnect DLLs (signature check leads to high latency in some cases)",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Temporarily re-added R3Connection.IsBusy (deprecated, will be removed again)",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "R3Connection.Close() does not throw exceptions anymore (SOAP)",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "ERPConnect DLLs are signed now",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Added support for SAP Codepage 6300 (Eurojapan)",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Added support for SAP Release 7.4",
+        "Component": "Hierarchy",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Refactored tree browser into user control",
+        "Component": "Table",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "New hierarchy look-up",
+        "Component": "Hierarchy",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "New query look-up and metada retrieval",
+        "Component": "Query",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Updated to 4.17.13.0",
+        "Component": "ERPConnect",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Workaround for variable usage with Bex mode under BW release 7.4",
+        "Component": "BW Cube",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Updated XQLDataReader logic in XtractQL.",
+        "Component": "XtractQL",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Implemented query selection parameters for look-up",
+        "Component": "Query",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Fix for issues with S init with certain OLTP sources: Setting the I_INITSIMU param to X when calling RSA1_OLTPSOURCE_GET_SELECTIONS",
+        "Component": "DeltaQ",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Updated logic to set MaxLength property for result data tables in XtractQL.",
+        "Component": "XtractQL",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Fixed several source analysis issues which were detected by new StyleCop version (mostly documentation typos)",
+        "Component": "General",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Updated StyleCop to 4.7.49.0",
+        "Component": "General",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Added new API methods for query lookup & metadata retrieval",
+        "Component": "Query",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Optimized initial loading time of tree browser",
+        "Component": "Table",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Optimized table lookup and filtering in tree browser",
+        "Component": "Table",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Added tree browser for table lookup",
+        "Component": "Table",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Updated to 4.17.7.0",
+        "Component": "ERPConnect",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Updated XtractQL to support KernelRules code analysis.",
+        "Component": "XtractQL",
+        "Product": "XtractKernel"
+    }
+]

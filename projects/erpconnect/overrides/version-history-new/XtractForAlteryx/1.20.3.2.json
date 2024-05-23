@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed an issue that caused NotSupportExceptions for Hierarchy extractions",
+        "Component": "ODP",
+        "Product": "Theobald.Extractors"
+    }
+]

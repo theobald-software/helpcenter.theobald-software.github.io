@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "Fix for table columns with datatype SSTRING and defined max length. SSTRING columns without a maximum length are still unsupported.",
+        "Component": "Table",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Fix for tables that contain an apostroph in the values of the primary key while using the compression feature. This situation could lead to a shortdump due to syntax error in generic ABAP code.",
+        "Component": "Table",
+        "Product": "XtractKernel"
+    }
+]

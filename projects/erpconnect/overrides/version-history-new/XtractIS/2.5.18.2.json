@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Bug fix for selecting a hierarchy object from value help dialog after having resorted the hierarchy list",
+        "Component": "DeltaQ",
+        "Product": "XtractKernel"
+    }
+]

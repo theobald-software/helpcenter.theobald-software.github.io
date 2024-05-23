@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for Designer disconnection handling",
+        "Component": "Designer",
+        "Product": "BoardConnector"
+    }
+]

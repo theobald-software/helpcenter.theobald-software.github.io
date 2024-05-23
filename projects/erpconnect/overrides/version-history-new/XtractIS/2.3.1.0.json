@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Correction for Thai codepages in SSIS",
+        "Component": "BAPI",
+        "Product": "XtractIS"
+    }
+]

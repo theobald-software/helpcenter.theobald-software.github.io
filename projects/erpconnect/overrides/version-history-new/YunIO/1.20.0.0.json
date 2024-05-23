@@ -1,0 +1,8 @@
+[
+    {
+        "Message": "Refactored the services server backend to enable future development. Various bug fixes.",
+        "Component": "Runtime",
+        "Product": "YunIO",
+        "ReleaseNote": "## yunIO 1.20\n\n- Refactored the services server backend to enable future development.\n- Fixed some authentication and authorization issues in the new web server backend.\n- Fixed a bug in the HTTP server causing it to carry state to a new request if the previous one ran into an error.\n- Added service and source level support for the new runtime and web server."
+    }
+]

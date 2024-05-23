@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "New setting Report Width introduced in case there's more than one report line per data line",
+        "Component": "Report",
+        "Product": "BoardConnector"
+    }
+]

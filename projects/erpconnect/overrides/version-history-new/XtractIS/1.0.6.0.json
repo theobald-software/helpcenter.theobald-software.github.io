@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Cube creation rejected when there are no source columns available",
+        "Component": "BW Loader",
+        "Product": "XtractIS"
+    }
+]

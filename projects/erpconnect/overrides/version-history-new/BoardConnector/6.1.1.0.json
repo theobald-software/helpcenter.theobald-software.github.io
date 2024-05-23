@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Cube config converter: improved logging of warnings and fix for failing conversion of extractions created in Board Connector 2.11.4 or lower.",
+        "Component": "BW Cube",
+        "Product": "BoardConnector"
+    }
+]

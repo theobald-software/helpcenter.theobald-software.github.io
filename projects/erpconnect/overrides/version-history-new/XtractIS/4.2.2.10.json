@@ -1,0 +1,32 @@
+[
+    {
+        "Message": "Updated error message for missing NW libraries (NWSDK 7.50)",
+        "Component": "NWRFC",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Fixed a bug where INT1 was being cast to Int32 instead of Byte in generated code",
+        "Component": "LINQtoERP",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Made the behaviour for when a non-registered function on RFCServer is called consistent across RFC and NW. Improved the corresponding error message for RFC.",
+        "Component": "RFCServer",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Fix for logon properties check",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Fix for X509 certificate logon option (SNC is required to be disabled now instead of enabled)",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Fix for reading max. connections from QSENDDEST on old systems",
+        "Component": "DeltaQ",
+        "Product": "XtractKernel"
+    }
+]

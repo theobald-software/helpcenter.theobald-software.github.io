@@ -1,0 +1,17 @@
+[
+    {
+        "Message": "Fixes for TableJoin data transfer",
+        "Component": "Table Join",
+        "Product": "XtractIS"
+    },
+    {
+        "Message": "Fixes for TableJoin data transfer",
+        "Component": "Table Join",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Fixes for OLTP timestamps",
+        "Component": "DeltaQ",
+        "Product": "XtractKernel"
+    }
+]

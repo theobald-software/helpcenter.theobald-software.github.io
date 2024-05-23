@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added extraction setting to disable dummy data for BWCube preview",
+        "Component": "BW Cube",
+        "Product": "BoardConnector"
+    }
+]

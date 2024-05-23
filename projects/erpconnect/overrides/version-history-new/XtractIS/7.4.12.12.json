@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Allow for dynamic buffers in encoding classes.\nAdd helper functions for ignoring exceptions.",
+        "Component": "General",
+        "Product": "Common"
+    }
+]

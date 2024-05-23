@@ -1,0 +1,17 @@
+[
+    {
+        "Message": "BICS: Better error message for mandatory/state variables",
+        "Component": "BW Cube",
+        "Product": "Theobald.Extractors"
+    },
+    {
+        "Message": "BICS: preview will always return rows, if any exist",
+        "Component": "BW Cube",
+        "Product": "Theobald.Extractors"
+    },
+    {
+        "Message": "BICS: disabled filter context menu",
+        "Component": "BW Cube",
+        "Product": "Theobald.Extractors"
+    }
+]

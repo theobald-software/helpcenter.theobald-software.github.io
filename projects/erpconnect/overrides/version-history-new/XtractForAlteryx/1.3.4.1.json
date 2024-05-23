@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "Fixes and improvements for GUI filters",
+        "Component": "General",
+        "Product": "Theobald.Extractors"
+    },
+    {
+        "Message": "Added filters to cube extractor.",
+        "Component": "BW Cube",
+        "Product": "Theobald.Extractors"
+    }
+]

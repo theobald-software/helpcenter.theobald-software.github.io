@@ -1,0 +1,8 @@
+[
+    {
+        "Message": "New status bar",
+        "Component": "Designer",
+        "Product": "BoardConnector",
+        "ReleaseNote": "# Board Connector 4.5.3 - New status bar\n\n* New status bar that displays connection, current authentication mode and license information"
+    }
+]

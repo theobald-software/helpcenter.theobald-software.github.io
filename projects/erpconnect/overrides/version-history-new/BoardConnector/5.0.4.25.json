@@ -1,0 +1,22 @@
+[
+    {
+        "Message": "Fix for tracing null values",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Added text box icon.",
+        "Component": "WPF",
+        "Product": "Common"
+    },
+    {
+        "Message": "Improvements for certificate enrollment",
+        "Component": "General",
+        "Product": "Common"
+    },
+    {
+        "Message": "Improvements from Code Review for License Creation logic.",
+        "Component": "Licensing",
+        "Product": "Common"
+    }
+]

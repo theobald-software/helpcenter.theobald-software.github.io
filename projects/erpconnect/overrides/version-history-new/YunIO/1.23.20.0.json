@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Transaction: Reduced the amount of data written to logs ",
+        "Component": "Runtime",
+        "Product": "YunIO"
+    }
+]

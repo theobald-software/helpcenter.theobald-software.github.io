@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for updating old packages containing DT_I8 fields to Z_THEO_READ_TABLE",
+        "Component": "Table",
+        "Product": "XtractIS"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for possible conversion errors when formatted values option in MDX mode is enabled",
+        "Component": "BW Cube",
+        "Product": "Theobald.Extractors"
+    }
+]

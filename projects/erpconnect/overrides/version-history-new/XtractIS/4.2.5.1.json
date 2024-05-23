@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Hierarchy backward-compatibility: Fix for legacy date selection",
+        "Component": "DeltaQ",
+        "Product": "XtractKernel"
+    }
+]

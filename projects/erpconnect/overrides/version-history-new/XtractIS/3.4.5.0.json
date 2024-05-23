@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for some changes not being saved (bug introduced in 3.4.2)",
+        "Component": "General",
+        "Product": "XtractIS"
+    }
+]

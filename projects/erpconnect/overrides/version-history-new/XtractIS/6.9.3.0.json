@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "Removed French translation",
+        "Component": "General",
+        "Product": "XtractIS"
+    },
+    {
+        "Message": "Removed translations",
+        "Component": "General",
+        "Product": "XtractKernel"
+    }
+]

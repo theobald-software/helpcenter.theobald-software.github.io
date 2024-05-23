@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed a bug that caused the tool to not run when an input connection existed and the AMP Engine was used",
+        "Component": "BAPI",
+        "Product": "XtractForAlteryx"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed a bug where changing function module in settings would in some cases cause an error.",
+        "Component": "Table",
+        "Product": "Theobald.Extractors"
+    }
+]

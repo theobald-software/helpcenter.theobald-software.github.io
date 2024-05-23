@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added upload check script in order to confirm if the setup file has the expected version",
+        "Component": "General",
+        "Product": "BoardConnector"
+    }
+]

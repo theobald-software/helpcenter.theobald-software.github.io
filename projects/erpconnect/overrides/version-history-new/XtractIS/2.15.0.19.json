@@ -1,0 +1,22 @@
+[
+    {
+        "Message": "Improved exception handling in BWCube for BW dates",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Added new ERPException - NotAuthorizedException\nOptimized BWCube exception handling for dates",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Updated to 4.43.2.0",
+        "Component": "ERPConnect",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Added support for Unicode RFC destinations",
+        "Component": "OHS",
+        "Product": "XtractKernel"
+    }
+]

@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "Added auto detection of compression function modules",
+        "Component": "Table",
+        "Product": "BoardConnector"
+    },
+    {
+        "Message": "Removed data compression flag and added auto detection for compression function modules",
+        "Component": "Table",
+        "Product": "XtractKernel"
+    }
+]

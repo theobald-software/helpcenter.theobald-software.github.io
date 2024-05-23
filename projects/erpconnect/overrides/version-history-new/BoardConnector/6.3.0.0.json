@@ -1,0 +1,19 @@
+[
+    {
+        "Message": "Introduce new endpoint to run/start extractions ",
+        "Component": "Server",
+        "Product": "BoardConnector",
+        "ReleaseNote": "## BOARDConnector 6.3.0 \nThis release introduces two new API endpoints which allow the execution of extractions. Therefore the extraction \nname is provided as part of the URL path. This leads to the following structure:\n\n- /run/$extractionName/\n  - This endpoint runs the extraction and waits for it to finish \n- /start/$extractionName/\n  - This endpoint starts the extraction and doesn't wait for the extraction to finish \n\n- Improvements \n  - Improved structure of URLs with different endpoints for waiting or just starting an extraction \n\n- Bug fixes \n  - Fixed a bug where the user-agent was expected as URL parameter instead of http header \n"
+    },
+    {
+        "Message": "Updated /THEO/READ_TABLE to version 3.5. It now supports ORDER BY.",
+        "Component": "Table",
+        "Product": "Theobald.Extractors"
+    },
+    {
+        "Message": "Implement subdirectory support for the run endpoint base ",
+        "Component": "General",
+        "Product": "Theobald.Server",
+        "ReleaseNote": "## TheobaldServer 4.2.0\n- Implemented subdirectory support for the common run endpoint logic \n\n- Bug fixes \n  - Fixed a bug where user-agent was expected as query parameter instead of http header \n"
+    }
+]

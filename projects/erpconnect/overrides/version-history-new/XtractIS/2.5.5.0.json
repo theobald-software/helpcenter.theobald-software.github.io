@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Better handling for automatic date conversion for dates between 9999-01-01 and 9999-12-31",
+        "Component": "Table",
+        "Product": "XtractIS"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Improved function module detection for Z_THEO_READ_TABLE",
+        "Component": "Table",
+        "Product": "XtractKernel"
+    }
+]

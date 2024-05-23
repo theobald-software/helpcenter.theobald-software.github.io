@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Correction for fields of type decimal with 0 decimal digits",
+        "Component": "Table",
+        "Product": "XtractKernel"
+    }
+]

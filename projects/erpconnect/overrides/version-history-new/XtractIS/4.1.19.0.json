@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for DATS columns when switchting on data type conversion (bug introduced in 3.3.8)",
+        "Component": "DeltaQ",
+        "Product": "XtractIS"
+    }
+]

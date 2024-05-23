@@ -1,0 +1,12 @@
+[
+    {
+        "Message": "Added support for custom renaming of Z_THEO_READ_TABLE",
+        "Component": "Table",
+        "Product": "Theobald.Extractors"
+    },
+    {
+        "Message": "Updated to 6.5.7.13",
+        "Component": "ERPConnect",
+        "Product": "Theobald.Extractors"
+    }
+]

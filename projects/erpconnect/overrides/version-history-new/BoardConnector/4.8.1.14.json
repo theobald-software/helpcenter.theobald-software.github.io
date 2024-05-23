@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed a bug where editing an existing report extraction would reset the \"report rows per data row\" setting back to 1.",
+        "Component": "Report",
+        "Product": "Theobald.Extractors"
+    }
+]

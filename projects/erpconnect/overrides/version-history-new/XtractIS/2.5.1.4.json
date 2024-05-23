@@ -1,0 +1,52 @@
+[
+    {
+        "Message": "All data conversion/parsing of Table parameters is now performed by ERPConnect instead of the classic RFC SDK.",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Updated logic to set MaxLength property for result data tables in XtractQL.",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Reverted changes from 4.17.10",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Fix for receiving INT in table parameters from big endian systems (classic RFC)",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Disabled code signing for ERPConnect DLLs (signature check leads to high latency in some cases)",
+        "Component": "General",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Temporarily re-added R3Connection.IsBusy (deprecated, will be removed again)",
+        "Component": "RFC Client",
+        "Product": "ERPConnect"
+    },
+    {
+        "Message": "Updated to 4.17.13.0",
+        "Component": "ERPConnect",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Workaround for variable usage with Bex mode under BW release 7.4",
+        "Component": "BW Cube",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Updated XQLDataReader logic in XtractQL.",
+        "Component": "XtractQL",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Implemented query selection parameters for look-up",
+        "Component": "Query",
+        "Product": "XtractKernel"
+    }
+]

@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Added WarningConfirmation dialog to TheoMessageHelper",
+        "Component": "WPF",
+        "Product": "Common"
+    }
+]

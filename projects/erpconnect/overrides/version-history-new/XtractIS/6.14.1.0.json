@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed a bug that caused \"method not found\" errors when editing components",
+        "Component": "General",
+        "Product": "XtractIS"
+    }
+]

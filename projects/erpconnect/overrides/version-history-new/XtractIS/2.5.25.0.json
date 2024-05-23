@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fix for NULL entries in Request Log under certain circumstances",
+        "Component": "DeltaQ",
+        "Product": "XtractIS"
+    }
+]

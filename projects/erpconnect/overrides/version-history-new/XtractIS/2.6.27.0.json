@@ -1,0 +1,32 @@
+[
+    {
+        "Message": "Fix: In BEX mode the name of the query got lost under certain circumstances.",
+        "Component": "BW Cube",
+        "Product": "XtractIS"
+    },
+    {
+        "Message": "Fix for BEX mode. Commands are ignored when resultset is empty to prevent short dump in SAP.",
+        "Component": "BW Cube",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Columns without value are passed as empty strings instead of DBNull.",
+        "Component": "Report",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Fix for Json arrays in writer",
+        "Component": "JSON",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Fixed \"position\" in metadata of Table and OHS (was 1-based instead of 0-based)",
+        "Component": "General",
+        "Product": "XtractKernel"
+    },
+    {
+        "Message": "Columns can be added to ResultMetadata, independent of original size",
+        "Component": "General",
+        "Product": "XtractKernel"
+    }
+]

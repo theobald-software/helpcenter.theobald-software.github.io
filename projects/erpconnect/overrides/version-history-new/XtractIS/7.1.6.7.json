@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "BICS: Added safeguards against truncated decimal key figure values",
+        "Component": "BW Cube",
+        "Product": "Theobald.Extractors"
+    }
+]

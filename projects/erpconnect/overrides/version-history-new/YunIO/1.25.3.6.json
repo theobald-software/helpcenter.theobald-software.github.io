@@ -1,0 +1,7 @@
+[
+    {
+        "Message": "Fixed a bug that caused invalid results when function modules contained DECFLOAT16/34 parameters or fields",
+        "Component": "BAPI",
+        "Product": "Theobald.Extractors"
+    }
+]
