@@ -1,5 +1,98 @@
 [
   {
+    "Version": "1.32.10.21",
+    "LegacyReleaseDate": "2024-05-21 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Common",
+        "Component": "WPF",
+        "Message": "Extended the CopyPasteTextBox to support error display."
+      }
+    ]
+  },
+  {
+    "Version": "1.32.10.19",
+    "LegacyReleaseDate": "2024-05-21 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "General",
+        "Message": "Fixed a bug where refreshing the metadata without any objects selected for extraction would cause an unexpected error."
+      }
+    ]
+  },
+  {
+    "Version": "1.32.10.17",
+    "LegacyReleaseDate": "2024-05-17 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Common",
+        "Component": "General",
+        "Message": "Allow empty names in NamedList"
+      },
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "BAPI",
+        "Message": "Fix non-structure table line types"
+      }
+    ]
+  },
+  {
+    "Version": "1.32.10.16",
+    "LegacyReleaseDate": "2024-05-17 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "General",
+        "Message": "Fix deletion of renamed parameters"
+      }
+    ]
+  },
+  {
+    "Version": "1.32.10.15",
+    "LegacyReleaseDate": "2024-05-17 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "BW Cube",
+        "Message": "MDX: Fix column order of legacy extractions with key figures on rows"
+      }
+    ]
+  },
+  {
+    "Version": "1.32.10.14",
+    "LegacyReleaseDate": "2024-05-17 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "BW Cube",
+        "Message": "MDX: Support legacy extractions with key figures on rows"
+      }
+    ]
+  },
+  {
+    "Version": "1.32.10.13",
+    "LegacyReleaseDate": "2024-05-17 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "DeltaQ",
+        "Message": "Fixed a bug which would display only data sources using the language set in the connection (introduced in 1.47.0)"
+      }
+    ]
+  },
+  {
+    "Version": "1.32.10.12",
+    "LegacyReleaseDate": "2024-05-17 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "TableCDC",
+        "Message": "Released Monitoring Feature for Log Tables and Triggers. Update of /THEO/CDC* package required."
+      }
+    ]
+  },
+  {
     "Version": "1.32.10.11",
     "LegacyReleaseDate": "2024-05-15 00:00:00Z",
     "Changes": [
@@ -50,7 +143,7 @@
       {
         "Product": "Theobald.Extractors",
         "Component": "Table",
-        "Message": "Fixed a bug that caused refresh metadata to not work properly\n"
+        "Message": "Fixed a bug that caused refresh metadata to not work properly"
       }
     ]
   },
@@ -117,7 +210,7 @@
         "Product": "Theobald.Extractors",
         "Component": "General",
         "Message": "New selection & parameter system",
-        "HasReleaseNote": true
+        "ReleaseNote": "# Theobald.Extractors 2.0\n\n* BW Cube filter / variables UI is the same as for other extraction types \n* BW Cube MDX generator produces more concise queries\n* DeltaQ uses explicitly defined parameters instead of @-prefixes"
       },
       {
         "Product": "Theobald.Server",
@@ -212,7 +305,7 @@
         "Product": "Theobald.Server",
         "Component": "General",
         "Message": "Implement subdirectory support for the run endpoint base ",
-        "HasReleaseNote": true
+        "ReleaseNote": "## TheobaldServer 4.2.0\n- Implemented subdirectory support for the common run endpoint logic \n\n- Bug fixes \n  - Fixed a bug where user-agent was expected as query parameter instead of http header \n"
       }
     ]
   },
@@ -409,7 +502,7 @@
         "Product": "Theobald.Extractors",
         "Component": "Table",
         "Message": "Updated /THEO/READ_TABLE to version 3.4.",
-        "HasReleaseNote": true
+        "ReleaseNote": "**Update /THEO/READ_TABLE to version 3.4**\n- Fixed a bug where extracting decfloat16 and decfloat34 types did not work.\n- Fixed a bug where extracting empty NUMC values would cause extraction to fail."
       }
     ]
   },
@@ -509,7 +602,7 @@
         "Product": "Theobald.Server",
         "Component": "General",
         "Message": "Implemented subdirectory support for the stores",
-        "HasReleaseNote": true
+        "ReleaseNote": "## TheobaldServer 4.1.0\n- Implemented subdirectory capabilities for the stores \n- Standardized way of writing json arrays as response payload \n\n- Improvements \n  - Reduced memory consumption of stores significantly\n\n- Bug fixes\n  - Fixed cleanup logic for requests which are using Keberos authentication\n  - Fixed a bug where data cached by the webserver would be erroneously deleted"
       }
     ]
   },
@@ -656,7 +749,7 @@
         "Product": "Theobald.Server",
         "Component": "General",
         "Message": "Fixed multiple run information and cache issues.",
-        "HasReleaseNote": true
+        "ReleaseNote": "## TheobaldServer 4.0.26\n\n- The runtime will now retry to write the extractions status information if it fails. Retries will end after 15 seconds\n- Fixed the logic of whether to use the cache or not for delta extractions (ODP and DeltaQ)\n- Fixed a but where finalization of a failed extraction would not complete correctly due to follow up errors"
       }
     ]
   },
@@ -812,7 +905,7 @@
         "Product": "YunIO",
         "Component": "Designer",
         "Message": "The new parts of yunIO's UI following the new Style Guide.",
-        "HasReleaseNote": true
+        "ReleaseNote": "Including all aspects: JS, HTML, CSS changes."
       }
     ]
   },
@@ -824,7 +917,7 @@
         "Product": "Theobald.Extractors",
         "Component": "TableCDC",
         "Message": "Fixed a bug where log table creation failed due to missing namespace license. Requires update of /THEO/CDC_* package. Check release notes for details",
-        "HasReleaseNote": true
+        "ReleaseNote": "- Log table names are now prefixed with 'ZTSCDC_' instead of '/THEO/CDC_'. The latter one could not be inserted into SAP table TADIR due to missing license for /THEO/ namespace."
       }
     ]
   },
@@ -869,7 +962,7 @@
         "Product": "Theobald.Extractors",
         "Component": "DeltaQ",
         "Message": "Fixed a bug in the activation process for DeltaQ hierarchy extractions",
-        "HasReleaseNote": true
+        "ReleaseNote": "**Theobald.Extractors 1.52.8**\n\nThis bug would prevent the update of segment names for intervals, nodes and descriptions during the extraction activation.\n\nIt was introduced in the version 1.47.0"
       }
     ]
   },
@@ -881,7 +974,7 @@
         "Product": "Theobald.Extractors",
         "Component": "Table",
         "Message": "Fixed a bug where table settings UI would cause an error when saving. Updated /THEO/READ_TABLE to version 3.2 (see notes).",
-        "HasReleaseNote": true
+        "ReleaseNote": "# Updated /THEO/READ_TABLE to version 3.2\n- Fixed a bug where extracting floating point data would cause an error."
       }
     ]
   },
@@ -893,7 +986,7 @@
         "Product": "Theobald.Extractors",
         "Component": "DeltaQ",
         "Message": "Fixed bugs in the DeltaQ extractor - Details in release notes",
-        "HasReleaseNote": true
+        "ReleaseNote": "**Theobald Extractors 1.52.6**\n\n- fixed a bug which would finish the extraction erroneously as success, when a timeout failure was expected\n- fixed check window fatal error, which would crash the designer on rfc server check failure\n- fixed default timeout reading"
       }
     ]
   },
@@ -1039,7 +1132,7 @@
         "Product": "Theobald.Extractors",
         "Component": "TableCDC",
         "Message": "Released /THEO/CDC package. **Breaking changes** - Please see release notes for details.",
-        "HasReleaseNote": true
+        "ReleaseNote": "### Breaking changes\n\n- Extractions that were created with a previous version will only work if /THEO/CDC package is installed. Deleting CDC resources will however still work even without our package.\n\n### Changes\n\n- Added support for the following databases\n - IBM DB2\n - IBM for i (DB4)\n - IBM for z/os (DB6)\n - ORACLE\n\n- The package resides in the /THEO/ namespace.\n- Improved error messages."
       }
     ]
   },
@@ -1100,7 +1193,7 @@
         "Product": "Theobald.Server",
         "Component": "General",
         "Message": "Fixes for HTTP based Windows authentication and Table runtime parameters and logging improvements for extraction runs.",
-        "HasReleaseNote": true
+        "ReleaseNote": "## TheobaldServer 4.0.19\n\n- Fixed a bug where the HttpServer would append `realm=simple` to the `Negotiate` scheme in the `WWW-Authenticate` header.\n- Fixed a bug in the parsing logic of ad-hoc parameters in the whereClause of Table extractions.\n- Improved logging of parameter, source, destination and connection information when running an extraction."
       }
     ]
   },
@@ -1134,7 +1227,7 @@
         "Product": "Theobald.Extractors",
         "Component": "Table",
         "Message": "Updated /THEO/READ_TABLE to version 3.1",
-        "HasReleaseNote": true
+        "ReleaseNote": "**Update /THEO/READ_TABLE to version 3.1**\n- Fixed a bug where STRING and SSTRING columns would not be properly extracted when using NW library"
       }
     ]
   },
@@ -1392,7 +1485,7 @@
         "Product": "Theobald.Server",
         "Component": "General",
         "Message": "Small fixes and improvements to error handling, scripting and logging.",
-        "HasReleaseNote": true
+        "ReleaseNote": "## Theobald Server 4.0.13\n\n### Fixes\n\n- Fixed errors being suppressed in certain situations\n- Fixed the scripting object types to be backwards compatible\n- Fixed inconsistencies in handling the runtimes state in the error path\n- The HTTP Server will handle errors caused by the client closing the connection more gracefully now\n\n### Features\n\n- Exposed Odp UpdateMode to the scripting engine\n- The runtime now logs an application header right after creating the run log\n"
       }
     ]
   },
@@ -1645,7 +1738,7 @@
         "Product": "YunIO",
         "Component": "General",
         "Message": "Performance and stability fixes.",
-        "HasReleaseNote": true
+        "ReleaseNote": "## yunIO 1.23.21\n\n- SAP connection management in the runtime was reworked\n  - This massively improves performance in high load scenarios.\n- Fixed a deadlock in the HTTP server\n  - This caused worker processes to become unresponsive in high load scenarios.\n- The connection management of the azure relay connector was reworked.\n  - This significantly reduces resource usage and latency, especially for short requests and high load."
       }
     ]
   },
@@ -1882,7 +1975,7 @@
         "Product": "Theobald.Server",
         "Component": "General",
         "Message": "The new runtime is now feature complete and generally available.",
-        "HasReleaseNote": true
+        "ReleaseNote": "## Theobald Server 4.0.0\n\n- the new runtime enters general availability\n- refactoring and simplification of the new runtime\n- server code unification for running extractions against the new runtime\n- a new extraction cache for the new runtime was implemented\n- removed old HTTP server\n- the HTTP server now supports compression (gzip)\n- fixed some HTTP server bugs\n  - CORS headers did not always have the correct value\n- extractors clean up step is now correctly called after all data was processed and in any case of errors"
       }
     ]
   },
@@ -1894,7 +1987,7 @@
         "Product": "YunIO",
         "Component": "Runtime",
         "Message": "Compression support for the HTTP server and some bug fixes.",
-        "HasReleaseNote": true
+        "ReleaseNote": "## yunIO 1.23.7\n\n- enabled URI parameters (in GET requests) for transaction services\n- fixed a bug where the Designer HTTP server would attach unnecessary CORS headers\n- the WWW-Authenticate header is now included in the allowed CORS headers if the response is a 401\n- service payload for report, table and function module services is now sent with compression if the client signals gzip support"
       }
     ]
   },
@@ -2164,7 +2257,7 @@
         "Product": "Theobald.Server",
         "Component": "General",
         "Message": "Fixes and refactoring for new runtime. Fixes for CORS and error handling in HTTP server.",
-        "HasReleaseNote": true
+        "ReleaseNote": "# Theobald Server 3.9\n\nFixes and refactoring for new runtime. Fixes for CORS and error handling in HTTP server.\n\n## New Runtime\n- Refactor internals for simplicity and maintainability.\n- Implement additional extraction types.\n- Implement capability to start an extraction without waiting for it to finish.\n- Fix internal clean up procedures.\n- Fix logging.\n- Implement new result cache.\n- Rework parameter handling.\n- Fix extraction status updates.\n\n## HTTP server\n\n- Fix CORS handling.\n- Fix error handling for errors during the authentication step.\n"
       }
     ]
   },
@@ -2610,7 +2703,7 @@
         "Product": "Theobald.Server",
         "Component": "General",
         "Message": "Added common base for web worker, HTTP server backend and running extractions. An accompanying framework for writing tests for this stack was added as well. Various bug fixes.",
-        "HasReleaseNote": true
+        "ReleaseNote": "## Theobald Server 3.8\n\n- Added common base for web worker, HTTP server backend and running extractions.\n- An accompanying framework for writing tests for this stack was added as well.\n- Fixed some authentication and authorization issues in the new web server backend.\n- Fixed a bug in the HTTP server causing it to carry state to a new request if the previous one ran into an error.\n- Added service and source level support for the new runtime and web server.\n- Refactored the handling of parameters for running extractions."
       }
     ]
   },
@@ -2622,7 +2715,7 @@
         "Product": "YunIO",
         "Component": "Runtime",
         "Message": "Refactored the services server backend to enable future development. Various bug fixes.",
-        "HasReleaseNote": true
+        "ReleaseNote": "## yunIO 1.20\n\n- Refactored the services server backend to enable future development.\n- Fixed some authentication and authorization issues in the new web server backend.\n- Fixed a bug in the HTTP server causing it to carry state to a new request if the previous one ran into an error.\n- Added service and source level support for the new runtime and web server."
       }
     ]
   },
@@ -2776,7 +2869,7 @@
         "Product": "Theobald.Extractors",
         "Component": "Table",
         "Message": "Multiple UI fixes and usability improvements.",
-        "HasReleaseNote": true
+        "ReleaseNote": "## Multiple UI fixes and usability improvements\n- Fixed a bug where an error would be thrown when trying to edit joins on same tables\n- Window for JOIN definitions now doesn't allow to define joins without specifying tables\n- It is no longer possible to add joins in extraction that has no tables defined"
       }
     ]
   },
@@ -2910,7 +3003,7 @@
         "Product": "YunIO",
         "Component": "General",
         "Message": "**Security:** Fixed a path traversal vulnerability in the designer server which enabled it to serve any file from any accessible directory. Please update immediately.",
-        "HasReleaseNote": true
+        "ReleaseNote": "## YunIO 1.15.3\n- Fixed a path traversal vulnerability in the designer server which enabled fetching arbitrary files accessible to the server on file system level.\n- All previous versions are affected and an immediate update is recommended\n- No authentication or authorization is required\n- It is not possible to enumerate directory structures and/or their contents\n- However, it is possible to guess file names and their location and craft a specific request for them\n- Possibly affected types of directories (if the server runs with sufficient privileges):\n  - local file system\n  - local drives (c:, d:, etc.)\n  - network drives (SMB)"
       },
       {
         "Product": "Theobald.Server",
@@ -3185,7 +3278,7 @@
         "Product": "ERPConnect",
         "Component": "RFC Client",
         "Message": "Various breaking changes to R3Connection API",
-        "HasReleaseNote": true
+        "ReleaseNote": "# Changes to R3Connection\nThe following properties/methods have been removed.\n\n* `MultithreadingEnvironment` The feature is always active and cannot be disabled.\n* `AllowStartProgram(string programList)`. Please contact support if you really need this feature.\n\n\nThe following properties/constructors/methods have been marked as obsolete and will be removed 2023-10-01.\n\n* `ConnectionString` --> Please use `ParseConnectionString()` instead.\n* `R3Connection(string connectionString)` --> Please use `ParseConnectionString()` instead.\n* `Open(string rfcConnectionString)`--> Please use `ParseConnectionString()` instead.\n* `OpenSSO(string ticket, bool loadBalancing)` --> Please set `LogonTicket` and `UsesLoadBalancing` instead.\n* `OpenSSO(string ticket)` --> Please set `LogonTicket` instead.\n* `Open(bool useLoadBalancing)` --> Please set `UsesLoadBalancing` instead.\n* `GetSSOTicket(bool loadBalancing)` -->  Please set `UsesLoadBalancing` instead.\n* `SetAbapDebug(bool enabled)` --> Please use external breakpoints in ABAP debugger instead.\n\n\n`ClientProtocol.RFC` has been marked as obsolete. Please use `ClientProtocol.NWRFC` instead. The default value will be switched to NWRFC 2023-10-01."
       }
     ]
   },
@@ -3394,7 +3487,7 @@
         "Product": "Common",
         "Component": "General",
         "Message": "Added ByteSerialization and ByteBufferManager classes",
-        "HasReleaseNote": true
+        "ReleaseNote": "- Theobald.Common 2.22.0\n\nByteSerialization has implementations, in little and big endian, for serializing and deserializing different dotnet types in/from raw bytes.\n\nByteBufferManager references the ByteSerialization (according to the given endianness) and implements methods to handle writing, reading and slicing a byte buffer."
       },
       {
         "Product": "Theobald.Extractors",
@@ -3455,7 +3548,7 @@
         "Product": "YunIO",
         "Component": "Theobald.Server",
         "Message": "Custom authentication related security fixes and improvements.",
-        "HasReleaseNote": true
+        "ReleaseNote": "## yunIO 1.13.1\n\nIncrease PBKDF2 iterations. Existing passwords will be rehashed on successful login.\nRework authentication procedure to account for old PBKDF2 configurations.\nPBKDF2 iterations and algorithm is now serialized to the user information.\nRemoved a side channel from the custom authentication of the RPC protocol."
       },
       {
         "Product": "Common",
@@ -3466,7 +3559,7 @@
         "Product": "Theobald.Server",
         "Component": "General",
         "Message": "Custom authentication related security fixes and improvements.",
-        "HasReleaseNote": true
+        "ReleaseNote": "## Theobald Server 3.6.11\n\nIncrease PBKDF2 iterations. Existing passwords will be rehashed on successful login.\nRework authentication procedure to account for old PBKDF2 configurations.\nPBKDF2 iterations and algorithm is now serialized to the user information.\nRemoved a side channel from the custom authentication of the RPC protocol."
       }
     ]
   },
@@ -3478,7 +3571,7 @@
         "Product": "YunIO",
         "Component": "General",
         "Message": "This release adds full support for the Transaction component. It is now generally available and no longer in Preview.",
-        "HasReleaseNote": true
+        "ReleaseNote": "## yunIO 1.13.0: Transaction\n\nThis release adds full support for the Transaction component. It is now generally available and no longer in Preview.\n\n### Features include:\n\n- Read and write operations are enabled via SAP screen transactions, including support for standard fields, also ALV Grids and Tables that are part of the SAP screen.\n- Record SAP transaction steps, no SAP GUI installation required\n- Replay and automate SAP transaction steps via standard HTTP/HTTPS web service interface\n- SAP message popups can be ignored during transaction replay\n- Define the In/Out parameters for your web service, only include what matters to your scenario without extra unnecessary payload.\n- With built-in OpenAPI specification support, the integration with platforms like Microsoft Power Automate, Power Apps, Logic Apps, or Nintex becomes easy"
       }
     ]
   },
@@ -3681,7 +3774,7 @@
         "Product": "Theobald.Server",
         "Component": "General",
         "Message": "Logging consistency and SAP authentication fixes for the new runtime.",
-        "HasReleaseNote": true
+        "ReleaseNote": "# TheobaldServer 3.6.6\n- New runtime: Fixed a bug where extraction logs would end up in the webserver logs and vice versa\n- New runtime: Fixed a bug where the pass through of the SAP password for sources with SAP authentication enabled would not work correctly\n- Improved log entry format consistency"
       }
     ]
   },
@@ -3748,7 +3841,7 @@
         "Product": "Theobald.Extractors",
         "Component": "BW Cube",
         "Message": "Various improvements and new features in BICS cube extractor",
-        "HasReleaseNote": true
+        "ReleaseNote": "# New BICS feature: Member display \nAllows to define how members are displayed in result set: \"Text\", \"Key\" or \"Text and Key\". Selecting \"Text and Key\" will add an additional column for each selected dimension and property containing the key.\n\n# Improved metadata retrieval\nImproved the metadata retrieval especially when using BEx Queries with mandatory variables. \n\n# Internal improvements\nInternal improvements to increase extraction performance and stability. The \"BICS Fast Mode\" is not available anymore because of an improved, more efficient extraction logic."
       }
     ]
   },
@@ -3975,7 +4068,7 @@
         "Product": "Theobald.Extractors",
         "Component": "Report",
         "Message": "Updated Z_XTRACT_IS_REMOTE_REPORT to version 1.2. (Breaking change)",
-        "HasReleaseNote": true
+        "ReleaseNote": "*Changes in Z_XTRACT_IS_REMOTE_REPORT*:\n- Added Z_TS_PROG authorization object\n- Authority check on Z_TS_PROG is now performed at the beginning of extraction. Should the authority check fail and the report is assigned to an authorization group, another authority check on S_PROGRAM is performed. If both authority checks fail, the extraction is aborted with an error.\n- *IMPORTANT:* Reports not assigned to an authorization group can't be extracted anymore without having an appropriate Z_TS_PROG authorization object assigned to user."
       }
     ]
   },
@@ -4031,7 +4124,7 @@
         "Product": "Theobald.Extractors",
         "Component": "Hierarchy",
         "Message": "New Hierarchy Extractor",
-        "HasReleaseNote": true
+        "ReleaseNote": "* Completely rewritten algorithm + unit and integration tests\n* Now supports Links, Intervals, and all variations of Time Dependent Hierarchies\n* Order and Ids of retrieved elements now identical to values displayed in SAP GUI / rsh1\n* Old json configuration files still working\n* New configuration options: debug logging, show link & row column\n* New columns Link and Row only extracted for new extractions (for backwards compatibility)\n* New Representation: ParentChildWithNodeNames"
       }
     ]
   },
@@ -4173,7 +4266,7 @@
         "Product": "YunIO",
         "Component": "General",
         "Message": "Updated transaction, existing transaction services need to be re-created.",
-        "HasReleaseNote": true
+        "ReleaseNote": "- default values are no longer sent when replaying transactions\n- added diagnostic output / tracing"
       }
     ]
   },
@@ -4497,7 +4590,7 @@
         "Product": "Theobald.Extractors",
         "Component": "Table",
         "Message": "Updated Z_THEO_READ_TABLE to version 2.15.",
-        "HasReleaseNote": true
+        "ReleaseNote": "*Changes in Z_THEO_READ_TABLE*:\n- Code style change"
       }
     ]
   },
@@ -4531,7 +4624,7 @@
         "Product": "YunIO",
         "Component": "Runtime",
         "Message": "New runtime.",
-        "HasReleaseNote": true
+        "ReleaseNote": "# yunIO 1.8\n- yunIO now uses the new runtime, since it already supports the yunIO feature set.\n- No new features are introduced by that at the moment.\n- Errors from the SAP system when processing the request should now be reported to the caller more clearly."
       },
       {
         "Product": "Common",
@@ -4558,7 +4651,7 @@
         "Product": "Common",
         "Component": "Licensing",
         "Message": "Updated licensing logic to no longer care about Sources limits where possible. Marked various helper methods as Obosolete. Existing licenses with Sources limit are still supported.\nRemoved display of Sources limit from About dialog.",
-        "HasReleaseNote": true
+        "ReleaseNote": "Applications should update their license validation logic to ignore a Sources limit if the license contains one."
       }
     ]
   },
@@ -4570,7 +4663,7 @@
         "Product": "Theobald.Extractors",
         "Component": "Table",
         "Message": "Updated Z_THEO_READ_TABLE to version 2.14",
-        "HasReleaseNote": true
+        "ReleaseNote": "*Changes in Z_THEO_READ_TABLE:*\n-  Changed how the run time is calculated. This prevents overflow when high timeout values are used."
       }
     ]
   },
@@ -4582,7 +4675,7 @@
         "Product": "Theobald.Extractors",
         "Component": "Report",
         "Message": "Non executable ABAP programs can't be selected in report lookup anymore.",
-        "HasReleaseNote": true
+        "ReleaseNote": "- Non executable ABAP programs can't be selected in report lookup anymore and an error is shown instead. This way users will be informed about report not being extractable already during the lookup, instead of at runtime."
       }
     ]
   },
@@ -4643,7 +4736,7 @@
         "Product": "Theobald.Extractors",
         "Component": "Table",
         "Message": "Updated Z_THEO_READ_TABLE to version 2.13.",
-        "HasReleaseNote": true
+        "ReleaseNote": "*Changes in Z_THEO_READ_TABLE*:\n- Shared memory area now expires after 1 minute without read access, instead of 1 minute without write access. This prevents extractions that take longer that 1 minute to fetch or process one package from failing."
       }
     ]
   },
@@ -4815,7 +4908,7 @@
         "Product": "Theobald.Extractors",
         "Component": "Table",
         "Message": "Updated Z_THEO_READ_TABLE to version 2.12",
-        "HasReleaseNote": true
+        "ReleaseNote": "*Changes in Z_THEO_READ_TABLE*:\n- Fixed a bug where when data was fetched and sent to extractor too fast, it could cause some data packages to be sent multiple times\n- Background job log now displays package numbers"
       }
     ]
   },
@@ -5196,7 +5289,7 @@
         "Product": "Theobald.Extractors",
         "Component": "BW Cube",
         "Message": "Support for Only_Structures behavior in MDX BEx Queries. Various bug fixes and general improvements for the Cube component.",
-        "HasReleaseNote": true
+        "ReleaseNote": "Added option \"Only Structures\" in Lookup window for MDX Queries. Enables the same behavior as the \"Legacy Metadata Retrieval\" option before XU 5.6. This must be set during lookup and can not be changed later. Customers that have Cube extractions which used the \"Legacy Metadata retrieval\" option before should run the Config Converter again."
       }
     ]
   },
@@ -5230,7 +5323,7 @@
         "Product": "ERPConnect",
         "Component": "Idoc",
         "Message": "Fixed a bug where saving an Idoc schema incorrectly changed field names",
-        "HasReleaseNote": true
+        "ReleaseNote": "# ERPConnect 6.14.19\n\nIdoc segment field names had `ST_` and `FZ_` at their beginning replaced with `USTU-` and `UFZU-`. This is due to a bug in the internal name escaping logic. This fix might break existing code that already circumvents this bug. "
       }
     ]
   },
@@ -5429,7 +5522,7 @@
         "Product": "YunIO",
         "Component": "Designer",
         "Message": "Introduced progress dialog",
-        "HasReleaseNote": true
+        "ReleaseNote": "**YunIO 1.5.2**\nIntroduced progress dialog that is being used in this version in the following places:\n\n- Source connection test\n- SAP objects search for table and function modules\n- SAP metadata fetch for table and function modules"
       }
     ]
   },
@@ -5846,7 +5939,7 @@
         "Product": "Theobald.Extractors",
         "Component": "Table",
         "Message": "Fixed a bug where metadata of views was not retrieved correctly.",
-        "HasReleaseNote": true
+        "ReleaseNote": "- Fixed a bug where the metadata of dynamic fields of views would not get fetched on table lookup.\n- Fixed a bug where columns of views were not in correct order. The columns are now in the same order they are defined in in SAP."
       }
     ]
   },
@@ -6054,7 +6147,7 @@
         "Product": "Theobald.Extractors",
         "Component": "General",
         "Message": "Table and ODP: Added setting to automatically adjust currency decimals based on reference field",
-        "HasReleaseNote": true
+        "ReleaseNote": "- design and runtime SAP users need access to table TCURX\n- existing extractions require metadata refresh (Table) or new lookup (ODP)\n- metadata will be adjusted to fixed decimal with 14 decimal places"
       },
       {
         "Product": "Theobald.Extractors",
@@ -6083,7 +6176,7 @@
         "Product": "Theobald.Extractors",
         "Component": "BW Cube",
         "Message": "Updated cube component with new BICS mode (beta).",
-        "HasReleaseNote": true
+        "ReleaseNote": "The cube component got a major update containing new features and internal improvements.\n\n## MDX mode\n\n- **Improved performance** through some internal optimizations\n- **Runtime Parameter** are supported in variables and dimension filters\n\n## BICS mode (Beta)\n\nWe have added a new cube extraction mode using the BICS interface. This interface is currently in a public beta stadium and should only be used for preview and testing purposes. There can be major breaking changes until the stable release."
       }
     ]
   },
@@ -6117,7 +6210,7 @@
         "Product": "YunIO",
         "Component": "General",
         "Message": "Various fixes & improvements (see release note for details)",
-        "HasReleaseNote": true
+        "ReleaseNote": "* 'Check all'-checkbox for output\n* About Page\n* EmptyState fixes\n* Fixed HttpServer error in case of duplicate headers\n* Download option for swagger and openapi files"
       }
     ]
   },
