@@ -38,7 +38,6 @@ hide:
       <th>Release Date</th>
       <th>Component</th>
       <th>Description</th>
-      <th>Note</th>
     </tr>
   </thead>
   <tbody id="catalogBody">
@@ -82,8 +81,7 @@ hide:
         <td>${item.Version}</td>
         <td>${item.LegacyReleaseDate.split(' ')[0]}</td>
         <td>${change.Component}</td>
-        <td>${change.Message}</td>
-        ${change.ReleaseNote ? `<td><button class="show-more" data-release-note="${encodeURIComponent(change.ReleaseNote)}" style="text-decoration: underline; color: blue;">show more</button></td>` : '<td></td>'}
+        <td>${change.Message} ${change.ReleaseNote ? ` <button class="show-more" data-release-note="${encodeURIComponent(change.ReleaseNote)}" style=" color: #ED1A33;">(Open Release note)</button>` : ''}</td>
       `;
       return row;
     });
@@ -127,7 +125,9 @@ hide:
       .replace(/^\>(.*)$/gm, '<blockquote>$1</blockquote>')
       .replace(/^\s*\*\s*\*\s*\*.*$/gm, '<hr>')
       .replace(/^ReleaseNote:\s*"([^"]+)"$/gm, '<div class="release-note">$1</div>')
-      .replace(/^(?!<h[1-6]>)(?!<div class="release-note">)(.*)$/gm, '<p>$1</p>');
+      .replace(/^(?!<h[1-6]>)(?!<div class="release-note">)(.*)$/gm, '<p>$1</p>')
+      .replace(/`([^`]+)`/g, '<code class="highlight">$1</code>')
+      .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank">$1</a>');
 
     return htmlText;
   }
