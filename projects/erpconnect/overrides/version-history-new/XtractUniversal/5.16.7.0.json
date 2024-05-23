@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for bug that would crash the designer when opening extraction's settings with deleted destination",
-        "Component": "Designer",
-        "Product": "XtractUniversal"
-    }
-]

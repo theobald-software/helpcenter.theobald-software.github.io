@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Added Extraction.TableName and Extraction.RowsCount to Scripted Expressions",
-        "Component": "Destinations",
-        "Product": "XtractUniversal"
-    }
-]

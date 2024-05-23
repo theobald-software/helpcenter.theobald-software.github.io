@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Updates for Exasol and MySQL destination. Their data providers are now included in setup.",
-        "Component": "Destinations",
-        "Product": "XtractUniversal"
-    }
-]

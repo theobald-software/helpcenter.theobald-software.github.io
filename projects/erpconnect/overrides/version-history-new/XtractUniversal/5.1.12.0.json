@@ -1,8 +1,0 @@
-[
-    {
-        "Message": "Parquet: Fix for Spark compatibility mode column names that contain not supported symbols",
-        "Component": "Destinations",
-        "Product": "XtractUniversal",
-        "ReleaseNote": "Column names can only contain `a-z`, `A-Z`, `0-9` and underscore (`_`), all other symbols will be replaced by underscores (`_`).\nThe previous implementation was not fully compatible with Apache Spark implementations."
-    }
-]

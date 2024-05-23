@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "CSV: Date conversion uses empty string as NULL replacement instead of \"NULL\"-string",
-        "Component": "Destinations",
-        "Product": "XtractUniversal"
-    }
-]

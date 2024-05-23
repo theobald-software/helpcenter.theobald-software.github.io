@@ -1,8 +1,0 @@
-[
-    {
-        "Message": "Several improvements related to Parquet",
-        "Component": "Destinations",
-        "Product": "XtractUniversal",
-        "ReleaseNote": "# Xtract Universal 4.14.0\n\nSeveral improvements related to Parquet\n\n## Features\n- Parquet files are now compressed using *GZIP* \n- Parquet file format can now be selected *in S3 AWS* and *Azure* destinations\n- Time values will automatically be converted to TIME_MILLIS type <br> Exceptions:\n  - `'______'` (*whitespaces*) -> 00:00:00\n  - `'240000'` -> 23:59:59\n\n## Bugs\n- Fixed a bug where empty results created invalid Parquet files\n- Fixed a bug where packed numbers had an incorrect total length"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug where the /metadata HTTP API did not work when date conversion was enabled in the destination settings. This affected our external plugins (i.e. Alteryx & Power BI Connector/Script) (Bug introduced in 4.25.0)",
-        "Component": "Server",
-        "Product": "XtractUniversal"
-    }
-]

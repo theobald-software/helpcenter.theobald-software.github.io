@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug where the duration of extractions was displayed incorrectly when the extraction took longer than 24 hours",
-        "Component": "Designer",
-        "Product": "XtractUniversal"
-    }
-]

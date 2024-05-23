@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Removed validation on Snowflake destination which forbade custom regions",
-        "Component": "Destinations",
-        "Product": "XtractUniversal"
-    }
-]

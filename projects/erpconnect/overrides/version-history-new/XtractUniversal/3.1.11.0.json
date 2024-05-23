@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Server configuration: Fix for converting default Int values from V2.x (e. g. config server starting on port 0 in some cases)",
-        "Component": "Server",
-        "Product": "XtractUniversal"
-    }
-]

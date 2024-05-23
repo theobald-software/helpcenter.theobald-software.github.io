@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for decimal count in MDX mode",
-        "Component": "BW Cube",
-        "Product": "XtractUniversal"
-    }
-]

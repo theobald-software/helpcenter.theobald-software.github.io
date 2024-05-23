@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug that caused results of delta extractions (ODP and DeltaQ) to be cached and loaded from cache (Bug introduced in 4.0.0)",
-        "Component": "Server",
-        "Product": "XtractUniversal"
-    }
-]

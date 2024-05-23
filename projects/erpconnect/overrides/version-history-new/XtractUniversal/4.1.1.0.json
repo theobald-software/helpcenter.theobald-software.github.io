@@ -1,8 +1,0 @@
-[
-    {
-        "Message": "Power BI Connector is now signed and can be trusted to keep the Power BI security settings on the recommended level",
-        "Component": "Destinations",
-        "Product": "XtractUniversal",
-        "ReleaseNote": "#### Installation\nMove the **.pqx** file to **%userprofile%\Documents\Power BI Desktop\Custom Connectors**. You can remove the **.mez** file if it exists.\n\n\n#### Trusting the connector\nMicrosoft's documentation on how to trust connectors for Power BI can be found [here](https://docs.microsoft.com/en-us/power-bi/desktop-trusted-third-party-connectors).\nThe certificate thumbprint can be found in the *thumbprint.txt* file in the *powerbi* subdirectory.\n\nAlternatively, you can run the *trust-connector.ps1* script as administrator to automatically modify the registry on your machine."
-    }
-]

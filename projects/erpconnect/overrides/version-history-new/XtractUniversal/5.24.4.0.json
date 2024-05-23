@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for missing columns after running config converter on old BW Cube MDX extractions.",
-        "Component": "BW Cube",
-        "Product": "XtractUniversal"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Friendly message for failed destinations that require extra components and PostgreSQL full server version.\n",
-        "Component": "Destinations",
-        "Product": "XtractUniversal"
-    }
-]

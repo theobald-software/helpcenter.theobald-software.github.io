@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for serialization info in hierarchy extractions",
-        "Component": "DeltaQ",
-        "Product": "XtractKernel"
-    }
-]

@@ -1,8 +1,0 @@
-[
-    {
-        "Message": "Where clause is now accessible through script expressions in destination folder path.",
-        "Component": "Destinations",
-        "Product": "XtractUniversal",
-        "ReleaseNote": "Where clause is now accessible through script expressions in destination folder path in AWS S3, Hadoop and Azure Storage destinations.\n\nThe syntax is `#{TableExtraction.WhereClause}#` and only works with table type extractions."
-    }
-]

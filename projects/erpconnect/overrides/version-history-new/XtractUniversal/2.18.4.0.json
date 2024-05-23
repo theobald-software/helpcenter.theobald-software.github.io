@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "SQL is generated according to SQL identifier restrictions of destination database",
-        "Component": "Destinations",
-        "Product": "XtractUniversal"
-    }
-]

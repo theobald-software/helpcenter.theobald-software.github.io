@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Azure Blob Storage destination: Block Blob is now the default setting (previously Append Blob)",
-        "Component": "Destinations",
-        "Product": "XtractUniversal"
-    }
-]

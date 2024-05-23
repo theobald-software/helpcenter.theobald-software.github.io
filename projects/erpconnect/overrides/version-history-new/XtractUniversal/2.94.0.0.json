@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Added support for undeclared parameters (e. g. for custom SQL)",
-        "Component": "Destinations",
-        "Product": "XtractUniversal"
-    }
-]

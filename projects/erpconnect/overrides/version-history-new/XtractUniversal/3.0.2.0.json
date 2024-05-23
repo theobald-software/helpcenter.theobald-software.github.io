@@ -1,8 +1,0 @@
-[
-    {
-        "Message": "Option \"Require SAP credentials\" could not be modified for all extraction types except for Hierarchy, Query and Table",
-        "Component": "Security",
-        "Product": "XtractUniversal",
-        "IsCritical": true
-    }
-]

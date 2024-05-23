@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Added a 64bits version for the Fnv1a hash generator",
-        "Component": "General",
-        "Product": "Common"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Added support for certificate SSO and reworked source details GUI",
-        "Component": "General",
-        "Product": "XtractUniversal"
-    }
-]

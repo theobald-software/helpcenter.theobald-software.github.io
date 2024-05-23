@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Bug fix in Redshift destination.",
-        "Component": "Destinations",
-        "Product": "XtractUniversal"
-    }
-]

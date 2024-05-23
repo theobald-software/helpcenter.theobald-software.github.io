@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Setting \"Decimal Separator\" withdrawn as it's not necessary anymore. The decimal separator is detected automatically.",
-        "Component": "BW Cube",
-        "Product": "XtractUniversal"
-    }
-]

@@ -1,8 +1,0 @@
-[
-    {
-        "Message": "Added new Destination \"Sql Server Reporting Services\" and corresponding Data Extension Plug-ins for Visual Studio and Power BI Report Server.",
-        "Component": "Destinations",
-        "Product": "XtractUniversal",
-        "ReleaseNote": "Data Extension Plug-ins are compatible with Visual Studio 2017, Visual Studio 2019, and Power BI Report Server January 2020 or later."
-    }
-]

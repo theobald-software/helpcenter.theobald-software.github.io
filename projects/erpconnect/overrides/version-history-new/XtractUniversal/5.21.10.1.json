@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Improved error message for when report lookup by TCODE fails.",
-        "Component": "Report",
-        "Product": "Theobald.Extractors"
-    }
-]

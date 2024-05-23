@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "HTTP metadata API: Fixed letter case of ABAP type IDs",
-        "Component": "Server",
-        "Product": "XtractUniversal"
-    }
-]

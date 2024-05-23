@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Google Cloud Storage: A progress dialog is now shown during the communication with Google auth servers while going through the OAuth procedure.",
-        "Component": "Destinations",
-        "Product": "XtractUniversal"
-    }
-]

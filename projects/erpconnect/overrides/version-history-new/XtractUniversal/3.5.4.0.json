@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Database destinations: Fix for NULLs /  empty strings in SAP source values",
-        "Component": "Destinations",
-        "Product": "XtractUniversal"
-    }
-]

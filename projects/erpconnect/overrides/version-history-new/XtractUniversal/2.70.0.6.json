@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Correction for Decimal numbers that were converted to 0 in rare cases",
-        "Component": "OHS",
-        "Product": "XtractKernel"
-    }
-]

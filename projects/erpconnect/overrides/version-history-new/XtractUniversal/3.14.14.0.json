@@ -1,8 +1,0 @@
-[
-    {
-        "Message": "Redshift destination: Fixed TLS certificate validation (security fix)",
-        "Component": "Destinations",
-        "Product": "XtractUniversal",
-        "IsCritical": true
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for cleaning Tableau temporary files",
-        "Component": "Server",
-        "Product": "XtractUniversal"
-    }
-]

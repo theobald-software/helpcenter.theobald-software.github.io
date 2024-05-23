@@ -1,8 +1,0 @@
-[
-    {
-        "Message": "Added Table CDC extractor (preview)",
-        "Component": "TableCDC",
-        "Product": "XtractUniversal",
-        "IsCritical": true
-    }
-]

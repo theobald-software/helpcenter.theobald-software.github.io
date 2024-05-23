@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for timeouts in Alteryx plugin.",
-        "Component": "Destinations",
-        "Product": "XtractUniversal"
-    }
-]

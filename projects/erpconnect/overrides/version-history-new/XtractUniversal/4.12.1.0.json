@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Salesforce: Fixes for merge row processing and column name style CodeAndText with multiple primary keys",
-        "Component": "Destinations",
-        "Product": "XtractUniversal"
-    }
-]

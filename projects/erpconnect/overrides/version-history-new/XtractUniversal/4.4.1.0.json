@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed an arithmetic overflow issue in CSV-based destinations.",
-        "Component": "Destinations",
-        "Product": "XtractUniversal"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for output column reordering when adding dimension property",
-        "Component": "BW Cube",
-        "Product": "XtractUniversal"
-    }
-]

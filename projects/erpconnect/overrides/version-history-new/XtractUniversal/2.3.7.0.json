@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Removed all #if constructs from ConfigClient.cs and ConfigHost.cs and moved functionality to separate classes/interfaces",
-        "Component": "General",
-        "Product": "XtractUniversal"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug which caused the AzureBlob destination to stop working when the data format was Parquet.",
-        "Component": "General",
-        "Product": "XtractUniversal"
-    }
-]

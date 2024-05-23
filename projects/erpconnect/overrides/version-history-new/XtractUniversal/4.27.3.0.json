@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Salesforce: Fixed two issues that caused extractions to fail when description texts of fields were empty or when date conversion was enabled.",
-        "Component": "Destinations",
-        "Product": "XtractUniversal"
-    }
-]

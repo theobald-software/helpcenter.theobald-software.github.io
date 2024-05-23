@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed possible IndexOutOfRangeException in Oracle destination when using custom parameters e.g. in table where clauses.",
-        "Component": "Destinations",
-        "Product": "XtractUniversal"
-    }
-]

@@ -1,8 +1,0 @@
-[
-    {
-        "Message": "Added Query Builder UI for Reporting Services (SSRS) Data Extension in Visual Studio. Includes option to parameterize the Query String with dynamic runtime parameters. This is a breaking change for old reports (if query parameters were used).\nAdded support for HTTPS authentication methods.",
-        "Component": "Destinations",
-        "Product": "XtractUniversal",
-        "IsBreaking": true
-    }
-]

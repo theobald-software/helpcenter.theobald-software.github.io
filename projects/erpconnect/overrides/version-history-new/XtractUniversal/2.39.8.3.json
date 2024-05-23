@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "General improvement for the handling of incoming calls under certain SAP releases",
-        "Component": "DeltaQ",
-        "Product": "XtractKernel"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Errors during extraction load do not create empty buffer entries anymore",
-        "Component": "Server",
-        "Product": "XtractUniversal"
-    }
-]
