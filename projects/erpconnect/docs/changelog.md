@@ -80,7 +80,7 @@ hide:
         ${item.IsBreaking ? '<span class="is-breaking">Breaking</span>': ''}
         ${item.IsCritical ? '<span class="is-critical">Critical</span>': ''}
         </td>
-        <td>${change.Message} ${change.ReleaseNote ? ` <button class="show-more" data-release-note="${encodeURIComponent(change.ReleaseNote)}" style=" color: #ED1A33;">(Open Release note)</button>` : ''}</td>
+        <td>${change.Message} ${change.ReleaseNote ? ` <button class="show-more" data-release-note="${encodeURIComponent(change.ReleaseNote)}" style="cursor: pointer; color: #ED1A33;">(Open Release note)</button>` : ''}</td>
       `;
       return row;
     });
