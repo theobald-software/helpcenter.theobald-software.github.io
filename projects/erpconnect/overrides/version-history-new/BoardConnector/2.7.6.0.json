@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Refactored destination settings constructor",
-        "Component": "Server",
-        "Product": "BoardConnector"
-    }
-]

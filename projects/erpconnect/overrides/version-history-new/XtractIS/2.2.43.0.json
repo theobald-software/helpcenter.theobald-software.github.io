@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for tables with RAW data types like SXMSPFADDRESS",
-        "Component": "Table",
-        "Product": "XtractIS"
-    }
-]

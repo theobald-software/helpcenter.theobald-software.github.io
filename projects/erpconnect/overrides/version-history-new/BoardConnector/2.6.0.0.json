@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "SAP credentials can be supplied via Basic authentication (HTTPS recommended)",
-        "Component": "Security",
-        "Product": "BoardConnector"
-    }
-]

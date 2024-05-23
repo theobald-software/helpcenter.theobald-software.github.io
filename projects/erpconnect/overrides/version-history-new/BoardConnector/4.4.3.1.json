@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug where table extractions with Z_XTRACT_IS_TABLE_COMPRESSION function module would not work.",
-        "Component": "Table",
-        "Product": "Theobald.Extractors"
-    }
-]

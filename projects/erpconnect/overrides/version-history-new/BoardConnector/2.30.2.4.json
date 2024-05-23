@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for delta inits for 0UC* datasources.",
-        "Component": "Table",
-        "Product": "XtractKernel"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Added Visual C++ runtime to setup",
-        "Component": "Setup",
-        "Product": "BoardConnector"
-    }
-]

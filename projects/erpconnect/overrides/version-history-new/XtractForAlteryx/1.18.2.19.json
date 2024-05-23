@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Moved some licensing code to a separate project. Marked outdated licensing enum members as obsolete.",
-        "Component": "Licensing",
-        "Product": "Common"
-    }
-]

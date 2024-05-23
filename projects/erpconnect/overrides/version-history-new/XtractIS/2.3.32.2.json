@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Bugfix for Delta inits without data",
-        "Component": "DeltaQ",
-        "Product": "XtractKernel"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "The clear result cache functionality does now use the new RPC server capabilities instead of the HTTP server.",
-        "Component": "General",
-        "Product": "BoardConnector"
-    }
-]

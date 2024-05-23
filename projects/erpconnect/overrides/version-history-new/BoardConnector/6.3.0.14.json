@@ -1,8 +1,0 @@
-[
-    {
-        "Message": "Delta extractions now only fetch data up to the maximum log table sequence number at the start of the extraction to avoid cursor concurrency conflicts with simultaneous inserts. Update of /THEO/CDC required.",
-        "Component": "TableCDC",
-        "Product": "Theobald.Extractors",
-        "IsCritical": true
-    }
-]

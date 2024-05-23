@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "The progress dialog now always runs the work load on a background thread.",
-        "Component": "WPF",
-        "Product": "Common"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Bugfix for usage of variables in static tables",
-        "Component": "BAPI",
-        "Product": "XtractIS"
-    }
-]

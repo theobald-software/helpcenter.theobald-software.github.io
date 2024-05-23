@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug where switching from WHERE clause editor mode to text mode would cause an error.",
-        "Component": "Table",
-        "Product": "Theobald.Extractors"
-    }
-]

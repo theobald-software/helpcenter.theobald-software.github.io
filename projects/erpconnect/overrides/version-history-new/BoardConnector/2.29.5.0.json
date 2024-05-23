@@ -1,8 +1,0 @@
-[
-    {
-        "Message": "Fix for missing values (bug introduced in 2.29.3)",
-        "Component": "General",
-        "Product": "BoardConnector",
-        "IsCritical": true
-    }
-]

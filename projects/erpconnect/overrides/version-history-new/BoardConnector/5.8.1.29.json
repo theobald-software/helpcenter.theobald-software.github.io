@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "AbapDate.ToString() now returns ABAP string representations of dates.",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

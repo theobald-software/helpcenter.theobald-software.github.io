@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for connection manager related to parallelization",
-        "Component": "General",
-        "Product": "XtractIS"
-    }
-]

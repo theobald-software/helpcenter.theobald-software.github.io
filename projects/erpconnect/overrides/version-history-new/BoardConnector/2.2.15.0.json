@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for HTTPS port in \"Run\" dialog",
-        "Component": "Designer",
-        "Product": "BoardConnector"
-    }
-]

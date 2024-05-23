@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Improved wording in setup dialog when SSIS server seems to be currently busy",
-        "Component": "Setup",
-        "Product": "XtractIS"
-    }
-]

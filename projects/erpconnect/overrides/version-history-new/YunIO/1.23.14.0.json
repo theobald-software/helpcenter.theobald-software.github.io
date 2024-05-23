@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed DateTime data types in table services.",
-        "Component": "Runtime",
-        "Product": "YunIO"
-    }
-]

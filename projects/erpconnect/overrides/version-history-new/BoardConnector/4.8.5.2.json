@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed ORDER BY special option for Z_XTRACT_IS_TABLE",
-        "Component": "Table",
-        "Product": "Theobald.Extractors"
-    }
-]

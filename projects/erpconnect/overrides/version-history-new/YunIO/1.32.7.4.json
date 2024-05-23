@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Updated /THEO/READ_TABLE to version 3.5. It now supports ORDER BY.",
-        "Component": "Table",
-        "Product": "Theobald.Extractors"
-    }
-]

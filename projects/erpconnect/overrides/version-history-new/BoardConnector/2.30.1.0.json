@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Z_XTRACT_IS_TABLE_COMPRESSION: Added support for decimal floats",
-        "Component": "Table",
-        "Product": "BoardConnector"
-    }
-]

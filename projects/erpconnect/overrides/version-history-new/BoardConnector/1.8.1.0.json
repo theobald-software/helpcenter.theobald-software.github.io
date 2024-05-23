@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Change to avoid \"Attempt to read or write protected memory\" error immediately after start of extraction execution (occurred at arbitrary times)",
-        "Component": "General",
-        "Product": "BoardConnector"
-    }
-]

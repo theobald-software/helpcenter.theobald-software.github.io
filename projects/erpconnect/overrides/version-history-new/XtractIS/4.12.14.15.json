@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for receiving nested tables",
-        "Component": "NWRFC",
-        "Product": "ERPConnect"
-    }
-]

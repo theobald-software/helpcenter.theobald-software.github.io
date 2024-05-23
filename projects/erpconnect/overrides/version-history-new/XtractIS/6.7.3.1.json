@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug which would cause the whole About Window to stretch together with the destinations list",
-        "Component": "WPF",
-        "Product": "Common"
-    }
-]

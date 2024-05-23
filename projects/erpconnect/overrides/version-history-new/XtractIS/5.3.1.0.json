@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed installation of BINotificationService",
-        "Component": "BINotificationServer",
-        "Product": "XtractIS"
-    }
-]

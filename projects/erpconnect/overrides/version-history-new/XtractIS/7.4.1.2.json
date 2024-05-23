@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Added support for SAP systems below version 7.40SP05. Requires /THEO/READ_TABLE to be installed.",
-        "Component": "TableCDC",
-        "Product": "Theobald.Extractors"
-    }
-]

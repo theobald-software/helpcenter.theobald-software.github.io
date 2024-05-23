@@ -1,7 +1,0 @@
-[
-    {
-        "Message": " Fix for wrong \"no OHS destination found\" log entries",
-        "Component": "BINotificationServer",
-        "Product": "XtractIS"
-    }
-]

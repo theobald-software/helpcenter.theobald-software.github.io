@@ -1,8 +1,0 @@
-[
-    {
-        "Message": "Performance and stability fixes.",
-        "Component": "General",
-        "Product": "YunIO",
-        "ReleaseNote": "## yunIO 1.23.21\n\n- SAP connection management in the runtime was reworked\n  - This massively improves performance in high load scenarios.\n- Fixed a deadlock in the HTTP server\n  - This caused worker processes to become unresponsive in high load scenarios.\n- The connection management of the azure relay connector was reworked.\n  - This significantly reduces resource usage and latency, especially for short requests and high load."
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Designer was not able to start if configuration file was corrupted",
-        "Component": "Designer",
-        "Product": "BoardConnector"
-    }
-]

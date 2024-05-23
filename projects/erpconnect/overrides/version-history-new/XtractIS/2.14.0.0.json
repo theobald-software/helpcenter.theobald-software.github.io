@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "localizable now.\nAdded languages German and French for the GUI.	But not in the installation",
-        "Component": "BAPI",
-        "Product": "XtractIS"
-    }
-]

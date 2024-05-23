@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for LoadPlainData(): RCVLAD and following fields",
-        "Component": "Idoc",
-        "Product": "ERPConnect"
-    }
-]

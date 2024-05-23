@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Increased timeout for writing results to BOARD",
-        "Component": "Server",
-        "Product": "BoardConnector"
-    }
-]

@@ -1,8 +1,0 @@
-[
-    {
-        "Message": "Web server access can now be restricted to custom users",
-        "Component": "Server",
-        "Product": "BoardConnector",
-        "ReleaseNote": "# BOARD Connector 4.6.0\n\nWeb server access can now be restricted to custom users. Users will have to authenticate using *HTTP Basic* authentication.\n\nPasswords for custom users now have to be at least eight characters long. This does not affect already existing passwords."
-    }
-]

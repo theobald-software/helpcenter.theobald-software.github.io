@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Additional setting for sending scalar export params to a data flow pipeline",
-        "Component": "BAPI",
-        "Product": "XtractIS"
-    }
-]

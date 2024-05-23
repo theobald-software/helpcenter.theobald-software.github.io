@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Correction for handling data types Integer and Decimal correctly (where converted to String accidently in rare cases)",
-        "Component": "Query",
-        "Product": "XtractIS"
-    }
-]

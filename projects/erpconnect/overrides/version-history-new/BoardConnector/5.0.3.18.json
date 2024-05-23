@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Added method to ILicenseBusinessRule that indicates whether the Rule applies to a certain Property of  a ProductLicense. This is helpful in a UI to highlight the input fields where a user has made bad inputs.",
-        "Component": "Licensing",
-        "Product": "Common"
-    }
-]

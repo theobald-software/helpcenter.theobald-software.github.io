@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for missing names in log retrieval via HTTP",
-        "Component": "Server",
-        "Product": "BoardConnector"
-    }
-]

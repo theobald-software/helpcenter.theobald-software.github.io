@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Removed debug logging statement that wrote the first 2 items of the extracted data into the log",
-        "Component": "Hierarchy",
-        "Product": "Theobald.Extractors"
-    }
-]

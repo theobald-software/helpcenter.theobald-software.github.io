@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for problem with buffer, when the export params are sent to a pipeline that is followed by a Derived Column item",
-        "Component": "BAPI",
-        "Product": "XtractIS"
-    }
-]

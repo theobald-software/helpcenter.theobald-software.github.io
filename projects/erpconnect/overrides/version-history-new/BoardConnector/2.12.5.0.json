@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Improved logging of stack traces",
-        "Component": "General",
-        "Product": "BoardConnector"
-    }
-]

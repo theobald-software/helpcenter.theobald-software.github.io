@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Do not fallback to default, if SNC environment variable is not set",
-        "Component": "General",
-        "Product": "Theobald.Extractors"
-    }
-]

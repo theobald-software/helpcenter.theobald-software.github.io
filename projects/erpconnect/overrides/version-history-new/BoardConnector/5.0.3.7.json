@@ -1,8 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug where report rows without pipes in them were being skipped even if the extraction was ran without dynamic column widths and offsets setting turned on. This change is breaking.",
-        "Component": "Report",
-        "Product": "Theobald.Extractors",
-        "IsBreaking": true
-    }
-]

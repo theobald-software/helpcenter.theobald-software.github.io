@@ -1,8 +1,0 @@
-[
-    {
-        "Message": "Fixes for HTTP based Windows authentication and Table runtime parameters and logging improvements for extraction runs.",
-        "Component": "General",
-        "Product": "Theobald.Server",
-        "ReleaseNote": "## TheobaldServer 4.0.19\n\n- Fixed a bug where the HttpServer would append `realm=simple` to the `Negotiate` scheme in the `WWW-Authenticate` header.\n- Fixed a bug in the parsing logic of ad-hoc parameters in the whereClause of Table extractions.\n- Improved logging of parameter, source, destination and connection information when running an extraction."
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Correction for the value help for variants (some variants were not displayed correctly)",
-        "Component": "Query",
-        "Product": "BoardConnector"
-    }
-]

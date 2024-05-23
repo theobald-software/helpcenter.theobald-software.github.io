@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Output columns sometimes where mixed up when component instances where copied within the data flow without re-selecting the OLTP source in the dialog ",
-        "Component": "DeltaQ",
-        "Product": "XtractIS"
-    }
-]

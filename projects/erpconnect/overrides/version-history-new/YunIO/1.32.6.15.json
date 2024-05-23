@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "There are now 2 different transports for S4 systems. One for S4 systems up to 7.55 and one for 7.55 and newer",
-        "Component": "TableCDC",
-        "Product": "Theobald.Extractors"
-    }
-]

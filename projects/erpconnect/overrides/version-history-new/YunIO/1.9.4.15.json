@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Cube legacy mode: fix for duplicate dimension column names",
-        "Component": "BW Cube",
-        "Product": "Theobald.Extractors"
-    }
-]

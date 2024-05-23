@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for certain cost center hierarchies (e.g. CSKS_S_HIENODE_0101) ",
-        "Component": "DeltaQ",
-        "Product": "XtractKernel"
-    }
-]

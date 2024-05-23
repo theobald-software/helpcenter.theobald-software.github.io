@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Workaround for length problems when extracting packed numbers with conversion routines and Z_XTRACT_IS_TABLE_COMPRESSION",
-        "Component": "Table",
-        "Product": "Theobald.Extractors"
-    }
-]

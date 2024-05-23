@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for about window to display server or cluster info correcly according to the license",
-        "Component": "WPF",
-        "Product": "Common"
-    }
-]

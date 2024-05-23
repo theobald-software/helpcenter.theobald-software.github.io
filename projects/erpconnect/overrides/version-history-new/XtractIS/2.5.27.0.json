@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Big fix for decimal conversion which produced NULL values under certain circumstances.",
-        "Component": "DeltaQ",
-        "Product": "XtractIS"
-    }
-]

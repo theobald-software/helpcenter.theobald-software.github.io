@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Removed 'custom connections' and renamed 'connection' to 'source' (legacy 'custom connections' are still supported, but read-only)",
-        "Component": "General",
-        "Product": "BoardConnector"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for buffer BufferLifespanMinutes",
-        "Component": "Server",
-        "Product": "BoardConnector"
-    }
-]

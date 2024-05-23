@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Added RFCTable.IsSupplied and RFCStructure.SetValueInternal()",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

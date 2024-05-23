@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for setup for SQL Server 2014 and Visual Studio 2012",
-        "Component": "General",
-        "Product": "XtractIS"
-    }
-]

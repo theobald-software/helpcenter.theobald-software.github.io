@@ -1,8 +1,0 @@
-[
-    {
-        "Message": "New Hierarchy Extractor",
-        "Component": "Hierarchy",
-        "Product": "Theobald.Extractors",
-        "ReleaseNote": "* Completely rewritten algorithm + unit and integration tests\n* Now supports Links, Intervals, and all variations of Time Dependent Hierarchies\n* Order and Ids of retrieved elements now identical to values displayed in SAP GUI / rsh1\n* Old json configuration files still working\n* New configuration options: debug logging, show link & row column\n* New columns Link and Row only extracted for new extractions (for backwards compatibility)\n* New Representation: ParentChildWithNodeNames"
-    }
-]

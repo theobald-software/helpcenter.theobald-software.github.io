@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "HTTP client disconnect is now treated as error",
-        "Component": "Server",
-        "Product": "BoardConnector"
-    }
-]

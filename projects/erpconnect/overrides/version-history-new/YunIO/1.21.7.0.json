@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Relay: fixed request content type header.",
-        "Component": "Gateway",
-        "Product": "YunIO"
-    }
-]

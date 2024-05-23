@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Updated NWRFC libraries to 7.50, Libraries are no longer loaded from system directories",
-        "Component": "General",
-        "Product": "XtractIS"
-    }
-]

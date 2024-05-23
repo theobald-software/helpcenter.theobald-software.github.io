@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug where the advanced settings button was disabled for providers that do not support deltas",
-        "Component": "ODP",
-        "Product": "XtractForAlteryx"
-    }
-]

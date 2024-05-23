@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Added support for SAP Max DB databases",
-        "Component": "TableCDC",
-        "Product": "Theobald.Extractors"
-    }
-]

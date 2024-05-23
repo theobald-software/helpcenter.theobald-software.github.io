@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Only update R3Connection.SID after connection has been established, if no SID was set",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed an error when wrapping up transaction extraction execution.",
-        "Component": "Runtime",
-        "Product": "YunIO"
-    }
-]

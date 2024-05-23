@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Option to enable .NET Runtime update over Windows Update (for Windows Server Editions).",
-        "Component": "General",
-        "Product": "YunIO"
-    }
-]

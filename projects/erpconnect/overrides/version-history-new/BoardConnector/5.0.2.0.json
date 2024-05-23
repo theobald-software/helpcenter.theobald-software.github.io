@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for license display and service restart (broken since 5.0)",
-        "Component": "Designer",
-        "Product": "BoardConnector"
-    }
-]

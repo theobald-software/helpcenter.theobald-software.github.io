@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Added ControlNotInitializedException, marked TaskRunner as obsolete",
-        "Component": "WPF",
-        "Product": "Common"
-    }
-]

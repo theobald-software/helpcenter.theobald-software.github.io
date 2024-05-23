@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "BICS mode: Fixed dimension filter members not loading and filters with runtime parameter values not being applied.",
-        "Component": "BW Cube",
-        "Product": "Theobald.Extractors"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed an issue where init simulations (delta initializations without extracting data) could cause subsequent delta requests to not load any data",
-        "Component": "ODP",
-        "Product": "Theobald.Extractors"
-    }
-]

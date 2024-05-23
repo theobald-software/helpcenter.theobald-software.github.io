@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for data loss when table component is used in parallel DataFlows together ",
-        "Component": "Table",
-        "Product": "XtractIS"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for crashing value help when looking up a report while the custom function module in SAP is missing or not remote enabled",
-        "Component": "Report",
-        "Product": "XtractIS"
-    }
-]

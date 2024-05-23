@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "BWCube: It is now possible, to drag and drop properties from different dimensions into the resultset which are based on the same InfoObject (this was refused in the past)",
-        "Component": "BW Cube",
-        "Product": "XtractIS"
-    }
-]

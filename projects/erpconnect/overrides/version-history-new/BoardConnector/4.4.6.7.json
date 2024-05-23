@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for nested structures in export parameters when using NWRFC",
-        "Component": "NWRFC",
-        "Product": "ERPConnect"
-    }
-]

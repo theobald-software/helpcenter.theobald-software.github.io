@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Mitigation/fix for high frequency requests running via Azure.",
-        "Component": "Gateway",
-        "Product": "YunIO"
-    }
-]

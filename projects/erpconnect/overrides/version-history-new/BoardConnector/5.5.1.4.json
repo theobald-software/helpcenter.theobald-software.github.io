@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug where BW Cube Extractions would return broken data when used with Classic RFC library",
-        "Component": "BW Cube",
-        "Product": "Theobald.Extractors"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for extracting binary values via BAPI, OHS & Query (...unable to cast...)",
-        "Component": "Server",
-        "Product": "BoardConnector"
-    }
-]

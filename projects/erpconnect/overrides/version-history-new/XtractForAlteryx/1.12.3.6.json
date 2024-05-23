@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Improved error handling for automatic column detection. Fixed a bug where running if the report returned no rows during automatic column detection, the UI would crash.",
-        "Component": "Report",
-        "Product": "Theobald.Extractors"
-    }
-]

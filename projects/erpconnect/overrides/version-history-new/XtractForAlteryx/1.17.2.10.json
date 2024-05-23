@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Improved metadata load and refresh in the BICS component.",
-        "Component": "BW Cube",
-        "Product": "Theobald.Extractors"
-    }
-]

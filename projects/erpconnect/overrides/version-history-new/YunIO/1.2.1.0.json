@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for creating/deleting users without enabling TLS first.",
-        "Component": "Designer",
-        "Product": "YunIO"
-    }
-]

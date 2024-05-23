@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "External ID SSO: Using CommonCryptoLib SNC name format instead of Kerberos Wrapper Library format",
-        "Component": "General",
-        "Product": "Theobald.Server"
-    }
-]

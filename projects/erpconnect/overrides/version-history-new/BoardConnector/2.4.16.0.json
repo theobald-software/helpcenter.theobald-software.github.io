@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Extractions crashed if url parameter \"programId\" was set",
-        "Component": "DeltaQ",
-        "Product": "BoardConnector"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Ported the DeltaQ component from XtractKernel with new UI",
-        "Component": "DeltaQ",
-        "Product": "Theobald.Extractors"
-    }
-]

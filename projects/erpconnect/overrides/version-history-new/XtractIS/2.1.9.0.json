@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Bugfix: Automatic activation leads to an error, when activation was already done under another client",
-        "Component": "DeltaQ",
-        "Product": "XtractIS"
-    }
-]

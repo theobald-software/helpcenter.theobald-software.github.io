@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Addressing race conditions on high frequency requests over Azure relay.",
-        "Component": "Gateway",
-        "Product": "YunIO"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed an error in cube filter serialization.",
-        "Component": "BW Cube",
-        "Product": "XtractForAlteryx"
-    }
-]

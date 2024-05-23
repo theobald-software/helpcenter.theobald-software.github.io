@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed an issue where trailing zeros of RAW fields where truncated",
-        "Component": "ODP",
-        "Product": "Theobald.Extractors"
-    }
-]

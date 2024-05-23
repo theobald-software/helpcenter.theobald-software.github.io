@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug where subqueries in WHERE clause would cause an error.",
-        "Component": "Table",
-        "Product": "Theobald.Extractors"
-    }
-]

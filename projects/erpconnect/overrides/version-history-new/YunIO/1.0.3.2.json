@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug where the report lookup would throw an error when the new version of RFC_READ_TABLE was used.",
-        "Component": "Report",
-        "Product": "Theobald.Extractors"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Added Support for SQL Server 2022 (no support yet for Visual Studio 2022)",
-        "Component": "General",
-        "Product": "XtractIS"
-    }
-]

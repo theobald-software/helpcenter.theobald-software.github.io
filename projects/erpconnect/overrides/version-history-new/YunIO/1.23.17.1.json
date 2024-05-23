@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Improved error messages of the HTTP server when invalid values were provided for parameters.",
-        "Component": "General",
-        "Product": "Theobald.Server"
-    }
-]

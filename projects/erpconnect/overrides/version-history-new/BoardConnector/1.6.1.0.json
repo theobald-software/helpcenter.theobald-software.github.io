@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix: Sometimes server stopped to handle HTTP request after extractions had been aborted",
-        "Component": "Server",
-        "Product": "BoardConnector"
-    }
-]

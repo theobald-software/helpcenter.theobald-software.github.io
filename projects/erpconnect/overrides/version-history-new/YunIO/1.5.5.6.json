@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for unavailable runtime parameters in dimension range filters.",
-        "Component": "BW Cube",
-        "Product": "Theobald.Extractors"
-    }
-]

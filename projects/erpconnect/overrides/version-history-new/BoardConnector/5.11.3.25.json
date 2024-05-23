@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed an issue that may cause errors when setting exclude filters or runtime parameters in filters when using MDX mode.",
-        "Component": "BW Cube",
-        "Product": "Theobald.Extractors"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for selections on columns that are not part of the result",
-        "Component": "DeltaQ",
-        "Product": "XtractKernel"
-    }
-]

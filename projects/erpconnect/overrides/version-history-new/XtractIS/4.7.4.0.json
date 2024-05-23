@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for NullReferenceException at DeltaQ_NewLogEntry",
-        "Component": "DeltaQ",
-        "Product": "XtractIS"
-    }
-]

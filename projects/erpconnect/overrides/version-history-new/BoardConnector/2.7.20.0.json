@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixes and improvements for Active Directory authentication",
-        "Component": "Security",
-        "Product": "BoardConnector"
-    }
-]

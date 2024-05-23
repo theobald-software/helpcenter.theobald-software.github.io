@@ -1,8 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug where log table creation failed due to missing namespace license. Requires update of /THEO/CDC_* package. Check release notes for details",
-        "Component": "TableCDC",
-        "Product": "Theobald.Extractors",
-        "ReleaseNote": "- Log table names are now prefixed with 'ZTSCDC_' instead of '/THEO/CDC_'. The latter one could not be inserted into SAP table TADIR due to missing license for /THEO/ namespace."
-    }
-]

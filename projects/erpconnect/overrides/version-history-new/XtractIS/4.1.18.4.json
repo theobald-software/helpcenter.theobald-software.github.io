@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Changed request Id format to REQU_pppppppp_yyyyMMddHHmmss to support SAP BW export data sources ",
-        "Component": "DeltaQ",
-        "Product": "XtractKernel"
-    }
-]

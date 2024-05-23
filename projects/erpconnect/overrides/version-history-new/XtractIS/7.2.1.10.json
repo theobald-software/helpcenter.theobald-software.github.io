@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "The maximum allowed value for the log table size limit has been raised to 200.000 entries.",
-        "Component": "TableCDC",
-        "Product": "Theobald.Extractors"
-    }
-]

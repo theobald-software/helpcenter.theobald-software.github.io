@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "TS_SEQUENCE_NUMBER is now a 64 bit integer and supports extractions with more than 2 billion rows. Additionally, it can also be selected for generation in full extractions. ",
-        "Component": "ODP",
-        "Product": "Theobald.Extractors"
-    }
-]

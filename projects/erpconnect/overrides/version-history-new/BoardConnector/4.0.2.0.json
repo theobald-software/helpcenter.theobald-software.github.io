@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for converting date format of old (e. g. 2.12.6.1) extractions",
-        "Component": "General",
-        "Product": "BoardConnector"
-    }
-]

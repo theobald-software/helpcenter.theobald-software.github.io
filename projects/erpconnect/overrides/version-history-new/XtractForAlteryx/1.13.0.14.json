@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Added PersistedCounter to library to centralize all relevant code around License Creation into Theobald.Licensing.",
-        "Component": "Licensing",
-        "Product": "Common"
-    }
-]

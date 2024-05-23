@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Replaced more error messages with warnings for truncated values",
-        "Component": "DeltaQ",
-        "Product": "XtractIS"
-    }
-]

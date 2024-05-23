@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Added new field Extractions to ProductLicense. Fixed property Sources not to be nullable anymore. Moved common code from Licensing Tools to Theobald.Licensing",
-        "Component": "Licensing",
-        "Product": "Common"
-    }
-]

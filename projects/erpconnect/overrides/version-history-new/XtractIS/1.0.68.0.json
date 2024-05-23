@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Improvement for variable handling (Pipes in variable values generate multiple lines in range table)",
-        "Component": "DeltaQ",
-        "Product": "XtractIS"
-    }
-]

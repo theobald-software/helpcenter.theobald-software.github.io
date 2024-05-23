@@ -1,8 +1,0 @@
-[
-    {
-        "Message": "Updated Z_THEO_READ_TABLE to version 2.12",
-        "Component": "Table",
-        "Product": "Theobald.Extractors",
-        "ReleaseNote": "*Changes in Z_THEO_READ_TABLE*:\n- Fixed a bug where when data was fetched and sent to extractor too fast, it could cause some data packages to be sent multiple times\n- Background job log now displays package numbers"
-    }
-]

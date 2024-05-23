@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug causing the HTTP server to send incomplete data, when using compression.",
-        "Component": "General",
-        "Product": "Theobald.Server"
-    }
-]

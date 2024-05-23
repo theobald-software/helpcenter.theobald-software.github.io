@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for some ABAP types",
-        "Component": "Table Join",
-        "Product": "XtractKernel"
-    }
-]

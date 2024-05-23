@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for query with negative integer values",
-        "Component": "Query",
-        "Product": "XtractIS"
-    }
-]

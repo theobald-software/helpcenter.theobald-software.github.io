@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug where a error was displayed after choosing to cancel the setup because of a running process (e.g. Alteryx Server or Designer currently running/busy).",
-        "Component": "Setup",
-        "Product": "XtractForAlteryx"
-    }
-]

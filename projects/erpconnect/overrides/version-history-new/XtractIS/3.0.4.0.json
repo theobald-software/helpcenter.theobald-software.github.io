@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for BEX mode lookup (missing variables)",
-        "Component": "BW Cube",
-        "Product": "XtractIS"
-    }
-]

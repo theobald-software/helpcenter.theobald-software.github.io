@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Added refresh metadata button and fixed an issue where some property texts may not be displayed in MDX extractions created with Xtract for Alteryx versions older than 1.15.0.",
-        "Component": "BW Cube",
-        "Product": "XtractForAlteryx"
-    }
-]

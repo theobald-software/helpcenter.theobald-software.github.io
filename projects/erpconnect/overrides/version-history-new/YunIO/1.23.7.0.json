@@ -1,8 +1,0 @@
-[
-    {
-        "Message": "Compression support for the HTTP server and some bug fixes.",
-        "Component": "Runtime",
-        "Product": "YunIO",
-        "ReleaseNote": "## yunIO 1.23.7\n\n- enabled URI parameters (in GET requests) for transaction services\n- fixed a bug where the Designer HTTP server would attach unnecessary CORS headers\n- the WWW-Authenticate header is now included in the allowed CORS headers if the response is a 401\n- service payload for report, table and function module services is now sent with compression if the client signals gzip support"
-    }
-]

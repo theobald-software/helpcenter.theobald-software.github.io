@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for RAW datatype in tables",
-        "Component": "BAPI",
-        "Product": "XtractIS"
-    }
-]

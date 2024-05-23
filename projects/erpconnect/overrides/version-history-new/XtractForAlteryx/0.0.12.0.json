@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed an issue that may have caused errors when using snc authentication.",
-        "Component": "General",
-        "Product": "XtractForAlteryx"
-    }
-]

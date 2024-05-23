@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Bugfix for using variants through variables",
-        "Component": "Query",
-        "Product": "XtractIS"
-    }
-]

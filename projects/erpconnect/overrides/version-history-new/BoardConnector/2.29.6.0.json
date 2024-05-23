@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for buffer error when output column transformation exchanged measure with dimension or vice versa",
-        "Component": "BW Cube",
-        "Product": "BoardConnector"
-    }
-]

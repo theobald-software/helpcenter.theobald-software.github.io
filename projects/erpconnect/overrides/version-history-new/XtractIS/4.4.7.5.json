@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Added support for qRFC (NetWeaver libraries only)",
-        "Component": "RFC Client",
-        "Product": "ERPConnect"
-    }
-]

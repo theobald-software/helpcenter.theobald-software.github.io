@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a parallelization issue caused by limitations in the callback handling when using NWRFC.",
-        "Component": "NWRFC",
-        "Product": "ERPConnect"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for upgrading Table Join components to newer SQL Server target",
-        "Component": "Table Join",
-        "Product": "XtractIS"
-    }
-]

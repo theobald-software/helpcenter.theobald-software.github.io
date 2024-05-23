@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for TableJoin (broken since 3.7.0).",
-        "Component": "Designer",
-        "Product": "BoardConnector"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Added option to select function module that is used during the extraction runs",
-        "Component": "TableCDC",
-        "Product": "Theobald.Extractors"
-    }
-]

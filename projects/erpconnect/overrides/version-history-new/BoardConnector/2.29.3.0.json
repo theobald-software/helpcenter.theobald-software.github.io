@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for NULL values",
-        "Component": "BW Cube",
-        "Product": "BoardConnector"
-    }
-]

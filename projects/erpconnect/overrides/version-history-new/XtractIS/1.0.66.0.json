@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "	Fix for columns that contain RAW data (e.g. when using GUID-columns)",
-        "Component": "Table",
-        "Product": "XtractIS"
-    }
-]

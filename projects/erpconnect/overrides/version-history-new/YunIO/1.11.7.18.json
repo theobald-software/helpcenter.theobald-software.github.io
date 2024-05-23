@@ -1,8 +1,0 @@
-[
-    {
-        "Message": "Logging consistency and SAP authentication fixes for the new runtime.",
-        "Component": "General",
-        "Product": "Theobald.Server",
-        "ReleaseNote": "# TheobaldServer 3.6.6\n- New runtime: Fixed a bug where extraction logs would end up in the webserver logs and vice versa\n- New runtime: Fixed a bug where the pass through of the SAP password for sources with SAP authentication enabled would not work correctly\n- Improved log entry format consistency"
-    }
-]

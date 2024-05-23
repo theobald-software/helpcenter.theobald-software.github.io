@@ -1,8 +1,0 @@
-[
-    {
-        "Message": "Fix for structure includes",
-        "Component": "BAPI",
-        "Product": "Theobald.Extractors",
-        "IsCritical": true
-    }
-]

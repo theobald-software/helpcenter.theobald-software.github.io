@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "BINotificationServer binaries are not signed anymore due to timeout issues with Windows server manager",
-        "Component": "BINotificationServer",
-        "Product": "XtractIS"
-    }
-]

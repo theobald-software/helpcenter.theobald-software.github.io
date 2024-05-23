@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Improvements for NWRFC multithreading",
-        "Component": "RFCServer",
-        "Product": "ERPConnect"
-    }
-]

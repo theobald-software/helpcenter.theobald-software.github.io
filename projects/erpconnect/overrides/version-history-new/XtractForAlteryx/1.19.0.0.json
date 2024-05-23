@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Runtime parameters can now be provided from the workflow pipeline using input connection 'P'",
-        "Component": "General",
-        "Product": "XtractForAlteryx"
-    }
-]

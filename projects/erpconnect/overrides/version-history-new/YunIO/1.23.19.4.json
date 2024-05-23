@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Use the default values if a parameter value is too large in a table or query extraction.",
-        "Component": "General",
-        "Product": "Theobald.Server"
-    }
-]

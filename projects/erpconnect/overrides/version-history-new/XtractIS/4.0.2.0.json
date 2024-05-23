@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for request maintenance when logical system uses variable",
-        "Component": "DeltaQ",
-        "Product": "XtractIS"
-    }
-]

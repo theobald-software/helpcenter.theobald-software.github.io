@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for MetaData Refresh. Variables were not refreshed correctly",
-        "Component": "BAPI",
-        "Product": "XtractIS"
-    }
-]

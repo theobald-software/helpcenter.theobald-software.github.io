@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "BICS: Truncate NUMC values, if they are too long",
-        "Component": "BW Cube",
-        "Product": "Theobald.Extractors"
-    }
-]

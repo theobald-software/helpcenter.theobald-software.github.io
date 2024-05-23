@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed crashes occurring when running table extractions in parallel.",
-        "Component": "Table",
-        "Product": "XtractIS"
-    }
-]

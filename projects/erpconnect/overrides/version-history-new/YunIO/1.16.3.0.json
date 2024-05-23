@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Transaction: Fixed a bug that caused a less detailed error message to be displayed when the service run failed",
-        "Component": "Runtime",
-        "Product": "YunIO"
-    }
-]

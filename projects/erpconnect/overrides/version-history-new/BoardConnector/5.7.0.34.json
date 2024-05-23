@@ -1,8 +1,0 @@
-[
-    {
-        "Message": "Fix for asynchronous processing problems",
-        "Component": "BW Cube",
-        "Product": "Theobald.Extractors",
-        "IsCritical": true
-    }
-]

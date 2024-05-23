@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for column lengths (e. g. DD08L-CARDLEFT)",
-        "Component": "Table",
-        "Product": "XtractIS"
-    }
-]

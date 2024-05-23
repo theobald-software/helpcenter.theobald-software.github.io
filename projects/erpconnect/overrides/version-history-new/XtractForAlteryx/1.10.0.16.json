@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Workaround for Tables containing empty lines, when using NWRFC libraries with big endian systems",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

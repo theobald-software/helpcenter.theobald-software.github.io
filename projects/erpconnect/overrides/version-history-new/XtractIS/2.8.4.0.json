@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "OLAP: Fix for \"expected 0 columns\"",
-        "Component": "BW Cube",
-        "Product": "XtractIS"
-    }
-]

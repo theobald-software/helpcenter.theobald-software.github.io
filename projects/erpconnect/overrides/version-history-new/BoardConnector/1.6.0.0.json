@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Added version information retrieval via HTTP",
-        "Component": "Server",
-        "Product": "BoardConnector"
-    }
-]

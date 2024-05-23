@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixes for TIMESTAMPL (bug introduced in 1.33.0)",
-        "Component": "General",
-        "Product": "Theobald.Extractors"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for creating lines from chars in specific condition where some lines could have their content overwritten by others'",
-        "Component": "General",
-        "Product": "Common"
-    }
-]

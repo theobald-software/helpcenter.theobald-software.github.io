@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug that caused measures in MDX mode being handled as strings instead of numbers when the formatted values option is enabled.",
-        "Component": "BW Cube",
-        "Product": "Theobald.Extractors"
-    }
-]

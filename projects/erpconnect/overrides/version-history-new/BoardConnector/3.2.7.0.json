@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for converting sources from BOARD Connector 2.x (bug introduced in 3.2.2)",
-        "Component": "Server",
-        "Product": "BoardConnector"
-    }
-]

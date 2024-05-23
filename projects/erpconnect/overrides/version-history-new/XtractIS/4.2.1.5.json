@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for ArgumentNullException in rare cases",
-        "Component": "Table",
-        "Product": "XtractKernel"
-    }
-]

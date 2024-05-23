@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for error message when using the Show MDX link ",
-        "Component": "BW Cube",
-        "Product": "BoardConnector"
-    }
-]

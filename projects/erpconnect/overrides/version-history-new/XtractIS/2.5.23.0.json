@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixes in dispatcher with invalid special characters and swap files",
-        "Component": "DeltaQ",
-        "Product": "XtractIS"
-    }
-]

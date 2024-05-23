@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Added group right 'read extractions', which is also the new default",
-        "Component": "Security",
-        "Product": "BoardConnector"
-    }
-]

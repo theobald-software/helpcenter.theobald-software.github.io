@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug that caused custom runtime parameter values to not be passed to the Query extractor.",
-        "Component": "General",
-        "Product": "Theobald.Server"
-    }
-]

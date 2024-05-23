@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug in the designer for table service, column sort now respects the selection set by select-all checkbox",
-        "Component": "Designer",
-        "Product": "YunIO"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug where cleaning up old cache entries would not correctly purge all obsolete entries.",
-        "Component": "General",
-        "Product": "Theobald.Server"
-    }
-]

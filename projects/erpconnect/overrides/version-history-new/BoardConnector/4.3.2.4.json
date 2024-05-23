@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Added better error message when using HTTPS & .NET Framework below 4.8",
-        "Component": "General",
-        "Product": "Theobald.Server"
-    }
-]

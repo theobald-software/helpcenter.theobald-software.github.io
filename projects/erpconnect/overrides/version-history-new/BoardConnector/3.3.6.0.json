@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for decimals in BEx mode",
-        "Component": "BW Cube",
-        "Product": "BoardConnector"
-    }
-]

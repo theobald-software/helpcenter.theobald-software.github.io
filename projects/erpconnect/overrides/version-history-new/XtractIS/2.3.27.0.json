@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for wrong conversion from RAW export parameters to String SSIS variables",
-        "Component": "BAPI",
-        "Product": "XtractIS"
-    }
-]

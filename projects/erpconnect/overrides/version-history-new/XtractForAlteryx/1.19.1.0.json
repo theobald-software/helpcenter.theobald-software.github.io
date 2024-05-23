@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug that caused errors when passing pipeline tables into the BAPI tool (Bug introduced in 1.19.0)",
-        "Component": "BAPI",
-        "Product": "XtractForAlteryx"
-    }
-]

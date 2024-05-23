@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Bugfix: Variables are no substituted correctly when previewing the query in BEX mode",
-        "Component": "BW Cube",
-        "Product": "XtractIS"
-    }
-]

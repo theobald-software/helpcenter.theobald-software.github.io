@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Transaction: Input and output fields can now be selected. Existing transaction services need to be re-created.",
-        "Component": "General",
-        "Product": "YunIO"
-    }
-]

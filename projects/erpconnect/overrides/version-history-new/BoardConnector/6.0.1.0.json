@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug where the server would erroneously detect a version from version.txt as invalid and not start.",
-        "Component": "General",
-        "Product": "BoardConnector"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Added support for where conditions",
-        "Component": "TableCDC",
-        "Product": "Theobald.Extractors"
-    }
-]

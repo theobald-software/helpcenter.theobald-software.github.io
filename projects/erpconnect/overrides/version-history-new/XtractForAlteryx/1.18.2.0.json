@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug that caused the Alteryx Designer to close in case of an error",
-        "Component": "BAPI",
-        "Product": "XtractForAlteryx"
-    }
-]

@@ -1,8 +1,0 @@
-[
-    {
-        "Message": "Multiple bug fixes and improvements",
-        "Component": "Report",
-        "Product": "Theobald.Extractors",
-        "ReleaseNote": "- Fixed a bug where cancelling the edits of the a report extraction would still overwrite selection values and column changes with new values.\n- Fixed a bug where using runtime parameters would make it impossible to run automatic column detection or preview.\n- Improved the UI for selection parameters to better support runtime parameters."
-    }
-]

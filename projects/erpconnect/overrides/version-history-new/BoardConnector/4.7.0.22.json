@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug where setting IsSupplied to false for at least one table in a function module with multiple tables caused errors when using classic RFC",
-        "Component": "RFCFunction.Tables",
-        "Product": "ERPConnect"
-    }
-]

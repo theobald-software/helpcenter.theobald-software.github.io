@@ -1,5 +1,114 @@
 [
   {
+    "Version": "7.6.1.6",
+    "LegacyReleaseDate": "2024-05-21 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Common",
+        "Component": "WPF",
+        "Message": "Extended the CopyPasteTextBox to support error display."
+      }
+    ]
+  },
+  {
+    "Version": "7.6.1.4",
+    "LegacyReleaseDate": "2024-05-21 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "General",
+        "Message": "Fixed a bug where refreshing the metadata without any objects selected for extraction would cause an unexpected error."
+      }
+    ]
+  },
+  {
+    "Version": "7.6.1.2",
+    "LegacyReleaseDate": "2024-05-17 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Common",
+        "Component": "General",
+        "Message": "Allow empty names in NamedList"
+      },
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "BAPI",
+        "Message": "Fix non-structure table line types"
+      }
+    ]
+  },
+  {
+    "Version": "7.6.1.1",
+    "LegacyReleaseDate": "2024-05-17 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "General",
+        "Message": "Fix deletion of renamed parameters"
+      }
+    ]
+  },
+  {
+    "Version": "7.6.1.0",
+    "LegacyReleaseDate": "2024-05-17 19:14:43Z",
+    "Changes": [
+      {
+        "Product": "XtractIS",
+        "Component": "BAPI",
+        "Message": "Remove deselected exports from output"
+      }
+    ]
+  },
+  {
+    "Version": "7.6.0.4",
+    "LegacyReleaseDate": "2024-05-17 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "BW Cube",
+        "Message": "MDX: Fix column order of legacy extractions with key figures on rows"
+      }
+    ]
+  },
+  {
+    "Version": "7.6.0.3",
+    "LegacyReleaseDate": "2024-05-17 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "BW Cube",
+        "Message": "MDX: Support legacy extractions with key figures on rows"
+      }
+    ]
+  },
+  {
+    "Version": "7.6.0.2",
+    "LegacyReleaseDate": "2024-05-17 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "DeltaQ",
+        "Message": "Fixed a bug which would display only data sources using the language set in the connection (introduced in 1.47.0)"
+      }
+    ]
+  },
+  {
+    "Version": "7.6.0.0",
+    "LegacyReleaseDate": "2024-05-17 09:55:47Z",
+    "Changes": [
+      {
+        "Product": "XtractIS",
+        "Component": "TableCDC",
+        "Message": "Released Monitoring Feature for Log Tables and Triggers. Update of /THEO/CDC* package required."
+      },
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "TableCDC",
+        "Message": "Released Monitoring Feature for Log Tables and Triggers. Update of /THEO/CDC* package required."
+      }
+    ]
+  },
+  {
     "Version": "7.5.1.0",
     "LegacyReleaseDate": "2024-05-14 16:28:56Z",
     "Changes": [
@@ -39,7 +148,7 @@
       {
         "Product": "Theobald.Extractors",
         "Component": "Table",
-        "Message": "Fixed a bug that caused refresh metadata to not work properly\n"
+        "Message": "Fixed a bug that caused refresh metadata to not work properly"
       }
     ]
   },
@@ -90,7 +199,7 @@
         "Product": "Theobald.Extractors",
         "Component": "General",
         "Message": "New selection & parameter system",
-        "HasReleaseNote": true
+        "ReleaseNote": "# Theobald.Extractors 2.0\n\n* BW Cube filter / variables UI is the same as for other extraction types \n* BW Cube MDX generator produces more concise queries\n* DeltaQ uses explicitly defined parameters instead of @-prefixes"
       }
     ]
   },
@@ -332,7 +441,7 @@
         "Product": "Theobald.Extractors",
         "Component": "Table",
         "Message": "Updated /THEO/READ_TABLE to version 3.4.",
-        "HasReleaseNote": true
+        "ReleaseNote": "**Update /THEO/READ_TABLE to version 3.4**\n- Fixed a bug where extracting decfloat16 and decfloat34 types did not work.\n- Fixed a bug where extracting empty NUMC values would cause extraction to fail."
       }
     ]
   },
@@ -575,7 +684,7 @@
         "Product": "Theobald.Extractors",
         "Component": "TableCDC",
         "Message": "Fixed a bug where log table creation failed due to missing namespace license. Requires update of /THEO/CDC_* package. Check release notes for details",
-        "HasReleaseNote": true
+        "ReleaseNote": "- Log table names are now prefixed with 'ZTSCDC_' instead of '/THEO/CDC_'. The latter one could not be inserted into SAP table TADIR due to missing license for /THEO/ namespace."
       }
     ]
   },
@@ -620,7 +729,7 @@
         "Product": "Theobald.Extractors",
         "Component": "DeltaQ",
         "Message": "Fixed a bug in the activation process for DeltaQ hierarchy extractions",
-        "HasReleaseNote": true
+        "ReleaseNote": "**Theobald.Extractors 1.52.8**\n\nThis bug would prevent the update of segment names for intervals, nodes and descriptions during the extraction activation.\n\nIt was introduced in the version 1.47.0"
       }
     ]
   },
@@ -632,7 +741,7 @@
         "Product": "Theobald.Extractors",
         "Component": "Table",
         "Message": "Fixed a bug where table settings UI would cause an error when saving. Updated /THEO/READ_TABLE to version 3.2 (see notes).",
-        "HasReleaseNote": true
+        "ReleaseNote": "# Updated /THEO/READ_TABLE to version 3.2\n- Fixed a bug where extracting floating point data would cause an error."
       }
     ]
   },
@@ -649,7 +758,7 @@
         "Product": "Theobald.Extractors",
         "Component": "DeltaQ",
         "Message": "Fixed bugs in the DeltaQ extractor - Details in release notes",
-        "HasReleaseNote": true
+        "ReleaseNote": "**Theobald Extractors 1.52.6**\n\n- fixed a bug which would finish the extraction erroneously as success, when a timeout failure was expected\n- fixed check window fatal error, which would crash the designer on rfc server check failure\n- fixed default timeout reading"
       }
     ]
   },
@@ -762,7 +871,7 @@
         "Product": "Theobald.Extractors",
         "Component": "TableCDC",
         "Message": "Released /THEO/CDC package. **Breaking changes** - Please see release notes for details.",
-        "HasReleaseNote": true
+        "ReleaseNote": "### Breaking changes\n\n- Extractions that were created with a previous version will only work if /THEO/CDC package is installed. Deleting CDC resources will however still work even without our package.\n\n### Changes\n\n- Added support for the following databases\n - IBM DB2\n - IBM for i (DB4)\n - IBM for z/os (DB6)\n - ORACLE\n\n- The package resides in the /THEO/ namespace.\n- Improved error messages."
       }
     ]
   },
@@ -818,7 +927,7 @@
         "Product": "Theobald.Extractors",
         "Component": "Table",
         "Message": "Updated /THEO/READ_TABLE to version 3.1",
-        "HasReleaseNote": true
+        "ReleaseNote": "**Update /THEO/READ_TABLE to version 3.1**\n- Fixed a bug where STRING and SSTRING columns would not be properly extracted when using NW library"
       }
     ]
   },
@@ -1324,7 +1433,7 @@
         "Product": "XtractIS",
         "Component": "Hierarchy",
         "Message": "New Hierarchy Extractor - POSSIBLE BREAKING CHANGES for Hierarchy extractions",
-        "HasReleaseNote": true
+        "ReleaseNote": "* The algorithm for Hierarchy extractions has been completely rewritten. It's now much faster, displays results as shown in SAP GUI and the extraction results can be used more flexibly. Depending on your use case, upgrading to the new extractor could cause some issues.\n* Hierarchies with up to 1 million rows can now be extracted within minutes\n* New Hierarchy extraction editor window with option to retrieve a live preview\n* Order of entries is now identical to order shown in SAP GUI. This includes the Node Ids (for Parent-Child representation) that are now also identical to those shown in SAP GUI.\n* Additional Representation: Parent-Child with Node Names. This Representation is somewhere in the middle between Parent-Child and Natural Representation. It contains the Id of each Node and the Id of that Node's parent. It also contains the Name of the parent Node and the InfoObject name of the parent Node.\n* Added two additional columns: Link and Row (see below).\n  * The Row column indicates the row number of that row. You can use this as a primary key in database and/or ordering criterium. This allows you to restore the order as shown in SAP just by sorting by the row column.\n  * The Link column is relevant for Hierarchies with link nodes. It shows the Node Id (Parent-Child, Parent-Child with Node Names representation) or Row Number (Natural representation) of the \"original\" Node that this Node is linking to. Otherwise this column will be zero.\n* Natural Representation now correctly extracts zero SAP dates (\"00000000\") as such instead of an invalid date. If you are using Date Conversion, this could yield different results than before.\n* Added support for new SAP systems for Node Names and Node Texts up to 1333 characters in length. These new columns widths also apply to the Level and LevelText columns in Natural Representation.\n* Breaking change: the previous \"Legacy Mode\" feature has been removed. Existing extractions may yield different results then before. A warning is written into the log if that feature was enabled in an extraction.\n* Breaking change: The \"Automatic String Conversion\" features has been removed. All strings are now always extracted as NVarChars. A warning is written into the log if that feature was set to VarChar.\n* Any existing extractions will continue to work in backwards compatibility mode as much as possible as long as they are not edited and saved. After saving an extraction, the extraction is saved in a new internal format that can not be used by the old version. This will also enable the Link and Row columns and switch to new column widths."
       }
     ]
   },
@@ -1654,7 +1763,7 @@
         "Product": "Theobald.Extractors",
         "Component": "Table",
         "Message": "Multiple UI fixes and usability improvements.",
-        "HasReleaseNote": true
+        "ReleaseNote": "## Multiple UI fixes and usability improvements\n- Fixed a bug where an error would be thrown when trying to edit joins on same tables\n- Window for JOIN definitions now doesn't allow to define joins without specifying tables\n- It is no longer possible to add joins in extraction that has no tables defined"
       }
     ]
   },
@@ -1941,7 +2050,7 @@
         "Product": "ERPConnect",
         "Component": "RFC Client",
         "Message": "Various breaking changes to R3Connection API",
-        "HasReleaseNote": true
+        "ReleaseNote": "# Changes to R3Connection\nThe following properties/methods have been removed.\n\n* `MultithreadingEnvironment` The feature is always active and cannot be disabled.\n* `AllowStartProgram(string programList)`. Please contact support if you really need this feature.\n\n\nThe following properties/constructors/methods have been marked as obsolete and will be removed 2023-10-01.\n\n* `ConnectionString` --> Please use `ParseConnectionString()` instead.\n* `R3Connection(string connectionString)` --> Please use `ParseConnectionString()` instead.\n* `Open(string rfcConnectionString)`--> Please use `ParseConnectionString()` instead.\n* `OpenSSO(string ticket, bool loadBalancing)` --> Please set `LogonTicket` and `UsesLoadBalancing` instead.\n* `OpenSSO(string ticket)` --> Please set `LogonTicket` instead.\n* `Open(bool useLoadBalancing)` --> Please set `UsesLoadBalancing` instead.\n* `GetSSOTicket(bool loadBalancing)` -->  Please set `UsesLoadBalancing` instead.\n* `SetAbapDebug(bool enabled)` --> Please use external breakpoints in ABAP debugger instead.\n\n\n`ClientProtocol.RFC` has been marked as obsolete. Please use `ClientProtocol.NWRFC` instead. The default value will be switched to NWRFC 2023-10-01."
       }
     ]
   },
@@ -2095,7 +2204,7 @@
         "Product": "Common",
         "Component": "General",
         "Message": "Added ByteSerialization and ByteBufferManager classes",
-        "HasReleaseNote": true
+        "ReleaseNote": "- Theobald.Common 2.22.0\n\nByteSerialization has implementations, in little and big endian, for serializing and deserializing different dotnet types in/from raw bytes.\n\nByteBufferManager references the ByteSerialization (according to the given endianness) and implements methods to handle writing, reading and slicing a byte buffer."
       },
       {
         "Product": "Theobald.Extractors",
@@ -2337,7 +2446,7 @@
         "Product": "Theobald.Extractors",
         "Component": "BW Cube",
         "Message": "Various improvements and new features in BICS cube extractor",
-        "HasReleaseNote": true
+        "ReleaseNote": "# New BICS feature: Member display \nAllows to define how members are displayed in result set: \"Text\", \"Key\" or \"Text and Key\". Selecting \"Text and Key\" will add an additional column for each selected dimension and property containing the key.\n\n# Improved metadata retrieval\nImproved the metadata retrieval especially when using BEx Queries with mandatory variables. \n\n# Internal improvements\nInternal improvements to increase extraction performance and stability. The \"BICS Fast Mode\" is not available anymore because of an improved, more efficient extraction logic."
       }
     ]
   },
@@ -2465,7 +2574,7 @@
         "Product": "Theobald.Extractors",
         "Component": "Report",
         "Message": "Updated Z_XTRACT_IS_REMOTE_REPORT to version 1.2. (Breaking change)",
-        "HasReleaseNote": true
+        "ReleaseNote": "*Changes in Z_XTRACT_IS_REMOTE_REPORT*:\n- Added Z_TS_PROG authorization object\n- Authority check on Z_TS_PROG is now performed at the beginning of extraction. Should the authority check fail and the report is assigned to an authorization group, another authority check on S_PROGRAM is performed. If both authority checks fail, the extraction is aborted with an error.\n- *IMPORTANT:* Reports not assigned to an authorization group can't be extracted anymore without having an appropriate Z_TS_PROG authorization object assigned to user."
       }
     ]
   },
@@ -2521,7 +2630,7 @@
         "Product": "Theobald.Extractors",
         "Component": "Hierarchy",
         "Message": "New Hierarchy Extractor",
-        "HasReleaseNote": true
+        "ReleaseNote": "* Completely rewritten algorithm + unit and integration tests\n* Now supports Links, Intervals, and all variations of Time Dependent Hierarchies\n* Order and Ids of retrieved elements now identical to values displayed in SAP GUI / rsh1\n* Old json configuration files still working\n* New configuration options: debug logging, show link & row column\n* New columns Link and Row only extracted for new extractions (for backwards compatibility)\n* New Representation: ParentChildWithNodeNames"
       }
     ]
   },
@@ -2757,7 +2866,7 @@
         "Product": "Theobald.Extractors",
         "Component": "Table",
         "Message": "Updated Z_THEO_READ_TABLE to version 2.15.",
-        "HasReleaseNote": true
+        "ReleaseNote": "*Changes in Z_THEO_READ_TABLE*:\n- Code style change"
       }
     ]
   },
@@ -2796,7 +2905,7 @@
         "Product": "Common",
         "Component": "Licensing",
         "Message": "Updated licensing logic to no longer care about Sources limits where possible. Marked various helper methods as Obosolete. Existing licenses with Sources limit are still supported.\nRemoved display of Sources limit from About dialog.",
-        "HasReleaseNote": true
+        "ReleaseNote": "Applications should update their license validation logic to ignore a Sources limit if the license contains one."
       }
     ]
   },
@@ -2808,7 +2917,7 @@
         "Product": "Theobald.Extractors",
         "Component": "Table",
         "Message": "Updated Z_THEO_READ_TABLE to version 2.14",
-        "HasReleaseNote": true
+        "ReleaseNote": "*Changes in Z_THEO_READ_TABLE:*\n-  Changed how the run time is calculated. This prevents overflow when high timeout values are used."
       }
     ]
   },
@@ -2820,7 +2929,7 @@
         "Product": "Theobald.Extractors",
         "Component": "Report",
         "Message": "Non executable ABAP programs can't be selected in report lookup anymore.",
-        "HasReleaseNote": true
+        "ReleaseNote": "- Non executable ABAP programs can't be selected in report lookup anymore and an error is shown instead. This way users will be informed about report not being extractable already during the lookup, instead of at runtime."
       }
     ]
   },
@@ -2886,7 +2995,7 @@
         "Product": "Theobald.Extractors",
         "Component": "Table",
         "Message": "Updated Z_THEO_READ_TABLE to version 2.13.",
-        "HasReleaseNote": true
+        "ReleaseNote": "*Changes in Z_THEO_READ_TABLE*:\n- Shared memory area now expires after 1 minute without read access, instead of 1 minute without write access. This prevents extractions that take longer that 1 minute to fetch or process one package from failing."
       }
     ]
   },
@@ -3002,7 +3111,7 @@
         "Product": "Theobald.Extractors",
         "Component": "Table",
         "Message": "Updated Z_THEO_READ_TABLE to version 2.12",
-        "HasReleaseNote": true
+        "ReleaseNote": "*Changes in Z_THEO_READ_TABLE*:\n- Fixed a bug where when data was fetched and sent to extractor too fast, it could cause some data packages to be sent multiple times\n- Background job log now displays package numbers"
       }
     ]
   },
@@ -3297,7 +3406,7 @@
         "Product": "Theobald.Extractors",
         "Component": "BW Cube",
         "Message": "Support for Only_Structures behavior in MDX BEx Queries. Various bug fixes and general improvements for the Cube component.",
-        "HasReleaseNote": true
+        "ReleaseNote": "Added option \"Only Structures\" in Lookup window for MDX Queries. Enables the same behavior as the \"Legacy Metadata Retrieval\" option before XU 5.6. This must be set during lookup and can not be changed later. Customers that have Cube extractions which used the \"Legacy Metadata retrieval\" option before should run the Config Converter again."
       }
     ]
   },
@@ -3331,7 +3440,7 @@
         "Product": "ERPConnect",
         "Component": "Idoc",
         "Message": "Fixed a bug where saving an Idoc schema incorrectly changed field names",
-        "HasReleaseNote": true
+        "ReleaseNote": "# ERPConnect 6.14.19\n\nIdoc segment field names had `ST_` and `FZ_` at their beginning replaced with `USTU-` and `UFZU-`. This is due to a bug in the internal name escaping logic. This fix might break existing code that already circumvents this bug. "
       }
     ]
   },
@@ -3491,7 +3600,7 @@
         "Product": "XtractIS",
         "Component": "BAPI",
         "Message": "Fixed two issues related to parameterization when upgrading from versions before 6.10.0",
-        "HasReleaseNote": true
+        "ReleaseNote": "# Xtract IS 6.12.0\n\nFixed a bug that caused\n- parameters inside of table rows to be treated as plain text\n- parameters inside of loops to not be updated correctly"
       }
     ]
   },
@@ -3694,7 +3803,7 @@
         "Product": "Theobald.Extractors",
         "Component": "Table",
         "Message": "Fixed a bug where metadata of views was not retrieved correctly.",
-        "HasReleaseNote": true
+        "ReleaseNote": "- Fixed a bug where the metadata of dynamic fields of views would not get fetched on table lookup.\n- Fixed a bug where columns of views were not in correct order. The columns are now in the same order they are defined in in SAP."
       }
     ]
   },
@@ -3948,7 +4057,7 @@
         "Product": "XtractIS",
         "Component": "Report",
         "Message": "Report component: multiple fixes.",
-        "HasReleaseNote": true
+        "ReleaseNote": "**Multiple fixes for report component**:\n- Fixed a bug where report components could not be opened if the package contained SSIS variables of type DBNull or DateTime.\n- Fixed the report component header text.\n- Internal changes for handling SSIS variables."
       }
     ]
   },
@@ -3976,7 +4085,7 @@
         "Product": "Theobald.Extractors",
         "Component": "General",
         "Message": "Table and ODP: Added setting to automatically adjust currency decimals based on reference field",
-        "HasReleaseNote": true
+        "ReleaseNote": "- design and runtime SAP users need access to table TCURX\n- existing extractions require metadata refresh (Table) or new lookup (ODP)\n- metadata will be adjusted to fixed decimal with 14 decimal places"
       }
     ]
   },
@@ -4107,7 +4216,7 @@
         "Product": "Theobald.Extractors",
         "Component": "BW Cube",
         "Message": "Updated cube component with new BICS mode (beta).",
-        "HasReleaseNote": true
+        "ReleaseNote": "The cube component got a major update containing new features and internal improvements.\n\n## MDX mode\n\n- **Improved performance** through some internal optimizations\n- **Runtime Parameter** are supported in variables and dimension filters\n\n## BICS mode (Beta)\n\nWe have added a new cube extraction mode using the BICS interface. This interface is currently in a public beta stadium and should only be used for preview and testing purposes. There can be major breaking changes until the stable release."
       },
       {
         "Product": "Theobald.Extractors",
@@ -4118,7 +4227,7 @@
         "Product": "Theobald.Extractors",
         "Component": "Report",
         "Message": "Fixed function module recognition based on signature.",
-        "HasReleaseNote": true
+        "ReleaseNote": "## Fixed function module recognition based on signature.\n\nIn cases where the name of the used function module is unknown, the extractor tries to identify and verify the function module based on its signature. This check has now been fixed."
       },
       {
         "Product": "Theobald.Extractors",
@@ -4652,7 +4761,7 @@
         "Product": "Theobald.Extractors",
         "Component": "Report",
         "Message": "Multiple bug fixes and improvements",
-        "HasReleaseNote": true
+        "ReleaseNote": "- Fixed a bug where cancelling the edits of the a report extraction would still overwrite selection values and column changes with new values.\n- Fixed a bug where using runtime parameters would make it impossible to run automatic column detection or preview.\n- Improved the UI for selection parameters to better support runtime parameters."
       }
     ]
   },
@@ -4718,7 +4827,7 @@
         "Product": "Common",
         "Component": "WPF",
         "Message": "Introduced new messaging system",
-        "HasReleaseNote": true
+        "ReleaseNote": "##Theobald.Common 2.14.6\n- Introduced new WPF window based messaging system, which allows the displaying of message windows always on screen's top most position, overlapping all current opened windows. \n- The messages are displayed always on the center of the screen\n- No owner parameter is needed, as it considers always the current active window for it.\n- All calls can be done through TheoMessageHelper.\n- MessageBoxHelper is still available, but was marked as obsolete."
       }
     ]
   },
@@ -4735,7 +4844,7 @@
         "Product": "Theobald.Extractors",
         "Component": "BAPI",
         "Message": "Several improvements and new features",
-        "HasReleaseNote": true
+        "ReleaseNote": "# Improvements for BAPI extractor\n\nThe internal representation has changed, **old extractions will no longer work and need to be recreated.** The new BAPI component packs several new features:\n\n- EXPORTS\n- CHANGINGS\n- nested structures and tables\n- transaction commit by calling `BAPI_TRANSACTION_COMMIT`\n- values for tables can now be entered or parameterized per row\n- Now specifies whether a parameter is supplied or requested from the SAP system. This allows for optimizations when using NWRFC and for the function modules default values to be used."
       }
     ]
   },
@@ -4840,7 +4949,7 @@
         "Product": "Common",
         "Component": "General",
         "Message": "Fix for writing TimeSpan on JsonWriter class",
-        "HasReleaseNote": true
+        "ReleaseNote": "##2.14.1 - Fix for writing TimeSpan on JsonWriter class\n\n* Fixed bug for writing TimeSpan on JsonWriter class, which caused an addition of an extra hour to its total time when the minutes property had its value greater or equal to 30\n* Centralization of TimeSpan serialization to string in StringHelper.ToIso8601Duration(TimeSpan)\n* Addition of unit tests for JsonWriter.Write(string, Timespan) and StringHelper.ToIso8601Duration(TimeSpan)"
       }
     ]
   },
@@ -5119,7 +5228,7 @@
         "Product": "Theobald.Extractors",
         "Component": "Table",
         "Message": "Various fixes & improvements for Table GUI",
-        "HasReleaseNote": true
+        "ReleaseNote": "## Theobald.Extractors 1.15.6\n\n* Checking/unchecking conversion routing of a single column no longer affects other columns\n* Metadata refresh doesn't disable conversion routines any more\n* Metadata refresh retrieves index information now\n\n"
       }
     ]
   },
@@ -5273,7 +5382,7 @@
         "Product": "Theobald.Extractors",
         "Component": "ODP",
         "Message": "Added subscription suffix ",
-        "HasReleaseNote": true
+        "ReleaseNote": "# Theobald.Extractors 1.15.1\n\nThe subscription suffix can be set during runtime and is used to differentiate two subscriptions (inits) on a single SAP system (e.g. dev and test on a single QA SAP system)."
       }
     ]
   },
@@ -5384,7 +5493,7 @@
         "Product": "ERPConnect",
         "Component": "General",
         "Message": "Various small API changes (see release notes for details)",
-        "HasReleaseNote": true
+        "ReleaseNote": "# ERPConnect 6.13.0\n\n* fix for parameters with decfloat types\n* added RFCParameter.SetValueInternal()\n* marked RFCParameter.GetLength() as obsolete\n* removed RFCServerFunctionCollection.Find() (obsolete)\n* removed RFCTableColumn.FixedLength (obsolete) - this also affects LINQtoERP, please regenerate your code"
       },
       {
         "Product": "ERPConnect",
@@ -5433,7 +5542,7 @@
         "Product": "XtractIS",
         "Component": "Setup",
         "Message": "New Setup",
-        "HasReleaseNote": true
+        "ReleaseNote": "# Xtract IS 6.5.0\n\nThe command line interface (CLI) of the setup application has changed. \n\n## Parameters\n\nThe setup now supports the following parameters:\n\n- **`--no-gui`** runs in console mode and prints log and status messages to stdout\n- **`--silent`** runs in console mode and does not output anything to stdout\n\n## Xtract IS for Azure\n\nBecause of the change to the CLI the *main.cmd* file needs to be updated."
       }
     ]
   },
@@ -5467,7 +5576,7 @@
         "Product": "ERPConnect",
         "Component": "General",
         "Message": "IsSupplied Property is now also persisted when serializing RFCParameter.",
-        "HasReleaseNote": true
+        "ReleaseNote": "This change was made to fix a bug where deserializing an RFCFunction via LoadFromXML would deserialize all the export parameters as `IsSupplied = true` causing an empty string to be sent to SAP. This in turn would cause SAP to not use the default values for those parameters."
       }
     ]
   },
@@ -5490,7 +5599,7 @@
         "Product": "Theobald.Extractors",
         "Component": "ODP",
         "Message": "Improved monitoring for subscriptions and requests",
-        "HasReleaseNote": true
+        "ReleaseNote": "# Theobald.Extractors 1.14.11\n\nImproved monitoring for subscriptions and requests\n\n## Active Subscriptions window\n- Fixed a bug where the window would not show subscriptions with zero requests\n- Added a filter input for the queue name\n- Window can be resized now\n\n## Logging\n\nThe component now logs subscriber type, name, process and run"
       }
     ]
   },
@@ -5639,7 +5748,7 @@
         "Product": "Theobald.Extractors",
         "Component": "Table",
         "Message": "Updated Z_THEO_READ_TABLE to version 2.10. ",
-        "HasReleaseNote": true
+        "ReleaseNote": "- Z_THEO_READ_TABLE now supports conversion exits\n- Fixed timeout issues when extraction was ran in a background job and processing of a data package on the client side took longer than 90 seconds\n- Background job log in SM37 is now more verbose"
       }
     ]
   },
@@ -6013,13 +6122,13 @@
         "Product": "XtractIS",
         "Component": "ODP",
         "Message": "Several fixes (Bugs introduced in 5.3.15.1)",
-        "HasReleaseNote": true
+        "ReleaseNote": "#Xtract IS 5.3.24\n\n- Fix for *\"XML format  currently not supported\"* error when result was empty\n- Fix for very wide (~200+ columns) extractors that caused the extraction to fail\n- RAW byte arrays with all bytes set to **0** now have correct values instead of `null`\n"
       },
       {
         "Product": "Theobald.Extractors",
         "Component": "ODP",
         "Message": "Several fixes for execution",
-        "HasReleaseNote": true
+        "ReleaseNote": "# Theobald.Extractors 1.10.18\n\n- Fix for *\"XML format  currently not supported\"* error when result was empty\n- Fix for very wide (~200+ columns) extractors that caused the extraction to fail\n- RAW byte arrays with all bytes set to **0** now have correct values instead of `null`"
       }
     ]
   },
@@ -6031,7 +6140,7 @@
         "Product": "Common",
         "Component": "General",
         "Message": "New DeleteFile method in IOHelper",
-        "HasReleaseNote": true
+        "ReleaseNote": "Move DeleteFile method from Xtract.Server.Persistence.StatisticsStore to Theobald.Common.IOHelper"
       },
       {
         "Product": "Common",
@@ -6237,7 +6346,7 @@
         "Product": "XtractIS",
         "Component": "Table",
         "Message": "Fixed several issues with date conversion and legacy behavior",
-        "HasReleaseNote": true
+        "ReleaseNote": "# XIS 5.3.12\nThis release fixes several issues with date conversion and legacy behavior\n\n## Bugs\n- Fixed a bug that caused the `ConvertsDates` property to not take effect\n\n## Legacy behavior\n- Fixed a bug where the date conversion was not enabled, although the checkbox was checked in version 4.x\n- Previous to version 5.0 extractions would fail if a date value could not be converted and no invalid date replacement was supplied. This behavior is now implemented for converted components, but cannot be activated for new components."
       }
     ]
   },
@@ -6293,13 +6402,13 @@
         "Product": "XtractIS",
         "Component": "Table",
         "Message": "Several fixes and improvements",
-        "HasReleaseNote": true
+        "ReleaseNote": "### ODP/Table GUI Preview\n- Correctly displays records again\n- Column names now match the selected column name style\n\n### Table\n- The Alias for table fields was removed as it was not working correctly. To prevent naming conflicts when joining tables please use the *PrefixedCode* column name style.\n- Aggregated fields now have a generated column name with the aggregate function name preceeding the column name (e.g. *Minimum_MARA~BRGEW*). **This could break existing workflows that use aggregate functions.** \n- Fixed a bug that caused components with conversion routines enabled to fail due to conversion errors\n- Fixed a bug where the output metadata was not refreshed when the selection for joined tables changed"
       },
       {
         "Product": "Theobald.Extractors",
         "Component": "General",
         "Message": "Fixed the preview GUI. Removed the broken alias functionality from table subcomponent",
-        "HasReleaseNote": true
+        "ReleaseNote": "### ODP/Table GUI Preview\n- Correctly displays records again\n- Column names now match the selected column name style\n\n### Table\n- The Alias for table fields was removed as it was not working correctly. To prevent naming conflicts when joining tables please use the *PrefixedCode* column name style.\n- Aggregated fields now have a generated column name with the aggregate function name preceeding the column name (e.g. *Minimum_MARA~BRGEW*). **This could break existing workflows that use aggregate functions.** "
       }
     ]
   },
@@ -6555,7 +6664,7 @@
         "Product": "XtractIS",
         "Component": "Table",
         "Message": "Added support for property expressions / parameterization, backward-compatibility fixes",
-        "HasReleaseNote": true
+        "ReleaseNote": "# Xtract IS 5.3.0\n\n## New Features\n* Table properties are now available in the *Parameterize* context menu of the data flow\n* Table properties are now available in the *Expressions* property of the data flow\n\n## Backward-Compatibility Fixes\n* Fix for updating variables (e. g. loop containers)\n* Fix for variables in MaxRows & PackageSize\n* Fix for *DBNull* errors when opening components in VS\n* Using defaults of date conversion settings for legacy extractions, if date conversion is disabled"
       }
     ]
   },
@@ -6583,7 +6692,7 @@
         "Product": "Theobald.Extractors",
         "Component": "Table",
         "Message": "Added an icon indicating whether a table field is indexed. Number of rows can now be counted (only with Z_THEO_READ_TABLE) or estimated (using other function modules) in the editor GUI.",
-        "HasReleaseNote": true
+        "ReleaseNote": "### Indexed table fields\n- This function displays an icon indicating whether the field is indexed and the sort direction (ascending/descending).\n\n\n### Counting / Estimating number of rows\n- When using **Z_THEO_READ_TABLE** the result rows will be counted using a real query. This means, the resulting row count respects current *joins* and the *where clause*.\n- Other function modules will use the function module **EM_GET_NUMBER_OF_ENTRIES** to get the maximum number of available rows.\n\n### Required persmissions\nThose two new features require following permissions on the SAP system\n- **Indexed fields**: Read from table **DD17S**\n- **Estimate row count (other than *Z_THEO_READ_TABLE*)**: Execute function module **EM_GET_NUMBER_OF_ENTRIES**"
       },
       {
         "Product": "Theobald.Extractors",
@@ -6781,7 +6890,7 @@
         "Product": "XtractIS",
         "Component": "ODP",
         "Message": "Added recovery mode",
-        "HasReleaseNote": true
+        "ReleaseNote": "The update mode can be set using the `UpdateMode` property of the ODP Component. It supports parameterization and expressions."
       },
       {
         "Product": "Theobald.Extractors",
@@ -6798,7 +6907,7 @@
         "Product": "XtractIS",
         "Component": "ODP",
         "Message": "Added recovery mode",
-        "HasReleaseNote": true
+        "ReleaseNote": "The update mode can be set using the `UpdateMode` property of the ODP Component. It supports parameterization and expressions."
       },
       {
         "Product": "Theobald.Extractors",
@@ -6857,7 +6966,7 @@
         "Product": "Theobald.Extractors",
         "Component": "Table",
         "Message": "Improvements for detecting possible joins and bug fixes related to editing joins",
-        "HasReleaseNote": true
+        "ReleaseNote": "The changes contained in this release only affect the GUI and do not change behavior of extractions.\n\n### Join detection\nUpon adding a new table to the extraction the GUI will attempt to automatically create joins based on the references in the SAP system. Detection will take the following steps to map fields with matching names:\n\n1. Primary keys that directly reference another table\n2. Primary keys that both reference the same table which does not exist in the extraction\n3. All fields that directly reference another table\n4. All fields that both reference the same table which does not exist in the extraction\n\n### Bug fixes\n- fixed a bug where editing of joins was not possible after saving an extraction"
       },
       {
         "Product": "Theobald.Extractors",
@@ -6884,7 +6993,7 @@
         "Product": "Theobald.Extractors",
         "Component": "ODP",
         "Message": "Fixed two bugs related to columns in the GUI of ODP extractions",
-        "HasReleaseNote": true
+        "ReleaseNote": "## Fixed bugs:\n- all columns were selected for output after editing an existing extraction\n- delta columns were displayed although the extraction is using full mode"
       },
       {
         "Product": "XtractKernel",
@@ -6928,7 +7037,7 @@
         "Product": "XtractIS",
         "Component": "Table",
         "Message": "Fixed issues related to legacy table extraction function modules when editing table components",
-        "HasReleaseNote": true
+        "ReleaseNote": "Legacy function modules (Z_XTRACT_IS_TABLE_COMPRESSION, Z_XTRACT_IS_TABLE) are now\n- automatically selected for new table components when Z_THEO_READ_TABLE is not installed\n- suggested in the drop down in the extraction settings dialog\n- supported when running the preview"
       }
     ]
   },
@@ -7161,7 +7270,7 @@
         "Product": "XtractIS",
         "Component": "General",
         "Message": "This release contains general changes, changes to the existing Table component as well as a new ODP component.",
-        "HasReleaseNote": true
+        "ReleaseNote": "# Xtract IS 5.0\n\nThis release contains general changes, changes to the existing Table component as well as a new ODP component.\n\n### General\n\n- .NET Framework version has been updated to 4.7.1\n- support for SQL Server 2008 has been discontinued\n\n### ODP\n\n- using SAP's ODP 2.0 API\n- several contexts\n- full and delta extractions\n- merging hierarchy segments \n\n### Table\n\n- new UI\n- now supports table joins (requires TableJoin license)\n- new date conversion with more replacement settings\n\n#### Compatibility:\n\n- Existing Table extractions will automatically refresh metadata on execution for legacy compatibility. To avoid this, you can manually refresh the metadata in the component UI and save the changes.\n- NVarChar and VarChar conversion has been removed, existing extractions will respect this setting, but it will always be NVarChar for new extractions\n\n### Connection Handling\n\n- Adjustments and improvements for internal SAP connection handling. This fixes several connection related issues.\n\n### Miscellaneous\n\n##### OHS\n- Introduced flag for OHS to asynchronously start process chains. The flag can be set by using the `AsyncProcessStart` property of the OHS component."
       }
     ]
   },
@@ -7543,7 +7652,7 @@
         "Product": "XtractIS",
         "Component": "Table",
         "Message": "Added ABAP code + transport request for Z_THEO_READ_TABLE, removed old ABAP files",
-        "HasReleaseNote": true
+        "ReleaseNote": "# Xtract IS 4.12.0\n\nThe **ABAP** subdirectory now contains the following transport requests:\n\n### Z_THEO_READ_TABLE.zip\nTransport request for new table custom function module *Z_THEO_READ_TABLE*. This is the successor to *Z_XTRACT_IS_TABLE_COMPRESSION*.\nThe old table function module *Z_XTRACT_IS_TABLE_COMPRESSION* will continue to work with our products, but is no longer being maintained. Please consider adjusting your table extractions to use *Z_THEO_READ_TABLE* instead of *Z_XTRACT_IS_TABLE_COMPRESSION*.\nThis version of the transport request requires SAP Release 7.40 SP05 or later and supports sub-selects in WHERE-clauses.\n\n### Z_THEO_READ_TABLE-before_740SP05.zip\nSame as above, but for SAP Releases older than 7.40 SP05. This version does not support sub-selects in WHERE-clauses.\n\n### thtrans.zip\nTransport request for Report component custom function *Z_XTRACT_IS_REMOTE_REPORT* and Table Join component custom function *Z_XTRACT_IS_TABLE_JOIN*. This transport request no longer contains *Z_XTRACT_IS_TABLE_COMPRESSION*, since it has been deprecated. Please use *Z_THEO_READ_TABLE* instead."
       }
     ]
   },
@@ -7807,7 +7916,7 @@
         "Product": "ERPConnect",
         "Component": "General",
         "Message": "Some collections are implementing generic IList<T> now instead of non-generic interfaces",
-        "HasReleaseNote": true
+        "ReleaseNote": "# ERPConnect 6.3\n\nThe base class / collection interface of following classes have changed:\n- RFCParameterCollection\n- RFCServerFunctionCollection\n- RFCStructureCollection\n- RFCTableCollection\n- RFCTableColumnCollection\n\nThese classes don't inherit from CollectionBase any more and no longer implement non-generic collection interfaces like IList. They now implement the generic IList<T> interface.\nThis is a breaking change, but it shouldn't require any code adjustments in most cases."
       },
       {
         "Product": "XtractKernel",
@@ -8190,7 +8299,7 @@
         "Product": "ERPConnect",
         "Component": "General",
         "Message": "New implementation of ReadTable class & support for non-Unicode multibyte codepages",
-        "HasReleaseNote": true
+        "ReleaseNote": "# ERPConnect 6.1\n\nThis release adds support for multibyte codepages on non-Unicode SAP systems.\nFurthermore, the ReadTable class has been re-engineered, which includes a few breaking changes:\n\n### Removed ReadTable.AddCriteria()\nThis method had several unexpected consquences. Please use the WhereClause property instead.\n\n### Removed ReadTable.Delimiter\nThis used to be a workaround for non-Unicode multibyte codepages. Full multibyte support has been implemented, therefore the delimiter is not needed anymore.\n\n### Removed ReadTable.UsePrimaryKeyPackaging\nPackaging is primarily performed on the ABAP side. Please use custom function modules if you have special requirements for packaging.\n\n### ReadTable.Fields behaves differently\nThe Fields collection is used for both field selection and result metadata. Calling ReadTable.AddField() will add a field to this collection. In previous versions, the collection had only been used for result metadata.\n\nIn combination with RetrieveAllFieldsOfTable() that means, you can remove the fields that you don't want to extract from the Fields collection. If you want to use AddField(), please clear the collection after calling RetrieveAllFieldsOfTable() or use separate ReadTable instances.\n\n### Removed UseMultibyteExtraction flag from LINQtoERP\nThis flag has no use anymore, since multibyte codepages are fully supported without setting any flags or using other workarounds.\n\n### IncomingPackage & PackageProgress\nPackageProgress is fired always - RaiseIncomingPackageEvent no longer disables PackageProgress event.\n\nIncomingPackage is no longer fired  if package is empty."
       },
       {
         "Product": "ERPConnect",
@@ -10638,7 +10747,7 @@
         "Product": "ERPConnect",
         "Component": "General",
         "Message": "Removed ERPConnect20.dll & ERPConnect40.dll, updated ERPConnect45.dll to .NET Framework 4.5.2, removed support for SOAP",
-        "HasReleaseNote": true
+        "ReleaseNote": "# ERPConnect 5.0.0 Release Note\n\n## ERPConnect20.dll\n\nERPConnect20.dll has been around since the early days of .NET 2.0 in 2005.\nOn July 12, 2011 Microsoft stopped supporting .NET Framework\n[2.0](https://support.microsoft.com/en-us/lifecycle/search/?p1=8291) and \n[3.x prior to 3.5 SP1](https://support.microsoft.com/en-us/lifecycle/search/?p1=12292).\nThat means, there have been no updates published by Microsoft for more than five years now for these .NET versions, not even security patches.  \nSupport by Microsoft for\n[Visual Studio 2005](https://blogs.msdn.microsoft.com/visualstudio/2016/03/11/support-ending-for-visual-studio-2005/)\nended on April 12, 2016.\nTherefore, we decided to remove ERPConnect20.dll. It can be easly replaced with ERPConnect35.dll or ERPConnect45.dll\n\n## ERPConnect40.dll and ERPConnect45.dll\n\nSupport by Microsoft  for .NET Framework\n[4, 4.5 and 4.5.1](https://support.microsoft.com/en-us/lifecycle/search/?p1=14380)\nended on January 12, 2016.\n\nThat means there have been no updates and no security patches for these .NET versions for more that a year now.\nTherefore, we also decided to remove ERPConnect40.dll. Like ERPConnect20.dll, it can be easly replaced with ERPConnect35.dll or ERPConnect45.dll.\nWe also updated the target for ERPConnect45.dll to .NET Framework 4.5.2.\n\n## Migration\n\nIf you have been using ERPConnect20.dll or ERPConnect40.dll in your projects,\nplease replace all references to those assemblies with either ERPConnect35.dll or ERPConnect45.dll.\n\nIf you want your software to run on CLR2, use ERPConnect35.dll and target NET Framework 3.5 / .NET Framework 3.5 Client Profile.\n\nIf you don't need to support CLR2, use ERPConnect45.dll and target .NET Framework 4.5.2 or higher\n\n[Common Langauge Runtime (CLR)](https://msdn.microsoft.com/en-us/library/8bs2ecf4.aspx)  \n[How to: Target a Version of the .NET Framework](https://msdn.microsoft.com/en-us/library/bb398202.aspx)\n\n## SOAP is no longer supported by ERPConnect\n\nBecause of performance issues related to the verbosity of XML and low customer demand, support for SOAP connections has been removed. SOAP had been marked as deprecated since May 06, 2015. Please use `ClientProtocol.NWRFC` or `ClientProtocol.RFC instead`.\n"
       },
       {
         "Product": "ERPConnect",

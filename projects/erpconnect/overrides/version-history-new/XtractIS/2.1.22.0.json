@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for variable substitution for hierarchy version and hierarchy name",
-        "Component": "Hierarchy",
-        "Product": "XtractIS"
-    }
-]

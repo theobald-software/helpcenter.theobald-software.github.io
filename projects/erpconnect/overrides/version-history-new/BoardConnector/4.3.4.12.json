@@ -1,8 +1,0 @@
-[
-    {
-        "Message": "Updated Z_THEO_READ_TABLE to version 2.10. ",
-        "Component": "Table",
-        "Product": "Theobald.Extractors",
-        "ReleaseNote": "- Z_THEO_READ_TABLE now supports conversion exits\n- Fixed timeout issues when extraction was ran in a background job and processing of a data package on the client side took longer than 90 seconds\n- Background job log in SM37 is now more verbose"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for Carriage Return values within a measure's caption when using the setting 'Use Caption for Pipeline'",
-        "Component": "BW Cube",
-        "Product": "XtractIS"
-    }
-]

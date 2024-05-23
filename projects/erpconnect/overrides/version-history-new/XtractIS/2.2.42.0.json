@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for AccessViolationException within certain system constellations",
-        "Component": "Table",
-        "Product": "XtractIS"
-    }
-]

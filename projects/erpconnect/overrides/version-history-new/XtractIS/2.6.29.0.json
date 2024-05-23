@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Correction in timestamp format in Request Log. New format is yyyy-mm-dd HH:mm:ss:ff\"",
-        "Component": "DeltaQ",
-        "Product": "XtractIS"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Global conversion checkbox is now tri-state and allows to enable conversion on all the fields that have a conversion exit in SAP, all at once. Fixed a bug where the 1.x versions of Z_THEO_READ_TABLE would continue running after an exception in extractor occurred.",
-        "Component": "Table",
-        "Product": "Theobald.Extractors"
-    }
-]

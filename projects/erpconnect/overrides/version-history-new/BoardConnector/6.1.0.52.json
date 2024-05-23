@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug causing authentication in the webserver to fail when the username had different casing.",
-        "Component": "General",
-        "Product": "Theobald.Server"
-    }
-]

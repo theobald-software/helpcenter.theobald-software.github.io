@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for \"expected 0 columns\"",
-        "Component": "Query",
-        "Product": "XtractIS"
-    }
-]

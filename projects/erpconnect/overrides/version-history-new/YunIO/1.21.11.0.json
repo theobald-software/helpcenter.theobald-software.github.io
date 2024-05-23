@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug where the browser would not ask for username and password again if the credentials were invalid.",
-        "Component": "Theobald.Server",
-        "Product": "YunIO"
-    }
-]

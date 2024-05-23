@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for the edit selection link. It appeared sometimes even no selection is allowed according to SAP's metadata.",
-        "Component": "DeltaQ",
-        "Product": "BoardConnector"
-    }
-]

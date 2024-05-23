@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug where trigger creation failed if \".INCLUDE\" structures were part of the primary key of the source table. Requires update of /THEO/CDC_* package.",
-        "Component": "TableCDC",
-        "Product": "Theobald.Extractors"
-    }
-]

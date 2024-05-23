@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for missing RequestID column in ExtractionMetadata",
-        "Component": "BOARD API",
-        "Product": "BoardConnector"
-    }
-]

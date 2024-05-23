@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Bug fix for missing bytes in columns of type Floating Point",
-        "Component": "DeltaQ",
-        "Product": "XtractIS"
-    }
-]

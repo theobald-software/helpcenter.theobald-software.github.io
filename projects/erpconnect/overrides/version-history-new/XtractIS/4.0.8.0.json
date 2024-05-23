@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug that caused an error when adding a report source.",
-        "Component": "Report",
-        "Product": "XtractIS"
-    }
-]

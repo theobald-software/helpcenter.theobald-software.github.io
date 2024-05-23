@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Added range checks for SapDateConverter",
-        "Component": "General",
-        "Product": "Theobald.Extractors"
-    }
-]

@@ -1,8 +1,0 @@
-[
-    {
-        "Message": "Support for SQLServer 2017, multi-targeting, connection properties",
-        "Component": "General",
-        "Product": "XtractIS",
-        "IsBreaking": true
-    }
-]

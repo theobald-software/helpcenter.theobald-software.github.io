@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Results are now ordered by sequence number to prevent \"Invalid result order\" error during delta extractions.",
-        "Component": "TableCDC",
-        "Product": "Theobald.Extractors"
-    }
-]

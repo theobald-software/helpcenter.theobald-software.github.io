@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for extractions with reference to an non-existing shared connection (connection dialog did not open)",
-        "Component": "Designer",
-        "Product": "BoardConnector"
-    }
-]

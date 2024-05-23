@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed an occasional deadlock when writing an HTTP response to the network.\nFixed a bug where an error during transaction execution would not be communicated properly.",
-        "Component": "General",
-        "Product": "Theobald.Server"
-    }
-]

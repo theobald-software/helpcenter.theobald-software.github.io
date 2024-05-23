@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Add deletion transport request for Z_THEO_DELETE_LOG_ENTRIES function module.",
-        "Component": "TableCDC",
-        "Product": "Theobald.Extractors"
-    }
-]

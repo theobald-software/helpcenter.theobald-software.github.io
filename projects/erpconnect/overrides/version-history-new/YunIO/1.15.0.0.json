@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Improved handling of network failures for AzureRelay",
-        "Component": "Gateway",
-        "Product": "YunIO"
-    }
-]

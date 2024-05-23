@@ -1,8 +1,0 @@
-[
-    {
-        "Message": "Implement subdirectory support for the run endpoint base ",
-        "Component": "General",
-        "Product": "Theobald.Server",
-        "ReleaseNote": "## TheobaldServer 4.2.0\n- Implemented subdirectory support for the common run endpoint logic \n\n- Bug fixes \n  - Fixed a bug where user-agent was expected as query parameter instead of http header \n"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug where retrying to write the extractions status information would abort preemptively.",
-        "Component": "General",
-        "Product": "Theobald.Server"
-    }
-]

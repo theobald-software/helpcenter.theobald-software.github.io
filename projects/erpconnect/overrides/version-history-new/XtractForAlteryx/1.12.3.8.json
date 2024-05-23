@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug where fetching metadata for extended view did not work.",
-        "Component": "Table",
-        "Product": "Theobald.Extractors"
-    }
-]

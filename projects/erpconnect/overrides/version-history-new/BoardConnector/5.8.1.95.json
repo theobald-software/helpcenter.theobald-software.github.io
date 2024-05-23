@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Made ReadJsonProperty() and WriteJsonFields() public",
-        "Component": "General",
-        "Product": "Common"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Slightly refactored the DeltaQ extractor",
-        "Component": "DeltaQ",
-        "Product": "Theobald.Extractors"
-    }
-]

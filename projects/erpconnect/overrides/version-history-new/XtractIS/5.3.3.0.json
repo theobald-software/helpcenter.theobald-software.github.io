@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug that caused recent changes to the where clause to be ignored in the editor preview",
-        "Component": "Table",
-        "Product": "XtractIS"
-    }
-]

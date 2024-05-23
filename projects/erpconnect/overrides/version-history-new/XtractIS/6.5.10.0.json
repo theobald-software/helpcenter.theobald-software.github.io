@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Components are now defined in a custom file (XtractExtensions.xml) instead of the default file (Extensions.xml)",
-        "Component": "Setup",
-        "Product": "XtractIS"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug (introduced in 4.9.0) where fetching metadata of report extractions did not work.",
-        "Component": "Report",
-        "Product": "BoardConnector"
-    }
-]

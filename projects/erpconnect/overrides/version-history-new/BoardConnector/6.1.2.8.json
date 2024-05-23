@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug where an extractions directory would not be deleted entirely when deleting the extraction in the designer. Fixed the error message sent by the HTTP-server if supplied parameters are ambiguous.",
-        "Component": "General",
-        "Product": "Theobald.Server"
-    }
-]

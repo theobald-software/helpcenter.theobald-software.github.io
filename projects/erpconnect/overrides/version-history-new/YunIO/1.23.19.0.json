@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug causing incomplete response data when executing a service.",
-        "Component": "Theobald.Server",
-        "Product": "YunIO"
-    }
-]

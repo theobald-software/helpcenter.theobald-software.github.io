@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug that caused unexpected measure precision in MDX query extractions.",
-        "Component": "BW Cube",
-        "Product": "Theobald.Extractors"
-    }
-]

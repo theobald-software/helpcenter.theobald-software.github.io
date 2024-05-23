@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixes for detection of SSIS",
-        "Component": "Setup",
-        "Product": "XtractIS"
-    }
-]

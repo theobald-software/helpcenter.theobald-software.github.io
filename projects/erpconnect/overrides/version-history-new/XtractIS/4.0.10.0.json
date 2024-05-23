@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Truncated values lead to warnings instead of errors",
-        "Component": "General",
-        "Product": "XtractIS"
-    }
-]

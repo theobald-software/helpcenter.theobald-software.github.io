@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed authentication logic for extractions when using source impersonation with Kerberos authentication.",
-        "Component": "General",
-        "Product": "Theobald.Server"
-    }
-]
