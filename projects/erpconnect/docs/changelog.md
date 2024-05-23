@@ -37,6 +37,7 @@ hide:
       <th>Version</th>
       <th>Release Date</th>
       <th>Component</th>
+      <th>Impact</th>
       <th>Description</th>
     </tr>
   </thead>
@@ -70,17 +71,15 @@ hide:
   const renderRow = (item) => {
     const rows = item.Changes.map(change => {
       const row = document.createElement('tr');
-      if (item.IsBreaking) {
-        row.setAttribute('class', 'is-breaking');
-      }
-      if (item.IsCritical) {
-        row.setAttribute('class', 'is-critical');
-      }
 
       row.innerHTML = `
         <td>${item.Version}</td>
         <td>${item.LegacyReleaseDate.split(' ')[0]}</td>
         <td>${change.Component}</td>
+        <td>
+        ${item.IsBreaking ? '<span class="is-breaking">Breaking</span>': ''}
+        ${item.IsCritical ? '<span class="is-critical">Critical</span>': ''}
+        </td>
         <td>${change.Message} ${change.ReleaseNote ? ` <button class="show-more" data-release-note="${encodeURIComponent(change.ReleaseNote)}" style=" color: #ED1A33;">(Open Release note)</button>` : ''}</td>
       `;
       return row;
