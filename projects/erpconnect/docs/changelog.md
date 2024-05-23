@@ -49,7 +49,7 @@ hide:
   // Function to fetch data from catalog.json
   const fetchData = async () => {
     try {
-      const response = await fetch('../version-history-new/XtractUniversal/catalog.json');
+      const response = await fetch('../version-history-new/ERPConnect/catalog.json');
       const data = await response.json();
       return data;
     } catch (error) {
@@ -219,6 +219,7 @@ const renderRow = (item) => {
 
   populateTable();
 </script>
+
 
 <!-- --8<-- "version-history/ERPConnect.md" -->
 

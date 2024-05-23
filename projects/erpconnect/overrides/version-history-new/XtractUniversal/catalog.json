@@ -1,5 +1,125 @@
 [
   {
+    "Version": "6.7.0.6",
+    "LegacyReleaseDate": "2024-05-21 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Common",
+        "Component": "WPF",
+        "Message": "Extended the CopyPasteTextBox to support error display."
+      }
+    ]
+  },
+  {
+    "Version": "6.7.0.2",
+    "LegacyReleaseDate": "2024-05-21 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "General",
+        "Message": "Fixed a bug where refreshing the metadata without any objects selected for extraction would cause an unexpected error."
+      }
+    ]
+  },
+  {
+    "Version": "6.7.0.0",
+    "LegacyReleaseDate": "2024-05-21 12:37:16Z",
+    "Changes": [
+      {
+        "Product": "XtractUniversal",
+        "Component": "Designer",
+        "Message": "Added extraction subdirectories support"
+      }
+    ]
+  },
+  {
+    "Version": "6.6.1.5",
+    "LegacyReleaseDate": "2024-05-17 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Common",
+        "Component": "General",
+        "Message": "Allow empty names in NamedList"
+      },
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "BAPI",
+        "Message": "Fix non-structure table line types"
+      }
+    ]
+  },
+  {
+    "Version": "6.6.1.4",
+    "LegacyReleaseDate": "2024-05-17 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "General",
+        "Message": "Fix deletion of renamed parameters"
+      }
+    ]
+  },
+  {
+    "Version": "6.6.1.3",
+    "LegacyReleaseDate": "2024-05-17 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "BW Cube",
+        "Message": "MDX: Fix column order of legacy extractions with key figures on rows"
+      }
+    ]
+  },
+  {
+    "Version": "6.6.1.2",
+    "LegacyReleaseDate": "2024-05-17 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "BW Cube",
+        "Message": "MDX: Support legacy extractions with key figures on rows"
+      }
+    ]
+  },
+  {
+    "Version": "6.6.1.1",
+    "LegacyReleaseDate": "2024-05-17 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "DeltaQ",
+        "Message": "Fixed a bug which would display only data sources using the language set in the connection (introduced in 1.47.0)"
+      }
+    ]
+  },
+  {
+    "Version": "6.6.1.0",
+    "LegacyReleaseDate": "2024-05-17 14:47:54Z",
+    "Changes": [
+      {
+        "Product": "XtractUniversal",
+        "Component": "BW Cube",
+        "Message": "Fix for config converter not converting custom column order in BW Cube extractions."
+      }
+    ]
+  },
+  {
+    "Version": "6.6.0.0",
+    "LegacyReleaseDate": "2024-05-17 09:55:13Z",
+    "Changes": [
+      {
+        "Product": "XtractUniversal",
+        "Component": "TableCDC",
+        "Message": "Released Monitoring Feature for Log Tables and Triggers. Update of /THEO/CDC* package required."
+      },
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "TableCDC",
+        "Message": "Released Monitoring Feature for Log Tables and Triggers. Update of /THEO/CDC* package required."
+      }
+    ]
+  },
+  {
     "Version": "6.5.2.3",
     "LegacyReleaseDate": "2024-05-15 00:00:00Z",
     "Changes": [
@@ -61,7 +181,7 @@
       {
         "Product": "Theobald.Extractors",
         "Component": "Table",
-        "Message": "Fixed a bug that caused refresh metadata to not work properly\n"
+        "Message": "Fixed a bug that caused refresh metadata to not work properly"
       }
     ]
   },
