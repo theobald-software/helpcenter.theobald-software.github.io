@@ -1,8 +1,0 @@
-[
-    {
-        "Message": "Report component: multiple fixes.",
-        "Component": "Report",
-        "Product": "XtractIS",
-        "ReleaseNote": "**Multiple fixes for report component**:\n- Fixed a bug where report components could not be opened if the package contained SSIS variables of type DBNull or DateTime.\n- Fixed the report component header text.\n- Internal changes for handling SSIS variables."
-    }
-]

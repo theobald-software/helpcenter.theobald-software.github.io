@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Correction in function module Z_XTRACT_IS_TABLE_COMPRESSION for timestamp/decimal columns",
-        "Component": "Table",
-        "Product": "BoardConnector"
-    }
-]

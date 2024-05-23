@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed an issue that caused errors during extraction when the data contained invalid time or date values.",
-        "Component": "ODP",
-        "Product": "Theobald.Extractors"
-    }
-]

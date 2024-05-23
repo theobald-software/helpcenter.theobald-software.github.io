@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for AggregateException in StreamExtensions",
-        "Component": "General",
-        "Product": "Theobald.Server"
-    }
-]

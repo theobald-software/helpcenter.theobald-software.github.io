@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for setup routine under SQL Server 2012 Denali on 64 bit os",
-        "Component": "Table",
-        "Product": "XtractIS"
-    }
-]

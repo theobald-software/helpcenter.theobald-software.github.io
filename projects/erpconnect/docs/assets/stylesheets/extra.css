@@ -1,10 +1,10 @@
 :root {
-  --md-primary-fg-color: #ED1A33;
+  --md-primary-fg-color:        #ED1A33;
   --md-primary-fg-color--light: #ED2939;
-  --md-primary-fg-color--dark: #7a1b21;
+  --md-primary-fg-color--dark:  #7a1b21;
   --md-accent-fg-color: #ED1A33;
   --md-color-accent: #ED1A33;
-
+  
   /* Theo red
   --md-primary-fg-color:        #FF003C;
   --md-primary-fg-color--light: #ED2939;
@@ -12,12 +12,12 @@
   --md-accent-fg-color: FF003C;
   */
 
-  /* Grid sets the width of the main content */
-  .md-grid {
-    max-width: 1500px;
-  }
+/* Grid sets the width of the main content */
+.md-grid {
+  max-width: 1500px; 
+}
 
-  /* custom abstract admonition*/
+/* custom abstract admonition*/
   --md-admonition-icon--summary: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M40 48C26.7 48 16 58.7 16 72v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V72c0-13.3-10.7-24-24-24H40zM192 64c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zM16 232v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V232c0-13.3-10.7-24-24-24H40c-13.3 0-24 10.7-24 24zM40 368c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V392c0-13.3-10.7-24-24-24H40z"/></svg>')
 }
 
@@ -25,17 +25,15 @@
 .md-typeset details.summary {
   border-color: rgb(169, 169, 169);
 }
-
-.md-typeset .summary>.admonition-title,
-.md-typeset .summary>summary {
+.md-typeset .summary > .admonition-title,
+.md-typeset .summary > summary {
   background-color: rgba(169, 169, 169, 0.1);
 }
-
-.md-typeset .summary>.admonition-title::before,
-.md-typeset .summary>summary::before {
+.md-typeset .summary > .admonition-title::before,
+.md-typeset .summary > summary::before {
   background-color: rgb(169, 169, 169);
   -webkit-mask-image: var(--md-admonition-icon--summary);
-  mask-image: var(--md-admonition-icon--summary);
+          mask-image: var(--md-admonition-icon--summary);
 }
 
 /* dark mode colors
@@ -45,40 +43,35 @@
 
 /* minimize space between banner and content on landing pages*/
 .md-typeset .grid {
-  grid-gap: 0.4rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
-  margin: 0.6em 0;
+    grid-gap: 0.4rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(min(100%,16rem),1fr));
+    margin: 0.6em 0;
 }
 
 .md-content__inner {
-  margin: 0 0.8rem 1.2rem;
-  padding-top: 0.3rem;
+    margin: 0 0.8rem 1.2rem;
+    padding-top: 0.3rem;
 }
 
 /* Custom beta status */
 .md-status--beta::after {
-  background-color: var(--md-default-fg-color--light);
-  border-radius: 0.2rem;
-  color: white;
-  content: "beta";
-  font-size: 0.5rem;
-  height: auto;
-  padding: 0.1rem;
-  -webkit-mask-image: none;
-  width: auto;
+    background-color: var(--md-default-fg-color--light);
+    border-radius: 0.2rem;
+    color: white;
+    content: "beta";
+    font-size: 0.5rem;
+    height: auto;       
+    padding: 0.1rem;
+    -webkit-mask-image: none;
+    width: auto;
 }
-
 .md-status:hover:after {
-  background-color: var(--md-default-fg-color--light);
-}
-
-.is-breaking {
-  color: var(--md-typeset-a-color);
-}
+   background-color: var(--md-default-fg-color--light);
+} 
 
 .md-search__form {
-  /*
+	/*
       background-color: hsla(var(--md-hue), 0%, 0%, 0.07);
 
       // Search form on hover
@@ -86,9 +79,10 @@
         background-color: hsla(var(--md-hue), 0%, 0%, 0.32);
       }
 	  */
-  background-color: hsla(var(--md-hue), 0%, 0%, 0.5);
+	  background-color: hsla(var(--md-hue), 0%, 0%, 0.5);
 
-  // Search form on hover
-  &:hover {
-    background-color: hsla(var(--md-primary-fg-color--light), 50%, 50%, 0.5);
-  }
+      // Search form on hover
+      &:hover {
+        background-color: hsla(var(--md-primary-fg-color--light), 50%, 50%, 0.5);
+    }
+	

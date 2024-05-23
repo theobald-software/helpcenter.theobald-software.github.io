@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for incorrect unit column values in MDX mode.",
-        "Component": "BW Cube",
-        "Product": "Theobald.Extractors"
-    }
-]

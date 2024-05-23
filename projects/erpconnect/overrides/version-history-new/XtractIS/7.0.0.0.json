@@ -1,8 +1,0 @@
-[
-    {
-        "Message": "Removed support for SQL Server 2012",
-        "Component": "General",
-        "Product": "XtractIS",
-        "IsBreaking": true
-    }
-]

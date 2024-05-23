@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Bugfix for table fields with RAW(1) as in table TSTC",
-        "Component": "Table",
-        "Product": "XtractIS"
-    }
-]

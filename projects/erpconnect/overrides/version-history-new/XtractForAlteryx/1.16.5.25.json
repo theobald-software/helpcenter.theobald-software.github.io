@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Added AbapDate, removed ConversionUtils, renamed UtcLong to AbapTimestamp",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "New ABAP sources for Z_XTRACT_IS_TABLE_COMPRESSION to improve performance especially on SAP system based on MAXDB. New function module Z_XTRACT_IS_TABLE_JOIN released as beta version.",
-        "Component": "BAPI",
-        "Product": "BoardConnector"
-    }
-]

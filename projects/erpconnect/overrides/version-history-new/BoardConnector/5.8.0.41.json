@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Removed a senseless default for the associated source of an extraction.",
-        "Component": "General",
-        "Product": "Theobald.Server"
-    }
-]

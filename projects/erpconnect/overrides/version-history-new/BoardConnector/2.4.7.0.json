@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Errors which lead to server termination are written to Windows event log",
-        "Component": "Service",
-        "Product": "BoardConnector"
-    }
-]

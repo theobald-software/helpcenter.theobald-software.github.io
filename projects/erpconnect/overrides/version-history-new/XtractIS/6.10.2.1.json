@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Introduced Interface IR3Connection to make consumers of R3Connection testable.",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Batch job name can be set through a SSIS variable",
-        "Component": "Report",
-        "Product": "XtractIS"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for disabled measures/dimensions tree in MDX mode when a query does not have any measures.",
-        "Component": "BW Cube",
-        "Product": "Theobald.Extractors"
-    }
-]

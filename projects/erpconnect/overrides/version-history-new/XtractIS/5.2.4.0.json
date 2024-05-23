@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug that caused packages containing ODP components to fail after upgrading to 5.x without previously uninstalling the older version",
-        "Component": "Setup",
-        "Product": "XtractIS"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for casing of SSIS variables (broken since 3.1.6)",
-        "Component": "DeltaQ",
-        "Product": "XtractKernel"
-    }
-]

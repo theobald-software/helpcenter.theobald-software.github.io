@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixes for CORS handling. Fixes for error handling for errors during the HTTP authentication step.",
-        "Component": "Theobald.Server",
-        "Product": "YunIO"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug where TCODE lookup would not work with some newer SAP systems.",
-        "Component": "Report",
-        "Product": "Theobald.Extractors"
-    }
-]

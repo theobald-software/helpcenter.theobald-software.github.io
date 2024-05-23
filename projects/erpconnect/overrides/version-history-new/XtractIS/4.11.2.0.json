@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Backward-compatibility fix (components created in older versions could not be edited)",
-        "Component": "Report",
-        "Product": "XtractIS"
-    }
-]

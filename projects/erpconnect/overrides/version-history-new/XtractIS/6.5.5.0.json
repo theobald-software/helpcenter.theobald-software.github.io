@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Removed --silent argument; Renamed --no-gui argument to --unattended",
-        "Component": "Setup",
-        "Product": "XtractIS"
-    }
-]

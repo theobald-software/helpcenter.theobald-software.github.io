@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Improved error handling in refresh metadata; added validation to DateTo property; made DateTo property setter public so that it is available for runtime parameters",
-        "Component": "Hierarchy",
-        "Product": "Theobald.Extractors"
-    }
-]

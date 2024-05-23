@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Transaction: Fixed a bug that caused errors with special table cell values",
-        "Component": "General",
-        "Product": "YunIO"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed conversion errors for some data types",
-        "Component": "DeltaQ",
-        "Product": "BoardConnector"
-    }
-]

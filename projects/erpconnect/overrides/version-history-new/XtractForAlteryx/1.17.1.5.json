@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Measure names in BICS mode now display the technical name instead of the enterprise ID if available.",
-        "Component": "BW Cube",
-        "Product": "Theobald.Extractors"
-    }
-]

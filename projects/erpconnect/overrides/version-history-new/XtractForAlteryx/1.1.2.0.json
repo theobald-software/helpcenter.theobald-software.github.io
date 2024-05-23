@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for Alteryx installation folder detection",
-        "Component": "Setup",
-        "Product": "XtractForAlteryx"
-    }
-]

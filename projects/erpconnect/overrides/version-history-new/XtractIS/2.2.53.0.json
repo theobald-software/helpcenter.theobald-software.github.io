@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Correction for length of DATS fields (corrected from 10 to 8 characters)",
-        "Component": "Table",
-        "Product": "XtractIS"
-    }
-]

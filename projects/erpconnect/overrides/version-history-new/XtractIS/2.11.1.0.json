@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for non-existant column description texts that lead to a crash when pressing OK button",
-        "Component": "Table Join",
-        "Product": "XtractIS"
-    }
-]

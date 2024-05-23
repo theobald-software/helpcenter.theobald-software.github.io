@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for data types when using Z_THEO_READ_TABLE",
-        "Component": "Table",
-        "Product": "XtractIS"
-    }
-]

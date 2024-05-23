@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug where filtering for columns based on name or description was not possible",
-        "Component": "TableCDC",
-        "Product": "Theobald.Extractors"
-    }
-]

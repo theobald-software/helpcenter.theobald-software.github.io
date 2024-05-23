@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for timeout during startup with large number of extractions",
-        "Component": "Server",
-        "Product": "BoardConnector"
-    }
-]

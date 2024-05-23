@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for AccessViolationException in certain environments when heavy parallelism is involved",
-        "Component": "DeltaQ",
-        "Product": "XtractIS"
-    }
-]

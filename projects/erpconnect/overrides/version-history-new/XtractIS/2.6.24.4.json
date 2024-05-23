@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Implemented SAP note 1866743 for error message \"Cannot lock request\", increased parameter I_ENQUEUE_LOOP_COUNT to 300",
-        "Component": "OHS",
-        "Product": "XtractKernel"
-    }
-]

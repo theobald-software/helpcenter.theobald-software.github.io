@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Added support for Linux and macOS (ERPConnectStandard20.dll with NWRFC only)",
-        "Component": "General",
-        "Product": "ERPConnect"
-    }
-]

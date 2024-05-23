@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fix for parallel RFC servers using NWRFC",
-        "Component": "RFCServer",
-        "Product": "ERPConnect"
-    }
-]

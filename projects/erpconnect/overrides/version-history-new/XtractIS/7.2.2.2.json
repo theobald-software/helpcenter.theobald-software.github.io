@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Added support for list parameters",
-        "Component": "Query",
-        "Product": "Theobald.Extractors"
-    }
-]

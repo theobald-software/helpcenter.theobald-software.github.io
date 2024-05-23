@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Removed columnSeparator and decimalSeparator from run parameters",
-        "Component": "Designer",
-        "Product": "BoardConnector"
-    }
-]

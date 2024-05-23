@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Only entries with request id are sent to log output",
-        "Component": "DeltaQ",
-        "Product": "XtractIS"
-    }
-]

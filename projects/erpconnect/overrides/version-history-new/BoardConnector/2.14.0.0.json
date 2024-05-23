@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Removed HttpLocalOnly server setting (please use server security settings instead)",
-        "Component": "Server",
-        "Product": "BoardConnector"
-    }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug in the config converter that caused broken key figures and custom column order for extractions originally created in version 2.11.0 and before.",
-        "Component": "BW Cube",
-        "Product": "BoardConnector"
-    }
-]

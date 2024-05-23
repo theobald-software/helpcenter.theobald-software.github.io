@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Fixed a bug where a service with an empty result set would run into a timeout.",
-        "Component": "Runtime",
-        "Product": "YunIO"
-    }
-]

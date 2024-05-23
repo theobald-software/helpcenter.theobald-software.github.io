@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "Removed legacy HTTP filter GUI",
-        "Component": "Designer",
-        "Product": "BoardConnector"
-    }
-]

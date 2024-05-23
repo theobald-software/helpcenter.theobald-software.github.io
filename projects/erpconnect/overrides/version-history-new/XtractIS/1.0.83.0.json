@@ -1,7 +1,0 @@
-[
-    {
-        "Message": "	Fix for crash when NOT using the RequestLog pipeline under 64-Bit SQLAgent",
-        "Component": "DeltaQ",
-        "Product": "XtractIS"
-    }
-]
