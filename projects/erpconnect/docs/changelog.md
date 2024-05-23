@@ -38,12 +38,21 @@ hide:
       <th>Release Date</th>
       <th>Component</th>
       <th>Description</th>
+      <th>Note</th>
     </tr>
   </thead>
   <tbody id="catalogBody">
     <!-- Table body will be populated dynamically -->
   </tbody>
 </table>
+
+<!-- Modal HTML -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div id="modalBody"></div>
+  </div>
+</div>
 
 <script>
   // Function to fetch data from catalog.json
@@ -59,17 +68,22 @@ hide:
   };
 
   // Function to render a row in the table
-const renderRow = (item) => {
+  const renderRow = (item) => {
     const rows = item.Changes.map(change => {
       const row = document.createElement('tr');
       if (item.IsBreaking) {
         row.setAttribute('class', 'is-breaking');
       }
+      if (item.IsCritical) {
+        row.setAttribute('class', 'is-critical');
+      }
+
       row.innerHTML = `
         <td>${item.Version}</td>
         <td>${item.LegacyReleaseDate.split(' ')[0]}</td>
         <td>${change.Component}</td>
         <td>${change.Message}</td>
+        ${change.ReleaseNote ? `<td><button class="show-more" data-release-note="${encodeURIComponent(change.ReleaseNote)}" style="text-decoration: underline; color: blue;">show more</button></td>` : '<td></td>'}
       `;
       return row;
     });
@@ -87,52 +101,98 @@ const renderRow = (item) => {
     addEventListeners(); // Add event listeners after the table is populated
   };
 
-
   const isMarkdown = (content) => {
-      const markdownSyntax = ['*', '_', '**', '__', '[', ']', '`', '#', '##', '###', '####', '#####', '######'];
-      return markdownSyntax.some((syntax) => content.includes(syntax));
+    const markdownSyntax = ['*', '_', '**', '__', '[', ']', '`', '#', '##', '###', '####', '#####', '######'];
+    return markdownSyntax.some((syntax) => content.includes(syntax));
   };
 
   const parseMarkdown = (markdownText) => {
-    console.log("markdownText: ", markdownText)
-    // Replace Markdown syntax with corresponding HTML tags
     if (!isMarkdown(markdownText)) {
-        // If not, return the input text wrapped in <p> tags
       return `<p>${markdownText}</p>`;
     }
 
-    // Replace Markdown syntax with corresponding HTML tags
     let htmlText = markdownText
-        // Handle headings
       .replace(/^#\s+(.*)$/gm, '<h1>$1</h1>')
       .replace(/^##\s+(.*)$/gm, '<h2>$1</h2>')
       .replace(/^###\s+(.*)$/gm, '<h3>$1</h3>')
       .replace(/^####\s+(.*)$/gm, '<h4>$1</h4>')
       .replace(/^#####\s+(.*)$/gm, '<h5>$1</h5>')
       .replace(/^######\s+(.*)$/gm, '<h6>$1</h6>')
-      // Handle bold and italic
-      .replace(/\*\*\*(.*?)\*\*\*/g, '<strong><em>$1</em></strong>') // Bold and italic
-      .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>') // Bold
-      .replace(/\*(.*?)\*/g, '<em>$1</em>') // Italic
-      // Handle lists
+      .replace(/\*\*\*(.*?)\*\*\*/g, '<strong><em>$1</em></strong>')
+      .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+      .replace(/\*(.*?)\*/g, '<em>$1</em>')
       .replace(/^\*\s+(.*)$/gm, '<li>$1</li>')
       .replace(/^(\d+)\.\s+(.*)$/gm, '<li>$2</li>')
-      .replace(/<\/li>\s+<li>/g, '</li><li>') // Fix multiple list items
-      // Handle blockquotes
+      .replace(/<\/li>\s+<li>/g, '</li><li>')
       .replace(/^\>(.*)$/gm, '<blockquote>$1</blockquote>')
-      // Handle code blocks
-      // Handle horizontal rules
       .replace(/^\s*\*\s*\*\s*\*.*$/gm, '<hr>')
-      // Handle ReleaseNote with new line
       .replace(/^ReleaseNote:\s*"([^"]+)"$/gm, '<div class="release-note">$1</div>')
-        // Handle paragraphs
       .replace(/^(?!<h[1-6]>)(?!<div class="release-note">)(.*)$/gm, '<p>$1</p>');
 
     return htmlText;
   }
+
   // Add event listeners for filtering and "Show More" buttons
   const addEventListeners = () => {
-    // Function to filter rows based on the search parameter
+    const filterInput = document.getElementById('search');
+    if (filterInput) {
+      filterInput.addEventListener('input', () => {
+        const newFilterValue = filterInput.value.toLowerCase();
+        filterRows(newFilterValue);
+        updateURLParams(newFilterValue);
+      });
+    }
+
+    const clearButton = document.querySelector('.btn-clear');
+    if (clearButton) {
+      clearButton.addEventListener('click', () => {
+        filterInput.value = ''; 
+        filterRows('');
+        updateURLParams('');
+      });
+    }
+
+    const catalogTable = document.getElementById('catalogTable');
+    if (catalogTable) {
+      catalogTable.addEventListener('click', event => {
+        if (event.target.tagName.toLowerCase() === 'button' && event.target.classList.contains('show-more')) {
+          const releaseNote = decodeURIComponent(event.target.getAttribute('data-release-note'));
+          if (releaseNote) {
+            const modal = document.getElementById('modal');
+            const modalBody = document.getElementById('modalBody');
+            modalBody.innerHTML = parseMarkdown(releaseNote);
+            modal.style.display = 'block';
+          }
+        }
+      });
+    }
+
+    const modal = document.getElementById('modal');
+    const closeModal = document.querySelector('.close');
+    if (closeModal) {
+      closeModal.addEventListener('click', () => {
+        modal.style.display = 'none';
+      });
+    }
+
+    window.addEventListener('click', event => {
+      if (event.target === modal) {
+        modal.style.display = 'none';
+      }
+    });
+  };
+
+  const updateURLParams = (filterValue) => {
+    const urlSearchParams = new URLSearchParams(window.location.search);
+    if (filterValue) {
+      urlSearchParams.set('filter', filterValue);
+    } else {
+      urlSearchParams.delete('filter');
+    }
+    const newUrl = `${window.location.pathname}?${urlSearchParams.toString()}`;
+    window.history.pushState({}, '', newUrl);
+  };
+
   const filterRows = (filterValue) => {
     const comparisonOperator = filterValue.charAt(0);
     const versionNumber = filterValue.slice(1).trim();
@@ -141,23 +201,19 @@ const renderRow = (item) => {
       const versionCell = row.querySelector('td:first-child');
       const version = versionCell.textContent.trim();
 
-      // Compare versions based on the operator
       let displayRow = false;
       if (comparisonOperator === '>') {
         displayRow = compareVersions(version, versionNumber) > 0;
       } else if (comparisonOperator === '<') {
         displayRow = compareVersions(version, versionNumber) < 0;
       } else {
-        // Default behavior for other operators or invalid input
         displayRow = version.includes(versionNumber);
       }
 
-      // Set display style based on comparison result
       row.style.display = displayRow ? '' : 'none';
     });
   };
 
-  // Function to compare versions (e.g., "5.6", "6.0")
   const compareVersions = (version1, version2) => {
     const parts1 = version1.split('.').map(part => parseInt(part));
     const parts2 = version2.split('.').map(part => parseInt(part));
@@ -168,54 +224,19 @@ const renderRow = (item) => {
       }
     }
 
-    // If all parts are equal, consider the longer version as greater
     return parts1.length - parts2.length;
   };
 
-    // Reading the search parameter from the URL and applying the filter
+  // Read the search parameter from the URL and apply the filter
+  window.addEventListener('load', () => {
     const urlSearchParams = new URLSearchParams(window.location.search);
     const filterValue = urlSearchParams.get('filter');
     const filterInput = document.getElementById('search');
-    if (filterInput) {
-      filterInput.value = filterValue || ''; // Set input value to the filter parameter
-      filterRows(filterValue || ''); // Apply initial filter
-
-      // Add event listener to update filter on input change
-      filterInput.addEventListener('input', () => {
-        const newFilterValue = filterInput.value.toLowerCase();
-        filterRows(newFilterValue);
-
-        // Update URL with new filter value
-        urlSearchParams.set('filter', newFilterValue);
-        const newUrl = `${window.location.pathname}?${urlSearchParams.toString()}`;
-        window.history.pushState({}, '', newUrl);
-      });
+    if (filterInput && filterValue) {
+      filterInput.value = filterValue;
+      filterRows(filterValue);
     }
-
-    const clearButton = document.querySelector('.btn-clear');
-    if (clearButton) {
-      clearButton.addEventListener('click', () => {
-        filterInput.value = ''; // Clear the input field
-        filterRows(''); // Reset the filter
-        urlSearchParams.delete('filter'); // Remove the filter parameter from the URL
-        const newUrl = `${window.location.pathname}?${urlSearchParams.toString()}`;
-        window.history.pushState({}, '', newUrl);
-      });
-    }
-    //Event listener for the "Show More" button
-    const catalogTable = document.getElementById('catalogTable');
-    if (catalogTable) {
-
-          // Your existing logic here
-          const versionRow = event.target.closest('tr');
-          const versionCell = versionRow.querySelector('td:first-child');
-          const version = versionCell.textContent;
-          
-
-    }
-  };
-
-  // Call the function to add event listeners
+  });
 
   populateTable();
 </script>
