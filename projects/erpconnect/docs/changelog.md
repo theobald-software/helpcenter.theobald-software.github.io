@@ -20,12 +20,7 @@ hide:
     id="search"
     type="text"
     placeholder="🔍 Search "
-    _="on keyup
-      if the event's key is 'Escape'
-        set my value to ''
-        trigger keyup
-      else
-        show <tr/> in next <tbody/> when its textContent.toLowerCase() contains my value.toLowerCase()" />
+     />
 
   <button class="btn-clear md-button md-button--primary"
     _="on click set #search.value to '' then trigger keyup on #search">Clear</button>
@@ -91,6 +86,7 @@ hide:
   const populateTable = async () => {
     const data = await fetchData();
     const tableBody = document.getElementById('catalogBody');
+    tableBody.innerHTML = ''; // Clear any existing rows
     data.forEach(item => {
       const rows = renderRow(item);
       rows.forEach(row => tableBody.appendChild(row));
