@@ -114,14 +114,16 @@ hide:
       .replace(/\*\*\*(.*?)\*\*\*/g, '<strong><em>$1</em></strong>')
       .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
       .replace(/\*(.*?)\*/g, '<em>$1</em>')
-      .replace(/^\*\s+(.*)$/gm, '<li>$1</li>')
-      .replace(/^(\d+)\.\s+(.*)$/gm, '<li>$2</li>')
-      .replace(/<\/li>\s+<li>/g, '</li><li>')
-      .replace(/^\>(.*)$/gm, '<blockquote>$1</blockquote>')
-      .replace(/^\s*\*\s*\*\s*\*.*$/gm, '<hr>')
-      .replace(/^ReleaseNote:\s*"([^"]+)"$/gm, '<div class="release-note">$1</div>')
-      .replace(/^(?!<h[1-6]>)(?!<div class="release-note">)(.*)$/gm, '<p>$1</p>')
       .replace(/`([^`]+)`/g, '<code class="highlight">$1</code>')
+      .replace(/^-+\s*$/gm, '<hr>')
+      .replace(/^- (.*)$/gm, '<li>$1</li>')
+      .replace(/^\*\s+(.*)$/gm, '<li>$1</li>')
+      .replace(/^\d+\.\s+(.*)$/gm, '<li>$1</li>')
+      .replace(/<\/li>\n<li>/g, '</li><li>')
+      .replace(/(<li>.*<\/li>)/g, '<ul>$1</ul>')
+      .replace(/^\>\s+(.*)$/gm, '<blockquote>$1</blockquote>')
+      .replace(/^ReleaseNote:\s*"([^"]+)"$/gm, '<div class="release-note">$1</div>')
+      .replace(/^(?!<h[1-6]>)(?!<div class="release-note">)(?!<blockquote>)(?!<li>)(.*)$/gm, '<p>$1</p>')
       .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank">$1</a>');
 
     return htmlText;
