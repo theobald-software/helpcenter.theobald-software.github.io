@@ -1,5 +1,16 @@
 [
   {
+    "Version": "6.7.1.0",
+    "LegacyReleaseDate": "2024-05-24 10:50:58Z",
+    "Changes": [
+      {
+        "Product": "XtractUniversal",
+        "Component": "Designer",
+        "Message": "Fixed a bug that would show incorrect information regarding extractions last run"
+      }
+    ]
+  },
+  {
     "Version": "6.7.0.6",
     "LegacyReleaseDate": "2024-05-21 00:00:00Z",
     "Changes": [
