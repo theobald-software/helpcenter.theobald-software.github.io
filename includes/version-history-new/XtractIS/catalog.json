@@ -11020,7 +11020,7 @@
       {
         "Product": "XtractIS",
         "Component": "BAPI",
-        "Message": "localizable now.\nAdded languages German and French for the GUI.	But not in the installation"
+        "Message": "localizable now.\nAdded languages German and French for the GUI.But not in the installation"
       }
     ]
   },
@@ -14796,7 +14796,7 @@
       {
         "Product": "XtractIS",
         "Component": "General",
-        "Message": "Corrected the links to the OnlineHelp	"
+        "Message": "Corrected the links to the OnlineHelp"
       }
     ]
   },
@@ -17494,7 +17494,7 @@
       {
         "Product": "XtractIS",
         "Component": "Query",
-        "Message": "	Fix for exception that was thrown when setting an obligatory parameter through a variant"
+        "Message": "Fix for exception that was thrown when setting an obligatory parameter through a variant"
       }
     ]
   },
@@ -17549,7 +17549,7 @@
       {
         "Product": "XtractIS",
         "Component": "DeltaQ",
-        "Message": "	Fix for crash when NOT using the RequestLog pipeline under 64-Bit SQLAgent"
+        "Message": "Fix for crash when NOT using the RequestLog pipeline under 64-Bit SQLAgent"
       }
     ]
   },
@@ -17593,7 +17593,7 @@
       {
         "Product": "XtractIS",
         "Component": "BW Cube",
-        "Message": "	Fix for MetaData Refresh. Variables were not refreshed correctly"
+        "Message": "Fix for MetaData Refresh. Variables were not refreshed correctly"
       }
     ]
   },
@@ -17659,7 +17659,7 @@
       {
         "Product": "XtractIS",
         "Component": "DeltaQ",
-        "Message": "	Improved memory management for tRFC data transfers"
+        "Message": "Improved memory management for tRFC data transfers"
       }
     ]
   },
@@ -17681,7 +17681,7 @@
       {
         "Product": "XtractIS",
         "Component": "BW Cube",
-        "Message": "	MetaData Refresh did not work under some BW releases"
+        "Message": "MetaData Refresh did not work under some BW releases"
       }
     ]
   },
@@ -17692,7 +17692,7 @@
       {
         "Product": "XtractIS",
         "Component": "DeltaQ",
-        "Message": "	Improved activation procedure for sources which are wider"
+        "Message": "Improved activation procedure for sources which are wider"
       }
     ]
   },
@@ -17736,7 +17736,7 @@
       {
         "Product": "XtractIS",
         "Component": "Table",
-        "Message": "	Fix for columns that contain RAW data (e.g. when using GUID-columns)"
+        "Message": "Fix for columns that contain RAW data (e.g. when using GUID-columns)"
       }
     ]
   },
@@ -17824,7 +17824,7 @@
       {
         "Product": "XtractIS",
         "Component": "DeltaQ",
-        "Message": "	Fix for crash when using more than one DeltaQ instance with the same "
+        "Message": "Fix for crash when using more than one DeltaQ instance with the same "
       }
     ]
   },
@@ -17857,7 +17857,7 @@
       {
         "Product": "XtractIS",
         "Component": "OHS",
-        "Message": "	Preview left the RFC Server connection open in case of errors during extraction"
+        "Message": "Preview left the RFC Server connection open in case of errors during extraction"
       }
     ]
   },
@@ -17890,7 +17890,7 @@
       {
         "Product": "XtractIS",
         "Component": "Query",
-        "Message": "	Preview crashed when displaying more than 650 columns"
+        "Message": "Preview crashed when displaying more than 650 columns"
       }
     ]
   },
@@ -17901,7 +17901,7 @@
       {
         "Product": "XtractIS",
         "Component": "OHS",
-        "Message": "	Additional button for manual RFC server check in Customizing Check Dialog "
+        "Message": "Additional button for manual RFC server check in Customizing Check Dialog "
       }
     ]
   },
@@ -17934,7 +17934,7 @@
       {
         "Product": "XtractIS",
         "Component": "Table",
-        "Message": "	INT4 columns on very old SAP system caused a crash due to hexadecimal formatting"
+        "Message": "INT4 columns on very old SAP system caused a crash due to hexadecimal formatting"
       }
     ]
   },
@@ -18033,7 +18033,7 @@
       {
         "Product": "XtractIS",
         "Component": "DeltaQ",
-        "Message": "	Metadata synchronisation check added to DeltaQ to make sure, that non-activated metadata "
+        "Message": "Metadata synchronisation check added to DeltaQ to make sure, that non-activated metadata "
       }
     ]
   },
@@ -18066,7 +18066,7 @@
       {
         "Product": "XtractIS",
         "Component": "DeltaQ",
-        "Message": "	Fix: Under certain circumstances variables within a DeltaQ selection "
+        "Message": "Fix: Under certain circumstances variables within a DeltaQ selection "
       }
     ]
   },
@@ -18121,7 +18121,7 @@
       {
         "Product": "XtractIS",
         "Component": "BAPI",
-        "Message": "	Fix: SSIS Variables in BAPI output structures crashed with source type BCD"
+        "Message": "Fix: SSIS Variables in BAPI output structures crashed with source type BCD"
       }
     ]
   },
@@ -18187,7 +18187,7 @@
       {
         "Product": "XtractIS",
         "Component": "BW Cube",
-        "Message": "	Support for Multiple Single Values added"
+        "Message": "Support for Multiple Single Values added"
       }
     ]
   },
@@ -18242,7 +18242,7 @@
       {
         "Product": "XtractIS",
         "Component": "BW Loader",
-        "Message": "	The tool BI Notification Receiver is shipped with Xtract IS "
+        "Message": "The tool BI Notification Receiver is shipped with Xtract IS "
       }
     ]
   },
@@ -18297,7 +18297,7 @@
       {
         "Product": "XtractIS",
         "Component": "DeltaQ",
-        "Message": "	IDocs that are hanging in tRFC layer because of package crash, "
+        "Message": "IDocs that are hanging in tRFC layer because of package crash, "
       }
     ]
   },
@@ -18308,7 +18308,7 @@
       {
         "Product": "XtractIS",
         "Component": "General",
-        "Message": "	Fix in connection manager when using Load Balancing with a group name with blanks"
+        "Message": "Fix in connection manager when using Load Balancing with a group name with blanks"
       }
     ]
   },
@@ -18330,7 +18330,7 @@
       {
         "Product": "XtractIS",
         "Component": "General",
-        "Message": "	Installation routine improved for SQL Server 2008 on 64 bit"
+        "Message": "Installation routine improved for SQL Server 2008 on 64 bit"
       }
     ]
   },
@@ -18407,7 +18407,7 @@
       {
         "Product": "XtractIS",
         "Component": "General",
-        "Message": "	Description texts are shown in look up dialog / Transfer type is "
+        "Message": "Description texts are shown in look up dialog / Transfer type is "
       }
     ]
   },
@@ -18418,7 +18418,7 @@
       {
         "Product": "XtractIS",
         "Component": "General",
-        "Message": "	Meta data of input pipeline is refreshed each time the editor is opened "
+        "Message": "Meta data of input pipeline is refreshed each time the editor is opened "
       }
     ]
   },
@@ -18429,7 +18429,7 @@
       {
         "Product": "XtractIS",
         "Component": "BW Loader",
-        "Message": "	Metadata checked right before upload. Upload rejected when metadata "
+        "Message": "Metadata checked right before upload. Upload rejected when metadata "
       }
     ]
   },
