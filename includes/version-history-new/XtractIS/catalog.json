@@ -7844,7 +7844,7 @@
       {
         "Product": "ERPConnect",
         "Component": "Setup",
-        "Message": "Changed default install directory to \"Program Files\ERPConnect\" on x64 systems"
+        "Message": "Changed default install directory to \"Program Files\\ERPConnect\" on x64 systems"
       },
       {
         "Product": "ERPConnect",
