@@ -33,7 +33,7 @@ hide:
       <th>Version</th>
       <th>Release Date</th>
       <th>Component</th>
-      <th>Impact</th>
+      <th> </th>
       <th>Description</th>
     </tr>
   </thead>
@@ -70,13 +70,13 @@ hide:
 
       row.innerHTML = `
         <td>${item.Version}</td>
-        <td>${item.LegacyReleaseDate.split(' ')[0]}</td>
+        <td style="width:12%">${item.LegacyReleaseDate.split(' ')[0]}</td>
         <td>${change.Component}</td>
         <td>
-        ${item.IsBreaking ? '<span class="is-breaking">Breaking</span>': ''}
-        ${item.IsCritical ? '<span class="is-critical">Critical</span>': ''}
+        ${item.IsBreaking ? '<img src="../version-history-new/link_broken.svg" alt="breaking-change" style="width:20px;">': ''}
+        ${item.IsCritical ? '<img src="../version-history-new/critical.svg" alt="breaking-change" style="width:20px;">': ''}
         </td>
-        <td>${change.Message} ${change.ReleaseNote ? ` <button class="show-more" data-release-note="${encodeURIComponent(change.ReleaseNote)}" style="cursor: pointer; color: #ED1A33;">(Open Release note)</button>` : ''}</td>
+        <td>${item.IsBreaking ? 'Breaking Change: ': ''} ${item.IsCritical ? 'Critical Change: ': ''} ${change.Message} ${change.ReleaseNote ? ` <br><button class="show-more" data-release-note="${encodeURIComponent(change.ReleaseNote)}" style="cursor: pointer; color: #ED1A33;">(Open Release Notes)</button>` : ''}</td>
       `;
       return row;
     });
