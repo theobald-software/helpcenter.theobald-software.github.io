@@ -20,7 +20,8 @@ hide:
     id="search"
     type="text"
     placeholder="🔍 Search "
-     />
+
+  />
 
   <button class="btn-clear md-button md-button--primary"
     _="on click set #search.value to '' then trigger keyup on #search">Clear</button>
@@ -86,12 +87,12 @@ hide:
   const populateTable = async () => {
     const data = await fetchData();
     const tableBody = document.getElementById('catalogBody');
-    tableBody.innerHTML = ''; // Clear any existing rows
+    tableBody.innerHTML = ''; 
     data.forEach(item => {
       const rows = renderRow(item);
       rows.forEach(row => tableBody.appendChild(row));
     });
-    addEventListeners(); // Add event listeners after the table is populated
+    addEventListeners(); 
   };
 
   const isMarkdown = (content) => {
@@ -132,14 +133,20 @@ hide:
     return htmlText;
   }
 
-  // Add event listeners for filtering and "Show More" buttons
   const addEventListeners = () => {
-    const filterInput = document.getElementById('search');
+    const urlSearchParams = new URLSearchParams(window.location.search);
+    const filterValue = urlSearchParams.get('filter');
+    const filterInput = document.querySelector('.input-search');
     if (filterInput) {
+      filterInput.value = filterValue || '';
+      filterRows(filterValue || ''); 
       filterInput.addEventListener('input', () => {
         const newFilterValue = filterInput.value.toLowerCase();
         filterRows(newFilterValue);
-        updateURLParams(newFilterValue);
+
+        urlSearchParams.set('filter', newFilterValue);
+        const newUrl = `${window.location.pathname}?${urlSearchParams.toString()}`;
+        window.history.pushState({}, '', newUrl);
       });
     }
 
@@ -147,39 +154,40 @@ hide:
     if (clearButton) {
       clearButton.addEventListener('click', () => {
         filterInput.value = ''; 
-        filterRows('');
-        updateURLParams('');
+        filterRows(''); 
+        urlSearchParams.delete('filter');
+        const newUrl = `${window.location.pathname}?${urlSearchParams.toString()}`;
+        window.history.pushState({}, '', newUrl);
       });
     }
 
     const catalogTable = document.getElementById('catalogTable');
     if (catalogTable) {
-      catalogTable.addEventListener('click', event => {
-        if (event.target.tagName.toLowerCase() === 'button' && event.target.classList.contains('show-more')) {
-          const releaseNote = decodeURIComponent(event.target.getAttribute('data-release-note'));
-          if (releaseNote) {
-            const modal = document.getElementById('modal');
-            const modalBody = document.getElementById('modalBody');
-            modalBody.innerHTML = parseMarkdown(releaseNote);
-            modal.style.display = 'block';
+      catalogTable.addEventListener('click', async (event) => {
+        if (event.target.classList.contains('showMoreBtn')) {
+          const versionRow = event.target.closest('tr');
+          const versionCell = versionRow.querySelector('td:first-child');
+          const version = versionCell.textContent;
+          const additionalData = await fetchAdditionalData(version);
+          if (additionalData) {
+            console.log("ReleaseNote", additionalData);
+
+            additionalData.forEach(dataObj => {
+              event.target.textContent = `${dataObj.Component}`;
+              const messageCell = document.createElement('td');
+              messageCell.textContent = dataObj.Message;
+              versionRow.appendChild(messageCell);
+
+              if (dataObj.ReleaseNote !== undefined) {
+                const noteCell = document.createElement('td');
+                noteCell.innerHTML = parseMarkdown(dataObj.ReleaseNote);
+                versionRow.appendChild(noteCell);
+              }
+            })
           }
         }
       });
     }
-
-    const modal = document.getElementById('modal');
-    const closeModal = document.querySelector('.close');
-    if (closeModal) {
-      closeModal.addEventListener('click', () => {
-        modal.style.display = 'none';
-      });
-    }
-
-    window.addEventListener('click', event => {
-      if (event.target === modal) {
-        modal.style.display = 'none';
-      }
-    });
   };
 
   const updateURLParams = (filterValue) => {
@@ -193,26 +201,31 @@ hide:
     window.history.pushState({}, '', newUrl);
   };
 
-  const filterRows = (filterValue) => {
-    const comparisonOperator = filterValue.charAt(0);
-    const versionNumber = filterValue.slice(1).trim();
+const filterRows = (filterValue) => {
+  const comparisonOperator = filterValue.charAt(0);
+  const versionNumber = filterValue.slice(1).trim();
 
-    document.querySelectorAll('#catalogBody tr').forEach(row => {
-      const versionCell = row.querySelector('td:first-child');
-      const version = versionCell.textContent.trim();
+  document.querySelectorAll('#catalogBody tr').forEach(row => {
+    const versionCell = row.querySelector('td:first-child');
+    const descriptionCell = row.querySelector('td:nth-child(5)'); // Adjust if your description column is not the 4th one
+    const version = versionCell.textContent.trim();
+    const description = descriptionCell.textContent.trim().toLowerCase();
+    const searchText = filterValue.toLowerCase();
 
-      let displayRow = false;
-      if (comparisonOperator === '>') {
-        displayRow = compareVersions(version, versionNumber) > 0;
-      } else if (comparisonOperator === '<') {
-        displayRow = compareVersions(version, versionNumber) < 0;
-      } else {
-        displayRow = version.includes(versionNumber);
-      }
+    let displayRow = false;
 
-      row.style.display = displayRow ? '' : 'none';
-    });
-  };
+    if (comparisonOperator === '>') {
+      displayRow = compareVersions(version, versionNumber) > 0;
+    } else if (comparisonOperator === '<') {
+      displayRow = compareVersions(version, versionNumber) < 0;
+    } else {
+      displayRow = version.includes(searchText) || description.includes(searchText);
+    }
+
+    row.style.display = displayRow ? '' : 'none';
+  });
+};
+
 
   const compareVersions = (version1, version2) => {
     const parts1 = version1.split('.').map(part => parseInt(part));
