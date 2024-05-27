@@ -7,11 +7,11 @@ hide:
 This section contains the Theobald Software editorial guidelines for the Help Center.
 
 ### About the Editorial Guidelines
-The editorial guidelines of Theobald software are a set of recommendations for writing documentation pages as in helo content of Theobald Software products. The guidelines are not binding rules, but serve to improve quality of the content of the online help.
+The editorial guidelines of Theobald software are a set of recommendations for writing user documentation and knowledge base articles for Theobald Software products. The guidelines are not binding rules, but serve to improve quality of the content of the user assistance content.
 
 The editorial guidelines consist of the following parts:
 
-- [Style guide](style-guide.md)
+- [User Documentation Style guide (UDSG)](style-guide.md)
 - [Administrative / Folder structure / organizational information](#link) <!-- braucht eine bessere Bezeichnung--->
 - [Document template / Markdown Sample](markdown-sample.md)
 - [Conventions for creating screenshots](screenshot-conventions.md)
@@ -37,6 +37,7 @@ It is recommended to use the following example values when creating content for 
 #### Numbers
 
 5, 23, 42, 1337
+See also [Numbers](style-guide.md#numbers)
 
 #### Generic Strings
 
