@@ -1,0 +1,7 @@
+nav:
+    - style.md
+    - layout.md
+    - spelling-grammar.md
+    - text-constructing.md
+
+collapse: false
