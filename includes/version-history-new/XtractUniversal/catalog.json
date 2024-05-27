@@ -8900,7 +8900,7 @@
         "Product": "XtractUniversal",
         "Component": "Setup",
         "Message": "Fixed an Alteryx plugin installation issue and added service start conditions",
-        "ReleaseNote": "## Xtract Universal - 4.27.6\n- To find a valid Alteryx installation, XU's setup will not only check its folder, but for the file \bin\RunTimeData\DefaultSettings.xml, which is mandatory for the plugin installation. If it is not found, setup will consider that there is no Alteryx instance was found.\n\n- XtractUniversal's service now is started according to some conditions after installation:\n	1. Service is freshly installed\n	2. Service existed before and is set to start automatically\n	3. Service existed before, is set to start manually, but was running before new installation"
+        "ReleaseNote": "## Xtract Universal - 4.27.6\n- To find a valid Alteryx installation, XU's setup will not only check its folder, but for the file \\bin\\RunTimeData\\DefaultSettings.xml, which is mandatory for the plugin installation. If it is not found, setup will consider that there is no Alteryx instance was found.\n\n- XtractUniversal's service now is started according to some conditions after installation:\n	1. Service is freshly installed\n	2. Service existed before and is set to start automatically\n	3. Service existed before, is set to start manually, but was running before new installation"
       },
       {
         "Product": "Theobald.Extractors",
@@ -12130,7 +12130,7 @@
         "Product": "XtractUniversal",
         "Component": "Destinations",
         "Message": "Power BI Connector is now signed and can be trusted to keep the Power BI security settings on the recommended level",
-        "ReleaseNote": "#### Installation\nMove the **.pqx** file to **%userprofile%\Documents\Power BI Desktop\Custom Connectors**. You can remove the **.mez** file if it exists.\n\n\n#### Trusting the connector\nMicrosoft's documentation on how to trust connectors for Power BI can be found [here](https://docs.microsoft.com/en-us/power-bi/desktop-trusted-third-party-connectors).\nThe certificate thumbprint can be found in the *thumbprint.txt* file in the *powerbi* subdirectory.\n\nAlternatively, you can run the *trust-connector.ps1* script as administrator to automatically modify the registry on your machine."
+        "ReleaseNote": "#### Installation\nMove the **.pqx** file to **%userprofile%\\Documents\\Power BI Desktop\\Custom Connectors**. You can remove the **.mez** file if it exists.\n\n\n#### Trusting the connector\nMicrosoft's documentation on how to trust connectors for Power BI can be found [here](https://docs.microsoft.com/en-us/power-bi/desktop-trusted-third-party-connectors).\nThe certificate thumbprint can be found in the *thumbprint.txt* file in the *powerbi* subdirectory.\n\nAlternatively, you can run the *trust-connector.ps1* script as administrator to automatically modify the registry on your machine."
       }
     ]
   },
@@ -13786,7 +13786,7 @@
       {
         "Product": "ERPConnect",
         "Component": "Setup",
-        "Message": "Changed default install directory to \"Program Files\ERPConnect\" on x64 systems"
+        "Message": "Changed default install directory to \"Program Files\\ERPConnect\" on x64 systems"
       },
       {
         "Product": "ERPConnect",
