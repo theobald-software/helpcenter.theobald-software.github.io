@@ -243,9 +243,13 @@ hide:
 
     document.querySelectorAll('#catalogBody tr').forEach(row => {
       const versionCell = row.querySelector('td:first-child');
-      const descriptionCell = row.querySelector('td:nth-child(5)'); // Adjust if your description column is not the 4th one
+      const descriptionCell = row.querySelector('td:nth-child(5)'); 
+      const componentCell = row.querySelector('td:nth-child(3)');
+      const releaseDateCell = row.querySelector('td:nth-child(2)');
       const version = versionCell.textContent.trim();
       const description = descriptionCell.textContent.trim().toLowerCase();
+      const component = descriptionCell.textContent.trim().toLowerCase();
+      const releaseDate = releaseDateCell.textContent.trim().toLowerCase();
       const searchText = filterValue.toLowerCase();
 
       let displayRow = false;
@@ -255,7 +259,7 @@ hide:
       } else if (comparisonOperator === '<') {
         displayRow = compareVersions(version, versionNumber) < 0;
       } else {
-        displayRow = version.includes(searchText) || description.includes(searchText);
+        displayRow = version.includes(searchText) || description.includes(searchText) || component.includes(searchText) || releaseDate.includes(searchText);
       }
 
       row.style.display = displayRow ? '' : 'none';
