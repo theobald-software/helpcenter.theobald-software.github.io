@@ -1,5 +1,16 @@
 [
   {
+    "Version": "6.5.1.18",
+    "LegacyReleaseDate": "2024-05-24 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "BW Cube",
+        "Message": "Fixed a bug where clicking on \"Load live preview\" multiple times would lead to errors"
+      }
+    ]
+  },
+  {
     "Version": "6.5.1.16",
     "LegacyReleaseDate": "2024-05-22 00:00:00Z",
     "Changes": [
