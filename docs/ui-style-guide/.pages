@@ -1,7 +1,8 @@
 nav:
     - style.md
-    - layout.md
     - spelling-grammar.md
     - text-constructing.md
-
+    - checklist.md
+    - YunIO:
+       - layout.md
 collapse: false
