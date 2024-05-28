@@ -1,5 +1,38 @@
 [
   {
+    "Version": "1.32.12.0",
+    "LegacyReleaseDate": "2024-05-27 03:55:47Z",
+    "Changes": [
+      {
+        "Product": "YunIO",
+        "Component": "Designer",
+        "Message": "Remove run cache on service change."
+      }
+    ]
+  },
+  {
+    "Version": "1.32.11.0",
+    "LegacyReleaseDate": "2024-05-24 20:21:01Z",
+    "Changes": [
+      {
+        "Product": "YunIO",
+        "Component": "Designer",
+        "Message": "Run dialog: Improve error message for HTTP status 500"
+      }
+    ]
+  },
+  {
+    "Version": "1.32.10.23",
+    "LegacyReleaseDate": "2024-05-24 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "BW Cube",
+        "Message": "Fixed a bug where clicking on \"Load live preview\" multiple times would lead to errors"
+      }
+    ]
+  },
+  {
     "Version": "1.32.10.21",
     "LegacyReleaseDate": "2024-05-21 00:00:00Z",
     "Changes": [
