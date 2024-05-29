@@ -1,5 +1,17 @@
 [
   {
+    "Version": "1.21.1.16",
+    "LegacyReleaseDate": "2024-05-29 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "TableCDC",
+        "Message": "Result sorting now takes place on SAP side. Removed support for Z_THEO_READ_TABLE. Check release notes for details",
+        "ReleaseNote": "- The extractor now makes use of the **ORDER BY** feature introduced in /THEO/READ_TABLE version **3.5**\n- Increased extraction performance over extractor side sorting which could take a long time\n- Existing extraction definitions using Z_THEO_READ_TABLE **do not need to be adjusted**. The extractor will automatically choose /THEO/READ_TABLE for extracting data\n- Improved logging for result optimization"
+      }
+    ]
+  },
+  {
     "Version": "1.21.1.15",
     "LegacyReleaseDate": "2024-05-24 00:00:00Z",
     "Changes": [
