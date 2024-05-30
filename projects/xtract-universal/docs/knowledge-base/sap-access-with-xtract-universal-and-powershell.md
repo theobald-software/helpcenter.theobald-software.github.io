@@ -1,15 +1,12 @@
 ---
-layout: page
-title: Mastering SAP Access with Xtract Universal and Powershell
+title: SAP Access with Xtract Universal and Powershell
 description: Mastering SAP Access with Xtract Universal and Powershell
-permalink: /:collection/:path
-weight: 100
 ---
 
-This article showcases how to use PowerShell scripts in combination with Xtract Universal.
+This article showcases how to use PowerShell scripts in combination with {{ productName }}.
 
-Xtract Universal is an SAP connector that enables axtraction of save data streams from SAP ERP and BW objects to different target systems. 
-Xtract Universal offers a command line tool that can be used to automate and schedule SAP extractions and to integrate different ETL Tools.
+{{ productName }} is an SAP connector that enables the extraction of save data streams from SAP ERP and BW objects to different target systems. 
+{{ productName }} offers a command line tool that can be used to automate and schedule SAP extractions and to integrate different ETL Tools.
 
 Powershell is a powerful task automation and configuration framework from Microsoft that is based on the .NET Framework.
 It includes a command-line shell and a scripting language.
@@ -17,10 +14,10 @@ It includes a command-line shell and a scripting language.
 
 ### How to run an extraction
 
-Execute an Xtract Universal extraction using the command tool xu.exe in a PowerShell script as shown below:
+Execute an {{ productName }} extraction using the command tool xu.exe in a PowerShell script as shown below:
 
 ```shell
-# execute an Xtract Universal extraction using the command tool xu.exe in a PowerShell script
+# execute an {{ productName }} extraction using the command tool xu.exe in a PowerShell script
 # 2>&1 redirects standard error (the 2) to the same place as standard output (the 1)
 &'C:\Program Files\XtractUniversal\xu.exe' -s "localhost" -p "8065" -n "SAPSalesCube" 1>$null 2>1
 ```
@@ -225,7 +222,7 @@ XURun-Parallel2 -XUCmd $XUCmd -XUServer $XUServer -XUPort $XUPort -XUExtractions
 
 ### How to get a list of defined extractions
 
-Xtract Universal offers an HTTP API to access the defined extractions, their metadata and log, the server log and further information.
+{{ productName }} offers an HTTP API to access the defined extractions, their metadata and log, the server log and further information.
 
 The following function gets the list of extractions from the repository. The output will have the following format for each extraction.
 

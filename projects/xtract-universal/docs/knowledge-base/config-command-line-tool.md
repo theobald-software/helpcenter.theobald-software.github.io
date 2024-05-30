@@ -1,15 +1,10 @@
 ---
-layout: page
-title: Creating extractions without using the Xtract Universal Designer
-description: Creating extractions without using the Xtract Universal designer GUI
-redirect_from:
-  - xtract-universal/explanation-of-using-config-command-line-tool
-permalink: /:collection/:path
-weight: 25
+title: Create Extractions via Commandline
+description: Creating extractions without using the Designer GUI
 ---
 
-As of Xtract Universal Version 4.26.1, the command line tool xu-config.exe is available to customers in the installation directory of Xtract Universal, e.g. `C:\Program Files\XtractUniversal\xu-config.exe`.
-The xu-config.exe tool creates extractions, sources and destinations outside of the Xtract Universal Designer.
+As of {{ productName }} Version 4.26.1, the command line tool xu-config.exe is available to customers in the installation directory of {{ productName }}, e.g. `C:\Program Files\XtractUniversal\xu-config.exe`.
+The xu-config.exe tool creates extractions, sources and destinations outside of the {{ productName }} Designer.
 
 The xu-config.exe tool supports the following extraction types:
 - [Table](https://help.theobald-software.com/en/xtract-universal/table)
@@ -23,7 +18,7 @@ The xu-config.exe tool supports the following extraction types:
 
 ### Prerequisites
 
-- As of Xtract Universal 5.0.0, the xu-config.exe tool must be run by the same Windows AD account that runs the [Xtract Universal Service](https://help.theobald-software.com/en/xtract-universal/advanced-techniques/service-account). 
+- As of {{ productName }} 5.0.0, the xu-config.exe tool must be run by the same Windows AD account that runs the [{{ productName }} Service](https://help.theobald-software.com/en/xtract-universal/advanced-techniques/service-account). 
 This means, you either run the Windows command prompt as the respective user or you use the ```runas```command in the command prompt.
 This is necessary, because passwords are encrypted for the user account that runs the xu-config.exe tool and can only be decrypted by the same account.
 - The execution of powershell scripts must be authorized on your system, see [Microsoft Documentation: Managing the execution policy with PowerShell](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_execution_policies?view=powershell-7.2#managing-the-execution-policy-with-powershell).
@@ -36,14 +31,14 @@ This is necessary, because passwords are encrypted for the user account that run
 
 1. Start the Windows command prompt application :number-1: with administrator rights :number-2:. <br>
 ![cmd-prompt](../assets/images/xu/articles/cmd_prompt.png){:class="img-responsive"}
-2. Navigate to the installation directory of Xtract Universal :number-3:. <br>
+2. Navigate to the installation directory of {{ productName }} :number-3:. <br>
 ![create_source_command_prompt](../assets/images/xu/articles/create_source_command_prompt.png){:class="img-responsive"}
 3. Run the following shell command to create an encrypted password for your SAP source: `powershell ./protect-password.ps1` :number-4:.<br>
-4. Use the following command to select the `xu-config.exe` command line tool from the Xtract Universal installation directory and to create a new SAP source: <br>
+4. Use the following command to select the `xu-config.exe` command line tool from the {{ productName }} installation directory and to create a new SAP source: <br>
 `xu-config.exe --source <name> <host> <instance-number> <client> <language> <user> <protected-password>`.<br>
 5. Replace the parameters in `< >` with actual values :number-5:. The parameters are not case sensitive.<br>
 6. Press **[Enter]** to run the command. 
-7. Check the generated source in the Xtract Universal Designer or in the following directory: <br>`C:\Program Files\XtractUniversal\config\sources`.
+7. Check the generated source in the {{ productName }} Designer or in the following directory: <br>`C:\Program Files\XtractUniversal\config\sources`.
 ![sources](../assets/images/xu/articles/xu_manage_source_2.png){:class="img-responsive"}
 
 ### Creating a Destination using Windows Command Prompt
@@ -53,16 +48,16 @@ This is necessary, because passwords are encrypted for the user account that run
 
 1. Start the Windows command prompt application :number-1: with administrator rights :number-2:. <br>
 ![cmd-prompt](../assets/images/xu/articles/cmd_prompt.png){:class="img-responsive"}
-2. Navigate to the installation directory of Xtract Universal :number-3:. <br>
+2. Navigate to the installation directory of {{ productName }} :number-3:. <br>
 ![create_destination_command_prompt](../assets/images/xu/articles/create_destination_command_prompt.png){:class="img-responsive"}
 3. Run the following shell command to create encrypted passwords or keys necessary for the destination: `powershell ./protect-password.ps1` :number-4:. <br>
-4. Use one the following commands to select the *xu-config.exe* command line tool from the Xtract Universal installation directory and to create a new destination: <br>
+4. Use one the following commands to select the *xu-config.exe* command line tool from the {{ productName }} installation directory and to create a new destination: <br>
 - Azure Storage: `xu-config.exe --azure <account> <accesskey> <container> <folder(opt)>`.<br>
 - Amazon AWS S3 with user credentials: `xu-config.exe --s3 --auth user <key> <secretkey> <bucket> <region> <folder(opt)>`.<br>
 - Amazon AWS S3 with authentication via IAM role: `xu-config.exe --s3 --auth iam <bucket> <region> <folder(opt)>`.<br>
 5. Replace the parameters in `< >` with actual values :number-5:. The names of the parameters are not case sensitive.<br>
 6. Press **[Enter]** to run the command.
-7. Check the generated destination in the Xtract Universal Designer or in the following directory: <br>`C:\Program Files\XtractUniversal\config\destinations`.
+7. Check the generated destination in the {{ productName }} Designer or in the following directory: <br>`C:\Program Files\XtractUniversal\config\destinations`.
 ![Destinations](../assets/images/xu/articles/destinations_load_manage_shared.png){:class="img-responsive"}
 
 
@@ -70,15 +65,15 @@ This is necessary, because passwords are encrypted for the user account that run
 
 1. Start the Windows command prompt application :number-1: with administrator rights :number-2:. 
 ![cmd-prompt](../assets/images/xu/articles/cmd_prompt.png){:class="img-responsive"}
-2. Navigate to the installation directory of Xtract Universal.
-3. Use the following command to select the *xu-config.exe* command line tool from the Xtract Universal installation directory and to create a new Table extraction: <br>
+2. Navigate to the installation directory of {{ productName }}.
+3. Use the following command to select the *xu-config.exe* command line tool from the {{ productName }} installation directory and to create a new Table extraction: <br>
 `xu-config.exe --extraction <source> <destination> --table <table>`.
 4. Replace the parameters in `< >`with actual values :number-3:. 
 5. Enter a [defined SAP Connection, Destination](https://help.theobald-software.com/en/xtract-universal/introduction/backup-and-migration#configuration-files) and an SAP Table object for the parameters \<source\>, \<destination\> and \<table\>. 
 The names of the parameters are not case sensitive. <br>
 ![administrator-command-prompt-xu-config](../assets/images/xu/articles/administrator-command-prompt-xu-config.png){:class="img-responsive"}
 6. Press **[Enter]** to run the command. 
-7. Check the generated table extraction in the Xtract Universal Designer or in the following directory: <br>`C:\Program Files\XtractUniversal\config\extractions`.
+7. Check the generated table extraction in the {{ productName }} Designer or in the following directory: <br>`C:\Program Files\XtractUniversal\config\extractions`.
 ![xu-config-xu-designer-gui](../assets/images/xu/articles/xu-config-xu-designer-gui.png){:class="img-responsive"} 
 
 !!! note

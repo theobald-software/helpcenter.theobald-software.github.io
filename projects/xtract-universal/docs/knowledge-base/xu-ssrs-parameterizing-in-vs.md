@@ -1,26 +1,23 @@
 ---
-layout: page
-title: Using Computed Query Parameters for SSRS with Xtract Universal
+title: Use Computed Query Parameters for SSRS
 description: Using Computed Query Parameters in Visual Studio for SSRS
-permalink: /:collection/:path
-weight: 165
 ---
 
-This article contains information on how to parameterize extractions in Visual Studio in context of Xtract Universal's [Power BI Report Server destination](https://help.theobald-software.com/en/xtract-universal/destinations/server-report-services).
+This article contains information on how to parameterize extractions in Visual Studio in context of {{ productName }}'s [Power BI Report Server destination](https://help.theobald-software.com/en/xtract-universal/destinations/server-report-services).
 
 ### About
 
 When creating reports with Visual Studio you can incorporate dynamic and optional parameters to let users filter data without having to change the report itself.<br>
 
-To do this, filter parameters need to be passed as runtime parameters to Xtract Universal.
-In Visual Studio's Report Server Projects the runtime parameters of Xtract Universal allow only one parameter input for each runtime parameter.
+To do this, filter parameters need to be passed as runtime parameters to {{ productName }}.
+In Visual Studio's Report Server Projects the runtime parameters of {{ productName }} allow only one parameter input for each runtime parameter.
 To pass multiple parameters you can use a computed query parameter.
 
 The depicted example uses the [WHERE clause](https://help.theobald-software.com/en/xtract-universal/table/where-clause) of a table extraction to show how to pass multiple filter parameters using a single computed query parameter.
 
 ### Prerequisites
 
-Create a table extraction with an SSRS destination in Xtract Universal. The depicted example uses the SAP standard table *MAKT*. <br>
+Create a table extraction with an SSRS destination in {{ productName }}. The depicted example uses the SAP standard table *MAKT*. <br>
 Add the extraction as a data source in Visual Studio and create a report ad described in [Power BI Report Server in Visual Studio](https://help.theobald-software.com/en/xtract-universal/destinations/server-report-services#adding-an-extraction-as-a-data-source-in-visual-studio).
 
 ### Computed Query Parameters

@@ -1,10 +1,8 @@
 ---
-layout: page
 title: Call Extractions via Script
 description: Call Extraction via Script
-permalink: /:collection/:path
-weight: 5
 ---
+
 This section shows how to call an extraction from a [Windows script (.bat)](./call-extraction-via-script#call-via-windows-script-bat) or [PowerShell script](./call-extraction-via-script#call-via-powershell-script).
 
 
@@ -20,7 +18,7 @@ Define the following variables:
 - Standard error output (*XULogfile*)
 
 ```bat
-:: Execute an Xtract Universal extraction using the command tool xu.exe
+:: Execute an {{ productName }} extraction using the command tool xu.exe
 :: clear screen  
 cls
 :: Turns off the command echoing feature
@@ -107,7 +105,7 @@ for %%e in (%extraction_list%) do (
 
 
 #### Write Extraction Logs into Windows Logs
-Extractions from Xtract Universal can be added to the Windows logs. They can be displayed in the Event Viewer.
+Extractions from {{ productName }} can be added to the Windows logs. They can be displayed in the Event Viewer.
 
 ### Call via PowerShell Script
 You can run extractions using PowerShell. To do so, call the command line tool *xu.exe*.
@@ -118,7 +116,7 @@ Define the following variables:
 - Standard error output (*XULogfile*)
 
 ```shell
-# Execute an Xtract Universal extraction using the command tool xu.exe 
+# Execute an {{ productName }} extraction using the command tool xu.exe 
 # clear screen  
 clear
 # write the output to a file
@@ -189,7 +187,7 @@ write-host $errorMessage
 
 ****
 #### Related Links:
-- [Creating extractions without using the Xtract Universal designer GUI](https://kb.theobald-software.com/xtract-universal/using-config-command-line-tool)
-- [How to insert Xtract Universal Extraction Events into the windows logs](https://kb.theobald-software.com/xtract-universal/how-to-insert-xtract-universal-extraction-events-into-the-windows-logs-and-show-them-in-the-event-viewer)
-- [Mastering SAP Access with Xtract Universal](https://kb.theobald-software.com/xtract-universal/mastering-sap-access-with-xtract-universal-and-powershell)
+- [Creating extractions without using the {{ productName }} designer GUI](https://kb.theobald-software.com/xtract-universal/using-config-command-line-tool)
+- [How to insert {{ productName }} Extraction Events into the windows logs](https://kb.theobald-software.com/xtract-universal/how-to-insert-xtract-universal-extraction-events-into-the-windows-logs-and-show-them-in-the-event-viewer)
+- [Mastering SAP Access with {{ productName }}](https://kb.theobald-software.com/xtract-universal/mastering-sap-access-with-xtract-universal-and-powershell)
 

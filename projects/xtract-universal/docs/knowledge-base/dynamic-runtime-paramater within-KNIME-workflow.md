@@ -1,13 +1,10 @@
 ---
-layout: page
-title: Dynamic Runtime Parameter within KNIME Workflow
+title: Dynamic Runtime Parameter in KNIME Workflows
 description: Dynamic Runtime Parameter within KNIME Workflow
-permalink: /:collection/:path
-weight: 40
 ---
 ### About this approach
 
-The following article describes how user-defined runtime parameters in Xtract Universal can be transferred to the SAP Reader (Theobald Software) of a KNIME workflow. 
+The following article describes how user-defined runtime parameters in {{ productName }} can be transferred to the SAP Reader (Theobald Software) of a KNIME workflow. 
 
 The background is the reduction of transaction costs as well as the use of a delta-mechanism on standard SAP tables. 
 
@@ -18,7 +15,7 @@ Through this procedure, only changed entries from the SAP table EKKO are extract
 ![KMIME-dynamic-runtime-parameter-workflow](../assets/images/xu/articles/KMIME-dynamic-runtime-parameter-workflow.png){:class="img-responsive"}
 
 !!! note
-    Basic knowledge of T-SQL, KNIME Analytics Platform and the creation of table extractions in Xtract Universal is required.
+    Basic knowledge of T-SQL, KNIME Analytics Platform and the creation of table extractions in {{ productName }} is required.
 
 ### Requirements
 
@@ -27,9 +24,9 @@ The following BI architecture must be available and configured:
 - Latest version of the [KNIME Analytics Platform](https://www.knime.com/downloads).
 - Installed KNIME extension [SAP Reader (Theobald Software)](https://hub.knime.com/knime/extensions/org.knime.features.sap.theobald/latest/org.knime.sap.theobald.node.v2.SAPTheobaldReader2NodeFactory).
 - Existing table object in a Microsoft database (SQL-Server).
-- Latest version of Xtract Universal, obtained from the [Theobald Software website](https://theobald-software.com/en/download-trial).
-- Existing table extraction of table *EKKO - Purchasing Document Header* in Xtract Universal, see [Defining a Table Extraction](https://help.theobald-software.com/en/xtract-universal/getting-started/define-a-table-extraction).
-- Use of a WHERE condition with [user-defined variables](https://help.theobald-software.com/en/xtract-universal/advanced-techniques/user-defined-variables) of the table extraction in Xtract Universal e.g.: `EKKO~AEDAT > @maxAEDAT`.
+- Latest version of {{ productName }}, obtained from the [Theobald Software website](https://theobald-software.com/en/download-trial).
+- Existing table extraction of table *EKKO - Purchasing Document Header* in {{ productName }}, see [Defining a Table Extraction](https://help.theobald-software.com/en/xtract-universal/getting-started/define-a-table-extraction).
+- Use of a WHERE condition with [user-defined variables](https://help.theobald-software.com/en/xtract-universal/advanced-techniques/user-defined-variables) of the table extraction in {{ productName }} e.g.: `EKKO~AEDAT > @maxAEDAT`.
 
 ### KNIME Analytics Platform Workflow
 
@@ -55,7 +52,7 @@ SELECT MAX(REPLACE(AEDAT, '-', '')) AS maxAEDAT FROM #table#
 10. Finally, pass the results of the extraction in the workflow to the KNIME node **DB Writer** and execute the workflow.
 
 !!! tip
-    Check the correct execution of the extraction with user-defined runtime parameters in the [Extraction Log](https://help.theobald-software.com/en/xtract-universal/logging#reading-logs---extraction-log) of Xtract Universal.
+    Check the correct execution of the extraction with user-defined runtime parameters in the [Extraction Log](https://help.theobald-software.com/en/xtract-universal/logging#reading-logs---extraction-log) of {{ productName }}.
 
 
 ****

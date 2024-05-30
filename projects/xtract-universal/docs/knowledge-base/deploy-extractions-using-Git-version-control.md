@@ -1,9 +1,6 @@
 ---
-layout: page
-title: Deploying Extractions Using Git Version Control
-description: Deploying Extractions Using Git Version Control
-permalink: /:collection/:path
-weight: 35
+title: Deploy Extractions Using Git Version Control
+description: Deploy Extractions Using Git Version Control
 ---
 
 

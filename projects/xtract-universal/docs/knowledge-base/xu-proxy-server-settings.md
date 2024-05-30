@@ -1,25 +1,22 @@
 ---
-layout: page
-title: Proxy server settings in Xtract Universal
-description: proxy-server-settings-in-xtract-universal
-permalink: /:collection/:path
-weight: 120
+title: Proxy Server Settings in Xtract Universal
+description: proxy server settings in xtract universal
 ---
 
 ### About ###
 Due to corporate network regulations there might be the requirement that all web traffic goes through a web proxy. <br>
-This means that Xtract Universal must also connect to a destination (e.g. S3 AWS) via a proxy server. <br>
+This means that {{ productName }} must also connect to a destination (e.g. S3 AWS) via a proxy server. <br>
 
-A proxy server can be configured in Xtract Universal in the following ways: 
+A proxy server can be configured in {{ productName }} in the following ways: 
 
 ### System wide in the Windows settings ###
 Open the settings *Network and Internet* in your Windows start menu and set the respective proxy server settings there. 
-When connecting to a destination in Xtract Universal the connection will always be routed through the proxy server. 
+When connecting to a destination in {{ productName }} the connection will always be routed through the proxy server. 
 ![XU-proxy-settings-01](../assets/images/xu/articles/xu-proxy-settings-01.png){:class="img-responsive"}
 
 ### XU application specific ###
 This can be achieved following the [Microsoft guidelines](https://docs.microsoft.com/en-us/dotnet/framework/network-programming/proxy-configuration).
-Modify the **Theobald.Xu.Web.Worker.exe.config** and the **XtractDesigner.exe.config** files, that can be found in the Xtract Universal installation folder. <br>
+Modify the **Theobald.Xu.Web.Worker.exe.config** and the **XtractDesigner.exe.config** files, that can be found in the {{ productName }} installation folder. <br>
 Enter the following section in both files: 
 ```xml
 <system.net>
@@ -32,8 +29,8 @@ Enter the following section in both files:
 ```
 
 !!! note
-    Before Xtract Universal version 5.0 the **Theobald.Xu.Web.Worker.exe.config** was called **XtractRun.exe.config**.
-    If you use Xtract Universal version <= 4.x, modify the **XtractRun.exe.config** instead of the **Theobald.Xu.Web.Worker.exe.config**.
+    Before {{ productName }} version 5.0 the **Theobald.Xu.Web.Worker.exe.config** was called **XtractRun.exe.config**.
+    If you use {{ productName }} version <= 4.x, modify the **XtractRun.exe.config** instead of the **Theobald.Xu.Web.Worker.exe.config**.
 
 **Theobald.Xu.Web.Worker.exe.config:**
 ```xml
@@ -77,7 +74,7 @@ Enter the following section in both files:
 *****
 Related Links
 - [Microsoft Help: < defaultProxy > Element (Network Settings)](https://docs.microsoft.com/en-us/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings)
-- [Xtract Universal - Online Help](https://help.theobald-software.com/en/xtract-universal/)
+- [{{ productName }} - Online Help](https://help.theobald-software.com/en/xtract-universal/)
 
 
 

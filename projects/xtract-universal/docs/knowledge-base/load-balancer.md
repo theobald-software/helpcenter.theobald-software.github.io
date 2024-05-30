@@ -1,25 +1,22 @@
 ---
-layout: page
 title: Load Balancing
 description: Load-Balancing
-permalink: /:collection/:path
-weight: 105
 ---
 
-The following article shows how to operate Xtract Universal with load balancing.<br>
+The following article shows how to operate {{ productName }} with load balancing.<br>
 In this context, load balancing means to distribute the network traffic across multiple Windows servers to avoid server overloads. 
 
 ### About Load Balancing
 
 In today's highly interconnected world, a load balancer is a crucial tool for managing traffic effectively. 
-When distributing network traffic caused by Xtract Universal, it is necessary to use a load balancer between different Windows servers that run the Xtract Universal.
+When distributing network traffic caused by {{ productName }}, it is necessary to use a load balancer between different Windows servers that run the {{ productName }}.
 
 Typical use cases for load balancing include:
-- Improved Performance: By distributing network traffic across multiple Xtract Universal servers, a load balancer can significantly improve the performance of your network. 
+- Improved Performance: By distributing network traffic across multiple {{ productName }} servers, a load balancer can significantly improve the performance of your network. 
 This can be especially important for high-traffic applications that require fast and reliable access.
-- Increased Reliability: Load balancing can help increase the reliability of your network by ensuring that no one Xtract Universal server becomes overloaded with traffic. 
+- Increased Reliability: Load balancing can help increase the reliability of your network by ensuring that no one {{ productName }} server becomes overloaded with traffic. 
 This helps to prevent downtime and ensures that your network is always available.
-- Scalability: A load balancer can also help improve the scalability of your network by allowing you to easily add or remove Xtract Universal servers as needed. 
+- Scalability: A load balancer can also help improve the scalability of your network by allowing you to easily add or remove {{ productName }} servers as needed. 
 This can be important for businesses that experience sudden spikes in traffic.
 - Centralized Management: A load balancer allows you to manage multiple servers from a single location. 
 This makes it easier to monitor your network, troubleshoot issues, and make necessary adjustments.
@@ -30,22 +27,22 @@ This increases the amount of extractions that can be run in parallel, see [Onlin
 
 ### Prerequisites
 
-- Every Xtract Universal servers needs a server license, see [Online Help: Licensing](https://help.theobald-software.com/en/xtract-universal/introduction/license).
-- All Xtract Universal servers must share the same configuration folder, e.g. by mapping the configuration folder to an external shared storage. 
+- Every {{ productName }} servers needs a server license, see [Online Help: Licensing](https://help.theobald-software.com/en/xtract-universal/introduction/license).
+- All {{ productName }} servers must share the same configuration folder, e.g. by mapping the configuration folder to an external shared storage. 
 The configuration folder contains the settings for the destinations, extractions, sources, server and users.
-The folder is located in the installation directory of Xtract Universal, e.g., `C:\Program Files\XtractUniversal\config`.
+The folder is located in the installation directory of {{ productName }}, e.g., `C:\Program Files\XtractUniversal\config`.
 For versioning of the configuration folder you can use [git version control](https://kb.theobald-software.com/xtract-universal/deploying-extractions-using-Git-version-control).
-- All Xtract Universal installations must use the same software version to avoid any version compatibility issues.
+- All {{ productName }} installations must use the same software version to avoid any version compatibility issues.
 
 ### The Process
 
-A load balancer setup with two Xtract Universal servers uses the following process when processing requests:
-<!--- Sending a request to a load balancer setup with two Xtract Universal servers triggers the following process: -->
+A load balancer setup with two {{ productName }} servers uses the following process when processing requests:
+<!--- Sending a request to a load balancer setup with two {{ productName }} servers triggers the following process: -->
 
 1. A client sends a web request to the load balancer. The load balancer is the entry point for all incoming web requests, so it's the first component to receive the request.
-2. The load balancer uses a predefined algorithm (e.g., round-robin, least connections, or IP hash) to select the Xtract Universal server to handle the incoming web request.
-3. The load balancer forwards the request to the selected Xtract Universal server.
-4. The selected Xtract Universal server processes the incoming request and sends the response back to the load balancer.
+2. The load balancer uses a predefined algorithm (e.g., round-robin, least connections, or IP hash) to select the {{ productName }} server to handle the incoming web request.
+3. The load balancer forwards the request to the selected {{ productName }} server.
+4. The selected {{ productName }} server processes the incoming request and sends the response back to the load balancer.
 5. The load balancer receives the response from the selected server and forwards the response to the client.
 6. For subsequent web requests, the load balancer repeats this process.
 

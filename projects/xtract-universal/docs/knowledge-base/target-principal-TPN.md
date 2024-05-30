@@ -1,9 +1,6 @@
 ---
-layout: page
-title: How to use target principal field (TPN)
-description: How-to-use-target-principal-field(TPN)
-permalink: /:collection/:path
-weight: 70
+title: Target Principal Field (TPN)
+description: How to use target principal field (TPN)
 ---
 
 Check out our [OnlineHelp](https://help.theobald-software.com/en/xtract-universal/security/user-management) for further information.
@@ -28,11 +25,11 @@ The Target Principal Name must correspond either to the UPN of the user under wh
 ![XU3_Designer_Authentication](../assets/images/xu/articles/XU3_Designer_Authentication.png){:class="img-responsive"}
 
 !!! note
-    The Target Principal Name only needs to be changed in the Xtract Universal Designer login window if the service account of the XU Windows Service has been changed.
+    The Target Principal Name only needs to be changed in the {{ productName }} Designer login window if the service account of the XU Windows Service has been changed.
 
 ### If the service runs under another account
 
-Deviating from the standard, the service can also be executed under a different account e.g. User Principal Name (UPN) or Service Principal Name (SPN).<br> The UPN or SPN of the Xtract Universal Windows service executes the write processes for the target environments in this context. <br> Accordingly, this user must have necessary write permissions for the database.
+Deviating from the standard, the service can also be executed under a different account e.g. User Principal Name (UPN) or Service Principal Name (SPN).<br> The UPN or SPN of the {{ productName }} Windows service executes the write processes for the target environments in this context. <br> Accordingly, this user must have necessary write permissions for the database.
 
 ### User Principal Name (UPN)
 
@@ -50,7 +47,7 @@ An UPN is assigned in the following form:
 ![XU TPN UPN](../assets/images/xu/articles/xu_UPN_steffan@.png){:class="img-responsive"}
 
 !!! note
-    After changing the user context of the Windows service, the UPN or SPN for logging in to the Xtract Universal Server must also be adjusted.
+    After changing the user context of the Windows service, the UPN or SPN for logging in to the {{ productName }} Server must also be adjusted.
 
 ### Service Principal Name (SPN)
 
@@ -69,7 +66,7 @@ When dialing into a remote server where the service is not used in the local env
 ![XU Log on SPN](../assets/images/xu/articles/xu_SPN.png){:class="img-responsive"}
 
 !!! note
-    Xtract Universal can be used as a distributed application on a central application instance in the company network using appropriate UPNs or SPNs. <br> All users connect to this remote server in the company network using the locally installed Xtract Universal Designer.
+    {{ productName }} can be used as a distributed application on a central application instance in the company network using appropriate UPNs or SPNs. <br> All users connect to this remote server in the company network using the locally installed {{ productName }} Designer.
 
 ***********
 #### Related Links

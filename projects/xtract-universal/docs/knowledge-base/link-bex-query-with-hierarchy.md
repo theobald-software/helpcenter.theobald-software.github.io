@@ -1,15 +1,12 @@
 ---
-layout: page
-title: Linking a BEx query with a Hierarchy in Tableau
-description: Migrating from Xtract RS to Xtract Universal (with SSRS destination)
-permalink: /:collection/:path
-weight: 95
+title: Link a BEx query with a Hierarchy in Tableau
+description: Link a BEx query with a Hierarchy in Tableau
 ---
 
 This articles shows how to link BEx Query and BW Hierarchy extractions in the Tableau destination.
 By linking the extractions, you can blend data from both data sources into a single sheet. 
 
-### Prerequisites in Xtract Universal
+### Prerequisites in {{ productName }}
 
 1. Create a BEx Query extraction as described in [Defining a BW Cube Extraction](https://help.theobald-software.com/en/xtract-universal/bwcube/bw-cube-extraction-define). 
 <!--- ![XU-Tableau-BExQuery](../assets/images/xu/articles/XU-Tableau-BExQuery.png){:class="img-responsive"} -->

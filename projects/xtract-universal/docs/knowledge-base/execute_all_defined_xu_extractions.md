@@ -1,18 +1,15 @@
 ---
-layout: page
-title: Execute & Schedule All Xtract Universal Extractions
+title: Execute & Schedule all Extractions
 description: execute_all_defined_xu_extractions 
-permalink: /:collection/:path
-weight: 45
 ---
 
 ### About
 
-The following article shows how to execute and schedule all defined extractions in the Xtract Universal Designer. 
+The following article shows how to execute and schedule all defined extractions in the {{ productName }} Designer. 
 
 The implementation of this scenario is realized via the integration of an SSIS-package. 
 
-The package uses the onboard SSIS tasks to sequentially call all existing extractions in Xtract Universal. 
+The package uses the onboard SSIS tasks to sequentially call all existing extractions in {{ productName }}. 
 
 The execution is implemented via the SQL Server Agent as part of the SSIS-DB.
 
@@ -23,12 +20,12 @@ The following programs and tools are a prerequisite for using the above-mentione
 - Install [SQL Server](https://www.microsoft.com/en-us/sql-server/sql-server-downloads)
 - Install [SQL Server Management Studio (SSMS)](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver15)
 - Configure[ SQL Server Agent](https://docs.microsoft.com/en-us/sql/ssms/agent/configure-sql-server-agent?view=sql-server-ver15)
-- Install [Xtract Universal Server](https://help.theobald-software.com/en/xtract-universal/introduction/installation-and-update)
+- Install [{{ productName }} Server](https://help.theobald-software.com/en/xtract-universal/introduction/installation-and-update)
 - Download SSIS-package [XtractUniversalScheduler.dtsx](/files/xu/XtractUniversalScheduler.dtsx){:download="XtractUniversalScheduler.dtsx"}
 
 
 !!! note
-    The Xtract Universal Server must be installed on the same environment as the SQL-Server / SSIS-DB using the default directory `C:\Program Files\XtractUniversal`.
+    The {{ productName }} Server must be installed on the same environment as the SQL-Server / SSIS-DB using the default directory `C:\Program Files\XtractUniversal`.
 
 ### Step-by-Step Guide
 
@@ -38,12 +35,12 @@ The following programs and tools are a prerequisite for using the above-mentione
 
    | SSIS Parameter | Data type | Sensitive | Required | Example Value | Info |
    ------------ | ------------- | ---------- | ---------| -------- |-------|
-   | XtractUniversalServer| String | False | True | *[ServerName.theobald.local]* | [Xtract Universal Server](https://help.theobald-software.com/en/xtract-universal/getting-started/connect-designer-with-server) | 
+   | XtractUniversalServer| String | False | True | *[ServerName.theobald.local]* | [{{ productName }} Server](https://help.theobald-software.com/en/xtract-universal/getting-started/connect-designer-with-server) | 
    | XtractUniversalServerPort | String | False | True | *8065* | [XU-Server Ports](https://help.theobald-software.com/en/xtract-universal/server/ports) |
 3. Schedule the deployed SSIS package using the integrated SQL Server Agent execution jobs. For more information, see [Microsoft Documentation: Create a SQL-Server Agent Job](https://docs.microsoft.com/en-us/sql/ssms/agent/create-a-job?view=sql-server-ver15).
 ![Create_Job_XtractUniversalScheduler_XtractUniversalScheduler](../assets/images/xu/articles/Create_Job_XtractUniversalScheduler.png){:class="img-responsive"}
 4. Execute the created step of the SQL Server Agent.
-5. Check the correct execution of all defined extractions within the Xtract Universal Designer window.
+5. Check the correct execution of all defined extractions within the {{ productName }} Designer window.
 ![Xtract_Universal_Designer_Status](../assets/images/xu/articles/Xtract_Universal_Designer_Status.png){:class="img-responsive"}
 6. Check the results in the extraction destination(s).
 ![Destination_Results](../assets/images/xu/articles/Destination_Results.png){:class="img-responsive"}

@@ -1,9 +1,6 @@
 ---
-layout: page
 title: Authentication via Azure Active Directory for Azure Storage
 description: Authentication via Azure Active Directory for Azure Storage
-permalink: /:collection/:path
-weight: 6
 ---
 
 The following article shows how to connect to the Azure Storage destination using Authentication via Azure Active Directory.<br>
@@ -11,7 +8,7 @@ The article leads you through the following process:
 
 1. Register a new app with your Azure AD tenant.
 2. Assign access rights for the new app in Azure Storage using the Storage Blob Data Contributor role.
-3. In Xtract Universal, connect to Azure Storage using the Azure Active Directory method.
+3. In {{ productName }}, connect to Azure Storage using the Azure Active Directory method.
 
 ### App Registration
 
@@ -43,11 +40,11 @@ Follow the steps below to assign access rights for the [new Azure app](#app-regi
 5. Click **[Next]** to continue, then click **[Review + assign]** to assign the access rights.<br>
 ![azure-storage-review+assign](../assets/images/xu/articles/azure-storage/azure-storage-review+assign.png){:class="img-responsive"}
 
-### Connect to Azure Storage with Xtract Universal
+### Connect to Azure Storage with {{ productName }}
 
-Follow the steps below to connect Xtract Universal to the Azure Storage destination using Authentication via Azure Active Directory:
+Follow the steps below to connect {{ productName }} to the Azure Storage destination using Authentication via Azure Active Directory:
 
-1. Open Xtract Universal and create a new Azure Storage destination or edit an existing destination.
+1. Open {{ productName }} and create a new Azure Storage destination or edit an existing destination.
 2. Select the connection type **Azure active directory**. 
 3. Enter the name of your storage account.<br>
 ![azure-destination-in-xu](../assets/images/xu/articles/azure-storage/azure-destination-in-xu.png){:class="img-responsive"}

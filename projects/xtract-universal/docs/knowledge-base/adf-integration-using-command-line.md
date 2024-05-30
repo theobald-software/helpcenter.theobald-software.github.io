@@ -4,16 +4,16 @@ description: automation-of-xu-data-extracts-with-adf
 author: Christoph Schuler, Valerie Schipka
 ---
 
-The following article describes a scenario that uses Azure Data Factory (ADF) to trigger and automate SAP data movements using Xtract Universal's [command line tool](https://help.theobald-software.com/en/xtract-universal/execute-and-automate-extractions/call-via-commandline).
+The following article describes a scenario that uses Azure Data Factory (ADF) to trigger and automate SAP data movements using {{ productName }}'s [command line tool](https://help.theobald-software.com/en/xtract-universal/execute-and-automate-extractions/call-via-commandline).
 This article targets customers that utilize ADF as a platform for orchestrating data movement and transformation. <br>
 
 !!! note
     The depicted scenario is no best practice or recommendation.
-    The following is a suggestion of how an orchestration of Xtract Universal extractions from ADF can look like, see also [Integration in Azure Data Factory using Webservices](adf-integration-using-webservices).
+    The following is a suggestion of how an orchestration of {{ productName }} extractions from ADF can look like, see also [Integration in Azure Data Factory using Webservices](adf-integration-using-webservices).
 
 ### Prerequisites
 
-- Xtract Universal is installed on a cloud VM and is accessible remotely over http(s).
+- {{ productName }} is installed on a cloud VM and is accessible remotely over http(s).
 - The extraction uses a [push-destination](https://help.theobald-software.com/en/xtract-universal/destinations#pull-and-push-destinations), e.g., Azure Blob Storage or Azure SQL Server.<br> 
 - The extraction runs successfully when called from a remote machine via commandline, see [Execute and Automate - Call via Commandline](https://help.theobald-software.com/en/xtract-universal/execute-and-automate-extractions/call-via-commandline).
 This ensures that the XU server is reachable. 
@@ -49,10 +49,10 @@ For information on how to create a pool, see [Microsoft Documentation: Use a man
 
 Follow the steps below to make the command line tool xu.exe available in Azure:
 
-1. Create a container for the Xtract Universal commandline tool in the Azure storage account associated with the Azure Batch account.
+1. Create a container for the {{ productName }} commandline tool in the Azure storage account associated with the Azure Batch account.
 In the depicted example, the container is named ‘xuexe’.<br>
 ![XU data extracts with adf 07](../assets/images/xu/articles/xu-data-extracts-with-adf_07.jpg){:class="img-responsive"}
-2. Upload the files xu.exe and xu.exe.config from the Xtract Universal server installation to the Azure storage account. The files are located in `C:\Program Files\XtractUniversal`.
+2. Upload the files xu.exe and xu.exe.config from the {{ productName }} server installation to the Azure storage account. The files are located in `C:\Program Files\XtractUniversal`.
 
 !!! note
     Do not confuse the xu.exe.config file with the xu.config file.
@@ -88,7 +88,8 @@ When the activity is finished, review the output of the activity in the *Output*
 If the exitcode from xu.exe is 0, the data extraction was successful and the following folders / files are available in the Azure storage account:<br>
 - the storage account contains a folder **adfjobs**.<br>
 - for every pipeline execution, there is a subfolder with log information.<br>
-- the files **stderr.txt** and **stdout.txt** contain the output from xu.exe.<br>
+- the files **stderr.txt** and **stdout.txt** contain the output from xu.exe.
+
 ![XU data extracts with adf 12](../assets/images/xu/articles/xu-data-extracts-with-adf_12.jpg){:class="img-responsive"} 
 
 The pipeline can be run in debug mode or can be triggered via a scheduler. 

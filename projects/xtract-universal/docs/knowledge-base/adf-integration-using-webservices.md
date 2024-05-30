@@ -5,18 +5,18 @@ author: Yogen Weinreich, Valerie Schipka
 ---
 
 
-The following article describes a scenario that uses Azure Data Factory (ADF) to trigger and automate SAP data movements using Xtract Universal's [webservices](https://help.theobald-software.com/en/xtract-universal/execute-and-automate-extractions/call-via-webservice). <br>
+The following article describes a scenario that uses Azure Data Factory (ADF) to trigger and automate SAP data movements using {{ productName }}'s [webservices](https://help.theobald-software.com/en/xtract-universal/execute-and-automate-extractions/call-via-webservice). <br>
 This article targets customers that utilize ADF as a platform for orchestrating data movement and transformation. <br>
 
 !!! note
     The depicted scenario is no best practice or recommendation.
-    The following is a suggestion of how an orchestration of Xtract Universal extractions from ADF can look like, see also [Integration in Azure Data Factory using Commandline](adf-integration-using-command-line).
+    The following is a suggestion of how an orchestration of {{ productName }} extractions from ADF can look like, see also [Integration in Azure Data Factory using Commandline](adf-integration-using-command-line).
 
 
 ### Prerequisites
 
-- A [self-hosted Integration runtime](https://docs.microsoft.com/EN-US/azure/data-factory/create-self-hosted-integration-runtime#create-a-self-hosted-ir-via-azure-data-factory-ui) is set up on the server Xtract Universal runs on. 
-This ensures that Xtract Universal's web server is accessible from ADF over http(s).   
+- A [self-hosted Integration runtime](https://docs.microsoft.com/EN-US/azure/data-factory/create-self-hosted-integration-runtime#create-a-self-hosted-ir-via-azure-data-factory-ui) is set up on the server {{ productName }} runs on. 
+This ensures that {{ productName }}'s web server is accessible from ADF over http(s).   
 - The extraction uses a [push-destination](https://help.theobald-software.com/en/xtract-universal/destinations#pull-and-push-destinations), e.g., Azure Blob Storage or Azure SQL Server.<br> 
 - The extraction runs successfully when called from a web browser, see [Execute and Automate - Call via Webservice](https://help.theobald-software.com/en/xtract-universal/execute-and-automate-extractions/call-via-webservice).
 - Access to Azure Data Factory.
@@ -26,8 +26,8 @@ This ensures that Xtract Universal's web server is accessible from ADF over http
 
 The depicted scenario builds upon the following basic principles:
 
-- Xtract Universal offers a [Web-API](https://help.theobald-software.com/en/xtract-universal/web-api) through which various actions can be performed via http(s) calls. The depicted scenario uses the web API to:
-- Microsoft's self-hosted Integration runtime enables access to on-prem resources, such as Xtract Universal, from ADF.
+- {{ productName }} offers a [Web-API](https://help.theobald-software.com/en/xtract-universal/web-api) through which various actions can be performed via http(s) calls. The depicted scenario uses the web API to:
+- Microsoft's self-hosted Integration runtime enables access to on-prem resources, such as {{ productName }}, from ADF.
 - Microsoft's ADF offers a *Web Activity* that allows calling resources via http(s) and a self-hosted Integration runtime.
 
 The depicted scenario uses two ADF pipelines to run extractions from ADF:
@@ -52,7 +52,7 @@ The pipeline functions as a standalone solution. It can be run in debug mode or 
 ### Master Pipeline
 
 Follow the steps below to create a master pipeline that executes the child pipeline multiple times, each time for a different extraction.
-This allows automatic iteration through all extractions defined in Xtract Universal. 
+This allows automatic iteration through all extractions defined in {{ productName }}. 
 
 1. Query a list of extractions :number-1: using a web activity, see [Web-API - Get Extraction Details](https://help.theobald-software.com/en/xtract-universal/web-api#get-extraction-details).<br>
 ![XU_ADF_global_parameter](../assets/images/xu/articles/xu_ADF_2_Master_pipeline.png)
@@ -71,7 +71,7 @@ The following parameters and variables are used in the depicted scenario:
 
 | Parameter / Variable| Name                        | Data Type | Defined in      | Description                                                                                                                                                                                      |
 |--------------------|------------------------------|-----------|-----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Parameter          | p_global_XU_HOST             | String    | global          | This parameter contains the base URL of the Xtract Universal webserver, here: `https://MyOnPremXuServer.theobald.local:8165`. The parameter is used in every Web Activity.                       |
+| Parameter          | p_global_XU_HOST             | String    | global          | This parameter contains the base URL of the {{ productName }} webserver, here: `https://MyOnPremXuServer.theobald.local:8165`. The parameter is used in every Web Activity.                       |
 | Variable           | v_XU_extractions_array       | Array     | Master pipeline | This variable stores the list of XU extractions returned by *Web* activity *Get_List_of_XU_extractions*. The variable's value is set in the *Set variable* activity *Set variable_extraction array*. |
 | Parameter          | p_extractionName_from_Master | String    | Child pipeline  | This parameter takes on the value (extraction name) of the current iteration *For Each* activity *ForEach extraction in v_extraction array. As a default name, you assign a name of an extraction. This allows running the Child pipeline w/o being triggered from the Master pipeline.                                                         |
 | Variable           | v_TIMESTAMP                  | String    | Child pipeline  | This variable stores the extraction's timestamp returned by *Web* activity *XU_START_JOB*. The variable’s value is set in the *Set variable* activity *TIMESTAMP*. The variable is later used in *Web* activities *CHECK_XU_JOB_STATUS* and *XU_Get_Extraction_Log*.         |

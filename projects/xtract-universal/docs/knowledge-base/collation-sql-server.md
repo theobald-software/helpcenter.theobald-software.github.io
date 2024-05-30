@@ -1,13 +1,10 @@
 ---
-layout: page
 title: Collation Settings for MSSQL Server Destination
 description: example of how to append the collation for a specified column
-permalink: /:collection/:path
-weight: 20
 ---
 
 The following article describes a common problem that occurs when pushing SAP data into an SQL server database when collation is not set case-sensitive.
-The depicted example shows how to customize the drop & create SQL server statement within Xtract Universal destination settings.
+The depicted example shows how to customize the drop & create SQL server statement within {{ productName }} destination settings.
 
 ### Collation SQL Server
 
@@ -28,7 +25,7 @@ Accent-sensitive (_AS) | Distinguishes between accented and unaccented character
 Check the complete list of [usable collations](https://docs.microsoft.com/en-us/sql/relational-databases/collations/collation-and-unicode-support?redirectedfrom=MSDN&view=sql-server-ver15#Collation_Defn). 
 
 For more detailed information, see [Microsoft site](https://docs.microsoft.com/en-us/sql/relational-databases/collations/collation-and-unicode-support?redirectedfrom=MSDN&view=sql-server-ver15). 
-The depicted example shows the column collation within Xtract Universal with [Custom SQL](https://help.theobald-software.com/en/xtract-universal/destinations/microsoft-sql-server#custom-sql-1) statement.
+The depicted example shows the column collation within {{ productName }} with [Custom SQL](https://help.theobald-software.com/en/xtract-universal/destinations/microsoft-sql-server#custom-sql-1) statement.
 
 ### SQL Server Management Studio (SSMS)
 
@@ -41,7 +38,7 @@ _AI | accent-insensitive
 
 ![default_collation_statement](../assets/images/xu/articles/collation_example_CI_AI_xu_fas_DB.png){:class="img-responsive"}
 
-### Xtract Universal
+### {{ productName }}
 
 We want to extract the SAP table *MAKT* from ECC:
 
@@ -62,7 +59,7 @@ The destination following error occurs during the extration.
 
 ### Workaround
 
-As explained above Xtract Universal isn't able to push the data of 'MAKT' into MSSQL server due to used collation statement of the database. 
+As explained above {{ productName }} isn't able to push the data of 'MAKT' into MSSQL server due to used collation statement of the database. 
 In this case, the user has to customize the SQL statement *Preparation* of the MSSQL destination settings.
 
 1. Change the default value *Drop & Create* to *Custom SQL* and click **[Edit SQL]**.

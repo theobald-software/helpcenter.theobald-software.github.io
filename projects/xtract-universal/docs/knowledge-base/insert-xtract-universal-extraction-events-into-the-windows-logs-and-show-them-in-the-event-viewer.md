@@ -1,11 +1,9 @@
 ---
-layout: page
-title: How to insert xtract universal extraction events into the windows logs
+title: Insert Extraction Events into Windows Logs
 description: how-to-insert-xtract-universal-extraction-events-into-the-windows-logs-and-show-them-in-the-event-viewer
-permalink: /:collection/:path
-weight: 55
 ---
-You can use the Windows Event Viewer to show events from your extractions of Xtract Universal. 
+
+You can use the Windows Event Viewer to show events from your extractions of {{ productName }}. 
 
 To accomplish this, you need a batch file, which inserts extraction events into the windows log. 
 

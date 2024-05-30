@@ -1,16 +1,13 @@
 ---
-layout: page
 title: Log Access via Web Service
 description: Log Access via Web Service
-permalink: /:collection/:path
-weight: 105
 ---
 
-The Xtract Universal server allows accessing meta data and logging information through web calls. 
+The {{ productName }} server allows accessing meta data and logging information through web calls. 
 
 !!! note
-    This article uses the syntax of the Xtract Universal Webserver before version 6.0.0. and before version 6.3.0.
-    When using the latest Xtract Universal version, refer to [Online Help: Log Access via Web Service](https://help.theobald-software.com/en/xtract-universal/logging/logging-access-via-http).
+    This article uses the syntax of the {{ productName }} Webserver before version 6.0.0. and before version 6.3.0.
+    When using the latest {{ productName }} version, refer to [Online Help: Log Access via Web Service](https://help.theobald-software.com/en/xtract-universal/logging/logging-access-via-http).
 
 ## Basic URL
 

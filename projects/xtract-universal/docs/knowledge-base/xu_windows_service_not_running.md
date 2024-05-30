@@ -1,11 +1,8 @@
 ---
-layout: page
 title: Xtract Universal Server Troubleshooting
 description: Xtract Universal Server Troubleshooting
-permalink: /:collection/:path
-weight: 170
 ---
-The Xtract Universal (XU) server is a standard Windows service that runs under the Local System Account by default. 
+The {{ productName }} (XU) server is a standard Windows service that runs under the Local System Account by default. 
 
 ![XU service](../assets/images/xu/articles/xu_service.png){:class="img-responsive"}
 
@@ -21,7 +18,7 @@ The Target Principal must correspond either to the UPN of the user under which t
 ![XU3_Designer_Authentication](../assets/images/xu/articles/XU3_Designer_Authentication.png){:class="img-responsive"}
 
 !!! note
-    The Target Principal only needs to be changed in the Xtract Universal Designer login window if the service account of the XU Windows Service has been changed.
+    The Target Principal only needs to be changed in the {{ productName }} Designer login window if the service account of the XU Windows Service has been changed.
 
 ### Windows service does not start
 
@@ -45,12 +42,12 @@ An UPN is assigned in the following form:
 |Target Principal | `[AD-user]@[domain]`| steffan@theobald.local |
 
 !!! note
-    After changing the user context of the Windows service, the UPN or SPN for logging in to the Xtract Universal Server must also be adjusted.
+    After changing the user context of the Windows service, the UPN or SPN for logging in to the {{ productName }} Server must also be adjusted.
 
 To configure the service to use with UPN, do the following steps:
 
 1. Open Windows Services (Local).
-2. Selection of the Xtract Universal service.
+2. Selection of the {{ productName }} service.
 ![XU service](../assets/images/xu/articles/xu_service.png){:class="img-responsive"}
 3. Right click to open properties.
 4. Select the Log-on tab and switch to 'This Account'.
@@ -59,7 +56,7 @@ To configure the service to use with UPN, do the following steps:
 ![Search UPN](../assets/images/xu/articles/select_user_or_service_account.png){:class="img-responsive"}
 8. Select an existing UPN or SPN and confirm with **[OK]**.
 ![XU Log On UPN](../assets/images/xu/articles/log_on_diesen_account.png){:class="img-responsive"}
-9. Apply the changes by restarting the Xtract Universal service.
+9. Apply the changes by restarting the {{ productName }} service.
 10. Adjust the UPN in the Target Principal field when logging on to the XU service.
 ![XU TPN UPN](../assets/images/xu/articles/xu_UPN_steffan@.png){:class="img-responsive"}
 
