@@ -1,10 +1,10 @@
 ---
 title: Integrate SAP Data into a Snowflake Data Warehouse
 description: integrating-sap-data-into-a-snowflake-data-warehouse
+author: Christian Tauchmann
 ---
 
-Theobald Software has partnered with Snowflake to build a showcase for integrating SAP ERP data into a Snowflake cloud data warehouse. 
-The solution described in this article is based on an actual customer use case.
+The following article describes a customer use case, where Theobald Software has partnered with Snowflake to build a showcase for integrating SAP ERP data into a Snowflake cloud data warehouse. 
 
 ### Customer Need 
 
@@ -16,10 +16,11 @@ The data load process had to be fast and support incremental data loads, to ulti
 
 ### SAP Data Extraction
 
-The customer used our [{{ productName }}](https://theobald-software.com/en/xtract-universal/) product to extract data from their SAP ECC system. 
+The customer used our [Xtract Universal](https://theobald-software.com/en/xtract-universal/) product to extract data from their SAP ECC system. 
 Incremental data feeds are enabled with the built-in Table and DeltaQ components in {{ productName }}. 
 The Table component is easy to configure and delivers performant data extraction from even the largest SAP tables. 
 The DeltaQ component provides reliable delta feeds, based on SAP’s native DataSource extractors.
+
 ![sap_snowflake](../assets/images/xu/articles/sap_snowflake.png){:class="img-responsive"}
 
 ### Cloud Storage 
@@ -42,5 +43,5 @@ This can also work in conjunction with an existing ETL tool for centralized moni
 
 #### Related Links
 
-- [{{ productName }} Product Information](https://theobald-software.com/en/xtract-universal/) 
+- [Xtract Universal Product Information](https://theobald-software.com/en/xtract-universal/) 
 - [Online Help: Snowflake Destination](https://help.theobald-software.com/en/xtract-universal/destinations/snowflake)

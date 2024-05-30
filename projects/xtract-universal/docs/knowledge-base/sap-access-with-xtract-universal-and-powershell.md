@@ -3,39 +3,45 @@ title: SAP Access with Xtract Universal and Powershell
 description: Mastering SAP Access with Xtract Universal and Powershell
 ---
 
-This article showcases how to use PowerShell scripts in combination with {{ productName }}.
+This article contains examples of PowerShell scripts that query information from {{ productName }} and run extractions.<br>
+The following sample scripts are available:
 
-{{ productName }} is an SAP connector that enables the extraction of save data streams from SAP ERP and BW objects to different target systems. 
-{{ productName }} offers a command line tool that can be used to automate and schedule SAP extractions and to integrate different ETL Tools.
+- [Run an Extraction](#run-an-extraction)
+- [Run an Extraction with a Parameter](#run-an-extraction-with-a-parameter)
+- [Run an Extraction with a Parameter using PowerShell Variables](#run-an-extraction-with-a-parameter-using-powershell-variables)
+- [Run an Extraction with Multiple Parameters](#run-an-extraction-with-multiple-parameters)
+- [Create a Function to Run an Extraction](#create-a-function-to-run-an-extraction)
+- [Loop an Array with Different Parameter Values](#loop-an-array-with-different-parameter-values)
+- [Run multiple Extractions in Sequence](#run-multiple-extractions-in-sequence)
+- [Run multiple Extractions in Parallel](#run-multiple-extractions-in-parallel)
+- [Get a List of Defined Extractions](#get-a-list-of-defined-extractions)
+- [Get the Latest Log of Extractions](#get-the-latest-log-of-extractions)
+- [Get the Metadata of Extractions](#get-the-metadata-of-extractions)
 
-Powershell is a powerful task automation and configuration framework from Microsoft that is based on the .NET Framework.
-It includes a command-line shell and a scripting language.
-
-
-### How to run an extraction
+### Run an Extraction
 
 Execute an {{ productName }} extraction using the command tool xu.exe in a PowerShell script as shown below:
 
-```shell
+```shell title="Run an Extraction"
 # execute an {{ productName }} extraction using the command tool xu.exe in a PowerShell script
 # 2>&1 redirects standard error (the 2) to the same place as standard output (the 1)
 &'{{ installationDir }}\xu.exe' -s "localhost" -p "8065" -n "SAPSalesCube" 1>$null 2>1
 ```
 
-### How to run an extraction with a parameter
+### Run an Extraction with a Parameter
 
 Here is an example of an extraction with a variable *CalendarMonth* that needs a value in the format YYYYMM, e.g. 201712:
 
-```shell
+```shell title="Run an Extraction with a Parameter"
 # the extraction has a variable CalendarMonth that needs a value in the format YYYYMM, e.g. 201712
 &'{{ installationDir }}\xu.exe' -s "localhost" -p "8065" -n "SAPSalesCube" -o CalendarMonth='200401' 1>$null 2>&1
 ```
 
-### How to run an extraction with a parameter using PowerShell variables
+### Run an Extraction with a Parameter using PowerShell Variables
 
 Here is an example of an extraction with a parameter using a PowerShell variable:
 
-```shell
+```shell title="Run an Extraction with a Parameter using PowerShell Variables"
 # set the path to the installation folder
 $XUCmd = '{{ installationDir }}\xu.exe'
 # XU server &amp; port
@@ -52,20 +58,20 @@ $myCalendarMonth = (Get-Date -format "yyyyMM")
 &$XUCmd -s $XUServer -p $XUPort -n $XUExtraction -o CalendarMonth=$myCalendarMonth 1>$null 2>&1
 ```
 
-### How to run an extraction with multiple parameters
+### Run an Extraction with Multiple Parameters
 
 Here is an example of an extraction with multiple parameters:
 
-```shell
+```shell title="Run an Extraction with Multiple Parameters"
 # run an extraction with multiple parameters
 &$XUCmd -s $XUServer -p $XUPort -n $XUExtraction -o CalendarMonth=$myCalendarMonth -o clearBuffer=true 1>$null 2>&1
 ```
 
-### How to create a function to run an extraction
+### Create a Function to Run an Extraction
 
 Here is an example of a function that runs an extraction, checks the exit code and writes an output:
 
-```shell
+```shell title="Create a Function to Run an Extraction"
 # Function to run an XU extraction
 Function XURun($XUCmd, $XUServer, $XUPort, $XUExtraction, $XUParameters)
 {
@@ -118,22 +124,22 @@ $XUResult = XURun -XUCmd $XUCmd -XUServer $XUServer -XUPort $XUPort -XUExtractio
 ```
 
 
-### How to loop an array with different parameter values
+### Loop an Array with Different Parameter Values
 
 The depicted example uses a loop to run an extraction with different parameter values. The parameters values are defined in an array.
 
-```shell
+```shell title="Loop an Array with Different Parameter Values"
 $Months = @("200401","200402","200403")
 foreach($Month in $Months){
 XURun -XUCmd $XUCmd -XUServer $XUServer -XUPort $XUPort -XUExtraction $XUExtraction -XUParameters CalendarMonth=$Month
 }
 ```
 
-### How to run multiple extractions in sequence
+### Run multiple Extractions in Sequence
 
 The depicted example uses a loop tu run multiple extractions in sequence. The extraction names are defined in an array.
 
-```shell
+```shell title="Run multiple Extractions in Sequence"
 Function XURun-Multi ($XUCmd, $XUServer, $XUPort, $XUExtractions,$XUParameters){
 
 foreach($XUExtraction in $XUExtractions){
@@ -147,12 +153,12 @@ $XUResult = XURUN-Multi -XUCmd $XUCmd -XUServer $XUServer -XUPort $XUPort -XUExt
 ```
 
 
-### How to run multiple extractions parallely
+### Run multiple Extractions in Parallel
 
 There are multiple ways to run parallel commands in PowerShell. One of them is using [PowerShell Workflow](https://docs.microsoft.com/en-us/system-center/sma/overview-powershell-workflows). 
 Here is an example of using a ThrottleLimit to limit the number of parallel running extractions.
 
-```shell
+```shell title="Run multiple Extractions in Parallel"
 # Define Workflow 1
 # Run multiple Extractions in parallell using powershell workflow
 Workflow XURun-Parallel { param ($XUCmd, $XUServer, $XUPort, $XUExtractions, $XUParameters, $ThrottleLimit)
@@ -220,11 +226,10 @@ $ThrottleLimit = 4
 XURun-Parallel2 -XUCmd $XUCmd -XUServer $XUServer -XUPort $XUPort -XUExtractions $XUExtractions -XUParameters $XUParamters -ThrottleLimit $ThrottleLimit
 ```
 
-### How to get a list of defined extractions
+### Get a List of Defined Extractions
 
 {{ productName }} offers an HTTP API to access the defined extractions, their metadata and log, the server log and further information.
-
-The following function gets the list of extractions from the repository. The output will have the following format for each extraction.
+The following function queries the list of extractions from the repository. The output will have the following format for each extraction.
 
 *Name : BWCubeFIGL*<br>
 *Type : BWCube*<br>
@@ -235,7 +240,7 @@ The following function gets the list of extractions from the repository. The ou
 *LastChange : 2018-02-16_12:18:29.475*<br>
 *Created : 2018-02-14_11:25:47.718*<br>
 
-```shell
+```shell title="Get a List of Defined Extractions"
 <pre>Function XUGet-Extractions($XUServer, $XUPort){
 $XUExtractions= (Invoke-WebRequest "http://$XUServer`:$XUPort").Content | ConvertFrom-CSV
 return $XUExtractions
@@ -255,11 +260,11 @@ $XUExtractionNames = XUGet-ExtractionNames $XUServer $XUPort
 XURun-Parallel2 -XUCmd $XUCmd -XUServer $XUServer -XUPort $XUPort -XUExtractions $XUExtractionNames
 ```
 
-### How to get the latest log of the extractions
+### Get the Latest Log of Extractions
 
 The following script gets the latest log of the extractions and writes a colorful output depending on the log status.
 
-```shell
+```shell title="Get the Latest Log of Extractions"
 Function XUGet-Log($XUServer, $XUPort){
 $XUExtractionNames = XUGet-ExtractionNames $XUServer $XUPort
 $XULog = @{}
@@ -282,11 +287,10 @@ return $XULog
 $XULog = XUGet-Log $XUServer $XUPort
 ```
 
-### How the get the metadata of the extractions
+### Get the Metadata of Extractions
 
 This function gets the metadata of the extractions, including field names, data types etc.
-
-The output will have the following format for each extraction:
+The output has the following format for each extraction:
 
 *POSITION,NAME,DESC,TYPE,LENGTH,DECIMALS*<br>
 *0,WERKS,Plant,C,4,0*<br>
@@ -294,7 +298,7 @@ The output will have the following format for each extraction:
 *2,KUNNR,Customer number of plant,C,10,0*<br>
 *3,NAME2,Name 2,C,30,0*<br>
 
-```shell
+```shell title="Get the Metadata of Extractions"
 # Get Metadata
 # http://[host]:[port]/metadata/?name=[extractionName]
 Function XUGet-Metadata($XUServer, $XUPort){
@@ -312,9 +316,10 @@ return $XUMetadata
 $XUMetadata = XUGet-Metadata $XUServer $XUPort
 ```
 
+****
 #### Related Links:
 - [Get all scripts from GitHub](https://github.com/KhoderElzein/theobaldsoftware/blob/master/XURunScript.ps1)
 - [Call extractions from command line](https://help.theobald-software.com/en/xtract-universal/execute-and-automate-extractions/call-via-commandline)
 - [Metadata access via HTTP-JSON](https://help.theobald-software.com/en/xtract-universal/advanced-techniques/metadata-access-via-http-json)
 - [Log Access via Web Service](https://help.theobald-software.com/en/xtract-universal/logging/logging-access-via-http)
-- [Microsoft Powershell Documentation](https://docs.microsoft.com/en-us/powershell/)
+- [Microsoft PowerShell Documentation](https://docs.microsoft.com/en-us/powershell/)

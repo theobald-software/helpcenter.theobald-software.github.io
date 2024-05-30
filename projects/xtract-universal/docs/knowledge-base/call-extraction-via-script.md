@@ -6,6 +6,7 @@ description: Call Extraction via Script
 This section shows how to call an extraction from a [Windows script (.bat)](./call-extraction-via-script#call-via-windows-script-bat) or [PowerShell script](./call-extraction-via-script#call-via-powershell-script).
 
 
+
 ### Call via Windows script (.bat)
 
 Follow the steps below to run an extraction using a Windows script that calls the command line tool *xu.exe*.
@@ -161,6 +162,8 @@ Other [Return Codes](https://help.theobald-software.com/en/xtract-universal/exec
 	write-host $errorMessage
 	}
 	```
+
+For more examples on how to use PowerShell scripts with {{ productName }}, see [SAP Access with Xtract Universal and Powershell](sap-access-with-xtract-universal-and-powershell.md)
 
 ****
 #### Related Links:

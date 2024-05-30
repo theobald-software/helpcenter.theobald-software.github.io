@@ -53,6 +53,7 @@ This means you have multiple servers with identical configurations and applicati
 The load balancer forwards incoming requests to the active server. If the active server fails, the load balancer will automatically switch to one of the passive servers.
 The goal is to provide redundancy and ensure high availability and reliability of critical applications and services.
 
+****
 #### Related Links:
 - [Deploying Extractions Using Git Version Control](https://kb.theobald-software.com/xtract-universal/deploying-extractions-using-Git-version-control)
 - [Online Help: Installation and Update - Program Directory Files](https://help.theobald-software.com/en/xtract-universal/introduction/installation-and-update#program-directory-files)
