@@ -15,8 +15,7 @@ The depicted sample uses a service that reads material data from the SAP table M
 
 ### Setup in Copilot Studio & Power Automate
 
-1. Log into [Microsoft Copilot Studio](https://copilotstudio.microsoft.com/) and create a new copilot (**Create > New copilot > Create**). <br>
-For more information on how to create a copilot, see [Microsoft Documentation: Create a copilot](https://learn.microsoft.com/en-us/microsoft-copilot-studio/fundamentals-get-started?tabs=web#create-a-copilot).
+1. Log into [Microsoft Copilot Studio](https://copilotstudio.microsoft.com/) and create a new copilot, see [Microsoft Documentation: Create a copilot](https://learn.microsoft.com/en-us/microsoft-copilot-studio/fundamentals-get-started?tabs=web#create-a-copilot).
 2. Open the *Actions* tab and click **[+ Add an action]** :number-1:. The menu "Step 1 of 3: Choose an action" opens.<br>
 ![copilot-new-action](../assets/images/yunio/articles/copilot-new-action.png){:class="img-responsive" }
 3. Click **[Create a new flow]** :number-2:. A new browser tab with a Power Automate workflow opens.<br>
