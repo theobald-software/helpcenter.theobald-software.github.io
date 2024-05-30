@@ -11,16 +11,6 @@ hide:
 
 </div>
 
-### :products-xtract-is: General
-
-<div class="mdx-columns" markdown>
-
-- [Determine the Azure SSIS-IR Cluster ID](determine-the-azure-cluster-ID.md)
-- [Execute SSIS Packages between Cloud Data Stores and a Private Network Data Storage](execute-ssis-packages-between-cloud-data-stores-and-a-private-network-data-storage.md)
-
-</div>
-
----
 
 ### :simple-sap: SAP Connection
 
@@ -41,6 +31,20 @@ hide:
 ---
 
 
+### :material-cloud-key: SSO Scenarios
+
+<div class="mdx-columns" markdown>
+
+- [SSO with Client Certificates](sso-with-client-certificates.md)
+- [SSO with External ID](sso-with-external-id.md)
+- [SSO with Kerberos SNC](sso-with-kerberos-snc.md)
+- [SSO with Logon Ticket](sso-with-logon-ticket.md)
+
+</div>
+
+---
+
+
 ### :component-bapi: Xtract BAPI
 
 <div class="mdx-columns" markdown>
@@ -51,6 +55,7 @@ hide:
 </div>
 
 ---
+
 
 ### :component-deltaq: Xtract DeltaQ
 
