@@ -52,7 +52,7 @@ Follow the steps below to make the command line tool xu.exe available in Azure:
 1. Create a container for the {{ productName }} commandline tool in the Azure storage account associated with the Azure Batch account.
 In the depicted example, the container is named ‘xuexe’.<br>
 ![XU data extracts with adf 07](../assets/images/xu/articles/xu-data-extracts-with-adf_07.jpg){:class="img-responsive"}
-2. Upload the files xu.exe and xu.exe.config from the {{ productName }} server installation to the Azure storage account. The files are located in `C:\Program Files\XtractUniversal`.
+2. Upload the files xu.exe and xu.exe.config from the {{ productName }} server installation to the Azure storage account. The files are located in `{{ installationDir }}`.
 
 !!! note
     Do not confuse the xu.exe.config file with the xu.config file.

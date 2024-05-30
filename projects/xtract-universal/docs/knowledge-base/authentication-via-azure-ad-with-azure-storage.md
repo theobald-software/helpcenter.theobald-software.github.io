@@ -40,7 +40,7 @@ Follow the steps below to assign access rights for the [new Azure app](#app-regi
 5. Click **[Next]** to continue, then click **[Review + assign]** to assign the access rights.<br>
 ![azure-storage-review+assign](../assets/images/xu/articles/azure-storage/azure-storage-review+assign.png){:class="img-responsive"}
 
-### Connect to Azure Storage with {{ productName }}
+### Connect to Azure Storage
 
 Follow the steps below to connect {{ productName }} to the Azure Storage destination using Authentication via Azure Active Directory:
 

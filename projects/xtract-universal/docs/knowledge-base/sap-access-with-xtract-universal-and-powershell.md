@@ -19,7 +19,7 @@ Execute an {{ productName }} extraction using the command tool xu.exe in a Power
 ```shell
 # execute an {{ productName }} extraction using the command tool xu.exe in a PowerShell script
 # 2>&1 redirects standard error (the 2) to the same place as standard output (the 1)
-&'C:\Program Files\XtractUniversal\xu.exe' -s "localhost" -p "8065" -n "SAPSalesCube" 1>$null 2>1
+&'{{ installationDir }}\xu.exe' -s "localhost" -p "8065" -n "SAPSalesCube" 1>$null 2>1
 ```
 
 ### How to run an extraction with a parameter
@@ -28,7 +28,7 @@ Here is an example of an extraction with a variable *CalendarMonth* that needs a
 
 ```shell
 # the extraction has a variable CalendarMonth that needs a value in the format YYYYMM, e.g. 201712
-&'C:\Program Files\XtractUniversal\xu.exe' -s "localhost" -p "8065" -n "SAPSalesCube" -o CalendarMonth='200401' 1>$null 2>&1
+&'{{ installationDir }}\xu.exe' -s "localhost" -p "8065" -n "SAPSalesCube" -o CalendarMonth='200401' 1>$null 2>&1
 ```
 
 ### How to run an extraction with a parameter using PowerShell variables
@@ -37,7 +37,7 @@ Here is an example of an extraction with a parameter using a PowerShell variable
 
 ```shell
 # set the path to the installation folder
-$XUCmd = 'C:\Program Files\XtractUniversal\xu.exe'
+$XUCmd = '{{ installationDir }}\xu.exe'
 # XU server &amp; port
 $XUServer = "localhost"
 $XUPort = "8065"

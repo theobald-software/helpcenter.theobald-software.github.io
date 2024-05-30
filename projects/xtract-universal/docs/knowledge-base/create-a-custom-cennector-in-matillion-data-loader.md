@@ -3,7 +3,7 @@ title: SAP Integration with Matillion Data Loader
 description: Creating a custom Connector in Matillion Data Loader 
 ---
 
-The following article shows how to create a custom connector in Matillion Data Loader that loads SAP data via {{ productName }} into Snowflake.<br>
+The following article shows how to create a custom connector in Matillion Data Loader that loads SAP data via {{ productName }} into Snowflake.
 Matillion Data Loader is a cloud based data loading platform that extracts data from popular sources and loads it into cloud destinations, see [Official Website: Matillion Data Loader](https://www.matillion.com/products/data-loader/).
 
 ### Prerequisites
@@ -26,15 +26,16 @@ To extract SAP data via {{ productName }} you must define a custom connector tha
 1. Open the website [https://create-connector.matillion.com/](https://create-connector.matillion.com/) and log in to create the custom connector.
 2. Click **[Add Connector]** :number-1: to create a new custom connector.<br>
 ![matillion-add-connector](../assets/images/xu/articles/matillion-add-connector.png){:class="img-responsive"}
-3. Click on the ![edit](../assets/images/xu/articles/icons/edit2.png) icon to change the name of the connector :number-2:.
-3. Copy the URL the extraction into the designated input field and select `GET` as the http method :number-3:.<br>
-The URL has the following format: `<Protocol>://<HOST or IP address>:<Port>/?name=<Name of the Extraction>{&<parameter_i>=<value_i>}`<br>
+3. Click :pen-button: to change the name of the connector :number-2:.
+3. Copy the URL the extraction into the designated input field and select `GET` as the http method :number-3:. 
+The URL has the following format: <br>
+`<Protocol>://<HOST or IP address>:<Port>/?name=<Name of the Extraction>{&<parameter_i>=<value_i>}`<br>
 Example: the URL `https://6606-185-114-89-133.eu.ngrok.io/?name=kna1` calls the extraction "kna1" via ngrock.
 For more information about calling extractions via web services, see [Online Help: Call via Webservice](https://help.theobald-software.com/en/xtract-universal/execute-and-automate-extractions/call-via-webservice).<br>
 ![matillion-test-connector](../assets/images/xu/articles/matillion-test-connector.png){:class="img-responsive"}
 4. To test the connection, enter your authentication details and click **[Send]** :number-4:. 
 If the connection is successful, the http response contains the SAP customer data extracted by {{ productName }} :number-5:.
-5. Click on the ![edit](../assets/images/xu/articles/icons/edit.png) icon to edit the structure (names and data types) of the http response :number-6:.<br>
+5. Click :yunio-nav-settings: to edit the structure (names and data types) of the http response :number-6:.<br>
 The structure is used when loading data into your destination.
 This example scenario only extracts the KNA1 columns *City_ORT01*, *Name 1_NAME1*, *Country Key_LAND1* and *Customer Number_KUNNR*.<br>
 ![matillion-structure](../assets/images/xu/articles/matillion-structure.png){:class="img-responsive"} 
@@ -51,7 +52,7 @@ The custom connector can now be used in a Matillion Data Loader pipeline.
 
 Create a pipeline that triggers the extraction and writes the data to a destination, see [Matillion Documentation: Create a pipeline with custom connectors](https://docs.matillion.com/data-productivity-cloud/custom-connector/docs/custom-connector-batch-pipeline/).
 
-1. Open your Matillion Data Loader dashboard under [https://dataloader.matillion.com/dashboard](https://dataloader.matillion.com/dashboard).
+1. Open the [Matillion Data Loader dashboard](https://dataloader.matillion.com/dashboard).
 2. Click **[Add Pipeline]** to create a new pipeline :number-1:.
 ![matillion-pipelines](../assets/images/xu/articles/matillion-pipelines.png){:class="img-responsive"}
 3. Open the *Custom Connectors* tap to select the custom connector :number-2:, that contains the connection settings for {{ productName }}. 
@@ -83,6 +84,7 @@ For more information on how to connect to Snowflake, see [Matillion Documentatio
 
 The pipeline now runs automatically at the specified frequency. 
 
+*****
 #### Related Links
 
 - [Online Help: Getting Started with {{ productName }}](https://help.theobald-software.com/en/xtract-universal/getting-started)

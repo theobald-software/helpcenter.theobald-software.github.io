@@ -3,10 +3,10 @@ title: Collation Settings for MSSQL Server Destination
 description: example of how to append the collation for a specified column
 ---
 
-The following article describes a common problem that occurs when pushing SAP data into an SQL server database when collation is not set case-sensitive.
-The depicted example shows how to customize the drop & create SQL server statement within {{ productName }} destination settings.
+The following article describes a common problem that occurs when pushing SAP data into an SQL server database when collation is not set to case-sensitive.
+The depicted example shows how to customize the *Drop & Create* SQL server statement within the {{ productName }} destination settings to accommodate these issues.
 
-### Collation SQL Server
+### About Collation SQL Server
 
 Collations in SQL Server provide sorting rules, case, and accent sensitivity properties for your data. Collations that are used with character data types, such as *char* and *varchar*, difine the code page and corresponding characters that can be represented for the corresponding data type. 
 
@@ -17,78 +17,88 @@ Collation can be set up on three different levels:
 
 MSSQL server offers different collation statements. The following excerpts provide the necessary adaptions for the given example:
 
-**option** | **description**
+**Option** | **Description**
 ------------ | -------------
 Case-sensitive (_CS) | Distinguishes between uppercase and lowercase letters. If this option is selected, lowercase letters sort ahead of their uppercase versions. If this option isn't selected, the collation is case-insensitive. Which means, SQL Server considers the uppercase and lowercase versions of letters to be identical for sorting purposes. You can explicitly select case insensitivity by specifying _CI.
 Accent-sensitive (_AS) | Distinguishes between accented and unaccented characters. For example, "a" is not equal to "ấ". If this option isn't selected, the collation is accent-insensitive. Which means, SQL Server considers the accented and unaccented versions of letters to be identical for sorting purposes. You can explicitly select accent insensitivity by specifying _AI.
 
-Check the complete list of [usable collations](https://docs.microsoft.com/en-us/sql/relational-databases/collations/collation-and-unicode-support?redirectedfrom=MSDN&view=sql-server-ver15#Collation_Defn). 
-
-For more detailed information, see [Microsoft site](https://docs.microsoft.com/en-us/sql/relational-databases/collations/collation-and-unicode-support?redirectedfrom=MSDN&view=sql-server-ver15). 
-The depicted example shows the column collation within {{ productName }} with [Custom SQL](https://help.theobald-software.com/en/xtract-universal/destinations/microsoft-sql-server#custom-sql-1) statement.
+For information on usable collations, see [Microsoft Documentation: Collation](https://docs.microsoft.com/en-us/sql/relational-databases/collations/collation-and-unicode-support?redirectedfrom=MSDN&view=sql-server-ver15#Collation_Defn) and [Microsoft Documentation: Collation and Unicode support](https://docs.microsoft.com/en-us/sql/relational-databases/collations/collation-and-unicode-support?redirectedfrom=MSDN&view=sql-server-ver15). 
+The depicted example shows the column collation within {{ productName }} with a [Custom SQL](https://help.theobald-software.com/en/xtract-universal/destinations/microsoft-sql-server#custom-sql-1) statement.
 
 ### SQL Server Management Studio (SSMS)
 
-Check the database settings *xu_fas*, following collation statement appears: *Latin1_General_100_CI_AI*. 
 
-**option** | **description**
+Check the database settings.
+The following collation statement is displayed: `Latin1_General_100_CI_AI`.
+
+**Option** | **Description**
 ------------ | -------------
 _CI | case-insensitive
 _AI | accent-insensitive
 
-![default_collation_statement](../assets/images/xu/articles/collation_example_CI_AI_xu_fas_DB.png){:class="img-responsive"}
+![default_collation_statement](../assets/images/xu/articles/collation_example_CI_AI_xu_fas_DB.png)
 
-### {{ productName }}
 
-We want to extract the SAP table *MAKT* from ECC:
+### Setup in Xtract Universal
 
-1. Create an table extraction as described in [Online Help](https://help.theobald-software.com/en/xtract-universal/table) article.
-   - The look-up process loads the corresponding metadata from our SAP object *MAKT*. 
-![default_collation_statement](../assets/images/xu/articles/makt_metadata.png){:class="img-responsive"}
-   - Composite primary key consists of the table fields: *MANDT*, *MATNR*, *SPRAS* with a unique constraint.
-   - SAP field *SPRAS* is of data type *LANG* with a length *1*.
+Follow the steps below to extract the SAP table *MAKT* from SAP:
+
+1. Create a table extraction, see [Online Help](https://help.theobald-software.com/en/xtract-universal/table).
+The look-up process loads the corresponding metadata from our SAP object *MAKT*: 
+	1. The composite primary key consists of the table fields *MANDT*, *MATNR*, *SPRAS*, each with a unique constraint.<br>
+	![default_collation_statement](../assets/images/xu/articles/makt_metadata.png){:class="img-responsive"}
+    2. The SAP field *SPRAS* is of data type *LANG* with a length *1*.<br>
    ![DD_SPRAS](../assets/images/xu/articles/dataDictionary_SPRAS.png){:class="img-responsive"}
-2. Create a simple Where clause statement like: *MATNR = '000000000000000038' AND ( SPRAS  = 'd' OR SPRAS = 'D' )*
-3.  Click **[Load live preview]**. The result is the following: two data entries - the SAP database interprets the data records with upper-case 'D' and lower-case 'd' in the field *SPRAS* as different data records.
-4. Select an MSSQL server destination for the previously edited extraction and click **[Run]**.<br>
-The destination following error occurs during the extration.
+2. Create a simple WHERE clause, e.g., `MATNR = '000000000000000038' AND ( SPRAS  = 'd' OR SPRAS = 'D' )`.
+3. Click **[Load live preview]**. <br>
+The results show that the SAP database interprets the data records with upper-case 'D' and lower-case 'd' in the field *SPRAS* as different data records.
+4. Assign an MSSQL server destination to the extraction and click **[Run]**.
 
+The MSSQL server returns the following error:
+
+```
 > System.Data.SqlClient.SqlException (0x80131904): Violation of PRIMARY KEY constraint 'PK__makt__3483F06C110B42CD'. 
 > Cannot insert  duplicate key in object 'dbo.makt'.The duplicate key value is (800, 000000000000000038, d)
-
+```
 
 ### Workaround
 
-As explained above {{ productName }} isn't able to push the data of 'MAKT' into MSSQL server due to used collation statement of the database. 
+As shown in [Setup in Xtract Universal](#setup-in-xtract-universal) the data of MAKT cannot be pushed into the MSSQL server destination due to the collation statement of the database. 
 In this case, the user has to customize the SQL statement *Preparation* of the MSSQL destination settings.
 
-1. Change the default value *Drop & Create* to *Custom SQL* and click **[Edit SQL]**.
-2. Select the *Drop & Create* entry from the drop-down menu and click on **[Generate Statement]** for table *MAKT*.
-3. Customize column collation for field *SPRAS* as shown below.
-4. The extraction to MSSQL server ends with the following message 'Extraction finished successfully'.
+1. Change the default value *Drop & Create* to *Custom SQL*.
+2. Click **[Edit SQL]** to enter an SQl statement.
+3. Select the *Drop & Create* entry from the drop-down menu and click on **[Generate Statement]** for table *MAKT*.
+4. Customize the column collation for field *SPRAS* using the following code:
 
+	```sql
+	IF (object_id('MAKT') IS NOT NULL)
+	BEGIN
+	   DROP TABLE [MAKT];
+	END;
 
-```sql
-IF (object_id('MAKT') IS NOT NULL)
-BEGIN
-   DROP TABLE [MAKT];
-END;
+	CREATE TABLE [MAKT]  
+	(
+	   [MANDT] NATIONAL CHARACTER VARYING(3) NOT NULL,
+	   [MATNR] NATIONAL CHARACTER VARYING(18) NOT NULL,
+	   [SPRAS] NATIONAL CHARACTER VARYING(1) COLLATE Latin1_General_100_CS_AS NOT NULL,
+	   [MAKTX] NATIONAL CHARACTER VARYING(40),
+	   [MAKTG] NATIONAL CHARACTER VARYING(40),
+	   PRIMARY KEY
+	   (
+		  [MANDT], 
+		  [MATNR], 
+		  [SPRAS]
+	   )
 
-CREATE TABLE [MAKT]  
-(
-   [MANDT] NATIONAL CHARACTER VARYING(3) NOT NULL,
-   [MATNR] NATIONAL CHARACTER VARYING(18) NOT NULL,
-   [SPRAS] NATIONAL CHARACTER VARYING(1) COLLATE Latin1_General_100_CS_AS NOT NULL,
-   [MAKTX] NATIONAL CHARACTER VARYING(40),
-   [MAKTG] NATIONAL CHARACTER VARYING(40),
-   PRIMARY KEY
-   (
-      [MANDT], 
-      [MATNR], 
-      [SPRAS]
-   )
+	);
+	```
 
-);
+5. Click **[OK]** to confirm your input.
+6. Run the extraction again. 
+
+The MSSQL server now returns the following message: 
+
 ```
-
-
+Extraction finished successfully
+```

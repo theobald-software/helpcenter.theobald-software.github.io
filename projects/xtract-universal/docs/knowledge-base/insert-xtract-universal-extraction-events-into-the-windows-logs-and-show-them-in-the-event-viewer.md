@@ -12,7 +12,7 @@ Let's name it *xubatch.bat* (You can find a sample attached)
 This batchfile contains following lines:
  ```
 echo off
-"C:\Program Files\XtractUniversal\xu.exe" %1
+"{{ installationDir }}\xu.exe" %1
 IF %ERRORLEVEL% == 0 eventcreate /ID 1 /L APPLICATION /T INFORMATION /SO "XtractUniversal" /D "Extraction successfully executed"
 IF %ERRORLEVEL% == 1001 eventcreate /ID 101 /L APPLICATION /T ERROR /SO "XtractUniversal" /D "An undefined error occured"
 IF %ERRORLEVEL% == 1002 eventcreate /ID 102 /L APPLICATION /T ERROR /SO "XtractUniversal" /D "Could not find the specified file"
@@ -26,7 +26,7 @@ IF %ERRORLEVEL% == 404 eventcreate /ID 404 /L APPLICATION /T ERROR /SO "XtractUn
  ```
 If you are using a different folder for your XU installation than the default folder, please change the following line to your installation path:
 ```
-"C:\Program Files\XtractUniversal\xu.exe" %1
+"{{ installationDir }}\xu.exe" %1
  ```
 You only need to run the following line with the name of the extraction as an argument in the windows command line:
 ```

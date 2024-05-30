@@ -30,7 +30,7 @@ This increases the amount of extractions that can be run in parallel, see [Onlin
 - Every {{ productName }} servers needs a server license, see [Online Help: Licensing](https://help.theobald-software.com/en/xtract-universal/introduction/license).
 - All {{ productName }} servers must share the same configuration folder, e.g. by mapping the configuration folder to an external shared storage. 
 The configuration folder contains the settings for the destinations, extractions, sources, server and users.
-The folder is located in the installation directory of {{ productName }}, e.g., `C:\Program Files\XtractUniversal\config`.
+The folder is located in the installation directory of {{ productName }}, e.g., `{{ installationDir }}\config`.
 For versioning of the configuration folder you can use [git version control](https://kb.theobald-software.com/xtract-universal/deploying-extractions-using-Git-version-control).
 - All {{ productName }} installations must use the same software version to avoid any version compatibility issues.
 

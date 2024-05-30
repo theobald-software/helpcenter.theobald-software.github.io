@@ -3,13 +3,14 @@ title: Call Dynamic Extractions with Variables in ADF
 description: Call Dynamic Extractions with Variables in ADF
 ---
 
-The following article shows how to call {{ productName }} extractions dynamically from Azure Data Factory (ADF) using user-defined variables. <br>
+The following article shows how to call {{ productName }} extractions dynamically from Azure Data Factory (ADF) using user-defined variables.
+The depicted example runs extractions daily to write data added or updated on the day before to the destination.
 
-### Calling Dynamic Extractions with Variables
 
-In The depicted example, an extraction with a date parameter is called in ADF.
+### Call Dynamic Extractions with Variables
+
+The depicted example calls an extraction with a date parameter in ADF.
 The date parameter is set dynamically using a user-defined variable.<br>
-The goal of this example is to run daily extractions that only write data added or updated on the day before to the destination.
 
 1. Create an extraction in {{ productName }} that uses runtime parameters.<br>
 The depicted example uses an extraction called *0COSTCENTER_0101_HIER* with a date parameter called *myDate*. 
