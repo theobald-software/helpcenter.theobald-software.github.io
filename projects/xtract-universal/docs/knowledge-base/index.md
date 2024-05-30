@@ -11,6 +11,40 @@ hide:
 
 </div>
 
+### :products-xtract-universal: Xtract Universal
+
+<div class="mdx-columns" markdown>
+
+- [adf-integration-using-command-line.md](adf-integration-using-command-line.md)
+- [adf-integration-using-webservices.md](adf-integration-using-webservices.md)
+- [adjust-column-name-style.md](adjust-column-name-style.md)
+- [authentication-via-azure-ad-with-azure-storage.md](authentication-via-azure-ad-with-azure-storage.md)
+- [call-extraction-via-script.md](call-extraction-via-script.md)
+- [call-dynamic-extractions-with-variables-in-adf.md](call-dynamic-extractions-with-variables-in-adf.md)
+- [collation-sql-server.md](collation-sql-server.md)
+- [create-a-custom-cennector-in-matillion-data-loader.md](create-a-custom-cennector-in-matillion-data-loader.md)
+- [config-command-line-tool.md](config-command-line-tool.md)
+- [deploy-extractions-using-Git-version-control.md](deploy-extractions-using-Git-version-control.md)
+- [dynamic-runtime-paramater within-KNIME-workflow.md](dynamic-runtime-paramater within-KNIME-workflow.md)
+- [execute_all_defined_xu_extractions.md](execute_all_defined_xu_extractions.md)
+- [google-cloud-storage-oauth.md](google-cloud-storage-oauth.md)
+- [insert-xtract-universal-extraction-events-into-the-windows-logs-and-show-them-in-the-event-viewer.md](insert-xtract-universal-extraction-events-into-the-windows-logs-and-show-them-in-the-event-viewer.md)
+- [integrate_sap_data_into_a_Snowflake_data_warehouse.md](integrate_sap_data_into_a_Snowflake_data_warehouse.md)
+- [knime-integration-via-sap-reader.md](knime-integration-via-sap-reader.md)
+- [link-bex-query-with-hierarchy.md](link-bex-query-with-hierarchy.md)
+- [load-balancer.md](load-balancer.md)
+- [log-access-via-http.md](log-access-via-http.md)
+- [mastering-sap-access-with-xtract-universal-and-powershell.md](master-sap-access-with-xtract-universal-and-powershell.md)
+- [run-an-ADF-pipeline-when-sap-extraction-file-is-successfully-uploaded-to-Azure-storage.md](run-an-ADF-pipeline-when-sap-extraction-file-is-successfully-uploaded-to-Azure-storage.md)
+- [run-xu-in-aws.md](run-xu-in-aws.md)
+- [target-principal-TPN.md](target-principal-TPN.md)
+- [xu_windows_service_not_running.md](xu_windows_service_not_running.md)
+- [xu-proxy-server-settings.md](xu-proxy-server-settings.md)
+- [xu-ssrs-parameterizing-in-vs.md](xu-ssrs-parameterizing-in-vs.md)
+
+</div>
+
+---
 
 ### :simple-sap: SAP Connection
 
