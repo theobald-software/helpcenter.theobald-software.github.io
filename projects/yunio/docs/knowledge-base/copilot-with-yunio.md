@@ -13,7 +13,7 @@ The functionality to query the data is provided by a Power Automate workflow tha
 The depicted sample uses a service that reads material data from the SAP table MAKT.
 - Create a Custom Connector for the service in Power Automate, see [Integrate a yunIO Service with Power Automate](integrate-a-yunio-service-with-power-automate.md).
 
-### Setup in Copilot Studio & Power Automate
+### Setup in Copilot Studio
 
 1. Log into [Microsoft Copilot Studio](https://copilotstudio.microsoft.com/) and create a new copilot, see [Microsoft Documentation: Create a copilot](https://learn.microsoft.com/en-us/microsoft-copilot-studio/fundamentals-get-started?tabs=web#create-a-copilot).
 2. Open the *Actions* tab and click **[+ Add an action]** :number-1:. The menu "Step 1 of 3: Choose an action" opens.<br>
