@@ -22,11 +22,11 @@ Both tables have the following identical column descriptions: 'MANDT', 'EBELN'. 
 ### Adjust Standard Separator using Custom SQL
 
 Proceed as follows to adjust SAP standard separator from '~' to '_':
-1. Adjust the Column Name Style e.g. 'PrefixedCode' (1).
+1. Adjust the Column Name Style e.g. 'PrefixedCode' :number-1:.
 ![column_name_style](../assets/images/xu/articles/destination_settings.png){:class="img-responsive"} 
-2. Insert the generic SQL Code below into the 'Finalization'(2) step using **[Edit SQL]**(3).
+2. Insert the generic SQL Code below into the 'Finalization':number-2: step using **[Edit SQL]**:number-3:.
 ![Custom_sql](../assets/images/xu/articles/custom_sql_finalization_step.png){:class="img-responsive"} 
-3. Confirm the entries with **[OK]** (4).
+3. Confirm the entries with **[OK]** :number-4:.
 4. Execute the selected extraction. 
 5. Check the Column Name Style changes and results in SQL Server Management Studio (SSMS).
 ![SSMS_view](../assets/images/xu/articles/ssms_result_column_name_style.png){:class="img-responsive"} 
@@ -67,9 +67,9 @@ Proceed as follows to adjust SAP standard separator from '~' to '_':
 2. Assign a name for the Stored Procedure e.g., ColumnNameStyle.
 3. Insert the SQL-Code below and **[Execute]** the statement to save the process.
 ![custom Stored Procedure](../assets/images/xu/articles/ssms_object_explorer_custom_stored_procedure.png){:class="img-responsive"}
-4. Select the Column Name Style e.g. 'PrefixedCode' (1).
+4. Select the Column Name Style e.g. 'PrefixedCode' :number-1:.
 ![column_name_style](../assets/images/xu/articles/destination_settings.png){:class="img-responsive"}
-5. Insert following SQL Code `EXEC ColumnNameStyle '#{ Extraction.TableName }#'` into the 'Finalization'(2) step using **[Edit SQL]**.
+5. Insert following SQL Code `EXEC ColumnNameStyle '#{ Extraction.TableName }#'` into the 'Finalization':number-2: step using **[Edit SQL]**.
 ![execute stored procedure](../assets/images/xu/articles/exec_sp_column_name_style.png){:class="img-responsive"}
 6. Confirm changes with **[OK]**.
 6. Execute the selected extraction and check the Column Name Style changes and results in SSMS.

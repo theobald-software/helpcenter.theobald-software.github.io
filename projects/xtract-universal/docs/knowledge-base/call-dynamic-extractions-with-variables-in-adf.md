@@ -16,12 +16,12 @@ The goal of this example is to run daily extractions that only write data added 
 
 1. Create an extraction in Xtract Universal that uses runtime parameters.<br>
 The depicted example uses an extraction called *0COSTCENTER_0101_HIER* with a date parameter called *myDate*. 
-2. Create a pipeline in ADF that stores yesterday's date in a variable (1).<br>
+2. Create a pipeline in ADF that stores yesterday's date in a variable :number-1:.<br>
 ![adf-pipeline](../assets/images/xu/articles/adf-pipeline.png){:class="img-responsive"}
 3. Format the date to the internal SAP date format (YYYYMMDD).<br>
 The type and format of the input variable must match the type and format of the actual parameter in Xtract Universal.
 ![adf-call-extractions-variable](../assets/images/xu/articles/azura-data-factory-date-variable.png){:class="img-responsive"}
-4. Add a web activity that calls extractions (2).
+4. Add a web activity that calls extractions :number-2:.
 The URL used to call static extractions has the following format: <br>`[Protocol]://[HOST or IP address]:[Port]/?name=[Name of the Extraction]`
 5. To set runtime parameters of an extraction, add the corresponding variables to the extraction URL using the *@concat* command. 
 The concatenated string has the following format:<br>

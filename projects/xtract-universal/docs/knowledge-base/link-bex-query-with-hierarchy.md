@@ -25,12 +25,12 @@ Note that using *Text* as the column name style can result in column names that 
 
 ### Creating a Relationship in Tableau
 
-1. Load both extractions into Tableau (1).
+1. Load both extractions into Tableau :number-1:.
 ![Tableau-BExQuery-Datasource](../assets/images/xu/articles/Tableau-BExQuery-Datasource.png){:class="img-responsive"}
-2. Create a relationship between the data sources by dragging the sheets into the canvas (2). The window "Edit Relationships" opens.
+2. Create a relationship between the data sources by dragging the sheets into the canvas :number-2:. The window "Edit Relationships" opens.
 3. Select one pair of fields that is to be matched. Add multiple field pairs to create a compound relationship. Matched pairs must have the same data type. 
 ![Tableau-Edit-Relationships](../assets/images/xu/articles/Tableau-Edit-Relationships.png){:class="img-responsive"}
-4. Close "Edit Relationships" and switch to the Worksheet view (3).
+4. Close "Edit Relationships" and switch to the Worksheet view :number-3:.
 
 The data sources are now linked and data from both data sources can be blended in a single sheet. 
 <!--- ![Tableau-Linked-Data-Sources](../assets/images/xu/articles/Tableau-Linked-Data-Sources.png){:class="img-responsive"}-->

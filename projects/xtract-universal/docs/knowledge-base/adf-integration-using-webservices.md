@@ -38,11 +38,11 @@ The depicted scenario uses two ADF pipelines to run extractions from ADF:
 
 Follow the steps below to create a child pipeline that extracts data from SAP:
 
-1. Run an extraction using a web activity (1), see [Web-API - Run Extractions](https://help.theobald-software.com/en/xtract-universal/web-api#run-extractions).<br>
+1. Run an extraction using a web activity :number-1:, see [Web-API - Run Extractions](https://help.theobald-software.com/en/xtract-universal/web-api#run-extractions).<br>
 ![XU_ADF_global_parameter](../assets/images/xu/articles/xu_ADF_2_Child_pipeline.png)
-2. Query the extraction status in regular intervals using a web activity (2), see [Web-API - Get Status of an Extraction](https://help.theobald-software.com/en/xtract-universal/web-api#get-status-of-an-extraction). <br>
+2. Query the extraction status in regular intervals using a web activity :number-2:, see [Web-API - Get Status of an Extraction](https://help.theobald-software.com/en/xtract-universal/web-api#get-status-of-an-extraction). <br>
 ![XU_ADF_global_parameter](../assets/images/xu/articles/xu_ADF_2_Child_pipeline_Check_Status.png)
-3. Add a condition that checks the extraction status (3) and executes follow up activities in case the extractions fails.<br>
+3. Add a condition that checks the extraction status :number-3: and executes follow up activities in case the extractions fails.<br>
 Example: When the extraction fails, use a web activity to query the extraction log, see [Web-API - Get Extraction Logs](https://help.theobald-software.com/en/xtract-universal/web-api#get-extraction-logs), and write the logs to an Azure Blob Storage account. 
 A follow up event can then be triggered by the *Storage event*, e.g., sending a notification email.<br>
 ![XU_ADF_global_parameter](../assets/images/xu/articles/xu_ADF_2_Child_pipeline_write_Log.png)
@@ -54,9 +54,9 @@ The pipeline functions as a standalone solution. It can be run in debug mode or 
 Follow the steps below to create a master pipeline that executes the child pipeline multiple times, each time for a different extraction.
 This allows automatic iteration through all extractions defined in Xtract Universal. 
 
-1. Query a list of extractions (1) using a web activity, see [Web-API - Get Extraction Details](https://help.theobald-software.com/en/xtract-universal/web-api#get-extraction-details).<br>
+1. Query a list of extractions :number-1: using a web activity, see [Web-API - Get Extraction Details](https://help.theobald-software.com/en/xtract-universal/web-api#get-extraction-details).<br>
 ![XU_ADF_global_parameter](../assets/images/xu/articles/xu_ADF_2_Master_pipeline.png)
-2. Loop over the list of extractions (2). 
+2. Loop over the list of extractions :number-2:. 
 3. In the loop, pass the name of the current extraction to the *Child pipeline* and execute the *Child pipeline* for that extraction.<br>
 ![XU_ADF_global_parameter](../assets/images/xu/articles/xu_ADF_2_Master_pipeline_ForEachLoop.png)
 
