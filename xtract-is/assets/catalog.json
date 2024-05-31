@@ -1,5 +1,16 @@
 [
   {
+    "Version": "7.6.2.0",
+    "LegacyReleaseDate": "2024-05-29 17:31:52Z",
+    "Changes": [
+      {
+        "Product": "XtractIS",
+        "Component": "DeltaQ",
+        "Message": "Fixed legacy field length reading for systems that have changed between non-Unicode and Unicode"
+      }
+    ]
+  },
+  {
     "Version": "7.6.1.9",
     "LegacyReleaseDate": "2024-05-29 00:00:00Z",
     "Changes": [
