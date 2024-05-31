@@ -204,4 +204,4 @@ extra:
   productName: ERPConnect
   Component: Feature / SAP Object
   component: feature / SAP object
-  component: features / SAP objects
+  components: features / SAP objects
