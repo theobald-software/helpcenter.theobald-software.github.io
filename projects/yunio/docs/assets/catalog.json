@@ -1,5 +1,16 @@
 [
   {
+    "Version": "1.32.13.0",
+    "LegacyReleaseDate": "2024-05-30 21:52:04Z",
+    "Changes": [
+      {
+        "Product": "YunIO",
+        "Component": "Designer",
+        "Message": "Limiting arrays in the run dialog."
+      }
+    ]
+  },
+  {
     "Version": "1.32.12.1",
     "LegacyReleaseDate": "2024-05-29 00:00:00Z",
     "Changes": [
