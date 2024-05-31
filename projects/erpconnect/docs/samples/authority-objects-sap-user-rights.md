@@ -5,4 +5,5 @@ tags:
    - permissions
 ---
 
-{% include "articles/authority-objects-sap-user-rights.md" %}
+{% include "sap-customizing/authority-objects-sap-user-rights.md" %}
+

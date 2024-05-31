@@ -9,7 +9,7 @@ The required authorizations for each {{ component }} are listed in their respect
 
 ### SAP Authorization Profiles
 
-Theobald Software collected and combined the necessary authorizations for all {{ component }} into SAP roles. <br>
+Theobald Software collected and combined the necessary authorizations for all {{ components }} into SAP roles. 
 You can download the SAP profiles and upload them to your SAP system:
 
 {% if page.meta.product == "erpconnect" %}
