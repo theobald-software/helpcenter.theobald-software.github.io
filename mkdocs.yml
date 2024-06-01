@@ -54,7 +54,10 @@ theme:
 extra_css:
   - assets/stylesheets/extra.css
   - assets/stylesheets/neoteroi-cards.css 
+  - assets/stylesheets/hyperscript.css
 extra_javascript:
+  - assets/javascripts/hyperscript.min.js
+  - assets/javascripts/changelog.js
   - assets/javascripts/iconsearch_index.json
   - assets/javascripts/custom.129bd6ad.min.js
   - assets/javascripts/custom.129bd6ad.min.js.map

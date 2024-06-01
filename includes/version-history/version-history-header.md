@@ -4,6 +4,8 @@ We recommend checking for updates at least every three months.
 
 [:material-download-circle: Download the latest version](https://portal.theobald-software.com/){ .md-button }
 
+<!---
+
 ### Definition of Version Numbers
 
 Format: **A.B.C [X]**
@@ -16,5 +18,11 @@ Format: **A.B.C [X]**
     * *M - Medium*: Install within your usual update interval.
     * *L - Low*:    Install only if advised by the support team.
 
-### Latest Software Updates { data-search-exclude }
 
+- `1.2.3` shows the software release of version, e.g., `5.6.2`.
+- `>1.2.3` shows all software releases that came after the specified version, e.g., `>5.6.2`.
+- `breaking change` shows software releases that may require you to make changes to your application to avoid disruptions
+- `critical change` shows important software releases
+-->
+
+### Latest Software Updates { data-search-exclude }	

@@ -73,16 +73,6 @@
   background-color: var(--md-default-fg-color--light);
 }
 
-.is-breaking {
-  color: orange;
-  position: relative;
-}
-
-.is-critical {
-  color: var(--md-typeset-a-color);
-  position: relative;
-}
-
 .modal {
   display: none;
   position: fixed;

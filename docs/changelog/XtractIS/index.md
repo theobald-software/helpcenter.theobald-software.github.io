@@ -1,19 +1,9 @@
 ---
-title: ChangeLog
-hide:
-  - navigation
-  - feedback
-  - tags
+title: Xtract IS
 ---
 
+--8<-- "version-history/version-history-header.md"
 
-<div class="grid cards" markdown>
-
--   ![img](site:assets/images/logos/theo-thumbs.png){ .lg .middle width="30px"} This section contains a version history for {{ productName }}.
-
-</div>
-
-{% include "version-history/version-history-header.md" %}
 
 <div style="display:flex">
   <input class="input-search"
@@ -27,7 +17,7 @@ hide:
     _="on click set #search.value to '' then trigger keyup on #search">Clear</button>
 </div>
 
-<table id="catalogTable" style="table-layout: fixed;">
+<table id="catalogTable" style="table-layout: auto;">
   <thead>
     <tr>
       <th>Version</th>
@@ -49,4 +39,5 @@ hide:
     <div id="modalBody"></div>
   </div>
 </div>
+
 
