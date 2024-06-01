@@ -5,8 +5,6 @@ description: Run Xtract Universal in a VM on AWS EC2
 
 The following article shows how to run {{ productName }} in a virtual machine on an AWS EC2.
 
-### About
-
 AWS enables running virtual servers (instances) in the cloud, see [AWS Documentation: EC2](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/concepts.html).
 Theobald Software offers {{ productName }} as an [Amazon Machine Image (AMI)](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/AMIs.html) for the following customer purposes:
 - {{ productName }} evaluation
@@ -16,20 +14,23 @@ The {{ productName }} AMI can be selected when launching an instance in AWS.
 
 When starting an {{ productName }} instance, the following settings are pre-configured:
 
-| License | {{ productName }} is already installed and running with a 30-days trial license. You can replace the trial license with your purchased license. | [Online Help: Licensing](https://help.theobald-software.com/en/xtract-universal/introduction/license)|
+|          | Configuration  |  Resources |
+|:---------|:-------------|:------|
+| License  | {{ productName }} is already installed and running with a 30-days trial license. You can replace the trial license with your purchased license. | [Online Help: Licensing](https://help.theobald-software.com/en/xtract-universal/introduction/license) |
 | Software Updates | The pre-installed version of {{ productName }} is displayed in the AWS marketplace. Make sure to keep {{ productName }} up-to-date with the latest software releases, see [{{ productName }} Version History](../version-history/xtract-universal-version-history). | [Online Help: Installation and Update](https://help.theobald-software.com/en/xtract-universal/introduction/installation-and-update) |
 | Server Settings | The webserver is pre-configured with a self-signed TLS certificate and can be accessed in a browser via ``https://xtractuniversal:8165/`` from within the rdp session. | [Online Help: Server Settings](https://help.theobald-software.com/en/xtract-universal/security/server-security) |
 
+
 ### Prerequisites
 
-- AWS account
+- Access to an AWS account
 - Access to the [EC2](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/concepts.html) console
 
 There are multiple ways to start using {{ productName }} in EC2:
-- [Set Up {{ productName }} from the AWS Marketplace](#set-up-xtract-universal-from-the-aws-marketplace)
-- [Set Up {{ productName }} directly from the EC2 Console](#set-up-xtract-universal-from-the-ec2-console)
+- [Set Up from the AWS Marketplace](#set-up-from-the-aws-marketplace)
+- [Set Up directly from the EC2 Console](#set-up-from-the-ec2-console)
 
-### Set Up {{ productName }} from the AWS Marketplace
+### Set Up from the AWS Marketplace
 
 Follow the steps below to set up {{ productName }} from the AWS Marketplace:
 
@@ -49,7 +50,7 @@ The {{ productName }} AMI is already selected.<br>
 9. When connected, the {{ productName }} Designer is located on the Desktop. Start the {{ productName }} Designer.
 10. Set up an SAP connection and extractions, see [Online Help: Getting Started](https://help.theobald-software.com/en/xtract-universal/getting-started/connect-designer-with-server).
 
-### Set Up {{ productName }} from the EC2 Console
+### Set Up from the EC2 Console
 
 Follow the steps below to set up {{ productName }} directly from the EC2 console:
 

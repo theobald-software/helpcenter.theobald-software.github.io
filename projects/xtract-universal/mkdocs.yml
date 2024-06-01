@@ -202,10 +202,13 @@ extra:
       link: https://theobald-software.com/en/newsletter/
       name: Newsletter
   productName: Xtract Universal
+  abbr: XU
   component: extraction type
   Component: Extraction Type
   Components: Extraction Types
   components: extractions types
   installationDir: C:\Program Files\XtractUniversal
-  #variable: runtime parameter
-  #variables: runtime parameters
+  extraction: extraction
+  extractions: extractions
+  variable: runtime parameter
+  variables: runtime parameters
