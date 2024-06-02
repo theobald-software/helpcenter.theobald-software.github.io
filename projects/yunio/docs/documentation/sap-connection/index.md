@@ -9,14 +9,19 @@ This page shows how to connect to SAP.
 !!! warning  
 	**Missing Authorization.**<br>
     To establish a connection to SAP, the access to general authority objects must be available.
-    Adjust the [SAP Authority Objects](../setup-in-sap/sap-authority-objects.md/#sap-authorization-profiles) accordingly.
+    Adjust the [SAP Authority Objects](../setup-in-sap/sap-authority-objects.md/#general-authorization-objects) accordingly.
 
-Supported Connection Methods  | Supported Authentication Methods
------------- | -------------
-Connection to a single application server | [Plain login](#connect-to-sap-using-plain-authentication) using SAP username and password (system or dialogue user)
-Connection to a message server (Load Balancing) | [Secure Network Communication (SNC)](#connect-to-sap-using-snc-authentication) using username and password via basic authentication
+**Supported Connection Methods** 
 
-### Connect to SAP using Plain Authentication
+- Connection to a single application server
+- Connection to a message server (Load Balancing) 
+
+**Supported Authentication Methods**
+
+- [Plain login](#connect-to-sap-using-plain-authentication) using SAP username and password (system or dialogue user)
+- [Secure Network Communication (SNC)](#connect-to-sap-using-snc-authentication) using username and password via basic authentication
+
+### Plain Authentication
 
 Follow the steps below to set up an SAP connection that uses an SAP username and password for authentication.
 
@@ -35,9 +40,9 @@ A window with a status message opens in the bottom right corner of the window.
     Activate the option *Request credentials from callers when running services* to pass valid SAP credentials via Basic Authentication. 
 	To pass credentials, the access control setting [*Anonymous*](../access-restrictions/global-access.md/#settings) must be activated.
 
-### Connect to SAP using SNC Authentication
+### SNC Authentication
 
-Secure Network Connection (SNC) enables authentication and transport encryption between SAP systems and third-party tools similar to yunIO.
+[Secure Network Connection (SNC)](https://help.sap.com/doc/saphelp_nw73ehp1/7.31.19/en-US/e6/56f466e99a11d1a5b00000e835363f/content.htm?no_cache=true) enables authentication and transport encryption between SAP systems and third-party tools similar to yunIO.
 The credentials are provided via Basic Authentication.
 
 Follow the steps below to set up an SAP connection that uses SNC:
@@ -63,4 +68,3 @@ For more information on SAP routers, see [SAP Documentation: SAP-Router](https:/
 
 Example:
 If the application server is "hamlet" and the router string is ``/H/lear.theobald-software.com/H/``, set the host property to ``/H/lear.theobald-software.com/H/hamlet``.
-

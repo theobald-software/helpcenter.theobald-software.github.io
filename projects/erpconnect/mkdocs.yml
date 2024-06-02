@@ -35,8 +35,8 @@ theme:
     # - navigation.expand #displays all pages in the navigation (not good for API Reference)
     # - navigation.footer
      - navigation.indexes #adds landing pages for groups
-     - navigation.instant # load faster (no page reload for internal links)
-     - navigation.instant.prefetch # load faster (start loading content when hovering)
+     #- navigation.instant # load faster (no page reload for internal links)
+     #- navigation.instant.prefetch # load faster (start loading content when hovering)
      - navigation.instant.progress # enables a progress indicator 
      - navigation.instant.preview
      - navigation.path #adds breadcrumbs
@@ -77,6 +77,7 @@ extra_css:
   - assets/stylesheets/hyperscript.css
 extra_javascript:
   - assets/javascripts/hyperscript.min.js
+  - assets/javascripts/changelog.js
   
 # Plugins
 plugins:
@@ -202,4 +203,6 @@ extra:
       link: https://theobald-software.com/en/newsletter/
       name: Newsletter
   productName: ERPConnect
-  Component: Feature / SAP Objects
+  Component: Feature / SAP Object
+  component: feature / SAP object
+  components: features / SAP objects

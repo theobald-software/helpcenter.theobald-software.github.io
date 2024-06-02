@@ -9,7 +9,7 @@ hide:
 
 <div class="grid cards" markdown>
 
--   ![img](site:assets/images/logos/theo-thumbs.png){ .lg .middle width="30px"} This section contains a version history for yunIO.
+-   ![img](site:assets/images/logos/theo-thumbs.png){ .lg .middle width="30px"} This section contains a version history for {{ productName }}.
 
 </div>
 
@@ -19,32 +19,34 @@ hide:
   <input class="input-search"
     id="search"
     type="text"
-    placeholder="🔍 Search "
-    _="on keyup
-      if the event's key is 'Escape'
-        set my value to ''
-        trigger keyup
-      else
-        show <tr/> in <tbody/> when its textContent.toLowerCase() contains my value.toLowerCase()" />
+    placeholder="🔍 Search (e.g., 'breaking', 'critical', '1.2.3', '>1.2.3', ...)"
+
+  />
 
   <button class="btn-clear md-button md-button--primary"
     _="on click set #search.value to '' then trigger keyup on #search">Clear</button>
 </div>
 
-=== "yunIO"
+<table id="catalogTable" style="table-layout: fixed;">
+  <thead>
+    <tr>
+      <th>Version</th>
+      <th style="width:12%;">Release Date</th>
+      <th>Component</th>
+	  <th style="width:5%;text-align:center;">Impact</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody id="catalogBody">
+    <!-- Table body will be populated dynamically -->
+  </tbody>
+</table>
 
-    --8<-- "version-history/Yunio.md"
-	
-=== "Common"
+<!-- Modal HTML -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div id="modalBody"></div>
+  </div>
+</div>
 
-    --8<-- "version-history/Common.md"
-	
-=== "Theobald Extractors"
-
-    --8<-- "version-history/TheobaldExtractors.md"
-
-=== "Theobald Server"
-
-    --8<-- "version-history/TheobaldServer.md"
-	
-### 
