@@ -12,6 +12,8 @@ Theobald Software offers {{ productName }} as an [Amazon Machine Image (AMI)](ht
 
 The {{ productName }} AMI can be selected when launching an instance in AWS.
 
+### Pre-Configured Settings
+
 When starting an {{ productName }} instance, the following settings are pre-configured:
 
 |          | Configuration  |  Resources |

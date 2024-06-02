@@ -38,7 +38,6 @@ hide:
 - [Run an ADF Pipeline when an SAP Extraction File is uploaded to Azure Storage](run-an-ADF-pipeline-when-sap-extraction-file-is-successfully-uploaded-to-Azure-storage.md)
 - [Run {{ productName }} in a VM on AWS EC2](run-xu-in-aws.md)
 - [Target Principal Field (TPN)](target-principal-TPN.md)
-- [{{ productName }} Server Troubleshooting](xu_windows_service_not_running.md)
 - [Proxy Server Settings in {{ productName }}](xu-proxy-server-settings.md)
 - [Use Computed Query Parameters for SSRS](xu-ssrs-parameterizing-in-vs.md)
 

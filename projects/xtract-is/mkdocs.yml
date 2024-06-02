@@ -203,7 +203,13 @@ extra:
       link: https://theobald-software.com/en/newsletter/
       name: Newsletter
   productName: Xtract IS
+  Abbr: XIS
+  abbr: xis
   component: component
+  Component: Component
+  Components: Components
+  components: components
+  installationDir: C:\Program Files\XtracIS
   bapi: Xtract BAPI
   table: Xtract Table
   tablecdc: Xtract Table CDC
@@ -218,5 +224,6 @@ extra:
   variable: an SSIS variable
   variables: SSIS variables
   extraction: SSIS package
+  extractions: SSIS packages
   settings: settings
   settingsBtn: __Settings__

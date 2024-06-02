@@ -202,13 +202,27 @@ extra:
       link: https://theobald-software.com/en/newsletter/
       name: Newsletter
   productName: Xtract Universal
-  abbr: XU
+  Abbr: XU
+  abbr: xu
   component: extraction type
   Component: Extraction Type
   Components: Extraction Types
   components: extractions types
   installationDir: C:\Program Files\XtractUniversal
-  extraction: extraction
-  extractions: extractions
+  bapi: BAPI
+  table: Table
+  tablecdc: Table CDC
+  bapi: BAPI
+  # bwcube: Xtract BW Cube	
+  hierarchy: Hierarchy
+  deltaq: DeltaQ
+  odp: ODP
+  ohs: OHS
+  query: Query
+  report: Report
   variable: runtime parameter
   variables: runtime parameters
+  extraction: extraction
+  extractions: extractions
+  settings: extraction settings
+  settingsBtn: __Extraction Settings__
