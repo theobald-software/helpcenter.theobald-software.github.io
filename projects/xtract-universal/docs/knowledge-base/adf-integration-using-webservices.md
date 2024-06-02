@@ -82,8 +82,11 @@ For more information on variables in ADF, see [Calling Dynamic Extractions with 
 
 ### Download JSON Templates
 
-- [Download CHILD pipeline as json](/files/xu/CHILD_pipeline_Execute_single_XU_extraction.json){:download="Download CHILD pipeline as json"}
-- [Download MASTER pipeline as json](/files/xu/MASTER_pipeline_Loop_over_XU_extractions.json){:download="Download MASTER pipeline as json"}
+Downloads for the child and master pipeline are provided below:
+
+[:material-download-circle: Download CHILD pipeline as json](../assets/files/xu/CHILD_pipeline_Execute_single_XU_extraction.json){ .md-button }
+
+[:material-download-circle: Download MASTER pipeline as json](../assets/files/MASTER_pipeline_Loop_over_XU_extractions.json){ .md-button }
 
 *****
 #### Related Links

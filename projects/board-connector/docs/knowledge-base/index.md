@@ -7,16 +7,20 @@ hide:
 
 <div class="grid cards" markdown>
 
--   ![img](site:assets/images/logos/theo-thumbs.png){ .lg .middle width="30px"} This section contains n-depth articles and sample use cases for Xtract IS.
+-   ![img](site:assets/images/logos/theo-thumbs.png){ .lg .middle width="30px"} This section contains in-depth articles and sample use cases for {{ productName }}.
 
 </div>
 
-### :products-xtract-is: General
+### :products-board-connector: General
 
 <div class="mdx-columns" markdown>
 
-- [Determine the Azure SSIS-IR Cluster ID](determine-the-azure-cluster-ID.md)
-- [Execute SSIS Packages between Cloud Data Stores and a Private Network Data Storage](execute-ssis-packages-between-cloud-data-stores-and-a-private-network-data-storage.md)
+- [Deploy Extractions Using Git Version Control](deploy-extractions-using-Git-version-control.md)
+- [Insert Extraction Events into Windows Logs](insert-extraction-events-into-the-windows-logs.md)
+- [Load Balancing](load-balancer.md)
+- [Log Access via Web Service](log-access-via-http.md)
+- [Target Principal Field (TPN)](target-principal-TPN.md)
+- [Proxy Server Settings in {{ productName }}](proxy-server-settings.md)
 
 </div>
 
@@ -39,6 +43,20 @@ hide:
 ---
 
 
+### :material-cloud-key: SSO Scenarios
+
+<div class="mdx-columns" markdown>
+
+- [SSO with Client Certificates](sso-with-client-certificates.md)
+- [SSO with External ID](sso-with-external-id.md)
+- [SSO with Kerberos SNC](sso-with-kerberos-snc.md)
+- [SSO with Logon Ticket](sso-with-logon-ticket.md)
+
+</div>
+
+---
+
+
 ### :component-bapi: Xtract BAPI
 
 <div class="mdx-columns" markdown>
@@ -49,6 +67,7 @@ hide:
 </div>
 
 ---
+
 
 ### :component-deltaq: Xtract DeltaQ
 

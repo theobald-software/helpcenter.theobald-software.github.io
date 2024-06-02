@@ -3,8 +3,7 @@ title: Call Extractions via Script
 description: Call Extraction via Script
 ---
 
-This section shows how to call an extraction from a [Windows script (.bat)](./call-extraction-via-script#call-via-windows-script-bat) or [PowerShell script](./call-extraction-via-script#call-via-powershell-script).
-
+This section shows how to call an extraction from a [Windows script (.bat)](./call-extraction-via-script#call-via-windows-script-bat) or [PowerShell script](./call-extraction-via-script#call-via-powershell-script) using the command line tool xu.exe.
 
 
 ### Call via Windows script (.bat)
@@ -31,7 +30,7 @@ Follow the steps below to run an extraction using a Windows script that calls th
 	:: write the log to a file
 	set XULogfile="C:\Data\xubatch\log.txt"
 	:: set the path to the installation folder
-	set XUCmd="{{ installationDir }}\xu.exe"
+	set XUCmd="C:\Program Files\XtractUniversal\xu.exe"
 	:: default is also localhost, so you skip it or change it  
 	set XUServer=localhost
 	:: default port is also 8065, so you skip it or change it  

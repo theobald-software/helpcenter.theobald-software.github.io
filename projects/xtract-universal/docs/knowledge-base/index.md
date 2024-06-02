@@ -11,7 +11,7 @@ hide:
 
 </div>
 
-### :products-xtract-universal: Xtract Universal
+### :products-xtract-universal: General
 
 <div class="mdx-columns" markdown>
 
@@ -28,7 +28,7 @@ hide:
 - [Dynamic Runtime Parameter in KNIME Workflows](dynamic-runtime-paramater-within-KNIME-workflow.md)
 - [Execute & Schedule all Extractions](execute_all_defined_xu_extractions.md)
 - [Set Up OAuth 2.0 for the Google Cloud Storage Destination](google-cloud-storage-oauth.md)
-- [Insert Extraction Events into Windows Logs](insert-xtract-universal-extraction-events-into-the-windows-logs-and-show-them-in-the-event-viewer.md)
+- [Insert Extraction Events into Windows Logs](insert-extraction-events-into-the-windows-logs.md)
 - [Integrate SAP Data into a Snowflake Data Warehouse](integrate_sap_data_into_a_Snowflake_data_warehouse.md)
 - [KNIME Integration via SAP Reader (Theobald Software)](knime-integration-via-sap-reader.md)
 - [Link a BEx query with a Hierarchy in Tableau](link-bex-query-with-hierarchy.md)
@@ -38,7 +38,7 @@ hide:
 - [Run an ADF Pipeline when an SAP Extraction File is uploaded to Azure Storage](run-an-ADF-pipeline-when-sap-extraction-file-is-successfully-uploaded-to-Azure-storage.md)
 - [Run {{ productName }} in a VM on AWS EC2](run-xu-in-aws.md)
 - [Target Principal Field (TPN)](target-principal-TPN.md)
-- [Proxy Server Settings in {{ productName }}](xu-proxy-server-settings.md)
+- [Proxy Server Settings in {{ productName }}](proxy-server-settings.md)
 - [Use Computed Query Parameters for SSRS](xu-ssrs-parameterizing-in-vs.md)
 
 </div>
@@ -49,10 +49,8 @@ hide:
 
 <div class="mdx-columns" markdown>
 
-- [Authorize Access to Reports via Authorization Groups](authorize-access-to-specific-reports.md)
 - [Check the Accessibility to an SAP System](check-the-accessibility-to-an-sap-system.md)
 - [Create a Client PSE to connect to SAP Cloud Systems](create-personal-security-environment.md)
-- [Create the Custom Authorization Object Z_TS_PROG](create-the-custom-authority-object-z-ts-prog.md)
 - [Enable Secure Network Communication (SNC) via X.509 certificate](enable-snc-using-pse-file.md)
 - [Import an SAP Transport Request](import-an-sap-transport-request.md)
 - [Register an RFC Server in SAP Releases with Kernel Release 720 and higher](register-rfc-server-in-sap-releases-in-kernel-release-720-and-higher.md)

@@ -202,5 +202,6 @@ extra:
       link: https://theobald-software.com/en/newsletter/
       name: Newsletter
   productName: Board Connector
+  installationDir: C:\Program Files\BOARDConnector
   #variable: runtime parameter
   #variables: runtime parameters

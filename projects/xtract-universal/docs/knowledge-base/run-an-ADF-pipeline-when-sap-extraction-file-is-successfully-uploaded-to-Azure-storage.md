@@ -97,7 +97,7 @@ The depicted example uses a storage account *xtractstorage* and a container call
 		![ADF_Pipeline_Run](../assets/images/xu/articles/xu-adf-storage-trigger/adf-pipeline-run.png){:class="img-responsive"} 
 
 
-### JSON templates
+### Download JSON Templates
 
 Downloads for the trigger and the master pipeline are provided below:
 
