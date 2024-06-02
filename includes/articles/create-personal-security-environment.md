@@ -16,12 +16,12 @@ Follow the steps below to create a client PSE file that trusts the server certif
 	=== ":fontawesome-brands-chrome: Chrome"
 
 		Navigate to **View site information > Connection is secure > Certificate is valid**.<br>
-		![sap-cloud-view-certificate-chrome](../assets/images/articles/sap-cloud-view-certificate-chrome.png){:class="img-responsive"}
+		![sap-cloud-view-certificate-chrome](../assets/images/articles/connection/sap-cloud-view-certificate-chrome.png){:class="img-responsive"}
 
 	=== ":fontawesome-brands-firefox: Firefox"
 
 		Click the pad lock icon left of the URL, navigate to **Connection secure > More information**, then click **[View Certificate]**.<br>
-		![sap-cloud-view-certificate](../assets/images/articles/sap-cloud-view-certificate.png){:class="img-responsive"}
+		![sap-cloud-view-certificate](../assets/images/articles/connection/sap-cloud-view-certificate.png){:class="img-responsive"}
 
 3. Download the certificate chain from the browser. The certificate chain contains all certificates that are signed by the server certificate.
 
@@ -29,12 +29,12 @@ Follow the steps below to create a client PSE file that trusts the server certif
 
 		Open the *Details* tab and click **[Export...]**. <br>
 		Make sure to save the file in the format *Base64-encoded ASCII, certificate chain (\*.pem;\*.crt)*.<br>
-		![sap-cloud-download-certificate](../assets/images/articles/sap-cloud-download-certificate-chrome.png){:class="img-responsive"}
+		![sap-cloud-download-certificate](../assets/images/articles/connection/sap-cloud-download-certificate-chrome.png){:class="img-responsive"}
 
 	=== ":fontawesome-brands-firefox: Firefox"
 	
 		Scroll to the *Miscellaneous* section of the certificate and in the download row, click *PEM (chain)*.<br>
-		![sap-cloud-download-certificate](../assets/images/articles/sap-cloud-download-certificate.png){:class="img-responsive"}
+		![sap-cloud-download-certificate](../assets/images/articles/connection/sap-cloud-download-certificate.png){:class="img-responsive"}
 
 4. Use the sapgenpse tool to create a client PSE file: 
 

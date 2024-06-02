@@ -206,6 +206,29 @@ extra:
       link: https://theobald-software.com/en/newsletter/
       name: Newsletter
   productName: Board Connector
+  Abbr: BC
+  abbr: bc
+  component: extraction type
+  Component: Extraction Type
+  Components: Extraction Types
+  components: extractions types
   installationDir: C:\Program Files\BOARDConnector
+  bapi: BAPI
+  table: Table
+  tablecdc: Table CDC
+  bapi: BAPI
+  cube: BWCube
+  hierarchy: Hierarchy
+  deltaq: DeltaQ
+  odp: ODP
+  ohs: OHS
+  query: Query
+  report: Report
+  variable: runtime parameter
+  variables: runtime parameters
+  extraction: extraction
+  extractions: extractions
+  settings: extraction settings
+  settingsBtn: __Extraction Settings__
   #variable: runtime parameter
   #variables: runtime parameters

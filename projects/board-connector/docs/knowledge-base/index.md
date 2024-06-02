@@ -16,11 +16,8 @@ hide:
 <div class="mdx-columns" markdown>
 
 - [Deploy Extractions Using Git Version Control](deploy-extractions-using-Git-version-control.md)
-- [Insert Extraction Events into Windows Logs](insert-extraction-events-into-the-windows-logs.md)
 - [Load Balancing](load-balancer.md)
-- [Log Access via Web Service](log-access-via-http.md)
 - [Target Principal Field (TPN)](target-principal-TPN.md)
-- [Proxy Server Settings in {{ productName }}](proxy-server-settings.md)
 
 </div>
 

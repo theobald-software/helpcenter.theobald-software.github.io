@@ -217,7 +217,7 @@ extra:
   table: Table
   tablecdc: Table CDC
   bapi: BAPI
-  # bwcube: Xtract BW Cube	
+  cube: BWCube
   hierarchy: Hierarchy
   deltaq: DeltaQ
   odp: ODP
