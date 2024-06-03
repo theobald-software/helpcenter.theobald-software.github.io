@@ -25,7 +25,7 @@
 
     ---
 
-    The new Join functionality allows joining two or more tables, e.g., joining tables for header and item data or tables for master data and texts.
+    The new [Join functionality](documentation/tables-and-views/table-join.md) allows joining two or more tables, e.g., joining tables for header and item data or tables for master data and texts.
 
     ---
 
