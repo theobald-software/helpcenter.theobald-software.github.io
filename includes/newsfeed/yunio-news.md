@@ -9,7 +9,7 @@
 
     ---
 
-    :material-clock-time-two-outline: 2024-04-17
+    :material-clock-time-two-outline: 2024-06-01
 
 -   **Support for Table Joins Added**
 
