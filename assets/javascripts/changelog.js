@@ -55,7 +55,7 @@
           <td>${item.Version}</td>
           <td>${item.LegacyReleaseDate.split(' ')[0]}</td>
           <td>${change.Component}</td>
-          <td style="width:5%;text-align:center;">${item.IsBreaking ? '<img src="../../assets/images/link_broken.svg" alt="breaking-change" style="width:20px;"> ': ' '}${item.IsCritical ? '<img src="../../assets/images/critical.svg" alt="breaking-change" style="width:20px;">': ' '}</td>
+          <td style="width:5%;text-align:center;">${item.IsBreaking ? '<img src="../../assets/images/link_broken.svg" alt="breaking-change" title="Breaking Change" title="Breaking Change" style="width:20px;"> ': ' '}${item.IsCritical ? '<img src="../../assets/images/critical.svg" alt="critical-change" title="Critical Change" title="Critical Change" style="width:20px;">': ' '}</td>
 		  <td>${item.IsBreaking ? 'Breaking change: ': ''}${item.IsCritical ? 'Critical change: ': ''}
 		  ${change.Message} ${change.ReleaseNote ? `<br> <button class="show-more" data-release-note="${encodeURIComponent(change.ReleaseNote)}" style="cursor: pointer; color: #ED1A33;">(Open Release Notes)</button>` : ''}</td>
         `;
@@ -190,7 +190,7 @@
     document.querySelectorAll('#catalogBody tr').forEach(row => {
       const versionCell = row.querySelector('td:first-child');
       const descriptionCell = row.querySelector('td:nth-child(5)'); 
-      // const componentCell = row.querySelector('td:nth-child(3)');
+      const componentCell = row.querySelector('td:nth-child(3)');
       const releaseDateCell = row.querySelector('td:nth-child(2)');
       const version = versionCell.textContent.trim();
       const description = descriptionCell.textContent.trim().toLowerCase();
