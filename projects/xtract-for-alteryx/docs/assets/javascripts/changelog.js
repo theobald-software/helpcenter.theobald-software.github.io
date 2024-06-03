@@ -190,7 +190,7 @@
     document.querySelectorAll('#catalogBody tr').forEach(row => {
       const versionCell = row.querySelector('td:first-child');
       const descriptionCell = row.querySelector('td:nth-child(5)'); 
-      const componentCell = row.querySelector('td:nth-child(3)');
+      // const componentCell = row.querySelector('td:nth-child(3)');
       const releaseDateCell = row.querySelector('td:nth-child(2)');
       const version = versionCell.textContent.trim();
       const description = descriptionCell.textContent.trim().toLowerCase();
