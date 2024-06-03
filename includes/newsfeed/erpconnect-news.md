@@ -1,7 +1,7 @@
 <div class="grid cards" markdown>
 
 
--   **:material-video-box: **Webinar: Real-Time SAP Data Replication****
+-   **:material-video-box: Webinar: Real-Time SAP Data Replication**
 
     ---
 
