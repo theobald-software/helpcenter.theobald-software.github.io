@@ -4,7 +4,7 @@
 {% if page.meta.parent != "table-cdc" %}
 The WHERE clause editor offers a toolkit for those who are not familiar with the syntax of the WHERE clause.
 {% if page.meta.product == "yunio" %}Use the toggle to switch between *Text mode* and *Editor mode*.
-![WHERE-Clause-Builder-01](../../assets/images/yunio/where-clause-editor-mode.png){:class="img-responsive"}{% else %}Click **[Editor mode]** to open the editor. 
+![WHERE-Clause-Builder-01](../../assets/images/yunio/documentation/where-clause-editor-mode.png){:class="img-responsive"}{% else %}Click **[Editor mode]** to open the editor. 
 
 ![WHERE-Clause-Builder-01](../../assets/images/where-clause-builder.png){:class="img-responsive"}
 {% endif %} {% endif %}
@@ -24,7 +24,7 @@ There are 2 options for adding criteria to the WHERE clause:
 #### Components of the WHERE Clause Editor
 
 {% if page.meta.product == "yunio" %}
-![WHERE-Clause-Builder-Example](../../assets/images/yunio/where-clause-editor.png){:class="img-responsive"}
+![WHERE-Clause-Builder-Example](../../assets/images/yunio/documentation/where-clause-editor.png){:class="img-responsive"}
 {% else %}
 ![WHERE-Clause-Builder-Example](../../assets/images/where-clause-builder-2.png){:class="img-responsive"}
 {% endif %}
