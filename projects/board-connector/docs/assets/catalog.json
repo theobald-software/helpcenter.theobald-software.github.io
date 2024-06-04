@@ -1,5 +1,16 @@
 [
   {
+    "Version": "6.5.1.23",
+    "LegacyReleaseDate": "2024-06-04 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "General",
+        "Message": "List selection GUI: rename \"equal to\" to \"element of\""
+      }
+    ]
+  },
+  {
     "Version": "6.5.1.22",
     "LegacyReleaseDate": "2024-06-03 00:00:00Z",
     "Changes": [
