@@ -12,7 +12,7 @@ The editorial guidelines of Theobald software are a set of recommendations for w
 The editorial guidelines consist of the following parts:
 
 - [User Documentation Style guide (UDSG)](style-guide.md)
-- [Administrative / Folder structure / organizational information](#link) <!-- braucht eine bessere Bezeichnung--->
+- [Administrative / Folder structure / organizational information](files-and-folders.md) <!-- braucht eine bessere Bezeichnung--->
 - [Document template / Markdown Sample](markdown-sample.md)
 - [Conventions for creating screenshots](screenshot-conventions.md)
 - [Editorial processes - visualized ](https://theobaldsoftware.sharepoint.com/:f:/s/PresalesSupportProdMgmtDoc/EqxZ6qf_qmVMvwsmkZPIHD4BlR6W0kYCFxwQ7iRg7SJ1ZQ?e=Jy4oN5)
