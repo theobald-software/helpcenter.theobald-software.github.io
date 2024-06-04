@@ -521,6 +521,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://helpcenter.theobald-software.com/release-notes/TheobaldServer-4.3.4/</loc>
+         <lastmod>2024-06-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://helpcenter.theobald-software.com/release-notes/XtractForAlteryx-1.0.0/</loc>
          <lastmod>2024-06-04</lastmod>
          <changefreq>daily</changefreq>
