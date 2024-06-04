@@ -1,5 +1,27 @@
 [
   {
+    "Version": "1.32.13.3",
+    "LegacyReleaseDate": "2024-06-03 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "BW Cube",
+        "Message": "MDX: Fix structures (broken since 2.0)"
+      }
+    ]
+  },
+  {
+    "Version": "1.32.13.2",
+    "LegacyReleaseDate": "2024-06-03 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "BAPI",
+        "Message": "GUI now allows assignment of output runtime parameters to export parameters"
+      }
+    ]
+  },
+  {
     "Version": "1.32.13.0",
     "LegacyReleaseDate": "2024-05-30 21:52:04Z",
     "Changes": [
