@@ -27,7 +27,7 @@ The list of service runs consists of the following columns:
 
 Click a service run to display the corresponding extraction log :number-1:.
 
-![yunIO-Logs](../assets/images/yunio/yunIO-Run-Logs.png){:class="img-responsive"}
+![yunIO-Logs](../assets/images/yunio/documentation/yunIO-Run-Logs.png){:class="img-responsive"}
 
 ### Service Workers and Transaction Workers
 
@@ -37,7 +37,7 @@ The logs of the service worker and transaction worker consist of two sections:
 
 Click a timestamp to open the corresponding logs.
 
-![yunIO-Logs](../assets/images/yunio/yunIO-Logs.png){:class="img-responsive"}
+![yunIO-Logs](../assets/images/yunio/documentation/yunIO-Logs.png){:class="img-responsive"}
 
 #### How to Read Worker Logs
 

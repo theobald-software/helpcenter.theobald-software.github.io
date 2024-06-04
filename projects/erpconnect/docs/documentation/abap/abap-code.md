@@ -10,4 +10,4 @@ The following section shows how to execute ABAP code and retrieve the result in 
 {% include "erpconnect/abap-interpreter.md" %}
 
 
-![ABAPPad](site:assets/images/erpconnect/AbapPad.png)
+![ABAPPad](site:assets/images/erpconnect/documentation/AbapPad.png)

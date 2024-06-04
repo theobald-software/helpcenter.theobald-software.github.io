@@ -12,7 +12,7 @@ The {{ report }} settings consist of the following subsections:
 - [Selection Parameters](#selection-parameters) define the input for the yunIO service :number-4:.
 - [Output Columns](#output-columns) define the output of the yunIO service :number-5:.
 
-![yunIO-table](../../assets/images/yunio/report.png){:class="img-responsive"}
+![yunIO-table](../../assets/images/yunio/documentation/report.png){:class="img-responsive"}
 
 
 {% include "yunio/control-buttons.md" %}

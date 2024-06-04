@@ -11,7 +11,7 @@ The {{ transaction }} settings consist of the following subsections:
 - [Transaction](#transaction) displays input screens that represent the SAP GUI :number-3:.
 - [Skip Popups](#skip-popups) is available in the request body of the service and defines how to handle popup screen.
 
-![transaction-settings](../../assets/images/yunio/transaction-settings.png)
+![transaction-settings](../../assets/images/yunio/documentation/transaction-settings.png)
 
 {% include "yunio/control-buttons.md" %}
 

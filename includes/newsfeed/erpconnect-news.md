@@ -1,6 +1,16 @@
 <div class="grid cards" markdown>
 
 
+-   **:material-video-box: Webinar: Real-Time SAP Data Replication**
+
+    ---
+
+    [Join our webinar](https://theobald-software.com/en/webinars-en/fast-efficient-data-insights-real-time-sap-data-replication/) on 07/02/2024 - 11:00AM PDT to learn how to feed your analytics platform with new information from SAP in near real-time.
+
+    ---
+
+    :material-clock-time-two-outline: 2024-07-02
+
 -   **Welcome to the ERPConnect HelpCenter**
 
     ---

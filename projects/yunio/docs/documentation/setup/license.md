@@ -18,7 +18,7 @@ Follow the steps below to the upload a license file to yunIO:
 
 1. Download the yunIO license file yunIOLicense.json from the [Theobald Software Customer Portal](https://my.theobald-software.com/).
 2. Navigate to the :yunio-nav-license: *License* menu in the yunIO Designer.<br>
-![License](../../assets/images/yunio/license.png){:class="img-responsive"}
+![License](../../assets/images/yunio/documentation/license.png){:class="img-responsive"}
 3. Click **[Select License]** and navigate to the license file. 
 4. Select the license file yunIOLicense.json and click **[Open]**. The license data is displayed in the :yunio-nav-license: *License* menu.
 5. Check the validity of the license data.

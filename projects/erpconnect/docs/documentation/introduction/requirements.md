@@ -86,7 +86,7 @@ Copy the 32-Bit Version of librfc32.dll to the `\SysWoW64` folder.
     Copy the 64-bit version of librfc32.dll to the direcory `C:\Windows\System32`.
     To use ERPConnect in 32-Bit mode, copy the 32-Bit version of the librfc32.dll to the directory `C:\Windows\SysWOW64`.
 
-![librfc32dll]( site:assets/images/erpconnect/librfc32dll.png){:class="img-responsive" width="300px" }
+![librfc32dll]( site:assets/images/erpconnect/documentation/librfc32dll.png){:class="img-responsive" width="300px" }
 
 ### Security Settings
  	

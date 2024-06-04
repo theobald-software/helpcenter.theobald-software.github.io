@@ -16,4 +16,4 @@ The *TransactionRecorder* records SAP transactions and generates C# or VB code t
 7. Finish your transaction in SAP. <br>
 Once the transaction is finished, the code is generated and displayed in the *Transaction-Recorder*. 
 8. Use **[Ctrl+C]** and **[Ctrl+V]** to copy the code to your program via the clipboard.<br>
-![Tools-001]( site:assets/images/erpconnect/Tools-001.png){:class="img-responsive" }
+![Tools-001]( site:assets/images/erpconnect/documentation/Tools-001.png){:class="img-responsive" }

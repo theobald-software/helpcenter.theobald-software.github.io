@@ -9,7 +9,7 @@ The *Function-Template-Generator* provided by ERPConnect generates reusable XML 
 
 1. Run the *FunctionTemplateGenerator.exe* in the ERPConnect directory `C:\Program Files\ERPConnect` to start the *Function-Template-Generator*.
 2. Enter the name of a  BAPI/Function Module that you want to use as a template.<br>
-![Tools-003](site:assets/images/erpconnect/Tools-003.png)
+![Tools-003](site:assets/images/erpconnect/documentation/Tools-003.png)
 3. Click **[Generate XML Template]**. 
 4. The window "SAP Login" opens. Enter your SAP credentials and click **[OK]**.
 5. Save the XML file to your local hard drive. 

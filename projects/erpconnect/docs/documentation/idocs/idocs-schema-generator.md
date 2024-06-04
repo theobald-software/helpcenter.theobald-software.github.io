@@ -17,7 +17,7 @@ Loading IDoc schemas via XML usually has higher performance than loading them vi
 
 1. Run the *IdocSchemaGenerator.exe* in the ERPConnect directory `C:\Program Files\ERPConnect` to start the *IDoc-Schema-Generator*.
 2. Enter the IDoc type you want to generate. If needed, enter enhancements.<br>
-![Tools-002](site:assets/images/erpconnect/Tools-002.png)
+![Tools-002](site:assets/images/erpconnect/documentation/Tools-002.png)
 3. Click **[Generate Now!]**. 
 3. The window "SAP Login" opens. Enter your SAP credentials and click **[OK]**.
 4. Save the XML file to your local hard drive. 

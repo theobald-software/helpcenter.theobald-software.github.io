@@ -14,9 +14,9 @@ Follow the steps below to further restrict access on the service-level:
 1. Navigate to the  :yunio-nav-services:  *Services* menu.
 2. Click :yunio-nav-access-control: next to the service you want to restrict access to. 
 The service access settings of the service open.<br>
-![service-access-control](../../assets/images/yunio/service-access-control.png){:class="img-responsive"}
+![service-access-control](../../assets/images/yunio/documentation/service-access-control.png){:class="img-responsive"}
 3. Set the *Service Access* to **Custom**, see [Service Access](#service-access) :number-1:.<br>
-![service-access-control-settings](../../assets/images/yunio/service-access-control-settings.png){:class="img-responsive"}
+![service-access-control-settings](../../assets/images/yunio/documentation/service-access-control-settings.png){:class="img-responsive"}
 4. Assign a restriction level to existing users, see [Privileges](#privileges) :number-2:.
 5. Click **[Save]**.
 
@@ -34,7 +34,7 @@ When running the service, you are now prompted to enter user credentials (basic 
 
 To open the service access settings, click :yunio-nav-access-control: next to the service you want to restrict access to.
 
-![service-access-control](../../assets/images/yunio/service-access-control-settings0.png){:class="img-responsive"}
+![service-access-control](../../assets/images/yunio/documentation/service-access-control-settings0.png){:class="img-responsive"}
 
 #### Service Access
 

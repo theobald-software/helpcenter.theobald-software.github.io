@@ -13,7 +13,7 @@ description: Prerequisites and Installation
 
 ERPConnect is a flexible and modular .NET library that has been certified by SAP for integration with SAP ECC and SAP S/4HANA.
 
-![ERP-Connect](site:assets/images/erpconnect/architecture_erpconnect.png){:class="img-responsive" width="800px" }
+![ERP-Connect](site:assets/images/erpconnect/documentation/architecture_erpconnect.png){:class="img-responsive" width="800px" }
 
 ### Features
 

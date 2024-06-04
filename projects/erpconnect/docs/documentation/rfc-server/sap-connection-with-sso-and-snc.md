@@ -28,10 +28,10 @@ rfcServer.CanReceiveIdocs = true;
 rfcServer.IsUnicode = true;
 ```
   
-![RFCServer-Destination]( site:assets/images/erpconnect/RFCServer-Destination.png){:class="img-responsive"}
+![RFCServer-Destination]( site:assets/images/erpconnect/documentation/RFCServer-Destination.png){:class="img-responsive"}
 
 !!! note
     If SNC is used with Kerberos and Active Directory, the Active Directory account used for the RFC server must have a Service Principal Name corresponding to the partner name in SAP.
 
-![RFCServer-AD]( site:assets/images/erpconnect/RFCServer-AD.png)
+![RFCServer-AD]( site:assets/images/erpconnect/documentation/RFCServer-AD.png)
       

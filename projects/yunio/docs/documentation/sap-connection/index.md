@@ -27,9 +27,9 @@ Follow the steps below to set up an SAP connection that uses an SAP username and
 
 1. Navigate to the  :yunio-nav-connections: *Connections* menu at the left side navigation area of the Designer.
 2. Click **[Add Connection]** to create a new SAP connection or click :yunio-edit-connection: to edit an existing SAP connection.<br>
-![yunIO-Create-Connection](../../assets/images/yunio/web-ui.png){:class="img-responsive" }
+![yunIO-Create-Connection](../../assets/images/yunio/documentation/web-ui.png){:class="img-responsive" }
 3. Enter the system details of your SAP system in the subsection [*System*](settings.md/#system) :number-1:.<br>
-![yunIO-Create-Connection](../../assets/images/yunio/yunio-connections.png){:class="img-responsive" }
+![yunIO-Create-Connection](../../assets/images/yunio/documentation/yunio-connections.png){:class="img-responsive" }
 4. Make sure the toggle in the subsection [*Authentication*](settings.md/#authentication) :number-2: is set to :material-toggle-switch-off: *Plain* authentication.
 5. Enter the SAP username and password of an SAP system or dialogue user.
 6. Click **[Test Connection]** to validate the connection parameters :number-3:. <br>
@@ -51,11 +51,11 @@ Follow the steps below to set up an SAP connection that uses SNC:
 Your SAP Basis has to import and configure the same library on the application server and on the machine that runs yunIO.
 1. Navigate to the :yunio-nav-connections: *Connections* menu at the left side navigation area of the Designer.
 2. Click **[Add Connection]** to create a new SAP connection or click :yunio-edit-connection: to edit an existing SAP connection.<br>
-![yunIO-Create-Connection](../../assets/images/yunio/web-ui.png){:class="img-responsive" }
+![yunIO-Create-Connection](../../assets/images/yunio/documentation/web-ui.png){:class="img-responsive" }
 3. Enter the system details of your SAP system in the subsection *System*.
 4. Set the toggle in the subsection *Authentication* to :material-toggle-switch: *Secure Network Communication* authentication.
 5. Enter the complete path to the library location in the field **SNC library path**, e.g., `C:\Program Files\SAP\FrontEnd\SecureLogin\lib\sapcrypto.dll`.<br>
-![yunIO-Authentication](../../assets/images/yunio/yunio-authentication.png){:class="img-responsive" }
+![yunIO-Authentication](../../assets/images/yunio/documentation/yunio-authentication.png){:class="img-responsive" }
 6. Enter the SAP partner name configured for the SAP application server in the field **SNC partner name**, e.g., `p:SAPserviceERP/Alice@THEOBALD.LOCAL`.
 7. Click **[Test Connection]** to validate the connection parameters. <br>
 A window with a status message opens in the bottom right corner of the window.

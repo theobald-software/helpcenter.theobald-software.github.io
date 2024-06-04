@@ -15,38 +15,37 @@ hide:
 
 {% include "version-history/version-history-header.md" %}
 
+
 <div style="display:flex">
   <input class="input-search"
     id="search"
     type="text"
-    placeholder="🔍 Search (e.g., 'breaking', 'critical', '1.2.3', '>1.2.3', ...)"
-
-  />
+    placeholder="🔍 Search "
+    _="on keyup
+      if the event's key is 'Escape'
+        set my value to ''
+        trigger keyup
+      else
+        show <tr/> in <tbody/> when its textContent.toLowerCase() contains my value.toLowerCase()" />
 
   <button class="btn-clear md-button md-button--primary"
     _="on click set #search.value to '' then trigger keyup on #search">Clear</button>
 </div>
 
-<table id="catalogTable" style="table-layout: fixed;">
-  <thead>
-    <tr>
-      <th>Version</th>
-      <th style="width:12%;">Release Date</th>
-      <th>Component</th>
-	  <th style="width:5%;text-align:center;">Impact</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody id="catalogBody">
-    <!-- Table body will be populated dynamically -->
-  </tbody>
-</table>
+=== "yunIO"
 
-<!-- Modal HTML -->
-<div id="modal" class="modal">
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <div id="modalBody"></div>
-  </div>
-</div>
+    --8<-- "version-history/Yunio.md"
+	
+=== "Common"
 
+    --8<-- "version-history/Common.md"
+	
+=== "Theobald Extractors"
+
+    --8<-- "version-history/TheobaldExtractors.md"
+
+=== "Theobald Server"
+
+    --8<-- "version-history/TheobaldServer.md"
+	
+### 
