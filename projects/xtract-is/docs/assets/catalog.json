@@ -1,5 +1,32 @@
 [
   {
+    "Version": "7.7.0.1",
+    "LegacyReleaseDate": "2024-06-03 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "BW Cube",
+        "Message": "MDX: Fix structures (broken since 2.0)"
+      }
+    ]
+  },
+  {
+    "Version": "7.7.0.0",
+    "LegacyReleaseDate": "2024-06-03 12:00:29Z",
+    "Changes": [
+      {
+        "Product": "XtractIS",
+        "Component": "BAPI",
+        "Message": "Output result values can now be assigned to SSIS Variables"
+      },
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "BAPI",
+        "Message": "GUI now allows assignment of output runtime parameters to export parameters"
+      }
+    ]
+  },
+  {
     "Version": "7.6.2.0",
     "LegacyReleaseDate": "2024-05-29 17:31:52Z",
     "Changes": [
