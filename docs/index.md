@@ -9,7 +9,7 @@ hide:
 
 Choose your product:
 
-
+<!---
 <div class="grid cards" markdown>
 
 -   :products-xtract-universal: __Xtract Universal__
@@ -62,8 +62,8 @@ Choose your product:
 
 </div>
 
+-->
 
-<!---
 ::cards:: cols=3
 
 - title: Xtract Universal
@@ -87,7 +87,7 @@ Choose your product:
   url: https://help.theobald-software.com/en/board-connector/
   
 - title: yunIO
-  image: ./assets/images/yunIO.png
+  image: ./assets/images/YunIO.png
   content: SAP process automation via web services for cloud environments.
   url: https://help.theobald-software.com/en/yunio/
 
@@ -97,4 +97,3 @@ Choose your product:
   url: https://helpcenter.theobald-software.com/erpconnect
 
 ::/cards::
--->

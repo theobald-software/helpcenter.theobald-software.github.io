@@ -7,7 +7,7 @@ title: Files & Folders
 The following treeview illustrates the general folder structure in the HelpCenter repository.
 Highlighted folders are linked to each other via symlink.
 
-``` bash hl_lines="11 12 16 26 27 31"
+``` bash hl_lines="13 15 16 17 28 30 31 32"
 ├───.cache
 ├───.github
 │   └───workflows #contains the GitHub workflow for publishing
@@ -15,14 +15,16 @@ Highlighted folders are linked to each other via symlink.
 │   ├───assets #contains images and stylesheets for the product page
 │   │   ├───images
 │   │   │   └───editorial-guide #contains images for the editorial-guide
-│   │   └───stylesheets 
+│   │   ├───javascripts #contains custom functions
+│   │   └───stylesheets #contains custom styles
+│   ├───changelog #test environment for the new version history
 │   ├───editorial-guide #contains content of the editorial guide
-│   └───release-notes #contains release-notes for all products
+│   └───ui-style-guide #contains the (yunIO) UI style guide
 ├───files #contains downloadable files
-├───images #contains images for all products
-│   ├───[product name] #contains images for the specific product
-│   │   └───articles #contains images from the old Knowledge Base
-│   └───icons 
+├───images #contains images that are available in all products
+│   ├───articles #contains images for general Knowledge Base articles
+│   ├───components #contains general images of components (table, bapi, etc)
+│   └───logos #contains images of logos (not icons!)
 ├───includes #contains .md files that can be referenced in all products
 │   ├───articles #contains general content from the old Knowledge Base
 │   ├───[product name] #contains content for the specific product 
@@ -34,41 +36,52 @@ Highlighted folders are linked to each other via symlink.
 │       ├───docs #contains the content pages of the HelpCenter
 │       │   ├───assets #contains images, files and stylesheets for the product
 │       │   │   ├───files #reference to parent folder
-│       │   │   ├───images #reference to parent folder
-│       │   │   └───stylesheets
+│       │   │   ├───images 
+│       │   │   │   ├───articles #reference to parent folder
+│       │   │   │   ├───components #reference to parent folder
+│       │   │   │   ├───logos #reference to parent folder
+│       │   │   │   └───[product name] #contains images for the specific product
+│       │   │   │       ├───articles #contains images for product-specific Knowledge Base articles
+│       │   │   │       ├───documentation #contains images for user documentation
+│       │   │   │       └───getting started #contains images for getting started
+│       │   │   ├───javascripts #contains custom functions for the product
+│       │   │   └───stylesheets #contains custom styles for the product
 │       │   ├───documentation #contains the migrated Online Help
 │       │   └───knowledge-base #contains the migrated Knowledge Base
 │       ├───includes #reference to parent folder for local build
 │       ├───overrides #contains custom designs, e.g. banner & announcements
-│       └───site  #contains the built html product page
+│       └───site  #contains the built html pages of the product
 └───site #contains the built html pages of all products
 ```
 
 ### Files in `/docs` Folders
 
-Every product has a `/docs` folder that should contain the following files and folders:
+Every product has a `/docs` folder that should contain the following files and subfolders:
 
-``` bash 
+``` bash hl_lines="2 4 5 6"
 ├───assets
-│   ├───files
-│   │   └───... #downloadable files
+│   ├───files #contains downloadable files
 │   ├───images
-│   │	├───[product name] #contains images for the specific product
-│   │   │	└───articles #contains images from the old Knowledge Base (exists in every product)
-│   │   └───icons
-│   │       ├───components
-│   │       └───products
-│   └───stylesheets #contains additional/custom Designs for the product
+│   │   ├───articles #general images for Knowledge Base articles
+│   │   ├───components #general images for components (table, bapi, etc.)
+│   │   ├───logos #images of logos (not icons!)
+│   │	└───[product name] #contains images for the specific product
+│   │    	├───articles #contains images for product-specific Knowledge Base articles
+│   │    	├───documentation #contains images for user documentation
+│   │    	└───getting started #contains images for getting started
+│   ├───javascripts #contains custom functions for the product
+│   ├───stylesheets #contains custom styles for the product
+│   └───catalog.json #contains the new version-history of the product
 ├───documentation
-│   ├───about.md #contains disclaimers (former "About this Online Help"
+│   ├───about-this-documentation.md #contains disclaimers/general info about documentation
 │   ├───... #migrated content from the old Online Help
 │   ├───.pages #contains the navigation for this folder
 │   └───.meta.yml #contains front matter items that are added to all files in this folder
 ├───knowledge-base #contains articles (this folder is named "samples" in ERPConnect)
-│   ├───index.md #contains a list of articles
+│   ├───index.md #contains a list of all articles
 │   ├───... #migrated content from the old Knowledge Base
 │   └───.meta.yml #contains front matter items that are added to all files in this folder
-├───.pages
+├───.pages #contains the top navigation of the HelpCenter
 ├───changelog.md #contains the new version history
 ├───index.md #landing page of the product
 ├───getting-started.md #migrated "getting started" page from the old Online Help (if getting started consists of multiple pages, create a folder instead)

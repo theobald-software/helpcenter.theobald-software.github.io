@@ -1,8 +1,9 @@
 :root {
+	  /*
   --md-accent-fg-color: #FF003C;
   --md-color-accent: #FF003C;
   
-  /* color of links
+ color of links
   [data-md-color-primary=black] {
     --md-typeset-a-color: #FF003C;
   }
