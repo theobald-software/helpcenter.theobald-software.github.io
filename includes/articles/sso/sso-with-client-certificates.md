@@ -4,48 +4,48 @@ only in Xu and BC
 -->
 
 The following article describes the process of setting up Single-Sign-On (SSO) via Secure Network Communication (SNC) with SAP client certificates. 
-For more information on using SSO with {{ productName }}, refer to [Documentation: SAP Single-Sign-On](https://help.theobald-software.com/en/xtract-universal/advanced-techniques/sap-single-sign-on).
+For more information on using SSO with {{ productName }} ({{ Abbr }}), see [Documentation: SAP Single-Sign-On](https://help.theobald-software.com/en/xtract-universal/advanced-techniques/sap-single-sign-on).
 
 ### Requirements
 
 The usage of *SSO Certificate* requires the correct characteristics of the architecture:
 - Implement SAP SSO  with X.509 certificates without Secure Login Server, see [SAP-Documentation: Authentication Methods without Secure Login Server](https://help.sap.com/viewer/df185fd53bb645b1bd99284ee4e4a750/LATEST/en-US/7c45fe620ab9469083f7ab50a9008c37.html).
 - Implement Microsoft Certificate Store and Active Directory Certificate Templates for SAPGUI/RFC, see [Microsoft TechNet: Certificate Template](https://social.technet.microsoft.com/wiki/contents/articles/53249.active-directory-certificate-services-enterprise-ca-architecture.aspx#Certificate_Template).
-- Set up an enrollment agent for Xtract Universal in AD, see [Microsoft TechNet: Establish Restricted Enrollment Agents](https://social.technet.microsoft.com/wiki/contents/articles/10942.ad-cs-security-guidance.aspx#Establish_Restricted_Enrollment_Agents).
-- Install the SAP Secure Login Client on the server that runs Xtract Universal, see [SAP-Documentation: Secure Login Client](https://help.sap.com/viewer/8ac26ac20064447ba9e65b18e1bb747e/Cloud/en-US/b304e57f6393461dafd7affc2760b05b.html).<br>
+- Set up an enrollment agent for {{ productName }} in AD, see [Microsoft TechNet: Establish Restricted Enrollment Agents](https://social.technet.microsoft.com/wiki/contents/articles/10942.ad-cs-security-guidance.aspx#Establish_Restricted_Enrollment_Agents).
+- Install the SAP Secure Login Client on the server that runs {{ productName }}, see [SAP-Documentation: Secure Login Client](https://help.sap.com/viewer/8ac26ac20064447ba9e65b18e1bb747e/Cloud/en-US/b304e57f6393461dafd7affc2760b05b.html).<br>
 The Secure Login Client ensures that the correct SNC library is available for *SSO Certificate*.
 This library is used to open the SAP connection.
-- The XU service must run under a Windows AD Service account, see [Run an Xtract Universal Service under a Windows Service Account](https://help.theobald-software.com/en/xtract-universal/advanced-techniques/service-account).
-- Set up access restrictions for the Xtract Universal Designer and the XU server, see [Restrict Access to Windows AD Users (Kerberos Authentication)](https://help.theobald-software.com/en/xtract-universal/security/server-security#restrict-access-to-windows-ad-users-kerberos-authentication).<br>
+- The XU service must run under a Windows AD Service account, see [Run an {{ productName }} Service under a Windows Service Account](https://help.theobald-software.com/en/xtract-universal/advanced-techniques/service-account).
+- Set up access restrictions for the {{ productName }} Designer and the {{ Abbr }} server, see [Restrict Access to Windows AD Users (Kerberos Authentication)](https://help.theobald-software.com/en/xtract-universal/security/server-security#restrict-access-to-windows-ad-users-kerberos-authentication).<br>
 
 ### Process
 
 The following graphic illustrates the process of authentication via *SSO Certificate*:
 
-![SSO-Certificate](../assets/images/articles/sso/sso-certificate.png){:class="img-responsive"}
+![SSO-Certificate](../assets/images/{{ abbr }}/articles/sso/sso-certificate.png){:class="img-responsive"}
 
-1. The user of the BI tool (caller) triggers an extraction by calling the XU webservice of your Xtract product.
-The caller uses their Active Directory identity to authenticate against the XU webservice via HTTPS and SPNEGO.
-2. The XU server checks if a certificate for the caller is available in the Windows Certificate Store.
+1. The user of the BI tool (caller) triggers an extraction by calling the {{ Abbr }} webservice of your Xtract product.
+The caller uses their Active Directory identity to authenticate against the {{ Abbr }} webservice via HTTPS and SPNEGO.
+2. The {{ Abbr }} server checks if a certificate for the caller is available in the Windows Certificate Store.
 If no certificate is available for the caller, a new certificate is issued by the Windows enrollment agent.<br>
-	1. The XU server requests the Client certificate from the Windows Certificate Store via the Windows API.
+	1. The {{ Abbr }} server requests the Client certificate from the Windows Certificate Store via the Windows API.
 	If a certificate is available, the process continues with step 3.
 	If no certificate is available steps 2b) to 2e) are executed.<br>
-	2. The XU server requests an enrollment agent certificate from the Windows Certificate Store via the Windows API.
+	2. The {{ Abbr }} server requests an enrollment agent certificate from the Windows Certificate Store via the Windows API.
 	The enrollment agent certificate can be used to issue client certificates.<br>
-	3. The XU server receives the enrollment agent certificate from the Windows Certificate Store.<br>
-	4. If the requested certificate from 2a) is not found in the Windows Certificate Store, the XU server enrolls a new client certificate for the caller using the enrollment agent certificate.<br>
+	3. The {{ Abbr }} server receives the enrollment agent certificate from the Windows Certificate Store.<br>
+	4. If the requested certificate from 2a) is not found in the Windows Certificate Store, the {{ Abbr }} server enrolls a new client certificate for the caller using the enrollment agent certificate.<br>
 	5. The Windows Certificate Store receives the new client certificate from the Active Directory Services via MSRPC.
-3. The XU server receives the client certificate of the caller from the Windows Certificate Store.
-4. The XU server configures the SAP Secure Login Client via the Windows Registry.
-5. The Secure Login Client receives the caller's client certificate as specified by the XU server in step 4 from the Windows Certificate Store.
+3. The {{ Abbr }} server receives the client certificate of the caller from the Windows Certificate Store.
+4. The {{ Abbr }} server configures the SAP Secure Login Client via the Windows Registry.
+5. The Secure Login Client receives the caller's client certificate as specified by the {{ Abbr }} server in step 4 from the Windows Certificate Store.
 6. The Secure Login Client uses the client certificate of the caller to authenticate the caller's identity via SNC against SAP.
-7. The XU server extracts data with the identity and privileges of the caller.
-8. The XU server loads the extracted data from 7 to the tool that triggered the extraction.
+7. The {{ Abbr }} server extracts data with the identity and privileges of the caller.
+8. The {{ Abbr }} server loads the extracted data from 7 to the tool that triggered the extraction.
 
 ### Setting up SSO and SNC with Client Certificates
 
-Create a new SAP source system in your Xtract product to set up SSO with client certificates:
+Create a new SAP source system in {{ productName }} to set up SSO with client certificates:
 1. Navigate to **[Server > Manage Sources]** in the main menu of the Designer. The window "Manage Sources" opens.
 2. Click **[Add]** to create a new SAP source.
 3. Open the tab *General* and enter the connection details of your SAP system. <br>

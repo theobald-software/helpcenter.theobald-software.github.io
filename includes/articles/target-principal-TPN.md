@@ -11,7 +11,7 @@ The Target Principal Name (TPN) can be either a User Principal Name (UPN) or a S
 
 By default, the {{ productName }} Service is executed under the Local System Account. 
 
-![Service](../assets/images//articles/connection/{{ abbr }}_service.png){:class="img-responsive"}
+![Service](../assets/images/{{ abbr }}/articles/service.png){:class="img-responsive"}
 
 In the Active Directory (AD), this user acts as a computer account. 
 When dialing into a remote server where the service is not used in the local environment, both an UPN and an SPN can be used in the following form:
@@ -35,13 +35,13 @@ Accordingly, this user must have the necessary write permissions for the databas
 
 === "Local System Account"
 
-	![Default Log on](../assets/images/articles/connection/log_on_local_system_account.png){height="340px"} 
-	![Designer_Authentication](../assets/images/articles/connection/{{ abbr }}-Designer_Authentication.png){height="340px"}
+	![Default Log on](../assets/images/articles/log_on_local_system_account.png){height="340px"} 
+	![Designer_Authentication](../assets/images/{{ abbr }}/articles/Designer_Authentication.png){height="340px"}
 
 === "User Principal Name (UPN)"
 
-	![Default Log on](../assets/images/articles/connection/log_on_diesen_account.png){height="340px"}
-	![Designer_Authentication](../assets/images/articles/connection/{{ abbr }}-UPN_steffan@.png){height="340px"}
+	![Default Log on](../assets/images/articles/log_on_diesen_account.png){height="340px"}
+	![Designer_Authentication](../assets/images/{{ abbr }}/articles/UPN_steffan@.png){height="340px"}
 
 
 ### User Principal Name (UPN)
@@ -61,16 +61,16 @@ Follow the steps below to configure the service to use with UPN:
 
 1. Open *Windows Services (Local)*.
 2. Right-click the {{ productName }} service to open the service **Properties**.<br>
-![Service](../assets/images/articles/connection/{{ abbr }}_service.png){:class="img-responsive"}
+![Service](../assets/images/{{ abbr }}/articles/service.png){:class="img-responsive"}
 3. Open the *Log-on* tab and switch to **This Account**.
 4. Click  **[Browse]** to look up Windows AD users.
 5. Click **[Locations]** and select *Entire Directory*.<br>
-![Search UPN](../assets/images/articles/connection/select_user_or_service_account.png){:class="img-responsive"}
+![Search UPN](../assets/images/articles/select_user_or_service_account.png){:class="img-responsive"}
 6. Select an existing UPN or SPN and confirm with **[OK]**.<br>
-![Log On UPN](../assets/images/articles/connection/log_on_diesen_account.png){:class="img-responsive"}
+![Log On UPN](../assets/images/articles/log_on_diesen_account.png){:class="img-responsive"}
 9. Apply the changes by restarting the {{ productName }} service.
 10. Adjust the UPN in the Target Principal field when logging on to the {{ productName }} Designer.<br>
-![TPN UPN](../assets/images/articles/connection/{{ abbr }}-UPN_steffan@.png){:class="img-responsive"}
+![TPN UPN](../assets/images/{{ abbr }}/articles/UPN_steffan@.png){:class="img-responsive"}
 
 
 ### Service Principal Name (SPN)
@@ -87,7 +87,7 @@ An SPN is assigned in the following form:
 The service class and host name are required for authenticating a service instance to a logon account. 
 Domain Admin rights are required for processing *Manage Service Accounts* in Active Directory Users and Computers. 
 
-![AD User and computers - SPN](../assets/images/articles/connection/ad_spn.png){:class="img-responsive"}
+![AD User and computers - SPN](../assets/images/articles/ad_spn.png){:class="img-responsive"}
 
 ### Windows Service does not Start
 

@@ -24,7 +24,7 @@ hide:
 - [Collation Settings for MSSQL Server Destination](collation-sql-server.md)
 - [SAP Integration with Matillion Data Loader](create-a-custom-cennector-in-matillion-data-loader.md)
 - [Create Extractions via Commandline](config-command-line-tool.md)
-- [Deploy Extractions Using Git Version Control](deploy-extractions-using-Git-version-control.md)
+- [Deploy Extractions Using Git Version Control](deploy-extractions-using-git-version-control.md)
 - [Dynamic Runtime Parameter in KNIME Workflows](dynamic-runtime-paramater-within-KNIME-workflow.md)
 - [Execute & Schedule all Extractions](execute_all_defined_xu_extractions.md)
 - [Set Up OAuth 2.0 for the Google Cloud Storage Destination](google-cloud-storage-oauth.md)

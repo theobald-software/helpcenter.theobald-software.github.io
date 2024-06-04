@@ -15,7 +15,7 @@ hide:
 
 <div class="mdx-columns" markdown>
 
-- [Deploy Extractions Using Git Version Control](deploy-extractions-using-Git-version-control.md)
+- [Deploy Extractions Using Git Version Control](deploy-extractions-using-git-version-control.md)
 - [Load Balancing](load-balancer.md)
 - [Target Principal Field (TPN)](target-principal-TPN.md)
 

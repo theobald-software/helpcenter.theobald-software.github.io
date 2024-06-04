@@ -2,7 +2,7 @@
 The following article describes the required steps for setting up Single Sign-On (SSO) with Secure Network Communication (SNC) and Kerberos encryption.
 
 !!! note
-	SAP officially does not support the Kerberos Wrapper Library (gx64krb5.dll) anymore.** 
+	SAP officially does not support the Kerberos Wrapper Library (gx64krb5.dll) anymore.
 
 !!! warning
 	**Single Sign-On availability.** <br> 
@@ -37,7 +37,7 @@ When using an SNC solution from a third-party vendor, use either the Kerberos Wr
 1. Enable access control protocol HTTPS :number-1: within the tab *Web Server* settings.
 2. Reference an existing [X.509 certificate](https://help.theobald-software.com/en/xtract-universal/security/install-x.509-Certificate) :number-2:.<br>
 3. Click **[OK]** to confirm :number-3:.<br>
-![XU_WebServerSettings_https](../assets/images/articles/sso/XU-Server-Settings-Webserver-HTTPS.png){:class="img-responsive"}
+![WebServerSettings_https](../assets/images/articles/sso/Server-Settings-Webserver-HTTPS.png){:class="img-responsive"}
 
 Make sure to check the default ports, e.g., {% if page.product == "xtract-universal" %}*8165*{% else %}*8197*{% endif %} in {{ productName }}.
 
@@ -45,10 +45,10 @@ Make sure to check the default ports, e.g., {% if page.product == "xtract-univer
 ### Configuration of Windows AD Service Account
 
 Using SSO with Kerberos SNC, the {{ productName }} service must run under a dedicated service account.  
-To do so, follow the steps as outlined in [Running the Xtract Universal Service under a Windows Service Account](https://help.theobald-software.com/en/xtract-universal/advanced-techniques/service-account).
+To do so, follow the steps as outlined in [Running the {{ productName }} Service under a Windows Service Account](https://help.theobald-software.com/en/xtract-universal/advanced-techniques/service-account).
 
 !!! note
-	As of {{ productName }} version 5.0 SAP passwords are encrypted with a key that is derived from the Windows account that runs the XU service.
+	As of {{ productName }} version 5.0 SAP passwords are encrypted with a key that is derived from the Windows account that runs the {{ Abbr }} service.
 	The passwords can only be accessed from the same service account, when restoring a backup or moving the files to a different machine. 
 	If the service account changes, passwords need to be re-entered manually.
 
@@ -64,9 +64,9 @@ To do so, follow the steps as outlined in [Running the Xtract Universal Service 
 3. Open "Computer Management" by entering the following command: `compmgmt.msc`.
 4. Under **Local Users and Groups** select **Groups > Administrators**.
 5. Click **[Add]** :number-4: to add the service account to the local admin group :number-5:.<br>
-![XU_SSO_WinAD_SPN](../assets/images/articles/sso/admin-groups-xu-service-account.png)
+![SSO_WinAD_SPN](../assets/images/articles/sso/admin-groups-xu-service-account.png)
 6. Open "Local Security policy" by entering the following command: `secpol.msc`. <br>
-![XU_SSO_LocSecPol](../assets/images/articles/sso/XU-SSO-LocSecPol.png){:class="img-responsive"}
+![SSO_LocSecPol](../assets/images/articles/sso/SSO-LocSecPol.png){:class="img-responsive"}
 7. Select **[Local Policies > User Rights Assignment]**:
     - Act as part of the operating system 
     - Impersonate a client after authentication
@@ -86,19 +86,14 @@ To do so, follow the steps as outlined in [Running the Xtract Universal Service 
 	An existing [SAP connection](https://help.theobald-software.com/en/xtract-universal/getting-started/sap-connection) to a Single Application Server or Message Server is the prerequisite for using SSO with SNC.
 
 1. In the main menu of the {{ productName }} Designer, navigate to **[Server > Manage Sources]**. The window "Source Details" opens.<br>
-![XU_SSO_SAPSource](../assets/images/articles/sso/XU-SSO-SAP-Source.png){:class="img-responsive"}
-2. Select an existing SAP source and click **[Edit]** (pencil symbol).<br>
 ![Edit-SAP-source](../assets/images/articles/sso/edit-sap-source.png){:class="img-responsive"}
-3. Enable the **SNC** option :number-1: in the subsection *Authentication*.
+2. Select an existing SAP source and click **[Edit]** (pencil symbol).
+3. Enable the **SNC** option :number-1: in the subsection *Authentication*.<br>
+![SSO_SAPSource](../assets/images/articles/sso/SSO-SAP-Source.png){:class="img-responsive"}
 4. Enable the checkbox *Impersonate authenticated caller (SSO)* :number-2:.
 5. Enter the complete path of the Kerberos library in the field *SNC library*
 e.g., `C:\SNC\gx64krb5.dll` :number-3:.
-6. Enter the SPN of the SAP service account in the field *Partner name* :number-4:. Use the following notation: 
-
-	```
-	p:[SPN]@[Domain-FQDN-Uppercase]
-	```
-	
+6. Enter the SPN of the SAP service account in the field *Partner name* :number-4:. Use the following notation: `p:[SPN]@[Domain-FQDN-Uppercase]`.	
 7. Click **[Test Connection]** to verify your connection settings.
 8. Click **[OK]** to confirm.
 
@@ -108,10 +103,10 @@ e.g., `C:\SNC\gx64krb5.dll` :number-3:.
 
 ### SNC Activation in SAP
 
-In SAP, apply the Kerberos SNC settings as described in the [SAP Help](https://help.sap.com/viewer/e815bb97839a4d83be6c4fca48ee5777/7.5.9/EN-US/440ebf6c9b2b0d1ae10000000a114a6b.html).
+In SAP, apply the Kerberos SNC settings as described in the [SAP Documentation: Single Sign-On with Microsoft Kerberos SSP](https://help.sap.com/viewer/e815bb97839a4d83be6c4fca48ee5777/7.5.9/EN-US/440ebf6c9b2b0d1ae10000000a114a6b.html).
 
 ****
 #### Related Links
 - [Documentation: SSO and SNC with Kerberos Wrapper Library](https://help.theobald-software.com/en/xtract-universal/advanced-techniques/sap-single-sign-on#sso-and-snc-with-kerberos-wrapper-library)
 - [Documentation: X.509 certificate](https://help.theobald-software.com/en/xtract-universal/security/install-x.509-Certificate)
-- [Running the Xtract Universal Service under a Windows Service Account](https://help.theobald-software.com/en/xtract-universal/advanced-techniques/service-account).
+- [Running the {{ productName }} Service under a Windows Service Account](https://help.theobald-software.com/en/xtract-universal/advanced-techniques/service-account).
