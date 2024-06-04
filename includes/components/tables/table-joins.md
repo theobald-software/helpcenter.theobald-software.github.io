@@ -28,7 +28,7 @@ The following example shows how to join the tables KNA1 and KNVV.
 1. [Create a new service](../../getting-started.md/#create-a-service) of type {{ table }} or edit an existing service.
 2. [Look up](create-a-table-service.md/#look-up-an-sap-table-or-view) the first table or view, e.g, KNA1.
 3. Click :where-clause-add: to add the additional tables for the join, e.g., KNVV :number-1:.<br>
-![table-joins](../../assets/images/yunio/table-joins.png){:class="img-responsive"}
+![table-joins](../../assets/images/yunio/documentation/table-joins.png){:class="img-responsive"}
 4. Define the [output columns](settings.md/#output-columns) you want to extract for both tables :number-2:.
 5. Optional: define a [WHERE clause](where-clause.md) for the tables.
 
@@ -38,7 +38,7 @@ The following example shows how to join the tables KNA1 and KNVV.
 
 6. Click **[Add join]** :number-3:. The *Join Editor* opens.
 7. If necessary, change the default values of *Left Table*, *Right Table* and *Join Type*. <br>
-![join-editor](../../assets/images/yunio/join-editor.png){:class="img-responsive" width="700px"}
+![join-editor](../../assets/images/yunio/documentation/join-editor.png){:class="img-responsive" width="700px"}
 8. Click **[Join/Add]** :number-4:. A new join condition is added to the join. 
 9. Select a table column in the *Left Table* field and in the *Right Table* field to map the table contents. It is possible to add multiple join conditions.
 

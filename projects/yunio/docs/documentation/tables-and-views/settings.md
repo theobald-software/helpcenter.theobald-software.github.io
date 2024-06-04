@@ -13,7 +13,7 @@ The {{ table }} settings consist of the following subsections:
 - [WHERE Clause](#where-clause) and [WHERE Clause Editor](#where-clause) define what rows to extract :number-5:.
 - [Joins](#joins) joins two or more tables and extracts the result of the join :number-6:.
 
-![yunIO-table](../../assets/images/yunio/table-settings.png){:class="img-responsive"}
+![yunIO-table](../../assets/images/yunio/documentation/table-settings.png){:class="img-responsive"}
 
 
 {% include "yunio/control-buttons.md" %}

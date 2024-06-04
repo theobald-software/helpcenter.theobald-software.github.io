@@ -11,7 +11,7 @@ The {{ bapi }} settings consist of the following subsections:
 - [Advanced Settings](#advanced-settings) define how data is committed to and from SAP :number-3:.
 - [Function Module Interface Parameters](#function-module-interface-parameters) define what data is committed to and from SAP :number-4:.
 
-![yunIO-function-module](../../assets/images/yunio/bapi-settings.png){:class="img-responsive"}
+![yunIO-function-module](../../assets/images/yunio/documentation/bapi-settings.png){:class="img-responsive"}
 
 
 {% include "yunio/control-buttons.md" %}
@@ -48,7 +48,7 @@ Select import parameters using the drop-down list next to the parameter:
 | *Default <br>(defined in SAP)* | The item uses the default values from SAP. This is the default setting. |
 | *Constant* | The item uses the value that is entered in the **Value** field.|
  
-![BAPI export parameters](../../assets/images/yunio/BAPI-input.png){:class="img-responsive"}
+![BAPI export parameters](../../assets/images/yunio/documentation/BAPI-input.png){:class="img-responsive"}
 
 !!! tip
 	To use tables as input parameters, see [Table Parameters](#table-parameters).
@@ -57,7 +57,7 @@ Select import parameters using the drop-down list next to the parameter:
 Export parameters represent the output values sent from SAP back to the client after the execution of a Function Module.
 In the tab **Export** you can select the items you want to add to the output of the Function Module / BAPI and change their name: 
 
-![BAPI export parameters](../../assets/images/yunio/BAPI-output.png){:class="img-responsive"}
+![BAPI export parameters](../../assets/images/yunio/documentation/BAPI-output.png){:class="img-responsive"}
 
 !!! tip
 	To use tables as output parameters, see [Table Parameters](#table-parameters).
@@ -87,4 +87,4 @@ Select tables fields as input parameters for the service using the drop-down lis
 - Optional: change the name of the output parameter. Table parameters use the following naming format: `[Table name].[column name]`.
 
 
-![BAPI table](../../assets/images/yunio/BAPI-table.png){:class="img-responsive"}
+![BAPI table](../../assets/images/yunio/documentation/BAPI-table.png){:class="img-responsive"}

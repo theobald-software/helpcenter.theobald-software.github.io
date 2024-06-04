@@ -23,7 +23,7 @@ Follow the steps below to run SAP transactions from ERPConnect:
 
 Output:
 
-![Call-Transaction-003]( site:assets/images/erpconnect/Call-Transaction-003.png){:class="img-responsive"  }
+![Call-Transaction-003]( site:assets/images/erpconnect/documentation/Call-Transaction-003.png){:class="img-responsive"  }
 
 
 ****

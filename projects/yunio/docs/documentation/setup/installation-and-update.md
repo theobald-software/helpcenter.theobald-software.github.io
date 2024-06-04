@@ -15,7 +15,7 @@ Administrator rights are required to install yunIO.
 `yunIOSetup.exe` is an industry standard setup. Execute the `yunIOSetup.exe` file and follow the instructions of the setup.
 When starting the setup the following components can be selected: 
 
-![XU-Setup](../../assets/images/yunio/yunio-setup.png){:class="img-responsive"}
+![XU-Setup](../../assets/images/yunio/documentation/yunio-setup.png){:class="img-responsive"}
 
 |Component | Description |
 |:----|:---|
@@ -89,7 +89,7 @@ The port can be configured in the [:yunio-nav-settings: *Settings*](../server-se
 To check your current version number, navigate to the :yunio-nav-about: *About* menu in the yunIO Designer. <br>
 The version number is displayed next to the page title.
 
-![Demo_License](../../assets/images/yunio/About.png){:class="img-responsive"}
+![Demo_License](../../assets/images/yunio/documentation/About.png){:class="img-responsive"}
 
 
 ****

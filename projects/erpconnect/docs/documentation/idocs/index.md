@@ -22,5 +22,5 @@ For more information, see [SAP Help: Structure, Documentation, and Definition of
 The figure below shows the IDoc object structure of ERPConnect.<br>
 Each segment can contain child segments and every segment contains several field objects.
 
-![SAP-IDoc-Object-Model](site:assets/images/erpconnect/SAP-IDoc-Object-Model.png){:class="img-responsive" width="450"}
+![SAP-IDoc-Object-Model](site:assets/images/erpconnect/documentation/SAP-IDoc-Object-Model.png){:class="img-responsive" width="450"}
 

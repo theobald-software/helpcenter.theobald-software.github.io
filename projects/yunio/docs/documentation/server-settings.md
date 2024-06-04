@@ -11,7 +11,7 @@ Any changes made in this menu only take effect after clicking **[Save]** and res
 
 ### Services Endpoint
 
-![Server-Settings-Endpoints](../assets/images/yunio/server-settings-endpoints.png){:class="img-responsive" }
+![Server-Settings-Endpoints](../assets/images/yunio/documentation/server-settings-endpoints.png){:class="img-responsive" }
 
 #### Service URL Kind
 
@@ -42,7 +42,7 @@ The *OpenAPI Target Kind* defines properties that can be added to the Swagger/Op
 
 ### Transport Layer Security
 
-![Server-Settings-TLS](../assets/images/yunio/server-settings-tls.png){:class="img-responsive"}
+![Server-Settings-TLS](../assets/images/yunio/documentation/server-settings-tls.png){:class="img-responsive"}
 
 Transport Layer Security (TLS) protocol allows the user to communicate with the respective service in a secure way by encrypting the communication with that service (HTTPS).
 This requires the installation of an X.509 certificate, see [Install an X.509 Certificate](../knowledge-base/x509-certificate.md). <br>
@@ -60,13 +60,13 @@ A custom hostname can be entered in the [Services Endpoint](#services-endpoint) 
 3. After importing the desired X.509 certificate, manage its private keys to add a permission entry for the Windows user. 
 4. Click **[Pick Certificate]** and select an X.509 certificate from the list of available certificates.
 5. Enter "NT Service\yunIO Service" within the Object picker UI, check the granted permission and apply the changes. <br>
-![Access](../assets/images/yunio/x509-certificate-permission.png){:class="img-responsive" width="500px"}
+![Access](../assets/images/yunio/documentation/x509-certificate-permission.png){:class="img-responsive" width="500px"}
 
 For information on how to renew a certificate, see [Certificate Renewal for TLS](../knowledge-base/certificate-renewal.md).
 
 #### TLS enabled
 
-![Server-Settings-TLS-Enabled](../assets/images/yunio/server-settings-tls-enabled.png){:class="img-responsive"}
+![Server-Settings-TLS-Enabled](../assets/images/yunio/documentation/server-settings-tls-enabled.png){:class="img-responsive"}
 
 Once a certificate is selected, the option **TLS enabled** is available.<br>
 Enable or disable the usage of transport encryption for the web server.
@@ -79,7 +79,7 @@ Enable or disable the usage of transport encryption for the web server.
 
 ### Services, Designer and WebSockets
 
-![Server-Settings-Ports](../assets/images/yunio/server-settings-ports.png){:class="img-responsive" }
+![Server-Settings-Ports](../assets/images/yunio/documentation/server-settings-ports.png){:class="img-responsive" }
 
 In the subsections *Services*, *Designer* and *WebSockets* the ports for service consumption, Designer access and WebSocket configurations are defined. 
 

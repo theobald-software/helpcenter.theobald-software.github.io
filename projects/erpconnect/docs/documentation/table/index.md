@@ -35,13 +35,13 @@ Follow the steps below to create a custom function module Z_XTRACT_IS_TABLE in S
 		You can use an existing function group or create a new one. This is also valid for the development class (Package).
 		
 2. In the tab *Attributes* check *Remote Enabled*.
-![Z-Custom-Funcion-01](../../assets/images/erpconnect/Z_XTRACT_IS_TABLE00.png){:class="img-responsive" }
+![Z-Custom-Funcion-01](../../assets/images/erpconnect/documentation/Z_XTRACT_IS_TABLE00.png){:class="img-responsive" }
 3. define the following import imports:<br>
-![Z-Custom-Function-02](../../assets/images/erpconnect/Z_XTRACT_IS_TABLE01.png){:class="img-responsive" }
+![Z-Custom-Function-02](../../assets/images/erpconnect/documentation/Z_XTRACT_IS_TABLE01.png){:class="img-responsive" }
 4. Define the following table parameter:<br>
-![Z-Custom-Function-03](../../assets/images/erpconnect/Z_XTRACT_IS_TABLE02.png){:class="img-responsive" }
+![Z-Custom-Function-03](../../assets/images/erpconnect/documentation/Z_XTRACT_IS_TABLE02.png){:class="img-responsive" }
 5. Define the following exceptions:<br>
-![Z-Custom-Function-04](../../assets/images/erpconnect/Z_XTRACT_IS_TABLE03.png){:class="img-responsive" }
+![Z-Custom-Function-04](../../assets/images/erpconnect/documentation/Z_XTRACT_IS_TABLE03.png){:class="img-responsive" }
 6. Download the file [Z_XTRACT_IS_TABLE.txt](../../assets/files/ABAPcode/Z_XTRACT_IS_TABLE.txt){:download="Z_XTRACT_IS_TABLE"} that contains the ABAP code for the function module. 
 7. Use **[Ctrl + C]** and **[Ctrl + V]** to paste the ABAP code into the source code editor.
 8. Save the function module and activate it.

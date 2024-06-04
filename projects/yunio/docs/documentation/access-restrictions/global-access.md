@@ -17,13 +17,13 @@ To define custom access restrictions for services, see [Service Access](service-
 3. Restart the Windows yunIO service and connect to the Designer using an HTTPS connection.
 4. Navigate to the  :yunio-nav-access-control: *Access Control* menu.
 5. Set the *Server Access* to **Authenticated**, see [Server Access](#settings) :number-1:. <br>
-![Access_Control](../../assets/images/yunio/access-control2.png){:class="img-responsive"}
+![Access_Control](../../assets/images/yunio/documentation/access-control2.png){:class="img-responsive"}
 6. Assign a restriction level to existing users, see [Privileges](#privileges) :number-2:.
 7. Click **[Save]**. 
 8. Restart the Windows yunIO service again.
 
 When connecting to the Designer, you are now prompted to enter user credentials:<br>
-![Login](../../assets/images/yunio/yunio-login.png){:class="img-responsive" }
+![Login](../../assets/images/yunio/documentation/yunio-login.png){:class="img-responsive" }
 
 !!! note
     If you lock yourself out and cannot login to the Designer, delete the `permission.json` file in the installation directory of yunIO e.g., `C:\Program Files\Theobald Software\yunIO\config\servers\permission.json`.
@@ -38,7 +38,7 @@ When connecting to the Designer, you are now prompted to enter user credentials:
 
 To open the global access settings, navigate to the  :yunio-nav-access-control: *Access Control* menu.
 
-![Access_Control](../../assets/images/yunio/access-control.png){:class="img-responsive"}
+![Access_Control](../../assets/images/yunio/documentation/access-control.png){:class="img-responsive"}
 
 #### Server Access
 

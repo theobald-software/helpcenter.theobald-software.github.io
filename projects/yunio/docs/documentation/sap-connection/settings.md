@@ -12,7 +12,7 @@ The connection settings consist of the following subsections:
 - [Authentication](#authentication) defines the login details of the SAP user :number-2:.
 - [Test Connection](#test-connection) verifies the system and authentication data :number-3:.
 
-![yunIO-Create-Connection](../../assets/images/yunio/yunio-connections.png){:class="img-responsive" }
+![yunIO-Create-Connection](../../assets/images/yunio/documentation/yunio-connections.png){:class="img-responsive" }
 
 ### System
 
@@ -54,7 +54,7 @@ SNC enables authentication and transport encryption between SAP systems and thir
 
 Use the toggle to switch between the authentication methods.
 
-![yunIO-Authentication](../../assets/images/yunio/yunio-authentication.png){:class="img-responsive" }
+![yunIO-Authentication](../../assets/images/yunio/documentation/yunio-authentication.png){:class="img-responsive" }
 
 === ":material-toggle-switch-off: Plain"
 

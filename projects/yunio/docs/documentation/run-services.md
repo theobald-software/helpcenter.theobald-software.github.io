@@ -12,10 +12,10 @@ Follow the steps below to pass parameters and testrun the service directly in yu
 
 1. Navigate to the  :yunio-nav-services: *Services* menu at the left side navigation area of the Designer.
 2. Click :yunio-run: to open the *Run Service* menu of a service.<br>
-![yunIO-Services](../assets/images/yunio/yunio-run-services1.png){:class="img-responsive" }
+![yunIO-Services](../assets/images/yunio/documentation/yunio-run-services1.png){:class="img-responsive" }
 2. If [Access Restrictions](./access-restrictions/index.md) are enabled, enter valid user credentials :number-1:. 
 If no restrictions apply, the credentials input is grayed out.<br>
-![Run-Service](../assets/images/yunio/run-service.png){:class="img-responsive" }
+![Run-Service](../assets/images/yunio/documentation/run-service.png){:class="img-responsive" }
 3. If the service requires input parameters, enter values for the parameters :number-2:. Use the **[ + ]** button to display nested items.
 The depicted example uses an input parameter *NAME*.
 
@@ -50,7 +50,7 @@ The service definition URL can be used by third-party-tools to load the meta dat
 The service definition is saved as a JSON file that defines how to run the service. 
 The JSON file can be imported into third-party tools.
 
-![yunIO-Services](../assets/images/yunio/yunio-run-services-https.png){:class="img-responsive" }
+![yunIO-Services](../assets/images/yunio/documentation/yunio-run-services-https.png){:class="img-responsive" }
 
 {% include "yunio/3rd-party-integration.md" %}
 
@@ -63,13 +63,13 @@ yunIO supports the http methods `POST` and `GET`, see [POST vs GET](#post-vs-get
 
 	Parameters are listed in the request body of a service.
 	Edit the request body to assign values to the parameters. The depicted example uses an input parameter *NAME*:<br>
-	![yunIO-HTTP-POST](../assets/images/yunio/http-post.png){:class="img-responsive" }
+	![yunIO-HTTP-POST](../assets/images/yunio/documentation/http-post.png){:class="img-responsive" }
 
 === "GET"
 
 	Parameters are available as query parameters in the service URL. 
 	Use query parameters to assign values or add the values directly in the service URL. The depicted example uses an input parameter *NAME*:<br>
-	![yunIO-HTTP-GET](../assets/images/yunio/http-get.png){:class="img-responsive" }
+	![yunIO-HTTP-GET](../assets/images/yunio/documentation/http-get.png){:class="img-responsive" }
 
 !!! note
     If URL parameters contain characters other than `A–Z a–z 0–9 - _ . ! ~ * ' ( )` use an escape sequence for the characters. 
