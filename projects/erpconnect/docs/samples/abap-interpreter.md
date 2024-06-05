@@ -9,4 +9,4 @@ The following sample shows how to create a simple ABAP interpreter that executes
 
 {% include "erpconnect/abap-interpreter.md" %}
 
-![ABAPPad]( site:assets/images/erpconnect/samples/AbapPad.png)
+![ABAPPad]( site:assets/images/erpconnect/documentation/AbapPad.png)
