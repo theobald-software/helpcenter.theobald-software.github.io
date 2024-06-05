@@ -89,7 +89,7 @@ Choose your product:
 - title: yunIO
   image: ./assets/images/YunIO.png
   content: SAP process automation via web services for cloud environments.
-  url: https://help.theobald-software.com/en/yunio/
+  url: https://helpcenter.theobald-software.com/yunio
 
 - title: ERPconnect
   image: ./assets/images/ERPConnect.png
