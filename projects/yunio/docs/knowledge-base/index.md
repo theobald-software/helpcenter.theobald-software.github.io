@@ -47,7 +47,7 @@ hide:
 - [Integrate yunIO with Power Automate and the AI Builder](integrate-yunio-with-power-automate-and-the-ai-builder.md)
 - [Formats and Conversions in Power Automate](conversion-in-power-automate.md)
 - [Sync Copilot with SAP using Power Automate and yunIO :material-alert-decagram:](copilot-with-yunio.md)
-- [Sync Dynamics 365 with SAP using Power Automate and yunIO](dynamics-with-yunio.md)
+- [Sync Dynamics 365 with SAP using Power Automate and yunIO](dynamics-365-with-yunio.md)
 - [Sync Salesforce with SAP using Power Automate and yunIO](salesforce-power-automate-scenario.md)
 - [Sync SharePoint Custom Lists with SAP using Power Automate and yunIO](sharepoint-purchase-requisition-with-yunio.md)
 - [Sync MS Teams with SAP using Power Automate and yunIO](teams-sick-leave-with-yunio.md)

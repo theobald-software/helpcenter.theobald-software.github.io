@@ -17,6 +17,7 @@ hide:
 
 - [Deploy Extractions Using Git Version Control](deploy-extractions-using-git-version-control.md)
 - [Load Balancing](load-balancer.md)
+- [Proxy Server Settings](proxy-server-settings.md)
 - [Target Principal Field (TPN)](target-principal-TPN.md)
 
 </div>

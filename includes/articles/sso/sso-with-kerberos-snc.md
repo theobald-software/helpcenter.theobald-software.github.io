@@ -39,7 +39,7 @@ When using an SNC solution from a third-party vendor, use either the Kerberos Wr
 3. Click **[OK]** to confirm :number-3:.<br>
 ![WebServerSettings_https](../assets/images/articles/sso/Server-Settings-Webserver-HTTPS.png){:class="img-responsive"}
 
-Make sure to check the default ports, e.g., {% if page.product == "xtract-universal" %}*8165*{% else %}*8197*{% endif %} in {{ productName }}.
+Make sure to check the default ports, e.g., {% if page.meta.product == "xtract-universal" %}*8165*{% else %}*8197*{% endif %} in {{ productName }}.
 
 
 ### Configuration of Windows AD Service Account

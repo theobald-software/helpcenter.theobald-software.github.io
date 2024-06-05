@@ -2,7 +2,7 @@
 only in Xu and BC
 -->
 
-The following article describes the process of running extractions {% if page.product == "xtract-universal" %}for [pull destinations](https://help.theobald-software.com/en/xtract-universal/destinations#pull-and-push-destinations) {% endif %}using Single-Sign-On (SSO) with SAP Logon-Ticket.
+The following article describes the process of running extractions {% if page.meta.product == "xtract-universal" %}for [pull destinations](https://help.theobald-software.com/en/xtract-universal/destinations#pull-and-push-destinations) {% endif %}using Single-Sign-On (SSO) with SAP Logon-Ticket.
 For more information on using SSO with {{ productName }} ({{ Abbr }}), see [Documentation: SAP Single-Sign-On](https://help.theobald-software.com/en/xtract-universal/advanced-techniques/sap-single-sign-on).
 
 
