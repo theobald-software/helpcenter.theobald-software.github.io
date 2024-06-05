@@ -1,5 +1,5 @@
 ---
-title: Dynamic Runtime Parameter in KNIME Workflows
+title: Dynamic Runtime Parameters in KNIME Workflows
 description: Dynamic Runtime Parameter within KNIME Workflow
 ---
 

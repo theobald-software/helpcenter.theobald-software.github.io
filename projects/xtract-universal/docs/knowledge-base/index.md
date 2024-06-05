@@ -15,31 +15,20 @@ hide:
 
 <div class="mdx-columns" markdown>
 
-- [Integration in Azure Data Factory using Commandline](adf-integration-using-command-line.md)
-- [Integration in Azure Data Factory using Webservices](adf-integration-using-webservices.md)
 - [Post-Processing Column Name Style](adjust-column-name-style.md)
-- [Authentication via Azure Active Directory for Azure Storage](authentication-via-azure-ad-with-azure-storage.md)
+
 - [Call Dynamic Extractions with Variables in ADF](call-dynamic-extractions-with-variables-in-adf.md)
 - [Call Extractions via Script](call-extraction-via-script.md)
-- [Collation Settings for MSSQL Server Destination](collation-sql-server.md)
-- [SAP Integration with Matillion Data Loader](create-a-custom-cennector-in-matillion-data-loader.md)
 - [Create Extractions via Commandline](config-command-line-tool.md)
 - [Deploy Extractions Using Git Version Control](deploy-extractions-using-git-version-control.md)
-- [Dynamic Runtime Parameter in KNIME Workflows](dynamic-runtime-paramater-within-KNIME-workflow.md)
 - [Execute & Schedule all Extractions](execute_all_defined_xu_extractions.md)
-- [Set Up OAuth 2.0 for the Google Cloud Storage Destination](google-cloud-storage-oauth.md)
 - [Insert Extraction Events into Windows Logs](insert-extraction-events-into-the-windows-logs.md)
-- [Integrate SAP Data into a Snowflake Data Warehouse](integrate_sap_data_into_a_Snowflake_data_warehouse.md)
-- [KNIME Integration via SAP Reader (Theobald Software)](knime-integration-via-sap-reader.md)
-- [Link a BEx query with a Hierarchy in Tableau](link-bex-query-with-hierarchy.md)
 - [Load Balancing](load-balancer.md)
 - [Log Access via Web Service](log-access-via-http.md)
 - [SAP Access with {{ productName }} and Powershell](sap-access-with-xtract-universal-and-powershell.md)
-- [Run an ADF Pipeline when an SAP Extraction File is uploaded to Azure Storage](run-an-ADF-pipeline-when-sap-extraction-file-is-successfully-uploaded-to-Azure-storage.md)
 - [Run {{ productName }} in a VM on AWS EC2](run-xu-in-aws.md)
 - [Target Principal Field (TPN)](target-principal-TPN.md)
 - [Proxy Server Settings in {{ productName }}](proxy-server-settings.md)
-- [Use Computed Query Parameters for SSRS](xu-ssrs-parameterizing-in-vs.md)
 
 </div>
 
@@ -61,7 +50,6 @@ hide:
 
 ---
 
-
 ### :material-cloud-key: SSO Scenarios
 
 <div class="mdx-columns" markdown>
@@ -75,6 +63,25 @@ hide:
 
 ---
 
+### :material-database: Destinations & Post-Processing
+
+<div class="mdx-columns" markdown>
+- [Authentication via Azure Active Directory for Azure Storage](authentication-via-azure-ad-with-azure-storage.md)
+- [Collation Settings for MSSQL Server Destination](collation-sql-server.md)
+- [Dynamic Runtime Parameter in KNIME Workflows](dynamic-runtime-paramater-within-KNIME-workflow.md)
+- [Integration in Azure Data Factory using Commandline](adf-integration-using-command-line.md)
+- [Integration in Azure Data Factory using Webservices](adf-integration-using-webservices.md)
+- [Integrate SAP Data into a Snowflake Data Warehouse](integrate_sap_data_into_a_Snowflake_data_warehouse.md)
+- [KNIME Integration via SAP Reader (Theobald Software)](knime-integration-via-sap-reader.md)
+- [Link a BEx query with a Hierarchy in Tableau](link-bex-query-with-hierarchy.md)
+- [SAP Integration with Matillion Data Loader](create-a-custom-cennector-in-matillion-data-loader.md)
+- [Set Up OAuth 2.0 for the Google Cloud Storage Destination](google-cloud-storage-oauth.md)
+- [Run an ADF Pipeline when an SAP Extraction File is uploaded to Azure Storage](run-an-ADF-pipeline-when-sap-extraction-file-is-successfully-uploaded-to-Azure-storage.md)
+- [Use Computed Query Parameters for SSRS](xu-ssrs-parameterizing-in-vs.md)
+
+</div>
+
+---
 
 ### :component-bapi: Xtract BAPI
 
