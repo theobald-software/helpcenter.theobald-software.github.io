@@ -23,4 +23,4 @@ By clicking a button, the SAP GUI is launched and the transaction MMBE (stock ov
 
 Output:
 
-![MMBE1_kl]( site:assets/images/erpconnect/Call-Transaction-003.png){:class="img-responsive"}
+![MMBE1_kl]( site:assets/images/erpconnect/samples/Call-Transaction-003.png){:class="img-responsive"}

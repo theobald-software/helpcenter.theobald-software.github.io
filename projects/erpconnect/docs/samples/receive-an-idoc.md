@@ -9,7 +9,7 @@ To configure your SAP system to send *MATMAS* IDocs, see [Set Up a Test Environm
 
 {% include "erpconnect/receive-an-idoc.md" %}
 
-![IdocReceiver]( site:assets/images/erpconnect/SAP-Receive-IDoc.png){:class="img-responsive"}
+![IdocReceiver]( site:assets/images/erpconnect/samples/SAP-Receive-IDoc.png){:class="img-responsive"}
 
 
 

@@ -8,7 +8,7 @@ An existing RFC destination is necessary for sending IDocs.
 
 1. Use the transaction **SM59** to create a new RFC destination.
 2. Fill the following fields of the destination: <br>
-![Maintain-RFC-Destination-001](site:assets/images/erpconnect/Maintain-RFC-Destination-001.png)
+![Maintain-RFC-Destination-001](site:assets/images/erpconnect/documentation/Maintain-RFC-Destination-001.png)
 	- Unique name of the new destination e.g., ERPTEST.
 	- Connection Type = T (for TCP/IP).
 	- Description.
@@ -17,7 +17,7 @@ An existing RFC destination is necessary for sending IDocs.
 3. Save the destination.
 4. To test the RFC-Destination, click the button **[Test Connection]** while the program is running.<br> 
 If everything works well, you should see a screen like the one below:<br>
-![rfcdestination02](site:assets/images/erpconnect/Maintain-RFC-Destination-002.png)
+![rfcdestination02](site:assets/images/erpconnect/documentation/Maintain-RFC-Destination-002.png)
 
 An example for a simple RFC server program can be found in section [RFC-Server](site:documentation/rfc-server/create-rfc-functions/)
 
