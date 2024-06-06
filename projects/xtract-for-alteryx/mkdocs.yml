@@ -207,5 +207,8 @@ extra:
       link: https://theobald-software.com/en/newsletter/
       name: Newsletter
   productName: Xtract for Alteryx
-  #variable: runtime parameter
-  #variables: runtime parameters
+  settings: extraction settings
+  settingsBtn: __[Extraction Settings]__
+  parameterBtn: __[Edit parameters]__
+  variable: runtime parameter
+  variables: runtime parameters

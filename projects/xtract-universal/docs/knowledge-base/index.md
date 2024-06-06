@@ -15,16 +15,13 @@ hide:
 
 <div class="mdx-columns" markdown>
 
-- [Post-Processing Column Name Style](adjust-column-name-style.md)
-
-- [Call Dynamic Extractions with Variables in ADF](call-dynamic-extractions-with-variables-in-adf.md)
 - [Call Extractions via Script](call-extraction-via-script.md)
 - [Create Extractions via Commandline](config-command-line-tool.md)
 - [Deploy Extractions Using Git Version Control](deploy-extractions-using-git-version-control.md)
-- [Execute & Schedule all Extractions](execute_all_defined_xu_extractions.md)
+- [Execute & Schedule all Extractions using an SSIS Package](execute_all_defined_xu_extractions.md)
 - [Insert Extraction Events into Windows Logs](insert-extraction-events-into-the-windows-logs.md)
 - [Load Balancing](load-balancer.md)
-- [Log Access via Web Service](log-access-via-http.md)
+<!--- - [Log Access via Web Service](log-access-via-http.md) -->
 - [SAP Access with {{ productName }} and Powershell](sap-access-with-xtract-universal-and-powershell.md)
 - [Run {{ productName }} in a VM on AWS EC2](run-xu-in-aws.md)
 - [Target Principal Field (TPN)](target-principal-TPN.md)
@@ -34,7 +31,7 @@ hide:
 
 ---
 
-### :simple-sap: SAP Connection
+### :simple-sap: SAP
 
 <div class="mdx-columns" markdown>
 
@@ -63,39 +60,45 @@ hide:
 
 ---
 
-### :material-database: Destinations & Post-Processing
+### :material-database: Destinations
 
 <div class="mdx-columns" markdown>
-- [Authentication via Azure Active Directory for Azure Storage](authentication-via-azure-ad-with-azure-storage.md)
-- [Collation Settings for MSSQL Server Destination](collation-sql-server.md)
-- [Dynamic Runtime Parameter in KNIME Workflows](dynamic-runtime-paramater-within-KNIME-workflow.md)
-- [Integration in Azure Data Factory using Commandline](adf-integration-using-command-line.md)
-- [Integration in Azure Data Factory using Webservices](adf-integration-using-webservices.md)
-- [Integrate SAP Data into a Snowflake Data Warehouse](integrate_sap_data_into_a_Snowflake_data_warehouse.md)
-- [KNIME Integration via SAP Reader (Theobald Software)](knime-integration-via-sap-reader.md)
-- [Link a BEx query with a Hierarchy in Tableau](link-bex-query-with-hierarchy.md)
-- [SAP Integration with Matillion Data Loader](create-a-custom-cennector-in-matillion-data-loader.md)
-- [Set Up OAuth 2.0 for the Google Cloud Storage Destination](google-cloud-storage-oauth.md)
-- [Run an ADF Pipeline when an SAP Extraction File is uploaded to Azure Storage](run-an-ADF-pipeline-when-sap-extraction-file-is-successfully-uploaded-to-Azure-storage.md)
-- [Use Computed Query Parameters for SSRS](xu-ssrs-parameterizing-in-vs.md)
+- [:material-microsoft-azure: Authentication via Azure Active Directory for Azure Storage](authentication-via-azure-ad-with-azure-storage.md)
+- [:material-microsoft-azure: Integration in Azure Data Factory using Commandline](adf-integration-using-command-line.md)
+- [:material-microsoft-azure: Integration in Azure Data Factory using Webservices](adf-integration-using-webservices.md)
+- [:material-microsoft-azure:Call Dynamic Extractions with Variables in ADF](call-dynamic-extractions-with-variables-in-adf.md)
+- [:material-microsoft-azure: Run an ADF Pipeline when an SAP Extraction File is uploaded to Azure Storage](run-an-ADF-pipeline-when-sap-extraction-file-is-successfully-uploaded-to-Azure-storage.md)
+
+- [:simple-knime: KNIME Integration via SAP Reader (Theobald Software)](knime-integration-via-sap-reader.md)
+- [:simple-knime: Dynamic Runtime Parameter in KNIME Workflows](dynamic-runtime-paramater-within-KNIME-workflow.md)
+
+- [:simple-microsoftsqlserver: Collation Settings for MSSQL Server Destination](collation-sql-server.md)
+- [:simple-microsoftsqlserver: Post-Processing Column Name Style](adjust-column-name-style.md)
+- [:simple-microsoftsqlserver: Use Computed Query Parameters for SSRS](xu-ssrs-parameterizing-in-vs.md)
+
+- [:material-google-cloud: Set Up OAuth 2.0 for the Google Cloud Storage Destination](google-cloud-storage-oauth.md)
+
+- [:material-snowflake: Integrate SAP Data into a Snowflake Data Warehouse](integrate_sap_data_into_a_Snowflake_data_warehouse.md)
+- [:material-snowflake: SAP Integration with Matillion Data Loader](create-a-custom-cennector-in-matillion-data-loader.md)
+
+- [:simple-tableau: Link a BEx query with a Hierarchy in Tableau](link-bex-query-with-hierarchy.md)
 
 </div>
 
 ---
 
-### :component-bapi: Xtract BAPI
+### :component-bapi: BAPI
 
 <div class="mdx-columns" markdown>
 
-- [Write CATS Data to SAP](write-cats-data-to-sap.md)
-- [Write Product Data to SAP](write-product-data-to-sap.md)
+- [Read Data from Cluster Fields in Tables PCL1 and PCL2 (Payroll)](read-data-from-cluster-fields-in-the-tables-pcl1-and-pcl2-payroll.md)
 
 </div>
 
 ---
 
 
-### :component-deltaq: Xtract DeltaQ
+### :component-deltaq: DeltaQ
 
 <div class="mdx-columns" markdown>
 
@@ -105,7 +108,7 @@ hide:
 
 ---
 
-### :component-report: Xtract Report
+### :component-report: Report
 
 <div class="mdx-columns" markdown>
 
@@ -117,13 +120,12 @@ hide:
 
 ---
 
-### :component-table: Xtract Table
+### :component-table: Table
 
 <div class="mdx-columns" markdown>
 
 - [Change Data Capture with CDHDR](change-data-capture-with-cdhdr.md)
 - [Delta Table Extraction](delta-table-extraction.md)
-- [Dynamization of WHERE Conditions](dynamization-of-where-conditions.md)
 - [Read data from Cluster Fields in Tables PCL1 and PCL2 (Payroll)](read-data-from-cluster-fields-in-the-tables-pcl1-and-pcl2-payroll)
 - [Working with Lists in the WHERE-Clause Editor](where-clause-editor-lists.md)
 - [Working with LIKE operand in WHERE-Clauses](like-operand-where-clause.md)
@@ -132,7 +134,7 @@ hide:
 
 ---
 
-### :component-table-cdc: Xtract Table CDC
+### :component-table-cdc: Table CDC
 
 <div class="mdx-columns" markdown>
 

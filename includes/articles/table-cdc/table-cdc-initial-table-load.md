@@ -8,17 +8,18 @@ The article applies in the following situation:
 
 !!! note
 	The custom function module /THEO/READ_TABLE used by the Table CDC component to extract the table does not support background mode on SAP releases < 7.10.
-	The background mode would avoid the timeout mentioned above.
+	The background mode avoids the timeout mentioned above.
 
 ### Recommended Workflow
 
-1. Set up TableCDC. Make sure the option **Extract table on first run** is deactivated.<br>
+1. Create a {{ tablecdc }} extraction. Make sure the option **Extract table on first run** is deactivated.<br>
 ![table-cdc-delta-init](../assets/images/articles/table-cdc/table-cdc-delta-init.png){:class="img-responsive"}
-2. Run the {{ tablecdc }} {{ component }} to initialize the delta extractions before extracting the initial table with the {{ table }} {{ component }}. 
+2. Run the {{ tablecdc }} extraction to initialize the delta extractions.
 This ensures that no data is missed between table extraction and delta initialization.
-3. Set up a regular table extraction with the {{ table }} {{ component }}. Make sure to select an SAP standard function module, e.g., RFC_READ_TABLE.<br>
+3. Create a regular {{ table }} extraction using the {{ table }} {{ component }}. 
+Make sure to select an SAP standard function module, e.g., RFC_READ_TABLE.<br>
 ![table-cdc-initial-table-load-extraction-settings](../assets/images/articles/table-cdc//table-cdc-initial-table-load-extraction-settings.png){:class="img-responsive"}
-4. Run the table extraction.
+4. Run the {{ table }} extraction.
 
 ****
 

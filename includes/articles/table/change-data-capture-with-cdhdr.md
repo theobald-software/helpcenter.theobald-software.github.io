@@ -33,7 +33,9 @@ The following steps describe how to only extract the data from MAKT that has bee
 The OBJECTID from CDHDR and MATNR from MAKT have same entries and thus form an inner join condition.<br>
 7. Click **[Add]** and confirm your selection with **[OK]**.
 8. Open the tab *WHERE Clause* and enter the following filter criteria:
-`CDHDR~UDATE = '#{ DateTime.Now.ToString("yyyyMMdd") }#'`. <br>
+```
+CDHDR~UDATE = '#{ DateTime.Now.ToString("yyyyMMdd") }#'
+```
 This criteria uses script expressions to get the current date in the SAP format ("yyyyMMdd").
 ![CDHDR-MAKT-where](../assets/images/articles/table/CDHDR-MAKT-where.png){:class="img-responsive"}
 9. Click **[Load live review]** to check the results.

@@ -1,5 +1,5 @@
 ---
-title: Execute & Schedule all Extractions
+title: Execute & Schedule all Extractions using an SSIS Package
 description: execute_all_defined_xu_extractions 
 author: Fabian Steffan
 ---

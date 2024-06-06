@@ -25,9 +25,9 @@ The date is provided as a parameter at runtime.
 	![Where-Clause_Date-Param](../assets/images/articles/table/Where-Clause_Date-Param.png){:class="img-responsive"}
 
 4. Click **[OK]** to confirm your input.
-{% if page.meta.product == "xtract-universal"%}
+{% if page.meta.product == "xtract-universal" or page.meta.product == "board-connector"%}
 5. Open the *Run Extraction* menu and navigate to the *Custom* tab for runtime parameters.<br>
-![Where-Clause_Run-Extraction-Param](../assets/images/articles/table/run-extraction-parameter.png){:class="img-responsive"}
+![Where-Clause_Run-Extraction-Param](../assets/images/{{ abbr }}/articles/table/run-extraction-parameter.png){:class="img-responsive"}
 6. Enter a value for the runtime parameter `@LastDate` in the format `YYYYmmDD`.
 7. Click **[Run]** and check the results.
 {% else %}

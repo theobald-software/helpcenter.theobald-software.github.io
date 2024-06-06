@@ -230,5 +230,4 @@ extra:
   extractions: extractions
   settings: extraction settings
   settingsBtn: __Extraction Settings__
-  #variable: runtime parameter
-  #variables: runtime parameters
+  parameterBtn: __Edit runtime parameters__

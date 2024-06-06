@@ -1,5 +1,5 @@
 ---
-title: Read data from Cluster Fields in Tables PCL1 and PCL2 (Payroll)
+title: Read Data from Cluster Fields in Tables PCL1 and PCL2 (Payroll)
 description: How to read data from Cluster Fields in the Tables PCL1 and PCL2 (Payroll)
 ---
 

@@ -209,6 +209,9 @@ extra:
   Component: Integration Type
   component: integration type
   components: integration types
+  Abbr: yunIO
+  abbr: yunio
+  installationDir: C:\Program Files\Theobald Software\yunIO
   table: _SAP Table and View_
   transaction: _Transaction_
   report: _Report_

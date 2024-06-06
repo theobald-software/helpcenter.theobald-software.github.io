@@ -36,17 +36,18 @@ Both files don't exist per default.
 
 1. Create the files *secinfo* and *reginfo*. The files must have the following content:
 
-	=== Content of "secinfo"
+	=== "Content of "secinfo""
 
-		``` title= "Register the RFC-Server XTRACT01"
+		``` abap
 		#VERSION=2
 		P TP=* HOST=internal,local CANCEL=internal,local ACCESS=internal,local
 		# the following line should be the LAST line in the secinfo file
 		P TP=XTRACT01 USER=* USER-HOST=* HOST=* 
 		```
 
-	=== Content of "reginfo":
-		``` title= "Register the RFC-Server XTRACT01"
+	=== "Content of "reginfo""
+	
+		``` abap
 		#VERSION=2
 		# the following line should be the LAST line in the reginfo file
 		P TP=XTRACT01

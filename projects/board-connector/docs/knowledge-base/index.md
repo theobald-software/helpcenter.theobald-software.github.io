@@ -24,7 +24,7 @@ hide:
 
 ---
 
-### :simple-sap: SAP Connection
+### :simple-sap: SAP
 
 <div class="mdx-columns" markdown>
 
@@ -55,19 +55,18 @@ hide:
 ---
 
 
-### :component-bapi: Xtract BAPI
+### :component-bapi: BAPI
 
 <div class="mdx-columns" markdown>
 
-- [Write CATS Data to SAP](write-cats-data-to-sap.md)
-- [Write Product Data to SAP](write-product-data-to-sap.md)
+- [Read Data from Cluster Fields in Tables PCL1 and PCL2 (Payroll)](read-data-from-cluster-fields-in-the-tables-pcl1-and-pcl2-payroll.md)
 
 </div>
 
 ---
 
 
-### :component-deltaq: Xtract DeltaQ
+### :component-deltaq: DeltaQ
 
 <div class="mdx-columns" markdown>
 
@@ -77,7 +76,7 @@ hide:
 
 ---
 
-### :component-report: Xtract Report
+### :component-report: Report
 
 <div class="mdx-columns" markdown>
 
@@ -89,13 +88,12 @@ hide:
 
 ---
 
-### :component-table: Xtract Table
+### :component-table: Table
 
 <div class="mdx-columns" markdown>
 
 - [Change Data Capture with CDHDR](change-data-capture-with-cdhdr.md)
 - [Delta Table Extraction](delta-table-extraction.md)
-- [Dynamization of WHERE Conditions](dynamization-of-where-conditions.md)
 - [Read data from Cluster Fields in Tables PCL1 and PCL2 (Payroll)](read-data-from-cluster-fields-in-the-tables-pcl1-and-pcl2-payroll)
 - [Working with Lists in the WHERE-Clause Editor](where-clause-editor-lists.md)
 - [Working with LIKE operand in WHERE-Clauses](like-operand-where-clause.md)
@@ -104,7 +102,7 @@ hide:
 
 ---
 
-### :component-table-cdc: Xtract Table CDC
+### :component-table-cdc: Table CDC
 
 <div class="mdx-columns" markdown>
 
