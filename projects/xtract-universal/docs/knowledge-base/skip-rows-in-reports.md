@@ -1,5 +1,5 @@
 ---
-title: Skipping Rows in Reports
+title: Skip Rows in Reports
 description: Skip Rows in Reports
 ---
 
