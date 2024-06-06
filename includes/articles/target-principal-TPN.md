@@ -103,3 +103,4 @@ When a service does not start, configure the service to use a user account with 
 
 - [Microsoft Documentation: User Principal Name](https://docs.microsoft.com/en-us/windows/win32/secauthn/user-name-formats?redirectedfrom=MSDN#user-principal-name)
 - [Microsoft Documentation: Service Principal Names](https://msdn.microsoft.com/en-us/library/ms677949(VS.85).aspx)
+- [Enable Secure Network Communcation (SNC)via X.509 Certificate](enable-snc-using-pse-file.md)

@@ -11,7 +11,7 @@ hide:
 
 </div>
 
-### :products-board-connector: General
+### :products-board-connector: Board Connector
 
 <div class="mdx-columns" markdown>
 
@@ -29,6 +29,8 @@ hide:
 <div class="mdx-columns" markdown>
 
 - [Check the Accessibility to an SAP System](check-the-accessibility-to-an-sap-system.md)
+- [Authorize Access to Reports via Authorization Groups](authorize-access-to-specific-reports.md)
+- [Create the Custom Authorization Object Z_TS_PROG](create-the-custom-authority-object-z-ts-prog.md)
 - [Create a Client PSE to connect to SAP Cloud Systems](create-personal-security-environment.md)
 - [Enable Secure Network Communication (SNC) via X.509 certificate](enable-snc-using-pse-file.md)
 - [Import an SAP Transport Request](import-an-sap-transport-request.md)

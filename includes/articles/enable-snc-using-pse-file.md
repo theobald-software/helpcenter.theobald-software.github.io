@@ -20,10 +20,10 @@ The correctness of this X.509 certificate is ensured via the company's internal 
 
 The following system settings are a prerequisite for using this SNC solution:
 
-- Installed [Secure Login Client](https://help.sap.com/viewer/df185fd53bb645b1bd99284ee4e4a750/3.0/en-US/da610fd072e4409baa8b6a96973b5c67.html).
+- Install the [Secure Login Client](https://help.sap.com/viewer/df185fd53bb645b1bd99284ee4e4a750/3.0/en-US/da610fd072e4409baa8b6a96973b5c67.html).
 - The SAP application server is configured and activated for Secure Network Communication (SNC).
 - The SNC standard library *sapcryptolib* is used as the SNC solution.
-- The following SNC parameters are configured as mentioned.
+- The following SNC parameters are configured:
 
 SNC parameter | Value | Example
 ------------ | ------------- | ----------
@@ -42,7 +42,7 @@ snc/identity/as | Application server's SNC name Syntax: p:\<Distinguished_Name\>
 3. Import the created PSE file via **TA STRUST > Edit mode > PSE Import > PSE Save as SNC Libcrypto**.
 4. Edit the SNC configuration of the corresponding SAP user via transaction SU01 :number-1:, **SNC** :number-2:, **SNC Name** :number-3: = p:\<Full Distinguished_Name\> <br> e.g., `p:EMAIL="RandomUser@domain",CN="Random User",OU="Users",OU="TheobaldSoftware",DC="theobald",DC="local"`.
 ![SNC User Settings](site:assets/images/articles/snc_user_settings.png){:class="img-responsive"}
-5. Set up SNC authentication in the SAP connection settings.
+5. Set up SNC authentication in the {{ productName }} SAP connection settings.
 
 ****
 #### Releated Link
