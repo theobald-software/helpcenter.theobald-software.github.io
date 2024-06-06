@@ -3,7 +3,7 @@ title: Create and Load Purchase Requisitions in SAP
 description: Create and Load Purchase Requisitions in SAP ERP 
 ---
 
-The following article shows how to use the Xtract BAPI component of Xtract for Alteryx to create a new purchase requisition in SAP and how to load the data of the purchase requisition into Alteryx.
+The following article shows how to use the Xtract BAPI component of {{ productName }} to create a new purchase requisition in SAP and how to load the data of the purchase requisition into Alteryx.
 
 ### About this Workflow
 
@@ -14,19 +14,16 @@ This process uses a simple input table that contains the data for the purchase r
 This process uses an input parameter and a batch macro to pass the input parameter to the Xtract BAPI component.
 
 !!! note
-    When using Xtract for Alteryx version 1.18 and below tables can be passed to the Xtract BAPI component directly via an input anchor, while single values require the use of batch macros.
-    As of Xtract for Alteryx version 1.19 all input parameters can be passed to the Xtract BAPI component without batch macros.
+    When using {{ productName }} version 1.18 and below tables can be passed to the Xtract BAPI component directly via an input anchor, while single values require the use of batch macros.
+    As of {{ productName }} version 1.19 all input parameters can be passed to the Xtract BAPI component without batch macros.
+
+[:material-download-circle: Download Workflow](../assets/files/xfa/BAPI-ERP-ReadAndWriteWithMacro.yxzp){ .md-button }
 
 
-| SAP System | SAP Objects | Xtract for Alteryx Component |
+| SAP System | SAP Objects | {{ productName }} Component |
 | :------ |:--- | :--- |
 | SAP ERP | *BAPI_REQUISITION_CREATE* (Create Purchase Requisition) <br>*BAPI_REQUISITION_GETDETAIL* (Display Purchase Requisition Details) | Xtract BAPI |
 
-You can download the Alteryx workflow for this application here: [BAPI-ERP-ReadAndWriteWithMacro.yxzp](/files/xfa/BAPI-ERP-ReadAndWriteWithMacro.yxzp){:download="BAPI-ERP-ReadAndWriteWithMacro.yxzp"}
-
-<!---
-You can download the Alteryx workflow for this application in the [Alteryx Community - ODP based Delta Extraction of Sales and Customer Data from SAP ERP with Xtract for Alteryx](https://community.alteryx.com/t5/Community-Gallery/ODP-based-Delta-Extraction-of-Sales-and-Customer-Data-from-SAP/ta-p/1140120).
--->
 
 ![bapi-workflow](../assets/images/xfa/articles/bapi-workflow.png){:class="img-responsive"}
 

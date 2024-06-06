@@ -1,19 +1,20 @@
 ---
-title: Create an SAP Connection 
-description: SAP Connection
+title: Create an SAP Connection using the Xtract for Alteryx GUI
+description: Create an SAP Connection using the Xtract for Alteryx GUI
 ---
 
-The following section shows how to create an SAP connection using the Xtract for Alteryx UI.<br>
-An SAP connection is required to use any Xtract for Alteryx component.
+The following section shows how to create an SAP connection using the {{ productName }} UI.<br>
+An SAP connection is required to use any {{ productName }} component.
 
 !!! note
-    Creating SAP connections using the Xtract for Alteryx UI is deprecated.<br>
+    Creating SAP connections using the {{ productName }} UI is deprecated.<br>
     The recommended method for creating SAP connections involves the use of Alteryx' Data Connection Manager and requires an Alteryx Designer version >= 2022.3.
     For more information, see [Online Help: SAP-Connection](https://help.theobald-software.com/en/xtract-for-alteryx/sap-connection).
 
 
 ### Create an SAP Connection
-1. Drag&drop an Xtract for Alteryx component from the Alteryx Designer tool box onto the canvas :number-1:. 
+
+1. Drag&drop an {{ productName }} component from the Alteryx Designer tool box onto the canvas :number-1:. 
 The configuration window of the component opens. <br>
 ![Create-New-Table-Extraction](../assets/images/xfa/articles/xfa_create_table_extraction_02.png){:class="img-responsive"}
 2. Click **[New]** to create a new connection :number-2:. The window "SAP Connection Details" opens.
@@ -36,7 +37,7 @@ To edit the SAP connection, select the SAP connection from the dropdown list :nu
 
 !!! note
     The connection details of an SAP connection are stored in a JSON file in the following directory:<br>
-    `C:\Users\<UserName>\AppData\Roaming\Theobald Software\Xtract for Alteryx\Connections\<SAPSourceName>.json`
+    `C:\Users\<UserName>\AppData\Roaming\Theobald Software\{{ productName }}\Connections\<SAPSourceName>.json`
 
 ### System
 
@@ -79,7 +80,7 @@ For more information, see [SAP Help: SAP-Router](https://help.sap.com/viewer/6d9
 ### Authentication
 
 The following authentication methods are supported:
-- **SNC** :number-1::  encrypted connection between Xtract for Alteryx and SAP with username and password. 
+- **SNC** :number-1::  encrypted connection between {{ productName }} and SAP with username and password. 
 - **Plain** :number-2:: SAP username and password (system or dialogue user)
 - **SAP Log On Ticket** :number-3:: uses SAP Logon-Tickets in place of user credentials. This connection is not encrypted.
 	
@@ -94,7 +95,7 @@ The following authentication methods are supported:
 
 	!!! tip
 		Check the SAP parameter *snc/gssapi_lib* to determine which library is used for encryption in your SAP system.
-		Your SAP basis has to import and configure the same library on the application server and on the machine that runs Xtract for Alteryx.
+		Your SAP basis has to import and configure the same library on the application server and on the machine that runs {{ productName }}.
 		
 		For more information on SNC, see [Enabling Secure Network Communication (SNC) via X.509 certificate](https://kb.theobald-software.com/sap/enable-snc-using-pse-file).
 

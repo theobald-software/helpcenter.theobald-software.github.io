@@ -7,8 +7,8 @@ weight: 180
 ---
 
 There are 2 ways to parameterize Xtract components:
-- Pass parameters using the input anchors of Xtract components. <br>
-Input anchors are available for all Xtract components as of Xtract for Alteryx version 1.19.
+- Pass parameters using the input anchors of Xtract components, see [Documentation: Parameterization](../documentation/parameterization.md). <br>
+Input anchors are available for all Xtract components as of {{ productName }} version 1.19.
 - Pass parameters using [control parameters](http://downloads.alteryx.com/betawh_xnext/ControlParam.htm) in [batch macros](http://downloads.alteryx.com/betawh_xnext/BatchMacro.htm).<br> 
 The parameterization via batch macros is supported by Xtract BAPI, Xtract Table, Xtract Cube and Xtract ODP.
 

@@ -3,7 +3,7 @@ title: Dynamic Table Extractions
 description: Test
 ---
 
-The following article shows how to use the Xtract Table component of Xtract for Alteryx with different types of runtime parameters.<br>
+The following article shows how to use the {{ table }} {{ component }} of {{ productName }} with different types of {{ variables }}.<br>
 
 ### About this Workflow
 
@@ -12,12 +12,12 @@ This article leads you through all necessary steps to set up the following workf
 - Pass a list of values as a runtime parameter to an Xtract Table component, see [List Parameters](#list-parameters).
 - Pass multiple runtime parameters to an Xtract Table component, see [Multiple Parameters](#multiple-parameters).
 
+[:material-download-circle: Download Workflow](../assets/files/xfa/Table-Dynamic-Parameters.yxmd){ .md-button }
 
-| SAP System | SAP Objects | Xtract for Alteryx Component |
+
+| SAP System | SAP Objects | {{ productName }} Component |
 | :------ |:--- | :--- |
 | SAP S/4HANA | SAP Table: *ACDOCA* (Universal Journal Entry Line Items) | Xtract Table |
-
-You can download the Alteryx workflow for this application here: [Table-Dynamic-Parameters.yxmd](/files/xfa/Table-Dynamic-Parameters.yxmd){:download="Table-Dynamic-Parameters.yxmd"}.
 
 ![table-workflow](../assets/images/xfa/articles/workflow.png){:class="img-responsive"}
 

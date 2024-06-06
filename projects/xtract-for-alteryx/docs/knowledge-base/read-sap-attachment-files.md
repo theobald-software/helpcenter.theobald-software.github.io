@@ -14,17 +14,14 @@ This article leads you through all necessary steps to set up the following workf
 - Get a list of attached files from the SAP ERP system
 - Download SAP attachment files of any format
 
-| SAP System | SAP Objects | Xtract for Alteryx Component |
+[:material-download-circle: Download Workflow](../assets/files/xfa/SAP-Read-Attachment-Files.yxmd){ .md-button }
+
+| SAP System | SAP Objects | {{ productName }} Component |
 | :------ |:--- | :--- |
 | SAP ERP | *SRGBTBREL* (Relationships in GOS Environment) <br>*SOOD* (SAPoffice: Object Definition) | Xtract Table |
 | SAP ERP | *SO_DOCUMENT_READ_API1* (SAPoffice: View object from folder using RFC) | Xtract BAPI |
 
 
-You can download the Alteryx workflow for this application in the [Alteryx Community - Read SAP Attachment Files](https://community.alteryx.com/t5/Community-Gallery/Read-and-Download-SAP-Attachment-Files-using-Xtract-for-Alteryx/ta-p/1212418).
-
-<!---
-![sap-attachments-workflow](../assets/images/xfa/articles/sap-attachments-workflow.png){:class="img-responsive"}
--->
 
 ### Prerequisites
 

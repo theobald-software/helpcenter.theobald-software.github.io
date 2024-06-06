@@ -207,6 +207,25 @@ extra:
       link: https://theobald-software.com/en/newsletter/
       name: Newsletter
   productName: Xtract for Alteryx
+  Abbr: XfA
+  abbr: xfa
+  component: component
+  Component: Component
+  Components: Components
+  components: components
+  extraction: workflow
+  installationDir: C:\Program Files\XtractForAlteryx
+  bapi: Xtract BAPI
+  table: Xtract Table
+  tablecdc: Xtract Table CDC
+  bapi: Xtract BAPI
+  cube: Xtract Cube
+  hierarchy: Hierarchy
+  deltaq: DeltaQ
+  odp: ODP
+  ohs: OHS
+  query: Query
+  report: Report
   settings: extraction settings
   settingsBtn: __[Extraction Settings]__
   parameterBtn: __[Edit parameters]__

@@ -1,0 +1,6 @@
+---
+title: Create the Custom Authorization Object Z_TS_PROG
+description: How to Create the Custom Authorization Object Z_TS_PROG
+---
+
+{% include "articles/report/create-the-custom-authority-object-z-ts-prog.md" %}

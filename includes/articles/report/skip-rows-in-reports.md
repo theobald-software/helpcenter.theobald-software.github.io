@@ -44,6 +44,6 @@ To remove all rows that contain the * symbol, follow the instructions below:
 5. Click **[OK]** to close the {{ settings }}. 
 5. Click **[OK]** to save the extraction. Note that the live preview of the report component does not include the **Row skip pattern** option. 
 **Row skip pattern** is only executed when running the extraction.
-6. Run the extraction. 
+6. Run the {{ extraction }}. 
 
 The extracted report does not include rows that contain a * symbol.
