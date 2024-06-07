@@ -1,5 +1,24 @@
 [
   {
+    "Version": "6.5.2.0",
+    "LegacyReleaseDate": "2024-06-04 21:33:24Z",
+    "IsCritical": true,
+    "Changes": [
+      {
+        "Product": "BoardConnector",
+        "Component": "Server",
+        "Message": "Fixed a denial of service vulnerability, where the server would hang in a cleanup loop and fill up its log file.",
+        "ReleaseNote": "## BoardConnector 6.5.2\n\n- HTTP server\n    - *Security:* Fixed a bug where closing the connection during a certain point in time during error handling of a failed request would cause the log to grow heavily, filling up the disk.\n    - HTTP error response codes are now logged in the web server log."
+      },
+      {
+        "Product": "Theobald.Server",
+        "Component": "General",
+        "Message": "Fixed a denial of service vulnerability, where the server would hang in a cleanup loop and fill up its log file.\nFixes for HTTP parsing and clean up, result cache handling, extraction abortion handling.",
+        "ReleaseNote": "## Theobald Server 4.3.4\n\n- HTTP server\n    - *Security:* Fixed a bug where closing the connection at a certain point in time during error handling of a failed request would cause the log to grow heavily, filling up the disk.\n    - HTTP error response codes are now logged in the web server log.\n- Cache\n    - Fixed clean up of cache entries for extractions in sub-directories.\n    - Fixed a bug where one cache entry would always be left during cleanup, even if it was outdated already.\n- Aborting extractions\n    - Fixed a bug where extractions read from cache could not be aborted.\n    - Fixed several inconsistencies which could occur when aborting an extraction."
+      }
+    ]
+  },
+  {
     "Version": "6.5.1.23",
     "LegacyReleaseDate": "2024-06-04 00:00:00Z",
     "Changes": [
