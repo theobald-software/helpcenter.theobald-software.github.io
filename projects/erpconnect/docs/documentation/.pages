@@ -1,5 +1,6 @@
 nav:
     - Introduction: introduction
+    - sap-authority-objects.md
     - SAP-Connection: sap-connection
     - ABAP Code: abap
     - BAPIs/Function Modules: bapis-and-function-modules

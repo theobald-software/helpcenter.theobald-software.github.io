@@ -65,7 +65,7 @@ Examples:
 
 	Output:
 
-	![MatmasSend](site:assets/images/erpconnect/documentation/samples/MatmasSend.jpg){:class="img-responsive"}
+	![MatmasSend](site:assets/images/erpconnect/samples/MatmasSend.jpg){:class="img-responsive"}
 
 === "Send an ORDER IDoc"
 
@@ -73,7 +73,7 @@ Examples:
 
 	Output:
 
-	![IdocSalesOrder](site:assets/images/erpconnect/documentation/samples/IdocSalesOrder.png){:class="img-responsive"}
+	![IdocSalesOrder](site:assets/images/erpconnect/samples/IdocSalesOrder.png){:class="img-responsive"}
 
 
 ****

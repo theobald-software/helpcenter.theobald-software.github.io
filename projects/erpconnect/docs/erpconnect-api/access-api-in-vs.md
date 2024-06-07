@@ -14,5 +14,5 @@ To view the Object Browser, navigate to the menu **View -> Object Browser**.
 !!! note 
 	To make the API documentation available in Visual Studio, the file *ERPConnectXX.xml* must be in the same folder as the *ERPConnectXX.dll*.
 
-![erpconnect-api-object-browser]( site:assets/images/erpconnect/erpconnect-api-object-browser.png){:class="img-responsive" }
+![erpconnect-api-object-browser]( site:assets/images/erpconnect/documentation/erpconnect-api-object-browser.png){:class="img-responsive" }
 

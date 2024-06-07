@@ -5,7 +5,7 @@ description: Sync Copilot with SAP using Power Automate and yunIO
 
 This article shows how to synchronize Microsoft Copilot with SAP.<br>
 In the following scenario, the capabilities of a copilot chatbot is extended to query data from SAP.
-The functionality to query the data is provided by a Power Automate workflow that calls a yunIO service whenever users request the data via the chatbot. 
+A Power Automate workflow provides the functionality to query the data. It calls a yunIO service whenever users request the data via the chatbot.
 
 ### Prerequisites
 

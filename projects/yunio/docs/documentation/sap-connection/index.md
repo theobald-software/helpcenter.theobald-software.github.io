@@ -18,8 +18,8 @@ This page shows how to connect to SAP.
 
 **Supported Authentication Methods**
 
-- [Plain login](#connect-to-sap-using-plain-authentication) using SAP username and password (system or dialogue user)
-- [Secure Network Communication (SNC)](#connect-to-sap-using-snc-authentication) using username and password via basic authentication
+- [Plain login](#plain-authentication) using SAP username and password (system or dialogue user)
+- [Secure Network Communication (SNC)](#snc-authentication) using username and password via basic authentication
 
 ### Plain Authentication
 
