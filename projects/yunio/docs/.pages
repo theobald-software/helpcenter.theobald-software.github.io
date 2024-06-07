@@ -2,7 +2,7 @@ nav:
     - Home: index.md
     - Getting Started: getting-started.md
     - Documentation: documentation
-    - KnowledgeBase: knowledge-base
+    - Knowledge Base: knowledge-base
     - Changelog: changelog.md
     # - Troubleshooting: troubleshooting.md
     - Support: https://support.theobald-software.com/helpdesk
