@@ -51,5 +51,5 @@ The goal is to provide redundancy and ensure high availability and reliability o
 
 ****
 #### Related Links:
-- [Deploying Extractions Using Git Version Control](deploy-extractions-using-git-version-control.md)
+- [Deploying Extractions Using Git Version Control](deploy-extractions-using-Git-version-control.md)
 - [Online Help: Installation and Update - Program Directory Files](https://help.theobald-software.com/en/xtract-universal/introduction/installation-and-update#program-directory-files)

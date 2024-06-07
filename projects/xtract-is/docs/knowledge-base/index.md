@@ -58,6 +58,7 @@ hide:
 <div class="mdx-columns" markdown>
 
 - [Register an RFC Server in SAP Releases with Kernel Release 720 and higher](register-rfc-server-in-sap-releases-in-kernel-release-720-and-higher.md)
+- [SNC Authentication for DeltaQ and OHS](snc-authentication-for-deltaq.md)
 
 </div>
 
