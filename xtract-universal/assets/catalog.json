@@ -1,5 +1,35 @@
 [
   {
+    "Version": "6.7.3.0",
+    "LegacyReleaseDate": "2024-06-06 16:58:45Z",
+    "Changes": [
+      {
+        "Product": "XtractUniversal",
+        "Component": "Designer",
+        "Message": "Fixed a bug that would lead to several duplicated and invalid designer connection settings entries"
+      }
+    ]
+  },
+  {
+    "Version": "6.7.2.0",
+    "LegacyReleaseDate": "2024-06-04 20:34:13Z",
+    "IsCritical": true,
+    "Changes": [
+      {
+        "Product": "XtractUniversal",
+        "Component": "General",
+        "Message": "Fixed a denial of service vulnerability, where the server would hang in a cleanup loop and fill up its log file.\nSome limitations for when working with sub-directories were removed. Especially when consuming the API.\nIssues in the cache were fixed as well. Aborting extractions works more reliably now.",
+        "ReleaseNote": "## XtractUniversal 6.7.2\n\n- HTTP server\n    - *Security:* Fixed a bug where closing the connection during a certain point in time during error handling of a failed request would cause the log to grow heavily, filling up the disk.\n    - HTTP error response codes are now logged in the web server log.\n- Cache\n    - Fixed clean up of cache entries for extractions in sub-directories.\n    - Fixed a bug where one cache entry would always be left during cleanup, even if it was outdated already.\n- Additions for the sub-directory support\n    - The web API does now provide extraction names in the format `path,to,extraction`.\n    - The names can be plugged into subsequent API calls without change.\n    - This enables consumers of the API to work with extractions in sub-directories.\n        - Qlik (You will have to update the script.)\n        - Alteryx\n        - Knime\n        - PowerBI\n        - SSRS\n    - Script expressions now allow to use the full extraction name with `#{Extraction.ExtractionName}#`.\n        - The format is also `path,to,extraction`.\n            Depending on the destination this might be replaced with a different character.\n- Abort extractions\n    - Extractions running from cache can now be aborted correctly.\n    - Aborting behavior for extractions during startup is more consistent.\n    - The logging for aborted extractions has been cleaned up."
+      },
+      {
+        "Product": "Theobald.Server",
+        "Component": "General",
+        "Message": "Fixed a denial of service vulnerability, where the server would hang in a cleanup loop and fill up its log file.\nFixes for HTTP parsing and clean up, result cache handling, extraction abortion handling.",
+        "ReleaseNote": "## Theobald Server 4.3.4\n\n- HTTP server\n    - *Security:* Fixed a bug where closing the connection at a certain point in time during error handling of a failed request would cause the log to grow heavily, filling up the disk.\n    - HTTP error response codes are now logged in the web server log.\n- Cache\n    - Fixed clean up of cache entries for extractions in sub-directories.\n    - Fixed a bug where one cache entry would always be left during cleanup, even if it was outdated already.\n- Aborting extractions\n    - Fixed a bug where extractions read from cache could not be aborted.\n    - Fixed several inconsistencies which could occur when aborting an extraction."
+      }
+    ]
+  },
+  {
     "Version": "6.7.1.6",
     "LegacyReleaseDate": "2024-06-04 00:00:00Z",
     "Changes": [
