@@ -171,9 +171,9 @@ foreach ($tableName in $tableList) {
 
 *****
 #### Related Links
- - [SAP Connection](https://help.theobald-software.com/en/xtract-universal/introduction/sap-connection#creating-an-sap-connection)
- - [Define a Table Extraction](https://help.theobald-software.com/en/xtract-universal/getting-started/define-a-table-extraction#adding-tables)
- - [Running an Extraction](https://help.theobald-software.com/en/xtract-universal/getting-started/run-an-extraction)
- - [WHERE Clause](https://help.theobald-software.com/en/xtract-universal/table/where-clause)
- - [Scheduling an Extraction](https://help.theobald-software.com/en/xtract-universal/execute-and-automate-extractions/call-via-scheduler)
+ - [Documentation: SAP Connection](https://help.theobald-software.com/en/xtract-universal/introduction/sap-connection#creating-an-sap-connection)
+ - [Documentation: Define a Table Extraction](https://help.theobald-software.com/en/xtract-universal/getting-started/define-a-table-extraction#adding-tables)
+ - [Documentation: Run an Extraction](https://help.theobald-software.com/en/xtract-universal/getting-started/run-an-extraction)
+ - [Documentation: WHERE Clause](https://help.theobald-software.com/en/xtract-universal/table/where-clause)
+ - [Documentation: Schedule Extractions](https://help.theobald-software.com/en/xtract-universal/execute-and-automate-extractions/call-via-scheduler)
  

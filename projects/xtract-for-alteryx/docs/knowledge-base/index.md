@@ -10,7 +10,7 @@
 <div class="mdx-columns" markdown>
 
 - [Create an SAP Connection using the Xtract for Alteryx GUI](sap-connection-using-xfa-gui.md)
-- [Parameterization via Batch Macros](parameterization-via-batch-macros)
+- [Parameterization via Batch Macros](parameterization-via-batch-macros.md)
 - [Xtract for Alteryx Performance Considerations](xtract-for-alteryx-performance.md)
 
 </div>
@@ -75,7 +75,7 @@
 - [Delta Table Extraction](delta-table-extraction.md)
 - [Dynamic Table Extractions](dynamic-table-extractions.md)
 - [Read and Download SAP Attachment Files](read-sap-attachment-files.md)
-- [Read Data from Cluster Fields in Tables PCL1 and PCL2 (Payroll)](read-data-from-cluster-fields-in-the-tables-pcl1-and-pcl2-payroll)
+- [Read Data from Cluster Fields in Tables PCL1 and PCL2 (Payroll)](read-data-from-cluster-fields-in-the-tables-pcl1-and-pcl2-payroll.md)
 - [Working with Lists in the WHERE-Clause Editor](where-clause-editor-lists.md)
 - [Working with LIKE operand in WHERE-Clauses](like-operand-where-clause.md)
 

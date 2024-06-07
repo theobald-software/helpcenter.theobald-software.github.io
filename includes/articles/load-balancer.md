@@ -17,17 +17,17 @@ This can be important for businesses that experience sudden spikes in traffic.
 - Centralized Management: A load balancer allows you to manage multiple servers from a single location. 
 This makes it easier to monitor your network, troubleshoot issues, and make necessary adjustments.
 - Parallel Processing: A load balancer allows running multiple extractions at the same time on different servers. 
-This increases the amount of extractions that can be run in parallel, see [Online Help: Execute and Automate Extractions - Running parallel Extractions](https://help.theobald-software.com/en/xtract-universal/execute-and-automate-extractions#running-parallel-extractions)
+This increases the amount of extractions that can be run in parallel, see [Documentation: Execute and Automate Extractions - Running parallel Extractions](https://help.theobald-software.com/en/xtract-universal/execute-and-automate-extractions#running-parallel-extractions)
 
 ![Load-Balancer](../assets/images/{{ abbr }}/articles/load-balancer.png){:class="img-responsive" width="700px"}
 
 ### Prerequisites
 
-- Every {{ productName }} servers needs a server license, see [Online Help: Licensing](https://help.theobald-software.com/en/xtract-universal/introduction/license).
+- Every {{ productName }} servers needs a server license, see [Documentation: Licensing](https://help.theobald-software.com/en/xtract-universal/introduction/license).
 - All {{ productName }} servers must share the same configuration folder, e.g. by mapping the configuration folder to an external shared storage. 
 The configuration folder contains the settings for the destinations, extractions, sources, server and users.
 The folder is located in the installation directory of {{ productName }}, e.g., `{{ installationDir }}\config`.
-For versioning of the configuration folder you can use [git version control](deploy-extractions-using-git-version-control.md).
+For versioning of the configuration folder you can use [git version control](deploy-extractions-using-Git-version-control.md).
 - All {{ productName }} installations must use the same software version to avoid any version compatibility issues.
 
 ### The Process

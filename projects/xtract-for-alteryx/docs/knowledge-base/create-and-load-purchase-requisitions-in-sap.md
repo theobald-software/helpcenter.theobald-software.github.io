@@ -45,7 +45,7 @@ Follow the steps below to create a new purchase requisition in SAP:
 ![create-purchase-requisition-lookup](../assets/images/xfa/articles/create-purchase-requisition-lookup.png){:class="img-responsive"}
 7. Click :magnifying-glass: and select the BAPI *BAPI_REQUISITION_CREATE* from the displayed list :number-5:.
 7. Click **[OK]**. The window "Function Module Lookup" closes.
-8. In the tab *Tables* of the Xtract BAPI component click ![glasses](/img/contents/icons/glasses.png){:class="img-responsive" style="display:inline"} to look up the names and data types of the table REQUISITION_ITEMS.
+8. In the tab *Tables* of the Xtract BAPI component click :glasses-button: to look up the names and data types of the table REQUISITION_ITEMS.
 Use this information to prepare the input data of the purchase requisition:<br>
 ![create-purchase-requisition-input-table](../assets/images/xfa/articles/create-purchase-requisition-input-table.png){:class="img-responsive"}
 9. Connect the input data to the Xtract BAPI component :number-6:.<br>
@@ -102,6 +102,5 @@ The batch macro can now be used to load SAP purchase requisition data of any giv
 
 *****
 #### Related Links
-- [Download Link for BAPI-ERP-ReadAndWriteWithMacro.yxzp](/files/xfa/BAPI-ERP-ReadAndWriteWithMacro.yxzp){:download="BAPI-ERP-ReadAndWriteWithMacro.yxzp"}
-- [Online Help: Xtract BAPI](https://help.theobald-software.com/en/xtract-for-alteryx/bapi)
-- [Online Help: Sample Workflows](https://help.theobald-software.com/en/xtract-for-alteryx/sample-workflows)
+- [Documentation: Xtract BAPI](https://help.theobald-software.com/en/xtract-for-alteryx/bapi)
+- [Documentation: Sample Workflows](https://help.theobald-software.com/en/xtract-for-alteryx/sample-workflows)

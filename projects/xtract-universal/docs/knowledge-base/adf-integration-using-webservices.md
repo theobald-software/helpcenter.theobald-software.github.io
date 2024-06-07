@@ -10,7 +10,7 @@ This article targets customers that utilize ADF as a platform for orchestrating 
 
 !!! note
     The depicted scenario is no best practice or recommendation.
-    The following is a suggestion of how an orchestration of {{ productName }} extractions from ADF can look like, see also [Integration in Azure Data Factory using Commandline](adf-integration-using-command-line).
+    The following is a suggestion of how an orchestration of {{ productName }} extractions from ADF can look like, see also [Integration in Azure Data Factory using Commandline](adf-integration-using-command-line.md).
 
 
 ### Prerequisites
@@ -78,7 +78,7 @@ The following parameters and variables are used in the depicted scenario:
 | Variable           | v_JOB_STATUS                 | String    | Child pipeline  | This variable stores the extraction's run status returned by *Web* activity*CHECK_XU_JOB_STATUS*. The variable’s value is set in the *Set variable* activity *JOB_STATUS*. As long as the variable has the status "Running", the *Until* activity *IS_JOB_RUNNING* is executed. Other values this variable can can have are "FinishedNoErrors" and "FinishedErrors".                                                                                                                                                                                                   |
 | Variable           | v_Log                        | String    | Child pipeline  |This variable stores the extraction's log returned by *Web* activity*XU_Get_Extraction_Log*. The variable’s value is set in the *Set variable* activity *Set_variable_XU_Log*. The value of this variable is appended to the log file in the *Copy data* activity *Copy Extraction Log to Blob*.                                                                                                                                                                                                  |
 
-For more information on variables in ADF, see [Calling Dynamic Extractions with Variables in ADF](./calling-dynamic-extractions-with-variables-in-adf).
+For more information on variables in ADF, see [Call Dynamic Extractions with Variables in ADF](call-dynamic-extractions-with-variables-in-adf.md).
 
 ### Download JSON Templates
 
@@ -86,9 +86,9 @@ Downloads for the child and master pipeline are provided below:
 
 [:material-download-circle: Download CHILD pipeline as json](../assets/files/xu/CHILD_pipeline_Execute_single_XU_extraction.json){ .md-button }
 
-[:material-download-circle: Download MASTER pipeline as json](../assets/files/MASTER_pipeline_Loop_over_XU_extractions.json){ .md-button }
+[:material-download-circle: Download MASTER pipeline as json](../assets/files/xu/MASTER_pipeline_Loop_over_XU_extractions.json){ .md-button }
 
 *****
 #### Related Links
-- [Calling Dynamic Extractions with Variables in ADF](./calling-dynamic-extractions-with-variables-in-adf).
-- [Integration in Azure Data Factory using Commandline](adf-integration-using-command-line)
+- [Call Dynamic Extractions with Variables in ADF](call-dynamic-extractions-with-variables-in-adf.md).
+- [Integration in Azure Data Factory using Commandline](adf-integration-using-command-line.md)

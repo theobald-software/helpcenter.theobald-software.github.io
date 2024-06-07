@@ -96,5 +96,5 @@ The pipeline can be run in debug mode or can be triggered via a scheduler.
 
 *****
 #### Related Links
-- [Calling Dynamic Extractions with Variables in ADF](./calling-dynamic-extractions-with-variables-in-adf).
-- [Integration in Azure Data Factory using Webservices](adf-integration-using-webservices)
+- [Call Dynamic Extractions with Variables in ADF](call-dynamic-extractions-with-variables-in-adf.md).
+- [Integration in Azure Data Factory using Webservices](adf-integration-using-webservices.md)

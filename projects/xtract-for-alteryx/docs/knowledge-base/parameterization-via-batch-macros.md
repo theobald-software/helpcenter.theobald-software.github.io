@@ -1,9 +1,6 @@
 ---
-layout: page
 title: Parameterization via Batch Macros 
 description: Parameterizing via Batch Macro and Control Parameters
-permalink: /:collection/:path
-weight: 180
 ---
 
 There are 2 ways to parameterize Xtract components:
@@ -23,11 +20,11 @@ The following example uses the Xtract ODP component to show how to parameterize 
 4. Create 2 new [runtime parameters](https://help.theobald-software.com/en/xtract-for-alteryx/odp/edit-runtime-parameters#create-runtime-parameters) of type *String* and name them *p_MATNR_low* and *p_MATNR_high*. 
 5. Assign the parameters as [selection filters](https://help.theobald-software.com/en/xtract-for-alteryx/odp/odp-define#selections-and-filters) to the column *MATNR*, so that only materials with numbers between *p_MATNR_low* and *p_MATNR_high* are included in the result data.
 
-For more detailed information on how to create an ODP extraction, see [Online Help: Define an ODP Extraction](https://help.theobald-software.com/en/xtract-for-alteryx/odp/odp-define).<br>
+For more detailed information on how to create an ODP extraction, see [Documentation: Define an ODP Extraction](https://help.theobald-software.com/en/xtract-for-alteryx/odp/odp-define).<br>
 
 ### Create a Batch Macro with Control Parameters
 
-1. Create a new workflow that contains an extraction as described in [Creating an Extraction for a Batch Macro](#creating-an-extraction-for-a-batch-macro).
+1. Create a new workflow that contains an extraction as described in [Creating an Extraction for a Batch Macro](#create-an-extraction-for-a-batch-macro).
 2. To use the workflow as a batch macro, navigate to the *Workflow Configuration* and select **Batch Macro** as the Workflow Type from drop down list.<br>
 ![BatchMacro](../assets/images/xfa/articles/batchmakro.png){:class="img-responsive"}
 3. Save the file. Once the workflow is saved as a batch macro each tool in the workflow gets a lightning bolt anchor. Only *Interface* Tools can connect to these anchors.
@@ -71,5 +68,5 @@ The depicted example uses the **Text Input** tool to define the parameters for t
 
 ****
 #### Related Links
-- [Alteryx Help](https://help.alteryx.com/current/en/designer.html)
-- [Alteryx Help: Batch Macros](http://downloads.alteryx.com/betawh_xnext/BatchMacro.htm)
+- [Alteryx Documentation](https://help.alteryx.com/current/en/designer.html)
+- [Alteryx Documentation: Batch Macros](http://downloads.alteryx.com/betawh_xnext/BatchMacro.htm)

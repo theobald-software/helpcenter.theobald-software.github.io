@@ -3,7 +3,7 @@ title: Call Extractions via Script
 description: Call Extraction via Script
 ---
 
-This section shows how to call an extraction from a [Windows script (.bat)](./call-extraction-via-script#call-via-windows-script-bat) or [PowerShell script](./call-extraction-via-script#call-via-powershell-script) using the command line tool xu.exe.
+This section shows how to call an extraction from a [Windows script (.bat)](#call-via-windows-script-bat) or [PowerShell script](#call-via-powershell-script) using the command line tool xu.exe.
 
 
 ### Call via Windows script (.bat)
@@ -166,7 +166,7 @@ For more examples on how to use PowerShell scripts with {{ productName }}, see [
 
 ****
 #### Related Links:
-- [Creating extractions without using the {{ productName }} designer GUI](https://kb.theobald-software.com/xtract-universal/using-config-command-line-tool)
-- [How to insert {{ productName }} Extraction Events into the windows logs](https://kb.theobald-software.com/xtract-universal/how-to-insert-xtract-universal-extraction-events-into-the-windows-logs-and-show-them-in-the-event-viewer)
-- [Mastering SAP Access with {{ productName }}](https://kb.theobald-software.com/xtract-universal/mastering-sap-access-with-xtract-universal-and-powershell)
+- [Create Extractions via Commandline](config-command-line-tool.md)
+- [Insert Extraction Events into Windows Logs](insert-extraction-events-into-the-windows-logs.md)
+- [SAP Access with Xtract Universal and Powershell](sap-access-with-xtract-universal-and-powershell.md)
 
