@@ -9,7 +9,7 @@ This article targets customers that utilize ADF as a platform for orchestrating 
 
 !!! note
     The depicted scenario is no best practice or recommendation.
-    The following is a suggestion of how an orchestration of {{ productName }} extractions from ADF can look like, see also [Integration in Azure Data Factory using Webservices](adf-integration-using-webservices).
+    The following is a suggestion of how an orchestration of {{ productName }} extractions from ADF can look like, see also [Integration in Azure Data Factory using Webservices](adf-integration-using-webservices.md).
 
 ### Prerequisites
 

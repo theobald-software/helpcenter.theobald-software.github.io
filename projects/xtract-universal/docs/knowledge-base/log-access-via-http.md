@@ -90,10 +90,7 @@ LineCount,Name,Timestamp,State,StateDescr,LogLevel,Source,Message
 | `http(s)://[host]:[port]/log/?req_type=all&min=[yyyy-MM-dd_HH:mm:ss.SSS]&max=[yyyy-MM-dd_HH:mm:ss.SSS]`  |   Returns all logs between two timestamps. |
 | `http(s)://[host]:[port]/log/?req_type=all&past_days=[number_of_days]`  |   Returns all logs since n days. |
 
-<!---
-!!! note
-    When the parameter `?req_type` is set to `server` instead of `all`, the web call returns timestamps of server logs, see [Query all Server Logs](#query-all-server-logs).
-    -->
+
 
 #### Response
 
@@ -519,7 +516,7 @@ The web calls return the following information:
 #### Response
 
 The web call returns timestamps in the format `[yyyy-MM-dd_HH:mm:ss.SSS]`.<br>
-Use the timestamps to query the content of the extraction logs, see [Query Extraction Logs at Specific Timestamps](#query-extraction-logs-at-specific-timestamps).
+Use the timestamps to query the content of the extraction logs.
 
 The web call returns the following information:
 
