@@ -36,6 +36,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://helpcenter.theobald-software.com/erpconnect/documentation/sap-authority-objects/</loc>
+         <lastmod>2024-06-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://helpcenter.theobald-software.com/erpconnect/documentation/abap/</loc>
          <lastmod>2024-06-07</lastmod>
          <changefreq>daily</changefreq>
