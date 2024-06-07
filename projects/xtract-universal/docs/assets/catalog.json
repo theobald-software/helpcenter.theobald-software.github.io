@@ -1,5 +1,16 @@
 [
   {
+    "Version": "6.7.4.0",
+    "LegacyReleaseDate": "2024-06-07 11:25:42Z",
+    "Changes": [
+      {
+        "Product": "XtractUniversal",
+        "Component": "Destinations",
+        "Message": "Fixed a bug where switching back and forth between FileType options in destination settings could lead to an error."
+      }
+    ]
+  },
+  {
     "Version": "6.7.3.0",
     "LegacyReleaseDate": "2024-06-06 16:58:45Z",
     "Changes": [
