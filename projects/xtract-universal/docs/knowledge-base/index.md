@@ -43,7 +43,6 @@ hide:
 - [Import an SAP Transport Request](import-an-sap-transport-request.md)
 - [Register an RFC Server in SAP Releases with Kernel Release 720 and higher](register-rfc-server-in-sap-releases-in-kernel-release-720-and-higher.md)
 - [Supported SAP S/4HANA Versions](supported-sap-and-hana-versions.md)
-- [TCP/IP Ports of SAP](sap-tcpip-ports.md)
 
 </div>
 

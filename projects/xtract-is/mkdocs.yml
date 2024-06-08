@@ -215,14 +215,15 @@ extra:
   components: components
   installationDir: C:\Program Files\XtracIS
   bapi: Xtract BAPI
+  bwloader: Xtract BWLoader
   table: Xtract Table
-  tablecdc: Xtract Table CDC
-  bapi: Xtract BAPI
-  #cube: BWCube	
+  tablecdc: Xtract TableCDC
+  bwcube: Xtract BWCube
   hierarchy: Xtract Hierarchy
   deltaq: Xtract DeltaQ
   odp: Xtract ODP
   ohs: Xtract OHS
+  tableCDC: Xtract TableCDC
   query: Xtract Query
   report: Xtract Report
   variable: an SSIS variable

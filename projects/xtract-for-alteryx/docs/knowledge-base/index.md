@@ -27,7 +27,6 @@
 - [Enable Secure Network Communication (SNC) via X.509 certificate](enable-snc-using-pse-file.md)
 - [Import an SAP Transport Request](import-an-sap-transport-request.md)
 - [Supported SAP S/4HANA Versions](supported-sap-and-hana-versions.md)
-- [TCP/IP Ports of SAP](sap-tcpip-ports.md)
 
 </div>
 

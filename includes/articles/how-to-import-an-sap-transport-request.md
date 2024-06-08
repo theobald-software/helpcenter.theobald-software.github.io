@@ -12,7 +12,7 @@ If you don't have access to the file system, follow the steps below to upload th
 3. Find the entry DIR_TRANS in the column *Name of Directory Parameter*.
 Note or copy the path shown in the column *Directory*.<br>
 ![SAP-AL11](/img/contents/sap-al11.png){:class="img-responsive"}
-4. Go to transaction CG3Z. The window "Upload File: Parameters" opens.
+4. Go to SAP transaction CG3Z. The window "Upload File: Parameters" opens.
 5. In the field **Source file on front end** you select your request file from from step 1. The name of the file starts with an "R", e.g., R900472.
 6. In the field **Target file on application server** you construct your target path using the following pattern: `{copied path from step 2}\data\{request file name}`.<br>
 ![SAP-Upload-File](/img/contents/sap-upload-files.png){:class="img-responsive"}
@@ -37,7 +37,7 @@ If you don't have access to the file system, follow the steps below to upload th
 3. Find the entry DIR_TRANS in the column *Name of Directory Parameter*.
 Note or copy the path shown in the column *Directory*.<br>
 ![SAP-AL11](../assets/images/articles/sap/sap-al11.png){:class="img-responsive"}
-4. Go to transaction SE37.
+4. Go to SAP transaction SE37.
 5. Enter name of function module ARCHIVFILE_CLIENT_TO_SERVER and click **[Test/Execute]**.
 ![SAP-FuBa](../assets/images/articles/sap/sap-fuba.png){:class="img-responsive"} 
 6. In the field **PATH** you select your request file from from step 1. The name of the file starts with an "R", e.g., R900472.
@@ -57,7 +57,7 @@ The files are now available in SAP.
 
 Follow the steps below to add the transport requests to the import queue and import them:
 
-1. Go to transaction STMS to open the transport management system.
+1. Go to SAP transaction STMS to open the transport management system.
 2. Click **[Import Overview]** (![Import icon](../assets/images/articles/sap/sap-imports.png){:style="display:inline"} icon).<br>
 ![SAP-Upload-File](../assets/images/articles/sap/sap-transport-management-system.png){:class="img-responsive"}
 3. Double click on the import queue in which you want to load the transport request into.<br>

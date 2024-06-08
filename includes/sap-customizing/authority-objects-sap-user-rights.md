@@ -36,7 +36,7 @@ You can download the SAP profiles and upload them to your SAP system:
 ------------ | -------------
 [General Authorization Objects](#general-authorization-objects) | [ZXTGENERAL.SAP](site:assets/files/sap_roles/ZXTGENERAL.SAP)
 [BAPI](#bapi) | [ZXTBAPI.SAP](site:assets/files/sap_roles/ZXTBAPI.SAP)
-[BW Cube](#bw-cube-bw-query)|[ZXTQUERY.SAP](../assets/files/sap_roles/ZXTQUERY.SAP) 
+[BW Cube](#bw-cube-bw-query)|[ZXTQUERY.SAP](site:assets/files/sap_roles/ZXTQUERY.SAP) 
 [BW Hierarchy](#bw-hierarchy) |[ZXTBWHIERARCHY.SAP](site:assets/files/sap_roles/ZXTBWHIERARCHY.SAP)
 [ODP (Operational Data Provisioning)](#odp) |[ZXTODP.SAP](site:assets/files/sap_roles/ZXTODP.SAP)
 [OHS (Open Hub Services)](#ohs) |[ZXTOHS.SAP](site:assets/files/sap_roles/ZXTOHS.SAP)
@@ -285,7 +285,7 @@ XXXX (stands for a placeholder) is the authorization group for the source table.
 
 [:material-download-circle: Download SAP profile for Table CDC](site:assets/files/sap_roles/ZXTABLECDC.SAP){ .md-button }
 
-### DeltaQ (Depricated)
+### DeltaQ 
 
 === "Customizing check"
 
