@@ -215,6 +215,7 @@ extra:
   Components: Components
   components: components
   installationDir: C:\Program Files\XtracIS
+  setup: XtractIS
   bapi: Xtract BAPI
   bwloader: Xtract BWLoader
   table: Xtract Table

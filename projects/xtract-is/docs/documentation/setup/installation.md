@@ -27,27 +27,27 @@ The SQL Server runs on the runtime environment.
 On the runtime environment, the developed SSIS packages are deployed (SSISDB) and can be scheduled by means of SQL Server Agent. 
 
 In order to use Xtract IS Data Flow Tasks, the Xtract IS must be installed on all instances with a valid license. 
-For more information, see section [Licensing](./installing-the-license).
+For more information, see [Licensing](license.md#install-the-xtract-is-license).
 
 ### Setup
 
 `XtractISSetup.exe` is an industry standard setup. 
-Execute the Execute the `XtractISSetup.exe` file and follow the instructions of the setup program.
+Execute the `XtractISSetup.exe` file and follow the instructions of the setup program.
 The Xtract IS Setup installs Xtract IS as a plug-in into SSIS.
 
 ![XIS_Setup](../../assets/images/xis/documentation/setup/xis_setup-exe.png){:class="img-responsive"}
 
-For information on how to install a license, see [License](./install-the-license#install-the-xtract-is-license).
+For information on how to install a license, see [Licensing](license.md#install-the-xtract-is-license).
 
-#### Installation Directory Files
+### Installation Directory Files
 
 The list below shows several important files that are placed into the default directory `{{ installationDir }}` after installation:
 
 |Filename | Description |
 |:----|:---|
-| ABAP Directory | Directory with SAP function modules. Read the readme.txt within the directory for more information. See also [SAP Customizing](../sap-customizing). |
+| ABAP Directory | Directory with SAP function modules. Read the readme.txt within the directory for more information. See also [SAP Customizing](../setup-in-sap/index.md). |
 | XtractISSetup.exe | Application for installing and registering the Xtract IS components within SSIS.|
-| XtractISConversionPreparer.exe| Tool, which prepares older version of SSIS packages (containing Xtract IS components) for migration to newer versions of SSIS. See also section [SSIS Migration](./ssis-migration).|
+| XtractISConversionPreparer.exe| Tool, which prepares older version of SSIS packages (containing Xtract IS components) for migration to newer versions of SSIS. See also section [SSIS Migration](ssis-migration.md).|
 | XtractISVerisonInfo.exe | Starts the `XtractISVerisonInfo.exe` via the command line tool to display and read the currently installed version.|
 | XtractLicenseManager.exe | Application to manage and view licenses.|
 | Uninstall Xtract IS| Tool for uninstalling and removing Xtract IS with all its components from your machine. |
@@ -58,7 +58,7 @@ The list below shows several important files that are placed into the default di
 
 ### Unattended Installation
 
-The installation of Xtract IS can be initiated unattended without the GUI.
+The installation of {{ productName }} can be initiated unattended without the GUI in a non-interactive way via the Windows Command Prompt.
 
 - Execute the `XtractISSetup.exe` via command line and use the switch `--unattended`. 
 - Execute the `XtractLicenseManager.exe` (License Manager) via command line and pass the path to the license file as an argument. 
@@ -69,7 +69,7 @@ To wait until the installation is complete, use the [start](https://docs.microso
 !!! note
 	All switches are case sensitive.
 
-```
+``` console
 start /wait XtractISSetup.exe --unattended
 start /wait XtractLicenseManager.exe "C:\Program Files\XtractIS\XtractISLicense.json"
 ```

@@ -4,7 +4,7 @@ description: Requirements
 ---
 
 
-This page contains information about system requirements and compatible SAP system for {{ productName }}.
+This page contains information about system requirements and compatible SAP systems for {{ productName }}.
 
 ### Supported Visual Studio Versions  	
 

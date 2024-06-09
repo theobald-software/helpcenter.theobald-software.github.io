@@ -1,4 +1,4 @@
-
+{% if page.meta.product == "xtract-is" %}
 
 ::cards:: cols=3
 
@@ -58,3 +58,65 @@
   url: site:documentation/table-cdc/
 
 ::/cards::
+
+{% elif page.meta.product == "xtract-universal" or page.meta.product == "board-connector" %}
+
+::cards:: cols=3
+
+- title: {{ bapi }}
+  image: site:assets/images/logos/components/Function-BAPI.svg
+  content: Execute BAPIs and Function Modules.
+  url: site:documentation/bapi/
+  
+- title: {{ bwcube }}
+  image: site:assets/images/logos/components/Cube-BEx.svg
+  content: Extract data from SAP BW InfoCubes and BEx Queries.
+  url: site:documentation/bw-cube/
+
+- title: {{ hierarchy }}
+  image: site:assets/images/logos/components/Hierarchy.svg
+  content: Extract Hierarchies from an SAP BW / BI system. 
+  url: site:documentation/hierarchy/
+  
+- title: {{ deltaq }}
+  image: site:assets/images/logos/components/DeltaQ.svg
+  content: Extract data from DataSources (OLTP) and extractors from ERP and ECC systems.
+  url: site:documentation/deltaq/
+
+- title: {{ odp }}
+  image: site:assets/images/logos/components/ODP.svg
+  content: Extract data via the SAP Operational Data Provisioning (ODP) framework.
+  url: site:documentation/odp/
+  
+- title: {{ ohs }}
+  image: site:assets/images/logos/components/Open-Hub.svg
+  content: Extract data from InfoSpokes and OHS destinations.
+  url: site:documentation/ohs/
+  
+- title: {{ query }}
+  image: site:assets/images/logos/components/Query.svg
+  content: Extract data from ERP queries. <br>**BEx queries are covered by {{ bwcube }}**.
+  url: site:documentation/query/
+
+- title: {{ report }}
+  image: site:assets/images/logos/components/Report.svg
+  content: Extract data from SAP ABAP reports.
+  url: site:documentation/report/
+  
+- title: {{ table }}
+  image: site:assets/images/logos/components/Table.svg
+  content: Extract data from SAP tables and views. 
+  url: site:documentation/table/
+
+- title: {{ tableCDC }}
+  image: site:assets/images/logos/components/Table-CDC.svg
+  content:  Extract delta data from SAP tables and views.
+  url: site:documentation/table-cdc/
+
+::/cards::
+
+{% else %}
+
+to be created...
+
+{% endif %}

@@ -214,12 +214,15 @@ extra:
   Components: Components
   components: components
   extraction: workflow
+  extractions: workflows
   installationDir: C:\Program Files\XtractForAlteryx
+  setup: XtractForAlteryx
   bapi: Xtract BAPI
   table: Xtract Table
-  tablecdc: Xtract Table CDC
+  tableCDC: Xtract Table CDC
   bapi: Xtract BAPI
-  cube: Xtract Cube
+  bwcube: Xtract Cube
+  bwloader:  
   hierarchy: Hierarchy
   deltaq: DeltaQ
   odp: ODP

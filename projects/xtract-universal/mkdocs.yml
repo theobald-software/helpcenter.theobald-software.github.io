@@ -213,11 +213,13 @@ extra:
   Components: Extraction Types
   components: extractions types
   installationDir: C:\Program Files\XtractUniversal
+  setup: XtractUniversal
   bapi: BAPI
   table: Table
-  tablecdc: Table CDC
+  tableCDC: Table CDC
   bapi: BAPI
-  cube: BWCube
+  bwcube: BWCube
+  bwloader:  
   hierarchy: Hierarchy
   deltaq: DeltaQ
   odp: ODP

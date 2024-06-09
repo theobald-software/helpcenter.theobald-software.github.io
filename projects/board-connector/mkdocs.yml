@@ -212,12 +212,16 @@ extra:
   Component: Extraction Type
   Components: Extraction Types
   components: extractions types
+  extraction: extraction
+  extractions: extractions
   installationDir: C:\Program Files\BOARDConnector
+  setup: BOARDConnector
   bapi: BAPI
   table: Table
-  tablecdc: Table CDC
+  tableCDC: Table CDC
   bapi: BAPI
-  cube: BWCube
+  bwcube: BWCube
+  bwloader:  
   hierarchy: Hierarchy
   deltaq: DeltaQ
   odp: ODP
