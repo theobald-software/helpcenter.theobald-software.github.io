@@ -81,7 +81,7 @@ Follow the steps below to create a simple service that extracts customer master 
 3. Click **[Search]** to display the tables found in the SAP system.
 4. Select KNA1 from the search results. The settings of the {{ component }} {{ table }} open automatically.
 5. Optional: Select the table columns you want to extract. By default all columns are extracted. 
-For more information on filter options and advanced settings, see [Documentation: Creating a Table Service](documentation/tables-and-views/create-a-table-service.md/#next-steps).
+For more information on filter options and advanced settings, see [Documentation: Create a Table Service](documentation/tables-and-views/create-a-table-service.md/#next-steps).
 6. Click **[Save]** to save the service.<br>
 
 ![yunIO-sample-service](./assets/images/yunio/getting-started/yunio-sample-service.gif){:class="img-responsive" style="border:1px solid black" }
