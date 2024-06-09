@@ -99,6 +99,7 @@ plugins:
   - awesome-pages # define navigation in .pages files
   - macros:
       include_dir: includes
+      modules: ['includex']
   #- swagger-ui-tag
   #- glightbox #image zoom
   #- tags # enables tags in front matter
@@ -229,6 +230,7 @@ extra:
   variable: an SSIS variable
   variables: SSIS variables
   extraction: SSIS package
+  Extraction: SSIS Package
   extractions: SSIS packages
   settings: settings
   settingsBtn: __Settings__

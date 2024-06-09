@@ -5,14 +5,14 @@ If you cannot install the function modules, turn to your SAP Basis team for help
 
 ### Installation of THEO_CDC_ECC or THEO_CDC_S4
 
-- For SAP ECC systems, install the custom function group THEO_CDC_ECC.
-The transport request for the installation is located in the following installation directory: `{{ installationDir }}\ABAP\TableCDC\THEO_CDC_ECC.zip`.
+All transport requests for the custom function groups are provided in the installation directory of {{ productName }}, e.g., `{{ installationDir }}`.
+Make sure to install the correct transport request for your SAP system:
 
-- For SAP S/4 systems with SAP_BASIS version < 7.55, install the custom function group THEO_CDC_S4.
-The transport request for the installation is located in the following installation directory: `{{ installationDir }}\ABAP\TableCDC\THEO_CDC_S4.zip`.
-
-- For SAP S/4 systems with SAP_BASIS version 7.55 or higher, install the custom function group THEO_CDC_S4_755.
-The transport request for the installation is located in the following installation directory: `{{ installationDir }}\ABAP\TableCDC\THEO_CDC_S4_755.zip`.
+| SAP System | Function Group | Directory |
+|-----------|------------------------|------------|
+| SAP ECC Systems | THEO_CDC_ECC | <pre>{{ installationDir }}\ABAP\TableCDC\THEO_CDC_ECC.zip</pre> |
+| SAP S/4 Systems with SAP_BASIS Version < 7.55 | THEO_CDC_S4 | <pre>{{ installationDir }}\ABAP\TableCDC\THEO_CDC_S4.zip</pre> |
+| SAP S/4 Systems with SAP_BASIS Version &GreaterEqual; 7.55 | THEO_CDC_S4_755 | <pre>{{ installationDir }}\ABAP\TableCDC\THEO_CDC_S4_755.zip</pre> |
 
 
 The transport request needs to be imported into SAP by your SAP Basis team.<br>
@@ -43,3 +43,4 @@ Install the custom function module /THEO/READ_TABLE, see [Function Module for Ta
 - [Knowledge Base: Import an SAP Transport Request](../../knowledge-base/import-an-sap-transport-request.md)
 - [Knowledge Base: Delta Mechanism of TableCDC](../../knowledge-base/table-cdc-mechanism.md)
 - [Table CDC - Requirements](../table-cdc/index.md#requirements)
+

@@ -50,88 +50,49 @@ Connection-Manager-01
 For more information, see [Documentation: SAP Connection](documentation/sap-connection/index.md).
 
 
-### Create an {{ extraction }} with Xtract {{ Components }}
+### Create an {{ Extraction }} with Xtract {{ Components }}
+
 
 1. Set up a **Data Flow Task** by dragging the dataflow component into the "Control Flow" canvas. 
 2. Double-click the dataflow component to open the dataflow canvas.
-3. Add an [*Xtract Connection Manager*](./sap-connection/the-connection-manager) to the dataflow.
+3. Add a [*Connection Manager*](./sap-connection/the-connection-manager) to the dataflow that connect to an SAP system.
 3. Drag & drop an Xtract {{ component }} from the SSIS toolbox into the data flow task. <br>
 ![xis_component](assets/images/xis/getting-started/xis_component.png){:class="img-responsive"}
-4. Assign a *Connection Manager* by double-clicking on the Xtract {{ component }}. 
+4. Assign an *Connection Manager* by double-clicking on the Xtract {{ component }}. 
 5. Double-click on the Xtract {{ component }}. The main window of the {{ component }} opens. 
-The majority of the functions of the component can be accessed using the main window.
-The following Xtract {{ components }} are available:
+The majority of the functions of the {{ component }} can be accessed in the main window.
+Xtract IS offers the following {{ components }}:
 
-	|  {{ Component }}  |  Description   |  
-	|----------|-------------|
-	| [:component-bapi:  {{ bapi }}](documentation/bapi/index.md) | Execute BAPIs and Function Modules. |
-	| [:component-bwcube:  {{ bwcube }}](documentation//bw-cube/index.md) | Extract data from SAP BW InfoCubes and BEx Queries. |
-	| [:component-bwloader:  {{ bwloader }}](documentation/bwloader/index.md) | Load data into SAP BW systems. |
-	| [:component-hierarchy:  {{ hierarchy }}](documentation/hierarchy/index.md) | Extract Hierarchies from an SAP BW / BI system. |
-	| [:component-deltaq:  {{ deltaq }}](documentation/deltaq/index.md) | Extract data from DataSources (OLTP) and extractors from ERP and ECC systems. | 
-	| [:component-odp:  {{ odp }}](documentation/odp/index.md) | Extract data via the SAP Operational Data Provisioning (ODP) framework. | 
-	| [:component-ohs:  {{ ohs }}](documentation/ohs/index.md) | Extract data from InfoSpokes and OHS destinations. | 
-	| [:component-query:  {{ query }}](documentation/query/index.md) | Extract data from ERP queries. **Note: BEx queries are covered by the {{ bwcube }} {{ component }}**. | 
-	| [:component-report: {{ report }}](documentation/reports/index.md) | Extract data from SAP ABAP reports. | 
-	| [:component-table:  {{ table }}](documentation/table/index.md) | Extract data from SAP tables and views. |
-	| [:component-table-cdc:  {{ tableCDC }}](documentation/table-cdc/index.md) | Extract delta data from SAP tables and views. |
+	|  {{ Component }}  |   Data Flow Component Type | Description   |  
+	|----------|-------------|-------------|
+	| [:component-bapi:  {{ bapi }}](site:documentation/bapi/) |  Transformation | Execute BAPIs and Function Modules. |
+	| [:component-bwcube:  {{ bwcube }}](site:documentation//bw-cube/) | Source   | Extract data from SAP BW InfoCubes and BEx Queries. |
+	| [:component-bwloader:  {{ bwloader }}](site:documentation/bwloader/) | Destination | Load data into SAP BW systems. |
+	| [:component-hierarchy:  {{ hierarchy }}](site:documentation/hierarchy/) | Source   | Extract Hierarchies from an SAP BW / BI system. |
+	| [:component-deltaq:  {{ deltaq }}](site:documentation/deltaq/) | Source   | Extract data from DataSources (OLTP) and extractors from ERP and ECC systems. | 
+	| [:component-odp:  {{ odp }}](site:documentation/odp/) | Source   | Extract data via the SAP Operational Data Provisioning (ODP) framework. | 
+	| [:component-ohs:  {{ ohs }}](site:documentation/ohs/) | Source   | Extract data from InfoSpokes and OHS destinations. | 
+	| [:component-query:  {{ query }}](site:documentation/query/) | Source   | Extract data from ERP queries. **Note: BEx queries are covered by the {{ bwcube }} {{ component }}**. | 
+	| [:component-report: {{ report }}](site:documentation/reports/) | Source   | Extract data from SAP ABAP reports. | 
+	| [:component-table:  {{ table }}](site:documentation/table/) | Source   | Extract data from SAP tables and views. |
+	| [:component-table-cdc:  {{ tableCDC }}](site:documentation/table-cdc/) | Source   | Extract delta data from SAP tables and views. |
+7. After the Xtract {{ component }} is set up,execute the SSIS package.
 
+#### How to Create a Simple SAP Data Extraction for Beginners
 
-::cards:: cols=4
+Follow the steps below to create a simple SSIS package that extracts customer master data from an SAP table:
 
-- title: {{ bapi }}
-  image: ./assets/images/logos/components/Function-BAPI.svg
-  content: Execute BAPIs and Function Modules.
-  url: ./documentation/bapi/
-  
-- title: {{ bwcube }}
-  image: ./assets/images/logos/components/Cube-BEx.svg
-  content: Extract data from SAP BW InfoCubes and BEx Queries.
-  url: ./documentation/bw-cube/
-  
-- title: {{ bwloader }}
-  image: ./assets/images/logos/components/BWLoader.svg
-  content: Load data into SAP BW systems.
-  url: ./documentation/bwloader/
+1. Drag & drop an {{ table }} {{ component }} from the SSIS toolbox into the data flow task.
+2. Double-click on the {{ table }} {{ component }} to assign a *Connection Manager* and to open the main window of the {{ component }}. 
+3. Click **[:material-plus-thick:Add]** to look up an SAP table. The window “Table Lookup” opens.
+4. In the "Table Lookup" window, enter the name of the SAP standard table KNA1. Use wildcards ( * ) if needed.
+5. Click :magnifying-glass: to display the tables found in the SAP system.
+6. Select KNA1 from the search results and click **[OK]**. The window “Table Lookup” closes.
+7. Optional: Select the table columns you want to extract. By default all columns are extracted. 
+For more information on filter options and advanced settings, see [Documentation: Xtract Table](documentation/table/index.md).
+8. Click **[Load live preview]** to display a live preview of the first 100 records.
+9. Click **[OK]** to save the setup.
+10. Add ... to process the extracted SAP data, e.g., .
+11. Execute the SSIS package.<br>
+<video style="border: 1px solid black;"  controls><source src="../assets/images/xis/yunIO-connection.mp4" type="video/mp4"></video>
 
-- title: {{ hierarchy }}
-  image: ./assets/images/logos/components/Hierarchy.svg
-  content: Extract Hierarchies from an SAP BW / BI system.
-  url: ./documentation/hierarchy/
-  
-- title: {{ deltaq }}
-  image: ./assets/images/logos/components/DeltaQ.svg
-  content: Extract data from DataSources (OLTP) and extractors from ERP and ECC systems.
-  url: ./documentation/deltaq/
-
-- title: {{ odp }}
-  image: ./assets/images/logos/components/ODP.svg
-  content: Extract data via the SAP Operational Data Provisioning (ODP) framework.
-  url: ./documentation/odp/
-  
-- title: {{ ohs }}
-  image: ./assets/images/logos/components/Open-Hub.svg
-  content: Extract data from InfoSpokes and OHS destinations.
-  url: ./documentation/ohs/
-  
-- title: {{ query }}
-  image: ./assets/images/logos/components/Query.svg
-  content: Extract data from ERP queries. <br>**BEx queries are covered by {{ bwcube }}**.
-  url: ./documentation/query/
-
-- title: {{ report }}
-  image: ./assets/images/logos/components/Report.svg
-  content: Extract data from SAP ABAP reports.
-  url: ./documentation/report/
-  
-- title: {{ table }}
-  image: ./assets/images/logos/components/Table.svg
-  content: Extract data from SAP tables and views. 
-  url: ./documentation/table/
-
-- title: {{ tableCDC }}
-  image: ./assets/images/logos/components/Table-CDC.svg
-  content:  Extract delta data from SAP tables and views.
-  url: ./documentation/table-cdc/
-
-::/cards::

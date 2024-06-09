@@ -15,7 +15,7 @@ This includes system requirements, backups and license information.
 - [:simple-sap:  Supported SAP Releases & Databases](requirements.md/#supported-sap-systems-and-releases)
 - [:yunio-nav-license:  License Installation](license.md/#about-the-licensing-concept-of-xtract-is)
 - [:material-folder:  Configuration Files](installation-and-update.md/#program-directory-files)
-- [:material-folder-move-outline:  Migration of SSIS packages to a higher version](backup-and-migration.md/#migrate-to-a-different-machine)
+- [:material-folder-move-outline:  Migration of SSIS packages to newer versions](backup-and-migration.md/#migrate-to-a-different-machine)
 
 </div>
 
