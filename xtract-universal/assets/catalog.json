@@ -1,5 +1,16 @@
 [
   {
+    "Version": "6.7.5.0",
+    "LegacyReleaseDate": "2024-06-10 16:23:42Z",
+    "Changes": [
+      {
+        "Product": "XtractUniversal",
+        "Component": "DeltaQ",
+        "Message": "Fixed a bug which would define a wrong field length for legacy DeltaQ extractions"
+      }
+    ]
+  },
+  {
     "Version": "6.7.4.0",
     "LegacyReleaseDate": "2024-06-07 11:25:42Z",
     "Changes": [
