@@ -18,7 +18,7 @@ Xtract IS allows extracting data from SAP systems and writing data to SAP system
 ![XIS-Architecture](../assets/images/xis/documentation/architectures_xis_neu.png){:class="img-responsive"}
 
 
-### Available {{ Components }}
+### Xtract {{ Components }}
 
 Xtract IS offers the following {{ components }} to cover a wide range of data extraction scenarios.
 

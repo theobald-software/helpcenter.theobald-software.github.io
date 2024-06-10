@@ -45,7 +45,7 @@ The list below shows several important files that are placed into the default di
 
 |Filename | Description |
 |:----|:---|
-| ABAP Directory | Directory with SAP function modules. Read the readme.txt within the directory for more information. See also [SAP Customizing](../setup-in-sap/index.md). |
+| ABAP directory | Directory with SAP function modules. Read the readme.txt within the directory for more information. See also [SAP Customizing](../setup-in-sap/index.md). |
 | XtractISSetup.exe | Application for installing and registering the Xtract IS components within SSIS.|
 | XtractISConversionPreparer.exe| Tool, which prepares older version of SSIS packages (containing Xtract IS components) for migration to newer versions of SSIS. See also section [SSIS Migration](ssis-migration.md).|
 | XtractISVerisonInfo.exe | Starts the `XtractISVerisonInfo.exe` via the command line tool to display and read the currently installed version.|

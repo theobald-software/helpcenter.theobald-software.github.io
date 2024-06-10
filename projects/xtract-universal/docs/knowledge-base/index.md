@@ -1,5 +1,5 @@
 ---
-title: Articles
+title: Knowledge Base
 hide:
   - navigation
   - path
@@ -11,7 +11,7 @@ hide:
 
 </div>
 
-### :products-xtract-universal: Xtract Unviversal
+### :products-xtract-universal: Xtract Universal
 
 <div class="mdx-columns" markdown>
 
@@ -61,7 +61,7 @@ hide:
 
 ---
 
-### :material-database: Destinations V1
+### :material-database: Destinations 
 
 <div class="mdx-columns" markdown>
 
@@ -88,12 +88,13 @@ hide:
 </div>
 
 ---
+<!---
 
-### :material-database: Destinations V2
+## Destinations 
+
+### :material-microsoft-azure: Microsoft Azure
 
 <div class="mdx-columns" markdown>
-
-:material-microsoft-azure: Microsoft Azure: 
 
 - [ Authentication via Azure Active Directory for Azure Storage](authentication-via-azure-ad-with-azure-storage.md)
 - [Integration in Azure Data Factory using Commandline](adf-integration-using-command-line.md)
@@ -101,33 +102,36 @@ hide:
 - [Call Dynamic Extractions with Variables in ADF](call-dynamic-extractions-with-variables-in-adf.md)
 - [Run an ADF Pipeline when an SAP Extraction File is uploaded to Azure Storage](run-an-ADF-pipeline-when-sap-extraction-file-is-successfully-uploaded-to-Azure-storage.md)
 
-:simple-microsoftsqlserver: Microsoft SQL Server:
+### :simple-microsoftsqlserver: Microsoft SQL Server
 
 - [Collation Settings for MSSQL Server Destination](collation-sql-server.md)
 - [Post-Processing Column Name Style](adjust-column-name-style.md)
 - [Use Computed Query Parameters for SSRS](xu-ssrs-parameterizing-in-vs.md)
 
-:material-google-cloud: Google Cloud: 
+### :material-google-cloud: Google Cloud
 
 - [Set Up OAuth 2.0 for the Google Cloud Storage Destination](google-cloud-storage-oauth.md)
 
-:simple-knime: KNIME:
+### :simple-knime: KNIME
 
 - [KNIME Integration via SAP Reader (Theobald Software)](knime-integration-via-sap-reader.md)
 - [Dynamic Runtime Parameter in KNIME Workflows](dynamic-runtime-paramater-within-KNIME-workflow.md)
 
-:material-snowflake: Snowflake:
+### :material-snowflake: Snowflake
 
 - [Integrate SAP Data into a Snowflake Data Warehouse](integrate_sap_data_into_a_Snowflake_data_warehouse.md)
 - [SAP Integration with Matillion Data Loader](create-a-custom-cennector-in-matillion-data-loader.md)
 
-:simple-tableau: Tableau: 
+### :simple-tableau: Tableau 
 
 - [Link a BEx query with a Hierarchy in Tableau](link-bex-query-with-hierarchy.md)
 
 </div>
 
 ---
+
+## {{ Components }}
+-->
 
 ### :component-bapi: BAPI
 

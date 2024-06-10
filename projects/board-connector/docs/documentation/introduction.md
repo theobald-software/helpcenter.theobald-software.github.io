@@ -1,5 +1,5 @@
 ---
-title: Introduction to {{ productName }}
+title: Introduction to Board Connector
 description: Introduction
 ---
 

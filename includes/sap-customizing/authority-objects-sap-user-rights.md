@@ -44,7 +44,7 @@ You can download the SAP profiles and upload them to your SAP system:
 [Report](#report)|[ZXREPORT.SAP](site:assets/files/sap_roles/ZXREPORT.SAP)
 [Table](#table) | [ZXTABLE.SAP](site:assets/files/sap_roles/ZXTABLE.SAP) 
 [Table CDC](#table-cdc) | [ZXTABLECDC.SAP](site:assets/files/sap_roles/ZXTABLECDC.SAP)
-[DeltaQ (depricated)](#deltaq-depricated) |[ZXTDELTAQ.SAP](/files/sap_roles/ZXTDELTAQ.SAP),[DELTAQ_CUSTOMIZING_CHECK](site:assets/files/sap_roles/DELTAQ_CUSTOMIZING_CHECK.SAP)
+[DeltaQ ](#deltaq-depricated) |[ZXTDELTAQ.SAP](/files/sap_roles/ZXTDELTAQ.SAP),[DELTAQ_CUSTOMIZING_CHECK](site:assets/files/sap_roles/DELTAQ_CUSTOMIZING_CHECK.SAP)
 {% endif %}
 
 {% if page.meta.product == "xtract-for-alteryx" %}
@@ -161,6 +161,8 @@ S_TABU_NAM       ACTVT=03; TABLE=TCURX
 [:material-download-circle: Download SAP profile for ODP](site:assets/files/sap_roles/ZXTODP.SAP){ .md-button }
 
 
+{% if page.meta.product != "xtract-for-alteryx" %}
+
 ### OHS
 
 Alternatively, you can assign the SAP role template  ```S_BI-WHM_RFC ```. <br>
@@ -185,6 +187,7 @@ S_ADMI_FCD S_ADMI_FCD=ST0R
 
 [:material-download-circle: Download SAP profile for OHS](site:assets/files/sap_roles/ZXTOHS.SAP){ .md-button }
 
+{% endif %}
 {% endif %}
 
 ### Query
@@ -266,6 +269,7 @@ Additional options:
 
 {% if page.meta.product != "erpconnect" %}
 {% if  page.meta.product != "yunio" %}
+{% if page.meta.product != "xtract-for-alteryx" %}
 
 ### Table CDC
 
@@ -284,6 +288,8 @@ XXXX (stands for a placeholder) is the authorization group for the source table.
     The transport requests for the required function groups */THEO/READ_TABLE* are located in ```C:\Program Files\[XtractProduct]\ABAP\TableCDC``` and ```C:\Program Files\[XtractProduct]\ABAP\Table```. 
 
 [:material-download-circle: Download SAP profile for Table CDC](site:assets/files/sap_roles/ZXTABLECDC.SAP){ .md-button }
+
+
 
 ### DeltaQ 
 
@@ -357,6 +363,7 @@ XXXX (stands for a placeholder) is the authorization group for the source table.
 
 [:material-download-circle: Download SAP profile for DeltaQ Customizing Check](site:assets/files/sap_roles/DELTAQ_CUSTOMIZING_CHECK.SAP){ .md-button }
 
+{% endif %}
 {% endif %}
 {% endif %}
 

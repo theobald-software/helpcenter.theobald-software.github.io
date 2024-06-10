@@ -11,22 +11,32 @@ Recommendations:
 - Create a [backup](#create-a-backup) of the current installation.
 
 Before updating, check the [Changelog](../../changelog.md) for breaking changes: 
-  
 - Make any necessary preparations and changes as described in the Release Notes.
-- You can subscribe to our [technical newsletter](https://theobald-software.com/en/newsletter/) that informs about new software releases.  
+- Note the current product version so that you can switch back to the same version in the event of an error.
+
+!!! tip
+	Subscribe to our [technical newsletter](https://theobald-software.com/en/newsletter/) that informs you about new software releases.  
 
 ### Create a Backup
 
 {% if page.meta.product == "xtract-is" %}
 
 Copy all SSIS packages that use {{ productName }} {{ components }}.
-It is recommended to create backups at regular intervals or use a versioning tool to switch back to the previous version, if necessary.
+It is recommended to create backups at regular intervals to switch back to the previous version, if necessary.
 
 !!! warning 
 	**Warning! Data loss.**<br>
     System updates or changes can restrict software functionalities and this may lead to data loss.
     Create a backup of the directory: `{{ installationDir }}\config` at regular intervals.
 	
+{% elif page.meta.product == "xtract-for-alteryx" %}
+
+It is recommended to create backups at regular intervals to switch back to the previous version, if necessary.
+
+1. Copy all Alteryx workflows that use Xtract for Alteryx.
+2. Copy the folder that contains the SAP connections. Depending on the Alteryx settings it is located in the following directory:<br>
+`C:\Users\[USERNAME]\AppData\Roaming\Theobald Software\Xtract for Alteryx\Connections`
+
 {% else %}
 
 On the machine that runs the {{ productName}} service, copy the following files and folders and store them in a secure location:
@@ -39,16 +49,19 @@ On the machine that runs the {{ productName}} service, copy the following files 
 	**Warning! Data security.**<br>
     Both `config` and `logs` directories may contain sensitive information.
 
+It is recommended to create backups at regular intervals or use a versioning tool to switch back to the previous version, if necessary.
+
 !!! tip "Recommendation"
 	A version control system helps manage the data transfer from test environment to production environment by keeping track of all modifications.
 	Git or Azure DevOps are version control systems that can be used to ensure:
+
 	- The deployment of new extractions, sources and destinations can **not** cause fundamental damage to the data load of the productive landscape.
 	- User rights and other features allow for changes to be checked and corrected in advance.
 	- Quick and easy rollbacks of changes.
 
-	For more information on how to set up version control, refer to the knowledge base article [Deploying Extractions Using Git Version Control](https://kb.theobald-software.com/xtract-universal/deploying-extractions-using-Git-version-control).
+	For more information on how to set up version control, refer to the knowledge base article [Deploy Extractions Using Git Version Control](../../knowledge-base/deploy-extractions-using-Git-version-control.md).
 
-### Restore a Backup
+#### Restore a Backup
 
 1. On the machine that runs the {{ productName}} service, remove the `config` folder from the installation directory of {{ productName}}, e.g., `{{ installationDir }}`.
 2. Copy the backup of the `config` folder into the installation directory.
@@ -76,7 +89,7 @@ If this is the case, a message with various options is displayed:
 |  **Quit Install**  | Cancel the installation and resume it at another time. | 
 
 
-{% if page.meta.product != "xtract-is" %}
+{% if page.meta.product == "xtract-universal" or page.meta.product == "board-connector" %}
 
 #### Upgrade Major Releases - ConfigConverter
 

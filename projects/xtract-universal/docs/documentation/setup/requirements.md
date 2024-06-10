@@ -6,9 +6,6 @@ description: Requirements
 
 This page contains information about system requirements and compatible SAP systems for {{ productName }}.
 
-### Board Server
-
-Version 7.3.1 or higher
 
 {% include "requirements/sap-releases.md" %}
 
@@ -20,3 +17,9 @@ Version 7.3.1 or higher
 
 {% include "requirements/hardware.md" %}
 
+### Destinations
+
+Depending on the [destination](../destinations/index.md), an appropriate driver or library can be required. 
+For more information, refer to the requirements section of each destination.
+
+Additional disk space may be required when using specific destinations (e.g. Alteryx, Power BI, Tableau, Qlik, KNIME).

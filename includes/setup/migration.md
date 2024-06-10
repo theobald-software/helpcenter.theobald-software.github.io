@@ -46,11 +46,11 @@ Use the `config` directory to set up a version control system or to create manua
 
 |Filename      | Description                                                                                                                                                  |
 |:-------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|`extractions` |Directory containing the defined [{{ components }}](../getting-started/define-a-table-extraction). Each sub-directory contains an {{ extraction }} of the same name.          |
-|`servers`     |Directory containing the [server settings](../server/server-settings).                                                                                        |
-|`sources`     |Directory containing [SAP connections](../sap-connection/index.md). Each sub-directory contains a source of the same name.                                              |
-|`version.txt` |Text file containing the product version of the current configuration, see [Installation](installation.md/#installation-directory-files).|
-{% if page.meta.product == "xtract-universal" %}| `destinations` | Directory containing the destinations. Each .json file contains a destination of the same name. | {% endif %}
+| <pre>extractions</pre> | Directory containing the defined [{{ components }}](../getting-started/define-a-table-extraction). Each sub-directory contains an {{ extraction }} of the same name.          |
+| <pre>servers</pre>     | Directory containing the [server settings](../server/server-settings).                                                                                        |
+| <pre>sources</pre>     | Directory containing [SAP connections](../sap-connection/index.md). Each sub-directory contains a source of the same name.                                              |
+| <pre>version.txt</pre> | Text file containing the product version of the current configuration, see [Installation](installation.md/#installation-directory-files).|
+{% if page.meta.product == "xtract-universal" %}| <pre>destinations</pre> | Directory containing the destinations. Each .json file contains a destination of the same name. | {% endif %}
 
 
 ****

@@ -1,9 +1,5 @@
 
 
-### Maintenance
-Contact the [sales department](mailto:sales@theobald-software.com) for information about available maintenance options.<br>
-In case of technical difficulties, contact our [support](https://support.theobald-software.com/helpdesk).
-
 ### Install the {{ productName }} License
 
 {% if page.meta.product == "xtract-is" %}
@@ -26,8 +22,7 @@ Place the "{{ setup }}License.json" file that is provided in the [Customer Porta
 {% if page.meta.product == "xtract-for-alteryx" %}
 
 !!! tip
-	To inspect your current license data, click the *About* link located in each Xtract {{ component }}.<br>
-	![about_license](../../assets/images/xfa/documentation/setup/about_license.png ){:class="img-responsive"}
+	To inspect your current license data, click the *About* link located in each Xtract {{ component }}.
 
 {% else %}
 
@@ -38,6 +33,8 @@ Place the "{{ setup }}License.json" file that is provided in the [Customer Porta
 {% endif %}
 {% endif %}
 
+{% if page.meta.product != "xtract-for-alteryx" %}
+
 ### Move a License to a new Server
 
 When moving your setup to a new server, a new license file must be issued for that server.
@@ -45,7 +42,12 @@ Contact our sales team at [sales@theobald-software.com](mailto:sales@theobald-so
 
 For more information on the migration process, see [Migration to a Different Machine](migration.md#migration-to-a-different-machine).
 
+{% endif %}
 
+
+### Maintenance
+Contact the [sales department](mailto:sales@theobald-software.com) for information about available maintenance options.<br>
+In case of technical difficulties, contact our [support](https://support.theobald-software.com/helpdesk).
 
 ****
 #### Related Links

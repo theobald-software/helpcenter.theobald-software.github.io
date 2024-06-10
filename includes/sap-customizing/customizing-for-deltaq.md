@@ -2,6 +2,15 @@
 Before using the {{ deltaq }} {{ component }}, an RFC destination has to be created in the SAP system. 
 This page shows how to create and configure the RFC destination.
 
+Follow the steps on this page in the following order:
+
+1. [Create an RFC Destination of Type R/3](#create-an-rfc-destination-of-type-r3)
+2. [Execute the Function Module RSAP_BIW_CONNECT_40](#execute-the-function-module-rsap_biw_connect_40)
+3. [Delete the RFC Destination ](#delete-the-rfc-destination)
+4. [Create an RFC Destination of Type T](#create-an-rfc-destination-of-type-t)
+5. [Execute the Function Module RSAS_RBWBCRL_STORE](#execute-function-the-module-rsas_rbwbcrl_store)
+6. [Register the RFC Server](#register-the-rfc-server)
+7. [qRFC Monitor (QOUT Scheduler)](#qrfc-monitor-qout-scheduler)
 
 ### Create an RFC Destination of Type R/3
 
@@ -10,7 +19,6 @@ This page shows how to create and configure the RFC destination.
 The name of the Program ID is needed again for later configuration.
 
 ### Execute the Function Module RSAP_BIW_CONNECT_40
-
 
 !!! note
 	This step assumes that the SAP system is modifiable.
@@ -52,7 +60,7 @@ Go to SAP transaction *SM59* and delete the RFC destination of type *R/3* via **
 	Special Options | Serializer | Classic Serializer | Select the "Classic serializer".
 
 
-### Execute Function the Module RSAS_RBWBCRL_STORE
+### Execute the Function Module RSAS_RBWBCRL_STORE
 
 Go to SAP transaction *SE37* and execute the function module **RSAS_RBWBCRL_STORE** to activate the target system.
 
@@ -61,7 +69,7 @@ Import Parameter | Example Value | Comment
 I_RBWBCRL | 700  | The current SAP system release number
 I_RLOGSYS | XTRACT01
 
-### Register the RFC Destination  
+### Register the RFC Server  
 
 Follow the instructions in the [Knowledge Base Article: Register an RFC Server in SAP Releases with Kernel Release 720 and higher](../../knowledge-base/register-rfc-server-in-sap-releases-in-kernel-release-720-and-higher.md).
 

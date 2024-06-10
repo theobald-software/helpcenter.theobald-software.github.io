@@ -19,7 +19,6 @@ hide:
 - [Check the Accessibility to an SAP System](check-the-accessibility-to-an-sap-system.md)
 - [Import an SAP Transport Request](import-an-sap-transport-request.md)
 - [Supported SAP S/4HANA Versions](supported-sap-and-hana-versions.md)
-- [TCP/IP Ports of SAP](sap-tcpip-ports.md)
 
 </div>
 

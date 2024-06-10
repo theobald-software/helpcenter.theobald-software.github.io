@@ -29,9 +29,9 @@ In case of technical difficulties, contact the support team: [https://support.th
 <!---
 ### Support
 -->
-{% include "requirements/support.md" %}
+{% include "setup/support.md" %}
 
-{% include "requirements/support-disclaimer.md" %}
+{% include "setup/support-disclaimer.md" %}
 
 
 ****
