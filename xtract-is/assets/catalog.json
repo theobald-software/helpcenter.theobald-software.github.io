@@ -1,5 +1,16 @@
 [
   {
+    "Version": "7.7.0.4",
+    "LegacyReleaseDate": "2024-06-11 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Common",
+        "Component": "General",
+        "Message": "Added support for new version history tools"
+      }
+    ]
+  },
+  {
     "Version": "7.7.0.2",
     "LegacyReleaseDate": "2024-06-04 00:00:00Z",
     "Changes": [
