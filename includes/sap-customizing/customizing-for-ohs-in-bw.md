@@ -4,10 +4,10 @@ This page shows how to set up the RFC destination and SAP process chain.
 
 Depending on the SAP release, {{ ohs }} can be used as follows:
 
-|SAP Release| SAP Object |
-|:----|:----|
-| BI < 7.0 | InfoSpoke |
-| BI >= 7.0 | OHS-Destination |
+|SAP Release| SAP Object | Details |
+|:----|:----|:----|
+| BI < 7.0 | InfoSpoke | [InfoSpokes and Process Chains (BI < 7.0)](#infospokes-and-process-chains-bi-70) |
+| BI >= 7.0 | OHS-Destination | [OHS Destinations and Data Transfer Processes (BI >= 7.0)](#ohs-destinations-and-data-transfer-processes-bi-70) |
 
 ### Create an RFC destination
 
