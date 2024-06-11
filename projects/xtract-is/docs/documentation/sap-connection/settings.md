@@ -3,22 +3,12 @@ title: Connection Settings
 description: Overview of SAP connection settings
 ---
 
-This page contains an overview of the SAP connection settings in the XTRACT Connection Manager. 
+This page contains an overview of the SAP connection settings in the XTRACT Connection Manager.<br>
+For information on the properties of an XTRACT Connection Manager, see [List of XTRACT Connection Manager Properties](connection-parameters.d#list-of-xtract-connection-manager-properties).
 
 ![Connection-Manager](../../assets/images/xis/documentation/sap-connection/Connection-Manager.png){:class="img-responsive" }
 
-### SAP Credentials
-
-Enter the credentials of an SAP dialog or an SAP system user in the following input fields:
-
-| Input Field | Description |
-| :------ |:--- | 
-| **Client** | A three-digit number of the SAP client between 000 and 999, e.g., 800. | 
-| **Username** | SAP username. | 
-| **Password** | Password of the SAP user. | 
-| **Language** | The logon language for the SAP system, e.g., EN for English or DE for German. | 
-
-### Connection Methods
+### Xtract Conenction Manager Settings
 
 Some input fields for the SAP connection vary depending on the selected connection method. 
 {{ productName }} supports the following connection methods to SAP systems:
@@ -30,6 +20,10 @@ Some input fields for the SAP connection vary depending on the selected connecti
 
 	| Input Field | Description |
 	| :------ |:--- | 
+	| **Client** | A three-digit number of the SAP client between 000 and 999, e.g., 800. | 
+	| **Username** | SAP username. | 
+	| **Password** | Password of the SAP user. | 
+	| **Language** | The logon language for the SAP system, e.g., EN for English or DE for German. | 
 	| **Application server** |  Host name or IP address of the application server (Property Host).  | 
 	| **Instance number** | A two-digit number between 00 and 99 (Property SystemNumber). | 
 
@@ -37,45 +31,22 @@ Some input fields for the SAP connection vary depending on the selected connecti
 
 	| Input Field | Description |
 	| :------ |:--- | 
+	| **Client** | A three-digit number of the SAP client between 000 and 999, e.g., 800. | 
+	| **Username** | SAP username. | 
+	| **Password** | Password of the SAP user. | 
+	| **Language** | The logon language for the SAP system, e.g., EN for English or DE for German. | 
 	| **System ID** |  Three-digit System ID (Property SID e.g.,  MSS). | 
 	| **Logon group** |  Property LogonGroup, usually *PUBLIC*. | 
 	| **Message Server** |  Name or IP address of the message server (Property MessageServer). | 
 
+{% include "sap-connection/trace-directory.md" %}
 
-### Trace Directory
+{% include "sap-connection/rfc-libraries.md" %}
 
-You can log debug information and save it locally. <br>
-Enter a path to a local directory in the field **Trace directory** to save the debug information.
-For more information, see [Troubleshooting: Trace Directory](https://support.theobald-software.com/helpdesk/KB/View/14455-how-to-activate-tracing-for-xtract-products).
-
-!!! warning
-	**Increase of used hard drive memory.** <br>
-	A big amount of information is collected when debug logging is activated. This can decrease the capacity of your hard drives dramatically.
-	Activate the debug logging only when necessary e.g., upon request of the support team.
-
-### RFC Libraries
-
-The RFC API (Remote Function Call) allows to establish an RFC connection to an SAP system from an external system that communicates as Client or Server with the SAP system.  
-There are two options for using RFC libraries in Xtract IS:
-- Use classic RFC library (librfc32.dll)
-- Use NetWeaver RFC libraries (sapnwrfc.dll)
-
-!!! tip "recommendation" 
-	Use the not supported librfc32.dll for some {{ components }}, e.g., DeltaQ as it runs more stable than the NetWeaver RFC library.
-
-See additional information on SAP libraries on the [SAP Help Site - RFC Libraries](https://help.sap.com/saphelp_nwpi71/helpdata/de/45/18e96cd26321a1e10000000a1553f6/frameset.htm) <br>
-SAP does not [support librfc32.dll](https://blogs.sap.com/2012/08/15/support-for-classic-rfc-library-ends-march-2016/) anymore. 
-
-For some older SAP releases, e.g., R/3 4.6C, it is necessary to enter the user name in upper case when using the NetWeaver RFC library.
-
-!!! note 
-	When using the NetWeaver RFC library with the {{ deltaq }} {{ component }} or the {{ ohs }} {{ component }}, the RFC destination in SAP transaction SM59 must be set to *Unicode*. 
-
-### Test Connection
+#### Test Connection
 
 Clicking **[Test Connection]** validates the connection parameters. 
 A window with a status message opens in the bottom right corner of the window.
-
 
 ### Additions
 

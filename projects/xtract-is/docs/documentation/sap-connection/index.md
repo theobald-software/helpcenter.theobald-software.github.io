@@ -1,5 +1,6 @@
 ---
 title: SAP Connection
+icon: simple/sap
 description: SAP Connection
 ---
 
@@ -37,8 +38,8 @@ SSIS can connect to SAP using the "XTRACT" Connection Manager.
 
 **Supported Authentication Methods**
 
-- [Plain login](#plain-authentication) using SAP username and password (system or dialogue user)
-- [Secure Network Communication (SNC)](#snc-authentication) using username and password via basic authentication
+- [Plain login](#connect-to-sap) using SAP username and password (system or dialogue user)
+- [Secure Network Communication (SNC)](snc-authentication.md) using username and password via basic authentication
 
 ### Connect to SAP
 
@@ -60,9 +61,9 @@ The Xtract IS Connection manager is now available in the connection managers are
 6. Click **[Test connection]** to validate the connection parameters. 
 7. Click **[OK]** to save the XTRACT Connection Manager.
 
-For information on properties and parameters of the XTRACT Connection Manager, see [Connection Parameters](connection-parameters.md).<br>
-For information on how to connect to SAP using Secure Network Authentication (SNC), see [SNC Authentication](snc-authentication.md).
 
+For information on how to connect to SAP using Secure Network Authentication (SNC), see [SNC Authentication](snc-authentication.md).
+For information on properties and parameters of the XTRACT Connection Manager, see [Parameterize Connections](parameterize-connections.md).
 
 ### Assign Connection Managers to Xtract {{ Components }}
 
@@ -97,6 +98,6 @@ XTRACT Connection Managers can be assigned to an Xtract {{ component }} automati
 
 *****
 #### Related Links
-- [XTRACT Connection Manager: Properties and Parameters](connection-parameters.md)
 - [Microsoft Documentation: Create connection managers](https://learn.microsoft.com/en-us/sql/integration-services/connection-manager/integration-services-ssis-connections?view=sql-server-ver16#create-connection-managers).<br>
+- [XTRACT Connection Manager: Properties and Parameters](parameterize-connections.md)
 - [Connection Settings: Connection Methods](settings.md#connection-methods)

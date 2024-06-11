@@ -6,3 +6,4 @@ For more information about SNC configuration in SAP, see [SAP Documentation: Con
 - Check the SAP profile parameter *snc/gssapi_lib* in SAP (transaction RZ10) to determine, which library is used for encryption in your SAP system. 
 Your SAP Basis has to import and configure the same library on the application server and on the machine that runs {{ productName }}, e.g., `sapcrypto.dll`.
 
+For information on how to set up SNC via X.509 certificate, refer to the [Knowledge Base Article: Enable Secure Network Communication (SNC) via X.509 certificate](../../knowledge-base/enable-snc-using-pse-file.md).

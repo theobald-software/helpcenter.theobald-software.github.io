@@ -1,5 +1,5 @@
 ---
-title: Connection Parameters
+title: Parameterize Connections
 description: Parameterize SAP Connections
 ---
 

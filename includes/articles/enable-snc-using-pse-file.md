@@ -1,5 +1,5 @@
 
-The following article describes how an SNC connection to an SAP source system can be established. 
+The following article describes how to establish an SNC connection to an SAP source system. 
 
 The depicted approach uses an X.509 certificate that provides the logon data of the Windows AD user. 
 The correctness of this X.509 certificate is ensured via the company's internal certification authority (ca).
