@@ -14,7 +14,7 @@ This includes system requirements, backups and license information.
 - [:material-update:  Installation & Updates](installation-and-update.md)
 - [:simple-sap:  Supported SAP Releases & Databases](requirements.md/#supported-sap-systems-and-releases)
 - [:yunio-nav-license:  License Installation](license.md/#about-the-licensing-concept-of-yunio)
-- [:material-folder:  Configuration Files](installation-and-update.md/#program-directory-files)
+- [:material-folder:  Configuration Files](installation-and-update.md/#installation-directory-files)
 - [:material-folder-move-outline:  Migration to a Different Machine](backup-and-migration.md/#migrate-to-a-different-machine)
 
 </div>

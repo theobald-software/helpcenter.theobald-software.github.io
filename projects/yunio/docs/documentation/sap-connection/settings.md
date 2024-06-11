@@ -3,7 +3,7 @@ title: Connection Settings
 description: Overview of SAP connection settings
 ---
 
-This section contains an overview of the yunIO connection settings in the :yunio-nav-connections: *Connections* menu. 
+This page contains an overview of the yunIO connection settings in the :yunio-nav-connections: *Connections* menu. 
 To open the connection settings of an existing SAP connection, click :yunio-edit-connection: next to the connection.
 
 The connection settings consist of the following subsections:
