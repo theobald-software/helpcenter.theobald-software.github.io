@@ -8,7 +8,7 @@ Follow the steps on this page in the following order:
 2. [Execute the Function Module RSAP_BIW_CONNECT_40](#execute-the-function-module-rsap_biw_connect_40)
 3. [Delete the RFC Destination ](#delete-the-rfc-destination)
 4. [Create an RFC Destination of Type T](#create-an-rfc-destination-of-type-t)
-5. [Execute the Function Module RSAS_RBWBCRL_STORE](#execute-function-the-module-rsas_rbwbcrl_store)
+5. [Execute the Function Module RSAS_RBWBCRL_STORE](#execute-the-function-module-rsas_rbwbcrl_store)
 6. [Register the RFC Server](#register-the-rfc-server)
 7. [qRFC Monitor (QOUT Scheduler)](#qrfc-monitor-qout-scheduler)
 
