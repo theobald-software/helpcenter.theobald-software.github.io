@@ -1,5 +1,27 @@
 [
   {
+    "Version": "6.7.6.1",
+    "LegacyReleaseDate": "2024-06-11 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Common",
+        "Component": "General",
+        "Message": "Added support for new version history tools"
+      }
+    ]
+  },
+  {
+    "Version": "6.7.6.0",
+    "LegacyReleaseDate": "2024-06-11 14:26:09Z",
+    "Changes": [
+      {
+        "Product": "XtractUniversal",
+        "Component": "Designer",
+        "Message": "Redshift destination: table column descriptions are now included in the output table comment field."
+      }
+    ]
+  },
+  {
     "Version": "6.7.5.0",
     "LegacyReleaseDate": "2024-06-10 16:23:42Z",
     "Changes": [
