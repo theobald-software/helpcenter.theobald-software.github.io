@@ -4,9 +4,11 @@ icon: simple/sap
 description: SAP Connection
 ---
 
-This page shows how to connect to SAP.<br>
+This page shows how to connect to SAP using the "XTRACT" Connection Manager.<br>
 A connection to an SAP system is required to perform tasks like designing ETL packages, extracting metadata, previewing and deploying data using {{ productName }}. 
-SSIS can connect to SAP using the "XTRACT" Connection Manager. 
+
+An SAP connection is required to use any Xtract IS {{ component }}.
+
 
 {% include "/sap-connection/sap-auth-warning.md" %}
 

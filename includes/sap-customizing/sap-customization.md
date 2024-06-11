@@ -1,10 +1,6 @@
 
 ### Custom Function Modules
 
-Theobald Software distributes custom function modules as part of {{ productName }}. 
-The custom function modules can be installed in SAP using transport requests. 
-The transport requests are available in the installation directory of {{ productName }}, e.g., `{{ installationDir }}\ABAP\`.
-
 The following {{ components}} require the installation of a custom function module:
 
 
@@ -14,6 +10,10 @@ The following {{ components}} require the installation of a custom function modu
 | {{ table }} | [/THEO/READ_TABLE](custom-function-module-for-table-extraction.md) | Recommended |
 {% if page.meta.product == "xtract-universal" or page.meta.product == "xtract-is" or page.meta.product == "board-connector" %}| {{ tableCDC }} | [/THEO/READ_TABLE](custom-function-module-for-table-extraction.md) and [THEO_CDC](custom-function-module-for-tablecdc.md)| Required | {% endif %}
 
+Theobald Software distributes custom function modules as part of {{ productName }}. 
+The custom function modules can be installed in SAP using transport requests. 
+The transport requests are available in the installation directory of {{ productName }}, e.g., `{{ installationDir }}\ABAP\`.
+
 For information on how to use transport request, see [Import an SAP Transport Request](site:knowledge-base/import-an-sap-transport-request). <br>
 
 !!! note
@@ -21,9 +21,9 @@ For information on how to use transport request, see [Import an SAP Transport Re
 
 {% if page.meta.product == "xtract-universal" or page.meta.product == "xtract-is" or page.meta.product == "board-connector" %}
 
-### Customization
+### Customizations in SAP
 
-The following {{ components }} require a customization on the SAP system:
+The following {{ components }} require a customization in the SAP system:
 
 - {{ deltaq }}, see [Customization for DeltaQ](customization-for-deltaq.md).
 - {{ ohs }}, see [Customization for OHS in BW](customization-for-ohs-in-bw.md).
