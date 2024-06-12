@@ -50,6 +50,8 @@ A window with a status message opens in the bottom right corner of the window.
 
 ### Additions
 
+The "Additions" menu contains settings for Secure Network Communication (SNC), as well as some expert options.
+
 In the window "Xtract IS Connection Manager" click **Additions**. 
 The window "Xtract IS Connection Manager Additions" opens.
 

@@ -3,12 +3,12 @@ title: Connection Settings
 description: Overview of SAP connection settings
 ---
 
-This page contains an overview of the SAP connection settings in the XTRACT Connection Manager.<br>
-For information on the properties of an XTRACT Connection Manager, see [List of XTRACT Connection Manager Properties](connection-parameters.d#list-of-xtract-connection-manager-properties).
+This page contains an overview of the SAP connection settings in the window "Change Source".<br>
 
-![Connection-Manager](../../assets/images/xis/documentation/sap-connection/Connection-Manager.png){:class="img-responsive" }
+### General
 
-### Xtract Conenction Manager Settings
+![sap-source-general](../../assets/images/general/sap-connection/sap-source-general.png){:class="img-responsive"}
+
 
 Some input fields for the SAP connection vary depending on the selected connection method. 
 {{ productName }} supports the following connection methods to SAP systems:
@@ -39,21 +39,11 @@ Some input fields for the SAP connection vary depending on the selected connecti
 	| **Logon group** |  Property LogonGroup, usually *PUBLIC*. | 
 	| **Message Server** |  Name or IP address of the message server (Property MessageServer). | 
 
-{% include "sap-connection/trace-directory.md" %}
 
-{% include "sap-connection/rfc-libraries.md" %}
+### Authentication
 
-#### Test Connection
+![sap-source-authentication](../../assets/images/general/sap-connection/sap-source-authentication.png){:class="img-responsive"}
 
-Clicking **[Test Connection]** validates the connection parameters. 
-A window with a status message opens in the bottom right corner of the window.
-
-### Additions
-
-In the window "Xtract IS Connection Manager" click **Additions**. 
-The window "Xtract IS Connection Manager Additions" opens.
-
-![SNC](../../assets/images/xis/documentation/sap-connection/snc-connection-manager.png){:class="img-responsive"}
 
 #### SNC
 
@@ -75,6 +65,16 @@ For more information, see [SNC Authentication](snc-authentication.md)<br>
 | **Legacy storage mode (connection string)** | Activate this option, if you still use a single connection string for the SAP connection (default in {{ productName }} versions before 09.2017). You can either use *Connection properties* or a *Connection string*, not both. *Connection string* does not support [sensitive environment variable](connection-parameters.md#sensitive-environment-variable-in-ssisdb-catalog).| 
 | **Obfuscate Password** | Masks the SAP connection password. This option is activated by default when activating **Legacy storage mode**.|
 | **Internal Table Function** | Defines the function module that is used for Xtract IS' internal communication with SAP, e.g., retrieving metadata. To [change the selected function module](../setup-in-sap/custom-function-module-for-table-extraction.md), type the name of function module manually. |
+
+
+### RFC Options
+
+![sap-source-rfc-options](../../assets/images/general/sap-connection/sap-source-rfc-options.png){:class="img-responsive"}
+
+{% include "sap-connection/trace-directory.md" %}
+
+{% include "sap-connection/rfc-libraries.md" %}
+
 | **AttachesSapGui** | This option is only accessible in the *Properties* of the XTRACT Connection Manager and not in the GUI. There are SAP Reports and BAPIs that require an installed SAP GUI even when they are called remotely. In this case, set the *AttachesSapGui* property in the *Expert Options* of the XTRACT Connection Manager to *True*. |
 
 !!! warning
@@ -83,3 +83,8 @@ For more information, see [SNC Authentication](snc-authentication.md)<br>
 	To deactivate pop-up windows, open the SAP GUI Logon pad and navigate to **Options... > Security Settings**. 
 	Click the **[Open Security Configuration]** button and select *Allow* as the **Default Action**.
 	Apply the changes and close the SAP GUI Logon pad.
+	
+	
+### Access Restrictions
+
+![sap-source-access-control](../../assets/images/general/sap-connection/sap-source-access-control.png){:class="img-responsive"}

@@ -41,7 +41,7 @@ Follow the steps below to create an Xtract data source that connects to SAP:
 4. Click **[Save]** to save the SAP connection. The subsection *Connection* is displayed.
 5. In the subsection *Connection* select one of the following authentication methods: <br>
 	- [*Plain*](#plain-authentication) uses the SAP username and password.
-	- [*SNC*](#secure-network-communication-snc) uses an encrypted connection between Xtract for Alteryx and SAP with username and password. 
+	- [*SNC*](#secure-network-communication-snc) uses an encrypted connection between Xtract for Alteryx and SAP with an SAP username and password. 
 	- [*Ticket Issuer*](#sap-logon-ticket) uses SAP Logon-Tickets in place of user credentials. This connection is not encrypted.
 6. Select an existing credential for your SAP system or click **+ Connect Credential** to create a new credential. 
 For more information, see [Create Credentials](#create-credentials).
