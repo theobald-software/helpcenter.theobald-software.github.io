@@ -1,0 +1,5 @@
+nav:
+    - index.md
+    - snc-authentication.md
+    - settings.md
+    - parameterize-connections.md

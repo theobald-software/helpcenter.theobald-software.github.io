@@ -38,7 +38,7 @@ Some input fields for the SAP connection vary depending on the selected connecti
 
 
 !!! tip
-	Input values for the SAP connection can be found in the Properties of the SAP Logon Pad or the can be requested from the SAP Basis team.
+	Input values for the SAP connection can be found in the Properties of the SAP Logon Pad or they can be requested from the SAP Basis team.
 	
 
 ### Advanced Options
