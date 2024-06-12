@@ -6,7 +6,7 @@
       {
         "Product": "ERPConnect",
         "Component": "General",
-        "Message": "Setup now contains a version history page that displays any possible breaking changes that may be introduced in the new version"
+        "Message": "New version numbering scheme.\nSetup now displays possible breaking changes when performing an update to a new version"
       }
     ]
   },
