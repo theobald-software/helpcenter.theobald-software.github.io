@@ -7,9 +7,9 @@
 
 **Supported Authentication Methods**
 
-- [Plain login](#connect-to-sap) using SAP username and password (system or dialogue user)
+- Plain login using SAP username and password (system or dialogue user)
 - [Secure Network Communication (SNC)](snc-authentication.md) using username and password via basic authentication
-- [SSO with Login-Ticket](sso-with-logon-ticket-md) using username and password via basic authentication
+- [SSO with Logon-Ticket](sso-with-logon-ticket-md) using username and password via basic authentication
 
 ### Connect to SAP
 

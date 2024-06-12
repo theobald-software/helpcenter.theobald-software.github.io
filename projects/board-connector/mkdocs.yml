@@ -77,6 +77,8 @@ extra_css:
   - assets/stylesheets/extra.css
   - assets/stylesheets/neoteroi-cards.css 
   - assets/stylesheets/hyperscript.css
+  - assets/stylesheets/github-permalink-style.css
+ 
 extra_javascript:
   - assets/javascripts/hyperscript.min.js
   - assets/javascripts/changelog.js
@@ -123,6 +125,7 @@ hooks:
 markdown_extensions:
   - toc:
       separator: "-"
+      permalink: ''
       title: On this Page
   - pymdownx.snippets:
       base_path: includes
