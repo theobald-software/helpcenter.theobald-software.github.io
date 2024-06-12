@@ -10,10 +10,6 @@ This page contains an overview of the SAP connection settings in the Xtract data
 ### Xtract Data Source Settings
 
 Some input fields for the SAP connection vary depending on the selected connection method in the field **Technology**. 
-{{ productName }} supports the following connection methods to SAP systems:
-
-- Connection to a single application server.
-- Connection to a message server, see [SAP Documentation: Load Balancing](https://help.sap.com/saphelp_nwpi711/helpdata/en/c4/3a644c505211d189550000e829fbbd/content.htm?no_cache=true).
 
 
 === "Xtract SAP Application Server"
@@ -54,9 +50,4 @@ Some input fields for the SAP connection vary depending on the selected connecti
 There are SAP Reports and BAPIs that require an installed SAP GUI even when they are called remotely. <br>
 Activate this option only if necessary.
 
-!!! warning
-	**'sapgui' start failed.**<br>
-	Sometimes SAP opens a pop-up window that requires input when running extractions.
-	To deactivate pop-up windows, open the SAP GUI Logon pad and navigate to **Options... > Security Settings**. 
-	Click the **[Open Security Configuration]** button and select *Allow* as the **Default Action**.
-	Apply the changes and close the SAP GUI Logon pad.
+{% include "sap-connection/sap-gui-warning.md" %}

@@ -16,4 +16,4 @@ An SAP connection is required to use any Xtract Universal {{ component }}.
 
 *****
 #### Related Links
-- [Connection Settings: Connection Methods](settings.md#connection-methods)
+- [Connection Settings](settings.md)

@@ -102,4 +102,4 @@ XTRACT Connection Managers can be assigned to an Xtract {{ component }} automati
 #### Related Links
 - [Microsoft Documentation: Create connection managers](https://learn.microsoft.com/en-us/sql/integration-services/connection-manager/integration-services-ssis-connections?view=sql-server-ver16#create-connection-managers).<br>
 - [XTRACT Connection Manager: Properties and Parameters](parameterize-connections.md)
-- [Connection Settings: Connection Methods](settings.md#connection-methods)
+- [Connection Settings](settings.md)

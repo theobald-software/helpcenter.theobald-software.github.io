@@ -11,10 +11,6 @@ For information on the properties of an XTRACT Connection Manager, see [List of 
 ### Xtract Conenction Manager Settings
 
 Some input fields for the SAP connection vary depending on the selected connection method. 
-{{ productName }} supports the following connection methods to SAP systems:
-
-- Connection to a single application server.
-- Connection to a message server, see [SAP Documentation: Load Balancing](https://help.sap.com/saphelp_nwpi711/helpdata/en/c4/3a644c505211d189550000e829fbbd/content.htm?no_cache=true).
 
 === "Use Single Application Server"
 
@@ -65,8 +61,8 @@ For more information, see [SNC Authentication](snc-authentication.md)<br>
 | Input Field | Description |
 | :------ |:--- | 
 | **SNC enabled** | Activate this option to enable Secure Network Communication (SNC) between {{ productName }} and SAP. |
-| **SNC library (32 Bit, Visual Studio)** | The path to the SNC library for 32 Bit, e.g., `C:\Program Files (x86)\SAP\FrontEnd\SecureLogin\sapcrypto.dll` |
-| **SNC library (64 Bit)** | The path to the SNC library for 64 Bit, e.g., `C:\Program Files\SAP\FrontEnd\SecureLogin\sapcrypto.dll` |
+| **SNC library (32 Bit, Visual Studio)** | Path to the SNC library for 32 Bit, e.g., `C:\Program Files (x86)\SAP\FrontEnd\SecureLogin\sapcrypto.dll` |
+| **SNC library (64 Bit)** | Path to the SNC library for 64 Bit, e.g., `C:\Program Files\SAP\FrontEnd\SecureLogin\sapcrypto.dll` |
 | **Partner Name** | The SAP Partner Name configured for the SAP application server, e.g., `p:SAPserviceERP/Alice@THEOBALD.LOCAL`. |
 | **Quality of Protection** | The SNC level of protection. The default value is *9 - Maximum*. For more information, see [SAP Documentation: Secure Network Communications (SNC) - Levels of Protection](https://help.sap.com/docs/SAP_NETWEAVER_701/6f3e0bea6c4b101484fcf5305b4d624b/e656f466e99a11d1a5b00000e835363f.html?version=7.01.22#levels-of-protection). |
 
@@ -79,9 +75,4 @@ For more information, see [SNC Authentication](snc-authentication.md)<br>
 | **Internal Table Function** | Defines the function module that is used for Xtract IS' internal communication with SAP, e.g., retrieving metadata. To [change the selected function module](../setup-in-sap/custom-function-module-for-table-extraction.md), type the name of function module manually. |
 | **AttachesSapGui** | This option is only accessible in the *Properties* of the XTRACT Connection Manager and not in the GUI. There are SAP Reports and BAPIs that require an installed SAP GUI even when they are called remotely. In this case, set the *AttachesSapGui* property in the *Expert Options* of the XTRACT Connection Manager to *True*. |
 
-!!! warning
-	**'sapgui' start failed.**<br>
-	Sometimes SAP opens a pop-up window that requires input when running extractions.
-	To deactivate pop-up windows, open the SAP GUI Logon pad and navigate to **Options... > Security Settings**. 
-	Click the **[Open Security Configuration]** button and select *Allow* as the **Default Action**.
-	Apply the changes and close the SAP GUI Logon pad.
+{% include "sap-connection/sap-gui-warning.md" %}

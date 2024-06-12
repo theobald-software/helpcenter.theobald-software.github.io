@@ -15,7 +15,7 @@ Follow the steps below to set up an SAP connection that uses SNC:
 ![Credentials](../../assets/images/xfa/documentation/sap-connection/credentials.png){:class="img-responsive"}
 3. Enter a name for the credential, e.g., "alice-logon-ticket".
 4. Select the authentication method *SAP Ticket issuer*.
-5. Enter the URL of an Application Server Java (AS Java) that is configured to issue logon tickets in the field **Ticket issuer Url**. <br>
+5. Enter the URL of an Application Server Java (AS Java) that is configured to issue logon tickets in the field **Ticket issuer Url**.
 For more information, see [SAP Documentation: Configuring the AS Java to Issue Logon Tickets](https://help.sap.com/doc/saphelp_nw75/7.5.5/EN-US/4a/412251343f2ab1e10000000a42189c/frameset.htm).<br>
 ![SAP-Logon-Ticket-Credential](../../assets/images/xfa/documentation/sap-connection/logon-tickets.png){:class="img-responsive"}
 6. Click **[Save]** to save the credential.
