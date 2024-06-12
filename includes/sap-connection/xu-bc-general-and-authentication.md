@@ -8,7 +8,7 @@ Some input fields for the SAP connection vary depending on the selected connecti
 
 === "Single Application Server"
 
-	![sap-source-general](../../assets/images/general/sap-connection/sap-source-general.png){:class="img-responsive"}
+	![sap-source-general](../../assets/images/documentation/sap-connection/sap-source-general.png){:class="img-responsive"}
 
 	| Input Field | Description |
 	| :------ |:--- | 
@@ -19,7 +19,7 @@ Some input fields for the SAP connection vary depending on the selected connecti
 
 === "Load Balancing"
 
-	![sap-source-general-load-balancing](../../assets/images/general/sap-connection/sap-source-general-load-balancing.png){:class="img-responsive"}
+	![sap-source-general-load-balancing](../../assets/images/documentation/sap-connection/sap-source-general-load-balancing.png){:class="img-responsive"}
 
 	| Input Field | Description |
 	| :------ |:--- | 
@@ -31,7 +31,7 @@ Some input fields for the SAP connection vary depending on the selected connecti
 
 === "WebSocket"
 
-	![sap-source-websocket](../../assets/images/general/sap-connection/sap-source-general-websocket.png){:class="img-responsive"}
+	![sap-source-websocket](../../assets/images/documentation/sap-connection/sap-source-general-websocket.png){:class="img-responsive"}
 
 	| Input Field | Description |
 	| :------ |:--- | 
@@ -50,7 +50,7 @@ Some input fields for the SAP connection vary depending on the selected authenti
 
 === "Plain"
 
-	![sap-source-authentication-plain](../../assets/images/general/sap-connection/sap-source-authentication-plain.png){:class="img-responsive"}
+	![sap-source-authentication-plain](../../assets/images/documentation/sap-connection/sap-source-authentication-plain.png){:class="img-responsive"}
 
 	| Input Field | Description |
 	| :------ |:--- | 
@@ -61,7 +61,7 @@ Some input fields for the SAP connection vary depending on the selected authenti
 
 === "Secure Network communication (SNC)"
 
-	![sap-source-authentication-snc](../../assets/images/general/sap-connection/sap-source-authentication-snc.png){:class="img-responsive"}
+	![sap-source-authentication-snc](../../assets/images/documentation/sap-connection/sap-source-authentication-snc.png){:class="img-responsive"}
 
 	| Input Field | Description |
 	| :------ |:--- | 
@@ -78,7 +78,7 @@ Some input fields for the SAP connection vary depending on the selected authenti
 
 === "SAP Logon Ticket"
 
-	![sap-source-authentication-logon-ticket](../../assets/images/general/sap-connection/sap-source-authentication-logon-ticket.png){:class="img-responsive"}
+	![sap-source-authentication-logon-ticket](../../assets/images/documentation/sap-connection/sap-source-authentication-logon-ticket.png){:class="img-responsive"}
 
 	| Input Field | Description |
 	| :------ |:--- | 

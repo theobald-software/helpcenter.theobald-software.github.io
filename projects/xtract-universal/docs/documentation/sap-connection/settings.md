@@ -7,7 +7,7 @@ description: Overview of SAP connection settings
 
 ### RFC Options
 
-![sap-source-rfc-options](../../assets/images/general/sap-connection/sap-source-rfc-options.png){:class="img-responsive" }
+![sap-source-rfc-options](../../assets/images/documentation/sap-connection/sap-source-rfc-options.png){:class="img-responsive" }
 
 {% include "sap-connection/rfc-libraries.md" %}
 
@@ -23,7 +23,7 @@ Activate this option only if necessary.
 	
 ### Access Control
 
-![sap-source-access-control](../../assets/images/general/sap-connection/sap-source-access-control.png){:class="img-responsive"}
+![sap-source-access-control](../../assets/images/documentation/sap-connection/sap-source-access-control.png){:class="img-responsive"}
 
 Access control can be performed at the source level. This access control overrides the settings at the server level.
 For more information, see [Access Restrictions](#link).

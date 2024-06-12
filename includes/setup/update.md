@@ -110,7 +110,7 @@ There are two ways to use the *ConfigConverter*:
 === "Manual Upgrade"
 	If the *ConfigConverter* is not executed automatically during installation, the converter can also be started manually.
 	Run the *ConfigConverter.exe* in the {{ productName }} installation directory, e.g., `{{ installationDir }}`. <br>
-	![Migration](../../assets/images/general/setup/Migration.png){:class="img-responsive"}
+	![Migration](../../assets/images/documentation/setup/Migration.png){:class="img-responsive"}
 
 !!! note
     Any issues that may occur during the conversion process are displayed in the command line window. Copy and send the command line context to the support team, if required.

@@ -45,7 +45,7 @@ Go to SAP transaction *SM59* and delete the RFC destination of type *R/3* via **
 ### Create an RFC Destination of Type T
 1. Go to SAP transaction *SM59* to create an RFC destination of type *T=TCP/IP* that has the same name as the deleted RFC destination of type *R/3*.
 2. Select the activation type **Registered Server Program**.<br>
-![DeltaQ-Customizing-04](../../assets/images/general/sap-customization/DeltaQ-Customizing-04.png){:class="img-responsive"}
+![DeltaQ-Customizing-04](../../assets/images/documentation/sap-customization/DeltaQ-Customizing-04.png){:class="img-responsive"}
 3. Set the following parameters:
 
 	Tab | Field | Example Value | Comment
@@ -82,7 +82,7 @@ Follow the instructions in the [Knowledge Base Article: Register an RFC Server i
 2. Select the created RFC destination, e.g., *XTRACT01*. 
 3. Click **Register without activation** and set the parameter **Max.Verb.** to 10. 
 Increase this value in case of parallel execution of several {{ deltaq }} {{ components }} on the same RFC destination.<br>
-![DeltaQ-Customizing-06](../../assets/images/general/sap-customization/DeltaQ-Customizing-06.png){:class="img-responsive" }
+![DeltaQ-Customizing-06](../../assets/images/documentation/sap-customization/DeltaQ-Customizing-06.png){:class="img-responsive" }
 
 !!! note
 	For DeltaQ customizing errors, refer to the [DeltaQ Troubleshooting Guide](https://support.theobald-software.com/helpdesk/KB/View/14424-deltaq-troubleshooting-guide).

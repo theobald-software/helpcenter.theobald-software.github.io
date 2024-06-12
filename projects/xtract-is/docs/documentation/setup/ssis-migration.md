@@ -17,9 +17,10 @@ Install the latest version of Xtract IS on your SSIS server and any development 
 
 A migration from SQL Server 2012 to SQL Server 2019 also requires a migration of SSIS packages.
 
-The SSIS packages are converted to run on SQL Server 2016 using the *XtractIS Conversion Preparer* before they can be migrated to SQL Server 2019.
-The XtractIS Conversion Preparer is a tool that prepares SSIS packages created for older SQL Server versions to migrate to newer SQL Server versions.
-You can find the *XtractISConversionPreparer.exe* in the installation directory of Xtract IS, e.g., `C:\Program Files\XtractIS\XtractISConversionPreparer.exe`. 
+The SSIS packages are converted to run on SQL Server 2016 using the *Xtract IS Conversion Preparer* before they can be migrated to SQL Server 2019.
+The *Xtract IS Conversion Preparer* is a tool that prepares SSIS packages created for older SQL Server versions to migrate to newer SQL Server versions.
+
+The *XtractISConversionPreparer.exe* is located in the installation directory of Xtract IS, e.g., `{{ installationDir }}\XtractISConversionPreparer.exe`. 
 
 1. Run the *XtractISConversionPreparer.exe*. The window "XtractIS Conversion Preparer" opens.
 2. Click **[Add file(s)]** and select the packages that need to be prepared for conversion.
@@ -50,7 +51,7 @@ During conversion, the tool creates a backup of your SSIS package. <br>
 ![VS-Deployment-Target](../../assets/images/xis/documentation/setup/VS_Deployment_Target.png){:class="img-responsive"}
 	- If your SSIS packages have been created by an SSDT/VS version from **after** 2015 for SQL Server 2014/2016, continue with step 6.
 	- If your SSIS packages have been created by an SSTD/VS version from **before** 2015 for SQL Server 2014/2016, select the SQL Server on which your packages have run until now (SQL Server 2014 or SQL Server 2016).
-	- If the SSIS packages have been prepared by the *XtractIS Conversion Preparer* from [Migrating from SQL Server 2008/2012 to SQL Server 2019](#migrate-from-sql-server-2012-to-sql-server-2019), select SQL Server 2016.<br>
+	- If the SSIS packages have been prepared by the *Xtract IS Conversion Preparer* from [Migrating from SQL Server 2008/2012 to SQL Server 2019](#migrate-from-sql-server-2012-to-sql-server-2019), select SQL Server 2016.<br>
 3. Save the project.
 4. Add the SSIS packages to the project.
 5. Save the project again.

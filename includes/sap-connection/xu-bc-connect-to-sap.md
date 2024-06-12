@@ -18,10 +18,10 @@ Follow the steps below to create an SAP source that connects to SAP:
 1. In the main window of the Designer, navigate to the menu bar and select **Server > Manage Sources**. The window "Manage Sources" opens.  <br>
 ![Create-Connection](../../assets/images/{{ abbr }}/documentation/sap-connection/open-manage-sources.png){:class="img-responsive"}
 2. Click **[Add]** to add a new SAP connection or click :pen-button: to edit an existing connection. The window "Change Source" opens. <br>
-![Create-Connection-2](../../assets/images/general/sap-connection/sap-source-manage.png){:class="img-responsive"}
+![Create-Connection-2](../../assets/images/documentation/sap-connection/sap-source-manage.png){:class="img-responsive"}
 3. Enter a name for the SAP connection in the field **Name**.
 4. In the *General* tab, enter the [system details](settings.md#link) of your SAP system and enter the SAP username and password of an SAP system or dialogue user.  <br>
-![sap-source-general](../../assets/images/general/sap-connection/sap-source-general.png){:class="img-responsive"}
+![sap-source-general](../../assets/images/documentation/sap-connection/sap-source-general.png){:class="img-responsive"}
 
 	!!! tip
 		Input values for the SAP connection can be found in the Properties of the SAP Logon Pad or they can be requested from the SAP Basis team.
@@ -47,5 +47,5 @@ Follow the steps below to change the SAP source of an existing extraction:
 2. Click **[Source]**. The window “Change Source” opens.<br>
 ![open-sap-source](../../assets/images/{{ abbr }}/documentation/sap-connection/open-sap-source.png){:class="img-responsive"}
 3. Select an SAP source from the dropdown list.<br>
-![sap-source-change](../../assets/images/general/sap-connection/sap-source-change.png){:class="img-responsive"}
+![sap-source-change](../../assets/images/documentation/sap-connection/sap-source-change.png){:class="img-responsive"}
 4. Click **[OK]** to confirm your input.

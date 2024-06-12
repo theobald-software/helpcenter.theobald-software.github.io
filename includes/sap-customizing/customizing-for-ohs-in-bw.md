@@ -15,7 +15,7 @@ Depending on the SAP release, {{ ohs }} can be used as follows:
 2. Select the activation type **Registered Server Program** :number-2:.
 3. Enter a name in the field **Program ID** :number-3:, e.g., *XTRACT01*.
 The name of the Program ID is needed again for later configuration.<br>
-![OHS-BW-01](../../assets/images/general/sap-customization/ohs_destination.png){:class="img-responsive"}
+![OHS-BW-01](../../assets/images/documentation/sap-customization/ohs_destination.png){:class="img-responsive"}
 
 ### InfoSpokes and Process Chains (BI < 7.0)
 
@@ -35,19 +35,19 @@ The name of the Program ID is needed again for later configuration.<br>
 
 1. Go to SAP transaction *RSA1* to open the Administrator Workbench.
 2. Navigate to **Open Hub Destination** in the left tree and right-click on an InfoArea. Select **Create Open Hub Destination** in the context menu. <br>
-![OHS-BW-02](../../assets/images/general/sap-customization/ohs_1.png){:class="img-responsive"}
+![OHS-BW-02](../../assets/images/documentation/sap-customization/ohs_1.png){:class="img-responsive"}
 3. In the edit mode of the destination, set the *Destination Type* to **Third Party Tool** and select your RFC destination.
-![OHS-BW-03](../../assets/images/general/sap-customization/ohs_2.png){:class="img-responsive"}
+![OHS-BW-03](../../assets/images/documentation/sap-customization/ohs_2.png){:class="img-responsive"}
 4. Save and activate the OHS destination. 
 5. Click on the newly created OHS destination in the middle tree of the InfoAreas and select **Create Data Transfer Process** to create a new data transfer process (DTP). 
 6. Save and activate the DTP. If necessary, change the extraction type from *Delta* to *Full* before activating) 
 The arrangement of Destination, Transformations and DTP in the OHS tree is done afterwards.
 7. Create a process chain that contains the new DTP.<br>
-![OHS-BW-02](../../assets/images/general/sap-customization/ohs_4.png){:class="img-responsive"}
+![OHS-BW-02](../../assets/images/documentation/sap-customization/ohs_4.png){:class="img-responsive"}
 8. Make sure that the planning option **Start Using Meta Chain or API** is selected in the process chain start variant. <br>
-![OHS-BW-02](../../assets/images/general/sap-customization//ohs_5.png){:class="img-responsive"}
+![OHS-BW-02](../../assets/images/documentation/sap-customization//ohs_5.png){:class="img-responsive"}
 9. Activate the process chain.
-![OHS-BW-02](../../assets/images/general/sap-customization/ohs_7.png){:class="img-responsive"}
+![OHS-BW-02](../../assets/images/documentation/sap-customization/ohs_7.png){:class="img-responsive"}
 
 
 ****
