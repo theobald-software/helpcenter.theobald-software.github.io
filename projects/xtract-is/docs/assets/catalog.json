@@ -1,5 +1,32 @@
 [
   {
+    "Version": "7.7.1.0",
+    "LegacyReleaseDate": "2024-06-12 15:19:14Z",
+    "Changes": [
+      {
+        "Product": "XtractIS",
+        "Component": "General",
+        "Message": "Updated NW RFC SDK to 750 PL13"
+      },
+      {
+        "Product": "Common",
+        "Component": "General",
+        "Message": "Updated NW RFC SDK to 750 PL13"
+      }
+    ]
+  },
+  {
+    "Version": "7.7.0.6",
+    "LegacyReleaseDate": "2024-06-12 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "ERPConnect",
+        "Component": "General",
+        "Message": "New version numbering scheme.\nSetup now displays possible breaking changes when performing an update to a new version"
+      }
+    ]
+  },
+  {
     "Version": "7.7.0.4",
     "LegacyReleaseDate": "2024-06-11 00:00:00Z",
     "Changes": [
