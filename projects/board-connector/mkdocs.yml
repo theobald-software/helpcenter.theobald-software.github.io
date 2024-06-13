@@ -130,6 +130,7 @@ markdown_extensions:
   - pymdownx.snippets:
       base_path: includes
   - pymdownx.superfences #for content tabs (version history)
+  - pymdownx.keys
   - pymdownx.tabbed:
       alternate_style: true
   - tables

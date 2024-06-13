@@ -100,7 +100,6 @@ plugins:
   - awesome-pages # define navigation in .pages files
   - macros:
       include_dir: includes
-      modules: ['includex']
   #- swagger-ui-tag
   #- glightbox #image zoom
   #- tags # enables tags in front matter
@@ -131,6 +130,7 @@ markdown_extensions:
   - pymdownx.snippets:
       base_path: includes
   - pymdownx.superfences #for content tabs (version history)
+  - pymdownx.keys
   - pymdownx.tabbed:
       alternate_style: true
   - tables
