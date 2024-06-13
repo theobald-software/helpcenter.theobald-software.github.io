@@ -2,5 +2,6 @@ nav:
     - Introduction: introduction.md
     - Setup: setup
     - SAP Customization: setup-in-sap
+    - designer.md
     - SAP Connection: sap-connection
     - About this Documentation: about-this-documentation.md

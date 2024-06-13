@@ -94,3 +94,10 @@ Before you connect to a central Xtract Universal Server, make sure you have acce
 
 !!! note
 	The standalone Designer might be classified as 'dangerous' by antivirus software. Make sure the Designer is not blocked by antivirus software.
+
+
+*****
+#### Related Links
+- [Start the Designer](../designer.md)
+- [Server Settings](../server/server-settings.md)
+- [Security](../security/index.md)

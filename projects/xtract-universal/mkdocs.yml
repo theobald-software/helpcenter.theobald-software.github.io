@@ -100,6 +100,7 @@ plugins:
   - awesome-pages # define navigation in .pages files
   - macros:
       include_dir: includes
+      modules: ['includex']
   #- swagger-ui-tag
   #- glightbox #image zoom
   #- tags # enables tags in front matter

@@ -8,7 +8,7 @@ Note that this connection is not encrypted.
 
 ### SAP Logon Ticket
 
-Follow the steps below to set up an SAP connection that uses SNC:
+Follow the steps below to set up an SAP connection that uses SSO with Logon-Tickets:
 
 1. In the main menu of the Alteryx Designer navigate to **File > Manage Connections**. The window “Connection Manager” opens.
 2. In the tab *Credentials* click **[New]** to create a credential.<br>

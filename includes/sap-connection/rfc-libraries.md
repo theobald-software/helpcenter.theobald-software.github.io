@@ -16,7 +16,7 @@ SAP does not [support librfc32.dll](https://blogs.sap.com/2012/08/15/support-for
 	For some older SAP releases, e.g., R/3 4.6C, it is necessary to enter the user name in upper case when using the NetWeaver RFC library.
 
 !!! note 
-	When using the NetWeaver RFC library with the {{ deltaq }} {{ component }} or the {{ ohs }} {{ component }}, the RFC destination in SAP transaction SM59 must be set to *Unicode*. 
+	When using the NetWeaver RFC library with the [{{ deltaq }}](../deltaq/index.md) {{ component }} or the [{{ ohs }}](../ohs/index.md) {{ component }}, the RFC destination in SAP transaction SM59 must be set to *Unicode*. 
 	We recommend using the not supported librfc32.dll for some {{ components }}, e.g., {{ deltaq }} as it runs more stable than the NetWeaver RFC library.
 
 {% endif %}
