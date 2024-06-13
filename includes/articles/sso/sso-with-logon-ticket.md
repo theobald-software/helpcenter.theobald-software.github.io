@@ -8,7 +8,7 @@ For more information on using SSO with {{ productName }} ({{ Abbr }}), see [Docu
 
 ### Requirements
 
-- The {{ productName }} server must be set up to use HTTPS, see [SSO with Kerberos SNC](sso-with-kerberos-snc.md). 
+- The {{ productName }} server must be set up to use HTTPS, see [SSO with Kerberos SNC](sso-with-kerberos-snc.md#activation-of-https). 
 - The {{ productName }} service must run under an [{{ Abbr }} Service Account](https://help.theobald-software.com/en/xtract-universal/advanced-techniques/service-account).
 - The {{ Abbr }} service account must be configured for *Constrained Delegation* to the SPN of the AS Java in AD.
 - An Application Server Java (AS Java) must be set up as a Ticket Issuing System, see [SAP Documentation: Configuring the AS Java to Issue Logon Tickets](https://help.sap.com/doc/saphelp_nw75/7.5.5/EN-US/4a/412251343f2ab1e10000000a42189c/frameset.htm).
