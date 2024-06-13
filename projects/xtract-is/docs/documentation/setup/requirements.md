@@ -26,16 +26,7 @@ This page contains information about system requirements and compatible SAP syst
 - SQL Server 2019
 - SQL Server 2022
 
-### Supported SQL Server Integration Services (SSIS) 	
-
-- SQL Server Integration Services (SSIS) 2014 SP3 (until 2024-07-09)
-- SQL Server Integration Services (SSIS) 2016 SP2 (until 2026-07-14)
-- SQL Server Integration Services (SSIS) 2017 (until 2027-10-12)
-- SQL Server Integration Services (SSIS) 2019 (until 2030-01-08)
-- SQL Server Integration Services (SSIS) 2022
-
-The version of the SQL Server Database used to read or write data can differ from the SQL Server Integration Services (SSIS) version, e.g., you can use SSIS version 2019 to write data to SQL Server Database version 2022.  
-
+{% include "requirements/supported-ssis.md" %}
 
 {% include "requirements/sap-releases.md" %}
 
@@ -45,17 +36,4 @@ The version of the SQL Server Database used to read or write data can differ fro
 
 {% include "requirements/operating-systems.md" %}
 
-
-### Other Applications and Frameworks	
-
-.NET Framework 4.7.2 or higher, see [Download .NET Framework from the Microsoft website](https://support.microsoft.com/en-us/help/4054530/microsoft-net-framework-4-7-2-offline-installer-for-windows).
-
-### Hardware
-
-The following requirements apply to the hardware:
-
-| Hardware     | Minimum Requirement      | 
-|--------------|--------------------------|
-| Main Memory  | 4 GB. Depending on data volume, more memory may be required |
-| Disk Space   | min. 50 MB total for Installation |
-| 32/64-Bit Environment | both 32-Bit and 64-Bit operating systems are supported|
+{% include "requirements/xis-hardware.md" %}
