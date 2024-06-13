@@ -61,9 +61,9 @@ For more information on how to create and maintain extractions in the Xtract Uni
 
 {{ productName }} consists of two components:
 
-- A [Designer](#link) to design and configure {{ extractions }}.<br>
+- A [Designer](designer.md) to design and configure {{ extractions }}.<br>
 When designing {{ extractions }} in the Designer, the user can create and modify extractions, sources, destinations and alter the server settings.
-- A [Server](#link) to execute {{ extractions }}.<br>
+- A [Server](server/index.md) to execute {{ extractions }}.<br>
 During the execution phase, the user can execute the {{ extractions }} that were designed in the Designer. 
 The execution of the {{ extractions }} takes place on the server.
 

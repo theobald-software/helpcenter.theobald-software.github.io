@@ -29,9 +29,9 @@ The default authentication methods are authentication via *Windows credentials (
 Once logged in, you can activate or deactivate methods of authentication, see [Server Settings](#link). 
 
 
-## Main Window Overview
+## Main Window
 
-The Designer features different functionalities for data extraction from SAP. 
+The Designer features different functionalities to design and configure extractions.
 
 !!! tip 
 	Press **[F1]** to open the documentation page for particular windows.
