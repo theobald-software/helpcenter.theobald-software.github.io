@@ -12,7 +12,7 @@
   --md-accent-fg-color: FF003C;
   */
   
-  
+.md-typeset .md-button--stretch { width: 100%; text-align: center;}
 /* right navigation (toc): title */	
 .md-nav__title {
   font-size: 16px;
