@@ -5,11 +5,6 @@ description: Installation of Xtract IS for Azure
 
 This page shows how to setup Xtract IS for Azure on an Azure SSIS-IR.
 
-### Prerequisites
-
-The SAP system needs to be accessible from the Azure-SSIS IR, e.g., through a VPN tunnel or a self-hosted Integration Runtime.
-
-
 ### Manual Setup
 
 #### Create an Azure Storage container

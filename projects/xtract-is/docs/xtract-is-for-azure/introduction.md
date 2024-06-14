@@ -16,6 +16,12 @@ Xtract IS for Azure is a plug and play solution that allows running SSIS package
 
 ![XISforAzure_Architecture](../assets/images/xis/for-azure/Xtract_IS_for_Azure.png){:class="img-responsive"}
 
+### Prerequisites
+
+The SAP system needs to be accessible from the Azure-SSIS IR, e.g., through a VPN tunnel or a self-hosted Integration Runtime.
+
+For information on system requirements, see [Requirements](requirements.md).
+
 ### Software Architecture
 
 With Azure-SSIS IR, SSIS packages are developed on a local Xtract IS (on-prem) Visual Studio/SSDT environment.

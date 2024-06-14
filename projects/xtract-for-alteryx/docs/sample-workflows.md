@@ -43,16 +43,17 @@ hide:
 | Category | Description |
 | -----|------------ | 
 | [:simple-sap: SAP Migration Scenarios](#sap-migration-scenarios) | Workflows that support SAP migration, e.g., from ECC to S/4HANA |  
-| [:component-bapi: Xtract BAPI](#xtract-bapi) | Workflows that execute SAP BAPIs and Function modules |
+| [:component-bapi: Xtract BAPI](#xtract-bapi) | Workflows that execute SAP BAPIs and function modules |
 | [:component-bwcube: Xtract Cube](#xtract-cube) | Workflows that extract data from SAP BW InfoCubes and BEx Queries |
 | [:component-hierarchy: Xtract Hierarchy](#xtract-hierarchy) | Workflows that extract Hierarchies from an SAP BW system |
 | [:component-odp: Xtract ODP](#xtract-odp) | Workflows that extract data via the SAP Operational Data Provisioning (ODP) framework |
-| [:component-report: Xtract Report](#xtract-report) | Workflows that extract data from SAP ABAP Report |
+| [:component-report: Xtract Report](#xtract-report) | Workflows that extract data from SAP ABAP Reports |
 | [:component-table: Xtract Table](#xtract-table) | Workflows that extract data from SPA table and Views |
 -->
 
 ### :simple-sap: SAP Migration Scenarios
 
+Workflows that support SAP migration, e.g., from ECC to S/4HANA:
 
 <div class="grid cards" markdown>
 
@@ -108,6 +109,7 @@ hide:
 
 ### :component-bapi: Xtract BAPI
 
+Workflows that execute SAP BAPIs and function modules:
 
 <div class="grid cards" markdown>
 
@@ -154,6 +156,8 @@ hide:
 
 ### :component-bwcube: Xtract Cube
 
+Workflows that extract data from SAP BW InfoCubes and BEx Queries:
+
 <div class="grid cards" markdown>
 
 -   __Cube: BWInfoProvider__
@@ -178,6 +182,8 @@ hide:
 
 ### :component-hierarchy: Xtract Hierarchy
 
+Workflows that extract Hierarchies from an SAP BW system:
+
 <div class="grid cards" style="width:49.5%;" markdown>
 
 -   __BW CostCenter Hierarchy__
@@ -194,6 +200,8 @@ hide:
 ---
 
 ### :component-odp: Xtract ODP
+
+Workflows that extract data via the SAP Operational Data Provisioning (ODP) framework:
 
 <div class="grid cards" markdown>
 
@@ -264,6 +272,8 @@ hide:
 
 ### :component-report: Xtract Report
 
+Workflows that extract data from SAP ABAP Reports:
+ 
 <div class="grid cards" markdown>
 
 -   __Read Reports from SAP ERP__
@@ -287,6 +297,8 @@ hide:
 ---
 
 ### :component-table: Xtract Table
+
+Workflows that extract data from SPA table and Views:
 
 <div class="grid cards" markdown>
 
