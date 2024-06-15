@@ -4,5 +4,6 @@ nav:
     - SAP Customization: setup-in-sap
     - designer.md
     - SAP Connection: sap-connection
+    - destinations
     - organize-extractions.md
     - About this Documentation: about-this-documentation.md
