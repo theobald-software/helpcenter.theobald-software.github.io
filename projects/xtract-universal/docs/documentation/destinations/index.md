@@ -1,7 +1,7 @@
 ---
 title: Destinations
 description: Destinations
-icon: octicons/upload-16
+icon: material/target
 ---
 
 Xtract Universal allows you to extract data from SAP systems and load them to different destination environments.
