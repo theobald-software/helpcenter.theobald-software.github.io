@@ -10,7 +10,7 @@ Enter WHERE clauses manually in *Text mode* or use the [WHERE Clause Editor](#wh
 
 {% include "components/tables/where-clause-editor.md" %}
 
-### Parameterize the WHERE Clause
+## Parameterize the WHERE Clause
 
 The WHERE clause can be parameterized in the request body of the service. 
 

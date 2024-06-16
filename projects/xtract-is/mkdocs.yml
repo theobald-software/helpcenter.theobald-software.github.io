@@ -238,3 +238,4 @@ extra:
   extractions: SSIS packages
   settings: settings
   settingsBtn: __Settings__
+  previewBtn: __[Load live preview]__

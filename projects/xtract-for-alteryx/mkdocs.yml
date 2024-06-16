@@ -238,3 +238,4 @@ extra:
   parameterBtn: __[Edit parameters]__
   variable: runtime parameter
   variables: runtime parameters
+  previewBtn: __Load live preview__

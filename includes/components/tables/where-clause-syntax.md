@@ -1,4 +1,5 @@
-### WHERE Clause Text Mode
+
+## WHERE Clause Text Mode
 
 The WHERE clause text mode allows you to directly enter a WHERE clauses. {% if page.meta.product != "yunio" %}The text mode of the WHERE clause supports script expressions.{% endif %}
 {% if page.meta.product == "yunio" %}Use the toggle to switch between *Text mode* and *Editor mode*.{% endif %}
@@ -14,7 +15,7 @@ The WHERE clause text mode allows you to directly enter a WHERE clauses. {% if p
 
 {% endif %}
 
-#### Syntax Rules
+### Syntax Rules
 
 
 | Rule | Correct | Wrong |
@@ -25,7 +26,7 @@ The WHERE clause text mode allows you to directly enter a WHERE clauses. {% if p
 
 
 !!! note
-	The WHERE clause doesn't need any line break (return key).
+	The WHERE clause does not need line breaks (return key).
 	
 The following operations are supported in the WHERE clause:
 
@@ -44,10 +45,12 @@ The following operations are supported in the WHERE clause:
 
 For more details on the OpenSQL syntax, see [SAP Documentation: Select WHERE](https://help.sap.com/doc/abapdocu_752_index_htm/7.52/en-US/abapwhere.htm?file=abapwhere.htm) 
 
+!!! note
+	When fields with the same name exist in different tables, the field names must be formatted as [table name]~[field name], e.g., MARC~MATNR. 
+	This can be the case when extracting multiple tables.
+
 !!! tip
 	To increase extracting performance, make sure to place the indexed fields as the first selection filter operation in the WHERE clause.
-
-
 
 {% if page.meta.parent != "table-cdc" %}
 {% if page.meta.product == "xtract-universal" or page.meta.product == "board-connector" %}
@@ -91,6 +94,6 @@ Get more details about subqueries on the [SAP help site - Conditions](https://he
 In the following example a subquery is used with the *IN* operator. 
 The following statement returns all the *active* customers (rows in the table KNA1) that have i.e. a sales document in the table VBAK for sales document header data.
 
-![WHERE Clause Subquery](../../assets/images/table/table_where_sub-select.png){:class="img-responsive"}
+![WHERE Clause Subquery](../../assets/images/documentation/components/table/table_where_sub-select.png){:class="img-responsive"}
 {% endif %}
 {% endif %} 
