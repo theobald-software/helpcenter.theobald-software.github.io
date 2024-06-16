@@ -1,5 +1,16 @@
 [
   {
+    "Version": "2024.6.16.2",
+    "LegacyReleaseDate": "2024-06-16 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "ERPConnect",
+        "Component": "NWRFC",
+        "Message": "Resolved a performance issue for execution of functions without callbacks with NW."
+      }
+    ]
+  },
+  {
     "Version": "2024.6.11.11",
     "LegacyReleaseDate": "2024-06-11 00:00:00Z",
     "Changes": [
