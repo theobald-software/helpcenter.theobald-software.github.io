@@ -1,7 +1,7 @@
 
 ## WHERE Clause Editor
 
-{% if page.meta.parent != "table-cdc" %}
+{% if page.meta.componentFolder != "table-cdc" %}
 The WHERE clause editor offers a toolkit for those who are not familiar with the syntax of the WHERE clause.
 {% if page.meta.product == "yunio" %}Use the toggle to switch between *Text mode* and *Editor mode*.
 ![WHERE-Clause-Builder-01](../../assets/images/yunio/documentation/where-clause-editor-mode.png){:class="img-responsive"}{% else %}Click **[Editor mode]** to open the editor. 
@@ -12,7 +12,7 @@ There are 2 options for adding criteria to the WHERE clause:
 
 - **[Add Criteria]** adds single criteria. <br>
 	- The default structure for a single criteria with static values is `[Column][Operator][Value]` e.g., *MARC~WERKS = 1000*.
-	{% if page.meta.product != "yunio" and page.meta.parent != "table-cdc" %}- The default structure for a single criteria with parameters is `[Column][Operator][Parameter]` e.g., *MARC~WERKS = [p_WERKS]*.{% endif %}
+	{% if page.meta.product != "yunio" and page.meta.componentFolder != "table-cdc" %}- The default structure for a single criteria with parameters is `[Column][Operator][Parameter]` e.g., *MARC~WERKS = [p_WERKS]*.{% endif %}
 - **[Add Criteria Group]** adds a group of criteria.
 	- The default structure for a criteria group is `([Column1][Operator1][Value1][Boolean][Column2][Operator2][Value2])` e.g., *(MARC~PSTAT = 'L' OR MARC~PSTAT = 'LB')*.
 
@@ -41,7 +41,7 @@ The following buttons and options are available in the WHERE Clause Editor:
 | :where-clause-add-literal: | Value | adds a static value of type *String*, *Number*, *Flag* or *List*. *List* offers a separate editor to create lists of type *String*, *Number* or *Select*. *Select* enables usage of SELECT statements. {% if page.meta.product != "yunio" %}For more information, see [Working with Lists in the WHERE-Clause Editor](../knowledge-base/tables/where-clause-editor-lists.md). {% endif %}|
 | :where-clause-add: | Criteria | adds a new criteria after the selected criteria. |
 | :where-clause-add-group: | Group | adds a new group of criteria the selected criteria. | 
-{% if page.meta.product != "yunio" and page.meta.parent != "table-cdc" %}| :material-code-brackets: | Parameter | adds a previously defined runtime parameter, see [Using Runtime Parameters in the WHERE Clause Editor](#using-runtime-parameters-in-the-where-clause-editor).|{% endif %} 
+{% if page.meta.product != "yunio" and page.meta.parent != "table-cdc" %}| :material-code-brackets: | Parameter | adds a previously defined runtime parameter, see [Runtime Parameters](edit-runtime-parameters.md).|{% endif %} 
 
 !!! note
 	When adding or editing a criteria only the relevant components are displayed e.g., **Add Operator** is only available if there is a column or SQL statement to use an operator on.

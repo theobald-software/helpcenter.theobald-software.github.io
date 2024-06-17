@@ -5,11 +5,7 @@ hide:
   - path
 ---
 
-<div class="grid cards" markdown>
-
--   ![img](site:assets/images/logos/theo-thumbs.png){ .lg .middle width="30px"} This section contains use cases and integration scenarios for yunIO.
-
-</div>
+![img](site:assets/images/logos/theo-thumbs.png){ .lg .middle width="30px"} This section contains use cases and integration scenarios for yunIO.
 
 
 ### :simple-sap: SAP Connection

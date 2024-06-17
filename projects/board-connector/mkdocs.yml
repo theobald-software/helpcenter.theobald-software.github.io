@@ -237,6 +237,7 @@ extra:
   extraction: extraction
   extractions: extractions
   settings: extraction settings
+  Settings: Extraction Settings
   settingsBtn: __Extraction Settings__
   parameterBtn: __Edit runtime parameters__
   previewBtn: __[Load live preview]__

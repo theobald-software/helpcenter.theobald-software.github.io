@@ -11,14 +11,14 @@
 All relevant metadata information of the table is retrieved from SAP.
 The application now returns to the main window of the component.
 
-### Next Steps
+### Define the {{ table }} {{ Component }}
 
 The Table {{ component }} offers the following options for table extractions:
 
 1. Select the columns you want to extract. By default all columns are selected. Deselect the columns you do not want to extract.<br>
 ![Table-Form](../../assets/images/documentation/components/table/table_fields_filter2.png){:class="img-responsive"}
 2. Define a [WHERE clause](where-clause.md) or a [HAVING clause](having-clause.md) to filter table records. By default all data is extracted.
-3. Join multiple SAP tables, see [Table Joins](table-join.md).
+3. Optional: Join multiple SAP tables, see [Table Joins](table-join.md).
 4. Click **[Load live preview]** to display a live preview of the first 100 records. 
 5. Check the [{{ settings }}](settings.md) and the [General Settings](general-settings.md) before running the extraction.
 6. Click **[OK]** to save the extraction.

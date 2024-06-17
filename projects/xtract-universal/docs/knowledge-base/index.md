@@ -5,13 +5,10 @@ hide:
   - path
 ---
 
-<div class="grid cards" markdown>
+![img](site:assets/images/logos/theo-thumbs.png){ .lg .middle width="30px"} This section contains in-depth articles and sample use cases for Xtract Universal.
 
--   ![img](site:assets/images/logos/theo-thumbs.png){ .lg .middle width="30px"} This section contains in-depth articles and sample use cases for Xtract Universal.
 
-</div>
-
-### :products-xtract-universal: Xtract Universal
+### Xtract Universal
 
 <div class="mdx-columns" markdown>
 

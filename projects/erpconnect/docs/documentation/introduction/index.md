@@ -3,11 +3,7 @@ title: Introduction
 description: Prerequisites and Installation
 ---
 
-<div class="grid cards" markdown>
-
--   ![img](site:assets/images/logos/theo-thumbs.png){ .lg .middle width="30px"} This section contains a user documentation for ERPConnect.
-
-</div>
+![img](site:assets/images/logos/theo-thumbs.png){ .lg .middle width="30px"} This section contains a user documentation for ERPConnect.
 
 ### About ERPConnect
 

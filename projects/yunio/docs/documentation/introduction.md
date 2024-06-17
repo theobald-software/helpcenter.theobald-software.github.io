@@ -3,11 +3,7 @@ title: Introduction to yunIO
 description: Introduction
 ---
 
-<div class="grid cards" markdown>
-
--   ![img](site:assets/images/logos/theo-thumbs.png){ .lg .middle width="30px"} This section contains user documentation for yunIO.
-
-</div>
+![img](site:assets/images/logos/theo-thumbs.png){ .lg .middle width="30px"} This section contains user documentation for yunIO.
 
 ### About yunIO
 

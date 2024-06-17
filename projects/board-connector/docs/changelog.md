@@ -6,12 +6,7 @@ hide:
   - tags
 ---
 
-
-<div class="grid cards" markdown>
-
--   ![img](site:assets/images/logos/theo-thumbs.png){ .lg .middle width="30px"} This section contains a version history for {{ productName }}.
-
-</div>
+![img](site:assets/images/logos/theo-thumbs.png){ .lg .middle width="30px"} This section contains a version history for {{ productName }}.
 
 {% include "version-history/version-history-header.md" %}
 

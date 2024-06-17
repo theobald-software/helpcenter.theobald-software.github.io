@@ -165,22 +165,22 @@ There are two types of destinations, depending on where the extraction process i
 ::cards:: cols=4
 
 - title: CSV Web Service <br><br><span class="keyword">pull-destination</span>
-  image: site:assets/images/xu/documentation/destinations/logos/Azure.png
+  image: site:assets/images/xu/documentation/destinations/logos/net_csv.svg
   url: csv-via-http
   
 - title: JSON Web Service <br><br><span class="keyword">pull-destination</span> 
-  image: site:assets/images/xu/documentation/destinations/logos/Azure.png
+  image: site:assets/images/xu/documentation/destinations/logos/net_json.svg
   url: json-via-http
   
-- title: Flat File - CSV <br><br><span class="keyword">push-destination</span> 
-  image: site:assets/images/xu/documentation/destinations/logos/Azure.png
+- title: CSV Files<br><br><span class="keyword">push-destination</span> 
+  image: site:assets/images/xu/documentation/destinations/logos/doc_csv.svg
   url: csv-flat-file
   
-- title: Flat File - JSON <br><br><span class="keyword">push-destination</span>
-  image: site:assets/images/xu/documentation/destinations/logos/Azure.png
+- title: JSON Files<br><br><span class="keyword">push-destination</span>
+  image: site:assets/images/xu/documentation/destinations/logos/doc_json.svg
   url: json-flat-file
   
-- title: Flat File - Parquet <br><br><span class="keyword">push-destination</span> 
+- title: Parquet Files<br><br><span class="keyword">push-destination</span> 
   image: site:assets/images/xu/documentation/destinations/logos/Parquet.png
   url: parquet
   

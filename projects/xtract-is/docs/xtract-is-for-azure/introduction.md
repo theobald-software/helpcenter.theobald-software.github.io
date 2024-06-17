@@ -3,12 +3,7 @@ title: Introduction
 description: Xtract IS for Azure
 ---
 
-<div class="grid cards" markdown>
-
--   ![img](site:assets/images/logos/theo-thumbs.png){ .lg .middle width="30px"} This section shows how to set up Xtract IS on an Azure SSIS Integration Runtime.
-
-</div>
-
+![img](site:assets/images/logos/theo-thumbs.png){ .lg .middle width="30px"} This section shows how to set up Xtract IS on an Azure SSIS Integration Runtime.
 
 ### About Xtract IS for Azure
 

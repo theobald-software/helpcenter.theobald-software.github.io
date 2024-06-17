@@ -5,13 +5,10 @@ hide:
   - path
 ---
 
-<div class="grid cards" markdown>
+![img](site:assets/images/logos/theo-thumbs.png){ .lg .middle width="30px"} This section contains in-depth articles and sample use cases for {{ productName }}.
 
--   ![img](site:assets/images/logos/theo-thumbs.png){ .lg .middle width="30px"} This section contains in-depth articles and sample use cases for {{ productName }}.
 
-</div>
-
-### :products-board-connector: Board Connector
+### Board Connector
 
 <div class="mdx-columns" markdown>
 

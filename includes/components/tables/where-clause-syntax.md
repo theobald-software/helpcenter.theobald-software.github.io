@@ -15,8 +15,19 @@ The WHERE clause text mode allows you to directly enter a WHERE clauses. {% if p
 
 {% endif %}
 
-### Syntax Rules
+### WHERE Clause Syntax
 
+The WHERE Clause syntax generally uses the following structure:
+
+``` bash
+[Table]~[Column][Space][Operator][Space][Filter-Value]
+```
+
+**Examples:** 
+
+```
+KNA1~LAND1 = 'US'
+```
 
 | Rule | Correct | Wrong |
 |--------|--------|--------|
@@ -59,16 +70,22 @@ For more details on the OpenSQL syntax, see [SAP Documentation: Select WHERE](ht
 ### Script Expressions
 
 The **[Text Mode]** of the WHERE clause supports script expressions.
-They are usually used to determine a dynamic date based on the current date. <br>
+They are usually used to determine a dynamic date based on the current date. 
 When using script expressions in a WHERE Clause, the value must be entered in single quotation marks.
 
-For more information on script expression, see [Script Expressions](../advanced-techniques/script-expressions).
+For more information on script expression, see [Script Expressions](#link).
 
-**Syntax:**<br>
-```[Field_name][Space][Operator][Space]'#[Script-Expression]#'```<br>
-```BUDAT >= '#{DateTime.Now.AddYears(-5).ToString("yyyyMMdd")}#'```
+**Syntax:**
+
+```
+[Table]~[Column][Space][Operator][Space]'#[Script-Expression]#'
+```
 
 **Examples:**
+
+```
+BKPF~BUDAT >= '#{DateTime.Now.AddYears(-5).ToString("yyyyMMdd")}#'
+```
 
 |   Input                         | Output                                                                         | Description              |
 |:--------------------------------------|:------------------------------------------------------------------------------|:--------------------|

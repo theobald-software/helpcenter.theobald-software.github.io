@@ -6,12 +6,7 @@ hide:
   - tags
 ---
 
-<div class="grid cards" markdown>
-
--   ![img](site:assets/images/logos/theo-thumbs.png){ width="30px" style="display:inline"} This section offers a set of sample workflows you can download and use as a base to design your own processes.
-
-</div>
-
+![img](site:assets/images/logos/theo-thumbs.png){ .lg .middle width="30px"} This section offers a set of sample workflows you can download and use as a base to design your own processes.
 
 <!--- align Download buttons-->
 <style>
