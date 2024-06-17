@@ -5,10 +5,7 @@ description: How to create a service to extract data from an SAP Table and View
 
 This page shows how to create a service that extracts data from an SAP Table and View.
 
-### Prerequisites
-
-- A connection to an SAP system is available, see [SAP Connection](../sap-connection/index.md).
-- The SAP user has sufficient user rights, see [SAP Authority Objects](../setup-in-sap/sap-authority-objects.md/#table).
+{% include "components/table/prerequisites.md" %}
 
 ### Look Up an SAP Table or View
 
@@ -20,7 +17,7 @@ This page shows how to create a service that extracts data from an SAP Table and
 
 The settings of the {{ table }} {{ component }} open.
 
-### Next Steps
+### Define the {{ Extraction }}
 
 The following options are available to filter data, add data from other tables, etc:
 

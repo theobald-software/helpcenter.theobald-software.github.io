@@ -5,11 +5,7 @@ description: How to create a web service that executes function modules / BAPIs
 
 This page shows how to use the {{ bapi }} {{ component }}.
 
-### Prerequisites
-
-- A connection to an SAP system is available, see [SAP Connection](../sap-connection/index.md).
-- The SAP user has sufficient user rights, see [SAP Authority Objects](../setup-in-sap/sap-authority-objects.md/#bapi).
-
+{% include "components/bapis-and-function-modules/prerequisites.md" %}
 
 ### Look up a Function Module / BAPI
 
@@ -21,7 +17,7 @@ This page shows how to use the {{ bapi }} {{ component }}.
 
 The settings of the {{ bapi }} {{ component }} open.
 
-### Next Steps
+### Define the {{ Extraction }}
 
 Set up parameters for the service.
 The necessary parameters of a {{ bapi }} service vary depending on the BAPI.

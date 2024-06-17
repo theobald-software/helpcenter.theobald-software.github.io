@@ -3,4 +3,4 @@ title: HAVING Clause
 description: HAVING Clause
 ---
 
-{% include "components/tables/having-clause.md"  %}
+{% include "components/table/having-clause.md"  %}

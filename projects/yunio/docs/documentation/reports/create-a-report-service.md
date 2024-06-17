@@ -10,12 +10,7 @@ A report extraction is possible if the report returns a table-like structure in 
 The following graphic shows the general workflow of setting up report services with yunIO:<br>
 ![Report-Workflow](../../assets/images/yunio/documentation/report-general-workflow-yunIO.png){:class="img-responsive" width="400px"}
 
-### Prerequisites
-
-- A connection to an SAP system is available, see [SAP Connection](../sap-connection/index.md).
-- The SAP user has sufficient user rights, see [SAP Authority Objects](../setup-in-sap/sap-authority-objects.md/#report).
-- The custom function module `Z_XTRACT_IS_REMOTE_REPORT` is installed in your SAP system, see [Installation of Z_XTRACT_IS_REMOTE_REPORT](../setup-in-sap/custom-function-module-for-reports.md/#installation-of-z_xtract_is_remote_report).
-- The report must return a table-like structure in SAP.
+{% include "components/abap-reports/prerequisites.md" %}
 
 ### Look Up a Report
 
@@ -27,7 +22,7 @@ The following graphic shows the general workflow of setting up report services w
 
 The settings of the {{ report }} {{ component }} open.
 
-### Next Steps
+### Define the {{ Extraction }}
 
 The following options are available to filter data, detect columns, etc:
 

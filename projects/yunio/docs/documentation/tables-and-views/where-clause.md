@@ -6,9 +6,9 @@ description: Defining a WHERE Clause to filter table records
 A WHERE clause can be used to filter table records, see [SAP ABAP Documentation: SELECT-WHERE](https://help.sap.com/doc/abapdocu_750_index_htm/7.50/en-us/abapwhere.htm).
 Enter WHERE clauses manually in *Text mode* or use the [WHERE Clause Editor](#where-clause-editor) in *Editor Mode*.<br>
 
-{% include "components/tables/where-clause-syntax.md" %}
+{% include "components/table/where-clause-syntax.md" %}
 
-{% include "components/tables/where-clause-editor.md" %}
+{% include "components/table/where-clause-editor.md" %}
 
 ## Parameterize the WHERE Clause
 
