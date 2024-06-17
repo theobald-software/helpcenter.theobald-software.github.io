@@ -31,8 +31,9 @@ Both files don't exist per default.
 !!! warning 
 	**Registration of the RFC-server fails.**<br>
 	The content of both files *secinfo* and *reginfo* override the parameter *gw/acl_mode*. <br>
-	Make sure that both files *secinfo* and *reginfo* allow the registration of the RFC-server. See the example below. 
+	Make sure that both files *secinfo* and *reginfo* allow the registration of the RFC-server.  
 
+See the example below.
 
 1. Create the files *secinfo* and *reginfo*. The files must have the following content:
 

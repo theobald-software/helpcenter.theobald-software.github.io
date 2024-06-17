@@ -1,5 +1,5 @@
 
-The following article illustrates the process of delta table extractions using the {{ tablecdc }} {{ component }}.
+The following article illustrates the process of delta table extractions using the {{ tableCDC }} {{ component }}.
 
 ### Table CDC Process
 
