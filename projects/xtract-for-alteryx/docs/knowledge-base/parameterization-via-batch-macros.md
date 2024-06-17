@@ -34,7 +34,7 @@ For more detailed information on how to create an ODP extraction, see [Documenta
 6. To assign the control parameters to an Xtract parameter, select an **Update Value** tool and mark the Xtract parameter in the tree menu *Value or Attribute to Update* :number-3:. 
 ![Workflow-Sequence2](../assets/images/xfa/articles/workflow-sequence2.png){:class="img-responsive"}
 For this example, assign the control parameter *cp_MAKT_low* to the Xtract ODP runtime parameter *p_MATNR_low* and *cp_MAKT_high* to *p_MATNR_high*.
-7. Drag&Drop the **Macro Output** tool from the *Interface* toolbox onto the canvas to create an output for the batch macro :number-4:. 
+7. Drag and drop the **Macro Output** tool from the *Interface* toolbox onto the canvas to create an output for the batch macro :number-4:. 
 8. Save the macro.
 
 !!! note
