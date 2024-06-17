@@ -59,9 +59,6 @@ Select a parameter from the list.<br>
 ![WHERE-Clause-Builder-Example](../../assets/images/documentation/components/table/where-clause-param.png){:class="img-responsive"}
 4. To test the WHERE clause, click {{ previewBtn }}. Provide parameter values when prompted.
 
-{% if page.meta.product == "xtract-universal" or page.meta.product == "board-connector" %}
-Runtime parameters are overwritten at runtime, see [Extraction Parameters - Custom](../execute-and-automate-extractions/extraction-parameters#custom).
-{% endif %}
 
 ### Use Runtime Parameters in the WHERE Clause Text Mode
 

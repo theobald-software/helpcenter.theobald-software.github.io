@@ -234,8 +234,9 @@ extra:
   query: Query
   report: Report
   settings: extraction settings
+  Settings: Extraction Settings
   settingsBtn: __[Extraction Settings]__
   parameterBtn: __[Edit parameters]__
   variable: runtime parameter
   variables: runtime parameters
-  previewBtn: __Load live preview__
+  previewBtn: __[Load live preview]__
