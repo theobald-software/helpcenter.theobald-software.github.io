@@ -1,5 +1,43 @@
 [
   {
+    "Version": "1.21.2.4",
+    "LegacyReleaseDate": "2024-06-17 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Common",
+        "Component": "WPF",
+        "Message": "WPF library does now target net472 and net8.0-windows."
+      },
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "General",
+        "Message": "Extractor libraries are now targeting net472 and net8.0. GUI libraries target net472 and net8.0-windows."
+      }
+    ]
+  },
+  {
+    "Version": "1.21.2.3",
+    "LegacyReleaseDate": "2024-06-17 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "BW Cube",
+        "Message": "BICS: Improve error message for metadata retrieval"
+      }
+    ]
+  },
+  {
+    "Version": "1.21.2.2",
+    "LegacyReleaseDate": "2024-06-16 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "ERPConnect",
+        "Component": "NWRFC",
+        "Message": "Resolved a performance issue for execution of functions without callbacks with NW."
+      }
+    ]
+  },
+  {
     "Version": "1.21.2.0",
     "LegacyReleaseDate": "2024-06-12 15:18:53Z",
     "Changes": [
