@@ -86,9 +86,9 @@ Follow the steps below to create a pipeline that runs extractions:
 
 When the activity is finished, review the output of the activity in the *Output* tab.
 If the exitcode from xu.exe is 0, the data extraction was successful and the following folders / files are available in the Azure storage account:<br>
-- the storage account contains a folder **adfjobs**.<br>
+- the storage account contains a folder *adfjobs*.<br>
 - for every pipeline execution, there is a subfolder with log information.<br>
-- the files **stderr.txt** and **stdout.txt** contain the output from xu.exe.
+- the files *stderr.txt* and *stdout.txt* contain the output from xu.exe.
 
 ![XU data extracts with adf 12](../assets/images/xu/articles/xu-data-extracts-with-adf_12.jpg){:class="img-responsive"} 
 

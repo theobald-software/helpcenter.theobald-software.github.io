@@ -11,11 +11,11 @@ The depicted example extracts and uploads SAP customer master data to Azure Stor
 An event then triggers an ADF pipeline to process the SAP parquet file, e.g. with [Databricks](https://learn.microsoft.com/en-us/azure/databricks/).
 {{ productName }} supports different file formats for Azure storage, the depicted example uses [Apache Parquet](https://docs.microsoft.com/en-us/azure/databricks/data/data-sources/read-parquet), which is a column file format that provides optimizations to speed up queries and is more efficient than CSV or JSON.
 
-Target audience: Customers who utilize Azure Data Factory (ADF) as a platform for orchestrating data movement and transformation. <br>
+Target audience: Customers, who utilize Azure Data Factory (ADF) as a platform for orchestrating data movement and transformation. <br>
 
 !!! note
     The following sections describe the basic principles for triggering an ADF pipeline.
-    Keep in mind, that this is not a best practice document or a recommendation.
+    Keep in mind, this is not a best practice document or a recommendation.
 
 
 #### Azure Storage 
@@ -38,12 +38,12 @@ In the scenario depicted, the ADF pipeline executes a stored procedure to log va
 
 ### Prerequisites
 
-- You are familiar with {{ productName }}, see [Getting Started](https://help.theobald-software.com/en/xtract-universal/getting-started).
-- You are familiar with [Azure Storage](https://docs.microsoft.com/en-us/azure/storage/common/storage-introduction).
+- Basic knowledge of {{ productName }}, see [Getting Started](https://help.theobald-software.com/en/xtract-universal/getting-started).
+- YBasic knowledge of [Azure Storage](https://docs.microsoft.com/en-us/azure/storage/common/storage-introduction).
 - You can successfully run {{ extractions }} from a web browser, see [Run an Extraction: URL and command-line](https://help.theobald-software.com/en/xtract-universal/getting-started/run-an-extraction#url-and-command-line-3).
-- You have set up an [Azure Storage Destination](https://help.theobald-software.com/en/xtract-universal/destinations/azure-storage). 
-- You have access to [Azure Data Factory](https://docs.microsoft.com/en-us/azure/data-factory/) and are familiar with the basic principles of how to build an ADF pipeline.
-- You are familiar with ADF pipeline triggers, especially [triggering a pipeline in response to a storage event](https://docs.microsoft.com/en-us/azure/data-factory/how-to-create-event-trigger?tabs=data-factory). 
+- [Azure Storage Destination](https://help.theobald-software.com/en/xtract-universal/destinations/azure-storage) is set up and running. 
+- Access to [Azure Data Factory](https://docs.microsoft.com/en-us/azure/data-factory/); basic knowledge of building ADF pipelines.
+- Basic knowledge of ADF pipeline triggers, especially [triggering a pipeline in response to a storage event](https://docs.microsoft.com/en-us/azure/data-factory/how-to-create-event-trigger?tabs=data-factory). 
 
 
 ### Step-by-Step Guide
