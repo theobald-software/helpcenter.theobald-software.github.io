@@ -1,5 +1,83 @@
 [
   {
+    "Version": "1.32.17.3",
+    "LegacyReleaseDate": "2024-06-17 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Server",
+        "Component": "General",
+        "Message": "Adjusted config settings class to be compatible with rust listeners."
+      }
+    ]
+  },
+  {
+    "Version": "1.32.17.1",
+    "LegacyReleaseDate": "2024-06-17 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Common",
+        "Component": "WPF",
+        "Message": "WPF library does now target net472 and net8.0-windows."
+      },
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "General",
+        "Message": "Extractor libraries are now targeting net472 and net8.0. GUI libraries target net472 and net8.0-windows."
+      },
+      {
+        "Product": "Theobald.Server",
+        "Component": "General",
+        "Message": "Migrated the server to .NET 8.0.",
+        "ReleaseNote": "## TheobaldServer 4.4.0\n\n- Removed C++ Service (Use the rust implementation)\n- Removed C# Listene (Use the rust implementation)\n- Migrated all libraries to .NET8.0-windows\n- Moved Kerberos/Negotiate authentication code to dedicated library\n- Removed XtractKernel dependency entirely"
+      }
+    ]
+  },
+  {
+    "Version": "1.32.17.0",
+    "LegacyReleaseDate": "2024-06-17 16:18:12Z",
+    "Changes": [
+      {
+        "Product": "YunIO",
+        "Component": "General",
+        "Message": "Moved to .NET 8. Fixed a shutdown bug in the windows service.",
+        "ReleaseNote": "## yunIO 1.32.17\n\n- Moved to .NET8.0\n  - New runtime with recent security patch is included\n- Fixed an issue in the Windows service, where shutting down the service would not succeed if a child process became unresponsive\n"
+      }
+    ]
+  },
+  {
+    "Version": "1.32.16.3",
+    "LegacyReleaseDate": "2024-06-17 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "BW Cube",
+        "Message": "BICS: Improve error message for metadata retrieval"
+      }
+    ]
+  },
+  {
+    "Version": "1.32.16.2",
+    "LegacyReleaseDate": "2024-06-16 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "ERPConnect",
+        "Component": "NWRFC",
+        "Message": "Resolved a performance issue for execution of functions without callbacks with NW."
+      }
+    ]
+  },
+  {
+    "Version": "1.32.16.1",
+    "LegacyReleaseDate": "2024-06-14 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Server",
+        "Component": "General",
+        "Message": "Added new output object naming option \"Fully qualified extraction name\". This option uses extractions full name with path as output object name."
+      }
+    ]
+  },
+  {
     "Version": "1.32.16.0",
     "LegacyReleaseDate": "2024-06-12 15:52:48Z",
     "Changes": [
