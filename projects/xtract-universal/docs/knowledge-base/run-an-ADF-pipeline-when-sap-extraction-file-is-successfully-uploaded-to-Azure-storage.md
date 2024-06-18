@@ -46,7 +46,7 @@ In the scenario depicted, the ADF pipeline executes a stored procedure to log va
 - Basic knowledge of ADF pipeline triggers, especially [triggering a pipeline in response to a storage event](https://docs.microsoft.com/en-us/azure/data-factory/how-to-create-event-trigger?tabs=data-factory). 
 
 
-### Step-by-Step Guide
+### Procedure
 
 1. Define an SAP extraction and set the destination to Azure Storage.<br>
 The depicted example uses a storage account *xtractstorage* and a container called *ke-container*:
