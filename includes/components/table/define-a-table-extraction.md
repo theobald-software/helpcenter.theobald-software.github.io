@@ -1,7 +1,7 @@
 
 
 ### Look up an SAP Table
-1. In the main window of the component click **[Add]** to add a table. The window "Table Lookup" opens.<br>
+1. In the main window of the component click **[:material-plus-thick:Add]** to add a table. The window "Table Lookup" opens.<br>
 ![table_main-window_add](../../assets/images/{{ abbr }}/documentation/table/table_main-window_add.png){:class="img-responsive"}
 2. In the window "Table Lookup" enter the name of the table to extract :number-1:. Use wildcards (*) if needed.<br>
 ![Look-Up-Table](../../assets/images/documentation/components/table/table_look-up.png){:class="img-responsive"}
@@ -16,11 +16,11 @@ The application now returns to the main window of the component.
 The Table {{ component }} offers the following options for table extractions:
 
 1. Select the columns you want to extract. By default all columns are selected. Deselect the columns you do not want to extract.<br>
-![Table-Form](../../assets/images/documentation/components/table/table_fields_filter2.png){:class="img-responsive"}
+![Table-Form](../../assets/images/{{ abbr }}/documentation/table/table_fields_filter.png){:class="img-responsive"}
 2. Define a [WHERE clause](where-clause.md) or a [HAVING clause](having-clause.md) to filter table records. By default all data is extracted.
-3. Optional: Join multiple SAP tables, see [Table Joins](table-join.md).
-4. Click **[Load live preview]** to display a live preview of the first 100 records. 
+3. Optional: Join two or more tables and extract the result of the join. For more information, see [Table Joins](table-join.md).
+4. Click {{ previewBtn }} to display a live preview of the first 100 records. 
 5. Check the [{{ Settings }}](settings.md){% if page.meta.product == "xtract-universal" or page.meta.product == "board-connector"%} and the [General Settings](general-settings.md){% endif %} before running the extraction.
-6. Click **[OK]** to save the extraction.
+6. Click **[OK]** to save the {{ component }}.
 
 You can now run the {{ extraction }}{% if page.meta.product == "xtract-universal" %}, see [Execute and Automate Extractions](../execute-and-automate-extractions/index.md){% endif %}.

@@ -11,7 +11,7 @@ The following function modules can be used to extract tables:
 - /BODS/RFC_READ_TABLE2
 - /SAPDS/RFC_READ_TABLE2
 - Z_THEO_READ_TABLE
-- THEO/READ_TABLE
+- [/THEO/READ_TABLE](site:documentation/setup-in-sap/custom-function-module-for-table-extraction) (recommended)
 
 !!! warning   
 	**Duplicates in the target environment.**<br>

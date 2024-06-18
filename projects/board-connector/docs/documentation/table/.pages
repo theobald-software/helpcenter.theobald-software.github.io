@@ -1,6 +1,6 @@
 nav:
     - index.md
-    - extract-tables.md
+    - main-window.md
     - table-join.md
     - where-clause.md
     - having-clause.md

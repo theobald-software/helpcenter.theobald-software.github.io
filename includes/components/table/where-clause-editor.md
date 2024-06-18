@@ -41,7 +41,7 @@ The following buttons and options are available in the WHERE Clause Editor:
 | :where-clause-add-literal: | Value | adds a static value of type *String*, *Number*, *Flag* or *List*. *List* offers a separate editor to create lists of type *String*, *Number* or *Select*. *Select* enables usage of SELECT statements. {% if page.meta.product != "yunio" %}For more information, see [Working with Lists in the WHERE-Clause Editor](../knowledge-base/tables/where-clause-editor-lists.md). {% endif %}|
 | :where-clause-add: | Criteria | adds a new criteria after the selected criteria. |
 | :where-clause-add-group: | Group | adds a new group of criteria the selected criteria. | 
-{% if page.meta.product != "yunio" and page.meta.parent != "table-cdc" %}| :material-code-brackets: | Parameter | adds a previously defined runtime parameter, see [Runtime Parameters](edit-runtime-parameters.md).|{% endif %} 
+{% if page.meta.product != "yunio" and page.meta.parent != "table-cdc" %}| :material-code-brackets: | Parameter | adds a previously defined {{ variable }}, see {% if page.meta.product != "xtract-is" %}[Runtime Parameters](edit-runtime-parameters.md){% else %}[Parameterization using SSIS Variables](parameterization.md#parameterization-using-ssis-variables){% endif %}.|{% endif %} 
 
 !!! note
 	When adding or editing a criteria only the relevant components are displayed e.g., **Add Operator** is only available if there is a column or SQL statement to use an operator on.
@@ -59,7 +59,7 @@ The usage of SAP system fields requires SAP NW 7.4 SP5 or higher and the custom 
 
 Example:
 
-1. Navigate to [WHERE-Clause-Editor](#where-clause-editor) and select a column of the type Date *here: BUDAT* :number-1:. 
+1. Navigate to [WHERE Clause Editor](#where-clause-editor) and select a column of the type Date *here: BUDAT* :number-1:. 
 ![img-01](../../assets/images/documentation/components/table/table_where_syst_field_1.png){:class="img-responsive"}
 2. Delete the criterion "Value" and use the criterion "SQL" :number-2:.
 ![img-02](../../assets/images/documentation/components/table/table_where_syst_field_2.png){:class="img-responsive"}

@@ -231,11 +231,12 @@ extra:
   tableCDC: Xtract TableCDC
   query: Xtract Query
   report: Xtract Report
-  variable: an SSIS variable
+  variable: SSIS variable
   variables: SSIS variables
   extraction: SSIS package
   Extraction: SSIS Package
   extractions: SSIS packages
   settings: settings
+  Settings: Settings
   settingsBtn: __Settings__
   previewBtn: __[Load live preview]__

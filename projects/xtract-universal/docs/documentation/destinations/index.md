@@ -172,15 +172,15 @@ There are two types of destinations, depending on where the extraction process i
   image: site:assets/images/xu/documentation/destinations/logos/net_json.svg
   url: json-via-http
   
-- title: CSV Files<br><br><span class="keyword">push-destination</span> 
+- title: CSV Flat-Files<br><br><span class="keyword">push-destination</span> 
   image: site:assets/images/xu/documentation/destinations/logos/doc_csv.svg
   url: csv-flat-file
   
-- title: JSON Files<br><br><span class="keyword">push-destination</span>
+- title: JSON Flat-Files<br><br><span class="keyword">push-destination</span>
   image: site:assets/images/xu/documentation/destinations/logos/doc_json.svg
   url: json-flat-file
   
-- title: Parquet Files<br><br><span class="keyword">push-destination</span> 
+- title: Parquet Flat-Files<br><br><span class="keyword">push-destination</span> 
   image: site:assets/images/xu/documentation/destinations/logos/Parquet.png
   url: parquet
   

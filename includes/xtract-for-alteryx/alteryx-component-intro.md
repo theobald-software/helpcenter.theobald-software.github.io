@@ -1,6 +1,8 @@
 
 ### Add an {{ page.meta.componentName }} Component
 
+Follow the steps below to add an {{ table }} {{ component }} to your {{ extraction }}:
+
 1. Drag & drop the Xtract component to your Alteryx workflow :number-1:.
 2. Select an SAP connection :number-2:.<br>
 ![New](../../assets/images/xfa/documentation/{{ page.meta.componentFolder }}/create-extraction.png){:class="img-responsive"} 
