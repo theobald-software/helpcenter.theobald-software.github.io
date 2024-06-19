@@ -40,9 +40,9 @@ Follow the steps below to create an Xtract data source that connects to SAP:
 ![Data-Connection-Manager](../../assets/images/xfa/documentation/sap-connection/data-connection-manager.png){:class="img-responsive"}
 4. Click **[Save]** to save the SAP connection. The subsection *Connection* is displayed.
 5. In the subsection *Connection* select one of the following authentication methods: <br>
-	- [*Plain*](#plain-authentication) uses the SAP username and password.
-	- [*SNC*](#secure-network-communication-snc) uses an encrypted connection between Xtract for Alteryx and SAP with an SAP username and password. 
-	- [*Ticket Issuer*](#sap-logon-ticket) uses SAP Logon-Tickets in place of user credentials. This connection is not encrypted.
+	- *Plain* uses the SAP username and password.
+	- [*SNC*](snc-authentication.md) uses an encrypted connection between Xtract for Alteryx and SAP with an SAP username and password. 
+	- [*Ticket Issuer*](sso-with-logon-ticket.md) uses SAP Logon-Tickets in place of user credentials. This connection is not encrypted.
 6. Select an existing credential for your SAP system or click **+ Connect Credential** to create a new credential. 
 For more information, see [Create Credentials](#create-credentials).
 7. Click **[Link]** / **[Create and link]** to link the credential to the connection. Example:<br>
@@ -58,9 +58,9 @@ Follow the steps below to create an Xtract data source that connects to SAP:
 2. In the tab *Credentials* click **[New]** to create a new credential.<br>
 ![Credentials](../../assets/images/xfa/documentation/sap-connection/credentials.png){:class="img-responsive"}
 3. Enter a name for the credential and select one of the following authentication methods: <br>
-- *Username and password* uses the SAP username and password.
-- [*SAP SNC*](#secure-network-communication-snc) uses an encrypted connection between Xtract for Alteryx and SAP with username and password. 
-- [*SAP Ticket Issuer*](#sap-logon-ticket) uses SAP Logon-Tickets in place of user credentials. This connection is not encrypted.
+	- *Username and password* uses the SAP username and password.
+	- [*SAP SNC*](snc-authentication.md) uses an encrypted connection between Xtract for Alteryx and SAP with username and password. 
+	- [*SAP Ticket Issuer*](sso-with-logon-ticket.md) uses SAP Logon-Tickets in place of user credentials. This connection is not encrypted.
 4. Enter your authentication details. The depicted example uses plain authentication.<br>
 ![Plain-Credential](../../assets/images/xfa/documentation/sap-connection/plain.png){:class="img-responsive"}
 5. Click **[Save]** to save the credential.

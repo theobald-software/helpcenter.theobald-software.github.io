@@ -5,7 +5,7 @@ description: Information about the extraction type Table
 ---
 
 This page shows how to use the {{ table }} {{ component }}.<br>
-The {{ table }} {{ component }} can be used to extract contents from SAP tables and views.
+The {{ table }} {{ component }} can be used to extract data from SAP Tables and Views.
 
 {% include "components/table/supported-sap-objects.md"  %}
 

@@ -1,0 +1,6 @@
+nav:
+    - index.md
+    - snc-authentication.md
+    - sso-with-logon-ticket.md
+    - settings.md
+
