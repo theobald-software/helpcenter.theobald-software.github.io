@@ -1,37 +1,24 @@
 
 This page shows how to migrate the {{ productName }} configuration from one machine to another.
 
+### Prerequisites 
+
+- [Create a backup](update.md#create-a-backup) of the `config` folder that is located in the installation directory of the current machine, e.g., `{{ installationDir }}\config`.
+- Make sure that the same version of {{ productName }} is installed on both machines.
+	
+!!! tip
+	To install a matching version of {{ productName }} on the new machine, use the `{{ setup }}Setup.exe` from the installation directory of the current machine, e.g., in `{{ installationDir }}`.
 
 ### Migration to a Different Machine
 
-The {{ productName }} configuration can be migrated partially or entirely (full migration).
+The {{ productName }} configuration can be migrated entirely (full migration) or partially.
 
-- Conduct a full migration when replacing a machine completely
-- Conduct a partial migration when moving parts of your setup to a different machine, e.g., if you transport defined {{ components }} from a test environment to a production environment.
+- Conduct a **full migration** when replacing a machine completely.<br>
+For a full migration, restore the entire `config` folder from your backup on the new machine (full migration).
+- Conduct a **partial migration** when moving parts of your setup to a different machine, e.g., if you transport defined {{ components }} from a test environment to a production environment.<br>
+For a partial migration, restore the parts of the backup you want to migrate by copying only the relevant [configuration files](#configuration-files), e.g., the `sources` or `extractions` folder, on the new machine.
 
-=== ":material-moon-full: Full Migration"
-	
-	1. [Create a backup](update.md#create-a-backup) of the `config` folder in the installation directory of the current machine.
-	2. Make sure that the same version of {{ productName }} is installed on both machines.
-	
-		!!! tip
-			To install a matching version of {{ productName }} on the new machine, use the `{{ setup }}Setup.exe` from the installation directory of the current machine, e.g., in `{{ installationDir }}`.
-
-	3. Restore the entire `config` folder on the new machine.
-	4. Restart the [{{ productName }} Service](../server/start-server).
-	
-
-=== ":material-circle-half-full: Partial Migration"
-
-	1. [Create a backup](update.md#create-a-backup) of the `config` folder in the installation directory of the current machine.
-	2. Make sure that the same version {{ productName }} is installed on both machines.
-	
-		!!! tip
-			To install a matching version of {{ productName }} on the new machine, use the `{{ setup }}Setup.exe` from the installation directory of the current machine, e.g., in `{{ installationDir }}`.
-
-	3. Restore the parts of the backup you want to migrate by copying only the relevant [configuration files](#configuration-files), e.g., the `sources` or `extractions` folder, on the new machine.
-	4. Restart the [{{ productName }} Service](../server/start-server), if you copy the `server` folder to the new machine.
-	
+Restart the [{{ productName }} Service](../server/start-server) if you copy the `server` folder to the new machine.
 
 !!! note
     When migrating to a new server, a new license file must be issued for that server.

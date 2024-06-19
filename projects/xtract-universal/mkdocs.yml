@@ -239,3 +239,4 @@ extra:
   settingsBtn: __Extraction Settings__
   parameterBtn: __Edit runtime parameters__
   previewBtn: __[Load live preview]__
+  port: 8064

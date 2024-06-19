@@ -10,9 +10,9 @@ Enter connection and user details to connect the Designer to a {{ productName }}
 === "Designer and Server run on the same machine"
 	1. Launch the {{ productName }} Designer.
 	2. When the {{ productName }} Server is a local server, the server address is *localhost*.<br>
-	The default port (8064) may vary depending on the configuration. <br>
+	The default port ({{ port }}) may vary depending on the configuration. <br>
 	![local-login](../assets/images/{{ abbr }}/documentation/designer/local-login.png){:class="img-responsive"}
-	3. If the service is not running on default port 8064, specify the port by adding [:[port]](../server/ports) after the host name.
+	3. If the service is not running on default port {{ port }}, specify the port by adding [:[port]](../server/ports) after the host name.
 	The default port can be configured in the [server settings](../server/server-settings).
 
 === "Designer and Server run on different machines"
@@ -20,7 +20,7 @@ Enter connection and user details to connect the Designer to a {{ productName }}
 	2. When the {{ productName }} Designer and the {{ productName }} Server run on different machines, enter the host name of the {{ productName }} Server. 
 	Make sure the port is not blocked by your firewall.<br>
 	![remote-login](../assets/images/{{ abbr }}/documentation/designer/remote-login.png){:class="img-responsive"}
-	3. If the service does not run on default port 8064, specify the port by adding [:[port]](../server/ports.md) after the host name.
+	3. If the service does not run on default port {{ port }}, specify the port by adding [:[port]](../server/ports.md) after the host name.
 	The default port can be configured in the [server settings](../server/server-settings.md).
 
 {{ productName }} offers different methods of authenticating and securing the connection between the {{ productName }} Designer and the {{ productName }} Server. 
