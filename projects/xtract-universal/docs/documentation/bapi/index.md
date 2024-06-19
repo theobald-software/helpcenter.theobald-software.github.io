@@ -7,7 +7,6 @@ description: Information about the extraction type Function Module / BAPI
 This page shows how to use the {{ bapi }} {{ component }}.<br>
 The {{ bapi }} {{ component }} can be used to parameterize and execute SAP function modules and BAPIs for automation.
 
-
 {% include "/components/bapis-and-function-modules/about-bapis.md" %}
 
 {% include "components/bapis-and-function-modules/prerequisites.md" %}

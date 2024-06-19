@@ -12,7 +12,7 @@ The {{ productName }} configuration can be migrated partially or entirely (full 
 === ":material-moon-full: Full Migration"
 	
 	1. [Create a backup](update.md#create-a-backup) of the `config` folder in the installation directory of the current machine.
-	2. Make sure that the same version {{ productName }} is installed on both machines.
+	2. Make sure that the same version of {{ productName }} is installed on both machines.
 	
 		!!! tip
 			To install a matching version of {{ productName }} on the new machine, use the `{{ setup }}Setup.exe` from the installation directory of the current machine, e.g., in `{{ installationDir }}`.

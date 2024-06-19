@@ -1,27 +1,15 @@
 ---
-title: Settings
+title: Parameters
 description: An overview and description of all BAPI settings
 ---
 
 This section contains an overview and description of all available {{ bapi }} settings.
 
-The {{ bapi }} settings consist of the following subsections:
-- [Control Buttons](#control-buttons) to close, save or delete the service :number-1:.
-- [Function Module](#function-module) displays the name and description of the selected Function Module / BAPI :number-2:.
-- [Advanced Settings](#advanced-settings) define how data is committed to and from SAP :number-3:.
-- [Function Module Interface Parameters](#function-module-interface-parameters) define what data is committed to and from SAP :number-4:.
+Each Import, Export, Changings and Tables parameter can have one of the following representations:
 
-![yunIO-function-module](../../assets/images/yunio/documentation/bapi-settings.png){:class="img-responsive"}
-
-
-{% include "yunio/control-buttons.md" %}
-
-### Function Module
-
-The **Function Module** section displays the name and description of the selected function module or BAPI.
-To select a different source file, click **Select** in the upper right corner of the section.
-
-### Advanced Settings
+- A scalar field (e.g., characters, date, time, number, amount etc.).
+- A structure consisting of several components.
+- A table (tabular array of data) consisting of columns (data values of the same type) and rows (data records).
 
 #### Commits Transaction
 

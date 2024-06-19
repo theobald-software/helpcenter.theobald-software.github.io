@@ -43,7 +43,7 @@ There are two types of destinations, depending on where the extraction process i
   image: site:assets/images/xu/documentation/destinations/logos/Azure-SQL-Database.png
   url: microsoft-sql-server
 
-- title: EXASolution <br><br><span class="keyword">push-destination</span> 
+- title: EXASolution <br><br><br><span class="keyword">push-destination</span> 
   image: site:assets/images/xu/documentation/destinations/logos/Exasol.svg
   url: exasol
   
@@ -82,11 +82,11 @@ There are two types of destinations, depending on where the extraction process i
 
 ::cards:: cols=4
 
-- title: Alteryx <br><br><span class="keyword">pull-destination</span>
+- title: Alteryx <br><br><br><span class="keyword">pull-destination</span>
   image: site:assets/images/logos/business-content/Alteryx-Logo.png
   url: alteryx
     
-- title: KNIME <br><br><span class="keyword">pull-destination</span> 
+- title: KNIME <br><br><br><span class="keyword">pull-destination</span> 
   image: site:assets/images/xu/documentation/destinations/logos/KNIME.png
   url: knime
   
@@ -98,7 +98,7 @@ There are two types of destinations, depending on where the extraction process i
   image: site:assets/images/xu/documentation/destinations/logos/Power-BI-Report-Server.png
   url: server-report-services
   
-- title: QlikSense and QlikView <br><br><span class="keyword">pull-destination</span> 
+- title: QlikSense and QlikView <br><br><br><span class="keyword">pull-destination</span> 
   image: site:assets/images/xu/documentation/destinations/logos/Qlik.png
   url: qliksense-qlikview
  
@@ -106,7 +106,7 @@ There are two types of destinations, depending on where the extraction process i
   image: site:assets/images/xu/documentation/destinations/logos/SQL-Server.png
   url: server-report-services
   
-- title: Tableau <br><br><span class="keyword">pull-destination</span> 
+- title: Tableau <br><br><br><br><span class="keyword">push-destination</span> 
   image: site:assets/images/xu/documentation/destinations/logos/Tableau.svg
   url: tableau
 
@@ -131,7 +131,7 @@ There are two types of destinations, depending on where the extraction process i
 
 ::cards:: cols=4
 
-- title: Amazon S3 <br><br><span class="keyword">push-destination</span>
+- title: Amazon S3 <br><br><br><span class="keyword">push-destination</span>
   image: site:assets/images/xu/documentation/destinations/logos/Amazon-S3.png
   url: amazon-aws-s3
   
@@ -172,11 +172,11 @@ There are two types of destinations, depending on where the extraction process i
   image: site:assets/images/xu/documentation/destinations/logos/net_json.svg
   url: json-via-http
   
-- title: CSV Flat-Files<br><br><span class="keyword">push-destination</span> 
+- title: CSV Flat-Files<br><br><br><span class="keyword">push-destination</span> 
   image: site:assets/images/xu/documentation/destinations/logos/doc_csv.svg
   url: csv-flat-file
   
-- title: JSON Flat-Files<br><br><span class="keyword">push-destination</span>
+- title: JSON Flat-Files<br><br><br><span class="keyword">push-destination</span>
   image: site:assets/images/xu/documentation/destinations/logos/doc_json.svg
   url: json-flat-file
   

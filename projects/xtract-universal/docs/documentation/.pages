@@ -4,7 +4,7 @@ nav:
     - SAP Customization: setup-in-sap
     - designer.md
     - SAP Connection: sap-connection
-    - bapi
+    - BAPI: bapi
     - table
     - destinations
     - organize-extractions.md

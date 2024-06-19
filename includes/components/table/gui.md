@@ -53,8 +53,37 @@ The {{ table }} {{ component }} imports and highlights the dedicated indexes of 
 | :material-checkbox-blank-outline: / :material-checkbox-intermediate: | Defines whether or not a table column is added to the output of the {{ component }}. By default, all table columns are extracted. |
 | **Name** | Name of a column in the SAP Table. The column name can be filtered. |
 | **Description** | Description of the column. The column description can be filtered. |
-| **Aggregate Function** | Aggregate functions are only available for numeric field data types, e.g., INT, FLOAT, DECIMAL. <br>The following aggregation functions are available: <li> *None*: No aggregation </li><li> *MEAN*: Average</li><li> *COUNT*: Number </li><li> *MAX*: Maximum</li><li> *MIN*: Minimum </li><li> *SUM*: Total</li> |
-| **Conv.** | Activate the conversion routines stored in the Data Dictionary that is used for the respective fields. Activating the conversion routines in SAP leads to significant performance decrease. After the conversion, the value is displayed as it appears in the transaction *SE16N* in the SAP GUI. Examples: <br><li>language keys, e.g., `D` in the database becomes `DE` after conversion</li><li>project numbers, e.g., `T000012738GT` becomes `T/12738/GT` after conversion.</li><br>:material-checkbox-blank-outline: no conversion routines selected <br><br>:material-checkbox-outline: conversion routines enabled, no data type safety (requires the function module Z_XTRACT_IS_TABLE_COMPRESSION)<br><br>:material-checkbox-intermediate: conversion routines enabled, assured data type safety (requires the function module [/THEO/READ_TABLE](../setup-in-sap/custom-function-module-for-table-extraction.md)) |
+| **Aggregate Function** | Applies [aggregate functions](#aggregate-functions) to numeric fields. |
+| **Conv.** | Activates SAP [conversion routines](#conversion-routines).|
+
+#### Aggregate Functions
+
+Aggregate functions are only available for numeric field data types, e.g., INT, FLOAT, DECIMAL. 
+The following aggregation functions are available: 
+- *None*: No aggregation 
+- *MEAN*: Average
+- *COUNT*: Number 
+- *MAX*: Maximum
+- *MIN*: Minimum 
+- *SUM*: Total
+
+#### Conversion Routines
+
+Conversion routines are stored in the Data Dictionary that is used for the respective fields. 
+Activating the conversion routines in SAP leads to significant performance decrease. 
+After the conversion, the value is displayed as it appears in the transaction *SE16N* in the SAP GUI. 
+
+Examples: 
+- Language keys, e.g., `D` in the database becomes `DE` after conversion
+- Project numbers, e.g., `T000012738GT` becomes `T/12738/GT` after conversion.
+
+![conversion-routines](../../assets/images/documentation/components/table/conversion-routines.png){:class="img-responsive"}
+
+| State | 	Description	| Safety | 
+|:--------------:|--------------|---------|
+| :number-1: | no conversion routines selected | - |
+| :number-2: | conversion routines enabled <br>requires the function module Z_XTRACT_IS_TABLE_COMPRESSION | no data type safety |
+| :number-3: | conversion routines enabled <br>requires the function module [/THEO/READ_TABLE](../setup-in-sap/custom-function-module-for-table-extraction.md) | assured data type safety | 
 
 ### Preview
 
