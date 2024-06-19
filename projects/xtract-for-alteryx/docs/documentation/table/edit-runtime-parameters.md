@@ -10,4 +10,4 @@ They can be created in context of using the [WHERE Clause](where-clause.md).
 
 {% include "components/table/assign-runtime-parameters.md" %}
 
-{% include "xtract-for-alteryx/alteryx-parameters.md" %}
+{% include "components/xfa-pass-parameters.md" %}

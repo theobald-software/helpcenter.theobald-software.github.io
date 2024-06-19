@@ -50,6 +50,7 @@ The {{ table }} {{ component }} imports and highlights the dedicated indexes of 
 
 | Columns | Description |
 |-------------|-------------|
+| :material-checkbox-blank-outline: / :material-checkbox-intermediate: | Defines whether or not a table column is added to the output of the {{ component }}. By default, all table columns are extracted. |
 | **Name** | Name of a column in the SAP Table. The column name can be filtered. |
 | **Description** | Description of the column. The column description can be filtered. |
 | **Aggregate Function** | Aggregate functions are only available for numeric field data types, e.g., INT, FLOAT, DECIMAL. <br>The following aggregation functions are available: <li> *None*: No aggregation </li><li> *MEAN*: Average</li><li> *COUNT*: Number </li><li> *MAX*: Maximum</li><li> *MIN*: Minimum </li><li> *SUM*: Total</li> |

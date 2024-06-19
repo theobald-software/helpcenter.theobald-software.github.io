@@ -13,7 +13,7 @@ The {{ table }} {{ component }} can be used to extract contents from SAP tables 
 
 {% include "components/table/auth-warning.md"  %}
 
-{% include "xtract-for-alteryx/alteryx-component-intro.md"  %}
+{% include "components/xfa-new.md"  %}
 
 {% include "components/table/define-a-table-extraction.md"  %}
 

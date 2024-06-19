@@ -20,7 +20,7 @@ SSIS variables can be used to parameterize the WHERE Clause in the {{ table }} {
 
 ![SSIS-variables](../../assets/images/xis/documentation/table/ssis-variable.gif){:class="img-responsive" style="border:1px solid black;"}
 
-{% include "xtract-is/parameterization-using-expression-properties.md" %}
+{% include "components/xis-pass-parameters.md" %}
 
 ### Data Flow Properties of {{ table }}
 List of *Data Flow Properties* that can be parameterized:

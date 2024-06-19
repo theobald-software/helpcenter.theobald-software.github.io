@@ -56,7 +56,7 @@ Workflows that support SAP migration, e.g., from ECC to S/4HANA:
 
     ---
 
-    This workflow  uses the [Xtract Table](table/index.md) component to support an SAP migration that is done in a phased approach by extracting the data from the relevant system depending on the user input.<br>
+    This workflow  uses the [Xtract Table](documentation/table/index.md) component to support an SAP migration that is done in a phased approach by extracting the data from the relevant system depending on the user input.<br>
 	
 	[:material-download-circle: Download](assets/files/xfa/S4 Migration - Short-term bridge app.yxwz){ .md-button .md-button--stretch}
 
@@ -64,7 +64,7 @@ Workflows that support SAP migration, e.g., from ECC to S/4HANA:
 
     ---
 
-    This workflow  uses the [Xtract Table](table/index.md) component to create development and testing data sets with anonymized data from the productive system to speed up quality assurance processes.<br>
+    This workflow  uses the [Xtract Table](documentation/table/index.md) component to create development and testing data sets with anonymized data from the productive system to speed up quality assurance processes.<br>
 	
 	[:material-download-circle: Download](assets/files/xfa/S4 Migration - Data Anonymization and Replication to QA system.yxzp){ .md-button .md-button--stretch }
 
@@ -75,7 +75,7 @@ Workflows that support SAP migration, e.g., from ECC to S/4HANA:
 
     ---
 
-    This workflow uses the [Xtract Report](reports/index.md) component to validate data integrity between source and target systems.<br>
+    This workflow uses the [Xtract Report](documentation/report/index.md) component to validate data integrity between source and target systems.<br>
 	
 	[:material-download-circle: Download](assets/files/xfa/S4 Migration - Source & Target Validations - Report level.yxmd){ .md-button .md-button--stretch }
 
@@ -83,7 +83,7 @@ Workflows that support SAP migration, e.g., from ECC to S/4HANA:
 
     ---
 
-    This workflow  uses the [Xtract Table](table/index.md) component to validate data integrity between source and target systems.<br>
+    This workflow  uses the [Xtract Table](documentation/table/index.md) component to validate data integrity between source and target systems.<br>
 	
 	[:material-download-circle: Download](assets/files/xfa/S4 Migration - Source & Target Validations - Table level.yxmd){ .md-button .md-button--stretch }
 
@@ -94,7 +94,7 @@ Workflows that support SAP migration, e.g., from ECC to S/4HANA:
 
     ---
 
-    This workflow  uses the [Xtract Table](table/index.md) component to validate data integrity between source and target systems. This workflow can be used for tests and demos, as it uses a flat file as a target to resemble the source system with minor changes that are discovered in the reconciliation.<br>
+    This workflow  uses the [Xtract Table](documentation/table/index.md) component to validate data integrity between source and target systems. This workflow can be used for tests and demos, as it uses a flat file as a target to resemble the source system with minor changes that are discovered in the reconciliation.<br>
 	
 	[:material-download-circle: Download](assets/files/xfa/S4 Migration - Source & Target Validations - Table & other.yxzp){ .md-button .md-button--stretch }
 
@@ -112,7 +112,7 @@ Workflows that execute SAP BAPIs and function modules:
 
     ---
 
-    This workflow demonstrates using [Xtract BAPI](bapi/index.md) to create a purchase requisition in SAP and load the data of the purchase requisition into Alteryx.<br>
+    This workflow demonstrates using [Xtract BAPI](documentation/bapi/index.md) to create a purchase requisition in SAP and load the data of the purchase requisition into Alteryx.<br>
 	
 	[:material-download-circle: Download](assets/files/xfa/BAPI-ERP-ReadandWrite.yxmd){ .md-button .md-button--stretch}
 
@@ -120,7 +120,7 @@ Workflows that execute SAP BAPIs and function modules:
 
     ---
 
-    This workflow demonstrates using [Xtract BAPI](bapi/index.md) to read SAP long texts in different languages.<br>
+    This workflow demonstrates using [Xtract BAPI](documentation/bapi/index.md) to read SAP long texts in different languages.<br>
 	
 	[:material-download-circle: Download](assets/files/xfa/SAP-Read-Long-Texts.yxmd){ .md-button .md-button--stretch }
 
@@ -159,7 +159,7 @@ Workflows that extract data from SAP BW InfoCubes and BEx Queries:
 
     ---
 
-    This workflow demonstrates using [Xtract Cube](bw-cube/index.md) to load data from an SAP BW InfoProvider.<br>
+    This workflow demonstrates using [Xtract Cube](documentation/bw-cube/index.md) to load data from an SAP BW InfoProvider.<br>
 	
 	[:material-download-circle: Download](assets/files/xfa/Cube-BWInfoProvider.yxmd){ .md-button .md-button--stretch}
 
@@ -167,7 +167,7 @@ Workflows that extract data from SAP BW InfoCubes and BEx Queries:
 
     ---
 
-    This workflow demonstrates using [Xtract Cube](bw-cube/index.md) to load data from an SAP BW Query.<br>
+    This workflow demonstrates using [Xtract Cube](documentation/bw-cube/index.md) to load data from an SAP BW Query.<br>
 	
 	[:material-download-circle: Download](assets/files/xfa/Cube-BWQuery.yxmd){ .md-button .md-button--stretch }
 
@@ -185,7 +185,7 @@ Workflows that extract Hierarchies from an SAP BW system:
 
     ---
 
-    This workflow demonstrates using [Xtract Hierarchy](bw-hierarchy/index.md) to load data from an SAP BW CostCenter hierarchy. 
+    This workflow demonstrates using [Xtract Hierarchy](documentation/bw-hierarchy/index.md) to load data from an SAP BW CostCenter hierarchy. 
 	This workflow also showcases the different hierarchy representations "Parent-Child" and "Natural".<br>
 	
 	[:material-download-circle: Download](assets/files/xfa/Hierarchy-BW.yxmd){ .md-button .md-button--stretch}
@@ -204,7 +204,7 @@ Workflows that extract data via the SAP Operational Data Provisioning (ODP) fram
 
     ---
 
-    This workflow demonstrates using [Xtract ODP](odp/index.md) to load sales documents and customer master data from an SAP BW system. 
+    This workflow demonstrates using [Xtract ODP](documentation/odp/index.md) to load sales documents and customer master data from an SAP BW system. 
 	The loaded data is then combined, cleaned, and prepared for further analysis.<br>
 	
 	[:material-download-circle: Download](assets/files/xfa/ODP-BW-Full.yxmd){ .md-button .md-button--stretch}
@@ -213,7 +213,7 @@ Workflows that extract data via the SAP Operational Data Provisioning (ODP) fram
 
     ---
 
-    This workflow demonstrates using [Xtract ODP](odp/index.md) to load delta sales documents and customer master data from an SAP BW system. 
+    This workflow demonstrates using [Xtract ODP](documentation/odp/index.md) to load delta sales documents and customer master data from an SAP BW system. 
 	Sales documents are loaded using Xtract ODP's delta function, which retrieves only data that has changed since the last execution.<br>
 	
 	[:material-download-circle: Download](assets/files/xfa/ODP-BW-Delta.yxmd){ .md-button .md-button--stretch }
@@ -225,7 +225,7 @@ Workflows that extract data via the SAP Operational Data Provisioning (ODP) fram
 
     ---
 
-    This workflow demonstrates using [Xtract ODP](odp/index.md) to load sales documents and customer master data from an SAP ERP system. 
+    This workflow demonstrates using [Xtract ODP](documentation/odp/index.md) to load sales documents and customer master data from an SAP ERP system. 
 	The loaded data is then combined, cleaned, and prepared for further analysis.<br>
 	
 	[:material-download-circle: Download](assets/files/xfa/ODP-ERP-Full.yxmd){ .md-button .md-button--stretch}
@@ -234,7 +234,7 @@ Workflows that extract data via the SAP Operational Data Provisioning (ODP) fram
 
     ---
 
-    This workflow demonstrates using [Xtract ODP](odp/index.md) to load delta sales documents and customer master data from an SAP ERP system. 
+    This workflow demonstrates using [Xtract ODP](documentation/odp/index.md) to load delta sales documents and customer master data from an SAP ERP system. 
 	Sales documents are loaded using Xtract ODP's delta function, which retrieves only changed data since the last execution. 
 	For more information, see [Knowledge Base Article: ODP based Delta Extraction of Sales and Customer Data](knowledge-base/delta-extraction-of-sales-data.md). <br>
 	
@@ -247,7 +247,7 @@ Workflows that extract data via the SAP Operational Data Provisioning (ODP) fram
 
     ---
 
-    This workflow demonstrates using [Xtract ODP](odp/index.md) to load business partner master data from SAP S/4HANA CDS views. 
+    This workflow demonstrates using [Xtract ODP](documentation/odp/index.md) to load business partner master data from SAP S/4HANA CDS views. 
 	The loaded data is then cleaned and filtered for further analysis. <br>
 	
 	[:material-download-circle: Download](assets/files/xfa/ODP-S4-Full.yxmd){ .md-button .md-button--stretch}
@@ -256,7 +256,7 @@ Workflows that extract data via the SAP Operational Data Provisioning (ODP) fram
 
     ---
 
-    This workflow demonstrates using [Xtract ODP](odp/index.md) to load the delta data of suppliers and customers from SAP S/4HANA CDS views. 
+    This workflow demonstrates using [Xtract ODP](documentation/odp/index.md) to load the delta data of suppliers and customers from SAP S/4HANA CDS views. 
 	The loaded data is then checked for missing address information. <br>
 	
 	[:material-download-circle: Download](assets/files/xfa/ODP-S4-Delta.yxmd){ .md-button .md-button--stretch }
@@ -275,7 +275,7 @@ Workflows that extract data from SAP ABAP Reports:
 
     ---
 
-    This workflow demonstrates using [Xtract Report](reports/index.md) to load data from the ABAP Report RLT10010 (Evaluation of Movements per Storage Type). <br>
+    This workflow demonstrates using [Xtract Report](documentation/report/index.md) to load data from the ABAP Report RLT10010 (Evaluation of Movements per Storage Type). <br>
 	
 	[:material-download-circle: Download](assets/files/xfa/Report-ERP-ABAPReport.yxmd){ .md-button .md-button--stretch}
 
@@ -283,7 +283,7 @@ Workflows that extract data from SAP ABAP Reports:
 
     ---
 
-    This workflow demonstrates using [Xtract Report](reports/index.md) to load a list of sales orders from an SAP S/4HANA transaction.<br>
+    This workflow demonstrates using [Xtract Report](documentation/report/index.md) to load a list of sales orders from an SAP S/4HANA transaction.<br>
 	
 	[:material-download-circle: Download](assets/files/xfa/Report-S4-TCode.yxmd){ .md-button .md-button--stretch }
 
@@ -301,7 +301,7 @@ Workflows that extract data from SPA table and Views:
 
     ---
 
-    This workflow demonstrates using [Xtract Table](table/index.md) to load customer master data and to prepare the data for further analysis in Excel or a 3rd party BI solution. <br>
+    This workflow demonstrates using [Xtract Table](documentation/table/index.md) to load customer master data and to prepare the data for further analysis in Excel or a 3rd party BI solution. <br>
 	
 	[:material-download-circle: Download](assets/files/xfa/Table-ERP.yxmd){ .md-button .md-button--stretch}
 
@@ -309,7 +309,7 @@ Workflows that extract data from SPA table and Views:
 
     ---
 
-    This workflow demonstrates using [Xtract Table](table/index.md) to perform a table join of the SAP tables KNA1 (Customer Master Data) and KNVV (Customer Master Sales Data) 
+    This workflow demonstrates using [Xtract Table](documentation/table/index.md) to perform a table join of the SAP tables KNA1 (Customer Master Data) and KNVV (Customer Master Sales Data) 
 	and to prepare the data for further analysis in Excel or a 3rd party BI solution.<br>
 	
 	[:material-download-circle: Download](assets/files/xfa/Table-ERP-Join.yxmd){ .md-button .md-button--stretch }
@@ -321,7 +321,7 @@ Workflows that extract data from SPA table and Views:
 
     ---
 
-    This workflow demonstrates using [Xtract Table](table/index.md) to load data from SAP S/4HANA's Universal Journal and to prepare the data for further analysis in Excel or a 3rd party BI solution. <br>
+    This workflow demonstrates using [Xtract Table](documentation/table/index.md) to load data from SAP S/4HANA's Universal Journal and to prepare the data for further analysis in Excel or a 3rd party BI solution. <br>
 	
 	[:material-download-circle: Download](assets/files/xfa/Table-S4.yxmd){ .md-button .md-button--stretch}
 
@@ -329,7 +329,7 @@ Workflows that extract data from SPA table and Views:
 
     ---
 
-    This workflow demonstrates how to use scalar and list parameters with the [Xtract Table](table/index.md) component.<br>
+    This workflow demonstrates how to use scalar and list parameters with the [Xtract Table](documentation/table/index.md) component.<br>
 	
 	[:material-download-circle: Download](assets/files/xfa/Table-Dynamic-Parameters.yxmd){ .md-button .md-button--stretch }
 
