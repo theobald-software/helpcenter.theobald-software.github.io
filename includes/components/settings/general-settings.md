@@ -1,8 +1,7 @@
 This page contains an overview of the settings in the window "General Settings".<br>
 To open the general settings, click **General Settings** in the main window of the extraction type.
 
-![Open-General-Settings](../../assets/images/documentation/components/settings/open-general-settings.png){:class="img-responsive"}
-
+![Open-General-Settings](../../assets/images/documentation/components/{{ page.meta.componentFolder }}/open-general-settings.png){:class="img-responsive"}
 
 ### Misc. Tab
 

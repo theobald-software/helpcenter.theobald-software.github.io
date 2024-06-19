@@ -1,5 +1,5 @@
 nav:
     - index.md
-    - parameters.md
+    - input-and-output.md
     - general-settings.md
     - edit-runtime-parameters.md

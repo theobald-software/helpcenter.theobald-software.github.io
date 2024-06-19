@@ -29,6 +29,8 @@ There are two types of {{ variables }}:
 
 	4. Click **[OK]** to confirm.
 
+	The {{ variables }} are now available in the {{ component }}.
+	
 === "List parameters"
 
 	List {{ variables }} represent multiple values. <br>
@@ -46,5 +48,5 @@ There are two types of {{ variables }}:
 		
 	3. Click **[OK]** to confirm.
 
-The {{ variables }} are now available in the {{ component }}.
+	The {{ variables }} are now available in the {{ component }}.
 
