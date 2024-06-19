@@ -1,7 +1,7 @@
 
 
 ### Look up an SAP Table
-1. In the main window of the component click **[:material-plus-thick:Add]** to add a table. The window "Table Lookup" opens.<br>
+1. In the main window of the {{ component }}, click **[:material-plus-thick:Add]** to add a table. The window "Table Lookup" opens.<br>
 ![table_main-window_add](../../assets/images/{{ abbr }}/documentation/table/table_main-window_add.png){:class="img-responsive"}
 2. In the window "Table Lookup" enter the name of the table to extract :number-1:. Use wildcards (*) if needed.<br>
 ![Look-Up-Table](../../assets/images/documentation/components/table/table_look-up.png){:class="img-responsive"}
@@ -9,7 +9,7 @@
 4. Select a table :number-3: and click **[OK]**. <br>
 
 All relevant metadata information of the table is retrieved from SAP.
-The application now returns to the main window of the component.
+The application now returns to the main window of the {{ component }}.
 
 ### Define the {{ table }} {{ Component }}
 
