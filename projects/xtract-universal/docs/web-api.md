@@ -1,6 +1,6 @@
 ---
-title: Web-API
-description: Web-API
+title: Web API
+description: Endpoints of the Web API
 hide:
   - navigation
   - tags
@@ -344,7 +344,7 @@ The result contains the following elements:
 				"timestamp": "2024-04-12_11:11:58.080",
 				"logLevel": "Info",
 				"source": "Table",
-				"message": "Xtract Universal server version: 6.4.1.0"
+				"message": "{{ productName }} server version: 6.4.1.0"
 			},
 			{
 				"timestamp": "2024-04-12_11:11:58.157",
