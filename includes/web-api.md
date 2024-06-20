@@ -217,6 +217,8 @@ The result contains the following elements:
 | ```/[extraction-name]/[yyyy-MM-dd_HH:mm:ss.SSS]```  |   Returns the extraction run of the specified extraction with the specified timestamp. |
 | ```/[extraction-name]/[yyyy-MM-dd_HH:mm:ss.SSS]/log```  |   Returns the extraction log of the specified extraction with the specified timestamp. |
 
+!!! note 
+	For information on how to interpret logs, see [Logs](#link).
 
 #### Examples
 
@@ -366,9 +368,6 @@ The result contains the following elements:
 	}
 	```
 
-!!! note 
-	For information on how to interpret logs, see [Logs](#link).
-
 ### Get Server Logs
 
 ```
@@ -387,6 +386,10 @@ Returns a list of timestamps that correspond to server logs.
 | ```?min=[yyyy-MM-dd_HH:mm:ss.SSS]```  |   Returns the timestamps of server logs after the specified date and time. |
 | ```?max=[yyyy-MM-dd_HH:mm:ss.SSS]```  |   Returns the timestamps of server logs before the specified date and time. |
 | ```/[yyyy-MM-dd_HH:mm:ss.SSS]```  |   Returns the server log entries with the specified timestamp. |
+
+
+!!! note 
+	For information on how to interpret logs, see [Logs](#link).
 
 #### Examples
 
@@ -442,9 +445,6 @@ Returns a list of timestamps that correspond to server logs.
 		]
 	}
 	```
-
-!!! note 
-	For information on how to interpret logs, see [Logs](#link).
 
 
 ### Get Software Version
