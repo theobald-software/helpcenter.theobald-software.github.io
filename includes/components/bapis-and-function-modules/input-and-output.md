@@ -132,19 +132,19 @@ To correctly map the data of an input table, the following requirements apply:
 
 - The column names of the input table must be the same as in the {{ bapi }} {{ component }}.
 - The data types in the input table must be the same as in the {{ bapi }} {{ component }}.
+Click **[:glasses-button:]** next to a table to look up column names and data types in the {{ bapi }} {{ component }}.
 
-Click **[:glasses-button:]** next to a table to look up column names and data types in the {{ bapi }} {{ component }}.<br>
-
-Follow the steps below to pass tables to {{ bapi }} at runtime:
+Follow the steps below to pass tables to the {{ bapi }} {{ component }} at runtime:
 1. Define or load the input tables into your workflow. 
 2. Connect the input tables to the {{ bapi }} {{ component }} using the input anchor "I". <br>
 The number that is displayed in the connection arrow is used to identify tables in the {{ bapi }} {{ component }}.<br>
-![bapi-input-table2](/img/content/xfa/bapi-input-table2.png){:class="img-responsive" }
+![bapi-input-table2](../../assets/images/{{ abbr }}/documentation/bapi/bapi-input-table.png){:class="img-responsive" }
 3. Open the {{ bapi }} {{ component }} and navigate to the table you want to parameterize.
 4. Select an input table from the dropdown list. <br>
-![bapi-input-table](/img/content/xfa/bapi-input-table.png){:class="img-responsive" }
+![bapi-input-table](../../assets/images/{{ abbr }}/documentation/bapi/bapi-input-table2.png){:class="img-responsive" }
 
-To remove an input table from a structure, click ![x-icon](/img/content/icons/x.png).
+To remove an input table from a structure, click **[:x-button:]**.
+
 {% endif %}
 
 
@@ -158,16 +158,3 @@ To ignore exceptions during runtime, deselect the exceptions in the **Exceptions
 
 ![BAPI Exceptions](../../assets/images/documentation/components/bapi/BAPI-Exceptions.png){:class="img-responsive"}
 
-{% if page.meta.product == "xtract-is" %}
-## Custom Properties of {{ bapi }}
-The *Custom Properties* are properties that are unique to the {{ component }}.
-When parameterizing the component using SSIS variables, the *Custom Properties* are overwritten.
-
-The *Custom Properties* of the {{ bapi }} {{ component }} are displayed in the "Properties" window.
-
-![BAPI Properties](../../assets/images/xis/documentation/bapi/bapi-properties.png)
-
-#### Commit Transaction 
-Some SAP Function Modules require calling the function module BAPI_TRANSACTION_COMMIT to successfully update data in the database, e.g., BAI_PO_CREATE. 
-To automatically call BAPI_TRANSACTION_COMMIT after the selected Function Module / BAPI is processed, aset this option to *true*.
-{% endif %}

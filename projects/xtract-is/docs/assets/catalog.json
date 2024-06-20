@@ -1735,7 +1735,7 @@
       {
         "Product": "XtractIS",
         "Component": "General",
-        "Message": "Fixed a bug that caused the connection manager to not be saved when multiple XTRACT connection managers exist"
+        "Message": "Fixed a bug that caused the connection manager to not be saved when multiple XTRACT Connection Managers exist"
       }
     ]
   },

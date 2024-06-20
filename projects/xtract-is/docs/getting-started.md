@@ -35,8 +35,8 @@ Create a new connection manager.
 
 1. Right-click in the connection managers within “Solution Explorer” area and choose New connection Manager. The window “Add SSIS Connection Manager” opens.
 Connection-Manager-01
-2. Select the XTRACT Connection Manager from the list and click [Add]. Xtract IS Connection manager appears under the tab Connection Managers.
-3. To configure the SAP connection, double-click the Xtract IS Connection Manager icon. The window “Xtract IS Connection Manager” opens
+2. Select the XTRACT Connection Manager from the list and click [Add]. XTRACT Connection Manager appears under the tab Connection Managers.
+3. To configure the SAP connection, double-click the XTRACT Connection Manager icon. The window “XTRACT Connection Manager” opens
 3. Enter the system details of your SAP system and the SAP credentials of the SAP dialog user.
 5. Click **[Test Connection]** to validate the connection parameters. A window with a status message opens.
 6. Click **[OK]** to save the connection settings. <br>

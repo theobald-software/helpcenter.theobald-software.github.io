@@ -12,26 +12,6 @@ An SAP connection is required to use any Xtract IS {{ component }}.
 
 {% include "/sap-connection/sap-auth-warning.md" %}
 
-<!---
-<div class="grid cards" markdown>
-
--   __Supported Connection Methods__
-
-    ---
-
-    - Connection to a single application server
-	- Connection to a message server (Load Balancing)
-
-
--   __Supported Authentication Methods__
-
-    ---
-	
-	- [Plain login](#plain-authentication) using SAP username and password (system or dialogue user)
-	- [Secure Network Communication (SNC)](#snc-authentication) using username and password via basic authentication
-
-</div>
--->
 	
 **Supported Connection Methods** 
 
@@ -52,8 +32,8 @@ Follow the steps below to create a connection manager that connects to SAP:
 The window "Add SSIS Connection Manager" opens.<br>
 ![Connection-Manager-01](../../assets/images/xis/documentation/sap-connection/Connection-Manager-01.png){:class="img-responsive"}
 3. Select the XTRACT Connection Manager from the list of available connection managers and click **[Add...]**. 
-The Xtract IS Connection manager is now available in the connection managers area.
-4. Double-click the Xtract IS Connection Manager. The window "Xtract IS Connection Manager" opens.<br>
+The XTRACT Connection Manager is now available in the connection managers area.
+4. Double-click the XTRACT Connection Manager. The window "XTRACT Connection Manager" opens.<br>
 ![Connection-Manager](../../assets/images/xis/documentation/sap-connection/Connection-Manager.png){:class="img-responsive" }
 5. Enter the system details of your SAP system and enter the SAP username and password of an SAP system or dialogue user.  
 

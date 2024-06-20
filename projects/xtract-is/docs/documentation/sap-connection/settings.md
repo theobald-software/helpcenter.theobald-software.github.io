@@ -48,8 +48,8 @@ A window with a status message opens in the bottom right corner of the window.
 
 The "Additions" menu contains settings for Secure Network Communication (SNC), as well as some expert options.
 
-In the window "Xtract IS Connection Manager" click **Additions**. 
-The window "Xtract IS Connection Manager Additions" opens.
+In the window "XTRACT Connection Manager" click **Additions**. 
+The window "XTRACT Connection Manager Additions" opens.
 
 ![SNC](../../assets/images/xis/documentation/sap-connection/snc-connection-manager.png){:class="img-responsive"}
 

@@ -14,7 +14,7 @@ This way, the communication between the application server and Xtract IS takes p
 Follow the steps below to enable SNC for the SAP user that is used in Xtract IS:
 
 1. Open SAP and run the SAP transaction SU01.
-2. Enter the name of the SAP user that is used in the Xtract IS connection manager and click **[Change]**. 
+2. Enter the name of the SAP user that is used in the XTRACT Connection Manager and click **[Change]**. 
 3. Open the SNC tab and provide the SNC Name of the SAP user :number-1:. In the depicted example, *MALAPATI* is the user and *THEOBALD.LOCAL* is the domain.<br>
 ![sap_user_settings_snc](../assets/images/xis/articles/sap_user_settings_snc.png){:class="img-responsive"}
 4. Click **[Save]**. 
@@ -27,7 +27,7 @@ Follow the steps below to enable SNC in Xtract IS:
 1. Open the Connection Manager of the SAP connection.
 2. Provide details of an SAP user that has SNC enabled :number-1:.<br>
 ![connection_manager](../assets/images/xis/articles/connection_manager.png){:class="img-responsive"}
-3. Click **Additions**. The window "Xtract IS Connection Manager Additions" opens.<br>
+3. Click **Additions**. The window "XTRACT Connection Manager Additions" opens.<br>
 	![connection_manager_addition](../assets/images/xis/articles/connection_manager_addition.png){:class="img-responsive"}
 	1. Check the box SNC :number-2:.
 	2. Enter the complete path of the Kerberos library in the field **SNC library 32 Bit** :number-3:.

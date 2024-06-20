@@ -17,5 +17,22 @@ The {{ bapi }} {{ component }} can be used to parameterize and execute SAP funct
 
 {% include "/components/bapis-and-function-modules/define-a-bapi-extraction.md" %}
 
+### Custom Properties of {{ bapi }}
+The *Custom Properties* are properties that are unique to the {{ component }}.
+When parameterizing the component using SSIS variables, the *Custom Properties* are overwritten.
+
+The *Custom Properties* of the {{ bapi }} {{ component }} are displayed in the "Properties" window.
+
+![BAPI Properties](../../assets/images/xis/documentation/bapi/bapi-properties.png)
+
+#### Commit Transaction 
+Some SAP Function Modules require calling the function module BAPI_TRANSACTION_COMMIT to successfully update data in the database, e.g., BAI_PO_CREATE. 
+To automatically call BAPI_TRANSACTION_COMMIT after the selected Function Module / BAPI is processed, aset this option to *true*.
+
 {% include "/components/bapis-and-function-modules/support-disclaimer.md" %}
 
+****
+#### Related Links
+- [Knowledge Base Article: Create and Load Purchase Requisitions in SAP](../../knowledge-base/create-and-load-purchase-requisitions-in-sap.md)
+- [Knowledge Base Article: Write CATS Data to SAP](../../knowledge-base/write-cats-data-to-sap.md)
+- [Knowledge Base Article: Write Product Data to SAP](../../knowledge-base/write-product-data-to-sap.md)

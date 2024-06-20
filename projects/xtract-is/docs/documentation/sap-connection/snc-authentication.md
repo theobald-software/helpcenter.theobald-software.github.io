@@ -17,7 +17,7 @@ Follow the steps below to set up an SAP connection that uses SNC:
 	!!! tip
 		Input values for the SAP connection can be found in the Properties of the SAP Logon Pad or they can be requested from the SAP Basis team.
 	
-3. In the "Xtract IS Connection Manager" window, click **Additions**. The window "Xtract IS Connection Manager Additions" opens.
+3. In the "XTRACT Connection Manager" window, click **Additions**. The window "XTRACT Connection Manager Additions" opens.
 4. Activate the option **SNC enabled**.<br>
 ![SNC](../../assets/images/xis/documentation/sap-connection/snc-connection-manager.png){:class="img-responsive"}
 5. Enter the path to the SNC library for 32 Bit & 64 Bit in the **SNC library** fields, e.g., `C:\Program Files (x86)\SAP\FrontEnd\SecureLogin\sapcrypto.dll`.

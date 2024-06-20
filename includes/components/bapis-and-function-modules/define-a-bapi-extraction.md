@@ -31,13 +31,3 @@ Select output by activating the checkbox next to the items.<br>
 5. Optional: If available, define which exceptions thrown by the Function Module / BAPI are ignored during runtime, see [Exceptions](parameters.md/#exceptions).
 {% if page.meta.product == "xtract-universal" or page.meta.product == "board-connector" %} 6. Check the [General Settings](general-settings.md) before running the extraction.{% endif %}
 7. Click **[OK]** to confirm your input.
-
-{% if page.meta.product == "xtract-for-alteryx" %}
-
-### Transaction Commit
-Some SAP Function Modules require calling the function module BAPI_TRANSACTION_COMMIT to successfully update data in the database, e.g., BAI_PO_CREATE. 
-To automatically call BAPI_TRANSACTION_COMMIT after the selected Function Module / BAPI is processed, activate the option **Commit work in SAP after execution** in the configuration menu of the {{ bapi }} {{ component }}.
-
-![import-parameters](../../assets/images/{{ abbr }}/documentation/bapi/xtract-bapi-commit-transaction.png){:class="img-responsive"}
-
-{% endif %}
