@@ -61,35 +61,6 @@ hide:
 
 ---
 
-### :material-database: Destinations 
-
-<div class="mdx-columns" markdown>
-
-- [:material-microsoft-azure: Authentication via Azure Active Directory for Azure Storage](authentication-via-azure-ad-with-azure-storage.md)
-- [:material-microsoft-azure: Integration in Azure Data Factory using Commandline](adf-integration-using-command-line.md)
-- [:material-microsoft-azure: Integration in Azure Data Factory using Webservices](adf-integration-using-webservices.md)
-- [:material-microsoft-azure: Call Dynamic Extractions with Variables in ADF](call-dynamic-extractions-with-variables-in-adf.md)
-- [:material-microsoft-azure: Run an ADF Pipeline when an SAP Extraction File is uploaded to Azure Storage](run-an-ADF-pipeline-when-sap-extraction-file-is-successfully-uploaded-to-Azure-storage.md)
-
-- [:simple-knime: KNIME Integration via SAP Reader (Theobald Software)](knime-integration-via-sap-reader.md)
-- [:simple-knime: Dynamic Runtime Parameter in KNIME Workflows](dynamic-runtime-paramater-within-KNIME-workflow.md)
-
-- [:simple-microsoftsqlserver: Collation Settings for MSSQL Server Destination](collation-sql-server.md)
-- [:simple-microsoftsqlserver: Post-Processing Column Name Style](adjust-column-name-style.md)
-- [:simple-microsoftsqlserver: Use Computed Query Parameters for SSRS](xu-ssrs-parameterizing-in-vs.md)
-
-- [:material-google-cloud: Set Up OAuth 2.0 for the Google Cloud Storage Destination](google-cloud-storage-oauth.md)
-
-- [:material-snowflake: Integrate SAP Data into a Snowflake Data Warehouse](integrate_sap_data_into_a_Snowflake_data_warehouse.md)
-- [:material-snowflake: SAP Integration with Matillion Data Loader](create-a-custom-cennector-in-matillion-data-loader.md)
-
-- [:simple-tableau: Link a BEx query with a Hierarchy in Tableau](link-bex-query-with-hierarchy.md)
-
-</div>
-
----
-<!---
-
 ## Destinations 
 
 ### :material-microsoft-azure: Microsoft Azure
@@ -128,10 +99,8 @@ hide:
 
 </div>
 
----
 
 ## {{ Components }}
--->
 
 ### :component-bapi: BAPI
 
