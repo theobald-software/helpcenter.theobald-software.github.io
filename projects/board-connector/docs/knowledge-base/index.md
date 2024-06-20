@@ -1,5 +1,5 @@
 ---
-title: Articles
+title: Knowledge Base
 hide:
   - navigation
   - path

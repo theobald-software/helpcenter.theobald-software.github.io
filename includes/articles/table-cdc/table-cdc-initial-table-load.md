@@ -1,7 +1,7 @@
-The following article shows how to handle the initial table load for delta extractions using the {{ tablecdc }} {{ component }}.
+The following article shows how to handle the initial table load for delta extractions using the {{ tableCDC }} {{ component }}.
 The article applies in the following situation:
 
-- The {{ tablecdc }} {{ component }} is run on SAP releases < 7.10
+- The {{ tableCDC }} {{ component }} is run on SAP releases < 7.10
 - The option **Extract table on first run** (Delta initialization) is activated.
 - The delta initialization takes longer than the maximum processing time specified in the SAP profile parameter **rdisp/max_wprun_time**.
 - The extraction aborts with an error message, e.g., `ERPConnect.ABAPRuntimeException: RfcInvoke failed(RFC_ABAP_RUNTIME_FAILURE): TIME_OUT - Time limit exceeded`.
@@ -12,9 +12,9 @@ The article applies in the following situation:
 
 ### Recommended Workflow
 
-1. Create a {{ tablecdc }} extraction. Make sure the option **Extract table on first run** is deactivated.<br>
+1. Create a {{ tableCDC }} extraction. Make sure the option **Extract table on first run** is deactivated.<br>
 ![table-cdc-delta-init](../assets/images/articles/table-cdc/table-cdc-delta-init.png){:class="img-responsive"}
-2. Run the {{ tablecdc }} extraction to initialize the delta extractions.
+2. Run the {{ tableCDC }} extraction to initialize the delta extractions.
 This ensures that no data is missed between table extraction and delta initialization.
 3. Create a regular {{ table }} extraction using the {{ table }} {{ component }}. 
 Make sure to select an SAP standard function module, e.g., RFC_READ_TABLE.<br>

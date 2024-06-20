@@ -33,8 +33,8 @@ The following buttons and options are available in the WHERE Clause Editor:
 | Icon  | Component   | Function    | 
 | ------|-------------|-------------| 
 | {% if page.meta.product == "yunio" %}:fontawesome-solid-trash:{% else %}:trashbin:{% endif %} | Delete row | deletes a criteria.|
-| :material-arrow-up: | Move row up | changes the sequence of the criteria. The selected criteria moves up. <br>The sequence of criteria can also be changed with drag&drop. |
-| :material-arrow-down: | Move row down | changes the sequence of the criteria. The selected criteria moves down. <br>The sequence of criteria can also be changed with drag&drop.| 
+| :material-arrow-up: | Move row up | changes the sequence of the criteria. The selected criteria moves up. <br>The sequence of criteria can also be changed with Drag and drop. |
+| :material-arrow-down: | Move row down | changes the sequence of the criteria. The selected criteria moves down. <br>The sequence of criteria can also be changed with Drag and drop.| 
 | :where-clause-column: | Column    | adds a column. Click on the component to select a column from the available tables. | 
 | :where-clause-add-sql:| SQL       |  adds an Open SQL statement, see [SAP Documentation: Open SQL](https://help.sap.com/doc/abapdocu_750_index_htm/7.50/en-us/abenopensql.htm).      |  
 | :material-not-equal-variant:| Operator  | adds an operator e.g., =, <, >, etc. |  

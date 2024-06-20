@@ -14,7 +14,7 @@ An SAP connection is required to use any {{ productName }} component.
 
 ### Create an SAP Connection
 
-1. Drag&drop an {{ productName }} component from the Alteryx Designer tool box onto the canvas :number-1:. 
+1. Drag and drop an {{ productName }} component from the Alteryx Designer tool box onto the canvas :number-1:. 
 The configuration window of the component opens. <br>
 ![Create-New-Table-Extraction](../assets/images/xfa/articles/xfa_create_table_extraction_02.png){:class="img-responsive"}
 2. Click **[New]** to create a new connection :number-2:. The window "SAP Connection Details" opens.

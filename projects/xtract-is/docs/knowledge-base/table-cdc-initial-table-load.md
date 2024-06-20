@@ -1,6 +1,6 @@
 ---
 title: Initial Table Load in SAP Versions < 7.10
-description: TableCDC Initial Table Load Timeout
+description: Table CDC Initial Table Load Timeout
 ---
 
 

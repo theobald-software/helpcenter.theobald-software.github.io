@@ -1,5 +1,5 @@
 
-The following article illustrates the process of delta table extractions using the {{ tablecdc }} {{ component }}.
+The following article illustrates the process of delta table extractions using the {{ tableCDC }} {{ component }}.
 
 ### Table CDC Process
 
@@ -18,5 +18,5 @@ Click the graphic to zoom in.
 
 !!! tip
 
-	Use the SAP transaction DB02 to view all triggers of TableCDC log tables in SAP. 
+	Use the SAP transaction DB02 to view all triggers of Table CDC log tables in SAP. 
 

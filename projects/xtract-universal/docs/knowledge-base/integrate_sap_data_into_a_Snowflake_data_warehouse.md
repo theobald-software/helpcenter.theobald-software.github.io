@@ -36,7 +36,7 @@ Subsequent, incremental data loads can be done with a MERGE statement.
 
 ### Automation 
 
-The SAP data extracts and the load process in Snowflake can be fully automated, using utilities like the Windows Task Scheduler or Cron, or your scheduling tool of choice. 
+The SAP data extractions and the load process in Snowflake can be fully automated, using utilities like the Windows Task Scheduler or Cron, or your scheduling tool of choice. 
 This can also work in conjunction with an existing ETL tool for centralized monitoring and management of all data movement processes.
 
 ***********
