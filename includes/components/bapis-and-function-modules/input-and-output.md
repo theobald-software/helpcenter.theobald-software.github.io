@@ -109,19 +109,16 @@ When using {{ variables }}, make sure the data type of the input matches the SAP
 4. Click **[Remove]** to delete a row.
 
 {% if page.meta.product == "xtract-is" %}
-
 ### Map Input Tables
 
 When connecting tables to the {{ bapi }} {{ component }}, a data mapping is executed automatically. 
-
-![BAPI table mapping](../../assets/images/{{ abbr }}/documentation/bapi/ssis-write-xtractis-fuba.png){:class="img-responsive"}
-
 To correctly map the data, the following requirements apply:
+
+![BAPI table mapping](../../assets/images/{{ abbr }}/documentation/bapi/ssis-write-xtractis-fuba.png){:class="img-responsive" align=left}
 
 - The column names of the input table must be the same as in the {{ bapi }} {{ component }}.
 - The data types in the input table must be the same as in the {{ bapi }} {{ component }}.
-
-Click **[glasses-button:]** next to a table to look up column names and data types in the {{ bapi }} {{ component }}.
+Click **[:glasses-button:]** next to a table to look up column names and data types in the {{ bapi }} {{ component }}.
 
 !!! tip
 	If the column names and / or datatypes of the input table and the {{ bapi }} table do not match, add a *Derived Column* component to convert the input data.
@@ -136,7 +133,7 @@ To correctly map the data of an input table, the following requirements apply:
 - The column names of the input table must be the same as in the {{ bapi }} {{ component }}.
 - The data types in the input table must be the same as in the {{ bapi }} {{ component }}.
 
-Click ![glasses-icon](/img/content/icons/glasses.png) next to a table to look up column names and data types in the {{ bapi }} {{ component }}.<br>
+Click **[:glasses-button:]** next to a table to look up column names and data types in the {{ bapi }} {{ component }}.<br>
 
 Follow the steps below to pass tables to {{ bapi }} at runtime:
 1. Define or load the input tables into your workflow. 
@@ -148,7 +145,6 @@ The number that is displayed in the connection arrow is used to identify tables 
 ![bapi-input-table](/img/content/xfa/bapi-input-table.png){:class="img-responsive" }
 
 To remove an input table from a structure, click ![x-icon](/img/content/icons/x.png).
-
 {% endif %}
 
 
@@ -161,3 +157,17 @@ By default, all exceptions result in errors when running the {{ bapi }} {{ compo
 To ignore exceptions during runtime, deselect the exceptions in the **Exceptions** tab.
 
 ![BAPI Exceptions](../../assets/images/documentation/components/bapi/BAPI-Exceptions.png){:class="img-responsive"}
+
+{% if page.meta.product == "xtract-is" %}
+## Custom Properties of {{ bapi }}
+The *Custom Properties* are properties that are unique to the {{ component }}.
+When parameterizing the component using SSIS variables, the *Custom Properties* are overwritten.
+
+The *Custom Properties* of the {{ bapi }} {{ component }} are displayed in the "Properties" window.
+
+![BAPI Properties](../../assets/images/xis/documentation/bapi/bapi-properties.png)
+
+#### Commit Transaction 
+Some SAP Function Modules require calling the function module BAPI_TRANSACTION_COMMIT to successfully update data in the database, e.g., BAI_PO_CREATE. 
+To automatically call BAPI_TRANSACTION_COMMIT after the selected Function Module / BAPI is processed, aset this option to *true*.
+{% endif %}

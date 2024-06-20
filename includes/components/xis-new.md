@@ -1,5 +1,5 @@
 
-### Add an {{ table }} {{ Component }}
+### Add an {{ page.meta.componentName }} {{ Component }}
 
 Follow the steps below to add an {{ table }} {{ component }} to your {{ extraction }}:
 

@@ -8,4 +8,4 @@ They can be created in context of using the [WHERE Clause](where-clause.md).
 
 {% include "components/edit-runtime-parameters.md" %}
 
-{% include "components/table/assign-runtime-parameters.md" %}
+{% include "components/assign-runtime-parameters.md" %}

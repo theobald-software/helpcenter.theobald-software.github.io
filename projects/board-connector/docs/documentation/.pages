@@ -4,5 +4,6 @@ nav:
     - SAP Customization: setup-in-sap
     - designer.md
     - SAP Connection: sap-connection
+    - BAPI: bapi
     - Table: table
     - About this Documentation: about-this-documentation.md

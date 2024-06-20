@@ -3,5 +3,6 @@ nav:
     - Setup: setup
     - SAP Customization: setup-in-sap
     - SAP Connection: sap-connection
+    - Xtract BAPI: bapi
     - Xtract Table: table
     - About this Documentation: about-this-documentation.md
