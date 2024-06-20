@@ -48,6 +48,22 @@
 }
 
 
+.md-typeset .admonition.api,
+.md-typeset details.api {
+  border-color: rgb(169, 169, 169);
+}
+.md-typeset .api > .admonition-title,
+.md-typeset .api > summary {
+  background-color: rgba(169, 169, 169, 0.1);
+}
+.md-typeset .api > .admonition-title::before,
+.md-typeset .api > summary::before {
+  background-color: rgb(169, 169, 169);
+  -webkit-mask-image: var(--md-admonition-icon--api);
+          mask-image: var(--md-admonition-icon--api);
+}
+
+
 /* minimize space between banner and content on landing pages*/
 .md-typeset .grid {
     grid-gap: 0.4rem;

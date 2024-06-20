@@ -28,13 +28,6 @@ so that the data is pulled from the cache and not from the SAP.
 This increases the performance and limits the impact on the SAP system. 
 If this behavior is not desired (for example, because the data must be always 100% up to date), the cache option must be explicitly turned off.
 
-{% if page.meta.product == "xtract-universal" %} 
-
-#### Enable column level encryption
-This option must be active when using “Column Encryption”, see [Encryption Tab](#encryption-tav).
-
-{% endif %}
-
 #### Keywords
 One or more keywords (tags) can be assigned to an extraction. 
 Keywords can be entered directly in the keyword field.
@@ -67,22 +60,6 @@ If this option is active, an additional column THEO_SURR_KEY is added to the ext
 The THEO_SURR_KEY column contains surrogate keys that can be used as row IDs. 
 The surrogate keys are hash values of type signed 8 byte integer, e.g., `#-3008591679982390000`.
 They are generated from the selected primary key columns and the name of the SAP source that is assigned to the extraction.
-
-
-### Encryption Tab
-
-The “Column Encryption” feature enables users to encrypt columns in the extracted data set, before uploading them to the destination. 
-
-![General-Settings-Encryption](../../assets/images/{{ abbr }}/documentation/general-settings/general-settings-encryption.png){:class="img-responsive"}
-
-By encrypting the columns you can ensure the safety of sensitive information. 
-You can store data in its encrypted form or decrypt it immediately.
-
-The feature also supports random access, meaning that the data is decryptable at any starting point. 
-Because random access has a significant overhead, it is not recommended to use column encryption for encrypting the whole data set.
-
-Not all destinations support column encryption.
-If the column encryption feature is available, you can select the columns to encrypt from a list of available columns. <br>
 
 {% endif %}
 
