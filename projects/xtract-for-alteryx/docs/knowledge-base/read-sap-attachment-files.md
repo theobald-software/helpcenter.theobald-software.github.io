@@ -39,7 +39,7 @@ Follow the steps below to set up the following workflow:
 	
 	1. Drag & drop the Xtract Table component into your Alteryx workflow :number-1:.<br>
 	![xfa_create_table_extraction_01](../assets/images/xfa/articles/xfa_create_table_extraction_01.png){:class="img-responsive" width="900px"}
-	2. Select an SAP connection :number-2:. If no SAP connection is available, create a new connection, see [Online Help: Creating an SAP Connection](https://help.theobald-software.com/en/xtract-for-alteryx/sap-connection).
+	2. Select an SAP connection :number-2:. If no SAP connection is available, create a new connection, see [Documentation: SAP Connection](https://help.theobald-software.com/en/xtract-for-alteryx/sap-connection).
 	3. Click **[Edit]** :number-3: to open the main window of the Xtract Table component.
 	4. [Look up](https://help.theobald-software.com/en/xtract-for-alteryx/table/extract-table-data#look-up-a-table) the SAP table *SRGBTBREL*.
 	5. Select the columns TYPEID_A (source of the attached file) and INSTID_B (Object ID) for output.<br>
@@ -54,7 +54,7 @@ Follow the steps below to set up the following workflow:
 === "How to get a List of File Names"
 
 	1. Drag & drop the Xtract Table component into your Alteryx workflow.
-	2. Select an SAP connection. If no SAP connection is available, create a new connection, see [Online Help: Creating an SAP Connection](https://help.theobald-software.com/en/xtract-for-alteryx/sap-connection).
+	2. Select an SAP connection. If no SAP connection is available, create a new connection, see [Documentation: SAP Connection](https://help.theobald-software.com/en/xtract-for-alteryx/sap-connection).
 	3. [Look up](https://help.theobald-software.com/en/xtract-for-alteryx/table/extract-table-data#look-up-a-table) the SAP table *SOOD*. The table contains all document IDs attached to business objects.
 	4. Select the columns OBJTP, OBJYR and OBJNO for output.<br>
 	![attachment-files-table2](../assets/images/xfa/articles/attachment-files-table2.png){:class="img-responsive"}
@@ -77,7 +77,7 @@ Follow the steps below to download SAP attachment files using their Object ID as
 
 1. Drag & drop the Xtract BAPI component into your Alteryx workflow :number-1:.<br>
 ![xfa_create_bapi_extraction_01](../assets/images/xfa/articles/xfa_create_bapi_extraction_01.png){:class="img-responsive" width="900px"}
-2. Select an SAP connection :number-2:. If no SAP connection is available, create a new connection, see [Online Help: Creating an SAP Connection](https://help.theobald-software.com/en/xtract-for-alteryx/sap-connection).
+2. Select an SAP connection :number-2:. If no SAP connection is available, create a new connection, see [Documentation: SAP Connection](https://help.theobald-software.com/en/xtract-for-alteryx/sap-connection).
 3. Click **[Edit]** :number-3: to open the main window of the Xtract BAPI component.
 4. In the main window of the component click :magnifying-glass:. The window “Function Module Lookup Lookup” opens.
 5. [Look up](https://help.theobald-software.com/en/xtract-for-alteryx/bapi/bapi-extraction-define#look-up-a-bapi) the function module *SO_DOCUMENT_READ_API1*.
@@ -106,6 +106,6 @@ BLOB data types can store multiple file types, e.g., images, audio, and other ob
 *****
 #### Related Links
 - [Alteryx Community - Read SAP Attachment Files](https://community.alteryx.com/t5/Community-Gallery/Read-and-Download-SAP-Attachment-Files-using-Xtract-for-Alteryx/ta-p/1212418)
-- [Online Help: Xtract Table](https://help.theobald-software.com/en/xtract-for-alteryx/table)
-- [Online Help: Xtract BAPI](https://help.theobald-software.com/en/xtract-for-alteryx/bapi)
-- [Online Help: Sample Workflows](https://help.theobald-software.com/en/xtract-for-alteryx/sample-workflows)
+- [Documentation: Xtract Table](https://help.theobald-software.com/en/xtract-for-alteryx/table)
+- [Documentation: Xtract BAPI](https://help.theobald-software.com/en/xtract-for-alteryx/bapi)
+- [Documentation: Sample Workflows](https://help.theobald-software.com/en/xtract-for-alteryx/sample-workflows)

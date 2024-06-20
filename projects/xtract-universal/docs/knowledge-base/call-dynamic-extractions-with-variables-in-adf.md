@@ -28,7 +28,7 @@ The concatenated string has the following format:<br>
 6. Run the pipeline and check the result.
 
 !!! tip
-    You can copy the URL of an extraction from the Run window in {{ productName }}, see [Online Help: Running an Extraction](https://help.theobald-software.com/en/xtract-universal/getting-started/run-an-extraction#run-extraction).
+    You can copy the URL of an extraction from the Run window in {{ productName }}, see [Documentation: Running an Extraction](https://help.theobald-software.com/en/xtract-universal/getting-started/run-an-extraction#run-extraction).
 
 ******
 
@@ -36,6 +36,6 @@ The concatenated string has the following format:<br>
 - [Run an ADF pipeline when an SAP extraction file is successfully uploaded to Azure storage](https://kb.theobald-software.com/xtract-universal/runs-an-ADF-pipeline-when-sap-extraction-file-is-successfully-uploaded-to-Azure-storage)
 - [Integration in Azure Data Factory using Webservices](https://kb.theobald-software.com/xtract-universal/adf-integration-using-webservices)
 - [Integration in Azure Data Factory using Command Line](https://kb.theobald-software.com/xtract-universal/adf-integration-using-command-line)
-- [Online Help: User-Defined Variables](https://help.theobald-software.com/en/xtract-universal/advanced-techniques/user-defined-variables)
-- [Online Help: Call via Webservice](https://help.theobald-software.com/en/xtract-universal/execute-and-automate-extractions/call-via-webservice)
-- [Online Help: Metadata access via HTTP-JSON](https://help.theobald-software.com/en/xtract-universal/advanced-techniques/metadata-access-via-http-json)
+- [Documentation: User-Defined Variables](https://help.theobald-software.com/en/xtract-universal/advanced-techniques/user-defined-variables)
+- [Documentation: Call via Webservice](https://help.theobald-software.com/en/xtract-universal/execute-and-automate-extractions/call-via-webservice)
+- [Documentation: Metadata access via HTTP-JSON](https://help.theobald-software.com/en/xtract-universal/advanced-techniques/metadata-access-via-http-json)

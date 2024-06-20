@@ -14,10 +14,10 @@ Matillion Data Loader is a cloud based data loading platform that extracts data 
 
 ### Setup in {{ productName }}
 
-1. Create an extraction in {{ productName }}, see [Online Help: Defining an Extraction](https://help.theobald-software.com/en/xtract-universal/getting-started/define-a-table-extraction). <br>
+1. Create an extraction in {{ productName }}, see [Documentation: Defining an Extraction](https://help.theobald-software.com/en/xtract-universal/getting-started/define-a-table-extraction). <br>
 The depicted example scenario extracts the SAP table KNA1 (General Data in Customer Master).<br>
 ![KNA1](../assets/images/xu/articles/kna1.png){:class="img-responsive"}
-2. Assign the `http-json` destination to the extraction, see [Online Help: Assigning Destinations](https://help.theobald-software.com/en/xtract-universal/getting-started/write-data-to-destination#assigning-destinations-to-extractions).
+2. Assign the `http-json` destination to the extraction, see [Documentation: Assigning Destinations](https://help.theobald-software.com/en/xtract-universal/getting-started/write-data-to-destination#assigning-destinations-to-extractions).
 
 ### Create a Custom Connector in Matillion
 
@@ -31,7 +31,7 @@ To extract SAP data via {{ productName }} you must define a custom connector tha
 The URL has the following format: <br>
 `<Protocol>://<HOST or IP address>:<Port>/?name=<Name of the Extraction>{&<parameter_i>=<value_i>}`<br>
 Example: the URL `https://6606-185-114-89-133.eu.ngrok.io/?name=kna1` calls the extraction "kna1" via ngrock.
-For more information about calling extractions via web services, see [Online Help: Call via Webservice](https://help.theobald-software.com/en/xtract-universal/execute-and-automate-extractions/call-via-webservice).<br>
+For more information about calling extractions via web services, see [Documentation: Call via Webservice](https://help.theobald-software.com/en/xtract-universal/execute-and-automate-extractions/call-via-webservice).<br>
 ![matillion-test-connector](../assets/images/xu/articles/matillion-test-connector.png){:class="img-responsive"}
 4. To test the connection, enter your authentication details and click **[Send]** :number-4:. 
 If the connection is successful, the http response contains the SAP customer data extracted by {{ productName }} :number-5:.
@@ -87,7 +87,7 @@ The pipeline now runs automatically at the specified frequency.
 *****
 #### Related Links
 
-- [Online Help: Getting Started with {{ productName }}](https://help.theobald-software.com/en/xtract-universal/getting-started)
+- [Documentation: Getting Started with {{ productName }}](https://help.theobald-software.com/en/xtract-universal/getting-started)
 - [Matillion Documentation: Snowflake Destination](https://docs.matillion.com/data-productivity-cloud/batch/docs/set-up-snowflake/)
 - [Matillion Documentation: Matillion Custom Connector Overview](https://docs.matillion.com/data-productivity-cloud/custom-connector/docs/custom-connector-overview/)
 - [Matillion Documentation: Create a pipeline with custom connectors](https://docs.matillion.com/data-productivity-cloud/custom-connector/docs/custom-connector-batch-pipeline/).

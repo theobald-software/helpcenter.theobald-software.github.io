@@ -44,4 +44,4 @@ This can also work in conjunction with an existing ETL tool for centralized moni
 #### Related Links
 
 - [Xtract Universal Product Information](https://theobald-software.com/en/xtract-universal/) 
-- [Online Help: Snowflake Destination](https://help.theobald-software.com/en/xtract-universal/destinations/snowflake)
+- [Documentation: Snowflake Destination](https://help.theobald-software.com/en/xtract-universal/destinations/snowflake)

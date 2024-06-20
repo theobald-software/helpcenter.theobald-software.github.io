@@ -34,7 +34,7 @@ The depicted example uses the runtime parameter to dynamically filter SAP journa
 
 1. Drag & drop the Xtract Table component into your Alteryx workflow :number-1:.<br>
 ![xfa_create_table_extraction_01_extraction_01](../assets/images/xfa/articles/xfa_create_table_extraction_01.png){:class="img-responsive" width="900px"}
-2. Select an SAP connection :number-2:. If no SAP connection is available, create a new connection, see [Online Help: Creating an SAP Connection](https://help.theobald-software.com/en/xtract-for-alteryx/sap-connection).
+2. Select an SAP connection :number-2:. If no SAP connection is available, create a new connection, see [Documentation: SAP Connection](https://help.theobald-software.com/en/xtract-for-alteryx/sap-connection).
 3. Click **[Edit]** :number-3: to open the main window of the Xtract Table component.
 4. [Look up](https://help.theobald-software.com/en/xtract-universal/table/extract-table-data#look-up-a-table) an SAP table, e.g., *ACDOCA* (Universal Journal Entry Line Items).<br>
 ![single-table](../assets/images/xfa/articles/single-table.png){:class="img-responsive"}
@@ -68,7 +68,7 @@ The depicted example uses the runtime parameter to dynamically filter SAP journa
 
 1. Drag & drop the Xtract Table component into your Alteryx workflow :number-1:.<br>
 ![xfa_create_table_extraction_01_extraction_01](../assets/images/xfa/articles/xfa_create_table_extraction_01.png){:class="img-responsive" width="900px"}
-2. Select an SAP connection :number-2:. If no SAP connection is available, create a new connection, see [Online Help: Creating an SAP Connection](https://help.theobald-software.com/en/xtract-for-alteryx/sap-connection).
+2. Select an SAP connection :number-2:. If no SAP connection is available, create a new connection, see [Documentation: SAP Connection](https://help.theobald-software.com/en/xtract-for-alteryx/sap-connection).
 3. Click **[Edit]** :number-3: to open the main window of the Xtract Table component.
 4. [Look up](https://help.theobald-software.com/en/xtract-universal/table/extract-table-data#look-up-a-table) an SAP table, e.g., *ACDOCA* (Universal Journal Entry Line Items).<br>
 ![single-table](../assets/images/xfa/articles/single-table.png){:class="img-responsive"}
@@ -101,7 +101,7 @@ The depicted example uses the runtime parameters to dynamically filter SAP journ
 
 1. Drag & drop the Xtract Table component into your Alteryx workflow :number-1:.<br>
 ![xfa_create_table_extraction_01_extraction_01](../assets/images/xfa/articles/xfa_create_table_extraction_01.png){:class="img-responsive" width="900px"}
-2. Select an SAP connection :number-2:. If no SAP connection is available, create a new connection, see [Online Help: Creating an SAP Connection](https://help.theobald-software.com/en/xtract-for-alteryx/sap-connection).
+2. Select an SAP connection :number-2:. If no SAP connection is available, create a new connection, see [Documentation: SAP Connection](https://help.theobald-software.com/en/xtract-for-alteryx/sap-connection).
 3. Click **[Edit]** :number-3: to open the main window of the Xtract Table component.
 4. [Look up](https://help.theobald-software.com/en/xtract-universal/table/extract-table-data#look-up-a-table) an SAP table, e.g., *ACDOCA* (Universal Journal Entry Line Items).<br>
 ![multiple-table](../assets/images/xfa/articles/single-table.png){:class="img-responsive"}
@@ -129,5 +129,5 @@ The Xtract Table component can now be used to dynamically filter SAP data.
 
 *****
 #### Related Links
-- [Online Help: Xtract Table](https://help.theobald-software.com/en/xtract-for-alteryx/table)
-- [Online Help: Sample Workflows](https://help.theobald-software.com/en/xtract-for-alteryx/sample-workflows)
+- [Documentation: Xtract Table](https://help.theobald-software.com/en/xtract-for-alteryx/table)
+- [Documentation: Sample Workflows](https://help.theobald-software.com/en/xtract-for-alteryx/sample-workflows)

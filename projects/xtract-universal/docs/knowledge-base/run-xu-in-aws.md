@@ -18,9 +18,9 @@ When starting an {{ productName }} instance, the following settings are pre-conf
 
 |          | Configuration  |  Resources |
 |:---------|:-------------|:------|
-| License  | {{ productName }} is already installed and running with a 30-days trial license. You can replace the trial license with your purchased license. | [Online Help: Licensing](https://help.theobald-software.com/en/xtract-universal/introduction/license) |
-| Software Updates | The pre-installed version of {{ productName }} is displayed in the AWS marketplace. Make sure to keep {{ productName }} up-to-date with the latest software releases, see [{{ productName }} Version History](../version-history/xtract-universal-version-history). | [Online Help: Installation and Update](https://help.theobald-software.com/en/xtract-universal/introduction/installation-and-update) |
-| Server Settings | The webserver is pre-configured with a self-signed TLS certificate and can be accessed in a browser via ``https://xtractuniversal:8165/`` from within the rdp session. | [Online Help: Server Settings](https://help.theobald-software.com/en/xtract-universal/security/server-security) |
+| License  | {{ productName }} is already installed and running with a 30-days trial license. You can replace the trial license with your purchased license. | [Documentation: Licensing](https://help.theobald-software.com/en/xtract-universal/introduction/license) |
+| Software Updates | The pre-installed version of {{ productName }} is displayed in the AWS marketplace. Make sure to keep {{ productName }} up-to-date with the latest software releases, see [{{ productName }} Version History](../version-history/xtract-universal-version-history). | [Documentation: Installation and Update](https://help.theobald-software.com/en/xtract-universal/introduction/installation-and-update) |
+| Server Settings | The webserver is pre-configured with a self-signed TLS certificate and can be accessed in a browser via ``https://xtractuniversal:8165/`` from within the rdp session. | [Documentation: Server Settings](https://help.theobald-software.com/en/xtract-universal/security/server-security) |
 
 
 ### Prerequisites
@@ -50,7 +50,7 @@ The {{ productName }} AMI is already selected.<br>
 ![XUinAWS-ec2setup](../assets/images/xu/articles/XUinAWS-ec2setup.png)
 8. Start the EC2 instance and connect to it, see [AWS Documentation: Connect to an Instance](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/EC2_GetStarted.html#ec2-connect-to-instance-windows).
 9. When connected, the {{ productName }} Designer is located on the Desktop. Start the {{ productName }} Designer.
-10. Set up an SAP connection and extractions, see [Online Help: Getting Started](https://help.theobald-software.com/en/xtract-universal/getting-started/connect-designer-with-server).
+10. Set up an SAP connection and extractions, see [Documentation: Getting Started](https://help.theobald-software.com/en/xtract-universal/getting-started/connect-designer-with-server).
 
 ### Set Up from the EC2 Console
 
@@ -69,7 +69,7 @@ The {{ productName }} AMI is already selected.<br>
 ![XUinAWS-ec2setup](../assets/images/xu/articles/XUinAWS-ec2setup.png)
 7. Start the EC2 instance and connect to it, see [AWS Documentation: Connect to an Instance](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/EC2_GetStarted.html#ec2-connect-to-instance-windows).
 8. When connected, the {{ productName }} Designer is located on the Desktop. Start the {{ productName }} Designer.
-9. Set up an SAP connection and extractions, see [Online Help: Getting Started](https://help.theobald-software.com/en/xtract-universal/getting-started/connect-designer-with-server).
+9. Set up an SAP connection and extractions, see [Documentation: Getting Started](https://help.theobald-software.com/en/xtract-universal/getting-started/connect-designer-with-server).
 
 !!! note
     If you are not already [subscribed](https://docs.aws.amazon.com/marketplace/latest/buyerguide/buyer-ami-contracts.html) to {{ productName }}, launching the EC2 instance automatically adds the subscription.

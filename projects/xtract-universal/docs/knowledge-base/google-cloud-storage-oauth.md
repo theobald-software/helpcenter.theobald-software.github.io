@@ -14,7 +14,7 @@ To enable the OAuth 2.0 protocol, configure an OAuth flow with the required acce
 
 
 !!! note
-    As of version 5.11.16 {{ productName }} also supports authentication via service account credentials, see [Online Help: Google Cloud Storage - Destination Details](https://help.theobald-software.com/en/xtract-universal/destinations/google-cloud-storage#destination-details).
+    As of version 5.11.16 {{ productName }} also supports authentication via service account credentials, see [Documentation: Google Cloud Storage - Destination Details](https://help.theobald-software.com/en/xtract-universal/destinations/google-cloud-storage#destination-details).
 
 ### GCP console
 The GCP console allows configuring of all resources and services. 
@@ -62,11 +62,11 @@ Select *Desktop app* as application type :number-1:, enter a name for the app :n
 14. Click **[Create]** :number-3:.
 
 Your OAuth client is now created. <br>
-The **Client ID** and the **Client secret** are needed for the destination configuration in {{ productName }}, see [Online Help: Google Cloud Connection Settings](https://help.theobald-software.com/en/xtract-universal/destinations/google-cloud-storage#connection).<br>
+The **Client ID** and the **Client secret** are needed for the destination configuration in {{ productName }}, see [Documentation: Google Cloud Connection Settings](https://help.theobald-software.com/en/xtract-universal/destinations/google-cloud-storage#connection).<br>
 ![xu-google-cloud-req-16](../assets/images/xu/articles/googlecloudstorage/xu-google-cloud-req-16.png){:class="img-responsive"}
 
 *****
 #### Related Links
-- [Online Help: Google Cloud Storage Destination](https://help.theobald-software.com/en/xtract-universal/destinations/google-cloud-storage)
+- [Documentation: Google Cloud Storage Destination](https://help.theobald-software.com/en/xtract-universal/destinations/google-cloud-storage)
 - [Google Cloud Storage Documentation: Cloud Storage-Authentifizierung](https://cloud.google.com/storage/docs/authentication)
 - [Google Cloud Storage Documentation](https://cloud.google.com/storage/docs#docs)
