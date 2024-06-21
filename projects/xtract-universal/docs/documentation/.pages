@@ -7,5 +7,6 @@ nav:
     - BAPI: bapi
     - table
     - destinations
+    - Execute and Automate: execute-and-automate
     - organize-extractions.md
     - About this Documentation: about-this-documentation.md
