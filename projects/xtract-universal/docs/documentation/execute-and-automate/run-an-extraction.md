@@ -15,7 +15,7 @@ You can define runtime parameters and other options to run an extraction directl
 	- Enter a value for the parameter.
 3. Click **[Run]** to execute the extraction. 
 
-The status in the subsection [General Info](#general-info) indicated if the extraction finishes successfully and the extracted data is written to the destination.
+The status in the subsection [General Info](#general-info) indicates if the extraction finished successfully and if the extracted data was written to the destination.
 
 ## Run Extraction Window
 
@@ -75,7 +75,7 @@ The tool is located in the installation directory of {{ productName }}, e.g., `{
 Copy the expression with ++ctrl+c++ or use the **[:material-content-copy:]** button on the right. 
 
 It is recommended to use the command line tool with [Push Destinations](../destinations/index.md).
-It can be called from a [Windows script](../../knowledge-base/call-extraction-via-script) or any [scheduler](call-via-scheduler.md), that can invoke Windows commandline calls. <br>
+It can be called from a [Windows script](../../knowledge-base/call-extraction-via-script.md) or any [scheduler](call-via-scheduler.md), that can invoke Windows commandline calls. <br>
 In the most simple case, the Windows task scheduler can be used for calling and scheduling extractions using xu.exe. 
 
 By default the following parameters are generated for any extraction:
