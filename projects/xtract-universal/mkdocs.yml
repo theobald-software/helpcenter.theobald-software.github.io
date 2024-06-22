@@ -26,6 +26,7 @@ theme:
       tip: material/lightbulb
       note: fontawesome/solid/circle-info
       api: material/web
+      expression: material/script-text
   features:
      - announce.dismiss # adds a dismissal option to announcements 
     # - content.action.edit # adds an edit button to the pages

@@ -10,7 +10,7 @@ You can define runtime parameters and other options to run an extraction directl
 
 1. Select an extraction from the [list of extractions](../designer.md/#list-of-extractions) and click **[:designer-run:Run]** :number-1:. The window "Run Extraction" opens.<br>
 ![Extraction-Run](../../assets/images/{{ abbr }}/documentation/automation/Run-Table-Extraction.png){:class="img-responsive"}
-2. If needed, define [extraction parameters](extraction-parameters.md):
+2. If needed, define [extraction parameters](../parameters/extraction-parameters.md):
 	- Select the checkbox of the parameter you want to override :number-2:. The parameter is automatically added to the extraction URL and the xu-exe string. :number-3:
 	- Enter a value for the parameter.
 3. Click **[Run]** to execute the extraction. 
@@ -49,7 +49,7 @@ The "Run extraction" window consists the following subsections:
 The three tabs "Extraction", "Source" and "Custom" contain extraction parameter to dynamize extractions.
 When editing extraction parameters, the [URL and commandline](#url-and-commandline) of the extraction also change.
 
-For more information, see [Extraction Parameters](extraction-parameters.md).
+For more information, see [Extraction Parameters](../parameters/extraction-parameters.md).
 
 ![Custom parameters](../../assets/images/xu/documentation/automation/run_extraction_param_cust.png){:class="img-responsive"}
 

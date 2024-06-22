@@ -62,6 +62,21 @@
           mask-image: var(--md-admonition-icon--api);
 }
 
+.md-typeset .admonition.expression,
+.md-typeset details.expression {
+  border-color: rgb(169, 169, 169);
+}
+.md-typeset .expression > .admonition-title,
+.md-typeset .expression > summary {
+  background-color: rgba(169, 169, 169, 0.1);
+}
+.md-typeset .expression > .admonition-title::before,
+.md-typeset .expression > summary::before {
+  background-color: rgb(169, 169, 169);
+  -webkit-mask-image: var(--md-admonition-icon--expression);
+          mask-image: var(--md-admonition-icon--expression);
+}
+
 /* minimize space between banner and content on landing pages*/
 .md-typeset .grid {
     grid-gap: 0.4rem;

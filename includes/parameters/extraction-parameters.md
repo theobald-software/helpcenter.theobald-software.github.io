@@ -9,7 +9,7 @@ The parameters can be accessed in the "Run Extraction" window.<br>
 To open the "Run Extraction" window, select an extraction from the [list of extractions](site:documentation/designer/#list-of-extractions) and click **[:designer-run:Run]**.
 For more information, see [Run Extractions Window](run-an-extraction.md).
 
-![Extraction parameters](site:assets/images/{{ abbr }}/documentation/automation/run_extraction_param2.png){:class="img-responsive"}
+![Extraction parameters](site:assets/images/{{ abbr }}/documentation/parameters/run_extraction_param2.png){:class="img-responsive"}
 
 
 ### Extraction
@@ -57,7 +57,7 @@ columnSeparator |  Sets a symbol which indicates the start of a new column | Ava
 The connection settings to an SAP source can be changed dynamically via the URL and the [command-line tool xu.exe](call-via-commandline.md). 
 In the *Source* tab you can override the values that are defined in [SAP source details](../introduction/sap-connection).
 
-![Source parameters](site:assets/images/{{ abbr }}/documentation/automation/run_extraction_source_param.png){:class="img-responsive"}
+![Source parameters](site:assets/images/{{ abbr }}/documentation/parameters/run_extraction_source_param.png){:class="img-responsive"}
 
 Parameter name | Parameter description 
 ------------ | ------------- 
@@ -82,7 +82,7 @@ logonTicket | Changes the ticket issuer of the [SAP logon ticket](../../sso-with
 The tab *Custom* is only active when user-defined runtime parameters or [SQL parameters](sql-parameters.md) are available. <br>
 Check the checkbox and enter a new value to set the user defined parameter.
 
-![Custom parameters](site:assets/images/{{ abbr }}/documentation/automation/run_extraction_param_cust.png){:class="img-responsive"}
+![Custom parameters](site:assets/images/{{ abbr }}/documentation/parameters/run_extraction_param_cust.png){:class="img-responsive"}
 
 #### Example
 1. Select the checkbox of the parameter you want to override.

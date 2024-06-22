@@ -8,5 +8,6 @@ nav:
     - table
     - destinations
     - Execute and Automate: execute-and-automate
+    - parameters
     - organize-extractions.md
     - About this Documentation: about-this-documentation.md

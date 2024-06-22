@@ -9,12 +9,12 @@ When using an SQL destination, these parameters are available for SQL commands.
 A typical use case is the dynamization of WHERE clauses in the {{ table }} {{ component }}.
 The following table extraction has a custom parameter *WNAME* in the *WHERE-Clause*:
 
-![xu-customerparam-where](../../assets/images/xu/documentation/automation/where_condition_custom_parameter.png){:class="img-responsive"}
+![xu-customerparam-where](../../assets/images/xu/documentation/parameters/where_condition_custom_parameter.png){:class="img-responsive"}
 
 ### Custom SQL Statement
 
 In the window [Destination Settings](#link) you can use a custom SQL statement for the three database process steps and / or edit the SQL statement according to your requirements. 
-![Destination-Settings](../../assets/images/xu/documentation/automation/destination_settings_runtime_parameter.png){:class="img-responsive"}
+![Destination-Settings](../../assets/images/xu/documentation/parameters/destination_settings_runtime_parameter.png){:class="img-responsive"}
 
 1. In the main window select an extraction with a custom parameter in the WHERE-Clause :number-1:.
 2. Click **[Destination]** :number-2:. The window "Destination Settings" opens.
@@ -38,7 +38,7 @@ In the section **Finalization** these `NULL` values are replaced using the SQL s
 	The data types that can be used in SQL statements depend on your SQL database version.
 
 1. In the window "Destination Settings", select the option *Custom SQL* in the section **Preparation**. Click **Edit SQL**.<br>
-![Custom-SQL_Prep](../../assets/images/xu/documentation/automation/custom_sql_preparation_statement_runtime_parameter.png){:class="img-responsive"}
+![Custom-SQL_Prep](../../assets/images/xu/documentation/parameters/custom_sql_preparation_statement_runtime_parameter.png){:class="img-responsive"}
 2. Select *Drop & Create* from the drop-down-menu and click **[Generate Statement]** :number-6:. 
 3. Add the following line to the generated statement:
 ```sql
@@ -46,7 +46,7 @@ In the section **Finalization** these `NULL` values are replaced using the SQL s
 ```
 4. Click **[OK]** to confirm your input. 
 5. In the window "Destination Settings", select the option *Custom SQL* in the section **Finalization**. Click **Edit SQL**.<br>
-![Custom-SQL_Final](../../assets/images/xu/documentation/automation/custom_sql_finalization_statement_custom_parameter.png){:class="img-responsive"}
+![Custom-SQL_Final](../../assets/images/xu/documentation/parameters/custom_sql_finalization_statement_custom_parameter.png){:class="img-responsive"}
 6. Select *Insert* from the drop-down-menu and add the following SQL statement :number-7::
 ```sql
 UPDATE [dbo].[KNA1] 
@@ -58,7 +58,7 @@ WHERE [Custom_Parameter] IS NULL;
 ### Set the Custom Parameter WNAME
 
 1. Select the checkbox next to the parameter name to overwrite the parameter *WNAME*.<br>
-![Custom parameters](../../assets/images/xu/documentation/automation/runtime_parameter_wname.png){:class="img-responsive"}
+![Custom parameters](../../assets/images/xu/documentation/parameters/runtime_parameter_wname.png){:class="img-responsive"}
 2. Enter the new value *US* and confirm your input by pressing enter.
 3. Click **[Run]** :number-8: to run the extraction.
 
@@ -66,7 +66,7 @@ WHERE [Custom_Parameter] IS NULL;
 
 Check the result of the column *Custom_Parameter* in the SQL Server View of the *KNA1* table.
 
-![Custom_SQL_SQL_Server_Ausgabe](../../assets/images/xu/documentation/automation/sql_server_ansicht_extraction_date_spalte_custom_parameter.png){:class="img-responsive"}
+![Custom_SQL_SQL_Server_Ausgabe](../../assets/images/xu/documentation/parameters/sql_server_ansicht_extraction_date_spalte_custom_parameter.png){:class="img-responsive"}
 
 
 ***********
