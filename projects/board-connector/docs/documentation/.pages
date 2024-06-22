@@ -6,4 +6,6 @@ nav:
     - SAP Connection: sap-connection
     - BAPI: bapi
     - Table: table
+    - Run Extractions: run-extractions
+    - load-extractions-in-board.md
     - About this Documentation: about-this-documentation.md

@@ -3,7 +3,7 @@ title: Execute and Automate
 description: Execute and Automate Extractions
 ---
 
-This shows how to run extractions automatically and manually in the [{{ productName }} Designer](../../getting-started.md/#run-an-extraction). 
+This page shows how to run extractions automatically and manually. 
 Examples on how to create and call extractions:
 
 - [Commandline](call-via-commandline.md)
@@ -11,7 +11,8 @@ Examples on how to create and call extractions:
 - [Scheduler](call-via-scheduler.md)
 - [ETL-Tools](call-via-etl.md)
 
-### Run an Extraction
+
+### About the Execution of Extractions
 
 Extractions are triggered by an HTTP request and executed on the [{{ productName }} server](../server/index.md#run-extraction-on-the-server).
 

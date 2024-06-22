@@ -13,7 +13,7 @@
 
 ### Connect to SAP
 
-Follow the steps below to create an SAP source that connects to SAP:
+Follow the steps below to create a source that connects to SAP:
 
 1. In the main window of the Designer, navigate to the menu bar and select **Server > Manage Sources**. The window "Manage Sources" opens.  <br>
 ![Create-Connection](../../assets/images/{{ abbr }}/documentation/sap-connection/open-manage-sources.png){:class="img-responsive"}
