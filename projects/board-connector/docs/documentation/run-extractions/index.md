@@ -28,7 +28,7 @@ Extractions are triggered by an HTTP request and executed on the {{ productName 
 
 ### Run Extractions in Board
 
-Extractions can be loaded in Board using the [Data Reader](https://www.boardmanual.com/2021/summer/data-modeling/2_Database_design_functions/4_Data_Reader/Basic_concepts_DataReader.htm). <br>
+Extractions can be loaded in Board using the [Data Reader](https://www.boardmanual.com/board14/data-modeling/data-model-design-sections/data-reader/basic-concepts-data-reader.htm). <br>
 The depicted example uses an extraction "Plants" that extracts data from the SAP table *T001W*. 
 
 1. In Board, select **[+ DATA READER]**  to create a new Data Reader. Enter a name and a group . Select the source type **SAP**. <br>
