@@ -6,7 +6,7 @@ description: SQL Parameters
 In {{ productName }} you can define custom parameters that can be set dynamically when calling extractions.
 When using an SQL destination, these parameters are available for SQL commands. 
 
-A typical use case is the dynamization of WHERE-Clauses in table components.
+A typical use case is the dynamization of WHERE clauses in the {{ table }} {{ component }}.
 The following table extraction has a custom parameter *WNAME* in the *WHERE-Clause*:
 
 ![xu-customerparam-where](../../assets/images/xu/documentation/automation/where_condition_custom_parameter.png){:class="img-responsive"}
@@ -22,21 +22,22 @@ In the window [Destination Settings](#link) you can use a custom SQL statement f
 	- Preparation 
 	- Finalization
 4. Click **[Edit SQL]**. The window "Edit SQL" opens.
+5. Define an SQL statement and click **[OK]** to confirm your input :number-5:.
 
 ### Custom SQL Example for Custom Parameters
 In the following example the SAP table *KNA1* is expanded by adding the column *Custom_Parameter* of the type *NATIONAL CHARACTER VARYING(10)*.
-The column is filled dynamically by runtime parameters.
+The column is filled dynamically by {{ variables }}.
 
 In the section **Row Processing** the column values from SAP are written into the previously created SQL target table.
-This SQL-statement is therefore used as the default *Insert* statement.
-When rows are processed only `NULL` values are written into the *Custom_Parameter* column.
+This SQL statement is therefore used as the default *Insert* statement.
+When rows are processed, only `NULL` values are written into the *Custom_Parameter* column.
 
 In the section **Finalization** these `NULL` values are replaced using the SQL statements of the runtime parameter *WNAME* and the T-SQL command `UPDATE`.
 
 !!! note 
 	The data types that can be used in SQL statements depend on your SQL database version.
 
-1. In the window "Destination Settings" select the option *Custom SQL* in the section **Preparation**. Click **Edit SQL**.<br>
+1. In the window "Destination Settings", select the option *Custom SQL* in the section **Preparation**. Click **Edit SQL**.<br>
 ![Custom-SQL_Prep](../../assets/images/xu/documentation/automation/custom_sql_preparation_statement_runtime_parameter.png){:class="img-responsive"}
 2. Select *Drop & Create* from the drop-down-menu and click **[Generate Statement]** :number-6:. 
 3. Add the following line to the generated statement:
@@ -44,7 +45,7 @@ In the section **Finalization** these `NULL` values are replaced using the SQL s
 [Custom_Parameter] NATIONAL CHARACTER VARYING(10)
 ```
 4. Click **[OK]** to confirm your input. 
-5. In the window "Destination Settings" select the option *Custom SQL* in the section **Finalization**. Click **Edit SQL**.<br>
+5. In the window "Destination Settings", select the option *Custom SQL* in the section **Finalization**. Click **Edit SQL**.<br>
 ![Custom-SQL_Final](../../assets/images/xu/documentation/automation/custom_sql_finalization_statement_custom_parameter.png){:class="img-responsive"}
 6. Select *Insert* from the drop-down-menu and add the following SQL statement :number-7::
 ```sql
