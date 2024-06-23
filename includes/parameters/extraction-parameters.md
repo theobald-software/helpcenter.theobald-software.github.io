@@ -7,7 +7,7 @@ The following categories of extraction parameters are available:
 
 The parameters can be accessed in the "Run Extraction" window.<br>
 To open the "Run Extraction" window, select an extraction from the [list of extractions](site:documentation/designer/#list-of-extractions) and click **[:designer-run:Run]**.
-For more information, see [Run Extractions Window](run-an-extraction.md).
+For more information, see [Run Extractions](../{{ run_extractions }}/#run-extractions-in-the-designer).
 
 ![Extraction parameters](site:assets/images/{{ abbr }}/documentation/parameters/run_extraction_param2.png){:class="img-responsive"}
 

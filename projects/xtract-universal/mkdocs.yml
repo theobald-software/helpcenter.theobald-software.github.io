@@ -242,3 +242,4 @@ extra:
   parameterBtn: __Edit runtime parameters__
   previewBtn: __[Load live preview]__
   port: 8064
+  run_extractions: execute-and-automate/run-an-extraction.md

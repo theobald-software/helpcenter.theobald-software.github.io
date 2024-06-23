@@ -46,4 +46,4 @@ If no icon is available, [create a runtime parameter](#create-runtime-parameters
 
 {% endif %}
 
-Pass values during runtime, see [Extraction Parameters - Custom](#link).
+Pass values during runtime, see [Extraction Parameters - Custom](../parameters/extraction-parameters.md/#custom).

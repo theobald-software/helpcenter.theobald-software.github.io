@@ -11,9 +11,9 @@ This string can be used as input for further .NET string operations.
 Script expressions can be used in the following scenarios:
 
 - as selection parameters for [Table](../table/where-clause#script-expressions) or [DeltaQ](../datasource-deltaq/datasource-parameters#script-expressions) extractions.
-- as custom SQL commands in [Database Destinations](../destinations#databases--data-warehouses).
-- as dynamic folder paths in the [Amazon S3](../destinations/amazon-aws-s3#folder) and [Azure Storage](../destinations/azure-storage#folder).
-- as dynamic file names in push destinations.
+- as custom SQL commands in database destinations.
+- as dynamic folder paths in cloud storage destinations.
+- as dynamic file names in database destinations, cloud storage destinations and flat-file destinations.
 
 {% include "parameters/script-expressions.md" %}
 

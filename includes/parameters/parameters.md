@@ -1,0 +1,43 @@
+
+{{ productName }} supports multiple options to dynamize extractions:
+
+- [Extraction parameters](extraction-parameters.md)
+- [Script expressions](script-expressions.md)
+{% if page.meta.product == "xtract-universal" %}- [SQL parameters](sql-parameters.md) 
+
+While script expressions compute values, extraction parameters and by extension SQL parameters require users to pass actual values when running an extraction.
+Extraction parameters affect the extraction and destination settings, the SAP connection settings, and the user-defined (custom) runtime parameters of an extraction. 
+This includes the runtime parameters used as SQL parameters.
+
+{% else %}
+
+While script expressions compute values, extraction parameters require users to pass actual values when running an extraction.
+Extraction parameters affect the extraction settings, the SAP connection settings, and the user-defined (custom) runtime parameters of an extraction. 
+
+{% endif %}
+
+### About Custom Runtime Parameters
+
+User-defined runtime parameters can be used to filter SAP data before writing the data to the destination.
+They are part of the [extraction parameters](extraction-parameters.md/#custom) of an extraction{% if page.meta.product == "xtract-universal" %} and can be used in SQL statements, see [SQL parameters](sql-parameters.md){% endif %}.
+There are two types of runtime parameters:
+
+- scalar parameters that represent a single value.
+- list parameters that represent multiple values separated by a comma, e.g., 1,10 or “1”, “10”.
+
+Most {{ components }} offer an *Edit runtime parameters* menu that allows users to create custom runtime parameters.
+Once a runtime parameter is created, a switch is added to all input fields that support runtime parameters.
+The switch allows users to switch between static input values (:runtime-parameters-static:) and an existing runtime parameter (:runtime-parameters-dynamic:).
+
+The following table shows what {{ components }} and settings support custom runtime parameters:
+
+| {{ Component }} |  Settings that support custom Runtime Parameters | Link  |
+|----------|-------------|------------------|
+| :component-bapi: {{ bapi }} | [Import parameters](../bapi/input-and-output.md/#import-parameters), [Table parameters](../bapi/input-and-output.md/#table-parameters) |  [Runtime parameters](../bapi/edit-runtime-parameters.md/#create-runtime-parameters) |
+| :component-bwcube: {{ bwcube }} | [BEx variables](../bwcube/variables.md), [dimension filters](#link)   |  [Runtime parameters](../bwcube/edit-runtime-parameters.md/#create-runtime-parameters) |
+| :component-deltaq: {{ deltaq }} | [Selections](#link)    | [Runtime parameters](../deltaq/edit-runtime-parameters.md/#create-runtime-parameters) | 
+| :component-odp: {{ odp }} | [Selections](#link)   | [Runtime parameters](../odp/edit-runtime-parameters.md/#create-runtime-parameters) | 
+| :component-query: {{ query }} | [Selections](#link)  | [Runtime parameters](../query/edit-runtime-parameters.md/#create-runtime-parameters) | 
+| :component-report: {{ report }} | [Selections](#link)  | [Runtime parameters](../report/edit-runtime-parameters.md/#create-runtime-parameters) | 
+| :component-table: {{ table }} | [WHERE clause](../table/where-clause.md), [HAVING clause](../table/having-clause.md) | [Runtime parameters](../table/edit-runtime-parameters.md/#create-runtime-parameters) | 
+| :component-table-cdc: {{ tableCDC }} | [WHERE clause](../table-cdc/where-clause.md) | [Runtime parameters](../table-cdc/edit-runtime-parameters.md/#create-runtime-parameters) | 
