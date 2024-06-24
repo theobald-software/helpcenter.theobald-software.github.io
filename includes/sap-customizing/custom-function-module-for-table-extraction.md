@@ -23,7 +23,9 @@ When importing the transport requests on older SAP releases a syntax error may o
 !!! warning   
 	**Generating Short Dumps.**<br>
 	Testing the function modules on an SAP system is not possible.
-	Note that the function modules /THEO/READ_TABLE and Z_THEO_READ_TABLE can only be called by Theobald products due to the callback function of the module.
+	Function modules /THEO/READ_TABLE and Z_THEO_READ_TABLE can only be called by Theobald Software products due to the callback function of the module.
+	Avoid calling function modules /THEO/READ_TABLE and Z_THEO_READ_TABLE directly from an SAP system.
+	
 
 	
 ### Supported Features

@@ -16,7 +16,7 @@
 |[{{ tableCDC }}](site:documentation/table-cdc/)      | SAP ECC 5.0 or above     | Installation of a custom function modules is necessary, see [Table CDC Requirements](site:documentation/table-cdc/#requirements). |
 {% endif %}
 
-For Information about the installation of the custom function modules and the SAP customizing, check the section [SAP Customization](site:documentation/setup-in-sap/).
+For Information about the installation of the custom function modules and the SAP customization, check the section [SAP Customization](site:documentation/setup-in-sap/).
 
 
 ### SAP Licenses

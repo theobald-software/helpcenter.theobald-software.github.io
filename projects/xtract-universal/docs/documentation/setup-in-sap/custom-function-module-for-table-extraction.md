@@ -6,7 +6,7 @@ tags:
 ---
 
 
-SAP customizing for the {{ table }} {{ component }} is optional. 
+SAP customization for the {{ table }} {{ component }} is optional. 
 The installation of the custom function module `/THEO/READ_TABLE` is recommended to improve performance and to bypass restrictions of the SAP standard function module RFC_READ_TABLE.
 
 {% include "components/table/restrictions.md"  %}
