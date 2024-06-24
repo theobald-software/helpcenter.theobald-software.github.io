@@ -260,7 +260,7 @@
 |2.15.4 [L]|2015-07-18|Table Join|Updated TQB for Table Join component.|
 |2.15.3 [L]|2015-07-17|General|Updated code to run on .NET 4.|
 |2.15.2 [L]|2015-07-14|Setup|Updated support client to 10.0.43879.0|
-|2.15.0 [M]|2015-06-30|General|Purchased license is preferred to demo license now|
+|2.15.0 [M]|2015-06-30|General|Regular license is preferred to trial license now|
 |2.14.0 [L]|2015-06-30|Server|Removed HttpLocalOnly server setting (please use server security settings instead)|
 |2.12.8 [L]|2015-05-21|Designer|Delete button & menu item is disabled in GUI if user does not has appropriate privileges|
 |2.12.7 [M]|2015-05-20|Designer|Fixed extraction name validation|

@@ -58,7 +58,7 @@
 |6.8.8 [M]|2020-01-14|RFCServer|Fix for "Cannot execute NwFunction more than once" (NWRFC)|
 |6.8.7 [M]|2019-12-06|RFC Client|Classic RFC: Fixed memory leak in tRFC (e. g. Idoc.Send())|
 |6.8.6 [M]|2019-12-06|RFC Client|NWRFC: Fixed memory leak in tRFC / qRFC (e. g. Idoc.Send())|
-|6.8.5 [L]|2019-12-05|General|Adjustments for demo licenses.|
+|6.8.5 [L]|2019-12-05|General|Adjustments for trial licenses.|
 |6.8.4 [L]|2019-11-13|Idoc|Fix for loading iDoc Schema after loading plain data|
 |6.8.3 [L]|2019-11-13|Setup|Improvements for the uninstalling script|
 |6.8.2 [L]|2019-11-06|Setup|Improvements for the uninstalling script|

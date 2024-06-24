@@ -26,7 +26,7 @@ It is recommended to create backups at regular intervals to switch back to the p
 
 !!! warning 
 	**Warning! Data loss.**<br>
-    System updates or changes can restrict software functionalities and this may lead to data loss.
+    System updates or changes can restrict software functionalities and this may lead to data loss. <br>
     Create a backup of the directory: `{{ installationDir }}\config` at regular intervals.
 	
 {% elif page.meta.product == "xtract-for-alteryx" %}
@@ -47,13 +47,14 @@ On the machine that runs the {{ productName}} service, copy the following files 
 
 !!! warning 
 	**Warning! Data security.**<br>
-    Both `config` and `logs` directories may contain sensitive information.
+    Both `config` and `logs` directories may contain sensitive information. <br>
+	Make sure to secure any sensitive data.
 
 It is recommended to create backups at regular intervals or use a versioning tool to switch back to the previous version, if necessary.
 
 !!! tip "Recommendation"
 	A version control system helps manage the data transfer from test environment to production environment by keeping track of all modifications.
-	Git or Azure DevOps are version control systems that can be used to ensure:
+	Git or Azure DevOps are version control systems that can be used to ensure the following:
 
 	- The deployment of new extractions, sources and destinations can **not** cause fundamental damage to the data load of the productive landscape.
 	- User rights and other features allow for changes to be checked and corrected in advance.
@@ -69,7 +70,8 @@ It is recommended to create backups at regular intervals or use a versioning too
 
 !!! warning 
 	**Warning! Data loss.**<br>
-    Restoring the backup of the `config` folder replaces the existing configuration. Make sure to remove the existing files before restoring the backups.
+    Restoring the backup of the `config` folder replaces the existing configuration. <br>
+	Make sure to remove the existing files before restoring the backups.
 
 {% endif %}
 

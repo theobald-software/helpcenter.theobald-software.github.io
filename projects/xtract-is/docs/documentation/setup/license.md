@@ -30,7 +30,7 @@ The following graphic shows on which workstations the installation of Xtract IS 
 ![client_Server_architecture_xis_final](../../assets/images/xis/documentation/setup/client_server_xis.png)<br>
 
 The same license file can be used on the local workstations to develop the SSIS packages.
-A demo license is automatically installed with the installation of Xtract IS. <br>
+A trial license is automatically installed with the installation of Xtract IS. <br>
 A regular license is provided, after purchasing the product. The product license is bound to your company and a specific server name. 
 
 {% include "setup/license.md" %}

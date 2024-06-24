@@ -18,7 +18,7 @@ When starting an {{ productName }} instance, the following settings are pre-conf
 
 |          | Configuration  |  Resources |
 |:---------|:-------------|:------|
-| License  | {{ productName }} is already installed and running with a 30-days trial license. You can replace the trial license with your purchased license. | [Online Help: Licensing](https://help.theobald-software.com/en/xtract-universal/introduction/license) |
+| License  | {{ productName }} is already installed and running with a 30-days trial license. You can replace the trial license with your regular license. | [Online Help: Licensing](https://help.theobald-software.com/en/xtract-universal/introduction/license) |
 | Software Updates | The pre-installed version of {{ productName }} is displayed in the AWS marketplace. Make sure to keep {{ productName }} up-to-date with the latest software releases, see [{{ productName }} Version History](../version-history/xtract-universal-version-history). | [Online Help: Installation and Update](https://help.theobald-software.com/en/xtract-universal/introduction/installation-and-update) |
 | Server Settings | The webserver is pre-configured with a self-signed TLS certificate and can be accessed in a browser via ``https://xtractuniversal:8165/`` from within the rdp session. | [Online Help: Server Settings](https://help.theobald-software.com/en/xtract-universal/security/server-security) |
 
