@@ -65,7 +65,7 @@ They are generated from the selected primary key columns and the name of the SAP
 
 ### Security Tab
 
-Restrict user access to the extraction. For more information, see [access management](../security/access-management.md).
+Restrict user access to the extraction. For more information, see [Restrict Designer Access](../access-restrictions/restrict-designer-access.md).
 
 ![General-Settings-Security](../../assets/images/{{ abbr }}/documentation/general-settings/general-settings-security.png){:class="img-responsive"}
 

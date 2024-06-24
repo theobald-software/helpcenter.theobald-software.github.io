@@ -31,13 +31,13 @@ The switch allows users to switch between static input values (:runtime-paramete
 
 The following table shows what {{ components }} and settings support custom runtime parameters:
 
-| {{ Component }} |  Settings that support custom Runtime Parameters | Link  |
-|----------|-------------|------------------|
-| :component-bapi: {{ bapi }} | [Import parameters](../bapi/input-and-output.md/#import-parameters), [Table parameters](../bapi/input-and-output.md/#table-parameters) |  [Runtime parameters](../bapi/edit-runtime-parameters.md/#create-runtime-parameters) |
-| :component-bwcube: {{ bwcube }} | [BEx variables](../bwcube/variables.md), [dimension filters](#link)   |  [Runtime parameters](../bwcube/edit-runtime-parameters.md/#create-runtime-parameters) |
-| :component-deltaq: {{ deltaq }} | [Selections](#link)    | [Runtime parameters](../deltaq/edit-runtime-parameters.md/#create-runtime-parameters) | 
-| :component-odp: {{ odp }} | [Selections](#link)   | [Runtime parameters](../odp/edit-runtime-parameters.md/#create-runtime-parameters) | 
-| :component-query: {{ query }} | [Selections](#link)  | [Runtime parameters](../query/edit-runtime-parameters.md/#create-runtime-parameters) | 
-| :component-report: {{ report }} | [Selections](#link)  | [Runtime parameters](../report/edit-runtime-parameters.md/#create-runtime-parameters) | 
-| :component-table: {{ table }} | [WHERE clause](../table/where-clause.md), [HAVING clause](../table/having-clause.md) | [Runtime parameters](../table/edit-runtime-parameters.md/#create-runtime-parameters) | 
-| :component-table-cdc: {{ tableCDC }} | [WHERE clause](../table-cdc/where-clause.md) | [Runtime parameters](../table-cdc/edit-runtime-parameters.md/#create-runtime-parameters) | 
+| {{ Component }} |  Settings that Support Custom Runtime Parameters | 
+|----------|-------------|
+| :component-bapi: {{ bapi }} | [Import parameters](../bapi/input-and-output.md/#import-parameters), [Table parameters](../bapi/input-and-output.md/#table-parameters) |  
+| :component-bwcube: {{ bwcube }} | [BEx variables](../bwcube/variables.md), [dimension filters](#link)   |  
+| :component-deltaq: {{ deltaq }}  | [Selections](#link)    | 
+| :component-odp: {{ odp }} | [Selections](#link)   | 
+| :component-query: {{ query }} | [Selections](#link)  | 
+| :component-report: {{ report }}  | [Selections](#link)  | 
+| :component-table: {{ table }}  | [WHERE clause](../table/where-clause.md), [HAVING clause](../table/having-clause.md) | 
+| :component-table-cdc: {{ tableCDC }}  | [WHERE clause](../table-cdc/where-clause.md) | 

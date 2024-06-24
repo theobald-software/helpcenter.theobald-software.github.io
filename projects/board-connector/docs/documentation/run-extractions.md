@@ -1,7 +1,6 @@
 ---
 title: Run Extractions
 description: How to run extractions
-icon: designer/run
 ---
 
 This page shows how to run extractions directly in the Designer and in Board. <br>
