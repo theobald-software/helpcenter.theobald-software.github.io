@@ -133,6 +133,15 @@ Install the software update on the test environment and test the new version car
 After successfully testing the update on the test environment, install the update on the production environment. 
 Make sure to create a backup beforehand and conduct all the necessary preparations and changes. 
 
+{% if page.meta.product == "xtract-universal" or page.meta.product == "board-connector"%}
+
+!!! warning 
+	**Warning! Critical errors. Support cannot be provided.**<br>
+    The versions of the test environment and of the production environment must be identical. Different versions can cause critical errors. No support can be provided, if the versions are not identical. <br>
+	Make sure to keep the versions of the test environment and production environment identical - upgrade or downgrade, if needed.
+	
+{% endif %}
+
 ****
 #### Related Links
 {% if page.meta.product == "xtract-universal" or page.meta.product == "board-connector" %}- [Knowledge Base: Deploy Extractions Using Git Version Control](../../knowledge-base/deploy-extractions-using-Git-version-control.md) {% endif %}
