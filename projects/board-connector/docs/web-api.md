@@ -10,4 +10,4 @@ hide:
 
 ---
 
-{% include "web-api.md" %}
+{% include "xu-bc-web-api.md" %}

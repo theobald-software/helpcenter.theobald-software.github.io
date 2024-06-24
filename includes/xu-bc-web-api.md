@@ -137,7 +137,7 @@ Aborts the specified extraction. If the abortion is successful, a confirmation m
 
 #### Example
 
-??? api "http://sherri.theobald.local:{{ port }}//abort?name=KNA1"
+??? api "http://sherri.theobald.local:{{ port }}/abort?name=KNA1"
 
 	```csv
 	All runs of extraction 'KNA1' aborted.
