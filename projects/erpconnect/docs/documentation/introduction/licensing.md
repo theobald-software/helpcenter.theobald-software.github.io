@@ -3,11 +3,11 @@ title: Licensing
 description: Licensing
 ---
 
-A demo license is automatically installed with the installation of ERPConnect.<br>
+A trial license is automatically installed with the installation of ERPConnect.<br>
 A regular license is provided in the [Theobald Software Customer Portal](https://my.theobald-software.com/) after purchasing the product. 
 
 !!! note
-    The standard demo license does not support working in web environments.
+    The standard trial license does not support working in web environments.
     To test ERPConnect with your ASP.NET project, apply for a test license number at [sales@theobald-software.com](mailto:sales@theobald-software.com).
 
 ### Installing the ERPConnect License 

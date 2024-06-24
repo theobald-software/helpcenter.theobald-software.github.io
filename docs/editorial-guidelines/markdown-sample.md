@@ -29,7 +29,8 @@ The content of a box must be indenting. An admonition ends after 1 unindented em
 	``` markdown
 	!!! warning
 		**Missing Authorization**<br>
-		Explanation of warning or error message.
+		Explanation of warning or error message. <br>
+		Call for action to avoid the critical error.
 	```
 
 	<div class="result" markdown>

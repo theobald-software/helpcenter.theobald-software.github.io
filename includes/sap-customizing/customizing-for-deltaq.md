@@ -21,7 +21,7 @@ The name of the Program ID is needed again for later configuration.
 ### Execute the Function Module RSAP_BIW_CONNECT_40
 
 !!! note
-	This step assumes that the SAP system is modifiable.
+	Executing the Function Module RSAP_BIW_CONNECT_40 can be performed on modifiable that the SAP systems.
 
 The function module RSAP_BIW_CONNECT_40 creates a connection to a Business Information Warehouse.
 Go to SAP transaction *SE37* and execute the function module RSAP_BIW_CONNECT_40 with the following import parameters: 
@@ -71,10 +71,12 @@ I_RLOGSYS | XTRACT01
 
 ### Register the RFC Server  
 
+!!! note
+	Registering an RFC Server in SAP Releases only applies to SAP kernel version 720 and higher.
+
 Follow the instructions in the [Knowledge Base Article: Register an RFC Server in SAP Releases with Kernel Release 720 and higher](../../knowledge-base/register-rfc-server-in-sap-releases-in-kernel-release-720-and-higher.md).
 
-!!! note
-	This step only applies to SAP kernel version 720 and higher.
+
 
 ### qRFC Monitor (QOUT Scheduler)
 

@@ -26,7 +26,7 @@ It is recommended to create backups at regular intervals to switch back to the p
 
 !!! warning 
 	**Warning! Data loss.**<br>
-    System updates or changes can restrict software functionalities and this may lead to data loss.
+    System updates or changes can restrict software functionalities and this may lead to data loss. <br>
     Create a backup of the directory: `{{ installationDir }}\config` at regular intervals.
 	
 {% elif page.meta.product == "xtract-for-alteryx" %}
@@ -47,13 +47,14 @@ On the machine that runs the {{ productName}} service, copy the following files 
 
 !!! warning 
 	**Warning! Data security.**<br>
-    Both `config` and `logs` directories may contain sensitive information.
+    Both `config` and `logs` directories may contain sensitive information. <br>
+	Make sure to secure any sensitive data.
 
 It is recommended to create backups at regular intervals or use a versioning tool to switch back to the previous version, if necessary.
 
 !!! tip "Recommendation"
 	A version control system helps manage the data transfer from test environment to production environment by keeping track of all modifications.
-	Git or Azure DevOps are version control systems that can be used to ensure:
+	Git or Azure DevOps are version control systems that can be used to ensure the following:
 
 	- The deployment of new extractions, sources and destinations can **not** cause fundamental damage to the data load of the productive landscape.
 	- User rights and other features allow for changes to be checked and corrected in advance.
@@ -69,7 +70,8 @@ It is recommended to create backups at regular intervals or use a versioning too
 
 !!! warning 
 	**Warning! Data loss.**<br>
-    Restoring the backup of the `config` folder replaces the existing configuration. Make sure to remove the existing files before restoring the backups.
+    Restoring the backup of the `config` folder replaces the existing configuration. <br>
+	Make sure to remove the existing files before restoring the backups.
 
 {% endif %}
 
@@ -130,6 +132,15 @@ Install the software update on the test environment and test the new version car
 
 After successfully testing the update on the test environment, install the update on the production environment. 
 Make sure to create a backup beforehand and conduct all the necessary preparations and changes. 
+
+{% if page.meta.product == "xtract-universal" or page.meta.product == "board-connector"%}
+
+!!! warning 
+	**Warning! Critical errors. Support cannot be provided.**<br>
+    The versions of the test environment and of the production environment must be identical. Different versions can cause critical errors. No support can be provided, if the versions are not identical. <br>
+	Make sure to keep the versions of the test environment and production environment identical - upgrade or downgrade, if needed.
+	
+{% endif %}
 
 ****
 #### Related Links

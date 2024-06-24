@@ -42,8 +42,8 @@ The following SAP Systems are not supported:
 !!! tip "Examples"
 
 	<div class="mdx-columns" markdown>
-
-	- SAP S/4HANA Cloud Public Edition
+    {% if  page.meta.product != "xtract-universal" and page.meta.product != "board-connector" %}
+    - SAP S/4HANA Cloud Public Edition {% endif %}
 	- Business By Design
 	- Business One
 	- Business Objects

@@ -5,7 +5,7 @@ description: SAP Connection
 ---
 
 This page shows how to connect to SAP.<br>
-An SAP connection is required to use any Xtract Universal {{ component }}.
+An SAP connection is required to use any Board Connector {{ component }}.
 
 
 {% include "/sap-connection/sap-auth-warning.md" %}
