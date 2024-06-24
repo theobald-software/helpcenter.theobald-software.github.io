@@ -7,5 +7,5 @@ nav:
     - BAPI: bapi
     - Table: table
     - run-extractions.md
-    - parameters
+    - Runtime Parameters: parameters
     - About this Documentation: about-this-documentation.md

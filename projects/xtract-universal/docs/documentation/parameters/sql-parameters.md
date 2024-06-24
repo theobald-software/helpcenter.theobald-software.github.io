@@ -3,7 +3,7 @@ title: SQL Parameters
 description: SQL Parameters
 ---
 
-In {{ productName }} you can define custom parameters that can be set dynamically when calling extractions.
+In {{ productName }} you can define custom runtime parameters that can be set dynamically when calling extractions.
 When using an SQL destination, these parameters are available for SQL commands. 
 
 A typical use case is the dynamization of WHERE clauses in the {{ table }} {{ component }}.

@@ -6,8 +6,8 @@
 {% if page.meta.product == "xtract-universal" %}- [SQL parameters](sql-parameters.md) 
 
 While script expressions compute values, extraction parameters and by extension SQL parameters require users to pass actual values when running an extraction.
-Extraction parameters affect the extraction and destination settings, the SAP connection settings, and the user-defined (custom) runtime parameters of an extraction. 
-This includes the runtime parameters used as SQL parameters.
+Extraction parameters affect the extraction settings, destination settings, the SAP connection settings, and the user-defined (custom) runtime parameters of an extraction. 
+This includes the runtime parameters that are used in SQl commands (SQL parameters).
 
 {% else %}
 

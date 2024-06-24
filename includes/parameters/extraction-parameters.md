@@ -15,7 +15,7 @@ For more information, see [Run Extractions](../{{ run_extractions }}/#run-extrac
 ### Extraction
 
 The number of available parameters depends on the extraction type and destination.<br>
-Example: **decimalSeparator** is a parameter specific to CSV destinations.
+Example: *decimalSeparator* is a parameter specific to CSV destinations.
 
 Parameter  | Description | Information
 ------------ | ------------- | -------------
