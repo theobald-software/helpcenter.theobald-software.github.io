@@ -18,7 +18,7 @@ Follow the steps below to set up an SAP connection that uses SNC:
 
 	| SNC Implementation | Description |
 	| :------ |:--- | 
-	--8<-- "sap-connection/xu-bc-general-and-authentication.md:79:83"
+	--8<-- "sap-connection/xu-bc-general-and-authentication.md:82:86"
 	
 8. Click **[Test designer connection]** to validate the connection between the {{ productName }} Designer and the SAP system. 
 9. Click **[Test server connection]** to validate the connection between the {{ productName }} Server and the SAP system. 

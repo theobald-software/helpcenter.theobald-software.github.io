@@ -1,11 +1,14 @@
 
 <!---
 !!!WARNING!!!
-Lines 73-77 are included in the file xu-bc-snc.md via --8<-- "sap-connection/xu-bc-general-and-authentication.md:79:83"
+Lines 73-77 are included in the file xu-bc-snc.md via --8<-- "sap-connection/xu-bc-general-and-authentication.md:82:86"
 If the lines change, adjust the included line numbers.
 -->
 
 This page contains an overview of the SAP connection settings in the window "Change Source".<br>
+To open the server settings, navigate to **[Server] > [Manager Sources]** in the main window of the Designer and click **[pen-button]**.
+
+![sap-source-general](../../assets/images/{{ abbr }}/documentation/sap-connection/open-manage-sources.png){:class="img-responsive"}
 
 ### General
 

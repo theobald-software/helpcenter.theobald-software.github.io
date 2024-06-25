@@ -12,4 +12,5 @@ nav:
     - organize-extractions.md
     - Access Restriction: access-restrictions
     - server
+    - logs.md
     - About this Documentation: about-this-documentation.md

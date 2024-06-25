@@ -10,4 +10,5 @@ nav:
     - Runtime Parameters: parameters
     - Access Restrictions: access-restrictions
     - server
+    - logs.md
     - About this Documentation: about-this-documentation.md
