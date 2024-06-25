@@ -18,15 +18,14 @@ The *Cache results* option is only available in [pull destinations](../destinati
 Pull destinations often pull the data from SAP for several times. 
 To decrease the SAP server load, you can select the **Cache results** option, this way the pull destination pulls the data from cache and not from the SAP.
 
-{% else %} 
-
-Data is often pulled from SAP multiple times. To reduce the load on the SAP server, you can select the **Cache results** option,
-so that the data is pulled from the cache and not from the SAP.
-
-{% endif %}
-
 This increases the performance and limits the impact on the SAP system. 
 If this behavior is not desired (for example, because the data must be always 100% up to date), the cache option must be explicitly turned off.
+
+{% else %} 
+
+This option can be neglected. Board Connector always uses the result cache, because Board always requests the results twice.
+
+{% endif %}
 
 #### Keywords
 One or more keywords (tags) can be assigned to an extraction. 

@@ -9,4 +9,5 @@ nav:
     - run-extractions.md
     - Runtime Parameters: parameters
     - Access Restrictions: access-restrictions
+    - server
     - About this Documentation: about-this-documentation.md

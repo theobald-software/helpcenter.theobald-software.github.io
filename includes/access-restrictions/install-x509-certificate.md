@@ -1,5 +1,5 @@
 
-For Transport encryption and authentication it is required to install an X.509 certificate.
+The installation of an X.509 certificate is required for transport encryption and authentication.
 There are two main approaches for creating an X.509 certificate:
 - Certificate released by an (internal) certification authority (CA) 
 - Self-signed certificate

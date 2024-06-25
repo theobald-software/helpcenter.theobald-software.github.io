@@ -244,3 +244,4 @@ extra:
   previewBtn: __[Load live preview]__
   port: 8096
   run_extractions: run-extractions.md
+  service: BCService

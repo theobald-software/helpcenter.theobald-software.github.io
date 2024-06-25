@@ -12,29 +12,31 @@ Enter connection and user details to connect the Designer to a {{ productName }}
 	2. When the {{ productName }} Server is a local server, the server address is *localhost*.<br>
 	The default port ({{ port }}) may vary depending on the configuration. <br>
 	![local-login](../assets/images/{{ abbr }}/documentation/designer/local-login.png){:class="img-responsive"}
-	3. If the service is not running on default port {{ port }}, specify the port by adding [:[port]](../server/ports) after the host name.
+	3. If the service is not running on default port {{ port }}, specify the port by adding :[port] after the host name.
 	The default port can be configured in the [server settings](../server/server-settings).
+	4. Select an authentication method. Once logged in, you can activate or deactivate methods of authentication, see [Access Restrictions](access-restrictions/index.md/#authentication-between-designer-and-server). 
+	5. Click **[:designer-connect: Connect]** to connect the Designer to the Server. The main window of the Designer opens.
 
 === "Designer and Server run on different machines"
 	1. Launch the {{ productName }} Designer.
 	2. When the {{ productName }} Designer and the {{ productName }} Server run on different machines, enter the host name of the {{ productName }} Server. 
 	Make sure the port is not blocked by your firewall.<br>
 	![remote-login](../assets/images/{{ abbr }}/documentation/designer/remote-login.png){:class="img-responsive"}
-	3. If the service does not run on default port {{ port }}, specify the port by adding [:[port]](../server/ports.md) after the host name.
+	3. If the service does not run on default port {{ port }}, specify the port by adding :[port] after the host name.
 	The default port can be configured in the [server settings](../server/server-settings.md).
-
+	4. Select an authentication method. Once logged in, you can activate or deactivate methods of authentication, see [Access Restrictions](access-restrictions/index.md/#authentication-between-designer-and-server). 
+	5. Click **[:designer-connect: Connect]** to connect the Designer to the Server. The main window of the Designer opens.
+	
 {{ productName }} offers different methods of authenticating and securing the connection between the {{ productName }} Designer and the {{ productName }} Server. 
 The default authentication methods are authentication via *Windows credentials (current user)* and *Anonymous (no encryption)*.
 
-Once logged in, you can activate or deactivate methods of authentication, see [Server Settings](#link). 
 
-
-## Main Window
+## Main Window of the Designer
 
 The Designer features different functionalities to design and configure extractions.
 
 !!! tip 
-	Press **[F1]** to open the documentation page for particular windows.
+	Press ++f1++ to open the documentation page for particular windows.
 
 ### Main Menu Bar
 
