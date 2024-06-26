@@ -25,6 +25,11 @@ When extracting tables from older SAP releases you may encounter several restric
 
 To bypass the restrictions, install the custom function module Z_XTRACT_IS_TABLE.
 
+!!! warning
+	**Duplicates in the target environment!**<br>
+	Extracting mass data, can cause duplicates in the target environment. 
+ 	The use of Z_XTRACT_IS_TABLE does not guarantee duplicate-free results. Note that ERPConnect is not meant for mass data extraction.
+
 ### Install Z_XTRACT_IS_TABLE
 
 Follow the steps below to create a custom function module Z_XTRACT_IS_TABLE in SAP that bypasses the restrictions of the SAP standard function module (RFC_READ_TABLE):
@@ -52,8 +57,4 @@ To use the new custom function module with the *ReadTable* class, use the `SetCu
 table.SetCustomFunctionName("Z_XTRACT_IS_TABLE");
 ```
 
-!!! warning
-	**Duplicates in the target environment!**<br>
-	Extracting mass data, can cause duplicates in the target environment. 
- 	The use of Z_XTRACT_IS_TABLE does not guarantee duplicate-free results. Note that ERPConnect is not meant for mass data extraction.
-  
+
