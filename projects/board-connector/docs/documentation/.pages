@@ -6,6 +6,7 @@ nav:
     - SAP Connection: sap-connection
     - BAPI: bapi
     - Table: table
+    - Table CDC: table-cdc
     - run-extractions.md
     - Runtime Parameters: parameters
     - Access Restrictions: access-restrictions

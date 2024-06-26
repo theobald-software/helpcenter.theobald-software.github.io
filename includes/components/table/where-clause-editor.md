@@ -11,10 +11,10 @@ The WHERE clause editor offers a toolkit for those who are not familiar with the
 There are 2 options for adding criteria to the WHERE clause:
 
 - **[Add Criteria]** adds single criteria. <br>
-	- The default structure for a single criteria with static values is `[Column][Operator][Value]` e.g., *MARC~WERKS = 1000*.
+	- The default structure for a single criteria with static values is `[Table~Column][Operator][Filer-Value]` e.g., *MARC~WERKS = 1000*.
 	{% if page.meta.product != "yunio" and page.meta.componentFolder != "table-cdc" %}- The default structure for a single criteria with parameters is `[Column][Operator][Parameter]` e.g., *MARC~WERKS = [p_WERKS]*.{% endif %}
 - **[Add Criteria Group]** adds a group of criteria.
-	- The default structure for a criteria group is `([Column1][Operator1][Value1][Boolean][Column2][Operator2][Value2])` e.g., *(MARC~PSTAT = 'L' OR MARC~PSTAT = 'LB')*.
+	- The default structure for a criteria group is `([Table~Column1][Operator1][Filter-Value1][Boolean][Table~Column2][Operator2][Filter-Value2])` e.g., *(MARC~PSTAT = 'L' OR MARC~PSTAT = 'LB')*.
 
 !!! tip 
 	Combine multiple criteria and criteria groups to create complex filters e.g., 

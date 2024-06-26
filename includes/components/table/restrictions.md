@@ -4,7 +4,7 @@ Especially with older SAP releases you may encounter a few restrictions when usi
 
 - The overall width of all columns to be extracted must not exceed 512 bytes.
 - It is not possible to extract data from tables that contain one or more columns of the data type f (FLTP, floating point), DEC (decimal, e.g. for percentage) or x (RAW, LRAW).
-- Poor extraction performance with larger tables.
+- Poor extraction performance with larger tables.  Can cause also duplicates.
 - Depending on the SAP version there may be other restrictions. 
  
 When facing restrictions, install the Theobald Software custom function module [/THEO/READ_TABLE](site:documentation/setup-in-sap/custom-function-module-for-table-extraction#installation-of-theoread_table) on your SAP system. 

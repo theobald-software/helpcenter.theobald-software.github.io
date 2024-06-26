@@ -5,4 +5,5 @@ nav:
     - SAP Connection: sap-connection
     - Xtract BAPI: bapi
     - Xtract Table: table
+    - Xtract Table CDC: table-cdc
     - About this Documentation: about-this-documentation.md

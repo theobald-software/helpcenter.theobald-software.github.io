@@ -17,6 +17,7 @@ The WHERE clause text mode allows you to directly enter a WHERE clauses. {% if p
 
 ### WHERE Clause Syntax
 
+
 The WHERE Clause syntax generally uses the following structure:
 
 ``` bash
@@ -33,12 +34,10 @@ KNA1~LAND1 = 'US'
 |--------|--------|--------|
 | Enter a space before and after the equal sign |  :white_check_mark: *YEAR = '1999'* | :x: *YEAR= '1999 '*, *YEAR ='1999'* or *YEAR='1999'*|
 | Set floating point numbers in single quotation mark | :white_check_mark: *KMENG > '10.3'* |  :x: *KMENG > 10.3*|
-| Values must have the internal SAP representation:<br> :material-subdirectory-arrow-right: Date: YYYYMMDD <br> :material-subdirectory-arrow-right: Year Period: YYYYPPP <br> :material-subdirectory-arrow-right: Numbers with leading zeroes, e.g., customer numbers| <br> :white_check_mark: 19990101 <br> :white_check_mark: 1999001 <br> :white_check_mark: 0000001000 | <br> :x: 01.01.1999 <br> :x: 001.1999 <br> :x: 1000|
+| Values must use the internal SAP representation:<br> :material-subdirectory-arrow-right: Date: YYYYMMDD <br> :material-subdirectory-arrow-right: Year Period: YYYYPPP <br> :material-subdirectory-arrow-right: Numbers with leading zeroes, e.g., customer numbers| <br> :white_check_mark: 19990101 <br> :white_check_mark: 1999001 <br> :white_check_mark: 0000001000 | <br> :x: 01.01.1999 <br> :x: 001.1999 <br> :x: 1000|
 
+<!--- --8<-- [start:syntax] -->
 
-!!! note
-	The WHERE clause does not need line breaks (return key).
-	
 The following operations are supported in the WHERE clause:
 
 | Operator   |      Description     |  
@@ -56,14 +55,15 @@ The following operations are supported in the WHERE clause:
 
 For more details on the OpenSQL syntax, see [SAP Documentation: Select WHERE](https://help.sap.com/doc/abapdocu_752_index_htm/7.52/en-US/abapwhere.htm?file=abapwhere.htm) 
 
+!!! tip
+	To increase extracting performance, make sure to place the indexed fields as the first selection filter operation in the WHERE clause.
+
+<!--- --8<-- [end:syntax] -->
+
 !!! note
 	When fields with the same name exist in different tables, the field names must be formatted as [table name]~[field name], e.g., MARC~MATNR. 
 	This can be the case when extracting multiple tables.
 
-!!! tip
-	To increase extracting performance, make sure to place the indexed fields as the first selection filter operation in the WHERE clause.
-
-{% if page.meta.parent != "table-cdc" %}
 {% if page.meta.product == "xtract-universal" or page.meta.product == "board-connector" %}
 <!--- Script Expressions are not supported by Xtract IS and Xtract for Alteryx-->
 
@@ -113,4 +113,3 @@ The following statement returns all the *active* customers (rows in the table KN
 
 ![WHERE Clause Subquery](../../assets/images/documentation/components/table/table_where_sub-select.png){:class="img-responsive"}
 {% endif %}
-{% endif %} 

@@ -5,6 +5,11 @@ description: An overview and description of all table settings
 
 {% include "components/settings/open-settings.md"  %}
 
+{% include "components/settings/warning-fuba.md" %}
+
+### {{ Settings }}
+
+![Extraction-Settings](../../assets/images/documentation/components/table/extraction-settings.png)
 
 #### Package Size
 
