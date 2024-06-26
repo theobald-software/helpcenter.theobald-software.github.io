@@ -17,7 +17,7 @@ When extracting tables from older SAP releases you may encounter several restric
 
 - The overall length of all columns to be extracted must not exceed 512 bytes.
 - It is not possible to extract data from tables that contain one or more columns of the data type f (FLTP, floating point), DEC (decimal, e.g. for percentage) or x (RAW, LRAW).
-- Poor extraction performance with larger tables.
+- Poor extraction performance with larger tables. Can cause also duplicates.
 
 !!! warning  
 	**Error while converting value '\*.0' of row 1530, column 3.**<br>
@@ -51,3 +51,9 @@ To use the new custom function module with the *ReadTable* class, use the `SetCu
 ```
 table.SetCustomFunctionName("Z_XTRACT_IS_TABLE");
 ```
+
+!!! warning
+	**Duplicates in the target environment!**<br>
+	Extracting mass data, can cause duplicates in the target environment. 
+ 	The use of Z_XTRACT_IS_TABLE does not guarantee duplicate-free results. Note that ERPConnect is not meant for mass data extraction.
+  
