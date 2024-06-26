@@ -10,7 +10,7 @@ The {{ hierarchy }} {{ component }} can be used to extract Hierarchies and InfoO
 
 {% include "components/hierarchy/prerequisites.md"  %}
 
-{% include "components/xu-bc-new.md"  %}
+{% include "components/xfa-new.md"  %}
 
 {% include "components/hierarchy/define-a-hierarchy-extraction.md"  %}
 

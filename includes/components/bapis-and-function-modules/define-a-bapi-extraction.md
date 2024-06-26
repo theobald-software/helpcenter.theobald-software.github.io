@@ -9,7 +9,7 @@ The window "Function Module Lookup" opens.<br>
 3. Click **[:magnifying-glass:]** :number-2:. Search results are displayed.
 4. Select a Function Module / BAPI :number-3: and click **[OK]**. <br>
 
-The application now returns to the main window of the {{ component }}.
+The application returns to the main window of the {{ component }}.
 
 ### Define the {{ bapi }} {{ Component }}
 

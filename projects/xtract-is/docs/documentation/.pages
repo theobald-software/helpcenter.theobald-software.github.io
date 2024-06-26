@@ -4,6 +4,7 @@ nav:
     - SAP Customization: setup-in-sap
     - SAP Connection: sap-connection
     - Xtract BAPI: bapi
+    - Xtract Hierarchy: hierarchy
     - Xtract Table: table
     - Xtract Table CDC: table-cdc
     - About this Documentation: about-this-documentation.md

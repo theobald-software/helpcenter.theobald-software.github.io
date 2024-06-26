@@ -9,7 +9,7 @@
 4. Select a table :number-3: and click **[OK]**. <br>
 
 All relevant metadata information of the table is retrieved from SAP.
-The application now returns to the main window of the {{ component }}.
+The application returns to the main window of the {{ component }}.
 
 
 ### Define the {{ tableCDC }} {{ Component }}
