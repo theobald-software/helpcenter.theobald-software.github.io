@@ -51,7 +51,7 @@ When editing extraction parameters, the [URL and commandline](#url-and-commandli
 
 For more information, see [Extraction Parameters](../parameters/extraction-parameters.md).
 
-![Custom parameters](../../assets/images/xu/documentation/automation/run_extraction_param_cust.png){:class="img-responsive"}
+![Custom parameters](../../assets/images/xu/documentation/automation/xu_run_extraction_param_cust.png){:class="img-responsive"}
 
 ### URL and Commandline
 The strings displayed in **URL** and **xu.exe** are generated and update automatically when changing [extraction parameters](extraction-parameters.md).
