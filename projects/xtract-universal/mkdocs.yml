@@ -234,6 +234,7 @@ extra:
   report: Report
   variable: runtime parameter
   variables: runtime parameters
+  Variables: Runtime parameters
   extraction: extraction
   extractions: extractions
   Settings: Extraction Settings

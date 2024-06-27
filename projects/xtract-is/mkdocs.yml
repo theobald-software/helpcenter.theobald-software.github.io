@@ -233,6 +233,7 @@ extra:
   report: Xtract Report
   variable: SSIS variable
   variables: SSIS variables
+  Variables: SSIS variables
   extraction: SSIS package
   Extraction: SSIS Package
   extractions: SSIS packages
