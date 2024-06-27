@@ -7,7 +7,7 @@ This section contains information on how to set up access restrictions to the De
 There are two types of users and user groups, access can be restricted to:
 
 - Windows AD users (Kerberos authentication)
-- [custom users](user.management.md) (Basic authentication)
+- [Custom users](user.management.md) (Basic authentication)
 
 ### Authentication Between Designer and Server
 
