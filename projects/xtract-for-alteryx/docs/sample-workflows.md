@@ -56,7 +56,7 @@ Workflows that support SAP migration, e.g., from ECC to S/4HANA:
 
     ---
 
-    This workflow  uses the [Xtract Table](documentation/table/index.md) component to support an SAP migration that is done in a phased approach by extracting the data from the relevant system depending on the user input.<br>
+    This workflow  uses the [Xtract Table](documentation/table/index.md) component to support an SAP migration that is conducted in a phased approach by extracting the data from the relevant system depending on the user input.<br>
 	
 	[:material-download-circle: Download](assets/files/xfa/S4 Migration - Short-term bridge app.yxwz){ .md-button .md-button--stretch}
 
