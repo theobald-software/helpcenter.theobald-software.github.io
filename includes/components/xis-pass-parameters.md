@@ -10,11 +10,10 @@ The recommended way of parameterization is to use SSIS expressions to set *Data 
 
 For more information on property expressions, see [Microsoft Documentation: Use Property Expressions in Packages](https://learn.microsoft.com/en-us/sql/integration-services/expressions/use-property-expressions-in-packages).
 
-1. Create an SSIS package, see [Getting Started](../getting-started).
-2. Right-click the Data Flow canvas and select **Properties**. The window "Properties" opens.
-3. Add an *Expression* by clicking using **[…]**. The window "Property Expression Editor" opens.<br>
+1. Right-click the Data Flow canvas and select **Properties**. The window "Properties" opens.
+2. Add an *Expression* by clicking using **[…]**. The window "Property Expression Editor" opens.<br>
 ![Expressions](../../assets/images/xis/documentation/table/expressions.png){:class="img-reagierend"}
-4. Select a property from the drop-down list under *Property*.<br>
-5. Open the "Expression Builder" using the **[…]** button under *Expression*.
-6. Build your Expression and click **[Evaluate Expression]** to check for correct syntax.
-7. Confirm your input with **[OK]**.
+3. Select a property from the drop-down list under *Property*.<br>
+4. Open the "Expression Builder" using the **[…]** button under *Expression*.
+5. Build your Expression and click **[Evaluate Expression]** to check for correct syntax.
+6. Confirm your input with **[OK]**.

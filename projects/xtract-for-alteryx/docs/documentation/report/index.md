@@ -18,7 +18,7 @@ A report extraction is possible if the report returns a table-like structure in 
 
 {% include "components/report/general-workflow.md" %}
 
-{% include "components/xu-bc-new.md"  %}
+{% include "components/xfa-new.md"  %}
 
 {% include "components/report/define-a-report-extraction.md" %}
 

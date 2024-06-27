@@ -29,6 +29,7 @@ Filter values in the WHERE clause must use the internal SAP representation:
 
 {% include "components/table/where-clause-editor.md" %}
 
+{% include "components/table/xis-ssis-where-clause.md" %}
 
 **** 
 #### Related Links

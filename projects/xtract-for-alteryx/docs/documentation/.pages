@@ -5,5 +5,6 @@ nav:
     - SAP Connection: sap-connection
     - Xtract BAPI: bapi
     - Xtract Hierarchy: hierarchy
+    - Xtract Report: report
     - Xtract Table: table
     - About this Documentation: about-this-documentation.md

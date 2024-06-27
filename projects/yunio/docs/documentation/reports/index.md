@@ -7,15 +7,15 @@ description: Information about the integration type Report
 This page shows how to use the {{ report }} {{ component }}.<br>
 The {{ report }} {{ component }} can be used to extracts data from ABAP reports and SAP transactions.
 
-{% include "/components/abap-reports/about-reports.md" %}
+{% include "/components/report/about-reports.md" %}
 
 ### General Workflow
 The following graphic shows the general workflow of setting up report services with yunIO:<br>
 ![Report-Workflow](../../assets/images/yunio/documentation/report-general-workflow-yunIO.png){:class="img-responsive" width="400px"}
 
-{% include "components/abap-reports/prerequisites.md" %}
+{% include "components/report/prerequisites.md" %}
 
-{% include "/components/abap-reports/auth-warning.md" %}
+{% include "/components/report/auth-warning.md" %}
 
 ### Look Up a Report
 
@@ -56,5 +56,5 @@ Follow the steps below to create a simple service that extracts the SAP ABAP rep
 ![report-response.png](../../assets/images/yunio/documentation/report-response.png){:class="img-responsive"}
 
 
-{% include "/components/abap-reports/support-disclaimer.md" %}
+{% include "/components/report/support-disclaimer.md" %}
 

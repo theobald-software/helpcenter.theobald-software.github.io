@@ -1,6 +1,6 @@
 ---
-title: Extraction Settings
-description: An overview and description of all table settings
+title: Settings
+description: An overview and description of all Hierarchy settings
 ---
 
 {% include "components/settings/open-settings.md"  %}
