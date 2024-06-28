@@ -66,7 +66,7 @@ Click **[Detect columns]** to execute the report based on the selected variant o
 The section *Selection Parameters* corresponds to the report’s input screen in SAP. <br>
 Some selection fields only have a technical name and no description. 
 To understand which field corresponds to a field in SAP, compare the results with the report’s input screen in SAP. <br>
-Click a selection field and press function key ++f1++ to display the technical name of a selection field.
+Click a selection field and press ++f1++ to display the technical name of a selection field.
 
 !!! note
     If a selection parameter is left empty, the report uses the value defined in the report.
