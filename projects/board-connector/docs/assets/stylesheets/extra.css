@@ -4,14 +4,13 @@
   --md-primary-fg-color--dark:  #002448;
   --md-accent-fg-color: #004990;
   --md-color-accent: #004990;
-  
+
   /* Theo red
   --md-primary-fg-color:        #FF003C;
   --md-primary-fg-color--light: #ED2939;
   --md-primary-fg-color--dark:  #7a1b21;
   --md-accent-fg-color: FF003C;
   */
-
 
 /* right navigation (toc): title */	
 .md-nav__title {
@@ -63,6 +62,9 @@
           mask-image: var(--md-admonition-icon--api);
 }
 
+:root>* {
+--md-typeset-a-color: #0076BE;
+}
 
 /* minimize space between banner and content on landing pages*/
 .md-typeset .grid {
