@@ -9,11 +9,11 @@
 4. Select a table :number-3: and click **[OK]**. <br>
 
 All relevant metadata information of the table is retrieved from SAP.
-The application now returns to the main window of the {{ component }}.
+The application returns to the main window of the {{ component }}.
 
 ### Define the {{ table }} {{ Component }}
 
-The Table {{ component }} offers the following options for table extractions:
+The {{ table }} {{ component }} offers the following options for table extractions:
 
 1. Select the columns you want to extract. By default all columns are selected. Deselect the columns you do not want to extract.<br>
 ![Table-Form](../../assets/images/{{ abbr }}/documentation/table/table_fields_filter.png){:class="img-responsive"}

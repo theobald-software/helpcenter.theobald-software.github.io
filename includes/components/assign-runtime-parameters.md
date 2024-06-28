@@ -37,9 +37,9 @@ If no icon is available, [create a runtime parameter](#create-runtime-parameters
 Follow the steps below to assign the runtime parameters to selections.
 
 1. In the main window of the {{ component }}, click the **[Edit]** button next to the selection you want to parameterize. 
-The window "Edit Selections" opens, see {% if page.meta.parent == "odp"%}[Selections and Filters](#link){% elif page.meta.parent == "deltaq"%}[Edit Selections](#link){% else %}[Edit Selections](variants-and-selections.md#edit-selections){% endif %}.<br> 
-2. Click the icon button next to the input field to switch from static values (:runtime-parameters-static:) to {{ variables }} (:runtime-parameters-dynamic:).
-If no icon is available, [create a runtime parameter](#create-runtime-parameters).<br>
+The window "Edit Selections" opens, see {% if page.meta.componentFolder == "odp"%}[Selections and Filters](#link){% elif page.meta.componentFolder == "deltaq"%}[Edit Selections](#link){% else %}[Edit Selections](variants-and-selections.md#edit-selections){% endif %}.<br> 
+2. Click the icon button next to the input field to switch between static values (:runtime-parameters-static:) and {{ variables }} (:runtime-parameters-dynamic:).
+If no icon button is available, [create a runtime parameter](#create-runtime-parameters).<br>
 ![Selection With Parameters](../../assets/images/documentation/components/runtime-parameters/runtime-parameters-in-selections.png){:class="img-responsive"}
 3. Select a runtime parameter from the dropdown-list.
 4. Click **[OK]** to confirm the input.

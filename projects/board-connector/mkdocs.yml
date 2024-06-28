@@ -227,7 +227,7 @@ extra:
   bapi: BAPI
   bwcube: BWCube
   bwloader:  
-  hierarchy: Hierarchy
+  hierarchy: BW Hierarchy
   deltaq: DeltaQ
   odp: ODP
   ohs: OHS
@@ -235,6 +235,7 @@ extra:
   report: Report
   variable: runtime parameter
   variables: runtime parameters
+  Variables: Runtime parameters
   extraction: extraction
   extractions: extractions
   settings: extraction settings

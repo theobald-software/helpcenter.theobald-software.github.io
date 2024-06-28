@@ -5,6 +5,8 @@ nav:
     - designer.md
     - SAP Connection: sap-connection
     - BAPI: bapi
+    - BW Hierarchy: hierarchy
+    - Report: report
     - Table: table
     - Table CDC: table-cdc
     - run-extractions.md
