@@ -1,7 +1,7 @@
 
 
 ### Look up a Report or Transaction
-1. In the main window of the {{ component }}, click **[:magnifying-glass:]** to add a report. The window “Report Lookup” opens.<br>
+1. In the main window of the {{ component }}, click **[:magnifying-glass:]**. The window “Report Lookup” opens.<br>
 ![Look-Up-Report](../../assets/images/{{ abbr }}/documentation/report/report_main-window_add.png){:class="img-responsive"}	
 2. In the field **Report Name**, enter the name of a report to extract :number-1:. Use wildcards (*) if needed.
 Alternatively, select **TCODE** to look up SAP Transaction codes. <br>	
@@ -18,7 +18,9 @@ The application now returns to the main window of the component.
 
 ### Define the {{ report }}  {{ Component }}
 
-1. Select a variant from the drop-down-list *Variant*. For more information, see [Choose a Variant](variants-and-selections.md/#choose-a-variant).<br>
+The {{ report }} {{ component }} offers the following options for report extractions:
+
+1. If the report has variants, select a variant from the drop-down-list *Variant*. For more information, see [Choose a Variant](variants-and-selections.md/#choose-a-variant).<br>
 ![Variants-Section](../../assets/images/{{ abbr }}/documentation/{{ page.meta.componentFolder }}/variant.png){:class="img-responsive"}
 2. In the section *Selection Screen*, edit a selection criterion you want to change or dynamize :number-2:. For more information, see [Edit Selections](variants-and-selections.md/#edit-selections).<br>
 ![Sections](../../assets/images/documentation/components/{{ page.meta.componentFolder }}/selections.png)
@@ -32,7 +34,7 @@ When automatic column detection is not possible, the column names, widths and of
 7. Check the [{{ Settings }}](settings.md){% if page.meta.product == "xtract-universal" or page.meta.product == "board-connector"%} and the [General Settings](general-settings.md){% endif %} before running the extraction.
 8. Click **[OK]** to save the {{ component }}.
 
-You can now run the {{ extraction }}{% if page.meta.product == "xtract-universal" %}, see [Execute and Automate Extractions](../execute-and-automate-extractions/index.md){% endif %}.
+You can now run the {{ extraction }}{% if page.meta.product == "xtract-universal" %}, see [Execute and Automate Extractions](../execute-and-automate/index.md){% endif %}.
 
 {% if page.meta.product == "xtract-universal" %}
 

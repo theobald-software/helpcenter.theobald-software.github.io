@@ -84,7 +84,7 @@ After the standalone Designer is downloaded, unpack the files from the `.zip` fo
 The folder contains two executable files:
 
 - `XtractDesigner.exe` starts the Designer
-- `xu.exe` is the command line tool used for executing extractions, see [Call via Commandline](../execute-and-automate-extractions/call-via-commandline.md)
+- `xu.exe` is the command line tool used for executing extractions, see [Call via Commandline](../execute-and-automate/call-via-commandline.md)
 
 Use the `XtractDesigner.exe` file to start the Designer. 
 Before you connect to a central Xtract Universal Server, make sure you have access rights to the server and repository, see [Access Management](../security/access-management.md).

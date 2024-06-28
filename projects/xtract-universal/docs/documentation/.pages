@@ -6,6 +6,7 @@ nav:
     - SAP Connection: sap-connection
     - BAPI: bapi
     - BW Hierarchy: hierarchy
+    - Query: query
     - Report: report
     - Table: table
     - Table CDC: table-cdc

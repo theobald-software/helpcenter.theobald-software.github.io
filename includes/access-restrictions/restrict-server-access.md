@@ -69,7 +69,7 @@ For more information, see [Restrict Designer Access](#link). <br>
 {% if page.meta.product == "xtract-universal" %}
 
 !!! note
-	For information on how to call an extraction with Basic Authentication using the *xu.exe*, see [Basic Authentication via Commandline](../execute-and-automate-extractions/call-via-commandline.md#basic-authentication-via-commandline).
+	For information on how to call an extraction with Basic Authentication using the *xu.exe*, see [Basic Authentication via Commandline](../execute-and-automate/call-via-commandline.md#basic-authentication-via-commandline).
 
 {% endif %}
 

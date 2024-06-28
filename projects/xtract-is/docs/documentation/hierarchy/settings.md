@@ -5,7 +5,7 @@ description: An overview and description of all Hierarchy settings
 
 {% include "components/settings/open-settings.md"  %}
 
-### {{ Settings }}
+### Extraction Settings
 
 ![Extraction-Settings](../../assets/images/documentation/components/hierarchy/extraction-settings.png)
 

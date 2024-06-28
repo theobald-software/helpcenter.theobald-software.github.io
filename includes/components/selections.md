@@ -20,14 +20,14 @@ The *Selection Screen* in the main window of the component corresponds to the in
 
 Follow the steps below to edit selection fields and filter data:
 
-1. Click **[Edit]** next to the selection field you want to edit. The window “Edit selection” opens.<br>
+1. In the subsection *Selection Screen*, click **[Edit]** next to the selection field you want to edit. The window “Edit selection” opens.<br>
 ![Sections](../../assets/images/documentation/components/{{ page.meta.componentFolder }}/selections.png)
 2. Add one or more of the following filter types:<br>
 	- Click **[Single]** to compare the data to a single specified value.<br>
 	- Click **[Range]** to check if the data is (not) within a specified range of values.
 	{% if page.meta.product != "xtract-is" %}- Click **[List]** to check if the data is (not) part of a specified list of values. {% endif %}
 3. In the column **Sign** :number-1:, select *Include* to add the filtered data to the output or select *Exclude* to remove the filtered data from the output.<br>
-![edit-selections](../../assets/images/documentation/components/{{ page.meta.componentFolder }}/edit-selections.png){:class="img-responsive"}
+![edit-selections](../../assets/images/documentation/components/edit-selections.png){:class="img-responsive"}
 4. Select an operator in the column **Option** :number-2:. The operator filters data according to the table below.
 
 	| Operator |  Description    |  

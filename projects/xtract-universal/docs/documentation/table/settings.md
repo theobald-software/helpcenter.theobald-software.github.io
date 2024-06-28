@@ -7,7 +7,7 @@ description: An overview and description of all table settings
 
 {% include "components/settings/warning-fuba.md" %}
 
-### {{ Settings }}
+### Extraction Settings
 
 ![Extraction-Settings](../../assets/images/documentation/components/table/extraction-settings.png)
 
