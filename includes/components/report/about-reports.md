@@ -6,4 +6,4 @@ SAP offers predefined standard reports that cover the basic needs of customers.
 They can be executed via transaction codes. 
 
 !!! tip
-	Use transaction code SAP1 to get a list of all reports for all modules
+	Use transaction code SAP1 to get a list of all reports for all modules.

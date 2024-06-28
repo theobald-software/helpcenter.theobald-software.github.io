@@ -8,7 +8,7 @@ This page shows how to parameterize the {{ report }} {{ component }} using SSIS 
 ### Parameterization using SSIS Variables
 
 You can use SSIS variables for selections.<br>
-Available SSIS variables are listed in the selection settings when parameter input is active :number-1:, see [Edit Selections](variants-and-selections.md#edit-selections).<br> 
+Available SSIS variables are listed in the selection settings when parameter input is active, see [Edit Selections](variants-and-selections.md#edit-selections).<br> 
 
 !!! note 
 	The {{ report }} {{ component }} does not support variables of the data types *DateTime* and *DBNull*. 
@@ -22,7 +22,7 @@ List of *Data Flow Properties* that can be parameterized:
 
 |Property|Description|
 |:----|:----|
-| *[Xtract Report].[Variant]*| See [Variants and Selections](variants-and-selections.md#choose-a-variant).|
+| *[Xtract Report].[Variant]*| Corresponds to the settings [Variants](variants-and-selections.md#choose-a-variant) in the {{ r }} {{ component }}.|
 | *[Xtract Report].[BatchJobDestination]* | Corresponds to the setting [Spool Destination](settings.md/#spool-destination) in the {{ report }} {{ component }}.|
 | *[Xtract Report].[BatchJobName]*        | Corresponds to the setting [Background Job Name](settings.md/#background-job-name) in the {{ report }} {{ component }}.|
 | *[Xtract Report].[BatchJobTimeout]*     | Corresponds to the setting [Background Job Timeout](settings.md/#background-job-timeout) in the {{ report }} {{ component }}.|
@@ -39,7 +39,7 @@ The *Custom Properties* of the {{ report }} {{ component }} are displayed in the
 
 List of the relevant *Custom Properties*:
 
-|Property|Comment|
+|Property|Description|
 |:----|:----|
 | *BatchJobDestination* | Corresponds to the setting [Spool Destination](settings.md/#spool-destination) in the {{ report }} {{ component }}.|
 | *BatchJobName* | Corresponds to the setting [Background Job Name](settings.md/#background-job-name) in the {{ report }} {{ component }}.|
