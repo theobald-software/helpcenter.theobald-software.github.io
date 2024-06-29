@@ -1,11 +1,12 @@
 
+{% if page.meta.componentFolder != "ohs" %}
 ####ColumnNameStyle
 
 - *Code*: the SAP technical column name is used as column name in the output, e.g., MAKTX.
 - *PrefixedCode*: the SAP technical column name is prefixed by SAP object name and the tilde character, e.g., MAKT~MAKTX.
 - *CodeAndText*: the SAP technical column name and the SAP description separated by an underscore are used as column name in the output, e.g., MAKTX_Material Description (Short Text).
 - *TextAndCode*: the SAP description and the SAP technical column name description separated by an underscore are used as column name in the destination e.g., Material Description (Short Text)_MAKTX.
-
+{% endif %}
 
 #### ConvertsDates
 When this property is set to *True* (default) SAP date fields (YYYYMMDD) assume the SSIS pipeline type DT_DBDATE instead of DT_WSTR. 
