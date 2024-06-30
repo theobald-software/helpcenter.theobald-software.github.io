@@ -1,5 +1,5 @@
 ---
-title: Open Hub Services (OHS)
+title: Xtract OHS
 description: Information about the extraction type Open Hub Services
 icon: component/ohs
 ---

@@ -1,5 +1,5 @@
 ---
-title: BAPI
+title: Xtract BAPI
 icon: component/bapi
 description: Information about the extraction type Function Module / BAPI
 ---

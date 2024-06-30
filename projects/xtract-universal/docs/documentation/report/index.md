@@ -1,6 +1,6 @@
 ---
 title: Report
-description: Reports
+description: How to use the extraction type Report
 icon: component/report
 ---
 

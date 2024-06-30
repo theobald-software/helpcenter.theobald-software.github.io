@@ -7,7 +7,7 @@
 	Do not define selections when using the update mode Delta Update, because the selections of the Init mode are automatically applied.
 
 {% endif %} 
-{% if  page.meta.componentFolder != "odp" %}
+{% if  page.meta.componentFolder != "odp" and page.meta.componentFolder != "deltaq"%}
 
 The *Selection Screen* in the main window of the component corresponds to the input screen in SAP.
 
@@ -20,7 +20,7 @@ The *Selection Screen* in the main window of the component corresponds to the in
 
 Follow the steps below to edit selection fields and filter data:
 
-1. In the subsection *Selection Screen*, click **[Edit]** next to the selection field you want to edit. The window “Edit selection” opens.<br>
+1. In the subsection {% if page.meta.componentFolder == "deltaq" %}*OLTP Fields*, click **Edit** {% else %}*Selection Screen*, click **[Edit]** {% endif %}next to the field you want to edit. The window “Edit selection” opens.<br>
 ![Sections](../../assets/images/documentation/components/{{ page.meta.componentFolder }}/selections.png)
 2. Add one or more of the following filter types:<br>
 	- Click **[Single]** to compare the data to a single specified value.<br>

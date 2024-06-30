@@ -1,5 +1,5 @@
 ---
-title: SAP Query
+title: Xtract Query
 description: SAP Queries
 icon: component/query
 ---

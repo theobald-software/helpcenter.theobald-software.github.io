@@ -6,6 +6,7 @@ nav:
     - SAP Connection: sap-connection
     - BAPI: bapi
     - BW Hierarchy: hierarchy
+    - DeltaQ: deltaq
     - Open Hub Services: ohs
     - Query: query
     - Report: report

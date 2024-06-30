@@ -1,5 +1,5 @@
 ---
-title: BW Hierarchy
+title: Xtract Hierarchy
 icon: component/hierarchy
 description: Information about the extraction type Hierarchy
 ---

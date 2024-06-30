@@ -1,5 +1,5 @@
 ---
-title: Report
+title: Xtract Report
 description: Reports
 icon: component/report
 ---

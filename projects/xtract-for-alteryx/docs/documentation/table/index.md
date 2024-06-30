@@ -1,5 +1,5 @@
 ---
-title: Table
+title: Xtract Table
 icon: component/table
 description: Information about the extraction type Table
 ---

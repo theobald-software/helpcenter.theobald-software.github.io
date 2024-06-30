@@ -1,5 +1,5 @@
 ---
-title: Table CDC
+title: Xtract Table CDC
 icon: component/table-cdc
 description: Information about the extraction type Table
 ---

@@ -12,7 +12,7 @@
 4. Click **[:magnifying-glass:]**. Search results are displayed :number-2:.
 5. Select an OHS destination and click **[OK]** to confirm.
 
-The application now returns to the main window of the component.
+The application now returns to the main window of the {{ component }}.
 
 ### Define the {{ ohs }}  {{ Component }}
 
