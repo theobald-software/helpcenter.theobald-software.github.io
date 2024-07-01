@@ -31,7 +31,7 @@ The {{ deltaq }} {{ component }} offers the following options for DataSource ext
 === "{{ deltaq }} with Extractors"
 	1. Navigate to **Gateway** and click **[:magnifying-glass:]** :number-1: to look up an RFC destination. 
 	For more information, see [DeltaQ Customizing: Gateway](deltaq-customization.md/#gateway).<br>
-	![DeltaQ2](../../assets/images/documentation/components/deltaq/DeltaQ2.png){:class="img-responsive"}
+	![DeltaQ2](../../assets/images/{{ abbr }}/documentation/deltaq/DeltaQ2.png){:class="img-responsive"}
 	2. Navigate to **Logical Destination** and click **[:magnifying-glass:]** :number-2: to look up a logical RFC target system. 
 	For more information, see [DeltaQ Customizing: Logical Destination](deltaq-customization.md/#logical-destination).
 	3. Click **Customizing Check** :number-3: to validate the DeltaQ Customizing on the SAP system.
@@ -41,7 +41,7 @@ The {{ deltaq }} {{ component }} offers the following options for DataSource ext
 	5. Select the items you want to extract.<br>
 	![DeltaQ-output](../../assets/images/documentation/components/deltaq/DeltaQ-output.png){:class="img-responsive"}
 	6. Optional: click the **Edit** option next to an item to [filter the data](selections.md).
-	7. Click **[Run]** to testrun the extraction and validate your settings.
+	{% if page.meta.product != "xtract-is" %}7. Click **[Run]** to testrun the extraction and validate your settings.{% endif %}
 	8. Click **[Activate]** to activate the extraction in SAP. After a successful activation, a corresponding status message opens:<br>
 	![Deltaq-System-Parameters-Info](../../assets/images/documentation/components/deltaq/Deltaq-System-Parameters-Info.png){:class="img-responsive"}
 			
@@ -55,7 +55,7 @@ The {{ deltaq }} {{ component }} offers the following options for DataSource ext
 === "{{ deltaq }} with Hierarchies"
 	1. Navigate to **Gateway** and click **[:magnifying-glass:]** :number-1: to look up an RFC destination. 
 	For more information, see [DeltaQ Customizing: Gateway](deltaq-customization.md/#gateway).<br>
-	![DeltaQ2](../../assets/images/documentation/components/deltaq/DeltaQ2.png){:class="img-responsive"}
+	![DeltaQ2](../../assets/images/{{ abbr }}/documentation/deltaq/DeltaQ2.png){:class="img-responsive"}
 	2. Navigate to **Logical Destination** and click **[:magnifying-glass:]** :number-2: to look up a logical RFC target system. 
 	For more information, see [DeltaQ Customizing: Logical Destination](deltaq-customization.md/#logical-destination).
 	3. Click **Customizing Check** :number-3: to validate the DeltaQ Customizing on the SAP system.
@@ -66,15 +66,13 @@ The {{ deltaq }} {{ component }} offers the following options for DataSource ext
 	![DeltaQ-output](../../assets/images/documentation/components/deltaq/DeltaQ-output.png){:class="img-responsive"}
 	6. Optional: click the **Edit** option next to an item to [filter the data](selections.md).
 	7. Optional: click {{ settingsBtn }} to set the language and output format of the Hierarchy, see [{{ settings }}](settings.md). 
-	8. Check the [{{ Settings }}](settings.md){% if page.meta.product == "xtract-universal" or page.meta.product == "board-connector"%} and the [General Settings](general-settings.md){% endif %} before running the extraction.
-	9. Click **[Run]** to testrun the extraction and validate your settings.
-	
-		!!! tip
-			Unlike attributes and transactions, Hierarchies do not have to be activated.
-		
+	{% if page.meta.product != "xtract-is" %}8. Check the [{{ Settings }}](settings.md){% if page.meta.product == "xtract-universal" or page.meta.product == "board-connector"%} and the [General Settings](general-settings.md){% endif %} before running the extraction.
+	9. Click **[Run]** to testrun the extraction and validate your settings.{% endif %}
 	10. Click **[OK]** to save the {{ component }}.
-
-
+	
+	!!! tip
+		Unlike attributes and transactions, Hierarchies do not have to be activated.
+		
 You can now run the {{ extraction }}{% if page.meta.product == "xtract-universal" %}, see [Execute and Automate Extractions](../execute-and-automate/index.md){% endif %}.
 
 ### Execute DeltaQ in Parallel

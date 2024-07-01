@@ -8,7 +8,11 @@ The {{ deltaq }} settings consist of the following tabs:
 
 ## Base Settings
 
+{% if page.meta.product == "xtract-is" %}
+![Extraction-Settings](../../assets/images/xis/documentation/deltaq/settings-base-xis.png)
+{% else %}
 ![Extraction-Settings](../../assets/images/documentation/components/deltaq/settings-base.png)
+{% endif %}
 
 ### Transfer Mode
 
@@ -19,22 +23,22 @@ Switch to *IDoc* to monitor the raw data packages in the transaction WE02 (IDoc-
 
 ### Convert Dates
 
-#### Replace year 0 with
+#### Min Date
 
 Converts the SAP date 00000000 to the entered value. NULL is supported as a value.
 
-#### Replace year 9999 with
+#### Max Date
 
 Converts the SAP date 9999XXXX to the entered value. NULL is supported as a value.
 
-#### Replace invalid year with
+#### Replace invalid date with
 
 In case of no convertable date values you have to enter a default date value into the textbox. 
 Every invalid value is converted into this value.
 
 ## Misc. Settings
 
-![settings-misc](./../assets/images/documentation/components/deltaq/settings-misc.png){:class="img-responsive"}
+![settings-misc](../../assets/images/xis/documentation/deltaq/settings-misc-xis.png){:class="img-responsive"}
 
 #### Update Mode Variable
 
@@ -93,9 +97,13 @@ Enter a time period (in seconds). The timeout applies when an extraction finishe
 
 The following settings only apply to Hierarchy extractions.
 
+{% if page.meta.product == "xtract-is" %}
+![Extraction-Settings](../../assets/images/xis/documentation/deltaq/settings-hierarchy-xis.png)
+{% else %}
 ![Extraction-Settings](../../assets/images/documentation/components/deltaq/settings-hierarchy.png)
 
 ### Extraction
+{% endif %}
 
 #### Language
 Enter the language of the Hierarchy, e.g., ‘E’ or ‘D’.
@@ -105,3 +113,8 @@ Enter the name of the Hierarchy.
 
 #### Hierarchy Class
 Enter the class of the Hierarchy.
+
+{% if page.meta.product == "xtract-is" %}
+#### Hierarchy Version
+Enter the version of the Hierarchy.
+{% endif %}

@@ -7,8 +7,8 @@ This page shows how to parameterize the {{ query }} {{ component }} using SSIS v
 
 ### Parameterization using SSIS Variables
 
-You can use SSIS variables for selections.<br>
-Available SSIS variables are listed in the selection settings when parameter input is active, see [Edit Selections](variants-and-selections.md#edit-selections).<br> 
+SSIS variables store values that an SQL Server Integration Services package and its containers, tasks, and event handlers can use at runtime.<br> You can use SSIS variables for selections.
+Available SSIS variables are listed in the selection settings when parameter input (:runtime-parameters-dynamic:) is selected, see [Edit Selections](variants-and-selections.md#edit-selections).<br> 
 
 {% include "components/xis-pass-parameters.md" %}
 

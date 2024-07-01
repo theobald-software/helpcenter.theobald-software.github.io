@@ -4,6 +4,7 @@ nav:
     - SAP Customization: setup-in-sap
     - SAP Connection: sap-connection
     - Xtract BAPI: bapi
+    - Xtract DeltaQ: deltaq
     - Xtract Hierarchy: hierarchy
     - Xtract OHS: ohs
     - Xtract Query: query
