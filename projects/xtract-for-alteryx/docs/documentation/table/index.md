@@ -22,5 +22,5 @@ The {{ table }} {{ component }} can be used to extract data from SAP Tables and 
 ****
 #### Related Links
 - [Sample Workflows: Xtract Table](../../sample-workflows.md#xtract-table)
-- [Knowledge Base Articles: Xtract Table](../../knowledge-base.md#xtract-table)
+- [Knowledge Base Articles: Xtract Table](../../knowledge-base/index.md#xtract-table)
 
