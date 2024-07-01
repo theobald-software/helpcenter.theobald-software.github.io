@@ -28,7 +28,7 @@ hide:
 - [Create a Client PSE to connect to SAP Cloud Systems](create-personal-security-environment.md)
 - [Enable Secure Network Communication (SNC) via X.509 certificate](enable-snc-using-pse-file.md)
 - [Import an SAP Transport Request](import-an-sap-transport-request.md)
-- [Register an RFC Server in SAP Releases with Kernel Release 720 and higher](register-rfc-server-in-sap-releases-in-kernel-release-720-and-higher.md)
+- [Register an RFC Server in SAP with Kernel Release 720 and higher](register-rfc-server-in-sap-releases-in-kernel-release-720-and-higher.md)
 - [Supported SAP S/4HANA Versions](supported-sap-and-hana-versions.md)
 
 </div>
@@ -52,7 +52,8 @@ hide:
 
 <div class="mdx-columns" markdown>
 
-- [Register an RFC Server in SAP Releases with Kernel Release 720 and higher](register-rfc-server-in-sap-releases-in-kernel-release-720-and-higher.md)
+- [Create Generic DataSources](create-generic-datasource-using-function-module-and-timestamps.md)
+- [Register an RFC Server in SAP with Kernel Release 720 and higher](register-rfc-server-in-sap-releases-in-kernel-release-720-and-higher.md)
 - [SNC Authentication for DeltaQ and OHS](snc-authentication-for-deltaq.md)
 
 </div>

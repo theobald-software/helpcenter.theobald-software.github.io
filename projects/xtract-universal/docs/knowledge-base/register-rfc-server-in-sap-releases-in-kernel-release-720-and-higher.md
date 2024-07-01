@@ -1,5 +1,5 @@
 ---
-title: Register an RFC Server in SAP Releases with Kernel Release 720 and higher
+title: Register an RFC Server in SAP with Kernel Release 720 and higher
 description: Registering RFC Server in SAP Releases in Kernel Release 720 and higher
 ---
 

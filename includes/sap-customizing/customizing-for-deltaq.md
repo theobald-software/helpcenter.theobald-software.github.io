@@ -74,7 +74,7 @@ I_RLOGSYS | XTRACT01
 !!! note
 	Registering an RFC Server in SAP Releases only applies to SAP kernel version 720 and higher.
 
-Follow the instructions in the [Knowledge Base Article: Register an RFC Server in SAP Releases with Kernel Release 720 and higher](../../knowledge-base/register-rfc-server-in-sap-releases-in-kernel-release-720-and-higher.md).
+Follow the instructions in the [Knowledge Base Article: Register an RFC Server in SAP with Kernel Release 720 and higher](../../knowledge-base/register-rfc-server-in-sap-releases-in-kernel-release-720-and-higher.md).
 
 
 
