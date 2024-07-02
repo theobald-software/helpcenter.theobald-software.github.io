@@ -38,7 +38,7 @@ Follow the steps below to assign the runtime parameters to variables or dimensio
 
 === "Variables"
 	1. In the main window of the {{ component }}, click **[Edit Variables]**. The window "Edit Selections" opens.
-	2. Add a filter to the variable, see [Variables](variables.md/#edit-variables).
+	2. Add a filter to the variable, see [Variables](variables-and-filters.md/#edit-variables).
 	2. Click the icon button next to the input field to switch between static values (:runtime-parameters-static:) and {{ variables }} (:runtime-parameters-dynamic:).
 	If no icon button is available, [create a runtime parameter](#create-runtime-parameters).<br>
 	![Selection With Parameters](../../assets/images/documentation/components/bwcube/parameters.png){:class="img-responsive"}
@@ -48,7 +48,7 @@ Follow the steps below to assign the runtime parameters to variables or dimensio
 === "Dimension Filters"
 	1. In the main window of the {{ component }}, right-click the dimension you want to parameterize.
 	2. Click **Edit Filters**. The window "Edit Selections" opens. 
-	3. Add a filter for the dimension, see [Dimension Filter](#link).
+	3. Add a filter for the dimension, see [Dimension Filter](variables-and-filters.md/#set-dimension-filters).
 	4. Click the icon button next to the input field to switch between static values (:runtime-parameters-static:) and {{ variables }} (:runtime-parameters-dynamic:).
 	If no icon button is available, [create a runtime parameter](#create-runtime-parameters).<br>
 	![Selection With Parameters](../../assets/images/documentation/components/runtime-parameters/runtime-parameters-in-selections.png){:class="img-responsive"}
