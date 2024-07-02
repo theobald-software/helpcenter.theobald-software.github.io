@@ -49,7 +49,7 @@ The {{ deltaq }} {{ component }} offers the following options for DataSource ext
 			The activation is only required for the update modes *Delta*, *Full* or *Init*.
 			Do not activate the extraction for the *Delta Update* mode. 
 			
-	7. Check the [{{ Settings }}](settings.md){% if page.meta.product == "xtract-universal" or page.meta.product == "board-connector"%} and the [General Settings](general-settings.md){% endif %} before running the extraction.
+	7. Check the [{{ Settings }}](settings.md){% if page.meta.product == "xtract-universal" or page.meta.product == "board-connector"%} and the [General Settings](general-settings.md){% endif %} before running the {{ extraction }}.
 	8. Click **[OK]** to save the {{ component }}.
 
 === "{{ deltaq }} with Hierarchies"
@@ -66,7 +66,7 @@ The {{ deltaq }} {{ component }} offers the following options for DataSource ext
 	![DeltaQ-output](../../assets/images/documentation/components/deltaq/DeltaQ-output.png){:class="img-responsive"}
 	6. Optional: click the **Edit** option next to an item to [filter the data](selections.md).
 	7. Optional: click {{ settingsBtn }} to set the language and output format of the Hierarchy, see [{{ settings }}](settings.md). 
-	{% if page.meta.product != "xtract-is" %}8. Check the [{{ Settings }}](settings.md){% if page.meta.product == "xtract-universal" or page.meta.product == "board-connector"%} and the [General Settings](general-settings.md){% endif %} before running the extraction.
+	{% if page.meta.product != "xtract-is" %}8. Check the [{{ Settings }}](settings.md){% if page.meta.product == "xtract-universal" or page.meta.product == "board-connector"%} and the [General Settings](general-settings.md){% endif %} before running the {{ extraction }}.
 	9. Click **[Run]** to testrun the extraction and validate your settings.{% endif %}
 	10. Click **[OK]** to save the {{ component }}.
 	

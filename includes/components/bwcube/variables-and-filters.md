@@ -35,18 +35,22 @@ Depending on the type of BEx variable (single value, multiple value, interval or
 	|(not) between | True if data values do (not) lie between the values of operand 1 and operand 2. |
 	| elements equal | True if data values are part of operand 1. This option is only available for type *List*. |
 	
-5. Enter values directly into the input fields **Low** and **High** or assign existing {% if page.meta.product != "xtract-is" %} [{{ variables }}](edit-runtime-parameters.md) {% else %} {{ variables }} {% endif %} to the selection fields :number-6:.
-When {{ variables }} are available, you can use the icon button inside the input field to switch between static values (:runtime-parameters-static:) and {{ variables }}(:runtime-parameters-dynamic:).
+5. In the column **Value**, enter values directly into the input fields **Low** and **High**, assign existing {% if page.meta.product != "xtract-is" %} [{{ variables }}](edit-runtime-parameters.md) {% else %} {{ variables }} {% endif %} or look up pre-defined values in SAP.
+	- :runtime-parameters-static: - Static values: Enter values directly into the Low and High input fields. 
+	- :runtime-parameters-dynamic: - {{ Variables }}: Select an existing runtime parameter from the drop-down list.
+	- :magnifying-glass: - Pre-defined values: If available, select pre-defined values from SAP:<br>
+	![selections](../../assets/images/documentation/components/bwcube/query-var.png){:class="img-responsive"}
 6. Click **[OK]** to confirm your input.
 7. Click {{ previewBtn }} in the main window of the component to check the result of the filter. <br>
 If {{ variables }} are defined, you are prompted to populate the parameters with actual values.
 
 
 ### Set Dimension Filters 
- 
+
+Each dimension of a BEx Query or an InfoCube offers the possibility to set a filter to execute the MDX statement in BW using the selected filter values.
 Follow the steps below to create dimension filters in the {{ bwcube }} {{ component }}.
 
-1. Right-click a dimension to open the context menu.<br>
+1. In the tree structure of the {{ component }}, right-click a dimension to open the context menu.<br>
 ![Query Filter](../../assets/images/documentation/components/bwcube/cube-query-filter.png){:class="img-responsive"}
 2. Click **[Edit Filter]**. The window "Edit Selections" opens. 
 3. Add one or more of the following filter types:<br>
@@ -55,7 +59,7 @@ Follow the steps below to create dimension filters in the {{ bwcube }} {{ compon
 	{% if page.meta.product != "xtract-is" %}- Click **[List]** to check if the data is (not) part of a specified list of values. {% endif %}
 4. In the column **Sign** :number-1:, select *Include* to add the filtered data to the output or select *Exclude* to remove the filtered data from the output.<br>
 ![edit-selections](../../assets/images/documentation/components/edit-selections.png){:class="img-responsive"}
-5. Select an operator in the column **Option** :number-2:. The operator filters data according to the table below.
+5. In the column **Option**, select an operator :number-2:. The operator filters data according to the table below.
 	
 	| Operator |  Description    |  
 	|:---------|:-------------|
@@ -68,8 +72,11 @@ Follow the steps below to create dimension filters in the {{ bwcube }} {{ compon
 	|(not) between | True if data values do (not) lie between the values of operand 1 and operand 2. |
 	| elements equal | True if data values are part of operand 1. This option is only available for type *List*. |
 	
-5. Enter values directly into the input fields **Low** and **High** or assign existing {% if page.meta.product != "xtract-is" %} [{{ variables }}](edit-runtime-parameters.md) {% else %} {{ variables }} {% endif %} to the selection fields :number-3:.
-When {{ variables }} are available, you can use the icon button inside the input field to switch between static values (:runtime-parameters-static:) and {{ variables }}(:runtime-parameters-dynamic:).
+5. In the column **Value**, enter values directly into the input fields **Low** and **High**, assign existing {% if page.meta.product != "xtract-is" %} [{{ variables }}](edit-runtime-parameters.md) {% else %} {{ variables }} {% endif %} or look up pre-defined values in SAP.
+	- :runtime-parameters-static: - Static values: Enter values directly into the Low and High input fields. 
+	- :runtime-parameters-dynamic: - {{ Variables }}: Select an existing runtime parameter from the drop-down list.
+	- :magnifying-glass: - Pre-defined values: If available, select pre-defined values from SAP:<br>
+	![selections](../../assets/images/documentation/components/bwcube/query-var.png){:class="img-responsive"}
 6. Click **[OK]** to confirm your input. 
 7. Click {{ previewBtn }} in the main window of the {{ component }} to check the result of the filter.
 If {{ variables }} are defined, you are prompted to populate the parameters with actual values.

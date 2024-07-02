@@ -4,6 +4,7 @@ nav:
     - SAP Customization: setup-in-sap
     - SAP Connection: sap-connection
     - Xtract BAPI: bapi
+    - Xtract Cube: bwcube
     - Xtract Hierarchy: hierarchy
     - Xtarct Query: query
     - Xtract Report: report

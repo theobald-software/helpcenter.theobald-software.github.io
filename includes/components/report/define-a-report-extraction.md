@@ -31,7 +31,7 @@ The column widths and offsets are then adjusted dynamically at report runtime.
 5. Click {{ previewBtn }} to display a live preview of the first 100 records.
 6. Check if the automatically detected columns are accurate. 
 When automatic column detection is not possible, the column names, widths and offsets must be set manually, see [Define Columns manually](report-columns-define.md/#define-columns-manually).
-7. Check the [{{ Settings }}](settings.md){% if page.meta.product == "xtract-universal" or page.meta.product == "board-connector"%} and the [General Settings](general-settings.md){% endif %} before running the extraction.
+7. Check the [{{ Settings }}](settings.md){% if page.meta.product == "xtract-universal" or page.meta.product == "board-connector"%} and the [General Settings](general-settings.md){% endif %} before running the {{ extraction }}.
 8. Click **[OK]** to save the {{ component }}.
 
 You can now run the {{ extraction }}{% if page.meta.product == "xtract-universal" %}, see [Execute and Automate Extractions](../execute-and-automate/index.md){% endif %}.

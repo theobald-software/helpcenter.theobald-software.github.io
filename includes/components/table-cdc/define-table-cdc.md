@@ -30,7 +30,7 @@ If the row limit is reached, the extraction fails with an exception. The maximum
 5. Click {{ previewBtn }} to display a live preview of the first 1000 records.<br>
 	- The column *TS_TIMESTAMP* contains a timestamp of when the data was last changed. 
 	- The column *TS_OPERATION* indicates if a row was inserted (I), updated (U) or deleted (D).<br>
-6. Check the [{{ Settings }}](settings.md){% if page.meta.product == "xtract-universal" or page.meta.product == "board-connector"%} and the [General Settings](general-settings.md){% endif %} before running the extraction.
+6. Check the [{{ Settings }}](settings.md){% if page.meta.product == "xtract-universal" or page.meta.product == "board-connector"%} and the [General Settings](general-settings.md){% endif %} before running the {{ extraction }}.
 7. Click **[OK]** to confirm your settings.
 
 To initialize the tracking of the selected SAP table, run the {{ extraction }} once. 

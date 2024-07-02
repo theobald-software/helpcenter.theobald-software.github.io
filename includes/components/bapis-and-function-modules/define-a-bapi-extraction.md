@@ -29,5 +29,5 @@ Select output by activating the checkbox next to the items.<br>
 
 	![BAPI table parameters](../../assets/images/{{ abbr }}/documentation/bapi/table-parameters.png){:class="img-responsive"}
 5. Optional: If available, define which exceptions thrown by the Function Module / BAPI are ignored during runtime, see [Exceptions](parameters.md/#exceptions).
-{% if page.meta.product == "xtract-universal" or page.meta.product == "board-connector" %} 6. Check the [General Settings](general-settings.md) before running the extraction.{% endif %}
+{% if page.meta.product == "xtract-universal" or page.meta.product == "board-connector" %} 6. Check the [General Settings](general-settings.md) before running the {{ extraction }}.{% endif %}
 7. Click **[OK]** to confirm your input.

@@ -28,7 +28,7 @@ Follow the steps below to edit selection fields and filter data:
 	{% if page.meta.product != "xtract-is" %}- Click **[List]** to check if the data is (not) part of a specified list of values. {% endif %}
 3. In the column **Sign** :number-1:, select *Include* to add the filtered data to the output or select *Exclude* to remove the filtered data from the output.<br>
 ![edit-selections](../../assets/images/documentation/components/edit-selections.png){:class="img-responsive"}
-4. <!--- --8<-- [start:selection] -->Select an operator in the column **Option** :number-2:. The operator filters data according to the table below.
+4. In the column **Option** :number-2:, select an operator. The operator filters data according to the table below.
 	
 	| Operator |  Description    |  
 	|:---------|:-------------|
@@ -41,9 +41,7 @@ Follow the steps below to edit selection fields and filter data:
 	|(not) between | True if data values do (not) lie between the values of operand 1 and operand 2. |
 	| elements equal | True if data values are part of operand 1. This option is only available for type *List*. |
 	
-	<!--- --8<-- [end:selection] -->
-	
-5. Enter values directly into the input fields **Low** and **High** or assign existing {% if page.meta.product != "xtract-is" %} [{{ variables }}](edit-runtime-parameters.md) {% else %} {{ variables }} {% endif %} to the selection fields :number-3:.
+5. In the column **Value**, enter values directly into the input fields **Low** and **High** or assign existing {% if page.meta.product != "xtract-is" %} [{{ variables }}](edit-runtime-parameters.md) {% else %} {{ variables }} {% endif %} to the selection fields :number-3:.
 When {{ variables }} are available, you can use the icon button inside the input field to switch between static values (:runtime-parameters-static:) and {{ variables }}(:runtime-parameters-dynamic:).
 6. Click **[OK]** to confirm your input. 
 {% if page.meta.componentFolder != "query" and page.meta.componentFolder != "query" %}7. Click {{ previewBtn }} in the main window of the {{ component }} to check the result of your selection. 

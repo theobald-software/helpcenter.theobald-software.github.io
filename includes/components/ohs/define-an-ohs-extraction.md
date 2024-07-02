@@ -26,7 +26,7 @@ The {{ ohs }} {{ component }} offers the following options for OHS extractions:
 	![ohs-main-window](../../assets/images/{{ abbr }}/documentation/ohs/ohs-main-window.png){:class="img-responsive"}
 2. Optional: Use the **Timeout** setting to set a maximum time period to wait for a notification from the BW system. 
 If the time limit is reached, the extraction fails.
-7. Check the [{{ Settings }}](settings.md){% if page.meta.product == "xtract-universal" or page.meta.product == "board-connector"%} and the [General Settings](general-settings.md){% endif %} before running the extraction.
+7. Check the [{{ Settings }}](settings.md){% if page.meta.product == "xtract-universal" or page.meta.product == "board-connector"%} and the [General Settings](general-settings.md){% endif %} before running the {{ extraction }}.
 8. Click **[OK]** to save the {{ component }}.
 
 You can now run the {{ extraction }}{% if page.meta.product == "xtract-universal" %}, see [Execute and Automate Extractions](../execute-and-automate/index.md){% endif %}.

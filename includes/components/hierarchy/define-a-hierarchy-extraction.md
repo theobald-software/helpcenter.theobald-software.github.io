@@ -23,6 +23,6 @@ The {{ hierarchy }} {{ component }} supports the following output formats:
 	
 	![Hierarchy-settings](../../assets/images/{{ abbr }}/documentation/hierarchy/hierarchy-settings.png){:class="img-responsive"} 
 2. Click {{ previewBtn }} :number-4: to display a live preview of the first 100 records. 
-{% if page.meta.product == "xtract-universal" or page.meta.product == "board-connector" %}3. Check the [General Settings](general-settings.md) before running the extraction.. 
+{% if page.meta.product == "xtract-universal" or page.meta.product == "board-connector" %}3. Check the [General Settings](general-settings.md) before running the {{ extraction }}.. 
 4. Optional: The default value for **Date To** is *99991231*. To change the value, override the *dateTo* [extraction parameter](../parameters/extraction-parameters.md) when calling the extraction. {% endif %}
 5. Click **[OK]** to confirm your input.
