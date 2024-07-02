@@ -9,6 +9,8 @@ The {{ bapi }} {{ component }} can be used to parameterize and execute SAP funct
 
 {% include "/components/bapis-and-function-modules/about-bapis.md" %}
 
+{% include "/components/bapis-and-function-modules/support-disclaimer.md" %}
+
 {% include "components/bapis-and-function-modules/prerequisites.md" %}
 
 {% include "/components/bapis-and-function-modules/auth-warning.md" %}
@@ -32,8 +34,6 @@ Some SAP Function Modules require calling the function module BAPI_TRANSACTION_C
 To automatically call BAPI_TRANSACTION_COMMIT after the selected Function Module / BAPI is processed, activate the option **Commit work in SAP after execution** in the configuration menu of the {{ bapi }} {{ component }}.
 
 ![import-parameters](../../assets/images/{{ abbr }}/documentation/bapi/xtract-bapi-commit-transaction.png){:class="img-responsive"}
-
-{% include "/components/bapis-and-function-modules/support-disclaimer.md" %}
 
 ****
 #### Related Links

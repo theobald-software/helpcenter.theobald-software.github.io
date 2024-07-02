@@ -9,6 +9,8 @@ The {{ bapi }} {{ component }} can be used to parameterize and execute SAP funct
 
 {% include "/components/bapis-and-function-modules/about-bapis.md" %}
 
+{% include "/components/bapis-and-function-modules/support-disclaimer.md" %}
+
 {% include "components/bapis-and-function-modules/prerequisites.md" %}
 
 {% include "/components/bapis-and-function-modules/auth-warning.md" %}
@@ -17,5 +19,4 @@ The {{ bapi }} {{ component }} can be used to parameterize and execute SAP funct
 
 {% include "/components/bapis-and-function-modules/define-a-bapi-extraction.md" %}
 
-{% include "/components/bapis-and-function-modules/support-disclaimer.md" %}
 
