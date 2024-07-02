@@ -30,6 +30,31 @@ If no icon is available, [create a runtime parameter](#create-runtime-parameters
 3. Select a runtime parameter from the dropdown-list.<br>
 ![Assign parameters](../../assets/images/documentation/components/bapi/BAPI-Runtime-Parameters.png){:class="img-responsive"}
 
+{% elif page.meta.componentFolder == "bwcube" %}
+
+### Assign Runtime Parameters
+
+Follow the steps below to assign the runtime parameters to variables or dimension filters.
+
+=== "Variables"
+	1. In the main window of the {{ component }}, click **[Edit Variables]**. The window "Edit Selections" opens.
+	2. Add a filter to the variable, see [Variables](variables.md/#edit-variables).
+	2. Click the icon button next to the input field to switch between static values (:runtime-parameters-static:) and {{ variables }} (:runtime-parameters-dynamic:).
+	If no icon button is available, [create a runtime parameter](#create-runtime-parameters).<br>
+	![Selection With Parameters](../../assets/images/documentation/components/bwcube/parameters.png){:class="img-responsive"}
+	3. Select a runtime parameter from the dropdown-list.
+	4. Click **[OK]** to confirm the input.
+	
+=== "Dimension Filters"
+	1. In the main window of the {{ component }}, right-click the dimension you want to parameterize.
+	2. Click **Edit Filters**. The window "Edit Selections" opens. 
+	3. Add a filter for the dimension, see [Dimension Filter](#link).
+	4. Click the icon button next to the input field to switch between static values (:runtime-parameters-static:) and {{ variables }} (:runtime-parameters-dynamic:).
+	If no icon button is available, [create a runtime parameter](#create-runtime-parameters).<br>
+	![Selection With Parameters](../../assets/images/documentation/components/runtime-parameters/runtime-parameters-in-selections.png){:class="img-responsive"}
+	5. Select a runtime parameter from the dropdown-list.
+	6. Click **[OK]** to confirm the input.
+
 {% else %}
  
 ### Assign Runtime Parameters
@@ -37,12 +62,13 @@ If no icon is available, [create a runtime parameter](#create-runtime-parameters
 Follow the steps below to assign the runtime parameters to selections.
 
 1. In the main window of the {{ component }}, click the **[Edit]** button next to the selection you want to parameterize. 
-The window "Edit Selections" opens, see {% if page.meta.componentFolder == "odp"%}[Selections and Filters](#link){% elif page.meta.componentFolder == "deltaq"%}[Edit Selections](#link){% else %}[Edit Selections](variants-and-selections.md#edit-selections){% endif %}.<br> 
-2. Click the icon button next to the input field to switch between static values (:runtime-parameters-static:) and {{ variables }} (:runtime-parameters-dynamic:).
+The window "Edit Selections" opens.
+2. Add a filter to the selection, see {% if page.meta.componentFolder == "odp"%}[Selections and Filters](#link){% elif page.meta.componentFolder == "deltaq"%}[Edit Selections](selections.md/#edit-selections){% else %}[Edit Selections](variants-and-selections.md/#edit-selections){% endif %}.<br> 
+3. Click the icon button next to the input field to switch between static values (:runtime-parameters-static:) and {{ variables }} (:runtime-parameters-dynamic:).
 If no icon button is available, [create a runtime parameter](#create-runtime-parameters).<br>
 ![Selection With Parameters](../../assets/images/documentation/components/runtime-parameters/runtime-parameters-in-selections.png){:class="img-responsive"}
-3. Select a runtime parameter from the dropdown-list.
-4. Click **[OK]** to confirm the input.
+4. Select a runtime parameter from the dropdown-list.
+5. Click **[OK]** to confirm the input.
 
 {% endif %}
 

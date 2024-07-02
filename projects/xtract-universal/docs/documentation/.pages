@@ -5,6 +5,7 @@ nav:
     - designer.md
     - SAP Connection: sap-connection
     - BAPI: bapi
+    - BW Cube: bwcube
     - BW Hierarchy: hierarchy
     - DeltaQ: deltaq
     - Open Hub Services: ohs
