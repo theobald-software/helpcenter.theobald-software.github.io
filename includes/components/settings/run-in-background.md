@@ -1,7 +1,7 @@
 
-If this checkbox is checked, the table extraction is executed as a background job in SAP. 
+If *Background job timeout (seconds)* checkbox is activated, the table extraction is executed as a background job in SAP. 
 This setting is optional and is supported in combination with function module THEO/READ_TABLE or Z_THEO_READ_TABLE version 2.0. 
-Activate this setting for long-running extractions with a large amounts of data that may run into a timeout error (“Time limit exceeded”), when using the foreground mode.
+Activate the setting *Background job timeout (seconds)* for long-running extractions with a large amounts of data that may run into a timeout error (“Time limit exceeded”), when using the foreground mode.
 
 !!! tip
     The extraction jobs can be found in the SAP JobLog (**SM37**) under the JobName *theo_read_table*.

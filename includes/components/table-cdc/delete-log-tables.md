@@ -12,4 +12,5 @@ To delete the SAP resources of multiple extractions or extractions that are alre
 
 !!! warning
 	**Table change not possible** <br>
-	The source table structures can be changed only after clearing the CDC-related resources connected to that table in SAP, see [SAP Note 2284776](https://launchpad.support.sap.com/#/notes/2284776) 
+	The source table cannot be changed, if any CDC-related resources connected to the source table in SAP exist. <br>
+	Clear the CDC-related resources connected to the source table in SAP, see [SAP Note 2284776](https://launchpad.support.sap.com/#/notes/2284776). 
