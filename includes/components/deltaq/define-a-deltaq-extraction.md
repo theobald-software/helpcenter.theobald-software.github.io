@@ -24,7 +24,7 @@
 
 The application now returns to the main window of the {{ component }}.
 
-### Define the {{ deltaq }} {{ component }}
+### Define the {{ deltaq }} {{ Component }}
 
 The {{ deltaq }} {{ component }} offers the following options for DataSource extractions:
 

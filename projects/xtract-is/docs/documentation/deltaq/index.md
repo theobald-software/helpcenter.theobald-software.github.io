@@ -1,5 +1,5 @@
 ---
-title: DeltaQ
+title: Xtract DeltaQ
 description: How to use the DeltaQ extraction type
 icon: component/deltaq
 ---

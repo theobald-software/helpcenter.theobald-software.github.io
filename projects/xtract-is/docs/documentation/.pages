@@ -5,6 +5,7 @@ nav:
     - SAP Connection: sap-connection
     - Xtract BAPI: bapi
     - Xtract BW Cube: bwcube
+    - Xtract BW Loader: bwloader
     - Xtract DeltaQ: deltaq
     - Xtract Hierarchy: hierarchy
     - Xtract OHS: ohs

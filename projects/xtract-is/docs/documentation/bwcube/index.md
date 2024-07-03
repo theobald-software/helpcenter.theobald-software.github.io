@@ -1,5 +1,5 @@
 ---
-title: BW Cube
+title: Xtract BW Cube
 description: How to use the BW Cube extraction type
 icon: component/bwcube
 ---
