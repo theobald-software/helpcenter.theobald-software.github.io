@@ -51,7 +51,7 @@ If the extraction is located inside an [extraction group](documentation/execute-
 	- `[protocol]://[host]:[port]/?name=[extraction_name]&wait=false` becomes `[protocol]://[host]:[port]/start/[extraction_name]`
 
 !!! tip
-	 You can use the UI in the “Run Extraction” menu to generate an URL for extraction runs, see [Run Extractions](documentation/run-extractions.md).
+	 You can use the UI in the “Run Extraction” menu to generate an URL for extraction runs, see {% if page.meta.product == "xtract-universal" %}[Run Extractions](documentation/execute-and-automate/run-an-extraction.md/#run-extractions-in-the-designer){% else %}[Run Extractions](documentation/run-extractions.md/#run-extractions-in-the-designer){% endif %}.
 
  
 #### Response
@@ -73,7 +73,7 @@ The response of the web service call contains the following information:
 {% if page.meta.product != "board-connector" %}| ```&quiet-push=true```  |   Runs the specified extraction and suppresses the output of extraction logs for push destinations. This parameter has no effect on pull destinations and asynchronous extractions.| {% endif %}
 
 !!! tip
-	You can use the UI in the "Run Extraction" menu to generate a URL for extraction runs, see [Run Extraction](documentation/run-extractions.md).
+	You can use the UI in the "Run Extraction" menu to generate a URL for extraction runs, see {% if page.meta.product == "xtract-universal" %}[Run Extractions](documentation/execute-and-automate/run-an-extraction.md/#run-extractions-in-the-designer){% else %}[Run Extractions](documentation/run-extractions.md/#run-extractions-in-the-designer){% endif %}.
 
 #### Examples 
 
@@ -570,7 +570,7 @@ The result contains the following elements:
 
 | Parameter    | Description  | 
 |-----------|--------------|
-| ```/[extraction_name]/parameters```  |   Returns a list of runtime parameters used in the specified extraction. Every extraction has a set of *Extraction*, *Source* and *Custom* [extraction parameters](documentation/documentation/extraction-parameters.md). The parameters are available in the "Run Extraction" window.<br>. |
+| ```/[extraction_name]/parameters```  |   Returns a list of runtime parameters used in the specified extraction. Every extraction has a set of *Extraction*, *Source* and *Custom* [extraction parameters](documentation/parameters/extraction-parameters.md). The parameters are available in the "Run Extraction" window. |
 | ```/[extraction_name]/result-columns```  |   Returns the result columns of an extraction. |
 {% if page.meta.product != "board-connector" %}| ```?destinationType=[destination]```  |   Returns a list of extractions that write into a specific destination. | {% endif %}
 

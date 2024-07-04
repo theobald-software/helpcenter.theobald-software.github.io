@@ -45,7 +45,7 @@ The list below shows several most important files that are placed into the defau
 | Alteryx directory| Directory with a plugin setup for the [Alteryx destination](../destinations/alteryx.md#requirements).|
 | logs directory| Directory with server and extraction etc. logs, see [Logs](../logs.md). |
 | config directory | Directory containing all SAP connections, extractions, destinations and other settings. See also [Backup and Migration](migration.md).|
-| powerbi directory| Directory containing files related to [Power BI Connector destination](../destinations/Power-Bi-Connector.md).|
+| powerbi directory| Directory containing files related to [Power BI Connector destination](../destinations/Power-BI-Connector.md).|
 | result-cache directory | Directory with extraction cache files, only applicable for [Pull Destinations](../destinations/index.md).|
 | xu.exe | Command line tool used for executing extractions, see [Schedule an Extraction](../execute-and-automate/call-via-scheduler.md). |
 | xu-config.exe | Command line tool used for creating extractions, see [Create Extractions without the Xtract Universal Designer GUI](../../knowledge-base/config-command-line-tool.md). |

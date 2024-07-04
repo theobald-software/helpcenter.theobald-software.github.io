@@ -78,7 +78,7 @@ When an older Designer version is connected to a newer Server version, you are b
 #### Result cache
 
 !!! note
-	The *Cache results* option is only available in [pull destinations](../destinations/index.md#pull-and-push-destinations) (e.g., PBI, Qlik etc.).
+	The *Cache results* option is only available in [pull destinations](../destinations/index.md) (e.g., PBI, Qlik etc.).
 
 | Option | Description |
 |------------|--------------|

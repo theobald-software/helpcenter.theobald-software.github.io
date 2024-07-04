@@ -10,7 +10,7 @@ This string can be used as input for further .NET string operations.
 
 Script expressions can be used in the following scenarios:
 
-- as selection parameters for [Table](../table/where-clause#script-expressions) or [DeltaQ](../datasource-deltaq/datasource-parameters#script-expressions) extractions.
+- as selection parameters for [Table](../table/where-clause#script-expressions) or [DeltaQ](../deltaq/selections.md/#script-expressions-for-deltaq) extractions.
 - as custom SQL commands in database destinations.
 - as dynamic folder paths in cloud storage destinations.
 - as dynamic file names in database destinations, cloud storage destinations and flat-file destinations.

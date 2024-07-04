@@ -5,14 +5,14 @@ description: Call an Extraction via ETL-Tool
 
 This page offers a list of resources about using {{ productName }} with ETL tools.<br>
 All ETL tools offer the following options for running extractions:
-- [Call via command line](./call-via-commandline) 
+- [Call via command line](call-via-commandline.md) 
 - [Call via webservices](../../web-api.md)
 
 ### Integration via Plug-In
 - [{{ productName }} Alteryx Plugin](../destinations/alteryx.md#requirements)
 - [KNIME Integration via SAP Reader (Theobald Software)](../../knowledge-base/knime-integration-via-sap-reader.md)
 - [Dynamic Runtime Parameter within KNIME Workflow](../../knowledge-base/dynamic-runtime-paramater-within-KNIME-workflow.md)
-- [{{ productName }} Power BI Custom Connector](../destination/Power-BI-Connector.md)
+- [{{ productName }} Power BI Custom Connector](../destinations/Power-BI-Connector.md)
 - [Power BI Configure scheduled refresh](https://docs.microsoft.com/en-us/power-bi/connect-data/refresh-scheduled-refresh)
 
 ### Integration via Webservice
