@@ -27,6 +27,15 @@ There are two types of destinations, depending on where the extraction process i
 
 </div>
 
+### Manage Destinations
+
+To open a list of all existing destinations, navigate to **Server > Destinations**.<br>
+The window "Manage Destinations" opens. Here, you can edit, delete and add new destinations.<br>
+![xu_destination](../../assets/images/xu/documentation/destinations/xu_destination.png)
+
+!!! note
+	The **http-csv** destination is a default destination and cannot be deleted.
+	
 ### Databases / Data Warehouses
 
 ::cards:: cols=4
@@ -49,7 +58,7 @@ There are two types of destinations, depending on where the extraction process i
   
 - title: IBM Db2 <br><br><span class="keyword">push-destination</span> 
   image: site:assets/images/xu/documentation/destinations/logos/IBM-db2.png
-  url: ibm
+  url: ibm-db2
 
 - title: MySQL <br><br><span class="keyword">push-destination</span> 
   image: site:assets/images/xu/documentation/destinations/logos/MySQL.png
@@ -69,7 +78,7 @@ There are two types of destinations, depending on where the extraction process i
     
 - title: Snowflake <br><br><span class="keyword">push-destination</span> 
   image: site:assets/images/xu/documentation/destinations/logos/Snowflake.png
-  url: postgreSQL
+  url: snowflake
 
 - title: SQL Server <br><br><span class="keyword">push-destination</span> 
   image: site:assets/images/xu/documentation/destinations/logos/SQL-Server.png
