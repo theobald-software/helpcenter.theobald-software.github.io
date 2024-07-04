@@ -12,11 +12,11 @@ The basic URL for web calls uses the following format: `[protocol]://[host or IP
 |:----------- | :------------ | :------------ | 
 | HTTP	| `http://[host].[domain]:[port]` | `http://sherri.theobald.local:8065` | 
 | HTTP	| `http://[host]:[port]` | 	`http://localhost:8065` | 
-| HTTPS | `https://[host].[domain]:[port]` | `https://sherri.theobald.local:8165` <br>Requires a dedicated host name and X.509 certificate, see {% if page.parent == "xtract-universal" or page.parent == "board-connector"%}[web server settings](./server/server-settings#web-server).{% else %}[web server settings](../server/server-settings#web-server).{% endif %} | 
+| HTTPS | `https://[host].[domain]:[port]` | `https://sherri.theobald.local:8165` <br>Requires a dedicated host name and X.509 certificate, see {% if page.parent == "xtract-universal" or page.parent == "board-connector"%}[web server settings](./server/server-settings#web-server).{% else %}[web server settings](documentation/server/server-settings.md#web-server).{% endif %} | 
 
 
 !!! note 
-	Make sure to use the correct ports, see [Server Ports](#link).
+	Make sure to use the correct ports, see [Server Ports](documentation/server/index.md#ports).
 
 
 ### Run Extractions
@@ -41,7 +41,7 @@ The basic URL for web calls uses the following format: `[protocol]://[host or IP
 	</div>
 
 {% if page.meta.product != "board-connector" %}	
-If the extraction is located inside an [extraction group](documentation/organize-extractions.md), the name of the extraction group is part of the extraction name.
+If the extraction is located inside an [extraction group](documentation/execute-and-automate/run-an-extraction.md), the name of the extraction group is part of the extraction name.
 <br>Example: The extraction "KNA1" in the extraction group "S4HANA" becomes `S4HANA,KNA1`.
 {% endif %}
 
@@ -51,7 +51,7 @@ If the extraction is located inside an [extraction group](documentation/organize
 	- `[protocol]://[host]:[port]/?name=[extraction_name]&wait=false` becomes `[protocol]://[host]:[port]/start/[extraction_name]`
 
 !!! tip
-	 You can use the UI in the “Run Extraction” menu to generate an URL for extraction runs, see [Run Extractions](#link).
+	 You can use the UI in the “Run Extraction” menu to generate an URL for extraction runs, see [Run Extractions](documentation/run-extractions.md).
 
  
 #### Response
@@ -69,11 +69,11 @@ The response of the web service call contains the following information:
 
 | Parameter    | Description  | 
 |-----------|--------------|
-| ```&[parameter1_name]=[value]```  |   Runs the specified extraction and passes values to the specified [extraction parameters](#link). |
+| ```&[parameter1_name]=[value]```  |   Runs the specified extraction and passes values to the specified [extraction parameters](documentation/parameters/extraction-parameters.md). |
 {% if page.meta.product != "board-connector" %}| ```&quiet-push=true```  |   Runs the specified extraction and suppresses the output of extraction logs for push destinations. This parameter has no effect on pull destinations and asynchronous extractions.| {% endif %}
 
 !!! tip
-	You can use the UI in the "Run Extraction" menu to generate a URL for extraction runs, see [Run Extraction](#link).
+	You can use the UI in the "Run Extraction" menu to generate a URL for extraction runs, see [Run Extraction](documentation/run-extractions.md).
 
 #### Examples 
 
@@ -203,7 +203,7 @@ The result contains the following elements:
 | row count| number of extracted data records |
 | duration | duration of the execution |
 | state| status of the extraction (*Running*, *FinishedNoErrors*, *FinishedErrors*) |
-| webServerLog| timestamp of the corresponding [server log](#get-server-logs) |
+| webServerLog| timestamp of the corresponding [server log](documentation/logs.md#log-levels) |
 | startedAt| timestamp of the execution |
 
 
@@ -218,7 +218,7 @@ The result contains the following elements:
 | ```/[extraction-name]/[yyyy-MM-dd_HH:mm:ss.SSS]/log```  |   Returns the extraction log of the specified extraction with the specified timestamp. |
 
 !!! note 
-	For information on how to interpret logs, see [Logs](#link).
+	For information on how to interpret logs, see [Logs](documentation/logs.md).
 
 #### Examples
 
@@ -389,7 +389,7 @@ Returns a list of timestamps that correspond to server logs.
 
 
 !!! note 
-	For information on how to interpret logs, see [Logs](#link).
+	For information on how to interpret logs, see [Logs](documentation/logs.md).
 
 #### Examples
 
@@ -570,7 +570,7 @@ The result contains the following elements:
 
 | Parameter    | Description  | 
 |-----------|--------------|
-| ```/[extraction_name]/parameters```  |   Returns a list of runtime parameters used in the specified extraction. Every extraction has a set of *Extraction*, *Source* and *Custom* [extraction parameters](#link). The parameters are available in the "Run Extraction" window.<br>. |
+| ```/[extraction_name]/parameters```  |   Returns a list of runtime parameters used in the specified extraction. Every extraction has a set of *Extraction*, *Source* and *Custom* [extraction parameters](documentation/documentation/extraction-parameters.md). The parameters are available in the "Run Extraction" window.<br>. |
 | ```/[extraction_name]/result-columns```  |   Returns the result columns of an extraction. |
 {% if page.meta.product != "board-connector" %}| ```?destinationType=[destination]```  |   Returns a list of extractions that write into a specific destination. | {% endif %}
 
