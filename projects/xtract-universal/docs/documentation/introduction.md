@@ -52,7 +52,7 @@ An {{ extraction }} is a combination of the following components:
 
 The graphic on the right depicts a practical example of an extraction and its components.
 
-For more information on how to create and maintain extractions in the Xtract Universal Designer, see [create extractions](#link).
+For more information on how to create and maintain extractions in the Xtract Universal Designer, see [create extractions](../getting-started.md/#create-an-extraction).
 
 
 ### Software Architecture 
@@ -67,7 +67,7 @@ The execution of the {{ extractions }} takes place on the server.
 
 ![XU-Architecture](../assets/images/xu/documentation/Architecture.png){:class="img-responsive"}
 
-Depending on the target environment, an extraction can be executed by the [Xtract Universal command line tool - xu.exe / xu.elf](#link) or by the consuming destination, see [Pull and Push Destinations](#link).
+Depending on the target environment, an extraction can be executed by the [Xtract Universal command line tool - xu.exe / xu.elf](execute-and-automate/call-via-commandline.md) or by the consuming destination, see [Pull and Push Destinations](destinations/index.md).
 
 ### {{ Components }}
 

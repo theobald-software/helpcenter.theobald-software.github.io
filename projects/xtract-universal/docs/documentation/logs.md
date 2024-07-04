@@ -25,13 +25,13 @@ Ihe depicted example log belongs to an extraction that writes data into an SQL d
 
 :number-1: General technical information is displayed.
 
-:number-2: The [SQL destination](../destinations/microsoft-sql-server.md) is prepared for receiving data.
+:number-2: The [SQL destination](destinations/microsoft-sql-server.md) is prepared for receiving data.
 
 :number-3: The license check is performed including entity check and other relevant information.
 
 :number-4: Connection to SAP is established.
 
-:number-5: [Runtime parameters](../parameters/index.md) are logged.
+:number-5: [Runtime parameters](parameters/index.md) are logged.
 
 :number-6: Data from SAP is requested.
 

@@ -15,14 +15,15 @@ Windows AD credentials or credentials of a custom user must be submitted when ru
 
 Access restrictions require users to access the web server through an https connection (TLS encryption). 
 This requires the installation of an X.509 certificate.
-If the certificate is not listed in the Windows certificate store, [install the X.509 certificate](install-x.509-Certificate.md#create-x509-certificate).
+If the certificate is not listed in the Windows certificate store, [install the X.509 certificate](install-x.509-certificate.md/#create-the-x509-certificate).
 
 1. Open **Server > Settings** from the main window of the Designer.<br>
 ![security-manage-users](../../assets/images/documentation/access-restriction/server-settings_manage.png){:class="img-responsive"}
 2. In the tab *Web Server* tab, select one of the following protocols:
 	- **HTTPS - Restricted to AD users with Designer read access**
 	- **HTTPS - Restricted to custom users with Designer read access** 
-![webserver settings](../../assets/images/documentation/access-restriction/server-settings-security.png){:class="img-responsive"}
+
+	![webserver settings](../../assets/images/documentation/access-restriction/server-settings-security.png){:class="img-responsive"}
 3. Click **[Select X.509 certificate]**. The "Edit certificate location" window opens.
 4. Select the X.509 certificate created for your machine under **Local Machine > Personal**.<br>
 ![certificate-edit-location](../../assets/images/documentation/access-restriction/certificate-edit-location.png){:class="img-responsive"}
@@ -42,7 +43,7 @@ The caller must have at least *Read access* to the Designer.
 ![security-manage-users](../../assets/images/documentation/access-restriction/server-settings_manage.png){:class="img-responsive"}
 4. In the tab *Web Server*, select **HTTPS - Restricted to AD users with Designer read access**.
 5. In the tab *Configuration Server*, add the custom users or groups that are allowed to execute extractions. 
-For more information, see [Restrict Designer Access](#link). <br>
+For more information, see [Restrict Designer Access](restrict-designer-access.md/#restrict-access-to-the-designer). <br>
 ![ConfigurationServerSettings_](../../assets/images/documentation/access-restriction/server-settings-sso-certificate-users.png){:class="img-responsive"}
 6. Assign at least *Read* permission to the Windows AD users.
 7. Close all windows with **[OK]**. If prompted, restart the server.
@@ -61,7 +62,7 @@ The custom user must have at least *Read access* to the Designer.
 ![security-manage-users](../../assets/images/documentation/access-restriction/server-settings_manage.png){:class="img-responsive"}
 3. In the tab *Web Server*, select **HTTPS - Restricted to custom users with Designer read access**.
 4. In the tab *Configuration Server*, add the custom users or groups that are allowed to execute an extraction.
-For more information, see [Restrict Designer Access](#link). <br>
+For more information, see [Restrict Designer Access](restrict-designer-access.md/#restrict-access-to-the-designer). <br>
 ![ConfigurationServerSettings_](../../assets/images/documentation/access-restriction/server-settings-sso-certificate-users.png){:class="img-responsive"}
 4. Assign at least *Read* permission to the custom users.
 5. Close all windows with **[OK]**. If prompted, restart the server.
@@ -77,5 +78,5 @@ For more information, see [Restrict Designer Access](#link). <br>
 *********
 #### Related Links
 - [Wikipedia: SPNEGO](https://en.wikipedia.org/wiki/SPNEGO)
-- [Knowledge Base Article: Enable Secure Network Communication (SNC) via X.509 certificate](../../knowledge-base/enable-snc-using-pse-file)
-- [Server Settings](#link)
+- [Knowledge Base Article: Enable Secure Network Communication (SNC) via X.509 certificate](../../knowledge-base/enable-snc-using-pse-file.md)
+- [Server Settings](../server/server-settings.md)

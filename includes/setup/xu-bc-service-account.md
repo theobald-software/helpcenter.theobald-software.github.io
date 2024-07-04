@@ -4,7 +4,7 @@ After the installation, the {{ productName }} service runs under the *Local Syst
 
 The following scenarios require the service to run under a dedicated Windows domain user account:
 
-- Enabling [Kerberos authentication](../security/server-security.md#restrict-access-to-windows-ad-users-kerberos-authentication) for the {{ productName }} web server
+- Enabling [Kerberos authentication](../access-restrictions/restrict-server-access.md/#restrict-access-to-windows-ad-users-kerberos-authentication) for the {{ productName }} web server
 - Enabling Windows authentication for {% if page.meta.product == "xtract-universal" %}an Xtract Universal destination that allows Windows credentials for log on, e.g., SQL Server destination, PostgreSQL destination.{% else %} Board Connector{% endif %}
 - Enabling [SSO with Kerberos SNC](../../knowledge-base/sso-with-kerberos-snc.md)
 - Enabling [SSO with SAP Logon Tickets](../../knowledge-base/sso-with-logon-ticket.md)
@@ -24,7 +24,7 @@ The following scenarios require the service to run under a dedicated Windows dom
 	![service account](../../assets/images/documentation/setup/service-account-SPN.png){:class="img-responsive"}
 2. Grant access rights to the installation folder of {{ productName }} and all sub folders to the service account as shown in the following screenshot:<br>
 ![service account permissions](../../assets/images/{{ abbr }}/documentation/setup/service-account-permissions.png){:class="img-responsive"}
-3. If applicable, make sure the service account has *Read* access to the private key of the [X.509 certificate](../security/install-x.509-certificate.md) used by {{ productName }}.<br>
+3. If applicable, make sure the service account has *Read* access to the private key of the [X.509 certificate](../access-restrictions/install-x.509-certificate.md) used by {{ productName }}.<br>
 ![service account private key 1](../../assets/images/documentation/setup/service-account-privatekey_1.png){:class="img-responsive" width="64%"}
 ![service account private key 2](../../assets/images/{{ abbr }}/documentation/setup/service-account-privatekey_2.png){:class="img-responsive" width="34%"}
 4. Let the {{ productName }} service run under the service account. Make sure to use the correct domain, e.g., *.company.local* instead of *.company.com*.<br>

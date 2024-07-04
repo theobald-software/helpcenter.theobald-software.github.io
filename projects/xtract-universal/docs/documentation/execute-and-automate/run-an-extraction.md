@@ -54,7 +54,7 @@ For more information, see [Extraction Parameters](../parameters/extraction-param
 ![Custom parameters](../../assets/images/xu/documentation/automation/xu_run_extraction_param_cust.png){:class="img-responsive"}
 
 ### URL and Commandline
-The strings displayed in **URL** and **xu.exe** are generated and update automatically when changing [extraction parameters](extraction-parameters.md).
+The strings displayed in **URL** and **xu.exe** are generated and update automatically when changing [extraction parameters](../parameters/extraction-parameters.md).
 Use the strings to run the extraction outside of the {{ productName }} Designer.
 
 #### URL

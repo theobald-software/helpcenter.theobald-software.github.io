@@ -19,7 +19,7 @@ Defines the port number for communication between Server and Designer.
 The default is 8064. If you set a different port, add the new port number to the host name on the [logon screen](../designer.md/#connect-the-designer-to-a-server) ([host name]:[port]).
 
 #### Max. age of log files (days)
-Defines the maximum age of the config server [log files](../logs/log-access-via-designer.md#server-logs-run) in days. 
+Defines the maximum age of the config server [log files](../logs.md#access-server-logs) in days. 
 After this period the log files are deleted.
 
 #### Authentication methods
@@ -28,7 +28,7 @@ For more information, see [Authentication Between Designer and Server](../access
 
 #### Select X.509 certificate
 Select an X.509 certificate that is used for for transport encryption and authentication, when [custom users](../access-restrictions/user-management.md) connect a Designer to the Server.
-For more information, see [Install an X.509 certificate](../access-restrictions/install-x.509-Certificate.md).
+For more information, see [Install an X.509 certificate](../access-restrictions/install-x.509-certificate.md).
 
 
 #### Access Management
@@ -53,7 +53,7 @@ The web server accepts extraction calls via HTTP(S).
 | **HTTPS - Restricted to custom users with Designer read access** | This setting enables an additional access control for running an extraction. Extractions can only be executed by custom users with at least a read permission (*Read*) in the *Configuration Server* tab. For more information, see [Restrict Access to Custom Users (Basic Authentication)](../access-restrictions/restrict-server-access.md/#restrict-access-to-custom-users-basic-authentication). | 
  
 !!! note
-	To receive data via HTTPS, the [installation of a TLS certificate](../access-restrictions/install-x.509-Certificate.md) is required on the server that runs the {{ productName }} service. <br>
+	To receive data via HTTPS, the [installation of a TLS certificate](../access-restrictions/install-x.509-certificate.md) is required on the server that runs the {{ productName }} service. <br>
 
 #### HTTP Port
 
@@ -65,10 +65,10 @@ Defines the port number, on which the Server receives HTTPS requests of an extra
 
 #### Select X.509 certificate
 Select an X.509 certificate that is used for for transport encryption and authentication, when running extractions.
-For more information, see [Install an X.509 certificate](../access-restrictions/install-x.509-Certificate.md).
+For more information, see [Install an X.509 certificate](../access-restrictions/install-x.509-certificate.md).
 
 ####  Keep log files (days)
-Defines the maximum age of the web server [log files](#link) in days. After this period the log files are deleted.
+Defines the maximum age of the web server [log files](../logs.md#access-extraction-logs) in days. After this period the log files are deleted.
 
 #### Enable setup distribution for clients
 Defines whether the setup of the product version that runs on the server needs to be downloaded. 
@@ -78,7 +78,7 @@ When an older Designer version is connected to a newer Server version, you are b
 #### Result cache
 
 !!! note
-	The *Cache results* option is only available in [pull destinations](../destinations#pull-and-push-destinations) (e.g., PBI, Qlik etc.).
+	The *Cache results* option is only available in [pull destinations](../destinations/index.md#pull-and-push-destinations) (e.g., PBI, Qlik etc.).
 
 | Option | Description |
 |------------|--------------|

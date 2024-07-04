@@ -34,10 +34,10 @@ The following table shows what {{ components }} and settings support custom runt
 | {{ Component }} |  Settings that Support Custom Runtime Parameters | 
 |----------|-------------|
 | :component-bapi: {{ bapi }} | [Import parameters](../bapi/input-and-output.md/#import-parameters), [Table parameters](../bapi/input-and-output.md/#table-parameters) |  
-| :component-bwcube: {{ bwcube }} | [BEx variables](../bwcube/variables.md), [dimension filters](#link)   |  
-| :component-deltaq: {{ deltaq }}  | [Selections](#link)    | 
-| :component-odp: {{ odp }} | [Selections](#link)   | 
-| :component-query: {{ query }} | [Selections](#link)  | 
-| :component-report: {{ report }}  | [Selections](#link)  | 
+| :component-bwcube: {{ bwcube }} | [BEx variables](../bwcube/variables-and-filters.md/#edit-variables), [dimension filters](../bwcube/variables-and-filters.md/#set-dimension-filters)   |  
+| :component-deltaq: {{ deltaq }}  | [Selections](../deltaq/selections.md/#edit-selections)    | 
+| :component-odp: {{ odp }} | [Selections](../odp/selections.md/#edit-selections)   | 
+| :component-query: {{ query }} | [Selections](../query/variants-and-selections.md/#edit-selections)  | 
+| :component-report: {{ report }}  | [Selections](../report/variants-and-selections.md/#edit-selections)  | 
 | :component-table: {{ table }}  | [WHERE clause](../table/where-clause.md), [HAVING clause](../table/having-clause.md) | 
 | :component-table-cdc: {{ tableCDC }}  | [WHERE clause](../table-cdc/where-clause.md) | 

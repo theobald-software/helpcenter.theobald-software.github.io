@@ -13,6 +13,6 @@ This page shows how to encrypt communication between {{ productName }} and the S
 
 ****
 #### Related Links
-- [Knowledge Base Article: SSO with External ID](../..knowledge-base/sso-with-external-id.md)
+- [Knowledge Base Article: SSO with External ID](../../knowledge-base/sso-with-external-id.md)
 - [Knowledge Base Article: SSO with Kerberos SNC](../../knowledge-base/sso-with-kerberos-snc.md)
-- [Knowledge Base Article: SSO with Client Certificates](../../knowledge-base/sso-with-client-certificates.md). |
+- [Knowledge Base Article: SSO with Client Certificates](../../knowledge-base/sso-with-client-certificates.md)

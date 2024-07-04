@@ -20,8 +20,8 @@ The command line tool connects to an {{ productName }} server (service) and star
 |:---:|:---|:---|
 | -h   |  A short documentation of the command line tool  |   `C:\Program Files\XtractUniversal>xu.exe -h` |
 | -n   |  Name of the extraction  | `C:\Program Files\XtractUniversal\xu.exe -n <name>` |
-| -s   |  The name or IP address of the machine on which the {{ productName }} service runs. The default is localhost. You can find the current value in the "Run" window of the [Designer](../getting-started/designer-overview#main-menu-bar-1).|  `xu.exe -n <name> -s <host>`|
-| -p   | The port on which the {{ productName }} service runs. The default is 8065. <br> You can find the current value in the "Run" window of the [Designer](../getting-started/designer-overview#main-menu-bar-1).  | `xu.exe -n <name> -s <host> -p <port>` |
+| -s   |  The name or IP address of the machine on which the {{ productName }} service runs. The default is localhost. You can find the current value in the "Run" window of the Designer.|  `xu.exe -n <name> -s <host>`|
+| -p   | The port on which the {{ productName }} service runs. The default is 8065. <br> You can find the current value in the "Run" window of the Designer.  | `xu.exe -n <name> -s <host> -p <port>` |
 | -o   | Parameters to be set when running the extraction. <br> Multiple parameters can be set. | `xu.exe -n <name> -s <host> -p <port> -o "param1=<wert1>" -o "param2=<wert2>"`|
 | -e   | Use [Transport Layer Security (TLS)](https://docs.microsoft.com/en-us/windows/win32/secauthn/transport-layer-security-protocol) (1.2 or higher). |   `xu.exe  -n <name> -s <host> -p <port> -e`|
 | -a   | Cancel all running instances of the extraction. | `xu.exe -a` |
@@ -60,7 +60,7 @@ The output depends on the destination type of the extraction. If the extraction 
 When using [Pull Destinations](../destinations/index.md) like HTTP-CSV, HTTP-JSON, etc., extracted data is written into the standard output (sdtout).
 
 #### Standard Output of Push Destinations
-When using [Push Destinations](../destinations/index.md) an [Extraction Log](#link) in CSV format is written into the standard output (stdout).
+When using [Push Destinations](../destinations/index.md) an [Extraction Log](../logs.md) in CSV format is written into the standard output (stdout).
 
 #### Standard Error Output
 Logs and error notifications are written into the standard error output (stderr).

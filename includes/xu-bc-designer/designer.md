@@ -13,7 +13,7 @@ Enter connection and user details to connect the Designer to a {{ productName }}
 	The default port ({{ port }}) may vary depending on the configuration. <br>
 	![local-login](../assets/images/{{ abbr }}/documentation/designer/local-login.png){:class="img-responsive"}
 	3. If the service is not running on default port {{ port }}, specify the port by adding :[port] after the host name.
-	The default port can be configured in the [server settings](../server/server-settings).
+	The default port can be configured in the [server settings](server/server-settings.md).
 	4. Select an authentication method. Once logged in, you can activate or deactivate methods of authentication, see [Access Restrictions](access-restrictions/index.md/#authentication-between-designer-and-server). 
 	5. Click **[:designer-connect: Connect]** to connect the Designer to the Server. The main window of the Designer opens.
 
@@ -23,7 +23,7 @@ Enter connection and user details to connect the Designer to a {{ productName }}
 	Make sure the port is not blocked by your firewall.<br>
 	![remote-login](../assets/images/{{ abbr }}/documentation/designer/remote-login.png){:class="img-responsive"}
 	3. If the service does not run on default port {{ port }}, specify the port by adding :[port] after the host name.
-	The default port can be configured in the [server settings](../server/server-settings.md).
+	The default port can be configured in the [server settings](server/server-settings.md).
 	4. Select an authentication method. Once logged in, you can activate or deactivate methods of authentication, see [Access Restrictions](access-restrictions/index.md/#authentication-between-designer-and-server). 
 	5. Click **[:designer-connect: Connect]** to connect the Designer to the Server. The main window of the Designer opens.
 	
@@ -55,43 +55,43 @@ The Designer features different functionalities to design and configure extracti
 
 	Icon | Menu Item |Description | Details
 	-----|------------ | ------------ | -------------
-	:designer-add: | New  | Create a new extraction | [Define a Table Extraction](#link)
+	:designer-add: | New  | Create a new extraction | [Create an Extraction](../getting-started.md/#create-an-extraction)
 	:pen-button: | Edit | Edit an existing extraction | -
 	:material-trash-can-outline: | Delete | Delete an existing extraction | -
 	:designer-clone: | Clone | Clone an existing extraction | -
-	:designer-keyword: | Add/Remove Keywords | Define keywords of selected extractions | [General Settings](#link)
-	:designer-source:| Source | Select an existing SAP source system | [SAP Connection](/sap-connection/index.md)
+	:designer-keyword: | Add/Remove Keywords | Define keywords of selected extractions | [General Settings](table/general-settings.md)
+	:designer-source:| Source | Select an existing SAP source system | [SAP Connection](sap-connection/index.md)
 	:designer-destination:| Destination | Select a destination | [Destinations](destinations/index.md)
-	:designer-log1: | Log | Open extraction log | [Extraction Logs](#link)
-	:designer-run:| Run  | Run a selected extraction | [Run an Extraction](#link)
+	:designer-log1: | Log | Open extraction log | [Extraction Logs](logs.md)
+	:designer-run:| Run  | Run a selected extraction | [Run an Extraction](execute-and-automate/run-an-extraction.md/#run-extractions-in-the-designer)
 	:designer-abort: | Abort | Abort a selected extraction | -
-	:material-timer-outline: | Clear Result Cache | Clear extraction cache | [Cache results](#link general-settings#misc-tab)
+	:material-timer-outline: | Clear Result Cache | Clear extraction cache | [Cache results](table/general-settings.md/#misc-tab)
 	:designer-refresh: | Refresh | Refresh extraction status | -
-	:material-filter: | Filter | Define filters or keywords |  [Define Keywords](#link general-settings#misc-tab)
+	:material-filter: | Filter | Define filters or keywords |  [Define Keywords](table/general-settings.md/#misc-tab)
 
 {% else %}=== "Extraction"
 
 	Icon | Menu Item |Description | Details
 	-----|------------ | ------------ | -------------
-	:designer-add: | New  | Create a new extraction | [Define a Table Extraction](#link)
+	:designer-add: | New  | Create a new extraction | [Create an Extraction](../getting-started.md/#create-an-extraction)
 	:pen-button: | Edit | Edit an existing extraction | -
 	:material-trash-can-outline: | Delete | Delete an existing extraction | -
 	:designer-clone: | Clone | Clone an existing extraction | -
-	:designer-keyword: | Add/Remove Keywords | Define keywords of selected extractions | [General Settings](#link)
-	:designer-source:| Source | Select an existing SAP source system | [SAP Connection](/sap-connection/index.md)
-	:designer-log1: | Log | Open extraction log | [Extraction Logs](#link)
-	:designer-run:| Run  | Run a selected extraction | [Run an Extraction](#link)
+	:designer-keyword: | Add/Remove Keywords | Define keywords of selected extractions | [General Settings](table/general-settings.md)
+	:designer-source:| Source | Select an existing SAP source system | [SAP Connection](sap-connection/index.md)
+	:designer-log1: | Log | Open extraction log | [Extraction Logs](logs.md)
+	:designer-run:| Run  | Run a selected extraction | [Run an Extraction](run-extractions.md/#run-extractions-in-the-designer)
 	:designer-abort: | Abort | Abort a selected extraction | -
-	:material-timer-outline: | Clear Result Cache | Clear extraction cache | [Cache results](#link general-settings#misc-tab)
+	:material-timer-outline: | Clear Result Cache | Clear extraction cache | [Cache results](table/general-settings.md/#misc-tab)
 	:designer-refresh: | Refresh | Refresh extraction status | -
-	:material-filter: | Filter | Define filters or keywords |  [Define Keywords](#link general-settings#misc-tab)
+	:material-filter: | Filter | Define filters or keywords |  [Define Keywords](table/general-settings.md/#misc-tab)
 {% endif %}
 
 === "Server"
 
 	Icon | Menu Item |Description | Details
 	-----|------------ | ------------ | -------------
-	:designer-log1: | Logs  | Open server logs | [Server Logs](#link)
+	:designer-log1: | Logs  | Open server logs | [Server Logs](logs.md)
 	:designer-settings: | Settings | Open server settings | [Server Settings](server/server-settings.md)
 	:designer-source: | Manage Sources | Edit connection to source system | [SAP Connection](sap-connection/index.md)
 	{% if page.meta.product == "xtract-universal" %}:designer-destination: | Manage Destinations | Edit or delete destinations | [Destinations](destinations/index.md).{% endif %}
@@ -100,8 +100,8 @@ The Designer features different functionalities to design and configure extracti
 
 	Icon | Menu Item |Description | Details
 	-----|------------ | ------------ | -------------
-	:designer-keyword: | Set User Password  | Set or change user password  | [User Managements](security/user-management.md#user)
-	:designer-user: | Manage Users | Manage user groups | [User Groups](security/user-management.md#user-groups)
+	:designer-keyword: | Set User Password  | Set or change user password  | [User Managements](access-restrictions/user-management.md)
+	:designer-user: | Manage Users | Manage user groups | [User Groups](access-restrictions/user-management.md)
 
 === "Help"
 
@@ -117,42 +117,41 @@ The Designer features different functionalities to design and configure extracti
 
 ![main-window-guibuttons](../assets/images/{{ abbr }}/documentation/designer/main-window-guibuttons.png){:class="img-responsive"}
 
-
 {% if page.meta.product == "board-connector" %}
 
 Icon | Menu Item |Description | Details
 -----|------------ | ------------ | -------------
-:designer-add: | New | Create a new extraction | [Define a Table Extraction](#link)
+:designer-add: | New | Create a new extraction | [Create an Extraction](../getting-started.md/#create-an-extraction)
 :pen-button: | Edit |  Edit existing extraction | -
 :material-trash-can-outline:  | Delete |  Delete existing extraction  | -
 :designer-clone: | Clone |  Clone existing extraction  | - 
 :designer-refresh: | Refresh | Update of the extraction status  | -
 :material-filter: | Search |  Filter extraction names | [List of Extractions](#list-of-extractions)
-:designer-source: | Source|  Select existing SAP source system  | [SAP Connection](.sap-connection/index.md)
-:designer-log1:| Log | Open extraction log  | [Extraction Logs](#link)
-:designer-run: | Run  | Run a selected extraction  | [Run an Extraction](#link)
+:designer-source: | Source|  Select existing SAP source system  | [SAP Connection](sap-connection/index.md)
+:designer-log1:| Log | Open extraction log  | [Extraction Logs](logs.md)
+:designer-run: | Run  | Run a selected extraction  | [Run an Extraction](run-extractions.md/#run-extractions-in-the-designer)
 
 {% else %}
 
 Icon | Menu Item |Description | Details
 -----|------------ | ------------ | -------------
-:designer-add: | New | Create a new extraction | [Define a Table Extraction](#link)
+:designer-add: | New | Create a new extraction | [Create an Extraction](../getting-started.md/#create-an-extraction)
 :pen-button: | Edit |  Edit existing extraction | -
 :material-trash-can-outline:  | Delete |  Delete existing extraction  | -
 :designer-clone: | Clone |  Clone existing extraction  | - 
 :designer-refresh: | Refresh | Update of the extraction status  | -
 :material-filter: | Search |  Filter extraction names | [List of Extractions](#list-of-extractions)
-:designer-source: | Source|  Select existing SAP source system  | [SAP Connection](.sap-connection/index.md)
+:designer-source: | Source|  Select existing SAP source system  | [SAP Connection](sap-connection/index.md)
 :designer-destination: | Destination | Select destination  | [Destinations](destinations/index.md)
-:designer-log1:| Log | Open extraction log  | [Extraction Logs](#link)
-:designer-run: | Run  | Run a selected extraction  | [Run an Extraction](#link)
+:designer-log1:| Log | Open extraction log  | [Extraction Logs](logs.md)
+:designer-run: | Run  | Run a selected extraction  | [Run an Extraction](execute-and-automate/run-an-extraction.md/#run-extractions-in-the-designer)
 
 
 ### Extraction Groups
 
 ![main-window-extractionlist](../assets/images/{{ abbr }}/documentation/designer/main-window-treeview-main.png){:class="img-responsive"}
 
-Extractions can be organized in groups, see [Organize Extractions](../organize-extractions).
+Extractions can be organized in groups, see [Organize Extractions](organize-extractions.md).
 The treeview in the main window of the Designer displays all extraction groups and reflects the folder structure in the following directory: 
 `{{ installationDir }}\config\extractions`.
 
@@ -184,13 +183,13 @@ Icon | Menu Item |Description | Details
 :pen-button: | Edit | Edit an existing extraction | -
 :material-trash-can-outline:| Delete | Delete an existing extraction | -
 :designer-clone: | Clone | Clone an existing extraction | -
-:designer-keyword: | Add/Remove Keywords | Define keywords of selected extractions | [General Settings](#link)
-:designer-log1: | Log | Open extraction log | [Extraction Logs](#link)
+:designer-keyword: | Add/Remove Keywords | Define keywords of selected extractions | [General Settings](table/general-settings.md)
+:designer-log1: | Log | Open extraction log | [Extraction Logs](logs.md)
 :designer-source: | Source settings| Select an existing SAP source system | -
 :designer-destination: | Destination settings | Select a destination | [Destinations](destinations/index.md)
-:designer-run: | Run  | Run a selected extraction | [Run an Extraction](#link)
+:designer-run: | Run  | Run a selected extraction | [Run an Extraction](execute-and-automate/run-an-extraction.md/#run-extractions-in-the-designer)
 :designer-run-in-browser: | Run in browser | Run a selected extraction in the default web browser | - 
-:designer-run-in-app: | Run in xu.exe | Run a selected extraction in the command-line tool xu.exe | [Execute Extractions with xu.exe](#link)
+:designer-run-in-app: | Run in xu.exe | Run a selected extraction in the command-line tool xu.exe | [Execute Extractions with xu.exe](execute-and-automate/call-via-commandline.md)
 :designer-abort: | Abort | Abort a selected extraction | -
 
 {% else %}
@@ -200,10 +199,10 @@ Icon | Menu Item |Description | Details
 :pen-button: | Edit | Edit an existing extraction | -
 :material-trash-can-outline:| Delete | Delete an existing extraction | -
 :designer-clone: | Clone | Clone an existing extraction | -
-:designer-keyword: | Add/Remove Keywords | Define keywords of selected extractions | [General Settings](#link)
-:designer-log1: | Log | Open extraction log | [Extraction Logs](#link)
+:designer-keyword: | Add/Remove Keywords | Define keywords of selected extractions | [General Settings](table/general-settings.md)
+:designer-log1: | Log | Open extraction log | [Extraction Logs](logs.md)
 :designer-source: | Source settings| Select an existing SAP source system | -
-:designer-run: | Run  | Run a selected extraction | [Run an Extraction](#link)
+:designer-run: | Run  | Run a selected extraction | [Run an Extraction](run-extractions.md/#run-extractions-in-the-designer)
 :designer-run-in-browser: | Run in browser | Run a selected extraction in the default web browser | - 
 :designer-abort: | Abort | Abort a selected extraction | -
 

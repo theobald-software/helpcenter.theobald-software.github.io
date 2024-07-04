@@ -18,7 +18,7 @@ For a full migration, restore the entire `config` folder from your backup on the
 - Conduct a **partial migration** when moving parts of your setup to a different machine, e.g., if you transport defined {{ components }} from a test environment to a production environment.<br>
 For a partial migration, restore the parts of the backup you want to migrate by copying only the relevant [configuration files](#configuration-files), e.g., the `sources` or `extractions` folder, on the new machine.
 
-Restart the [{{ productName }} Service](../server/start-server) if you copy the `server` folder to the new machine.
+Restart the [{{ productName }} Service](../server/index.md) if you copy the `server` folder to the new machine.
 
 !!! note
     When migrating to a new server, a new license file must be issued for that server.
@@ -33,7 +33,7 @@ Use the `config` directory to set up a version control system or to create manua
 
 |Filename      | Description                                                                                                                                                  |
 |:-------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <pre>extractions</pre> | Directory containing the defined [{{ components }}](../getting-started/define-a-table-extraction). Each sub-directory contains an {{ extraction }} of the same name.          |
+| <pre>extractions</pre> | Directory containing the defined {{ components }}. Each sub-directory contains an {{ extraction }} of the same name.          |
 | <pre>servers</pre>     | Directory containing the [server settings](../server/server-settings).                                                                                        |
 | <pre>sources</pre>     | Directory containing [SAP connections](../sap-connection/index.md). Each sub-directory contains a source of the same name.                                              |
 | <pre>version.txt</pre> | Text file containing the product version of the current configuration, see [Installation](installation.md/#installation-directory-files).|

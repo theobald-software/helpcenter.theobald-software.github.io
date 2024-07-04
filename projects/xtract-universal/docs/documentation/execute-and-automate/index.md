@@ -16,8 +16,8 @@ Examples on how to call extractions:
 
 Extractions are triggered by an HTTP request and executed on the [{{ productName }} server](../server/index.md).
 
-The configuration of [source](../sap-connection/index.md#connect-to-sap), [destination](../destinations/index.md) and [extraction](#link) defines how the data transfer is performed. <br>
-This configuration can contain dynamic elements, like [runtime parameters](extraction-parameters.md) and [script expressions](../parameters/script-expressions.md).
+The configuration of [source](../sap-connection/index.md#connect-to-sap), [destination](../destinations/index.md) and [extraction type](../introduction.md/#extraction-types) defines how the data transfer is performed. <br>
+This configuration can contain dynamic elements, like [extraction parameters](../parameters/extraction-parameters.md) and [script expressions](../parameters/script-expressions.md).
 Depending on the destination, the execution of an extraction can be triggered either interactively or unattended.
 
 #### Interactive Extractions

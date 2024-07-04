@@ -44,5 +44,5 @@ Install the custom function module /THEO/READ_TABLE, see [Function Module for Ta
 #### Related Links
 - [Knowledge Base: Import an SAP Transport Request](../../knowledge-base/import-an-sap-transport-request.md)
 - [Knowledge Base: Delta Mechanism of Table CDC](../../knowledge-base/table-cdc-mechanism.md)
-- [Table CDC - Requirements](../table-cdc/index.md#requirements)
+- [Table CDC - Prerequisites](../table-cdc/index.md#prerequisites)
 

@@ -44,4 +44,4 @@ When importing the transport requests on older SAP releases a syntax error may o
 *****
 #### Related Links
 - [Knowledge Base: Import an SAP Transport Request](../../knowledge-base/import-an-sap-transport-request.md)
-{% if page.meta.product != "yunio" %}- [{{ table }} {{ component }}](../table/index.md){% else %}- [{{ table }} {{ component }}](../tables-and-views/index.md){% endif %}
+{% if page.meta.product != "yunio" %}- [{{ table }} {{ Component }}](../table/index.md){% else %}- [{{ table }} {{ Component }}](../tables-and-views/index.md){% endif %}
