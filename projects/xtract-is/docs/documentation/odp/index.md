@@ -13,6 +13,6 @@ The {{ odp }} {{ component }} can be used to extract data via the SAP Operationa
 
 {% include "components/odp/auth-warning.md" %}
 
-{% include "components/xu-bc-new.md" %}
+{% include "components/xis-new.md" %}
 
 {% include "components/odp/define-an-odp-extraction.md" %}

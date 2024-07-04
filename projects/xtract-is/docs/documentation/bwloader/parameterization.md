@@ -18,7 +18,7 @@ The following settings in the {{ bwloader }} {{ component }} allow entry of an S
 {% include "components/xis-ssis-notation.md" %}
 
 
-### Custom Properties
+### Custom Properties of {{ bwloader }}
 
 The *Custom Properties* are properties that are unique to the {{ component }}.
 When parameterizing the component using SSIS variables, the *Custom Properties* are overwritten.

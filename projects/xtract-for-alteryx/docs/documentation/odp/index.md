@@ -17,6 +17,3 @@ The {{ odp }} {{ component }} can be used to extract data via the SAP Operationa
 
 {% include "components/odp/define-an-odp-extraction.md" %}
 
-****
-#### Related Links
-- [Youtube Tutorial: SAP ODP incremental load to SQL server](https://www.youtube.com/watch?v=-7pEm2VVPRg)

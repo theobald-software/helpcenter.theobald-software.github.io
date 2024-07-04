@@ -8,6 +8,7 @@ nav:
     - Xtract BW Loader: bwloader
     - Xtract DeltaQ: deltaq
     - Xtract Hierarchy: hierarchy
+    - Xtract ODP: odp
     - Xtract OHS: ohs
     - Xtract Query: query
     - Xtract Report: report

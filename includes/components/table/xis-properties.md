@@ -1,6 +1,6 @@
 
-{% if page.meta.componentFolder != "ohs" %}
-####ColumnNameStyle
+{% if page.meta.componentFolder == "table" %}
+#### ColumnNameStyle
 
 - *Code*: the SAP technical column name is used as column name in the output, e.g., MAKTX.
 - *PrefixedCode*: the SAP technical column name is prefixed by SAP object name and the tilde character, e.g., MAKT~MAKTX.

@@ -27,7 +27,7 @@ Follow the steps below to edit selection fields and filter data:
 	- Click **[Range]** to check if the data is (not) within a specified range of values.
 	{% if page.meta.product != "xtract-is" %}- Click **[List]** to check if the data is (not) part of a specified list of values. {% endif %}
 3. In the column **Sign** :number-1:, select *Include* to add the filtered data to the output or select *Exclude* to remove the filtered data from the output.<br>
-![edit-selections](../../assets/images/documentation/components/edit-selections.png){:class="img-responsive"}
+{% if page.meta.product != "xtract-is" %}![edit-selections](../../assets/images/documentation/components/edit-selections.png){:class="img-responsive"}{% else %}![edit-selections](../../assets/images/documentation/components/edit-selections-xis.png){:class="img-responsive"}{% endif %}
 4. In the column **Option** :number-2:, select an operator. The operator filters data according to the table below.
 	
 	| Operator |  Description    |  
