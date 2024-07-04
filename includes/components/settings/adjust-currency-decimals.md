@@ -18,3 +18,7 @@ Use the **[Load live preview]** function to find the correct currency field/s.
 - If the currency field is part of the table, add it to the output.
 - If the currency field is in another table, join the tables. 
 - If the reference is not part of a table, **Adjust Currency Decimals** cannot be used.
+
+!!! note
+	The multiplication factor used in *Adjust Currency Decimals* is determined by the SAP currency table TCURX. 
+	To access the table, the following SAP Authority objects must be set in SAP: *S_TABU_NAM	ACTVT=03; TABLE=TCURX*.

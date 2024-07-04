@@ -4,6 +4,7 @@ description: Datasource parameters
 ---
 
 This page shows how to filter the data that is extracted by the {{ deltaq }} {{ component }}.
+Selections limit the result set of the {{ deltaq }} {{ component }} to extract only records that match the selection.
 
 {% include "components/selections.md" %}
 

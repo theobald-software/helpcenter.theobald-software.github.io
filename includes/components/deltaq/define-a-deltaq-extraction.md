@@ -73,7 +73,7 @@ The {{ deltaq }} {{ component }} offers the following options for DataSource ext
 	!!! tip
 		Unlike attributes and transactions, Hierarchies do not have to be activated.
 		
-You can now run the {{ extraction }}{% if page.meta.product == "xtract-universal" %}, see [Execute and Automate Extractions](../execute-and-automate/index.md){% endif %}.
+You can now run the {{ extraction }}{% if page.meta.product == "xtract-universal" %}, see [Execute and Automate Extractions](../execute-and-automate/index.md){% elif page.meta.product == "board-connector" %}, see [Run Extractions](../run-extractions.md){% endif %}.
 
 ### Execute DeltaQ in Parallel
 

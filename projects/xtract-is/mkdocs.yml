@@ -90,7 +90,6 @@ plugins:
   #      'old.md': 'new.md'
   #      'old/file.md': 'new/file.md'
   #      'some_file.md': 'http://external.url.com/foobar'
-  - pagenav-generator
   - privacy:
       links_attr_map:
         target: _blank # opens all external links in new tabs
@@ -99,6 +98,7 @@ plugins:
       separator: '[\s\-,:!=\[\]()"/]+'
   - typeset # preserve format of titles and headlines in navigation and toc
   - awesome-pages # define navigation in .pages files
+  - pagenav-generator
   - macros:
       include_dir: includes
   #- swagger-ui-tag

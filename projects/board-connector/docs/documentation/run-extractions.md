@@ -4,10 +4,10 @@ description: How to run extractions
 ---
 
 This page shows how to run extractions directly in the Designer and in Board. <br>
-Extractions are triggered by an HTTP request and executed on the Board Connector Server.
+Extractions are triggered by an HTTP request and executed on the [Board Connector Server](server/index.md).
 
 The configuration of [source](../sap-connection.md/#connect-to-sap), destination and [{{ component }}](../introduction.md/#extraction-types) defines how the data transfer is performed.
-This configuration can contain dynamic elements, like runtime parameters and [script expressions](../parameters/script-expressions.md).
+This configuration can contain dynamic elements, like [extraction parameters](parameters/extraction-parameters.md) and [script expressions](parameters/script-expressions.md).
 
 ### Run Extractions in the Designer
 

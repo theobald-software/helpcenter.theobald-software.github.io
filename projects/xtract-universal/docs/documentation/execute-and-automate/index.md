@@ -4,7 +4,7 @@ description: Execute and Automate Extractions
 ---
 
 This page shows how to run extractions automatically and manually. 
-Examples on how to create and call extractions:
+Examples on how to call extractions:
 
 - [Commandline](call-via-commandline.md)
 - [Webservice](../../web-api.md) 
@@ -14,7 +14,7 @@ Examples on how to create and call extractions:
 
 ### About the Execution of Extractions
 
-Extractions are triggered by an HTTP request and executed on the [{{ productName }} server](../server/index.md#run-extraction-on-the-server).
+Extractions are triggered by an HTTP request and executed on the [{{ productName }} server](../server/index.md).
 
 The configuration of [source](../sap-connection/index.md#connect-to-sap), [destination](../destinations/index.md) and [extraction](#link) defines how the data transfer is performed. <br>
 This configuration can contain dynamic elements, like [runtime parameters](extraction-parameters.md) and [script expressions](../parameters/script-expressions.md).

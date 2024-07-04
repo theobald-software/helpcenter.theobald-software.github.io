@@ -27,6 +27,8 @@ The function groups /THEO/CDC_ECC and /THEO/CDC_S4 both contain the following fu
 | /THEO/DELETE_LOG_TABLE | Function module for deleting log tables |
 | /THEO/DELETE_TRIGGERS | Function module for deleting DB triggers for CDC |
 | /THEO/GET_DB | Get database system identifier|
+| /THEO/GET_INFO | Get package information|
+| /THEO/GET_TRIGGERS | Function module to retrieve triggers|
 
 !!! note
 	Take a look at the README.pdf in the installation directory (e.g.,`{{ installationDir }}\ABAP\README.pdf`) before installing any custom function modules.

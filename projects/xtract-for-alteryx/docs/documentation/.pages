@@ -6,6 +6,7 @@ nav:
     - Xtract BAPI: bapi
     - Xtract Cube: bwcube
     - Xtract Hierarchy: hierarchy
+    - Xtract ODP: odp
     - Xtarct Query: query
     - Xtract Report: report
     - Xtract Table: table
