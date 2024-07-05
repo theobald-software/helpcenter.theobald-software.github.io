@@ -28,7 +28,7 @@ An SAP connection is required to use any Xtract IS {{ component }}.
 Follow the steps below to create a connection manager that connects to SAP:
 
 1. Create a new Integration Services Project and add a data flow task.
-2. Right-click in the connection managers area and select **New Connection** from the context menu.
+2. Right-click within the “Solution Explorer” area and select **New Connection Manager** from the context menu.
 The window "Add SSIS Connection Manager" opens.<br>
 ![Connection-Manager-01](../../assets/images/xis/documentation/sap-connection/Connection-Manager-01.png){:class="img-responsive"}
 3. Select the XTRACT Connection Manager from the list of available connection managers and click **[Add...]**. 
