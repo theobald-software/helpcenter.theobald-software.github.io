@@ -17,7 +17,7 @@ The {{ table }} {{ component }} offers the following options for table extractio
 
 1. Select the columns you want to extract. By default all columns are selected. Deselect the columns you do not want to extract.<br>
 ![Table-Form](../../assets/images/{{ abbr }}/documentation/table/table_fields_filter.png){:class="img-responsive"}
-2. Define a [WHERE clause](where-clause.md) or a [HAVING clause](having-clause.md) to filter table records. By default all data is extracted.
+2. Optional: Define a [WHERE clause](where-clause.md) or a [HAVING clause](having-clause.md) to filter table records. By default all data is extracted.
 3. Optional: Join two or more tables and extract the result of the join. For more information, see [Table Joins](table-join.md).
 4. Click {{ previewBtn }} to display a live preview of the first 100 records. 
 5. Check the [{{ Settings }}](settings.md){% if page.meta.product == "xtract-universal" or page.meta.product == "board-connector"%} and the [General Settings](general-settings.md){% endif %} before running the {{ extraction }}.
