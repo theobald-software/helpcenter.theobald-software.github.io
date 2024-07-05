@@ -38,7 +38,7 @@ Follow the steps below to create an Xtract data source that connects to SAP:
 3. Select the **Xtract** technology to create an Xtract data source.
 4. Fill out the data source settings for your SAP system, see [Xtract Data Source Settings](#data-source-settings).<br>
 ![Data-Connection-Manager](../../assets/images/xfa/documentation/sap-connection/data-connection-manager.png){:class="img-responsive"}
-4. Click **[Save]** to save the SAP connection. The subsection *Connection* is displayed.
+4. Click **[Save]** to save the SAP connection. The subsection *Connection* opens.
 5. In the subsection *Connection* select one of the following authentication methods: <br>
 	- *Plain* uses the SAP username and password.
 	- [*SNC*](snc-authentication.md) uses an encrypted connection between Xtract for Alteryx and SAP with an SAP username and password. 

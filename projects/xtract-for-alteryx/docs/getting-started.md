@@ -41,7 +41,7 @@ Before connecting to SAP for the first time, set up an SAP dialog user with the 
 3. Select the Xtract technology to create an Xtract data source.
 4. Enter the system details of your SAP system.
 Input values for the SAP connection can be found in the Properties of the SAP Logon Pad or they can be requested from the SAP Basis team.
-5. Click **[Save]** to save the SAP connection. The subsection *Connection* is displayed.
+5. Click **[Save]** to save the SAP connection. The subsection *Connection* opens.
 6. In the subsection *Connection*, select an authentication methods and link or create and link the credential of your SAP system or dialog user to the data source.<br>
 ![new-data-source](assets/images/xfa/documentation/sap-connection/new-data-source.gif)
 
