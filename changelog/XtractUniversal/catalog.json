@@ -1,5 +1,61 @@
 [
   {
+    "Version": "6.8.8.0",
+    "LegacyReleaseDate": "2024-07-04 16:49:33Z",
+    "Changes": [
+      {
+        "Product": "XtractUniversal",
+        "Component": "General",
+        "Message": "Fixed a bug in xu.exe that caused it to crash when generating the password file due to a missing library which was not actually required."
+      }
+    ]
+  },
+  {
+    "Version": "6.8.7.2",
+    "LegacyReleaseDate": "2024-07-03 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "TableCDC",
+        "Message": "Fixed a bug that caused trigger creation to fail on MaxDB databases. Requires update of /THEO/CDC_ECC"
+      }
+    ]
+  },
+  {
+    "Version": "6.8.7.1",
+    "LegacyReleaseDate": "2024-07-03 00:00:00Z",
+    "IsCritical": true,
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "TableCDC",
+        "Message": "Fixed a bug that could cause optimization logic of delta extractions to not include all delta records in the result. Bug introduced in 2.2.0"
+      }
+    ]
+  },
+  {
+    "Version": "6.8.7.0",
+    "LegacyReleaseDate": "2024-07-01 18:53:48Z",
+    "Changes": [
+      {
+        "Product": "XtractUniversal",
+        "Component": "General",
+        "Message": "Fixed a usability issue in the config converter where the information that pressing any key will close the application. The prompt will now appear after all other text. In addition the application will now close automatically when the conversion did not run into errors."
+      }
+    ]
+  },
+  {
+    "Version": "6.8.6.0",
+    "LegacyReleaseDate": "2024-07-01 13:10:10Z",
+    "Changes": [
+      {
+        "Product": "XtractUniversal",
+        "Component": "General",
+        "Message": "Fixed a bug that causes missing sources after running the config converter when the service user was changed."
+      }
+    ]
+  },
+  {
     "Version": "6.8.5.1",
     "LegacyReleaseDate": "2024-06-26 00:00:00Z",
     "Changes": [
