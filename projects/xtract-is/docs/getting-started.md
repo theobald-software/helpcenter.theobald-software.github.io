@@ -15,7 +15,7 @@ tags:
 ### Installation
 
 1. [Download](https://theobald-software.com/en/download-trial/) a 30 days trial version of Xtract IS.
-2. Make sure to meet all [prerequisites](documentation/setup/installation.md#prerequisites), before installing Xtract IS.
+2. Make sure you meet all [prerequisites](documentation/setup/installation.md#prerequisites), before installing Xtract IS.
 3. Run the Xtract IS executable (XtractISSetup.exe) to install Xtract IS.
 For information on system requirements, see [Requirements](documentation/setup/requirements.md).
 4. Open Visual Studio and create a Visual Studio Integration Services project.
@@ -39,22 +39,19 @@ The XTRACT Connection Manager is now available in the connection managers area.
 3. Double-click the XTRACT Connection Manager. The window "XTRACT Connection Manager" opens.<br>
 ![Connection-Manager](assets/images/xis/documentation/sap-connection/Connection-Manager.png){:class="img-responsive" }
 4. Enter the system details of your SAP system and enter the SAP username and password of an SAP system or dialogue user.  
-
-	!!! tip
-		Input values for the SAP connection can be found in the Properties of the SAP Logon Pad or they can be requested from the SAP Basis team.
-	
+Input values for the SAP connection can be found in the Properties of the SAP Logon Pad or they can be requested from the SAP Basis team.
 5. Click **[Test connection]** to validate the connection parameters. 
 6. Click **[OK]** to save the XTRACT Connection Manager.
 
 For more information, see [Documentation: SAP Connection](documentation/sap-connection/index.md).
 
 
-### Add Xtract {{ Components }} to a Data Flow Task
+### Use Xtract {{ Components }} in Data Flow Tasks
 
 1. Set up a **Data Flow Task** by dragging the dataflow component into the "Control Flow" canvas. 
 Double-click the dataflow component to open the dataflow canvas.
 2. Make sure that at least one XTRACT Connection Manager is available in the data flow task.
-3. Drag & drop an Xtract {{ components }} from the SSIS toolbox into the data flow task:
+3. Drag & drop an Xtract {{ component }} from the SSIS toolbox into the data flow task:
 ![xis_component](assets/images/xis/getting-started/xis_component.png){:class="img-responsive"}
 4. Double-click the Xtract {{ component }}. An XTRACT Connection Manager is automatically assigned and the main window of the {{ component }} opens. 
 The majority of the functions of the {{ component }} can be accessed in the main window.
