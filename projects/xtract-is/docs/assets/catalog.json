@@ -1,5 +1,28 @@
 [
   {
+    "Version": "7.7.4.8",
+    "LegacyReleaseDate": "2024-07-03 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "TableCDC",
+        "Message": "Fixed a bug that caused trigger creation to fail on MaxDB databases. Requires update of /THEO/CDC_ECC"
+      }
+    ]
+  },
+  {
+    "Version": "7.7.4.7",
+    "LegacyReleaseDate": "2024-07-03 00:00:00Z",
+    "IsCritical": true,
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "TableCDC",
+        "Message": "Fixed a bug that could cause optimization logic of delta extractions to not include all delta records in the result. Bug introduced in 2.2.0"
+      }
+    ]
+  },
+  {
     "Version": "7.7.4.1",
     "LegacyReleaseDate": "2024-06-26 00:00:00Z",
     "Changes": [
