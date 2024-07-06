@@ -25,7 +25,7 @@ This article leads you through all necessary steps to set up the following workf
 ### Prerequisites
 
 To use the Xtract Table component, access to the designated authority objects (RFC) in SAP must be available.<br>
-For more information, refer to the knowledge base article [SAP User Rights: Table](../sap/authority-objects-sap-user-rights#table).
+For more information, refer to the knowledge base article [SAP User Rights: Table](../documentation/setup-in-sap/sap-authority-objects.md/#table).
 
 ### Scalar Parameters
 
@@ -36,7 +36,7 @@ The depicted example uses the runtime parameter to dynamically filter SAP journa
 ![xfa_create_table_extraction_01_extraction_01](../assets/images/xfa/articles/xfa_create_table_extraction_01.png){:class="img-responsive" width="900px"}
 2. Select an SAP connection :number-2:. If no SAP connection is available, create a new connection, see [Documentation: SAP Connection](../documentation/sap-connection/index.md).
 3. Click **[Edit]** :number-3: to open the main window of the Xtract Table component.
-4. [Look up](xtract-universal/table/extract-table-data#look-up-a-table) an SAP table, e.g., *ACDOCA* (Universal Journal Entry Line Items).<br>
+4. [Look up](../documentation/table/index.md/#look-up-an-sap-table) an SAP table, e.g., *ACDOCA* (Universal Journal Entry Line Items).<br>
 ![single-table](../assets/images/xfa/articles/single-table.png){:class="img-responsive"}
 5. Click **[Edit Parameters]**. The window "Edit Runtime Parameters" opens.
 6. Click **[Add Scalar]** :number-4: to create a new runtime parameter for passing single values.<br>
@@ -70,7 +70,7 @@ The depicted example uses the runtime parameter to dynamically filter SAP journa
 ![xfa_create_table_extraction_01_extraction_01](../assets/images/xfa/articles/xfa_create_table_extraction_01.png){:class="img-responsive" width="900px"}
 2. Select an SAP connection :number-2:. If no SAP connection is available, create a new connection, see [Documentation: SAP Connection](../documentation/sap-connection/index.md).
 3. Click **[Edit]** :number-3: to open the main window of the Xtract Table component.
-4. [Look up](xtract-universal/table/extract-table-data#look-up-a-table) an SAP table, e.g., *ACDOCA* (Universal Journal Entry Line Items).<br>
+4. [Look up](../documentation/table/index.md/#look-up-an-sap-table) an SAP table, e.g., *ACDOCA* (Universal Journal Entry Line Items).<br>
 ![single-table](../assets/images/xfa/articles/single-table.png){:class="img-responsive"}
 5. Click **[Edit Parameters]**. The window "Edit Runtime Parameters" opens.
 6. Click **[Add List]** :number-4: to create a new runtime parameter that can pass multiple values.<br>
@@ -103,7 +103,7 @@ The depicted example uses the runtime parameters to dynamically filter SAP journ
 ![xfa_create_table_extraction_01_extraction_01](../assets/images/xfa/articles/xfa_create_table_extraction_01.png){:class="img-responsive" width="900px"}
 2. Select an SAP connection :number-2:. If no SAP connection is available, create a new connection, see [Documentation: SAP Connection](../documentation/sap-connection/index.md).
 3. Click **[Edit]** :number-3: to open the main window of the Xtract Table component.
-4. [Look up](xtract-universal/table/extract-table-data#look-up-a-table) an SAP table, e.g., *ACDOCA* (Universal Journal Entry Line Items).<br>
+4. [Look up](../documentation/table/index.md/#look-up-an-sap-table) an SAP table, e.g., *ACDOCA* (Universal Journal Entry Line Items).<br>
 ![multiple-table](../assets/images/xfa/articles/single-table.png){:class="img-responsive"}
 5. Click **[Edit Parameters]**. The window "Edit Runtime Parameters" opens.
 6. Click **[Add List]** :number-4: to create new runtime parameters that can pass multiple values.<br>
@@ -129,5 +129,5 @@ The Xtract Table component can now be used to dynamically filter SAP data.
 
 *****
 #### Related Links
-- [Documentation: Xtract Table](xtract-for-alteryx/table)
-- [Documentation: Sample Workflows](xtract-for-alteryx/sample-workflows)
+- [Documentation: Xtract Table](../documentation/table/index.md)
+- [Documentation: Sample Workflows](../sample-workflows.md)

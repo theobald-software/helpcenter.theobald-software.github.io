@@ -13,7 +13,7 @@ The following SAP Systems are supported:
 
 	<div class="mdx-columns" markdown>
 
-	{% if  page.meta.product == "erpconnect" %}- [SAP S/4HANA](../../samples/supported-sap-and-hana-versions.md){% else %}- [SAP S/4HANA](../../knowledge-base/supported-sap-and-hana-versions.md){% endif %}
+	{% if  page.meta.product == "erpconnect" %}- [SAP S/4HANA](../../samples/supported-sap-and-hana-versions.md){% else %}- [SAP S/4HANA](site:knowledge-base/supported-sap-and-hana-versions){% endif %}
 	- mySAP
 	- SAP Application Server ABAP
 	- Message Server

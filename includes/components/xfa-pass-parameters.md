@@ -9,7 +9,7 @@ Follow the steps below to replace {{ variables }} with actual values at runtime:
 ![input](../../assets/images/xfa/documentation/{{ page.meta.componentFolder }}/input.png){:class="img-responsive" }
 4. Make sure that the data type of the input values match the data type of the corresponding {{ variable }}.
 5. Make sure that the name of the input matches the name of the corresponding {{ variable }}. The values of the input is automatically assigned to a {{ variable }} by the same name.
-6. Connect the input to the {{ page.meta.componentName }} {{ component }} using the input anchor "P" :number-2:.{% if page.meta.componentFolder == "bapi" %}<br>To pass input tables, use the input anchor "I", see [Mapping Input Tables](input-and-output.md#mapping-input-tables).{% endif %}
+6. Connect the input to the {{ page.meta.componentName }} {{ component }} using the input anchor "P" :number-2:.{% if page.meta.componentFolder == "bapi" %}<br>To pass input tables, use the input anchor "I", see [Mapping Input Tables](input-and-output.md#map-input-tables).{% endif %}
 7. Run the {{ extraction }} to test if the {{ variables }} are assigned correctly.
 
 !!! note 

@@ -31,7 +31,7 @@ List of *Data Flow Properties* that can be parameterized:
 | *[Xtract.ODP].[ExtractDataOnDeltaInit]*| Runs a delta initialization with or without extracting data on init, see [Update Mode](./odp-define#update-mode).|
 | *[Xtract.ODP].[HierarchyName]*| Applies to Hierarchy DataSources only, see [Select Hierarchy](provider-context.md/#hierarchies). Example: Loop over a list of hierarchies.  |
 | *[Xtract.ODP].[PackageSize]*| Corresponds to the setting [Package Size](settings.md/#package-size). |
-| *[Xtract.ODP].[ &lt; Selection Parameter &gt;]*| Selection parameters that are defined in the component are exposed as properties, see [Edit Parameters](edit-runtime-parameters.md). |
+| *[Xtract.ODP].[ &lt; Selection Parameter &gt;]*| Selection parameters that are defined in the component are exposed as properties, see [Edit Parameters](selections.md/#use-ssis-variables-in-selections). |
 
 
 ### Custom Properties of {{ odp }}

@@ -33,7 +33,7 @@ Place the "{{ setup }}License.json" file that is provided in the [Customer Porta
 {% endif %}
 {% endif %}
 
-{% if page.meta.product != "xtract-for-alteryx" %}
+{% if page.meta.product != "xtract-for-alteryx" and page.meta.product != "xtract-is" %}
 
 ### Move a License to a new Server
 
