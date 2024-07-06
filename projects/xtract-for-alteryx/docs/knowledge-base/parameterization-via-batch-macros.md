@@ -4,7 +4,7 @@ description: Parameterizing via Batch Macro and Control Parameters
 ---
 
 There are 2 ways to parameterize Xtract components:
-- Pass parameters using the input anchors of Xtract components, see [Documentation: Parameterization](../documentation/parameterization.md). <br>
+- Pass parameters using the input anchors of Xtract components. <br>
 Input anchors are available for all Xtract components as of {{ productName }} version 1.19.
 - Pass parameters using [control parameters](http://downloads.alteryx.com/betawh_xnext/ControlParam.htm) in [batch macros](http://downloads.alteryx.com/betawh_xnext/BatchMacro.htm).<br> 
 The parameterization via batch macros is supported by Xtract BAPI, Xtract Table, Xtract Cube and Xtract ODP.
@@ -16,15 +16,15 @@ The following example uses the Xtract ODP component to show how to parameterize 
 
 1. Create a **new** workflow.
 2. Add an Xtract ODP component. 
-3. [Look up](https://help.theobald-software.com/en/xtract-for-alteryx/odp/odp-define#look-up-data-objects) the DataSource *0MATERIAL_ATTR*.
-4. Create 2 new [runtime parameters](https://help.theobald-software.com/en/xtract-for-alteryx/odp/edit-runtime-parameters#create-runtime-parameters) of type *String* and name them *p_MATNR_low* and *p_MATNR_high*. 
-5. Assign the parameters as [selection filters](https://help.theobald-software.com/en/xtract-for-alteryx/odp/odp-define#selections-and-filters) to the column *MATNR*, so that only materials with numbers between *p_MATNR_low* and *p_MATNR_high* are included in the result data.
+3. [Look up](../documentation/odp/index.md/#look-up-data-objects) the DataSource *0MATERIAL_ATTR*.
+4. Create 2 new [runtime parameters](../documentation/odp/edit-runtime-parameters.md/#create-runtime-parameters) of type *String* and name them *p_MATNR_low* and *p_MATNR_high*. 
+5. Assign the parameters as [selection filters](../documentation/odp/selections.md/#edit-selections) to the column *MATNR*, so that only materials with numbers between *p_MATNR_low* and *p_MATNR_high* are included in the result data.
 
-For more detailed information on how to create an ODP extraction, see [Documentation: Define an ODP Extraction](https://help.theobald-software.com/en/xtract-for-alteryx/odp/odp-define).<br>
+For more detailed information on how to create an ODP extraction, see [Documentation: Define an ODP Extraction](../documentation/odp/index.md/#define-the-xtract-odp-component).<br>
 
 ### Create a Batch Macro with Control Parameters
 
-1. Create a new workflow that contains an extraction as described in [Creating an Extraction for a Batch Macro](#create-an-extraction-for-a-batch-macro).
+1. Create a new workflow that contains an extraction as described in [Create an Extraction for a Batch Macro](#create-an-extraction-for-a-batch-macro).
 2. To use the workflow as a batch macro, navigate to the *Workflow Configuration* and select **Batch Macro** as the Workflow Type from drop down list.<br>
 ![BatchMacro](../assets/images/xfa/articles/batchmakro.png){:class="img-responsive"}
 3. Save the file. Once the workflow is saved as a batch macro each tool in the workflow gets a lightning bolt anchor. Only *Interface* Tools can connect to these anchors.

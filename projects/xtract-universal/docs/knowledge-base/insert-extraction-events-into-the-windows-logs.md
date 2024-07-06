@@ -52,4 +52,4 @@ The logs can be viewed in the Windows Event Viewer.
 ***********
 #### Related Links
 
-- [Schedule Extractions using xu.exe command line](https://help.theobald-software.com/en/xtract-universal/execute-and-automate-extractions/call-via-scheduler)
+- [Schedule Extractions using xu.exe command line](../documentation/execute-and-automate/call-via-scheduler.md)

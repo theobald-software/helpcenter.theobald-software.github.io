@@ -10,15 +10,15 @@ The xu-config.exe tool supports the creation of the following {{ components }} a
 
 | {{ Components }} | Destinations |
 | -------- | ------- |
-| [Table](https://help.theobald-software.com/en/xtract-universal/table)  | [Azure Storage](https://help.theobald-software.com/en/xtract-universal/destinations/azure-storage#destination-details)   |
-| [Table CDC](https://help.theobald-software.com/en/xtract-universal/table-cdc)  | [Amazon AWS S3](https://help.theobald-software.com/en/xtract-universal/destinations/amazon-aws-s3#destination-details)   |
-| [ODP](https://help.theobald-software.com/en/xtract-universal/odp)   |    |
-| [DeltaQ](https://help.theobald-software.com/en/xtract-universal/datasource-deltaq)  |   |
+| [Table](../documentation/table/index.md)  | [Azure Storage](../documentation/destinations/azure-storage.md/#destination-details)   |
+| [Table CDC](../documentation/table-cdc/index.md)  | [Amazon AWS S3](../documentation/destinations/amazon-aws-s3.md/#destination-details)   |
+| [ODP](../documentation/odp/index.md)   |    |
+| [DeltaQ](../documentation/deltaq/index.md)  |   |
 
 
 ### Prerequisites
 
-- As of {{ productName }} 5.0.0, the xu-config.exe tool must be run by the same Windows AD account that runs the [{{ productName }} Service](https://help.theobald-software.com/en/xtract-universal/advanced-techniques/service-account). 
+- As of {{ productName }} 5.0.0, the xu-config.exe tool must be run by the same Windows AD account that runs the [{{ productName }} Service](../documentation/setup/service-account.md). 
 This means, you either run the Windows command prompt as the respective user or you use the ```runas``` command in the command prompt.
 This is necessary, because passwords are encrypted for the user account that runs the xu-config.exe tool and can only be decrypted by the same account.
 - The execution of PowerShell scripts must be authorized on your system, see [Microsoft Documentation: Managing the execution policy with PowerShell](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_execution_policies?view=powershell-7.2#managing-the-execution-policy-with-powershell).
@@ -101,7 +101,7 @@ This is necessary, because passwords are encrypted for the user account that run
 	```
 
 4. Replace the parameters in `< >`with actual values :number-3:. 
-5. Enter a [defined SAP Connection, Destination](https://help.theobald-software.com/en/xtract-universal/introduction/backup-and-migration#configuration-files) and an SAP Table object for the parameters \<source\>, \<destination\> and \<table\>. 
+5. Enter a [defined SAP Connection, Destination](../documentation/setup/migration.md/#configuration-files) and an SAP Table object for the parameters \<source\>, \<destination\> and \<table\>. 
 The names of the parameters are not case sensitive. <br>
 ![administrator-command-prompt-xu-config](../assets/images/xu/articles/administrator-command-prompt-xu-config.png){:class="img-responsive"}
 6. Press **[Enter]** to run the command. 
@@ -167,13 +167,11 @@ foreach ($tableName in $tableList) {
 }
 ```
 
-
-
 *****
 #### Related Links
- - [Documentation: SAP Connection](https://help.theobald-software.com/en/xtract-universal/introduction/sap-connection#creating-an-sap-connection)
- - [Documentation: Define a Table Extraction](https://help.theobald-software.com/en/xtract-universal/getting-started/define-a-table-extraction#adding-tables)
- - [Documentation: Run an Extraction](https://help.theobald-software.com/en/xtract-universal/getting-started/run-an-extraction)
- - [Documentation: WHERE Clause](https://help.theobald-software.com/en/xtract-universal/table/where-clause)
- - [Documentation: Schedule Extractions](https://help.theobald-software.com/en/xtract-universal/execute-and-automate-extractions/call-via-scheduler)
+ - [Documentation: SAP Connection](../documentation/sap-connection/index.md)
+ - [Documentation: Define a Table Extraction](../documentation/table/index.md/#define-the-table-extraction-type)
+ - [Documentation: Run an Extraction](../documentation/execute-and-automate/run-an-extraction.md)
+ - [Documentation: WHERE Clause](../documentation/table/where-clause.md)
+ - [Documentation: Schedule Extractions](../documentation/execute-and-automate/call-via-scheduler.md)
  

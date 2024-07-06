@@ -37,7 +37,7 @@ For more information, refer to the knowledge base article [SAP User Rights: BAPI
 Follow the steps below to create a new purchase requisition in SAP:
 1. Drag & drop the Xtract BAPI component into your Alteryx workflow :number-1:.<br>
 ![xfa_create_bapi_extraction_01](../assets/images/xfa/articles/xfa_create_bapi_extraction_01.png){:class="img-responsive" width="900px"}
-3. Select an SAP connection :number-2:. If no SAP connection is available, create a new connection, see [Documentation: SAP Connection](https://help.theobald-software.com/en/xtract-for-alteryx/sap-connection).
+3. Select an SAP connection :number-2:. If no SAP connection is available, create a new connection, see [Documentation: SAP Connection](../documentation/sap-connection/index.md).
 4. Click **[Edit]** :number-3: to open the main window of the Xtract BAPI component.
 5. In the main window of the component click :magnifying-glass:. The window “Function Module Lookup” opens.<br>
 ![BAPI-empty](../assets/images/xfa/articles/BAPI-empty.png){:class="img-responsive"}
@@ -68,7 +68,7 @@ Follow the steps below to create a [batch macro](http://downloads.alteryx.com/be
 1. Create a new workflow.
 2. Drag & drop the Xtract BAPI component into your Alteryx workflow :number-1:.<br>
 ![xfa_create_odp_extraction_01](../assets/images/xfa/articles/xfa_create_odp_extraction_01.png){:class="img-responsive" width="900px"}
-3. Select an SAP connection :number-2:. If no SAP connection is available, create a new connection, see [Documentation: SAP Connection](https://help.theobald-software.com/en/xtract-for-alteryx/sap-connection).
+3. Select an SAP connection :number-2:. If no SAP connection is available, create a new connection, see [Documentation: SAP Connection](../documentation/sap-connection/index.md).
 4. Click **[Edit]** :number-3: to open the main window of the Xtract BAPI component.
 5. In the main window of the component click :magnifying-glass:. The window “Function Module Lookup” opens.<br>
 ![BAPI-empty](../assets/images/xfa/articles/BAPI-empty.png){:class="img-responsive"}
@@ -102,5 +102,5 @@ The batch macro can now be used to load SAP purchase requisition data of any giv
 
 *****
 #### Related Links
-- [Documentation: Xtract BAPI](https://help.theobald-software.com/en/xtract-for-alteryx/bapi)
-- [Documentation: Sample Workflows](https://help.theobald-software.com/en/xtract-for-alteryx/sample-workflows)
+- [Documentation: {{ bapi }}](../documentation/bapi/index.md)
+- [Documentation: Sample Workflows](../sample-workflows.md)

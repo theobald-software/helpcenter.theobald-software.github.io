@@ -13,9 +13,9 @@ The following software applications must be installed for integration into KNIME
 ### Step by Step Guide
 
 !!! note
-    Basic knowledge of creating extraction in {{ productName }} is necessary for the following integration scenario, see [Defining a Table Extraction](https://help.theobald-software.com/en/xtract-universal/getting-started/define-a-table-extraction).
+    Basic knowledge of creating extraction in {{ productName }} is necessary for the following integration scenario, see [Define the Table Extraction Type](../documentation/table/index.md/#define-the-table-extraction-typedefine-a-table-extraction).
 
-1. Create an extraction in {{ productName }} and make sure that the [Web Service - HTTP-CSV](https://help.theobald-software.com/en/xtract-universal/destinations/csv-via-http) :number-1: Destination is selected for the extraction.<br>
+1. Create an extraction in {{ productName }} and make sure that the [Web Service - HTTP-CSV](../documentation/destinations/csv-via-http.md) :number-1: Destination is selected for the extraction.<br>
 ![XU Extraction Webservice HTTP](../assets/images/xu/articles/xu_extraction_webservice_http.png){:class="img-responsive"}
 2. Start the KNIME Analytics Platform. 
 3. Install the extension [SAP Reader (Theobald Software)](https://hub.knime.com/knime/extensions/org.knime.features.sap.theobald/latest/org.knime.sap.theobald.node.SAPTheobaldReaderNodeFactory).<br>
@@ -34,9 +34,9 @@ The following software applications must be installed for integration into KNIME
 
 ****
 #### Related Links
-- [{{ productName }} Web Server Settings](https://help.theobald-software.com/en/xtract-universal/server/server-settings#web-server)
-- [{{ productName }} Web Server Port](https://help.theobald-software.com/en/xtract-universal/server/ports)
-- [Connecting {{ productName }} Server](https://help.theobald-software.com/en/xtract-universal/getting-started/connect-designer-with-server#connecting-to-a-server)
+- [{{ productName }} Web Server Settings](../documentation/server/server-settings.md/#web-server)
+- [{{ productName }} Web Server Port](../documentation/server/index.md/#ports)
+- [Connecting to an {{ productName }} Server](../documentation/designer.md/#connect-the-designer-to-a-server)
 - [Webinar "SAP Data to Insights with KNIME"](https://www.youtube.com/watch?v=KQLLoDUoOEg)
-- [Dynamic Runtime Parameter within KNIME Workflow](https://kb.theobald-software.com/xtract-universal/dynamic-runtime-paramater%20within-KNIME-workflow)
+- [Dynamic Runtime Parameter within KNIME Workflow](dynamic-runtime-paramater-within-KNIME-workflow.md)
 

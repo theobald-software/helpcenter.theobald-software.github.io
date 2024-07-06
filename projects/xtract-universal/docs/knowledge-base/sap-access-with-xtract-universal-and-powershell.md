@@ -319,7 +319,5 @@ $XUMetadata = XUGet-Metadata $XUServer $XUPort
 ****
 #### Related Links:
 - [Get all scripts from GitHub](https://github.com/KhoderElzein/theobaldsoftware/blob/master/XURunScript.ps1)
-- [Call extractions from command line](https://help.theobald-software.com/en/xtract-universal/execute-and-automate-extractions/call-via-commandline)
-- [Metadata access via HTTP-JSON](https://help.theobald-software.com/en/xtract-universal/advanced-techniques/metadata-access-via-http-json)
-- [Log Access via Web Service](https://help.theobald-software.com/en/xtract-universal/logging/logging-access-via-http)
+- [Documentation: Call extractions from command line](../documentation/execute-and-automate/call-via-commandline.md)
 - [Microsoft PowerShell Documentation](https://docs.microsoft.com/en-us/powershell/)

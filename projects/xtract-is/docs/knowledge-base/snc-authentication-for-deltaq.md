@@ -44,7 +44,7 @@ Follow the steps below to enable SNC in Xtract IS:
 Follow the steps below to enable SNC for the corresponding RFC destination in regard to the Service Principal Name (SPN) of the SAP user account. 
 
 1. Open SAP and run the SAP transaction SM59.
-2. Double-click on an existing TCP/IP RFC destination, see [Create RFC Destination](https://help.theobald-software.com/en/xtract-is/sap-customizing/preparation-for-ohs-in-bw).
+2. Double-click on an existing TCP/IP RFC destination, see [Create an RFC Destination](../documentation/setup-in-sap/customization-for-ohs-in-bw.md/#create-an-rfc-destination).
 3. Navigate to **Edit > SNC Options**. The window "Change View "SNC Extension": Details" opens.<br>
 ![rfc_destination_snc1](../assets/images/xis/articles/rfc_destination_snc1.png){:class="img-responsive"}
 	1. Provide the SPN of the SAP user account in the field **Partners** :number-1:, e.g., *p:RfcServer/Malapati@THEOBALD.LOCAL*.
@@ -56,9 +56,8 @@ Follow the steps below to enable SNC for the corresponding RFC destination in re
 
 ***********
 #### Related Links
-
-- [Xtract IS – RFC Destination](https://help.theobald-software.com/en/xtract-is/sap-customizing/preparation-for-ohs-in-bw#creating-an-rfc-destination)
-- [Xtract IS – The Connection Manager](https://help.theobald-software.com/en/xtract-is/sap-connection/the-connection-manager)
-- [Xtract IS – SAP Connection with SNC](https://help.theobald-software.com/en/xtract-is/sap-connection/sap-connection-with-snc)
-- [Help.SAP – Maintaining RFC destinations and their SNC options](https://help.sap.com/viewer/e73bba71770e4c0ca5fb2a3c17e8e229/7.5.8/en-US/57898009a859493a8bce56caaf0f8e13.html)
+- [Documentation: Create an RFC Destination](../documentation/setup-in-sap/customization-for-ohs-in-bw.md/#create-an-rfc-destination)
+- [Documentation: Connect to SAP](../documentation/sap-connection/#connect-to-sap.md)
+- [Documentation: SAP Connection with SNC](../documentation/sap-connection/snc-authentication.md)
+- [SAP Documentation: Maintaining RFC destinations and their SNC options](https://help.sap.com/viewer/e73bba71770e4c0ca5fb2a3c17e8e229/7.5.8/en-US/57898009a859493a8bce56caaf0f8e13.html)
 

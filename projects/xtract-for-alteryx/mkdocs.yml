@@ -232,12 +232,12 @@ extra:
   bapi: Xtract BAPI
   bwcube: Xtract Cube
   bwloader:  
-  hierarchy: Hierarchy
-  deltaq: DeltaQ
-  odp: ODP
-  ohs: OHS
-  query: Query
-  report: Report
+  hierarchy: Xtract Hierarchy
+  deltaq: Xtract DeltaQ
+  odp: Xtract ODP
+  ohs: Xtract OHS
+  query: Xtract Query
+  report: Xtract Report
   settings: extraction settings
   Settings: Extraction Settings
   settingsBtn: __[:material-cog:Extraction Settings]__

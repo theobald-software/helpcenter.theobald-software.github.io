@@ -42,7 +42,7 @@ iif([bool condition], [string trueResult], [string falseResult])
 
 ### Script Expressions based on .NET 
 
-{{ productName }} script expressions support the following .NET objects, properties and methods from the .NET System Namespace of {{ productName }}'s current [.NET framework](https://help.theobald-software.com/en/xtract-universal/introduction/requirements#other-applications-and-frameworks):
+{{ productName }} script expressions support the following .NET objects, properties and methods from the .NET System Namespace of {{ productName }}'s current [.NET framework](../documentation/setup/requirements.md#other-applications-and-frameworks):
 
 *Object*, *Boolean*, *Char*, *String*, *SByte*, *Byte*, *Int16*, *UInt16*, *Int32*, *UInt32*, *Int64*, *UInt64*, *Single*, *Double*, *Decimal*, *DateTime*, *TimeSpan*, *Guid*, *Math*, *Convert*.
 

@@ -39,7 +39,7 @@ The table has the following content:<br>
 ### Setup in SSIS
 
 1. Add a data source to your Data Flow Task. The depicted example uses a table stored on an SQL Server, see [Input Table](#input-table).
-2. Add an {{ bapi }} {{ component }} to your Data Flow Task and assign a [Connection Manager](https://help.theobald-software.com/en/xtract-is/sap-connection/the-connection-manager) that contains the connection details to your SAP system. 
+2. Add an {{ bapi }} {{ component }} to your Data Flow Task and assign a [Connection Manager](../documentation/sap-connection/index.md/#assign-connection-managers-to-xtract-components) that contains the connection details to your SAP system. 
 3. Look up the function module Z_ECS_PRODUCT_CREATE_MULTI.<br>
 ![ssis-write-xtractis-fuba-01](site:assets/images/articles/bapi/BAPI-table-input.png){:class="img-responsive" }
 4. Connect the input table to the {{ bapi }} {{ component }}. <br>
@@ -50,5 +50,5 @@ The input table is automatically mapped to the corresponding table in the {{ bap
 *****
 
 #### Related Links
-- [Documentation: Xtract BAPI](https://help.theobald-software.com/en/xtract-is/bapi)
+- [Documentation: Xtract BAPI](../documentation/bapi/index.md)
 - [Write CATS data using Xtract BAPI](write-cats-data-to-sap.md)

@@ -28,14 +28,12 @@ The concatenated string has the following format:<br>
 6. Run the pipeline and check the result.
 
 !!! tip
-    You can copy the URL of an extraction from the Run window in {{ productName }}, see [Documentation: Running an Extraction](https://help.theobald-software.com/en/xtract-universal/getting-started/run-an-extraction#run-extraction).
+    You can copy the URL of an extraction from the Run window in {{ productName }}, see [Documentation: Run an Extraction](../documentation/execute-and-automate/run-an-extraction.md/#run-extraction-window).
 
 ******
 
 #### Related Links
-- [Run an ADF pipeline when an SAP extraction file is successfully uploaded to Azure storage](https://kb.theobald-software.com/xtract-universal/runs-an-ADF-pipeline-when-sap-extraction-file-is-successfully-uploaded-to-Azure-storage)
-- [Integration in Azure Data Factory using Webservices](https://kb.theobald-software.com/xtract-universal/adf-integration-using-webservices)
-- [Integration in Azure Data Factory using Command Line](https://kb.theobald-software.com/xtract-universal/adf-integration-using-command-line)
-- [Documentation: User-Defined Variables](https://help.theobald-software.com/en/xtract-universal/advanced-techniques/user-defined-variables)
-- [Documentation: Call via Webservice](https://help.theobald-software.com/en/xtract-universal/execute-and-automate-extractions/call-via-webservice)
-- [Documentation: Metadata access via HTTP-JSON](https://help.theobald-software.com/en/xtract-universal/advanced-techniques/metadata-access-via-http-json)
+- [Run an ADF pipeline when an SAP extraction file is successfully uploaded to Azure storage](run-an-ADF-pipeline-when-sap-extraction-file-is-successfully-uploaded-to-Azure-storage.md)
+- [Integration in Azure Data Factory using Webservices](adf-integration-using-webservices.md)
+- [Integration in Azure Data Factory using Command Line](adf-integration-using-command-line.md)
+- [Documentation: Web API](../web-api.md)

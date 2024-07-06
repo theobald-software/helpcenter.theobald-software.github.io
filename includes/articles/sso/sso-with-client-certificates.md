@@ -4,7 +4,7 @@ only in Xu and BC
 -->
 
 The following article describes the process of setting up Single-Sign-On (SSO) via Secure Network Communication (SNC) with SAP client certificates. 
-For more information on using SSO with {{ productName }} ({{ Abbr }}), see [Documentation: SAP Single-Sign-On](https://help.theobald-software.com/en/xtract-universal/advanced-techniques/sap-single-sign-on).
+For more information on using SSO with {{ productName }} ({{ Abbr }}), see [Documentation: SAP Single-Sign-On](../documentation/sap-connection/index.md/#single-sign-on-sso).
 
 ### Requirements
 
@@ -15,8 +15,8 @@ The usage of *SSO Certificate* requires the correct characteristics of the archi
 - Install the SAP Secure Login Client on the server that runs {{ productName }}, see [SAP-Documentation: Secure Login Client](https://help.sap.com/viewer/8ac26ac20064447ba9e65b18e1bb747e/Cloud/en-US/b304e57f6393461dafd7affc2760b05b.html).<br>
 The Secure Login Client ensures that the correct SNC library is available for *SSO Certificate*.
 This library is used to open the SAP connection.
-- The XU service must run under a Windows AD Service account, see [Run an {{ productName }} Service under a Windows Service Account](https://help.theobald-software.com/en/xtract-universal/advanced-techniques/service-account).
-- Set up access restrictions for the {{ productName }} Designer and the {{ Abbr }} server, see [Restrict Access to Windows AD Users (Kerberos Authentication)](https://help.theobald-software.com/en/xtract-universal/security/server-security#restrict-access-to-windows-ad-users-kerberos-authentication).<br>
+- The {{ productName }} service must run under a Windows AD Service account, see [Run the {{ productName }} Service under a Windows Service Account](../documentation/setup/service-account.md).
+- Set up access restrictions for the {{ productName }} Designer and the {{ Abbr }} server, see [Restrict Access to Windows AD Users (Kerberos Authentication)](../documentation/access-restrictions/restrict-server-access.md/#restrict-access-to-windows-ad-users-kerberos-authentication).<br>
 
 ### Process
 

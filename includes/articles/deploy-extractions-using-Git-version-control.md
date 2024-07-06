@@ -11,7 +11,7 @@ The implementation of various [Git](https://gitforwindows.org/) security techniq
 ### Prerequisites
 
 - Technically separate development and production environment.
-- Developers have [read-only access](https://help.theobald-software.com/en/xtract-universal/security/access-management) to {{ productName }} on the production system.
+- Developers have [read-only access](../documentation/access-restrictions.md) to {{ productName }} on the production system.
 - Git client installed locally on the development environment and the production environment, e.g., [Fork](https://fork.dev).
 - The {{ productName }} installation must have the identical release version on the servers.
 
@@ -55,7 +55,7 @@ The repository directory **must** be named `config`!
 #### Releated Link
 
 - [GitForWindows Download](https://gitforwindows.org/)
-- [Manual Migration to a Different Machine](https://help.theobald-software.com/en/xtract-universal/introduction/backup-and-migration#migration-to-a-different-machine)
+- [Manual Migration to a Different Machine](../documentation/setup/migration.md)
 - [Getting Started - About Version Control](https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control)
 - [Git Basics - Getting a Git Repository](https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository)
 - [Git Branching - Branches in a Nutshell](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell)

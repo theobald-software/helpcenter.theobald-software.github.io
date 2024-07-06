@@ -22,8 +22,8 @@ The following BI architecture must be available and configured:
 - Installed KNIME extension [SAP Reader (Theobald Software)](https://hub.knime.com/knime/extensions/org.knime.features.sap.theobald/latest/org.knime.sap.theobald.node.v2.SAPTheobaldReader2NodeFactory).
 - Existing table object in a Microsoft database (SQL-Server).
 - Latest version of {{ productName }}, obtained from the [Theobald Software website](https://theobald-software.com/en/download-trial).
-- Existing table extraction of table *EKKO - Purchasing Document Header* in {{ productName }}, see [Defining a Table Extraction](https://help.theobald-software.com/en/xtract-universal/getting-started/define-a-table-extraction).
-- Use of a WHERE condition with [user-defined variables](https://help.theobald-software.com/en/xtract-universal/advanced-techniques/user-defined-variables) of the table extraction in {{ productName }} e.g.: `EKKO~AEDAT > @maxAEDAT`.
+- Existing table extraction of table *EKKO - Purchasing Document Header* in {{ productName }}, see [Define a Table Extraction](../documentation/table/index.md/#define-the-table-extraction-type).
+- Use of a WHERE condition with [runtime parameters](../documentation/table/edit-runtime-parameters.md) of the table extraction in {{ productName }} e.g.: `EKKO~AEDAT > @maxAEDAT`.
 
 ### KNIME Analytics Platform Workflow
 
@@ -40,7 +40,7 @@ SELECT MAX(REPLACE(AEDAT, '-', '')) AS maxAEDAT FROM #table#
 ![KNIME-Table-Row-to-Variable](../assets/images/xu/articles/KNIME-Table-Row-to-Variable.png){:class="img-responsive"}
 5. Right-click on the node **SAP Reader (Theobald Software)** to display the flow variable ports.<br>
 ![KNIME-Show-Flow-Variables-Ports](../assets/images/xu/articles/KNIME-Show-Flow-Variables-Ports.png){:class="img-responsive"}
-6. Configuration of the KNIME node **SAP Reader (Theobald Software)**, see [KNIME Integration via SAP Reader (Theobald Software)](https://kb.theobald-software.com/xtract-universal/knime-integration-via-sap-reader#step-by-step-guide):<br>
+6. Configuration of the KNIME node **SAP Reader (Theobald Software)**, see [KNIME Integration via SAP Reader (Theobald Software)](knime-integration-via-sap-reader.md#step-by-step-guide):<br>
 ![KNIME-SAP Reader (Theobald Software)-Settings](../assets/images/xu/articles/KNIME-SAP-Reader-(Theobald Software)-Settings.png){:class="img-responsive"}
 7. In the **Parameters** tab, use **Fetch Parameters** :number-4: to add the user-defined variable to the WHERE condition :number-5: and enter a default value :number-6:.<br>
 ![KNIME-SAP-Reader-(Theobald Software)-(SAP Tabelle EKKO)](../assets/images/xu/articles/KNIME-SAP-Reader-(Theobald Software)-(SAP Tabelle EKKO).png){:class="img-responsive"}
@@ -49,11 +49,11 @@ SELECT MAX(REPLACE(AEDAT, '-', '')) AS maxAEDAT FROM #table#
 9. Pass the results of the extraction in the workflow to the KNIME node **DB Writer** and execute the workflow.
 
 !!! tip
-    Check the correct execution of the extraction with user-defined runtime parameters in the [Extraction Log](https://help.theobald-software.com/en/xtract-universal/logging#reading-logs---extraction-log) of {{ productName }}.
+    Check the correct execution of the extraction with user-defined runtime parameters in the [Extraction Log](../documentation/logs.md/#read-extraction-logs) of {{ productName }}.
 
 
 ****
 #### Releated Link
-- [KNIME Integration via SAP Reader (Theobald Software)](https://kb.theobald-software.com/xtract-universal/knime-integration-via-sap-reader)
+- [KNIME Integration via SAP Reader (Theobald Software)](knime-integration-via-sap-reader.md)
 - [Read or download documentation for KNIME Software](https://docs.knime.com/)
 - [KNIME Flow Control Guide](https://docs.knime.com/2021-06/analytics_platform_flow_control_guide/index.html#introduction)

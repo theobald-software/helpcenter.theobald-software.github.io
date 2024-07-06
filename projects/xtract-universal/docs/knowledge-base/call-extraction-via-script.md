@@ -77,7 +77,7 @@ Follow the steps below to run an extraction using a Windows script that calls th
 		```
 
 5. Check the return code and write a corresponding message. The return code *0* indicates a successful execution.
-Other [Return Codes](https://help.theobald-software.com/en/xtract-universal/execute-and-automate-extractions/call-via-commandline#return-codes) indicate errors during execution.
+Other [Return Codes](../documentation/execute-and-automate/call-via-commandline.md/#return-codes) indicate errors during execution.
 
 	```bat
 	:: check the last exit code
@@ -148,7 +148,7 @@ Follow the steps below to run an extraction using a PowerShell script that calls
 	```
 
 4. Check the return code and write a corresponding message. The return code *0* indicates a successful execution.
-Other [Return Codes](https://help.theobald-software.com/en/xtract-universal/execute-and-automate-extractions/call-via-commandline#return-codes) indicate errors during execution.
+Other [Return Codes](../documentation/execute-and-automate/call-via-commandline.md/#return-codes) indicate errors during execution.
 
 	```shell
 	# check the last exit code

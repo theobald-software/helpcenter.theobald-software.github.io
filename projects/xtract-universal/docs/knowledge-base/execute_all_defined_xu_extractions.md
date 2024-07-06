@@ -17,7 +17,7 @@ The following programs and tools are required for using the SSIS-package:
 - Install the [SQL Server](https://www.microsoft.com/en-us/sql-server/sql-server-downloads)
 - Install the [SQL Server Management Studio (SSMS)](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver15)
 - Configure the [SQL Server Agent](https://docs.microsoft.com/en-us/sql/ssms/agent/configure-sql-server-agent?view=sql-server-ver15)
-- Install the [{{ productName }} Server](https://help.theobald-software.com/en/xtract-universal/introduction/installation-and-update)
+- Install the [{{ productName }} Server](../documentation/setup/installation.md)
 - Download the following SSIS-package: 
 
 [:material-download-circle: Download XtractUniversalScheduler.dtsx](../assets/files/xu/XtractUniversalScheduler.dtsx){ .md-button}
@@ -32,8 +32,8 @@ The {{ productName }} Server must be installed on the same environment as the SQ
 
 	| SSIS Parameter | Data type | Sensitive | Required | Example Value | Info |
 	------------ | ------------- | ---------- | ---------| -------- |-------|
-	| XtractUniversalServer| String | False | True | *[ServerName.theobald.local]* | [{{ productName }} Server](https://help.theobald-software.com/en/xtract-universal/getting-started/connect-designer-with-server) | 
-	| XtractUniversalServerPort | String | False | True | *8065* | [XU-Server Ports](https://help.theobald-software.com/en/xtract-universal/server/ports) |
+	| XtractUniversalServer| String | False | True | *[ServerName.theobald.local]* | [{{ productName }} Server](../documentation/designer.md) | 
+	| XtractUniversalServerPort | String | False | True | *8065* | [XU-Server Ports](../documentation/server/index.md/#ports) |
 
 3. Schedule the deployed SSIS package using the integrated SQL Server Agent execution jobs. For more information, see [Microsoft Documentation: Create a SQL-Server Agent Job](https://docs.microsoft.com/en-us/sql/ssms/agent/create-a-job?view=sql-server-ver15).<br>
 ![Create_Job_XtractUniversalScheduler_XtractUniversalScheduler](../assets/images/xu/articles/Create_Job_XtractUniversalScheduler.png){:class="img-responsive"}
@@ -54,6 +54,6 @@ extraction_folder_name | String | *{{ installationDir }}\config\ extractions\Ext
 
 ****
 #### Releated Links
-- [Call via Commandline](https://help.theobald-software.com/en/xtract-universal/execute-and-automate-extractions/call-via-commandline)
+- [Call via Commandline](../documentation/execute-and-automate/call-via-commandline.md)
 - [Run Integration Services (SSIS) Packages](https://docs.microsoft.com/en-us/sql/integration-services/packages/run-integration-services-ssis-packages?view=sql-server-ver15)
 - [Create an SQL-Server Agent Job](https://docs.microsoft.com/en-us/sql/ssms/agent/create-a-job?view=sql-server-ver15)

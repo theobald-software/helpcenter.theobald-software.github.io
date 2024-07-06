@@ -8,7 +8,7 @@ The given example shows how to use Custom SQL in the *Finalization* step of the 
 
 ### About Column Name Styles
 
-{{ productName }} offers 4 different [Column Name Styles](https://help.theobald-software.com/en/xtract-universal/destinations/microsoft-sql-server#column-name-style) for naming the SAP table columns in databases:
+{{ productName }} offers 4 different [Column Name Styles](../documentation/destinations/microsoft-sql-server.md#column-name-style) for naming the SAP table columns in databases:
 
 - Code - `[FieldName]`
 - Prefixed Code - `[TabName]~[FieldName]`
@@ -22,7 +22,7 @@ Both tables have the following identical column descriptions:
 - 'MANDT'
 - 'EBELN'
 
-When selecting the standard Column Name Style 'Code' in the [destination settings](https://help.theobald-software.com/en/xtract-universal/destinations/microsoft-sql-server#destination-settings), the following error occurs on the SQL side when selecting these fields:
+When selecting the standard Column Name Style 'Code' in the [destination settings](../documentation/destinations/microsoft-sql-server#destination-settings), the following error occurs on the SQL side when selecting these fields:
 
 ```
 > System.Data.SqlClient.SqlException (0x80131904): Column names in each table must be unique. Column name 'MANDT' in table 'EKKO_JOIN' is specified more than once.

@@ -65,6 +65,5 @@ Providing extraction dates is not necessary.
 ******
 
 #### Related Links
-- [Change Data Capture with CDHDR](./change-data-capture-with-cdhdr.md)
-- [Table: WHERE Clause](https://help.theobald-software.com/en/xtract-universal/table/where-clause)
-- [Scripted Expressions](https://help.theobald-software.com/en/board-connector/advanced-techniques/script-expressions)
+- [Delta Table Extraction](delta-table-extraction.md)
+- [{{ table }}: WHERE Clause](../documentation/table/where-clause.md)

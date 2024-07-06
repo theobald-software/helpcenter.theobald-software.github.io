@@ -38,10 +38,10 @@ In the scenario depicted, the ADF pipeline executes a stored procedure to log va
 
 ### Prerequisites
 
-- Basic knowledge of {{ productName }}, see [Getting Started](https://help.theobald-software.com/en/xtract-universal/getting-started).
+- Basic knowledge of {{ productName }}, see [Getting Started](../getting-started.md).
 - YBasic knowledge of [Azure Storage](https://docs.microsoft.com/en-us/azure/storage/common/storage-introduction).
-- You can successfully run {{ extractions }} from a web browser, see [Run an Extraction: URL and command-line](https://help.theobald-software.com/en/xtract-universal/getting-started/run-an-extraction#url-and-command-line-3).
-- [Azure Storage Destination](https://help.theobald-software.com/en/xtract-universal/destinations/azure-storage) is set up and running. 
+- You can successfully run {{ extractions }} from a web browser, see [Run an Extraction: URL and command-line](xtract-universal/getting-started/run-an-extraction#url-and-command-line-3).
+- [Azure Storage Destination](../documentation/destinations/azure-storage.md) is set up and running. 
 - Access to [Azure Data Factory](https://docs.microsoft.com/en-us/azure/data-factory/); basic knowledge of building ADF pipelines.
 - Basic knowledge of ADF pipeline triggers, especially [triggering a pipeline in response to a storage event](https://docs.microsoft.com/en-us/azure/data-factory/how-to-create-event-trigger?tabs=data-factory). 
 

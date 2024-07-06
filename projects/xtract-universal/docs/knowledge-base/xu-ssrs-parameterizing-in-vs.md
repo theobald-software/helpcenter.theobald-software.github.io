@@ -3,7 +3,7 @@ title: Use Computed Query Parameters for SSRS
 description: Using Computed Query Parameters in Visual Studio for SSRS
 ---
 
-This article shows how to parameterize extractions in Visual Studio as part of {{ productName }}'s [Power BI Report Server destination](https://help.theobald-software.com/en/xtract-universal/destinations/server-report-services).
+This article shows how to parameterize extractions in Visual Studio as part of {{ productName }}'s [Power BI Report Server destination](../documentation/destinations/server-report-services.md).
 The depicted example demonstrates how to pass multiple parameters using a single computed query parameter.
 
 ### About Parameters
@@ -13,12 +13,12 @@ To do this, the parameters are passed as runtime parameters to {{ productName }}
 In Visual Studio's Report Server Projects, the runtime parameters of {{ productName }} allow only one parameter input for each runtime parameter.
 To pass multiple parameters, a computed query parameter can be used.
 
-The depicted example uses the [WHERE clause](https://help.theobald-software.com/en/xtract-universal/table/where-clause) of a {{ table }} extraction to demonstrate how to pass multiple parameters using a single computed query parameter.
+The depicted example uses the [WHERE clause](../documentation/table/where-clause.md) of a {{ table }} extraction to demonstrate how to pass multiple parameters using a single computed query parameter.
 
 ### Prerequisites
 
 - Create a {{ table }} extraction with an SSRS destination in {{ productName }}. The depicted example uses the SAP standard table *MAKT*. 
-- Add the extraction as a data source in Visual Studio and create a report as described in [Power BI Report Server in Visual Studio](https://help.theobald-software.com/en/xtract-universal/destinations/server-report-services#adding-an-extraction-as-a-data-source-in-visual-studio).
+- Add the extraction as a data source in Visual Studio and create a report as described in [Power BI Report Server in Visual Studio](../documentation/destinations/server-report-services.md/#add-an-extraction-as-a-data-source-in-visual-studio).
 
 ### Computed Query Parameters
 

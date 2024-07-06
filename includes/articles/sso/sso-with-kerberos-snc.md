@@ -35,7 +35,7 @@ When using an SNC solution from a third-party vendor, use either the Kerberos Wr
 ### Activation of HTTPS 
 
 1. Enable access control protocol HTTPS :number-1: within the tab *Web Server* settings.
-2. Reference an existing [X.509 certificate](https://help.theobald-software.com/en/xtract-universal/security/install-x.509-Certificate) :number-2:.<br>
+2. Reference an existing [X.509 certificate](../documentation/access-restrictions/install-x.509-certificate.md) :number-2:.<br>
 3. Click **[OK]** to confirm :number-3:.<br>
 ![WebServerSettings_https](../assets/images/articles/sso/Server-Settings-Webserver-HTTPS.png){:class="img-responsive"}
 
@@ -45,7 +45,7 @@ Make sure to check the default ports, e.g., {% if page.meta.product == "xtract-u
 ### Configuration of Windows AD Service Account
 
 Using SSO with Kerberos SNC, the {{ productName }} service must run under a dedicated service account.  
-To do so, follow the steps as outlined in [Running the {{ productName }} Service under a Windows Service Account](https://help.theobald-software.com/en/xtract-universal/advanced-techniques/service-account).
+To do so, follow the steps as outlined in [Run the {{ productName }} Service under a Windows Service Account](../documentation/setup/service-account.md).
 
 !!! note
 	As of {{ productName }} version 5.0 SAP passwords are encrypted with a key that is derived from the Windows account that runs the {{ Abbr }} service.
@@ -83,7 +83,7 @@ To do so, follow the steps as outlined in [Running the {{ productName }} Service
 ### SAP Source Settings
 
 !!! note 
-	An existing [SAP connection](https://help.theobald-software.com/en/xtract-universal/getting-started/sap-connection) to a Single Application Server or Message Server is the prerequisite for using SSO with SNC.
+	An existing [SAP connection](../documentation/sap-connection/index.md) to a Single Application Server or Message Server is the prerequisite for using SSO with SNC.
 
 1. In the main menu of the {{ productName }} Designer, navigate to **[Server > Manage Sources]**. The window "Source Details" opens.<br>
 ![Edit-SAP-source](../assets/images/articles/sso/edit-sap-source.png){:class="img-responsive"}
@@ -107,6 +107,5 @@ In SAP, apply the Kerberos SNC settings as described in the [SAP Documentation: 
 
 ****
 #### Related Links
-- [Documentation: SSO and SNC with Kerberos Wrapper Library](https://help.theobald-software.com/en/xtract-universal/advanced-techniques/sap-single-sign-on#sso-and-snc-with-kerberos-wrapper-library)
-- [Documentation: X.509 certificate](https://help.theobald-software.com/en/xtract-universal/security/install-x.509-Certificate)
-- [Running the {{ productName }} Service under a Windows Service Account](https://help.theobald-software.com/en/xtract-universal/advanced-techniques/service-account).
+- [Documentation: X.509 certificate](../documentation/access-restrictions/install-x.509-certificate.md)
+- [Running the {{ productName }} Service under a Windows Service Account](../documentation/setup/service-account.md).

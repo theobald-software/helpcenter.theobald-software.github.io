@@ -49,6 +49,5 @@ Only the data in MAKT that has been changed on today's date is extracted.
 *****
 
 #### Related Links
-- [Delta Table Extraction](./delta-table-extraction.md)
-- [Table: WHERE Clause](https://help.theobald-software.com/en/xtract-universal/table/where-clause)
-- [Scripted Expressions](https://help.theobald-software.com/en/board-connector/advanced-techniques/script-expressions)
+- [Delta Table Extraction](delta-table-extraction.md)
+- [{{ table }}: WHERE Clause](../documentation/table/where-clause.md)

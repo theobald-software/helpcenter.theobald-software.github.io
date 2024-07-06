@@ -23,7 +23,7 @@ Case-sensitive (_CS) | Distinguishes between uppercase and lowercase letters. If
 Accent-sensitive (_AS) | Distinguishes between accented and unaccented characters. For example, "a" is not equal to "ấ". If this option isn't selected, the collation is accent-insensitive. Which means, SQL Server considers the accented and unaccented versions of letters to be identical for sorting purposes. You can explicitly select accent insensitivity by specifying _AI.
 
 For information on usable collations, see [Microsoft Documentation: Collation](https://docs.microsoft.com/en-us/sql/relational-databases/collations/collation-and-unicode-support?redirectedfrom=MSDN&view=sql-server-ver15#Collation_Defn) and [Microsoft Documentation: Collation and Unicode support](https://docs.microsoft.com/en-us/sql/relational-databases/collations/collation-and-unicode-support?redirectedfrom=MSDN&view=sql-server-ver15). 
-The depicted example shows the column collation within {{ productName }} with a [Custom SQL](https://help.theobald-software.com/en/xtract-universal/destinations/microsoft-sql-server#custom-sql-1) statement.
+The depicted example shows the column collation within {{ productName }} with a [Custom SQL](../documentation/destinations/microsoft-sql-server.md#custom-sql-1) statement.
 
 ### SQL Server Management Studio (SSMS)
 
@@ -43,7 +43,7 @@ _AI | accent-insensitive
 
 Follow the steps below to extract the SAP table *MAKT* from SAP:
 
-1. Create a table extraction, see [Online Help](https://help.theobald-software.com/en/xtract-universal/table).
+1. Create a table extraction, see [Documentation: Table](../documentation/table/index.md).
 The look-up process loads the corresponding metadata from our SAP object *MAKT*: 
 	1. The composite primary key consists of the table fields *MANDT*, *MATNR*, *SPRAS*, each with a unique constraint.<br>
 	![default_collation_statement](../assets/images/xu/articles/makt_metadata.png){:class="img-responsive"}

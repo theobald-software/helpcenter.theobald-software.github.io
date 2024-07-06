@@ -8,13 +8,13 @@ By linking the extractions, you can blend data from both data sources into a sin
 
 ### Setup in {{ productName }}
 
-1. Create a BEx Query extraction, see [Defining a BW Cube Extraction](https://help.theobald-software.com/en/xtract-universal/bwcube/bw-cube-extraction-define). 
+1. Create a BEx Query extraction, see [Define a BW Cube Extraction](../documentation/bwcube/index.md/#define-the-bwcube-extraction-type). 
 <!--- ![XU-Tableau-BExQuery](../assets/images/xu/articles/XU-Tableau-BExQuery.png){:class="img-responsive"} -->
 2. Open the extraction settings of the BEx Query and activate *Formatted Values*.<br>
 ![XU-Tableau-BExQuery-Settings](../assets/images/xu/articles/XU-Tableau-BExQuery-Settings.png){:class="img-responsive"}
 2. Open the Destination Settings of the extraction and set *Text* as the **Column Name Style** for Tableau.
 Note that using *Text* as the column name style can result in column names that are not unique.
-4. Create a BW Hierarchy extraction, see [Defining a Hierarchy Extraction](https://help.theobald-software.com/en/xtract-universal/bw-hierarchies/hierarchy-extraction-define). 
+4. Create a BW Hierarchy extraction, see [Define a Hierarchy Extraction](../documentation/hierarchy/#define-the-bw-hierarchy-extraction-type). 
 <!--- ![XU-Tableau-Hierarchy](../assets/images/xu/articles/XU-Tableau-Hierarchy.png){:class="img-responsive"} -->
 5. Open the Extraction Settings of the Hierarchy and set **Representation** to *Natural*:<br>
 ![XU-Tableau-Hierarchy-Settings](../assets/images/xu/articles/XU-Tableau-Hierarchy-Settings.png){:class="img-responsive"}

@@ -36,7 +36,7 @@ Implement the following SAP notes to use the {{ odp }} {{ component }}:
 Follow the steps below to load sales data from your SAP ERP system:
 1. Drag & drop the {{ odp }} {{ component }} into your Alteryx workflow :number-1:.<br>
 ![xfa_create_odp_extraction_01](../assets/images/xfa/articles/xfa_create_odp_extraction_01.png){:class="img-responsive" width="900px"}
-2. Select an SAP connection :number-2:. If no SAP connection is available, create a new connection, see [Documentation: SAP Connection](https://help.theobald-software.com/en/xtract-for-alteryx/sap-connection).
+2. Select an SAP connection :number-2:. If no SAP connection is available, create a new connection, see [Documentation: SAP Connection](../documentation/sap-connection/index.md).
 3. Click **[Edit]** :number-3: to open the main window of the {{ odp }} {{ component }}.
 4. In the main window of the {{ component }} click :magnifying-glass:. The window “Operational Data Provider Lookup” opens.
 5. In the field **Name** :number-4: enter the name of the sales data extractor: *2LIS_11_VAITM*. Use wildcards (*), if needed.<br>
@@ -44,11 +44,11 @@ Follow the steps below to load sales data from your SAP ERP system:
 6. Click :magnifying-glass: and select the *2LIS_11_VAITM* extractor from the displayed list :number-5:.
 7. Click **[OK]**.
 8. Select the fields you want to add to the output of the {{ odp }} {{ component }}.
-For more information on selections and filters, see [Documentation: {{ odp }} - Selections and Filters](https://help.theobald-software.com/en/xtract-for-alteryx/odp/odp-define#selections-and-filters).
+For more information on selections and filters, see [Documentation: {{ odp }} - Selections](../documentation/odp/selections.md).
 ![odp-extraction-sales-data](../assets/images/xfa/articles/odp-extraction-sales-data.png){:class="img-responsive"}
 9. In the section *Update Mode* select the option **Delta Update** to only load data from the SAP system that was added or changed since the last run.
 By default, the first run loads all data from the SAP system. Deactivate the *On delta initialization* option **Extract data** to prevent loading of any data on the first run.<br>
-For more information on selections and filters, see [Documentation: {{ odp }} - Update Mode](https://help.theobald-software.com/en/xtract-for-alteryx/odp/odp-define#update-mode).
+For more information on selections and filters, see [Documentation: {{ odp }} - Update Mode](../documentation/odp/update-mode.md).
 10. Click **[Load live preview]** :number-6: to display a live preview of the data without running an extraction.
 11. Click **[OK]** to save your input.
 
@@ -59,7 +59,7 @@ The {{ odp }} {{ component }} can now be used to access and process the extracte
 Follow the steps below to load customer master data from your SAP ERP system:
 1. Drag & drop the {{ odp }} {{ component }} into your Alteryx workflow :number-1:.<br>
 ![xfa_create_odp_extraction_01](../assets/images/xfa/articles/xfa_create_odp_extraction_01.png){:class="img-responsive" width="900px"}
-2. Select an SAP connection :number-2:. If no SAP connection is available, create a new connection, see [Documentation: SAP Connection](https://help.theobald-software.com/en/xtract-for-alteryx/sap-connection).
+2. Select an SAP connection :number-2:. If no SAP connection is available, create a new connection, see [Documentation: SAP Connection](../documentation/sap-connection/index.md).
 3. Click **[Edit]** :number-3: to open the main window of the {{ odp }} {{ component }}.
 4. In the main window of the {{ component }} click :magnifying-glass:. The window “Operational Data Provider Lookup” opens.
 5. In the field **Name** :number-4: enter the name of the customer master data extractor: *0CUSTOMER_ATTR*. Use wildcards (*), if needed.<br>
@@ -67,7 +67,7 @@ Follow the steps below to load customer master data from your SAP ERP system:
 6. Click :magnifying-glass: and select the *0CUSTOMER_ATTR* extractor from the displayed list :number-5:.
 7. Click **[OK]**.
 8. Select the fields you want to add to the output of the {{ odp }} {{ component }}. 
-For more information on selections and filters, see [Documentation: {{ odp }} - Selections and Filters](https://help.theobald-software.com/en/xtract-for-alteryx/odp/odp-define#selections-and-filters).
+For more information on selections and filters, see [Documentation: {{ odp }} - Selections](../documentation/odp/selections.md).
 ![odp-extraction-sales-data](../assets/images/xfa/articles/odp-extraction-customer-data.png){:class="img-responsive"}
 9. Click **[Load live preview]** :number-6: to display a live preview of the data without executing an extraction.
 10. Click **[OK]** to save your input.
@@ -78,5 +78,5 @@ The {{ odp }} {{ component }} can now be used to access and process the extracte
 *****
 #### Related Links
 - [Alteryx Community - ODP based Delta Extraction of Sales and Customer Data from SAP ERP with {{ productName }}](https://community.alteryx.com/t5/Community-Gallery/ODP-based-Delta-Extraction-of-Sales-and-Customer-Data-from-SAP/ta-p/1140120)
-- [Documentation: {{ odp }} (Operational Data Provisioning)](https://help.theobald-software.com/en/xtract-for-alteryx/odp)
-- [Documentation: Sample Workflows](https://help.theobald-software.com/en/xtract-for-alteryx/sample-workflows)
+- [Documentation: {{ odp }} (Operational Data Provisioning)](../documentation/odp/index.md)
+- [Documentation: Sample Workflows](../sample-workflows.md)

@@ -4,7 +4,7 @@ description: automation-of-xu-data-extracts-with-adf
 author: Christoph Schuler, Valerie Schipka
 ---
 
-The following article describes a scenario that uses Azure Data Factory (ADF) to trigger and automate SAP data movements using {{ productName }}'s [command line tool](https://help.theobald-software.com/en/xtract-universal/execute-and-automate-extractions/call-via-commandline).
+The following article describes a scenario that uses Azure Data Factory (ADF) to trigger and automate SAP data movements using {{ productName }}'s [command line tool](../documentation/execute-and-automate/call-via-commandline.md).
 This article targets customers that utilize ADF as a platform for orchestrating data movement and transformation. <br>
 
 !!! note
@@ -14,8 +14,8 @@ This article targets customers that utilize ADF as a platform for orchestrating 
 ### Prerequisites
 
 - {{ productName }} is installed on a cloud VM and is accessible remotely over http(s).
-- The extraction uses a [push-destination](https://help.theobald-software.com/en/xtract-universal/destinations#pull-and-push-destinations), e.g., Azure Blob Storage or Azure SQL Server.<br> 
-- The extraction runs successfully when called from a remote machine via commandline, see [Execute and Automate - Call via Commandline](https://help.theobald-software.com/en/xtract-universal/execute-and-automate-extractions/call-via-commandline).
+- The extraction uses a [push-destination](../documentation/destinations/index.md), e.g., Azure Blob Storage or Azure SQL Server.<br> 
+- The extraction runs successfully when called from a remote machine via commandline, see [Execute and Automate - Call via Commandline](../documentation/execute-and-automate/call-via-commandline.md).
 This ensures that the XU server is reachable. 
 - Access to the Azure portal and Azure Data Factory.
 - Knowledge on how to build ADF pipelines.

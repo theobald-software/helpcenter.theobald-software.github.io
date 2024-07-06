@@ -19,7 +19,7 @@ The following prerequisites are mostly based on the official Microsoft documenta
 
 ### Step-by-Step Instructions
 
-1. Configure and start the Azure Data Factory IR with the necessary files to run the [Xtract IS for Azure extension in ADF](https://help.theobald-software.com/en/xtract-is/for-azure/installation).
+1. Configure and start the Azure Data Factory IR with the necessary files to run the [Xtract IS for Azure extension in ADF](../xtract-is-for-azure/installation.md).
 2. Download and install the SHIR on the local Windows server (on-prem), see [Microsoft Integration Runtime](https://www.microsoft.com/en-us/download/details.aspx?id=39717).
 3. Register the Integration Runtime (Self-hosted), see [Configure a self-hosted IR via UI](https://learn.microsoft.com/en-US/azure/data-factory/create-self-hosted-integration-runtime?tabs=data-factory#configure-a-self-hosted-ir-via-ui).
 4. If applicable: Enable SSIS package execution on self-hosted IR node using the following cmd command: 

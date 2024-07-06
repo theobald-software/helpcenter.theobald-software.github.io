@@ -10,8 +10,8 @@ This allows {{ productName }} to impersonate any SAP user.<br>
 ### Requirements
 
 The usage of *SSO with External ID* requires:
-- The {{ productName }} service must run under a Windows AD Service account, see [Run an {{ productName }} Service under a Windows Service Account](https://help.theobald-software.com/en/xtract-universal/advanced-techniques/service-account).
-- Access to the {{ productName }} Designer and the {{ productName }} server must be restricted to Windows AD users, see [Restrict Access to Windows AD Users (Kerberos Authentication)](https://help.theobald-software.com/en/xtract-universal/security/server-security#restrict-access-to-windows-ad-users-kerberos-authentication).<br>
+- The {{ productName }} service must run under a Windows AD Service account, see [Run the {{ productName }} Service under a Windows Service Account](../documentation/setup/service-account.md).
+- Set up access restrictions for the {{ productName }} Designer and the {{ Abbr }} server, see [Restrict Access to Windows AD Users (Kerberos Authentication)](../documentation/access-restrictions/restrict-server-access.md/#restrict-access-to-windows-ad-users-kerberos-authentication).<br>
 - Windows AD users must be mapped to SAP users in the SAP table USRACL, see [SAP Help: User Authentication and Single Sign-On](https://help.sap.com/docs/SAP_NETWEAVER_750/e815bb97839a4d83be6c4fca48ee5777/e54344b6d24a05408ca4faa94554e851.html?locale=en-US). <!---[SAP Help: Mapping Windows Users to SAP Users for Kerberos SSO](https://help.sap.com/saphelp_ewm900/helpdata/en/44/0efeafb9920d1be10000000a114a6b/frameset.htm)--->
 - The SAP CommonCryptoLib must be installed on the machine that runs {{ productName }}, see [SAP Note 1848999](https://launchpad.support.sap.com/#/notes/1848999).<br>
 Copy the library (sapcrypto.dll) and the command line tool (sapgenpse.exe) to a local directory, e.g. `C:\PSE\`.
@@ -88,6 +88,6 @@ This user must be a technical user (SAP user with security policy set to *Techni
 
 *****
 #### Related Links
-- [Documentation: SAP Single-Sign-On](https://help.theobald-software.com/en/xtract-universal/advanced-techniques/sap-single-sign-on)
-- [Documentation: Running the {{ productName }} Service under a Windows Service Account](https://help.theobald-software.com/en/xtract-universal/advanced-techniques/service-account)
+- [Documentation: SAP Single-Sign-On](../documentation/sap-connection/index.md/#single-sign-on-sso)
+- [Documentation: Running the {{ productName }} Service under a Windows Service Account](../documentation/setup/service-account.md).
 - [SAP Documentation: Creating PSEs and Maintaining the PSE Infrastructure](https://help.sap.com/doc/saphelp_nw73ehp1/7.31.19/en-us/59/6b653a0c52425fe10000000a114084/frameset.htm)

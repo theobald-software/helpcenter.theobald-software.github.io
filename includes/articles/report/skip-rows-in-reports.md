@@ -36,7 +36,7 @@ These rows are marked with an * symbol: <br>
 To remove all rows that contain the * symbol, follow the instructions below:
 
 1. Look up a report. The depicted example uses the report RFITEMGL. 
-2. Define the columns of the report automatically or manually, see [Documentation: Defining a Report Extraction](https://help.theobald-software.com/en/xtract-universal/abap-reports/report-extraction-define). <br>
+2. Define the columns of the report automatically or manually, see {% if page.meta.product == "xtract-universal" or page.meta.product == "board-connector" %}[Documentation: Define the Report Extraction Type](../documentation/report/index.md/#define-the-report-extraction-type){% else %}[Documentation: Define the Xtract Report Component](../documentation/report/index.md/#define-the-xtract-report-component){% endif %}. <br>
 ![report-no-skip-rows](site:assets/images/articles/report/report-skip-rows-preview.png)
 3. Click {{ settingsBtn }}. The window "Extraction Settings" open.<br>
 ![report-no-skip-rows](site:assets/images/articles/report/report-skip-rows-settings.png)
