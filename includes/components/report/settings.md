@@ -31,7 +31,7 @@ Enter the name of the spool destination (printer).
 Enter a search pattern (e.g., *Created on*) to detect the table header. 
 The {{ report }} {{ component }} scans the report output for this pattern and uses the complete line this pattern occurs in as the report header.
 
-This setting is usually not required if the report's columns can be [detected automatically](#link) and *Dynamic column widths and offsets* is active in the main window of the {{ component }}.
+This setting is usually not required if the report's columns can be [detected automatically](report-columns-define.md/#define-columns-automatically) and *Dynamic column widths and offsets* is active in the main window of the {{ component }}.
 
 #### Row skip pattern
 

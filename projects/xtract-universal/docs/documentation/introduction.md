@@ -30,8 +30,8 @@ An extraction is a combination of the following elements:<br>
 <li style="padding-left: 10px; list-style-position: outside;"> A connection to a "destination" / target environment (e.g., SQL server) </li>
 </ul>
 
-Depending on the target environment, extractions can be triggered either by the [XU command line tool - xu.exe / xu.elf](#link) or by the consuming destination. 
-For more information, see [Pull and Push Destinations](#link).
+Depending on the target environment, extractions can be triggered either by the [XU command line tool - xu.exe / xu.elf](# link) or by the consuming destination. 
+For more information, see [Pull and Push Destinations](# link).
 </div>
 <div style="clear: both;"></div>
 

@@ -73,7 +73,7 @@ The **[Text Mode]** of the WHERE clause supports script expressions.
 They are usually used to determine a dynamic date based on the current date. 
 When using script expressions in a WHERE Clause, the value must be entered in single quotation marks.
 
-For more information on script expression, see [Script Expressions](#link).
+For more information on script expression, see [Script Expressions](../parameters/script-expressions.md).
 
 **Syntax:**
 
