@@ -25,6 +25,6 @@ Make sure to select an SAP standard function module, e.g., RFC_READ_TABLE.<br>
 
 #### Related Links
 
-- {% if page.meta.product == "xtract-universal" or page.meta.product == "board-connector" %}[Documentation: Define the TableCDC Extraction Type](../documentation/table-cdc/index.md/#define-the-tablecdc-extraction-type){% else %}[Documentation: Define the Xtract TableCDC Component](../documentation/table-cdc/index.md/#define-the-xtract-tablecdc-component){% endif %}.
+- {% if page.meta.product == "xtract-universal" or page.meta.product == "board-connector" %}[Documentation: Define the TableCDC Extraction Type](../documentation/table-cdc/index.md/#define-the-table-cdc-extraction-type){% else %}[Documentation: Define the Xtract TableCDC Component](../documentation/table-cdc/index.md/#define-the-xtract-tablecdc-component){% endif %}.
 - {% if page.meta.product == "xtract-universal" or page.meta.product == "board-connector" %}[Documentation: Define the Table Extraction Type](../documentation/table/index.md/#define-the-table-extraction-type){% else %}[Documentation: Define the Xtract Table Component](../documentation/table/index.md/#define-the-xtract-table-component){% endif %}.
 - [Documentation: {{ table }} {{ Settings }} - Function modules and Background Jobs](../documentation/table/settings.md/#extract-data-in-background-job)

@@ -6,7 +6,7 @@ To open the menu, click **Show active subscriptions** in the main window of the 
 
 ### Show Active Subscriptions
 
-The {{ odp }} {{ component }} acts as a subscriber (consumer) to [data providers](provider-contexts.md) to extract data from the data provider.
+The {{ odp }} {{ component }} acts as a subscriber (consumer) to [data providers](provider-context.md) to extract data from the data provider.
 The window "Delta Subscriptions for product" displays details about subscribers.
 
 ![subscriptions](../../assets/images/documentation/components/odp/subscriptions.png){:class="img-responsive"}

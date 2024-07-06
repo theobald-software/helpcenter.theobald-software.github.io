@@ -159,7 +159,7 @@ Workflows that extract data from SAP BW InfoCubes and BEx Queries:
 
     ---
 
-    This workflow demonstrates using [Xtract Cube](documentation/bw-cube/index.md) to load data from an SAP BW InfoProvider.<br>
+    This workflow demonstrates using [Xtract Cube](documentation/bwcube/index.md) to load data from an SAP BW InfoProvider.<br>
 	
 	[:material-download-circle: Download](assets/files/xfa/Cube-BWInfoProvider.yxmd){ .md-button .md-button--stretch}
 
@@ -167,7 +167,7 @@ Workflows that extract data from SAP BW InfoCubes and BEx Queries:
 
     ---
 
-    This workflow demonstrates using [Xtract Cube](documentation/bw-cube/index.md) to load data from an SAP BW Query.<br>
+    This workflow demonstrates using [Xtract Cube](documentation/bwcube/index.md) to load data from an SAP BW Query.<br>
 	
 	[:material-download-circle: Download](assets/files/xfa/Cube-BWQuery.yxmd){ .md-button .md-button--stretch }
 
@@ -185,7 +185,7 @@ Workflows that extract Hierarchies from an SAP BW system:
 
     ---
 
-    This workflow demonstrates using [Xtract Hierarchy](documentation/bw-hierarchy/index.md) to load data from an SAP BW CostCenter hierarchy. 
+    This workflow demonstrates using [Xtract Hierarchy](documentation/hierarchy/index.md) to load data from an SAP BW CostCenter hierarchy. 
 	This workflow also showcases the different hierarchy representations "Parent-Child" and "Natural".<br>
 	
 	[:material-download-circle: Download](assets/files/xfa/Hierarchy-BW.yxmd){ .md-button .md-button--stretch}
@@ -339,4 +339,4 @@ Workflows that extract data from SPA table and Views:
 ******
 #### Related Links
 - [Theobald Software Product Page: Xtract for Alteryx](https://theobald-software.com/xtract-for-alteryx/)
-- [Knowledge Base: Xtract for Alteryx](knwoledge-base/index.md)
+- [Knowledge Base: Xtract for Alteryx](knowledge-base/index.md)

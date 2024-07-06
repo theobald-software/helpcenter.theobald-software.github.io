@@ -11,7 +11,7 @@ The implementation of various [Git](https://gitforwindows.org/) security techniq
 ### Prerequisites
 
 - Technically separate development and production environment.
-- Developers have [read-only access](../documentation/access-restrictions.md) to {{ productName }} on the production system.
+- Developers have [read-only access](../documentation/access-restrictions/index.md) to {{ productName }} on the production system.
 - Git client installed locally on the development environment and the production environment, e.g., [Fork](https://fork.dev).
 - The {{ productName }} installation must have the identical release version on the servers.
 

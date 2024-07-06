@@ -13,7 +13,7 @@ The following software applications must be installed for integration into KNIME
 ### Step by Step Guide
 
 !!! note
-    Basic knowledge of creating extraction in {{ productName }} is necessary for the following integration scenario, see [Define the Table Extraction Type](../documentation/table/index.md/#define-the-table-extraction-typedefine-a-table-extraction).
+    Basic knowledge of creating extraction in {{ productName }} is necessary for the following integration scenario, see [Define the Table Extraction Type](../documentation/table/index.md/#define-the-table-extraction-type).
 
 1. Create an extraction in {{ productName }} and make sure that the [Web Service - HTTP-CSV](../documentation/destinations/csv-via-http.md) :number-1: Destination is selected for the extraction.<br>
 ![XU Extraction Webservice HTTP](../assets/images/xu/articles/xu_extraction_webservice_http.png){:class="img-responsive"}

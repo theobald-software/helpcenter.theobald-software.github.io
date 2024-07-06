@@ -44,7 +44,7 @@ Setting a single value or a parameter for the whole structure is not possible.
 ![BAPI import parameters](../../assets/images/documentation/components/bapi/edit-structure.png){:class="img-responsive"}
 
 !!! tip	
-	It is possible to use tables as input parameters, see [Tables as Input Parameters](#tables-as-input-parameters).
+	It is possible to use tables as input parameters, see [Tables Parameters](#table-parameters).
 
 
 ## Export Parameters
@@ -59,7 +59,7 @@ Mark the checkbox in the output column to add an item to the output of the {{ co
 To use the filtering function, enter text in the headers of the columns **Name** and **Description**. <br>
 
 !!! tip
-	It is possible to use tables as output parameters, see [Tables as Output Parameters](#tables-as-output-parameters).
+	It is possible to use tables as output parameters, see [Add Tables to Output](#add-tables-to-output).
 
 
 ## Changing Parameters

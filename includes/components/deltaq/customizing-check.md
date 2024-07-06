@@ -1,7 +1,7 @@
 
 This page shows how to reference the SAP RFC destination in the {{ deltaq }} {{ component }}.
 
-Using the {{ deltaq }} {{ component }} requires customization in SAP, see [Customizing for DeltaQ](../sap-customizing/customizing-for-deltaq).
+Using the {{ deltaq }} {{ component }} requires customization in SAP, see [Customizing for DeltaQ](../setup-in-sap/customization-for-deltaq.md).
 After an RFC Destination is set up in SAP, the RFC destination and the RFC target system must be entered in the {{ deltaq }} {{ component }}.
 
 ### Settings in the {{ deltaq }} {{ Component }}

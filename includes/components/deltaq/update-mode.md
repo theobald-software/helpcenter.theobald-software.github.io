@@ -12,7 +12,7 @@ The {{ deltaq }} {{ component }} offers the following update modes:
 |  Mode   | Description |
 |:--- | :--- |
 | Full  | Extracts all data that match the set selection criteria.|
-| Delta (Delta Update)| Only extracts data added or changed on the SAP system since the last delta request. [Initialize the delta process](#initialize-a-delta-process) before running a delta update. To prevent errors, aborts and gaps in your data during a delta run, run the next extraction in the update mode **Repeat**. |
+| Delta (Delta Update)| Only extracts data added or changed on the SAP system since the last delta request. [Initialize a delta process](#initialize-a-delta-process) before running a delta update. To prevent errors, aborts and gaps in your data during a delta run, run the next extraction in the update mode **Repeat**. |
 | Init (Delta Initialization)| Extracts all data as full load and initializes the delta process. When re-initializing a delta process, first delete any existing Inits using the **[Maintenance]** button in the [{{ settings }}](settings.md) menu.|
 | Repeat  | Repeats the last delta run and updates and any delta data accumulated since the last run. Deletes any data from the last (unsuccessful) delta update before running a repeat. You can run a repeat multiple times.|
 | InitNoData (Delta Init without data)| Initializes the delta process without extracting any data from the SAP DataSources. The result of the *Delta Init* on the SAP side. When re-initializing a delta process, first delete any existing Inits using the **[Maintenance]** button in the [{{ settings }}](settings.md) menu.|
@@ -26,7 +26,7 @@ The {{ deltaq }} {{ component }} offers the following update modes:
 	
 {% endif %}
 
-For more information about when to use which update mode, see [Initializing a Delta Process](#initializing-a-delta-process)
+For more information about when to use which update mode, see [Initialize a Delta Process](#initialize-a-delta-process)
 
 ### Initialize a Delta Process
 
@@ -40,7 +40,7 @@ Set **Update Mode** to *Delta Initialization* and run the extraction.<br>
 The initialization selections are copied to load the delta records. You can now use *Delta Update*.
 
 !!! note
-	When re-initializing a delta process, first delete any existing Inits (initialization requests) by clicking **[Maintenance]** in the [extraction settings](./extraction-settings).
+	When re-initializing a delta process, first delete any existing Inits (initialization requests) by clicking **[Maintenance]** in the [{{ settings }}](settings.md).
 
 #### Alternative Step 1: Delta Init (without data) [S]
 This mode is similar to *Delta Initialization*, but no data is extracted from the SAP DataSource.
@@ -49,7 +49,7 @@ Set **Update Mode** to *Delta Init (without data)* and run the extraction.<br>
 You can now use *Delta Update*.
 
 !!! note
-	When re-initializing a delta process, first delete any existing Inits (initialization requests) by clicking **[Maintenance]** in the [extraction settings](./extraction-settings).
+	When re-initializing a delta process, first delete any existing Inits (initialization requests) by clicking **[Maintenance]** in the [extraction settings](settings.md).
 
 #### Step 2: Delta Update [D]
 *Delta Update* only extracts data added or changed on the SAP system since the last delta request.

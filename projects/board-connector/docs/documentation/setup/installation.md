@@ -23,7 +23,7 @@ When starting the installation program, optional components can be selected duri
 |Main Product Files |- | All required files to use Board Connector. |
 |Designer | -| Installs the Designer application, uncheck this option if you want to use Board Connector without a graphical interface. |
 |Server | | Installs the Board Connector Server |
-|<!---->| Install Service| Installs the server component as a windows service. See also section [Start Server](../server/start-server.md). |
+|<!---->| Install Service| Installs the server component as a windows service, see [Server](../server/index.md). |
 | <!---->  |  Convert config files | Converts extractions, sources, destinations, etc. from previous version format to new format. Crucial when installing major releases and upgrading from e.g., version 3.x to 4.x.|
 |Start Menu Shortcuts |- |Component that adds shortcuts to the start menu.|
 
@@ -39,8 +39,8 @@ The list below shows several most important files that are placed into the defau
 |Filename | Description |
 |:----|:---|
 | ABAP directory | Directory with customer-specific function modules (.txt) corresponding to SAP transport requests (.zip).|
-| logs directory| Directory with server and extraction logs. See also [Logs](../logging/index.md). |
-| config directory | Directory created automatically with the first extraction, containing all extractions and the corresponding log files. See also section [Backup](backup-and-migration.md). |
+| logs directory| Directory with server and extraction logs. See also [Logs](../logs.md). |
+| config directory | Directory created automatically with the first extraction, containing all extractions and the corresponding log files, see [Backup](update.md). |
 | result-cache directory | Directory with extraction cache files. |
 | BCDesigner.exe | Application that launches Board Connector Designer to create, test and monitor extractions.|
 | BCService.exe | Application that launches Board Connector Server as Windows Service.  Usually boots automatically and runs in the background. |
@@ -51,7 +51,7 @@ The list below shows several most important files that are placed into the defau
 | BCConfigServer.exe| Listener process waits for new connection requests from the Designer. |
 | ConfigConverter.exe| Application that converts extractions, sources, etc. from previous version format to new format. Crucial when installing major releases and upgrading from e.g., version 3.x to 4.x. |
 | uninstall.exe| Tool for uninstalling and removing Board Connector with all its components from your machine. |
-| BOARDConnectorSetup.exe| Setup of the currently installed version. See also [Migration to a Different Machine](backup-and-migration.md#migration-to-a-different-machine).|
+| BOARDConnectorSetup.exe| Setup of the currently installed version. See also [Migration to a Different Machine](migration.md#migration-to-a-different-machine).|
 | Eula_Board Connector.rtf | Document containing the license agreement for the use of the software Board Connector.|
 | BOARDConnectorLicense.json |  License file with information about the server, the component and runtime. |
 

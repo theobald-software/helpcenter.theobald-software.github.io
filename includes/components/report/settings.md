@@ -45,11 +45,11 @@ This setting can be used for skipping header rows that are repeated in the outpu
 For more information, see [Knowledge Base Article: Skip Rows in Reports](../../knowledge-base/skip-rows-in-reports.md).
 
 !!! note
-	This setting is usually not required if the report columns can be [detected automatically](./report-extraction-define#define-columns-automatically) and *Dynamic column widths and offsets* is checked in the Report window.
+	This setting is usually not required if the report columns can be [detected automatically](report-columns-define.md/#define-columns-automatically) and *Dynamic column widths and offsets* is checked in the Report window.
 
 ### Function Module
 
-The Report component requires installation of the custom function module `Z_XTRACT_IS_REMOTE_REPORT` in your SAP system, see [Install Report Custom Function Module](../setup-in-sap/install-report-custom-function-module.md). 
+The Report component requires installation of the custom function module `Z_XTRACT_IS_REMOTE_REPORT` in your SAP system, see [Install Report Custom Function Module](../setup-in-sap/custom-function-module-for-reports.md). 
 If you manually created the function module in your SAP system and gave it a different name, enter that name in this field. 
 The default is `Z_XTRACT_IS_REMOTE_REPORT`.
 
@@ -57,4 +57,4 @@ The default is `Z_XTRACT_IS_REMOTE_REPORT`.
 #### Related Links
 - [Regular Expressions in the Microsoft Online Help](http://msdn.microsoft.com/en-us/library/az24scfc.aspx)
 - [Knowledge Base Article: Skip Rows in Reports](../../knowledge-base/skip-rows-in-reports.md)
-- [Install Report Custom Function Module](../setup-in-sap/install-report-custom-function-module.md)
+- [Install Report Custom Function Module](../setup-in-sap/custom-function-module-for-reports.md)

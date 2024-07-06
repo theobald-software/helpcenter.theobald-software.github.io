@@ -22,7 +22,7 @@ Both tables have the following identical column descriptions:
 - 'MANDT'
 - 'EBELN'
 
-When selecting the standard Column Name Style 'Code' in the [destination settings](../documentation/destinations/microsoft-sql-server#destination-settings), the following error occurs on the SQL side when selecting these fields:
+When selecting the standard Column Name Style 'Code' in the [destination settings](../documentation/destinations/microsoft-sql-server.md/#destination-settings), the following error occurs on the SQL side when selecting these fields:
 
 ```
 > System.Data.SqlClient.SqlException (0x80131904): Column names in each table must be unique. Column name 'MANDT' in table 'EKKO_JOIN' is specified more than once.

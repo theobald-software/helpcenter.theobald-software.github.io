@@ -77,8 +77,12 @@ When an older Designer version is connected to a newer Server version, you are b
 
 #### Result cache
 
+{% if page.meta.product == "xtract-universal" %}
+
 !!! note
 	The *Cache results* option is only available in [pull destinations](../destinations/index.md) (e.g., PBI, Qlik etc.).
+
+{% endif %}
 
 | Option | Description |
 |------------|--------------|

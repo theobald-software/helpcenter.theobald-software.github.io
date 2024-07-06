@@ -33,6 +33,5 @@ To automatically call BAPI_TRANSACTION_COMMIT after the selected Function Module
 
 ****
 #### Related Links
-- [Knowledge Base Article: Create and Load Purchase Requisitions in SAP](../../knowledge-base/create-and-load-purchase-requisitions-in-sap.md)
 - [Knowledge Base Article: Write CATS Data to SAP](../../knowledge-base/write-cats-data-to-sap.md)
 - [Knowledge Base Article: Write Product Data to SAP](../../knowledge-base/write-product-data-to-sap.md)

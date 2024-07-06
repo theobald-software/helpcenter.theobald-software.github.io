@@ -31,7 +31,7 @@ The execution of the {{ extractions }} takes place on the server.
 
 ![BC-Architecture](../assets/images/bc/documentation/Architecture.png){:class="img-responsive"}
 
-### Available {{ Components }}
+### {{ Components }}
 
 {{ productName }} offers the following {{ components }} to cover a wide range of data extraction scenarios.
 

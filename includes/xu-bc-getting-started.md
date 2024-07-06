@@ -16,7 +16,7 @@ For more information, see [Documentation: Setup](documentation/setup/index.md).
 Before connecting to SAP for the first time, set up an SAP dialog user with the necessary [SAP Authorization Objects](documentation/setup-in-sap/sap-authority-objects.md/#general-authorization-objects).
 
 1. In the main window of the Designer, click **[:material-plus-thick:New]**. The window "Change Source" opens.<br>
-![new](../assets/images/{{ abbr }}/getting-started/new.png)
+![new](assets/images/{{ abbr }}/getting-started/new.png)
 2. Enter a name for the SAP connection in the field **Name**, e.g., *s4hana*, *bw*, etc.
 3. In the *General* tab, enter the system details of your SAP system.
 Input values for the SAP connection can be found in the *Properties* of the SAP Logon Pad or they can be requested from the SAP Basis team.<br>
@@ -38,7 +38,7 @@ An extraction defines what data to extract from SAP and in which target environm
 
 1. In the main window of the Designer, click **[:material-plus-thick:New]**. The window "Create Extraction" opens.
 2. Select an SAP Connection from the drop-down menu in **Source** :number-1:.<br>
-![Create-Extraction](../assets/images/{{ abbr }}/getting-started/Create-Extraction.png)
+![Create-Extraction](assets/images/{{ abbr }}/getting-started/Create-Extraction.png)
 3. Enter a name for the extraction :number-2:.
 4. Select one of the following extraction types :number-3::
 
@@ -93,3 +93,4 @@ The status in the subsection *General Info* indicates if the extraction finished
 {% endif %}
 
 For more information, see {% if page.meta.product == "xtract-universal" %}[Execute and Automate](documentation/execute-and-automate/index.md){% else %}[Run Extractions](documentation/run-extractions.md){% endif %}.
+

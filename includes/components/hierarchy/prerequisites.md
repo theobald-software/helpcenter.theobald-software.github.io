@@ -1,7 +1,7 @@
 
 !!! note
 	To extract hierarchies from a BW system, use the {{ hierarchy }} {{ component }}.
-	To extract hierarchies from an ERP system like ECC or S4, use the [{{ odp }}](../odp.md) {{ component }}.
+	To extract hierarchies from an ERP system like ECC or S4, use the [{{ odp }}](../odp/index.md) {{ component }}.
 	
 ### Prerequisites
 

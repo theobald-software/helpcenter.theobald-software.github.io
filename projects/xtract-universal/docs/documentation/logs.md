@@ -21,7 +21,7 @@ Logs can also be queried using the {{ productName }} [Web API](../web-api.md).
 Read the logs written in understandable language to better understand the procedures of {{ productName }}. 
 Ihe depicted example log belongs to an extraction that writes data into an SQL destination:
 
-![logging](../../assets/images/xu/documentation/logs/logging-extract-detail.png){ width="49%" align=right }
+![logging](../assets/images/xu/documentation/logs/logging-extract-detail.png){ width="49%" align=right }
 
 :number-1: General technical information is displayed.
 

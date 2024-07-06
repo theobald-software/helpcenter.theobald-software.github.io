@@ -20,7 +20,7 @@ After applying the HAVING Clause, the preview shows only the material types with
 
 !!! note 
 	When fields with the same name exist in different tables, the field names must be formatted as [Table]~[Column], e.g., MAKT~MATNR. 
-	This can be the case with [table joins](table-joins.md).
+	This can be the case with [table joins](table-join.md).
 
 ### HAVING Clause Syntax 
 

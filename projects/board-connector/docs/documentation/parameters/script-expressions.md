@@ -8,7 +8,7 @@ Script expressions are resolved at extraction runtime.
 The output of a script expression is a string. 
 This string can be used as input for further .NET string operations.
 
-Script expressions can be used as selection parameters for [{{ table }}](../table/where-clause.md/#script-expressions) or [{{ deltaq }}](../datasource-deltaq/datasource-parameters.md/#script-expressions) extractions.
+Script expressions can be used as selection parameters for [{{ table }}](../table/where-clause.md/#script-expressions) or [{{ deltaq }}](../deltaq/selections.md/#script-expressions-for-deltaq) extractions.
 
 {% include "parameters/script-expressions.md" %}
 

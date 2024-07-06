@@ -41,7 +41,7 @@ your comment goes here
 
 ### About Extractions
 
-![glossary-example](../../assets/images/xu/documentation/glossary-example.png){ class="img-responsive" width="450px" align=right  }
+![glossary-example](../assets/images/xu/documentation/glossary-example.png){ class="img-responsive" width="450px" align=right  }
 
 The main entities in {{ productName }} are called "{{ extractions }}". 
 An {{ extraction }} is a combination of the following components:
