@@ -1,5 +1,5 @@
 
-{% if page.meta.componentFolder == "table" %}
+{% if page.meta.componentFolder == "table" or page.meta.componentFolder == "table-cdc" %}
 #### ColumnNameStyle
 
 - *Code*: the SAP technical column name is used as column name in the output, e.g., MAKTX.

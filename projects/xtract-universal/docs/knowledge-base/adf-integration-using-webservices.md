@@ -17,7 +17,7 @@ This article targets customers that utilize ADF as a platform for orchestrating 
 
 - A [self-hosted Integration runtime](https://docs.microsoft.com/EN-US/azure/data-factory/create-self-hosted-integration-runtime#create-a-self-hosted-ir-via-azure-data-factory-ui) is set up on the server {{ productName }} runs on. 
 This ensures that {{ productName }}'s web server is accessible from ADF over http(s).   
-- The extraction uses a [push-destination](xtract-universal/destinations#pull-and-push-destinations), e.g., Azure Blob Storage or Azure SQL Server.<br> 
+- The extraction uses a [push-destination](../documentation/destinations/index.md), e.g., Azure Blob Storage or Azure SQL Server.<br> 
 - The extraction runs successfully when called from a web browser, see [Web-API](../web-api.md/#run-extractions).
 - Access to Azure Data Factory.
 - Knowledge on how to build ADF pipelines.

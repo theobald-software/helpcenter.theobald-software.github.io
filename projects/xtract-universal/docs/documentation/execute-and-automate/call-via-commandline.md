@@ -25,7 +25,7 @@ The command line tool connects to an {{ productName }} server (service) and star
 | -o   | Parameters to be set when running the extraction. <br> Multiple parameters can be set. | `xu.exe -n <name> -s <host> -p <port> -o "param1=<wert1>" -o "param2=<wert2>"`|
 | -e   | Use [Transport Layer Security (TLS)](https://docs.microsoft.com/en-us/windows/win32/secauthn/transport-layer-security-protocol) (1.2 or higher). |   `xu.exe  -n <name> -s <host> -p <port> -e`|
 | -a   | Cancel all running instances of the extraction. | `xu.exe -a` |
-| -c   | Clear the result cache and options of the extraction. <br> This only works with [Pull Destinations](../destinations#pull-and-push-destinations). | `xu.exe -c` |  
+| -c   | Clear the result cache and options of the extraction. <br> This only works with [Pull Destinations](../destinations/index.md). | `xu.exe -c` |  
 
 #### Examples
 To run an extraction on the {{ productName }} server, call the command line tool as follows:

@@ -14,7 +14,7 @@ By linking the extractions, you can blend data from both data sources into a sin
 ![XU-Tableau-BExQuery-Settings](../assets/images/xu/articles/XU-Tableau-BExQuery-Settings.png){:class="img-responsive"}
 2. Open the Destination Settings of the extraction and set *Text* as the **Column Name Style** for Tableau.
 Note that using *Text* as the column name style can result in column names that are not unique.
-4. Create a BW Hierarchy extraction, see [Define a Hierarchy Extraction](../documentation/hierarchy/#define-the-bw-hierarchy-extraction-type). 
+4. Create a BW Hierarchy extraction, see [Define a Hierarchy Extraction](../documentation/hierarchy/index.md#define-the-bw-hierarchy-extraction-type). 
 <!--- ![XU-Tableau-Hierarchy](../assets/images/xu/articles/XU-Tableau-Hierarchy.png){:class="img-responsive"} -->
 5. Open the Extraction Settings of the Hierarchy and set **Representation** to *Natural*:<br>
 ![XU-Tableau-Hierarchy-Settings](../assets/images/xu/articles/XU-Tableau-Hierarchy-Settings.png){:class="img-responsive"}
