@@ -70,7 +70,7 @@ For more information, see [SNC Authentication](snc-authentication.md)<br>
 
 | Input Field | Description |
 | :------ |:--- | 
-| **Legacy storage mode (connection string)** | Activate this option, if you still use a single connection string for the SAP connection (default in {{ productName }} versions before 09.2017). You can either use *Connection properties* or a *Connection string*, not both. *Connection string* does not support [sensitive environment variable](parameterize-connections.md#sensitive-environment-variable-in-ssisdb-catalog).| 
+| **Legacy storage mode (connection string)** | Activate this option, if you still use a single connection string for the SAP connection (default in {{ productName }} versions before 09.2017). You can either use *Connection properties* or a *Connection string*, not both. *Connection string* does not support [sensitive environment variable](parameterize-connections.md/#sensitive-environment-variables-in-ssisdb-catalog).| 
 | **Obfuscate Password** | Masks the SAP connection password. This option is activated by default when activating **Legacy storage mode**.|
 | **Internal Table Function** | Defines the function module that is used for Xtract IS' internal communication with SAP, e.g., retrieving metadata. To [change the selected function module](../setup-in-sap/custom-function-module-for-table-extraction.md), type the name of function module manually. |
 | **AttachesSapGui** | This option is only accessible in the *Properties* of the XTRACT Connection Manager and not in the GUI. There are SAP Reports and BAPIs that require an installed SAP GUI even when they are called remotely. In this case, set the *AttachesSapGui* property in the *Expert Options* of the XTRACT Connection Manager to *True*. |

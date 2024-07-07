@@ -26,10 +26,10 @@ If you want to trigger a process chain after uploading just type in the name of 
 The best way to upload data is to trigger the InfoPackage (default value). Under some conditions it might be useful not to trigger the InfoPackage but only to wait for notification (sleeping mode). In this case check this option.
 
 #### Use external Notifier
-See chapter [External Notification](./external-notification).
+Corresponds to an option in [Load Data into SAP BW](index.md/#load-data-into-sap-bw).
 
 #### Request ID variable
-See chapter [External Notification](./external-notification).
+Corresponds to an option in [Load Data into SAP BW](index.md/#load-data-into-sap-bw).
 
 ### Performance Improvement
 #### Debug Details

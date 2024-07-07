@@ -22,7 +22,7 @@ List of *Data Flow Properties* that can be parameterized:
 
 |Property|Description|
 |:----|:----|
-| *[Xtract Report].[Variant]*| Corresponds to the settings [Variants](variants-and-selections.md#choose-a-variant) in the {{ r }} {{ component }}.|
+| *[Xtract Report].[Variant]*| Corresponds to the settings [Variants](variants-and-selections.md/#choose-a-variant) in the {{ r }} {{ component }}.|
 | *[Xtract Report].[BatchJobDestination]* | Corresponds to the setting [Spool Destination](settings.md/#spool-destination) in the {{ report }} {{ component }}.|
 | *[Xtract Report].[BatchJobName]*        | Corresponds to the setting [Background Job Name](settings.md/#background-job-name) in the {{ report }} {{ component }}.|
 | *[Xtract Report].[BatchJobTimeout]*     | Corresponds to the setting [Background Job Timeout](settings.md/#background-job-timeout) in the {{ report }} {{ component }}.|
@@ -50,7 +50,7 @@ List of the relevant *Custom Properties*:
 | *SkipBottomRows* | Corresponds to the setting [Skip Rows from Bottom](report-columns-define.md/#skip-rows-from-bottom) in the {{ report }} {{ component }}. |
 | *SkipTopRows* | Corresponds to the setting [Skip Rows from Top](report-columns-define.md/#skip-rows-from-top) in the {{ report }} {{ component }}. |
 | *UseBatch* | Corresponds to the setting [Use Background Mode](settings.md/#use-background-mode) in the {{ report }} {{ component }}. |
-| *Variant* | Corresponds to the setting [Variant](variants-and-selections.md/choose-a-variant) in the {{ report }} {{ component }}.|
+| *Variant* | Corresponds to the setting [Variant](variants-and-selections.md/#choose-a-variant) in the {{ report }} {{ component }}.|
 
 ****
 #### Related Links

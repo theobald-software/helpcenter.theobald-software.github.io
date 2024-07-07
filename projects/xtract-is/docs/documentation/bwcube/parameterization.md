@@ -31,13 +31,13 @@ The *Custom Properties* of the {{ bwcube }} {{ component }} are displayed in the
 Corresponds to the setting [*Cube Name*](index.md/#look-up-a-bw-cube-or-query) in the {{ bwcube }} {{ component }}.
 
 #### DelimiterForMultipleSSISVariableValues
-Delimiter for multiple input variables, see [Parameterizing using SSIS Variables](#parameterizing-using-ssis-variables).
+Delimiter for multiple input variables, see [Parameterization using SSIS Variables](#parameterization-using-ssis-variables).
 
 #### IgnoreMDXErrors
 If set to *true*, MDX errors do not lead to SSIS errors.
 
 #### MDXVariable
-Enter an SSIS variable in the MDX textbox and fill the SSIS variable with the complete MDX statement, see [Parameterizing using SSIS Variables](#parameterizing-using-ssis-variables). 
+Enter an SSIS variable in the MDX textbox and fill the SSIS variable with the complete MDX statement, see [Parameterization using SSIS Variables](#parameterization-using-ssis-variables). 
 
 #### StringConversion
 Corresponds to the seeting [String Conversion](settings.md/#string-conversion). 

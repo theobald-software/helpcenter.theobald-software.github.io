@@ -56,7 +56,7 @@ The {{ bwcube }} {{ component }} offers the following options for Query and BW C
 2. Within the key figures directory, click the arrow to display the available units. Select a unit, if needed.
 3. In the following directories, select the dimensions and properties you want to extract :number-2:.
 4. Optional: Click the **Filter** option next to a dimension to add filters :number-3:, see [Dimension Filters](variables-and-filters.md/#set-dimension-filters).
-5. Optional: If a BW Query has a defined variable, click **Variables** :number-4: to edit the variable or provide input values, see [Variables](variables-and-filters/#edit-variables).
+5. Optional: If a BW Query has a defined variable, click **Variables** :number-4: to edit the variable or provide input values, see [Variables](variables-and-filters.md/#edit-variables).
 6. Click **[Preview]** to display a live preview of the data. 
 For every selected dimension or property, a key figure and a unit is displayed in the result. 
 7. Check the [{{ Settings }}](settings.md){% if page.meta.product == "xtract-universal" or page.meta.product == "board-connector"%} and the [General Settings](general-settings.md){% endif %} before running the {{ extraction }}.

@@ -20,7 +20,7 @@ List of *Data Flow Properties* that can be parameterized:
 | *[Xtract Table].[WhereClause]*| Corresponds to the tab *WHERE clause* in the Table component. Allows parameterization of the complete WHERE clause, see [Knowledge Base Article: Dynamization of WHERE Conditions](../../knowledge-base/dynamization-of-where-conditions.md).|
 | *[Xtract Table].[ConvertsDates]*| Enable or disable conversion of SAP dates, see [ConvertsDates](#convertsdates). |
 | *[Xtract Table].[CustomFunctionName]*| Corresponds to the setting [Function Module](settings.md#function-module) in the {{ table }} {{ component }}.|
-| *[Xtract Table].[MaxRows]*| Corresponds to the setting [Row Limit](settings.md#max-limit) in the {{ table }} {{ component }}. |
+| *[Xtract Table].[MaxRows]*| Corresponds to the setting [Row Limit](settings.md#row-limit) in the {{ table }} {{ component }}. |
 | *[Xtract Table].[MinDateReplacement]*| Converts the SAP date 00000000 to the entered value, see [MinDateReplacement](#mindatereplacement).|
 | *[Xtract Table].[MaxDateReplacement]*| Converts the SAP date 9999XXXX to the entered value, see [MaxDateReplacement](#maxdatereplacement).|
 | *[Xtract Table].[InvalidDateReplacement]*| Every invalid value will be converted into the entered value, see [InvalidDateReplacement](#invaliddatereplacement).|
@@ -38,7 +38,7 @@ The *Custom Properties* of the {{ table }} {{ component }} are displayed in the 
 {% include "components/table/xis-properties.md" %}
 
 #### MaxRows
-Corresponds to the setting [Row Limit](settings.md#max-limit) in the {{ table }} {{ component }}. 
+Corresponds to the setting [Row Limit](settings.md#row-limit) in the {{ table }} {{ component }}. 
 
 #### OrderBy
 Defines the table field that is used as the sort criterion for the result. 

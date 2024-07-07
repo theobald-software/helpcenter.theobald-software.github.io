@@ -41,7 +41,7 @@ List of relevant *Custom Properties*:
 | *PackageSize* | Corresponds to the setting [*Package Size*](settings.md/#package-size) in the {{ bwloader }} {{ component }}.|
 | *ProcessChain* | Corresponds to the setting [*Trigger Process Chain after Upload*](settings.md/#trigger-process-chain) in the {{ bwloader }} {{ component }}.|
 | *ProgramID* | Corresponds to the setting [*Program ID*](index.md/#define-the-xtract-bwloader-component) in the {{ bwloader }} {{ component }}. |
-| *WaitUntilFinished* | Corresponds to the setting [*Wait data transfer to be finished*](setting.md/#wait-data-transfer-to-be-finished) in the {{ bwloader }} {{ component }} |
+| *WaitUntilFinished* | Corresponds to the setting [*Wait data transfer to be finished*](settings.md/#wait-data-transfer-to-be-finished) in the {{ bwloader }} {{ component }} |
 
 
 

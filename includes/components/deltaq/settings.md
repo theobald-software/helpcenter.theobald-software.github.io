@@ -44,7 +44,7 @@ Every invalid value is converted into this value.
 
 Defines a variable for the update mode. 
 Enter the name of an SSIS variable in the format `@variable_name` and set the component's custom property *UseLegacyVarUpdate* to *true* to overwrite the Update Mode. 
-The SSIS variable can process the following values: F, C, D, S, I and R, as it is listed in [Update Mode](./update-mode).
+The SSIS variable can process the following values: F, C, D, S, I and R, as it is listed in [Update Mode](update-mode.md).
 
 #### Request ID
 

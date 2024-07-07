@@ -69,7 +69,7 @@ Follow the steps below to set up a sensitive environment variable for an XTRACT 
 *****
 
 #### Related Links
-- [XTRACT Connection Manager](./the-connection-manager)
-- [SAP Connection with SNC](./sap-connection-with-snc)
+- [XTRACT Connection Manager](index.md/#connect-to-sap)
+- [SAP Connection with SNC](snc-authentication.md)
 - [Microsoft Documentation: SSIS Catalog](https://learn.microsoft.com/en-us/sql/integration-services/catalog/ssis-catalog?view=sql-server-ver16)
 - [Microsoft Documentation: Access Control for Sensitive Data in Packages](https://learn.microsoft.com/en-us/sql/integration-services/security/access-control-for-sensitive-data-in-packages#protection-level-setting-and-the-ssisdb-catalog)

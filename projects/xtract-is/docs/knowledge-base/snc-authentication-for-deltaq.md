@@ -57,7 +57,7 @@ Follow the steps below to enable SNC for the corresponding RFC destination in re
 ***********
 #### Related Links
 - [Documentation: Create an RFC Destination](../documentation/setup-in-sap/customization-for-ohs-in-bw.md/#create-an-rfc-destination)
-- [Documentation: Connect to SAP](../documentation/sap-connection/#connect-to-sap.md)
+- [Documentation: Connect to SAP](../documentation/sap-connection/index.md/#connect-to-sap)
 - [Documentation: SAP Connection with SNC](../documentation/sap-connection/snc-authentication.md)
 - [SAP Documentation: Maintaining RFC destinations and their SNC options](https://help.sap.com/viewer/e73bba71770e4c0ca5fb2a3c17e8e229/7.5.8/en-US/57898009a859493a8bce56caaf0f8e13.html)
 
