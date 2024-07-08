@@ -19,7 +19,7 @@ Quotation is applied in the following scenarios:
 When Escape character is part of the field data, the respective field containing this character is encased by the "Quote symbol".
 The default escape character is the backslash '\\'. The field may remain empty.
 
-#### Column names in first row*
+#### Column names in first row
 Defines if the first row contains the column names. This option is set per default.
 
 #### Row separator after last row
