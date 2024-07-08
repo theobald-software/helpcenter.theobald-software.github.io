@@ -3,6 +3,19 @@
 
 Defines the action on the target database before the data is inserted into the target table.
 
+{% if page.meta.folder == "snowflake" %}
+
+| Option | Description |
+|---------|--------------|
+| *None* | no action |
+| *Drop & Create* | Remove table if available and create new table (default). |
+| *Truncate Or Create* | Empty table if available, otherwise create. |
+| *Truncate* | Empty table if available. |
+| *Create If Not Exists* | Create table if not available. |
+| *Custom SQL* | Here you can define your own script, see [Custom SQL Statements](#custom-sql-statements). |
+
+{% else %}
+
 | Option | Description |
 |---------|--------------|
 | *Drop & Create* | Remove table if available and create new table (default). |
@@ -12,15 +25,28 @@ Defines the action on the target database before the data is inserted into the t
 | *None* | no action |
 | *Custom SQL* | Here you can define your own script, see [Custom SQL Statements](#custom-sql-statements). |
 
+{% endif %}
+
 To only create the table in the first step and not insert any data, you have two options:
 1. Copy the SQL statement and execute it directly on the target data database.
-2. Select the None option for Row Processing and execute the extraction.
+2. Select the *None* option for **Row Processing** and execute the extraction.
 
 Once the table is created, it is up to you to change the table definition, e.g., by creating corresponding key fields and indexes or additional fields.
 
 ### Row Processing
 
 Defines how the data is inserted into the target table.
+
+{% if page.meta.folder == "snowflake" %}
+
+| Option | Description |
+|---------|--------------|
+| *None* | No action. |
+| *Copy file to table* | Insert records (default). |
+| *Merge File to table* | Insert records into the staging table. |
+| *Custom SQL* | Define your own script, see [Custom SQL Statements](#custom-sql-statements). |
+
+{% else %}
 
 | Option | Description |
 |---------|--------------|
@@ -30,10 +56,20 @@ Defines how the data is inserted into the target table.
 | *Custom SQL* | Define your own script, see [Custom SQL Statements](#custom-sql-statements). |
 | *Merge (deprecated)* | This option is obsolete, see [Merge Data](#merge-data). Use the *Fill merge staging table* option.  |
 
+{% endif %}
 
 ### Finalization
 
 Defines the action on the target database after the data has been successfully inserted into the target table.
+
+{% if page.meta.folder == "snowflake" %}
+
+| Option | Description |
+|---------|--------------|
+| *None* | No action (default). |
+| *Custom SQL* | Define your own script, see [Custom SQL Statements](#custom-sql-statements). |
+
+{% else %}
 
 | Option | Description |
 |---------|--------------|
@@ -41,3 +77,4 @@ Defines the action on the target database after the data has been successfully i
 | *None* | No action (default). |
 | *Custom SQL* | Define your own script, see [Custom SQL Statements](#custom-sql-statements). |
 
+{% endif %}

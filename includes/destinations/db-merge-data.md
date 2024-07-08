@@ -1,3 +1,6 @@
+
+## Merge Data
+
 The following example depicts the update of the existing data records in a database by running an extraction to merge data. 
 In this case, merging means changing a value of a field or inserting a new data row or updating an existing record in SAP. 
 
@@ -32,9 +35,9 @@ Follow the steps below to set up the merge process in Xtract Universal:
 
 1. In the main window of the Xtract Universal Designer, select an extraction from the list of extractions. 
 2. Click **[:designer-destination:Destination]**. The window "Destination Settings" opens.
-3. Make sure to assign a database destination to the extraction. 
+3. Make sure to assign {{ page.meta.title }} destination to the extraction. 
 4. Apply the following destination settings:
-![Extraction-Specific-Settings-Merge-Makt](../../assets/images/xu/documentation/destinations/ms-sql/destination_data_merge.png){:class="img-responsive"}
+{% if page.meta.folder == "snowflake" %}![Merge-Makt](../../assets/images/xu/documentation/destinations/snowflake/destination_data_merge.png){:class="img-responsive"}{% else %}![Merge-Makt](../../assets/images/xu/documentation/destinations/ms-sql/destination_data_merge.png){:class="img-responsive"} {% endif %}
 5. Click **[OK]** and [run the extraction](../execute-and-automate/run-an-extraction.md/#run-extractions-in-the-designer).
 
 More information about the updated fields can be found in the SQL statement.<br>
