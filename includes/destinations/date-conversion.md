@@ -7,7 +7,6 @@ Target data uses a real date data-type and not the string data-type to store dat
 #### Invalid dates
 If an SAP date cannot be converted to a valid date format, the invalid date is converted to the entered value. 
 NULL is supported as a value.
-
 When converting the SAP date the two special cases 00000000 and 9999XXXX are checked first.
 
 #### 00000000
