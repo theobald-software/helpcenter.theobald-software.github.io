@@ -5,6 +5,10 @@ description: Introduction
 
 ![img](site:assets/images/logos/theo-thumbs.png){ .lg .middle width="30px"} This section contains user documentation for {{ productName }}.
 
+ <br>
+
+Find more information on how to use and navigate through the user documentation in the section ["About this Documentation"](about-this-documentation.md). 
+
 
 ### About {{ productName }}
 
