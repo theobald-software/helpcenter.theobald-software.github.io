@@ -32,7 +32,7 @@ Example: to parameterize a field in a specific tap or menu, the tab or menu must
 6. Click **[Equipment] > [Save]** to save the new equipment in SAP.<br>
 ![yunio-Transaction-IE01-Save](../assets/images/yunio/articles/transaction-save-equipment.png){:class="img-responsive"}
 7. Click **[Save]** to save your actions. <br>
-Alternatively, click **[Stop]** to start parameterizing, see [Documentation: Parameterize Transactions](../documentation/transactions/transactions.md/#parameterize-transactions).
+Alternatively, click **[Stop]** to start parameterizing, see [Documentation: Parameterize Transactions](../documentation/transactions/index.md/#parameterize-transactions).
 8. Copy the URL of the service definition ( :yunio-copy: icon) or download the service definition ( :yunio-run-download: icon) to integrate the service in your workflow.
 For information on how to use yunIO services in Power Automate or Nintex, see [Integrate a yunIO Service with Power Automate](integrate-a-yunio-service-with-power-automate.md) or [Integrate a yunIO Service with Nintex](integrate-a-yunio-service-with-nintex.md).
 ![yunio-Services](../assets/images/yunio/articles/yunio-run-services.png){:class="img-responsive"}

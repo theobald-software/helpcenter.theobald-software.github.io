@@ -37,7 +37,7 @@ Click **[Continue]** to close any pop-up windows and continue to the next screen
 10. Once all necessary data is entered, click **[Infotype] > [Exit]** to stop the input. Example:<br>
 ![personnel-actions](../assets/images/yunio/articles/pa40.gif){:class="img-responsive" style="border:1px solid black;"}
 11. Click **[Save]** to save your actions. <br>
-Alternatively, click **[Stop]** to start parameterizing, see [Documentation: Parameterize Transactions](../documentation/transactions/transactions.md/#parameterize-transactions).
+Alternatively, click **[Stop]** to start parameterizing, see [Documentation: Parameterize Transactions](../documentation/transactions/index.md/#parameterize-transactions).
 12. Copy the URL of the service definition ( :yunio-copy: icon) or download the service definition ( :yunio-run-download: icon) to integrate the service in your workflow.
 For information on how to use yunIO services in Power Automate or Nintex, see [Integrate a yunIO Service with Power Automate](integrate-a-yunio-service-with-power-automate.md) or [Integrate a yunIO Service with Nintex](integrate-a-yunio-service-with-nintex.md).
 ![yunio-Services](../assets/images/yunio/articles/yunio-run-services.png){:class="img-responsive"}
@@ -58,4 +58,4 @@ EE subgroup DN -> monthly wage earner
 
 #### Related Links
 - [Documentation: Transactions](../documentation/transactions/index.md)
-- [Documentation: Parameterize Transactions](../documentation/transactions/transactions.md/#parameterize-transactions)
+- [Documentation: Parameterize Transactions](../documentation/transactions/index.md/#parameterize-transactions)

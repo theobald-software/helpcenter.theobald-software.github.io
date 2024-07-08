@@ -27,7 +27,7 @@ The following example shows how to join the tables KNA1 and KNVV.
 {% if page.meta.product == "yunio" %}
 
 1. [Create a new service](../../getting-started.md/#create-a-service) of type {{ table }} or edit an existing service.
-2. [Look up](create-a-table-service.md/#look-up-an-sap-table-or-view) the first table or view, e.g, KNA1.
+2. [Look up](index.md/#look-up-an-sap-table-or-view) the first table or view, e.g, KNA1.
 3. Click :where-clause-add: to add the additional tables for the join, e.g., KNVV :number-1:.<br>
 ![table-joins](../../assets/images/yunio/documentation/table-joins.png){:class="img-responsive"}
 4. Define the [output columns](settings.md/#output-columns) you want to extract for both tables :number-2:.

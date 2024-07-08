@@ -20,7 +20,7 @@ The {{ transaction }} settings consist of the following subsections:
 When recording a transaction workflow, all actions are logged under *GUI Steps*.
 
 Once the recording is finished, clicking actions opens the corresponding screen.
-This functionality is used to parameterize the values from in the initial recording, see [Parameterize Transactions](./transactions.md).
+This functionality is used to parameterize the values from in the initial recording, see [Parameterize Transactions](index.md).
 
 ### Transaction
 

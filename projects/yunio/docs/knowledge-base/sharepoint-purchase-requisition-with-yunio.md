@@ -25,7 +25,7 @@ Follow the steps below to set up a yunIO service that creates purchase requisiti
 
 1. [Create an SAP connection](../getting-started.md/#connect-to-sap) in yunIO. 
 2. [Create a service](../getting-started.md/#create-a-service) in yunIO. The depicted example uses the integration type *Function Module* for the service.
-3. [Look up](../documentation/function-modules-and-bapis/create-a-bapi-service.md/#look-up-a-function-module-bapi) the standard BAPI, BAPI_PR_CREATE that creates purchase requisitions in SAP. 
+3. [Look up](../documentation/function-modules-and-bapis/index.md/#look-up-a-function-module-bapi) the standard BAPI, BAPI_PR_CREATE that creates purchase requisitions in SAP. 
 4. Set the following import parameters to *Supplied by Caller*: 
 
 	| Table | Field | Description |

@@ -29,7 +29,7 @@ All fields that need to be parameterized must be available in the section *GUI S
 7. Click **[Customer] > [Save]** to save the changes in SAP.<br>
 ![change-customer-master4](../assets/images/yunio/articles/change-customer-master4.png){:class="img-responsive"}
 6. Click **[Save]** to save your actions. <br>
-Alternatively, click **[Stop]** to start parameterizing, see [Documentation: Parameterize Transactions](../documentation/transactions/transactions.md/#parameterize-transactions).
+Alternatively, click **[Stop]** to start parameterizing, see [Documentation: Parameterize Transactions](../documentation/transactions/index.md/#parameterize-transactions).
 7. Copy the URL of the service definition ( :yunio-copy: icon) or download the service definition ( :yunio-run-download: icon) to integrate the service in your workflow.
 For information on how to use yunIO services in Power Automate or Nintex, see [Integrate a yunIO Service with Power Automate](integrate-a-yunio-service-with-power-automate.md) or [Integrate a yunIO Service with Nintex](integrate-a-yunio-service-with-nintex.md).
 ![yunio-Services](../assets/images/yunio/articles/yunio-run-services.png){:class="img-responsive"}
@@ -43,4 +43,4 @@ For information on how to use yunIO services in Power Automate or Nintex, see [I
 
 #### Related Links
 - [Documentation: Transactions](../documentation/transactions/index.md)
-- [Documentation: Parameterize Transactions](../documentation/transactions/transactions.md/#parameterize-transactions)
+- [Documentation: Parameterize Transactions](../documentation/transactions/index.md/#parameterize-transactions)
