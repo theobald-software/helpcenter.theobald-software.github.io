@@ -8,11 +8,11 @@ Defines the action on the target database before the data is inserted into the t
 | *Drop & Create* | Remove table if available and create new table (default). |
 | *Truncate Or Create* | Empty table if available, otherwise create. |
 | *Create If Not Exists* | Create table if not available. |
-| *Prepare Merge* | Prepares the merge process and creates e.g. a temporary staging table, see [Merge Data](#merging-data). |
+| *Prepare Merge* | Prepares the merge process and creates e.g. a temporary staging table, see [Merge Data](#merge-data). |
 | *None* | no action |
 | *Custom SQL* | Here you can define your own script, see [Custom SQL Statements](#custom-sql-statements). |
 
-If you only want to create the table in the first step and do not want to insert any data, you have two options:
+To only create the table in the first step and not insert any data, you have two options:
 1. Copy the SQL statement and execute it directly on the target data database.
 2. Select the None option for Row Processing and execute the extraction.
 

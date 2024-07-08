@@ -79,9 +79,10 @@ Checks the database connection.
 
 {% include "destinations/db-merge-data.md" %} 
 
+
 ## Custom SQL Statements
 
-The {{ page.meta.title }} destination supports the use of custom SQl statements in the staging steps of the destination.
+The {{ page.meta.title }} destination supports the use of custom SQl statements in the staging steps of the database.
 Follow the steps below to create custom SQL statements in the {{ page.meta.title }} destination:
 
 1. In the main window of the Xtract Universal Designer, select an extraction from the list of extractions..
