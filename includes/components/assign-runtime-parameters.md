@@ -72,4 +72,5 @@ If no icon button is available, [create a runtime parameter](#create-runtime-par
 
 {% endif %}
 
-Pass values during runtime, see [Extraction Parameters - Custom](../parameters/extraction-parameters.md/#custom).
+{% if page.meta.product != "xtract-for-alteryx" %}
+Pass values during runtime, see [Extraction Parameters - Custom](../parameters/extraction-parameters.md/#custom).{% endif %}
