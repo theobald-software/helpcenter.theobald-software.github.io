@@ -1,6 +1,7 @@
 ---
 title: Flat File CSV 
 description: Flat-File - CSV destination
+folder: csv
 ---
 
 This page shows how to set up and use the {{ page.meta.title }} destination. 
@@ -9,6 +10,8 @@ The {{ page.meta.title }} destination is a CSV (comma-separated values) flat fil
 {% include "destinations/create-destination.md" %}
 
 ![Destination-Details](../../assets/images/xu/documentation/destinations/flat-file-csv/destination-details.png){:class="img-responsive"}
+
+### File output path
 
 {% include "destinations/file-output-path.md" %}
 

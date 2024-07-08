@@ -1,5 +1,9 @@
 
+{% if page.meta.folder == "parquet" %} 
+### Output directory 
+{% else %}
 ### File output path
+{% endif %}
 
 Enter the folder path to save the destination flat files in. 
 If the entered folder does not exist, a new folder is created.

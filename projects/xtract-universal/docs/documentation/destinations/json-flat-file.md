@@ -10,6 +10,7 @@ The {{ page.meta.title }} destination is a JSON flat file that can be written to
 
 ![Destination-Details](../../assets/images/xu/documentation/destinations/flat-file-json/destination-details.png){:class="img-responsive"}
 
+
 {% include "destinations/file-output-path.md" %}
 
 {% include "destinations/assign-destination.md" %}
