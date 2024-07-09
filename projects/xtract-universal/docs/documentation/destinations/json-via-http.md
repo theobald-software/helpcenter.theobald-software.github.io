@@ -8,7 +8,7 @@ This page shows how to set up and use the {{ page.meta.title }} destination. <br
 The {{ page.meta.title }} destination is a generic JSON stream over HTTP. 
 
 {% include "destinations/create-destination.md" %}
-To use the JSON destination, no further settings have to be made.
+To use the JSON destination, no further settings are necessary.
 
 ![Destination-Details](../../assets/images/xu/documentation/destinations/http-json/destination-details.png){:class="img-responsive"}
 

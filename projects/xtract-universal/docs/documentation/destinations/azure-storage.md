@@ -19,25 +19,6 @@ The Azure Storage (Blob / Data Lake) destination supports the following Azure st
 To use the Azure Storage (Blob / Data Lake) destination you need one of the above Azure storage accounts. 
 For more information, see [Microsoft Azure storage documentation](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-overview).
 
-## Connection Retry and Rollback
-
-Connection retry and rollback are built-in functions of the Azure Storage destination.
-They are activated by default. 
-
-Connection retry is a functionality that prevents extractions from failing if the connection to Azure is interrupted.
-The retry function is implemented according to [Microsoft Guidelines](https://docs.microsoft.com/en-us/azure/architecture/best-practices/retry-service-specific#retry-strategies).
-The retry logic is based on WebExceptionStatus. 
-
-If an exception is thrown, Xtract Universal uses an exponential retry strategy to reestablish connection to Azure.
-The selected exponential retry strategy results in 7 retry attempts and an overall timespan of 140 seconds. 
-If a connection is not established during this timespan, the extraction fails.
-
-Rollback covers scenarios where extractions do not fail due to connection failures to Azure but due to an error when connecting to SAP.
-In those cases Xtract Universal tries to remove any files from Azure storage that were created in the course of the extraction.
-
-<!---- using an exponential backoff, meaning 8 retries with an increasing waiting time between the requests: 1s, 2s, 4s, 8s, 16s, etc.
-See also [Microsoft documentation](https://docs.microsoft.com/en-us/azure/architecture/best-practices/retry-service-specific#general-rest-and-retry-guidelines). --->
-
 
 {% include "destinations/create-destination.md" %}
 
@@ -166,8 +147,7 @@ Option to create a folder structure within the container for saving files, see [
 
 Select the required file format. You can choose between *Parquet* and *CSV*.
 
-![Destination-Details3](../../assets/images/xu/documentation/destinations/azure-storage/destination-details_3.png){:class="img-responsive" width="49%" align=right}
-![Destination-Details](../../assets/images/xu/documentation/destinations/azure-storage/destination-details_2.png){:class="img-responsive" width="49%"}
+![Destination-Details](../../assets/images/xu/documentation/destinations/azure-storage/destination-details_2.png){:class="img-responsive"}
 
 #### CVS Settings
 
@@ -182,6 +162,26 @@ The settings for file type *CSV* correspond to the settings of the *Flat File CS
 The settings for file type *Parquet* correspond to the settings of the *Flat File Parquet* destination:
 
 - [Compatibility Mode](parquet.md/#compatibility-mode)
+
+
+## Connection Retry and Rollback
+
+Connection retry and rollback are built-in functions of the Azure Storage destination.
+They are activated by default. 
+
+Connection retry is a functionality that prevents extractions from failing if the connection to Azure is interrupted.
+The retry function is implemented according to [Microsoft Guidelines](https://docs.microsoft.com/en-us/azure/architecture/best-practices/retry-service-specific#retry-strategies).
+The retry logic is based on WebExceptionStatus. 
+
+If an exception is thrown, Xtract Universal uses an exponential retry strategy to reestablish connection to Azure.
+The selected exponential retry strategy results in 7 retry attempts and an overall timespan of 140 seconds. 
+If a connection is not established during this timespan, the extraction fails.
+
+Rollback covers scenarios where extractions do not fail due to connection failures to Azure but due to an error when connecting to SAP.
+In those cases Xtract Universal tries to remove any files from Azure storage that were created in the course of the extraction.
+
+<!---- using an exponential backoff, meaning 8 retries with an increasing waiting time between the requests: 1s, 2s, 4s, 8s, 16s, etc.
+See also [Microsoft documentation](https://docs.microsoft.com/en-us/azure/architecture/best-practices/retry-service-specific#general-rest-and-retry-guidelines). --->
 
 
 {% include "destinations/assign-destination.md" %}
