@@ -1,7 +1,7 @@
 ---
 title: Flat File Parquet
 description: Parquet Flat-File destination
-folder: parquet
+destination: parquet
 ---
 
 This page shows how to set up and use the {{ page.meta.title }} destination. 

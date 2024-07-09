@@ -3,7 +3,7 @@
 
 Defines the action on the target database before the data is inserted into the target table.
 
-{% if page.meta.folder == "snowflake" %}
+{% if page.meta.destination == "snowflake" %}
 
 | Option | Description |
 |---------|--------------|
@@ -37,7 +37,7 @@ Once the table is created, it is up to you to change the table definition, e.g.,
 
 Defines how the data is inserted into the target table.
 
-{% if page.meta.folder == "snowflake" %}
+{% if page.meta.destination == "snowflake" %}
 
 | Option | Description |
 |---------|--------------|
@@ -54,7 +54,7 @@ Defines how the data is inserted into the target table.
 | *Fill merge staging table* | Insert records into the staging table. |
 | *None* | No action. |
 | *Custom SQL* | Define your own script, see [Custom SQL Statements](#custom-sql-statements). |
-| *Merge (deprecated)* | This option is obsolete, see [Merge Data](#merge-data). Use the *Fill merge staging table* option.  |
+{% if page.meta.destination != "azure" %}| *Merge (deprecated)* | This option is obsolete, see [Merge Data](#merge-data). Use the *Fill merge staging table* option.  |{% endif %}
 
 {% endif %}
 
@@ -62,7 +62,7 @@ Defines how the data is inserted into the target table.
 
 Defines the action on the target database after the data has been successfully inserted into the target table.
 
-{% if page.meta.folder == "snowflake" %}
+{% if page.meta.destination == "snowflake" %}
 
 | Option | Description |
 |---------|--------------|

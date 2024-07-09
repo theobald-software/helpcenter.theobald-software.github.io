@@ -37,7 +37,7 @@ Follow the steps below to set up the merge process in Xtract Universal:
 2. Click **[:designer-destination:Destination]**. The window "Destination Settings" opens.
 3. Make sure to assign {{ page.meta.title }} destination to the extraction. 
 4. Apply the following destination settings:
-{% if page.meta.folder == "snowflake" %}![Merge-Makt](../../assets/images/xu/documentation/destinations/snowflake/destination_data_merge.png){:class="img-responsive"}{% else %}![Merge-Makt](../../assets/images/xu/documentation/destinations/ms-sql/destination_data_merge.png){:class="img-responsive"} {% endif %}
+{% if page.meta.destination == "snowflake" %}![Merge-Makt](../../assets/images/xu/documentation/destinations/snowflake/destination_data_merge.png){:class="img-responsive"}{% else %}![Merge-Makt](../../assets/images/xu/documentation/destinations/ms-sql/destination_data_merge.png){:class="img-responsive"} {% endif %}
 5. Click **[OK]** and [run the extraction](../execute-and-automate/run-an-extraction.md/#run-extractions-in-the-designer).
 
 More information about the updated fields can be found in the SQL statement.<br>

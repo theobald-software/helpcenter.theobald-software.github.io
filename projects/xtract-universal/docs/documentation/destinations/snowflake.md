@@ -1,7 +1,7 @@
 ---
 title: Snowflake
 description: Snowflake
-folder: snowflake
+destination: snowflake
 ---
 
 This page shows how to set up and use the {{ page.meta.title }} destination. 
