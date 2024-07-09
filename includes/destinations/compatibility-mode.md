@@ -1,5 +1,9 @@
 
+{% if page.meta.destination == "azure" %}
+#### Compatibility mode
+{% else %}
 ### Compatibility mode
+{% endif %}
 
 The following compatibility modes are available:
 - *Pure* 
