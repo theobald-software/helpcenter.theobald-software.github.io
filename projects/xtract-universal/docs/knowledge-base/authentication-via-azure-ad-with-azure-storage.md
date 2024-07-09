@@ -3,7 +3,7 @@ title: Authentication via Azure Active Directory for Azure Storage
 description: Authentication via Azure Active Directory for Azure Storage
 ---
 
-The following article shows how to connect to the Azure Storage destination using Authentication via Azure Active Directory.<br>
+The following article shows how to connect to the Azure Storage destination using Authentication via Azure Active Directory.
 The article leads you through the following process:
 
 1. Register a new app with your Azure AD tenant.

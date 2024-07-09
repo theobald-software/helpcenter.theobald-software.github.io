@@ -1,5 +1,5 @@
 
-{% if page.meta.destination == "parquet" %} 
+{% if page.meta.destination == "parquet" or page.meta.destination == "tableau" %} 
 #### Output directory 
 {% else %}
 #### File output path

@@ -3,7 +3,7 @@
 
 If a flat file by the same name already exists in the target directory, the following actions can be taken:
 
-{% if page.meta.destination == "csv" %}
+{% if page.meta.destination == "csv" or page.meta.destination == "tableau" %}
 
 | Option | Description |
 |--------|--------------|

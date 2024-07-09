@@ -54,6 +54,6 @@ SELECT MAX(REPLACE(AEDAT, '-', '')) AS maxAEDAT FROM #table#
 
 ****
 #### Releated Link
-- [KNIME Integration via SAP Reader (Theobald Software)](knime-integration-via-sap-reader.md)
+- [Documentation: KNIME Destination](../documentation/destinations/knime.md)
 - [Read or download documentation for KNIME Software](https://docs.knime.com/)
 - [KNIME Flow Control Guide](https://docs.knime.com/2021-06/analytics_platform_flow_control_guide/index.html#introduction)

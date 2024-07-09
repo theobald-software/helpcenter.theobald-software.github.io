@@ -76,6 +76,9 @@ The following articles refer to specific [destinations](../documentation/destina
 
 - [Collation Settings for MSSQL Server Destination](collation-sql-server.md)
 - [Post-Processing Column Name Style](adjust-column-name-style.md)
+
+### :simple-powerbi: Power BI Report Server
+
 - [Use Computed Query Parameters for SSRS](xu-ssrs-parameterizing-in-vs.md)
 
 ### :material-google-cloud: Google Cloud
@@ -84,7 +87,6 @@ The following articles refer to specific [destinations](../documentation/destina
 
 ### :simple-knime: KNIME
 
-- [KNIME Integration via SAP Reader (Theobald Software)](knime-integration-via-sap-reader.md)
 - [Dynamic Runtime Parameter in KNIME Workflows](dynamic-runtime-paramater-within-KNIME-workflow.md)
 
 ### :material-snowflake: Snowflake
@@ -98,6 +100,7 @@ The following articles refer to specific [destinations](../documentation/destina
 
 </div>
 
+---
 
 ## {{ Components }}
 
@@ -111,8 +114,6 @@ The following articles refer to specific [{{ components }}](../documentation/int
 
 </div>
 
----
-
 
 ### :component-deltaq: DeltaQ
 
@@ -123,8 +124,6 @@ The following articles refer to specific [{{ components }}](../documentation/int
 
 </div>
 
----
-
 ### :component-report: Report
 
 <div class="mdx-columns" markdown>
@@ -134,8 +133,6 @@ The following articles refer to specific [{{ components }}](../documentation/int
 - [Skip Rows in Reports](skip-rows-in-reports.md)
 
 </div>
-
----
 
 ### :component-table: Table
 
@@ -148,8 +145,6 @@ The following articles refer to specific [{{ components }}](../documentation/int
 - [Working with LIKE operand in WHERE-Clauses](like-operand-where-clause.md)
 
 </div>
-
----
 
 ### :component-table-cdc: Table CDC
 

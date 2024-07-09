@@ -115,4 +115,5 @@ Check the existence of the extended column *Extraction_Date*  in the SQL Server 
 ## Related Links
 
 - [Knowledge Base Article: Post-Processing Column Name Style](../../knowledge-base/adjust-column-name-style.md)
+- [Knowledge Base Article: Collation Settings for MSSQL Server Destination](../../knowledge-base/collation-sql-server.md)
 - [Integration via Azure Data Factory](../execute-and-automate/call-via-etl.md#integration-via-azure-data-factory)

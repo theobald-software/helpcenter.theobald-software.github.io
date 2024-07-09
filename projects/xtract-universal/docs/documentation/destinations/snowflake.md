@@ -189,4 +189,6 @@ Check the existence of the new column *RUNTIMEPARAMETER* in the Snowflake Consol
 - [Requirements: 64-bit Architecture](../setup/requirements.md#hardware-requirements)
 - [Snowflake Documentation: Installing and Configuring the ODBC Driver for Windows](https://docs.snowflake.com/en/user-guide/odbc-windows.html)
 - [Snowflake Documentation: Snowflake Identifiers](https://docs.snowflake.com/en/sql-reference/identifiers-syntax.html#double-quoted-identifiers)
+- [Knowledge Base Article: Integrate SAP Data into a Snowflake Data Warehouse](../../knowledge-base/integrate_sap_data_into_a_Snowflake_data_warehous.md)
+- [Knowledge Base Article: SAP Integration with Matillion Data Loader](../../create-a-custom-cennector-in-matillion-data-loader.md)
 - [Extraction Parameters](../parameters/extraction-parameters.md#custom)

@@ -46,7 +46,7 @@ The subsection *Connection Type* offers two different methods for authenticating
     ---
 
     Authentication via Azure Active Directory uses OAuth 2.0 and Azure AD for authentication. 
-	This option allows a more granular way of authorizing access to a storage account and its individual storage containers. 
+	With this option access rights can be granted on storage account or container level. 
 	For more information, see [Microsoft documentation](https://docs.microsoft.com/en-us/azure/storage/common/storage-auth-aad-app).
 
 </div>
@@ -76,9 +76,7 @@ In the *Authentication* screen, click **[Save]** to confirm your input.
 The required RBAC role is *Storage Blob Data Contributor*.<br>
 ![xu-azure-blob-con-2](../../assets/images/xu/documentation/destinations/azure-storage/xu-azure-blob-con_2.png){:class="img-responsive"}
 
-!!! tip
-	Access rights can be granted on storage account or container level. 
-		
+	
 ### Access Key Parameters
 
 The input fields in the subsection *Access key parameters* vary depending on the selected authentication method.
