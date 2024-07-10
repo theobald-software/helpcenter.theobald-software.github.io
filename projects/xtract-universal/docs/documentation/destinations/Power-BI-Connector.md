@@ -15,9 +15,9 @@ The destination offers two ways to connect Power BI with Xtract Universal:
 ## Supported Power BI Environments
 
 Xtract Universal supports the following environments:
-- [Power BI Desktop](https://powerbi.microsoft.com/en-us/desktop/) via [Power BI Custom Connector](#pbi-custom-connector)
+- [Power BI Desktop](https://powerbi.microsoft.com/en-us/desktop/) via [Power BI Custom Connector](#power-bi-custom-connector)
 - [Power BI service](https://docs.microsoft.com/en-us/power-bi/power-bi-overview#the-parts-of-power-bi) via [Power BI on-premises data gateway](../../knowledge-base/connect-to-power-bi-service.md)
-- [Power BI Report Server](https://docs.microsoft.com/en-us/power-bi/report-server/get-started) via [Power Query M-script](#pbi-script)
+- [Power BI Report Server](https://docs.microsoft.com/en-us/power-bi/report-server/get-started) via [Power Query M-script](#power-query-m-script)
 
 
 |                        | Custom Connector | M-script |
@@ -59,7 +59,7 @@ Follow the steps below to install the Power BI Custom Connector.
 	The script adds or modifies the registry value *TrustedCertificateThumbprints* with the thumbprint of the *XtractUniversalExtension.pqx* file. 
 	This procedure follows Microsoft's recommendations for [trusting third-party connectors](https://docs.microsoft.com/en-us/power-bi/desktop-trusted-third-party-connectors).
 
-=== "Manual Setup for *Power BI Desktop*"
+=== "Manual Setup for Power BI Desktop"
 
 	1. Check if the directory `[Documents]\Power BI Desktop\Custom Connectors` exists.
 	2. Create this directory if it doesn't exist.
@@ -70,11 +70,24 @@ Follow the steps below to install the Power BI Custom Connector.
 	7. In the subsection [Data Extensions](https://docs.microsoft.com/en-us/power-bi/desktop-connector-extensibility#data-extension-security), activate the option **(Not Recommended) Allow any extension to load without validation or warning**. <br>
 	![powerbi-data-extension](../../assets/images/xu/documentation/destinations/power-bi/power-bi-data-extension.png){:class="img-responsive"}
 	8. Click **[OK]**.
-	9. Restart Power BI Desktop.
+	9. Restart Power BI.
 
-	The *Xtract Universal* datasource is now available within Power BI.<br>
+	The Xtract Universal data source is now available within Power BI.<br>
 	![powerbi-datasource](../../assets/images/xu/documentation/destinations/power-bi/XU_pbi_connector_xu_datasouce.png){:class="img-responsive"}
 
+#### Power BI Settings
+
+Adjust the following settings in Power BI:
+
+1. In Power BI, navigate to **File > Options and settings > Options** to open the option menu.
+2. Activate the option **(Not Recommended) Allow any extension to load without validation or warning** in the tab *Security*.<br>
+![Power BI cache](../../assets/images/xu/documentation/destinations/power-bi/XU_PBI_PBI_Security.png){:class="img-responsive"}
+2. Optional: Increase the Power BI cache in the tab *Load Data* to prevent multiple calls from Power BI to Xtract Universal when extracting large data volumes.
+	
+	!!! note
+		Multiple calls to Xtract Universal result in in multiple entries for the same extraction in the Xtract Universal extraction log.<br>
+
+	![Power BI cache](../../assets/images/xu/documentation/destinations/power-bi/XU_PBI_PBI_Cache.png){:class="img-responsive"}
 
 ### Connect Power BI with Xtract Universal
 
@@ -92,6 +105,7 @@ Follow the steps below to connect Power BI with Xtract Universal
 
 The data is now available for further processing.
 
+
 ### Tutorial
 
 The following YouTube tutorial shows how to install the Power BI Connector and how to use Xtract Universal with Power BI:
@@ -100,6 +114,18 @@ The following YouTube tutorial shows how to install the Power BI Connector and h
 	<iframe width="560" height="315" src="https://www.youtube.com/embed/al1FOtJjVIM?si=EJgku3sgYMhGk1BM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
+### Parameterizing in Power BI Custom Connector 
+
+When using the Power BI Custom Connector, Xtract Universal [custom parameters](../parameters/extraction-parameters.md/#custom) can be populated when setting up the connection in Power BI.
+
+A list of an extraction's custom parameters is displayed under the *Custom* tab in the "Run Extraction" window. 
+In the depicted example the list contains one entry *BUKRS_low*. <br>
+
+![XU-Custom-Parameter-exposed](../../assets/images/xu/documentation/destinations/power-bi/XU_PBI_XU_Parameters_1.png){:class="img-responsive"}
+
+The list of Xtract Universal custom parameters is exposed in Power BI Desktop when creating a report based on the selected extraction. 
+The exposed Xtract Universal parameters can be filled with values from within Power BI Desktop. <br>
+![XU-Custom-Parameter-exposed](../../assets/images/xu/documentation/destinations/power-bi/XU_PBI_XU_Parameters_2.png){:class="img-responsive"}
 
 
 ## Power Query M-script
@@ -128,51 +154,20 @@ Follow the steps below to set up the Power Query M-script in Power BI to connect
 ![PowerQueryEditor](../../assets/images/xu/documentation/destinations/power-bi/XU_PBI_PowerQueryEditor.png){:class="img-responsive"}
 6. Within the *Advanced Editor*, click **[Done]** :number-2: to confirm the script.
 7. Click **[Close & Apply]**.
-8. When prompted for *Anonymous*, *Basic* or *Windows* authentication, follow the steps as outlined in [Single Sign On and SAP authentication](#single-sign-on-and-sap-authentication).<br> 
-The "Navigator" window lists all extractions that are [assigned to a {{ page.meta.title }} destination](#assign-the-power-bi-connector-destination-to-an-extraction) in Xtract Universal. 
-9. Select an extraction from the list. The preview data shows the actual SAP column headers and preview data (real data or dummy data, depending on the extraction type).
-10. Click the **[Load]** button. This triggers an extraction in Xtract Universal and writes the extracted data to Power BI.<br>
-![powerbi-navigator](../../assets/images/xu/documentation/destinations/power-bi/XU_pbi_connector_navigator.png){:class="img-responsive"}
+8. In Power BI, navigate to **File > Options and settings > Options** to open the option menu.
+9. Activate the option **(Not Recommended) Allow any extension to load without validation or warning** in the tab *Security*.<br>
+![Power BI cache](../../assets/images/xu/documentation/destinations/power-bi/XU_PBI_PBI_Security.png){:class="img-responsive"}
+10. Optional: Increase the Power BI cache in the tab *Load Data* to prevent multiple calls from Power BI to Xtract Universal when extracting large data volumes.
 
-The data is now available for further processing.
+	!!! note
+		Multiple calls to Xtract Universal result in in multiple entries for the same extraction in the Xtract Universal extraction log.
+		
+	![Power BI cache](../../assets/images/xu/documentation/destinations/power-bi/XU_PBI_PBI_Cache.png){:class="img-responsive"}
 
-
-## Single Sign On and SAP Authentication
-
-When setting up the Xtract Universal data source in Power BI for the first time, you are prompted for one of the following authorization methods. Select an authorization method according to your landscape:
-
-- *Anonymous*: Select this option if the Xtract Universal server settings don't require any authentication for running an extraction.
-- *Basic*: Select this option if the *Require SAP Credentials to be explicitly supplied for execution* checkbox is marked in the [SAP Source Settings](../introduction/sap-connection#authentication) in Xtract Universal. Enter your SAP credentials in the respective input fields.
-- *Windows*: Select this option if you want to use [SSO](https://help.theobald-software.com/en/xtract-universal/advanced-techniques/sap-single-sign-on) or if you have restricted access to extractions in the Xtract Universal server settings. Enter \<domain>\\\<Windows AD user> in the *user* field and your Windows password in the *Password* field.
-
-Xtract Universal and the *Power BI Connector* destination support single sign on (SSO) to SAP. 
-If SSO is set up correctly, the Windows credentials of the executing Power BI user are mapped to this user's SAP credentials. 
-This leverages the user's SAP authorizations and Power BI will only show data that matches the user's SAP authorizations.
-
-![XU_PBI_EN_SSO](../../assets/images/xu/documentation/destinations/power-bi/XU_PBI_EN_SSO.png){:class="img-responsive"}
-
-## Parameterizing
-
-The Power BI Custom Connector exposes Xtract Universal custom parameters in Power BI Desktop.
-Using the Power BI Custom Connector Xtract Universal custom parameters can be populated with values when running an extraction from Power BI Desktop.
-
-### Power BI Custom Connector 
-
-When using the Power BI Custom Connector, Xtract Universal [custom parameters](../parameters/extraction-parameters.md/#custom) can be populated when setting up the connection in Power BI.
-
-A list of an extraction's custom parameters is displayed under the *Custom* tab in the "Run Extraction" window. 
-In the depicted example the list contains one entry *BUKRS_low*. <br>
-
-![XU-Custom-Parameter-exposed](../../assets/images/xu/documentation/destinations/power-bi/XU_PBI_XU_Parameters_1.png){:class="img-responsive"}
-
-The list of Xtract Universal custom parameters is exposed in Power BI Desktop when creating a report based on the selected extraction. 
-The exposed Xtract Universal parameters can be filled with values from within Power BI Desktop. <br>
-![XU-Custom-Parameter-exposed](../../assets/images/xu/documentation/destinations/power-bi/XU_PBI_XU_Parameters_2.png){:class="img-responsive"}
-
-### Power Query M-Script
+### Parameterizing in Power Query M-Script
 
 1. Open the Power Query M-script.
-2. Navigate to `Parameters` and replace the values with actual values or with parameters defined in Power BI.
+2. Navigate to *Parameters* and replace the values with actual values or with parameters defined in Power BI.
 
 	```
 		// Record containing run parameters with corresponding values, can be empty
@@ -188,20 +183,24 @@ The exposed Xtract Universal parameters can be filled with values from within Po
 	![XU-Custom-Parameter-exposed](../../assets/images/xu/documentation/destinations/power-bi/XU_PBI_XU_Parameters_5.png){:class="img-responsive" width="62%"}
 
 
-## Power BI Options and Settings
 
-Set the following settings in Power BI:
+## Single Sign On and SAP Authentication
 
-1. Navigate to **File > Options and settings > Options** to open the option menu.
-2. Check the box **(Not Recommended) Allow any extension to load without validation or warning** in the tab *Security*.<br>
-![Power BI cache](../../assets/images/xu/documentation/destinations/power-bi/XU_PBI_PBI_Security.png){:class="img-responsive"}
-3. Optional: Increase the Power BI cache in the tab *Load Data* to prevent multiple calls from Power BI to Xtract Universal when extracting large data volumes.
-Multiple calls to Xtract Universal result in in multiple entries for the same extraction in the Xtract Universal extraction log.<br>
-![Power BI cache](../../assets/images/xu/documentation/destinations/power-bi/XU_PBI_PBI_Cache.png){:class="img-responsive"}
+When setting up the Xtract Universal data source in Power BI for the first time, you are prompted for one of the following authorization methods. Select an authorization method according to your landscape:
+
+- *Anonymous*: Select this option if the Xtract Universal server settings don't require any authentication for running an extraction.
+- *Basic*: Select this option if the *Require SAP Credentials to be explicitly supplied for execution* checkbox is marked in the [SAP Source Settings](../sap-connection/settings.md/#authentication) in Xtract Universal. Enter your SAP credentials in the respective input fields.
+- *Windows*: Select this option if you want to use [SSO](sap-connection/sso-with-logon-ticket.md) or if you have restricted access to extractions in the Xtract Universal server settings. Enter \<domain>\\\<Windows AD user> in the *user* field and your Windows password in the *Password* field.
+
+Xtract Universal and the Power BI Connector destination support single sign on (SSO) to SAP. 
+If SSO is set up correctly, the Windows credentials of the executing Power BI user are mapped to this user's SAP credentials. 
+This leverages the user's SAP authorizations and Power BI will only show data that matches the user's SAP authorizations.
+
+![XU_PBI_EN_SSO](../../assets/images/xu/documentation/destinations/power-bi/XU_PBI_EN_SSO.png){:class="img-responsive"}
 
 
 ## Related Links
-- [Youtube Tutorial: Use your SAP data in Microsoft Power BI with Xtract Universal](https://www.youtube.com/watch?v=al1FOtJjVIM){:target="_blank"}
+- [Connect Xtract Universal to Power BI Service](../../knowledge-base/connect-to-power-bi-service.md)
 - [Microsoft Documentation: What is an on-premises data gateway?](https://docs.microsoft.com/en-us/power-bi/connect-data/service-gateway-onprem)
 - [Microsoft Documentation: Use custom data connectors with the on-premises data gateway](https://docs.microsoft.com/en-us/power-bi/connect-data/service-gateway-custom-connectors)
 - [Microsoft Documentation: Configure scheduled refresh](https://docs.microsoft.com/en-us/power-bi/connect-data/refresh-scheduled-refresh)
