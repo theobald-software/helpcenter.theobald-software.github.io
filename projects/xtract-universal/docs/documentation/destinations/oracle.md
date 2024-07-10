@@ -17,9 +17,9 @@ The Oracle destination supports 3 types of connections:
 
 | Connection Type | Description |
 |----------------|--------------|
-| **Default** | Connect to an Oracle database (on-premises). |
-| **Wallet** | Connect to an Oracle Database using a connection from a wallet. Use this option when [mTLS (Mutual TLS)](https://docs.oracle.com/en/cloud/paas/autonomous-database/adbsa/connect-introduction.html#GUID-9A472E49-3B2B-4D9F-9DC2-D3E6E4454285) authentication is required. |
-| **Connect Descriptor** | Connect to an Oracle database (on-premises and cloud) via TLS. |
+| [**Default**](#default) | Connect to an Oracle database (on-premises). |
+| [**Wallet**](#wallet) | Connect to an Oracle Database using a connection from a wallet. Use this option when [mTLS (Mutual TLS)](https://docs.oracle.com/en/cloud/paas/autonomous-database/adbsa/connect-introduction.html#GUID-9A472E49-3B2B-4D9F-9DC2-D3E6E4454285) authentication is required. |
+| [**Connect Descriptor**](#connect-descriptor) | Connect to an Oracle database (on-premises and cloud) via TLS. |
 
 The input fields vary depending on the selected authentication method.
 
