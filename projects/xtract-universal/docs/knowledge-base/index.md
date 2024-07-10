@@ -79,6 +79,7 @@ The following articles refer to specific [destinations](../documentation/destina
 
 ### :simple-powerbi: Power BI Report Server
 
+- [Connect Xtract Universal to Power BI Service](connect-to-power-bi-service.md)
 - [Use Computed Query Parameters for SSRS](xu-ssrs-parameterizing-in-vs.md)
 
 ### :material-google-cloud: Google Cloud
