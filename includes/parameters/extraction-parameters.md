@@ -79,7 +79,7 @@ logonTicket | Changes the ticket issuer of the [SAP logon ticket](../sap-connect
 
 ### Custom
 
-The tab *Custom* is only active when user-defined runtime parameters{% if page.meta.product == "xtract-universal" %} or [SQL parameters](sql-parameters.md){% endif %} are available. <br>
+The tab *Custom* is only active when [user-defined runtime parameters](index.md/#about-custom-runtime-parameters){% if page.meta.product == "xtract-universal" %} or [SQL parameters](sql-parameters.md){% endif %} are available. <br>
 Check the checkbox and enter a new value to set the user defined parameter.
 
 ![Custom parameters](site:assets/images/{{ abbr }}/documentation/parameters/run_extraction_param_cust.png){:class="img-responsive"}

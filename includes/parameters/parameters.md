@@ -19,8 +19,8 @@ Extraction parameters affect the extraction settings, the SAP connection setting
 ### About Custom Runtime Parameters
 
 User-defined runtime parameters can be used to filter SAP data before writing the data to the destination.
-They are part of the [extraction parameters](extraction-parameters.md/#custom) of an extraction{% if page.meta.product == "xtract-universal" %} and can be used in SQL statements, see [SQL parameters](sql-parameters.md){% endif %}.
-There are two types of runtime parameters:
+They are part of the [extraction parameters](extraction-parameters.md/#custom){% if page.meta.product == "xtract-universal" %} and can be used in SQL statements, see [SQL parameters](sql-parameters.md){% endif %}.
+There are two types of custom runtime parameters:
 
 - scalar parameters that represent a single value.
 - list parameters that represent multiple values separated by a comma, e.g., 1,10 or “1”, “10”.

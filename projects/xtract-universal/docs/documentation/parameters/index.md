@@ -1,5 +1,5 @@
 ---
-title: Runtime Parameters
+title: Parameters
 description: Dynamize Extractions
 ---
 
