@@ -124,8 +124,6 @@ Select a Snowflake Data Warehouse.
 
 {% include "destinations/sql-commands.md" %}
 
-{% include "destinations/debugging-bulk-insert.md" %}
-
 {% include "destinations/transaction-style.md" %} 
 
 ### Empty Values
