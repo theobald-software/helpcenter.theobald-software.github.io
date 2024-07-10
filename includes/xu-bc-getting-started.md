@@ -9,7 +9,7 @@ For information on system requirements, see [Requirements](documentation/setup/r
 3. Make sure that the {{ productName }} Service is running on your windows system and that the default port {{ port }} is not blocked by your firewall.<br>
 4. Open the {{ productName }} Designer application and click **[:designer-connect: Connect]** to [connect to the {{ productName }} Server](documentation/designer.md/#connect-the-designer-to-a-server) using the default settings.<br>
 
-For more information, see [Documentation: Setup](documentation/setup/index.md).
+For more information, see [Setup](documentation/setup/index.md).
 
 ### Connect to SAP
 
@@ -26,7 +26,7 @@ Input values for the SAP connection can be found in the *Properties* of the SAP 
 6. Click **[Test server connection]** to validate the connection between the {{ productName }} Server and the SAP system.
 7. Click **[OK]** to save the SAP source. 
 
-For more information, see [Documentation: SAP Connection](documentation/sap-connection/index.md).
+For more information, see [SAP Connection](documentation/sap-connection/index.md).
 
 !!! tip
 	To edit a source or to create new sources, navigate to **Server > Manage Sources** in the menu bar.
@@ -71,7 +71,7 @@ Follow the steps below to create a simple extraction that extracts customer mast
 4. Click **[:magnifying-glass:]** :number-2:. Search results are displayed.
 5. Select the table KNA1 :number-3: and click **[OK]**. The application returns to the main window of the {{ component }}.
 6. Optional: Select the table columns you want to extract. By default all columns are extracted. 
-For more information on filter options and advanced settings, see, [Documentation: Define the {{ table }} {{ Component }}](documentation/table/index.md/#define-the-table-extraction-type)
+For more information on filter options and advanced settings, see, [Define the {{ table }} {{ Component }}](documentation/table/index.md/#define-the-table-extraction-type)
 7. Click {{ previewBtn }} to display a live preview of the first 100 records.
 8. Click **[OK]** to save the {{ component }}.
 
@@ -82,7 +82,7 @@ The extraction is now listed in the main window of the Designer.
 
 ### Run an Extraction
 
-Extractions can be run directly in the {{ productName }} Designer{% if page.meta.product == "xtract-universal" %} or via [web service](web-api.md) and [command line](documentation/execute-and-automate/call-via-commandline.md){% else %} or from Board, see [Documentation: Run Extractions in Board](documentation/run-extractions.md/#run-extractions-in-the-designer){% endif %}.
+Extractions can be run directly in the {{ productName }} Designer{% if page.meta.product == "xtract-universal" %} or via [web service](web-api.md) and [command line](documentation/execute-and-automate/call-via-commandline.md){% else %} or from Board, see [Run Extractions in Board](documentation/run-extractions.md/#run-extractions-in-the-designer){% endif %}.
 
 1. In the main window of the Designer, select an extraction :number-1: and click **[:designer-run:Run]** :number-2:. The window "Run Extraction" opens.
 ![Run-Extraction](assets/images/{{ abbr }}/getting-started/Run-Extraction.png)
