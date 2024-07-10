@@ -4,7 +4,7 @@ description: Destinations
 icon: material/bullseye
 ---
 
-Xtract Universal allows you to extract data from SAP systems and load them to different destination environments.
+Xtract Universal allows you to extract data from SAP systems and load it to different destination environments.
 There are two types of destinations, depending on where the extraction process is started:  
 
 <div class="grid cards" markdown>
