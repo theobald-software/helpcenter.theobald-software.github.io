@@ -9,7 +9,8 @@ tags:
   - quick start  
 ---
 
-![img](site:assets/images/logos/theo-thumbs.png){ .lg .middle width="30px"} This section shows how to install and set up {{ productName }} for the first time.
+![img](site:assets/images/logos/theo-thumbs.png){ .lg .middle width="30px"} This section shows how to install and set up {{ productName }} for the first time. The majority of internal information is linked to the [User Documentation](documentation/setup/index.md) of {{ productName }}.
+
 
 
 ### Installation
@@ -25,7 +26,7 @@ The Xtract IS {{ components }} are available in the SSIS toolbox of a Data Flow 
 	If the Xtract IS {{ components }} are not displayed in the SSIS toolbox, 
 	check if the deployment target version of the SSIS project matches the version of the installed SQL Server Data Tools (SSDT), see [Xtract IS Components in Visual Studio](documentation/setup/installation.md#xtract-is-components-in-visual-studio).
 
-For more information, see [Documentation: Setup](documentation/setup/index.md).
+For more information, see [Setup](documentation/setup/index.md).
 
 ### Connect to SAP
 
@@ -43,7 +44,7 @@ Input values for the SAP connection can be found in the Properties of the SAP Lo
 5. Click **[Test connection]** to validate the connection parameters. 
 6. Click **[OK]** to save the XTRACT Connection Manager.
 
-For more information, see [Documentation: SAP Connection](documentation/sap-connection/index.md).
+For more information, see [SAP Connection](documentation/sap-connection/index.md).
 
 
 ### Use Xtract {{ Components }} in Data Flow Tasks
@@ -90,7 +91,7 @@ An XTRACT Connection Manager is automatically assigned and the main window of th
 5. Click **[:magnifying-glass:]** :number-2:. Search results are displayed.
 6. Select the table KNA1 :number-3: and click **[OK]**. The application returns to the main window of the {{ component }}.
 7. Optional: Select the table columns you want to extract. By default all columns are extracted. 
-For more information on filter options and advanced settings, see, [Documentation: Define the {{ table }} {{ Component }}](documentation/table/index.md/#define-the-xtract-table-component)
+For more information on filter options and advanced settings, see, [Define the {{ table }} {{ Component }}](documentation/table/index.md/#define-the-xtract-table-component)
 8. Click {{ previewBtn }} to display a live preview of the first 100 records.
 9. Click **[OK]** to save the {{ component }}.
 

@@ -9,7 +9,8 @@ tags:
   - quick start  
 ---
 
-![img](site:assets/images/logos/theo-thumbs.png){ .lg .middle width="30px"} This section shows how to install and set up {{ productName }} for the first time.
+![img](site:assets/images/logos/theo-thumbs.png){ .lg .middle width="30px"} This section shows how to install and set up {{ productName }} for the first time. The majority of internal information is linked to the [User Documentation](documentation/setup/index.md) of {{ productName }}.
+
 
 ### Installation
 
@@ -25,7 +26,7 @@ For information on system requirements, see [Requirements](documentation/setup/r
 4. Open the Alteryx Designer. The Xtract for Alteryx {{ components }} are available in the Xtract For Alteryx toolbox.<br>
 ![toolbox](assets/images/xfa/getting-started/toolbox.png)
 
-For more information, see [Documentation: Setup](documentation/setup/index.md).
+For more information, see [Setup](documentation/setup/index.md).
 
 
 ### Connect to SAP
@@ -85,7 +86,7 @@ Follow the steps below to create a simple workflow that extracts customer master
 5. Click **[:magnifying-glass:]** :number-2:. Search results are displayed.
 6. Select the table KNA1 :number-3: and click **[OK]**. The application returns to the main window of the {{ component }}.
 7. Optional: Select the table columns you want to extract. By default all columns are extracted. 
-For more information on filter options and advanced settings, see, [Documentation: Define the {{ table }} {{ Component }}](documentation/table/index.md/#define-the-xtract-table-component)
+For more information on filter options and advanced settings, see, [Define the {{ table }} {{ Component }}](documentation/table/index.md/#define-the-xtract-table-component)
 8. Click {{ previewBtn }} to display a live preview of the first 100 records.
 9. Click **[OK]** to save the {{ component }}.
 
