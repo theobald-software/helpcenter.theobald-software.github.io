@@ -10,7 +10,7 @@ All ETL tools offer the following options for running extractions:
 
 ### Integration via Plug-In
 - [{{ productName }} Alteryx Plugin](../destinations/alteryx.md#requirements)
-- [KNIME Integration via SAP Reader (Theobald Software)](../../knowledge-base/knime-integration-via-sap-reader.md)
+- [KNIME Integration via SAP Reader (Theobald Software)](../destinations/knime.md/#knime-integration-via-sap-reader)
 - [Dynamic Runtime Parameter within KNIME Workflow](../../knowledge-base/dynamic-runtime-paramater-within-KNIME-workflow.md)
 - [{{ productName }} Power BI Custom Connector](../destinations/Power-BI-Connector.md)
 - [Power BI Configure scheduled refresh](https://docs.microsoft.com/en-us/power-bi/connect-data/refresh-scheduled-refresh)

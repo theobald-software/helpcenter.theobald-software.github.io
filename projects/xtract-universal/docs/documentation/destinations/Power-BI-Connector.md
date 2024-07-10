@@ -190,7 +190,7 @@ When setting up the Xtract Universal data source in Power BI for the first time,
 
 - *Anonymous*: Select this option if the Xtract Universal server settings don't require any authentication for running an extraction.
 - *Basic*: Select this option if the *Require SAP Credentials to be explicitly supplied for execution* checkbox is marked in the [SAP Source Settings](../sap-connection/settings.md/#authentication) in Xtract Universal. Enter your SAP credentials in the respective input fields.
-- *Windows*: Select this option if you want to use [SSO](sap-connection/sso-with-logon-ticket.md) or if you have restricted access to extractions in the Xtract Universal server settings. Enter \<domain>\\\<Windows AD user> in the *user* field and your Windows password in the *Password* field.
+- *Windows*: Select this option if you want to use [SSO](../sap-connection/sso-with-logon-ticket.md) or if you have restricted access to extractions in the Xtract Universal server settings. Enter \<domain>\\\<Windows AD user> in the *user* field and your Windows password in the *Password* field.
 
 Xtract Universal and the Power BI Connector destination support single sign on (SSO) to SAP. 
 If SSO is set up correctly, the Windows credentials of the executing Power BI user are mapped to this user's SAP credentials. 

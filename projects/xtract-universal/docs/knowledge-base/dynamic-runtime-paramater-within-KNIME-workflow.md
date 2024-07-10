@@ -40,7 +40,7 @@ SELECT MAX(REPLACE(AEDAT, '-', '')) AS maxAEDAT FROM #table#
 ![KNIME-Table-Row-to-Variable](../assets/images/xu/articles/KNIME-Table-Row-to-Variable.png){:class="img-responsive"}
 5. Right-click on the node **SAP Reader (Theobald Software)** to display the flow variable ports.<br>
 ![KNIME-Show-Flow-Variables-Ports](../assets/images/xu/articles/KNIME-Show-Flow-Variables-Ports.png){:class="img-responsive"}
-6. Configuration of the KNIME node **SAP Reader (Theobald Software)**, see [KNIME Integration via SAP Reader (Theobald Software)](knime-integration-via-sap-reader.md#step-by-step-guide):<br>
+6. Configuration of the KNIME node **SAP Reader (Theobald Software)**, see [KNIME Integration via SAP Reader (Theobald Software)](../documentation/destinations/knime.md/#knime-integration-via-sap-reader):<br>
 ![KNIME-SAP Reader (Theobald Software)-Settings](../assets/images/xu/articles/KNIME-SAP-Reader-(Theobald Software)-Settings.png){:class="img-responsive"}
 7. In the **Parameters** tab, use **Fetch Parameters** :number-4: to add the user-defined variable to the WHERE condition :number-5: and enter a default value :number-6:.<br>
 ![KNIME-SAP-Reader-(Theobald Software)-(SAP Tabelle EKKO)](../assets/images/xu/articles/KNIME-SAP-Reader-(Theobald Software)-(SAP Tabelle EKKO).png){:class="img-responsive"}
