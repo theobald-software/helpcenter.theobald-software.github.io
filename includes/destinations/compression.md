@@ -2,7 +2,7 @@
 
 Compression is only available for the csv file format, see [Destination Details: File Format](#file-format).
 
-{% if page.meta.destination != "azure" %}
+{% if page.meta.destination != "azure" and page.meta.destination != "huawei" %}
 
 | Option | Description |
 |--------|-------------|
