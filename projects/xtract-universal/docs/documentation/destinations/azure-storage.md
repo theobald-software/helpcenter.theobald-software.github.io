@@ -47,10 +47,12 @@ The subsection *Connection Type* offers two different methods for authenticating
 
     Authentication via Azure Active Directory uses OAuth 2.0 and Azure AD for authentication. 
 	With this option access rights can be granted on storage account or container level. 
-	For more information, see [Microsoft documentation](https://docs.microsoft.com/en-us/azure/storage/common/storage-auth-aad-app).
+	For more information, see [Knowledge Base Article: Authentication via Azure Active Directory for Azure Storage](../../knowledge-base/authentication-via-azure-ad-with-azure-storage.md).
 
 </div>
 
+<!---
+Removed according to Bharat
 
 #### Prerequisites for Authentication via Azure Active Directory
 
@@ -75,7 +77,7 @@ In the *Authentication* screen, click **[Save]** to confirm your input.
 6. Assign access rights to the Azure Storage as described in the [Microsoft documentation](https://docs.microsoft.com/en-us/azure/storage/common/storage-auth-aad-rbac-portal#assign-rbac-roles-using-the-azure-portal). 
 The required RBAC role is *Storage Blob Data Contributor*.<br>
 ![xu-azure-blob-con-2](../../assets/images/xu/documentation/destinations/azure-storage/xu-azure-blob-con_2.png){:class="img-responsive"}
-
+-->
 	
 ### Access Key Parameters
 
@@ -97,6 +99,9 @@ The input fields in the subsection *Access key parameters* vary depending on the
 
 === "Authentication via Azure Active Directory"
 	
+	!!! note
+		Make sure to correctly set up authentication via Azure Active Directory in Azure, see [Knowledge Base Article: Authentication via Azure Active Directory for Azure Storage](../../knowledge-base/authentication-via-azure-ad-with-azure-storage.md).
+		
 	| Input Field | Description |
 	|-------------|--------------|
 	| **Storage account** |	Enter your storage account name. |
@@ -228,12 +233,23 @@ The CDM file can be used to automate data transformation in Azure.
 
 For more information on Common Data Models, see [Microsoft Documentation: Common Data Model](https://learn.microsoft.com/en-us/common-data-model/).
 
+!!! note
+	This option is still in preview mode.
+	
 #### Entity name
 Enter a name for the generated .cdm.json file.
 
-!!! note
-	This option is still in preview mode.
+#### Manifest
+Enter the name of your manifest file.
+
+## Tutorial
+
+The following YouTube tutorial shows how to set up Xtract Universal with the Azure Storage destination:
+
+<div class="video-wrapper">
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/Q9mF-vsFxnQ?si=ou7o3dVY-1_t11qa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 
 ## Related Links
-- [Youtube Tutorial: SAP data in Azure Storage via Xtract Universal](https://www.youtube.com/watch?v=Q9mF-vsFxnQ){:target="_blank"}
+- [Knowledge Base Article: Authentication via Azure Active Directory for Azure Storage](../../knowledge-base/authentication-via-azure-ad-with-azure-storage.md)
 - [Integration via Azure Data Factory](../execute-and-automate/call-via-etl.md#integration-via-azure-data-factory)
