@@ -15,6 +15,6 @@ Possible causes for the incorrect behavior are incorrect values with regard to t
 Debugging needs to be deactivated again, after the successful error analysis, otherwise the performance of the database write processes remains low. 
 
 !!! note
-	Bulk operations are not supported when using [Custom SQL statements](#custom-sql), e.g., in *Row Processing*. 
+	Bulk operations are not supported when using [Custom SQL statements](#custom-sql-statements), e.g., in *Row Processing*. 
 	Bulk operations lead to performance decrease. 
-	To increase performance when using [Custom SQL statements](#custom-sql), it is recommended to perform the custom processing in the *Finalization* step.
+	To increase performance when using [Custom SQL statements](#custom-sql-statements), it is recommended to perform the custom processing in the *Finalization* step.

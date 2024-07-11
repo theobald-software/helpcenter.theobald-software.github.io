@@ -1,5 +1,21 @@
 |Version|Date    |Component   |Description|
 |:-----:|:------:|:----------:|:----------|
+|6.8.10 [L]|2024-07-09|Destinations|Fixed a bug where extractions using Huawei Cloud OBS destination could not be ran and destinations of that type could not be created or edited.|
+|6.8.9 [L]|2024-07-05|Designer|GUI filters now respect wildcards (*)|
+|6.8.8 [L]|2024-07-04|General|Fixed a bug in xu.exe that caused it to crash when generating the password file due to a missing library which was not actually required.|
+|6.8.7 [L]|2024-07-01|General|Fixed a usability issue in the config converter where the information that pressing any key will close the application. The prompt will now appear after all other text. In addition the application will now close automatically when the conversion did not run into errors.|
+|6.8.6 [L]|2024-07-01|General|Fixed a bug that causes missing sources after running the config converter when the service user was changed.|
+|6.8.5 [L]|2024-06-25|ODP|Fixed a regression bug where ODP preview would fail for hierarchy DataSources.|
+|6.8.4 [L]|2024-06-21|BW Cube|Fixed a bug that caused filters to be removed when refreshing metadata|
+|6.8.3 [L]|2024-06-20|General|Removed column encryption feature.|
+|6.8.2 [L]|2024-06-18|Destinations|BREAKING CHANGE: fixed a bug where output object names would not get shortened properly in some cases. This affects only extractions where the output object name was too long and had to be automatically shortened.|
+|6.8.1 [L]|2024-06-17|Server|Fixed a bug introduced in 6.8.0 where the designer would not be able to connect due to the server misinterpreting the configuration file. Run the config converter during setup to fix the issue.|
+|[6.8.0 [L]](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-6.8.0)|2024-06-17|General|We migrated XtractUniversal away from the Windows specific .NET Framework to the new .NET (Version 8.0). Salesforce and DB2 destination received some internal changes. See the release notes for more details. Running the config converter is required when upgrading.([Release note](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-6.8.0))|
+|[6.7.10 [L]](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-6.7.10)|2024-06-14|Designer|Fixed minor bugs in the main and run windows([Release note](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-6.7.10))|
+|6.7.9 [L]|2024-06-14|Destinations|BREAKING CHANGE: reverted object naming change, where using "Same as extraction name" option would use extractions fully qualified name with path as object name. Added "fully qualified extraction name" option to output object naming. This option uses extraction name with full extraction path as output object name.|
+|6.7.8 [L]|2024-06-14|Destinations|Redshift destination: fixed support for columns of type INT8.|
+|6.7.6 [L]|2024-06-11|Destinations|Redshift destination: table column descriptions are now included in the output table comment field.|
+|6.7.5 [L]|2024-06-10|DeltaQ|Fixed a bug which would define a wrong field length for legacy DeltaQ extractions|
 |6.7.4 [L]|2024-06-07|Destinations|Fixed a bug where switching back and forth between FileType options in destination settings could lead to an error.|
 |6.7.3 [L]|2024-06-06|Designer|Fixed a bug that would lead to several duplicated and invalid designer connection settings entries|
 |[6.7.2 [H]](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-6.7.2)|2024-06-04|General|Fixed a denial of service vulnerability, where the server would hang in a cleanup loop and fill up its log file. Some limitations for when working with sub-directories were removed. Especially when consuming the API. Issues in the cache were fixed as well. Aborting extractions works more reliably now.([Release note](https://helpcenter.theobald-software.com/release-notes/XtractUniversal-6.7.2))|

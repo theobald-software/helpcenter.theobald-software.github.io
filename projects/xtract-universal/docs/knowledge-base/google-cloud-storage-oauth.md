@@ -62,7 +62,7 @@ Select *Desktop app* as application type :number-1:, enter a name for the app :n
 14. Click **[Create]** :number-3:.
 
 Your OAuth client is now created. <br>
-The **Client ID** and the **Client secret** are needed for the destination configuration in {{ productName }}, see [Documentation: Google Cloud Connection Settings](../documentation/destinations/google-cloud-storage.md/#connection).<br>
+The **Client ID** and the **Client secret** are needed for the destination configuration in {{ productName }}, see [Documentation: Google Cloud Connection Settings](../documentation/destinations/google-cloud-storage.md/#destination-details).<br>
 ![xu-google-cloud-req-16](../assets/images/xu/articles/googlecloudstorage/xu-google-cloud-req-16.png){:class="img-responsive"}
 
 *****

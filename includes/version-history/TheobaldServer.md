@@ -1,5 +1,9 @@
 |Version|Date    |Component   |Description|
 |:-----:|:------:|:----------:|:----------|
+|4.4.2 [L]|2024-06-20|General|Removed column encryption.|
+|4.4.1 [L]|2024-06-17|General|Adjusted config settings class to be compatible with rust listeners.|
+|[4.4.0 [L]](https://helpcenter.theobald-software.com/release-notes/TheobaldServer-4.4.0)|2024-06-17|General|Migrated the server to .NET 8.0.([Release note](https://helpcenter.theobald-software.com/release-notes/TheobaldServer-4.4.0))|
+|4.3.5 [L]|2024-06-14|General|Added new output object naming option "Fully qualified extraction name". This option uses extractions full name with path as output object name.|
 |[4.3.4 [H]](https://helpcenter.theobald-software.com/release-notes/TheobaldServer-4.3.4)|2024-06-04|General|Fixed a denial of service vulnerability, where the server would hang in a cleanup loop and fill up its log file. Fixes for HTTP parsing and clean up, result cache handling, extraction abortion handling.([Release note](https://helpcenter.theobald-software.com/release-notes/TheobaldServer-4.3.4))|
 |4.3.3 [L]|2024-05-15|General|Refactor load & start code for extractions|
 |4.3.2 [L]|2024-05-14|General|Fixed a race condition which would not handle over server side errors|

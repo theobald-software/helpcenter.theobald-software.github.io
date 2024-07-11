@@ -1,5 +1,7 @@
 |Version|Date    |Component   |Description|
 |:-----:|:------:|:----------:|:----------|
+|1.32.18 [L]|2024-07-08|Designer|CLNT fields are no longer shown in the table join editor when adding a condition.|
+|[1.32.17 [L]](https://helpcenter.theobald-software.com/release-notes/Yunio-1.32.17)|2024-06-17|General|Moved to .NET 8. Fixed a shutdown bug in the windows service.([Release note](https://helpcenter.theobald-software.com/release-notes/Yunio-1.32.17))|
 |1.32.15 [L]|2024-06-07|Designer|Added feature to edit joins for table services.|
 |[1.32.14 [H]](https://helpcenter.theobald-software.com/release-notes/Yunio-1.32.14)|2024-06-04|General|Fixed a denial of service vulnerability, where the server would hang in a cleanup loop and fill up its log file.([Release note](https://helpcenter.theobald-software.com/release-notes/Yunio-1.32.14))|
 |1.32.13 [L]|2024-05-30|Designer|Limiting arrays in the run dialog.|

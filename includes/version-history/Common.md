@@ -1,5 +1,9 @@
 |Version|Date    |Component   |Description|
 |:-----:|:------:|:----------:|:----------|
+|2.24.2 [L]|2024-06-18|WPF|Fix version number not written into assembly, causing problems in XtractIS due to the global assembly cache (GAC).|
+|2.24.1 [L]|2024-06-17|WPF|WPF library does now target net472 and net8.0-windows.|
+|2.24.0 [L]|2024-06-12|General|Updated NW RFC SDK to 750 PL13|
+|2.23.22 [L]|2024-06-11|General|Added support for new version history tools|
 |2.23.21 [L]|2024-05-21|WPF|Extended the CopyPasteTextBox to support error display.|
 |2.23.20 [L]|2024-05-17|General|Allow empty names in NamedList|
 |2.23.19 [L]|2024-04-22|General|Unicode control characters are now deleted before serializing log messages|
