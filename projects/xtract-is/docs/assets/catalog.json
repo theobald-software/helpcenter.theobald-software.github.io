@@ -1,5 +1,16 @@
 [
   {
+    "Version": "7.7.4.10",
+    "LegacyReleaseDate": "2024-07-05 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "General",
+        "Message": "GUI filters now respect wildcards (*)"
+      }
+    ]
+  },
+  {
     "Version": "7.7.4.8",
     "LegacyReleaseDate": "2024-07-03 00:00:00Z",
     "Changes": [
