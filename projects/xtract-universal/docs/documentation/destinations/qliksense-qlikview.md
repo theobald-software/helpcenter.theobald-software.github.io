@@ -4,7 +4,7 @@ description: QlikSense & QlikView destination
 ---
 
 This page shows how to set up and use the {{ page.meta.title }} destination. 
-The {{ page.meta.title }} destination loads data to  QlikSense or QlikView.
+The {{ page.meta.title }} destination loads data to QlikSense or QlikView.
 
 ## About
 
