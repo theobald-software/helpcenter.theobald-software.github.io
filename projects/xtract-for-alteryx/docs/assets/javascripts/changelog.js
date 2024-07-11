@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			const productName = event.target.dataset.productName;
 			const version = event.target.dataset.version;
 			const parsedContent = parseMarkdown(releaseNote);
-			const headerContent = `<h2>${productName} - Version ${version}</h2>`;
+			const headerContent = `<h1>${productName} - Version ${version}</h1>`;
 			openModal(headerContent, parsedContent);
 		}
 	});
