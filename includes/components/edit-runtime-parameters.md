@@ -40,7 +40,7 @@ There are two types of {{ variables }}:
 	The window “Edit Runtime Parameters” opens.<br>
 	![open-edit-runtime-parameters](../../assets/images/{{ abbr }}/documentation/{{ page.meta.componentFolder }}/open-edit-runtime-parameters.png){:class="img-responsive"}
 	2. Click **[Add List]** to define list parameters that contain multiple values separated by commas e.g., 1,10 or “1”, “10”.
-	The placeholders need to be populated with actual values at runtime.
+	The placeholders need to be populated with actual values at runtime. <br>
 	![dd-parameters](../../assets/images/documentation/components/runtime-parameters/edit-runtime-parameters-list.png){:class="img-responsive"}
 	
 		!!! tip

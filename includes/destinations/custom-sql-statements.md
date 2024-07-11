@@ -39,7 +39,7 @@ Follow the steps below to generate a Custom SQL command from a template:
 5. Click **[Copy]** to copy the statement to the clipboard.
 6. Click **[OK]** to confirm your input.
 
-Check out the [Microsoft SQL Server example](microsoft-sql-server.md#custom-sql) for details on predefined expressions.
+Check out the [Microsoft SQL Server example](microsoft-sql-server.md#custom-sql-statements) for details on predefined expressions.
 
 !!! note
 	The custom SQL code is used for SQL Server destinations. 
