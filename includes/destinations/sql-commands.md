@@ -54,7 +54,7 @@ Defines how the data is inserted into the target table.
 | *Fill merge staging table* | Insert records into the staging table. |
 | *None* | No action. |
 | *Custom SQL* | Define your own script, see [Custom SQL Statements](#custom-sql-statements). |
-{% if page.meta.destination != "azure" and page.meta.destination != "postgres" %}| {% if page.meta.destination == "sap-hana" %}*Upsert (deprecated)*{% else %}*Merge (deprecated)*{% endif %} | This option is obsolete, see [Merge Data](#merge-data). Use the *Fill merge staging table* option.  |{% endif %}
+{% if page.meta.destination != "azure" and page.meta.destination != "postgres" and page.meta.destination != "redshift" %}| {% if page.meta.destination == "sap-hana" %}*Upsert (deprecated)*{% else %}*Merge (deprecated)*{% endif %} | This option is obsolete, see [Merge Data](#merge-data). Use the *Fill merge staging table* option.  |{% endif %}
 
 {% endif %}
 
