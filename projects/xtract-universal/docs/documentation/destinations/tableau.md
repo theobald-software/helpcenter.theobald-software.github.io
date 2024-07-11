@@ -18,7 +18,7 @@ It is also possible to upload the Hyper file to Tableau Server or Tableau Online
 [:material-download-circle: Download the Tableau Export Library and Visual C++ 2015 Runtime](https://s3.eu-central-1.amazonaws.com/cdn-files.theobald-software.com/download/XtractUniversal/tableau.zip){ .md-button }
 
 If no Visual C++ 2015 Runtime is installed on your machine, run the vc_redist.x64.exe to install the Visual C++ 2015 Runtime. 
-Copy the `tableau` folder into your Xtract Universal directory so that the following folder structure is created: <br>
+Copy the `tableau` folder into your Xtract Universal directory so that the following folder structure is created:
 `{{ installationDir }}\tableau\hyper`.
 
 {% include "destinations/create-destination.md" %}
