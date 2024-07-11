@@ -17,11 +17,11 @@ When extracting tables from older SAP releases you may encounter several restric
 
 - The overall length of all columns to be extracted must not exceed 512 bytes.
 - It is not possible to extract data from tables that contain one or more columns of the data type f (FLTP, floating point), DEC (decimal, e.g. for percentage) or x (RAW, LRAW).
-- Poor extraction performance with larger tables.
+- Poor extraction performance with larger tables. Mass data extraction can also cause duplicates. The use of Z_XTRACT_IS_TABLE does not guarantee duplicate-free results.
 
 !!! warning  
 	**Error while converting value '\*.0' of row 1530, column 3.**<br>
-    The SAP standard module *RFC_READ_TABLE* for table extraction can only extract the ABAP data type DEC to a limited extent. This leads to the mentioned example error during extraction.<br>
+	The SAP standard module *RFC_READ_TABLE* for table extraction can only extract the ABAP data type DEC to a limited extent. This leads to the mentioned example error during extraction.<br>
 
 To bypass the restrictions, install the custom function module Z_XTRACT_IS_TABLE.
 
@@ -51,3 +51,5 @@ To use the new custom function module with the *ReadTable* class, use the `SetCu
 ```
 table.SetCustomFunctionName("Z_XTRACT_IS_TABLE");
 ```
+
+

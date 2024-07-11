@@ -1,5 +1,254 @@
 [
   {
+    "Version": "7.7.4.10",
+    "LegacyReleaseDate": "2024-07-05 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "General",
+        "Message": "GUI filters now respect wildcards (*)"
+      }
+    ]
+  },
+  {
+    "Version": "7.7.4.8",
+    "LegacyReleaseDate": "2024-07-03 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "TableCDC",
+        "Message": "Fixed a bug that caused trigger creation to fail on MaxDB databases. Requires update of /THEO/CDC_ECC"
+      }
+    ]
+  },
+  {
+    "Version": "7.7.4.7",
+    "LegacyReleaseDate": "2024-07-03 00:00:00Z",
+    "IsCritical": true,
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "TableCDC",
+        "Message": "Fixed a bug that could cause optimization logic of delta extractions to not include all delta records in the result. Bug introduced in 2.2.0"
+      }
+    ]
+  },
+  {
+    "Version": "7.7.4.1",
+    "LegacyReleaseDate": "2024-06-26 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "TableCDC",
+        "Message": "Fixed a bug where tables could not be selected if they had multiple fields of type CLNT"
+      }
+    ]
+  },
+  {
+    "Version": "7.7.4.0",
+    "LegacyReleaseDate": "2024-06-25 10:10:04Z",
+    "Changes": [
+      {
+        "Product": "XtractIS",
+        "Component": "General",
+        "Message": "Fixed a bug that caused errors when using variables with same names but different scopes"
+      }
+    ]
+  },
+  {
+    "Version": "7.7.3.0",
+    "LegacyReleaseDate": "2024-06-25 05:47:52Z",
+    "Changes": [
+      {
+        "Product": "XtractIS",
+        "Component": "ODP",
+        "Message": "Fixed a regression bug where ODP preview would fail for hierarchy DataSources."
+      },
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "ODP",
+        "Message": "Fixed a regression bug where ODP preview would fail for hierarchy DataSources."
+      }
+    ]
+  },
+  {
+    "Version": "7.7.2.11",
+    "LegacyReleaseDate": "2024-06-24 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "Table",
+        "Message": "Fixed transport request for /THEO/READ_TABLE for SAP versions 6.40 and newer."
+      }
+    ]
+  },
+  {
+    "Version": "7.7.2.10",
+    "LegacyReleaseDate": "2024-06-24 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "TableCDC",
+        "Message": "Timestamp is now part of extraction result. Log tables are now created client dependent. Updated THEO/CDC/* to version 1.7. See release notes for details.\n",
+        "ReleaseNote": "## General\n- In order for the changes to apply \"Refresh metadata\" is required or the creation of a new CDC extraction\n\n## /THEO/CDC* (version 1.7)\n- Triggers now insert timestamps (as chars) for every database in a unified format (yyyy-MM-dd HH24:mm:ss.FFF)\n- Triggers now only insert data into the log table if the source table change was caused on the same client that was used when initializing CDC. This does not apply for client independent source tables"
+      }
+    ]
+  },
+  {
+    "Version": "7.7.2.9",
+    "LegacyReleaseDate": "2024-06-23 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "BW Cube",
+        "Message": "BICS: Try to fix metadata retrieval for newer BW releases"
+      }
+    ]
+  },
+  {
+    "Version": "7.7.2.8",
+    "LegacyReleaseDate": "2024-06-21 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "BW Cube",
+        "Message": "Fixed a bug that caused filters to be removed when refreshing metadata"
+      }
+    ]
+  },
+  {
+    "Version": "7.7.2.5",
+    "LegacyReleaseDate": "2024-06-20 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "General",
+        "Message": "Removed column encryption."
+      }
+    ]
+  },
+  {
+    "Version": "7.7.2.4",
+    "LegacyReleaseDate": "2024-06-20 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "Report",
+        "Message": "Updated Z_XTRACT_IS_REMOTE_REPORT to version 1.3. Multiple changes to report component.",
+        "ReleaseNote": "- Updated Z_XTRACT_IS_REMOTE_REPORT to version 1.3. Added functionality for fetching values of variant selections and parameters.\n- Selection and parameter values of selected variants are now displayed directly in selection screen, allowing users to identify required variants and change variant selection and parameter values more easily. __This feature requires an update of Z_XTRACT_IS_REMOTE_REPORT to version 1.3.__\n- Selection and parameter values can now be supplied in output format, even if multiple values for a single selection are provided. This makes it much easier to work with the selection screen, since users don't have to know the internal representation of the fields in SAP to use them. __This feature requires an update of Z_XTRACT_IS_REMOTE_REPORT to version 1.3.__"
+      }
+    ]
+  },
+  {
+    "Version": "7.7.2.2",
+    "LegacyReleaseDate": "2024-06-18 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "General",
+        "Message": "Fixed a bug where NameConverter would not shorten names correctly when the maximum length was an odd number."
+      }
+    ]
+  },
+  {
+    "Version": "7.7.2.0",
+    "LegacyReleaseDate": "2024-06-18 16:45:54Z",
+    "Changes": [
+      {
+        "Product": "XtractIS",
+        "Component": "General",
+        "Message": "Fixed a bug where most of the extractor windows were unusable due to a wrong version number in a required assembly."
+      }
+    ]
+  },
+  {
+    "Version": "7.7.1.8",
+    "LegacyReleaseDate": "2024-06-18 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Common",
+        "Component": "WPF",
+        "Message": "Fix version number not written into assembly, causing problems in XtractIS due to the global assembly cache (GAC)."
+      }
+    ]
+  },
+  {
+    "Version": "7.7.1.5",
+    "LegacyReleaseDate": "2024-06-17 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Common",
+        "Component": "WPF",
+        "Message": "WPF library does now target net472 and net8.0-windows."
+      },
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "General",
+        "Message": "Extractor libraries are now targeting net472 and net8.0. GUI libraries target net472 and net8.0-windows."
+      }
+    ]
+  },
+  {
+    "Version": "7.7.1.4",
+    "LegacyReleaseDate": "2024-06-17 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "BW Cube",
+        "Message": "BICS: Improve error message for metadata retrieval"
+      }
+    ]
+  },
+  {
+    "Version": "7.7.1.2",
+    "LegacyReleaseDate": "2024-06-16 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "ERPConnect",
+        "Component": "NWRFC",
+        "Message": "Resolved a performance issue for execution of functions without callbacks with NW."
+      }
+    ]
+  },
+  {
+    "Version": "7.7.1.0",
+    "LegacyReleaseDate": "2024-06-12 15:19:14Z",
+    "Changes": [
+      {
+        "Product": "XtractIS",
+        "Component": "General",
+        "Message": "Updated NW RFC SDK to 750 PL13"
+      },
+      {
+        "Product": "Common",
+        "Component": "General",
+        "Message": "Updated NW RFC SDK to 750 PL13"
+      }
+    ]
+  },
+  {
+    "Version": "7.7.0.6",
+    "LegacyReleaseDate": "2024-06-12 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "ERPConnect",
+        "Component": "General",
+        "Message": "New version numbering scheme.\nSetup now displays possible breaking changes when performing an update to a new version"
+      }
+    ]
+  },
+  {
+    "Version": "7.7.0.4",
+    "LegacyReleaseDate": "2024-06-11 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Common",
+        "Component": "General",
+        "Message": "Added support for new version history tools"
+      }
+    ]
+  },
+  {
     "Version": "7.7.0.2",
     "LegacyReleaseDate": "2024-06-04 00:00:00Z",
     "Changes": [

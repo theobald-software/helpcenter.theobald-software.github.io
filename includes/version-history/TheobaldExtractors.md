@@ -1,5 +1,20 @@
 |Version|Date    |Component   |Description|
 |:-----:|:------:|:----------:|:----------|
+|2.2.7 [L]|2024-07-11|DeltaQ|Fixed a bug which would not consider selections from unselected columns|
+|2.2.6 [L]|2024-07-05|General|GUI filters now respect wildcards (*)|
+|2.2.5 [L]|2024-07-03|TableCDC|Fixed a bug that caused trigger creation to fail on MaxDB databases. Requires update of /THEO/CDC_ECC|
+|2.2.4 [H]|2024-07-03|TableCDC|Fixed a bug that could cause optimization logic of delta extractions to not include all delta records in the result. Bug introduced in 2.2.0|
+|2.2.3 [L]|2024-06-26|TableCDC|Fixed a bug where tables could not be selected if they had multiple fields of type CLNT. This bug was introduced in 2.2.0|
+|2.2.2 [L]|2024-06-25|ODP|Fixed a regression bug where ODP preview would fail for hierarchy DataSources.|
+|2.2.1 [L]|2024-06-24|Table|Fixed transport request for /THEO/READ_TABLE for SAP versions 6.40 and newer.|
+|[2.2.0 [L]](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-2.2.0)|2024-06-24|TableCDC|Timestamp is now part of extraction result. Log tables are now created client dependent. Updated THEO/CDC/* to version 1.7. See release notes for details. ([Release note](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-2.2.0))|
+|2.1.18 [L]|2024-06-23|BW Cube|BICS: Try to fix metadata retrieval for newer BW releases|
+|2.1.17 [L]|2024-06-21|BW Cube|Fixed a bug that caused filters to be removed when refreshing metadata|
+|2.1.16 [L]|2024-06-20|General|Removed column encryption.|
+|[2.1.15 [L]](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-2.1.15)|2024-06-20|Report|Updated Z_XTRACT_IS_REMOTE_REPORT to version 1.3. Multiple changes to report component.([Release note](https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-2.1.15))|
+|2.1.14 [L]|2024-06-18|General|Fixed a bug where NameConverter would not shorten names correctly when the maximum length was an odd number.|
+|2.1.13 [L]|2024-06-17|General|Extractor libraries are now targeting net472 and net8.0. GUI libraries target net472 and net8.0-windows.|
+|2.1.12 [L]|2024-06-17|BW Cube|BICS: Improve error message for metadata retrieval|
 |2.1.11 [L]|2024-06-04|General|List selection GUI: rename "equal to" to "element of"|
 |2.1.10 [L]|2024-06-03|BW Cube|MDX: Fix structures (broken since 2.0)|
 |2.1.9 [L]|2024-06-03|BAPI|GUI now allows assignment of output runtime parameters to export parameters|

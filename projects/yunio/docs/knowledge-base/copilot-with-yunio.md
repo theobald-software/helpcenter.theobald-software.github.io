@@ -21,6 +21,10 @@ The depicted sample uses a service that reads material data from the SAP table M
 3. Click **[Create a new flow]** :number-2:. A new browser tab with a Power Automate workflow opens.<br>
 ![copilot-new-flow](../assets/images/yunio/articles/copilot-new-flow.png){:class="img-responsive" }
 4. If your yunIO service requires input parameters, create the parameters in the **Run a flow from copilot** trigger action.
+
+	!!! note
+		Input parameters are required when using a yunIO service to write data to SAP. In this case, make sure to assign the input parameters correctly in the Power Automate woekflow.
+
 5. Add a yunIO Custom Connector to the workflow :number-3:, see [Integrate a yunIO Service with Power Automate](integrate-a-yunio-service-with-power-automate.md).<br>
 Alternatively, add an **HTTP** action that triggers your yunIO service.<br>
 ![copilot-array-variable](../assets/images/yunio/articles/copilot-array-variable.png){:class="img-responsive" }
@@ -46,6 +50,10 @@ Copilot selects and runs the action based on the name and description.<br>
 ![copilot-test](../assets/images/yunio/articles/copilot-test.png){:class="img-responsive" }
 
 Use copilot topics to add trigger phrases and more context to the copilot action. For more information, see [Microsoft Documentation: Call a flow from a topic](https://learn.microsoft.com/en-us/microsoft-copilot-studio/advanced-use-flow#call-a-flow-from-a-topic).
+
+!!! note
+	The number of characters returned by the Power Automate workflow may be limited. 
+	This will be improved upon in the future.
 
 <!---
 ### Limitations

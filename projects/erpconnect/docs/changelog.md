@@ -10,6 +10,7 @@ hide:
 
 {% include "version-history/version-history-header.md" %}
 
+
 <div style="display:flex">
   <input class="input-search"
     id="search"
@@ -140,6 +141,7 @@ hide:
 <div id="modal" class="modal">
   <div class="modal-content">
     <span class="close">&times;</span>
+    <div id="modalHeader"></div>
     <div id="modalBody"></div>
   </div>
 </div>
