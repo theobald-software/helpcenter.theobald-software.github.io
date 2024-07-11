@@ -29,15 +29,15 @@ Automatic slicing means that a loop is executed for each single value of the cho
 The following extraction setting is only available for MDX extractions. 
 It appears in the extraction settings window after retrieving the metadata of an MDX extraction.<br>
 
-**Dimension on Columns** allows selecting another dimension/structure than the measure (key figures) dimension on the column axis. 
+**Dimension on Columns** allows selecting other dimension/structure than the measure (key figures) dimension on the column axis. 
 This swaps the measures and the selected dimension: the measures are placed on rows, the selected dimension is placed on columns.
 
-Note that:
-- your BEx Query must contain a dimension structure.
-- dimension filters on columns are not applied.
-- the selected properties for the new column dimension are ignored.
-- unit columns are only supported when *key figures* is selected for the columns.
-- up to 1000 members will be loaded when confirming the extraction settings window. These members will be the column names.
+Note the following:
+- The BEx Query must contain a dimension structure
+- Dimension filters on columns are not applied
+- The selected properties for the new column dimension are ignored
+- Unit columns are only supported when *key figures* are selected for the columns.
+- Up to 1000 members are loaded when confirming the extraction settings window. These members are then the column names.
 
 !!! tip "Recommendation" 
 	We recommend only using structures on columns.
