@@ -11,7 +11,7 @@ Windows AD credentials or credentials of a custom user must be submitted when ru
 
 {% endif %}
 
-### Prerequisites
+### Activate TLS encryption
 
 Access restrictions require users to access the web server through an https connection (TLS encryption). 
 This requires the installation of an X.509 certificate.
@@ -37,7 +37,7 @@ Follow the steps below to limit the execution of extractions to users that pass 
 The caller must have at least *Read access* to the Designer.
 
 1. Assign a Windows service account under which the {{ productName }} service runs, see [Change Service Account](../setup/service-account.md).
-2. Activate TLS encryption, see [Prerequisites](#prerequisites). <br>
+2. [Activate TLS encryption](#activate-tls-encryption). <br>
 ![WebServerSettings_https](../../assets/images/documentation/access-restriction/server-settings-sso-certificate.png){:class="img-responsive"}
 3. Open **Server > Settings** from the main window of the Designer. <br>
 ![security-manage-users](../../assets/images/documentation/access-restriction/server-settings_manage.png){:class="img-responsive"}
@@ -57,7 +57,7 @@ For more information, see [Restrict Designer Access](restrict-designer-access.md
 Follow the steps below to limit the execution of extractions to users that pass [custom credentials](user-management.md/#create-custom-users), when calling extractions.
 The custom user must have at least *Read access* to the Designer.
 
-1. Activate TLS encryption, see [Prerequisites](#prerequisites).
+1. [Activate TLS encryption](#activate-tls-encryption).
 2. Open **Server > Settings** from the main window of the Designer. <br>
 ![security-manage-users](../../assets/images/documentation/access-restriction/server-settings_manage.png){:class="img-responsive"}
 3. In the tab *Web Server*, select **HTTPS - Restricted to custom users with Designer read access**.
