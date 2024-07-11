@@ -45,7 +45,7 @@ snc/identity/as | Application server's SNC name Syntax: p:\<Distinguished_Name\>
 5. Set up SNC authentication in the {{ productName }} SAP connection settings.
 
 ****
-#### Releated Link
+#### Releated Links
 - [SAP Documentation: Workflow with X.509 Certificate without Secure Login Server](https://help.sap.com/viewer/df185fd53bb645b1bd99284ee4e4a750/3.0/en-US/06d9e59a0fd44aa4aa082ffad7d618e3.html)
 - [SAP Documentation: Secure Network Communications (SNC)](https://help.sap.com/doc/saphelp_nw70/7.0.31/en-us/e6/56f466e99a11d1a5b00000e835363f/content.htm?no_cache=true)
 - [SAP Documentation: Configuring SNC: External Programs AS ABAP Using RFC ](https://help.sap.com/doc/saphelp_nwpi71/7.1/en-US/d9/e8a740bbaa4d8f8bee6f7b173bd99f/content.htm?loaded_from_frameset=true)

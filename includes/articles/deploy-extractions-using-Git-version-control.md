@@ -52,7 +52,7 @@ The repository directory **must** be named `config`!
 
 ****
 
-#### Releated Link
+#### Releated Links
 
 - [GitForWindows Download](https://gitforwindows.org/)
 - [Manual Migration to a Different Machine](../documentation/setup/migration.md)
