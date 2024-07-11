@@ -1,5 +1,27 @@
 [
   {
+    "Version": "1.32.18.0",
+    "LegacyReleaseDate": "2024-07-08 18:43:57Z",
+    "Changes": [
+      {
+        "Product": "YunIO",
+        "Component": "Designer",
+        "Message": "CLNT fields are no longer shown in the table join editor when adding a condition."
+      }
+    ]
+  },
+  {
+    "Version": "1.32.17.27",
+    "LegacyReleaseDate": "2024-07-05 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "General",
+        "Message": "GUI filters now respect wildcards (*)"
+      }
+    ]
+  },
+  {
     "Version": "1.32.17.25",
     "LegacyReleaseDate": "2024-07-03 00:00:00Z",
     "Changes": [
