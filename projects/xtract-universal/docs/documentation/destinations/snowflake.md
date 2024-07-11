@@ -184,7 +184,7 @@ Check the existence of the new column *RUNTIMEPARAMETER* in the Snowflake Consol
 
 ## Related Links
 - [Requirements: .NET-Framework](../setup/requirements.md#other-applications-and-frameworks)
-- [Requirements: 64-bit Architecture](../setup/requirements.md#hardware-requirements)
+- [Requirements: 64-bit Architecture](../setup/requirements.md#hardware)
 - [Snowflake Documentation: Installing and Configuring the ODBC Driver for Windows](https://docs.snowflake.com/en/user-guide/odbc-windows.html)
 - [Snowflake Documentation: Snowflake Identifiers](https://docs.snowflake.com/en/sql-reference/identifiers-syntax.html#double-quoted-identifiers)
 - [Knowledge Base Article: Integrate SAP Data into a Snowflake Data Warehouse](../../knowledge-base/integrate_sap_data_into_a_Snowflake_data_warehouse.md)

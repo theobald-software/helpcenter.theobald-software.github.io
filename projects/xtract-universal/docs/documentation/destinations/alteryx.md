@@ -114,5 +114,3 @@ The depicted examples show how to override custom parameters created in Xtract U
 
 ![alteryx-full-workflow](../../assets/images/xu/documentation/destinations/alteryx/alteryx-workflow.png){:class="img-responsive"}
 
-## Related Links
-- [Custom Runtime Parameters](../paramete/user-defined-variables)

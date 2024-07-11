@@ -23,7 +23,7 @@ Case-sensitive (_CS) | Distinguishes between uppercase and lowercase letters. If
 Accent-sensitive (_AS) | Distinguishes between accented and unaccented characters. For example, "a" is not equal to "ấ". If this option isn't selected, the collation is accent-insensitive. Which means, SQL Server considers the accented and unaccented versions of letters to be identical for sorting purposes. You can explicitly select accent insensitivity by specifying _AI.
 
 For information on usable collations, see [Microsoft Documentation: Collation](https://docs.microsoft.com/en-us/sql/relational-databases/collations/collation-and-unicode-support?redirectedfrom=MSDN&view=sql-server-ver15#Collation_Defn) and [Microsoft Documentation: Collation and Unicode support](https://docs.microsoft.com/en-us/sql/relational-databases/collations/collation-and-unicode-support?redirectedfrom=MSDN&view=sql-server-ver15). 
-The depicted example shows the column collation within {{ productName }} with a [Custom SQL](../documentation/destinations/microsoft-sql-server.md#custom-sql-1) statement.
+The depicted example shows the column collation within {{ productName }} with a [Custom SQL](../documentation/destinations/microsoft-sql-server.md#custom-sql-statements) statement.
 
 ### SQL Server Management Studio (SSMS)
 

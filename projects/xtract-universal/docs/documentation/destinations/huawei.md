@@ -39,7 +39,7 @@ If the connection is successful, "Connected" is displayed next to the button.
 
 This setting only becomes available after a connection to the storage account is established.<br>
 Select a bucket. The SAP data is extracted into the selected bucket. 
-Click ![refresh](/img/content/icons/refresh.png){:class="img-responsive" style="display:inline"} to refresh the list of available buckets.
+Click **[:designer-refresh:]** to refresh the list of available buckets.
 
 ### Misc
 

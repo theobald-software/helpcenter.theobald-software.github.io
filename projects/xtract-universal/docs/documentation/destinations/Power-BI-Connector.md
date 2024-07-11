@@ -141,7 +141,7 @@ The Power BI Query M-script is located inside the Xtract Universal installation 
 ### Set up the Power Query M-script in Power BI
 
 !!! note
-	Only use the extractions with the [Power BI Connector destination](#pbi-connection).
+	Only use the extractions with the Power BI Connector destination assigned to them.
 
 Follow the steps below to set up the Power Query M-script in Power BI to connect with Xtract Universal:
 

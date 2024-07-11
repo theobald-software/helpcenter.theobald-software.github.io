@@ -44,7 +44,7 @@ The data load script is required to run extractions in your Qlik application.
 7. Click **[Copy to Clipboard]** to copy the script.
 ![XU_qlik_generate_Script](../../assets/images/xu/documentation/destinations/qlik/XU_qlik_generate_Script_2.png){:class="img-responsive"}
 
-When using QlikView, paste the copied script into the QlikView data load editor. For QlikSense, see [Settings in QlikSense](#settings-in-qlik-sense).
+When using QlikView, paste the copied script into the QlikView data load editor. For QlikSense, see [Run Extractions from QlikSense](#run-extractions-from-qliksense).
 
 !!! note
 	The "SET methods" cannot be edited in the "Script" window. Edit the SET methods in the Qlik data load editor. 

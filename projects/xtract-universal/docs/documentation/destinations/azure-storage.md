@@ -115,7 +115,7 @@ The input fields in the subsection *Access key parameters* vary depending on the
 	
 	Click **[Connect]** to establish a connection to the storage account. 
 	A browser window pops up, where you have to sign in using your Azure AD credentials.
-	The "Permissions requested" window lists the requested permissions, see [Prerequisites for Authentication via Azure Active Directory](#prerequisites-for-authentication-via-azure-active-directory). 
+	The "Permissions requested" window lists the requested permissions, see [Knowledge Base Article: Authentication via Azure Active Directory](../../knowledge-base/authentication-via-azure-ad-with-azure-storage.md). 
 	Click **[Accept]**. If the connection is successful, a "Connection successful" info window opens. <br>
 
 	![xu-azure-blob-con-4](../../assets/images/xu/documentation/destinations/azure-storage/xu-azure-blob-con_4.png){:class="img-responsive"}

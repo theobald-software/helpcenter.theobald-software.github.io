@@ -38,14 +38,14 @@ To complete the installation close all Visual Studio windows.
 
 ### Installation of the Xtract Universal Report Server Plugin
 
-The Xtract Universal Report Server Plugin can be installed as part of the [Xtract Universal Setup](../introduction/installation-and-update).<br>
+The Xtract Universal Report Server Plugin can be installed as part of the [Xtract Universal Setup](../setup/installation.md).<br>
 To install the Xtract Universal Report Server Plugin on multiple environments without installing the Xtract Universal Designer, follow the steps below:
 
 
 1. Make sure the *Microsoft Reporting Services Projects* plugin for Visual Studio is installed and active. 
 2. Close Visual Studio.
 3. [Install Xtract Universal](../setup/installation.md) on the environment on which the license runs.
-4. Download the [XtractUniversalReportServerPluginSetup.exe](../../files/xu/XtractUniversalReportServerPluginSetup.exe).
+4. Download the [XtractUniversalReportServerPluginSetup.exe](../../assets/files/xu/XtractUniversalReportServerPluginSetup.exe).
 5. Run the *XtractUniversalReportServerPluginSetup.exe* on any environment that uses Visual Studio to design reports or where the Report Server runs.
 This installs the Xtract Universal Report Server Plugin on all compatible versions of Visual Studio and/or Report Server found on the environment.<br>
 ![XU-Setup](../../assets/images/xu/documentation/destinations/ssrs/XtractUniversalReportServerPluginSetup.png){:class="img-responsive"}
@@ -128,7 +128,7 @@ The following steps guide you through the creation of a Report in Visual Studio 
 
 	If you don't see the editor shown below, click **Edit as Text**.<br>
 	![Query-Designer](../../assets/images/xu/documentation/destinations/ssrs/Query-Designer.png){:class="img-responsive"}
-6. Optional: Change [runtime parameters](../execute-and-automate/extraction-parameters.md) of the extraction :number-6:. Parameter changes are visible in the Query string :number-7:.
+6. Optional: Change [runtime parameters](../parameters/extraction-parameters.md) of the extraction :number-6:. Parameter changes are visible in the Query string :number-7:.
 Invalid input is marked with a red circle that displays an error message when hovering over it.
 7. Click **[Preview]** :number-8: to run the extraction in preview mode.
 8. Confirm your input with **[OK]**. The Query Builder closes. 
@@ -139,12 +139,12 @@ Invalid input is marked with a red circle that displays an error message when ho
 After creating the report, you can access the Query Builder by right-clicking the *Dataset* in *Report Data* and selecting **Query...**.
 
 !!! tip
-	Passing the (Windows) user that runs a report on the report server or in Visual Studio is supported. For this, you need to set up the [web server authentication](../server/server-settings#web-server) in Xtract Universal. 
+	Passing the (Windows) user that runs a report on the report server or in Visual Studio is supported. For this, you need to set up the [web server authentication](../server/server-settings.md#web-server) in Xtract Universal. 
 	Single Sign On in SAP is also supported, see [Single Sign On](../sap-connection/index.md/#single-sign-on-sso).
 
 ### Parameterization
 
-Xtract Universal Designer uses [runtime parameters](../execute-and-automate/extraction-parameters.md) for parameterization.<br>
+Xtract Universal Designer uses [runtime parameters](../parameters/extraction-parameters.md) for parameterization.<br>
 Runtime parameters are accessible in the Query Builder. They can have one of the following **Behaviors**: <br>
 
 | Behaviour | Description |

@@ -75,7 +75,7 @@ Test the database connection.
 !!! warning
 	**The remote certificate is invalid according to the validation procedure** <br>
 	When using TLS encryption, this error message can have multiple causes e.g. invalid or untrustworthy certificates. 
-	See [TLS Encryption with PostgreSQL](#tls-encryption-with-postresql) for information.
+	See [TLS Encryption with PostgreSQL](#tls-encryption-with-postgresql) for information.
 
 
 {% include "destinations/assign-destination.md" %}
