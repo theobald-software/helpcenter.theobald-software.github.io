@@ -47,7 +47,7 @@ To use the deprecated or altered extractors, SAP may deliver extraction relevant
 	If the source SAP system is not on a HANA DB, an additional Annotation is needed: ```@Analytics.dataCategory: #CUBE/#FACT/#DIMENSION```.
 
 Things that need to be considered when using BW InfoProviders:
-1. When looking up ABAP CDS Views in the {{ odp }} {{ component }}, make sure to select the correct context. 
+1. When looking up ABAP CDS Views in the {{ odp }} {{ component }}, make sure to select the correct context. <br>
 ![ODP ABAP CDS View](../../assets/images/documentation/components/odp/odp-component-cds-costcenter-01.png){:class="img-responsive"}
 2. When the delta load is available for the source object in the SAP source system, the **Delta Update** option is available in the {{ odp }} {{ component }}. 
 3. Click **[Load live preview]** to preview the data without running an extraction.
