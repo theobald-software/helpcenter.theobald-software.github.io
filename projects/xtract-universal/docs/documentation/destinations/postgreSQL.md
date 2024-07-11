@@ -5,12 +5,12 @@ destination: postgres
 ---
 
 This page shows how to set up and use the {{ page.meta.title }} destination. 
-The {{ page.meta.title }} destination loads data to
+The {{ page.meta.title }} destination loads data to an EXASolution database.
 
 ## Requirements
 
 Data is pushed into the PostgreSQL DB system through the [Npgsql data provider version 8.1](https://www.npgsql.org/index.html). 
-The data provider is installed as part of the setup of Xtract Universal.
+The data provider is provided with the setup of Xtract Universal. 
 
 #### Supported Versions
 
