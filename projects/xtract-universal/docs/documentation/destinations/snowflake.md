@@ -180,7 +180,7 @@ Select the option *Custom SQL* from the drop-down list and click **[Edit SQL]**.
 Check the existence of the new column *RUNTIMEPARAMETER* in the Snowflake Console of the table *0FI_AP_4*.
 
 ![Result-Snowflake-Console](../../assets/images/xu/documentation/destinations/snowflake/result_snowflake_console.png){:class="img-responsive"}
-
+*****
 
 ## Related Links
 - [Requirements: .NET-Framework](../setup/requirements.md#other-applications-and-frameworks)
