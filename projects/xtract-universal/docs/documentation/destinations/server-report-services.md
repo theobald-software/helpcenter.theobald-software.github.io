@@ -79,45 +79,41 @@ To use the {{ page.meta.title }} destination, no further settings are necessary.
 {% include "destinations/date-conversion.md" %}
 
 
-
-
-
-
 ## SSRS in Visual Studio
 
 The following section contains step-by-step instructions on how to access SAP data in the SSRS environment via Xtract Universal.
 
-### Extracting SAP Data in Xtract Universal Designer
+#### Prerequisites in Xtract Universal
 
-To make SAP data available in the SSRS environment, the first step is to create an extraction in the Xtract Universal Designer.
-
-For information on how to set up an extraction, see [Getting Started](../../getting-started.md).<br>
-Make sure the extraction uses the [*Power BI Report Server (SQL Server Reporting Services)* destination](#connection).
+To make SAP data available in the SSRS environment, [create an extraction](../../getting-started.md)/#create-an-extraction in the Xtract Universal Designer.
+Make sure the {{ page.meta.title }} destination is [assigned](#assign-the-power-bi-report-server-sql-server-reporting-services-destination-to-an-extraction) to the extraction.
 
 
-### Adding an Extraction as a Data Source in Visual Studio
+### Add an Extraction as a Data Source in Visual Studio
 
-The following steps guide you through the creation of an Xtract Universal data source in Visual Studio: 
+Follow the steps below to create an Xtract Universal data source in Visual Studio: 
 
-1. Create a new "Report Server Project" in Visual Studio.
+1. Create a new "Report Server Project" in Visual Studio.<br>
 ![New-Project](../../assets/images/xu/documentation/destinations/ssrs/New-Project.png){:class="img-responsive"}
 2. Right-click the *Shared Data Sources* folder in the *Solution Explorer* and select **Add New Data Source**. The window "Shared Data Source Properties" opens.
-3. In the tab *General*, assign a name of your choice or leave the default one for the new data source (1).
-4. Select the type *Xtract Universal* from the drop-down list (2). <br>If *Xtract Universal* is not available or displayed in all caps, make sure that the latest Xtract Universal version and *Microsoft Reporting Services Projects* plugin are both installed.
-5. Enter a *connection string* (3) to XU's [Web Server](../security/server-security) in the format `Url=http://[host]:[port]/` e.g, `Url=http://localhost:8065/`. Note that the *connection string* is case sensitive.
+3. In the tab *General*, assign a name for the new data source :number-1:.<br>
 ![Shared-Data-Source-Properties](../../assets/images/xu/documentation/destinations/ssrs/Shared-Data-Source-Properties.png){:class="img-responsive"}
-6. Optional (only required if the XU [Web server security](../security/server-security) is configured or the SAP source requires SAP credentials): Switch to the *Credentials* tab (4) and enter your [username and password](../security/user-management) for Xtract Universal.
+4. Select the type *Xtract Universal* from the drop-down list :number-2:. <br>If *Xtract Universal* is not available or displayed in all caps, make sure that the latest Xtract Universal version and *Microsoft Reporting Services Projects* plugin are both installed.
+5. Enter a *connection string* :number-3: to the [Xtract Universal Web Server](../designer.md/#connect-the-designer-to-a-server) in the format `Url=http://[host]:[port]/` e.g, `Url=http://localhost:8065/`. Note that the *connection string* is case sensitive.
+6. Optional (only required if [access restriction to the Xtract Universal web server](../access-restrictions/restrict-server-access.md) is configured or if the SAP source requires SAP credentials): 
+Switch to the *Credentials* tab :number-4: and enter your [username and password](../access-restrictions/user-management.md) for Xtract Universal.
 7. Confirm your input with **[OK]**.
 
-If *Xtract Universal* is not available in the drop-down list (2) even though the *Microsoft Reporting Services Projects* plugin (version 2.6.11 or higher) and the latest version of Xtract Universal are both installed, send the log file located in `C:\Program Files\XtractUniversal\ssrs\log.txt` to [Theobald Support](https://support.theobald-software.com).
+If Xtract Universal is not available in the drop-down list :number-2: even though the *Microsoft Reporting Services Projects* plugin (version 2.6.11 or higher) and the latest version of Xtract Universal are both installed, send the log file located in `{{ installationDir }}\ssrs\log.txt` to [Theobald Support](https://support.theobald-software.com).
 
 !!! tip
-	The *connection string* is part of the URL string displayed in the "Run Extraction" window of the Designer. Copy the URL string up to '?' and paste it as the *connection string* into Visual Studio.
+	The *connection string* is part of the URL string displayed in the ["Run Extraction" window](../execute-and-automate/run-an-extraction.md/#run-extractions-in-the-designer) of the Designer. 
+	Copy the URL string up to '?' and paste it as the *connection string* into Visual Studio.
 
 !!! note
-	When **https Restricted...** or **https Unrestricted** is activated in the [XU Webserer settings](../security/server-security#prerequisite-activating-tls-encryption), make sure to modify the Registry of the machine that runs the SSRS server according to the [Microsoft Help (Configure Strong cryptography)](https://docs.microsoft.com/en-us/mem/configmgr/core/plan-design/security/enable-tls-1-2-client#configure-for-strong-cryptography).
+	When **https Restricted...** or **https Unrestricted** is activated in the [XU web server settings](../access-restrictions/restrict-server-access.md/#activate-tls-encryption), make sure to modify the Registry of the machine that runs the SSRS server according to the [Microsoft Documentation: Configure Strong cryptography](https://docs.microsoft.com/en-us/mem/configmgr/core/plan-design/security/enable-tls-1-2-client#configure-for-strong-cryptography).
 
-### Creating a Report using an Xtract Universal Data Source
+### Create a Report using an Xtract Universal Data Source
 
 The following steps guide you through the creation of a Report in Visual Studio using an Xtract Universal data source: 
 
@@ -125,14 +121,18 @@ The following steps guide you through the creation of a Report in Visual Studio 
 2. Right-click the *Reports* folder in the *Solution Explorer* and select **Add New Report**. The "Report Wizard" opens.
 3. In the wizard, select a data source and click **[Next]**.
 4. Click **[Query Builder...]**. The window "Query Designer" opens.
-5. Select an Xtract Universal extraction from the drop-down menu (5). <br>If no extractions are available, make sure the *connection string* (3) in the data source is correct and an extraction with an *SQL Server Reporting Server* destination exists in Xtract Universal.
-If you don't see the editor shown below, click **Edit as Text**.
-![Query-Designer](../../assets/images/xu/documentation/destinations/ssrs/Query-Designer.png){:class="img-responsive"}
-6. Optional: Change [runtime parameters](../execute-and-automate-extractions/extraction-parameters) of the extraction (6). Parameter changes are visible in the Query string (7).
+5. Select an Xtract Universal extraction from the drop-down menu :number-5:. <br>
+
+	!!! note
+		If no extractions are available, make sure the *connection string* :number-3: in the data source is correct and an extraction with an *SQL Server Reporting Server* destination exists in Xtract Universal.
+
+	If you don't see the editor shown below, click **Edit as Text**.<br>
+	![Query-Designer](../../assets/images/xu/documentation/destinations/ssrs/Query-Designer.png){:class="img-responsive"}
+6. Optional: Change [runtime parameters](../execute-and-automate/extraction-parameters.md) of the extraction :number-6:. Parameter changes are visible in the Query string :number-7:.
 Invalid input is marked with a red circle that displays an error message when hovering over it.
-7. Click **[Preview]** (8) to run the extraction in preview mode.
+7. Click **[Preview]** :number-8: to run the extraction in preview mode.
 8. Confirm your input with **[OK]**. The Query Builder closes. 
-9. Make sure the Query string from the Query Builder is displayed in the Report Wizard before clicking **[Next]**.
+9. Make sure the Query string from the Query Builder is displayed in the Report Wizard before clicking **[Next]**.<br>
 ![Report-Wizard](../../assets/images/xu/documentation/destinations/ssrs/Report-Wizard.png){:class="img-responsive"}
 10. Complete the Report Wizard according to your preferences.
 
@@ -140,59 +140,58 @@ After creating the report, you can access the Query Builder by right-clicking th
 
 !!! tip
 	Passing the (Windows) user that runs a report on the report server or in Visual Studio is supported. For this, you need to set up the [web server authentication](../server/server-settings#web-server) in Xtract Universal. 
-	Single Sign On in SAP is also supported, see [Single Sign On](../advanced-techniques/sap-single-sign-on).
-
+	Single Sign On in SAP is also supported, see [Single Sign On](../sap-connection/index.md/#single-sign-on-sso).
 
 ### Parameterization
 
-Xtract Universal Designer uses [runtime parameters](../execute-and-automate-extractions/extraction-parameters) for parameterization.
-
+Xtract Universal Designer uses [runtime parameters](../execute-and-automate/extraction-parameters.md) for parameterization.<br>
 Runtime parameters are accessible in the Query Builder. They can have one of the following **Behaviors**: <br>
-- *Default:* Uses the value specified in Xtract Universal Designer.
-- *Constant:* Enter a constant value to be used during runtime.
-- *Parameterized:* Enter the name of a dynamic query parameter to use as a runtime parameter. 
-The value of that parameter can either come from an input field, from the user or from a computed parameter using a formula.
+
+| Behaviour | Description |
+|--------------|----------|
+| *Default* | Uses the value specified in Xtract Universal Designer. |
+| *Constant* | Enter a constant value to be used during runtime. |
+| *Parameterized* | Enter the name of a dynamic query parameter to use as a runtime parameter. The value of that parameter can either come from an input field, from the user or from a computed parameter using a formula. |
 
 !!! note
 	Every runtime parameter with *Parameterized Behaviour* allows only one query parameter name as its input. 
-	If you want to use multiple inputs for a runtime parameter, you can use VS Report Designer tools to combine multiple parameters into a single *Computed Query Parameter*, see [Using Computed Query Parameters for SSRS with Xtract Universal](https://kb.theobald-software.com/xtract-universal/xu-ssrs-parameterizing-in-vs). 
+	If you want to use multiple inputs for a runtime parameter, you can use VS Report Designer tools to combine multiple parameters into a single *Computed Query Parameter*, see [Use Computed Query Parameters for SSRS with Xtract Universal](../../knowledge-base/xu-ssrs-parameterizing-in-vs.md). 
 
 
-#### How to set dynamic Runtime Parameters
+=== "Set dynamic Runtime Parameters"
 
-Use VS query parameters as input for Xtract runtime parameters.
+	Use VS query parameters as input for Xtract runtime parameters.
 
-1. To create a new query parameter right-click the data set in the *Report Data* section and select **Dataset Properties**. The window "Dataset Properties" opens.
-2. Switch to the tab *Parameters* and press **[Add]**.
-![Query-Parameter](../../assets/images/xu/documentation/destinations/ssrs/query-parameters.png){:class="img-responsive"}
-3. Enter a *Parameter Name* (1) and a *Parameter Value* or use the **[f(x)]** button to use formulas and/or combine multiple input values.
-4. Switch to the *Query* tab and press **[Query Designer...]**. The window "Query Designer" opens.
-![Query-Designer](../../assets/images/xu/documentation/destinations/ssrs/QueryDesigner.png){:class="img-responsive"}
-5. Select *Parameterized* as the **Behaviour** of the runtime parameter you want to dynamize.
-6. Enter the name of the new query parameter (1) under **Value**.
-7. Confirm your input with **[OK]**.
+	1. To create a new query parameter right-click the data set in the *Report Data* section and select **Dataset Properties**. The window "Dataset Properties" opens.
+	2. Switch to the tab *Parameters* and press **[Add]**.<br>
+	![Query-Parameter](../../assets/images/xu/documentation/destinations/ssrs/query-parameters.png){:class="img-responsive"}
+	3. Enter a *Parameter Name* and a *Parameter Value* or use the **[f(x)]** button to use formulas and/or combine multiple input values.
+	4. Switch to the *Query* tab and press **[Query Designer...]**. The window "Query Designer" opens.<br>
+	![Query-Designer](../../assets/images/xu/documentation/destinations/ssrs/QueryDesigner.png){:class="img-responsive"}
+	5. Select *Parameterized* as the **Behaviour** of the runtime parameter you want to dynamize.
+	6. Enter the name of the new query parameter under **Value**.
+	7. Confirm your input with **[OK]**.
 
+=== "Make Parameters optional"
 
-#### How to make Parameters optional
+	If a query parameter is NULL, that parameter is not passed at runtime and thus will be ignored.
 
-If a query parameter is NULL, that parameter is not passed at runtime and thus will be ignored.
+	!!! note
+		Depending on the {{ component }}, some runtime parameters are mandatory, e.g., most custom parameters.
 
-!!! note
-	Depending on the extraction type some runtime parameters cannot be ignored e.g., most custom parameters are mandatory.
+	1. Right-click the input field of the parameter you want to be optional and select *Parameter Properties*. The window "Report Parameter Properties" opens.<br>
+	![Input-Field](../../assets/images/xu/documentation/destinations/ssrs/optional-params.png){:class="img-responsive"}
+	2. In the *General* tab, activate the checkbox **Allow null value**.
+	3. Confirm your input with **[OK]**. A checkbox **NULL** appears next to the input field.
+	4. If the checkbox **NULL** is activated, the parameter will be ignored at runtime.
 
-1. Right-click the input field of the parameter you want to be optional and select *Parameter Properties*. The window "Report Parameter Properties" opens.
-![Input-Field](../../assets/images/xu/documentation/destinations/ssrs/optional-params.png){:class="img-responsive"}
-2. In the *General* tab, activate the checkbox **Allow null value**.
-3. Confirm your input with **[OK]**. A checkbox **NULL** appears next to the input field.
-4. If the checkbox **NULL** is activated, the parameter will be ignored at runtime.
-
-!!! tip
-	You can also use a computed query parameter to create a value of NULL. Create a formula that returns *Nothing* as the value.
+	!!! tip
+		You can also use a computed query parameter to create a value of NULL. Create a formula that returns *Nothing* as the value.
 
 
 ## Related Links
-- [Report Design Tips](https://docs.microsoft.com/en-us/sql/reporting-services/report-design/report-design-tips-report-builder-and-ssrs?view=sql-server-ver15)
-- [Reporting Services Tutorials (SSRS)](https://docs.microsoft.com/en-us/sql/reporting-services/reporting-services-tutorials-ssrs?view=sql-server-ver15)
-- [Add a Query Parameter to Create a Report Parameter](https://docs.microsoft.com/en-us/sql/reporting-services/tutorial-add-a-parameter-to-your-report-report-builder?view=sql-server-ver15#Query)
-- [Using Computed Query Parameters for SSRS with Xtract Universal](https://kb.theobald-software.com/xtract-universal/xu-ssrs-parameterizing-in-vs)
-- [Integration via Azure Data Factory](../execute-and-automate-extractions/call-via-etl#integration-via-azure-data-factory)
+- [Microsoft Documentation: Report Design Tips](https://docs.microsoft.com/en-us/sql/reporting-services/report-design/report-design-tips-report-builder-and-ssrs?view=sql-server-ver15)
+- [Microsoft Documentation: Reporting Services Tutorials (SSRS)](https://docs.microsoft.com/en-us/sql/reporting-services/reporting-services-tutorials-ssrs?view=sql-server-ver15)
+- [Microsoft Documentation: Add a Query Parameter to Create a Report Parameter](https://docs.microsoft.com/en-us/sql/reporting-services/tutorial-add-a-parameter-to-your-report-report-builder?view=sql-server-ver15#Query)
+- [Knowledge Base Article: Use Computed Query Parameters for SSRS with Xtract Universal](../../knowledge-base/xu-ssrs-parameterizing-in-vs.md)
+- [Integration via Azure Data Factory](../execute-and-automate/call-via-etl.md/#integration-via-azure-data-factory)

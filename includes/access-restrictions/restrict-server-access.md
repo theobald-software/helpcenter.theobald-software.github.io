@@ -11,7 +11,7 @@ Windows AD credentials or credentials of a custom user must be submitted when ru
 
 {% endif %}
 
-### Activate TLS encryption
+### Activate TLS Encryption
 
 Access restrictions require users to access the web server through an https connection (TLS encryption). 
 This requires the installation of an X.509 certificate.
