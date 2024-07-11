@@ -198,6 +198,7 @@ This leverages the user's SAP authorizations and Power BI will only show data th
 
 ![XU_PBI_EN_SSO](../../assets/images/xu/documentation/destinations/power-bi/XU_PBI_EN_SSO.png){:class="img-responsive"}
 
+****
 
 ## Related Links
 - [Connect Xtract Universal to Power BI Service](../../knowledge-base/connect-to-power-bi-service.md)
