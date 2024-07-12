@@ -58,7 +58,7 @@ For information on how to integrate a yunIO service with Power Automate, see [In
 If needed, download the sample EXCEL file below.
 - Upload the data sets to the SharePoint document library or any other location that is accessible for Power Automate.
 
-[:material-download-circle: Download EXCEL File](../assets/files/yunio/Create_Multiple_Cost_Centers.xlsx){ .md-button }
+[:material-download-circle: Download EXCEL File](../assets/files/yunio/Create_Multiple_Cost_Centers.xlsx){ .md-button .md-button--primary }
 
 ### Create a Power Automate Flow for Multiple Items 
 

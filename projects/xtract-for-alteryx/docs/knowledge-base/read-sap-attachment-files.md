@@ -14,7 +14,7 @@ This article leads you through all necessary steps to set up the following workf
 - Get a list of attached files from the SAP ERP system
 - Download SAP attachment files of any format
 
-[:material-download-circle: Download Workflow](../assets/files/xfa/SAP-Read-Attachment-Files.yxmd){ .md-button }
+[:material-download-circle: Download Workflow](../assets/files/xfa/SAP-Read-Attachment-Files.yxmd){ .md-button .md-button--primary }
 
 | SAP System | SAP Objects | {{ productName }} Component |
 | :------ |:--- | :--- |

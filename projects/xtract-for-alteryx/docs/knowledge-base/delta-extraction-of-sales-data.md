@@ -14,7 +14,7 @@ This article leads you through all necessary steps to set up the following workf
 
 The delta mechanism of the {{ odp }} {{ component }} allows loading only the added or changed data (since the last run) from an SAP ERP system.
 
-[:material-download-circle: Download Workflow](../assets/files/xfa/ODP-ERP-Delta.yxmd){ .md-button }
+[:material-download-circle: Download Workflow](../assets/files/xfa/ODP-ERP-Delta.yxmd){ .md-button .md-button--primary }
 
 | SAP System | SAP Objects | {{ productName }} Component |
 | :------ |:--- | :--- |

@@ -17,7 +17,7 @@ This process uses an input parameter and a batch macro to pass the input paramet
     When using {{ productName }} version 1.18 and below tables can be passed to the Xtract BAPI component directly via an input anchor, while single values require the use of batch macros.
     As of {{ productName }} version 1.19 all input parameters can be passed to the Xtract BAPI component without batch macros.
 
-[:material-download-circle: Download Workflow](../assets/files/xfa/BAPI-ERP-ReadAndWriteWithMacro.yxzp){ .md-button }
+[:material-download-circle: Download Workflow](../assets/files/xfa/BAPI-ERP-ReadAndWriteWithMacro.yxzp){ .md-button .md-button--primary }
 
 
 | SAP System | SAP Objects | {{ productName }} Component |

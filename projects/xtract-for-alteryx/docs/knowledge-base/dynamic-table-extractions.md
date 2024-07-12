@@ -12,7 +12,7 @@ This article leads you through all necessary steps to set up the following workf
 - Pass a list of values as a runtime parameter to an Xtract Table component, see [List Parameters](#list-parameters).
 - Pass multiple runtime parameters to an Xtract Table component, see [Multiple Parameters](#multiple-parameters).
 
-[:material-download-circle: Download Workflow](../assets/files/xfa/Table-Dynamic-Parameters.yxmd){ .md-button }
+[:material-download-circle: Download Workflow](../assets/files/xfa/Table-Dynamic-Parameters.yxmd){ .md-button .md-button--primary }
 
 
 | SAP System | SAP Objects | {{ productName }} Component |

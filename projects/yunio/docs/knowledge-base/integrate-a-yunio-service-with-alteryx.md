@@ -81,7 +81,7 @@ The column contains the name of the service you want to call e.g., `/Customer_Ch
 
 ### Sample Workflow
 
-[Download yunIO_Customer_Update.yxwz](../assets/files/yunio/yunIO_Customer_Update.yxwz){ .md-button }
+[Download yunIO_Customer_Update.yxwz](../assets/files/yunio/yunIO_Customer_Update.yxwz){ .md-button .md-button--primary }
 
 <!--- The service uses the following input parameters:<br>
 - skipPopups (this is a default parameter that is used by every service)
