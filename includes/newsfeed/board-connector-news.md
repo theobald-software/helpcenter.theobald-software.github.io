@@ -11,6 +11,16 @@
 
     :material-clock-time-two-outline: 2024-08-01
 
+-   **Welcome to the Board Connector HelpCenter**
+
+    ---
+
+    Looking for something? <br>Try the search bar, our new Theo chatbot or browse our [user documentation](documentation/introduction).
+
+    ---
+
+    :material-clock-time-two-outline: 2024-07-31
+
 -   **Table CDC: Timestamps in Extraction Results**
 
     ---
