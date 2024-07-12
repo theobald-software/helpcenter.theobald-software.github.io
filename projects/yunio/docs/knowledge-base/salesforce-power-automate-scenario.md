@@ -24,7 +24,7 @@ For more information on yunIO, see [Theobald Software: yunIO](https://theobald-s
 1. [Create an SAP connection](../getting-started.md/#create-a-service) in yunIO. 
 2. [Create a service](../getting-started.md/#create-a-service) in yunIO. 
 The depicted example uses the integration type *Function Module* for the service.
-3. [Look up](../documentation/function-modules-and-bapis/create-a-bapi-service.md/#look-up-a-function-module-bapi) the standard BAPI BAPI_CUSTOMER_CREATEFROMDATA1 that creates customers in SAP. 
+3. [Look up](../documentation/function-modules-and-bapis/index.md/#look-up-a-function-module-bapi) the standard BAPI BAPI_CUSTOMER_CREATEFROMDATA1 that creates customers in SAP. 
 4. Set all import parameters you want to transfer from Salesforce to SAP to *Supplied by Caller* e.g., NAME, CITY, POSTL_COD1, STREET, etc.
 5. Select CUSTOMERNO for export. This Export parameter contains the newly created SAP customer number that is written back to Salesforce.<br>
 ![yunio-Services-Function-Download](../assets/images/yunio/articles/yunio-bapi-createcustomer.png){:class="img-responsive"}

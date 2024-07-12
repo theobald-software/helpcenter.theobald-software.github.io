@@ -3,7 +3,7 @@ title: Requirements
 description: System Requirements
 ---
 
-This section contains information about system requirements and compatible SAP system for ERPConnect.
+This section contains information about system requirements and compatible SAP systems for ERPConnect.
 
 ### .NET Framework
 

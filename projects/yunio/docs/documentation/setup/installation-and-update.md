@@ -37,7 +37,7 @@ To deactivate this option, delete the registry entry.
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NET]//"AllowAUOnServerOS"=dword:00000001
 ```
 
-### Program Directory Files
+### Installation Directory Files
 The list below shows several important files that are placed into the default directory `C:\Program Files\Theobald Software\yunIO` after installation:
 
 |Filename | Description |

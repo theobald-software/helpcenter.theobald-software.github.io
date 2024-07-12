@@ -1,0 +1,8 @@
+nav:
+    - index.md
+    - provider-context.md
+    - selections.md
+    - update-mode.md
+    - subscriptions.md
+    - settings.md
+    - edit-runtime-parameters.md

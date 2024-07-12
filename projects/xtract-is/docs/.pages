@@ -1,0 +1,9 @@
+nav:
+    - Home: index.md
+    - Getting Started: getting-started.md
+    - Documentation: documentation
+    - Knowledge Base: knowledge-base
+    - For Azure: xtract-is-for-azure
+    - Changelog: changelog.md
+    - Troubleshooting: troubleshooting.md
+    - Support: https://support.theobald-software.com/helpdesk

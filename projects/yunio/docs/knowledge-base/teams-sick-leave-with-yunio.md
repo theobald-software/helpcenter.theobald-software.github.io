@@ -30,7 +30,7 @@ Follow the steps below to set up a yunIO service that creates sick leaves in SAP
 2. [Create a service](../getting-started.md/#create-a-service) in yunIO. The depicted example uses the integration type *Transaction* for the service.
 3. Record the SAP transaction PA30 to create a new sick leave in SAP, e.g., for an annual sick leave (*Infotype* 2001 and *STy* 0100). <br>
 ![yunio-pa30](../assets/images/yunio/articles/yunio-pa30.gif){:class="img-responsive" style="border:1px solid black;"}
-4. Set parameters for the following input options. For more information on how to parameterize transactions, see [Documentation: Parameterize Transactions](../documentation/transactions/transactions.md/#parameterize-transactions).
+4. Set parameters for the following input options. For more information on how to parameterize transactions, see [Documentation: Parameterize Transactions](../documentation/transactions/index.md/#parameterize-transactions).
 	- Employee number
 	- Start date of the sick leave
 	- End date of the sick leave

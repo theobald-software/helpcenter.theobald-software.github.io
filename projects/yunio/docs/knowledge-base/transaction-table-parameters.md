@@ -153,4 +153,4 @@ The depicted example adds a new item at the 4th row of the table:
 
 #### Related Links
 - [Documentation: Transactions](../documentation/transactions/index.md)
-- [Documentation: Parameterize Transactions](../documentation/transactions/transactions.md/#parameterize-transactions)
+- [Documentation: Parameterize Transactions](../documentation/transactions/index.md/#parameterize-transactions)

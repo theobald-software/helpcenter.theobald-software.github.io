@@ -25,6 +25,8 @@ theme:
     admonition:
       tip: material/lightbulb
       note: fontawesome/solid/circle-info
+      api: material/web
+      expression: material/script-text
   features:
      - announce.dismiss # adds a dismissal option to announcements 
     # - content.action.edit # adds an edit button to the pages
@@ -37,10 +39,10 @@ theme:
     # - navigation.expand #displays all pages in the navigation (not good for API Reference)
     # - navigation.footer
      - navigation.indexes #adds landing pages for groups
-     - navigation.instant # load faster (no page reload for internal links)
+    # - navigation.instant # load faster (no page reload for internal links)
      - navigation.instant.prefetch # load faster (start loading content when hovering)
      - navigation.instant.progress # enables a progress indicator 
-     - navigation.instant.preview
+    # - navigation.instant.preview
      - navigation.path #adds breadcrumbs
     # - navigation.prune # only the visible navigation items are included in the rendered HTML, reducing the size of the built site by 33% or more
     # - navigation.sections # top level pages are rendered as groups in the navigation
@@ -77,6 +79,8 @@ extra_css:
   - assets/stylesheets/extra.css
   - assets/stylesheets/neoteroi-cards.css 
   - assets/stylesheets/hyperscript.css
+  - assets/stylesheets/github-permalink-style.css
+  
 extra_javascript:
   - assets/javascripts/hyperscript.min.js
   - assets/javascripts/changelog.js
@@ -85,13 +89,14 @@ extra_javascript:
 plugins:
   #- redirects: #redirect URLs when renaming/moving .md files
   #    redirect_maps:
-  #      'old.md': 'new.md'
+  #      'documentation/execute-and-automate/call-via-webservice.md': 'web-api.md'
   #      'old/file.md': 'new/file.md'
   #      'some_file.md': 'http://external.url.com/foobar'
   - privacy:
       links_attr_map:
         target: _blank # opens all external links in new tabs
   - meta # define front matter of multiple ,md files in .meta.yml file 
+  - tags # enables tags in front matter
   - search:
       separator: '[\s\-,:!=\[\]()"/]+'
   - typeset # preserve format of titles and headlines in navigation and toc
@@ -121,12 +126,19 @@ hooks:
   
 # Extensions for Markdown Syntax  
 markdown_extensions:
+  - material.extensions.preview:
+      sources:
+        exclude:
+          - index.md
+          - changelog.md
   - toc:
       separator: "-"
+      permalink: ''
       title: On this Page
   - pymdownx.snippets:
       base_path: includes
   - pymdownx.superfences #for content tabs (version history)
+  - pymdownx.keys
   - pymdownx.tabbed:
       alternate_style: true
   - tables
@@ -206,5 +218,37 @@ extra:
       link: https://theobald-software.com/en/newsletter/
       name: Newsletter
   productName: Xtract Universal
-  #variable: runtime parameter
-  #variables: runtime parameters
+  Abbr: XU
+  abbr: xu
+  component: extraction type
+  Component: Extraction Type
+  Components: Extraction Types
+  components: extractions types
+  installationDir: C:\Program Files\XtractUniversal
+  setup: XtractUniversal
+  bapi: BAPI
+  table: Table
+  tableCDC: Table CDC
+  bapi: BAPI
+  bwcube: BWCube
+  bwloader:  
+  hierarchy: BW Hierarchy
+  deltaq: DeltaQ
+  odp: ODP
+  ohs: OHS
+  query: Query
+  report: Report
+  variable: runtime parameter
+  variables: runtime parameters
+  Variables: Runtime parameters
+  extraction: extraction
+  extractions: extractions
+  Settings: Extraction Settings
+  settings: extraction settings
+  settingsBtn: __Extraction Settings__
+  parameterBtn: __Edit runtime parameters__
+  previewBtn: __[Load live preview]__
+  port: 8064
+  run_extractions: execute-and-automate/run-an-extraction.md
+  runBtn: __[Run]__
+  service: XtractService

@@ -24,7 +24,7 @@ For more information on yunIO, see [Theobald Software: yunIO](https://theobald-s
 1. [Create an SAP connection](../getting-started.md/#connect-to-sap) in yunIO. 
 2. [Create a service](../getting-started.md/#create-a-service) in yunIO. 
 The depicted example uses the integration type *SAP Table or View* for the service.
-3. [Look up](../documentation/tables-and-views/create-a-table-service.md/#look-up-an-sap-table-or-view) the table MAKT that contains material descriptions. 
+3. [Look up](../documentation/tables-and-views/index.md/#look-up-an-sap-table-or-view) the table MAKT that contains material descriptions. 
 4. Select the columns MATNR, SPRAS and MAKTX for the output of the service.<br>
 ![nintex-office-design](../assets/images/yunio/articles/nintex-office-yunIO.png){:class="img-responsive" }
 5. Click :yunio-run: to testrun the service in yunIO :number-1:. For more information, see [Documentation: Run Services in yunIO](../documentation/run-services.md/#run-services-in-yunio).

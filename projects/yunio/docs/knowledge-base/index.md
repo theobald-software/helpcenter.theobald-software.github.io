@@ -5,19 +5,14 @@ hide:
   - path
 ---
 
-<div class="grid cards" markdown>
-
--   ![img](site:assets/images/logos/theo-thumbs.png){ .lg .middle width="30px"} This section contains use cases and integration scenarios for yunIO.
-
-</div>
+![img](site:assets/images/logos/theo-thumbs.png){ .lg .middle width="30px"} This section contains use cases and integration scenarios for yunIO.
 
 
-### :simple-sap: SAP
+### :simple-sap: SAP Connection
 
 <div class="mdx-columns" markdown>
 
-- [Authorize Access to Reports via Authorization Groups](authorize-access-to-specific-reports.md)
-- [Create the Custom Authorization Object Z_TS_PROG](create-the-custom-authority-object-z-ts-prog.md)
+- [Check the Accessibility to an SAP System](check-the-accessibility-to-an-sap-system.md)
 - [Import an SAP Transport Request](import-an-sap-transport-request.md)
 - [Supported SAP S/4HANA Versions](supported-sap-and-hana-versions.md)
 

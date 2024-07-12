@@ -11,7 +11,7 @@ The following section shows the development process for an ASP.NET/ERPConnect pr
 - Add the librfc32.dll to your bin directory, see [Requirements - 32/64-Bit Environment](../introduction/requirements.md#3264-bit-environment). 
 
 !!! warning  
-	**The standard demo license does not support working in web environments.**<br>
+	**The standard trial license does not support working in web environments.**<br>
     To test ERPConnect with your ASP.NET project, apply for a test license number at [sales@theobald-software.com](mailto:sales@theobald-software.com).
 
 ### ASP.NET

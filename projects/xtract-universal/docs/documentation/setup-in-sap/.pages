@@ -1,0 +1,8 @@
+nav:
+    - index.md
+    - sap-authority-objects.md
+    - custom-function-module-for-table-extraction.md
+    - custom-function-module-for-tablecdc.md
+    - custom-function-module-for-reports.md
+    - customization-for-deltaq.md
+    - customization-for-ohs-in-bw.md

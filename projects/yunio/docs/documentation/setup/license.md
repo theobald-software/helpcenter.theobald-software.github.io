@@ -9,8 +9,11 @@ yunIO is licensed per Windows server, where the solution is installed.
 A trial license valid for 30 days is automatically provided with the installation of yunIO.
 
 
-A regular license is provided in the [Theobald Software Costumer Portal](https://my.theobald-software.com/) after purchasing the product. The product license is bound to your company, and the server on which the yunIO server runs.<br>
+A regular license is provided in the [Theobald Software Customer Portal](https://my.theobald-software.com/) after purchasing the product. The product license is bound to your company, and the server on which the yunIO server runs.<br>
  
+### Maintenance
+Contact the [sales department](mailto:sales@theobald-software.com) for information about available maintenance options.<br>
+In case of technical difficulties, contact our [support](https://support.theobald-software.com/helpdesk).
 
 ### Install the yunIO License
 

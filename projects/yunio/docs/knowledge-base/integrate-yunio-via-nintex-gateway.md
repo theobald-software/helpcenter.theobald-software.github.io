@@ -110,7 +110,7 @@ The Nintex Gateway is an on-premises application that enables Nintex Automation 
 
 After an Xtension and a Connection is created, the yunIO service can be used in a workflow. 
 
-1. Drag&Drop the yunIO Xtension from [Configure a yunIO Xtension in Nintex](#configure-a-yunio-xtension-in-nintex) into the workflow :number-7:.
+1. Drag and drop the yunIO Xtension from [Configure a yunIO Xtension in Nintex](#configure-a-yunio-xtension-in-nintex) into the workflow :number-7:.
 2. Select the connection from [Configure a yunIO Connection in Nintex](#configure-a-yunio-connection-in-nintex) :number-8:.<br>
 ![nintex-gateway-workflow](../assets/images/yunio/articles/nintex-gateway-workflow.png){:class="img-responsive"}
 3. Parameterize the input fields :number-9:. 

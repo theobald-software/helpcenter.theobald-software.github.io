@@ -1,4 +1,3 @@
-### About the User Documentation of Theobald Software
 
 The user documentation of Theobald Software is designed to introduce readers to the main functions of {{ productName }}.
 

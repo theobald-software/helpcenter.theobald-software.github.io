@@ -1,0 +1,22 @@
+nav:
+    - Introduction: introduction.md
+    - Setup: setup
+    - SAP Customization: setup-in-sap
+    - designer.md
+    - SAP Connection: sap-connection
+    - BAPI: bapi
+    - BW Cube: bwcube
+    - BW Hierarchy: hierarchy
+    - DeltaQ: deltaq
+    - ODP: odp
+    - Open Hub Services: ohs
+    - Query: query
+    - Report: report
+    - Table: table
+    - Table CDC: table-cdc
+    - run-extractions.md
+    - Runtime Parameters: parameters
+    - Access Restrictions: access-restrictions
+    - server
+    - logs.md
+    - About this Documentation: about-this-documentation.md

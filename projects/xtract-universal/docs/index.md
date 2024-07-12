@@ -15,9 +15,6 @@ hide:
 
 ### Latest News
 
-Coming soon...
-
-<!---
 
 <div class="grid cards" markdown>
 
@@ -27,7 +24,6 @@ Coming soon...
 
 [:octicons-arrow-right-24: Show more](news.md)
 
--->
 
 ![threshold](assets/images/xu/DataStream_XU.png)
 

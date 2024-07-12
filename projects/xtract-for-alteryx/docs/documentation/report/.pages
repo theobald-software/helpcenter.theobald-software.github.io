@@ -1,0 +1,6 @@
+nav:
+    - index.md
+    - variants-and-selections.md
+    - report-columns-define.md
+    - settings.md
+    - edit-runtime-parameters.md

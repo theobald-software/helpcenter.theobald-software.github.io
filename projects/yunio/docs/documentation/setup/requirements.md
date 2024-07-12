@@ -3,11 +3,11 @@ title: Requirements
 description: System requirements for installing and using yunIO
 ---
 
-This section contains information about system requirements and compatible SAP system for {{ productName }}.
+This page contains information about system requirements and compatible SAP systems for {{ productName }}.
 
 {% include "requirements/sap-releases.md" %}
 
-{% include "requirements/sap-misc.md" %}
+{% include "requirements/sap-tcpip-ports.md" %}
 {% include "requirements/operating-systems.md" %}
 
 ### Supported Web Browsers

@@ -94,12 +94,14 @@ Check the [Google Developer’s Guide](https://developers.google.com/style/word-
 |On-premises <br> <del>on prem </del><br> <del>on premise </del>||
 |Populate vs. fill in/out|A process can populate a table or other entity. <br> A person can only fill in a table, form etc. <br> The SQL command populates the table with sample data. <br> <del>When you have finished populating the form ... </del><br> When you have finished filling in the form ...|
 |real time (noun), <br> real-time (adjective)||
+|SAP customization  <del> SAP customizing </del> ||
 |Screenshot <br> <del> screen shot </del>||
 | <del>Simple, simply </del>| see easy|
 | <del>terminate </del>|avoid, only when process is terminated.|
 | </del>traditional </del>|avoid|
 |Username <br> <del>User name </del>||
 |Window <br> <del>dialog </del>|see dialog|
+
 
 ### Simplicity – easy-to-read content
 When writing information for users it is important to produce easy-to-read texts. The concept of "easy-to-read" is not universal and it will not be possible to write a text that will suit every reader. Easy-to-read content is generally characterized by:

@@ -27,7 +27,7 @@ The depicted example uses the integration type *Transaction* for the service.
 2. Record SAP transactions to create a new employee in SAP, see [Transaction PA40 - Personnel Actions](transaction-pa40.md). Example:<br>
 ![PA40](../assets/images/yunio/articles/pa40.gif){:class="img-responsive"  style="border:1px solid black;"}
 3. Parameterize all mandatory SAP fields in the yunIO service. 
-For information on how to parameterize services, see [Documentation: Parameterize Transactions](../documentation/transactions/transactions.md/#parameterize-transactions).
+For information on how to parameterize services, see [Documentation: Parameterize Transactions](../documentation/transactions/index.md/#parameterize-transactions).
 The depicted example uses the following input parameters:
 	- *EntryDate*
 	- *FirstName*

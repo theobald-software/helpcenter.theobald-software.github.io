@@ -1,0 +1,13 @@
+nav:
+    - Introduction: introduction.md
+    - Setup: setup
+    - SAP Customization: setup-in-sap
+    - SAP Connection: sap-connection
+    - Xtract BAPI: bapi
+    - Xtract Cube: bwcube
+    - Xtract Hierarchy: hierarchy
+    - Xtract ODP: odp
+    - Xtarct Query: query
+    - Xtract Report: report
+    - Xtract Table: table
+    - About this Documentation: about-this-documentation.md

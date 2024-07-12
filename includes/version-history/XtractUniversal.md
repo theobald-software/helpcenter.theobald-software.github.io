@@ -888,7 +888,7 @@
 |2.60.5 [L]|2015-07-09|Destinations|Added support for Exasol ADO.NET Driver 5.0|
 |2.60.4 [L]|2015-07-08|Destinations|Fixed wrong decimal precision error in Exasol destination|
 |2.60.3 [L]|2015-07-01|Destinations|Fixed wrong field length for table fields containing data with SAP type RAW|
-|2.60.0 [M]|2015-06-30|General|Purchased license is preferred to demo license now|
+|2.60.0 [M]|2015-06-30|General|Regular license is preferred to trial license now|
 |2.59.0 [L]|2015-06-30|Server|Removed HttpLocalOnly server setting (please use server security settings instead)|
 |2.57.1 [L]|2015-06-09|Designer|Improved error message for trying to run an extraction which has no destination|
 |2.57.0 [M]|2015-06-01|Designer|Moved extraction-specific settings to destination form|

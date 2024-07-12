@@ -44,7 +44,7 @@ The service has the following settings:<br>
 ### Use the yunIO Xtension in a Nintex Workflow
 After an Xtension is created, it can be used in a workflow. 
 
-- Drag&Drop the yunIO Xtension from [Configure a yunIO Xtension in Nintex](#configure-a-yunio-xtension-in-nintex) into the workflow :number-6:.
+- Drag and drop the yunIO Xtension from [Configure a yunIO Xtension in Nintex](#configure-a-yunio-xtension-in-nintex) into the workflow :number-6:.
 - Parameterize the input fields :number-6:. <br>
 ![nintex-xtensions3](../assets/images/yunio/articles/nintex-xtension3.png){:class="img-responsive"}
 
