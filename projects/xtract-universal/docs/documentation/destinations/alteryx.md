@@ -38,10 +38,10 @@ To use the {{ page.meta.title }} destination, the Xtract Universal Alteryx plugi
 When encountering issues during or after the installation of the plugin (e.g., the plugin is not showing in Alteryx), send the setup.log file located in `{{ installationDir }}\alteryx\setup.log` to the [Theobald Support](https://support.theobald-software.com).
 
 
-{% include "destinations/assign-destination.md" %}
+{% include "destinations/create-destination.md" %}
 To use the {{ page.meta.title }} destination, no further settings are necessary.
 
-![Destination-settings](../../assets/images/xu/documentation/destinations/alteryx/destination-settings.png){:class="img-responsive"}
+![Destination-Details](../../assets/images/xu/documentation/destinations/alteryx/destination-details.png){:class="img-responsive"}
 
 {% include "destinations/assign-destination.md" %}
 

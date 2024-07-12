@@ -1,7 +1,7 @@
 
 ### Installation
 
-![Designer-Login](assets/images/{{ abbr }}/getting-started/Designer-login.png){:class="img-responsive" align=right }
+![Designer-Login](assets/images/{{ abbr }}/getting-started/Designer-login.png){:class="img-responsive" align=right width="32%"}
 
 1. [Download](https://theobald-software.com/en/download-trial/) a 30 days trial version of {{ productName }}.
 2. Run the {{ productName }} executable ({{ setup }}Setup.exe) to install the [{{ productName }} Designer and the {{ productName }} Server](documentation/introduction.md/#software-architecture).
