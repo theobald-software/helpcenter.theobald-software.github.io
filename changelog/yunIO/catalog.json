@@ -1,5 +1,27 @@
 [
   {
+    "Version": "1.32.18.5",
+    "LegacyReleaseDate": "2024-07-12 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "TableCDC",
+        "Message": "Fixed a bug where delta loads would fail if there are records evaluating to null during optimization. Bug introduced in 2.2.0"
+      }
+    ]
+  },
+  {
+    "Version": "1.32.18.4",
+    "LegacyReleaseDate": "2024-07-11 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "DeltaQ",
+        "Message": "Fixed a bug which would not consider selections from unselected columns"
+      }
+    ]
+  },
+  {
     "Version": "1.32.18.0",
     "LegacyReleaseDate": "2024-07-08 18:43:57Z",
     "Changes": [
