@@ -129,7 +129,7 @@
         "Product": "ERPConnect",
         "Component": "RFC Client",
         "Message": "Various breaking changes to R3Connection API",
-        "ReleaseNote": "# Changes to R3Connection\nThe following properties/methods have been removed.\n\n* `MultithreadingEnvironment` The feature is always active and cannot be disabled.\n* `AllowStartProgram(string programList)`. Please contact support if you really need this feature.\n\n\nThe following properties/constructors/methods have been marked as obsolete and will be removed 2023-10-01.\n\n* `ConnectionString` --> Please use `ParseConnectionString()` instead.\n* `R3Connection(string connectionString)` --> Please use `ParseConnectionString()` instead.\n* `Open(string rfcConnectionString)`--> Please use `ParseConnectionString()` instead.\n* `OpenSSO(string ticket, bool loadBalancing)` --> Please set `LogonTicket` and `UsesLoadBalancing` instead.\n* `OpenSSO(string ticket)` --> Please set `LogonTicket` instead.\n* `Open(bool useLoadBalancing)` --> Please set `UsesLoadBalancing` instead.\n* `GetSSOTicket(bool loadBalancing)` -->  Please set `UsesLoadBalancing` instead.\n* `SetAbapDebug(bool enabled)` --> Please use external breakpoints in ABAP debugger instead.\n\n\n`ClientProtocol.RFC` has been marked as obsolete. Please use `ClientProtocol.NWRFC` instead. The default value will be switched to NWRFC 2023-10-01."
+        "ReleaseNote": "# Changes to R3Connection\nThe following properties/methods have been removed.\n\n* `MultithreadingEnvironment` The feature is always active and cannot be disabled.\n* `AllowStartProgram(string programList)`. Please contact support if you really need this feature.\n\n\nThe following properties/constructors/methods have been marked as obsolete and will be removed 2023-10-01.\n\n* `ConnectionString` --&gt; Please use `ParseConnectionString()` instead.\n* `R3Connection(string connectionString)` --&gt; Please use `ParseConnectionString()` instead.\n* `Open(string rfcConnectionString)`--&gt; Please use `ParseConnectionString()` instead.\n* `OpenSSO(string ticket, bool loadBalancing)` --&gt; Please set `LogonTicket` and `UsesLoadBalancing` instead.\n* `OpenSSO(string ticket)` --&gt; Please set `LogonTicket` instead.\n* `Open(bool useLoadBalancing)` --&gt; Please set `UsesLoadBalancing` instead.\n* `GetSSOTicket(bool loadBalancing)` --&gt;  Please set `UsesLoadBalancing` instead.\n* `SetAbapDebug(bool enabled)` --&gt; Please use external breakpoints in ABAP debugger instead.\n\n\n`ClientProtocol.RFC` has been marked as obsolete. Please use `ClientProtocol.NWRFC` instead. The default value will be switched to NWRFC 2023-10-01."
       }
     ]
   },
@@ -562,17 +562,6 @@
         "Component": "General",
         "Message": "Various small API changes (see release notes for details)",
         "ReleaseNote": "* Fix for parameters with `decfloat` types\n* Added `RFCParameter.SetValueInternal()`\n* Marked `RFCParameter.GetLength()` as **obsolete**\n* Removed `RFCServerFunctionCollection.Find()` (obsolete)\n* Removed `RFCTableColumn.FixedLength` (obsolete) - this also affects LINQtoERP, please regenerate your code"
-      }
-    ]
-  },
-  {
-    "Version": "6.12.1.0",
-    "LegacyReleaseDate": "2020-07-22 21:50:54Z",
-    "Changes": [
-      {
-        "Product": "ERPConnect",
-        "Component": "General",
-        "Message": "--"
       }
     ]
   },
@@ -1069,8 +1058,8 @@
       {
         "Product": "ERPConnect",
         "Component": "General",
-        "Message": "Some collections are implementing generic IList<T> now instead of non-generic interfaces",
-        "ReleaseNote": "The base class / collection interface of following classes have changed:\n* `RFCParameterCollection`\n* `RFCServerFunctionCollection`\n* `RFCStructureCollection`\n* `RFCTableCollection`\n-* `RFCTableColumnCollection`\n\nThese classes don't inherit from `CollectionBase` any more and no longer implement non-generic collection interfaces like `IList`. They now implement the generic `IList<T>` interface.\nThis is a breaking change, but it shouldn't require any code adjustments in most cases."
+        "Message": "Some collections are implementing generic IList&lt;T&gt; now instead of non-generic interfaces",
+        "ReleaseNote": "The base class / collection interface of the following classes have changed:\n* `RFCParameterCollection`\n* `RFCServerFunctionCollection`\n* `RFCStructureCollection`\n* `RFCTableCollection`\n* `RFCTableColumnCollection`\n\nThese classes don't inherit from `CollectionBase` any more and no longer implement non-generic collection interfaces like `IList`. They now implement the generic `IList&lt;T&gt;` interface.\nThis is a breaking change, but it shouldn't require any code adjustments in most cases."
       }
     ]
   },
@@ -3386,7 +3375,7 @@
       {
         "Product": "ERPConnect",
         "Component": "Idoc",
-        "Message": "Bug fix for using < or > sign in IDoc segment description texts while saving the Schema to an XML file"
+        "Message": "Bug fix for using &lt; or &gt; sign in IDoc segment description texts while saving the Schema to an XML file"
       }
     ]
   },
@@ -4080,7 +4069,7 @@
       {
         "Product": "ERPConnect",
         "Component": "General",
-        "Message": "Property BWVariable.UID withdrawn -> was useless"
+        "Message": "Property BWVariable.UID withdrawn -&gt; was useless"
       }
     ]
   },
@@ -5356,7 +5345,7 @@
       {
         "Product": "ERPConnect",
         "Component": "General",
-        "Message": "Fix for RFCFunction.LoadFromXML() and characters with enconding value < 0x20"
+        "Message": "Fix for RFCFunction.LoadFromXML() and characters with enconding value &lt; 0x20"
       }
     ]
   },
@@ -7568,7 +7557,7 @@
       {
         "Product": "ERPConnect",
         "Component": "General",
-        "Message": "<ignore> Second Built for last Bugfixt"
+        "Message": "&lt;ignore&gt; Second Built for last Bugfixt"
       }
     ]
   },
@@ -7612,7 +7601,7 @@
       {
         "Product": "ERPConnect",
         "Component": "General",
-        "Message": "On some BI 7.0 systems the BWLoader class crashes because of unicode <-> non-unicode conversion errors in RequestID"
+        "Message": "On some BI 7.0 systems the BWLoader class crashes because of unicode &lt;-&gt; non-unicode conversion errors in RequestID"
       }
     ]
   },
@@ -8152,7 +8141,7 @@
       {
         "Product": "ERPConnect",
         "Component": "General",
-        "Message": "Very, very large tables (>70.000 rows) caused crash in 64 Bit environment"
+        "Message": "Very, very large tables (&gt;70.000 rows) caused crash in 64 Bit environment"
       }
     ]
   },
@@ -8350,7 +8339,7 @@
       {
         "Product": "ERPConnect",
         "Component": "General",
-        "Message": "Bei der ReadTable-Klasse wird bei SAP-Releases < 4.7 eine Exception geworfen bei RetrieveAllFieldsOfTable. Das liegt an dem DDIF_FIELDINFO_GET-Baustein und den Nested Structures"
+        "Message": "Bei der ReadTable-Klasse wird bei SAP-Releases &lt; 4.7 eine Exception geworfen bei RetrieveAllFieldsOfTable. Das liegt an dem DDIF_FIELDINFO_GET-Baustein und den Nested Structures"
       }
     ]
   },
@@ -8383,7 +8372,7 @@
       {
         "Product": "ERPConnect",
         "Component": "General",
-        "Message": "inconsistent idoc exception -> exception auskommentiert"
+        "Message": "inconsistent idoc exception -&gt; exception auskommentiert"
       }
     ]
   },
@@ -8449,7 +8438,7 @@
       {
         "Product": "ERPConnect",
         "Component": "General",
-        "Message": "FIX: Exception bei eingehenden IDocs mit Paketgröße > 1"
+        "Message": "FIX: Exception bei eingehenden IDocs mit Paketgröße &gt; 1"
       }
     ]
   },
@@ -8526,7 +8515,7 @@
       {
         "Product": "ERPConnect",
         "Component": "General",
-        "Message": "Wegen des Bausteins SAP_WAPI_CREATE_WORKLIST einiges umgestellt -> Tabellen / Zeiletyp innerhalb der Struktur"
+        "Message": "Wegen des Bausteins SAP_WAPI_CREATE_WORKLIST einiges umgestellt -&gt; Tabellen / Zeiletyp innerhalb der Struktur"
       }
     ]
   },
@@ -8691,7 +8680,7 @@
       {
         "Product": "ERPConnect",
         "Component": "General",
-        "Message": "Die Klasse Option wurde in RangeOption umbenannt -> Option ist in VB ein geschütztes Wort"
+        "Message": "Die Klasse Option wurde in RangeOption umbenannt -&gt; Option ist in VB ein geschütztes Wort"
       }
     ]
   },
@@ -8801,7 +8790,7 @@
       {
         "Product": "ERPConnect",
         "Component": "General",
-        "Message": "RFCServer.Start(true/false) -> definiert, ob der Server blockiert oder nicht"
+        "Message": "RFCServer.Start(true/false) -&gt; definiert, ob der Server blockiert oder nicht"
       }
     ]
   },
@@ -8845,7 +8834,7 @@
       {
         "Product": "ERPConnect",
         "Component": "General",
-        "Message": "Problem mit PTRV_RECEIPT_OUT-Struktur -> Offset + Länge"
+        "Message": "Problem mit PTRV_RECEIPT_OUT-Struktur -&gt; Offset + Länge"
       }
     ]
   },
