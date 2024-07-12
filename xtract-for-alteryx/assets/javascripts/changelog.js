@@ -15,6 +15,12 @@ document.addEventListener('DOMContentLoaded', () => {
 	// Function to close the modal
 	const closeModal = () => {
 		modal.style.display = 'none';
+		// Update the URL to remove modal parameters
+		const urlSearchParams = new URLSearchParams(window.location.search);
+		urlSearchParams.delete('product');
+		urlSearchParams.delete('version');
+		const newUrl = `${window.location.pathname}?${urlSearchParams.toString()}`;
+		window.history.pushState({}, '', newUrl);
 	};
 
 	// When the user clicks on <span> (x), close the modal
@@ -37,6 +43,12 @@ document.addEventListener('DOMContentLoaded', () => {
 			const parsedContent = parseMarkdown(releaseNote);
 			const headerContent = `<h1>${productName} - Version ${version}</h1>`;
 			openModal(headerContent, parsedContent);
+
+			const urlSearchParams = new URLSearchParams(window.location.search);
+			urlSearchParams.set('product', productName);
+			urlSearchParams.set('version', version);
+			const newUrl = `${window.location.pathname}?${urlSearchParams.toString()}`;
+			window.history.pushState({}, '', newUrl);
 		}
 	});
 
@@ -79,6 +91,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			rows.forEach(row => tableBody.appendChild(row));
 		});
 		addEventListeners();
+		openModalFromURLParams(data);
 	};
 
 	const isMarkdown = (content) => {
@@ -157,7 +170,6 @@ document.addEventListener('DOMContentLoaded', () => {
 					const version = versionCell.textContent;
 					const additionalData = await fetchAdditionalData(version);
 					if (additionalData) {
-						console.log("ReleaseNote", additionalData);
 
 						additionalData.forEach(dataObj => {
 							event.target.textContent = `${dataObj.Component}`;
@@ -217,6 +229,26 @@ document.addEventListener('DOMContentLoaded', () => {
 		});
 	};
 
+	const openModalFromURLParams = (data) => {
+		const urlSearchParams = new URLSearchParams(window.location.search);
+		const productName = urlSearchParams.get('product');
+		const version = urlSearchParams.get('version');
+
+		if (productName && version) {
+			data.forEach(item => {
+				if (item.Version === version) {
+					item.Changes.forEach(change => {
+						if (change.Product === productName && change.ReleaseNote) {
+							const releaseNote = decodeURIComponent(change.ReleaseNote);
+							const parsedContent = parseMarkdown(releaseNote);
+							const headerContent = `<h2>${productName} - Version ${version}</h2>`;
+							openModal(headerContent, parsedContent);
+						}
+					});
+				}
+			});
+		}
+	};
 
 	const compareVersions = (version1, version2) => {
 		const parts1 = version1.split('.').map(part => parseInt(part));
