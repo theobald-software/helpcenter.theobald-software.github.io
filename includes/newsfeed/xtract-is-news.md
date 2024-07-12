@@ -1,6 +1,16 @@
 <div class="grid cards" markdown>
 
 
+-   **:material-video-box: Webinar: The TS Partner Ecosystem**
+
+    ---
+
+    [Join our webinar](https://theobald-software.com/en/webinars/partner-ecosystem/) on 08/08/2024 - 11:00AM PDT to learn why and how Theobald Software works with technology partners to deliver better decision making and drive value to SAP customers.
+
+    ---
+
+    :material-clock-time-two-outline: 2024-08-08
+
 -   **SAP Note 3255746: Unpermitted Usage of ODP**
 
     ---
