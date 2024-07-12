@@ -26,5 +26,5 @@ Activate this option only if necessary.
 ![sap-source-access-control](../../assets/images/documentation/sap-connection/sap-source-access-control.png){:class="img-responsive"}
 
 Access control can be performed at the source level. This access control overrides the settings at the server level.
-For more information, see [Access Restrictions](../access-restrictions/restrict-designer-access.md/#restrict-access-to-the-designer).
+For more information, see [Access Management](../access-restrictions/restrict-designer-access.md/#restrict-access-to-the-designer).
 

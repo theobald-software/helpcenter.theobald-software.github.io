@@ -18,7 +18,7 @@ Follow the steps below to create custom users:
 3. Enter a username and a password for the user.
 4. Click **[OK]** to confirm your input.
 
-At the time of user creation, no rights need to be assigned. For information on how to assign access rights, see [Restrict Designer Access](restrict-designer-access.md).
+At the time of user creation, no rights need to be assigned. For information on how to assign access rights, see [Designer Access](restrict-designer-access.md).
 
 ### Assign Custom Users to User Groups
 

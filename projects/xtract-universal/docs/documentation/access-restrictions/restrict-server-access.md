@@ -1,5 +1,5 @@
 ---
-title: Restrict Server Access
+title: Server Access
 description: Server Security
 ---
 

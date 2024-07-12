@@ -14,7 +14,7 @@ Enter connection and user details to connect the Designer to a {{ productName }}
 	![local-login](../assets/images/{{ abbr }}/documentation/designer/local-login.png){:class="img-responsive"}
 	3. If the service is not running on default port {{ port }}, specify the port by adding :[port] after the host name.
 	The default port can be configured in the [server settings](server/server-settings.md).
-	4. Select an authentication method. Once logged in, you can activate or deactivate methods of authentication, see [Access Restrictions](access-restrictions/index.md/#authentication-between-designer-and-server). 
+	4. Select an authentication method. Once logged in, you can activate or deactivate methods of authentication, see [Access Management](access-restrictions/index.md/#authentication-between-designer-and-server). 
 	5. Click **[:designer-connect: Connect]** to connect the Designer to the Server. The main window of the Designer opens.
 
 === "Designer and Server run on different machines"
@@ -24,7 +24,7 @@ Enter connection and user details to connect the Designer to a {{ productName }}
 	![remote-login](../assets/images/{{ abbr }}/documentation/designer/remote-login.png){:class="img-responsive"}
 	3. If the service does not run on default port {{ port }}, specify the port by adding :[port] after the host name.
 	The default port can be configured in the [server settings](server/server-settings.md).
-	4. Select an authentication method. Once logged in, you can activate or deactivate methods of authentication, see [Access Restrictions](access-restrictions/index.md/#authentication-between-designer-and-server). 
+	4. Select an authentication method. Once logged in, you can activate or deactivate methods of authentication, see [Access Management](access-restrictions/index.md/#authentication-between-designer-and-server). 
 	5. Click **[:designer-connect: Connect]** to connect the Designer to the Server. The main window of the Designer opens.
 	
 {{ productName }} offers different methods of authenticating and securing the connection between the {{ productName }} Designer and the {{ productName }} Server. 

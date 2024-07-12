@@ -87,7 +87,7 @@ The folder contains two executable files:
 - `xu.exe` is the command line tool used for executing extractions, see [Call via Commandline](../execute-and-automate/call-via-commandline.md)
 
 Use the `XtractDesigner.exe` file to start the Designer. 
-Before you connect to a central Xtract Universal Server, make sure you have access rights to the server and repository, see [Access Restriction](../access-restrictions/index.md).
+Before you connect to a central Xtract Universal Server, make sure you have access rights to the server and repository, see [Access Management](../access-restrictions/index.md).
 
 !!! note 
 	When updating the software, you have to manually download the latest version of the standalone Designer from [My Theobald Software - Portal for Customers and Partners](https://my.theobald-software.com/) and replace the old files.
@@ -100,4 +100,4 @@ Before you connect to a central Xtract Universal Server, make sure you have acce
 #### Related Links
 - [Start the Designer](../designer.md)
 - [Server Settings](../server/server-settings.md)
-- [Access Restriction](../access-restrictions/index.md)
+- [Access Management](../access-restrictions/index.md)

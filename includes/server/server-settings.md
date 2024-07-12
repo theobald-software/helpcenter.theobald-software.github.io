@@ -33,7 +33,7 @@ For more information, see [Install an X.509 certificate](../access-restrictions/
 
 #### Access Management
 Defines which users and user groups have access to the Designer.
-For more information, see [Access Restriction](../access-restrictions/index.md).
+For more information, see [Access Management](../access-restrictions/index.md).
 
 
 ### Web Server

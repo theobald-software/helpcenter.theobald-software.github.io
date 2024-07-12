@@ -1,5 +1,5 @@
 ---
-title: Restrict Designer Access
+title: Designer Access
 description: Access Management
 ---
 

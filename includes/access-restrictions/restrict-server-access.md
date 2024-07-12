@@ -43,7 +43,7 @@ The caller must have at least *Read access* to the Designer.
 ![security-manage-users](../../assets/images/documentation/access-restriction/server-settings_manage.png){:class="img-responsive"}
 4. In the tab *Web Server*, select **HTTPS - Restricted to AD users with Designer read access**.
 5. In the tab *Configuration Server*, add the custom users or groups that are allowed to execute extractions. 
-For more information, see [Restrict Designer Access](restrict-designer-access.md/#restrict-access-to-the-designer). <br>
+For more information, see [Designer Access](restrict-designer-access.md/#restrict-access-to-the-designer). <br>
 ![ConfigurationServerSettings_](../../assets/images/documentation/access-restriction/server-settings-sso-certificate-users.png){:class="img-responsive"}
 6. Assign at least *Read* permission to the Windows AD users.
 7. Close all windows with **[OK]**. If prompted, restart the server.
@@ -62,7 +62,7 @@ The custom user must have at least *Read access* to the Designer.
 ![security-manage-users](../../assets/images/documentation/access-restriction/server-settings_manage.png){:class="img-responsive"}
 3. In the tab *Web Server*, select **HTTPS - Restricted to custom users with Designer read access**.
 4. In the tab *Configuration Server*, add the custom users or groups that are allowed to execute an extraction.
-For more information, see [Restrict Designer Access](restrict-designer-access.md/#restrict-access-to-the-designer). <br>
+For more information, see [Designer Access](restrict-designer-access.md/#restrict-access-to-the-designer). <br>
 ![ConfigurationServerSettings_](../../assets/images/documentation/access-restriction/server-settings-sso-certificate-users.png){:class="img-responsive"}
 4. Assign at least *Read* permission to the custom users.
 5. Close all windows with **[OK]**. If prompted, restart the server.

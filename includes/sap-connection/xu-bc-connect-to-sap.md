@@ -31,7 +31,7 @@ Follow the steps below to create a source that connects to SAP:
 	- [*Secure Network communication (SNC)*](snc-authentication.md) uses an encrypted connection between {{ productName }} and SAP with an SAP username and password.
 	- [*SAP Logon Ticket*](sso-with-logon-ticket.md) uses SAP Logon-Tickets in place of user credentials. This connection is not encrypted.
 6. In the *RFC Options* tab, select an [RFC library](settings.md#rfc-libraries) for the SAP connection. The default is the NetWeaver RFC library.
-7. Optional: In the *Access Control* tab, you can restrict read and write access to the SAP source, see [Access Restriction](../access-restrictions/restrict-designer-access.md/#restrict-access-to-the-designer).
+7. Optional: In the *Access Control* tab, you can restrict read and write access to the SAP source, see [Access Management](../access-restrictions/restrict-designer-access.md/#restrict-access-to-the-designer).
 8. Click **[Test designer connection]** to validate the connection between the {{ productName }} Designer and the SAP system. 
 9. Click **[Test server connection]** to validate the connection between the {{ productName }} Server and the SAP system. 
 10. Click **[OK]** to save the SAP source.
