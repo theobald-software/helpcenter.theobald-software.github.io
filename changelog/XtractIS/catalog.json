@@ -1,5 +1,32 @@
 [
   {
+    "Version": "7.7.5.1",
+    "LegacyReleaseDate": "2024-07-12 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "TableCDC",
+        "Message": "Fixed a bug where delta loads would fail if there are records evaluating to null during optimization. Bug introduced in 2.2.0"
+      }
+    ]
+  },
+  {
+    "Version": "7.7.5.0",
+    "LegacyReleaseDate": "2024-07-11 11:14:53Z",
+    "Changes": [
+      {
+        "Product": "XtractIS",
+        "Component": "DeltaQ",
+        "Message": "Fixed legacy selections with variables. Fixed the serialization of a property that could get duplicated in the package file."
+      },
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "DeltaQ",
+        "Message": "Fixed a bug which would not consider selections from unselected columns"
+      }
+    ]
+  },
+  {
     "Version": "7.7.4.10",
     "LegacyReleaseDate": "2024-07-05 00:00:00Z",
     "Changes": [
