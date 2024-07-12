@@ -26,7 +26,8 @@ The application now returns to the main window of the component.
 
 !!! warning
 	**Invalid action**<br>
-	A BW Query must have the attribute *Allow External Access to this Query* switched on in the BEx Query Designer or the BW Modeling Tool to appear in the list.
+	A BW Query does not apprear in the list. <br>
+	Switch on the attribute *Allow External Access to this Query* in the BEx Query Designer or the BW Modeling Tool.
 	For additional details see the [Troubleshooting Article: Allow external access to BW Queries](https://support.theobald-software.com/helpdesk/KB/View/13800-allow-external-access-to-bw-queries). 
 
 
