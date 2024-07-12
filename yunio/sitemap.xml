@@ -91,22 +91,12 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://helpcenter.theobald-software.com/yunio/documentation/function-modules-and-bapis/create-a-bapi-service/</loc>
-         <lastmod>2024-07-12</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://helpcenter.theobald-software.com/yunio/documentation/function-modules-and-bapis/settings/</loc>
          <lastmod>2024-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://helpcenter.theobald-software.com/yunio/documentation/reports/</loc>
-         <lastmod>2024-07-12</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://helpcenter.theobald-software.com/yunio/documentation/reports/create-a-report-service/</loc>
          <lastmod>2024-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -122,6 +112,11 @@
     </url>
     <url>
          <loc>https://helpcenter.theobald-software.com/yunio/documentation/sap-connection/settings/</loc>
+         <lastmod>2024-07-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://helpcenter.theobald-software.com/yunio/documentation/sap-connection/snc-authentication/</loc>
          <lastmod>2024-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -181,11 +176,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://helpcenter.theobald-software.com/yunio/documentation/tables-and-views/create-a-table-service/</loc>
-         <lastmod>2024-07-12</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://helpcenter.theobald-software.com/yunio/documentation/tables-and-views/settings/</loc>
          <lastmod>2024-07-12</lastmod>
          <changefreq>daily</changefreq>
@@ -211,11 +201,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://helpcenter.theobald-software.com/yunio/documentation/transactions/transactions/</loc>
-         <lastmod>2024-07-12</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://helpcenter.theobald-software.com/yunio/knowledge-base/</loc>
          <lastmod>2024-07-12</lastmod>
          <changefreq>daily</changefreq>
@@ -227,6 +212,11 @@
     </url>
     <url>
          <loc>https://helpcenter.theobald-software.com/yunio/knowledge-base/certificate-renewal/</loc>
+         <lastmod>2024-07-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://helpcenter.theobald-software.com/yunio/knowledge-base/check-the-accessibility-to-an-sap-system/</loc>
          <lastmod>2024-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
