@@ -15,7 +15,7 @@ For more information on Amazon S3, see [AWS Documentation: Getting Started with 
 ## Requirements
 
 - An Amazon Web Services (AWS) Account.
-- [Access Keys](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html) (consisting of "access key ID" and "secret access key") of your AWS user or an IAM role attached to the EC2 instance that runs Xtract Universal, see [Amazon Documentation: Using an IAM role to grant permissions to applications running on Amazon EC2 instances](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2.html).
+- [Access Keys](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html) (consisting of "access key ID" and "secret access key") of your AWS user or an IAM role attached to the EC2 instance that runs Xtract Universal, see [AWS Documentation: Using an IAM role to grant permissions to applications running on Amazon EC2 instances](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2.html).
 For more information on the IAM role, see [AWS Documentation: Security best practices in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html).
 - An S3 bucket, in which you can upload data.
 - Sufficient permissions for list, read and write activities on S3. You must grant these rights in the user policy, but you can limit them to certain buckets. 
@@ -158,6 +158,8 @@ Subfolders are supported and can be defined using the following syntax: <br>
 {% include "destinations/compression.md" %}
 
 {% include "destinations/file-splitting.md" %}
+
+****
 
 ## Related Links
 - [Knowledge Base Article: Run Xtract Universal in a VM on AWS EC2](../../knowledge-base/run-xu-in-aws.md)

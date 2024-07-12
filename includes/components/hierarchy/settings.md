@@ -12,7 +12,7 @@
 ![Hierarchies-Parent-Child](../../assets/images/documentation/components/hierarchy/Hierarchy-Table-Output-Result.png){:class="img-responsive"}
 - *Natural*: The SAP parent-child Hierarchy is transformed into a regular hierarchy, see [Output Formats: Natural](../hierarchy/output-format.md/#natural-format). Example:<br>
 ![Hierarchy-Parent-Child-Natural](../../assets/images/documentation/components/hierarchy/Hierarchy-Parent-Child-Natural.png){:class="img-responsive"}
-- *ParentChildWithNodeNames*: The Hierarchy is represented in a reduced SAP parent-child format that only includes single nodes and their parent, see [Output Formats: ParentChildWithNodeNames](site:documentation/hierarchy/output-format/#parentchildwithnodenames-format). Example:<br>
+- *ParentChildWithNodeNames*: The Hierarchy is represented in a reduced SAP parent-child format that only includes single nodes and their parent, see [Output Formats: ParentChildWithNodeNames](../hierarchy/output-format.md/#parentchildwithnodenames-format). Example:<br>
 ![Hierarchy-Parent-Child-With-Node-Names](../../assets/images/documentation/components/hierarchy/Hierarchy-ParentChildWithNodes.png){:class="img-responsive"}
 
 <!--- --8<-- [end:representation]-->

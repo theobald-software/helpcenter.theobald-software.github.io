@@ -213,7 +213,7 @@ Icon | Menu Item |Description | Details
 
 ![main-window-footer](../assets/images/{{ abbr }}/documentation/designer/main-window-footer.png){:class="img-responsive"}
 
-The status bar contains information about: 
+The status bar contains information about the following: 
 
 {% if page.meta.product == "xtract-universal" %}- Number of defined extractions in the selected folder, the overall number of extractions and the number of licensed extractions{% endif %}
 - Login username

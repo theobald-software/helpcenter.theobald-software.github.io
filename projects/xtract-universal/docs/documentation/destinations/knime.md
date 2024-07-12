@@ -46,6 +46,7 @@ The following software applications must be installed for integration into KNIME
 9. Check the extracted SAP data via **[SAP Query Result]**.<br>
 ![SAP Reader Results](../../assets/images/xu/documentation/destinations/knime/sap_query_results.png){:class="img-responsive"}
 
+****
 
 ## Related Links
 - [KNIME SAP Reader (Theobald Software)](https://hub.knime.com/knime/extensions/org.knime.features.sap.theobald/latest/org.knime.sap.theobald.node.v2.SAPTheobaldReader2NodeFactory)

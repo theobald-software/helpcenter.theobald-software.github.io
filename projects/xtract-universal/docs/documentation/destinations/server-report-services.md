@@ -188,6 +188,7 @@ Runtime parameters are accessible in the Query Builder. They can have one of the
 	!!! tip
 		You can also use a computed query parameter to create a value of NULL. Create a formula that returns *Nothing* as the value.
 
+****
 
 ## Related Links
 - [Microsoft Documentation: Report Design Tips](https://docs.microsoft.com/en-us/sql/reporting-services/report-design/report-design-tips-report-builder-and-ssrs?view=sql-server-ver15)
