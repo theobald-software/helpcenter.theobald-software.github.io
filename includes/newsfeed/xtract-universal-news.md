@@ -11,7 +11,7 @@
 
     :material-clock-time-two-outline: 2024-08-01
 
--   **Welcome to the Xtract Unviversal HelpCenter**
+-   **Welcome to the Xtract Universal HelpCenter**
 
     ---
 
