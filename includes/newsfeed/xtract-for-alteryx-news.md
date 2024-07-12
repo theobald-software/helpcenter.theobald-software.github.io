@@ -15,7 +15,7 @@
 
     ---
 
-    [Join our webinar](https://theobald-software.com/en/webinars/partner-ecosystem/) on 08/08/2024 - 11:00AM PDT to learn why and how Theobald Software works with technology partners to deliver better decision making and drive value to SAP customers.
+    [Join our webinar](https://theobald-software.com/en/webinars/partner-ecosystem/) on 08/08/2024 - 11:00AM PDT to learn why and how Theobald Software works with technology partners to deliver better decision making and drive value to SAP customers. 
 
     ---
 
