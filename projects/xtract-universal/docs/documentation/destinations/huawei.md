@@ -11,8 +11,8 @@ The {{ page.meta.title }} destination loads data to a Huawei Cloud Object Storag
 !!! warning
 	**File Fragments in the Cloud Storage**<br>
 	Huawei Cloud OBS destination uses multipart upload. That means that data is uploaded in fragments that are merged into a single file at the end of the extraction. 
-	When an extraction fails due to connection issues, the request to cancel the multipart upload can fail. 
-	In that case the uploaded fragments must be deleted manually, see [Huawei Cloud Support: Deleting Fragments Directly](https://support.huaweicloud.com/intl/en-us/obs_faq/obs_faq_0046.html#section1). 
+	When an extraction fails due to connection issues, the request to cancel the multipart upload can fail. <br>
+	Delete the fragments manually, see [Huawei Cloud Support: Deleting Fragments Directly](https://support.huaweicloud.com/intl/en-us/obs_faq/obs_faq_0046.html#section1). 
 
 
 {% include "destinations/create-destination.md" %}

@@ -250,6 +250,8 @@ The following YouTube tutorial shows how to set up Xtract Universal with the Azu
 	<iframe width="560" height="315" src="https://www.youtube.com/embed/Q9mF-vsFxnQ?si=ou7o3dVY-1_t11qa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
+****
+
 ## Related Links
 - [Knowledge Base Article: Authentication via Azure Active Directory for Azure Storage](../../knowledge-base/authentication-via-azure-ad-with-azure-storage.md)
 - [Integration via Azure Data Factory](../execute-and-automate/call-via-etl.md#integration-via-azure-data-factory)

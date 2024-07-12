@@ -112,6 +112,8 @@ Select the option *Custom SQL* from the drop-down list and click **[Edit SQL]**.
 Check the existence of the extended column *Extraction_Date*  in the SQL Server View of table *KNA1*.<br>
 ![Custom_SQL_SQL_Server_Ausgabe](../../assets/images/xu/documentation/destinations/ms-sql/sql_server_extraction_date.png){:class="img-responsive"}
 
+****
+
 ## Related Links
 
 - [Knowledge Base Article: Post-Processing Column Name Style](../../knowledge-base/adjust-column-name-style.md)

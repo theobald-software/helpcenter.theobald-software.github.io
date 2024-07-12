@@ -56,6 +56,8 @@ Check the database connection.
 
 {% include "destinations/custom-sql-statements.md" %}
 
+***
+
 ## Related Links
 - [Microsoft Documentation: Microsoft Azure Synapse Analytics](https://docs.microsoft.com/en-us/azure/synapse-analytics/)
 - [Integration via Azure Data Factory](../execute-and-automate/call-via-etl.md#integration-via-azure-data-factory)
