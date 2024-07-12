@@ -25,7 +25,7 @@
 
     ---
 
-    Triggers now add a timestamp in the format (yyyy-MM-dd HH24&colon;mm&colon;ss.FFF) to the extraction results of Table CDC. The timestamps are available in the column *TS_TIMESTAMP*.
+    Triggers now add a timestamp in the format (yyyy-MM-dd HH24&colon;mm&colon;ss.FFF) to the extraction results of [Table CDC](documentation/table-cdc/index.md). The timestamps are available in the column *TS_TIMESTAMP*.
 
     ---
 
