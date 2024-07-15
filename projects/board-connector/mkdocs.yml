@@ -99,7 +99,7 @@ plugins:
   - social:
       cards_layout: default
       cards_layout_options:
-        color: "#004990"
+        background_color: "#004990"
   - search:
       separator: '[\s\-,:!=\[\]()"/]+'
   - typeset # preserve format of titles and headlines in navigation and toc

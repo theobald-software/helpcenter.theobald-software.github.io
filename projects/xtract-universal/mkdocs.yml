@@ -100,7 +100,7 @@ plugins:
   - social:
       cards_layout: default
       cards_layout_options:
-        color: "#98892C"
+        background_color: "#98892C"
   - search:
       lang: en
       separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'

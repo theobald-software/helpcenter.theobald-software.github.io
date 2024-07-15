@@ -95,7 +95,7 @@ plugins:
   - social:
       cards_layout: default
       cards_layout_options:
-        color: "#ED1A33"
+        background_color: "#ED1A33"
   - tags # enables tags in front matter
   - search:
       separator: '[\s\-,:!=\[\]()"/]+'
