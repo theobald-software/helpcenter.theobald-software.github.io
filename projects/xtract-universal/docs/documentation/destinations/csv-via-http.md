@@ -21,4 +21,4 @@ It is supported by many products, e.g., Layer2, INFONEA and KNIME.
 
 {% include "destinations/column-name-style.md" %}
 
-{% include "destinations/date-conversion.md " %}
+{% include "destinations/date-conversion.md" %}

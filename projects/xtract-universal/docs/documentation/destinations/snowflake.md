@@ -118,7 +118,7 @@ Select a Snowflake Data Warehouse.
 
 {% include "destinations/column-name-style.md" %}
 
-{% include "destinations/date-conversion.md " %}
+{% include "destinations/date-conversion.md" %}
  
 {% include "destinations/file-splitting.md" %}
 

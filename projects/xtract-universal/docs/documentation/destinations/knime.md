@@ -17,7 +17,7 @@ To use the KNIME destination, no further settings are necessary.
 
 {% include "destinations/column-name-style.md" %}
 
-{% include "destinations/date-conversion.md " %}
+{% include "destinations/date-conversion.md" %}
 
 
 ## KNIME Integration via SAP Reader

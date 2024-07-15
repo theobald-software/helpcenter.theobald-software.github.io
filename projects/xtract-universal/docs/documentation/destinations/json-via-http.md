@@ -18,4 +18,4 @@ To use the JSON destination, no further settings are necessary.
 
 {% include "destinations/column-name-style.md" %}
 
-{% include "destinations/date-conversion.md " %}
+{% include "destinations/date-conversion.md" %}

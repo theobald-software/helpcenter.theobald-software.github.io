@@ -40,11 +40,11 @@ Check the database connection.
 
 {% include "destinations/file-name.md" %}
 
-{% include "parameters/file-name-script-expressions.md " %}
+{% include "parameters/file-name-script-expressions.md" %}
 
 {% include "destinations/column-name-style.md" %}
 
-{% include "destinations/date-conversion.md " %}
+{% include "destinations/date-conversion.md" %}
 
 {% include "destinations/sql-commands.md" %}
 

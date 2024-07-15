@@ -25,11 +25,11 @@ The {{ page.meta.title }} destination is a CSV (comma-separated values) flat fil
 
 {% include "destinations/file-name.md" %}
 
-{% include "parameters/file-name-script-expressions.md " %}
+{% include "parameters/file-name-script-expressions.md" %}
 
 {% include "destinations/column-name-style.md" %}
 
-{% include "destinations/date-conversion.md " %}
+{% include "destinations/date-conversion.md" %}
  
 {% include "destinations/existing-files.md" %}
 

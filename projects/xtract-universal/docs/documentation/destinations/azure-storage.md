@@ -197,11 +197,11 @@ See also [Microsoft documentation](https://docs.microsoft.com/en-us/azure/archit
 	If the name of an object does not begin with a letter, it will be prefixed with an ‘x’, e.g. an object by the name `_namespace_tabname.csv` will be renamed `x_namespace_tabname.csv` when uploaded to the destination.
 	This is to ensure that all uploaded objects are compatible with Azure Data Factory, Hadoop and Spark, which require object names to begin with a letter or give special meaning to objects whose names start with certain non-alphabetic characters. 
 
-{% include "parameters/file-name-script-expressions.md " %}
+{% include "parameters/file-name-script-expressions.md" %}
 
 {% include "destinations/column-name-style.md" %}
 
-{% include "destinations/date-conversion.md " %}
+{% include "destinations/date-conversion.md" %}
 
 
 ### Blob Type
