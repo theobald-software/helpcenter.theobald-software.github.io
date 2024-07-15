@@ -721,6 +721,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://helpcenter.theobald-software.com/xtract-universal/knowledge-base/configuring-anysql-maestro-to-manage-amazon-redshift/</loc>
+         <lastmod>2024-07-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://helpcenter.theobald-software.com/xtract-universal/knowledge-base/connect-to-power-bi-service/</loc>
          <lastmod>2024-07-15</lastmod>
          <changefreq>daily</changefreq>
