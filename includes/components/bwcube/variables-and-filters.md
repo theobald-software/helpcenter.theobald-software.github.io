@@ -26,14 +26,13 @@ Depending on the type of BEx variable (single value, multiple value, interval or
 
 	| Operator |  Description    |  
 	|:---------|:-------------|
-	|(not) like pattern |  True if data values do (not) contain to the content of operand 1.{% if page.meta.componentFolder == "odp" %} Not not all ODP contexts and data sources support this option.{% endif %} |
 	|(not) equal to |  True if data is (not) equal to the content of operand 1.|
 	|at least |  True if data is greater than or equal to the content of operand 1.|
 	|more than |  True if data is greater than the content of operand 1.|
 	|at most | True if data is less than or equal to the content of operand 1.|
 	|less than | True if data is less than the content of operand 1.|
 	|(not) between | True if data values do (not) lie between the values of operand 1 and operand 2. |
-	| elements equal | True if data values are part of operand 1. This option is only available for type *List*. |
+	| element of | True if data values are part of operand 1. This option is only available for type *List*. |
 	
 5. In the column **Value**, enter values directly into the input fields **Low** and **High**, assign existing {% if page.meta.product != "xtract-is" %} [{{ variables }}](edit-runtime-parameters.md) {% else %} {{ variables }} {% endif %} or look up pre-defined values in SAP.
 	- :runtime-parameters-static: - Static values: Enter values directly into the Low and High input fields. 
@@ -63,14 +62,13 @@ Follow the steps below to create dimension filters in the {{ bwcube }} {{ compon
 	
 	| Operator |  Description    |  
 	|:---------|:-------------|
-	|(not) like pattern |  True if data values do (not) contain to the content of operand 1. |
 	|(not) equal to |  True if data is (not) equal to the content of operand 1.|
 	|at least |  True if data is greater than or equal to the content of operand 1.|
 	|more than |  True if data is greater than the content of operand 1.|
 	|at most | True if data is less than or equal to the content of operand 1.|
 	|less than | True if data is less than the content of operand 1.|
 	|(not) between | True if data values do (not) lie between the values of operand 1 and operand 2. |
-	| elements equal | True if data values are part of operand 1. This option is only available for type *List*. |
+	| element of | True if data values are part of operand 1. This option is only available for type *List*. |
 	
 5. In the column **Value**, enter values directly into the input fields **Low** and **High**, assign existing {% if page.meta.product != "xtract-is" %} [{{ variables }}](edit-runtime-parameters.md) {% else %} {{ variables }} {% endif %} or look up pre-defined values in SAP.
 	- :runtime-parameters-static: - Static values: Enter values directly into the Low and High input fields. 

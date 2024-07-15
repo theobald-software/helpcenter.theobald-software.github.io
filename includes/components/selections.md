@@ -39,7 +39,7 @@ Follow the steps below to edit selection fields and filter data:
 	|at most | True if data is less than or equal to the content of operand 1.|
 	|less than | True if data is less than the content of operand 1.|
 	|(not) between | True if data values do (not) lie between the values of operand 1 and operand 2. |
-	| elements equal | True if data values are part of operand 1. This option is only available for type *List*. |
+	| element of | True if data values are part of operand 1. This option is only available for type *List*. |
 	
 5. In the column **Value**, enter values directly into the input fields **Low** and **High** or assign existing {% if page.meta.product != "xtract-is" %} [{{ variables }}](edit-runtime-parameters.md) {% else %} {{ variables }} {% endif %} to the selection fields :number-3:.
 
