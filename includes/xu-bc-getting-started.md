@@ -55,8 +55,7 @@ An extraction defines what data to extract from SAP and in which target environm
 	| [:component-table: {{ table }}](documentation/table/index.md) | Extract data from SAP tables and views. |
 	| [:component-table-cdc: {{ tableCDC }}](documentation/table-cdc/index.md) | Extract delta data from SAP tables and views. |
 	
-5. Click **[OK]**. The main window of the extraction type opens automatically.
-
+5. Click **[OK]**. The main window of the extraction type opens automatically.<br>
 Follow the instructions in the documentation of the selected {{ component }} to set up the extraction.
 
 #### How to Create a Simple Extraction for Beginners

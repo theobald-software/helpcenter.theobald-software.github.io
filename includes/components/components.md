@@ -10,7 +10,7 @@
 - title: {{ bwcube }}
   image: site:assets/images/logos/components/Cube-BEx.svg
   content: Extract data from SAP BW InfoCubes and BEx Queries.<br> <br><span class="keyword">BW</span> <span class="keyword">type&#58; source</span>
-  url: site:documentation/bw-cube/
+  url: site:documentation/bwcube/
   
 - title: {{ bwloader }}
   image: site:assets/images/logos/components/BWLoader.svg
@@ -71,7 +71,7 @@
 - title: {{ bwcube }}
   image: site:assets/images/logos/components/Cube-BEx.svg
   content: Extract data from SAP BW InfoCubes and BEx Queries. <br> <br><span class="keyword">BW</span>
-  url: site:documentation/bw-cube/
+  url: site:documentation/bwcube/
 
 - title: {{ hierarchy }}
   image: site:assets/images/logos/components/Hierarchy.svg
@@ -127,7 +127,7 @@
 - title: {{ bwcube }}
   image: site:assets/images/logos/components/Cube-BEx.svg
   content: Extract data from SAP BW InfoCubes and BEx Queries. <br> <br><span class="keyword">BW</span>
-  url: site:documentation/bw-cube/
+  url: site:documentation/bwcube/
 
 - title: {{ hierarchy }}
   image: site:assets/images/logos/components/Hierarchy.svg

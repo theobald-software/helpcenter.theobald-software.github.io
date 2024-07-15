@@ -15,7 +15,7 @@ The majority of internal information is linked to the [User Documentation](docum
 {% include "xu-bc-getting-started.md" %}
 
 
-### Target Environments
+### Write Data to a Target Environment
 
 <!---
 this script generates a link to the destination details of the selected destination (in step 5)

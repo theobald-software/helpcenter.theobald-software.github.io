@@ -101,7 +101,7 @@ The window "Manage Destinations" opens. Here, you can edit, delete and add new d
   
 - title: Power BI Connector <br><br><span class="keyword">pull-destination</span> 
   image: site:assets/images/xu/documentation/destinations/logos/Power-BI.png
-  url: power-bi-connector
+  url: Power-BI-Connector
   
 - title: Power BI Report Server <br><br><span class="keyword">pull-destination</span> 
   image: site:assets/images/xu/documentation/destinations/logos/Power-BI-Report-Server.png
