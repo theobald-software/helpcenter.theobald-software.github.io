@@ -5,6 +5,8 @@ description: SharePoint lists notification using intelligent merge procedure
 
 The following article shows how to create SharePoint lists notification using intelligent merge procedure of {{ productName }}. 
 
+### Procedure
+
 As the first step, customer master data fron table KNA1 is be loaded into SharePoint.
 
 ![Destination-details](../assets/images/xu/articles/sharepoint/destination-settings.png){:class="img-responsive"}
@@ -26,10 +28,13 @@ Next, the complete table KNA1 is extracted again.
 
 ![xu-log](../assets/images/xu/articles/sharepoint/xu-log.png){:class="img-responsive"}
 
+### Results
+
 The SharePoint list now contains the updated data set.
 
 ![SharePoint-view](../assets/images/xu/articles/sharepoint/share-point-view.png){:class="img-responsive"}
 
+### Email Notification
 The embedded user in the SharePoint alert is informed by email about the changed records.
 
 ![E-Mail Notification](../assets/images/xu/articles/sharepoint/e-mail-notification.png){:class="img-responsive"}
