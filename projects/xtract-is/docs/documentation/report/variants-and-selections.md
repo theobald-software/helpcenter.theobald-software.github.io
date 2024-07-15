@@ -11,7 +11,7 @@ description: Variants and Selections
 
 ### Data Format
 
-{% include "components/Settings/sap-data-format.md"  %}
+{% include "components/settings/sap-data-format.md"  %}
 
 ******
 

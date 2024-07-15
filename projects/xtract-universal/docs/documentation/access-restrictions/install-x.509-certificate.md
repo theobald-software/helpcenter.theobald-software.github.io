@@ -4,4 +4,4 @@ description: Installing an X.509 Certificate
 ---
 
 
-{% include "access-restrictions/install-x509-Certificate.md" %}
+{% include "access-restrictions/install-x509-certificate.md" %}

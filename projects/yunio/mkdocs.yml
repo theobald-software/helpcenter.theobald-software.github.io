@@ -114,7 +114,7 @@ plugins:
                - index.md
         #enable_creation_date: true
         #type: timeago
-        #- optimize #requires pngquant to be installed, see https://github.com/squidfunk/mkdocs-material/discussions/4989
+        - optimize #requires pngquant to be installed, see https://github.com/squidfunk/mkdocs-material/discussions/4989
         - minify:
             minify_html: true  
 
