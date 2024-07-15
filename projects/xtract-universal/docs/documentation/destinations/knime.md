@@ -7,7 +7,6 @@ This page shows how to set up and use the {{ page.meta.title }} destination.
 The {{ page.meta.title }} destination loads data to [KNIME](https://www.knime.com/). 
 
 {% include "destinations/create-destination.md" %}
-
 To use the KNIME destination, no further settings are necessary.
 
 ![Destination-Details](../../assets/images/xu/documentation/destinations/knime/destination-details.png){:class="img-responsive"}
