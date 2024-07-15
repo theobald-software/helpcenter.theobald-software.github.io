@@ -18,6 +18,7 @@ jobs:
            docs
            includes
            projects
+           overrides
       - name: Configure Git Credentials
         run: |
           git config user.name github-actions[bot]
