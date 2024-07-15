@@ -40,6 +40,7 @@ hide:
 - [Import an SAP Transport Request](import-an-sap-transport-request.md)
 - [Register an RFC Server in SAP with Kernel Release 720 and higher](register-rfc-server-in-sap-releases-in-kernel-release-720-and-higher.md)
 - [Supported SAP S/4HANA Versions](supported-sap-and-hana-versions.md)
+- [SharePoint lists notification using intelligent merge procedure](sharepoint-lists-notification-using-intelligent-merge-procedure.md)
 
 </div>
 
