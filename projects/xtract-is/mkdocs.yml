@@ -95,6 +95,10 @@ plugins:
         target: _blank # opens all external links in new tabs
   - meta # define front matter of multiple ,md files in .meta.yml file 
   - tags # enables tags in front matter
+  - social:
+      cards_layout: default
+      cards_layout_options:
+        color: "#0076BE"
   - search:
       separator: '[\s\-,:!=\[\]()"/]+'
   - typeset # preserve format of titles and headlines in navigation and toc

@@ -92,6 +92,10 @@ plugins:
       links_attr_map:
         target: _blank # opens all external links in new tabs
   - meta # define front matter of multiple ,md files in .meta.yml file 
+  - social:
+      cards_layout: default
+      cards_layout_options:
+        color: "#ED1A33"
   - tags # enables tags in front matter
   - search:
       separator: '[\s\-,:!=\[\]()"/]+'
