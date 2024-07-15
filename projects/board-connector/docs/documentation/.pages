@@ -15,8 +15,8 @@ nav:
     - Table: table
     - Table CDC: table-cdc
     - run-extractions.md
-    - Runtime Parameters: parameters
-    - Access Restrictions: access-restrictions
+    - Parameters: parameters
+    - Access Management: access-restrictions
     - server
     - logs.md
     - About this Documentation: about-this-documentation.md

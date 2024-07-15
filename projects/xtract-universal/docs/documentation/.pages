@@ -16,9 +16,9 @@ nav:
     - Table CDC: table-cdc
     - destinations
     - Execute and Automate: execute-and-automate
-    - Runtime Parameters: parameters
+    - Parameters: parameters
     - organize-extractions.md
-    - Access Restriction: access-restrictions
+    - Access Management: access-restrictions
     - server
     - logs.md
     - About this Documentation: about-this-documentation.md
