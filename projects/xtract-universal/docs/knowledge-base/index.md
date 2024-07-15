@@ -101,6 +101,10 @@ The following articles refer to specific [destinations](../documentation/destina
 
 - [Link a BEx query with a Hierarchy in Tableau](link-bex-query-with-hierarchy.md)
 
+### :simple-redshift: Amazon Redshift
+
+- [Configuring AnySQL Maestro to manage Amazon Redshift](configuring-anysql-maestro-to-manage-amazon-redshift.md)
+
 </div>
 
 ---
