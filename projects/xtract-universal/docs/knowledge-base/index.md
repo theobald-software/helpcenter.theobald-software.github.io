@@ -22,6 +22,7 @@ hide:
 - [Run {{ productName }} in a VM on AWS EC2](run-xu-in-aws.md)
 - [Target Principal Field (TPN)](target-principal-TPN.md)
 - [Proxy Server Settings in {{ productName }}](proxy-server-settings.md)
+- [SharePoint lists notification using intelligent merge procedure](sharepoint-lists-notification-using-intelligent-merge-procedure.md)
 <!--- - [Log Access via Web Service](log-access-via-http.md) -->
 
 </div>
