@@ -38,7 +38,7 @@ hide:
 - title: Success Stories
   image: ./assets/images/bc/success-stories-Board.png
   content: Get to know real customer scenarios with Board Connector by reading one of our success stories.
-  url: https://theobald-software.com/en/resources/success-stories
+  url: https://theobald-software.com/en/resources/success-stories?filter_one=default&filter_two=board-connector
 
 - title: Blog
   image: ./assets/images/bc/blog-Board.png
