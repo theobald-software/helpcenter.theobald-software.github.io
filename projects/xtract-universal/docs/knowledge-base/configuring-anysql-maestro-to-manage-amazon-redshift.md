@@ -3,41 +3,34 @@ title: Configuring AnySQL Maestro to manage Amazon Redshift
 description: Configuring AnySQL Maestro
 ---
 
-This example shows how to configure and use AnySQL Maestro to manage your Amazon Redshift database.
-You can use any other [db client](https://docs.aws.amazon.com/redshift/latest/mgmt/connecting-using-workbench.html) for that matter. Steps should be similar. 
+The following article shows an example of how to configure and use AnySQL Maestro to manage your Amazon Redshift database.
+The example works for any other [Database](https://docs.aws.amazon.com/redshift/latest/mgmt/connecting-using-workbench.html).
 
-- Download and install AnySQL Maestro from [here](http://www.sqlmaestro.com/de/products/anysql/maestro/download/).
-- Download and install ODBC driver for PostgreSQL from [here](http://ftp.postgresql.org/pub/odbc/versions/msi/psqlodbc_08_04_0200.zip).
-- Launch AnySQL Maestro.
-- Click "Create Database Profiles".
+### Create Database Profiles
 
+1. Download and install [AnySQL Maestro](http://www.sqlmaestro.com/de/products/anysql/maestro/download/).
+2. Download and install [ODBC driver for PostgreSQL](http://ftp.postgresql.org/pub/odbc/versions/msi/psqlodbc_08_04_0200.zip).
+3. Launch AnySQL Maestro.
+4. Click "Create Database Profiles". <br> ![RS-Configure-AnySQL-Add-Profile-Button](../assets/images/xu/articles/redshift/RS-Configure-AnySQL-Add-Profile-Button.png){:class="img-responsive"}
+5. In the Create Database Profiles Wizard, click the button next to the connection string field. <br> ![RS-Configure-AnySQL-Database-Profiles-Wizard](../assets/images/xu/articles/redshift/RS-Configure-AnySQL-Database-Profiles-Wizard.png){:class="img-responsive"}
+6. Navigate to *Connection* and enable *Use connection string* then click **[Build...]**.
+7. Navigate to *Machine Data Source* and Click **[New...]**.   
+8. Click **[Next]** and choose *PostgreSQL Unicode*, then click **[Next]** and **[Finish]**.
 
-![RS-Configure-AnySQL-Add-Profile-Button](/img/content/RS-Configure-AnySQL-Add-Profile-Button.png){:class="img-responsive"}
+!!! note
+    A warning might pop up. Close the warning and click **[OK]**.
 
-- In the Create Database Profiles Wizard, click the button next to the connection string field.
+![RS-Configure-AnySQL-Choose-Driver](../assets/images/xu/articles/redshift/RS-Configure-AnySQL-Choose-Driver.png){:class="img-responsive"}
 
-![RS-Configure-AnySQL-Database-Profiles-Wizard](/img/content/RS-Configure-AnySQL-Database-Profiles-Wizard.png){:class="img-responsive"}
+### Test the result
 
-- Go to "Connection" and enable "Use connection string" then click "Build...".
-- Go to "Machine Data Source" and Click "New..." (There might be a pop up with a warning, you can just close it with a click on "Ok").
+1. Enter your credentials, click "Test" to check if they are correct and click "Save". <br> ![RS-Configure-AnySQL-Enter-Credentials](../assets/images/xu/articles/redshift/RS-Configure-AnySQL-Enter-Credentials.png){:class="img-responsive"}
+2. Choose your connection and click **[OK]**.
+3. Enter the database name and your credentials and select SSL-Mode *allow*, then click **[OK]**.
+4. Enter your credentials and select the initial catalog, then click **[OK]**. <br> ![RS-Configure-AnySQL-Data-Link-Properties](../assets/images/xu/articles/redshift/RS-Configure-AnySQL-Data-Link-Properties.png){:class="img-responsive"}
+5. Click **[Next]**, then **[Ready]**. Now the database is ready.
 
-- Click "Next" and choose "PostgreSQL Unicode", then click "Next" and "Finish".
-
-![RS-Configure-AnySQL-Choose-Driver](/img/content/RS-Configure-AnySQL-Choose-Driver.png){:class="img-responsive"}
-
-- Enter your credentials, click "Test" to check if they are correct and click "Save".
-
-![RS-Configure-AnySQL-Enter-Credentials](/img/content/RS-Configure-AnySQL-Enter-Credentials.png){:class="img-responsive"}
-
-- Choose your connection and click "Ok".
-- Enter the database name and your credentials and select SSL-Mode "allow", then click "OK".
-
-- Enter your credentials and select the initial catalog, then click "OK".
-
-![RS-Configure-AnySQL-Data-Link-Properties](/img/content/RS-Configure-AnySQL-Data-Link-Properties.png){:class="img-responsive"}
-
-- Click "Next", then "Ready".
-- Now you can work with your database.
+*****
 
 ### Related Links
 - [Amazon AWS: Getting Started - Backup & Restore with AWS](https://aws.amazon.com/backup-restore/getting-started/?nc1=h_ls)
