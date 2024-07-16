@@ -1,6 +1,6 @@
 ---
 title: Sample Workflows
-description: Sample Workflows
+description: This page contains ready-to-use templates and sample workflows you can download and use as a base to design your own processes.
 hide:
   - navigation
   - tags
@@ -29,7 +29,7 @@ hide:
 	How to get started with Theobald Software sample workflows:
 
 	1. Download a sample workflow.
-	2. Open the workflow in the Alterx Designer.
+	2. Open the workflow in the Alteryx Designer.
 	2. Assign a valid [SAP Connection](documentation/sap-connection/index.md) to all Xtract components in the workflow.
 	3. Read the intro section that explains the workflow.
 	4. Start using the workflow or start editing until the workflow suits your requirements.

@@ -4,8 +4,28 @@
 {% extends "base.html" %}
 {% block extrahead %}
   <link rel="stylesheet" href="{{ 'assets/stylesheets/custom.00c04c01.min.css' | url }}">
+  <link rel="stylesheet" href="{{ 'assets/stylesheets/chatbot.css' | url }}">
 {% endblock %}
 {% block scripts %}
   {{ super() }}
   <script src="{{ 'assets/javascripts/custom.9c11c319.min.js' | url }}"></script>
+  <script src="{{ 'assets/javascripts/chatbot.js' | url }}"></script>
+{% endblock %}
+
+
+{% block content %}
+  {{ super() }}
+
+  <!-- Open Chatbot button -->
+  <button class="btn-clear md-button md-button--primary" title="Open Chatbot" id="open_button" onclick="openChatbot()">
+  <span class="twemoji" style="font-size: 35px";"><div class="fa-beat" style="margin-top: -5px;">{% include ".icons/fontawesome/solid/comments.svg" %} </div></span></button>
+
+  <div id="container" style="display: none;">
+     <iframe id="chatbot_iframe" src="https://helpcenter.theobald-software.com/yunio/theo-chatbot.html" frameborder="1" style="width: 100%; height: 100%;"></iframe>
+     <div id="resize-handler"></div>
+     <div id="banner"">
+		  <p style="font-family: inherit; font-size: 16px; color: white; line-height: 20px; position: absolute; left: 15px;">Theo Chatbot</p>
+		  <button id="close_button" onclick="closeChatbot()" title="Close Chatbot" style="position: absolute; right: 10px; color: white"><span class="twemoji" style="font-size: 20px">{% include ".icons/material/close.svg" %} </span></button> 
+	  </div>
+  </div>
 {% endblock %}
