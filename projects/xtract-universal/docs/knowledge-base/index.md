@@ -104,7 +104,7 @@ The following articles refer to specific [destinations](../documentation/destina
 
 ### :simple-amazonredshift: Amazon Redshift
 
-- [Configuring AnySQL Maestro to manage Amazon Redshift](configuring-anysql-maestro-to-manage-amazon-redshift.md)
+- [Configure AnySQL Maestro to manage Amazon Redshift](configuring-anysql-maestro-to-manage-amazon-redshift.md)
 
 </div>
 

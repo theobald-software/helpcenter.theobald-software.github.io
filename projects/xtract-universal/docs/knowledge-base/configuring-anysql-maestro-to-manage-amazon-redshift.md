@@ -1,5 +1,5 @@
 ---
-title: Configuring AnySQL Maestro to manage Amazon Redshift
+title: Configure AnySQL Maestro to manage Amazon Redshift
 description: Configuring AnySQL Maestro
 ---
 
@@ -9,7 +9,7 @@ The example works for any other [Database](https://docs.aws.amazon.com/redshift/
 ### Create Database Profiles
 
 1. Download and install [AnySQL Maestro](http://www.sqlmaestro.com/de/products/anysql/maestro/download/).
-2. Download and install [ODBC driver for PostgreSQL](http://ftp.postgresql.org/pub/odbc/versions/msi/psqlodbc_08_04_0200.zip).
+2. Download and install [ODBC driver for PostgreSQL](https://ftp.postgresql.org/pub/odbc/versions.old/msi/psqlodbc_08_04_0200.zip).
 3. Launch AnySQL Maestro.
 4. Click "Create Database Profiles". <br> ![RS-Configure-AnySQL-Add-Profile-Button](../assets/images/xu/articles/redshift/RS-Configure-AnySQL-Add-Profile-Button.png){:class="img-responsive"}
 5. In the Create Database Profiles Wizard, click the button next to the connection string field. <br> ![RS-Configure-AnySQL-Database-Profiles-Wizard](../assets/images/xu/articles/redshift/RS-Configure-AnySQL-Database-Profiles-Wizard.png){:class="img-responsive"}
@@ -32,6 +32,6 @@ The example works for any other [Database](https://docs.aws.amazon.com/redshift/
 
 *****
 
-### Related Links
+#### Related Links
 - [Amazon AWS: Getting Started - Backup & Restore with AWS](https://aws.amazon.com/backup-restore/getting-started/?nc1=h_ls)
 - [Amazon Redshift: Getting Started with Amazon Redshift](hhttps://docs.aws.amazon.com/redshift/latest/gsg/getting-started.html)
