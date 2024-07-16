@@ -98,7 +98,11 @@ plugins:
         background_color: "#ED1A33"
   - tags # enables tags in front matter
   - search:
-      separator: '[\s\-,:!=\[\]()"/]+'
+      lang: en
+      #separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
+      pipeline:
+        #- stemmer
+        - stopWordFilter
   - typeset # preserve format of titles and headlines in navigation and toc
   - awesome-pages # define navigation in .pages files
   - macros:
