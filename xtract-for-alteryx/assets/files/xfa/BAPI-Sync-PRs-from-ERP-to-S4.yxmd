@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<AlteryxDocument yxmdVer="2023.1">
+<AlteryxDocument yxmdVer="2024.1">
   <Nodes>
     <Node ToolID="22">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
@@ -27,12 +27,13 @@
       </GuiSettings>
       <Properties>
         <Configuration>
-          <Text>In this Alteryx workflow the 'Xtract for Alteryx' connector is used to create a new Purchase Requisition in a SAP ERP system using BAPI_REQUISITION_CREATE and then reading the details of the newly created Purchase Requisition with BAPI_REQUISITION_GETDETAIL. As records are written to the SAP system, please use this Starter Kit to make yourself familiar with the write-back capabilities in DEV / Q&amp;A environments before using it in production.
+          <Text>In this Alteryx workflow the 'Xtract for Alteryx' connector is used to create a new Purchase Requisition in a SAP ERP system using BAPI_REQUISITION_CREATE and then reading the details of the newly created Purchase Requisition with BAPI_REQUISITION_GETDETAIL. As records are written to the SAP system, use this Starter Kit learn about the write-back capabilities in DEV / Q&amp;A environments before using it in production.
 
-To use the Xtract BAPI component you need to install the Xtract for Alteryx connector. Please contact your Alteryx sales rep for more information. A free 30 day trial is available on https://theobald-software.com/en/download-trial
+To use the Xtract BAPI component you need to install the Xtract for Alteryx connector. Contact your Alteryx sales representative for more information. A free 30 day trial is available on https://theobald-software.com/en/download-trial.
 
-Required SAP authorizations: https://kb.theobald-software.com/sap/authority-objects-sap-user-rights
-How to set up the SAP connection: https://help.theobald-software.com/en/xtract-for-alteryx/sap-connection</Text>
+Required SAP authorizations: https://helpcenter.theobald-software.com/xtract-for-alteryx/documentation/setup-in-sap/sap-authority-objects.
+
+How to set up the SAP connection: https://helpcenter.theobald-software.com/xtract-for-alteryx/documentation/sap-connection.</Text>
           <Font name="Arial" size="11.25" style="1" />
           <TextColor name="Black" />
           <FillColor r="232" g="232" b="232" />
@@ -14707,10 +14708,6 @@ DELIV_DATE = Replace(Left([D...</DefaultAnnotationText>
       <Destination ToolID="94" Connection="Input" />
     </Connection>
     <Connection>
-      <Origin ToolID="96" Connection="Output" />
-      <Destination ToolID="93" Connection="Parameters" />
-    </Connection>
-    <Connection>
       <Origin ToolID="101" Connection="Output" />
       <Destination ToolID="119" Connection="Input" />
     </Connection>
@@ -14721,10 +14718,6 @@ DELIV_DATE = Replace(Left([D...</DefaultAnnotationText>
     <Connection>
       <Origin ToolID="103" Connection="Output" />
       <Destination ToolID="102" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="104" Connection="Output" />
-      <Destination ToolID="101" Connection="Parameters" />
     </Connection>
     <Connection>
       <Origin ToolID="88" Connection="Output" />
@@ -14739,20 +14732,8 @@ DELIV_DATE = Replace(Left([D...</DefaultAnnotationText>
       <Destination ToolID="89" Connection="Input" />
     </Connection>
     <Connection>
-      <Origin ToolID="91" Connection="Output" />
-      <Destination ToolID="88" Connection="Parameters" />
-    </Connection>
-    <Connection>
       <Origin ToolID="116" Connection="Output" />
       <Destination ToolID="114" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="113" Connection="Exports" />
-      <Destination ToolID="108" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="113" Connection="2" />
-      <Destination ToolID="107" Connection="Input" />
     </Connection>
     <Connection name="Input - REQUISITION_ITEMS">
       <Origin ToolID="114" Connection="Output" />
@@ -14769,14 +14750,6 @@ DELIV_DATE = Replace(Left([D...</DefaultAnnotationText>
     <Connection>
       <Origin ToolID="61" Connection="Output" />
       <Destination ToolID="54" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="43" Connection="Exports" />
-      <Destination ToolID="57" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="43" Connection="2" />
-      <Destination ToolID="56" Connection="Input" />
     </Connection>
   </Connections>
   <Properties>
@@ -14796,9 +14769,10 @@ DELIV_DATE = Replace(Left([D...</DefaultAnnotationText>
     <ShowConnectionStatusOnlyWhenRunning value="True" />
     <ZoomLevel value="0" />
     <LayoutType>Horizontal</LayoutType>
+    <IsTemplate value="False" />
     <MetaInfo>
       <NameIsFileName value="True" />
-      <Name>BAPI - Keep ERP-S4 in sync</Name>
+      <Name>BAPI-Sync-PRs-from-ERP-to-S4</Name>
       <Description />
       <RootToolName />
       <ToolVersion />
