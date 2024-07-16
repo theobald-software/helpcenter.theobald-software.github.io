@@ -1,0 +1,381 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2024.1">
+  <Nodes>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="66" y="234" width="144" height="60" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text><![CDATA[
+Input Data]]></Text>
+          <Font name="Arial" size="12" style="1" />
+          <TextColor r="237" g="26" b="51" />
+          <FillColor r="232" g="232" b="232" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="222" y="234" width="876" height="60" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Call Macro for dynamic BAPI Parameter assignment and execution</Text>
+          <Font name="Arial" size="12" style="1" />
+          <TextColor r="237" g="26" b="51" />
+          <FillColor r="232" g="232" b="232" />
+          <Shape shape="0" />
+          <Justification Justification="1" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="27">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="66" y="54" width="1032" height="156" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>In this Starter Kit Alteryx workflow the Xtract for Alteryx connector is used to read the details of Purchase Requisitions from an SAP ERP system with BAPI_REQUISITION_GETDETAIL.
+
+To use the Xtract BAPI component, which is part of the macro, install the Xtract for Alteryx connector. Contact your Alteryx sales representative for more information. A free 30 day trial is available at https://theobald-software.com/en/download-trial .
+
+Required SAP authorization objects: https://helpcenter.theobald-software.com/xtract-for-alteryx/documentation/setup-in-sap/sap-authority-objects
+
+How to set up the SAP connection: https://helpcenter.theobald-software.com/xtract-for-alteryx/documentation/sap-connection</Text>
+          <Font name="Arial" size="11.25" style="1" />
+          <TextColor name="Black" />
+          <FillColor r="232" g="232" b="232" />
+          <Shape shape="0" />
+          <Justification Justification="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="81">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="114" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="2" />
+          <Fields>
+            <Field name="Purchase Requisition Number" />
+          </Fields>
+          <Data>
+            <r>
+              <c>0010019299</c>
+            </r>
+            <r>
+              <c>0010019300</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="82">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="618" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\simon\AppData\Local\Temp\Engine_22000_2b34df65a1c246238abf1f5c2567a364_\Engine_2916_9041d698e995427e836ed53eb2420d08_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="83">
+      <GuiSettings>
+        <Position x="330" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="ControlParams"><![CDATA[Control Parameter (3)=Purchase Requisition Number
+]]></Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Req Items Table">
+          <RecordInfo>
+            <Field name="PREQ_NO" size="10" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="PREQ_ITEM" size="5" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="String" />
+            <Field name="DOC_TYPE" size="4" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="DOC_CAT" size="1" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="CTRL_IND" size="1" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="DELETE_IND" size="1" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="PROC_STAT" size="1" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="CREATE_IND" size="1" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="REL_IND" size="1" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="REL_STATUS" size="8" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="REL_STRAT" size="2" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="PUR_GROUP" size="3" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="CREATED_BY" size="12" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="CH_ON" size="8" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="PREQ_NAME" size="12" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="SHORT_TEXT" size="40" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="MATERIAL" size="18" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="PUR_MAT" size="18" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="PLANT" size="4" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="STORE_LOC" size="4" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="TRACKINGNO" size="10" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="MAT_GRP" size="9" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="SUPPL_PLNT" size="4" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="QUANTITY" scale="3" size="18" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="FixedDecimal" />
+            <Field name="UNIT" size="3" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="SHORTAGE" scale="3" size="18" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="FixedDecimal" />
+            <Field name="PREQ_DATE" size="8" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="DEL_DATCAT" size="1" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="DELIV_DATE" size="8" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="REL_DATE" size="8" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="GR_PR_TIME" scale="0" size="4" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="FixedDecimal" />
+            <Field name="C_AMT_BAPI" scale="4" size="29" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="FixedDecimal" />
+            <Field name="PRICE_UNIT" scale="0" size="6" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="FixedDecimal" />
+            <Field name="ITEM_CAT" size="1" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="ACCTASSCAT" size="1" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="CONSUMPT" size="1" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="CHANGEABLE" size="1" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="DISTRIB" size="1" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="PART_INV" size="1" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="GR_IND" size="1" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="GR_NON_VAL" size="1" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="IR_IND" size="1" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="DES_VENDOR" size="10" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="FIXED_VEND" size="10" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="PURCH_ORG" size="4" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="AGREEMENT" size="10" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="AGMT_ITEM" size="5" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="String" />
+            <Field name="INFO_REC" size="10" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="ASSIGNED" size="1" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="QUOTA_ARR" size="10" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="QUOTARRITM" size="3" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="String" />
+            <Field name="MRP_CONTR" size="3" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="BOMEXPL_NO" size="8" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="LAST_RESUB" size="8" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="RESUBMIS" scale="0" size="4" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="FixedDecimal" />
+            <Field name="NO_RESUB" scale="0" size="8" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="FixedDecimal" />
+            <Field name="PO_NUMBER" size="10" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="PO_ITEM" size="5" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="String" />
+            <Field name="PO_DATE" size="8" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="ORDERED" scale="3" size="18" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="FixedDecimal" />
+            <Field name="VAL_TYPE" size="10" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="COMMITMENT" size="1" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="CLOSED" size="1" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="RESERV_NO" size="10" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="String" />
+            <Field name="SPEC_STOCK" size="1" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="SETRESERNO" size="10" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="String" />
+            <Field name="SETTLITMNO" size="4" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="String" />
+            <Field name="FIXED" size="1" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="PO_UNIT" size="3" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="REV_LEV" size="2" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="ADVANCE" size="1" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="PCKG_NO" size="10" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="String" />
+            <Field name="KANBAN_IND" size="1" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="PO_PRICE" size="1" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="INT_OBJ_NO" size="18" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="String" />
+            <Field name="REL_GROUP" size="2" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="SUBJ_TO_R" size="1" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="PROMOTION" size="10" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="BATCH" size="10" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="SPSTCK_PHY" size="1" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="VERSION" size="4" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="CMMT_ITEM" size="14" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="FOUND_CTR" size="16" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="FUND" size="10" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="CONFIG_ORG" size="1" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="CONF_MATL" size="18" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="CMMTTD_QTY" scale="3" size="18" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="FixedDecimal" />
+            <Field name="CMMTTDDATE" size="8" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="CHANGE_ID" size="1" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="CURRENCY" size="5" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="PREQ_UNIT" size="3" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="GR_QTY" scale="3" size="18" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="FixedDecimal" />
+            <Field name="RES_REQ_ID" size="1" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="VEND_MAT" size="22" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="MANUF_PROF" size="4" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="MANU_MAT" size="40" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="MFR_NO" size="10" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="MFR_NO_EXT" size="10" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="DEL_DATCAT_EXT" size="1" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="CURRENCY_ISO" size="3" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="ITEM_CAT_EXT" size="1" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="PREQ_UNIT_ISO" size="3" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="PO_UNIT_ISO" size="3" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="GENERAL_RELEASE" size="1" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="MATERIAL_EXTERNAL" size="40" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="MATERIAL_GUID" size="32" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="MATERIAL_VERSION" size="10" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="PUR_MAT_EXTERNAL" size="40" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="PUR_MAT_GUID" size="32" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="PUR_MAT_VERSION" size="10" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="CONF_MATL_EXTERNAL" size="40" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="CONF_MATL_GUID" size="32" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="CONF_MATL_VERSION" size="10" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="GRANT_NBR" size="20" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="CMMT_ITEM_LONG" size="24" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="FUNC_AREA_LONG" size="16" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="REQ_BLOCKED" size="1" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="REASON_BLOCKING" size="60" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="PROCURING_PLANT" size="4" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="RES_DOC" size="10" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="RES_ITEM" size="3" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="String" />
+            <Field name="FUNC_AREA" size="16" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="FUND_LONG" size="20" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="BUDGET_PERIOD" size="10" source="REQUISITION_ITEMS from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Return">
+          <RecordInfo>
+            <Field name="TYPE" size="1" source="RETURN from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="CODE" size="5" source="RETURN from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="MESSAGE" size="220" source="RETURN from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="LOG_NO" size="20" source="RETURN from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="LOG_MSG_NO" size="6" source="RETURN from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="String" />
+            <Field name="MESSAGE_V1" size="50" source="RETURN from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="MESSAGE_V2" size="50" source="RETURN from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="MESSAGE_V3" size="50" source="RETURN from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+            <Field name="MESSAGE_V4" size="50" source="RETURN from BAPI_REQUISITION_GETDETAIL @ EC5 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="Macros\Display Purchase Requisition Macro.yxmc" />
+    </Node>
+    <Node ToolID="84">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="690" y="342" width="384" height="36" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Browse REQUISITION_ITEMS table from BAPI</Text>
+          <Font name="Arial" size="11.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="1" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="85">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="150" y="438" width="816" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>To assign Xtract for Alteryx runtime parameters a marcro is required. For more information, see https://helpcenter.theobald-software.com/xtract-for-alteryx/documentation/bapi/edit-runtime-parameters</Text>
+          <Font name="Arial" size="12" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="3" />
+          <Justification Justification="1" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="81" Connection="Output" />
+      <Destination ToolID="83" Connection="Control" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="83" Connection="Req Items Table" />
+      <Destination ToolID="82" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="False" max="8000" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="True" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <IsTemplate value="False" />
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>BAPI - ERP - Dynamic Read w Macro</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="b9e4fac8-862e-48f7-beae-18037845c5ed" />
+      <Telemetry>
+        <PreviousWorkflowId value="66700e33-a4d8-4a3f-975d-ea6bf9702bac" />
+        <OriginWorkflowId value="0796e9f6-f0a2-438e-996a-9c4187a58837" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
