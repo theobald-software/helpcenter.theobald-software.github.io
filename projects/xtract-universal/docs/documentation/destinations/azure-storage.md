@@ -139,11 +139,11 @@ The *Azure Storage (Blob / Data Lake)* destination can now be used.
 	The settings in *Misc* can only be used in combination with a Blob container.<br> 
 
 #### Folder path
-Option to create a folder structure within the container for saving files, see [**Destination Settings > Folder**](#folder). <br>
-- For creating a single folder, enter a folder name without slashes: `[folder]` 
-- Subfolders are supported and can be defined using the following syntax: `[folder]/[subfolder_1]/[subfolder_2]/[..]`
+Option to create a folder structure within the container for saving files.
+Script expressions are supported, see [**Destination Settings > Folder**](#folder).
 
-{% include "parameters/folder-script-expressions.md" %}
+For creating a single folder, enter a folder name without slashes: `[folder]` <br>
+Subfolders are supported and can be defined using the following syntax: `[folder]/[subfolder_1]/[subfolder_2]/[..]`
 
 
 ### File Format
@@ -217,8 +217,9 @@ Creates a [Block Blob](https://docs.microsoft.com/en-us/rest/api/storageservices
 
 ### Folder
 Option to create a folder structure within the container for saving files, see [**Destination Details > Folder Path**](#folder-path). <br>
-- For creating a single folder, enter a folder name without slashes: `[folder]` 
-- Subfolders are supported and can be defined using the following syntax: `[folder]/[subfolder_1]/[subfolder_2]/[..]`
+
+For creating a single folder, enter a folder name without slashes: `[folder]` <br>
+Subfolders are supported and can be defined using the following syntax: `[folder]/[subfolder_1]/[subfolder_2]/[..]`
 
 {% include "parameters/folder-script-expressions.md" %}
 

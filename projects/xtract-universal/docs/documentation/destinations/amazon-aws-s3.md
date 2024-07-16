@@ -95,7 +95,7 @@ The key can be created on the [AWS website](https://console.aws.amazon.com/iam/h
 All settings in *Misc* are optional.
 
 #### Folder Path
-Enter the directory to upload files into.
+Enter the directory to upload files into, see [**Destination Settings > Folder name**](#folder-name).
 
 #### File Owner
 If you upload files as an AWS user of an Account A to an Account B, you can select the option "Bucket Owner".
