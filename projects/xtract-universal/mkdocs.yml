@@ -103,7 +103,7 @@ plugins:
         background_color: "#98892C"
   - search:
       lang: en
-      separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
+      #separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
       pipeline:
         #- stemmer
         - stopWordFilter
