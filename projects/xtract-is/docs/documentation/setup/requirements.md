@@ -1,6 +1,6 @@
 ---
 title: Requirements
-description: Requirements
+description: System requirements for installing and using Xtract IS
 ---
 
 

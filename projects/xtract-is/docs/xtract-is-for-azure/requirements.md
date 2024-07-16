@@ -1,6 +1,6 @@
 ---
 title: Requirements
-description: Requirements
+description: System requirements for installing and using Xtract IS for Azure
 ---
 
 This page contains information about system requirements and compatible SAP systems for Xtract IS for Azure.

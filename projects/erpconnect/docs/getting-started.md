@@ -1,5 +1,6 @@
 ---
 title: Getting Started
+description: Learn how to install and connect to an SAP system with ERPConnect.
 hide:
   - navigation
   - tags

@@ -1,5 +1,6 @@
 ---
 title: Knowledge Base
+description: A list of in-depth articles and sample use cases for yunIO.
 hide:
   - navigation
   - path

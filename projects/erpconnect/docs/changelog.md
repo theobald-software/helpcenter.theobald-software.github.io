@@ -1,5 +1,6 @@
 ---
 title: ChangeLog
+description: The version history of ERPConnect contains information about critical and breaking changes.
 hide:
   - navigation
   - feedback

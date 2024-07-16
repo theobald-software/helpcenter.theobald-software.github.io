@@ -1,6 +1,6 @@
 ---
 title: Introduction
-description: Prerequisites and Installation
+description: Welcome to the user documentation of ERPConnect.
 ---
 
 ![img](site:assets/images/logos/theo-thumbs.png){ .lg .middle width="30px"} This section contains a user documentation for ERPConnect.

@@ -1,6 +1,6 @@
 ---
 title: Requirements
-description: System Requirements
+description: System requirements for installing and using ERPConnect.
 ---
 
 This section contains information about system requirements and compatible SAP systems for ERPConnect.

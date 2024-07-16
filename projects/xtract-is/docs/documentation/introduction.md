@@ -1,6 +1,6 @@
 ---
 title: Introduction to Xtract IS
-description: Introduction
+description: Welcome to the user documentation of Xtract IS.
 ---
 
 ![img](site:assets/images/logos/theo-thumbs.png){ .lg .middle width="30px"} This section contains user documentation for {{ productName }}. <br>

@@ -1,6 +1,6 @@
 ---
 title: Web API
-description: Endpoints of the Web API
+description: List of endpoints of the Xtract Universal web API
 hide:
   - navigation
   - tags

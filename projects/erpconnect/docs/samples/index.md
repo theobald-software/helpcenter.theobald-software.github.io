@@ -1,5 +1,6 @@
 ---
 title: Samples
+description: A list of in-depth articles and sample use cases for ERPConnect.
 hide:
   - navigation
   - path

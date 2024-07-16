@@ -1,6 +1,6 @@
 ---
 title: Introduction to Xtract for Alteryx
-description: Introduction
+description: Welcome to the user documentation of Xtract for Alteryx.
 ---
 
 ![img](site:assets/images/logos/theo-thumbs.png){ .lg .middle width="30px"} This section contains user documentation for {{ productName }}.

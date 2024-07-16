@@ -1,6 +1,6 @@
 ---
 title: Introduction to yunIO
-description: Introduction
+description: Welcome to the user documentation of yunIO.
 ---
 
 ![img](site:assets/images/logos/theo-thumbs.png){ .lg .middle width="30px"} This section contains user documentation for yunIO. <br>

@@ -1,6 +1,6 @@
 ---
 title: Getting Started
-description: Getting Started
+description: Learn how to install and create extractions with Xtract Universal.
 hide:
   - navigation
   - tags

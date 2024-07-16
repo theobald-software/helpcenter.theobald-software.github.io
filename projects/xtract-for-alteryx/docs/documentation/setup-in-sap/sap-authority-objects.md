@@ -1,6 +1,6 @@
 ---
 title: SAP Authorization Objects
-description: Minimum user right and authorizations to use yunIO and all its components
+description: Minimum user right and authorizations to use Xtract for Alteryx and all its components
 tags:
    - permissions
 ---

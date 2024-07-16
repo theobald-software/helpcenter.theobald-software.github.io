@@ -1,5 +1,6 @@
 ---
 title: Troubleshooting
+description: A list of short troubleshooting articles from our support portal.
 product: erpconnect
 hide:
   - navigation

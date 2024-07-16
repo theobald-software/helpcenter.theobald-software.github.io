@@ -1,5 +1,6 @@
 ---
 title: ChangeLog
+description: The version history of Xtract IS contains information about critical and breaking changes.
 hide:
   - navigation
   - feedback

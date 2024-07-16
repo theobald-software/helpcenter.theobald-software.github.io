@@ -1,6 +1,6 @@
 ---
 title: Getting Started
-description: Getting Started
+description: Learn how to install and extract data from SAP with Xtract for Alteryx.
 hide:
   - navigation
   - tags
