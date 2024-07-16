@@ -120,7 +120,6 @@ plugins:
       enabled: !ENV CI
       plugins:
          - git-revision-date-localized:
-             enable_creation_date: true
              exclude:
                - index.md
         #enable_creation_date: true

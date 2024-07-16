@@ -1,6 +1,6 @@
 ---
 title: Web API
-description: Endpoints of the Web API
+description: List of endpoints of the Board Connector web API
 hide:
   - navigation
   - tags
