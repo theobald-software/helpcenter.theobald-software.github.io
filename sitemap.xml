@@ -246,6 +246,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://helpcenter.theobald-software.com/release-notes/BOARDConnector-6.6.0/</loc>
+         <lastmod>2024-07-17</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://helpcenter.theobald-software.com/release-notes/Common-2.14.1/</loc>
          <lastmod>2024-07-17</lastmod>
          <changefreq>daily</changefreq>
