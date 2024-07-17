@@ -85,7 +85,7 @@
 
 - title: {{ odp }}
   image: site:assets/images/logos/components/ODP.svg
-  content: Extract data via the SAP Operational Data Provisioning (ODP) framework. <br> <br> <span class="keyword">ERP/ ECC</span> <span class="keyword">BW</span>
+  content: Extract data via the SAP Operational Data Provisioning (ODP) framework. <br> <br> <br> <span class="keyword">ERP/ ECC</span> <span class="keyword">BW</span>
   url: site:documentation/odp/
   
 - title: {{ ohs }}
@@ -100,7 +100,7 @@
 
 - title: {{ report }}
   image: site:assets/images/logos/components/Report.svg
-  content: Extract data from SAP ABAP reports. <br> <br> <span class="keyword">ERP/ ECC</span> 
+  content: Extract data from SAP ABAP reports. <br> <br> <br> <span class="keyword">ERP/ ECC</span> 
   url: site:documentation/report/
   
 - title: {{ table }}
