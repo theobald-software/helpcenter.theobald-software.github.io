@@ -1,5 +1,27 @@
 [
   {
+    "Version": "7.7.5.3",
+    "LegacyReleaseDate": "2024-07-15 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Common",
+        "Component": "General",
+        "Message": "Updated support for new version numbering features"
+      }
+    ]
+  },
+  {
+    "Version": "7.7.5.2",
+    "LegacyReleaseDate": "2024-07-12 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "Hierarchy",
+        "Message": "Fixed a bug where Node Description Texts couldn't be found."
+      }
+    ]
+  },
+  {
     "Version": "7.7.5.1",
     "LegacyReleaseDate": "2024-07-12 00:00:00Z",
     "Changes": [
@@ -2011,7 +2033,7 @@
       {
         "Product": "XtractIS",
         "Component": "General",
-        "Message": "Fixed a bug that caused the connection manager to not be saved when multiple XTRACT Connection Managers exist"
+        "Message": "Fixed a bug that caused the connection manager to not be saved when multiple XTRACT connection managers exist"
       }
     ]
   },
@@ -2398,7 +2420,7 @@
         "Product": "ERPConnect",
         "Component": "RFC Client",
         "Message": "Various breaking changes to R3Connection API",
-        "ReleaseNote": "# Changes to R3Connection\nThe following properties/methods have been removed.\n\n* `MultithreadingEnvironment` The feature is always active and cannot be disabled.\n* `AllowStartProgram(string programList)`. Please contact support if you really need this feature.\n\n\nThe following properties/constructors/methods have been marked as obsolete and will be removed 2023-10-01.\n\n* `ConnectionString` --> Please use `ParseConnectionString()` instead.\n* `R3Connection(string connectionString)` --> Please use `ParseConnectionString()` instead.\n* `Open(string rfcConnectionString)`--> Please use `ParseConnectionString()` instead.\n* `OpenSSO(string ticket, bool loadBalancing)` --> Please set `LogonTicket` and `UsesLoadBalancing` instead.\n* `OpenSSO(string ticket)` --> Please set `LogonTicket` instead.\n* `Open(bool useLoadBalancing)` --> Please set `UsesLoadBalancing` instead.\n* `GetSSOTicket(bool loadBalancing)` -->  Please set `UsesLoadBalancing` instead.\n* `SetAbapDebug(bool enabled)` --> Please use external breakpoints in ABAP debugger instead.\n\n\n`ClientProtocol.RFC` has been marked as obsolete. Please use `ClientProtocol.NWRFC` instead. The default value will be switched to NWRFC 2023-10-01."
+        "ReleaseNote": "# Changes to R3Connection\nThe following properties/methods have been removed.\n\n* `MultithreadingEnvironment` The feature is always active and cannot be disabled.\n* `AllowStartProgram(string programList)`. Please contact support if you really need this feature.\n\n\nThe following properties/constructors/methods have been marked as obsolete and will be removed 2023-10-01.\n\n* `ConnectionString` --&gt; Please use `ParseConnectionString()` instead.\n* `R3Connection(string connectionString)` --&gt; Please use `ParseConnectionString()` instead.\n* `Open(string rfcConnectionString)`--&gt; Please use `ParseConnectionString()` instead.\n* `OpenSSO(string ticket, bool loadBalancing)` --&gt; Please set `LogonTicket` and `UsesLoadBalancing` instead.\n* `OpenSSO(string ticket)` --&gt; Please set `LogonTicket` instead.\n* `Open(bool useLoadBalancing)` --&gt; Please set `UsesLoadBalancing` instead.\n* `GetSSOTicket(bool loadBalancing)` --&gt;  Please set `UsesLoadBalancing` instead.\n* `SetAbapDebug(bool enabled)` --&gt; Please use external breakpoints in ABAP debugger instead.\n\n\n`ClientProtocol.RFC` has been marked as obsolete. Please use `ClientProtocol.NWRFC` instead. The default value will be switched to NWRFC 2023-10-01."
       }
     ]
   },
@@ -3788,7 +3810,7 @@
         "Product": "ERPConnect",
         "Component": "Idoc",
         "Message": "Fixed a bug where saving an Idoc schema incorrectly changed field names",
-        "ReleaseNote": "# ERPConnect 6.14.19\n\nIdoc segment field names had `ST_` and `FZ_` at their beginning replaced with `USTU-` and `UFZU-`. This is due to a bug in the internal name escaping logic. This fix might break existing code that already circumvents this bug. "
+        "ReleaseNote": "Idoc segment field names had `ST_` and `FZ_` at their beginning replaced with `USTU-` and `UFZU-`. This is due to a bug in the internal name escaping logic. This fix might break existing code that already circumvents this bug."
       }
     ]
   },
@@ -5841,12 +5863,7 @@
         "Product": "ERPConnect",
         "Component": "General",
         "Message": "Various small API changes (see release notes for details)",
-        "ReleaseNote": "# ERPConnect 6.13.0\n\n* fix for parameters with decfloat types\n* added RFCParameter.SetValueInternal()\n* marked RFCParameter.GetLength() as obsolete\n* removed RFCServerFunctionCollection.Find() (obsolete)\n* removed RFCTableColumn.FixedLength (obsolete) - this also affects LINQtoERP, please regenerate your code"
-      },
-      {
-        "Product": "ERPConnect",
-        "Component": "General",
-        "Message": "--"
+        "ReleaseNote": "* Fix for parameters with `decfloat` types\n* Added `RFCParameter.SetValueInternal()`\n* Marked `RFCParameter.GetLength()` as **obsolete**\n* Removed `RFCServerFunctionCollection.Find()` (obsolete)\n* Removed `RFCTableColumn.FixedLength` (obsolete) - this also affects LINQtoERP, please regenerate your code"
       }
     ]
   },
@@ -5924,7 +5941,7 @@
         "Product": "ERPConnect",
         "Component": "General",
         "Message": "IsSupplied Property is now also persisted when serializing RFCParameter.",
-        "ReleaseNote": "This change was made to fix a bug where deserializing an RFCFunction via LoadFromXML would deserialize all the export parameters as `IsSupplied = true` causing an empty string to be sent to SAP. This in turn would cause SAP to not use the default values for those parameters."
+        "ReleaseNote": "This change was made to fix a bug where deserializing an `RFCFunction` via `LoadFromXML` would deserialize all the export parameters as `IsSupplied = true` causing an empty string to be sent to SAP. This in turn would cause SAP to not use the default values for those parameters."
       }
     ]
   },
@@ -6399,7 +6416,7 @@
       {
         "Product": "ERPConnect",
         "Component": "General",
-        "Message": "Adjustments for trial licenses."
+        "Message": "Adjustments for demo licenses."
       },
       {
         "Product": "Common",
@@ -7896,7 +7913,7 @@
       {
         "Product": "XtractIS",
         "Component": "Table",
-        "Message": "Fix for wide columns (> 2000 bytes)"
+        "Message": "Fix for wide columns (&gt; 2000 bytes)"
       },
       {
         "Product": "XtractKernel",
@@ -8263,8 +8280,8 @@
       {
         "Product": "ERPConnect",
         "Component": "General",
-        "Message": "Some collections are implementing generic IList<T> now instead of non-generic interfaces",
-        "ReleaseNote": "# ERPConnect 6.3\n\nThe base class / collection interface of following classes have changed:\n- RFCParameterCollection\n- RFCServerFunctionCollection\n- RFCStructureCollection\n- RFCTableCollection\n- RFCTableColumnCollection\n\nThese classes don't inherit from CollectionBase any more and no longer implement non-generic collection interfaces like IList. They now implement the generic IList<T> interface.\nThis is a breaking change, but it shouldn't require any code adjustments in most cases."
+        "Message": "Some collections are implementing generic IList&lt;T&gt; now instead of non-generic interfaces",
+        "ReleaseNote": "The base class / collection interface of the following classes have changed:\n* `RFCParameterCollection`\n* `RFCServerFunctionCollection`\n* `RFCStructureCollection`\n* `RFCTableCollection`\n* `RFCTableColumnCollection`\n\nThese classes don't inherit from `CollectionBase` any more and no longer implement non-generic collection interfaces like `IList`. They now implement the generic `IList&lt;T&gt;` interface.\nThis is a breaking change, but it shouldn't require any code adjustments in most cases."
       },
       {
         "Product": "XtractKernel",
@@ -8647,7 +8664,7 @@
         "Product": "ERPConnect",
         "Component": "General",
         "Message": "New implementation of ReadTable class & support for non-Unicode multibyte codepages",
-        "ReleaseNote": "# ERPConnect 6.1\n\nThis release adds support for multibyte codepages on non-Unicode SAP systems.\nFurthermore, the ReadTable class has been re-engineered, which includes a few breaking changes:\n\n### Removed ReadTable.AddCriteria()\nThis method had several unexpected consquences. Please use the WhereClause property instead.\n\n### Removed ReadTable.Delimiter\nThis used to be a workaround for non-Unicode multibyte codepages. Full multibyte support has been implemented, therefore the delimiter is not needed anymore.\n\n### Removed ReadTable.UsePrimaryKeyPackaging\nPackaging is primarily performed on the ABAP side. Please use custom function modules if you have special requirements for packaging.\n\n### ReadTable.Fields behaves differently\nThe Fields collection is used for both field selection and result metadata. Calling ReadTable.AddField() will add a field to this collection. In previous versions, the collection had only been used for result metadata.\n\nIn combination with RetrieveAllFieldsOfTable() that means, you can remove the fields that you don't want to extract from the Fields collection. If you want to use AddField(), please clear the collection after calling RetrieveAllFieldsOfTable() or use separate ReadTable instances.\n\n### Removed UseMultibyteExtraction flag from LINQtoERP\nThis flag has no use anymore, since multibyte codepages are fully supported without setting any flags or using other workarounds.\n\n### IncomingPackage & PackageProgress\nPackageProgress is fired always - RaiseIncomingPackageEvent no longer disables PackageProgress event.\n\nIncomingPackage is no longer fired  if package is empty."
+        "ReleaseNote": "This release adds support for multibyte codepages on non-Unicode SAP systems.\nFurthermore, the `ReadTable` class has been re-engineered, which includes a few breaking changes:\n\n### Removed ReadTable.AddCriteria()\nThis method had several unexpected consquences. Please use the `WhereClause` property instead.\n\n### Removed ReadTable.Delimiter\nThis used to be a workaround for non-Unicode multibyte codepages. Full multibyte support has been implemented, therefore the delimiter is not needed anymore.\n\n### Removed ReadTable.UsePrimaryKeyPackaging\nPackaging is primarily performed on the ABAP side. Please use custom function modules if you have special requirements for packaging.\n\n### ReadTable.Fields behaves differently\nThe `Fields` collection is used for both field selection and result metadata. Calling `ReadTable.AddField()` will add a field to this collection. In previous versions, the collection had only been used for result metadata.\n\nIn combination with `RetrieveAllFieldsOfTable()` that means, you can remove the fields that you don't want to extract from the `Fields` collection. If you want to use `AddField()`, please clear the collection after calling `RetrieveAllFieldsOfTable()` or use separate `ReadTable` instances.\n\n### Removed UseMultibyteExtraction flag from LINQtoERP\nThis flag has no use anymore, since multibyte codepages are fully supported without setting any flags or using other workarounds.\n\n### IncomingPackage & PackageProgress\n`PackageProgress` is fired always - `RaiseIncomingPackageEvent` no longer disables the `PackageProgress` event.\n\n`IncomingPackage` is no longer fired  if package is empty."
       },
       {
         "Product": "ERPConnect",
@@ -11095,7 +11112,7 @@
         "Product": "ERPConnect",
         "Component": "General",
         "Message": "Removed ERPConnect20.dll & ERPConnect40.dll, updated ERPConnect45.dll to .NET Framework 4.5.2, removed support for SOAP",
-        "ReleaseNote": "# ERPConnect 5.0.0 Release Note\n\n## ERPConnect20.dll\n\nERPConnect20.dll has been around since the early days of .NET 2.0 in 2005.\nOn July 12, 2011 Microsoft stopped supporting .NET Framework\n[2.0](https://support.microsoft.com/en-us/lifecycle/search/?p1=8291) and \n[3.x prior to 3.5 SP1](https://support.microsoft.com/en-us/lifecycle/search/?p1=12292).\nThat means, there have been no updates published by Microsoft for more than five years now for these .NET versions, not even security patches.  \nSupport by Microsoft for\n[Visual Studio 2005](https://blogs.msdn.microsoft.com/visualstudio/2016/03/11/support-ending-for-visual-studio-2005/)\nended on April 12, 2016.\nTherefore, we decided to remove ERPConnect20.dll. It can be easly replaced with ERPConnect35.dll or ERPConnect45.dll\n\n## ERPConnect40.dll and ERPConnect45.dll\n\nSupport by Microsoft  for .NET Framework\n[4, 4.5 and 4.5.1](https://support.microsoft.com/en-us/lifecycle/search/?p1=14380)\nended on January 12, 2016.\n\nThat means there have been no updates and no security patches for these .NET versions for more that a year now.\nTherefore, we also decided to remove ERPConnect40.dll. Like ERPConnect20.dll, it can be easly replaced with ERPConnect35.dll or ERPConnect45.dll.\nWe also updated the target for ERPConnect45.dll to .NET Framework 4.5.2.\n\n## Migration\n\nIf you have been using ERPConnect20.dll or ERPConnect40.dll in your projects,\nplease replace all references to those assemblies with either ERPConnect35.dll or ERPConnect45.dll.\n\nIf you want your software to run on CLR2, use ERPConnect35.dll and target NET Framework 3.5 / .NET Framework 3.5 Client Profile.\n\nIf you don't need to support CLR2, use ERPConnect45.dll and target .NET Framework 4.5.2 or higher\n\n[Common Langauge Runtime (CLR)](https://msdn.microsoft.com/en-us/library/8bs2ecf4.aspx)  \n[How to: Target a Version of the .NET Framework](https://msdn.microsoft.com/en-us/library/bb398202.aspx)\n\n## SOAP is no longer supported by ERPConnect\n\nBecause of performance issues related to the verbosity of XML and low customer demand, support for SOAP connections has been removed. SOAP had been marked as deprecated since May 06, 2015. Please use `ClientProtocol.NWRFC` or `ClientProtocol.RFC instead`.\n"
+        "ReleaseNote": "## ERPConnect20.dll\n\n`ERPConnect20.dll` has been around since the early days of .NET 2.0 in 2005.\nOn July 12, 2011 Microsoft stopped supporting .NET Framework versions\n* [2.0](https://support.microsoft.com/en-us/lifecycle/search/?p1=8291)\n* [3.x prior to 3.5 SP1](https://support.microsoft.com/en-us/lifecycle/search/?p1=12292).\nThat means, there have been no updates published by Microsoft for more than five years now for these .NET versions, not even security patches.\nSupport by Microsoft for [Visual Studio 2005](https://blogs.msdn.microsoft.com/visualstudio/2016/03/11/support-ending-for-visual-studio-2005/) ended on April 12, 2016.\nTherefore, we decided to remove `ERPConnect20.dll`. It can be easly replaced with `ERPConnect35.dll` or `ERPConnect45.dll`\n\n## ERPConnect40.dll and ERPConnect45.dll\n\nSupport by Microsoft  for .NET Framework [4, 4.5 and 4.5.1](https://support.microsoft.com/en-us/lifecycle/search/?p1=14380) ended on January 12, 2016.\n\nThat means there have been no updates and no security patches for these .NET versions for more that a year now.\nTherefore, we also decided to remove `ERPConnect40.dll`. Like `ERPConnect20.dll`, it can be easly replaced with `ERPConnect35.dll` or `ERPConnect45.dll`.\nWe also updated the target for `ERPConnect45.dll` to .NET Framework 4.5.2.\n\n## Migration\n\nIf you have been using `ERPConnect20.dll` or `ERPConnect40.dll` in your projects, please replace all references to those assemblies with either `ERPConnect35.dll` or `ERPConnect45.dll`.\n\nIf you want your software to run on `CLR2`, use `ERPConnect35.dll` and target NET Framework 3.5 / .NET Framework 3.5 Client Profile.\n\nIf you don't need to support CLR2, use `ERPConnect45.dll` and target .NET Framework 4.5.2 or higher\n\n[Common Langauge Runtime (CLR)](https://msdn.microsoft.com/en-us/library/8bs2ecf4.aspx) \n[How to: Target a Version of the .NET Framework](https://msdn.microsoft.com/en-us/library/bb398202.aspx)\n\n## SOAP is no longer supported by ERPConnect\n\nBecause of performance issues related to the verbosity of XML and low customer demand, support for SOAP connections has been removed. SOAP had been marked as deprecated since May 06, 2015. Please use `ClientProtocol.NWRFC` or `ClientProtocol.RFC instead`"
       },
       {
         "Product": "ERPConnect",
@@ -14412,7 +14429,7 @@
       {
         "Product": "ERPConnect",
         "Component": "Idoc",
-        "Message": "Bug fix for using < or > sign in IDoc segment description texts while saving the Schema to an XML file"
+        "Message": "Bug fix for using &lt; or &gt; sign in IDoc segment description texts while saving the Schema to an XML file"
       },
       {
         "Product": "XtractKernel",
@@ -15341,7 +15358,7 @@
       {
         "Product": "ERPConnect",
         "Component": "General",
-        "Message": "Property BWVariable.UID withdrawn -> was useless"
+        "Message": "Property BWVariable.UID withdrawn -&gt; was useless"
       },
       {
         "Product": "ERPConnect",
@@ -15356,7 +15373,7 @@
       {
         "Product": "XtractKernel",
         "Component": "BW Cube",
-        "Message": "Fix for variable handling in BEX mode under certain release > 7.01"
+        "Message": "Fix for variable handling in BEX mode under certain release &gt; 7.01"
       }
     ]
   },
