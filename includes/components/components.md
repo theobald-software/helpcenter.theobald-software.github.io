@@ -14,12 +14,12 @@
   
 - title: {{ bwloader }}
   image: site:assets/images/logos/components/BWLoader.svg
-  content: Load data into SAP BW systems. <br> <br> <span class="keyword">BW</span><span class="keyword">type&#58; destination</span> 
+  content: Load data into SAP BW systems. <br> <br> <br> <span class="keyword">BW</span><span class="keyword">type&#58; destination</span> 
   url: site:documentation/bwloader/
 
 - title: {{ hierarchy }}
   image: site:assets/images/logos/components/Hierarchy.svg
-  content: Extract Hierarchies from an SAP BW / BI system. <br> <br> <span class="keyword">BW</span><span class="keyword">type&#58; source</span> 
+  content: Extract Hierarchies from an SAP BW / BI system. <br> <br> <br> <span class="keyword">BW</span><span class="keyword">type&#58; source</span> 
   url: site:documentation/hierarchy/
   
 - title: {{ deltaq }}
@@ -44,7 +44,7 @@
 
 - title: {{ report }}
   image: site:assets/images/logos/components/Report.svg
-  content: Extract data from SAP ABAP reports.<br> <br><span class="keyword">ERP/ ECC</span> <span class="keyword">type&#58; source</span>
+  content: Extract data from SAP ABAP reports.<br> <br> <br><span class="keyword">ERP/ ECC</span> <span class="keyword">type&#58; source</span>
   url: site:documentation/report/
   
 - title: {{ table }}
@@ -146,7 +146,7 @@
 
 - title: {{ report }}
   image: site:assets/images/logos/components/Report.svg
-  content: Extract data from SAP ABAP reports. <br> <br> <span class="keyword">ERP/ ECC</span> 
+  content: Extract data from SAP ABAP reports. <br> <br> <br> <span class="keyword">ERP/ ECC</span> 
   url: site:documentation/report/
   
 - title: {{ table }}

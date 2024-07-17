@@ -49,5 +49,3 @@ hide:
 - [The remote host's name did not match the name on the provided certificate](https://support.theobald-software.com/helpdesk/KB/View/20153-the-remote-host-s-name-did-not-match-the-name-on-the-provided-certificate-)
 
 </div>
-
----
