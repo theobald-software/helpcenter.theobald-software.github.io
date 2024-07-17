@@ -1,5 +1,38 @@
 [
   {
+    "Version": "1.32.18.9",
+    "LegacyReleaseDate": "2024-07-15 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Common",
+        "Component": "General",
+        "Message": "Updated support for new version numbering features"
+      }
+    ]
+  },
+  {
+    "Version": "1.32.18.7",
+    "LegacyReleaseDate": "2024-07-12 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "Hierarchy",
+        "Message": "Fixed a bug where Node Description Texts couldn't be found."
+      }
+    ]
+  },
+  {
+    "Version": "1.32.18.6",
+    "LegacyReleaseDate": "2024-07-12 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Server",
+        "Component": "General",
+        "Message": "The runtime now provides the extraction timestamp as DateTime type to the destinations."
+      }
+    ]
+  },
+  {
     "Version": "1.32.18.5",
     "LegacyReleaseDate": "2024-07-12 00:00:00Z",
     "Changes": [
@@ -3697,7 +3730,7 @@
         "Product": "ERPConnect",
         "Component": "RFC Client",
         "Message": "Various breaking changes to R3Connection API",
-        "ReleaseNote": "# Changes to R3Connection\nThe following properties/methods have been removed.\n\n* `MultithreadingEnvironment` The feature is always active and cannot be disabled.\n* `AllowStartProgram(string programList)`. Please contact support if you really need this feature.\n\n\nThe following properties/constructors/methods have been marked as obsolete and will be removed 2023-10-01.\n\n* `ConnectionString` --> Please use `ParseConnectionString()` instead.\n* `R3Connection(string connectionString)` --> Please use `ParseConnectionString()` instead.\n* `Open(string rfcConnectionString)`--> Please use `ParseConnectionString()` instead.\n* `OpenSSO(string ticket, bool loadBalancing)` --> Please set `LogonTicket` and `UsesLoadBalancing` instead.\n* `OpenSSO(string ticket)` --> Please set `LogonTicket` instead.\n* `Open(bool useLoadBalancing)` --> Please set `UsesLoadBalancing` instead.\n* `GetSSOTicket(bool loadBalancing)` -->  Please set `UsesLoadBalancing` instead.\n* `SetAbapDebug(bool enabled)` --> Please use external breakpoints in ABAP debugger instead.\n\n\n`ClientProtocol.RFC` has been marked as obsolete. Please use `ClientProtocol.NWRFC` instead. The default value will be switched to NWRFC 2023-10-01."
+        "ReleaseNote": "# Changes to R3Connection\nThe following properties/methods have been removed.\n\n* `MultithreadingEnvironment` The feature is always active and cannot be disabled.\n* `AllowStartProgram(string programList)`. Please contact support if you really need this feature.\n\n\nThe following properties/constructors/methods have been marked as obsolete and will be removed 2023-10-01.\n\n* `ConnectionString` --&gt; Please use `ParseConnectionString()` instead.\n* `R3Connection(string connectionString)` --&gt; Please use `ParseConnectionString()` instead.\n* `Open(string rfcConnectionString)`--&gt; Please use `ParseConnectionString()` instead.\n* `OpenSSO(string ticket, bool loadBalancing)` --&gt; Please set `LogonTicket` and `UsesLoadBalancing` instead.\n* `OpenSSO(string ticket)` --&gt; Please set `LogonTicket` instead.\n* `Open(bool useLoadBalancing)` --&gt; Please set `UsesLoadBalancing` instead.\n* `GetSSOTicket(bool loadBalancing)` --&gt;  Please set `UsesLoadBalancing` instead.\n* `SetAbapDebug(bool enabled)` --&gt; Please use external breakpoints in ABAP debugger instead.\n\n\n`ClientProtocol.RFC` has been marked as obsolete. Please use `ClientProtocol.NWRFC` instead. The default value will be switched to NWRFC 2023-10-01."
       }
     ]
   },
@@ -5742,7 +5775,7 @@
         "Product": "ERPConnect",
         "Component": "Idoc",
         "Message": "Fixed a bug where saving an Idoc schema incorrectly changed field names",
-        "ReleaseNote": "# ERPConnect 6.14.19\n\nIdoc segment field names had `ST_` and `FZ_` at their beginning replaced with `USTU-` and `UFZU-`. This is due to a bug in the internal name escaping logic. This fix might break existing code that already circumvents this bug. "
+        "ReleaseNote": "Idoc segment field names had `ST_` and `FZ_` at their beginning replaced with `USTU-` and `UFZU-`. This is due to a bug in the internal name escaping logic. This fix might break existing code that already circumvents this bug."
       }
     ]
   },
