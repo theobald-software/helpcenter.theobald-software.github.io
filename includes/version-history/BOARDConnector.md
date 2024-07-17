@@ -1,5 +1,7 @@
 |Version|Date    |Component   |Description|
 |:-----:|:------:|:----------:|:----------|
+|[6.6.0 [L]](https://helpcenter.theobald-software.com/release-notes/BOARDConnector-6.6.0)|2024-07-17|General|We migrated Board Connector away from the Windows specific .NETFramework to the new .NET (Version 8.0). Run the ConfigConverter during installation to make sure the server runs correctly.  The setup will install the runtimes automatically during installation of Board Connector.([Release note](https://helpcenter.theobald-software.com/release-notes/BOARDConnector-6.6.0))|
+|6.5.4 [L]|2024-06-21|BW Cube|Fixed a bug that caused filters to be removed when refreshing metadata|
 |[6.5.2 [H]](https://helpcenter.theobald-software.com/release-notes/BOARDConnector-6.5.2)|2024-06-04|Server|Fixed a denial of service vulnerability, where the server would hang in a cleanup loop and fill up its log file.([Release note](https://helpcenter.theobald-software.com/release-notes/BOARDConnector-6.5.2))|
 |6.5.1 [L]|2024-05-17|BW Cube|Fix for config converter not converting custom column order in BW Cube extractions.|
 |6.5.0 [L]|2024-05-17|TableCDC|Released Monitoring Feature for Log Tables and Triggers. Update of /THEO/CDC* package required.|
@@ -260,7 +262,7 @@
 |2.15.4 [L]|2015-07-18|Table Join|Updated TQB for Table Join component.|
 |2.15.3 [L]|2015-07-17|General|Updated code to run on .NET 4.|
 |2.15.2 [L]|2015-07-14|Setup|Updated support client to 10.0.43879.0|
-|2.15.0 [M]|2015-06-30|General|Regular license is preferred to trial license now|
+|2.15.0 [M]|2015-06-30|General|Purchased license is preferred to demo license now|
 |2.14.0 [L]|2015-06-30|Server|Removed HttpLocalOnly server setting (please use server security settings instead)|
 |2.12.8 [L]|2015-05-21|Designer|Delete button & menu item is disabled in GUI if user does not has appropriate privileges|
 |2.12.7 [M]|2015-05-20|Designer|Fixed extraction name validation|
