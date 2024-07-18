@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
-<AlteryxDocument yxmdVer="2022.3">
+<AlteryxDocument yxmdVer="2024.1" RunE2="T">
   <Nodes>
     <Node ToolID="4">
       <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-        <Position x="630" y="318" />
+        <Position x="618" y="354" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -26,7 +26,7 @@
     </Node>
     <Node ToolID="5">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="354" y="330" />
+        <Position x="342" y="366" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -63,7 +63,7 @@
     </Node>
     <Node ToolID="6">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
-        <Position x="726" y="318" />
+        <Position x="714" y="354" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -86,7 +86,7 @@ Posting Month - Descending</DefaultAnnotationText>
     </Node>
     <Node ToolID="10">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-        <Position x="438" y="330" />
+        <Position x="426" y="366" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -103,7 +103,7 @@ Posting Month - Descending</DefaultAnnotationText>
     </Node>
     <Node ToolID="11">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="546" y="318" />
+        <Position x="534" y="354" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -123,7 +123,7 @@ Posting Month - Descending</DefaultAnnotationText>
     </Node>
     <Node ToolID="1">
       <GuiSettings Plugin="Theobald.Alteryx.Table.TableInputToolFactory">
-        <Position x="162" y="330" />
+        <Position x="150" y="366" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -4627,7 +4627,7 @@ Posting Month - Descending</DefaultAnnotationText>
     </Node>
     <Node ToolID="3">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="846" y="318" />
+        <Position x="834" y="354" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -4655,7 +4655,7 @@ Posting Month - Descending</DefaultAnnotationText>
     </Node>
     <Node ToolID="15">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
-        <Position x="846" y="414" />
+        <Position x="834" y="450" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -4682,7 +4682,7 @@ Query=Universal_Journal_Analysis</DefaultAnnotationText>
     </Node>
     <Node ToolID="16">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
-        <Position x="846" y="522" />
+        <Position x="834" y="558" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -4704,7 +4704,7 @@ Query=Universal_Journal_Analysis</DefaultAnnotationText>
     </Node>
     <Node ToolID="17">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="954" y="414" width="144" height="84" />
+        <Position x="942" y="450" width="144" height="84" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -4724,7 +4724,7 @@ Query=Universal_Journal_Analysis</DefaultAnnotationText>
     </Node>
     <Node ToolID="18">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="954" y="522" width="144" height="96" />
+        <Position x="942" y="558" width="144" height="96" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -4744,7 +4744,7 @@ Query=Universal_Journal_Analysis</DefaultAnnotationText>
     </Node>
     <Node ToolID="20">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="954" y="318" width="144" height="72" />
+        <Position x="942" y="354" width="144" height="72" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -4764,7 +4764,7 @@ Query=Universal_Journal_Analysis</DefaultAnnotationText>
     </Node>
     <Node ToolID="21">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="810" y="234" width="288" height="60" />
+        <Position x="798" y="270" width="288" height="60" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -4785,7 +4785,7 @@ Output Data]]></Text>
     </Node>
     <Node ToolID="22">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="66" y="234" width="252" height="60" />
+        <Position x="54" y="270" width="252" height="60" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -4806,7 +4806,7 @@ Input Data]]></Text>
     </Node>
     <Node ToolID="23">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="330" y="234" width="468" height="60" />
+        <Position x="318" y="270" width="468" height="60" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -4827,7 +4827,7 @@ Data Preparation & Cleansing]]></Text>
     </Node>
     <Node ToolID="25">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="366" y="426" />
+        <Position x="354" y="462" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -4856,17 +4856,19 @@ Data Preparation & Cleansing]]></Text>
     </Node>
     <Node ToolID="27">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="66" y="18" width="1032" height="204" />
+        <Position x="54" y="30" width="1032" height="228" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <Text>In this Starter Kit Alteryx workflow the 'Xtract for Alteryx' connector is used to load data from SAP S/4HANA's Universal Journal and prepare it for further analysis in Excel, a 3rd party BI solution, or Alteryx AutoInsights.
+          <Text>In this Starter Kit Alteryx workflow the Xtract for Alteryx connector is used to load data from SAP S/4HANA's Universal Journal and prepare it for further analysis in Excel, a 3rd party BI solution, or Alteryx AutoInsights.
 
-To use the Xtract Table components which read data from SAP systems such as S/4HANA or ERP you need to install the Xtract for Alteryx connector. Please contact your Alteryx sales rep for more information. A free 30 day trial is available on https://theobald-software.com/en/download-trial
+To use the Xtract Table components, which read data from SAP systems such as S/4HANA or ERP, install the Xtract for Alteryx connector. Contact your Alteryx sales representative for more information. A free 30 day trial is available on https://theobald-software.com/en/download-trial.
 
-Required SAP authorizations: https://kb.theobald-software.com/sap/authority-objects-sap-user-rights
-How to set up the SAP connection: https://help.theobald-software.com/en/xtract-for-alteryx/sap-connection
-For increased performance and features use the Z_THEO_READ_TABLE function module which needs to be installed separately (see https://help.theobald-software.com/en/xtract-for-alteryx/table)</Text>
+Required SAP authorizations: https://helpcenter.theobald-software.com/xtract-for-alteryx/documentation/setup-in-sap/sap-authority-objects.
+
+How to set up the SAP connection: https://helpcenter.theobald-software.com/xtract-for-alteryx/documentation/sap-connection.
+
+For increased performance and features use the Z_THEO_READ_TABLE function module, which needs to be installed separately (see https://helpcenter.theobald-software.com/xtract-for-alteryx/documentation/table).</Text>
           <Font name="Arial" size="11.25" style="1" />
           <TextColor name="Black" />
           <FillColor r="232" g="232" b="232" />
@@ -4937,9 +4939,10 @@ For increased performance and features use the Z_THEO_READ_TABLE function module
     <ShowConnectionStatusOnlyWhenRunning value="True" />
     <ZoomLevel value="0" />
     <LayoutType>Horizontal</LayoutType>
+    <IsTemplate value="False" />
     <MetaInfo>
       <NameIsFileName value="True" />
-      <Name>Table - S4 - Univeral Journal</Name>
+      <Name>Table-S4</Name>
       <Description />
       <RootToolName />
       <ToolVersion />
@@ -4959,6 +4962,7 @@ For increased performance and features use the Z_THEO_READ_TABLE function module
         <PreviousWorkflowId value="86315de7-dc27-4b74-b688-0e4ee70d7112" />
         <OriginWorkflowId value="0796e9f6-f0a2-438e-996a-9c4187a58837" />
       </Telemetry>
+      <PlatformWorkflowId value="" />
     </MetaInfo>
     <Events>
       <Enabled value="True" />

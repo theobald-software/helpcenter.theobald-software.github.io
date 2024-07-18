@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<AlteryxDocument yxmdVer="2023.1">
+<AlteryxDocument yxmdVer="2024.1" RunE2="T">
   <Nodes>
     <Node ToolID="21">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
@@ -70,7 +70,7 @@ Extraction]]></Text>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <Text>In this Alteryx workflow the 'Xtract for Alteryx' connector is used to load data from SAP systems with dynamic runtime parameters applied for filtering.
+          <Text>In this Alteryx workflow the Xtract for Alteryx connector is used to load data from SAP systems with dynamic runtime parameters applied for filtering.
 
 It is possible to use scalar parameters (single row / value) or list parameters (multiple rows / values) for the extraction.</Text>
           <Font name="Arial" size="11.25" style="1" />
@@ -95,18 +95,18 @@ It is possible to use scalar parameters (single row / value) or list parameters 
           <Text><![CDATA[Additional Explanations
 
 Mapping:
-The mapping of the incoming data to the Xtract for Alteryx runtime parameters is done by comparing the column names. The input column for a runtime parameter needs to have the same name as the runtime parameter.
+The mapping of incoming data to Xtract for Alteryx runtime parameters is achieved by comparing column names. The input column for a runtime parameter must match the runtime parameter name exactly.
 
 List parameters:
-List parameters need to be passed as data type string (even if in the SAP system the data type is different e.g. number or date). For this reason it is a best practice to change the data type in an Alteryx "Select" tool to a string type in order to ensure the data type is correct.
+List parameters must be passed as strings, regardless of their original data type in the SAP system (e.g., number or date). Therefore, it is best practice to use the Alteryx "Select" tool to convert these parameters to string type, ensuring the correct data type is used.
 
-List parameters should be used with the IN or NOT IN operators. Using them with operators such as Equal or Greater will result in error messages.
+List parameters should be used with the IN or NOT IN operators. Using them with operators like Equal or Greater will result in error messages.
 
 Scalar parameters:
-Scalar parameters are available as String, Number or Flag parameters and only work with one value and will take this value from the first row. If multiple rows are in the input, the subsequent rows will be ignored.
+Scalar parameters are available as String, Number, or Flag types and only accept a single value, which is taken from the first row. If multiple rows are present in the input, the subsequent rows will be ignored.
 
 Date values:
-Date values should be formatted in the SAP date style "yyyymmdd" in order to be used as runtime parameter filters for SAP date fields.
+Date values must be formatted in the SAP date style "yyyymmdd" to be used as runtime parameter filters for SAP date fields.
 
 ]]></Text>
           <Font name="Arial" size="11.25" style="1" />
@@ -13961,10 +13961,6 @@ Date values should be formatted in the SAP date style "yyyymmdd" in order to be 
   </Nodes>
   <Connections>
     <Connection>
-      <Origin ToolID="49" Connection="Output" />
-      <Destination ToolID="30" Connection="Parameters" />
-    </Connection>
-    <Connection>
       <Origin ToolID="31" Connection="Output" />
       <Destination ToolID="49" Connection="Input" />
     </Connection>
@@ -13977,10 +13973,6 @@ Date values should be formatted in the SAP date style "yyyymmdd" in order to be 
       <Destination ToolID="51" Connection="Input" />
     </Connection>
     <Connection>
-      <Origin ToolID="36" Connection="Output" />
-      <Destination ToolID="34" Connection="Parameters" />
-    </Connection>
-    <Connection>
       <Origin ToolID="35" Connection="Output" />
       <Destination ToolID="36" Connection="Input" />
     </Connection>
@@ -13991,10 +13983,6 @@ Date values should be formatted in the SAP date style "yyyymmdd" in order to be 
     <Connection>
       <Origin ToolID="29" Connection="Output" />
       <Destination ToolID="60" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="60" Connection="Output" />
-      <Destination ToolID="1" Connection="Parameters" />
     </Connection>
   </Connections>
   <Properties>
@@ -14015,6 +14003,7 @@ Date values should be formatted in the SAP date style "yyyymmdd" in order to be 
     <ShowConnectionStatusOnlyWhenRunning value="True" />
     <ZoomLevel value="0" />
     <LayoutType>Horizontal</LayoutType>
+    <IsTemplate value="False" />
     <MetaInfo>
       <NameIsFileName value="True" />
       <Name>Table-Dynamic-Parameters</Name>

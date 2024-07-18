@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<AlteryxDocument yxmdVer="2022.3">
+<AlteryxDocument yxmdVer="2024.1" RunE2="T">
   <Nodes>
     <Node ToolID="3">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
@@ -52,9 +52,6 @@
 Query=SalesData</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
     </Node>
@@ -77,9 +74,6 @@ Query=SalesData</DefaultAnnotationText>
           <DefaultAnnotationText>Sales_Data.hyper</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
     </Node>
@@ -237,16 +231,17 @@ Data Preparation & Cleansing]]></Text>
     </Node>
     <Node ToolID="27">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="54" y="54" width="1032" height="168" />
+        <Position x="54" y="18" width="1032" height="204" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <Text>In this Starter Kit Alteryx workflow the 'Xtract for Alteryx' connector is used to load data from a SAP BW Query (connected to SD Demo Cube - $0D_DECU) and prepare it for further analysis in Excel or a 3rd party BI solution.
+          <Text>In this Starter Kit Alteryx workflow the Xtract for Alteryx connector is used to load data from a SAP BW Query (connected to SD Demo Cube - $0D_DECU) and prepare it for further analysis in Excel or a 3rd party BI solution.
 
-To use the Xtract Cube component which reads data from SAP Business Warehouse systems such as BW or BW/4HANA you need to install the Xtract for Alteryx connector. Please contact your Alteryx sales rep for more information. A free 30 day trial is available on https://theobald-software.com/en/download-trial
+To use the Xtract Cube component, which reads data from SAP Business Warehouse systems such as BW or BW/4HANA, install the Xtract for Alteryx connector. Contact your Alteryx sales representative for more information. A free 30 day trial is available on https://theobald-software.com/en/download-trial.
 
-Required SAP authorizations: https://kb.theobald-software.com/sap/authority-objects-sap-user-rights#bw-query--bw-cube
-How to set up the SAP connection: https://help.theobald-software.com/en/xtract-for-alteryx/sap-connection</Text>
+Required SAP authorizations: https://helpcenter.theobald-software.com/xtract-for-alteryx/documentation/setup-in-sap/sap-authority-objects.
+
+How to set up the SAP connection: https://helpcenter.theobald-software.com/xtract-for-alteryx/documentation/sap-connection.</Text>
           <Font name="Arial" size="11.25" style="1" />
           <TextColor name="Black" />
           <FillColor r="232" g="232" b="232" />
@@ -1350,9 +1345,10 @@ Tax in % = Round([Tax Amount]*100/[Gros...</DefaultAnnotationText>
     <ShowConnectionStatusOnlyWhenRunning value="True" />
     <ZoomLevel value="0" />
     <LayoutType>Horizontal</LayoutType>
+    <IsTemplate value="False" />
     <MetaInfo>
       <NameIsFileName value="True" />
-      <Name>Cube - BW Query</Name>
+      <Name>Cube-BWQuery</Name>
       <Description />
       <RootToolName />
       <ToolVersion />
@@ -1372,6 +1368,7 @@ Tax in % = Round([Tax Amount]*100/[Gros...</DefaultAnnotationText>
         <PreviousWorkflowId value="ceb2df07-f129-4500-b993-61e1cd00c89e" />
         <OriginWorkflowId value="0796e9f6-f0a2-438e-996a-9c4187a58837" />
       </Telemetry>
+      <PlatformWorkflowId value="" />
     </MetaInfo>
     <Events>
       <Enabled value="True" />

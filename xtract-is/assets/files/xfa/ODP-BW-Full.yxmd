@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<AlteryxDocument yxmdVer="2022.3">
+<AlteryxDocument yxmdVer="2024.1" RunE2="T">
   <Nodes>
     <Node ToolID="3">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
@@ -231,17 +231,17 @@ Data Preparation & Cleansing]]></Text>
     </Node>
     <Node ToolID="27">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="54" y="54" width="1032" height="168" />
+        <Position x="54" y="6" width="1032" height="216" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <Text><![CDATA[In this Starter Kit Alteryx workflow the 'Xtract for Alteryx' connector is used to load sales documents (/IMO/SD_D10$F) and customer master data ('0CUSTOMER$P') from a SAP BW system using SAP's Operational Data Provisioning framework. The data is then combined, cleaned, and prepared for further analysis.
+          <Text>In this Starter Kit Alteryx workflow the Xtract for Alteryx connector is used to load sales documents (/IMO/SD_D10$F) and customer master data ('0CUSTOMER$P') from a SAP BW system using SAP's Operational Data Provisioning framework. The data is then combined, cleaned, and prepared for further analysis.
 
-To use the Xtract ODP component you need to install the Xtract for Alteryx connector. Please contact your Alteryx sales rep for more information. A free 30 day trial is available on https://theobald-software.com/en/download-trial
+To use the Xtract ODP component, install the Xtract for Alteryx connector. Contact your Alteryx sales representative for more information. A free 30 day trial is available on https://theobald-software.com/en/download-trial.
 
-Required SAP authorizations: https://kb.theobald-software.com/sap/authority-objects-sap-user-rights
-How to set up the SAP connection: https://help.theobald-software.com/en/xtract-for-alteryx/sap-connection
-]]></Text>
+Required SAP authorizations: https://helpcenter.theobald-software.com/xtract-for-alteryx/documentation/setup-in-sap/sap-authority-objects.
+
+How to set up the SAP connection: https://helpcenter.theobald-software.com/xtract-for-alteryx/documentation/sap-connection.</Text>
           <Font name="Arial" size="11.25" style="1" />
           <TextColor name="Black" />
           <FillColor r="232" g="232" b="232" />
@@ -1428,9 +1428,10 @@ Query=CustomerList</DefaultAnnotationText>
     <ShowConnectionStatusOnlyWhenRunning value="True" />
     <ZoomLevel value="0" />
     <LayoutType>Horizontal</LayoutType>
+    <IsTemplate value="False" />
     <MetaInfo>
       <NameIsFileName value="True" />
-      <Name>ODP - BW - Full</Name>
+      <Name>ODP-BW-Full</Name>
       <Description />
       <RootToolName />
       <ToolVersion />
@@ -1450,6 +1451,7 @@ Query=CustomerList</DefaultAnnotationText>
         <PreviousWorkflowId value="f14432e0-ec07-48c4-a401-82ddd2126eee" />
         <OriginWorkflowId value="0796e9f6-f0a2-438e-996a-9c4187a58837" />
       </Telemetry>
+      <PlatformWorkflowId value="" />
     </MetaInfo>
     <Events>
       <Enabled value="True" />

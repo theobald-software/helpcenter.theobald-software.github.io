@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<AlteryxDocument yxmdVer="2022.3">
+<AlteryxDocument yxmdVer="2024.1" RunE2="T">
   <Nodes>
     <Node ToolID="3">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
@@ -189,14 +189,14 @@ Data Preparation & Cleansing]]></Text>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <Text><![CDATA[This workflow uses the Xtract ODP component of the 'Xtract for Alteryx' connector to load sales documents (transaction data) and customer master data from an SAP ERP system. The data is then combined, cleaned, and prepared for further analysis.
+          <Text>This workflow uses the Xtract ODP component of the Xtract for Alteryx connector to load sales documents (transaction data) and customer master data from an SAP ERP system. The data is then combined, cleaned, and prepared for further analysis.
 
 To use the Xtract ODP component install the Xtract for Alteryx connector. 
-Please contact your Alteryx sales rep for more information. A free 30-day trial is available at https://theobald-software.com/en/download-trial
+Contact your Alteryx sales representative for more information. A free 30 day trial is available on https://theobald-software.com/en/download-trial.
 
-Required SAP authorizations: https://kb.theobald-software.com/sap/authority-objects-sap-user-rights
-How to set up the SAP connection: https://help.theobald-software.com/en/xtract-for-alteryx/sap-connection
-]]></Text>
+Required SAP authorizations: https://helpcenter.theobald-software.com/xtract-for-alteryx/documentation/setup-in-sap/sap-authority-objects.
+
+How to set up the SAP connection: https://helpcenter.theobald-software.com/xtract-for-alteryx/documentation/sap-connection.</Text>
           <Font name="Arial" size="11.25" style="1" />
           <TextColor name="Black" />
           <FillColor r="232" g="232" b="232" />
@@ -2662,9 +2662,10 @@ Query=Customers_without_transactio...</DefaultAnnotationText>
     <ShowConnectionStatusOnlyWhenRunning value="True" />
     <ZoomLevel value="0" />
     <LayoutType>Horizontal</LayoutType>
+    <IsTemplate value="False" />
     <MetaInfo>
       <NameIsFileName value="True" />
-      <Name>ODP - ERP - Full Extraction</Name>
+      <Name>ODP-ERP-Full</Name>
       <Description />
       <RootToolName />
       <ToolVersion />
@@ -2684,6 +2685,7 @@ Query=Customers_without_transactio...</DefaultAnnotationText>
         <PreviousWorkflowId value="e648e7fa-2d23-4e45-8bb2-5bf848dd8f6d" />
         <OriginWorkflowId value="0796e9f6-f0a2-438e-996a-9c4187a58837" />
       </Telemetry>
+      <PlatformWorkflowId value="" />
     </MetaInfo>
     <Events>
       <Enabled value="True" />

@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<AlteryxDocument yxmdVer="2023.1">
+<AlteryxDocument yxmdVer="2024.1" RunE2="T">
   <Nodes>
     <Node ToolID="21">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
@@ -70,9 +70,9 @@ Data Unification and Preparation]]></Text>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <Text>In this Alteryx workflow the 'Xtract for Alteryx' connector is used to support a system migration such as for example ECC to S/4HANA by validating data integrity. Statistics show that many of the S/4HANA migrations that failed or ran over time had issues with the data migration that were discovered at a late stage of the project or even after Go-Live. In order to avoid this, proper testing of the migrated data needs to be done to ensure that no data is missing and all values are correct. Xtract for Alteryx (XfA) can help here by performing validations that compare data from both source &amp; target systems. This workflow showcases how such validations and checks can be implemented with XfA in Alteryx.
+          <Text>In this Alteryx workflow the Xtract for Alteryx connector is used to support a system migration such as for example ECC to S/4HANA by validating data integrity. Statistics show that many of the S/4HANA migrations that failed or ran over time had issues with the data migration that were discovered at a late stage of the project or even after a Go-Live. To avoid errors , thoroughly test the migrated data to ensure nothing is missing and all values are correct. Xtract for Alteryx (XfA) can help with error prevention by performing validations that compare data from both source and target systems. This workflow showcases how such validations work and how checks can be implemented with XfA in Alteryx.
 
-To use the Xtract Table components which read data from SAP systems such as S/4HANA or ERP you need to install the Xtract for Alteryx connector. Please contact your Alteryx sales rep for more information. A free 30 day trial is available on https://theobald-software.com/en/download-trial</Text>
+To use the Xtract Table components, which read data from SAP systems such as S/4HANA or ERP, install the Xtract for Alteryx connector. Contact your Alteryx sales representative for more information. A free 30 day trial is available on https://theobald-software.com/en/download-trial.</Text>
           <Font name="Arial" size="11.25" style="1" />
           <TextColor name="Black" />
           <FillColor r="232" g="232" b="232" />
@@ -5831,9 +5831,6 @@ THEN Replace([KUNNR], "00101", "00000")
           <DefaultAnnotationText />
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
       </Properties>
       <EngineSettings Macro="CountRecords.yxmc" />
     </Node>
@@ -6079,9 +6076,10 @@ THEN Replace([KUNNR], "00101", "00000")
     <ShowConnectionStatusOnlyWhenRunning value="True" />
     <ZoomLevel value="0" />
     <LayoutType>Horizontal</LayoutType>
+    <IsTemplate value="False" />
     <MetaInfo>
       <NameIsFileName value="True" />
-      <Name>S4 Migration - Source &amp; Target Validations - Real Systems</Name>
+      <Name>S4 Migration - Source &amp; Target Validations - Table level</Name>
       <Description />
       <RootToolName />
       <ToolVersion />

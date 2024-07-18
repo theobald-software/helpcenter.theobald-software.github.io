@@ -1,0 +1,4168 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<AlteryxDocument yxmdVer="2023.2" RunE2="T">
+  <Nodes>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="546" y="258" width="612" height="60" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text><![CDATA[
+Validations & Checks for Differences]]></Text>
+          <Font name="Arial" size="12" style="1" />
+          <TextColor r="237" g="26" b="51" />
+          <FillColor r="232" g="232" b="232" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="258" width="192" height="60" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text><![CDATA[
+Input Data]]></Text>
+          <Font name="Arial" size="12" style="1" />
+          <TextColor r="237" g="26" b="51" />
+          <FillColor r="232" g="232" b="232" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="246" y="258" width="300" height="60" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text><![CDATA[
+Data Unification and Preparation]]></Text>
+          <Font name="Arial" size="12" style="1" />
+          <TextColor r="237" g="26" b="51" />
+          <FillColor r="232" g="232" b="232" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="282" y="666" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\simon\AppData\Local\Temp\Engine_15160_4fc3216a02b93348890f3255e8a50e59_\Engine_15160_ae4f6bcc6772b24a95649e7ecfc997ea~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Browse SAP data</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="27">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="54" width="1332" height="192" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>In this Alteryx workflow the 'Xtract for Alteryx' connector is used to support a system migration such as for example ECC to S/4HANA by validating data integrity. Statistics show that many of the S/4HANA migrations that failed or ran over time had issues with the data migration that were discovered at a late stage of the project or even after Go-Live. In order to avoid this, proper testing of the migrated data needs to be done to ensure that no data is missing and all values are correct. Xtract for Alteryx (XfA) can help here by performing validations that compare data from both source &amp; target systems. This workflow showcases how such validations and checks can be implemented with XfA in Alteryx.
+
+To use the Xtract Table components which read data from SAP systems such as S/4HANA or ERP you need to install the Xtract for Alteryx connector. Please contact your Alteryx sales rep for more information. A free 30 day trial is available on https://theobald-software.com/en/download-trial</Text>
+          <Font name="Arial" size="11.25" style="1" />
+          <TextColor name="Black" />
+          <FillColor r="232" g="232" b="232" />
+          <Shape shape="0" />
+          <Justification Justification="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="32">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="582" y="498" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Customer Number" action="Min" rename="Min_Customer Number" />
+            <SummarizeField field="Right_Customer Number" action="Min" rename="Min_Right_Customer Number" />
+            <SummarizeField field="Customer Number" action="Max" rename="Max_Customer Number" />
+            <SummarizeField field="Right_Customer Number" action="Max" rename="Max_Right_Customer Number" />
+            <SummarizeField field="City" action="CountDistinct" rename="CountDistinct_City" />
+            <SummarizeField field="Right_City" action="CountDistinct" rename="CountDistinct_Right_City" />
+            <SummarizeField field="First telephone number" action="CountDistinct" rename="CountDistinct_First telephone number" />
+            <SummarizeField field="Right_First telephone number" action="CountDistinct" rename="CountDistinct_Right_First telephone number" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Aggregations</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="Customer Number" name="Min_Customer Number" size="10" source="KNA1 @ S4H" type="WString" />
+            <Field description="Customer Number" name="Min_Right_Customer Number" size="10" source="KNA1 @ S4H" type="WString" />
+            <Field description="Customer Number" name="Max_Customer Number" size="10" source="KNA1 @ S4H" type="WString" />
+            <Field description="Customer Number" name="Max_Right_Customer Number" size="10" source="KNA1 @ S4H" type="WString" />
+            <Field name="CountDistinct_City" source="Summarize: CountDistinct - City" type="Int64" />
+            <Field name="CountDistinct_Right_City" source="Summarize: CountDistinct - Right_City" type="Int64" />
+            <Field name="CountDistinct_First telephone number" source="Summarize: CountDistinct - First telephone number" type="Int64" />
+            <Field name="CountDistinct_Right_First telephone number" source="Summarize: CountDistinct - Right_First telephone number" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="37">
+      <GuiSettings Plugin="Theobald.Alteryx.Table.TableInputToolFactory">
+        <Position x="150" y="402" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Connection>S4H</Connection>
+          <Definition>{
+    "functionName": "Z_THEO_READ_TABLE",
+    "runInBackgroundJob": false,
+    "backgroundJobTimeout": 180,
+    "tables": 
+    [
+        {
+            "name": "KNA1",
+            "description": "General Data in Customer Master",
+            "isView": false,
+            "fields": 
+            [
+                {
+                    "name": "MANDT",
+                    "description": "Client",
+                    "abapType": "CharacterString",
+                    "length": 3,
+                    "isPrimaryKey": true,
+                    "checkTable": "T000",
+                    "indexed": "Ascending",
+                    "conversionExit": "",
+                    "isClientField": true
+                },
+                {
+                    "name": "KUNNR",
+                    "description": "Customer Number",
+                    "abapType": "CharacterString",
+                    "length": 10,
+                    "isPrimaryKey": true,
+                    "isSelected": true,
+                    "conversionExit": "ALPHA",
+                    "isClientField": false
+                },
+                {
+                    "name": "LAND1",
+                    "description": "Country/Region Key",
+                    "abapType": "CharacterString",
+                    "length": 3,
+                    "isSelected": true,
+                    "checkTable": "T005",
+                    "indexed": "Ascending",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "NAME1",
+                    "description": "Name 1",
+                    "abapType": "CharacterString",
+                    "length": 35,
+                    "isSelected": true,
+                    "indexed": "Ascending",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "NAME2",
+                    "description": "Name 2",
+                    "abapType": "CharacterString",
+                    "length": 35,
+                    "indexed": "Ascending",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "ORT01",
+                    "description": "City",
+                    "abapType": "CharacterString",
+                    "length": 35,
+                    "isSelected": true,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "PSTLZ",
+                    "description": "Postal Code",
+                    "abapType": "CharacterString",
+                    "length": 10,
+                    "isSelected": true,
+                    "indexed": "Ascending",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "REGIO",
+                    "description": "Region (State, Province, County)",
+                    "abapType": "CharacterString",
+                    "length": 3,
+                    "isSelected": true,
+                    "checkTable": "T005S",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "SORTL",
+                    "description": "Sort field",
+                    "abapType": "CharacterString",
+                    "length": 10,
+                    "indexed": "Ascending",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "STRAS",
+                    "description": "Street and House Number",
+                    "abapType": "CharacterString",
+                    "length": 35,
+                    "isSelected": true,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "TELF1",
+                    "description": "First telephone number",
+                    "abapType": "CharacterString",
+                    "length": 16,
+                    "isSelected": true,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "TELFX",
+                    "description": "Fax Number",
+                    "abapType": "CharacterString",
+                    "length": 31,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "XCPDK",
+                    "description": "Indicator: Is the account a one-time account?",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "ADRNR",
+                    "description": "Address",
+                    "abapType": "CharacterString",
+                    "length": 10,
+                    "conversionExit": "ALPHA",
+                    "isClientField": false
+                },
+                {
+                    "name": "MCOD1",
+                    "description": "Search term for matchcode search",
+                    "abapType": "CharacterString",
+                    "length": 25,
+                    "indexed": "Ascending",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "MCOD2",
+                    "description": "Search Term for Matchcode Search",
+                    "abapType": "CharacterString",
+                    "length": 25,
+                    "indexed": "Ascending",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "MCOD3",
+                    "description": "Search term for matchcode search",
+                    "abapType": "CharacterString",
+                    "length": 25,
+                    "indexed": "Ascending",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "ANRED",
+                    "description": "Title",
+                    "abapType": "CharacterString",
+                    "length": 15,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "AUFSD",
+                    "description": "Central order block for customer",
+                    "abapType": "CharacterString",
+                    "length": 2,
+                    "checkTable": "TVAST",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "BAHNE",
+                    "description": "Express train station",
+                    "abapType": "CharacterString",
+                    "length": 25,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "BAHNS",
+                    "description": "Train station",
+                    "abapType": "CharacterString",
+                    "length": 25,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "BBBNR",
+                    "description": "International location number  (part 1)",
+                    "abapType": "NumericCharacterString",
+                    "length": 7,
+                    "indexed": "Ascending",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "BBSNR",
+                    "description": "International location number (Part 2)",
+                    "abapType": "NumericCharacterString",
+                    "length": 5,
+                    "indexed": "Ascending",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "BEGRU",
+                    "description": "Authorization Group",
+                    "abapType": "CharacterString",
+                    "length": 4,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "BRSCH",
+                    "description": "Industry key",
+                    "abapType": "CharacterString",
+                    "length": 4,
+                    "checkTable": "T016",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "BUBKZ",
+                    "description": "Check digit for the international location number",
+                    "abapType": "NumericCharacterString",
+                    "length": 1,
+                    "indexed": "Ascending",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "DATLT",
+                    "description": "Data communication line no.",
+                    "abapType": "CharacterString",
+                    "length": 14,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "ERDAT",
+                    "description": "Date on which the Record Was Created",
+                    "abapType": "Date",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "ERNAM",
+                    "description": "Name of Person who Created the Object",
+                    "abapType": "CharacterString",
+                    "length": 12,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "EXABL",
+                    "description": "Indicator: Unloading points exist",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "FAKSD",
+                    "description": "Central billing block for customer",
+                    "abapType": "CharacterString",
+                    "length": 2,
+                    "checkTable": "TVFS",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "FISKN",
+                    "description": "Account number of the master record with the fiscal address",
+                    "abapType": "CharacterString",
+                    "length": 10,
+                    "checkTable": "KNA1",
+                    "indexed": "Ascending",
+                    "conversionExit": "ALPHA",
+                    "isClientField": false
+                },
+                {
+                    "name": "KNAZK",
+                    "description": "Working Time Calendar",
+                    "abapType": "CharacterString",
+                    "length": 2,
+                    "checkTable": "TFACD",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "KNRZA",
+                    "description": "Account Number of an Alternative Payer",
+                    "abapType": "CharacterString",
+                    "length": 10,
+                    "checkTable": "KNA1",
+                    "conversionExit": "ALPHA",
+                    "isClientField": false
+                },
+                {
+                    "name": "KONZS",
+                    "description": "Group key",
+                    "abapType": "CharacterString",
+                    "length": 10,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "KTOKD",
+                    "description": "Customer Account Group",
+                    "abapType": "CharacterString",
+                    "length": 4,
+                    "checkTable": "T077D",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "KUKLA",
+                    "description": "Customer Classification",
+                    "abapType": "CharacterString",
+                    "length": 2,
+                    "checkTable": "TKUKL",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "LIFNR",
+                    "description": "Account Number of Supplier",
+                    "abapType": "CharacterString",
+                    "length": 10,
+                    "checkTable": "LFA1",
+                    "conversionExit": "ALPHA",
+                    "isClientField": false
+                },
+                {
+                    "name": "LIFSD",
+                    "description": "Central delivery block for the customer",
+                    "abapType": "CharacterString",
+                    "length": 2,
+                    "checkTable": "TVLS",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "LOCCO",
+                    "description": "City Coordinates",
+                    "abapType": "CharacterString",
+                    "length": 10,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "LOEVM",
+                    "description": "Central Deletion Flag for Master Record",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "NAME3",
+                    "description": "Name 3",
+                    "abapType": "CharacterString",
+                    "length": 35,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "NAME4",
+                    "description": "Name 4",
+                    "abapType": "CharacterString",
+                    "length": 35,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "NIELS",
+                    "description": "Nielsen ID",
+                    "abapType": "CharacterString",
+                    "length": 2,
+                    "checkTable": "TNLS",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "ORT02",
+                    "description": "District",
+                    "abapType": "CharacterString",
+                    "length": 35,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "PFACH",
+                    "description": "PO Box",
+                    "abapType": "CharacterString",
+                    "length": 10,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "PSTL2",
+                    "description": "P.O. Box Postal Code",
+                    "abapType": "CharacterString",
+                    "length": 10,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "COUNC",
+                    "description": "County Code",
+                    "abapType": "CharacterString",
+                    "length": 3,
+                    "checkTable": "T005E",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "CITYC",
+                    "description": "City Code",
+                    "abapType": "CharacterString",
+                    "length": 4,
+                    "checkTable": "T005G",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "RPMKR",
+                    "description": "Regional market",
+                    "abapType": "CharacterString",
+                    "length": 5,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "SPERR",
+                    "description": "Central posting block",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "SPRAS",
+                    "description": "Language Key",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "formattedLength": 2,
+                    "checkTable": "T002",
+                    "conversionExit": "ISOLA",
+                    "isClientField": false
+                },
+                {
+                    "name": "STCD1",
+                    "description": "Tax Number 1",
+                    "abapType": "CharacterString",
+                    "length": 16,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "STCD2",
+                    "description": "Tax Number 2",
+                    "abapType": "CharacterString",
+                    "length": 11,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "STKZA",
+                    "description": "Indicator: Business Partner Subject to Equalization Tax?",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "STKZU",
+                    "description": "Liable for VAT",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "TELBX",
+                    "description": "Telebox number",
+                    "abapType": "CharacterString",
+                    "length": 15,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "TELF2",
+                    "description": "Second telephone number",
+                    "abapType": "CharacterString",
+                    "length": 16,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "TELTX",
+                    "description": "Teletex number",
+                    "abapType": "CharacterString",
+                    "length": 30,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "TELX1",
+                    "description": "Telex number",
+                    "abapType": "CharacterString",
+                    "length": 30,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "LZONE",
+                    "description": "Transportation zone to or from which the goods are delivered",
+                    "abapType": "CharacterString",
+                    "length": 10,
+                    "checkTable": "TZONE",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "XZEMP",
+                    "description": "Indicator: Is an alternative payer allowed in document?",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "VBUND",
+                    "description": "Company ID of Trading Partner",
+                    "abapType": "CharacterString",
+                    "length": 6,
+                    "checkTable": "T880",
+                    "conversionExit": "ALPHA",
+                    "isClientField": false
+                },
+                {
+                    "name": "STCEG",
+                    "description": "VAT Registration Number",
+                    "abapType": "CharacterString",
+                    "length": 20,
+                    "isSelected": true,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "DEAR1",
+                    "description": "Indicator: Competitor",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "DEAR2",
+                    "description": "Indicator: Sales partner",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "DEAR3",
+                    "description": "Indicator: Sales prospect",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "DEAR4",
+                    "description": "Indicator for customer type 4",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "DEAR5",
+                    "description": "ID for default sold-to party",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "GFORM",
+                    "description": "Legal status",
+                    "abapType": "CharacterString",
+                    "length": 2,
+                    "checkTable": "TVGF",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "BRAN1",
+                    "description": "Industry code 1",
+                    "abapType": "CharacterString",
+                    "length": 10,
+                    "checkTable": "TBRC",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "BRAN2",
+                    "description": "Industry code 2",
+                    "abapType": "CharacterString",
+                    "length": 10,
+                    "checkTable": "TBRC",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "BRAN3",
+                    "description": "Industry code 3",
+                    "abapType": "CharacterString",
+                    "length": 10,
+                    "checkTable": "TBRC",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "BRAN4",
+                    "description": "Industry code 4",
+                    "abapType": "CharacterString",
+                    "length": 10,
+                    "checkTable": "TBRC",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "BRAN5",
+                    "description": "Industry code 5",
+                    "abapType": "CharacterString",
+                    "length": 10,
+                    "checkTable": "TBRC",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "EKONT",
+                    "description": "Initial contact",
+                    "abapType": "CharacterString",
+                    "length": 10,
+                    "conversionExit": "ALPHA",
+                    "isClientField": false
+                },
+                {
+                    "name": "UMSAT",
+                    "description": "Annual sales",
+                    "abapType": "PackedNumber",
+                    "length": 8,
+                    "decimalCount": 2,
+                    "formattedLength": 10,
+                    "conversionExit": "",
+                    "referenceTable": "KNA1",
+                    "referenceField": "UWAER",
+                    "isCurrency": true,
+                    "isClientField": false
+                },
+                {
+                    "name": "UMJAH",
+                    "description": "Year For Which Sales are Given",
+                    "abapType": "NumericCharacterString",
+                    "length": 4,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "UWAER",
+                    "description": "Currency of sales figure",
+                    "abapType": "CharacterString",
+                    "length": 5,
+                    "checkTable": "TCURC",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "JMZAH",
+                    "description": "Yearly number of employees",
+                    "abapType": "NumericCharacterString",
+                    "length": 6,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "JMJAH",
+                    "description": "Year for which the number of employees is given",
+                    "abapType": "NumericCharacterString",
+                    "length": 4,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "KATR1",
+                    "description": "Attribute 1",
+                    "abapType": "CharacterString",
+                    "length": 2,
+                    "checkTable": "TVK1",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "KATR2",
+                    "description": "Attribute 2",
+                    "abapType": "CharacterString",
+                    "length": 2,
+                    "checkTable": "TVK2",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "KATR3",
+                    "description": "Attribute 3",
+                    "abapType": "CharacterString",
+                    "length": 2,
+                    "checkTable": "TVK3",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "KATR4",
+                    "description": "Attribute 4",
+                    "abapType": "CharacterString",
+                    "length": 2,
+                    "checkTable": "TVK4",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "KATR5",
+                    "description": "Attribute 5",
+                    "abapType": "CharacterString",
+                    "length": 2,
+                    "checkTable": "TVK5",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "KATR6",
+                    "description": "Attribute 6",
+                    "abapType": "CharacterString",
+                    "length": 3,
+                    "checkTable": "TVK6",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "KATR7",
+                    "description": "Attribute 7",
+                    "abapType": "CharacterString",
+                    "length": 3,
+                    "checkTable": "TVK7",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "KATR8",
+                    "description": "Attribute 8",
+                    "abapType": "CharacterString",
+                    "length": 3,
+                    "checkTable": "TVK8",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "KATR9",
+                    "description": "Attribute 9",
+                    "abapType": "CharacterString",
+                    "length": 3,
+                    "checkTable": "TVK9",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "KATR10",
+                    "description": "Attribute 10",
+                    "abapType": "CharacterString",
+                    "length": 3,
+                    "checkTable": "TVK0",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "STKZN",
+                    "description": "Natural Person",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "UMSA1",
+                    "description": "Annual sales",
+                    "abapType": "PackedNumber",
+                    "length": 15,
+                    "decimalCount": 2,
+                    "formattedLength": 20,
+                    "conversionExit": "",
+                    "referenceTable": "KNA1",
+                    "referenceField": "UWAER",
+                    "isCurrency": true,
+                    "isClientField": false
+                },
+                {
+                    "name": "TXJCD",
+                    "description": "Tax Jurisdiction",
+                    "abapType": "CharacterString",
+                    "length": 15,
+                    "checkTable": "TTXJ",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "PERIV",
+                    "description": "Fiscal Year Variant",
+                    "abapType": "CharacterString",
+                    "length": 2,
+                    "checkTable": "T009",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "ABRVW",
+                    "description": "Usage Indicator",
+                    "abapType": "CharacterString",
+                    "length": 3,
+                    "checkTable": "TVLV",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "INSPBYDEBI",
+                    "description": "Inspection Carried Out By Customer (No Inspection Lot)",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "INSPATDEBI",
+                    "description": "Inspection for a Delivery Note After Outbound Delivery",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "KTOCD",
+                    "description": "Reference Account Group for One-Time Account (Customer)",
+                    "abapType": "CharacterString",
+                    "length": 4,
+                    "checkTable": "T077D",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "PFORT",
+                    "description": "PO Box city",
+                    "abapType": "CharacterString",
+                    "length": 35,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "WERKS",
+                    "description": "Plant",
+                    "abapType": "CharacterString",
+                    "length": 4,
+                    "checkTable": "T001W",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "DTAMS",
+                    "description": "Report key for data medium exchange",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "DTAWS",
+                    "description": "Instruction Key for Data Medium Exchange",
+                    "abapType": "CharacterString",
+                    "length": 2,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "DUEFL",
+                    "description": "Status of Data Transfer into Subsequent Release",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "HZUOR",
+                    "description": "Assignment to Hierarchy",
+                    "abapType": "NumericCharacterString",
+                    "length": 2,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "SPERZ",
+                    "description": "Payment Block",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "ETIKG",
+                    "description": "IS-R Labeling: customer/plant group",
+                    "abapType": "CharacterString",
+                    "length": 10,
+                    "checkTable": "TWEK",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "CIVVE",
+                    "description": "ID for mainly non-military use",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "MILVE",
+                    "description": "ID for mainly military use",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "KDKG1",
+                    "description": "Customer condition group 1",
+                    "abapType": "CharacterString",
+                    "length": 2,
+                    "checkTable": "TVKGG",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "KDKG2",
+                    "description": "Customer condition group 2",
+                    "abapType": "CharacterString",
+                    "length": 2,
+                    "checkTable": "TVKGG",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "KDKG3",
+                    "description": "Customer condition group 3",
+                    "abapType": "CharacterString",
+                    "length": 2,
+                    "checkTable": "TVKGG",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "KDKG4",
+                    "description": "Customer condition group 4",
+                    "abapType": "CharacterString",
+                    "length": 2,
+                    "checkTable": "TVKGG",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "KDKG5",
+                    "description": "Customer condition group 5",
+                    "abapType": "CharacterString",
+                    "length": 2,
+                    "checkTable": "TVKGG",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "XKNZA",
+                    "description": "Indicator: Alternative payer using account number",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "FITYP",
+                    "description": "Tax type",
+                    "abapType": "CharacterString",
+                    "length": 2,
+                    "checkTable": "J_1AFITP",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "STCDT",
+                    "description": "Tax Number Type",
+                    "abapType": "CharacterString",
+                    "length": 2,
+                    "checkTable": "J_1ATODC",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "STCD3",
+                    "description": "Tax Number 3",
+                    "abapType": "CharacterString",
+                    "length": 18,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "STCD4",
+                    "description": "Tax Number 4",
+                    "abapType": "CharacterString",
+                    "length": 18,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "STCD5",
+                    "description": "Tax Number 5",
+                    "abapType": "CharacterString",
+                    "length": 60,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "STCD6",
+                    "description": "Tax Number 6",
+                    "abapType": "CharacterString",
+                    "length": 20,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "XICMS",
+                    "description": "Customer is ICMS-exempt",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "XXIPI",
+                    "description": "Customer is IPI-exempt",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "XSUBT",
+                    "description": "Customer group for Substituiçao Tributária calculation",
+                    "abapType": "CharacterString",
+                    "length": 3,
+                    "checkTable": "J_1BTXSTG",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "CFOPC",
+                    "description": "Customer's CFOP category",
+                    "abapType": "CharacterString",
+                    "length": 2,
+                    "conversionExit": "ALPHA",
+                    "isClientField": false
+                },
+                {
+                    "name": "TXLW1",
+                    "description": "Tax law: ICMS",
+                    "abapType": "CharacterString",
+                    "length": 3,
+                    "checkTable": "J_1BATL1",
+                    "conversionExit": "ALPHA",
+                    "isClientField": false
+                },
+                {
+                    "name": "TXLW2",
+                    "description": "Tax law: IPI",
+                    "abapType": "CharacterString",
+                    "length": 3,
+                    "checkTable": "J_1BATL2",
+                    "conversionExit": "ALPHA",
+                    "isClientField": false
+                },
+                {
+                    "name": "CCC01",
+                    "description": "Indicator for biochemical warfare for legal control",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "CCC02",
+                    "description": "Indicator for nuclear nonproliferation for legal control",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "CCC03",
+                    "description": "Indicator for national security for legal control",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "CCC04",
+                    "description": "Indicator for missile technology for legal control",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "BONDED_AREA_CONFIRM",
+                    "description": "TW: Bonded Area Confirm in Business Partner Extension",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "DONATE_MARK",
+                    "description": "TW: Donate Mark in Business Partner Extension",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "CONSOLIDATE_INVOICE",
+                    "description": "Consolidated Invoicing for Taiwan",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "ALLOWANCE_TYPE",
+                    "description": "TW: Allowance Type in Business Partner Extension",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "EINVOICE_MODE",
+                    "description": "Taiwan, China: Mode in Business Partner Extension",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "CASSD",
+                    "description": "Central sales block for customer",
+                    "abapType": "CharacterString",
+                    "length": 2,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "KNURL",
+                    "description": "Uniform resource locator",
+                    "abapType": "CharacterString",
+                    "length": 132,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "J_1KFREPRE",
+                    "description": "Name of Representative",
+                    "abapType": "CharacterString",
+                    "length": 10,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "J_1KFTBUS",
+                    "description": "Type of Business",
+                    "abapType": "CharacterString",
+                    "length": 30,
+                    "checkTable": "BUSTYPE",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "J_1KFTIND",
+                    "description": "Type of Industry",
+                    "abapType": "CharacterString",
+                    "length": 30,
+                    "checkTable": "INDUSTYPE",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "CONFS",
+                    "description": "Status of Change Authorization (Central)",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "indexed": "Ascending",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "UPDAT",
+                    "description": "Date on Which the Changes Were Confirmed",
+                    "abapType": "Date",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "UPTIM",
+                    "description": "Time of Last Change Confirmation",
+                    "abapType": "Time",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "NODEL",
+                    "description": "Central deletion block for master record",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "DEAR6",
+                    "description": "Indicator: Consumer",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "DELIVERY_DATE_RULE",
+                    "description": "Delivery Date Rule",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "CVP_XBLCK",
+                    "description": "Business Purpose Completed Flag",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "SUFRAMA",
+                    "description": "Suframa Code",
+                    "abapType": "CharacterString",
+                    "length": 9,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "RG",
+                    "description": "RG Number",
+                    "abapType": "CharacterString",
+                    "length": 11,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "EXP",
+                    "description": "Issued by",
+                    "abapType": "CharacterString",
+                    "length": 3,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "UF",
+                    "description": "State",
+                    "abapType": "CharacterString",
+                    "length": 2,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "RGDATE",
+                    "description": "RG Issuing Date",
+                    "abapType": "Date",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "RIC",
+                    "description": "RIC Number",
+                    "abapType": "NumericCharacterString",
+                    "length": 11,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "RNE",
+                    "description": "Foreign National Registration",
+                    "abapType": "CharacterString",
+                    "length": 10,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "RNEDATE",
+                    "description": "RNE Issuing Date",
+                    "abapType": "Date",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "CNAE",
+                    "description": "CNAE",
+                    "abapType": "CharacterString",
+                    "length": 7,
+                    "checkTable": "J_1BTCNAE",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "LEGALNAT",
+                    "description": "Legal Nature",
+                    "abapType": "NumericCharacterString",
+                    "length": 4,
+                    "checkTable": "J_1BTLEGALNAT",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "CRTN",
+                    "description": "CRT Number",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "ICMSTAXPAY",
+                    "description": "ICMS Taxpayer",
+                    "abapType": "CharacterString",
+                    "length": 2,
+                    "checkTable": "J_1BTICMSTAXPAY",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "INDTYP",
+                    "description": "Industry Main Type",
+                    "abapType": "CharacterString",
+                    "length": 2,
+                    "checkTable": "J_1BTINDTYP",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "TDT",
+                    "description": "Tax Declaration Type",
+                    "abapType": "CharacterString",
+                    "length": 2,
+                    "checkTable": "J_1BTTDT",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "COMSIZE",
+                    "description": "Company Size",
+                    "abapType": "CharacterString",
+                    "length": 2,
+                    "checkTable": "J_1BTCOMSIZE",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "DECREGPC",
+                    "description": "Declaration Regimen for PIS/COFINS",
+                    "abapType": "CharacterString",
+                    "length": 2,
+                    "checkTable": "J_1BTDECREGPC",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "PH_BIZ_STYLE",
+                    "description": "PH Business Style Text",
+                    "abapType": "CharacterString",
+                    "length": 140,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "PAYTRSN",
+                    "description": "Payment Reason",
+                    "abapType": "CharacterString",
+                    "length": 4,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "KNA1_EEW_CUST",
+                    "description": "data element for customer",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "RULE_EXCLUSION",
+                    "description": "Account Excluded from Rule-Based Assignment",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "KNA1_ADDR_EEW_CUST",
+                    "description": "Customer General  addr. dep. extensibility",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "/VSO/R_PALHGT",
+                    "description": "Maximum Stacking Height of the Packaging Material (VSO)",
+                    "abapType": "PackedNumber",
+                    "length": 13,
+                    "decimalCount": 3,
+                    "formattedLength": 17,
+                    "conversionExit": "",
+                    "referenceTable": "KNA1",
+                    "referenceField": "/VSO/R_PAL_UL",
+                    "isClientField": false
+                },
+                {
+                    "name": "/VSO/R_PAL_UL",
+                    "description": "Unit of Length for Packaging Material (VSO)",
+                    "abapType": "CharacterString",
+                    "length": 3,
+                    "checkTable": "T006",
+                    "conversionExit": "CUNIT",
+                    "isClientField": false
+                },
+                {
+                    "name": "/VSO/R_PK_MAT",
+                    "description": "Customer-Related Packing for Each Packaging Material (VSO)",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "/VSO/R_MATPAL",
+                    "description": "Packaging Material of the Customer in VSO",
+                    "abapType": "CharacterString",
+                    "length": 40,
+                    "checkTable": "MARA",
+                    "conversionExit": "MATN1",
+                    "isClientField": false
+                },
+                {
+                    "name": "/VSO/R_I_NO_LYR",
+                    "description": "Number Layers Under an Inter-Pallet (VSO)",
+                    "abapType": "NumericCharacterString",
+                    "length": 2,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "/VSO/R_ONE_MAT",
+                    "description": "Packing Material-Specific for Each Packaging Material",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "/VSO/R_ONE_SORT",
+                    "description": "Pack Only One Package Type for Each PKM (VSO)",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "/VSO/R_ULD_SIDE",
+                    "description": "Side Preference of Loading/Unloading (VSO)",
+                    "abapType": "NumericCharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "/VSO/R_LOAD_PREF",
+                    "description": "Front/Back Preference of Loading/Unloading (VSO)",
+                    "abapType": "NumericCharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "/VSO/R_DPOINT",
+                    "description": "Collective Unloading Point for VSO",
+                    "abapType": "CharacterString",
+                    "length": 10,
+                    "checkTable": "/VSO/R_DPOINT",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "ALC",
+                    "description": "Agency Location Code",
+                    "abapType": "CharacterString",
+                    "length": 8,
+                    "checkTable": "FMFGT_ALC",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "PMT_OFFICE",
+                    "description": "Payment Office",
+                    "abapType": "CharacterString",
+                    "length": 5,
+                    "checkTable": "FMFGT_PO",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "FEE_SCHEDULE",
+                    "description": "Fee schedule",
+                    "abapType": "CharacterString",
+                    "length": 4,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "DUNS",
+                    "description": "DUNS Number",
+                    "abapType": "CharacterString",
+                    "length": 9,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "DUNS4",
+                    "description": "DUNS+4",
+                    "abapType": "CharacterString",
+                    "length": 4,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "SAM_UE_ID",
+                    "description": "System for Award Management Unique Entity Identifier",
+                    "abapType": "CharacterString",
+                    "length": 12,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "SAM_EFT_IND",
+                    "description": "System for Award Management Electronic Funds Transfer Ind",
+                    "abapType": "CharacterString",
+                    "length": 4,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "PSOFG",
+                    "description": "Processor group",
+                    "abapType": "CharacterString",
+                    "length": 10,
+                    "checkTable": "PSO19",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "PSOIS",
+                    "description": "Subledger acct preprocessing procedure",
+                    "abapType": "CharacterString",
+                    "length": 20,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "PSON1",
+                    "description": "Name 1",
+                    "abapType": "CharacterString",
+                    "length": 35,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "PSON2",
+                    "description": "Name 2",
+                    "abapType": "CharacterString",
+                    "length": 35,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "PSON3",
+                    "description": "Name 3",
+                    "abapType": "CharacterString",
+                    "length": 35,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "PSOVN",
+                    "description": "First Name",
+                    "abapType": "CharacterString",
+                    "length": 35,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "PSOTL",
+                    "description": "Title",
+                    "abapType": "CharacterString",
+                    "length": 20,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "PSOHS",
+                    "description": "House number: is no longer used from Release 4.6B",
+                    "abapType": "CharacterString",
+                    "length": 6,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "PSOST",
+                    "description": "Street: No longer used from Release 4.6B",
+                    "abapType": "CharacterString",
+                    "length": 28,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "PSOO1",
+                    "description": "Description",
+                    "abapType": "CharacterString",
+                    "length": 50,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "PSOO2",
+                    "description": "Description",
+                    "abapType": "CharacterString",
+                    "length": 50,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "PSOO3",
+                    "description": "Description",
+                    "abapType": "CharacterString",
+                    "length": 50,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "PSOO4",
+                    "description": "Description",
+                    "abapType": "CharacterString",
+                    "length": 50,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "PSOO5",
+                    "description": "Description",
+                    "abapType": "CharacterString",
+                    "length": 50,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "J_1IEXCD",
+                    "description": "ECC Number",
+                    "abapType": "CharacterString",
+                    "length": 40,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "J_1IEXRN",
+                    "description": "Excise Registration Number",
+                    "abapType": "CharacterString",
+                    "length": 40,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "J_1IEXRG",
+                    "description": "Excise Range",
+                    "abapType": "CharacterString",
+                    "length": 60,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "J_1IEXDI",
+                    "description": "Excise Division",
+                    "abapType": "CharacterString",
+                    "length": 60,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "J_1IEXCO",
+                    "description": "Excise Commissionerate",
+                    "abapType": "CharacterString",
+                    "length": 60,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "J_1ICSTNO",
+                    "description": "Central Sales Tax Number",
+                    "abapType": "CharacterString",
+                    "length": 40,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "J_1ILSTNO",
+                    "description": "Local Sales Tax Number",
+                    "abapType": "CharacterString",
+                    "length": 40,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "J_1IPANNO",
+                    "description": "Permanent Account Number",
+                    "abapType": "CharacterString",
+                    "length": 40,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "J_1IEXCICU",
+                    "description": "Excise tax indicator for customer",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "checkTable": "J_1ITAXIND",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "AEDAT",
+                    "description": "(Obsolete) Last Changed On – do not use",
+                    "abapType": "Date",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "USNAM",
+                    "description": "(Obsolete) Changed by the user – do not use",
+                    "abapType": "CharacterString",
+                    "length": 12,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "J_1ISERN",
+                    "description": "Service Tax Registration Number",
+                    "abapType": "CharacterString",
+                    "length": 40,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "J_1IPANREF",
+                    "description": "PAN Reference Number",
+                    "abapType": "CharacterString",
+                    "length": 40,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "GST_TDS",
+                    "description": "GST TDS Registration",
+                    "abapType": "CharacterString",
+                    "length": 18,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "J_3GETYP",
+                    "description": "Recipient Type",
+                    "abapType": "CharacterString",
+                    "length": 2,
+                    "checkTable": "J_3GZUETYP",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "J_3GREFTYP",
+                    "description": "Reference Type for Recipient",
+                    "abapType": "CharacterString",
+                    "length": 2,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "PSPNR",
+                    "description": "WBS Element",
+                    "abapType": "NumericCharacterString",
+                    "length": 8,
+                    "formattedLength": 24,
+                    "checkTable": "PRPS",
+                    "conversionExit": "ABPSP",
+                    "isClientField": false
+                },
+                {
+                    "name": "COAUFNR",
+                    "description": "Order Number",
+                    "abapType": "CharacterString",
+                    "length": 12,
+                    "checkTable": "AUFK",
+                    "indexed": "Ascending",
+                    "conversionExit": "ALPHA",
+                    "isClientField": false
+                },
+                {
+                    "name": "J_3GAGEXT",
+                    "description": "External Sold-to Party",
+                    "abapType": "CharacterString",
+                    "length": 10,
+                    "checkTable": "KNA1",
+                    "conversionExit": "ALPHA",
+                    "isClientField": false
+                },
+                {
+                    "name": "J_3GAGINT",
+                    "description": "Customer Internal Settlement",
+                    "abapType": "CharacterString",
+                    "length": 10,
+                    "checkTable": "KNA1",
+                    "conversionExit": "ALPHA",
+                    "isClientField": false
+                },
+                {
+                    "name": "J_3GAGDUMI",
+                    "description": "Dummy Recipient",
+                    "abapType": "CharacterString",
+                    "length": 10,
+                    "checkTable": "KNA1",
+                    "conversionExit": "ALPHA",
+                    "isClientField": false
+                },
+                {
+                    "name": "J_3GAGSTDI",
+                    "description": "Standard Recipient",
+                    "abapType": "CharacterString",
+                    "length": 10,
+                    "checkTable": "KNA1",
+                    "conversionExit": "ALPHA",
+                    "isClientField": false
+                },
+                {
+                    "name": "LGORT",
+                    "description": "Storage location",
+                    "abapType": "CharacterString",
+                    "length": 4,
+                    "checkTable": "T001L",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "KOKRS",
+                    "description": "Controlling Area",
+                    "abapType": "CharacterString",
+                    "length": 4,
+                    "checkTable": "TKA01",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "KOSTL",
+                    "description": "Cost Center",
+                    "abapType": "CharacterString",
+                    "length": 10,
+                    "checkTable": "CSKS",
+                    "conversionExit": "ALPHA",
+                    "isClientField": false
+                },
+                {
+                    "name": "J_3GABGLG",
+                    "description": "Retirement Date Counts for Performance-Based Equipment",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "J_3GABGVG",
+                    "description": "Retirement Date Counts for Time-Based Equipment",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "J_3GABRART",
+                    "description": "Settlement Type",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "J_3GSTDMON",
+                    "description": "Hours per Month",
+                    "abapType": "PackedNumber",
+                    "length": 5,
+                    "decimalCount": 2,
+                    "formattedLength": 6,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "J_3GSTDTAG",
+                    "description": "Hours per Day",
+                    "abapType": "PackedNumber",
+                    "length": 5,
+                    "decimalCount": 2,
+                    "formattedLength": 6,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "J_3GTAGMON",
+                    "description": "Number of Days/Month",
+                    "abapType": "PackedNumber",
+                    "length": 5,
+                    "decimalCount": 2,
+                    "formattedLength": 6,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "J_3GZUGTAG",
+                    "description": "Function for Settlement on Acquisition Date/PBE",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "J_3GMASCHB",
+                    "description": "\"Fill PBE Documents\" Indicator",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "J_3GMEINSA",
+                    "description": "Indicator: Take Multiple Usage Periods into Account",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "J_3GKEINSA",
+                    "description": "Indicator - Relevant to Short Operation Periods",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "J_3GBLSPER",
+                    "description": "Blocking Indicator for Document Entry",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "J_3GKLEIVO",
+                    "description": "Indicator: Calculate PBE as TBE",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "J_3GCALID",
+                    "description": "Calendar ID",
+                    "abapType": "CharacterString",
+                    "length": 2,
+                    "checkTable": "TFACD",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "J_3GVMONAT",
+                    "description": "Indicator for Complete Month",
+                    "abapType": "NumericCharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "J_3GABRKEN",
+                    "description": "Settlement Indicator",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "J_3GLABRECH",
+                    "description": "Date of Last Settlement",
+                    "abapType": "Date",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "J_3GAABRECH",
+                    "description": "Date of Current Settlement",
+                    "abapType": "Date",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "J_3GZUTVHLG",
+                    "description": "Ind.: Acquisition Date Counts (as Daily Settlement for PBE)",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "J_3GNEGMEN",
+                    "description": "Negative Quantities Allowed Even for Chronolog. Inv. Mgmt",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "J_3GFRISTLO",
+                    "description": "Indicator: Deadline Logic",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "J_3GEMINBE",
+                    "description": "Minimum Usage Period for Restricted Usage (Days)",
+                    "abapType": "NumericCharacterString",
+                    "length": 5,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "J_3GFMGUE",
+                    "description": "Release Notification Allowance for Unrestricted Usage (Days)",
+                    "abapType": "NumericCharacterString",
+                    "length": 5,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "J_3GZUSCHUE",
+                    "description": "Surcharge for Unrestricted Usage (Days)",
+                    "abapType": "NumericCharacterString",
+                    "length": 5,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "J_3GSCHPRS",
+                    "description": "Indicator: Shift Price",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "J_3GINVSTA",
+                    "description": "Status of Construction Site Inventory",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "/SAPCEM/DBER",
+                    "description": "Planning Area",
+                    "abapType": "CharacterString",
+                    "length": 8,
+                    "checkTable": "/SAPCEM/DISPOBER",
+                    "conversionExit": "",
+                    "isClientField": false
+                },
+                {
+                    "name": "/SAPCEM/KVMEQ",
+                    "description": "Indicator: Settlement Qty Relevant to Equipment",
+                    "abapType": "CharacterString",
+                    "length": 1,
+                    "conversionExit": "",
+                    "isClientField": false
+                }
+            ]
+        }
+    ],
+    "complexRuntimeParameters": {
+    },
+    "whereSequence": [
+        [
+            "ColumnName",
+            "KNA1~LAND1"
+        ],
+        [
+            "Operator",
+            "Equal"
+        ],
+        [
+            "Literal",
+            "String",
+            "US"
+        ]
+    ]
+}</Definition>
+          <DestinationSettings>{
+    "columnNameStyle": "Text",
+    "sapDateConverter": {
+        "minDateReplacement": "1970-01-01",
+        "maxDateReplacement": "2099-12-31",
+        "invalidDateReplacement": null
+    }
+}</DestinationSettings>
+          <ExtractorsVersion>999.999.999.760</ExtractorsVersion>
+          <RuntimeParameters />
+          <WhereClause>
+          </WhereClause>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>S/4HANA: Customer Master Data</AnnotationText>
+          <DefaultAnnotationText>General Data in Customer Master (KNA1)</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="Customer Number" name="Customer Number" size="10" source="KNA1 @ S4H" type="WString" />
+            <Field description="Country/Region Key" name="Country/Region Key" size="3" source="KNA1 @ S4H" type="WString" />
+            <Field description="Name 1" name="Name 1" size="35" source="KNA1 @ S4H" type="WString" />
+            <Field description="City" name="City" size="35" source="KNA1 @ S4H" type="WString" />
+            <Field description="Postal Code" name="Postal Code" size="10" source="KNA1 @ S4H" type="WString" />
+            <Field description="Region (State, Province, County)" name="Region (State, Province, County)" size="3" source="KNA1 @ S4H" type="WString" />
+            <Field description="Street and House Number" name="Street and House Number" size="35" source="KNA1 @ S4H" type="WString" />
+            <Field description="First telephone number" name="First telephone number" size="16" source="KNA1 @ S4H" type="WString" />
+            <Field description="VAT Registration Number" name="VAT Registration Number" size="20" source="KNA1 @ S4H" type="WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="Theobald.Alteryx.TableInputTool.dll" EngineDllEntryPoint=".Net:Theobald.Alteryx.Table.TableInputTool" />
+    </Node>
+    <Node ToolID="39">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="282" y="486" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\simon\AppData\Local\Temp\Engine_15160_4fc3216a02b93348890f3255e8a50e59_\Engine_15160_3e86af551511234f9c7f7707bfb1f452~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="42">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="66" y="606" width="72" height="96" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>ERP:</Text>
+          <Font name="Arial" size="12" style="1" />
+          <TextColor r="0" g="128" b="255" />
+          <FillColor r="232" g="232" b="232" />
+          <Shape shape="0" />
+          <Justification Justification="1" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="43">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="66" y="414" width="72" height="96" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>S/4:</Text>
+          <Font name="Arial" size="12" style="1" />
+          <TextColor r="0" g="128" b="255" />
+          <FillColor r="232" g="232" b="232" />
+          <Shape shape="0" />
+          <Justification Justification="1" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="46">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="282" y="402" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="VAT Registration Number" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="Customer Number" name="Customer Number" size="10" source="KNA1 @ S4H" type="WString" />
+            <Field description="Country/Region Key" name="Country/Region Key" size="3" source="KNA1 @ S4H" type="WString" />
+            <Field description="Name 1" name="Name 1" size="35" source="KNA1 @ S4H" type="WString" />
+            <Field description="City" name="City" size="35" source="KNA1 @ S4H" type="WString" />
+            <Field description="Postal Code" name="Postal Code" size="10" source="KNA1 @ S4H" type="WString" />
+            <Field description="Region (State, Province, County)" name="Region (State, Province, County)" size="3" source="KNA1 @ S4H" type="WString" />
+            <Field description="Street and House Number" name="Street and House Number" size="35" source="KNA1 @ S4H" type="WString" />
+            <Field description="First telephone number" name="First telephone number" size="16" source="KNA1 @ S4H" type="WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="49">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="150" y="594" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">_externals\1\ERP KNA1.yxdb</File>
+          <FormatSpecificOptions />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>ERP KNA1.yxdb
+Customer Master Data</AnnotationText>
+          <DefaultAnnotationText>ERP KNA1.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="Customer Number" name="Customer Number" size="10" source="KNA1 @ S4H" type="WString" />
+            <Field description="Country/Region Key" name="Country/Region Key" size="3" source="KNA1 @ S4H" type="WString" />
+            <Field description="Name 1" name="Name 1" size="35" source="KNA1 @ S4H" type="WString" />
+            <Field description="City" name="City" size="35" source="KNA1 @ S4H" type="WString" />
+            <Field description="Postal Code" name="Postal Code" size="10" source="KNA1 @ S4H" type="WString" />
+            <Field description="Region (State, Province, County)" name="Region (State, Province, County)" size="3" source="KNA1 @ S4H" type="WString" />
+            <Field description="Street and House Number" name="Street and House Number" size="35" source="KNA1 @ S4H" type="WString" />
+            <Field description="First telephone number" name="First telephone number" size="16" source="KNA1 @ S4H" type="WString" />
+            <Field description="VAT Registration Number" name="VAT Registration Number" size="20" source="KNA1 @ S4H" type="WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="50">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="282" y="594" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="VAT Registration Number" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="Customer Number" name="Customer Number" size="10" source="KNA1 @ S4H" type="WString" />
+            <Field description="Country/Region Key" name="Country/Region Key" size="3" source="KNA1 @ S4H" type="WString" />
+            <Field description="Name 1" name="Name 1" size="35" source="KNA1 @ S4H" type="WString" />
+            <Field description="City" name="City" size="35" source="KNA1 @ S4H" type="WString" />
+            <Field description="Postal Code" name="Postal Code" size="10" source="KNA1 @ S4H" type="WString" />
+            <Field description="Region (State, Province, County)" name="Region (State, Province, County)" size="3" source="KNA1 @ S4H" type="WString" />
+            <Field description="Street and House Number" name="Street and House Number" size="35" source="KNA1 @ S4H" type="WString" />
+            <Field description="First telephone number" name="First telephone number" size="16" source="KNA1 @ S4H" type="WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="53">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="438" y="498" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Customer Number" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Customer Number" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_Customer Number" selected="True" rename="Right_Customer Number" input="Right_" />
+                <SelectField field="Right_Country/Region Key" selected="True" rename="Right_Country/Region Key" input="Right_" />
+                <SelectField field="Right_Name 1" selected="True" rename="Right_Name 1" input="Right_" />
+                <SelectField field="Right_City" selected="True" rename="Right_City" input="Right_" />
+                <SelectField field="Right_Postal Code" selected="True" rename="Right_Postal Code" input="Right_" />
+                <SelectField field="Right_Region (State, Province, County)" selected="True" rename="Right_Region (State, Province, County)" input="Right_" />
+                <SelectField field="Right_Street and House Number" selected="True" rename="Right_Street and House Number" input="Right_" />
+                <SelectField field="Right_First telephone number" selected="True" rename="Right_First telephone number" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Left">
+          <RecordInfo>
+            <Field description="Customer Number" name="Customer Number" size="10" source="KNA1 @ S4H" type="WString" />
+            <Field description="Country/Region Key" name="Country/Region Key" size="3" source="KNA1 @ S4H" type="WString" />
+            <Field description="Name 1" name="Name 1" size="35" source="KNA1 @ S4H" type="WString" />
+            <Field description="City" name="City" size="35" source="KNA1 @ S4H" type="WString" />
+            <Field description="Postal Code" name="Postal Code" size="10" source="KNA1 @ S4H" type="WString" />
+            <Field description="Region (State, Province, County)" name="Region (State, Province, County)" size="3" source="KNA1 @ S4H" type="WString" />
+            <Field description="Street and House Number" name="Street and House Number" size="35" source="KNA1 @ S4H" type="WString" />
+            <Field description="First telephone number" name="First telephone number" size="16" source="KNA1 @ S4H" type="WString" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Join">
+          <RecordInfo>
+            <Field description="Customer Number" name="Customer Number" size="10" source="KNA1 @ S4H" type="WString" />
+            <Field description="Country/Region Key" name="Country/Region Key" size="3" source="KNA1 @ S4H" type="WString" />
+            <Field description="Name 1" name="Name 1" size="35" source="KNA1 @ S4H" type="WString" />
+            <Field description="City" name="City" size="35" source="KNA1 @ S4H" type="WString" />
+            <Field description="Postal Code" name="Postal Code" size="10" source="KNA1 @ S4H" type="WString" />
+            <Field description="Region (State, Province, County)" name="Region (State, Province, County)" size="3" source="KNA1 @ S4H" type="WString" />
+            <Field description="Street and House Number" name="Street and House Number" size="35" source="KNA1 @ S4H" type="WString" />
+            <Field description="First telephone number" name="First telephone number" size="16" source="KNA1 @ S4H" type="WString" />
+            <Field description="Customer Number" name="Right_Customer Number" size="10" source="KNA1 @ S4H" type="WString" />
+            <Field description="Country/Region Key" name="Right_Country/Region Key" size="3" source="KNA1 @ S4H" type="WString" />
+            <Field description="Name 1" name="Right_Name 1" size="35" source="KNA1 @ S4H" type="WString" />
+            <Field description="City" name="Right_City" size="35" source="KNA1 @ S4H" type="WString" />
+            <Field description="Postal Code" name="Right_Postal Code" size="10" source="KNA1 @ S4H" type="WString" />
+            <Field description="Region (State, Province, County)" name="Right_Region (State, Province, County)" size="3" source="KNA1 @ S4H" type="WString" />
+            <Field description="Street and House Number" name="Right_Street and House Number" size="35" source="KNA1 @ S4H" type="WString" />
+            <Field description="First telephone number" name="Right_First telephone number" size="16" source="KNA1 @ S4H" type="WString" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Right">
+          <RecordInfo>
+            <Field description="Customer Number" name="Customer Number" size="10" source="KNA1 @ S4H" type="WString" />
+            <Field description="Country/Region Key" name="Country/Region Key" size="3" source="KNA1 @ S4H" type="WString" />
+            <Field description="Name 1" name="Name 1" size="35" source="KNA1 @ S4H" type="WString" />
+            <Field description="City" name="City" size="35" source="KNA1 @ S4H" type="WString" />
+            <Field description="Postal Code" name="Postal Code" size="10" source="KNA1 @ S4H" type="WString" />
+            <Field description="Region (State, Province, County)" name="Region (State, Province, County)" size="3" source="KNA1 @ S4H" type="WString" />
+            <Field description="Street and House Number" name="Street and House Number" size="35" source="KNA1 @ S4H" type="WString" />
+            <Field description="First telephone number" name="First telephone number" size="16" source="KNA1 @ S4H" type="WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="58">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="930" y="942" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[Left]!=[Right]" field="HasDifferentValue?" size="1" type="Bool" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[HasDifferentValue? = [Left]!=[Right]
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="Customer Number" name="Customer Number" size="10" source="CrossTab:Group:Concat:" type="WString" />
+            <Field name="Name" size="38" source="CrossTab:Group:Concat:" type="String" />
+            <Field name="Left" size="2048" source="CrossTab:Header:Origin:Left:Concat:" type="V_WString" />
+            <Field name="Right" size="2048" source="CrossTab:Header:Origin:Right:Concat:" type="V_WString" />
+            <Field name="HasDifferentValue?" source="Formula: [Left]!=[Right]" type="Bool" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="59">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="834" y="954" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>!=</Operator>
+            <Field>Name</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2023-11-23 17:01:00</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>Customer Number</Operand>
+              <StartDate>2023-11-23 17:01:00</StartDate>
+              <EndDate>2023-11-23 17:01:00</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Name] != "Customer Number"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field description="Customer Number" name="Customer Number" size="10" source="CrossTab:Group:Concat:" type="WString" />
+            <Field name="Name" size="38" source="CrossTab:Group:Concat:" type="String" />
+            <Field name="Left" size="2048" source="CrossTab:Header:Origin:Left:Concat:" type="V_WString" />
+            <Field name="Right" size="2048" source="CrossTab:Header:Origin:Right:Concat:" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field description="Customer Number" name="Customer Number" size="10" source="CrossTab:Group:Concat:" type="WString" />
+            <Field name="Name" size="38" source="CrossTab:Group:Concat:" type="String" />
+            <Field name="Left" size="2048" source="CrossTab:Header:Origin:Left:Concat:" type="V_WString" />
+            <Field name="Right" size="2048" source="CrossTab:Header:Origin:Right:Concat:" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="57">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
+        <Position x="750" y="954" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <GroupFields>
+            <Field field="Customer Number" />
+            <Field field="Name" />
+          </GroupFields>
+          <HeaderField field="Origin" />
+          <DataField field="Value" />
+          <Methods>
+            <Method method="Concat" />
+            <Separator>,</Separator>
+            <FieldSize value="2048" />
+          </Methods>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="Customer Number" name="Customer Number" size="10" source="CrossTab:Group:Concat:" type="WString" />
+            <Field name="Name" size="38" source="CrossTab:Group:Concat:" type="String" />
+            <Field name="Left" size="2048" source="CrossTab:Header:Origin:Left:Concat:" type="V_WString" />
+            <Field name="Right" size="2048" source="CrossTab:Header:Origin:Right:Concat:" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
+    </Node>
+    <Node ToolID="56">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="666" y="954" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="if Left([Name],5)=&quot;Right&quot; then &quot;Right&quot; else &quot;Left&quot; endif" field="Origin" size="1073741823" type="V_WString" />
+            <FormulaField expression="if [Origin]=&quot;Right&quot; then Substring([Name],6) else [Name] endif" field="Name" size="38" type="String" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Origin = if Left([Name],5)="Right" then "Right" else "Left" endif
+Name = if [Ori...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="Customer Number" name="Customer Number" size="10" source="KNA1 @ S4H" type="WString" />
+            <Field name="Name" size="38" source="Formula: if [Origin]=&quot;Right&quot; then Substring([Name],6) else [Name] endif" type="String" />
+            <Field name="Value" size="35" source="KNA1 @ S4H" type="WString" />
+            <Field name="Origin" size="1073741823" source="Formula: if Left([Name],5)=&quot;Right&quot; then &quot;Right&quot; else &quot;Left&quot; endif" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="55">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Transpose.Transpose">
+        <Position x="582" y="954" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ErrorWarn>Warn</ErrorWarn>
+          <KeyFields>
+            <Field field="Customer Number" />
+          </KeyFields>
+          <DataFields>
+            <Field field="Customer Number" selected="False" />
+            <Field field="Country/Region Key" selected="True" />
+            <Field field="Name 1" selected="True" />
+            <Field field="City" selected="True" />
+            <Field field="Postal Code" selected="True" />
+            <Field field="Region (State, Province, County)" selected="True" />
+            <Field field="Street and House Number" selected="True" />
+            <Field field="First telephone number" selected="True" />
+            <Field field="Right_Customer Number" selected="True" />
+            <Field field="Right_Country/Region Key" selected="True" />
+            <Field field="Right_Name 1" selected="True" />
+            <Field field="Right_City" selected="True" />
+            <Field field="Right_Postal Code" selected="True" />
+            <Field field="Right_Region (State, Province, County)" selected="True" />
+            <Field field="Right_Street and House Number" selected="True" />
+            <Field field="Right_First telephone number" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </DataFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="Customer Number" name="Customer Number" size="10" source="KNA1 @ S4H" type="WString" />
+            <Field name="Name" size="38" source="Transpose:" type="String" />
+            <Field name="Value" size="35" source="KNA1 @ S4H" type="WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTranspose" />
+    </Node>
+    <Node ToolID="60">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="582" y="750" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Customer Number" action="GroupBy" rename="Customer Number" />
+            <SummarizeField field="HasDifferentValue?" action="Max" rename="Max_HasDifferentValue?" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="Customer Number" name="Customer Number" size="10" source="Summarize: GroupBy - Customer Number" type="WString" />
+            <Field name="Max_HasDifferentValue?" source="Formula: [Left]!=[Right]" type="Bool" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="61">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="762" y="750" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>IsFalse</Operator>
+            <Field>Max_HasDifferentValue?</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2024-01-04 11:46:11</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>
+              </Operand>
+              <StartDate>2024-01-04 11:46:11</StartDate>
+              <EndDate>2024-01-04 11:46:11</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Max_HasDifferentValue?] = 0</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field description="Customer Number" name="Customer Number" size="10" source="Summarize: GroupBy - Customer Number" type="WString" />
+            <Field name="Max_HasDifferentValue?" source="Formula: [Left]!=[Right]" type="Bool" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field description="Customer Number" name="Customer Number" size="10" source="Summarize: GroupBy - Customer Number" type="WString" />
+            <Field name="Max_HasDifferentValue?" source="Formula: [Left]!=[Right]" type="Bool" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="62">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="1014" y="930" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Customer Number" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Customer Number" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_Customer Number" selected="False" rename="Right_Customer Number" input="Right_" />
+                <SelectField field="Left_Modification" selected="False" input="Left_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Left">
+          <RecordInfo>
+            <Field description="Customer Number" name="Customer Number" size="10" source="Summarize: GroupBy - Customer Number" type="WString" />
+            <Field name="Max_HasDifferentValue?" source="Formula: [Left]!=[Right]" type="Bool" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Join">
+          <RecordInfo>
+            <Field description="Customer Number" name="Customer Number" size="10" source="Summarize: GroupBy - Customer Number" type="WString" />
+            <Field name="Max_HasDifferentValue?" source="Formula: [Left]!=[Right]" type="Bool" />
+            <Field name="Name" size="38" source="CrossTab:Group:Concat:" type="String" />
+            <Field name="Left" size="2048" source="CrossTab:Header:Origin:Left:Concat:" type="V_WString" />
+            <Field name="Right" size="2048" source="CrossTab:Header:Origin:Right:Concat:" type="V_WString" />
+            <Field name="HasDifferentValue?" source="Formula: [Left]!=[Right]" type="Bool" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Right">
+          <RecordInfo>
+            <Field description="Customer Number" name="Customer Number" size="10" source="CrossTab:Group:Concat:" type="WString" />
+            <Field name="Name" size="38" source="CrossTab:Group:Concat:" type="String" />
+            <Field name="Left" size="2048" source="CrossTab:Header:Origin:Left:Concat:" type="V_WString" />
+            <Field name="Right" size="2048" source="CrossTab:Header:Origin:Right:Concat:" type="V_WString" />
+            <Field name="HasDifferentValue?" source="Formula: [Left]!=[Right]" type="Bool" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="63">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="1086" y="930" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>IsTrue</Operator>
+            <Field>HasDifferentValue?</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2024-01-04 11:46:16</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>
+              </Operand>
+              <StartDate>2024-01-04 11:46:16</StartDate>
+              <EndDate>2024-01-04 11:46:16</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[HasDifferentValue?] = 1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field description="Customer Number" name="Customer Number" size="10" source="Summarize: GroupBy - Customer Number" type="WString" />
+            <Field name="Max_HasDifferentValue?" source="Formula: [Left]!=[Right]" type="Bool" />
+            <Field name="Name" size="38" source="CrossTab:Group:Concat:" type="String" />
+            <Field name="Left" size="2048" source="CrossTab:Header:Origin:Left:Concat:" type="V_WString" />
+            <Field name="Right" size="2048" source="CrossTab:Header:Origin:Right:Concat:" type="V_WString" />
+            <Field name="HasDifferentValue?" source="Formula: [Left]!=[Right]" type="Bool" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field description="Customer Number" name="Customer Number" size="10" source="Summarize: GroupBy - Customer Number" type="WString" />
+            <Field name="Max_HasDifferentValue?" source="Formula: [Left]!=[Right]" type="Bool" />
+            <Field name="Name" size="38" source="CrossTab:Group:Concat:" type="String" />
+            <Field name="Left" size="2048" source="CrossTab:Header:Origin:Left:Concat:" type="V_WString" />
+            <Field name="Right" size="2048" source="CrossTab:Header:Origin:Right:Concat:" type="V_WString" />
+            <Field name="HasDifferentValue?" source="Formula: [Left]!=[Right]" type="Bool" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="64">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="666" y="750" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="1033">
+            <Field field="Max_HasDifferentValue?" order="Descending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Max_HasDifferentValue? - Descending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="Customer Number" name="Customer Number" size="10" source="Summarize: GroupBy - Customer Number" type="WString" />
+            <Field name="Max_HasDifferentValue?" source="Formula: [Left]!=[Right]" type="Bool" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="65">
+      <GuiSettings>
+        <Position x="858" y="678" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit>
+            <Dependency Path="_externals\2\CountRecords.yxmc" Package="True" IsMacro="True" IsOutput="False" IsAlias="False" />
+          </Implicit>
+        </Dependencies>
+        <MetaInfo connection="Output9">
+          <RecordInfo>
+            <Field name="Count" source="(Multiple Sources)" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="_externals\2\CountRecords.yxmc" />
+    </Node>
+    <Node ToolID="66">
+      <GuiSettings>
+        <Position x="858" y="726" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit>
+            <Dependency Path="_externals\2\CountRecords.yxmc" Package="True" IsMacro="True" IsOutput="False" IsAlias="False" />
+          </Implicit>
+        </Dependencies>
+        <MetaInfo connection="Output9">
+          <RecordInfo>
+            <Field name="Count" source="(Multiple Sources)" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="_externals\2\CountRecords.yxmc" />
+    </Node>
+    <Node ToolID="67">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="930" y="678" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Count" selected="True" rename="#IdenticalRecords" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="#IdenticalRecords" source="(Multiple Sources)" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="68">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="930" y="726" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Count" selected="True" rename="#RecordsWithDifferences" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="#RecordsWithDifferences" source="(Multiple Sources)" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="69">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="1014" y="702" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="True">
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Left">
+          <RecordInfo>
+            <Field name="#IdenticalRecords" source="(Multiple Sources)" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Join">
+          <RecordInfo>
+            <Field name="#IdenticalRecords" source="(Multiple Sources)" type="Int64" />
+            <Field name="#RecordsWithDifferences" source="(Multiple Sources)" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Right">
+          <RecordInfo>
+            <Field name="#RecordsWithDifferences" source="(Multiple Sources)" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="70">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1086" y="702" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="Round([#IdenticalRecords]/([#IdenticalRecords]+[#RecordsWithDifferences])*100,1)" field="IdenticalRecords(%)" size="2" type="Int16" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>IdenticalRecords(%) = Round([#IdenticalRecords]/([#IdenticalRecords]+[#RecordsWi...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="#IdenticalRecords" source="(Multiple Sources)" type="Int64" />
+            <Field name="#RecordsWithDifferences" source="(Multiple Sources)" type="Int64" />
+            <Field name="IdenticalRecords(%)" source="Formula: Round([#IdenticalRecords]/([#IdenticalRecords]+[#RecordsWithDifferences])*100,1)" type="Int16" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="71">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="990" y="498" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[Left]=[Right]" field="Identical?" size="1" type="Bool" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Identical? = [Left]=[Right]
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Name" size="42" source="CrossTab:Group:Concat:" type="String" />
+            <Field name="Left" size="2048" source="CrossTab:Header:Origin:Left:Concat:" type="V_WString" />
+            <Field name="Right" size="2048" source="CrossTab:Header:Origin:Right:Concat:" type="V_WString" />
+            <Field name="Identical?" source="Formula: [Left]=[Right]" type="Bool" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="73">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
+        <Position x="882" y="498" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <GroupFields>
+            <Field field="Name" />
+          </GroupFields>
+          <HeaderField field="Origin" />
+          <DataField field="Value" />
+          <Methods>
+            <Method method="Concat" />
+            <Separator>,</Separator>
+            <FieldSize value="2048" />
+          </Methods>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Name" size="42" source="CrossTab:Group:Concat:" type="String" />
+            <Field name="Left" size="2048" source="CrossTab:Header:Origin:Left:Concat:" type="V_WString" />
+            <Field name="Right" size="2048" source="CrossTab:Header:Origin:Right:Concat:" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
+    </Node>
+    <Node ToolID="74">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="774" y="498" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="if Contains([Name], &quot;_Right_&quot;) then &quot;Right&quot; else &quot;Left&quot; endif" field="Origin" size="1073741823" type="V_WString" />
+            <FormulaField expression="if [Origin]=&quot;Right&quot; then Replace([Name], &quot;_Right&quot;, &quot;&quot;) else [Name] endif" field="Name" size="42" type="String" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Origin = if Contains([Name], "_Right_") then "Right" else "Left" endif
+Name = if...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Name" size="42" source="Formula: if [Origin]=&quot;Right&quot; then Replace([Name], &quot;_Right&quot;, &quot;&quot;) else [Name] endif" type="String" />
+            <Field name="Value" size="20" source="(Multiple Sources)" type="V_WString" />
+            <Field name="Origin" size="1073741823" source="Formula: if Contains([Name], &quot;_Right_&quot;) then &quot;Right&quot; else &quot;Left&quot; endif" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="75">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Transpose.Transpose">
+        <Position x="678" y="498" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ErrorWarn>Warn</ErrorWarn>
+          <KeyFields />
+          <DataFields>
+            <Field field="CountDistinct_Customer Number" selected="True" />
+            <Field field="CountDistinct_Right_Customer Number" selected="True" />
+            <Field field="Min_Customer Number" selected="True" />
+            <Field field="Min_Right_Customer Number" selected="True" />
+            <Field field="Max_Customer Number" selected="True" />
+            <Field field="Max_Right_Customer Number" selected="True" />
+            <Field field="CountDistinct_City" selected="True" />
+            <Field field="CountDistinct_Right_City" selected="True" />
+            <Field field="CountDistinct_First telephone number" selected="True" />
+            <Field field="CountDistinct_Right_First telephone number" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </DataFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Name" size="42" source="Transpose:" type="String" />
+            <Field name="Value" size="20" source="(Multiple Sources)" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTranspose" />
+    </Node>
+    <Node ToolID="76">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1218" y="486" width="168" height="72" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>High-level aggregation checks for matching IDs</Text>
+          <Font name="Arial" size="12" style="1" />
+          <TextColor name="Black" />
+          <FillColor r="232" g="232" b="232" />
+          <Shape shape="0" />
+          <Justification Justification="1" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="77">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1158" y="498" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\simon\AppData\Local\Temp\Engine_15160_4fc3216a02b93348890f3255e8a50e59_\Engine_15160_24af30874f0fc147b6eb67c5ba4fca4d~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="78">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1218" y="690" width="168" height="72" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Field-by-Field comparison statistics</Text>
+          <Font name="Arial" size="12" style="1" />
+          <TextColor name="Black" />
+          <FillColor r="232" g="232" b="232" />
+          <Shape shape="0" />
+          <Justification Justification="1" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="79">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1158" y="702" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\simon\AppData\Local\Temp\Engine_15160_4fc3216a02b93348890f3255e8a50e59_\Engine_15160_4e9a09ab6bc8e84393dc3733826f08ec~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="80">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1230" y="906" width="168" height="72" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Detailed List of fields with differences</Text>
+          <Font name="Arial" size="12" style="1" />
+          <TextColor name="Black" />
+          <FillColor r="232" g="232" b="232" />
+          <Shape shape="0" />
+          <Justification Justification="1" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="81">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1170" y="918" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\simon\AppData\Local\Temp\Engine_15160_4fc3216a02b93348890f3255e8a50e59_\Engine_15160_5001712cb1789b41beee79f1849ff75e~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="82">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1158" y="258" width="228" height="60" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text><![CDATA[
+Output]]></Text>
+          <Font name="Arial" size="12" style="1" />
+          <TextColor r="237" g="26" b="51" />
+          <FillColor r="232" g="232" b="232" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="84">
+      <GuiSettings Plugin="PortfolioPluginsGui.ComposerTable.PortfolioComposerTable">
+        <Position x="834" y="1302" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TableMode>Basic</TableMode>
+          <GroupingFields orderChanged="False" />
+          <Width>100%</Width>
+          <ShowHeader value="True" />
+          <ShowBarGraph value="False" />
+          <TableFields orderChanged="False">
+            <Field name="#IdenticalRecords" selected="True" Alignment="Right" />
+            <Field name="#RecordsWithDifferences" selected="True" Alignment="Right" />
+            <Field name="IdenticalRecords(%)" selected="True" Alignment="Right" />
+            <Field name="*Unknown" selected="True" Alignment="Right" />
+          </TableFields>
+          <TableStyles>
+            <Style Name="Data" Font="Arial" Size="8" TextColor="#000000" BackColor="#ffffff" AltColor="#f0f0f0" RowGroup="1" />
+            <Style Name="Header" Font="Arial" Size="10" TextColor="#000000" BackColor="#dbdbdb" />
+            <Style Name="Borders" Width="1" DataColor="#000000" HeaderColor="#000000" RowBorder="None" BasicColBorder="Default (Use Per Column Setting)" />
+            <Style Name="Table" CellPadding="0" ColumnPadding="0" TableBorder="true" Width="1" BorderColor="#000000" />
+          </TableStyles>
+          <StyleRules />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Basic Table</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Table" size="1073741823" source="Report:Table:Basic:" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerTablePlugin" />
+    </Node>
+    <Node ToolID="85">
+      <GuiSettings Plugin="PortfolioPluginsGui.ComposerTable.PortfolioComposerTable">
+        <Position x="834" y="1386" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TableMode>Basic</TableMode>
+          <GroupingFields orderChanged="False" />
+          <Width>100%</Width>
+          <ShowHeader value="True" />
+          <ShowBarGraph value="False" />
+          <TableFields orderChanged="False">
+            <Field name="Customer Number" selected="True" Alignment="Right" />
+            <Field name="Name" selected="True" Alignment="Right" />
+            <Field name="Left" selected="True" Alignment="Right" />
+            <Field name="Right" selected="True" Alignment="Right" />
+            <Field name="*Unknown" selected="True" Alignment="Right" />
+            <Field name="Max_HasDifferentValue?" selected="False" />
+            <Field name="HasDifferentValue?" selected="False" />
+          </TableFields>
+          <TableStyles>
+            <Style Name="Data" Font="Arial" Size="8" TextColor="#000000" BackColor="#ffffff" AltColor="#f0f0f0" RowGroup="1" />
+            <Style Name="Header" Font="Arial" Size="10" TextColor="#000000" BackColor="#dbdbdb" />
+            <Style Name="Borders" Width="1" DataColor="#000000" HeaderColor="#000000" RowBorder="None" BasicColBorder="Default (Use Per Column Setting)" />
+            <Style Name="Table" CellPadding="0" ColumnPadding="0" TableBorder="true" Width="1" BorderColor="#000000" />
+          </TableStyles>
+          <StyleRules />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Basic Table</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Table" size="1073741823" source="Report:Table:Basic:" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerTablePlugin" />
+    </Node>
+    <Node ToolID="86">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="1086" y="1254" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="True" />
+          <OutputOrder>
+            <Connection>#4</Connection>
+            <Connection>#3</Connection>
+            <Connection>#1</Connection>
+            <Connection>#2</Connection>
+          </OutputOrder>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Table" size="1073741823" source="Report:Table:Basic:" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="87">
+      <GuiSettings Plugin="PortfolioPluginsGui.ComposerRender.PortfolioComposerRender">
+        <Position x="1182" y="1254" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFileType>pdf</TempFileType>
+          <BatchMode value="False" />
+          <DataField>Table</DataField>
+          <Separator>Whitespace</Separator>
+          <EmbedDependencies value="False" />
+          <ShowHeader value="False" />
+          <ShowFooter value="False" />
+          <PortraitMode value="True" />
+          <PaperType Width="612" Height="792" Left="36" Right="36" Top="36" Bottom="36" />
+          <DefaultStyles>
+            <Style Name="TextStyle" FontName="Arial" FontSize="14" Justify="Left" ForeColor="#000000" Locale="1033" />
+          </DefaultStyles>
+          <PNGResolution>1</PNGResolution>
+          <PNGLargerAction>squeeze</PNGLargerAction>
+          <PNGLargerThanPageChoice>warning</PNGLargerThanPageChoice>
+          <PNGTransparentBG value="False" />
+          <PNGBackColor value="#ffffff" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerRenderPlugin" />
+    </Node>
+    <Node ToolID="88">
+      <GuiSettings Plugin="PortfolioPluginsGui.ComposerTable.PortfolioComposerTable">
+        <Position x="834" y="1218" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TableMode>Basic</TableMode>
+          <GroupingFields orderChanged="False" />
+          <Width>100%</Width>
+          <ShowHeader value="True" />
+          <ShowBarGraph value="False" />
+          <TableFields orderChanged="False">
+            <Field name="Name" selected="True" Alignment="Right" />
+            <Field name="Left" selected="True" Alignment="Right" />
+            <Field name="Right" selected="True" Alignment="Right" />
+            <Field name="Identical?" selected="True" Alignment="Right" Width="" />
+            <Field name="*Unknown" selected="True" Alignment="Right" />
+          </TableFields>
+          <TableStyles>
+            <Style Name="Data" Font="Arial" Size="8" TextColor="#000000" BackColor="#ffffff" AltColor="#f0f0f0" RowGroup="1" />
+            <Style Name="Header" Font="Arial" Size="10" TextColor="#000000" BackColor="#dbdbdb" />
+            <Style Name="Borders" Width="1" DataColor="#000000" HeaderColor="#000000" RowBorder="None" BasicColBorder="Default (Use Per Column Setting)" />
+            <Style Name="Table" CellPadding="0" ColumnPadding="0" TableBorder="true" Width="1" BorderColor="#000000" />
+          </TableStyles>
+          <StyleRules>
+            <Rule Name="a68b45d1-9bd8-49fa-bb42-da1c5c8bcf68">
+              <RowRule value="True" />
+              <HighPrecedence value="False" />
+              <Field />
+              <Test>Simple</Test>
+              <ApplyTo>Data</ApplyTo>
+              <SimpleVar>Identical?</SimpleVar>
+              <SimpleOp>==</SimpleOp>
+              <SimpleConst>0</SimpleConst>
+              <Formula>1</Formula>
+              <Style TextColor="#ed1a33" />
+              <PrettyName>Row Rule 1</PrettyName>
+            </Rule>
+          </StyleRules>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Basic Table</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Table" size="1073741823" source="Report:Table:Basic:" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerTablePlugin" />
+    </Node>
+    <Node ToolID="89">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="582" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="Customer Number" name="Customer Number" size="10" source="KNA1 @ S4H" type="WString" />
+            <Field description="Country/Region Key" name="Country/Region Key" size="3" source="KNA1 @ S4H" type="WString" />
+            <Field description="Name 1" name="Name 1" size="35" source="KNA1 @ S4H" type="WString" />
+            <Field description="City" name="City" size="35" source="KNA1 @ S4H" type="WString" />
+            <Field description="Postal Code" name="Postal Code" size="10" source="KNA1 @ S4H" type="WString" />
+            <Field description="Region (State, Province, County)" name="Region (State, Province, County)" size="3" source="KNA1 @ S4H" type="WString" />
+            <Field description="Street and House Number" name="Street and House Number" size="35" source="KNA1 @ S4H" type="WString" />
+            <Field description="First telephone number" name="First telephone number" size="16" source="KNA1 @ S4H" type="WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="90">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1158" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\simon\AppData\Local\Temp\Engine_15160_4fc3216a02b93348890f3255e8a50e59_\Engine_15160_8bba31b635e64a4ab055cccdc965d11d~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="91">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1218" y="342" width="168" height="72" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>S/4 Records without matching ID in ERP</Text>
+          <Font name="Arial" size="12" style="1" />
+          <TextColor name="Black" />
+          <FillColor r="232" g="232" b="232" />
+          <Shape shape="0" />
+          <Justification Justification="1" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="92">
+      <GuiSettings Plugin="PortfolioPluginsGui.ComposerTable.PortfolioComposerTable">
+        <Position x="834" y="1134" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TableMode>Basic</TableMode>
+          <GroupingFields orderChanged="False" />
+          <Width>100%</Width>
+          <ShowHeader value="True" />
+          <ShowBarGraph value="False" />
+          <TableFields orderChanged="False">
+            <Field name="Customer Number" selected="True" Alignment="Left" />
+            <Field name="Country/Region Key" selected="True" Alignment="Left" />
+            <Field name="Name 1" selected="True" Alignment="Left" />
+            <Field name="City" selected="True" Alignment="Left" />
+            <Field name="Postal Code" selected="True" Alignment="Left" />
+            <Field name="Region (State, Province, County)" selected="True" Alignment="Left" />
+            <Field name="Street and House Number" selected="True" Alignment="Left" />
+            <Field name="First telephone number" selected="True" Alignment="Left" />
+            <Field name="*Unknown" selected="True" Alignment="Right" />
+          </TableFields>
+          <TableStyles>
+            <Style Name="Data" Font="Arial" Size="8" TextColor="#000000" BackColor="#ffffff" AltColor="#f0f0f0" RowGroup="1" />
+            <Style Name="Header" Font="Arial" Size="10" TextColor="#000000" BackColor="#dbdbdb" />
+            <Style Name="Borders" Width="1" DataColor="#000000" HeaderColor="#000000" RowBorder="None" BasicColBorder="Default (Use Per Column Setting)" />
+            <Style Name="Table" CellPadding="0" ColumnPadding="0" TableBorder="true" Width="1" BorderColor="#000000" />
+          </TableStyles>
+          <StyleRules />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Basic Table</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Table" size="1073741823" source="Report:Table:Basic:" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerTablePlugin" />
+    </Node>
+    <Node ToolID="93">
+      <GuiSettings Plugin="PortfolioPluginsGui.ComposerText.PortfolioComposerText">
+        <Position x="930" y="1134" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Images />
+          <HeaderMode value="True" />
+          <HeaderField>Table</HeaderField>
+          <Position>Above</Position>
+          <RawMode value="False" />
+          <ValidatePCXML value="True" />
+          <Message />
+          <RichTextMode value="True" />
+          <RichTextString><![CDATA[{\rtf1\ansi\ansicpg1252\deff0\deflang1031{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+\viewkind4\uc1\pard\b\fs24 Records without matching ID in S/4:\b0\par
+}
+]]></RichTextString>
+          <Styles>
+            <Style Name="TextStyle" />
+          </Styles>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Records without matching ID in...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Table" size="1073741823" source="Report:Table:Basic:" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerTextPlugin" />
+    </Node>
+    <Node ToolID="94">
+      <GuiSettings Plugin="PortfolioPluginsGui.ComposerText.PortfolioComposerText">
+        <Position x="930" y="1218" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Images />
+          <HeaderMode value="True" />
+          <HeaderField>Table</HeaderField>
+          <Position>Above</Position>
+          <RawMode value="False" />
+          <ValidatePCXML value="True" />
+          <Message />
+          <RichTextMode value="True" />
+          <RichTextString><![CDATA[{\rtf1\ansi\ansicpg1252\deff0\deflang1031{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+\viewkind4\uc1\pard\b\fs24 High-level aggregation checks for matching IDs:\b0\par
+}
+]]></RichTextString>
+          <Styles>
+            <Style Name="TextStyle" />
+          </Styles>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>High-level aggregation checks ...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Table" size="1073741823" source="Report:Table:Basic:" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerTextPlugin" />
+    </Node>
+    <Node ToolID="95">
+      <GuiSettings Plugin="PortfolioPluginsGui.ComposerText.PortfolioComposerText">
+        <Position x="930" y="1302" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Images />
+          <HeaderMode value="True" />
+          <HeaderField>Table</HeaderField>
+          <Position>Above</Position>
+          <RawMode value="False" />
+          <ValidatePCXML value="True" />
+          <Message />
+          <RichTextMode value="True" />
+          <RichTextString><![CDATA[{\rtf1\ansi\ansicpg1252\deff0\deflang1031{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+\viewkind4\uc1\pard\b\fs24 Field-by-Field comparison statistics:\b0\par
+}
+]]></RichTextString>
+          <Styles>
+            <Style Name="TextStyle" />
+          </Styles>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Field-by-Field comparison stat...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Table" size="1073741823" source="Report:Table:Basic:" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerTextPlugin" />
+    </Node>
+    <Node ToolID="96">
+      <GuiSettings Plugin="PortfolioPluginsGui.ComposerText.PortfolioComposerText">
+        <Position x="930" y="1386" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Images />
+          <HeaderMode value="True" />
+          <HeaderField>Table</HeaderField>
+          <Position>Above</Position>
+          <RawMode value="False" />
+          <ValidatePCXML value="True" />
+          <Message />
+          <RichTextMode value="True" />
+          <RichTextString><![CDATA[{\rtf1\ansi\ansicpg1252\deff0\deflang1031{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+\viewkind4\uc1\pard\b\fs24 Detailed List of fields with differences:\b0\par
+}
+]]></RichTextString>
+          <Styles>
+            <Style Name="TextStyle" />
+          </Styles>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Detailed List of fields with d...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Table" size="1073741823" source="Report:Table:Basic:" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerTextPlugin" />
+    </Node>
+    <Node ToolID="97">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1242" y="1242" width="168" height="72" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>PDF Report Output</Text>
+          <Font name="Arial" size="12" style="1" />
+          <TextColor name="Black" />
+          <FillColor r="232" g="232" b="232" />
+          <Shape shape="0" />
+          <Justification Justification="1" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="32" Connection="Output" />
+      <Destination ToolID="75" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="37" Connection="Output" />
+      <Destination ToolID="39" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="37" Connection="Output" />
+      <Destination ToolID="46" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="46" Connection="Output" />
+      <Destination ToolID="53" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="50" Connection="Output" />
+      <Destination ToolID="53" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="49" Connection="Output" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="49" Connection="Output" />
+      <Destination ToolID="50" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="53" Connection="Join" />
+      <Destination ToolID="55" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="53" Connection="Join" />
+      <Destination ToolID="32" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="53" Connection="Left" />
+      <Destination ToolID="89" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="58" Connection="Output" />
+      <Destination ToolID="62" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="61" Connection="False" />
+      <Destination ToolID="62" Connection="Left" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="58" Connection="Output" />
+      <Destination ToolID="60" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="59" Connection="True" />
+      <Destination ToolID="58" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="57" Connection="Output" />
+      <Destination ToolID="59" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="56" Connection="Output" />
+      <Destination ToolID="57" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="55" Connection="Output" />
+      <Destination ToolID="56" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="60" Connection="Output" />
+      <Destination ToolID="64" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="61" Connection="True" />
+      <Destination ToolID="65" Connection="Input8" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="61" Connection="False" />
+      <Destination ToolID="66" Connection="Input8" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="62" Connection="Join" />
+      <Destination ToolID="63" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="63" Connection="True" />
+      <Destination ToolID="81" Connection="Input" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="63" Connection="True" />
+      <Destination ToolID="85" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="64" Connection="Output" />
+      <Destination ToolID="61" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="65" Connection="Output9" />
+      <Destination ToolID="67" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="66" Connection="Output9" />
+      <Destination ToolID="68" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="67" Connection="Output" />
+      <Destination ToolID="69" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="68" Connection="Output" />
+      <Destination ToolID="69" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="69" Connection="Join" />
+      <Destination ToolID="70" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="70" Connection="Output" />
+      <Destination ToolID="79" Connection="Input" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="70" Connection="Output" />
+      <Destination ToolID="84" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="71" Connection="Output" />
+      <Destination ToolID="77" Connection="Input" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="71" Connection="Output" />
+      <Destination ToolID="88" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="73" Connection="Output" />
+      <Destination ToolID="71" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="74" Connection="Output" />
+      <Destination ToolID="73" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="75" Connection="Output" />
+      <Destination ToolID="74" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="84" Connection="Output" />
+      <Destination ToolID="95" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="85" Connection="Output" />
+      <Destination ToolID="96" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="86" Connection="Output" />
+      <Destination ToolID="87" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="88" Connection="Output" />
+      <Destination ToolID="94" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="89" Connection="Output" />
+      <Destination ToolID="90" Connection="Input" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="89" Connection="Output" />
+      <Destination ToolID="92" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="92" Connection="Output" />
+      <Destination ToolID="93" Connection="Input" />
+    </Connection>
+    <Connection name="#4">
+      <Origin ToolID="93" Connection="Output" />
+      <Destination ToolID="86" Connection="Input" />
+    </Connection>
+    <Connection name="#3">
+      <Origin ToolID="94" Connection="Output" />
+      <Destination ToolID="86" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="95" Connection="Output" />
+      <Destination ToolID="86" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="96" Connection="Output" />
+      <Destination ToolID="86" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>S4 Migration - Source &amp; Target Validations</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="572785c4-d906-49d4-abc1-30a3efb59392" />
+      <Telemetry>
+        <PreviousWorkflowId value="ba63da96-bfef-49c8-a89f-110354cfcff2" />
+        <OriginWorkflowId value="0796e9f6-f0a2-438e-996a-9c4187a58837" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

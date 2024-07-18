@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<AlteryxDocument yxmdVer="2022.3">
+<AlteryxDocument yxmdVer="2024.1" RunE2="T">
   <Nodes>
     <Node ToolID="3">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
@@ -147,13 +147,19 @@ Data Preparation & Cleansing]]></Text>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <Text>In this Starter Kit Alteryx workflow the 'Xtract for Alteryx' connector is used to load data from SAP S/4HANAs Sales Document View (Transaction VA05 ) and prepare it for further analysis in Excel or a 3rd party BI solution.
+          <Text><![CDATA[In this Starter Kit Alteryx workflow the Xtract for Alteryx connector is used to load data from SAP S/4HANAs Sales Document View (Transaction VA05 ) and prepare it for further analysis in Excel or a 3rd party BI solution.
 
-To use the Xtract Table components which read data from SAP systems such as S/4HANA or ERP you need to install the Xtract for Alteryx connector. Please contact your Alteryx sales rep for more information. A free 30 day trial is available on https://theobald-software.com/en/download-trial
+To use the Xtract Table components which read data from SAP systems such as S/4HANA or ERP, install the Xtract for Alteryx connector. Contact your Alteryx sales representative for more information. A free 30 day trial is available on https://theobald-software.com/en/download-trial.
 
 The Report component requires installation of the custom function module Z_XTRACT_IS_REMOTE_REPORT in your SAP system.
-Required SAP authorizations: https://kb.theobald-software.com/sap/authority-objects-sap-user-rights
-How to set up the SAP connection: https://help.theobald-software.com/en/xtract-for-alteryx/sap-connection</Text>
+
+
+Required SAP authorizations: https://helpcenter.theobald-software.com/xtract-for-alteryx/documentation/setup-in-sap/sap-authority-objects.
+
+How to set up the SAP connection: https://helpcenter.theobald-software.com/xtract-for-alteryx/documentation/sap-connection.
+
+
+]]></Text>
           <Font name="Arial" size="11.25" style="1" />
           <TextColor name="Black" />
           <FillColor r="232" g="232" b="232" />
@@ -735,9 +741,10 @@ Query=SalesOrders</DefaultAnnotationText>
     <ShowConnectionStatusOnlyWhenRunning value="True" />
     <ZoomLevel value="0" />
     <LayoutType>Horizontal</LayoutType>
+    <IsTemplate value="False" />
     <MetaInfo>
       <NameIsFileName value="True" />
-      <Name>Report - S4 - TCode</Name>
+      <Name>Report-S4-TCode</Name>
       <Description />
       <RootToolName />
       <ToolVersion />
@@ -757,6 +764,7 @@ Query=SalesOrders</DefaultAnnotationText>
         <PreviousWorkflowId value="8a441d63-2518-4e1a-8c6f-f5cbb93a0680" />
         <OriginWorkflowId value="0796e9f6-f0a2-438e-996a-9c4187a58837" />
       </Telemetry>
+      <PlatformWorkflowId value="" />
     </MetaInfo>
     <Events>
       <Enabled value="True" />

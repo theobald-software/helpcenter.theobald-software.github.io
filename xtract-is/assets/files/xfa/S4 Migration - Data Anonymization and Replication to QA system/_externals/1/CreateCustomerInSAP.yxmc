@@ -1,0 +1,2394 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<AlteryxDocument yxmdVer="2023.1">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="Theobald.Alteryx.Bapi.BapiToolFactory">
+        <Position x="390" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <DcmV4ConnectionId>15b5ff50-c0dd-4d71-8576-1d72f396ede8</DcmV4ConnectionId>
+          <Definition>{
+    "name": "BAPI_CUSTOMER_CREATEFROMDATA1",
+    "description": "Only for ONLINE Store!!! BAPI Create Cstmr for BO Cstmr (KNA1) - with CAM",
+    "serialization": 
+    [
+        {
+            "typeDescriptions": 
+            [
+                {
+                    "KUNNR": {
+                        "length": 10,
+                        "rfcType": "CHAR",
+                        "description": "Customer Number",
+                        "fieldLabel": {
+                            "short": "Customer",
+                            "medium": "Customer",
+                            "long": "Customer",
+                            "heading": "Customer"
+                        }
+                    },
+                    "BAPI_MTYPE": {
+                        "length": 1,
+                        "rfcType": "CHAR",
+                        "description": "Message type: S Success, E Error, W Warning, I Info, A Abort",
+                        "fieldLabel": {
+                            "short": "Msg type",
+                            "medium": "Message type",
+                            "long": "Message type",
+                            "heading": "MsgType"
+                        }
+                    },
+                    "SYMSGID": {
+                        "length": 20,
+                        "rfcType": "CHAR",
+                        "description": "Message Class",
+                        "fieldLabel": {
+                            "short": "Message ID",
+                            "medium": "Message Class",
+                            "long": "Message Class",
+                            "heading": "Message ID"
+                        }
+                    },
+                    "SYMSGNO": {
+                        "length": 3,
+                        "rfcType": "NUM",
+                        "description": "Message Number",
+                        "fieldLabel": {
+                            "short": "Message no",
+                            "medium": "Message number",
+                            "long": "Message number",
+                            "heading": "Msg.no."
+                        }
+                    },
+                    "BAPI_MSG": {
+                        "length": 220,
+                        "rfcType": "CHAR",
+                        "description": "Message Text",
+                        "fieldLabel": {
+                            "short": "Message",
+                            "medium": "Message text",
+                            "long": "Message text",
+                            "heading": ""
+                        }
+                    },
+                    "BALOGNR": {
+                        "length": 20,
+                        "rfcType": "CHAR",
+                        "description": "Application log: log number",
+                        "fieldLabel": {
+                            "short": "Log no.",
+                            "medium": "Log number",
+                            "long": "Log number",
+                            "heading": "Log number"
+                        }
+                    },
+                    "BALMNR": {
+                        "length": 6,
+                        "rfcType": "NUM",
+                        "description": "Application log: Internal message serial number",
+                        "fieldLabel": {
+                            "short": "Msg. no.",
+                            "medium": "Message no.",
+                            "long": "Message serial no.",
+                            "heading": "Msg.no"
+                        }
+                    },
+                    "SYMSGV": {
+                        "length": 50,
+                        "rfcType": "CHAR",
+                        "description": "Message Variable",
+                        "fieldLabel": {
+                            "short": "Msg. Var.",
+                            "medium": "Message Variable",
+                            "long": "Message Variable",
+                            "heading": "Message Variable"
+                        }
+                    },
+                    "AD_TITLETX": {
+                        "length": 30,
+                        "rfcType": "CHAR",
+                        "description": "Title text",
+                        "fieldLabel": {
+                            "short": "Title",
+                            "medium": "Title",
+                            "long": "Title",
+                            "heading": "Title"
+                        }
+                    },
+                    "AD_TITLE": {
+                        "length": 4,
+                        "rfcType": "CHAR",
+                        "description": "Form-of-Address Key",
+                        "fieldLabel": {
+                            "short": "Title",
+                            "medium": "Title",
+                            "long": "Title",
+                            "heading": "Key"
+                        }
+                    },
+                    "AD_NAME1": {
+                        "length": 40,
+                        "rfcType": "CHAR",
+                        "description": "Name 1",
+                        "fieldLabel": {
+                            "short": "Name",
+                            "medium": "Name",
+                            "long": "Name",
+                            "heading": "Name"
+                        }
+                    },
+                    "AD_NAME2": {
+                        "length": 40,
+                        "rfcType": "CHAR",
+                        "description": "Name 2",
+                        "fieldLabel": {
+                            "short": "Name 2",
+                            "medium": "Name 2",
+                            "long": "Name 2",
+                            "heading": "Name 2"
+                        }
+                    },
+                    "AD_NAME3": {
+                        "length": 40,
+                        "rfcType": "CHAR",
+                        "description": "Name 3",
+                        "fieldLabel": {
+                            "short": "Name 3",
+                            "medium": "Name 3",
+                            "long": "Name 3",
+                            "heading": "Name 3"
+                        }
+                    },
+                    "AD_NAME4": {
+                        "length": 40,
+                        "rfcType": "CHAR",
+                        "description": "Name 4",
+                        "fieldLabel": {
+                            "short": "Name 4",
+                            "medium": "Name 4",
+                            "long": "Name 4",
+                            "heading": "Name 4"
+                        }
+                    },
+                    "AD_NAME_CO": {
+                        "length": 40,
+                        "rfcType": "CHAR",
+                        "description": "c/o name",
+                        "fieldLabel": {
+                            "short": "c/o",
+                            "medium": "c/o",
+                            "long": "c/o",
+                            "heading": "c/o name"
+                        }
+                    },
+                    "AD_CITY1": {
+                        "length": 40,
+                        "rfcType": "CHAR",
+                        "description": "City",
+                        "fieldLabel": {
+                            "short": "City",
+                            "medium": "City",
+                            "long": "City",
+                            "heading": "City"
+                        }
+                    },
+                    "AD_CITY2": {
+                        "length": 40,
+                        "rfcType": "CHAR",
+                        "description": "District",
+                        "fieldLabel": {
+                            "short": "District",
+                            "medium": "District",
+                            "long": "District",
+                            "heading": "District"
+                        }
+                    },
+                    "AD_CITYNUM": {
+                        "length": 12,
+                        "rfcType": "CHAR",
+                        "description": "City code for city/street file",
+                        "fieldLabel": {
+                            "short": "City Code",
+                            "medium": "City Code",
+                            "long": "City Code",
+                            "heading": "City Code"
+                        }
+                    },
+                    "AD_PSTCD1": {
+                        "length": 10,
+                        "rfcType": "CHAR",
+                        "description": "City postal code",
+                        "fieldLabel": {
+                            "short": "Postl Code",
+                            "medium": "Postal Code",
+                            "long": "Postal Code",
+                            "heading": "Postl Code"
+                        }
+                    },
+                    "AD_PSTCD2": {
+                        "length": 10,
+                        "rfcType": "CHAR",
+                        "description": "PO Box Postal Code",
+                        "fieldLabel": {
+                            "short": "Postl Code",
+                            "medium": "PO Box Post Cde",
+                            "long": "PO Box Postal Code",
+                            "heading": "Postl Code"
+                        }
+                    },
+                    "AD_PSTCD3": {
+                        "length": 10,
+                        "rfcType": "CHAR",
+                        "description": "Company Postal Code (for Large Customers)",
+                        "fieldLabel": {
+                            "short": "Postl Code",
+                            "medium": "Company Post Cd",
+                            "long": "Company Postal Code",
+                            "heading": "Postl Code"
+                        }
+                    },
+                    "AD_POBX": {
+                        "length": 10,
+                        "rfcType": "CHAR",
+                        "description": "PO Box",
+                        "fieldLabel": {
+                            "short": "PO Box",
+                            "medium": "PO Box",
+                            "long": "PO Box",
+                            "heading": "PO Box"
+                        }
+                    },
+                    "AD_POBXLOC": {
+                        "length": 40,
+                        "rfcType": "CHAR",
+                        "description": "PO Box city",
+                        "fieldLabel": {
+                            "short": "PO Box cty",
+                            "medium": "PO Box City",
+                            "long": "PO Box City",
+                            "heading": "PO Box City"
+                        }
+                    },
+                    "AD_PSTLAR": {
+                        "length": 15,
+                        "rfcType": "CHAR",
+                        "description": "(Not Supported) Post Delivery District",
+                        "fieldLabel": {
+                            "short": "Del. Dist.",
+                            "medium": "Delivery Dist.",
+                            "long": "Delivery District",
+                            "heading": "Delivery Dist."
+                        }
+                    },
+                    "AD_STR_OLD": {
+                        "length": 40,
+                        "rfcType": "CHAR",
+                        "description": "Street",
+                        "fieldLabel": {
+                            "short": "Street",
+                            "medium": "Street",
+                            "long": "Street",
+                            "heading": "Street"
+                        }
+                    },
+                    "AD_HSNM1": {
+                        "length": 10,
+                        "rfcType": "CHAR",
+                        "description": "House Number",
+                        "fieldLabel": {
+                            "short": "House No.",
+                            "medium": "House Number",
+                            "long": "House Number",
+                            "heading": "House No."
+                        }
+                    },
+                    "AD_BLD_OLD": {
+                        "length": 10,
+                        "rfcType": "CHAR",
+                        "description": "old: building (no. or abbreviation)",
+                        "fieldLabel": {
+                            "short": "Building",
+                            "medium": "Building code",
+                            "long": "Building code",
+                            "heading": "Building"
+                        }
+                    },
+                    "AD_FLOOR": {
+                        "length": 10,
+                        "rfcType": "CHAR",
+                        "description": "Floor in building",
+                        "fieldLabel": {
+                            "short": "Floor",
+                            "medium": "Floor",
+                            "long": "Floor",
+                            "heading": "Floor"
+                        }
+                    },
+                    "AD_ROOMNUM": {
+                        "length": 10,
+                        "rfcType": "CHAR",
+                        "description": "Room or Appartment Number",
+                        "fieldLabel": {
+                            "short": "Room",
+                            "medium": "Room Number",
+                            "long": "Room Number",
+                            "heading": "Room No."
+                        }
+                    },
+                    "LAND1": {
+                        "length": 3,
+                        "rfcType": "CHAR",
+                        "description": "Country Key",
+                        "fieldLabel": {
+                            "short": "Country",
+                            "medium": "Country",
+                            "long": "Country Key",
+                            "heading": "Ctr"
+                        }
+                    },
+                    "SPRAS": {
+                        "length": 1,
+                        "rfcType": "CHAR",
+                        "description": "Language Key",
+                        "fieldLabel": {
+                            "short": "Language",
+                            "medium": "Language",
+                            "long": "Language Key",
+                            "heading": "Language"
+                        }
+                    },
+                    "REGIO": {
+                        "length": 3,
+                        "rfcType": "CHAR",
+                        "description": "Region (State, Province, County)",
+                        "fieldLabel": {
+                            "short": "Region",
+                            "medium": "Region",
+                            "long": "Region",
+                            "heading": "Rg"
+                        }
+                    },
+                    "AD_TLNMBR1": {
+                        "length": 30,
+                        "rfcType": "CHAR",
+                        "description": "First telephone no.: dialling code+number",
+                        "fieldLabel": {
+                            "short": "Telephone",
+                            "medium": "Telephone",
+                            "long": "Telephone",
+                            "heading": "Telephone"
+                        }
+                    },
+                    "AD_TLXTNS1": {
+                        "length": 10,
+                        "rfcType": "CHAR",
+                        "description": "First Telephone No.: Extension",
+                        "fieldLabel": {
+                            "short": "Extension",
+                            "medium": "Extension",
+                            "long": "Extension",
+                            "heading": "Extension"
+                        }
+                    },
+                    "AD_FXNMBR1": {
+                        "length": 30,
+                        "rfcType": "CHAR",
+                        "description": "First fax no.: dialling code+number",
+                        "fieldLabel": {
+                            "short": "Fax",
+                            "medium": "Fax",
+                            "long": "Fax",
+                            "heading": "Fax"
+                        }
+                    },
+                    "AD_FXXTNS1": {
+                        "length": 10,
+                        "rfcType": "CHAR",
+                        "description": "First fax no.: extension",
+                        "fieldLabel": {
+                            "short": "Extension",
+                            "medium": "Extension",
+                            "long": "Extension",
+                            "heading": "Extension"
+                        }
+                    },
+                    "AD_SMTPADR": {
+                        "length": 241,
+                        "rfcType": "CHAR",
+                        "description": "E-Mail Address",
+                        "fieldLabel": {
+                            "short": "E-Mail",
+                            "medium": "E-Mail Address",
+                            "long": "E-Mail Address",
+                            "heading": "E-Mail Address"
+                        }
+                    },
+                    "INTCA": {
+                        "length": 2,
+                        "rfcType": "CHAR",
+                        "description": "Country ISO code",
+                        "fieldLabel": {
+                            "short": "ISO code",
+                            "medium": "ISO code",
+                            "long": "ISO code",
+                            "heading": "ISO code"
+                        }
+                    },
+                    "LAISO": {
+                        "length": 2,
+                        "rfcType": "CHAR",
+                        "description": "2-Character SAP Language Code",
+                        "fieldLabel": {
+                            "short": "Lang.(ISO)",
+                            "medium": "Lang. (ISO)",
+                            "long": "Lang. (ISO 639)",
+                            "heading": "Lng ISO"
+                        }
+                    },
+                    "WAERS": {
+                        "length": 5,
+                        "rfcType": "CHAR",
+                        "description": "Currency Key",
+                        "fieldLabel": {
+                            "short": "Currency",
+                            "medium": "Currency",
+                            "long": "Currency",
+                            "heading": "Crcy"
+                        }
+                    },
+                    "WAERS_ISO": {
+                        "length": 3,
+                        "rfcType": "CHAR",
+                        "description": "ISO code currency",
+                        "fieldLabel": {
+                            "short": "ISO code",
+                            "medium": "ISO code crcy",
+                            "long": "ISO code currency",
+                            "heading": "ISO"
+                        }
+                    },
+                    "XFELD": {
+                        "length": 1,
+                        "rfcType": "CHAR",
+                        "description": "Checkbox",
+                        "fieldLabel": {
+                            "short": "",
+                            "medium": "",
+                            "long": "",
+                            "heading": ""
+                        }
+                    },
+                    "VKORG": {
+                        "length": 4,
+                        "rfcType": "CHAR",
+                        "description": "Sales Organization",
+                        "fieldLabel": {
+                            "short": "Sales org.",
+                            "medium": "Sales Org.",
+                            "long": "Sales Organization",
+                            "heading": "SOrg."
+                        }
+                    },
+                    "VTWEG": {
+                        "length": 2,
+                        "rfcType": "CHAR",
+                        "description": "Distribution Channel",
+                        "fieldLabel": {
+                            "short": "Distr. Chl",
+                            "medium": "Distr. Channel",
+                            "long": "Distribution Channel",
+                            "heading": "DChl"
+                        }
+                    },
+                    "SPART": {
+                        "length": 2,
+                        "rfcType": "CHAR",
+                        "description": "Division",
+                        "fieldLabel": {
+                            "short": "Division",
+                            "medium": "Division",
+                            "long": "Division",
+                            "heading": "Dv"
+                        }
+                    },
+                    "REFKUNNR": {
+                        "length": 10,
+                        "rfcType": "CHAR",
+                        "description": "Reference customer",
+                        "fieldLabel": {
+                            "short": "RefCust.",
+                            "medium": "Ref. customer",
+                            "long": "Ref. customer",
+                            "heading": "RefCust."
+                        }
+                    },
+                    "LZONE": {
+                        "length": 10,
+                        "rfcType": "CHAR",
+                        "description": "Transportation zone to or from which the goods are delivered",
+                        "fieldLabel": {
+                            "short": "Zone",
+                            "medium": "Transport.zone",
+                            "long": "Transportation zone",
+                            "heading": "TranspZone"
+                        }
+                    },
+                    "AKONT": {
+                        "length": 10,
+                        "rfcType": "CHAR",
+                        "description": "Reconciliation Account in General Ledger",
+                        "fieldLabel": {
+                            "short": "Recon.acct",
+                            "medium": "Recon. account",
+                            "long": "Reconciliation acct",
+                            "heading": "Recon.acct"
+                        }
+                    },
+                    "DZTERM": {
+                        "length": 4,
+                        "rfcType": "CHAR",
+                        "description": "Terms of Payment Key",
+                        "fieldLabel": {
+                            "short": "Payt Terms",
+                            "medium": "Payt Terms",
+                            "long": "Terms of Payment",
+                            "heading": "PayT"
+                        }
+                    },
+                    "VSBED": {
+                        "length": 2,
+                        "rfcType": "CHAR",
+                        "description": "Shipping Conditions",
+                        "fieldLabel": {
+                            "short": "Shpg Cond.",
+                            "medium": "Shipping Cond.",
+                            "long": "Shipping Conditions",
+                            "heading": "SC"
+                        }
+                    },
+                    "DWERK": {
+                        "length": 4,
+                        "rfcType": "CHAR",
+                        "description": "Delivering Plant",
+                        "fieldLabel": {
+                            "short": "Dlv.plant",
+                            "medium": "Deliver.plant",
+                            "long": "Delivering Plant",
+                            "heading": "Plnt"
+                        }
+                    },
+                    "KZTLF": {
+                        "length": 1,
+                        "rfcType": "CHAR",
+                        "description": "Partial delivery at item level",
+                        "fieldLabel": {
+                            "short": "Part.dlv.",
+                            "medium": "Part.dlv./item",
+                            "long": "Part.dlv./item",
+                            "heading": "PD"
+                        }
+                    },
+                    "KKBER": {
+                        "length": 4,
+                        "rfcType": "CHAR",
+                        "description": "Credit control area",
+                        "fieldLabel": {
+                            "short": "CreditArea",
+                            "medium": "Cred.contr.area",
+                            "long": "Credit control area",
+                            "heading": "CCAr"
+                        }
+                    },
+                    "TXJCD": {
+                        "length": 15,
+                        "rfcType": "CHAR",
+                        "description": "Tax Jurisdiction",
+                        "fieldLabel": {
+                            "short": "Tax Jur.",
+                            "medium": "Tax Jur.",
+                            "long": "Tax Jurisdiction",
+                            "heading": "Tax Jur."
+                        }
+                    },
+                    "AD_NAMEFIR": {
+                        "length": 40,
+                        "rfcType": "CHAR",
+                        "description": "First name",
+                        "fieldLabel": {
+                            "short": "First name",
+                            "medium": "First name",
+                            "long": "First name",
+                            "heading": "First name"
+                        }
+                    },
+                    "AD_NAMELAS": {
+                        "length": 40,
+                        "rfcType": "CHAR",
+                        "description": "Last name",
+                        "fieldLabel": {
+                            "short": "Last name",
+                            "medium": "Last name",
+                            "long": "Last name",
+                            "heading": "Last name"
+                        }
+                    },
+                    "AD_NAMEMID": {
+                        "length": 40,
+                        "rfcType": "CHAR",
+                        "description": "Middle name or second forename of a person",
+                        "fieldLabel": {
+                            "short": "forename 2",
+                            "medium": "2nd forename",
+                            "long": "2nd forename",
+                            "heading": "2nd forename or middle name"
+                        }
+                    },
+                    "AD_NAMLAS2": {
+                        "length": 40,
+                        "rfcType": "CHAR",
+                        "description": "Second surname of a person",
+                        "fieldLabel": {
+                            "short": "2.Surname",
+                            "medium": "2nd family name",
+                            "long": "2nd family name",
+                            "heading": "2nd family name"
+                        }
+                    },
+                    "GBDAT": {
+                        "length": 8,
+                        "rfcType": "DATE",
+                        "description": "Date of Birth",
+                        "fieldLabel": {
+                            "short": "Birth date",
+                            "medium": "Birth date",
+                            "long": "Date of birth",
+                            "heading": "Birth date"
+                        }
+                    },
+                    "AD_STREET": {
+                        "length": 60,
+                        "rfcType": "CHAR",
+                        "description": "Street",
+                        "fieldLabel": {
+                            "short": "Street",
+                            "medium": "Street",
+                            "long": "Street",
+                            "heading": "Street"
+                        }
+                    },
+                    "AD_BLDNG": {
+                        "length": 20,
+                        "rfcType": "CHAR",
+                        "description": "Building (Number or Code)",
+                        "fieldLabel": {
+                            "short": "Building",
+                            "medium": "Building Code",
+                            "long": "Building Code",
+                            "heading": "Building"
+                        }
+                    }
+                },
+                {
+                    "BAPIRETURN1": {
+                        "fields": 
+                        [
+                            {
+                                "name": "TYPE",
+                                "typeReference": "BAPI_MTYPE"
+                            },
+                            {
+                                "name": "ID",
+                                "typeReference": "SYMSGID"
+                            },
+                            {
+                                "name": "NUMBER",
+                                "typeReference": "SYMSGNO"
+                            },
+                            {
+                                "name": "MESSAGE",
+                                "typeReference": "BAPI_MSG"
+                            },
+                            {
+                                "name": "LOG_NO",
+                                "typeReference": "BALOGNR"
+                            },
+                            {
+                                "name": "LOG_MSG_NO",
+                                "typeReference": "BALMNR"
+                            },
+                            {
+                                "name": "MESSAGE_V1",
+                                "typeReference": "SYMSGV"
+                            },
+                            {
+                                "name": "MESSAGE_V2",
+                                "typeReference": "SYMSGV"
+                            },
+                            {
+                                "name": "MESSAGE_V3",
+                                "typeReference": "SYMSGV"
+                            },
+                            {
+                                "name": "MESSAGE_V4",
+                                "typeReference": "SYMSGV"
+                            }
+                        ]
+                    },
+                    "BAPIKNA106": {
+                        "fields": 
+                        [
+                            {
+                                "name": "TITLE",
+                                "typeReference": "AD_TITLETX"
+                            },
+                            {
+                                "name": "TITLE_KEY",
+                                "typeReference": "AD_TITLE"
+                            },
+                            {
+                                "name": "NAME",
+                                "typeReference": "AD_NAME1"
+                            },
+                            {
+                                "name": "NAME_2",
+                                "typeReference": "AD_NAME2"
+                            },
+                            {
+                                "name": "NAME_3",
+                                "typeReference": "AD_NAME3"
+                            },
+                            {
+                                "name": "NAME_4",
+                                "typeReference": "AD_NAME4"
+                            },
+                            {
+                                "name": "C_O_NAME",
+                                "typeReference": "AD_NAME_CO"
+                            },
+                            {
+                                "name": "CITY",
+                                "typeReference": "AD_CITY1"
+                            },
+                            {
+                                "name": "DISTRICT",
+                                "typeReference": "AD_CITY2"
+                            },
+                            {
+                                "name": "CITY_NO",
+                                "typeReference": "AD_CITYNUM"
+                            },
+                            {
+                                "name": "POSTL_COD1",
+                                "typeReference": "AD_PSTCD1"
+                            },
+                            {
+                                "name": "POSTL_COD2",
+                                "typeReference": "AD_PSTCD2"
+                            },
+                            {
+                                "name": "POSTL_COD3",
+                                "typeReference": "AD_PSTCD3"
+                            },
+                            {
+                                "name": "PO_BOX",
+                                "typeReference": "AD_POBX"
+                            },
+                            {
+                                "name": "PO_BOX_CIT",
+                                "typeReference": "AD_POBXLOC"
+                            },
+                            {
+                                "name": "DELIV_DIS",
+                                "typeReference": "AD_PSTLAR"
+                            },
+                            {
+                                "name": "STREET",
+                                "typeReference": "AD_STR_OLD"
+                            },
+                            {
+                                "name": "HOUSE_NO",
+                                "typeReference": "AD_HSNM1"
+                            },
+                            {
+                                "name": "BUILDING",
+                                "typeReference": "AD_BLD_OLD"
+                            },
+                            {
+                                "name": "FLOOR",
+                                "typeReference": "AD_FLOOR"
+                            },
+                            {
+                                "name": "ROOM_NO",
+                                "typeReference": "AD_ROOMNUM"
+                            },
+                            {
+                                "name": "COUNTRY",
+                                "typeReference": "LAND1"
+                            },
+                            {
+                                "name": "LANGU",
+                                "typeReference": "SPRAS"
+                            },
+                            {
+                                "name": "REGION",
+                                "typeReference": "REGIO"
+                            },
+                            {
+                                "name": "TEL1_NUMBR",
+                                "typeReference": "AD_TLNMBR1"
+                            },
+                            {
+                                "name": "TEL1_EXT",
+                                "typeReference": "AD_TLXTNS1"
+                            },
+                            {
+                                "name": "FAX_NUMBER",
+                                "typeReference": "AD_FXNMBR1"
+                            },
+                            {
+                                "name": "FAX_EXTENS",
+                                "typeReference": "AD_FXXTNS1"
+                            },
+                            {
+                                "name": "E_MAIL",
+                                "typeReference": "AD_SMTPADR"
+                            },
+                            {
+                                "name": "COUNTRYISO",
+                                "typeReference": "INTCA"
+                            },
+                            {
+                                "name": "LANGU_ISO",
+                                "typeReference": "LAISO"
+                            },
+                            {
+                                "name": "CURRENCY",
+                                "typeReference": "WAERS"
+                            },
+                            {
+                                "name": "CURRENCY_ISO",
+                                "typeReference": "WAERS_ISO"
+                            }
+                        ]
+                    },
+                    "BAPIKNA102": {
+                        "fields": 
+                        [
+                            {
+                                "name": "SALESORG",
+                                "typeReference": "VKORG"
+                            },
+                            {
+                                "name": "DISTR_CHAN",
+                                "typeReference": "VTWEG"
+                            },
+                            {
+                                "name": "DIVISION",
+                                "typeReference": "SPART"
+                            },
+                            {
+                                "name": "REF_CUSTMR",
+                                "typeReference": "REFKUNNR"
+                            }
+                        ]
+                    },
+                    "BAPIKNA105": {
+                        "fields": 
+                        [
+                            {
+                                "name": "TRANSPZONE",
+                                "typeReference": "LZONE"
+                            },
+                            {
+                                "name": "CONTROL_ACCOUNT",
+                                "typeReference": "AKONT"
+                            },
+                            {
+                                "name": "PMNTTRMS",
+                                "typeReference": "DZTERM"
+                            },
+                            {
+                                "name": "SHIP_COND",
+                                "typeReference": "VSBED"
+                            },
+                            {
+                                "name": "DELYG_PLNT",
+                                "typeReference": "DWERK"
+                            },
+                            {
+                                "name": "PART_DLV",
+                                "typeReference": "KZTLF"
+                            },
+                            {
+                                "name": "C_CTR_AREA",
+                                "typeReference": "KKBER"
+                            },
+                            {
+                                "name": "TAXJURCODE",
+                                "typeReference": "TXJCD"
+                            }
+                        ]
+                    },
+                    "BAPIKNA101_1": {
+                        "fields": 
+                        [
+                            {
+                                "name": "TITLE_P",
+                                "typeReference": "AD_TITLETX"
+                            },
+                            {
+                                "name": "FIRSTNAME",
+                                "typeReference": "AD_NAMEFIR"
+                            },
+                            {
+                                "name": "LASTNAME",
+                                "typeReference": "AD_NAMELAS"
+                            },
+                            {
+                                "name": "MIDDLENAME",
+                                "typeReference": "AD_NAMEMID"
+                            },
+                            {
+                                "name": "SECONDNAME",
+                                "typeReference": "AD_NAMLAS2"
+                            },
+                            {
+                                "name": "DATE_BIRTH",
+                                "typeReference": "GBDAT"
+                            },
+                            {
+                                "name": "CITY",
+                                "typeReference": "AD_CITY1"
+                            },
+                            {
+                                "name": "DISTRICT",
+                                "typeReference": "AD_CITY2"
+                            },
+                            {
+                                "name": "POSTL_COD1",
+                                "typeReference": "AD_PSTCD1"
+                            },
+                            {
+                                "name": "POSTL_COD2",
+                                "typeReference": "AD_PSTCD2"
+                            },
+                            {
+                                "name": "PO_BOX",
+                                "typeReference": "AD_POBX"
+                            },
+                            {
+                                "name": "PO_BOX_CIT",
+                                "typeReference": "AD_POBXLOC"
+                            },
+                            {
+                                "name": "STREET",
+                                "typeReference": "AD_STREET"
+                            },
+                            {
+                                "name": "HOUSE_NO",
+                                "typeReference": "AD_HSNM1"
+                            },
+                            {
+                                "name": "BUILDING",
+                                "typeReference": "AD_BLDNG"
+                            },
+                            {
+                                "name": "FLOOR",
+                                "typeReference": "AD_FLOOR"
+                            },
+                            {
+                                "name": "ROOM_NO",
+                                "typeReference": "AD_ROOMNUM"
+                            },
+                            {
+                                "name": "COUNTRY",
+                                "typeReference": "LAND1"
+                            },
+                            {
+                                "name": "COUNTRYISO",
+                                "typeReference": "INTCA"
+                            },
+                            {
+                                "name": "REGION",
+                                "typeReference": "REGIO"
+                            },
+                            {
+                                "name": "TEL1_NUMBR",
+                                "typeReference": "AD_TLNMBR1"
+                            },
+                            {
+                                "name": "TEL1_EXT",
+                                "typeReference": "AD_TLXTNS1"
+                            },
+                            {
+                                "name": "FAX_NUMBER",
+                                "typeReference": "AD_FXNMBR1"
+                            },
+                            {
+                                "name": "FAX_EXTENS",
+                                "typeReference": "AD_FXXTNS1"
+                            },
+                            {
+                                "name": "E_MAIL",
+                                "typeReference": "AD_SMTPADR"
+                            },
+                            {
+                                "name": "LANGU_P",
+                                "typeReference": "SPRAS"
+                            },
+                            {
+                                "name": "LANGUP_ISO",
+                                "typeReference": "LAISO"
+                            },
+                            {
+                                "name": "CURRENCY",
+                                "typeReference": "WAERS"
+                            },
+                            {
+                                "name": "CURRENCY_ISO",
+                                "typeReference": "WAERS_ISO"
+                            },
+                            {
+                                "name": "TITLE_KEY",
+                                "typeReference": "AD_TITLE"
+                            },
+                            {
+                                "name": "ONLY_CHANGE_COMADDRESS",
+                                "typeReference": "XFELD"
+                            }
+                        ]
+                    }
+                },
+                {
+                }
+            ]
+        },
+        {
+            "imports": 
+            [
+                {
+                    "name": "PI_COMPANYDATA",
+                    "description": "Customer Company Data",
+                    "typeReference": "BAPIKNA106"
+                },
+                {
+                    "name": "PI_CONSUMEREN",
+                    "description": "Allow Consumer Maintenance",
+                    "typeReference": "XFELD"
+                },
+                {
+                    "name": "PI_COPYREFERENCE",
+                    "description": "Reference Data",
+                    "typeReference": "BAPIKNA102"
+                },
+                {
+                    "name": "PI_CREDIT_CONTROL_FLAG",
+                    "description": "Update Credit Control Data",
+                    "typeReference": "XFELD"
+                },
+                {
+                    "name": "PI_OPT_COMPANYDATA",
+                    "description": "Optional Customer Company Data",
+                    "typeReference": "BAPIKNA105"
+                },
+                {
+                    "name": "PI_OPT_PERSONALDATA",
+                    "description": "Optional Customer Personal Data",
+                    "typeReference": "BAPIKNA105"
+                },
+                {
+                    "name": "PI_PERSONALDATA",
+                    "description": "Customer Personal Data",
+                    "typeReference": "BAPIKNA101_1"
+                }
+            ],
+            "exports": 
+            [
+                {
+                    "name": "CUSTOMERNO",
+                    "description": "New Customer Number",
+                    "typeReference": "KUNNR"
+                },
+                {
+                    "name": "RETURN",
+                    "description": "Return Value",
+                    "typeReference": "BAPIRETURN1"
+                }
+            ]
+        },
+        {
+            "scalar": {
+                "SALESORG": {
+                    "type": "String"
+                },
+                "DISTR_CHAN": {
+                    "type": "String"
+                },
+                "DIVISION": {
+                    "type": "String"
+                },
+                "REF_CUSTMR": {
+                    "type": "String"
+                },
+                "FirstName": {
+                    "type": "String"
+                },
+                "LastName": {
+                    "type": "String"
+                },
+                "CountryKey": {
+                    "type": "String"
+                },
+                "City": {
+                    "type": "String"
+                },
+                "PostalCode": {
+                    "type": "String"
+                },
+                "Street": {
+                    "type": "String"
+                },
+                "Phone": {
+                    "type": "String"
+                },
+                "eMail": {
+                    "type": "String"
+                },
+                "BirthDate": {
+                    "type": "String"
+                },
+                "HouseNumber": {
+                    "type": "String"
+                }
+            }
+        },
+        {
+        },
+        {
+            "PI_COPYREFERENCE": {
+                "SALESORG": {
+                    "inputParameter": "SALESORG"
+                },
+                "DISTR_CHAN": {
+                    "inputParameter": "DISTR_CHAN"
+                },
+                "DIVISION": {
+                    "inputParameter": "DIVISION"
+                },
+                "REF_CUSTMR": {
+                    "inputParameter": "REF_CUSTMR"
+                }
+            },
+            "PI_PERSONALDATA": {
+                "FIRSTNAME": {
+                    "inputParameter": "FirstName"
+                },
+                "LASTNAME": {
+                    "inputParameter": "LastName"
+                },
+                "DATE_BIRTH": {
+                    "inputParameter": "BirthDate"
+                },
+                "CITY": {
+                    "inputParameter": "City"
+                },
+                "POSTL_COD1": {
+                    "inputParameter": "PostalCode"
+                },
+                "STREET": {
+                    "inputParameter": "Street"
+                },
+                "HOUSE_NO": {
+                    "inputParameter": "HouseNumber"
+                },
+                "COUNTRY": {
+                    "inputParameter": "CountryKey"
+                },
+                "COUNTRYISO": {
+                    "inputParameter": "CountryKey"
+                },
+                "LANGU_P": {
+                    "value": "E"
+                },
+                "LANGUP_ISO": {
+                    "value": "EN"
+                },
+                "CURRENCY": {
+                    "value": "EUR"
+                }
+            }
+        },
+        {
+            "parameters": 
+            [
+                "CUSTOMERNO",
+                "RETURN"
+            ]
+        }
+    ]
+}</Definition>
+          <DestinationSettings>{
+    "columnNameStyle": "Code"
+}</DestinationSettings>
+          <ExtractorsVersion>999.999.999.760</ExtractorsVersion>
+          <RuntimeParameters>
+            <SALESORG>
+            </SALESORG>
+            <DISTR_CHAN>
+            </DISTR_CHAN>
+            <DIVISION>
+            </DIVISION>
+            <REF_CUSTMR>
+            </REF_CUSTMR>
+            <FirstName>
+            </FirstName>
+            <LastName>
+            </LastName>
+            <CountryKey>
+            </CountryKey>
+            <City>
+            </City>
+            <PostalCode>
+            </PostalCode>
+            <Street>
+            </Street>
+            <Phone>
+            </Phone>
+            <eMail>
+            </eMail>
+            <BirthDate>
+            </BirthDate>
+            <HouseNumber>
+            </HouseNumber>
+          </RuntimeParameters>
+          <CommitTransaction>False</CommitTransaction>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>BAPI Create Cstmr for BO Cstmr (KNA1) - with CAM (BAPI_CUSTOMER_CREATEFROMDATA1)</AnnotationText>
+          <DefaultAnnotationText>Only for ONLINE Store!!! BAPI Create Cstmr for BO Cstmr (KNA1) - with CAM (BAPI_CUSTOMER_CREATEFROMDATA1)</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Exports">
+          <RecordInfo>
+            <Field description="New Customer Number" name="CUSTOMERNO" size="10" source="Exports from BAPI_CUSTOMER_CREATEFROMDATA1 @ EC5 new" type="WString" />
+            <Field name="RETURN-TYPE" size="1" source="Exports from BAPI_CUSTOMER_CREATEFROMDATA1 @ EC5 new" type="WString" />
+            <Field name="RETURN-ID" size="20" source="Exports from BAPI_CUSTOMER_CREATEFROMDATA1 @ EC5 new" type="WString" />
+            <Field name="RETURN-NUMBER" size="3" source="Exports from BAPI_CUSTOMER_CREATEFROMDATA1 @ EC5 new" type="String" />
+            <Field name="RETURN-MESSAGE" size="220" source="Exports from BAPI_CUSTOMER_CREATEFROMDATA1 @ EC5 new" type="WString" />
+            <Field name="RETURN-LOG_NO" size="20" source="Exports from BAPI_CUSTOMER_CREATEFROMDATA1 @ EC5 new" type="WString" />
+            <Field name="RETURN-LOG_MSG_NO" size="6" source="Exports from BAPI_CUSTOMER_CREATEFROMDATA1 @ EC5 new" type="String" />
+            <Field name="RETURN-MESSAGE_V1" size="50" source="Exports from BAPI_CUSTOMER_CREATEFROMDATA1 @ EC5 new" type="WString" />
+            <Field name="RETURN-MESSAGE_V2" size="50" source="Exports from BAPI_CUSTOMER_CREATEFROMDATA1 @ EC5 new" type="WString" />
+            <Field name="RETURN-MESSAGE_V3" size="50" source="Exports from BAPI_CUSTOMER_CREATEFROMDATA1 @ EC5 new" type="WString" />
+            <Field name="RETURN-MESSAGE_V4" size="50" source="Exports from BAPI_CUSTOMER_CREATEFROMDATA1 @ EC5 new" type="WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="Theobald.Alteryx.BapiTool.dll" EngineDllEntryPoint=".Net:Theobald.Alteryx.Bapi.BapiTool" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="510" y="354" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Output7</Name>
+          <Abbrev />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Output</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="270" y="198" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Update Value</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.ControlParam.ControlParam">
+        <Position x="270" y="90" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Control Parameter (11)</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.ControlParam.ControlParam">
+        <Position x="414" y="90" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Control Parameter (13)</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.ControlParam.ControlParam">
+        <Position x="558" y="90" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Control Parameter (14)</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.ControlParam.ControlParam">
+        <Position x="666" y="90" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Control Parameter (15)</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="414" y="198" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Update Value</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="570" y="198" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Update Value</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="678" y="186" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Update Value</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.ControlParam.ControlParam">
+        <Position x="774" y="90" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Control Parameter (19)</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="774" y="186" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Update Value</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.ControlParam.ControlParam">
+        <Position x="858" y="78" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Control Parameter (21)</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="858" y="174" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Update Value</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="198" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="1" />
+          <Fields>
+            <Field name="CountryKey" />
+            <Field name="City" />
+            <Field name="PostalCode" />
+            <Field name="Phone" />
+            <Field name="Street" />
+            <Field name="HouseNumber" />
+            <Field name="FirstName" />
+            <Field name="LastName" />
+            <Field name="eMail" />
+            <Field name="BirthDate" />
+            <Field name="SALESORG" />
+            <Field name="DISTR_CHAN" />
+            <Field name="DIVISION" />
+            <Field name="REF_CUSTMR" />
+          </Fields>
+          <Data>
+            <r>
+              <c>AA</c>
+              <c>AA</c>
+              <c>55276</c>
+              <c>AA</c>
+              <c>AA</c>
+              <c>1</c>
+              <c>AA</c>
+              <c>AA</c>
+              <c>AA</c>
+              <c>AA</c>
+              <c>7500</c>
+              <c>1</c>
+              <c>2</c>
+              <c>3</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="CountryKey" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="City" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="PostalCode" source="TextInput:" type="Int32" />
+            <Field name="Phone" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="Street" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="HouseNumber" source="TextInput:" type="Int32" />
+            <Field name="FirstName" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="LastName" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="eMail" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="BirthDate" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="SALESORG" source="TextInput:" type="Int32" />
+            <Field name="DISTR_CHAN" source="TextInput:" type="Int32" />
+            <Field name="DIVISION" source="TextInput:" type="Int32" />
+            <Field name="REF_CUSTMR" source="TextInput:" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="138" y="198" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Update Value</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.ControlParam.ControlParam">
+        <Position x="966" y="90" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Control Parameter (23)</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.ControlParam.ControlParam">
+        <Position x="1062" y="90" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Control Parameter (24)</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.ControlParam.ControlParam">
+        <Position x="1170" y="90" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Control Parameter (25)</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="26">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="978" y="174" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Update Value</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="27">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="1074" y="174" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Update Value</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="28">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="1170" y="174" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Update Value</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="29">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="294" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="PostalCode" selected="True" type="V_String" size="2147483647" />
+            <SelectField field="HouseNumber" selected="True" type="V_String" size="2147483647" />
+            <SelectField field="SALESORG" selected="True" type="V_String" size="2147483647" />
+            <SelectField field="DISTR_CHAN" selected="True" type="V_String" size="2147483647" />
+            <SelectField field="DIVISION" selected="True" type="V_String" size="2147483647" />
+            <SelectField field="REF_CUSTMR" selected="True" type="V_String" size="2147483647" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="CountryKey" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="City" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="PostalCode" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="Phone" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="Street" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="HouseNumber" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="FirstName" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="LastName" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="eMail" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="BirthDate" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="SALESORG" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="DISTR_CHAN" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="DIVISION" size="2147483647" source="TextInput:" type="V_String" />
+            <Field name="REF_CUSTMR" size="2147483647" source="TextInput:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="31">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.ControlParam.ControlParam">
+        <Position x="1302" y="90" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Control Parameter (31)</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="32">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.ControlParam.ControlParam">
+        <Position x="1410" y="90" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Control Parameter (32)</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="33">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.ControlParam.ControlParam">
+        <Position x="1506" y="90" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Control Parameter (33)</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="34">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.ControlParam.ControlParam">
+        <Position x="1614" y="90" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Control Parameter (34)</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="35">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="1314" y="174" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Update Value</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="36">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="1410" y="162" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Update Value</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="37">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="1506" y="162" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Update Value</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="38">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="1626" y="162" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Update Value</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.ControlParam.ControlParam">
+        <Position x="126" y="90" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Control Parameter (9)</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Exports" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection name="#3">
+      <Origin ToolID="12" Connection="Action" />
+      <Destination ToolID="8" Connection="Action" />
+    </Connection>
+    <Connection name="#4">
+      <Origin ToolID="16" Connection="Action" />
+      <Destination ToolID="8" Connection="Action" />
+    </Connection>
+    <Connection name="#5">
+      <Origin ToolID="17" Connection="Action" />
+      <Destination ToolID="8" Connection="Action" />
+    </Connection>
+    <Connection name="#6">
+      <Origin ToolID="18" Connection="Action" />
+      <Destination ToolID="8" Connection="Action" />
+    </Connection>
+    <Connection name="#7">
+      <Origin ToolID="20" Connection="Action" />
+      <Destination ToolID="8" Connection="Action" />
+    </Connection>
+    <Connection name="#8">
+      <Origin ToolID="22" Connection="Action" />
+      <Destination ToolID="8" Connection="Action" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="10" Connection="Action" />
+      <Destination ToolID="8" Connection="Action" />
+    </Connection>
+    <Connection name="#9">
+      <Origin ToolID="26" Connection="Action" />
+      <Destination ToolID="8" Connection="Action" />
+    </Connection>
+    <Connection name="#10">
+      <Origin ToolID="27" Connection="Action" />
+      <Destination ToolID="8" Connection="Action" />
+    </Connection>
+    <Connection name="#11">
+      <Origin ToolID="28" Connection="Action" />
+      <Destination ToolID="8" Connection="Action" />
+    </Connection>
+    <Connection name="#12">
+      <Origin ToolID="35" Connection="Action" />
+      <Destination ToolID="8" Connection="Action" />
+    </Connection>
+    <Connection name="#13">
+      <Origin ToolID="36" Connection="Action" />
+      <Destination ToolID="8" Connection="Action" />
+    </Connection>
+    <Connection name="#14">
+      <Origin ToolID="37" Connection="Action" />
+      <Destination ToolID="8" Connection="Action" />
+    </Connection>
+    <Connection name="#15">
+      <Origin ToolID="38" Connection="Action" />
+      <Destination ToolID="8" Connection="Action" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="11" Connection="Question" />
+      <Destination ToolID="12" Connection="Question" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="13" Connection="Question" />
+      <Destination ToolID="16" Connection="Question" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="14" Connection="Question" />
+      <Destination ToolID="17" Connection="Question" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="15" Connection="Question" />
+      <Destination ToolID="18" Connection="Question" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="19" Connection="Question" />
+      <Destination ToolID="20" Connection="Question" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="21" Connection="Question" />
+      <Destination ToolID="22" Connection="Question" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="29" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="23" Connection="Question" />
+      <Destination ToolID="26" Connection="Question" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="24" Connection="Question" />
+      <Destination ToolID="27" Connection="Question" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="25" Connection="Question" />
+      <Destination ToolID="28" Connection="Question" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="29" Connection="Output" />
+      <Destination ToolID="1" Connection="Parameters" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="31" Connection="Question" />
+      <Destination ToolID="35" Connection="Question" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="32" Connection="Question" />
+      <Destination ToolID="36" Connection="Question" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="33" Connection="Question" />
+      <Destination ToolID="37" Connection="Question" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="34" Connection="Question" />
+      <Destination ToolID="38" Connection="Question" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="9" Connection="Question" />
+      <Destination ToolID="10" Connection="Question" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <Constants>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>ControlParam.Control Parameter (11)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>ControlParam.Control Parameter (9)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>ControlParam.Control Parameter (13)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>ControlParam.Control Parameter (14)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>ControlParam.Control Parameter (15)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>ControlParam.Control Parameter (19)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>ControlParam.Control Parameter (21)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>ControlParam.Control Parameter (23)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>ControlParam.Control Parameter (24)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>ControlParam.Control Parameter (25)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>ControlParam.Control Parameter (31)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>ControlParam.Control Parameter (32)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>ControlParam.Control Parameter (33)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>ControlParam.Control Parameter (34)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+    </Constants>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>CreateCustomerInSAP</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="06b4f324-e772-4df4-9537-ae247fd3fea5" />
+      <Telemetry>
+        <PreviousWorkflowId value="b9fa8cde-ad72-4466-b906-4dd3442154ea" />
+        <OriginWorkflowId value="b9fa8cde-ad72-4466-b906-4dd3442154ea" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="False" />
+    </Events>
+    <RuntimeProperties>
+      <Actions>
+        <NoCondition>
+          <Type>NoCondition</Type>
+          <Description>(Always Run)</Description>
+          <True>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="10" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="False" />
+              <Destination>8/Data/r/c[1]</Destination>
+            </Action>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="12" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="False" />
+              <Destination>8/Data/r/c[2]</Destination>
+            </Action>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="16" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="False" />
+              <Destination>8/Data/r/c[3]</Destination>
+            </Action>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="17" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="False" />
+              <Destination>8/Data/r/c[4]</Destination>
+            </Action>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="18" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="False" />
+              <Destination>8/Data/r/c[5]</Destination>
+            </Action>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="20" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="False" />
+              <Destination>8/Data/r/c[6]</Destination>
+            </Action>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="22" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="False" />
+              <Destination>8/Data/r/c[7]</Destination>
+            </Action>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="26" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="False" />
+              <Destination>8/Data/r/c[8]</Destination>
+            </Action>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="27" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="False" />
+              <Destination>8/Data/r/c[9]</Destination>
+            </Action>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="28" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="False" />
+              <Destination>8/Data/r/c[10]</Destination>
+            </Action>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="35" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="False" />
+              <Destination>8/Data/r/c[11]</Destination>
+            </Action>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="36" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="False" />
+              <Destination>8/Data/r/c[12]</Destination>
+            </Action>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="37" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="False" />
+              <Destination>8/Data/r/c[13]</Destination>
+            </Action>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="38" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="False" />
+              <Destination>8/Data/r/c[14]</Destination>
+            </Action>
+          </True>
+        </NoCondition>
+      </Actions>
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (5)</Name>
+          <ToolId value="5" />
+          <Questions>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (7)</Description>
+              <Name>Macro Output (7)</Name>
+              <ToolId value="7" />
+            </Question>
+            <Question>
+              <Type>ControlParam</Type>
+              <Description>CountryKey</Description>
+              <Name>Control Parameter (9)</Name>
+              <ToolId value="9" />
+            </Question>
+            <Question>
+              <Type>ControlParam</Type>
+              <Description>City</Description>
+              <Name>Control Parameter (11)</Name>
+              <ToolId value="11" />
+            </Question>
+            <Question>
+              <Type>ControlParam</Type>
+              <Description>PostalCode</Description>
+              <Name>Control Parameter (13)</Name>
+              <ToolId value="13" />
+            </Question>
+            <Question>
+              <Type>ControlParam</Type>
+              <Description>Phone</Description>
+              <Name>Control Parameter (14)</Name>
+              <ToolId value="14" />
+            </Question>
+            <Question>
+              <Type>ControlParam</Type>
+              <Description>Street</Description>
+              <Name>Control Parameter (15)</Name>
+              <ToolId value="15" />
+            </Question>
+            <Question>
+              <Type>ControlParam</Type>
+              <Description>HouseNumber</Description>
+              <Name>Control Parameter (19)</Name>
+              <ToolId value="19" />
+            </Question>
+            <Question>
+              <Type>ControlParam</Type>
+              <Description>FirstName</Description>
+              <Name>Control Parameter (21)</Name>
+              <ToolId value="21" />
+            </Question>
+            <Question>
+              <Type>ControlParam</Type>
+              <Description>LastName</Description>
+              <Name>Control Parameter (23)</Name>
+              <ToolId value="23" />
+            </Question>
+            <Question>
+              <Type>ControlParam</Type>
+              <Description>eMail</Description>
+              <Name>Control Parameter (24)</Name>
+              <ToolId value="24" />
+            </Question>
+            <Question>
+              <Type>ControlParam</Type>
+              <Description>BirthDate</Description>
+              <Name>Control Parameter (25)</Name>
+              <ToolId value="25" />
+            </Question>
+            <Question>
+              <Type>ControlParam</Type>
+              <Description>SALESORG</Description>
+              <Name>Control Parameter (31)</Name>
+              <ToolId value="31" />
+            </Question>
+            <Question>
+              <Type>ControlParam</Type>
+              <Description>DISTR_CHAN</Description>
+              <Name>Control Parameter (32)</Name>
+              <ToolId value="32" />
+            </Question>
+            <Question>
+              <Type>ControlParam</Type>
+              <Description>DIVISION</Description>
+              <Name>Control Parameter (33)</Name>
+              <ToolId value="33" />
+            </Question>
+            <Question>
+              <Type>ControlParam</Type>
+              <Description>REF_CUSTMR</Description>
+              <Name>Control Parameter (34)</Name>
+              <ToolId value="34" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="39" />
+      <MacroInputs />
+      <MacroOutputs />
+      <BatchMacro>
+        <OutputMode>AllSame</OutputMode>
+        <ControlParams>
+          <ControlParam>
+            <Name>Control Parameter (9)</Name>
+            <Description>CountryKey</Description>
+          </ControlParam>
+          <ControlParam>
+            <Name>Control Parameter (11)</Name>
+            <Description>City</Description>
+          </ControlParam>
+          <ControlParam>
+            <Name>Control Parameter (13)</Name>
+            <Description>PostalCode</Description>
+          </ControlParam>
+          <ControlParam>
+            <Name>Control Parameter (14)</Name>
+            <Description>Phone</Description>
+          </ControlParam>
+          <ControlParam>
+            <Name>Control Parameter (15)</Name>
+            <Description>Street</Description>
+          </ControlParam>
+          <ControlParam>
+            <Name>Control Parameter (19)</Name>
+            <Description>HouseNumber</Description>
+          </ControlParam>
+          <ControlParam>
+            <Name>Control Parameter (21)</Name>
+            <Description>FirstName</Description>
+          </ControlParam>
+          <ControlParam>
+            <Name>Control Parameter (23)</Name>
+            <Description>LastName</Description>
+          </ControlParam>
+          <ControlParam>
+            <Name>Control Parameter (24)</Name>
+            <Description>eMail</Description>
+          </ControlParam>
+          <ControlParam>
+            <Name>Control Parameter (25)</Name>
+            <Description>BirthDate</Description>
+          </ControlParam>
+          <ControlParam>
+            <Name>Control Parameter (31)</Name>
+            <Description>SALESORG</Description>
+          </ControlParam>
+          <ControlParam>
+            <Name>Control Parameter (32)</Name>
+            <Description>DISTR_CHAN</Description>
+          </ControlParam>
+          <ControlParam>
+            <Name>Control Parameter (33)</Name>
+            <Description>DIVISION</Description>
+          </ControlParam>
+          <ControlParam>
+            <Name>Control Parameter (34)</Name>
+            <Description>REF_CUSTMR</Description>
+          </ControlParam>
+        </ControlParams>
+      </BatchMacro>
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools />
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>

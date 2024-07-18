@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<AlteryxDocument yxmdVer="2023.1">
+<AlteryxDocument yxmdVer="2024.1" RunE2="T">
   <Nodes>
     <Node ToolID="42">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
@@ -53,16 +53,17 @@
       </GuiSettings>
       <Properties>
         <Configuration>
-          <Text>In this Alteryx workflow the 'Xtract for Alteryx' connector is used to download SAP attachment files from a SAP ERP system using SAP provided function module SO_DOCUMENT_READ_API1.
+          <Text>In this Alteryx workflow the Xtract for Alteryx connector is used to download SAP attachment files from a SAP ERP system using SAP provided function module SO_DOCUMENT_READ_API1.
 
 Example 1: First a list of all attachments is generated, then the corresponding file names and extensions are loaded and finally the first file is downloaded to a temporary folder (can be opened by clicking the link in the results log).
 
 Example 2: The ObjectIdentifier is provided as input and the corresponding file is downloaded to a temporary folder (can be opened by clicking the link in the results log).
 
-To use the Xtract BAPI component you need to install the Xtract for Alteryx connector. Please contact your Alteryx sales rep for more information. A free 30 day trial is available on https://theobald-software.com/en/download-trial
+A free 30 day trial is available on https://theobald-software.com/en/download-trial.
 
-Required SAP authorizations: https://kb.theobald-software.com/sap/authority-objects-sap-user-rights
-How to set up the SAP connection: https://help.theobald-software.com/en/xtract-for-alteryx/sap-connection</Text>
+Required SAP authorizations: https://helpcenter.theobald-software.com/xtract-for-alteryx/documentation/setup-in-sap/sap-authority-objects.
+
+How to set up the SAP connection: https://helpcenter.theobald-software.com/xtract-for-alteryx/documentation/sap-connection.</Text>
           <Font name="Arial" size="11.25" style="1" />
           <TextColor name="Black" />
           <FillColor r="232" g="232" b="232" />
@@ -5717,10 +5718,6 @@ OBJYR = Right(...</DefaultAnnotationText>
       <Destination ToolID="76" Connection="Input" />
     </Connection>
     <Connection>
-      <Origin ToolID="74" Connection="Output" />
-      <Destination ToolID="65" Connection="Parameters" />
-    </Connection>
-    <Connection>
       <Origin ToolID="59" Connection="Output" />
       <Destination ToolID="60" Connection="Targets" />
     </Connection>
@@ -5741,20 +5738,8 @@ OBJYR = Right(...</DefaultAnnotationText>
       <Destination ToolID="64" Connection="Input" />
     </Connection>
     <Connection>
-      <Origin ToolID="65" Connection="2" />
-      <Destination ToolID="59" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="65" Connection="Exports" />
-      <Destination ToolID="63" Connection="Input" />
-    </Connection>
-    <Connection>
       <Origin ToolID="44" Connection="Output" />
       <Destination ToolID="45" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="45" Connection="Output" />
-      <Destination ToolID="7" Connection="Parameters" />
     </Connection>
     <Connection>
       <Origin ToolID="28" Connection="Output" />
@@ -5781,14 +5766,6 @@ OBJYR = Right(...</DefaultAnnotationText>
       <Destination ToolID="75" Connection="Input" />
     </Connection>
     <Connection>
-      <Origin ToolID="7" Connection="2" />
-      <Destination ToolID="28" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="7" Connection="Exports" />
-      <Destination ToolID="36" Connection="Input" />
-    </Connection>
-    <Connection>
       <Origin ToolID="76" Connection="True" />
       <Destination ToolID="44" Connection="Input" />
     </Connection>
@@ -5807,10 +5784,6 @@ OBJYR = Right(...</DefaultAnnotationText>
     <Connection Wireless="True">
       <Origin ToolID="40" Connection="Output" />
       <Destination ToolID="43" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="43" Connection="Output" />
-      <Destination ToolID="5" Connection="Parameters" />
     </Connection>
   </Connections>
   <Properties>
@@ -5831,9 +5804,10 @@ OBJYR = Right(...</DefaultAnnotationText>
     <ShowConnectionStatusOnlyWhenRunning value="True" />
     <ZoomLevel value="0" />
     <LayoutType>Horizontal</LayoutType>
+    <IsTemplate value="False" />
     <MetaInfo>
       <NameIsFileName value="True" />
-      <Name>SAP Read Attachment Files</Name>
+      <Name>SAP-Read-Attachment-Files</Name>
       <Description />
       <RootToolName />
       <ToolVersion />

@@ -1,0 +1,448 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<AlteryxDocument yxmdVer="2023.2" autoTranslate="true">
+  <Nodes>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="54" width="738" height="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Count Records Macro</Text>
+          <Font name="Microsoft Sans Serif" size="18" style="0" />
+          <TextColor name="White" />
+          <FillColor r="95" g="152" b="171" />
+          <Shape shape="0" />
+          <Justification Justification="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Label.Label">
+        <Position x="72" y="72" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="72" y="72" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="72" y="72" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="55" y="167" width="455" height="251" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Count Records Macro</Caption>
+          <Style TextColor="#2f4f4f" FillColor="#d3b6d2" BorderColor="#2f4f4f" Transparency="66" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="1">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+            <Position x="81" y="334" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <NumRows value="2" />
+              <Fields>
+                <Field name="Count" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>0</c>
+                </r>
+              </Data>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name>Text Input (1)</Name>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Count" source="TextInput:" type="Byte" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+        </Node>
+        <Node ToolID="3">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="181" y="211" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="Field1" action="Count" rename="Count" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name>Summarize (3)</Name>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="4">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+            <Position x="263" y="243" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <AutoResetMode>ByName</AutoResetMode>
+              <MultiMetaInfo>
+                <MetaInfo name="#1">
+                  <RecordInfo>
+                    <Field name="Count" source="Summarize: Count" type="Int64" column="1" />
+                  </RecordInfo>
+                </MetaInfo>
+                <MetaInfo name="#2">
+                  <RecordInfo>
+                    <Field name="Count" source="TextInput:" type="Byte" column="1" />
+                  </RecordInfo>
+                </MetaInfo>
+              </MultiMetaInfo>
+              <ByName_ErrorMode>Warning</ByName_ErrorMode>
+              <ByName_OutputMode>All</ByName_OutputMode>
+              <Mode>Manual</Mode>
+              <SetOutputOrder value="True" />
+              <OutputOrder>
+                <Connection>#1</Connection>
+                <Connection>#2</Connection>
+              </OutputOrder>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name>Union (4)</Name>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Count" source="(Multiple Sources)" type="Int64" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+        </Node>
+        <Node ToolID="5">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
+            <Position x="345" y="243" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <GroupFields orderChanged="False" />
+              <Mode>First</Mode>
+              <N>1</N>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name>Sample (5)</Name>
+              <DefaultAnnotationText>First 1</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Count" source="(Multiple Sources)" type="Int64" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSample" />
+        </Node>
+        <Node ToolID="19">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+            <Position x="80" y="212" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UseFileInput value="False" />
+              <Name>Input8</Name>
+              <Abbrev />
+              <ShowFieldMap value="False" />
+              <TextInput>
+                <Configuration>
+                  <NumRows value="0" />
+                  <Fields>
+                    <Field name="NoField" />
+                  </Fields>
+                  <Data />
+                </Configuration>
+              </TextInput>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name>Input8</Name>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+        </Node>
+        <Node ToolID="20">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+            <Position x="426" y="254" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Name>Output9</Name>
+              <Abbrev>
+              </Abbrev>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name>Output9</Name>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="642" y="70" width="138" height="19" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Module Description</Caption>
+          <Style TextColor="#2f4f4f" FillColor="#ffffff" BorderColor="#2f4f4f" Transparency="10" Margin="10" />
+          <Disabled value="False" />
+          <Folded value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="12">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="652" y="99" width="91" height="312" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Count the records passing through the data stream. A count of zero is returned if no records pass through.</Text>
+              <Font name="Microsoft Sans Serif" size="9.75" style="0" />
+              <TextColor name="DarkSlateGray" />
+              <FillColor name="White" />
+              <Shape shape="0" />
+              <Justification Justification="0" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="666" y="106" width="98" height="19" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Tools Used</Caption>
+          <Style TextColor="#2f4f4f" FillColor="#ffffff" BorderColor="#2f4f4f" Transparency="10" Margin="10" />
+          <Disabled value="False" />
+          <Folded value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="14">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="676" y="135" width="96" height="128" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text><![CDATA[TOOLS USED:
+Input
+Text Input
+Sumarize
+Union
+Sample
+Output
+]]></Text>
+              <Font name="Microsoft Sans Serif" size="9.75" style="0" />
+              <TextColor name="DarkSlateGray" />
+              <FillColor name="White" />
+              <Shape shape="0" />
+              <Justification Justification="2" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection name="#2">
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="False" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <PredictiveToolsCodePage value="0" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="False" />
+      <Name>Count Records</Name>
+      <Description>Count the records passing through the data stream. A count of zero is returned if no records pass through.</Description>
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName>Transform</CategoryName>
+      <SearchTags>count, records, summarize, zero, transform category, transform, macro</SearchTags>
+      <Author>Alteryx</Author>
+      <Company>Alteryx, Inc.</Company>
+      <Copyright>Alteryx, Inc.</Copyright>
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description>Open Example</Description>
+        <File>05 Transform\Count_Records.yxmd</File>
+      </Example>
+      <WorkflowId value="00000000-0000-0000-0000-000000000000" />
+      <Telemetry>
+        <PreviousWorkflowId value="" />
+        <OriginWorkflowId value="00000000-0000-0000-0000-000000000000" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+    <RuntimeProperties>
+      <Actions />
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (17)</Name>
+          <ToolId value="17" />
+          <Questions>
+            <Question>
+              <Type>Label</Type>
+              <Description>This Macro needs no configuration.</Description>
+              <Name>Label (16)</Name>
+              <ToolId value="16" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Output9</Description>
+              <Name>Output9</Name>
+              <ToolId value="20" />
+            </Question>
+          </Questions>
+        </Question>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Input8</Description>
+          <Name>Tab (18)</Name>
+          <ToolId value="18" />
+          <Questions>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description>Input8</Description>
+              <Name>Input8</Name>
+              <ToolId value="19" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="True" />
+      <MacroCustomHelpLink>AlteryxHelp:Macro-CountRecords</MacroCustomHelpLink>
+      <MacroDynamicOutputFields value="False" />
+      <MacroImage>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</MacroImage>
+      <MacroInputs />
+      <MacroOutputs />
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools />
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>

@@ -45,13 +45,14 @@ Data Preparation & Function Module execution]]></Text>
     </Node>
     <Node ToolID="27">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="66" y="30" width="1032" height="228" />
+        <Position x="66" y="54" width="1032" height="204" />
       </GuiSettings>
       <Properties>
         <Configuration>
           <Text>In this Starter Kit Alteryx workflow the Xtract for Alteryx connector is used to create a new Purchase Requisition in a SAP ERP system using BAPI_REQUISITION_CREATE and then reading the details of the newly created Purchase Requisition with BAPI_REQUISITION_GETDETAIL. As records are written to the SAP system, use this Starter Kit learn about the write-back capabilities in DEV / Q&amp;A environments before using it in production.
 
-To use the Xtract BAPI component you need to install the Xtract for Alteryx connector. Contact your Alteryx sales representative for more information. A free 30 day trial is available on https://theobald-software.com/en/download-trial.
+To use the Xtract BAPI component install the Xtract for Alteryx connector. Contact your Alteryx sales representative for more information. A free 30 day trial is available on https://theobald-software.com/en/download-trial
+
 
 Required SAP authorizations: https://helpcenter.theobald-software.com/xtract-for-alteryx/documentation/setup-in-sap/sap-authority-objects.
 
