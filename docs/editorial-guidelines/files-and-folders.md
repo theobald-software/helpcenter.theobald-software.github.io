@@ -2,12 +2,18 @@
 title: Files & Folders
 ---
 
+The published content of a product's HelpCenter is located in the following directory of the [gitHub repository](https://github.com/theobald-software/helpcenter.theobald-software.github.io):
+
+```
+helpcenter.theobald-software.github.io\projects\[product name]\docs
+```
+
 ### Folder Structure
 
-The following treeview illustrates the general folder structure in the HelpCenter repository.
-Highlighted folders are linked to each other via symlink.
+The following treeview illustrates the general folder structure of the HelpCenter repository.
+Highlighted folders are linked to each other via [symlink](symlinks.md).
 
-``` bash hl_lines="13 15 16 17 28 30 31 32"
+``` bash hl_lines="12 14 15 16 17 19 25 27 28 29 38 40"
 ├───.cache
 ├───.github
 │   └───workflows #contains the GitHub workflow for publishing
@@ -17,20 +23,17 @@ Highlighted folders are linked to each other via symlink.
 │   │   │   └───editorial-guide #contains images for the editorial-guide
 │   │   ├───javascripts #contains custom functions
 │   │   └───stylesheets #contains custom styles
-│   ├───changelog #test environment for the new version history
 │   ├───editorial-guide #contains content of the editorial guide
 │   └───ui-style-guide #contains the (yunIO) UI style guide
 ├───files #contains downloadable files
 ├───images #contains images that are available in all products
-│   ├───articles #contains images for general Knowledge Base articles
-│   ├───components #contains general images of components (table, bapi, etc)
+│   ├───articles #contains images for general KB articles
+│   ├───documentation #contains general images for user documentation (components)
 │   └───logos #contains images of logos (not icons!)
 ├───includes #contains .md files that can be referenced in all products
-│   ├───articles #contains general content from the old Knowledge Base
-│   ├───[product name] #contains content for the specific product 
-│   ├───requirements #contains general content from the old Online Help
-│   └───version-history #contains the version history of all products
 ├───overrides #contains custom designs, e.g., 404 page
+│   ├───.icons #contains custom icons
+│   └───partials #contains extended theme elements
 ├───projects #contains content of product pages
 │   └───[product name]
 │       ├───docs #contains the content pages of the HelpCenter
@@ -41,32 +44,35 @@ Highlighted folders are linked to each other via symlink.
 │       │   │   │   ├───components #reference to parent folder
 │       │   │   │   ├───logos #reference to parent folder
 │       │   │   │   └───[product name] #contains images for the specific product
-│       │   │   │       ├───articles #contains images for product-specific Knowledge Base articles
+│       │   │   │       ├───articles #contains images for product-specific KB articles
 │       │   │   │       ├───documentation #contains images for user documentation
 │       │   │   │       └───getting started #contains images for getting started
 │       │   │   ├───javascripts #contains custom functions for the product
 │       │   │   └───stylesheets #contains custom styles for the product
 │       │   ├───documentation #contains the migrated Online Help
-│       │   └───knowledge-base #contains the migrated Knowledge Base
+│       │   └───knowledge-base #contains the migrated KB
 │       ├───includes #reference to parent folder for local build
 │       ├───overrides #contains custom designs, e.g. banner & announcements
+│       │   ├───.icons #reference to parent folder
+│       │   ├───assets #Talgat's customizations for the banner
+│       │   └───partials #contains extended theme elements
 │       └───site  #contains the built html pages of the product
 └───site #contains the built html pages of all products
 ```
 
-### Files in `/docs` Folders
+### Files in the `docs` Folder of a Product
 
-Every product has a `/docs` folder that should contain the following files and subfolders:
+Every product has a `docs` folder that should contain the following files and subfolders:
 
 ``` bash hl_lines="2 4 5 6"
 ├───assets
 │   ├───files #contains downloadable files
 │   ├───images
-│   │   ├───articles #general images for Knowledge Base articles
+│   │   ├───articles #general images for KB articles
 │   │   ├───components #general images for components (table, bapi, etc.)
 │   │   ├───logos #images of logos (not icons!)
 │   │	└───[product name] #contains images for the specific product
-│   │    	├───articles #contains images for product-specific Knowledge Base articles
+│   │    	├───articles #contains images for product-specific KB articles
 │   │    	├───documentation #contains images for user documentation
 │   │    	└───getting started #contains images for getting started
 │   ├───javascripts #contains custom functions for the product
@@ -79,7 +85,7 @@ Every product has a `/docs` folder that should contain the following files and s
 │   └───.meta.yml #contains front matter items that are added to all files in this folder
 ├───knowledge-base #contains articles (this folder is named "samples" in ERPConnect)
 │   ├───index.md #contains a list of all articles
-│   ├───... #migrated content from the old Knowledge Base
+│   ├───... #migrated content from the old KB
 │   └───.meta.yml #contains front matter items that are added to all files in this folder
 ├───.pages #contains the top navigation of the HelpCenter
 ├───changelog.md #contains the new version history
@@ -130,7 +136,7 @@ Use cases:
 
 - exclude all pages in a folder from the search 
 - add the front matter item `product` to all pages in the product folder
-- add the front matter item `component` to all pages in a folder
+- add the front matter item `component` to all pages in a component folder
 
 
 ``` yaml title="List of Front Matter Items"
@@ -138,12 +144,13 @@ search:
   - exclude: true
   - boost: 2
 title: Page Title
-description: I’m a description
+description: I’m a description and I show up in social cards
 author: Valerie Schipka, Fabian Steffan #recommended for articles
-template: home.html # only needed for custom page designs, e.g., landing page
-status: new # new, deprecated or beta 
-component: table # for if-conditions in includes
-product: xtract-universal # for if-conditions in includes
+destination: huawei #for if-conditions in includes
+template: home.html #only needed for custom page designs, e.g., landing page
+status: new #new, deprecated or beta 
+component: table #for if-conditions in includes
+product: xtract-universal #for if-conditions in includes
 hide:
   - navigation
   - toc

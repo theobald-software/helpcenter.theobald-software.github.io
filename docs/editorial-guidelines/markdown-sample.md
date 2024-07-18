@@ -302,7 +302,6 @@ Click **[:material-pencil-outline:]** to edit an entry.
 
 - Additional clarification that an icon is an icon is unnecessary. 
 - Make sure not to write “click on”.
-- Product or component logos are not icons.
 
 
 <div class="mdx-iconsearch" data-mdx-component="iconsearch">
@@ -469,12 +468,8 @@ Click **[:material-pencil-outline:]** to edit an entry.
 	
 	:yunio-run-fullscreen: `:yunio-run-fullscreen:`
 
-Old syntax:
-
-```
-![dustbin](/img/content/icons/trashbin.png){:class="img-responsive" style="display:inline"}
-```
-
+!!! note
+	For designer icons, refer to the [corresponding markdown file in the user documentation](https://helpcenter.theobald-software.com/xtract-universal/documentation/designer/#main-window-of-the-designer).
 
 ### Images  
 
@@ -831,30 +826,6 @@ Example:
 
 	For texts and screenshots that only occur once or twice, use [metadata](#metadata-conditional-text) instead of variables.
 	
-	
-#### List of Variables
-
-| Variable     | Xtract IS            | Xtract for Alteryx       | Xtract Universal           |  Board Connector            |  yunIO          |
-|--------------|----------------------|--------------------------|----------------------------|-----------------------------|-----------------|
-| productName  | Xtract IS            | Xtract for Alteryx       | Xtract Universal           | Board Connector             | yunIO           |
-| variable     | SSIS variable        | runtime parameter        | runtime parameter          | runtime parameter           | -               |
-| variables    | SSIS variables       | runtime parameters       | runtime parameters         | runtime parameters          | -               |
-| settings     | settings             | extraction settings      | extraction settings        | extraction settings         | -               |
-| settingsBtn | **Settings**         | **[Extraction Settings]**|**Extraction Settings**     | **Extraction Settings**     | -               |
-| parameterBtn| **Edit parameters**  | **[Edit parameters]**    |**Edit runtime parameters** | **Edit runtime parameters** | -               |
-| table        | Xtract Table         | Xtract Table             |Table                       | Table                       | SAP Tables and Views |
-| tableCDC    | Xtract Table CDC     | Xtract Table CDC         |Table CDC                   | Table CDC                   | -               |
-| bapi         | Xtract BAPI          | Xtract BAPI              |BAPI                        | BAPI                        |Function Module / BAPI  |
-| bwcube      | Xtract BW Cube       | Xtract Cube              |BW Cube                     | BW Cube                     | -               |
-| hierarchy    | Xtract Hierarchy     | Xtract Hierarchy         |BW Hierarchy                | BW Hierarchy                | -               |
-| deltaq       | Xtract DeltaQ        | -                        |DeltaQ                      | DeltaQ                      | -               |
-| odp          | Xtract ODP           | Xtract ODP               |ODP                         | ODP                         | -               |
-| ohs          | Xtract OHS           | Xtract OHS               |OHS                         | OHS                         | -               |
-| query        | Xtract Query         | Xtract Query             |SAP Query                   | SAP Query                   | -               |
-| report       | Xtract Report        | Xtract Report            |Report                      | Report                      | Report          |
-| component    | component            | component                |extraction type             | extraction type             | integration type|
-| extraction   | SSIS package         | workflow                 |extraction                  | extraction                  | service         |
-
 !!! note
 
 	Use the following syntax to format variables in .yml files:
@@ -862,3 +833,44 @@ Example:
 	- Regular: `test` :octicons-arrow-right-24: test
 	- Bold: `__test__` :octicons-arrow-right-24: __test__
 	- Italic: `_test_`:octicons-arrow-right-24: _test_
+	
+#### List of Variables
+
+| Variable     | Xtract IS            | Xtract for Alteryx       | Xtract Universal           |  Board Connector            |  yunIO          |
+|--------------|----------------------|--------------------------|----------------------------|-----------------------------|-----------------|
+| productName  | Xtract IS            | Xtract for Alteryx       | Xtract Universal           | Board Connector             | yunIO           |
+| Abbr         | XIS                  | XfA                      | XU                         | BC                          | yunIO           |
+| abbr         | xis                  | xfa                      | xu                         | bc                          | yunio           |
+| component    | component            | component                |extraction type             | extraction type             | integration type|
+| Component    | Component            | Component                |Extraction Type             | Extraction Type             | Integration Type |
+| components    | components            | components                |extraction types             | extraction types        | integration types|
+| Components    | Components            | Components                |Extraction Types             | Extraction Types        | Integration Types|
+| installationDir | C:\Program Files\XtracIS | C:\Program Files\XtractForAlteryx | C:\Program Files\XtractUniversal | C:\Program Files\BOARDConnector | C:\Program Files\Theobald Software\yunIO |
+| setup  | XtractIS | XtractForAlteryx | XtractUniversal | BOARDConnector | - |
+| table        | Xtract Table         | Xtract Table             |Table                       | Table                       | SAP Tables and Views |
+| tableCDC     | Xtract Table CDC     | Xtract Table CDC         |Table CDC                   | Table CDC                   | -               |
+| bapi         | Xtract BAPI          | Xtract BAPI              |BAPI                        | BAPI                        |Function Module / BAPI  |
+| bwcube       | Xtract BW Cube       | Xtract Cube              |BW Cube                     | BW Cube                     | -               |
+| hierarchy    | Xtract Hierarchy     | Xtract Hierarchy         |BW Hierarchy                | BW Hierarchy                | -               |
+| deltaq       | Xtract DeltaQ        | Xtract DeltaQ            |DeltaQ                      | DeltaQ                      | -               |
+| odp          | Xtract ODP           | Xtract ODP               |ODP                         | ODP                         | -               |
+| ohs          | Xtract OHS           | Xtract OHS               |OHS                         | OHS                         | -               |
+| query        | Xtract Query         | Xtract Query             |SAP Query                   | SAP Query                   | -               |
+| report       | Xtract Report        | Xtract Report            |Report                      | Report                      | Report          |
+| extraction   | SSIS package         | workflow                 |extraction                  | extraction                  | service         |
+| Extraction   | SSIS Package         | Workflow                 |Extraction                  | Extraction                  | Service         |
+| extractions  | SSIS packages        | workflows                |extractions                 | extractions                 | -         |
+| variable     | SSIS variable        | runtime parameter        | runtime parameter          | runtime parameter           | -               |
+| variables    | SSIS variables       | runtime parameters       | runtime parameters         | runtime parameters          | -               |
+| Variables    | SSIS variables       | Runtime parameters       | Runtime parameters         | Runtime parameters          | -               |
+| settings     | settings             | extraction settings      | extraction settings        | extraction settings         | -               |
+| Settings     | Settings             | Extraction Settings      | Extraction Settings        | Extraction Settings         | -               |
+| settingsBtn | **Settings**         | **[:material-cog:Extraction Settings]**|**Extraction Settings**     | **Extraction Settings**     | -               |
+| parameterBtn| **Edit parameters**  | **[Edit parameters]**    |**Edit runtime parameters** | **Edit runtime parameters**  | -               |
+| previewBtn  | **[Load live preview]** | **[Load live preview]**|**[Load live preview]**    | **[Load live preview]**      | **[Run]**        |
+| runBtn       | -                    |  -                       |  **[Run]**                | **[Run in Browser]**         | -               |
+| port         | -                    | -                        | 8064                       | 8096                        | -               |
+| run_extractions | -                 |                          | execute-and-automate/run-an-extraction.md | run-extractions.md |  -        |
+| service       | -                   |                          | XtractService               | BCService                   |  -             |
+
+
