@@ -23,8 +23,8 @@ The following symlinks are required for building previews of the HelpCenters:
 
 ### Create Symlinks in Windows
 
-1. When pulling content from the HelpCenter repository for the first time, the existing symlinks in the repository appear as a single file.
-Delete these files in the source folders, before creating local symlinks.
+1. When pulling content from the HelpCenter repository, broken symlinks are displayed as a single file instead of a folder.
+Delete these files, before creating local symlinks.
 2. Open the Windows command prompt and navigate to one of the source folders in your local HelpCenter repository. Example: <br>
 `C:\Source\helpcenter.theobald-software.github.io\projects\board-connector\docs\assets\images`
 3. Enter an `mklink` command that uses the option `/D` to point to a target folder:
@@ -35,7 +35,7 @@ Delete these files in the source folders, before creating local symlinks.
 	Example:<br>
 	![symlinks-console](../assets/images/editorial-guide/symlinks-console.png)
 	
-4. Double-click the created symlink to check if the symlink is correct.
+4. Double-click the created symlink. If the symlink is set correctly, the the symlink folder opens and the files from the target folder are available.
 
 Repeat the steps for all source folders and products.<br>
 For more information on symlinks, see [Complete Guide to Symbolic Links](https://www.howtogeek.com/16226/complete-guide-to-symbolic-links-symlinks-on-windows-or-linux/)
