@@ -22,7 +22,7 @@ The {{ deltaq }} {{ component }} offers the following update modes:
 {% if page.meta.product == "xtract-universal" or page.meta.product == "board-connector" %}
 
 !!! tip 
-	**Update mode** can be set dynamically at runtime using the parameters values to overwrite the extraction parameter *updateMode*, see [Run an Extraction](../{{ run_extractions }}/#run-extractions-in-the-designer).
+	**Update mode** can be set dynamically at runtime using the parameters values to overwrite the extraction parameter *updateType*, see [Run an Extraction](../{{ run_extractions }}/#run-extractions-in-the-designer).
 
 {% else %}	
 
