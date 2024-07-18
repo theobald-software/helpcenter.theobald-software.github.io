@@ -21,15 +21,13 @@ The {{ deltaq }} {{ component }} offers the following update modes:
 
 {% if page.meta.product == "xtract-universal" or page.meta.product == "board-connector" %}
 
-**Update mode** can be set dynamically at runtime using the parameters values to overwrite the extraction parameter *updateMode*, see [Run an Extraction](../{{ run_extractions }}/#run-extractions-in-the-designer).
-
-{% if page.meta.product == "xtract-universal" %}
-![updatetype_runtime_parameter](../../assets/images/xu/documentation/deltaq/updatetype_runtime_parameter.png ){:class="img-responsive"}
-{% endif %}
+!!! tip 
+	**Update mode** can be set dynamically at runtime using the parameters values to overwrite the extraction parameter *updateMode*, see [Run an Extraction](../{{ run_extractions }}/#run-extractions-in-the-designer).
 
 {% else %}	
 
-**Update mode** can be set dynamically at runtime using the parameters values to overwrite the [custom property](parameterization.md/#custom-properties-of-xtract-deltaq) *updateType*.
+!!! tip 
+	**Update mode** can be set dynamically at runtime using the parameters values to overwrite the [custom property](parameterization.md/#custom-properties-of-xtract-deltaq) *updateType*.
 
 {% endif %}
 
