@@ -5,7 +5,7 @@ description: Update Mode
 
 {% include "components/odp/update-mode.md" %}
 
-### Example Scenario
+### Tutorial
 
 The following YouTube tutorial shows how to use the {{ odp }} {{ component }} with *Delta Update* to load data increments to an SQL database destination.
 

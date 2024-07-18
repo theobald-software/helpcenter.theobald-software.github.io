@@ -87,19 +87,26 @@ The content of a box must be indenting. An admonition ends after 1 unindented em
 
 	</div>	
 
-=== "FAQs"
+=== "API Calls"
 
 	``` markdown
-	??? question "Am I a question?"
+	??? api "[protocol]://[host or IP address]:[port]/endpoint"
 
-		Yes and I am the answer to the question.
+		``` csv
+		I am the content that is returned by the api call above.
+		I use a code block with syntax highlighting (usually csv or json).
+		```
+
 	```
 
 	<div class="result" markdown>
 
-	??? question "Am I a question?"
+	??? api "[protocol]://[host or IP address]:[port]/endpoint"
 
-		Yes and I am the answer to the question.
+		``` csv
+		I am the content that is returned by the api call above.
+		I use a code block with syntax highlighting (usually csv or json).
+		```
 
 	</div>	
 	
@@ -241,8 +248,33 @@ Use content tabs for code blocks and changelogs.
 
 ### Grid Cards
 
-The list syntax is a shortcut for card grids and consists of an unordered (or ordered) list wrapped by a `div` with both, the `grid` and `cards` classes:
+There are two methods to create grid cards:
 
+- Neoteroi grid cards use an external plugin and are used for landing pages (https://helpcenter.theobald-software.com/ or https://helpcenter.theobald-software.com/xtract-universal/#additional-resources)
+- the build-in grid cards use the list syntax wrapped by a div with both, the `grid` and `cards` classes
+
+=== "Neoteroi Grid Cards"
+	``` markdown
+	::cards:: cols=3
+
+	- title: BAPI
+		image: site:assets/images/logos/components/Function-BAPI.svg
+		content: Execute BAPIs and Function Modules. <br> <br> <span class="keyword">ERP/ ECC</span> <span class="keyword">BW</span><span class="keyword">type&#58; transformation</span>
+		url: site:documentation/bapi/
+		  
+	- title: BW Cube
+		image: site:assets/images/logos/components/Cube-BEx.svg
+		content: Extract data from SAP BW InfoCubes and BEx Queries.<br> <br><span class="keyword">BW</span> <span class="keyword">type&#58; source</span>
+		url: site:documentation/bwcube/
+		  
+	- title: BW Loader
+		image: site:assets/images/logos/components/BWLoader.svg
+		content: Load data into SAP BW systems. <br> <br> <span class="keyword">BW</span><span class="keyword">type&#58; destination</span> 
+		url: site:documentation/bwloader/
+
+	::/cards::
+	```
+	
 === "Simple Grid Cards"
 	``` html
 	<div class="grid cards" markdown>
@@ -268,7 +300,7 @@ The list syntax is a shortcut for card grids and consists of an unordered (or or
 	``` html 
 	<div class="grid cards" markdown>
 
-	-   ![xu](../assets/images/XtractUniversal.png){ .lg .middle width="50px"} __Xtract Universal__
+	-   :products-xtract-universal: __Xtract Universal__
 
 		---
 		
@@ -281,7 +313,7 @@ The list syntax is a shortcut for card grids and consists of an unordered (or or
 	<div class="result" markdown>
 	<div class="grid cards" markdown>
 
-	 -   ![xu](../assets/images/XtractUniversal.png){ .lg .middle width="50px"} __Xtract Universal__
+	 -   :products-xtract-universal: __Xtract Universal__
 
 		---
 		
@@ -874,3 +906,25 @@ Example:
 | service       | -                   |                          | XtractService               | BCService                   |  -             |
 
 
+### Videos
+
+YouTube videos can be embedded in markdown files using the following format:
+
+``` markdown
+The following YouTube tutorial shows how to ...
+
+<div class="video-wrapper"> 
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/-7pEm2VVPRg?si=-CECVDytehDUdZT4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+```
+<div class="result" markdown>
+The following YouTube tutorial shows how to ...
+
+<div class="video-wrapper"> 
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/-7pEm2VVPRg?si=-CECVDytehDUdZT4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+</div>
+
+!!! tip
+	Replace the iframe with the one provided by YouTube (navigate to **Share > Embed** and copy the code for the iframe).

@@ -16,7 +16,14 @@
   --md-accent-fg-color: FF003C;
   --md-color-accent: #FF003C;
   */
-  
+.video-wrapper > iframe {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  border: 1px solid black
+}
+
 .md-tabs {
   display: none;
 }
@@ -100,4 +107,20 @@
   background-color: rgb(169, 169, 169);
   -webkit-mask-image: var(--md-admonition-icon--summary);
           mask-image: var(--md-admonition-icon--summary);
+}
+
+
+.md-typeset .admonition.api,
+.md-typeset details.api {
+  border-color: rgb(169, 169, 169);
+}
+.md-typeset .api > .admonition-title,
+.md-typeset .api > summary {
+  background-color: rgba(169, 169, 169, 0.1);
+}
+.md-typeset .api > .admonition-title::before,
+.md-typeset .api > summary::before {
+  background-color: rgb(169, 169, 169);
+  -webkit-mask-image: var(--md-admonition-icon--api);
+          mask-image: var(--md-admonition-icon--api);
 }
