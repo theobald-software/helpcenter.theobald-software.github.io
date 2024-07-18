@@ -10,7 +10,7 @@ hide:
 ![img](site:assets/images/logos/theo-thumbs.png){ .lg .middle width="30px"} This section contains a version history for {{ productName }}.
 
 
-{% include "version-history/version-history-header.md" %}
+{% include "version-history-header.md" %}
 
 
 <div style="display:flex">
