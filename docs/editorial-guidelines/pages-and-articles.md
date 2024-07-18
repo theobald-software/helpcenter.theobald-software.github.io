@@ -1,5 +1,5 @@
 ---
-title: Documentation Pages and Knowledge Base Articles
+title: Add new Pages and Articles
 ---
 
 ### Documentation pages

@@ -250,6 +250,7 @@ extra:
   variables: runtime parameters
   Variables: Runtime parameters
   extraction: extraction
+  Extraction: Extraction
   extractions: extractions
   Settings: Extraction Settings
   settings: extraction settings

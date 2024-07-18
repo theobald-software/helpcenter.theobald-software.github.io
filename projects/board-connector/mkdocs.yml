@@ -232,6 +232,7 @@ extra:
   Components: Extraction Types
   components: extractions types
   extraction: extraction
+  Extraction: Extraction
   extractions: extractions
   installationDir: C:\Program Files\BOARDConnector
   setup: BOARDConnector
