@@ -1,8 +1,4 @@
 
-### Other Applications and Frameworks	
-
-- .NET Framework 4.7.2 or higher, see [Download .NET Framework from the Microsoft website](https://support.microsoft.com/en-us/help/4054530/microsoft-net-framework-4-7-2-offline-installer-for-windows).
-- To use TLS encryption via HTTPS, [.NET Framework 4.8](https://dotnet.microsoft.com/en-us/download/dotnet-framework/net48) or higher is required.
 
 ### Hardware
 
