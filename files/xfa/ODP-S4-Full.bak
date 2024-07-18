@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
-<AlteryxDocument yxmdVer="2024.1" RunE2="T">
+<AlteryxDocument yxmdVer="2022.3">
   <Nodes>
     <Node ToolID="3">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="834" y="330" />
+        <Position x="834" y="306" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -31,7 +31,7 @@
     </Node>
     <Node ToolID="21">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="798" y="258" width="288" height="60" />
+        <Position x="798" y="234" width="288" height="60" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -52,7 +52,7 @@ Output Data]]></Text>
     </Node>
     <Node ToolID="22">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="54" y="258" width="252" height="60" />
+        <Position x="54" y="234" width="252" height="60" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -73,7 +73,7 @@ Input Data]]></Text>
     </Node>
     <Node ToolID="23">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="318" y="258" width="468" height="60" />
+        <Position x="318" y="234" width="468" height="60" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -94,7 +94,7 @@ Data Preparation & Cleansing]]></Text>
     </Node>
     <Node ToolID="25">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="354" y="474" />
+        <Position x="354" y="450" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -123,17 +123,17 @@ Data Preparation & Cleansing]]></Text>
     </Node>
     <Node ToolID="27">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="54" y="54" width="1032" height="192" />
+        <Position x="54" y="30" width="1032" height="192" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <Text>In this Starter Kit Alteryx workflow the Xtract for Alteryx connector is used to load Business Partner master data from a SAP S/4HANA CDS view using SAP's Operational Data Provisioning framework that allows full and delta extractions. The data is subsequently cleaned, and in this example, a list of all Business Partners with birthdays in the current month is generated. This list could be utilized to re-engage passive business partners by sending them birthday wishes.
+          <Text><![CDATA[In this Starter Kit Alteryx workflow the 'Xtract for Alteryx' connector is used to load Business Partner master data from a SAP S/4HANA CDS view using SAP's Operational Data Provisioning framework that allows full and delta extractions. The data is then cleaned and in this example a list of all Business Partners that have birthday in the current month is returned which could be used to re-engage passive business partners by sending them birthday wishes.
 
-To use the Xtract ODP component, install the Xtract for Alteryx connector.Contact your Alteryx sales representative for more information. A free 30 day trial is available on https://theobald-software.com/en/download-trial.
+To use the Xtract ODP component you need to install the Xtract for Alteryx connector. Please contact your Alteryx sales rep for more information. A free 30 day trial is available on https://theobald-software.com/en/download-trial
 
-Required SAP authorizations: https://helpcenter.theobald-software.com/xtract-for-alteryx/documentation/setup-in-sap/sap-authority-objects.
-
-How to set up the SAP connection: https://helpcenter.theobald-software.com/xtract-for-alteryx/documentation/sap-connection.</Text>
+Required SAP authorizations: https://kb.theobald-software.com/sap/authority-objects-sap-user-rights
+How to set up the SAP connection: https://help.theobald-software.com/en/xtract-for-alteryx/sap-connection
+]]></Text>
           <Font name="Arial" size="11.25" style="1" />
           <TextColor name="Black" />
           <FillColor r="232" g="232" b="232" />
@@ -149,7 +149,7 @@ How to set up the SAP connection: https://helpcenter.theobald-software.com/xtrac
     </Node>
     <Node ToolID="49">
       <GuiSettings Plugin="Theobald.Alteryx.Odp.OdpInputToolFactory">
-        <Position x="162" y="342" />
+        <Position x="162" y="318" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -876,7 +876,7 @@ How to set up the SAP connection: https://helpcenter.theobald-software.com/xtrac
     </Node>
     <Node ToolID="53">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="330" y="342" />
+        <Position x="330" y="318" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -910,7 +910,7 @@ How to set up the SAP connection: https://helpcenter.theobald-software.com/xtrac
     </Node>
     <Node ToolID="54">
       <GuiSettings>
-        <Position x="458" y="342" />
+        <Position x="458" y="318" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -938,7 +938,7 @@ How to set up the SAP connection: https://helpcenter.theobald-software.com/xtrac
     </Node>
     <Node ToolID="55">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-        <Position x="714" y="342" />
+        <Position x="714" y="318" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -955,7 +955,7 @@ How to set up the SAP connection: https://helpcenter.theobald-software.com/xtrac
     </Node>
     <Node ToolID="56">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="586" y="342" />
+        <Position x="586" y="318" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1018,10 +1018,9 @@ Current Month =...</DefaultAnnotationText>
     <ShowConnectionStatusOnlyWhenRunning value="True" />
     <ZoomLevel value="0" />
     <LayoutType>Horizontal</LayoutType>
-    <IsTemplate value="False" />
     <MetaInfo>
       <NameIsFileName value="True" />
-      <Name>ODP-S4-Full</Name>
+      <Name>ODP - S4</Name>
       <Description />
       <RootToolName />
       <ToolVersion />
@@ -1041,7 +1040,6 @@ Current Month =...</DefaultAnnotationText>
         <PreviousWorkflowId value="6d4bebcf-07eb-45e1-a32d-55a7f2d2c808" />
         <OriginWorkflowId value="0796e9f6-f0a2-438e-996a-9c4187a58837" />
       </Telemetry>
-      <PlatformWorkflowId value="" />
     </MetaInfo>
     <Events>
       <Enabled value="True" />

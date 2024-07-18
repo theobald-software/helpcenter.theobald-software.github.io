@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
-<AlteryxDocument yxmdVer="2024.1" RunE2="T">
+<AlteryxDocument yxmdVer="2022.3">
   <Nodes>
     <Node ToolID="3">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="846" y="354" />
+        <Position x="846" y="342" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\simon\AppData\Local\Temp\Engine_6792_14aabc0dfcfdd644acd392c2b2a353e8_\Engine_6792_1ed430054fd8f442829cb62b136a69c1~.yxdb</TempFile>
+          <TempFile>C:\Users\simon\AppData\Local\Temp\Engine_9488_c42c655bd040bf45a360d1fa2f374deb_\Engine_9488_47185757f8bdb64bb7af774c8b528e23~.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -31,11 +31,11 @@
     </Node>
     <Node ToolID="20">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="942" y="354" width="144" height="72" />
+        <Position x="942" y="342" width="144" height="72" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <Text>Browse Storage Types with less than 5 pieces remaining</Text>
+          <Text>Browse Sales Orders</Text>
           <Font name="Arial" size="11.25" style="0" />
           <TextColor name="Black" />
           <FillColor name="White" />
@@ -51,7 +51,7 @@
     </Node>
     <Node ToolID="21">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="798" y="270" width="288" height="60" />
+        <Position x="798" y="258" width="288" height="60" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -72,7 +72,7 @@ Output Data]]></Text>
     </Node>
     <Node ToolID="22">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="54" y="270" width="252" height="60" />
+        <Position x="54" y="258" width="252" height="60" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -93,7 +93,7 @@ Input Data]]></Text>
     </Node>
     <Node ToolID="23">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="318" y="270" width="468" height="60" />
+        <Position x="318" y="258" width="468" height="60" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -114,11 +114,11 @@ Data Preparation & Cleansing]]></Text>
     </Node>
     <Node ToolID="25">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="318" y="438" />
+        <Position x="318" y="426" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\simon\AppData\Local\Temp\Engine_6792_14aabc0dfcfdd644acd392c2b2a353e8_\Engine_6792_1793334c829ff54cb70e953ec3cb12c3~.yxdb</TempFile>
+          <TempFile>C:\Users\simon\AppData\Local\Temp\Engine_9488_c42c655bd040bf45a360d1fa2f374deb_\Engine_9488_7d07a711495aed47a1e683151f2ba841~.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -143,24 +143,17 @@ Data Preparation & Cleansing]]></Text>
     </Node>
     <Node ToolID="27">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="54" y="54" width="1032" height="204" />
+        <Position x="54" y="54" width="1032" height="192" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <Text><![CDATA[In this Starter Kit Alteryx workflow the Xtract for Alteryx connector is used to load data from SAP ERP's Evaluation of Movements per Storage Type (RLT10010) ABAP report and prepare it for further analysis in Excel or a 3rd party BI solution.
+          <Text>In this Starter Kit Alteryx workflow the 'Xtract for Alteryx' connector is used to load data from SAP S/4HANAs Sales Document View (Transaction VA05 ) and prepare it for further analysis in Excel or a 3rd party BI solution.
 
-To use the Xtract Report components, which read data from SAP systems such as S/4HANA or ERP, install the Xtract for Alteryx connector.  Contact your Alteryx sales representative for more information. A free 30 day trial is available on https://theobald-software.com/en/download-trial.
-
+To use the Xtract Table components which read data from SAP systems such as S/4HANA or ERP you need to install the Xtract for Alteryx connector. Please contact your Alteryx sales rep for more information. A free 30 day trial is available on https://theobald-software.com/en/download-trial
 
 The Report component requires installation of the custom function module Z_XTRACT_IS_REMOTE_REPORT in your SAP system.
-
-Required SAP authorizations: https://helpcenter.theobald-software.com/xtract-for-alteryx/documentation/setup-in-sap/sap-authority-objects.
-
-How to set up the SAP connection: https://helpcenter.theobald-software.com/xtract-for-alteryx/documentation/sap-connection.
-
-
-
-]]></Text>
+Required SAP authorizations: https://kb.theobald-software.com/sap/authority-objects-sap-user-rights
+How to set up the SAP connection: https://help.theobald-software.com/en/xtract-for-alteryx/sap-connection</Text>
           <Font name="Arial" size="11.25" style="1" />
           <TextColor name="Black" />
           <FillColor r="232" g="232" b="232" />
@@ -176,17 +169,18 @@ How to set up the SAP connection: https://helpcenter.theobald-software.com/xtrac
     </Node>
     <Node ToolID="29">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="318" y="366" />
+        <Position x="522" y="354" />
       </GuiSettings>
       <Properties>
         <Configuration>
           <OrderChanged value="False" />
           <CommaDecimal value="False" />
           <SelectFields>
-            <SelectField field="Typ" selected="False" />
-            <SelectField field="No.StkRem." selected="True" type="Int32" size="4" />
-            <SelectField field="No. Put." selected="False" />
-            <SelectField field="No. RetTrf" selected="False" />
+            <SelectField field="Customer Reference" selected="False" />
+            <SelectField field="SalesDocTy" selected="False" />
+            <SelectField field="Sales Doc." selected="False" />
+            <SelectField field="OrdQty (I)" selected="True" rename="Order Quantity" type="Int32" size="4" />
+            <SelectField field="NV (Item)" selected="True" rename="Net Value" type="FixedDecimal" size="11.2" />
             <SelectField field="*Unknown" selected="True" />
           </SelectFields>
         </Configuration>
@@ -200,30 +194,31 @@ How to set up the SAP connection: https://helpcenter.theobald-software.com/xtrac
     </Node>
     <Node ToolID="30">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-        <Position x="522" y="366" />
+        <Position x="618" y="354" />
       </GuiSettings>
       <Properties>
         <Configuration>
           <Mode>Simple</Mode>
           <Simple>
-            <Operator>&lt;</Operator>
-            <Field>No.StkRem.</Field>
+            <Operator>&gt;</Operator>
+            <Field>Order Quantity</Field>
             <Operands>
               <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
               <DateType>fixed</DateType>
-              <PeriodDate>2023-04-27 09:24:32</PeriodDate>
+              <PeriodDate>2023-04-27 10:09:12</PeriodDate>
               <PeriodType>
               </PeriodType>
               <PeriodCount>0</PeriodCount>
-              <Operand>5</Operand>
-              <StartDate>2023-04-27 09:24:32</StartDate>
-              <EndDate>2023-04-27 09:24:32</EndDate>
+              <Operand>0</Operand>
+              <StartDate>2023-04-27 10:09:12</StartDate>
+              <EndDate>2023-04-27 10:09:12</EndDate>
             </Operands>
           </Simple>
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
-          <DefaultAnnotationText>[No.StkRem.] &lt; 5</DefaultAnnotationText>
+          <AnnotationText>Orders without Quantities &gt; 0</AnnotationText>
+          <DefaultAnnotationText>[Order Quantity] &gt; 0</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
       </Properties>
@@ -231,17 +226,17 @@ How to set up the SAP connection: https://helpcenter.theobald-software.com/xtrac
     </Node>
     <Node ToolID="33">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
-        <Position x="726" y="354" />
+        <Position x="726" y="342" />
       </GuiSettings>
       <Properties>
         <Configuration>
           <SortInfo locale="1033">
-            <Field field="No.StkRem." order="Descending" />
+            <Field field="Doc. Date" order="Descending" />
           </SortInfo>
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
-          <DefaultAnnotationText>No.StkRem. - Descending</DefaultAnnotationText>
+          <DefaultAnnotationText>Doc. Date - Descending</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
       </Properties>
@@ -249,110 +244,212 @@ How to set up the SAP connection: https://helpcenter.theobald-software.com/xtrac
     </Node>
     <Node ToolID="36">
       <GuiSettings Plugin="Theobald.Alteryx.Report.ReportInputToolFactory">
-        <Position x="150" y="366" />
+        <Position x="150" y="354" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <Connection>EC5</Connection>
+          <Connection>S4H</Connection>
           <Definition>{
     "report": {
-        "name": "RLT10010",
-        "description": "Evaluation of Movements per Storage Type",
+        "name": "SD_SALES_DOCUMENT_VIEW",
+        "description": "List of Sales Orders",
         "selectionParameters": 
         [
             {
-                "name": "BDATU",
-                "description": "Transfer Order Date",
+                "name": "PBSTKD",
+                "description": "D       .",
+                "kind": "Parameter"
+            },
+            {
+                "name": "PDEFAULT",
+                "description": "N/A",
+                "kind": "Parameter"
+            },
+            {
+                "name": "PPAVW",
+                "description": "Partner Function",
+                "kind": "Parameter"
+            },
+            {
+                "name": "PVBALL",
+                "description": "All Sales Orders",
+                "kind": "Parameter"
+            },
+            {
+                "name": "PVBOFF",
+                "description": "Open Sales Orders",
+                "kind": "Parameter"
+            },
+            {
+                "name": "PZPAVW",
+                "description": "Partner Function",
+                "kind": "Parameter"
+            },
+            {
+                "name": "P_CPSST",
+                "description": "D       .",
+                "kind": "Parameter"
+            },
+            {
+                "name": "SAUART",
+                "description": "Order Type",
                 "kind": "SelectionOption"
             },
             {
-                "name": "LGTYP",
-                "description": "Storage Type",
-                "kind": "Parameter"
-            },
-            {
-                "name": "T1_ALLTA",
-                "description": "N/A",
-                "kind": "Parameter"
-            },
-            {
-                "name": "T1_DENSE",
-                "description": "N/A",
-                "kind": "Parameter"
-            },
-            {
-                "name": "T1_LGNUM",
-                "description": "N/A",
-                "kind": "Parameter"
-            },
-            {
-                "name": "T1_OFFTA",
-                "description": "N/A",
-                "kind": "Parameter"
-            },
-            {
-                "name": "T1_QUITA",
-                "description": "N/A",
-                "kind": "Parameter"
-            },
-            {
-                "name": "T1_TANUM",
-                "description": "N/A",
+                "name": "SAUDAT",
+                "description": "Document Date",
                 "kind": "SelectionOption"
             },
             {
-                "name": "WERKS",
-                "description": "Plant",
+                "name": "SEMPL",
+                "description": "Personnel Number",
+                "kind": "SelectionOption"
+            },
+            {
+                "name": "SERDAT",
+                "description": "Created On",
+                "kind": "SelectionOption"
+            },
+            {
+                "name": "SERNAM",
+                "description": "Created By",
+                "kind": "SelectionOption"
+            },
+            {
+                "name": "SKUNNR",
+                "description": "Sold-To Party",
+                "kind": "SelectionOption"
+            },
+            {
+                "name": "SMATNR",
+                "description": "Material",
+                "kind": "SelectionOption"
+            },
+            {
+                "name": "SPARTNER",
+                "description": "Partner",
+                "kind": "SelectionOption"
+            },
+            {
+                "name": "SSPART",
+                "description": "D       .",
+                "kind": "SelectionOption"
+            },
+            {
+                "name": "ST_COL",
+                "description": "D       .",
+                "kind": "SelectionOption"
+            },
+            {
+                "name": "ST_PSST",
+                "description": "D       .",
+                "kind": "SelectionOption"
+            },
+            {
+                "name": "ST_SEA",
+                "description": "D       .",
+                "kind": "SelectionOption"
+            },
+            {
+                "name": "ST_SEAYR",
+                "description": "D       .",
+                "kind": "SelectionOption"
+            },
+            {
+                "name": "ST_THM",
+                "description": "D       .",
+                "kind": "SelectionOption"
+            },
+            {
+                "name": "SVBELN",
+                "description": "Document",
+                "kind": "SelectionOption"
+            },
+            {
+                "name": "SVKBUR",
+                "description": "Sales Office",
+                "kind": "SelectionOption"
+            },
+            {
+                "name": "SVKGRP",
+                "description": "Sales Group",
+                "kind": "SelectionOption"
+            },
+            {
+                "name": "SVKORG",
+                "description": "Sales Organization",
+                "kind": "SelectionOption"
+            },
+            {
+                "name": "SVTWEG",
+                "description": "Distribution Channel",
                 "kind": "SelectionOption"
             }
         ],
         "variants": 
         [
-            "0_DATEN",
-            "ARGO",
-            "BREGAL",
-            "CERAMTEC",
-            "DONNERSTAG",
-            "EMPTY",
-            "LEIPZIG",
-            "LGNUM003",
-            "NODATA",
-            "VAR01",
-            "VAR03",
-            "VAR_02",
-            "VAR_ALEKS"
+            "VA05_AUART"
         ]
     },
-    "variant": "VAR01",
     "functionModule": "Z_XTRACT_IS_REMOTE_REPORT",
-    "rowSkipTop": 8,
+    "rowSkipTop": 4,
     "rowSkipBottom": 0,
     "columns": 
     [
         {
-            "name": "Typ",
-            "length": 3,
+            "name": "Customer Reference",
+            "length": 34,
             "offset": 1
         },
         {
-            "name": "Storage type name",
-            "length": 25,
-            "offset": 5
-        },
-        {
-            "name": "No.StkRem.",
+            "name": "Doc. Date",
             "length": 10,
-            "offset": 31
+            "offset": 36
         },
         {
-            "name": "No. Put.",
+            "name": "SalesDocTy",
+            "length": 10,
+            "offset": 47
+        },
+        {
+            "name": "Sales Doc.",
+            "length": 10,
+            "offset": 58
+        },
+        {
+            "name": "Item",
+            "length": 4,
+            "offset": 69
+        },
+        {
+            "name": "Sold-to",
+            "length": 10,
+            "offset": 74
+        },
+        {
+            "name": "Material",
+            "length": 14,
+            "offset": 85
+        },
+        {
+            "name": "OrdQty (I)",
+            "length": 10,
+            "offset": 100
+        },
+        {
+            "name": "Sales unit",
+            "length": 10,
+            "offset": 111
+        },
+        {
+            "name": "NV (Item)",
+            "length": 11,
+            "offset": 122
+        },
+        {
+            "name": "Currency",
             "length": 8,
-            "offset": 42
-        },
-        {
-            "name": "No. RetTrf",
-            "length": 10,
-            "offset": 51
+            "offset": 134
         }
     ],
     "reportWidth": 2048,
@@ -361,7 +458,7 @@ How to set up the SAP connection: https://helpcenter.theobald-software.com/xtrac
     "batchJobTimeout": 300,
     "batchJobName": "XTRACT",
     "spoolDestination": "LOCL",
-    "dynamicColumns": true,
+    "dynamicColumns": false,
     "scalarRuntimeParameters": {
     }
 }</Definition>
@@ -373,7 +470,7 @@ How to set up the SAP connection: https://helpcenter.theobald-software.com/xtrac
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
-          <DefaultAnnotationText>RLT10010</DefaultAnnotationText>
+          <DefaultAnnotationText>SD_SALES_DOCUMENT_VIEW</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
       </Properties>
@@ -381,7 +478,7 @@ How to set up the SAP connection: https://helpcenter.theobald-software.com/xtrac
     </Node>
     <Node ToolID="37">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="1098" y="66" width="420" height="468" />
+        <Position x="1110" y="54" width="420" height="468" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -401,12 +498,139 @@ How to set up the SAP connection: https://helpcenter.theobald-software.com/xtrac
       </Properties>
     </Node>
     <Node ToolID="38">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
-        <Position x="846" y="438" />
+      <GuiSettings>
+        <Position x="330" y="354" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <File MaxRecords="" FileFormat="25">\Storage Types Low Stock.xlsx|||StorageTypes</File>
+          <Value name="Check Box (135)">False</Value>
+          <Value name="Check Box (136)">False</Value>
+          <Value name="List Box (11)">"Customer Reference","Doc. Date","SalesDocTy","Sales Doc.","Item","Sold-to","Material","OrdQty (I)","Sales unit","NV (Item)","Currency"</Value>
+          <Value name="Check Box (84)">True</Value>
+          <Value name="Check Box (117)">True</Value>
+          <Value name="Check Box (15)">True</Value>
+          <Value name="Check Box (109)">False</Value>
+          <Value name="Check Box (122)">False</Value>
+          <Value name="Check Box (53)">False</Value>
+          <Value name="Check Box (58)">False</Value>
+          <Value name="Check Box (70)">False</Value>
+          <Value name="Check Box (77)">False</Value>
+          <Value name="Drop Down (81)">upper</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Cleanse.yxmc" />
+    </Node>
+    <Node ToolID="39">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="426" y="354" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="ReplaceChar([NV (Item)], '.', '')" field="NV (Item)" size="11" type="WString" />
+            <FormulaField expression="ReplaceChar([NV (Item)], ',', '.')" field="NV (Item)" size="11" type="WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>NV (Item) = ReplaceChar([NV (Item)], '.', '')
+NV (Item) = ReplaceChar([NV (Item)...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="40">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="630" y="558" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Material" action="GroupBy" rename="Material" />
+            <SummarizeField field="Order Quantity" action="Sum" rename="Total Order Quantity" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="41">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="726" y="558" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="1033">
+            <Field field="Total Order Quantity" order="Descending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Total Order Quantity - Descending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="42">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="846" y="558" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Layout>
+            <View1>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="43">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="942" y="558" width="144" height="72" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Browse best selling materials</Text>
+          <Font name="Arial" size="11.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="1" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="44">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="846" y="450" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="25">\SalesOrders.xlsx|||SalesOrders</File>
           <Passwords />
           <Disable>False</Disable>
           <FormatSpecificOptions>
@@ -418,21 +642,21 @@ How to set up the SAP connection: https://helpcenter.theobald-software.com/xtrac
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
-          <AnnotationText>Excel output</AnnotationText>
-          <DefaultAnnotationText>Storage Types Low Stock.xlsx
-Query=StorageTypes</DefaultAnnotationText>
+          <AnnotationText>SalesOrders.xlsx</AnnotationText>
+          <DefaultAnnotationText>SalesOrders.xlsx
+Query=SalesOrders</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
     </Node>
-    <Node ToolID="39">
+    <Node ToolID="45">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="942" y="450" width="144" height="48" />
+        <Position x="942" y="450" width="144" height="72" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <Text>Save the data in an Excel file</Text>
+          <Text>Output to Excel or BI Tools</Text>
           <Font name="Arial" size="11.25" style="0" />
           <TextColor name="Black" />
           <FillColor name="White" />
@@ -457,20 +681,40 @@ Query=StorageTypes</DefaultAnnotationText>
       <Destination ToolID="33" Connection="Input" />
     </Connection>
     <Connection>
+      <Origin ToolID="30" Connection="True" />
+      <Destination ToolID="40" Connection="Input" />
+    </Connection>
+    <Connection>
       <Origin ToolID="33" Connection="Output" />
       <Destination ToolID="3" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="33" Connection="Output" />
-      <Destination ToolID="38" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="36" Connection="Output" />
-      <Destination ToolID="29" Connection="Input" />
+      <Destination ToolID="44" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="36" Connection="Output" />
       <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="36" Connection="Output" />
+      <Destination ToolID="38" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="38" Connection="Output26" />
+      <Destination ToolID="39" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="39" Connection="Output" />
+      <Destination ToolID="29" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="40" Connection="Output" />
+      <Destination ToolID="41" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="41" Connection="Output" />
+      <Destination ToolID="42" Connection="Input" />
     </Connection>
   </Connections>
   <Properties>
@@ -491,10 +735,9 @@ Query=StorageTypes</DefaultAnnotationText>
     <ShowConnectionStatusOnlyWhenRunning value="True" />
     <ZoomLevel value="0" />
     <LayoutType>Horizontal</LayoutType>
-    <IsTemplate value="False" />
     <MetaInfo>
       <NameIsFileName value="True" />
-      <Name>Report-ERP-ABAPReport</Name>
+      <Name>Report - S4 - TCode</Name>
       <Description />
       <RootToolName />
       <ToolVersion />
@@ -509,12 +752,11 @@ Query=StorageTypes</DefaultAnnotationText>
         <Description />
         <File />
       </Example>
-      <WorkflowId value="8a441d63-2518-4e1a-8c6f-f5cbb93a0680" />
+      <WorkflowId value="9b563eb2-7a8f-4ad1-b3b8-a1f85acba90d" />
       <Telemetry>
-        <PreviousWorkflowId value="240ded9b-6dfa-42e5-8cf2-edf27b6ccb73" />
+        <PreviousWorkflowId value="8a441d63-2518-4e1a-8c6f-f5cbb93a0680" />
         <OriginWorkflowId value="0796e9f6-f0a2-438e-996a-9c4187a58837" />
       </Telemetry>
-      <PlatformWorkflowId value="" />
     </MetaInfo>
     <Events>
       <Enabled value="True" />

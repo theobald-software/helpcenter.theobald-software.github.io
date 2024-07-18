@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
-<AlteryxDocument yxmdVer="2024.1" RunE2="T">
+<AlteryxDocument yxmdVer="2022.3">
   <Nodes>
     <Node ToolID="3">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="846" y="354" />
+        <Position x="846" y="342" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -31,7 +31,7 @@
     </Node>
     <Node ToolID="20">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="942" y="354" width="144" height="72" />
+        <Position x="942" y="342" width="144" height="72" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -51,7 +51,7 @@
     </Node>
     <Node ToolID="21">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="798" y="270" width="288" height="60" />
+        <Position x="798" y="258" width="288" height="60" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -72,7 +72,7 @@ Output Data]]></Text>
     </Node>
     <Node ToolID="22">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="54" y="270" width="252" height="60" />
+        <Position x="54" y="258" width="252" height="60" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -93,7 +93,7 @@ Input Data]]></Text>
     </Node>
     <Node ToolID="23">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="318" y="270" width="468" height="60" />
+        <Position x="318" y="258" width="468" height="60" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -114,7 +114,7 @@ Data Preparation & Cleansing]]></Text>
     </Node>
     <Node ToolID="25">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="318" y="438" />
+        <Position x="318" y="426" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -143,24 +143,17 @@ Data Preparation & Cleansing]]></Text>
     </Node>
     <Node ToolID="27">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="54" y="54" width="1032" height="204" />
+        <Position x="54" y="42" width="1032" height="204" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <Text><![CDATA[In this Starter Kit Alteryx workflow the Xtract for Alteryx connector is used to load data from SAP ERP's Evaluation of Movements per Storage Type (RLT10010) ABAP report and prepare it for further analysis in Excel or a 3rd party BI solution.
+          <Text>In this Starter Kit Alteryx workflow the 'Xtract for Alteryx' connector is used to load data from SAP ERP's Evaluation of Movements per Storage Type (RLT10010) ABAP report and prepare it for further analysis in Excel or a 3rd party BI solution.
 
-To use the Xtract Report components, which read data from SAP systems such as S/4HANA or ERP, install the Xtract for Alteryx connector.  Contact your Alteryx sales representative for more information. A free 30 day trial is available on https://theobald-software.com/en/download-trial.
-
+To use the Xtract Report components which read data from SAP systems such as S/4HANA or ERP you need to install the Xtract for Alteryx connector. Please contact your Alteryx sales rep for more information. A free 30 day trial is available on https://theobald-software.com/en/download-trial
 
 The Report component requires installation of the custom function module Z_XTRACT_IS_REMOTE_REPORT in your SAP system.
-
-Required SAP authorizations: https://helpcenter.theobald-software.com/xtract-for-alteryx/documentation/setup-in-sap/sap-authority-objects.
-
-How to set up the SAP connection: https://helpcenter.theobald-software.com/xtract-for-alteryx/documentation/sap-connection.
-
-
-
-]]></Text>
+Required SAP authorizations: https://kb.theobald-software.com/sap/authority-objects-sap-user-rights
+How to set up the SAP connection: https://help.theobald-software.com/en/xtract-for-alteryx/sap-connection</Text>
           <Font name="Arial" size="11.25" style="1" />
           <TextColor name="Black" />
           <FillColor r="232" g="232" b="232" />
@@ -176,7 +169,7 @@ How to set up the SAP connection: https://helpcenter.theobald-software.com/xtrac
     </Node>
     <Node ToolID="29">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="318" y="366" />
+        <Position x="318" y="354" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -200,7 +193,7 @@ How to set up the SAP connection: https://helpcenter.theobald-software.com/xtrac
     </Node>
     <Node ToolID="30">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-        <Position x="522" y="366" />
+        <Position x="522" y="354" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -231,7 +224,7 @@ How to set up the SAP connection: https://helpcenter.theobald-software.com/xtrac
     </Node>
     <Node ToolID="33">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
-        <Position x="726" y="354" />
+        <Position x="726" y="342" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -249,7 +242,7 @@ How to set up the SAP connection: https://helpcenter.theobald-software.com/xtrac
     </Node>
     <Node ToolID="36">
       <GuiSettings Plugin="Theobald.Alteryx.Report.ReportInputToolFactory">
-        <Position x="150" y="366" />
+        <Position x="150" y="354" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -381,7 +374,7 @@ How to set up the SAP connection: https://helpcenter.theobald-software.com/xtrac
     </Node>
     <Node ToolID="37">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="1098" y="66" width="420" height="468" />
+        <Position x="1098" y="54" width="420" height="468" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -402,7 +395,7 @@ How to set up the SAP connection: https://helpcenter.theobald-software.com/xtrac
     </Node>
     <Node ToolID="38">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
-        <Position x="846" y="438" />
+        <Position x="846" y="426" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -428,7 +421,7 @@ Query=StorageTypes</DefaultAnnotationText>
     </Node>
     <Node ToolID="39">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="942" y="450" width="144" height="48" />
+        <Position x="942" y="438" width="144" height="48" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -491,10 +484,9 @@ Query=StorageTypes</DefaultAnnotationText>
     <ShowConnectionStatusOnlyWhenRunning value="True" />
     <ZoomLevel value="0" />
     <LayoutType>Horizontal</LayoutType>
-    <IsTemplate value="False" />
     <MetaInfo>
       <NameIsFileName value="True" />
-      <Name>Report-ERP-ABAPReport</Name>
+      <Name>Report - ERP - ABAP Report</Name>
       <Description />
       <RootToolName />
       <ToolVersion />
@@ -514,7 +506,6 @@ Query=StorageTypes</DefaultAnnotationText>
         <PreviousWorkflowId value="240ded9b-6dfa-42e5-8cf2-edf27b6ccb73" />
         <OriginWorkflowId value="0796e9f6-f0a2-438e-996a-9c4187a58837" />
       </Telemetry>
-      <PlatformWorkflowId value="" />
     </MetaInfo>
     <Events>
       <Enabled value="True" />

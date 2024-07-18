@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<AlteryxDocument yxmdVer="2024.1" RunE2="T">
+<AlteryxDocument yxmdVer="2023.1">
   <Nodes>
     <Node ToolID="1">
       <GuiSettings Plugin="Theobald.Alteryx.Table.TableInputToolFactory">
@@ -3117,10 +3117,9 @@ Data Unification and Preparation]]></Text>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <Text>In this Alteryx workflow the Xtract for Alteryx connector is used to support a system migration conducted in a phased approach. In this example, a migration to S/4HANA has been completed for the United States country organization, but not yet for the rest of the world. Until the migration is completed for all countries, a short-term bridge is needed to unify data from both systems for analytical purposes. 
-This is demonstrated here by extracting Sales Data and Customer Master Data from an ERP and an S/4 system and unifying the data into a combined Tableau data extract.
+          <Text>In this Alteryx workflow the 'Xtract for Alteryx' connector is used to support a system migration that is done in a phased approach. In this example a migration to S/4HANA has been completed for the United States country org but not yet for the rest of the world. As long as the migration is not completed for all countries, a short-term bridge to unify data from both systems e.g. for analytical purposes is needed. This is demonstrated here by extracting Sales Data and Customer Master Data from an ERP and an S/4 system and unifying the data into a combined Tableau data extract.
 
-To use the Xtract Table components, which read data from SAP systems such as S/4HANA or ERP, install the Xtract for Alteryx connector. Contact your Alteryx sales representative for more information. A free 30 day trial is available on https://theobald-software.com/en/download-trial.</Text>
+To use the Xtract Table components which read data from SAP systems such as S/4HANA or ERP you need to install the Xtract for Alteryx connector. Please contact your Alteryx sales rep for more information. A free 30 day trial is available on https://theobald-software.com/en/download-trial</Text>
           <Font name="Arial" size="11.25" style="1" />
           <TextColor name="Black" />
           <FillColor r="232" g="232" b="232" />
@@ -20635,6 +20634,14 @@ Query=Sheet1</DefaultAnnotationText>
       <Destination ToolID="35" Connection="Input" />
     </Connection>
     <Connection>
+      <Origin ToolID="46" Connection="True" />
+      <Destination ToolID="37" Connection="Parameters" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="46" Connection="False" />
+      <Destination ToolID="1" Connection="Parameters" />
+    </Connection>
+    <Connection>
       <Origin ToolID="47" Connection="Output" />
       <Destination ToolID="77" Connection="Left" />
     </Connection>
@@ -20673,6 +20680,14 @@ Query=Sheet1</DefaultAnnotationText>
     <Connection>
       <Origin ToolID="61" Connection="False" />
       <Destination ToolID="46" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="61" Connection="True" />
+      <Destination ToolID="63" Connection="Parameters" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="61" Connection="True" />
+      <Destination ToolID="64" Connection="Parameters" />
     </Connection>
     <Connection>
       <Origin ToolID="62" Connection="Output" />
@@ -20741,7 +20756,6 @@ Query=Sheet1</DefaultAnnotationText>
     <ShowConnectionStatusOnlyWhenRunning value="True" />
     <ZoomLevel value="0" />
     <LayoutType>Horizontal</LayoutType>
-    <IsTemplate value="False" />
     <Constants>
       <Constant>
         <Namespace>Question</Namespace>

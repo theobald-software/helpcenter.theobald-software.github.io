@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
-<AlteryxDocument yxmdVer="2024.1" RunE2="T">
+<AlteryxDocument yxmdVer="2022.3">
   <Nodes>
     <Node ToolID="3">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="834" y="330" />
+        <Position x="834" y="342" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\simon\AppData\Local\Temp\Engine_11088_7aef2a7d86394f44bc05261187c07713_\Engine_11088_ee37bce948595e4cb6e7cf4e3a588cf8~.yxdb</TempFile>
+          <TempFile>C:\Users\simon\AppData\Local\Temp\Engine_8196_1f0e15a88eeaab418309014400022e1a_\Engine_8196_675a9aecd6001443ac990ee1d1e88469~.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -31,7 +31,7 @@
     </Node>
     <Node ToolID="16">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
-        <Position x="834" y="414" />
+        <Position x="834" y="426" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -53,7 +53,7 @@
     </Node>
     <Node ToolID="18">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="942" y="414" width="144" height="96" />
+        <Position x="942" y="426" width="144" height="96" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -73,7 +73,7 @@
     </Node>
     <Node ToolID="20">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="942" y="330" width="144" height="72" />
+        <Position x="942" y="342" width="144" height="72" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -93,7 +93,7 @@
     </Node>
     <Node ToolID="21">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="798" y="246" width="288" height="60" />
+        <Position x="798" y="258" width="288" height="60" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -114,7 +114,7 @@ Output Data]]></Text>
     </Node>
     <Node ToolID="22">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="54" y="246" width="252" height="60" />
+        <Position x="54" y="258" width="252" height="60" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -135,7 +135,7 @@ Input Data]]></Text>
     </Node>
     <Node ToolID="23">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="318" y="246" width="468" height="60" />
+        <Position x="318" y="258" width="468" height="60" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -156,11 +156,11 @@ Data Preparation & Cleansing]]></Text>
     </Node>
     <Node ToolID="25">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="330" y="342" />
+        <Position x="330" y="354" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\simon\AppData\Local\Temp\Engine_11088_7aef2a7d86394f44bc05261187c07713_\Engine_11088_366a785b55f1064f8978c8dfc2db14b5~.yxdb</TempFile>
+          <TempFile>C:\Users\simon\AppData\Local\Temp\Engine_8196_1f0e15a88eeaab418309014400022e1a_\Engine_8196_95e2905264e686408d41fd3e91ca49e2~.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -185,18 +185,21 @@ Data Preparation & Cleansing]]></Text>
     </Node>
     <Node ToolID="27">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="54" y="54" width="1032" height="180" />
+        <Position x="54" y="18" width="1032" height="228" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <Text>This workflow uses the Xtract ODP component of the Xtract for Alteryx connector to load sales documents (transaction data) and customer master data from an SAP ERP system. The data is then combined, cleaned, and prepared for further analysis.
+          <Text><![CDATA[This workflow uses the Xtract ODP component of the 'Xtract for Alteryx' connector to load the following objects from an SAP ERP system: 
+- sales documents (transaction data)
+- customer master data
+The sales documents only include data that was added or altered after the last run of the workflow (delta load). The data is then combined, cleaned, and prepared for further analysis.
 
 To use the Xtract ODP component install the Xtract for Alteryx connector. 
-Contact your Alteryx sales representative for more information. A free 30 day trial is available on https://theobald-software.com/en/download-trial.
+Please contact your Alteryx sales rep for more information. A free 30-day trial is available at https://theobald-software.com/en/download-trial
 
-Required SAP authorizations: https://helpcenter.theobald-software.com/xtract-for-alteryx/documentation/setup-in-sap/sap-authority-objects.
-
-How to set up the SAP connection: https://helpcenter.theobald-software.com/xtract-for-alteryx/documentation/sap-connection.</Text>
+Required SAP authorizations: https://kb.theobald-software.com/sap/authority-objects-sap-user-rights
+How to set up the SAP connection: https://help.theobald-software.com/en/xtract-for-alteryx/sap-connection
+]]></Text>
           <Font name="Arial" size="11.25" style="1" />
           <TextColor name="Black" />
           <FillColor r="232" g="232" b="232" />
@@ -212,7 +215,7 @@ How to set up the SAP connection: https://helpcenter.theobald-software.com/xtrac
     </Node>
     <Node ToolID="49">
       <GuiSettings Plugin="Theobald.Alteryx.Odp.OdpInputToolFactory">
-        <Position x="150" y="342" />
+        <Position x="150" y="354" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -226,7 +229,7 @@ How to set up the SAP connection: https://helpcenter.theobald-software.com/xtrac
     "context": "SAPI",
     "supportsFull": true,
     "supportsDelta": true,
-    "mode": "Full",
+    "mode": "Delta",
     "transferDataOnDeltaInit": true,
     "columns": 
     [
@@ -1376,13 +1379,13 @@ How to set up the SAP connection: https://helpcenter.theobald-software.com/xtrac
 }</DestinationSettings>
           <ExtractorsVersion>1.42.4.1</ExtractorsVersion>
           <RuntimeParameters />
-          <UpdateMode>Full</UpdateMode>
+          <UpdateMode>Delta</UpdateMode>
           <HierarchyName>
           </HierarchyName>
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
-          <AnnotationText>Sales Documents - Transaction Data - Full load</AnnotationText>
+          <AnnotationText>Sales Documents - Transaction Data - Delta load</AnnotationText>
           <DefaultAnnotationText>2LIS_11_VAITM (SAPI)</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
@@ -1391,7 +1394,7 @@ How to set up the SAP connection: https://helpcenter.theobald-software.com/xtrac
     </Node>
     <Node ToolID="51">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
-        <Position x="330" y="414" />
+        <Position x="330" y="426" />
       </GuiSettings>
       <Properties>
         <Configuration joinByRecordPos="False">
@@ -1422,7 +1425,7 @@ How to set up the SAP connection: https://helpcenter.theobald-software.com/xtrac
     </Node>
     <Node ToolID="53">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="426" y="414" />
+        <Position x="426" y="426" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1470,7 +1473,7 @@ How to set up the SAP connection: https://helpcenter.theobald-software.com/xtrac
     </Node>
     <Node ToolID="54">
       <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-        <Position x="546" y="330" />
+        <Position x="546" y="342" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1491,7 +1494,7 @@ How to set up the SAP connection: https://helpcenter.theobald-software.com/xtrac
     </Node>
     <Node ToolID="55">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
-        <Position x="630" y="330" />
+        <Position x="630" y="342" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1509,7 +1512,7 @@ How to set up the SAP connection: https://helpcenter.theobald-software.com/xtrac
     </Node>
     <Node ToolID="56">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
-        <Position x="714" y="330" />
+        <Position x="714" y="342" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1527,7 +1530,7 @@ How to set up the SAP connection: https://helpcenter.theobald-software.com/xtrac
     </Node>
     <Node ToolID="57">
       <GuiSettings Plugin="Theobald.Alteryx.Odp.OdpInputToolFactory">
-        <Position x="150" y="462" />
+        <Position x="150" y="474" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -2557,11 +2560,11 @@ How to set up the SAP connection: https://helpcenter.theobald-software.com/xtrac
     </Node>
     <Node ToolID="59">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
-        <Position x="834" y="534" />
+        <Position x="834" y="546" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <File MaxRecords="" FileFormat="25">\Customers_without_transactions.xlsx|||Customers_without_transactions</File>
+          <File MaxRecords="" FileFormat="25">\Transactions_without_Customer_MD.xlsx|||Missing Customer Master Data</File>
           <Passwords />
           <Disable>False</Disable>
           <FormatSpecificOptions>
@@ -2574,8 +2577,8 @@ How to set up the SAP connection: https://helpcenter.theobald-software.com/xtrac
         <Annotation DisplayMode="0">
           <Name />
           <AnnotationText>Transactions with missing customer master data</AnnotationText>
-          <DefaultAnnotationText>Customers_without_transactions.xlsx
-Query=Customers_without_transactio...</DefaultAnnotationText>
+          <DefaultAnnotationText>Transactions_without_Customer_MD.xlsx
+Query=Missing Customer Master Data</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
       </Properties>
@@ -2583,11 +2586,11 @@ Query=Customers_without_transactio...</DefaultAnnotationText>
     </Node>
     <Node ToolID="60">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="942" y="522" width="144" height="96" />
+        <Position x="942" y="534" width="144" height="96" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <Text>Save a list of customers without any transaction</Text>
+          <Text>Save a list of transactions with missing customer master data</Text>
           <Font name="Arial" size="11.25" style="0" />
           <TextColor name="Black" />
           <FillColor name="White" />
@@ -2620,7 +2623,7 @@ Query=Customers_without_transactio...</DefaultAnnotationText>
       <Destination ToolID="53" Connection="Input" />
     </Connection>
     <Connection>
-      <Origin ToolID="51" Connection="Right" />
+      <Origin ToolID="51" Connection="Left" />
       <Destination ToolID="59" Connection="Input" />
     </Connection>
     <Connection>
@@ -2662,10 +2665,9 @@ Query=Customers_without_transactio...</DefaultAnnotationText>
     <ShowConnectionStatusOnlyWhenRunning value="True" />
     <ZoomLevel value="0" />
     <LayoutType>Horizontal</LayoutType>
-    <IsTemplate value="False" />
     <MetaInfo>
       <NameIsFileName value="True" />
-      <Name>ODP-ERP-Full</Name>
+      <Name>ODP - ERP - Delta</Name>
       <Description />
       <RootToolName />
       <ToolVersion />
@@ -2680,12 +2682,11 @@ Query=Customers_without_transactio...</DefaultAnnotationText>
         <Description />
         <File />
       </Example>
-      <WorkflowId value="178c7789-26af-4a0a-ac4f-e5784c5fe1ba" />
+      <WorkflowId value="e648e7fa-2d23-4e45-8bb2-5bf848dd8f6d" />
       <Telemetry>
-        <PreviousWorkflowId value="e648e7fa-2d23-4e45-8bb2-5bf848dd8f6d" />
+        <PreviousWorkflowId value="f14432e0-ec07-48c4-a401-82ddd2126eee" />
         <OriginWorkflowId value="0796e9f6-f0a2-438e-996a-9c4187a58837" />
       </Telemetry>
-      <PlatformWorkflowId value="" />
     </MetaInfo>
     <Events>
       <Enabled value="True" />
