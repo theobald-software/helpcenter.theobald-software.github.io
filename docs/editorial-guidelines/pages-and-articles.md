@@ -1,12 +1,14 @@
 ---
-title: Add new Pages and Articles
+title: Add new Pages / Articles
 ---
+
+What to consider when creating new pages in a product's user documentation or knowledge base.
 
 ### Documentation pages
 
 What to consider when creating new documentation pages:
 
-- Create new documentation pages in the `documentation` folder of the product.
+- Create new documentation pages in the `documentation` folder of the product, e.g., `helpcenter.theobald-software.github.io\projects\[product name]\docs\documentation\`.
 - Filenames use "-" instead of empty spaces, e.g., `bapis-and-function-modules.md`.
 - The URL of the file is relative to the `/docs` directory. Example:<br>
 
@@ -45,7 +47,7 @@ If no .pages file exists, create one.
 
 What to consider when creating new articles:
 
-- Create new articles in the `knowledge-base` directory of the product.
+- Create new articles in the `knowledge-base` directory of the product, e.g., `helpcenter.theobald-software.github.io\projects\[product name]\docs\knowledge-base\`.
 - Use an introduction sentence: "The following article shows / describes / contains..."
 - Add authors to the front matter of an article:
 
@@ -56,8 +58,8 @@ What to consider when creating new articles:
 	---
 	```
 	
-- Add the article in the index page of the `knowledge-base` folder.
-- Mark new articles in the index page using :material-alert-decagram:. Remove the status after a month. Example:
+- Add the article in the index.md file of the `knowledge-base` folder.
+- Mark new articles in the index.md file using :material-alert-decagram:. Remove the status after a month. Example:
 
 	``` markdown
 	- [Authorization Objects - SAP User Rights {==:material-alert-decagram:==}](authority-objects-sap-user-rights.md) 
