@@ -132,9 +132,13 @@ Select a Snowflake Data Warehouse.
 	**NULL result in a non-nullable column.**<br>
 	By default empty strings are converted to NULL values when uploading data to Snowflake. To deactivate the conversion, disable **Replace empty values with SQL NULL**.
 
-#### Replace empty values with SQL NULL
 This option controls the Snowflake file format parameter EMPTY_FIELD_AS_NULL.
 When **Replace empty values with SQL NULL** is active, empty strings are converted to NULL values when uploading data to Snowflake.
+
+### Append Extraction Timestamp
+
+When **Add timestamp column to result set** is active, an additional column *ExtractionTimestamp* is added to the output of the extraction.
+The timestamp uses the format  `yyyy-MM-dd'T'HH:mm:ss.SSS'Z'` (UTC).
 
 {% include "destinations/db-merge-data.md" %} 
 
