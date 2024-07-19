@@ -7,8 +7,8 @@ This means, each product contains symlinks that point to a [target folder](#targ
 
 !!! warning
 	**Target not found**<br>
-	When building previews, the console prints warnings about missing content / images if symlinks are missing or broken.
-	Because symlinks are not automatically created when pulling content from the repository, they need to be created manually on your local Windows machine.
+	When building previews, the console prints warnings about missing content / images, if symlinks are missing or broken.
+	When pulling content from the repository, symlinks are not automatically created. Therefore, you need to manually create the symlinks on your local Windows machine.
 
 The following symlinks are required for building previews of the HelpCenters:
 
@@ -35,7 +35,7 @@ Delete these files, before creating local symlinks.
 	Example:<br>
 	![symlinks-console](../assets/images/editorial-guide/symlinks-console.png)
 	
-4. Double-click the created symlink. If the symlink is set correctly, the the symlink folder opens and the files from the target folder are available.
+4. Double-click the created symlink. If the symlink is set correctly, the symlink folder opens and the files from the target folder are available.
 
 Repeat the steps for all source folders and products.<br>
 For more information on symlinks, see [Complete Guide to Symbolic Links](https://www.howtogeek.com/16226/complete-guide-to-symbolic-links-symlinks-on-windows-or-linux/)
