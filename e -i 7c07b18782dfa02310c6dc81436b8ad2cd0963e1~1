@@ -1,0 +1,256 @@
+[33mcommit ab52019da7164187726710c939c560a9446a6c8a[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: Valerie Schipka <schipka@theobald.local>
+Date:   Fri Jul 19 12:54:55 2024 +0200
+
+    Revert "Merge branch 'install-mkdocs'"
+    
+    This reverts commit 7c07b18782dfa02310c6dc81436b8ad2cd0963e1, reversing
+    changes made to 8dadc98a6bee0a25f81d49a665e1eeafafca79c5.
+
+[33mcommit 84274c4412f295ce2c3ced8e79901a4cc0481ccb[m
+Author: Valerie Schipka <schipka@theobald.local>
+Date:   Fri Jul 19 12:52:05 2024 +0200
+
+    installation
+
+[33mcommit fe3b25209c150f6dd86771649d50147b0bac5dbe[m
+Author: Valerie Schipka <schipka@theobald.local>
+Date:   Fri Jul 19 12:49:51 2024 +0200
+
+    remove secret
+
+[33mcommit 7c07b18782dfa02310c6dc81436b8ad2cd0963e1[m
+Merge: 8dadc98a6 0e0aa0fca
+Author: Valerie Schipka <schipka@theobald.local>
+Date:   Fri Jul 19 12:46:29 2024 +0200
+
+    Merge branch 'install-mkdocs'
+
+[33mcommit 0e0aa0fcac3fdc66bd60aa905b78531b2df99381[m[33m ([m[1;32minstall-mkdocs[m[33m)[m
+Author: Valerie Schipka <schipka@theobald.local>
+Date:   Fri Jul 19 12:46:10 2024 +0200
+
+    installation
+
+[33mcommit 8dadc98a6bee0a25f81d49a665e1eeafafca79c5[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Maia <maia.reichert-baisch@theobald-software.com>
+Date:   Fri Jul 19 10:54:33 2024 +0200
+
+    edit
+
+[33mcommit 7ee9aa38f49544efab2b51ced4a06048f72fcb7d[m
+Author: Valerie Schipka <schipka@theobald.local>
+Date:   Fri Jul 19 09:33:57 2024 +0200
+
+    deactivate announcement in ERPConnect & yunIO
+
+[33mcommit 27e47c3ec7fae57803523dfb4f367a994fd92179[m
+Author: Valerie-ts <79153960+Valerie-ts@users.noreply.github.com>
+Date:   Fri Jul 19 09:27:18 2024 +0200
+
+    Newsfeed: ERPConnect
+
+[33mcommit 55047c49faebcf705c008789295a36c6c39303e1[m
+Author: Valerie Schipka <schipka@theobald.local>
+Date:   Fri Jul 19 09:24:35 2024 +0200
+
+    script expression DeltaQ cleanup
+
+[33mcommit 5a9a642b46ff207d821b6e6acd190d22de105293[m
+Author: Valerie Schipka <schipka@theobald.local>
+Date:   Fri Jul 19 09:13:30 2024 +0200
+
+    better meta description for script expressions
+
+[33mcommit 6a5284e50256ef79b320241ec1dfa67393882ecc[m
+Author: Valerie Schipka <schipka@theobald.local>
+Date:   Fri Jul 19 09:06:38 2024 +0200
+
+    script expressions in tabs
+
+[33mcommit b30fae4f30a0c262b40c2ee423fd364a7125e2f3[m
+Merge: 60e95252d dfdf2fa82
+Author: Valerie Schipka <schipka@theobald.local>
+Date:   Fri Jul 19 09:01:31 2024 +0200
+
+    Merge branch 'main' of https://github.com/theobald-software/helpcenter.theobald-software.github.io
+
+[33mcommit 60e95252d95324e6cee6bfff6c6453696214690f[m
+Author: Valerie Schipka <schipka@theobald.local>
+Date:   Fri Jul 19 08:57:11 2024 +0200
+
+    XU: script expressions
+    
+    Extraction.Name is now supported in Custom SQL statements
+
+[33mcommit dfdf2fa826ab211124a8f874b396e9dce03bee9b[m
+Author: Charles "Monty" Burns <edv@theobald-software.com>
+Date:   Thu Jul 18 15:23:23 2024 +0200
+
+    Updated XtractUniversal version history
+
+[33mcommit 7c5e1acc41b08672f596cd4ccc2b75319037f563[m
+Author: Charles "Monty" Burns <edv@theobald-software.com>
+Date:   Thu Jul 18 15:19:40 2024 +0200
+
+    Updated Yunio version history
+
+[33mcommit f02e58e8e30ffdbf264f3e0453a0e7cf1059e518[m
+Author: Charles "Monty" Burns <edv@theobald-software.com>
+Date:   Thu Jul 18 15:17:00 2024 +0200
+
+    Updated TheobaldServer version history
+
+[33mcommit c877d8b5a9c23ca300a97c092d27cf20bd76abd2[m
+Author: Valerie Schipka <schipka@theobald.local>
+Date:   Thu Jul 18 14:35:06 2024 +0200
+
+    fix version history header
+
+[33mcommit b52b7ba4c8556e2b2b45bfb6880da34b4ed1d5b7[m
+Author: Valerie Schipka <schipka@theobald.local>
+Date:   Thu Jul 18 14:19:58 2024 +0200
+
+    editorial guide update admonition, video, grids
+
+[33mcommit 04b21e712e0f92f7a92e3769db78a7238abb59a1[m
+Merge: c41604ffc 0a3a73573
+Author: Valerie Schipka <schipka@theobald.local>
+Date:   Thu Jul 18 13:34:06 2024 +0200
+
+    Merge branch 'main' of https://github.com/theobald-software/helpcenter.theobald-software.github.io
+
+[33mcommit c41604ffc5f6df056855b45374c06963f1441a46[m
+Author: Valerie Schipka <schipka@theobald.local>
+Date:   Thu Jul 18 13:33:45 2024 +0200
+
+    small changes
+
+[33mcommit 0a3a73573189eb7472488958fbc9d8ecf6524987[m
+Merge: fec7ab8bf 6a9e6969f
+Author: Maia <maia.reichert-baisch@theobald-software.com>
+Date:   Thu Jul 18 13:31:32 2024 +0200
+
+    Merge branch 'main' of https://github.com/theobald-software/helpcenter.theobald-software.github.io
+
+[33mcommit fec7ab8bfbe9c6e7118d6e0a443f8366a71fed89[m
+Author: Maia <maia.reichert-baisch@theobald-software.com>
+Date:   Thu Jul 18 13:31:28 2024 +0200
+
+    edit
+
+[33mcommit 6a9e6969ffd3f0922c148ba6771cb2bcd3c5de2b[m
+Author: Valerie Schipka <schipka@theobald.local>
+Date:   Thu Jul 18 13:21:27 2024 +0200
+
+    small changes
+
+[33mcommit 212338def68302e0943859cec10f6e45e52c18a1[m
+Author: Valerie Schipka <schipka@theobald.local>
+Date:   Thu Jul 18 13:12:10 2024 +0200
+
+    editorial guide cleanup + updates
+    
+    cleanup of old version history / release notes
+    list of variables updated
+    new page for symlinks
+
+[33mcommit 964f9530225feee85d4680ba9bd7cf056bc1a284[m
+Author: Maia <maia.reichert-baisch@theobald-software.com>
+Date:   Thu Jul 18 10:42:46 2024 +0200
+
+    edit
+
+[33mcommit 09b92a9d34d3f9979c1485ca04fff5fa6fc537da[m
+Author: Maia <maia.reichert-baisch@theobald-software.com>
+Date:   Thu Jul 18 10:36:15 2024 +0200
+
+    sample workflows
+
+[33mcommit 9571866eeb31e1be5856a1b8c6f158a1b12b112a[m[33m ([m[1;32mNET8-Requirements[m[33m)[m
+Author: Valerie Schipka <schipka@theobald.local>
+Date:   Thu Jul 18 08:52:14 2024 +0200
+
+    framework
+
+[33mcommit 4e3b19fc6da55ceb806c3c9fd3d229c9e1adeeec[m
+Author: Valerie Schipka <schipka@theobald.local>
+Date:   Thu Jul 18 08:45:42 2024 +0200
+
+    NET8 Requirements
+
+[33mcommit 7ace459ab4d73d98e365e14f1df4ac9cd7eeb55f[m
+Author: Valerie Schipka <schipka@theobald.local>
+Date:   Thu Jul 18 08:27:55 2024 +0200
+
+    small correction
+
+[33mcommit f2101cb19da9bb079fe21aaece69fc1c7bf39799[m
+Author: Valerie Schipka <schipka@theobald.local>
+Date:   Thu Jul 18 08:22:18 2024 +0200
+
+    small change
+
+[33mcommit 86b67cb7736a1189fc230aa91273d913fbca1155[m
+Author: Valerie Schipka <schipka@theobald.local>
+Date:   Thu Jul 18 08:16:55 2024 +0200
+
+    DeltaQ Update Mode
+
+[33mcommit 516c10a7d26f88ba943c17114c3e88e33da742be[m
+Author: Charles 'Monty' Burns <edv@theobald-software.com>
+Date:   Wed Jul 17 18:17:06 2024 +0200
+
+    Updated version history for YunIO
+
+[33mcommit d1af44306fc98f4e9a61da89f26b73801824da0e[m
+Author: Charles 'Monty' Burns <edv@theobald-software.com>
+Date:   Wed Jul 17 18:16:42 2024 +0200
+
+    Updated version history for XtractUniversal
+
+[33mcommit da84a30b14067cf347624f2f9a63a7e667d16c78[m
+Author: Charles 'Monty' Burns <edv@theobald-software.com>
+Date:   Wed Jul 17 18:16:12 2024 +0200
+
+    Updated version history for XtractIS
+
+[33mcommit f04689ed30226bf35be32fe55c6acd5569435f67[m
+Author: Charles 'Monty' Burns <edv@theobald-software.com>
+Date:   Wed Jul 17 18:15:48 2024 +0200
+
+    Updated version history for XtractForAlteryx
+
+[33mcommit 77ce6076f120d52f9a36a12d2d965e1655ddb4dd[m
+Author: Charles 'Monty' Burns <edv@theobald-software.com>
+Date:   Wed Jul 17 18:15:12 2024 +0200
+
+    Updated version history for BoardConnector
+
+[33mcommit f8f2c2aa9a3f5d289ca523c13b6b47c6321292c4[m
+Author: Valerie Schipka <schipka@theobald.local>
+Date:   Wed Jul 17 14:18:32 2024 +0200
+
+    small change
+
+[33mcommit cb4889806ca10c32d245c25fed0f45a319fa6d18[m
+Author: Valerie Schipka <schipka@theobald.local>
+Date:   Wed Jul 17 14:16:15 2024 +0200
+
+    small changes
+
+[33mcommit 554be71c35260c1bd1c5351c4c98c96dc3522b64[m
+Author: Charles "Monty" Burns <edv@theobald-software.com>
+Date:   Wed Jul 17 10:37:17 2024 +0200
+
+    Updated XtractUniversal version history
+
+[33mcommit 4927ce3fd5f2eec1ac0d682165878bbc9d3fd2e9[m
+Author: Charles "Monty" Burns <edv@theobald-software.com>
+Date:   Wed Jul 17 10:23:17 2024 +0200
+
+    Updated BOARDConnector version history
+
+[33mcommit 910a935484d9a3fce3479b4ca0387784179fe309[m
+Author: Valerie Schipka <schipka@theobald.local>
+Date:   Wed Jul 17 09:35:55
