@@ -25,7 +25,7 @@
 
     ---
 
-    Breaking Changes: <br>Obsolete APIs in the R3Connection class have been removed, see [Release Notes](https://helpcenter.theobald-software.com/release-notes/ERPConnect-7.6.0/).
+    Breaking Changes: <br>Obsolete APIs in the R3Connection class have been removed, see [Release Notes](https://helpcenter.theobald-software.com/erpconnect/changelog/?product=ERPConnect&version=7.6.0.0).
 
     ---
 
