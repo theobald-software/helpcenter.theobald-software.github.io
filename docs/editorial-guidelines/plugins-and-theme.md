@@ -1,5 +1,5 @@
 ---
-title: Plugins & Theme Upgrade
+title: Plugins & Theme
 ---
 
 Check for popular plugins: [Best-of Catalog](https://github.com/best-of-lists/best-of)<br>

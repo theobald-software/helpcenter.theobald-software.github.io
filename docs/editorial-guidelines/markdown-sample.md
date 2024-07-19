@@ -664,27 +664,6 @@ Downside: broken links do not cause errors or warnings when building the project
 		
 	</div>
 
-### Keyboard Keys
-
-Keyboard keys can be styled.
-To do this, a key or combination of key presses is surrounded by ++ with each key press separated with a single +.
-
-For a list of supported keys, see [Extending/Modifying Key-Map Index](https://facelessuser.github.io/pymdown-extensions/extensions/keys/#extendingmodifying-key-map-index)
-
-```markdown
-++f1++ ++enter++ ++caps-lock++ ++escape++ ++alt++ ++alt-graph++ ++control++ ++shift++ ++windows++ ++c++ ++v++
-
-Example: ++control+shift+escape++ opens the task manager.
-```
-
-<div class="result" markdown>
-
-++f1++ ++enter++ ++caps-lock++ ++escape++ ++alt++ ++alt-graph++ ++control++ ++shift++ ++windows++ ++c++ ++v++
-
-Example: ++control+shift+escape++ opens the task manager.
-
-</div>
-
 ### Metadata (Conditional Text)
 
 Metadata can be used in [resusable texts](#include-reusable-text) to change text and screenshots according to the product or component that the content is injected to.

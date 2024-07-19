@@ -3,10 +3,9 @@ nav:
     - markdown-sample.md
     - screenshot-conventions.md
     - Administration:
-        - setup.md
-        - symlinks.md
         - plugins-and-theme.md
         - files-and-folders.md
+        - symlinks.md
         - pages-and-articles.md
         - glossary.md
         - to-do-lists.md
