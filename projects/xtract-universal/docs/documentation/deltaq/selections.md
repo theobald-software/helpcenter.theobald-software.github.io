@@ -1,6 +1,6 @@
 ---
 title: Selections
-description: Datasource parameters
+description: Filter the data that is returned by a DeltaQ datasource.
 ---
 
 This page shows how to filter the data that is extracted by the {{ deltaq }} {{ component }}.

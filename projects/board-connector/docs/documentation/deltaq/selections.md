@@ -1,13 +1,17 @@
 ---
 title: Selections
-description: Datasource parameters
+description: Filter the data that is returned by a DeltaQ datasource.
 ---
 
 This page shows how to filter the data that is extracted by the {{ deltaq }} {{ component }}.
 
 {% include "components/selections.md" %}
 
-{% include "components/deltaq/script-expressions.md" %}
+### Script Expressions for DeltaQ
+
+Script expressions are usually used to determine a dynamic date based on the current date. 
+
+--8<-- "components/table/where-clause-syntax.md:script"
 
 ### Data Format
 
