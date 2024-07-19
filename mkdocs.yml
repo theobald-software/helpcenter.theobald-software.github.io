@@ -115,6 +115,7 @@ markdown_extensions:
   - pymdownx.tabbed:
       alternate_style: true
   - tables
+  - pymdownx.keys
 # notes, warnings, etc
   - admonition
   - pymdownx.details
