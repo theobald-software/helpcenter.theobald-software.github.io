@@ -49,7 +49,7 @@ Check out the [Microsoft SQL Server example](microsoft-sql-server.md#custom-sql-
 
 <!--- --8<-- [start:script] -->
 
-You can use script expressions for Custom SQL commands.<br>
+You can use script expressions for Custom SQL commands.
 The following Xtract Universal specific custom script expressions are supported: 
 
 | Input                                                   | Description|

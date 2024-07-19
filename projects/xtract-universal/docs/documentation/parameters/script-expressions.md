@@ -20,17 +20,25 @@ Script expressions can be used in the following scenarios:
 
 ### List of available Script Expressions
 
-{% include "parameters/file-name-script-expressions.md" %}
+=== "File Names"
 
-{% include "parameters/folder-script-expressions.md" %}
+	--8<-- "parameters/file-name-script-expressions.md"
 
-#### Use Script Expressions in Custom SQL Statements
+=== "Folder Paths"
 
---8<-- "destinations/custom-sql-statements.md:script"
+	--8<-- "parameters/folder-script-expressions.md"
 
-#### Use Script Expressions as Selection Parameters in Table and DeltaQ
+=== "Custom SQL Statements"
 
-Script expressions are usually used to determine a dynamic date based on the current date. 
-When using script expressions in a [WHERE Clause](../table/where-clause.md/#script-expressions), the value must be entered in single quotation marks.
+	#### Use Script Expressions in Custom SQL Statements
 
---8<-- "components/table/where-clause-syntax.md:script"
+	--8<-- "destinations/custom-sql-statements.md:script"
+
+=== "Selections in Table & DeltaQ"
+
+	#### Use Script Expressions as Selection Parameters in Table and DeltaQ
+
+	Script expressions are usually used to determine a dynamic date based on the current date. 
+	When using script expressions in a [WHERE Clause](../table/where-clause.md/#script-expressions), the value must be entered in single quotation marks.
+
+	--8<-- "components/table/where-clause-syntax.md:script"
