@@ -1,6 +1,6 @@
 ---
 title: Script Expressions
-description: Available Script Expressions
+description: How to dynamize extractions with custom Script Expressions offered by Board Connector.
 ---
 
 Script expressions offer a way of adding dynamic parameters to {{ productName }}. 
