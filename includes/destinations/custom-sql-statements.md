@@ -47,16 +47,21 @@ Check out the [Microsoft SQL Server example](microsoft-sql-server.md#custom-sql-
 
 ### Use Script Expressions
 
-You can use script expressions for the Custom SQL commands.<br>
+<!--- --8<-- [start:script] -->
+
+You can use script expressions for Custom SQL commands.<br>
 The following Xtract Universal specific custom script expressions are supported: 
 
 | Input                                                   | Description|
 |:--------------------------------------------------------|:-----------|
-|```#{Extraction.TableName }# ```|  Name of the database table extracted data is written to|
-|```#{Extraction.RowsCount }# ```| Count of the extracted rows |
-|```#{Extraction.RunState}# ```|  Status of the extraction (Running, FinishedNoErrors, FinishedErrors) |
-|```#{(int)Extraction.RunState}# ```|  Status of the extraction as number (2 = Running, 3 = FinishedNoErrors, 4 = FinishedErrors) |
-|```#{Extraction.Timestamp}# ```|  Timestamp of the extraction  |
+|<pre>#{Extraction.ExtractionName}#</pre> | Name of the extraction. If the extraction is part of an [extraction group](../organize-extractions.md), the name of the extraction group is included in the extraction name, e.g, `group,extraction`, `Tables,KNA1`. |
+|<pre>#{Extraction.TableName }#</pre> |  Name of the database table extracted data is written to. |
+|<pre>#{Extraction.RowsCount }#</pre> | Count of the extracted rows. |
+|<pre>#{Extraction.RunState}#</pre> |  Status of the extraction (Running, FinishedNoErrors, FinishedErrors). |
+|<pre>#{(int)Extraction.RunState}#</pre> |  Status of the extraction as number (2 = Running, 3 = FinishedNoErrors, 4 = FinishedErrors). |
+|<pre>#{Extraction.Timestamp}#</pre> |  Timestamp of the extraction.  |
+
+<!--- --8<-- [end:script] -->
 
 For more information, see [Script Expressions](../parameters/script-expressions.md).
 

@@ -12,23 +12,9 @@ Script expressions can be used as selection parameters for [{{ table }}](../tabl
 
 {% include "parameters/script-expressions.md" %}
 
+### List of available Script Expressions
 
-#### Use Script Expressions as Selection Parameters in Table and DeltaQ
+Script expressions are usually used to determine a dynamic date based on the current date. 
+When using script expressions in a [WHERE Clause](../table/where-clause.md/#script-expressions), the value must be entered in single quotation marks.
 
-Script expressions are usually used to determine a dynamic date based on the current date. <br>
-When using script expressions in WHERE clauses, the value must be entered in single quotation marks.
-
-**Syntax:**
-
-```
-[Field_name][Space][Operator][Space]'#[Script-Expression]#'
-```
-
-**Examples:**
-
-|   Input                         | Output                                                                         | Description              |
-|:--------------------------------------|:------------------------------------------------------------------------------|:--------------------|
-|```#{ DateTime.Now.ToString("yyyyMMdd") }#```                                       | yyyyMMdd | Current date in SAP format          |
-|```#{ String.Concat(DateTime.Now.Year.ToString(), "0101") }#```                     | yyyy0101 | Current year concatenated with "0101"           |
-|```#{ String.Concat(DateTime.Now.ToString("yyyy"), "0101") }#```                    | yyyy0101 | Current year concatenated with "0101"            |
-|```#{ String.Concat(DateTime.Now.ToString("yyyyMMdd").Substring(0,4), "0101") }#``` | yyyy0101 | Current year concatenated with "0101"           |
+--8<-- "components/table/where-clause-syntax.md:script"

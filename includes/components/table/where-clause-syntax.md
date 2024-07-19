@@ -69,35 +69,40 @@ For more details on the OpenSQL syntax, see [SAP Documentation: Select WHERE](ht
 
 ### Script Expressions
 
-The **[Text Mode]** of the WHERE clause supports script expressions.
-They are usually used to determine a dynamic date based on the current date. 
+The **[Text Mode]** of the WHERE clause supports script expressions. 
+Script expressions are usually used to determine a dynamic date based on the current date. 
 When using script expressions in a WHERE Clause, the value must be entered in single quotation marks.
-
-For more information on script expression, see [Script Expressions](../parameters/script-expressions.md).
 
 **Syntax:**
 
 ```
 [Table]~[Column][Space][Operator][Space]'#[Script-Expression]#'
 ```
+<div class="result" markdown>
+
+`BKPF~BUDAT >= '#{DateTime.Now.AddYears(-5).ToString("yyyyMMdd")}#'`
+
+</div>
 
 **Examples:**
 
-```
-BKPF~BUDAT >= '#{DateTime.Now.AddYears(-5).ToString("yyyyMMdd")}#'
-```
+<!--- --8<-- [start:script] -->
 
-|   Input                         | Output                                                                         | Description              |
-|:--------------------------------------|:------------------------------------------------------------------------------|:--------------------|
-|```#{ DateTime.Now.ToString("yyyyMMdd") }#```                                       | yyyyMMdd | Current date in SAP format          |
-|```#{ String.Concat(DateTime.Now.Year.ToString(), "0101") }#```                     | yyyy0101 | Current year concatenated with "0101"           |
-|```#{ String.Concat(DateTime.Now.ToString("yyyy"), "0101") }#```                    | yyyy0101 | Current year concatenated with "0101"            |
-|```#{ String.Concat(DateTime.Now.ToString("yyyyMMdd").Substring(0,4), "0101") }#``` | yyyy0101 | Current year concatenated with "0101"           |
+|   Input                         | Description              |
+|:--------------------------------------|:--------------------|
+|<pre>#{ DateTime.Now.ToString("yyyyMMdd") }#</pre>                                       | Current date in SAP format (yyyyMMdd)         |
+|<pre>#{ String.Concat(DateTime.Now.Year.ToString(), "0101") }#</pre>                     | Current year concatenated with "0101" (yyyy0101)          |
+|<pre>#{ String.Concat(DateTime.Now.ToString("yyyy"), "0101") }#</pre>                    | Current year concatenated with "0101" (yyyy0101)          |
+|<pre>#{ String.Concat(DateTime.Now.ToString("yyyyMMdd").Substring(0,4), "0101") }#</pre> | Current year concatenated with "0101" (yyyy0101)          |
 
-<!--- Script Expressions are not supported by Xtract IS and Xtract for Alteryx-->
+<!--- --8<-- [end:script] -->
+
+For more information on script expression, see [Script Expressions](../parameters/script-expressions.md).
+
 {% endif %} 
 
 {% if page.meta.product != "yunio" %}
+
 ### Subqueries
 
 !!! note

@@ -8,8 +8,15 @@ Selections limit the result set of the {{ deltaq }} {{ component }} to extract o
 
 {% include "components/selections.md" %}
 
-{% include "components/deltaq/script-expressions.md" %}
+### Script Expressions for DeltaQ
+
+Script expressions are usually used to determine a dynamic date based on the current date. 
+
+--8<-- "components/table/where-clause-syntax.md:script"
+
+For more information on script expression, see [Script Expressions](../parameters/script-expressions.md).
 
 ### Data Format
 
 {% include "components/settings/sap-data-format.md"  %}
+
