@@ -7,10 +7,10 @@ This page contains to-do lists for documentation projects.
 ### HelpCenter
 
 - [ ] Troubleshooting
-	- [x] update / define which troubleshooting articles to include in the HelpCenter (new tag #hec1 for ERPConnect articles)
+	- [] update / define which troubleshooting articles to include in the HelpCenter
 	- [ ] automate article list (dev)
 - [ ] Add Google Tag Manager
-- [ ] Add Google Tag Manager
+- [ ] Add Copilot Chatbots
 
 #### Optional
 
