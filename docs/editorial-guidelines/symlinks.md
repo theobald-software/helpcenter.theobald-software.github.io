@@ -16,10 +16,15 @@ The following symlinks are required for building previews of the HelpCenters:
 |-----------------|-----------------|
 | `[product name]/overrides/` | `mklink /D documentation ..\..\..\overrides\.icons` |
 | `[product name]/`            | `mklink /D includes ..\..\includes` |
-| `[product-name]/docs/assets/` | `mklink /D articles ..\..\..\..\files` |
+| `[product-name]/docs/assets/` | `mklink /D files ..\..\..\..\files` |
 | `[product-name]/docs/assets/images/` | `mklink /D articles ..\..\..\..\..\images\articles` |
 | `[product-name]/docs/assets/images/` | `mklink /D documentation ..\..\..\..\..\images\documentation` |
 | `[product-name]/docs/assets/images/` | `mklink /D logos ..\..\..\..\..\images\logos` |
+
+
+Make sure to correctly count the number of folders to jump up the file tree.
+
+![symlinks-folderstep](../assets/images/editorial-guide/symlinks.png)
 
 ### Create Symlinks in Windows
 
@@ -36,6 +41,7 @@ Delete these files, before creating local symlinks.
 	![symlinks-console](../assets/images/editorial-guide/symlinks-console.png)
 	
 4. Double-click the created symlink. If the symlink is set correctly, the symlink folder opens and the files from the target folder are available.
+
 
 Repeat the steps for all source folders and products.<br>
 For more information on symlinks, see [Complete Guide to Symbolic Links](https://www.howtogeek.com/16226/complete-guide-to-symbolic-links-symlinks-on-windows-or-linux/)
