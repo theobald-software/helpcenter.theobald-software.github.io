@@ -1,14 +1,14 @@
 ---
 title: Installation
 ---
-
-MKDocs: OpenSource framework to create static websites (Jekyll alternative with a focus on documentation).
-Material: a theme for MKDocs that comes with multiple useful functionalities and plugins.
+### Definitions
+MKDocs - OpenSource framework to create static websites (Jekyll alternative with a focus on documentation). <br>
+Material- a theme for MKDocs that comes with multiple useful functionalities and plugins.
 
 
 ### Install MkDocs and Material Theme
 
-How to install the mkdocs framework and its main theme:
+How to install the MKDocs framework and its main theme:
 
 1. Install [git](https://git-scm.com/download/win).
 2. Install [Python](https://www.python.org/downloads/) (recommended version V 3.11, because of possible incompatibilities with latest versions).
@@ -157,6 +157,7 @@ Congratulations! The website is build in the folder ‘site’ and can be previe
 	When building previews, the console prints warnings about missing content / images if [symlinks](symlinks.md) are missing or broken.
 	Because symlinks are not automatically created when pulling content from the repository, they need to be created manually on your local Windows machine.
 
+****
 
 ### Related Links
 
