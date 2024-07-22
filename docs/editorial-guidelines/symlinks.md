@@ -22,9 +22,10 @@ The following symlinks are required for building previews of the HelpCenters:
 | `[product-name]/docs/assets/images/` | `mklink /D logos ..\..\..\..\..\images\logos` |
 
 
-Make sure to correctly count the number of folders to jump up the file tree.
+Make sure to correctly count the number of folders to jump up the file tree (each number represents the amount of "..\" within the symlink).
 
-![symlinks-folderstep](../assets/images/editorial-guide/symlinks.png)
+![symlinks-folderstep](../assets/images/editorial-guide/symlink.png)
+
 
 ### Create Symlinks in Windows
 
