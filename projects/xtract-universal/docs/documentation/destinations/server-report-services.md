@@ -85,7 +85,7 @@ The following section contains step-by-step instructions on how to access SAP da
 
 #### Prerequisites in Xtract Universal
 
-To make SAP data available in the SSRS environment, [create an extraction](../../getting-started.md)/#create-an-extraction in the Xtract Universal Designer.
+To make SAP data available in the SSRS environment, [create an extraction](../../getting-started.md/#create-an-extraction) in the Xtract Universal Designer.
 Make sure the {{ page.meta.title }} destination is [assigned](#assign-the-power-bi-report-server-sql-server-reporting-services-destination-to-an-extraction) to the extraction.
 
 
