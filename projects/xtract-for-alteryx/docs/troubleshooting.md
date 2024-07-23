@@ -32,8 +32,10 @@ hide:
 - [MDX parser does not start](https://support.theobald-software.com/helpdesk/KB/View/20073-mdx-parser-does-not-start)
 - [Missing SAP authority rights for data replication.](https://support.theobald-software.com/helpdesk/KB/View/17141-missing-sap-authority-rights-for-data-replication-)
 - [No more storage space available for extending an internal table](https://support.theobald-software.com/helpdesk/KB/View/20282-no-more-storage-space-available-for-extending-an-internal-table)
+- [Non-Unicode destinations are not supported by SAP](https://support.theobald-software.com/helpdesk/KB/View/17021-non-unicode-destinations-are-not-supported-by-sap)
 - [OPTION_NOT_VALID running table extractions error after an SAP Update](https://support.theobald-software.com/helpdesk/KB/View/13952-option-not-valid-running-table-extractions-error-after-an-sap-update)
 - [(RFC_ABAP_RUNTIME_FAILURE): ASSIGN_BASE_WRONG_ALIGNMENT - Error in ASSIGN assignment in program SAPLSDTX](https://support.theobald-software.com/helpdesk/KB/View/15517--rfc-abap-runtime-failure-assign-base-wrong-alignment-error-in-assign-assignment-in-program-saplsdtx)
+- [RFC_ERROR_SYSTEM_FAILURE - A table or alias name in the FROM clause is not unique](https://support.theobald-software.com/helpdesk/KB/View/14204-rfc-error-system-failure-a-table-or-alias-name-in-the-from-clause-is-not-unique-)
 - [RFC_ERROR_SYSTEM_FAILURE - Illegal access to the right table of a LEFT OUTER JOIN.](https://support.theobald-software.com/helpdesk/KB/View/14204-rfc-error-system-failure-a-table-or-alias-name-in-the-from-clause-is-not-unique-)
 - [SAP Query Metadata/result mismatch](https://support.theobald-software.com/helpdesk/KB/View/17077-sap-query-metadata-result-mismatch)
 - [Search for new Tables and/or Table extractions are empty](https://support.theobald-software.com/helpdesk/KB/View/14139-search-for-new-tables-and-or-table-extractions-are-empty)
@@ -46,4 +48,3 @@ hide:
 - [Xtract Table - Time Limit Exceeded](https://support.theobald-software.com/helpdesk/KB/View/14414-xtract-table-time-limit-exceeded)
 
 </div>
-

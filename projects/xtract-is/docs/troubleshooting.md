@@ -12,6 +12,7 @@ hide:
 
 <div class="mdx-columns" markdown>
 
+- [DeltaQ Troubleshooting Guide](https://support.theobald-software.com/helpdesk/KB/View/14424-deltaq-troubleshooting-guide)
 - [How to activate tracing in {{ productName }}](https://support.theobald-software.com/helpdesk/KB/View/14455-how-to-activate-tracing-for-xtract-products)
 - [Required Support Information for Xtract IS](https://support.theobald-software.com/helpdesk/KB/View/14458-required-support-information-for-xtract-is)
 
@@ -36,6 +37,7 @@ hide:
 - [Non-Unicode destinations are not supported by SAP](https://support.theobald-software.com/helpdesk/KB/View/17021-non-unicode-destinations-are-not-supported-by-sap)
 - [OPTION_NOT_VALID running table extractions error after an SAP Update](https://support.theobald-software.com/helpdesk/KB/View/13952-option-not-valid-running-table-extractions-error-after-an-sap-update)
 - [(RFC_ABAP_RUNTIME_FAILURE): ASSIGN_BASE_WRONG_ALIGNMENT - Error in ASSIGN assignment in program SAPLSDTX](https://support.theobald-software.com/helpdesk/KB/View/15517--rfc-abap-runtime-failure-assign-base-wrong-alignment-error-in-assign-assignment-in-program-saplsdtx)
+- [RFC_ERROR_SYSTEM_FAILURE - A table or alias name in the FROM clause is not unique](https://support.theobald-software.com/helpdesk/KB/View/14204-rfc-error-system-failure-a-table-or-alias-name-in-the-from-clause-is-not-unique-)
 - [RFC_ERROR_SYSTEM_FAILURE - Illegal access to the right table of a LEFT OUTER JOIN.](https://support.theobald-software.com/helpdesk/KB/View/14204-rfc-error-system-failure-a-table-or-alias-name-in-the-from-clause-is-not-unique-)
 - [SAP Query Metadata/result mismatch](https://support.theobald-software.com/helpdesk/KB/View/17077-sap-query-metadata-result-mismatch)
 - [Search for new Tables and/or Table extractions are empty](https://support.theobald-software.com/helpdesk/KB/View/14139-search-for-new-tables-and-or-table-extractions-are-empty)
@@ -58,7 +60,10 @@ hide:
 
 - [Background Extraction Job in SAP does not stop when stopping the extraction in SSIS](https://support.theobald-software.com/helpdesk/KB/View/15403-background-extraction-job-in-sap-does-not-stop-when-stopping-the-extraction-in-ssis)
 - [ERPConnect.InvalidParameterException: The following properties have invalid values: Password](https://support.theobald-software.com/helpdesk/KB/View/15181-erpconnect-invalidparameterexception-the-following-properties-have-invalid-values-password)
-- [System.IO.FileNotFoundException while executing deployed SSIS-packages or -projects](https://support.theobald-software.com/helpdesk/KB/View/19914-system-io-filenotfoundexception-while-executing-deployed-ssis-packages-or-projects)
 - [The RPC server is unavailable - Exception from HRESULT: 0x800706BA](https://support.theobald-software.com/helpdesk/KB/View/15757-the-rpc-server-is-unavailable-exception-from-hresult-0x800706ba)
 
 </div>
+
+<!---
+- [System.InvalidOperationException: port not set](https://support.theobald-software.com/helpdesk/KB/View/20857-system-invalidoperationexception-port-not-set)
+-->
