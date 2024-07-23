@@ -217,12 +217,11 @@ S_BTCH_JOB       JOBGROUP=*; JOBACTION=RELE
 !!! note
     The necessary transport request for function group *ZXTRACTABAP* is located in the following path: ```C:\Program Files\[XtractProduct]\ABAP\Report\Z_XTRACT_IS_REMOTE_REPORT-transport.zip``` of the default installation.
 
-
-[:material-download-circle: Download SAP profile for Report](site:assets/files/sap_roles/ZXREPORT.SAP){ .md-button .md-button--primary }
-
 For more information on how to authorize access to reports, refer to the following knwoledge base articles:
 - [Authorize Access to Reports via Authorization Groups](authorize-access-to-specific-reports.md)
 - [Create the Custom Authorization Object Z_TS_PROG](create-the-custom-authority-object-z-ts-prog.md)
+
+[:material-download-circle: Download SAP profile for Report](site:assets/files/sap_roles/ZXREPORT.SAP){ .md-button .md-button--primary }
 
 {% endif %}
 
