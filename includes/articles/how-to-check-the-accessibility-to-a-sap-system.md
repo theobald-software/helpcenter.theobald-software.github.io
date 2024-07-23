@@ -2,7 +2,7 @@
 The following article shows how to check the accessibility of an SAP system using the [paping.exe](https://code.google.com/archive/p/paping) tool.
 
 Sometimes the firewall is blocking the traffic to the SAP System. This could be a local firewall, but also a firewall in the destination network.
-You can use the paping.exe tool to ping the port and to check if the firewall is open.
+You can use the [paping.exe](https://code.google.com/archive/p/paping/) tool to ping the port and to check if the firewall is open.
 
 ### Ping the SAP System
 
