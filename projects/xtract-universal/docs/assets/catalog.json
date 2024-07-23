@@ -1,5 +1,27 @@
 [
   {
+    "Version": "6.8.14.2",
+    "LegacyReleaseDate": "2024-07-22 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "DeltaQ",
+        "Message": "Fixed a race condition which caused sporadically an error when multiple DeltaQ extractions were running simultaneously."
+      }
+    ]
+  },
+  {
+    "Version": "6.8.14.0",
+    "LegacyReleaseDate": "2024-07-18 17:12:25Z",
+    "Changes": [
+      {
+        "Product": "XtractUniversal",
+        "Component": "Destinations",
+        "Message": "Database Destinations: Added #{Extraction.ExtractionName}# context for custom SQL statements and support for script extractions in row processing step"
+      }
+    ]
+  },
+  {
     "Version": "6.8.13.2",
     "LegacyReleaseDate": "2024-07-15 00:00:00Z",
     "Changes": [
