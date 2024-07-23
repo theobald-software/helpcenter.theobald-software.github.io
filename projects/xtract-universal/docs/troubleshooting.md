@@ -15,13 +15,14 @@ hide:
 
 - [Proxy server settings in {{ productName }}](https://support.theobald-software.com/helpdesk/KB/View/13367-proxy-server-settings-in-xtract-universal-and-board-connector)
 - [How to activate tracing in {{ productName }}](https://support.theobald-software.com/helpdesk/KB/View/14455-how-to-activate-tracing-for-xtract-products)
+- [Non-Unicode destinations are not supported by SAP](https://support.theobald-software.com/helpdesk/KB/View/17021-non-unicode-destinations-are-not-supported-by-sap)
 - [Required Support Information for Xtract Universal](https://support.theobald-software.com/helpdesk/KB/View/14457-required-support-information-for-xtract-universal)
 
 </div>
 
 ---
 
-### SAP Troubleshooting
+### SAP - Troubleshooting
 
 <div class="mdx-columns" markdown>
 
@@ -36,7 +37,6 @@ hide:
 - [MDX parser does not start](https://support.theobald-software.com/helpdesk/KB/View/20073-mdx-parser-does-not-start)
 - [Missing SAP authority rights for data replication.](https://support.theobald-software.com/helpdesk/KB/View/17141-missing-sap-authority-rights-for-data-replication-)
 - [No more storage space available for extending an internal table](https://support.theobald-software.com/helpdesk/KB/View/20282-no-more-storage-space-available-for-extending-an-internal-table)
-- [Non-Unicode destinations are not supported by SAP](https://support.theobald-software.com/helpdesk/KB/View/17021-non-unicode-destinations-are-not-supported-by-sap)
 - [OPTION_NOT_VALID running table extractions error after an SAP Update](https://support.theobald-software.com/helpdesk/KB/View/13952-option-not-valid-running-table-extractions-error-after-an-sap-update)
 - [SAP Query Metadata/result mismatch](https://support.theobald-software.com/helpdesk/KB/View/17077-sap-query-metadata-result-mismatch)
 - [Search for new Tables and/or Table extractions are empty](https://support.theobald-software.com/helpdesk/KB/View/14139-search-for-new-tables-and-or-table-extractions-are-empty)
@@ -53,7 +53,7 @@ hide:
 
 ---
  
-### Xtract Universal Troubleshooting
+### Xtract Universal - Troubleshooting
 
 <div class="mdx-columns" markdown>
 - [Copy Command for Snowflake Destination failing / TheoReadTableException: An error occured in PROCESS_PACKAGE callback](https://support.theobald-software.com/helpdesk/KB/View/21807-copy-command-for-snowflake-destination-failing)
