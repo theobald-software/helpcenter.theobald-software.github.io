@@ -12,7 +12,7 @@ The access to reports is granted based on the name of the report.
 2. Expand the *Create* menu and click **[Authorization Object]**. The window "Create Authorization Object" opens.<br>
 ![report-authorization-object](site:assets/images/articles/report/sap-authority-object.png)
 3. Enter the following values:<br>
-**Object:** Z_TS_PRO<br>
+**Object:** Z_TS_PROG<br>
 **Text:** Theobald Software Report Authorization<br>
 ![report-create-authorization-object](site:assets/images/articles/report/sap-create-authorization-object.png)
 4. Click **[Continue]** to enable editing of the section *Authorization fields*.
@@ -23,3 +23,5 @@ The access to reports is granted based on the name of the report.
 
 #### Related Links
 - [Authorize Access to Reports via Authorization Groups](./authorize-access-to-specific-reports.md)
+- [SAP Authorization Objects for Reports](../documentation/setup-in-sap/sap-authority-objects.md/#query)
+- [Documentation: Report](documentation/report/index.md)

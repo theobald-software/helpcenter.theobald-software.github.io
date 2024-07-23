@@ -12,7 +12,7 @@ Access is then granted through the S_PROGRAM authorization object, see [SAP Note
 5. Edit or create a user role you want to grant access to (transaction code PFCG).
 6. Manually assign the authorization object S_PROGRAM to the user role.<br>
 ![report-manual-authorization-object](site:assets/images/articles/report/manual-authorization-object.png)
-7. Select the action **SUBMIT** in the S_PROGRAM object field *P_ACTION*.
+7. Select the actions **SUBMIT** and **BTCSUBMIT ** in the S_PROGRAM object field *P_ACTION*.
 8. Assign the same authorization group that is assigned to the report to the S_PROGRAM object field *P_GROUP*. 
 9. Save and generate the authorization.
 10. Assign the user role to users.
@@ -21,3 +21,5 @@ Access is then granted through the S_PROGRAM authorization object, see [SAP Note
 
 #### Related Links
 - [Create the Custom Authorization Object Z_TS_PROG](create-the-custom-authority-object-z-ts-prog.md)
+- [SAP Authorization Objects for Reports](../documentation/setup-in-sap/sap-authority-objects.md/#query)
+- [Documentation: Report](documentation/report/index.md)

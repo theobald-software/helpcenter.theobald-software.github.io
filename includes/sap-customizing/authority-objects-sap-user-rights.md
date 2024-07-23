@@ -220,6 +220,10 @@ S_BTCH_JOB       JOBGROUP=*; JOBACTION=RELE
 
 [:material-download-circle: Download SAP profile for Report](site:assets/files/sap_roles/ZXREPORT.SAP){ .md-button .md-button--primary }
 
+For more information on how to authorize access to reports, refer to the following knwoledge base articles:
+- [Authorize Access to Reports via Authorization Groups](authorize-access-to-specific-reports.md)
+- [Create the Custom Authorization Object Z_TS_PROG](create-the-custom-authority-object-z-ts-prog.md)
+
 {% endif %}
 
 ### Table
