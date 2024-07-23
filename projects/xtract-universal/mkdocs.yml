@@ -101,12 +101,12 @@ plugins:
       cards_layout: default
       cards_layout_options:
         background_color: "#98892C"
-  - search:
-      lang: en
+  - search
+      #lang: en
       #separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
-      pipeline:
+      #pipeline:
         #- stemmer
-        - stopWordFilter
+        #- stopWordFilter
   - typeset # preserve format of titles and headlines in navigation and toc
   - awesome-pages # define navigation in .pages files
   - macros:
