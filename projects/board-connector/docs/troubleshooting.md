@@ -6,7 +6,7 @@ hide:
   - tags
 ---
 
-![img](site:assets/images/logos/theo-thumbs.png){ .lg .middle width="30px"} This section contains a list of troubleshooting articles.
+![img](site:assets/images/logos/theo-thumbs.png){ .lg .middle width="30px"} This section contains a list of troubleshooting articles that show you how to solve common errors.
 
 !!! note
 	Some troubleshooting articles refer to or use screenshots from the Theobald Software product "Xtract Universal".
