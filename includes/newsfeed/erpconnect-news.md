@@ -11,16 +11,6 @@
 
     :material-clock-time-two-outline: 2024-08-08
 
--   **Welcome to the ERPConnect HelpCenter**
-
-    ---
-
-    Looking for something? <br>Try the search bar, our new Theo chatbot or browse our [documentation](documentation/introduction/index.md).
-
-    ---
-
-    :material-clock-time-two-outline: 2024-04-01
-
 -   **R3Connection API updated**
 
     ---
