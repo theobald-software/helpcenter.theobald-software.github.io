@@ -221,7 +221,7 @@ S_BTCH_JOB       JOBGROUP=*; JOBACTION=RELE
 [:material-download-circle: Download SAP profile for Report](site:assets/files/sap_roles/ZXREPORT.SAP){ .md-button .md-button--primary }
 
 To execute a report with {{ productName }}, the SAP connection user needs explicit authorization to execute the report.
-Authorization can be granted using of the following methods:
+Authorization can be granted using one of the following methods:
 - [Assign the authorization object Z_TS_PROG](../../knowledge-base/create-the-custom-authority-object-z-ts-prog.md) 
 - [Assign an authorization group](../../knowledge-base/authorize-access-to-specific-reports.md)
 
