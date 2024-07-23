@@ -31,4 +31,14 @@
 
     :material-clock-time-two-outline: 2024-07-31
 
+-   **New Version Numbers**
+
+    ---
+
+    Xtract for Alteryx now uses the release date of a software update to create the version number, e.g., 2024.7.23.1 instead of 1.21.2.34. Find the complete version history in [changelog](changelog.md). 
+
+    ---
+
+    :material-clock-time-two-outline: 2024-07-23
+
 </div>
