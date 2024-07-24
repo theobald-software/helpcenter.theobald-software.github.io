@@ -1,5 +1,5 @@
 ---
-title: Extraction Settings
+title: Settings
 description: An overview and description of all query settings
 ---
 

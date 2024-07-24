@@ -50,7 +50,7 @@ For more information, see [SAP Connection](documentation/sap-connection/index.md
 
 ### Use Xtract {{ Components }} in Workflows
 
-1. Drag & drop an Xtract {{ component }} from the Xtract for Alteryx toolbox into the workflow :number-1:.
+1. Drag & drop an Xtract {{ component }} from the Xtract for Alteryx toolbox into the workflow :number-1:.<br>
 ![create-extraction](assets/images/xfa/documentation/table/create-extraction.png){:class="img-responsive"}
 2. Assign an existing SAP connection :number-2:.
 3. Click **[:pen-button:Edit]** :number-3: to open the main window of the component.
