@@ -346,6 +346,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://helpcenter.theobald-software.com/board-connector/documentation/server/service-account/</loc>
+         <lastmod>2024-07-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://helpcenter.theobald-software.com/board-connector/documentation/setup/</loc>
          <lastmod>2024-07-24</lastmod>
          <changefreq>daily</changefreq>
@@ -372,11 +377,6 @@
     </url>
     <url>
          <loc>https://helpcenter.theobald-software.com/board-connector/documentation/setup/requirements/</loc>
-         <lastmod>2024-07-24</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://helpcenter.theobald-software.com/board-connector/documentation/setup/service-account/</loc>
          <lastmod>2024-07-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
