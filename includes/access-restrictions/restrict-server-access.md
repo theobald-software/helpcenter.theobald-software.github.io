@@ -36,7 +36,7 @@ If the certificate is not listed in the Windows certificate store, [install the 
 Follow the steps below to limit the execution of extractions to users that pass Windows AD credentials, when calling extractions.
 The caller must have at least *Read access* to the Designer.
 
-1. Assign a Windows service account under which the {{ productName }} service runs, see [Change Service Account](../setup/service-account.md).
+1. Assign a Windows service account under which the {{ productName }} service runs, see [Change Service Account](../server/service-account.md).
 2. [Activate TLS encryption](#activate-tls-encryption). <br>
 ![WebServerSettings_https](../../assets/images/documentation/access-restriction/server-settings-sso-certificate.png){:class="img-responsive"}
 3. Open **Server > Settings** from the main window of the Designer. <br>

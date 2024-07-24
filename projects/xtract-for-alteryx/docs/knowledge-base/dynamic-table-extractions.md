@@ -130,4 +130,4 @@ The Xtract Table component can now be used to dynamically filter SAP data.
 *****
 #### Related Links
 - [Documentation: Xtract Table](../documentation/table/index.md)
-- [Documentation: Sample Workflows](../sample-workflows.md)
+- [Sample Workflows](../sample-workflows.md)

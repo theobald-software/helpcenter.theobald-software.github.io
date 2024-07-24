@@ -8,7 +8,6 @@ hide:
 
 ![img](site:assets/images/logos/theo-thumbs.png){ .lg .middle width="30px"} This section shows how to install and set up ERPConnect for the first time.
 
-
 ### Installation
 
 1. [Download](https://theobald-software.com/en/download-trial/){ data-preview } a 30 days trial version of ERPConnect.

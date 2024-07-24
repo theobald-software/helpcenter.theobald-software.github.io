@@ -33,7 +33,7 @@ This includes system requirements, backups and license information.
   content: Change server ports and configure data security.
   url: site:documentation/server/
 
-- title: Access Restriction
+- title: Access Management
   image: site:assets/images/logos/business-content/key.svg
   content: Create and manage users with access restrictions.
   url: site:documentation/access-restrictions/

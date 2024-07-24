@@ -80,27 +80,27 @@
   
 - title: {{ deltaq }}
   image: site:assets/images/logos/components/DeltaQ.svg
-  content: Extract data from DataSources (OLTP) and extractors from ERP and ECC systems. <br> <br> <span class="keyword">ERP/ ECC</span> <span class="keyword">BW</span>
+  content: Extract data from DataSources (OLTP) and extractors from ERP and ECC systems. <br> <span class="keyword">ERP/ ECC</span> <span class="keyword">BW</span>
   url: site:documentation/deltaq/
 
 - title: {{ odp }}
   image: site:assets/images/logos/components/ODP.svg
-  content: Extract data via the SAP Operational Data Provisioning (ODP) framework. <br> <br> <br> <span class="keyword">ERP/ ECC</span> <span class="keyword">BW</span>
+  content: Extract data via the SAP Operational Data Provisioning (ODP) framework. <br>  <span class="keyword">ERP/ ECC</span> <span class="keyword">BW</span>
   url: site:documentation/odp/
   
 - title: {{ ohs }}
   image: site:assets/images/logos/components/Open-Hub.svg
-  content: Extract data from InfoSpokes and OHS destinations. <br> <br> <br><span class="keyword">BW</span>
+  content: Extract data from InfoSpokes and OHS destinations. <br>  <br><span class="keyword">BW</span>
   url: site:documentation/ohs/
   
 - title: {{ query }}
   image: site:assets/images/logos/components/Query.svg
-  content: Extract data from ERP queries. <br>**BEx queries are covered by {{ bwcube }}**. <br> <br> <span class="keyword">ERP/ ECC</span>
+  content: Extract data from ERP queries. <br>**BEx queries are covered by {{ bwcube }}**. <br>  <span class="keyword">ERP/ ECC</span>
   url: site:documentation/query/
 
 - title: {{ report }}
   image: site:assets/images/logos/components/Report.svg
-  content: Extract data from SAP ABAP reports. <br> <br> <br> <span class="keyword">ERP/ ECC</span> 
+  content: Extract data from SAP ABAP reports. <br> <br> <span class="keyword">ERP/ ECC</span> 
   url: site:documentation/report/
   
 - title: {{ table }}

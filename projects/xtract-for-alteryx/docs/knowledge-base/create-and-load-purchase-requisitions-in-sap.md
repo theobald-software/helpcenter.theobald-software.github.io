@@ -103,4 +103,4 @@ The batch macro can now be used to load SAP purchase requisition data of any giv
 *****
 #### Related Links
 - [Documentation: {{ bapi }}](../documentation/bapi/index.md)
-- [Documentation: Sample Workflows](../sample-workflows.md)
+- [Sample Workflows](../sample-workflows.md)

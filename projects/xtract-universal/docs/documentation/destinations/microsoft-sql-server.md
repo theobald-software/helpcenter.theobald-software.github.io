@@ -38,7 +38,7 @@ For more information, see [Microsoft Documentation: Enable Encrypted Connections
 Uses the service account, under which the XU service is running, for authentication against SQL Server.
 
 !!! note 
-	To successfully connect to the database using Windows authentication, make sure to [run the XU service under a Windows AD user](../setup/service-account.md) with access to the database.
+	To successfully connect to the database using Windows authentication, make sure to [run the XU service under a Windows AD user](../server/service-account.md) with access to the database.
 
 #### Impersonate authenticated caller
 Uses the Windows AD user, executing the extraction, for authentication against SQL Server using [Kerberos authentication.](https://blogs.msdn.microsoft.com/sqlupdates/2014/12/05/sql-server-kerberos-and-spn-quick-reference/)

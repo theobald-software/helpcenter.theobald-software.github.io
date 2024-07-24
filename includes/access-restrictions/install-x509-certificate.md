@@ -41,4 +41,4 @@ In the example shown, the server name is "TODD":
 *****
 #### Related Links
 - [Knowledge Base Article: Enable Secure Network Communication (SNC) via X.509 certificate](../../knowledge-base/enable-snc-using-pse-file.md)
-- [Change Service Account](../setup/service-account.md)
+- [Change Service Account](../server/service-account.md)
