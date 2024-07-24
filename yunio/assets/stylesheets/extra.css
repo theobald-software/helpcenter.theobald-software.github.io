@@ -40,7 +40,7 @@
 
 /* Grid sets the width of the main content */
 .md-grid {
-  max-width: 1500px; 
+  max-width: 75%; /* or 100%, if you want to stretch to full-width */
 }
 
 /* custom abstract admonition*/
