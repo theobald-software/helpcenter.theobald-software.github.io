@@ -75,13 +75,7 @@ The settings for file type *Parquet* correspond to the settings of the *Flat Fil
 
 ## Connection Retry and Rollback
 
-Connection retry and rollback are built-in functions of the Huawei Cloud OBS destination.
-They are activated by default. 
-Connection retry is a functionality that prevents extractions from failing if the connection to Huawei is interrupted.
-
-If an exception is thrown, Xtract Universal uses an exponential retry strategy to reestablish connection to Huawei.
-The selected exponential retry strategy results in 7 retry attempts and an overall timespan of 140 seconds. 
-If a connection is not established during this timespan, the extraction fails.
+{% include "destinations/connection-retry.md" %}
 
 Rollback covers scenarios where extractions do not fail due to connection failures to Huawei but e.g. due to an error when connecting to SAP.
 In those cases Xtract Universal tries to remove any files from the Huawei Cloud storage that were created in the course of the extraction.

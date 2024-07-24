@@ -169,16 +169,10 @@ The settings for file type *Parquet* correspond to the settings of the *Flat Fil
 
 ## Connection Retry and Rollback
 
-Connection retry and rollback are built-in functions of the Azure Storage destination.
-They are activated by default. 
+{% include "destinations/connection-retry.md" %}
 
-Connection retry is a functionality that prevents extractions from failing if the connection to Azure is interrupted.
 The retry function is implemented according to [Microsoft Guidelines](https://docs.microsoft.com/en-us/azure/architecture/best-practices/retry-service-specific#retry-strategies).
 The retry logic is based on WebExceptionStatus. 
-
-If an exception is thrown, Xtract Universal uses an exponential retry strategy to reestablish connection to Azure.
-The selected exponential retry strategy results in 7 retry attempts and an overall timespan of 140 seconds. 
-If a connection is not established during this timespan, the extraction fails.
 
 Rollback covers scenarios where extractions do not fail due to connection failures to Azure but due to an error when connecting to SAP.
 In those cases Xtract Universal tries to remove any files from Azure storage that were created in the course of the extraction.

@@ -122,14 +122,9 @@ The settings for file type *Parquet* correspond to the settings of the *Flat Fil
 
 ## Connection Retry
 
-Connection retry is a built-in function of the AWS S3 destination. 
-The retry function is activated by default.
+{% include "destinations/connection-retry.md" %}
 
-Connection retry is a functionality that prevents extractions from failing in case of transient connection interruptions to AWS S3. 
 For more general information about retry strategies in an AWS S3 environment go to the official [AWS Help](https://docs.aws.amazon.com/general/latest/gr/api-retries.html).
-Xtract Universal follows an exponential retry strategy. The selected exponential strategy results in 7 retry attempts and an overall timespan of 140 seconds. 
-If a connection is not established during the timespan of 140 seconds, the extraction fails.
-
 
 {% include "destinations/assign-destination.md" %}
 

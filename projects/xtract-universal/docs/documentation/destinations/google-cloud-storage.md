@@ -149,7 +149,7 @@ Connection retry is a built-in function of the Google Cloud Storage destination.
 The retry function is activated by default.
 
 Connection retry is a functionality that prevents extractions from failing in case of transient connection interruptions to Google Cloud Storage.
-Xtract universal follows an exponential retry strategy. The selected exponential strategy results in 8 retry attempts and an overall timespan of 140 seconds. If a connection is not established during the timespan of 140 seconds, the extraction fails.
+Xtract universal follows an exponential retry strategy. The selected exponential strategy results in eight retry attempts and an overall timespan of 140 seconds. If a connection is not established during the timespan of 140 seconds, the extraction fails.
 
 For more general information about retry strategies in a Google Cloud Storage environment go to the official [Google Cloud Help](https://cloud.google.com/storage/docs/gsutil/addlhelp/RetryHandlingStrategy).
 
