@@ -21,22 +21,22 @@ How to install the MKDocs framework and its main theme:
 4. Create a new environment variable GH_TOKEN. For the value for the token, refer to your admins.<br>
 ![token](../assets/images/editorial-guide/setup/token.png)
 5. Log into gitHub with the user TSEDV (credentials in PSONO).
-6. Open the command line tool and use the following command to install mkdocs: 
+6. Open the command line tool and use the following command to install MKDocs: 
 ```
 pip install mkdocs
 ```
-7. Use the following command to install the material theme for mkdocs: 
+7. Use the following command to install the material theme for MKDocs: 
 ```
 pip install git+https://${GH_TOKEN}@github.com/squidfunk/mkdocs-material-insiders.git
 ```
 8. Log out of the TSEDV gitHub account.
 
-Congratulations! The installation of the mkdocs framework and its main theme is complete.
+Congratulations! The installation of the MKDocs framework and its main theme is complete.
 
 
 ### Install External Plugins
 
-The Theobald Software HelpCenters use external plugins to add functionalities that are not included in mkdocs and the material theme. 
+The Theobald Software HelpCenters use external plugins to add functionalities that are not included in MKDocs and the material theme. 
 Install the following plugins via command line to build the Theobald Software HelpCenters:
 
 - Mandatory to use optimize-plugin:
@@ -155,7 +155,7 @@ Congratulations! The website is build in the folder ‘site’ and can be previe
 !!! warning
 	**Target not found**<br>
 	When building previews, the console prints warnings about missing content / images if [symlinks](symlinks.md) are missing or broken.
-	Because symlinks are not automatically created when pulling content from the repository, they need to be created manually on your local Windows machine.
+	As symlinks are not automatically created when pulling content from the repository, they need to be created manually on your local Windows machine.
 
 ****
 

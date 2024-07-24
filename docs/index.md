@@ -69,22 +69,22 @@ Choose your product:
 - title: Xtract Universal
   image: ./assets/images/XtractUniversal.png
   content: The flexible SAP interface for databases, analytics, BI or cloud solutions.
-  url: https://help.theobald-software.com/en/xtract-universal/
+  url: https://helpcenter.theobald-software.com/xtract-universal
   
 - title: Xtract IS
   image: ./assets/images/XtractIS.png
   content: The powerful SAP plug-in for SQL Server Integration Services to extract mass data.
-  url: https://help.theobald-software.com/en/xtract-is/
+  url: https://helpcenter.theobald-software.com/xtract-is
   
 - title: Xtract for Alteryx
   image: ./assets/images/XtractAlteryx.png
   content: Integrate your SAP data into Alteryx with this drag & drop toolbox for the Alteryx Designer.
-  url: https://help.theobald-software.com/en/xtract-for-alteryx/
+  url: https://helpcenter.theobald-software.com/xtract-for-alteryx
 
 - title: Board Connector
   image: ./assets/images/Board.png
   content: Access your SAP data directly from Board, without an additional data warehouse.
-  url: https://help.theobald-software.com/en/board-connector/
+  url: https://helpcenter.theobald-software.com/board-connector
   
 - title: yunIO
   image: ./assets/images/YunIO.png

@@ -8,7 +8,7 @@ This page contains almost all elements that can be used for pages.
 ### Admonitions
 
 A specific element that can be inserted is the information box. This can be used to highlight information in a certain way.
-The content of a box must be indenting. An admonition ends after 1 unindented empty line.
+The content of a box must be indenting. An admonition ends after one unindented empty line.
 
 === "Note"
 
@@ -37,7 +37,8 @@ The content of a box must be indenting. An admonition ends after 1 unindented em
 
 	!!! warning
 		**Missing Authorization**<br>
-		Explanation of warning or error message.
+		Explanation of warning or error message.<br>
+		Action to mitigate.
 
 	</div>	
 
