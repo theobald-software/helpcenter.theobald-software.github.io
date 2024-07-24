@@ -58,7 +58,7 @@ The majority of the functions of the {{ component }} can be accessed in the main
 
 Xtract IS offers the following {{ components }}:
 
-|  {{ Component }}  |   Data Flow Component Type | Description   |  
+|  {{ Component }}  |   Type | Description   |  
 |----------|-------------|-------------|
 | [:component-bapi:  {{ bapi }}](documentation/bapi/index.md) |  Transformation | Execute BAPIs and Function Modules. |
 | [:component-bwcube:  {{ bwcube }}](documentation//bwcube/index.md) | Source   | Extract data from SAP BW InfoCubes and BEx Queries. |
