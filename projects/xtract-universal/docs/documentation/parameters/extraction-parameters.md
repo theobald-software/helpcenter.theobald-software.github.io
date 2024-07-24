@@ -1,6 +1,8 @@
 ---
 title: Extraction Parameters
-description: Extraction Parameters
+description: A list of all runtime / extraction parameters in Xtract Universal
+search:
+  boost: 2 
 ---
 
 

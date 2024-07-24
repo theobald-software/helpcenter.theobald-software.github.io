@@ -1,6 +1,8 @@
 ---
 title:  Run Extractions in Xtract Universal
 description: Run extractions in the Run window of the Designer
+search:
+  boost: 2 
 ---
 
 {{ productName }} Designer offers a test run option for extractions.<br> 

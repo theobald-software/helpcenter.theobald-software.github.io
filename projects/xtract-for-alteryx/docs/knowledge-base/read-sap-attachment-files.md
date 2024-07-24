@@ -108,4 +108,4 @@ BLOB data types can store multiple file types, e.g., images, audio, and other ob
 - [Alteryx Community - Read SAP Attachment Files](https://community.alteryx.com/t5/Community-Gallery/Read-and-Download-SAP-Attachment-Files-using-Xtract-for-Alteryx/ta-p/1212418)
 - [Documentation: Xtract Table](../documentation/table/index.md)
 - [Documentation: Xtract BAPI](../documentation/bapi/index.md)
-- [Documentation: Sample Workflows](../sample-workflows.md)
+- [Sample Workflows](../sample-workflows.md)

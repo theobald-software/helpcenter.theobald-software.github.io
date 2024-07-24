@@ -9,8 +9,7 @@ tags:
   - quick start  
 ---
 
-![img](site:assets/images/logos/theo-thumbs.png){ .lg .middle width="30px"} This section shows how to install and set up {{ productName }} for the first time. The majority of internal information is linked to the [User Documentation](documentation/setup/index.md) of {{ productName }}.
-
+![img](site:assets/images/logos/theo-thumbs.png){ .lg .middle width="30px"} This section shows how to install and set up {{ productName }} for the first time. 
 
 ### Installation
 
@@ -46,7 +45,7 @@ Input values for the SAP connection can be found in the Properties of the SAP Lo
 6. In the subsection *Connection*, select an authentication methods and link or create and link the credential of your SAP system or dialog user to the data source.<br>
 ![new-data-source](assets/images/xfa/documentation/sap-connection/new-data-source.gif)
 
-For more information, see [Documentation: SAP Connection](documentation/sap-connection/index.md).
+For more information, see [SAP Connection](documentation/sap-connection/index.md).
 
 
 ### Use Xtract {{ Components }} in Workflows

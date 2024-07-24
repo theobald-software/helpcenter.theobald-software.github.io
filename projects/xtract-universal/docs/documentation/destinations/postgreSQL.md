@@ -58,7 +58,7 @@ Port of the database server. Port 5432 is selected by default.
 Uses the service account, under which the XU service is running, for authentication against the PostgreSQL server, see [PostgreSQL Documentation: Client authentication](https://www.postgresql.org/docs/11/client-authentication.html).
 
 !!! note
-	To successfully connect to the database using Windows authentication, make sure to [run the XU service under a Windows AD user](../setup/service-account.md) with access to the database.
+	To successfully connect to the database using Windows authentication, make sure to [run the XU service under a Windows AD user](../server/service-account.md) with access to the database.
 
 #### Username
 Enter the name of the database user.

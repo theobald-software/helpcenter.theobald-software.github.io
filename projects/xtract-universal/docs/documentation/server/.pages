@@ -1,5 +1,6 @@
 nav:
     - index.md
+    - service-account.md
     - server-settings.md
     - server-tasks.md
 

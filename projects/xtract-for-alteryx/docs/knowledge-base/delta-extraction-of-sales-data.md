@@ -79,4 +79,4 @@ The {{ odp }} {{ component }} can now be used to access and process the extracte
 #### Related Links
 - [Alteryx Community - ODP based Delta Extraction of Sales and Customer Data from SAP ERP with {{ productName }}](https://community.alteryx.com/t5/Community-Gallery/ODP-based-Delta-Extraction-of-Sales-and-Customer-Data-from-SAP/ta-p/1140120)
 - [Documentation: {{ odp }} (Operational Data Provisioning)](../documentation/odp/index.md)
-- [Documentation: Sample Workflows](../sample-workflows.md)
+- [Sample Workflows](../sample-workflows.md)

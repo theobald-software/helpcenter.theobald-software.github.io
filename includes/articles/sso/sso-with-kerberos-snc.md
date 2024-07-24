@@ -45,7 +45,7 @@ Make sure to check the default ports, e.g., {% if page.meta.product == "xtract-u
 ### Configuration of Windows AD Service Account
 
 Using SSO with Kerberos SNC, the {{ productName }} service must run under a dedicated service account.  
-To do so, follow the steps as outlined in [Run the {{ productName }} Service under a Windows Service Account](../documentation/setup/service-account.md).
+To do so, follow the steps as outlined in [Run the {{ productName }} Service under a Windows Service Account](../documentation/server/service-account.md).
 
 !!! note
 	As of {{ productName }} version 5.0 SAP passwords are encrypted with a key that is derived from the Windows account that runs the {{ Abbr }} service.
@@ -108,4 +108,4 @@ In SAP, apply the Kerberos SNC settings as described in the [SAP Documentation: 
 ****
 #### Related Links
 - [Documentation: X.509 certificate](../documentation/access-restrictions/install-x.509-certificate.md)
-- [Running the {{ productName }} Service under a Windows Service Account](../documentation/setup/service-account.md).
+- [Documentation: Run the {{ productName }} Service under a Windows Service Account](../documentation/server/service-account.md).

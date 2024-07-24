@@ -5,7 +5,7 @@ Note that this connection is not encrypted.
 ### Prerequisites
 
 - SSO with Logon-Tickets must be configured on the SAP system and and the application server, see [Knowledge Base Article: SSO with Logon-Ticket](../../knowledge-base/sso-with-logon-ticket.md#requirements).
-- The {{ productName }} service must run under an [{{ Abbr }} Service Account](../setup/service-account.md).
+- The {{ productName }} service must run under an [{{ Abbr }} Service Account](../server/service-account.md).
 - The {{ productName }} server must be set up to use the HTTPS protocol, see [Server Settings](../server/server-settings.md#web-server).
 
 
