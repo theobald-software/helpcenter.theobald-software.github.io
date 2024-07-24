@@ -21,5 +21,5 @@ Access is then granted through the S_PROGRAM authorization object, see [SAP Note
 
 #### Related Links
 - [Create the Custom Authorization Object Z_TS_PROG](create-the-custom-authority-object-z-ts-prog.md)
-- [SAP Authorization Objects for Reports](../documentation/setup-in-sap/sap-authority-objects.md/#query)
+- [SAP Authorization Objects for Reports](../documentation/setup-in-sap/sap-authority-objects.md/#report)
 - [Documentation: Report](../documentation/report/index.md)
