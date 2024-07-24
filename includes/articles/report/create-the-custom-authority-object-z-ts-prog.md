@@ -24,4 +24,4 @@ The access to reports is granted based on the name of the report.
 #### Related Links
 - [Authorize Access to Reports via Authorization Groups](./authorize-access-to-specific-reports.md)
 - [SAP Authorization Objects for Reports](../documentation/setup-in-sap/sap-authority-objects.md/#query)
-- [Documentation: Report](documentation/report/index.md)
+- [Documentation: Report](../documentation/report/index.md)
