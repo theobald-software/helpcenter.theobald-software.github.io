@@ -537,9 +537,12 @@ To add an image to a page, use the following syntax:
 When adding images in [reusable text](#include-reusable-text), you can use the following syntax:
 
 ```
-![img](site:assets/images/favicon.png)
+<br> ![img](site:assets/images/favicon.png)
 ```
-	
+
+!!! note
+   Make sure to add a break < br > before every image. 
+
 This makes it possible to include images independently from the location in the directory. Downside: broken links to images do not cause errors or warnings when building the project.
 
 #### Additional Options
