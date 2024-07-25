@@ -1,5 +1,16 @@
 [
   {
+    "Version": "6.8.15.0",
+    "LegacyReleaseDate": "2024-07-24 16:39:47Z",
+    "Changes": [
+      {
+        "Product": "XtractUniversal",
+        "Component": "Destinations",
+        "Message": "Fixed a performance issue in the SQL Server destination where a data object would be rebuilt instead of reusing it. This change also reduces the destinations total memory usage."
+      }
+    ]
+  },
+  {
     "Version": "6.8.14.2",
     "LegacyReleaseDate": "2024-07-22 00:00:00Z",
     "Changes": [
