@@ -2,6 +2,7 @@
 title: Azure Storage
 description: Azure Storage
 destination: azure
+attempt: seven
 ---
 
 This page shows how to set up and use the {{ page.meta.title }} destination. 

@@ -1,6 +1,7 @@
 ---
 title: Amazon S3
 description: Amazon S3 destination
+attempt: seven
 ---
 
 This page shows how to set up and use the {{ page.meta.title }} destination. 

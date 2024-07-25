@@ -3,6 +3,7 @@ title: Huawei Cloud OBS
 description: Huawei Cloud OBS destination
 destination: huawei
 status: beta
+attempt: seven
 ---
 
 This page shows how to set up and use the {{ page.meta.title }} destination. 
