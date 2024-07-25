@@ -5,8 +5,7 @@ site_name: Xtract Universal HelpCenter
 site_url: https://helpcenter.theobald-software.com/xtract-universal/
 #site_author: Valerie Schipka
 site_description: >-
-  Xtract Universal is a flexible SAP interface for databases, analytics, BI or cloud solutions.
-  Learn how to use Xtract Universal by browsing our documentation, articles and more.
+  Xtract Universal is an SAP interface for databases, BI or cloud solutions. Learn how to use Xtract Universal by browsing our documentation, articles and more.
 
 # Repository
 # repo_name: theobald-software/helpcenter.theobald-software.github.io

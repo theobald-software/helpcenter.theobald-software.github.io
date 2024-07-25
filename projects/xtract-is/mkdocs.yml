@@ -5,8 +5,7 @@ site_name: Xtract IS HelpCenter
 site_url: https://helpcenter.theobald-software.com/xtract-is/
 #site_author: Valerie Schipka
 site_description: >-
-  Xtract IS is a powerful SAP plug-in for SQL Server Integration Services to extract mass data.
-  Learn how to use Xtract IS by browsing our documentation, articles and more.
+  Xtract IS is an SAP plug-in for SQL Server Integration Services. Learn how to use Xtract IS by browsing our documentation, articles and more.
 
 # Repository
 # repo_name: theobald-software/helpcenter.theobald-software.github.io

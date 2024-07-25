@@ -181,11 +181,11 @@ The window "Manage Destinations" opens. Here, you can edit, delete and add new d
   image: site:assets/images/xu/documentation/destinations/logos/net_json.svg
   url: json-via-http
   
-- title: CSV Flat-Files<br><br><br><span class="keyword">push-destination</span> 
+- title: CSV Flat-Files<br><br><span class="keyword">push-destination</span> 
   image: site:assets/images/xu/documentation/destinations/logos/doc_csv.svg
   url: csv-flat-file
   
-- title: JSON Flat-Files<br><br><br><span class="keyword">push-destination</span>
+- title: JSON Flat-Files<br><br><span class="keyword">push-destination</span>
   image: site:assets/images/xu/documentation/destinations/logos/doc_json.svg
   url: json-flat-file
   

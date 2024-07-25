@@ -35,9 +35,10 @@ The {{ productName }} Service can be installed and removed using the `{{ install
 
 {% endif %}
 
-### Windows Serivce
+### Windows Service
 
 After installation, the Windows service can be started, stopped and configured via the Windows Services administration or the Task Manager.
+For information on how to run the service under a dedicated Windows service account, see [Change Service Account](service-account.md).
 
 ![Services-Start-Server](../../assets/images/{{ abbr }}/documentation/server/Services.png){:class="img-responsive"}
 
@@ -75,5 +76,4 @@ If manual adjustments of the port number are necessary, ask your network team fo
 	Administrator access rights are required for altering the [config files](../setup/migration.md/#configuration-files).<br>
 	`{{ installationDir }}\config\server\config\general.json`<br>
 	`{{ installationDir }}\config\server\web\general.json`
-
 

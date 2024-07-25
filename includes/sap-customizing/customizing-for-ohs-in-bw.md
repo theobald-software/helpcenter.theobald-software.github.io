@@ -36,7 +36,7 @@ The name of the Program ID is needed again for later configuration.<br>
 1. Go to SAP transaction *RSA1* to open the Administrator Workbench.
 2. Navigate to **Open Hub Destination** in the left tree and right-click on an InfoArea. Select **Create Open Hub Destination** in the context menu. <br>
 ![OHS-BW-02](../../assets/images/documentation/sap-customization/ohs_1.png){:class="img-responsive"}
-3. In the edit mode of the destination, set the *Destination Type* to **Third Party Tool** and select your RFC destination.
+3. In the edit mode of the destination, set the *Destination Type* to **Third Party Tool** and select your RFC destination.<br>
 ![OHS-BW-03](../../assets/images/documentation/sap-customization/ohs_2.png){:class="img-responsive"}
 4. Save and activate the OHS destination. 
 5. Click on the newly created OHS destination in the middle tree of the InfoAreas and select **Create Data Transfer Process** to create a new data transfer process (DTP). 

@@ -3,7 +3,7 @@
 
 1. In the main window of the {{ component }}, click **[:magnifying-glass:]**. The window “Operational Data Provider Lookup” opens.<br>
 ![Open-Look-Up-ODP](../../assets/images/{{ abbr }}/documentation/odp/odp_main-window_add.png){:class="img-responsive"}	
-2. In the field **Name**, enter the name of an extractor :number-1:. Use wildcards (*), if needed.
+2. In the field **Name**, enter the name of an extractor :number-1:. Use wildcards (*), if needed.<br>
 ![Look-Up-ODP](../../assets/images/documentation/components/odp/odp_look-up.png){:class="img-responsive"}	
 3. Select a *Context* :number-2:. Depending on the connected SAP source system there are differences in available [Provider Contexts](provider-context.md).
 4. Click **[:magnifying-glass:]**. Search results are displayed.

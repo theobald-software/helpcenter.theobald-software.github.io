@@ -32,14 +32,14 @@ When importing the transport requests on older SAP releases a syntax error may o
 
 | Supported Features by THEO_READ_TABLE| _740SP05 | _710 | _640 | 46C |
 | :------ |:---: | :---: | :---: | :---: |
-| WHERE Clause | :material-check: | :material-check: | :material-check: | :material-check: | 
-| HAVING Clause | :material-check: | :material-check: | :material-check: | :x: |
-| INNER JOIN | :material-check: | :material-check: | :material-check: | :material-check: |
-| LEFT OUTER JOIN | :material-check: | :material-check: | :material-check: | :material-check: |
-| Conversion exits | :material-check: | :material-check: | :material-check: | :material-check: |
-| Aggregate functions | :material-check: | :material-check: | :material-check: | :material-check: |
-| SQL expressions (subqueries) | :material-check: | :x: | :x: | :x: |
-| Background jobs | :material-check: | :material-check: | :x: | :x: |
+| WHERE Clause | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | 
+| HAVING Clause | :white_check_mark: | :white_check_mark: | :white_check_mark: | :x: |
+| INNER JOIN | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| LEFT OUTER JOIN | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| Conversion exits | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| Aggregate functions | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| SQL expressions (subqueries) | :white_check_mark: | :x: | :x: | :x: |
+| Background jobs | :white_check_mark: | :white_check_mark: | :x: | :x: |
 
 *****
 #### Related Links

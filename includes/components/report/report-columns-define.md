@@ -34,7 +34,7 @@ This can be required for reports that have varying column widths depending on th
 When automatic column detection is not possible, the column names, widths and offsets must be set manually.
 
 1. Make sure no columns are defined yet. 
-If columns are defines, click **[:trashbin:]** in the *Columns* section in the main window of the {{ component }} to delete the columns.
+If columns are defines, click **[:trashbin:]** in the *Columns* section in the main window of the {{ component }} to delete the columns.<br>
 ![Report-delete-columns](../../assets/images/documentation/components/report/Report_new_delete_column.png){:class="img-responsive"}
 2. Click {{ previewBtn }}. The report is executed based on the selected report variant or selections. 
 The output of the report is displayed in the *Load Preview* section.

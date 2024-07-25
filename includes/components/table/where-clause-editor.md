@@ -59,10 +59,10 @@ The usage of SAP system fields requires SAP NW 7.4 SP5 or higher and the custom 
 
 Example:
 
-1. Navigate to [WHERE Clause Editor](#where-clause-editor) and select a column of the type Date *here: BUDAT* :number-1:. 
+1. Navigate to [WHERE Clause Editor](#where-clause-editor) and select a column of the type Date *here: BUDAT* :number-1:. <br>
 ![img-01](../../assets/images/documentation/components/table/table_where_syst_field_1.png){:class="img-responsive"}
-2. Delete the criterion "Value" and use the criterion "SQL" :number-2:.
+2. Delete the criterion "Value" and use the criterion "SQL" :number-2:. <br>
 ![img-02](../../assets/images/documentation/components/table/table_where_syst_field_2.png){:class="img-responsive"}
-3. Within the "SQL" criterion, use the supported system fields for date and time with a preceding "@" character, *here: @sy-datum* :number-3:.
+3. Within the "SQL" criterion, use the supported system fields for date and time with a preceding "@" character, *here: @sy-datum* :number-3:. <br>
 ![img-03](../../assets/images/documentation/components/table/table_where_syst_field_3.png){:class="img-responsive"}
 4. Click {{ previewBtn }} to check the result. 
