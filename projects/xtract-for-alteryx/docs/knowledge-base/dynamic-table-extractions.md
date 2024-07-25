@@ -24,8 +24,7 @@ This article leads you through all necessary steps to set up the following workf
 
 ### Prerequisites
 
-To use the Xtract Table component, access to the designated authority objects (RFC) in SAP must be available.<br>
-For more information, refer to the knowledge base article [SAP User Rights: Table](../documentation/setup-in-sap/sap-authority-objects.md/#table).
+To use the Xtract Table component, access to the designated authority objects (RFC) in SAP must be available, see [SAP User Rights: Table](../documentation/setup-in-sap/sap-authority-objects.md/#table).
 
 ### Scalar Parameters
 

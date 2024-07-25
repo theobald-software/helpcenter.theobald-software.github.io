@@ -53,9 +53,9 @@ The custom connector can now be used in a Matillion Data Loader pipeline.
 Create a pipeline that triggers the extraction and writes the data to a destination, see [Matillion Documentation: Create a pipeline with custom connectors](https://docs.matillion.com/data-productivity-cloud/custom-connector/docs/custom-connector-batch-pipeline/).
 
 1. Open the [Matillion Data Loader dashboard](https://dataloader.matillion.com/dashboard).
-2. Click **[Add Pipeline]** to create a new pipeline :number-1:.
+2. Click **[Add Pipeline]** to create a new pipeline :number-1:.<br>
 ![matillion-pipelines](../assets/images/xu/articles/matillion-pipelines.png){:class="img-responsive"}
-3. Open the *Custom Connectors* tap to select the custom connector :number-2:, that contains the connection settings for {{ productName }}. 
+3. Open the *Custom Connectors* tap to select the custom connector :number-2:, that contains the connection settings for {{ productName }}. <br>
 ![matillion-source](../assets/images/xu/articles/matillion-source.png){:class="img-responsive"}
 4. Select the endpoint that calls the {{ productName }} extraction and use the arrow buttons to add the endpoint to the list **Endpoints to extract and load**.
 Note that a custom connector can have multiple endpoints.

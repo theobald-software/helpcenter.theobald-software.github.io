@@ -52,8 +52,8 @@ The depicted example uses script expressions to query the current date.
 	```
 	
 	This criterion extracts data if one of the following conditions is true:<br>
-	- The data was created (ERDAT) the day before the current date and it has not been changed (AEDAT).<br>
-	- The data has changed (ARDAT) the day before the current date.
+	- The data was created (ERDAT) the day before the current date and it has not been changed (AEDAT).
+	- The data has changed (ARDAT) the day before the current date.<br>
 	![Where-Clause_Daily](../assets/images/articles/table/Where-Clause-Daily.png){:class="img-responsive"}
 	
 4. Click **[OK]** to confirm your input.

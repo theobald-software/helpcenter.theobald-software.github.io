@@ -20,7 +20,7 @@ The following programs and tools are required for using the SSIS-package:
 - Install the [{{ productName }} Server](../documentation/setup/installation.md)
 - Download the following SSIS-package: 
 
-[:material-download-circle: Download XtractUniversalScheduler.dtsx](../assets/files/xu/XtractUniversalScheduler.dtsx){ .md-button}
+[:material-download-circle: Download XtractUniversalScheduler.dtsx](../assets/files/xu/XtractUniversalScheduler.dtsx){ .md-button .md-button--primary}
 
 The {{ productName }} Server must be installed on the same environment as the SQL-Server / SSIS-DB using the default directory `{{ installationDir }}`.
 

@@ -41,7 +41,7 @@ Name the other parameter "where". This will be the computed query parameter. <br
 ![SSRS-Expression](../assets/images/xu/articles/ssrs-expression.png){:class="img-responsive"}
 5. Confirm your input with **[OK]**.
 6. Switch to the Query tab and click **[Query Designer…]**. The window “Query Designer” opens.
-7. Select *Parameterized* as the **Behaviour** for {{ productName }}'s "where" parameter.
+7. Select *Parameterized* as the **Behaviour** for {{ productName }}'s "where" parameter.<br>
 ![Query-Designer](../assets/images/xu/articles/QueryDesigner.png){:class="img-responsive"}
 8. Enter the name of the new query parameter under **Value**.
 9. Confirm your input with **[OK]**.

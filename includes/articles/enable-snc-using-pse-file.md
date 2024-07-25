@@ -40,7 +40,7 @@ snc/identity/as | Application server's SNC name Syntax: p:\<Distinguished_Name\>
 
 2. Convert pfx file to SAP PSE format e.g., `sapgenpse.exe import_p12 -p cert.pse cert.pfx`.
 3. Import the created PSE file via **TA STRUST > Edit mode > PSE Import > PSE Save as SNC Libcrypto**.
-4. Edit the SNC configuration of the corresponding SAP user via transaction SU01 :number-1:, **SNC** :number-2:, **SNC Name** :number-3: = p:\<Full Distinguished_Name\> <br> e.g., `p:EMAIL="RandomUser@domain",CN="Random User",OU="Users",OU="TheobaldSoftware",DC="theobald",DC="local"`.
+4. Edit the SNC configuration of the corresponding SAP user via transaction SU01 :number-1:, **SNC** :number-2:, **SNC Name** :number-3: = p:\<Full Distinguished_Name\> <br> e.g., `p:EMAIL="RandomUser@domain",CN="Random User",OU="Users",OU="TheobaldSoftware",DC="theobald",DC="local"`.<br>
 ![SNC User Settings](site:assets/images/articles/snc_user_settings.png){:class="img-responsive"}
 5. Set up SNC authentication in the {{ productName }} SAP connection settings.
 

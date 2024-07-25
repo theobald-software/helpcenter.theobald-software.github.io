@@ -38,7 +38,7 @@ If you don't have access to the file system, follow the steps below to upload th
 Note or copy the path shown in the column *Directory*.<br>
 ![SAP-AL11](../assets/images/articles/sap/sap-al11.png){:class="img-responsive"}
 4. Go to SAP transaction SE37.
-5. Enter name of function module ARCHIVFILE_CLIENT_TO_SERVER and click **[Test/Execute]**.
+5. Enter name of function module ARCHIVFILE_CLIENT_TO_SERVER and click **[Test/Execute]**.<br>
 ![SAP-FuBa](../assets/images/articles/sap/sap-fuba.png){:class="img-responsive"} 
 6. In the field **PATH** you select your request file from from step 1. The name of the file starts with an "R", e.g., R900472.
 7. In the field **TARGET PATH** you construct your target path using the following pattern: <br>`{copied path from step 2}\data\{request file name}`.<br>
@@ -63,7 +63,7 @@ Follow the steps below to add the transport requests to the import queue and imp
 3. Double click on the import queue in which you want to load the transport request into.<br>
 ![SAP-Queues](../assets/images/articles/sap/sap-import-queues.png){:class="img-responsive"}
 4. Open the transport request selection dialog via **More > Extras > Other Requests > Add**.
-5. Select the transport request and confirm. If prompted, confirm the import.
+5. Select the transport request and confirm. If prompted, confirm the import.<br>
 ![SAP-Queues](../assets/images/articles/sap/sap-import-queue.png){:class="img-responsive"}
 6. Select your transport request from the list and click **[Import Request]** (![Import icon](../assets/images/articles/sap/sap-import-requests.png){:style="display:inline"} icon). The window "Import Transport Request" opens.
 7. Enter the target client. 

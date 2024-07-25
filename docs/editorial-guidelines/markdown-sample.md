@@ -149,7 +149,7 @@ To delete an announcement, remove the `announce` block from the file.
 Links can be rendered as buttons. They are used for download links.
 
 ```
-[:material-download-circle: Download-Button](../assets/files/sap_roles/ZXTQUERY.SAP){ .md-button }
+[:material-download-circle: Download-Button](../assets/files/sap_roles/ZXTQUERY.SAP){ .md-button .md-button--primary }
 ```
 
 <div class="result" markdown>

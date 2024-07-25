@@ -40,8 +40,7 @@ The service has the following settings:<br>
 - *No authentication* is pre-set. This means that there is no authentication required by users calling the connector. <br>
 - If [*Request credentials from callers when running services*](../documentation/sap-connection/settings.md/#authentication) is enabled in the yunIO connection settings, you can also select *Basic authentication*. 
 This means that the SAP user name and password used for the SAP connection, must be stored in the Connection Settings defined in the [**Test** tab](#test-the-service).
-- The depicted example uses *Basic authentication* and labels the parameters *SAP User* and *Password*
-![Power-Automate-Custom-Connector-Security.png](../assets/images/yunio/articles/power-automate-custom-connector-security.png){:class="img-responsive"} 
+- The depicted example uses *Basic authentication* and labels the parameters *SAP User* and *Password*.<br>
 ![Power-Automate-Custom-Connector-Security-Basic.png](../assets/images/yunio/articles/power-automate-custom-connector-security-basic.png){:class="img-responsive"} 
 5. The **Definition** tab gives an overview about the yunIO service definition. No changes necessary. This also applies to the **Code (Preview)** tab.
 

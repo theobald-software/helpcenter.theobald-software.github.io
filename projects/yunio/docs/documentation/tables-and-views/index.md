@@ -16,7 +16,7 @@ The {{ table }} {{ component }} can be used to extract data from SAP Tables and 
 ### Look Up an SAP Table or View
 
 1. [Create a new service](../../getting-started.md/#create-a-service) of {{ component }} {{ table }}. 
-2. In the *Search SAP Table or View* menu, enter the name or description of the Table or View to be extracted :number-1:. Use wildcards ( * ) if needed.
+2. In the *Search SAP Table or View* menu, enter the name or description of the Table or View to be extracted :number-1:. Use wildcards ( * ) if needed.<br>
 ![SAP-Table-or-Views](../../assets/images/yunio/documentation/search-table-or-view.png){:class="img-responsive" width="750px"}
 3. Click **[Search]** to display the search results.
 4. Select a table / view from the list of available search results :number-2:. 

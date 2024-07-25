@@ -25,8 +25,7 @@ This article leads you through all necessary steps to set up the following workf
 
 ### Prerequisites
 
-To use the Xtract BAPI component and the Xtract Table component, access to the designated authority objects (RFC) in SAP must be available. <br>
-For more information, refer to the knowledge base articles [SAP User Rights: BAPI](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights#bapi) and [SAP User Rights: Table](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights#table).
+To use the Xtract BAPI component and the Xtract Table component, access to the designated authority objects (RFC) in SAP must be available, see [SAP User Rights: BAPI](../documentation/setup-in-sap/sap-authority-objects.md#bapi) and [SAP User Rights: Table](../documentation/setup-in-sap/sap-authority-objects.md#table).
 
 
 ### Get a List of all SAP Attachments
@@ -89,8 +88,11 @@ Follow the steps below to download SAP attachment files using their Object ID as
 9. In the *Table* tab, select CONTENTS_HEX for the output. CONTENTS_HEX contains the attachment file in the format of a HEX string.
 10. Click **[OK]** to save your input.
 11. Define an Object ID as the input for the runtime parameter of the Xtract BAPI component, e.g., *FOL18          4 EXT45000000000229*.<br>
-**Tip:** Object IDs are available in the SAP table SRGBTBREL, see [Get a List of all SAP Attachments](#get-a-list-of-all-sap-attachments).
-![attachment-files-bapi-input](../assets/images/xfa/articles/attachment-files-bapi-input.png){:class="img-responsive"}
+
+	!!! tip
+		Object IDs are available in the SAP table SRGBTBREL, see [Get a List of all SAP Attachments](#get-a-list-of-all-sap-attachments).
+		
+	![attachment-files-bapi-input](../assets/images/xfa/articles/attachment-files-bapi-input.png){:class="img-responsive"}
 12. Add a **Summarize** tool :number-4: to concatenate the multi-line HEX string returned by the Xtract BAPI component into a single line.
 13. Add a **Select** :number-5: and a **Formula** tool to concatenate the file name using the Xtract BAPI output fields OBJDES and FILE_EXT, e.g., `example.pdf`.<br>
 ![attachment-files-formula-filename](../assets/images/xfa/articles/attachment-files-formula-filename.png){:class="img-responsive"}
