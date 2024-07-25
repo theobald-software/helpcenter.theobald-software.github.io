@@ -1,5 +1,27 @@
 [
   {
+    "Version": "6.6.0.11",
+    "LegacyReleaseDate": "2024-07-25 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Common",
+        "Component": "General",
+        "Message": "Fixed error when clicking on links in About Window (caused by migration to .net8)"
+      }
+    ]
+  },
+  {
+    "Version": "6.6.0.9",
+    "LegacyReleaseDate": "2024-07-24 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Server",
+        "Component": "General",
+        "Message": "Improved the performance of extractions which create a new cache entry. That process was not correctly parallelized."
+      }
+    ]
+  },
+  {
     "Version": "6.6.0.7",
     "LegacyReleaseDate": "2024-07-23 00:00:00Z",
     "Changes": [

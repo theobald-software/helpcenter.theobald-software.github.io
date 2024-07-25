@@ -1,5 +1,16 @@
 [
   {
+    "Version": "6.8.15.2",
+    "LegacyReleaseDate": "2024-07-25 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Common",
+        "Component": "General",
+        "Message": "Fixed error when clicking on links in About Window (caused by migration to .net8)"
+      }
+    ]
+  },
+  {
     "Version": "6.8.15.0",
     "LegacyReleaseDate": "2024-07-24 16:39:47Z",
     "Changes": [
@@ -7,6 +18,11 @@
         "Product": "XtractUniversal",
         "Component": "Destinations",
         "Message": "Fixed a performance issue in the SQL Server destination where a data object would be rebuilt instead of reusing it. This change also reduces the destinations total memory usage."
+      },
+      {
+        "Product": "Theobald.Server",
+        "Component": "General",
+        "Message": "Improved the performance of extractions which create a new cache entry. That process was not correctly parallelized."
       }
     ]
   },
