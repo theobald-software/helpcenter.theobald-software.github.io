@@ -6,7 +6,7 @@
       {
         "Product": "XtractIS",
         "Component": "General",
-        "Message": "Migrated XtractIS to new version numbering scheme. During an update, the setup now detects which version is currently installed and displays a list of breaking changes (if there are any) that have been introduced since the previously installed version."
+        "Message": "Migrated XtractIS to new version numbering scheme. During an update, the setup now detects which version is currently installed and displays a list of breaking changes (if there are any) that have been introduced since the previously installed version. Removed XtractIsVersionInfo.exe utility."
       }
     ]
   },
