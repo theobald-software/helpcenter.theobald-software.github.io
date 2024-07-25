@@ -23,4 +23,4 @@ There are 2 ways to verify that the SAP user is allowed to extract a report:
 #### Related Links
 - [Knowledge Base: Import an SAP Transport Request](../../knowledge-base/import-an-sap-transport-request.md)
 - [Knowledge Base: Authorizing Access to Specific Reports](../../knowledge-base/authorize-access-to-specific-reports.md)
-- [SAP Documentation: Create Function Group](https://help.sap.com/viewer/bd833c8355f34e96a6e83096b38bf192/7.52.0/en-US/d1801ef5454211d189710000e8322d00.html)
+- [SAP Help: Create Function Group](https://help.sap.com/viewer/bd833c8355f34e96a6e83096b38bf192/7.52.0/en-US/d1801ef5454211d189710000e8322d00.html)

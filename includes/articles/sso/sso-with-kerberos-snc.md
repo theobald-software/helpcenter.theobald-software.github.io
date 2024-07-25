@@ -103,7 +103,7 @@ e.g., `C:\SNC\gx64krb5.dll` :number-3:.
 
 ### SNC Activation in SAP
 
-In SAP, apply the Kerberos SNC settings as described in the [SAP Documentation: Single Sign-On with Microsoft Kerberos SSP](https://help.sap.com/viewer/e815bb97839a4d83be6c4fca48ee5777/7.5.9/EN-US/440ebf6c9b2b0d1ae10000000a114a6b.html).
+In SAP, apply the Kerberos SNC settings as described in the [SAP Help: Single Sign-On with Microsoft Kerberos SSP](https://help.sap.com/viewer/e815bb97839a4d83be6c4fca48ee5777/7.5.9/EN-US/440ebf6c9b2b0d1ae10000000a114a6b.html).
 
 ****
 #### Related Links

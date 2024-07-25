@@ -10,7 +10,7 @@ This sample shows how to change a production order using the function module CLO
 This sample can be used to send changes to SAP if an external program does the planning of the productions orders.
 
 To change the header data you need the production order number and the field name you are going to change. 
-For a complete list of all fields, refer to the [SAP Documentation: Function Module CLOI_CHANGES_UPL_31](https://help.sap.com/docs/SAP_ERP/812f0b55261a4d58abe8af46f4bd8cc5/fa1ebf53d25ab64ce10000000a174cb4.html?version=6.05.latest)
+For a complete list of all fields, refer to the [SAP Help: Function Module CLOI_CHANGES_UPL_31](https://help.sap.com/docs/SAP_ERP/812f0b55261a4d58abe8af46f4bd8cc5/fa1ebf53d25ab64ce10000000a174cb4.html?version=6.05.latest)
 
 Typical applications include:
 

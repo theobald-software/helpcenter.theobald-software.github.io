@@ -65,6 +65,6 @@ You can use a WHERE clause to filter table records, see [SAP ABAP Documentation:
 Enter WHERE clauses manually in *Text mode* or use the [WHERE Clause Editor](where-clause.md/#where-clause-editor) in *Editor Mode*.<br>
 
 ### Joins
-You can join two or more SAP tables and extract the result of the join, see [SAP Documentation: Inner Join and Outer Join](https://help.sap.com/doc/saphelp_nwpi71/7.1/en-US/cf/21ec77446011d189700000e8322d00/content.htm?no_cache=true). 
+You can join two or more SAP tables and extract the result of the join, see [SAP Help: Inner Join and Outer Join](https://help.sap.com/doc/saphelp_nwpi71/7.1/en-US/cf/21ec77446011d189700000e8322d00/content.htm?no_cache=true). 
 For information on how to join tables in {{ productName }}, see [Table Joins](table-join.md).
 

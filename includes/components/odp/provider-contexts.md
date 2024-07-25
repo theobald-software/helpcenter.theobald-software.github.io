@@ -119,7 +119,7 @@ There are standard delta extraction methods available for master data and transa
 
 Things that need to be considered when using Extractors:
 
-- DataSources have to be activated in SAP, see [SAP Documentation: Set Up and Activate DataSources](https://help.sap.com/viewer/7a60944343e543a1ab99e9b2904dab09/CLOUD/en-US/e5d447257a95416190d29638a64a5dfa.html).
+- DataSources have to be activated in SAP, see [SAP Help: Set Up and Activate DataSources](https://help.sap.com/viewer/7a60944343e543a1ab99e9b2904dab09/CLOUD/en-US/e5d447257a95416190d29638a64a5dfa.html).
 - When looking up DataSources or Extractors, make sure to select the correct context. <br>
 ![ODP SAPI Search](../../assets/images/documentation/components/odp/odp-datasource-sapi.png){:class="img-responsive"}
 - If delta load is available for the source object in the SAP source system, the **Delta Update** option is available in the {{ odp }} {{ component }}. 
@@ -182,7 +182,7 @@ The SLT server is a trigger-based CDC solution that can replicate SAP tables and
 
 ### Requirements
 
-The SLT server context requires an SAP Landscape Transformation Replication Server (SLT) that is set up for ODP, see [SAP Documentation: Transferring Data from SLT Using Operational Data Provisioning](https://help.sap.com/docs/SAP_NETWEAVER_750/ccc9cdbdc6cd4eceaf1e5485b1bf8f4b/6ca2eb9870c049159de25831d3269f3f.html?locale=en-US).
+The SLT server context requires an SAP Landscape Transformation Replication Server (SLT) that is set up for ODP, see [SAP Help: Transferring Data from SLT Using Operational Data Provisioning](https://help.sap.com/docs/SAP_NETWEAVER_750/ccc9cdbdc6cd4eceaf1e5485b1bf8f4b/6ca2eb9870c049159de25831d3269f3f.html?locale=en-US).
 
 The following requirements apply to the SLT server:
 - Minimum release version of the SLT server:
@@ -200,5 +200,5 @@ Consider the following when using an SLT server:
 ![ODP SLT-Server](../../assets/images/documentation/components/odp/odp-component-slt-server.png){:class="img-responsive"}
 2. A live preview of the data is not available in the SLT server context. 
 
-For more information on SLT servers, see [SAP Documentation: Transferring Data from SLT Using Operational Data Provisioning](https://help.sap.com/docs/SAP_NETWEAVER_750/ccc9cdbdc6cd4eceaf1e5485b1bf8f4b/6ca2eb9870c049159de25831d3269f3f.html?locale=en-US) or download the [SLT-Performance-Guide (Nov 2022)](../../assets/files/SLT-Performance-Guide_Nov_2022.pdf){:download="SLT-Performance-Guide_Nov_2022.pdf"}.
+For more information on SLT servers, see [SAP Help: Transferring Data from SLT Using Operational Data Provisioning](https://help.sap.com/docs/SAP_NETWEAVER_750/ccc9cdbdc6cd4eceaf1e5485b1bf8f4b/6ca2eb9870c049159de25831d3269f3f.html?locale=en-US) or download the [SLT-Performance-Guide (Nov 2022)](../../assets/files/SLT-Performance-Guide_Nov_2022.pdf){:download="SLT-Performance-Guide_Nov_2022.pdf"}.
 

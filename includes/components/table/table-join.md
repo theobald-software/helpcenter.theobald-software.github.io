@@ -10,7 +10,7 @@ The following join types are supported:
 - Inner Join
 - Left Outer Join, also referred to as *Left Join*.
 
-For more information on join types see [SAP Documentation: Inner Join and Outer Join](https://help.sap.com/doc/saphelp_nwpi71/7.1/en-US/cf/21ec77446011d189700000e8322d00/content.htm?no_cache=true). <br>
+For more information on join types see [SAP Help: Inner Join and Outer Join](https://help.sap.com/doc/saphelp_nwpi71/7.1/en-US/cf/21ec77446011d189700000e8322d00/content.htm?no_cache=true). <br>
 
 !!! note
 	Joining of cluster or pool tables is not supported. Cluster or pool tables need to be extracted individually and joined in the destination.

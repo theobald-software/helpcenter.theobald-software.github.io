@@ -374,5 +374,5 @@ XXXX (stands for a placeholder) is the authorization group for the source table.
 
 ******
 #### Related Links
-- [SAP Documentation: Role Administration](https://help.sap.com/doc/saphelp_nw74/7.4.16/en-us/52/6714a9439b11d1896f0000e8322d00/content.htm)
+- [SAP Help: Role Administration](https://help.sap.com/doc/saphelp_nw74/7.4.16/en-us/52/6714a9439b11d1896f0000e8322d00/content.htm)
 - [SAP ONE Support Launchpad](https://launchpad.support.sap.com/#/notes/2855052)

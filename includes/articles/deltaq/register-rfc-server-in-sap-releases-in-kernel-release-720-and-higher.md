@@ -63,6 +63,6 @@ The Customizing Check now executes without error messages.
 
 ****
 #### Related Links 
-- [SAP Documentation: Gateway Security Files secinfo and reginfo](https://help.sap.com/viewer/62b4de4187cb43668d15dac48fc00732/7.3.20/en-US/e216d0427a2440fc8bfc25e786b8e11c.html)
+- [SAP Help: Gateway Security Files secinfo and reginfo](https://help.sap.com/viewer/62b4de4187cb43668d15dac48fc00732/7.3.20/en-US/e216d0427a2440fc8bfc25e786b8e11c.html)
 - [SAP Note 1850230](https://launchpad.support.sap.com/#/notes/0001850230)
 - [SAP Community blog](http://scn.sap.com/docs/DOC-42463)

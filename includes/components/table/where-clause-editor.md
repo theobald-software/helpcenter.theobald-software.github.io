@@ -36,7 +36,7 @@ The following buttons and options are available in the WHERE Clause Editor:
 | :material-arrow-up: | Move row up | changes the sequence of the criteria. The selected criteria moves up. <br>The sequence of criteria can also be changed with Drag and drop. |
 | :material-arrow-down: | Move row down | changes the sequence of the criteria. The selected criteria moves down. <br>The sequence of criteria can also be changed with Drag and drop.| 
 | :where-clause-column: | Column    | adds a column. Click on the component to select a column from the available tables. | 
-| :where-clause-add-sql:| SQL       |  adds an Open SQL statement, see [SAP Documentation: Open SQL](https://help.sap.com/doc/abapdocu_750_index_htm/7.50/en-us/abenopensql.htm).      |  
+| :where-clause-add-sql:| SQL       |  adds an Open SQL statement, see [SAP Help: Open SQL](https://help.sap.com/doc/abapdocu_750_index_htm/7.50/en-us/abenopensql.htm).      |  
 | :material-not-equal-variant:| Operator  | adds an operator e.g., =, <, >, etc. |  
 | :where-clause-add-literal: | Value | adds a static value of type *String*, *Number*, *Flag* or *List*. *List* offers a separate editor to create lists of type *String*, *Number* or *Select*. *Select* enables usage of SELECT statements. {% if page.meta.product != "yunio" %}For more information, see [Working with Lists in the WHERE-Clause Editor](../../knowledge-base/where-clause-editor-lists.md). {% endif %}|
 | :where-clause-add: | Criteria | adds a new criteria after the selected criteria. |

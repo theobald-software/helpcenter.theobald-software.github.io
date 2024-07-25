@@ -223,6 +223,7 @@ extra:
   productName: yunIO
   product: yunio
   Component: Integration Type
+  Components: Integration Types
   component: integration type
   components: integration types
   Abbr: yunIO

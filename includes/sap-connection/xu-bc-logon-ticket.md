@@ -22,7 +22,7 @@ Follow the steps below to set up an SAP connection that uses SSO with Logon-Tick
 3. In the *Authentication* tab, select the authentication method **SAP Logon Ticket**.<br>
 ![sap-source-authentication-logon-ticket](../../assets/images/documentation/sap-connection/sap-source-authentication-logon-ticket.png){:class="img-responsive"}
 4. Enter the URL of an Application Server Java (AS Java) that is configured to issue logon tickets in the field **Ticket issuer Url**.
-For more information, see [SAP Documentation: Configuring the AS Java to Issue Logon Tickets](https://help.sap.com/doc/saphelp_nw75/7.5.5/EN-US/4a/412251343f2ab1e10000000a42189c/frameset.htm).
+For more information, see [SAP Help: Configuring the AS Java to Issue Logon Tickets](https://help.sap.com/doc/saphelp_nw75/7.5.5/EN-US/4a/412251343f2ab1e10000000a42189c/frameset.htm).
 5. To open the connection in the Windows Active Directory user context of the caller, activate the option **Impersonate caller when running extractions (Kerberos SSO)**. 
 Otherwise the connection is opened in the context of the service account under which the {{ productName }} Windows service runs.
 6. Click **[Test designer connection]** to validate the connection between the {{ productName }} Designer and the SAP system. 

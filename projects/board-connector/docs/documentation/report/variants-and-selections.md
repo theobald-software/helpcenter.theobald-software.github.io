@@ -16,5 +16,5 @@ description: Variants and Selections
 ******
 
 #### Related Links
-- [SAP Documentation: Report variants in SAP](https://help.sap.com/docs/btp/ABAP/3353524716.html)
+- [SAP Help: Report variants in SAP](https://help.sap.com/docs/btp/ABAP/3353524716.html)
 
