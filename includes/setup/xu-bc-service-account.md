@@ -41,7 +41,7 @@ When using [SSO with Kerberos SNC](../../knowledge-base/sso-with-kerberos-snc.md
 1. Set *constrained delegation* for the Windows domain account under which the {{ productName }} Service runs.<br>
 ![service_account_constr_deleg](../../assets/images/{{ abbr }}/documentation/setup/SSO_WinAD_Delegation.png){:class="img-responsive"}
 2. Enter the SPN of the service account under which the SAP ABAP application server is running (SAP Service Account), e.g., `SAPServiceERP/do_not_care`.<br>
-For more information about the partner name notation in SAP, see the [SAP Documentation: Preparing the Primary Application Server Instance](https://help.sap.com/viewer/e815bb97839a4d83be6c4fca48ee5777/7.5.9/en-US/440ebb40b9920d1be10000000a114a6b.html).
+For more information about the partner name notation in SAP, see the [SAP Help: Preparing the Primary Application Server Instance](https://help.sap.com/viewer/e815bb97839a4d83be6c4fca48ee5777/7.5.9/en-US/440ebb40b9920d1be10000000a114a6b.html).
 
 
 *********

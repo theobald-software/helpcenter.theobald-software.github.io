@@ -31,10 +31,10 @@ To do so, use the SQL templates provided in the following staging steps:
 Follow the steps below to generate a Custom SQL command from a template:
 
 1. In one of the staging steps, select the *Custom SQL* option from the drop-down list :number-1:.
-2. Click **[Edit SQL]** :number-2:. The dialogue "Edit SQL" opens.
+2. Click **[Edit SQL]** :number-2:. The dialogue "Edit SQL" opens.<br>
 ![Formula-ExistsTable](../../assets/images/xu/documentation/destinations/ms-sql/custom-sql.png){:class="img-responsive"}
 3. Navigate to the drop-down menu and select an existing command :number-3:. 
-4. Click **[Generate Statement]**. A new statement is generated.
+4. Click **[Generate Statement]**. A new statement is generated.<br>
 ![Formula-ExistsTable](../../assets/images/xu/documentation/destinations/ms-sql/custom-sql-generate-statement.png){:class="img-responsive"}
 5. Click **[Copy]** to copy the statement to the clipboard.
 6. Click **[OK]** to confirm your input.

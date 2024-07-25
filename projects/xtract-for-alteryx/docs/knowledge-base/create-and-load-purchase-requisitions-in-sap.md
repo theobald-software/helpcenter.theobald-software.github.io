@@ -29,8 +29,7 @@ This process uses an input parameter and a batch macro to pass the input paramet
 
 ### Prerequisites
 
-To use the Xtract BAPI component, access to the designated authority objects (RFC) in SAP must be available. <br>
-For more information, refer to the knowledge base article [SAP User Rights: BAPI](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights#bapi).
+To use the Xtract BAPI component, access to the designated authority objects (RFC) in SAP must be available, see [SAP User Rights: BAPI](../documentation/setup-in-sap/sap-authority-objects.md#bapi).
 
 ### Create a new Purchase Requisition in SAP
 
@@ -54,7 +53,7 @@ Use this information to prepare the input data of the purchase requisition:<br>
 11. In the tab *Tables* assign the input data to the table REQUISITION_ITEMS.<br>
 ![create-purchase-requisition-table-param](../assets/images/xfa/articles/create-purchase-requisition-table-param.png){:class="img-responsive"}
 11. Add the tables REQUISITION_ITEMS and RETURN to the output of the Xtract BAPI component.
-12. In the tab *Exports* add the export parameter NUMBER for the output.
+12. In the tab *Exports* add the export parameter NUMBER for the output.<br>
 ![create-purchase-requisition-export-param](../assets/images/xfa/articles/create-purchase-requisition-export-param.png){:class="img-responsive"}
 13. Click **[OK]** to save the settings.
 14. Select the Xtract BAPI component and activate the option **Commit work in SAP after execution**.<br>

@@ -4,7 +4,7 @@ description: SSO with SNC
 ---
 
 Secure Network Communication (SNC) enables authentication and transport encryption between SAP systems and between SAP systems and third-party tools like Xtract Universal and Board Connector. 
-For more information on SNC, see [SAP Documentation: SNC](https://help.sap.com/doc/saphelp_nw73ehp1/7.31.19/en-US/e6/56f466e99a11d1a5b00000e835363f/content.htm?no_cache=true).
+For more information on SNC, see [SAP Help: SNC](https://help.sap.com/doc/saphelp_nw73ehp1/7.31.19/en-US/e6/56f466e99a11d1a5b00000e835363f/content.htm?no_cache=true).
 
 When using SNC you can choose between the [NTLM](#ntlm) or the [Kerberos5](#kerberos) mechanism. 
 

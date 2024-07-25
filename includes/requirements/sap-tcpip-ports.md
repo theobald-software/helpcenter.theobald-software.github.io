@@ -10,4 +10,4 @@ The following ports between the Windows server that runs {{ productName }} and t
 | Secure Network Communication (SNC)| 48\<NN\> |
 | SAP-Router | 3299 |
 
-For more information, see [SAP Documentation: TCP/IP Ports of All SAP Products](https://help.sap.com/viewer/ports).
+For more information, see [SAP Help: TCP/IP Ports of All SAP Products](https://help.sap.com/viewer/ports).

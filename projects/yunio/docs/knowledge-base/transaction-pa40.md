@@ -22,7 +22,7 @@ The depicted example application uses a yunIO service to create a new employee i
     The parameters that are needed to create new employees are dependent on your customized SAP settings.
 
 1. Create a new Service with the integration type *Transaction*. For more information on creating a service, see [Create a Service](../getting-started.md/#create-a-service).
-2. In the transaction service enter the transaction PA40 and press **[Start]**. A replicated SAP GUI of the transaction PA40 is displayed.
+2. In the transaction service enter the transaction PA40 and press **[Start]**. A replicated SAP GUI of the transaction PA40 is displayed.<br>
 ![personnel-actions](../assets/images/yunio/articles/personnel-actions.png){:class="img-responsive"}
 3. Enter a start date for the new employee in the format `DD.mm.YYYY`. This input can be replaced with a runtime parameter after the transaction is recorded.
 4. Select the action type **Hiring**.
@@ -39,7 +39,7 @@ Click **[Continue]** to close any pop-up windows and continue to the next screen
 11. Click **[Save]** to save your actions. <br>
 Alternatively, click **[Stop]** to start parameterizing, see [Documentation: Parameterize Transactions](../documentation/transactions/index.md/#parameterize-transactions).
 12. Copy the URL of the service definition ( :yunio-copy: icon) or download the service definition ( :yunio-run-download: icon) to integrate the service in your workflow.
-For information on how to use yunIO services in Power Automate or Nintex, see [Integrate a yunIO Service with Power Automate](integrate-a-yunio-service-with-power-automate.md) or [Integrate a yunIO Service with Nintex](integrate-a-yunio-service-with-nintex.md).
+For information on how to use yunIO services in Power Automate or Nintex, see [Integrate a yunIO Service with Power Automate](integrate-a-yunio-service-with-power-automate.md) or [Integrate a yunIO Service with Nintex](integrate-a-yunio-service-with-nintex.md).<br>
 ![yunio-Services](../assets/images/yunio/articles/yunio-run-services.png){:class="img-responsive"}
 
 <!---

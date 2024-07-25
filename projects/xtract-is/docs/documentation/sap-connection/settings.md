@@ -64,7 +64,7 @@ For more information, see [SNC Authentication](snc-authentication.md)<br>
 | **SNC library (32 Bit, Visual Studio)** | Path to the SNC library for 32 Bit, e.g., `C:\Program Files (x86)\SAP\FrontEnd\SecureLogin\sapcrypto.dll` |
 | **SNC library (64 Bit)** | Path to the SNC library for 64 Bit, e.g., `C:\Program Files\SAP\FrontEnd\SecureLogin\sapcrypto.dll` |
 | **Partner Name** | The SAP Partner Name configured for the SAP application server, e.g., `p:SAPserviceERP/Alice@THEOBALD.LOCAL`. |
-| **Quality of Protection** | The SNC level of protection. The default value is *9 - Maximum*. For more information, see [SAP Documentation: Secure Network Communications (SNC) - Levels of Protection](https://help.sap.com/docs/SAP_NETWEAVER_701/6f3e0bea6c4b101484fcf5305b4d624b/e656f466e99a11d1a5b00000e835363f.html?version=7.01.22#levels-of-protection). |
+| **Quality of Protection** | The SNC level of protection. The default value is *9 - Maximum*. For more information, see [SAP Help: Secure Network Communications (SNC) - Levels of Protection](https://help.sap.com/docs/SAP_NETWEAVER_701/6f3e0bea6c4b101484fcf5305b4d624b/e656f466e99a11d1a5b00000e835363f.html?version=7.01.22#levels-of-protection). |
 
 #### Expert Options
 

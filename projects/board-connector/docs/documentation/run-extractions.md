@@ -45,7 +45,7 @@ For more information about URL parameters, see [Dynamic Connection Parameters](p
 8. Select the corresponding fields for mapping (e.g., WERKS, NAME1, etc.).
 ![Load-Extraction-04](../assets/images/bc/documentation/automation/Load-Extraction-04.png)
 9. In the column **Position**, map each field of the entity to an SAP field. Select the correct mode for *Insert* or *Update*. In the depicted example, the mode "ADD NEW ITEM" is selected for all fields.
-10. Click **[Browse Query]** and **[OK]**.
+10. Click **[Browse Query]** and **[OK]**.<br>
 ![Load-Extraction-05](../assets/images/bc/documentation/automation/Load-Extraction-05.png)
 11. Execute the Data Reader to extract the SAP data. <br>
 ![Load-Extraction-06](../assets/images/bc/documentation/automation/Load-Extraction-06.png)

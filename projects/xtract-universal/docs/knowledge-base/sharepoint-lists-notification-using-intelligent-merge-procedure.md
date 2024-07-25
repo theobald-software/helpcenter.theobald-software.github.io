@@ -1,5 +1,5 @@
 ---
-title: SharePoint lists notification using intelligent merge procedure
+title: SharePoint Lists Notification using Intelligent Merge Procedure
 description: SharePoint lists notification using intelligent merge procedure
 ---
 

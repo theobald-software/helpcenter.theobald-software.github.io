@@ -27,5 +27,5 @@ For more information on the delta process, see [Initialize a Delta Process](upda
 *****
 #### Related Links
 - [DeltaQ Troubleshooting Guide](https://support.theobald-software.com/helpdesk/KB/View/14424-deltaq-troubleshooting-guide). 
-- [SAP Documentation: Activate the BI Content DataSource](https://help.sap.com/saphelp_scm70/helpdata/ru/d8/8f5738f988d439e10000009b38f842/content.htm?no_cache=true)
+- [SAP Help: Activate the BI Content DataSource](https://help.sap.com/saphelp_scm70/helpdata/ru/d8/8f5738f988d439e10000009b38f842/content.htm?no_cache=true)
 - [Knowledge Base Article: Create Generic DataSource using Function Module and Timestamps](../../knowledge-base/create-generic-datasource-using-function-module-and-timestamps.md)

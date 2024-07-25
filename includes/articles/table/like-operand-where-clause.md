@@ -31,4 +31,4 @@ This also applies in particular to operands of the type string with trailing bla
 
 ****
 #### Related Links
-- [SAP Documentation: Open SQL - Operands and Expressions - LIKE ](https://help.sap.com/doc/abapdocu_752_index_htm/7.52/en-US/abenwhere_logexp_like.htm)
+- [SAP Help: Open SQL - Operands and Expressions - LIKE ](https://help.sap.com/doc/abapdocu_752_index_htm/7.52/en-US/abenwhere_logexp_like.htm)

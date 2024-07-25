@@ -102,6 +102,5 @@ The depicted example uses a storage account *xtractstorage* and a container call
 Downloads for the trigger and the master pipeline are provided below:
 
 [:material-download-circle: Download Trigger as json](../assets/files/xu/BlobEventsTrigger01.json){ .md-button .md-button--primary }
-
 [:material-download-circle: Download MASTER pipeline as json](../assets/files/xu/ProcessBlobStorageFile.json){ .md-button .md-button--primary }
 

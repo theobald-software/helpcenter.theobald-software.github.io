@@ -41,7 +41,7 @@ The data load script is required to run extractions in your Qlik application.
 4. Optional (when using QlikSense): In the *Parameters* section, mark the check boxes for the parameters that you want to add as SET variables in the QlikSense script.
 5. Click **[Generate Qlik Script]** to generate a data load script. The window "Script" opens.
 6. Select the *QlikView Script* or *QlikSense Script* tab.
-7. Click **[Copy to Clipboard]** to copy the script.
+7. Click **[Copy to Clipboard]** to copy the script.<br>
 ![XU_qlik_generate_Script](../../assets/images/xu/documentation/destinations/qlik/XU_qlik_generate_Script_2.png){:class="img-responsive"}
 
 When using QlikView, paste the copied script into the QlikView data load editor. For QlikSense, see [Run Extractions from QlikSense](#run-extractions-from-qliksense).

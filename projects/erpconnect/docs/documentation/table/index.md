@@ -34,7 +34,7 @@ Follow the steps below to create a custom function module Z_XTRACT_IS_TABLE in S
 	!!! note 
 		You can use an existing function group or create a new one. This is also valid for the development class (Package).
 		
-2. In the tab *Attributes* check *Remote Enabled*.
+2. In the tab *Attributes* check *Remote Enabled*.<br>
 ![Z-Custom-Funcion-01](../../assets/images/erpconnect/documentation/Z_XTRACT_IS_TABLE00.png){:class="img-responsive" }
 3. define the following import imports:<br>
 ![Z-Custom-Function-02](../../assets/images/erpconnect/documentation/Z_XTRACT_IS_TABLE01.png){:class="img-responsive" }

@@ -20,7 +20,7 @@ The input fields for the SAP connections vary depending on the connection method
 yunIO supports the following connection methods to SAP systems:
 
 - :material-toggle-switch-off: Connection to a single application server.
-- :material-toggle-switch: Connection to a message server, see [SAP Documentation: Load Balancing](https://help.sap.com/saphelp_nwpi711/helpdata/en/c4/3a644c505211d189550000e829fbbd/content.htm?no_cache=true).
+- :material-toggle-switch: Connection to a message server, see [SAP Help: Load Balancing](https://help.sap.com/saphelp_nwpi711/helpdata/en/c4/3a644c505211d189550000e829fbbd/content.htm?no_cache=true).
 
 Use the toggle to switch between the connection methods.
 

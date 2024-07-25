@@ -53,7 +53,7 @@ The following operations are supported in the WHERE clause:
 
 <!--- | (NOT) BETWEEN | True if the content of the operand1 lies (not) between the values of the operands operand2 and operand3. |-->
 
-For more details on the OpenSQL syntax, see [SAP Documentation: Select WHERE](https://help.sap.com/doc/abapdocu_752_index_htm/7.52/en-US/abapwhere.htm?file=abapwhere.htm) 
+For more details on the OpenSQL syntax, see [SAP Help: Select WHERE](https://help.sap.com/doc/abapdocu_752_index_htm/7.52/en-US/abapwhere.htm?file=abapwhere.htm) 
 
 !!! tip
 	To increase extracting performance, make sure to place the indexed fields as the first selection filter operation in the WHERE clause.

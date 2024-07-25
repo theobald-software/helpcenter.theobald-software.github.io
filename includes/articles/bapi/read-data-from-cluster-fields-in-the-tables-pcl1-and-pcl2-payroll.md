@@ -7,7 +7,7 @@ Data extraction via {{ table }} {{ component }} is not supported.
 
 Create the following custom function module in SAP:
 
-1. Use SAP transaction SE37 to create a remote enabled custom function module Z_HR_CLUSTER_READ. 
+1. Use SAP transaction SE37 to create a remote enabled custom function module Z_HR_CLUSTER_READ. <br>
 ![payroll01](site:assets/images/articles/bapi/payroll01.png){:class="img-responsive"}
 2. Create the following parameters:
 

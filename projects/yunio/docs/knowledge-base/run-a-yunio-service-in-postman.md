@@ -56,7 +56,7 @@ If not, enter the URL and select the *POST* method.
 Click **[Send]** to execute the service.<br>
 ![Swagger-Inspector](../assets/images/yunio/articles/postman-run.png){:class="img-responsive"}
 
-The results are displayed in the **Response** section of Postman.
+The results are displayed in the **Response** section of Postman.<br>
 ![Postman-Results](../assets/images/yunio/articles/postman-results.png){:class="img-responsive"}
 
 ******

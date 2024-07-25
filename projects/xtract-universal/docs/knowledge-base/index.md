@@ -23,7 +23,7 @@ hide:
 - [Run {{ productName }} in a VM on AWS EC2](run-xu-in-aws.md)
 - [Target Principal Field (TPN)](target-principal-TPN.md)
 - [Proxy Server Settings in {{ productName }}](proxy-server-settings.md)
-- [SharePoint lists notification using intelligent merge procedure](sharepoint-lists-notification-using-intelligent-merge-procedure.md)
+- [SharePoint Lists Notification using Intelligent Merge Procedure](sharepoint-lists-notification-using-intelligent-merge-procedure.md)
 
 <!--- - [Log Access via Web Service](log-access-via-http.md) -->
 
@@ -104,7 +104,7 @@ The following articles refer to specific [destinations](../documentation/destina
 
 ### :simple-amazonredshift: Amazon Redshift
 
-- [Configure AnySQL Maestro to manage Amazon Redshift](configuring-anysql-maestro-to-manage-amazon-redshift.md)
+- [Configure AnySQL Maestro to Manage Amazon Redshift](configuring-anysql-maestro-to-manage-amazon-redshift.md)
 
 </div>
 

@@ -110,7 +110,7 @@ The following authentication methods are supported:
 
 	| Input Field | Description |
 	|:------------|:-------------|
-	| **Ticket Issuer** | Enter the URL of an Application Server Java (AS Java) that is configured to issue logon tickets. For more information, see [SAP Documentation: Configuring the AS Java to Issue Logon Tickets](https://help.sap.com/doc/saphelp_nw75/7.5.5/EN-US/4a/412251343f2ab1e10000000a42189c/frameset.htm).|
+	| **Ticket Issuer** | Enter the URL of an Application Server Java (AS Java) that is configured to issue logon tickets. For more information, see [SAP Help: Configuring the AS Java to Issue Logon Tickets](https://help.sap.com/doc/saphelp_nw75/7.5.5/EN-US/4a/412251343f2ab1e10000000a42189c/frameset.htm).|
 
 ### Miscellaneous
 

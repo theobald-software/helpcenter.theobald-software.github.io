@@ -18,7 +18,7 @@ The application now returns to the main window of the {{ component }}.
 
 The {{ ohs }} {{ component }} offers the following options for OHS extractions:
 
-1. If **Process Chain** is empty, enter an SAP process chain assigned to your OHS destination, see [SAP Documentation: Display/Maintenance of Process Chain Attributes](https://help.sap.com/docs/SAP_NETWEAVER_701/6da591e86c4b1014b43de329b9ffb859/4a2cf30c6ed91c62e10000000a42189c.html?locale=en-US).
+1. If **Process Chain** is empty, enter an SAP process chain assigned to your OHS destination, see [SAP Help: Display/Maintenance of Process Chain Attributes](https://help.sap.com/docs/SAP_NETWEAVER_701/6da591e86c4b1014b43de329b9ffb859/4a2cf30c6ed91c62e10000000a42189c.html?locale=en-US).
 
 	!!! note
 		If **Process Chain** is left empty, the extraction fails.

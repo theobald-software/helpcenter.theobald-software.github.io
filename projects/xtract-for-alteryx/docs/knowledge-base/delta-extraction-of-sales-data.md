@@ -24,12 +24,7 @@ The delta mechanism of the {{ odp }} {{ component }} allows loading only the add
 
 ### Prerequisites
 
-Implement the following SAP notes to use the {{ odp }} {{ component }}:
-- [1931427 - ODP Data Replication API 2.0](https://launchpad.support.sap.com/#/notes/1931427)
-- [2232584 - Release of SAP extractors for ODP replication (ODP SAPI)](https://launchpad.support.sap.com/#/notes/2232584)
-- [1560241 - Release of DataSources for ODP data replication API](https://launchpad.support.sap.com/#/notes/1560241)
-- [2196500 - ODP Package size cannot be reduced below 50 MB](https://launchpad.support.sap.com/#/notes/2196500/D)
-- [2191995 - ODQ Package Size cannot be reduced below 50 MByte](https://launchpad.support.sap.com/#/notes/2191995/D)
+To use the Xtract ODP component, multiple prerequisites must be met, see [Documentation: ODP - Prerequisites](../documentation/odp/index.md/#prerequisites).
 
 ### Delta Extraction of Sales Documents
 

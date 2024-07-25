@@ -19,10 +19,10 @@ The SAP connection assigned to a transaction service must use an SAP dialog user
 The depicted example application uses a yunIO service to change items in a sales order in SAP.
 
 1. Create a new Service with the integration type *Transaction*. For more information on creating a service, see [Create a Service](../getting-started.md/#create-a-service).
-2. In the transaction service enter the transaction VA02 and press **[Start]**. A replicated SAP GUI of the transaction VA02 is displayed.
+2. In the transaction service enter the transaction VA02 and press **[Start]**. A replicated SAP GUI of the transaction VA02 is displayed.<br>
 ![change-sales-order](../assets/images/yunio/articles/change-sales-order.png){:class="img-responsive"}
 3. Enter an order number between 1 - 4999999.<br>
-This input can be replaced with a runtime parameter after the transaction is recorded.
+This input can be replaced with a runtime parameter after the transaction is recorded.<br>
 ![change-sales-order2](../assets/images/yunio/articles/change-sales-order2.png){:class="img-responsive"}
 4. Click **[Submit]** to execute the action and to continue to the next screen. All actions are logged in the *GUI Steps* section of the UI.
 5. If a pop-op window opens in SAP, the message of the pop-up window is displayed in yunIO. Click **[Submit]** to close any pop-up windows and continue to the next screen.

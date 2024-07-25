@@ -112,10 +112,9 @@ If your yunIO service has a different name or settings, edit the table settings 
 
 Follow the steps below to integrate the script in your Nintex Form:
 
-1. Open the settings of the Nintex form and copy the JavaScript into the field **Custom JavaScript**.
+1. Open the settings of the Nintex form and copy the JavaScript into the field **Custom JavaScript**.<br>
 ![nintex-office-java-code](../assets/images/yunio/articles/nintex-office-java-code.png){:class="img-responsive" }
 2. Click **[Save]**.
-
 
 ### Run the Nintex Form
 1. Preview or publish the Nintex form.

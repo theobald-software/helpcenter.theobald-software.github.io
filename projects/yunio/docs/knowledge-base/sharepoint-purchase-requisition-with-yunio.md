@@ -116,6 +116,6 @@ For conversion tips and code templates, see [Formats and Conversions in Power Au
 
 1. Open SharePoint and add a new purchase requisition.
 2. The Power Automate workflow runs and creates the purchase requisition in SAP.
-3. Check if the SAP purchase requisition number is written back to SharePoint.
+3. Check if the SAP purchase requisition number is written back to SharePoint.<br>
 ![sharepoint-purchase-requisition](../assets/images/yunio/articles/sharepoint-purchase-requisition.png){:class="img-responsive" }
 

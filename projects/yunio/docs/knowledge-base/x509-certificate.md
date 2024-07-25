@@ -33,7 +33,7 @@ Have a TLS certificate issued by your IT network team considering the following 
 ### Import an X.509 Certificate
 
 1. Import the certificate to the Windows Certificate Store using Microsoft Management Console (mmc).
-In the example shown, the server name is "sherri":
+In the example shown, the server name is "sherri":<br>
 ![XU-X509-MMC](../assets/images/yunio/articles/certificate.png){:class="img-responsive"}
 2. Open the yunIO Designer and navigate to the *Settings* menu. 
 3. Click **[Pick Certificate]** to reference the X.509 certificate.<br>

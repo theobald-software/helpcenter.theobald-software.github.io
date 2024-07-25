@@ -5,7 +5,7 @@
 2. Enter the name of an SAP query in the field **Query Name** or the name of a user group in the field **User group** :number-1:. 
 Use wildcards (*) if needed.<br>
 ![Look-Up-Query](../../assets/images/documentation/components/query/query_look-up.png){:class="img-responsive"}
-3. Select the query work area that contains the query object :number-2:. For more information, see [SAP Documentation: Query Areas](https://help.sap.com/doc/saphelp_nw74/7.4.16/en-us/4e/3bdad0b8503b0fe10000000a42189e/frameset.htm).
+3. Select the query work area that contains the query object :number-2:. For more information, see [SAP Help: Query Areas](https://help.sap.com/doc/saphelp_nw74/7.4.16/en-us/4e/3bdad0b8503b0fe10000000a42189e/frameset.htm).
 4. Click **[:magnifying-glass:]**. Search results are displayed.
 4. Select a query :number-3: and click **[OK]**.
 

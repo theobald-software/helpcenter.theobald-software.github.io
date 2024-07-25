@@ -91,7 +91,7 @@ This is necessary, because passwords are encrypted for the user account that run
 
 ### Create a Table Extraction using Windows Command Prompt
 
-1. Start the Windows command prompt application :number-1: with administrator rights :number-2:. 
+1. Start the Windows command prompt application :number-1: with administrator rights :number-2:. <br>
 ![cmd-prompt](../assets/images/xu/articles/cmd_prompt.png){:class="img-responsive"}
 2. Navigate to the installation directory of {{ productName }}.
 3. Use the following command to select the *xu-config.exe* command line tool from the {{ productName }} installation directory and to create a new Table extraction: 

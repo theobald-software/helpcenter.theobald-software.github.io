@@ -36,7 +36,7 @@ The OBJECTID from CDHDR and MATNR from MAKT have same entries and thus form an i
 ```
 CDHDR~UDATE = '#{ DateTime.Now.ToString("yyyyMMdd") }#'
 ```
-This criteria uses script expressions to get the current date in the SAP format ("yyyyMMdd").
+This criteria uses script expressions to get the current date in the SAP format ("yyyyMMdd").<br>
 ![CDHDR-MAKT-where](../assets/images/articles/table/CDHDR-MAKT-where.png){:class="img-responsive"}
 9. Click **[Load live review]** to check the results.
 Only the data in MAKT that has been changed on today's date is extracted.

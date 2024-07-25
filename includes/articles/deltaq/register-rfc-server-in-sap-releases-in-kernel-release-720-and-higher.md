@@ -18,7 +18,7 @@ When setting the profile parameter *gw/acl_mode* to 0 (default is 1), all RFC de
 
 1. Use SAP transaction RZ10 to open the "Edit Profile" menu.
 2. Select the profile name *Default* and *Extended Maintenance*.
-3. Click **[Change]** and set the profile parameter *gw/acl_mode* value to *0*
+3. Click **[Change]** and set the profile parameter *gw/acl_mode* value to *0*<br>
 ![SAP_parameter](../assets/images/articles/deltaq/parameter_gw_acl_mode.png){:class="img-responsive"}
 
 The Customizing Check now executes without error messages.
@@ -63,6 +63,6 @@ The Customizing Check now executes without error messages.
 
 ****
 #### Related Links 
-- [SAP Documentation: Gateway Security Files secinfo and reginfo](https://help.sap.com/viewer/62b4de4187cb43668d15dac48fc00732/7.3.20/en-US/e216d0427a2440fc8bfc25e786b8e11c.html)
+- [SAP Help: Gateway Security Files secinfo and reginfo](https://help.sap.com/viewer/62b4de4187cb43668d15dac48fc00732/7.3.20/en-US/e216d0427a2440fc8bfc25e786b8e11c.html)
 - [SAP Note 1850230](https://launchpad.support.sap.com/#/notes/0001850230)
 - [SAP Community blog](http://scn.sap.com/docs/DOC-42463)

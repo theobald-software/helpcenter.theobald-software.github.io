@@ -40,16 +40,16 @@ snc/identity/as | Application server's SNC name Syntax: p:\<Distinguished_Name\>
 
 2. Convert pfx file to SAP PSE format e.g., `sapgenpse.exe import_p12 -p cert.pse cert.pfx`.
 3. Import the created PSE file via **TA STRUST > Edit mode > PSE Import > PSE Save as SNC Libcrypto**.
-4. Edit the SNC configuration of the corresponding SAP user via transaction SU01 :number-1:, **SNC** :number-2:, **SNC Name** :number-3: = p:\<Full Distinguished_Name\> <br> e.g., `p:EMAIL="RandomUser@domain",CN="Random User",OU="Users",OU="TheobaldSoftware",DC="theobald",DC="local"`.
+4. Edit the SNC configuration of the corresponding SAP user via transaction SU01 :number-1:, **SNC** :number-2:, **SNC Name** :number-3: = p:\<Full Distinguished_Name\> <br> e.g., `p:EMAIL="RandomUser@domain",CN="Random User",OU="Users",OU="TheobaldSoftware",DC="theobald",DC="local"`.<br>
 ![SNC User Settings](site:assets/images/articles/snc_user_settings.png){:class="img-responsive"}
 5. Set up SNC authentication in the {{ productName }} SAP connection settings.
 
 ****
 #### Releated Links
-- [SAP Documentation: Workflow with X.509 Certificate without Secure Login Server](https://help.sap.com/viewer/df185fd53bb645b1bd99284ee4e4a750/3.0/en-US/06d9e59a0fd44aa4aa082ffad7d618e3.html)
-- [SAP Documentation: Secure Network Communications (SNC)](https://help.sap.com/doc/saphelp_nw70/7.0.31/en-us/e6/56f466e99a11d1a5b00000e835363f/content.htm?no_cache=true)
-- [SAP Documentation: Configuring SNC: External Programs AS ABAP Using RFC ](https://help.sap.com/doc/saphelp_nwpi71/7.1/en-US/d9/e8a740bbaa4d8f8bee6f7b173bd99f/content.htm?loaded_from_frameset=true)
-- [SAP Documentation: Setting the SNC Profile Parameters](https://help.sap.com/doc/saphelp_nw73ehp1/7.31.19/en-US/19/164442c1a1c353e10000000a1550b0/content.htm?no_cache=true)
-- [SAP Documentation: Configuring SAP GUI and SAP Logon for Single Sign-On](https://help.sap.com/doc/saphelp_nw73ehp1/7.31.19/en-US/44/0ea40dc6970d1ce10000000a114a6b/content.htm?no_cache=true)
-- [SAP Documentation: Secure Login Client](https://help.sap.com/viewer/df185fd53bb645b1bd99284ee4e4a750/3.0/en-US/ba21970855064e54a9246b6c6de67fb2.html)
+- [SAP Help: Workflow with X.509 Certificate without Secure Login Server](https://help.sap.com/viewer/df185fd53bb645b1bd99284ee4e4a750/3.0/en-US/06d9e59a0fd44aa4aa082ffad7d618e3.html)
+- [SAP Help: Secure Network Communications (SNC)](https://help.sap.com/doc/saphelp_nw70/7.0.31/en-us/e6/56f466e99a11d1a5b00000e835363f/content.htm?no_cache=true)
+- [SAP Help: Configuring SNC: External Programs AS ABAP Using RFC ](https://help.sap.com/doc/saphelp_nwpi71/7.1/en-US/d9/e8a740bbaa4d8f8bee6f7b173bd99f/content.htm?loaded_from_frameset=true)
+- [SAP Help: Setting the SNC Profile Parameters](https://help.sap.com/doc/saphelp_nw73ehp1/7.31.19/en-US/19/164442c1a1c353e10000000a1550b0/content.htm?no_cache=true)
+- [SAP Help: Configuring SAP GUI and SAP Logon for Single Sign-On](https://help.sap.com/doc/saphelp_nw73ehp1/7.31.19/en-US/44/0ea40dc6970d1ce10000000a114a6b/content.htm?no_cache=true)
+- [SAP Help: Secure Login Client](https://help.sap.com/viewer/df185fd53bb645b1bd99284ee4e4a750/3.0/en-US/ba21970855064e54a9246b6c6de67fb2.html)
 - [SAP Additional Content: List of SNC Error Codes](https://wiki.scn.sap.com/wiki/display/Security/List+of+SNC+Error+Codes)

@@ -63,7 +63,7 @@ If **Automatic Synchronization** is active, the activation is performed automati
 
 !!! note
 	If the data source is modified in the SAP system, manually activate the data source in the {% if page.product == "xtract-is" or page.product == "xtract-for-alteryx"%}Xtract{% endif %} DeltaQ component, even when **Automatic Synchronization** is active. 
-	Otherwise data load will fail. This behavior belongs to the SAP design, see [SAP Documentation: Replication of DataSources](https://help.sap.com/viewer/ccc9cdbdc6cd4eceaf1e5485b1bf8f4b/7.4.19/en-US/4a12eaff76df1b42e10000000a42189c.html).
+	Otherwise data load will fail. This behavior belongs to the SAP design, see [SAP Help: Replication of DataSources](https://help.sap.com/viewer/ccc9cdbdc6cd4eceaf1e5485b1bf8f4b/7.4.19/en-US/4a12eaff76df1b42e10000000a42189c.html).
 
 #### Add Serialization Info to Output
 

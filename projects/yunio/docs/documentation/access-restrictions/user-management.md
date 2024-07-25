@@ -11,7 +11,7 @@ The yunIO user management allows you to create custom users with credentials to 
 Follow the steps below to create new users:
 
 1. Navigate to the  :yunio-nav-user: *Users* menu.
-2. Click **[Add User]**. The user details open.
+2. Click **[Add User]**. The user details open.<br>
 ![Users](../../assets/images/yunio/documentation/yunio-users.png){:class="img-responsive" }
 3. Enter a unique name for the user. <br>
 ![New-User](../../assets/images/yunio/documentation/yunio-new-user.png){:class="img-responsive" }
@@ -34,7 +34,7 @@ Follow the steps below to delete existing users:
 Follow the steps below to change the password of a user:
 
 1. Navigate to the  :yunio-nav-user: *Users* menu.
-2. Click :yunio-edit-connection:. The user details open.
+2. Click :yunio-edit-connection:. The user details open.<br>
 ![Edit-Users](../../assets/images/yunio/documentation/yunio-users-edit.png){:class="img-responsive" }
 3. Change the password of the user. The password must be at least 8 characters long.
 4. Re-enter the new password to avoid spelling mistakes.

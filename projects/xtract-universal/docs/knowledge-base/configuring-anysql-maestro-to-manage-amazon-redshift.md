@@ -1,5 +1,5 @@
 ---
-title: Configure AnySQL Maestro to manage Amazon Redshift
+title: Configure AnySQL Maestro to Manage Amazon Redshift
 description: Configuring AnySQL Maestro
 ---
 

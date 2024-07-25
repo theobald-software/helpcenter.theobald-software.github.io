@@ -17,7 +17,7 @@ The depicted example uses an extraction called *0COSTCENTER_0101_HIER* with a da
 2. Create a pipeline in ADF that stores yesterday's date in a variable :number-1:.<br>
 ![adf-pipeline](../assets/images/xu/articles/adf-pipeline.png){:class="img-responsive"}
 3. Format the date to the internal SAP date format (YYYYMMDD).<br>
-The type and format of the input variable must match the type and format of the actual parameter in {{ productName }}.
+The type and format of the input variable must match the type and format of the actual parameter in {{ productName }}.<br>
 ![adf-call-extractions-variable](../assets/images/xu/articles/azura-data-factory-date-variable.png){:class="img-responsive"}
 4. Add a web activity that calls extractions :number-2:.
 The URL used to call static extractions has the following format: <br>`[Protocol]://[HOST or IP address]:[Port]/?name=[Name of the Extraction]`

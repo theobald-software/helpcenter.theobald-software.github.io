@@ -48,7 +48,7 @@ Follow the steps below to create a simple service that extracts the SAP ABAP rep
 2. [Look up](#look-up-a-report) the report RLT10010.
 3. Select a variant or enter selection parameters. The given example uses a variant *VAR01*.<br>
 ![report-rlt10010](../../assets/images/yunio/documentation/report-rlt10010.png){:class="img-responsive"}
-4. Run the report in SAP to determine the number of rows to skip. Set **Skip rows from top** to 8 to skip the header of the report.
+4. Run the report in SAP to determine the number of rows to skip. Set **Skip rows from top** to 8 to skip the header of the report.<br>
 ![SAP-Table-or-Views](../../assets/images/yunio/documentation/report-sap3.png){:class="img-responsive"}
 5. Click **[Detect Columns]** to automatically detect the columns of the report. The detected columns are displayed in the section *Output Columns*.
 6. Click **[Save]** to save the service.

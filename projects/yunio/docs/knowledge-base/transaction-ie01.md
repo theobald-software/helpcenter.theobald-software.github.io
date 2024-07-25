@@ -24,7 +24,7 @@ Follow the steps below to create a new equipment in SAP.<br>
 2. In the transaction service enter the transaction IE01 and press **[Start]**. A replicated SAP GUI of the transaction IE01 is displayed.<br>
 ![yunio-Transaction](../assets/images/yunio/articles/transaction.png){:class="img-responsive"}
 3. Edit the fields according to the kind of equipment you want to create e.g., enter a new equipment.
-4. Click **[Submit]** to execute the action and continue to the next screen. All actions are logged in the GUI Steps section of the UI.
+4. Click **[Submit]** to execute the action and continue to the next screen. All actions are logged in the GUI Steps section of the UI.<br>
 ![yunio-Transaction-IE01](../assets/images/yunio/articles/transaction-ie01.png){:class="img-responsive"}
 5. Edit the data of your equipment or record screens for parameterization.<br>
 All fields that need to be parameterized must be available in the section GUI Steps. 
@@ -34,7 +34,7 @@ Example: to parameterize a field in a specific tap or menu, the tab or menu must
 7. Click **[Save]** to save your actions. <br>
 Alternatively, click **[Stop]** to start parameterizing, see [Documentation: Parameterize Transactions](../documentation/transactions/index.md/#parameterize-transactions).
 8. Copy the URL of the service definition ( :yunio-copy: icon) or download the service definition ( :yunio-run-download: icon) to integrate the service in your workflow.
-For information on how to use yunIO services in Power Automate or Nintex, see [Integrate a yunIO Service with Power Automate](integrate-a-yunio-service-with-power-automate.md) or [Integrate a yunIO Service with Nintex](integrate-a-yunio-service-with-nintex.md).
+For information on how to use yunIO services in Power Automate or Nintex, see [Integrate a yunIO Service with Power Automate](integrate-a-yunio-service-with-power-automate.md) or [Integrate a yunIO Service with Nintex](integrate-a-yunio-service-with-nintex.md). <br>
 ![yunio-Services](../assets/images/yunio/articles/yunio-run-services.png){:class="img-responsive"}
 
 !!! note

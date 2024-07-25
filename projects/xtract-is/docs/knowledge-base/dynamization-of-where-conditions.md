@@ -45,7 +45,7 @@ The SAP standard table *BKPF - Accounting Document Header* and the table field *
 	
 7. Click **[Evaluate Expression]** to check if the syntax is correct.
 8. Click **[OK]** in the Expression Builder and the Property Expression Editor to confirm the input.
-9. Check the WHERE-Clause of the table extraction in tab *WHERE Clause*.
+9. Check the WHERE-Clause of the table extraction in tab *WHERE Clause*.<br>
 ![xis-where-condition](../assets/images/xis/articles/xis_where_clause_tab.png){:class="img-responsive"}
 10. Run the SSIS package.
 

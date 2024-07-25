@@ -9,4 +9,4 @@ description: An overview and description of all Hierarchy settings
 
 *****
 #### Related Links
-- [SAP Documentation: About SAP BW Hierarchies](https://help.sap.com/saphelp_scm41/helpdata/en/90/fd36709c6411d5b4000050dadfb23f/content.htm?no_cache=true)
+- [SAP Help: About SAP BW Hierarchies](https://help.sap.com/saphelp_scm41/helpdata/en/90/fd36709c6411d5b4000050dadfb23f/content.htm?no_cache=true)
