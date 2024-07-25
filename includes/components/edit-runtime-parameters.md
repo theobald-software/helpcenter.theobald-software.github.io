@@ -12,7 +12,7 @@ There are two types of {{ variables }}:
 	The window “Edit Runtime Parameters” opens.<br>
 	![open-edit-runtime-parameters](../../assets/images/{{ abbr }}/documentation/{{ page.meta.componentFolder }}/open-edit-runtime-parameters.png){:class="img-responsive"}
 	2. Click **[Add Scalar]** to define scalar parameters to be used as placeholders for actual values.
-	The placeholders need to be populated with actual values at runtime.
+	The placeholders need to be populated with actual values at runtime.<br>
 	![dd-parameters](../../assets/images/documentation/components/runtime-parameters/edit-runtime-parameters.png){:class="img-responsive"}
 	
 		!!! tip

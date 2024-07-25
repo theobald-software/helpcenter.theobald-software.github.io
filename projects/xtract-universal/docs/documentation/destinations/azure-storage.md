@@ -90,7 +90,7 @@ The input fields in the subsection *Access key parameters* vary depending on the
 	| **Storage account** |	Enter your storage account name. Do not enter the full URL. |
 	| **Access key** | Enter the access key of the Azure Storage account. |
 	
-	You can copy the storage account name and access key from the [Azure Portal](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?toc=/azure/storage/blobs/toc.json#view-access-keys-and-connection-string).
+	You can copy the storage account name and access key from the [Azure Portal](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?toc=/azure/storage/blobs/toc.json#view-access-keys-and-connection-string).<br>
 	![xu-azure-blob-con](../../assets/images/xu/documentation/destinations/azure-storage/xu-azure-blob-con.png){:class="img-responsive"}
 
 	#### Connect
