@@ -83,7 +83,6 @@ extra_css:
 extra_javascript:
   - assets/javascripts/hyperscript.min.js
   - assets/javascripts/changelog.js
-  - assets/javascripts/seo-tags.js
   
 # Plugins
 plugins:

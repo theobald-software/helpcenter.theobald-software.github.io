@@ -7,6 +7,40 @@
 
   <link rel="stylesheet" href="{{ 'assets/stylesheets/custom.00c04c01.min.css' | url }}">
   
+  <script>
+  
+    // Get page metadata
+    const pageTitle = document.title;
+    const pageMeta = document.querySelector('meta[name="description"]');
+    const metaDescription = pageMeta ? pageMeta.getAttribute('content') : '';
+    const gitInfo = mkdocs_data['git-revision-date-localized'];
+
+    // Check for image in page metadata
+    let pageImage = [];
+    const metaImages = document.querySelectorAll('meta[property="og:image"]');
+    if (metaImages.length > 0) {
+        metaImages.forEach(meta => pageImage.push(meta.getAttribute('content')));
+    }
+
+	</script>
+	<script type="application/ld+json">
+    // Construct JSON-LD script
+    const jsonLd = {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": pageTitle,
+        "image": pageImage,
+        "datePublished": gitInfo.creation_date,
+        "dateModified": gitInfo.last_modified_date,
+        "author": [{
+            "@type": "Organization",
+            "name": "Theobald Software GmbH",
+            "url": "https://theobald-software.com/"
+        }]
+    };
+
+  </script>
+  
    <meta property="og:url" content="{{ page.canonical_url }}">
   {% if page and page.meta and page.meta.title %}
     <meta property="og:title" content="{{ page.meta.title }}">
