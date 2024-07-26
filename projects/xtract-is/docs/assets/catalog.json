@@ -12,6 +12,11 @@
         "Product": "Common",
         "Component": "General",
         "Message": "Fixed error when clicking on links in About Window (caused by migration to .net8)"
+      },
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "Table",
+        "Message": "Fixed a bug where script expressions would not be correctly evaluated in the preview."
       }
     ]
   },
