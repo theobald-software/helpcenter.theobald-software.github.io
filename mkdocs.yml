@@ -86,6 +86,7 @@ plugins:
         - ultralytics:
             add_share_buttons: False
             add_dates: False
+            add_json_ld: True
         - minify: # minifies HTML by stripping all whitespace from the generated documentation
             minify_html: true
 
