@@ -3,7 +3,7 @@
     {
       "@context": "https://schema.org",
       "@type": "Article",
-      "headline": page.title,
+      "headline": page.meta.title,
       "image": [page.meta["image"]] if "image" in page.meta else [],
       "datePublished": git_info["creation_date"],
       "dateModified": git_info["last_modified_date"],
