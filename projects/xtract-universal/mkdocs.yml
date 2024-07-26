@@ -95,6 +95,8 @@ plugins:
       links_attr_map:
         target: _blank # opens all external links in new tabs
   - meta # define front matter of multiple ,md files in .meta.yml file 
+  - ultralytics:
+      default_image: "https://helpcenter.theobald-software.com/assets/external/dummyimage.com/600x400/f5f5f5/aaaaaa.8f6c0d08.png"
   - tags # enables tags in front matter
   - social:
       cards_layout: default
@@ -124,6 +126,8 @@ plugins:
         #enable_creation_date: true
         #type: timeago
          #- optimize
+         - ultralytics:
+             default_image: "https://helpcenter.theobald-software.com/assets/external/dummyimage.com/600x400/f5f5f5/aaaaaa.8f6c0d08.png"
          - minify:
              minify_html: true
 
