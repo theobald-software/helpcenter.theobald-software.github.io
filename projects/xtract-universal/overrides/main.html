@@ -22,22 +22,24 @@
         metaImages.forEach(meta => pageImage.push(meta.getAttribute('content')));
     }
 
-	</script>
-	<script type="application/ld+json">
-	{
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": pageTitle,
-        "image": pageImage,
-        "datePublished": gitInfo.creation_date,
-        "dateModified": gitInfo.last_modified_date,
-        "author": [{
-            "@type": "Organization",
-            "name": "Theobald Software GmbH",
-            "url": "https://theobald-software.com/"
-        }]
-	}
   </script>
+  
+  
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": document.title,
+      "image": pageImage,
+      "datePublished": gitInfo.creation_date,
+      "dateModified": gitInfo.last_modified_date,
+      "author": [{
+          "@type": "Organization",
+          "name": "Theobald Software GmbH",
+          "url": "https://theobald-software.com/"
+      }]
+	}
+</script>
   
    <meta property="og:url" content="{{ page.canonical_url }}">
   {% if page and page.meta and page.meta.title %}
