@@ -83,7 +83,9 @@ plugins:
       enabled: !ENV CI
       plugins:
         #- optimize # compresses images and files
-        - ultralytics
+        - ultralytics:
+            add_share_buttons: False
+            add_dates: False
         - minify: # minifies HTML by stripping all whitespace from the generated documentation
             minify_html: true
 
