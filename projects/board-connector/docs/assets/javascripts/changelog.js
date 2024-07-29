@@ -76,8 +76,8 @@ document.addEventListener('DOMContentLoaded', () => {
 			<td>${firstChange ? item.LegacyReleaseDate.split(' ')[0] : ''}</td>
 			<td>${change.Component}</td>
 			<td>
-			  ${item.IsBreaking ? '<img src="../version-history-new/link_broken.svg" alt="breaking-change" style="width:20px;">' : ''}
-			  ${item.IsCritical ? '<img src="../version-history-new/critical.svg" alt="breaking-change" style="width:20px;">' : ''}
+			  ${firstChange && item.IsBreaking ? '<img src="../version-history-new/link_broken.svg" alt="breaking-change" style="width:20px;">' : ''}
+			  ${firstChange && item.IsCritical ? '<img src="../version-history-new/critical.svg" alt="breaking-change" style="width:20px;">' : ''}
 			</td>
 			<td>${change.Message} ${change.ReleaseNote ? ` <button class="show-more" data-release-note="${encodeURIComponent(change.ReleaseNote)}" data-product-name="${change.Product}" data-version="${item.Version}" style="cursor: pointer; color: #ED1A33;">(Open Release note)</button>` : ''}</td>
 		  `;
