@@ -21,7 +21,10 @@ The following privileges are required:
 	- PUT command
 	- COPY command
 	- TABLE
-	
+
+The Snowflake destination only supports [Snowflake managed data stages](https://docs.snowflake.com/en/user-guide/data-load-local-file-system).
+To write SAP data to external stages in Snowflake, refer to the [Azure Storage](azure-storage.md), [AWS S3](amazon-aws-s3.md) or [Google Cloud](google-cloud-storage) destination. 
+
 {% include "destinations/create-destination.md" %}
 
 
