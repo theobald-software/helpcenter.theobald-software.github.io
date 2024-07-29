@@ -541,10 +541,10 @@ When adding images in [reusable text](#include-reusable-text), you can use the f
 ```
 
 !!! note
-   Make sure to add an HTML break ```<br>``` before every image. 
+	Make sure to add an HTML break ```<br>``` before every image.
+ 
    
-   
-This makes it possible to include images independently from the location in the directory. Downside: broken links to images do not cause errors or warnings when building the project.
+The syntax makes it possible to include images independently from the location in the directory. Downside: broken links to images do not cause errors or warnings when building the project.
 
 #### Additional Options
 
