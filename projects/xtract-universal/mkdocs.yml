@@ -96,10 +96,6 @@ plugins:
         target: _blank # opens all external links in new tabs
   - meta # define front matter of multiple ,md files in .meta.yml file 
   - tags # enables tags in front matter
-  - social:
-      cards_layout: default
-      cards_layout_options:
-        background_color: "#98892C"
   - search
       #lang: en
       #separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
@@ -131,6 +127,10 @@ plugins:
           #   add_json_ld: True
          - minify:
              minify_html: true
+         - social:
+             cards_layout: default
+             cards_layout_options:
+               background_color: "#98892C"
 
 # Hook for Relative Links
 hooks:
