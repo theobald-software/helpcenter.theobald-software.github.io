@@ -106,7 +106,7 @@ The stages and warehouses then become available for selection.
 
 #### Stage name
 Select a Snowflake Stage.
-Note that only "internal" stages are supported. <!--please check if "supported" a good term in this case-->
+Note that only Snowflake managed data stages are displayed. <!--please check if "supported" a good term in this case-->
 
 #### Warehouse
 Select a Snowflake Data Warehouse.
