@@ -42,47 +42,47 @@ The window "Manage Destinations" opens. Here, you can edit, delete and add new d
 
 - title: Amazon Redshift <br><br><span class="keyword">push-destination</span>
   image: site:assets/images/xu/documentation/destinations/logos/Amazon-Redshift.png
-  url: amazon-redshift
+  url: site:documentation/destinations/amazon-redshift
   
 - title: Azure Synapse Analytics <br><br><span class="keyword">push-destination</span> 
   image: site:assets/images/xu/documentation/destinations/logos/Azure-Synapse-Analytics.png
-  url: azure-synapse-analytics
+  url: site:documentation/destinations/azure-synapse-analytics
   
 - title: Azure SQL Database <br><br><span class="keyword">push-destination</span>
   image: site:assets/images/xu/documentation/destinations/logos/Azure-SQL-Database.png
-  url: microsoft-sql-server
+  url: site:documentation/destinations/microsoft-sql-server
 
 - title: EXASolution <br><br><br><span class="keyword">push-destination</span> 
   image: site:assets/images/xu/documentation/destinations/logos/Exasol.svg
-  url: exasol
+  url: site:documentation/destinations/exasol
   
 - title: IBM Db2 <br><br><span class="keyword">push-destination</span> 
   image: site:assets/images/xu/documentation/destinations/logos/IBM-db2.png
-  url: ibm-db2
+  url: site:documentation/destinations/ibm-db2
 
 - title: MySQL <br><br><span class="keyword">push-destination</span> 
   image: site:assets/images/xu/documentation/destinations/logos/MySQL.png
-  url: mysql
+  url: site:documentation/destinations/mysql
 
 - title: Oracle <br><br><span class="keyword">push-destination</span> 
   image: site:assets/images/xu/documentation/destinations/logos/Oracle.png
-  url: oracle
+  url: site:documentation/destinations/oracle
   
 - title: PostgreSQL <br><br><span class="keyword">push-destination</span>
   image: site:assets/images/xu/documentation/destinations/logos/PostgreSQL.png
-  url: postgreSQL
+  url: site:documentation/destinations/postgreSQL
 
 - title: SAP HANA <br><br><span class="keyword">push-destination</span> 
   image: site:assets/images/xu/documentation/destinations/logos/SAP-Logo.png
-  url: sap-hana
+  url: site:documentation/destinations/sap-hana
     
 - title: Snowflake <br><br><span class="keyword">push-destination</span> 
   image: site:assets/images/xu/documentation/destinations/logos/Snowflake.png
-  url: snowflake
+  url: site:documentation/destinations/snowflake
 
 - title: SQL Server <br><br><span class="keyword">push-destination</span> 
   image: site:assets/images/xu/documentation/destinations/logos/SQL-Server.png
-  url: microsoft-sql-server
+  url: site:documentation/destinations/microsoft-sql-server
   
 ::/cards::
 
@@ -93,31 +93,31 @@ The window "Manage Destinations" opens. Here, you can edit, delete and add new d
 
 - title: Alteryx <br><br><br><span class="keyword">pull-destination</span>
   image: site:assets/images/logos/business-content/Alteryx-Logo.png
-  url: alteryx
+  url: site:documentation/destinations/alteryx
     
 - title: KNIME <br><br><br><span class="keyword">pull-destination</span> 
   image: site:assets/images/xu/documentation/destinations/logos/KNIME.png
-  url: knime
+  url: site:documentation/destinations/knime
   
 - title: Power BI Connector <br><br><span class="keyword">pull-destination</span> 
   image: site:assets/images/xu/documentation/destinations/logos/Power-BI.png
-  url: Power-BI-Connector
+  url: site:documentation/destinations/Power-BI-Connector
   
 - title: Power BI Report Server <br><br><span class="keyword">pull-destination</span> 
   image: site:assets/images/xu/documentation/destinations/logos/Power-BI-Report-Server.png
-  url: server-report-services
+  url: site:documentation/destinations/server-report-services
   
 - title: QlikSense and QlikView <br><br><br><span class="keyword">pull-destination</span> 
   image: site:assets/images/xu/documentation/destinations/logos/Qlik.png
-  url: qliksense-qlikview
+  url: site:documentation/destinations/qliksense-qlikview
  
 - title: SQL Server Reporting Services <br><br><span class="keyword">pull-destination</span> 
   image: site:assets/images/xu/documentation/destinations/logos/SQL-Server.png
-  url: server-report-services
+  url: site:documentation/destinations/server-report-services
   
 - title: Tableau <br><br><br><br><span class="keyword">push-destination</span> 
   image: site:assets/images/xu/documentation/destinations/logos/Tableau.svg
-  url: tableau
+  url: site:documentation/destinations/tableau
 
 ::/cards::
 
@@ -127,11 +127,11 @@ The window "Manage Destinations" opens. Here, you can edit, delete and add new d
 
 - title: Salesforce <br><br><span class="keyword">push-destination</span>
   image: site:assets/images/xu/documentation/destinations/logos/Salesforce.png
-  url: salesforce
+  url: site:documentation/destinations/salesforce
   
 - title: SharePoint <br><br><span class="keyword">push-destination</span> 
   image: site:assets/images/xu/documentation/destinations/logos/SharePoint.png
-  url: sharepoint
+  url: site:documentation/destinations/sharepoint
   
 ::/cards::
 
@@ -142,30 +142,30 @@ The window "Manage Destinations" opens. Here, you can edit, delete and add new d
 
 - title: Amazon S3 <br><br><br><span class="keyword">push-destination</span>
   image: site:assets/images/xu/documentation/destinations/logos/Amazon-S3.png
-  url: amazon-aws-s3
+  url: site:documentation/destinations/amazon-aws-s3
   
 - title: Azure Blob Storage<br><br><span class="keyword">push-destination</span> 
   image: site:assets/images/xu/documentation/destinations/logos/Azure-Blob.png
-  url: azure-storage
+  url: site:documentation/destinations/azure-storage
   
 - title: Azure Data Lake Storage <br><br><span class="keyword">push-destination</span> 
   image: site:assets/images/xu/documentation/destinations/logos/Azure-Data-Lake.png
-  url: azure-storage
+  url: site:documentation/destinations/azure-storage
   
 - title: Google Cloud Storage <br><br><span class="keyword">push-destination</span>
   image: site:assets/images/xu/documentation/destinations/logos/Google-Cloud.png
-  url: google-cloud-storage
+  url: site:documentation/destinations/google-cloud-storage
   
 - title: Huawei Cloud OBS <br><br><span class="keyword">push-destination</span> 
   image: site:assets/images/xu/documentation/destinations/logos/Huawei.png
-  url: huawei
+  url: site:documentation/destinations/huawei
   
 ::/cards::
 
 <!---
 - title: Azure Storage (Blob / Data Lake) <br><br><span class="keyword">push-destination</span> 
   image: site:assets/images/xu/documentation/destinations/logos/Azure.png
-  url: azure-storage
+  url: site:documentation/destinations/azure-storage
 -->
 
 
@@ -175,23 +175,23 @@ The window "Manage Destinations" opens. Here, you can edit, delete and add new d
 
 - title: CSV Web Service <br><br><span class="keyword">pull-destination</span>
   image: site:assets/images/xu/documentation/destinations/logos/net_csv.svg
-  url: csv-via-http
+  url: site:documentation/destinations/csv-via-http
   
 - title: JSON Web Service <br><br><span class="keyword">pull-destination</span> 
   image: site:assets/images/xu/documentation/destinations/logos/net_json.svg
-  url: json-via-http
+  url: site:documentation/destinations/json-via-http
   
 - title: CSV Flat-Files<br><br><span class="keyword">push-destination</span> 
   image: site:assets/images/xu/documentation/destinations/logos/doc_csv.svg
-  url: csv-flat-file
+  url: site:documentation/destinations/csv-flat-file
   
 - title: JSON Flat-Files<br><br><span class="keyword">push-destination</span>
   image: site:assets/images/xu/documentation/destinations/logos/doc_json.svg
-  url: json-flat-file
+  url: site:documentation/destinations/json-flat-file
   
 - title: Parquet Flat-Files<br><br><span class="keyword">push-destination</span> 
   image: site:assets/images/xu/documentation/destinations/logos/Parquet.png
-  url: parquet
+  url: site:documentation/destinations/parquet
   
 ::/cards::
 
