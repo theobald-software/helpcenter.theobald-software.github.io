@@ -14,8 +14,13 @@ This scenario supports script expressions based on .NET and the following XU-spe
 |<pre>#{Extraction.Timestamp}#</pre> |  Timestamp of the extraction.  |
 |<pre>#{Extraction.SapObjectName.TrimStart("/".ToCharArray())}#</pre>  |Removes the first slash '/' of an SAP object. <br> Example: /BIO/TMATERIAL to BIO/TMATERIAL - prevents creating an empty folder in a file path.
 |<pre>#{Extraction.SapObjectName.Replace('/', '_')}#</pre> | Replaces all slashes '/' of an SAP object. <br> Example /BIO/TMATERIAL to _BIO_TMATERIAL - prevents splitting the SAP object name by folders in a file path.         |
+|<pre>#{Extraction.Fields["FISCPER"].RangeSelections[0].LowerValue}#</pre> |Lower value of the range selection.  |
+|<pre>#{Extraction.Fields["FISCPER"].RangeSelections[0].UpperValue}#</pre> |Upper value of the range selection. |
 |<pre>#{Extraction.Context}#</pre> |  Only for ODP extractions: returns the context of the ODP object (*SAPI*, *ABAP_CDS*, etc). |
 |<pre>#{Extraction.Fields["[NameSelectionFiels]"].Selections[0].Value}#</pre>| Only for ODP extractions: returns the input value of a defined selection / filter.| 
 |<pre>#{Odp.UpdateMode}#</pre> | Only for ODP extractions: returns the update mode (*Delta*, *Full*, *Repeat*) of the extraction.| 
 |<pre>#{TableExtraction.WhereClause}#</pre> | Only for Table extractions: returns the WHERE clause of the extraction.  |
+
+
+
 
