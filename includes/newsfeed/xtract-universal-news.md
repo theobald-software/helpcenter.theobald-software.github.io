@@ -5,7 +5,7 @@
 
     ---
 
-    We are aware of the issue surrounding the [SAP Note 3255746](https://me.sap.com/notesLatestChanges/0003255746/E/diff). For information on how to handle this matter, refer to our [Blog post from 2024-07-29](https://theobald-software.com/en/products-technology-en/guidance-on-sap-note-3255746-for-theobald-software-xtract-products/).
+    We are aware of the issue surrounding the [SAP Note 3255746](https://me.sap.com/notesLatestChanges/0003255746/E/diff). For information on how to handle this matter, refer to our [Blog post from July 2024](https://theobald-software.com/en/products-technology-en/guidance-on-sap-note-3255746-for-theobald-software-xtract-products/).
 
     ---
 
