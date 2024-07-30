@@ -65,19 +65,36 @@ document.addEventListener('DOMContentLoaded', () => {
 	};
 
 	const renderRow = (item) => {
-		const rows = item.Changes.map(change => {
-			const row = document.createElement('tr');
+		const rows = [];
+		const hasMultipleChanges = item.Changes.length > 1;
 
-			row.innerHTML = `
-          <td>${item.Version}</td>
-          <td>${item.LegacyReleaseDate.split(' ')[0]}</td>
-          <td>${change.Component} <br>(${change.Product})</td>
-          <td style="width:5%;text-align:center;">${item.IsBreaking ? '<img src="../assets/images/logos/link_broken.svg" alt="breaking-change" title="Breaking Change: This update affects (breaks) your existing extraction setup.  Be sure to test this update on a QA environment, before updating your production environment. Read the Release Note to understand if and how your extractions are affected by this update." style="width:20px;"> ' : ' '}${item.IsCritical ? '<img src="../assets/images/logos/critical.svg" alt="critical-change" title="Critical Change: This is an important software release. Installing this update is highly recommended." style="width:20px;">' : ' '}</td>
-		  <td>${item.IsBreaking ? 'Breaking change: ' : ''}${item.IsCritical ? 'Critical change: ' : ''}
-		  ${change.Message} ${change.ReleaseNote ? `<br> <button class="show-more" data-release-note="${encodeURIComponent(change.ReleaseNote)}" data-product-name="Board Connector" data-version="${item.Version}" style="cursor: pointer; color: #ED1A33;">(Release Notes)</button>` : ''}</td>
-        `;
-			return row;
-		});
+		const summaryRow = document.createElement('tr');
+		summaryRow.innerHTML = `
+			<td>${item.Version}</td>
+			<td>${item.LegacyReleaseDate.split(' ')[0]}</td>
+			<td>${hasMultipleChanges ? 'Multiple changes' : `${item.Changes[0].Component} <br>  ${item.Changes[0].Product ? `(${item.Changes[0].Product})` : ''}`}</td>
+			<td>
+			${item.IsBreaking ? '<img src="../assets/images/logos/link_broken.svg" alt="breaking-change" title="Breaking Change: This update affects (breaks) your existing extraction setup.  Be sure to test this update on a QA environment, before updating your production environment. Read the Release Note to understand if and how your extractions are affected by this update." style="width:20px;">' : ''}
+			${item.IsCritical ? '<img src="../assets/images/logos/critical.svg" alt="critical-change" title="Critical Change: This is an important software release. Installing this update is highly recommended." style="width:20px;">' : ''}
+			</td>
+			<td>${!hasMultipleChanges ? item.Changes[0].Message : ''}</td>
+		`;
+		rows.push(summaryRow);
+
+		if (hasMultipleChanges) {
+			item.Changes.forEach((change, index) => {
+				const row = document.createElement('tr');
+				row.innerHTML = `
+				<td></td>
+				<td></td>
+				<td>${change.Component} ${change.Component} <br> (${change.Product})</td>
+				<td></td>
+				<td>${change.Message} ${change.ReleaseNote ? ` <button class="show-more" data-release-note="${encodeURIComponent(change.ReleaseNote)}" data-product-name="${change.Product}" data-version="${item.Version}" style="cursor: pointer; color: #ED1A33;">(Open Release note)</button>` : ''}</td>
+			  `;
+				rows.push(row);
+			});
+		}
+
 		return rows;
 	};
 
