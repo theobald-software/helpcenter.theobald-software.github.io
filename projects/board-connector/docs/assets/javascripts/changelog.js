@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		summaryRow.innerHTML = `
 			<td>${item.Version}</td>
 			<td>${item.LegacyReleaseDate.split(' ')[0]}</td>
-			<td>${hasMultipleChanges ? 'Multiple changes' : item.Changes[0].Component}</td>
+			<td>${hasMultipleChanges ? 'Multiple changes' : `${item.Changes[0].Component} <br>  ${item.Changes[0].Product ? `(${item.Changes[0].Product})` : ''}`}</td>
 			<td>
 			${item.IsBreaking ? '<img src="../assets/images/logos/link_broken.svg" alt="breaking-change" title="Breaking Change: This update affects (breaks) your existing extraction setup.  Be sure to test this update on a QA environment, before updating your production environment. Read the Release Note to understand if and how your extractions are affected by this update." style="width:20px;">' : ''}
 			${item.IsCritical ? '<img src="../assets/images/logos/critical.svg" alt="critical-change" title="Critical Change: This is an important software release. Installing this update is highly recommended." style="width:20px;">' : ''}
@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded', () => {
 				row.innerHTML = `
 				<td></td>
 				<td></td>
-				<td>${change.Component}</td>
+				<td>${change.Component} ${change.Component} <br> (${change.Product})</td>
 				<td></td>
 				<td>${change.Message} ${change.ReleaseNote ? ` <button class="show-more" data-release-note="${encodeURIComponent(change.ReleaseNote)}" data-product-name="${change.Product}" data-version="${item.Version}" style="cursor: pointer; color: #ED1A33;">(Open Release note)</button>` : ''}</td>
 			  `;
