@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			row.innerHTML = `
 			<td>${firstChange ? item.Version : ''}</td>
 			<td>${firstChange ? item.LegacyReleaseDate.split(' ')[0] : ''}</td>
-			<td>${change.Component}</td>
+			<td>${firstChange ? 'Multiple Changes' : change.Component}</td>
 			<td>
 			  ${firstChange && item.IsBreaking ? '<img src="../version-history-new/link_broken.svg" alt="breaking-change" style="width:20px;">' : ''}
 			  ${firstChange && item.IsCritical ? '<img src="../version-history-new/critical.svg" alt="breaking-change" style="width:20px;">' : ''}
