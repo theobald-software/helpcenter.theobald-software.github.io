@@ -5,7 +5,7 @@
 
     ---
 
-    We are aware of the issue surrounding the [SAP Note 3255746](https://me.sap.com/notesLatestChanges/0003255746/E/diff). For information on how to handle this matter, contact our sales team at [sales@theobald-software.com](mailto:sales@theobald-software.com).
+    We are aware of the issue surrounding the [SAP Note 3255746](https://me.sap.com/notesLatestChanges/0003255746/E/diff). For information on how to handle this matter, refer to our [Blog post from July 2024](https://theobald-software.com/en/products-technology-en/guidance-on-sap-note-3255746-for-theobald-software-xtract-products/).
 
     ---
 
@@ -25,7 +25,7 @@
 
     ---
 
-    Looking for something? <br>Try the search bar, our new Theo chatbot or browse our [user documentation](documentation/introduction.md).
+    Looking for something? <br>Try the search bar, browse our [user documentation](documentation/introduction.md) or take a look at our [knowledge base](knowledge-base/index.md).
 
     ---
 
@@ -35,7 +35,7 @@
 
     ---
 
-    Xtract for Alteryx now uses the release date of a software update to create the version number, e.g., 2024.7.23.1 instead of 1.21.2.34. Find the complete version history in [changelog](changelog.md). 
+    The version numbers in the [changelog](changelog.md) now incorporate the release date of the software, e.g., 2024.7.23.1 instead of 1.21.2.34.
 
     ---
 

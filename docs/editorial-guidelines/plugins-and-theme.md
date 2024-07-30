@@ -107,3 +107,6 @@ Troubleshooting:
 - [Material Issue Tracker](https://github.com/squidfunk/mkdocs-material/issues)
 - [Material Discussion Board](https://github.com/squidfunk/mkdocs-material/discussions)
 - [Material - How to report a bug](https://squidfunk.github.io/mkdocs-material/contributing/reporting-a-bug/)
+
+Newsfeed:
+- [SharePoint List](https://theobaldsoftware.sharepoint.com/Lists/Help%20Newsfeed/AllItems.aspx)

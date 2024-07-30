@@ -23,7 +23,7 @@ The following privileges are required:
 	- TABLE
 
 The Snowflake destination only supports [Snowflake managed data stages](https://docs.snowflake.com/en/user-guide/data-load-local-file-system).
-To write SAP data to external stages in Snowflake, refer to the [Azure Storage](azure-storage.md), [AWS S3](amazon-aws-s3.md) or [Google Cloud](google-cloud-storage) destination. 
+To write SAP data to external stages in Snowflake, refer to the [Azure Storage](azure-storage.md), [AWS S3](amazon-aws-s3.md) or [Google Cloud](google-cloud-storage.md) destination. 
 
 {% include "destinations/create-destination.md" %}
 
@@ -106,7 +106,7 @@ The stages and warehouses then become available for selection.
 
 #### Stage name
 Select a Snowflake Stage.
-Note that only "internal" stages are supported. <!--please check if "supported" a good term in this case-->
+Note that only Snowflake managed data stages are displayed. <!--please check if "supported" a good term in this case-->
 
 #### Warehouse
 Select a Snowflake Data Warehouse.

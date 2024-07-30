@@ -93,6 +93,15 @@
   min-height: 120px;
 }
 
+.nt-card-icon {
+  text-align: center;
+  border-radius: 2px;
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-width: 100%;
+}
+
 .nt-card .nt-card-image.tags img {
   margin-top: 12px;
 }
