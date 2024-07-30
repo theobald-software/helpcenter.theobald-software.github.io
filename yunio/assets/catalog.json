@@ -1,5 +1,31 @@
 [
   {
+    "Version": "1.32.18.21",
+    "LegacyReleaseDate": "2024-07-26 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "ODP",
+        "Message": "Fixed a performance regression causing XML reading when processing ODP packages to be extremely slow."
+      },
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "BW Cube",
+        "Message": "MDX: Ignore empty members in list parameters"
+      },
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "Table",
+        "Message": "Fixed a bug where script expressions would not be correctly evaluated in the preview."
+      },
+      {
+        "Product": "Theobald.Server",
+        "Component": "General",
+        "Message": "Fixed a bug where ODP range selections would not be available in the extraction's script expressions."
+      }
+    ]
+  },
+  {
     "Version": "1.32.18.16",
     "LegacyReleaseDate": "2024-07-25 00:00:00Z",
     "Changes": [
