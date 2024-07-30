@@ -15,6 +15,16 @@
       },
       {
         "Product": "Theobald.Extractors",
+        "Component": "ODP",
+        "Message": "Fixed a performance regression causing XML reading when processing ODP packages to be extremely slow."
+      },
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "BW Cube",
+        "Message": "MDX: Ignore empty members in list parameters"
+      },
+      {
+        "Product": "Theobald.Extractors",
         "Component": "Table",
         "Message": "Fixed a bug where script expressions would not be correctly evaluated in the preview."
       }
