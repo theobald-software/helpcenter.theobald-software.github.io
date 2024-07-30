@@ -1,27 +1,5 @@
 [
   {
-    "Version": "2024.7.25.60",
-    "LegacyReleaseDate": "2024-07-25 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "Table",
-        "Message": "Fixed a bug where script expressions would not be correctly evaluated in the preview."
-      }
-    ]
-  },
-  {
-    "Version": "2024.7.25.43",
-    "LegacyReleaseDate": "2024-07-25 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Common",
-        "Component": "General",
-        "Message": "Fixed error when clicking on links in About Window (caused by migration to .net8)"
-      }
-    ]
-  },
-  {
     "Version": "2024.7.24.2",
     "LegacyReleaseDate": "2024-07-24 00:00:00Z",
     "Changes": [
@@ -40,6 +18,26 @@
         "Product": "XtractForAlteryx",
         "Component": "General",
         "Message": "Migrated XtractForAlteryx to new version numbering scheme. During an update, the setup now detects which version is currently installed and displays a list of breaking changes (if there are any) that have been introduced since the previously installed version."
+      },
+      {
+        "Product": "Common",
+        "Component": "General",
+        "Message": "Fixed error when clicking on links in About Window (caused by migration to .net8)"
+      },
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "ODP",
+        "Message": "Fixed a performance regression causing XML reading when processing ODP packages to be extremely slow."
+      },
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "BW Cube",
+        "Message": "MDX: Ignore empty members in list parameters"
+      },
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "Table",
+        "Message": "Fixed a bug where script expressions would not be correctly evaluated in the preview."
       }
     ]
   },
