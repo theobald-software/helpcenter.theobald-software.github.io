@@ -25,7 +25,7 @@
 
     ---
 
-    Looking for something? <br>Try the search bar, our new Theo chatbot or browse our [user documentation](documentation/introduction.md).
+    Looking for something? <br>Try the search bar, browse our [user documentation](documentation/introduction.md) or take a look at our [knowledge base](knowledge-base/index.md).
 
     ---
 
