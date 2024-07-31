@@ -1,5 +1,43 @@
 [
   {
+    "Version": "6.6.1.1",
+    "LegacyReleaseDate": "2024-07-31 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Common",
+        "Component": "General",
+        "Message": "Updated AboutWindow with links for new HelpCenter"
+      },
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "General",
+        "Message": "Updated help links in various windows for new HelpCenter"
+      }
+    ]
+  },
+  {
+    "Version": "6.6.1.0",
+    "LegacyReleaseDate": "2024-07-31 13:48:52Z",
+    "Changes": [
+      {
+        "Product": "BoardConnector",
+        "Component": "Designer",
+        "Message": "Updated link URLs in various windows that direct to the new HelpCenter when pressing F1"
+      }
+    ]
+  },
+  {
+    "Version": "6.6.0.21",
+    "LegacyReleaseDate": "2024-07-30 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "Table",
+        "Message": "Z_XTRACT_IS_TABLE_COMPRESSION marked as deprecated and cannot be selected anymore. The function module will be out of support starting 01/01/2025."
+      }
+    ]
+  },
+  {
     "Version": "6.6.0.18",
     "LegacyReleaseDate": "2024-07-26 00:00:00Z",
     "Changes": [
