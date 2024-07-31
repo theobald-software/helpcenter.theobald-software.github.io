@@ -22,7 +22,22 @@
       {
         "Product": "Common",
         "Component": "General",
+        "Message": "Updated AboutWindow with links for new HelpCenter"
+      },
+      {
+        "Product": "Common",
+        "Component": "General",
         "Message": "Fixed error when clicking on links in About Window (caused by migration to .net8)"
+      },
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "General",
+        "Message": "Updated help links in various windows for new HelpCenter"
+      },
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "Table",
+        "Message": "Z_XTRACT_IS_TABLE_COMPRESSION marked as deprecated and cannot be selected anymore. The function module will be out of support starting 01/01/2025."
       },
       {
         "Product": "Theobald.Extractors",
