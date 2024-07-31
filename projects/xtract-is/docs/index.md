@@ -9,7 +9,7 @@ hide:
 <div class="full-width-background"></div>
 <div class="banner-text">
 	<h1> &lt; Welcome to {{ productName }}! &gt; </h1>
-	<p>Xtract IS is a powerful SAP plug-in for SQL Server Integration Services to extract mass data. Learn how to use Xtract IS by browsing our documentation, articles and more.</p>
+	<p>Xtract IS is a powerful SAP plug-in for SQL Server Integration Services to extract mass data. Learn how to use Xtract IS by browsing our user documentation, knowledge base and more.</p>
 </div>
 
 
