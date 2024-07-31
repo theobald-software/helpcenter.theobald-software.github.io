@@ -9,7 +9,7 @@ hide:
 <div class="full-width-background"></div>
 <div class="banner-text">
 	<h1> &lt; Welcome to {{ productName }}! &gt; </h1>
-	<p>Xtract Universal is a flexible SAP interface for databases, analytics, BI or cloud solutions. Learn how to use Xtract Universal by browsing our documentation, articles and more.</p>
+	<p>Xtract Universal is a flexible SAP interface for databases, analytics, BI or cloud solutions. Learn how to use Xtract Universal by browsing our user documentation, knowledge base and more.</p>
 </div>
 
 
