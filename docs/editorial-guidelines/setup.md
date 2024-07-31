@@ -12,10 +12,11 @@ How to install the MKDocs framework and its main theme:
 
 1. Install [git](https://git-scm.com/download/win).
 2. Install [Python](https://www.python.org/downloads/) (recommended version V 3.11, because of possible incompatibilities with latest versions).
-3. Add git, Python and the Python PIP scripts to the Path environment variable to your system: 
+3. Add git, Python and the Python PIP scripts to the Path environment variable to your system. Make sure to use the correct version number stated in the name of the Python directory, e.g., "Python 312":
+
 	- C:\Program Files\Git\cmd\git.exe
-	- C:\Users\schipka\AppData\Local\Programs\Python\Python312 
-	- C:\Users\schipka\AppData\Local\Programs\Python\Python312\Scripts)
+	- C:\Users\username\AppData\Local\Programs\Python\Python3xx 
+	- C:\Users\username\AppData\Local\Programs\Python\Python3xx\Scripts)
 
 	![environment-variables](../assets/images/editorial-guide/setup/environment-variables.png)
 4. Create a new environment variable GH_TOKEN. For the value for the token, refer to your admins.<br>
