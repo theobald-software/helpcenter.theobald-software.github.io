@@ -114,10 +114,6 @@ The content of a box must be indenting. An admonition ends after one unindented 
 	
 ### Animations
 
-Record and process animations as 12 frames per second GIFs in Camtasia 2020.
-Use the following settings to create the cursor click effect:<br>
-![camtasia settings](../assets/images/editorial-guide/camtasia.png){:class="img-responsive"}
-
 Add animations the same way as [images](#images).
 If necessary, use `style="border:1px solid black` to add a black border to the animation:
 
