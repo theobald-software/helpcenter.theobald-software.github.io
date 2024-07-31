@@ -89,5 +89,5 @@ For more information on filter options and advanced settings, see, [Define the {
 8. Click {{ previewBtn }} to display a live preview of the first 100 records.
 9. Click **[OK]** to save the {{ component }}.
 
-![table_look-up](assets/images/xfa/getting-started/kna1.gif)
+![table_look-up](assets/images/xfa/getting-started/kna1.gif){:class="img-responsive" style="border:1px solid black;"}
 You can now add tools to process the data returned by {{ table }} and run the {{ extraction }}.
