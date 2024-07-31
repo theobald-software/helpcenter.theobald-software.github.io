@@ -191,6 +191,26 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://helpcenter.theobald-software.com/release-notes/Common-2.14.1/</loc>
+         <lastmod>2024-07-31</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://helpcenter.theobald-software.com/release-notes/Common-2.14.6/</loc>
+         <lastmod>2024-07-31</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://helpcenter.theobald-software.com/release-notes/Common-2.2.4/</loc>
+         <lastmod>2024-07-31</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://helpcenter.theobald-software.com/release-notes/Common-2.22.0/</loc>
+         <lastmod>2024-07-31</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://helpcenter.theobald-software.com/release-notes/TheobaldExtractors-1.10.10/</loc>
          <lastmod>2024-07-31</lastmod>
          <changefreq>daily</changefreq>
