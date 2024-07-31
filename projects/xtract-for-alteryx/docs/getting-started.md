@@ -79,9 +79,9 @@ Follow the steps below to create a simple workflow that extracts customer master
 1. Drag & drop the {{ table }} {{ component }} into the workflow.
 2. Assign an existing SAP connection and click **[:pen-button:Edit]** to open the main window of the component.
 3. Click **[:material-plus-thick:Add]** to look up an SAP table. The window “Table Lookup” opens.<br>
-![table_look-up](assets/images/xfa/documentation/table/table_main-window_add.png)
+<!---![table_look-up](assets/images/xfa/documentation/table/table_main-window_add.png) --->
 4. In the field **Table Name**, enter the name of the table to extract (KNA1) :number-1:. Use wildcards (*) if needed.<br>
-![table_look-up](assets/images/documentation/components/table/table_look-up.png)
+<!--- ![table_look-up](assets/images/documentation/components/table/table_look-up.png)--->
 5. Click **[:magnifying-glass:]** :number-2:. Search results are displayed.
 6. Select the table KNA1 :number-3: and click **[OK]**. The application returns to the main window of the {{ component }}.
 7. Optional: Select the table columns you want to extract. By default all columns are extracted. 
@@ -89,4 +89,5 @@ For more information on filter options and advanced settings, see, [Define the {
 8. Click {{ previewBtn }} to display a live preview of the first 100 records.
 9. Click **[OK]** to save the {{ component }}.
 
+![table_look-up](assets/images/xfa/getting-started/kna1.gif)
 You can now add tools to process the data returned by {{ table }} and run the {{ extraction }}.
