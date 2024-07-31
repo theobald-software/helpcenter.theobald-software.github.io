@@ -15,7 +15,7 @@ It is recommended to install the latest custom function module THEO/READ_TABLE:
 | `THEO_READ_TABLE_740SP05.zip` | ABAP version 7.40 SP05 and higher | 
 | `THEO_READ_TABLE_710.zip`  | ABAP version 7.10 to 7.40 SP04 | 
 | `THEO_READ_TABLE_640.zip`  |  ABAP versions from 6.40 until 7.03 | 
-| `THEO_READ_TABLE_46C.zip`  |  ABAP versions from 4.6C until 6.40 | 
+| `THEO_READ_TABLE_46C.zip`  |  ABAP versions from 4.6C | 
 
 When importing the transport requests on older SAP releases a syntax error may occur. Contact [Theobald Support](https://support.theobald-software.com) and send the dedicated error message text.
 
