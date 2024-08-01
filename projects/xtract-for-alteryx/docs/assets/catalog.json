@@ -7,6 +7,71 @@
         "Product": "XtractForAlteryx",
         "Component": "General",
         "Message": "Updated URLs in various windows that direct to the new HelpCenter when pressing F1"
+      },
+      {
+        "Product": "Common",
+        "Component": "General",
+        "Message": "Updated AboutWindow with links for new HelpCenter"
+      },
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "General",
+        "Message": "Updated help links in various windows for new HelpCenter"
+      }
+    ]
+  },
+  {
+    "Version": "2024.7.30.17",
+    "LegacyReleaseDate": "2024-07-30 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "Table",
+        "Message": "Z_XTRACT_IS_TABLE_COMPRESSION marked as deprecated and cannot be selected anymore. The function module will be out of support starting 01/01/2025."
+      }
+    ]
+  },
+  {
+    "Version": "2024.7.26.14",
+    "LegacyReleaseDate": "2024-07-26 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "ODP",
+        "Message": "Fixed a performance regression causing XML reading when processing ODP packages to be extremely slow."
+      }
+    ]
+  },
+  {
+    "Version": "2024.7.26.12",
+    "LegacyReleaseDate": "2024-07-26 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "BW Cube",
+        "Message": "MDX: Ignore empty members in list parameters"
+      }
+    ]
+  },
+  {
+    "Version": "2024.7.25.60",
+    "LegacyReleaseDate": "2024-07-25 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "Table",
+        "Message": "Fixed a bug where script expressions would not be correctly evaluated in the preview."
+      }
+    ]
+  },
+  {
+    "Version": "2024.7.25.43",
+    "LegacyReleaseDate": "2024-07-25 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Common",
+        "Component": "General",
+        "Message": "Fixed error when clicking on links in About Window (caused by migration to .net8)"
       }
     ]
   },
@@ -29,41 +94,6 @@
         "Product": "XtractForAlteryx",
         "Component": "General",
         "Message": "Migrated XtractForAlteryx to new version numbering scheme. During an update, the setup now detects which version is currently installed and displays a list of breaking changes (if there are any) that have been introduced since the previously installed version."
-      },
-      {
-        "Product": "Common",
-        "Component": "General",
-        "Message": "Updated AboutWindow with links for new HelpCenter"
-      },
-      {
-        "Product": "Common",
-        "Component": "General",
-        "Message": "Fixed error when clicking on links in About Window (caused by migration to .net8)"
-      },
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "General",
-        "Message": "Updated help links in various windows for new HelpCenter"
-      },
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "Table",
-        "Message": "Z_XTRACT_IS_TABLE_COMPRESSION marked as deprecated and cannot be selected anymore. The function module will be out of support starting 01/01/2025."
-      },
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "ODP",
-        "Message": "Fixed a performance regression causing XML reading when processing ODP packages to be extremely slow."
-      },
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "MDX: Ignore empty members in list parameters"
-      },
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "Table",
-        "Message": "Fixed a bug where script expressions would not be correctly evaluated in the preview."
       }
     ]
   },
