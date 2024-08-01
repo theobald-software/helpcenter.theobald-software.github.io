@@ -132,6 +132,14 @@ The following articles refer to specific [{{ components }}](../documentation/int
 
 </div>
 
+### :component-odp: ODP
+
+<div class="mdx-columns" markdown>
+
+- [Alternatives for ODP :material-alert-decagram:](alternatives-for-odp.md)
+
+</div>
+
 ### :component-report: Report
 
 <div class="mdx-columns" markdown>
