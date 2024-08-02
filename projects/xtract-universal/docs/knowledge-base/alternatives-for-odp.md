@@ -52,7 +52,7 @@ Alternative for the *HANA Information Views [HANA]* provider context:
 
 </div>
 
-### Extract Data from BW Systems
+### Extract Data from BW Systems (CompositeProviders, Cubes, InfoObjects, etc.)
 
 Alternative for the *SAP NetWeaver Business Warehouse or BW4/HANA [BW]* provider context:
 - To extract data from CompositeProviders, InfoCubes, MultiProviders, aDSO/DSOs etc., use the [{{ bwcube }}](../documentation/bwcube/index.md) {{ component }}.
@@ -82,4 +82,20 @@ Alternative for the *Datasources/Extractors [SAPI]* provider context:
 
 Alternative for the *SAP LT Queue Alias [SLT~your_queue_alias]* provider context:
 - To extract data from regular (application) tables, cluster or pooled tables, use the [{{ table }}](../documentation/table/index.md) {{ component }}.
-- To extract delta changes (Inserts, Updates, Deletes), use the [{{ tableCDC }}](../documentation/table-cdc/index.md) {{ component }}.
+{% if page.meta.product != "xtract-for-alteryx" %}- To extract delta changes (Inserts, Updates, Deletes), use the [{{ tableCDC }}](../documentation/table-cdc/index.md) {{ component }}.{% endif %}
+
+	=== "Tables in {{ odp }}"
+
+		Coming soon...
+		
+	=== "Tables in {{ table }}"
+
+		Coming soon...
+		
+	{% if page.meta.product != "xtract-for-alteryx" %}
+
+	=== "Tables in {{ tableCDC }}"
+
+		Coming soon...
+		
+	{% endif %}
