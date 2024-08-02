@@ -301,13 +301,8 @@
   },
   {
     "Version": "6.5.3.0",
-    "LegacyReleaseDate": "2024-06-12 15:19:40Z",
+    "LegacyReleaseDate": "2024-06-12 00:00:00Z",
     "Changes": [
-      {
-        "Product": "BoardConnector",
-        "Component": "General",
-        "Message": "Updated NW RFC SDK to 750 PL13"
-      },
       {
         "Product": "Common",
         "Component": "General",
@@ -638,14 +633,9 @@
   },
   {
     "Version": "6.4.0.0",
-    "LegacyReleaseDate": "2024-05-06 20:58:05Z",
+    "LegacyReleaseDate": "2024-05-06 00:00:00Z",
     "IsBreaking": true,
     "Changes": [
-      {
-        "Product": "BoardConnector",
-        "Component": "General",
-        "Message": "Use new parameter system"
-      },
       {
         "Product": "Theobald.Extractors",
         "Component": "General",
@@ -1869,13 +1859,8 @@
   },
   {
     "Version": "5.14.0.0",
-    "LegacyReleaseDate": "2023-08-22 14:19:12Z",
+    "LegacyReleaseDate": "2023-08-22 00:00:00Z",
     "Changes": [
-      {
-        "Product": "BoardConnector",
-        "Component": "DeltaQ",
-        "Message": "Added the new DeltaQ component"
-      },
       {
         "Product": "Theobald.Extractors",
         "Component": "DeltaQ",
@@ -2311,13 +2296,8 @@
   },
   {
     "Version": "5.13.1.0",
-    "LegacyReleaseDate": "2023-06-22 12:23:57Z",
+    "LegacyReleaseDate": "2023-06-22 00:00:00Z",
     "Changes": [
-      {
-        "Product": "BoardConnector",
-        "Component": "Server",
-        "Message": "Fixed a bug where logging into the Designer with a valid AD-User would result in an authorization error."
-      },
       {
         "Product": "Theobald.Server",
         "Component": "General",
@@ -3018,13 +2998,8 @@
   },
   {
     "Version": "5.11.7.0",
-    "LegacyReleaseDate": "2023-03-10 14:43:16Z",
+    "LegacyReleaseDate": "2023-03-10 00:00:00Z",
     "Changes": [
-      {
-        "Product": "BoardConnector",
-        "Component": "TableCDC",
-        "Message": "Table CDC: Log table size can now be limited."
-      },
       {
         "Product": "Theobald.Extractors",
         "Component": "TableCDC",
@@ -3045,13 +3020,8 @@
   },
   {
     "Version": "5.11.6.0",
-    "LegacyReleaseDate": "2023-03-08 16:01:18Z",
+    "LegacyReleaseDate": "2023-03-08 00:00:00Z",
     "Changes": [
-      {
-        "Product": "BoardConnector",
-        "Component": "BW Cube",
-        "Message": "Fix for column order changes in MDX mode when adding filter selections or selecting and deselecting a dimension."
-      },
       {
         "Product": "Theobald.Extractors",
         "Component": "BW Cube",
@@ -4752,13 +4722,8 @@
   },
   {
     "Version": "5.5.1.0",
-    "LegacyReleaseDate": "2022-04-07 17:12:55Z",
+    "LegacyReleaseDate": "2022-04-07 00:00:00Z",
     "Changes": [
-      {
-        "Product": "BoardConnector",
-        "Component": "BW Cube",
-        "Message": "Now allowing extractions without measure selections in MDX mode. Added support for additional options in interval/complex BEx variable selections."
-      },
       {
         "Product": "Theobald.Extractors",
         "Component": "BW Cube",
@@ -4802,13 +4767,8 @@
   },
   {
     "Version": "5.3.4.0",
-    "LegacyReleaseDate": "2022-03-28 17:48:46Z",
+    "LegacyReleaseDate": "2022-03-28 00:00:00Z",
     "Changes": [
-      {
-        "Product": "BoardConnector",
-        "Component": "Designer",
-        "Message": "About window was refactored"
-      },
       {
         "Product": "Common",
         "Component": "WPF",
@@ -4943,13 +4903,8 @@
   },
   {
     "Version": "5.3.0.0",
-    "LegacyReleaseDate": "2022-02-17 14:26:17Z",
+    "LegacyReleaseDate": "2022-02-17 00:00:00Z",
     "Changes": [
-      {
-        "Product": "BoardConnector",
-        "Component": "BAPI",
-        "Message": "Reworked BAPI component"
-      },
       {
         "Product": "XtractKernel",
         "Component": "BAPI",
