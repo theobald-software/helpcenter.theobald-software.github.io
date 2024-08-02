@@ -13,7 +13,7 @@ For more information, see [Setup](documentation/setup/index.md).
 
 ### Connect to SAP
 
-Before connecting to SAP for the first time, set up an SAP dialog user with the necessary [SAP Authorization Objects](documentation/setup-in-sap/sap-authority-objects.md/#general-authorization-objects).
+Before connecting to SAP for the first time, set up an SAP dialog user with the necessary [SAP user rights](documentation/setup-in-sap/sap-authority-objects.md/#general-authorization-objects).
 
 1. In the main window of the Designer, click **[:material-plus-thick:New]**. The window "Change Source" opens.<br>
 ![new](assets/images/{{ abbr }}/getting-started/new.png)
@@ -34,7 +34,7 @@ For more information, see [SAP Connection](documentation/sap-connection/index.md
 ### Create an Extraction
 
 Extractions are the main entities of {{ productName }}. 
-An extraction defines what data to extract from SAP and in which target environment to write the data.
+An extraction defines what data to extract from SAP and where to write the data.
 
 1. In the main window of the Designer, click **[:material-plus-thick:New]**. The window "Create Extraction" opens.
 2. Select an SAP Connection from the drop-down menu in **Source** :number-1:.<br>
@@ -74,10 +74,7 @@ For more information on filter options and advanced settings, see, [Define the {
 7. Click {{ previewBtn }} to display a live preview of the first 100 records.
 8. Click **[OK]** to save the {{ component }}.
 
-The extraction is now listed in the main window of the Designer.
-
-!!! tip
-	To edit an extraction, double-click the extraction.
+The extraction is now listed in the main window of the Designer. To edit an extraction, double-click the extraction.
 
 ### Run an Extraction
 
