@@ -1,5 +1,16 @@
 [
   {
+    "Version": "2024.8.2.21",
+    "LegacyReleaseDate": "2024-08-02 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "Table",
+        "Message": "Fixed a bug that would not allow editing runtime parameters if no table was added"
+      }
+    ]
+  },
+  {
     "Version": "2024.7.31.3",
     "LegacyReleaseDate": "2024-07-31 00:00:00Z",
     "Changes": [
