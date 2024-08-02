@@ -681,6 +681,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://helpcenter.theobald-software.com/xtract-universal/knowledge-base/alternatives-for-odp/</loc>
+         <lastmod>2024-08-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://helpcenter.theobald-software.com/xtract-universal/knowledge-base/authentication-via-azure-ad-with-azure-storage/</loc>
          <lastmod>2024-08-02</lastmod>
          <changefreq>daily</changefreq>
