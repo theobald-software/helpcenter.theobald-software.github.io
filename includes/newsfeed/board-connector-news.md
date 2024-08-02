@@ -21,6 +21,16 @@
 
     :material-clock-time-two-outline: 2024-08-08
 
+-   **New Version Numbers**
+
+    ---
+
+    The version numbers in the [changelog](changelog.md) now incorporate the release date of the software, e.g., 2024.7.23.1 instead of 1.21.2.34.
+
+    ---
+
+    :material-clock-time-two-outline: 2024-08-01
+
 -   **Welcome to the Board Connector HelpCenter**
 
     ---
