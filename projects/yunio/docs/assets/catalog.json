@@ -415,13 +415,8 @@
   },
   {
     "Version": "1.32.16.0",
-    "LegacyReleaseDate": "2024-06-12 15:52:48Z",
+    "LegacyReleaseDate": "2024-06-12 00:00:00Z",
     "Changes": [
-      {
-        "Product": "YunIO",
-        "Component": "General",
-        "Message": "Updated NW RFC SDK to 750 PL13"
-      },
       {
         "Product": "Common",
         "Component": "General",
@@ -731,13 +726,8 @@
   },
   {
     "Version": "1.32.10.0",
-    "LegacyReleaseDate": "2024-05-07 16:50:38Z",
+    "LegacyReleaseDate": "2024-05-07 00:00:00Z",
     "Changes": [
-      {
-        "Product": "YunIO",
-        "Component": "Designer",
-        "Message": "Transaction: Add support for checkboxes"
-      },
       {
         "Product": "Theobald.Server",
         "Component": "General",
@@ -769,14 +759,9 @@
   },
   {
     "Version": "1.32.9.0",
-    "LegacyReleaseDate": "2024-05-06 20:54:14Z",
+    "LegacyReleaseDate": "2024-05-06 00:00:00Z",
     "IsBreaking": true,
     "Changes": [
-      {
-        "Product": "YunIO",
-        "Component": "General",
-        "Message": "Use new parameter system"
-      },
       {
         "Product": "Theobald.Extractors",
         "Component": "General",
@@ -2564,13 +2549,8 @@
   },
   {
     "Version": "1.23.6.0",
-    "LegacyReleaseDate": "2023-09-05 12:22:52Z",
+    "LegacyReleaseDate": "2023-09-05 00:00:00Z",
     "Changes": [
-      {
-        "Product": "YunIO",
-        "Component": "Runtime",
-        "Message": "Fixed a bug where Bapi extraction output would not be handled correctly."
-      },
       {
         "Product": "Theobald.Server",
         "Component": "General",
@@ -2694,13 +2674,8 @@
   },
   {
     "Version": "1.22.2.0",
-    "LegacyReleaseDate": "2023-08-14 20:38:31Z",
+    "LegacyReleaseDate": "2023-08-14 00:00:00Z",
     "Changes": [
-      {
-        "Product": "YunIO",
-        "Component": "Runtime",
-        "Message": "Fixed a bug where parameters supplied as JSON to table extractions would be ignored."
-      },
       {
         "Product": "Common",
         "Component": "Licensing",
@@ -4153,7 +4128,7 @@
       {
         "Product": "YunIO",
         "Component": "Runtime",
-        "Message": "Fixed a bug where the HTTP server would not attach CORS headers on failed authentication attempts.\nRework the handling of parameters in the new runtime.\nServices with scalar runtime parameters now support the GET request type. Values for the scalar parameters can be supplied as query parameter."
+        "Message": "Services with scalar runtime parameters now support the GET request type. Values for the scalar parameters can be supplied as query parameter."
       },
       {
         "Product": "Theobald.Server",
@@ -5529,13 +5504,8 @@
   },
   {
     "Version": "1.7.2.0",
-    "LegacyReleaseDate": "2022-07-15 13:01:03Z",
+    "LegacyReleaseDate": "2022-07-15 00:00:00Z",
     "Changes": [
-      {
-        "Product": "YunIO",
-        "Component": "General",
-        "Message": "Update transaction component"
-      },
       {
         "Product": "Theobald.Server",
         "Component": "General",
