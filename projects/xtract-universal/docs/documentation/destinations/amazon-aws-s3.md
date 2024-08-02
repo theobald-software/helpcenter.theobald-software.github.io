@@ -1,6 +1,6 @@
 ---
 title: Amazon S3
-description: Amazon S3 destination
+description: Write SAP data to an Amazon S3 destination
 attempt: seven
 ---
 

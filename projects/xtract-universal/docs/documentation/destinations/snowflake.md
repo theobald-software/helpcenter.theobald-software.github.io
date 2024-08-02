@@ -1,6 +1,6 @@
 ---
 title: Snowflake
-description: Snowflake
+description: Write SAP data to a Snowflake
 destination: snowflake
 ---
 

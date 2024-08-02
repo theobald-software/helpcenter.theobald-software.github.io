@@ -1,6 +1,6 @@
 ---
 title: SharePoint
-description: SharePoint destination
+description: Write SAP data to a SharePoint destination
 ---
 
 This page shows how to set up and use the {{ page.meta.title }} destination. 

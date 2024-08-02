@@ -1,6 +1,6 @@
 ---
 title: MySQL
-description: MySQL destination
+description: Write SAP data to a MySQL destination
 ---
 
 This page shows how to set up and use the {{ page.meta.title }} destination. 

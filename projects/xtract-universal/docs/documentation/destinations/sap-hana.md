@@ -1,6 +1,6 @@
 ---
 title: SAP HANA
-description: SAP HANA destination
+description: Write SAP data to a SAP HANA destination
 destination: sap-hana
 ---
 

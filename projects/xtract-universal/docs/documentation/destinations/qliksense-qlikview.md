@@ -1,6 +1,6 @@
 ---
 title: QlikSense & QlikView
-description: QlikSense & QlikView destination
+description: Write SAP data to a QlikSense & QlikView destination
 ---
 
 This page shows how to set up and use the {{ page.meta.title }} destination. 

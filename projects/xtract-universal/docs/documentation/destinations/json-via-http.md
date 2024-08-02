@@ -1,6 +1,6 @@
 ---
 title: HTTP JSON
-description: JSON Web Service destination
+description: Write SAP data to a JSON Web Service destination
 ---
 
 
