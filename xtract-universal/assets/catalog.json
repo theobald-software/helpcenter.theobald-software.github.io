@@ -1,5 +1,16 @@
 [
   {
+    "Version": "6.9.0.0",
+    "LegacyReleaseDate": "2024-08-01 13:24:15Z",
+    "Changes": [
+      {
+        "Product": "XtractUniversal",
+        "Component": "Destinations",
+        "Message": "Add Dataiku destination"
+      }
+    ]
+  },
+  {
     "Version": "6.8.17.0",
     "LegacyReleaseDate": "2024-07-31 13:48:40Z",
     "Changes": [
