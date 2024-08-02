@@ -221,13 +221,8 @@
   },
   {
     "Version": "7.7.3.0",
-    "LegacyReleaseDate": "2024-06-25 05:47:52Z",
+    "LegacyReleaseDate": "2024-06-25 00:00:00Z",
     "Changes": [
-      {
-        "Product": "XtractIS",
-        "Component": "ODP",
-        "Message": "Fixed a regression bug where ODP preview would fail for hierarchy DataSources."
-      },
       {
         "Product": "Theobald.Extractors",
         "Component": "ODP",
@@ -376,13 +371,8 @@
   },
   {
     "Version": "7.7.1.0",
-    "LegacyReleaseDate": "2024-06-12 15:19:14Z",
+    "LegacyReleaseDate": "2024-06-12 00:00:00Z",
     "Changes": [
-      {
-        "Product": "XtractIS",
-        "Component": "General",
-        "Message": "Updated NW RFC SDK to 750 PL13"
-      },
       {
         "Product": "Common",
         "Component": "General",
@@ -579,13 +569,8 @@
   },
   {
     "Version": "7.6.0.0",
-    "LegacyReleaseDate": "2024-05-17 09:55:47Z",
+    "LegacyReleaseDate": "2024-05-17 00:00:00Z",
     "Changes": [
-      {
-        "Product": "XtractIS",
-        "Component": "TableCDC",
-        "Message": "Released Monitoring Feature for Log Tables and Triggers. Update of /THEO/CDC* package required."
-      },
       {
         "Product": "Theobald.Extractors",
         "Component": "TableCDC",
@@ -672,14 +657,9 @@
   },
   {
     "Version": "7.5.0.0",
-    "LegacyReleaseDate": "2024-05-06 20:51:36Z",
+    "LegacyReleaseDate": "2024-05-06 00:00:00Z",
     "IsBreaking": true,
     "Changes": [
-      {
-        "Product": "XtractIS",
-        "Component": "General",
-        "Message": "Use new parameter system"
-      },
       {
         "Product": "Theobald.Extractors",
         "Component": "General",
@@ -3458,13 +3438,8 @@
   },
   {
     "Version": "7.0.3.0",
-    "LegacyReleaseDate": "2022-09-26 15:19:39Z",
+    "LegacyReleaseDate": "2022-09-26 00:00:00Z",
     "Changes": [
-      {
-        "Product": "XtractIS",
-        "Component": "Table",
-        "Message": "added support for function modules /BODS/RFC_STREAM_READ_TABLE and /SAPDS/RFC_STREAM_READ_TABLE"
-      },
       {
         "Product": "Theobald.Extractors",
         "Component": "Table",
@@ -4041,13 +4016,8 @@
   },
   {
     "Version": "6.13.0.0",
-    "LegacyReleaseDate": "2022-04-25 14:52:44Z",
+    "LegacyReleaseDate": "2022-04-25 00:00:00Z",
     "Changes": [
-      {
-        "Product": "XtractIS",
-        "Component": "Table",
-        "Message": "Added graphical where clause editor."
-      },
       {
         "Product": "Theobald.Extractors",
         "Component": "Table",
@@ -4151,13 +4121,8 @@
   },
   {
     "Version": "6.10.3.0",
-    "LegacyReleaseDate": "2022-03-28 17:49:04Z",
+    "LegacyReleaseDate": "2022-03-28 00:00:00Z",
     "Changes": [
-      {
-        "Product": "XtractIS",
-        "Component": "General",
-        "Message": "About window was refactored"
-      },
       {
         "Product": "Common",
         "Component": "WPF",
@@ -4559,13 +4524,8 @@
   },
   {
     "Version": "6.9.0.0",
-    "LegacyReleaseDate": "2021-11-03 08:18:30Z",
+    "LegacyReleaseDate": "2021-11-03 00:00:00Z",
     "Changes": [
-      {
-        "Product": "XtractIS",
-        "Component": "General",
-        "Message": "Table and ODP API: New parameter for adjusting currency decimals"
-      },
       {
         "Product": "Theobald.Extractors",
         "Component": "General",
