@@ -1,5 +1,27 @@
 [
   {
+    "Version": "2024.8.2.47",
+    "LegacyReleaseDate": "2024-08-02 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "YunIO",
+        "Component": "General",
+        "Message": "Migrated Yunio to new version numbering scheme. During an update, the setup now detects which version is currently installed and displays a list of breaking changes (if there are any) that have been introduced since the previously installed version."
+      }
+    ]
+  },
+  {
+    "Version": "1.32.19.2",
+    "LegacyReleaseDate": "2024-08-02 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "Table",
+        "Message": "Fixed a bug that would not allow editing runtime parameters if no table was added"
+      }
+    ]
+  },
+  {
     "Version": "1.32.19.0",
     "LegacyReleaseDate": "2024-07-31 13:48:22Z",
     "Changes": [
