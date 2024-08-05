@@ -4,7 +4,7 @@ description: Write SAP data to an Alteryx destination
 ---
 
 This page shows how to set up and use the {{ page.meta.title }} destination. 
-The {{ page.meta.title }} destination enables users to load SAP data from Alteryx.
+The {{ page.meta.title }} destination enables users to load SAP data directly from Alteryx.
 
 
 ## Requirements
