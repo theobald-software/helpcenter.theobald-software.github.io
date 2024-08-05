@@ -110,6 +110,7 @@ plugins:
   #- glightbox #image zoom
   #- tags # enables tags in front matter
 
+
 # Continuous integration
   - group:
       enabled: !ENV CI
@@ -132,6 +133,7 @@ plugins:
              cards_layout_options:
                background_color: "#98892C"
 
+  
 # Hook for Relative Links
 hooks:
   - overrides/site-urls.py
