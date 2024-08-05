@@ -90,6 +90,11 @@ If this is the case, a message with various options is displayed:
 |  **Ignore**  | Ignore the message, but the installation may be canceled due to the locking of certain files. | 
 |  **Quit Install**  | Cancel the installation and resume it at another time. | 
 
+#### Upgrade with Breaking Changes
+
+The setup checks if an older version of {{ productName }} is already installed on the machine. 
+If an older version is found, the setup displays a list of all (breaking) changes that were released between the old version and the current version.
+Check if there are breaking changes, make sure to follow the instructions in the release notes of the breaking changes to ensure a smooth update.
 
 {% if page.meta.product == "xtract-universal" or page.meta.product == "board-connector" %}
 
