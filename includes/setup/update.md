@@ -94,7 +94,7 @@ If this is the case, a message with various options is displayed:
 
 The setup checks if an older version of {{ productName }} is already installed on the machine. 
 If an older version is found, the setup displays a list of all (breaking) changes that were released between the old version and the current version.
-Check if there are breaking changes, make sure to follow the instructions in the release notes of the breaking changes to ensure a smooth update.
+If there are breaking changes, make sure to follow the instructions in the release notes of the breaking changes to ensure a smooth update.
 
 {% if page.meta.product == "xtract-universal" or page.meta.product == "board-connector" %}
 
