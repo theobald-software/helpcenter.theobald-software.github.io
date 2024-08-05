@@ -1,6 +1,7 @@
 ---
 title: Dataiku
 description: Write SAP data to a Dataiku destination
+hidden: true
 draft: true
 status: new
 ---
