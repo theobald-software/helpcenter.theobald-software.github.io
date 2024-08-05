@@ -69,7 +69,7 @@ Connect to the Xtract Universal Server and select the extraction you want to to 
 	Make sure the Xtract Universal server is running.
 	
 #### Server
-Enter the name, IP or domain and port to access the server within the network, see [Connect to an Xtract Universal Server](../designer.md/#connect-the-designer-to-a-server).
+Enter the name, IP or domain and port to access the server that runs Xtract Universal within the network.
 Format: `[Server]:[Port]`.
 
 #### Extraction

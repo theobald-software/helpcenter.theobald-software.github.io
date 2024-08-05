@@ -61,7 +61,7 @@ Connections that are created at the plugin level are available in all projects a
 Add a description of the connection.
 
 #### Xtract Universal Server
-Enter the name, IP or domain and port to access the server within the network, see [Connect to an Xtract Universal Server](../designer.md/#connect-the-designer-to-a-server).
+Enter the name, IP or domain and port to access the server that runs Xtract Universal within the network.
 Format: `[Server]:[Port]`.
 
 #### Transport Layer Security (HTTPS)
