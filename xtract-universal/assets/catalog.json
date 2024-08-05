@@ -391,13 +391,8 @@
   },
   {
     "Version": "6.8.4.0",
-    "LegacyReleaseDate": "2024-06-21 12:49:51Z",
+    "LegacyReleaseDate": "2024-06-21 00:00:00Z",
     "Changes": [
-      {
-        "Product": "XtractUniversal",
-        "Component": "BW Cube",
-        "Message": "Fixed a bug that caused filters to be removed when refreshing metadata"
-      },
       {
         "Product": "Theobald.Extractors",
         "Component": "BW Cube",
