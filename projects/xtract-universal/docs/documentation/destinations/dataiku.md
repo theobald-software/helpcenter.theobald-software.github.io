@@ -48,12 +48,16 @@ To open the plugin settings, navigate to **Plugin > Installed > Xtract Universal
 
 #### Definable inline
 Allows users to define a connection to an Xtract Universal server on a dataset level.
+The connection can be defined when adding a new Xtract Universal dataset to a flow. 
+If active, the drop-down menu to select an Xtract Universal server preset contains the option *Manually defined*.
+
 
 #### Definable at project level
 Allows users to define a connection to an Xtract Universal server on a project level.
 Connections that are created at the project level are available for all datasets within the project.
+The connection can be defined in the project settings. To open the project settings for Xtract Universal, navigate to **Settings > Plugin presets > Xtract Universal**.
 
-#### Add Preset
+#### ADD PRESET
 Click **[+ADD PRESET]** to create a connection to an Xtract Universal server on the plugin level.
 Connections that are created at the plugin level are available in all projects and datasets.
 
@@ -125,9 +129,11 @@ The plugin fetches all available parameters from Xtract Universal.
 		
 ![dataiku-dataset](../../assets/images/xu/documentation/destinations/dataiku/dataiku-dataset.gif){:class="img-responsive"}
 
-
+!!! tip 
+	In case of errors, navigate to **Administration > Maintenance** to check the logs. 
+	The logs contain plugin logs and stack traces, see [Dataiku Documentation: Diagnosing and debugging issues](https://doc.dataiku.com/dss/latest/troubleshooting/diagnosing.html).
 
 ## Related Links
-- [Dataiku User's Guide](https://doc.dataiku.com/dss/latest/)
+- [Dataiku Documentation](https://doc.dataiku.com/dss/latest/)
 - [Dataiku Knowledge Base](https://knowledge.dataiku.com/latest/)
 - [Xtract Universal Server](../server/index.md)
