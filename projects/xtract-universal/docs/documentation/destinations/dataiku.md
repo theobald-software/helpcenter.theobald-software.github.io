@@ -62,16 +62,18 @@ Add a description of the connection.
 
 #### Xtract Universal Server
 Enter the name, IP or domain and port to access the server that runs Xtract Universal within the network.
-Format: `[Server]:[Port]`.
+The Xtract Universal server is the hostname or IP address without port. The port is specified in the **Customize Port** option.
 
 #### Transport Layer Security (HTTPS)
 Activate the checkbox **Use TLS for communication with the XU server** if [TLS is enabled in Xtract Universal](../access-restrictions/restrict-server-access.md/#activate-tls-encryption).
-Enter a valid username and password for the authentication against the Xtract Universal server.
+Optionally, enter a valid username and password for the authentication against the Xtract Universal server.
+Currently, only [Xtract Universal users](../access-restrictions/user-management.md/#create-custom-users) are supported (no Active Directory users).
+
 
 #### Customize Port
 Specify the port that is used to communicate with the Xtract Universal server.
 Make sure the connection uses the same port that is defined in the Xtract Universal [web server settings](../server/server-settings.md/#web-server).
-
+The default ports are 8064 without TLS and 8164 with TLS.
 
 ### Connection
 
@@ -89,7 +91,7 @@ The settings are located in **Plugin > Installed > Xtract Universal > Settings >
 3. When prompted, enter a name for the connection and click **[CREATE]**.
 4. In the field **Xtract Universal server**, enter the host name or IP address of the Xtract Universal server.
 5. If [TLS is enabled in Xtract Universal](../access-restrictions/restrict-server-access.md/#activate-tls-encryption), activate the option **Use TLS for communication with the XU server** and provide valid credentials.
-6. Click **Customize port** to check if the connection uses the same port that is defined in the Xtract Universal [web server settings](../server/server-settings.md/#web-server).
+6. If a non-default port is used for the Xtract Universal [web server](../server/server-settings.md/#web-server), click **Customize port** to specify the port.
 7. Click **[SAVE]**.
 
 ![dataiku-connection](../../assets/images/xu/documentation/destinations/dataiku/dataiku-connection.gif){:class="img-responsive"}
@@ -99,22 +101,20 @@ The connection is now available in all projects and datasets.
 
 ### Add Datasets with Xtract Universal
 
-
 Connect to the Xtract Universal Server and select the extraction you want to to execute in Dataiku.
+
+!!! note
+	Make sure the Xtract Universal server is running.
 
 1. Open a project in Dataiku.
 2. Click **[+DATASET] >	Xtract Universal**.
 3. Click **Xtract Universal Extraction**.
 4. In the drop-down menu **Xtract Universal server preset**, select an existing [connection to an Xtract Universal server](#connection).
-
-	!!! tip
-		If no presets are available, make sure the Xtract Universal server is running.
-		
 5. In the drop-down menu **Extraction**, select an existing extraction.
 Only extractions with that have the Dataiku destination [assigned](#assign-the-dataiku-destination-to-an-extraction) to them are displayed. 
 
 	!!! tip
-		If no extractions are available, check if the [connection settings](#plugin-settings) are correct.
+		If no extractions are available, check if the [connection settings](#plugin-settings) are correct and if there are extractions on the server that use the Dataiku destination.
 
 6. Optional: click **[+ADD AN OBJECT]** to pass values to an Xtract Universal [extraction parameter](../parameters/extraction-parameters.md). 
 The plugin fetches all available parameters from Xtract Universal.
