@@ -1,6 +1,6 @@
 ---
 title: Flat File CSV 
-description: Flat-File - CSV destination
+description: Write SAP data to a Flat-File - CSV destination
 destination: csv
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Huawei Cloud OBS
-description: Huawei Cloud OBS destination
+description: Write SAP data to a Huawei Cloud OBS destination
 destination: huawei
 status: beta
 attempt: seven

@@ -1,6 +1,6 @@
 ---
 title: HTTP CSV
-description: CSV Web Service destination
+description: Write SAP data to a CSV Web Service destination
 ---
 
 This page shows how to set up and use the {{ page.meta.title }} destination. <br>

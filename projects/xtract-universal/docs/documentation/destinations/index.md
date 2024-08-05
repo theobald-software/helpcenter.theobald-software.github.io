@@ -1,6 +1,6 @@
 ---
 title: Destinations
-description: Destinations
+description: Write SAP data to different target environments
 icon: material/bullseye
 ---
 

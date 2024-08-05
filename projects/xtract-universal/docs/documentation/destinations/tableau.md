@@ -1,6 +1,6 @@
 ---
 title: Tableau
-description: Tableau destination
+description: Write SAP data to a Tableau destination
 destination: tableau
 ---
 

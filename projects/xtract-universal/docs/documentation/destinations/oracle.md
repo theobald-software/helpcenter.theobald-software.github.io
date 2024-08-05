@@ -1,6 +1,6 @@
 ---
 title: Oracle
-description: Oracle destination
+description: Write SAP data to an Oracle destination
 ---
 
 This page shows how to set up and use the {{ page.meta.title }} destination. 

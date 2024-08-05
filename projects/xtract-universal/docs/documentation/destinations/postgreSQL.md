@@ -1,6 +1,6 @@
 ---
 title: PostgreSQL
-description: PostGre destination
+description: Write SAP data to a PostGre destination
 destination: postgres
 ---
 
