@@ -5,7 +5,7 @@ status: new
 ---
 
 This page shows how to set up and use the {{ page.meta.title }} destination. 
-The {{ page.meta.title }} destination enables users to load SAP data directly from [Dataiku](https://www.dataiku.com/).
+The {{ page.meta.title }} destination enables users to load SAP data directly from within [Dataiku](https://www.dataiku.com/).
 
 
 ## Requirements
