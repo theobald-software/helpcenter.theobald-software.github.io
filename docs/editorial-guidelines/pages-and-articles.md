@@ -37,11 +37,16 @@ What to consider when creating new documentation pages:
 	
 - Add the name of the new .md file to the list of navigation items in the [.pages file](files-and-folders.md#pages-files) that is located in the same directory. 
 If no .pages file exists, create one.
-- Preview and check the content before running [LinkChecker](about-linkchecker.md) on the new page. Example:
+- Preview and check the content before publishing.
 
-	```
-	linkchecker --no-warnings --no-status -r 0 http://localhost:8000/erpconnect/documentation/introduction/requirements/
-	```
+#### Add a New Destination
+
+What to consider when adding a new destination in Xtract Universal:
+
+- Create a new .md file that uses the name of the destination, e.g., `dataiku.md` for the Dataiku destination.
+- Add the status *new* in the front matter of the .md file.
+- Add the destination and its logo in the index.md file of the destination folder.
+- Add the destination to the drop-down list of the Getting Started page.
 
 ### Articles
 
