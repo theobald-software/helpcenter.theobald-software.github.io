@@ -94,7 +94,11 @@ The window "Manage Destinations" opens. Here, you can edit, delete and add new d
 - title: Alteryx <br><br><br><span class="keyword">pull-destination</span>
   image: site:assets/images/logos/business-content/Alteryx-Logo.png
   url: site:documentation/destinations/alteryx
-    
+
+- title: Dataiku <br><br><br><span class="keyword">pull-destination</span>
+  image: site:assets/images/xu/documentation/destinations/logos/Dataiku.png
+  url: site:documentation/destinations/dataiku
+     
 - title: KNIME <br><br><br><span class="keyword">pull-destination</span> 
   image: site:assets/images/xu/documentation/destinations/logos/KNIME.png
   url: site:documentation/destinations/knime
@@ -103,7 +107,7 @@ The window "Manage Destinations" opens. Here, you can edit, delete and add new d
   image: site:assets/images/xu/documentation/destinations/logos/Power-BI.png
   url: site:documentation/destinations/Power-BI-Connector
   
-- title: Power BI Report Server <br><br><span class="keyword">pull-destination</span> 
+- title: Power BI Report Server <br><br><br><span class="keyword">pull-destination</span> 
   image: site:assets/images/xu/documentation/destinations/logos/Power-BI-Report-Server.png
   url: site:documentation/destinations/server-report-services
   
