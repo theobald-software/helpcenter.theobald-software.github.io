@@ -1,5 +1,17 @@
 [
   {
+    "Version": "2024.8.6.35",
+    "LegacyReleaseDate": "2024-08-06 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Server",
+        "Component": "General",
+        "Message": "This release reduces the privileges with which our code runs on your system. Additionally, a new source password encryption method is used that allows migrating server source configurations to other servers without having to use the same Windows user.\n",
+        "ReleaseNote": "## Different service user account\n\nThe default service user account has changed from the local system account to a virtual service account. This change was made so our software uses the least privileges required.\n\nWhen upgrading older versions, no manual work is required. The setup will not change the user for the service in existing installations.\n\nIf no previous installation exists, or if it was previously uninstalled, the new service will be created using the virtual service user. You can either, if necessary, manually migrate the permissions of TLS certificates and reset all source passwords or change the service to run as the local system account again. Refer to our [online help on how to grant access to machine store certificates](https://helpcenter.theobald-software.com/xtract-universal/documentation/server/service-account/).\n\n## SAP source password protection\n\nThe encryption method for SAP source passwords was changed from user context specific cryptography to asymmetric cryptography using a per-instance key. This allows migration of sources by also migrating the generated `sources.pem` file. Make sure the directories and files are sufficiently protected when manually moving or changing them.\n\n```\n┇\n┣ installation directory\n┇   ┇\n┃   ┠ private\n┇   ┇   ┇\n┃   ┃   ┠ secrets\n┃   ┃   ┃   ┗ sources.pem\n┇   ┇   ┇\n```\n\n### Access Restriction sanity checks\n\nThe server will refuse using the `private/secrets/sources.pem` file for cryptographic operations when the directory or file have access restrictions that are too permissive. It requires the access to be restricted to individual users or groups only. That means generic access for `Everyone` or `Users` well-known SIDs will be blocked.\n\n### Conversion and issues after installation\n\nWhen the `private/secrets` directories and `sources.pem` file have been created using a different service account, then manual action is required to switch the service user. This can happen after freshly installing the product and initially connecting to the server without changing the service user first. Either action can be taken to resolve the issue\n\n- remove the `private` directory and let the service create a new one, this will cause existing passwords to be lost\n- grant access to the new service user to `private/secrets` and `sources.pem` "
+      }
+    ]
+  },
+  {
     "Version": "2024.8.5.77",
     "LegacyReleaseDate": "2024-08-05 00:00:00Z",
     "Changes": [
