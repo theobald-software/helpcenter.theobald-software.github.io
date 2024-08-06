@@ -49,6 +49,7 @@ For more information about destination details, select your destination: <select
 	<option value="amazon-redshift">Amazon Redshift</option>
 	<option value="azure-storage">Azure Storage</option>
 	<option value="azure-synapse-analytics">Azure Synapse Analytics</option>
+	<option value="dataiku">Dataiku</option>
 	<option value="exasol">EXASolution</option>
     <option value="csv-flat-file">Flat File CSV</option>
     <option value="json-flat-file">Flat File JSON</option>
@@ -107,6 +108,7 @@ For more information about destination settings, select your destination: <selec
 	<option value="amazon-redshift">Amazon Redshift</option>
 	<option value="azure-storage">Azure Storage</option>
 	<option value="azure-synapse-analytics">Azure Synapse Analytics</option>
+	<option value="dataiku">Dataiku</option>
 	<option value="exasol">EXASolution</option>
     <option value="csv-flat-file">Flat File CSV</option>
     <option value="json-flat-file">Flat File JSON</option>
