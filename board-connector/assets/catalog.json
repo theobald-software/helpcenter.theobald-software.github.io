@@ -1,5 +1,16 @@
 [
   {
+    "Version": "2024.8.7.7",
+    "LegacyReleaseDate": "2024-08-07 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "BoardConnector",
+        "Component": "Server",
+        "Message": "Fixed a bug causing the usage of the result cache not to be enforced correctly."
+      }
+    ]
+  },
+  {
     "Version": "2024.8.6.36",
     "LegacyReleaseDate": "2024-08-06 00:00:00Z",
     "Changes": [
