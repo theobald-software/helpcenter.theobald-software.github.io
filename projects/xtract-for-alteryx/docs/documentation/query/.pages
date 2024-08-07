@@ -3,3 +3,4 @@ nav:
     - variants-and-selections.md
     - settings.md
     - edit-runtime-parameters.md
+    - tool-configuration.md

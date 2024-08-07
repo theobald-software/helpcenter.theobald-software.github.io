@@ -1,9 +1,9 @@
 nav:
     - index.md
-    - tool-configuration.md
     - main-window.md
     - table-join.md
     - where-clause.md
     - having-clause.md
     - settings.md
     - edit-runtime-parameters.md
+    - tool-configuration.md
