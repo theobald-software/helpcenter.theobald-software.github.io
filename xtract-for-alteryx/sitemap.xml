@@ -61,6 +61,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://helpcenter.theobald-software.com/xtract-for-alteryx/documentation/bapi/tool-configuration/</loc>
+         <lastmod>2024-08-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://helpcenter.theobald-software.com/xtract-for-alteryx/documentation/bwcube/</loc>
          <lastmod>2024-08-07</lastmod>
          <changefreq>daily</changefreq>
@@ -72,6 +77,11 @@
     </url>
     <url>
          <loc>https://helpcenter.theobald-software.com/xtract-for-alteryx/documentation/bwcube/settings/</loc>
+         <lastmod>2024-08-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://helpcenter.theobald-software.com/xtract-for-alteryx/documentation/bwcube/tool-configuration/</loc>
          <lastmod>2024-08-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -92,6 +102,11 @@
     </url>
     <url>
          <loc>https://helpcenter.theobald-software.com/xtract-for-alteryx/documentation/hierarchy/settings/</loc>
+         <lastmod>2024-08-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://helpcenter.theobald-software.com/xtract-for-alteryx/documentation/hierarchy/tool-configuration/</loc>
          <lastmod>2024-08-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -126,6 +141,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://helpcenter.theobald-software.com/xtract-for-alteryx/documentation/odp/tool-configuration/</loc>
+         <lastmod>2024-08-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://helpcenter.theobald-software.com/xtract-for-alteryx/documentation/odp/update-mode/</loc>
          <lastmod>2024-08-07</lastmod>
          <changefreq>daily</changefreq>
@@ -142,6 +162,11 @@
     </url>
     <url>
          <loc>https://helpcenter.theobald-software.com/xtract-for-alteryx/documentation/query/settings/</loc>
+         <lastmod>2024-08-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://helpcenter.theobald-software.com/xtract-for-alteryx/documentation/query/tool-configuration/</loc>
          <lastmod>2024-08-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -167,6 +192,11 @@
     </url>
     <url>
          <loc>https://helpcenter.theobald-software.com/xtract-for-alteryx/documentation/report/settings/</loc>
+         <lastmod>2024-08-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://helpcenter.theobald-software.com/xtract-for-alteryx/documentation/report/tool-configuration/</loc>
          <lastmod>2024-08-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -272,6 +302,11 @@
     </url>
     <url>
          <loc>https://helpcenter.theobald-software.com/xtract-for-alteryx/documentation/table/table-join/</loc>
+         <lastmod>2024-08-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://helpcenter.theobald-software.com/xtract-for-alteryx/documentation/table/tool-configuration/</loc>
          <lastmod>2024-08-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
