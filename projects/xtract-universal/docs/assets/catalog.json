@@ -1,5 +1,16 @@
 [
   {
+    "Version": "2024.8.7.0",
+    "LegacyReleaseDate": "2024-08-07 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "XtractUniversal",
+        "Component": "General",
+        "Message": "This is a test"
+      }
+    ]
+  },
+  {
     "Version": "2024.8.6.35",
     "LegacyReleaseDate": "2024-08-06 00:00:00Z",
     "Changes": [
