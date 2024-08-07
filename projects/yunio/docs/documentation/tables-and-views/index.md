@@ -9,6 +9,8 @@ The {{ table }} {{ component }} can be used to extract data from SAP Tables and 
 
 {% include "components/table/supported-sap-objects.md"  %}
 
+{% include "components/table/restrictions.md"  %}
+
 {% include "components/table/prerequisites.md" %}
 
 {% include "components/table/auth-warning.md"  %}
@@ -34,5 +36,3 @@ The following options are available to filter data, add data from other tables, 
 5. Click **[Run]** to check the results, see [Running Services in yunIO](../run-services.md/#run-services-in-yunio).
 
 For more information on {{ table }} settings, see [Settings](settings.md).
-
-{% include "components/table/restrictions.md"  %}

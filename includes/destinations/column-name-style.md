@@ -3,7 +3,7 @@
 
 Defines the style of the column name. Following options are available: 
 
-![column_name_style_options](../../assets/images/xu/documentation/destinations/http-csv/column_name_style_options.png){:class="img-responsive"}
+![column_name_style_options](../../assets/images/documentation/components/column_name_style_options.png){:class="img-responsive"}
 
 | Option | Description |
 |--------|-------------|
