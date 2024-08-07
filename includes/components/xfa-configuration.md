@@ -7,7 +7,7 @@ To display the configuration menu, select an {{ page.meta.componentName }} {{ co
 
 ### About
 
-At the top of the configuration menu, click *About* to display information about the software version and license.
+At the top of the configuration menu, click **About** to display information about the software version and license.
 
 ### Connection
 
