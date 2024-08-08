@@ -11,6 +11,17 @@
     ]
   },
   {
+    "Version": "2024.8.8.14",
+    "LegacyReleaseDate": "2024-08-08 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "Table",
+        "Message": "Added a validation to disallow saving table joins without respective joining fields"
+      }
+    ]
+  },
+  {
     "Version": "2024.8.7.7",
     "LegacyReleaseDate": "2024-08-07 00:00:00Z",
     "Changes": [
