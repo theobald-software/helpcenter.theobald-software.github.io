@@ -1,5 +1,27 @@
 [
   {
+    "Version": "2024.8.8.16",
+    "LegacyReleaseDate": "2024-08-08 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Server",
+        "Component": "General",
+        "Message": "Improve HTTP server logging in case of unsupported HTTP methods."
+      }
+    ]
+  },
+  {
+    "Version": "2024.8.8.12",
+    "LegacyReleaseDate": "2024-08-08 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "Table",
+        "Message": "Added a validation to disallow saving table joins without respective joining fields"
+      }
+    ]
+  },
+  {
     "Version": "2024.8.6.34",
     "LegacyReleaseDate": "2024-08-06 00:00:00Z",
     "Changes": [
