@@ -19,7 +19,7 @@ hide:
 
 ---
 
-### :simple-sap: SAP Connection
+### :simple-sap: SAP 
 
 <div class="mdx-columns" markdown>
 
