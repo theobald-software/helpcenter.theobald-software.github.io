@@ -1,5 +1,16 @@
 [
   {
+    "Version": "2024.8.9.3",
+    "LegacyReleaseDate": "2024-08-09 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "XtractForAlteryx",
+        "Component": "Table",
+        "Message": "Fixed a bug that blocked the column name style to PrefixedCode on the table component\n\n"
+      }
+    ]
+  },
+  {
     "Version": "2024.8.8.10",
     "LegacyReleaseDate": "2024-08-08 00:00:00Z",
     "Changes": [
