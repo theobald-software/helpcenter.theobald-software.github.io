@@ -20,7 +20,7 @@ When starting the setup the following components can be selected:
 |Component | Description |
 |:----|:---|
 |Main Product Files |  All required files to use yunIO. |
-| :material-subdirectory-arrow-right: Install Service | Installs the server component as a windows service. |
+| :material-subdirectory-arrow-right: Install Service | Installs the server component as a windows service that runs under a [virtual service account](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/manage/understand-service-accounts#virtual-accounts) with the least required privileges. |
 |Start Menu Shortcuts | Component that adds shortcuts to the start menu.|
 | Enable .NET updates via Windows Update <br>for Windows Server Edition. | Adds a registry entry that automatically updates .NET.|
 |Open the yunIO Designer after installation | Opens the yunIO Designer in your standard web browser.|

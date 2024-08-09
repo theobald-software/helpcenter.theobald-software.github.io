@@ -25,8 +25,8 @@ Copy all SSIS packages that use {{ productName }} {{ components }}.
 It is recommended to create backups at regular intervals to switch back to the previous version, if necessary.
 
 !!! warning 
-	**Warning! Data loss.**<br>
-    System updates or changes can restrict software functionalities and this may lead to data loss. <br>
+	**Data loss.**<br>
+    System updates or changes can restrict software functionalities and this may lead to data loss.
     Create a backup of the directory: `{{ installationDir }}\config` at regular intervals.
 	
 {% elif page.meta.product == "xtract-for-alteryx" %}
@@ -41,14 +41,14 @@ It is recommended to create backups at regular intervals to switch back to the p
 
 On the machine that runs the {{ productName}} service, copy the following files and folders and store them in a secure location:
 
-- copy the complete `config` folder in the {{ productName}} installation directory, e.g., `{{ installationDir }}\config`. 
+- copy the complete `config` and `private` folder in the {{ productName}} installation directory, e.g., `{{ installationDir }}\config`. 
 - optionally, copy the complete `logs` directory to create a backup of the log files. 
 - copy the `{{ setup }}License.json` file to backup your license.
 
 !!! warning 
-	**Warning! Data security.**<br>
-    Both `config` and `logs` directories may contain sensitive information. <br>
-	Make sure to secure any sensitive data.
+	**Data security.**<br>
+    The `config`, `private` and `logs` directories may contain sensitive information. Unauthorized access may lead to data breaches. <br>
+	Make sure to secure the backup location.
 
 It is recommended to create backups at regular intervals or use a versioning tool to switch back to the previous version, if necessary.
 
@@ -65,12 +65,13 @@ It is recommended to create backups at regular intervals or use a versioning too
 #### Restore a Backup
 
 1. On the machine that runs the {{ productName}} service, remove the `config` folder from the installation directory of {{ productName}}, e.g., `{{ installationDir }}`.
-2. Copy the backup of the `config` folder into the installation directory.
-3. To restore the license, replace the `{{ setup }}License.json` file in the installation directory with the backup.
+2. Remove the `config` and `private` folders from the installation directory.
+3. Copy the backup of the `config` and `private` folders into the installation directory.
+4. To restore the license, replace the `{{ setup }}License.json` file in the installation directory with the backup.
 
 !!! warning 
-	**Warning! Data loss.**<br>
-    Restoring the backup of the `config` folder replaces the existing configuration. <br>
+	**Data loss.**<br>
+    Restoring the backup of the `config` and `private` folders replaces the existing configuration. <br>
 	Make sure to remove the existing files before restoring the backups.
 
 {% endif %}
@@ -141,7 +142,7 @@ Make sure to create a backup beforehand and conduct all the necessary preparatio
 {% if page.meta.product == "xtract-universal" or page.meta.product == "board-connector"%}
 
 !!! warning 
-	**Warning! Critical errors. Support cannot be provided.**<br>
+	**Critical errors. Support cannot be provided.**<br>
     The versions of the test environment and of the production environment must be identical. Different versions can cause critical errors. No support can be provided, if the versions are not identical. <br>
 	Make sure to keep the versions of the test environment and production environment identical - upgrade or downgrade, if needed.
 	

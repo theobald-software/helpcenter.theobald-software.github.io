@@ -18,15 +18,15 @@ When starting the installation program, optional components can be selected duri
 
 ![Migration1](../../assets/images/xu/documentation/setup/Migration_1.png){:class="img-responsive"}
 
-|Component | Sub Component| Description |
-|:----|:---|:---|
-|Main Product Files |- | All required files to use Board Connector. |
-|Designer | -| Installs the Designer application, uncheck this option if you want to use Board Connector without a graphical interface. |
-|Server | | Installs the Board Connector Server |
-|<!---->| Install Service| Installs the server component as a windows service, see [Server](../server/index.md). |
-| <!---->  |  Convert config files | Converts extractions, sources, destinations, etc. from previous version format to new format. Crucial when installing major releases and upgrading from e.g., version 3.x to 4.x.|
-|XtractUniversal Report Server Plugin |- |Plugin required by the [Power BI Report Server](../destinations/server-report-services.md) destination.|
-|Start Menu Shortcuts |- |Component that adds shortcuts to the start menu.|
+|Component | Description |
+|:----|:---|
+|Main Product Files | All required files to use Board Connector. |
+|Designer |  Installs the Designer application, uncheck this option if you want to use Board Connector without a graphical interface. |
+|Server |  Installs the Board Connector Server |
+| :material-subdirectory-arrow-right: Convert config files | Converts extractions, sources, destinations, etc. from previous version format to new format. Crucial when installing major releases and upgrading from e.g., version 3.x to 4.x.|
+|:material-subdirectory-arrow-right: Install Service| Installs the server component as a windows service that runs under a [virtual service account](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/manage/understand-service-accounts#virtual-accounts) with the least required privileges, see [Server](../server/index.md). |
+|XtractUniversal Report Server Plugin |Plugin required by the [Power BI Report Server](../destinations/server-report-services.md) destination.|
+|Start Menu Shortcuts |Component that adds shortcuts to the start menu.|
 
 
 !!! note
@@ -46,6 +46,7 @@ The list below shows several most important files that are placed into the defau
 | logs directory| Directory with server and extraction etc. logs, see [Logs](../logs.md). |
 | config directory | Directory containing all SAP connections, extractions, destinations and other settings. See also [Backup and Migration](migration.md).|
 | powerbi directory| Directory containing files related to [Power BI Connector destination](../destinations/Power-BI-Connector.md).|
+| private directory | Directory containing keys for encrypted SAP passwords. This directory contains sensitive information and must be to be secured accordingly. |
 | result-cache directory | Directory with extraction cache files, only applicable for [Pull Destinations](../destinations/index.md).|
 | xu.exe | Command line tool used for executing extractions, see [Schedule an Extraction](../execute-and-automate/call-via-scheduler.md). |
 | xu-config.exe | Command line tool used for creating extractions, see [Create Extractions without the Xtract Universal Designer GUI](../../knowledge-base/config-command-line-tool.md). |
