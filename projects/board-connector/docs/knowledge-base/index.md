@@ -76,6 +76,16 @@ hide:
 
 ---
 
+### :component-odp: ODP
+
+<div class="mdx-columns" markdown>
+
+- [Alternatives for the ODP Extraction Type :material-alert-decagram:](alternatives-for-odp.md)
+
+</div>
+
+---
+
 ### :component-report: Report
 
 <div class="mdx-columns" markdown>

@@ -52,6 +52,7 @@ hide:
 
 <div class="mdx-columns" markdown>
 
+- [Alternatives for Xtract ODP :material-alert-decagram:](alternatives-for-odp.md)
 - [Delta Extraction of Sales and Customer Data from SAP](delta-extraction-of-sales-data.md)
 
 </div>

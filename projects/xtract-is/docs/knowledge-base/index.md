@@ -60,6 +60,16 @@ hide:
 
 ---
 
+### :component-odp: ODP
+
+<div class="mdx-columns" markdown>
+
+- [Alternatives for Xtract ODP :material-alert-decagram:](alternatives-for-odp.md)
+
+</div>
+
+---
+
 ### :component-report: Xtract Report
 
 <div class="mdx-columns" markdown>
