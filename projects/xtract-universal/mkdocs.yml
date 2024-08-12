@@ -237,7 +237,7 @@ extra:
   component: extraction type
   Component: Extraction Type
   Components: Extraction Types
-  components: extractions types
+  components: extraction types
   installationDir: C:\Program Files\XtractUniversal
   setup: XtractUniversal
   bapi: BAPI
