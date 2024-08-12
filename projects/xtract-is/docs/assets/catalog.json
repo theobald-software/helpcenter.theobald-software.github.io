@@ -1,5 +1,16 @@
 [
   {
+    "Version": "2024.8.12.41",
+    "LegacyReleaseDate": "2024-08-12 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "XtractKernel",
+        "Component": "General",
+        "Message": "Migrated XtractKernel library to new version numbering scheme"
+      }
+    ]
+  },
+  {
     "Version": "2024.8.8.11",
     "LegacyReleaseDate": "2024-08-08 00:00:00Z",
     "Changes": [
