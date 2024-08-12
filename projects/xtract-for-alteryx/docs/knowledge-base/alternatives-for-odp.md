@@ -1,5 +1,5 @@
 ---
-title: Alternatives for the ODP Extraction Type
+title: Alternatives for Xtract ODP
 description: A list of components that can replace ODP extractions.
 ---
 
