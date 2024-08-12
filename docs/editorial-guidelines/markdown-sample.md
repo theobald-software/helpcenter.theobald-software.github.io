@@ -255,17 +255,23 @@ There are two methods to create grid cards:
 	::cards:: cols=3
 
 	- title: BAPI
-		image: site:assets/images/logos/components/Function-BAPI.svg
+		image:
+			url: ./img/icons/001-zeus.png
+			alt: A picture of Zeus
 		content: Execute BAPIs and Function Modules. <br> <br> <span class="keyword">ERP/ ECC</span> <span class="keyword">BW</span><span class="keyword">type&#58; transformation</span>
 		url: site:documentation/bapi/
 		  
 	- title: BW Cube
-		image: site:assets/images/logos/components/Cube-BEx.svg
+		image:
+			url: ./img/icons/001-zeus.png
+			alt: A picture of Zeus
 		content: Extract data from SAP BW InfoCubes and BEx Queries.<br> <br><span class="keyword">BW</span> <span class="keyword">type&#58; source</span>
 		url: site:documentation/bwcube/
 		  
 	- title: BW Loader
-		image: site:assets/images/logos/components/BWLoader.svg
+		image:
+			url: ./img/icons/001-zeus.png
+			alt: A picture of Zeus
 		content: Load data into SAP BW systems. <br> <br> <span class="keyword">BW</span><span class="keyword">type&#58; destination</span> 
 		url: site:documentation/bwloader/
 
