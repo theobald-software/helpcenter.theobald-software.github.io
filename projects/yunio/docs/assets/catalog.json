@@ -6,7 +6,7 @@
       {
         "Product": "Theobald.Server",
         "Component": "General",
-        "Message": "Fixed Extraction.Timestamp format for script expressions - Bug introduced in version 6.8.11.0\n\n"
+        "Message": "Fixed Extraction.Timestamp format for script expressions - Bug introduced in version 6.8.11.0"
       }
     ]
   },
