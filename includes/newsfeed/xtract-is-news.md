@@ -11,16 +11,6 @@
 
     :material-clock-time-two-outline: 2024-09-01
 
--   **:material-video-box: Webinar: The TS Partner Ecosystem**
-
-    ---
-
-    [Join our webinar](https://theobald-software.com/en/webinars/partner-ecosystem/) on 08/08/2024 - 11:00AM PDT to learn why and how Theobald Software works with technology partners to deliver better decision making and drive value to SAP customers. 
-
-    ---
-
-    :material-clock-time-two-outline: 2024-08-08
-
 -   **New Version Numbers**
 
     ---
