@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			<td>${item.Version}</td>
 			<td>${item.LegacyReleaseDate.split(' ')[0]}</td>
 			<td>${hasMultipleChanges ? 'Multiple changes' : `${item.Changes[0].Component} <br>  ${item.Changes[0].Product ? `(${item.Changes[0].Product})` : ''}`}</td>
-			<td>
+			<td class='${item.IsBreaking ? "breaking" : ""}${item.IsCritical ? " critical" : ""}'>
 			${item.IsBreaking ? '<img src="../assets/images/logos/link_broken.svg" alt="breaking-change" title="Breaking Change: This update affects (breaks) your existing extraction setup.  Be sure to test this update on a QA environment, before updating your production environment. Read the Release Note to understand if and how your extractions are affected by this update." style="width:20px;">' : ''}
 			${item.IsCritical ? '<img src="../assets/images/logos/critical.svg" alt="critical-change" title="Critical Change: This is an important software release. Installing this update is highly recommended." style="width:20px;">' : ''}
 			</td>
@@ -212,7 +212,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 		document.querySelectorAll('#catalogBody tr').forEach(row => {
 			const versionCell = row.querySelector('td:first-child');
-			const descriptionCell = row.querySelector('td:nth-child(5)');
+			const descriptionCell = row.querySgitelector('td:nth-child(5)');
 			const impactCell = row.querySelector('td:nth-child(4)');
 			const componentCell = row.querySelector('td:nth-child(3)');
 			const releaseDateCell = row.querySelector('td:nth-child(2)');
