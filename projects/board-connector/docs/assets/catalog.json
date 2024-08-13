@@ -1,5 +1,16 @@
 [
   {
+    "Version": "2024.8.13.73",
+    "LegacyReleaseDate": "2024-08-13 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Server",
+        "Component": "General",
+        "Message": "Fixed a bug where extraction resources would not be released immediately after the extraction finishes and block SAP resources."
+      }
+    ]
+  },
+  {
     "Version": "2024.8.12.113",
     "LegacyReleaseDate": "2024-08-12 00:00:00Z",
     "Changes": [
