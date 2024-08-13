@@ -212,7 +212,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 		document.querySelectorAll('#catalogBody tr').forEach(row => {
 			const versionCell = row.querySelector('td:first-child');
-			const descriptionCell = row.querySgitelector('td:nth-child(5)');
+			const descriptionCell = row.querySelector('td:nth-child(5)');
 			const impactCell = row.querySelector('td:nth-child(4)');
 			const componentCell = row.querySelector('td:nth-child(3)');
 			const releaseDateCell = row.querySelector('td:nth-child(2)');
