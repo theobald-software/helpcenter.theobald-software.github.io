@@ -1,9 +1,10 @@
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', async () => {
 	const modal = document.getElementById('modal');
 	const modalContent = document.getElementById('modalBody');
 	const modalHeader = document.getElementById('modalHeader');
 	const span = document.getElementsByClassName('close')[0];
+	let originalData = [];
 
 	// Function to open the modal
 	const openModal = (headerContent, bodyContent) => {
@@ -15,20 +16,18 @@ document.addEventListener('DOMContentLoaded', () => {
 	// Function to close the modal
 	const closeModal = () => {
 		modal.style.display = 'none';
-		// Update the URL to remove modal parameters
 		const urlSearchParams = new URLSearchParams(window.location.search);
 		urlSearchParams.delete('product');
 		urlSearchParams.delete('version');
+		urlSearchParams.delete('changeIndex');
 		const newUrl = `${window.location.pathname}?${urlSearchParams.toString()}`;
 		window.history.pushState({}, '', newUrl);
 	};
 
-	// When the user clicks on <span> (x), close the modal
 	span.onclick = () => {
 		closeModal();
 	};
 
-	// When the user clicks anywhere outside of the modal, close it
 	window.onclick = (event) => {
 		if (event.target == modal) {
 			closeModal();
@@ -40,13 +39,15 @@ document.addEventListener('DOMContentLoaded', () => {
 			const releaseNote = decodeURIComponent(event.target.dataset.releaseNote);
 			const productName = event.target.dataset.productName;
 			const version = event.target.dataset.version;
+			const changeIndex = event.target.dataset.changeIndex;
 			const parsedContent = parseMarkdown(releaseNote);
-			const headerContent = `<h1>${productName} - Version ${version}</h1>`;
+			const headerContent = `<h2>${productName} - Version ${version}</h2>`;
 			openModal(headerContent, parsedContent);
 
 			const urlSearchParams = new URLSearchParams(window.location.search);
 			urlSearchParams.set('product', productName);
 			urlSearchParams.set('version', version);
+			urlSearchParams.set('changeIndex', changeIndex);
 			const newUrl = `${window.location.pathname}?${urlSearchParams.toString()}`;
 			window.history.pushState({}, '', newUrl);
 		}
@@ -57,6 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		try {
 			const response = await fetch('../assets/catalog.json');
 			const data = await response.json();
+			originalData = data;
 			return data;
 		} catch (error) {
 			console.error('Error fetching catalog data:', error);
@@ -72,7 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		summaryRow.innerHTML = `
 			<td>${item.Version}</td>
 			<td>${item.LegacyReleaseDate.split(' ')[0]}</td>
-			<td>${hasMultipleChanges ? 'Multiple changes' : `${item.Changes[0].Component} <br>  ${item.Changes[0].Product ? `(${item.Changes[0].Product})` : ''}`}</td>
+			<td>${hasMultipleChanges ? 'Multiple changes' : `${item.Changes[0].Component} <br> ${item.Changes[0].Product ? `(${item.Changes[0].Product})` : ''}`}</td>
 			<td class='${item.IsBreaking ? "breaking" : ""}${item.IsCritical ? " critical" : ""}'>
 			${item.IsBreaking ? '<img src="../assets/images/logos/link_broken.svg" alt="breaking-change" title="Breaking Change: This update affects (breaks) your existing extraction setup.  Be sure to test this update on a QA environment, before updating your production environment. Read the Release Note to understand if and how your extractions are affected by this update." style="width:20px;">' : ''}
 			${item.IsCritical ? '<img src="../assets/images/logos/critical.svg" alt="critical-change" title="Critical Change: This is an important software release. Installing this update is highly recommended." style="width:20px;">' : ''}
@@ -85,12 +87,12 @@ document.addEventListener('DOMContentLoaded', () => {
 			item.Changes.forEach((change, index) => {
 				const row = document.createElement('tr');
 				row.innerHTML = `
-				<td></td>
-				<td></td>
-				<td>${change.Component} ${change.Component} <br> (${change.Product})</td>
-				<td></td>
-				<td>${change.Message} ${change.ReleaseNote ? ` <button class="show-more" data-release-note="${encodeURIComponent(change.ReleaseNote)}" data-product-name="${change.Product}" data-version="${item.Version}" style="cursor: pointer; color: #ED1A33;">(Open Release note)</button>` : ''}</td>
-			  `;
+					<td></td>
+					<td></td>
+					<td>${change.Component} <br> (${change.Product})</td>
+					<td></td>
+					<td>${change.Message} ${change.ReleaseNote ? `<button class="show-more" data-release-note="${encodeURIComponent(change.ReleaseNote)}" data-product-name="${change.Product}" data-version="${item.Version}" data-change-index="${index}" style="cursor: pointer; color: #ED1A33;">(Open Release note)</button>` : ''}</td>
+				`;
 				rows.push(row);
 			});
 		}
@@ -98,17 +100,66 @@ document.addEventListener('DOMContentLoaded', () => {
 		return rows;
 	};
 
-	// Populate the table with data
-	const populateTable = async () => {
-		const data = await fetchData();
+	const renderTable = (dataToDisplay) => {
 		const tableBody = document.getElementById('catalogBody');
 		tableBody.innerHTML = '';
-		data.forEach(item => {
+		dataToDisplay.forEach(item => {
 			const rows = renderRow(item);
 			rows.forEach(row => tableBody.appendChild(row));
 		});
-		addEventListeners();
-		openModalFromURLParams(data);
+	};
+
+	const applyFilter = (data, filterValue) => {
+		const urlSearchParams = new URLSearchParams(window.location.search);
+		if (filterValue) {
+			urlSearchParams.set('filter', filterValue);
+		} else {
+			urlSearchParams.delete('filter');
+		}
+		const newUrl = `${window.location.pathname}?${urlSearchParams.toString()}`;
+		window.history.pushState({}, '', newUrl);
+
+		if (!filterValue) return data;
+
+		const comparisonOperator = filterValue.charAt(0);
+		let versionNumber = filterValue.slice(1).trim();
+
+		if (comparisonOperator === '>' || comparisonOperator === '<') {
+			return data.filter(item => {
+				if (!versionNumber.includes('.')) {
+					versionNumber += '.0'; // Handle cases like '>5' by appending '.0'
+				}
+				return comparisonOperator === '>'
+					? compareVersions(item.Version, versionNumber) > 0
+					: compareVersions(item.Version, versionNumber) < 0;
+			});
+		} else {
+			return data.filter(item => {
+				const searchText = filterValue.toLowerCase();
+				return (
+					item.Version.includes(searchText) ||
+					item.LegacyReleaseDate.split(' ')[0].includes(searchText) ||
+					item.Changes.some(change =>
+						change.Component.toLowerCase().includes(searchText) ||
+						change.Message.toLowerCase().includes(searchText) ||
+						(change.Product && change.Product.toLowerCase().includes(searchText))
+					)
+				);
+			});
+		}
+	};
+
+	const compareVersions = (version1, version2) => {
+		const parts1 = version1.split('.').map(part => parseInt(part, 10));
+		const parts2 = version2.split('.').map(part => parseInt(part, 10));
+
+		for (let i = 0; i < Math.max(parts1.length, parts2.length); i++) {
+			const part1 = parts1[i] || 0;
+			const part2 = parts2[i] || 0;
+			if (part1 > part2) return 1;
+			if (part1 < part2) return -1;
+		}
+		return 0;
 	};
 
 	const isMarkdown = (content) => {
@@ -147,140 +198,57 @@ document.addEventListener('DOMContentLoaded', () => {
 			.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank">$1</a>');
 
 		return htmlText;
-	}
-
-	const addEventListeners = () => {
-		const urlSearchParams = new URLSearchParams(window.location.search);
-		const filterValue = urlSearchParams.get('filter');
-		const filterInput = document.querySelector('.input-search');
-		if (filterInput) {
-			filterInput.value = filterValue || '';
-			filterRows(filterValue || '');
-
-			filterInput.addEventListener('input', () => {
-				const newFilterValue = filterInput.value.toLowerCase();
-				filterRows(newFilterValue);
-
-				urlSearchParams.set('filter', newFilterValue);
-				const newUrl = `${window.location.pathname}?${urlSearchParams.toString()}`;
-				window.history.pushState({}, '', newUrl);
-			});
-		}
-
-		const clearButton = document.querySelector('.btn-clear');
-		if (clearButton) {
-			clearButton.addEventListener('click', () => {
-				filterInput.value = '';
-				filterRows('');
-				urlSearchParams.delete('filter');
-				const newUrl = `${window.location.pathname}?${urlSearchParams.toString()}`;
-				window.history.pushState({}, '', newUrl);
-			});
-		}
-
-		const catalogTable = document.getElementById('catalogTable');
-		if (catalogTable) {
-			catalogTable.addEventListener('click', async (event) => {
-				if (event.target.classList.contains('showMoreBtn')) {
-					const versionRow = event.target.closest('tr');
-					const versionCell = versionRow.querySelector('td:first-child');
-					const version = versionCell.textContent;
-					const additionalData = await fetchAdditionalData(version);
-					if (additionalData) {
-
-						additionalData.forEach(dataObj => {
-							event.target.textContent = `${dataObj.Component}`;
-							const messageCell = document.createElement('td');
-							messageCell.textContent = dataObj.Message;
-							versionRow.appendChild(messageCell);
-
-							if (dataObj.ReleaseNote !== undefined) {
-								const noteCell = document.createElement('td');
-								noteCell.innerHTML = parseMarkdown(dataObj.ReleaseNote);
-								versionRow.appendChild(noteCell);
-							}
-						})
-					}
-				}
-			});
-		}
-	};
-
-	const filterRows = (filterValue) => {
-		const comparisonOperator = filterValue.charAt(0);
-		const versionNumber = filterValue.slice(1).trim();
-
-		document.querySelectorAll('#catalogBody tr').forEach(row => {
-			const versionCell = row.querySelector('td:first-child');
-			const descriptionCell = row.querySelector('td:nth-child(5)');
-			const impactCell = row.querySelector('td:nth-child(4)');
-			const componentCell = row.querySelector('td:nth-child(3)');
-			const releaseDateCell = row.querySelector('td:nth-child(2)');
-			const version = versionCell.textContent.trim();
-			const description = descriptionCell.textContent.trim().toLowerCase();
-			const component = descriptionCell.textContent.trim().toLowerCase();
-			const releaseDate = releaseDateCell.textContent.trim().toLowerCase();
-			const searchText = filterValue.toLowerCase();
-			const impactClasses = impactCell.className.toLowerCase();
-
-			let displayRow = false;
-
-			if (comparisonOperator === '>') {
-				displayRow = compareVersions(version, versionNumber) > 0;
-			} else if (comparisonOperator === '<') {
-				displayRow = compareVersions(version, versionNumber) < 0;
-			} else {
-				displayRow = version.includes(searchText) || description.includes(searchText) || component.includes(searchText) || releaseDate.includes(searchText) || impactClasses.includes(searchText);
-			}
-
-			row.style.display = displayRow ? '' : 'none';
-		});
 	};
 
 	const openModalFromURLParams = (data) => {
 		const urlSearchParams = new URLSearchParams(window.location.search);
 		const productName = urlSearchParams.get('product');
 		const version = urlSearchParams.get('version');
+		const changeIndex = urlSearchParams.get('changeIndex');
 
-		if (productName && version) {
+		if (productName && version && changeIndex !== null) {
 			data.forEach(item => {
-				if (item.Version === version) {
-					item.Changes.forEach(change => {
-						if (change.Product === productName && change.ReleaseNote) {
-							const releaseNote = decodeURIComponent(change.ReleaseNote);
-							const parsedContent = parseMarkdown(releaseNote);
-							const headerContent = `<h2>${productName} - Version ${version}</h2>`;
-							openModal(headerContent, parsedContent);
-						}
-					});
+				if (item.Version === version && item.Changes[changeIndex]) {
+					const change = item.Changes[changeIndex];
+					if (change.Product === productName && change.ReleaseNote) {
+						const releaseNote = decodeURIComponent(change.ReleaseNote);
+						const parsedContent = parseMarkdown(releaseNote);
+						const headerContent = `<h2>${productName} - Version ${version}</h2>`;
+						openModal(headerContent, parsedContent);
+					}
 				}
 			});
 		}
 	};
 
-	const compareVersions = (version1, version2) => {
-		const parts1 = version1.split('.').map(part => parseInt(part));
-		const parts2 = version2.split('.').map(part => parseInt(part));
+	const data = await fetchData();
+	const urlSearchParams = new URLSearchParams(window.location.search);
+	const filterValue = urlSearchParams.get('filter');
 
-		for (let i = 0; i < Math.min(parts1.length, parts2.length); i++) {
-			if (parts1[i] !== parts2[i]) {
-				return parts1[i] - parts2[i];
-			}
-		}
+	let filteredData = data;
+	if (filterValue) {
+		filteredData = applyFilter(data, filterValue);
+	}
 
-		return parts1.length - parts2.length;
-	};
+	renderTable(filteredData);
 
-	// Read the search parameter from the URL and apply the filter
-	window.addEventListener('load', () => {
-		const urlSearchParams = new URLSearchParams(window.location.search);
-		const filterValue = urlSearchParams.get('filter');
-		const filterInput = document.getElementById('search');
-		if (filterInput && filterValue) {
-			filterInput.value = filterValue;
-			filterRows(filterValue);
-		}
-	});
+	const filterInput = document.querySelector('.input-search');
+	if (filterInput) {
+		filterInput.value = filterValue || '';
+		filterInput.addEventListener('input', debounce(() => {
+			const newFilterValue = filterInput.value.toLowerCase();
+			const newFilteredData = applyFilter(originalData, newFilterValue);
+			renderTable(newFilteredData);
+		}, 300));
+	}
 
-	populateTable();
+	openModalFromURLParams(filteredData);
 });
+
+const debounce = (func, delay) => {
+	let timeoutId;
+	return (...args) => {
+		clearTimeout(timeoutId);
+		timeoutId = setTimeout(() => func.apply(this, args), delay);
+	};
+};
