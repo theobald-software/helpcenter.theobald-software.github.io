@@ -1,5 +1,120 @@
 [
   {
+    "Version": "2024.8.12.109",
+    "LegacyReleaseDate": "2024-08-12 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "General",
+        "Message": "Migrated Theobald.Extractors library to new version numbering scheme"
+      }
+    ]
+  },
+  {
+    "Version": "2024.8.9.3",
+    "LegacyReleaseDate": "2024-08-09 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "XtractForAlteryx",
+        "Component": "Table",
+        "Message": "Fixed a bug that blocked the column name style to PrefixedCode on the table component"
+      }
+    ]
+  },
+  {
+    "Version": "2024.8.8.10",
+    "LegacyReleaseDate": "2024-08-08 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "Table",
+        "Message": "Added a validation to disallow saving table joins without respective joining fields"
+      }
+    ]
+  },
+  {
+    "Version": "2024.8.2.21",
+    "LegacyReleaseDate": "2024-08-02 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "Table",
+        "Message": "Fixed a bug that would not allow editing runtime parameters if no table was added"
+      }
+    ]
+  },
+  {
+    "Version": "2024.7.31.3",
+    "LegacyReleaseDate": "2024-07-31 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Common",
+        "Component": "General",
+        "Message": "Updated AboutWindow with links for new HelpCenter"
+      },
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "General",
+        "Message": "Updated help links in various windows for new HelpCenter"
+      }
+    ]
+  },
+  {
+    "Version": "2024.7.30.17",
+    "LegacyReleaseDate": "2024-07-30 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "Table",
+        "Message": "Z_XTRACT_IS_TABLE_COMPRESSION marked as deprecated and cannot be selected anymore. The function module will be out of support starting 01/01/2025."
+      }
+    ]
+  },
+  {
+    "Version": "2024.7.26.14",
+    "LegacyReleaseDate": "2024-07-26 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "ODP",
+        "Message": "Fixed a performance regression causing XML reading when processing ODP packages to be extremely slow."
+      }
+    ]
+  },
+  {
+    "Version": "2024.7.26.12",
+    "LegacyReleaseDate": "2024-07-26 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "BW Cube",
+        "Message": "MDX: Ignore empty members in list parameters"
+      }
+    ]
+  },
+  {
+    "Version": "2024.7.25.60",
+    "LegacyReleaseDate": "2024-07-25 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "Table",
+        "Message": "Fixed a bug where script expressions would not be correctly evaluated in the preview."
+      }
+    ]
+  },
+  {
+    "Version": "2024.7.25.43",
+    "LegacyReleaseDate": "2024-07-25 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Common",
+        "Component": "General",
+        "Message": "Fixed error when clicking on links in About Window (caused by migration to .net8)"
+      }
+    ]
+  },
+  {
     "Version": "2024.7.24.2",
     "LegacyReleaseDate": "2024-07-24 00:00:00Z",
     "Changes": [
@@ -18,26 +133,6 @@
         "Product": "XtractForAlteryx",
         "Component": "General",
         "Message": "Migrated XtractForAlteryx to new version numbering scheme. During an update, the setup now detects which version is currently installed and displays a list of breaking changes (if there are any) that have been introduced since the previously installed version."
-      },
-      {
-        "Product": "Common",
-        "Component": "General",
-        "Message": "Fixed error when clicking on links in About Window (caused by migration to .net8)"
-      },
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "ODP",
-        "Message": "Fixed a performance regression causing XML reading when processing ODP packages to be extremely slow."
-      },
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "MDX: Ignore empty members in list parameters"
-      },
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "Table",
-        "Message": "Fixed a bug where script expressions would not be correctly evaluated in the preview."
       }
     ]
   },
@@ -282,13 +377,8 @@
   },
   {
     "Version": "1.21.2.0",
-    "LegacyReleaseDate": "2024-06-12 15:18:53Z",
+    "LegacyReleaseDate": "2024-06-12 00:00:00Z",
     "Changes": [
-      {
-        "Product": "XtractForAlteryx",
-        "Component": "General",
-        "Message": "Updated NW RFC SDK to 750 PL13"
-      },
       {
         "Product": "Common",
         "Component": "General",
@@ -546,14 +636,9 @@
   },
   {
     "Version": "1.21.0.0",
-    "LegacyReleaseDate": "2024-05-06 20:49:51Z",
+    "LegacyReleaseDate": "2024-05-06 00:00:00Z",
     "IsBreaking": true,
     "Changes": [
-      {
-        "Product": "XtractForAlteryx",
-        "Component": "General",
-        "Message": "Use new parameter system"
-      },
       {
         "Product": "Theobald.Extractors",
         "Component": "General",
@@ -3234,13 +3319,8 @@
   },
   {
     "Version": "1.16.5.0",
-    "LegacyReleaseDate": "2022-09-26 15:21:09Z",
+    "LegacyReleaseDate": "2022-09-26 00:00:00Z",
     "Changes": [
-      {
-        "Product": "XtractForAlteryx",
-        "Component": "Table",
-        "Message": "added support for function modules /BODS/RFC_STREAM_READ_TABLE and /SAPDS/RFC_STREAM_READ_TABLE"
-      },
       {
         "Product": "Theobald.Extractors",
         "Component": "Table",
@@ -3573,13 +3653,8 @@
   },
   {
     "Version": "1.16.4.0",
-    "LegacyReleaseDate": "2022-05-30 16:44:45Z",
+    "LegacyReleaseDate": "2022-05-30 00:00:00Z",
     "Changes": [
-      {
-        "Product": "XtractForAlteryx",
-        "Component": "BW Cube",
-        "Message": "Support for Only_Structures behavior in MDX BEx Queries. Various bug fixes and general improvements for the Cube component."
-      },
       {
         "Product": "Theobald.Extractors",
         "Component": "BW Cube",
@@ -3855,13 +3930,8 @@
   },
   {
     "Version": "1.14.2.0",
-    "LegacyReleaseDate": "2022-03-28 17:49:19Z",
+    "LegacyReleaseDate": "2022-03-28 00:00:00Z",
     "Changes": [
-      {
-        "Product": "XtractForAlteryx",
-        "Component": "Designer",
-        "Message": "About window was refactored"
-      },
       {
         "Product": "Common",
         "Component": "WPF",
@@ -5658,13 +5728,8 @@
   },
   {
     "Version": "1.9.3.0",
-    "LegacyReleaseDate": "2020-05-20 08:35:50Z",
+    "LegacyReleaseDate": "2020-05-20 00:00:00Z",
     "Changes": [
-      {
-        "Product": "XtractForAlteryx",
-        "Component": "General",
-        "Message": "License forward compatibility improvement for supported components."
-      },
       {
         "Product": "Common",
         "Component": "Licensing",
@@ -6245,13 +6310,8 @@
   },
   {
     "Version": "1.7.1.0",
-    "LegacyReleaseDate": "2019-09-24 13:05:40Z",
+    "LegacyReleaseDate": "2019-09-24 00:00:00Z",
     "Changes": [
-      {
-        "Product": "XtractForAlteryx",
-        "Component": "General",
-        "Message": "Updated TheobaldExtractors to version 1.10.4"
-      },
       {
         "Product": "Theobald.Extractors",
         "Component": "Hierarchy",
@@ -6377,13 +6437,8 @@
   },
   {
     "Version": "1.5.4.0",
-    "LegacyReleaseDate": "2019-09-02 13:37:32Z",
+    "LegacyReleaseDate": "2019-09-02 00:00:00Z",
     "Changes": [
-      {
-        "Product": "XtractForAlteryx",
-        "Component": "BW Cube",
-        "Message": "Fix for cube properties with same names on different dimensions."
-      },
       {
         "Product": "Theobald.Extractors",
         "Component": "BW Cube",
@@ -6393,13 +6448,8 @@
   },
   {
     "Version": "1.5.3.0",
-    "LegacyReleaseDate": "2019-08-30 17:29:05Z",
+    "LegacyReleaseDate": "2019-08-30 00:00:00Z",
     "Changes": [
-      {
-        "Product": "XtractForAlteryx",
-        "Component": "BW Cube",
-        "Message": "Fix for selecting cube properties."
-      },
       {
         "Product": "Theobald.Extractors",
         "Component": "BW Cube",
@@ -6462,13 +6512,8 @@
   },
   {
     "Version": "1.5.1.0",
-    "LegacyReleaseDate": "2019-08-14 19:59:47Z",
+    "LegacyReleaseDate": "2019-08-14 00:00:00Z",
     "Changes": [
-      {
-        "Product": "XtractForAlteryx",
-        "Component": "BW Cube",
-        "Message": "Various fixes for variables"
-      },
       {
         "Product": "Theobald.Extractors",
         "Component": "BW Cube",
@@ -6510,13 +6555,8 @@
   },
   {
     "Version": "1.5.0.0",
-    "LegacyReleaseDate": "2019-08-08 00:24:09Z",
+    "LegacyReleaseDate": "2019-08-07 00:00:00Z",
     "Changes": [
-      {
-        "Product": "XtractForAlteryx",
-        "Component": "General",
-        "Message": "Added support for INT8"
-      },
       {
         "Product": "ERPConnect",
         "Component": "General",

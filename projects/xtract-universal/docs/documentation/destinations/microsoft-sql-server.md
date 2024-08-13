@@ -1,6 +1,6 @@
 ---
 title: Microsoft SQL Server
-description: Microsoft SQL Server destination
+description: Write SAP data to a Microsoft SQL Server destination
 ---
 
 This page shows how to set up and use the {{ page.meta.title }} destination. 

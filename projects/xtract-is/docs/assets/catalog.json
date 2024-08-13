@@ -1,5 +1,109 @@
 [
   {
+    "Version": "2024.8.13.0",
+    "LegacyReleaseDate": "2024-08-13 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "General",
+        "Message": "Migrated Theobald.Extractors library to new version numbering scheme"
+      }
+    ]
+  },
+  {
+    "Version": "2024.8.12.41",
+    "LegacyReleaseDate": "2024-08-12 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "XtractKernel",
+        "Component": "General",
+        "Message": "Migrated XtractKernel library to new version numbering scheme"
+      }
+    ]
+  },
+  {
+    "Version": "2024.8.8.11",
+    "LegacyReleaseDate": "2024-08-08 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "Table",
+        "Message": "Added a validation to disallow saving table joins without respective joining fields"
+      }
+    ]
+  },
+  {
+    "Version": "2024.7.31.6",
+    "LegacyReleaseDate": "2024-07-31 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "XtractIS",
+        "Component": "General",
+        "Message": "Updated URLs in various windows that direct to the new HelpCenter when pressing F1"
+      }
+    ]
+  },
+  {
+    "Version": "2024.7.31.2",
+    "LegacyReleaseDate": "2024-07-31 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Common",
+        "Component": "General",
+        "Message": "Updated AboutWindow with links for new HelpCenter"
+      },
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "General",
+        "Message": "Updated help links in various windows for new HelpCenter"
+      }
+    ]
+  },
+  {
+    "Version": "2024.7.30.18",
+    "LegacyReleaseDate": "2024-07-30 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "Table",
+        "Message": "Z_XTRACT_IS_TABLE_COMPRESSION marked as deprecated and cannot be selected anymore. The function module will be out of support starting 01/01/2025."
+      }
+    ]
+  },
+  {
+    "Version": "2024.7.26.15",
+    "LegacyReleaseDate": "2024-07-26 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "ODP",
+        "Message": "Fixed a performance regression causing XML reading when processing ODP packages to be extremely slow."
+      }
+    ]
+  },
+  {
+    "Version": "2024.7.26.13",
+    "LegacyReleaseDate": "2024-07-26 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "BW Cube",
+        "Message": "MDX: Ignore empty members in list parameters"
+      }
+    ]
+  },
+  {
+    "Version": "2024.7.25.44",
+    "LegacyReleaseDate": "2024-07-25 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Common",
+        "Component": "General",
+        "Message": "Fixed error when clicking on links in About Window (caused by migration to .net8)"
+      }
+    ]
+  },
+  {
     "Version": "2024.7.25.34",
     "LegacyReleaseDate": "2024-07-25 00:00:00Z",
     "Changes": [
@@ -7,26 +111,6 @@
         "Product": "XtractIS",
         "Component": "General",
         "Message": "Migrated XtractIS to new version numbering scheme. During an update, the setup now detects which version is currently installed and displays a list of breaking changes (if there are any) that have been introduced since the previously installed version. Removed XtractIsVersionInfo.exe utility."
-      },
-      {
-        "Product": "Common",
-        "Component": "General",
-        "Message": "Fixed error when clicking on links in About Window (caused by migration to .net8)"
-      },
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "ODP",
-        "Message": "Fixed a performance regression causing XML reading when processing ODP packages to be extremely slow."
-      },
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "MDX: Ignore empty members in list parameters"
-      },
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "Table",
-        "Message": "Fixed a bug where script expressions would not be correctly evaluated in the preview."
       }
     ]
   },
@@ -148,13 +232,8 @@
   },
   {
     "Version": "7.7.3.0",
-    "LegacyReleaseDate": "2024-06-25 05:47:52Z",
+    "LegacyReleaseDate": "2024-06-25 00:00:00Z",
     "Changes": [
-      {
-        "Product": "XtractIS",
-        "Component": "ODP",
-        "Message": "Fixed a regression bug where ODP preview would fail for hierarchy DataSources."
-      },
       {
         "Product": "Theobald.Extractors",
         "Component": "ODP",
@@ -303,13 +382,8 @@
   },
   {
     "Version": "7.7.1.0",
-    "LegacyReleaseDate": "2024-06-12 15:19:14Z",
+    "LegacyReleaseDate": "2024-06-12 00:00:00Z",
     "Changes": [
-      {
-        "Product": "XtractIS",
-        "Component": "General",
-        "Message": "Updated NW RFC SDK to 750 PL13"
-      },
       {
         "Product": "Common",
         "Component": "General",
@@ -506,13 +580,8 @@
   },
   {
     "Version": "7.6.0.0",
-    "LegacyReleaseDate": "2024-05-17 09:55:47Z",
+    "LegacyReleaseDate": "2024-05-17 00:00:00Z",
     "Changes": [
-      {
-        "Product": "XtractIS",
-        "Component": "TableCDC",
-        "Message": "Released Monitoring Feature for Log Tables and Triggers. Update of /THEO/CDC* package required."
-      },
       {
         "Product": "Theobald.Extractors",
         "Component": "TableCDC",
@@ -599,14 +668,9 @@
   },
   {
     "Version": "7.5.0.0",
-    "LegacyReleaseDate": "2024-05-06 20:51:36Z",
+    "LegacyReleaseDate": "2024-05-06 00:00:00Z",
     "IsBreaking": true,
     "Changes": [
-      {
-        "Product": "XtractIS",
-        "Component": "General",
-        "Message": "Use new parameter system"
-      },
       {
         "Product": "Theobald.Extractors",
         "Component": "General",
@@ -3385,13 +3449,8 @@
   },
   {
     "Version": "7.0.3.0",
-    "LegacyReleaseDate": "2022-09-26 15:19:39Z",
+    "LegacyReleaseDate": "2022-09-26 00:00:00Z",
     "Changes": [
-      {
-        "Product": "XtractIS",
-        "Component": "Table",
-        "Message": "added support for function modules /BODS/RFC_STREAM_READ_TABLE and /SAPDS/RFC_STREAM_READ_TABLE"
-      },
       {
         "Product": "Theobald.Extractors",
         "Component": "Table",
@@ -3968,13 +4027,8 @@
   },
   {
     "Version": "6.13.0.0",
-    "LegacyReleaseDate": "2022-04-25 14:52:44Z",
+    "LegacyReleaseDate": "2022-04-25 00:00:00Z",
     "Changes": [
-      {
-        "Product": "XtractIS",
-        "Component": "Table",
-        "Message": "Added graphical where clause editor."
-      },
       {
         "Product": "Theobald.Extractors",
         "Component": "Table",
@@ -4078,13 +4132,8 @@
   },
   {
     "Version": "6.10.3.0",
-    "LegacyReleaseDate": "2022-03-28 17:49:04Z",
+    "LegacyReleaseDate": "2022-03-28 00:00:00Z",
     "Changes": [
-      {
-        "Product": "XtractIS",
-        "Component": "General",
-        "Message": "About window was refactored"
-      },
       {
         "Product": "Common",
         "Component": "WPF",
@@ -4486,13 +4535,8 @@
   },
   {
     "Version": "6.9.0.0",
-    "LegacyReleaseDate": "2021-11-03 08:18:30Z",
+    "LegacyReleaseDate": "2021-11-03 00:00:00Z",
     "Changes": [
-      {
-        "Product": "XtractIS",
-        "Component": "General",
-        "Message": "Table and ODP API: New parameter for adjusting currency decimals"
-      },
       {
         "Product": "Theobald.Extractors",
         "Component": "General",

@@ -9,6 +9,8 @@ The {{ table }} {{ component }} can be used to extract data from SAP Tables and 
 
 {% include "components/table/supported-sap-objects.md"  %}
 
+{% include "components/table/restrictions.md"  %}
+
 {% include "components/table/prerequisites.md" %}
 
 {% include "components/table/auth-warning.md"  %}
@@ -16,8 +18,6 @@ The {{ table }} {{ component }} can be used to extract data from SAP Tables and 
 {% include "components/xis-new.md"  %}
 
 {% include "components/table/define-a-table-extraction.md"  %}
-
-{% include "components/table/restrictions.md"  %}
 
 ****
 #### Related Links

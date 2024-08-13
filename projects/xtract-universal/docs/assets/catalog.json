@@ -1,5 +1,159 @@
 [
   {
+    "Version": "2024.8.12.111",
+    "LegacyReleaseDate": "2024-08-12 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "General",
+        "Message": "Migrated Theobald.Extractors library to new version numbering scheme"
+      }
+    ]
+  },
+  {
+    "Version": "2024.8.12.32",
+    "LegacyReleaseDate": "2024-08-12 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "XtractUniversal",
+        "Component": "Designer",
+        "Message": "Added link to version history from status bar version control"
+      }
+    ]
+  },
+  {
+    "Version": "2024.8.12.0",
+    "LegacyReleaseDate": "2024-08-12 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "XtractUniversal",
+        "Component": "General",
+        "Message": "Fixed a bug that would incorrectly clean out runtime parameters on XU for Alteryx"
+      }
+    ]
+  },
+  {
+    "Version": "2024.8.9.2",
+    "LegacyReleaseDate": "2024-08-09 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Server",
+        "Component": "General",
+        "Message": "Fixed Extraction.Timestamp format for script expressions - Bug introduced in version 6.8.11.0"
+      }
+    ]
+  },
+  {
+    "Version": "2024.8.8.17",
+    "LegacyReleaseDate": "2024-08-08 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Server",
+        "Component": "General",
+        "Message": "Improve HTTP server logging in case of unsupported HTTP methods."
+      }
+    ]
+  },
+  {
+    "Version": "2024.8.8.13",
+    "LegacyReleaseDate": "2024-08-08 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "Table",
+        "Message": "Added a validation to disallow saving table joins without respective joining fields"
+      }
+    ]
+  },
+  {
+    "Version": "2024.8.6.35",
+    "LegacyReleaseDate": "2024-08-06 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Server",
+        "Component": "General",
+        "Message": "This release reduces the privileges with which our code runs on your system. Additionally, a new source password encryption method is used that allows migrating server source configurations to other servers without having to use the same Windows user.",
+        "ReleaseNote": "## Different service user account\n\nThe default service user account has changed from the local system account to a virtual service account. This change was made so our software uses the least privileges required.\n\nWhen upgrading older versions, no manual work is required. The setup will not change the user for the service in existing installations.\n\nIf no previous installation exists, or if it was previously uninstalled, the new service will be created using the virtual service user. You can either, if necessary, manually migrate the permissions of TLS certificates and reset all source passwords or change the service to run as the local system account again. Refer to our [online help on how to grant access to machine store certificates](https://helpcenter.theobald-software.com/xtract-universal/documentation/server/service-account/).\n\n## SAP source password protection\n\nThe encryption method for SAP source passwords was changed from user context specific cryptography to asymmetric cryptography using a per-instance key. This allows migration of sources by also migrating the generated `private/secrets/sources.pem` file. Make sure the directories and files are sufficiently protected when manually moving or changing them.\n\n### Access Restriction sanity checks\n\nThe server will refuse using the `private/secrets/sources.pem` file to store or retrieve passwords when the directory or file have access restrictions that are too permissive. It requires the access to be restricted to individual users or groups only. That means generic access for `Everyone` or `Users` well-known SIDs will be blocked.\n\n### Conversion and issues after installation\n\nWhen the `private/secrets` directories and `sources.pem` file have been created using a different service account, then manual action is required to switch the service user. This can happen after freshly installing the product and initially connecting to the server without changing the service user first. Either action can be taken to resolve the issue\n\n- remove the `private` directory and let the service create a new one, this will cause existing passwords to be lost\n- grant access to the new service user to `private/secrets` and `sources.pem` "
+      }
+    ]
+  },
+  {
+    "Version": "2024.8.5.77",
+    "LegacyReleaseDate": "2024-08-05 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "XtractUniversal",
+        "Component": "Dataiku",
+        "Message": "Add help links for Dataiku"
+      }
+    ]
+  },
+  {
+    "Version": "2024.8.2.48",
+    "LegacyReleaseDate": "2024-08-02 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "XtractUniversal",
+        "Component": "General",
+        "Message": "Migrated XtractUniversal to new version numbering scheme. During an update, the setup now detects which version is currently installed and displays a list of breaking changes (if there are any) that have been introduced since the previously installed version."
+      }
+    ]
+  },
+  {
+    "Version": "6.9.0.7",
+    "LegacyReleaseDate": "2024-08-02 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "Table",
+        "Message": "Fixed a bug that would not allow editing runtime parameters if no table was added"
+      }
+    ]
+  },
+  {
+    "Version": "6.9.0.0",
+    "LegacyReleaseDate": "2024-08-01 13:24:15Z",
+    "Changes": [
+      {
+        "Product": "XtractUniversal",
+        "Component": "Destinations",
+        "Message": "Add Dataiku destination"
+      }
+    ]
+  },
+  {
+    "Version": "6.8.17.0",
+    "LegacyReleaseDate": "2024-07-31 13:48:40Z",
+    "Changes": [
+      {
+        "Product": "XtractUniversal",
+        "Component": "Designer",
+        "Message": "Updated link URLs in various windows that direct to the new HelpCenter when pressing F1"
+      },
+      {
+        "Product": "Common",
+        "Component": "General",
+        "Message": "Updated AboutWindow with links for new HelpCenter"
+      },
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "General",
+        "Message": "Updated help links in various windows for new HelpCenter"
+      }
+    ]
+  },
+  {
+    "Version": "6.8.16.5",
+    "LegacyReleaseDate": "2024-07-30 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "Table",
+        "Message": "Z_XTRACT_IS_TABLE_COMPRESSION marked as deprecated and cannot be selected anymore. The function module will be out of support starting 01/01/2025."
+      }
+    ]
+  },
+  {
     "Version": "6.8.16.1",
     "LegacyReleaseDate": "2024-07-26 00:00:00Z",
     "Changes": [
@@ -192,13 +346,8 @@
   },
   {
     "Version": "6.8.9.0",
-    "LegacyReleaseDate": "2024-07-05 14:32:42Z",
+    "LegacyReleaseDate": "2024-07-05 00:00:00Z",
     "Changes": [
-      {
-        "Product": "XtractUniversal",
-        "Component": "Designer",
-        "Message": "GUI filters now respect wildcards (*)"
-      },
       {
         "Product": "Theobald.Extractors",
         "Component": "General",
@@ -331,13 +480,8 @@
   },
   {
     "Version": "6.8.4.0",
-    "LegacyReleaseDate": "2024-06-21 12:49:51Z",
+    "LegacyReleaseDate": "2024-06-21 00:00:00Z",
     "Changes": [
-      {
-        "Product": "XtractUniversal",
-        "Component": "BW Cube",
-        "Message": "Fixed a bug that caused filters to be removed when refreshing metadata"
-      },
       {
         "Product": "Theobald.Extractors",
         "Component": "BW Cube",
@@ -347,13 +491,8 @@
   },
   {
     "Version": "6.8.3.0",
-    "LegacyReleaseDate": "2024-06-20 17:14:38Z",
+    "LegacyReleaseDate": "2024-06-20 00:00:00Z",
     "Changes": [
-      {
-        "Product": "XtractUniversal",
-        "Component": "General",
-        "Message": "Removed column encryption feature."
-      },
       {
         "Product": "Theobald.Extractors",
         "Component": "General",
@@ -786,13 +925,8 @@
   },
   {
     "Version": "6.6.0.0",
-    "LegacyReleaseDate": "2024-05-17 09:55:13Z",
+    "LegacyReleaseDate": "2024-05-17 00:00:00Z",
     "Changes": [
-      {
-        "Product": "XtractUniversal",
-        "Component": "TableCDC",
-        "Message": "Released Monitoring Feature for Log Tables and Triggers. Update of /THEO/CDC* package required."
-      },
       {
         "Product": "Theobald.Extractors",
         "Component": "TableCDC",
@@ -923,14 +1057,9 @@
   },
   {
     "Version": "6.5.0.0",
-    "LegacyReleaseDate": "2024-05-06 20:54:53Z",
+    "LegacyReleaseDate": "2024-05-06 00:00:00Z",
     "IsBreaking": true,
     "Changes": [
-      {
-        "Product": "XtractUniversal",
-        "Component": "General",
-        "Message": "Use new parameter system"
-      },
       {
         "Product": "Theobald.Extractors",
         "Component": "General",
@@ -1551,14 +1680,9 @@
   },
   {
     "Version": "6.2.13.0",
-    "LegacyReleaseDate": "2024-02-08 09:59:53Z",
+    "LegacyReleaseDate": "2024-02-08 00:00:00Z",
     "IsCritical": true,
     "Changes": [
-      {
-        "Product": "XtractUniversal",
-        "Component": "Security",
-        "Message": "Fixed an issue that caused the result cache to be used independently from caller supplied SAP credentials"
-      },
       {
         "Product": "Theobald.Server",
         "Component": "General",
@@ -2178,13 +2302,8 @@
   },
   {
     "Version": "6.1.11.0",
-    "LegacyReleaseDate": "2023-11-20 17:39:22Z",
+    "LegacyReleaseDate": "2023-11-20 00:00:00Z",
     "Changes": [
-      {
-        "Product": "XtractUniversal",
-        "Component": "Server",
-        "Message": "Fixed a bug where a cache entry would not be invalidated when aborting the extraction.\nFixed an error when invalidating the cache for an extraction after editing."
-      },
       {
         "Product": "ERPConnect",
         "Component": "NWRFC",
@@ -2210,13 +2329,8 @@
   },
   {
     "Version": "6.1.10.0",
-    "LegacyReleaseDate": "2023-11-15 12:41:37Z",
+    "LegacyReleaseDate": "2023-11-15 00:00:00Z",
     "Changes": [
-      {
-        "Product": "XtractUniversal",
-        "Component": "Server",
-        "Message": "Fixed a bug causing cache entries of failed extractions to not be invalidated correctly.\nFixed the timestamp format for script expression of `Extraction.Timestamp`."
-      },
       {
         "Product": "Theobald.Server",
         "Component": "General",
@@ -2352,13 +2466,8 @@
   },
   {
     "Version": "6.1.4.0",
-    "LegacyReleaseDate": "2023-11-02 14:21:00Z",
+    "LegacyReleaseDate": "2023-11-02 00:00:00Z",
     "Changes": [
-      {
-        "Product": "XtractUniversal",
-        "Component": "DeltaQ",
-        "Message": "Slightly refactored some DeltaQ windows"
-      },
       {
         "Product": "Theobald.Extractors",
         "Component": "DeltaQ",
@@ -2474,13 +2583,8 @@
   },
   {
     "Version": "6.1.0.0",
-    "LegacyReleaseDate": "2023-10-19 15:02:12Z",
+    "LegacyReleaseDate": "2023-10-19 00:00:00Z",
     "Changes": [
-      {
-        "Product": "XtractUniversal",
-        "Component": "Destinations",
-        "Message": "Removed the Hadoop destination"
-      },
       {
         "Product": "Common",
         "Component": "Licensing",
@@ -3406,13 +3510,8 @@
   },
   {
     "Version": "5.25.8.0",
-    "LegacyReleaseDate": "2023-07-10 20:03:34Z",
+    "LegacyReleaseDate": "2023-07-10 00:00:00Z",
     "Changes": [
-      {
-        "Product": "XtractUniversal",
-        "Component": "Hierarchy",
-        "Message": "Fixed a bug where description texts were not extracted when the InfoObject name was shorter than expected."
-      },
       {
         "Product": "Theobald.Extractors",
         "Component": "Hierarchy",
@@ -3543,13 +3642,8 @@
   },
   {
     "Version": "5.25.5.0",
-    "LegacyReleaseDate": "2023-06-22 12:22:17Z",
+    "LegacyReleaseDate": "2023-06-22 00:00:00Z",
     "Changes": [
-      {
-        "Product": "XtractUniversal",
-        "Component": "Server",
-        "Message": "Fixed a bug where logging into the Designer with a valid AD-User would result in an authorization error."
-      },
       {
         "Product": "Theobald.Server",
         "Component": "General",
@@ -3802,13 +3896,8 @@
   },
   {
     "Version": "5.24.3.0",
-    "LegacyReleaseDate": "2023-05-11 17:52:58Z",
+    "LegacyReleaseDate": "2023-05-11 00:00:00Z",
     "Changes": [
-      {
-        "Product": "XtractUniversal",
-        "Component": "TableCDC",
-        "Message": "Added option to run initial load as background job"
-      },
       {
         "Product": "Theobald.Extractors",
         "Component": "TableCDC",
@@ -3840,13 +3929,8 @@
   },
   {
     "Version": "5.24.2.0",
-    "LegacyReleaseDate": "2023-05-09 13:28:37Z",
+    "LegacyReleaseDate": "2023-05-09 00:00:00Z",
     "Changes": [
-      {
-        "Product": "XtractUniversal",
-        "Component": "TableCDC",
-        "Message": "Fixed a bug that could cause multiple records with the same key to be included in a CDC extraction result"
-      },
       {
         "Product": "Theobald.Extractors",
         "Component": "TableCDC",
@@ -4394,13 +4478,8 @@
   },
   {
     "Version": "5.21.15.0",
-    "LegacyReleaseDate": "2023-03-10 14:42:42Z",
+    "LegacyReleaseDate": "2023-03-10 00:00:00Z",
     "Changes": [
-      {
-        "Product": "XtractUniversal",
-        "Component": "TableCDC",
-        "Message": "Table CDC: Log table size can now be limited."
-      },
       {
         "Product": "Theobald.Extractors",
         "Component": "TableCDC",
@@ -5288,13 +5367,8 @@
   },
   {
     "Version": "5.16.9.0",
-    "LegacyReleaseDate": "2022-12-15 15:07:23Z",
+    "LegacyReleaseDate": "2022-12-15 00:00:00Z",
     "Changes": [
-      {
-        "Product": "XtractUniversal",
-        "Component": "Server",
-        "Message": "Fixed a bug where RPC calls to fetch the most recent extraction runs would have an invalid format when log files for runs were missing."
-      },
       {
         "Product": "Theobald.Server",
         "Component": "General",
@@ -5857,13 +5931,8 @@
   },
   {
     "Version": "5.12.5.0",
-    "LegacyReleaseDate": "2022-09-26 15:17:18Z",
+    "LegacyReleaseDate": "2022-09-26 00:00:00Z",
     "Changes": [
-      {
-        "Product": "XtractUniversal",
-        "Component": "Table",
-        "Message": "added support for function modules /BODS/RFC_STREAM_READ_TABLE and /SAPDS/RFC_STREAM_READ_TABLE"
-      },
       {
         "Product": "Theobald.Extractors",
         "Component": "Table",
@@ -6150,13 +6219,8 @@
   },
   {
     "Version": "5.11.9.0",
-    "LegacyReleaseDate": "2022-08-12 18:03:22Z",
+    "LegacyReleaseDate": "2022-08-12 00:00:00Z",
     "Changes": [
-      {
-        "Product": "XtractUniversal",
-        "Component": "Server",
-        "Message": "Fixed an issue where the configuration server would send inconsistent data upon reading extraction runs if the user does not have access to the extraction."
-      },
       {
         "Product": "Theobald.Server",
         "Component": "General",
@@ -6589,13 +6653,8 @@
   },
   {
     "Version": "5.9.0.0",
-    "LegacyReleaseDate": "2022-06-08 15:02:38Z",
+    "LegacyReleaseDate": "2022-06-08 00:00:00Z",
     "Changes": [
-      {
-        "Product": "XtractUniversal",
-        "Component": "General",
-        "Message": "Removed support for legacy DLL licenses"
-      },
       {
         "Product": "Common",
         "Component": "Licensing",
@@ -7078,13 +7137,8 @@
   },
   {
     "Version": "5.6.3.0",
-    "LegacyReleaseDate": "2022-04-11 10:15:02Z",
+    "LegacyReleaseDate": "2022-04-11 00:00:00Z",
     "Changes": [
-      {
-        "Product": "XtractUniversal",
-        "Component": "ODP",
-        "Message": "Selections can now be parameterized with lists of strings"
-      },
       {
         "Product": "Theobald.Extractors",
         "Component": "ODP",
@@ -7094,13 +7148,8 @@
   },
   {
     "Version": "5.6.2.0",
-    "LegacyReleaseDate": "2022-04-07 17:09:42Z",
+    "LegacyReleaseDate": "2022-04-07 00:00:00Z",
     "Changes": [
-      {
-        "Product": "XtractUniversal",
-        "Component": "BW Cube",
-        "Message": "Now allowing extractions without measure selections in MDX mode. Added support for additional options in interval/complex BEx variable selections."
-      },
       {
         "Product": "Theobald.Extractors",
         "Component": "BW Cube",
@@ -7161,13 +7210,8 @@
   },
   {
     "Version": "5.4.22.0",
-    "LegacyReleaseDate": "2022-03-28 17:48:32Z",
+    "LegacyReleaseDate": "2022-03-28 00:00:00Z",
     "Changes": [
-      {
-        "Product": "XtractUniversal",
-        "Component": "Designer",
-        "Message": "About window was refactored"
-      },
       {
         "Product": "Common",
         "Component": "WPF",

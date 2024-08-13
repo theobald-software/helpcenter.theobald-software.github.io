@@ -1,6 +1,6 @@
 ---
 title: EXASolution
-description: EXASolution destination
+description: Write SAP data to an EXASolution destination
 ---
 
 This page shows how to set up and use the {{ page.meta.title }} destination. 

@@ -1,6 +1,6 @@
 ---
 title: Amazon Redshift
-description: Amazon Redshift destination
+description: Write SAP data to an Amazon Redshift destination
 destination: redshit
 ---
 

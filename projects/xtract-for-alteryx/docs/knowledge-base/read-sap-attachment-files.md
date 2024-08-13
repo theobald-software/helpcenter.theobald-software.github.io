@@ -11,8 +11,8 @@ The following article shows how to extract attachment files of all formats from 
 ### About this Workflow
 
 This article leads you through all necessary steps to set up the following workflows:
-- Get a list of attached files from the SAP ERP system
-- Download SAP attachment files of any format
+- Get a list of attached files from the SAP ERP system (Object IDs and file names)
+- Use the Object IDs to download SAP attachment files of any format
 
 [:material-download-circle: Download Workflow](../assets/files/xfa/SAP-Read-Attachment-Files.yxmd){ .md-button .md-button--primary }
 

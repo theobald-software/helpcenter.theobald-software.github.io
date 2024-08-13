@@ -6,3 +6,4 @@ nav:
     - having-clause.md
     - settings.md
     - edit-runtime-parameters.md
+    - tool-configuration.md

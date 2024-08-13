@@ -87,6 +87,9 @@ The following guidelines refer to the color, style and usage of highlighting ele
 
 ![Mouse pointer](../assets/images/editorial-guide/screenshot-conventions/destination_details_oracle.png)
 
+**Animations**: <br>
+Record and process animations as 12 frames per second GIFs in Camtasia 2020.
+
 #### Style & type of highlighting
 
 Generally, use squares to highlight parts of a screenshot. It is easier to keep them consistent, as there is no need to take care of the angle as in case of arrows. It also doesn't look cluttered when there are many squares necessary. <br>
@@ -100,6 +103,11 @@ Avoid mixture of elements, don't use ovals. <br>
 ![Squares](../assets/images/editorial-guide/screenshot-conventions/xu_UPN_steffan@.png){:class="img-responsive"}
 
 To keep the squares consistent, check the line thickness & hold down **[Ctrl]** when drawing to have the object anchored in it's geometrical middle. 
+
+**Animations**: <br>
+Use the following settings to create the cursor click effect:<br>
+![camtasia settings](../assets/images/editorial-guide/camtasia.png){:class="img-responsive"}
+
 
 ### Position numbers
 Use position numbers for action steps. Make sure not to cover important information (buttons, text) when placing position numbers. Place the position numbers in reading direction (from left to right & clockwise) or depending on steps order. <br>

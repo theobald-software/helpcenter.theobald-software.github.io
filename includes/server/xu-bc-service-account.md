@@ -1,6 +1,6 @@
 
-This page shows how to run the {{ productName }} service under a dedicated Windows domain user account instead of the *Local System* account.
-After the installation, the {{ productName }} service runs under the *Local System* account by default.
+This page shows how to run the {{ productName }} service under a dedicated Windows domain user account.
+After the installation, the {{ productName }} service runs under a [virtual service account](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/manage/understand-service-accounts#virtual-accounts) by default.
 
 The following scenarios require the service to run under a dedicated Windows domain user account:
 
@@ -9,10 +9,6 @@ The following scenarios require the service to run under a dedicated Windows dom
 - Enabling [SSO with Kerberos SNC](../../knowledge-base/sso-with-kerberos-snc.md)
 - Enabling [SSO with SAP Logon Tickets](../../knowledge-base/sso-with-logon-ticket.md)
 
-!!! note 
-	As of {{ productName }} version 5.0 SAP passwords are encrypted with a key that is derived from the Windows account that runs the {{ productName }} Service.
-	The passwords can only be accessed from the same service account, when restoring a backup or moving the files to a different machine. 
-	If the service account changes, passwords need to be re-entered manually.
 
 ### Basic Settings
 

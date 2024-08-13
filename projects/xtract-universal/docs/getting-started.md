@@ -49,6 +49,7 @@ For more information about destination details, select your destination: <select
 	<option value="amazon-redshift">Amazon Redshift</option>
 	<option value="azure-storage">Azure Storage</option>
 	<option value="azure-synapse-analytics">Azure Synapse Analytics</option>
+	<option value="dataiku">Dataiku</option>
 	<option value="exasol">EXASolution</option>
     <option value="csv-flat-file">Flat File CSV</option>
     <option value="json-flat-file">Flat File JSON</option>
@@ -107,6 +108,7 @@ For more information about destination settings, select your destination: <selec
 	<option value="amazon-redshift">Amazon Redshift</option>
 	<option value="azure-storage">Azure Storage</option>
 	<option value="azure-synapse-analytics">Azure Synapse Analytics</option>
+	<option value="dataiku">Dataiku</option>
 	<option value="exasol">EXASolution</option>
     <option value="csv-flat-file">Flat File CSV</option>
     <option value="json-flat-file">Flat File JSON</option>
@@ -133,5 +135,5 @@ For more information about destination settings, select your destination: <selec
 5. Click **[OK]** to confirm your input.
 
 When running the extraction, the extracted SAP data is now written to the destination.
-For information on how to set up and assign custom destinations to an extraction, see [Destinations](documentation/destinations/index.md).
+For more information on available destinations, see [Destinations](documentation/destinations/index.md).
 

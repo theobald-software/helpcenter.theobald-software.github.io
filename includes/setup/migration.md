@@ -14,7 +14,7 @@ This page shows how to migrate the {{ productName }} configuration from one mach
 The {{ productName }} configuration can be migrated entirely (full migration) or partially.
 
 - Conduct a **full migration** when replacing a machine completely.<br>
-For a full migration, restore the entire `config` folder from your backup on the new machine (full migration).
+For a full migration, restore the entire `config` and `private` folders from your backup on the new machine (full migration).
 - Conduct a **partial migration** when moving parts of your setup to a different machine, e.g., if you transport defined {{ components }} from a test environment to a production environment.<br>
 For a partial migration, restore the parts of the backup you want to migrate by copying only the relevant [configuration files](#configuration-files), e.g., the `sources` or `extractions` folder, on the new machine.
 

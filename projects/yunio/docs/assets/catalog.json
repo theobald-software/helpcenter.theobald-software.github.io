@@ -1,5 +1,110 @@
 [
   {
+    "Version": "2024.8.9.1",
+    "LegacyReleaseDate": "2024-08-09 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Server",
+        "Component": "General",
+        "Message": "Fixed Extraction.Timestamp format for script expressions - Bug introduced in version 6.8.11.0"
+      }
+    ]
+  },
+  {
+    "Version": "2024.8.8.16",
+    "LegacyReleaseDate": "2024-08-08 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Server",
+        "Component": "General",
+        "Message": "Improve HTTP server logging in case of unsupported HTTP methods."
+      }
+    ]
+  },
+  {
+    "Version": "2024.8.8.12",
+    "LegacyReleaseDate": "2024-08-08 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "Table",
+        "Message": "Added a validation to disallow saving table joins without respective joining fields"
+      }
+    ]
+  },
+  {
+    "Version": "2024.8.6.34",
+    "LegacyReleaseDate": "2024-08-06 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Server",
+        "Component": "General",
+        "Message": "This release reduces the privileges with which our code runs on your system. Additionally, a new source password encryption method is used that allows migrating server source configurations to other servers without having to use the same Windows user.",
+        "ReleaseNote": "## Different service user account\n\nThe default service user account has changed from the local system account to a virtual service account. This change was made so our software uses the least privileges required.\n\nWhen upgrading older versions, no manual work is required. The setup will not change the user for the service in existing installations.\n\nIf no previous installation exists, or if it was previously uninstalled, the new service will be created using the virtual service user. You can either, if necessary, manually migrate the permissions of TLS certificates and reset all source passwords or change the service to run as the local system account again. Refer to our [online help on how to grant access to machine store certificates](https://helpcenter.theobald-software.com/xtract-universal/documentation/server/service-account/).\n\n## SAP source password protection\n\nThe encryption method for SAP source passwords was changed from user context specific cryptography to asymmetric cryptography using a per-instance key. This allows migration of sources by also migrating the generated `private/secrets/sources.pem` file. Make sure the directories and files are sufficiently protected when manually moving or changing them.\n\n### Access Restriction sanity checks\n\nThe server will refuse using the `private/secrets/sources.pem` file to store or retrieve passwords when the directory or file have access restrictions that are too permissive. It requires the access to be restricted to individual users or groups only. That means generic access for `Everyone` or `Users` well-known SIDs will be blocked.\n\n### Conversion and issues after installation\n\nWhen the `private/secrets` directories and `sources.pem` file have been created using a different service account, then manual action is required to switch the service user. This can happen after freshly installing the product and initially connecting to the server without changing the service user first. Either action can be taken to resolve the issue\n\n- remove the `private` directory and let the service create a new one, this will cause existing passwords to be lost\n- grant access to the new service user to `private/secrets` and `sources.pem` "
+      }
+    ]
+  },
+  {
+    "Version": "2024.8.2.47",
+    "LegacyReleaseDate": "2024-08-02 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "YunIO",
+        "Component": "General",
+        "Message": "Migrated Yunio to new version numbering scheme. During an update, the setup now detects which version is currently installed and displays a list of breaking changes (if there are any) that have been introduced since the previously installed version."
+      }
+    ]
+  },
+  {
+    "Version": "1.32.19.2",
+    "LegacyReleaseDate": "2024-08-02 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "Table",
+        "Message": "Fixed a bug that would not allow editing runtime parameters if no table was added"
+      }
+    ]
+  },
+  {
+    "Version": "1.32.19.0",
+    "LegacyReleaseDate": "2024-07-31 13:48:22Z",
+    "Changes": [
+      {
+        "Product": "YunIO",
+        "Component": "Designer",
+        "Message": "Updated link URLs in various places to direct to the new HelpCenter"
+      }
+    ]
+  },
+  {
+    "Version": "1.32.18.24",
+    "LegacyReleaseDate": "2024-07-31 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Common",
+        "Component": "General",
+        "Message": "Updated AboutWindow with links for new HelpCenter"
+      },
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "General",
+        "Message": "Updated help links in various windows for new HelpCenter"
+      }
+    ]
+  },
+  {
+    "Version": "1.32.18.23",
+    "LegacyReleaseDate": "2024-07-30 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "Table",
+        "Message": "Z_XTRACT_IS_TABLE_COMPRESSION marked as deprecated and cannot be selected anymore. The function module will be out of support starting 01/01/2025."
+      }
+    ]
+  },
+  {
     "Version": "1.32.18.21",
     "LegacyReleaseDate": "2024-07-26 00:00:00Z",
     "Changes": [
@@ -355,13 +460,8 @@
   },
   {
     "Version": "1.32.16.0",
-    "LegacyReleaseDate": "2024-06-12 15:52:48Z",
+    "LegacyReleaseDate": "2024-06-12 00:00:00Z",
     "Changes": [
-      {
-        "Product": "YunIO",
-        "Component": "General",
-        "Message": "Updated NW RFC SDK to 750 PL13"
-      },
       {
         "Product": "Common",
         "Component": "General",
@@ -671,13 +771,8 @@
   },
   {
     "Version": "1.32.10.0",
-    "LegacyReleaseDate": "2024-05-07 16:50:38Z",
+    "LegacyReleaseDate": "2024-05-07 00:00:00Z",
     "Changes": [
-      {
-        "Product": "YunIO",
-        "Component": "Designer",
-        "Message": "Transaction: Add support for checkboxes"
-      },
       {
         "Product": "Theobald.Server",
         "Component": "General",
@@ -709,14 +804,9 @@
   },
   {
     "Version": "1.32.9.0",
-    "LegacyReleaseDate": "2024-05-06 20:54:14Z",
+    "LegacyReleaseDate": "2024-05-06 00:00:00Z",
     "IsBreaking": true,
     "Changes": [
-      {
-        "Product": "YunIO",
-        "Component": "General",
-        "Message": "Use new parameter system"
-      },
       {
         "Product": "Theobald.Extractors",
         "Component": "General",
@@ -2504,13 +2594,8 @@
   },
   {
     "Version": "1.23.6.0",
-    "LegacyReleaseDate": "2023-09-05 12:22:52Z",
+    "LegacyReleaseDate": "2023-09-05 00:00:00Z",
     "Changes": [
-      {
-        "Product": "YunIO",
-        "Component": "Runtime",
-        "Message": "Fixed a bug where Bapi extraction output would not be handled correctly."
-      },
       {
         "Product": "Theobald.Server",
         "Component": "General",
@@ -2634,13 +2719,8 @@
   },
   {
     "Version": "1.22.2.0",
-    "LegacyReleaseDate": "2023-08-14 20:38:31Z",
+    "LegacyReleaseDate": "2023-08-14 00:00:00Z",
     "Changes": [
-      {
-        "Product": "YunIO",
-        "Component": "Runtime",
-        "Message": "Fixed a bug where parameters supplied as JSON to table extractions would be ignored."
-      },
       {
         "Product": "Common",
         "Component": "Licensing",
@@ -4093,7 +4173,7 @@
       {
         "Product": "YunIO",
         "Component": "Runtime",
-        "Message": "Fixed a bug where the HTTP server would not attach CORS headers on failed authentication attempts.\nRework the handling of parameters in the new runtime.\nServices with scalar runtime parameters now support the GET request type. Values for the scalar parameters can be supplied as query parameter."
+        "Message": "Services with scalar runtime parameters now support the GET request type. Values for the scalar parameters can be supplied as query parameter."
       },
       {
         "Product": "Theobald.Server",
@@ -5469,13 +5549,8 @@
   },
   {
     "Version": "1.7.2.0",
-    "LegacyReleaseDate": "2022-07-15 13:01:03Z",
+    "LegacyReleaseDate": "2022-07-15 00:00:00Z",
     "Changes": [
-      {
-        "Product": "YunIO",
-        "Component": "General",
-        "Message": "Update transaction component"
-      },
       {
         "Product": "Theobald.Server",
         "Component": "General",

@@ -17,7 +17,7 @@ The {{ odp }} {{ component }} provides data transfer from the following provider
 Provider Context | SAP Source Objects |
 ------------ |------------ |
 ABAP Core Data Services [[ABAP_CDS](provider-context.md/#abap-cds-views)]|- CDS Views |
-SAP NetWeaver Business Warehouse [[BW](provider-context.md/#bw-infoproviders)] |**BW/4HANA:**<br> - DSO / aDSO<br> - CompositeProvider<br> - InfoObjects <br> - Query as InfoProvider<br> **BW systems:**<br> - CompositeProvider<br> - InfoCubes<br> - Semantically partitioned objects<br> - HybridProviders<br> - MultiProviders<br> - InfoSets |
+SAP NetWeaver Business Warehouse or BW4/HANA [[BW](provider-context.md/#bw-infoproviders)] |**BW/4HANA:**<br> - DSO / aDSO<br> - CompositeProvider<br> - InfoObjects <br> - Query as InfoProvider<br> **BW systems:**<br> - CompositeProvider<br> - InfoCubes<br> - Semantically partitioned objects<br> - HybridProviders<br> - MultiProviders<br> - InfoSets |
 SAP HANA Information Views [[HANA](provider-context.md/#hana-views)] | - Analysis Views<br> - Calculation Views<br> - Associated Attribute Views |
 DataSources/Extractors [[SAPI](provider-context.md/#extractors)] | - DataSources and Extractors |
 SAP LT Queue Alias [[SLT~your_queue_alias](provider-context.md/#slt-server)] | - SAP Tables<br> - Cluster tables<br> - Pool tables |

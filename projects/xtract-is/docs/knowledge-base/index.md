@@ -19,7 +19,7 @@ hide:
 
 ---
 
-### :simple-sap: SAP Connection
+### :simple-sap: SAP 
 
 <div class="mdx-columns" markdown>
 
@@ -55,6 +55,16 @@ hide:
 - [Create Generic DataSources](create-generic-datasource-using-function-module-and-timestamps.md)
 - [Register an RFC Server in SAP with Kernel Release 720 and higher](register-rfc-server-in-sap-releases-in-kernel-release-720-and-higher.md)
 - [SNC Authentication for DeltaQ and OHS](snc-authentication-for-deltaq.md)
+
+</div>
+
+---
+
+### :component-odp: ODP
+
+<div class="mdx-columns" markdown>
+
+- [Alternatives for Xtract ODP :material-alert-decagram:](alternatives-for-odp.md)
 
 </div>
 

@@ -29,7 +29,7 @@ For more information, see [Setup](documentation/setup/index.md).
 
 ### Connect to SAP
 
-Before connecting to SAP for the first time, set up an SAP dialog user with the necessary [SAP Authorization Objects](documentation/setup-in-sap/sap-authority-objects.md/#general-authorization-objects).
+Before connecting to SAP for the first time, set up an SAP dialog user with the necessary [SAP user rights](documentation/setup-in-sap/sap-authority-objects.md/#general-authorization-objects).
 
 1. Create a new connection manager by right-clicking within the “Solution Explorer” area and selecting **New Connection Manager** in the context menu. 
 The window “Add SSIS Connection Manager” opens.<br>

@@ -1,15 +1,15 @@
 <div class="grid cards" markdown>
 
 
--   **:material-video-box: Webinar: The TS Partner Ecosystem**
+-   **New Version Numbers**
 
     ---
 
-    [Join our webinar](https://theobald-software.com/en/webinars/partner-ecosystem/) on 08/08/2024 - 11:00AM PDT to learn why and how Theobald Software works with technology partners to deliver better decision making and drive value to SAP customers. 
+    The version numbers in the [changelog](changelog.md) now incorporate the release date of the software, e.g., 2024.7.23.1 instead of 1.21.2.34. The setup now checks for breaking changes.
 
     ---
 
-    :material-clock-time-two-outline: 2024-08-08
+    :material-clock-time-two-outline: 2024-08-01
 
 -   **Welcome to the yunIO HelpCenter**
 

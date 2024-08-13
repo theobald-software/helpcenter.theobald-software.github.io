@@ -119,7 +119,7 @@ The Designer features different functionalities to design and configure extracti
 
 {% if page.meta.product == "board-connector" %}
 
-Icon | Menu Item |Description | Details
+Icon | Button |Description | Details
 -----|------------ | ------------ | -------------
 :designer-add: | New | Create a new extraction | [Create an Extraction](../getting-started.md/#create-an-extraction)
 :pen-button: | Edit |  Edit existing extraction | -
@@ -133,7 +133,7 @@ Icon | Menu Item |Description | Details
 
 {% else %}
 
-Icon | Menu Item |Description | Details
+Icon | Button |Description | Details
 -----|------------ | ------------ | -------------
 :designer-add: | New | Create a new extraction | [Create an Extraction](../getting-started.md/#create-an-extraction)
 :pen-button: | Edit |  Edit existing extraction | -

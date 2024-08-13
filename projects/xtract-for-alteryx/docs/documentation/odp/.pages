@@ -6,3 +6,4 @@ nav:
     - subscriptions.md
     - settings.md
     - edit-runtime-parameters.md
+    - tool-configuration.md

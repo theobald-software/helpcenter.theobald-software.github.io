@@ -8,10 +8,10 @@ SAP S/4HANA Cloud Edition (Cloud ERP):
 
 <div class="annotate" markdown>
 
-| | S/4HANA Public Cloud | S/4HANA Private Cloud  | RISE with SAP S/4HANA Cloud Private Edition  |     
-|--|---------------------------------------|-------------------------------------|---------------------------------------------|
-| **Compatible with {{ productName }}:**| {% if page.meta.product == "xtract-universal" or page.meta.product == "board-connector" or page.meta.product == "erpconnect" %} :white_check_mark: (with limitations)  {% else %} :x: {% endif %}  | :white_check_mark: {% if  page.meta.product != "erpconnect" %} (with limitations) {% endif %}|  :white_check_mark:        | 
-| **Limitations:**|  {% if page.meta.product == "xtract-universal" or page.meta.product == "board-connector" or page.meta.product == "erpconnect" %} Only Remote Function Modules (BAPIs) released via Communication Scenario are supported.  {% else %} - {% endif %} |  {% if  page.meta.product != "erpconnect" %}The installation of custom function modules is restricted.<br>Transport requests for [Table](../documentation/setup-in-sap/custom-function-module-for-table-extraction.md) and [Report](../documentation/setup-in-sap/custom-function-module-for-reports.md) cannot be imported by customers, but must be requested from SAP.{% else %} - {% endif %} |     -    | 
+| | S/4HANA Public Cloud | S/4HANA Private Cloud  | 
+|--|---------------------------------------|-------------------------------------|
+| **Compatible with {{ productName }}:**| {% if page.meta.product == "xtract-universal" or page.meta.product == "board-connector" or page.meta.product == "erpconnect" %} :white_check_mark: (with limitations)  {% else %} :x: {% endif %}  | :white_check_mark: |  
+| **Limitations:**|  {% if page.meta.product == "xtract-universal" or page.meta.product == "board-connector" or page.meta.product == "erpconnect" %} Only Remote Function Modules (BAPIs) released via Communication Scenario are supported. {% if page.meta.product != "erpconnect" %}The connection to the SAP Public Cloud uses [RFC over Websocket](../documentation/sap-connection/settings.md/#general).{% endif %} {% else %} - {% endif %} |   -  |  
 
 <!---
 Public Cloud {% if  page.meta.product == "yunio" %} - {% else %} Only Remote Function Modules (BAPIs) released via Communication Scenario are supported. {% endif %} |

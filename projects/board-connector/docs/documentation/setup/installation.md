@@ -18,17 +18,17 @@ When starting the installation program, optional components can be selected duri
 
 ![Migration1](../../assets/images/bc/documentation/setup/Migration_1.png){:class="img-responsive"}
 
-|Component | Sub Component| Description |
-|:----|:---|:---|
-|Main Product Files |- | All required files to use Board Connector. |
-|Designer | -| Installs the Designer application, uncheck this option if you want to use Board Connector without a graphical interface. |
-|Server | | Installs the Board Connector Server |
-|<!---->| Install Service| Installs the server component as a windows service, see [Server](../server/index.md). |
-| <!---->  |  Convert config files | Converts extractions, sources, destinations, etc. from previous version format to new format. Crucial when installing major releases and upgrading from e.g., version 3.x to 4.x.|
-|Start Menu Shortcuts |- |Component that adds shortcuts to the start menu.|
+|Component | Description |
+|:----|:---|
+|Main Product Files | All required files to use Board Connector. |
+|Designer | Installs the Designer application, uncheck this option if you want to use Board Connector without a graphical interface. |
+|Server | Installs the Board Connector Server. |
+| :material-subdirectory-arrow-right: Convert config files | Converts extractions, sources, destinations, etc. from previous version format to new format. Crucial when installing major releases and upgrading from e.g., version 3.x to 4.x.|
+|:material-subdirectory-arrow-right: Install Service| Installs the server component as a windows service that runs under a [virtual service account](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/manage/understand-service-accounts#virtual-accounts) with the least required privileges, see [Server](../server/index.md). |
+|Start Menu Shortcuts |Component that adds shortcuts to the start menu.|
 
 !!! note
-    Make sure to mark the option “Server > Install Service” during the Installation, as installing a server without the service is only used for development purposes.
+    Make sure to mark the option “Server > Install Service” during the installation, as installing a server without the service is only used for development purposes.
 
 For information on how to install a license, see [Licensing](license.md#install-the-board-connector-license).
 
@@ -41,6 +41,7 @@ The list below shows several most important files that are placed into the defau
 | ABAP directory | Directory with customer-specific function modules (.txt) corresponding to SAP transport requests (.zip).|
 | logs directory| Directory with server and extraction logs. See also [Logs](../logs.md). |
 | config directory | Directory created automatically with the first extraction, containing all extractions and the corresponding log files, see [Backup](update.md). |
+| private directory | Directory containing keys for encrypted SAP passwords. This directory contains sensitive information and must be to be secured accordingly. |
 | result-cache directory | Directory with extraction cache files. |
 | BCDesigner.exe | Application that launches Board Connector Designer to create, test and monitor extractions.|
 | BCService.exe | Application that launches Board Connector Server as Windows Service.  Usually boots automatically and runs in the background. |

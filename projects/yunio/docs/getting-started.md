@@ -25,7 +25,7 @@ For more information, see [Documentation: Installation](documentation/setup/inst
 
 ### Connect to SAP
 
-Before connecting to SAP for the first time, set up an SAP dialog user with the necessary [SAP Authorization Objects](documentation/setup-in-sap/sap-authority-objects.md/#general-authorization-objects).
+Before connecting to SAP for the first time, set up an SAP dialog user with the necessary [SAP user rights](documentation/setup-in-sap/sap-authority-objects.md/#general-authorization-objects).
 
 1. Navigate to the  :yunio-nav-connections: *Connections* menu at the left side navigation area of the Designer.
 2. Click **[Add Connection]** to create a new SAP connection.<br>

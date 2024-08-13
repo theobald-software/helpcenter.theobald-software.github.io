@@ -25,19 +25,19 @@ Corresponds to the setting [Extract data in background job](settings.md#extract-
 {% endif %}
 
 #### InvalidDateReplacement
-Allows the replacement of an invalid date format. 
-The default value of the property is *1970-01-02*. 
+Replaces an invalid date format. 
+The default value is *1970-01-02*. 
 To use the property enter a replacement value for invalid SAP dates, such as '20190132' (January 32nd  2019) in the format yyyy-mm-dd. 
 The value NULL is supported.
 
 #### MaxDateReplacement
-Allows replacing the SAP dates with the year 9999. 
-The default value of the property is 2099-12-31. 
+Replaces SAP dates with the year 9999. 
+The default value is *2099-12-31*. 
 To use the property enter a replacement value in the format yyyy-mm-dd that contains the year ‘9999’. 
 Example: ‘99990101’ (January 1st 9999). The value NULL is supported.
 
 #### MinDateReplacement
-Allows replacing the SAP dates with the year *0000*. 
-The default value of the property is 1970-01-01. 
+Replaces SAP dates with the year *0000*. 
+The default value is *1970-01-01*. 
 To use the property enter a replacement value in the format yyyy-mm-dd that contains the year '0000'. 
 Example: '00000000'. The value NULL is supported.

@@ -18,10 +18,12 @@ The xu-config.exe tool supports the creation of the following {{ components }} a
 
 ### Prerequisites
 
-- As of {{ productName }} 5.0.0, the xu-config.exe tool must be run by the same Windows AD account that runs the [{{ productName }} Service](../documentation/server/service-account.md). 
-This means, you either run the Windows command prompt as the respective user or you use the ```runas``` command in the command prompt.
-This is necessary, because passwords are encrypted for the user account that runs the xu-config.exe tool and can only be decrypted by the same account.
-- The execution of PowerShell scripts must be authorized on your system, see [Microsoft Documentation: Managing the execution policy with PowerShell](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_execution_policies?view=powershell-7.2#managing-the-execution-policy-with-powershell).
+The execution of PowerShell scripts must be authorized on your system, see [Microsoft Documentation: Managing the execution policy with PowerShell](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_execution_policies?view=powershell-7.2#managing-the-execution-policy-with-powershell).
+
+!!! note
+	From {{ productName }} version 5.0.0 (2021-10-18) up to version 2024.8.6.35, the xu-config.exe tool must be run by the same Windows AD account that runs the [{{ productName }} Service](../documentation/server/service-account.md). 
+	This means, you either run the Windows command prompt as the respective user or you use the ```runas``` command in the command prompt.
+	This is necessary, because passwords are encrypted for the user account that runs the xu-config.exe tool and can only be decrypted by the same account.
 
 
 ### Create an SAP Source using Windows Command Prompt

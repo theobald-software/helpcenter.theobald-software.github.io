@@ -4,3 +4,4 @@ nav:
     - report-columns-define.md
     - settings.md
     - edit-runtime-parameters.md
+    - tool-configuration.md

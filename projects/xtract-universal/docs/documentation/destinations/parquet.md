@@ -1,6 +1,6 @@
 ---
 title: Flat File Parquet
-description: Parquet Flat-File destination
+description: Write SAP data to a Parquet Flat-File destination
 destination: parquet
 ---
 

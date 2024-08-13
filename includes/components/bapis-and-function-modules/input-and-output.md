@@ -53,6 +53,7 @@ In the tab **Export** you can select the items you want to add to the output of 
 
 ### Add Items to Output
 Mark the checkbox in the output column to add an item to the output of the {{ component }}.
+{% if page.meta.product == "xtract-for-alteryx" %}The selected output is assigned to the [output anchor](index.md/#input-and-output-anchors) 'E' of the {{ bapi }} {{ component }}.{% endif %}
 
 ![BAPI export parameters](../../assets/images/{{ abbr }}/documentation/bapi/export-parameters.png){:class="img-responsive"}
 
@@ -95,6 +96,11 @@ Click **[:glasses-button:]** to display the metadata of a table. The metadata in
 
 Mark the checkbox in the output column to add a table to the output.<br> 
 ![BAPI table output](../../assets/images/documentation/components/bapi/BAPI-Table-Output.png){:class="img-responsive"}
+
+{% if page.meta.product == "xtract-for-alteryx" %}
+The selected tables are assigned to the [output anchors](tool-configuration.md/#output-mappings) of the {{ bapi }} {{ component }}.
+The number of tables that can be added to the output is limited to 5 tables.
+{% endif %}
 
 ### Edit Tables 
 
