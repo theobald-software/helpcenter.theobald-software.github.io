@@ -206,17 +206,6 @@ document.addEventListener('DOMContentLoaded', () => {
 		}
 	};
 
-	const updateURLParams = (filterValue) => {
-		const urlSearchParams = new URLSearchParams(window.location.search);
-		if (filterValue) {
-			urlSearchParams.set('filter', filterValue);
-		} else {
-			urlSearchParams.delete('filter');
-		}
-		const newUrl = `${window.location.pathname}?${urlSearchParams.toString()}`;
-		window.history.pushState({}, '', newUrl);
-	};
-
 	const filterRows = (filterValue) => {
 		const comparisonOperator = filterValue.charAt(0);
 		const versionNumber = filterValue.slice(1).trim();
@@ -224,6 +213,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		document.querySelectorAll('#catalogBody tr').forEach(row => {
 			const versionCell = row.querySelector('td:first-child');
 			const descriptionCell = row.querySelector('td:nth-child(5)');
+			const impactCell = row.querySelector('td:nth-child(4)');
 			const componentCell = row.querySelector('td:nth-child(3)');
 			const releaseDateCell = row.querySelector('td:nth-child(2)');
 			const version = versionCell.textContent.trim();
@@ -231,6 +221,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			const component = descriptionCell.textContent.trim().toLowerCase();
 			const releaseDate = releaseDateCell.textContent.trim().toLowerCase();
 			const searchText = filterValue.toLowerCase();
+			const impactClasses = impactCell.className.toLowerCase();
 
 			let displayRow = false;
 
@@ -239,7 +230,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			} else if (comparisonOperator === '<') {
 				displayRow = compareVersions(version, versionNumber) < 0;
 			} else {
-				displayRow = version.includes(searchText) || description.includes(searchText) || component.includes(searchText) || releaseDate.includes(searchText);
+				displayRow = version.includes(searchText) || description.includes(searchText) || component.includes(searchText) || releaseDate.includes(searchText) || impactClasses.includes(searchText);
 			}
 
 			row.style.display = displayRow ? '' : 'none';
