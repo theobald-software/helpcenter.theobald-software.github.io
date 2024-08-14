@@ -124,7 +124,11 @@ document.addEventListener('DOMContentLoaded', async () => {
 		const comparisonOperator = filterValue.charAt(0);
 		let versionNumber = filterValue.slice(1).trim();
 
-		if (comparisonOperator === '>' || comparisonOperator === '<') {
+		if (filterValue.toLowerCase() === 'critical') {
+			return data.filter(item => item.IsCritical);
+		} else if (filterValue.toLowerCase() === 'breaking') {
+			return data.filter(item => item.IsBreaking);
+		} else if (comparisonOperator === '>' || comparisonOperator === '<') {
 			return data.filter(item => {
 				if (!versionNumber.includes('.')) {
 					versionNumber += '.0'; // Handle cases like '>5' by appending '.0'
