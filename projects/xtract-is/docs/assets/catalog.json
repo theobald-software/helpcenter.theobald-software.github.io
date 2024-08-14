@@ -1,5 +1,16 @@
 [
   {
+    "Version": "2024.8.14.6",
+    "LegacyReleaseDate": "2024-08-14 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "XtractIS",
+        "Component": "DeltaQ",
+        "Message": "Fixed a bug that would incorrectly read legacy runtime parameters with variables"
+      }
+    ]
+  },
+  {
     "Version": "2024.8.13.0",
     "LegacyReleaseDate": "2024-08-13 00:00:00Z",
     "Changes": [
