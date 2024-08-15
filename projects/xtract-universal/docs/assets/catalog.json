@@ -536,7 +536,7 @@
       {
         "Product": "XtractUniversal",
         "Component": "Destinations",
-        "Message": "BREAKING CHANGE: fixed a bug where output object names would not get shortened properly in some cases. This affects only extractions where the output object name was too long and had to be automatically shortened."
+        "Message": "Fixed a bug where output object names would not get shortened properly in some cases. This affects only extractions where the output object name was too long and had to be automatically shortened."
       },
       {
         "Product": "Theobald.Extractors",
@@ -642,7 +642,7 @@
       {
         "Product": "XtractUniversal",
         "Component": "Destinations",
-        "Message": "BREAKING CHANGE: reverted object naming change, where using \"Same as extraction name\" option would use extractions fully qualified name with path as object name. Added \"fully qualified extraction name\" option to output object naming. This option uses extraction name with full extraction path as output object name."
+        "Message": "Reverted object naming change, where using \"Same as extraction name\" option would use extractions fully qualified name with path as object name. Added \"fully qualified extraction name\" option to output object naming. This option uses extraction name with full extraction path as output object name."
       },
       {
         "Product": "Theobald.Server",
@@ -1352,8 +1352,8 @@
       {
         "Product": "XtractUniversal",
         "Component": "Destinations",
-        "Message": "Redshift destination: improvements, bug fixes and ODBC driver upgrade to version 2.1.0.0 (BREAKING). ",
-        "ReleaseNote": "# Xtract Universal 6.3.11\n\n## Redshift ODBC Driver upgrade\n\nThe Redshift destination was upgraded to use the latest Redshift ODBC driver version 2.1.0.0. The new implementation is not compatible to version 1.x ODBC drivers and will not work anymore with these versions.\n\n**These changes are only breaking for customers using the Redshift destination**\n\n## Improved data type mapping for Redshift destination\n\nThe Redshift destination now has improved data type mapping as follow:\n\n* Int4 type source fields are now mapped to INTEGER columns in the destination table instead of DECIMAL(10,0)\n* Int2 type source fields are now mapped to SMALLINT columns in the destination table instead of DECIMAL(5,0)\n* Raw type source fields are now mapped to VARBINARY columns in the destination table instead of VARCHAR\n\n## Bug fix for special characters in result sets\n\nThe data handling for INSERT operations was improved. E.g. some special characters have caused problems with data loads which is fixed in this version.\n\n## Increased row processing timeout\n\nThe timeout for row processing commands was increased to 300 seconds in order to now fail on long running insert operations."
+        "Message": "Redshift destination: improvements, bug fixes and ODBC driver upgrade to version 2.1.0.0. The new implementation is not compatible to version 1.x ODBC drivers and will not work anymore with these versions.",
+        "ReleaseNote": "# Redshift ODBC Driver upgrade\n\nThe Redshift destination was upgraded to use the latest Redshift ODBC driver version 2.1.0.0. The new implementation is not compatible to version 1.x ODBC drivers and will not work anymore with these versions.\n\n**These changes are only breaking for customers using the Redshift destination**\n\n# Improved data type mapping for Redshift destination\n\nThe Redshift destination now has improved data type mapping as follow:\n\n* Int4 type source fields are now mapped to INTEGER columns in the destination table instead of DECIMAL(10,0)\n* Int2 type source fields are now mapped to SMALLINT columns in the destination table instead of DECIMAL(5,0)\n* Raw type source fields are now mapped to VARBINARY columns in the destination table instead of VARCHAR\n\n# Bug fix for special characters in result sets\n\nThe data handling for INSERT operations was improved. E.g. some special characters have caused problems with data loads which is fixed in this version.\n\n# Increased row processing timeout\n\nThe timeout for row processing commands was increased to 300 seconds in order to now fail on long running insert operations."
       }
     ]
   },
@@ -3048,8 +3048,8 @@
       {
         "Product": "XtractUniversal",
         "Component": "General",
-        "Message": "**Breaking Changes!** We have rewritten the web API and runtime to improve long term ergonomics, stability and maintainability.",
-        "ReleaseNote": "## Xtract Universal 6.0.0\n\n### Breaking changes\n\n- Web API\n  - /log?req_type=all has been removed\n    - To fetch the full logs for an extraction the prefered workflow is:\n      - Get the timestamp for the extraction from the xu.exe output or the header of the HTTP response.\n      - Request the run log for the extraction with log?req_type=extraction&name=extractionname&timestamp=extractionTimestamp\n      - If that does not hold the desired information:\n        - There now is a 'WebLog' column when listing the extractions runs with log?req_type=extraction&name=extractionname\n        - Use this timestamp to request the corresponding server log for the extraction with log?req_type=server&timestamp=serverTimestamp\n  - /log?req_type=server now yields the worker instead of listener log\n  - /metadata?name=extractionName has been removed\n    - Use [json endpoint](https://help.theobald-software.com/en/xtract-universal/advanced-techniques/metadata-access-via-http-json) instead\n  - /parameters?name=extractionName has been removed\n    - Use [json endpoint](https://help.theobald-software.com/en/xtract-universal/advanced-techniques/metadata-access-via-http-json) instead\n  - /clearResultCache has been removed\n  - /CurrentVersion does now serve a json payload\n    - it also does only serve one version, since the kernel dependency was dropped\n\nWe aim to provide a more consistent and useful Web API as part of upcoming releases.\n\n### Deprecations\n\n- The 'clearBuffer' parameter for extraction requests was renamed to 'ignoreCache' and does just that instead of purging the whole cache\n  - 'clearBuffer' will be removed in a future release\n\n### Other\n\n- Web server, result cache and the engine which runs the extractions (runtime) were rewritten.\n- When running extractions the web server now responds with an HTTP error code and an error message instead of a 200 without any data or information if the SAP system yielded an error or preparing the destination failed\n  - an error while writing the data to the destination will still only show up in the logs\n- Web server authentication: HTTPS + Designer Read access is now the same as HTTPS + Anonymous if Designer access is not restricted\n  - Before one had to supply (any) Basic credentials but they were not checked."
+        "Message": "We have rewritten the web API and runtime to improve long term ergonomics, stability and maintainability.",
+        "ReleaseNote": "# Breaking changes to the Web API\n* ```/log?req_type=server``` now yields the worker instead of listener log\n* ```/metadata?name=extractionName``` has been removed. Use [json endpoint](https://help.theobald-software.com/en/xtract-universal/advanced-techniques/metadata-access-via-http-json) instead\n* ```/parameters?name=extractionName``` has been removed. Use [json endpoint](https://help.theobald-software.com/en/xtract-universal/advanced-techniques/metadata-access-via-http-json) instead\n* ```/clearResultCache``` has been removed\n* ```/CurrentVersion``` does now serve a json payload. It also does only serve one version, since the 'kernel' dependency was dropped\n\n## ```/log?req_type=all``` has been removed\nTo fetch the full logs for an extraction the prefered workflow is:\n* Get the timestamp for the extraction from the xu.exe output or the header of the HTTP response.\n* Request the run log for the extraction with ```log?req_type=extraction&name=extractionname&timestamp=extractionTimestamp```\n* If that does not hold the desired information:\n  * There now is a ```WebLog``` column when listing the extractions runs with ```log?req_type=extraction&name=extractionname```\n  * Use this timestamp to request the corresponding server log for the extraction with ```log?req_type=server&timestamp=serverTimestamp```\n\nWe aim to provide a more consistent and useful Web API as part of upcoming releases.\n\n# Deprecations\nThe ```clearBuffer``` parameter for extraction requests was renamed to ```ignoreCache``` and does just that instead of purging the whole cache. The ```clearBuffer``` parameter will be removed in a future release.\n\n# Other\n* Web server, result cache and the engine which runs the extractions (runtime) were rewritten.\n* When running extractions the web server now responds with an HTTP error code and an error message instead of a 200 without any data or information if the SAP system yielded an error or preparing the destination failed. An error while writing the data to the destination will still only show up in the logs\n* Web server authentication: HTTPS + Designer Read access is now the same as HTTPS + Anonymous if Designer access is not restricted. Before one had to supply (any) Basic credentials but they were not checked."
       },
       {
         "Product": "Theobald.Server",
@@ -5903,7 +5903,7 @@
       {
         "Product": "XtractUniversal",
         "Component": "Destinations",
-        "Message": "Azure: Fixed a bug where using the Parquet Spark compatibility mode would not replace special characters in column names (breaking change)"
+        "Message": "Azure: Fixed a bug where using the Parquet Spark compatibility mode would not replace special characters in column names"
       }
     ]
   },
@@ -7186,7 +7186,7 @@
     "Changes": [
       {
         "Product": "XtractUniversal",
-        "Component": "BW Cube",
+        "Component": "BWCube",
         "Message": "New BWCube extractor (breaking)",
         "ReleaseNote": "# Xtract Universal 5.6\n\nConfig files need to be [converted when upgrading.](https://help.theobald-software.com/en/xtract-universal/introduction/installation-and-update#upgrading-major-releases---configconverter)\n\nThere is a [knowledge base article](https://kb.theobald-software.com/cubes/bwcube-component) with some general information about the new component.\n\n## General improvements\n- Introduction of a new column name style \"Text\" that replaces the \"Use description for columns\" setting. Column names might not be unique with this style. Use at own risk.\n- Definition of runtime parameters as known from other extractors for manual filters and BEx variables\n- Introduced new runtime parameter type List\n\n## Reworked MDX Cube extraction mode\nPrevious extractions will be upgraded by our converter tool (See breaking changes)\n\n- Updated internal structure with improvements to allow implementation of new features in the future\n- Improved extraction performance\n- Various minor bug fixes\n- New and improved GUI\n- MDX Cube extraction preview in Designer\n\n## New BICS Cube extraction mode (BETA)\n- Replaces the previous BEx 3.x mode\n- Extraction of Infocubes and Queries using the BICS interface\n- This mode is still in beta. Use it with caution. Multiple breaking changes until final release are possible and likely\n- For using the BICS mode the user needs the [permissions as described in our knowledge base](https://kb.theobald-software.com/sap/authority-objects-sap-user-rights#bw-query--bw-cube)\n\n## Breaking changes\n- Custom MDX mode not supported and will not be converted. Please contact our support if you are using this mode\n- BEx 3.x mode not supported and will not be converted. Please contact our support if you are using this mode\n- Column order and naming might change\n- Corner case: combination of column name style TextAndCode or CodeAndText and \"Use description for columns\" setting will set column name style to Text\n- Converted extractions will work as before as long as they stay unchanged\n- Making changes to converted extractions requires a metadata refresh. After editing the new naming scheme will be used\n- Non-Unicode systems may not be compatible with the new cube component\n\n## Known issues\n- Renaming already assigned list parameters is not yet supported and will cause issues\n- BICS metadata retrieval may fail on some systems. Please send in traces if you encounter issues with metadata retrieval"
       },
@@ -8287,8 +8287,8 @@
       {
         "Product": "XtractUniversal",
         "Component": "General",
-        "Message": "SAP passwords are encrypted in context of XU service account (breaking)",
-        "ReleaseNote": "# Xtract Universal 5.0\nConfig files need to be [converted when upgrading.](\nhttps://help.theobald-software.com/en/xtract-universal/introduction/installation-and-update#upgrading-major-releases---configconverter)\n\n## SAP passwords are encrypted in context of XU Service Account (breaking)\nWhen creating new sources or editing existing ones, the SAP passwords\nare encrypted with a key that is derived from the Windows account that\nis configured to run the XU service.\nThe passwords can only be accessed from the same service account,\nwhen restoring a backup or moving the files to a different machine.\nIf the service account changes, passwords need to be re-entered manually.\n\n## SAP passwords are stored seperately\nPasswords are no longer part of sources/[name]/general.json.\nThey are stored in sources/[name]/password.json now.\n\n## Various changes\n* Using new TheoRPC implementation for Designer/Server communication\n* Removed backward compatibility for custom users before XU 3.0\n* Table Join extractions cannot be created any more\n* Renamed XtractWebServer.exe to Theobald.Xu.Web.Listener.exe\n* Renamed XtractRun.exe to Theobald.Xu.Web.Worker.exe"
+        "Message": "SAP passwords are now encrypted in the context of XtractUniversal's service account.",
+        "ReleaseNote": "Config files need to be [converted when upgrading.](\nhttps://help.theobald-software.com/en/xtract-universal/introduction/installation-and-update#upgrading-major-releases---configconverter).\n\n# Breaking change: SAP passwords are now encrypted in the context of XU Service Account\nWhen creating new sources or editing existing ones, the SAP passwords are encrypted with a key that is derived from the Windows account that is configured to run the XU service. The passwords can only be accessed from the same service account, when restoring a backup or moving the files to a different machine. If the service account changes, passwords need to be re-entered manually.\n\n# SAP passwords are stored in a separate file now\nPasswords are no longer part of ```sources/[name]/general.json```. Instead, they are stored in ```sources/[name]/password.json``` now.\n\n# Other changes\n* Using new TheoRPC implementation for Designer/Server communication\n* Removed backward compatibility for custom users before XU 3.0\n* Table Join extractions cannot be created any more\n* Renamed XtractWebServer.exe to Theobald.Xu.Web.Listener.exe\n* Renamed XtractRun.exe to Theobald.Xu.Web.Worker.exe"
       },
       {
         "Product": "Theobald.Server",
@@ -8951,8 +8951,8 @@
       {
         "Product": "XtractUniversal",
         "Component": "Destinations",
-        "Message": "MicroStrategy folders are now entered by their ID instead of their name. This change is breaking.",
-        "ReleaseNote": "# How to upgrade your extraction\n\nIf you use a MicroStrategy folder for your extractions you have to enter it´s ID instead of the name into the folder ID textbox of the destination settings of your extraction.\nYou can find the ID of a folder by right clicking it in the MicroStrategy Workstation and select Properties."
+        "Message": "MicroStrategy folders are now entered by their ID instead of their name.",
+        "ReleaseNote": "# How to upgrade your extraction\nIf you use a MicroStrategy folder for your extractions you have to enter it's ID instead of the name into the folder ID textbox of the destination settings of your extraction.\nYou can find the ID of a folder by right clicking it in the MicroStrategy Workstation and select Properties."
       }
     ]
   },
@@ -9024,8 +9024,8 @@
       {
         "Product": "XtractUniversal",
         "Component": "Destinations",
-        "Message": "S3, Azure Storage & Google Cloud Storage destination now prepend an 'x' to object names if they don't begin with a letter. This change is breaking.",
-        "ReleaseNote": "- If the name of an uploaded object does not begin with letter, it will be prefixed with an 'x'. \nE.g. an object that would normally be called `_namespace_tabname.csv` will now be called\n`x_namespace_tabname.csv` when uploaded to S3, Azure Storage or Google Cloud Storage.\n- This change is to make sure that all uploaded object are compatible with Azure Data Factory, \nHadoop and Spark, which require object names to begin with a letter or give special meaning to \nobjects whose name starts with certain non-alphabetic characters. E.g. in Spark all objects that\nbegin with an `_` or `.` are hidden.\n- This change is breaking."
+        "Message": "S3, Azure Storage & Google Cloud Storage destination now prepend an 'x' to object names if they don't begin with a letter.",
+        "ReleaseNote": "If the name of an uploaded object does not begin with letter, it will be prefixed with an 'x'.  E.g. an object that would normally be called ```_namespace_tabname.csv``` will now be called ```x_namespace_tabname.csv``` when uploaded to S3, Azure Storage or Google Cloud Storage.\n\nThis change is to make sure that all uploaded object are compatible with Azure Data Factory, Hadoop and Spark, which require object names to begin with a letter or give special meaning to objects whose name starts with certain non-alphabetic characters. E.g. in Spark all objects that begin with an ```_``` or ```.``` are hidden."
       }
     ]
   },
