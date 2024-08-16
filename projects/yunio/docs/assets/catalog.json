@@ -1,5 +1,27 @@
 [
   {
+    "Version": "2024.8.16.17",
+    "LegacyReleaseDate": "2024-08-16 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "YunIO",
+        "Component": "Designer",
+        "Message": "Fixes a bug that causes authentication in the built-in run dialog to fail when the password contains non-ASCII (ä ö ü å Ø Æ £ ´ …) letters or symbols"
+      }
+    ]
+  },
+  {
+    "Version": "2024.8.15.41",
+    "LegacyReleaseDate": "2024-08-15 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Server",
+        "Component": "General",
+        "Message": "Terminate process when opening SNC connection takes too long"
+      }
+    ]
+  },
+  {
     "Version": "2024.8.13.71",
     "LegacyReleaseDate": "2024-08-13 00:00:00Z",
     "Changes": [
