@@ -20,9 +20,9 @@ When starting the installation program, optional components can be selected duri
 
 |Component | Description |
 |:----|:---|
-|Main Product Files | All required files to use Board Connector. |
-|Designer |  Installs the Designer application, uncheck this option if you want to use Board Connector without a graphical interface. |
-|Server |  Installs the Board Connector Server |
+|Main Product Files | All required files to use {{ productName }}. |
+|Designer |  Installs the Designer application, uncheck this option if you want to use {{ productName }} without a graphical interface. |
+|Server |  Installs the {{ productName }} Server |
 | :material-subdirectory-arrow-right: Convert config files | Converts extractions, sources, destinations, etc. from previous version format to new format. Crucial when installing major releases and upgrading from e.g., version 3.x to 4.x.|
 |:material-subdirectory-arrow-right: Install Service| Installs the server component as a windows service that runs under a [virtual service account](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/manage/understand-service-accounts#virtual-accounts) with the least required privileges, see [Server](../server/index.md). |
 |XtractUniversal Report Server Plugin |Plugin required by the [Power BI Report Server](../destinations/server-report-services.md) destination.|
@@ -33,6 +33,11 @@ When starting the installation program, optional components can be selected duri
     Make sure to mark the option “Server > Install Service” during the Installation, as installing a server without the service is only used for development purposes.
 
 For information on how to install a license, see [Licensing](license.md#install-the-xtract-universal-license).
+
+!!! warning
+    **Errors due to different version numbers.** <br>
+    Differences in version numbers of Designer and Server may lead to errors.<br>
+    Make sure that Designer and Server are of the same release and have identical version numbers.
 
 ### Installation Directory Files
 
