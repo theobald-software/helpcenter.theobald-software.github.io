@@ -1,5 +1,17 @@
 [
   {
+    "Version": "2024.8.19.36",
+    "LegacyReleaseDate": "2024-08-19 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "TableCDC",
+        "Message": "Log table row limit is now optional. Package size is now also applied on delta loads. View release notes for details.",
+        "ReleaseNote": "- Updated /THEO/CDC_* to version 1.8\n- Updated /THEO/READ_TABLE to version 3.6\n- Both /THEO/CDC_* and /THEO/READ_TABLE must be updated.\n- The \"Extract table on first run\" setting is now deselected by default when creating new extractions."
+      }
+    ]
+  },
+  {
     "Version": "2024.8.14.6",
     "LegacyReleaseDate": "2024-08-14 00:00:00Z",
     "Changes": [
