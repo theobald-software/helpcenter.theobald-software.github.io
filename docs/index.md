@@ -6,7 +6,7 @@ hide:
 ---
 
 # Welcome to the Theobald Software HelpCenter.
-
+<link rel="stylesheet" href="/stylesheets/no_search.css">
 Choose your product:
 
 <!---
