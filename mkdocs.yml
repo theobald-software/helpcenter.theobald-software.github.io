@@ -70,6 +70,7 @@ plugins:
   - awesome-pages
   - pagenav-generator
   - tags
+  - search
   - privacy:
       links_attr_map:
         target: _blank # opens all external links in new tabs
