@@ -1,5 +1,16 @@
 [
   {
+    "Version": "2024.8.20.39",
+    "LegacyReleaseDate": "2024-08-20 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "YunIO",
+        "Component": "General",
+        "Message": "Fixes for the behavior of the table join UI. Deletion of tables will now only delete affected joins."
+      }
+    ]
+  },
+  {
     "Version": "2024.8.16.17",
     "LegacyReleaseDate": "2024-08-16 00:00:00Z",
     "Changes": [
