@@ -37,7 +37,7 @@ For information on how to install a license, see [Licensing](license.md#install-
 !!! warning
     **Errors due to different version numbers.** <br>
     Differences in version numbers of Designer and Server may lead to errors.<br>
-    Make sure that Designer and Server are of the same release and have identical version numbers.
+    Make sure that Designer and Server have identical version numbers.
 
 ### Installation Directory Files
 
