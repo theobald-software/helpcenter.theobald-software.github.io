@@ -2,6 +2,9 @@
 ### Recommended Update Interval
 We recommend checking for updates at least every three months. 
 
+!!! note
+		If the installed version is not listed, this is expected. Refer to the changelog entry for the next most recent version, as it contains the relevant information.
+
 [:material-download-circle: Download the latest version](https://portal.theobald-software.com/){ .md-button .md-button--primary }
 
 <!---
