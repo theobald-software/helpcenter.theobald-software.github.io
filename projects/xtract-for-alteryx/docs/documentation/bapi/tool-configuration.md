@@ -8,8 +8,8 @@ description: An overview and description of the settings in the configuration me
 ### Output Mappings
 
 The section *Output Mappings* of the configuration menu displays which [output tables](input-and-output.md/#add-tables-to-output) correspond to which [output anchor](index.md/#input-and-output-anchors) of the component.
-The Xtract BAPI component has 5 output anchors for tables that are numbered from 1 to 5.
-The number of tables that can be added to the output is therefore limited to 5 tables.
+The Xtract BAPI component has five output anchors for tables that are numbered from 1 to 5.
+The number of tables that can be added to the output is therefore limited to five tables.
 
 !!! tip
 	When an output anchor is connected to an Alteryx tool, you can switch output anchors by right-clicking the connecting line between the tools and selecting **Switch Origin to...**.
