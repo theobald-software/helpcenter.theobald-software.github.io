@@ -34,14 +34,14 @@ It is recommended to create backups at regular intervals to switch back to the p
 It is recommended to create backups at regular intervals to switch back to the previous version, if necessary.
 
 1. Copy all Alteryx workflows that use Xtract for Alteryx.
-2. Copy the folder that contains the SAP connections. Depending on the Alteryx settings it is located in the following directory:<br>
+2. Copy the directory that contains the SAP connections. Depending on the Alteryx settings it is located in the following directory:<br>
 `C:\Users\[USERNAME]\AppData\Roaming\Theobald Software\Xtract for Alteryx\Connections`
 
 {% else %}
 
-On the machine that runs the {{ productName}} service, copy the following files and folders and store them in a secure location:
+On the machine that runs the {{ productName}} service, copy the following files and directories and store them in a secure location:
 
-- copy the complete `config` and `private` folder in the {{ productName}} installation directory, e.g., `{{ installationDir }}\config`. 
+- copy the complete `config` and `private` directories into the {{ productName}} installation directory, e.g., `{{ installationDir }}\config`. 
 - optionally, copy the complete `logs` directory to create a backup of the log files. 
 - copy the `{{ setup }}License.json` file to backup your license.
 
@@ -72,7 +72,7 @@ It is recommended to create backups at regular intervals or use a versioning too
 
 !!! warning 
 	**Data loss.**<br>
-    Restoring the backup of the `config` and `private` folders replaces the existing configuration. <br>
+    Restoring the backup of the `config` and `private` directories replaces the existing configuration. <br>
 	Make sure to remove the existing files before restoring the backups.
 
 {% endif %}
