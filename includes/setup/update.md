@@ -64,10 +64,11 @@ It is recommended to create backups at regular intervals or use a versioning too
 
 #### Restore a Backup
 
-1. On the machine that runs the {{ productName}} service, remove the `config` folder from the installation directory of {{ productName}}, e.g., `{{ installationDir }}`.
-2. Remove the `config` and `private` folders from the installation directory.
-3. Copy the backup of the `config` and `private` folders into the installation directory.
+1. On the machine that runs the {{ productName}} service, remove the `config` directory from the installation directory of {{ productName}}, e.g., `{{ installationDir }}`.
+2. Remove `private` directory from the installation directory.
+3. Copy the backup of the `config` and `private` directories into the installation directory.
 4. To restore the license, replace the `{{ setup }}License.json` file in the installation directory with the backup.
+5. Restore the previous {{ productName}} version as listed in the `version.txt`within the `config` directory.
 
 !!! warning 
 	**Data loss.**<br>
