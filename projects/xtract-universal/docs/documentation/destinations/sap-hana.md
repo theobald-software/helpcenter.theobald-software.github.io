@@ -7,7 +7,11 @@ destination: sap-hana
 This page shows how to set up and use the {{ page.meta.title }} destination. 
 The {{ page.meta.title }} destination loads data to an SAP HANA database or to SAP Datasphere.
 
-When loading data to SAP Datasphere, SAP Datasphere's underlying HANA database is used as a destination. For required connection parameters see SAP Help: [Integrating Data and Managing Spaces in SAP Datasphere](https://help.sap.com/docs/SAP_DATASPHERE/be5967d099974c69b77f4549425ca4c0/798e3fd6707940c3bd2219b2d1ebaac2.html), [Create a Database User](https://help.sap.com/docs/SAP_DATASPHERE/be5967d099974c69b77f4549425ca4c0/798e3fd6707940c3bd2219b2d1ebaac2.html) and [Obtaining Your OPEN SQL Schema Connection Information](https://help.sap.com/docs/SAP_DATASPHERE/be5967d099974c69b77f4549425ca4c0/b78ad208f8c4494489aabf97284679b6.html#obtaining-your-open-sql-schema-connection-information).
+When loading data to SAP Datasphere, SAP Datasphere's underlying HANA database is used as a destination. 
+For required connection parameters see the following pages in SAP Help:
+- [Integrating Data and Managing Spaces in SAP Datasphere](https://help.sap.com/docs/SAP_DATASPHERE/be5967d099974c69b77f4549425ca4c0/798e3fd6707940c3bd2219b2d1ebaac2.html)
+- [Create a Database User](https://help.sap.com/docs/SAP_DATASPHERE/be5967d099974c69b77f4549425ca4c0/798e3fd6707940c3bd2219b2d1ebaac2.html)
+- [Obtaining Your OPEN SQL Schema Connection Information](https://help.sap.com/docs/SAP_DATASPHERE/be5967d099974c69b77f4549425ca4c0/b78ad208f8c4494489aabf97284679b6.html#obtaining-your-open-sql-schema-connection-information).
 
 
 
