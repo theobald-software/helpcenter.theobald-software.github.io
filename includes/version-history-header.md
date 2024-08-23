@@ -3,7 +3,8 @@
 We recommend checking for updates at least every three months. 
 
 !!! note
-		If the installed version is not listed, this is expected. Refer to the changelog entry for the next most recent version, as it contains the relevant information.
+	If the installed version isn't listed, this is expected (by design). Refer to the changelog entry with the next lower version than the one currently installed on your system.
+    
 
 [:material-download-circle: Download the latest version](https://portal.theobald-software.com/){ .md-button .md-button--primary }
 
