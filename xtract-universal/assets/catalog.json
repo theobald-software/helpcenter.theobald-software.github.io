@@ -1,5 +1,17 @@
 [
   {
+    "Version": "2024.8.26.25",
+    "LegacyReleaseDate": "2024-08-26 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "XtractUniversal",
+        "Component": "Destinations",
+        "Message": "Reworked S3 and Azure Storage destinations. Multiple improvements.",
+        "ReleaseNote": "* **S3 destination** now supports connections via VPC endpoints.\n* Fixed an issue where using IAM role authentication is **S3 destination** would not work with IMDSv2 enabled.\n* **S3 destination** now supports JSON format.\n* **Azure Storage destination** now supports shared access signature authentication.\n* **Azure Storage destination** now retries failed requests on 5xx response codes.\n* **Azure Storage destination** now supports JSON format.\n* Removed Common Data Model feature from **Azure Storage destination**."
+      }
+    ]
+  },
+  {
     "Version": "2024.8.26.6",
     "LegacyReleaseDate": "2024-08-26 00:00:00Z",
     "Changes": [
