@@ -163,7 +163,7 @@ Returns the status of a (running) extraction at the specified timestamp. <br>
 {% endif %}
 
 !!! tip
-	The timestamp corresponds to the *startedAt* element returned by [`[protocol]://[host]:[port]/config/extractions/`](#get-extraction-details) or [`[protocol]://[host]:[port]/logs/extractions/[extraction-name]`](#get-extraction-logs).
+	The timestamp corresponds to the *startedAt* element returned by [`[protocol]://[host]:[port]/config/extractions/`](#get-extraction-details) or [`[protocol]://[host]:[port]/logs/extractions/[extraction-name]`](#get-extraction-logs). If an extraction is triggered by an [http request](#run-extractions), the extraction's timestamp is returned in the field `X-XU-Timestamp` of the http request's response header.
 
 #### Response
 
