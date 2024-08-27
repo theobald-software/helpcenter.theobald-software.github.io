@@ -201,7 +201,7 @@ Follow the steps below to set up the Power Query M-script in Power BI to connect
 ![Advanced Editor](../../assets/images/xu/documentation/destinations/power-bi/pbi_advanced_editor.png){:class="img-responsive"}
 3. Open the Xtract Universal *loading_script.txt* in any text editor.
 4. Copy the content of *loading_script.txt* into the *Advanced Editor*. <br> ![Data Source](../../assets/images/xu/documentation/destinations/power-bi/XU_pbi_connect_to_data_source.png){:class="img-responsive"} 
-5. Select the appropriate data gateway within the drop down menu <br> ![Data Gateway](../../assets/images/xu/documentation/destinations/power-bi/XU_pbi_data_gateway.png){:class="img-responsive"}
+5. Select the appropriate data gateway from the dropdown-list. <br> ![Data Gateway](../../assets/images/xu/documentation/destinations/power-bi/XU_pbi_data_gateway.png){:class="img-responsive"}
 6. Click **[Next]**.
 7. Check the extracted data within Xtract Universal.
 
