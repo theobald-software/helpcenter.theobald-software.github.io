@@ -58,7 +58,7 @@ Workflows that support SAP migration, e.g., from ECC to S/4HANA:
 
     This workflow  uses the [Xtract Table](documentation/table/index.md) component to support an SAP migration that is conducted in a phased approach by extracting the data from the relevant system depending on the user input.<br>
 	
-	[:material-download-circle: Download](assets/files/xfa/S4 Migration - Short-term bridge app.yxwz){ .md-button .md-button--primary .md-button--stretch}
+    [:material-download-circle: Download](assets/files/xfa/S4 Migration - Data Anonymization and Replication to QA system.yxzp){ .md-button .md-button--stretch .md-button--primary }
 
 -   __Short-term Bridge App__
 
@@ -66,7 +66,9 @@ Workflows that support SAP migration, e.g., from ECC to S/4HANA:
 
     This workflow  uses the [Xtract Table](documentation/table/index.md) component to create development and testing data sets with anonymized data from the productive system to speed up quality assurance processes.<br>
 	
-	[:material-download-circle: Download](assets/files/xfa/S4 Migration - Data Anonymization and Replication to QA system.yxzp){ .md-button .md-button--stretch .md-button--primary }
+	[:material-download-circle: Download](assets/files/xfa/S4 Migration - Short-term bridge app.yxwz){ .md-button .md-button--primary .md-button--stretch}
+
+	
 
 </div>
 <div class="grid cards" markdown>
