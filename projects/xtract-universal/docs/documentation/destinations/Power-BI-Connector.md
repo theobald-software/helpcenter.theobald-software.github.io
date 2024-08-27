@@ -8,7 +8,11 @@ The {{ page.meta.title }} destination loads data to Power BI
 
 The destination offers two ways to connect Power BI with Xtract Universal:
 - Power BI custom connector
-- Generic Power Query M-script
+- Generic Power Query M-script using one of the following ways:
+	- [Power BI Desktop](#power-bi-desktop)
+	- [Power BI Service - Microsoft Fabric Dataflow Gen2](#power-bi-service-microsoft-fabric-dataflow-gen2)
+
+With the Power Query M-script you can additionally directly integrate data into Dataflow Gen2 using [Microsoft Fabric](https://learn.microsoft.com/en-us/fabric/data-factory/create-first-dataflow-gen2).
 
 ![Power-BI-Connector](../../assets/images/xu/documentation/destinations/power-bi/PowerBI_Connector_Architecture_SSO.png){:class="img-responsive"}
 
@@ -138,7 +142,7 @@ The Power BI Query M-script is located inside the Xtract Universal installation 
 	Power Query M-script and Power BI Custom Connector do not belong together.<br>
 	Use either the Power Query M-script **or** the Power BI Custom Connector.
 
-### Set up the Power Query M-script in Power BI
+### Power BI Desktop
 
 !!! note
 	Only use the extractions with the Power BI Connector destination assigned to them.
@@ -183,6 +187,26 @@ Follow the steps below to set up the Power Query M-script in Power BI to connect
 	![XU-Custom-Parameter-exposed](../../assets/images/xu/documentation/destinations/power-bi/XU_PBI_XU_Parameters_5.png){:class="img-responsive" width="62%"}
 
 
+### Power BI Service (Microsoft Fabric Dataflow Gen2)
+
+#### Requirements
+- Active [Power BI on-premises data gateway](../../knowledge-base/connect-to-power-bi-service.md)
+- Power BI Destination within Xtract Universal
+- Microsoft Fabric Subscription
+
+#### Procedure
+1. Navigate to **My Workspace > New > Data factoring > Dataflow Gen2**
+2. Create a new Power BI report using **Home > Get Data > Blank Query** as a data source. <br> ![Blank Query](../../assets/images/xu/documentation/destinations/power-bi/XU_pbi_blank_query.png){:class="img-responsive"}
+2. Open the **[Advanced Editor]**.<br>
+![Advanced Editor](../../assets/images/xu/documentation/destinations/power-bi/pbi_advanced_editor.png){:class="img-responsive"}
+3. Open the Xtract Universal *loading_script.txt* in any text editor.
+4. Copy the content of *loading_script.txt* into the *Advanced Editor*. <br> ![Data Source](../../assets/images/xu/documentation/destinations/power-bi/XU_pbi_connect_to_data_source.png){:class="img-responsive"} 
+5. Select the appropriate data gateway within the drop down menu <br> ![Data Gateway](../../assets/images/xu/documentation/destinations/power-bi/XU_pbi_data_gateway.png){:class="img-responsive"}
+6. Click **[Next]**.
+7. Check the extracted data within Xtract Universal.
+
+!!! note
+	Disable cache settings to assure live data extraction.
 
 ## Single Sign On and SAP Authentication
 
@@ -206,3 +230,4 @@ This leverages the user's SAP authorizations and Power BI will only show data th
 - [Microsoft Documentation: Use custom data connectors with the on-premises data gateway](https://docs.microsoft.com/en-us/power-bi/connect-data/service-gateway-custom-connectors)
 - [Microsoft Documentation: Configure scheduled refresh](https://docs.microsoft.com/en-us/power-bi/connect-data/refresh-scheduled-refresh)
 - [Microsoft Documentation: Parameters in Power BI Desktop](https://docs.microsoft.com/en-us/power-query/power-query-query-parameters)
+- [Microsoft Fabric - Creating Dataflows](https://learn.microsoft.com/en-us/fabric/data-factory/create-first-dataflow-gen2)
