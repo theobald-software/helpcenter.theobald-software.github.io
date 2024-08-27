@@ -202,11 +202,8 @@ Follow the steps below to set up the Power Query M-script in Power BI to connect
 3. Open the Xtract Universal *loading_script.txt* in any text editor.
 4. Copy the content of *loading_script.txt* into the *Advanced Editor*. <br> ![Data Source](../../assets/images/xu/documentation/destinations/power-bi/XU_pbi_connect_to_data_source.png){:class="img-responsive"} 
 5. Select the appropriate data gateway from the dropdown-list. <br> ![Data Gateway](../../assets/images/xu/documentation/destinations/power-bi/XU_pbi_data_gateway.png){:class="img-responsive"}
-6. Click **[Next]**.
-7. Check the extracted data within Xtract Universal.
+6. Click **[Next]**. <br> ![Result](../../assets/images/xu/documentation/destinations/power-bi/XU_pbi_result.png)
 
-!!! note
-	Disable cache settings to assure live data extraction.
 
 ## Single Sign On and SAP Authentication
 
