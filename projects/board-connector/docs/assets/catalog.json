@@ -266,11 +266,6 @@
       {
         "Product": "Common",
         "Component": "WPF",
-        "Message": "Fix version number not written into assembly, causing problems in XtractIS due to the global assembly cache (GAC)."
-      },
-      {
-        "Product": "Common",
-        "Component": "WPF",
         "Message": "WPF library does now target net472 and net8.0-windows."
       },
       {
