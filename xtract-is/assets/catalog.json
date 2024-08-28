@@ -1,16 +1,5 @@
 [
   {
-    "Version": "2024.8.28.12",
-    "LegacyReleaseDate": "2024-08-28 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BWCube",
-        "Message": "MDX: Filters can now be applied to dimension properties"
-      }
-    ]
-  },
-  {
     "Version": "2024.8.26.4",
     "LegacyReleaseDate": "2024-08-26 00:00:00Z",
     "Changes": [
