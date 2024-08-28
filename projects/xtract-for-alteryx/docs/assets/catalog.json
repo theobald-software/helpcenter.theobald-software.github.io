@@ -1,5 +1,16 @@
 [
   {
+    "Version": "2024.8.28.11",
+    "LegacyReleaseDate": "2024-08-28 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "BWCube",
+        "Message": "MDX: Filters can now be applied to dimension properties"
+      }
+    ]
+  },
+  {
     "Version": "2024.8.26.3",
     "LegacyReleaseDate": "2024-08-26 00:00:00Z",
     "Changes": [
@@ -358,17 +369,6 @@
         "Product": "Theobald.Extractors",
         "Component": "General",
         "Message": "Fixed a bug where NameConverter would not shorten names correctly when the maximum length was an odd number."
-      }
-    ]
-  },
-  {
-    "Version": "1.21.2.7",
-    "LegacyReleaseDate": "2024-06-18 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Common",
-        "Component": "WPF",
-        "Message": "Fix version number not written into assembly, causing problems in XtractIS due to the global assembly cache (GAC)."
       }
     ]
   },
