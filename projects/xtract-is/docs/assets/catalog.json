@@ -2325,17 +2325,6 @@
     ]
   },
   {
-    "Version": "7.1.4.4",
-    "LegacyReleaseDate": "2023-04-04 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "In BICS mode it is now possible to deselect dimensions that are defined on rows in a query extraction."
-      }
-    ]
-  },
-  {
     "Version": "7.1.4.3",
     "LegacyReleaseDate": "2023-03-31 00:00:00Z",
     "IsBreaking": true,
