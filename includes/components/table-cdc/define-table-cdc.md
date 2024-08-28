@@ -19,9 +19,9 @@ The {{ tableCDC }} {{ component }} offers the following options for tracking SAP
 1. Select the table columns you want to track and extract. By default all columns are selected. 
 Deselect the columns you do not want to extract.<br> 
 ![Table-CDC-Setup](../../assets/images/documentation/components/table-cdc/table-cdc-kna1.png){:class="img-responsive"}
-2. Optional: If you do not want to extract the table when first running the extraction, deactivate **[Extract table on first run]**.
-3. Set a maximum number of rows that can be tracked. The default is 10000 rows.<br>
-If the row limit is reached, the extraction fails with an exception. The maximum row limit of a log table is 500000.
+2. If you want to extract the table when first running the extraction, activate **[Extract table on first run]**.
+3. Optional: You can set a maximum number of rows that the log table can contain. The default is disabled (Value 0). <br>
+If the row limit is reached, the extraction fails with an exception. The maximum row limit of a log table is 500.000.
 
 	!!! note
 		Once a log table is initialized, you cannot change the size limit anymore.
