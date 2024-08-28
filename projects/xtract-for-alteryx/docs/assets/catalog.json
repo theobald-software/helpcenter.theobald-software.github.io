@@ -373,17 +373,6 @@
     ]
   },
   {
-    "Version": "1.21.2.7",
-    "LegacyReleaseDate": "2024-06-18 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Common",
-        "Component": "WPF",
-        "Message": "Fix version number not written into assembly, causing problems in XtractIS due to the global assembly cache (GAC)."
-      }
-    ]
-  },
-  {
     "Version": "1.21.2.4",
     "LegacyReleaseDate": "2024-06-17 00:00:00Z",
     "Changes": [
