@@ -398,7 +398,7 @@
       {
         "Product": "Theobald.Extractors",
         "Component": "TableCDC",
-        "Message": "Fixed a bug where delta loads would fail if there are records evaluating to null during optimization. Bug introduced in 2.2.0"
+        "Message": "Fixed a bug where delta loads would fail if there are records evaluating to null during optimization. Bug present in versions released from 2024-06-25."
       }
     ]
   },
