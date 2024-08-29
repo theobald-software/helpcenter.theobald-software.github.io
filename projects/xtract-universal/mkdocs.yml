@@ -263,7 +263,7 @@ extra:
   settingsBtn: __Extraction Settings__
   parameterBtn: __Edit runtime parameters__
   previewBtn: __[Load live preview]__
-  port: 8064
+  port: 8065
   run_extractions: execute-and-automate/run-an-extraction.md
   runBtn: __[Run]__
   service: XtractService
