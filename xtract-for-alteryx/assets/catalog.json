@@ -1,5 +1,16 @@
 [
   {
+    "Version": "2024.8.30.64",
+    "LegacyReleaseDate": "2024-08-30 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "DeltaQ",
+        "Message": "Evaluate scripts in range selections"
+      }
+    ]
+  },
+  {
     "Version": "2024.8.28.11",
     "LegacyReleaseDate": "2024-08-28 00:00:00Z",
     "Changes": [
