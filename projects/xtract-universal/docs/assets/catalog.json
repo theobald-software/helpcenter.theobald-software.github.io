@@ -1,5 +1,16 @@
 [
   {
+    "Version": "2024.9.2.15",
+    "LegacyReleaseDate": "2024-09-02 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "XtractUniversal",
+        "Component": "General",
+        "Message": "Fixed a bug where xu-config would not use the correct target directory for creating the key file for source protection"
+      }
+    ]
+  },
+  {
     "Version": "2024.8.30.66",
     "LegacyReleaseDate": "2024-08-30 00:00:00Z",
     "Changes": [
