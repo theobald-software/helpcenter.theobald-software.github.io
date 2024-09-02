@@ -2043,6 +2043,36 @@
         "Product": "Theobald.Server",
         "Component": "General",
         "Message": "Fixed a bug where parameters supplied as JSON to table extractions would be ignored.\nReworked the license check of the new runtime."
+      },
+      {
+        "Product": "XtractKernel",
+        "Component": "Hierarchy",
+        "Message": "Removed Hierarchy"
+      },
+      {
+        "Product": "XtractKernel",
+        "Component": "DeltaQ",
+        "Message": "Replaced the local byte serialization/deserialization on IpcChannel with the ByteSerialization from Theobald.Common (introduced on 2.22.0)"
+      },
+      {
+        "Product": "XtractKernel",
+        "Component": "OHS",
+        "Message": "Removed OHS"
+      },
+      {
+        "Product": "XtractKernel",
+        "Component": "Report",
+        "Message": "Removed Report"
+      },
+      {
+        "Product": "XtractKernel",
+        "Component": "Table Join",
+        "Message": "Removed TableJoin"
+      },
+      {
+        "Product": "XtractKernel",
+        "Component": "BAPI",
+        "Message": "Removed BAPI extractor"
       }
     ]
   },
@@ -5107,6 +5137,11 @@
     "LegacyReleaseDate": "2022-01-12 00:00:00Z",
     "Changes": [
       {
+        "Product": "ERPConnect",
+        "Component": "General",
+        "Message": "Fix for tracing null values"
+      },
+      {
         "Product": "Common",
         "Component": "General",
         "Message": "Improvements for certificate enrollment"
@@ -5195,6 +5230,11 @@
         "Message": "Added Transaction (experimental), fixes & improvements"
       },
       {
+        "Product": "ERPConnect",
+        "Component": "General",
+        "Message": "Derived classes of ERPException are Serializable now"
+      },
+      {
         "Product": "Common",
         "Component": "General",
         "Message": "Support to have an instance of ProcessAsync "
@@ -5203,6 +5243,27 @@
         "Product": "Theobald.Extractors",
         "Component": "BAPI",
         "Message": "Added description texts for data elements"
+      },
+      {
+        "Product": "Theobald.Server",
+        "Component": "General",
+        "Message": "Transaction component and pass-through mode "
+      },
+      {
+        "Product": "Theobald.Server",
+        "Component": "General",
+        "Message": "Fix for storing passwords with non-ASCII characters"
+      }
+    ]
+  },
+  {
+    "Version": "0.7.0.5",
+    "LegacyReleaseDate": "2021-12-01 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "XtractKernel",
+        "Component": "General",
+        "Message": "Removed translations"
       }
     ]
   },
@@ -5225,6 +5286,7 @@
   {
     "Version": "0.6.0.0",
     "LegacyReleaseDate": "2021-11-24 19:50:07Z",
+    "IsBreaking": true,
     "Changes": [
       {
         "Product": "YunIO",
@@ -5235,6 +5297,88 @@
         "Product": "Common",
         "Component": "Licensing",
         "Message": "Added method to ILicenseBusinessRule that indicates whether the Rule applies to a certain Property of  a ProductLicense. This is helpful in a UI to highlight the input fields where a user has made bad inputs."
+      },
+      {
+        "Product": "Common",
+        "Component": "Licensing",
+        "Message": "Added static methods to ProductLicense which indicate whether a License CanHaveComponents and CanHaveDestinations based on LicenseProduct and LicenseKind. This is helpful for the new LicenseTools. Also added a class LicenseFileWriter which encapsulates some directory and filename logic which is shared beteen LicenseTool and AutomatedLicenseCreation."
+      },
+      {
+        "Product": "Common",
+        "Component": "General",
+        "Message": "16-Bit character code points are now correctly displayed in JSON strings"
+      },
+      {
+        "Product": "Common",
+        "Component": "WPF",
+        "Message": "Added folder browser."
+      },
+      {
+        "Product": "Common",
+        "Component": "Licensing",
+        "Message": "Added LicenseSerialNumber and tests to Theobald.Licensing. Contains all business rules to create a LicenseSerialNumber as it is used in CRM. For automation of the License File creation, this code should be centrally available."
+      },
+      {
+        "Product": "Common",
+        "Component": "Licensing",
+        "Message": "Added PersistedCounter to library to centralize all relevant code around License Creation into Theobald.Licensing."
+      },
+      {
+        "Product": "Common",
+        "Component": "General",
+        "Message": "Delimiter for rows can now be set in CsvReader "
+      },
+      {
+        "Product": "Common",
+        "Component": "General",
+        "Message": "Add constructor to initialize NamedList from IEnumerable"
+      },
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "BAPI",
+        "Message": "Reworked parameterization"
+      },
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "Report",
+        "Message": "Fixed a bug where report rows without pipes in them were being skipped even if the extraction was ran without dynamic column widths and offsets setting turned on. This change is breaking."
+      },
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "General",
+        "Message": "Table and ODP: Added setting to automatically adjust currency decimals based on reference field",
+        "ReleaseNote": "- design and runtime SAP users need access to table TCURX\n- existing extractions require metadata refresh (Table) or new lookup (ODP)\n- metadata will be adjusted to fixed decimal with 14 decimal places"
+      },
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "Report",
+        "Message": "Fixed a bug where fetching report selection parameters would not use the custom function module defined in extraction settings and would override that setting with the default value of Z_XTRACT_IS_REMOTE_REPORT."
+      },
+      {
+        "Product": "Theobald.Server",
+        "Component": "General",
+        "Message": "RPC: Requesting non-existent extraction logs is no longer an error"
+      }
+    ]
+  },
+  {
+    "Version": "0.5.0.11",
+    "LegacyReleaseDate": "2021-09-29 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Common",
+        "Component": "General",
+        "Message": "Added WaitRegistration class "
+      },
+      {
+        "Product": "Common",
+        "Component": "General",
+        "Message": "ProcessAsync flags set to create no console window"
+      },
+      {
+        "Product": "Common",
+        "Component": "General",
+        "Message": "ProcessAsync added support for arguments"
       }
     ]
   },
@@ -5250,6 +5394,42 @@
     ]
   },
   {
+    "Version": "0.4.0.7",
+    "LegacyReleaseDate": "2021-09-24 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "ERPConnect",
+        "Component": "Idoc",
+        "Message": "Fix for loading schema documentation"
+      },
+      {
+        "Product": "ERPConnect",
+        "Component": "RFCServer",
+        "Message": "Fixed an issue where an RFCServer would not update its code page when using NWRFC"
+      },
+      {
+        "Product": "Common",
+        "Component": "General",
+        "Message": "Fix for starving the threadpool while waiting for spawned thread"
+      },
+      {
+        "Product": "Common",
+        "Component": "WPF",
+        "Message": "Added removeable drive icon."
+      },
+      {
+        "Product": "Common",
+        "Component": "WPF",
+        "Message": "Added drive icon, network drive icon, folder icon, red folder icon and open folder icon."
+      },
+      {
+        "Product": "XtractKernel",
+        "Component": "DeltaQ",
+        "Message": "Server pool: Improvements for error handling"
+      }
+    ]
+  },
+  {
     "Version": "0.4.0.0",
     "LegacyReleaseDate": "2021-09-16 21:08:33Z",
     "Changes": [
@@ -5257,6 +5437,11 @@
         "Product": "YunIO",
         "Component": "General",
         "Message": "Beta Release"
+      },
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "Report",
+        "Message": "Fixed a bug where automatic column detection didn't work for reports where rows don't begin with a pipe."
       }
     ]
   },
@@ -5268,6 +5453,36 @@
         "Product": "YunIO",
         "Component": "General",
         "Message": "Various fixes & improvements "
+      },
+      {
+        "Product": "ERPConnect",
+        "Component": "General",
+        "Message": "Fix for tables in tables"
+      },
+      {
+        "Product": "ERPConnect",
+        "Component": "Idoc",
+        "Message": "Added TemplateSegments property to access IDoc schema information"
+      },
+      {
+        "Product": "Common",
+        "Component": "Licensing",
+        "Message": "Backward-compatibility for default destinations (new licenses on old XU versions)"
+      },
+      {
+        "Product": "Common",
+        "Component": "General",
+        "Message": "Client handles of StdIn, StdOut and StdErr in the Process-Wrapper are now closed correctly on the server side after sending them to the client."
+      },
+      {
+        "Product": "Common",
+        "Component": "General",
+        "Message": "Start processes using P/Invoke instead of System.Diagnostics.Process"
+      },
+      {
+        "Product": "Common",
+        "Component": "WPF",
+        "Message": "Introduction of ShowConfirmation4All message box"
       }
     ]
   },
@@ -5280,6 +5495,22 @@
         "Component": "General",
         "Message": "Various fixes & improvements (see release note for details)",
         "ReleaseNote": "* 'Check all'-checkbox for output\n* About Page\n* EmptyState fixes\n* Fixed HttpServer error in case of duplicate headers\n* Download option for swagger and openapi files"
+      }
+    ]
+  },
+  {
+    "Version": "0.1.0.2",
+    "LegacyReleaseDate": "2021-07-01 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "ERPConnect",
+        "Component": "Idoc",
+        "Message": "Fix for LoadPlainData(): RCVLAD and following fields"
+      },
+      {
+        "Product": "Common",
+        "Component": "General",
+        "Message": "Byte token support for line reader\nPerformance optimization for line reader"
       }
     ]
   },
