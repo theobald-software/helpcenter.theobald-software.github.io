@@ -16,7 +16,7 @@ To open the server settings, navigate to **[Server] > [Settings]** in the main w
 #### Port 
 
 Defines the port number for communication between Server and Designer. 
-The default is 8064. If you set a different port, add the new port number to the host name on the [logon screen](../designer.md/#connect-the-designer-to-a-server) ([host name]:[port]).
+The default is {{ port_designer }}. If you set a different port, add the new port number to the host name on the [logon screen](../designer.md/#connect-the-designer-to-a-server) ([host name]:[port]).
 
 #### Max. age of log files (days)
 Defines the maximum age of the config server [log files](../logs.md#access-server-logs) in days. 

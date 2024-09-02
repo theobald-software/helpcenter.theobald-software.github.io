@@ -18,7 +18,7 @@ When dialing into a remote server where the service is not used in the local env
 
 |Field | Syntax | Example |
 |:---|:---|:---|
-|{{ Abbr }} Server| `[host].[domain]:[port]` | theosoftw2012r2.theobald.local:8064 |
+|{{ Abbr }} Server| `[host].[domain]:[port]` | theosoftw2012r2.theobald.local:{{ port_designer }} |
 |Target Principal as **UPN** | `[AD-user]@[domain]`| svc_xusrv@theobald.local |
 |Target Principal as **SPN** | `[service class]/[host]@[domain]` | HTTP/theosoftw2012r2.theobald.local@THEOBALD.LOCAL|
 
@@ -51,7 +51,7 @@ A UPN is assigned in the following form:
 
 |Field | Syntax | Example |
 |:---|:---|:---|
-|{{ Abbr }} Server| `[host].[domain]:[port]` | TODD.theobald.local:8064 (or localhost:8064)|
+|{{ Abbr }} Server| `[host].[domain]:[port]` | TODD.theobald.local:{{ port_designer }} (or localhost:{{ port_designer }})|
 |Target Principal | `[AD-user]@[domain]`| steffan@theobald.local |
 
 !!! note
@@ -80,7 +80,7 @@ An SPN is assigned in the following form:
 
 |Field | Syntax | Example |
 |:---|:---|:---|
-|{{ Abbr }} Server | `[host].[domain]:[port]` | TODD.theobald.local:8064 (or localhost:8064)|
+|{{ Abbr }} Server | `[host].[domain]:[port]` | TODD.theobald.local:{{ port_designer }} (or localhost:{{ port_designer }})|
 |Target Principal| `HOST/[hostname]@[domain]` | HOST/TODD.theobald.local@THEOBALD.LOCAL|
 
 

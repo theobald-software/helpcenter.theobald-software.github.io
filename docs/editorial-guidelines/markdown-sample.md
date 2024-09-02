@@ -929,7 +929,9 @@ Example:
 | parameterBtn| **Edit parameters**  | **[Edit parameters]**    |**Edit runtime parameters** | **Edit runtime parameters**  | -               |
 | previewBtn  | **[Load live preview]** | **[Load live preview]**|**[Load live preview]**    | **[Load live preview]**      | **[Run]**        |
 | runBtn       | -                    |  -                       |  **[Run]**                | **[Run in Browser]**         | -               |
-| port         | -                    | -                        | 8064                       | 8096                        | -               |
+| port         | -                    | -                        | 8065                       | 8097                        | -               |
+| port_https  | -                    | -                        | 8165                       | 8197                        | -               |
+| port_designer| -                    | -                        | 8064                       | 8096                        | -               |
 | run_extractions | -                 |                          | execute-and-automate/run-an-extraction.md | run-extractions.md |  -        |
 | service       | -                   |                          | XtractService               | BCService                   |  -             |
 

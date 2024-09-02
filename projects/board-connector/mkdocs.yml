@@ -257,7 +257,9 @@ extra:
   settingsBtn: __Extraction Settings__
   parameterBtn: __Edit runtime parameters__
   previewBtn: __[Load live preview]__
-  port: 8096
+  port: 8097
+  port_https: 8197
+  port_designer: 8096
   run_extractions: run-extractions.md
   runBtn: __[Run in Browser]__
   service: BCService
