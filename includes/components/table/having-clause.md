@@ -14,7 +14,7 @@ After applying the HAVING Clause, the preview shows only the material types with
 
 	![HAVING Clause-Aggregation](../../assets/images/documentation/components/table/having-clause-aggregate.png){:class="img-responsive"}
 2. Navigate to tab *HAVING Clause* :number-2:.
-3. Enter a HAVING Clause, e.g., `COUNT(BRGEW) > 10`.<br>
+3. Enter a HAVING Clause using the [syntax](#having-clause-syntax) in accordance to your SAP Release, e.g., `COUNT(BRGEW) > 10`.<br>
 ![HAVING Clause](../../assets/images/documentation/components/table/having-clause.png){:class="img-responsive"}
 4. Click {{ previewBtn }} to display the results in the *Preview* section.
 
@@ -25,4 +25,5 @@ After applying the HAVING Clause, the preview shows only the material types with
 ### HAVING Clause Syntax 
 
 With regard to syntax and formulas, the same rules apply as for the [WHERE Clause](where-clause.md#where-clause-syntax). 
+Depending on your SAP release the syntax may varry, see [SAP Help - ABAP SQL - SQL Expressions sql_exp ](https://help.sap.com/doc/abapdocu_latest_index_htm/latest/en-US/abenabap_sql_strictmode_754.htm).
 
