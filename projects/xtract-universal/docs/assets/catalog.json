@@ -18,6 +18,12 @@
         "Product": "Theobald.Extractors",
         "Component": "DeltaQ",
         "Message": "Evaluate scripts in range selections"
+      },
+      {
+        "Product": "theobald-server-rs",
+        "Component": "General",
+        "Message": "The resource handling of the listeners was reworked.",
+        "ReleaseNote": "* Fixed a resource exhaustion issue where handles would not be cleaned up correctly.\n  * This resulted in the listener memory to increase over time.\n* Fixed a resource exhaustion issue where workers that failed to start would not be handled correctly in high load scenarios."
       }
     ]
   },
@@ -12000,6 +12006,11 @@
         "Product": "Common",
         "Component": "General",
         "Message": "Extended JSON Writer"
+      },
+      {
+        "Product": "Theobald.Server",
+        "Component": "General",
+        "Message": "Added Theobald.Persistence, Theobald.Net and Theobald.Web"
       }
     ]
   },
@@ -12468,6 +12479,21 @@
         "ReleaseNote": "Move DeleteFile method from Xtract.Server.Persistence.StatisticsStore to Theobald.Common.IOHelper"
       },
       {
+        "Product": "Common",
+        "Component": "General",
+        "Message": "Updated gacutil to 4.7.2558.0"
+      },
+      {
+        "Product": "Common",
+        "Component": "General",
+        "Message": "Updated Installer for XIS/XRS"
+      },
+      {
+        "Product": "Common",
+        "Component": "General",
+        "Message": "RemoveControlCharacters now also removes chars from the C1 range"
+      },
+      {
         "Product": "Theobald.Extractors",
         "Component": "Table",
         "Message": "UI improvements for removing tables"
@@ -12514,6 +12540,16 @@
         "Product": "ERPConnect",
         "Component": "Idoc",
         "Message": "Fix for loading iDoc Schema after loading plain data"
+      },
+      {
+        "Product": "Common",
+        "Component": "General",
+        "Message": "Logger throws InvalidOperationException if used without calling Start()"
+      },
+      {
+        "Product": "Common",
+        "Component": "General",
+        "Message": "Logging now supports 24h and more in one log (but still restricted to &lt; 100h)"
       }
     ]
   },
@@ -12884,7 +12920,13 @@
   {
     "Version": "4.1.4.2",
     "LegacyReleaseDate": "2019-09-23 00:00:00Z",
+    "IsBreaking": true,
     "Changes": [
+      {
+        "Product": "Common",
+        "Component": "General",
+        "Message": "Updated to .NET Standard 2.0"
+      },
       {
         "Product": "Theobald.Extractors",
         "Component": "ERPConnect",
@@ -15682,6 +15724,11 @@
         "Product": "ERPConnect",
         "Component": "RFC Client",
         "Message": "Added support for qRFC (NetWeaver libraries only)"
+      },
+      {
+        "Product": "Common",
+        "Component": "General",
+        "Message": "Initial version"
       },
       {
         "Product": "XtractKernel",
