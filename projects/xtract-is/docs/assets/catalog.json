@@ -1,5 +1,16 @@
 [
   {
+    "Version": "2024.8.30.65",
+    "LegacyReleaseDate": "2024-08-30 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "DeltaQ",
+        "Message": "Evaluate scripts in range selections"
+      }
+    ]
+  },
+  {
     "Version": "2024.8.26.4",
     "LegacyReleaseDate": "2024-08-26 00:00:00Z",
     "Changes": [
@@ -7,17 +18,6 @@
         "Product": "Theobald.Extractors",
         "Component": "DeltaQ",
         "Message": "Fixed a bug which would display duplicated DeltaQ sources on lookup dialog"
-      }
-    ]
-  },
-  {
-    "Version": "2024.8.20.5",
-    "LegacyReleaseDate": "2024-08-20 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BWCube",
-        "Message": "Cube legacy mode now outputs 0 (zero) for empty measure cells as in the old cube component."
       }
     ]
   },
@@ -124,17 +124,6 @@
         "Product": "Theobald.Extractors",
         "Component": "ODP",
         "Message": "Fixed a performance regression causing XML reading when processing ODP packages to be extremely slow."
-      }
-    ]
-  },
-  {
-    "Version": "2024.7.26.13",
-    "LegacyReleaseDate": "2024-07-26 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "MDX: Ignore empty members in list parameters"
       }
     ]
   },
@@ -311,17 +300,6 @@
     ]
   },
   {
-    "Version": "7.7.2.8",
-    "LegacyReleaseDate": "2024-06-21 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "Fixed a bug that caused filters to be removed when refreshing metadata"
-      }
-    ]
-  },
-  {
     "Version": "7.7.2.5",
     "LegacyReleaseDate": "2024-06-20 00:00:00Z",
     "Changes": [
@@ -449,17 +427,6 @@
     ]
   },
   {
-    "Version": "7.7.0.1",
-    "LegacyReleaseDate": "2024-06-03 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "MDX: Fix structures (broken since 2.0)"
-      }
-    ]
-  },
-  {
     "Version": "7.7.0.0",
     "LegacyReleaseDate": "2024-06-03 12:00:29Z",
     "Changes": [
@@ -495,17 +462,6 @@
         "Component": "TableCDC",
         "Message": "Result sorting now takes place on SAP side. Removed support for Z_THEO_READ_TABLE. Check release notes for details",
         "ReleaseNote": "- The extractor now makes use of the **ORDER BY** feature introduced in /THEO/READ_TABLE version **3.5**\n- Increased extraction performance over extractor side sorting which could take a long time\n- Existing extraction definitions using Z_THEO_READ_TABLE **do not need to be adjusted**. The extractor will automatically choose /THEO/READ_TABLE for extracting data\n- Improved logging for result optimization"
-      }
-    ]
-  },
-  {
-    "Version": "7.6.1.8",
-    "LegacyReleaseDate": "2024-05-24 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "Fixed a bug where clicking on \"Load live preview\" multiple times would lead to errors"
       }
     ]
   },
@@ -566,28 +522,6 @@
         "Product": "XtractIS",
         "Component": "BAPI",
         "Message": "Remove deselected exports from output"
-      }
-    ]
-  },
-  {
-    "Version": "7.6.0.4",
-    "LegacyReleaseDate": "2024-05-17 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "MDX: Fix column order of legacy extractions with key figures on rows"
-      }
-    ]
-  },
-  {
-    "Version": "7.6.0.3",
-    "LegacyReleaseDate": "2024-05-17 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "MDX: Support legacy extractions with key figures on rows"
       }
     ]
   },
@@ -669,31 +603,8 @@
     ]
   },
   {
-    "Version": "7.5.0.2",
-    "LegacyReleaseDate": "2024-05-06 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "Fix dimension on columns deserialization"
-      }
-    ]
-  },
-  {
-    "Version": "7.5.0.1",
-    "LegacyReleaseDate": "2024-05-06 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "Add backward-compatibility for dimension on columns feature"
-      }
-    ]
-  },
-  {
     "Version": "7.5.0.0",
     "LegacyReleaseDate": "2024-05-06 00:00:00Z",
-    "IsBreaking": true,
     "Changes": [
       {
         "Product": "Theobald.Extractors",
@@ -723,17 +634,6 @@
         "Product": "Common",
         "Component": "General",
         "Message": "Unicode control characters are now deleted before serializing log messages"
-      }
-    ]
-  },
-  {
-    "Version": "7.4.15.8",
-    "LegacyReleaseDate": "2024-04-18 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "MDX: Members named \"all\" are no longer removed from slicing"
       }
     ]
   },
@@ -1428,17 +1328,6 @@
     ]
   },
   {
-    "Version": "7.4.5.2",
-    "LegacyReleaseDate": "2023-11-09 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "Improved handling of list runtime parameters in MDX filter selections"
-      }
-    ]
-  },
-  {
     "Version": "7.4.5.1",
     "LegacyReleaseDate": "2023-11-06 00:00:00Z",
     "Changes": [
@@ -1950,17 +1839,6 @@
     ]
   },
   {
-    "Version": "7.1.6.18",
-    "LegacyReleaseDate": "2023-07-20 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "Fixed a bug that caused unexpected measure precision in MDX query extractions."
-      }
-    ]
-  },
-  {
     "Version": "7.1.6.17",
     "LegacyReleaseDate": "2023-07-17 00:00:00Z",
     "Changes": [
@@ -2023,17 +1901,6 @@
         "Product": "Theobald.Extractors",
         "Component": "Table",
         "Message": "Added support for list parameters "
-      }
-    ]
-  },
-  {
-    "Version": "7.1.6.2",
-    "LegacyReleaseDate": "2023-06-15 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "MDX: Fixed legacy name conflict resolution"
       }
     ]
   },
@@ -2104,17 +1971,6 @@
     ]
   },
   {
-    "Version": "7.1.5.29",
-    "LegacyReleaseDate": "2023-05-26 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "MDX: fixed a bug that caused errors when deselecting all measures"
-      }
-    ]
-  },
-  {
     "Version": "7.1.5.27",
     "LegacyReleaseDate": "2023-05-22 00:00:00Z",
     "Changes": [
@@ -2149,17 +2005,6 @@
     ]
   },
   {
-    "Version": "7.1.5.17",
-    "LegacyReleaseDate": "2023-05-09 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "Fix for \"Dimension on columns\" setting not working correctly for MDX Query extractions with \"Only Structures\" set to false."
-      }
-    ]
-  },
-  {
     "Version": "7.1.5.16",
     "LegacyReleaseDate": "2023-05-09 00:00:00Z",
     "Changes": [
@@ -2189,28 +2034,6 @@
         "Product": "Theobald.Extractors",
         "Component": "BAPI",
         "Message": "Fixed a bug that caused an IndexOutOfRangeException when incoming tables were disconnected previously"
-      }
-    ]
-  },
-  {
-    "Version": "7.1.5.12",
-    "LegacyReleaseDate": "2023-04-28 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "MDX: Fixed result columns of converted extractions (was broken since 1.34)"
-      }
-    ]
-  },
-  {
-    "Version": "7.1.5.10",
-    "LegacyReleaseDate": "2023-04-28 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "MDX: Fixed Hierarchy member filter"
       }
     ]
   },
@@ -2277,17 +2100,6 @@
         "Product": "Theobald.Extractors",
         "Component": "Report",
         "Message": "Separate Column Detection step for yunIO Report"
-      }
-    ]
-  },
-  {
-    "Version": "7.1.4.11",
-    "LegacyReleaseDate": "2023-04-06 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "Dimensions are sorted alphabetically descending by description text in GUI"
       }
     ]
   },
@@ -2469,28 +2281,6 @@
     ]
   },
   {
-    "Version": "7.1.3.4",
-    "LegacyReleaseDate": "2023-03-08 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "Fix for column order changes in MDX mode when adding filter selections or selecting and deselecting a dimension."
-      }
-    ]
-  },
-  {
-    "Version": "7.1.3.2",
-    "LegacyReleaseDate": "2023-03-07 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "Added Direct load button in cube look up window."
-      }
-    ]
-  },
-  {
     "Version": "7.1.3.1",
     "LegacyReleaseDate": "2023-03-07 00:00:00Z",
     "Changes": [
@@ -2520,17 +2310,6 @@
         "Product": "XtractIS",
         "Component": "General",
         "Message": "New EULA"
-      }
-    ]
-  },
-  {
-    "Version": "7.1.1.19",
-    "LegacyReleaseDate": "2023-02-24 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "Fixed an issue that may cause errors when setting exclude filters or runtime parameters in filters when using MDX mode."
       }
     ]
   },
@@ -2597,17 +2376,6 @@
         "Product": "Theobald.Extractors",
         "Component": "Report",
         "Message": "Improved error message for when report lookup by TCODE fails."
-      }
-    ]
-  },
-  {
-    "Version": "7.1.1.2",
-    "LegacyReleaseDate": "2023-02-13 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "Fixed a bug in MDX metadata refresh that caused invalid selections when a selected measure or dimension does not exist after refresh anymore."
       }
     ]
   },
@@ -2795,17 +2563,6 @@
     ]
   },
   {
-    "Version": "7.0.4.22",
-    "LegacyReleaseDate": "2023-01-11 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "Fix for possible error when saving dimension filters in MDX mode"
-      }
-    ]
-  },
-  {
     "Version": "7.0.4.20",
     "LegacyReleaseDate": "2023-01-09 00:00:00Z",
     "Changes": [
@@ -2813,17 +2570,6 @@
         "Product": "Theobald.Extractors",
         "Component": "General",
         "Message": "Added range checks for SapDateConverter"
-      }
-    ]
-  },
-  {
-    "Version": "7.0.4.18",
-    "LegacyReleaseDate": "2023-01-09 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "Fix for error on InfoCube load in MDX mode"
       }
     ]
   },
@@ -2858,28 +2604,6 @@
         "Product": "ERPConnect",
         "Component": "General",
         "Message": "Added classes to convert geometry EWKB to WKB and WKT"
-      }
-    ]
-  },
-  {
-    "Version": "7.0.4.9",
-    "LegacyReleaseDate": "2022-12-21 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "Fix for incorrect unit column values in MDX mode."
-      }
-    ]
-  },
-  {
-    "Version": "7.0.4.8",
-    "LegacyReleaseDate": "2022-12-20 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "Added the option to select a custom structure on the columns axis for MDX extractions."
       }
     ]
   },
@@ -2929,28 +2653,6 @@
         "Product": "XtractIS",
         "Component": "General",
         "Message": "Changed default RFC library to NetWeaver"
-      }
-    ]
-  },
-  {
-    "Version": "7.0.3.38",
-    "LegacyReleaseDate": "2022-11-15 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "Fix for possible conversion errors when formatted values option in MDX mode is enabled"
-      }
-    ]
-  },
-  {
-    "Version": "7.0.3.37",
-    "LegacyReleaseDate": "2022-11-15 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "Cube legacy mode: fix for duplicate dimension column names"
       }
     ]
   },
@@ -3083,17 +2785,6 @@
         "Component": "Table",
         "Message": "Updated Z_THEO_READ_TABLE to version 2.15.",
         "ReleaseNote": "*Changes in Z_THEO_READ_TABLE*:\n- Code style change"
-      }
-    ]
-  },
-  {
-    "Version": "7.0.3.13",
-    "LegacyReleaseDate": "2022-10-21 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "Fixed a bug that caused measures in MDX mode being handled as strings instead of numbers when the formatted values option is enabled."
       }
     ]
   },
@@ -3304,17 +2995,6 @@
     ]
   },
   {
-    "Version": "7.0.1.9",
-    "LegacyReleaseDate": "2022-07-27 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "Fix for failing mdx extractions with packaging enabled and only dimensions selected."
-      }
-    ]
-  },
-  {
     "Version": "7.0.1.7",
     "LegacyReleaseDate": "2022-07-22 00:00:00Z",
     "Changes": [
@@ -3349,17 +3029,6 @@
     ]
   },
   {
-    "Version": "7.0.1.4",
-    "LegacyReleaseDate": "2022-07-18 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "Refactored all MDX RFC Functions to static creation; added support for non-unicode SAP systems."
-      }
-    ]
-  },
-  {
     "Version": "7.0.1.0",
     "LegacyReleaseDate": "2022-07-12 08:54:34Z",
     "Changes": [
@@ -3390,18 +3059,6 @@
         "Product": "XtractIS",
         "Component": "General",
         "Message": "Removed support for SQL Server 2012"
-      }
-    ]
-  },
-  {
-    "Version": "6.14.2.1",
-    "LegacyReleaseDate": "2022-07-07 00:00:00Z",
-    "IsCritical": true,
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "Fix for asynchronous processing problems"
       }
     ]
   },
@@ -3489,17 +3146,6 @@
     ]
   },
   {
-    "Version": "6.14.0.7",
-    "LegacyReleaseDate": "2022-06-13 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "Internal adjustments to BEx variable dialog button behavior in BICS mode."
-      }
-    ]
-  },
-  {
     "Version": "6.14.0.6",
     "LegacyReleaseDate": "2022-06-09 00:00:00Z",
     "Changes": [
@@ -3555,17 +3201,6 @@
     ]
   },
   {
-    "Version": "6.13.1.3",
-    "LegacyReleaseDate": "2022-06-02 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "MDX mode: invalid measure values 'X' are now written to the output as NULL."
-      }
-    ]
-  },
-  {
     "Version": "6.13.1.0",
     "LegacyReleaseDate": "2022-06-02 11:42:51Z",
     "Changes": [
@@ -3577,17 +3212,6 @@
     ]
   },
   {
-    "Version": "6.13.0.41",
-    "LegacyReleaseDate": "2022-06-01 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "Fix for disabled measures/dimensions tree in MDX mode when a query does not have any measures."
-      }
-    ]
-  },
-  {
     "Version": "6.13.0.39",
     "LegacyReleaseDate": "2022-05-31 00:00:00Z",
     "Changes": [
@@ -3595,18 +3219,6 @@
         "Product": "Common",
         "Component": "WPF",
         "Message": "The progress dialog now always runs the work load on a background thread."
-      }
-    ]
-  },
-  {
-    "Version": "6.13.0.37",
-    "LegacyReleaseDate": "2022-05-30 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "Support for Only_Structures behavior in MDX BEx Queries. Various bug fixes and general improvements for the Cube component.",
-        "ReleaseNote": "Added option \"Only Structures\" in Lookup window for MDX Queries. Enables the same behavior as the \"Legacy Metadata Retrieval\" option before XU 5.6. This must be set during lookup and can not be changed later. Customers that have Cube extractions which used the \"Legacy Metadata retrieval\" option before should run the Config Converter again."
       }
     ]
   },
@@ -3656,17 +3268,6 @@
     ]
   },
   {
-    "Version": "6.13.0.19",
-    "LegacyReleaseDate": "2022-05-12 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "Fix for date columns being 0 and in wrong format in date columns of BICS extractions."
-      }
-    ]
-  },
-  {
     "Version": "6.13.0.14",
     "LegacyReleaseDate": "2022-05-10 00:00:00Z",
     "Changes": [
@@ -3674,17 +3275,6 @@
         "Product": "ERPConnect",
         "Component": "RFC Client",
         "Message": "Fixed a bug where tables with built-in types were not created correctly using R3Connection.CreateFunction"
-      }
-    ]
-  },
-  {
-    "Version": "6.13.0.13",
-    "LegacyReleaseDate": "2022-05-09 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "Fix for unavailable runtime parameters in dimension range filters."
       }
     ]
   },
@@ -3711,39 +3301,6 @@
     ]
   },
   {
-    "Version": "6.13.0.7",
-    "LegacyReleaseDate": "2022-04-29 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "Fixed a bug that caused using the wrong function module for loading axis data in MDX extractions."
-      }
-    ]
-  },
-  {
-    "Version": "6.13.0.6",
-    "LegacyReleaseDate": "2022-04-29 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "Cube legacy mode: fix for duplicate property column names"
-      }
-    ]
-  },
-  {
-    "Version": "6.13.0.5",
-    "LegacyReleaseDate": "2022-04-29 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "Fixed a bug that caused extractions with empty result sets to fail."
-      }
-    ]
-  },
-  {
     "Version": "6.13.0.1",
     "LegacyReleaseDate": "2022-04-25 00:00:00Z",
     "Changes": [
@@ -3762,17 +3319,6 @@
         "Product": "Theobald.Extractors",
         "Component": "Table",
         "Message": "Added graphical WHERE clause editor. Fixed a bug where Count Rows function didn't take scripted expressions into account."
-      }
-    ]
-  },
-  {
-    "Version": "6.12.1.4",
-    "LegacyReleaseDate": "2022-04-21 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "Fixed a bug where BW Cube Extractions would return broken data when used with Classic RFC library"
       }
     ]
   },
@@ -3807,28 +3353,6 @@
         "Product": "Theobald.Extractors",
         "Component": "ODP",
         "Message": "Selections can now be parameterized with lists of strings"
-      }
-    ]
-  },
-  {
-    "Version": "6.11.1.4",
-    "LegacyReleaseDate": "2022-04-07 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "Now allowing extractions without measure selections in MDX mode. Added support for additional options in interval/complex BEx variable selections."
-      }
-    ]
-  },
-  {
-    "Version": "6.11.1.1",
-    "LegacyReleaseDate": "2022-04-04 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "Updates to the BWCube component for increased stability, performance and compatibility."
       }
     ]
   },
@@ -4310,7 +3834,6 @@
   {
     "Version": "6.8.0.51",
     "LegacyReleaseDate": "2021-10-04 00:00:00Z",
-    "IsBreaking": true,
     "Changes": [
       {
         "Product": "ERPConnect",
@@ -4396,12 +3919,6 @@
         "Product": "Common",
         "Component": "WPF",
         "Message": "Introduction of ShowConfirmation4All message box"
-      },
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "Updated cube component with new BICS mode (beta).",
-        "ReleaseNote": "The cube component got a major update containing new features and internal improvements.\n\n## MDX mode\n\n- **Improved performance** through some internal optimizations\n- **Runtime Parameter** are supported in variables and dimension filters\n\n## BICS mode (Beta)\n\nWe have added a new cube extraction mode using the BICS interface. This interface is currently in a public beta stadium and should only be used for preview and testing purposes. There can be major breaking changes until the stable release."
       },
       {
         "Product": "Theobald.Extractors",
@@ -6812,16 +6329,6 @@
         "Product": "Theobald.Extractors",
         "Component": "Table",
         "Message": "Reverted Z_THEO_READ_TABLE back to v1.11 for systems before 740SP05"
-      },
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "Fix for properties with same names on different dimensions."
-      },
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "Fix for selecting properties in cube extractor."
       }
     ]
   },
@@ -6926,11 +6433,6 @@
         "Product": "Theobald.Extractors",
         "Component": "ERPConnect",
         "Message": "Updated to 6.7.3.6"
-      },
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "Various fixes for variables"
       },
       {
         "Product": "XtractKernel",
@@ -7044,16 +6546,6 @@
         "Product": "Theobald.Extractors",
         "Component": "General",
         "Message": "Added support for INT8"
-      },
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "Fixes for variable names (RSZGLOBV)"
-      },
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "Improvements for variable names (RSZGLOBV)"
       },
       {
         "Product": "XtractKernel",
@@ -7286,11 +6778,6 @@
         "Product": "Theobald.Extractors",
         "Component": "General",
         "Message": "Fixes and improvements for GUI filters"
-      },
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "Added filters to cube extractor."
       }
     ]
   },

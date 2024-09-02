@@ -11,17 +11,6 @@
     ]
   },
   {
-    "Version": "2024.8.26.3",
-    "LegacyReleaseDate": "2024-08-26 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "DeltaQ",
-        "Message": "Fixed a bug which would display duplicated DeltaQ sources on lookup dialog"
-      }
-    ]
-  },
-  {
     "Version": "2024.8.20.2",
     "LegacyReleaseDate": "2024-08-20 00:00:00Z",
     "Changes": [
@@ -29,19 +18,6 @@
         "Product": "Theobald.Extractors",
         "Component": "BWCube",
         "Message": "Cube legacy mode now outputs 0 (zero) for empty measure cells as in the old cube component."
-      }
-    ]
-  },
-  {
-    "Version": "2024.8.19.29",
-    "LegacyReleaseDate": "2024-08-19 00:00:00Z",
-    "IsBreaking": true,
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "TableCDC",
-        "Message": "Log table row limit is now optional. Package size is now also applied on delta loads. View release notes for details.",
-        "ReleaseNote": "- Updated /THEO/CDC_* to version 1.8\n- Updated /THEO/READ_TABLE to version 3.6\n- Both /THEO/CDC_* and /THEO/READ_TABLE must be updated.\n- The \"Extract table on first run\" setting is now deselected by default when creating new extractions."
       }
     ]
   },
@@ -183,17 +159,6 @@
     ]
   },
   {
-    "Version": "1.21.2.34",
-    "LegacyReleaseDate": "2024-07-22 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "DeltaQ",
-        "Message": "Fixed a race condition which caused sporadically an error when multiple DeltaQ extractions were running simultaneously."
-      }
-    ]
-  },
-  {
     "Version": "1.21.2.32",
     "LegacyReleaseDate": "2024-07-15 00:00:00Z",
     "Changes": [
@@ -216,28 +181,6 @@
     ]
   },
   {
-    "Version": "1.21.2.30",
-    "LegacyReleaseDate": "2024-07-12 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "TableCDC",
-        "Message": "Fixed a bug where delta loads would fail if there are records evaluating to null during optimization. Bug present in versions released from 2024-06-25."
-      }
-    ]
-  },
-  {
-    "Version": "1.21.2.29",
-    "LegacyReleaseDate": "2024-07-11 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "DeltaQ",
-        "Message": "Fixed a bug which would not consider selections from unselected columns"
-      }
-    ]
-  },
-  {
     "Version": "1.21.2.26",
     "LegacyReleaseDate": "2024-07-05 00:00:00Z",
     "Changes": [
@@ -245,40 +188,6 @@
         "Product": "Theobald.Extractors",
         "Component": "General",
         "Message": "GUI filters now respect wildcards (*)"
-      }
-    ]
-  },
-  {
-    "Version": "1.21.2.24",
-    "LegacyReleaseDate": "2024-07-03 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "TableCDC",
-        "Message": "Fixed a bug that caused trigger creation to fail on MaxDB databases. Requires update of /THEO/CDC_ECC"
-      }
-    ]
-  },
-  {
-    "Version": "1.21.2.23",
-    "LegacyReleaseDate": "2024-07-03 00:00:00Z",
-    "IsCritical": true,
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "TableCDC",
-        "Message": "Fixed a bug that could cause optimization logic of delta extractions to not include all delta records in the result. Bug introduced in 2.2.0"
-      }
-    ]
-  },
-  {
-    "Version": "1.21.2.18",
-    "LegacyReleaseDate": "2024-06-26 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "TableCDC",
-        "Message": "Fixed a bug where tables could not be selected if they had multiple fields of type CLNT"
       }
     ]
   },
@@ -301,18 +210,6 @@
         "Product": "Theobald.Extractors",
         "Component": "Table",
         "Message": "Fixed transport request for /THEO/READ_TABLE for SAP versions 6.40 and newer."
-      }
-    ]
-  },
-  {
-    "Version": "1.21.2.15",
-    "LegacyReleaseDate": "2024-06-24 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "TableCDC",
-        "Message": "Timestamp is now part of extraction result. Log tables are now created client dependent. Updated THEO/CDC/* to version 1.7. See release notes for details.\n",
-        "ReleaseNote": "## General\n- In order for the changes to apply \"Refresh metadata\" is required or the creation of a new CDC extraction\n\n## /THEO/CDC* (version 1.7)\n- Triggers now insert timestamps (as chars) for every database in a unified format (yyyy-MM-dd HH24:mm:ss.FFF)\n- Triggers now only insert data into the log table if the source table change was caused on the same client that was used when initializing CDC. This does not apply for client independent source tables"
       }
     ]
   },
@@ -477,18 +374,6 @@
     ]
   },
   {
-    "Version": "1.21.1.16",
-    "LegacyReleaseDate": "2024-05-29 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "TableCDC",
-        "Message": "Result sorting now takes place on SAP side. Removed support for Z_THEO_READ_TABLE. Check release notes for details",
-        "ReleaseNote": "- The extractor now makes use of the **ORDER BY** feature introduced in /THEO/READ_TABLE version **3.5**\n- Increased extraction performance over extractor side sorting which could take a long time\n- Existing extraction definitions using Z_THEO_READ_TABLE **do not need to be adjusted**. The extractor will automatically choose /THEO/READ_TABLE for extracting data\n- Improved logging for result optimization"
-      }
-    ]
-  },
-  {
     "Version": "1.21.1.15",
     "LegacyReleaseDate": "2024-05-24 00:00:00Z",
     "Changes": [
@@ -567,28 +452,6 @@
         "Product": "Theobald.Extractors",
         "Component": "BW Cube",
         "Message": "MDX: Support legacy extractions with key figures on rows"
-      }
-    ]
-  },
-  {
-    "Version": "1.21.1.4",
-    "LegacyReleaseDate": "2024-05-17 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "DeltaQ",
-        "Message": "Fixed a bug which would display only data sources using the language set in the connection (introduced in 1.47.0)"
-      }
-    ]
-  },
-  {
-    "Version": "1.21.1.2",
-    "LegacyReleaseDate": "2024-05-17 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "TableCDC",
-        "Message": "Released Monitoring Feature for Log Tables and Triggers. Update of /THEO/CDC* package required."
       }
     ]
   },
@@ -672,25 +535,12 @@
   {
     "Version": "1.21.0.0",
     "LegacyReleaseDate": "2024-05-06 00:00:00Z",
-    "IsBreaking": true,
     "Changes": [
       {
         "Product": "Theobald.Extractors",
         "Component": "General",
         "Message": "New selection & parameter system",
         "ReleaseNote": "# Theobald.Extractors 2.0\n\n* BW Cube filter / variables UI is the same as for other extraction types \n* BW Cube MDX generator produces more concise queries\n* DeltaQ uses explicitly defined parameters instead of @-prefixes"
-      }
-    ]
-  },
-  {
-    "Version": "1.20.6.16",
-    "LegacyReleaseDate": "2024-04-25 00:00:00Z",
-    "IsCritical": true,
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "TableCDC",
-        "Message": "Delta extractions now only fetch data up to the maximum log table sequence number at the start of the extraction to avoid cursor concurrency conflicts with simultaneous inserts. Update of /THEO/CDC required."
       }
     ]
   },
@@ -735,17 +585,6 @@
         "Product": "Theobald.Extractors",
         "Component": "Table",
         "Message": "Updated /THEO/READ_TABLE to version 3.5. It now supports ORDER BY."
-      }
-    ]
-  },
-  {
-    "Version": "1.20.6.5",
-    "LegacyReleaseDate": "2024-04-10 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "TableCDC",
-        "Message": "Fixed a bug that caused faulty log table metadata when decimal places of a source table primary key type was not 0"
       }
     ]
   },
@@ -853,17 +692,6 @@
     ]
   },
   {
-    "Version": "1.20.5.102",
-    "LegacyReleaseDate": "2024-03-07 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "TableCDC",
-        "Message": "Fixed a bug that caused the result optimization to not work properly if fields of type \"RAW\" were part of the source table primary key"
-      }
-    ]
-  },
-  {
     "Version": "1.20.5.101",
     "LegacyReleaseDate": "2024-03-05 00:00:00Z",
     "Changes": [
@@ -920,28 +748,6 @@
     ]
   },
   {
-    "Version": "1.20.5.93",
-    "LegacyReleaseDate": "2024-02-23 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "TableCDC",
-        "Message": "There are now 2 different transports for S4 systems. One for S4 systems up to 7.55 and one for 7.55 and newer"
-      }
-    ]
-  },
-  {
-    "Version": "1.20.5.90",
-    "LegacyReleaseDate": "2024-02-21 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "TableCDC",
-        "Message": "Fixed a bug that caused initial load rollback to not completely remove log table metadata from the SAP system"
-      }
-    ]
-  },
-  {
     "Version": "1.20.5.85",
     "LegacyReleaseDate": "2024-02-15 00:00:00Z",
     "Changes": [
@@ -953,39 +759,6 @@
     ]
   },
   {
-    "Version": "1.20.5.84",
-    "LegacyReleaseDate": "2024-02-15 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "TableCDC",
-        "Message": "Results are now ordered by sequence number to prevent \"Invalid result order\" error during delta extractions."
-      }
-    ]
-  },
-  {
-    "Version": "1.20.5.83",
-    "LegacyReleaseDate": "2024-02-13 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "DeltaQ",
-        "Message": "Enabled column selection for hierarchy extractors, so that selectors can be used.\nAdded proper message to inform that DeltaQ does not support variable length strings."
-      }
-    ]
-  },
-  {
-    "Version": "1.20.5.82",
-    "LegacyReleaseDate": "2024-02-09 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "TableCDC",
-        "Message": "Fixed a bug that prevented log table create statement from being generated on S4 systems with SAP_BASIS version 7.53 or below. Requires update of /THEO/CDC_S4."
-      }
-    ]
-  },
-  {
     "Version": "1.20.5.81",
     "LegacyReleaseDate": "2024-02-08 00:00:00Z",
     "Changes": [
@@ -993,28 +766,6 @@
         "Product": "Theobald.Extractors",
         "Component": "Table",
         "Message": "Fix for using /THEO/READ_TABLE on big endian systems"
-      }
-    ]
-  },
-  {
-    "Version": "1.20.5.78",
-    "LegacyReleaseDate": "2024-02-05 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "TableCDC",
-        "Message": "Added option to select function module that is used during the extraction runs"
-      }
-    ]
-  },
-  {
-    "Version": "1.20.5.77",
-    "LegacyReleaseDate": "2024-02-05 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "DeltaQ",
-        "Message": "Fixed a bug, introduced in 1.47.0, that would not create the LeafFrom and LeaftTo columns for hierarchy extractors"
       }
     ]
   },
@@ -1041,17 +792,6 @@
     ]
   },
   {
-    "Version": "1.20.5.72",
-    "LegacyReleaseDate": "2024-01-29 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "TableCDC",
-        "Message": "Add deletion transport request for Z_THEO_DELETE_LOG_ENTRIES function module."
-      }
-    ]
-  },
-  {
     "Version": "1.20.5.69",
     "LegacyReleaseDate": "2024-01-26 00:00:00Z",
     "Changes": [
@@ -1074,17 +814,6 @@
     ]
   },
   {
-    "Version": "1.20.5.66",
-    "LegacyReleaseDate": "2024-01-23 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "TableCDC",
-        "Message": "RFC Service objects are now excluded from /THEO/CDC_ECC to avoid issues during import of the transport request."
-      }
-    ]
-  },
-  {
     "Version": "1.20.5.64",
     "LegacyReleaseDate": "2024-01-22 00:00:00Z",
     "Changes": [
@@ -1096,28 +825,6 @@
     ]
   },
   {
-    "Version": "1.20.5.62",
-    "LegacyReleaseDate": "2024-01-19 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "TableCDC",
-        "Message": "Fix for trigger syntax error in IBM DB for z/os (DB6). Requires update of /THEO/CDC_ECC"
-      }
-    ]
-  },
-  {
-    "Version": "1.20.5.58",
-    "LegacyReleaseDate": "2024-01-18 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "TableCDC",
-        "Message": "Fixed a bug where trigger creation failed if \".INCLUDE\" structures were part of the primary key of the source table. Requires update of /THEO/CDC_* package."
-      }
-    ]
-  },
-  {
     "Version": "1.20.5.57",
     "LegacyReleaseDate": "2024-01-16 00:00:00Z",
     "Changes": [
@@ -1125,41 +832,6 @@
         "Product": "Theobald.Extractors",
         "Component": "Hierarchy",
         "Message": "Removed debug logging statement that wrote the first 2 items of the extracted data into the log"
-      }
-    ]
-  },
-  {
-    "Version": "1.20.5.53",
-    "LegacyReleaseDate": "2024-01-11 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "TableCDC",
-        "Message": "Fixed a bug where log table creation failed due to missing namespace license. Requires update of /THEO/CDC_* package. Check release notes for details",
-        "ReleaseNote": "- Log table names are now prefixed with 'ZTSCDC_' instead of '/THEO/CDC_'. The latter one could not be inserted into SAP table TADIR due to missing license for /THEO/ namespace."
-      }
-    ]
-  },
-  {
-    "Version": "1.20.5.52",
-    "LegacyReleaseDate": "2024-01-09 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "TableCDC",
-        "Message": "Log table key field number and maintenance level is now set explicitly. Fixed a bug where fallback logic would not work if system language is set to 'D'."
-      }
-    ]
-  },
-  {
-    "Version": "1.20.5.51",
-    "LegacyReleaseDate": "2024-01-08 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "DeltaQ",
-        "Message": "Fixed a bug in the activation process for DeltaQ hierarchy extractions",
-        "ReleaseNote": "**Theobald.Extractors 1.52.8**\n\nThis bug would prevent the update of segment names for intervals, nodes and descriptions during the extraction activation.\n\nIt was introduced in the version 1.47.0"
       }
     ]
   },
@@ -1176,18 +848,6 @@
     ]
   },
   {
-    "Version": "1.20.5.49",
-    "LegacyReleaseDate": "2023-12-29 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "DeltaQ",
-        "Message": "Fixed bugs in the DeltaQ extractor - Details in release notes",
-        "ReleaseNote": "**Theobald Extractors 1.52.6**\n\n- fixed a bug which would finish the extraction erroneously as success, when a timeout failure was expected\n- fixed check window fatal error, which would crash the designer on rfc server check failure\n- fixed default timeout reading"
-      }
-    ]
-  },
-  {
     "Version": "1.20.5.46",
     "LegacyReleaseDate": "2023-12-20 00:00:00Z",
     "Changes": [
@@ -1195,28 +855,6 @@
         "Product": "Theobald.Extractors",
         "Component": "BAPI",
         "Message": "Fixed a bug that caused obscure error messages in case of special library errors "
-      }
-    ]
-  },
-  {
-    "Version": "1.20.5.45",
-    "LegacyReleaseDate": "2023-12-20 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "TableCDC",
-        "Message": "Improved error handling in log table creation step"
-      }
-    ]
-  },
-  {
-    "Version": "1.20.5.44",
-    "LegacyReleaseDate": "2023-12-19 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "TableCDC",
-        "Message": "Added support for SAP Max DB databases"
       }
     ]
   },
@@ -1243,28 +881,6 @@
     ]
   },
   {
-    "Version": "1.20.5.40",
-    "LegacyReleaseDate": "2023-12-13 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "TableCDC",
-        "Message": "Fixed a bug that caused Delta extractions to fail if source table was client-independent"
-      }
-    ]
-  },
-  {
-    "Version": "1.20.5.39",
-    "LegacyReleaseDate": "2023-12-08 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "TableCDC",
-        "Message": "Create table statement will now be logged in CDC initialization step."
-      }
-    ]
-  },
-  {
     "Version": "1.20.5.36",
     "LegacyReleaseDate": "2023-12-07 00:00:00Z",
     "Changes": [
@@ -1276,20 +892,6 @@
     ]
   },
   {
-    "Version": "1.20.5.31",
-    "LegacyReleaseDate": "2023-12-06 00:00:00Z",
-    "IsBreaking": true,
-    "IsCritical": true,
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "TableCDC",
-        "Message": "Released /THEO/CDC package. **Breaking changes** - Please see release notes for details.",
-        "ReleaseNote": "### Breaking changes\n\n- Extractions that were created with a previous version will only work if /THEO/CDC package is installed. Deleting CDC resources will however still work even without our package.\n\n### Changes\n\n- Added support for the following databases\n - IBM DB2\n - IBM for i (DB4)\n - IBM for z/os (DB6)\n - ORACLE\n\n- The package resides in the /THEO/ namespace.\n- Improved error messages."
-      }
-    ]
-  },
-  {
     "Version": "1.20.5.30",
     "LegacyReleaseDate": "2023-12-04 00:00:00Z",
     "Changes": [
@@ -1297,17 +899,6 @@
         "Product": "Theobald.Extractors",
         "Component": "General",
         "Message": "Added the result columns custom order implementation"
-      }
-    ]
-  },
-  {
-    "Version": "1.20.5.29",
-    "LegacyReleaseDate": "2023-11-24 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "TableCDC",
-        "Message": "Fixed a bug where Z_THEO_READ_TABLE could not be used as fallback to /THEO/READ_TABLE"
       }
     ]
   },
@@ -1423,28 +1014,6 @@
     ]
   },
   {
-    "Version": "1.20.5.15",
-    "LegacyReleaseDate": "2023-11-02 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "DeltaQ",
-        "Message": "Slightly refactored the DeltaQ extractor"
-      }
-    ]
-  },
-  {
-    "Version": "1.20.5.13",
-    "LegacyReleaseDate": "2023-10-31 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "TableCDC",
-        "Message": "Added support for SAP systems below version 7.40SP05. Requires /THEO/READ_TABLE to be installed."
-      }
-    ]
-  },
-  {
     "Version": "1.20.5.12",
     "LegacyReleaseDate": "2023-10-26 00:00:00Z",
     "Changes": [
@@ -1463,28 +1032,6 @@
         "Product": "ERPConnect",
         "Component": "NWRFC",
         "Message": "Fixed a parallelization issue caused by limitations in the callback handling when using NWRFC."
-      }
-    ]
-  },
-  {
-    "Version": "1.20.5.10",
-    "LegacyReleaseDate": "2023-10-25 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "TableCDC",
-        "Message": "The maximum allowed value for the log table size limit has been raised to 500.000 entries."
-      }
-    ]
-  },
-  {
-    "Version": "1.20.5.8",
-    "LegacyReleaseDate": "2023-10-19 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "DeltaQ",
-        "Message": "Fixed DeltaQ check window's help link"
       }
     ]
   },
@@ -1637,50 +1184,6 @@
     ]
   },
   {
-    "Version": "1.20.1.13",
-    "LegacyReleaseDate": "2023-08-29 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "TableCDC",
-        "Message": "Added option to configure package size for initial load."
-      }
-    ]
-  },
-  {
-    "Version": "1.20.1.10",
-    "LegacyReleaseDate": "2023-08-22 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "DeltaQ",
-        "Message": "Ported the DeltaQ component from XtractKernel with new UI"
-      }
-    ]
-  },
-  {
-    "Version": "1.20.1.8",
-    "LegacyReleaseDate": "2023-08-21 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "TableCDC",
-        "Message": "The maximum allowed value for the log table size limit has been raised to 200.000 entries."
-      }
-    ]
-  },
-  {
-    "Version": "1.20.1.7",
-    "LegacyReleaseDate": "2023-08-15 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "TableCDC",
-        "Message": "Fixed a bug that caused log table creation to fail when \".INCLUDE\" structures were part of primary keys in source table."
-      }
-    ]
-  },
-  {
     "Version": "1.20.1.5",
     "LegacyReleaseDate": "2023-08-14 00:00:00Z",
     "Changes": [
@@ -1808,17 +1311,6 @@
         "Product": "Theobald.Extractors",
         "Component": "ODP",
         "Message": "TS_SEQUENCE_NUMBER is now a 64 bit integer and supports extractions with more than 2 billion rows. Additionally, it can also be selected for generation in full extractions. "
-      }
-    ]
-  },
-  {
-    "Version": "1.20.0.3",
-    "LegacyReleaseDate": "2023-07-24 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "TableCDC",
-        "Message": "Added support for where conditions"
       }
     ]
   },
@@ -2175,17 +1667,6 @@
     ]
   },
   {
-    "Version": "1.18.2.7",
-    "LegacyReleaseDate": "2023-05-11 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "TableCDC",
-        "Message": "Added option to run initial load as background job"
-      }
-    ]
-  },
-  {
     "Version": "1.18.2.6",
     "LegacyReleaseDate": "2023-05-11 00:00:00Z",
     "Changes": [
@@ -2204,17 +1685,6 @@
         "Product": "Theobald.Extractors",
         "Component": "BW Cube",
         "Message": "Fix for \"Dimension on columns\" setting not working correctly for MDX Query extractions with \"Only Structures\" set to false."
-      }
-    ]
-  },
-  {
-    "Version": "1.18.2.3",
-    "LegacyReleaseDate": "2023-05-09 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "TableCDC",
-        "Message": "Fixed a bug that could cause multiple records with the same key to be included in a CDC extraction result"
       }
     ]
   },
@@ -2479,17 +1949,6 @@
     ]
   },
   {
-    "Version": "1.17.3.7",
-    "LegacyReleaseDate": "2023-03-29 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "TableCDC",
-        "Message": "Fixed a bug where filtering for columns based on name or description was not possible"
-      }
-    ]
-  },
-  {
     "Version": "1.17.3.5",
     "LegacyReleaseDate": "2023-03-27 00:00:00Z",
     "Changes": [
@@ -2508,17 +1967,6 @@
         "Product": "Theobald.Extractors",
         "Component": "BW Cube",
         "Message": "BICS: Row limit for preview"
-      }
-    ]
-  },
-  {
-    "Version": "1.17.3.3",
-    "LegacyReleaseDate": "2023-03-24 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "TableCDC",
-        "Message": "Reduced max value for log table size limit to 100.000 rows."
       }
     ]
   },
@@ -2551,17 +1999,6 @@
         "Product": "Common",
         "Component": "General",
         "Message": "VC++ 2013 setup was replaced by directly used DLLs (msvcp120.dll and msvcr120.dll)"
-      }
-    ]
-  },
-  {
-    "Version": "1.17.2.13",
-    "LegacyReleaseDate": "2023-03-21 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "TableCDC",
-        "Message": "The size limit feature for the log table is now obligatory. Value can range from 1 to 10.000.000 rows."
       }
     ]
   },
@@ -2606,17 +2043,6 @@
         "Product": "Theobald.Extractors",
         "Component": "General",
         "Message": "Replaced the local byte buffer handling for column encryption with the ByteBufferManager from Theobald.Common (introduced on 2.22.0)\n"
-      }
-    ]
-  },
-  {
-    "Version": "1.17.2.5",
-    "LegacyReleaseDate": "2023-03-10 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "TableCDC",
-        "Message": "Table CDC: Log table size can now be limited. Internal improvements."
       }
     ]
   },
@@ -2904,17 +2330,11 @@
   {
     "Version": "1.17.0.10",
     "LegacyReleaseDate": "2023-01-15 00:00:00Z",
-    "IsCritical": true,
     "Changes": [
       {
         "Product": "Common",
         "Component": "General",
         "Message": "Support for writing ULEB128 encoding of 64-bit unsigned integer to byte array"
-      },
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "TableCDC",
-        "Message": "Added Table CDC extractor"
       }
     ]
   },

@@ -1,5 +1,71 @@
 [
   {
+    "Version": "2024.9.2.15",
+    "LegacyReleaseDate": "2024-09-02 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "XtractUniversal",
+        "Component": "General",
+        "Message": "Fixed a bug where xu-config would not use the correct target directory for creating the key file for source protection"
+      }
+    ]
+  },
+  {
+    "Version": "2024.8.30.66",
+    "LegacyReleaseDate": "2024-08-30 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "DeltaQ",
+        "Message": "Evaluate scripts in range selections"
+      }
+    ]
+  },
+  {
+    "Version": "2024.8.30.40",
+    "LegacyReleaseDate": "2024-08-30 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "XtractUniversal",
+        "Component": "Designer",
+        "Message": "The designer now uses settings.designer.json as to persist the settings. This fixes the designer crashing when downgrading to a version before subdirectory support."
+      }
+    ]
+  },
+  {
+    "Version": "2024.8.30.35",
+    "LegacyReleaseDate": "2024-08-30 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "XtractUniversal",
+        "Component": "Destinations",
+        "Message": "Adjusted object naming rules for destinations to be in line with respective\ndestinations' rules for name lengths and not allowed characters."
+      }
+    ]
+  },
+  {
+    "Version": "2024.8.29.67",
+    "LegacyReleaseDate": "2024-08-29 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "XtractUniversal",
+        "Component": "General",
+        "Message": "Greatly reduced the RAM consumption of SQL server bulk inserts."
+      }
+    ]
+  },
+  {
+    "Version": "2024.8.29.16",
+    "LegacyReleaseDate": "2024-08-29 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "XtractUniversal",
+        "Component": "Setup",
+        "Message": "Fixes an issue where upgrading from versions before 6.8.1.0 would cause the web server settings to be reverted to the default values"
+      }
+    ]
+  },
+  {
     "Version": "2024.8.28.13",
     "LegacyReleaseDate": "2024-08-28 00:00:00Z",
     "Changes": [
@@ -1127,7 +1193,6 @@
   {
     "Version": "6.5.0.0",
     "LegacyReleaseDate": "2024-05-06 00:00:00Z",
-    "IsBreaking": true,
     "Changes": [
       {
         "Product": "Theobald.Extractors",

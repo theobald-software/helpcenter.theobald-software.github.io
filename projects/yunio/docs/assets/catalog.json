@@ -1,16 +1,5 @@
 [
   {
-    "Version": "2024.8.26.6",
-    "LegacyReleaseDate": "2024-08-26 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "DeltaQ",
-        "Message": "Fixed a bug which would display duplicated DeltaQ sources on lookup dialog"
-      }
-    ]
-  },
-  {
     "Version": "2024.8.20.39",
     "LegacyReleaseDate": "2024-08-20 00:00:00Z",
     "Changes": [
@@ -18,30 +7,6 @@
         "Product": "YunIO",
         "Component": "General",
         "Message": "Fixes for the behavior of the table join UI. Deletion of tables will now only delete affected joins."
-      }
-    ]
-  },
-  {
-    "Version": "2024.8.20.6",
-    "LegacyReleaseDate": "2024-08-20 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BWCube",
-        "Message": "Cube legacy mode now outputs 0 (zero) for empty measure cells as in the old cube component."
-      }
-    ]
-  },
-  {
-    "Version": "2024.8.19.33",
-    "LegacyReleaseDate": "2024-08-19 00:00:00Z",
-    "IsBreaking": true,
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "TableCDC",
-        "Message": "Log table row limit is now optional. Package size is now also applied on delta loads. View release notes for details.",
-        "ReleaseNote": "- Updated /THEO/CDC_* to version 1.8\n- Updated /THEO/READ_TABLE to version 3.6\n- Both /THEO/CDC_* and /THEO/READ_TABLE must be updated.\n- The \"Extract table on first run\" setting is now deselected by default when creating new extractions."
       }
     ]
   },
@@ -200,16 +165,6 @@
     "Changes": [
       {
         "Product": "Theobald.Extractors",
-        "Component": "ODP",
-        "Message": "Fixed a performance regression causing XML reading when processing ODP packages to be extremely slow."
-      },
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "MDX: Ignore empty members in list parameters"
-      },
-      {
-        "Product": "Theobald.Extractors",
         "Component": "Table",
         "Message": "Fixed a bug where script expressions would not be correctly evaluated in the preview."
       },
@@ -243,17 +198,6 @@
     ]
   },
   {
-    "Version": "1.32.18.12",
-    "LegacyReleaseDate": "2024-07-22 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "DeltaQ",
-        "Message": "Fixed a race condition which caused sporadically an error when multiple DeltaQ extractions were running simultaneously."
-      }
-    ]
-  },
-  {
     "Version": "1.32.18.9",
     "LegacyReleaseDate": "2024-07-15 00:00:00Z",
     "Changes": [
@@ -265,17 +209,6 @@
     ]
   },
   {
-    "Version": "1.32.18.7",
-    "LegacyReleaseDate": "2024-07-12 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "Hierarchy",
-        "Message": "Fixed a bug where Node Description Texts couldn't be found."
-      }
-    ]
-  },
-  {
     "Version": "1.32.18.6",
     "LegacyReleaseDate": "2024-07-12 00:00:00Z",
     "Changes": [
@@ -283,28 +216,6 @@
         "Product": "Theobald.Server",
         "Component": "General",
         "Message": "The runtime now provides the extraction timestamp as DateTime type to the destinations."
-      }
-    ]
-  },
-  {
-    "Version": "1.32.18.5",
-    "LegacyReleaseDate": "2024-07-12 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "TableCDC",
-        "Message": "Fixed a bug where delta loads would fail if there are records evaluating to null during optimization. Bug present in versions released from 2024-06-25."
-      }
-    ]
-  },
-  {
-    "Version": "1.32.18.4",
-    "LegacyReleaseDate": "2024-07-11 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "DeltaQ",
-        "Message": "Fixed a bug which would not consider selections from unselected columns"
       }
     ]
   },
@@ -331,51 +242,6 @@
     ]
   },
   {
-    "Version": "1.32.17.25",
-    "LegacyReleaseDate": "2024-07-03 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "TableCDC",
-        "Message": "Fixed a bug that caused trigger creation to fail on MaxDB databases. Requires update of /THEO/CDC_ECC"
-      }
-    ]
-  },
-  {
-    "Version": "1.32.17.24",
-    "LegacyReleaseDate": "2024-07-03 00:00:00Z",
-    "IsCritical": true,
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "TableCDC",
-        "Message": "Fixed a bug that could cause optimization logic of delta extractions to not include all delta records in the result. Bug introduced in 2.2.0"
-      }
-    ]
-  },
-  {
-    "Version": "1.32.17.17",
-    "LegacyReleaseDate": "2024-06-26 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "TableCDC",
-        "Message": "Fixed a bug where tables could not be selected if they had multiple fields of type CLNT"
-      }
-    ]
-  },
-  {
-    "Version": "1.32.17.16",
-    "LegacyReleaseDate": "2024-06-25 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "ODP",
-        "Message": "Fixed a regression bug where ODP preview would fail for hierarchy DataSources."
-      }
-    ]
-  },
-  {
     "Version": "1.32.17.15",
     "LegacyReleaseDate": "2024-06-24 00:00:00Z",
     "Changes": [
@@ -383,40 +249,6 @@
         "Product": "Theobald.Extractors",
         "Component": "Table",
         "Message": "Fixed transport request for /THEO/READ_TABLE for SAP versions 6.40 and newer."
-      }
-    ]
-  },
-  {
-    "Version": "1.32.17.14",
-    "LegacyReleaseDate": "2024-06-24 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "TableCDC",
-        "Message": "Timestamp is now part of extraction result. Log tables are now created client dependent. Updated THEO/CDC/* to version 1.7. See release notes for details.\n",
-        "ReleaseNote": "## General\n- In order for the changes to apply \"Refresh metadata\" is required or the creation of a new CDC extraction\n\n## /THEO/CDC* (version 1.7)\n- Triggers now insert timestamps (as chars) for every database in a unified format (yyyy-MM-dd HH24:mm:ss.FFF)\n- Triggers now only insert data into the log table if the source table change was caused on the same client that was used when initializing CDC. This does not apply for client independent source tables"
-      }
-    ]
-  },
-  {
-    "Version": "1.32.17.13",
-    "LegacyReleaseDate": "2024-06-23 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "BICS: Try to fix metadata retrieval for newer BW releases"
-      }
-    ]
-  },
-  {
-    "Version": "1.32.17.12",
-    "LegacyReleaseDate": "2024-06-21 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "Fixed a bug that caused filters to be removed when refreshing metadata"
       }
     ]
   },
@@ -512,17 +344,6 @@
         "Component": "General",
         "Message": "Moved to .NET 8. Fixed a shutdown bug in the windows service.",
         "ReleaseNote": "## yunIO 1.32.17\n\n- Moved to .NET8.0\n  - New runtime with recent security patch is included\n- Fixed an issue in the Windows service, where shutting down the service would not succeed if a child process became unresponsive\n"
-      }
-    ]
-  },
-  {
-    "Version": "1.32.16.3",
-    "LegacyReleaseDate": "2024-06-17 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "BICS: Improve error message for metadata retrieval"
       }
     ]
   },
@@ -623,17 +444,6 @@
     ]
   },
   {
-    "Version": "1.32.13.3",
-    "LegacyReleaseDate": "2024-06-03 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "MDX: Fix structures (broken since 2.0)"
-      }
-    ]
-  },
-  {
     "Version": "1.32.13.2",
     "LegacyReleaseDate": "2024-06-03 00:00:00Z",
     "Changes": [
@@ -656,18 +466,6 @@
     ]
   },
   {
-    "Version": "1.32.12.1",
-    "LegacyReleaseDate": "2024-05-29 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "TableCDC",
-        "Message": "Result sorting now takes place on SAP side. Removed support for Z_THEO_READ_TABLE. Check release notes for details",
-        "ReleaseNote": "- The extractor now makes use of the **ORDER BY** feature introduced in /THEO/READ_TABLE version **3.5**\n- Increased extraction performance over extractor side sorting which could take a long time\n- Existing extraction definitions using Z_THEO_READ_TABLE **do not need to be adjusted**. The extractor will automatically choose /THEO/READ_TABLE for extracting data\n- Improved logging for result optimization"
-      }
-    ]
-  },
-  {
     "Version": "1.32.12.0",
     "LegacyReleaseDate": "2024-05-27 03:55:47Z",
     "Changes": [
@@ -686,17 +484,6 @@
         "Product": "YunIO",
         "Component": "Designer",
         "Message": "Run dialog: Improve error message for HTTP status 500"
-      }
-    ]
-  },
-  {
-    "Version": "1.32.10.23",
-    "LegacyReleaseDate": "2024-05-24 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "Fixed a bug where clicking on \"Load live preview\" multiple times would lead to errors"
       }
     ]
   },
@@ -750,50 +537,6 @@
     ]
   },
   {
-    "Version": "1.32.10.15",
-    "LegacyReleaseDate": "2024-05-17 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "MDX: Fix column order of legacy extractions with key figures on rows"
-      }
-    ]
-  },
-  {
-    "Version": "1.32.10.14",
-    "LegacyReleaseDate": "2024-05-17 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "MDX: Support legacy extractions with key figures on rows"
-      }
-    ]
-  },
-  {
-    "Version": "1.32.10.13",
-    "LegacyReleaseDate": "2024-05-17 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "DeltaQ",
-        "Message": "Fixed a bug which would display only data sources using the language set in the connection (introduced in 1.47.0)"
-      }
-    ]
-  },
-  {
-    "Version": "1.32.10.12",
-    "LegacyReleaseDate": "2024-05-17 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "TableCDC",
-        "Message": "Released Monitoring Feature for Log Tables and Triggers. Update of /THEO/CDC* package required."
-      }
-    ]
-  },
-  {
     "Version": "1.32.10.11",
     "LegacyReleaseDate": "2024-05-15 00:00:00Z",
     "Changes": [
@@ -823,17 +566,6 @@
         "Product": "Theobald.Extractors",
         "Component": "Table",
         "Message": "Improved table lookup window to not allow certain characters that would otherwise lead to errors on lookup."
-      }
-    ]
-  },
-  {
-    "Version": "1.32.10.6",
-    "LegacyReleaseDate": "2024-05-13 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "ODP",
-        "Message": "Fixed metadata and data retrieval for DF16_DEC and DF34_DEC"
       }
     ]
   },
@@ -871,31 +603,8 @@
     ]
   },
   {
-    "Version": "1.32.9.2",
-    "LegacyReleaseDate": "2024-05-06 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "Fix dimension on columns deserialization"
-      }
-    ]
-  },
-  {
-    "Version": "1.32.9.1",
-    "LegacyReleaseDate": "2024-05-06 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "Add backward-compatibility for dimension on columns feature"
-      }
-    ]
-  },
-  {
     "Version": "1.32.9.0",
     "LegacyReleaseDate": "2024-05-06 00:00:00Z",
-    "IsBreaking": true,
     "Changes": [
       {
         "Product": "Theobald.Extractors",
@@ -944,18 +653,6 @@
     ]
   },
   {
-    "Version": "1.32.7.14",
-    "LegacyReleaseDate": "2024-04-25 00:00:00Z",
-    "IsCritical": true,
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "TableCDC",
-        "Message": "Delta extractions now only fetch data up to the maximum log table sequence number at the start of the extraction to avoid cursor concurrency conflicts with simultaneous inserts. Update of /THEO/CDC required."
-      }
-    ]
-  },
-  {
     "Version": "1.32.7.13",
     "LegacyReleaseDate": "2024-04-22 00:00:00Z",
     "Changes": [
@@ -963,17 +660,6 @@
         "Product": "Common",
         "Component": "General",
         "Message": "Unicode control characters are now deleted before serializing log messages"
-      }
-    ]
-  },
-  {
-    "Version": "1.32.7.10",
-    "LegacyReleaseDate": "2024-04-18 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "MDX: Members named \"all\" are no longer removed from slicing"
       }
     ]
   },
@@ -1012,17 +698,6 @@
     ]
   },
   {
-    "Version": "1.32.7.3",
-    "LegacyReleaseDate": "2024-04-10 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "TableCDC",
-        "Message": "Fixed a bug that caused faulty log table metadata when decimal places of a source table primary key type was not 0"
-      }
-    ]
-  },
-  {
     "Version": "1.32.7.0",
     "LegacyReleaseDate": "2024-04-04 13:38:03Z",
     "Changes": [
@@ -1030,65 +705,6 @@
         "Product": "YunIO",
         "Component": "Designer",
         "Message": "Added join functionality for tables"
-      }
-    ]
-  },
-  {
-    "Version": "1.32.6.33",
-    "LegacyReleaseDate": "2024-04-02 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "BICS: Released as GA, no longer beta"
-      }
-    ]
-  },
-  {
-    "Version": "1.32.6.32",
-    "LegacyReleaseDate": "2024-03-27 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "BICS: Truncate NUMC values, if they are too long"
-      }
-    ]
-  },
-  {
-    "Version": "1.32.6.31",
-    "LegacyReleaseDate": "2024-03-27 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "BICS: Fix result metadata of key figures"
-      },
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "BICS: Fix caching of results"
-      }
-    ]
-  },
-  {
-    "Version": "1.32.6.30",
-    "LegacyReleaseDate": "2024-03-26 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "BICS: Better error message for mandatory/state variables"
-      },
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "BICS: preview will always return rows, if any exist"
-      },
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "BICS: disabled filter context menu"
       }
     ]
   },
@@ -1126,17 +742,6 @@
     ]
   },
   {
-    "Version": "1.32.6.25",
-    "LegacyReleaseDate": "2024-03-07 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "TableCDC",
-        "Message": "Fixed a bug that caused the result optimization to not work properly if fields of type \"RAW\" were part of the source table primary key"
-      }
-    ]
-  },
-  {
     "Version": "1.32.6.24",
     "LegacyReleaseDate": "2024-03-05 00:00:00Z",
     "Changes": [
@@ -1170,52 +775,14 @@
     ]
   },
   {
-    "Version": "1.32.6.17",
-    "LegacyReleaseDate": "2024-02-27 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "ODP",
-        "Message": "Added direct read mode with support for aggregating fields"
-      }
-    ]
-  },
-  {
     "Version": "1.32.6.16",
     "LegacyReleaseDate": "2024-02-27 00:00:00Z",
     "Changes": [
       {
         "Product": "Theobald.Extractors",
-        "Component": "ODP",
-        "Message": "Fixed an issue that caused errors during extraction when the data contained invalid time or date values."
-      },
-      {
-        "Product": "Theobald.Extractors",
         "Component": "Table",
         "Message": "Updated /THEO/READ_TABLE to version 3.4.",
         "ReleaseNote": "**Update /THEO/READ_TABLE to version 3.4**\n- Fixed a bug where extracting decfloat16 and decfloat34 types did not work.\n- Fixed a bug where extracting empty NUMC values would cause extraction to fail."
-      }
-    ]
-  },
-  {
-    "Version": "1.32.6.15",
-    "LegacyReleaseDate": "2024-02-23 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "TableCDC",
-        "Message": "There are now 2 different transports for S4 systems. One for S4 systems up to 7.55 and one for 7.55 and newer"
-      }
-    ]
-  },
-  {
-    "Version": "1.32.6.12",
-    "LegacyReleaseDate": "2024-02-21 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "TableCDC",
-        "Message": "Fixed a bug that caused initial load rollback to not completely remove log table metadata from the SAP system"
       }
     ]
   },
@@ -1242,17 +809,6 @@
     ]
   },
   {
-    "Version": "1.32.6.4",
-    "LegacyReleaseDate": "2024-02-15 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "TableCDC",
-        "Message": "Results are now ordered by sequence number to prevent \"Invalid result order\" error during delta extractions."
-      }
-    ]
-  },
-  {
     "Version": "1.32.6.2",
     "LegacyReleaseDate": "2024-02-13 00:00:00Z",
     "Changes": [
@@ -1260,17 +816,6 @@
         "Product": "Theobald.Server",
         "Component": "General",
         "Message": "Fixed legacy update type runtime parameter for DeltaQ"
-      }
-    ]
-  },
-  {
-    "Version": "1.32.6.1",
-    "LegacyReleaseDate": "2024-02-13 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "DeltaQ",
-        "Message": "Enabled column selection for hierarchy extractors, so that selectors can be used.\nAdded proper message to inform that DeltaQ does not support variable length strings."
       }
     ]
   },
@@ -1316,17 +861,6 @@
         "Product": "YunIO",
         "Component": "Designer",
         "Message": "Added named payload for the run dialog and other improvements."
-      }
-    ]
-  },
-  {
-    "Version": "1.32.3.3",
-    "LegacyReleaseDate": "2024-02-09 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "TableCDC",
-        "Message": "Fixed a bug that prevented log table create statement from being generated on S4 systems with SAP_BASIS version 7.53 or below. Requires update of /THEO/CDC_S4."
       }
     ]
   },
@@ -1387,17 +921,6 @@
     ]
   },
   {
-    "Version": "1.32.0.8",
-    "LegacyReleaseDate": "2024-02-05 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "TableCDC",
-        "Message": "Added option to select function module that is used during the extraction runs"
-      }
-    ]
-  },
-  {
     "Version": "1.32.0.7",
     "LegacyReleaseDate": "2024-02-05 00:00:00Z",
     "Changes": [
@@ -1413,18 +936,8 @@
       },
       {
         "Product": "Theobald.Extractors",
-        "Component": "DeltaQ",
-        "Message": "Fixed a bug, introduced in 1.47.0, that would not create the LeafFrom and LeaftTo columns for hierarchy extractors"
-      },
-      {
-        "Product": "Theobald.Extractors",
         "Component": "BAPI",
         "Message": "Fixed a bug that caused the BAPI result row count to be 1 when it was actually 0"
-      },
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "TableCDC",
-        "Message": "Add deletion transport request for Z_THEO_DELETE_LOG_ENTRIES function module."
       },
       {
         "Product": "Theobald.Server",
@@ -1500,17 +1013,6 @@
     ]
   },
   {
-    "Version": "1.31.0.7",
-    "LegacyReleaseDate": "2024-01-23 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "TableCDC",
-        "Message": "RFC Service objects are now excluded from /THEO/CDC_ECC to avoid issues during import of the transport request."
-      }
-    ]
-  },
-  {
     "Version": "1.31.0.5",
     "LegacyReleaseDate": "2024-01-22 00:00:00Z",
     "Changes": [
@@ -1518,28 +1020,6 @@
         "Product": "Theobald.Extractors",
         "Component": "Table",
         "Message": "Fixed a bug where subqueries in WHERE clause would cause an error."
-      }
-    ]
-  },
-  {
-    "Version": "1.31.0.3",
-    "LegacyReleaseDate": "2024-01-19 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "TableCDC",
-        "Message": "Fix for trigger syntax error in IBM DB for z/os (DB6). Requires update of /THEO/CDC_ECC"
-      }
-    ]
-  },
-  {
-    "Version": "1.31.0.1",
-    "LegacyReleaseDate": "2024-01-18 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "TableCDC",
-        "Message": "Fixed a bug where trigger creation failed if \".INCLUDE\" structures were part of the primary key of the source table. Requires update of /THEO/CDC_* package."
       }
     ]
   },
@@ -1562,17 +1042,6 @@
         "Product": "YunIO",
         "Component": "Runtime",
         "Message": "transaction: Fixed an issue that caused errors when starting services with table inputs from the run dialog."
-      }
-    ]
-  },
-  {
-    "Version": "1.30.1.12",
-    "LegacyReleaseDate": "2024-01-16 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "Hierarchy",
-        "Message": "Removed debug logging statement that wrote the first 2 items of the extracted data into the log"
       }
     ]
   },
@@ -1601,18 +1070,6 @@
     ]
   },
   {
-    "Version": "1.29.3.1",
-    "LegacyReleaseDate": "2024-01-11 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "TableCDC",
-        "Message": "Fixed a bug where log table creation failed due to missing namespace license. Requires update of /THEO/CDC_* package. Check release notes for details",
-        "ReleaseNote": "- Log table names are now prefixed with 'ZTSCDC_' instead of '/THEO/CDC_'. The latter one could not be inserted into SAP table TADIR due to missing license for /THEO/ namespace."
-      }
-    ]
-  },
-  {
     "Version": "1.29.3.0",
     "LegacyReleaseDate": "2024-01-11 14:26:34Z",
     "Changes": [
@@ -1635,29 +1092,6 @@
     ]
   },
   {
-    "Version": "1.29.2.5",
-    "LegacyReleaseDate": "2024-01-09 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "TableCDC",
-        "Message": "Log table key field number and maintenance level is now set explicitly. Fixed a bug where fallback logic would not work if system language is set to 'D'."
-      }
-    ]
-  },
-  {
-    "Version": "1.29.2.4",
-    "LegacyReleaseDate": "2024-01-08 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "DeltaQ",
-        "Message": "Fixed a bug in the activation process for DeltaQ hierarchy extractions",
-        "ReleaseNote": "**Theobald.Extractors 1.52.8**\n\nThis bug would prevent the update of segment names for intervals, nodes and descriptions during the extraction activation.\n\nIt was introduced in the version 1.47.0"
-      }
-    ]
-  },
-  {
     "Version": "1.29.2.3",
     "LegacyReleaseDate": "2024-01-03 00:00:00Z",
     "Changes": [
@@ -1666,18 +1100,6 @@
         "Component": "Table",
         "Message": "Fixed a bug where table settings UI would cause an error when saving. Updated /THEO/READ_TABLE to version 3.2 (see notes).",
         "ReleaseNote": "# Updated /THEO/READ_TABLE to version 3.2\n- Fixed a bug where extracting floating point data would cause an error."
-      }
-    ]
-  },
-  {
-    "Version": "1.29.2.2",
-    "LegacyReleaseDate": "2023-12-29 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "DeltaQ",
-        "Message": "Fixed bugs in the DeltaQ extractor - Details in release notes",
-        "ReleaseNote": "**Theobald Extractors 1.52.6**\n\n- fixed a bug which would finish the extraction erroneously as success, when a timeout failure was expected\n- fixed check window fatal error, which would crash the designer on rfc server check failure\n- fixed default timeout reading"
       }
     ]
   },
@@ -1726,28 +1148,6 @@
     ]
   },
   {
-    "Version": "1.28.0.20",
-    "LegacyReleaseDate": "2023-12-20 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "TableCDC",
-        "Message": "Improved error handling in log table creation step"
-      }
-    ]
-  },
-  {
-    "Version": "1.28.0.19",
-    "LegacyReleaseDate": "2023-12-19 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "TableCDC",
-        "Message": "Added support for SAP Max DB databases"
-      }
-    ]
-  },
-  {
     "Version": "1.28.0.18",
     "LegacyReleaseDate": "2023-12-18 00:00:00Z",
     "Changes": [
@@ -1781,28 +1181,6 @@
     ]
   },
   {
-    "Version": "1.28.0.15",
-    "LegacyReleaseDate": "2023-12-13 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "TableCDC",
-        "Message": "Fixed a bug that caused Delta extractions to fail if source table was client-independent"
-      }
-    ]
-  },
-  {
-    "Version": "1.28.0.13",
-    "LegacyReleaseDate": "2023-12-08 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "TableCDC",
-        "Message": "Create table statement will now be logged in CDC initialization step."
-      }
-    ]
-  },
-  {
     "Version": "1.28.0.10",
     "LegacyReleaseDate": "2023-12-07 00:00:00Z",
     "Changes": [
@@ -1810,20 +1188,6 @@
         "Product": "ERPConnect",
         "Component": "NWRFC",
         "Message": "Changed the default R3Connection Protocol to NWRFC as announced in 7.6.0. Added support for RFC over WebSocket."
-      }
-    ]
-  },
-  {
-    "Version": "1.28.0.1",
-    "LegacyReleaseDate": "2023-12-06 00:00:00Z",
-    "IsBreaking": true,
-    "IsCritical": true,
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "TableCDC",
-        "Message": "Released /THEO/CDC package. **Breaking changes** - Please see release notes for details.",
-        "ReleaseNote": "### Breaking changes\n\n- Extractions that were created with a previous version will only work if /THEO/CDC package is installed. Deleting CDC resources will however still work even without our package.\n\n### Changes\n\n- Added support for the following databases\n - IBM DB2\n - IBM for i (DB4)\n - IBM for z/os (DB6)\n - ORACLE\n\n- The package resides in the /THEO/ namespace.\n- Improved error messages."
       }
     ]
   },
@@ -1866,17 +1230,6 @@
     ]
   },
   {
-    "Version": "1.27.1.10",
-    "LegacyReleaseDate": "2023-11-24 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "TableCDC",
-        "Message": "Fixed a bug where Z_THEO_READ_TABLE could not be used as fallback to /THEO/READ_TABLE"
-      }
-    ]
-  },
-  {
     "Version": "1.27.1.9",
     "LegacyReleaseDate": "2023-11-24 00:00:00Z",
     "Changes": [
@@ -1900,17 +1253,6 @@
     ]
   },
   {
-    "Version": "1.27.1.6",
-    "LegacyReleaseDate": "2023-11-23 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "Hierarchy",
-        "Message": "Added /THEO/READ_TABLE as most preferred internal table extraction function module"
-      }
-    ]
-  },
-  {
     "Version": "1.27.1.5",
     "LegacyReleaseDate": "2023-11-23 00:00:00Z",
     "Changes": [
@@ -1919,17 +1261,6 @@
         "Component": "Table",
         "Message": "Updated /THEO/READ_TABLE to version 3.1",
         "ReleaseNote": "**Update /THEO/READ_TABLE to version 3.1**\n- Fixed a bug where STRING and SSTRING columns would not be properly extracted when using NW library"
-      }
-    ]
-  },
-  {
-    "Version": "1.27.1.4",
-    "LegacyReleaseDate": "2023-11-22 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "Hierarchy",
-        "Message": "Fixed a bug where no description texts were retrieved. Extractor now uses a fallback logic where the longest available and non-empty text is retrieved."
       }
     ]
   },
@@ -2060,17 +1391,6 @@
     ]
   },
   {
-    "Version": "1.26.0.1",
-    "LegacyReleaseDate": "2023-11-09 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "Improved handling of list runtime parameters in MDX filter selections"
-      }
-    ]
-  },
-  {
     "Version": "1.26.0.0",
     "LegacyReleaseDate": "2023-11-09 02:53:43Z",
     "Changes": [
@@ -2142,28 +1462,6 @@
     ]
   },
   {
-    "Version": "1.25.3.2",
-    "LegacyReleaseDate": "2023-11-02 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "DeltaQ",
-        "Message": "Slightly refactored the DeltaQ extractor"
-      }
-    ]
-  },
-  {
-    "Version": "1.25.3.1",
-    "LegacyReleaseDate": "2023-10-31 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "TableCDC",
-        "Message": "Added support for SAP systems below version 7.40SP05. Requires /THEO/READ_TABLE to be installed."
-      }
-    ]
-  },
-  {
     "Version": "1.25.3.0",
     "LegacyReleaseDate": "2023-10-27 13:11:40Z",
     "Changes": [
@@ -2214,17 +1512,6 @@
     ]
   },
   {
-    "Version": "1.25.1.5",
-    "LegacyReleaseDate": "2023-10-25 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "TableCDC",
-        "Message": "The maximum allowed value for the log table size limit has been raised to 500.000 entries."
-      }
-    ]
-  },
-  {
     "Version": "1.25.1.4",
     "LegacyReleaseDate": "2023-10-24 00:00:00Z",
     "Changes": [
@@ -2232,17 +1519,6 @@
         "Product": "Theobald.Server",
         "Component": "General",
         "Message": "Fixed a bug that caused custom runtime parameter values to not be passed to the Query extractor."
-      }
-    ]
-  },
-  {
-    "Version": "1.25.1.2",
-    "LegacyReleaseDate": "2023-10-19 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "DeltaQ",
-        "Message": "Fixed DeltaQ check window's help link"
       }
     ]
   },
@@ -2351,17 +1627,6 @@
     ]
   },
   {
-    "Version": "1.23.22.3",
-    "LegacyReleaseDate": "2023-10-05 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "ODP",
-        "Message": "Fixed a bug that caused the preview button to be disabled after initial lookup regardless of whether previewing was supported by the provider"
-      }
-    ]
-  },
-  {
     "Version": "1.23.22.1",
     "LegacyReleaseDate": "2023-10-04 00:00:00Z",
     "Changes": [
@@ -2437,11 +1702,6 @@
     "Version": "1.23.20.1",
     "LegacyReleaseDate": "2023-09-26 00:00:00Z",
     "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "ODP",
-        "Message": "Fixed an issue that caused NotSupportExceptions for Hierarchy extractions"
-      },
       {
         "Product": "Theobald.Server",
         "Component": "General",
@@ -2712,11 +1972,6 @@
         "Product": "YunIO",
         "Component": "Management",
         "Message": "Added ABAP transport request for report."
-      },
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "Query",
-        "Message": "Added support for list parameters"
       }
     ]
   },
@@ -2739,11 +1994,6 @@
         "Product": "YunIO",
         "Component": "Designer",
         "Message": "Designer run dialog minor refactoring."
-      },
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "TableCDC",
-        "Message": "Added option to configure package size for initial load."
       }
     ]
   },
@@ -2770,22 +2020,6 @@
     ]
   },
   {
-    "Version": "1.22.3.2",
-    "LegacyReleaseDate": "2023-08-22 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "DeltaQ",
-        "Message": "Ported the DeltaQ component from XtractKernel with new UI"
-      },
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "TableCDC",
-        "Message": "The maximum allowed value for the log table size limit has been raised to 200.000 entries."
-      }
-    ]
-  },
-  {
     "Version": "1.22.3.0",
     "LegacyReleaseDate": "2023-08-17 09:36:51Z",
     "Changes": [
@@ -2793,17 +2027,6 @@
         "Product": "YunIO",
         "Component": "Designer",
         "Message": "Initial implementations for upcoming SNC support."
-      }
-    ]
-  },
-  {
-    "Version": "1.22.2.4",
-    "LegacyReleaseDate": "2023-08-15 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "TableCDC",
-        "Message": "Fixed a bug that caused log table creation to fail when \".INCLUDE\" structures were part of primary keys in source table."
       }
     ]
   },
@@ -2907,11 +2130,6 @@
         "Product": "Theobald.Extractors",
         "Component": "General",
         "Message": "Added clear option for grouped filter boxes."
-      },
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "Hierarchy",
-        "Message": "Improved behaviour around DateTo property of Hierarchy extractor. Empty values are now considered invalid instead of falling back to SAP max date."
       }
     ]
   },
@@ -2928,11 +2146,6 @@
         "Product": "Theobald.Extractors",
         "Component": "BAPI",
         "Message": "Function for BapiExtractor which communicates when data was received from the SAP system."
-      },
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "ODP",
-        "Message": "Usage of all available contexts is now allowed. This enables SLT support."
       },
       {
         "Product": "Theobald.Server",
@@ -2980,11 +2193,6 @@
     "LegacyReleaseDate": "2023-07-28 00:00:00Z",
     "Changes": [
       {
-        "Product": "Theobald.Extractors",
-        "Component": "Query",
-        "Message": "Added support for runtime parameters"
-      },
-      {
         "Product": "Theobald.Server",
         "Component": "General",
         "Message": "Transaction: Fixed a bug that caused the extraction to fail when the result contained non-ascii data"
@@ -2999,17 +2207,6 @@
         "Product": "YunIO",
         "Component": "Designer",
         "Message": "Consolidated duplicated code for deleting services/sources functionality (part of the big refactoring task)"
-      }
-    ]
-  },
-  {
-    "Version": "1.21.12.1",
-    "LegacyReleaseDate": "2023-07-27 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "ODP",
-        "Message": "TS_SEQUENCE_NUMBER is now a 64 bit integer and supports extractions with more than 2 billion rows. Additionally, it can also be selected for generation in full extractions. "
       }
     ]
   },
@@ -3047,17 +2244,6 @@
     ]
   },
   {
-    "Version": "1.21.10.1",
-    "LegacyReleaseDate": "2023-07-24 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "TableCDC",
-        "Message": "Added support for where conditions"
-      }
-    ]
-  },
-  {
     "Version": "1.21.10.0",
     "LegacyReleaseDate": "2023-07-21 10:46:58Z",
     "Changes": [
@@ -3065,11 +2251,6 @@
         "Product": "YunIO",
         "Component": "Gateway",
         "Message": "Improved Azure logic for long running requests"
-      },
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "Fixed a bug that caused unexpected measure precision in MDX query extractions."
       }
     ]
   },
@@ -3081,11 +2262,6 @@
         "Product": "YunIO",
         "Component": "Designer",
         "Message": "Search and sort for columns in table services"
-      },
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "Hierarchy",
-        "Message": "Improved error handling in refresh metadata; added validation to DateTo property; made DateTo property setter public so that it is available for runtime parameters"
       }
     ]
   },
@@ -3097,28 +2273,6 @@
         "Product": "YunIO",
         "Component": "Runtime",
         "Message": "Transaction: Improved \"skipPopups\" behavior to only skip unexpected popups "
-      }
-    ]
-  },
-  {
-    "Version": "1.21.7.2",
-    "LegacyReleaseDate": "2023-07-14 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "Hierarchy",
-        "Message": "Enabled 'dateTo' property of Hierarchy catalog entry to be set by runtime parameter. Improved value validation and error handling."
-      }
-    ]
-  },
-  {
-    "Version": "1.21.7.1",
-    "LegacyReleaseDate": "2023-07-14 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "BICS: Fixed direct extraction of SNUMC InfoObjects"
       }
     ]
   },
@@ -3141,11 +2295,6 @@
         "Product": "ERPConnect",
         "Component": "General",
         "Message": "Replaced AbapSignedNumericCharacter.ToLong() with AbapSignedNumericCharacter.ToDecimal()"
-      },
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "BICS: Fixes for SNUMC characteristics"
       }
     ]
   },
@@ -3153,16 +2302,6 @@
     "Version": "1.21.6.4",
     "LegacyReleaseDate": "2023-07-11 00:00:00Z",
     "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "Hierarchy",
-        "Message": "Fixed a bug where description texts were not extracted when the InfoObject name was shorter than expected."
-      },
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "BICS: Improved safeguards against truncated decimal key figure values"
-      },
       {
         "Product": "Theobald.Server",
         "Component": "General",
@@ -3200,22 +2339,6 @@
         "Product": "YunIO",
         "Component": "Runtime",
         "Message": "Fixed a bug where a service with an empty result set would run into a timeout."
-      }
-    ]
-  },
-  {
-    "Version": "1.21.4.3",
-    "LegacyReleaseDate": "2023-07-07 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "BICS: Added safeguards against truncated decimal key figure values"
-      },
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "BICS: Added support for time, date and null key figure values"
       }
     ]
   },
@@ -3311,16 +2434,6 @@
         "Message": "Service based access control."
       },
       {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "BICS: Fixed integer, decimal and partial float key figure values"
-      },
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "MDX: Fixed legacy name conflict resolution"
-      },
-      {
         "Product": "Theobald.Server",
         "Component": "General",
         "Message": "Fixed a bug where the authorization procedure for AD-users would not use the correct identifier."
@@ -3401,17 +2514,6 @@
     ]
   },
   {
-    "Version": "1.19.0.5",
-    "LegacyReleaseDate": "2023-06-04 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "BICS: Fixed data type of integer characteristics"
-      }
-    ]
-  },
-  {
     "Version": "1.19.0.4",
     "LegacyReleaseDate": "2023-06-04 00:00:00Z",
     "Changes": [
@@ -3419,17 +2521,6 @@
         "Product": "ERPConnect",
         "Component": "General",
         "Message": "Added AbapSignedNumericCharacter"
-      }
-    ]
-  },
-  {
-    "Version": "1.19.0.3",
-    "LegacyReleaseDate": "2023-06-01 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "BICS: Fixed data type of timestamp characteristics"
       }
     ]
   },
@@ -3521,17 +2612,6 @@
     ]
   },
   {
-    "Version": "1.16.3.1",
-    "LegacyReleaseDate": "2023-05-26 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "MDX: fixed a bug that caused errors when deselecting all measures"
-      }
-    ]
-  },
-  {
     "Version": "1.16.3.0",
     "LegacyReleaseDate": "2023-05-23 16:38:26Z",
     "Changes": [
@@ -3555,17 +2635,6 @@
     ]
   },
   {
-    "Version": "1.16.2.2",
-    "LegacyReleaseDate": "2023-05-19 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "BICS: Added safeguards against truncated CHAR / NUMC characteristic values"
-      }
-    ]
-  },
-  {
     "Version": "1.16.2.0",
     "LegacyReleaseDate": "2023-05-17 16:07:59Z",
     "Changes": [
@@ -3577,39 +2646,6 @@
     ]
   },
   {
-    "Version": "1.16.1.4",
-    "LegacyReleaseDate": "2023-05-16 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "BICS: Filter is applied for characteristics that are not selected for output"
-      }
-    ]
-  },
-  {
-    "Version": "1.16.1.2",
-    "LegacyReleaseDate": "2023-05-16 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "BICS: Fix for result copying"
-      }
-    ]
-  },
-  {
-    "Version": "1.16.1.1",
-    "LegacyReleaseDate": "2023-05-14 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "BICS: new implementation"
-      }
-    ]
-  },
-  {
     "Version": "1.16.1.0",
     "LegacyReleaseDate": "2023-05-12 01:43:24Z",
     "Changes": [
@@ -3617,50 +2653,6 @@
         "Product": "YunIO",
         "Component": "Gateway",
         "Message": "Hotfix Azure Relay"
-      }
-    ]
-  },
-  {
-    "Version": "1.16.0.5",
-    "LegacyReleaseDate": "2023-05-11 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "TableCDC",
-        "Message": "Added option to run initial load as background job"
-      }
-    ]
-  },
-  {
-    "Version": "1.16.0.4",
-    "LegacyReleaseDate": "2023-05-11 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "ODP",
-        "Message": "Workaround for SAP returning dates in inconsistent formats "
-      }
-    ]
-  },
-  {
-    "Version": "1.16.0.2",
-    "LegacyReleaseDate": "2023-05-09 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "Fix for \"Dimension on columns\" setting not working correctly for MDX Query extractions with \"Only Structures\" set to false."
-      }
-    ]
-  },
-  {
-    "Version": "1.16.0.1",
-    "LegacyReleaseDate": "2023-05-09 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "TableCDC",
-        "Message": "Fixed a bug that could cause multiple records with the same key to be included in a CDC extraction result"
       }
     ]
   },
@@ -3723,16 +2715,6 @@
         "Product": "Theobald.Extractors",
         "Component": "BAPI",
         "Message": "Fixed a bug that caused an IndexOutOfRangeException when incoming tables were disconnected previously"
-      },
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "BICS: Fixes for filter preview"
-      },
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "BICS: Improve session initialization"
       }
     ]
   },
@@ -3744,39 +2726,6 @@
         "Product": "YunIO",
         "Component": "Designer",
         "Message": "Transaction: Fixed a bug where the menu and toolbar would disappear after popup dialogs"
-      }
-    ]
-  },
-  {
-    "Version": "1.15.0.6",
-    "LegacyReleaseDate": "2023-04-28 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "MDX: Fixed result columns of converted extractions (was broken since 1.34)"
-      }
-    ]
-  },
-  {
-    "Version": "1.15.0.4",
-    "LegacyReleaseDate": "2023-04-28 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "MDX: Fixed Hierarchy member filter"
-      }
-    ]
-  },
-  {
-    "Version": "1.15.0.2",
-    "LegacyReleaseDate": "2023-04-28 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "Query",
-        "Message": "Added new query extractor"
       }
     ]
   },
@@ -3885,28 +2834,6 @@
     ]
   },
   {
-    "Version": "1.14.3.15",
-    "LegacyReleaseDate": "2023-04-11 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "BICS: Removed redundant characteristics id serialization"
-      }
-    ]
-  },
-  {
-    "Version": "1.14.3.11",
-    "LegacyReleaseDate": "2023-04-06 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "Dimensions are sorted alphabetically descending by description text in GUI"
-      }
-    ]
-  },
-  {
     "Version": "1.14.3.10",
     "LegacyReleaseDate": "2023-04-06 00:00:00Z",
     "Changes": [
@@ -3925,28 +2852,6 @@
         "Product": "ERPConnect",
         "Component": "RFC Client",
         "Message": "R3Connection.GetSSOTicket() now supports SNC SSO with NWRFC"
-      }
-    ]
-  },
-  {
-    "Version": "1.14.3.6",
-    "LegacyReleaseDate": "2023-04-05 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "Fix in BICS mode for possible NullReferenceException during preview and extraction run"
-      }
-    ]
-  },
-  {
-    "Version": "1.14.3.4",
-    "LegacyReleaseDate": "2023-04-04 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "In BICS mode it is now possible to deselect dimensions that are defined on rows in a query extraction."
       }
     ]
   },
@@ -3998,50 +2903,6 @@
         "Product": "Common",
         "Component": "Licensing",
         "Message": "Internal changes due to changed licensing model for TableCdc component."
-      }
-    ]
-  },
-  {
-    "Version": "1.14.2.9",
-    "LegacyReleaseDate": "2023-03-29 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "TableCDC",
-        "Message": "Fixed a bug where filtering for columns based on name or description was not possible"
-      }
-    ]
-  },
-  {
-    "Version": "1.14.2.7",
-    "LegacyReleaseDate": "2023-03-27 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "BICS mode: Fixed dimension filter members not loading and filters with runtime parameter values not being applied."
-      }
-    ]
-  },
-  {
-    "Version": "1.14.2.6",
-    "LegacyReleaseDate": "2023-03-24 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "BICS: Row limit for preview"
-      }
-    ]
-  },
-  {
-    "Version": "1.14.2.5",
-    "LegacyReleaseDate": "2023-03-24 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "TableCDC",
-        "Message": "Reduced max value for log table size limit to 100.000 rows."
       }
     ]
   },
@@ -4112,17 +2973,6 @@
     ]
   },
   {
-    "Version": "1.14.0.4",
-    "LegacyReleaseDate": "2023-03-21 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "TableCDC",
-        "Message": "The size limit feature for the log table is now obligatory. Value can range from 1 to 10.000.000 rows."
-      }
-    ]
-  },
-  {
     "Version": "1.14.0.2",
     "LegacyReleaseDate": "2023-03-21 00:00:00Z",
     "Changes": [
@@ -4130,17 +2980,6 @@
         "Product": "ERPConnect",
         "Component": "RFCServer",
         "Message": "Classic RFC: Fixed a bug that caused an AccessViolationException when adding rows to a table that is defined in the server function, but not actually part of the call initiated by the SAP application server"
-      }
-    ]
-  },
-  {
-    "Version": "1.14.0.1",
-    "LegacyReleaseDate": "2023-03-20 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "Improved metadata load and refresh in the BICS component."
       }
     ]
   },
@@ -4178,17 +3017,6 @@
     ]
   },
   {
-    "Version": "1.13.1.4",
-    "LegacyReleaseDate": "2023-03-10 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "TableCDC",
-        "Message": "Table CDC: Log table size can now be limited. Internal improvements."
-      }
-    ]
-  },
-  {
     "Version": "1.13.1.3",
     "LegacyReleaseDate": "2023-03-09 00:00:00Z",
     "Changes": [
@@ -4196,28 +3024,6 @@
         "Product": "Theobald.Server",
         "Component": "General",
         "Message": "Transaction: Fixed a bug that caused errors on special compression scenarios"
-      }
-    ]
-  },
-  {
-    "Version": "1.13.1.2",
-    "LegacyReleaseDate": "2023-03-08 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "Fix for column order changes in MDX mode when adding filter selections or selecting and deselecting a dimension."
-      }
-    ]
-  },
-  {
-    "Version": "1.13.1.1",
-    "LegacyReleaseDate": "2023-03-07 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "Added Direct load button in cube look up window."
       }
     ]
   },
@@ -4284,17 +3090,6 @@
     ]
   },
   {
-    "Version": "1.12.1.1",
-    "LegacyReleaseDate": "2023-03-06 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "Measure names in BICS mode now display the technical name instead of the enterprise ID if available."
-      }
-    ]
-  },
-  {
     "Version": "1.12.1.0",
     "LegacyReleaseDate": "2023-03-01 17:37:17Z",
     "Changes": [
@@ -4302,17 +3097,6 @@
         "Product": "YunIO",
         "Component": "Designer",
         "Message": "WhereClause Builder improvement."
-      }
-    ]
-  },
-  {
-    "Version": "1.12.0.1",
-    "LegacyReleaseDate": "2023-02-24 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "Fixed an issue that may cause errors when setting exclude filters or runtime parameters in filters when using MDX mode."
       }
     ]
   },
@@ -4426,17 +3210,6 @@
     ]
   },
   {
-    "Version": "1.11.8.2",
-    "LegacyReleaseDate": "2023-02-13 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "Fixed a bug in MDX metadata refresh that caused invalid selections when a selected measure or dimension does not exist after refresh anymore."
-      }
-    ]
-  },
-  {
     "Version": "1.11.8.0",
     "LegacyReleaseDate": "2023-02-10 17:58:28Z",
     "Changes": [
@@ -4511,18 +3284,6 @@
         "Product": "Common",
         "Component": "General",
         "Message": "Updated NW RFC SDK to 750 PL11"
-      }
-    ]
-  },
-  {
-    "Version": "1.11.7.2",
-    "LegacyReleaseDate": "2023-01-27 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "Various improvements and new features in BICS cube extractor",
-        "ReleaseNote": "# New BICS feature: Member display \nAllows to define how members are displayed in result set: \"Text\", \"Key\" or \"Text and Key\". Selecting \"Text and Key\" will add an additional column for each selected dimension and property containing the key.\n\n# Improved metadata retrieval\nImproved the metadata retrieval especially when using BEx Queries with mandatory variables. \n\n# Internal improvements\nInternal improvements to increase extraction performance and stability. The \"BICS Fast Mode\" is not available anymore because of an improved, more efficient extraction logic."
       }
     ]
   },
@@ -4710,17 +3471,11 @@
   {
     "Version": "1.11.3.17",
     "LegacyReleaseDate": "2023-01-15 00:00:00Z",
-    "IsCritical": true,
     "Changes": [
       {
         "Product": "Common",
         "Component": "General",
         "Message": "Support for writing ULEB128 encoding of 64-bit unsigned integer to byte array"
-      },
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "TableCDC",
-        "Message": "Added Table CDC extractor"
       }
     ]
   },
@@ -4754,17 +3509,6 @@
     ]
   },
   {
-    "Version": "1.11.3.14",
-    "LegacyReleaseDate": "2023-01-11 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "Fix for possible error when saving dimension filters in MDX mode"
-      }
-    ]
-  },
-  {
     "Version": "1.11.3.11",
     "LegacyReleaseDate": "2023-01-09 00:00:00Z",
     "Changes": [
@@ -4772,17 +3516,6 @@
         "Product": "Theobald.Extractors",
         "Component": "General",
         "Message": "Added range checks for SapDateConverter"
-      }
-    ]
-  },
-  {
-    "Version": "1.11.3.8",
-    "LegacyReleaseDate": "2023-01-09 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "Fix for error on InfoCube load in MDX mode"
       }
     ]
   },
@@ -4798,18 +3531,6 @@
     ]
   },
   {
-    "Version": "1.11.3.5",
-    "LegacyReleaseDate": "2023-01-05 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "Hierarchy",
-        "Message": "New Hierarchy Extractor",
-        "ReleaseNote": "* Completely rewritten algorithm + unit and integration tests\n* Now supports Links, Intervals, and all variations of Time Dependent Hierarchies\n* Order and Ids of retrieved elements now identical to values displayed in SAP GUI / rsh1\n* Old json configuration files still working\n* New configuration options: debug logging, show link & row column\n* New columns Link and Row only extracted for new extractions (for backwards compatibility)\n* New Representation: ParentChildWithNodeNames"
-      }
-    ]
-  },
-  {
     "Version": "1.11.3.3",
     "LegacyReleaseDate": "2022-12-23 00:00:00Z",
     "Changes": [
@@ -4821,25 +3542,9 @@
     ]
   },
   {
-    "Version": "1.11.3.2",
-    "LegacyReleaseDate": "2022-12-21 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "Fix for incorrect unit column values in MDX mode."
-      }
-    ]
-  },
-  {
     "Version": "1.11.3.1",
     "LegacyReleaseDate": "2022-12-20 00:00:00Z",
     "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "Added the option to select a custom structure on the columns axis for MDX extractions."
-      },
       {
         "Product": "Theobald.Server",
         "Component": "General",
@@ -5041,28 +3746,6 @@
         "Product": "Theobald.Server",
         "Component": "General",
         "Message": "Changed default RFC library to NWRFC"
-      }
-    ]
-  },
-  {
-    "Version": "1.9.4.18",
-    "LegacyReleaseDate": "2022-11-15 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "Fix for possible conversion errors when formatted values option in MDX mode is enabled"
-      }
-    ]
-  },
-  {
-    "Version": "1.9.4.15",
-    "LegacyReleaseDate": "2022-11-15 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "Cube legacy mode: fix for duplicate dimension column names"
       }
     ]
   },
@@ -5276,17 +3959,6 @@
     ]
   },
   {
-    "Version": "1.8.0.2",
-    "LegacyReleaseDate": "2022-10-21 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "Fixed a bug that caused measures in MDX mode being handled as strings instead of numbers when the formatted values option is enabled."
-      }
-    ]
-  },
-  {
     "Version": "1.8.0.1",
     "LegacyReleaseDate": "2022-10-20 00:00:00Z",
     "Changes": [
@@ -5422,17 +4094,6 @@
     ]
   },
   {
-    "Version": "1.7.6.2",
-    "LegacyReleaseDate": "2022-09-13 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "OHS",
-        "Message": "Fixed assembly version of Theobald.Extractors.Ohs.dll"
-      }
-    ]
-  },
-  {
     "Version": "1.7.6.0",
     "LegacyReleaseDate": "2022-09-12 18:23:01Z",
     "Changes": [
@@ -5484,17 +4145,6 @@
         "Product": "ERPConnect",
         "Component": "RFC Client",
         "Message": "Introduced Execute(RFCFunction) method to IR3Connection interface to improve testability of R3Connection dependent code"
-      }
-    ]
-  },
-  {
-    "Version": "1.7.4.12",
-    "LegacyReleaseDate": "2022-08-29 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "ODP",
-        "Message": "Fixed an issue where trailing zeros of RAW fields where truncated"
       }
     ]
   },
@@ -5571,17 +4221,6 @@
     ]
   },
   {
-    "Version": "1.7.2.8",
-    "LegacyReleaseDate": "2022-07-27 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "Fix for failing mdx extractions with packaging enabled and only dimensions selected."
-      }
-    ]
-  },
-  {
     "Version": "1.7.2.7",
     "LegacyReleaseDate": "2022-07-22 00:00:00Z",
     "Changes": [
@@ -5612,28 +4251,6 @@
         "Product": "Common",
         "Component": "General",
         "Message": "Updated NWRFC SDK to 7.50 Patch-Level 10"
-      }
-    ]
-  },
-  {
-    "Version": "1.7.2.3",
-    "LegacyReleaseDate": "2022-07-18 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "Refactored all MDX RFC Functions to static creation; added support for non-unicode SAP systems."
-      }
-    ]
-  },
-  {
-    "Version": "1.7.2.2",
-    "LegacyReleaseDate": "2022-07-18 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "Cube BICS mode now supports list parameters in filters and variables."
       }
     ]
   },
@@ -5672,18 +4289,6 @@
         "Product": "Theobald.Server",
         "Component": "General",
         "Message": "The RPC Server does now support cleaning the result cache. The RPC client does now support requesting to clean the result cache."
-      }
-    ]
-  },
-  {
-    "Version": "1.7.0.1",
-    "LegacyReleaseDate": "2022-07-07 00:00:00Z",
-    "IsCritical": true,
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "Fix for asynchronous processing problems"
       }
     ]
   },
@@ -5772,17 +4377,6 @@
     ]
   },
   {
-    "Version": "1.6.1.8",
-    "LegacyReleaseDate": "2022-06-13 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "Internal adjustments to BEx variable dialog button behavior in BICS mode."
-      }
-    ]
-  },
-  {
     "Version": "1.6.1.7",
     "LegacyReleaseDate": "2022-06-09 00:00:00Z",
     "Changes": [
@@ -5801,17 +4395,6 @@
         "Product": "Common",
         "Component": "Licensing",
         "Message": "Removed support for legacy DLL licenses"
-      }
-    ]
-  },
-  {
-    "Version": "1.6.1.2",
-    "LegacyReleaseDate": "2022-06-07 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "ODP",
-        "Message": "Fixed a bug that caused extractions to fail with \"Expected new buffer marker\" error"
       }
     ]
   },
@@ -5882,17 +4465,6 @@
     ]
   },
   {
-    "Version": "1.5.8.3",
-    "LegacyReleaseDate": "2022-06-02 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "MDX mode: invalid measure values 'X' are now written to the output as NULL."
-      }
-    ]
-  },
-  {
     "Version": "1.5.8.0",
     "LegacyReleaseDate": "2022-06-01 19:34:27Z",
     "Changes": [
@@ -5926,17 +4498,6 @@
     ]
   },
   {
-    "Version": "1.5.6.1",
-    "LegacyReleaseDate": "2022-06-01 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "Fix for disabled measures/dimensions tree in MDX mode when a query does not have any measures."
-      }
-    ]
-  },
-  {
     "Version": "1.5.6.0",
     "LegacyReleaseDate": "2022-05-31 11:47:39Z",
     "Changes": [
@@ -5954,18 +4515,6 @@
         "Product": "Theobald.Server",
         "Component": "General",
         "Message": "Subdirectory support for persistence and RPC server/client."
-      }
-    ]
-  },
-  {
-    "Version": "1.5.5.23",
-    "LegacyReleaseDate": "2022-05-30 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "Support for Only_Structures behavior in MDX BEx Queries. Various bug fixes and general improvements for the Cube component.",
-        "ReleaseNote": "Added option \"Only Structures\" in Lookup window for MDX Queries. Enables the same behavior as the \"Legacy Metadata Retrieval\" option before XU 5.6. This must be set during lookup and can not be changed later. Customers that have Cube extractions which used the \"Legacy Metadata retrieval\" option before should run the Config Converter again."
       }
     ]
   },
@@ -6015,17 +4564,6 @@
     ]
   },
   {
-    "Version": "1.5.5.11",
-    "LegacyReleaseDate": "2022-05-12 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "Fix for date columns being 0 and in wrong format in date columns of BICS extractions."
-      }
-    ]
-  },
-  {
     "Version": "1.5.5.10",
     "LegacyReleaseDate": "2022-05-12 00:00:00Z",
     "Changes": [
@@ -6044,17 +4582,6 @@
         "Product": "ERPConnect",
         "Component": "RFC Client",
         "Message": "Fixed a bug where tables with built-in types were not created correctly using R3Connection.CreateFunction"
-      }
-    ]
-  },
-  {
-    "Version": "1.5.5.6",
-    "LegacyReleaseDate": "2022-05-09 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "Fix for unavailable runtime parameters in dimension range filters."
       }
     ]
   },
@@ -6103,39 +4630,6 @@
     ]
   },
   {
-    "Version": "1.5.4.4",
-    "LegacyReleaseDate": "2022-04-29 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "Fixed a bug that caused using the wrong function module for loading axis data in MDX extractions."
-      }
-    ]
-  },
-  {
-    "Version": "1.5.4.3",
-    "LegacyReleaseDate": "2022-04-29 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "Cube legacy mode: fix for duplicate property column names"
-      }
-    ]
-  },
-  {
-    "Version": "1.5.4.2",
-    "LegacyReleaseDate": "2022-04-29 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "Fixed a bug that caused extractions with empty result sets to fail."
-      }
-    ]
-  },
-  {
     "Version": "1.5.4.0",
     "LegacyReleaseDate": "2022-04-26 19:39:24Z",
     "Changes": [
@@ -6180,17 +4674,6 @@
     ]
   },
   {
-    "Version": "1.5.2.2",
-    "LegacyReleaseDate": "2022-04-21 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "Fixed a bug where BW Cube Extractions would return broken data when used with Classic RFC library"
-      }
-    ]
-  },
-  {
     "Version": "1.5.2.0",
     "LegacyReleaseDate": "2022-04-21 14:09:41Z",
     "Changes": [
@@ -6199,39 +4682,6 @@
         "Component": "Designer",
         "Message": "Introduced progress dialog",
         "ReleaseNote": "**YunIO 1.5.2**\nIntroduced progress dialog that is being used in this version in the following places:\n\n- Source connection test\n- SAP objects search for table and function modules\n- SAP metadata fetch for table and function modules"
-      }
-    ]
-  },
-  {
-    "Version": "1.5.1.3",
-    "LegacyReleaseDate": "2022-04-11 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "ODP",
-        "Message": "Selections can now be parameterized with lists of strings"
-      }
-    ]
-  },
-  {
-    "Version": "1.5.1.2",
-    "LegacyReleaseDate": "2022-04-07 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "Now allowing extractions without measure selections in MDX mode. Added support for additional options in interval/complex BEx variable selections."
-      }
-    ]
-  },
-  {
-    "Version": "1.5.1.1",
-    "LegacyReleaseDate": "2022-04-04 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "Updates to the BWCube component for increased stability, performance and compatibility."
       }
     ]
   },
@@ -6642,17 +5092,6 @@
     ]
   },
   {
-    "Version": "1.0.2.11",
-    "LegacyReleaseDate": "2022-01-27 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "ODP",
-        "Message": "Metadata can now be refreshed without performing a new lookup"
-      }
-    ]
-  },
-  {
     "Version": "1.0.2.5",
     "LegacyReleaseDate": "2022-01-13 00:00:00Z",
     "Changes": [
@@ -6768,17 +5207,6 @@
     ]
   },
   {
-    "Version": "0.7.0.4",
-    "LegacyReleaseDate": "2021-11-30 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "OHS",
-        "Message": "Fix for \"undefined\" status of process chain"
-      }
-    ]
-  },
-  {
     "Version": "0.7.0.0",
     "LegacyReleaseDate": "2021-11-30 16:47:45Z",
     "Changes": [
@@ -6797,7 +5225,6 @@
   {
     "Version": "0.6.0.0",
     "LegacyReleaseDate": "2021-11-24 19:50:07Z",
-    "IsBreaking": true,
     "Changes": [
       {
         "Product": "YunIO",
@@ -6808,27 +5235,6 @@
         "Product": "Common",
         "Component": "Licensing",
         "Message": "Added method to ILicenseBusinessRule that indicates whether the Rule applies to a certain Property of  a ProductLicense. This is helpful in a UI to highlight the input fields where a user has made bad inputs."
-      },
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BAPI",
-        "Message": "Reworked parameterization"
-      },
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "Report",
-        "Message": "Fixed a bug where report rows without pipes in them were being skipped even if the extraction was ran without dynamic column widths and offsets setting turned on. This change is breaking."
-      },
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "General",
-        "Message": "Table and ODP: Added setting to automatically adjust currency decimals based on reference field",
-        "ReleaseNote": "- design and runtime SAP users need access to table TCURX\n- existing extractions require metadata refresh (Table) or new lookup (ODP)\n- metadata will be adjusted to fixed decimal with 14 decimal places"
-      },
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "Report",
-        "Message": "Fixed a bug where fetching report selection parameters would not use the custom function module defined in extraction settings and would override that setting with the default value of Z_XTRACT_IS_REMOTE_REPORT."
       }
     ]
   },
@@ -6840,19 +5246,6 @@
         "Product": "YunIO",
         "Component": "General",
         "Message": ".NET 5.0 Migration"
-      }
-    ]
-  },
-  {
-    "Version": "0.4.0.7",
-    "LegacyReleaseDate": "2021-09-24 00:00:00Z",
-    "IsBreaking": true,
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BW Cube",
-        "Message": "Updated cube component with new BICS mode (beta).",
-        "ReleaseNote": "The cube component got a major update containing new features and internal improvements.\n\n## MDX mode\n\n- **Improved performance** through some internal optimizations\n- **Runtime Parameter** are supported in variables and dimension filters\n\n## BICS mode (Beta)\n\nWe have added a new cube extraction mode using the BICS interface. This interface is currently in a public beta stadium and should only be used for preview and testing purposes. There can be major breaking changes until the stable release."
       }
     ]
   },
