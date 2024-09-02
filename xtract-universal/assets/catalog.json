@@ -6,7 +6,7 @@
       {
         "Product": "XtractUniversal",
         "Component": "General",
-        "Message": "Fixed a bug where xu-config would not use the correct target directory for creating the key file for source protection"
+        "Message": "Fixed a bug where xu-config would not use the correct target directory for creating the key file for source protection."
       }
     ]
   },
