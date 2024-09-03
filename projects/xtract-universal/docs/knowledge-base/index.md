@@ -69,7 +69,7 @@ The following articles refer to specific [destinations](../documentation/destina
 
 <div class="mdx-columns" markdown>
 
-- [ Authentication via Azure Active Directory for Azure Storage](authentication-via-azure-ad-with-azure-storage.md)
+- [Authentication via Microsoft Entra ID for Azure Storage](authentication-via-entra-id-with-azure-storage.md)
 - [Integration in Azure Data Factory using Commandline](adf-integration-using-command-line.md)
 - [Integration in Azure Data Factory using Webservices](adf-integration-using-webservices.md)
 - [Call Dynamic Extractions with Variables in ADF](call-dynamic-extractions-with-variables-in-adf.md)

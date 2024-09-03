@@ -1,7 +1,6 @@
 ---
 title: Organize Extractions
 description: How to group extractions
-status: new
 ---
 
 This page shows how to organize extractions in groups to improve maintenance.

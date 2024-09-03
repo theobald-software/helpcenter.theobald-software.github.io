@@ -86,9 +86,9 @@ extra_javascript:
   
 # Plugins
 plugins:
-  #- redirects: #redirect URLs when renaming/moving .md files
-  #    redirect_maps:
-  #      'documentation/execute-and-automate/call-via-webservice.md': 'web-api.md'
+  - redirects: #redirect URLs when renaming/moving .md files
+      redirect_maps:
+        'knowledge-base/authentication-via-azure-ad-with-azure-storage.md': 'knowledge-base/authentication-via-entra-id-with-azure-storage.md'
   #      'old/file.md': 'new/file.md'
   #      'some_file.md': 'http://external.url.com/foobar'
   - privacy:

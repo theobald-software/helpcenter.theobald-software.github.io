@@ -18,7 +18,7 @@ The Azure Storage (Blob / Data Lake) destination supports the following Azure st
 - BlobStorage
  
 To use the Azure Storage (Blob / Data Lake) destination you need one of the above Azure storage accounts. 
-For more information, see [Microsoft Azure storage documentation](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-overview).
+For more information, see [Microsoft Documentation: Azure storage account overview](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-overview).
 
 
 {% include "destinations/create-destination.md" %}
@@ -30,37 +30,56 @@ For more information, see [Microsoft Azure storage documentation](https://docs.m
 
 ### Connection Type
 
-The subsection *Connection Type* offers two different methods for authenticating and authorizing access to an Azure Storage account:
+The subsection *Connection Type* offers the following methods for authenticating and authorizing access to Azure storage:
 
-<div class="grid cards" markdown>
+- Access Key
+- Entra ID
+- Shared Access Signature
 
--   __Access Key__
+For information on advantages and disadvantages of the different authentication methods, see [Microsoft Documentation: Choosing the right authentication method](https://learn.microsoft.com/en-us/azure/storage/common/storage-explorer-security)
 
-    ---
-
-    This method of authentication authorizes access to the complete storage account. 
-	For more information, see [Microsoft documentation](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage). 
+#### Access Key
+This method of authentication authorizes access to the complete storage account. 
+For more information, see [Microsoft documentation](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage). 
 	
+#### Entra ID
 
--   __Azure Active Directory__
+This method of authentication uses OAuth 2.0 and [Microsoft Entra ID](https://learn.microsoft.com/en-us/rest/api/storageservices/authorize-with-azure-active-directory) (formerly Microsoft Entra ID) for authentication. 
+With this option access rights can be granted on storage account or container level. 
+For more information, see [Knowledge Base Article: Authentication via Microsoft Entra ID for Azure Storage](../../knowledge-base/authentication-via-entra-id-with-azure-storage.md).
 
-    ---
 
-    Authentication via Azure Active Directory uses OAuth 2.0 and Azure AD for authentication. 
-	With this option access rights can be granted on storage account or container level. 
-	For more information, see [Knowledge Base Article: Authentication via Azure Active Directory for Azure Storage](../../knowledge-base/authentication-via-azure-ad-with-azure-storage.md).
+[Microsoft Documentation: Authorize with Microsoft Entra ID](https://learn.microsoft.com/en-us/rest/api/storageservices/authorize-with-azure-active-directory)
 
-</div>
+#### Shared Access Signature (Account)
+This method of authentication uses Shared Access Signatures (SAS) to access the complete storage account.
+
+#### Shared Access Signature (Container)
+This method of authentication uses Shared Access Signatures (SAS) to access a specific storage container.
+For more information, see [Microsoft Documentation: Create SAS tokens for storage containers](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/create-sas-tokens?view=doc-intel-4.0.0#use-the-azure-portal)
+	
+!!! note
+	The following permissions are required when using Shared Access Signature (SAS):
+	<div class="mdx-columns" markdown>
+
+	- Add
+	- Create
+	- Write
+	- Delete
+	- List
+
+	</div>
+
 
 <!---
 Removed according to Bharat
 
-#### Prerequisites for Authentication via Azure Active Directory
+#### Prerequisites for Authentication via Microsoft Entra ID
 
-Authentication via Azure Active Directory requires an Azure AD tenant. How to set up an Azure AD tenant is described in the [Microsoft documentation](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-create-new-tenant). <br>
-Before using authentication via Azure Active Directory, perform the following steps in the Azure Portal:
+Authentication via Microsoft Entra ID requires an Azure AD tenant. How to set up an Azure AD tenant is described in the [Microsoft documentation](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-create-new-tenant). <br>
+Before using authentication via Microsoft Entra ID, perform the following steps in the Azure Portal:
 
-1. In the Azure Portal, open the *Azure Active Directory* service.
+1. In the Azure Portal, open the *Microsoft Entra ID* service.
 2. Register an app with your Azure AD tenant. To do this, follow the steps as described in the [Microsoft documentation](https://docs.microsoft.com/en-us/azure/storage/common/storage-auth-aad-app#register-your-application-with-an-azure-ad-tenant). 
 Register the app as *Public client/native (mobile & desktop)*.
 3. Add *API permissions* to the registered app to grant access to the Azure Storage web API. The following permissions are required:
@@ -80,53 +99,90 @@ The required RBAC role is *Storage Blob Data Contributor*.<br>
 ![xu-azure-blob-con-2](../../assets/images/xu/documentation/destinations/azure-storage/xu-azure-blob-con_2.png){:class="img-responsive"}
 -->
 	
-### Access Key Parameters
+### Access Key Parameters / SAS Parameters
 
-The input fields in the subsection *Access key parameters* vary depending on the selected authentication method.
+The input fields in the subsection *Access key parameters* / *SAS parameters* vary depending on the selected connection type.
 
-=== "Authentication via Access Key"
+=== "Access Key"
 
-	| Input Field | Description |
-	|-------------|--------------|
-	| **Storage account** |	Enter your storage account name. Do not enter the full URL. |
-	| **Access key** | Enter the access key of the Azure Storage account. |
+	#### Storage account
+	Enter your storage account name. Do not enter the full URL. 
 	
-	You can copy the storage account name and access key from the [Azure Portal](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?toc=/azure/storage/blobs/toc.json#view-access-keys-and-connection-string).<br>
-	![xu-azure-blob-con](../../assets/images/xu/documentation/destinations/azure-storage/xu-azure-blob-con.png){:class="img-responsive"}
+	#### Access key
+	Enter the access key of the Azure Storage account. 
+	
+	!!! tip
+		You can copy the storage account name and access key from the [Azure Portal](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?toc=/azure/storage/blobs/toc.json#view-access-keys-and-connection-string).<br>
+		![xu-azure-blob-con](../../assets/images/xu/documentation/destinations/azure-storage/xu-azure-blob-con.png){:class="img-responsive"}
 
 	#### Connect
 	Click **[Connect]** to establish a connection to the storage account. 
 	If the connection is successful, a "Connection successful" info window opens.
 
-=== "Authentication via Azure Active Directory"
-	
-	!!! note
-		Make sure to correctly set up authentication via Azure Active Directory in Azure, see [Knowledge Base Article: Authentication via Azure Active Directory for Azure Storage](../../knowledge-base/authentication-via-azure-ad-with-azure-storage.md).
+=== "Entra ID"
 		
-	| Input Field | Description |
-	|-------------|--------------|
-	| **Storage account** |	Enter your storage account name. |
-	| **Tenant ID** | Enter the ID of the Azure AD tenant. |
-	| **Client ID** | Enter the ID of the registered app. |
+	#### Storage account
+	Enter your storage account name. 
+	
+	#### Tenant ID
+	Enter the ID of the Azure AD tenant. 
+	
+	#### Client ID
+	Enter the ID of the registered app. 
 
-	You copy the tenant ID and client ID from the Azure portal.<br>
-	![xu-azure-blob-con-3](../../assets/images/xu/documentation/destinations/azure-storage/xu-azure-blob-con_3.png){:class="img-responsive"}
+	!!! tip
+		You can copy the tenant ID and client ID from the Azure portal.<br>
+		![xu-azure-blob-con-3](../../assets/images/xu/documentation/destinations/azure-storage/xu-azure-blob-con_3.png){:class="img-responsive"}
 	
 	#### Connect
 	
 	Click **[Connect]** to establish a connection to the storage account. 
 	A browser window pops up, where you have to sign in using your Azure AD credentials.
-	The "Permissions requested" window lists the requested permissions, see [Knowledge Base Article: Authentication via Azure Active Directory](../../knowledge-base/authentication-via-azure-ad-with-azure-storage.md). 
+	The "Permissions requested" window lists the requested permissions, see [Knowledge Base Article: Authentication via Microsoft Entra ID](../../knowledge-base/authentication-via-entra-id-with-azure-storage.md). 
 	Click **[Accept]**. If the connection is successful, a "Connection successful" info window opens. <br>
 
 	![xu-azure-blob-con-4](../../assets/images/xu/documentation/destinations/azure-storage/xu-azure-blob-con_4.png){:class="img-responsive"}
+
+=== "Shared Access Signature (Account)"
+
+	#### Storage account
+	Enter your storage account name. Do not enter the full URL.
+	
+	#### SAS token
+	Enter the SAS token at the Azure Storage container level. 
+	
+	!!! tip
+		You can copy the SAS token from the Azure portal (**Storage accounts > [account_name] > Security + networking > Shared access signature**).
+		
+	#### Connect
+	Click **[Connect]** to establish a connection to the storage account. 
+	If the connection is successful, you can select an existing container from the drop down list **Container**.
+
+	
+=== "Shared Access Signature (Container)"
+
+	#### Storage account
+	Enter your storage account name. Do not enter the full URL.
+	
+	#### Container
+	Enter the name of an existing Azure storage container.
+	
+	#### SAS token
+	Enter the SAS token generated at the Azure Storage container level. 
+
+	!!! tip
+		You can copy the SAS token from the Azure portal (**Storage accounts > [account_name] > Data storage > Containers > [account_name] > Generate SAS**).
+		
+	#### Connect
+	Click **[Connect]** to establish a connection to the storage account. 
 
 	
 ### Container 
 This subsection is activated after a connection to the storage account was successfully established.<br>
 
-- When using Access Key authentication, choose a Blob container from the drop-down menu.
-- When using Azure Active Directory authentication, enter the name of the Blob container manually.
+- When using Access Key authentication, select a Blob container from the drop-down list.
+- When using Entry ID authentication, enter the name of the Blob container manually.
+- When using Shared Access Signature (Account) authentication, select a Blob container from the drop-down list.
 
 #### Test connection
 Click **[Test Connection]** to check if the storage container can be accessed. <br>
@@ -249,5 +305,5 @@ The following YouTube tutorial shows how to set up Xtract Universal with the Azu
 ****
 
 ## Related Links
-- [Knowledge Base Article: Authentication via Azure Active Directory for Azure Storage](../../knowledge-base/authentication-via-azure-ad-with-azure-storage.md)
+- [Knowledge Base Article: Authentication via Microsoft Entra ID for Azure Storage](../../knowledge-base/authentication-via-entra-id-with-azure-storage.md)
 - [Integration via Azure Data Factory](../execute-and-automate/call-via-etl.md#integration-via-azure-data-factory)

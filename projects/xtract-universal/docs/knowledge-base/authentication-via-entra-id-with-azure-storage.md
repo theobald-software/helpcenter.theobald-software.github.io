@@ -1,21 +1,21 @@
 ---
-title: Authentication via Azure Active Directory for Azure Storage
-description: Authentication via Azure Active Directory for Azure Storage
+title: Authentication via Microsoft Entra ID for Azure Storage
+description: Authentication via Microsoft Entra ID for Azure Storage
 ---
 
-The following article shows how to connect to the Azure Storage destination using Authentication via Azure Active Directory.
+The following article shows how to connect to the Azure Storage destination using Authentication via Microsoft Entra ID (formerly Azure Active Directory).
 The article leads you through the following process:
 
-1. Register a new app with your Azure AD tenant.
+1. Register a new app with your Entra ID tenant.
 2. Assign access rights for the new app in Azure Storage using the Storage Blob Data Contributor role.
-3. In {{ productName }}, connect to Azure Storage using the Azure Active Directory method.
+3. In {{ productName }}, connect to Azure Storage using the Microsoft Entra ID method.
 
 ### App Registration
 
-Follow the steps below to register a new app with your Azure AD tenant:
+Follow the steps below to register a new app with your Entra ID tenant:
 
 1. Open the Azure portal and navigate to **App Registrations**.
-2. Click **[New registration]** to register a new app with your Azure AD tenant. <br>
+2. Click **[New registration]** to register a new app with your Entra ID tenant. <br>
 ![azure-app-new-registration](../assets/images/xu/articles/azure-storage/azure-app-new-registration.png){:class="img-responsive"}
 3. Enter the name of the application.
 4. In the Redirect UI section, select *Public Client /native (mobile and desktop)* and assign `https://login.microsoftonline.com/common/oauth2/nativeclient` as the redirect URI.
@@ -42,7 +42,7 @@ Follow the steps below to assign access rights for the [new Azure app](#app-regi
 
 ### Connect to Azure Storage
 
-Follow the steps below to connect {{ productName }} to the Azure Storage destination using Authentication via Azure Active Directory:
+Follow the steps below to connect {{ productName }} to the Azure Storage destination using Authentication via Microsoft Entra ID:
 
 1. Open {{ productName }} and create a new Azure Storage destination or edit an existing destination.
 2. Select the connection type **Azure active directory**. 
