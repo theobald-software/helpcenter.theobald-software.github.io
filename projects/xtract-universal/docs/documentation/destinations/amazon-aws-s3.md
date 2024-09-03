@@ -44,22 +44,36 @@ Select "Lifecycle" and "Add lifecycle rule" and create a rule for deleting unuse
 
 {% include "destinations/create-destination.md" %}
 
-### S3 Settings
-
 ![Destination-Details](../../assets/images/xu/documentation/destinations/amazon-s3/destination-details.png){:class="img-responsive"}
 
-### Connection
+### API Endpoints
 
-#### Inherit Credentials from IAM role
-The credentials and permissions of the IAM role assigned to the [EC2 instance](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2.html), on which Xtract Universal is running will be used for authentication. 
+The endpoint defines which IP address is used to connect to an Amazon S3 instance. 
+
+#### Use AWS S3 Endpoint
+When this option is active, {{ productName }} connects to Amazon S3 using a URL that consists of the bucket name and the Amazon S3 default URL:
+`https://[BucketName].s3.amazonaws.com/`
+
+#### Use VPC Endpoint
+When this option is active, {{ productName }} connects to Amazon S3 using a [Virtual Private Cloud (VPC) endpoint](https://docs.aws.amazon.com/AmazonS3/latest/userguide/privatelink-interface-endpoints.html).
+Enter the VPC endpoint in the field **VPC endpoint**, e.g., `http://bucket.vpce-0123456789abcdefg-hijklmno.s3.us-east-1.vpce.amazonaws.com`.
+
+### Authenthication
+
+The authentication method defines how Xtract Universal authenticates itself against Amazon AWS.
+
+#### Use IAM role
+
+When this option is active, the credentials and permissions of the IAM role assigned to the [EC2 instance](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2.html), on which Xtract Universal is running are used for authentication. 
 For more information on the IAM role, see [AWS Documentation: Security best practices in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html).
 
-#### Access key ID and Secret key
-Preferable authentication method towards Amazon AWS. Determine the values via AWS Identity and Access Management ([IAM](https://console.aws.amazon.com/iam/home#/home)).
-More information is available in the official [AWS documentation](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html).
+#### Use user credentials
+Preferable authentication method towards Amazon AWS. 
+Determine the values for the [Access Keys (access key ID and secret key)](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html) via AWS Identity and Access Management ([IAM](https://console.aws.amazon.com/iam/home#/home)).
+
 
 #### Connect
-After entering Access key ID and Secret key, click **[Connect]**. After successfully connecting, select bucket name and region.
+After entering *Access key ID* and *Secret key*, click **[Connect]** to connect to AWS. After successfully connecting, select bucket name and region.
 
 ### Bucket
 
@@ -87,7 +101,7 @@ For more information, see [AWS Documentation: Protecting data with server-side e
 #### SSE-S3
 Encrypts data using the by default available S3 user account encryption key, see [S3 Managed Encryption Keys](https://docs.aws.amazon.com/AmazonS3/latest/dev/UsingServerSideEncryption.html).
 
-#### SSE-KMS und Key ID*
+#### SSE-KMS / Key ID
 Encryption using a custom encryption key created on AWS, see [AWS Key Management Services](https://docs.aws.amazon.com/AmazonS3/latest/dev/UsingKMSEncryption.html). 
 The key can be created on the [AWS website](https://console.aws.amazon.com/iam/home#/encryptionKeys/.)
 
