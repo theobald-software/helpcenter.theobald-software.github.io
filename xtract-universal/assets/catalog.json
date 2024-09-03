@@ -11742,7 +11742,7 @@
       {
         "Product": "XtractUniversal",
         "Component": "Destinations",
-        "Message": "Azure Storage destination now support authentication with Azure Active Directory"
+        "Message": "Azure Storage destination now support authentication with Microsoft Entra ID"
       }
     ]
   },
