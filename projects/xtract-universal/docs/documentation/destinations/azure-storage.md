@@ -23,7 +23,6 @@ For more information, see [Microsoft Documentation: Azure storage account overvi
 
 {% include "destinations/create-destination.md" %}
 
-### Azure Storage
 
 ![Destination-Details](../../assets/images/xu/documentation/destinations/azure-storage/destination-details_1.png){:class="img-responsive"}
 
