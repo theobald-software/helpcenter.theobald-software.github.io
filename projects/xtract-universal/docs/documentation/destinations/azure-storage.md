@@ -50,7 +50,7 @@ For information on advantages and disadvantages of the different authentication 
 
     ---
 
-    This method of authentication uses OAuth 2.0 and [Microsoft Entra ID](https://learn.microsoft.com/en-us/rest/api/storageservices/authorize-with-azure-active-directory) (formerly Azure Active Directory), see see [Authentication via Microsoft Entra ID for Azure Storage](../../knowledge-base/authentication-via-entra-id-with-azure-storage.md). 
+    This method of authentication uses OAuth 2.0 and [Microsoft Entra ID](https://learn.microsoft.com/en-us/rest/api/storageservices/authorize-with-azure-active-directory) (formerly Azure Active Directory), see [Authentication via Microsoft Entra ID for Azure Storage](../../knowledge-base/authentication-via-entra-id-with-azure-storage.md). 
 	Access rights can be granted on storage account or container level.
 
 -   :octicons-person-16: __Shared Access Signature (Account)__
