@@ -33,29 +33,42 @@ The subsection *Connection Type* offers the following methods for authenticating
 
 - Access Key
 - Entra ID
-- Shared Access Signature
+- Shared Access Signature (SAS)
 
-For information on advantages and disadvantages of the different authentication methods, see [Microsoft Documentation: Choosing the right authentication method](https://learn.microsoft.com/en-us/azure/storage/common/storage-explorer-security)
+For information on advantages and disadvantages of the different authentication methods, see [Microsoft Documentation: Choosing the right authentication method](https://learn.microsoft.com/en-us/azure/storage/common/storage-explorer-security).
 
-#### Access Key
-This method of authentication authorizes access to the complete storage account. 
-For more information, see [Microsoft documentation](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage). 
-	
-#### Entra ID
+<div class="grid cards" markdown>
 
-This method of authentication uses OAuth 2.0 and [Microsoft Entra ID](https://learn.microsoft.com/en-us/rest/api/storageservices/authorize-with-azure-active-directory) (formerly Microsoft Entra ID) for authentication. 
-With this option access rights can be granted on storage account or container level. 
-For more information, see [Knowledge Base Article: Authentication via Microsoft Entra ID for Azure Storage](../../knowledge-base/authentication-via-entra-id-with-azure-storage.md).
+-   :octicons-key-16: __Access Key__
 
+    ---
 
-[Microsoft Documentation: Authorize with Microsoft Entra ID](https://learn.microsoft.com/en-us/rest/api/storageservices/authorize-with-azure-active-directory)
+    This method of authentication authorizes access to the complete storage account. 
+	For more information, see [Microsoft Documentation: Manage storage account access keys](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage). 
 
-#### Shared Access Signature (Account)
-This method of authentication uses Shared Access Signatures (SAS) to access the complete storage account.
+-   :octicons-id-badge-16: __Entra ID__
 
-#### Shared Access Signature (Container)
-This method of authentication uses Shared Access Signatures (SAS) to access a specific storage container.
-For more information, see [Microsoft Documentation: Create SAS tokens for storage containers](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/create-sas-tokens?view=doc-intel-4.0.0#use-the-azure-portal)
+    ---
+
+    This method of authentication uses OAuth 2.0 and [Microsoft Entra ID](https://learn.microsoft.com/en-us/rest/api/storageservices/authorize-with-azure-active-directory) (formerly Azure Active Directory), see see [Authentication via Microsoft Entra ID for Azure Storage](../../knowledge-base/authentication-via-entra-id-with-azure-storage.md). 
+	Access rights can be granted on storage account or container level.
+
+-   :octicons-person-16: __Shared Access Signature (Account)__
+
+    ---
+
+    This method of authentication uses Shared Access Signatures (SAS) to access the complete storage account.
+	For more information, see [Microsoft Documentation: Grant limited access to Azure Storage resources using shared access signatures](https://learn.microsoft.com/en-us/azure/storage/common/storage-sas-overview?toc=%2Fazure%2Fstorage%2Fblobs%2Ftoc.json&bc=%2Fazure%2Fstorage%2Fblobs%2Fbreadcrumb%2Ftoc.json).
+
+-   :octicons-package-16: __Shared Access Signature (Container)__
+
+    ---
+
+    This method of authentication uses Shared Access Signatures (SAS) to access a specific storage container.
+	For more information, see [Microsoft Documentation: Create SAS tokens for storage containers](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/create-sas-tokens?view=doc-intel-4.0.0#use-the-azure-portal)
+
+</div>
+
 	
 !!! note
 	The following permissions are required when using Shared Access Signature (SAS):
@@ -68,7 +81,6 @@ For more information, see [Microsoft Documentation: Create SAS tokens for storag
 	- List
 
 	</div>
-
 
 <!---
 Removed according to Bharat
@@ -100,9 +112,9 @@ The required RBAC role is *Storage Blob Data Contributor*.<br>
 	
 ### Access Key Parameters / SAS Parameters
 
-The input fields in the subsection *Access key parameters* / *SAS parameters* vary depending on the selected connection type.
+The input fields in the subsection *Access key parameters* / *SAS parameters* vary depending on the selected [connection type](#connection-type).
 
-=== "Access Key"
+=== ":octicons-key-16: Access Key"
 
 	#### Storage account
 	Enter your storage account name. Do not enter the full URL. 
@@ -118,7 +130,7 @@ The input fields in the subsection *Access key parameters* / *SAS parameters* va
 	Click **[Connect]** to establish a connection to the storage account. 
 	If the connection is successful, a "Connection successful" info window opens.
 
-=== "Entra ID"
+=== ":octicons-id-badge-16: Entra ID"
 		
 	#### Storage account
 	Enter your storage account name. 
@@ -142,7 +154,7 @@ The input fields in the subsection *Access key parameters* / *SAS parameters* va
 
 	![xu-azure-blob-con-4](../../assets/images/xu/documentation/destinations/azure-storage/xu-azure-blob-con_4.png){:class="img-responsive"}
 
-=== "Shared Access Signature (Account)"
+=== ":octicons-person-16: SAS (Account)"
 
 	#### Storage account
 	Enter your storage account name. Do not enter the full URL.
@@ -158,7 +170,7 @@ The input fields in the subsection *Access key parameters* / *SAS parameters* va
 	If the connection is successful, you can select an existing container from the drop down list **Container**.
 
 	
-=== "Shared Access Signature (Container)"
+=== ":octicons-package-16: SAS (Container)"
 
 	#### Storage account
 	Enter your storage account name. Do not enter the full URL.
