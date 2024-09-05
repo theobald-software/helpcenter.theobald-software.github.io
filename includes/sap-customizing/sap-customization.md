@@ -14,7 +14,7 @@ Theobald Software distributes custom function modules as part of {{ productName 
 The custom function modules can be installed in SAP using transport requests. 
 The transport requests are available in the installation directory of {{ productName }}, e.g., `{{ installationDir }}\ABAP\`.
 
-For information on how to use transport request, see [Import an SAP Transport Request](site:knowledge-base/import-an-sap-transport-request). <br>
+For information on how to use transport request, see [Import an SAP Transport Request](../../knowledge-base/import-an-sap-transport-request.md). <br>
 
 !!! note
 	All objects that come with any of the transport requests, can be deleted by importing the `Z_THEO_READ_TABLE-deletion_request.zip` transport request.

@@ -27,19 +27,19 @@ These rows are marked with an * symbol: <br>
 
 === "Report without Row Skip Patterns"
 	
-	![report-no-skip-rows](site:assets/images/articles/report/report-no-skip-rows.png){:class="img-responsive"}
+	![report-no-skip-rows](../assets/images/articles/report/report-no-skip-rows.png){:class="img-responsive"}
 
 === "Report with Row Skip Patterns"	
 	
-	![report-no-skip-rows](site:assets/images/articles/report/report-skip-rows.png)
+	![report-no-skip-rows](../assets/images/articles/report/report-skip-rows.png)
 
 To remove all rows that contain the * symbol, follow the instructions below:
 
 1. Look up a report. The depicted example uses the report RFITEMGL. 
 2. Define the columns of the report automatically or manually, see {% if page.meta.product == "xtract-universal" or page.meta.product == "board-connector" %}[Documentation: Define the Report Extraction Type](../documentation/report/index.md/#define-the-report-extraction-type){% else %}[Documentation: Define the Xtract Report Component](../documentation/report/index.md/#define-the-xtract-report-component){% endif %}. <br>
-![report-no-skip-rows](site:assets/images/articles/report/report-skip-rows-preview.png)
+![report-no-skip-rows](../assets/images/articles/report/report-skip-rows-preview.png)
 3. Click {{ settingsBtn }}. The window "Extraction Settings" open.<br>
-![report-no-skip-rows](site:assets/images/articles/report/report-skip-rows-settings.png)
+![report-no-skip-rows](../assets/images/articles/report/report-skip-rows-settings.png)
 4. Enter a **Row skip pattern**. To process special symbols, add `\`before the symbol, e.g., to remove rows that contain the sum symbol * , enter `\*`. 
 5. Click **[OK]** to close the {{ settings }}. 
 5. Click **[OK]** to save the extraction. Note that the live preview of the report component does not include the **Row skip pattern** option. 

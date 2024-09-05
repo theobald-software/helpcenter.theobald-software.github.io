@@ -11,11 +11,11 @@ The access to reports is granted based on the name of the report.
 
 1. Use transaction SU21 to create a new authorization object.
 2. Expand the *Create* menu and click **[Authorization Object]**. The window "Create Authorization Object" opens.<br>
-![report-authorization-object](site:assets/images/articles/sap/sap-authority-object.png){:class="img-responsive"}
+![report-authorization-object](../assets/images/articles/sap/sap-authority-object.png){:class="img-responsive"}
 3. Enter the following values:<br>
 Object: Z_TS_PRO<br>
 Text: Theobald Software Report Authorization<br>
-![report-create-authorization-object](site:assets/images/articles/sap/sap-create-authorization-object.png){:class="img-responsive"}
+![report-create-authorization-object](../assets/images/articles/sap/sap-create-authorization-object.png){:class="img-responsive"}
 4. Click **[Continue]** to enable editing of the section *Authorization fields*.
 5. Manually enter S_NAME as the first entry in *Authorization fields*. 
 6. Click **[Save]** to save the authorization object.
