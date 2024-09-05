@@ -58,7 +58,7 @@ When this option is active, {{ productName }} connects to Amazon S3 using a URL 
 When this option is active, {{ productName }} connects to Amazon S3 using a [Virtual Private Cloud (VPC) endpoint](https://docs.aws.amazon.com/AmazonS3/latest/userguide/privatelink-interface-endpoints.html).
 This option requires {{ productName }} to run on an AWS VPC instance.
 
-Enter the VPC endpoint in the field **VPC endpoint**, e.g., `http://bucket.vpce-0123456789abcdefg-hijklmno.s3.us-east-1.vpce.amazonaws.com`.
+In the field **VPC endpoint**, enter the VPC endpoint using the format `http://bucket.[endpoint]`, e.g., *http://bucket.vpce-0123456789abcdefg-hijklmno.s3.us-east-1.vpce.amazonaws.com*.
 
 ### Authenthication
 
