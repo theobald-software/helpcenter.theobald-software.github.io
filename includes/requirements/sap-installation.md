@@ -13,7 +13,7 @@
 |[{{ odp }}](../../documentation/odp/index.md)             | SAP_BASIS >= 730, BW >= 7,3X   | No requirements.   |
 {% if page.meta.product != "xtract-for-alteryx" %}|[{{ deltaq }}](../../documentation/deltaq/index.md)          | Rel. > 4.6C       | Customization required, see [Customization for DeltaQ](../../documentation/setup-in-sap/customization-for-deltaq.md).     |
 |[{{ ohs }}](../../documentation/ohs/index.md)             | Rel. > BW 3.5     | Customization required, see [Customization for OHS in BW](../../documentation/setup-in-sap/customization-for-ohs-in-bw.md).  |
-|[{{ tableCDC }}](../../documentation/table-cdc/index.md)      | SAP ECC 5.0 or above     | Installation of a custom function modules is necessary, see [Table CDC Requirements](../../documentation/table-cdc/index.md#requirements). |
+|[{{ tableCDC }}](../../documentation/table-cdc/index.md)      | SAP ECC 5.0 or above     | Installation of a custom function modules is necessary, see [Table CDC Preresquisites](../../documentation/table-cdc/index.md#prerequisites). |
 {% endif %}
 
 For Information about the installation of the custom function modules and the SAP customization, check the section [SAP Customization](../../documentation/setup-in-sap/index.md).
