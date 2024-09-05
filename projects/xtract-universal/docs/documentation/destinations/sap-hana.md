@@ -6,27 +6,27 @@ destination: sap-hana
 
 This page shows how to set up and use the {{ page.meta.title }} destination. 
 The {{ page.meta.title }} destination loads data to an SAP HANA database or to SAP Datasphere.
-
 When loading data to SAP Datasphere, SAP Datasphere's underlying HANA database is used as a destination. 
 
 
 ## Requirements
 
-To establish a connection to the HANA database or SAP Datasphere, the *SAP HANA Data Provider for Microsoft ADO.NET* version **2.17.22** is required. 
+To establish a connection to an SAP HANA database or SAP Datasphere, the *SAP HANA Data Provider for Microsoft ADO.NET* version **2.17.22** is required. 
 The data provider is part of the SAP HANA Client setup.
 
 {% include "destinations/create-destination.md" %}
+The destination details can be defined for an SAP HANA database or for an SAP Datasphere connection.
 
-The destination settings can be defined for the HANA database or SAP Datasphere connection:
+For information on SAP Datasphere connection parameters, refer to the following SAP resources:
+- [SAP Help: Create a Database User](https://help.sap.com/docs/SAP_DATASPHERE/be5967d099974c69b77f4549425ca4c0/798e3fd6707940c3bd2219b2d1ebaac2.html?locale=en-US)
+- [SAP Help: Obtaining Your OPEN SQL Schema Connection Information](https://help.sap.com/docs/SAP_DATASPHERE/be5967d099974c69b77f4549425ca4c0/b78ad208f8c4494489aabf97284679b6.html?locale=en-US#obtaining-[…]nformation).
 
-=== "SAP HANA Database"
-	![Destination-Details](../../assets/images/xu/documentation/destinations/hana/destination-details_2.png){:class="img-responsive"}
-=== "SAP Datasphere"
-	![Destination-Details](../../assets/images/xu/documentation/destinations/hana/destination-details_1_1.png){:class="img-responsive"}
+![Destination-Details](../../assets/images/xu/documentation/destinations/hana/destination-details_1.png){:class="img-responsive" width="48%"} &nbsp;
+![Destination-Details](../../assets/images/xu/documentation/destinations/hana/destination-details_1_1.png){:class="img-responsive" width="48%"}
 
 
 #### Server Name
-Enter the address of the server (including the port number). Note the different port numbers for HANA and SAP Datasphere (see screenshots).
+Enter the address of the server (including the port number). Note that there are different port numbers for SAP HANA and SAP Datasphere.
 
 #### User Name
 Enter the SAP HANA/SAP Datasphere user name. 
@@ -41,13 +41,10 @@ Enter the name of the database.
 Enter the name of the database schema.
 
 #### Use encryption
-Activates connection encryption. This is required when connecting to SAP Datasphere.
+Activates connection encryption. This option is required when connecting to SAP Datasphere.
 
 #### Test Connection
 Check the database connection.  
-
-For SAP Datasphere's connection parameters see SAP Help: [Create a Database User](https://help.sap.com/docs/SAP_DATASPHERE/be5967d099974c69b77f4549425ca4c0/798e3fd6707940c3bd2219b2d1ebaac2.html?locale=en-US) and [Obtaining Your OPEN SQL Schema Connection Information](https://help.sap.com/docs/SAP_DATASPHERE/be5967d099974c69b77f4549425ca4c0/b78ad208f8c4494489aabf97284679b6.html?locale=en-US#obtaining-[…]nformation).
-
 
 {% include "destinations/assign-destination.md" %}
 
