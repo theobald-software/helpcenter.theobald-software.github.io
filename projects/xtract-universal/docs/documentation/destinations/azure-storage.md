@@ -216,7 +216,7 @@ Subfolders are supported and can be defined using the following syntax: `[folder
 
 ### File Format
 
-Select the required file format. You can choose between *Parquet* and *CSV*.
+Select the required file format. You can choose between *CSV*, *JSON* and *Parquet*.
 
 ![Destination-Details](../../assets/images/xu/documentation/destinations/azure-storage/destination-details_2.png){:class="img-responsive"}
 
@@ -227,6 +227,9 @@ The settings for file type *CSV* correspond to the settings of the *Flat File CS
 - [CSV Settings](csv-flat-file.md/#csv-settings)
 - [Convert / Encoding](csv-flat-file.md/#convert-encoding)
 
+#### JSON Settings
+
+To use the JSON file format, no further settings are necessary.
 
 #### Parquet Settings
 
@@ -289,15 +292,6 @@ Subfolders are supported and can be defined using the following syntax: `[folder
 
 {% include "destinations/file-splitting.md" %}
 
-### Common Data Model
-
-If this option is enabled, a Common Data Model JSON file is generated and written to the destination alongside the extracted data.
-The CDM file can be used to automate data transformation in Azure.
-
-For more information on Common Data Models, see [Microsoft Documentation: Common Data Model](https://learn.microsoft.com/en-us/common-data-model/).
-
-!!! note
-	This option is still in preview mode.
 	
 #### Entity name
 Enter a name for the generated .cdm.json file.

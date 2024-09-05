@@ -131,6 +131,10 @@ The settings for file type *CSV* correspond to the settings of the *Flat File CS
 - [CSV Settings](csv-flat-file.md/#csv-settings)
 - [Convert / Encoding](csv-flat-file.md/#convert-encoding)
 
+#### JSON Settings
+
+To use the JSON file format, no further settings are necessary.
+
 #### Parquet Settings
 
 The settings for file type *Parquet* correspond to the settings of the *Flat File Parquet* destination:
