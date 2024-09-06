@@ -1,5 +1,16 @@
 [
   {
+    "Version": "2024.9.6.5",
+    "LegacyReleaseDate": "2024-09-06 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "BWCube",
+        "Message": "Fixes an issue in MDX where selecting external hierarchy members from the value help for filters results in errors during extraction"
+      }
+    ]
+  },
+  {
     "Version": "2024.9.2.15",
     "LegacyReleaseDate": "2024-09-02 00:00:00Z",
     "Changes": [
@@ -11742,7 +11753,7 @@
       {
         "Product": "XtractUniversal",
         "Component": "Destinations",
-        "Message": "Azure Storage destination now support authentication with Microsoft Entra ID"
+        "Message": "Azure Storage destination now support authentication with Azure Active Directory"
       }
     ]
   },
