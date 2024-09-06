@@ -1,5 +1,16 @@
 [
   {
+    "Version": "2024.9.6.3",
+    "LegacyReleaseDate": "2024-09-06 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "BWCube",
+        "Message": "Fixes an issue in MDX where selecting external hierarchy members from the value help for filters results in errors during extraction"
+      }
+    ]
+  },
+  {
     "Version": "2024.8.28.11",
     "LegacyReleaseDate": "2024-08-28 00:00:00Z",
     "Changes": [
@@ -5607,6 +5618,11 @@
         "Product": "Common",
         "Component": "General",
         "Message": "Logger throws InvalidOperationException if used without calling Start()"
+      },
+      {
+        "Product": "Common",
+        "Component": "General",
+        "Message": "Logging now supports 24h and more in one log (but still restricted to &lt; 100h)"
       }
     ]
   },
@@ -5766,7 +5782,13 @@
   {
     "Version": "1.7.1.0",
     "LegacyReleaseDate": "2019-09-24 00:00:00Z",
+    "IsBreaking": true,
     "Changes": [
+      {
+        "Product": "Common",
+        "Component": "General",
+        "Message": "Updated to .NET Standard 2.0"
+      },
       {
         "Product": "Theobald.Extractors",
         "Component": "Hierarchy",
@@ -6930,6 +6952,11 @@
         "Product": "ERPConnect",
         "Component": "Idoc",
         "Message": "Fix for sending Idocs via qRFC"
+      },
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "ERPConnect",
+        "Message": "Updated to 6.3.0.8"
       }
     ]
   },
@@ -6946,6 +6973,11 @@
         "Product": "ERPConnect",
         "Component": "RFC Client",
         "Message": "Added support for RFC_READ_TABLE2 function modules in ReadTable"
+      },
+      {
+        "Product": "Common",
+        "Component": "General",
+        "Message": "Initial version"
       }
     ]
   },

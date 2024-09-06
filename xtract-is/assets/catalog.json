@@ -1,5 +1,16 @@
 [
   {
+    "Version": "2024.9.6.4",
+    "LegacyReleaseDate": "2024-09-06 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "BWCube",
+        "Message": "Fixes an issue in MDX where selecting external hierarchy members from the value help for filters results in errors during extraction"
+      }
+    ]
+  },
+  {
     "Version": "2024.8.30.65",
     "LegacyReleaseDate": "2024-08-30 00:00:00Z",
     "Changes": [
@@ -5935,6 +5946,21 @@
         "Product": "Common",
         "Component": "General",
         "Message": "Updated Installer for XIS/XRS"
+      },
+      {
+        "Product": "Common",
+        "Component": "General",
+        "Message": "RemoveControlCharacters now also removes chars from the C1 range"
+      },
+      {
+        "Product": "Common",
+        "Component": "General",
+        "Message": "Logger throws InvalidOperationException if used without calling Start()"
+      },
+      {
+        "Product": "Common",
+        "Component": "General",
+        "Message": "Logging now supports 24h and more in one log (but still restricted to &lt; 100h)"
       }
     ]
   },
@@ -6225,7 +6251,13 @@
   {
     "Version": "5.3.2.1",
     "LegacyReleaseDate": "2019-09-23 00:00:00Z",
+    "IsBreaking": true,
     "Changes": [
+      {
+        "Product": "Common",
+        "Component": "General",
+        "Message": "Updated to .NET Standard 2.0"
+      },
       {
         "Product": "Theobald.Extractors",
         "Component": "ERPConnect",
@@ -6828,6 +6860,11 @@
         "Product": "Theobald.Extractors",
         "Component": "Table",
         "Message": "Fixed a bug that caused the extraction settings window to not show available function modules"
+      },
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "General",
+        "Message": "Increased preview row limit to 100"
       }
     ]
   },
@@ -6850,6 +6887,11 @@
         "Product": "ERPConnect",
         "Component": "NWRFC",
         "Message": "Fixed a bug where an exception that occurred while calling a client function could be replaced by a NullReferenceException"
+      },
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "ERPConnect",
+        "Message": "Updated to 6.5.9.20"
       },
       {
         "Product": "XtractKernel",
@@ -8280,6 +8322,11 @@
         "Product": "ERPConnect",
         "Component": "RFC Client",
         "Message": "Added support for qRFC (NetWeaver libraries only)"
+      },
+      {
+        "Product": "Common",
+        "Component": "General",
+        "Message": "Initial version"
       }
     ]
   },
