@@ -9,7 +9,7 @@ tags:
   - quick start  
 ---
 
-![img](site:assets/images/logos/theo-thumbs.png){ .lg .middle width="30px"} This section shows how to install and set up yunIO for the first time.
+![img](./assets/images/logos/theo-thumbs.png){ .lg .middle width="30px"} This section shows how to install and set up yunIO for the first time.
 
 
 ### Installation
@@ -45,6 +45,8 @@ For more information, see [Documentation: SAP Connection](documentation/sap-conn
 
 ### Create a Service
 
+Follow the steps below to create a new web service:
+
 1. Navigate to the  :yunio-nav-services: *Services* menu at the left side navigation are of the Designer.
 2. Click **[Add Service]** to create a new web service.
 3. Enter a name and a short description of the service. 
@@ -68,9 +70,9 @@ The settings of the selected {{ component }} open and the service is now availab
 	Click :yunio-edit: to edit the {{ component }} settings of the service. <br>
 
 
-#### How to Create a Simple Service for Beginners
+#### A Simple Service for Beginners
 
-Follow the steps below to create a simple service that extracts customer master data from SAP:
+Follow the steps below to extract customer master data from SAP:
 
 1. [Create a service](#create-a-service) that uses the {{ component }} {{ table }}.
 2. In the **Search SAP tables and views** menu, enter the name of the SAP standard table KNA1. Use wildcards ( * ) if needed.

@@ -6,7 +6,7 @@ hide:
   - path
 ---
 
-![img](site:assets/images/logos/theo-thumbs.png){ .lg .middle width="30px"} This section contains use cases and integration scenarios for yunIO.
+![img](../assets/images/logos/theo-thumbs.png){ .lg .middle width="30px"} This section contains use cases and integration scenarios for yunIO.
 
 
 ### :simple-sap: SAP Connection

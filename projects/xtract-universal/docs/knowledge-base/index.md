@@ -6,7 +6,7 @@ hide:
   - path
 ---
 
-![img](site:assets/images/logos/theo-thumbs.png){ .lg .middle width="30px"} This section contains in-depth articles and sample use cases for Xtract Universal.
+![img](../assets/images/logos/theo-thumbs.png){ .lg .middle width="30px"} This section contains in-depth articles and sample use cases for Xtract Universal.
 
 
 ### Xtract Universal

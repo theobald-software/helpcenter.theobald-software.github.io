@@ -3,7 +3,7 @@ title: Introduction
 description: Learn about Xtract IS for Azure - a plug’n’play solution for SAP and Azure SQL Server Integration Services.
 ---
 
-![img](site:assets/images/logos/theo-thumbs.png){ .lg .middle width="30px"} This section shows how to set up Xtract IS on an Azure SSIS Integration Runtime.
+![img](../assets/images/logos/theo-thumbs.png){ .lg .middle width="30px"} This section shows how to set up Xtract IS on an Azure SSIS Integration Runtime.
 
 ### About Xtract IS for Azure
 

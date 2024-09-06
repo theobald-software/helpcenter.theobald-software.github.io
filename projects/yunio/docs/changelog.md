@@ -7,7 +7,7 @@ hide:
   - tags
 ---
 
-![img](site:assets/images/logos/theo-thumbs.png){ .lg .middle width="30px"} This section contains a version history for {{ productName }}.
+![img](./assets/images/logos/theo-thumbs.png){ .lg .middle width="30px"} This section contains a version history for {{ productName }}.
 
 
 {% include "version-history-header.md" %}
