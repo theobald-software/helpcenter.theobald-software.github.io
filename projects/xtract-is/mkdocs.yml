@@ -90,6 +90,7 @@ plugins:
   #      'old/file.md': 'new/file.md'
   #      'some_file.md': 'http://external.url.com/foobar'
   - privacy:
+      assets: true
       links_attr_map:
         target: _blank # opens all external links in new tabs
   - meta # define front matter of multiple ,md files in .meta.yml file 
@@ -108,6 +109,8 @@ plugins:
   #- swagger-ui-tag
   #- glightbox #image zoom
   #- tags # enables tags in front matter
+  - optimize #requires pngquant to be installed, see https://github.com/squidfunk/mkdocs-material/discussions/4989
+  - offline
 
 # Continuous integration
   - group:

@@ -41,48 +41,48 @@ The window "Manage Destinations" opens. Here, you can edit, delete and add new d
 ::cards:: cols=4
 
 - title: Amazon Redshift <br><br><span class="keyword">push-destination</span>
-  image: site:assets/images/xu/documentation/destinations/logos/Amazon-Redshift.png
-  url: site:documentation/destinations/amazon-redshift
+  image: ../../assets/images/xu/documentation/destinations/logos/Amazon-Redshift.png
+  url: amazon-redshift.md
   
 - title: Azure Synapse Analytics <br><br><span class="keyword">push-destination</span> 
-  image: site:assets/images/xu/documentation/destinations/logos/Azure-Synapse-Analytics.png
-  url: site:documentation/destinations/azure-synapse-analytics
+  image: ../../assets/images/xu/documentation/destinations/logos/Azure-Synapse-Analytics.png
+  url: azure-synapse-analytics.md
   
 - title: Azure SQL Database <br><br><span class="keyword">push-destination</span>
-  image: site:assets/images/xu/documentation/destinations/logos/Azure-SQL-Database.png
-  url: site:documentation/destinations/microsoft-sql-server
+  image: ../../assets/images/xu/documentation/destinations/logos/Azure-SQL-Database.png
+  url: microsoft-sql-server.md
 
 - title: EXASolution <br><br><br><span class="keyword">push-destination</span> 
-  image: site:assets/images/xu/documentation/destinations/logos/Exasol.svg
-  url: site:documentation/destinations/exasol
+  image: ../../assets/images/xu/documentation/destinations/logos/Exasol.svg
+  url: exasol.md
   
 - title: IBM Db2 <br><br><span class="keyword">push-destination</span> 
-  image: site:assets/images/xu/documentation/destinations/logos/IBM-db2.png
-  url: site:documentation/destinations/ibm-db2
+  image: ../../assets/images/xu/documentation/destinations/logos/IBM-db2.png
+  url: ibm-db2.md
 
 - title: MySQL <br><br><span class="keyword">push-destination</span> 
-  image: site:assets/images/xu/documentation/destinations/logos/MySQL.png
-  url: site:documentation/destinations/mysql
+  image: ../../assets/images/xu/documentation/destinations/logos/MySQL.png
+  url: mysql.md
 
 - title: Oracle <br><br><span class="keyword">push-destination</span> 
-  image: site:assets/images/xu/documentation/destinations/logos/Oracle.png
-  url: site:documentation/destinations/oracle
+  image: ../../assets/images/xu/documentation/destinations/logos/Oracle.png
+  url: oracle.md
   
 - title: PostgreSQL <br><br><span class="keyword">push-destination</span>
-  image: site:assets/images/xu/documentation/destinations/logos/PostgreSQL.png
-  url: site:documentation/destinations/postgreSQL
+  image: ../../assets/images/xu/documentation/destinations/logos/PostgreSQL.png
+  url: postgreSQL.md
 
 - title: SAP HANA <br><br><span class="keyword">push-destination</span> 
-  image: site:assets/images/xu/documentation/destinations/logos/SAP-Logo.png
-  url: site:documentation/destinations/sap-hana
+  image: ../../assets/images/xu/documentation/destinations/logos/SAP-Logo.png
+  url: sap-hana.md
     
 - title: Snowflake <br><br><span class="keyword">push-destination</span> 
-  image: site:assets/images/xu/documentation/destinations/logos/Snowflake.png
-  url: site:documentation/destinations/snowflake
+  image: ../../assets/images/xu/documentation/destinations/logos/Snowflake.png
+  url: snowflake.md
 
 - title: SQL Server <br><br><span class="keyword">push-destination</span> 
-  image: site:assets/images/xu/documentation/destinations/logos/SQL-Server.png
-  url: site:documentation/destinations/microsoft-sql-server
+  image: ../../assets/images/xu/documentation/destinations/logos/SQL-Server.png
+  url: microsoft-sql-server.md
   
 ::/cards::
 
@@ -92,36 +92,36 @@ The window "Manage Destinations" opens. Here, you can edit, delete and add new d
 ::cards:: cols=4
 
 - title: Alteryx <br><br><br><span class="keyword">pull-destination</span>
-  image: site:assets/images/logos/business-content/Alteryx-Logo.png
-  url: site:documentation/destinations/alteryx
+  image: ../../assets/images/logos/business-content/Alteryx-Logo.png
+  url: alteryx.md
 
 - title: Dataiku <br><br><br><span class="keyword">pull-destination</span>
-  image: site:assets/images/xu/documentation/destinations/logos/Dataiku.png
-  url: site:documentation/destinations/dataiku
+  image: ../../assets/images/xu/documentation/destinations/logos/Dataiku.png
+  url: dataiku.md
      
 - title: KNIME <br><br><br><span class="keyword">pull-destination</span> 
-  image: site:assets/images/xu/documentation/destinations/logos/KNIME.png
-  url: site:documentation/destinations/knime
+  image: ../../assets/images/xu/documentation/destinations/logos/KNIME.png
+  url: knime.md
   
 - title: Power BI Connector <br><br><span class="keyword">pull-destination</span> 
-  image: site:assets/images/xu/documentation/destinations/logos/Power-BI.png
-  url: site:documentation/destinations/Power-BI-Connector
+  image: ../../assets/images/xu/documentation/destinations/logos/Power-BI.png
+  url: Power-BI-Connector.md
   
 - title: Power BI Report Server <br><br><br><span class="keyword">pull-destination</span> 
-  image: site:assets/images/xu/documentation/destinations/logos/Power-BI-Report-Server.png
-  url: site:documentation/destinations/server-report-services
+  image: ../../assets/images/xu/documentation/destinations/logos/Power-BI-Report-Server.png
+  url: server-report-services.md
   
 - title: QlikSense and QlikView <br><br><br><span class="keyword">pull-destination</span> 
-  image: site:assets/images/xu/documentation/destinations/logos/Qlik.png
-  url: site:documentation/destinations/qliksense-qlikview
+  image: ../../assets/images/xu/documentation/destinations/logos/Qlik.png
+  url: qliksense-qlikview.md
  
 - title: SQL Server Reporting Services <br><br><span class="keyword">pull-destination</span> 
-  image: site:assets/images/xu/documentation/destinations/logos/SQL-Server.png
-  url: site:documentation/destinations/server-report-services
+  image: ../../assets/images/xu/documentation/destinations/logos/SQL-Server.png
+  url: server-report-services.md
   
 - title: Tableau <br><br><br><br><span class="keyword">push-destination</span> 
-  image: site:assets/images/xu/documentation/destinations/logos/Tableau.svg
-  url: site:documentation/destinations/tableau
+  image: ../../assets/images/xu/documentation/destinations/logos/Tableau.svg
+  url: tableau.md
 
 ::/cards::
 
@@ -130,12 +130,12 @@ The window "Manage Destinations" opens. Here, you can edit, delete and add new d
 ::cards:: cols=4
 
 - title: Salesforce <br><br><span class="keyword">push-destination</span>
-  image: site:assets/images/xu/documentation/destinations/logos/Salesforce.png
-  url: site:documentation/destinations/salesforce
+  image: ../../assets/images/xu/documentation/destinations/logos/Salesforce.png
+  url: salesforce.md
   
 - title: SharePoint <br><br><span class="keyword">push-destination</span> 
-  image: site:assets/images/xu/documentation/destinations/logos/SharePoint.png
-  url: site:documentation/destinations/sharepoint
+  image: ../../assets/images/xu/documentation/destinations/logos/SharePoint.png
+  url: sharepoint.md
   
 ::/cards::
 
@@ -145,31 +145,31 @@ The window "Manage Destinations" opens. Here, you can edit, delete and add new d
 ::cards:: cols=4
 
 - title: Amazon S3 <br><br><br><span class="keyword">push-destination</span>
-  image: site:assets/images/xu/documentation/destinations/logos/Amazon-S3.png
-  url: site:documentation/destinations/amazon-aws-s3
+  image: ../../assets/images/xu/documentation/destinations/logos/Amazon-S3.png
+  url: amazon-aws-s3.md
   
 - title: Azure Blob Storage<br><br><span class="keyword">push-destination</span> 
-  image: site:assets/images/xu/documentation/destinations/logos/Azure-Blob.png
-  url: site:documentation/destinations/azure-storage
+  image: ../../assets/images/xu/documentation/destinations/logos/Azure-Blob.png
+  url: azure-storage.md
   
 - title: Azure Data Lake Storage <br><br><span class="keyword">push-destination</span> 
-  image: site:assets/images/xu/documentation/destinations/logos/Azure-Data-Lake.png
-  url: site:documentation/destinations/azure-storage
+  image: ../../assets/images/xu/documentation/destinations/logos/Azure-Data-Lake.png
+  url: azure-storage.md
   
 - title: Google Cloud Storage <br><br><span class="keyword">push-destination</span>
-  image: site:assets/images/xu/documentation/destinations/logos/Google-Cloud.png
-  url: site:documentation/destinations/google-cloud-storage
+  image: ../../assets/images/xu/documentation/destinations/logos/Google-Cloud.png
+  url: google-cloud-storage.md
   
 - title: Huawei Cloud OBS <br><br><span class="keyword">push-destination</span> 
-  image: site:assets/images/xu/documentation/destinations/logos/Huawei.png
-  url: site:documentation/destinations/huawei
+  image: ../../assets/images/xu/documentation/destinations/logos/Huawei.png
+  url: huawei.md
   
 ::/cards::
 
 <!---
 - title: Azure Storage (Blob / Data Lake) <br><br><span class="keyword">push-destination</span> 
-  image: site:assets/images/xu/documentation/destinations/logos/Azure.png
-  url: site:documentation/destinations/azure-storage
+  image: ../../assets/images/xu/documentation/destinations/logos/Azure.png
+  url: azure-storage
 -->
 
 
@@ -178,24 +178,24 @@ The window "Manage Destinations" opens. Here, you can edit, delete and add new d
 ::cards:: cols=4
 
 - title: CSV Web Service <br><br><span class="keyword">pull-destination</span>
-  image: site:assets/images/xu/documentation/destinations/logos/net_csv.svg
-  url: site:documentation/destinations/csv-via-http
+  image: ../../assets/images/xu/documentation/destinations/logos/net_csv.svg
+  url: csv-via-http.md
   
 - title: JSON Web Service <br><br><span class="keyword">pull-destination</span> 
-  image: site:assets/images/xu/documentation/destinations/logos/net_json.svg
-  url: site:documentation/destinations/json-via-http
+  image: ../../assets/images/xu/documentation/destinations/logos/net_json.svg
+  url: json-via-http.md
   
 - title: CSV Flat-Files<br><br><span class="keyword">push-destination</span> 
-  image: site:assets/images/xu/documentation/destinations/logos/doc_csv.svg
-  url: site:documentation/destinations/csv-flat-file
+  image: ../../assets/images/xu/documentation/destinations/logos/doc_csv.svg
+  url: csv-flat-file.md
   
 - title: JSON Flat-Files<br><br><span class="keyword">push-destination</span>
-  image: site:assets/images/xu/documentation/destinations/logos/doc_json.svg
-  url: site:documentation/destinations/json-flat-file
+  image: ../../assets/images/xu/documentation/destinations/logos/doc_json.svg
+  url: json-flat-file.md
   
 - title: Parquet Flat-Files<br><br><span class="keyword">push-destination</span> 
-  image: site:assets/images/xu/documentation/destinations/logos/Parquet.png
-  url: site:documentation/destinations/parquet
+  image: ../../assets/images/xu/documentation/destinations/logos/Parquet.png
+  url: parquet.md
   
 ::/cards::
 

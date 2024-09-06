@@ -72,22 +72,22 @@ The knowledge base contains articles on how to create services for the following
 - title: IE01
   image: ../../assets/images/logos/business-content/Equipment.svg
   content: How to create new equipment in SAP.
-  url: site:knowledge-base/transaction-ie01/
+  url: ../../knowledge-base/transaction-ie01.md
   
 - title: PA40
   image: ../../assets/images/logos/business-content/Personal.svg
   content: How to define personnel actions in SAP.
-  url: site:knowledge-base/transaction-pa40/
+  url: ../../knowledge-base/transaction-pa40.md
   
 - title: VA02
   image: ../../assets/images/logos/business-content/Order.svg
   content: How to change sales orders in SAP.
-  url: site:knowledge-base/transaction-va02/
+  url: ../../knowledge-base/transaction-va02.md
 
 - title: XD02
   image: ../../assets/images/logos/business-content/CustomerData.svg
   content: How to change customer data in SAP.
-  url: site:knowledge-base/transaction-xd02/
+  url: ../../knowledge-base/transaction-xd02.md
 
 
 ::/cards::

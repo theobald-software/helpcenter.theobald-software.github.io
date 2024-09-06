@@ -101,9 +101,11 @@ plugins:
         - stopWordFilter
   - typeset # preserve format of titles and headlines in navigation and toc
   - awesome-pages # define navigation in .pages files
+  - optimize #requires pngquant to be installed, see https://github.com/squidfunk/mkdocs-material/discussions/4989
   - macros:
       include_dir: includes
   #- glightbox #image zoom
+  - offline
 
 # Continuous integration
   - group:
