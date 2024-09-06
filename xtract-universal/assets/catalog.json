@@ -1,5 +1,16 @@
 [
   {
+    "Version": "2024.9.6.32",
+    "LegacyReleaseDate": "2024-09-06 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "XtractUniversal",
+        "Component": "Destinations",
+        "Message": "Fixed a bug where extracting data in parquet format to S3 and Azure Storage would cause an error when \nSpark or BigQuery compatibility modes were used."
+      }
+    ]
+  },
+  {
     "Version": "2024.9.6.26",
     "LegacyReleaseDate": "2024-09-06 00:00:00Z",
     "Changes": [
