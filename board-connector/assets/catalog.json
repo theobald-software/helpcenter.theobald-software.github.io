@@ -1,5 +1,16 @@
 [
   {
+    "Version": "2024.9.6.55",
+    "LegacyReleaseDate": "2024-09-06 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Server",
+        "Component": "General",
+        "Message": "Fixed an error when testing a new SAP connection without a password."
+      }
+    ]
+  },
+  {
     "Version": "2024.9.6.7",
     "LegacyReleaseDate": "2024-09-06 00:00:00Z",
     "Changes": [
