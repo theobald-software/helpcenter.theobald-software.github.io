@@ -20,7 +20,7 @@ For information on how to use and find transaction codes, see [SAP Help: Using T
 
 - A connection to an SAP system is available, see [SAP Connection](../sap-connection/index.md).
 - The SAP connection assigned to a transaction service must use an SAP dialog user. 
-- Transaction uses port 32XX, where XX is the [SAP instance number (Property SystemNumber)](../sap-connection/settings.md#system). Make sure to put the corresponding SAP instance number on the allowlist. 
+- *Transaction* communicates with SAP via port 32XX, where XX is the [SAP instance number (Property SystemNumber)](../sap-connection/settings.md#system). Make sure that the port is not blocked. 
 
 !!! tip
     The transaction feature offers the same functionality as the SAP GUI.

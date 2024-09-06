@@ -48,6 +48,8 @@ For more information, see [SAP Connection](documentation/sap-connection/index.md
 
 ### Use Xtract {{ Components }} in Data Flow Tasks
 
+Follow the steps below to add an Xtract {{ component }} to your data flow task:
+
 1. Set up a **Data Flow Task** by dragging the dataflow component into the "Control Flow" canvas. 
 Double-click the dataflow component to open the dataflow canvas.
 2. Make sure that at least one XTRACT Connection Manager is available in the data flow task.
@@ -76,9 +78,9 @@ Xtract IS offers the following {{ components }}:
 {% include "components/components.md" %}
 -->
 
-#### How to Create a Simple SAP Data Extraction for Beginners
+#### A Simple SAP Data Extraction for Beginners
 
-Follow the steps below to create a simple SSIS package that extracts customer master data from the SAP table KNA1:
+Follow the steps below to extract customer master data from the SAP table KNA1:
 
 1. Drag & drop an {{ table }} {{ component }} from the SSIS toolbox into the data flow task.
 2. Double-click the {{ table }} {{ component }}. 

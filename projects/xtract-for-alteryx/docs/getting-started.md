@@ -50,6 +50,8 @@ For more information, see [SAP Connection](documentation/sap-connection/index.md
 
 ### Use Xtract {{ Components }} in Workflows
 
+Follow the steps below to add an Xtract {{ component }} to your workflow:
+
 1. Drag & drop an Xtract {{ component }} from the Xtract for Alteryx toolbox into the workflow :number-1:.<br>
 ![create-extraction](assets/images/xfa/documentation/table/create-extraction.png){:class="img-responsive"}
 2. Assign an existing SAP connection :number-2:.
@@ -72,9 +74,9 @@ Xtract for Alteryx offers the following {{ components }}:
 {% include "components/components.md" %}
 -->
 
-#### How to Create a Simple SAP Data Extraction for Beginners
+#### A Simple SAP Data Extraction for Beginners
 
-Follow the steps below to create a simple workflow that extracts customer master data from the SAP table KNA1:
+Follow the steps below to extract customer master data from the SAP table KNA1:
 
 1. Drag & drop the {{ table }} {{ component }} into the workflow.
 2. Assign an existing SAP connection and click **[:pen-button:Edit]** to open the main window of the component.
@@ -87,9 +89,10 @@ For more information on filter options and advanced settings, see, [Define the {
 8. Click {{ previewBtn }} to display a live preview of the first 100 records.
 9. Click **[OK]** to save the {{ component }}.
 
+You can now add tools to process the data returned by {{ table }} and run the {{ extraction }}.
+
 ![table_look-up](assets/images/xfa/getting-started/kna1.gif){:class="img-responsive" style="border:1px solid black;"}
 
-You can now add tools to process the data returned by {{ table }} and run the {{ extraction }}.
 
 <!---![table_look-up](assets/images/xfa/documentation/table/table_main-window_add.png) --->
 <!--- ![table_look-up](assets/images/documentation/components/table/table_look-up.png)--->

@@ -34,7 +34,8 @@ For more information, see [SAP Connection](documentation/sap-connection/index.md
 ### Create an Extraction
 
 Extractions are the main entities of {{ productName }}. 
-An extraction defines what data to extract from SAP and where to write the data.
+They define what data to extract from SAP and where to write the data.
+Follow the steps below to create a new extraction:
 
 1. In the main window of the Designer, click **[:material-plus-thick:New]**. The window "Create Extraction" opens.
 2. Select an SAP Connection from the drop-down menu in **Source** :number-1:.<br>
@@ -58,9 +59,9 @@ An extraction defines what data to extract from SAP and where to write the data.
 5. Click **[OK]**. The main window of the extraction type opens automatically.<br>
 Follow the instructions in the documentation of the selected {{ component }} to set up the extraction.
 
-#### How to Create a Simple Extraction for Beginners
+#### A Simple Extraction for Beginners
 
-Follow the steps below to create a simple extraction that extracts customer master data from the SAP table KNA1:
+Follow the steps below to extract customer master data from the SAP table KNA1:
 
 1. [Create an extraction](#create-an-extraction) that uses the {{ table }} {{ component }}.
 2. In the main window of the {{ component }}, click **[:material-plus-thick:Add]** to look up an SAP table. The window "Table Lookup" opens.<br>
@@ -79,6 +80,7 @@ The extraction is now listed in the main window of the Designer. To edit an extr
 ### Run an Extraction
 
 Extractions can be run directly in the {{ productName }} Designer{% if page.meta.product == "xtract-universal" %} or via [web service](web-api.md) and [command line](documentation/execute-and-automate/call-via-commandline.md){% else %} or from Board, see [Run Extractions in Board](documentation/run-extractions.md/#run-extractions-in-the-designer){% endif %}.
+Follow the steps below to testrun your extraction in the Designer:
 
 1. In the main window of the Designer, select an extraction :number-1: and click **[:designer-run:Run]** :number-2:. The window "Run Extraction" opens.
 ![Run-Extraction](assets/images/{{ abbr }}/getting-started/Run-Extraction.png)
