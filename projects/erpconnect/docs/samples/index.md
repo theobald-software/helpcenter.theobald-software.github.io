@@ -12,7 +12,6 @@ hide:
 
 <div class="mdx-columns" markdown>
 
-- [Authorization Objects - SAP User Rights](authority-objects-sap-user-rights.md)
 - [Check the Accessibility to an SAP System](how-to-check-the-accessibility-to-a-sap-system.md)
 - [Create a Client PSE to connect to SAP Cloud Systems :material-alert-decagram:](create-personal-security-environment.md)
 - [Implement a connection pool](implement-a-connection-pool.md)

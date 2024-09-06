@@ -29,11 +29,11 @@ The depicted example uses the following input table (BAPICATSINPUT) that is stor
 
 === "Table Format"
 
-    ![CATS-Bapi_02](site:assets/images/articles/bapi/CATS-Bapi_02.png){:class="img-responsive"}
+    ![CATS-Bapi_02](../assets/images/articles/bapi/CATS-Bapi_02.png){:class="img-responsive"}
 
 === "Table Content"
 
-    ![CATS-Bapi_03](site:assets/images/articles/bapi/CATS-Bapi_03.png){:class="img-responsive"}
+    ![CATS-Bapi_03](../assets/images/articles/bapi/CATS-Bapi_03.png){:class="img-responsive"}
 
 
 ### Setup in SSIS
@@ -42,31 +42,31 @@ The depicted example uses the following input table (BAPICATSINPUT) that is stor
 2. Add an {{ bapi }} {{ component }} to your Data Flow Task and assign a [Connection Manager](../documentation/sap-connection/index.md/#assign-connection-managers-to-xtract-components) that contains the connection details to your SAP system. 
 3. Look up the BAPI BAPI_CATIMESHEETMGR_INSERT.
 4. Provide the PROFILE "TEST" and TESTRUN " " as import parameters.<br>
-![CATS-Bapi_04](site:assets/images/articles/bapi/BAPI-CATS-Imports.png){:class="img-responsive"}
+![CATS-Bapi_04](../assets/images/articles/bapi/BAPI-CATS-Imports.png){:class="img-responsive"}
 5. Add the tables CATSRECORD_OUT and RETURN to the output.<br>
-![CATS-Bapi_05](site:assets/images/articles/bapi/BAPI-CATS-Tables.png){:class="img-responsive"}
+![CATS-Bapi_05](../assets/images/articles/bapi/BAPI-CATS-Tables.png){:class="img-responsive"}
 6. Connect the input table to the {{ bapi }} {{ component }}. The window "Input Output Selection" opens.
 7. Select the table CATSRECORD_IN to map the data from the input table to CATSRECORD_IN.
 The table fields are mapped automatically. For this, the name and data types of the table columns must match.<br>
 If the input table and CATSRECORD_IN do not match, add a *Deprived Column* component between the OLE DB Source and the {{ bapi }} {{ component }} to format the input table accordingly.<br>
-![CATS-Bapi_06](site:assets/images/articles/bapi/BAPI-CATS-mapping.png){:class="img-responsive"}
+![CATS-Bapi_06](../assets/images/articles/bapi/BAPI-CATS-mapping.png){:class="img-responsive"}
 8. Create two *OLE DB destinations* for the tables CATSRECORDS_OUT and RETURN of the {{ bapi }} {{ component }}.<br>
-![CATS-Bapi_07](site:assets/images/articles/bapi/CATS-Bapi_04.png){:class="img-responsive"}
+![CATS-Bapi_07](../assets/images/articles/bapi/CATS-Bapi_04.png){:class="img-responsive"}
 9. Run the {{ extraction }} and check the results in SAP (transaction CAT3).<br>
-![CATS-Bapi_08](site:assets/images/articles/bapi/CATS-Bapi_16.png){:class="img-responsive"}
+![CATS-Bapi_08](../assets/images/articles/bapi/CATS-Bapi_16.png){:class="img-responsive"}
 
 ### Checking for Errors
 
 The ROW fields in the RETURN table can be used to identify errors. Example:<br>
 
 1. To produce an error, set the the value for ABS_ATT_TYPE in the input table BAPICATSINPUT to 0005.<br>
-![CATS-Bapi_21](site:assets/images/articles/bapi/CATS-Bapi_21.jpg){:class="img-responsive"}
+![CATS-Bapi_21](../assets/images/articles/bapi/CATS-Bapi_21.jpg){:class="img-responsive"}
 2. Run the {{ extraction }}.<br>
 The output table CATSRECORDS_OUT does not have any entries. This means that the data in SAP is not updated.
 3. Query the SQL table RETURN to identify the error.<br>
 The numbers in the ROW column show which rows contain the erroneous records. <br>
 The message displayed in the MESSAGE column indicates that the attendance/absence type (0005) is not maintained.<br>
-![CATS-Bapi_23](site:assets/images/articles/bapi/CATS-Bapi_23.jpg){:class="img-responsive"}
+![CATS-Bapi_23](../assets/images/articles/bapi/CATS-Bapi_23.jpg){:class="img-responsive"}
 
 !!! note
 	When using BAPI_CATIMESHEETMGR_INSERT, note that only records without errors are posted. 

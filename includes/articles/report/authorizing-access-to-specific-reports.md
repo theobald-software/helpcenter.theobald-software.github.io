@@ -10,10 +10,10 @@ Access to the report can then be granted through the S_PROGRAM authorization obj
 2. Enter the name of the report you want to access and select **Attributes** as the *Subobjects*.
 3. Click **[Change]**. A window that contains the program attributes opens.
 4. Assign an authorization group.<br>
-![report-authorization](site:assets/images/articles/sap/report-authorization.png){:class="img-responsive"}
+![report-authorization](../assets/images/articles/sap/report-authorization.png){:class="img-responsive"}
 5. Edit or create a user role you want to grant access to (transaction code PFCG).
 6. Manually assign the authorization object S_PROGRAM to the user role.<br>
-![report-manual-authorization-object](site:assets/images/articles/sap/manual-authorization-object.png){:class="img-responsive"}
+![report-manual-authorization-object](../assets/images/articles/sap/manual-authorization-object.png){:class="img-responsive"}
 7. Select the action **SUBMIT** in the S_PROGRAM object field *P_ACTION*.
 8. Assign the same authorization group that is assigned to the report to the S_PROGRAM object field *P_GROUP*. 
 9. Save and generate the authorization.

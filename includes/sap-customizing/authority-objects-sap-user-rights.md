@@ -15,49 +15,49 @@ You can download the SAP profiles and upload them to your SAP system:
 {% if page.meta.product == "erpconnect" %}
 {{ Component }}  | SAP Role File
 ------------ | -------------
-[General Authorization Objects](#general-authorization-objects) | [ZXTGENERAL.SAP](site:assets/files/sap_roles/ZXTGENERAL.SAP)
-[BAPI](#bapi) | [ZXTBAPI.SAP](site:assets/files/sap_roles/ZXTBAPI.SAP)
-[BW Cube](#bw-cube-bw-query)|[ZXTQUERY.SAP](site:assets/files/sap_roles/ZXTQUERY.SAP) 
-[Query](#query)|[ZXTQUERY.SAP](site:assets/files/sap_roles/ZXTQUERY.SAP) 
-[Table](#table) | [ZXTABLE.SAP](site:assets/files/sap_roles/ZXTABLE.SAP) 
+[General Authorization Objects](#general-authorization-objects) | [ZXTGENERAL.SAP](../assets/files/sap_roles/ZXTGENERAL.SAP)
+[BAPI](#bapi) | [ZXTBAPI.SAP](../assets/files/sap_roles/ZXTBAPI.SAP)
+[BW Cube](#bw-cube-bw-query)|[ZXTQUERY.SAP](../assets/files/sap_roles/ZXTQUERY.SAP) 
+[Query](#query)|[ZXTQUERY.SAP](../assets/files/sap_roles/ZXTQUERY.SAP) 
+[Table](#table) | [ZXTABLE.SAP](../assets/files/sap_roles/ZXTABLE.SAP) 
 {% endif %}
 
 {% if page.meta.product == "yunio" %}
 {{ Component }}  | SAP Role File
 ------------ | -------------
-[General Authorization Objects](#general-authorization-objects) | [ZXTGENERAL.SAP](site:assets/files/sap_roles/ZXTGENERAL.SAP)
-[BAPI](#bapi) | [ZXTBAPI.SAP](site:assets/files/sap_roles/ZXTBAPI.SAP)
-[Report](#report)|[ZXREPORT.SAP](site:assets/files/sap_roles/ZXREPORT.SAP)
-[Table](#table) | [ZXTABLE.SAP](site:assets/files/sap_roles/ZXTABLE.SAP) 
+[General Authorization Objects](#general-authorization-objects) | [ZXTGENERAL.SAP](../../assets/files/sap_roles/ZXTGENERAL.SAP)
+[BAPI](#bapi) | [ZXTBAPI.SAP](../../assets/files/sap_roles/ZXTBAPI.SAP)
+[Report](#report)|[ZXREPORT.SAP](../../assets/files/sap_roles/ZXREPORT.SAP)
+[Table](#table) | [ZXTABLE.SAP](../../assets/files/sap_roles/ZXTABLE.SAP) 
 {% endif %}
 
 {% if page.meta.product == "xtract-universal" or page.meta.product == "board-connector" or page.meta.product == "xtract-is"%}
 {{ Component }}  | SAP Role File
 ------------ | -------------
-[General Authorization Objects](#general-authorization-objects) | [ZXTGENERAL.SAP](site:assets/files/sap_roles/ZXTGENERAL.SAP)
-[BAPI](#bapi) | [ZXTBAPI.SAP](site:assets/files/sap_roles/ZXTBAPI.SAP)
-[BW Cube](#bw-cube-bw-query)|[ZXTQUERY.SAP](site:assets/files/sap_roles/ZXTQUERY.SAP) 
-[BW Hierarchy](#bw-hierarchy) |[ZXTBWHIERARCHY.SAP](site:assets/files/sap_roles/ZXTBWHIERARCHY.SAP)
-[ODP (Operational Data Provisioning)](#odp) |[ZXTODP.SAP](site:assets/files/sap_roles/ZXTODP.SAP)
-[OHS (Open Hub Services)](#ohs) |[ZXTOHS.SAP](site:assets/files/sap_roles/ZXTOHS.SAP)
-[Query](#query)|[ZXTQUERY.SAP](site:assets/files/sap_roles/ZXTQUERY.SAP) 
-[Report](#report)|[ZXREPORT.SAP](site:assets/files/sap_roles/ZXREPORT.SAP)
-[Table](#table) | [ZXTABLE.SAP](site:assets/files/sap_roles/ZXTABLE.SAP) 
-[Table CDC](#table-cdc) | [ZXTABLECDC.SAP](site:assets/files/sap_roles/ZXTABLECDC.SAP)
-[DeltaQ ](#deltaq) |[ZXTDELTAQ.SAP](site:assets//files/sap_roles/ZXTDELTAQ.SAP),[DELTAQ_CUSTOMIZING_CHECK](site:assets/files/sap_roles/DELTAQ_CUSTOMIZING_CHECK.SAP)
+[General Authorization Objects](#general-authorization-objects) | [ZXTGENERAL.SAP](../../assets/files/sap_roles/ZXTGENERAL.SAP)
+[BAPI](#bapi) | [ZXTBAPI.SAP](../../assets/files/sap_roles/ZXTBAPI.SAP)
+[BW Cube](#bw-cube-bw-query)|[ZXTQUERY.SAP](../../assets/files/sap_roles/ZXTQUERY.SAP) 
+[BW Hierarchy](#bw-hierarchy) |[ZXTBWHIERARCHY.SAP](../../assets/files/sap_roles/ZXTBWHIERARCHY.SAP)
+[ODP (Operational Data Provisioning)](#odp) |[ZXTODP.SAP](../../assets/files/sap_roles/ZXTODP.SAP)
+[OHS (Open Hub Services)](#ohs) |[ZXTOHS.SAP](../../assets/files/sap_roles/ZXTOHS.SAP)
+[Query](#query)|[ZXTQUERY.SAP](../../assets/files/sap_roles/ZXTQUERY.SAP) 
+[Report](#report)|[ZXREPORT.SAP](../../assets/files/sap_roles/ZXREPORT.SAP)
+[Table](#table) | [ZXTABLE.SAP](../../assets/files/sap_roles/ZXTABLE.SAP) 
+[Table CDC](#table-cdc) | [ZXTABLECDC.SAP](../../assets/files/sap_roles/ZXTABLECDC.SAP)
+[DeltaQ ](#deltaq) |[ZXTDELTAQ.SAP](../../assets//files/sap_roles/ZXTDELTAQ.SAP),[DELTAQ_CUSTOMIZING_CHECK](../../assets/files/sap_roles/DELTAQ_CUSTOMIZING_CHECK.SAP)
 {% endif %}
 
 {% if page.meta.product == "xtract-for-alteryx" %}
 {{ Component }}  | SAP Role File
 ------------ | -------------
-[General Authorization Objects](#general-authorization-objects) | [ZXTGENERAL.SAP](site:assets/files/sap_roles/ZXTGENERAL.SAP)
-[BAPI](#bapi) | [ZXTBAPI.SAP](site:assets/files/sap_roles/ZXTBAPI.SAP)
-[BW Cube](#bw-cube-bw-query)|[ZXTQUERY.SAP](site:assets/files/sap_roles/ZXTQUERY.SAP) 
-[BW Hierarchy](#bw-hierarchy) |[ZXTBWHIERARCHY.SAP](site:assets/files/sap_roles/ZXTBWHIERARCHY.SAP)
-[ODP (Operational Data Provisioning)](#odp) |[ZXTODP.SAP](site:assets/files/sap_roles/ZXTODP.SAP)
-[Query](#query)|[ZXTQUERY.SAP](site:assets/files/sap_roles/ZXTQUERY.SAP) 
-[Report](#report)|[ZXREPORT.SAP](site:assets/files/sap_roles/ZXREPORT.SAP)
-[Table](#table) | [ZXTABLE.SAP](site:assets/files/sap_roles/ZXTABLE.SAP) 
+[General Authorization Objects](#general-authorization-objects) | [ZXTGENERAL.SAP](../../assets/files/sap_roles/ZXTGENERAL.SAP)
+[BAPI](#bapi) | [ZXTBAPI.SAP](../../assets/files/sap_roles/ZXTBAPI.SAP)
+[BW Cube](#bw-cube-bw-query)|[ZXTQUERY.SAP](../../assets/files/sap_roles/ZXTQUERY.SAP) 
+[BW Hierarchy](#bw-hierarchy) |[ZXTBWHIERARCHY.SAP](../../assets/files/sap_roles/ZXTBWHIERARCHY.SAP)
+[ODP (Operational Data Provisioning)](#odp) |[ZXTODP.SAP](../../assets/files/sap_roles/ZXTODP.SAP)
+[Query](#query)|[ZXTQUERY.SAP](../../assets/files/sap_roles/ZXTQUERY.SAP) 
+[Report](#report)|[ZXREPORT.SAP](../../assets/files/sap_roles/ZXREPORT.SAP)
+[Table](#table) | [ZXTABLE.SAP](../../assets/files/sap_roles/ZXTABLE.SAP) 
 {% endif %}
 
 !!! note
@@ -72,8 +72,11 @@ S_RFC            RFC_TYPE=FUGR; RFC_NAME=SRFC; ACTVT=16
 S_RFC            RFC_TYPE=FUGR; RFC_NAME=RFC1; ACTVT=16
 ```
 
-[:material-download-circle: Download SAP profile for general authorization](site:assets/files/sap_roles/ZXTGENERAL.SAP){ .md-button .md-button--primary }
-
+{% if page.meta.product == "erpconnect" %}
+[:material-download-circle: Download SAP profile for general authorization](../assets/files/sap_roles/ZXTGENERAL.SAP){ .md-button .md-button--primary }
+{% else %}
+[:material-download-circle: Download SAP profile for general authorization](../../assets/files/sap_roles/ZXTGENERAL.SAP){ .md-button .md-button--primary }
+{% endif %}
 
 ### BAPI
 
@@ -81,7 +84,11 @@ S_RFC            RFC_TYPE=FUGR; RFC_NAME=RFC1; ACTVT=16
 S_RFC            ACTVT=16; RFC_TYPE=FUGR; RFC_NAME=DDIF_FIELDINFO_GET, SDIFRUNTIME     
 ```
 
-[:material-download-circle: Download SAP profile for BAPI Extractions](site:assets/files/sap_roles/ZXTBAPI.SAP){ .md-button .md-button--primary }
+{% if page.meta.product == "erpconnect" %}
+[:material-download-circle: Download SAP profile for BAPI Extractions](../assets/files/sap_roles/ZXTBAPI.SAP){ .md-button .md-button--primary }
+{% else %}
+[:material-download-circle: Download SAP profile for BAPI Extractions](../../assets/files/sap_roles/ZXTBAPI.SAP){ .md-button .md-button--primary }
+{% endif %}
 
 {% if page.meta.product != "yunio" %}
 ### BW Cube / BW Query 
@@ -121,7 +128,11 @@ Authorizations for the underlying Queries, Cubes, InfoAreas and analysis need to
 
 Alternatively, you can assign the SAP role template  ```S_RS_RREPU```. <br>
 
-[:material-download-circle: Download SAP profile for BW Cube / BW Query](site:assets/files/sap_roles/ZXTQUERY.SAP){ .md-button .md-button--primary }
+{% if page.meta.product == "erpconnect" %}
+[:material-download-circle: Download SAP profile for BW Cube / BW Query](../assets/files/sap_roles/ZXTQUERY.SAP){ .md-button .md-button--primary }
+{% else %}
+[:material-download-circle: Download SAP profile for BW Cube / BW Query](../../assets/files/sap_roles/ZXTQUERY.SAP){ .md-button .md-button--primary }
+{% endif %}
 
 
 {% if page.meta.product != "erpconnect" %}
@@ -148,7 +159,7 @@ S_TABU_NAM     ACTVT=02, 03; TABLE=ENLFDIR
 S_TABU_NAM     ACTVT=02, 03; TABLE=RSHIEDIR
 ```
 
-[:material-download-circle: Download SAP profile for BW Hierarchy](site:assets/files/sap_roles/ZXTBWHIERARCHY.SAP){ .md-button .md-button--primary }
+[:material-download-circle: Download SAP profile for BW Hierarchy](../../assets/files/sap_roles/ZXTBWHIERARCHY.SAP){ .md-button .md-button--primary }
 
 ### ODP
 
@@ -158,7 +169,7 @@ For a complete and detailed list of authorization objects refer to [SAP Note 285
 S_TABU_NAM       ACTVT=03; TABLE=TCURX
 ```
 
-[:material-download-circle: Download SAP profile for ODP](site:assets/files/sap_roles/ZXTODP.SAP){ .md-button .md-button--primary }
+[:material-download-circle: Download SAP profile for ODP](../../assets/files/sap_roles/ZXTODP.SAP){ .md-button .md-button--primary }
 
 
 {% if page.meta.product != "xtract-for-alteryx" %}
@@ -185,7 +196,7 @@ S_RS_AUTH  BIAUTH=0BI_ALL
 S_ADMI_FCD S_ADMI_FCD=ST0R
 ```
 
-[:material-download-circle: Download SAP profile for OHS](site:assets/files/sap_roles/ZXTOHS.SAP){ .md-button .md-button--primary }
+[:material-download-circle: Download SAP profile for OHS](../../assets/files/sap_roles/ZXTOHS.SAP){ .md-button .md-button--primary }
 
 {% endif %}
 {% endif %}
@@ -196,7 +207,11 @@ S_ADMI_FCD S_ADMI_FCD=ST0R
 S_RFC            RFC_TYPE=FUGR; RFC_NAME=AQRC; ACTVT=16 
 ```
 
-[:material-download-circle: Download SAP profile for SAP Query](site:assets/files/sap_roles/ZXTQUERY.SAP){ .md-button .md-button--primary }
+{% if page.meta.product == "erpconnect" %}
+[:material-download-circle: Download SAP profile for SAP Query](../assets/files/sap_roles/ZXTQUERY.SAP){ .md-button .md-button--primary }
+{% else %}
+[:material-download-circle: Download SAP profile for SAP Query](../../assets/files/sap_roles/ZXTQUERY.SAP){ .md-button .md-button--primary }
+{% endif %}
 
 {% endif %}
 
@@ -217,8 +232,11 @@ S_BTCH_JOB       JOBGROUP=*; JOBACTION=RELE
 !!! note
     The necessary transport request for function group *ZXTRACTABAP* is located in the following path: ```C:\Program Files\[XtractProduct]\ABAP\Report\Z_XTRACT_IS_REMOTE_REPORT-transport.zip``` of the default installation.
 
-
-[:material-download-circle: Download SAP profile for Report](site:assets/files/sap_roles/ZXREPORT.SAP){ .md-button .md-button--primary }
+{% if page.meta.product == "erpconnect" %}
+[:material-download-circle: Download SAP profile for Report](../assets/files/sap_roles/ZXREPORT.SAP){ .md-button .md-button--primary }
+{% else %}
+[:material-download-circle: Download SAP profile for Report](../../assets/files/sap_roles/ZXREPORT.SAP){ .md-button .md-button--primary }
+{% endif %}
 
 To execute a report with {{ productName }}, the SAP connection user needs explicit authorization to execute the report.
 Authorization can be granted using one of the following methods:
@@ -270,7 +288,12 @@ Additional options:
 
 {% endif %}
 
-[:material-download-circle: Download SAP profile for Table](site:assets/files/sap_roles/ZXTABLE.SAP){ .md-button .md-button--primary }
+{% if page.meta.product == "erpconnect" %}
+[:material-download-circle: Download SAP profile for Table](../assets/files/sap_roles/ZXTABLE.SAP){ .md-button .md-button--primary }
+{% else %}
+[:material-download-circle: Download SAP profile for Table](../../assets/files/sap_roles/ZXTABLE.SAP){ .md-button .md-button--primary }
+{% endif %}
+
 
 {% if page.meta.product != "erpconnect" %}
 {% if  page.meta.product != "yunio" %}
@@ -292,7 +315,7 @@ XXXX (stands for a placeholder) is the authorization group for the source table.
 !!! note
     The transport requests for the required function groups */THEO/READ_TABLE* are located in ```C:\Program Files\[XtractProduct]\ABAP\TableCDC``` and ```C:\Program Files\[XtractProduct]\ABAP\Table```. 
 
-[:material-download-circle: Download SAP profile for Table CDC](site:assets/files/sap_roles/ZXTABLECDC.SAP){ .md-button .md-button--primary }
+[:material-download-circle: Download SAP profile for Table CDC](../../assets/files/sap_roles/ZXTABLECDC.SAP){ .md-button .md-button--primary }
 
 
 
@@ -364,9 +387,9 @@ XXXX (stands for a placeholder) is the authorization group for the source table.
 	S_RO_OSOA        OLTPSOURCE=*; OSOAAPCO=*; OSOAPART=DATA; ACTVT=03;  | Only in SAP Releases  7.0 and higher
 	```
 
-[:material-download-circle: Download SAP profile for DeltaQ](site:assets/files/sap_roles/ZXTDELTAQ.SAP){ .md-button .md-button--primary }
+[:material-download-circle: Download SAP profile for DeltaQ](../../assets/files/sap_roles/ZXTDELTAQ.SAP){ .md-button .md-button--primary }
 
-[:material-download-circle: Download SAP profile for DeltaQ Customizing Check](site:assets/files/sap_roles/DELTAQ_CUSTOMIZING_CHECK.SAP){ .md-button .md-button--primary }
+[:material-download-circle: Download SAP profile for DeltaQ Customizing Check](../../assets/files/sap_roles/DELTAQ_CUSTOMIZING_CHECK.SAP){ .md-button .md-button--primary }
 
 {% endif %}
 {% endif %}

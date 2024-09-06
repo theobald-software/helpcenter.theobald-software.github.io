@@ -14,7 +14,7 @@ This configuration can contain dynamic elements, like [extraction parameters](pa
 The {{ productName }} Designer offers a test run option for extractions to make sure that the extraction runs properly. 
 You can define runtime parameters and other options to run an extraction directly in your web browser.
 
-1. Select an extraction from the [list of extractions](site:documentation/designer/#list-of-extractions) and click **[:designer-run:Run]** :number-1:. The window "Run Extraction" opens.<br>
+1. Select an extraction from the [list of extractions](designer.md/#list-of-extractions) and click **[:designer-run:Run]** :number-1:. The window "Run Extraction" opens.<br>
 ![Extraction-Run](../assets/images/{{ abbr }}/documentation/automation/Run-Table-Extraction-Plants.png){:class="img-responsive"}
 2. If needed, define [extraction parameters](parameters/extraction-parameters.md):
 	- Select the checkbox of the parameter you want to override :number-2:. The parameter is added to the extraction URL. :number-3:

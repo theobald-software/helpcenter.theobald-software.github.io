@@ -13,7 +13,7 @@ A table that contains the product information and is stored on an SQL Server is 
 
 The SAP custom function module Z_ECS_PRODUCT_CREATE_MULTI has a table parameter *T_PRODUCTS* that can be used for input. <br>
 The table has the following structure:<br>
-![ssis-write-sap-01](site:assets/images/articles/bapi/ssis-write-sap-01.png)
+![ssis-write-sap-01](../assets/images/articles/bapi/ssis-write-sap-01.png)
 
 ### Input Table
 
@@ -34,17 +34,17 @@ CREATE TABLE [SAP Products] (
 ```
 
 The table has the following content:<br>
-![ssis-write-sql-01](site:assets/images/articles/bapi/ssis-write-sql-01.png){:class="img-responsive" }
+![ssis-write-sql-01](../assets/images/articles/bapi/ssis-write-sql-01.png){:class="img-responsive" }
 
 ### Setup in SSIS
 
 1. Add a data source to your Data Flow Task. The depicted example uses a table stored on an SQL Server, see [Input Table](#input-table).
 2. Add an {{ bapi }} {{ component }} to your Data Flow Task and assign a [Connection Manager](../documentation/sap-connection/index.md/#assign-connection-managers-to-xtract-components) that contains the connection details to your SAP system. 
 3. Look up the function module Z_ECS_PRODUCT_CREATE_MULTI.<br>
-![ssis-write-xtractis-fuba-01](site:assets/images/articles/bapi/BAPI-table-input.png){:class="img-responsive" }
+![ssis-write-xtractis-fuba-01](../assets/images/articles/bapi/BAPI-table-input.png){:class="img-responsive" }
 4. Connect the input table to the {{ bapi }} {{ component }}. <br>
 The input table is automatically mapped to the corresponding table in the {{ bapi }} {{ component }}.<br>
-![ssis-write-xtractis-fuba-02](site:assets/images/articles/bapi/ssis-write-xtractis-fuba-02.png){:class="img-responsive" }
+![ssis-write-xtractis-fuba-02](../assets/images/articles/bapi/ssis-write-xtractis-fuba-02.png){:class="img-responsive" }
 5. Run the {{ extraction }} and check the results in SAP.
 
 *****

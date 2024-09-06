@@ -6,7 +6,7 @@ hide:
   - tags
 ---
 
-![img](site:assets/images/logos/theo-thumbs.png){ .lg .middle width="30px"} This section offers a set of sample workflows you can download and use as a base to design your own processes.
+![img](./assets/images/logos/theo-thumbs.png){ .lg .middle width="30px"} This section offers a set of sample workflows you can download and use as a base to design your own processes.
 
 <!--- align Download buttons-->
 <style>

@@ -8,7 +8,7 @@ Data extraction via {{ table }} {{ component }} is not supported.
 Create the following custom function module in SAP:
 
 1. Use SAP transaction SE37 to create a remote enabled custom function module Z_HR_CLUSTER_READ. <br>
-![payroll01](site:assets/images/articles/bapi/payroll01.png){:class="img-responsive"}
+![payroll01](../assets/images/articles/bapi/payroll01.png){:class="img-responsive"}
 2. Create the following parameters:
 
 	=== "Import Parameters"
@@ -20,7 +20,7 @@ Create the following custom function module in SAP:
 		ENDDATE          TYPE=DATS;
 		```
 
-		![payroll02](site:assets/images/articles/bapi/payroll02.png){:class="img-responsive"}
+		![payroll02](../assets/images/articles/bapi/payroll02.png){:class="img-responsive"}
 
 	=== "Table Parameters"
 
@@ -30,7 +30,7 @@ Create the following custom function module in SAP:
 		CRT        LIKE=PC208
 		```
 
-		![payroll03](site:assets/images/articles/bapi/payroll03.png){:class="img-responsive"}
+		![payroll03](../assets/images/articles/bapi/payroll03.png){:class="img-responsive"}
 
 3. Copy and paste the following ABAP source code into the source code area of the function module.
 
