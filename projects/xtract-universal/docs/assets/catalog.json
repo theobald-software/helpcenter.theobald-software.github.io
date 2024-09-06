@@ -1,5 +1,16 @@
 [
   {
+    "Version": "2024.9.6.51",
+    "LegacyReleaseDate": "2024-09-06 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "XtractUniversal",
+        "Component": "Designer",
+        "Message": "Fixed a bug where the stand-alone designer would run into an error when creating an extraction. This would only appear if the designer was located in a root directory."
+      }
+    ]
+  },
+  {
     "Version": "2024.9.6.32",
     "LegacyReleaseDate": "2024-09-06 00:00:00Z",
     "Changes": [
