@@ -1,16 +1,5 @@
 [
   {
-    "Version": "2024.9.6.3",
-    "LegacyReleaseDate": "2024-09-06 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BWCube",
-        "Message": "Fixes an issue in MDX where selecting external hierarchy members from the value help for filters results in errors during extraction"
-      }
-    ]
-  },
-  {
     "Version": "2024.8.28.11",
     "LegacyReleaseDate": "2024-08-28 00:00:00Z",
     "Changes": [
