@@ -1,5 +1,16 @@
 [
   {
+    "Version": "2024.9.11.62",
+    "LegacyReleaseDate": "2024-09-11 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "XtractUniversal",
+        "Component": "Destinations",
+        "Message": "Fixed a bug where column naming style would be wrong in Exasol, Redshift, HANA and PostgreSQL destinations.\nBug introduced in version 2024.8.30.35"
+      }
+    ]
+  },
+  {
     "Version": "2024.9.11.25",
     "LegacyReleaseDate": "2024-09-11 00:00:00Z",
     "Changes": [
