@@ -1,5 +1,16 @@
 [
   {
+    "Version": "2024.9.11.23",
+    "LegacyReleaseDate": "2024-09-11 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "ERPConnect",
+        "Component": "General",
+        "Message": "Refactored internal structure for better extensibility."
+      }
+    ]
+  },
+  {
     "Version": "2024.8.28.11",
     "LegacyReleaseDate": "2024-08-28 00:00:00Z",
     "Changes": [
