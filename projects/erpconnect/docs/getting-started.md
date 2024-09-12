@@ -26,7 +26,7 @@ For more information, see [Installation](documentation/introduction/installation
 ### Connect to SAP
 
 1. Create an `R3Connection` object and define all [input parameters](documentation/sap-connection/log-on-to-sap.md/#input-parameters).<br>
-Make sure to use an SAP dialog user with sufficient SAP authorization, see [Authorization Objects - SAP User Rights](samples/authority-objects-sap-user-rights.md).
+Make sure to use an SAP dialog user with sufficient SAP authorization, see [Authorization Objects - SAP User Rights](documentation/sap-authority-objects.md).
 {% include "erpconnect/code/sap-connection.md" %}
 2. Establish the connection using `Open()`.
 3. Run the program to test the SAP connection.

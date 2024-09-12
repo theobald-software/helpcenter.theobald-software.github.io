@@ -90,7 +90,7 @@ Copy the 32-Bit Version of librfc32.dll to the `\SysWoW64` folder.
 
 ### Security Settings
  	
-- For logging on to SAP, a system or dialog user with appropriate [authority objects](../../samples/authority-objects-sap-user-rights.md) is required.
+- For logging on to SAP, a system or dialog user with appropriate [authority objects](../sap-authority-objects.md) is required.
 - Plain authentication (user/password), Secure Network Communications (SNC) with and without Single Sign-On (SSO) and SAP Logon Tickets (MYSAPSSO2) are supported.
 
 
