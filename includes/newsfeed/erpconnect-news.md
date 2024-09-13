@@ -11,6 +11,16 @@
 
     :material-clock-time-two-outline: 2024-09-13
 
+-   **Support for LINQToERP 2013 ended**
+
+    ---
+
+    The support for LINQToERP 2013 has ended. The LINQToERP setup files will be removed when updating to the latest version.
+
+    ---
+
+    :material-clock-time-two-outline: 2024-09-13
+
 -   **Welcome to the ERPConnect HelpCenter**
 
     ---
