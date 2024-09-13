@@ -60,6 +60,7 @@ For more information about destination details, select your destination: <select
 	<option value="huawei">Huawei Cloud OBS</option>
 	<option value="ibm-db2">IBM Db2</option>
 	<option value="knime">KNIME</option>
+	<option value="microsoft-fabric-onelake">Microsoft Fabric OneLake</option>
 	<option value="microsoft-sql-server">Microsoft SQL Server</option>
 	<option value="mysql">MySQL</option>
 	<option value="oracle">Oracle</option>
@@ -119,6 +120,7 @@ For more information about destination settings, select your destination: <selec
 	<option value="huawei">Huawei Cloud OBS</option>
 	<option value="ibm-db2">IBM Db2</option>
 	<option value="knime">KNIME</option>
+	<option value="microsoft-fabric-onelake">Microsoft Fabric OneLake</option>
 	<option value="microsoft-sql-server">Microsoft SQL Server</option>
 	<option value="mysql">MySQL</option>
 	<option value="oracle">Oracle</option>
