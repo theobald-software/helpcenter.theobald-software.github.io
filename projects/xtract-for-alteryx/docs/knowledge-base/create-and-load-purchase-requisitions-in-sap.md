@@ -1,6 +1,7 @@
 ---
 title: Create and Load Purchase Requisitions in SAP
 description: Create and Load Purchase Requisitions in SAP ERP 
+author: Simon Rech, Valerie Schipka
 ---
 
 The following article shows how to use the Xtract BAPI component of {{ productName }} to create a new purchase requisition in SAP and how to load the data of the purchase requisition into Alteryx.

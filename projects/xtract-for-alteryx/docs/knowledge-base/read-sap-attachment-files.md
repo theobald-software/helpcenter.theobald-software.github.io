@@ -1,9 +1,7 @@
 ---
-layout: page
 title: Read and Download SAP Attachment Files 
 description: Test
-permalink: /:collection/:path
-weight: 180
+author: Simon Rech, Valerie Schipka
 ---
 
 The following article shows how to extract attachment files of all formats from an SAP system, e.g., .pdf files of purchase orders.<br>

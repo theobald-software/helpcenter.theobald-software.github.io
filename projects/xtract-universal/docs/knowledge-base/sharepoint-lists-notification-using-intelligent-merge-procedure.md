@@ -1,6 +1,7 @@
 ---
 title: SharePoint Lists Notification using Intelligent Merge Procedure
 description: SharePoint lists notification using intelligent merge procedure
+author: Christian Tauchmann
 ---
 
 The following article shows how to create SharePoint lists notification using intelligent merge procedure of {{ productName }}. 

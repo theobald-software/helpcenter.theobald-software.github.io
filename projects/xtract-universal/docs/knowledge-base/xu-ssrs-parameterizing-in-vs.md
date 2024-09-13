@@ -1,6 +1,7 @@
 ---
 title: Use Computed Query Parameters for SSRS
 description: Using Computed Query Parameters in Visual Studio for SSRS
+author: Matthias Grabowski, Valerie Schipka
 ---
 
 This article shows how to parameterize extractions in Visual Studio as part of {{ productName }}'s [Power BI Report Server destination](../documentation/destinations/server-report-services.md).

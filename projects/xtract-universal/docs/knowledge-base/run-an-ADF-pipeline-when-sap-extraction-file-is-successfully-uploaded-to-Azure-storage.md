@@ -1,6 +1,7 @@
 ---
 title: Run an ADF Pipeline when an SAP Extraction File is uploaded to Azure Storage
 description: Runs an ADF pipeline when extraction file is uploaded to Azure storage
+author: Khoder Elzein, Valerie Schipka
 ---
 
 The following article shows how to run an event-driven pipeline in Azure Data Factory to process SAP data extracted with [{{ productName }}](https://theobald-software.com/en/xtract-universal/) into an Azure Storage. <br>
