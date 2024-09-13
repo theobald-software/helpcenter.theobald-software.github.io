@@ -1,6 +1,16 @@
 <div class="grid cards" markdown>
 
 
+-   **ERPConnect35 is now in maintenance mode**
+
+    ---
+
+    ERPConnect35 will still receive bug fixes until its end of life in Jan 2029. New features are only implemented for ERPConnectStandard20.
+
+    ---
+
+    :material-clock-time-two-outline: 2024-09-13
+
 -   **Welcome to the ERPConnect HelpCenter**
 
     ---
