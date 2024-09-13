@@ -18,7 +18,8 @@
       {
         "Product": "ERPConnect",
         "Component": "General",
-        "Message": "Refactored internal structure for better extensibility."
+        "Message": "ERPConnect35 is now in maintenance mode.",
+        "ReleaseNote": "* ERPConnect35 will only receive bug fixes \n* New features are available in ERPConnectStandard20 only"
       }
     ]
   },
