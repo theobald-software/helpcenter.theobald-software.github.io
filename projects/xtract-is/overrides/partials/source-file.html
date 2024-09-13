@@ -17,10 +17,17 @@ https://github.com/squidfunk/mkdocs-material/blob/master/src/partials/source-fil
         {{ page.meta.git_creation_date_localized }}
     {% endif %}
 
-    <!-- mkdocs-git-revision-date-plugin -->
+    <!-- mkdocs-git-revision-date-plugin-->
     {% elif page.meta.revision_date %}
     {{ lang.t("source.file.date.updated") }}:
     {{ page.meta.revision_date }}
+    {% endif %}
+    <br>
+    {% if page.meta.author %}
+        <span class="twemoji" style="display:inline-flex; vertical-align:middle; margin-right:5px;">
+            {% include ".icons/fontawesome/solid/user-pen.svg" %} 
+        </span>  
+        {{ page.meta.author }}
     {% endif %}
 </small>
 </div>
