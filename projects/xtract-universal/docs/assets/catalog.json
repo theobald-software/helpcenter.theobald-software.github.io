@@ -1,5 +1,16 @@
 [
   {
+    "Version": "2024.9.16.46",
+    "LegacyReleaseDate": "2024-09-16 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Server",
+        "Component": "General",
+        "Message": "Restored the logging of license information."
+      }
+    ]
+  },
+  {
     "Version": "2024.9.13.62",
     "LegacyReleaseDate": "2024-09-13 00:00:00Z",
     "Changes": [
