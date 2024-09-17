@@ -19,6 +19,5 @@ Enter WHERE clauses manually in *Text mode* or use the [WHERE Clause Editor](#wh
 **** 
 #### Related Links
 - [Knowledge Base Article: Delta Table Extraction](../../knowledge-base/delta-table-extraction.md)
-- [Knowledge Base Article: Change Data Capture with CDHDR](../../knowledge-base/change-data-capture-with-cdhdr.md)
 - [Knowledge Base Article: Working with Lists in the WHERE-Clause Editor](../../knowledge-base/where-clause-editor-lists.md)
 - [Knowledge Base Article: LIKE Operand in WHERE Clauses](../../knowledge-base/like-operand-where-clause.md)
