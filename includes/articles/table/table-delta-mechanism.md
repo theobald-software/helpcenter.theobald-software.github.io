@@ -13,10 +13,10 @@ Click the graphic to zoom in.
 
 [![Delta-Process]][Delta-Process]
 
-  [Delta-Process]: ../assets/images/articles/table-cdc/tablecdc-process.png
+  [Delta-Process]: ../assets/images/articles/table/table-delta-process.png
   
 
 !!! tip
 
-	Use the SAP transaction DB02 to view all triggers of Table CDC log tables in SAP. 
+	Use the SAP transaction DB02 to view all triggers of Table log tables in SAP. 
 
