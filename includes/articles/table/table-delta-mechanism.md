@@ -1,14 +1,14 @@
 
-The following article illustrates the process of delta table extractions using the {{ table }} {{ component }}.
+The following article illustrates the extraction process of the {{ table }} {{ component }}.
 
-### Table Delta Process
+### Table Extraction Process
 
-The delta mechanism of Table includes the following processes:
+The extraction mechanism of Table includes the following processes:
 - Lookup process to read SAP metadata for the definition of the Table extraction.
--  watch process to create a database trigger on the source table and to create the corresponding log table in SAP.
-- Synchronize data process to run Table extractions regularly.
+- Configuration of the {{ table }} {{ component }} definition.
+- Execution of the asynchron data loading process.
 
-The depicted graphic illustrates the processes in both {{ productName }} and in SAP.
+The depicted graphic illustrates the mechanism in both {{ productName }} and in SAP.
 Click the graphic to zoom in.
 
 [![Delta-Process]][Delta-Process]
@@ -16,7 +16,4 @@ Click the graphic to zoom in.
   [Delta-Process]: ../assets/images/articles/table/table-delta-process.png
   
 
-!!! tip
-
-	Use the SAP transaction DB02 to view all triggers of Table log tables in SAP. 
 
