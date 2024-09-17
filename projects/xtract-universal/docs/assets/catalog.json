@@ -1,5 +1,16 @@
 [
   {
+    "Version": "2024.9.17.110",
+    "LegacyReleaseDate": "2024-09-17 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "XtractUniversal",
+        "Component": "General",
+        "Message": "Fixed a bug causing a connection issues if the system uses an unexpected encoding"
+      }
+    ]
+  },
+  {
     "Version": "2024.9.16.46",
     "LegacyReleaseDate": "2024-09-16 00:00:00Z",
     "Changes": [
