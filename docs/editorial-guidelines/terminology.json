@@ -1,0 +1,10 @@
+{
+    "whitelist": ["allowlist", "safe list"],
+    "blacklist": ["denylist", "blocklist"],
+    "master": ["main", "primary"],
+    "slave": ["secondary", "replica"],
+    "dummy": ["sample", "placeholder"],
+    "manpower": ["workforce", "personnel"],
+    "sanity check": ["validation check", "integrity check"],
+    "guys": ["folks", "everyone", "team"]
+}

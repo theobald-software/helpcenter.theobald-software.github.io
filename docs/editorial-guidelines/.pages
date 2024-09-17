@@ -3,13 +3,14 @@ nav:
     - markdown-sample.md
     - screenshot-conventions.md
     - Administration:
+        - glossary.md
         - setup.md
         - symlinks.md
         - plugins-and-theme.md
         - files-and-folders.md
         - pages-and-articles.md
         - offline-documentation.md
-        - glossary.md
+        - terminology-check.md
         - to-do-lists.md
         - about-linkchecker.md
 collapse: false
