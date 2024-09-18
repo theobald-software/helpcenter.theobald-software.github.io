@@ -2,7 +2,7 @@
 title: Terminology Check
 ---
 
-You can enable a script in Notepad++ that checks the content of your document against a local termbase that contains a list of unpermitted terms.
+You can enable a script in Notepad++ that checks the content of your document against a local termbase.
 If an unpermitted term is detected, the word is highlighted in red. When selecting the word, a drop-down list with permittted alternatives opens.
 
 !!! note
@@ -11,7 +11,7 @@ If an unpermitted term is detected, the word is highlighted in red. When selecti
 
 ### Termbase
 
-Unpermitted terms are collected in a json file that is part of the helpcenter repository at `C:\Source\helpcenter.theobald-software.github.io\docs\terminology.json`.
+Unpermitted terms are collected in a json file that is part of the helpcenter repository at `helpcenter.theobald-software.github.io\docs\terminology.json`.
 
 The json file uses the following format to define unpermitted terms and permitted alternatives:
 
@@ -23,7 +23,6 @@ The json file uses the following format to define unpermitted terms and permitte
 ```json title="Example"
 {
     "whitelist": ["allowlist", "safe list"],
-    "drop down menu": ["drop-down list"],
     "blacklist": ["denylist", "blocklist"],
     "master": ["main", "primary"],
     "slave": ["secondary", "replica"],
@@ -42,9 +41,8 @@ The json file uses the following format to define unpermitted terms and permitte
     - Go to **Plugins > Plugins Admin**.
     - Search for **PythonScript** and install it.
     - Restart Notepad++.
-2. Make sure the following file exists on your local machine: `C:\Source\helpcenter.theobald-software.github.io\docs\terminology.json`. If the file does not exist, pull the main branch of the helpcenter repository. 
-3. Open the following file with admin rights: `C:\Program Files\Notepad++\plugins\PythonScript\scripts\startup.py`.
-4. Paste the following code into the `startup.py`.
+2. Open the following file with administrator rights: `C:\Program Files\Notepad++\plugins\PythonScript\scripts\startup.py`.
+3. Paste the following code into the `startup.py` file.
 
 	```python	
 	import json
@@ -143,6 +141,6 @@ The json file uses the following format to define unpermitted terms and permitte
 6. In the section *Scripts*, select **Machine Scripts**. The startup.py file should be listed in the file tree menu.
 7.  Select *ATSTARTUP* as the initialization method.<br> 
 ![notepad-script](../assets/images/editorial-guide/Notepad++_Python_Script_Configuration.png)
-8. Click **OK** and restart Notepad++.
+8. Click **[OK]** and restart Notepad++.
 
 The script now runs in the background and checks the current document against the `terminology.json` file for unpermitted terms.
