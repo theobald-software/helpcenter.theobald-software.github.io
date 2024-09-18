@@ -1,6 +1,7 @@
 ---
 title: Sync Copilot with SAP using Power Automate and yunIO
 description: Sync Copilot with SAP using Power Automate and yunIO
+author: Christian Tauchmann, Valerie Schipka
 ---
 
 This article shows how to synchronize Microsoft Copilot with SAP.<br>

@@ -1,6 +1,7 @@
 ---
 title: Integrate a yunIO Service via Nintex Gateway
 description: Integrate a yunIO Service with Nintex
+author: Christian Tauchmann, Valerie Schipka
 ---
 
 

@@ -108,7 +108,6 @@ plugins:
   #- swagger-ui-tag
   #- glightbox #image zoom
   #- tags # enables tags in front matter
-  - git-revision-date-localized
 
 # Continuous integration
   - group:

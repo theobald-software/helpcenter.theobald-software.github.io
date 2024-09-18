@@ -1,6 +1,7 @@
 ---
 title: Populate Drop Down Controls in Power Apps
 description: How to use yunIO to populate Drop Down Controls in Power Apps with SAP data
+author: Christian Tauchmann, Valerie Schipka
 ---
 
 The following article shows how to integrate yunIO services with Microsoft Power Apps.<br>

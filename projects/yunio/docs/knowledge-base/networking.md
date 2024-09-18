@@ -1,6 +1,7 @@
 ---
 title: yunIO Networking Scenarios
 description: Data Flow between Service Caller and SAP
+author: Fabian Steffan, Valerie Schipka
 ---
 
 
