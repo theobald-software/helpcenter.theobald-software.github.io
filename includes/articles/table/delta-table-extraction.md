@@ -65,5 +65,4 @@ Providing extraction dates is not necessary.
 ******
 
 #### Related Links
-- [Delta Table Extraction](delta-table-extraction.md)
 - [{{ table }}: WHERE Clause](../documentation/table/where-clause.md)

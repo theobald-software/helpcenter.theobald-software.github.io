@@ -1,25 +1,12 @@
 [
   {
-    "Version": "2024.9.13.22",
+    "Version": "2024.9.13.60",
     "LegacyReleaseDate": "2024-09-13 00:00:00Z",
-    "IsBreaking": true,
     "Changes": [
       {
-        "Product": "ERPConnect",
-        "Component": "General",
-        "Message": "The support for LINQToERP 2013 has ended and its setup files will be removed on installation"
-      }
-    ]
-  },
-  {
-    "Version": "2024.9.11.23",
-    "LegacyReleaseDate": "2024-09-11 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "ERPConnect",
-        "Component": "General",
-        "Message": "ERPConnect35 is now in maintenance mode.",
-        "ReleaseNote": "* ERPConnect35 will only receive bug fixes \n* New features are available in ERPConnectStandard20 only"
+        "Product": "Theobald.Extractors",
+        "Component": "BWCube",
+        "Message": "Fix copying of MDX Cube extraction definitions when using dimensions on columns."
       }
     ]
   },
@@ -339,17 +326,6 @@
         "Product": "Common",
         "Component": "General",
         "Message": "Updated NW RFC SDK to 750 PL13"
-      }
-    ]
-  },
-  {
-    "Version": "1.21.1.25",
-    "LegacyReleaseDate": "2024-06-12 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "ERPConnect",
-        "Component": "General",
-        "Message": "New version numbering scheme.\nSetup now displays possible breaking changes when performing an update to a new version"
       }
     ]
   },

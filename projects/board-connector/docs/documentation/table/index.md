@@ -21,6 +21,6 @@ The {{ table }} {{ component }} can be used to extract data from SAP Tables and 
 
 ****
 #### Related Links
-- [Knowledge Base Article: Change Data Capture with CDHDR](../../knowledge-base/change-data-capture-with-cdhdr.md)
+
 - [Knowledge Base Article: Delta Table Extraction](../../knowledge-base/delta-table-extraction.md)
 - [Knowledge Base Article: Read data from Cluster Fields in Tables PCL1 and PCL2 (Payroll)](../../knowledge-base/read-data-from-cluster-fields-in-the-tables-pcl1-and-pcl2-payroll.md)

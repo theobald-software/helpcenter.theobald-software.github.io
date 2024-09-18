@@ -30,6 +30,8 @@ That results in the following compatibility matrix: <!--- bei den Sätzen fehlen
 
 Installation of custom function modules / transport requests is not required.
 
+{% include "requirements/sap-tcpip-ports.md" %}
+
 {% include "requirements/operating-systems.md" %}
 
 

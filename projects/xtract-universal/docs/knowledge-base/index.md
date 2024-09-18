@@ -155,8 +155,7 @@ The following articles refer to specific [{{ components }}](../documentation/int
 ### :component-table: Table
 
 <div class="mdx-columns" markdown>
-
-- [Change Data Capture with CDHDR](change-data-capture-with-cdhdr.md)
+- [Extraction Mechanism of Table](table-extraction-mechanism.md)
 - [Delta Table Extraction](delta-table-extraction.md)
 - [Read data from Cluster Fields in Tables PCL1 and PCL2 (Payroll)](read-data-from-cluster-fields-in-the-tables-pcl1-and-pcl2-payroll.md)
 - [Working with Lists in the WHERE-Clause Editor](where-clause-editor-lists.md)
