@@ -75,7 +75,7 @@ hide:
 
 <div class="mdx-columns" markdown>
 
-
+- [Extraction Mechanism of Table](table-extraction-mechanism.md)
 - [Delta Table Extraction](delta-table-extraction.md)
 - [Dynamic Table Extractions](dynamic-table-extractions.md)
 - [Read and Download SAP Attachment Files](read-sap-attachment-files.md)
