@@ -1,5 +1,5 @@
 
-The following article illustrates the extraction process of the {{ table }} {{ component }}.
+The following article illustrates the extraction mechanism of the {{ table }} {{ component }}.
 
 ### Table Extraction Process
 
