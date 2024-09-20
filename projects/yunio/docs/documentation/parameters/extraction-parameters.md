@@ -10,7 +10,7 @@ The following categories of extraction parameters are available:
 
 - [Extraction](#extraction) parameters affect the extraction and destination settings.
 - [Source](#source) parameters affect the SAP connection settings.
-- [Custom](#custom) parameters correspond to the user-defined runtime parameters of an extraction.
+- [Custom](#custom) parameters correspond to the user-defined runtime parameters 0of an extraction.
 
 The parameters can be accessed in the "Run Extraction" window.<br>
 To open the "Run Extraction" window, select an extraction from the [list of extractions](../designer.md/#list-of-extractions) and click **[:designer-run:Run]**.
@@ -83,8 +83,6 @@ logonTicket | Changes the ticket issuer of the [SAP logon ticket](../sap-connect
 
 The tab *Custom* is only active when [user-defined runtime parameters](index.md/#about-custom-runtime-parameters) are available. <br>
 Check the checkbox and enter a new value to set the user defined parameter.
-
-![Custom parameters](site:assets/images/{{ abbr }}/documentation/parameters/run_extraction_param_cust.png){:class="img-responsive"}
 
 #### Example
 1. Select the checkbox of the parameter you want to override.
