@@ -10,7 +10,7 @@ nav:
     - Report: reports
     - Run Services: run-services.md
     - Access Restriction: access-restrictions
-    - Parameters: parameters.md
+    - Parameters: parameters
     - Server Settings: server-settings.md
     - Logs: logs.md
     - About this Documentation: about-this-documentation.md

@@ -3,7 +3,6 @@ title: Parameters
 description: Dynamize Extractions
 ---
 
-
 {{ productName }} supports multiple options to dynamize extractions:
 
 - [Extraction parameters](extraction-parameters.md)
