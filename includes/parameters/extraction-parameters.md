@@ -24,7 +24,7 @@ preview | Enables/Disables the preview mode | Default value is *false*
 source | Selects the SAP source system from which data is extracted (e.g., SAP_DEV and SAP_PROD). Applies only if more than one SAP system is used. | -
 destination | Selects the destination to which extraction is written (e.g., db_1 and db_2). Applies only if more than one destination is used.| -
 rows | Sets the maximum number of rows to be extracted | Available for [Table](../table/settings.md#row-limit)
-where | Sets a WHERE clause | Available for [Table](../table/where-clause.md) 
+whereClause | Sets a WHERE clause | Available for [Table](../table/where-clause.md) 
 packageSize | Sets the package size | Available for [Table](../table/settings.md#package-size)  
 updateMode | Sets the update mode to use for the run| Available for [ODP](../odp/update-mode.md)
 subscriptionSuffix | Suffix to use multiple inits on a single SAP system | Available for [ODP](../odp/index.md)
