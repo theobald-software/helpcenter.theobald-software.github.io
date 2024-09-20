@@ -117,7 +117,7 @@ The following articles refer to specific [{{ components }}](../documentation/int
 ### :component-bapi: BAPI
 
 <div class="mdx-columns" markdown>
-
+- [Access Data from the SAP Public Cloud :material-alert-decagram:](access-data-from-the-sap-public-cloud.md)
 - [Read Data from Cluster Fields in Tables PCL1 and PCL2 (Payroll)](read-data-from-cluster-fields-in-the-tables-pcl1-and-pcl2-payroll.md)
 
 </div>
