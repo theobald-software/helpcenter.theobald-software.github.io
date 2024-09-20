@@ -11,6 +11,6 @@ SAP system variables -> where clause (link)
 ### How to set an extraction parameter
 
 1. Navigate to the  :yunio-nav-services: *Services* menu at the left side navigation area of the Designer.
-2. Click :yunio-copy: to copy the service URL for setting extraction parameters. <br>
+2. Click :yunio-copy: to copy or :yunio-download: to download the service definition for integration with 3rd-party-tools. <br>
     
 ![yunIO-service](../assets/images/yunio/documentation/yunio-services-copy.png){:class="img-responsive"}
