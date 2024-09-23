@@ -1,5 +1,49 @@
 [
   {
+    "Version": "2024.9.23.87",
+    "LegacyReleaseDate": "2024-09-23 00:00:00Z",
+    "IsBreaking": true,
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "Table",
+        "Message": "Fixed transport request for /THEO/READ_TABLE_710."
+      },
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "TableCDC",
+        "Message": "Improved deletion handling of log table entries. This fixes a bug where extractions could sometimes fail when the log table count did not match the extracted rows count. Check Release Notes for details.",
+        "ReleaseNote": "- This change is breaking since the signature of a function module has changed and the new extractor is not compatible with older versions of that function module.\n- You are affected if you are running TableCDC extractions.\n- To ensure compatibility, update the /THEO/CDC_* package to the most recent version (1.9) by importing the provided transport request into your system."
+      },
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "General",
+        "Message": "Add flag for appending the RequestID to the extraction output."
+      },
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "BWCube",
+        "Message": "Fix copying of MDX Cube extraction definitions when using dimensions on columns."
+      },
+      {
+        "Product": "Theobald.Server",
+        "Component": "General",
+        "Message": "Restored the logging of license information."
+      },
+      {
+        "Product": "Theobald.Server",
+        "Component": "General",
+        "Message": "Fixed an error when testing a new SAP connection without a password."
+      },
+      {
+        "Product": "theobald-server-rs",
+        "Component": "General",
+        "Message": "The resource handling of the listeners was reworked.",
+        "ReleaseNote": "* Fixed a resource exhaustion issue where handles would not be cleaned up correctly.\n  * This resulted in the listener memory to increase over time.\n* Fixed a resource exhaustion issue where workers that failed to start would not be handled correctly in high load scenarios."
+      }
+    ]
+  },
+  {
     "Version": "2024.9.20.26",
     "LegacyReleaseDate": "2024-09-20 00:00:00Z",
     "Changes": [
