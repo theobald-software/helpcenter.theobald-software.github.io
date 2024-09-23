@@ -3,21 +3,16 @@ title: Access Data from the SAP Public Cloud
 description: How to execute BAPIs in the SAP Public Cloud using {{ productName }}
 ---
 
-The following article shows how to access data from the SAP S/4HANA Public Cloud using BAPIs / Function Modules.
+The following article shows how to access data from the SAP S/4HANA Public Cloud.
+{{ productName }} can access BAPIs / Function Modules that are available via SAP *Communication Scenarios*.
 
-### About
+### About Communication Scenarios
 
-{{ productName }} can access BAPIs / Function Modules that are part of an SAP Cloud *Communication Scenario*.
-*Communication Scenarios* are used to exchange data between the SAP Cloud and external systems. 
-{{ productName }} only has access to *Communication Scenarios* that are avaialable .
+*Communication Scenarios* are used to exchange data between the SAP Cloud and external systems. <br>
+You can use the **Display Communication Scenarios** app in the SAP Public Cloud to look up available *Communication Scenarios* that provide access to BAPIs / Function Modules, e.g., SAP_COM_0109 includes BAPIS that are used for Sales Order Integration.
+In *Communication Scenarios* BAPIs / Function Modules are listed as Service Type *RFC*:
 
-Refer to the OSS-Note 2447593 for a list of BAPIs and their corresponding *Communication Scenarios* in the SAP S/4HANA Cloud.
-to identify the Communication Scenario you want to use
-
-!!! Note
-	SAP supports BAPIs for the purpose of integrating SAP S/4HANA Cloud with SAP on-premise solutions (see also SAP Note 2447593)
-	BAPIs listed in that note shall only be used until a successor API (OData or SOAP) has been made available
-	If you need to use a BAPI interface for integrating with a 3rd party solution please follow the exception process as described in SAP Note 2653671
+![display-communication-scenarios](../assets/images/articles/bapi/sap-cloud/Display-Communication-Scenarios.png)
 
 
 ### Prerequisites
@@ -27,15 +22,18 @@ to identify the Communication Scenario you want to use
 - [Create a Client PSE to connect {{ productName }} to SAP Cloud Systems](create-personal-security-environment.md).
 - Make sure you use {{ productName }} version 6.4.2.0 (2024-04-19) or higher.
 
-
 ### Enable Communication in the SAP Public Cloud
 
-Use the **Communication Management** apps of the SAP Public Cloud to make BAPIs / Function Modules available to external systems:
+Use the **Communication Management** apps in the SAP Public Cloud to make BAPIs / Function Modules available to external systems:
  
-1. Create a *Communication User*.
-2. Create a *Communication System* that handles inbound service calls.
-3. Assign a *Communication User* to the*Communication System*.
+1. Create a *Communication User* in the **Maintain Communication Users** app.<br>
+![Maintain-Communication-Users](../assets/images/articles/bapi/sap-cloud/Maintain-Communication-Users.png)
+2. Create a *Communication System* that handles inbound service calls in the **Communication Systems** app.<br>
+![Communication-System](../assets/images/articles/bapi/sap-cloud/Communication-System.png)
+3. Assign a *Communication User* to the *Communication System* in the subsection *Users for Inbound Communication*.
 4. Create a *Communication Arrangement* that defines which *Communication Scenarios* are available to the *Communication System* and the *Communication User*.
+The depicted example uses *Communication Scenario* SAP_COM_0109 for Sales Order Integration.<br>
+![Communication-Arrangement](../assets/images/articles/bapi/sap-cloud/Communication-Arrangement.gif)
 
 For more information, see [SAP Help: Setting up Communication Management](https://learning.sap.com/learning-journeys/implement-sap-s-4hana-cloud-public-edition-for-sourcing-and-procurement/setting-up-communication-management_a913171c-c96d-47a9-81ec-dc9ee8754320).
 
@@ -62,7 +60,11 @@ Follow the steps below to create an {{ productName }} source that connects to an
 
 ### Look Up and Execute BAPIs
 
-If a BAPI is not... make sure that the *Communication Scenario* in the *Communication Arrangement*...
+
+!!! warning
+	**RFC_ABAP_MESSAGE: UCON RFC Rejected**<br>
+	This error message appears when the selected BAPI is not accessible via a *Communication Scenario*.
+	Use the **Display Communication Scenarios** app in the SAP Public Cloud to check which BAPIs / Function Modules are included in the *Communication Scenarios*, see [About Communication Scenarios](#about-communication-scenarios).
 
 -----
 #### Related Links

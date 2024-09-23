@@ -3,8 +3,8 @@ The following article shows how to create a client [PSE (Personal Security Envir
 
 ### Prerequisites
 
-- SAP Cloud API URL, e.g., `https://my123456-api.s4hana.ondemand.com`. The correct URL is displayed in the **API-URL** field of the communication arrangement set up for communication scenario SAP_COM_0193.
-- Command line tool sapgenpse.exe. The tool can be downloaded as part of the SAP Cryptographic Library in the SAP Service Marketplace.
+- SAP Cloud API URL, e.g., `https://my123456-api.s4hana.ondemand.com`. 
+- [Download the SAP Cryptographic Library](https://help.sap.com/doc/saphelp_em900/9.0/en-US/48/a324e7ccfc062de10000000a42189d/frameset.htm) (sapgenpse.exe and sapcrypto.dll) from the SAP Service Marketplace.
 
 ### Creating a Client PSE
 
