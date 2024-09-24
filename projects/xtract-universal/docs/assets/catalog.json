@@ -11,7 +11,7 @@
     ]
   },
   {
-    "Version": "2024.9.20.18",
+    "Version": "2024.9.20.19",
     "LegacyReleaseDate": "2024-09-20 00:00:00Z",
     "IsBreaking": true,
     "Changes": [
@@ -24,7 +24,7 @@
     ]
   },
   {
-    "Version": "2024.9.18.55",
+    "Version": "2024.9.18.56",
     "LegacyReleaseDate": "2024-09-18 00:00:00Z",
     "Changes": [
       {
@@ -46,7 +46,7 @@
     ]
   },
   {
-    "Version": "2024.9.16.46",
+    "Version": "2024.9.16.47",
     "LegacyReleaseDate": "2024-09-16 00:00:00Z",
     "Changes": [
       {
@@ -57,7 +57,7 @@
     ]
   },
   {
-    "Version": "2024.9.13.62",
+    "Version": "2024.9.13.63",
     "LegacyReleaseDate": "2024-09-13 00:00:00Z",
     "Changes": [
       {
@@ -79,7 +79,7 @@
     ]
   },
   {
-    "Version": "2024.9.6.53",
+    "Version": "2024.9.6.54",
     "LegacyReleaseDate": "2024-09-06 00:00:00Z",
     "Changes": [
       {
@@ -123,7 +123,7 @@
     ]
   },
   {
-    "Version": "2024.8.30.66",
+    "Version": "2024.8.30.67",
     "LegacyReleaseDate": "2024-08-30 00:00:00Z",
     "Changes": [
       {
@@ -184,7 +184,7 @@
     ]
   },
   {
-    "Version": "2024.8.28.13",
+    "Version": "2024.8.28.14",
     "LegacyReleaseDate": "2024-08-28 00:00:00Z",
     "Changes": [
       {
@@ -207,7 +207,7 @@
     ]
   },
   {
-    "Version": "2024.8.26.6",
+    "Version": "2024.8.26.7",
     "LegacyReleaseDate": "2024-08-26 00:00:00Z",
     "Changes": [
       {
