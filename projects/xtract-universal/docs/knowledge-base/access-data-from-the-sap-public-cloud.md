@@ -9,7 +9,8 @@ The following article shows how to access data from the SAP S/4HANA Public Cloud
 ### About Communication Scenarios
 
 *Communication Scenarios* are used to exchange data between the SAP Cloud and external systems. <br>
-You can use the **Display Communication Scenarios** app in the SAP Public Cloud to look up available *Communication Scenarios* that provide access to BAPIs / Function Modules, e.g., SAP_COM_0109 includes BAPIS that are used for Sales Order Integration.
+You can use the **Display Communication Scenarios** app in the SAP Public Cloud to look up available *Communication Scenarios* that provide access to BAPIs / Function Modules, e.g., the *Communication Scenario* SAP_COM_0109 includes BAPIS that are used for Sales Order Integration.
+
 In *Communication Scenarios* BAPIs / Function Modules are listed as Service Type *RFC*:
 
 ![display-communication-scenarios](../assets/images/articles/bapi/sap-cloud/Display-Communication-Scenarios.png)
@@ -17,22 +18,23 @@ In *Communication Scenarios* BAPIs / Function Modules are listed as Service Type
 
 ### Prerequisites
 
-- You need the Administrator role in the SAP Public Cloud to set up the communication with {{ productName }} on the SAP side.
+- You need the Administrator role in the SAP Public Cloud to set up communication on the SAP side.
+- The *Communication Scenario* SAP_COM_0636 (Remote Function Call - RFC Metadata Integration) must be available in the SAP Public Cloud.
 - [Download the SAP Cryptographic Library](https://help.sap.com/doc/saphelp_em900/9.0/en-US/48/a324e7ccfc062de10000000a42189d/frameset.htm) (sapcrypto.dll) from the SAP Service Marketplace.
 - [Create a Client PSE to connect {{ productName }} to SAP Cloud Systems](create-personal-security-environment.md).
-- Make sure you use {{ productName }} version 6.4.2.0 (2024-04-19) or higher.
+- Make sure to use {{ productName }} version 6.4.2.0 (2024-04-19) or higher.
 
 ### Enable Communication in the SAP Public Cloud
 
-Use the **Communication Management** apps in the SAP Public Cloud to make BAPIs / Function Modules available to external systems:
+Use the **Communication Management** apps in the SAP Public Cloud to make BAPIs / Function Modules accessible for external systems:
  
 1. Create a *Communication User* in the **Maintain Communication Users** app.<br>
 ![Maintain-Communication-Users](../assets/images/articles/bapi/sap-cloud/Maintain-Communication-Users.png)
 2. Create a *Communication System* that handles inbound service calls in the **Communication Systems** app.<br>
 ![Communication-System](../assets/images/articles/bapi/sap-cloud/Communication-System.png)
 3. Assign a *Communication User* to the *Communication System* in the subsection *Users for Inbound Communication*.
-4. Create a *Communication Arrangement* that defines which *Communication Scenarios* are available to the *Communication System* and the *Communication User*.
-The depicted example uses *Communication Scenario* SAP_COM_0109 for Sales Order Integration.<br>
+4. Create *Communication Arrangements* to defines which *Communication Scenarios* can be accessed by the *Communication System* and the *Communication User*.
+The *Communication Scenario* SAP_COM_0636 (Remote Function Call - RFC Metadata Integration) is mandatory for using the {{ bapi }} {{ component }} in {{ productName }}.<br>
 ![Communication-Arrangement](../assets/images/articles/bapi/sap-cloud/Communication-Arrangement.gif)
 
 For more information, see [SAP Help: Setting up Communication Management](https://learning.sap.com/learning-journeys/implement-sap-s-4hana-cloud-public-edition-for-sourcing-and-procurement/setting-up-communication-management_a913171c-c96d-47a9-81ec-dc9ee8754320).
@@ -60,11 +62,23 @@ Follow the steps below to create an {{ productName }} source that connects to an
 
 ### Look Up and Execute BAPIs
 
+Follow the regular workflow to look up and execute BAPIS:
 
+1. [Create a new BAPI / Function Module extraction](../documentation/bapi/index.md/#create-a-bapi-extraction).
+2. [Look up a BAPI / Function Module](../documentation/bapi/index.md/#look-up-a-function-module-bapi) that is included in the *Communication Scenarios* that your *Communication User* has access to.
+
+	!!! note
+		The lookup returns a list of all BAPIS in the SAP Public Cloud with no consideration for *Communication Scenarios*.
+		Make sure to only select BAPIS that are available via *Communication Scenarios*, see [About Communication Scenarios](#about-communication-scenarios).
+		
+3. [Define all mandatory parameters of the BAPI](../documentation/bapi/index.md/#define-the-bapi-extraction-type).
+4. [Run the extraction](../documentation/execute-and-automate/run-an-extraction.md/#run-extractions-in-the-designer).
+
+<!---
 !!! warning
 	**RFC_ABAP_MESSAGE: UCON RFC Rejected**<br>
-	This error message appears when the selected BAPI is not accessible via a *Communication Scenario*.
-	Use the **Display Communication Scenarios** app in the SAP Public Cloud to check which BAPIs / Function Modules are included in the *Communication Scenarios*, see [About Communication Scenarios](#about-communication-scenarios).
+	??? SAP_COM_0636 missing?
+-->
 
 -----
 #### Related Links
