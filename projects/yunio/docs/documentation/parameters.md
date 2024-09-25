@@ -19,7 +19,7 @@ SAP system variables can be also used for parametrization of SAP Table and View 
 1. Navigate to the  :yunio-nav-services: *Services* menu at the left side navigation area of the Designer.
 2. Click :yunio-copy: to copy the URL of the service definition to your clipboard. <br>
     ![yunIO-service](../assets/images/yunio/documentation/yunio-services-copy.png){:class="img-responsive"}
-3. Paste the copied URL into a browser of your choice and add an input parameter using the following syntax: ´http://[host]:[port]/service/[service name]/?[parameter]=[value]´
+3. Paste the copied URL into a browser of your choice and add an input parameter using the following syntax: `http://[host]:[port]/service/[service name]/?[parameter]=[value]`
 4. Once the parameter is defined, press **[Enter]**.
 
 ![yunIO-rows](../assets/images/yunio/documentation/parameter-rows.png){:class="img-responsive"}
@@ -29,11 +29,11 @@ SAP system variables can be also used for parametrization of SAP Table and View 
 
 Parameter  | Description | Integration Type | Example Syntax
 ------------ | ------------- | ------------- |--------- 
-rows | Sets the maximum number of rows to be extracted | Available for [SAP Table and View](../tables-and-views/settings/#row-limit) | ´http://yunio.example:8075/services/KNA1/?rows=10´ 
-packageSize | Sets the package size | Available for [SAP Table and View](../tables-and-views/settings/#rows-per-package)  | ´http://yunio.example:8075/services/KNA1/?packageSize=1000´
-whereClause | Sets a WHERE clause | Available for [SAP Table and View](../tables-and-views/where-clause/) | ´http://yunio.example:8075/services/KNA1/?whereClause=LAND1 = 'DE'´
-variant | Name of a variant | Available for [Report](../reports/settings/#variant) | ´http://yunio.example:8075/services/RLT10010/?variant=VAR01´
-skipPopups | Defines how to handle unexpected popup messages that show up at runtime.|Available for [Transaction]()|´http://yunio.example:8075/services/RLT10010/?skipPopups=true´
+rows | Sets the maximum number of rows to be extracted | Available for [SAP Table and View](../tables-and-views/settings/#row-limit) | `http://yunio.example:8075/services/KNA1/?rows=10` 
+packageSize | Sets the package size | Available for [SAP Table and View](../tables-and-views/settings/#rows-per-package)  | `http://yunio.example:8075/services/KNA1/?packageSize=1000`
+whereClause | Sets a WHERE clause | Available for [SAP Table and View](../tables-and-views/where-clause/) | `http://yunio.example:8075/services/KNA1/?whereClause=LAND1 = 'DE'`
+variant | Name of a variant | Available for [Report](../reports/settings/#variant) | `http://yunio.example:8075/services/RLT10010/?variant=VAR01`
+skipPopups | Defines how to handle unexpected popup messages that show up at runtime.|Available for [Transaction]()|`http://yunio.example:8075/services/RLT10010/?skipPopups=true`
 
 !!! Note
     When using whereClause parameter, make sure to use single quotation marks. The browser will automatically replace the spaces and convert the quotation marks.
