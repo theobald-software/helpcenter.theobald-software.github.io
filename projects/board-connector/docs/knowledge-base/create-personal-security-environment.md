@@ -5,3 +5,7 @@ author: Valerie Schipka, Markus Eckert
 ---
 
 {% include "articles/create-personal-security-environment.md" %}
+
+-----
+#### Related Links
+- [Knowledge Base: Access Data in the SAP Public Cloud](access-data-in-the-sap-public-cloud.md)

@@ -65,7 +65,7 @@
 
 - title: {{ bapi }}
   icon: site:assets/images/logos/components/Function-BAPI.svg
-  content: Execute BAPIs and Function Modules. <br> <br> <span class="keyword">ECC</span> <span class="keyword">S4/HANA</span> <span class="keyword">BW</span> <span class="keyword">BW/4HANA</span>
+  content: Execute BAPIs and Function Modules. <br> <br> <span class="keyword">SAP Cloud</span> <span class="keyword">ECC</span> <span class="keyword">S4/HANA</span> <span class="keyword">BW</span> <span class="keyword">BW/4HANA</span>
   url: site:documentation/bapi/
   
 - title: {{ bwcube }}

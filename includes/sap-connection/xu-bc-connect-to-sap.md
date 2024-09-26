@@ -5,6 +5,9 @@
 - Connection to a message server (Load Balancing) 
 - Connect to a single application server or public or private cloud instance via RFC over WebSocket.
 
+!!! note
+	For information on how to extract data from the SAP Public Cloud, see [Knowledge Base Article: Access Data in the SAP Public Cloud](../../knowledge-base/access-data-in-the-sap-public-cloud.md).
+
 **Supported Authentication Methods**
 
 - Plain login using SAP username and password (system or dialogue user)
