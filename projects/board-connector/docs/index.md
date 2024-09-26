@@ -1,5 +1,6 @@
 ---
 title: Board Connector HelpCenter
+template: home.html
 loc: index
 hide:
   - navigation
