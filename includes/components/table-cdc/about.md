@@ -2,11 +2,15 @@ This page shows how to use the {{ tableCDC }} {{ component }}.<br>
 The {{ tableCDC }} {{ component }} can be used to extract delta content from SAP Tables.
 It creates a log table in SAP that records insert, update, and delete activities that apply to a selected SAP table.<br>
 
+!!! note
+	Table CDC is an Add-On that requires a license. 
+	For more information, contact Theobald Software's sales team at [sales@theobald-software.com](mailto:sales@theobald-software.com).
+
 
 ### About Table CDC
 
 Change Data Capture (CDC) is a method to keep track of data changes such as insert, update and delete in SAP tables.
-The Table CDC component creates a log table in SAP that records any changes made to a selected table. Table CDC is an Add-On and requires a license. For more information, contact Theobald Software's sales team at [sales@theobald-software.com](mailto:sales@theobald-software.com).
+The Table CDC component creates a log table in SAP that records any changes made to a selected table. 
 The content of the log table is cleared after every successful run of the extraction. Data that was not extracted is not cleared from the log table.
 
 For a detailed overview of this process, refer to the Knowledge Base article [Delta Mechanism of TableCDC](../../knowledge-base/table-cdc-mechanism.md).
