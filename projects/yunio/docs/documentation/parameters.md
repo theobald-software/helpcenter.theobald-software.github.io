@@ -9,10 +9,10 @@ author: Christian Tauchmann, Maia Reichert-Baisch
 - Report
 - Transaction
 
-When using [Transaction](../transactions/#parameterize-transactions) and [BAPI](../function-modules-and-bapis/#parameterize-the-service) you can define custom parameters. 
+When using [Transaction](../transactions/index.md#parameterize-transactions) and [BAPI](../function-modules-and-bapis/index.md#parameterize-the-service) you can define custom parameters. 
 
 Input parameters require users to pass actual values when running a {{ productName }} service.
-SAP system variables can be also used for parametrization of SAP Table and View integration type using [WHERE Clause](../tables-and-views/where-clause/#sap-system-fields).
+SAP system variables can be also used for parametrization of SAP Table and View integration type using [WHERE Clause](../tables-and-views/where-clause.md/#sap-system-fields).
 
 ### Set a parameter
 
@@ -29,10 +29,10 @@ SAP system variables can be also used for parametrization of SAP Table and View 
 
 Parameter  | Description | Integration Type | Example Syntax
 ------------ | ------------- | ------------- |--------- 
-rows | Sets the maximum number of rows to be extracted | Available for [SAP Table and View](../tables-and-views/settings/#row-limit) | `http://yunio.example:8075/services/KNA1/?rows=10` 
-packageSize | Sets the package size | Available for [SAP Table and View](../tables-and-views/settings/#rows-per-package)  | `http://yunio.example:8075/services/KNA1/?packageSize=1000`
-whereClause | Sets a WHERE clause | Available for [SAP Table and View](../tables-and-views/where-clause/) | `http://yunio.example:8075/services/KNA1/?whereClause=LAND1 = 'DE'`
-variant | Name of a variant | Available for [Report](../reports/settings/#variant) | `http://yunio.example:8075/services/RLT10010/?variant=VAR01`
+rows | Sets the maximum number of rows to be extracted | Available for [SAP Table and View](../tables-and-views/settings.md/#row-limit) | `http://yunio.example:8075/services/KNA1/?rows=10` 
+packageSize | Sets the package size | Available for [SAP Table and View](../tables-and-views/settings.md/#rows-per-package)  | `http://yunio.example:8075/services/KNA1/?packageSize=1000`
+whereClause | Sets a WHERE clause | Available for [SAP Table and View](../tables-and-views/where-clause.md/) | `http://yunio.example:8075/services/KNA1/?whereClause=LAND1 = 'DE'`
+variant | Name of a variant | Available for [Report](../reports/settings.md/#variant) | `http://yunio.example:8075/services/RLT10010/?variant=VAR01`
 skipPopups | Defines how to handle unexpected popup messages that show up at runtime.|Available for [Transaction]()|`http://yunio.example:8075/services/RLT10010/?skipPopups=true`
 
 !!! Note
