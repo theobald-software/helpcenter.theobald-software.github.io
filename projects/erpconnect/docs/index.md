@@ -1,5 +1,6 @@
 ---
 title: ERPConnect HelpCenter
+template: home.html
 hide:
   - navigation
   - tags

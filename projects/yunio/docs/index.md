@@ -1,5 +1,6 @@
 ---
 title: yunIO HelpCenter
+template: home.html
 hide:
   - navigation
   - toc

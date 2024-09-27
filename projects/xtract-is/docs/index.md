@@ -1,5 +1,6 @@
 ---
 title: Xtract IS HelpCenter
+template: home.html
 loc: index
 hide:
   - navigation
