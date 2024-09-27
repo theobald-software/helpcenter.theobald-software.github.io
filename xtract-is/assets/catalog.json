@@ -1,5 +1,17 @@
 [
   {
+    "Version": "2024.9.27.2",
+    "LegacyReleaseDate": "2024-09-27 00:00:00Z",
+    "IsBreaking": true,
+    "Changes": [
+      {
+        "Product": "XtractIS",
+        "Component": "General",
+        "Message": "The support for SQLServer 2014 has ended and its files will be removed on installation"
+      }
+    ]
+  },
+  {
     "Version": "2024.9.23.84",
     "LegacyReleaseDate": "2024-09-23 00:00:00Z",
     "Changes": [
