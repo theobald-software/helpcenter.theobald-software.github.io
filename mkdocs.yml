@@ -71,6 +71,14 @@ plugins:
   - pagenav-generator
   - tags
   - search
+  - encryptcontent:
+        password_inventory:
+          classified: 'TheobaldStuttgart'
+        title_prefix: ''
+        summary: 'Restricted Content'
+        decryption_failure_message: 'Wrong password.'
+        encryption_info_message: 'You are about to access restricted content. Enter a password to continue.'
+        button_class: 'md-search__icon'
   - privacy:
       links_attr_map:
         target: _blank # opens all external links in new tabs
