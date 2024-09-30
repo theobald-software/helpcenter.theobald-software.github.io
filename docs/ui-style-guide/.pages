@@ -1,4 +1,5 @@
 nav:
+    - index.md
     - style.md
     - spelling-grammar.md
     - text-constructing.md
