@@ -19,7 +19,7 @@ In *Communication Scenarios* BAPIs / Function Modules are listed as Service Type
 
 ### Prerequisites
 
-- You need the Administrator role in the SAP Public Cloud to set up communication on the SAP side.
+- Administrator role in the SAP Public Cloud to set up communication on the SAP side.
 - The *Communication Scenario* SAP_COM_0636 (Remote Function Call - RFC Metadata Integration) is available in the SAP Public Cloud.
 - [Download the SAP Cryptographic Library](https://help.sap.com/doc/saphelp_em900/9.0/en-US/48/a324e7ccfc062de10000000a42189d/frameset.htm) (sapcrypto.dll) from the SAP Service Marketplace.
 - [Create a Client PSE to connect {{ productName }} to SAP Cloud Systems](create-personal-security-environment.md).
@@ -34,7 +34,7 @@ Use the **Communication Management** apps in the SAP Public Cloud to make BAPIs 
 2. Create a *Communication System* that handles inbound service calls in the **Communication Systems** app.<br>
 ![Communication-System](../assets/images/articles/bapi/sap-cloud/Communication-System.png)
 3. Assign a *Communication User* to the *Communication System* in the subsection *Users for Inbound Communication*.
-4. Create *Communication Arrangements* to defines which *Communication Scenarios* can be accessed by the *Communication System* and the *Communication User*.
+4. Create *Communication Arrangements* to define, which *Communication Scenarios* can be accessed by the *Communication System* and the *Communication User*.
 The *Communication Scenario* SAP_COM_0636 (Remote Function Call - RFC Metadata Integration) is mandatory for using the {{ bapi }} {{ component }} in {{ productName }}.<br>
 ![Communication-Arrangement](../assets/images/articles/bapi/sap-cloud/Communication-Arrangement.gif)
 
