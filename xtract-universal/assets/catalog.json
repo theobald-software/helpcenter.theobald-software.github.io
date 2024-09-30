@@ -1,5 +1,21 @@
 [
   {
+    "Version": "2024.9.30.57",
+    "LegacyReleaseDate": "2024-09-30 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "XtractUniversal",
+        "Component": "Table",
+        "Message": "Runtime parameters in text mode where clause now need to be explicitly defined. This also fixes the use of parameters in the preview."
+      },
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "BWCube",
+        "Message": "BICS: Add support for filters"
+      }
+    ]
+  },
+  {
     "Version": "2024.9.24.34",
     "LegacyReleaseDate": "2024-09-24 00:00:00Z",
     "Changes": [
