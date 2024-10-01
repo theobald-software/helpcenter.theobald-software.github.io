@@ -1,5 +1,16 @@
 [
   {
+    "Version": "2024.10.1.45",
+    "LegacyReleaseDate": "2024-10-01 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Common",
+        "Component": "Licensing",
+        "Message": "Updated licensing code for new XfA Server Environment licenses and license validation logic for BoardConnector for TableCDC extractions."
+      }
+    ]
+  },
+  {
     "Version": "2024.9.30.39",
     "LegacyReleaseDate": "2024-09-30 00:00:00Z",
     "Changes": [
