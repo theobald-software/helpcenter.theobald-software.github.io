@@ -54,7 +54,7 @@ Follow the steps below to create an {{ productName }} source that connects to an
 5. Fill out the connection details, see [Connection Settings](../documentation/sap-connection/settings.md/#general).
 	- In the field **Library**, enter the path to the SAP Cryptographic Library (sapcrypto.dll).
 	- In the field **Client PSE**, enter the path to the client .pse file.
-5. In the *Authentication* tab, enter the username and passwort of the SAP *Communication User*.
+5. In the *Authentication* tab, enter the username and password of the SAP *Communication User*.
 6. Activate the checkbox **User name is alias**.<br>
 ![sap-source-authentication-websocket](../assets/images/articles/bapi/WebSocket-Authentication.png){:class="img-responsive"}
 8. Click **[Test designer connection]** to validate the connection between the {{ productName }} Designer and the SAP system. 
@@ -66,7 +66,7 @@ Follow the steps below to create an {{ productName }} source that connects to an
 Follow the regular workflow to look up and execute BAPIS:
 
 1. [Create a new BAPI / Function Module extraction](../documentation/bapi/index.md/#create-a-bapi-extraction).
-2. [Look up a BAPI / Function Module](../documentation/bapi/index.md/#look-up-a-function-module-bapi) that is included in the *Communication Scenarios* that your *Communication User* has access to.
+2. [Look up a BAPI / Function Module](../documentation/bapi/index.md/#look-up-a-function-module-bapi) included in the *Communication Scenarios* that your *Communication User* has access to.
 
 	!!! note
 		The lookup returns a list of all BAPIS in the SAP Public Cloud with no consideration for *Communication Scenarios*.
