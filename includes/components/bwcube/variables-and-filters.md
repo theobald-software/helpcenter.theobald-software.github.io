@@ -79,7 +79,7 @@ Follow the steps below to create dimension filters in the {{ bwcube }} {{ compon
 
 	!!! warning 
 		**Extraction fails - Error message: Argument cannot be null or empty** <br>
-		When a variable is assigned, a value cannot be empty for an extraction to run. <br>
+		When a filter is set, a value cannot be empty for an extraction to run. <br>
 		Make sure to pass a value (# is accepted).
 
 7. Click {{ previewBtn }} in the main window of the {{ component }} to check the result of the filter.
