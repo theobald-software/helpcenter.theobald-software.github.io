@@ -1,5 +1,16 @@
 [
   {
+    "Version": "2024.10.2.35",
+    "LegacyReleaseDate": "2024-10-02 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "BoardConnector",
+        "Component": "General",
+        "Message": "Updated dependencies with vulnerabilities to versions where the issues are fixed."
+      }
+    ]
+  },
+  {
     "Version": "2024.10.1.52",
     "LegacyReleaseDate": "2024-10-01 00:00:00Z",
     "Changes": [
