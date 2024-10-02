@@ -1,5 +1,16 @@
 [
   {
+    "Version": "2024.10.2.32",
+    "LegacyReleaseDate": "2024-10-02 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "YunIO",
+        "Component": "General",
+        "Message": "Updated dependencies with vulnerabilities to versions where the issue is fixed."
+      }
+    ]
+  },
+  {
     "Version": "2024.9.30.41",
     "LegacyReleaseDate": "2024-09-30 00:00:00Z",
     "Changes": [
