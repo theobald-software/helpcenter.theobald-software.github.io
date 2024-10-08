@@ -84,7 +84,8 @@ Some input fields for the SAP connection vary depending on the selected authenti
 	Password of the SAP user. 
 	
 	#### User name is alias
-	Activate this option when connecting to an SAP cloud system using the WebSocket connection method. When this option is active, the name entered in the field **User** is used as the internet user alias. 
+	If this option is active, the name entered in the field **User** is used as the internet user alias, e.g., the communication user in the SAP Public Cloud. 
+	Activate this option when connecting to an SAP cloud system using the WebSocket connection method, see [Knowledge Base Article: Access Data in the SAP Public Cloud](../../knowledge-base/access-data-in-the-sap-public-cloud.md). 
 	
 	#### Request SAP credentials from caller when running extractions
 	If this option is active, SAP credentials entered in the fields **User** and **Password** are not applied. Instead, SAP credentials need to be provided via basic authentication when running an extraction. Caching the result of extractions is inactive. 
