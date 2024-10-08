@@ -55,6 +55,7 @@ theme:
 extra_css:
   - assets/stylesheets/extra.css
   - assets/stylesheets/neoteroi-cards.css 
+  - assets/stylesheets/neoteroi-gantt.css 
   - assets/stylesheets/hyperscript.css
 extra_javascript:
   - assets/javascripts/hyperscript.min.js
@@ -71,6 +72,14 @@ plugins:
   - pagenav-generator
   - tags
   - search
+  - encryptcontent:
+        password_inventory:
+          classified: 'TheobaldStuttgart'
+        title_prefix: ''
+        summary: 'Restricted Content'
+        decryption_failure_message: 'Wrong password.'
+        encryption_info_message: 'You are about to access restricted content. Enter a password to continue.'
+        button_class: 'md-search__icon'
   - privacy:
       links_attr_map:
         target: _blank # opens all external links in new tabs
@@ -106,6 +115,7 @@ extra:
    
 # Extensions for Markdown Syntax  
 markdown_extensions:
+  - neoteroi.projects
   - pymdownx.critic
   - toc:
       separator: "-"

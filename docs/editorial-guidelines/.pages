@@ -1,4 +1,5 @@
 nav:
+    - index.md
     - style-guide.md
     - markdown-sample.md
     - screenshot-conventions.md
