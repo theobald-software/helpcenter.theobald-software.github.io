@@ -193,7 +193,7 @@
     "Changes": [
       {
         "Product": "XtractUniversal",
-        "Component": "General",
+        "Component": "xu-config",
         "Message": "Fixed a bug where xu-config would not use the correct target directory for creating the key file for source protection."
       }
     ]
@@ -2662,7 +2662,7 @@
       {
         "Product": "XtractUniversal",
         "Component": "xu-config",
-        "Message": "Updated remaining XtractKernel DeltaQ definition in xu-config.exe"
+        "Message": "Internal changes for DeltaQ extractions in xu-config.exe"
       }
     ]
   },
@@ -3974,8 +3974,8 @@
     "Changes": [
       {
         "Product": "XtractUniversal",
-        "Component": "General",
-        "Message": "Added removed tablecdc component to xu-config"
+        "Component": "xu-config",
+        "Message": "Fixed TableCDC component not working in xu-config"
       }
     ]
   },
@@ -4106,8 +4106,8 @@
     "Changes": [
       {
         "Product": "XtractUniversal",
-        "Component": "Service",
-        "Message": "Added option to clone and delete extractions in the xu-config tool."
+        "Component": "xu-config",
+        "Message": "You can now clone and delete extractions using xu-config"
       }
     ]
   },
@@ -4283,8 +4283,8 @@
     "Changes": [
       {
         "Product": "XtractUniversal",
-        "Component": "General",
-        "Message": "Table CDC extractions can now be created using xu-config"
+        "Component": "xu-config",
+        "Message": "You can now create TableCDC extractions using xu-config"
       }
     ]
   },
@@ -7193,7 +7193,7 @@
     "Changes": [
       {
         "Product": "XtractUniversal",
-        "Component": "General",
+        "Component": "xu-config",
         "Message": "Added parameter context on xu-config for ODP extractions"
       }
     ]
@@ -7364,7 +7364,7 @@
     "Changes": [
       {
         "Product": "XtractUniversal",
-        "Component": "General",
+        "Component": "xu-config",
         "Message": "New features for xu-config.exe",
         "ReleaseNote": "**XtractUniversal 5.7.1 - xu-config.exe**\n\n- ODP extraction creation\n- Azure and S3 destinations creation\n- Created and LastChanged information for extractions\n- Extraction destination SAP object name mode and timestamp append"
       }
@@ -10114,8 +10114,8 @@
     "Changes": [
       {
         "Product": "XtractUniversal",
-        "Component": "Server",
-        "Message": "xu-config (experimental): Fix for \"License has expired\" error"
+        "Component": "xu-config",
+        "Message": "Fixed \"License has expired\" error"
       }
     ]
   },
@@ -10739,8 +10739,8 @@
     "Changes": [
       {
         "Product": "XtractUniversal",
-        "Component": "General",
-        "Message": "xu-config can create sources now"
+        "Component": "xu-config",
+        "Message": "You can now create sources using xu-config"
       }
     ]
   },
@@ -10811,7 +10811,7 @@
     "Changes": [
       {
         "Product": "XtractUniversal",
-        "Component": "General",
+        "Component": "xu-config",
         "Message": "Added xu-config (experimental)"
       }
     ]
