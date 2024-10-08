@@ -1,0 +1,62 @@
+[
+    {
+        "title": "ISV Integration",
+        "activities": [
+            {
+                "title": "Alteryx Cloud Execution",
+                "start": "2024-03-03",
+                "end": "2024-04-11"
+            },
+            {
+                "title": "Alteryx v2 SDK",
+                "start": "2024-03-02",
+                "end": "2024-03-16"
+            },
+            {
+                "title": "Dataiku XU Plugin",
+                "start": "2024-03-11",
+                "end": "2024-03-30"
+            }
+        ]
+    },
+    {
+        "title": "Data Integration",
+        "activities": [
+            {
+                "title": "SAP Public Cloud",
+                "start": "2024-03-21",
+                "end": "2024-04-05"
+            },
+            {
+                "title": "SAP Concur",
+                "start": "2024-04-02",
+                "end": "2024-05-01"
+            },
+            {
+                "title": "OData as Source",
+                "start": "2024-05-01",
+                "end": "2024-05-18"
+            }
+        ]
+    },
+    {
+        "title": "Cloud Platform",
+        "activities": [
+            {
+                "title": "New Customer Portal",
+                "start": "2024-05-01",
+                "end": "2024-05-20"
+            },
+            {
+                "title": "Container Deployment",
+                "start": "2024-05-02",
+                "end": "2024-05-31"
+            },
+            {
+                "title": "yunIO on Linux",
+                "start": "2024-06-05",
+                "end": "2024-06-06"
+            }
+        ]
+    }
+]

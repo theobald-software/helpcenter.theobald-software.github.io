@@ -128,3 +128,7 @@
   -webkit-mask-image: var(--md-admonition-icon--api);
           mask-image: var(--md-admonition-icon--api);
 }
+
+.md-header__button[for="__drawer"] {
+  display: none
+}
