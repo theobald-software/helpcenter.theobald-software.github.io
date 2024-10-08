@@ -8,6 +8,8 @@ search:
 {{ productName }} Designer offers a test run option for extractions.<br> 
 You can define runtime parameters and other options to run an extraction directly from the {{ productName }} Designer.
 
+{% include "access-restrictions/run-extractions-user-in-designer.md" %}
+
 ## Run Extractions in the Designer
 
 1. In the main window of the Designer, select an extraction and click **[:designer-run:Run]** :number-1:. The window "Run Extraction" opens.<br>
