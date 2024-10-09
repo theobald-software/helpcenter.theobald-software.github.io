@@ -3,12 +3,16 @@ title: Designs
 description: Showcase different designs for Roadmaps
 ---
 
+The Gantt plugin offers multiple [options](index.md/#integration) to control the design of the diagramm. 
 
+## Default
+
+[gantt(./docs/roadmap/roadmap2024.json)]
 
 ## No weeks
 
-[gantt no-weeks(https://kb.theobald-software.com/files/roadmap2024.json)]
+[gantt no-weeks(./docs/roadmap/roadmap2024.json)]
 
-## No weeks + no groups
+## No Weeks + No Groups
 
-[gantt no-weeks no-groups(https://kb.theobald-software.com/files/roadmap2024.json)]
+[gantt no-weeks no-groups(./docs/roadmap/roadmap2024.json)]
