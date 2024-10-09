@@ -33,7 +33,15 @@ hide:
 <div class="grid cards" markdown>
 
 - [:material-file-edit-outline: __Editorial Guide__](editorial-guidelines/index.md)
+
+</div>
+<div class="grid cards" markdown>
+
 - [:material-television-guide: __UI Style Guide__](ui-style-guide/index.md)
+
+</div>
+<div class="grid cards" markdown>
+
 - [:material-sign-direction: __Roadmap Drafts__](roadmap/index.md)
 
 </div>
@@ -42,13 +50,12 @@ hide:
 
 Internal Changelogs:
 
-- [:products-xtract-universal: __Xtract Unviersal__](changelog/changelog-xu.md)
-- [:products-board-connector: __Board Connector__](changelog/changelog-bc.md)
-- [:products-xtract-is: __Xtract IS__](changelog/changelog-xis.md)
-- [:products-yunio: __yunIO__](changelog/changelog-yunio.md)
-- [:products-xtract-for-alteryx: __Xtract for Alteryx__](changelog/changelog-xfa.md)
-- [:products-erpconnect: __ERPConnect__](changelog/changelog-erpconnect.md)
-
+[:products-xtract-universal:](changelog/changelog-xu.md){ .md-button .md-button--xu .md-button--stretch }
+[:products-board-connector:](changelog/changelog-bc.md){ .md-button .md-button--bc .md-button--stretch }
+[:products-xtract-is:](changelog/changelog-xis.md){ .md-button .md-button--xis .md-button--stretch }
+[:products-xtract-for-alteryx:](changelog/changelog-xfa.md){ .md-button .md-button--xfa .md-button--stretch }
+[:products-yunio:](changelog/changelog-yunio.md){ .md-button .md-button--yunio .md-button--stretch }
+[:products-erpconnect:](changelog/changelog-erpconnect.md){ .md-button .md-button--erp .md-button--stretch }
 
 <!---
 <div class="grid cards" markdown>

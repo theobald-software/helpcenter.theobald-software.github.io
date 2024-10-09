@@ -6,14 +6,16 @@ hide:
 ---
 
 
-# :products-xtract-for-alteryx: Xtract for Alteryx Changelog
+[:products-xtract-universal:](changelog-xu.md){ .md-button .md-button--xu .md-button--stretch }
+[:products-board-connector:](changelog-bc.md){ .md-button .md-button--bc .md-button--stretch }
+[:products-xtract-is:](changelog-xis.md){ .md-button .md-button--xis .md-button--stretch }
+[:products-xtract-for-alteryx:](changelog-xfa.md){ .md-button .md-button--xfa .md-button--stretch }
+[:products-yunio:](changelog-yunio.md){ .md-button .md-button--yunio .md-button--stretch }
+[:products-erpconnect:](changelog-erpconnect.md){ .md-button .md-button--erp .md-button--stretch }
 
-[:products-xtract-universal:](changelog-xu.md){ .md-button .md-button--xu }
-[:products-board-connector:](changelog-bc.md){ .md-button .md-button--bc }
-[:products-xtract-is:](changelog-xis.md){ .md-button .md-button--xis }
-[:products-xtract-for-alteryx:](changelog-xfa.md){ .md-button .md-button--xfa }
-[:products-yunio:](changelog-yunio.md){ .md-button .md-button--yunio }
-[:products-erpconnect:](changelog-erpconnect.md){ .md-button .md-button--erp }
+---
+
+# :products-xtract-for-alteryx: Xtract for Alteryx Changelog
 
 
 <div style="display:flex">

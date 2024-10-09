@@ -73,13 +73,21 @@ plugins:
   - tags
   - search
   - encryptcontent:
-        password_inventory:
+      #selfhost: true
+      #selfhost_download: false
+      #hash_filenames:
+      #  extensions:
+      #    - 'json'
+      password_inventory:
           classified: 'TheobaldStuttgart'
-        title_prefix: ''
-        summary: 'Restricted Content'
-        decryption_failure_message: 'Wrong password.'
-        encryption_info_message: 'You are about to access restricted content. Enter a password to continue.'
-        button_class: 'md-search__icon'
+      remember_password: True
+      title_prefix: ''
+      summary: 'Restricted Content'
+      decryption_failure_message: 'Wrong password.'
+      encryption_info_message: 'You are about to access restricted content. Enter a password to continue.'
+      #button_class: 'md-button'
+      #password_button_text: 'ENTER'
+      #password_button: True
   - privacy:
       links_attr_map:
         target: _blank # opens all external links in new tabs
