@@ -132,3 +132,69 @@
 .md-header__button[for="__drawer"] {
   display: none
 }
+
+.md-button--xu {
+  background: #98892C;
+  border-color: #98892C !important;
+}
+
+.md-typeset .md-button--xu:focus,.md-typeset .md-button--xu:hover {
+    background-color: #AF9D34;
+    border-color: #AF9D34;
+    color: #AF9D34
+}
+
+.md-button--xis {
+  background: #0076BE;
+  border-color: #0076BE !important;
+}
+
+.md-typeset .md-button--xis:focus,.md-typeset .md-button--xis:hover {
+    background-color: #0091E5;
+    border-color: #0091E5;
+    color: #0091E5
+}
+
+.md-button--xfa {
+  background: #CA5D27;
+  border-color: #CA5D27; !important;
+}
+
+.md-typeset .md-button--xfa:focus,.md-typeset .md-button--xfa:hover {
+    background-color: #F26D30;
+    border-color: #F26D30;
+    color: #F26D30
+}
+
+.md-button--bc {
+  background: #004990;
+  border-color: #004990 !important;
+}
+
+.md-typeset .md-button--bc:focus,.md-typeset .md-button--bc:hover {
+    background-color: #2664b5;
+    border-color: #2664b5;
+    color: #2664b5
+}
+
+.md-button--yunio {
+  background: #22A285;
+  border-color: #22A285; !important;
+}
+
+.md-typeset .md-button--yunio:focus,.md-typeset .md-button--yunio:hover {
+    background-color: #27BC97;
+    border-color: #27BC97;
+    color: #27BC97
+}
+
+.md-button--erp {
+  background: #ED1A33;
+  border-color: #ED1A33; !important;
+}
+
+.md-typeset .md-button--erp:focus,.md-typeset .md-button--erp:hover {
+    background-color: #FF2643;
+    border-color: #FF2643;
+    color: #FF2643
+}

@@ -33,20 +33,52 @@ hide:
 <div class="grid cards" markdown>
 
 - [:material-file-edit-outline: __Editorial Guide__](editorial-guidelines/index.md)
-
-</div>
-<div class="grid cards" markdown>
-
 - [:material-television-guide: __UI Style Guide__](ui-style-guide/index.md)
-
-</div>
-<div class="grid cards" markdown>
-
 - [:material-sign-direction: __Roadmap Drafts__](roadmap/index.md)
 
 </div>
+
+---
+
+Internal Changelogs:
+
+- [:products-xtract-universal: __Xtract Unviersal__](changelog/changelog-xu.md)
+- [:products-board-connector: __Board Connector__](changelog/changelog-bc.md)
+- [:products-xtract-is: __Xtract IS__](changelog/changelog-xis.md)
+- [:products-yunio: __yunIO__](changelog/changelog-yunio.md)
+- [:products-xtract-for-alteryx: __Xtract for Alteryx__](changelog/changelog-xfa.md)
+- [:products-erpconnect: __ERPConnect__](changelog/changelog-erpconnect.md)
+
+
+<!---
 <div class="grid cards" markdown>
 
-- [:material-list-box-outline: __Internal Changelog__](changelog/index.md)
+- [:products-xtract-universal: __Xtract Unviersal__](changelog/changelog-xu.md)
 
 </div>
+<div class="grid cards" markdown>
+
+- [:products-board-connector: __Board Connector__](changelog/changelog-bc.md)
+
+</div>
+<div class="grid cards" markdown>
+
+- [:products-xtract-is: __Xtract IS__](changelog/changelog-xis.md)
+
+</div>
+<div class="grid cards" markdown>
+
+- [:products-yunio: __yunIO__](changelog/changelog-yunio.md)
+
+</div>
+<div class="grid cards" markdown>
+
+- [:products-xtract-for-alteryx: __Xtract for Alteryx__](changelog/changelog-xfa.md)
+
+</div>
+<div class="grid cards" markdown>
+
+- [:products-erpconnect: __ERPConnect__](changelog/changelog-erpconnect.md)
+
+</div>
+-->
