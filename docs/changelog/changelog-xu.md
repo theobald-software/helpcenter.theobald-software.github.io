@@ -2,6 +2,7 @@
 description: Changelog of Xtract Universal
 hide:
   - navigation
+  - toc
 ---
 
 # :products-xtract-universal: Xtract Universal Changelog

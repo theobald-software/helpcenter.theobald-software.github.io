@@ -2,6 +2,7 @@
 description: Changelog of Xtract for Alteryx
 hide:
   - navigation
+  - toc
 ---
 
 

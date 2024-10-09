@@ -2,6 +2,7 @@
 description: Changelog of Board Connector
 hide:
   - navigation
+  - toc
 ---
 
 # :products-board-connector: Board Connector Changelog

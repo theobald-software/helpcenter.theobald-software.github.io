@@ -2,6 +2,7 @@
 description: Changelog of ERPConnect
 hide:
   - navigation
+  - toc
 ---
 
 # :products-erpconnect: ERPConnect Changelog

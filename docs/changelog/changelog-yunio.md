@@ -2,6 +2,7 @@
 description: Changelog of yunIO
 hide:
   - navigation
+  - toc
 ---
 
 # :products-yunio: yunIO Changelog

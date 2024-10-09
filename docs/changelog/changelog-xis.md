@@ -2,6 +2,7 @@
 description: Changelog of Xtract IS
 hide:
   - navigation
+  - toc
 ---
 
 # :products-xtract-is: Xtract IS Changelog
