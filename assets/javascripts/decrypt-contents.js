@@ -52,14 +52,14 @@ function decrypt_key_from_bundle(password, ciphertext_bundle, username) {
             if (parts.length == 3) {
                 keys = decrypt_key(pass, parts[0], parts[1], parts[2]);
                 if (keys) {
-                    
+                    setCredentials(null, pass);
                     return keys;
                 }
             } else if (parts.length == 4 && username) {
                 if (parts[3] == userhash) {
                     keys = decrypt_key(pass, parts[0], parts[1], parts[2]);
                     if (keys) {
-                        
+                        setCredentials(user, pass);
                         return keys;
                     }
                 }
@@ -116,6 +116,31 @@ function delItemName(key) {
 function getItemName(key) {
     return sessionStorage.getItem(key);
 };
+/* save username/password to sessionStorage/localStorage */
+function setCredentials(username, password) {
+    sessionStorage.setItem('encryptcontent_credentials', JSON.stringify({'user': username, 'password': password}));
+}
+
+/* try to get username/password from sessionStorage/localStorage */
+function getCredentials(username_input, password_input) {
+    const credentials = JSON.parse(sessionStorage.getItem('encryptcontent_credentials'));
+    if (credentials && !encryptcontent_obfuscate) {
+        if (credentials['user'] && username_input) {
+            username_input.value = decodeURIComponent(credentials['user']);
+        }
+        if (credentials['password']) {
+            password_input.value = decodeURIComponent(credentials['password']);
+        }
+        return true;
+    } else {
+        return false;
+    }
+}
+
+/*remove username/password from localStorage */
+function delCredentials() {
+    sessionStorage.removeItem('encryptcontent_credentials');
+}
 
 /* Reload scripts src after decryption process */
 function reload_js(src) {
@@ -290,10 +315,26 @@ function init_decryptor() {
         content_decrypted = decrypt_action(
             username_input, password_input, encrypted_content, decrypted_content, key_from_storage
         );
-        
+        /* try to get username/password from sessionStorage */
+        if (content_decrypted === false) {
+            let got_credentials = getCredentials(username_input, password_input);
+            if (got_credentials) {
+                content_decrypted = decrypt_action(
+                    username_input, password_input, encrypted_content, decrypted_content
+                );
+            }
+        }
         decryptor_reaction(content_decrypted, password_input, decrypted_content, true);
     }
-    
+    else {
+        let got_credentials = getCredentials(username_input, password_input);
+        if (got_credentials) {
+            content_decrypted = decrypt_action(
+                username_input, password_input, encrypted_content, decrypted_content
+            );
+            decryptor_reaction(content_decrypted, password_input, decrypted_content, true);
+        }
+    }
     
     /* Default, try decrypt content when key enter is press */
     password_input.addEventListener('keypress', function(event) {
