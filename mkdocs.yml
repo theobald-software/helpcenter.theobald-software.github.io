@@ -78,11 +78,13 @@ plugins:
       #hash_filenames:
       #  extensions:
       #    - 'json'
+      search_index: 'clear'
+      html_template_path: "overrides/decrypt-form.tpl.html"
       password_inventory:
           classified: 'TheobaldStuttgart'
       remember_password: True
       title_prefix: ''
-      summary: 'Restricted Content'
+      summary: 'Restricted Content' 
       decryption_failure_message: 'Wrong password.'
       encryption_info_message: 'You are about to access restricted content. Enter a password to continue.'
       #button_class: 'md-button'
@@ -103,6 +105,7 @@ plugins:
         #- optimize # compresses images and files
         - minify: # minifies HTML by stripping all whitespace from the generated documentation
             minify_html: true
+
 
 # Additional configuration
 extra:

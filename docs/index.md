@@ -8,7 +8,7 @@ hide:
 <link rel="stylesheet" href="/assets/stylesheets/no_search.css">
 
 
-# Welcome to the Theobald Software HelpCenter.
+# Welcome to the Theobald Software HelpCenter
 
 Choose your product:
 
