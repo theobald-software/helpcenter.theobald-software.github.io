@@ -113,6 +113,8 @@ plugins:
   #- tags # enables tags in front matter
   - optimize #requires pngquant to be installed, see https://github.com/squidfunk/mkdocs-material/discussions/4989
   - offline
+  - minify:
+      minify_html: true
 
 
 # Continuous integration
@@ -130,8 +132,6 @@ plugins:
           #   add_share_buttons: False
           #   add_dates: False
           #   add_json_ld: True
-         - minify:
-             minify_html: true
          - social:
              cards_layout: default
              cards_layout_options:
