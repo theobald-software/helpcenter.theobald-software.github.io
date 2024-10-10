@@ -36,6 +36,7 @@ hide:
 <div class="mdx-columns" markdown>
 
 - [Check the Accessibility to an SAP System](check-the-accessibility-to-an-sap-system.md)
+- [Access Data in the SAP Public Cloud](access-data-in-the-sap-public-cloud.md) 
 - [Authorize Access to Reports via Authorization Groups](authorize-access-to-specific-reports.md)
 - [Create the Custom Authorization Object Z_TS_PROG](create-the-custom-authority-object-z-ts-prog.md)
 - [Create a Client PSE to connect to SAP Cloud Systems](create-personal-security-environment.md)
@@ -117,7 +118,7 @@ The following articles refer to specific [{{ components }}](../documentation/int
 ### :component-bapi: BAPI
 
 <div class="mdx-columns" markdown>
-
+- [Access Data in the SAP Public Cloud :material-alert-decagram:](access-data-in-the-sap-public-cloud.md) 
 - [Read Data from Cluster Fields in Tables PCL1 and PCL2 (Payroll)](read-data-from-cluster-fields-in-the-tables-pcl1-and-pcl2-payroll.md)
 
 </div>
@@ -155,8 +156,7 @@ The following articles refer to specific [{{ components }}](../documentation/int
 ### :component-table: Table
 
 <div class="mdx-columns" markdown>
-
-- [Change Data Capture with CDHDR](change-data-capture-with-cdhdr.md)
+- [Extraction Mechanism of Table](table-extraction-mechanism.md)
 - [Delta Table Extraction](delta-table-extraction.md)
 - [Read data from Cluster Fields in Tables PCL1 and PCL2 (Payroll)](read-data-from-cluster-fields-in-the-tables-pcl1-and-pcl2-payroll.md)
 - [Working with Lists in the WHERE-Clause Editor](where-clause-editor-lists.md)

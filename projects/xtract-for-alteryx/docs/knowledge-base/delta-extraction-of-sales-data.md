@@ -1,6 +1,7 @@
 ---
 title: Delta Extraction of Sales and Customer Data from SAP  
 description: Test
+author: Simon Rech, Valerie Schipka
 ---
 
 The following article shows how to use the {{ odp }} {{ component }} of {{ productName }} to load sales documents and customer master data from an SAP ERP system.<br>

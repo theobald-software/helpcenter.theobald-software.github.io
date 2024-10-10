@@ -1,6 +1,7 @@
 ---
 title: Xtract for Alteryx Performance Considerations
 description: Xtract for Alteryx Performance Considerations
+author: Simon Rech
 ---
 
 The following article contains information on performance measurements for {{ productName }}.<br>

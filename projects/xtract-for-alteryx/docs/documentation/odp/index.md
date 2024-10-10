@@ -1,5 +1,5 @@
 ---
-title: ODP
+title: Xtract ODP
 description: Operational Data Provisioning (ODP)
 icon: component/odp
 ---

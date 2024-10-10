@@ -40,7 +40,7 @@ To run an extraction on the {{ productName }} server, call the command line tool
 ### Return Codes
 When an operation is completed successfully, the program returns *0*. In case of an error, the program returns one of the following status codes:
 
-|HTTP Status Codes	|Description|
+|Return Code	|Description|
 |---|---|
 |404 |	Extraction does not exist|
 |1001|	An undefined error occurred|

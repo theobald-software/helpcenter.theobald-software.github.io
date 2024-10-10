@@ -1,6 +1,7 @@
 ---
 title: Dynamic Table Extractions 
 description: Test
+author: Simon Rech, Valerie Schipka
 ---
 
 The following article shows how to use the {{ table }} {{ component }} of {{ productName }} with different types of {{ variables }}.<br>

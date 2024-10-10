@@ -3,8 +3,8 @@ The following article shows how to create a client [PSE (Personal Security Envir
 
 ### Prerequisites
 
-- SAP Cloud API URL, e.g., `https://my123456-api.s4hana.ondemand.com`. The correct URL is displayed in the **API-URL** field of the communication arrangement set up for communication scenario SAP_COM_0193.
-- Command line tool sapgenpse.exe. The tool can be downloaded as part of the SAP Cryptographic Library in the SAP Service Marketplace.
+- SAP Cloud API URL, e.g., `https://my123456-api.s4hana.ondemand.com`. 
+- [Download the SAP Cryptographic Library](https://help.sap.com/doc/saphelp_em900/9.0/en-US/48/a324e7ccfc062de10000000a42189d/frameset.htm) (sapgenpse.exe and sapcrypto.dll) from the SAP Service Marketplace.
 
 ### Creating a Client PSE
 
@@ -41,12 +41,12 @@ Follow the steps below to create a client PSE file that trusts the server certif
 	```
 	sapgenpse.exe gen_pse -p client.pse -v [Distinguished name]
 	```
-	Replace `[Distinguished name]` with the distinguished name of the server that runs the Xtract product, e.g., `"CN=COMPUTER.theobald.local, C=DE, S=BW, O=TS, OU=DEV"`.
-	Optionally, replace `client.pse` with a custom file name for the .pse file. 	
-	The tool creates its own repository in a standard path, unless the path is changed by the environment variable SECUDIR or by specifying an absolute path. 
+	- Replace `[Distinguished name]` with the distinguished name of the server that runs the Xtract product, e.g., `"CN=COMPUTER.theobald.local, C=DE, S=BW, O=TS, OU=DEV"`.
+	- Optionally, replace `client.pse` with a custom file name for the .pse file. 	
+	- The tool creates its own repository in a standard path, unless the path is changed by the environment variable SECUDIR or by specifying an absolute path. 
 	
 	!!! warning
-		**Restricted Access**
+		**Restricted Access**<br>
 		The PSE must be created without a password/pin, otherwise reading is not possible.
 		Make sure not to secure the PSE. 
 	

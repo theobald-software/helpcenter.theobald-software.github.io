@@ -20,3 +20,7 @@ The {{ bapi }} {{ component }} can be used to parameterize and execute SAP funct
 {% include "/components/bapis-and-function-modules/define-a-bapi-extraction.md" %}
 
 
+----------
+#### Related Links
+- [Knowledge Base: Access Data in the SAP Public Cloud](../../knowledge-base/access-data-in-the-sap-public-cloud.md)
+- [Knowledge Base: Read Data from Cluster Fields in Tables PCL1 and PCL2 (Payroll)](../../knowledge-base/read-data-from-cluster-fields-in-the-tables-pcl1-and-pcl2-payroll.md)

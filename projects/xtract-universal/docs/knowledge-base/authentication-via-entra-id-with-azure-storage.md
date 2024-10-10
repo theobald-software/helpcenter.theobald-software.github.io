@@ -1,6 +1,7 @@
 ---
 title: Authentication via Microsoft Entra ID for Azure Storage
 description: Authentication via Microsoft Entra ID for Azure Storage
+author: Bharath Gorapalli, Valerie Schipka
 ---
 
 The following article shows how to connect to the Azure Storage destination using Authentication via Microsoft Entra ID (formerly Azure Active Directory).

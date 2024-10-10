@@ -14,7 +14,7 @@ The following symlinks are required for building previews of the HelpCenters:
 
 | Source Folder | Command |
 |-----------------|-----------------|
-| `[product name]/overrides/` | `mklink /D documentation ..\..\..\overrides\.icons` |
+| `[product name]/overrides/` | `mklink /D .icons ..\..\..\overrides\.icons` |
 | `[product name]/`            | `mklink /D includes ..\..\includes` |
 | `[product-name]/docs/assets/` | `mklink /D files ..\..\..\..\files` |
 | `[product-name]/docs/assets/images/` | `mklink /D articles ..\..\..\..\..\images\articles` |

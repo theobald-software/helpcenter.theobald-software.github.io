@@ -28,6 +28,7 @@ hide:
 - [Authority Check Trace](https://support.theobald-software.com/helpdesk/KB/View/13799-authority-check-trace)
 - [Error: Theobald.Extractors.Table.TheoReadTableException: The parser produced the error](https://support.theobald-software.com/helpdesk/KB/View/14771-error-theobald-extractors-table-theoreadtableexception-the-parser-produced-the-error)
 - [Error while retrieving metadata for BAPI](https://support.theobald-software.com/helpdesk/KB/View/19373-error-while-retrieving-metadata-for-bapi)
+- [ERROR service ‚?‘ unknown or service sapms unknown](https://support.theobald-software.com/helpdesk/KB/View/13649-error-service-unknown-or-service-sapms-unknown%C2%A0)
 - [LIST_FROM_MEMORY_NOT_FOUND](https://support.theobald-software.com/helpdesk/KB/View/19472-list-from-memory-not-found)
 - [MDX parser does not start](https://support.theobald-software.com/helpdesk/KB/View/20073-mdx-parser-does-not-start)
 - [Missing SAP authority rights for data replication.](https://support.theobald-software.com/helpdesk/KB/View/17141-missing-sap-authority-rights-for-data-replication-)

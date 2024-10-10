@@ -55,6 +55,7 @@ theme:
 extra_css:
   - assets/stylesheets/extra.css
   - assets/stylesheets/neoteroi-cards.css 
+  - assets/stylesheets/neoteroi-gantt.css 
   - assets/stylesheets/hyperscript.css
 extra_javascript:
   - assets/javascripts/hyperscript.min.js
@@ -71,6 +72,24 @@ plugins:
   - pagenav-generator
   - tags
   - search
+  - encryptcontent:
+      #selfhost: true
+      #selfhost_download: false
+      #hash_filenames:
+      #  extensions:
+      #    - 'json'
+      search_index: 'clear'
+      html_template_path: "overrides/decrypt-form.tpl.html"
+      password_inventory:
+          classified: 'TheobaldStuttgart'
+      remember_password: True
+      title_prefix: ''
+      summary: 'Restricted Content' 
+      decryption_failure_message: 'Wrong password.'
+      encryption_info_message: 'You are about to access restricted content. Enter a password to continue.'
+      #button_class: 'md-button'
+      #password_button_text: 'ENTER'
+      #password_button: True
   - privacy:
       links_attr_map:
         target: _blank # opens all external links in new tabs
@@ -86,6 +105,7 @@ plugins:
         #- optimize # compresses images and files
         - minify: # minifies HTML by stripping all whitespace from the generated documentation
             minify_html: true
+
 
 # Additional configuration
 extra:
@@ -106,6 +126,7 @@ extra:
    
 # Extensions for Markdown Syntax  
 markdown_extensions:
+  - neoteroi.projects
   - pymdownx.critic
   - toc:
       separator: "-"

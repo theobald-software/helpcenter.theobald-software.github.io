@@ -1,6 +1,7 @@
 ---
 title: Parameterization via Batch Macros 
 description: Parameterizing via Batch Macro and Control Parameters
+author: Valerie Schipka
 ---
 
 There are 2 ways to parameterize Xtract components:

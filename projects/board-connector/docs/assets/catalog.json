@@ -1,12 +1,140 @@
 [
   {
-    "Version": "2024.9.6.7",
-    "LegacyReleaseDate": "2024-09-06 00:00:00Z",
+    "Version": "2024.10.8.35",
+    "LegacyReleaseDate": "2024-10-08 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "Table",
+        "Message": "Prefer /THEO/READ_TABLE over Z_THEO, update error messages"
+      }
+    ]
+  },
+  {
+    "Version": "2024.10.8.11",
+    "LegacyReleaseDate": "2024-10-08 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Setup",
+        "Component": "General",
+        "Message": "Added a message to warn about development version setup"
+      }
+    ]
+  },
+  {
+    "Version": "2024.10.4.7",
+    "LegacyReleaseDate": "2024-10-04 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Server",
+        "Component": "General",
+        "Message": "Fixed a bug where extractions were not correctly deleted if they were created while the column encryption feature was still available."
+      }
+    ]
+  },
+  {
+    "Version": "2024.10.2.35",
+    "LegacyReleaseDate": "2024-10-02 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "BoardConnector",
+        "Component": "General",
+        "Message": "Updated dependencies with vulnerabilities to versions where the issues are fixed."
+      }
+    ]
+  },
+  {
+    "Version": "2024.10.1.52",
+    "LegacyReleaseDate": "2024-10-01 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Common",
+        "Component": "Licensing",
+        "Message": "Updated licensing code for new XfA Server Environment licenses and license validation logic for BoardConnector for TableCDC extractions."
+      }
+    ]
+  },
+  {
+    "Version": "2024.9.30.45",
+    "LegacyReleaseDate": "2024-09-30 00:00:00Z",
     "Changes": [
       {
         "Product": "Theobald.Extractors",
         "Component": "BWCube",
-        "Message": "Fixes an issue in MDX where selecting external hierarchy members from the value help for filters results in errors during extraction"
+        "Message": "BICS: Add support for filters"
+      }
+    ]
+  },
+  {
+    "Version": "2024.9.23.92",
+    "LegacyReleaseDate": "2024-09-23 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "Table",
+        "Message": "Fixed transport request for /THEO/READ_TABLE_710."
+      }
+    ]
+  },
+  {
+    "Version": "2024.9.20.20",
+    "LegacyReleaseDate": "2024-09-20 00:00:00Z",
+    "IsBreaking": true,
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "TableCDC",
+        "Message": "Improved deletion handling of log table entries. This fixes a bug where extractions could sometimes fail when the log table count did not match the extracted rows count. Check Release Notes for details.",
+        "ReleaseNote": "- This change is breaking since the signature of a function module has changed and the new extractor is not compatible with older versions of that function module.\n- You are affected if you are running TableCDC extractions.\n- To ensure compatibility, update the /THEO/CDC_* package to the most recent version (1.9) by importing the provided transport request into your system."
+      }
+    ]
+  },
+  {
+    "Version": "2024.9.18.57",
+    "LegacyReleaseDate": "2024-09-18 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "General",
+        "Message": "Add flag for appending the RequestID to the extraction output."
+      }
+    ]
+  },
+  {
+    "Version": "2024.9.16.48",
+    "LegacyReleaseDate": "2024-09-16 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "BoardConnector",
+        "Component": "Server",
+        "Message": "Fixed a log entry which erroneously contained the wrong product name."
+      },
+      {
+        "Product": "Theobald.Server",
+        "Component": "General",
+        "Message": "Restored the logging of license information."
+      }
+    ]
+  },
+  {
+    "Version": "2024.9.13.64",
+    "LegacyReleaseDate": "2024-09-13 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "BWCube",
+        "Message": "Fix copying of MDX Cube extraction definitions when using dimensions on columns."
+      }
+    ]
+  },
+  {
+    "Version": "2024.9.6.55",
+    "LegacyReleaseDate": "2024-09-06 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Server",
+        "Component": "General",
+        "Message": "Fixed an error when testing a new SAP connection without a password."
       }
     ]
   },
@@ -465,17 +593,6 @@
         "Product": "Common",
         "Component": "General",
         "Message": "Updated NW RFC SDK to 750 PL13"
-      }
-    ]
-  },
-  {
-    "Version": "6.5.2.9",
-    "LegacyReleaseDate": "2024-06-12 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "ERPConnect",
-        "Component": "General",
-        "Message": "New version numbering scheme.\nSetup now displays possible breaking changes when performing an update to a new version"
       }
     ]
   },

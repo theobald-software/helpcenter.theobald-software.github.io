@@ -6,7 +6,7 @@ description: SSIS Migration
 This page contains information on how to migrate SSIS packages with Xtract IS {{ components }} from a lower SQL Server/SSIS version to a higher version. 
 
 - When migrating from SQL Server 2012 or lower to SQL Server 2019, follow the instructions in [Migrate from SQL Server 2008/2012 to SQL Server 2019](#migrate-from-sql-server-20082012-to-sql-server-2019).
-- When migrating from SQL Server 2014 or higher to SQL Server 2019, follow the instructions in [Migrate from SQL Server 2014/2016 to SQL Server 2019](#migrate-from-sql-server-20142016-to-sql-server-2019).
+- When migrating from SQL Server 2016 or higher to SQL Server 2019, follow the instructions in [Migrate from SQL Server 2016 to SQL Server 2019](#migrate-from-sql-server-20142016-to-sql-server-2019).
 
 ### Install the Latest Version of Xtract IS
 
@@ -49,8 +49,8 @@ During conversion, the tool creates a backup of your SSIS package. <br>
 1. Open a new Solution in Visual Studio.
 2. Open the project properties and select an SQL server as "Deployment Target Version":<br>
 ![VS-Deployment-Target](../../assets/images/xis/documentation/setup/VS_Deployment_Target.png){:class="img-responsive"}
-	- If your SSIS packages have been created by an SSDT/VS version from **after** 2015 for SQL Server 2014/2016, continue with step 6.
-	- If your SSIS packages have been created by an SSTD/VS version from **before** 2015 for SQL Server 2014/2016, select the SQL Server on which your packages have run until now (SQL Server 2014 or SQL Server 2016).
+	- If your SSIS packages have been created by an SSDT/VS version from **after** 2015 for SQL Server 2016, continue with step 6.
+	- If your SSIS packages have been created by an SSTD/VS version from **before** 2015 for SQL Server 2016, select the SQL Server on which your packages have run until now (SQL Server 2014 or SQL Server 2016).
 	- If the SSIS packages have been prepared by the *Xtract IS Conversion Preparer* from [Migrating from SQL Server 2008/2012 to SQL Server 2019](#migrate-from-sql-server-20082012-to-sql-server-2019), select SQL Server 2016.<br>
 3. Save the project.
 4. Add the SSIS packages to the project.

@@ -1,0 +1,72 @@
+[
+    {
+        "title": "Prototyping",
+        "activities": [
+            {
+                "title": "Alteryx Cloud Execution",
+                "start": "2022-03-03",
+                "lasts": "1 day"
+            },
+            {
+                "title": "SAP Concur",
+                "start": "2022-04-02",
+                "lasts": "4 weeks"
+            },
+            {
+                "title": "OData as Source",
+                "start": "2022-05-01",
+                "lasts": "2 weeks"
+            }
+        ]
+    },
+    {
+        "title": "Feedback / QA",
+        "activities": [
+            {
+                "title": "SAP Public Cloud",
+                "start": "2022-05-21",
+                "lasts": "2 weeks"
+            },
+            {
+                "title": "Alteryx Cloud Execution",
+                "start": "2022-05-03",
+                "lasts": "1 day"
+            },
+            {
+                "title": "SAP Concur",
+                "start": "2022-05-02",
+                "lasts": "4 weeks"
+            },
+            {
+                "title": "OData as Source",
+                "start": "2022-06-01",
+                "lasts": "2 weeks"
+            }
+        ]
+    },
+    {
+        "title": "Release",
+        "activities": [
+            {
+                "title": "SAP Public Cloud",
+                "start": "2022-06-10",
+                "lasts": "2 weeks"
+            },
+            {
+                "title": "Alteryx Cloud Execution",
+                "start": "2022-06-03",
+                "lasts": "1 day"
+            },
+            {
+                "title": "SAP Concur",
+                "start": "2022-06-02",
+                "lasts": "4 weeks"
+            },
+            {
+                "title": "OData as Source",
+                "start": "2022-06-14",
+                "lasts": "2 weeks"
+            }
+        ]
+    }
+]

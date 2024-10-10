@@ -179,6 +179,7 @@ markdown_extensions:
 
 # Additional configuration
 extra:
+  root_url: https://helpcenter.theobald-software.com #link in header (product overview)
   status:
     new: Recently added
     deprecated: Deprecated

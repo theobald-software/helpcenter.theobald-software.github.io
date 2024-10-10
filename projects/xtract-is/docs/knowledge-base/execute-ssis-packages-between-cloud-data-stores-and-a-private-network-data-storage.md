@@ -1,6 +1,7 @@
 ---
 title: Execute SSIS Packages between Cloud Data Stores and a Private Network Data Storage
 description: Running copy activity between a cloud data stores and a data store in private network
+author: Fabian Steffan, Maia Reichert-Baisch
 ---
 
 The following article describes a secure data integration approach to execute SSIS packages that access an SAP source system located in a private network (domain).

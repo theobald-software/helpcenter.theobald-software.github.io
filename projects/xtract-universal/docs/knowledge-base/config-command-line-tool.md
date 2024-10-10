@@ -1,6 +1,8 @@
 ---
 title: Create Extractions via Commandline
 description: Creating extractions without using the Designer GUI
+tags:
+  - xu-config
 ---
 
 The command line tool xu-config.exe tool creates extractions, sources and destinations outside of the {{ productName }} Designer.

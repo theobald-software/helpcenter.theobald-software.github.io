@@ -1,6 +1,7 @@
 ---
 title: Employee Onboarding using Nintex and yunIO
 description: Employee Onboarding using Nintex and yunIO
+author: Christian Tauchmann, Valerie Schipka
 ---
 
 The following article shows how to use the Nintex [Employee Onboarding scenario template](https://gallery.nintex.com/t/employee-onboarding) with yunIO to create new employees in SAP.<br>

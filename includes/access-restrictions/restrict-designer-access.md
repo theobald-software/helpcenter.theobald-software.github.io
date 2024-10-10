@@ -12,11 +12,12 @@ By default, the access restrictions also apply to extractions and sources.
 ![security-manage-users](../../assets/images/documentation/access-restriction/server-settings_manage.png){:class="img-responsive"}
 2. In the tab *Configuration Server*, activate the option **Restrict Designer access to the following users/groups**.<br>
 ![ServerSettings_authenticaion_methods](../../assets/images/documentation/access-restriction/Server-Settings.png){:class="img-responsive"}
-3. Activate or deactivate authentication methods for the users or user groups.
+3. Activate or deactivate authentication methods for the users or user groups, see [Authentication Between Designer and Server](index.md/#authentication-between-designer-and-server).
 3. Click **[Add]** to add existing Windows AD users or [custom users](user-management.md/#create-custom-users).
 4. Assign access rights to the users or user groups.
 
 After access restrictions are set up, only designated users can connect to the {{ productName }} server when [starting the Designer](../designer.md).
+
 
 ### Restriction Levels
 

@@ -9,19 +9,24 @@ There are two types of users and user groups, access can be restricted to:
 - Windows AD users (Kerberos authentication)
 - [Custom users](user-management.md) (Basic authentication)
 
+
+
 ### Authentication Between Designer and Server
+
 
 The connection between the Designer and the Server can be established using different authentication and encryption methods.
 The authentication method guarantees the verification of the identity of the logged in user.
 
 ![Designer_Authentication](../../assets/images/{{ abbr }}/documentation/designer/remote-login.png){:class="img-responsive"}
 
-The following combinations of transport encryption and authentication are available:
+{% include "access-restrictions/run-extractions-user-in-designer.md" %}
 
 !!! note 
 	To use Kerberos transport encryption or authenticate an Active Directory (AD) user, a Kerberos Target Principal Name (TPN) is required. 
 	TPN can either be a User Principal Name (UPN) or a Service Principal Name (SPN). 
 	For more information on TPN, see [Knowledge Base Article: Target Principal Field (TPN)](../../knowledge-base/target-principal-TPN.md).
+
+The following combinations of transport encryption and authentication are available:
 
 | Authentication Method | Description | TPN required |
 | :------ |:--- | :---: |

@@ -20,7 +20,6 @@ This page contains information about system requirements and compatible SAP syst
 
 ### Supported SQL Server Versions  	
 
-- SQL Server 2014 
 - SQL Server 2016
 - SQL Server 2017
 - SQL Server 2019

@@ -62,6 +62,20 @@ Input parameters are now accessible in the request body of the service :number-1
 Ouput parameters are now accessible in the response body of the service :number-2:.<br>
 ![transaction-copy-download](../../assets/images/yunio/documentation/postman-input-transaction.png){:class="img-responsive"}
 
+### Skip Popups
+
+When recording a transaction workflow, SAP can display dynamic popup screens. The popup screens can vary depending on input values.<br>
+The input parameter `skipPopups` in the request body of the service defines how to handle unexpected popup messages that show up at runtime.<br>
+
+
+When `skipPopups` is set to *true*, the following actions apply:
+
+| Popup during recording | Popup during a service run | Action |
+| :------: |:---: | :--- |
+| x | x | The popup is handled like a regular screen. |
+| x |  | The service ignores the recorded screen and continues to the next screen. |
+|  | x | The popup is confirmed (Return/Enter key). |
+
 
 ### Samples
 

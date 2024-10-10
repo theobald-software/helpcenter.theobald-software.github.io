@@ -1,5 +1,6 @@
 ---
 title: Xtract for Alteryx HelpCenter
+template: home.html
 loc: index
 hide:
   - navigation

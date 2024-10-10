@@ -54,7 +54,7 @@ The following SAP Systems are not supported:
 
 	</div>
 
-{% if page.meta.product != "yunio" %}
+{% if page.meta.product != "yunio" and page.meta.product != "erpconnect"%}
 ### HANA Database
 You can use Operational Data Provisioning (ODP) to connect the SAP HANA database of an SAP ABAP source system. 
 Communication is done via RFC. 

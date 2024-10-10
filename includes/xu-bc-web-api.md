@@ -41,8 +41,11 @@ The basic URL for web calls uses the following format: `[protocol]://[host or IP
 	</div>
 
 {% if page.meta.product != "board-connector" %}	
-If the extraction is located inside an [extraction group](documentation/execute-and-automate/run-an-extraction.md), the name of the extraction group is part of the extraction name.
-<br>Example: The extraction "KNA1" in the extraction group "S4HANA" becomes `S4HANA,KNA1`.
+
+!!! note
+	If the extraction is located inside an [extraction group](documentation/organize-extractions.md), the name of the extraction group is part of the extraction name.
+	Example: The extraction "KNA1" in the extraction group "S4HANA" becomes `S4HANA,KNA1`.
+ 
 {% endif %}
 
 !!! warning
@@ -50,10 +53,7 @@ If the extraction is located inside an [extraction group](documentation/execute-
 	- `[protocol]://[host]:[port]/?name=[extraction_name]` becomes `[protocol]://[host]:[port]/run/[extraction_name]`
 	- `[protocol]://[host]:[port]/?name=[extraction_name]&wait=false` becomes `[protocol]://[host]:[port]/start/[extraction_name]`
 
-!!! tip
-	 You can use the UI in the “Run Extraction” menu to generate an URL for extraction runs, see {% if page.meta.product == "xtract-universal" %}[Run Extractions](documentation/execute-and-automate/run-an-extraction.md/#run-extractions-in-the-designer){% else %}[Run Extractions](documentation/run-extractions.md/#run-extractions-in-the-designer){% endif %}.
 
- 
 #### Response
 The response of the web service call contains the following information:
 
