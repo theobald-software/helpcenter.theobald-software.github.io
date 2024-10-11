@@ -139,7 +139,6 @@ The window "Manage Destinations" opens. Here, you can edit, delete and add new d
   
 ::/cards::
 
-
 ### Cloud Storage
 
 ::cards:: cols=4
@@ -163,19 +162,16 @@ The window "Manage Destinations" opens. Here, you can edit, delete and add new d
 - title: Huawei Cloud OBS <br><br><span class="keyword">push-destination</span> 
   image: site:assets/images/xu/documentation/destinations/logos/Huawei.png
   url: site:documentation/destinations/huawei
-  
-- title: MS Fabric OneLake <br><br><span class="keyword">push-destination</span> 
+
+- title: Fabric (OneLake) <br><br><span class="keyword">push-destination</span> 
   image: site:assets/images/xu/documentation/destinations/logos/onelake.png
   url: site:documentation/destinations/microsoft-fabric-onelake
   
 ::/cards::
 
-<!---
-- title: Azure Storage (Blob / Data Lake) <br><br><span class="keyword">push-destination</span> 
-  image: site:assets/images/xu/documentation/destinations/logos/Azure.png
-  url: site:documentation/destinations/azure-storage
--->
+<!---  
 
+  -->
 
 ### Generic Destinations
 

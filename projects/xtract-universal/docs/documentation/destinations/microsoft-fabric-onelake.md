@@ -10,47 +10,48 @@ The {{ page.meta.title }} destination enables users to load SAP data to a Micros
 
 
 ## Requirements
+- [Microsoft Entra ID (formerly Azure Active Directory)](https://www.microsoft.com/en-us/security/business/identity-access/microsoft-entra-id) authentication for Microsoft Fabric.
 
 {% include "destinations/create-destination.md" %}
 
 ![Destination-Details](../../assets/images/xu/documentation/destinations/fabric/destination-details.png){:class="img-responsive"}
 
-https://onelake.dfs.fabric.microsoft.com/<workspaceGUID>/<itemGUID>/<path>/<fileName>
+### Authentication
 
-abfs[s]://<workspace>@onelake.dfs.fabric.microsoft.com/<item>.<itemtype>/<path>/<fileName>
-
-
-Microsoft Entra ID: 
-This method of authentication uses OAuth 2.0 and [Microsoft Entra ID](https://learn.microsoft.com/en-us/rest/api/storageservices/authorize-with-azure-active-directory)
-
-#### Storage account
-Enter your storage account name. 
+The {{ page.meta.title }} destination uses [Microsoft Entra ID](https://www.microsoft.com/en-us/security/business/identity-access/microsoft-entra-id) for authentication.
+Register Microsoft OneLake as an application in Entra ID and cofigure OneLake to use the registered application.
 	
 #### Tenant ID
-Enter the Directory (tenand) ID of the registered app.
+Enter the Directory (tenant) ID of the registered app.
 	
 #### Client ID
 Enter the Application (client) ID of the registered app. 
 
 !!! tip
-	You can copy the tenant ID and client ID from the [Microsoft Entra admin center]() **App registrations.<br>
+	You can copy the tenant ID and client ID in the [Microsoft Entra admin center](https://entra.microsoft.com/#home) or the [Azure portal](https://portal.azure.com/), where the app is registered.<br>
 	![xu-azure-blob-con-3](../../assets/images/xu/documentation/destinations/fabric/entraID.png){:class="img-responsive"}
 
 #### Connect
 	
 Click **[Connect]** to establish a connection to the storage account. 
-A browser window pops up, where you have to sign in using your Azure AD credentials.
+A browser window pops up, where you have to sign in using your Microsoft credentials.
 The "Permissions requested" window lists the requested permissions, see [Knowledge Base Article: Authentication via Microsoft Entra ID](../../knowledge-base/authentication-via-entra-id-with-azure-storage.md). 
 Click **[Accept]**. If the connection is successful, a "Connection successful" info window opens. <br>
 
-![xu-azure-blob-con-4](../../assets/images/xu/documentation/destinations/azure-storage/xu-azure-blob-con_4.png){:class="img-responsive"}
+![xu-entraID](../../assets/images/xu/documentation/destinations/azure-storage/xu-azure-blob-con_4.png){:class="img-responsive"}
 
-#### Folder path
-Option to create a folder structure within the container for saving files.
-Script expressions are supported, see [**Destination Settings > Folder**](#folder).
+### Files Folder
 
-For creating a single folder, enter a folder name without slashes: `[folder]` <br>
-Subfolders are supported and can be defined using the following syntax: `[folder]/[subfolder_1]/[subfolder_2]/[..]`
+#### URL
+
+Enter the URL of the Lakehouse, including the folder path in which the data is written.
+The URL uses the following format:<br>
+`https://onelake.dfs.fabric.microsoft.com/<workspaceGUID>/<itemGUID>/<folder>/`
+
+!!! tip
+	You can copy the URL in the [Microsoft Fabric portal](https://app.fabric.microsoft.com/home) using the properties of a OneLake folder:
+	
+	![xu-onelake-url](../../assets/images/xu/documentation/destinations/fabric/url.png)
 
 
 ### File Format
@@ -84,13 +85,20 @@ The settings for file type *Parquet* correspond to the settings of the *Flat Fil
 The retry function is implemented according to [Microsoft Guidelines](https://docs.microsoft.com/en-us/azure/architecture/best-practices/retry-service-specific#retry-strategies).
 The retry logic is based on WebExceptionStatus. 
 
-Rollback covers scenarios where extractions do not fail due to connection failures to Azure but due to an error when connecting to SAP.
-In those cases Xtract Universal tries to remove any files from Azure storage that were created in the course of the extraction.
-
+Rollback covers scenarios where extractions do not fail due to connection failures but due to an error when connecting to SAP.
+In those cases Xtract Universal tries to remove any files from the Lakehouse that were created in the course of the extraction.
 	
 {% include "destinations/assign-destination.md" %}
 
 ![Destination-settings](../../assets/images/xu/documentation/destinations/fabric/destination-settings.png){:class="img-responsive"}
+
+{% include "destinations/file-name.md" %}
+
+!!! note
+	If the name of an object does not begin with a letter, it will be prefixed with an ‘x’, e.g. an object by the name `_namespace_tabname.csv` will be renamed `x_namespace_tabname.csv` when uploaded to the destination.
+	This is to ensure that all uploaded objects are compatible with Azure Data Factory, Hadoop and Spark, which require object names to begin with a letter or give special meaning to objects whose names start with certain non-alphabetic characters. 
+
+{% include "parameters/file-name-script-expressions.md" %}
 
 {% include "destinations/column-name-style.md" %}
 
