@@ -1,5 +1,5 @@
 ---
-title: Microsoft Fabric OneLake
+title: Fabric (OneLake)
 description: Write SAP data to Microsoft Fabric OneLake
 status: new
 attempt: seven
@@ -13,7 +13,12 @@ The {{ page.meta.title }} destination enables users to load SAP data to a Micros
 
 {% include "destinations/create-destination.md" %}
 
-![Destination-Details](../../assets/images/xu/documentation/destinations/ms-fabric/destination-details.png){:class="img-responsive"}
+![Destination-Details](../../assets/images/xu/documentation/destinations/fabric/destination-details.png){:class="img-responsive"}
+
+https://onelake.dfs.fabric.microsoft.com/<workspaceGUID>/<itemGUID>/<path>/<fileName>
+
+abfs[s]://<workspace>@onelake.dfs.fabric.microsoft.com/<item>.<itemtype>/<path>/<fileName>
+
 
 Microsoft Entra ID: 
 This method of authentication uses OAuth 2.0 and [Microsoft Entra ID](https://learn.microsoft.com/en-us/rest/api/storageservices/authorize-with-azure-active-directory)
@@ -22,14 +27,14 @@ This method of authentication uses OAuth 2.0 and [Microsoft Entra ID](https://le
 Enter your storage account name. 
 	
 #### Tenant ID
-Enter the ID of the Azure AD tenant. 
+Enter the Directory (tenand) ID of the registered app.
 	
 #### Client ID
-Enter the ID of the registered app. 
+Enter the Application (client) ID of the registered app. 
 
 !!! tip
-	You can copy the tenant ID and client ID from the Azure portal.<br>
-	![xu-azure-blob-con-3](../../assets/images/xu/documentation/destinations/azure-storage/xu-azure-blob-con_3.png){:class="img-responsive"}
+	You can copy the tenant ID and client ID from the [Microsoft Entra admin center]() **App registrations.<br>
+	![xu-azure-blob-con-3](../../assets/images/xu/documentation/destinations/fabric/entraID.png){:class="img-responsive"}
 
 #### Connect
 	
@@ -52,7 +57,7 @@ Subfolders are supported and can be defined using the following syntax: `[folder
 
 Select the required file format. You can choose between *CSV*, *JSON* and *Parquet*.
 
-![Destination-Details](../../assets/images/xu/documentation/destinations/azure-storage/destination-details_2.png){:class="img-responsive"}
+![Destination-Details](../../assets/images/xu/documentation/destinations/fabric/destination-details_2.png){:class="img-responsive"}
 
 #### CVS Settings
 
@@ -85,7 +90,7 @@ In those cases Xtract Universal tries to remove any files from Azure storage tha
 	
 {% include "destinations/assign-destination.md" %}
 
-![Destination-settings](../../assets/images/xu/documentation/destinations/ms-fabric/destination-settings.png){:class="img-responsive"}
+![Destination-settings](../../assets/images/xu/documentation/destinations/fabric/destination-settings.png){:class="img-responsive"}
 
 {% include "destinations/column-name-style.md" %}
 
