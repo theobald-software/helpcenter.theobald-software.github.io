@@ -211,7 +211,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			const releaseDateCell = row.querySelector('td:nth-child(2)');
 			const version = versionCell.textContent.trim();
 			const description = descriptionCell.textContent.trim().toLowerCase();
-			const component = descriptionCell.textContent.trim().toLowerCase();
+			const component = componentCell.textContent.trim().toLowerCase();
 			const releaseDate = releaseDateCell.textContent.trim().toLowerCase();
 			const searchText = filterValue.toLowerCase();
 
