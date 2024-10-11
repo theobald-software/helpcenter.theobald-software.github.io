@@ -1,5 +1,16 @@
 [
   {
+    "Version": "2024.10.11.9",
+    "LegacyReleaseDate": "2024-10-11 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "ERPConnect",
+        "Component": "General",
+        "Message": "Fixed version number not written into ERPConnect35 assembly during build."
+      }
+    ]
+  },
+  {
     "Version": "2024.10.10.54",
     "LegacyReleaseDate": "2024-10-10 00:00:00Z",
     "Changes": [
