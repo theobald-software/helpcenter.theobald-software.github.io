@@ -19,7 +19,7 @@ The {{ page.meta.title }} destination enables users to load SAP data to a Micros
 ### Authentication
 
 The {{ page.meta.title }} destination uses [Microsoft Entra ID](https://www.microsoft.com/en-us/security/business/identity-access/microsoft-entra-id) for authentication.
-Register Microsoft OneLake as an application in Entra ID and cofigure OneLake to use the registered application.
+Register Microsoft OneLake as an application in Entra ID and configure OneLake to use the registered application.
 	
 #### Tenant ID
 Enter the Directory (tenant) ID of the registered app.
@@ -33,8 +33,7 @@ Enter the Application (client) ID of the registered app.
 
 #### Connect
 	
-Click **[Connect]** to establish a connection to the storage account. 
-A browser window pops up, where you have to sign in using your Microsoft credentials.
+Click **[Connect]** to establish a connection to the storage account. <br> A browser window will open, prompting you to sign in with your Microsoft credentials.<br>
 The "Permissions requested" window lists the requested permissions, see [Knowledge Base Article: Authentication via Microsoft Entra ID](../../knowledge-base/authentication-via-entra-id-with-azure-storage.md). 
 Click **[Accept]**. If the connection is successful, a "Connection successful" info window opens. <br>
 
@@ -73,9 +72,7 @@ To use the JSON file format, no further settings are necessary.
 
 #### Parquet Settings
 
-The settings for file type *Parquet* correspond to the settings of the *Flat File Parquet* destination:
-
-- [Compatibility Mode](parquet.md/#compatibility-mode)
+The settings for file type *Parquet* correspond to the settings of the *Flat File Parquet* destination - [Compatibility Mode](parquet.md/#compatibility-mode).
 
 
 ## Connection Retry and Rollback
@@ -85,8 +82,7 @@ The settings for file type *Parquet* correspond to the settings of the *Flat Fil
 The retry function is implemented according to [Microsoft Guidelines](https://docs.microsoft.com/en-us/azure/architecture/best-practices/retry-service-specific#retry-strategies).
 The retry logic is based on WebExceptionStatus. 
 
-Rollback covers scenarios where extractions do not fail due to connection failures but due to an error when connecting to SAP.
-In those cases Xtract Universal tries to remove any files from the Lakehouse that were created in the course of the extraction.
+Rollback applies to situations where extractions fail, not because of connection issues, but due to an error when connecting to SAP. In these cases, Xtract Universal attempts to delete any files created in the Lakehouse during the extraction process.
 	
 {% include "destinations/assign-destination.md" %}
 
@@ -95,8 +91,7 @@ In those cases Xtract Universal tries to remove any files from the Lakehouse tha
 {% include "destinations/file-name.md" %}
 
 !!! note
-	If the name of an object does not begin with a letter, it will be prefixed with an ‘x’, e.g. an object by the name `_namespace_tabname.csv` will be renamed `x_namespace_tabname.csv` when uploaded to the destination.
-	This is to ensure that all uploaded objects are compatible with Azure Data Factory, Hadoop and Spark, which require object names to begin with a letter or give special meaning to objects whose names start with certain non-alphabetic characters. 
+	If an object's name doesn't start with a letter, an 'x' will be added at the beginning, e.g., `_namespace_tabname.csv` will be renamed to `x_namespace_tabname.csv` when uploaded. This ensures compatibility with Azure Data Factory, Hadoop, and Spark, which require object names to start with a letter or treat names starting with certain symbols differently.
 
 {% include "parameters/file-name-script-expressions.md" %}
 
