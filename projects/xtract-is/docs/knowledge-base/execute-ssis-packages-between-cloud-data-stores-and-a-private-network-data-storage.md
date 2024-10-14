@@ -20,9 +20,9 @@ The following prerequisites are mostly based on the official Microsoft documenta
 
 ### Step-by-Step Instructions
 
-1. Configure and start the Azure Data Factory IR with the necessary files to run the [Xtract IS for Azure extension in ADF](../xtract-is-for-azure/installation.md).
+1. Configure and start the Azure Data Factory IR with the necessary files to run the [Xtract IS for Azure extension in ADF](../xtract-is-for-azure.md/#install-xtract-is-for-azure).
 2. Download and install the SHIR on the local Windows server (on-prem), see [Microsoft Integration Runtime](https://www.microsoft.com/en-us/download/details.aspx?id=39717).
-3. Register the Integration Runtime (Self-hosted), see [Configure a self-hosted IR via UI](https://learn.microsoft.com/en-US/azure/data-factory/create-self-hosted-integration-runtime?tabs=data-factory#configure-a-self-hosted-ir-via-ui).
+3. Register the Integration Runtime (Self-hosted), see [Microsoft Documentation: Configure a self-hosted IR via UI](https://learn.microsoft.com/en-US/azure/data-factory/create-self-hosted-integration-runtime?tabs=data-factory#configure-a-self-hosted-ir-via-ui).
 4. If applicable: Enable SSIS package execution on self-hosted IR node using the following cmd command: 
 
 	```
@@ -39,11 +39,12 @@ The following prerequisites are mostly based on the official Microsoft documenta
 !!! note
 	If the Integration Runtime (Self-hosted) node encouters errors during execution, error logs are provided using the Windows Event Viewer.
 
+
 ****
 
 #### Related Links:
-- [.NET Framework system requirements](https://learn.microsoft.com/en-us/dotnet/framework/get-started/system-requirements)
-- [Integration runtime in Azure Data Factory](https://learn.microsoft.com/en-US/azure/data-factory/concepts-integration-runtime#self-hosted-integration-runtime)
-- [Self-hosted integration runtime](https://learn.microsoft.com/en-US/azure/data-factory/concepts-integration-runtime#self-hosted-integration-runtime)
-- [Troubleshoot self-hosted integration runtime](https://learn.microsoft.com/en-us/azure/data-factory/self-hosted-integration-runtime-troubleshoot-guide?tabs=data-factory)
-- [Assess SSIS project\packages for executions in Azure](https://learn.microsoft.com/en-us/azure/data-factory/how-to-invoke-ssis-package-ssdt#assess-ssis-projectpackages-for-executions-in-azure)
+- [Microsoft Documentation: .NET Framework system requirements](https://learn.microsoft.com/en-us/dotnet/framework/get-started/system-requirements)
+- [Microsoft Documentation: Integration runtime in Azure Data Factory](https://learn.microsoft.com/en-US/azure/data-factory/concepts-integration-runtime#self-hosted-integration-runtime)
+- [Microsoft Documentation: Self-hosted integration runtime](https://learn.microsoft.com/en-US/azure/data-factory/concepts-integration-runtime#self-hosted-integration-runtime)
+- [Microsoft Documentation: Troubleshoot self-hosted integration runtime](https://learn.microsoft.com/en-us/azure/data-factory/self-hosted-integration-runtime-troubleshoot-guide?tabs=data-factory)
+- [Microsoft Documentation: Assess SSIS project\packages for executions in Azure](https://learn.microsoft.com/en-us/azure/data-factory/how-to-invoke-ssis-package-ssdt#assess-ssis-projectpackages-for-executions-in-azure)

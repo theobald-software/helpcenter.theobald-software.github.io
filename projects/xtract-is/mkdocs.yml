@@ -109,7 +109,7 @@ plugins:
   #- glightbox #image zoom
   - redirects: #redirect URLs when renaming/moving .md files
       redirect_maps:
-        'xtract-is-for-azure/index.md': 'xtract-is-for-azure/introduction.md'
+        'xtract-is-for-azure/introduction.md': 'xtract-is-for-azure.md'
   #      'old/file.md': 'new/file.md'
   #      'some_file.md': 'http://external.url.com/foobar'
 

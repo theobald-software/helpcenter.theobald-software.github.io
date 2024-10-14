@@ -25,4 +25,5 @@ The integration runtime window opens and all possible runtimes are displayed, in
 ****
 
 #### Related Links
-- [SSIS Integration Runtime](https://docs.microsoft.com/en-us/azure/data-factory/concepts-integration-runtime#azure-ssis-integration-runtime)
+- [Xtract IS for Azure](../xtract-is-for-azure.md/#about-xtract-is-for-azure)
+- [Microsoft Documentation: SSIS Integration Runtime](https://docs.microsoft.com/en-us/azure/data-factory/concepts-integration-runtime#azure-ssis-integration-runtime)
