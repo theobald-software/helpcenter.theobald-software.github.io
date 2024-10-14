@@ -28,6 +28,18 @@ hide:
   url: https://helpcenter.theobald-software.com/board-connector
 
 ::/cards::
+
+---
+
+Internal Changelogs:
+
+[:products-xtract-universal:](changelog/changelog-xu.md){ .md-button .md-button--xu .md-button--stretch }
+[:products-board-connector:](changelog/changelog-bc.md){ .md-button .md-button--bc .md-button--stretch }
+[:products-xtract-is:](changelog/changelog-xis.md){ .md-button .md-button--xis .md-button--stretch }
+[:products-xtract-for-alteryx:](changelog/changelog-xfa.md){ .md-button .md-button--xfa .md-button--stretch }
+[:products-yunio:](changelog/changelog-yunio.md){ .md-button .md-button--yunio .md-button--stretch }
+[:products-erpconnect:](changelog/changelog-erpconnect.md){ .md-button .md-button--erp .md-button--stretch }
+
 -->
 
 <div class="grid cards" markdown>
@@ -46,16 +58,11 @@ hide:
 
 </div>
 
----
+<div class="grid cards" markdown>
 
-Internal Changelogs:
+- [:material-update: __Internal Changelog__](changelog/changelog-xu.md)
 
-[:products-xtract-universal:](changelog/changelog-xu.md){ .md-button .md-button--xu .md-button--stretch }
-[:products-board-connector:](changelog/changelog-bc.md){ .md-button .md-button--bc .md-button--stretch }
-[:products-xtract-is:](changelog/changelog-xis.md){ .md-button .md-button--xis .md-button--stretch }
-[:products-xtract-for-alteryx:](changelog/changelog-xfa.md){ .md-button .md-button--xfa .md-button--stretch }
-[:products-yunio:](changelog/changelog-yunio.md){ .md-button .md-button--yunio .md-button--stretch }
-[:products-erpconnect:](changelog/changelog-erpconnect.md){ .md-button .md-button--erp .md-button--stretch }
+</div>
 
 <!---
 <div class="grid cards" markdown>
