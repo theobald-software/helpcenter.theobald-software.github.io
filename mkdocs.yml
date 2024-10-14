@@ -75,9 +75,11 @@ plugins:
   - encryptcontent:
       #selfhost: true
       #selfhost_download: false
-      #hash_filenames:
-      #  extensions:
-      #    - 'json'
+      hash_filenames:
+        extensions:
+          - 'json'
+        except:
+            - 'CNAME'
       search_index: 'clear'
       html_template_path: "overrides/decrypt-form.tpl.html"
       password_inventory:
