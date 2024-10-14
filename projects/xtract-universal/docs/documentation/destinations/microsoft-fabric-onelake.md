@@ -91,7 +91,7 @@ Rollback applies to situations where extractions fail, not because of connection
 {% include "destinations/file-name.md" %}
 
 !!! note
-	If an object's name doesn't start with a letter, an 'x' will be added at the beginning, e.g., `_namespace_tabname.csv` will be renamed to `x_namespace_tabname.csv` when uploaded. This ensures compatibility with Azure Data Factory, Hadoop, and Spark, which require object names to start with a letter or treat names starting with certain symbols differently.
+	When an object's name doesn't start with a letter, an 'x' is added at the beginning. , e.g., `_namespace_tabname.csv` becomes `x_namespace_tabname.csv` when uploaded. <br> This ensures compatibility with Azure Data Factory, Hadoop, and Spark, which require names to start with a letter or handle certain symbols differently.
 
 {% include "parameters/file-name-script-expressions.md" %}
 
