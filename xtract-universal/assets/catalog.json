@@ -1,5 +1,17 @@
 [
   {
+    "Version": "2024.10.14.98",
+    "LegacyReleaseDate": "2024-10-14 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "XtractUniversal",
+        "Component": "PostgreSQL",
+        "Message": "Update type mapping for PostgreSQL",
+        "ReleaseNote": "## What's New?\n* TIMS/TIMN is mapped to time(0) instead of TIME.\n* TIMESTAMP is mapped to timestamp(0) with time zone instead of NUMERIC(15,0)\n* TIMESTAMPL is mapped to timestamp(6) with time zone instead of NUMERIC(21,7)\n* ACCP is mapped to date instead of CHAR(6)\n* RAW is mapped to bytea instead of CHAR\n* DECFLOAT16/DF16_RAW is mapped to bytea instead of CHAR(16)\n* DECFLOAT34/DF34_RAW is mapped to bytea instead of CHAR(32)\n\n## Impact\n* It is important to run the config converter when updating! The checkbox to do this will be automatically selected during setup.\n* The new type mapping is used when a destination of a different type is assigned to an extraction, i.e., switching from any other destination type to PostgreSQL or vice versa. Switching between two PostgreSQL destinations will not change the type mappings.\n* Existing extractions will continue to use the old type mappings.\n* It is not possible to create new extractions with old type mappings.\n\n\nThe type mappings were adjusted to better fit the data types:\n* Time had an unnecessary high precision.\n* Timestamps were mapped to numeric types, which only allow comparison, but no calculcations.\n* Posting periods were mapped to characters, which only allow comparison, but no calculcations.\n* Some binary types were mapped to characters, others to binary. All binary types are consistently and correctly mapped to binary now."
+      }
+    ]
+  },
+  {
     "Version": "2024.10.14.96",
     "LegacyReleaseDate": "2024-10-14 00:00:00Z",
     "Changes": [
