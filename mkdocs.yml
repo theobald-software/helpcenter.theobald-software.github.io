@@ -88,7 +88,7 @@ plugins:
       title_prefix: ''
       summary: 'Restricted Content' 
       decryption_failure_message: 'Wrong password.'
-      encryption_info_message: 'You are about to access restricted content. Enter a password to continue.'
+      encryption_info_message: 'You are about to access restricted content. Enter a valid password to continue.'
       #button_class: 'md-button'
       #password_button_text: 'ENTER'
       #password_button: True
