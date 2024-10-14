@@ -1,6 +1,16 @@
 <div class="grid cards" markdown>
 
 
+-   **BI Notification Server is Deprecated**
+
+    ---
+
+    The BI Notification Server tool that is delivered as part of the Xtract IS setup is now marked as deprecated. The tool will be removed from the setup by the end of 2024.
+
+    ---
+
+    :material-clock-time-two-outline: 2024-10-14
+
 -   **SAP Note 3255746: Unpermitted Usage of ODP**
 
     ---
