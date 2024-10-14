@@ -1,7 +1,7 @@
 
 ### Technical Support
 
-Theobald Software offers support in :flag_gb: English and :flag_de: German.<br>
+Theobald Software offers support in English and German.<br>
 
 1. Open a ticket in our [Support Portal](https://support.theobald-software.com).
 2. Provide as much information as possible for the Theobald Software support team to understand and analyze the issue.
