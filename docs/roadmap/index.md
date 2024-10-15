@@ -12,9 +12,10 @@ Plugins:
 
 - If roadmaps are to be released in every HelpCenter, there has to be a roadmap specific to every product
 - Roadmaps require either start and end dates or start date and duration (days / weeks) for every activity
-- Roadmaps can be defined in yaml or json format
-- Roadmaps can be hosted in the HelpCenter (changes require the involvement of a technical writer or developer) or separately (where product management can make changes themselves)
-- Should we also host the internal roadmap that includes developer and kaboard information for support?
+- Roadmaps can be defined in [yaml or json format](#format)
+- Roadmaps can be hosted in the HelpCenter (changes require the involvement of a technical writer or developer) or separately (where product management and dev can make changes themselves)
+- Should we also host the internal roadmap here that includes developer and kaboard information for support?
+- Publish roadmap for the full year or only for 2 quarters
 
 ## Format
 	
