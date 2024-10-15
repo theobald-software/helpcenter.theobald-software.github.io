@@ -73,7 +73,7 @@ plugins:
   - tags
   - search
   - encryptcontent:
-      webcrypto: true
+      esm: true
       hash_filenames:
         extensions:
           - 'json'
