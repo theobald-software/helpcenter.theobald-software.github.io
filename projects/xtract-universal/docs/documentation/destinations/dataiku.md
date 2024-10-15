@@ -77,7 +77,7 @@ Currently, only [Xtract Universal users](../access-restrictions/user-management.
 #### Customize Port
 Specify the port that is used to communicate with the Xtract Universal server.
 Make sure the connection uses the same port that is defined in the Xtract Universal [web server settings](../server/server-settings.md/#web-server).
-The default ports are 8064 without TLS and 8164 with TLS.
+The default ports are {{ port }} without TLS and {{ port_https }} with TLS.
 
 ### Connection
 
