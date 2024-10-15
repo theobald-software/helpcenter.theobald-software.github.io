@@ -19,11 +19,11 @@ Plugins:
 
 ## Format
 	
-=== "Gantt Diagram"
+=== "Rendered Gantt Diagram"
 
 	[gantt(https://kb.theobald-software.com/files/gantt-1.yaml)]
 
-=== "YAML Format"
+=== "YAML Input Format"
 
 	```yaml
 	- title: Definition Phase
@@ -66,7 +66,7 @@ Plugins:
 		  end: 2022-06-06
 	```
 
-=== "JSON Format"
+=== "JSON Input Format"
 
 	```json
 	[
