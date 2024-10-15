@@ -106,3 +106,5 @@ Subfolders are supported and can be defined using the following syntax: `[folder
 {% include "destinations/compression.md" %}
 
 {% include "destinations/file-splitting.md" %}
+
+{% include "destinations/empty-files.md" %}

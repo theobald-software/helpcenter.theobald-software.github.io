@@ -1,6 +1,7 @@
 ---
 title: Google Cloud Storage
 description: Write SAP data to a Google Cloud Storage destination
+destination: google
 attempt: eight
 ---
 

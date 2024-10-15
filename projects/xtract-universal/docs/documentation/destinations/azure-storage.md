@@ -292,12 +292,18 @@ Subfolders are supported and can be defined using the following syntax: `[folder
 
 {% include "destinations/file-splitting.md" %}
 
+{% include "destinations/empty-files.md" %}
+
+<!--
+### Common Data Model (preview)
 	
 #### Entity name
 Enter a name for the generated .cdm.json file.
 
 #### Manifest
 Enter the name of your manifest file.
+
+-->
 
 ## Tutorial
 
