@@ -1,5 +1,16 @@
 [
   {
+    "Version": "2024.10.16.126",
+    "LegacyReleaseDate": "2024-10-16 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "XtractUniversal",
+        "Component": "Designer",
+        "Message": "Updated display names of various destinations. Azure destination names now start with 'Microsoft' and have been shortened. This change is purely cosmetic."
+      }
+    ]
+  },
+  {
     "Version": "2024.10.16.124",
     "LegacyReleaseDate": "2024-10-16 00:00:00Z",
     "Changes": [
