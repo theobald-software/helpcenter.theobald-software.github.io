@@ -3,6 +3,9 @@ title: Embed PDFs
 description: Showcase dhow to embed .pfd files
 ---
 
+!!! tip "Recommendation"
+	It might be easier to just export the roadmap as a .png image...
+
 ## MkDocs-pdf Plugin
 
 ``` markdown
