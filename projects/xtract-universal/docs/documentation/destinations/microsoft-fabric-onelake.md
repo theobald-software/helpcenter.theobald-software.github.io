@@ -11,7 +11,7 @@ The {{ page.meta.title }} destination enables users to load SAP data to a Micros
 
 ## Requirements
 The {{ page.meta.title }} destination uses [Microsoft Entra ID (formerly Azure Active Directory)](https://www.microsoft.com/en-us/security/business/identity-access/microsoft-entra-id) with OAuth 2.0 for authentication.
-Make sure to use the following settings for the authentication:
+Use the following settings for the authentication:
 - Register Microsoft Fabric OneLake as a *Mobile and desktop application*, see [Microsoft Documentation: Configure platform settings](https://learn.microsoft.com/en-us/entra/identity-platform/quickstart-register-app?tabs=certificate#configure-platform-settings):<br>
 ![authentication](../../assets/images/xu/documentation/destinations/fabric/auth.png)
 - Add the following API permissions:
