@@ -41,9 +41,9 @@ Enter the Application (client) ID of the registered app.
 	You can copy the tenant ID and client ID in the [Microsoft Entra admin center](https://entra.microsoft.com/#home) or the [Azure portal](https://portal.azure.com/), where the app is registered.<br>
 	![xu-azure-blob-con-3](../../assets/images/xu/documentation/destinations/fabric/entraID.png){:class="img-responsive"}
 
-#### Connect
+#### Authenticatte using Entra ID
 	
-Click **[Connect]** to establish a connection to the storage account. <br> A browser window will open, prompting you to sign in with your Microsoft credentials.<br>
+Click **[Authenticatte using Entra ID]** to establish a connection to the storage account. <br> A browser window will open, prompting you to sign in with your Microsoft credentials.<br>
 The "Permissions requested" window lists the requested permissions, see [Knowledge Base Article: Authentication via Microsoft Entra ID](../../knowledge-base/authentication-via-entra-id-with-azure-storage.md). 
 Click **[Accept]**. If the connection is successful, a "Connection successful" info window opens. <br>
 
