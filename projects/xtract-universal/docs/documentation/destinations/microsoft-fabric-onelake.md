@@ -8,9 +8,10 @@ attempt: seven
 This page shows how to set up and use the {{ page.meta.title }} destination. 
 The {{ page.meta.title }} destination enables users to load SAP data to a Microsoft Fabric Lakehouse.
 
-
+<!--
 ## Requirements
 - [Microsoft Entra ID (formerly Azure Active Directory)](https://www.microsoft.com/en-us/security/business/identity-access/microsoft-entra-id) authentication for Microsoft Fabric.
+-->
 
 {% include "destinations/create-destination.md" %}
 
