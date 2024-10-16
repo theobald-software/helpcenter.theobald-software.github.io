@@ -1,5 +1,21 @@
 [
   {
+    "Version": "2024.10.16.55",
+    "LegacyReleaseDate": "2024-10-16 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "XtractIS",
+        "Component": "General",
+        "Message": "Updated web links to help ressources placed in start menu"
+      },
+      {
+        "Product": "ERPConnect",
+        "Component": "General",
+        "Message": "Updated web links to help ressources placed in start menu."
+      }
+    ]
+  },
+  {
     "Version": "2024.10.11.7",
     "LegacyReleaseDate": "2024-10-11 00:00:00Z",
     "Changes": [
