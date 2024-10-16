@@ -146,15 +146,7 @@ The window "Manage Destinations" opens. Here, you can edit, delete and add new d
 - title: Amazon S3 <br><br><br><span class="keyword">push-destination</span>
   image: site:assets/images/xu/documentation/destinations/logos/Amazon-S3.png
   url: site:documentation/destinations/amazon-aws-s3
-  
-- title: Azure Blob Storage<br><br><span class="keyword">push-destination</span> 
-  image: site:assets/images/xu/documentation/destinations/logos/Azure-Blob.png
-  url: site:documentation/destinations/azure-storage
-  
-- title: Azure Data Lake Storage <br><br><span class="keyword">push-destination</span> 
-  image: site:assets/images/xu/documentation/destinations/logos/Azure-Data-Lake.png
-  url: site:documentation/destinations/azure-storage
-  
+
 - title: Google Cloud Storage <br><br><span class="keyword">push-destination</span>
   image: site:assets/images/xu/documentation/destinations/logos/Google-Cloud.png
   url: site:documentation/destinations/google-cloud-storage
@@ -162,8 +154,16 @@ The window "Manage Destinations" opens. Here, you can edit, delete and add new d
 - title: Huawei Cloud OBS <br><br><span class="keyword">push-destination</span> 
   image: site:assets/images/xu/documentation/destinations/logos/Huawei.png
   url: site:documentation/destinations/huawei
-
-- title: Fabric (OneLake) <br><br><span class="keyword">push-destination</span> 
+  
+- title: Microsoft Azure Blob Storage<br><br><span class="keyword">push-destination</span> 
+  image: site:assets/images/xu/documentation/destinations/logos/Azure-Blob.png
+  url: site:documentation/destinations/azure-storage
+  
+- title: Microsoft Azure Data Lake Storage <br><br><span class="keyword">push-destination</span> 
+  image: site:assets/images/xu/documentation/destinations/logos/Azure-Data-Lake.png
+  url: site:documentation/destinations/azure-storage
+  
+- title: Microsoft Fabric (OneLake) <br><br><span class="keyword">push-destination</span> 
   image: site:assets/images/xu/documentation/destinations/logos/onelake.png
   url: site:documentation/destinations/microsoft-fabric-onelake
   

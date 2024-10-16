@@ -1,5 +1,5 @@
 ---
-title: Azure Storage
+title: Microsoft Azure Storage
 description: Write SAP data to an Azure Storage destination
 destination: azure
 attempt: seven

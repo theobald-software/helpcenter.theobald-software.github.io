@@ -1,5 +1,5 @@
 ---
-title: Fabric (OneLake)
+title: Microsoft Fabric (OneLake)
 description: Write SAP data to Microsoft Fabric OneLake
 status: beta
 attempt: seven
@@ -8,10 +8,19 @@ attempt: seven
 This page shows how to set up and use the {{ page.meta.title }} destination. 
 The {{ page.meta.title }} destination enables users to load SAP data to a Microsoft Fabric Lakehouse.
 
-<!--
+
 ## Requirements
-- [Microsoft Entra ID (formerly Azure Active Directory)](https://www.microsoft.com/en-us/security/business/identity-access/microsoft-entra-id) authentication for Microsoft Fabric.
--->
+The {{ page.meta.title }} destination uses [Microsoft Entra ID (formerly Azure Active Directory)](https://www.microsoft.com/en-us/security/business/identity-access/microsoft-entra-id) with OAuth 2.0 to authenticate against Microsoft Fabric OneLake.
+Make sure to use the following settings for the authentication:
+- Register the app as a *Mobile and desktop application*, see [Microsoft Documentation: Configure platform settings](https://learn.microsoft.com/en-us/entra/identity-platform/quickstart-register-app?tabs=certificate#configure-platform-settings):<br>
+![authentication](../../assets/images/xu/documentation/destinations/fabric/auth.png)
+- Add the following API permissions:
+	- Azure Storage - *user impersonation*
+	- Microsoft Graph - *User.Read*
+	
+	For more information, see [Microsoft Documentation: Add permissions to your web API](https://learn.microsoft.com/en-us/entra/identity-platform/quickstart-configure-app-access-web-apis#add-permissions-to-access-your-web-api).<br>
+	![API permissions](../../assets/images/xu/documentation/destinations/fabric/api-permissions.png)
+	
 
 {% include "destinations/create-destination.md" %}
 
@@ -47,6 +56,9 @@ Click **[Accept]**. If the connection is successful, a "Connection successful" i
 Enter the URL of the Lakehouse, including the folder path in which the data is written.
 The URL uses the following format:<br>
 `https://onelake.dfs.fabric.microsoft.com/<workspaceGUID>/<itemGUID>/<folder>/`
+
+Example:<br>
+`https://onelake.dfs.fabric.microsoft.com/12345678-aaaa-bbbb-cccc-123456789abc/12345678-dddd-ffff-gggg-123456789abc/folder-name`
 
 !!! tip
 	You can copy the URL in the [Microsoft Fabric portal](https://app.fabric.microsoft.com/home) using the properties of a OneLake folder:

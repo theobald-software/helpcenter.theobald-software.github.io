@@ -48,11 +48,9 @@ For more information about destination details, select your destination: <select
 	<option value="alteryx">Alteryx</option>
 	<option value="amazon-aws-s3">Amazon S3</option>
 	<option value="amazon-redshift">Amazon Redshift</option>
-	<option value="azure-storage">Azure Storage</option>
 	<option value="azure-synapse-analytics">Azure Synapse Analytics</option>
 	<option value="dataiku">Dataiku</option>
 	<option value="exasol">EXASolution</option>
-	<option value="microsoft-fabric-onelake">Fabric (OneLake)</option>
     <option value="csv-flat-file">Flat File CSV</option>
     <option value="json-flat-file">Flat File JSON</option>
     <option value="parquet">Flat File Parquet</option>
@@ -62,6 +60,8 @@ For more information about destination details, select your destination: <select
 	<option value="huawei">Huawei Cloud OBS</option>
 	<option value="ibm-db2">IBM Db2</option>
 	<option value="knime">KNIME</option>
+	<option value="azure-storage">Microsoft Azure Storage</option>
+	<option value="microsoft-fabric-onelake">Microsoft Fabric (OneLake)</option>
 	<option value="microsoft-sql-server">Microsoft SQL Server</option>
 	<option value="mysql">MySQL</option>
 	<option value="oracle">Oracle</option>
@@ -108,11 +108,9 @@ For more information about destination settings, select your destination: <selec
 	<option value="alteryx">Alteryx</option>
 	<option value="amazon-aws-s3">Amazon S3</option>
 	<option value="amazon-redshift">Amazon Redshift</option>
-	<option value="azure-storage">Azure Storage</option>
 	<option value="azure-synapse-analytics">Azure Synapse Analytics</option>
 	<option value="dataiku">Dataiku</option>
 	<option value="exasol">EXASolution</option>
-	<option value="microsoft-fabric-onelake">Fabric (OneLake)</option>
     <option value="csv-flat-file">Flat File CSV</option>
     <option value="json-flat-file">Flat File JSON</option>
     <option value="parquet">Flat File Parquet</option>
@@ -122,6 +120,8 @@ For more information about destination settings, select your destination: <selec
 	<option value="huawei">Huawei Cloud OBS</option>
 	<option value="ibm-db2">IBM Db2</option>
 	<option value="knime">KNIME</option>
+	<option value="azure-storage">Microsoft Azure Storage</option>
+	<option value="microsoft-fabric-onelake">Microsoft Fabric (OneLake)</option>
 	<option value="microsoft-sql-server">Microsoft SQL Server</option>
 	<option value="mysql">MySQL</option>
 	<option value="oracle">Oracle</option>
