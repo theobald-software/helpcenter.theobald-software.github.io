@@ -1,5 +1,5 @@
 nav:
     - index.md
-    - structures.md
-    - designs.md
+    - gantt-diagram.md
+    - embed-pdf.md
 collapse: false
