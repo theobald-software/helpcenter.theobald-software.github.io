@@ -20,6 +20,7 @@ tags:
 this script generates a link to the destination details of the selected destination (in step 5)
 the option in the list must be set as follows:
 	<option value="name-of-the-md-file-of-the-destination">DisplayedName</option>
+	
 -->
   <script>
   function getSelectedValueDetails(){
@@ -51,6 +52,7 @@ For more information about destination details, select your destination: <select
 	<option value="azure-synapse-analytics">Azure Synapse Analytics</option>
 	<option value="dataiku">Dataiku</option>
 	<option value="exasol">EXASolution</option>
+	<option value="microsoft-fabric-onelake">Fabric (OneLake)</option>
     <option value="csv-flat-file">Flat File CSV</option>
     <option value="json-flat-file">Flat File JSON</option>
     <option value="parquet">Flat File Parquet</option>
@@ -110,6 +112,7 @@ For more information about destination settings, select your destination: <selec
 	<option value="azure-synapse-analytics">Azure Synapse Analytics</option>
 	<option value="dataiku">Dataiku</option>
 	<option value="exasol">EXASolution</option>
+	<option value="microsoft-fabric-onelake">Fabric (OneLake)</option>
     <option value="csv-flat-file">Flat File CSV</option>
     <option value="json-flat-file">Flat File JSON</option>
     <option value="parquet">Flat File Parquet</option>

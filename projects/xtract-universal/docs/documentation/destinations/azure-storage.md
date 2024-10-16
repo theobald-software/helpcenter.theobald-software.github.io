@@ -142,7 +142,7 @@ The input fields in the subsection *Access key parameters* / *SAS parameters* va
 	Enter the ID of the registered app. 
 
 	!!! tip
-		You can copy the tenant ID and client ID from the Azure portal.<br>
+		You can copy the tenant ID and client ID in the [Azure portal](https://portal.azure.com/).<br>
 		![xu-azure-blob-con-3](../../assets/images/xu/documentation/destinations/azure-storage/xu-azure-blob-con_3.png){:class="img-responsive"}
 	
 	#### Connect
