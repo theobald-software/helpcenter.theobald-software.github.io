@@ -1,7 +1,7 @@
 ---
 title: Fabric (OneLake)
 description: Write SAP data to Microsoft Fabric OneLake
-status: new
+status: beta
 attempt: seven
 ---
 
