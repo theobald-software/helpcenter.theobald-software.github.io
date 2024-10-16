@@ -17,7 +17,7 @@ description: Showcase dhow to embed .pfd files
 ## iFrames
 
 ```html
-<iframe src="https://helpcenter.theobald-software.com/roadmap/test.pdf" style="width:718px; height:700px;" frameborder="0"></iframe>
+<iframe src="https://helpcenter.theobald-software.com/roadmap/test.pdf" style="width:100%; height:100vh;" frameborder="0"&toolbar=0&navpanes=0&scrollbar=0></iframe>
 ```
 
-<iframe src="https://helpcenter.theobald-software.com/roadmap/test.pdf" style="width:718px; height:700px;" frameborder="0"></iframe>
+<iframe src="https://helpcenter.theobald-software.com/roadmap/test.pdf" style="width:100%; height:100vh;" frameborder="0"&toolbar=0&navpanes=0&scrollbar=0></iframe>
