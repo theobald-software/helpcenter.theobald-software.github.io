@@ -47,6 +47,7 @@ jobs:
       - run: pip install mkdocs-redirects
       - run: pip install neoteroi-mkdocs
       - run: pip install mdx-breakless-lists
+      - run: pip install mkdocs-pdf
       - run: mkdocs gh-deploy --force
 env:
   GH_TOKEN: ${{ secrets.GH_TOKEN }} 

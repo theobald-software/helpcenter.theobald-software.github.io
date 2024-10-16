@@ -72,6 +72,7 @@ plugins:
   - pagenav-generator
   - tags
   - search
+  - mkdocs-pdf
   - encryptcontent:
       esm: true
       hash_filenames:
