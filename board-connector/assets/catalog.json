@@ -1,5 +1,16 @@
 [
   {
+    "Version": "2024.10.17.36",
+    "LegacyReleaseDate": "2024-10-17 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "DeltaQ",
+        "Message": "DeltaQ: Fix cancellation detection, make dispatch failures warnings in log"
+      }
+    ]
+  },
+  {
     "Version": "2024.10.16.125",
     "LegacyReleaseDate": "2024-10-16 00:00:00Z",
     "Changes": [
