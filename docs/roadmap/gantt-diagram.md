@@ -4,6 +4,7 @@ description: Showcase different designs for Gantt Diagram Roadmaps
 ---
 
 
+[Neoteroi Gantt Plugin](https://www.neoteroi.dev/mkdocs-plugins/gantt/)
 
 ## Format
 

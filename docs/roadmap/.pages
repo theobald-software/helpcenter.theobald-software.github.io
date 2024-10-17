@@ -1,5 +1,6 @@
 nav:
     - index.md
-    - gantt-diagram.md
     - embed-pdf.md
+    - gantt-diagram.md
+    - timeline.md
 collapse: false

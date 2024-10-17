@@ -76,6 +76,10 @@ pip install mdx-breakless-lists
 ```
 pip install git+https://github.com/Andre601/mkdocs-pagenav-generator
 ``` 
+- Integrate .pdf files
+```
+pip install mkdocs-pdf
+```
 
 
 ### Access the HelpCenter Repository

@@ -56,6 +56,7 @@ extra_css:
   - assets/stylesheets/extra.css
   - assets/stylesheets/neoteroi-cards.css 
   - assets/stylesheets/neoteroi-gantt.css 
+  - assets/stylesheets/neoteroi-timeline.css 
   - assets/stylesheets/hyperscript.css
 extra_javascript:
   - assets/javascripts/hyperscript.min.js
@@ -133,6 +134,7 @@ extra:
 # Extensions for Markdown Syntax  
 markdown_extensions:
   - neoteroi.projects
+  - neoteroi.timeline
   - pymdownx.critic
   - toc:
       separator: "-"
