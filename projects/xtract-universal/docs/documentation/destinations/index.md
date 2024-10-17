@@ -43,28 +43,32 @@ The window "Manage Destinations" opens. Here, you can edit, delete and add new d
 - title: Amazon Redshift <br><br><span class="keyword">push-destination</span>
   image: site:assets/images/xu/documentation/destinations/logos/Amazon-Redshift.png
   url: site:documentation/destinations/amazon-redshift
-  
-- title: Azure Synapse Analytics <br><span class="keyword">push-destination</span> 
-  image: site:assets/images/xu/documentation/destinations/logos/Azure-Synapse-Analytics.png
-  url: site:documentation/destinations/azure-synapse-analytics
-  
-- title: Azure SQL Database <br><br><span class="keyword">push-destination</span>
-  image: site:assets/images/xu/documentation/destinations/logos/Azure-SQL-Database.png
-  url: site:documentation/destinations/microsoft-sql-server
-
+ 
 - title: EXASolution <br><br><br><span class="keyword">push-destination</span> 
   image: site:assets/images/xu/documentation/destinations/logos/Exasol.svg
   url: site:documentation/destinations/exasol
   
-- title: IBM Db2 <br><br><span class="keyword">push-destination</span> 
+- title: IBM Db2 <br><br><br><span class="keyword">push-destination</span> 
   image: site:assets/images/xu/documentation/destinations/logos/IBM-db2.png
   url: site:documentation/destinations/ibm-db2
 
-- title: MySQL <br><br><span class="keyword">push-destination</span> 
+- title: Microsoft SQL Server <br><br><span class="keyword">push-destination</span> 
+  image: site:assets/images/xu/documentation/destinations/logos/SQL-Server.png
+  url: site:documentation/destinations/microsoft-sql-server
+  
+- title: Microsoft Azure SQL Database <br><br><span class="keyword">push-destination</span>
+  image: site:assets/images/xu/documentation/destinations/logos/Azure-SQL-Database.png
+  url: site:documentation/destinations/microsoft-sql-server
+
+- title: Microsoft Azure Synapse Analytics <br><span class="keyword">push-destination</span> 
+  image: site:assets/images/xu/documentation/destinations/logos/Azure-Synapse-Analytics.png
+  url: site:documentation/destinations/azure-synapse-analytics
+
+- title: MySQL <br><br><br><br><span class="keyword">push-destination</span> 
   image: site:assets/images/xu/documentation/destinations/logos/MySQL.png
   url: site:documentation/destinations/mysql
 
-- title: Oracle <br><br><span class="keyword">push-destination</span> 
+- title: Oracle <br><br><br><br><span class="keyword">push-destination</span> 
   image: site:assets/images/xu/documentation/destinations/logos/Oracle.png
   url: site:documentation/destinations/oracle
   
@@ -80,9 +84,6 @@ The window "Manage Destinations" opens. Here, you can edit, delete and add new d
   image: site:assets/images/xu/documentation/destinations/logos/Snowflake.png
   url: site:documentation/destinations/snowflake
 
-- title: SQL Server <br><br><span class="keyword">push-destination</span> 
-  image: site:assets/images/xu/documentation/destinations/logos/SQL-Server.png
-  url: site:documentation/destinations/microsoft-sql-server
   
 ::/cards::
 
@@ -103,11 +104,11 @@ The window "Manage Destinations" opens. Here, you can edit, delete and add new d
   image: site:assets/images/xu/documentation/destinations/logos/KNIME.png
   url: site:documentation/destinations/knime
   
-- title: Power BI Connector <br><br><span class="keyword">pull-destination</span> 
+- title: Microsoft Power BI <br><br><span class="keyword">pull-destination</span> 
   image: site:assets/images/xu/documentation/destinations/logos/Power-BI.png
   url: site:documentation/destinations/Power-BI-Connector
   
-- title: Power BI Report Server <br><br><br><span class="keyword">pull-destination</span> 
+- title: Microsoft Power BI Report Server <br><br><span class="keyword">pull-destination</span> 
   image: site:assets/images/xu/documentation/destinations/logos/Power-BI-Report-Server.png
   url: site:documentation/destinations/server-report-services
   
@@ -115,43 +116,46 @@ The window "Manage Destinations" opens. Here, you can edit, delete and add new d
   image: site:assets/images/xu/documentation/destinations/logos/Qlik.png
   url: site:documentation/destinations/qliksense-qlikview
  
-- title: SQL Server Reporting Services <br><br><span class="keyword">pull-destination</span> 
-  image: site:assets/images/xu/documentation/destinations/logos/SQL-Server.png
-  url: site:documentation/destinations/server-report-services
-  
 - title: Tableau <br><br><br><br><span class="keyword">push-destination</span> 
   image: site:assets/images/xu/documentation/destinations/logos/Tableau.svg
   url: site:documentation/destinations/tableau
 
 ::/cards::
 
+<!--
+- title: Microsoft SQL Server Reporting Services <br><br><span class="keyword">pull-destination</span> 
+  image: site:assets/images/xu/documentation/destinations/logos/SQL-Server.png
+  url: site:documentation/destinations/server-report-services
+  
+--->
+
 ### Business Systems
 
 ::cards:: cols=4
-
-- title: Salesforce <br><br><span class="keyword">push-destination</span>
-  image: site:assets/images/xu/documentation/destinations/logos/Salesforce.png
-  url: site:documentation/destinations/salesforce
   
-- title: SharePoint <br><br><span class="keyword">push-destination</span> 
+- title: Microsoft SharePoint <br><br><span class="keyword">push-destination</span> 
   image: site:assets/images/xu/documentation/destinations/logos/SharePoint.png
   url: site:documentation/destinations/sharepoint
   
+- title: Salesforce <br><br><br><span class="keyword">push-destination</span>
+  image: site:assets/images/xu/documentation/destinations/logos/Salesforce.png
+  url: site:documentation/destinations/salesforce
+
 ::/cards::
 
 ### Cloud Storage
 
 ::cards:: cols=4
 
-- title: Amazon S3 <br><br><br><span class="keyword">push-destination</span>
+- title: Amazon S3 <br><br><br><br><span class="keyword">push-destination</span>
   image: site:assets/images/xu/documentation/destinations/logos/Amazon-S3.png
   url: site:documentation/destinations/amazon-aws-s3
 
-- title: Google Cloud Storage <br><br><span class="keyword">push-destination</span>
+- title: Google Cloud Storage <br><br><br><span class="keyword">push-destination</span>
   image: site:assets/images/xu/documentation/destinations/logos/Google-Cloud.png
   url: site:documentation/destinations/google-cloud-storage
   
-- title: Huawei Cloud OBS <br><br><span class="keyword">push-destination</span> 
+- title: Huawei Cloud OBS <br><br><br><span class="keyword">push-destination</span> 
   image: site:assets/images/xu/documentation/destinations/logos/Huawei.png
   url: site:documentation/destinations/huawei
   

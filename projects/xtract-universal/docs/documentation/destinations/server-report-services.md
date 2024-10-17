@@ -1,6 +1,8 @@
 ---
-title: Power BI Report Server (SQL Server Reporting Services)
+title: Microsoft Power BI Report Server
 description: Write SAP data to a Power BI Report Server (SQL Server Reporting Services) destination
+tags:
+  - SQL Server Reporting Services
 ---
 
 This page shows how to set up and use the {{ page.meta.title }} destination. 

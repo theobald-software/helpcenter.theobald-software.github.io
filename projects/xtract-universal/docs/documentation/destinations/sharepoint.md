@@ -1,5 +1,5 @@
 ---
-title: SharePoint
+title: Microsoft SharePoint
 description: Write SAP data to a SharePoint destination
 ---
 

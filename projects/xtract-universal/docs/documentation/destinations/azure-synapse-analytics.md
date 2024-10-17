@@ -1,6 +1,8 @@
 ---
-title: Azure Synapse Analytics (SQL pool)
+title: Microsoft Azure Synapse Analytics 
 description: Write SAP data to an Azure Synapse Analytics (SQL pool) destination
+tags:
+  - SQL Pool
 destination: azure
 ---
 

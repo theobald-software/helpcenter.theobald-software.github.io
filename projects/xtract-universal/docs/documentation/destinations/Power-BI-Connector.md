@@ -1,5 +1,5 @@
 ---
-title: Power BI Connector
+title: Microsoft Power BI
 description: Write SAP data to a Power BI Connector destination
 ---
 

@@ -48,7 +48,6 @@ For more information about destination details, select your destination: <select
 	<option value="alteryx">Alteryx</option>
 	<option value="amazon-aws-s3">Amazon S3</option>
 	<option value="amazon-redshift">Amazon Redshift</option>
-	<option value="azure-synapse-analytics">Azure Synapse Analytics</option>
 	<option value="dataiku">Dataiku</option>
 	<option value="exasol">EXASolution</option>
     <option value="csv-flat-file">Flat File CSV</option>
@@ -61,18 +60,19 @@ For more information about destination details, select your destination: <select
 	<option value="ibm-db2">IBM Db2</option>
 	<option value="knime">KNIME</option>
 	<option value="azure-storage">Microsoft Azure Storage</option>
+	<option value="azure-synapse-analytics">Microsoft Azure Synapse Analytics</option>
 	<option value="microsoft-fabric-onelake">Microsoft Fabric (OneLake)</option>
+	<option value="Power-BI-Connector">Microsoft Power BI</option>
+	<option value="server-report-services">Microsoft Power BI Report Server</option>
+	<option value="sharepoint">Microsoft SharePoint</option>
 	<option value="microsoft-sql-server">Microsoft SQL Server</option>
 	<option value="mysql">MySQL</option>
 	<option value="oracle">Oracle</option>
 	<option value="postgreSQL">PostgreSQL</option>
-	<option value="Power-BI-Connector">Power BI Connector</option>
 	<option value="qliksense-qlikview">QlikSense and QlikView</option>
 	<option value="salesforce">Salesforce</option>
 	<option value="sap-hana">SAP HANA</option>
-	<option value="sharepoint">SharePoint</option>
 	<option value="snowflake">Snowflake</option>
-	<option value="server-report-services">Power BI Report Server (SQL Server Reporting Services)</option>
 	<option value="tableau">Tableau</option>
   </select>
 5. Click **[OK]** to confirm your input.
@@ -108,7 +108,6 @@ For more information about destination settings, select your destination: <selec
 	<option value="alteryx">Alteryx</option>
 	<option value="amazon-aws-s3">Amazon S3</option>
 	<option value="amazon-redshift">Amazon Redshift</option>
-	<option value="azure-synapse-analytics">Azure Synapse Analytics</option>
 	<option value="dataiku">Dataiku</option>
 	<option value="exasol">EXASolution</option>
     <option value="csv-flat-file">Flat File CSV</option>
@@ -121,18 +120,19 @@ For more information about destination settings, select your destination: <selec
 	<option value="ibm-db2">IBM Db2</option>
 	<option value="knime">KNIME</option>
 	<option value="azure-storage">Microsoft Azure Storage</option>
+	<option value="azure-synapse-analytics">Microsoft Azure Synapse Analytics</option>
 	<option value="microsoft-fabric-onelake">Microsoft Fabric (OneLake)</option>
+	<option value="Power-BI-Connector">Microsoft Power BI</option>
+	<option value="server-report-services">Microsoft Power BI Report Server</option>
+	<option value="sharepoint">Microsoft SharePoint</option>
 	<option value="microsoft-sql-server">Microsoft SQL Server</option>
 	<option value="mysql">MySQL</option>
 	<option value="oracle">Oracle</option>
 	<option value="postgreSQL">PostgreSQL</option>
-	<option value="Power-BI-Connector">Power BI Connector</option>
 	<option value="qliksense-qlikview">QlikSense and QlikView</option>
 	<option value="salesforce">Salesforce</option>
 	<option value="sap-hana">SAP HANA</option>
-	<option value="sharepoint">SharePoint</option>
 	<option value="snowflake">Snowflake</option>
-	<option value="server-report-services">Power BI Report Server (SQL Server Reporting Services)</option>
 	<option value="tableau">Tableau</option>
   </select><br>
 5. Click **[OK]** to confirm your input.
