@@ -78,6 +78,7 @@ plugins:
       hash_filenames:
         extensions:
           - 'json'
+          - 'pdf'
         except:
             - 'CNAME'
             - 'iconsearch_index.json'

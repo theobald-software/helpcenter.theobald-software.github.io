@@ -16,3 +16,11 @@ The following options are available:
 - Roadmaps can be hosted in the HelpCenter (changes require the involvement of a technical writer or developer) or separately (where product management and dev can make changes themselves)
 - Should we also host the internal roadmap here that includes developer and kaboard information for support?
 - Publish roadmap for the full year or only for 2 quarters
+
+## External Roadmap
+
+![roadmap](Slide1.jpg)
+
+## Internal Roadmap
+
+![test](<Internal-Roadmap.pdf>){ type=application/pdf style="height:68vh;width:100%" }
