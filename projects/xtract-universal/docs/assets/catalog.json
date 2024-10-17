@@ -6,7 +6,7 @@
       {
         "Product": "XtractUniversal",
         "Component": "Designer",
-        "Message": "Updated display names of various destinations. Azure destination names now start with 'Microsoft' and have been shortened. This change is purely cosmetic."
+        "Message": "Updated display names of various destinations in the 'Destination Details' window. All of the Microsoft destinations now start with the word 'Microsoft'. This change is purely cosmetic."
       }
     ]
   },
