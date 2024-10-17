@@ -8,7 +8,8 @@ hide:
 The idea is to publish product roadmaps as part of the HelpCenter.
 The following options are available:
 
-- [Neoteroi Gantt Plugin](gantt-diagram.md) or [Neoteroi Timeline Plugin](timeline.md)
+- [Neoteroi Gantt Plugin](gantt-diagram.md)
+- [Neoteroi Timeline Plugin](timeline.md)
 - [Embed .pdf files](embed-pdf.md)
 
 
@@ -18,7 +19,7 @@ The following options are available:
 - Roadmaps can be hosted in the HelpCenter (changes require the involvement of a technical writer or developer) or separately (where product management and dev can make changes themselves)
 - Should we also host the internal roadmap here that includes developer and kaboard information for support?
 
-=== "Current External Roadmap"
+=== "Current External Roadmap (png export)"
 
 	![external roadmap](Slide1.jpg)
 

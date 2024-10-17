@@ -8,8 +8,7 @@ description: Showcase different designs for Timeline Roadmaps
 	
 ## Format
 
-- Roadmaps require either start and end dates or start date and duration (days / weeks) for every activity
-- Roadmaps can be defined in [yaml or json format](#format)
+Roadmaps can be defined in [yaml or json format](#format)
 
 === "Rendered Timeline"
 
