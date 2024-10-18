@@ -1,0 +1,17 @@
+[
+    {
+        "title": "2024:<br><ul><li>Dataiku Destination and Plugin</li><li>Enhancements for Report Extractions</li><li>Microsoft Fabric (OneLake) Destination</li><li>Enhancements for the BW Cube BICS Mode</li><li>OData Support</li></ul>",
+        "icon": ":material-excavator:",
+        "sub_title": "In Progress"
+    },
+    {
+        "title": "2025:<br><ul><li>SAP Concur Support</li><li>SaaS Data Integration Offering</li><li>SAP DataSphere Support</li><li>Enhancements for Data Lakehouse</li></ul>",
+        "icon": ":material-play:",
+        "sub_title": "Next Up"
+    },
+    {
+        "title": "<ul><li>Build-In Extraction Scheduler</li><li>SAP Ariba Support</li><li>EventHub/Kafka Support></li><li>Snowflake Native App</li></ul>",
+        "icon": ":material-skip-next:",
+        "sub_title": "Later"
+    }
+]
