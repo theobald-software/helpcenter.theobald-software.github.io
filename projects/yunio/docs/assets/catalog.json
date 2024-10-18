@@ -1,5 +1,16 @@
 [
   {
+    "Version": "2024.10.18.28",
+    "LegacyReleaseDate": "2024-10-18 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "Table",
+        "Message": "Fixed an issue where the count rows GUI function would ignore script expressions"
+      }
+    ]
+  },
+  {
     "Version": "2024.10.17.42",
     "LegacyReleaseDate": "2024-10-17 00:00:00Z",
     "Changes": [
