@@ -39,7 +39,7 @@
       {
         "Product": "Theobald.Extractors",
         "Component": "Table",
-        "Message": "Improved view for table extractions"
+        "Message": "Improved view for table extractions with indicators on configured tabs, deletion of unneeded information after all tables were removed and added a automatic switch to the /THEO/READ_TABLE or Z_THEO_READ_TABLE function modules when adding a second table to enable joins functionality."
       }
     ]
   },
