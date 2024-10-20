@@ -14,21 +14,21 @@ Unlike the other {{ components }}, the {{ bwloader }} {{ component }} is a data 
 For the {{ bwloader }} {{ component }} to deliver data correctly, an InfoPackage is required. Create the following InfoPackage in the SAP BW system:
 
 - Create a new source system of the type *3rd party / Staging BAPIs*. The {{ bwloader }} {{ component }} requires the program ID of the source.<br>
-![BWLoader-Configuration-01](../../assets/images/xis/documentation/bwloader/BWLoader-Configuration-01.png){:class="img-responsive"}<br>
-![BWLoader-Configuration-02](../../assets/images/xis/documentation/bwloader/BWLoader-Configuration-02.png){:class="img-responsive"}
+![BWLoader-Configuration-01](../../assets/images/documentation/components/bwloader/BWLoader-Configuration-01.png){:class="img-responsive"}<br>
+![BWLoader-Configuration-02](../../assets/images/documentation/components/bwloader/BWLoader-Configuration-02.png){:class="img-responsive"}
 - When using a 3.x data flow, you can assign the source system to the InfoSource and create an InfoPackage.
 - When using a 7.x data flow, create a DataSource for the newly created 3rd party source system and create an InfoPackage.
 {{ bwloader }} loads data to the PSA of the DataSource.<br>
-![XIS_BWLoader_7.x_DS](../../assets/images/xis/documentation/bwloader/XIS_BWLoader_7.x_DS.png){:class="img-responsive"}
+![XIS_BWLoader_7.x_DS](../../assets/images/documentation/components/bwloader/XIS_BWLoader_7.x_DS.png){:class="img-responsive"}
 
 For more information on how to create data imports in SAP BW, refer to the SAP Documentation.
 
 ### Look up an InfoPackage
 
 1. In the main window of the component, click the search botton. The window “Look Up InfoPackage” opens. <br>
-![bwloader_main-window_add](../../assets/images/xis/documentation/bwloader/bwloader_main-window_add.png)
+![bwloader_main-window_add](../../assets/images/documentation/components/bwloader/bwloader_main-window_add.png)
 2. Look up the name of an InfoPackage, an Info Source or a Source System :number-1:. Use wildcards (*) if needed.<br>
-![BWLoader-Configuration-10](../../assets/images/xis/documentation/bwloader/bwloader_look-up.png){:class="img-responsive"}
+![BWLoader-Configuration-10](../../assets/images/documentation/components/bwloader/bwloader_look-up.png){:class="img-responsive"}
 3. Click the search button. Search results are displayed.
 4. Select an item from the list :number-2: and click **[OK]** to confirm.
 
@@ -48,7 +48,7 @@ The lookup finds InfoPackages based on either 3.x or 7.x DataSources.
 3. Pass input data to the input pipeline of the {{ bwloader }} {{ component }}.
 4. Open the main window of the {{ bwloader }} {{ component }} component.
 5. Map each element of the pipeline to one element of the transfer structure.<br>
-![bwloader-mapping](../../assets/images/xis/documentation/bwloader/bwloader-mapping.png){:class="img-responsive"}
+![bwloader-mapping](../../assets/images/documentation/components/bwloader/bwloader-mapping.png){:class="img-responsive"}
 6. Check the [settings](settings.md) before running the SSIS package.
 7. Click **[OK]** to save your input.
 

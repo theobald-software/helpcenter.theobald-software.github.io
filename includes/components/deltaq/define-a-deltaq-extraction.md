@@ -4,7 +4,7 @@
 
 === "Look Up Extractors"
 	1. In the main window of the {{ component }}, click **[:magnifying-glass:]**. The window “Look Up OLTP Source” opens.<br>
-	![DeltaQ](../../assets/images/{{ abbr }}/documentation/deltaq/deltaq_main-window_add.png){:class="img-responsive"}
+	![DeltaQ](../../assets/images/documentation/components/deltaq/{{ abbr }}-deltaq_main-window_add.png){:class="img-responsive"}
 	2. In the field **Name**, enter the name of a DataSource :number-1:. Use wildcards ( * ), if needed.<br>
 	![search-ds-mat-attr](../../assets/images/documentation/components/deltaq/deltaq_look-up.png){:class="img-responsive"}
 	3. Click **[:magnifying-glass:]**. Search results are displayed.
@@ -12,7 +12,7 @@
 
 === "Look Up Hierarchies"
 	1. In the main window of the {{ component }}, click **[:magnifying-glass:]**. The window “Look Up OLTP Source” opens<br>
-	![DeltaQ](../../assets/images/{{ abbr }}/documentation/deltaq/deltaq_main-window_add.png){:class="img-responsive"}
+	![DeltaQ](../../assets/images/documentation/components/deltaq/{{ abbr }}-deltaq_main-window_add.png){:class="img-responsive"}
 	2. In the field **Name**, enter the name of a Hierarchy :number-1:. Use wildcards ( * ), if needed.
 	Alternatively, enter the description of a Hierarchy in the field **Description**. <br>
 	![search-ds-mat-attr](../../assets/images/documentation/components/deltaq/deltaq_look-up-hierarchies1.png){:class="img-responsive"}
@@ -31,7 +31,7 @@ The {{ deltaq }} {{ component }} offers the following options for DataSource ext
 === "{{ deltaq }} with Extractors"
 	1. Navigate to **Gateway** and click **[:magnifying-glass:]** :number-1: to look up an RFC destination. 
 	For more information, see [DeltaQ Customizing: Gateway](deltaq-customization.md/#gateway).<br>
-	![DeltaQ2](../../assets/images/{{ abbr }}/documentation/deltaq/DeltaQ2.png){:class="img-responsive"}
+	![DeltaQ2](../../assets/images/documentation/components/deltaq/{{ abbr }}-DeltaQ2.png){:class="img-responsive"}
 	2. Navigate to **Logical Destination** and click **[:magnifying-glass:]** :number-2: to look up a logical RFC target system. 
 	For more information, see [DeltaQ Customizing: Logical Destination](deltaq-customization.md/#logical-destination).
 	3. Click **Customizing Check** :number-3: to validate the DeltaQ Customizing on the SAP system.
@@ -55,7 +55,7 @@ The {{ deltaq }} {{ component }} offers the following options for DataSource ext
 === "{{ deltaq }} with Hierarchies"
 	1. Navigate to **Gateway** and click **[:magnifying-glass:]** :number-1: to look up an RFC destination. 
 	For more information, see [DeltaQ Customizing: Gateway](deltaq-customization.md/#gateway).<br>
-	![DeltaQ2](../../assets/images/{{ abbr }}/documentation/deltaq/DeltaQ2.png){:class="img-responsive"}
+	![DeltaQ2](../../assets/images/documentation/components/deltaq/{{ abbr }}-DeltaQ2.png){:class="img-responsive"}
 	2. Navigate to **Logical Destination** and click **[:magnifying-glass:]** :number-2: to look up a logical RFC target system. 
 	For more information, see [DeltaQ Customizing: Logical Destination](deltaq-customization.md/#logical-destination).
 	3. Click **Customizing Check** :number-3: to validate the DeltaQ Customizing on the SAP system.

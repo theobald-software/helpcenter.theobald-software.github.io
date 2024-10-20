@@ -12,7 +12,7 @@ For more information on property expressions, see [Microsoft Documentation: Use 
 
 1. Right-click the Data Flow canvas and select **Properties**. The window "Properties" opens.
 2. Add an *Expression* by clicking using **[…]**. The window "Property Expression Editor" opens.<br>
-![Expressions](../../assets/images/xis/documentation/table/expressions.png){:class="img-reagierend"}
+![Expressions](../../assets/images/documentation/components/table/xis-expressions.png){:class="img-reagierend"}
 3. Select a property from the drop-down list under *Property*.<br>
 4. Open the "Expression Builder" using the **[…]** button under *Expression*.
 5. Build your Expression and click **[Evaluate Expression]** to check for correct syntax.
