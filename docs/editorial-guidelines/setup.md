@@ -80,6 +80,10 @@ pip install git+https://github.com/Andre601/mkdocs-pagenav-generator
 ```
 pip install mkdocs-pdf
 ```
+- Encrypt content
+```
+pip install mkdocs-encryptcontent-plugin
+```
 
 
 ### Access the HelpCenter Repository
