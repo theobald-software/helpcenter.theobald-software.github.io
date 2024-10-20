@@ -25,7 +25,7 @@ hide:
 [:octicons-arrow-right-24: Show more](news.md)
 
 
-![threshold](assets/images/xfa/DataStream_XfA.png)
+![threshold](assets/images/logos/DataStream_XfA.png)
 
 
 ### Additional Resources

@@ -58,7 +58,7 @@ The depicted example workflow finishes within 7.2 seconds:<br>
 - Custom Function Module: Z_THEO_READ_TABLE for table extractions
 - Hardware: 16GB RAM
 
-![extraction-time](../assets/images/xfa/articles/extraction-time.png){:class="img-responsive"}
+![extraction-time](../assets/images/articles/xfa/extraction-time.png){:class="img-responsive"}
 
 *****
 #### Related Links

@@ -54,48 +54,48 @@ The depicted example uses a storage account *xtractstorage* and a container call
 
 	=== "Destination Settings"
 	
-		![XU_Extraction_AzureDest1](../assets/images/xu/articles/xu-adf-storage-trigger/xu-exraction-destination.png){:class="img-responsive"}<br>
+		![XU_Extraction_AzureDest1](../assets/images/articles/xu/xu-adf-storage-trigger/xu-exraction-destination.png){:class="img-responsive"}<br>
 
 	=== "Destination Details: Azure Storage"
 
-		![XU_Extraction_AzureDest1](../assets/images/xu/articles/xu-adf-storage-trigger/xu-azure-destination-01.png){:class="img-responsive" width="400px"}<br>
+		![XU_Extraction_AzureDest1](../assets/images/articles/xu/xu-adf-storage-trigger/xu-azure-destination-01.png){:class="img-responsive" width="400px"}<br>
 
 	=== "Destination Details: File Format"
 
-		![XU_Extraction_AzureDest1](../assets/images/xu/articles/xu-adf-storage-trigger/xu-azure-destination-02.png){:class="img-responsive" width="400px"}
+		![XU_Extraction_AzureDest1](../assets/images/articles/xu/xu-adf-storage-trigger/xu-azure-destination-02.png){:class="img-responsive" width="400px"}
 	
 2. Define two pipelines in ADF: 
 	- The master pipeline *ProcessBlogStorageFile* contains 2 activities.<br>
 	The first activity *sp_pipelinelog* :number-1: executes an SQL stored procedure to write a log entry to an Azure SQL table. 
 	The second activity runs a dummy subpipeline :number-2:. As both activities are out of the scope of this article, there are no further details. <br>
-	![ADF_Pipeline](../assets/images/xu/articles/xu-adf-storage-trigger/adf-pipeline-overview.png){:class="img-responsive"}
+	![ADF_Pipeline](../assets/images/articles/xu/xu-adf-storage-trigger/adf-pipeline-overview.png){:class="img-responsive"}
 	- The child pipeline *ProcessWithDataBricks* processes the parquet file e.g., with Databricks.
 3. Define the following parameters: 
 	- `fileName`: contains the file Name in the Azure Storage.
 	- `folderPath`: contains the file path in the Azure Storage. 
 4. Click **[New/Edit]** to add a new Storage Event Trigger in the ADF Pipeline.<br>
-![ADF_Pipeline_Trigger00](../assets/images/xu/articles/xu-adf-storage-trigger/adf-pipeline-trigger-edit.png){:class="img-responsive"}
+![ADF_Pipeline_Trigger00](../assets/images/articles/xu/xu-adf-storage-trigger/adf-pipeline-trigger-edit.png){:class="img-responsive"}
 5. Adjust the details and use the Storage account name and Container name defined in the {{ productName }} Azure Storage destination:<br> 
-![ADF_Pipeline_Trigger01](../assets/images/xu/articles/xu-adf-storage-trigger/xu-pipeline-trigger-01.png){:class="img-responsive" width="600px"}
+![ADF_Pipeline_Trigger01](../assets/images/articles/xu/xu-adf-storage-trigger/xu-pipeline-trigger-01.png){:class="img-responsive" width="600px"}
 6. Adjust the event trigger parameters that are used as input parameters for the *Master Pipeline*:<br>
-![ADF_Pipeline_Trigger03](../assets/images/xu/articles/xu-adf-storage-trigger/xu-pipeline-trigger-04.png){:class="img-responsive" width="600px"}
+![ADF_Pipeline_Trigger03](../assets/images/articles/xu/xu-adf-storage-trigger/xu-pipeline-trigger-04.png){:class="img-responsive" width="600px"}
 	- `@triggerBody().fileName`
 	- `@triggerBody().folderPath`
 7. Publish the pipeline.
 8. Run the {{ extraction }} in {{ productName }}.
 9. When the extraction finishes successfully, check the Azure Storage.<br>
-![Azure_Storage_Parquet](../assets/images/xu/articles/xu-adf-storage-trigger/azure-storage-parquet-file.png){:class="img-responsive"} 
+![Azure_Storage_Parquet](../assets/images/articles/xu/xu-adf-storage-trigger/azure-storage-parquet-file.png){:class="img-responsive"} 
 10. Check the log table in Azure SQL. The log table contains an entry, each for the master and child pipeline.<br>
-![SQL_log](../assets/images/xu/articles/xu-adf-storage-trigger/sql-run-log.png){:class="img-responsive"} 
+![SQL_log](../assets/images/articles/xu/xu-adf-storage-trigger/sql-run-log.png){:class="img-responsive"} 
 11. Check the trigger and pipeline runs in ADF.<br>
 
 	=== "Trigger Runs"
 	
-		![ADF_Trigger_Run](../assets/images/xu/articles/xu-adf-storage-trigger/adf-trigger-run.png){:class="img-responsive"}
+		![ADF_Trigger_Run](../assets/images/articles/xu/xu-adf-storage-trigger/adf-trigger-run.png){:class="img-responsive"}
 
 	=== "Pipeline Runs"
 
-		![ADF_Pipeline_Run](../assets/images/xu/articles/xu-adf-storage-trigger/adf-pipeline-run.png){:class="img-responsive"} 
+		![ADF_Pipeline_Run](../assets/images/articles/xu/xu-adf-storage-trigger/adf-pipeline-run.png){:class="img-responsive"} 
 
 
 ### Download JSON Templates

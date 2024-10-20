@@ -22,7 +22,7 @@ This library is used to open the SAP connection.
 
 The following graphic illustrates the process of authentication via *SSO Certificate*:
 
-![SSO-Certificate](../assets/images/{{ abbr }}/articles/sso/sso-certificate.png){:class="img-responsive"}
+![SSO-Certificate](../assets/images/articles/sso/{{ abbr }}-sso-certificate.png){:class="img-responsive"}
 
 1. The user of the BI tool (caller) triggers an extraction by calling the {{ Abbr }} webservice of your Xtract product.
 The caller uses their Active Directory identity to authenticate against the {{ Abbr }} webservice via HTTPS and SPNEGO.

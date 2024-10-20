@@ -19,7 +19,7 @@ This makes it easier to monitor your network, troubleshoot issues, and make nece
 - Parallel Processing: A load balancer allows running multiple extractions at the same time on different servers. 
 This increases the amount of extractions that can be run in parallel.
 
-![Load-Balancer](../assets/images/{{ abbr }}/articles/load-balancer.png){:class="img-responsive" width="700px"}
+![Load-Balancer](../assets/images/articles/{{ abbr }}/load-balancer.png){:class="img-responsive" width="700px"}
 
 ### Prerequisites
 

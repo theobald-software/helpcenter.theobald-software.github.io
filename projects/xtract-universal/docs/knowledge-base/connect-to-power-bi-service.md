@@ -24,7 +24,7 @@ To set up the on-premises Data Gateway using the Power BI Custom Connector, foll
 2. Configure the Data Gateway, see [Use the on-premises data gateway app](https://docs.microsoft.com/en-us/data-integration/gateway/service-gateway-app).
 3. Switch to the *Connectors* tab and define the path to the Power BI Custom Connector e.g., in `[Documents]\Power BI Desktop\Custom Connectors`.<br> 
 The *XtractUniversalExtension* will then be displayed as a Custom Data Connector.<br>
-![Data-Gateway Connectors](../assets/images/xu/articles/power-bi/data-gateway-connectors.png){:class="img-responsive"}
+![Data-Gateway Connectors](../assets/images/articles/xu/power-bi/data-gateway-connectors.png){:class="img-responsive"}
 
 ### Add Xtract Universal as a Data Source
 
@@ -36,11 +36,11 @@ The configured on-premises data gateway is integrated into the Power BI service 
 A DataSource to the Xtract Universal Server must then be set up:
 
 1. In the Power BI service, navigate to **Settings > Manage connections and gateways** and click **[:material-plus:New]**. The "New Connection" window opens.<br>
-![connection-gateway](../assets/images/xu/articles/power-bi/pbi-settings-connections-gateways.png){:class="img-responsive"}
+![connection-gateway](../assets/images/articles/xu/power-bi/pbi-settings-connections-gateways.png){:class="img-responsive"}
 2. Select the connection type *On-premises* (default setting). Fill in the necessary fields:<br>
-![connection-settings](../assets/images/xu/articles/power-bi/pbi-gateways-settings.png){:class="img-responsive"}
+![connection-settings](../assets/images/articles/xu/power-bi/pbi-gateways-settings.png){:class="img-responsive"}
 3. Select the previously created "Data Gateway" from the **Gateway cluster name** drop-down menu.<br>
-![gateway-cluster](../assets/images/xu/articles/power-bi/pbi_gateway-cluster.png){:class="img-responsive"}
+![gateway-cluster](../assets/images/articles/xu/power-bi/pbi_gateway-cluster.png){:class="img-responsive"}
 4. Assign a name to the connection under **Connection name**.
 5. Select *Xtract Universal Extraction* under **Connection type**. 
 If the Xtract Universal entry is not available in the drop-down menu, check the configuration in [Setup On-Premisess Data Gateway](#setup-on-premises-data-gateway).   
@@ -52,9 +52,9 @@ If the Xtract Universal entry is not available in the drop-down menu, check the 
 
 1. Check the Data Source Status and other settings, e.g., **Schedules Refresh**.
 2. Under **[Workspace settings]** navigate to the settings of the dataset **[...]**.<br>
-![workflow](../assets/images/xu/articles/power-bi/pbi_workflow.png){:class="img-responsive"}
+![workflow](../assets/images/articles/xu/power-bi/pbi_workflow.png){:class="img-responsive"}
 3. Expand the entry **Gateway and cloud connections**.<br>
-![gateways cloud connections](../assets/images/xu/articles/power-bi/pbi_gateway-cloud-connections.png){:class="img-responsive"}
+![gateways cloud connections](../assets/images/articles/xu/power-bi/pbi_gateway-cloud-connections.png){:class="img-responsive"}
 4. Configure the connection of the uploaded Power BI dataset.
 5. Select the defined gateway and select the name of the connection (here XtractUniversal) from the drop-down menu under the option **Extention**. <br>
 The status of the connection is checked and reported back in the **Status** field.

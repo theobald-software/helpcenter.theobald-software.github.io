@@ -25,11 +25,11 @@ To extract data from CDS Views, use the [{{ table }}](../documentation/table/ind
 
 === "CDS Views in {{ odp }}"
 
-	![odp-abap-cds](../assets/images/{{ abbr }}/articles/odp/odp-abap-cds.png)
+	![odp-abap-cds](../assets/images/articles/odp/{{ abbr }}-odp-abap-cds.png)
 		
 === "CDS Views in {{ table }}"
 
-	![odp-abap-cds](../assets/images/{{ abbr }}/articles/odp/table-abap-cds.png)
+	![odp-abap-cds](../assets/images/articles/odp/{{ abbr }}-table-abap-cds.png)
 
 
 ### Extract Data from HANA Views
@@ -76,11 +76,11 @@ To extract data from Extractors, use the [{{ deltaq }}](../documentation/deltaq/
 
 === "Extractors in {{ odp }}"
 
-	![odp-abap-cds](../assets/images/{{ abbr }}/articles/odp/odp-sapi.png)
+	![odp-abap-cds](../assets/images/articles/odp/{{ abbr }}-odp-sapi.png)
 		
 === "Extractors in {{ deltaq }}"
 
-	![odp-abap-cds](../assets/images/{{ abbr }}/articles/odp/deltaq-sapi.png)
+	![odp-abap-cds](../assets/images/articles/odp/{{ abbr }}-deltaq-sapi.png)
 
 {% endif %}
 

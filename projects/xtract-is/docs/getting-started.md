@@ -54,7 +54,7 @@ Follow the steps below to add an Xtract {{ component }} to your data flow task:
 Double-click the dataflow component to open the dataflow canvas.
 2. Make sure that at least one XTRACT Connection Manager is available in the data flow task.
 3. Drag & drop an Xtract {{ component }} from the SSIS toolbox into the data flow task:<br>
-![xis_component](assets/images/xis/getting-started/xis_component.png){:class="img-responsive"}
+![xis_component](assets/images/getting-started/xis_component.png){:class="img-responsive"}
 4. Double-click the Xtract {{ component }}. An XTRACT Connection Manager is automatically assigned and the main window of the {{ component }} opens. 
 The majority of the functions of the {{ component }} can be accessed in the main window.
 

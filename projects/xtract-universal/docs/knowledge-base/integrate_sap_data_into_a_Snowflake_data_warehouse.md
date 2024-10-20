@@ -21,7 +21,7 @@ Incremental data feeds are enabled with the built-in Table and DeltaQ components
 The Table component is easy to configure and delivers performant data extraction from even the largest SAP tables. 
 The DeltaQ component provides reliable delta feeds, based on SAP’s native DataSource extractors.
 
-![sap_snowflake](../assets/images/xu/articles/sap_snowflake.png){:class="img-responsive"}
+![sap_snowflake](../assets/images/articles/xu/sap_snowflake.png){:class="img-responsive"}
 
 ### Cloud Storage 
 

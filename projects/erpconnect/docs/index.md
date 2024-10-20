@@ -24,7 +24,7 @@ hide:
 
 [:octicons-arrow-right-24: Show more](news.md)
 
-![threshold](assets/images/erpconnect/DataStream_ERPConnect.png)
+![threshold](assets/images/logos/DataStream_ERPConnect.png)
 
 ### Additional Resources
 

@@ -34,9 +34,9 @@ The execution of PowerShell scripts must be authorized on your system, see [Micr
     the xu-config.exe tool only supports SAP connections with plain authentication.
 
 1. Start the Windows command prompt application :number-1: with administrator rights :number-2:. <br>
-![cmd-prompt](../assets/images/xu/articles/cmd_prompt.png){:class="img-responsive"}
+![cmd-prompt](../assets/images/articles/xu/cmd_prompt.png){:class="img-responsive"}
 2. Navigate to the installation directory of {{ productName }} :number-3:. <br>
-![create_source_command_prompt](../assets/images/xu/articles/create_source_command_prompt.png){:class="img-responsive"}
+![create_source_command_prompt](../assets/images/articles/xu/create_source_command_prompt.png){:class="img-responsive"}
 3. Run the following shell command to create an encrypted password for your SAP source :number-4:: 
 
 	```
@@ -52,15 +52,15 @@ The execution of PowerShell scripts must be authorized on your system, see [Micr
 5. Replace the parameters in `< >` with actual values :number-5:. The parameters are not case sensitive.<br>
 6. Press **[Enter]** to run the command. 
 7. Check the generated source in the {{ productName }} Designer or in the directory `{{ installationDir }}\config\sources`.<br>
-![sources](../assets/images/xu/articles/xu_manage_source_2.png){:class="img-responsive"}
+![sources](../assets/images/articles/xu/xu_manage_source_2.png){:class="img-responsive"}
 
 ### Create a Destination using Windows Command Prompt
 
 
 1. Start the Windows command prompt application :number-1: with administrator rights :number-2:. <br>
-![cmd-prompt](../assets/images/xu/articles/cmd_prompt.png){:class="img-responsive"}
+![cmd-prompt](../assets/images/articles/xu/cmd_prompt.png){:class="img-responsive"}
 2. Navigate to the installation directory of {{ productName }} :number-3:. <br>
-![create_destination_command_prompt](../assets/images/xu/articles/create_destination_command_prompt.png){:class="img-responsive"}
+![create_destination_command_prompt](../assets/images/articles/xu/create_destination_command_prompt.png){:class="img-responsive"}
 3. Run the following shell command to create encrypted passwords or keys necessary for the destination :number-4:: 
 
 	```
@@ -90,13 +90,13 @@ The execution of PowerShell scripts must be authorized on your system, see [Micr
 5. Replace the parameters in `< >` with actual values :number-5:. The names of the parameters are not case sensitive.<br>
 6. Press **[Enter]** to run the command.
 7. Check the generated destination in the {{ productName }} Designer or in the directory `{{ installationDir }}\config\destinations`.<br>
-![Destinations](../assets/images/xu/articles/destinations_load_manage_shared.png){:class="img-responsive"}
+![Destinations](../assets/images/articles/xu/destinations_load_manage_shared.png){:class="img-responsive"}
 
 
 ### Create a Table Extraction using Windows Command Prompt
 
 1. Start the Windows command prompt application :number-1: with administrator rights :number-2:. <br>
-![cmd-prompt](../assets/images/xu/articles/cmd_prompt.png){:class="img-responsive"}
+![cmd-prompt](../assets/images/articles/xu/cmd_prompt.png){:class="img-responsive"}
 2. Navigate to the installation directory of {{ productName }}.
 3. Use the following command to select the *xu-config.exe* command line tool from the {{ productName }} installation directory and to create a new Table extraction: 
 
@@ -107,10 +107,10 @@ The execution of PowerShell scripts must be authorized on your system, see [Micr
 4. Replace the parameters in `< >`with actual values :number-3:. 
 5. Enter a [defined SAP Connection, Destination](../documentation/setup/migration.md/#configuration-files) and an SAP Table object for the parameters \<source\>, \<destination\> and \<table\>. 
 The names of the parameters are not case sensitive. <br>
-![administrator-command-prompt-xu-config](../assets/images/xu/articles/administrator-command-prompt-xu-config.png){:class="img-responsive"}
+![administrator-command-prompt-xu-config](../assets/images/articles/xu/administrator-command-prompt-xu-config.png){:class="img-responsive"}
 6. Press **[Enter]** to run the command. 
 7. Check the generated table extraction in the {{ productName }} Designer or in the directory `{{ installationDir }}\config\extractions`.<br>
-![xu-config-xu-designer-gui](../assets/images/xu/articles/xu-config-xu-designer-gui.png){:class="img-responsive"} 
+![xu-config-xu-designer-gui](../assets/images/articles/xu/xu-config-xu-designer-gui.png){:class="img-responsive"} 
 
 !!! note
     The following table settings are set by default after creation: **Package Size** (50000), **Extract data in background job** (enabled), all columns are selected for output.

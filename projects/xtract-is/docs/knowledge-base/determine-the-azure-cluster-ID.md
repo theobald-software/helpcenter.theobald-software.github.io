@@ -14,11 +14,11 @@ Syntax example: `Microsoft.DataFactory/factories/[data factory name]/integration
 
 1. Login to your [Azure Data Factory](https://adf.azure.com/) (ADF) account.
 2. Navigate to **[Launch Studio]** and select **Configure SSIS**. Data factory window opens :number-1:. <br> 
-![Landing page](../assets/images/xis/articles/landing.png){:class="img-responsive" }
+![Landing page](../assets/images/articles/xis/landing.png){:class="img-responsive" }
 3. Select your Data Factory, e.g., *Xtract-ADF* in the depicted example. 
 4. In the general menu, select *Integration Runtimes* > *[Name-of-the-IR]*, e.g., *XTRACT-IR* in the depicted example :number-2:. 
 The integration runtime window opens and all possible runtimes are displayed, including the type, the status and further information.<br>
-![Data factory example](../assets/images/xis/articles/azure-portal.jpg){:class="img-responsive" }
+![Data factory example](../assets/images/articles/xis/azure-portal.jpg){:class="img-responsive" }
 5. The Azure SSIS-IR Cluster ID of the depicted example is: 
 `Microsoft.DataFactory/factories/Xtract-ADF/integrationruntimes/XTRACT-IR`
 

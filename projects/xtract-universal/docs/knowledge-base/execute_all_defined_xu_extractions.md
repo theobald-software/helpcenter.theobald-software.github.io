@@ -28,7 +28,7 @@ The {{ productName }} Server must be installed on the same environment as the SQ
 
 1. Import the SSIS-package *XtractUniversalScheduler.dtsx* into the SSIS-DB using the Microsoft SQL Server Management Studio.
 2. Adjust the SSIS parameters to the correct values of the customer installation.<br>
-![Configure_XtractUniversalScheduler](../assets/images/xu/articles/Configure_XtractUniversalScheduler.png){:class="img-responsive" width="830px"}
+![Configure_XtractUniversalScheduler](../assets/images/articles/xu/Configure_XtractUniversalScheduler.png){:class="img-responsive" width="830px"}
 
 	| SSIS Parameter | Data type | Sensitive | Required | Example Value | Info |
 	------------ | ------------- | ---------- | ---------| -------- |-------|
@@ -36,12 +36,12 @@ The {{ productName }} Server must be installed on the same environment as the SQ
 	| XtractUniversalServerPort | String | False | True | *8065* | [XU-Server Ports](../documentation/server/index.md/#ports) |
 
 3. Schedule the deployed SSIS package using the integrated SQL Server Agent execution jobs. For more information, see [Microsoft Documentation: Create a SQL-Server Agent Job](https://docs.microsoft.com/en-us/sql/ssms/agent/create-a-job?view=sql-server-ver15).<br>
-![Create_Job_XtractUniversalScheduler_XtractUniversalScheduler](../assets/images/xu/articles/Create_Job_XtractUniversalScheduler.png){:class="img-responsive"}
+![Create_Job_XtractUniversalScheduler_XtractUniversalScheduler](../assets/images/articles/xu/Create_Job_XtractUniversalScheduler.png){:class="img-responsive"}
 4. Execute the created step of the SQL Server Agent.
 5. Check the correct execution of all defined extractions within the {{ productName }} Designer window.<br>
-![Xtract_Universal_Designer_Status](../assets/images/xu/articles/Xtract_Universal_Designer_Status.png){:class="img-responsive"}
+![Xtract_Universal_Designer_Status](../assets/images/articles/xu/Xtract_Universal_Designer_Status.png){:class="img-responsive"}
 6. Check the results in the extraction destination(s).<br>
-![Destination_Results](../assets/images/xu/articles/Destination_Results.png){:class="img-responsive"}
+![Destination_Results](../assets/images/articles/xu/Destination_Results.png){:class="img-responsive"}
 
 ### About the SSIS Package
 

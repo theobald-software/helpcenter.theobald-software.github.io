@@ -24,7 +24,7 @@ hide:
 [:octicons-arrow-right-24: Show more](news.md)
 
 
-![threshold](assets/images/yunio/DataStream_yunIO.png)
+![threshold](assets/images/logos/DataStream_yunIO.png)
 
 ### Additional Resources
 

@@ -23,7 +23,7 @@ For information on system requirements, see [Requirements](documentation/setup/r
 		If you have multiple instances of Alteryx installed, choose the instance on which you want to use Xtract for Alteryx.
 
 4. Open the Alteryx Designer. The Xtract for Alteryx {{ components }} are available in the Xtract For Alteryx toolbox.<br>
-![toolbox](assets/images/xfa/getting-started/toolbox.png)
+![toolbox](assets/images/getting-started/xfa-toolbox.png)
 
 For more information, see [Setup](documentation/setup/index.md).
 
@@ -91,7 +91,7 @@ For more information on filter options and advanced settings, see, [Define the {
 
 You can now add tools to process the data returned by {{ table }} and run the {{ extraction }}.
 
-![table_look-up](assets/images/xfa/getting-started/kna1.gif){:class="img-responsive" style="border:1px solid black;"}
+![table_look-up](assets/images/getting-started/xfa-kna1.gif){:class="img-responsive" style="border:1px solid black;"}
 
 
 <!---![table_look-up](assets/images/xfa/documentation/table/table_main-window_add.png) --->

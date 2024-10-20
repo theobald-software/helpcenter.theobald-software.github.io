@@ -24,7 +24,7 @@ hide:
 
 [:octicons-arrow-right-24: Show more](news.md)
 
-![threshold](assets/images/bc/DataStream_Board.png)
+![threshold](assets/images/logos/DataStream_Board.png)
 
 
 ### Additional Resources
