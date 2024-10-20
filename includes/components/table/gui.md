@@ -5,7 +5,7 @@ The tab *Tables and Fields* consists of the following subsections:
 {% if page.meta.product != "xtract-for-alteryx" %}
 ### Link Buttons
 
-![Link Buttons](../../assets/images/{{ abbr }}/documentation/table/gui-link-buttons.png){:class="img-responsive"}
+![Link Buttons](../../assets/images/documentation/components/table/{{ abbr }}-gui-link-buttons.png){:class="img-responsive"}
 
 {% if page.meta.product != "xtract-is" %}
 
@@ -35,13 +35,13 @@ The subsection *Tables* lists all SAP Tables and Views that were added to the {{
 !!! tip
 	Select an SAP Table to define the corresponding settings, e.g, output columns, WHERE clause, etc. You can switch between the SAP Tables.
 
-![Tables](../../assets/images/{{ abbr }}/documentation/table/gui-tables.png){:class="img-responsive"}
+![Tables](../../assets/images/documentation/components/table/{{ abbr }}-gui-tables.png){:class="img-responsive"}
 
 ### Fields
 
 The subsection *Fields* displays all columns in the selected SAP Table or View.
 
-![Fields](../../assets/images/{{ abbr }}/documentation/table/gui-fields.png){:class="img-responsive"}
+![Fields](../../assets/images/documentation/components/table/{{ abbr }}-gui-fields.png){:class="img-responsive"}
 
 The {{ table }} {{ component }} imports and highlights the dedicated indexes of an SAP Table, such as primary key and/or sorting options. 
 
@@ -92,7 +92,7 @@ The subsection *Preview* displays a real-time preview of the first 100 fields of
 !!! note
 	The use non-indexed fields in the WHERE-clause can lead to timeouts during the preview of large tables.
 
-![Preview](../../assets/images/{{ abbr }}/documentation/table/gui-preview.png){:class="img-responsive"}
+![Preview](../../assets/images/documentation/components/table/{{ abbr }}-gui-preview.png){:class="img-responsive"}
 
 
 ### Buttons

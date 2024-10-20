@@ -16,7 +16,7 @@ Execute the `{{ setup }}Setup.exe` file and follow the instructions of the setup
 
 When starting the installation program, optional components can be selected during the setup. 
 
-![Migration1](../../assets/images/xu/documentation/setup/Migration_1.png){:class="img-responsive"}
+![Migration1](../../assets/images/documentation/setup/xu/Migration_1.png){:class="img-responsive"}
 
 |Component | Description |
 |:----|:---|

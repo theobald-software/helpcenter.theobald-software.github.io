@@ -37,7 +37,7 @@ Follow the steps below to create an Xtract data source that connects to SAP:
 2. In the tab *Data Sources* click **[New]** to create a new data source.<br>
 3. Select the **Xtract** technology to create an Xtract data source.
 4. Fill out the data source settings for your SAP system, see [Xtract Data Source Settings](settings.md).<br>
-![Data-Connection-Manager](../../assets/images/xfa/documentation/sap-connection/data-connection-manager.png){:class="img-responsive"}
+![Data-Connection-Manager](../../assets/images/documentation/sap-connection/xfa/data-connection-manager.png){:class="img-responsive"}
 4. Click **[Save]** to save the SAP connection. The subsection *Connection* opens.
 5. In the subsection *Connection* select one of the following authentication methods: <br>
 	- *Plain* uses the SAP username and password.
@@ -46,7 +46,7 @@ Follow the steps below to create an Xtract data source that connects to SAP:
 6. Select an existing credential for your SAP system or click **+ Connect Credential** to create a new credential. 
 For more information, see [Create Credentials](#create-credentials).
 7. Click **[Link]** / **[Create and link]** to link the credential to the connection. Example:<br>
-![new-data-source](../../assets/images/xfa/documentation/sap-connection/new-data-source.gif){:class="img-responsive" style="border:1px solid black;"}
+![new-data-source](../../assets/images/documentation/sap-connection/xfa/new-data-source.gif){:class="img-responsive" style="border:1px solid black;"}
 
 The SAP connection is now available for selection in the Xtract for Alteryx {{ components }}, see [Assign an SAP Connection to Xtract Components](#assign-an-sap-connection-to-xtract-components).
 
@@ -56,13 +56,13 @@ Follow the steps below to create an Xtract data source that connects to SAP:
 
 1. In the main menu of the Alteryx Designer navigate to **File > Manage Connections**. The window "Connection Manager" opens.
 2. In the tab *Credentials* click **[New]** to create a new credential.<br>
-![Credentials](../../assets/images/xfa/documentation/sap-connection/credentials.png){:class="img-responsive"}
+![Credentials](../../assets/images/documentation/sap-connection/xfa/credentials.png){:class="img-responsive"}
 3. Enter a name for the credential and select one of the following authentication methods: <br>
 	- *Username and password* uses the SAP username and password.
 	- [*SAP SNC*](snc-authentication.md) uses an encrypted connection between Xtract for Alteryx and SAP with username and password. 
 	- [*SAP Ticket Issuer*](sso-with-logon-ticket.md) uses SAP Logon-Tickets in place of user credentials. This connection is not encrypted.
 4. Enter your authentication details. The depicted example uses plain authentication.<br>
-![Plain-Credential](../../assets/images/xfa/documentation/sap-connection/plain.png){:class="img-responsive"}
+![Plain-Credential](../../assets/images/documentation/sap-connection/xfa/plain.png){:class="img-responsive"}
 5. Click **[Save]** to save the credential.
 
 The credential is displayed in the list of credentials.
@@ -75,7 +75,7 @@ The credential is displayed in the list of credentials.
 
 1. Drag&drop an Xtract for Alteryx {{ component }} from the Alteryx Designer toolbox onto the canvas :number-1:. 
 The configuration window of the component opens.<br>
-![Create-New-Table-Extraction](../../assets/images/xfa/documentation/sap-connection/xfa_create_table_extraction_02.png){:class="img-responsive"}
+![Create-New-Table-Extraction](../../assets/images/documentation/sap-connection/xfa/xfa_create_table_extraction_02.png){:class="img-responsive"}
 2. Select an SAP connection from the dropdown list :number-2:.
 
 If no SAP connections are available, [create an Xtract data source](#create-an-xtract-data-source) in the Alteryx Connection Manager.

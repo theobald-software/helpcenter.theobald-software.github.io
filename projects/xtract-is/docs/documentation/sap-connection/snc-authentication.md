@@ -19,7 +19,7 @@ Follow the steps below to set up an SAP connection that uses SNC:
 	
 3. In the "XTRACT Connection Manager" window, click **Additions**. The window "XTRACT Connection Manager Additions" opens.
 4. Activate the option **SNC enabled**.<br>
-![SNC](../../assets/images/xis/documentation/sap-connection/snc-connection-manager.png){:class="img-responsive"}
+![SNC](../../assets/images/documentation/sap-connection/xis/snc-connection-manager.png){:class="img-responsive"}
 5. Enter the path to the SNC library for 32 Bit & 64 Bit in the **SNC library** fields, e.g., `C:\Program Files (x86)\SAP\FrontEnd\SecureLogin\sapcrypto.dll`.
 6. Enter the SAP Partner Name configured for the SAP application server in the field **Partner Name**, e.g., `p:SAPserviceERP/Alice@THEOBALD.LOCAL`.
 7. Select the SNC level of protection in the field **Quality of protection**. The default value is *9 - Maximum*. <br>

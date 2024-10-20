@@ -9,7 +9,7 @@ The {{ page.meta.title }} destination loads data to a Parquet Database destinati
 
 {% include "destinations/create-destination.md" %}
 
-![Destination-Details](../../assets/images/xu/documentation/destinations/flat-file-parquet/destination-details.png){:class="img-responsive"}
+![Destination-Details](../../assets/images/documentation/destinations/flat-file-parquet/destination-details.png){:class="img-responsive"}
 
 {% include "destinations/file-output-path.md" %}
 
@@ -17,7 +17,7 @@ The {{ page.meta.title }} destination loads data to a Parquet Database destinati
 
 {% include "destinations/assign-destination.md" %}
 
-![Destination-settings](../../assets/images/xu/documentation/destinations/flat-file-parquet/destination-settings.png){:class="img-responsive"}
+![Destination-settings](../../assets/images/documentation/destinations/flat-file-parquet/destination-settings.png){:class="img-responsive"}
 
 {% include "destinations/file-name.md" %}
 

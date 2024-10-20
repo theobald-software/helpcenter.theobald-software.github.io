@@ -43,7 +43,7 @@ Before connecting to SAP for the first time, set up an SAP dialog user with the 
 Input values for the SAP connection can be found in the Properties of the SAP Logon Pad or they can be requested from the SAP Basis team.
 5. Click **[Save]** to save the SAP connection. The subsection *Connection* opens.
 6. In the subsection *Connection*, select an authentication methods and link or create and link the credential of your SAP system or dialog user to the data source.<br>
-![new-data-source](assets/images/xfa/documentation/sap-connection/new-data-source.gif)
+![new-data-source](assets/images/documentation/sap-connection/xfa/new-data-source.gif)
 
 For more information, see [SAP Connection](documentation/sap-connection/index.md).
 
@@ -53,7 +53,7 @@ For more information, see [SAP Connection](documentation/sap-connection/index.md
 Follow the steps below to add an Xtract {{ component }} to your workflow:
 
 1. Drag & drop an Xtract {{ component }} from the Xtract for Alteryx toolbox into the workflow :number-1:.<br>
-![create-extraction](assets/images/xfa/documentation/table/create-extraction.png){:class="img-responsive"}
+![create-extraction](assets/images/documentation/table/xfa-create-extraction.png){:class="img-responsive"}
 2. Assign an existing SAP connection :number-2:.
 3. Click **[:pen-button:Edit]** :number-3: to open the main window of the component.
 The majority of the functions of the component can be accessed in the main window.

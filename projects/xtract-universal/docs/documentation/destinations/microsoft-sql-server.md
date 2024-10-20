@@ -12,7 +12,7 @@ No driver installation is required since the ADO .NET driver for SQL Server is d
 
 {% include "destinations/create-destination.md" %}
 
-![Destination-Details](../../assets/images/xu/documentation/destinations/ms-sql/destination-details.png){:class="img-responsive"}
+![Destination-Details](../../assets/images/documentation/destinations/ms-sql/destination-details.png){:class="img-responsive"}
 
 #### Server Name
 Specifies the host address of the SQL Server. Please note the following syntax:
@@ -59,7 +59,7 @@ Checks the database connection.
 
 {% include "destinations/assign-destination.md" %}
 
-![Destination-settings](../../assets/images/xu/documentation/destinations/ms-sql/destination-settings.png){:class="img-responsive"}
+![Destination-settings](../../assets/images/documentation/destinations/ms-sql/destination-settings.png){:class="img-responsive"}
 
 {% include "destinations/file-name.md" %}
 
@@ -110,7 +110,7 @@ Select the option *Custom SQL* from the drop-down list and click **[Edit SQL]**.
 10. Click **[OK]** to confirm your input and [run the extraction](../execute-and-automate/run-an-extraction.md/#run-extractions-in-the-designer).
 
 Check the existence of the extended column *Extraction_Date*  in the SQL Server View of table *KNA1*.<br>
-![Custom_SQL_SQL_Server_Ausgabe](../../assets/images/xu/documentation/destinations/ms-sql/sql_server_extraction_date.png){:class="img-responsive"}
+![Custom_SQL_SQL_Server_Ausgabe](../../assets/images/documentation/destinations/ms-sql/sql_server_extraction_date.png){:class="img-responsive"}
 
 ****
 

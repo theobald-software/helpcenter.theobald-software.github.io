@@ -17,7 +17,7 @@ If a fixed version is available, download the fixed version of the provider from
 
 {% include "destinations/create-destination.md" %}
 
-![Destination-Details](../../assets/images/xu/documentation/destinations/ibm-db/destination-details.png){:class="img-responsive"}
+![Destination-Details](../../assets/images/documentation/destinations/ibm-db/destination-details.png){:class="img-responsive"}
 
 #### Provider
 Enter the .Net provider for DB2. To install the provider refer to requirements.
@@ -40,7 +40,7 @@ Check the database connection.
 
 {% include "destinations/assign-destination.md" %}
 
-![Destination-settings](../../assets/images/xu/documentation/destinations/ibm-db/destination-settings.png){:class="img-responsive"}
+![Destination-settings](../../assets/images/documentation/destinations/ibm-db/destination-settings.png){:class="img-responsive"}
 
 {% include "destinations/file-name.md" %}
 

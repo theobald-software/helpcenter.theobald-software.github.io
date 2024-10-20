@@ -25,7 +25,7 @@ The input fields vary depending on the selected authentication method.
 
 ### Default
 
-![Destination-Details](../../assets/images/xu/documentation/destinations/oracle/destination-details_default.png){:class="img-responsive"}
+![Destination-Details](../../assets/images/documentation/destinations/oracle/destination-details_default.png){:class="img-responsive"}
 
 #### Host
 Enter the name of the Oracle server.
@@ -47,7 +47,7 @@ Check the database connection.
 
 ### Wallet
 
-![Destination-Details](../../assets/images/xu/documentation/destinations/oracle/destination-details_wallet.png){:class="img-responsive"}
+![Destination-Details](../../assets/images/documentation/destinations/oracle/destination-details_wallet.png){:class="img-responsive"}
 
 #### TNS Name
 Enter the TNS name of the connection as it is stored in the `tnsnames.ora` file in your wallet.<br>
@@ -68,7 +68,7 @@ Check the database connection.
 
 ### Connect Descriptor
 
-![Destination-Details](../../assets/images/xu/documentation/destinations/oracle/destination-details_connect-descriptor.png){:class="img-responsive"}
+![Destination-Details](../../assets/images/documentation/destinations/oracle/destination-details_connect-descriptor.png){:class="img-responsive"}
 
 #### Connect Descriptor
 Enter a connect descriptor (connection string), see [Oracle Documentation: View TNS Names and Connection Strings for an Autonomous Database Instance](https://docs.oracle.com/en/cloud/paas/autonomous-database/serverless/adbsb/connect-download-wallet.html#GUID-BE884A1B-034D-4CD6-9B71-83A4CCFDE9FB).
@@ -95,7 +95,7 @@ Check the database connection.
 
 {% include "destinations/assign-destination.md" %}
 
-![Destination-settings](../../assets/images/xu/documentation/destinations/oracle/destination-settings.png){:class="img-responsive"}
+![Destination-settings](../../assets/images/documentation/destinations/oracle/destination-settings.png){:class="img-responsive"}
 
 {% include "destinations/file-name.md" %}
 

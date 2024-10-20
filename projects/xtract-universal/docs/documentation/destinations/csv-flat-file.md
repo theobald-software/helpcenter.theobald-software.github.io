@@ -9,7 +9,7 @@ The {{ page.meta.title }} destination is a CSV (comma-separated values) flat fil
 
 {% include "destinations/create-destination.md" %}
 
-![Destination-Details](../../assets/images/xu/documentation/destinations/flat-file-csv/destination-details.png){:class="img-responsive"}
+![Destination-Details](../../assets/images/documentation/destinations/flat-file-csv/destination-details.png){:class="img-responsive"}
 
 ### File output path
 
@@ -21,7 +21,7 @@ The {{ page.meta.title }} destination is a CSV (comma-separated values) flat fil
 
 {% include "destinations/assign-destination.md" %}
 
-![Destination-settings](../../assets/images/xu/documentation/destinations/flat-file-csv/destination-settings.png){:class="img-responsive"}
+![Destination-settings](../../assets/images/documentation/destinations/flat-file-csv/destination-settings.png){:class="img-responsive"}
 
 {% include "destinations/file-name.md" %}
 

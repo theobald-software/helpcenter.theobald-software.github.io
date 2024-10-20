@@ -2,7 +2,7 @@
 This page contains a description of the "Show active subscriptions" menu in the {{ odp }} {{ component }}.
 To open the menu, click **Show active subscriptions** in the main window of the {{ component }}.
 
-![open-show-active-subscriptions](../../assets/images/{{ abbr }}/documentation/odp/open-show-active-subscriptions.png){:class="img-responsive"}
+![open-show-active-subscriptions](../../assets/images/documentation/components/odp/{{ abbr }}-open-show-active-subscriptions.png){:class="img-responsive"}
 
 ### Show Active Subscriptions
 

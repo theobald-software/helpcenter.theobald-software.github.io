@@ -15,7 +15,7 @@ Find more information on how to use and navigate through the user documentation 
 Xtract for Alteryx is a plug-in for [Alteryx Designer and Server](https://www.alteryx.com). 
 Xtract for Alteryx enables you to extract data from SAP systems and load it into the data flow of your Alteryx solution.
 
-![XfA-Architecture](../assets/images/xfa/documentation/Xtract_for_Alteryx.png){:class="img-responsive"}
+![XfA-Architecture](../assets/images/documentation/introduction/Xtract_for_Alteryx.png){:class="img-responsive"}
 
 ### Xtract {{ Components }}
 

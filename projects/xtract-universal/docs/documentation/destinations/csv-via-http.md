@@ -9,7 +9,7 @@ It is supported by many products, e.g., Layer2, INFONEA and KNIME.
 
 {% include "destinations/create-destination.md" %}
 
-![Destination-Details](../../assets/images/xu/documentation/destinations/http-csv/destination-details.png){:class="img-responsive"}
+![Destination-Details](../../assets/images/documentation/destinations/http-csv/destination-details.png){:class="img-responsive"}
 
 {% include "destinations/csv-settings.md" %}
 
@@ -17,7 +17,7 @@ It is supported by many products, e.g., Layer2, INFONEA and KNIME.
 
 {% include "destinations/assign-destination.md" %}
 
-![Destination-settings](../../assets/images/xu/documentation/destinations/http-csv/destination-settings.png){:class="img-responsive"}
+![Destination-settings](../../assets/images/documentation/destinations/http-csv/destination-settings.png){:class="img-responsive"}
 
 {% include "destinations/column-name-style.md" %}
 

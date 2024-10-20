@@ -16,7 +16,7 @@ If your SharePoint server isn't configured for remote access already, go to **Ce
 
 {% include "destinations/create-destination.md" %}
 
-![Destination-Details](../../assets/images/xu/documentation/destinations/sharepoint/destination-details.png){:class="img-responsive"}
+![Destination-Details](../../assets/images/documentation/destinations/sharepoint/destination-details.png){:class="img-responsive"}
 
 
 #### SharePoint on-premises or SharePoint Online
@@ -37,7 +37,7 @@ Check the database connection.
 
 {% include "destinations/assign-destination.md" %}
 
-![Destination-settings](../../assets/images/xu/documentation/destinations/sharepoint/destination-settings.png){:class="img-responsive"}
+![Destination-settings](../../assets/images/documentation/destinations/sharepoint/destination-settings.png){:class="img-responsive"}
 
 {% include "destinations/file-name.md" %}
 

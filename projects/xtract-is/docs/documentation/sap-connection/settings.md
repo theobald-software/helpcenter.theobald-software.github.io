@@ -6,7 +6,7 @@ description: Overview of SAP connection settings
 This page contains an overview of the SAP connection settings in the XTRACT Connection Manager.<br>
 For information on the properties of an XTRACT Connection Manager, see [List of XTRACT Connection Manager Properties](parameterize-connections.md/#list-of-xtract-connection-manager-properties).
 
-![Connection-Manager](../../assets/images/xis/documentation/sap-connection/Connection-Manager.png){:class="img-responsive" }
+![Connection-Manager](../../assets/images/documentation/sap-connection/xis/Connection-Manager.png){:class="img-responsive" }
 
 ### Xtract Conenction Manager Settings
 
@@ -51,7 +51,7 @@ The "Additions" menu contains settings for Secure Network Communication (SNC), a
 In the window "XTRACT Connection Manager" click **Additions**. 
 The window "XTRACT Connection Manager Additions" opens.
 
-![SNC](../../assets/images/xis/documentation/sap-connection/snc-connection-manager.png){:class="img-responsive"}
+![SNC](../../assets/images/documentation/sap-connection/xis/snc-connection-manager.png){:class="img-responsive"}
 
 #### SNC
 

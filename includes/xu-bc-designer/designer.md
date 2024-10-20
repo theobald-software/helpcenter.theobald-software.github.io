@@ -11,7 +11,7 @@ Enter connection and user details to connect the Designer to a {{ productName }}
 	1. Launch the {{ productName }} Designer.
 	2. When the {{ productName }} Server is a local server, the server address is *localhost*.<br>
 	The default port ({{ port_designer }}) may vary depending on the configuration. <br>
-	![local-login](../assets/images/{{ abbr }}/documentation/designer/local-login.png){:class="img-responsive"}
+	![local-login](../assets/images/documentation/designer/{{ abbr }}/local-login.png){:class="img-responsive"}
 	3. If the service is not running on default port {{ port_designer }}, specify the port by adding :[port] after the host name.
 	The default port can be configured in the [server settings](server/server-settings.md).
 	4. Select an authentication method. Once logged in, you can activate or deactivate methods of authentication, see [Access Management](access-restrictions/index.md/#authentication-between-designer-and-server). 
@@ -21,7 +21,7 @@ Enter connection and user details to connect the Designer to a {{ productName }}
 	1. Launch the {{ productName }} Designer.
 	2. When the {{ productName }} Designer and the {{ productName }} Server run on different machines, enter the host name of the {{ productName }} Server. 
 	Make sure the port is not blocked by your firewall.<br>
-	![remote-login](../assets/images/{{ abbr }}/documentation/designer/remote-login.png){:class="img-responsive"}
+	![remote-login](../assets/images/documentation/designer/{{ abbr }}/remote-login.png){:class="img-responsive"}
 	3. If the service does not run on default port {{ port_designer }}, specify the port by adding :[port] after the host name.
 	The default port can be configured in the [server settings](server/server-settings.md).
 	4. Select an authentication method. Once logged in, you can activate or deactivate methods of authentication, see [Access Management](access-restrictions/index.md/#authentication-between-designer-and-server). 
@@ -40,7 +40,7 @@ The Designer features different functionalities to design and configure extracti
 
 ### Main Menu Bar
 
-![main-window-menubar](../assets/images/{{ abbr }}/documentation/designer/main-window-menubar.png){:class="img-responsive"}
+![main-window-menubar](../assets/images/documentation/designer/{{ abbr }}/main-window-menubar.png){:class="img-responsive"}
 
 
 === "Designer"
@@ -115,7 +115,7 @@ The Designer features different functionalities to design and configure extracti
 
 ### GUI Buttons
 
-![main-window-guibuttons](../assets/images/{{ abbr }}/documentation/designer/main-window-guibuttons.png){:class="img-responsive"}
+![main-window-guibuttons](../assets/images/documentation/designer/{{ abbr }}/main-window-guibuttons.png){:class="img-responsive"}
 
 {% if page.meta.product == "board-connector" %}
 
@@ -149,7 +149,7 @@ Icon | Button |Description | Details
 
 ### Extraction Groups
 
-![main-window-extractionlist](../assets/images/{{ abbr }}/documentation/designer/main-window-treeview-main.png){:class="img-responsive"}
+![main-window-extractionlist](../assets/images/documentation/designer/{{ abbr }}/main-window-treeview-main.png){:class="img-responsive"}
 
 Extractions can be organized in groups, see [Organize Extractions](organize-extractions.md).
 The treeview in the main window of the Designer displays all extraction groups and reflects the folder structure in the following directory: 
@@ -161,7 +161,7 @@ Select a group to display the list of extractions that are located in the corres
 
 ### List of Extractions
 
-![main-window-extractionlist](../assets/images/{{ abbr }}/documentation/designer/main-window-extractionlist.png){:class="img-responsive"}
+![main-window-extractionlist](../assets/images/documentation/designer/{{ abbr }}/main-window-extractionlist.png){:class="img-responsive"}
 
 List of all extractions in the currently selected extraction group divided by name, type, modification and creation date etc. <br>
 
@@ -211,7 +211,7 @@ Icon | Menu Item |Description | Details
 
 ### Status Bar 
 
-![main-window-footer](../assets/images/{{ abbr }}/documentation/designer/main-window-footer.png){:class="img-responsive"}
+![main-window-footer](../assets/images/documentation/designer/{{ abbr }}/main-window-footer.png){:class="img-responsive"}
 
 The status bar contains information about the following: 
 

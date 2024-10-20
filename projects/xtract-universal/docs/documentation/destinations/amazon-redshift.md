@@ -15,7 +15,7 @@ For more information on Amazon Redshift, see [Getting Started with Amazon Redshi
 - For establishing a connection to Amazon Redshift, a suitable database driver is required.
 - Download and install the x64 Redshift ODBC driver version 2.x from the official [website](https://docs.aws.amazon.com/redshift/latest/mgmt/odbc20-install-config-win.html).
 If the driver is missing, the connection test fails.<br>
-![missing driver](../../assets/images/xu/documentation/destinations/amazon-redshift/missing-driver.png){:class="img-responsive"}
+![missing driver](../../assets/images/documentation/destinations/amazon-redshift/missing-driver.png){:class="img-responsive"}
 
 !!! note
 	Prior to Xtract Universal version 2.102.0 you have to install the Mono.Security.dll assembly instead of above mentioned ODBC driver.
@@ -24,7 +24,7 @@ If the driver is missing, the connection test fails.<br>
 
 {% include "destinations/create-destination.md" %}
 
-![Destination-Details](../../assets/images/xu/documentation/destinations/amazon-redshift/destination-details.png){:class="img-responsive"}
+![Destination-Details](../../assets/images/documentation/destinations/amazon-redshift/destination-details.png){:class="img-responsive"}
 
 #### Endpoint
 Enter the server address of the Amazon Redshift System.
@@ -44,7 +44,7 @@ Checks the database connection.
 
 {% include "destinations/assign-destination.md" %}
 
-![Destination-settings](../../assets/images/xu/documentation/destinations/amazon-redshift/destination-settings.png){:class="img-responsive"}
+![Destination-settings](../../assets/images/documentation/destinations/amazon-redshift/destination-settings.png){:class="img-responsive"}
 
 {% include "destinations/file-name.md" %}
 

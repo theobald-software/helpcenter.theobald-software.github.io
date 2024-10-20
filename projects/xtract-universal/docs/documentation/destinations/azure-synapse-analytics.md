@@ -17,7 +17,7 @@ To use the Azure Synapse Analytics SQL Pool destination, you need:
 
 {% include "destinations/create-destination.md" %}
 
-![Destination-Details](../../assets/images/xu/documentation/destinations/azure-synapse/destination-details.png){:class="img-responsive"}
+![Destination-Details](../../assets/images/documentation/destinations/azure-synapse/destination-details.png){:class="img-responsive"}
 
 #### Server Name
 Enter the name of the Azure Servers in the following format:<br>
@@ -38,7 +38,7 @@ Check the database connection.
 
 {% include "destinations/assign-destination.md" %}
 
-![Destination-settings](../../assets/images/xu/documentation/destinations/azure-synapse/destination-settings.png){:class="img-responsive"}
+![Destination-settings](../../assets/images/documentation/destinations/azure-synapse/destination-settings.png){:class="img-responsive"}
 
 {% include "destinations/file-name.md" %}
 

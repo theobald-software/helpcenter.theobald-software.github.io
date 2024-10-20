@@ -19,8 +19,8 @@ The destination details can be defined for an SAP HANA database or for an SAP Da
 
 For information on SAP Datasphere connection parameters, see [SAP Help: Create a Database User](https://help.sap.com/docs/SAP_DATASPHERE/be5967d099974c69b77f4549425ca4c0/798e3fd6707940c3bd2219b2d1ebaac2.html?locale=en-US) and [SAP Help: Obtaining Your OPEN SQL Schema Connection Information](https://help.sap.com/docs/SAP_DATASPHERE/be5967d099974c69b77f4549425ca4c0/b78ad208f8c4494489aabf97284679b6.html?locale=en-US#obtaining-[…]nformation).
 
-![Destination-Details](../../assets/images/xu/documentation/destinations/hana/destination-details_1.png){:class="img-responsive" width="48%"} &nbsp;
-![Destination-Details](../../assets/images/xu/documentation/destinations/hana/destination-details_1_1.png){:class="img-responsive" width="48%"}
+![Destination-Details](../../assets/images/documentation/destinations/hana/destination-details_1.png){:class="img-responsive" width="48%"} &nbsp;
+![Destination-Details](../../assets/images/documentation/destinations/hana/destination-details_1_1.png){:class="img-responsive" width="48%"}
 
 
 #### Server Name
@@ -46,7 +46,7 @@ Check the database connection.
 
 {% include "destinations/assign-destination.md" %}
 
-![Destination-settings](../../assets/images/xu/documentation/destinations/hana/destination-settings.png){:class="img-responsive"}
+![Destination-settings](../../assets/images/documentation/destinations/hana/destination-settings.png){:class="img-responsive"}
 
 
 {% include "destinations/file-name.md" %}

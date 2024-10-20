@@ -30,7 +30,7 @@ To write SAP data to external stages in Snowflake, refer to the [Azure Storage](
 
 ### General
 
-![Destination-Details](../../assets/images/xu/documentation/destinations/snowflake/destination-details_1.png){:class="img-responsive"}
+![Destination-Details](../../assets/images/documentation/destinations/snowflake/destination-details_1.png){:class="img-responsive"}
 
 #### Output directory
 Enter an existing local directory in which the extracted data is written as a csv file.<br>
@@ -64,7 +64,7 @@ Enter a Snowflake user role. If no user role is entered, the default user role i
 
 ### Account Identifier
 
-![Destination-Details](../../assets/images/xu/documentation/destinations/snowflake/destination-details_2.png){:class="img-responsive"}
+![Destination-Details](../../assets/images/documentation/destinations/snowflake/destination-details_2.png){:class="img-responsive"}
 
 #### Organization (preferred)
 Enter the name of your organization.
@@ -82,7 +82,7 @@ The selected region must match the information in the assigned account.
 
 ### Authentication
 
-![Destination-Details](../../assets/images/xu/documentation/destinations/snowflake/destination-details_3.png){:class="img-responsive"}
+![Destination-Details](../../assets/images/documentation/destinations/snowflake/destination-details_3.png){:class="img-responsive"}
 
 #### Username
 Enter the Snowflake authentication user name. 
@@ -102,7 +102,7 @@ If you use encrypted private key for authentication, enter the password that is 
 Click **[Test Connection]** to fetch all stages and warehouses from Snowflake. 
 The stages and warehouses then become available for selection.
 
-![Destination-Details](../../assets/images/xu/documentation/destinations/snowflake/destination-details_4.png){:class="img-responsive"}
+![Destination-Details](../../assets/images/documentation/destinations/snowflake/destination-details_4.png){:class="img-responsive"}
 
 #### Stage name
 Select a Snowflake Stage.
@@ -113,7 +113,7 @@ Select a Snowflake Data Warehouse.
 
 {% include "destinations/assign-destination.md" %}
 
-![Destination-settings](../../assets/images/xu/documentation/destinations/snowflake/destination-settings.png){:class="img-responsive"}
+![Destination-settings](../../assets/images/documentation/destinations/snowflake/destination-settings.png){:class="img-responsive"}
 
 {% include "destinations/file-name.md" %}
 
@@ -153,16 +153,16 @@ In the depicted example, the DataSource *0FI_AP_4* is extended by one column tha
 The filling of the new column is implemented dynamically in the **Finalization** section of the destination settings.
 
 1. In Snowflake, deselect the **Error on Column Count Mismatch** option in the *XTRACT_UNIVERSAL* File Format.<br>
-![File-Format-Option](../../assets/images/xu/documentation/destinations/snowflake/file-format-option.png){:class="img-responsive"}
+![File-Format-Option](../../assets/images/documentation/destinations/snowflake/file-format-option.png){:class="img-responsive"}
 2. Open the extraction and click **Edit runtime parameter** :number-1: to create the runtime parameter *RUNTIMEPARAMETER* :number-2:.
-![Edit-Runtime-Parameter](../../assets/images/xu/documentation/destinations/snowflake/edit-runtime-parameter.png){:class="img-responsive"}
+![Edit-Runtime-Parameter](../../assets/images/documentation/destinations/snowflake/edit-runtime-parameter.png){:class="img-responsive"}
 3. Choose a field in the sections *Fields* and click **Edit** :number-3: to add :number-4: a selection criterion that uses the runtime parameter :number-5:.
-![Edit-Selections](../../assets/images/xu/documentation/destinations/snowflake/edit-selections.png){:class="img-responsive"}
+![Edit-Selections](../../assets/images/documentation/destinations/snowflake/edit-selections.png){:class="img-responsive"}
 4. Close the extraction and open the [Destination Settings](#assign-the-snowflake-destination-to-an-extraction) of the extraction. 
 5. Make sure to assign the {{ page.meta.title }} destination to the extraction.
 6. In the staging step **Preparation**, select the option *Custom SQL* from the drop-down list and click **[Edit SQL]**. The window "Edit SQL" opens.
 7. In the drop-down menu, select the option *Drop & Create* and click **[Generate Statement]** :number-6: to [use the template](#use-templates) for *Drop & Create*.<br>
-![Edit-Preparation-Statement](../../assets/images/xu/documentation/destinations/snowflake//edit-preparation-statement.png){:class="img-responsive"}
+![Edit-Preparation-Statement](../../assets/images/documentation/destinations/snowflake//edit-preparation-statement.png){:class="img-responsive"}
 8. Add the following line in the generated statement: <br>
 	```sql
 	"RUNTIMEPARAMETER" VARCHAR(4),
@@ -173,7 +173,7 @@ At this point, no data from the SAP source system but `NULL` values are written 
 11. In the staging step **Finalization**, the `NULL` values can be filled by a custom SQL statement. 
 Select the option *Custom SQL* from the drop-down list and click **[Edit SQL]**.  The window "Edit SQL" opens.
 12. Paste the following SQl statement into the editor:
-![Edit-Finalization-Statement](../../assets/images/xu/documentation/destinations/snowflake/edit-finalization-statement.png){:class="img-responsive"}
+![Edit-Finalization-Statement](../../assets/images/documentation/destinations/snowflake/edit-finalization-statement.png){:class="img-responsive"}
 	```sql
 	UPDATE "0FI_AP_4"
 	SET RUNTIMEPARAMETER= '@RUNTIMEPARAMETER'
@@ -182,11 +182,11 @@ Select the option *Custom SQL* from the drop-down list and click **[Edit SQL]**.
 	The `NULL` values are filled with the runtime parameter *RUNTIMEPARAMETER* and written into the SQL target table using the T-SQL command `UPDATE`.
 13. Click **[OK]** to confirm your input and close the destination settings.
 14. Open the "Run Extraction" window of the Designer :number-7: and enter a value for the runtime parameter :number-8:, before running the extraction :number-9:.
-![Run-Dialog](../../assets/images/xu/documentation/destinations/snowflake/run-extraction-dialog.png){:class="img-responsive"}
+![Run-Dialog](../../assets/images/documentation/destinations/snowflake/run-extraction-dialog.png){:class="img-responsive"}
 
 Check the existence of the new column *RUNTIMEPARAMETER* in the Snowflake Console of the table *0FI_AP_4*.
 
-![Result-Snowflake-Console](../../assets/images/xu/documentation/destinations/snowflake/result_snowflake_console.png){:class="img-responsive"}
+![Result-Snowflake-Console](../../assets/images/documentation/destinations/snowflake/result_snowflake_console.png){:class="img-responsive"}
 *****
 
 ## Related Links

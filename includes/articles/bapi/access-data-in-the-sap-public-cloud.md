@@ -45,7 +45,7 @@ For more information, see [SAP Help: Setting up Communication Management](https:
 Follow the steps below to create an {{ productName }} source that connects to an SAP Public Cloud:
 
 1. In the main window of the Designer, navigate to the menu bar and select **Server > Manage Sources**. The window "Manage Sources" opens.  <br>
-![Create-Connection](../assets/images/{{ abbr }}/documentation/sap-connection/open-manage-sources.png){:class="img-responsive"}
+![Create-Connection](../assets/images/documentation/sap-connection/{{ abbr }}-open-manage-sources.png){:class="img-responsive"}
 2. Click **[Add]** to add a new SAP connection or click **[:pen-button:]** to edit an existing connection. The window "Change Source" opens. <br>
 ![Create-Connection-2](../assets/images/documentation/sap-connection/sap-source-manage.png){:class="img-responsive"}
 3. Enter a name for the SAP connection in the field **Name**, e.g., *SAPCloud*.

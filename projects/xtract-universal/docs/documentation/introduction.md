@@ -13,12 +13,12 @@ Find more information on how to use and navigate through the user documentation 
 Xtract Universal is an SAP Connector for data extraction from SAP to various target environments. 
 The extracted data can than be further processed e.g., in the context of business intelligence, data integration and data analytics.
 
-![XU-Architecture](../assets/images/xu/documentation/Xtract-Universal.png){:class="img-responsive"}
+![XU-Architecture](../assets/images/documentation/introduction/Xtract-Universal.png){:class="img-responsive"}
 
 <!---
 
 <div style="width: 100%; overflow: auto;">
-  <img src="../../assets/images/xu/documentation/glossary-example.png" alt="glossary-example" class="img-responsive" style="width: 450px; float: right;" />
+  <img src="../../assets/images/documentation/introduction/glossary-example.png" alt="glossary-example" class="img-responsive" style="width: 450px; float: right;" />
   
 <h4>Extractions</h4>
 
@@ -41,7 +41,7 @@ your comment goes here
 
 ### About Extractions
 
-![glossary-example](../assets/images/xu/documentation/glossary-example.png){ class="img-responsive" width="450px" align=right  }
+![glossary-example](../assets/images/documentation/introduction/glossary-example.png){ class="img-responsive" width="450px" align=right  }
 
 The main entities in {{ productName }} are called "{{ extractions }}". 
 An {{ extraction }} is a combination of the following components:
@@ -65,7 +65,7 @@ When designing {{ extractions }} in the Designer, the user can create and modify
 During the execution phase, the user can execute the {{ extractions }} that were designed in the Designer. 
 The execution of the {{ extractions }} takes place on the server.
 
-![XU-Architecture](../assets/images/xu/documentation/Architecture.png){:class="img-responsive"}
+![XU-Architecture](../assets/images/documentation/introduction/Architecture.png){:class="img-responsive"}
 
 Depending on the target environment, an extraction can be executed by the [Xtract Universal command line tool - xu.exe / xu.elf](execute-and-automate/call-via-commandline.md) or by the consuming destination, see [Pull and Push Destinations](destinations/index.md).
 

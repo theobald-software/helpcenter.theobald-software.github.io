@@ -63,7 +63,7 @@ The response of the web service call contains the following information:
 | :number-2: | HTTP header | Shows the timestamp of the extraction in the HTTP header e.g., X-{{ Abbr }}-Timestamp: *2021-04-09_19:03:09.971* | 
 | :number-3: | HTTP response body | The Response in the HTTP body depends on the destination type of the extraction. Depending on the destination type, the extracted data is returned in either CSV or JSON format. | 
 
-![Webservice Call pull](assets/images/documentation/execute-and-automate/call_webservice_csv.png){:class="img-responsive"}
+![Webservice Call pull](assets/images/documentation/automation/call_webservice_csv.png){:class="img-responsive"}
 
 #### Parameters for `[protocol]://[host]:[port]/start/[extraction_name]`
 

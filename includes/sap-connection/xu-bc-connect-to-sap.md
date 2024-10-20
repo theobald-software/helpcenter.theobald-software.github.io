@@ -19,7 +19,7 @@
 Follow the steps below to create a source that connects to SAP:
 
 1. In the main window of the Designer, navigate to the menu bar and select **Server > Manage Sources**. The window "Manage Sources" opens.  <br>
-![Create-Connection](../../assets/images/{{ abbr }}/documentation/sap-connection/open-manage-sources.png){:class="img-responsive"}
+![Create-Connection](../../assets/images/documentation/sap-connection/{{ abbr }}-open-manage-sources.png){:class="img-responsive"}
 2. Click **[Add]** to add a new SAP connection or click **[:pen-button:]** to edit an existing connection. The window "Change Source" opens. <br>
 ![Create-Connection-2](../../assets/images/documentation/sap-connection/sap-source-manage.png){:class="img-responsive"}
 3. Enter a name for the SAP connection in the field **Name**.
@@ -48,7 +48,7 @@ Follow the steps below to change the SAP source of an existing extraction:
 
 1. Select an extraction from the list of extractions in the main window of the Designer.
 2. Click **[:designer-source:{ .lg .middle }Source]**. The window “Change Source” opens.<br>
-![open-sap-source](../../assets/images/{{ abbr }}/documentation/sap-connection/open-sap-source.png){:class="img-responsive"}
+![open-sap-source](../../assets/images/documentation/sap-connection/{{ abbr }}-open-sap-source.png){:class="img-responsive"}
 3. Select an SAP source from the dropdown list.<br>
 ![sap-source-change](../../assets/images/documentation/sap-connection/sap-source-change.png){:class="img-responsive"}
 4. Click **[OK]** to confirm your input.

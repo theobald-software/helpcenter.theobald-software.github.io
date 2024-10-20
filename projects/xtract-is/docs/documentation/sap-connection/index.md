@@ -30,11 +30,11 @@ Follow the steps below to create a connection manager that connects to SAP:
 1. Create a new Integration Services Project and add a data flow task.
 2. Right-click within the “Solution Explorer” area and select **New Connection Manager** from the context menu.
 The window "Add SSIS Connection Manager" opens.<br>
-![Connection-Manager-01](../../assets/images/xis/documentation/sap-connection/Connection-Manager-01.png){:class="img-responsive"}
+![Connection-Manager-01](../../assets/images/documentation/sap-connection/xis/Connection-Manager-01.png){:class="img-responsive"}
 3. Select the XTRACT Connection Manager from the list of available connection managers and click **[Add...]**. 
 The XTRACT Connection Manager is now available in the connection managers area.
 4. Double-click the XTRACT Connection Manager. The window "XTRACT Connection Manager" opens.<br>
-![Connection-Manager](../../assets/images/xis/documentation/sap-connection/Connection-Manager.png){:class="img-responsive" }
+![Connection-Manager](../../assets/images/documentation/sap-connection/xis/Connection-Manager.png){:class="img-responsive" }
 5. Enter the system details of your SAP system and enter the SAP username and password of an SAP system or dialogue user.  
 
 	!!! tip
@@ -57,7 +57,7 @@ XTRACT Connection Managers can be assigned to an Xtract {{ component }} automati
 	2. Drag & drop an Xtract {{ component }} into the data flow task.  
 	3. Double-click the Xtract {{ component }} to automatically assign a Connection Manager.
 	If there are multiple XTRACT Connection Managers, the window "Select Connection Manager" opens.<br>
-	![select-connection-manager](../../assets/images/xis/documentation/sap-connection/select-connection-manager.png)<br>
+	![select-connection-manager](../../assets/images/documentation/sap-connection/xis/select-connection-manager.png)<br>
 	Select an XTRACT Connection Manager and click **[OK]**.
 
 === "Assign Manually"
@@ -66,7 +66,7 @@ XTRACT Connection Managers can be assigned to an Xtract {{ component }} automati
 	2. Drag & drop an Xtract {{ component }} into the data flow task.   
 	3. Select the Xtract {{ component }} and click *Show Advanced Editor* in the *Properties* menu of the {{ component }} :number-1:. 
 	The window "Advanced Editor" opens :number-2:. <br>
-	![assign-connection-manager](../../assets/images/xis/documentation/sap-connection/assign-connection-manager.png)
+	![assign-connection-manager](../../assets/images/documentation/sap-connection/xis/assign-connection-manager.png)
 	4. Select an XTRACT Connection Manager from the drop-down-menu :number-3:. 
 	5. Confirm your selection with **[OK]** :number-4:.
 

@@ -8,14 +8,14 @@ The {{ page.meta.title }} destination is a JSON flat file that can be written to
 
 {% include "destinations/create-destination.md" %}
 
-![Destination-Details](../../assets/images/xu/documentation/destinations/flat-file-json/destination-details.png){:class="img-responsive"}
+![Destination-Details](../../assets/images/documentation/destinations/flat-file-json/destination-details.png){:class="img-responsive"}
 
 
 {% include "destinations/file-output-path.md" %}
 
 {% include "destinations/assign-destination.md" %}
 
-![Destination-settings](../../assets/images/xu/documentation/destinations/flat-file-json/destination-settings.png){:class="img-responsive"}
+![Destination-settings](../../assets/images/documentation/destinations/flat-file-json/destination-settings.png){:class="img-responsive"}
 
 {% include "destinations/file-name.md" %}
 

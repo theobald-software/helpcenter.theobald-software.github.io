@@ -2,7 +2,7 @@
 
 ### Look up a Report or Transaction
 1. In the main window of the {{ component }}, click **[:magnifying-glass:]**. The window “Report Lookup” opens.<br>
-![Look-Up-Report](../../assets/images/{{ abbr }}/documentation/report/report_main-window_add.png){:class="img-responsive"}	
+![Look-Up-Report](../../assets/images/documentation/components/report/{{ abbr }}-report_main-window_add.png){:class="img-responsive"}	
 2. In the field **Report Name**, enter the name of a report to extract :number-1:. Use wildcards (*), if needed.
 Alternatively, select **TCODE** to look up SAP Transaction codes. <br>	
 ![Look-Up-Report](../../assets/images/documentation/components/report/report_look-up.png){:class="img-responsive"}	

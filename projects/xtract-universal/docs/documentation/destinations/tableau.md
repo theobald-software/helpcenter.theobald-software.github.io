@@ -23,7 +23,7 @@ Copy the `tableau` folder into your Xtract Universal directory so that the follo
 
 {% include "destinations/create-destination.md" %}
 
-![Destination-Details](../../assets/images/xu/documentation/destinations/tableau/destination-details.png){:class="img-responsive"}
+![Destination-Details](../../assets/images/documentation/destinations/tableau/destination-details.png){:class="img-responsive"}
 
 ### Output directory
 Enter the path to a folder on the Xtract Universal Server where the generated Tableau files are stored.
@@ -68,7 +68,7 @@ Select the project in which the extracted data is published.
 
 {% include "destinations/assign-destination.md" %}
 
-![Destination-settings](../../assets/images/xu/documentation/destinations/tableau/destination-settings.png){:class="img-responsive"}
+![Destination-settings](../../assets/images/documentation/destinations/tableau/destination-settings.png){:class="img-responsive"}
 
 {% include "destinations/file-name.md" %}
 

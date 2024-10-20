@@ -21,7 +21,7 @@ For more information on the IAM role, see [AWS Documentation: Security best prac
 - An S3 bucket, in which you can upload data.
 - Sufficient permissions for list, read and write activities on S3. You must grant these rights in the user policy, but you can limit them to certain buckets. 
 In the following example, the set permissions have been tested in a test environment: <br>
-![IAM_permissions_for_S3_destination](../../assets/images/xu/documentation/destinations/amazon-s3/S3_desination_IAM_permissions.png){:class="img-responsive"}
+![IAM_permissions_for_S3_destination](../../assets/images/documentation/destinations/amazon-s3/S3_desination_IAM_permissions.png){:class="img-responsive"}
 
 !!! note
 	Xtract Universal uses so called [Multipart](https://docs.aws.amazon.com/AmazonS3/latest/dev/mpuoverview.html) upload for uploading data to S3. 
@@ -40,11 +40,11 @@ Therefore it is recommended to change the settings on S3 in a way that will trig
 You can find this setting by selecting a bucket and opening the "Management" tab. 
 Select "Lifecycle" and "Add lifecycle rule" and create a rule for deleting unused multiparts.
 
-![S3_Multipart_Rule](../../assets/images/xu/documentation/destinations/amazon-s3/S3_Multipart_Rule.png){:class="img-responsive"}
+![S3_Multipart_Rule](../../assets/images/documentation/destinations/amazon-s3/S3_Multipart_Rule.png){:class="img-responsive"}
 
 {% include "destinations/create-destination.md" %}
 
-![Destination-Details](../../assets/images/xu/documentation/destinations/amazon-s3/destination-details.png){:class="img-responsive"}
+![Destination-Details](../../assets/images/documentation/destinations/amazon-s3/destination-details.png){:class="img-responsive"}
 
 ### API Endpoints
 
@@ -122,7 +122,7 @@ Without a declared owner, uploaded files cannot be opened directly.
 
 Select the required file format. You can choose between *CSV*, *JSON* and *Parquet*.
 
-![Destination-Details](../../assets/images/xu/documentation/destinations/amazon-s3/destination-details_2.png){:class="img-responsive" }
+![Destination-Details](../../assets/images/documentation/destinations/amazon-s3/destination-details_2.png){:class="img-responsive" }
 
 #### CVS Settings
 
@@ -149,7 +149,7 @@ For more general information about retry strategies in an AWS S3 environment go 
 
 {% include "destinations/assign-destination.md" %}
 
-![Destination-settings](../../assets/images/xu/documentation/destinations/amazon-s3/destination-settings.png){:class="img-responsive"}
+![Destination-settings](../../assets/images/documentation/destinations/amazon-s3/destination-settings.png){:class="img-responsive"}
 
 {% include "destinations/file-name.md" %}
 

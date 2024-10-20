@@ -14,12 +14,12 @@ There are no additional installations needed to use MySQL database destination.
 
 {% include "destinations/create-destination.md" %}
 
-![Destination-Details](../../assets/images/xu/documentation/destinations/my-sql/destination-details.png){:class="img-responsive"}
+![Destination-Details](../../assets/images/documentation/destinations/my-sql/destination-details.png){:class="img-responsive"}
 
 
 {% include "destinations/assign-destination.md" %}
 
-![Destination-settings](../../assets/images/xu/documentation/destinations/my-sql/destination-settings.png){:class="img-responsive"}
+![Destination-settings](../../assets/images/documentation/destinations/my-sql/destination-settings.png){:class="img-responsive"}
 
 {% include "destinations/file-name.md" %}
 

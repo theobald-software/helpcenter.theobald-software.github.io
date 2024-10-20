@@ -17,7 +17,7 @@ There are two types of users and user groups, access can be restricted to:
 The connection between the Designer and the Server can be established using different authentication and encryption methods.
 The authentication method guarantees the verification of the identity of the logged in user.
 
-![Designer_Authentication](../../assets/images/{{ abbr }}/documentation/designer/remote-login.png){:class="img-responsive"}
+![Designer_Authentication](../../assets/images/documentation/designer/{{ abbr }}/remote-login.png){:class="img-responsive"}
 
 {% include "access-restrictions/run-extractions-user-in-designer.md" %}
 
