@@ -13,7 +13,7 @@ BW queries often have defined variables to create filter options.
 Depending on the type of BEx variable (single value, multiple value, interval or complex selection) input fields of the variables are enabled or disabled.
 
 1. [Look up](index.md/#look-up-a-bw-cube-or-query) a BEx Query with defined variables :number-1:.<br> 
-![Edit Variables Button](../../assets/images/{{ abbr }}/documentation/bwcube/BExQuery-Variable.png){:class="img-responsive"}
+![Edit Variables Button](../../assets/images/documentation/components/bwcube/{{ abbr }}-BExQuery-Variable.png){:class="img-responsive"}
 2. Click **[Edit Variables]** :number-2:. The window "Edit variables for [name of the query]" opens.
 3. Select a field that uses variables from the drop-down menu :number-3:.<br>
 ![selections](../../assets/images/documentation/components/bwcube/selections-cube.png){:class="img-responsive"}

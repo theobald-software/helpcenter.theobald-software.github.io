@@ -25,7 +25,7 @@ When parameterizing the component using SSIS variables, the *Custom Properties* 
 
 The *Custom Properties* of the {{ bapi }} {{ component }} are displayed in the "Properties" window.
 
-![BAPI Properties](../../assets/images/xis/documentation/bapi/bapi-properties.png)
+![BAPI Properties](../../assets/images/documentation/components/bapi/xis-bapi-properties.png)
 
 #### Commit Transaction 
 Some SAP Function Modules require calling the function module BAPI_TRANSACTION_COMMIT to successfully update data in the database, e.g., BAI_PO_CREATE. 
