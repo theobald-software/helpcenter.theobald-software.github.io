@@ -1,5 +1,16 @@
 [
   {
+    "Version": "2024.10.21.0",
+    "LegacyReleaseDate": "2024-10-21 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "XtractUniversal",
+        "Component": "Destinations",
+        "Message": "Fixed a bug in S3 and Huawei Cloud OBS destinations where creating an empty file\nwould cause an error."
+      }
+    ]
+  },
+  {
     "Version": "2024.10.18.102",
     "LegacyReleaseDate": "2024-10-18 00:00:00Z",
     "Changes": [
