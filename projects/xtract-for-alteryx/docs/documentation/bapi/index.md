@@ -27,7 +27,7 @@ The {{ bapi }} {{ component }} has the following input and output options:
 - Output anchor "1" to "5" - [output tables](input-and-output.md/#add-tables-to-output) :number-3:.
 - Output anchor "E" - output for export parameters :number-4:.
 
-![bapi-input](../../assets/images/documentation/components/bapi/xfa-bapi-input.png){:class="img-responsive" }
+![bapi-input](../../assets/images/documentation/components/bapi/xfa/bapi-input.png){:class="img-responsive" }
 
 
 ****

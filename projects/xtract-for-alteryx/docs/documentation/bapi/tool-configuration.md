@@ -14,11 +14,11 @@ The number of tables that can be added to the output is therefore limited to fiv
 !!! tip
 	When an output anchor is connected to an Alteryx tool, you can switch output anchors by right-clicking the connecting line between the tools and selecting **Switch Origin to...**.
 
-![output-table-mapping](../../assets/images/documentation/components/bapi/xfa-output-table-mapping.png){:class="img-responsive" style="border:1px solid black"} 
+![output-table-mapping](../../assets/images/documentation/components/bapi/xfa/output-table-mapping.png){:class="img-responsive" style="border:1px solid black"} 
 
 
 ### Transaction Commit
 Some SAP Function Modules require calling the function module BAPI_TRANSACTION_COMMIT to successfully update data in the database, e.g., BAI_PO_CREATE. 
 To automatically call BAPI_TRANSACTION_COMMIT after the selected Function Module / BAPI is processed, activate the option **Commit work in SAP after execution** in the configuration menu of the {{ bapi }} {{ component }}.
 
-![import-parameters](../../assets/images/documentation/components/bapi/xfa-xtract-bapi-commit-transaction.png){:class="img-responsive"}
+![import-parameters](../../assets/images/documentation/components/bapi/xfa/xtract-bapi-commit-transaction.png){:class="img-responsive"}

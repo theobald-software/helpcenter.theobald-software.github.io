@@ -23,7 +23,7 @@ For information on system requirements, see [Requirements](documentation/setup/r
 		If you have multiple instances of Alteryx installed, choose the instance on which you want to use Xtract for Alteryx.
 
 4. Open the Alteryx Designer. The Xtract for Alteryx {{ components }} are available in the Xtract For Alteryx toolbox.<br>
-![toolbox](assets/images/getting-started/xfa-toolbox.png)
+![toolbox](assets/images/getting-started/xfa/toolbox.png)
 
 For more information, see [Setup](documentation/setup/index.md).
 
@@ -53,7 +53,7 @@ For more information, see [SAP Connection](documentation/sap-connection/index.md
 Follow the steps below to add an Xtract {{ component }} to your workflow:
 
 1. Drag & drop an Xtract {{ component }} from the Xtract for Alteryx toolbox into the workflow :number-1:.<br>
-![create-extraction](assets/images/documentation/table/xfa-create-extraction.png){:class="img-responsive"}
+![create-extraction](assets/images/documentation/components/table/xfa/create-extraction.png){:class="img-responsive"}
 2. Assign an existing SAP connection :number-2:.
 3. Click **[:pen-button:Edit]** :number-3: to open the main window of the component.
 The majority of the functions of the component can be accessed in the main window.
@@ -91,7 +91,7 @@ For more information on filter options and advanced settings, see, [Define the {
 
 You can now add tools to process the data returned by {{ table }} and run the {{ extraction }}.
 
-![table_look-up](assets/images/getting-started/xfa-kna1.gif){:class="img-responsive" style="border:1px solid black;"}
+![table_look-up](assets/images/getting-started/xfa/kna1.gif){:class="img-responsive" style="border:1px solid black;"}
 
 
 <!---![table_look-up](assets/images/xfa/documentation/table/table_main-window_add.png) --->
