@@ -2,7 +2,7 @@
 setlocal enabledelayedexpansion
 
 :: Loop through all PNG files (adjust the extension if necessary)
-for /r %%f in (xis-*.png) do (
+for /r %%f in (xfa-*.png) do (
     :: Get the directory where the file is located
     set "dir=%%~dpf"
     :: Get the filename without the path
@@ -11,13 +11,13 @@ for /r %%f in (xis-*.png) do (
     set "newfilename=!filename:~3!"
     
     :: Create a new 'xu' subfolder in the current file's directory
-    if not exist "%%~dpf\xis\" (
-        mkdir "%%~dpf\xis"
+    if not exist "%%~dpf\xfa\" (
+        mkdir "%%~dpf\xfa"
     )
 
     :: Move the file into the 'xu' folder and rename it
-    move "%%f" "%%~dpf\xis\!newfilename!"
+    move "%%f" "%%~dpf\xfa\!newfilename!"
 )
 
-echo All xis- files have been moved to xis subfolders and renamed.
+echo All xfa- files have been moved to xfa subfolders and renamed.
 pause
