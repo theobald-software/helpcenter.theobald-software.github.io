@@ -24,7 +24,7 @@ hide:
 </style>
 
 !!! note
-	![example-workflow](assets/images/documentation/introduction/example-workflow.png){ width="40%" align=right }
+	![example-workflow](assets/images/documentation/introduction/xfa/example-workflow.png){ width="40%" align=right }
 
 	How to get started with Theobald Software sample workflows:
 

@@ -11,7 +11,7 @@ If you run the {{ productName }} Designer and the {{ productName }} Server on di
 A trial license is automatically installed with the installation of {{ productName }}.<br>
 A regular license is provided in the [customer portal - My Theobald Software](https://my.theobald-software.com/) after purchasing the product. 
 
-![client_server_architektur_xu](../../assets/images/xu/documentation/client_server_architektur_xu.png){:class="img-responsive"}
+![client_server_architektur_xu](../../assets/images/documentation/introduction/xu/client_server_architektur_xu.png){:class="img-responsive"}
 
 The license defines the following properties:
 
