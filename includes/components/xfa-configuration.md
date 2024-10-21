@@ -3,7 +3,7 @@ This page contains an overview of the settings in the configuration menu of the 
 To display the configuration menu, select an {{ page.meta.componentName }} {{ component }} in the workflow.
 
 
-![configuration](../../assets/images/documentation/components/{{ page.meta.componentFolder }}/xfa-configuration.png){:class="img-responsive" style="border:1px solid black"} 
+![configuration](../../assets/images/documentation/components/{{ page.meta.componentFolder }}/xfa/configuration.png){:class="img-responsive" style="border:1px solid black"} 
 
 ### About
 

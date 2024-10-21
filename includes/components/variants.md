@@ -23,7 +23,7 @@ The purpose of a variant is to save selection settings on your input screen and 
 Choose a variant from the drop-down-list *Variant*. <br>
 When creating a new variant in SAP after creating the extraction, click **[:refresh:]** to load the new variant.
 
-![Variants-Section](../../assets/images/{{ abbr }}/documentation/{{ page.meta.componentFolder }}/variant.png){:class="img-responsive"}
+![Variants-Section](../../assets/images/documentation/components/{{ page.meta.componentFolder }}/{{ abbr }}/variant.png){:class="img-responsive"}
 
 The selections of the variant are **not** displayed in the *Selection Screen* section of the window. 
 To see the definition of a variant, open the variant in SAP.

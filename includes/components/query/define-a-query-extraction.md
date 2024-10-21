@@ -16,7 +16,7 @@ The application returns to the main window of the {{ component }}.
 The {{ query }} {{ component }} offers the following options for query extractions:
 
 1. If the SAP query has variants, select a variant from the drop-down-list *Variant*. For more information, see [Choose a Variant](variants-and-selections.md/#choose-a-variant).<br>
-![Variants-Section](../../assets/images/documentation/{{ page.meta.componentFolder }}/{{ abbr }}/variant.png){:class="img-responsive"}
+![Variants-Section](../../assets/images/documentation/components/{{ page.meta.componentFolder }}/{{ abbr }}/variant.png){:class="img-responsive"}
 2. In the section *Selection Screen*, edit a selection criterion you want to change or dynamize :number-2:. For more information, see [Edit Selections](variants-and-selections.md/#edit-selections).<br>
 ![Sections](../../assets/images/documentation/components/{{ page.meta.componentFolder }}/selections.png)
 3. Check the [{{ Settings }}](settings.md){% if page.meta.product == "xtract-universal" or page.meta.product == "board-connector"%} and the [General Settings](general-settings.md){% endif %} before running the {{ extraction }}.

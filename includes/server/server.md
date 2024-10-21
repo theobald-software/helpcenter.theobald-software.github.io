@@ -40,7 +40,7 @@ The {{ productName }} Service can be installed and removed using the `{{ install
 After installation, the Windows service can be started, stopped and configured via the Windows Services administration or the Task Manager.
 For information on how to run the service under a dedicated Windows service account, see [Change Service Account](service-account.md).
 
-![Services-Start-Server](../../assets/images/{{ abbr }}/documentation/server/Services.png){:class="img-responsive"}
+![Services-Start-Server](../../assets/images/documentation/server/{{ abbr }}/Services.png){:class="img-responsive"}
 
 ### Ports
 

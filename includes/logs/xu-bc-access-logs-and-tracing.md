@@ -17,7 +17,7 @@ For information on how to query server logs using the web API, see [Web API - Ge
 ### Access Extraction Logs
 
 To open the extraction logs, select an extraction from the list of extractions and click **[:designer-log1: Logs]** in the main window of the Designer.<br>
-![open-logs](../assets/images/{{ abbr }}/documentation/logs/open-logs.png){:class="img-responsive"}
+![open-logs](../assets/images/documentation/logs/{{ abbr }}/open-logs.png){:class="img-responsive"}
 
 The timestamp for each extraction process is displayed in the left part of the "View Extraction Log" window.
 Extraction logs are automatically deleted after a defined period of time, see [server settings](server/server-settings.md).

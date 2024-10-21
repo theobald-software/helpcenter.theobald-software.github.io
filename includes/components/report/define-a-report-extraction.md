@@ -21,7 +21,7 @@ The application now returns to the main window of the {{ component }}.
 The {{ report }} {{ component }} offers the following options for report extractions:
 
 1. If the report has variants, select a variant from the drop-down-list *Variant*. For more information, see [Choose a Variant](variants-and-selections.md/#choose-a-variant).<br>
-![Variants-Section](../../assets/images/{{ abbr }}/documentation/{{ page.meta.componentFolder }}/variant.png){:class="img-responsive"}
+![Variants-Section](../../assets/images/documentation/components/{{ page.meta.componentFolder }}/{{ abbr }}/variant.png){:class="img-responsive"}
 2. In the section *Selection Screen*, edit a selection criterion you want to change or dynamize :number-2:. For more information, see [Edit Selections](variants-and-selections.md/#edit-selections).<br>
 ![Sections](../../assets/images/documentation/components/{{ page.meta.componentFolder }}/selections.png)
 3. Optional: If your report has varying column widths, activate **Dynamic column widths and offsets**.
@@ -52,5 +52,5 @@ The depicted example shows how to set up a simple report extraction:
 
 </div>
 
-![Report-Animation](../../assets/images/xu/documentation/report/report.gif){:class="img-responsive" style="border:1px solid black;"}
+![Report-Animation](../../assets/images/documentation/components/report/xu/report.gif){:class="img-responsive" style="border:1px solid black;"}
 {% endif %}
