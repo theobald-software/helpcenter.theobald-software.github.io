@@ -243,6 +243,7 @@ extra:
   hierarchy: Xtract Hierarchy
   deltaq: Xtract DeltaQ
   odp: Xtract ODP
+  odpOdata: Xtract ODP(OData)
   ohs: Xtract OHS
   query: Xtract Query
   report: Xtract Report
