@@ -33,7 +33,7 @@ When parameterizing the component using SSIS variables, the *Custom Properties* 
 
 The *Custom Properties* of the {{ table }} {{ component }} are displayed in the "Properties" window. 
 
-![table-properties](../../assets/images/xis/documentation/table/table-properties.png)
+![table-properties](../../assets/images/documentation/components/table/xis/table-properties.png)
 
 {% include "components/table/xis-properties.md" %}
 

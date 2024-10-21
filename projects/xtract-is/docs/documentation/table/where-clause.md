@@ -14,7 +14,7 @@ Enter WHERE clauses manually in *Text mode* or use the [WHERE Clause Editor](#wh
 
 {% include "components/table/xis-ssis-where-clause.md" %}
 
-![SSIS-variables](../../assets/images/xis/documentation/table/ssis-variable.gif){:class="img-responsive" style="border:1px solid black;"}
+![SSIS-variables](../../assets/images/documentation/components/table/xis/ssis-variable.gif){:class="img-responsive" style="border:1px solid black;"}
 
 **** 
 #### Related Links

@@ -86,7 +86,7 @@ Follow the steps below to extract customer master data from the SAP table KNA1:
 2. Double-click the {{ table }} {{ component }}. 
 An XTRACT Connection Manager is automatically assigned and the main window of the {{ component }} opens. 
 3. Click **[:material-plus-thick:Add]** to look up an SAP table. The window “Table Lookup” opens.<br>
-![table_look-up](assets/images/documentation/table/xis-table_main-window_add.png)
+![table_look-up](assets/images/documentation/components/table/xis/table_main-window_add.png)
 4. In the field **Table Name**, enter the name of the table to extract (KNA1) :number-1:. Use wildcards (*) if needed.<br>
 ![table_look-up](assets/images/documentation/components/table/table_look-up.png)
 5. Click **[:magnifying-glass:]** :number-2:. Search results are displayed.

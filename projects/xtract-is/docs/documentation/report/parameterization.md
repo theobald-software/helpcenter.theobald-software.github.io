@@ -35,7 +35,7 @@ When parameterizing the component using SSIS variables, the *Custom Properties* 
 
 The *Custom Properties* of the {{ report }} {{ component }} are displayed in the "Properties" window. 
 
-![report-properties](../../assets/images/xis/documentation/report/report-properties.png)
+![report-properties](../../assets/images/documentation/components/report/xis/report-properties.png)
 
 List of the relevant *Custom Properties*:
 

@@ -26,7 +26,7 @@ When parameterizing the component using SSIS variables, the *Custom Properties* 
 
 The *Custom Properties* of the {{ ohs }} {{ component }} are displayed in the "Properties" window. 
 
-![ohs-properties](../../assets/images/xis/documentation/ohs/ohs-properties.png)
+![ohs-properties](../../assets/images/documentation/components/ohs/xis/ohs-properties.png)
 
 {% include "components/table/xis-properties.md" %}
 

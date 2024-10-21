@@ -25,7 +25,7 @@ When parameterizing the component using SSIS variables, the *Custom Properties* 
 
 The *Custom Properties* of the {{ bwcube }} {{ component }} are displayed in the "Properties" window. 
 
-![bwcube-properties](../../assets/images/xis/documentation/bwcube/bwcube-properties.png)
+![bwcube-properties](../../assets/images/documentation/components/bwcube/xis/bwcube-properties.png)
 
 #### CubeName
 Corresponds to the setting [*Cube Name*](index.md/#look-up-a-bw-cube-or-query) in the {{ bwcube }} {{ component }}.

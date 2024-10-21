@@ -7,7 +7,7 @@ description: Extraction Settings
 
 ### String Conversion
 
-![extraction-settings](../../assets/images/xis/documentation/bwcube/settings.png){:class="img-responsive"}
+![extraction-settings](../../assets/images/documentation/components/bwcube/xis/settings.png){:class="img-responsive"}
 
 #### Automatic String Conversion
 All strings are converted into VarChar strings if the source system is non-Unicode, and all strings are converted into NVarChar if the source system is Unicode.
@@ -35,14 +35,14 @@ Using the BEX Extraction mode you can even extract a Query View. After selecting
 | **Fill Empty Cells** | Fills the empty cells of the dimension accordingly. |
 | **Eliminate Result Lines** | Removes the result row (e.g. sum). |
 
-![bex](../../assets/images/xis/documentation/bwcube/bex.png){:class="img-responsive"}
+![bex](../../assets/images/documentation/components/bwcube/xis/bex.png){:class="img-responsive"}
 
 #### MDX 
 If this option is active, the main window of the component provides a text field where you can directly insert an MDX statement.
 After inserting the MDX statement, click **[Execute MDX and Refresh Metadata]** to load the metadata from the BW system.
 Variables can be used either for the whole MDX statement or within the MDX statement.
 
-![mdx](../../assets/images/xis/documentation/bwcube/mdx.png){:class="img-responsive"}
+![mdx](../../assets/images/documentation/components/bwcube/xis/mdx.png){:class="img-responsive"}
 
 #### Use new OLAP BAPIs
 Those BAPIs will be used by default if they are available on the BW system to remove the 1,000,000 cell restriction. 
@@ -57,7 +57,7 @@ Normally you will use a dot (.) or a comma (,).
 
 ### Misc
 
-![extraction-settings](../../assets/images/xis/documentation/bwcube/settings.png){:class="img-responsive"}
+![extraction-settings](../../assets/images/documentation/components/bwcube/xis/settings.png){:class="img-responsive"}
 
 #### Do not tread ‘Axis has no rows’ as Error
 Defines whether an error message is given when there is no data to be selected.

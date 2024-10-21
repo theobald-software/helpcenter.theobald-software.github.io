@@ -22,9 +22,9 @@ By default, the {{ bwcube }} {{ component }} extracts data using the MDX interfa
 To use [BEX mode](settings.md/#bex) or to enter [MDX statements](settings.md/#mdx), change the [settings](settings.md) before the looking up a BW Cube or Query.
 
 1. In the main window of the {{ component }}, click the search botton. The window “Cube and Query Lookup” opens.
-![Look-Up-Cube](../../assets/images/{{ abbr }}/documentation/bwcube/bwcube_main-window_add.png){:class="img-responsive"}
+![Look-Up-Cube](../../assets/images/documentation/components/bwcube/{{ abbr }}/bwcube_main-window_add.png){:class="img-responsive"}
 2. Select the type of cube you want to extract data from (Info Cube or Query) :number-1:.<br>
-![bwcube_look-up](../../assets/images/{{ abbr }}/documentation/bwcube/bwcube_look-up.png){:class="img-responsive"}
+![bwcube_look-up](../../assets/images/documentation/components/bwcube/{{ abbr }}/bwcube_look-up.png){:class="img-responsive"}
 3. In the search bar, enter the name of a Query or a BW Cube / InfoProvider :number-2:. Use wildcards (*), if needed.
 3. Click the search button. Search results are displayed.
 4. Select a Query or BW Cube / InfoProvider :number-3: and click **[OK]** to confirm.
@@ -46,7 +46,7 @@ The application now returns to the main window of the component.
 The {{ bwcube }} {{ component }} offers the following options for Query and BW Cube extractions:
 
 1. In the tree structure of the {{ component }}, double-click the measure (key figures) :number-1: you want to extract.<br>
-![Cube-Details](../../assets/images/{{ abbr }}/documentation/bwcube/cube-measures.png){:class="img-responsive"}
+![Cube-Details](../../assets/images/documentation/components/bwcube/{{ abbr }}/cube-measures.png){:class="img-responsive"}
 
 	!!! tip 
 		The tree structure represents the metadata of the Query (or InfoProvider). <br>

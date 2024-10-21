@@ -17,14 +17,14 @@ Copy the following files provided in the customer portal into the Azure storage 
 - [main.cmd](https://cdn-files.theobald-software.com/download/XtractIS/main.cmd)
 - [XtractISLicense.json](../documentation/setup/license.md) (license file provided after purchasing Xtract IS for Azure)
 
-![XISforAzure_StorageContainer](../assets/images/xis/for-azure/XISforAzure_StorageContainer.png){:class="img-responsive" }
+![XISforAzure_StorageContainer](../assets/images/documentation/xtract-is-for-azure/XISforAzure_StorageContainer.png){:class="img-responsive" }
 
 #### Add Azure Storage Container to SSIS-IR
 
 === "Use Azure Portal UI"
 
 	When provisioning the Azure-SSIS IR via the Azure Portal UI, enter the Azure Storage container's SAS URI in the *Custom setup container SAS URI* field. <br>
-	![XISforAzure_Portal_CustomSetupContainer](../assets/images/xis/for-azure/XISforAzure_Portal_CustomSetupContainer.png){:class="img-responsive" }
+	![XISforAzure_Portal_CustomSetupContainer](../assets/images/documentation/xtract-is-for-azure/XISforAzure_Portal_CustomSetupContainer.png){:class="img-responsive" }
 
 === "Use PowerShell"
 
@@ -46,8 +46,8 @@ During the startup of the Integration Runtime the *main.cmd* is executed, which 
 
 As an alternative to the manual setup, the Express Custom Setup can be used for installing Xtract IS for Azure on an Azure SSIS-IR. See [Microsoft documentation](https://docs.microsoft.com/en-us/azure/data-factory/how-to-configure-azure-ssis-ir-custom-setup#express-custom-setup) for more information.
 
-![XISforAzure_ExpressCustomSetup_1](../assets/images/xis/for-azure/XISforAzure_ExpressCustomSetup_1.png){:class="img-responsive" width="49%" }
-![XISforAzure_ExpressCustomSetup_2](../assets/images/xis/for-azure/XISforAzure_ExpressCustomSetup_2.png){:class="img-responsive" width="50%" }
+![XISforAzure_ExpressCustomSetup_1](../assets/images/documentation/xtract-is-for-azure/XISforAzure_ExpressCustomSetup_1.png){:class="img-responsive" width="49%" }
+![XISforAzure_ExpressCustomSetup_2](../assets/images/documentation/xtract-is-for-azure/XISforAzure_ExpressCustomSetup_2.png){:class="img-responsive" width="50%" }
 
 To use Xtract IS for Azure via the Express Custom Setup, a valid license file is required.
 The Express Custom Setup installs a specific version of Xtract IS for Azure. For information on the currently used version, see [Microsoft Documentation: Installing licensed components](https://docs.microsoft.com/en-us/azure/data-factory/how-to-configure-azure-ssis-ir-custom-setup#installing-licensed-components) or contact [Theobald Software](mailto:info@theobald-software.com).

@@ -29,7 +29,7 @@ When parameterizing the component using SSIS variables, the *Custom Properties* 
 
 The *Custom Properties* of the {{ tableCDC }} {{ component }} are displayed in the "Properties" window. 
 
-![tablecdc-properties](../../assets/images/xis/documentation/table-cdc/tablecdc-properties.png)
+![tablecdc-properties](../../assets/images/documentation/components/table-cdc/xis/tablecdc-properties.png)
 
 {% include "components/table/xis-properties.md" %}
 

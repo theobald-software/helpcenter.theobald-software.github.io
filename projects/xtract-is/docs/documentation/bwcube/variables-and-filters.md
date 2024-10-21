@@ -17,7 +17,7 @@ Depending on the type of BEx variable (single value, multiple value, interval or
 In the main window of the {{ component }}, click **Variables**. The window "Edit BW Query Cube Variables" opens.
 Variables can be edited and entered using the variable editor shown below. 
 
-![selections](../../assets/images/xis/documentation/bwcube/variables.png){:class="img-responsive"}
+![selections](../../assets/images/documentation/components/bwcube/xis/variables.png){:class="img-responsive"}
 
 #### Complex Selections
 If the query variable represents a complex selection, click **Edit** to open an additional menu. 
@@ -41,7 +41,7 @@ Each dimension of a BEx Query or an InfoCube offers the possibility to set a fil
 
 In the main window of the {{ component }}, click **Filter** next to a selected dimension. The window "Member Filter" opens. 
 
-![Query Filter](../../assets/images/xis/documentation/bwcube/filter.png){:class="img-responsive"}
+![Query Filter](../../assets/images/documentation/components/bwcube/xis/filter.png){:class="img-responsive"}
 
 #### Pre-Defined Values
 The window "Member Filter" displays a list of values that are defined in SAP.
