@@ -17,7 +17,7 @@ The following symlinks are required for building previews of the HelpCenters:
 | `[product name]/overrides/` | `mklink /D .icons ..\..\..\overrides\.icons` |
 | `[product name]/`            | `mklink /D includes ..\..\includes` |
 | `[product-name]/docs/assets/` | `mklink /D files ..\..\..\..\files` |
-| `[product-name]/docs/assets/images/` | `mklink /D images ..\..\..\..\images` |
+| `[product-name]/docs/assets/` | `mklink /D images ..\..\..\..\images` |
 
 
 Make sure to correctly count the number of folders to jump up the file tree (each number represents the amount of "..\" within the symlink).
