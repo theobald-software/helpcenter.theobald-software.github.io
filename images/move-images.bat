@@ -1,23 +1,16 @@
 @echo off
 setlocal enabledelayedexpansion
 
-:: Loop through all PNG files (adjust the extension if necessary)
-for /r %%f in (xfa-*.png) do (
-    :: Get the directory where the file is located
-    set "dir=%%~dpf"
+:: Loop through all files starting with '-' in the current folder and subfolders (adjust extensions if necessary)
+for /r %%f in (-*.png -*.jpg -*.gif -*.txt -*.pdf) do (
     :: Get the filename without the path
     set "filename=%%~nxf"
-    :: Remove the 'xu-' prefix from the filename
-    set "newfilename=!filename:~3!"
+    :: Remove the '-' prefix from the filename
+    set "newfilename=!filename:~1!"
     
-    :: Create a new 'xu' subfolder in the current file's directory
-    if not exist "%%~dpf\xfa\" (
-        mkdir "%%~dpf\xfa"
-    )
-
-    :: Move the file into the 'xu' folder and rename it
-    move "%%f" "%%~dpf\xfa\!newfilename!"
+    :: Rename the file by removing the '-' prefix
+    ren "%%f" "!newfilename!"
 )
 
-echo All xfa- files have been moved to xfa subfolders and renamed.
+echo All files starting with '-' have been renamed.
 pause
