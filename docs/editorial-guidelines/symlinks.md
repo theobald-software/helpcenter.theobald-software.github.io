@@ -17,9 +17,7 @@ The following symlinks are required for building previews of the HelpCenters:
 | `[product name]/overrides/` | `mklink /D .icons ..\..\..\overrides\.icons` |
 | `[product name]/`            | `mklink /D includes ..\..\includes` |
 | `[product-name]/docs/assets/` | `mklink /D files ..\..\..\..\files` |
-| `[product-name]/docs/assets/images/` | `mklink /D articles ..\..\..\..\..\images\articles` |
-| `[product-name]/docs/assets/images/` | `mklink /D documentation ..\..\..\..\..\images\documentation` |
-| `[product-name]/docs/assets/images/` | `mklink /D logos ..\..\..\..\..\images\logos` |
+| `[product-name]/docs/assets/images/` | `mklink /D images ..\..\..\..\images` |
 
 
 Make sure to correctly count the number of folders to jump up the file tree (each number represents the amount of "..\" within the symlink).
@@ -53,12 +51,8 @@ The following folders in the HelpCenter repository are used as targets for symli
 
 - `helpcenter.theobald-software.github.io\files` 
 	- contains downloadable files
-- `helpcenter.theobald-software.github.io\images\articles`
-	- contains images for KB articles
-- `helpcenter.theobald-software.github.io\images\documentation`
-	- contains images for user documentation
-- `helpcenter.theobald-software.github.io\images\logos` 
-	- contains custom logos
+- `helpcenter.theobald-software.github.io\images\`
+	- contains images for all products
 - `helpcenter.theobald-software.github.io\includes` 
 	- contains .md files for articles and user documentation (for local previews)
 - `helpcenter.theobald-software.github.io\overrides\.icons` 

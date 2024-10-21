@@ -513,10 +513,9 @@ The folder contains the following subfolders:
 
 | subfolder|  content     | 
 |----------|:-------------|
-| `[product-name]`|  images used in a specific product |   
 | `articles` |  images for general knowledge base articles, e.g., about SAP | 
 | `logos`|  product and component logos |  
-| `components`|  images used by Xtract components, e.g., Table, BWCube, etc. | 
+| `documentation`|  images used in the user documentation | 
 
 Open the correct folder and add an image or a .gif animation.
 Note the image path as images are referenced as {==relative links==}.
