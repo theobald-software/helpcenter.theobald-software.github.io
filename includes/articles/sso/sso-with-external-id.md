@@ -26,7 +26,7 @@ For more information on PSE, see [SAP Help: Creating PSEs and Maintaining the PS
 SSO with External ID uses an X.509 certificate & PSE to create a trust relationship between the SAP application server and the service account that runs {{ productName }}.
 This allows {{ productName }} to impersonate any SAP user.
 
-![sap-external-id](../assets/images/articles/sso/{{ abbr }}-sso-with-external-id.png){:class="img-responsive" width="700px"}
+![sap-external-id](../assets/images/articles/sso/{{ abbr }}/sso-with-external-id.png){:class="img-responsive" width="700px"}
 
 1. Users authenticate themselves against {{ productName }} via Active Directory (Kerberos) and request data from SAP.
 2. {{ productName }} opens an RFC connection via SNC and uses PSE & External ID for authentication.

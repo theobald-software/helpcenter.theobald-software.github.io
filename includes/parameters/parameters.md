@@ -27,7 +27,7 @@ There are two types of custom runtime parameters:
 
 Most {{ components }} offer an *Edit runtime parameters* menu that allows users to create custom runtime parameters.
 
-![edit-runtime-parameters](../../assets/images/documentation/components/bwcube/{{ abbr }}-open-edit-runtime-parameters.png)
+![edit-runtime-parameters](../../assets/images/documentation/components/bwcube/{{ abbr }}/open-edit-runtime-parameters.png)
 
 Once runtime parameters are available, a switch is added to all input fields that support runtime parameters.
 The switch allows users to switch between a static input value (:runtime-parameters-static:) and an existing runtime parameter (:runtime-parameters-dynamic:), e.g., *Parameter0*.

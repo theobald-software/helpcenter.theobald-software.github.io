@@ -21,7 +21,7 @@ Consult with your SAP Basis team for more information.
 ### Process of Authentication
 
 The following graphic illustrates the process of calling an extraction with SSO via Ticket Issuer:<br>
-![SSO-with-Logon-Ticket1](../assets/images/articles/sso/{{ abbr }}-SSO-with-Logon-Ticket.png){:class="img-responsive"}
+![SSO-with-Logon-Ticket1](../assets/images/articles/sso/{{ abbr }}/SSO-with-Logon-Ticket.png){:class="img-responsive"}
 
 1. The BI tool user starts an extraction by calling the {{ Abbr }} web service. 
 They authenticate against the {{ Abbr }} web service with their Active Directory identity, using HTTPS and SPNEGO.<br>

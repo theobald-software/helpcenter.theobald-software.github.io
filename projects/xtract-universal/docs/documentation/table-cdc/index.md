@@ -19,7 +19,7 @@ Run the extraction for the first time to create a log table in SAP that records 
 
 1. Select the extraction in the main window of the Designer. 
 2. Click **[:material-bullseye: Destination]** to assign the destination where you want to write data to :number-1:.<br> 
-![Table-CDC-Extraction](../../assets/images/documentation/components/table-cdc/{{ abbr }}-table-cdc-extraction.png){:class="img-responsive"}
+![Table-CDC-Extraction](../../assets/images/documentation/components/table-cdc/{{ abbr }}/table-cdc-extraction.png){:class="img-responsive"}
 3. Click **[:designer-run:Run]** :number-2:. The window "Run Extraction" opens.
 4. Click **[Run]** :number-3: to run the extraction.<br>
 ![Table-CDC-Run](../../assets/images/documentation/components/table-cdc/xu-table-cdc-run.png){:class="img-responsive"}

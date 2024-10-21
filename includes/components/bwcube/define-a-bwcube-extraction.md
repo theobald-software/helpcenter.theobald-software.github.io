@@ -2,7 +2,7 @@
 ### Look Up a BW Cube or Query
 
 1. In the main window of the {{ component }}, click **[:magnifying-glass:]**. The window “Cube and Query Lookup” opens.<br>
-![Look-Up-Cube](../../assets/images/documentation/components/bwcube/{{ abbr }}-bwcube_main-window_add.png){:class="img-responsive"}
+![Look-Up-Cube](../../assets/images/documentation/components/bwcube/{{ abbr }}/bwcube_main-window_add.png){:class="img-responsive"}
 2. Select the *Extractor*, *Datasource Type* and *Extraction Settings* of the object :number-1:.<br>
 ![Look-Up-Cube](../../assets/images/documentation/components/bwcube/bwcube_look-up.png){:class="img-responsive"} 
 

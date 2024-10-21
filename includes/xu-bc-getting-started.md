@@ -1,7 +1,7 @@
 
 ### Installation
 
-![Designer-Login](assets/images/getting-started/{{ abbr }}-Designer-login.png){:class="img-responsive" align=right width="380px"}
+![Designer-Login](assets/images/getting-started/{{ abbr }}/Designer-login.png){:class="img-responsive" align=right width="380px"}
 
 1. [Download](https://theobald-software.com/en/download-trial/) a 30 day trial version of {{ productName }}.
 2. Run the {{ productName }} executable ({{ setup }}Setup.exe) to install the [{{ productName }} Designer and the {{ productName }} Server](documentation/introduction.md/#software-architecture).
@@ -16,7 +16,7 @@ For more information, see [Setup](documentation/setup/index.md).
 Before connecting to SAP for the first time, set up an SAP dialog user with the necessary [SAP user rights](documentation/setup-in-sap/sap-authority-objects.md/#general-authorization-objects).
 
 1. In the main window of the Designer, click **[:material-plus-thick:New]**. The window "Change Source" opens.<br>
-![new](assets/images/getting-started/{{ abbr }}-new.png)
+![new](assets/images/getting-started/{{ abbr }}/new.png)
 2. Enter a name for the SAP connection in the field **Name**, e.g., *s4hana*, *bw*, etc.
 3. In the *General* tab, enter the system details of your SAP system.
 Input values for the SAP connection can be found in the *Properties* of the SAP Logon Pad or they can be requested from the SAP Basis team.<br>
@@ -39,7 +39,7 @@ Follow the steps below to create a new extraction:
 
 1. In the main window of the Designer, click **[:material-plus-thick:New]**. The window "Create Extraction" opens.
 2. Select an SAP Connection from the drop-down menu in **Source** :number-1:.<br>
-![Create-Extraction](assets/images/getting-started/{{ abbr }}-Create-Extraction.png)
+![Create-Extraction](assets/images/getting-started/{{ abbr }}/Create-Extraction.png)
 3. Enter a name for the extraction :number-2:.
 4. Select one of the following extraction types :number-3::
 
@@ -65,7 +65,7 @@ Follow the steps below to extract customer master data from the SAP table KNA1:
 
 1. [Create an extraction](#create-an-extraction) that uses the {{ table }} {{ component }}.
 2. In the main window of the {{ component }}, click **[:material-plus-thick:Add]** to look up an SAP table. The window "Table Lookup" opens.<br>
-![table_main-window_add](assets/images/documentation/components/table/{{ abbr }}-table_main-window_add.png)
+![table_main-window_add](assets/images/{{ abbr }}/documentation/table/table_main-window_add.png)
 3. In the field **Table Name**, enter the name of the table to extract (KNA1) :number-1:. Use wildcards (*) if needed.<br>
 ![table_look-up](assets/images/documentation/components/table/table_look-up.png)
 4. Click **[:magnifying-glass:]** :number-2:. Search results are displayed.
@@ -83,7 +83,7 @@ Extractions can be run directly in the {{ productName }} Designer{% if page.meta
 Follow the steps below to testrun your extraction in the Designer:
 
 1. In the main window of the Designer, select an extraction :number-1: and click **[:designer-run:Run]** :number-2:. The window "Run Extraction" opens.
-![Run-Extraction](assets/images/getting-started/{{ abbr }}-Run-Extraction.png)
+![Run-Extraction](assets/images/getting-started/{{ abbr }}/Run-Extraction.png)
 2. Click {{ runBtn }} :number-3: to execute the extraction.{% if page.meta.product == "board-connector" %}
 If the extraction runs successfully, the extracted data is displayed in your browser. {% else %}
 The status in the subsection *General Info* indicates if the extraction finished successfully.

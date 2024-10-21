@@ -2,7 +2,7 @@
 
 ### Look up an SAP Table
 1. In the main window of the {{ component }}, click **[:material-plus-thick:Add]** to add a table. The window "Table Lookup" opens.<br>
-![table_main-window_add](../../assets/images/documentation/components/table/{{ abbr }}-table_main-window_add.png){:class="img-responsive"}
+![table_main-window_add](../../assets/images/documentation/components/table/{{ abbr }}/table_main-window_add.png){:class="img-responsive"}
 2. In the field **Table Name**, enter the name of the table to extract :number-1:. Use wildcards (*) if needed.<br>
 ![Look-Up-Table](../../assets/images/documentation/components/table/table_look-up.png){:class="img-responsive"}
 3. Click **[:magnifying-glass:]** :number-2:. Search results are displayed.
@@ -16,7 +16,7 @@ The application returns to the main window of the {{ component }}.
 The {{ table }} {{ component }} offers the following options for table extractions:
 
 1. Select the columns you want to extract. By default all columns are selected. Deselect the columns you do not want to extract.<br>
-![Table-Form](../../assets/images/documentation/components/table/{{ abbr }}-table_fields_filter.png){:class="img-responsive"}
+![Table-Form](../../assets/images/documentation/components/table/{{ abbr }}/table_fields_filter.png){:class="img-responsive"}
 2. Optional: Define a [WHERE clause](where-clause.md) or a [HAVING clause](having-clause.md) to filter table records. By default all data is extracted.
 3. Optional: Join two or more tables and extract the result of the join. For more information, see [Table Joins](table-join.md).
 4. Click {{ previewBtn }} to display a live preview of the first 100 records. 
