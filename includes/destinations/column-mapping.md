@@ -18,7 +18,7 @@ This can be the case when extracting data from two or more extractions into the 
 	- *Not Mapped* defines whether or not columns are mapped to the destination columns.
 	- *Source Columns* defines which SAP column is mapped to a destination column.
 
-	![Column-Mapping](../../assets/images/xu/documentation/destinations/flat-file-csv/column-mapping.png){:class="img-responsive"}
+	![Column-Mapping](../../assets/images/documentation/destinations/flat-file-csv/column-mapping.png){:class="img-responsive"}
 4.	1. If the column names of the extraction and the names of the destination columns match, click **[Auto map by name]**.<br>
 	2. If the column names do not match, assign columns manually by selecting the respective SAP column from the dropdown menu under *Source Columns*.<br>
 	3. If a column does not have a counterpart or is not supposed to be appended, activate the checkbox under *Not Mapped*.<br>

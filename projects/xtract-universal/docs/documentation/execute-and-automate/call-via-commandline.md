@@ -98,7 +98,7 @@ xu.exe -f <path to the location and name of the file>
 ```
 Example: `xu.exe -f "C:\temp\[name of the password file]"`.<br>
 The Windows user needs access rights to the file location. You don't have to create this documents in advance.<br>
-![Windows Security Settings](../../assets/images/xu/documentation/automation/security_settings_windows_folder.png){:class="img-responsive"}
+![Windows Security Settings](../../assets/images/documentation/automation/xu/security_settings_windows_folder.png){:class="img-responsive"}
 2. Enter a valid password as requested by the cmd screen. It must consist of at least 8 characters.
 3. Pass a user name and the path to the password file as arguments in the command line tool. 
 Example: 
@@ -106,7 +106,7 @@ Example:
 xu.exe -s todd.theobald.local -p 8165 -e -n MSEG -u Alice -b "C:\temp\password_custom_user"
 ```
 4. Optional: When scheduling an extraction, make sure that the user of the task has access rights to the password file.<br>
-![Windows Security Settings](../../assets/images/xu/documentation/automation/security_settings_windows_task_scheduler.png){:class="img-responsive"}
+![Windows Security Settings](../../assets/images/documentation/automation/xu/security_settings_windows_task_scheduler.png){:class="img-responsive"}
 
 For more information use the command `xu.exe -h`.
 

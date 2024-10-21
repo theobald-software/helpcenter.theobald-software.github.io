@@ -2,7 +2,7 @@
 ### Look Up a Hierarchy
 
 1. In the main window of the component, click **[:magnifying-glass:]**. The window “Hierarchy Lookup” opens.<br>
-![hierarchy_main-window_add](../../assets/images/{{ abbr }}/documentation/hierarchy/hierarchy_main-window_add.png){:class="img-responsive"}
+![hierarchy_main-window_add](../../assets/images/documentation/components/hierarchy/{{ abbr }}/hierarchy_main-window_add.png){:class="img-responsive"}
 2. Enter the name of a Hierarchy in the field **Hierarchy Name** or the name of an InfoObject in the field **InfoObject** :number-1:.
 Use wildcards (*) if needed. <br>
 ![Look Up Hierarchy](../../assets/images/documentation/components/hierarchy/hierarchy_look-up.png){:class="img-responsive"}
@@ -21,7 +21,7 @@ The {{ hierarchy }} {{ component }} supports the following output formats:
 	- [Natural Format](output-format.md/#natural-format)
 	- [ParentChildWithNodeNames Format](output-format.md/#parentchildwithnodenames-format)
 	
-	![Hierarchy-settings](../../assets/images/{{ abbr }}/documentation/hierarchy/hierarchy-settings.png){:class="img-responsive"} 
+	![Hierarchy-settings](../../assets/images/documentation/components/hierarchy/{{ abbr }}/hierarchy-settings.png){:class="img-responsive"} 
 2. Click {{ previewBtn }} :number-4: to display a live preview of the first 100 records. 
 {% if page.meta.product == "xtract-universal" or page.meta.product == "board-connector" %}3. Check the [General Settings](general-settings.md) before running the {{ extraction }}.. 
 4. Optional: The default value for **Date To** is *99991231*. To change the value, override the *dateTo* [extraction parameter](../parameters/extraction-parameters.md) when calling the extraction. {% endif %}

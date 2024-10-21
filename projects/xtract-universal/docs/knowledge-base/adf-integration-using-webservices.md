@@ -39,13 +39,13 @@ The depicted scenario uses two ADF pipelines to run extractions from ADF:
 Follow the steps below to create a child pipeline that extracts data from SAP:
 
 1. Run an extraction using a web activity :number-1:, see [Web-API - Run Extractions](../web-api.md/#run-extractions).<br>
-![XU_ADF_global_parameter](../assets/images/xu/articles/xu_ADF_2_Child_pipeline.png)
+![XU_ADF_global_parameter](../assets/images/articles/xu/xu_ADF_2_Child_pipeline.png)
 2. Query the extraction status in regular intervals using a web activity :number-2:, see [Web-API - Get Status of an Extraction](../web-api.md/#get-status-of-an-extraction). <br>
-![XU_ADF_global_parameter](../assets/images/xu/articles/xu_ADF_2_Child_pipeline_Check_Status.png)
+![XU_ADF_global_parameter](../assets/images/articles/xu/xu_ADF_2_Child_pipeline_Check_Status.png)
 3. Add a condition that checks the extraction status :number-3: and executes follow up activities in case the extractions fails.<br>
 Example: When the extraction fails, use a web activity to query the extraction log, see [Web-API - Get Extraction Logs](../web-api.md/#get-extraction-logs), and write the logs to an Azure Blob Storage account. 
 A follow up event can then be triggered by the *Storage event*, e.g., sending a notification email.<br>
-![XU_ADF_global_parameter](../assets/images/xu/articles/xu_ADF_2_Child_pipeline_write_Log.png)
+![XU_ADF_global_parameter](../assets/images/articles/xu/xu_ADF_2_Child_pipeline_write_Log.png)
 
 The pipeline functions as a standalone solution. It can be run in debug mode or can be triggered via a scheduler. 
 
@@ -55,10 +55,10 @@ Follow the steps below to create a master pipeline that executes the child pipel
 This allows automatic iteration through all extractions defined in {{ productName }}. 
 
 1. Query a list of extractions :number-1: using a web activity, see [Web-API - Get Extraction Details](../web-api.md/#get-extraction-details).<br>
-![XU_ADF_global_parameter](../assets/images/xu/articles/xu_ADF_2_Master_pipeline.png)
+![XU_ADF_global_parameter](../assets/images/articles/xu/xu_ADF_2_Master_pipeline.png)
 2. Loop over the list of extractions :number-2:. 
 3. In the loop, pass the name of the current extraction to the *Child pipeline* and execute the *Child pipeline* for that extraction.<br>
-![XU_ADF_global_parameter](../assets/images/xu/articles/xu_ADF_2_Master_pipeline_ForEachLoop.png)
+![XU_ADF_global_parameter](../assets/images/articles/xu/xu_ADF_2_Master_pipeline_ForEachLoop.png)
 
 
 ### Variables and Parameters

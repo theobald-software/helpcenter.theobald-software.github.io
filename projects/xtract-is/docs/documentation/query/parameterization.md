@@ -26,7 +26,7 @@ When parameterizing the component using SSIS variables, the *Custom Properties* 
 
 The *Custom Properties* of the {{ query }} {{ component }} are displayed in the "Properties" window. 
 
-![query-properties](../../assets/images/xis/documentation/query/query-properties.png)
+![query-properties](../../assets/images/documentation/components/query/xis/query-properties.png)
 
 List of the relevant *Custom Properties*:
 

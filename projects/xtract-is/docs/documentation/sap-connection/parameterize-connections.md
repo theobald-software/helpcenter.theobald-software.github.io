@@ -12,11 +12,11 @@ Follow the steps below to set up project parameters for Connection Manager prope
 
 1. Right-click an XTRACT Connection Manager and select **Parameterize...** from the context menu. The window "Parameterize" opens.
 2. Select the property you want to parameterize.<br>
-![connection-manager-parameterize](../../assets/images/xis/documentation/sap-connection/connection-manager-parameterize.png){:class="img-responsive"}
+![connection-manager-parameterize](../../assets/images/documentation/sap-connection/xis/connection-manager-parameterize.png){:class="img-responsive"}
 3. Select the option **Use existing parameter** to assign a parameter to the selected property or select the option **Create New Parameter** to create a new parameter.
 4. In the section *Scope* select **Project** to create a project parameter. 
 5. Click **[OK]**. The new project parameter is now available under *Project.params* in the "Solution Explorer".<br>
-![connection-manager-project-params](../../assets/images/xis/documentation/sap-connection/connection-manager-project-params.png){:class="img-responsive"}
+![connection-manager-project-params](../../assets/images/documentation/sap-connection/xis/connection-manager-project-params.png){:class="img-responsive"}
 
 For more information on package and project parameters, see [Microsoft Documentation: Integration Services (SSIS) Package and Project Parameters](https://learn.microsoft.com/en-us/sql/integration-services/integration-services-ssis-package-and-project-parameters?view=sql-server-ver16).
 
@@ -60,10 +60,10 @@ Follow the steps below to set up a sensitive environment variable for an XTRACT 
 2. Deploy the project to an SSISDB catalog. 
 3. Create an environment in the SSISDB catalog. 
 4. Create a sensitive variable in the environment properties.<br>
-![XIS_sensitive_variable_1](../../assets/images/xis/documentation/sap-connection/XIS_sensitive_variable_1.png){:class="img-responsive" }
+![XIS_sensitive_variable_1](../../assets/images/documentation/sap-connection/xis/XIS_sensitive_variable_1.png){:class="img-responsive" }
 5. Open the configuration menu of the project. The project parameters from step 1 are available in the parameter list.
 6. Click **[...]** to assign a sensitive environment variable to a project parameter.<br>
-![XIS_sensitive_variable_1](../../assets/images/xis/documentation/sap-connection/XIS_sensitive_variable_2.png){:class="img-responsive" }
+![XIS_sensitive_variable_1](../../assets/images/documentation/sap-connection/xis/XIS_sensitive_variable_2.png){:class="img-responsive" }
 7. Execute a package using the environment.
 
 *****

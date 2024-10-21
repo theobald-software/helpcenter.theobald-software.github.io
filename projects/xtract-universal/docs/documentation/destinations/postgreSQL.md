@@ -26,7 +26,7 @@ If necessary, install the newest version of Xtract Universal.
 
 {% include "destinations/create-destination.md" %}
 
-![Destination-Details](../../assets/images/xu/documentation/destinations/postgres/destination-details.png){:class="img-responsive"}
+![Destination-Details](../../assets/images/documentation/destinations/postgres/destination-details.png){:class="img-responsive"}
 
 
 #### Server Name
@@ -80,7 +80,7 @@ Test the database connection.
 
 {% include "destinations/assign-destination.md" %}
 
-![Destination-settings](../../assets/images/xu/documentation/destinations/postgres/destination-settings.png){:class="img-responsive"}
+![Destination-settings](../../assets/images/documentation/destinations/postgres/destination-settings.png){:class="img-responsive"}
 
 {% include "destinations/file-name.md" %}
 

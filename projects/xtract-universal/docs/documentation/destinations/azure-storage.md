@@ -24,7 +24,7 @@ For more information, see [Microsoft Documentation: Azure storage account overvi
 {% include "destinations/create-destination.md" %}
 
 
-![Destination-Details](../../assets/images/xu/documentation/destinations/azure-storage/destination-details_1.png){:class="img-responsive"}
+![Destination-Details](../../assets/images/documentation/destinations/azure-storage/destination-details_1.png){:class="img-responsive"}
 
 
 ### Connection Type
@@ -103,11 +103,11 @@ Register the app as *Public client/native (mobile & desktop)*.
 This can be done in the Azure AD app registration via **Manage > Authentication > Add a platform > Mobile and desktop applications**. 
 Copy and paste the URL into in the *Custom redirect URI* field :number-2: and click **[Configure]** :number-3:. 
 In the *Authentication* screen, click **[Save]** to confirm your input.
-![xu-azure-blob-con-1](../../assets/images/xu/documentation/destinations/azure-storage/xu-azure-blob-con_1.png){:class="img-responsive"}
+![xu-azure-blob-con-1](../../assets/images/documentation/destinations/azure-storage/xu-azure-blob-con_1.png){:class="img-responsive"}
 5. In the Azure Portal, open your Azure Storage account.
 6. Assign access rights to the Azure Storage as described in the [Microsoft documentation](https://docs.microsoft.com/en-us/azure/storage/common/storage-auth-aad-rbac-portal#assign-rbac-roles-using-the-azure-portal). 
 The required RBAC role is *Storage Blob Data Contributor*.<br>
-![xu-azure-blob-con-2](../../assets/images/xu/documentation/destinations/azure-storage/xu-azure-blob-con_2.png){:class="img-responsive"}
+![xu-azure-blob-con-2](../../assets/images/documentation/destinations/azure-storage/xu-azure-blob-con_2.png){:class="img-responsive"}
 -->
 	
 ### Access Key Parameters / SAS Parameters
@@ -124,7 +124,7 @@ The input fields in the subsection *Access key parameters* / *SAS parameters* va
 	
 	!!! tip
 		You can copy the storage account name and access key from the [Azure Portal](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?toc=/azure/storage/blobs/toc.json#view-access-keys-and-connection-string).<br>
-		![xu-azure-blob-con](../../assets/images/xu/documentation/destinations/azure-storage/xu-azure-blob-con.png){:class="img-responsive"}
+		![xu-azure-blob-con](../../assets/images/documentation/destinations/azure-storage/xu-azure-blob-con.png){:class="img-responsive"}
 
 	#### Connect
 	Click **[Connect]** to establish a connection to the storage account. 
@@ -143,7 +143,7 @@ The input fields in the subsection *Access key parameters* / *SAS parameters* va
 
 	!!! tip
 		You can copy the tenant ID and client ID in the [Azure portal](https://portal.azure.com/).<br>
-		![xu-azure-blob-con-3](../../assets/images/xu/documentation/destinations/azure-storage/xu-azure-blob-con_3.png){:class="img-responsive"}
+		![xu-azure-blob-con-3](../../assets/images/documentation/destinations/azure-storage/xu-azure-blob-con_3.png){:class="img-responsive"}
 	
 	#### Connect
 	
@@ -152,7 +152,7 @@ The input fields in the subsection *Access key parameters* / *SAS parameters* va
 	The "Permissions requested" window lists the requested permissions, see [Knowledge Base Article: Authentication via Microsoft Entra ID](../../knowledge-base/authentication-via-entra-id-with-azure-storage.md). 
 	Click **[Accept]**. If the connection is successful, a "Connection successful" info window opens. <br>
 
-	![xu-azure-blob-con-4](../../assets/images/xu/documentation/destinations/azure-storage/xu-azure-blob-con_4.png){:class="img-responsive"}
+	![xu-azure-blob-con-4](../../assets/images/documentation/destinations/azure-storage/xu-azure-blob-con_4.png){:class="img-responsive"}
 
 === ":octicons-person-16: SAS (Account)"
 
@@ -218,7 +218,7 @@ Subfolders are supported and can be defined using the following syntax: `[folder
 
 Select the required file format. You can choose between *CSV*, *JSON* and *Parquet*.
 
-![Destination-Details](../../assets/images/xu/documentation/destinations/azure-storage/destination-details_2.png){:class="img-responsive"}
+![Destination-Details](../../assets/images/documentation/destinations/azure-storage/destination-details_2.png){:class="img-responsive"}
 
 #### CVS Settings
 
@@ -254,7 +254,7 @@ See also [Microsoft documentation](https://docs.microsoft.com/en-us/azure/archit
 
 {% include "destinations/assign-destination.md" %}
 
-![Destination-settings](../../assets/images/xu/documentation/destinations/azure-storage/destination-settings.png){:class="img-responsive"}
+![Destination-settings](../../assets/images/documentation/destinations/azure-storage/destination-settings.png){:class="img-responsive"}
 
 {% include "destinations/file-name.md" %}
 

@@ -41,5 +41,5 @@ Ihe depicted example log belongs to an extraction that writes data into an SQL d
 
 :number-9: Extraction is completed.
 
-![logging](../assets/images/xu/documentation/logs/logging-extract-detail.png)
+![logging](../assets/images/documentation/logs/logging-extract-detail.png)
 

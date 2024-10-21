@@ -14,7 +14,7 @@ There are no additional installations needed to use Exasol database destination.
 
 {% include "destinations/create-destination.md" %}
 
-![Destination-Details](../../assets/images/xu/documentation/destinations/exasol/destination-details.png){:class="img-responsive"}
+![Destination-Details](../../assets/images/documentation/destinations/exasol/destination-details.png){:class="img-responsive"}
 
 #### Connection string
 Enter the name or IP of the DB2 server and the port number. 
@@ -30,7 +30,7 @@ Checks the database connection.
 
 {% include "destinations/assign-destination.md" %}
 
-![Destination-settings](../../assets/images/xu/documentation/destinations/exasol/destination-settings.png){:class="img-responsive"}
+![Destination-settings](../../assets/images/documentation/destinations/exasol/destination-settings.png){:class="img-responsive"}
 
 
 {% include "destinations/file-name.md" %}

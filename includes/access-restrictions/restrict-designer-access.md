@@ -49,7 +49,7 @@ Access control can be performed at the SAP source level. <br>
 By default, the Designer access restrictions also apply to extractions and sources.
 
 1. Open **Server > Manage Sources** from the main window. The window "Manage Sources" opens.<br>
-![Source Settings](../../assets/images/{{ abbr }}/documentation/sap-connection/open-manage-sources.png)
+![Source Settings](../../assets/images/documentation/sap-connection/{{ abbr }}/open-manage-sources.png)
 2. Click **[:pen-button:]** to edit an existing connection. The window "Change Source" opens.
 3. In the tab *Access Control*, add or remove existing users and assign access rights to the users.<br>
 ![Server-Settings_](../../assets/images/documentation/access-restriction/sap_source-accesscontrol.png){:class="img-responsive"}

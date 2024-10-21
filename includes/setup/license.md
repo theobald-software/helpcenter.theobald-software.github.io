@@ -6,7 +6,7 @@
 
 1. Execute the `XtractLicenseManager.exe` file in the installation directory of Xtract IS, e.g., `{{ installationDir }}`. <br>
 The license manager opens. <br>
-![XIS_License_Manager](../../assets/images/xis/documentation/setup/xis_license-manager.png){:class="img-responsive" width="400px"}
+![XIS_License_Manager](../../assets/images/documentation/setup/xis/xis_license-manager.png){:class="img-responsive" width="400px"}
 2. Click **[Install]**. The window "Install Xtract License" opens.
 3. Locate and select the "XtractISLicense.json" file that is provided in the [Customer Portal - My Theobald Software](https://my.theobald-software.com).
 
@@ -17,7 +17,7 @@ The license manager opens. <br>
 
 Place the "{{ setup }}License.json" file that is provided in the [Customer Portal - My Theobald Software](https://my.theobald-software.com) into the installation directory on the server, e.g., `{{ installationDir }}`.
 
-![license_Folder](../../assets/images/{{ abbr }}/documentation/setup/License_Folder.png ){:class="img-responsive"}
+![license_Folder](../../assets/images/documentation/setup/{{ abbr }}/License_Folder.png ){:class="img-responsive"}
 
 {% if page.meta.product == "xtract-for-alteryx" %}
 

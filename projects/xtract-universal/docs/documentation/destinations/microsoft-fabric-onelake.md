@@ -13,18 +13,18 @@ The {{ page.meta.title }} destination enables users to load SAP data to a Micros
 The {{ page.meta.title }} destination uses [Microsoft Entra ID (formerly Azure Active Directory)](https://www.microsoft.com/en-us/security/business/identity-access/microsoft-entra-id) with OAuth 2.0 for authentication.
 Make sure the authentication uses the following settings:
 - Register Microsoft Fabric OneLake as a *Mobile and desktop application*, see [Microsoft Documentation: Configure platform settings](https://learn.microsoft.com/en-us/entra/identity-platform/quickstart-register-app?tabs=certificate#configure-platform-settings):<br>
-![authentication](../../assets/images/xu/documentation/destinations/fabric/auth.png)
+![authentication](../../assets/images/documentation/destinations/fabric/auth.png)
 - Add the following API permissions:
 	- Azure Storage - *user impersonation*
 	- Microsoft Graph - *User.Read*
 	
 	For more information, see [Microsoft Documentation: Add permissions to your web API](https://learn.microsoft.com/en-us/entra/identity-platform/quickstart-configure-app-access-web-apis#add-permissions-to-access-your-web-api).<br>
-	![API permissions](../../assets/images/xu/documentation/destinations/fabric/api-permissions.png)
+	![API permissions](../../assets/images/documentation/destinations/fabric/api-permissions.png)
 	
 
 {% include "destinations/create-destination.md" %}
 
-![Destination-Details](../../assets/images/xu/documentation/destinations/fabric/destination-details.png){:class="img-responsive"}
+![Destination-Details](../../assets/images/documentation/destinations/fabric/destination-details.png){:class="img-responsive"}
 
 ### Authentication
 
@@ -39,7 +39,7 @@ Enter the Application (client) ID of the registered app.
 
 !!! tip
 	You can copy the tenant ID and client ID in the [Microsoft Entra admin center](https://entra.microsoft.com/#home) or the [Azure portal](https://portal.azure.com/), where the app is registered.<br>
-	![xu-azure-blob-con-3](../../assets/images/xu/documentation/destinations/fabric/entraID.png){:class="img-responsive"}
+	![xu-azure-blob-con-3](../../assets/images/documentation/destinations/fabric/entraID.png){:class="img-responsive"}
 
 #### Authenticatte using Entra ID
 	
@@ -47,7 +47,7 @@ Click **[Authenticatte using Entra ID]** to establish a connection to the storag
 The "Permissions requested" window lists the requested permissions, see [Knowledge Base Article: Authentication via Microsoft Entra ID](../../knowledge-base/authentication-via-entra-id-with-azure-storage.md). 
 Click **[Accept]**. If the connection is successful, a "Connection successful" info window opens. <br>
 
-![xu-entraID](../../assets/images/xu/documentation/destinations/azure-storage/xu-azure-blob-con_4.png){:class="img-responsive"}
+![xu-entraID](../../assets/images/documentation/destinations/azure-storage/xu-azure-blob-con_4.png){:class="img-responsive"}
 
 ### Files Folder
 
@@ -63,14 +63,14 @@ Example:<br>
 !!! tip
 	You can copy the URL in the [Microsoft Fabric portal](https://app.fabric.microsoft.com/home) using the properties of a OneLake folder:
 	
-	![xu-onelake-url](../../assets/images/xu/documentation/destinations/fabric/url.png)
+	![xu-onelake-url](../../assets/images/documentation/destinations/fabric/url.png)
 
 
 ### File Format
 
 Select the required file format. You can choose between *CSV*, *JSON* and *Parquet*.
 
-![Destination-Details](../../assets/images/xu/documentation/destinations/fabric/destination-details_2.png){:class="img-responsive"}
+![Destination-Details](../../assets/images/documentation/destinations/fabric/destination-details_2.png){:class="img-responsive"}
 
 #### CVS Settings
 
@@ -99,7 +99,7 @@ Rollback applies to situations where extractions fail, not because of connection
 	
 {% include "destinations/assign-destination.md" %}
 
-![Destination-settings](../../assets/images/xu/documentation/destinations/fabric/destination-settings.png){:class="img-responsive"}
+![Destination-settings](../../assets/images/documentation/destinations/fabric/destination-settings.png){:class="img-responsive"}
 
 {% include "destinations/file-name.md" %}
 

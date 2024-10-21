@@ -27,7 +27,7 @@ which is why an SQL Server license is required, even if the SQL Server database 
 
 Xtract IS is licensed per Windows server on which SSIS packages are deployed and executed. 
 The following graphic shows on which workstations the installation of Xtract IS is required to have a valid license.   
-![client_Server_architecture_xis_final](../../assets/images/xis/documentation/setup/client_server_xis.png)<br>
+![client_Server_architecture_xis_final](../../assets/images/documentation/setup/xis/client_server_xis.png)<br>
 
 The same license file can be used on the local workstations to develop the SSIS packages.
 A trial license is automatically installed with the installation of Xtract IS. <br>

@@ -7,7 +7,7 @@ In this case, merging means changing a value of a field or inserting a new data 
 With a merge command, the updated value is written to the destination database table. 
 The merge command ensures delta processing: new records are inserted into the database and / or existing records are updated.
 
-![Update-Merge-Example-Data](../../assets/images/xu/documentation/destinations/ms-sql/merge_db_scheme.png){:class="img-responsive"}
+![Update-Merge-Example-Data](../../assets/images/documentation/destinations/ms-sql/merge_db_scheme.png){:class="img-responsive"}
 
 !!! tip 
 	Alternatively to merging, the data can be also updated by means of full load. 
@@ -37,7 +37,7 @@ Follow the steps below to set up the merge process in Xtract Universal:
 2. Click **[:designer-destination:Destination]**. The window "Destination Settings" opens.
 3. Make sure to assign {{ page.meta.title }} destination to the extraction. 
 4. Apply the following destination settings:<br>
-{% if page.meta.destination == "snowflake" %}![Merge-Makt](../../assets/images/xu/documentation/destinations/snowflake/destination_data_merge.png){:class="img-responsive"}{% else %}![Merge-Makt](../../assets/images/xu/documentation/destinations/ms-sql/destination_data_merge.png){:class="img-responsive"} {% endif %}
+{% if page.meta.destination == "snowflake" %}![Merge-Makt](../../assets/images/documentation/destinations/snowflake/destination_data_merge.png){:class="img-responsive"}{% else %}![Merge-Makt](../../assets/images/documentation/destinations/ms-sql/destination_data_merge.png){:class="img-responsive"} {% endif %}
 5. Click **[OK]** and [run the extraction](../execute-and-automate/run-an-extraction.md/#run-extractions-in-the-designer).
 
 More information about the updated fields can be found in the SQL statement.<br>

@@ -2,7 +2,7 @@
 ### Look Up a Table
 
 1. In the main window of the {{ component }}, click **[:magnifying-glass:]**. The window “Table Lookup” opens.<br>
-![Table-CDC](../../assets/images/{{ abbr }}/documentation/table-cdc/table-cdc.png){:class="img-responsive"}
+![Table-CDC](../../assets/images/documentation/components/table-cdc/{{ abbr }}/table-cdc.png){:class="img-responsive"}
 2. In the field **Table Name**, enter the name of the table to track and extract :number-1:. Use wildcards (*) if needed.<br>
 ![Look-Up-Table](../../assets/images/documentation/components/table/table_look-up.png){:class="img-responsive"}
 3. Click **[:magnifying-glass:]** :number-2:. Search results are displayed.

@@ -38,16 +38,16 @@ The logs can be viewed in the Windows Event Viewer.
 	xubatch.bat -n MAKT
 	```
 
-	![XU_batch](../assets/images/xu/articles/xu_batch_bat_screenshot.png){:class="img-responsive"}
+	![XU_batch](../assets/images/articles/xu/xu_batch_bat_screenshot.png){:class="img-responsive"}
 5. You can see the following event in the Event Viewer:
 
 	=== "Extraction is successful"
 
-		![event_viewer](../assets/images/xu/articles/event_viewer_result.png){:class="img-responsive"}
+		![event_viewer](../assets/images/articles/xu/event_viewer_result.png){:class="img-responsive"}
 
 	=== "Extraction returns an error"
 
-		![error_event_viewer](../assets/images/xu/articles/error_event_viewer.png){:class="img-responsive"}
+		![error_event_viewer](../assets/images/articles/xu/error_event_viewer.png){:class="img-responsive"}
 
 ***********
 #### Related Links

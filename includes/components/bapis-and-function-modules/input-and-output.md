@@ -13,7 +13,7 @@ Each Import, Export, Changings and Tables parameter can have one of the followin
 Import parameters represent the input values sent from the client to SAP. 
 In the tab **Imports** you can define import parameters that can be presented as scalar values :number-1: or structures :number-2:. 
 
-![import-parameters](../../assets/images/{{ abbr }}/documentation/bapi/import-parameters.png){:class="img-responsive"}
+![import-parameters](../../assets/images/documentation/components/bapi/{{ abbr }}/import-parameters.png){:class="img-responsive"}
 
 To use the filtering function, enter text in the headers of the columns **Name** and **Description**. <br>
 
@@ -55,7 +55,7 @@ In the tab **Export** you can select the items you want to add to the output of 
 Mark the checkbox in the output column to add an item to the output of the {{ component }}.
 {% if page.meta.product == "xtract-for-alteryx" %}The selected output is assigned to the [output anchor](index.md/#input-and-output-anchors) 'E' of the {{ bapi }} {{ component }}.{% endif %}
 
-![BAPI export parameters](../../assets/images/{{ abbr }}/documentation/bapi/export-parameters.png){:class="img-responsive"}
+![BAPI export parameters](../../assets/images/documentation/components/bapi/{{ abbr }}/export-parameters.png){:class="img-responsive"}
 
 To use the filtering function, enter text in the headers of the columns **Name** and **Description**. <br>
 
@@ -84,7 +84,7 @@ To use the filtering function, enter text in the headers of the columns **Name**
 - Activate the checkbox in the output column to add items to the output :number-2:.
 - Click **[:pen-button:]** to edit tables :number-3:.
 
-![BAPI table parameters](../../assets/images/{{ abbr }}/documentation/bapi/table-parameters.png){:class="img-responsive"}
+![BAPI table parameters](../../assets/images/documentation/components/bapi/{{ abbr }}/table-parameters.png){:class="img-responsive"}
 
 ### Access Metadata of Tables
 Click **[:glasses-button:]** to display the metadata of a table. The metadata includes the name and the data type of all fields. 
@@ -120,7 +120,7 @@ When using {{ variables }}, make sure the data type of the input matches the SAP
 When connecting tables to the {{ bapi }} {{ component }}, a data mapping is executed automatically. 
 To correctly map the data, the following requirements apply:
 
-![BAPI table mapping](../../assets/images/{{ abbr }}/documentation/bapi/ssis-write-xtractis-fuba.png){:class="img-responsive" align=left}
+![BAPI table mapping](../../assets/images/documentation/components/bapi/{{ abbr }}/ssis-write-xtractis-fuba.png){:class="img-responsive" align=left}
 
 - The column names of the input table must be the same as in the {{ bapi }} {{ component }}.
 - The data types in the input table must be the same as in the {{ bapi }} {{ component }}.
@@ -144,10 +144,10 @@ Follow the steps below to pass tables to the {{ bapi }} {{ component }} at runti
 1. Define or load the input tables into your workflow. 
 2. Connect the input tables to the {{ bapi }} {{ component }} using the input anchor "I". <br>
 The number that is displayed in the connection arrow is used to identify tables in the {{ bapi }} {{ component }}.<br>
-![bapi-input-table2](../../assets/images/{{ abbr }}/documentation/bapi/bapi-input-table.png){:class="img-responsive" }
+![bapi-input-table2](../../assets/images/documentation/components/bapi/{{ abbr }}/bapi-input-table.png){:class="img-responsive" }
 3. Open the {{ bapi }} {{ component }} and navigate to the table you want to parameterize.
 4. Select an input table from the dropdown list. <br>
-![bapi-input-table](../../assets/images/{{ abbr }}/documentation/bapi/bapi-input-table2.png){:class="img-responsive" }
+![bapi-input-table](../../assets/images/documentation/components/bapi/{{ abbr }}/bapi-input-table2.png){:class="img-responsive" }
 
 To remove an input table from a structure, click **[:x-button:]**.
 

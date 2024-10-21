@@ -17,7 +17,7 @@ An {{ extraction }} is a combination of the following elements:
 - A connection to a destination / target environment (Board) 
 - A defined {{ component }} (e.g., {{ table }})
 
-![BC-Architecture](../assets/images/bc/documentation/Board.png){:class="img-responsive"}
+![BC-Architecture](../assets/images/documentation/introduction/bc/Board.png){:class="img-responsive"}
 
 ### Software Architecture 
 
@@ -29,7 +29,7 @@ When designing {{ extractions }} in the Designer, the user can create and modify
 During the execution phase, the user can execute the {{ extractions }} that were designed in the Designer. 
 The execution of the {{ extractions }} takes place on the server.
 
-![BC-Architecture](../assets/images/bc/documentation/Architecture.png){:class="img-responsive"}
+![BC-Architecture](../assets/images/documentation/introduction/bc/Architecture.png){:class="img-responsive"}
 
 ### {{ Components }}
 

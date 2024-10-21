@@ -14,7 +14,7 @@ Administrator permissions are required to install {{ productName }}.
 `{{ setup }}Setup.exe` is an industry standard setup. 
 Execute the `{{ setup }}Setup.exe` file and follow the instructions of the setup program.
 
-![Migration1](../../assets/images/xfa/documentation/setup/Migration_1.png){:class="img-responsive" }
+![Migration1](../../assets/images//documentation/setup/xfa/Migration_1.png){:class="img-responsive" }
 
 !!! note 
 	During the setup you need to specify the installation directory for Xtract for Alteryx and also the installation directory of Alteryx.

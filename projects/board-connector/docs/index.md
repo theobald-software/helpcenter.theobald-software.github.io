@@ -24,7 +24,7 @@ hide:
 
 [:octicons-arrow-right-24: Show more](news.md)
 
-![threshold](assets/images/bc/DataStream_Board.png)
+![threshold](assets/images/logos/DataStream_Board.png)
 
 
 ### Additional Resources
@@ -32,32 +32,32 @@ hide:
 ::cards:: cols=3
   
 - title: Product Information
-  icon: ./assets/images/bc/product-information-Board.svg
+  icon: ./assets/images/logos/product-information-Board.svg
   content: Visit our official Board Connector website to take a look at the advantages Board Connector offers, a list of FAQs and more.
   url: https://theobald-software.com/en/board-connector/
   
 - title: Success Stories
-  icon: ./assets/images/bc/success-stories-Board.svg
+  icon: ./assets/images/logos/success-stories-Board.svg
   content: Get to know real customer scenarios with Board Connector by reading one of our success stories.
   url: https://theobald-software.com/en/resources/success-stories?filter_one=default&filter_two=board-connector
 
 - title: Blog
-  icon: ./assets/images/bc/blog-Board.svg
+  icon: ./assets/images/logos/blog-Board.svg
   content: Discover exciting articles and helpful tips about SAP data and cloud integration, SAP process automation and more.
   url: https://theobald-software.com/en/blog/
   
 - title: Events & Webinars
-  icon: ./assets/images/bc/events-webinars-Board.svg 
+  icon: ./assets/images/logos/events-webinars-Board.svg 
   content: Find out about upcoming events and Webinars. <br>Join our live webinars and experience interactive communication or visit our SAP experts live at an event. 
   url: https://theobald-software.com/en/resources/events-and-webinars/
   
 - title: Technical Newsletter
-  icon: ./assets/images/bc/technical-newsletter-Board.svg
+  icon: ./assets/images/logos/technical-newsletter-Board.svg
   content: Our technical newsletter informs you once a month about new features, releases, breaking changes and articles.
   url: https://theobald-software.com/en/newsletter/
 
 - title: Feedback Form
-  icon: ./assets/images/bc/feedback-form-Board.svg
+  icon: ./assets/images/logos/feedback-form-Board.svg
   content: We are constantly striving to improve our products and would love to get your feedback. Our feedback form is very short, just write down what you want us to know :octicons-smiley-24:.
   url: https://theobald-software.typeform.com/to/CnpfiiIN
 

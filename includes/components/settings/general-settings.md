@@ -7,7 +7,7 @@ To open the general settings, click **General Settings** in the main window of t
 
 The *Misc.* tab covers cache settings, column encryption and keywords of an extraction type.
 
-![General-Settings](../../assets/images/{{ abbr }}/documentation/general-settings/general-settings-misc.png){:class="img-responsive"}
+![General-Settings](../../assets/images/documentation/components/general-settings/{{ abbr }}/general-settings-misc.png){:class="img-responsive"}
 
 
 #### Cache results
@@ -45,7 +45,7 @@ To open the "Search Extractions" window, click **[:magnifying-glass: Search]** i
 
 Table extractions inherit the primary keys from SAP. Other objects such as SAP Query, BW Cube etc. require manual setting of the primary keys.  
 
-![General-Settings-Primary-Key](../../assets/images/{{ abbr }}/documentation/general-settings/general-settings-primary-key.png){:class="img-responsive"}
+![General-Settings-Primary-Key](../../assets/images/documentation/components/general-settings/{{ abbr }}/general-settings-primary-key.png){:class="img-responsive"}
 
 The depicted example shows the SAP object *MAKT* with its primary key inherited from SAP in the general settings of the Designer. 
 In this example the primary key consists of *MANDT*, *MATNR* and *SPRAS*. The primary key is also taken over in the destination. 
@@ -66,7 +66,7 @@ They are generated from the selected primary key columns and the name of the SAP
 
 Restrict user access to the extraction. For more information, see [Restrict Designer Access](../access-restrictions/restrict-designer-access.md).
 
-![General-Settings-Security](../../assets/images/{{ abbr }}/documentation/general-settings/general-settings-security.png){:class="img-responsive"}
+![General-Settings-Security](../../assets/images/documentation/components/general-settings/{{ abbr }}/general-settings-security.png){:class="img-responsive"}
 
 {% if page.meta.product == "board-connector" %} 
 
@@ -74,7 +74,7 @@ Restrict user access to the extraction. For more information, see [Restrict Desi
 
 The *CSV* tab covers data and date formatting.
 
-![General-Settings-CSV](../../assets/images/{{ abbr }}/documentation/general-settings/general-settings-csv.png){:class="img-responsive"}
+![General-Settings-CSV](../../assets/images/documentation/components/general-settings/{{ abbr }}/general-settings-csv.png){:class="img-responsive"}
 
 #### Column Name Style
 Defines the style of the column name. Following options are available:
@@ -104,7 +104,7 @@ The "Columns Order" feature enables users to rearrange the order of result colum
 To rearrange the result order, assign indexes to the available result columns. 
 Index 0 defines the first column in the result set, index 1 the second columns, etc.
 
-![General-Settings-Column-Order](../../assets/images/{{ abbr }}/documentation/general-settings/general-settings-column-order.png){:class="img-responsive"}
+![General-Settings-Column-Order](../../assets/images/documentation/components/general-settings/{{ abbr }}/general-settings-column-order.png){:class="img-responsive"}
 
 | Option | Description |
 |--------|-------------|

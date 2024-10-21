@@ -16,17 +16,17 @@ An SAP connection is required to use any {{ productName }} component.
 
 1. Drag and drop an {{ productName }} component from the Alteryx Designer tool box onto the canvas :number-1:. 
 The configuration window of the component opens. <br>
-![Create-New-Table-Extraction](../assets/images/xfa/articles/xfa_create_table_extraction_02.png){:class="img-responsive"}
+![Create-New-Table-Extraction](../assets/images/articles/xfa/xfa_create_table_extraction_02.png){:class="img-responsive"}
 2. Click **[New]** to create a new connection :number-2:. The window "SAP Connection Details" opens.
 3. Fill out the connection details to establish an SAP connection.
 The connection details consist of four subsections: <br>
-![Connection details](../assets/images/xfa/articles/xfa_connection-det.png){:class="img-responsive"}
+![Connection details](../assets/images/articles/xfa/xfa_connection-det.png){:class="img-responsive"}
 	- [System](#system)
 	- [Client and Language](#client-and-language)
 	- [Authentication](#authentication) 
 	- [Miscallaneous](#miscellaneous).
 4. Click **[Test Connection]** to test the SAP connection. A confirmation window opens.<br>
-![Connection test](../assets/images/xfa/articles/xfa_test-con.png){:class="img-responsive"}
+![Connection test](../assets/images/articles/xfa/xfa_test-con.png){:class="img-responsive"}
 5. Click **[OK]** to save the SAP connection.
 
 The SAP connection is now available for selection in the configuration window :number-2:.<br>
@@ -84,7 +84,7 @@ The following authentication methods are supported:
 - **Plain** :number-2:: SAP username and password (system or dialogue user)
 - **SAP Log On Ticket** :number-3:: uses SAP Logon-Tickets in place of user credentials. This connection is not encrypted.
 	
-![Connection details](../assets/images/xfa/articles/xfa_connection-auth.png)
+![Connection details](../assets/images/articles/xfa/xfa_connection-auth.png)
 
 === "SNC :number-1:" 
 

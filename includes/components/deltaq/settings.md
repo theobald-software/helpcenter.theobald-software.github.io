@@ -9,7 +9,7 @@ The {{ deltaq }} settings consist of the following tabs:
 ## Base Settings
 
 {% if page.meta.product == "xtract-is" %}
-![Extraction-Settings](../../assets/images/xis/documentation/deltaq/settings-base-xis.png)
+![Extraction-Settings](../../assets/images/documentation/components/deltaq/xis/settings-base-xis.png)
 {% else %}
 ![Extraction-Settings](../../assets/images/documentation/components/deltaq/settings-base.png)
 {% endif %}
@@ -38,7 +38,7 @@ Every invalid value is converted into this value.
 
 ## Misc. Settings
 
-![settings-misc](../../assets/images/xis/documentation/deltaq/settings-misc-xis.png){:class="img-responsive"}
+![settings-misc](../../assets/images/documentation/components/deltaq/xis/settings-misc-xis.png){:class="img-responsive"}
 
 #### Update Mode Variable
 
@@ -98,7 +98,7 @@ Enter a time period (in seconds). The timeout applies when an extraction finishe
 The following settings only apply to Hierarchy extractions.
 
 {% if page.meta.product == "xtract-is" %}
-![Extraction-Settings](../../assets/images/xis/documentation/deltaq/settings-hierarchy-xis.png)
+![Extraction-Settings](../../assets/images/documentation/components/deltaq/xis/settings-hierarchy-xis.png)
 {% else %}
 ![Extraction-Settings](../../assets/images/documentation/components/deltaq/settings-hierarchy.png)
 

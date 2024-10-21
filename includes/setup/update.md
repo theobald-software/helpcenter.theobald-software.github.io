@@ -112,9 +112,9 @@ There are two ways to use the *ConfigConverter*:
 	1. Execute the {{ productName }} setup.
 	2. During the setup, activate the option **Convert config files**. 
 	The option **Convert config files** starts the *ConfigConverter* application.<br> 
-	![Migration1](../../assets/images/{{ abbr }}/documentation/setup/Migration_1.png){:class="img-responsive"}
+	![Migration1](../../assets/images/documentation/setup/{{ abbr }}/Migration_1.png){:class="img-responsive"}
 	3. Confirm the conversion process in the command line pop-up window.  
-	![Migration2.png](../../assets/images/{{ abbr }}/documentation/setup/Migration_2.png){:class="img-responsive"}
+	![Migration2.png](../../assets/images/documentation/setup/{{ abbr }}/Migration_2.png){:class="img-responsive"}
 
 === "Manual Upgrade"
 	If the *ConfigConverter* is not executed automatically during installation, the converter can also be started manually.

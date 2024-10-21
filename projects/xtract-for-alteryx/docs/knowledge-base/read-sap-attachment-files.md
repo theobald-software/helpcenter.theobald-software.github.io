@@ -35,18 +35,18 @@ Follow the steps below to set up the following workflow:
 === "How to get a List of Object IDs"
 	
 	1. Drag & drop the Xtract Table component into your Alteryx workflow :number-1:.<br>
-	![xfa_create_table_extraction_01](../assets/images/xfa/articles/xfa_create_table_extraction_01.png){:class="img-responsive" width="900px"}
+	![xfa_create_table_extraction_01](../assets/images/articles/xfa/xfa_create_table_extraction_01.png){:class="img-responsive" width="900px"}
 	2. Select an SAP connection :number-2:. If no SAP connection is available, create a new connection, see [Documentation: SAP Connection](../documentation/sap-connection/index.md).
 	3. Click **[Edit]** :number-3: to open the main window of the Xtract Table component.
 	4. [Look up](../documentation/table/index.md/#look-up-an-sap-table) the SAP table *SRGBTBREL*.
 	5. Select the columns TYPEID_A (source of the attached file) and INSTID_B (Object ID) for output.<br>
-	![attachment-files-table1](../assets/images/xfa/articles/attachment-files-table1.png){:class="img-responsive"}
+	![attachment-files-table1](../assets/images/articles/xfa/attachment-files-table1.png){:class="img-responsive"}
 	6. Click **[OK]** to save the table extraction.
 	7. Optional: Add a **Formula** tool after the Xtract Table component to separate the key objects of INSTID_B into the following columns: "Object", "OBJTP" (object type), "OBJYR" (object year) and "OBJNO" (object number).<br>
-	![attachment-files-formula](../assets/images/xfa/articles/attachment-files-formula.png){:class="img-responsive"}
+	![attachment-files-formula](../assets/images/articles/xfa/attachment-files-formula.png){:class="img-responsive"}
 
 	The processed list of attached files contains the following information:<br>
-	![attachment-files-SRGBTBREL-parsed-output](../assets/images/xfa/articles/attachment-files-SRGBTBREL-parsed-output.jpg){:class="img-responsive"}
+	![attachment-files-SRGBTBREL-parsed-output](../assets/images/articles/xfa/attachment-files-SRGBTBREL-parsed-output.jpg){:class="img-responsive"}
 
 === "How to get a List of File Names"
 
@@ -54,16 +54,16 @@ Follow the steps below to set up the following workflow:
 	2. Select an SAP connection. If no SAP connection is available, create a new connection, see [Documentation: SAP Connection](../documentation/sap-connection/index.md).
 	3. [Look up](../documentation/table/index.md/#look-up-an-sap-table) the SAP table *SOOD*. The table contains all document IDs attached to business objects.
 	4. Select the columns OBJTP, OBJYR and OBJNO for output.<br>
-	![attachment-files-table2](../assets/images/xfa/articles/attachment-files-table2.png){:class="img-responsive"}
+	![attachment-files-table2](../assets/images/articles/xfa/attachment-files-table2.png){:class="img-responsive"}
 	5. Click **[Edit parameters]** and [create a runtime parameter](../documentation/table/edit-runtime-parameters.md/#create-runtime-parameters) *OBJNO* of type string.<br>
-	![attachment-files-runtime-parameter](../assets/images/xfa/articles/attachment-files-runtime-parameter.png){:class="img-responsive"}
+	![attachment-files-runtime-parameter](../assets/images/articles/xfa/attachment-files-runtime-parameter.png){:class="img-responsive"}
 	6. Navigate to the WHERE Clause tab and create the following WHERE clause: `SOOD~OBJNO IN [OBJNO]`. <br>
-	![attachment-files-where-clause](../assets/images/xfa/articles/attachment-files-where-clause.png){:class="img-responsive"}
+	![attachment-files-where-clause](../assets/images/articles/xfa/attachment-files-where-clause.png){:class="img-responsive"}
 	7. Click **[OK]** to save the table extraction.
 	8. Define an object number as the input for the runtime parameter of the Xtract Table component, e.g., *000000001276*.<br>
-	![attachment-files-table-input](../assets/images/xfa/articles/attachment-files-table-input.png){:class="img-responsive"}
+	![attachment-files-table-input](../assets/images/articles/xfa/attachment-files-table-input.png){:class="img-responsive"}
 	9. Add a **Join** tool to join the results of the two table extraction into a single list.<br>
-	![attachment-files-workflow1](../assets/images/xfa/articles/attachment-files-workflow1.png){:class="img-responsive"}
+	![attachment-files-workflow1](../assets/images/articles/xfa/attachment-files-workflow1.png){:class="img-responsive"}
 
 !!! note
 	The workflow provided in the Alteryx community contains further steps to download the first file in the list of attached files in the SAP ERP system.
@@ -73,15 +73,15 @@ Follow the steps below to set up the following workflow:
 Follow the steps below to download SAP attachment files using their Object ID as input:
 
 1. Drag & drop the Xtract BAPI component into your Alteryx workflow :number-1:.<br>
-![xfa_create_bapi_extraction_01](../assets/images/xfa/articles/xfa_create_bapi_extraction_01.png){:class="img-responsive" width="900px"}
+![xfa_create_bapi_extraction_01](../assets/images/articles/xfa/xfa_create_bapi_extraction_01.png){:class="img-responsive" width="900px"}
 2. Select an SAP connection :number-2:. If no SAP connection is available, create a new connection, see [Documentation: SAP Connection](../documentation/sap-connection/index.md).
 3. Click **[Edit]** :number-3: to open the main window of the Xtract BAPI component.
 4. In the main window of the component click :magnifying-glass:. The window “Function Module Lookup Lookup” opens.
 5. [Look up](../documentation/bapi/index.md/#look-up-a-function-module-bapi) the function module *SO_DOCUMENT_READ_API1*.
 6. Click **[Edit parameters]** and [create a runtime parameter](../documentation/bapi/edit-runtime-parameters.md/#create-runtime-parameters) *ObjectIdentifier* of type string.<br>
-![attachment-files-runtime-parameter2](../assets/images/xfa/articles/attachment-files-runtime-parameter2.png){:class="img-responsive"}
+![attachment-files-runtime-parameter2](../assets/images/articles/xfa/attachment-files-runtime-parameter2.png){:class="img-responsive"}
 7. In the *Import* tab, set the DOCUMENT_ID to the runtime parameter *ObjectIdentifier*.<br>
-![attachment-files-bapi-import](../assets/images/xfa/articles/attachment-files-bapi-import.png){:class="img-responsive"}
+![attachment-files-bapi-import](../assets/images/articles/xfa/attachment-files-bapi-import.png){:class="img-responsive"}
 8. In the *Export* tab, select DOCUMENT_DATA for output.
 9. In the *Table* tab, select CONTENTS_HEX for the output. CONTENTS_HEX contains the attachment file in the format of a HEX string.
 10. Click **[OK]** to save your input.
@@ -90,17 +90,17 @@ Follow the steps below to download SAP attachment files using their Object ID as
 	!!! tip
 		Object IDs are available in the SAP table SRGBTBREL, see [Get a List of all SAP Attachments](#get-a-list-of-all-sap-attachments).
 		
-	![attachment-files-bapi-input](../assets/images/xfa/articles/attachment-files-bapi-input.png){:class="img-responsive"}
+	![attachment-files-bapi-input](../assets/images/articles/xfa/attachment-files-bapi-input.png){:class="img-responsive"}
 12. Add a **Summarize** tool :number-4: to concatenate the multi-line HEX string returned by the Xtract BAPI component into a single line.
 13. Add a **Select** :number-5: and a **Formula** tool to concatenate the file name using the Xtract BAPI output fields OBJDES and FILE_EXT, e.g., `example.pdf`.<br>
-![attachment-files-formula-filename](../assets/images/xfa/articles/attachment-files-formula-filename.png){:class="img-responsive"}
+![attachment-files-formula-filename](../assets/images/articles/xfa/attachment-files-formula-filename.png){:class="img-responsive"}
 14. Add a **Append Fields** tool to append the file name to the HEX string.<br>
-![attachment-files-append-fields](../assets/images/xfa/articles/attachment-files-append-fields.png){:class="img-responsive"}
+![attachment-files-append-fields](../assets/images/articles/xfa/attachment-files-append-fields.png){:class="img-responsive"}
 15. Add a **Blob Convert** tool :number-6: to convert the HEX string to a Binary Large OBject (BLOB).
 BLOB data types can store multiple file types, e.g., images, audio, and other objects, see [Alteryx Documentation: Blob Convert Tool](https://help.alteryx.com/current/en/designer/tools/developer/blob-convert-tool.html) for more information. <br>
-![attachment-files-blob-convert](../assets/images/xfa/articles/attachment-files-blob-convert.png){:class="img-responsive"}
+![attachment-files-blob-convert](../assets/images/articles/xfa/attachment-files-blob-convert.png){:class="img-responsive"}
 16. Add a **Blob Output** tool :number-7: to save the file.<br>
-![attachment-files-blob-convert](../assets/images/xfa/articles/attachment-files-blob-output.png){:class="img-responsive"}
+![attachment-files-blob-convert](../assets/images/articles/xfa/attachment-files-blob-output.png){:class="img-responsive"}
 
 
 *****

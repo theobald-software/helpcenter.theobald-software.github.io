@@ -18,7 +18,7 @@ The {{ page.meta.title }} destination loads data to a Huawei Cloud Object Storag
 
 {% include "destinations/create-destination.md" %}
 
-![Destination-Details](../../assets/images/xu/documentation/destinations/huawei/destination-details_1.png){:class="img-responsive"}
+![Destination-Details](../../assets/images/documentation/destinations/huawei/destination-details_1.png){:class="img-responsive"}
 
 ### Authentication
 
@@ -55,7 +55,7 @@ Subfolders are supported and can be defined using the following syntax: `[folder
 
 Select the required file format. You can choose between *CSV*, *JSON* and *Parquet*.
 
-![Destination-Details](../../assets/images/xu/documentation/destinations/googlecloudstorage/destination-details_2.png){:class="img-responsive" }
+![Destination-Details](../../assets/images/documentation/destinations/googlecloudstorage/destination-details_2.png){:class="img-responsive" }
 
 #### CVS Settings
 
@@ -84,7 +84,7 @@ In those cases Xtract Universal tries to remove any files from the Huawei Cloud 
 
 {% include "destinations/assign-destination.md" %}
 
-![Destination-settings](../../assets/images/xu/documentation/destinations/huawei/destination-settings.png){:class="img-responsive"}
+![Destination-settings](../../assets/images/documentation/destinations/huawei/destination-settings.png){:class="img-responsive"}
 
 {% include "destinations/file-name.md" %}
 

@@ -36,7 +36,7 @@ The following collation statement is displayed: `Latin1_General_100_CI_AI`.
 _CI | case-insensitive
 _AI | accent-insensitive
 
-![default_collation_statement](../assets/images/xu/articles/collation_example_CI_AI_xu_fas_DB.png)
+![default_collation_statement](../assets/images/articles/xu/collation_example_CI_AI_xu_fas_DB.png)
 
 
 ### Setup in Xtract Universal
@@ -46,9 +46,9 @@ Follow the steps below to extract the SAP table *MAKT* from SAP:
 1. Create a table extraction, see [Documentation: Table](../documentation/table/index.md).
 The look-up process loads the corresponding metadata from our SAP object *MAKT*: 
 	1. The composite primary key consists of the table fields *MANDT*, *MATNR*, *SPRAS*, each with a unique constraint.<br>
-	![default_collation_statement](../assets/images/xu/articles/makt_metadata.png){:class="img-responsive"}
+	![default_collation_statement](../assets/images/articles/xu/makt_metadata.png){:class="img-responsive"}
     2. The SAP field *SPRAS* is of data type *LANG* with a length *1*.<br>
-   ![DD_SPRAS](../assets/images/xu/articles/dataDictionary_SPRAS.png){:class="img-responsive"}
+   ![DD_SPRAS](../assets/images/articles/xu/dataDictionary_SPRAS.png){:class="img-responsive"}
 2. Create a simple WHERE clause, e.g., `MATNR = '000000000000000038' AND ( SPRAS  = 'd' OR SPRAS = 'D' )`.
 3. Click **[Load live preview]**. <br>
 The results show that the SAP database interprets the data records with upper-case 'D' and lower-case 'd' in the field *SPRAS* as different data records.

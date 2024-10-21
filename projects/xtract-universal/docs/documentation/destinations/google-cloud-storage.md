@@ -21,7 +21,7 @@ To get to the overview dashboard, navigate to the [Google Cloud Storage](https:/
 
 To access all settings and services use the navigation menu on the upper left side.
 
-![xu-google-cloud-req-01](../../assets/images/xu/documentation/destinations/googlecloudstorage/xu-google-cloud-req-01.png){:class="img-responsive"}
+![xu-google-cloud-req-01](../../assets/images/documentation/destinations/googlecloudstorage/xu-google-cloud-req-01.png){:class="img-responsive"}
  
 ## Requirements 
 
@@ -34,7 +34,7 @@ To access all settings and services use the navigation menu on the upper left si
 
 ### GCS Settings
 
-![Destination-Details](../../assets/images/xu/documentation/destinations/googlecloudstorage/destination-details_1.png){:class="img-responsive"}
+![Destination-Details](../../assets/images/documentation/destinations/googlecloudstorage/destination-details_1.png){:class="img-responsive"}
 
 #### Connection Type
 
@@ -93,18 +93,18 @@ When using OAuth 2.0 authentication, the "Bucket" subsection can only be filled 
 #### Project ID
 The Project ID can be looked up in the GCP dashboard under *Project info*.
 
-![xu-google-cloud-con-04](../../assets/images/xu/documentation/destinations/googlecloudstorage/xu-google-cloud-con-04.png){:class="img-responsive"}
+![xu-google-cloud-con-04](../../assets/images/documentation/destinations/googlecloudstorage/xu-google-cloud-con-04.png){:class="img-responsive"}
 
 #### Bucket name
 When using OAuth 2.0 authentication, click **[Get buckets]** to display available buckets.<br>
 A bucket can be created in the navigation menu under **Storage > Browser**.
 
-![xu-google-cloud-con-05](../../assets/images/xu/documentation/destinations/googlecloudstorage/xu-google-cloud-con-05.png){:class="img-responsive"}
+![xu-google-cloud-con-05](../../assets/images/documentation/destinations/googlecloudstorage/xu-google-cloud-con-05.png){:class="img-responsive"}
 
 Choose a bucket name, location type and storage class or access control. 
 
 Under **Advanced Settings (optional)** you can select the desired encryption method applied to the bucket. Get more details on encryption on the official [Google Help Page](https://cloud.google.com/storage/docs/encryption).      
-![xu-google-cloud-con-06](../../assets/images/xu/documentation/destinations/googlecloudstorage/xu-google-cloud-con-06.png){:class="img-responsive"}
+![xu-google-cloud-con-06](../../assets/images/documentation/destinations/googlecloudstorage/xu-google-cloud-con-06.png){:class="img-responsive"}
 
 
 ### Encryption
@@ -125,7 +125,7 @@ If *Customer Supplied* is selected as the encryption method, enter the cryptogra
 
 Select the required file format. You can choose between *CSV*, *JSON* and *Parquet*.
 
-![Destination-Details](../../assets/images/xu/documentation/destinations/googlecloudstorage/destination-details_2.png){:class="img-responsive" }
+![Destination-Details](../../assets/images/documentation/destinations/googlecloudstorage/destination-details_2.png){:class="img-responsive" }
 
 #### CVS Settings
 
@@ -157,7 +157,7 @@ For more general information about retry strategies in a Google Cloud Storage en
 
 {% include "destinations/assign-destination.md" %}
 
-![Destination-settings](../../assets/images/xu/documentation/destinations/googlecloudstorage/destination-settings.png){:class="img-responsive"}
+![Destination-settings](../../assets/images/documentation/destinations/googlecloudstorage/destination-settings.png){:class="img-responsive"}
 
 {% include "destinations/file-name.md" %}
 

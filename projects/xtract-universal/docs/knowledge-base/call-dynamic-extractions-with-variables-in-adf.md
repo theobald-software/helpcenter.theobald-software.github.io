@@ -15,16 +15,16 @@ The date parameter is set dynamically using a user-defined variable.<br>
 1. Create an extraction in {{ productName }} that uses runtime parameters.<br>
 The depicted example uses an extraction called *0COSTCENTER_0101_HIER* with a date parameter called *myDate*. 
 2. Create a pipeline in ADF that stores yesterday's date in a variable :number-1:.<br>
-![adf-pipeline](../assets/images/xu/articles/adf-pipeline.png){:class="img-responsive"}
+![adf-pipeline](../assets/images/articles/xu/adf-pipeline.png){:class="img-responsive"}
 3. Format the date to the internal SAP date format (YYYYMMDD).<br>
 The type and format of the input variable must match the type and format of the actual parameter in {{ productName }}.<br>
-![adf-call-extractions-variable](../assets/images/xu/articles/azura-data-factory-date-variable.png){:class="img-responsive"}
+![adf-call-extractions-variable](../assets/images/articles/xu/azura-data-factory-date-variable.png){:class="img-responsive"}
 4. Add a web activity that calls extractions :number-2:.
 The URL used to call static extractions has the following format: <br>`[Protocol]://[HOST or IP address]:[Port]/?name=[Name of the Extraction]`
 5. To set runtime parameters of an extraction, add the corresponding variables to the extraction URL using the *@concat* command. 
 The concatenated string has the following format:<br>
 `@concat('[Protocol]://[HOST or IP address]:[Port]/?name=[Name of the Extraction]&[Name of the Parameter in XU]=',variables('[Name of the Variable in ADF'))`<br>
-![adf-call-extractions-variable](../assets/images/xu/articles/adf-call-extraction-variable.png){:class="img-responsive"}
+![adf-call-extractions-variable](../assets/images/articles/xu/adf-call-extraction-variable.png){:class="img-responsive"}
 6. Run the pipeline and check the result.
 
 !!! tip

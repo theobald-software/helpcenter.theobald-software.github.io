@@ -35,9 +35,9 @@ By default, extractions use the [**http-csv**](documentation/destinations/csv-vi
 Follow the steps below to add a new destination to {{ productName }}:
 
 1. In the main window of the Designer, navigate to **Server > Manage Destinations**. The window “Manage Destinations” opens.<br>
-![xu-destinations](assets/images/xu/documentation/destinations/xu_destination.png)
+![xu-destinations](assets/images/documentation/destinations/xu_destination.png)
 2. Click **[Add]** to create a new destination. The window "Destination Details" opens.<br>
-![destinations_load_manage_shared](assets/images/xu/documentation/destinations/destinations_load_manage_shared.png)
+![destinations_load_manage_shared](assets/images/documentation/destinations/destinations_load_manage_shared.png)
 3. Enter a **Name** for the destination.
 4. Select a destination type from the drop-down menu. 
 A list of connection details opens.
@@ -98,9 +98,9 @@ Follow the steps below to assign a destination to an extraction:
 
 1. In the main window of the Designer, select an extraction.
 2. Click **[:designer-destination:Destination]**. The window “Destination Settings” opens.<br>
-![xu_designer_destination](assets/images/xu/documentation/destinations/xu_designer_destination.png){:class="img-responsive"}
+![xu_designer_destination](assets/images/documentation/destinations/xu_designer_destination.png){:class="img-responsive"}
 3. In the “Destination Settings” window, select a destination from the drop down menu.<br>
-![assign-destination](assets/images/xu/documentation/destinations/assign-destination.png){:class="img-responsive"}
+![assign-destination](assets/images/documentation/destinations/assign-destination.png){:class="img-responsive"}
 4. Optional: change the destination settings.<br>
 Destination settings are specific to the selected extraction and vary depending on the destination type.
 For more information about destination settings, select your destination: <select id="destinationsettings" onChange="getSelectedValueSettings();" style="font-family:'Poppins'; font-size:16px; padding-top:3px; padding-bottom:3px;">

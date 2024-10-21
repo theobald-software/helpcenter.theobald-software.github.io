@@ -24,7 +24,7 @@ If the object has to be created the user also needs following permissions:
 
 {% include "destinations/create-destination.md" %}
 
-![Destination-Details](../../assets/images/xu/documentation/destinations/salesforce/destination-details.png){:class="img-responsive"}
+![Destination-Details](../../assets/images/documentation/destinations/salesforce/destination-details.png){:class="img-responsive"}
 
 #### Username
 Enter your Salesforce username.
@@ -44,7 +44,7 @@ Check the database connection.
 
 {% include "destinations/assign-destination.md" %}
 
-![Destination-settings](../../assets/images/xu/documentation/destinations/salesforce/destination-setting.png){:class="img-responsive"}
+![Destination-settings](../../assets/images/documentation/destinations/salesforce/destination-setting.png){:class="img-responsive"}
 
 {% include "destinations/file-name.md" %}
 

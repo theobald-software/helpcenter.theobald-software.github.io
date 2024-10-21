@@ -2,7 +2,7 @@
 ### Look up Data Objects
 
 1. In the main window of the {{ component }}, click **[:magnifying-glass:]**. The window “Operational Data Provider Lookup” opens.<br>
-![Open-Look-Up-ODP](../../assets/images/{{ abbr }}/documentation/odp/odp_main-window_add.png){:class="img-responsive"}	
+![Open-Look-Up-ODP](../../assets/images/documentation/components/odp/{{ abbr }}/odp_main-window_add.png){:class="img-responsive"}	
 2. In the field **Name**, enter the name of an extractor :number-1:. Use wildcards (*), if needed.<br>
 ![Look-Up-ODP](../../assets/images/documentation/components/odp/odp_look-up.png){:class="img-responsive"}	
 3. Select a *Context* :number-2:. Depending on the connected SAP source system there are differences in available [Provider Contexts](provider-context.md).
@@ -20,7 +20,7 @@ The application now returns to the main window of the {{ component }}.
 The {{ odp }} {{ component }} offers the following options for data extractions:
 
 1. In the section *Fields*, select the items you want to extract.<br>
-![Datasource Preview](../../assets/images/{{ abbr }}/documentation/odp/define-odp.png){:class="img-responsive"}
+![Datasource Preview](../../assets/images/documentation/components/odp/{{ abbr }}/define-odp.png){:class="img-responsive"}
 
 	!!! note
 		TS_SEQUENCE_NUMBER is a technical primary key that can be added to the output.

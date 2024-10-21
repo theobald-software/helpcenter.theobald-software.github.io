@@ -3,7 +3,7 @@
 This page contains an overview of the SAP connection settings in the window "Change Source".<br>
 To open the server settings, navigate to **[Server] > [Manager Sources]** in the main window of the Designer and click **[:pen-button:]**.
 
-![sap-source-general](../../assets/images/{{ abbr }}/documentation/sap-connection/open-manage-sources.png){:class="img-responsive"}
+![sap-source-general](../../assets/images/documentation/sap-connection/{{ abbr }}/open-manage-sources.png){:class="img-responsive"}
 
 ### General
 

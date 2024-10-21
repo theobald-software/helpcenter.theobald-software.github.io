@@ -51,7 +51,7 @@ Follow the steps below to create a parameter in the {{ odp }} {{ component }}:
 	
 1. In the main window of the component click **Edit Parameters**. 
 The window “Edit Runtime Parameters” opens.<br>
-![open-edit-runtime-parameters](../../assets/images/{{ abbr }}/documentation/{{ page.meta.componentFolder }}/open-edit-runtime-parameters.png){:class="img-responsive"}
+![open-edit-runtime-parameters](../../assets/images/documentation/components/{{ page.meta.componentFolder }}/{{ abbr }}/open-edit-runtime-parameters.png){:class="img-responsive"}
 2. Click **[Add Scalar]** to define scalar parameters to be used as placeholders for actual values.
 The placeholders need to be populated with actual values at runtime.<br>
 ![dd-parameters](../../assets/images/documentation/components/runtime-parameters/edit-runtime-parameters.png){:class="img-responsive"}

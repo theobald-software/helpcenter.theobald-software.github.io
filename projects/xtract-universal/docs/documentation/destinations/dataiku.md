@@ -23,11 +23,11 @@ The plugin is available in the [Dataiku Plugin Store]().
 {% include "destinations/create-destination.md" %}
 To use the {{ page.meta.title }} destination, no further settings are necessary.
 
-![Destination-Details](../../assets/images/xu/documentation/destinations/dataiku/destination-details.png){:class="img-responsive"}
+![Destination-Details](../../assets/images/documentation/destinations/dataiku/destination-details.png){:class="img-responsive"}
 
 {% include "destinations/assign-destination.md" %}
 
-![Destination-settings](../../assets/images/xu/documentation/destinations/dataiku/destination-settings.png){:class="img-responsive"}
+![Destination-settings](../../assets/images/documentation/destinations/dataiku/destination-settings.png){:class="img-responsive"}
 
 {% include "destinations/column-name-style.md" %}
 
@@ -44,7 +44,7 @@ To use Xtract Universal extractions in the Dataiku Designer, make sure that the 
 The Xtract Universal plugin has a settings menu that contains settings for the [connection to an Xtract Universal server](#connection).
 To open the plugin settings, navigate to **Plugin > Installed > Xtract Universal > Settings > Xtract Universal Server**.
 
-![XU-Dataiku-connection](../../assets/images/xu/documentation/destinations/dataiku/XU-Dataiku-connection.png){:class="img-responsive"}
+![XU-Dataiku-connection](../../assets/images/documentation/destinations/dataiku/XU-Dataiku-connection.png){:class="img-responsive"}
 
 #### Definable inline
 Allows users to define a connection to an Xtract Universal server on a dataset level.
@@ -98,7 +98,7 @@ The settings are located in **Plugin > Installed > Xtract Universal > Settings >
 6. If a non-default port is used for the Xtract Universal [web server](../server/server-settings.md/#web-server), click **Customize port** to specify the port.
 7. Click **[SAVE]**.
 
-![dataiku-connection](../../assets/images/xu/documentation/destinations/dataiku/dataiku-connection.gif){:class="img-responsive"}
+![dataiku-connection](../../assets/images/documentation/destinations/dataiku/dataiku-connection.gif){:class="img-responsive"}
 
 The connection is now available in all projects and datasets.
 
@@ -127,7 +127,7 @@ The plugin fetches all available parameters from Xtract Universal.
 7. Click **[TEST & GET SCHEMA]**. A preview of the data is displayed.
 8. Click **[CREATE]**. The data is loaded into the workflow.
 		
-![dataiku-dataset](../../assets/images/xu/documentation/destinations/dataiku/dataiku-dataset.gif){:class="img-responsive"}
+![dataiku-dataset](../../assets/images/documentation/destinations/dataiku/dataiku-dataset.gif){:class="img-responsive"}
 
 !!! tip 
 	In case of errors, navigate to **Administration > Maintenance** to check the logs. 

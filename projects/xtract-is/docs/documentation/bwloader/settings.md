@@ -9,7 +9,7 @@ description: Settings
 
 ### General
 
-![BWLoader-Preferences](../../assets/images/xis/documentation/bwloader/settings.png){:class="img-responsive"}
+![BWLoader-Preferences](../../assets/images/documentation/components/bwloader/settings.png){:class="img-responsive"}
 
 #### Package Size
 {% include "components/settings/package-size.md"  %}

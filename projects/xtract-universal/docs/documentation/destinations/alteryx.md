@@ -41,11 +41,11 @@ When encountering issues during or after the installation of the plugin (e.g., t
 {% include "destinations/create-destination.md" %}
 To use the {{ page.meta.title }} destination, no further settings are necessary.
 
-![Destination-Details](../../assets/images/xu/documentation/destinations/alteryx/destination-details.png){:class="img-responsive"}
+![Destination-Details](../../assets/images/documentation/destinations/alteryx/destination-details.png){:class="img-responsive"}
 
 {% include "destinations/assign-destination.md" %}
 
-![Destination-settings](../../assets/images/xu/documentation/destinations/alteryx/destination-settings.png){:class="img-responsive"}
+![Destination-settings](../../assets/images/documentation/destinations/alteryx/destination-settings.png){:class="img-responsive"}
 
 {% include "destinations/column-name-style.md" %}
 
@@ -57,7 +57,7 @@ To use the {{ page.meta.title }} destination, no further settings are necessary.
 To use Xtract Universal extractions in the Alteryx Designer, add the the Xtract Universal tool to your Alteryx workflow.
 The specify the [*Connection*](#connection) settings and the [*Parameters*](#parameters) settings of the Xtract Universal tool.
 
-![XU_alteryx_plugin](../../assets/images/xu/documentation/destinations/alteryx/XU_alteryx_plugin.png){:class="img-responsive"}
+![XU_alteryx_plugin](../../assets/images/documentation/destinations/alteryx/XU_alteryx_plugin.png){:class="img-responsive"}
 
 
 
@@ -95,7 +95,7 @@ The depicted examples show how to override custom parameters created in Xtract U
 	The parameter is available in the tab *Custom Defined Parameters* and can be overwritten with a static value.
 	To override the parameter *city*, activate the checkbox **Override** and enter a new value, e.g., "Stuttgart".
 
-	![alteryx-custom-parameters](../../assets/images/xu/documentation/destinations/alteryx/alteryx-custom-parameters_1.png){:class="img-responsive"}
+	![alteryx-custom-parameters](../../assets/images/documentation/destinations/alteryx/alteryx-custom-parameters_1.png){:class="img-responsive"}
 
 === "Override Custom Parameters with Dynamic Values"
 	The Xtract Universal tool can receive inputs, e.g., via the *Input Data* tool.
@@ -106,11 +106,11 @@ The depicted examples show how to override custom parameters created in Xtract U
 	To override the parameter *city*, activate the checkbox **Override** and the checkbox **Map**. 
 	Select an item out of the drop-down list in the field **value**.
 
-	![alteryx-custom-parameters](../../assets/images/xu/documentation/destinations/alteryx/alteryx-custom-parameters_2.png){:class="img-responsive"}
+	![alteryx-custom-parameters](../../assets/images/documentation/destinations/alteryx/alteryx-custom-parameters_2.png){:class="img-responsive"}
 
 !!! tip
 	If the connection to the specified Xtract Universal server is not established and no errors are shown, the Xtract Unversal tool offers a tooltip in the following format: 
 	`[Extraction] @ [Server]`.
 
-![alteryx-full-workflow](../../assets/images/xu/documentation/destinations/alteryx/alteryx-workflow.png){:class="img-responsive"}
+![alteryx-full-workflow](../../assets/images/documentation/destinations/alteryx/alteryx-workflow.png){:class="img-responsive"}
 

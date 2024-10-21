@@ -3,7 +3,7 @@ The *Active CDC Watches* menu lists all active log tables and their DB triggers 
 All listed {{ tableCDC }} resources can be deleted from the SAP source system.
 
 To open the *Active CDC Watches* menu, click **Show Active CDC Watches** in the main window of the extraction type.<br>
-![Active-CDC-Watches_designer](../../assets/images/{{ abbr }}/documentation/table-cdc/Active-CDC-Watches_designer.png)
+![Active-CDC-Watches_designer](../../assets/images/documentation/components/table-cdc/{{ abbr }}/Active-CDC-Watches_designer.png)
 
 ### Active CDC Watches
 

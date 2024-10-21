@@ -13,7 +13,7 @@ You can define runtime parameters and other options to run an extraction directl
 ## Run Extractions in the Designer
 
 1. In the main window of the Designer, select an extraction and click **[:designer-run:Run]** :number-1:. The window "Run Extraction" opens.<br>
-![Extraction-Run](../../assets/images/{{ abbr }}/documentation/automation/Run-Table-Extraction.png){:class="img-responsive"}
+![Extraction-Run](../../assets/images/documentation/automation/{{ abbr }}/Run-Table-Extraction.png){:class="img-responsive"}
 2. If needed, define [extraction parameters](../parameters/extraction-parameters.md):
 	- Select the checkbox of the parameter you want to override :number-2:. The parameter is automatically added to the extraction URL and the xu-exe string. :number-3:
 	- Enter a value for the parameter.
@@ -30,7 +30,7 @@ The "Run extraction" window consists the following subsections:
 - [Logs and Output](#logs-and-output) :number-4:
 - [Buttons](#buttons) :number-5:  
 
-![Run-Table-Extraction](../../assets/images/xu/documentation/automation/xu_run_extraction_dialogue.png){:class="img-responsive"}
+![Run-Table-Extraction](../../assets/images/documentation/automation/xu/xu_run_extraction_dialogue.png){:class="img-responsive"}
 
 !!! tip
 	You can open the "Run extraction" window by right-clicking an extraction or use the main menu bar to open the "Run Extraction" window.
@@ -55,7 +55,7 @@ When editing extraction parameters, the [URL and commandline](#url-and-commandli
 
 For more information, see [Extraction Parameters](../parameters/extraction-parameters.md).
 
-![Custom parameters](../../assets/images/xu/documentation/automation/xu_run_extraction_param_cust.png){:class="img-responsive"}
+![Custom parameters](../../assets/images/documentation/automation/xu/xu_run_extraction_param_cust.png){:class="img-responsive"}
 
 ### URL and Commandline
 The strings displayed in **URL** and **xu.exe** are generated and update automatically when changing [extraction parameters](../parameters/extraction-parameters.md).
@@ -90,7 +90,7 @@ By default the following parameters are generated for any extraction:
 ### Logs and Output
 When an extraction is executed, information about the extraction is displayed in the following section.
 
-![Run-Extraction-Output](../../assets/images/xu/documentation/automation/xu_run_extraction_output.png){:class="img-responsive"}
+![Run-Extraction-Output](../../assets/images/documentation/automation/xu/xu_run_extraction_output.png){:class="img-responsive"}
 
 #### Log 
 In the *Log* tab the extraction log is displayed in real time.

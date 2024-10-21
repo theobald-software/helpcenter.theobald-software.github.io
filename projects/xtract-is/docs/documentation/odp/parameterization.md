@@ -41,7 +41,7 @@ When parameterizing the component using SSIS variables, the *Custom Properties* 
 
 The *Custom Properties* of the {{ odp }} {{ component }} are displayed in the "Properties" window. 
 
-![odp-properties](../../assets/images/xis/documentation/odp/odp-properties.png)
+![odp-properties](../../assets/images/documentation/components/odp/xis/odp-properties.png)
 
 {% include "components/table/xis-properties.md" %}
 

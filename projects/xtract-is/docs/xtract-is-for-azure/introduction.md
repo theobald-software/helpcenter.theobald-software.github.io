@@ -9,7 +9,7 @@ description: Learn about Xtract IS for Azure - a plug’n’play solution for SA
 
 Xtract IS for Azure is a plug and play solution that allows running SSIS packages that contain Xtract IS components for connecting to an SAP source and extracting data from SAP on an [Azure-SSIS Integration Runtime (IR), based on Microsoft's Azure Data Factory v2 (ADFv2)](https://docs.microsoft.com/en-us/azure/data-factory/create-azure-ssis-integration-runtime).
 
-![XISforAzure_Architecture](../assets/images/xis/for-azure/Xtract_IS_for_Azure.png){:class="img-responsive"}
+![XISforAzure_Architecture](../assets/images/documentation/xtract-is-for-azure/Xtract_IS_for_Azure.png){:class="img-responsive"}
 
 ### Prerequisites
 

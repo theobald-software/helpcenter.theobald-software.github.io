@@ -33,11 +33,11 @@ Before connecting to SAP for the first time, set up an SAP dialog user with the 
 
 1. Create a new connection manager by right-clicking within the “Solution Explorer” area and selecting **New Connection Manager** in the context menu. 
 The window “Add SSIS Connection Manager” opens.<br>
-![Connection-Manager-01](assets/images/xis/documentation/sap-connection/Connection-Manager-01.png)
+![Connection-Manager-01](assets/images/documentation/sap-connection/xis/Connection-Manager-01.png)
 2. Select the XTRACT Connection Manager from the list of available connection managers and click **[Add...]**. 
 The XTRACT Connection Manager is now available in the connection managers area.
 3. Double-click the XTRACT Connection Manager. The window "XTRACT Connection Manager" opens.<br>
-![Connection-Manager](assets/images/xis/documentation/sap-connection/Connection-Manager.png){:class="img-responsive" }
+![Connection-Manager](assets/images/documentation/sap-connection/xis/Connection-Manager.png){:class="img-responsive" }
 4. Enter the system details of your SAP system and enter the SAP username and password of an SAP system or dialogue user.  
 Input values for the SAP connection can be found in the Properties of the SAP Logon Pad or they can be requested from the SAP Basis team.
 5. Click **[Test connection]** to validate the connection parameters. 
@@ -54,7 +54,7 @@ Follow the steps below to add an Xtract {{ component }} to your data flow task:
 Double-click the dataflow component to open the dataflow canvas.
 2. Make sure that at least one XTRACT Connection Manager is available in the data flow task.
 3. Drag & drop an Xtract {{ component }} from the SSIS toolbox into the data flow task:<br>
-![xis_component](assets/images/xis/getting-started/xis_component.png){:class="img-responsive"}
+![xis_component](assets/images/getting-started/xis_component.png){:class="img-responsive"}
 4. Double-click the Xtract {{ component }}. An XTRACT Connection Manager is automatically assigned and the main window of the {{ component }} opens. 
 The majority of the functions of the {{ component }} can be accessed in the main window.
 
@@ -86,7 +86,7 @@ Follow the steps below to extract customer master data from the SAP table KNA1:
 2. Double-click the {{ table }} {{ component }}. 
 An XTRACT Connection Manager is automatically assigned and the main window of the {{ component }} opens. 
 3. Click **[:material-plus-thick:Add]** to look up an SAP table. The window “Table Lookup” opens.<br>
-![table_look-up](assets/images/xis/documentation/table/table_main-window_add.png)
+![table_look-up](assets/images/documentation/components/table/xis/table_main-window_add.png)
 4. In the field **Table Name**, enter the name of the table to extract (KNA1) :number-1:. Use wildcards (*) if needed.<br>
 ![table_look-up](assets/images/documentation/components/table/table_look-up.png)
 5. Click **[:magnifying-glass:]** :number-2:. Search results are displayed.

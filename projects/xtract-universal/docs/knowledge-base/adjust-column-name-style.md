@@ -32,7 +32,7 @@ When selecting the standard Column Name Style 'Code' in the [destination setting
 
 Follow the steps below to adjust SAP standard separator from '~' to '_':
 1. Adjust the Column Name Style e.g. 'PrefixedCode' :number-1:.<br>
-![column_name_style](../assets/images/xu/articles/destination_settings.png){:class="img-responsive"} 
+![column_name_style](../assets/images/articles/xu/destination_settings.png){:class="img-responsive"} 
 2. Insert the generic SQL Code below into the *Finalization* :number-2: step using **[Edit SQL]**.<br>
 
 	```sql
@@ -62,10 +62,10 @@ Follow the steps below to adjust SAP standard separator from '~' to '_':
 	```
 
 3. Click **[OK]** to confirm your input :number-3:.<br>
-![Custom_sql](../assets/images/xu/articles/custom_sql_finalization_step.png){:class="img-responsive"} 
+![Custom_sql](../assets/images/articles/xu/custom_sql_finalization_step.png){:class="img-responsive"} 
 4. Run the extraction. 
 5. Check the Column Name Style changes and results in SQL Server Management Studio (SSMS).<br>
-![SSMS_view](../assets/images/xu/articles/ssms_result_column_name_style.png){:class="img-responsive"} 
+![SSMS_view](../assets/images/articles/xu/ssms_result_column_name_style.png){:class="img-responsive"} 
 
 
 ### Create Stored Procedure (sp) using SSMS
@@ -78,7 +78,7 @@ Follow the steps below to adjust the SAP standard separator from '~' to '_':
 1. Create T-SQL Stored Procedure using SQL Server Management Studio. 
 For more information, see [Microsoft Documentation: Create a stored procedure](https://docs.microsoft.com/en-us/sql/relational-databases/stored-procedures/create-a-stored-procedure?view=sql-server-ver15).
 2. Assign a name for the Stored Procedure e.g., ColumnNameStyle.<br>
-![custom Stored Procedure](../assets/images/xu/articles/ssms_object_explorer_custom_stored_procedure.png){:class="img-responsive"}
+![custom Stored Procedure](../assets/images/articles/xu/ssms_object_explorer_custom_stored_procedure.png){:class="img-responsive"}
 3. Insert the SQL-Code below and **[Execute]** the statement to save the process.<br>
 
 	```sql
@@ -114,7 +114,7 @@ For more information, see [Microsoft Documentation: Create a stored procedure](h
 	``` 
 
 4. Open the destination settings in Xtract Universal and select a Column Name Style, e.g., 'PrefixedCode' :number-1:.<br>
-![column_name_style](../assets/images/xu/articles/destination_settings.png){:class="img-responsive"}
+![column_name_style](../assets/images/articles/xu/destination_settings.png){:class="img-responsive"}
 5. Insert following SQL Code into the *Finalization* :number-2: step using **[Edit SQL]**.
 
 	```
@@ -122,7 +122,7 @@ For more information, see [Microsoft Documentation: Create a stored procedure](h
 	```
 
 6. Click **[OK]** to confirm your input.<br>
-![execute stored procedure](../assets/images/xu/articles/exec_sp_column_name_style.png){:class="img-responsive"}
+![execute stored procedure](../assets/images/articles/xu/exec_sp_column_name_style.png){:class="img-responsive"}
 7. Execute the selected extraction and check the Column Name Style changes and results in SSMS.
 
 

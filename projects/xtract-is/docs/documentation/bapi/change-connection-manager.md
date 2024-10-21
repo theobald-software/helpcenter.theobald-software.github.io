@@ -17,9 +17,9 @@ Follow the steps below to change the connnection manager of an {{ bapi }} {{ com
 
 1. In the main window of the {{ bapi }} {{ component }}, click **Change Connection Manager**. 
 This option is only available when there is more than one defined XTRACT Connection Manager. The window "Select Connection Manager" opens.<br>
-![change-connection-manager](../../assets/images/xis/documentation/bapi/change-connection-manager.png){:class="img-responsive"}
+![change-connection-manager](../../assets/images/documentation/components/bapi/xis/change-connection-manager.png){:class="img-responsive"}
 2. Select a Connection Manager from the drop-down-menu.<br>
-![select-connection-manager](../../assets/images/xis/documentation/sap-connection/select-connection-manager.png){:class="img-responsive"}
+![select-connection-manager](../../assets/images/documentation/sap-connection/xis/select-connection-manager.png){:class="img-responsive"}
 3. Click **[OK]** to confirm your selection.
 
 The selected XTRACT connection manager is now assigned to the {{ bapi }} {{ component }}.

@@ -25,7 +25,7 @@ When parameterizing the component using SSIS variables, the *Custom Properties* 
 
 The *Custom Properties* of the {{ bwloader }} {{ component }} are displayed in the "Properties" window. 
 
-![bwcube-properties](../../assets/images/xis/documentation/bwloader/bwloader-properties.png)
+![bwcube-properties](../../assets/images/documentation/components/bwloader/bwloader-properties.png)
 
 List of relevant *Custom Properties*:
 

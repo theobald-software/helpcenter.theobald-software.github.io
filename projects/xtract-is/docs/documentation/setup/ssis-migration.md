@@ -33,7 +33,7 @@ During conversion, the tool creates a backup of your SSIS package. <br>
 	!!! tip "Recommendation"
 		Manually create a backup copy prior to conversion.
 		
-	![XIS_ConversionPreparer_2016](../../assets/images/xis/documentation/setup/XIS_ConversionPreparer_2016.png){:class="img-responsive"}
+	![XIS_ConversionPreparer_2016](../../assets/images/documentation/setup/xis/XIS_ConversionPreparer_2016.png){:class="img-responsive"}
 4. Click **[Prepare]**. The conversion process is started. <br>
 5. To migrate from SQL Server 2016 to SQL Server 2019, follow the instructions in [Migrate from SQL Server 2014/2016 to SQL Server 2019](#migrate-from-sql-server-20142016-to-sql-server-2019).
 
@@ -48,7 +48,7 @@ During conversion, the tool creates a backup of your SSIS package. <br>
 
 1. Open a new Solution in Visual Studio.
 2. Open the project properties and select an SQL server as "Deployment Target Version":<br>
-![VS-Deployment-Target](../../assets/images/xis/documentation/setup/VS_Deployment_Target.png){:class="img-responsive"}
+![VS-Deployment-Target](../../assets/images/documentation/setup/xis/VS_Deployment_Target.png){:class="img-responsive"}
 	- If your SSIS packages have been created by an SSDT/VS version from **after** 2015 for SQL Server 2016, continue with step 6.
 	- If your SSIS packages have been created by an SSTD/VS version from **before** 2015 for SQL Server 2016, select the SQL Server on which your packages have run until now (SQL Server 2014 or SQL Server 2016).
 	- If the SSIS packages have been prepared by the *Xtract IS Conversion Preparer* from [Migrating from SQL Server 2008/2012 to SQL Server 2019](#migrate-from-sql-server-20082012-to-sql-server-2019), select SQL Server 2016.<br>

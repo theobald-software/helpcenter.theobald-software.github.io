@@ -46,7 +46,7 @@ When parameterizing the component using SSIS variables, the *Custom Properties* 
 
 The *Custom Properties* of the {{ deltaq }} {{ component }} are displayed in the "Properties" window. 
 
-![deltaq-properties](../../assets/images/xis/documentation/deltaq/deltaq-properties.png)
+![deltaq-properties](../../assets/images/documentation/components/deltaq/{{ abbr }}/deltaq-properties.png)
 
 List of the relevant *Custom Properties*:
 

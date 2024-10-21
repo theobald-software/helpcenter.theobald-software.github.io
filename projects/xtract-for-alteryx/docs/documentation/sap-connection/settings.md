@@ -5,7 +5,7 @@ description: Overview of SAP connection settings
 
 This page contains an overview of the SAP connection settings in the Xtract data source. 
 
-![Connection-Manager](../../assets/images/xfa/documentation/sap-connection/data-connection-manager-settings.png){:class="img-responsive" }
+![Connection-Manager](../../assets/images/documentation/sap-connection/xfa/data-connection-manager-settings.png){:class="img-responsive" }
 
 ### Xtract Data Source Settings
 

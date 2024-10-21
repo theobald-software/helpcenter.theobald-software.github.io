@@ -21,7 +21,7 @@ This page shows how and where to install Xtract IS.
 	When installing Visual Studio, select the Data Storage & Processing toolset.
 	
 
-![xis_client_server_generell](../../assets/images/xis/documentation/setup/client_server_architektur_xis_generell.png){:class="img-responsive"}
+![xis_client_server_generell](../../assets/images/documentation/setup/xis/client_server_architektur_xis_generell.png){:class="img-responsive"}
 
 The SQL Server runs on the runtime environment. 
 On the runtime environment, the developed SSIS packages are deployed (SSISDB) and can be scheduled by means of SQL Server Agent. 
@@ -35,7 +35,7 @@ For more information, see [Licensing](license.md#install-the-xtract-is-license).
 Execute the `XtractISSetup.exe` file and follow the instructions of the setup program.
 The Xtract IS Setup installs Xtract IS as a plug-in into SSIS.
 
-![XIS_Setup](../../assets/images/xis/documentation/setup/xis_setup-exe.png){:class="img-responsive"}
+![XIS_Setup](../../assets/images/documentation/setup/xis/xis_setup-exe.png){:class="img-responsive"}
 
 For information on how to install a license, see [Licensing](license.md#install-the-xtract-is-license).
 
@@ -82,7 +82,7 @@ start /wait XtractLicenseManager.exe "C:\Program Files\XtractIS\XtractISLicense.
 
 After a successful installation, the Xtract IS {{ components }} are available in the SSIS Toolbox of a Data Flow Task in your Visual Studio Integration Services project.
 
-![XIS_SSIS_Toolbox](../../assets/images/xis/documentation/setup/XIS_SSIS_Toolbox.png){:class="img-responsive"}
+![XIS_SSIS_Toolbox](../../assets/images/documentation/setup/xis/XIS_SSIS_Toolbox.png){:class="img-responsive"}
 
 The Xtract IS {{ components }} may still be invisible due to version incompatibility issues.
 
@@ -91,7 +91,7 @@ If the versions do not match, the necessary Xtract IS extensions will be missing
 
 Change the Target Server version for deployment to display the Xtract IS components in the toolbox.
 
-![XIS_deployment_target_version_vNext](../../assets/images/xis/documentation/setup/VS_Deployment_Target.png){:class="img-responsive"}
+![XIS_deployment_target_version_vNext](../../assets/images/documentation/setup/xis/VS_Deployment_Target.png){:class="img-responsive"}
 
 
 ***
