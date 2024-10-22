@@ -14,18 +14,11 @@ When using [Transaction](./transactions/index.md#parameterize-transactions) and 
 Input parameters require users to pass actual values when running a {{ productName }} service.
 SAP system variables can be also used for parametrization of SAP Table and View integration type using [WHERE Clause](./tables-and-views/where-clause.md/#sap-system-fields).
 
-### Set a parameter
 
-1. Navigate to the  :yunio-nav-services: *Services* menu at the left side navigation area of the Designer.
-2. Click :yunio-copy: to copy the URL of the service definition to your clipboard. <br>
-    ![yunIO-service](../assets/images/yunio/documentation/yunio-services-copy.png){:class="img-responsive"}
-3. Paste the copied URL into a browser of your choice and add an input parameter using the following syntax: `http://[host]:[port]/service/[service name]/?[parameter]=[value]`
-4. Once the parameter is defined, press **[Enter]**.
+### List of Available Parameters
 
-![yunIO-rows](../assets/images/yunio/documentation/parameter-rows.png){:class="img-responsive"}
-
-
-### List of available parameters:
+The number of available parameters depends on the integration type.<br>
+Example: *whereClause* is a parameter specific to the integration type {{ table }}.
 
 Parameter  | Description | Integration Type | Example Syntax
 ------------ | ------------- | ------------- |--------- 
@@ -36,7 +29,21 @@ variant | Name of a variant | Available for [Report](./reports/settings.md/#vari
 skipPopups | Defines how to handle unexpected popup messages that show up at runtime.|Available for [Transaction](./transactions/index.md#skip-popups)|`http://yunio.example:8075/services/RLT10010/?skipPopups=true`
 
 !!! Note
-    When using whereClause parameter, make sure to use single quotation marks. The browser will automatically replace the spaces and convert the quotation marks.
-
+    When defining a [WHERE clause in an editor](tables-and-views/where-clause/#parameterize-the-where-clause), make sure to use single quotation marks around values. 
+	The browser automatically replaces the spaces and converts the quotation marks.
 
 ![yunIO-where](../assets/images/yunio/documentation/parameters-where.png){:class="img-responsive"}
+
+
+### Add Parameters in the Service URL
+
+Follow the steps below to add parameters to a service call:
+
+1. Navigate to the  :yunio-nav-services: *Services* menu at the left side navigation area of the Designer.
+2. Click :yunio-copy: to copy the URL of the service definition to your clipboard. <br>
+    ![yunIO-service](../assets/images/yunio/documentation/yunio-services-copy.png){:class="img-responsive"}
+3. Paste the copied URL into a browser of your choice and add an input parameter using the following syntax: <br>
+`http://[host]:[port]/service/[service name]/?[parameter1]=[value]&[parameter2]=[value]`
+4. Once the parameter is defined, press **[Enter]**.
+
+![yunIO-rows](../assets/images/yunio/documentation/parameter-rows.png){:class="img-responsive"}
