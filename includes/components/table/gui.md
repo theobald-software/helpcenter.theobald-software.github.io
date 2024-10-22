@@ -1,29 +1,6 @@
 
 This section contains an overview and description of the *Tables and Fields* tab in the main window of the {{ table }} {{ component }}. 
-The tab *Tables and Fields* consists of the following subsections:
 
-{% if page.meta.product != "xtract-for-alteryx" %}
-### Link Buttons
-
-![Link Buttons](../../assets/images/documentation/components/table/{{ abbr }}/gui-link-buttons.png){:class="img-responsive"}
-
-{% if page.meta.product != "xtract-is" %}
-
-| Link Button | Description |
-|-------------|-------------|
-| {{ settingsBtn }} | Opens the [{{ Settings }}](settings.md) menu. {{ Settings }} affect only the respective {{ component }}. |
-| {{ parameterBtn }} | Opens the [{{ variables }}](edit-runtime-parameters.md) menu. |
-{% if page.meta.product == "xtract-universal" or page.meta.product == "board-connector" %}| **General Settings** | Opens the [General Settings](general-settings.md) menu. General Settings are the same for all {{ components }}. |  {% endif %}
-
-{% else %} 
-
-| Link Button | Description |
-|-------------|-------------|
-| {{ settingsBtn }} | Opens the [{{ Settings }}](settings.md) menu. {{ Settings }} affect only the respective {{ component }}. |
-| **Xtract IS Info** | Opens the About menu that contains license information and links to useful resources. 
-
-{% endif %}
-{% endif %}
 
 ### Tables
 

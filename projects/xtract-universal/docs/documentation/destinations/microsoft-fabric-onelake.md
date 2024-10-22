@@ -61,8 +61,10 @@ You can copy the URL in the [Microsoft Fabric portal](https://app.fabric.microso
 	
 ![xu-onelake-url](../../assets/images/documentation/destinations/fabric/url.png)
 
-Example:<br>
-`https://onelake.dfs.fabric.microsoft.com/12345678-aaaa-bbbb-cccc-123456789abc/12345678-dddd-ffff-gggg-123456789abc/folder-name`
+
+``` title="Example URL:"
+https://onelake.dfs.fabric.microsoft.com/12345678-aaaa-bbbb-cccc-123456789abc/12345678-dddd-ffff-gggg-123456789abc/folder-name
+```
 
 
 ### File Format
