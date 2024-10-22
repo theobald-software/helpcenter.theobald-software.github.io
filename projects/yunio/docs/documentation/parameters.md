@@ -1,7 +1,6 @@
 ---
 title: Parameters
 description: Dynamize Extractions
-author: Christian Tauchmann, Maia Reichert-Baisch
 ---
 
 {{ productName }} supports dynamization of extractions using input parameters in the following integration types:
