@@ -28,7 +28,7 @@ variant | Name of a variant | Available for [Report](./reports/settings.md/#vari
 skipPopups | Defines how to handle unexpected popup messages that show up at runtime.|Available for [Transaction](./transactions/index.md#skip-popups)|`http://yunio.example:8075/services/RLT10010/?skipPopups=true`
 
 !!! Note
-    When defining a [WHERE clause in an editor](tables-and-views/where-clause/#parameterize-the-where-clause), make sure to use single quotation marks around values. 
+    When defining a [WHERE clause in an editor](tables-and-views/where-clause.md/#parameterize-the-where-clause), make sure to use single quotation marks around values. 
 	The browser automatically replaces the spaces and converts the quotation marks.
 
 ![yunIO-where](../assets/images/yunio/documentation/parameters-where.png){:class="img-responsive"}
