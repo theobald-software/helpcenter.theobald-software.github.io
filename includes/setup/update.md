@@ -24,10 +24,6 @@ Before updating, check the [Changelog](../../changelog.md) for breaking changes:
 Copy all SSIS packages that use {{ productName }} {{ components }}.
 It is recommended to create backups at regular intervals to switch back to the previous version, if necessary.
 
-!!! warning 
-	**Data loss.**<br>
-    System updates or changes can restrict software functionalities and this may lead to data loss.
-    Create a backup of the directory: `{{ installationDir }}\config` at regular intervals.
 	
 {% elif page.meta.product == "xtract-for-alteryx" %}
 
@@ -44,6 +40,7 @@ On the machine that runs the {{ productName}} service, copy the following files 
 - copy the complete `config` and `private` directories into the {{ productName}} installation directory, e.g., `{{ installationDir }}\config`. 
 - optionally, copy the complete `logs` directory to create a backup of the log files. 
 - copy the `{{ setup }}License.json` file to backup your license.
+
 
 !!! warning 
 	**Data security.**<br>
