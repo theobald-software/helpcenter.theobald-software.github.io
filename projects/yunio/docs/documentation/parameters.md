@@ -42,7 +42,7 @@ Follow the steps below to add parameters to a service call:
 2. Click :yunio-copy: to copy the URL of the service definition to your clipboard. <br>
     ![yunIO-service](../assets/images/yunio/documentation/yunio-services-copy.png){:class="img-responsive"}
 3. Paste the copied URL into a browser of your choice and add an input parameter using the following syntax: <br>
-`http://[host]:[port]/service/[service name]/?[parameter1]=[value]&[parameter2]=[value]`
+`http://[host]:[port]/service/[service name]/?[param_1]=[value]&[param_2]=[value]`
 4. Once the parameter is defined, press **[Enter]**.
 
 ![yunIO-rows](../assets/images/yunio/documentation/parameter-rows.png){:class="img-responsive"}
