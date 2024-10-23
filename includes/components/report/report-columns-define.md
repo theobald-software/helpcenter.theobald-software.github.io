@@ -82,11 +82,13 @@ The maximum width of extracted reports is limited to 1024 characters per row.
 
 #### Header pattern
 
-Enter a search pattern (e.g., *Created on*) to detect the table header. 
-The {{ report }} {{ component }} scans the report output for this pattern and uses the complete line this pattern occurs in as the report header.
+Enter a search pattern to detect the table header, e.g., *Created on*. 
+The {{ report }} {{ component }} scans the report output for this pattern and uses the row that contains this pattern as the report header.
+Alternatively, right-click the row that you want to use as a header and select **Select as header** from the context menu.
 
 This setting is usually not required if the report's columns can be [detected automatically](report-columns-define.md/#define-columns-automatically) and *Dynamic column widths and offsets* is active in the main window of the {{ component }}.
-Rows that contain the header pattern displayed in a blue font in the preview section.
+
+<span style="color:blue">Rows that contain the header pattern displayed in a blue font in the preview section.</span>
 
 #### Skip row pattern
 
@@ -105,12 +107,45 @@ For more information, see [Knowledge Base Article: Skip Rows in Reports](../../k
 ### Remove Rows
 
 #### Add row to Skip
+<!---
+![remove rows](../../assets/images/documentation/components/report/remove-rows.png){align=right :class="img-responsive"}
+--->
 
-Adds a specific row that is removed from the result set.
-Rows that are excluded from the result set are displayed in a gray font in the preview section.
+Define specific rows that are removed from the result set. 
 
-### Parse Header Row as New Column
+Click **[Add row to skip]** and enter a string from the row you want to remove, e.g., `**` removes all rows that contain the characters `**`.
+Alternatively, right-click the row you want to remove and select **Ignore/unignore row** from the context menu.
+
+<span style="color:gray">Rows that are excluded from the result set are displayed in a gray font in the preview section.</span>
+
+### Parse Header Row as new Column
 
 #### Add row to parse as column
+<!---
+![parse row as header](../../assets/images/documentation/components/report/parse-row-as-header.png){align=right :class="img-responsive"}
+--->
 
-Rows that are parsed as a new column are displayed in a red font in the preview section.
+Define rows that are added to the result set as columns. 
+This option can be used for reports that contain groups with multiple headers.
+
+To add a new column, click **[Add row to parse as column]**.
+Alternatively, right-click a header row you want to use as a column and select **Parse header row as new column** from the context menu.
+To define the column, enter the following column properties manually or use the [parse helper](#parse-helper) to define the column properties:
+
+| Property | Description | 
+|----------|-------------|
+| *Keyword*  | Enter a string from the row you want to add to the result set as a column. The report is scanned for rows that contain the string.|
+| *Name*     | Enter a name for the new column.|
+| *Offset*   | Define the beginning (offset) of the content that is written into the new column. <br>Example: Enter 0 if the content for the new column is located at the start of the row.<br>Enter 25 if the content starts 25 characters into the row.|
+| *Width*    | Define the width of the new column.|
+
+
+Rows that are parsed as a new column are displayed in a <span style="color:red">red font</span> in the preview section.
+
+#### Parse Helper
+
+Click **[:material-target:]** to open a parse helper that helps you define the column properties.
+
+![parse helper](../../assets/images/documentation/components/report/parse-helper.png){:class="img-responsive"}
+
+<span style="color:red">Rows that are parsed as a new column are displayed in a red font in the preview section.</span>
