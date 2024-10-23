@@ -1,5 +1,16 @@
 [
   {
+    "Version": "2024.10.23.6",
+    "LegacyReleaseDate": "2024-10-23 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Server",
+        "Component": "General",
+        "Message": "Fixed a bug that would not clean up old logs for extractions in subdirectories"
+      }
+    ]
+  },
+  {
     "Version": "2024.10.18.103",
     "LegacyReleaseDate": "2024-10-18 00:00:00Z",
     "Changes": [
