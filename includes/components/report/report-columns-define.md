@@ -1,5 +1,8 @@
 
-This page shows how to define the columns of a report.<br>
+This page shows how to define the columns and rows in the result set of a report extraction.<br>
+
+## Columns
+
 A report column is defined by its name, offset and length. 
 Per default, all columns are of data type *string*. 
 To identify a columns, the report needs to be executed. Columns can then be identified based on the output.
@@ -49,6 +52,15 @@ The output of the report is displayed in the *Load Preview* section.
 	Once a column is set and highlighted with a green background, its width and offset cannot be changed via the graphics editor. 
 	Change it using the *Columns* section.
 
+## Rows
+
+
+Skipping and / or parsing rows is optional. The row settings are located in the tab *Skip and Parse Rows*.
+Knowledge Base Article (Skip rows and Parse rows as Header).
+
+![skip-and-parse-rows](../../assets/images/documentation/components/report/skip-and-parse-rows.png){:class="img-responsive"}
+
+
 ### Row Settings
 
 #### Skip rows from top
@@ -67,3 +79,38 @@ Example: Report RIEQUI20
 #### Report width
 Use this setting in combination with **Report rows per data row**. **Report width** defines the length of each physical row. 
 The maximum width of extracted reports is limited to 1024 characters per row.
+
+#### Header pattern
+
+Enter a search pattern (e.g., *Created on*) to detect the table header. 
+The {{ report }} {{ component }} scans the report output for this pattern and uses the complete line this pattern occurs in as the report header.
+
+This setting is usually not required if the report's columns can be [detected automatically](report-columns-define.md/#define-columns-automatically) and *Dynamic column widths and offsets* is active in the main window of the {{ component }}.
+Rows that contain the header pattern displayed in a blue font in the preview section.
+
+#### Skip row pattern
+
+Enter a search pattern. All report rows that contain the pattern are removed from the result set. 
+Rows are removed *after* the report data was extracted from SAP.
+Regular expressions is supported. Multiple row skip patterns can be entered separated by the pipe symbol '|'.
+
+Example: `2020|2021|-|Sum` removes all rows containing the pattern '2020', '2021', '-' and 'Sum'. 
+
+The skip row setting can be used for skipping header rows that are repeated in the output body of reports.
+For more information, see [Knowledge Base Article: Skip Rows in Reports](../../knowledge-base/skip-rows-in-reports.md).
+
+!!! note
+	This setting is usually not required if the report columns can be [detected automatically](report-columns-define.md/#define-columns-automatically) and *Dynamic column widths and offsets* is checked in the Report window.
+
+### Remove Rows
+
+#### Add row to Skip
+
+Adds a specific row that is removed from the result set.
+Rows that are excluded from the result set are displayed in a gray font in the preview section.
+
+### Parse Header Row as New Column
+
+#### Add row to parse as column
+
+Rows that are parsed as a new column are displayed in a red font in the preview section.
