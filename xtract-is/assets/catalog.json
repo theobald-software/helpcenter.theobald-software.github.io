@@ -1,5 +1,17 @@
 [
   {
+    "Version": "2024.10.24.0",
+    "LegacyReleaseDate": "2024-10-24 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "XtractIS",
+        "Component": "ODP",
+        "Message": "SSIS Variables can now be used for parameterization. View Release Notes for details.",
+        "ReleaseNote": "- Previously defined internal runtime parameters remain valid and can still be used until editing the ODP component.\n- When editing the component make sure to replace previously defined runtime parameters by SSIS Variables as they will be deleted upon saving the component and not available through the 'Custom Properties' section anymore."
+      }
+    ]
+  },
+  {
     "Version": "2024.10.23.7",
     "LegacyReleaseDate": "2024-10-23 00:00:00Z",
     "Changes": [
