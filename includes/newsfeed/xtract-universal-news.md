@@ -1,6 +1,16 @@
 <div class="grid cards" markdown>
 
 
+-   **:material-alert-decagram: Microsoft Fabric (OneLake) Destination**
+
+    ---
+
+    Write SAP Data to a Microsoft Fabric Lakehouse using our new [Microsoft Fabric (OneLake)](documentation/destinations/microsoft-fabric-onelake.md) destination. For more information, refer to our [Whitepaper on Microsoft Fabric](https://theobald-software.com/wp-content/uploads/2024/10/Theobald-Software-Whitepaper-SAP-Data-Integration-in-Microsoft-Fabric_EN.pdf). 
+
+    ---
+
+    :material-clock-time-two-outline: 2024-10-15
+
 -   **SAP Note 3255746: Unpermitted Usage of ODP**
 
     ---
@@ -10,6 +20,16 @@
     ---
 
     :material-clock-time-two-outline: 2024-09-01
+
+-   **:material-alert-decagram: Dataiku Destination**
+
+    ---
+
+    Access your SAP data directly from within Dataiku using our new Xtract Universal plugin for Dataiku. For more information, refer to our [Dataiku](documentation/destinations/dataiku.md) destination.
+
+    ---
+
+    :material-clock-time-two-outline: 2024-08-05
 
 -   **New Version Numbers**
 
