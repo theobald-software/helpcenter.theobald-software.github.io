@@ -5,7 +5,7 @@
 
     ---
 
-    Write SAP Data to a Microsoft Fabric Lakehouse using our new [Microsoft Fabric (OneLake)](documentation/destinations/microsoft-fabric-onelake.md) destination. For more information, refer to our [Whitepaper on Microsoft Fabric](https://theobald-software.com/wp-content/uploads/2024/10/Theobald-Software-Whitepaper-SAP-Data-Integration-in-Microsoft-Fabric_EN.pdf). 
+    Write SAP data to a Microsoft Fabric Lakehouse using our new [Microsoft Fabric (OneLake)](documentation/destinations/microsoft-fabric-onelake.md) destination. For more information, refer to our [Whitepaper on Microsoft Fabric](https://theobald-software.com/wp-content/uploads/2024/10/Theobald-Software-Whitepaper-SAP-Data-Integration-in-Microsoft-Fabric_EN.pdf). 
 
     ---
 
