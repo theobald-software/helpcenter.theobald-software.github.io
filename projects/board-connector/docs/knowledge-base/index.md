@@ -82,7 +82,7 @@ hide:
 
 <div class="mdx-columns" markdown>
 
-- [Alternatives for the ODP Extraction Type :material-alert-decagram:](alternatives-for-odp.md)
+- [Alternatives for the ODP Extraction Type](alternatives-for-odp.md)
 
 </div>
 
@@ -94,7 +94,7 @@ hide:
 
 - [Authorize Access to Reports via Authorization Groups](authorize-access-to-specific-reports.md)
 - [Create the Custom Authorization Object Z_TS_PROG](create-the-custom-authority-object-z-ts-prog.md)
-- [Skip Rows in Reports](skip-rows-in-reports.md)
+- [Parse Reports in {{ productName }} :material-alert-decagram:](parse-reports.md)
 
 </div>
 

@@ -52,7 +52,7 @@ hide:
 
 <div class="mdx-columns" markdown>
 
-- [Alternatives for Xtract ODP :material-alert-decagram:](alternatives-for-odp.md)
+- [Alternatives for Xtract ODP](alternatives-for-odp.md)
 - [Delta Extraction of Sales and Customer Data from SAP](delta-extraction-of-sales-data.md)
 
 </div>
@@ -65,7 +65,7 @@ hide:
 
 - [Authorize Access to Reports via Authorization Groups](authorize-access-to-specific-reports.md)
 - [Create the Custom Authorization Object Z_TS_PROG](create-the-custom-authority-object-z-ts-prog.md)
-- [Skip Rows in Reports](skip-rows-in-reports.md)
+- [Parse Reports in {{ productName }} :material-alert-decagram:](parse-reports.md)
 
 </div>
 
