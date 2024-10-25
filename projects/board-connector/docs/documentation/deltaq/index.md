@@ -9,9 +9,7 @@ The {{ deltaq }} {{ component }} can be used to extract delta data from SAP Data
 This means that only recently added or changed data is extracted, instead of a full load.
 For more information on the delta process, see [Initialize a Delta Process](update-mode.md/#initialize-a-delta-process).
 
-!!! warning
-	**Newer component available.**<br>
-	DeltaQ is an old {{ component }}. If possible, use the newer {{component }} [ODP](../odp/index.md).
+
 
 
 {% include "components/deltaq/prerequisites.md" %}
