@@ -28,7 +28,7 @@ The {{ report }} {{ component }} offers the following options for report extract
 The column widths and offsets are then adjusted dynamically at report runtime. 
 4. Click **[Automatically detect columns]** to execute the report based on the selected variant or selections and detect columns automatically.<br>
 ![Report-automatic-columns](../../assets/images/documentation/components/report/Report_new_automatic_columns.png){:class="img-responsive"}
-5. Click {{ previewBtn }} to display a live preview of the first 100 records.
+5. Click {{ previewBtn }} to display a live preview of the first 100 records. 
 6. Check if the automatically detected columns are accurate. 
 When automatic column detection is not possible, the column names, widths and offsets must be set manually, see [Define Columns manually](report-columns-define.md/#define-columns-manually).
 7. Check the [{{ Settings }}](settings.md){% if page.meta.product == "xtract-universal" or page.meta.product == "board-connector"%} and the [General Settings](general-settings.md){% endif %} before running the {{ extraction }}.

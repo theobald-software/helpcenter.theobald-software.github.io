@@ -39,5 +39,5 @@ The default is `Z_XTRACT_IS_REMOTE_REPORT`.
 
 #### Related Links
 - [Microsoft: Regular Expressions in the Microsoft Online Help](http://msdn.microsoft.com/en-us/library/az24scfc.aspx)
-- [Knowledge Base Article: Skip Rows in Reports](../../knowledge-base/skip-rows-in-reports.md)
+- [Knowledge Base Article: Parse Reports in {{ productName }}](../../knowledge-base/parse-reports.md)
 - [Install Report Custom Function Module](../setup-in-sap/custom-function-module-for-reports.md)

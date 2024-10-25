@@ -50,7 +50,7 @@ Company Code,St,Assignment,DocumentNo,BusA,Type,Doc. Date,PK,Amount in local cur
 
 Follow the steps below to remove rows that contain *sum* caluculations. Note that these rows usually contain * symbols.
 
-For more information on how to manupulate rows in report extractions, see [Documentation: Rows](../documentation/report/report-columns-define/#rows).
+For more information on how to manupulate rows in report extractions, see [Documentation: Define Rows](../documentation/report/report-rows-define.md).
 
 ### Select a Header
 
@@ -87,5 +87,4 @@ The extracted report does not include rows that contain a * symbol.
 ******
 
 #### Related Links
-- [Documentation: Skip Rows by Keyword](../documentation/report/report-columns-define/#skip-rows-by-keyword)
-- [Documentation: Skip Rows by Keyword](../documentation/report/report-columns-define/#parse-header-row-as-new-column)
+- [Documentation: Skip Rows by Keyword](../documentation/report/report-rows-define.md/#skip-rows-by-keyword)
