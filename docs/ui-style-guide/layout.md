@@ -10,6 +10,8 @@ It involves positioning and sizing various components such as text, images, butt
 A good layout design considers factors like hierarchy, balance, spacing, and alignment to ensure that the interface is easy to navigate and understand. 
 It helps users to quickly find the information they need and interact with the interface effectively.
 
+For information on the original yunIO design, refer to the [original design file](https://www.figma.com/proto/7vYwxzAnZjbABK0A4fYHJi/TS-YunIO?node-id=8392%3A820&viewport=2654%2C1653%2C0.4417353570461273&scaling=min-zoom).
+
 ### Containers
 
 
