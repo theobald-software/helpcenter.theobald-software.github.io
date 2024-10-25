@@ -39,11 +39,15 @@ The maximum width of extracted reports is limited to 1024 characters per row.
 
 Enter a search pattern to detect the table header, e.g., *Created on*. 
 The {{ report }} {{ component }} scans the report output for this pattern and uses the row that contains this pattern as the report header.
-Alternatively, right-click the row that you want to use as a header and select **Select as header** from the context menu.
+Any duplicates of the header row are removed from the result set.
+
+Rows that contain the header pattern are displayed in a <span style="color:blue">blue</span> font in the preview section.
+
+!!! tip
+	Alternatively, right-click the row that you want to use as a header and select **Select as header** from the context menu.
 
 This setting is usually not required if the report's columns can be [detected automatically](report-columns-define.md/#define-columns-automatically) and *Dynamic column widths and offsets* is active in the main window of the {{ component }}.
 
-Rows that contain the header pattern are displayed in a <span style="color:blue">blue</span> font in the preview section.
 
 #### Skip rows by pattern
 
@@ -69,7 +73,7 @@ This option can be used to skip header rows that are repeated in the output body
 #### Add Row to Skip
 
 Click **[Add row to skip]** to define a row that is removed from the result set of the report extraction.
-Enter a string from the row you want to remove.
+Enter a unique keyword from the row you want to remove.
 Example: `**` removes all rows that contain the characters `**`.
 
 Rows that are excluded from the result set are displayed in a <span style="color:gray">gray</span> font in the preview section.
@@ -92,7 +96,7 @@ Enter the following column properties manually or use the [parse helper](#parse-
 
 | Property | Description | 
 |----------|-------------|
-| *Keyword*  | Enter a string from the row you want to add to the result set as a column. The report is scanned for rows that contain the string. The keyword search is case sensitive. |
+| *Keyword*  | Enter a unique keyword from the row you want to add to the result set as a column. The report is scanned for rows that contain the string. The keyword search is case sensitive. |
 | *Name*     | Enter a name for the new column.|
 | *Offset*   | Define the beginning (offset) of the content that is written into the new column. <br>Example: Enter 0 if the content for the new column is located at the start of the row.<br>Enter 25 if the content starts 25 characters into the row.|
 | *Width*    | Define the width of the new column.|
@@ -112,7 +116,7 @@ The parse helper is a feature that helps you define properties for new columns:
 1. In the subsection *Parse Header Row as new Column*, click **[Add row to parse as column]**:number-1: to add a new column to the result set. <br>
 ![parse row as header](../../assets/images/documentation/components/report/parse-row-as-header.png){:class="img-responsive"}
 2. Click **[:material-target:]** :number-2:. The window "Parse Helper" opens and a new preview of the report data is fetched. This can take a while.
-3. Under **Search keyword** enter a string from the row you want to add to the result set as a column. Matching rows are displayed in the preview section of the window.
+3. Under **Search keyword** enter a unique keyword from the row you want to parse as a column. Matching rows are displayed in the preview section of the window.
 
 	!!! note
 		The keyword search is case sensitive.

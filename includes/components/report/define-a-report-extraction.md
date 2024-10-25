@@ -22,17 +22,18 @@ The {{ report }} {{ component }} offers the following options for report extract
 
 1. If the report has variants, select a variant from the drop-down-list *Variant*. For more information, see [Choose a Variant](variants-and-selections.md/#choose-a-variant).<br>
 ![Variants-Section](../../assets/images/documentation/components/{{ page.meta.componentFolder }}/{{ abbr }}/variant.png){:class="img-responsive"}
-2. In the section *Selection Screen*, edit a selection criterion you want to change or dynamize :number-2:. For more information, see [Edit Selections](variants-and-selections.md/#edit-selections).<br>
+2. Optional: In the section *Selection Screen*, edit a selection criterion you want to change or dynamize :number-2:. For more information, see [Edit Selections](variants-and-selections.md/#edit-selections).<br>
 ![Sections](../../assets/images/documentation/components/{{ page.meta.componentFolder }}/selections.png)
-3. Optional: If your report has varying column widths, activate **Dynamic column widths and offsets**.
+3. Click {{ previewBtn }} to display a live preview of the first 100 records.
+4. Optional: If your report has varying column widths, activate **Dynamic column widths and offsets**.
 The column widths and offsets are then adjusted dynamically at report runtime. 
-4. Click **[Automatically detect columns]** to execute the report based on the selected variant or selections and detect columns automatically.<br>
-![Report-automatic-columns](../../assets/images/documentation/components/report/Report_new_automatic_columns.png){:class="img-responsive"}
-5. Click {{ previewBtn }} to display a live preview of the first 100 records. 
-6. Check if the automatically detected columns are accurate. 
+5. Click **[Automatically detect columns]** to execute the report based on the selected variant or selections and detect columns automatically.<br>
+![Report-automatic-columns](../../assets/images/documentation/components/report/Report_new_automatic_columns.png){:class="img-responsive"} 
+6. Check if the automatically detected columns are accurate. <br>
 When automatic column detection is not possible, the column names, widths and offsets must be set manually, see [Define Columns manually](report-columns-define.md/#define-columns-manually).
-7. Check the [{{ Settings }}](settings.md){% if page.meta.product == "xtract-universal" or page.meta.product == "board-connector"%} and the [General Settings](general-settings.md){% endif %} before running the {{ extraction }}.
-8. Click **[OK]** to save the {{ component }}.
+7. Optional: Define row settings to remove or parse certain rows, see [Define Rows](report-rows-define.md).
+8. Check the [{{ Settings }}](settings.md){% if page.meta.product == "xtract-universal" or page.meta.product == "board-connector"%} and the [General Settings](general-settings.md){% endif %} before running the {{ extraction }}.
+9. Click **[OK]** to save the {{ component }}.
 
 You can now run the {{ extraction }}{% if page.meta.product == "xtract-universal" %}, see [Execute and Automate Extractions](../execute-and-automate/index.md){% elif page.meta.product == "board-connector" %}, see [Run Extractions](../run-extractions.md){% endif %}.
 
