@@ -1,5 +1,16 @@
 [
   {
+    "Version": "2024.10.25.18",
+    "LegacyReleaseDate": "2024-10-25 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "Report",
+        "Message": "Removed 'Cancel' button from progress dialog for noncancellable preview loading."
+      }
+    ]
+  },
+  {
     "Version": "2024.10.23.4",
     "LegacyReleaseDate": "2024-10-23 00:00:00Z",
     "Changes": [
