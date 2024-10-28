@@ -1,5 +1,16 @@
 [
   {
+    "Version": "2024.10.28.2",
+    "LegacyReleaseDate": "2024-10-28 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "XtractUniversal",
+        "Component": "Snowflake",
+        "Message": "Snowflake: fix for generating COPY & MERGE command in edit SQL window. Fixed file extension for uploaded csv file."
+      }
+    ]
+  },
+  {
     "Version": "2024.10.25.19",
     "LegacyReleaseDate": "2024-10-25 00:00:00Z",
     "Changes": [
