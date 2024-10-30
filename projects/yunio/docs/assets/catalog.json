@@ -1,5 +1,16 @@
 [
   {
+    "Version": "2024.10.30.34",
+    "LegacyReleaseDate": "2024-10-30 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Server",
+        "Component": "General",
+        "Message": "Sources and destinations are now serialized as connections."
+      }
+    ]
+  },
+  {
     "Version": "2024.10.29.27",
     "LegacyReleaseDate": "2024-10-29 00:00:00Z",
     "Changes": [
