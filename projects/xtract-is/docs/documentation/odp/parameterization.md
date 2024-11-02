@@ -6,18 +6,13 @@ description: Runtime Parameters
 This page shows how to parameterize the {{ odp }} {{ component }} using SSIS variables and SSIS expressions to set *Data Flow Properties*.
 
 
-!!! note
-	The [parameters](selections.md/#use-ssis-variables-in-selections) defined in the {{ odp }} {{ component }} are added to the list of data flow properties and custom properties.
-
-
-<!---
 ### Parameterization using SSIS Variables
 
 SSIS variables store values that an SQL Server Integration Services package and its containers, tasks, and event handlers can use at runtime.
 
 You can use SSIS variables for selections.
 Available SSIS variables are listed in the selection settings when parameter input (:runtime-parameters-dynamic:) is selected, see [Edit Selections](selections.md#edit-selections).
--->
+
 
 {% include "components/xis-pass-parameters.md" %}
 
@@ -31,7 +26,6 @@ List of *Data Flow Properties* that can be parameterized:
 | *[Xtract.ODP].[ExtractDataOnDeltaInit]*| Runs a delta initialization with or without extracting data on init, see [Update Mode](update-mode.md).|
 | *[Xtract.ODP].[HierarchyName]*| Applies to Hierarchy DataSources only, see [Select Hierarchy](provider-context.md/#hierarchies). Example: Loop over a list of hierarchies.  |
 | *[Xtract.ODP].[PackageSize]*| Corresponds to the setting [Package Size](settings.md/#package-size). |
-| *[Xtract.ODP].[ &lt; Selection Parameter &gt;]*| Selection parameters that are defined in the component are exposed as properties, see [Edit Parameters](selections.md/#use-ssis-variables-in-selections). |
 
 
 ### Custom Properties of {{ odp }}
@@ -67,3 +61,7 @@ Sets the [update mode](update-mode.md) of an extraction. Permitted values are:
 - (D)elta
 - (R)ecovery
 
+****
+#### Related Links
+- [Microsoft Documentation: Integration Services (SSIS) Variables](https://docs.microsoft.com/en-us/sql/integration-services/integration-services-ssis-variables?view=sql-server-ver15)
+- [Microsoft Documentation: Use Property Expressions in Packages](https://learn.microsoft.com/en-us/sql/integration-services/expressions/use-property-expressions-in-packages)
