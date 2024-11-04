@@ -1,5 +1,17 @@
 [
   {
+    "Version": "2024.11.4.159",
+    "LegacyReleaseDate": "2024-11-04 00:00:00Z",
+    "IsCritical": true,
+    "Changes": [
+      {
+        "Product": "Setup",
+        "Component": "General",
+        "Message": "Fix arithmetic overflow error"
+      }
+    ]
+  },
+  {
     "Version": "2024.11.4.127",
     "LegacyReleaseDate": "2024-11-04 00:00:00Z",
     "Changes": [
