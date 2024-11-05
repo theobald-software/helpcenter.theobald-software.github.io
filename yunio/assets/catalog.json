@@ -1,5 +1,17 @@
 [
   {
+    "Version": "2024.11.5.77",
+    "LegacyReleaseDate": "2024-11-05 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "ERPConnect",
+        "Component": "General",
+        "Message": "Prevent DLL injection by restricting native library search paths",
+        "ReleaseNote": "## What's New?\nThe search paths to automatically load native DLLs, when making calls to the Win32 API and the RFC libraries, have been restricted, to prevent DLL injection.\nThis is a security measure, recommended by Microsoft. More information can be found [here](https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5392).\n\n## Impact\nIf the RFC libraries are placed in the System32 directory, or the directory of your application, this change will not affect you.\nFor other directories, please consider moving the RFC libraries or loading them explicitly, using the `RfcLibraryLoader` class of ERPConnect."
+      }
+    ]
+  },
+  {
     "Version": "2024.11.5.49",
     "LegacyReleaseDate": "2024-11-05 00:00:00Z",
     "Changes": [
