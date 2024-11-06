@@ -6,7 +6,7 @@
       {
         "Product": "XtractUniversal",
         "Component": "Destinations",
-        "Message": "Fixed an issue that caused Dataiku and Sharepoint destination creation to fail. Fixed ConfigConverter.exe to correctly upgrade Azure Storage and Amazon S3 destinations from version 5.x."
+        "Message": "Fixed an issue that caused Dataiku and SharePoint destination creation to fail. Fixed ConfigConverter.exe to correctly upgrade Azure Storage and Amazon S3 destinations from version 5.x."
       }
     ]
   },
@@ -34,7 +34,7 @@
       {
         "Product": "Theobald.Extractors",
         "Component": "Table",
-        "Message": "Added support for decfloat16 and decfloat34 types represented by the packed number."
+        "Message": "Added support for decfloat16 and decfloat34 types represented by the packed number in /THEO/READ_TABLE."
       }
     ]
   },
