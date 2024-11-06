@@ -1,5 +1,16 @@
 [
   {
+    "Version": "2024.11.6.2",
+    "LegacyReleaseDate": "2024-11-06 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "XtractUniversal",
+        "Component": "Destinations",
+        "Message": "Fixed an issue that caused Dataiku and Sharepoint destination creation to fail. Fixed ConfigConverter.exe to correctly upgrade Azure Storage and Amazon S3 destinations from version 5.x."
+      }
+    ]
+  },
+  {
     "Version": "2024.11.5.78",
     "LegacyReleaseDate": "2024-11-05 00:00:00Z",
     "Changes": [
