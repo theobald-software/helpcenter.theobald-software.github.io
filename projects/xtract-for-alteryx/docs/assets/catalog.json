@@ -23,7 +23,7 @@
       {
         "Product": "Theobald.Extractors",
         "Component": "Table",
-        "Message": "Added support for decfloat16 and decfloat34 types represented by the packed number."
+        "Message": "Added support for decfloat16 and decfloat34 types represented by the packed number in /THEO/READ_TABLE."
       }
     ]
   },
