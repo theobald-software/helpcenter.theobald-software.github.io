@@ -20,7 +20,9 @@ To extract ODP data via OData, a corresponding OData service is required.
 The data model of the service specifies which data sets are accessible and how the data is structured. 
 Once the service is registered in the SAP Gateway system, {{ productName }} can consume the service. 
 
-Supported features:
+For more information, see [SAP Help: ODP-Based Data Extraction via OData](https://help.sap.com/doc/saphelp_nw75/7.5.5/en-US/11/853413cf124dde91925284133c007d/frameset.htm)
+
+#### Supported Features
 - All available [ODP contexts](../odp/provider-context.md) of an SAP system are accessible.
 - Delta extraction (with initial full extraction) if the ODP data source supports deltas.
 - Data packaging for large amounts of data, see [Package Size](settings.md/#package-size).
@@ -28,8 +30,10 @@ Supported features:
 - Data extraction from SAP Public Cloud systems<!--, see [Knowledge Base Article: Access Data in the SAP Public Cloud (ODP via Odata)](../../knowledge-base/access-data-in-the-sap-public-cloud-odp.md)--->.
 
 
-For more information, see [SAP Help: ODP-Based Data Extraction via OData](https://help.sap.com/doc/saphelp_nw75/7.5.5/en-US/11/853413cf124dde91925284133c007d/frameset.htm)
+#### Limitations
 
+Delta subscriptions are limited to one SAP user per service. 
+ODP has to be exposed in multiple different services for a single user to have multiple delta subscriptions
 
 ### Prerequisites
 
@@ -41,7 +45,7 @@ For more information, see [SAP Wiki: Replication test with RODPS_REPL_TEST](http
 
 ### SAP Connection for OData Access
 
-While other Xtract {{ components }} use the **Xtract** technology to establish an SAP connection, {{ odpOdata }} requires a generic **Download** data source.
+<!-- While other Xtract {{ components }} use the **Xtract** technology to connect to SAP, -->{{ odpOdata }} requires a generic **Download** data source to access the OData protocol of an SAP system.
 Follow the steps below to create the data source:
 
 1. In the main menu of the Alteryx Designer navigate to **File > Manage Connections**. The window "Connection Manager" opens.
