@@ -1,5 +1,16 @@
 [
   {
+    "Version": "2024.11.8.10",
+    "LegacyReleaseDate": "2024-11-08 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "XtractUniversal",
+        "Component": "Destinations",
+        "Message": "Flat File CSV destination: fix for missing byte order mark when disabling column names in first row setting."
+      }
+    ]
+  },
+  {
     "Version": "2024.11.6.2",
     "LegacyReleaseDate": "2024-11-06 00:00:00Z",
     "Changes": [
