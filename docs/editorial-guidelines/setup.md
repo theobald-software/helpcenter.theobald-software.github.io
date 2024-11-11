@@ -1,6 +1,8 @@
 ---
 title: Installation
+level: classified
 ---
+
 ### Definitions
 MKDocs - OpenSource framework to create static websites (Jekyll alternative with a focus on documentation). <br>
 Material- a theme for MKDocs that comes with multiple useful functionalities and plugins.

@@ -1,5 +1,6 @@
 ---
 title: Symlinks
+level: classified
 ---
 
 The HelpCenter uses symlinks to make general content / resources available in multiple products.

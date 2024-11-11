@@ -1,5 +1,6 @@
 ---
 title: Terminology Check
+level: classified
 ---
 
 You can enable a script in Notepad++ that checks the content of your document against a local termbase.

@@ -1,5 +1,6 @@
 ---
 title: Files & Folders
+level: classified
 ---
 
 The published content of a product's HelpCenter is located in the following directory of the [gitHub repository](https://github.com/theobald-software/helpcenter.theobald-software.github.io):
