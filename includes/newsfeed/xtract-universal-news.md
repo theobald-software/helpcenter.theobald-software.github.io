@@ -5,7 +5,7 @@
 
     ---
 
-    [Join our webinar](https://theobald-software.com/en/optimizing-sap-data-integration-into-microsoft-fabric-onelake-with-xtract-universal/) on 12/05/2024 - 10:00AM PDT on how to optimize SAP data integration with Microsoft Fabric OneLake. 
+    [Join our webinar](https://theobald-software.com/en/optimizing-sap-data-integration-into-microsoft-fabric-onelake-with-xtract-universal/) on 12/05/2024 - 10:00AM PDT to learn how to optimize SAP data integration with Microsoft Fabric OneLake. 
 
     ---
 
