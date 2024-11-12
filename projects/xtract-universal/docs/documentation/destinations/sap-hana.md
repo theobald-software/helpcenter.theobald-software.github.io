@@ -14,6 +14,8 @@ When loading data to SAP Datasphere, SAP Datasphere's underlying HANA database i
 To establish a connection to an SAP HANA database or SAP Datasphere, the *SAP HANA Data Provider for Microsoft ADO.NET* version **2.17.22** is required. 
 The data provider is part of the SAP HANA Client setup.
 
+[:material-download-circle: Download SAP HANA Client Setup version 2.17.22](../../assets/files/xu/SAP_HANA_CLIENT_IMDB_CLIENT20_017_22.zip){ .md-button .md-button--primary }
+
 {% include "destinations/create-destination.md" %}
 The destination details can be defined for an SAP HANA database or for an SAP Datasphere connection.
 
