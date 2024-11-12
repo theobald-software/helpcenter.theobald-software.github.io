@@ -1,6 +1,16 @@
 <div class="grid cards" markdown>
 
 
+-   **:material-video: Webinar: SAP Data Integration with Microsoft Fabric OneLake**
+
+    ---
+
+    [Join our webinar](https://theobald-software.com/en/optimizing-sap-data-integration-into-microsoft-fabric-onelake-with-xtract-universal/) on 12/05/2024 - 10:00AM PDT to learn how to optimize SAP data integration with Microsoft Fabric OneLake. 
+
+    ---
+
+    :material-clock-time-two-outline: 2024-12-05
+
 -   **:material-alert-decagram: Microsoft Fabric (OneLake) Destination**
 
     ---
