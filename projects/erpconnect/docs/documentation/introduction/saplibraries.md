@@ -10,6 +10,7 @@ You can find the SAP Libraries in the SAP Marketplace download area.
 ### Netweaver RFC Library
 
 ERPConnect supports the Netweaver RFC (SDK) as of version 4.6.0. <br>
+Download the Netweaver library from the [SAP Software Download Center](https://me.sap.com/swdcnav/products/_APP=00200682500000001943&_EVENT=DISPHIER&HEADER=Y&FUNCTIONBAR=N&EVENT=TREE&NE=NAVIGATE&ENR=01200314690100002214&V=MAINT).
 For 64-Bit environments the following DLLs are required (XX can vary depending on the version of the NW RRC Libraries):
 - sapnwrfc.dll
 - icuucXX.dll
