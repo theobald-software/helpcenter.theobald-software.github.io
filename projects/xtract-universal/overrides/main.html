@@ -3,6 +3,10 @@
 -#}
 {% extends "base.html" %}
 
+{% block announce %}
+  <p><span class="twemoji" style="font-size: 20px">{% include ".icons/material/video.svg" %} </span> We invite you to join our Webinar <a href="https://theobald-software.com/en/optimizing-sap-data-integration-into-microsoft-fabric-onelake-with-xtract-universal/">Optimizing SAP Data Integration with Microsoft Fabric OneLake</a> on 12/05/2024 - 10:00AM PDT.<p>
+{% endblock %}
+
 {% block extrahead %}
 
   <link rel="stylesheet" href="{{ 'assets/stylesheets/custom.00c04c01.min.css' | url }}">
