@@ -1,6 +1,8 @@
 ---
 title: Troubleshooting
 description: A list of short troubleshooting articles from our support portal.
+search:
+  boost: 2 
 hide:
   - navigation
   - tags
@@ -83,11 +85,11 @@ hide:
 
 - [Customizing check fails for reasons unrelated to missing authority objects](https://support.theobald-software.com/helpdesk/KB/View/25441-deltaq-customizing-check-fails-for-reasons-unrelated-to-missing-authority-objects)
 - [DataSource error ISOURCE_NOT_EXIST or GENERATION_ERROR](https://support.theobald-software.com/helpdesk/KB/View/25444-deltaq-datasource-error-isource-not-exist-or-generation-error)
-- [ERPConnect.CommunicationException: RfcListenAndDispatch failed(RFC_SERIALIZATION_FAILURE)](https://support.theobald-software.com/helpdesk/KB/View/25434-deltaq-erpconnect-communicationexception-rfclistenanddispatch-failed-rfc-serialization-failure-)
+- [ERPConnect.CommunicationException: RfcListenAndDispatch failed ( RFC_SERIALIZATION_FAILURE )](https://support.theobald-software.com/helpdesk/KB/View/25434-deltaq-erpconnect-communicationexception-rfclistenanddispatch-failed-rfc-serialization-failure-)
 - [Error after SAP system upgrade](https://support.theobald-software.com/helpdesk/KB/View/25442-deltaq-error-after-sap-system-upgrade)
 - [Error in Data Selection](https://support.theobald-software.com/helpdesk/KB/View/25438-deltaq-error-in-data-selection)
-- [Error when opening an RFC connection (CM_ALLOCATE_FAILURE_RETRY)](https://support.theobald-software.com/helpdesk/KB/View/25443-deltaq-error-when-opening-an-rfc-connection-cm-allocate-failure-retry-)
-- [Error when opening an RFC connection (IDOC_INBOUND_ASYNCHRONOUS and RSAR_TRFC_DATA_RECEIVED)](https://support.theobald-software.com/helpdesk/KB/View/25432-deltaq-error-when-opening-an-rfc-connection-idoc-inbound-asynchronous-and-rsar-trfc-data-received-)
+- [Error when opening an RFC connection ( CM_ALLOCATE_FAILURE_RETRY )](https://support.theobald-software.com/helpdesk/KB/View/25443-deltaq-error-when-opening-an-rfc-connection-cm-allocate-failure-retry-)
+- [Error when opening an RFC connection ( IDOC_INBOUND_ASYNCHRONOUS and RSAR_TRFC_DATA_RECEIVED )](https://support.theobald-software.com/helpdesk/KB/View/25432-deltaq-error-when-opening-an-rfc-connection-idoc-inbound-asynchronous-and-rsar-trfc-data-received-)
 - [Initialization requirements have not been completed](https://support.theobald-software.com/helpdesk/KB/View/25433-deltaq-initialization-requirements-have-not-been-completed)
 - [Not Authorized for XXX](https://support.theobald-software.com/helpdesk/KB/View/25439-deltaq-not-authorized-for-xxx)
 - [No job found in SAP](https://support.theobald-software.com/helpdesk/KB/View/25437-delta-no-job-found-in-sap)
