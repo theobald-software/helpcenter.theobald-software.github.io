@@ -23,7 +23,8 @@
       {
         "Product": "Theobald.Extractors",
         "Component": "Table",
-        "Message": "Added support for decfloat16 and decfloat34 types represented by the packed number in /THEO/READ_TABLE."
+        "Message": "Updated /THEO/READ_TABLE. Added support for decfloat16 and decfloat34 types represented by the packed number in /THEO/READ_TABLE.",
+        "ReleaseNote": "### What's New?\n- If you need to extract tables with decfloat16 and decfloat34 types represented by the packed number (e.g. DF16_DEC), this update adds this functionality.\n### How to enable it?\n- To make use of this feature, update the /THEO/READ_TABLE package by [importing the provided transport request](https://helpcenter.theobald-software.com/xtract-universal/knowledge-base/import-an-sap-transport-request) into your system."
       }
     ]
   },
