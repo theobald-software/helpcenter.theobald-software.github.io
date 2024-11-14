@@ -1,5 +1,16 @@
 [
   {
+    "Version": "2024.11.14.27",
+    "LegacyReleaseDate": "2024-11-14 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "XtractUniversal",
+        "Component": "AmazonS3",
+        "Message": "Update Microsoft.Identity.Client to 4.66.2"
+      }
+    ]
+  },
+  {
     "Version": "2024.11.8.10",
     "LegacyReleaseDate": "2024-11-08 00:00:00Z",
     "Changes": [
