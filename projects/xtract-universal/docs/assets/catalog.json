@@ -5,7 +5,7 @@
     "Changes": [
       {
         "Product": "XtractUniversal",
-        "Component": "AmazonS3",
+        "Component": "MicrosoftFabricOneLake",
         "Message": "Update Microsoft.Identity.Client to 4.66.2"
       }
     ]
