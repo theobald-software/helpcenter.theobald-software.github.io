@@ -30,6 +30,9 @@ hide:
     _="on click set #search.value to '' then trigger keyup on #search">Clear</button>
 </div>
 
+...
+
+<!--
 <table id="catalogTable" style="table-layout: auto;">
   <thead>
     <tr>
@@ -41,7 +44,6 @@ hide:
     </tr>
   </thead>
   <tbody id="catalogBody">
-    <!-- Placeholder rows -->
       <tr class="placeholder-row">
         <td class="placeholder-cell">6.7.1.0</td>
         <td class="placeholder-cell">2024-05-24</td>
@@ -91,7 +93,6 @@ hide:
         <td class="placeholder-cell"></td>
         <td class="placeholder-cell">Fixed a bug where custom parameters in the finalization step in snowflake destinations would not be evaluated. The columns in the Designer's main view now allow more flexibility when resizing. The run window does not show an error anymore when trying to abort an extraction, which just finished.</td>
       </tr>
-      <!-- Placeholder rows -->
       <tr class="placeholder-row">
         <td class="placeholder-cell">6.7.1.0</td>
         <td class="placeholder-cell">2024-05-24</td>
@@ -144,7 +145,6 @@ hide:
   </tbody>
 </table>
 
-<!-- Modal HTML -->
 <div id="modal" class="modal">
   <div class="modal-content">
     <span class="close">&times;</span>
@@ -152,3 +152,5 @@ hide:
     <div id="modalBody"></div>
   </div>
 </div>
+
+-->

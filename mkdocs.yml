@@ -83,8 +83,8 @@ plugins:
         except:
             - 'CNAME'
             - 'iconsearch_index.json'
-      reload_scripts:
-            - 'assets/javascripts/changelog.js'
+      #reload_scripts:
+      #      - 'assets/javascripts/changelog.js'
       search_index: 'clear'
       html_template_path: "overrides/decrypt-form.tpl.html"
       password_inventory:

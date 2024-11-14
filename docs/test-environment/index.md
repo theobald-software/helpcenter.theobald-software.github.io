@@ -5,4 +5,7 @@ hide:
   - navigation
 ---
 
-This page contains drafts for tehcnical reviews...
+This page can be used to:
+- test new plugins 
+- test new styles
+- publish drafts for technical reviews

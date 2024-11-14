@@ -304,7 +304,7 @@ Example:
 	
 ## Designs
 
-The Gantt plugin offers multiple options to control the design of the diagramm. 
+The Gantt plugin offers multiple options to control the design of the diagramm (including colors). 
 
 === "Default"
 
