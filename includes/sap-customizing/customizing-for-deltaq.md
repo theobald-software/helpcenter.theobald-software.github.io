@@ -87,4 +87,4 @@ Increase this value in case of parallel execution of several {{ deltaq }} {{ com
 ![DeltaQ-Customizing-06](../../assets/images/documentation/sap-customization/DeltaQ-Customizing-06.png){:class="img-responsive" }
 
 !!! note
-	For DeltaQ customizing errors, refer to the [DeltaQ Troubleshooting Guide](https://support.theobald-software.com/helpdesk/KB/View/14424-deltaq-troubleshooting-guide).
+	For DeltaQ customizing errors, refer to the [DeltaQ Troubleshooting](../../troubleshooting.md/#deltaq-troubleshooting).

@@ -145,6 +145,8 @@ The settings for file type *Parquet* correspond to the settings of the *Flat Fil
 
 {% include "destinations/connection-retry.md" %}
 
+{% include "destinations/connection-retry-cloud.md" %}
+
 For more general information about retry strategies in an AWS S3 environment go to the official [AWS Help](https://docs.aws.amazon.com/general/latest/gr/api-retries.html).
 
 {% include "destinations/assign-destination.md" %}

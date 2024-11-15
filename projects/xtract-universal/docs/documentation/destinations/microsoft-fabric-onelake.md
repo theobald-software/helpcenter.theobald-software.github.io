@@ -93,10 +93,10 @@ The settings for file type *Parquet* correspond to the settings of the *Flat Fil
 
 {% include "destinations/connection-retry.md" %}
 
-The retry function is implemented according to [Microsoft Guidelines](https://docs.microsoft.com/en-us/azure/architecture/best-practices/retry-service-specific#retry-strategies).
-The retry logic is based on WebExceptionStatus. 
+{% include "destinations/connection-retry-cloud.md" %}
 
-Rollback applies to situations where extractions fail, not because of connection issues, but due to an error when connecting to SAP. In these cases, Xtract Universal attempts to delete any files created in the Lakehouse during the extraction process.
+Rollback applies to situations where extractions fail, not because of connection issues, but due to an error when connecting to SAP. 
+In these cases, Xtract Universal attempts to delete any files created in the Lakehouse during the extraction process.
 	
 {% include "destinations/assign-destination.md" %}
 

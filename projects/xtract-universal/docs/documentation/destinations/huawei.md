@@ -78,6 +78,8 @@ The settings for file type *Parquet* correspond to the settings of the *Flat Fil
 
 {% include "destinations/connection-retry.md" %}
 
+{% include "destinations/connection-retry-cloud.md" %}
+
 Rollback covers scenarios where extractions do not fail due to connection failures to Huawei but e.g. due to an error when connecting to SAP.
 In those cases Xtract Universal tries to remove any files from the Huawei Cloud storage that were created in the course of the extraction.
 
