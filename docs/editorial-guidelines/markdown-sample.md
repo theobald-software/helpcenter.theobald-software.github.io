@@ -379,7 +379,11 @@ Click **[:material-pencil-outline:]** to edit an entry.
 	
 	:component-hierarchy: `:component-hierarchy:`
 	
+	:component-odata: `:component-odata:`
+	
 	:component-odp: `:component-odp:`
+	
+	:component-odp-odata: `:component-odp-odata:`
 	
 	:component-ohs: `:component-ohs:`
 	
