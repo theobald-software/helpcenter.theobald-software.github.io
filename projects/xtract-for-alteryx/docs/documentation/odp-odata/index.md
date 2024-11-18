@@ -13,12 +13,15 @@ The {{ odpOdata }} {{ component }} can be used to extract ODP-based data via ODa
 ### About ODP via OData
 
 
+
 Open Data Protocol (OData) is a web protocol for querying and updating data.
 In SAP OData can be used to aceess the [Open Data Provisioning (ODP)](../odp/index.md/#about-odp) framework and extract ODP data.
 
 To extract ODP data via OData, a corresponding OData service is required.
 The data model of the service specifies which data sets are accessible and how the data is structured. 
 Once the service is registered in the SAP Gateway system, {{ productName }} can consume the service. 
+
+![odp-odata](../../assets/images/documentation/components/odp-odata/odp-odata.png)
 
 For more information, see [SAP Help: ODP-Based Data Extraction via OData](https://help.sap.com/doc/saphelp_nw75/7.5.5/en-US/11/853413cf124dde91925284133c007d/frameset.htm)
 
@@ -37,11 +40,11 @@ ODP has to be exposed in multiple different services for a single user to have m
 
 ### Prerequisites
 
-- OData services for ODP extractions are available in the SAP system, see [SAP Help: Generating a Service for Extracting ODP Data via OData](https://help.sap.com/doc/saphelp_nw75/7.5.5/en-US/69/b481859ef34bab9cc7d449e6fff7b6/frameset.htm). 
-- DataSources have to be activated in SAP, see [SAP Help: Activating DataSources in the SAP OLTP System](https://help.sap.com/docs/SLH_advanced_compliance_reporting_service/7a60944343e543a1ab99e9b2904dab09/e5d447257a95416190d29638a64a5dfa.html).
+- Alteryx Designer version 2022.3 or higher. The use of {{ odpOdata }} requires access to the Alteryx **Data Connection Manager (DCM)** that was introduced in Alteryx Designer version 2022.3.
+- OData services for ODP extractions must be available in the SAP system, see [SAP Help: Generating a Service for Extracting ODP Data via OData](https://help.sap.com/doc/saphelp_nw75/7.5.5/en-US/69/b481859ef34bab9cc7d449e6fff7b6/frameset.htm). 
+- To extract a DataSource, the DataSource has to be activated in SAP, see [SAP Help: Activating DataSources in the SAP OLTP System](https://help.sap.com/docs/SLH_advanced_compliance_reporting_service/7a60944343e543a1ab99e9b2904dab09/e5d447257a95416190d29638a64a5dfa.html).
 - Before creating ODP (OData) extractions, test the ODP source in SAP using the ABAP report RODPS_REPL_TEST to rule out and troubleshoot ODP problems in the ODP source. 
 For more information, see [SAP Wiki: Replication test with RODPS_REPL_TEST](https://help.sap.com/docs/SUPPORT_CONTENT/bwdabc/3361385256.html).
-- Alteryx Designer version 2022.3 or higher. The use of {{ odpOdata }} requires access to the Alteryx **Data Conenction Manager (DCM)** that was introduced in Alteryx Designer version 2022.3.
 
 ### SAP Connection for OData Access
 
@@ -50,17 +53,18 @@ Follow the steps below to create the data source:
 
 1. In the main menu of the Alteryx Designer navigate to **File > Manage Connections**. The window "Connection Manager" opens.
 2. In the tab *Data Sources* click **[New]** to create a new data source.
-3. Select the **Download** technology to create a URL data source.
-4. Enter the Base URL of your SAP system. The URL can be requested from the SAP Basis team.
-	- Example for SAP On-Premises systems: `http://sap-erp-as05.example.com:50000`.
-	- Example for SAP Public Cloud: `https://myxxxxxx.s4hana.cloud.sap/sap/opu/odata4/`.
+3. Select the **Download** technology to create a URL data source.<br>
+![sap-connection-downlaod](../../assets/images/documentation/components/odp-odata/xfa/sap-connection-download.png)
+4. Enter the Base URL of your SAP system. The URL can be requested from the SAP Basis team. Examples:
+	- SAP On-Premises: `http://sap-erp-as05.example.com:50000`.
+	- SAP Public Cloud: `https://myxxxxxx.s4hana.cloud.sap/sap/opu/odata4/`.
 
 	![sap-connection](../../assets/images/documentation/components/odp-odata/xfa/sap-connection-on-prem.png)
 5. Click **[Save]** to save the SAP connection. The subsection *Connection* opens.
 6. In the subsection *Connection* select the authentication methods *Username and password*.
 7. Select an existing credential or select *Create new Credential*. 
-	- When connecting to an SAP On-Premises system, use the name and password of an SAP dialog user. 
-	- When connecting to an SAP Public Cloud system, use the name and password of an SAP [communication user](https://learning.sap.com/learning-journeys/implement-sap-s-4hana-cloud-public-edition-for-sourcing-and-procurement/setting-up-communication-management_a913171c-c96d-47a9-81ec-dc9ee8754320).
+	- SAP On-Premises systems require the name and password of an SAP dialog user. 
+	- SAP Public Cloud requires the name and password of an  [SAP communication user](https://learning.sap.com/learning-journeys/implement-sap-s-4hana-cloud-public-edition-for-sourcing-and-procurement/setting-up-communication-management_a913171c-c96d-47a9-81ec-dc9ee8754320).
 8. Click **[Link] / [Create and link]** to link the credential to the connection. 
 
 The SAP connection is now available for selection in the {{ odpOdata }} {{ component }}.
@@ -75,7 +79,7 @@ The SAP connection is now available for selection in the {{ odpOdata }} {{ compo
 2. In the field **Search pattern**, enter the name of an OData service :number-1:. Use wildcards (*), if needed.<br>
 ![Look-Up-ODP](../../assets/images/documentation/components/odp/odp_look-up.png){:class="img-responsive"}	
 3. Click **[:magnifying-glass:]**. Search results are displayed.
-4. Select an OData service :number-3: and click **[OK]** to confirm.
+4. Select an OData service :number-2: and click **[OK]** to confirm.
 
 The application now returns to the main window of the {{ component }}.
 
