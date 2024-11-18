@@ -141,7 +141,7 @@
   
 - title: {{ odpOdata }}
   icon: site:assets/images/logos/components/ODP-OData.svg
-  content: Extracts ODP-based data using OData servicea. <br> <br><span class="keyword">SAP Cloud</span> <span class="keyword">ECC</span> <span class="keyword">S4/HANA</span> <span class="keyword">BW</span> <span class="keyword">BW/4HANA</span>
+  content: Extract ODP-based data using OData services - official alternative to {{ odp }}. <br> <br><span class="keyword">SAP Cloud</span> <span class="keyword">ECC</span> <span class="keyword">S4/HANA</span> <span class="keyword">BW</span> <span class="keyword">BW/4HANA</span>
   url: site:documentation/odp-odata/
 
 - title: {{ query }}
