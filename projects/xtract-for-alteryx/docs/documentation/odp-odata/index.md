@@ -21,7 +21,8 @@ To extract ODP data via OData, a corresponding OData service is required.
 The data model of the service specifies which data sets are accessible and how the data is structured. 
 Once the service is registered in the SAP Gateway system, {{ productName }} can consume the service. 
 
-![odp-odata](../../assets/images/documentation/components/odp-odata/odp-odata.png)
+![odp-odata](../../assets/images/documentation/components/odp-odata/odp-odata.png){:width="500px" class="img-responsive"}
+
 
 For more information, see [SAP Help: ODP-Based Data Extraction via OData](https://help.sap.com/doc/saphelp_nw75/7.5.5/en-US/11/853413cf124dde91925284133c007d/frameset.htm)
 
