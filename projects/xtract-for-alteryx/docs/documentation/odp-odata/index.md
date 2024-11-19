@@ -8,23 +8,25 @@ This page shows how to use the {{ odpOdata }} {{ component }}.<br>
 The {{ odpOdata }} {{ component }} can be used to extract ODP-based data via OData services.
 
 !!! note
-	As the use of the RFC modules of the ODP Data Replication API is prohibited by SAP ([SAP Note 3255746](https://me.sap.com/notesLatestChanges/0003255746/E/diff)), the {{ odpOdata }} {{ component }} is now the recommended tool for extracting ODP data.
+	As the use of the RFC modules of the ODP Data Replication API is prohibited by SAP ([SAP Note 3255746](https://me.sap.com/notesLatestChanges/0003255746/E/diff)), the {{ odpOdata }} {{ component }} is the recommended tool for extracting ODP data.
 
 ### About ODP via OData
 
 
-
 Open Data Protocol (OData) is a web protocol for querying and updating data.
-In SAP OData can be used to aceess the [Open Data Provisioning (ODP)](../odp/index.md/#about-odp) framework and extract ODP data.
+In SAP OData can be used to access the [Open Data Provisioning (ODP)](../odp/index.md/#about-odp) framework and extract ODP data, e.g., Hierarchies, Tables, Views, DataSources, etc.
+
 
 To extract ODP data via OData, a corresponding OData service is required.
 The data model of the service specifies which data sets are accessible and how the data is structured. 
 Once the service is registered in the SAP Gateway system, {{ productName }} can consume the service. 
 
-![odp-odata](../../assets/images/documentation/components/odp-odata/odp-odata.png){:width="500px" class="img-responsive"}
+
+![odp-odata](../../assets/images/documentation/components/odp-odata/odp-odata.png){:width="400px" class="img-responsive"}
 
 
 For more information, see [SAP Help: ODP-Based Data Extraction via OData](https://help.sap.com/doc/saphelp_nw75/7.5.5/en-US/11/853413cf124dde91925284133c007d/frameset.htm)
+
 
 #### Supported Features
 - All available [ODP contexts](../odp/provider-context.md) of an SAP system are accessible.
