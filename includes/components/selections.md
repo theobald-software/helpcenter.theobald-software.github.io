@@ -22,25 +22,10 @@ Follow the steps below to edit selection fields and filter data:
 
 1. In the subsection {% if page.meta.componentFolder == "deltaq" %}*OLTP Fields*, click **Edit** {% elif page.meta.componentFolder == "odp" %}*Fields*, click **Edit** {% else %}*Selection Screen*, click **[Edit]** {% endif %}next to the field you want to edit. The window “Edit selection” opens.<br>
 ![Sections](../../assets/images/documentation/components/{{ page.meta.componentFolder }}/selections.png)
-2. Add one or more of the following filter types:<br>
-	- Click **[Single]** to compare the data to a single specified value.<br>
-	- Click **[Range]** to check if the data is (not) within a specified range of values.
-	{% if page.meta.product != "xtract-is" %}- Click **[List]** to check if the data is (not) part of a specified list of values. {% endif %}
+2. Click **[Single]**{% if page.meta.product != "xtract-is" %}, **[Range]** or **[List]**{% else %} or **[Range]**{% endif %} to add a corresponding filter, see [Filter Options](#filter-options).
 3. In the column **Sign** :number-1:, select *Include* to add the filtered data to the output or select *Exclude* to remove the filtered data from the output.<br>
 {% if page.meta.product != "xtract-is" %}![edit-selections](../../assets/images/documentation/components/edit-selections.png){:class="img-responsive"}{% else %}![edit-selections](../../assets/images/documentation/components/edit-selections-xis.png){:class="img-responsive"}{% endif %}
-4. In the column **Option** :number-2:, select an operator. The operator filters data according to the table below.
-	
-	| Operator |  Description    |  
-	|:---------|:-------------|
-	|(not) like pattern |  True if data values do (not) contain to the content of operand 1.{% if page.meta.componentFolder == "odp" %} Not not all ODP contexts and data sources support this option.{% endif %} |
-	|(not) equal to |  True if data is (not) equal to the content of operand 1.|
-	|at least |  True if data is greater than or equal to the content of operand 1.|
-	|more than |  True if data is greater than the content of operand 1.|
-	|at most | True if data is less than or equal to the content of operand 1.|
-	|less than | True if data is less than the content of operand 1.|
-	|(not) between | True if data values do (not) lie between the values of operand 1 and operand 2. |
-	| element of | True if data values are part of operand 1. This option is only available for type *List*. |
-	
+4. In the column **Option** :number-2:, select an operator, see [Filter Options](#filter-options). 
 5. In the column **Value**, enter values directly into the input fields **Low** and **High** or assign existing {% if page.meta.product != "xtract-is" %} [{{ variables }}](edit-runtime-parameters.md) {% else %} {{ variables }} {% endif %} to the selection fields :number-3:.
 
 	!!! note
