@@ -1,5 +1,17 @@
 [
   {
+    "Version": "2024.11.19.117",
+    "LegacyReleaseDate": "2024-11-19 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "XtractUniversal",
+        "Component": "GoogleCloudStorage",
+        "Message": "Google cloud storage destination now supports better retry behavior for some http error status codes.",
+        "ReleaseNote": "- Google cloud storage destination allows to specify if empty data sets should create a file in the google cloud storage.\n- Fixed a bug in every cloud destination where not creating an empty file will leave uploads open and causes recurring costs.\n- Google cloud storage destination now supports subdirectories on destination level.\nMerge branch 2233_gcs_destination_refactoring into master Google cloud storage destination now supports better retry behavior for some http error status codes."
+      }
+    ]
+  },
+  {
     "Version": "2024.11.19.91",
     "LegacyReleaseDate": "2024-11-19 00:00:00Z",
     "Changes": [
