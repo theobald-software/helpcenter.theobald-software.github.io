@@ -161,7 +161,7 @@ This extension allows you to include a library of rules to encourage standards a
 `C:\Users\AppData\Local\Programs\Microsoft VS Code\custom-rules\term-checker.js`.
 3. Copy the following code into the java script file:
 
-	```java
+	```js
 	const fs = require('fs');
 	const path = require('path');
 
@@ -226,7 +226,7 @@ Unpermitted terms have a wavy green underline. Hover over the word to display al
 !!! tip
 	You can add additional rules, e.g., checks for passive voice or checks for max number of words in a sentence:
 	
-	```java
+	```js
 	module.exports = {
 		names: ["Simplified Technical English"],
 		description: "Ensure the text complies with ASD-STE100",
