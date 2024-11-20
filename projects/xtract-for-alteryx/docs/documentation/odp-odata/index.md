@@ -33,7 +33,6 @@ For more information, see [SAP Help: ODP-Based Data Extraction via OData](https:
 - Delta extraction (with initial full extraction) if the ODP data source supports deltas.
 - Data packaging for large amounts of data, see [Package Size](settings.md/#package-size).
 - Selections to filter the data before extraction, see [Selections](selections.md).
-- Data extraction from SAP Public Cloud systems<!--, see [Knowledge Base Article: Access Data in the SAP Public Cloud (ODP via Odata)](../../knowledge-base/access-data-in-the-sap-public-cloud-odp.md)--->.
 
 
 #### Limitations
