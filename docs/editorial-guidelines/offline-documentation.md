@@ -1,5 +1,6 @@
 ---
 title: Offline Documentation
+level: classified
 ---
 
 The following HelpCenters can be exported as an offline website:

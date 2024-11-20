@@ -12,3 +12,4 @@ RFC server functions are routines that can be called by ABAP programs, see [SAP 
 Apart from the client functionality that allows function modules or BAPIs to be accessed in the SAP system, ERPConnect also offers the development of a server function.
 ERPConnect supports Transactional RFC functions. 
 
+

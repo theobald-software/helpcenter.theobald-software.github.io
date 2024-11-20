@@ -1,5 +1,6 @@
 ---
 title: Add new Pages / Articles
+level: classified
 ---
 
 What to consider when creating new pages in a product's user documentation or knowledge base.

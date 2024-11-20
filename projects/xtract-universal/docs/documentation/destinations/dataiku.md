@@ -1,7 +1,6 @@
 ---
 title: Dataiku
 description: Write SAP data to a Dataiku destination
-status: new
 ---
 
 This page shows how to set up and use the {{ page.meta.title }} destination. 

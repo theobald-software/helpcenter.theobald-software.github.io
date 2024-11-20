@@ -1,5 +1,113 @@
 [
   {
+    "Version": "2024.11.19.61",
+    "LegacyReleaseDate": "2024-11-19 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "ERPConnect",
+        "Component": "General",
+        "Message": "Fixed possible XXE vulnerabilities in XML parsing"
+      }
+    ]
+  },
+  {
+    "Version": "2024.11.5.76",
+    "LegacyReleaseDate": "2024-11-05 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "ERPConnect",
+        "Component": "General",
+        "Message": "Prevent DLL injection by restricting native library search paths",
+        "ReleaseNote": "## What's New?\nThe search paths to automatically load native DLLs, when making calls to the Win32 API and the RFC libraries, have been restricted, to prevent DLL injection.\nThis is a security measure, recommended by Microsoft. More information can be found [here](https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5392).\n\n## Impact\nIf the RFC libraries are placed in the System32 directory, or the directory of your application, this change will not affect you.\nFor other directories, please consider moving the RFC libraries or loading them explicitly, using the `RfcLibraryLoader` class of ERPConnect."
+      }
+    ]
+  },
+  {
+    "Version": "2024.11.5.48",
+    "LegacyReleaseDate": "2024-11-05 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "ERPConnect",
+        "Component": "General",
+        "Message": "Add RfcLibraryLoader to explicity load RFC SDK from an absolute directory path"
+      },
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "Table",
+        "Message": "Updated /THEO/READ_TABLE. Added support for decfloat16 and decfloat34 types represented by the packed number in /THEO/READ_TABLE.",
+        "ReleaseNote": "### What's New?\n- If you need to extract tables with decfloat16 and decfloat34 types represented by the packed number (e.g. DF16_DEC), this update adds this functionality.\n### How to enable it?\n- To make use of this feature, update the /THEO/READ_TABLE package by [importing the provided transport request](https://helpcenter.theobald-software.com/xtract-universal/knowledge-base/import-an-sap-transport-request) into your system."
+      }
+    ]
+  },
+  {
+    "Version": "2024.11.4.157",
+    "LegacyReleaseDate": "2024-11-04 00:00:00Z",
+    "IsCritical": true,
+    "Changes": [
+      {
+        "Product": "Setup",
+        "Component": "General",
+        "Message": "Fix arithmetic overflow error"
+      }
+    ]
+  },
+  {
+    "Version": "2024.11.4.126",
+    "LegacyReleaseDate": "2024-11-04 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Common",
+        "Component": "General",
+        "Message": "Prevent DLL injection by restricting Win32 API search paths"
+      }
+    ]
+  },
+  {
+    "Version": "2024.10.31.5",
+    "LegacyReleaseDate": "2024-10-31 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "XtractIS",
+        "Component": "General",
+        "Message": "Added support for decimal timestamp data elements and posting period data type ACCP."
+      }
+    ]
+  },
+  {
+    "Version": "2024.10.25.17",
+    "LegacyReleaseDate": "2024-10-25 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "Report",
+        "Message": "Removed 'Cancel' button from progress dialog for noncancellable preview loading."
+      }
+    ]
+  },
+  {
+    "Version": "2024.10.24.0",
+    "LegacyReleaseDate": "2024-10-24 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "XtractIS",
+        "Component": "ODP",
+        "Message": "SSIS Variables can now be used for parameterization. View Release Notes for details.",
+        "ReleaseNote": "- Previously defined internal runtime parameters remain valid and can still be used until editing the ODP component.\n- When editing the component make sure to replace previously defined runtime parameters by SSIS Variables as they will be deleted upon saving the component and not available through the 'Custom Properties' section anymore."
+      }
+    ]
+  },
+  {
+    "Version": "2024.10.23.7",
+    "LegacyReleaseDate": "2024-10-23 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "XtractIS",
+        "Component": "DeltaQ",
+        "Message": "Fixed a bug in the maintenance window which would not consider correctly parametrized logical destination"
+      }
+    ]
+  },
+  {
     "Version": "2024.10.18.100",
     "LegacyReleaseDate": "2024-10-18 00:00:00Z",
     "Changes": [

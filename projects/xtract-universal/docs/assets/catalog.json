@@ -1,5 +1,179 @@
 [
   {
+    "Version": "2024.11.19.117",
+    "LegacyReleaseDate": "2024-11-19 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "XtractUniversal",
+        "Component": "GoogleCloudStorage",
+        "Message": "Google cloud storage destination now supports better retry behavior for some http error status codes.",
+        "ReleaseNote": "- Google cloud storage destination allows to specify if empty data sets should create a file in the google cloud storage.\n- Fixed a bug in every cloud destination where not creating an empty file will leave uploads open and causes recurring costs.\n- Google cloud storage destination now supports subdirectories on destination level."
+      }
+    ]
+  },
+  {
+    "Version": "2024.11.19.91",
+    "LegacyReleaseDate": "2024-11-19 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "ERPConnect",
+        "Component": "General",
+        "Message": "Fixed possible XXE vulnerabilities in XML parsing"
+      }
+    ]
+  },
+  {
+    "Version": "2024.11.14.27",
+    "LegacyReleaseDate": "2024-11-14 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "XtractUniversal",
+        "Component": "MicrosoftFabricOneLake",
+        "Message": "Update Microsoft.Identity.Client to 4.66.2"
+      }
+    ]
+  },
+  {
+    "Version": "2024.11.8.10",
+    "LegacyReleaseDate": "2024-11-08 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "XtractUniversal",
+        "Component": "Destinations",
+        "Message": "Flat File CSV destination: fix for missing byte order mark when disabling column names in first row setting."
+      }
+    ]
+  },
+  {
+    "Version": "2024.11.6.2",
+    "LegacyReleaseDate": "2024-11-06 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "XtractUniversal",
+        "Component": "Destinations",
+        "Message": "Fixed an issue that caused Dataiku and SharePoint destination creation to fail. Fixed ConfigConverter.exe to correctly upgrade Azure Storage and Amazon S3 destinations from version 5.x."
+      }
+    ]
+  },
+  {
+    "Version": "2024.11.5.78",
+    "LegacyReleaseDate": "2024-11-05 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "ERPConnect",
+        "Component": "General",
+        "Message": "Prevent DLL injection by restricting native library search paths",
+        "ReleaseNote": "## What's New?\nThe search paths to automatically load native DLLs, when making calls to the Win32 API and the RFC libraries, have been restricted, to prevent DLL injection.\nThis is a security measure, recommended by Microsoft. More information can be found [here](https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5392).\n\n## Impact\nIf the RFC libraries are placed in the System32 directory, or the directory of your application, this change will not affect you.\nFor other directories, please consider moving the RFC libraries or loading them explicitly, using the `RfcLibraryLoader` class of ERPConnect."
+      }
+    ]
+  },
+  {
+    "Version": "2024.11.5.50",
+    "LegacyReleaseDate": "2024-11-05 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "ERPConnect",
+        "Component": "General",
+        "Message": "Add RfcLibraryLoader to explicity load RFC SDK from an absolute directory path"
+      },
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "Table",
+        "Message": "Updated /THEO/READ_TABLE. Added support for decfloat16 and decfloat34 types represented by the packed number in /THEO/READ_TABLE.",
+        "ReleaseNote": "### What's New?\n- If you need to extract tables with decfloat16 and decfloat34 types represented by the packed number (e.g. DF16_DEC), this update adds this functionality.\n### How to enable it?\n- To make use of this feature, update the /THEO/READ_TABLE package by [importing the provided transport request](https://helpcenter.theobald-software.com/xtract-universal/knowledge-base/import-an-sap-transport-request) into your system."
+      }
+    ]
+  },
+  {
+    "Version": "2024.11.4.160",
+    "LegacyReleaseDate": "2024-11-04 00:00:00Z",
+    "IsCritical": true,
+    "Changes": [
+      {
+        "Product": "Setup",
+        "Component": "General",
+        "Message": "Fix arithmetic overflow error"
+      }
+    ]
+  },
+  {
+    "Version": "2024.11.4.128",
+    "LegacyReleaseDate": "2024-11-04 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Common",
+        "Component": "General",
+        "Message": "Prevent DLL injection by restricting Win32 API search paths"
+      }
+    ]
+  },
+  {
+    "Version": "2024.10.30.35",
+    "LegacyReleaseDate": "2024-10-30 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Server",
+        "Component": "General",
+        "Message": "Sources and destinations are now serialized as connections."
+      }
+    ]
+  },
+  {
+    "Version": "2024.10.29.28",
+    "LegacyReleaseDate": "2024-10-29 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "XtractUniversal",
+        "Component": "Server",
+        "Message": "The default age for logs to be deleted changes from 7 to 30 days."
+      }
+    ]
+  },
+  {
+    "Version": "2024.10.28.2",
+    "LegacyReleaseDate": "2024-10-28 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "XtractUniversal",
+        "Component": "Snowflake",
+        "Message": "Snowflake: fix for generating COPY & MERGE command in edit SQL window. Fixed file extension for uploaded csv file."
+      }
+    ]
+  },
+  {
+    "Version": "2024.10.25.19",
+    "LegacyReleaseDate": "2024-10-25 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "Report",
+        "Message": "Removed 'Cancel' button from progress dialog for noncancellable preview loading."
+      }
+    ]
+  },
+  {
+    "Version": "2024.10.23.5",
+    "LegacyReleaseDate": "2024-10-23 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Server",
+        "Component": "General",
+        "Message": "Fixed a bug that would not clean up old logs for extractions in subdirectories"
+      }
+    ]
+  },
+  {
+    "Version": "2024.10.21.0",
+    "LegacyReleaseDate": "2024-10-21 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "XtractUniversal",
+        "Component": "Destinations",
+        "Message": "Fixed a bug in S3 and Huawei Cloud OBS destinations where creating an empty file\nwould cause an error."
+      }
+    ]
+  },
+  {
     "Version": "2024.10.18.102",
     "LegacyReleaseDate": "2024-10-18 00:00:00Z",
     "Changes": [

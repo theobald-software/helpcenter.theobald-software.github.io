@@ -83,12 +83,12 @@ plugins:
         except:
             - 'CNAME'
             - 'iconsearch_index.json'
-      reload_scripts:
-            - 'assets/javascripts/changelog.js'
+      #reload_scripts:
+      #      - 'assets/javascripts/changelog.js'
       search_index: 'clear'
       html_template_path: "overrides/decrypt-form.tpl.html"
       password_inventory:
-          classified: 'TheobaldStuttgart'
+          classified: 'nCeRG50G5lkOTInSPcJ6'
       remember_password: True
       title_prefix: ''
       summary: 'Restricted Content' 

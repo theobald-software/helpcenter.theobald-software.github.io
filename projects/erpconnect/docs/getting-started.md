@@ -16,8 +16,8 @@ For information on system requirements, see [Requirements](documentation/introdu
 3. Download one of the following SAP libraries from the SAP Marketplace download area: 
 	- [Classic RFC library](documentation/introduction/saplibraries.md#client-protocol-rfc-librfc32dll)
 	- [Netweaver RFC library](documentation/introduction/saplibraries.md#netweaver-rfc-library)
-4. When using a 64-bit system, copy the 64-bit version of the library to the `\System32` folder.<br>
-When using a 32-bit system, copy the 32-Bit Version of librfc32.dll to the `\SysWoW64` folder.
+4. When using a 64-bit system, copy the 64-bit version of the library to the `C:\Windows\System32` folder.<br>
+When using a 32-bit system, copy the 32-Bit Version of librfc32.dll to the `C:\Windows\SysWoW64` folder.
 5. Add the ERPConnect.dll class library as a reference to your project. <br>
 The library is located in the ERPConnect installation directory, e.g., `C:\Program Files\ERPConnect`.
 

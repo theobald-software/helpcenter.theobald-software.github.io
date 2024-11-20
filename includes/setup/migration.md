@@ -35,9 +35,8 @@ Use the `config` directory to set up a version control system or to create manua
 |:-------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <pre>extractions</pre> | Directory containing the defined {{ components }}. Each sub-directory contains an {{ extraction }} of the same name.          |
 | <pre>servers</pre>     | Directory containing the [server settings](../server/server-settings.md).                                                                                        |
-| <pre>sources</pre>     | Directory containing [SAP connections](../sap-connection/index.md). Each sub-directory contains a source of the same name.                                              |
+| <pre>connections</pre>     | Directory containing [SAP connections](../sap-connection/index.md){% if page.meta.product == "xtract-universal" %} and [Destinations](../destinations/index.md){% endif %}. Each sub-directory contains a source {% if page.meta.product == "xtract-universal" %}or destination {% endif %}of the same name.                                              |
 | <pre>version.txt</pre> | Text file containing the product version of the current configuration, see [Installation](installation.md/#installation-directory-files).|
-{% if page.meta.product == "xtract-universal" %}| <pre>destinations</pre> | Directory containing the destinations. Each .json file contains a destination of the same name. | {% endif %}
 
 
 ****

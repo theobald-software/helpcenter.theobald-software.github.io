@@ -1,5 +1,6 @@
 ---
 title: Glossary
+level: classified
 ---
 
 ### `Front Matter`

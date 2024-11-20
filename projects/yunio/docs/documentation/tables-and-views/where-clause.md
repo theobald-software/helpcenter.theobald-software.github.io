@@ -12,7 +12,7 @@ Enter WHERE clauses manually in *Text mode* or use the [WHERE Clause Editor](#wh
 
 ## Parameterize the WHERE Clause
 
-The WHERE clause can be parameterized in the request body of the service. 
+The WHERE clause can be parameterized directly in the [service URL](../parameters.md/#add-parameters-in-the-service-url) or in the request body of the service. 
 
 ![WHERE-Clause in Postman](../../assets/images/yunio/documentation/postman-input.png){:class="img-responsive"}
 

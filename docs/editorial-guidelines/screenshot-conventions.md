@@ -1,5 +1,6 @@
 ---
 title: Screenshot conventions
+level: classified
 ---
 
 ### About screenshot conventions

@@ -1,5 +1,6 @@
 ---
 title: Editorial Guidelines
+level: classified
 hide:
   - nav
 ---

@@ -9,8 +9,7 @@ There are two types of {{ variables }}:
 	
 	Follow the steps below to create a scalar {{ variable }}:
 	
-	1. In the main window of the component click {{ parameterBtn }}. 
-	The window “Edit Runtime Parameters” opens.<br>
+	1. {%if page.meta.componentFolder == "table" %}Open the *Edit Runtime Parameters* tab.{% else %}In the main window of the component click {{ parameterBtn }}. The window “Edit Runtime Parameters” opens. {% endif %}<br>
 	![open-edit-runtime-parameters](../../assets/images/documentation/components/{{ page.meta.componentFolder }}/{{ abbr }}/open-edit-runtime-parameters.png){:class="img-responsive"}
 	2. Click **[Add Scalar]** to define scalar parameters to be used as placeholders for actual values.
 	The placeholders need to be populated with actual values at runtime.<br>

@@ -1,5 +1,6 @@
 ---
 title: Terminology Check
+level: classified
 ---
 
 You can enable a script in Notepad++ that checks the content of your document against a local termbase.
@@ -34,7 +35,10 @@ The json file uses the following format to define unpermitted terms and permitte
 ```
 
 
-### Activate Terminology Checks in Notepad++
+### Activate Checks in Notepad++
+
+Follow the steps below to add a python script to Notepad++ that checks your terminology in realtime:
+
 
 1. Install the PythonScript Plugin:
     - Open Notepad++.
@@ -144,3 +148,118 @@ The json file uses the following format to define unpermitted terms and permitte
 8. Click **[OK]** and restart Notepad++.
 
 The script now runs in the background and checks the current document against the `terminology.json` file for unpermitted terms.
+
+![notepad](../assets/images/editorial-guide/term-checker.gif){:class="img-responsive" style="border:1px solid black;"}
+
+### Activate Checks in VS Code
+
+Follow the steps below to make Visual Studio Code check your terminology in realtime:
+
+1. Install the [Markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint) extension. 
+This extension allows you to include a library of rules to encourage standards and consistency. 
+2. To add a custom rule, create a new java script file, e.g., in the installation directory of Visual Studio Code:<br>
+`C:\Users\AppData\Local\Programs\Microsoft VS Code\custom-rules\term-checker.js`.
+3. Copy the following code into the java script file:
+
+	```js
+	const fs = require('fs');
+	const path = require('path');
+
+	// Load the JSON file with unpermitted terms
+	const termsPath = "C:/Source/helpcenter.theobald-software.github.io/docs/terminology.json";
+	const terms = JSON.parse(fs.readFileSync(termsPath, 'utf8'));
+
+	module.exports = {
+		names: ["terminology check"],
+		description: "Unpermitted term!",
+		tags: ["terminology"],
+		function: function rule(params, onError) {
+			// Iterate through each line in the Markdown document
+			params.tokens.forEach((token) => {
+				if (token.type === "paragraph_open") {
+					const lineNumber = token.lineNumber;
+					const lineText = params.lines[lineNumber - 1];
+
+					// Check for unpermitted terms
+					Object.entries(terms).forEach(([unpermittedTerm, alternatives]) => {
+						const regex = new RegExp(`\\b${unpermittedTerm}\\b`, 'gi');
+						let match;
+						while ((match = regex.exec(lineText)) !== null) {
+							onError({
+								lineNumber,
+								detail: `Use instead: ${alternatives.join(", ")}`,
+								range: [match.index + 1, unpermittedTerm.length],
+							});
+						}
+					});
+				}
+			});
+		}
+	};
+	```
+4. Save the file and open Visual Studio Code.
+5. Navigate to **File > Preferences > Settings** and scroll down to the settings of your lint extension.<br>
+![vs-code-custom-rule](../assets/images/editorial-guide/vs-code-custom-rule.png)
+6. Enter the path to the java script of the new custom rule, e.g.
+`C:\Users\AppData\Local\Programs\Microsoft VS Code\custom-rules\term-checker.js`
+7. Open a markdown file in Visual Studio Code and test the rule. Example:<br>
+![vs-code-test](../assets/images/editorial-guide/vs-code-test.png)
+
+The script now runs in the background and checks the current document against the termbase.json file for unpermitted terms. 
+Unpermitted terms have a wavy green underline. Hover over the word to display alternative terms. 
+
+!!! note
+	Most rules of the Markdownlint extension are enabled by default. 
+	They cause similar highlights in your markdown text. You can disable rules via **File > Preferences > Settings > Extensions > markdownlint > Edit in settings.json**. 
+	In the settings.json file, add the rules you want to disable.
+	Example:
+
+	```json
+	"markdownlint.config": {
+		"MD013": false,   // Disables line-length rule
+		"MD033": false,   // Disables inline HTML rule
+		"MD041": false,   // Disables first-line header rule
+		"MD007": { "indent": 4 }  // Configures unordered list indentation to 4 spaces
+	}
+	```
+	
+!!! tip
+	You can add additional rules, e.g., checks for passive voice or checks for max number of words in a sentence:
+	
+	```js
+	module.exports = {
+		names: ["Simplified Technical English"],
+		description: "Ensure the text complies with ASD-STE100",
+		tags: ["style", "STE"],
+		function: function rule(params, onError) {
+
+			const passiveVoicePattern = /\b(used|done|was|were|are|been|being)\s+\w+ed\b/i; // Matches passive voice.
+
+			params.lines.forEach((line, lineNumber) => {
+
+				// Check for passive voice
+				if (passiveVoicePattern.test(line)) {
+					onError({
+						lineNumber: lineNumber + 1,
+						detail: "Avoid passive voice; use active voice instead.",
+						context: line,
+					});
+				}
+
+				// Check if sentence exceeds 20 words
+				const sentences = line.split(/[.?!]/); // Split by sentence-ending punctuation
+				sentences.forEach((sentence) => {
+					const wordCount = sentence.trim().split(/\s+/).length; // Count words in the sentence
+					if (wordCount > 20) {
+						onError({
+							lineNumber: lineNumber + 1,
+							detail: `Sentence exceeds 20 words (${wordCount} words). Consider breaking it into shorter sentences.`,
+							context: sentence.trim(),
+						});
+					}
+				});
+			});
+		},
+	};
+
+	```

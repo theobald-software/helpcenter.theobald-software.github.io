@@ -1,5 +1,6 @@
 ---
 title: LinkChecker
+level: classified
 ---
 
 

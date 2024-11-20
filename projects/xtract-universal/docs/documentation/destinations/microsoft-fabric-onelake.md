@@ -1,7 +1,7 @@
 ---
 title: Microsoft Fabric (OneLake)
 description: Write SAP data to Microsoft Fabric OneLake
-status: beta
+status: new
 attempt: seven
 ---
 
@@ -61,8 +61,10 @@ You can copy the URL in the [Microsoft Fabric portal](https://app.fabric.microso
 	
 ![xu-onelake-url](../../assets/images/documentation/destinations/fabric/url.png)
 
-Example:<br>
-`https://onelake.dfs.fabric.microsoft.com/12345678-aaaa-bbbb-cccc-123456789abc/12345678-dddd-ffff-gggg-123456789abc/folder-name`
+
+``` title="Example URL:"
+https://onelake.dfs.fabric.microsoft.com/12345678-aaaa-bbbb-cccc-123456789abc/12345678-dddd-ffff-gggg-123456789abc/folder-name
+```
 
 
 ### File Format
@@ -91,10 +93,10 @@ The settings for file type *Parquet* correspond to the settings of the *Flat Fil
 
 {% include "destinations/connection-retry.md" %}
 
-The retry function is implemented according to [Microsoft Guidelines](https://docs.microsoft.com/en-us/azure/architecture/best-practices/retry-service-specific#retry-strategies).
-The retry logic is based on WebExceptionStatus. 
+{% include "destinations/connection-retry-cloud.md" %}
 
-Rollback applies to situations where extractions fail, not because of connection issues, but due to an error when connecting to SAP. In these cases, Xtract Universal attempts to delete any files created in the Lakehouse during the extraction process.
+Rollback applies to situations where extractions fail, not because of connection issues, but due to an error when connecting to SAP. 
+In these cases, Xtract Universal attempts to delete any files created in the Lakehouse during the extraction process.
 	
 {% include "destinations/assign-destination.md" %}
 

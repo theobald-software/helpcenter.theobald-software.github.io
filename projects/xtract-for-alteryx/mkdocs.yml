@@ -249,8 +249,8 @@ extra:
   report: Xtract Report
   settings: extraction settings
   Settings: Extraction Settings
-  settingsBtn: __[:material-cog:Extraction Settings]__
-  parameterBtn: __[Edit parameters]__
+  settingsBtn: __[Extraction Settings]__
+  parameterBtn: __[Edit Parameters]__
   variable: runtime parameter
   variables: runtime parameters
   Variables: Runtime parameters
