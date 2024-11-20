@@ -4,6 +4,7 @@ description: Write SAP data to a Huawei Cloud OBS destination
 destination: huawei
 status: beta
 attempt: seven
+location: bucket
 ---
 
 This page shows how to set up and use the {{ page.meta.title }} destination. 
@@ -44,12 +45,7 @@ Click **[:designer-refresh:]** to refresh the list of available buckets.
 
 ### Misc
 
-#### Folder path
-Option to create a folder structure within the container for saving files.
-Script expressions are supported, see [**Destination Settings > Folder**](#folder).
-
-For creating a single folder, enter a folder name without slashes: `[folder]` <br>
-Subfolders are supported and can be defined using the following syntax: `[folder]/[subfolder_1]/[subfolder_2]/[..]`
+{% include "destinations/cloud-folder-path.md" %}
 
 ### File Format
 
@@ -96,12 +92,7 @@ In those cases Xtract Universal tries to remove any files from the Huawei Cloud 
 
 {% include "destinations/date-conversion.md" %}
 
-### Folder
-
-Option to create a folder structure within the container for saving files, see [Destination Details > Folder Path](#folder-path).
-
-For creating a single folder, enter a folder name without slashes: `[folder]` <br>
-Subfolders are supported and can be defined using the following syntax: `[folder]/[subfolder_1]/[subfolder_2]/[..]`
+{% include "destinations/cloud-folder.md" %}
 
 {% include "parameters/folder-script-expressions.md" %}
 

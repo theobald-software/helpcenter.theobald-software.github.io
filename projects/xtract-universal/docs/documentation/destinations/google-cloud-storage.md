@@ -3,6 +3,7 @@ title: Google Cloud Storage
 description: Write SAP data to a Google Cloud Storage destination
 destination: google
 attempt: eight
+location: bucket
 ---
 
 This page shows how to set up and use the {{ page.meta.title }} destination. 
@@ -121,6 +122,11 @@ The Crypto key is not stored in the GCP and demands the additional effort to be 
 #### Crypto key
 If *Customer Supplied* is selected as the encryption method, enter the cryptographic key into.
 
+### Misc
+
+{% include "destinations/cloud-folder-path.md" %}
+
+
 ### File Format
 
 Select the required file format. You can choose between *CSV*, *JSON* and *Parquet*.
@@ -147,13 +153,9 @@ The settings for file type *Parquet* correspond to the settings of the *Flat Fil
 
 ## Connection Retry
 
-Connection retry is a built-in function of the Google Cloud Storage destination. 
-The retry function is activated by default.
+{% include "destinations/connection-retry.md" %}
 
-Connection retry is a functionality that prevents extractions from failing in case of transient connection interruptions to Google Cloud Storage.
-Xtract universal follows an exponential retry strategy. The selected exponential strategy results in eight retry attempts and an overall timespan of 140 seconds. If a connection is not established during the timespan of 140 seconds, the extraction fails.
-
-For more general information about retry strategies in a Google Cloud Storage environment go to the official [Google Cloud Help](https://cloud.google.com/storage/docs/gsutil/addlhelp/RetryHandlingStrategy).
+{% include "destinations/connection-retry-cloud.md" %}
 
 {% include "destinations/assign-destination.md" %}
 
@@ -171,15 +173,13 @@ For more general information about retry strategies in a Google Cloud Storage en
 
 {% include "destinations/date-conversion.md" %}
 
-### Folder name
-
-To write extraction data to a location within a specific folder in a Google Cloud Storage bucket, enter a folder name without slashes.
-Subfolders are supported and can be defined using the following syntax: <br>
-`[folder]/[subfolder_1]/[subfolder_2]/…`
+{% include "destinations/cloud-folder.md" %}
 
 {% include "parameters/folder-script-expressions.md" %}
 
 {% include "destinations/compression.md" %}
 
 {% include "destinations/file-splitting.md" %}
+
+{% include "destinations/empty-files.md" %}
 

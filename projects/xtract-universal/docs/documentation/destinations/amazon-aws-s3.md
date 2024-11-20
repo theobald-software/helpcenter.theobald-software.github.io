@@ -2,6 +2,7 @@
 title: Amazon S3
 description: Write SAP data to an Amazon S3 destination
 attempt: seven
+location: bucket
 ---
 
 This page shows how to set up and use the {{ page.meta.title }} destination. 
@@ -111,8 +112,8 @@ The key can be created on the [AWS website](https://console.aws.amazon.com/iam/h
 
 All settings in *Misc* are optional.
 
-#### Folder Path
-Enter the directory to upload files into, see [**Destination Settings > Folder name**](#folder-name).
+{% include "destinations/cloud-folder-path.md" %}
+
 
 #### File Owner
 If you upload files as an AWS user of an Account A to an Account B, you can select the option "Bucket Owner".
@@ -165,11 +166,7 @@ For more general information about retry strategies in an AWS S3 environment go 
 
 {% include "destinations/date-conversion.md" %}
 
-### Folder name
-
-To write extraction data to a location within a specific folder in an Amazon S3 bucket, enter a folder name without slashes.
-Subfolders are supported and can be defined using the following syntax: <br>
-`[folder]/[subfolder_1]/[subfolder_2]/…`
+{% include "destinations/cloud-folder.md" %}
 
 {% include "parameters/folder-script-expressions.md" %}
 
