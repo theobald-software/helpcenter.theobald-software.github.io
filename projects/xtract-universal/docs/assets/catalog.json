@@ -1,5 +1,16 @@
 [
   {
+    "Version": "2024.11.20.132",
+    "LegacyReleaseDate": "2024-11-20 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "XtractUniversal",
+        "Component": "Server",
+        "Message": "Fixed a crash in the result-name endpoint for extractions. For destinations without output objects the endpoint now returns a 500 HTTP status code."
+      }
+    ]
+  },
+  {
     "Version": "2024.11.19.117",
     "LegacyReleaseDate": "2024-11-19 00:00:00Z",
     "Changes": [
