@@ -3,9 +3,26 @@ title: Subscriptions
 description: Show active Subscriptions
 ---
 
-The {{ odpOdata }} {{ component }} acts as a subscriber (consumer) to data providers to extract data from the data provider. 
+The {{ odpOdata }} {{ component }} acts as a subscriber (consumer) to data providers to extract delta data from the data provider. 
 
-### Limitations
+
+### Subscribe to a Data provider
+
+To initialize delta extractions, activate the checkbox **Delta / Change tracking** and run the {{ extraction }} once.
+The first run extracts all data that match the set selection criteria.
+After the initialization, the {{ odpOdata }} {{ component }} only extracts data added or changed on the SAP system since the last run. 
+
+!!! tip
+	Use SAP transaction *ODQMON* to display information about active subscribers in SAP.
+	
+#### Limitations
 
 Delta subscriptions are limited to one SAP user per service. 
-ODP has to be exposed in multiple different services for a single user to have multiple delta subscriptions
+The ODP framework has to be exposed in multiple different services for a single user to have multiple delta subscriptions.
+
+
+### Terminate Subscriptions
+
+To terminate a subscription in {{ productName }}, click **[Terminate subscription]** and deactivate the checkbox **Delta / Change tracking**.
+
+screenshot!

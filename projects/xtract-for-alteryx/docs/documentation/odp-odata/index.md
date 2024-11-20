@@ -39,7 +39,7 @@ For more information, see [SAP Help: ODP-Based Data Extraction via OData](https:
 #### Limitations
 
 Delta subscriptions are limited to one SAP user per service. 
-ODP has to be exposed in multiple different services for a single user to have multiple delta subscriptions
+The ODP framework has to be exposed in multiple different services for a single user to have multiple delta subscriptions.
 
 ### Prerequisites
 
@@ -58,16 +58,13 @@ Follow the steps below to create the data source:
 2. In the tab *Data Sources* click **[New]** to create a new data source.
 3. Select the **Download** technology to create a URL data source.<br>
 ![sap-connection-downlaod](../../assets/images/documentation/components/odp-odata/xfa/sap-connection-download.png)
-4. Enter the Base URL of your SAP system. The URL can be requested from the SAP Basis team. Examples:
-	- SAP On-Premises: `http://sap-erp-as05.example.com:50000`.
-	- SAP Public Cloud: `https://myxxxxxx.s4hana.cloud.sap/sap/opu/odata4/`.
-
-	![sap-connection](../../assets/images/documentation/components/odp-odata/xfa/sap-connection-on-prem.png)
+4. Enter the Base URL of your SAP system, e.g., `http://sap-erp-as05.example.com:50000`. 
+The URL can be requested from the SAP Basis team. <br>
+![sap-connection](../../assets/images/documentation/components/odp-odata/xfa/sap-connection-on-prem.png)
 5. Click **[Save]** to save the SAP connection. The subsection *Connection* opens.
 6. In the subsection *Connection* select the authentication methods *Username and password*.
-7. Select an existing credential or select *Create new Credential*. 
-	- SAP On-Premises systems require the name and password of an SAP dialog user. 
-	- SAP Public Cloud requires the name and password of an  [SAP communication user](https://learning.sap.com/learning-journeys/implement-sap-s-4hana-cloud-public-edition-for-sourcing-and-procurement/setting-up-communication-management_a913171c-c96d-47a9-81ec-dc9ee8754320).
+7. Select an existing credential that contains the name and password of an SAP dialog user. 
+If no credentials exist, select *Create new Credential* to create a new credential.
 8. Click **[Link] / [Create and link]** to link the credential to the connection. 
 
 The SAP connection is now available for selection in the {{ odpOdata }} {{ component }}.
