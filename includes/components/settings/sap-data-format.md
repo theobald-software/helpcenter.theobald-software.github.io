@@ -6,8 +6,8 @@ Use the following internal SAP representation for input:
 
 !!! warning
 	**Values accept only the internal SAP representation.**<br>
-	Input that does not use the internal SAP representation results in error messages. <br>
-	Use the internal SAP representation. <br> Example: 
+	Input that does not use the internal SAP representation results in error messages. 
+	Use the internal SAP representation. Example: 
 	```
 	ERPConnect.ABAPProgramException: RfcInvoke failed(RFC_ABAP_MESSAGE): Enter date in the format \_.\_.\_
 	```

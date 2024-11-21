@@ -37,21 +37,16 @@ When automatic column detection is not possible, the column names, widths and of
 
 You can now run the {{ extraction }}{% if page.meta.product == "xtract-universal" %}, see [Execute and Automate Extractions](../execute-and-automate/index.md){% elif page.meta.product == "board-connector" %}, see [Run Extractions](../run-extractions.md){% endif %}.
 
-{% if page.meta.product == "xtract-universal" %}
 
-### Example
+### Example Extraction
+
 The depicted example shows how to set up a simple report extraction:
 
-<div class="mdx-columns" markdown>
+1. Look up report RLT10010 (Evaluation of Movements per Storage Type).
+2. Select variant *VAR01*.
+3. Load a live preview.
+4. Automatically detect columns.
+5. Remove the header (skip the first 8 rows).
 
-- Look up report RLT10010
-- Select variant *VAR01*
-- Load a live preview
-- Remove the header (skip the first 7 rows)
-- Automatically detect columns
-- Save the {{ component }}
+![Report-Animation](../../assets/images/documentation/components/report/report.gif){:class="img-responsive" style="border:1px solid black;"}
 
-</div>
-
-![Report-Animation](../../assets/images/documentation/components/report/xu/report.gif){:class="img-responsive" style="border:1px solid black;"}
-{% endif %}
