@@ -1,5 +1,16 @@
 [
   {
+    "Version": "2024.11.21.136",
+    "LegacyReleaseDate": "2024-11-21 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "XtractUniversal",
+        "Component": "General",
+        "Message": "xu.exe/xu.elf: Return correct exit code when extraction is not started (was always 1001)"
+      }
+    ]
+  },
+  {
     "Version": "2024.11.20.138",
     "LegacyReleaseDate": "2024-11-20 00:00:00Z",
     "Changes": [
