@@ -572,7 +572,8 @@ The result contains the following elements:
 |-----------|--------------|
 | ```/[extraction_name]/parameters```  |   Returns a list of runtime parameters used in the specified extraction. Every extraction has a set of *Extraction*, *Source* and *Custom* [extraction parameters](documentation/parameters/extraction-parameters.md). The parameters are available in the "Run Extraction" window. |
 | ```/[extraction_name]/result-columns```  |   Returns the result columns of an extraction. |
-{% if page.meta.product != "board-connector" %}| ```?destinationType=[destination]```  |   Returns a list of extractions that write into a specific destination. | {% endif %}
+{% if page.meta.product != "board-connector" %}| ```/[extraction_name]/result-name``` |  Returns the name that is used by the extracted SAP data in the target environment.  |
+| ```?destinationType=[destination]```  |   Returns a list of extractions that write into a specific destination. | {% endif %}
 
 <!---
 The result of `[protocol]://[host]:[port]/config/extractions/[extraction_name]/result-columns` contains the following elements:
