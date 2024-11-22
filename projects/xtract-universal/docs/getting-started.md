@@ -79,7 +79,7 @@ For more information about destination details, select your destination: <select
 
 The destination is now available and can be assigned to extractions.
 
-#### Assign a Destination to an Extracion
+#### Assign a Destination to an Extraction
 
 <!---
 this script generates a link to the destination settings of the selected destination (in step 4)
