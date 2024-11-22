@@ -1,5 +1,17 @@
 [
   {
+    "Version": "2024.11.22.43",
+    "LegacyReleaseDate": "2024-11-22 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "Table",
+        "Message": "Fixed incomplete /THEO/READ_TABLE transport requests",
+        "ReleaseNote": "* The /THEO/READ_TABLE transport that was contained from version 2024.11.5.50 on was incomplete.\n* Import into the SAP system therefore failed.\n* The transports contained with this version are complete again."
+      }
+    ]
+  },
+  {
     "Version": "2024.11.19.92",
     "LegacyReleaseDate": "2024-11-19 00:00:00Z",
     "Changes": [
