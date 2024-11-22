@@ -1,5 +1,16 @@
 [
   {
+    "Version": "2024.11.22.83",
+    "LegacyReleaseDate": "2024-11-22 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "XtractUniversal",
+        "Component": "Designer",
+        "Message": "Fixed destination settings window to display file name with timestamp in UTC"
+      }
+    ]
+  },
+  {
     "Version": "2024.11.22.42",
     "LegacyReleaseDate": "2024-11-22 00:00:00Z",
     "Changes": [
