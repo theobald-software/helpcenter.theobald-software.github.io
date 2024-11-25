@@ -1,5 +1,16 @@
 [
   {
+    "Version": "2024.11.25.2",
+    "LegacyReleaseDate": "2024-11-25 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "ERPConnect",
+        "Component": "General",
+        "Message": "Fixed linux file system error codes not being handled correctly."
+      }
+    ]
+  },
+  {
     "Version": "2024.11.19.56",
     "LegacyReleaseDate": "2024-11-19 00:00:00Z",
     "Changes": [
