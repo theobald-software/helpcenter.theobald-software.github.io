@@ -21,7 +21,7 @@ When starting an {{ productName }} instance, the following settings are pre-conf
 | License  | {{ productName }} is already installed and running with a 30-days trial license. You can replace the trial license with your regular license. | [Documentation: Licensing](../documentation/setup/license.md) |
 | Software Updates | The pre-installed version of {{ productName }} is displayed in the AWS marketplace. Make sure to keep {{ productName }} up-to-date with the latest software releases, see [{{ productName }} Changelog](../changelog.md). | [Documentation: Installation and Update](../documentation/setup/update.md) |
 | Server Settings | The webserver is pre-configured with a self-signed TLS certificate and can be accessed in a browser via ``https://xtractuniversal:8165/`` from within the rdp session. | [Documentation: Server Settings](../documentation/server/server-settings.md) |
-| Data Extractions | There are no default SAP data extractions. To get started with {{ productName }}, [create an SAP connection](#connect-to-sap) and [create new extractions](#create-an-extraction). | [Getting Started on AWS](#getting-started-on-aws) |
+| Data Extractions | There are no default SAP data extractions. To get started with {{ productName }}, create an SAP connection and start creating extractions. | [Getting Started on AWS](#getting-started-on-aws) |
 
 
 ## Prerequisites
