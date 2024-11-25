@@ -23,7 +23,7 @@ When starting an Xtract Universal instance, the following settings are pre-confi
 | License  | Xtract Universal is already installed and running with a 30-days trial license. You can replace the trial license with your regular license. | [Documentation: Licensing](../documentation/setup/license.md) |
 | Software Updates | The pre-installed version of Xtract Universal is displayed in the AWS marketplace. Make sure to keep Xtract Universal up-to-date with the latest software releases, see [Xtract Universal Changelog](../changelog.md). | [Documentation: Installation and Update](../documentation/setup/update.md) |
 | Server Settings | The webserver is pre-configured with a self-signed TLS certificate and can be accessed in a browser via ``https://xtractuniversal:8165/`` from within the rdp session. | [Documentation: Server Settings](../documentation/server/server-settings.md) |
-| Data Extractions | There are no default SAP data extractions. To get started with Xtract Universal, [create an SAP connection](../getting-started.md/#connect-to-sap) and [create new extractions](../getting-started.md/#create-an-extraction). | [Documentation: Getting Started](../getting-started.md) |
+| Data Extractions | There are no default SAP data extractions. To get started with Xtract Universal, [create an SAP connection](#connect-to-sap) and [create new extractions](#create-an-extraction). | [Getting Started on AWS](#getting-started-on-aws) |
 
 
 ## Prerequisites
