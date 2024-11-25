@@ -25,7 +25,7 @@ Depending on the type of BEx variable (single value, multiple value, interval or
 	- :runtime-parameters-dynamic:  {{ Variables }}: Select an existing runtime parameter from the drop-down list.
 	- :magnifying-glass:  Pre-defined values: If available, select pre-defined values from SAP:<br>
 8. Click **[OK]** to confirm your input.
-9. Click {{ previewBtn }} in the main window of the component to check the result of the filter. <br>
+9. Click {{ previewBtn }} in the main window of the component to check the result of the filter.
 If {{ variables }} are defined, you are prompted to populate the parameters with actual values.
 
 

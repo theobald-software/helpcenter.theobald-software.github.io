@@ -74,7 +74,7 @@ The SAP connection is now available for selection in the {{ odpOdata }} {{ compo
 
 
 1. In the main window of the {{ component }}, click **[:magnifying-glass:]**. The window “Operational Data Provider Lookup” opens.<br>
-![Open-Look-Up-ODP](../../assets/images/documentation/components/odp/{{ abbr }}/odp_main-window_add.png){:class="img-responsive"}	
+![Open-Look-Up-ODP](../../assets/images/documentation/components/odp-odata/{{ abbr }}/main-window_add.png){:class="img-responsive"}	
 2. In the field **Search pattern**, enter the name of an OData service :number-1:. Use wildcards (*), if needed.<br>
 ![Look-Up-ODP](../../assets/images/documentation/components/odp/odp_look-up.png){:class="img-responsive"}	
 3. Click **[:magnifying-glass:]**. Search results are displayed.
@@ -91,7 +91,7 @@ The application now returns to the main window of the {{ component }}.
 The {{ odpOdata }} {{ component }} offers the following options for data extractions:
 
 1. In the section *Fields*, select the items you want to extract.<br>
-![Datasource Preview](../../assets/images/documentation/components/odp/{{ abbr }}/define-odp.png){:class="img-responsive"}
+![Datasource Preview](../../assets/images/documentation/components/odp-odata/{{ abbr }}/define-odp-odata.png){:class="img-responsive"}
 2. Optional: edit a selection you want to change or dynamize. 
 For more information, see [Edit Selections](selections.md/#edit-selections).<br>
 3. Optional: Activate the option **Delta / Change tracking** to initialize delta extractions.

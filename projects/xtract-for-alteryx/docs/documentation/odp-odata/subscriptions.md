@@ -12,6 +12,8 @@ To initialize delta extractions, activate the checkbox **Delta / Change tracking
 The first run extracts all data that match the set selection criteria.
 After the initialization, the {{ odpOdata }} {{ component }} only extracts data added or changed on the SAP system since the last run. 
 
+![subscription](../../assets/images/documentation/components/odp-odata/{{ abbr }}/subscription.png)
+
 !!! tip
 	Use SAP transaction *ODQMON* to display information about active subscribers in SAP.
 	
@@ -23,6 +25,6 @@ The ODP framework has to be exposed in multiple different services for a single 
 
 ### Terminate Subscriptions
 
-To terminate a subscription in {{ productName }}, click **[Terminate subscription]** and deactivate the checkbox **Delta / Change tracking**.
+To terminate a subscription in {{ productName }}, click **[Terminate subscription]** :number-1: and deactivate the checkbox **Delta / Change tracking** :number-2:.
 
-screenshot!
+![terminate-subscription](../../assets/images/documentation/components/odp-odata/{{ abbr }}/terminate-subscription.png)
