@@ -1,10 +1,10 @@
 
 This articles shows how to use {{ productName }} to parse a report that contains groups of data sets as a single data set. <br>
-The depicted example uses the report *FBL3N* that contains multiple groups where each group has their own header and calculation rows.
+The depicted example uses the report *FBL3N* that contains multiple groups where each group has its own header and calculation rows.
 
 The article leads you through the following steps to merge all groups into a single data set:
 
-- [Remove rows](#remove-rows) that total the content of the rows before.
+- [Remove rows](#remove-rows) that calculate the content of the rows before.
 - [Select a header](#select-a-header) for the report and remove duplicates.
 - [Parse rows that contain additional headers as columns.](#parse-rows-with-additional-headers-as-columns)
 
@@ -24,7 +24,7 @@ The article leads you through the following steps to merge all groups into a sin
 
 ### Remove Rows
 
-Follow the steps below to remove rows that total the content of the rows before. 
+Follow the steps below to remove rows that calculate the content of the rows before. 
 Calculation rows are marked with an * symbol.
 
 1. [Look up](../documentation/report/index.md/#look-up-a-report-or-transaction) the report FBL3N (RFITEMGL). 
@@ -34,12 +34,12 @@ Calculation rows are marked with an * symbol.
 ![report-no-skip-rows](../assets/images/articles/report/report-improvement/report-preview.png)
 5. Open the tab *Skip and Parse Rows*.
 6. Click **[Add rows to skip]**.
-7. To remove calculation rows, enter the keyword *. All rows that contain the keyword are displayed in a gray font in the preview section.<br>
+7. To remove calculation rows, enter the keyword *. <br> All rows that contain the keyword are displayed in a gray font in the preview section.<br>
 ![remove rows](../assets/images/articles/report/report-improvement/remove-rows.png)
 8. To remove additional rows that separate calculation rows and headers, enter the keyword ---. 
 9. Click **[OK]** to save the changes.
 
-The calculation rows will be skipped during the report extraction.<br>
+The calculation rows are skipped during the report extraction.<br>
 For more information on how to manipulate rows in report extractions, see [Documentation: Define Rows](../documentation/report/report-rows-define.md).
 
 === "Before: Original Report"
@@ -119,5 +119,5 @@ The extracted report returns a single data set that includes the content of all 
 ******
 
 #### Related Links
-- [Documentation: {{ report }}](../documentation/report/index.md)
-- [Documentation: Skip Rows by Keyword](../documentation/report/report-rows-define.md/#skip-rows-by-keyword)
+- [{{ report }}](../documentation/report/index.md)
+- [Skip Rows by Keyword](../documentation/report/report-rows-define.md/#skip-rows-by-keyword)
