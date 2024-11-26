@@ -2,8 +2,7 @@
 
 The following article shows how to replace most {{ odp }} [provider contexts](../documentation/odp/provider-context.md) with other {{ components }}.
 
-Aside from the {{ components }} presented in this article, {{ productName }} will offer ODP via OData protocol. 
-The OData connectivity is currently in development and scheduled to be released in Q4 2024.
+{% if page.meta.product == "xtract-for-alteryx" %}Aside from the {{ components }} presented in this article, {{ productName }} offers the [{{ odpOdata }}](../documentation/odp-odata/index.md) {{ component }} that enables users to extract ODP data via OData protocol. {% else %}Aside from the {{ components }} presented in this article, {{ productName }} will offer ODP via OData protocol. The OData connectivity is currently in development and scheduled to be released in Q4 2024.{% endif %}
 For more information, see [Guidance on SAP Note 3255746 for Theobald Software Xtract Products](https://theobald-software.com/en/products-technology-en/guidance-on-sap-note-3255746-for-theobald-software-xtract-products/).
 
 | Provider Context | Alternative | 

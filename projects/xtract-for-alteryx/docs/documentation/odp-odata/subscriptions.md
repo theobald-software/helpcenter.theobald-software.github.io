@@ -3,7 +3,7 @@ title: Subscriptions
 description: Show active Subscriptions
 ---
 
-The {{ odpOdata }} {{ component }} acts as a subscriber (consumer) to data providers to extract delta data from the data provider. 
+The {{ odpOdata }} {{ component }} acts as a subscriber to data providers to extract delta data from the data provider. 
 
 
 ### Subscribe to a Data provider
