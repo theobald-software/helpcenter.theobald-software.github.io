@@ -1,6 +1,7 @@
 ---
 title: Run Xtract Universal in a VM on AWS EC2
 description: Run Xtract Universal in a VM on AWS EC2
+level: classified
 hide:
  - navigation
 ---
