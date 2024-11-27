@@ -1,7 +1,6 @@
 ---
 title: Xtract ODP (OData)
 description: Operational Data Provisioning (ODP) based data via OData Services
-icon: component/odp-odata
 ---
 
 
