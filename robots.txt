@@ -1,3 +1,8 @@
 User-agent: *
 Disallow: /editorial-guidelines/*
 Disallow: /ui-style-guide/*
+Disallow: /roadmap/*
+Disallow: /changelog/*
+Disallow: /assets/*
+Disallow: /test-environment/*
+Disallow: /test-environment-odata/*
