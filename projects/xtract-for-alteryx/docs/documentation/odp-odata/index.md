@@ -28,6 +28,15 @@ Once the service is registered in the SAP Gateway system, {{ productName }} can 
 For more information, see [SAP Help: ODP-Based Data Extraction via OData](https://help.sap.com/doc/saphelp_nw75/7.5.5/en-US/11/853413cf124dde91925284133c007d/frameset.htm).
 
 
+### Prerequisites
+
+- Alteryx Designer version 2022.3 or higher. The use of {{ odpOdata }} requires access to the Alteryx **Data Connection Manager (DCM)** that was introduced in Alteryx Designer version 2022.3.
+- OData services for ODP extractions must be available in the SAP system, see [SAP Help: Generating a Service for Extracting ODP Data via OData](https://help.sap.com/doc/saphelp_nw75/7.5.5/en-US/69/b481859ef34bab9cc7d449e6fff7b6/frameset.htm). 
+- To extract a DataSource, the DataSource has to be activated in SAP, see [SAP Help: Set Up and Activate DataSources](https://help.sap.com/docs/SLH_advanced_compliance_reporting_service/7a60944343e543a1ab99e9b2904dab09/e5d447257a95416190d29638a64a5dfa.html).
+- Before creating ODP (OData) extractions, test the ODP source in SAP using the ABAP report RODPS_REPL_TEST to rule out and troubleshoot ODP problems in the ODP source. 
+For more information, see [SAP Wiki: Replication test with RODPS_REPL_TEST](https://help.sap.com/docs/SUPPORT_CONTENT/bwdabc/3361385256.html).
+
+
 #### Supported Features
 - All available [ODP contexts](../odp/provider-context.md) of an SAP system are accessible.
 - Delta extractions (with initial full load) if the ODP data source supports deltas, see [Subscriptions](subscriptions.md).
@@ -40,13 +49,6 @@ For more information, see [SAP Help: ODP-Based Data Extraction via OData](https:
 Delta subscriptions are limited to one SAP user per service. 
 The ODP framework has to be exposed in multiple different services for a single user to have multiple delta subscriptions.
 
-### Prerequisites
-
-- Alteryx Designer version 2022.3 or higher. The use of {{ odpOdata }} requires access to the Alteryx **Data Connection Manager (DCM)** that was introduced in Alteryx Designer version 2022.3.
-- OData services for ODP extractions must be available in the SAP system, see [SAP Help: Generating a Service for Extracting ODP Data via OData](https://help.sap.com/doc/saphelp_nw75/7.5.5/en-US/69/b481859ef34bab9cc7d449e6fff7b6/frameset.htm). 
-- To extract a DataSource, the DataSource has to be activated in SAP, see [SAP Help: Set Up and Activate DataSources](https://help.sap.com/docs/SLH_advanced_compliance_reporting_service/7a60944343e543a1ab99e9b2904dab09/e5d447257a95416190d29638a64a5dfa.html).
-- Before creating ODP (OData) extractions, test the ODP source in SAP using the ABAP report RODPS_REPL_TEST to rule out and troubleshoot ODP problems in the ODP source. 
-For more information, see [SAP Wiki: Replication test with RODPS_REPL_TEST](https://help.sap.com/docs/SUPPORT_CONTENT/bwdabc/3361385256.html).
 
 ### SAP Connection for OData Access
 
