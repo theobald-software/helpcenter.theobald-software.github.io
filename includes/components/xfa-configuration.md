@@ -11,7 +11,7 @@ At the top of the configuration menu, click **About** to display information abo
 
 ### Connection
 
-The section *Connection* of the configuration menu defines which [SAP Connection](../sap-connection/index.md) is used for the {{ component }}.
+The section *Connection* of the configuration menu defines which {% if page.meta.componentFolder == "odp-odata" %}[SAP Connection](index.md/#sap-connection-for-odata-access) {% else %}[SAP Connection](../sap-connection/index.md) {% endif %}is used for the {{ component }}.
 
 {% if page.meta.componentFolder != "odp-odata" %}
 
