@@ -16,6 +16,3 @@ To publish a product roadmaps as part of the HelpCenter, the following ready-mad
 
 - If roadmaps are to be released in every HelpCenter, there has to be a roadmap specific to every product
 - Roadmaps can be hosted in the HelpCenter (changes require the involvement of a technical writer or developer) or separately (where product management can make changes by themselves)
-
-![external roadmap](Slide1.jpg)
-
