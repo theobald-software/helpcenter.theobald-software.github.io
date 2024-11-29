@@ -29,6 +29,7 @@ jobs:
         with:
           python-version: 3.x
       - name: execute py script # run file
+        run: pip install requests
         run: |
           python docs/test-environment-troubleshooting-2/troubleshooting.py
       - run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV
