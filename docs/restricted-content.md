@@ -64,12 +64,22 @@ Internal Changelogs:
 </div>
 <div class="grid cards" markdown>
 
-- [:material-excavator: __Test Environment__](test-environment/index.md)
+- [:material-excavator: __Test Environment KB Article: Run XU in AWS__](test-environment/index.md)
 
 </div>
 <div class="grid cards" markdown>
 
 - [:material-excavator: __Test Environment OData__](test-environment-odata/index.md)
+
+</div>
+<div class="grid cards" markdown>
+
+- [:material-excavator: __Test Environment Troubleshooting List__](test-environment-troubleshooting/index.md)
+
+</div>
+<div class="grid cards" markdown>
+
+- [:material-excavator: __Test Environment Troubleshooting List (All CAtegories)__](test-environment-troubleshooting-2/index.md)
 
 </div>
 
