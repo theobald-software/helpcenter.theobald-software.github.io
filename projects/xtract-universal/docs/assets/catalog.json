@@ -64,7 +64,7 @@
         "Product": "XtractUniversal",
         "Component": "Server",
         "Message": "Reworked the extraction cancellation which introduced two new HTTP REST endpoints.",
-        "ReleaseNote": "* It is now possible to cancel all instances of an extraction.\n* Extraction cancellation is more reliable now.\n* Cancellation of an extraction now keeps the worker alive if possible.\n* New endpoints:\n  * /stop/{extraction_name}\n    * cancels **all** running extractions of that name\n  * /stop/{extraction_name}/{timestamp}\n    * for more control by specifying an extraction run instead of just the name\n    * cancels the extraction specified by that timestamp\n    * no possiblity for ambiguities\n* /abort?name={extraction_name}\n  * works as before\n  * it makes a best effort to fetch the latest extraction by that name\n  * calls /stop/{extraction_name}/{timestamp} internally"
+        "ReleaseNote": "- It is now possible to cancel all instances of an extraction.\n- Extraction cancellation is more reliable now.\n- Cancellation of an extraction now keeps the worker alive if possible.\n- New endpoints:\n  - /stop/{extraction_name}\n    - cancels **all** running extractions of that name\n  - /stop/{extraction_name}/{timestamp}\n    - for more control by specifying an extraction run instead of just the name\n    - cancels the extraction specified by that timestamp\n    - no possiblity for ambiguities\n- /abort?name={extraction_name}\n  - works as before\n  - it makes a best effort to fetch the latest extraction by that name\n  - calls /stop/{extraction_name}/{timestamp} internally"
       }
     ]
   },
