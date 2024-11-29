@@ -8,3 +8,4 @@ Disallow: /test-environment/*
 Disallow: /test-environment-odata/*
 Disallow: /test-environment-troubleshooting/*
 Disallow: /test-environment-troubleshooting-2/*
+Disallow: /test-environment-troubleshooting-3/*
