@@ -1,5 +1,16 @@
 [
   {
+    "Version": "2024.11.29.11",
+    "LegacyReleaseDate": "2024-11-29 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "XtractUniversal",
+        "Component": "Designer",
+        "Message": "Fix for Designer not working correctly after Designer only installation."
+      }
+    ]
+  },
+  {
     "Version": "2024.11.28.22",
     "LegacyReleaseDate": "2024-11-28 00:00:00Z",
     "IsCritical": true,
