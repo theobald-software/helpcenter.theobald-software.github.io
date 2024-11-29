@@ -92,6 +92,10 @@ Check the checkbox and enter a new value to set the user defined parameter.
 	- Extraction URL after editing the parameter **myParameter** (name of a runtime parameter):<br>
 	`http://sherri.theobald.local:8065/start/KNA1/?myParameter=EN`  
 
+!!! note
+	You can append multiple parameters using the `&` character. Example:<br>
+	`http://sherri.theobald.local:8065/start/KNA1/?myParameter=EN&mySecondParameter=0001`
+
 ****
 #### Related Links:
 - [Web API](../../web-api.md)
