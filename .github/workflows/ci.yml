@@ -16,7 +16,7 @@ jobs:
           python-version: 3.x
       - name: execute py script # run file
         run: |
-          python troubleshooting.py
+          python docs/test-environment-troubleshooting-2/troubleshooting.py
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
