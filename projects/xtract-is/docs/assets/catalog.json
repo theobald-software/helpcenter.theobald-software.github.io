@@ -1,5 +1,17 @@
 [
   {
+    "Version": "2024.11.29.77",
+    "LegacyReleaseDate": "2024-11-29 00:00:00Z",
+    "IsCritical": true,
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "Table",
+        "Message": "Updated /THEO/READ_TABLE to version 3.9. Fixed a bug where extractions with data types\nwith variable length would return duplicate data."
+      }
+    ]
+  },
+  {
     "Version": "2024.11.28.17",
     "LegacyReleaseDate": "2024-11-28 00:00:00Z",
     "IsCritical": true,
