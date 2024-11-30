@@ -1,5 +1,16 @@
 [
   {
+    "Version": "2024.11.30.4",
+    "LegacyReleaseDate": "2024-11-30 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Server",
+        "Component": "General",
+        "Message": "Always create directories when creating new config files (fixes occasional first service startup failures)"
+      }
+    ]
+  },
+  {
     "Version": "2024.11.30.1",
     "LegacyReleaseDate": "2024-11-30 00:00:00Z",
     "IsCritical": true,
