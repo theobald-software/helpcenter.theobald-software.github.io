@@ -1,5 +1,26 @@
 [
   {
+    "Version": "2024.11.30.34",
+    "LegacyReleaseDate": "2024-11-30 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "ERPConnect",
+        "Component": "General",
+        "Message": "Internal changes to Idoc and BWCube serialization."
+      },
+      {
+        "Product": "Common",
+        "Component": "General",
+        "Message": "Fix log file collisions"
+      },
+      {
+        "Product": "Theobald.Server",
+        "Component": "General",
+        "Message": "Always create directories when creating new config files (fixes occasional first service startup failures)"
+      }
+    ]
+  },
+  {
     "Version": "2024.11.29.84",
     "LegacyReleaseDate": "2024-11-29 00:00:00Z",
     "IsCritical": true,
