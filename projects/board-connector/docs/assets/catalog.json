@@ -1,5 +1,21 @@
 [
   {
+    "Version": "2024.12.3.20",
+    "LegacyReleaseDate": "2024-12-03 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "Table",
+        "Message": "Appliance of conversion exits will now be ignored if conversion is enabled but no conversion exit is associated with a field on SAP.\nIn previous versions an error was displayed in this case."
+      },
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "Table",
+        "Message": "Updated /THEO/READ_TABLE to 3.10. For on database systems other than HANA and Oracle the isolation level is now set to \"committed read\" before reading data."
+      }
+    ]
+  },
+  {
     "Version": "2024.11.30.35",
     "LegacyReleaseDate": "2024-11-30 00:00:00Z",
     "Changes": [
