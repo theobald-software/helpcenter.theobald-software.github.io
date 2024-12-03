@@ -1,5 +1,16 @@
 [
   {
+    "Version": "2024.12.3.15",
+    "LegacyReleaseDate": "2024-12-03 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "Table",
+        "Message": "Appliance of conversion exits will now be ignored if conversion is enabled but no conversion exit is associated with a field on SAP.\nIn previous versions an error was displayed in this case."
+      }
+    ]
+  },
+  {
     "Version": "2024.12.2.167",
     "LegacyReleaseDate": "2024-12-02 00:00:00Z",
     "Changes": [
