@@ -6,7 +6,7 @@ from collections import defaultdict
 OUTPUT_FILE = "index.md"
 
 # Output folder for individual article files
-ARTICLE_FOLDER = ""
+ARTICLE_FOLDER = "./"
 
 # Desired tag for filtering
 FILTER_TAG = "hxu1"
@@ -23,6 +23,7 @@ def fetch_articles():
             articles = data.get("Articles", [])  # Extract the list of articles
             filtered_articles = [a for a in articles if FILTER_TAG in a.get('TagString', [])]
             #filtered_articles_sections = [a for a in filtered_articles if "Troubleshooting" in a.get('CategoryName', [])]
+            os.makedirs(ARTICLE_FOLDER, exist_ok=True)  # Ensure output folder exists
             save_article_list_by_section_and_category(filtered_articles)
         except ValueError:
             print("Error: Response is not valid JSON")
@@ -32,19 +33,22 @@ def fetch_articles():
 
 # Fetch and save each article's content to a separate Markdown file
 def fetch_and_save_article_content(article_id):
-    article_url = "https://support.theobald-software.com/helpdesk/api/Article/{article_id}" 
-    response = requests.get(article_url, auth=('Schipka', 'Ganbare4'))
-    
-    if response.status_code == 200:
-        try:
-            data = response.json()  # Parse JSON response
-            content = data.get("Body", "No content available.")  # Fetch article body
-            return content
-        except ValueError:
-            print(f"Error: Could not parse JSON for article {article_id}")
+    try:
+        response = requests.get('https://support.theobald-software.com/helpdesk/api/Article/{article_id}', auth=('Schipka', 'Ganbare4'))
+        print(f"https://support.theobald-software.com/helpdesk/api/Article/{article_id}")
+        if response.status_code == 200:
+            try:
+                data = response.json()  # Parse JSON response
+                print(f"Article {article_id}: {data}")  # Debug: Log the API response
+                return data.get("Body", "No content available.")  # Fetch article body
+            except ValueError:
+                print(f"Error parsing JSON for article {article_id}, Response: {response.text}")
+                return "Error: Could not retrieve content."
+        else:
+            print(f"Error: {response.status_code} for article {article_id}, Response: {response.text}")
             return "Error: Could not retrieve content."
-    else:
-        print(f"Error: {response.status_code} while fetching article {article_id}")
+    except requests.RequestException as e:
+        print(f"Request Exception for article {article_id}: {e}")
         return "Error: Could not retrieve content."
 
 

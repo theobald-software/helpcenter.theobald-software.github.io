@@ -6,7 +6,7 @@ hide:
   - tags
 ---
 
-Below is a categorized list of all troubleshooting articles in the knowledge base with the tag 'hxu1' (no how-tos):
+Below is a categorized list of all articles in the knowledge base with the tag 'hxu1':
 
 ## General
 
