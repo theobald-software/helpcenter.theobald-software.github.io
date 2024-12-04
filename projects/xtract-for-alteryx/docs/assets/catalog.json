@@ -1,5 +1,16 @@
 [
   {
+    "Version": "2024.12.4.56",
+    "LegacyReleaseDate": "2024-12-04 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "XtractForAlteryx",
+        "Component": "ODP OData",
+        "Message": "Beta release of ODP OData tool"
+      }
+    ]
+  },
+  {
     "Version": "2024.12.3.15",
     "LegacyReleaseDate": "2024-12-03 00:00:00Z",
     "Changes": [
