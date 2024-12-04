@@ -50,15 +50,15 @@ columnSeparator |  Sets a symbol which indicates the start of a new column | Ava
 	`http://sherri.theobald.local:8065/start/KNA1/`
 	- Extraction URL after editing the parameter **source** (name of the SAP source system):<br>
 	`http://sherri.theobald.local:8065/start/KNA1/?source=SAP_PROD` 
-3. To append more parameters, use the `&` character. Example:<br>
-`http://sherri.theobald.local:8065/start/KNA1/?Parameter1=Value1&Parameter2=Value2`
+
 
 ### Source
 
 The connection settings to an SAP source can be changed dynamically{% if page.meta.product == "xtract-universal" %} via the URL and the [command-line tool xu.exe](../execute-and-automate/call-via-commandline.md){% endif %}. 
 In the *Source* tab you can override the values that are defined in [SAP source details](../sap-connection/settings.md).
 
-![Source parameters](site:assets/images/documentation/parameters/{{ abbr }}/run_extraction_source_param.png){:class="img-responsive"}
+![Source parameters](site:assets/images/documentation/parameters/{{ abbr }}/run_extraction_source_parameter.png){:class="img-responsive"}
+
 
 Parameter name | Parameter description 
 ------------ | ------------- 
@@ -75,9 +75,8 @@ logonTicket | Changes the ticket issuer of the [SAP logon ticket](../sap-connect
 	- Extraction URL before changing the parameter:<br>
 	`http://sherri.theobald.local:8065/start/KNA1/`
 	- Extraction URL after editing the parameter **lang** (language setting for the SAP source system):<br>
-	`http://sherri.theobald.local:8065/start/KNA1/?lang=DE` 
-3. To append more parameters, use the `&` character. Example:<br>
-`http://sherri.theobald.local:8065/start/KNA1/?Parameter1=Value1&Parameter2=Value2`
+	`http://sherri.theobald.local:8065/start/KNA1/&lang=DE` 
+
 
 ### Custom
 
@@ -92,9 +91,7 @@ Check the checkbox and enter a new value to set the user defined parameter.
 	- Extraction URL before changing the parameter:<br>
 	`http://sherri.theobald.local:8065/start/KNA1/`
 	- Extraction URL after editing the parameter **myParameter** (name of a runtime parameter):<br>
-	`http://sherri.theobald.local:8065/start/KNA1/?myParameter=EN`  
-3. To append more parameters, use the `&` character. Example:<br>
-`http://sherri.theobald.local:8065/start/KNA1/?Parameter1=Value1&Parameter2=Value2`
+	`http://sherri.theobald.local:8065/start/KNA1/&myParameter=EN`  
 
 ****
 #### Related Links:
