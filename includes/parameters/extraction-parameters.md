@@ -57,7 +57,8 @@ columnSeparator |  Sets a symbol which indicates the start of a new column | Ava
 The connection settings to an SAP source can be changed dynamically{% if page.meta.product == "xtract-universal" %} via the URL and the [command-line tool xu.exe](../execute-and-automate/call-via-commandline.md){% endif %}. 
 In the *Source* tab you can override the values that are defined in [SAP source details](../sap-connection/settings.md).
 
-![Source parameters](site:assets/images/documentation/parameters/{{ abbr }}/run_extraction_source_param.png){:class="img-responsive"}
+![Source parameters](site:assets/images/documentation/parameters/{{ abbr }}/run_extraction_source_parameter.png){:class="img-responsive"}
+
 
 Parameter name | Parameter description 
 ------------ | ------------- 
