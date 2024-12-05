@@ -21,6 +21,16 @@
 
     :material-clock-time-two-outline: 2024-10-15
 
+-   **:material-file-document-outline: Access Data in the SAP Public Cloud**
+
+    ---
+
+    You want to access your SAP data in the SAP S/4HANA Public Cloud? Then follow our guide with simple instructions in our new [Knowledge Base Article: Access Data in the SAP Public Cloud](knowledge-base/access-data-in-the-sap-public-cloud.md).
+
+    ---
+
+    :material-clock-time-two-outline: 2024-09-26
+
 -   **SAP Note 3255746: Unpermitted Usage of ODP**
 
     ---
