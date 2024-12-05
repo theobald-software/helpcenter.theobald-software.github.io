@@ -1,16 +1,6 @@
 <div class="grid cards" markdown>
 
 
--   **End of support for Z_XTRACT_IS_TABLE_COMPRESSION**
-
-    ---
-
-    The custom function module `Z_XTRACT_IS_TABLE_COMPRESSION` will reach end of support on 12/31/2024. Please refer to [`/THEO/READ_TABLE`](./documentation/setup-in-sap/custom-function-module-for-table-extraction.md/#installation-of-theoread_table) as its official successor.
-
-    ---
-
-    :material-clock-time-two-outline: 2024-12-31
-
 -   **:material-alert-decagram: New Xtract ODP (OData) Tool**
 
     ---
@@ -20,6 +10,16 @@
     ---
 
     :material-clock-time-two-outline: 2024-12-05
+
+-   **End of support for Z_XTRACT_IS_TABLE_COMPRESSION**
+
+    ---
+
+    The custom function module `Z_XTRACT_IS_TABLE_COMPRESSION` will reach end of support on 12/31/2024. Please refer to [`/THEO/READ_TABLE`](./documentation/setup-in-sap/custom-function-module-for-table-extraction.md/#installation-of-theoread_table) as its official successor.
+
+    ---
+
+    :material-clock-time-two-outline: 2024-12-02
 
 -   **SAP Note 3255746: Unpermitted Usage of ODP**
 
