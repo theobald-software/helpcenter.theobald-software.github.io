@@ -102,7 +102,7 @@ The {{ odpOdata }} {{ component }} offers the following options for data extract
 ![Datasource Preview](../../assets/images/documentation/components/odp-odata/{{ abbr }}/define-odp-odata.png){:class="img-responsive"}
 2. Optional: Edit a selection you want to change or dynamize. 
 For more information, see [Edit Selections](selections.md/#edit-selections).<br>
-3. Optional: Activate the option **Delta / Change tracking** to initialize delta extractions.
+3. Optional: Activate the option **Delta / Change tracking** to initialize delta extractions. For more information, see [Subscriptions](subscriptions.md).
 4. Click {{ previewBtn }} to display a live preview of the first 100 records.
 5. Check the [{{ Settings }}](settings.md){% if page.meta.product == "xtract-universal" or page.meta.product == "board-connector"%} and the [General Settings](general-settings.md){% endif %} before running the {{ extraction }}.
 6. Click **[OK]** to save the {{ component }}.
