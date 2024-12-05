@@ -18,7 +18,7 @@ Follow the steps below to edit selection fields and filter data:
 	
 	![selection](../../assets/images/documentation/components/odp-odata/selection.png){:class="img-responsive"}	
 	
-3. Enter a values directly into the input fields or assign existing [runtime parameters](edit-runtime-parameters.md) to the selection.
+3. Enter values directly into the input fields or assign existing [runtime parameters](edit-runtime-parameters.md) to the selection.
 
 	!!! note
 		When runtime parameters are available, you can use the icon button next to the input field to switch between static values (:runtime-parameters-static:) and runtime parameters (:runtime-parameters-dynamic:).

@@ -5,7 +5,7 @@ Use the following internal SAP representation for input:
 - Numbers: Numbers must contain the leading zeros, e.g., customer number 1000 has the internal representation 0000001000.
 
 !!! warning
-	**Values accept only the internal SAP representation.**<br>
+	**Errors due to non-SAP input representations.**<br>
 	Input that does not use the internal SAP representation results in error messages. <br>
 	Use the internal SAP representation. <br> Example: 
 	```

@@ -9,7 +9,7 @@ The {{ odpOdata }} {{ component }} acts as a subscriber to data providers to ext
 ### Subscribe to a Data provider
 
 To initialize delta extractions, activate the checkbox **Delta / Change tracking** and run the {{ extraction }} once.
-The first run extracts all data that match the set selection criteria.
+The first run extracts all the data that matches the set selection criteria.
 After the initialization, the {{ odpOdata }} {{ component }} only extracts data added or changed on the SAP system since the last run. 
 
 ![subscription](../../assets/images/documentation/components/odp-odata/{{ abbr }}/subscription.png)
