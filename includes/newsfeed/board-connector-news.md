@@ -9,7 +9,7 @@
 
     ---
 
-    :material-clock-time-two-outline: 2024-12-31
+    :material-clock-time-two-outline: 2024-12-02
 
 -   **:material-file-document-outline: Access Data in the SAP Public Cloud**
 
