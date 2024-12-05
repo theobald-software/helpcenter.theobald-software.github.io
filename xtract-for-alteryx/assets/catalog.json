@@ -115,7 +115,7 @@
         "Product": "ERPConnect",
         "Component": "General",
         "Message": "Prevent DLL injection by restricting native library search paths",
-        "ReleaseNote": "## What's New?\nThe search paths to automatically load native DLLs, when making calls to the Win32 API and the RFC libraries, have been restricted, to prevent DLL injection.\nThis is a security measure, recommended by Microsoft. More information can be found [here](https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca5392).\n\n## Impact\nIf the RFC libraries are placed in the System32 directory, or the directory of your application, this change will not affect you.\nFor other directories, please consider moving the RFC libraries or loading them explicitly, using the `RfcLibraryLoader` class of ERPConnect."
+        "ReleaseNote": "* It is now possible to cancel all instances of an extraction.\n* Extraction cancellation is more reliable now.\n* Cancellation of an extraction now keeps the worker alive if possible.\n* New endpoints:\n  * /stop/{extraction_name}\n        * cancels **all** running extractions of that name\n    * /stop/{extraction_name}/{timestamp}\n        * for more control by specifying an extraction run instead of just the name\n        * cancels the extraction specified by that timestamp\n        * no possiblity for ambiguities\n* /abort?name={extraction_name}\n    * works as before\n    * it makes a best effort to fetch the latest extraction by that name\n    * calls /stop/{extraction_name}/{timestamp} internally"
       }
     ]
   },
