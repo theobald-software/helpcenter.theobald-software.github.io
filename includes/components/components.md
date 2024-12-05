@@ -138,6 +138,11 @@
   icon: site:assets/images/logos/components/ODP.svg
   content: Extract data via the SAP Operational Data Provisioning (ODP) framework. <br> <br><span class="keyword">ECC</span> <span class="keyword">S4/HANA</span> <span class="keyword">BW</span> <span class="keyword">BW/4HANA</span>
   url: site:documentation/odp/
+  
+- title: {{ odpOdata }}
+  icon: site:assets/images/logos/components/ODP-OData.svg
+  content: Extract ODP-based data using OData services - official alternative to {{ odp }}. <br> <br> <span class="keyword">ECC</span> <span class="keyword">S4/HANA</span> <span class="keyword">BW</span> <span class="keyword">BW/4HANA</span>
+  url: site:documentation/odp-odata/
 
 - title: {{ query }}
   icon: site:assets/images/logos/components/Query.svg

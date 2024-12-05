@@ -11,14 +11,17 @@ At the top of the configuration menu, click **About** to display information abo
 
 ### Connection
 
-The section *Connection* of the configuration menu defines which [SAP Connection](../sap-connection/index.md) is used for the {{ component }}.
+The section *Connection* of the configuration menu defines which {% if page.meta.componentFolder == "odp-odata" %}[SAP Connection](index.md/#sap-connection-for-odata-access) {% else %}[SAP Connection](../sap-connection/index.md) {% endif %}is used for the {{ component }}.
 
+{% if page.meta.componentFolder != "odp-odata" %}
 
 |Button | Description |
 |--------|-------------|
 | :heavy_plus_sign: **New** | Opens the "SAP Connection Details" window to create a new SAP connection. <br> For more information, see [Knowledge Base Article: SAP Connection using the Xtract for Alteryx GUI](../../knowledge-base/sap-connection-using-xfa-gui.md). |
 | :pen-button: **Edit** | Opens the "SAP Connection Details" window to edit the selected SAP connection. |
 | :heavy_minus_sign: **Delete** | Deletes the selected SAP connection. |
+
+{% endif %}
 
 ### Selected Extraction
 

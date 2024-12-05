@@ -29,7 +29,7 @@ Follow the steps below to edit selection fields and filter data:
 5. In the column **Value**, enter values directly into the input fields **Low** and **High** or assign existing {% if page.meta.product != "xtract-is" %} [{{ variables }}](edit-runtime-parameters.md) {% else %} {{ variables }} {% endif %} to the selection fields :number-3:.
 
 	!!! note
-		When {{ variables }} are available, you can use the icon button inside the input field to switch between static values (:runtime-parameters-static:) and {{ variables }} (:runtime-parameters-dynamic:).
+		When {{ variables }} are available, you can use the icon button next to the input field to switch between static values (:runtime-parameters-static:) and {{ variables }} (:runtime-parameters-dynamic:).
 
 6. Click **[OK]** to confirm your input. 
 {% if page.meta.componentFolder != "query" and page.meta.componentFolder != "query" %}7. Click {{ previewBtn }} in the main window of the {{ component }} to check the result of your selection. 

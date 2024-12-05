@@ -66,6 +66,7 @@ Xtract for Alteryx offers the following {{ components }}:
 | [:component-bwcube:  {{ bwcube }}](documentation//bwcube/index.md) | Extract data from SAP BW InfoCubes and BEx Queries. |
 | [:component-hierarchy:  {{ hierarchy }}](documentation/hierarchy/index.md) | Extract Hierarchies from an SAP BW / BI system. |
 | [:component-odp:  {{ odp }}](documentation/odp/index.md) | Extract data via the SAP Operational Data Provisioning (ODP) framework. | 
+| [:component-odp-odata:  {{ odpOdata }}](documentation/odp-odata/index.md) | Extract ODP-based data using OData services. | 
 | [:component-query:  {{ query }}](documentation/query/index.md) | Extract data from ERP queries. **Note: BEx queries are covered by the {{ bwcube }} {{ component }}**. | 
 | [:component-report: {{ report }}](documentation/report/index.md) | Extract data from SAP ABAP reports. | 
 | [:component-table:  {{ table }}](documentation/table/index.md) | Extract data from SAP tables and views. |

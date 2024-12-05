@@ -2,10 +2,11 @@
 ### Create Runtime Parameters 
 
 There are two types of {{ variables }}:
+- Scalar {{ variables }} represent a single value.
+- List {{ variables }} represent multiple values. 
 
 === "Scalar parameters"
-
-	Scalar {{ variables }} represent a single value. <br>
+	
 	Follow the steps below to create a scalar {{ variable }}:
 	
 	1. {%if page.meta.componentFolder == "table" %}Open the *Edit Runtime Parameters* tab.{% else %}In the main window of the component click {{ parameterBtn }}. The window “Edit Runtime Parameters” opens. {% endif %}<br>
@@ -31,8 +32,7 @@ There are two types of {{ variables }}:
 	The {{ variables }} are now available in the {{ component }}.
 	
 === "List parameters"
-
-	List {{ variables }} represent multiple values. <br>
+	
 	Follow the steps below to create a list {{ variable }}:
 	
 	1. In the main window of the component click {{ parameterBtn }}. 
