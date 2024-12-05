@@ -11,6 +11,16 @@
 
     :material-clock-time-two-outline: 2024-12-31
 
+-   **:material-alert-decagram: New Xtract ODP (OData) Tool**
+
+    ---
+
+    In response to [SAP Note 3255746](https://me.sap.com/notesLatestChanges/0003255746/E/diff), we now support ODP data extractions via the OData protocol. A beta of the new [Xtract ODP(OData)](./documentation/odp-odata/index.md) tool is now available. A generic OData tool is schedules to be released early next year.
+
+    ---
+
+    :material-clock-time-two-outline: 2024-12-05
+
 -   **SAP Note 3255746: Unpermitted Usage of ODP**
 
     ---
