@@ -69,11 +69,6 @@ Internal Changelogs:
 </div>
 <div class="grid cards" markdown>
 
-- [:material-excavator: __Test Environment OData__](test-environment-odata/index.md)
-
-</div>
-<div class="grid cards" markdown>
-
 - [:material-excavator: __Test Environment Troubleshooting List__](test-environment-troubleshooting/index.md)
 
 </div>

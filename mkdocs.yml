@@ -18,6 +18,9 @@ watch:
   - includes
 
 # Configuration
+validation:
+  links:
+    not_found: ignore # ignores broken links (in the root directory) in the console
 theme:
   name: material
   custom_dir: overrides # overrides enable for announcements
