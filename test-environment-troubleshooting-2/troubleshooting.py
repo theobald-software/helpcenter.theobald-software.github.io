@@ -108,7 +108,7 @@ def save_article_list_by_section_and_category(articles):
                         article_file.write(content)
                     
                     # Link to the new Markdown file
-                    relative_link = article_filename.replace("docs/", "")  # Relative path for MkDocs
+                    relative_link = os.path.relpath(article_filename, ARTICLE_FOLDER).replace(os.sep, "/")
                     file.write(f"- [{title}]({relative_link})\n")
                 file.write("\n")  # Add a blank line between categories
                 file.write("</div>\n\n")  # Add text after each category
