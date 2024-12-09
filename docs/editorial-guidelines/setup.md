@@ -36,8 +36,15 @@ pip install git+https://${GH_TOKEN}@github.com/squidfunk/mkdocs-material-insider
 
 Congratulations! The installation of the MKDocs framework and its main theme is complete.
 
-!!! note
-	The gitHub Token in the environment variables needs to be updated regularly (1 year interval), refer to the Admins.
+#### Expired GitHub Token
+
+The gitHub Token used to access the Material Insider program expires within a year and needs to be regenerated around December 9th.
+Refer to the Admins to get the new token and copy the token into the helpcenter repository settings.
+
+![pat-github](../assets/images/editorial-guide/setup/pat-github.png)
+
+It might be necessary to also update your environment variable.
+
 
 ### Install External Plugins
 
