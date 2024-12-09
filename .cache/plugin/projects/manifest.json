@@ -1,9 +1,0 @@
-{
-  ".": "mkdocs.yml",
-  ".board-connector": "projects\\board-connector\\mkdocs.yml",
-  ".erpconnect": "projects\\erpconnect\\mkdocs.yml",
-  ".xtract-for-alteryx": "projects\\xtract-for-alteryx\\mkdocs.yml",
-  ".xtract-is": "projects\\xtract-is\\mkdocs.yml",
-  ".xtract-universal": "projects\\xtract-universal\\mkdocs.yml",
-  ".yunio": "projects\\yunio\\mkdocs.yml"
-}
