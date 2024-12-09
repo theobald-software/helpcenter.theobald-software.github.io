@@ -50,7 +50,7 @@ Internal Changelogs:
 
 [:material-sign-direction: __Roadmap__](roadmap/index.md)
 
-[:material-file-document-edit-outline: __Drafts__](test-environment/index.md)
+[:material-file-document-edit-outline: __Drafts__](drafts/index.md)
 
 [:material-excavator: __Test Environment Troubleshooting List as external links__](test-environment-troubleshooting/index.md)
 

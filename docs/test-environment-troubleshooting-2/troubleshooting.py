@@ -66,6 +66,7 @@ def fetch_and_save_article_content(article_id):
         return "Error: Could not retrieve content."
 
 
+
 def save_article_list_by_section_and_category(articles):
     # Group articles by SectionName and then by CategoryName
     grouped_articles = defaultdict(lambda: defaultdict(list))
@@ -81,6 +82,11 @@ def save_article_list_by_section_and_category(articles):
         
         for section, categories in grouped_articles.items():
             file.write(f"## {section}\n\n")
+            
+            # Create a subfolder for the section
+            section_folder = os.path.join(ARTICLE_FOLDER, section)
+            os.makedirs(section_folder, exist_ok=True)
+            
             for category, articles in categories.items():
                 file.write(f"### {category}\n\n")
                 file.write(f"<div class=\"mdx-columns\" markdown>\n\n")
@@ -91,7 +97,9 @@ def save_article_list_by_section_and_category(articles):
                 for article in sorted_articles:
                     title = article.get('Subject', 'Untitled')
                     article_id = article.get('ArticleId')
-                    article_filename = f"{ARTICLE_FOLDER}/{article_id}.md"
+
+                    # Define the path for the article file
+                    article_filename = os.path.join(section_folder, f"{article_id}.md")
                     
                     # Fetch content and save to a separate file
                     content = fetch_and_save_article_content(article_id)
@@ -105,8 +113,8 @@ def save_article_list_by_section_and_category(articles):
                 file.write("\n")  # Add a blank line between categories
                 file.write("</div>\n\n")  # Add text after each category
             file.write("\n")  # Add a blank line between sections
-            file.write("---\n\n")  # Add text after each category
-
+            file.write("---\n\n")  # Add text after each section
+            
 # Run the script
 if __name__ == "__main__":
     fetch_articles()

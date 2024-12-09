@@ -33,7 +33,7 @@ theme:
      - content.code.copy # adds copy button in code blocks
      - navigation.expand # displays all pages in the navigation by default
      - navigation.indexes # adds landing pages for groups (index.md)
-     - navigation.sections
+     #- navigation.sections
      - navigation.tabs
   palette:
     - scheme: default
