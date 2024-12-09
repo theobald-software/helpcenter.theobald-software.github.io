@@ -4,7 +4,6 @@ Disallow: /ui-style-guide/*
 Disallow: /roadmap/*
 Disallow: /changelog/*
 Disallow: /assets/*
-Disallow: /test-environment/*
+Disallow: /drafts/*
 Disallow: /test-environment-troubleshooting/*
 Disallow: /test-environment-troubleshooting-2/*
-Disallow: /test-environment-troubleshooting-3/*
