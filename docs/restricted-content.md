@@ -64,7 +64,7 @@ Internal Changelogs:
 </div>
 <div class="grid cards" markdown>
 
-- [:material-excavator: __Test Environment KB Article: Run XU in AWS__](test-environment/index.md)
+- [:material-excavator: __Draft: Run XU in AWS__](test-environment/index.md)
 
 </div>
 <div class="grid cards" markdown>

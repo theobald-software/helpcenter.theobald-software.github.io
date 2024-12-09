@@ -34,7 +34,7 @@ def fetch_articles():
 # Fetch and save each article's content to a separate Markdown file
 def fetch_and_save_article_content(article_id):
     try:
-        response = requests.get('https://support.theobald-software.com/helpdesk/api/Article/{article_id}', auth=('Schipka', 'Ganbare4'))
+        response = requests.get('https://support.theobald-software.com/helpdesk/api/Article/' + str(article_id), auth=('Schipka', 'Ganbare4'))
         print(f"https://support.theobald-software.com/helpdesk/api/Article/{article_id}")
         if response.status_code == 200:
             try:
