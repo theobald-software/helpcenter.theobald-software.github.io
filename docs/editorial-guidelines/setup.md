@@ -36,6 +36,9 @@ pip install git+https://${GH_TOKEN}@github.com/squidfunk/mkdocs-material-insider
 
 Congratulations! The installation of the MKDocs framework and its main theme is complete.
 
+!!! note
+	The gitHub Token needs to be updated regularly.
+	
 
 ### Install External Plugins
 
