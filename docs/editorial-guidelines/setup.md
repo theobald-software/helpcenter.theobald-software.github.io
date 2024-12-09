@@ -40,6 +40,7 @@ Congratulations! The installation of the MKDocs framework and its main theme is 
 	The gitHub Token in the environment variables needs to be updated regularly (90 days interval), refer to the Admins.
 
 
+
 ### Install External Plugins
 
 The Theobald Software HelpCenters use external plugins to add functionalities that are not included in MKDocs and the material theme. 
