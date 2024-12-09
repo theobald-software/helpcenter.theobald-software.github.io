@@ -37,7 +37,7 @@ pip install git+https://${GH_TOKEN}@github.com/squidfunk/mkdocs-material-insider
 Congratulations! The installation of the MKDocs framework and its main theme is complete.
 
 !!! note
-	The gitHub Token needs to be updated regularly (90 days interval), refer to the Admins.
+	The gitHub Token in the environment variables needs to be updated regularly (90 days interval), refer to the Admins.
 	
 
 ### Install External Plugins
