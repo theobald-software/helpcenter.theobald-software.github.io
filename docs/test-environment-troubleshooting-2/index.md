@@ -14,22 +14,22 @@ Below is a categorized list of all articles in the knowledge base with the tag '
 
 <div class="mdx-columns" markdown>
 
-- [DeltaQ Troubleshooting Guide](https://support.theobald-software.com/helpdesk//KB/View/14424-deltaq-troubleshooting-guide)
-- [DeltaQ: Customizing check fails for reasons unrelated to missing authority objects](https://support.theobald-software.com/helpdesk//KB/View/25441-deltaq-customizing-check-fails-for-reasons-unrelated-to-missing-authority-objects)
-- [DeltaQ: DataSource error ISOURCE_NOT_EXIST or GENERATION_ERROR](https://support.theobald-software.com/helpdesk//KB/View/25444-deltaq-datasource-error-isource-not-exist-or-generation-error)
-- [DeltaQ: ERPConnect.CommunicationException: RfcListenAndDispatch failed(RFC_SERIALIZATION_FAILURE)](https://support.theobald-software.com/helpdesk//KB/View/25434-deltaq-erpconnect-communicationexception-rfclistenanddispatch-failed-rfc-serialization-failure-)
-- [DeltaQ: Error after SAP system upgrade](https://support.theobald-software.com/helpdesk//KB/View/25442-deltaq-error-after-sap-system-upgrade)
-- [DeltaQ: Error in Data Selection](https://support.theobald-software.com/helpdesk//KB/View/25438-deltaq-error-in-data-selection)
-- [DeltaQ: Error when opening an RFC connection (CM_ALLOCATE_FAILURE_RETRY)](https://support.theobald-software.com/helpdesk//KB/View/25443-deltaq-error-when-opening-an-rfc-connection-cm-allocate-failure-retry-)
-- [DeltaQ: Error when opening an RFC connection (IDOC_INBOUND_ASYNCHRONOUS and RSAR_TRFC_DATA_RECEIVED)](https://support.theobald-software.com/helpdesk//KB/View/25432-deltaq-error-when-opening-an-rfc-connection-idoc-inbound-asynchronous-and-rsar-trfc-data-received-)
-- [DeltaQ: Initialization requirements have not been completed](https://support.theobald-software.com/helpdesk//KB/View/25433-deltaq-initialization-requirements-have-not-been-completed)
-- [DeltaQ: No job found in SAP](https://support.theobald-software.com/helpdesk//KB/View/25437-deltaq-no-job-found-in-sap)
-- [DeltaQ: Not Authorized for XXX](https://support.theobald-software.com/helpdesk//KB/View/25439-deltaq-not-authorized-for-xxx)
-- [DeltaQ: Output contains crippled characters, e.g., non-latin characters,](https://support.theobald-software.com/helpdesk//KB/View/25436-deltaq-output-contains-crippled-characters-e-g-non-latin-characters-)
-- [DeltaQ: SSIS Package Connection Manager with parallel DeltaQ extractions](https://support.theobald-software.com/helpdesk//KB/View/25440-deltaq-ssis-package-connection-manager-with-parallel-deltaq-extractions)
-- [DeltaQ: Timeout "No progress for n seconds, but data is not complete yet."](https://support.theobald-software.com/helpdesk//KB/View/25435-deltaq-timeout-no-progress-for-n-seconds-but-data-is-not-complete-yet-)
-- [Non-Unicode destinations are not supported by SAP](https://support.theobald-software.com/helpdesk//KB/View/17021-non-unicode-destinations-are-not-supported-by-sap)
-- [Required Support Information for Xtract Universal](https://support.theobald-software.com/helpdesk//KB/View/14457-required-support-information-for-xtract-universal)
+- [DeltaQ Troubleshooting Guide](.//14424.md)
+- [DeltaQ: Customizing check fails for reasons unrelated to missing authority objects](.//25441.md)
+- [DeltaQ: DataSource error ISOURCE_NOT_EXIST or GENERATION_ERROR](.//25444.md)
+- [DeltaQ: ERPConnect.CommunicationException: RfcListenAndDispatch failed(RFC_SERIALIZATION_FAILURE)](.//25434.md)
+- [DeltaQ: Error after SAP system upgrade](.//25442.md)
+- [DeltaQ: Error in Data Selection](.//25438.md)
+- [DeltaQ: Error when opening an RFC connection (CM_ALLOCATE_FAILURE_RETRY)](.//25443.md)
+- [DeltaQ: Error when opening an RFC connection (IDOC_INBOUND_ASYNCHRONOUS and RSAR_TRFC_DATA_RECEIVED)](.//25432.md)
+- [DeltaQ: Initialization requirements have not been completed](.//25433.md)
+- [DeltaQ: No job found in SAP](.//25437.md)
+- [DeltaQ: Not Authorized for XXX](.//25439.md)
+- [DeltaQ: Output contains crippled characters, e.g., non-latin characters,](.//25436.md)
+- [DeltaQ: SSIS Package Connection Manager with parallel DeltaQ extractions](.//25440.md)
+- [DeltaQ: Timeout "No progress for n seconds, but data is not complete yet."](.//25435.md)
+- [Non-Unicode destinations are not supported by SAP](.//17021.md)
+- [Required Support Information for Xtract Universal](.//14457.md)
 
 </div>
 
@@ -37,7 +37,7 @@ Below is a categorized list of all articles in the knowledge base with the tag '
 
 <div class="mdx-columns" markdown>
 
-- [How to activate tracing for Xtract Products](https://support.theobald-software.com/helpdesk//KB/View/14455-how-to-activate-tracing-for-xtract-products)
+- [How to activate tracing for Xtract Products](.//14455.md)
 
 </div>
 
@@ -50,28 +50,28 @@ Below is a categorized list of all articles in the knowledge base with the tag '
 
 <div class="mdx-columns" markdown>
 
-- [Allow external access to BW Queries](https://support.theobald-software.com/helpdesk//KB/View/13800-allow-external-access-to-bw-queries)
-- [DeltaQ Customizing - PORT_CREATION_ERROR](https://support.theobald-software.com/helpdesk//KB/View/13346-deltaq-customizing-port-creation-error)
-- [ERROR service ‚?‘ unknown or service sapms unknown](https://support.theobald-software.com/helpdesk//KB/View/13649-error-service-unknown-or-service-sapms-unknown)
-- [Error while retrieving metadata for BAPI](https://support.theobald-software.com/helpdesk//KB/View/19373-error-while-retrieving-metadata-for-bapi)
-- [Error with Table extractions: Theobald.Extractors.Table.TheoReadTableException:   Length of the field "ABCD" not valid. Given length is 00000x . Length in SAP is 00000y](https://support.theobald-software.com/helpdesk//KB/View/21084-error-with-table-extractions-theobald-extractors-table-theoreadtableexception-length-of-the-field-abcd-not-valid-given-length-is-00000x-length-in-sap-is-00000y)
-- [Error: Theobald.Extractors.Table.TheoReadTableException:  The parser produced the error](https://support.theobald-software.com/helpdesk//KB/View/14771-error-theobald-extractors-table-theoreadtableexception-the-parser-produced-the-error)
-- [LIST_FROM_MEMORY_NOT_FOUND](https://support.theobald-software.com/helpdesk//KB/View/19472-list-from-memory-not-found)
-- [MDX parser does not start](https://support.theobald-software.com/helpdesk//KB/View/20073-mdx-parser-does-not-start)
-- [Missing SAP authority rights for data replication.](https://support.theobald-software.com/helpdesk//KB/View/17141-missing-sap-authority-rights-for-data-replication-)
-- [No more storage space available for extending an internal table](https://support.theobald-software.com/helpdesk//KB/View/20282-no-more-storage-space-available-for-extending-an-internal-table)
-- [OPTION_NOT_VALID running table extractions error after an SAP Update](https://support.theobald-software.com/helpdesk//KB/View/13952-option-not-valid-running-table-extractions-error-after-an-sap-update)
-- [RFC_ERROR_SYSTEM_FAILURE - Illegal access to the right table of a LEFT OUTER JOIN.](https://support.theobald-software.com/helpdesk//KB/View/14246-rfc-error-system-failure-illegal-access-to-the-right-table-of-a-left-outer-join-)
-- [SAP Query Metadata/result mismatch](https://support.theobald-software.com/helpdesk//KB/View/17077-sap-query-metadata-result-mismatch)
-- [Search for new Tables and/or Table extractions are empty](https://support.theobald-software.com/helpdesk//KB/View/14139-search-for-new-tables-and-or-table-extractions-are-empty)
-- [SM59 RFC - Connection Test fails](https://support.theobald-software.com/helpdesk//KB/View/13345-sm59-rfc-connection-test-fails)
-- [Theobald.Extractors.Table.TheoReadTableException: Waiting for package to be written to shared memory has timed out.](https://support.theobald-software.com/helpdesk//KB/View/15391-theobald-extractors-table-theoreadtableexception-waiting-for-package-to-be-written-to-shared-memory-has-timed-out-)
-- [When running a report a CNTL_ERROR  exception is raised](https://support.theobald-software.com/helpdesk//KB/View/14406-when-running-a-report-a-cntl-error-exception-is-raised)
-- [Wrong program type for SUBMIT](https://support.theobald-software.com/helpdesk//KB/View/14223-wrong-program-type-for-submit)
-- [Xtract Report - Screen output without connection to user](https://support.theobald-software.com/helpdesk//KB/View/13352-xtract-report-screen-output-without-connection-to-user)
-- [Xtract SAP Query - DATA_TO_MEMORY_NOT_POSSIBLE](https://support.theobald-software.com/helpdesk//KB/View/20194-xtract-sap-query-data-to-memory-not-possible)
-- [Xtract Table  - RFC_ERROR_SYSTEM_FAILURE - An error has occurred while parsing a dynamic entry](https://support.theobald-software.com/helpdesk//KB/View/14626-xtract-table-rfc-error-system-failure-an-error-has-occurred-while-parsing-a-dynamic-entry)
-- [Xtract Table - Time Limit Exceeded](https://support.theobald-software.com/helpdesk//KB/View/14414-xtract-table-time-limit-exceeded)
+- [Allow external access to BW Queries](.//13800.md)
+- [DeltaQ Customizing - PORT_CREATION_ERROR](.//13346.md)
+- [ERROR service ‚?‘ unknown or service sapms unknown](.//13649.md)
+- [Error while retrieving metadata for BAPI](.//19373.md)
+- [Error with Table extractions: Theobald.Extractors.Table.TheoReadTableException:   Length of the field "ABCD" not valid. Given length is 00000x . Length in SAP is 00000y](.//21084.md)
+- [Error: Theobald.Extractors.Table.TheoReadTableException:  The parser produced the error](.//14771.md)
+- [LIST_FROM_MEMORY_NOT_FOUND](.//19472.md)
+- [MDX parser does not start](.//20073.md)
+- [Missing SAP authority rights for data replication.](.//17141.md)
+- [No more storage space available for extending an internal table](.//20282.md)
+- [OPTION_NOT_VALID running table extractions error after an SAP Update](.//13952.md)
+- [RFC_ERROR_SYSTEM_FAILURE - Illegal access to the right table of a LEFT OUTER JOIN.](.//14246.md)
+- [SAP Query Metadata/result mismatch](.//17077.md)
+- [Search for new Tables and/or Table extractions are empty](.//14139.md)
+- [SM59 RFC - Connection Test fails](.//13345.md)
+- [Theobald.Extractors.Table.TheoReadTableException: Waiting for package to be written to shared memory has timed out.](.//15391.md)
+- [When running a report a CNTL_ERROR  exception is raised](.//14406.md)
+- [Wrong program type for SUBMIT](.//14223.md)
+- [Xtract Report - Screen output without connection to user](.//13352.md)
+- [Xtract SAP Query - DATA_TO_MEMORY_NOT_POSSIBLE](.//20194.md)
+- [Xtract Table  - RFC_ERROR_SYSTEM_FAILURE - An error has occurred while parsing a dynamic entry](.//14626.md)
+- [Xtract Table - Time Limit Exceeded](.//14414.md)
 
 </div>
 
@@ -79,7 +79,7 @@ Below is a categorized list of all articles in the knowledge base with the tag '
 
 <div class="mdx-columns" markdown>
 
-- [Authority Check Trace](https://support.theobald-software.com/helpdesk//KB/View/13799-authority-check-trace)
+- [Authority Check Trace](.//13799.md)
 
 </div>
 
@@ -92,15 +92,15 @@ Below is a categorized list of all articles in the knowledge base with the tag '
 
 <div class="mdx-columns" markdown>
 
-- [Copy Command for Snowflake Destination failing](https://support.theobald-software.com/helpdesk//KB/View/21807-copy-command-for-snowflake-destination-failing)
-- [Could not fetch the last extraction runs - While connecting to the Xtract Universal Server](https://support.theobald-software.com/helpdesk//KB/View/14172-could-not-fetch-the-last-extraction-runs-while-connecting-to-the-xtract-universal-server)
-- [Insert Statement failed for empty values using Snowflake Destination](https://support.theobald-software.com/helpdesk//KB/View/14372-insert-statement-failed-for-empty-values-using-snowflake-destination)
-- [Key not valid for use in specified state.](https://support.theobald-software.com/helpdesk//KB/View/14295-key-not-valid-for-use-in-specified-state-)
-- [RFC_ERROR_SYSTEM_FAILURE - A table or alias name in the FROM clause is not unique.](https://support.theobald-software.com/helpdesk//KB/View/14204-rfc-error-system-failure-a-table-or-alias-name-in-the-from-clause-is-not-unique-)
-- [System.InvalidOperationException: port not set](https://support.theobald-software.com/helpdesk//KB/View/20857-system-invalidoperationexception-port-not-set)
-- [Table Export Parameter missing for BAPI Extraction Type](https://support.theobald-software.com/helpdesk//KB/View/14786-table-export-parameter-missing-for-bapi-extraction-type)
-- [The certificate for the remote host could not be validated.](https://support.theobald-software.com/helpdesk//KB/View/14247-the-certificate-for-the-remote-host-could-not-be-validated-)
-- [The remote host's name did not match the name on the provided certificate.](https://support.theobald-software.com/helpdesk//KB/View/20153-the-remote-host-s-name-did-not-match-the-name-on-the-provided-certificate-)
+- [Copy Command for Snowflake Destination failing](.//21807.md)
+- [Could not fetch the last extraction runs - While connecting to the Xtract Universal Server](.//14172.md)
+- [Insert Statement failed for empty values using Snowflake Destination](.//14372.md)
+- [Key not valid for use in specified state.](.//14295.md)
+- [RFC_ERROR_SYSTEM_FAILURE - A table or alias name in the FROM clause is not unique.](.//14204.md)
+- [System.InvalidOperationException: port not set](.//20857.md)
+- [Table Export Parameter missing for BAPI Extraction Type](.//14786.md)
+- [The certificate for the remote host could not be validated.](.//14247.md)
+- [The remote host's name did not match the name on the provided certificate.](.//20153.md)
 
 </div>
 
@@ -108,7 +108,7 @@ Below is a categorized list of all articles in the knowledge base with the tag '
 
 <div class="mdx-columns" markdown>
 
-- [Proxy server settings in Xtract Universal and Board Connector](https://support.theobald-software.com/helpdesk//KB/View/13367-proxy-server-settings-in-xtract-universal-and-board-connector)
+- [Proxy server settings in Xtract Universal and Board Connector](.//13367.md)
 
 </div>
 

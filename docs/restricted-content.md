@@ -42,46 +42,20 @@ Internal Changelogs:
 
 -->
 
-<div class="grid cards" markdown>
+[:material-file-edit-outline: __Editorial Guide__](editorial-guidelines/index.md)
 
-- [:material-file-edit-outline: __Editorial Guide__](editorial-guidelines/index.md)
+[:material-television-guide: __UI Style Guide__](ui-style-guide/index.md)
 
-</div>
-<div class="grid cards" markdown>
+[:material-update: __Internal Changelog__](changelog/changelog-xu.md)
 
-- [:material-television-guide: __UI Style Guide__](ui-style-guide/index.md)
+[:material-sign-direction: __Roadmap__](roadmap/index.md)
 
-</div>
-<div class="grid cards" markdown>
+[:material-file-document-edit-outline: __Drafts__](test-environment/index.md)
 
-- [:material-update: __Internal Changelog__](changelog/changelog-xu.md)
+[:material-excavator: __Test Environment Troubleshooting List as external links__](test-environment-troubleshooting/index.md)
 
-</div>
-<div class="grid cards" markdown>
+[:material-excavator: __Test Environment Troubleshooting List (All Categories)__](test-environment-troubleshooting-2/index.md)
 
-- [:material-sign-direction: __Roadmap__](roadmap/index.md)
-
-</div>
-<div class="grid cards" markdown>
-
-- [:material-excavator: __Draft: Run XU in AWS__](test-environment/index.md)
-
-</div>
-<div class="grid cards" markdown>
-
-- [:material-excavator: __Test Environment Troubleshooting List__](test-environment-troubleshooting/index.md)
-
-</div>
-<div class="grid cards" markdown>
-
-- [:material-excavator: __Test Environment Troubleshooting List (All CAtegories)__](test-environment-troubleshooting-2/index.md)
-
-</div>
-<div class="grid cards" markdown>
-
-- [:material-excavator: __Test Environment Troubleshooting Imported Articles__](test-environment-troubleshooting-3/index.md)
-
-</div>
 
 
 <!---

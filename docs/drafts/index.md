@@ -6,6 +6,8 @@ hide:
  - navigation
 ---
 
+# Run XU in AWS
+
 The following article shows how to run Xtract Universal in a virtual machine on an AWS EC2.
 
 AWS enables running virtual servers (instances) in the cloud, see [AWS Documentation: EC2](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/concepts.html).
