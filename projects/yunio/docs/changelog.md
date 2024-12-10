@@ -18,7 +18,7 @@ hide:
     id="search"
     type="text"
     placeholder="🔍 Search (e.g., 'breaking', 'critical', '1.2.3', '>1.2.3', ...)"
-
+ 
   />
 
   <button class="btn-clear md-button md-button--primary"
