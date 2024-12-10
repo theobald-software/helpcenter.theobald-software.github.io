@@ -1,5 +1,16 @@
 [
   {
+    "Version": "2024.12.10.119",
+    "LegacyReleaseDate": "2024-12-10 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "Table",
+        "Message": "Fixed a bug where the \"Count rows\" function in the UI would lead to all fields being deselected except for the first one."
+      }
+    ]
+  },
+  {
     "Version": "2024.12.10.7",
     "LegacyReleaseDate": "2024-12-10 00:00:00Z",
     "Changes": [
