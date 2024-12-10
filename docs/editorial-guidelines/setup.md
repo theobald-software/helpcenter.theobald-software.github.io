@@ -43,7 +43,8 @@ Refer to the Admins to get the new token and copy the token into the helpcenter 
 
 ![pat-github](../assets/images/editorial-guide/setup/pat-github.png)
 
-It might be necessary to also update your environment variable.
+!!! note
+	Updating the environment variable is not necessary.
 
 
 ### Install External Plugins
