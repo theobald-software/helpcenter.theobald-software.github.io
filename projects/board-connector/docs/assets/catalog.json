@@ -1,5 +1,16 @@
 [
   {
+    "Version": "2024.12.10.7",
+    "LegacyReleaseDate": "2024-12-10 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "Table",
+        "Message": "Fixed a bug where column metadata was incorrectly determined if conversions were enabled for fields that do not have conversion exits defined."
+      }
+    ]
+  },
+  {
     "Version": "2024.12.6.16",
     "LegacyReleaseDate": "2024-12-06 00:00:00Z",
     "Changes": [
