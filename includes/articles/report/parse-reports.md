@@ -85,7 +85,7 @@ Any duplicates of the header are removed from the result set.
 Follow the steps below to parse header rows that contain information about a data set as columns. 
 The depicted example parses the header rows containing the *G/L Account* number and the *Company Code* of a data set as columns.
 
-1. Open the report extraction from [Select a Header](#select-a-header).
+1. Open the report extraction from [Select a Header](#select-a-header) or any other report that contains multiple headers.
 2. Click **[Load Preview]** to load a preview of the first 100 rows.
 3. Open the tab *Skip and Parse Rows*.
 4. Click **[Add row to parse as column]** to add a new column.<br>
