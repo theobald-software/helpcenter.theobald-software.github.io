@@ -8,7 +8,8 @@ This scenario supports script expressions based on .NET and the following XU-spe
 | Input                                                   | Description|
 |:--------------------------------------------------------|:-----------|
 |<pre>#{Source.Name}#</pre> |  Name of the extraction's SAP source.|
-|<pre>#{Extraction.ExtractionName}#</pre> | Name of the extraction. |
+|<pre>#{Extraction.ExtractionName}#</pre> | Name of the extraction.  |
+|<pre>#{Extraction.FullyQualifiedExtractionName}#</pre> | Name of the extraction. If the extraction is part of an [extraction group](../organize-extractions.md), the name of the extraction group is included in the extraction name, e.g, `group,extraction`, `Tables,KNA1`. This option avoids conflicts, when the extraction names are not unique. ||<pre>#{Extraction.FullyQualifiedExtractionName}#</pre> | Name of the extraction. If the extraction is part of an [extraction group](../organize-extractions.md), the name of the extraction group is included in the extraction name, e.g, `group,extraction`, `Tables,KNA1`. This option avoids conflicts, when the extraction names are not unique and the same extraction name is used in multiple [extraction groups](../organize-extractions.md). |
 |<pre>#{Extraction.Type}#</pre> |  Extraction type (*Table*, *ODP*, *BAPI*, etc.). |
 |<pre>#{Extraction.SapObjectName}#</pre> |  Name of the SAP object the extraction is extracting data from. |
 |<pre>#{Extraction.Timestamp}#</pre> |  Timestamp of the extraction.  |

@@ -54,7 +54,8 @@ The following Xtract Universal specific custom script expressions are supported:
 
 | Input                                                   | Description|
 |:--------------------------------------------------------|:-----------|
-|<pre>#{Extraction.ExtractionName}#</pre> | Name of the extraction. If the extraction is part of an [extraction group](../organize-extractions.md), the name of the extraction group is included in the extraction name, e.g, `group,extraction`, `Tables,KNA1`. |
+|<pre>#{Extraction.ExtractionName}#</pre> | Name of the extraction.  |
+|<pre>#{Extraction.FullyQualifiedExtractionName}#</pre> | Name of the extraction. If the extraction is part of an [extraction group](../organize-extractions.md), the name of the extraction group is included in the extraction name, e.g, `group,extraction`, `Tables,KNA1`. This option avoids conflicts, when the extraction names are not unique. |
 |<pre>#{Extraction.TableName }#</pre> |  Name of the database table extracted data is written to. |
 |<pre>#{Extraction.RowsCount }#</pre> | Count of the extracted rows. |
 |<pre>#{Extraction.RunState}#</pre> |  Status of the extraction (Running, FinishedNoErrors, FinishedErrors). |
