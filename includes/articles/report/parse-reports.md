@@ -27,7 +27,8 @@ The article leads you through the following steps to merge all groups into a sin
 Follow the steps below to remove rows that calculate the content of the rows before. 
 Calculation rows are marked with an * symbol.
 
-1. [Look up](../documentation/report/index.md/#look-up-a-report-or-transaction) the report FBL3N (RFITEMGL). 
+1. [Look up](../documentation/report/index.md/#look-up-a-report-or-transaction) a report that contains groups of data. 
+The depicted example uses report FBL3N (RFITEMGL). 
 2. If the report has variants, [select a variant](../documentation/report/variants-and-selections.md/#choose-a-variant).
 3. Click **[Load Preview]** to load a preview of the first 100 rows.
 4. Click **[Automatically detect columns]** to define the columns of the report.<br>
@@ -61,7 +62,7 @@ Follow the steps below to select one of multiple available headers as the report
 All rows that contain the header are displayed in a blue font in the preview section.
 
 	!!! tip
-		If the header is not part of the preview, enter a pattern in the field [**Header pattern**](../documentation/report/report-rows-define.md/#header-pattern) to scan all report rows for the pattern.
+		If the header is not part of the preview (first 100 rows of the report), enter a pattern in the field [**Header pattern**](../documentation/report/report-rows-define.md/#header-pattern) to scan all report rows for the pattern.
 
 	![report-select-header](../assets/images/articles/report/report-improvement/select-header.gif){:class="img-responsive" style="border:1px solid black;"}
 5. Click **[OK]** to save the changes.

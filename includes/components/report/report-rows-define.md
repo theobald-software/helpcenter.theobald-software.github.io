@@ -91,7 +91,7 @@ This option can be used for reports that contain groups with multiple headers.
 ![parse row as header](../../assets/images/documentation/components/report/parse-row-as-header.png){align=right :class="img-responsive"}
 --->
 
-Click **[Add row to parse as column]** to add a new column.<br>
+Click **[Add row to parse as column]** to add a new column to the result set.<br>
 Enter the following column properties manually or use the [parse helper](#parse-helper) to define the column properties:
 
 | Property | Description | 
