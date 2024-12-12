@@ -1,5 +1,16 @@
 [
   {
+    "Version": "2024.12.12.56",
+    "LegacyReleaseDate": "2024-12-12 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "Hierarchy",
+        "Message": "Fix for failing hierarchy extractions with time dependant hierarchies."
+      }
+    ]
+  },
+  {
     "Version": "2024.12.12.41",
     "LegacyReleaseDate": "2024-12-12 00:00:00Z",
     "Changes": [
