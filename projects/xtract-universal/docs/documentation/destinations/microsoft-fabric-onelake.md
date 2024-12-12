@@ -123,6 +123,8 @@ In these cases, Xtract Universal attempts to delete any files created in the Lak
 
 {% include "destinations/date-conversion.md" %}
 
+{% include "destinations/empty-files.md" %}
+
 ----
 
 ## Related Links
