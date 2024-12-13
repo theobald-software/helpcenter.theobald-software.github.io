@@ -14,7 +14,7 @@ tags:
 
 ### Installation
 
-1. [Download](https://theobald-software.com/en/download-trial/) a 30 days trial version of yunIO.
+1. [Download](https://theobald-software.com/en/download-trial/) a 30 days trial version of yunIO or download the latest version from the [customer portal](https://my.theobald-software.com/).
 2. Run the yunIO executable (yunIOSetup.exe) to install yunIO.
 For information on system requirements, see [Requirements](documentation/setup/requirements.md).
 3. Make sure that the YunIO Service is running on your windows system and that the default port 8077 is not blocked by your firewall.<br>

@@ -14,7 +14,7 @@ tags:
 
 ### Installation
 
-1. [Download](https://theobald-software.com/en/download-trial/) a 30 day trial version of Xtract IS.
+1. [Download](https://theobald-software.com/en/download-trial/) a 30 day trial version of Xtract IS or download the latest version from the [customer portal](https://my.theobald-software.com/).
 2. Make sure you meet all [prerequisites](documentation/setup/installation.md#prerequisites), before installing Xtract IS.
 3. Run the Xtract IS executable (XtractISSetup.exe) to install Xtract IS.
 For information on system requirements, see [Requirements](documentation/setup/requirements.md).

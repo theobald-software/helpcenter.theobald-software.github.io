@@ -3,7 +3,7 @@
 
 ![Designer-Login](assets/images/getting-started/{{ abbr }}/Designer-login.png){:class="img-responsive" align=right width="380px"}
 
-1. [Download](https://theobald-software.com/en/download-trial/) a 30 day trial version of {{ productName }}.
+1. [Download](https://theobald-software.com/en/download-trial/) a 30 day trial version of {{ productName }} or download the latest version from the [customer portal](https://my.theobald-software.com/).
 2. Run the {{ productName }} executable ({{ setup }}Setup.exe) to install the [{{ productName }} Designer and the {{ productName }} Server](documentation/introduction.md/#software-architecture).
 For information on system requirements, see [Requirements](documentation/setup/requirements.md).
 3. Make sure that the {{ productName }} Service is running on your windows system and that the default port {{ port }} is not blocked by your firewall.<br>

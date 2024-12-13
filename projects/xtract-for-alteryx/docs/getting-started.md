@@ -13,7 +13,7 @@ tags:
 
 ### Installation
 
-1. [Download](https://theobald-software.com/en/download-trial/) a 30 day trial version of Xtract for Alteryx.
+1. [Download](https://theobald-software.com/en/download-trial/) a 30 day trial version of Xtract for Alteryx or download the latest version from the [customer portal](https://my.theobald-software.com/).
 2. Close the Alteryx Designer.
 3. Run the Xtract for Alteryx executable (XtractForAlteryxSetup.exe) to install Xtract for Alteryx.<br>
 For information on system requirements, see [Requirements](documentation/setup/requirements.md).
