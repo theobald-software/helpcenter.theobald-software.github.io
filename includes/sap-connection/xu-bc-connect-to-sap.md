@@ -1,14 +1,17 @@
 
+
+
 **Supported Connection Methods** 
 
-- Connection to a single application server
-- Connection to a message server (Load Balancing) 
-- Connect to a single application server or public or private cloud instance via RFC over WebSocket.
 
-!!! note
-	For information on how to extract data from the SAP Public Cloud, see [Knowledge Base Article: Access Data in the SAP Public Cloud](../../knowledge-base/access-data-in-the-sap-public-cloud.md).
+- Connection to a single application server via RFC protocol
+- Connection to a message server (Load Balancing) via RFC protocol
+- Connection to a single application server or [public or private cloud instance](../../knowledge-base/access-data-in-the-sap-public-cloud.md) via RFC over WebSocket
+- Connection to SAP OData services via OData protocol
 
-**Supported Authentication Methods**
+**Supported Authentication Methods** 
+
+The RFC protocol supports the following authentication methods:
 
 - Plain login using SAP username and password (system or dialogue user)
 - [Secure Network Communication (SNC)](snc-authentication.md) using username and password via basic authentication

@@ -5,6 +5,13 @@ To open the server settings, navigate to **[Server] > [Manager Sources]** in the
 
 ![sap-source-general](../../assets/images/documentation/sap-connection/{{ abbr }}/open-manage-sources.png){:class="img-responsive"}
 
+## Source Type RFC
+
+The source type **RFC** enables users to access SAP data using the RFC (Remote Function Call) protocol. 
+The RFC connectivity support connections to single application servers, message servers (Load Balancing) and public or private cloud instances (WebSocket).
+
+For more information, see [SAP Help: RFC](https://help.sap.com/doc/saphelp_gbt10/1.0/en-US/48/88068ad9134076e10000000a42189d/frameset.htm).
+
 ### General
 
 
@@ -149,3 +156,60 @@ Some input fields for the SAP connection vary depending on the selected authenti
 	Otherwise the connection is opened in the context of the service account under which the {{ productName }} Windows service runs. 
 	For more information, see [Knowledge Base Article: SSO with Logon-Ticket](../../knowledge-base/sso-with-logon-ticket.md).
 
+### RFC Options
+
+![sap-source-rfc-options](../../assets/images/documentation/sap-connection/sap-source-rfc-options.png){:class="img-responsive" }
+
+{% include "sap-connection/rfc-libraries.md" %}
+
+{% include "sap-connection/trace-directory.md" %}
+
+
+#### Use SAPGUI
+
+There are SAP Reports and BAPIs that require an installed SAP GUI even when they are called remotely. 
+Activate this option only if necessary.
+
+{% include "sap-connection/sap-gui-warning.md" %}
+
+## Source Type OData
+
+The source type **OData** enables users to access data from SAP on-premises and cloud systems using the OData (Open Data) protocol. 
+OData defines a set of rules to create, edit and consume resources through RESTful interfaces (HTTP messages exchanging).
+
+For more information, see [SAP Help: OData Services](https://help.sap.com/doc/77979cd206da4b7f9bd264b390d373fc/CLOUD/en-US/OData_Services.pdf).
+
+![sap-source-odata](../../assets/images/documentation/sap-connection/sap-source-odata.png){:class="img-responsive" }
+
+#### Base URL
+
+The base URL of your SAP system. 
+Examples:
+
+- SAP on premises systems: `http://sap-erp-as05.example.com:50000`
+- SAP Public Cloud system: `https://my123456.s4hana.cloud.sap`
+
+The URL can be requested from the SAP Basis team.
+
+#### Username
+
+When connecting to an SAP on-premises system, enter the username of an SAP dialog user.
+When connecting to an SAP private or public cloud system, enter the username of an [SAP Communication User](https://learning.sap.com/learning-journeys/implement-sap-s-4hana-cloud-public-edition-for-sourcing-and-procurement/setting-up-communication-management_a913171c-c96d-47a9-81ec-dc9ee8754320).
+The SAP Communication User requires ... 
+	
+#### Password
+Password of the SAP user.
+ 
+#### Test Connect
+
+Click **[Test Connect]** to test the OData connection.
+The radio buttons **OData V2** and **OData V4** indicate which OData protocol versions are enabled. 
+For more information about the OData protocol version, refer to [OData V2](https://www.odata.org/documentation/odata-version-2-0/) and [OData V4](https://www.odata.org/documentation/).
+
+
+## Access Control
+
+![sap-source-access-control](../../assets/images/documentation/sap-connection/sap-source-access-control.png){:class="img-responsive"}
+
+Access control can be performed at the source level. This access control overrides the settings at the server level.
+For more information, see [Access Management](../access-restrictions/restrict-designer-access.md/#restrict-access-to-the-designer).
