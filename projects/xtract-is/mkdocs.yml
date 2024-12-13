@@ -242,7 +242,8 @@ extra:
   tablecdc: Xtract TableCDC
   bwcube: Xtract BWCube
   hierarchy: Xtract Hierarchy
-  deltaq: Xtract DeltaQ
+  deltaq: Xtract DeltaQ  
+  odata: Xtract OData
   odp: Xtract ODP
   ohs: Xtract OHS
   tableCDC: Xtract TableCDC

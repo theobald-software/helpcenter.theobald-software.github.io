@@ -49,6 +49,7 @@ Follow the steps below to create a new extraction:
 	| [:component-bwcube: {{ bwcube }}](documentation/bwcube/index.md) | Extract data from SAP BW InfoCubes and BEx Queries. |
 	| [:component-hierarchy: {{ hierarchy }}](documentation/hierarchy/index.md) | Extract Hierarchies from an SAP BW / BI system. |
 	| [:component-deltaq: {{ deltaq }}](documentation/deltaq/index.md) | Extract data from DataSources (OLTP) and extractors from ERP and ECC systems. |
+	| [:component-odata: {{ odata }}](documentation/odata/index.md) | Extract data via SAP OData services. |
 	| [:component-odp: {{ odp }}](documentation/odp/index.md) | Extract data via the SAP Operational Data Provisioning (ODP) framework. |
 	| [:component-ohs: {{ ohs }}](documentation/ohs/index.md) | Extract data from InfoSpokes and OHS destinations. |
 	| [:component-query: {{ query }}](documentation/query/index.md) | Extract data from ERP queries. **Note: BEx queries are covered by {{ bwcube }}**. |

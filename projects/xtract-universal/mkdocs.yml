@@ -251,6 +251,7 @@ extra:
   hierarchy: BW Hierarchy
   deltaq: DeltaQ
   odp: ODP
+  odata: OData
   ohs: OHS
   query: Query
   report: Report
