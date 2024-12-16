@@ -186,8 +186,8 @@ For more information, see [SAP Help: OData Services](https://help.sap.com/doc/77
 The base URL of your SAP system. 
 Examples:
 
-- SAP on premises systems: `http://sap-erp-as05.example.com:50000`
-- SAP Public Cloud system: `https://my123456.s4hana.cloud.sap`
+- SAP on-premises systems: `http://sap-erp-as05.example.com:50000`
+- SAP cloud systems: `https://my123456.s4hana.cloud.sap`
 
 The URL can be requested from the SAP Basis team.
 
