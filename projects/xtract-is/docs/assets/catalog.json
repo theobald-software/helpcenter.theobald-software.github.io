@@ -1,5 +1,16 @@
 [
   {
+    "Version": "2024.12.16.75",
+    "LegacyReleaseDate": "2024-12-16 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "DeltaQ",
+        "Message": "Fix Windows Event Log errors (IOException: The pipe has been ended)"
+      }
+    ]
+  },
+  {
     "Version": "2024.12.16.43",
     "LegacyReleaseDate": "2024-12-16 00:00:00Z",
     "Changes": [
