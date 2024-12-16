@@ -1,5 +1,17 @@
 [
   {
+    "Version": "2024.12.16.45",
+    "LegacyReleaseDate": "2024-12-16 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "General",
+        "Message": "Added header row parsing feature for report services and reworked automatic header detection and skip row feature",
+        "ReleaseNote": "## What's New?\nRework of the report extraction UI: \n-Added possibility to parse header row values as a new column\n-Improved automatic header detection to extract reports with multiple tables under 1 common header\n-Added possibility to directly select rows in the report UI to skip them by keyword"
+      }
+    ]
+  },
+  {
     "Version": "2024.12.16.19",
     "LegacyReleaseDate": "2024-12-16 00:00:00Z",
     "Changes": [
