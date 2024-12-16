@@ -1,5 +1,16 @@
 [
   {
+    "Version": "2024.12.16.17",
+    "LegacyReleaseDate": "2024-12-16 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "ERPConnect",
+        "Component": "Table",
+        "Message": "Adjust RFC_READ_TABLE function module signature to account for newer SAP Releases"
+      }
+    ]
+  },
+  {
     "Version": "2024.12.12.55",
     "LegacyReleaseDate": "2024-12-12 00:00:00Z",
     "Changes": [
