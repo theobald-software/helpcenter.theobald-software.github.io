@@ -1,5 +1,16 @@
 [
   {
+    "Version": "2024.12.18.21",
+    "LegacyReleaseDate": "2024-12-18 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "XtractUniversal",
+        "Component": "Destinations",
+        "Message": "Snowflake destination: use temporary file format instead of pre stored and fix merge statement to avoid picking inappropriate staged files"
+      }
+    ]
+  },
+  {
     "Version": "2024.12.16.78",
     "LegacyReleaseDate": "2024-12-16 00:00:00Z",
     "Changes": [
