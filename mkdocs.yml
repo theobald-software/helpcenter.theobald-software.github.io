@@ -34,6 +34,7 @@ theme:
      - navigation.expand # displays all pages in the navigation by default
      - navigation.indexes # adds landing pages for groups (index.md)
      - navigation.sections
+     - toc.follow
      - navigation.tabs
   palette:
     - scheme: default
@@ -142,6 +143,10 @@ extra:
 markdown_extensions:
   - neoteroi.projects
   - neoteroi.timeline
+  - material.extensions.preview:
+      targets:
+        include:
+          - draft-odata/*
   - pymdownx.critic
   - toc:
       separator: "-"

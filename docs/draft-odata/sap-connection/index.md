@@ -60,18 +60,18 @@ Follow the steps below to create a source that connects to SAP:
 
 === "{==Connect via OData protocol==}"
 
-	1. In the main window of the Designer, navigate to the menu bar and select **Server > Manage Sources**. The window "Manage Sources" opens.  <br>
+	1. {==In the main window of the Designer, navigate to the menu bar and select **Server > Manage Sources**. The window "Manage Sources" opens. ==} <br>
 	![Create-Connection](xu/open-manage-sources.png){:class="img-responsive"}
-	2. Click **[Add]** to add a new SAP connection or click **[:pen-button:]** to edit an existing connection. The window "Change Source" opens. <br>
-	![Create-Connection-2](sap-source-manage.png){:class="img-responsive"}
-	3. Enter a name for the SAP connection in the field **Name**.
-	4. Select **OData** as the source type. <br>
+	2. {==Click **[Add]** to add a new SAP connection or click **[:pen-button:]** to edit an existing connection. The window "Change Source" opens. ==}<br>
+	![Create-Connection-2](sap-source-manage.png){:class="img-responsive"}==}
+	3. {==Enter a name for the SAP connection in the field **Name**.==}
+	4. {==Select **OData** as the source type.==} <br>
 	![sap-source-general](sap-source-odata.png){:class="img-responsive"}
-	5. Enter the [base URL](settings.md#base-url) of your SAP system.
-	6. Enter login [credentials](settings.md#username) for your SAP system.
-	7. Click **[Test Connect]** to validate the connection between the Xtract Universal Designer and the SAP system.  
-	8. Optional: In the *Access Control* tab, you can restrict read and write access to the SAP source, see [Access Management](../access-restrictions/restrict-designer-access.md/#restrict-access-to-the-designer).
-	9. Click **[OK]** to save the SAP source.
+	5. {==Enter the [base URL](settings.md#base-url) of your SAP system.==}
+	6. {==Enter login [credentials](settings.md#username) for your SAP system.==}
+	7. {==Click **[Test Connect]** to validate the connection between the Xtract Universal Designer and the SAP system.  ==}
+	8. {==Optional: In the *Access Control* tab, you can restrict read and write access to the SAP source, see [Access Management](../access-restrictions/restrict-designer-access.md/#restrict-access-to-the-designer).==}
+	9. {==Click **[OK]** to save the SAP source.==}
 
 	
 For more information on the input options, see [Connection Settings](settings.md).
