@@ -1,6 +1,26 @@
 <div class="grid cards" markdown>
 
 
+-   **:material-file-document-outline: How to Parse Reports**
+
+    ---
+
+    Need to handle reports that contain multiple data sets? Our [Knowledge Base Article: Parse Reports](knowledge-base/parse-reports.md) shows you how to parse reports and combine multiple data sets when running extractions. 
+
+    ---
+
+    :material-clock-time-two-outline: 2024-12-18
+
+-   **New Features for Report Extractions**
+
+    ---
+
+    The new features include: parsing header rows as columns, improved header detection and skip row feature, UI changes for a better user experience. For more information, see [Report: Define Rows](documentation/report/report-rows-define.md).
+
+    ---
+
+    :material-clock-time-two-outline: 2024-12-16
+
 -   **:material-alert-decagram: New Xtract ODP (OData) Tool**
 
     ---
