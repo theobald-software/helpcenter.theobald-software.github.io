@@ -65,7 +65,7 @@ The live preview in the {{ report }} {{ component }} does not include the **Row 
 	The setting *Skip rows by pattern* is usually not required if the report columns can be [detected automatically](report-columns-define.md/#define-columns-automatically) and *Dynamic column widths and offsets* is checked in the Report window.
 
 
-### Skip Rows by Keyword
+### Skip rows by keyword
 
 Define rows that are removed from the result set of the report extraction.
 This option can be used to skip header rows that are repeated in the output body of reports.
