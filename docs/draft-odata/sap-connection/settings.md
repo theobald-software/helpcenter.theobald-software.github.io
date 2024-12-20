@@ -12,10 +12,10 @@ To open the server settings, navigate to **[Server] > [Manager Sources]** in the
 
 ## Source Type RFC
 
-The source type **RFC** enables users to access SAP data using the RFC (Remote Function Call) protocol. 
+{==The source type **RFC** enables users to access SAP data using the RFC (Remote Function Call) protocol. 
 The RFC connectivity support connections to single application servers, message servers (Load Balancing) and public or private cloud instances (WebSocket).
 
-For more information, see [SAP Help: RFC](https://help.sap.com/doc/saphelp_gbt10/1.0/en-US/48/88068ad9134076e10000000a42189d/frameset.htm).
+For more information, see [SAP Help: RFC](https://help.sap.com/doc/saphelp_gbt10/1.0/en-US/48/88068ad9134076e10000000a42189d/frameset.htm).==}
 
 ### General
 
@@ -217,13 +217,15 @@ Activate this option only if necessary.
 
 ## Source Type OData
 
+{==
 The source type **OData** enables users to access data from SAP on-premises and cloud systems using the OData (Open Data) protocol. 
-OData defines a set of rules to create, edit and consume resources through RESTful interfaces (HTTP messages exchanging).
+OData defines a set of rules to create, edit and consume resources through RESTful interfaces (HTTP messages exchanging).==}
 
-For more information, see [SAP Help: OData Services](https://help.sap.com/doc/77979cd206da4b7f9bd264b390d373fc/CLOUD/en-US/OData_Services.pdf).
+{==For more information, see [SAP Help: OData Services](https://help.sap.com/doc/77979cd206da4b7f9bd264b390d373fc/CLOUD/en-US/OData_Services.pdf). ==}
 
 ![sap-source-odata](sap-source-odata.png){:class="img-responsive" }
 
+{==
 #### Base URL
 
 The base URL of your SAP system. 
@@ -248,7 +250,7 @@ Password of the SAP user.
 Click **[Test Connect]** to test the OData connection.
 The radio buttons **OData V2** and **OData V4** indicate which OData protocol versions are enabled. 
 For more information about the OData protocol version, refer to [OData V2](https://www.odata.org/documentation/odata-version-2-0/) and [OData V4](https://www.odata.org/documentation/).
-
+==}
 
 ## Access Control
 

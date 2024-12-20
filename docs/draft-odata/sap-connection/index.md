@@ -7,17 +7,22 @@ description: SAP Connection
 This page shows how to connect to SAP.<br>
 An SAP connection is required to use any Xtract Universal extraction type.
 
+!!! warning  
+	**Missing Authorization.**<br>
+    To establish an {==RFC==} connection to SAP, the access to general authority objects must be available.
+    Adjust the [SAP Authority Objects](site:documentation/setup-in-sap/sap-authority-objects#general-authorization-objects) accordingly.
+
 
 **Supported Connection Methods** 
 
-- Connection to a single application server via [RFC protocol](settings.md/#source-type-rfc)
-- Connection to a message server (Load Balancing) via [RFC protocol](settings.md/#source-type-rfc)
+- Connection to a single application server via {==[RFC protocol](settings.md/#source-type-rfc)==}
+- Connection to a message server (Load Balancing) via {==[RFC protocol](settings.md/#source-type-rfc)==}
 - Connection to a single application server or [public or private cloud instance via RFC over WebSocket](../../knowledge-base/access-data-in-the-sap-public-cloud.md)
-- Connection to SAP on-premise systems and SAP cloud systems via [OData protocol](settings.md/#source-type-odata)
+- {==Connection to SAP on-premise systems and SAP cloud systems via [OData protocol](settings.md/#source-type-odata)==}
 
 **Supported Authentication Methods** 
 
-The RFC protocol supports the following authentication methods:
+{==The RFC protocol==} supports the following authentication methods:
 
 - Plain login using SAP username and password (system or dialogue user)
 - [Secure Network Communication (SNC)](snc-authentication.md) using username and password via basic authentication
@@ -51,14 +56,9 @@ Follow the steps below to create a source that connects to SAP:
 	10. Click **[Test server connection]** to validate the connection between the Xtract Universal Server and the SAP system. 
 	11. Click **[OK]** to save the SAP source.
 	
-	!!! warning  
-	**Missing Authorization.**<br>
-    To establish a connection to SAP, the access to general authority objects must be available.
-    Adjust the [SAP Authority Objects](site:documentation/setup-in-sap/sap-authority-objects#general-authorization-objects) accordingly.
 
 
-
-=== "Connect via OData protocol"
+=== "{==Connect via OData protocol==}"
 
 	1. In the main window of the Designer, navigate to the menu bar and select **Server > Manage Sources**. The window "Manage Sources" opens.  <br>
 	![Create-Connection](xu/open-manage-sources.png){:class="img-responsive"}
