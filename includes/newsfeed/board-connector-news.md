@@ -15,7 +15,7 @@
 
     ---
 
-    The new features include: parsing header rows as columns, improved header detection and skip row feature, UI changes for a better user experience. For more information, see [Report: Define Rows](documentation/report/report-rows-define.md).
+    The new features include: parsing header rows as columns, improved header detection and skip row feature, as well as some UI changes for a better user experience. For more information, see [Report: Define Rows](documentation/report/report-rows-define.md).
 
     ---
 
