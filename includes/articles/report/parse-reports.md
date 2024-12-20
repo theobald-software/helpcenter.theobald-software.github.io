@@ -1,5 +1,5 @@
 
-This articles shows how to use {{ productName }} to parse a report that contains groups of data sets as a single data set. <br>
+This articles shows how to use {{ productName }} to parse ABAP reports that contain groups of data sets and merge them into a single data set. <br>
 The depicted example uses the report *FBL3N* that contains multiple groups where each group has its own header and calculation rows.
 
 The article leads you through the following steps to merge all groups into a single data set:
