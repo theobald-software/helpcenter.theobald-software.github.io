@@ -195,7 +195,7 @@ The URL can be requested from the SAP Basis team.
 
 When connecting to an SAP on-premises system, enter the username of an SAP dialog user.
 When connecting to an SAP private or public cloud system, enter the username of an [SAP Communication User](https://learning.sap.com/learning-journeys/implement-sap-s-4hana-cloud-public-edition-for-sourcing-and-procurement/setting-up-communication-management_a913171c-c96d-47a9-81ec-dc9ee8754320).
-The SAP Communication User requires ... 
+
 	
 #### Password
 Password of the SAP user.
