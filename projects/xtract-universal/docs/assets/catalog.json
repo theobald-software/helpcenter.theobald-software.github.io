@@ -1,5 +1,16 @@
 [
   {
+    "Version": "2024.12.20.14",
+    "LegacyReleaseDate": "2024-12-20 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "XtractUniversal",
+        "Component": "Destinations",
+        "Message": "S3 destination: fixed a bug where only data from first 1000 PUT requests to AWS\nwould be included in the file, leading to incomplete results."
+      }
+    ]
+  },
+  {
     "Version": "2024.12.18.21",
     "LegacyReleaseDate": "2024-12-18 00:00:00Z",
     "Changes": [
