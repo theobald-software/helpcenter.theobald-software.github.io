@@ -11,10 +11,10 @@ The {{ report }} {{ component }} offers the following options to remove rows fro
 
 | Option | Description |
 |--------|-------------|
-| [Skip rows from top](#skip-rows-from-top) | Removes the first n number of rows from the top of the report. Use this option to skip rows in the header. | 
-| [Skip rows from button](#skip-rows-from-bottom) | Removes the last n number of rows from the button of the report. Use this option to skip rows in the footer. | 
-| [Skip rows by pattern](#skip-rows-from-bottom) | Uses a pattern or regular expression to remove rows that contain the pattern. If no regular expressions are involved, it is recommended to use the **Skip rows by keayword** option. | 
-| [Skip rows by keyword](#add-row-to-skip) | Uses a keyword to remove all rows that contain the keyword. Use this option to remove header rows that are repeated in the output body of reports or rows that contain *sum* calculations. |
+| [Skip rows from top](#skip-rows-from-top) | Removes the first n number of rows from the top of the report. | 
+| [Skip rows from button](#skip-rows-from-bottom) | Removes the last n number of rows from the button of the report. | 
+| [Skip rows by pattern](#skip-rows-from-bottom) | Uses a pattern or regular expression to remove rows that contain the pattern. | 
+| [Skip rows by keyword](#add-row-to-skip) | Uses a keyword to remove all rows that contain the keyword. |
 
 For more information on how to remove and parse rows to merge groups of data sets into a single data set, see [Knowledge Base Article: Parse Reports in {{ productName }}](../../knowledge-base/parse-reports.md).
 
