@@ -8,7 +8,7 @@ description: Overview of SAP connection settings
 This page contains an overview of the SAP connection settings in the window "Change Source".<br>
 To open the server settings, navigate to **[Server] > [Manager Sources]** in the main window of the Designer and click **[:pen-button:]**.
 
-![sap-source-general](../../assets/images/documentation/sap-connection/{{ abbr }}/open-manage-sources.png){:class="img-responsive"}
+![sap-source-general](xu/open-manage-sources.png){:class="img-responsive"}
 
 ## Source Type RFC
 
@@ -24,7 +24,7 @@ Some input fields for the SAP connection vary depending on the selected connecti
 
 === "Single Application Server"
 
-	![sap-source-general](../../assets/images/documentation/sap-connection/sap-source-general.png){:class="img-responsive"}
+	![sap-source-general](sap-source-general.png){:class="img-responsive"}
 
 	#### Host
 	Host name or IP address of the application server (Property Host).  
@@ -40,7 +40,7 @@ Some input fields for the SAP connection vary depending on the selected connecti
 
 === "Load Balancing"
 
-	![sap-source-general-load-balancing](../../assets/images/documentation/sap-connection/sap-source-general-load-balancing.png){:class="img-responsive"}
+	![sap-source-general-load-balancing](sap-source-general-load-balancing.png){:class="img-responsive"}
 
 	#### Message Server
 	Name or IP address of the message server (Property MessageServer).  
@@ -59,7 +59,7 @@ Some input fields for the SAP connection vary depending on the selected connecti
 
 === "WebSocket"
 
-	![sap-source-websocket](../../assets/images/documentation/sap-connection/sap-source-general-websocket.png){:class="img-responsive"}
+	![sap-source-websocket](sap-source-general-websocket.png){:class="img-responsive"}
 
 	#### Host
 	Name or IP address of the SAP (cloud) system.  
@@ -87,7 +87,7 @@ Some input fields for the SAP connection vary depending on the selected authenti
 
 === "Plain"
 
-	![sap-source-authentication-plain](../../assets/images/documentation/sap-connection/sap-source-authentication-plain.png){:class="img-responsive"}
+	![sap-source-authentication-plain](sap-source-authentication-plain.png){:class="img-responsive"}
 
 	#### User
 	SAP username. 
@@ -104,7 +104,7 @@ Some input fields for the SAP connection vary depending on the selected authenti
 
 === "Secure Network communication (SNC)"
 
-	![sap-source-authentication-snc](../../assets/images/documentation/sap-connection/sap-source-authentication-snc.png){:class="img-responsive"}
+	![sap-source-authentication-snc](sap-source-authentication-snc.png){:class="img-responsive"}
 
 	#### User
 	SAP username.  
@@ -124,7 +124,7 @@ Some input fields for the SAP connection vary depending on the selected authenti
 	#### Use static SAP credentials / Windows service account
 	This option activates SNC without SSO. 
 	If available, the SAP credentials in the fields **User** and **Password** are used for authentication. 
-	The Windows Active Directory user that opens the connection is the service account under which the {{ productName }} Windows service runs. 
+	The Windows Active Directory user that opens the connection is the service account under which the Xtract Universal Windows service runs. 
 	
 	#### Request SAP credentials from caller
 	This option activates SNC with user and password. 
@@ -133,8 +133,8 @@ Some input fields for the SAP connection vary depending on the selected authenti
 	
 	#### SSO - Log in as caller via External ID
 	This option activates SSO with External ID. 
-	SSO with External ID uses a Personal Security Environment (PSE) to create a trust relationship between the SAP application server and the service account that runs {{ productName }}. 
-	This allows {{ productName }} to impersonate any SAP user. For more information, see [Knowledge Base Article: SSO with External ID](../../knowledge-base/sso-with-external-id.md). 
+	SSO with External ID uses a Personal Security Environment (PSE) to create a trust relationship between the SAP application server and the service account that runs Xtract Universal. 
+	This allows Xtract Universal to impersonate any SAP user. For more information, see [Knowledge Base Article: SSO with External ID](../../knowledge-base/sso-with-external-id.md). 
 	
 	#### SSO - Impersonate caller via Kerberos
 	This option activates Kerberos SSO. 
@@ -150,7 +150,7 @@ Some input fields for the SAP connection vary depending on the selected authenti
 
 === "SAP Logon Ticket"
 
-	![sap-source-authentication-logon-ticket](../../assets/images/documentation/sap-connection/sap-source-authentication-logon-ticket.png){:class="img-responsive"}
+	![sap-source-authentication-logon-ticket](sap-source-authentication-logon-ticket.png){:class="img-responsive"}
 
 	#### Ticket issuer URL
 	URL of an Application Server Java (AS Java) that is configured to issue logon tickets. 
@@ -158,16 +158,47 @@ Some input fields for the SAP connection vary depending on the selected authenti
 	
 	#### Impersonate caller when running extractions (Kerberos SSO)
 	Activate this option to open the connection in the Windows Active Directory user context of the caller. 
-	Otherwise the connection is opened in the context of the service account under which the {{ productName }} Windows service runs. 
+	Otherwise the connection is opened in the context of the service account under which the Xtract Universal Windows service runs. 
 	For more information, see [Knowledge Base Article: SSO with Logon-Ticket](../../knowledge-base/sso-with-logon-ticket.md).
 
 ### RFC Options
 
-![sap-source-rfc-options](../../assets/images/documentation/sap-connection/sap-source-rfc-options.png){:class="img-responsive" }
+![sap-source-rfc-options](sap-source-rfc-options.png){:class="img-responsive" }
 
-{% include "sap-connection/rfc-libraries.md" %}
 
-{% include "sap-connection/trace-directory.md" %}
+#### RFC Libraries
+
+Select an RFC library. The following RFC libraries are supported:
+- NetWeaver RFC library (sapnwrfc.dll)
+- Classic RFC library (librfc32.dll)
+
+The RFC API (Remote Function Call) allows to establish an RFC connection to an SAP system from an external system that communicates as Client or Server with the SAP system. 
+For more information on SAP libraries, see [SAP Help: RFC Libraries](https://help.sap.com/saphelp_nwpi71/helpdata/de/45/18e96cd26321a1e10000000a1553f6/frameset.htm). 
+
+SAP does not [support librfc32.dll](https://blogs.sap.com/2012/08/15/support-for-classic-rfc-library-ends-march-2016/) anymore. 
+
+
+!!! note 
+	For some older SAP releases, e.g., R/3 4.6C, it is necessary to enter the user name in upper case when using the NetWeaver RFC library.
+
+!!! note 
+	When using the NetWeaver RFC library with the [DeltaQ](../deltaq/index.md) extraction type or the [OHS](../ohs/index.md) extraction type, the RFC destination in SAP transaction SM59 must be set to *Unicode*. 
+	We recommend using the not supported librfc32.dll for some extraction type, e.g., DeltaQ as it runs more stable than the NetWeaver RFC library.
+
+
+
+#### Trace Directory
+
+You can log debug information and save it locally. <br>
+Enter a path to a local directory in the field **Trace directory** to save the debug information.
+For more information, see [Troubleshooting: Trace Directory](https://support.theobald-software.com/helpdesk/KB/View/14455-how-to-activate-tracing-for-xtract-products).
+
+Clear the **Trace Directory** field when it is not needed.
+
+!!! warning
+	**Increase of used hard drive memory.** <br>
+	A big amount of information is collected when debug logging is activated. This can decrease the capacity of your hard drives dramatically.
+	Activate the debug logging only when necessary e.g., upon request of the support team.
 
 
 #### Use SAPGUI
@@ -175,7 +206,14 @@ Some input fields for the SAP connection vary depending on the selected authenti
 There are SAP Reports and BAPIs that require an installed SAP GUI even when they are called remotely. 
 Activate this option only if necessary.
 
-{% include "sap-connection/sap-gui-warning.md" %}
+
+!!! warning
+	**'sapgui' start failed.**<br>
+	Sometimes SAP opens a pop-up window that requires input when running extractions.
+	To deactivate pop-up windows, open the SAP GUI Logon pad and navigate to **Options... > Security Settings**. 
+	Click the **[Open Security Configuration]** button and select *Allow* as the **Default Action**.
+	Apply the changes and close the SAP GUI Logon pad.
+	
 
 ## Source Type OData
 
@@ -184,7 +222,7 @@ OData defines a set of rules to create, edit and consume resources through RESTf
 
 For more information, see [SAP Help: OData Services](https://help.sap.com/doc/77979cd206da4b7f9bd264b390d373fc/CLOUD/en-US/OData_Services.pdf).
 
-![sap-source-odata](../../assets/images/documentation/sap-connection/sap-source-odata.png){:class="img-responsive" }
+![sap-source-odata](sap-source-odata.png){:class="img-responsive" }
 
 #### Base URL
 
@@ -200,7 +238,7 @@ The URL can be requested from the SAP Basis team.
 
 When connecting to an SAP on-premises system, enter the username of an SAP dialog user.
 When connecting to an SAP private or public cloud system, enter the username of an [SAP Communication User](https://learning.sap.com/learning-journeys/implement-sap-s-4hana-cloud-public-edition-for-sourcing-and-procurement/setting-up-communication-management_a913171c-c96d-47a9-81ec-dc9ee8754320).
-The SAP Communication User requires ... 
+
 	
 #### Password
 Password of the SAP user.
@@ -214,7 +252,7 @@ For more information about the OData protocol version, refer to [OData V2](https
 
 ## Access Control
 
-![sap-source-access-control](../../assets/images/documentation/sap-connection/sap-source-access-control.png){:class="img-responsive"}
+![sap-source-access-control](sap-source-access-control.png){:class="img-responsive"}
 
 Access control can be performed at the source level. This access control overrides the settings at the server level.
 For more information, see [Access Management](../access-restrictions/restrict-designer-access.md/#restrict-access-to-the-designer).

@@ -5,24 +5,24 @@ icon: component/odata
 status: beta
 ---
 
-This page shows how to use the {{ odata }} {{ component }}.<br>
-The {{ odata }} {{ component }} can be used to extract data provided by SAP OData services.
+This page shows how to use the OData extraction type.<br>
+The OData extraction type can be used to extract data provided by SAP OData services.
 
 !!! note
-	This {{ component }} ist still in **beta** phase.
-	This means, the {{ odata }} {{ component }} is subject to change. 
-	Extractions that use the {{ odata }} {{ component }} can stop working with future updates and might require manual changes.
+	This extraction type ist still in **beta** phase.
+	This means, the OData extraction type is subject to change. 
+	Extractions that use the OData extraction type can stop working with future updates and might require manual changes.
 	
 ### About OData Services
 
-The {{ odata }} {{ component }} in {{ productName }} consumes the data provided by SAP OData services.
+The OData extraction type in Xtract Universal consumes the data provided by SAP OData services.
 You can build OData services in SAP using the [SAP Gateway Service Builder](https://help.sap.com/docs/SAP_NETWEAVER_AS_ABAP_751_IP/68bf513362174d54b58cddec28794093/cddd22512c312314e10000000a44176d.html).
 
 The OData (Open Data) protocol defines a set of rules to create, edit and consume resources through RESTful interfaces (HTTP requests).
 Furthermore, the OData protocol describes the data and the data model, meaning the data has its respective metadata, with column name, description, length and data type.
 <!--- OData can also be used to track changes (deltas), create and run procedures, and send asynchronous/batch requests. -->
 
-The {{ odata }} {{ component }} supports [OData V2](https://www.odata.org/documentation/odata-version-2-0/overview/) and [OData V4](https://www.odata.org/documentation/)
+The OData extraction type supports [OData V2](https://www.odata.org/documentation/odata-version-2-0/overview/) and [OData V4](https://www.odata.org/documentation/)
 
 ### Prerequisites
 
@@ -36,36 +36,43 @@ For more information on predefined OData services in the SAPS/4HANA Public Cloud
 
 
 
-{% include "components/xu-bc-new.md" %}
+### Create an OData Extraction
+
+1. In the main window of the Designer, click **[:material-plus-thick:New]** to create a new extraction. The window "Create Extraction" opens.<br>
+![New](new.png){:class="img-responsive"}
+2. Select an [SAP Connection](../sap-connection/index.md) of type **Odata** from the drop-down menu **Source**.
+3. Enter a unique name for your extraction.
+4. Select the extraction type **OData** and click **[OK]**. The main window of the extraction type opens automatically.
+
+The majority of the functions of the extraction type can be accessed in the main window.
 
 
 ### Look up OData Services
 
-1. In the main window of the {{ component }}, click **[:magnifying-glass:]**. The window “Service Selection” opens.<br>
-![Open-Look-Up-ODP](../../assets/images/documentation/components/odata/{{ abbr }}/odata_main-window_add.png){:class="img-responsive"}	
+1. In the main window of the extraction type, click **[:magnifying-glass:]**. The window “Service Selection” opens.<br>
+![Open-Look-Up-ODP](xu/odata_main-window_add.png){:class="img-responsive"}	
 2. In the field **Search pattern**, enter the technical service name of an OData V2 service or the service ID of an OData V4 service :number-1:. 
 Use wildcards (*), if needed.<br>
 3. Click **[Search]**. Search results are displayed.
-![Look-Up-ODP](../../assets/images/documentation/components/odata/odata-lookup.png){:class="img-responsive"}	
+![Look-Up-ODP](odata-lookup.png){:class="img-responsive"}	
 4. Click **[:material-greater-than:]** to select a service :number-2:. 
 The SAP objects that are available via the service are displayed in the right screen of the menu:
 5. Select an SAP object :number-3: and click **[OK]** to confirm.
 
-The application now returns to the main window of the {{ component }}.
+The application now returns to the main window of the extraction type.
 
 
-### Define the {{ odata }} {{ Component }}
+### Define the OData extraction type
 
-The {{ odata }} {{ component }} offers the following options for data extractions:
+The OData extraction type offers the following options for data extractions:
 
 1. In the section *Service Fields*, select the items you want to extract.<br>
-![Datasource Preview](../../assets/images/documentation/components/odata/{{ abbr }}/define-odata.png){:class="img-responsive"}
+![Datasource Preview](xu/define-odata.png){:class="img-responsive"}
 2. Click **[Load Preview]** to display a live preview of the first 100 records.
-{% if page.meta.product == "xtract-universal" or page.meta.product == "board-connector"%}3. Check the [General Settings](general-settings.md) before running the {{ extraction }}.{% endif %}
-3. Click **[OK]** to save the {{ component }}.
-{% if page.meta.product == "xtract-for-alteryx" %}4. Optional: Check the column name style and date conversion options in the [tool configuration](tool-configuration.md) of the {{ component }}. {% endif %}
+3. Check the [General Settings](general-settings.md) before running the extraction.
+4. Click **[OK]** to save the extraction type.
 
 
-You can now run the {{ extraction }}{% if page.meta.product == "xtract-universal" %}, see [Execute and Automate Extractions](../execute-and-automate/index.md){% elif page.meta.product == "board-connector" %}, see [Run Extractions](../run-extractions.md){% elif page.meta.product == "board-connector" %}, see [Run Extractions](../run-extractions.md){% endif %}.
+You can now run the extraction, see [Execute and Automate Extractions](../execute-and-automate/index.md).
 
 
