@@ -120,6 +120,10 @@ plugins:
 # Additional configuration
 extra:
   generator: false #footer display Made with Material for MkDocs
+  status:
+    new: Recently added
+    deprecated: Deprecated
+    beta: Still in beta
   social:
     - icon: fontawesome/brands/linkedin 
       link: https://www.linkedin.com/company/theobald-software/

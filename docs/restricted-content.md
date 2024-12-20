@@ -52,6 +52,8 @@ Internal Changelogs:
 
 [:material-file-document-edit-outline: __Drafts__](drafts/index.md)
 
+[:material-file-document-edit-outline: __Draft: OData__](draft-odata/sap-connection/index.md)
+
 [:material-excavator: __Test Environment Troubleshooting List as external links__](test-environment-troubleshooting/index.md)
 
 [:material-excavator: __Test Environment Troubleshooting List (All Categories)__](test-environment-troubleshooting-2/index.md)
