@@ -2,5 +2,6 @@ nav:
     - index.md
     - variants-and-selections.md
     - report-columns-define.md
+    - report-rows-define.md
     - settings.md
     - parameterization.md

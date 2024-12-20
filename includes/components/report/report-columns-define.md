@@ -1,5 +1,6 @@
 
-This page shows how to define the columns of a report.<br>
+This page shows how to define the columns in the result set of a report extraction.<br>
+
 A report column is defined by its name, offset and length. 
 Per default, all columns are of data type *string*. 
 To identify a columns, the report needs to be executed. Columns can then be identified based on the output.
@@ -15,6 +16,7 @@ Automatic column detection also works for most ALV reports. Example:<br>
 - For reports where the output is not separated by the pipe symbol, the columns must be identified manually. Example:<br>
 ![Report-no-delimiters](../../assets/images/documentation/components/report/Report_new_no_delimiters.png){:class="img-responsive"}
 
+For information on how to parse rows as columns, see [Parse Header Row as New Column](report-rows-define.md/#parse-header-row-as-new-column).
 
 ### Define Columns Automatically
 
@@ -49,21 +51,6 @@ The output of the report is displayed in the *Load Preview* section.
 	Once a column is set and highlighted with a green background, its width and offset cannot be changed via the graphics editor. 
 	Change it using the *Columns* section.
 
-### Row Settings
-
-#### Skip rows from top
-Enter the number of rows you want to skip at the beginning of the report.
-Some reports display meta information in the header section of the report, before the actual report body. This setting allows skipping the meta information. 
-
-#### Skip rows from bottom
-Similar to *skip rows from top*. Enter the number of rows you want to skip in the footer section of the report.
-
-#### Report rows per data row
-Use this setting for ABAP reports, that return two or more "physical" rows to display a single "semantic" data row. Enter the number of physical rows that represent a single data row. <br>
-Example: Report RIEQUI20 
-
-![Report_new_rows_per_data_row](../../assets/images/documentation/components/report/Report_new_rows_per_data_row.png){:class="img-responsive"}
-
-#### Report width
-Use this setting in combination with **Report rows per data row**. **Report width** defines the length of each physical row. 
-The maximum width of extracted reports is limited to 1024 characters per row.
+*****
+#### Related Links
+- [Knowledge Base Article: Parse Reports in {{ productName }}](../../knowledge-base/parse-reports.md).

@@ -2,6 +2,7 @@ nav:
     - index.md
     - variants-and-selections.md
     - report-columns-define.md
+    - report-rows-define.md
     - general-settings.md
     - settings.md
     - edit-runtime-parameters.md

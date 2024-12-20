@@ -1,5 +1,5 @@
 {
-    "whitelist": ["allowlist", "safe list"],
+    "whitelist": ["allowlist", "safe list"], #
     "drop down menu": ["drop-down list"],
     "blacklist": ["denylist", "blocklist"],
     "master": ["main", "primary"],
@@ -8,4 +8,5 @@
     "manpower": ["workforce", "personnel"],
     "sanity check": ["validation check", "integrity check"],
     "guys": ["folks", "everyone", "team"]
+	"take a while": ["This process may take several seconds to complete"],
 }

@@ -45,10 +45,10 @@ List of the relevant *Custom Properties*:
 | *BatchJobName* | Corresponds to the setting [Background Job Name](settings.md/#background-job-name) in the {{ report }} {{ component }}.|
 | *BatchJobTimeout* | Corresponds to the setting [Background Job Timeout](settings.md/#background-job-timeout) in the {{ report }} {{ component }}.|
 | *DynamicColumnWidthsAndOffsets* | Corresponds to the setting [Dynamic Column Widths and Offsets](report-columns-define.md/#dynamic-column-width-and-offset) in the {{ report }} {{ component }}. |
-| *ReportRowsPerDataRow* | Corresponds to the setting [Report Rows Per Data Row](report-columns-define.md#report-rows-per-data-row) in the {{ report }} {{ component }}. |
-| *ReportWidth* | Corresponds to the setting [Report Width](report-columns-define.md/#report-width) in the {{ report }} {{ component }}. |
-| *SkipBottomRows* | Corresponds to the setting [Skip Rows from Bottom](report-columns-define.md/#skip-rows-from-bottom) in the {{ report }} {{ component }}. |
-| *SkipTopRows* | Corresponds to the setting [Skip Rows from Top](report-columns-define.md/#skip-rows-from-top) in the {{ report }} {{ component }}. |
+| *ReportRowsPerDataRow* | Corresponds to the setting [Report Rows Per Data Row](report-rows-define.md#report-rows-per-data-row) in the {{ report }} {{ component }}. |
+| *ReportWidth* | Corresponds to the setting [Report Width](report-rows-define.md/#report-width) in the {{ report }} {{ component }}. |
+| *SkipBottomRows* | Corresponds to the setting [Skip Rows from Bottom](report-rows-define.md/#skip-rows-from-bottom) in the {{ report }} {{ component }}. |
+| *SkipTopRows* | Corresponds to the setting [Skip Rows from Top](report-rows-define.md/#skip-rows-from-top) in the {{ report }} {{ component }}. |
 | *UseBatch* | Corresponds to the setting [Use Background Mode](settings.md/#use-background-mode) in the {{ report }} {{ component }}. |
 | *Variant* | Corresponds to the setting [Variant](variants-and-selections.md/#choose-a-variant) in the {{ report }} {{ component }}.|
 
