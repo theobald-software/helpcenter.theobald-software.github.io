@@ -13,7 +13,11 @@ For more information, see [Setup](documentation/setup/index.md).
 
 ### Connect to SAP
 
-Before connecting to SAP for the first time, set up an SAP dialog user with the necessary [SAP user rights](documentation/setup-in-sap/sap-authority-objects.md/#general-authorization-objects).
+
+The depicted example connects to SAP using the [RFC protocol](documentation/sap-connection/settings.md/#rfc-type-odata). 
+Before connecting to SAP via RFC for the first time, set up an SAP dialog user with the necessary [SAP user rights](documentation/setup-in-sap/sap-authority-objects.md/#general-authorization-objects).
+For information on how to connect to SAP using the Odata protocol, see [Source Type OData](documentation/sap-connection/settings.md/#source-type-odata).
+
 
 1. In the main window of the Designer, click **[:material-plus-thick:New]**. The window "Change Source" opens.<br>
 ![new](assets/images/getting-started/{{ abbr }}/new.png)

@@ -4,7 +4,7 @@
 
 1. In the main window of the Designer, click **[:material-plus-thick:New]** to create a new extraction. The window "Create Extraction" opens.<br>
 ![New](../../assets/images/documentation/introduction/{{ abbr }}/new.png){:class="img-responsive"}
-2. Select an [SAP Connection](../sap-connection/index.md) of type {% if page.meta.componentFolder == "odata" %}**Odata**{% else %}**RFC**{% endif %} from the drop-down menu in **Source**
+2. Select an [SAP Connection](../sap-connection/index.md) of type {% if page.meta.componentFolder == "odata" %}**Odata**{% else %}**RFC**{% endif %} from the drop-down menu **Source**.
 3. Enter a unique name for your extraction.
 4. Select the extraction type **{{ page.meta.componentName }}** and click **[OK]**. The main window of the {{ component }} opens automatically.
 

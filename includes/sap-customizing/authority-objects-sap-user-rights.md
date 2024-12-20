@@ -3,7 +3,7 @@ To use {{ productName }} you need an SAP connection user with sufficient authori
 Authorizations are assigned via authorization objects in SAP. 
 Redirect this page to your SAP Basis administrators to get the relevant authorization objects for your SAP connection user.  
 
-The authorizations in the section [General authorization objects](#general-authorization-objects) are required to establish an SAP connection with the SAP application server. 
+The authorizations in the section [General authorization objects](#general-authorization-objects) are required to establish an RFC SAP connection with the SAP application server. 
 The required authorizations for each {{ component }} are listed in their respective section.  
 
 
@@ -64,7 +64,7 @@ You can download the SAP profiles and upload them to your SAP system:
     If you still get an authorization error, ask SAP Basis to record an ST01-/ or SU53-authorization trace in SAP. This trace shows which authorizations objects are missing.
 
 ### General Authorization Objects
-The following authorization objects are required to establish a connection to SAP. 
+The following authorization objects are required to establish an RFC connection to SAP. 
 
 ``` title="Necessary SAP authorizations"
 S_RFC            RFC_TYPE=FUGR; RFC_NAME=SYST; ACTVT=16
