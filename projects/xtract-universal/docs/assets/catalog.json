@@ -6,7 +6,7 @@
       {
         "Product": "XtractUniversal",
         "Component": "Destinations",
-        "Message": "AWS S3 destination now logs the AWS request IDs."
+        "Message": "S3 destination: now logs the AWS request IDs."
       }
     ]
   },
