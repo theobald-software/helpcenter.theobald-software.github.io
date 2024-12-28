@@ -1,5 +1,16 @@
 [
   {
+    "Version": "2024.12.28.0",
+    "LegacyReleaseDate": "2024-12-28 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "XtractUniversal",
+        "Component": "Destinations",
+        "Message": "Fixed a bug where a wrong file size unit (lines or MB) was displayed in the UI\nin destinations that support multiple file formats and file splitting."
+      }
+    ]
+  },
+  {
     "Version": "2024.12.23.2",
     "LegacyReleaseDate": "2024-12-23 00:00:00Z",
     "Changes": [
