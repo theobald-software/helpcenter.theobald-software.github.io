@@ -13,28 +13,30 @@ For more information, see [Setup](documentation/setup/index.md).
 
 ### Connect to SAP
 
+There are two types of SAP connections:
+- connect via [RFC protocol](documentation/sap-connection/settings/#source-type-rfc) (default)
+- connect via [OData protocol](documentation/sap-connection/settings.md/#source-type-odata)
 
-The depicted example connects to SAP using the [RFC protocol](documentation/sap-connection/settings.md/#rfc-type-odata). 
-Before connecting to SAP via RFC for the first time, set up an SAP dialog user with the necessary [SAP user rights](documentation/setup-in-sap/sap-authority-objects.md/#general-authorization-objects).
-For information on how to connect to SAP using the Odata protocol, see [Source Type OData](documentation/sap-connection/settings.md/#source-type-odata).
+The depicted example shows how to connect to SAP using the RFC protocol. 
 
-
-1. In the main window of the Designer, click **[:material-plus-thick:New]**. The window "Change Source" opens.<br>
+1. Before connecting to SAP via RFC for the first time, set up an SAP dialog user with the necessary [SAP user rights](documentation/setup-in-sap/sap-authority-objects.md/#general-authorization-objects).
+2. In the main window of the Designer, click **[:material-plus-thick:New]**. The window "Change Source" opens.<br>
 ![new](assets/images/getting-started/{{ abbr }}/new.png)
-2. Enter a name for the SAP connection in the field **Name**, e.g., *s4hana*, *bw*, etc.
-3. In the *General* tab, enter the system details of your SAP system.
+3. Enter a name for the SAP connection in the field **Name**, e.g., *s4hana*, *bw*, etc.
+4. In the *General* tab, enter the system details of your SAP system.
 Input values for the SAP connection can be found in the *Properties* of the SAP Logon Pad or they can be requested from the SAP Basis team.<br>
 ![sap-source-general](assets/images/documentation/sap-connection/sap-source-general.png){:class="img-responsive" }
-4. In the *Authentication* tab, enter the SAP credentials of the SAP dialog user.
-5. Click **[Test designer connection]** to validate the connection between the {{ productName }} Designer and the SAP system.
-6. Click **[Test server connection]** to validate the connection between the {{ productName }} Server and the SAP system.
-7. Click **[OK]** to save the SAP source. 
+5. In the *Authentication* tab, enter the SAP credentials of the SAP dialog user.
+6. Click **[Test designer connection]** to validate the connection between the {{ productName }} Designer and the SAP system.
+7. Click **[Test server connection]** to validate the connection between the {{ productName }} Server and the SAP system.
+8. Click **[OK]** to save the SAP source. 
 
 For more information, see [SAP Connection](documentation/sap-connection/index.md).
 
 !!! tip
 	To edit a source or to create new sources, navigate to **Server > Manage Sources** in the menu bar.
 	
+
 ### Create an Extraction
 
 Extractions are the main entities of {{ productName }}. 
@@ -47,19 +49,19 @@ Follow the steps below to create a new extraction:
 3. Enter a name for the extraction :number-2:.
 4. Select one of the following extraction types :number-3::
 
-	|  {{ Component }}  |  Description   |  
-	|----------|-------------|
-	| [:component-bapi: {{ bapi }}](documentation/bapi/index.md) | Execute BAPIs and Function Modules. |
-	| [:component-bwcube: {{ bwcube }}](documentation/bwcube/index.md) | Extract data from SAP BW InfoCubes and BEx Queries. |
-	| [:component-hierarchy: {{ hierarchy }}](documentation/hierarchy/index.md) | Extract Hierarchies from an SAP BW / BI system. |
-	| [:component-deltaq: {{ deltaq }}](documentation/deltaq/index.md) | Extract data from DataSources (OLTP) and extractors from ERP and ECC systems. |
-	| [:component-odata: {{ odata }}](documentation/odata/index.md) | Extract data via SAP OData services. |
-	| [:component-odp: {{ odp }}](documentation/odp/index.md) | Extract data via the SAP Operational Data Provisioning (ODP) framework. |
-	| [:component-ohs: {{ ohs }}](documentation/ohs/index.md) | Extract data from InfoSpokes and OHS destinations. |
-	| [:component-query: {{ query }}](documentation/query/index.md) | Extract data from ERP queries. **Note: BEx queries are covered by {{ bwcube }}**. |
-	| [:component-report: {{ report }}](documentation/report/index.md) | Extract data from SAP ABAP reports. | 
-	| [:component-table: {{ table }}](documentation/table/index.md) | Extract data from SAP tables and views. |
-	| [:component-table-cdc: {{ tableCDC }}](documentation/table-cdc/index.md) | Extract delta data from SAP tables and views. |
+	|  {{ Component }}  |  Connection Type | Description   |  
+	|----------|-------------|-------------|
+	| [:component-bapi: {{ bapi }}](documentation/bapi/index.md) | RFC | Execute BAPIs and Function Modules. |
+	| [:component-bwcube: {{ bwcube }}](documentation/bwcube/index.md) | RFC | Extract data from SAP BW InfoCubes and BEx Queries. |
+	| [:component-hierarchy: {{ hierarchy }}](documentation/hierarchy/index.md) | RFC | Extract Hierarchies from an SAP BW / BI system. |
+	| [:component-deltaq: {{ deltaq }}](documentation/deltaq/index.md) | RFC | Extract data from DataSources (OLTP) and extractors from ERP and ECC systems. |
+	| [:component-odata: {{ odata }}](documentation/odata/index.md) | OData | Extract data via SAP OData services. |
+	| [:component-odp: {{ odp }}](documentation/odp/index.md) | RFC | Extract data via the SAP Operational Data Provisioning (ODP) framework. |
+	| [:component-ohs: {{ ohs }}](documentation/ohs/index.md) | RFC | Extract data from InfoSpokes and OHS destinations. |
+	| [:component-query: {{ query }}](documentation/query/index.md) | RFC | Extract data from ERP queries. **Note: BEx queries are covered by {{ bwcube }}**. |
+	| [:component-report: {{ report }}](documentation/report/index.md) | RFC | Extract data from SAP ABAP reports. | 
+	| [:component-table: {{ table }}](documentation/table/index.md) | RFC | Extract data from SAP tables and views. |
+	| [:component-table-cdc: {{ tableCDC }}](documentation/table-cdc/index.md) | RFC | Extract delta data from SAP tables and views. |
 	
 5. Click **[OK]**. The main window of the extraction type opens automatically.<br>
 Follow the instructions in the documentation of the selected {{ component }} to set up the extraction.
