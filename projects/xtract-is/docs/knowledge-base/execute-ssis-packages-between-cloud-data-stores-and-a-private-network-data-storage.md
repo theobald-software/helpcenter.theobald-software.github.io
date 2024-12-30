@@ -31,7 +31,7 @@ The following prerequisites are mostly based on the official Microsoft documenta
 	
 5. Execute the *XtractISSetup.exe* file to install Xtraxt IS and use Xtract IS Data Flow Tasks.
 6. If your SSIS package uses one of the following components, download and install the relevant drivers:
-	- Object Linking and Embedding Database (OLEDB), see [OLE DB Driver 18 for SQL Server](https://www.microsoft.com/en-us/download/details.aspx?id=56730)
+	- Object Linking and Embedding Database (OLEDB), see [OLE DB Driver 18 for SQL Server](https://learn.microsoft.com/en-us/sql/connect/oledb/download-oledb-driver-for-sql-server?view=sql-server-ver16)
 	- Open Database Connectivity (ODBC)
 	- ADO.NET connectors
 	- Azure Feature Pack, see [SSIS 2017 Feature Pack for Azure](https://www.microsoft.com/en-us/download/details.aspx?id=54798)
