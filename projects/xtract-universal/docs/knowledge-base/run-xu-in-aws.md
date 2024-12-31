@@ -75,7 +75,7 @@ There are multiple ways to set up {{ productName }} in EC2:
 
 ## Getting Started on AWS
 
-After {{ productName }} is set up on AWS,  the following steps are required to start data extractions from SAP:
+After {{ productName }} is set up on AWS,  the following steps are required to start data extracting data from SAP:
 - [Connect {{ productName }} to an SAP system](../getting-started.md#connect-to-sap).
 - [Create an extraction](../getting-started.md#create-an-extraction) that defines which SAP data to extract.
 - [Testrun the extraction](../getting-started.md#run-an-extraction) in the {{ productName }} Designer to preview the extracted data.
