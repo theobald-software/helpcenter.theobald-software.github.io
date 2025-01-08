@@ -1,5 +1,18 @@
 [
   {
+    "Version": "2025.1.8.39",
+    "LegacyReleaseDate": "2025-01-08 00:00:00Z",
+    "IsBreaking": true,
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "BWCube",
+        "Message": "MDX: Fixed issues and improved handling for external hierarchies",
+        "ReleaseNote": "## Breaking change\n\nDimensions that are based on external hierarchies will now read text nodes in addition to leaf nodes. This change is breaking because it affects the data type and amount of replicated data.\n\n## Improvements\n\nDimension filters now allow to select nodes of external hierarchies. The special SAP MDX syntax for external hierarchy selection has to be used. Refer to the [SAP documentation](https://help.sap.com/docs/SUPPORT_CONTENT/bwplaolap/3361383880.html#MDXsyntaxandconcepts(3)DimensionsandHierarchies-Externalhierarchies).\n\n```\n[DimensionName                 HierarchyName].[LeafNode]\n[DimensionName                 HierarchyName].[TextNode                        0HIER_NODE]\n```\n\n## Fixes\n\n- double clicking variable rows resulting in an error"
+      }
+    ]
+  },
+  {
     "Version": "2024.12.16.79",
     "LegacyReleaseDate": "2024-12-16 00:00:00Z",
     "Changes": [
