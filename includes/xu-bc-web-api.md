@@ -65,7 +65,7 @@ The response of the web service call contains the following information:
 
 ![Webservice Call pull](assets/images/documentation/automation/call_webservice_csv.png){:class="img-responsive"}
 
-#### Parameters for `[protocol]://[host]:[port]/start/[extraction_name]`
+#### Parameters for `/start/[extraction_name]`
 
 | Parameter    | Description  | 
 |-----------|--------------|
@@ -116,14 +116,15 @@ The response of the web service call contains the following information:
 	800,0000000779,DE,Theobald Software,Stuttgart"
 	```
 
-### Abort Extraction
+
+### Abort Extractions
 
 ```
-[protocol]://[host]:[port]/abort?name=[extraction_name]
+[protocol]://[host]:[port]/stop/[extraction_name]
 ```  
 <div class="result" markdown>
 
-Aborts the specified extraction. If the abortion is successful, a confirmation message is returned in the HTTP body. 
+Aborts all running extractions that use the specified extraction name. If the abortion is successful, a confirmation message is returned in the HTTP body. 
 
 </div>
 
@@ -135,12 +136,32 @@ Aborts the specified extraction. If the abortion is successful, a confirmation m
 
 {% endif %}
 
+#### Parameters and Options for `/stop/[extraction_name]`
+
+| Parameter    | Description  | 
+|-----------|--------------|
+| ```/[yyyy-MM-dd_HH:mm:ss.SSS]```  |   Only aborts the extraction with the specified extraction name and the specified timestamp. |
+
+
+!!! note
+
+	The following endpoint is still supported, but can be replaced by `/stop/[extraction_name]/[yyyy-MM-dd_HH:mm:ss.SSS]`:
+			
+	```
+	[protocol]://[host]:[port]/abort?name=[extraction_name]
+	```  
+	<div class="result" markdown>
+
+	Aborts the latest run of the specified extraction. If the abortion is successful, a confirmation message is returned in the HTTP body. 
+
+	</div>
+
 #### Example
 
-??? api "http://sherri.theobald.local:{{ port }}/abort?name=KNA1"
+??? api "http://sherri.theobald.local:{{ port }}/stop/KNA1"
 
 	```csv
-	All runs of extraction 'KNA1' aborted.
+	Extraction cancellation succeeded.
 	```
 
 ### Get Status of an Extraction
@@ -207,7 +228,7 @@ The result contains the following elements:
 | startedAt| timestamp of the execution |
 
 
-#### Parameters & Options for `[protocol]://[host]:[port]/logs/extractions`
+#### Parameters & Options for `/logs/extractions`
 
 | Parameter    | Description  | 
 |-----------|--------------|
@@ -379,7 +400,7 @@ Returns a list of timestamps that correspond to server logs.
 
 </div>
 
-#### Parameters & Options for `[protocol]://[host]:[port]/logs/web`
+#### Parameters & Options for `/logs/web`
 
 | Parameter    | Description  | 
 |-----------|--------------|
@@ -566,7 +587,7 @@ The result contains the following elements:
 | user| user that last changed the extraction |
 
 
-#### Parameters & Options for `[protocol]://[host]:[port]/config/extractions`
+#### Parameters & Options for `/config/extractions`
 
 | Parameter    | Description  | 
 |-----------|--------------|
