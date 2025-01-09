@@ -9,8 +9,8 @@ The {{ page.meta.title }} destination enables users to load SAP data directly fr
 
 ## Requirements
 
-To use the {{ page.meta.title }} destination, the Xtract Universal Dataiku plugin for the Dataiku must be installed. 
-Fetch the [xu-dataiku-plugin](https://github.com/theobald-software/xu-dataiku-plugin) from the gitHub repository.
+To use the {{ page.meta.title }} destination, the Xtract Universal Dataiku plugin must be installed. 
+You can fetch the [xu-dataiku-plugin](https://github.com/theobald-software/xu-dataiku-plugin) from the gitHub repository.
 
 For information on how to install plugins in Dataiku, see [Dataiku Documentation: Installing plugins](https://doc.dataiku.com/dss/latest/plugins/installing.html).
 
