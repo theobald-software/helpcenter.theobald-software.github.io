@@ -1,6 +1,11 @@
 # Build files
 site/
 projects/erpconnect/site/
+projects/board-connector/site/
+projects/xtract-universal/site/
+projects/xtract-is/site/
+projects/xtract-for-alteryx/site/
+projects/yunio/site/
 
 # Cache
 .cache
