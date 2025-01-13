@@ -183,7 +183,7 @@ For more information, see [SAP Help: OData Services](https://help.sap.com/doc/77
 
 #### Base URL
 
-The base URL of your SAP system. 
+The base URL (protocol, hostname and port) of your SAP system. 
 Examples:
 
 - SAP on-premises systems: `http://sap-erp-as05.example.com:50000`
