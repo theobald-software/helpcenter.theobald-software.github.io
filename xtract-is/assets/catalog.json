@@ -1,18 +1,5 @@
 [
   {
-    "Version": "2025.1.8.33",
-    "LegacyReleaseDate": "2025-01-08 00:00:00Z",
-    "IsBreaking": true,
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "BWCube",
-        "Message": "MDX: Fixed issues and improved handling for external hierarchies",
-        "ReleaseNote": "## Breaking change\n\nDimensions that are based on external hierarchies will now read all members instead of only the second level. This change might be breaking because it can affect the data type and amount of replicated data.\n\nExample:\n\n- ┏ all\n- ┣ leaf 1\n- ┣ text node 1\n- ┃ ┣ leaf 2\n- ┃ ┗ leaf 3\n- ┣ leaf 4\n- ┣ leaf 5\n- ┗ text node 2\n- ┋ ┗ leaf 6\n\nwill result in \n\n- all\n- leaf 1\n- text node 1\n- leaf 2\n- leaf 3\n- leaf 4\n- leaf 5\n- text node 2\n- leaf 6\n\ninstead of\n\n- leaf 1\n- text node 1\n- leaf 4\n- leaf 5\n- text node 2\n\n### You're affected if all of these apply\n\nYour MDX BWCube extraction:\n\n- contains an external hierarchy\n- has a default hierarchy \n- metadata is refreshed or contains special external hierarchy filter syntax (see **Improvements**)\n- is part of a workflow that relies on receiving a specific level only\n\n### Steps to avoid breaking existing workflows\n\n- do not refresh metadata\n- change existing filters on hierarchies, if present\n\n## Improvements\n\nDimension filters now allow to select nodes of external hierarchies. The special SAP MDX syntax for external hierarchy selection has to be used. Refer to the [SAP documentation](https://help.sap.com/docs/SUPPORT_CONTENT/bwplaolap/3361383880.html#MDXsyntaxandconcepts(3)DimensionsandHierarchies-Externalhierarchies).\n\n\n## Fixes\n\n- double clicking variable rows resulting in an error"
-      }
-    ]
-  },
-  {
     "Version": "2024.12.16.75",
     "LegacyReleaseDate": "2024-12-16 00:00:00Z",
     "Changes": [
