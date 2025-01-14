@@ -1,5 +1,16 @@
 [
   {
+    "Version": "2025.1.14.29",
+    "LegacyReleaseDate": "2025-01-14 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "XtractUniversal",
+        "Component": "HttpJson",
+        "Message": "Fixed null value writing on the JSON destination"
+      }
+    ]
+  },
+  {
     "Version": "2025.1.8.37",
     "LegacyReleaseDate": "2025-01-08 00:00:00Z",
     "IsBreaking": true,
