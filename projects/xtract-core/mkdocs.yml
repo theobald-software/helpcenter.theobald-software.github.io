@@ -1,0 +1,235 @@
+# Copyright (c) 2016-2023 Martin Donath <martin.donath@squidfunk.com>
+# Project information
+site_name: Xtract Core HelpCenter
+site_url: https://helpcenter.theobald-software.com/yunio/
+#site_author: Valerie Schipka
+site_description: >-
+  Xtract Core offers SAP mass data extraction via Rest API.<br>
+  Learn how to use Xtract Core by browsing our user documentation, changelog and more.
+
+# Repository
+# repo_name: theobald-software/helpcenter.theobald-software.github.io
+#repo_url: https://github.com/theobald-software/oh.theobald-software.github.io.git
+# Copyright
+copyright: Copyright &copy; 2025 Theobald Software GmbH <br> <span style="color:#22A285"><a  style="color:#22A285" href="https://theobald-software.com/en/privacy-policy/" target="_blank" rel="noopener">privacy policy</a> - <a  style="color:#22A285" href="https://theobald-software.com/en/legal-notice" target="_blank" rel="noopener">legal notice</a> - <a style="color:#22A285" href="https://theobald-software.com/en/" target="_blank" rel="noopener">website</a></span>
+watch:
+  - includes
+  - overrides
+# Configuration
+theme:
+  name: material
+  custom_dir: overrides #announcements and custom templates
+  icon:
+    admonition:
+      tip: material/lightbulb
+      note: fontawesome/solid/circle-info
+  features:
+     - announce.dismiss # adds a dismissal option to announcements 
+    # - content.action.edit # adds an edit button to the pages
+    # - content.action.view # adds a view source button to the pages
+     - content.code.copy # adds copy button in code blocks
+    # - content.code.select # adds select button in code blocks
+     - content.tabs.link # adds anchors when switching tabs
+    # - content.tooltips # ebables adding tooltips to links
+    # - header.autohide # hides the header when scrolling down
+    # - navigation.expand #displays all pages in the navigation (not good for API Reference)
+    # - navigation.footer
+     - navigation.indexes #adds landing pages for groups
+    #- navigation.instant # load faster (no page reload for internal links)
+     - navigation.instant.prefetch # load faster (start loading content when hovering)
+     - navigation.instant.progress # enables a progress indicator 
+    # - navigation.instant.preview
+     - navigation.path #adds breadcrumbs
+    # - navigation.prune # only the visible navigation items are included in the rendered HTML, reducing the size of the built site by 33% or more
+    # - navigation.sections # top level pages are rendered as groups in the navigation
+     - navigation.tabs # add 1st level navigation to the header
+     - navigation.tabs.sticky # tabs do not disappear when scrolling
+     - navigation.top # add a "back to top" button
+     - navigation.tracking # instantly adds the current headline to the URL
+     - search.highlight # highlights the search entry in the results
+     - search.share # adds a share link option to the search
+     - search.suggest # enables auto-complete in search
+     - toc.follow # sidebar is automatically scrolled so that the active anchor is always visible
+    # - toc.integrate # adds the toc to the navigation
+  palette:
+    - scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/lightbulb
+        name: Switch to dark mode
+    - scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/lightbulb-outline
+        name: Switch to light mode
+  font:
+    text: Poppins
+    code: Roboto Mono
+  favicon: assets/images/logos/products/YunIO.png
+  logo: assets/images/logos/products/YunIO.png
+
+# Custom CSS
+extra_css:
+  - assets/stylesheets/extra.css
+  - assets/stylesheets/neoteroi-cards.css 
+  - assets/stylesheets/hyperscript.css
+  - assets/stylesheets/github-permalink-style.css
+  
+extra_javascript:
+  - assets/javascripts/hyperscript.min.js
+  - assets/javascripts/changelog.js
+    
+# Plugins
+plugins:
+  #- redirects: #redirect URLs when renaming/moving .md files
+  #    redirect_maps:
+  #      'old.md': 'new.md'
+  #      'old/file.md': 'new/file.md'
+  #      'some_file.md': 'http://external.url.com/foobar'
+  - privacy:
+      links_attr_map:
+        target: _blank # opens all external links in new tabs
+  - meta # define front matter of multiple ,md files in .meta.yml file 
+  - tags # enables tags in front matter
+  - search:
+      lang: en
+      #separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
+      pipeline:
+        #- stemmer
+        - stopWordFilter
+  - typeset # preserve format of titles and headlines in navigation and toc
+  - awesome-pages # define navigation in .pages files
+  - macros:
+      include_dir: includes
+  #- glightbox #image zoom
+
+# Continuous integration
+  - group:
+      enabled: !ENV CI
+      plugins:
+        - git-revision-date-localized:
+             exclude:
+               - index.md
+        #enable_creation_date: true
+        #type: timeago
+        #- optimize #requires pngquant to be installed, see https://github.com/squidfunk/mkdocs-material/discussions/4989
+        - minify:
+            minify_html: true  
+        - social:
+            cards_layout: default
+            cards_layout_options:
+              background_color: "#22A285"
+# Hook for Relative Links
+hooks:
+  - overrides/site-urls.py
+  
+# Extensions for Markdown Syntax  
+markdown_extensions:
+  - material.extensions.preview:
+      sources:
+        exclude:
+          - index.md
+          - changelog.md
+  - toc:
+      separator: "-"
+      permalink: ''
+      title: On this Page
+  - pymdownx.snippets:
+      base_path: includes
+  - pymdownx.superfences #for content tabs (version history)
+  - pymdownx.keys
+  - pymdownx.tabbed:
+      alternate_style: true
+  - tables
+# notes, warnings, etc
+  - admonition
+  - pymdownx.details
+# code blocks  
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+# images & grids
+  - attr_list
+  - md_in_html
+  - neoteroi.cards
+# lists
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+# icons
+  - pymdownx.emoji: 
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      options:
+        custom_icons:
+          - overrides/.icons
+# breakless lists (for migration)
+  - mdx_breakless_lists
+
+# Additional configuration
+extra:
+  root_url: https://helpcenter.theobald-software.com #link in header (product overview)
+  status:
+    new: Recently added
+    deprecated: Deprecated
+    beta: Still in beta
+  generator: false #footer display Made with Material for MkDocs
+  consent:
+    title: Cookie consent
+    description: >- 
+      We use cookies to measure the effectiveness of our documentation and whether users find what they're searching for. 
+      With your consent, you're helping us to make our documentation better. 
+      For more information, refer to our <a href="https://theobald-software.com/en/privacy-policy/" target="_blank" rel="noopener">privacy policy</a>.
+    actions:
+      - accept
+      - reject
+      #- manage
+  analytics:
+    provider: google
+    property: G-GVBJSXCV3V
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: material/emoticon-happy-outline
+          name: This page was helpful
+          data: 1
+          note: >-
+            Thank you for your feedback! <br>Help us improve our products by
+            using our <a href="https://theobald-software.typeform.com/to/CnpfiiIN" target="_blank" rel="noopener">feedback form</a>.
+        - icon: material/emoticon-sad-outline
+          name: This page could be improved
+          data: -1
+          note: >-
+            Thank you for your feedback! <br>Help us improve our products by
+            using our <a href="https://theobald-software.typeform.com/to/CnpfiiIN" target="_blank" rel="noopener">feedback form</a>.
+  social:
+    - icon: fontawesome/brands/linkedin 
+      link: https://www.linkedin.com/company/theobald-software/
+      name: LinkedIn
+    - icon: fontawesome/brands/youtube 
+      link: https://www.youtube.com/user/TheobaldSoftware
+      name: Youtube
+    - icon: fontawesome/brands/instagram 
+      link: https://www.instagram.com/theobaldsoftware/
+      name: Instagram
+    - icon: fontawesome/solid/envelope
+      link: https://theobald-software.com/en/newsletter/
+      name: Newsletter
+      
+  productName: Xtract Core
+  product: xtract-core
+  Component: Endpoint
+  Components: Endpoints
+  component: endpoint
+  components: endpoints
+  Abbr: XC
+  abbr: xc
+  installationDir: C:\Program Files\Theobald Software\Xtract Core
+  table: _Table_
+  extraction: service call
+  Extraction: Service call
+  
