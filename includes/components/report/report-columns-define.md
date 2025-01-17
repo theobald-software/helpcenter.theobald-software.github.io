@@ -8,7 +8,7 @@ To identify a columns, the report needs to be executed. Columns can then be iden
 	At this stage, use a selection or variant that returns only a few records. This can be adapted later on.
 
 
-- Some classical ABAP reports are developed to use the pipe symbol '\|' as a delimiter for the output columns. 
+- Certain classical ABAP reports are developed to use the pipe symbol '\|' as a delimiter for the output columns. 
 In this case the {{ report }} {{ component }} can automatically identify the columns. 
 Automatic column detection also works for most ALV reports. Example:<br>
 ![Report-delimiters](../../assets/images/documentation/components/report/Report_new_delimiters.png){:class="img-responsive"}
