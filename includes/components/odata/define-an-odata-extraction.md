@@ -28,3 +28,5 @@ The {{ odata }} {{ component }} offers the following options for data extraction
 
 You can now run the {{ extraction }}{% if page.meta.product == "xtract-universal" %}, see [Execute and Automate Extractions](../execute-and-automate/index.md){% elif page.meta.product == "board-connector" %}, see [Run Extractions](../run-extractions.md){% elif page.meta.product == "board-connector" %}, see [Run Extractions](../run-extractions.md){% endif %}.
 
+!!! note
+	The OData data types **DateTime** and **DateTimeOffset** (original format: *yyyy-mm-ddThh:mm[:ss[.fffffff]]*) are truncated to the following format: *yyyyMMdd*.
