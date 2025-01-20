@@ -9,7 +9,7 @@ This page shows how to use the {{ odata }} {{ component }}.<br>
 The {{ odata }} {{ component }} can be used to extract data provided by SAP OData services.
 
 !!! note
-	This {{ component }} ist still in **beta** phase.
+	OData {{ component }} ist still in **beta** phase.
 	This means, the {{ odata }} {{ component }} is subject to change. 
 	Extractions that use the {{ odata }} {{ component }} can stop working with future updates and might require manual changes.
 	

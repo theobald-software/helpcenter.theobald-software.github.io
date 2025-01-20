@@ -8,14 +8,14 @@ To open the server settings, navigate to **[Server] > [Manager Sources]** in the
 ## Source Type RFC
 
 The source type **RFC** enables users to access SAP data using the RFC (Remote Function Call) protocol. 
-The RFC connectivity support connections to single application servers, message servers (Load Balancing) and public or private cloud instances (WebSocket).
+The RFC connectivity supports connections to single application servers, message servers (Load Balancing) and public or private cloud instances (WebSocket).
 
 For more information, see [SAP Help: RFC](https://help.sap.com/doc/saphelp_gbt10/1.0/en-US/48/88068ad9134076e10000000a42189d/frameset.htm).
 
 ### General
 
 
-Some input fields for the SAP connection vary depending on the selected connection method. 
+Certain input fields for the SAP connection vary depending on the selected connection method. 
 
 === "Single Application Server"
 
@@ -77,7 +77,7 @@ Some input fields for the SAP connection vary depending on the selected connecti
 
 ### Authentication
 
-Some input fields for the SAP connection vary depending on the selected authentication method. 
+Certain input fields for the SAP connection vary depending on the selected authentication method. 
 
 
 === "Plain"
@@ -95,7 +95,8 @@ Some input fields for the SAP connection vary depending on the selected authenti
 	Activate this option when connecting to an SAP cloud system using the WebSocket connection method, see [Knowledge Base Article: Access Data in the SAP Public Cloud](../../knowledge-base/access-data-in-the-sap-public-cloud.md). 
 	
 	#### Request SAP credentials from caller when running extractions
-	If this option is active, SAP credentials entered in the fields **User** and **Password** are not applied. Instead, SAP credentials need to be provided via basic authentication when running an extraction. Caching the result of extractions is inactive. 
+	If this option is active, SAP credentials entered in the **User** and **Password** fields are ignored. <br>
+	Provide SAP credentials via basic authentication when running an extraction. Caching the result of extractions is inactive. 
 
 === "Secure Network communication (SNC)"
 
@@ -123,23 +124,23 @@ Some input fields for the SAP connection vary depending on the selected authenti
 	
 	#### Request SAP credentials from caller
 	This option activates SNC with user and password. 
-	If this option is active, SAP credentials entered in the fields **User** and **Password** are not applied. 
-	Instead, SAP credentials need to be provided via basic authentication when running an extraction. 
+	If this option is active, SAP credentials entered in the fields **User** and **Password** are ignored.  <br>
+	Provide SAP credentials via basic authentication when running an extraction. 
 	
 	#### SSO - Log in as caller via External ID
 	This option activates SSO with External ID. 
-	SSO with External ID uses a Personal Security Environment (PSE) to create a trust relationship between the SAP application server and the service account that runs {{ productName }}. 
+	SSO with External ID uses a Personal Security Environment (PSE) to create a trust relationship between the SAP application server and the service account that runs {{ productName }}. <br>
 	This allows {{ productName }} to impersonate any SAP user. For more information, see [Knowledge Base Article: SSO with External ID](../../knowledge-base/sso-with-external-id.md). 
 	
 	#### SSO - Impersonate caller via Kerberos
 	This option activates Kerberos SSO. 
 	The Windows Active Directory user is used for authentication. 
-	For this scenario “HTTPS - Restricted to AD users with Designer read access” must be selected and configured in the [Server Settings](../server/server-settings.md#web-server). 
+	For this scenario “HTTPS - Restricted to AD users with Designer read access” must be selected and configured in the [Server Settings](../server/server-settings.md#web-server). <br>
 	For more information, see [Knowledge Base Article: SSO with Kerberos SNC](../../knowledge-base/sso-with-kerberos-snc.md). 
 	
 	#### SSO - Enroll certificate on behalf of caller
 	This option activates Certificate SSO. 
-	The Certificate SSO authentication uses Certificate Enrollment (Enroll-On-Behalf-Of) via Active Directory Certificate Services for the Windows Active Directory user who calls the extraction. 
+	The Certificate SSO authentication uses Certificate Enrollment (Enroll-On-Behalf-Of) via Active Directory Certificate Services for the Windows Active Directory user that calls the extraction. <br>
 	For this scenario “HTTPS - Restricted to AD users with Designer read access” must be configured in the [Server Settings](../server/server-settings.md#web-server). 
 	For more information, see [Knowledge Base Article: SSO with Client Certificates](../../knowledge-base/sso-with-client-certificates.md). 
 
@@ -148,12 +149,12 @@ Some input fields for the SAP connection vary depending on the selected authenti
 	![sap-source-authentication-logon-ticket](../../assets/images/documentation/sap-connection/sap-source-authentication-logon-ticket.png){:class="img-responsive"}
 
 	#### Ticket issuer URL
-	URL of an Application Server Java (AS Java) that is configured to issue logon tickets. 
+	URL of an Application Server Java (AS Java) that is configured to issue logon tickets. <br>
 	For more information, see [SAP Help: Configuring the AS Java to Issue Logon Tickets](https://help.sap.com/doc/saphelp_nw75/7.5.5/EN-US/4a/412251343f2ab1e10000000a42189c/frameset.htm). 
 	
 	#### Impersonate caller when running extractions (Kerberos SSO)
-	Activate this option to open the connection in the Windows Active Directory user context of the caller. 
-	Otherwise the connection is opened in the context of the service account under which the {{ productName }} Windows service runs. 
+	Activate this option to open the connection in the Windows Active Directory user context of the caller. <br>
+	Otherwise the connection is opened in the context of the service account running the {{ productName }} Windows service. <br>
 	For more information, see [Knowledge Base Article: SSO with Logon-Ticket](../../knowledge-base/sso-with-logon-ticket.md).
 
 ### RFC Options
@@ -202,8 +203,8 @@ Password of the SAP user.
  
 #### Test Connect
 
-Click **[Test Connect]** to test the OData connection.
-The radio buttons **OData V2** and **OData V4** indicate which OData protocol versions are enabled. 
+Click **[Test Connect]** to test the OData connection.<br>
+The radio buttons **OData V2** and **OData V4** indicate which OData protocol versions are enabled. <br>
 For more information about the OData protocol version, refer to [OData V2](https://www.odata.org/documentation/odata-version-2-0/) and [OData V4](https://www.odata.org/documentation/).
 
 

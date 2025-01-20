@@ -18,7 +18,7 @@ The application now returns to the main window of the {{ component }}.
 
 The {{ odata }} {{ component }} offers the following options for data extractions:
 
-1. In the section *Service Fields*, select the items you want to extract.<br>
+1. In the section *Service Fields*, select the items to extract.<br>
 ![Datasource Preview](../../assets/images/documentation/components/odata/{{ abbr }}/define-odata.png){:class="img-responsive"}
 2. Click **[Load Preview]** to display a live preview of the first 100 records.
 {% if page.meta.product == "xtract-universal" or page.meta.product == "board-connector"%}3. Check the [General Settings](general-settings.md) before running the {{ extraction }}.{% endif %}
