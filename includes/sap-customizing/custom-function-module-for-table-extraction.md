@@ -1,12 +1,15 @@
 
 ### Installation of /THEO/READ_TABLE
 
-An SAP transport request for the installation of the function module is provided in the installation directory: 
-`{{ installationDir }}\ABAP\`.<br>
-Transport requests are imported into SAP by your SAP Basis team.
+An SAP transport request for the installation of the function module is provided in the installation directory 
+{% if page.meta.product == "xtract-core" %}of Xtract Core in the `Transports` folder.{% else %}: `{{ installationDir }}\ABAP\`.<br>{% endif %}
+Transport requests are imported into SAP by your SAP Basis team. For more information, see [Knowledge Base: Import an SAP Transport Request](../../knowledge-base/import-an-sap-transport-request.md).
 
+{% if page.meta.product != "xtract-core" %}
 !!! note
 	Take a look at the README.pdf in the installation directory (e.g.,`{{ installationDir }}\ABAP\README.pdf`) before installing any custom function modules.
+
+{% endif %}
 
 It is recommended to install the latest custom function module THEO/READ_TABLE:
 
@@ -27,7 +30,7 @@ When importing the transport requests on older SAP releases a syntax error may o
 	Avoid calling function modules /THEO/READ_TABLE and Z_THEO_READ_TABLE directly from an SAP system.
 	
 
-	
+{% if page.meta.product != "xtract-core" %}	
 ### Supported Features
 
 | Supported Features by THEO_READ_TABLE| _740SP05 | _710 | _640 | 46C |
@@ -45,3 +48,5 @@ When importing the transport requests on older SAP releases a syntax error may o
 #### Related Links
 - [Knowledge Base: Import an SAP Transport Request](../../knowledge-base/import-an-sap-transport-request.md)
 {% if page.meta.product != "yunio" %}- [{{ table }} {{ Component }}](../table/index.md){% else %}- [{{ table }} {{ Component }}](../tables-and-views/index.md){% endif %}
+
+{% endif %}

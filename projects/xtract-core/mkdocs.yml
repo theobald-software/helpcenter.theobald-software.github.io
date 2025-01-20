@@ -4,7 +4,7 @@ site_name: Xtract Core HelpCenter
 site_url: https://helpcenter.theobald-software.com/yunio/
 #site_author: Valerie Schipka
 site_description: >-
-  Xtract Core is a Web API server solution for creating and configuring data extractions from SAP systems.<br>
+  Xtract Core is a Web API server solution for creating and configuring data extractions from SAP systems.
   Learn how to use Xtract Core by browsing our user documentation, changelog and more.
 
 # Repository
@@ -226,14 +226,14 @@ extra:
       
   productName: Xtract Core
   product: xtract-core
-  Component: Endpoint
-  Components: Endpoints
-  component: endpoint
-  components: endpoints
+  Component: Extraction Type
+  Components: Enxtraction Types
+  component: extraction type
+  components: extraction types
   Abbr: XC
   abbr: xc
   installationDir: C:\Program Files\Theobald Software\Xtract Core
   table: _Table_
-  extraction: service call
-  Extraction: Service call
+  extraction: API call
+  Extraction: API call
   

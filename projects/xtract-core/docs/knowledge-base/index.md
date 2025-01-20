@@ -8,13 +8,11 @@ hide:
 
 ![img](site:assets/images/logos/theo-thumbs.png){ .lg .middle width="30px"} This section contains in-depth articles and sample use cases for Xtract Core.
 
-Todo: Requirements
-
 ### General
 
 <div class="mdx-columns" markdown>
 
-- [Requirements for Xtract Core]()
+- [Requirements for Xtract Core](requirements.md)
 - [Install an X.509 Certificate](install-x.509-certificate.md)
 
 </div>
@@ -37,12 +35,14 @@ Todo: Requirements
 <div class="mdx-columns" markdown>
 
 - [Extraction Mechanism of Table](table-extraction-mechanism.md)
+- [Install /THEO/READ_TABLE for Table Extractions](custom-function-module-for-table-extraction.md)
 
 </div>
 
 <!--
 - [Delta Mechanism of Table CDC](table-cdc-mechanism.md)
 - [Set Up OAuth 2.0 for the Google Cloud Storage Destination](google-cloud-storage-oauth.md)
+- [Install THEO_CDC_ECC or THEO_CDC_S4 for Table CDC Extractions](custom-function-module-for-tablecdc.md)
 
 ### :component-report: Report
 

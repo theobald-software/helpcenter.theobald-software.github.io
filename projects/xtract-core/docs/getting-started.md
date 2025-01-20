@@ -9,65 +9,28 @@ tags:
   - quick start  
 ---
 
-![img](site:assets/images/logos/theo-thumbs.png){ .lg .middle width="30px"} This section shows how to install and set up Xtract Core for the first time.
+![img](./assets/images/logos/theo-thumbs.png){ .lg .middle width="30px"} This section shows how to install and set up Xtract Core for the first time.
 
 ## Prerequisites
 
-- [.NET8.0 Desktop Runtime](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-desktop-8.0.11-windows-x64-installer).
-- The [SAP NetWeaver library](https://me.sap.com/swdcnav/products/_APP=00200682500000001943&_EVENT=DISPHIER&HEADER=Y&FUNCTIONBAR=N&EVENT=TREE&NE=NAVIGATE&ENR=01200314690100002214&V=MAINT) must be available in the `C:\Windows\System32` folder of your machine.
-- The following ports between the Windows server that runs {{ productName }} and the SAP server, must be open:
+- Install the .NET8.0 Desktop Runtime, see [Download .NET8.0 Desktop Runtime from Microsoft](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-desktop-8.0.11-windows-x64-installer).
+- The SAP NetWeaver library must be available in the `C:\Windows\System32` folder of the machine that runs Xtract Core. 
+You can download the Netweaver library from the [SAP Software Download Center](https://me.sap.com/swdcnav/products/_APP=00200682500000001943&_EVENT=DISPHIER&HEADER=Y&FUNCTIONBAR=N&EVENT=TREE&NE=NAVIGATE&ENR=01200314690100002214&V=MAINT). 
+- Optional: Install 
 
-	| SAP NetWeaver Component | Port (NN = System number of the SAP system) |
-	| ------------- |----------|
-	| SAP Application Server | 33<NN\> |
-	| SAP Message Server | 36<NN\> |
-	| Secure Network Communication (SNC)| 48<NN\> |
-	| SAP-Router | 3299 |
-
-<!--
-### Supported SAP Systems
-
-- All SAP ABAP based systems that provide RFC connectivity are supported (all communication with SAP is performed via the RFC protocol).
-- SAP ABAP Systems on any database are supported (including HANA). The database used by the SAP system is irrelevant, because the integration occurs at SAP application server level.
-- SAP Systems running on Big Endian and Little Endian hardware are supported.
-- SAP industry solutions like IS-U, IS-R, etc. are supported.
-- SAP Releases 4.6C and newer are supported.
-- All operating systems are supported.
-
-### Supported Target Environments
-
-- Azure Blob
-- CSV?
-
--->
+For more information on software and hardware requirements, see [Knowledge Base: Requirements](knowledge-base/requirements.md).
 
 <div class="grid cards" markdown>
 
-
--   :simple-sap: __Supported SAP Systems__
-
-    ---
-
-    - All SAP ABAP based systems that provide RFC connectivity (all communication with SAP is performed via the RFC protocol).
-	- All underlying databases are supported (the integration occurs at SAP application server level, not database level).
-	- SAP systems running on Big Endian and Little Endian hardware are supported.
-	- SAP industry solutions like IS-U, IS-R, etc. are supported.
-	- SAP Releases 4.6C and newer are supported.
-	- All operating systems are supported.
-	
 -   :simple-sap: __Supported SAP Objects__
 
     ---
 
-    - Tables
+    - SAP Tables (includes Cluster tables and Pool tables?)
 	- CDS Views?
-	- Cluster tables?
-	- Pool tables?
 	- Delta Tables (CDC) planned for Q2 2025?
-	
-	---
-	
-	:material-bullseye: __Supported Target Environments__
+
+-	:material-bullseye: __Supported Target Environments__
 
     ---
 
@@ -75,6 +38,7 @@ tags:
 	- CSV?
 	
 </div>
+
 
 ## Installation
 
@@ -139,10 +103,8 @@ Xtract Core offers the following configration options:
 
 Enable Transport Layer Security (TLS) to use secured https communication when making API calls:
 
-1. Make sure to have an X.509 certificate issued by your IT network team considering the following points:
-	- The certificate property “Subject Alternative Name” contains the DNS name of the server on which the Xtract Core Windows service runs.
-	- Place the certificate in the Windows Certificate Store (`LocalMachine/Personal`) of the machine on which the Xtract Core Windows service runs.
-	- The certificate common name (CN) attribute contains the DNS name of the server.
+If the certificate is not listed in the Windows certificate store, install the X.509 certificate.
+1. Make sure to have a valid X.509 certificate. If the certificate is not listed in Windows certificate store, [install an X.509 certificate](knowledge-base/install-x.509-certificate.md).
 2. Open the following file in the Xtract Core installation directory: `config/servers/tls.json`. If the directory and file do not exist, create them.
 3. Enable TLS in the `tls.json` file and add the details of the certificate. Example:
 	```json title="tls.json"
@@ -162,6 +124,16 @@ The listener then listens on the port configured in its config securePort.
 
 ## Create Connections
 
+To extract data from SAP at least 2 connections are required:
+- A connection to an SAP source system.
+- A connection to a target environment in which the data is written.
+
+A connection consists of the following elements:
+- A name. Allowed characters are [a-zA-Z0-9]. The name must not start with a number.
+Because the names of extractions and connections map to a directory on the file system, names are unique and not case sensitive.
+- folder
+
+
 !!! note
 
 	`$NAME` represents the name/identifier of an extraction or connection.
@@ -170,14 +142,14 @@ The listener then listens on the port configured in its config securePort.
 
 ### Connect to SAP
 
-Before connecting to SAP for the first time, set up an SAP dialog user with the necessary [SAP user rights](documentation/setup-in-sap/sap-authority-objects.md/#general-authorization-objects).
+Before connecting to SAP for the first time, set up an SAP dialog user with the necessary [SAP user rights](knowledge-base/sap-authority-objects.md/#general-authorization-objects).
 
 Create a new SAP connection targeting an application server. 
 The server tries to establish a connection to the system with the given credentials before saving the connection.
 
 
 ```http
-POST /v0/connections/sap/$NAME HTTP/1.1 
+POST /v0/connections/sap/$NAME HTTP/1.1
 Host: localhost:1337
 Content-Type: application/json
 Content-Length: $LENGTH
@@ -203,15 +175,16 @@ Host: localhost:1337
 ### Connect to Azure Blob
 
 To connect to a Microsoft Azure Blob Storage...
-
-The following permissions are required for authentication via Shared Access Signature (SAS):
-- Add
-- Create
-- Write
-- Delete
-- List
-
 For more information, see [Microsoft Documentation: Create SAS tokens for storage containers](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/authentication/create-sas-tokens?view=doc-intel-4.0.0&tabs=azure-portal#use-the-azure-portal).
+
+
+!!! note
+	The following permissions are required for authentication via Shared Access Signature (SAS):
+	- Add
+	- Create
+	- Write
+	- Delete
+	- List
 
 
 Create a new Azure blob connection. The server tries to establish a connection to Azure with the given

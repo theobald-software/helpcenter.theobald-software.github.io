@@ -7,7 +7,7 @@ Especially with older SAP releases you may encounter a few restrictions when usi
 - Poor extraction performance with larger tables.  Can cause also duplicates.
 - Depending on the SAP version there may be other restrictions. 
  
-When facing restrictions, install the Theobald Software custom function module [/THEO/READ_TABLE](../setup-in-sap/custom-function-module-for-table-extraction.md#installation-of-theoread_table) on your SAP system. 
+When facing restrictions, install the Theobald Software custom function module {% if page.meta.product == "xtract-core" %}[/THEO/READ_TABLE](#installation-of-theoread_table){% else %}[/THEO/READ_TABLE](../setup-in-sap/custom-function-module-for-table-extraction.md#installation-of-theoread_table){% endif %} on your SAP system. 
 
 !!! warning  
 	**Converting issues**<br>

@@ -1,6 +1,16 @@
 <div class="grid cards" markdown>
 
 
+-   **:material-alert-decagram: Feature Announcement**
+
+    ---
+
+    Enhance the speed and efficiency of your data workflows by extracting delta tables using our well established Table CDC technology. Table CDC will be available for Xtract Core in Q2 of 2025.
+
+    ---
+
+    :material-clock-time-two-outline: 2025-01-01
+	
 -   **Initial Features**
 
     ---
