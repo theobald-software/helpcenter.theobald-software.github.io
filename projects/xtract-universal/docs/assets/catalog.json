@@ -1,5 +1,16 @@
 [
   {
+    "Version": "2025.1.20.38",
+    "LegacyReleaseDate": "2025-01-20 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "XtractUniversal",
+        "Component": "GoogleCloudStorage",
+        "Message": "Fixed a bug where not all data would be written to Google Cloud Storage due to the destination not following the API specification correctly."
+      }
+    ]
+  },
+  {
     "Version": "2025.1.8.37",
     "LegacyReleaseDate": "2025-01-08 00:00:00Z",
     "IsBreaking": true,
