@@ -1,6 +1,6 @@
 ---
 title: Getting Started
-description: Learn how to install and extract data from SAP with yunIO.
+description: Learn how to install and extract data from SAP with Xtract Core.
 hide:
   - navigation
   - tags
@@ -9,162 +9,275 @@ tags:
   - quick start  
 ---
 
-![img](site:assets/images/logos/theo-thumbs.png){ .lg .middle width="30px"} This section shows how to install and set up yunIO for the first time.
+![img](site:assets/images/logos/theo-thumbs.png){ .lg .middle width="30px"} This section shows how to install and set up Xtract Core for the first time.
+
+## Prerequisites
+
+- [.NET8.0 Desktop Runtime](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-desktop-8.0.11-windows-x64-installer).
+- The [SAP NetWeaver library](https://me.sap.com/swdcnav/products/_APP=00200682500000001943&_EVENT=DISPHIER&HEADER=Y&FUNCTIONBAR=N&EVENT=TREE&NE=NAVIGATE&ENR=01200314690100002214&V=MAINT) must be available in the `C:\Windows\System32` folder of your machine.
+- The following ports between the Windows server that runs {{ productName }} and the SAP server, must be open:
+
+	| SAP NetWeaver Component | Port (NN = System number of the SAP system) |
+	| ------------- |----------|
+	| SAP Application Server | 33<NN\> |
+	| SAP Message Server | 36<NN\> |
+	| Secure Network Communication (SNC)| 48<NN\> |
+	| SAP-Router | 3299 |
+
+<!--
+### Supported SAP Systems
+
+- All SAP ABAP based systems that provide RFC connectivity are supported (all communication with SAP is performed via the RFC protocol).
+- SAP ABAP Systems on any database are supported (including HANA). The database used by the SAP system is irrelevant, because the integration occurs at SAP application server level.
+- SAP Systems running on Big Endian and Little Endian hardware are supported.
+- SAP industry solutions like IS-U, IS-R, etc. are supported.
+- SAP Releases 4.6C and newer are supported.
+- All operating systems are supported.
+
+### Supported Target Environments
+
+- Azure Blob
+- CSV?
+
+-->
+
+<div class="grid cards" markdown>
 
 
-### Installation
+-   :simple-sap: __Supported SAP Systems__
 
-1. [Download](https://theobald-software.com/en/download-trial/) a 30 days trial version of yunIO or download the latest version from the [customer portal](https://my.theobald-software.com/).
-2. Run the yunIO executable (yunIOSetup.exe) to install yunIO.
-For information on system requirements, see [Requirements](documentation/setup/requirements.md).
-3. Make sure that the YunIO Service is running on your windows system and that the default port 8077 is not blocked by your firewall.<br>
-4. Open the yunIO Designer at `http://localhost:8077/` in a [web browser](documentation/setup/requirements.md#supported-web-browsers) of your choice.<br>
-If the yunIO service does not run on the same machine as the browser, replace `localhost` with the name or IP address of the host on which the service runs.
+    ---
 
-For more information, see [Documentation: Installation](documentation/setup/installation-and-update.md).
+    - All SAP ABAP based systems that provide RFC connectivity (all communication with SAP is performed via the RFC protocol).
+	- All underlying databases are supported (the integration occurs at SAP application server level, not database level).
+	- SAP systems running on Big Endian and Little Endian hardware are supported.
+	- SAP industry solutions like IS-U, IS-R, etc. are supported.
+	- SAP Releases 4.6C and newer are supported.
+	- All operating systems are supported.
+	
+-   :simple-sap: __Supported SAP Objects__
+
+    ---
+
+    - Tables
+	- CDS Views?
+	- Cluster tables?
+	- Pool tables?
+	- Delta Tables (CDC) planned for Q2 2025?
+	
+	---
+	
+	:material-bullseye: __Supported Target Environments__
+
+    ---
+
+    - Azure Blob
+	- CSV?
+	
+</div>
+
+## Installation
+
+1. [Download](https://theobald-software.com/en/download-trial/) a 2 month trial version of Xtract Core or download the latest version from the [customer portal](https://my.theobald-software.com/).
+2. Run the Xtract Core executable (XtractCoreSetup.exe) to install Xtract Core.
+3. Make sure that the Xtract Core Service is running on your windows system and that the default port 8077 is not blocked by your firewall.<br>
+4. Open the Xtract Core Designer at `http://localhost:8077/` in a [web browser](documentation/setup/requirements.md#supported-web-browsers) of your choice.<br>
+If the Xtract Core service does not run on the same machine as the browser, replace `localhost` with the name or IP address of the host on which the service runs.
+
+The installation directory contains the following files:
+
+| Filename	| Description |
+|------------|--------------|
+|  logs directory |	Directory that contains service logs. | 
+|  Transport directory |	Directory that contains SAP function modules. Read the readme.pdf within the directory for more information.  | 
+|  Cleaner.exe |	Application that deletes all cached results and log files.  | 
+|  listener.exe |	Application that starts one worker per incomming connection.  | 
+|  listener.json | Contains the default settings of the web server. |
+|  service.exe |	Application that installs Xtract Core.  | 
+|  theobald.service.definition.json | Contains the configuration of the service. |
+|  worker.exe |	Application that handles HTTP requests.  | 
+|  XtractUniversalLicense.json |	License file with information about the server, the component and runtime. |
+
+## Configuration
+
+Xtract Core offers the following configration options:
+- Change the service name, display name and description of the service in the `theobald.service.definition.json` file.
+
+	```json title="theobald.service.definition.json"
+	{
+	  "serviceName": "SAP Connector Service",
+	  "displayName": "SAP Connector",
+	  "description": "SAP Connector windows service for configuration and execution of SAP extractions.",
+	  "servers": [
+		{
+		  "displayName": "listener",
+		  "path": "listener.exe"}
+	  ]
+	}
+
+	```
+- Create multiple servers in the `theobald.service.definition.json` file? The Windows service starts one instance per entry in the **server** property.
+	- Do users have to copy the listerner.exe and listener.json and rename both to get multiple servers?
+- Change the network settings (e.g., port number) of the web server in the `listener.json` file. 
+	
+	```json title="listener.json"
+	{
+		"insecurePort": 1337,
+		"securePort": 1338,
+		"workerName": "worker.exe",
+		"mode": "Localhost(1)" 
+	}
+	```
+		
+	1.  The property **mode** supports *Any* and *Localhost*. 
+		- *Any* listens on the default network interface and the loopback interface. 
+		- *Localhost* only listens on the loopback interface. 
+		
+
+
+### TLS Configuration
+
+Enable Transport Layer Security (TLS) to use secured https communication when making API calls:
+
+1. Make sure to have an X.509 certificate issued by your IT network team considering the following points:
+	- The certificate property “Subject Alternative Name” contains the DNS name of the server on which the Xtract Core Windows service runs.
+	- Place the certificate in the Windows Certificate Store (`LocalMachine/Personal`) of the machine on which the Xtract Core Windows service runs.
+	- The certificate common name (CN) attribute contains the DNS name of the server.
+2. Open the following file in the Xtract Core installation directory: `config/servers/tls.json`. If the directory and file do not exist, create them.
+3. Enable TLS in the `tls.json` file and add the details of the certificate. Example:
+	```json title="tls.json"
+	{
+		"tlsEnabled": true,
+		"certificate": {
+		"subjectAltName": "HUNT.theobald.local",
+		"issuer": "CN=Theobald CA, DC=theobald, DC=local",
+		"notAfter": "20250717T152041.000Z",
+		"thumbprint": "0C32EEE1053DA57E88E6AE22832DFB13775250F9"
+		}
+	}
+	```
+4. Restart the listener by restarting the Xtract Core service.
+The listener then listens on the port configured in its config securePort.
+
+
+## Create Connections
+
+!!! note
+
+	`$NAME` represents the name/identifier of an extraction or connection.
+	Allowed characters are [a-zA-Z0-9]. The name must not start with a number.
+	Because the names of extractions and connections map to a directory on the file system, names are unique and not case sensitive.
 
 ### Connect to SAP
 
 Before connecting to SAP for the first time, set up an SAP dialog user with the necessary [SAP user rights](documentation/setup-in-sap/sap-authority-objects.md/#general-authorization-objects).
 
-1. Navigate to the  :yunio-nav-connections: *Connections* menu at the left side navigation area of the Designer.
-2. Click **[Add Connection]** to create a new SAP connection.<br>
-3. Enter the system details of your SAP system in the subsection *System*.<br>
-4. Enter the SAP credentials of the SAP dialog user in the subsection *Authentication*.
-5. Click **[Test Connection]** to validate the connection parameters. A window with a status message opens.
-6. Click **[Save]** to save the connection settings. <br>
-
-![yunIO-connection](./assets/images/yunio/getting-started/yunio-connections.gif){:class="img-responsive" style="border:1px solid black" }
-
-For more information, see [Documentation: SAP Connection](documentation/sap-connection/index.md).
-
-<!---
-![web-ui](./assets/images/yunio/getting-started/add-connection.png){:class="img-responsive"}
-![yunIO-connection](./assets/images/yunio/getting-started/yunio-connections.png){:class="img-responsive"}
--->
-
-### Create a Service
-
-Follow the steps below to create a new web service:
-
-1. Navigate to the  :yunio-nav-services: *Services* menu at the left side navigation are of the Designer.
-2. Click **[Add Service]** to create a new web service.
-3. Enter a name and a short description of the service. 
-4. Select an existing SAP connection under **Connection**.
-5. Select one of the following {{ components }} under **Type**: 
-
-	|  {{ Component }}  |  Description   |  
-	|----------|-------------|
-	| [{{ bapi }}](documentation/function-modules-and-bapis/index.md) | Execute BAPIs and Function Modules. |
-	| [{{ table }}](documentation/tables-and-views/index.md) | Extract data from SAP tables and views. |
-	| [{{ transaction }}](documentation/transactions/index.md) | Execute SAP transactions without SAP GUI interaction. |
-	| [{{ report }}](documentation/reports/index.md) | Extract data from SAP ABAP reports. | 
-
-6. Click **[Save and edit]**.
-The settings of the selected {{ component }} open and the service is now available in the :yunio-nav-services: *Services* menu of yunIO.<br>
-
-![yunIO-service](./assets/images/yunio/getting-started/yunio-services.gif){:class="img-responsive" style="border:1px solid black" }
-
-!!! note
-	Click :yunio-edit-general: to edit the name, description and source of an existing service.<br>
-	Click :yunio-edit: to edit the {{ component }} settings of the service. <br>
+Create a new SAP connection targeting an application server. 
+The server tries to establish a connection to the system with the given credentials before saving the connection.
 
 
-#### A Simple Service for Beginners
+```http
+POST /v0/connections/sap/$NAME HTTP/1.1 
+Host: localhost:1337
+Content-Type: application/json
+Content-Length: $LENGTH
+{
+"Host": "mysap.company.com",
+"User": "$USER",
+"Password": "$PASSWORD",
+"Client": "800",
+"Language": "en",
+"InstanceNo": 0
+}
+```
 
-Follow the steps below to extract customer master data from SAP:
+Test Connection:
+Attempts to open a connection to the specified SAP system with the information stored in the connection configuration.
 
-1. [Create a service](#create-a-service) that uses the {{ component }} {{ table }}.
-2. In the **Search SAP tables and views** menu, enter the name of the SAP standard table KNA1. Use wildcards ( * ) if needed.
-3. Click **[Search]** to display the tables found in the SAP system.
-4. Select KNA1 from the search results. The settings of the {{ component }} {{ table }} open automatically.
-5. Optional: Select the table columns you want to extract. By default all columns are extracted. 
-For more information on filter options and advanced settings, see [Documentation: Create a Table Service](documentation/tables-and-views/index.md).
-6. Click **[Save]** to save the service.<br>
+```http
+GET /v0/connections/sap/$NAME/test HTTP/1.1
+Host: localhost:1337
+```
 
-![yunIO-sample-service](./assets/images/yunio/getting-started/yunio-sample-service.gif){:class="img-responsive" style="border:1px solid black" }
 
-<!---
-![yunIO-new-service](./assets/images/yunio/yunio-services.png){:class="img-responsive" width="750px"}
-![yunIO-new-service](./assets/images/yunio/create-table.png){:class="img-responsive" width="750px"}
+### Connect to Azure Blob
 
-yunIO offers the following features for reading and writing data from and to SAP:
+To connect to a Microsoft Azure Blob Storage...
 
-	- [{{ bapi }}](./documentation/function-modules-and-bapis/index.md) - executes BAPIs and function modules
-	- [{{ table }}](./documentation/tables-and-views/index.md) - extracts data from SAP tables and views
-	- [{{ transaction }}](./documentation/transactions/index.md) - executes SAP transactions without SAP GUI interaction
-	- [{{ report }}](./documentation/reports/index.md) - extracts SAP ABAP reports
+The following permissions are required for authentication via Shared Access Signature (SAS):
+- Add
+- Create
+- Write
+- Delete
+- List
 
-!!! tip 
+For more information, see [Microsoft Documentation: Create SAS tokens for storage containers](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/authentication/create-sas-tokens?view=doc-intel-4.0.0&tabs=azure-portal#use-the-azure-portal).
 
-	Follow the steps below to create a simple test service that extracts customer master data from SAP
+
+Create a new Azure blob connection. The server tries to establish a connection to Azure with the given
+credentials before saving the connection.
+
+```http
+POST /v0/connections/azureblob/$NAME HTTP/1.1
+Host: localhost:1337
+Content-Type: application/json
+Content-Length: $LENGTH
+{
+"Account": "$ACCOUNT",
+"Token": "$TOKEN(1)",
+"Container": "container"
+}
+```
+
+1.  You can copy the SAS token from the Azure portal in: <br>
+	**Storage accounts > [account_name] > Data storage > Containers > [account_name] > Generate SAS**.
 	
-	1. [Create a service](#create-a-service) that uses the {{ component }} {{ table }}.
-	2. In the **Search SAP tables and views** menu, enter the name of the SAP standard table KNA1. Use wildcards ( * ) if needed.
-	3. Click **[Search]** to display the tables found in the SAP system.
-	4. Select KNA1 from the search results. The settings of the {{ component }} {{ table }} open automatically.
-	5. Optional: Select the table columns you want to extract. By default all columns are extracted. 
-	For more information on filter options and advanced settings, see [Documentation: Creating a Table Service](documentation/tables-and-views/creating-a-table-service.md/#settings).
-	6. Click **[Save]** to save the service.<br>
-	![yunIO-sample-service](./assets/images/yunio/getting-started/yunio-sample-service.gif){:class="img-responsive" style="border:1px solid black" }
 
+## Create an Extraction
 
-### Run a Service
+Create an extraction of the selected SAP object from the source connection to the destination connection.
+The example above would create a CSV file with the name resultset.csv in the selected container.
+The property Columns is optional. If omitted, all columns will be selected.
 
-Follow the steps below to testrun a service directly in yunIO:
+```http
+POST /v0/extractions/table/$NAME HTTP/1.1
+Host: localhost:1337
+Content-Type: application/json
+Content-Length: 171
+{
+"Table": "MARA",
+"Where": "MATNR = 000000000001",
+"Source": "$SOURCE_NAME",
+"Destination": "$DESTINATION_NAME",
+"Columns": ["MATNR", "MANDT"],
+"ResultName": "resultset",
+"FunctionModule": "/THEO/READ_TABLE"
+}
+```
 
-1. Navigate to the :yunio-nav-services: *Services* menu at the left side navigation area of the Designer.
-2. Click :yunio-run: to open the *Run Service* menu of a service.
-3. Click **[Run]** to execute the service. <br>
-The response body of the service is displayed under *Output Parameters (Response)*.
-4. Click **[Close]** to close the *Run Service* menu.<br>
-![yunIO-service](./assets/images/yunio/getting-started/yunio-run.gif){:class="img-responsive" style="border:1px solid black" }
+## Run Services
 
-For more information about running services and passing parameters, see [Documentation: Run Services](./documentation/run-services.md).
+Runs the extraction of name `$NAME` and waits for it. `rows` is an optional parameter used to specify how
+many rows should be extracted at most. The HTTP response head will be returned as soon as the server
+receives the first package. Any issues before that will result in a 4XX or 5XX status code.
+Header X-XU-Timestamp contains the starting timestamp of the extraction. It is guaranteed to be unique
+and can be used to query status information and logs of the extraction.
+The response body of the extraction will contain the extraction log.
 
-#### How to Integrate yunIO Services with 3rd-Party-Tools
-1. Navigate to the  :yunio-nav-services: *Services* menu at the left side navigation are of the Designer.
-2. Click :yunio-copy: to copy or :yunio-download: to download the service definition for integration with 3rd-party-tools. 
+```http
+GET /run/$NAME?rows=10 HTTP/1.1
+Host: localhost:1337
+```
 
-Web services created with yunIO can be integrated into all cloud applications that support REST API/Swagger (OpenAPI), e.g. Power Automate, Nintex, etc.
-{% include "yunio/3rd-party-integration.md" %}
+Starts the extraction of name $NAME. The request completes immediately after initializing the extraction.
+Header X-XU-Timestamp contains the starting timestamp of the extraction. It is guaranteed to be unique
+and can be used to query status information and logs of the extraction.
+Status code 200 may be returned even if the extraction runs into an error early. Due to immediate availability
+of the timestamp, status information can be query through dedicated requests.
 
--->
+```http
+GET /start/$NAME?rows=10 HTTP/1.1
+Host: localhost:1337
+```
 
-### Run Services
-
-Follow the steps below to run services:
-
-=== ":material-web: Testrun Services in the browser"
-
-	1. Navigate to the :yunio-nav-services: *Services* menu at the left side navigation area of the Designer.
-	2. Click :yunio-copy: under *Service* to copy the service URL of a service.
-	3. Open a new tab in your browser and paste the service URL in the address bar.
-	4. Press **Enter** to trigger a service run. The response body of the service is displayed in the browser.
-	
-	!!! note
-		This approach only works with simple services that do not use input parameters.
-
-
-=== ":products-yunio: Testrun Services in yunIO"
-
-	1. Navigate to the :yunio-nav-services: *Services* menu at the left side navigation area of the Designer.
-	2. Click :yunio-run: to open the *Run Service* menu of a service.
-	3. If no parameters are defined, click **[Run]** to execute the service. The response body of the service is displayed under *Output Parameters (Response)*.
-	4. Click **[Close]** to close the *Run Service* menu.<br>
-	
-	![yunIO-service](./assets/images/yunio/getting-started/yunio-run.gif){:class="img-responsive" style="border:1px solid black" }
-
-For more information about running services and passing parameters, see [Documentation: Run Services](./documentation/run-services.md).
-
-### Integrate Services in 3rd-Party-Tools
-
-Web services created with yunIO can be integrated into all cloud applications that support REST API/Swagger (OpenAPI), e.g. Power Automate, Nintex, etc.
-
-1. Navigate to the  :yunio-nav-services: *Services* menu at the left side navigation area of the Designer.
-2. Click :yunio-copy: to copy or :yunio-download: to download the service definition for integration with 3rd-party-tools. <br>
-	
-![yunIO-service](./assets/images/yunio/getting-started/yunio-services.png){:class="img-responsive"}
-
-{% include "yunio/3rd-party-integration.md" %}
-
+### Pass Parameters

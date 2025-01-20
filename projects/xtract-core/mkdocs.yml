@@ -4,7 +4,7 @@ site_name: Xtract Core HelpCenter
 site_url: https://helpcenter.theobald-software.com/yunio/
 #site_author: Valerie Schipka
 site_description: >-
-  Xtract Core offers SAP mass data extraction via Rest API.<br>
+  Xtract Core is a Web API server solution for creating and configuring data extractions from SAP systems.<br>
   Learn how to use Xtract Core by browsing our user documentation, changelog and more.
 
 # Repository
@@ -28,6 +28,7 @@ theme:
     # - content.action.edit # adds an edit button to the pages
     # - content.action.view # adds a view source button to the pages
      - content.code.copy # adds copy button in code blocks
+     - content.code.annotate # support for annotations in code
     # - content.code.select # adds select button in code blocks
      - content.tabs.link # adds anchors when switching tabs
     # - content.tooltips # ebables adding tooltips to links
@@ -178,6 +179,9 @@ extra:
     deprecated: Deprecated
     beta: Still in beta
   generator: false #footer display Made with Material for MkDocs
+  annotate:
+    json: [.s2]
+    http: [.s2]
   consent:
     title: Cookie consent
     description: >- 

@@ -31,6 +31,13 @@ You can download the SAP profiles and upload them to your SAP system:
 [Table](#table) | [ZXTABLE.SAP](site:assets/files/sap_roles/ZXTABLE.SAP) 
 {% endif %}
 
+{% if page.meta.product == "xtract-core" %}
+{{ Component }}  | SAP Role File
+------------ | -------------
+[General Authorization Objects](#general-authorization-objects) | [ZXTGENERAL.SAP](site:assets/files/sap_roles/ZXTGENERAL.SAP)
+[Table](#table) | [ZXTABLE.SAP](site:assets/files/sap_roles/ZXTABLE.SAP) 
+{% endif %}
+
 {% if page.meta.product == "xtract-universal" or page.meta.product == "board-connector" or page.meta.product == "xtract-is"%}
 {{ Component }}  | SAP Role File
 ------------ | -------------
@@ -74,6 +81,7 @@ S_RFC            RFC_TYPE=FUGR; RFC_NAME=RFC1; ACTVT=16
 
 [:material-download-circle: Download SAP profile for general authorization](site:assets/files/sap_roles/ZXTGENERAL.SAP){ .md-button .md-button--primary }
 
+{% if page.meta.product != "xtract-core" %}
 
 ### BAPI
 
@@ -226,6 +234,7 @@ Authorization can be granted using one of the following methods:
 - [Assign an authorization group](../../knowledge-base/authorize-access-to-specific-reports.md)
 
 {% endif %}
+{% endif %}
 
 ### Table
 
@@ -240,6 +249,7 @@ XXXX (stands for a placeholder) is the authorization group for the table. To det
 If the table is not listed, the authorization group is &NC&. For authorizing specific tables use authorization object S_TABU_NAM instead of S_TABU_DIS.
 </div>
 
+{% if page.meta.product != "xtract-core" %}
 {% if page.meta.product != "erpconnect" %}
 
 
@@ -368,6 +378,7 @@ XXXX (stands for a placeholder) is the authorization group for the source table.
 
 [:material-download-circle: Download SAP profile for DeltaQ Customizing Check](site:assets/files/sap_roles/DELTAQ_CUSTOMIZING_CHECK.SAP){ .md-button .md-button--primary }
 
+{% endif %}
 {% endif %}
 {% endif %}
 {% endif %}

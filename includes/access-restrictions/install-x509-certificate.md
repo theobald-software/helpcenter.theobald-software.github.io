@@ -38,7 +38,11 @@ In the example shown, the server name is "TODD":
 ![certificate-edit-location](../../assets/images/documentation/access-restriction/certificate-edit-location.png){:class="img-responsive"}
 5. Click **[OK]** to confirm your input. If prompted, restart the server.
 
+The certificate is  now available on your machine.
+
+{% if page.meta.product != "xtract-core" %}
 *****
 #### Related Links
 - [Knowledge Base Article: Enable Secure Network Communication (SNC) via X.509 certificate](../../knowledge-base/enable-snc-using-pse-file.md)
 - [Change Service Account](../server/service-account.md)
+{% endif %}
