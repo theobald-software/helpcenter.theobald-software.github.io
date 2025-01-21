@@ -25,17 +25,28 @@ For more information, see [Installation](documentation/introduction/installation
 
 ### Connect to SAP
 
-1. Create an `R3Connection` object and define all [input parameters](documentation/sap-connection/log-on-to-sap.md/#input-parameters).<br>
+1. Set the (demo) license **before** connecting to SAP. The demo license is located in the installation directory of ERPConnect, e.g., `{{ installationDir }}`.
+Use the following commands to load and set the license number from the `ERPConnectLicense.json` file:
+	``` csharp
+	ERPConnect.LIC.LoadJsonLicense(string filename); //read the file specified in the filename argument
+	ERPCOnnect.LIC.SetJsonLicense(string json); //sets the license using the JSON that was read from the file.
+	```
+
+	!!! note
+		When using the ERPConnect30.dll, the license number is located in the `ERPConnectTrialKey.txt` file. Set the license using the following command:
+		``` csharp
+		ERPConnect.LIC.SetLic("XXXXXXXXXX");
+		```
+	
+2. Create an `R3Connection` object and define all [input parameters](documentation/sap-connection/log-on-to-sap.md/#input-parameters).<br>
 Make sure to use an SAP dialog user with sufficient SAP authorization, see [Authorization Objects - SAP User Rights](documentation/sap-authority-objects.md).
 {% include "erpconnect/code/sap-connection.md" %}
-2. Establish the connection using `Open()`.
-3. Run the program to test the SAP connection.
+3. Establish the connection using `Open()`.
+4. Run the program to test the SAP connection.
 
-!!! note
-	After the 30 days trial is expired, the license number must be set **before** connecting to SAP:
-	``` csharp
-	ERPConnect.LIC.SetLic("XXXXXXXXXX");
-	```
+
+	
+	
 
 For more information, see [Connect to SAP](documentation/sap-connection/log-on-to-sap.md).
 
