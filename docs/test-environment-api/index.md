@@ -90,10 +90,7 @@ plugins:
       use_pymdownx: true
 ```
   
-Usage:
-``` title="api-neoteroi.md"
-[OAD(./docs/test-environment-api/swagger3.json)]
-```
+Usage: See file.
 
 ## Redoc Tag
 
