@@ -33,7 +33,7 @@ Follow the steps below to create a source that connects to SAP:
 	5. In the *General* tab, select a connection method and enter the [system details](settings.md#general) of your SAP system. 
 
 		!!! tip
-			Input values for the SAP connection can be found in the Properties of the SAP Logon Pad or they can be requested from the SAP Basis team.
+			Input values for the SAP connection can be found in the Properties of the SAP Logon Pad, alternatively request the input values from the SAP Basis team.
 					
 	6. In the *Authentication* tab, select one of the following authentication methods:
 		- *Plain* uses the SAP username and password.

@@ -77,8 +77,8 @@ Follow the steps below to extract customer master data from the SAP table KNA1:
 ![table_look-up](assets/images/documentation/components/table/table_look-up.png)
 4. Click **[:magnifying-glass:]** :number-2:. Search results are displayed.
 5. Select the table KNA1 :number-3: and click **[OK]**. The application returns to the main window of the {{ component }}.
-6. Optional: Select the table columns you want to extract. By default all columns are extracted. 
-For more information on filter options and advanced settings, see, [Define the {{ table }} {{ Component }}](documentation/table/index.md/#define-the-table-extraction-type)
+6. Optional: Select the table columns to extract. By default all columns are extracted. 
+For more information on filter options and advanced settings, see [Define the {{ table }} {{ Component }}](documentation/table/index.md/#define-the-table-extraction-type)
 7. Click {{ previewBtn }} to display a live preview of the first 100 records.
 8. Click **[OK]** to save the {{ component }}.
 
