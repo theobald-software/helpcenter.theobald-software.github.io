@@ -18,8 +18,8 @@ The *Cache results* option is only available in [pull destinations](../destinati
 Pull destinations often pull the data from SAP for several times. 
 To decrease the SAP server load, you can select the **Cache results** option, this way the pull destination pulls the data from cache and not from the SAP.
 
-This increases the performance and limits the impact on the SAP system. 
-If this behavior is not desired (for example, because the data must be always 100% up to date), the cache option must be explicitly turned off.
+Cache results increases the performance and limits the impact on the SAP system. 
+If this behavior is undesirable (for example, because the data must be always 100% up-to-date), the cache option must be explicitly disabled.
 
 {% else %} 
 
@@ -35,7 +35,7 @@ To open the "Search Extractions" window, click **[:magnifying-glass: Search]** i
 
 
 !!! tip
-	To add keywords to multiple extractions at once, select the extractions in the main window of the Designer.
+	To add keywords to multiple extractions at once, select the extractions in the main window of the Designer.<br>
 	Right-click + **Add/Remove keywords** opens the window "Add/Remove Keywords To/From Multiple Extractions".
 
 
