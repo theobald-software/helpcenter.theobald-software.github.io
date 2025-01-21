@@ -81,7 +81,6 @@ plugins:
   - mkdocs-pdf
   - render_swagger
   - redoc-tag
-  - swagger-ui
   - swagger-ui-tag:
       supportedSubmitMethods: []
   - neoteroi.mkdocsoad:
