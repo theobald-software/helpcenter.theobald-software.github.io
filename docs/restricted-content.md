@@ -46,6 +46,8 @@ Internal Changelogs:
 
 [:material-television-guide: __UI Style Guide__](ui-style-guide/index.md)
 
+[:material-rocket: __Product Launches 2025__](product-launches/index.md)
+
 [:material-update: __Internal Changelog__](changelog/changelog-xu.md)
 
 [:material-sign-direction: __Roadmap__](roadmap/index.md)
@@ -53,6 +55,8 @@ Internal Changelogs:
 [:material-file-document-edit-outline: __Drafts__](drafts/index.md)
 
 [:material-file-document-edit-outline: __Draft: OData__](draft-odata/sap-connection/index.md)
+
+[:material-excavator: __Test Environment API Documentation__](test-environment-api/index.md)
 
 [:material-excavator: __Test Environment Troubleshooting List as external links__](test-environment-troubleshooting/index.md)
 

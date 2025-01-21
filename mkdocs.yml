@@ -61,6 +61,7 @@ extra_css:
   - assets/stylesheets/neoteroi-cards.css 
   - assets/stylesheets/neoteroi-gantt.css 
   - assets/stylesheets/neoteroi-timeline.css 
+  - assets/stylesheets/mkdocsoad.css 
   - assets/stylesheets/hyperscript.css
 extra_javascript:
   - assets/javascripts/hyperscript.min.js
@@ -78,6 +79,13 @@ plugins:
   - tags
   - search
   - mkdocs-pdf
+  - render_swagger
+  - redoc-tag
+  - swagger-ui
+  - swagger-ui-tag:
+      supportedSubmitMethods: []
+  - neoteroi.mkdocsoad:
+      use_pymdownx: true
   - encryptcontent:
       esm: true
       hash_filenames:

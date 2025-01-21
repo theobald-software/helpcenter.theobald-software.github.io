@@ -51,6 +51,9 @@ jobs:
       - run: pip install neoteroi-mkdocs
       - run: pip install mdx-breakless-lists
       - run: pip install mkdocs-pdf
+      - run: pip install mkdocs-render-swagger-plugin
+      - run: pip install mkdocs-swagger-ui-tag
+      - run: pip install mkdocs-redoc-tag
       - run: mkdocs gh-deploy --force
 env:
   GH_TOKEN: ${{ secrets.GH_TOKEN }} 
