@@ -12,8 +12,9 @@ The package incorporates a JavaScript library for REST.
 
 For optimum results when developing with yunIO REST Services utilizing JavaScript, it is highly recommended to make use of our proprietary JavaScript library. This library streamlines client-side programming by encapsulating various yunIO-specific functionalities.
 
-- [theobald.yunio.client.js](dist/theobald.yunio.client.js)
-- [theobald.yunio.sp.js](dist/theobald.yunio.sp.js)
+[theobald.yunio.client.js](dist/theobald.yunio.client.js){ .md-button .md-button--primary }
+[theobald.yunio.sp.js](dist/theobald.yunio.sp.js){ .md-button .md-button--primary }
+
 
 ## All examples
 
