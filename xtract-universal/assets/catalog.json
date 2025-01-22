@@ -1,5 +1,16 @@
 [
   {
+    "Version": "2025.1.22.40",
+    "LegacyReleaseDate": "2025-01-22 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "XtractUniversal",
+        "Component": "Server",
+        "Message": "Fixed a bug where a timeout while connecting to SAP with SNC enabled would terminate the process causing orphaned run information. Such an extraction run would always keep the state 'Running'."
+      }
+    ]
+  },
+  {
     "Version": "2025.1.20.38",
     "LegacyReleaseDate": "2025-01-20 00:00:00Z",
     "Changes": [
