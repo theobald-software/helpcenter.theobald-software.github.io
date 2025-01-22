@@ -6,13 +6,12 @@ hide:
   - tags
 ---
 
-Below is a categorized list of all articles in the knowledge base with the tag 'hxu1':
+Below is a categorized list of all troubleshooting articles in the knowledge base with the tag 'hxu1' (no how-tos):
 
 ### General
 
 <div class="mdx-columns" markdown>
 
-- [DeltaQ Troubleshooting Guide](https://support.theobald-software.com/helpdesk//KB/View/14424-deltaq-troubleshooting-guide)
 - [DeltaQ: Customizing check fails for reasons unrelated to missing authority objects](https://support.theobald-software.com/helpdesk//KB/View/25441-deltaq-customizing-check-fails-for-reasons-unrelated-to-missing-authority-objects)
 - [DeltaQ: DataSource error ISOURCE_NOT_EXIST or GENERATION_ERROR](https://support.theobald-software.com/helpdesk//KB/View/25444-deltaq-datasource-error-isource-not-exist-or-generation-error)
 - [DeltaQ: ERPConnect.CommunicationException: RfcListenAndDispatch failed(RFC_SERIALIZATION_FAILURE)](https://support.theobald-software.com/helpdesk//KB/View/25434-deltaq-erpconnect-communicationexception-rfclistenanddispatch-failed-rfc-serialization-failure-)

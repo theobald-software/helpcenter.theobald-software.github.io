@@ -14,7 +14,6 @@ Below is a categorized list of all articles in the knowledge base with the tag '
 
 <div class="mdx-columns" markdown>
 
-- [DeltaQ Troubleshooting Guide](General/14424.md)
 - [DeltaQ: Customizing check fails for reasons unrelated to missing authority objects](General/25441.md)
 - [DeltaQ: DataSource error ISOURCE_NOT_EXIST or GENERATION_ERROR](General/25444.md)
 - [DeltaQ: ERPConnect.CommunicationException: RfcListenAndDispatch failed(RFC_SERIALIZATION_FAILURE)](General/25434.md)
