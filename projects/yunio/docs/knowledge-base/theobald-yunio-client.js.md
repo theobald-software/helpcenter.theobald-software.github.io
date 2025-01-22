@@ -1,7 +1,5 @@
 ---
 title: theobald.yunio.client.js
-search:
-  exclude: true
 hide:
   - navigation
 ---
@@ -14,25 +12,25 @@ The package incorporates a JavaScript library for REST.
 
 For optimum results when developing with yunIO REST Services utilizing JavaScript, it is highly recommended to make use of our proprietary JavaScript library. This library streamlines client-side programming by encapsulating various yunIO-specific functionalities.
 
-[theobald.yunio.client.js](dist/theobald.yunio.client.js){ .md-button .md-button--primary }
-[theobald.yunio.sp.js](dist/theobald.yunio.sp.js){ .md-button .md-button--primary }
+[theobald.yunio.client.js](../assets/files/yunio/dist/theobald.yunio.client.js){ .md-button .md-button--primary }
+[theobald.yunio.sp.js](../assets/files/yunio/dist/theobald.yunio.sp.js){ .md-button .md-button--primary }
 
 
 ## All examples
 
-- <a href="./examples/theobald.yunio.combobox-api.button.html" download>theobald.yunio.combobox-api.button.html</a>
-- <a href="./examples/theobald.yunio.combobox-api.live-typing.2-descriptions.promptSettings.html" download>theobald.yunio.combobox-api.live-typing.2-descriptions.promptSettings.html</a>
-- <a href="./examples/theobald.yunio.combobox-api.live-typing.promptSettings.html" download>theobald.yunio.combobox-api.live-typing.promptSettings.html</a>
-- <a href="./examples/theobald.yunio.combobox-api.nintex-form.js" download>theobald.yunio.combobox-api.nintex-form.js</a>
-- <a href="./examples/theobald.yunio.vanillajs.table-service.html" download>theobald.yunio.vanillajs.table-service.html</a>
-- <a href="./examples/theobald.yunio.vanillajs.table-service.parametrizable-connection.html" download>theobald.yunio.vanillajs.table-service.parametrizable-connection.html</a>
-- <a href="./examples/theobald.yunio.vanillajs.function-service.html" download>theobald.yunio.vanillajs.function-service.html</a>
+- <a href="../../assets/files/yunio/examples/theobald.yunio.combobox-api.button.html" download>theobald.yunio.combobox-api.button.html</a>
+- <a href="../../assets/files/yunio/examples/theobald.yunio.combobox-api.live-typing.2-descriptions.promptSettings.html" download>theobald.yunio.combobox-api.live-typing.2-descriptions.promptSettings.html</a>
+- <a href="../../assets/files/yunio/examples/theobald.yunio.combobox-api.live-typing.promptSettings.html" download>theobald.yunio.combobox-api.live-typing.promptSettings.html</a>
+- <a href="../../assets/files/yunio/examples/theobald.yunio.combobox-api.nintex-form.js" download>theobald.yunio.combobox-api.nintex-form.js</a>
+- <a href="../../assets/files/yunio/examples/theobald.yunio.vanillajs.table-service.html" download>theobald.yunio.vanillajs.table-service.html</a>
+- <a href="../../assets/files/yunio/examples/theobald.yunio.vanillajs.table-service.parametrizable-connection.html" download>theobald.yunio.vanillajs.table-service.parametrizable-connection.html</a>
+- <a href="../../assets/files/yunio/examples/theobald.yunio.vanillajs.function-service.html" download>theobald.yunio.vanillajs.function-service.html</a>
 
 ## Basic calls with pure JavaScript
 
-- <a href="./examples/theobald.yunio.vanillajs.table-service.html" download>Table example</a>
-- <a href="./examples/theobald.yunio.vanillajs.table-service.parametrizable-connection.html" download>Table example with parameterized call</a>
-- <a href="./examples/theobald.yunio.vanillajs.function-service.html" download>Function example</a>
+- <a href="../../assets/files/yunio/examples/theobald.yunio.vanillajs.table-service.html" download>Table example</a>
+- <a href="../../assets/files/yunio/examples/theobald.yunio.vanillajs.table-service.parametrizable-connection.html" download>Table example with parameterized call</a>
+- <a href="../../assets/files/yunio/examples/theobald.yunio.vanillajs.function-service.html" download>Function example</a>
 
 ## API interface for Combobox
 
