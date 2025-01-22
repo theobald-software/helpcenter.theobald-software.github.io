@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="description" content="yunIO Combobox" />
+  <meta charset="utf-8" />
+  <title>Combobox Material</title>
+  <style>
+    html {
+      font-size: 12px;
+      font-family: Helvetica, sans-serif;
+    }
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <div id="result">SEE CONSOLE (F12)</div>
+  <br />
+  <div>Customer search query (by customer number).</div>
+  <input id="inputCustomerNumber">
+  <br />
+  <select id="selectCustomer"></select>
+  <div>Customer number</div>
+  <input id="outputCustomerId">
+  <br />
+  <div>firstName</div>
+  <input id="firstName">
+  <br />
+  <div>lastName</div>
+  <input id="lastName">
+  <script type="module">
+    document.addEventListener("DOMContentLoaded", async () => {
+      let yunioClient = await import(
+        "https://static.theobald-software.com/theobald.yunio.client.js/dist/theobald.yunio.client.js"
+      );
+
+      // webpage loaded
+      yunioClient.TheobaldYunioClient.initializeLiveCombobox({
+        //$: NWA$,
+        controls: {
+          inputId: 'inputCustomerNumber',
+          selectId: 'selectCustomer',
+          outputId: 'outputCustomerId',
+          //buttonId: 'buttonId',
+          descriptionId: 'firstName',
+          additionalInfoId: 'lastName'
+        },
+        tableSettings: {
+          serviceName: prompt("yunIO table service", "KNA1"),
+          idField: prompt("yunIO table ID column", "KUNNR"),
+          descriptionField: prompt("yunIO table description column", "NAME1"),
+          additionalInfoField: prompt("yunIO table additional column", "NAME2")
+          //languageField: prompt("yunIO table language column", "SPRAS"),
+          //language: "E"
+        },
+        connection: {
+          url: prompt(
+            "yunIO server",
+            "https://youryunioservices.yourdomain.com:8175/"
+          ),
+          // in milliseconds
+          //
+          //timeout: 30000
+          username: prompt("yunIO username", ""),
+          password: prompt("yunIO password", "")
+          // useSharepointSettings: false
+        },
+        searchOptions: {
+          //useUppercaseValuesForQueries: true,
+          //removeLeadingZerosFromNumbers: false,
+          //extraWhereConditions: "AND ADRNR LIKE '%025%'"
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>
