@@ -1,5 +1,7 @@
 ---
 title: theobald.yunio.client.js
+search:
+  exclude: true
 hide:
   - navigation
 ---
