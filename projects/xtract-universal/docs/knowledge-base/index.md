@@ -25,7 +25,6 @@ hide:
 - [Proxy Server Settings in {{ productName }}](proxy-server-settings.md)
 - [SharePoint Lists Notification using Intelligent Merge Procedure](sharepoint-lists-notification-using-intelligent-merge-procedure.md)
 
-<!--- - [Log Access via Web Service](log-access-via-http.md) -->
 
 </div>
 
