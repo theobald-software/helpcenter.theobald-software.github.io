@@ -1,5 +1,16 @@
 [
   {
+    "Version": "2025.1.23.13",
+    "LegacyReleaseDate": "2025-01-23 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "XtractUniversal",
+        "Component": "Destinations",
+        "Message": "Microsoft SQL Server destination: improved security of SQL statement generator."
+      }
+    ]
+  },
+  {
     "Version": "2025.1.22.40",
     "LegacyReleaseDate": "2025-01-22 00:00:00Z",
     "Changes": [
