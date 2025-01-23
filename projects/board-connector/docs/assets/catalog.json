@@ -1,5 +1,16 @@
 [
   {
+    "Version": "2025.1.23.91",
+    "LegacyReleaseDate": "2025-01-23 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "BWCube",
+        "Message": "Fixed an error that could occur when loading an MDX definition with filters defined."
+      }
+    ]
+  },
+  {
     "Version": "2025.1.8.39",
     "LegacyReleaseDate": "2025-01-08 00:00:00Z",
     "IsBreaking": true,
