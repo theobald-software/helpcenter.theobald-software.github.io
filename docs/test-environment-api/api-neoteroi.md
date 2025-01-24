@@ -2,4 +2,4 @@
 title: Api neoteroi
 ---
 
-[OAD(./docs/test-environment-api/swagger3.json)]
+[OAD(./docs/test-environment-api/swagger.json)]
