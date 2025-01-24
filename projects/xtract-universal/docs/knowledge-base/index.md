@@ -75,6 +75,10 @@ The following articles refer to specific [destinations](../documentation/destina
 - [Call Dynamic Extractions with Variables in ADF](call-dynamic-extractions-with-variables-in-adf.md)
 - [Run an ADF Pipeline when an SAP Extraction File is uploaded to Azure Storage](run-an-ADF-pipeline-when-sap-extraction-file-is-successfully-uploaded-to-Azure-storage.md)
 
+### :3rd-party-onelake: Microsoft Fabric (OneLake)
+
+- [Integration in Microsoft Fabric using Webservices](fabric-integration-using-webservices.md)
+
 ### :simple-microsoftsqlserver: Microsoft SQL Server
 
 - [Collation Settings for MSSQL Server Destination](collation-sql-server.md)

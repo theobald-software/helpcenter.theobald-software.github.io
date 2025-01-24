@@ -26,7 +26,7 @@ This ensures that {{ productName }}'s web server is accessible from ADF over htt
 
 The depicted scenario builds upon the following basic principles:
 
-- {{ productName }} offers a [Web-API](../web-api.md/#run-extractions) through which various actions can be performed via http(s) calls. The depicted scenario uses the web API to:
+- {{ productName }} offers a [Web-API](../web-api.md/#run-extractions) through which various actions can be performed via http(s) calls. 
 - Microsoft's self-hosted Integration runtime enables access to on-prem resources, such as {{ productName }}, from ADF.
 - Microsoft's ADF offers a *Web Activity* that allows calling resources via http(s) and a self-hosted Integration runtime.
 
