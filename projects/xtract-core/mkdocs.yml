@@ -1,7 +1,7 @@
 # Copyright (c) 2016-2023 Martin Donath <martin.donath@squidfunk.com>
 # Project information
 site_name: Xtract Core HelpCenter
-site_url: https://helpcenter.theobald-software.com/yunio/
+site_url: https://helpcenter.theobald-software.com/xtract-core/
 #site_author: Valerie Schipka
 site_description: >-
   Xtract Core is a Web API server solution for creating and configuring data extractions from SAP systems.
@@ -102,6 +102,8 @@ plugins:
         - stopWordFilter
   - typeset # preserve format of titles and headlines in navigation and toc
   - awesome-pages # define navigation in .pages files
+  - swagger-ui-tag:
+      supportedSubmitMethods: []
   - macros:
       include_dir: includes
   #- glightbox #image zoom
@@ -236,4 +238,6 @@ extra:
   table: _Table_
   extraction: API call
   Extraction: API call
+  port: 1337
+  port_https: 1338
   
