@@ -1,7 +1,7 @@
 {
   "swagger": "2.0",
   "info": {
-    "description": "Xtract Core is a whitelabel API server solution for creating and configuring data extractions from SAP systems.",
+    "description": "Xtract Core is a whitelabel API server solution for creating and configuring data extractions from SAP systems. Create connections to SAP source systems and target environments and turn these connections into extractions...",
     "version": "1.0.7",
     "title": "Xtract Core"
   },
