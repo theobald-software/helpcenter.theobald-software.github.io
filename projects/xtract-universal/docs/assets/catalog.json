@@ -6,7 +6,7 @@
       {
         "Product": "Theobald.Extractors",
         "Component": "OData",
-        "Message": "Added the OData extractor"
+        "Message": "Added the OData extractor (preview)"
       }
     ]
   },
