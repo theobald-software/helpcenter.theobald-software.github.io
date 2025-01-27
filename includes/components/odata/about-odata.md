@@ -1,4 +1,9 @@
 
+!!! warning
+	**Timeout Error**<br>
+	Extractions of large data sets may run into timeouts. 
+	This is a known issue that will be fixed in the next update.
+
 ### About OData Services
 
 The {{ odata }} {{ component }} in {{ productName }} consumes the data provided by SAP OData services.
