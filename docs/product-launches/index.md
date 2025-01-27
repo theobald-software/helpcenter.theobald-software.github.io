@@ -28,6 +28,8 @@ This page contains general to-do lists for product launches.
 	- [ ] Create at least 3 new Newsfeed texts
 - [ ] Contact dev for location of the version history (Catalog.json).
 - [ ] Update html generation for techn. Newsletter
+- [ ] Add Dashboard in Google Analytics
+- [] Index product pages in Google Console (SEO)
 
 ## SAP Concur
 
@@ -52,3 +54,5 @@ Check with dev if this is a new product or a new tool for XfA:
 	- [ ] Create at least 3 new Newsfeed texts
 - [ ] Contact dev for location of the version history (Catalog.json).
 - [ ] Update html generation for techn. Newsletter
+- [ ] Add Dashboard in Google Analytics
+- [] Index product pages in Google Console (SEO)
