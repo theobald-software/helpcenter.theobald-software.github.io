@@ -8,7 +8,7 @@ Alternatively, select **TCODE** to look up SAP Transaction codes. <br>
 ![Look-Up-Report](../../assets/images/documentation/components/report/report_look-up.png){:class="img-responsive"}	
 
 	!!! tip
-		In some cases reports cannot be determined based on the TCODE. 
+		In certain cases reports cannot be determined based on the TCODE. 
 		You can check the report name of a TCODE using the SAP GUI menu **System > Status...**.
 		
 3. Click **[:magnifying-glass:]** :number-2:. Search results are displayed.

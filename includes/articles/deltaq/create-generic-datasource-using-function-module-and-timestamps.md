@@ -4,7 +4,7 @@ This article shows how to create generic DataSources for delta extractions in SA
 ### About Delta Functionality with Delta fields 
 
 To use the delta functionality, a delta field is required. 
-Some tables like VBAK (Sales Document: Header Data) do not have a timestamp field for creation/change that can be uses as a unique delta field, but they have separate fields for creation date (**ERDAT**), creation time (**ERZET**) and change date (**AEDAT**). 
+Certain tables like VBAK (Sales Document: Header Data) do not have a timestamp field for creation/change that can be uses as a unique delta field, but they have separate fields for creation date (**ERDAT**), creation time (**ERZET**) and change date (**AEDAT**). 
 To get the delta data of the VBAK table, we create a generic DataSource using a custom function module that implements the necessary logic.
 
 This article leads you through all necessary steps to create an extraction structure that has a timestamp field that can be used to implement the delta functionality. 

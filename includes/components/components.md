@@ -82,6 +82,11 @@
   icon: site:assets/images/logos/components/DeltaQ.svg
   content: Extract data from DataSources (OLTP) and extractors from ERP and ECC systems. <br> <br><span class="keyword">ECC</span> <span class="keyword">S4/HANA</span> <span class="keyword">BW</span> <span class="keyword">BW/4HANA</span>
   url: site:documentation/deltaq/
+  
+- title: {{ odata }}
+  icon: site:assets/images/logos/components/OData.svg
+  content: Extract SAP data using OData services - official alternative to ODP framework. <br> <br> <span class="keyword">SAP Cloud</span> <span class="keyword">ECC</span> <span class="keyword">S4/HANA</span> <span class="keyword">BW</span> <span class="keyword">BW/4HANA</span>
+  url: site:documentation/odata/
 
 - title: {{ odp }}
   icon: site:assets/images/logos/components/ODP.svg

@@ -8,7 +8,7 @@
 If you choose this option, the ABAP report is executed as a batch job in SAP. 
 A spool is generated in SAP (transaction SP01) which is later fetched by the {{ report }} {{ component }}. 
 Use this option for long running reports in SAP that would run into an RFC timeout when called in dialog mode. 
-Some reports that throw an error message when running in dialog mode can be extracted when run in background mode.
+Certain reports that throw an error message when running in dialog mode can be extracted when run in background mode.
 
 #### Background Job Timeout
 Enter a time period (in seconds). 
