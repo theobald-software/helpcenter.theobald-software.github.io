@@ -101,6 +101,12 @@ plugins:
         #- stemmer
         - stopWordFilter
   - typeset # preserve format of titles and headlines in navigation and toc
+  - apicall:
+      line_length: 90
+      icons: true
+      languages:
+        - curl
+        - javascript
   - awesome-pages # define navigation in .pages files
   - swagger-ui-tag:
       supportedSubmitMethods: []

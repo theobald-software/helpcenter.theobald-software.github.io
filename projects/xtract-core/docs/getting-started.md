@@ -148,104 +148,59 @@ Before connecting to SAP for the first time, set up an SAP dialog user with the 
 
 Use the following resource to create a new connection to an SAP application server:
 
-```
-{
-"Host": "s4h2021.theobald-software.com",
-"User": "schipka",
-"Password": "Ganbare4",
-"Client": "100",
-"Language": "en",
-"InstanceNo": 0
-}
-```
-
-
-
-!!! api ""
-	
-	<span class="keyword">POST</span> /v0/connections/sap/{name}
-
-	Creates a new connection to an SAP application server.
-	
-	Parameters:
-	
-	| Parameter | In | Type | Description |
-	|-----------|-------|------------|-----|
-	| name*       | path | string | Name for the new connection. Allowed characters are [a-zA-Z0-9]. The name must not start with a number. Because the names of extractions and connections map to a directory on the file system, names are unique and not case sensitive. |
-	| Host*       | body |  string | Host name or IP address of the application server (Property Host). |
-	| User*       | body |  string | SAP username. |
-	| Password*       | body |  string | Password of the SAP user. |
-	| Client*       | body |  string | A three-digit number of the SAP client between 000 and 999, e.g., 800. |
-	| Language*       | body |  string | The logon language for the SAP system, e.g., EN for English or DE for German. |
-	| InstanceNo*       | body |  string | A two-digit number between 00 and 99 (Property SystemNumber). |
-	
-	*required
-	
-	---
-	
-	Example:
-	```http 
-	POST /v0/connections/sap/s4hana HTTP/1.1
+=== ":material-web: http"
+	``` http
+	POST /v0/connections/sap/{name} HTTP/1.1
 	Host: localhost:1337
 	Content-Type: application/json
-	Content-Length: $LENGTH 
+	Content-Length: 142
 	{
 	"Host": "sap-erp-as05.example.com",
-	"User": "$USER",
-	"Password": "$PASSWORD",
-	"Client": "800",
+	"User": "alice",
+	"Password": "myPassword",
+	"Client": "100",
 	"Language": "en",
 	"InstanceNo": 0
 	}
 	```
-	
-	---
-	
-	Response:
-	
-	| Code | Description |
-	|--------|-----------|
-	| 200    | OK         |
-	
-	=== "Example Value"
-		```http 
-		POST /v0/connections/sap/s4hana HTTP/1.1
-		Host: localhost:1337
-		Content-Type: application/json
-		Content-Length: $LENGTH 
-		{
-		"Host": "sap-erp-as05.example.com",
-		"User": "$USER",
-		"Password": "$PASSWORD",
-		"Client": "800",
-		"Language": "en",
-		"InstanceNo": 0
-		}
-		```
-	=== "Model"
-		```http 
-		POST /v0/connections/sap/s4hana HTTP/1.1
-		Host: localhost:1337
-		Content-Type: application/json
-		Content-Length: $LENGTH 
-		{
-		"Host": "sap-erp-as05.example.com",
-		"User": "$USER",
-		"Password": "$PASSWORD",
-		"Client": "800",
-		"Language": "en",
-		"InstanceNo": 0
-		}
-		```
-	
-	
 
-	
+@@@ POST http://localhost:1337/v0/connections/sap/{name} "Host": "sap-erp-as05.example.com", "User": "alice", "Password": "myPassword", "Client": "800", "Language": "en", "InstanceNo": 0
+    [Content-Type: application/json]
+    [Content-Length: 142]
 
-Replace `$NAME` with a name for the source connection.
+
+The endpoint for creating SAP connections: `connections/sap/{name}`.
+Replace `{name}` with a name for the source connection.
 Allowed characters are [a-zA-Z0-9]. The name must not start with a number.
 Because the names of extractions and connections map to a directory on the file system, names are unique and not case sensitive.
 
+
+Example:
+
+@@@ POST http://localhost:1337/v0/connections/sap/{name} "Host": "sap-erp-as05.example.com", "User": "alice", "Password": "myPassword", "Client": "800", "Language": "en", "InstanceNo": 0
+    [Content-Type: application/json]
+    [Content-Length: 142]
+
+!!! tip
+	The `Content-Length` property in the header represents the size of the request body in bytes.
+	If you have wc (word count) installed, you can use command line tools to get the correct size.
+	Example:
+	```bash
+	echo -n '{"Host": "sap-erp-as05.example.com", "User": "alice", "Password": "myPassword", "Client": "800", "Language": "en", "InstanceNo": 0}' | wc -c
+	```
+	
+	
+
+The server tries to establish a connection to the system with the given credentials before saving the connection.
+
+!!! example 
+
+	@@@ POST http://localhost:1337/v0/connections/sap/{name} "Host": "sap-erp-as05.example.com", "User": "alice", "Password": "myPassword", "Client": "100", "Language": "en", "InstanceNo": 0
+		[Content-Type: application/json]
+		[Content-Length: {length}]
+
+
+	
 
 The server tries to establish a connection to the system with the given credentials before saving the connection.
 
