@@ -5,6 +5,5 @@ Disallow: /roadmap/*
 Disallow: /changelog/*
 Disallow: /assets/*
 Disallow: /drafts/*
-Disallow: /draft-odata/*
 Disallow: /test-environment-troubleshooting/*
 Disallow: /test-environment-troubleshooting-2/*
