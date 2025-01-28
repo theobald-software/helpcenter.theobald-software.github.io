@@ -1,5 +1,16 @@
 [
   {
+    "Version": "2025.1.28.1",
+    "LegacyReleaseDate": "2025-01-28 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "OData",
+        "Message": "Added the OData extractor (preview)"
+      }
+    ]
+  },
+  {
     "Version": "2025.1.23.86",
     "LegacyReleaseDate": "2025-01-23 00:00:00Z",
     "Changes": [
