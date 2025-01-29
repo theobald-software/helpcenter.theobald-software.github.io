@@ -25,19 +25,32 @@ For more information, see [Installation](documentation/introduction/installation
 
 ### Connect to SAP
 
-1. Set the (demo) license **before** connecting to SAP. The demo license is located in the installation directory of ERPConnect, e.g., `{{ installationDir }}`.
-Use the following commands to load and set the license number from the `ERPConnectLicense.json` file:
-	``` csharp
-	ERPConnect.LIC.LoadJsonLicense(string filename); //read the file specified in the filename argument
-	ERPCOnnect.LIC.SetJsonLicense(string json); //sets the license using the JSON that was read from the file.
-	```
+1. Set the (demo) license **before** connecting to SAP.
 
-	!!! note
-		When using the ERPConnect30.dll, the license number is located in the `ERPConnectTrialKey.txt` file. Set the license using the following command:
+	=== "ERPConnectStandard20"
+		The demo license is provided as a .json file that is located in the installation directory of ERPConenct, e.g., `{{ installationDir }}\ERPConnectLicense.json`.
+		Use one of the following commands to set the license:
 		``` csharp
+		ERPConnect.LIC.LoadJsonLicense(string filename); //reads and applies the license file
+		ERPConnect.LIC.SetJsonLicense(string json); //sets the license using a json string.
+		```
+
+	=== "ERPConnect35"
+
+		The demo license is provided in the `ERPConnectTrialKey.txt` file in the installation directory of ERPConenct, e.g., `{{ installationDir }}\ERPConnectTrialKey.txt`.
+		Use the following command to set the license number:
+		
+		```csharp 
 		ERPConnect.LIC.SetLic("XXXXXXXXXX");
 		```
-	
+		
+		!!! tip
+			You can also provide the path to the ERPConnectTrialKey.txt file to set the license. Example:
+			
+			```csharp
+			ERPConnect.LIC.SetLic(File.ReadAllText("C:\\Program Files\\ERPConnect\\ERPConnectTrialKey.txt"));
+			```
+			
 2. Create an `R3Connection` object and define all [input parameters](documentation/sap-connection/log-on-to-sap.md/#input-parameters).<br>
 Make sure to use an SAP dialog user with sufficient SAP authorization, see [Authorization Objects - SAP User Rights](documentation/sap-authority-objects.md).
 {% include "erpconnect/code/sap-connection.md" %}
