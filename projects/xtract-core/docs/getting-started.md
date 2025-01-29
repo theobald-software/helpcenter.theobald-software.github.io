@@ -9,7 +9,16 @@ tags:
   - quick start  
 ---
 
-![img](./assets/images/logos/theo-thumbs.png){ .lg .middle width="30px"} This section shows how to install and set up Xtract Core for the first time.
+### What is Xtract Core?
+
+Xtract Core is a whitelabel Web API server for developing your own SAP interfaces.
+You can use the Xtract Core API to extract data from SAP Tables and write them to various supported target environments.
+
+The API allows you to:
+
+- create connections to SAP systems and target environments / destinations
+- create reusable data extractions 
+- run data extractions
 
 ## Prerequisites
 
@@ -21,6 +30,8 @@ For more information, see [Knowledge Base: Function Module for Tables](knowledge
 
 For more information on system requirements and supported SAP systems, see [Knowledge Base: Requirements](knowledge-base/requirements.md).
 
+### Supported Connections
+
 <div class="grid cards" markdown>
 
 -   :simple-sap: __Supported SAP Objects__
@@ -28,7 +39,7 @@ For more information on system requirements and supported SAP systems, see [Know
     ---
 
     - SAP Tables
-	- Delta Table (CDC) extractions are planned for Q3 2025
+	- Delta Table (CDC) extractions are planned to be released in Q3 2025
 
 -	:material-bullseye: __Supported Target Environments__
 
@@ -108,7 +119,7 @@ Change the network settings (e.g., port number) of the web server in the `listen
 
 ### TLS Configuration
 
-Enable Transport Layer Security (TLS) to use secured https communication when making API calls:
+Enable Transport Layer Security (TLS) to use secured https communication when making endpoints:
 
 1. Make sure to have a valid X.509 certificate. If the certificate is not listed in the Windows certificate store, [install an X.509 certificate](knowledge-base/install-x.509-certificate.md).
 2. Open the following file in the Xtract Core installation directory: `config/servers/tls.json`. If the directory and file do not exist, create them.
@@ -127,180 +138,193 @@ Enable Transport Layer Security (TLS) to use secured https communication when ma
 4. Restart the listener by restarting the Xtract Core service.
 The listener then listens on the port configured in its config securePort.
 
-API calls now use the https protocol. The default port for the secured communication is {{ port_https }}.
+endpoints now use the https protocol. The default port for the secured communication is {{ port_https }}.
 
-## Create Connections
+## Connections
 
-To extract data from SAP at least 2 connections are required:
+At least 2 connections are required to extract data from SAP:
 - A connection to an SAP source system.
-- A connection to a target environment in which the data is written.
+- A connection to a destination in which the data is written.
 
+For information on connection endpoints, refer to the [API Reference](api-reference.md).
 
-!!! note
+### Create SAP Connections
 
-	`$NAME` represents the name/identifier of an extraction or connection.
-	Allowed characters are [a-zA-Z0-9]. The name must not start with a number.
-	Because the names of extractions and connections map to a directory on the file system, names are unique and not case sensitive.
+Before connecting to SAP for the first time, set up an SAP dialog user with the necessary [SAP user rights](knowledge-base/sap-authority-objects.md/#general-authorization-objects).<br>
+Use the following endpoint to create a new connection to an SAP application server: 
 
-### Connect to SAP
+```http
+POST /v0/connections/sap/{name}
+```
 
-Before connecting to SAP for the first time, set up an SAP dialog user with the necessary [SAP user rights](knowledge-base/sap-authority-objects.md/#general-authorization-objects).
-
-Use the following resource to create a new connection to an SAP application server:
-
-=== ":material-web: http"
+=== ":material-file-document-outline: example"
 	``` http
 	POST /v0/connections/sap/{name} HTTP/1.1
 	Host: localhost:1337
 	Content-Type: application/json
 	Content-Length: 142
 	{
-	"Host": "sap-erp-as05.example.com",
+	"Host": "sap-erp-as05.example.com(1)",
 	"User": "alice",
 	"Password": "myPassword",
-	"Client": "100",
+	"Client": "800",
 	"Language": "en",
 	"InstanceNo": 0
 	}
 	```
+	
+	1.	!!! tip 
+	
+			Input values for the SAP connection can be found in the *Properties* of the SAP Logon Pad or they can be requested from the SAP Basis team.
 
 @@@ POST http://localhost:1337/v0/connections/sap/{name} "Host": "sap-erp-as05.example.com", "User": "alice", "Password": "myPassword", "Client": "800", "Language": "en", "InstanceNo": 0
     [Content-Type: application/json]
     [Content-Length: 142]
 
 
-The endpoint for creating SAP connections: `connections/sap/{name}`.
-Replace `{name}` with a name for the source connection.
-Allowed characters are [a-zA-Z0-9]. The name must not start with a number.
-Because the names of extractions and connections map to a directory on the file system, names are unique and not case sensitive.
+When this endpoint is called, the Xtract Core web server tries to establish a connection to the SAP system with the given credentials before saving the connection.
+
+<!--
+	Replace `{name}` with a name for the source connection.
+	Allowed characters are [a-zA-Z0-9]. The name must not start with a number.
+	Because the names of extractions and connections map to a directory on the file system, names are unique and not case sensitive.
 
 
-Example:
-
-@@@ POST http://localhost:1337/v0/connections/sap/{name} "Host": "sap-erp-as05.example.com", "User": "alice", "Password": "myPassword", "Client": "800", "Language": "en", "InstanceNo": 0
-    [Content-Type: application/json]
-    [Content-Length: 142]
-
-!!! tip
 	The `Content-Length` property in the header represents the size of the request body in bytes.
 	If you have wc (word count) installed, you can use command line tools to get the correct size.
 	Example:
 	```bash
 	echo -n '{"Host": "sap-erp-as05.example.com", "User": "alice", "Password": "myPassword", "Client": "800", "Language": "en", "InstanceNo": 0}' | wc -c
 	```
-	
-	
-
-The server tries to establish a connection to the system with the given credentials before saving the connection.
-
-!!! example 
-
-	@@@ POST http://localhost:1337/v0/connections/sap/{name} "Host": "sap-erp-as05.example.com", "User": "alice", "Password": "myPassword", "Client": "100", "Language": "en", "InstanceNo": 0
-		[Content-Type: application/json]
-		[Content-Length: {length}]
 
 
-	
+#### Test the SAP Connection
 
-The server tries to establish a connection to the system with the given credentials before saving the connection.
+Use the following endpoint to check if an existing SAP connection can succesfully connect to the specified SAP system:
 
-Replace all variables starting with `$` with actual values:
+=== ":material-file-document-outline: example"
+	```http
+	GET /v0/connections/sap/{name}/test HTTP/1.1
+	Host: localhost:1337
+	```
 
-```http 
-POST /v0/connections/sap/{name} HTTP/1.1
-Host: localhost:1337
-Content-Type: application/json
-Content-Length: $LENGTH 
-{
-"Host": "sap-erp-as05.example.com",
-"User": "$USER",
-"Password": "$PASSWORD",
-"Client": "800",
-"Language": "en",
-"InstanceNo": 0
-}
+@@@ GET http://localhost:1337/v0/connections/sap/{name}/test 
+
+When this endpoint is called, the Xtract Core web server opens a connection to SAP using the information that is stored in the configuration of the connection.
+
+-->
+
+### Create Azure Blob Storage Connections
+
+To connect to a Microsoft Azure Blob Storage, generate a Shared Access Signature (SAS) token for authentication, see [Microsoft Documentation: Create SAS tokens for storage containers](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/authentication/create-sas-tokens?view=doc-intel-4.0.0&tabs=azure-portal#use-the-azure-portal).
+The following permissions are required for authentication via Shared Access Signature (SAS):
+- Add
+- Create
+- Write
+- Delete
+- List
+
+
+Use the following endpoint to create a new connection to an Azure blob storage container: 
+
+``` HTTP
+POST /v0/connections/azureblob/{name}
 ```
 
-!!! tip
-	Input values for the SAP connection can be found in the *Properties* of the SAP Logon Pad or they can be requested from the SAP Basis team.
+=== ":material-file-document-outline: example"
+	```http
+	POST /v0/connections/azureblob/{name} HTTP/1.1
+	Host: localhost:1337
+	Content-Type: application/json
+	Content-Length: 223
+	{
+	"Account": "my-account",
+	"Token": "sv=YYYY-MM-DD&ss=...%3D(1)",
+	"Container": "container"
+	}
+	```
 
-Test Connection:
-Attempts to open a connection to the specified SAP system with the information stored in the connection configuration.
+	1.  !!! tip
 
-```http
-GET /v0/connections/sap/$NAME/test HTTP/1.1
-Host: localhost:1337
-```
+			You can copy the SAS token from the Azure portal in: <br>
+			**Storage accounts > [account_name] > Data storage > Containers > [account_name] > Generate SAS**.
 
-
-### Connect to Azure Blob
-
-To connect to a Microsoft Azure Blob Storage...
-For more information, see [Microsoft Documentation: Create SAS tokens for storage containers](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/authentication/create-sas-tokens?view=doc-intel-4.0.0&tabs=azure-portal#use-the-azure-portal).
-
-
-!!! note
-	The following permissions are required for authentication via Shared Access Signature (SAS):
-	- Add
-	- Create
-	- Write
-	- Delete
-	- List
+@@@ POST http://localhost:1337/v0/connections/sap/{name} "Account": "my-account", "Token": "sv=YYYY-MM-DD&ss=...%3D", "Container": "container"
+    [Content-Type: application/json]
+    [Content-Length: 223]
 
 
-Create a new Azure blob connection. The server tries to establish a connection to Azure with the given
-credentials before saving the connection.
+When this endpoint is called, the Xtract Core web server tries to establish a connection to Azure with the given credentials before saving the connection.
 
-```http
-POST /v0/connections/azureblob/$NAME HTTP/1.1
-Host: localhost:1337
-Content-Type: application/json
-Content-Length: $LENGTH
-{
-"Account": "$ACCOUNT",
-"Token": "$TOKEN(1)",
-"Container": "container"
-}
-```
+<!--
+### Create CSV Flat File Connections
 
-1.  You can copy the SAS token from the Azure portal in: <br>
-	**Storage accounts > [account_name] > Data storage > Containers > [account_name] > Generate SAS**.
-	
+not yet available?
+-->
 
-## Create an Extraction
+## Extractions
 
 An extraction is a combination of the following components:
 
 - A connection to a source system, e.g., SAP S/4HANA, SAP BW, etc.
-- A definition of the data that is to be extracted from the source system.
+- A definition of the data you want to extract from the source system.
 - A connection to a target environment / destination in which the data is written.
 
-Follow the steps below to create an extraction that extracts an SAP table:
+For information on extraction endpoints, refer to the [API Reference](api-reference.md).
 
-1. 
-Create an extraction of the selected SAP object from the source connection to the destination connection.
-The example above would create a CSV file with the name resultset.csv in the selected container.
+!!! note
+	When creating an extraction no data is extracted. Once the extraction is created, it needs to be run to extract data.
+	
+### Create Table Extractions
 
+Before creating extractions, make sure to meet the following requirements: 
+- A [conenction to an SAP system](#create-sap-connections) is available. 
+- The SAP user in the SAP conenction has sufficient user rights, see [Knowledge Base Article: SAP Authorization Objects](knowledge-base/sap-authority-objects.md/#table)
+- A [connection to a destination](#create-azure-blob-storage-connections) is available.
 
-```http
-POST /v0/extractions/table/$NAME HTTP/1.1
-Host: localhost:1337
-Content-Type: application/json
-Content-Length: 171
-{
-"Table": "MARA",
-"Where": "MATNR = 000000000001",
-"Source": "$SOURCE_NAME",
-"Destination": "$DESTINATION_NAME",
-"Columns": ["MATNR", "MANDT(1)"],
-"ResultName": "resultset",
-"FunctionModule": "/THEO/READ_TABLE"
-}
+Use the following endpoint to create a new extraction: 
+
+``` HTTP
+POST /v0/extractions/table/{name}
 ```
 
-1.  The property Columns is optional. If omitted, all columns will be selected.
+=== ":material-file-document-outline: example"
+	```http
+	POST /v0/extractions/table/{name} HTTP/1.1
+	Host: localhost:1337
+	Content-Type: application/json
+	Content-Length: 190
+	{
+	"Table": "MARA(1)",
+	"Where": "MATNR = 000000000001",
+	"Source": "s4hana",
+	"Destination": "azure",
+	"Columns": ["MATNR", "MANDT"],
+	"ResultName": "materials",
+	"FunctionModule": "/THEO/READ_TABLE"
+	}
+	```
 
-## Run Services
+@@@ POST http://localhost:1337/v0/extractions/table/{name} "Table": "MARA", "Where": "MATNR = 000000000001", "Source": "s4hana", "Destination": "azure", "Columns": ["MATNR", "MANDT(1)"], "ResultName": "materials", "FunctionModule": "/THEO/READ_TABLE"
+    [Content-Type: application/json]
+    [Content-Length: 190]
+
+#### Properties of Table extractions
+
+The http(s) request body for creating table extractions supports the following settings:
+	
+| Property | Description | Required |
+|-----------|------------|----------|
+| **Table**     | Name of the SAP table you want to extract data from. | Yes |
+| **Where**    | WHERE clause to filter table records. | Yes |
+| **Source**    | Name of an existing SAP connection. | Yes |
+| **Destination**| Name of a destination connection, e.g., to an Azure Blob Storage container. | Yes |
+| **Columns** | Define which SAP table columns to extract. If omitted, all columns are extracted. | No |
+| **ResultName** | Name of the new table in the target environment. If omitted, the name of the extration is also the name of the new table. | No |
+| **FunctionModule** | Name of the function module that is used to extract SAP tables. If omitted, the SAP standard function module *RFC_READ_TABLE* is used. The installation of */THEO/READ_TABLE* is recommended. For more information, see [Function Module for Tables](knowledge-base/custom-function-module-for-table-extraction.md). | No |
+
+
+### Run Extractions (asynchronous)
 
 Runs the extraction of name `$NAME` and waits for it. `rows` is an optional parameter used to specify how
 many rows should be extracted at most. The HTTP response head will be returned as soon as the server
@@ -309,10 +333,15 @@ Header X-XU-Timestamp contains the starting timestamp of the extraction. It is g
 and can be used to query status information and logs of the extraction.
 The response body of the extraction will contain the extraction log.
 
-```http
-GET /run/$NAME?rows=10 HTTP/1.1
-Host: localhost:1337
-```
+=== ":material-file-document-outline: example"
+	```http
+	GET /run/{name}?rows=10 HTTP/1.1
+	Host: localhost:1337
+	```
+
+@@@ GET http://localhost:1337/run{name}/
+
+### Run Extractions (synchronous)
 
 Starts the extraction of name $NAME. The request completes immediately after initializing the extraction.
 Header X-XU-Timestamp contains the starting timestamp of the extraction. It is guaranteed to be unique
@@ -320,9 +349,10 @@ and can be used to query status information and logs of the extraction.
 Status code 200 may be returned even if the extraction runs into an error early. Due to immediate availability
 of the timestamp, status information can be query through dedicated requests.
 
-```http
-GET /start/$NAME?rows=10 HTTP/1.1
-Host: localhost:1337
-```
+=== ":material-file-document-outline: example"
+	```http
+	GET /start/{name}?rows=10 HTTP/1.1
+	Host: localhost:1337
+	```
 
-### Pass Parameters
+@@@ GET http://localhost:1337/start{name}/
