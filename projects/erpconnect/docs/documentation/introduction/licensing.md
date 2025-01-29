@@ -28,7 +28,7 @@ Set the license during runtime before the first connection to SAP is established
 		ERPConnect.LIC.LoadJsonLicense(string filename);
 		```
 	- Copy and paste the content of the `ERPConnectLicense.json` file into a constant string in the code and use the string to set the license:
-		```chsarp
+		``` chsarp
 		ERPConnect.LIC.SetJsonLicense(string json); 
 		```
 

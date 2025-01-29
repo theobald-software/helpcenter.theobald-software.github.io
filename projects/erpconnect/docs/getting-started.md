@@ -36,7 +36,7 @@ For more information, see [Installation](documentation/introduction/installation
 		ERPConnect.LIC.LoadJsonLicense(string filename);
 		```
 		- Copy and paste the content of the `ERPConnectLicense.json` file into a constant string in the code and use the string to set the license:
-		```chsarp
+		``` chsarp
 		ERPConnect.LIC.SetJsonLicense(string json); 
 		```
 
@@ -45,7 +45,7 @@ For more information, see [Installation](documentation/introduction/installation
 		The demo license is provided in the `ERPConnectTrialKey.txt` file in the installation directory of ERPConenct, e.g., `{{ installationDir }}\ERPConnectTrialKey.txt`.
 		Use the following command to set the license number:
 		
-		```csharp 
+		``` csharp 
 		ERPConnect.LIC.SetLic("XXXXXXXXXX");
 		```
 		
