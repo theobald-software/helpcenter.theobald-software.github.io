@@ -27,7 +27,7 @@ For more information, see [Installation](documentation/introduction/installation
 
 1. Set the (demo) license **before** connecting to SAP.
 
-	=== "ERPConnectStandard20"
+	=== "ERPConnectStandard20.dll"
 		The demo license is provided as a .json file that is located in the installation directory of ERPConenct, e.g., `{{ installationDir }}\ERPConnectLicense.json`.
 		Use one of the following commands to set the license:
 		``` csharp
@@ -35,7 +35,7 @@ For more information, see [Installation](documentation/introduction/installation
 		ERPConnect.LIC.SetJsonLicense(string json); //sets the license using a json string.
 		```
 
-	=== "ERPConnect35"
+	=== "ERPConnect35.dll"
 
 		The demo license is provided in the `ERPConnectTrialKey.txt` file in the installation directory of ERPConenct, e.g., `{{ installationDir }}\ERPConnectTrialKey.txt`.
 		Use the following command to set the license number:

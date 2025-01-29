@@ -17,7 +17,7 @@ After the end of the test period ERPConnect will not run without a valid license
 ERPConnect checks the licence number on every call (client and server). 
 Set the license during runtime before the first connection to SAP is established.
 
-=== "ERPConnectStandard20"
+=== "ERPConnectStandard20.dll"
 
 	Place the `ERPConenctLicense.json` file that is provided in the [Customer Portal - My Theobald Software](https://my.theobald-software.com/) into the installation directory of ERPConnect, e.g., `{{ installationDir }}`.
 	Use one of the following commands to set the license:
@@ -26,7 +26,7 @@ Set the license during runtime before the first connection to SAP is established
 	ERPConnect.LIC.SetJsonLicense(string json); //sets the license using a json string.
 	```
 
-=== "ERPConnect35"
+=== "ERPConnect35.dll"
 
 	Use the following command to set the license number:
 	
