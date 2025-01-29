@@ -29,10 +29,15 @@ For more information, see [Installation](documentation/introduction/installation
 
 	=== "ERPConnectStandard20.dll"
 		The demo license is provided as a .json file that is located in the installation directory of ERPConenct, e.g., `{{ installationDir }}\ERPConnectLicense.json`.
-		Use one of the following commands to set the license:
+		Use one of the following methods to set the license.
+		
+		- Read the license file and apply the license:
 		``` csharp
-		ERPConnect.LIC.LoadJsonLicense(string filename); //reads and applies the license file
-		ERPConnect.LIC.SetJsonLicense(string json); //sets the license using a json string.
+		ERPConnect.LIC.LoadJsonLicense(string filename);
+		```
+		- Copy and paste the content of the `ERPConnectLicense.json` file into a constant string in the code and use the string to set the license:
+		```chsarp
+		ERPConnect.LIC.SetJsonLicense(string json); 
 		```
 
 	=== "ERPConnect35.dll"
