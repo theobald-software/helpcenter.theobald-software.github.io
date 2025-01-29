@@ -222,3 +222,4 @@ extra:
   Component: Feature / SAP Object
   component: feature / SAP object
   components: features / SAP objects
+  installationDir: C:\Program Files\ERPConnect

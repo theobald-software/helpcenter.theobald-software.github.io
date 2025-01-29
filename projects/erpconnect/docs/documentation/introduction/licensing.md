@@ -14,12 +14,26 @@ A regular license is provided in the [Theobald Software Customer Portal](https:/
 
 After the end of the test period ERPConnect will not run without a valid license.
 
-Because ERPConnect checks the licence number on every call (client and server), you need to set your license number before the first connection to SAP is established.<br>
-Set the license during runtime through the static class `ERPConnect.LIC` as shown in the code below.
+ERPConnect checks the licence number on every call (client and server). 
+Set the license during runtime before the first connection to SAP is established.
 
-```csharp linenums="1"
-ERPConnect.LIC.SetLic("XXXXXXXXXX");
-```
+=== "ERPConnectStandard20"
+
+	Place the `ERPConenctLicense.json` file that is provided in the [Customer Portal - My Theobald Software](https://my.theobald-software.com/) into the installation directory of ERPConnect, e.g., `{{ installationDir }}`.
+	Use one of the following commands to set the license:
+	``` csharp
+	ERPConnect.LIC.LoadJsonLicense(string filename); //reads and applies the license file
+	ERPConnect.LIC.SetJsonLicense(string json); //sets the license using a json string.
+	```
+
+=== "ERPConnect35"
+
+	Use the following command to set the license number:
+	
+	```csharp 
+	ERPConnect.LIC.SetLic("XXXXXXXXXX");
+	```
+
 
 
 ### Maintenance
