@@ -36,6 +36,7 @@ hide:
 
 - [Extraction Mechanism of Table](table-extraction-mechanism.md)
 - [Install /THEO/READ_TABLE for Table Extractions](custom-function-module-for-table-extraction.md)
+- [WHERE Clause Syntax](where-clause.md)
 
 </div>
 

@@ -1,4 +1,6 @@
 
+{% if page.meta.product != "xtract-core" %}
+
 ## WHERE Clause Text Mode
 
 The WHERE clause text mode allows you to directly enter a WHERE clauses. {% if page.meta.product != "yunio" %}The text mode of the WHERE clause supports script expressions.{% endif %}
@@ -14,6 +16,7 @@ The WHERE clause text mode allows you to directly enter a WHERE clauses. {% if p
 	To check the syntax of the WHERE clause, click **[Load live preview]**. This way there is no need to run an extraction to see, if the syntax is correct.
 
 {% endif %}
+{% endif %}
 
 ### WHERE Clause Syntax
 
@@ -24,17 +27,20 @@ The WHERE Clause syntax generally uses the following structure:
 [Table]~[Column][Space][Operator][Space][Filter-Value]
 ```
 
-**Examples:** 
+**Example:** 
 
 ```
 KNA1~LAND1 = 'US'
 ```
+
+The following rules apply to filter values:
 
 | Rule | Correct | Wrong |
 |--------|--------|--------|
 | Enter a space before and after the equal sign |  :white_check_mark: *YEAR = '1999'* | :x: *YEAR= '1999 '*, *YEAR ='1999'* or *YEAR='1999'*|
 | Set floating point numbers in single quotation mark | :white_check_mark: *KMENG > '10.3'* |  :x: *KMENG > 10.3*|
 | Values must use the internal SAP representation:<br> :material-subdirectory-arrow-right: Date: YYYYMMDD <br> :material-subdirectory-arrow-right: Year Period: YYYYPPP <br> :material-subdirectory-arrow-right: Numbers with leading zeroes, e.g., customer numbers| <br> :white_check_mark: 19990101 <br> :white_check_mark: 1999001 <br> :white_check_mark: 0000001000 | <br> :x: 01.01.1999 <br> :x: 001.1999 <br> :x: 1000|
+
 
 <!--- --8<-- [start:syntax] -->
 
@@ -111,10 +117,15 @@ For more information on script expression, see [Script Expressions](../parameter
 
 A subquery is an SQL query nested inside a larger query. 
 Subqueries are nested queries that provide data to the enclosing query. Subqueries need be enclosed with parenthesis and can return individual values or a list of records.
-Get more details about subqueries on the [SAP help site - Conditions](https://help.sap.com/doc/abapdocu_752_index_htm/7.52/en-US/abenwhere_logexp_in_subquery.htm).
+Get more details about subqueries on the [SAP Help: Conditions](https://help.sap.com/doc/abapdocu_752_index_htm/7.52/en-US/abenwhere_logexp_in_subquery.htm).
+
+**Example:**
 
 In the following example a subquery is used with the *IN* operator. 
 The following statement returns all the *active* customers (rows in the table KNA1) that have i.e. a sales document in the table VBAK for sales document header data.
 
-![WHERE Clause Subquery](../../assets/images/documentation/components/table/table_where_sub-select.png){:class="img-responsive"}
+```
+KUNNR IN ( SELECT KUNNR FROM VBAK )
+```
+
 {% endif %}

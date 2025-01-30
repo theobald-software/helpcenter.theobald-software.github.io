@@ -1,9 +1,9 @@
 :root {
-  --md-primary-fg-color:        #22A285;
-  --md-primary-fg-color--light: #a6d9ce;
-  --md-primary-fg-color--dark:  #14674f;
-  --md-accent-fg-color: #27BC97;
-  --md-color-accent: #22A285;
+  --md-primary-fg-color:        #F0A202;
+  --md-primary-fg-color--light: #EFC267;
+  --md-primary-fg-color--dark:  #C18101;
+  --md-accent-fg-color: #EFC267;
+  --md-color-accent: #F0A202;
   
   /* Theo red
   --md-primary-fg-color:        #FF003C;

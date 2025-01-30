@@ -11,7 +11,7 @@ site_description: >-
 # repo_name: theobald-software/helpcenter.theobald-software.github.io
 #repo_url: https://github.com/theobald-software/oh.theobald-software.github.io.git
 # Copyright
-copyright: Copyright &copy; 2025 Theobald Software GmbH <br> <span style="color:#22A285"><a  style="color:#22A285" href="https://theobald-software.com/en/privacy-policy/" target="_blank" rel="noopener">privacy policy</a> - <a  style="color:#22A285" href="https://theobald-software.com/en/legal-notice" target="_blank" rel="noopener">legal notice</a> - <a style="color:#22A285" href="https://theobald-software.com/en/" target="_blank" rel="noopener">website</a></span>
+copyright: Copyright &copy; 2025 Theobald Software GmbH <br> <span style="color:#F0A202"><a  style="color:#F0A202" href="https://theobald-software.com/en/privacy-policy/" target="_blank" rel="noopener">privacy policy</a> - <a  style="color:#F0A202" href="https://theobald-software.com/en/legal-notice" target="_blank" rel="noopener">legal notice</a> - <a style="color:#F0A202" href="https://theobald-software.com/en/" target="_blank" rel="noopener">website</a></span>
 watch:
   - includes
   - overrides
@@ -110,6 +110,7 @@ plugins:
   - awesome-pages # define navigation in .pages files
   - swagger-ui-tag:
       supportedSubmitMethods: []
+      filter: true
   - macros:
       include_dir: includes
   #- glightbox #image zoom
@@ -136,6 +137,11 @@ hooks:
   
 # Extensions for Markdown Syntax  
 markdown_extensions:
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
   - material.extensions.preview:
       sources:
         exclude:

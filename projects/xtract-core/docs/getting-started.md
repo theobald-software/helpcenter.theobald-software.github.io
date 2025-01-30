@@ -9,6 +9,8 @@ tags:
   - quick start  
 ---
 
+![img](assets/images/logos/theo-thumbs.png){ .lg .middle width="30px"} This section shows how to install and set up {{ productName }} for the first time. 
+
 ### What is Xtract Core?
 
 Xtract Core is a whitelabel Web API server for developing your own SAP interfaces.
@@ -39,14 +41,14 @@ For more information on system requirements and supported SAP systems, see [Know
     ---
 
     - SAP Tables
-	- Delta Table (CDC) extractions are planned to be released in Q3 2025
+	- Planned for Q3 2025: Delta Table (CDC) extractions
 
 -	:material-bullseye: __Supported Target Environments__
 
     ---
 
     - Azure Blob Storage
-	- CSV flat-files
+	- In development: CSV flat-file
 	
 </div>
 
@@ -54,23 +56,24 @@ For more information on system requirements and supported SAP systems, see [Know
 
 ## Installation
 
+Follow the steps below to install the Xtract Core Windows service:
+
 1. Extract all files from the `XtractCore_native.zip` archive into the directory where you want to install Xtract Core.
 2. Open a command line tool with administrator rights and navigate to the installation directory.
 3. Run the following command to install the Xtract Core Windows service and to create a dedicated user for the service:
 	```terminal
 	service.exe -i --virtual-service-user 
 	```
-4. Make sure that the Xtract Core Service "SAP Connector" is running on your Windows system and that the default port {{ port }} is not blocked by your firewall.
+4. Make sure that the Xtract Core service "SAP Connector" is running on your Windows system and that the default port {{ port }} is not blocked by the firewall.
 
-### Installation Directory Files
-
-The installation directory contains the following files:
+After the installation, the installation directory contains the following files:
 
 | Filename	| Description |
 |------------|--------------|
+|  config directory |	Directory that contains all SAP and destination connections, extractions, and web server settings. This directory is created when executing a POST request for the first time.|
 |  logs directory |	Directory that contains service logs. | 
+|  private directory | Directory that contains keys to encrypt passwords. This directory is created when running an extraction for the first time. |
 |  Transport directory |	Directory that contains SAP function modules. Read the README.pdf within the directory for more information.  | 
-|  private directory | Directory that contains keys to encrypt passwords. This directory is first created when running an extraction. |
 |  Cleaner.exe |	Application that deletes all cached results and log files.  | 
 |  listener.exe |	Application that starts one worker per incomming connection. listener.exe can be renamed (make sure to rename the listener.json as well and update the content of theobald.service.definition.json). | 
 |  listener.json | Contains the default settings of the web server. listener.json can be renamed (make sure that the listener.json has the same name as the listener.exe). |
@@ -217,7 +220,7 @@ When this endpoint is called, the Xtract Core web server opens a connection to S
 ### Create Azure Blob Storage Connections
 
 To connect to a Microsoft Azure Blob Storage, generate a Shared Access Signature (SAS) token for authentication, see [Microsoft Documentation: Create SAS tokens for storage containers](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/authentication/create-sas-tokens?view=doc-intel-4.0.0&tabs=azure-portal#use-the-azure-portal).
-The following permissions are required for authentication via Shared Access Signature (SAS):
+The following SAS permissions are required to write data to the Azure container:
 - Add
 - Create
 - Write
@@ -247,7 +250,8 @@ POST /v0/connections/azureblob/{name}
 	1.  !!! tip
 
 			You can copy the SAS token from the Azure portal in: <br>
-			**Storage accounts > [account_name] > Data storage > Containers > [account_name] > Generate SAS**.
+			**Storage accounts > [account_name] > Data storage > Containers > [container_name] > Generate SAS**. <br>
+			![container-sas](assets/images/documentation/destinations/azure-storage/container-sas.png)
 
 @@@ POST http://localhost:1337/v0/connections/sap/{name} "Account": "my-account", "Token": "sv=YYYY-MM-DD&ss=...%3D", "Container": "container"
     [Content-Type: application/json]
@@ -277,12 +281,16 @@ For information on extraction endpoints, refer to the [API Reference](api-refere
 	
 ### Create Table Extractions
 
+<!--
 Before creating extractions, make sure to meet the following requirements: 
-- A [conenction to an SAP system](#create-sap-connections) is available. 
-- The SAP user in the SAP conenction has sufficient user rights, see [Knowledge Base Article: SAP Authorization Objects](knowledge-base/sap-authority-objects.md/#table)
+- A [connection to an SAP system](#create-sap-connections) is available. 
+- The SAP user of the SAP connection has sufficient user rights, see [Knowledge Base Article: SAP Authorization Objects](knowledge-base/sap-authority-objects.md/#table)
 - A [connection to a destination](#create-azure-blob-storage-connections) is available.
+-->
 
-Use the following endpoint to create a new extraction: 
+Before creating an extraction, make sure the SAP user used in the SAP connection has sufficient user rights to access tables, see [Knowledge Base Article: SAP Authorization Objects](knowledge-base/sap-authority-objects.md/#table).
+
+Use the following endpoint to create a new table extraction: 
 
 ``` HTTP
 POST /v0/extractions/table/{name}
@@ -295,7 +303,7 @@ POST /v0/extractions/table/{name}
 	Content-Type: application/json
 	Content-Length: 190
 	{
-	"Table": "MARA(1)",
+	"Table": "MARA",
 	"Where": "MATNR = 000000000001",
 	"Source": "s4hana",
 	"Destination": "azure",
@@ -309,9 +317,9 @@ POST /v0/extractions/table/{name}
     [Content-Type: application/json]
     [Content-Length: 190]
 
-#### Properties of Table extractions
+#### Properties of Table Extractions
 
-The http(s) request body for creating table extractions supports the following settings:
+The HTTP request body for creating table extractions supports the following settings:
 	
 | Property | Description | Required |
 |-----------|------------|----------|
@@ -324,35 +332,62 @@ The http(s) request body for creating table extractions supports the following s
 | **FunctionModule** | Name of the function module that is used to extract SAP tables. If omitted, the SAP standard function module *RFC_READ_TABLE* is used. The installation of */THEO/READ_TABLE* is recommended. For more information, see [Function Module for Tables](knowledge-base/custom-function-module-for-table-extraction.md). | No |
 
 
-### Run Extractions (asynchronous)
+## Run Extractions
 
-Runs the extraction of name `$NAME` and waits for it. `rows` is an optional parameter used to specify how
-many rows should be extracted at most. The HTTP response head will be returned as soon as the server
-receives the first package. Any issues before that will result in a 4XX or 5XX status code.
-Header X-XU-Timestamp contains the starting timestamp of the extraction. It is guaranteed to be unique
-and can be used to query status information and logs of the extraction.
-The response body of the extraction will contain the extraction log.
+Extractions are triggered by an HTTP request and executed on the web server.
+Extractions can be started either synchronous or asynchronous. 
+The response of an extraction run contains the following information:
+
+| Response | Description |
+|----------|-------------|
+| HTTP status code | The HTTP status code 200 indicates a successful extraction call. It does not indicate a successful execution of the extraction. The HTTP status code 404 indicates that the called extraction does not exist. Detailed information can be found in the log of the web service. |
+| HTTP header | Shows the timestamp of the extraction, e.g., X-XU-Timestamp: 2025-01-24_19:03:09.971. {==The timestamp is guaranteed to be unique and can be used to query status information and logs of the extraction.==} |
+| HTTP response body | The response body of the extraction contains the extraction log. |
+
+For information, refer to the [API Reference](api-reference.md).
+
+!!! note 
+	The status code 200 indicates a successful extraction call. It does not indicate a successful execution of the extraction.
+
+
+### :material-arrow-right-thin: Synchronous Extractions
+
+When running extractions synchronously, the HTTP response head is returned as soon as the server receives the first data package. 
+Use the following endpoint to run an extraction and wait for the result: 
 
 === ":material-file-document-outline: example"
 	```http
-	GET /run/{name}?rows=10 HTTP/1.1
+	GET /run/{name} HTTP/1.1
 	Host: localhost:1337
 	```
 
 @@@ GET http://localhost:1337/run{name}/
 
-### Run Extractions (synchronous)
+!!! note
+	Any issue that occure before the first data package is received, result in a 4XX or 5XX status code.
 
-Starts the extraction of name $NAME. The request completes immediately after initializing the extraction.
-Header X-XU-Timestamp contains the starting timestamp of the extraction. It is guaranteed to be unique
-and can be used to query status information and logs of the extraction.
-Status code 200 may be returned even if the extraction runs into an error early. Due to immediate availability
-of the timestamp, status information can be query through dedicated requests.
+
+### :material-shuffle-disabled: Asynchronous Extractions
+
+When running extractions synchronously, the request immediately returns the HTTP response head.
+{== Status information can be queried using the timestamp in the header.==}
+Use the following endpoint to run an extraction without waiting for the results: 
 
 === ":material-file-document-outline: example"
 	```http
-	GET /start/{name}?rows=10 HTTP/1.1
+	GET /start/{name} HTTP/1.1
 	Host: localhost:1337
 	```
 
 @@@ GET http://localhost:1337/start{name}/
+
+
+### Extraction Parameters
+
+When running extractions, the following query parameters are supported:
+
+| Parameter	| Description | Required |
+|-----------|-------------|----------|
+| rows      | Set a maximum number of rows to be extracted. 0 extracts all data. You can use this option to perform tests with a small amount of data by entering a row limit of e.g., 100. | No |
+| whereClause | WHERE clause to filter table records. For more information, see [WHERE Clause Syntax](knowledge-base/where-clause.md). | No |
+| packageSize | The extracted data is split into packages of the defined size. The default value is 50000 lines. A package size between 20000 and 50000 is advisable for large amounts of data. 0 means no packaging. Not using packaging can lead to an RFC timeout for large data extractions. | No |
