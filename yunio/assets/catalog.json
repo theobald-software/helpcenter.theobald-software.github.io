@@ -1,5 +1,16 @@
 [
   {
+    "Version": "2025.1.30.9",
+    "LegacyReleaseDate": "2025-01-30 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "YunIO",
+        "Component": "General",
+        "Message": "Fixed an issue where starting transactions would not work (Bug introduced in 2024.10.30.34)"
+      }
+    ]
+  },
+  {
     "Version": "2025.1.28.1",
     "LegacyReleaseDate": "2025-01-28 00:00:00Z",
     "Changes": [
