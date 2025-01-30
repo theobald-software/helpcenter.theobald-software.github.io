@@ -22,7 +22,6 @@ hide:
 - [SAP Access with {{ productName }} and Powershell](sap-access-with-xtract-universal-and-powershell.md)
 - [Run {{ productName }} in a VM on AWS EC2](run-xu-in-aws.md)
 - [Target Principal Field (TPN)](target-principal-TPN.md)
-- [Proxy Server Settings in {{ productName }}](proxy-server-settings.md)
 - [SharePoint Lists Notification using Intelligent Merge Procedure](sharepoint-lists-notification-using-intelligent-merge-procedure.md)
 
 
