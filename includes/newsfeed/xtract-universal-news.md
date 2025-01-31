@@ -15,7 +15,7 @@
 
     ---
 
-    Join our webinar on [2025-02-27 - 10:00AM CET for German speakers](https://theobald-software.com/optimieren-sie-ihr-reisekostenmanagement-mit-sap-concur-und-alteryx/) and on [2025-03-06 - 11:45PM PDT for English speakers](https://theobald-software.com/en/optimize-your-travel-expense-management-with-sap-concur-and-alteryx/) to learn how to optimize your travel expense management with SAP Concur and Alteryx.
+    Join our webinar on [2025-02-27 - 10:00AM CET](https://theobald-software.com/optimieren-sie-ihr-reisekostenmanagement-mit-sap-concur-und-alteryx/)  for German speakers and on [2025-03-06 - 11:45PM PDT](https://theobald-software.com/en/optimize-your-travel-expense-management-with-sap-concur-and-alteryx/)  for English speakers to learn how to optimize your travel expense management with SAP Concur and Alteryx.
 
     ---
 
