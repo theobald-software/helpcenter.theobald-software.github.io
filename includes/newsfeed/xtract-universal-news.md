@@ -1,6 +1,26 @@
 <div class="grid cards" markdown>
 
 
+-   **:material-video: Webinar: Microsoft Fabric Open Mirroring**
+
+    ---
+
+    [Join our webinar](https://theobald-software.com/optimierung-der-sap-datenintegration-mit-microsoft-fabric-open-mirroring-und-xtract-universal/) on 2025-03-13 - 10:00AM CET to learn how to optimize your data integration with Microsoft Open Mirroring and Xtract Universal. This webinar is for German speakers, but there will be an English webinar soon.
+
+    ---
+
+    :material-clock-time-two-outline: 2025-03-13
+
+-   **:material-video: Webinar: SAP Concur and Alteryx**
+
+    ---
+
+    Join our webinar on [2025-02-27 - 10:00AM CET for German speakers](https://theobald-software.com/optimieren-sie-ihr-reisekostenmanagement-mit-sap-concur-und-alteryx/) and on [2025-03-06 - 11:45PM PDT for English speakers](https://theobald-software.com/en/optimize-your-travel-expense-management-with-sap-concur-and-alteryx/) to learn how to optimize your travel expense management with SAP Concur and Alteryx.
+
+    ---
+
+    :material-clock-time-two-outline: 2025-02-27
+
 -   **:material-file-document-outline: How to Parse Reports**
 
     ---
