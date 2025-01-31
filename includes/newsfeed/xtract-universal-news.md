@@ -21,6 +21,16 @@
 
     :material-clock-time-two-outline: 2025-02-27
 
+-   **:material-alert-decagram: OData Connectivity Added (Beta)**
+
+    ---
+
+    The new [OData connectivity](documentation/sap-connection.md/#connect-to-sap) enables communication to SAP on-premises and SAP cloud systems to consume data provided by SAP OData services. The [OData component](documentation/odata/index.md) is a beta release for upcoming features.
+
+    ---
+
+    :material-clock-time-two-outline: 2025-01-27
+
 -   **:material-file-document-outline: How to Parse Reports**
 
     ---
