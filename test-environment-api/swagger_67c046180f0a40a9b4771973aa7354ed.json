@@ -1,19 +1,17 @@
 {
   "swagger": "2.0",
   "info": {
-    "description": "Xtract Core is a whitelabel API server solution for creating and configuring data extractions from SAP systems. Create connections to SAP source systems and target environments and turn these connections into extractions...",
-    "version": "1.0.7",
+    "description": "Xtract Core is a whitelabel Web API server for developing your own SAP interfaces. You can use the Xtract Core API to extract data from SAP Tables and write them to various supported target environments.",
+    "version": "1.0.0",
     "title": "Xtract Core"
   },
-  "host": "localhost",
-  "basePath": "/v0",
   "tags": [
     {
       "name": "connections",
       "description": "Everything about your connections to data sources and target environments.",
       "externalDocs": {
         "description": "Find out more",
-        "url": "https://helpcenter.theobald-software.com/xtract-core"
+        "url": "https://helpcenter.theobald-software.com/xtract-core/getting-started/#connections"
       }
     },
     {
@@ -21,12 +19,20 @@
       "description": "Everything about your data extractions.",
       "externalDocs": {
         "description": "Find out more",
-        "url": "https://helpcenter.theobald-software.com/xtract-core"
+        "url": "https://helpcenter.theobald-software.com/xtract-coregetting-started/#extractions"
+      }
+    },
+    {
+      "name": "run",
+      "description": "Everything about running extractions.",
+      "externalDocs": {
+        "description": "Find out more",
+        "url": "https://helpcenter.theobald-software.com/xtract-coregetting-started/#run-extractions"
       }
     }
   ],
   "paths": {
-    "/connections/": {
+    "/v0/connections/": {
       "get": {
         "tags": [
           "connections"
@@ -39,7 +45,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Here you go.",
+            "description": "Operation successful",
             "schema": {
               "type": "object",
               "properties": {
@@ -65,7 +71,7 @@
         }
       }
     },
-    "/connections/sap/{name}": {
+    "/v0/connections/sap/{name}": {
       "post": {
         "tags": [
           "connections"
@@ -73,11 +79,8 @@
         "summary": "Create a connection to an SAP system.",
         "description": "",
         "operationId": "addsap",
-        "consumes": [
-          "application/json"
-        ],
         "produces": [
-          "string"
+          "text/plain"
         ],
         "parameters": [
           {
@@ -90,24 +93,28 @@
           {
             "in": "body",
             "name": "body",
-            "description": "Connection settings of the SAP system. Values can be found in the *Properties* of the SAP Logon Pad or they can be requested from the SAP Basis team.",
+            "description": "Connection settings of the SAP system. Values can be found in the *Properties* of the SAP Logon Pad or they can be requested from the SAP Basis team.<br><br>\n\n | Property | Description | Required |\n |-----------|------------|----------|\n | **Host**     | Host name or IP address of the SAP application server (Property *Host*) | Yes |\n | **Client**    | A three-digit number of the SAP client between 000 and 999, e.g., 800. | Yes |\n | **InstanceNo**    |  A two-digit number between 00 and 99 (Property *SystemNumber*). | Yes |\n | **Language**     | The logon language for the SAP system, e.g., 'EN' for English or 'DE' for German. | Yes |\n | **User**    | Name of an SAP dialog user. | Yes |\n | **Password**    |  Password of the SAP user. | Yes |\n",
             "required": true,
             "schema": {
-              "$ref": "#/definitions/Sap"
+              "$ref": "#/definitions/SAP"
             }
           }
         ],
         "responses": {
           "200": {
-            "description": "Here you go."
+            "description": "Operation successful",
+            "schema": {
+              "type": "string",
+              "example": "The connection was created successfully. Connected to SAP host 'sap-erp-as05.example.com', instance 00, release 756, codepage 4103, user 'ALICE'"
+            }
           },
           "500": {
-            "description": "That didn't work."
+            "description": "An error occured. The response body contains different error messages depending on the failure cause. All errors return a 500 status code."
           }
         }
       }
     },
-    "/connections/sap/{name}/test": {
+    "/v0/connections/sap/{name}/test": {
       "get": {
         "tags": [
           "connections"
@@ -119,7 +126,7 @@
           "application/json"
         ],
         "produces": [
-          "string"
+          "text/plain"
         ],
         "parameters": [
           {
@@ -132,15 +139,19 @@
         ],
         "responses": {
           "200": {
-            "description": "The connection was tested and created successfully."
+            "description": "Operation successful",
+            "schema": {
+              "type": "string",
+              "example": "Connected to SAP host 'sap-erp-as05.example.com', instance 00, release 756, codepage 4103, user 'ALICE'"
+            }
           },
           "404": {
-            "description": "The connection does not exist"
+            "description": "Indicates that the connection does not exist"
           }
         }
       }
     },
-    "/connections/azureblob/{name}": {
+    "/v0/connections/azureblob/{name}": {
       "post": {
         "tags": [
           "connections"
@@ -152,7 +163,7 @@
           "application/json"
         ],
         "produces": [
-          "string"
+          "text/plain"
         ],
         "parameters": [
           {
@@ -165,7 +176,7 @@
           {
             "in": "body",
             "name": "body",
-            "description": "Connection settings of the Azure Blob storage.",
+            "description": "Connection settings of the Azure Blob storage.<br><br>\n\n | Property | Description | Required |\n |-----------|------------|----------|\n | **Account**     | Name of the storage account. Do not enter the full URL. | Yes |\n | **Container**    | Name of an existing Azure storage container. | Yes |\n | **Token**    |  The [Shared Access Signature (SAS) token](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/authentication/create-sas-tokens?view=doc-intel-4.0.0&tabs=azure-portal#use-the-azure-portal) of the storage container. | Yes |\n",
             "required": true,
             "schema": {
               "$ref": "#/definitions/Azure"
@@ -174,15 +185,19 @@
         ],
         "responses": {
           "200": {
-            "description": "Here you go."
+            "description": "Operation successful",
+            "schema": {
+              "type": "string",
+              "example": "The connection was tested and created succesfully."
+            }
           },
           "500": {
-            "description": "That didn't work."
+            "description": "An error occured. The response body contains different error messages depending on the failure cause. All errors return a 500 status code."
           }
         }
       }
     },
-    "/connections/{name}": {
+    "/v0/connections/{name}": {
       "delete": {
         "tags": [
           "connections"
@@ -204,15 +219,19 @@
         ],
         "responses": {
           "200": {
-            "description": "The connection was deleted successfully."
+            "description": "Operation successful",
+            "schema": {
+              "type": "string",
+              "example": "The connection was deleted successfully."
+            }
           },
           "404": {
-            "description": "Method not allowed."
+            "description": "Indicates that the connection does not exist."
           }
         }
       }
     },
-    "/connections/sap/{name}/tables": {
+    "/v0/connections/sap/{name}/tables": {
       "get": {
         "tags": [
           "connections"
@@ -242,7 +261,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Successful response",
+            "description": "Operation successful",
             "schema": {
               "type": "array",
               "items": {
@@ -259,16 +278,19 @@
                 }
               }
             }
+          },
+          "500": {
+            "description": "An error occured. The response body contains different error messages depending on the failure cause. All errors return a 500 status code."
           }
         }
       }
     },
-    "/connections/sap/{name}/tables/{table}": {
+    "/v0/connections/sap/{name}/tables/{table}": {
       "get": {
         "tags": [
           "connections"
         ],
-        "summary": "Get name, description and type information of all columns in an SAP table.",
+        "summary": "Get name, description and data type of all columns in an SAP table.",
         "description": "",
         "operationId": "metatable",
         "produces": [
@@ -292,7 +314,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Successful response",
+            "description": "Operation successful",
             "schema": {
               "type": "object",
               "properties": {
@@ -324,12 +346,12 @@
             }
           },
           "500": {
-            "description": "That didn't work"
+            "description": "An error occured. The response body contains different error messages depending on the failure cause. All errors return a 500 status code."
           }
         }
       }
     },
-    "/extractions/": {
+    "/v0/extractions/": {
       "get": {
         "tags": [
           "extractions"
@@ -342,7 +364,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Here you go.",
+            "description": "Operation successful",
             "schema": {
               "type": "object",
               "properties": {
@@ -412,11 +434,14 @@
                 }
               }
             }
+          },
+          "500": {
+            "description": "An error occured. The response body contains different error messages depending on the failure cause. All errors return a 500 status code."
           }
         }
       }
     },
-    "/extractions/table/{name}": {
+    "/v0/extractions/table/{name}": {
       "post": {
         "tags": [
           "extractions"
@@ -441,7 +466,7 @@
           {
             "in": "body",
             "name": "body",
-            "description": "Extraction settings for the table extraction. The property *Columns* is optional. If omitted, all columns will be selected. For more information, see https://helpcenter.theobald-software.com/xtract-core.",
+            "description": "Extraction settings for the table extraction.<br><br>\n\n | Property | Description | Required |\n |-----------|------------|----------|\n | **Table**     | Name of the SAP table you want to extract data from. | Yes |\n | **Where**    | WHERE clause to filter table records. | Yes |\n | **Source**    | Name of an existing SAP connection. | Yes |\n | **Destination**| Name of a destination connection, e.g., to an Azure Blob Storage container. | Yes |\n | **Columns** | Define which SAP table columns to extract. If omitted, all columns are extracted. | No |\n | **ResultName** | Name of the new table in the target environment. If omitted, the name of the extration is also the name of the new table. | No |\n | **FunctionModule** | Name of the function module that is used to extract SAP tables. If omitted, the SAP standard function module *RFC_READ_TABLE* is used. The installation of */THEO/READ_TABLE* is recommended. For more information, see [Function Module for Tables](knowledge-base/custom-function-module-for-table-extraction.md). | No |\n",
             "required": true,
             "schema": {
               "$ref": "#/definitions/Table"
@@ -450,15 +475,19 @@
         ],
         "responses": {
           "200": {
-            "description": "The extraction was created successfully."
+            "description": "Operation successful",
+            "schema": {
+              "type": "string",
+              "example": "The extraction was created successfully."
+            }
           },
           "500": {
-            "description": "That didn't work."
+            "description": "An error occured. The response body contains different error messages depending on the failure cause. All errors return a 500 status code."
           }
         }
       }
     },
-    "/extractions/{name}": {
+    "/v0/extractions/{name}": {
       "delete": {
         "tags": [
           "extractions"
@@ -467,7 +496,7 @@
         "description": "",
         "operationId": "deleteextraction",
         "produces": [
-          "string"
+          "text/plain"
         ],
         "parameters": [
           {
@@ -480,17 +509,135 @@
         ],
         "responses": {
           "200": {
-            "description": "The extraction was deleted successfully."
+            "description": "Operation successful",
+            "schema": {
+              "type": "string",
+              "example": "The extraction was deleted successfully."
+            }
           },
           "404": {
-            "description": "Method not allowed."
+            "description": "Indicates that tthe extraction does not exist."
+          }
+        }
+      }
+    },
+    "/run/{name}": {
+      "get": {
+        "tags": [
+          "run"
+        ],
+        "summary": "Run an extraction and wait for the result.",
+        "description": "TThe `run` endpoint runs an extractions synchronously and returns the HTTP response head as soon as the server receives the first data package. The response header contains the timestamp of the extraction and the response body contains the logs of the extraction.",
+        "operationId": "runextraction",
+        "produces": [
+          "text/csv"
+        ],
+        "parameters": [
+          {
+            "name": "name",
+            "in": "path",
+            "description": "Name of the extraction you want to execute.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "packageSize",
+            "in": "query",
+            "description": "The extracted data is split into packages of the defined size. The default value is 50000 lines. A package size between 20000 and 50000 is advisable for large amounts of data. 0 means no packaging. Not using packaging can lead to an RFC timeout for large data extractions.",
+            "required": false,
+            "type": "number",
+            "x-example": "?packageSize=1000"
+          },
+          {
+            "name": "rows",
+            "in": "query",
+            "description": "Set a maximum number of rows to be extracted. 0 extracts all data. You can use this option to perform tests with a small amount of data by entering a row limit of e.g., 100.",
+            "required": false,
+            "type": "number",
+            "x-example": "?rows=10"
+          },
+          {
+            "name": "whereClause",
+            "in": "query",
+            "description": "WHERE clause to filter table records. For more information, see [WHERE Clause Syntax](https://helpcenter.theobald-software.com/xtract-core/knowledge-base/where-clause).",
+            "required": false,
+            "type": "string",
+            "x-example": "?whereClause=ERSDA GT '2025'"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Indicates a successful extraction call. It does not indicate a successful execution of the extraction."
+          },
+          "404": {
+            "description": "Indicates that the extraction does not exist."
+          },
+          "500": {
+            "description": "An error occured. The response body contains different error messages depending on the failure cause. All errors return a 500 status code."
+          }
+        }
+      }
+    },
+    "/start/{name}": {
+      "get": {
+        "tags": [
+          "run"
+        ],
+        "summary": "Run an extraction without waiting for the result.",
+        "description": "The `start` endpoint runs an extraction asynchronously and immediately returns the HTTP response head. The response header contains the timestamp of the extraction and the response body contains the logs of the extraction.",
+        "operationId": "startextraction",
+        "produces": [
+          "text/csv"
+        ],
+        "parameters": [
+          {
+            "name": "name",
+            "in": "path",
+            "description": "Name of the extraction you want to execute.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "packageSize",
+            "in": "query",
+            "description": "The extracted data is split into packages of the defined size. The default value is 50000 lines. A package size between 20000 and 50000 is advisable for large amounts of data. 0 means no packaging. Not using packaging can lead to an RFC timeout for large data extractions.",
+            "required": false,
+            "type": "number",
+            "x-example": "?packageSize=1000"
+          },
+          {
+            "name": "rows",
+            "in": "query",
+            "description": "Set a maximum number of rows to be extracted. 0 extracts all data. You can use this option to perform tests with a small amount of data by entering a row limit of e.g., 100.",
+            "required": false,
+            "type": "number",
+            "x-example": "?rows=10"
+          },
+          {
+            "name": "whereClause",
+            "in": "query",
+            "description": "WHERE clause to filter table records. For more information, see [WHERE Clause Syntax](https://helpcenter.theobald-software.com/xtract-core/knowledge-base/where-clause).",
+            "required": false,
+            "type": "string",
+            "x-example": "?whereClause=ERSDA GT '2025'"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Indicates a successful extraction call. It does not indicate a successful execution of the extraction."
+          },
+          "404": {
+            "description": "Indicates that the extraction does not exist."
+          },
+          "500": {
+            "description": "An error occured. The response body contains different error messages depending on the failure cause. All errors return a 500 status code."
           }
         }
       }
     }
   },
   "definitions": {
-    "Sap": {
+    "SAP": {
       "type": "object",
       "properties": {
         "Host": {
@@ -526,13 +673,13 @@
           "type": "string",
           "example": "my-account"
         },
-        "Token": {
-          "type": "string",
-          "example": "sv=YYYY-MM-DD&ss=...%3D"
-        },
         "Container": {
           "type": "string",
           "example": "container"
+        },
+        "Token": {
+          "type": "string",
+          "example": "sv=YYYY-MM-DD&ss=...%3D"
         }
       }
     },
