@@ -7,7 +7,7 @@
 ### About OData Services
 
 The {{ odata }} {{ component }} in {{ productName }} consumes the data provided by SAP OData services.
-You can build OData services in SAP using the [SAP Gateway Service Builder](https://help.sap.com/docs/SAP_NETWEAVER_AS_ABAP_751_IP/68bf513362174d54b58cddec28794093/cddd22512c312314e10000000a44176d.html).
+OData services can be build in SAP using the [SAP Gateway Service Builder](https://help.sap.com/docs/SAP_NETWEAVER_AS_ABAP_751_IP/68bf513362174d54b58cddec28794093/cddd22512c312314e10000000a44176d.html).
 
 The OData (Open Data) protocol defines a set of rules to create, edit and consume resources through RESTful interfaces (HTTP requests).
 Furthermore, the OData protocol describes the data and the data model, meaning the data has its respective metadata, including the following items:
