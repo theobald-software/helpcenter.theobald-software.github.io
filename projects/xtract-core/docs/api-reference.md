@@ -4,6 +4,7 @@ description: Learn how to use the Xtract Core endpoints.
 hide:
   - navigation
   - tags
+  - toc
 ---
 
 <style>
@@ -13,4 +14,4 @@ hide:
   }
 </style>
 
-<swagger-ui src="swagger.yaml"/>
+<swagger-ui src="https://helpcenter.theobald-software.com/xtract-core/swagger.json"/>

@@ -3,7 +3,7 @@
 
 An SAP transport request for the installation of the function module is provided in the installation directory 
 {% if page.meta.product == "xtract-core" %}of Xtract Core in the `Transports` folder.{% else %}: `{{ installationDir }}\ABAP\`.<br>{% endif %}
-Transport requests are imported into SAP by your SAP Basis team. For more information, see [Knowledge Base: Import an SAP Transport Request](../../knowledge-base/import-an-sap-transport-request.md).
+Transport requests are imported into SAP by your SAP Basis team. For more information, see [Knowledge Base: Import an SAP Transport Request](/{{ product }}/knowledge-base/import-an-sap-transport-request/).
 
 {% if page.meta.product != "xtract-core" %}
 !!! note
@@ -46,7 +46,7 @@ When importing the transport requests on older SAP releases a syntax error may o
 
 *****
 #### Related Links
-- [Knowledge Base: Import an SAP Transport Request](../../knowledge-base/import-an-sap-transport-request.md)
+- [Knowledge Base: Import an SAP Transport Request](/{{ product }}/knowledge-base/import-an-sap-transport-request/)
 {% if page.meta.product != "yunio" %}- [{{ table }} {{ Component }}](../table/index.md){% else %}- [{{ table }} {{ Component }}](../tables-and-views/index.md){% endif %}
 
 {% endif %}

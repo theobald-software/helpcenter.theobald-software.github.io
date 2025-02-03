@@ -6,7 +6,7 @@ hide:
   - path
 ---
 
-![img](../assets/images/logos/theo-thumbs.png){ .lg .middle width="30px"} This section contains in-depth articles and sample use cases for Xtract Core.
+![img](../assets/images/logos/theo-thumbs.png){ .lg .middle width="30px"} This section contains in-depth articles about the usage of Xtract Core.
 
 ### General
 
@@ -42,7 +42,6 @@ hide:
 
 <!--
 - [Delta Mechanism of Table CDC](table-cdc-mechanism.md)
-- [Set Up OAuth 2.0 for the Google Cloud Storage Destination](google-cloud-storage-oauth.md)
 - [Install THEO_CDC_ECC or THEO_CDC_S4 for Table CDC Extractions](custom-function-module-for-tablecdc.md)
 
 ### :component-report: Report

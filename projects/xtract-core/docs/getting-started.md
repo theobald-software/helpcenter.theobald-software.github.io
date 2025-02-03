@@ -22,6 +22,8 @@ The API allows you to:
 - create reusable data extractions 
 - run data extractions
 
+
+
 ## Prerequisites
 
 - Contact the Theobald Software [sales team](mailto:sales@theobald-software.com?subject=Requesting%20Xtract%20Core%20Trial&body=I'd%20like%20to%20receive%20a%202-month%20demo%20version%20of%20Xtract%20Core.) to get a 2 month trial version of Xtract Core. <!-- or download the latest version from the [customer portal](https://my.theobald-software.com/).-->
@@ -32,7 +34,6 @@ For more information, see [Knowledge Base: Function Module for Tables](knowledge
 
 For more information on system requirements and supported SAP systems, see [Knowledge Base: Requirements](knowledge-base/requirements.md).
 
-### Supported Connections
 
 <div class="grid cards" markdown>
 
@@ -66,7 +67,14 @@ Follow the steps below to install the Xtract Core Windows service:
 	```
 4. Make sure that the Xtract Core service "SAP Connector" is running on your Windows system and that the default port {{ port }} is not blocked by the firewall.
 
-After the installation, the installation directory contains the following files:
+The Xtract Core Windows service can now receive HTTP requests.
+
+
+
+## Configuration
+
+The service and network settings of Xtract Core can be configured using the files in the installaltion directory of Xtract Core.
+The installation directory contains the following files:
 
 | Filename	| Description |
 |------------|--------------|
@@ -82,11 +90,10 @@ After the installation, the installation directory contains the following files:
 |  worker.exe |	Application that handles HTTP requests. worker.exe can be renamed (make sure to update the content of listener.json). | 
 <!--|  XtractUniversalLicense.json |	License file with information about the server, the component and runtime. | -->
 
-## Configuration
 
 ### Service Settings
 
-Change the name, display name and description of the service in the `theobald.service.definition.json` file.
+Change the name and description of the Windows service in the `theobald.service.definition.json` file.
 
 ```json title="theobald.service.definition.json"
 {
@@ -122,7 +129,7 @@ Change the network settings (e.g., port number) of the web server in the `listen
 
 ### TLS Configuration
 
-Enable Transport Layer Security (TLS) to use secured https communication when making endpoints:
+Enable Transport Layer Security (TLS) to use secured HTTPS communication for the web server:
 
 1. Make sure to have a valid X.509 certificate. If the certificate is not listed in the Windows certificate store, [install an X.509 certificate](knowledge-base/install-x.509-certificate.md).
 2. Open the following file in the Xtract Core installation directory: `config/servers/tls.json`. If the directory and file do not exist, create them.
@@ -131,17 +138,18 @@ Enable Transport Layer Security (TLS) to use secured https communication when ma
 	{
 		"tlsEnabled": true,
 		"certificate": {
-		"subjectAltName": "HUNT.theobald.local",
+		"subjectAltName": "BOB.theobald.local",
 		"issuer": "CN=Theobald CA, DC=theobald, DC=local",
 		"notAfter": "20250717T152041.000Z",
 		"thumbprint": "0C32EEE1053DA57E88E6AE22832DFB13775250F9"
 		}
 	}
 	```
-4. Restart the listener by restarting the Xtract Core service.
-The listener then listens on the port configured in its config securePort.
+4. Restart the Xtract Core service to restart the listener.
 
-endpoints now use the https protocol. The default port for the secured communication is {{ port_https }}.
+The web server now uses the HTTPS protocol for communication. 
+The default port for secured communication is {{ port_https }}.
+You can change the port in the `listener.json` file using the property *securePort*, see [Network Settings](#network-settings).
 
 ## Connections
 
@@ -165,7 +173,7 @@ POST /v0/connections/sap/{name}
 	POST /v0/connections/sap/{name} HTTP/1.1
 	Host: localhost:1337
 	Content-Type: application/json
-	Content-Length: 142
+	Content-Length: 109
 	{
 	"Host": "sap-erp-as05.example.com(1)",
 	"User": "alice",
@@ -187,18 +195,23 @@ POST /v0/connections/sap/{name}
 
 When this endpoint is called, the Xtract Core web server tries to establish a connection to the SAP system with the given credentials before saving the connection.
 
-<!--
-	Replace `{name}` with a name for the source connection.
-	Allowed characters are [a-zA-Z0-9]. The name must not start with a number.
-	Because the names of extractions and connections map to a directory on the file system, names are unique and not case sensitive.
-
-
-	The `Content-Length` property in the header represents the size of the request body in bytes.
-	If you have wc (word count) installed, you can use command line tools to get the correct size.
+!!! tip
+	The `Content-Length` property in the header represents the byte size of the JSON string in the request body.
+	When using curl, the `Content-Length` can be determined automatically. The `-v` (verbose) option returns the request details, including `Content-Length`. 
+	<!--
 	Example:
-	```bash
-	echo -n '{"Host": "sap-erp-as05.example.com", "User": "alice", "Password": "myPassword", "Client": "800", "Language": "en", "InstanceNo": 0}' | wc -c
+	```curl
+	curl -X POST -H "Content-Type: application/json" -d "{"Host": "sap-erp-as05.example.com", "User": "alice", "Password": "myPassword", "Client": "800", "Language": "en", "InstanceNo": 0}" -v localhost:1337
 	```
+	-->
+
+	
+<!--
+Replace `{name}` with a name for the source connection.
+Allowed characters are [a-zA-Z0-9]. The name must not start with a number.Because the names of extractions and connections map to a directory on the file system, names are unique and not case sensitive.
+
+The `Content-Length` property in the header represents the size of the request body in bytes.
+
 
 
 #### Test the SAP Connection
@@ -260,6 +273,10 @@ POST /v0/connections/azureblob/{name}
 
 When this endpoint is called, the Xtract Core web server tries to establish a connection to Azure with the given credentials before saving the connection.
 
+!!! tip
+	The `Content-Length` property in the header represents the byte size of the JSON string in the request body.
+	When using curl, the `Content-Length` can be determined automatically. The `-v` (verbose) option returns the request details, including `Content-Length`. 
+	
 <!--
 ### Create CSV Flat File Connections
 
@@ -317,6 +334,10 @@ POST /v0/extractions/table/{name}
     [Content-Type: application/json]
     [Content-Length: 190]
 
+!!! tip
+	The `Content-Length` property in the header represents the byte size of the JSON string in the request body.
+	When using curl, the `Content-Length` can be determined automatically. The `-v` (verbose) option returns the request details, including `Content-Length`. 
+	
 #### Properties of Table Extractions
 
 The HTTP request body for creating table extractions supports the following settings:
@@ -341,7 +362,7 @@ The response of an extraction run contains the following information:
 | Response | Description |
 |----------|-------------|
 | HTTP status code | The HTTP status code 200 indicates a successful extraction call. It does not indicate a successful execution of the extraction. The HTTP status code 404 indicates that the called extraction does not exist. Detailed information can be found in the log of the web service. |
-| HTTP header | Shows the timestamp of the extraction, e.g., X-XU-Timestamp: 2025-01-24_19:03:09.971. {==The timestamp is guaranteed to be unique and can be used to query status information and logs of the extraction.==} |
+| HTTP header | Shows the timestamp of the extraction, e.g., X-XU-Timestamp: 2025-01-24_19:03:09.971. The timestamp is unique and can be used to query status information and logs of the extraction. |
 | HTTP response body | The response body of the extraction contains the extraction log. |
 
 For information, refer to the [API Reference](api-reference.md).
@@ -370,7 +391,7 @@ Use the following endpoint to run an extraction and wait for the result:
 ### :material-shuffle-disabled: Asynchronous Extractions
 
 When running extractions synchronously, the request immediately returns the HTTP response head.
-{== Status information can be queried using the timestamp in the header.==}
+Status information can be queried using the timestamp in the header.
 Use the following endpoint to run an extraction without waiting for the results: 
 
 === ":material-file-document-outline: example"

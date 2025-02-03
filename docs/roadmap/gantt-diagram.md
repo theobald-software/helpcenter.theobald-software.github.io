@@ -13,7 +13,7 @@ description: Showcase different designs for Gantt Diagram Roadmaps
 
 === "Rendered Gantt Diagram"
 
-	[gantt(https://kb.theobald-software.com/files/gantt-1.yaml)]
+	[gantt(gantt-1.yaml)]
 
 === "YAML Input Format"
 

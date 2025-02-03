@@ -8,6 +8,6 @@ hide:
   - toc
 ---
 
-{% include "newsfeed/yunio-news.md" %}
+{% include "newsfeed/xtract-core-news.md" %}
 
 ### 

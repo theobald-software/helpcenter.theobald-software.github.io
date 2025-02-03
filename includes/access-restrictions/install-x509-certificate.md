@@ -30,12 +30,12 @@ Make sure to have a TLS certificate issued by your IT network team considering t
 
 1. Import the certificate to the Windows Certificate Store using Microsoft Management Console (mmc).
 In the example shown, the server name is "TODD":
-![X509-MMC](../../assets/images/documentation/access-restriction/X509-MMC.png){:class="img-responsive"}
+![X509-MMC](/{{ product }}/assets/images/documentation/access-restriction/X509-MMC.png){:class="img-responsive"}
 2. Open **Server > Settings** from the main window of the Designer. <br>
-![security-manage-users](../../assets/images/documentation/access-restriction/server-settings_manage.png){:class="img-responsive"}
+![security-manage-users](/{{ product }}/assets/images/documentation/access-restriction/server-settings_manage.png){:class="img-responsive"}
 3. In the tab *Web Server*, click **[Select X.509 certificate]**. The window "Edit certificate location" opens.
 4. Select the X.509 certificate created for your machine under **Local Machine > Personal**.<br>
-![certificate-edit-location](../../assets/images/documentation/access-restriction/certificate-edit-location.png){:class="img-responsive"}
+![certificate-edit-location](/{{ product }}/assets/images/documentation/access-restriction/certificate-edit-location.png){:class="img-responsive"}
 5. Click **[OK]** to confirm your input. If prompted, restart the server.
 
 The certificate is  now available on your machine.

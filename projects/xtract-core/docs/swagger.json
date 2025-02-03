@@ -1,7 +1,7 @@
 {
   "swagger": "2.0",
   "info": {
-    "description": "Xtract Core is a whitelabel Web API server for developing your own SAP interfaces. You can use the Xtract Core API to extract data from SAP Tables and write them to various supported target environments.",
+    "description": "Xtract Core is a whitelabel Web API server for developing your own SAP interfaces. The Xtract Core API enables you to extract data from various SAP sytsems and write them to a target environment. For more information about Xtract Core, refer to the [Xtract Core HelpCenter](https://helpcenter.theobald-software.com/xtract-core/).",
     "version": "1.0.0",
     "title": "Xtract Core"
   },
@@ -86,7 +86,7 @@
           {
             "name": "name",
             "in": "path",
-            "description": "Name for the new SAP connection. Allowed characters are [a-zA-Z0-9]. The name must not start with a number. Because the names of connections map to a directory on the file system, names are unique and not case sensitive.",
+            "description": "Name for the new SAP connection. Allowed characters are uppercase and lowercase Latin letters (A–Z, a–z) and digits (0–9). The name must not start with a number. Names are unique and not case-sensitive, beecause the names of connections map to a directory on the file system.",
             "required": true,
             "type": "string"
           },
@@ -169,7 +169,7 @@
           {
             "name": "name",
             "in": "path",
-            "description": "Name for the new Azure Blob storage connection. Allowed characters are [a-zA-Z0-9]. The name must not start with a number. Because the names of connections map to a directory on the file system, names are unique and not case sensitive.",
+            "description": "Name for the new Azure Blob storage connection. Allowed characters are uppercase and lowercase Latin letters (A–Z, a–z) and digits (0–9). The name must not start with a number. Names are unique and not case-sensitive, beecause the names of connections map to a directory on the file system.",
             "required": true,
             "type": "string"
           },
@@ -256,7 +256,7 @@
             "description": "Define a search pattern for SAP tables. Wildcards (*) are supported. If *pattern* is omitted, this call may take very long and yield multiple MB of data.",
             "required": false,
             "type": "string",
-            "x-example": "?pattern=ma*"
+            "x-example": "ma*"
           }
         ],
         "responses": {
@@ -459,7 +459,7 @@
           {
             "name": "name",
             "in": "path",
-            "description": "Name for the new extraction. Allowed characters are [a-zA-Z0-9]. The name must not start with a number. Because the names of extractions map to a directory on the file system, names are unique and not case sensitive.",
+            "description": "Name for the new extraction. Allowed characters are uppercase and lowercase Latin letters (A–Z, a–z) and digits (0–9). The name must not start with a number. Names are unique and not case-sensitive, beecause the names of connections map to a directory on the file system.",
             "required": true,
             "type": "string"
           },
@@ -546,7 +546,7 @@
             "description": "The extracted data is split into packages of the defined size. The default value is 50000 lines. A package size between 20000 and 50000 is advisable for large amounts of data. 0 means no packaging. Not using packaging can lead to an RFC timeout for large data extractions.",
             "required": false,
             "type": "number",
-            "x-example": "?packageSize=1000"
+            "x-example": 1000
           },
           {
             "name": "rows",
@@ -554,7 +554,7 @@
             "description": "Set a maximum number of rows to be extracted. 0 extracts all data. You can use this option to perform tests with a small amount of data by entering a row limit of e.g., 100.",
             "required": false,
             "type": "number",
-            "x-example": "?rows=10"
+            "x-example": 10
           },
           {
             "name": "whereClause",
@@ -562,7 +562,7 @@
             "description": "WHERE clause to filter table records. For more information, see [WHERE Clause Syntax](https://helpcenter.theobald-software.com/xtract-core/knowledge-base/where-clause).",
             "required": false,
             "type": "string",
-            "x-example": "?whereClause=ERSDA GT '2025'"
+            "x-example": "ERSDA GT '2025'"
           }
         ],
         "responses": {
@@ -603,7 +603,7 @@
             "description": "The extracted data is split into packages of the defined size. The default value is 50000 lines. A package size between 20000 and 50000 is advisable for large amounts of data. 0 means no packaging. Not using packaging can lead to an RFC timeout for large data extractions.",
             "required": false,
             "type": "number",
-            "x-example": "?packageSize=1000"
+            "x-example": 1000
           },
           {
             "name": "rows",
@@ -611,7 +611,7 @@
             "description": "Set a maximum number of rows to be extracted. 0 extracts all data. You can use this option to perform tests with a small amount of data by entering a row limit of e.g., 100.",
             "required": false,
             "type": "number",
-            "x-example": "?rows=10"
+            "x-example": 10
           },
           {
             "name": "whereClause",
@@ -619,7 +619,7 @@
             "description": "WHERE clause to filter table records. For more information, see [WHERE Clause Syntax](https://helpcenter.theobald-software.com/xtract-core/knowledge-base/where-clause).",
             "required": false,
             "type": "string",
-            "x-example": "?whereClause=ERSDA GT '2025'"
+            "x-example": "ERSDA GT '2025'"
           }
         ],
         "responses": {
