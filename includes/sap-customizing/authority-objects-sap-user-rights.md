@@ -3,7 +3,7 @@ To use {{ productName }} you need an SAP connection user with sufficient authori
 Authorizations are assigned via authorization objects in SAP. 
 Redirect this page to your SAP Basis administrators to get the relevant authorization objects for your SAP connection user.  
 
-The authorizations in the section [General authorization objects](#general-authorization-objects) are required to establish an RFC SAP connection with the SAP application server. 
+The authorizations in the section [General authorization objects](#general-authorization-objects) are required to establish an SAP connection with the SAP application server. 
 The required authorizations for each {{ component }} are listed in their respective section.  
 
 
@@ -17,7 +17,7 @@ You can download the SAP profiles and upload them to your SAP system:
 ------------ | -------------
 [General Authorization Objects](#general-authorization-objects) | [ZXTGENERAL.SAP](site:assets/files/sap_roles/ZXTGENERAL.SAP)
 [BAPI](#bapi) | [ZXTBAPI.SAP](site:assets/files/sap_roles/ZXTBAPI.SAP)
-[BW Cube](#bw-cube-bw-query)|[ZXTBWCUBE.SAP](site:assets/files/sap_roles/ZXTBWCUBE.SAP) 
+[BW Cube](#bw-cube-bw-query)|[ZXTQUERY.SAP](site:assets/files/sap_roles/ZXTQUERY.SAP) 
 [Query](#query)|[ZXTQUERY.SAP](site:assets/files/sap_roles/ZXTQUERY.SAP) 
 [Table](#table) | [ZXTABLE.SAP](site:assets/files/sap_roles/ZXTABLE.SAP) 
 {% endif %}
@@ -31,12 +31,19 @@ You can download the SAP profiles and upload them to your SAP system:
 [Table](#table) | [ZXTABLE.SAP](site:assets/files/sap_roles/ZXTABLE.SAP) 
 {% endif %}
 
+{% if page.meta.product == "xtract-core" %}
+{{ Component }}  | SAP Role File
+------------ | -------------
+[General Authorization Objects](#general-authorization-objects) | [ZXTGENERAL.SAP](site:assets/files/sap_roles/ZXTGENERAL.SAP)
+[Table](#table) | [ZXTABLE.SAP](site:assets/files/sap_roles/ZXTABLE.SAP) 
+{% endif %}
+
 {% if page.meta.product == "xtract-universal" or page.meta.product == "board-connector" or page.meta.product == "xtract-is"%}
 {{ Component }}  | SAP Role File
 ------------ | -------------
 [General Authorization Objects](#general-authorization-objects) | [ZXTGENERAL.SAP](site:assets/files/sap_roles/ZXTGENERAL.SAP)
 [BAPI](#bapi) | [ZXTBAPI.SAP](site:assets/files/sap_roles/ZXTBAPI.SAP)
-[BW Cube](#bw-cube-bw-query)|[ZXTBWCUBE.SAP](site:assets/files/sap_roles/ZXTBWCUBE.SAP) 
+[BW Cube](#bw-cube-bw-query)|[ZXTQUERY.SAP](site:assets/files/sap_roles/ZXTQUERY.SAP) 
 [BW Hierarchy](#bw-hierarchy) |[ZXTBWHIERARCHY.SAP](site:assets/files/sap_roles/ZXTBWHIERARCHY.SAP)
 [ODP (Operational Data Provisioning)](#odp) |[ZXTODP.SAP](site:assets/files/sap_roles/ZXTODP.SAP)
 [OHS (Open Hub Services)](#ohs) |[ZXTOHS.SAP](site:assets/files/sap_roles/ZXTOHS.SAP)
@@ -52,7 +59,7 @@ You can download the SAP profiles and upload them to your SAP system:
 ------------ | -------------
 [General Authorization Objects](#general-authorization-objects) | [ZXTGENERAL.SAP](site:assets/files/sap_roles/ZXTGENERAL.SAP)
 [BAPI](#bapi) | [ZXTBAPI.SAP](site:assets/files/sap_roles/ZXTBAPI.SAP)
-[BW Cube](#bw-cube-bw-query)|[ZXTBWCUBE.SAP](site:assets/files/sap_roles/ZXTBWCUBE.SAP) 
+[BW Cube](#bw-cube-bw-query)|[ZXTQUERY.SAP](site:assets/files/sap_roles/ZXTQUERY.SAP) 
 [BW Hierarchy](#bw-hierarchy) |[ZXTBWHIERARCHY.SAP](site:assets/files/sap_roles/ZXTBWHIERARCHY.SAP)
 [ODP (Operational Data Provisioning)](#odp) |[ZXTODP.SAP](site:assets/files/sap_roles/ZXTODP.SAP)
 [Query](#query)|[ZXTQUERY.SAP](site:assets/files/sap_roles/ZXTQUERY.SAP) 
@@ -64,7 +71,7 @@ You can download the SAP profiles and upload them to your SAP system:
     If you still get an authorization error, ask SAP Basis to record an ST01-/ or SU53-authorization trace in SAP. This trace shows which authorizations objects are missing.
 
 ### General Authorization Objects
-The following authorization objects are required to establish an RFC connection to SAP. 
+The following authorization objects are required to establish a connection to SAP. 
 
 ``` title="Necessary SAP authorizations"
 S_RFC            RFC_TYPE=FUGR; RFC_NAME=SYST; ACTVT=16
@@ -74,6 +81,7 @@ S_RFC            RFC_TYPE=FUGR; RFC_NAME=RFC1; ACTVT=16
 
 [:material-download-circle: Download SAP profile for general authorization](site:assets/files/sap_roles/ZXTGENERAL.SAP){ .md-button .md-button--primary }
 
+{% if page.meta.product != "xtract-core" %}
 
 ### BAPI
 
@@ -121,7 +129,7 @@ Authorizations for the underlying Queries, Cubes, InfoAreas and analysis need to
 
 Alternatively, you can assign the SAP role template  ```S_RS_RREPU```. <br>
 
-[:material-download-circle: Download SAP profile for BW Cube / BW Query](site:assets/files/sap_roles/ZXTBWCUBE.SAP){ .md-button .md-button--primary }
+[:material-download-circle: Download SAP profile for BW Cube / BW Query](site:assets/files/sap_roles/ZXTQUERY.SAP){ .md-button .md-button--primary }
 
 
 {% if page.meta.product != "erpconnect" %}
@@ -226,6 +234,7 @@ Authorization can be granted using one of the following methods:
 - [Assign an authorization group](../../knowledge-base/authorize-access-to-specific-reports.md)
 
 {% endif %}
+{% endif %}
 
 ### Table
 
@@ -240,6 +249,7 @@ XXXX (stands for a placeholder) is the authorization group for the table. To det
 If the table is not listed, the authorization group is &NC&. For authorizing specific tables use authorization object S_TABU_NAM instead of S_TABU_DIS.
 </div>
 
+{% if page.meta.product != "xtract-core" %}
 {% if page.meta.product != "erpconnect" %}
 
 
@@ -368,6 +378,7 @@ XXXX (stands for a placeholder) is the authorization group for the source table.
 
 [:material-download-circle: Download SAP profile for DeltaQ Customizing Check](site:assets/files/sap_roles/DELTAQ_CUSTOMIZING_CHECK.SAP){ .md-button .md-button--primary }
 
+{% endif %}
 {% endif %}
 {% endif %}
 {% endif %}

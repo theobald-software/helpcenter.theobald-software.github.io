@@ -1,6 +1,7 @@
 # Build files
 site/
 projects/erpconnect/site/
+projects/xtract-core/site/
 projects/board-connector/site/
 projects/xtract-universal/site/
 projects/xtract-is/site/
