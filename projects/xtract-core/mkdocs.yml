@@ -130,7 +130,7 @@ plugins:
         - social:
             cards_layout: default
             cards_layout_options:
-              background_color: "#22A285"
+              background_color: "#F0A202"
 # Hook for Relative Links
 hooks:
   - overrides/site-urls.py
