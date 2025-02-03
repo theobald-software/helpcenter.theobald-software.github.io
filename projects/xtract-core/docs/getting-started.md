@@ -27,9 +27,9 @@ The API allows you to:
 ## Prerequisites
 
 - Contact the Theobald Software [sales team](mailto:sales@theobald-software.com?subject=Requesting%20Xtract%20Core%20Trial&body=I'd%20like%20to%20receive%20a%202-month%20demo%20version%20of%20Xtract%20Core.) to get a 2 month trial version of Xtract Core. <!-- or download the latest version from the [customer portal](https://my.theobald-software.com/).-->
-- Install the .NET8.0 Desktop Runtime, see [Download .NET8.0 Desktop Runtime from Microsoft](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-desktop-8.0.11-windows-x64-installer).
-- Download the SAP Netweaver library from the [SAP Software Download Center](https://me.sap.com/swdcnav/products/_APP=00200682500000001943&_EVENT=DISPHIER&HEADER=Y&FUNCTIONBAR=N&EVENT=TREE&NE=NAVIGATE&ENR=01200314690100002214&V=MAINT) and place it in the `C:\Windows\System32` folder of the machine that runs Xtract Core. 
-- Optional: Install the THEO/READ_TABLE function module in your SAP system to boost the capabilities of SAP table extractions. 
+- [Download the .NET8.0 Desktop Runtime from Microsoft](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-desktop-8.0.11-windows-x64-installer) and install it.
+- [Download the SAP Netweaver library from the SAP Software Download Center](https://me.sap.com/swdcnav/products/_APP=00200682500000001943&_EVENT=DISPHIER&HEADER=Y&FUNCTIONBAR=N&EVENT=TREE&NE=NAVIGATE&ENR=01200314690100002214&V=MAINT) and place it in the `C:\Windows\System32` folder of the machine that runs Xtract Core. 
+- Optional: Install the THEO/READ_TABLE function module in SAP to boost the capabilities of SAP table extractions. 
 For more information, see [Knowledge Base: Function Module for Tables](knowledge-base/custom-function-module-for-table-extraction.md).
 
 For more information on system requirements and supported SAP systems, see [Knowledge Base: Requirements](knowledge-base/requirements.md).
