@@ -388,7 +388,7 @@ Use the following endpoint to run an extraction and wait for the result:
 
 ### :material-shuffle-disabled: Asynchronous Extractions
 
-When running extractions synchronously, the request immediately returns the HTTP response head.
+When running extractions asynchronously, the request immediately returns the HTTP response head.
 Status information can be queried using the timestamp in the header.
 Use the following endpoint to run an extraction without waiting for the results: 
 
