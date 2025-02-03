@@ -1,2 +1,2 @@
 User-agent: *
-Disallow: /knowledge-base/change-data-capture-with-cdhdr
+Disallow: *
