@@ -11,7 +11,7 @@ tags:
 
 ![img](assets/images/logos/theo-thumbs.png){ .lg .middle width="30px"} This section shows how to install and set up {{ productName }} for the first time. 
 
-### What is Xtract Core?
+### About Xtract Core
 
 Xtract Core is a whitelabel Web API server for developing your own SAP interfaces.
 You can use the Xtract Core API to extract data from SAP Tables and write them to various supported target environments.
