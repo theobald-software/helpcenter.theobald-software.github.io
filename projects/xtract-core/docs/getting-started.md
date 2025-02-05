@@ -81,6 +81,7 @@ The installation directory contains the following files:
 |  private directory | Directory that contains keys to encrypt passwords. This directory is created when running an extraction for the first time. |
 |  Transport directory |	Directory that contains SAP function modules. Read the README.pdf within the directory for more information.  | 
 |  Cleaner.exe |	Application that deletes all cached results and log files.  | 
+|  ConfigConverter.exe | Application that converts extractions, connections, etc. from previous a version format to the new format. Use the ConfigConverter.exe when installing major releases and upgrading, e.g., from version 1.x to 2.x.|
 |  listener.exe |	Application that starts one worker per incomming connection. listener.exe can be renamed (make sure to rename the listener.json as well and update the content of theobald.service.definition.json). | 
 |  listener.json | Contains the default settings of the web server. listener.json can be renamed (make sure that the listener.json has the same name as the listener.exe). |
 |  service.exe |	Application that installs Xtract Core.  | 
@@ -91,7 +92,7 @@ The installation directory contains the following files:
 
 ### Service Settings
 
-Change the name and description of the Windows service in the `theobald.service.definition.json` file.
+The name (`serviceName`), display name (`displayName`) and description (`description`) of the Windows service can be changed in the `theobald.service.definition.json` file.
 
 ```json title="theobald.service.definition.json"
 {
@@ -108,7 +109,7 @@ Change the name and description of the Windows service in the `theobald.service.
 	
 ### Network Settings
 
-Change the network settings (e.g., port number) of the web server in the `listener.json` file. 
+The network settings of the web server can be changed in the `listener.json` file. 
 	
 ```json title="listener.json"
 {
@@ -172,6 +173,7 @@ POST /v0/connections/sap/{name}
 	Host: localhost:1337
 	Content-Type: application/json
 	Content-Length: 109
+	
 	{
 	"Host": "sap-erp-as05.example.com(1)",
 	"User": "alice",
@@ -251,6 +253,7 @@ POST /v0/connections/azureblob/{name}
 	Host: localhost:1337
 	Content-Type: application/json
 	Content-Length: 223
+	
 	{
 	"Account": "my-account",
 	"Token": "sv=YYYY-MM-DD&ss=...%3D(1)",
@@ -317,6 +320,7 @@ POST /v0/extractions/table/{name}
 	Host: localhost:1337
 	Content-Type: application/json
 	Content-Length: 190
+	
 	{
 	"Table": "MARA",
 	"Where": "MATNR = 000000000001",
@@ -378,6 +382,7 @@ Use the following endpoint to run an extraction and wait for the result:
 	```http
 	GET /run/{name} HTTP/1.1
 	Host: localhost:1337
+	
 	```
 
 @@@ GET http://localhost:1337/run{name}/
@@ -396,6 +401,7 @@ Use the following endpoint to run an extraction without waiting for the results:
 	```http
 	GET /start/{name} HTTP/1.1
 	Host: localhost:1337
+	
 	```
 
 @@@ GET http://localhost:1337/start{name}/
