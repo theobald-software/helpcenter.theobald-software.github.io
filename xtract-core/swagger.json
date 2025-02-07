@@ -86,7 +86,7 @@
           {
             "name": "name",
             "in": "path",
-            "description": "Name for the new SAP connection. Allowed characters are uppercase and lowercase Latin letters (A–Z, a–z) and digits (0–9). The name must not start with a number. Names are unique and not case-sensitive, beecause the names of connections map to a directory on the file system.",
+            "description": "Name for the new SAP connection. Allowed characters are uppercase and lowercase Latin letters (A–Z, a–z) and digits (0–9). The can not start with a number. Names are unique and not case-sensitive.",
             "required": true,
             "type": "string"
           },
@@ -169,7 +169,7 @@
           {
             "name": "name",
             "in": "path",
-            "description": "Name for the new Azure Blob storage connection. Allowed characters are uppercase and lowercase Latin letters (A–Z, a–z) and digits (0–9). The name must not start with a number. Names are unique and not case-sensitive, beecause the names of connections map to a directory on the file system.",
+            "description": "Name for the new Azure Blob storage connection. Allowed characters are uppercase and lowercase Latin letters (A–Z, a–z) and digits (0–9). The name can not start with a number. Names are unique and not case-sensitive.",
             "required": true,
             "type": "string"
           },
