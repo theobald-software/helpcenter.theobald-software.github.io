@@ -527,7 +527,7 @@
           "run"
         ],
         "summary": "Run an extraction and wait for the result.",
-        "description": "TThe `run` endpoint runs an extractions synchronously and returns the HTTP response head as soon as the server receives the first data package. The response header contains the timestamp of the extraction and the response body contains the logs of the extraction.",
+        "description": "TThe `run` endpoint runs an extractions synchronously and returns the HTTP response head as soon as the server receives the first data package. The response header contains the timestamp of the extraction The response body contains the logs of the extraction.",
         "operationId": "runextraction",
         "produces": [
           "text/csv"
@@ -584,7 +584,7 @@
           "run"
         ],
         "summary": "Run an extraction without waiting for the result.",
-        "description": "The `start` endpoint runs an extraction asynchronously and immediately returns the HTTP response head. The response header contains the timestamp of the extraction and the response body contains the logs of the extraction.",
+        "description": "The `start` endpoint runs an extraction asynchronously and immediately returns the HTTP response head. The response header contains the timestamp of the extraction. The response body contains the logs of the extraction.",
         "operationId": "startextraction",
         "produces": [
           "text/csv"
