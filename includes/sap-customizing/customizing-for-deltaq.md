@@ -15,8 +15,8 @@ Follow the steps on this page in the following order:
 ### Create an RFC Destination of Type R/3
 
 1. Go to SAP transaction *SM59* to create an RFC destination of type *R/3*.
-2. Enter a name in the field **Program ID**, e.g., *XTRACT01*.
-The name of the Program ID is needed again for later configuration.
+2. Enter a name in the field **RFC Destination**, e.g., *XTRACT01*.
+The name of the RFC Destination is needed again for later configuration.
 
 ### Execute the Function Module RSAP_BIW_CONNECT_40
 
