@@ -1,5 +1,17 @@
 [
   {
+    "Version": "2025.2.7.65",
+    "LegacyReleaseDate": "2025-02-07 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "BWCube",
+        "Message": "MDX Cube: fix for failing extraction when the cache is enabled. Added handling for custom exceptional value markers in cell data.",
+        "ReleaseNote": "## What's New?\n* Fix for failing extractions in MDX mode when the cache is enabled\n* This release contains logic to handle custom strings for exceptional values e.g. for division by zero in MDX mode\n## Impact\nFrom this version on the extractor loads these settings from RSADMINC. In order to read the exceptional value display setting, read access to the table RSADMINC is required. If this authorization is not provided, the default value \"X\" will be used."
+      }
+    ]
+  },
+  {
     "Version": "2025.1.23.28",
     "LegacyReleaseDate": "2025-01-23 00:00:00Z",
     "Changes": [
