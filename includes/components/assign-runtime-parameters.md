@@ -1,7 +1,7 @@
 
 {% if page.meta.componentFolder == "table" %}
 
-### Use Runtime Parameters in the WHERE Clause Editor
+## Use Runtime Parameters in the WHERE Clause Editor
 
 1. Navigate to the WHERE clause tab in the main window of the extraction and open the WHERE clause editor.
 2. Add a new WHERE clause criteria that uses the **[Default with Parameter]** template.
@@ -11,7 +11,7 @@ Select a parameter from the list.<br>
 4. To test the WHERE clause, click {{ previewBtn }}. Provide parameter values when prompted.
 
 {% if page.meta.product != "xtract-for-alteryx" %}
-### Use Runtime Parameters in the WHERE Clause Text Mode
+## Use Runtime Parameters in the WHERE Clause Text Mode
 
 Add an @ symbol before a value to mark it as a runtime parameter, e.g., enter `@myParameter` instead of a value.
 Example: `T001W~WERKS BETWEEN @PlantLow AND @PlantHigh`.
@@ -21,7 +21,7 @@ Example: `T001W~WERKS BETWEEN @PlantLow AND @PlantHigh`.
 {% endif %}
 {% elif page.meta.componentFolder == "bapi" %}
 
-### Assign Runtime Parameters
+## Assign Runtime Parameters
 
 Follow the steps below to assign runtime parameters to input fields of import, changings or table parameters of a Function Module / BAPI:
 
@@ -33,7 +33,7 @@ If no icon is available, [create a runtime parameter](#create-runtime-parameters
 
 {% elif page.meta.componentFolder == "bwcube" %}
 
-### Assign Runtime Parameters
+## Assign Runtime Parameters
 
 Follow the steps below to assign the runtime parameters to variables or dimension filters.
 
@@ -58,7 +58,7 @@ Follow the steps below to assign the runtime parameters to variables or dimensio
 
 {% else %}
  
-### Assign Runtime Parameters
+## Assign Runtime Parameters
 
 Follow the steps below to assign the runtime parameters to selections.
 
