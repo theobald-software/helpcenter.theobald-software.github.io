@@ -107,6 +107,7 @@ Authorizations for the underlying Queries, Cubes, InfoAreas and analysis need to
 	S_RFC            RFC_TYPE=FUGR; RFC_NAME=RRX1; ACTVT=16
 	S_TABU_NAM       ACTVT=03; TABLE=RSRREPDIR
 	S_TABU_NAM       ACTVT=03; TABLE=RSZGLOBV
+ 	S_TABU_NAM       ACTVT=03; TABLE=RSADMINC
 	```
 {% if page.meta.product != "erpconnect" %}
 === "BICS mode"
