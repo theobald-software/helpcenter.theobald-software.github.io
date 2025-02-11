@@ -1,5 +1,16 @@
 [
   {
+    "Version": "2025.2.11.22",
+    "LegacyReleaseDate": "2025-02-11 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "XtractUniversal",
+        "Component": "Snowflake",
+        "Message": "Fixed a bug that would leave staged files in Snowflake upon merge operation"
+      }
+    ]
+  },
+  {
     "Version": "2025.2.11.12",
     "LegacyReleaseDate": "2025-02-11 00:00:00Z",
     "Changes": [
