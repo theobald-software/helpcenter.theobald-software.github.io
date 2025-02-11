@@ -44,10 +44,16 @@ Default option for Table is to use an existing one if available. User has the op
 Follow the steps below to load an SAP Table into the Microsoft Fabric Open Mirroring landing zone:
 
 1. Create a Table CDC extraction, see [Documentation: Table CDC](../documentation/table-cdc/index.md/#create-a-table-cdc-extraction). 
+2. [Look up](../documentation/table-cdc.md/#look-up-a-table) the SAP table you want to map.
+3. Optional: To extract the complete table when first running the extraction, activate the checkbox **[Extract table on first run]**.
 
-!!! tip
-	You can also use the regular [Table](../documentation/table/index.md) extraction type to extract the initial full load of the Table.
-	
+	!!! tip
+		You can also use the regular [Table](../documentation/table/index.md) extraction type to extract the initial full load of the Table.
+
+4. Save the extraction.
+5. [Assign](../documentation/destinations/microsoft-fabric-onelake.md/#assign-the-microsoft-fabric-onelake-destination-to-an-extraction) the Microsoft Fabric (OneLake) destination to the extraction.
+
+
 ******
 
 #### Related Links
