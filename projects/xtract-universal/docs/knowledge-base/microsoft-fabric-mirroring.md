@@ -1,0 +1,56 @@
+---
+title: Microsoft Fabric Mirroring of SAP using {{ productName }}
+description: How to set up open mirroring of SAP in {{ productName }}
+---
+
+The following article describes...
+
+
+### About Open Mirroring
+
+Microsoft Fabric's Open Mirroring allows users to replicate existing data directly into Fabric's OneLake from a variety of external databases and other data sources. 
+Mirroring delivers data incrementally in a parquet format that is used to merge the data in OneLake.
+For more information, see [Microsoft Documentation: Open mirroring in Microsoft Fabric](https://learn.microsoft.com/en-us/fabric/database/mirrored-database/open-mirroring).
+
+!!! note
+	Note that Microsoft Fabric Open Mirroring is still in preview. During preview, not all Fabric regions support Mirroring.
+	For more information, see [Microsoft Documentation: Microsoft Fabric preview information](https://learn.microsoft.com/en-us/fabric/fundamentals/preview).
+	
+	
+### Prerequisites
+
+- Active and running Fabric capacity. A paused or deleted capacity affects Mirroring so that no data is replicated.
+- Mirroring requires the use of the extraction type [Table CDC](../documentation/table-cdc/index.md) and the installation of the corresponding [custom function modules](../documentation/setup-in-sap/custom-function-module-for-tablecdc.md) in SAP. 
+Note that Table CDC is licensed and purchased separately from other extraction types.
+
+## Setup in Xtract Universal
+
+Source: S/4 HANA 
+Extraction Type: Table CDC
+Destintion: OneLake
+
+Deliver the incremental changes in the requested parquet format for Fabric Mirroring
+
+use will full load
+In some cases, customer would use Table component to make a full load into Fabric Mirroring.
+In the second step, customer would use Table CDC for loading incremental load.
+To support such scenarios, following is required.
+If Mirroring is used with a component like Table (that does not support incremental change), then:
+
+RowMaker value should be 0 for INSERT by default. User has the option to change it e.g. to 4 for UPSERT
+Default option for Table is to use an existing one if available. User has the option to set it to: Drop and create.
+
+
+Follow the steps below to load an SAP Table into the Microsoft Fabric Open Mirroring landing zone:
+
+1. Create a Table CDC extraction, see [Documentation: Table CDC](../documentation/table-cdc/index.md/#create-a-table-cdc-extraction). 
+
+!!! tip
+	You can also use the regular [Table](../documentation/table/index.md) extraction type to extract the initial full load of the Table.
+	
+******
+
+#### Related Links
+- [Microsoft Documentation: What is Mirroring in Fabric?](https://learn.microsoft.com/en-us/fabric/database/mirrored-database/overview)
+- [Microsoft Documentation: Open mirroring in Microsoft Fabric](https://learn.microsoft.com/en-us/fabric/database/mirrored-database/open-mirroring)
+- [Microsoft Documentation: Tutorial Configure Microsoft Fabric open mirrored databases](https://learn.microsoft.com/en-us/fabric/database/mirrored-database/open-mirroring-tutorial)
