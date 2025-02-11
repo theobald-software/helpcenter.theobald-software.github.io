@@ -1,15 +1,17 @@
 ---
-title: Microsoft Fabric Mirroring of SAP using {{ productName }}
-description: How to set up open mirroring of SAP in {{ productName }}
+title: Microsoft Fabric Mirroring of SAP using Xtract Universal
+description: How to set up open mirroring of SAP in Xtract Universal
 ---
 
-The following article describes...
+The following article shows how to use Xtract Universal in combination with Microsoft Fabric's open mirroring feature to map SAP data to a datalake.
 
 
 ### About Open Mirroring
 
 Microsoft Fabric's Open Mirroring allows users to replicate existing data directly into Fabric's OneLake from a variety of external databases and other data sources. 
-Mirroring delivers data incrementally in a parquet format that is used to merge the data in OneLake.
+The data is written into an open mirroring landing zone, where it is processed by the mirroring replication engine of Microsoft Fabric.
+Mirroring delivers the data incrementally in a parquet format that is used to merge the data in OneLake. 
+
 For more information, see [Microsoft Documentation: Open mirroring in Microsoft Fabric](https://learn.microsoft.com/en-us/fabric/database/mirrored-database/open-mirroring).
 
 !!! note
@@ -23,23 +25,7 @@ For more information, see [Microsoft Documentation: Open mirroring in Microsoft 
 - Mirroring requires the use of the extraction type [Table CDC](../documentation/table-cdc/index.md) and the installation of the corresponding [custom function modules](../documentation/setup-in-sap/custom-function-module-for-tablecdc.md) in SAP. 
 Note that Table CDC is licensed and purchased separately from other extraction types.
 
-## Setup in Xtract Universal
-
-Source: S/4 HANA 
-Extraction Type: Table CDC
-Destintion: OneLake
-
-Deliver the incremental changes in the requested parquet format for Fabric Mirroring
-
-use will full load
-In some cases, customer would use Table component to make a full load into Fabric Mirroring.
-In the second step, customer would use Table CDC for loading incremental load.
-To support such scenarios, following is required.
-If Mirroring is used with a component like Table (that does not support incremental change), then:
-
-RowMaker value should be 0 for INSERT by default. User has the option to change it e.g. to 4 for UPSERT
-Default option for Table is to use an existing one if available. User has the option to set it to: Drop and create.
-
+## Setup with Table CDC
 
 Follow the steps below to load an SAP Table into the Microsoft Fabric Open Mirroring landing zone:
 
@@ -52,6 +38,13 @@ Follow the steps below to load an SAP Table into the Microsoft Fabric Open Mirro
 
 4. Save the extraction.
 5. [Assign](../documentation/destinations/microsoft-fabric-onelake.md/#assign-the-microsoft-fabric-onelake-destination-to-an-extraction) the Microsoft Fabric (OneLake) destination to the extraction.
+
+## Setup with Table
+
+If Mirroring is used with a component like Table (that does not support incremental change), then:
+
+RowMaker value should be 0 for INSERT by default. User has the option to change it e.g. to 4 for UPSERT
+Default option for Table is to use an existing one if available. User has the option to set it to: Drop and create.
 
 
 ******
