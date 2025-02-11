@@ -1,5 +1,16 @@
 [
   {
+    "Version": "2025.2.11.57",
+    "LegacyReleaseDate": "2025-02-11 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "Table",
+        "Message": "Fixed conversion exits in /THEO/READ_TABLE"
+      }
+    ]
+  },
+  {
     "Version": "2025.2.7.67",
     "LegacyReleaseDate": "2025-02-07 00:00:00Z",
     "Changes": [
