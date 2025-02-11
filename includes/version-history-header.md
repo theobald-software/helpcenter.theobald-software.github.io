@@ -8,7 +8,7 @@ We recommend checking for updates at least every three months.
 
 Releases can be marked as *critical* (:critical:) or *breaking* (:link_broken:):
 - Critical releases contain important updates. Installation is highly recommended.
-- Breaking releases can affect (break) an existing setup. Testing on a QA environment is recommended.
+- Breaking releases can affect (break) an existing setup. Testing on a QA environment is highly recommended.
 
 If an installed version is not listed below, refer to the changelog entry with the next lower version.
 
