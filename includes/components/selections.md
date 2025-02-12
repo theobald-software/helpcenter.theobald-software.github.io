@@ -7,7 +7,7 @@
 	Do not define selections when using the update mode Delta Update, because the selections of the Init mode are automatically applied.
 
 {% endif %} 
-{% if  page.meta.componentFolder != "odp" and page.meta.componentFolder != "deltaq"%}
+{% if  page.meta.componentFolder != "odp" and page.meta.componentFolder != "deltaq" and page.meta.componentFolder != "odata"%}
 
 The *Selection Screen* in the main window of the component corresponds to the input screen in SAP.
 
@@ -25,7 +25,7 @@ Follow the steps below to edit selection fields and filter data:
 2. Click **[Single]**{% if page.meta.product != "xtract-is" %}, **[Range]** or **[List]**{% else %} or **[Range]**{% endif %} to add a corresponding filter, see [Filter Options](#available-filter-options).
 3. In the column **Sign** :number-1:, select *Include* to add the filtered data to the output or select *Exclude* to remove the filtered data from the output.<br>
 {% if page.meta.product != "xtract-is" %}![edit-selections](../../assets/images/documentation/components/edit-selections.png){:class="img-responsive"}{% else %}![edit-selections](../../assets/images/documentation/components/edit-selections-xis.png){:class="img-responsive"}{% endif %}
-4. In the column **Option** :number-2:, select an operator, see [Filter Options](#available-filter-options). 
+4. In the column **Option** :number-2:, select an operator, see [Filter Options](#filter-options). 
 5. In the column **Value**, enter values directly into the input fields **Low** and **High** or assign existing {% if page.meta.product != "xtract-is" %} [{{ variables }}](edit-runtime-parameters.md) {% else %} {{ variables }} {% endif %} to the selection fields :number-3:.
 
 	!!! note
