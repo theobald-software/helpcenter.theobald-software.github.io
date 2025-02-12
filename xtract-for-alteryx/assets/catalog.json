@@ -1,16 +1,5 @@
 [
   {
-    "Version": "2025.2.12.19",
-    "LegacyReleaseDate": "2025-02-12 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "OData",
-        "Message": "Added filters, packaging and rows limit features for the OData extractor"
-      }
-    ]
-  },
-  {
     "Version": "2025.2.11.55",
     "LegacyReleaseDate": "2025-02-11 00:00:00Z",
     "Changes": [
