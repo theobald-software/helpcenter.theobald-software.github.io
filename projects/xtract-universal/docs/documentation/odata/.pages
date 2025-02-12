@@ -1,3 +1,6 @@
 nav:
     - index.md
+    - selections.md
     - general-settings.md
+    - settings.md
+    - edit-runtime-parameters.md

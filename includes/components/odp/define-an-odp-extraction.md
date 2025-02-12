@@ -26,7 +26,7 @@ The {{ odp }} {{ component }} offers the following options for data extractions:
 		TS_SEQUENCE_NUMBER is a technical primary key that can be added to the output.
 		When working with identical data sets, the data set with the highest sequence number is the most current data set.
 	
-2. Optional: edit a selection you want to change or dynamize. 
+2. Optional: edit selections to apply (dynamic) filters. 
 For more information, see [Edit Selections](selections.md/#edit-selections).<br>
 
 	!!! note
