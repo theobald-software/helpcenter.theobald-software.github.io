@@ -86,7 +86,7 @@ The subfolders of the *DataModel* folder now contain the selected entities and a
 
 ### Service Implementation
 
-When using the Wizard "OData access for Operational Data Provisioning" during the [Data Model Definition](#data-model-definition), the service implementation is auto-generated based on the underlying ODP framework.
+When using the Wizard during the [Data Model Definition](#data-model-definition), the service implementation is auto-generated based on the underlying ODP framework.
 
 ![sap-gw-service-implementation](../assets/images/articles/odata/sap-gw-service-implementation.png)
 
