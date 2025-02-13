@@ -26,9 +26,9 @@ The creation of OData services can be divided into the following phases:
 
 ``` mermaid
 graph TD
-  A(<b>Service Definition</b> <br><hr>Create a project to bundle all artifacts that are needed to develop a service.) --> B(<b>Data Model Definition</b><br><hr> Define the model that the service is based on, e.g., entity types, associations, etc.);
-  B -->C(<b>Service Implementation</b><br><hr>Implement the operations that are supported by the service.);
-  C --> D(<b>Service Maintenance</b><br><hr>Register and activate the service in an SAP Gateway system.);
+  A(<b>Service Definition Phase</b> <br><hr>Create a project to bundle all artifacts that are needed to develop a service.) --> B(<b>Data Model Definition Phase</b><br><hr> Define the model that the service is based on, e.g., entity types, associations, etc.);
+  B -->C(<b>Service Implementation Phase</b><br><hr>Implement the operations that are supported by the service.);
+  C --> D(<b>Service Maintenance Phase</b><br><hr>Register and activate the service in an SAP Gateway system.);
 ```
 
 ### Service Definition
