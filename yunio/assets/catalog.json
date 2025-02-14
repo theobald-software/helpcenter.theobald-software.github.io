@@ -1,16 +1,5 @@
 [
   {
-    "Version": "2025.2.12.24",
-    "LegacyReleaseDate": "2025-02-12 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "OData",
-        "Message": "Added filters, packaging and rows limit features for the OData extractor"
-      }
-    ]
-  },
-  {
     "Version": "2025.2.11.57",
     "LegacyReleaseDate": "2025-02-11 00:00:00Z",
     "Changes": [
@@ -41,17 +30,6 @@
         "Product": "YunIO",
         "Component": "General",
         "Message": "Fixed an issue where starting transactions would not work (Bug introduced in 2024.10.30.34)"
-      }
-    ]
-  },
-  {
-    "Version": "2025.1.28.1",
-    "LegacyReleaseDate": "2025-01-28 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "OData",
-        "Message": "Added the OData extractor (preview)"
       }
     ]
   },
