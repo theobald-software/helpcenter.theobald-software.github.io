@@ -59,6 +59,17 @@ hide:
 
 ---
 
+
+### :component-odp-odata: Xtract ODP (OData)
+
+<div class="mdx-columns" markdown>
+
+- [Create OData Services using the SAP Gateway Builder :material-alert-decagram:](create-odata-services-using-the-sap-gateway-builder.md)
+
+</div>
+
+---
+
 ### :component-report: Xtract Report
 
 <div class="mdx-columns" markdown>
