@@ -1,5 +1,16 @@
 [
   {
+    "Version": "2025.2.14.10",
+    "LegacyReleaseDate": "2025-02-14 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "Table",
+        "Message": "Fixed /THEO/READ_TABLE transports for version 710 and 740SP05"
+      }
+    ]
+  },
+  {
     "Version": "2025.2.14.2",
     "LegacyReleaseDate": "2025-02-14 00:00:00Z",
     "Changes": [
@@ -7,17 +18,6 @@
         "Product": "XtractUniversal",
         "Component": "Designer",
         "Message": "Fixed a bug which incorrectly disabled the set user password top menu button"
-      }
-    ]
-  },
-  {
-    "Version": "2025.2.13.3",
-    "LegacyReleaseDate": "2025-02-13 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "XtractUniversal",
-        "Component": "GoogleCloudStorage",
-        "Message": "Fixed a bug where choosing large thresholds (&gt;1024MB) for file splitting could result in an error during extraction due to exceeding the maximum size allowed for buffers."
       }
     ]
   },
