@@ -26,7 +26,7 @@ destination | Selects the destination to which extraction is written (e.g., db_1
 rows | Sets the maximum number of rows to be extracted | Available for [Table](../table/settings.md#row-limit)
 whereClause | Sets a WHERE clause. SAP system variables are applicable. | Available for [Table](../table/where-clause.md) 
 packageSize | Sets the package size | Available for [Table](../table/settings.md#package-size)  
-updateMode | Sets the update mode to use for the run| Available for [ODP](../odp/update-mode.md)
+updateMode | Sets the update mode to use for the run: Full, Delta, Recovery | Available for [ODP](../odp/update-mode.md)
 subscriptionSuffix | Suffix to use multiple inits on a single SAP system | Available for [ODP](../odp/index.md)
 extractDataOnDeltaInit | Extracts data if request is *delta init*| Available for [ODP](../odp/update-mode.md)
 hierarchyName | The name of the hierarchy to extract | Available for ODP, DeltaQ & Hierarchy
@@ -39,7 +39,7 @@ gatewayService | Gateway Service | Available for [DeltaQ](../deltaq/deltaq-custo
 programID | Program ID | Available for [DeltaQ](../deltaq/deltaq-customization.md)
 logicalDestination | Logical Destination | Available for [DeltaQ](../deltaq/deltaq-customization.md)
 requestID | Request ID (for Repair Request only) | Available for [DeltaQ](../deltaq/deltaq-customization.md)
-updateType | F (Full), C (Delta Init), S (Init no data), D (Delta Update), R (Repeat)| Available for [DeltaQ](../deltaq/update-mode.md)
+updateType | Sets the update mode to use for the run: F (Full), C (Delta Init), S (Init no data), D (Delta Update), R (Repeat)| Available for [DeltaQ](../deltaq/update-mode.md)
 decimalSeparator | Sets a symbol between integer and fractional part | Available for CSV destinations
 columnSeparator |  Sets a symbol which indicates the start of a new column | Available for CSV destinations
 

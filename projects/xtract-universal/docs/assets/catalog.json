@@ -1,5 +1,105 @@
 [
   {
+    "Version": "2025.2.14.10",
+    "LegacyReleaseDate": "2025-02-14 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "Table",
+        "Message": "Fixed /THEO/READ_TABLE transports for version 710 and 740SP05"
+      }
+    ]
+  },
+  {
+    "Version": "2025.2.14.2",
+    "LegacyReleaseDate": "2025-02-14 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "XtractUniversal",
+        "Component": "Designer",
+        "Message": "Fixed a bug which incorrectly disabled the set user password top menu button"
+      }
+    ]
+  },
+  {
+    "Version": "2025.2.12.25",
+    "LegacyReleaseDate": "2025-02-12 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "OData",
+        "Message": "Added filters, packaging and rows limit features for the OData extractor"
+      }
+    ]
+  },
+  {
+    "Version": "2025.2.11.58",
+    "LegacyReleaseDate": "2025-02-11 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "Table",
+        "Message": "Fixed conversion exits in /THEO/READ_TABLE"
+      }
+    ]
+  },
+  {
+    "Version": "2025.2.11.22",
+    "LegacyReleaseDate": "2025-02-11 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "XtractUniversal",
+        "Component": "Snowflake",
+        "Message": "Fixed a bug that would leave staged files in Snowflake upon merge operation"
+      }
+    ]
+  },
+  {
+    "Version": "2025.2.11.12",
+    "LegacyReleaseDate": "2025-02-11 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "XtractUniversal",
+        "Component": "Designer",
+        "Message": "Fixed a bug that would display an error message upon extraction execution when run window had already been closed before."
+      }
+    ]
+  },
+  {
+    "Version": "2025.2.7.68",
+    "LegacyReleaseDate": "2025-02-07 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "BWCube",
+        "Message": "MDX Cube: fix for failing extraction when the cache is enabled. Added handling for custom exceptional value markers in cell data.",
+        "ReleaseNote": "## What's New?\n* Fix for failing extractions in MDX mode when the cache is enabled\n* This release contains logic to handle custom strings for exceptional values e.g. for division by zero in MDX mode\n## Impact\nFrom this version on the extractor loads these settings from RSADMINC. In order to read the exceptional value display setting, read access to the table RSADMINC is required. If this authorization is not provided, the default value \"X\" will be used."
+      }
+    ]
+  },
+  {
+    "Version": "2025.2.7.59",
+    "LegacyReleaseDate": "2025-02-07 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "XtractUniversal",
+        "Component": "FlatFileCsv",
+        "Message": "Fixed a bug where the settings for the file csv destination would not be loaded or stored correctly"
+      }
+    ]
+  },
+  {
+    "Version": "2025.2.7.0",
+    "LegacyReleaseDate": "2025-02-07 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "XtractUniversal",
+        "Component": "Destinations",
+        "Message": "Fixed an issue where destination settings for cloud (S3, Azure Storage and GCS) destinations where not converted for extractions inside of sub folders."
+      }
+    ]
+  },
+  {
     "Version": "2025.1.27.41",
     "LegacyReleaseDate": "2025-01-27 00:00:00Z",
     "Changes": [
@@ -51,6 +151,17 @@
         "Product": "XtractUniversal",
         "Component": "GoogleCloudStorage",
         "Message": "Fixed a bug where not all data would be written to Google Cloud Storage due to the destination not following the API specification correctly."
+      }
+    ]
+  },
+  {
+    "Version": "2025.1.13.43",
+    "LegacyReleaseDate": "2025-01-13 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "BWCube",
+        "Message": "Bics mode now supports dimension attributes"
       }
     ]
   },

@@ -1,0 +1,532 @@
+swagger: '2.0'
+info:
+  description: 'Xtract Core is a whitelabel Web API server for developing your own SAP interfaces. The Xtract Core API enables you to extract data from various SAP sytsems and write them to a target environment. For more information about Xtract Core, refer to the [Xtract Core HelpCenter](https://helpcenter.theobald-software.com/xtract-core/).'
+  version: 1.0.0
+  title: Xtract Core
+#host: localhost
+#basePath: /v0
+tags:
+  - name: connections
+    description: Everything about your connections to data sources and target environments.
+    externalDocs:
+      description: Find out more
+      url: https://helpcenter.theobald-software.com/xtract-core/getting-started/#connections
+  - name: extractions
+    description: Everything about your data extractions.
+    externalDocs:
+      description: Find out more
+      url: https://helpcenter.theobald-software.com/xtract-coregetting-started/#extractions
+  - name: run
+    description: Everything about running extractions.
+    externalDocs:
+      description: Find out more
+      url: https://helpcenter.theobald-software.com/xtract-coregetting-started/#run-extractions
+paths:
+  /v0/connections/:
+    get:
+      tags:
+        - connections
+      summary: Get a list of existing connections.
+      description: ''
+      operationId: listconnections
+      produces:
+        - application/json
+      responses:
+        '200':
+          description: Operation successful
+          schema:
+            type: object
+            properties:
+              connections:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    name:
+                      type: string
+                      example: s4hana
+                    type:
+                      type: string
+                      example: SapRfc
+  /v0/connections/sap/{name}:
+    post:
+      tags:
+        - connections
+      summary: Create a connection to an SAP system.
+      description: ''
+      operationId: addsap
+      produces:
+        - text/plain
+      parameters:
+        - name: name
+          in: path
+          description: Name for the new SAP connection. Allowed characters are uppercase and lowercase Latin letters (A–Z, a–z) and digits (0–9). The name must not start with a number. Names are unique and not case-sensitive, beecause the names of connections map to a directory on the file system.
+          required: true
+          type: string
+        - in: body
+          name: body
+          description: |
+            Connection settings of the SAP system. Values can be found in the *Properties* of the SAP Logon Pad or they can be requested from the SAP Basis team.<br><br>
+            
+             | Property | Description | Required |
+             |-----------|------------|----------|
+             | **Host**     | Host name or IP address of the SAP application server (Property *Host*) | Yes |
+             | **Client**    | A three-digit number of the SAP client between 000 and 999, e.g., 800. | Yes |
+             | **InstanceNo**    |  A two-digit number between 00 and 99 (Property *SystemNumber*). | Yes |
+             | **Language**     | The logon language for the SAP system, e.g., 'EN' for English or 'DE' for German. | Yes |
+             | **User**    | Name of an SAP dialog user. | Yes |
+             | **Password**    |  Password of the SAP user. | Yes |
+          required: true
+          schema:
+            $ref: '#/definitions/SAP'
+      responses:
+        '200':
+          description: Operation successful
+          schema:
+            type: string
+            example: The connection was created successfully. Connected to SAP host 'sap-erp-as05.example.com', instance 00, release 756, codepage 4103, user 'ALICE'
+        '500':
+          description: An error occured. The response body contains different error messages depending on the failure cause. All errors return a 500 status code.
+  /v0/connections/sap/{name}/test:
+    get:
+      tags:
+        - connections
+      summary: Test a connection to an SAP system.
+      description: ''
+      operationId: testsap
+      consumes:
+        - application/json
+      produces:
+        - text/plain
+      parameters:
+        - name: name
+          in: path
+          description: Name for the SAP connection you want to test.
+          required: true
+          type: string
+      responses:
+        '200':
+          description: Operation successful
+          schema:
+            type: string
+            example: Connected to SAP host 'sap-erp-as05.example.com', instance 00, release 756, codepage 4103, user 'ALICE'
+        '404':
+          description: Indicates that the connection does not exist
+  /v0/connections/azureblob/{name}:
+    post:
+      tags:
+        - connections
+      summary: Create a connection to an Azure Blob storage.
+      description: ''
+      operationId: addazure
+      consumes:
+        - application/json
+      produces:
+        - text/plain
+      parameters:
+        - name: name
+          in: path
+          description: Name for the new Azure Blob storage connection. Allowed characters are uppercase and lowercase Latin letters (A–Z, a–z) and digits (0–9). The name must not start with a number. Names are unique and not case-sensitive, beecause the names of connections map to a directory on the file system.
+          required: true
+          type: string
+        - in: body
+          name: body
+          description: |
+            Connection settings of the Azure Blob storage.<br><br>
+      
+             | Property | Description | Required |
+             |-----------|------------|----------|
+             | **Account**     | Name of the storage account. Do not enter the full URL. | Yes |
+             | **Container**    | Name of an existing Azure storage container. | Yes |
+             | **Token**    |  The [Shared Access Signature (SAS) token](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/authentication/create-sas-tokens?view=doc-intel-4.0.0&tabs=azure-portal#use-the-azure-portal) of the storage container. | Yes |
+          required: true
+          schema:
+            $ref: '#/definitions/Azure'
+      responses:
+        '200':
+          description: Operation successful
+          schema:
+            type: string
+            example: The connection was tested and created succesfully.
+        '500':
+          description: An error occured. The response body contains different error messages depending on the failure cause. All errors return a 500 status code.
+  /v0/connections/{name}:
+    delete:
+      tags:
+        - connections
+      summary: Delete a connection.
+      description: ''
+      operationId: deleteconnection
+      produces:
+        - string
+      parameters:
+        - name: name
+          in: path
+          description: Name of the connection you want to delete.
+          required: true
+          type: string
+      responses:
+        '200':
+          description: Operation successful
+          schema:
+            type: string
+            example: The connection was deleted successfully.
+        '404':
+          description: Indicates that the connection does not exist.
+  /v0/connections/sap/{name}/tables:
+    get:
+      tags:
+        - connections
+      summary: Get name and description of all tables on the SAP system.
+      description: ''
+      operationId: metaconnection
+      produces:
+        - application/json
+      parameters:
+        - name: name
+          in: path
+          description: Name of an existing SAP connection.
+          required: true
+          type: string
+        - name: pattern
+          in: query
+          description: Define a search pattern for SAP tables. Wildcards (*) are supported. If *pattern* is omitted, this call may take very long and yield multiple MB of data.
+          required: false
+          type: string
+          x-example: ma*
+      responses:
+        '200':
+          description: Operation successful
+          schema:
+            type: array
+            items:
+              type: object
+              properties:
+                name:
+                  type: string
+                  example: MARA
+                description:
+                  type: string
+                  example: General Material Data
+        '500':
+          description: An error occured. The response body contains different error messages depending on the failure cause. All errors return a 500 status code.
+  /v0/connections/sap/{name}/tables/{table}:
+    get:
+      tags:
+        - connections
+      summary: Get name, description and data type of all columns in an SAP table.
+      description: ''
+      operationId: metatable
+      produces:
+        - application/json
+      parameters:
+        - name: name
+          in: path
+          description: Name of an existing SAP connection.
+          required: true
+          type: string
+        - name: table
+          in: path
+          description: Technical name of an SAP table.
+          required: true
+          type: string
+      responses:
+        '200':
+          description: Operation successful
+          schema:
+            type: object
+            properties:
+              fields:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    name:
+                      type: string
+                      example: MANDT
+                    description:
+                      type: string
+                      example: Client
+                    type:
+                      type: string
+                      example: CharacterString
+                    length:
+                      type: integer
+                      example: 3
+        '500':
+          description: An error occured. The response body contains different error messages depending on the failure cause. All errors return a 500 status code.
+  /v0/extractions/:
+    get:
+      tags:
+        - extractions
+      summary: Get a list of existing extractions.
+      description: ''
+      operationId: listextractions
+      produces:
+        - application/json
+      responses:
+        '200':
+          description: Operation successful
+          schema:
+                type: object
+                properties:
+                  extractions:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        name:
+                          type: string
+                          example: mara
+                        type:
+                          type: string
+                          example: Table
+                        sapObject:
+                          type: string
+                          example: MARA
+                        source:
+                          type: string
+                          example: s4hana
+                        destination:
+                          type: string
+                          example: azure
+                        created:
+                          type: object
+                          properties:
+                            machine:
+                              type: string
+                              example: ""
+                            timestamp:
+                              type: string
+                              format: date-time
+                              example: 2025-01-24T09:05:26.000Z
+                            user:
+                              type: string
+                              example: ""
+                        lastChange:
+                          type: object
+                          properties:
+                            machine:
+                              type: string
+                              example: ""
+                            timestamp:
+                              type: string
+                              format: date-time
+                              example: 2025-01-24T09:46:21.000Z
+                            user:
+                              type: string
+                              example: ""
+        '500':
+          description: An error occured. The response body contains different error messages depending on the failure cause. All errors return a 500 status code.
+  /v0/extractions/table/{name}:
+    post:
+      tags:
+        - extractions
+      summary: Create an extraction that writes data from an SAP table to a destination.
+      description: ''
+      operationId: addextraction
+      consumes:
+        - application/json
+      produces:
+        - string
+      parameters:
+        - name: name
+          in: path
+          description: Name for the new extraction. Allowed characters are uppercase and lowercase Latin letters (A–Z, a–z) and digits (0–9). The name must not start with a number. Names are unique and not case-sensitive, beecause the names of connections map to a directory on the file system.
+          required: true
+          type: string
+        - in: body
+          name: body
+          description: |
+            Extraction settings for the table extraction.<br><br>
+      
+             | Property | Description | Required |
+             |-----------|------------|----------|
+             | **Table**     | Name of the SAP table you want to extract data from. | Yes |
+             | **Where**    | WHERE clause to filter table records. | Yes |
+             | **Source**    | Name of an existing SAP connection. | Yes |
+             | **Destination**| Name of a destination connection, e.g., to an Azure Blob Storage container. | Yes |
+             | **Columns** | Define which SAP table columns to extract. If omitted, all columns are extracted. | No |
+             | **ResultName** | Name of the new table in the target environment. If omitted, the name of the extration is also the name of the new table. | No |
+             | **FunctionModule** | Name of the function module that is used to extract SAP tables. If omitted, the SAP standard function module *RFC_READ_TABLE* is used. The installation of */THEO/READ_TABLE* is recommended. For more information, see [Function Module for Tables](knowledge-base/custom-function-module-for-table-extraction.md). | No |
+          required: true
+          schema:
+            $ref: '#/definitions/Table'
+      responses:
+        '200':
+          description: Operation successful
+          schema:
+            type: string
+            example: The extraction was created successfully.
+        '500':
+          description: An error occured. The response body contains different error messages depending on the failure cause. All errors return a 500 status code.
+  /v0/extractions/{name}:
+    delete:
+      tags:
+        - extractions
+      summary: Delete an extraction.
+      description: ''
+      operationId: deleteextraction
+      produces:
+        - text/plain
+      parameters:
+        - name: name
+          in: path
+          description: Name of the extraction you want to delete.
+          required: true
+          type: string
+      responses:
+        '200':
+          description: Operation successful
+          schema:
+            type: string
+            example: The extraction was deleted successfully.
+        '404':
+          description: Indicates that tthe extraction does not exist.
+  /run/{name}:
+    get:
+      tags:
+        - run
+      summary: Run an extraction and wait for the result.
+      description: 'TThe `run` endpoint runs an extractions synchronously and returns the HTTP response head as soon as the server receives the first data package. The response header contains the timestamp of the extraction and the response body contains the logs of the extraction.'
+      operationId: runextraction
+      produces:
+        - text/csv
+      parameters:
+        - name: name
+          in: path
+          description: Name of the extraction you want to execute.
+          required: true
+          type: string
+        - name: packageSize
+          in: query
+          description: The extracted data is split into packages of the defined size. The default value is 50000 lines. A package size between 20000 and 50000 is advisable for large amounts of data. 0 means no packaging. Not using packaging can lead to an RFC timeout for large data extractions.
+          required: false
+          type: number
+          x-example: 1000
+        - name: rows
+          in: query
+          description: Set a maximum number of rows to be extracted. 0 extracts all data. You can use this option to perform tests with a small amount of data by entering a row limit of e.g., 100.
+          required: false
+          type: number
+          x-example: 10
+        - name: whereClause
+          in: query
+          description: WHERE clause to filter table records. For more information, see [WHERE Clause Syntax](https://helpcenter.theobald-software.com/xtract-core/knowledge-base/where-clause).
+          required: false
+          type: string
+          x-example: ERSDA GT '2025'
+      responses:
+        '200':
+          description: Indicates a successful extraction call. It does not indicate a successful execution of the extraction.
+        '404':
+          description: Indicates that the extraction does not exist.
+        '500':
+          description: An error occured. The response body contains different error messages depending on the failure cause. All errors return a 500 status code.
+  /start/{name}:
+    get:
+      tags:
+        - run
+      summary: Run an extraction without waiting for the result.
+      description: 'The `start` endpoint runs an extraction asynchronously and immediately returns the HTTP response head. The response header contains the timestamp of the extraction and the response body contains the logs of the extraction.'
+      operationId: startextraction
+      produces:
+        - text/csv
+      parameters:
+        - name: name
+          in: path
+          description: Name of the extraction you want to execute.
+          required: true
+          type: string
+        - name: packageSize
+          in: query
+          description: The extracted data is split into packages of the defined size. The default value is 50000 lines. A package size between 20000 and 50000 is advisable for large amounts of data. 0 means no packaging. Not using packaging can lead to an RFC timeout for large data extractions.
+          required: false
+          type: number
+          x-example: 1000
+        - name: rows
+          in: query
+          description: Set a maximum number of rows to be extracted. 0 extracts all data. You can use this option to perform tests with a small amount of data by entering a row limit of e.g., 100.
+          required: false
+          type: number
+          x-example: 10
+        - name: whereClause
+          in: query
+          description: WHERE clause to filter table records. For more information, see [WHERE Clause Syntax](https://helpcenter.theobald-software.com/xtract-core/knowledge-base/where-clause).
+          required: false
+          type: string
+          x-example: ERSDA GT '2025'
+      responses:
+        '200':
+          description: Indicates a successful extraction call. It does not indicate a successful execution of the extraction.
+        '404':
+          description: Indicates that the extraction does not exist.
+        '500':
+          description: An error occured. The response body contains different error messages depending on the failure cause. All errors return a 500 status code.
+definitions:
+  SAP:
+    type: object
+    properties:
+      Host:
+        type: string
+        example: sap-erp-as05.example.com
+      Client:
+        type: string
+        example: '100'
+      InstanceNo:
+        type: number
+        example: 0
+      Language:
+        type: string
+        example: en
+      User:
+        type: string
+        example: alice
+      Password:
+        type: string
+        example: myPassword
+  Azure:
+    type: object
+    properties:
+      Account:
+        type: string
+        example: my-account
+      Container:
+        type: string
+        example: container
+      Token:
+        type: string
+        example: sv=YYYY-MM-DD&ss=...%3D
+  Table:
+    type: object
+    properties:
+      Table:
+        type: string
+        example: MARA
+      Where:
+        type: string
+        example: MATNR = 000000000001
+      Source:
+        type: string
+        example: s4hana
+      Destination:
+        type: string
+        example: azure
+      Columns:
+        type: array
+        items: 
+          type: string
+        example:  
+          - MATNR 
+          - MANDT
+      ResultName:
+        type: string
+        example: resultset
+      FunctionModule:
+        type: string
+        example: /THEO/READ_TABLE
+
+
+      
+
+  

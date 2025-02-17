@@ -14,7 +14,7 @@ For more information, see [Setup](documentation/setup/index.md).
 ### Connect to SAP
 
 There are two types of SAP connections:
-- connect via [RFC protocol](documentation/sap-connection/settings/#source-type-rfc) (default)
+- connect via [RFC protocol](documentation/sap-connection/settings.md/#source-type-rfc) (default)
 - connect via [OData protocol](documentation/sap-connection/settings.md/#source-type-odata)
 
 The depicted example shows how to connect to SAP using the RFC protocol. 

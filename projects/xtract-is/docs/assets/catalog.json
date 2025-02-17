@@ -1,5 +1,27 @@
 [
   {
+    "Version": "2025.2.14.8",
+    "LegacyReleaseDate": "2025-02-14 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "Table",
+        "Message": "Fixed /THEO/READ_TABLE transports for version 710 and 740SP05"
+      }
+    ]
+  },
+  {
+    "Version": "2025.2.11.56",
+    "LegacyReleaseDate": "2025-02-11 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "Table",
+        "Message": "Fixed conversion exits in /THEO/READ_TABLE"
+      }
+    ]
+  },
+  {
     "Version": "2025.1.23.30",
     "LegacyReleaseDate": "2025-01-23 00:00:00Z",
     "Changes": [
@@ -7,6 +29,17 @@
         "Product": "Theobald.Extractors",
         "Component": "BWCube",
         "Message": "Fixed an error that could occur when loading an MDX definition with filters defined."
+      }
+    ]
+  },
+  {
+    "Version": "2025.1.13.41",
+    "LegacyReleaseDate": "2025-01-13 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "BWCube",
+        "Message": "Bics mode now supports dimension attributes"
       }
     ]
   },

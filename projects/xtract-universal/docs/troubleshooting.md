@@ -15,7 +15,6 @@ tags:
 
 <div class="mdx-columns" markdown>
 
-- [Proxy server settings in {{ productName }}](https://support.theobald-software.com/helpdesk/KB/View/13367-proxy-server-settings-in-xtract-universal-and-board-connector)
 - [How to activate tracing in {{ productName }}](https://support.theobald-software.com/helpdesk/KB/View/14455-how-to-activate-tracing-for-xtract-products)
 - [Required Support Information for Xtract Universal](https://support.theobald-software.com/helpdesk/KB/View/14457-required-support-information-for-xtract-universal)
 

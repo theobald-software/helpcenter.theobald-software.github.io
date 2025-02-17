@@ -49,7 +49,9 @@ jobs:
       - run: pip install mkdocs-minify-plugin
       - run: pip install mkdocs-redirects
       - run: pip install neoteroi-mkdocs
+      - run: pip install mkdocs-swagger-ui-tag
       - run: pip install mdx-breakless-lists
+      - run: pip install mkdocs-apicall-plugin
       - run: pip install mkdocs-pdf
       - run: pip install mkdocs-render-swagger-plugin
       - run: pip install mkdocs-swagger-ui-tag

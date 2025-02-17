@@ -15,7 +15,6 @@ hide:
 
 - [Deploy Extractions Using Git Version Control](deploy-extractions-using-Git-version-control.md)
 - [Load Balancing](load-balancer.md)
-- [Proxy Server Settings](proxy-server-settings.md)
 - [Target Principal Field (TPN)](target-principal-TPN.md)
 
 </div>
@@ -73,6 +72,16 @@ hide:
 
 - [Create Generic DataSources](create-generic-datasource-using-function-module-and-timestamps.md)
 - [Register an RFC Server in SAP with Kernel Release 720 and higher](register-rfc-server-in-sap-releases-in-kernel-release-720-and-higher.md)
+
+</div>
+
+---
+
+### :component-odata: OData
+
+<div class="mdx-columns" markdown>
+
+- [Create OData Services using the SAP Gateway Builder :material-alert-decagram:](create-odata-services-using-the-sap-gateway-builder.md)
 
 </div>
 

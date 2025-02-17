@@ -1,12 +1,35 @@
 [
   {
-    "Version": "2025.1.27.108",
-    "LegacyReleaseDate": "2025-01-27 00:00:00Z",
+    "Version": "2025.2.14.7",
+    "LegacyReleaseDate": "2025-02-14 00:00:00Z",
     "Changes": [
       {
         "Product": "Theobald.Extractors",
-        "Component": "OData",
-        "Message": "Added the OData extractor (preview)"
+        "Component": "Table",
+        "Message": "Fixed /THEO/READ_TABLE transports for version 710 and 740SP05"
+      }
+    ]
+  },
+  {
+    "Version": "2025.2.11.55",
+    "LegacyReleaseDate": "2025-02-11 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "Table",
+        "Message": "Fixed conversion exits in /THEO/READ_TABLE"
+      }
+    ]
+  },
+  {
+    "Version": "2025.2.7.65",
+    "LegacyReleaseDate": "2025-02-07 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "BWCube",
+        "Message": "MDX Cube: fix for failing extraction when the cache is enabled. Added handling for custom exceptional value markers in cell data.",
+        "ReleaseNote": "## What's New?\n* Fix for failing extractions in MDX mode when the cache is enabled\n* This release contains logic to handle custom strings for exceptional values e.g. for division by zero in MDX mode\n## Impact\nFrom this version on the extractor loads these settings from RSADMINC. In order to read the exceptional value display setting, read access to the table RSADMINC is required. If this authorization is not provided, the default value \"X\" will be used."
       }
     ]
   },
@@ -29,6 +52,17 @@
         "Product": "XtractForAlteryx",
         "Component": "Designer",
         "Message": "Improved error messages for license validation in the Designer."
+      }
+    ]
+  },
+  {
+    "Version": "2025.1.13.39",
+    "LegacyReleaseDate": "2025-01-13 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "BWCube",
+        "Message": "Bics mode now supports dimension attributes"
       }
     ]
   },

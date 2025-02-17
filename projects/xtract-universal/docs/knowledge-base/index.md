@@ -22,7 +22,6 @@ hide:
 - [SAP Access with {{ productName }} and Powershell](sap-access-with-xtract-universal-and-powershell.md)
 - [Run {{ productName }} in a VM on AWS EC2](run-xu-in-aws.md)
 - [Target Principal Field (TPN)](target-principal-TPN.md)
-- [Proxy Server Settings in {{ productName }}](proxy-server-settings.md)
 - [SharePoint Lists Notification using Intelligent Merge Procedure](sharepoint-lists-notification-using-intelligent-merge-procedure.md)
 
 
@@ -136,6 +135,14 @@ The following articles refer to specific [{{ components }}](../documentation/int
 
 </div>
 
+### :component-odata: OData
+
+<div class="mdx-columns" markdown>
+
+- [Create OData Services using the SAP Gateway Builder :material-alert-decagram:](create-odata-services-using-the-sap-gateway-builder.md)
+
+</div>
+
 
 ### :component-odp: ODP
 
@@ -152,7 +159,7 @@ The following articles refer to specific [{{ components }}](../documentation/int
 
 - [Authorize Access to Reports via Authorization Groups](authorize-access-to-specific-reports.md)
 - [Create the Custom Authorization Object Z_TS_PROG](create-the-custom-authority-object-z-ts-prog.md)
-- [Parse Reports in {{ productName }} :material-alert-decagram:](parse-reports.md)
+- [Parse Reports in {{ productName }}](parse-reports.md)
 
 </div>
 
