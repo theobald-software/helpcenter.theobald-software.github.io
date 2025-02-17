@@ -1,16 +1,16 @@
 
 The following article shows how to register an RFC server in SAP releases with Kernel release 720 and higher.
 
-As of SAP Kernel Release 720, you can use the parameter *gw/acl_mode* to set an initial security environment to start and register external programs, e.g., RFC Server required for DeltaQ processing / customizing check. 
-If this value is set to *1*, the DeltaQ {{ component }} cannot register the RFC Server and the Customizing Check returns the following error message: 
 
-```
-RFC server is not working, please check gateway info.
-```
 
-There are two options to avoid this error:
-- Set the Profile Parameter *gw/acl_mode* to 0.
-- Define a whitelist of programs that can register at the SAP Gateway.
+!!! warning
+	**RFC server is not working, please check gateway info.**<br>
+	As of SAP Kernel Release 720, you can use the parameter *gw/acl_mode* to set an initial security environment to start and register external programs, e.g., RFC Server required for DeltaQ processing / customizing check. 
+	If this value is set to *1*, the DeltaQ {{ component }} cannot register the RFC Server and the Customizing Check returns the an error. 
+
+	There are two options to avoid this error:
+	- Set the Profile Parameter *gw/acl_mode* to 0.
+	- Define a whitelist of programs that can register at the SAP Gateway.
 
 ### Change the Profile Parameter *gw/acl_mode*
 
@@ -26,14 +26,7 @@ The Customizing Check now executes without error messages.
 ### Define a Whitelist of Programs at the SAP Gateway
 
 To define a whitelist of programs that can register at the SAP Gateway, create two files named *secinfo* and *reginfo*. 
-Both files don't exist per default.
-
-!!! warning 
-	**Registration of the RFC-server fails.**<br>
-	The content of both files *secinfo* and *reginfo* override the parameter *gw/acl_mode*. <br>
-	Make sure that both files *secinfo* and *reginfo* allow the registration of the RFC-server.  
-
-See the example below.
+Both files don't exist per default, see the example below.
 
 1. Create the files *secinfo* and *reginfo*. The files must have the following content:
 
@@ -60,6 +53,13 @@ See the example below.
 4. Restart the gateway or re-read the security parameters using SAP transaction SMGW (navigate to **Menu -> Goto -> Expert Functions -> External Security -> Reread**). 
 
 The Customizing Check now executes without error messages.
+
+
+!!! warning 
+	**Registration of the RFC-server fails.**<br>
+	The content of both files *secinfo* and *reginfo* override the parameter *gw/acl_mode*. <br>
+	Make sure that both files *secinfo* and *reginfo* allow the registration of the RFC-server.  
+
 
 ****
 #### Related Links 
