@@ -184,9 +184,7 @@ POST /v0/connections/sap/{name}
 	}
 	```
 	
-	1.	!!! tip 
-	
-			Input values for the SAP connection can be found in the *Properties* of the SAP Logon Pad or they can be requested from the SAP Basis team.
+	1.	Input values for the SAP connection can be found in the *Properties* of the SAP Logon Pad or they can be requested from the SAP Basis team.
 
 @@@ POST http://localhost:1337/v0/connections/sap/{name} "Host": "sap-erp-as05.example.com", "User": "alice", "Password": "myPassword", "Client": "800", "Language": "en", "InstanceNo": 0
     [Content-Type: application/json]
@@ -261,11 +259,9 @@ POST /v0/connections/azureblob/{name}
 	}
 	```
 
-	1.  !!! tip
-
-			You can copy the SAS token from the Azure portal in: <br>
-			**Storage accounts > [account_name] > Data storage > Containers > [container_name] > Generate SAS**. <br>
-			![container-sas](assets/images/documentation/destinations/azure-storage/container-sas.png)
+	1.  You can copy the SAS token from the Azure portal in: <br>
+		**Storage accounts > [account_name] > Data storage > Containers > [container_name] > Generate SAS**. <br>
+		![container-sas](assets/images/documentation/destinations/azure-storage/container-sas.png)
 
 @@@ POST http://localhost:1337/v0/connections/sap/{name} "Account": "my-account", "Token": "sv=YYYY-MM-DD&ss=...%3D", "Container": "container"
     [Content-Type: application/json]
