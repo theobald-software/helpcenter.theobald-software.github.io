@@ -8,7 +8,7 @@ Use wildcards (*), if needed.<br>
 3. Click **[Search]**. Search results are displayed.
 ![Look-Up-ODP](../../assets/images/documentation/components/odata/odata-lookup.png){:class="img-responsive"}	
 4. Click **[:material-greater-than:]** to select a service :number-2:. 
-The SAP objects that are available via the service are displayed in the right screen of the menu:
+The SAP objects that are available via the service are displayed in the right screen of the menu.
 5. Select a service entity :number-3: and click **[OK]** to confirm.
 
 The application now returns to the main window of the {{ component }}.
