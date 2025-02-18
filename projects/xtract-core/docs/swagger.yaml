@@ -22,6 +22,83 @@ tags:
       description: Find out more
       url: https://helpcenter.theobald-software.com/xtract-coregetting-started/#run-extractions
 paths:
+  /v0/connections/sap/{name}:
+    post:
+      tags:
+        - connections
+      summary: Create a connection to an SAP system.
+      description: ''
+      operationId: addsap
+      produces:
+        - text/plain
+      parameters:
+        - name: name
+          in: path
+          description: Provide a name for the new SAP connection. Allowed characters are uppercase and lowercase Latin letters (A–Z, a–z) and digits (0–9). The name can not start with a number. Names are unique and not case-sensitive.
+          required: true
+          type: string
+        - in: body
+          name: body
+          description: |
+            Provide the connection settings of the SAP system. Values can be found in the *Properties* of the SAP Logon Pad or they can be requested from the SAP Basis team.<br><br>
+            
+             | Property | Description | Required |
+             |-----------|------------|----------|
+             | **Host**     | Host name or IP address of the SAP application server (Property *Host*) | Yes |
+             | **Client**    | A three-digit number of the SAP client between 000 and 999, e.g., 800. | Yes |
+             | **InstanceNo**    |  A two-digit number between 00 and 99 (Property *SystemNumber*). | Yes |
+             | **Language**     | The logon language for the SAP system, e.g., 'EN' for English or 'DE' for German. | Yes |
+             | **User**    | Name of an SAP dialog user. | Yes |
+             | **Password**    |  Password of the SAP user. | Yes |
+          required: true
+          schema:
+            $ref: '#/definitions/SAP'
+      responses:
+        '200':
+          description: Operation successful
+          schema:
+            type: string
+            example: The connection was created successfully. Connected to SAP host 'sap-erp-as05.example.com', instance 00, release 756, codepage 4103, user 'ALICE'
+        '500':
+          description: An error occured. The response body contains different error messages depending on the failure cause. All errors return a 500 status code.
+  /v0/connections/azureblob/{name}:
+    post:
+      tags:
+        - connections
+      summary: Create a connection to an Azure Blob storage.
+      description: ''
+      operationId: addazure
+      consumes:
+        - application/json
+      produces:
+        - text/plain
+      parameters:
+        - name: name
+          in: path
+          description: Provide a name for the new Azure Blob storage connection. Allowed characters are uppercase and lowercase Latin letters (A–Z, a–z) and digits (0–9). The name can not start with a number. Names are unique and not case-sensitive.
+          required: true
+          type: string
+        - in: body
+          name: body
+          description: |
+            Provide the connection settings of the Azure Blob storage.<br><br>
+      
+             | Property | Description | Required |
+             |-----------|------------|----------|
+             | **Account**     | Name of the storage account. Do not enter the full URL. | Yes |
+             | **Container**    | Name of an existing Azure storage container. | Yes |
+             | **Token**    |  The [Shared Access Signature (SAS) token](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/authentication/create-sas-tokens?view=doc-intel-4.0.0&tabs=azure-portal#use-the-azure-portal) of the storage container. | Yes |
+          required: true
+          schema:
+            $ref: '#/definitions/Azure'
+      responses:
+        '200':
+          description: Operation successful
+          schema:
+            type: string
+            example: The connection was tested and created succesfully.
+        '500':
+          description: An error occured. The response body contains different error messages depending on the failure cause. All errors return a 500 status code.
   /v0/connections/:
     get:
       tags:
@@ -48,45 +125,6 @@ paths:
                     type:
                       type: string
                       example: SapRfc
-  /v0/connections/sap/{name}:
-    post:
-      tags:
-        - connections
-      summary: Create a connection to an SAP system.
-      description: ''
-      operationId: addsap
-      produces:
-        - text/plain
-      parameters:
-        - name: name
-          in: path
-          description: Name for the new SAP connection. Allowed characters are uppercase and lowercase Latin letters (A–Z, a–z) and digits (0–9). The name must not start with a number. Names are unique and not case-sensitive, beecause the names of connections map to a directory on the file system.
-          required: true
-          type: string
-        - in: body
-          name: body
-          description: |
-            Connection settings of the SAP system. Values can be found in the *Properties* of the SAP Logon Pad or they can be requested from the SAP Basis team.<br><br>
-            
-             | Property | Description | Required |
-             |-----------|------------|----------|
-             | **Host**     | Host name or IP address of the SAP application server (Property *Host*) | Yes |
-             | **Client**    | A three-digit number of the SAP client between 000 and 999, e.g., 800. | Yes |
-             | **InstanceNo**    |  A two-digit number between 00 and 99 (Property *SystemNumber*). | Yes |
-             | **Language**     | The logon language for the SAP system, e.g., 'EN' for English or 'DE' for German. | Yes |
-             | **User**    | Name of an SAP dialog user. | Yes |
-             | **Password**    |  Password of the SAP user. | Yes |
-          required: true
-          schema:
-            $ref: '#/definitions/SAP'
-      responses:
-        '200':
-          description: Operation successful
-          schema:
-            type: string
-            example: The connection was created successfully. Connected to SAP host 'sap-erp-as05.example.com', instance 00, release 756, codepage 4103, user 'ALICE'
-        '500':
-          description: An error occured. The response body contains different error messages depending on the failure cause. All errors return a 500 status code.
   /v0/connections/sap/{name}/test:
     get:
       tags:
@@ -101,7 +139,7 @@ paths:
       parameters:
         - name: name
           in: path
-          description: Name for the SAP connection you want to test.
+          description: Name of the SAP connection you want to test.
           required: true
           type: string
       responses:
@@ -112,67 +150,6 @@ paths:
             example: Connected to SAP host 'sap-erp-as05.example.com', instance 00, release 756, codepage 4103, user 'ALICE'
         '404':
           description: Indicates that the connection does not exist
-  /v0/connections/azureblob/{name}:
-    post:
-      tags:
-        - connections
-      summary: Create a connection to an Azure Blob storage.
-      description: ''
-      operationId: addazure
-      consumes:
-        - application/json
-      produces:
-        - text/plain
-      parameters:
-        - name: name
-          in: path
-          description: Name for the new Azure Blob storage connection. Allowed characters are uppercase and lowercase Latin letters (A–Z, a–z) and digits (0–9). The name must not start with a number. Names are unique and not case-sensitive, beecause the names of connections map to a directory on the file system.
-          required: true
-          type: string
-        - in: body
-          name: body
-          description: |
-            Connection settings of the Azure Blob storage.<br><br>
-      
-             | Property | Description | Required |
-             |-----------|------------|----------|
-             | **Account**     | Name of the storage account. Do not enter the full URL. | Yes |
-             | **Container**    | Name of an existing Azure storage container. | Yes |
-             | **Token**    |  The [Shared Access Signature (SAS) token](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/authentication/create-sas-tokens?view=doc-intel-4.0.0&tabs=azure-portal#use-the-azure-portal) of the storage container. | Yes |
-          required: true
-          schema:
-            $ref: '#/definitions/Azure'
-      responses:
-        '200':
-          description: Operation successful
-          schema:
-            type: string
-            example: The connection was tested and created succesfully.
-        '500':
-          description: An error occured. The response body contains different error messages depending on the failure cause. All errors return a 500 status code.
-  /v0/connections/{name}:
-    delete:
-      tags:
-        - connections
-      summary: Delete a connection.
-      description: ''
-      operationId: deleteconnection
-      produces:
-        - string
-      parameters:
-        - name: name
-          in: path
-          description: Name of the connection you want to delete.
-          required: true
-          type: string
-      responses:
-        '200':
-          description: Operation successful
-          schema:
-            type: string
-            example: The connection was deleted successfully.
-        '404':
-          description: Indicates that the connection does not exist.
   /v0/connections/sap/{name}/tables:
     get:
       tags:
@@ -255,6 +232,71 @@ paths:
                       example: 3
         '500':
           description: An error occured. The response body contains different error messages depending on the failure cause. All errors return a 500 status code.
+  /v0/connections/{name}:
+    delete:
+      tags:
+        - connections
+      summary: Delete a connection.
+      description: ''
+      operationId: deleteconnection
+      produces:
+        - string
+      parameters:
+        - name: name
+          in: path
+          description: Name of the connection you want to delete.
+          required: true
+          type: string
+      responses:
+        '200':
+          description: Operation successful
+          schema:
+            type: string
+            example: The connection was deleted successfully.
+        '404':
+          description: Indicates that the connection does not exist.
+  /v0/extractions/table/{name}:
+    post:
+      tags:
+        - extractions
+      summary: Create an extraction that writes data from an SAP table to a destination.
+      description: ''
+      operationId: addextraction
+      consumes:
+        - application/json
+      produces:
+        - string
+      parameters:
+        - name: name
+          in: path
+          description: Name for the new extraction. Allowed characters are uppercase and lowercase Latin letters (A–Z, a–z) and digits (0–9). The name must not start with a number. Names are unique and not case-sensitive, beecause the names of connections map to a directory on the file system.
+          required: true
+          type: string
+        - in: body
+          name: body
+          description: |
+            Extraction settings for the table extraction.<br><br>
+      
+             | Property | Description | Required |
+             |-----------|------------|----------|
+             | **Table**     | Name of the SAP table you want to extract data from. | Yes |
+             | **Where**    | WHERE clause to filter table records. | Yes |
+             | **Source**    | Name of an existing SAP connection. | Yes |
+             | **Destination**| Name of a destination connection, e.g., to an Azure Blob Storage container. | Yes |
+             | **Columns** | Define which SAP table columns to extract. If omitted, all columns are extracted. | No |
+             | **ResultName** | Name of the new table in the target environment. If omitted, the name of the extration is also the name of the new table. | No |
+             | **FunctionModule** | Name of the function module that is used to extract SAP tables. If omitted, the SAP standard function module *RFC_READ_TABLE* is used. The installation of */THEO/READ_TABLE* is recommended. For more information, see [Function Module for Tables](knowledge-base/custom-function-module-for-table-extraction.md). | No |
+          required: true
+          schema:
+            $ref: '#/definitions/Table'
+      responses:
+        '200':
+          description: Operation successful
+          schema:
+            type: string
+            example: The extraction was created successfully.
+        '500':
+          description: An error occured. The response body contains different error messages depending on the failure cause. All errors return a 500 status code.
   /v0/extractions/:
     get:
       tags:
@@ -318,48 +360,6 @@ paths:
                               example: ""
         '500':
           description: An error occured. The response body contains different error messages depending on the failure cause. All errors return a 500 status code.
-  /v0/extractions/table/{name}:
-    post:
-      tags:
-        - extractions
-      summary: Create an extraction that writes data from an SAP table to a destination.
-      description: ''
-      operationId: addextraction
-      consumes:
-        - application/json
-      produces:
-        - string
-      parameters:
-        - name: name
-          in: path
-          description: Name for the new extraction. Allowed characters are uppercase and lowercase Latin letters (A–Z, a–z) and digits (0–9). The name must not start with a number. Names are unique and not case-sensitive, beecause the names of connections map to a directory on the file system.
-          required: true
-          type: string
-        - in: body
-          name: body
-          description: |
-            Extraction settings for the table extraction.<br><br>
-      
-             | Property | Description | Required |
-             |-----------|------------|----------|
-             | **Table**     | Name of the SAP table you want to extract data from. | Yes |
-             | **Where**    | WHERE clause to filter table records. | Yes |
-             | **Source**    | Name of an existing SAP connection. | Yes |
-             | **Destination**| Name of a destination connection, e.g., to an Azure Blob Storage container. | Yes |
-             | **Columns** | Define which SAP table columns to extract. If omitted, all columns are extracted. | No |
-             | **ResultName** | Name of the new table in the target environment. If omitted, the name of the extration is also the name of the new table. | No |
-             | **FunctionModule** | Name of the function module that is used to extract SAP tables. If omitted, the SAP standard function module *RFC_READ_TABLE* is used. The installation of */THEO/READ_TABLE* is recommended. For more information, see [Function Module for Tables](knowledge-base/custom-function-module-for-table-extraction.md). | No |
-          required: true
-          schema:
-            $ref: '#/definitions/Table'
-      responses:
-        '200':
-          description: Operation successful
-          schema:
-            type: string
-            example: The extraction was created successfully.
-        '500':
-          description: An error occured. The response body contains different error messages depending on the failure cause. All errors return a 500 status code.
   /v0/extractions/{name}:
     delete:
       tags:
@@ -388,7 +388,7 @@ paths:
       tags:
         - run
       summary: Run an extraction and wait for the result.
-      description: 'TThe `run` endpoint runs an extractions synchronously and returns the HTTP response head as soon as the server receives the first data package. The response header contains the timestamp of the extraction and the response body contains the logs of the extraction.'
+      description: 'The `run` endpoint runs an extractions synchronously and returns the HTTP response head as soon as the server receives the first data package. The response header contains the timestamp of the extraction and the response body contains the logs of the extraction.'
       operationId: runextraction
       produces:
         - text/csv
