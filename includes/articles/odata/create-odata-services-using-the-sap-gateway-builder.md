@@ -1,5 +1,5 @@
 
-This article shows how to use the SAP Gateway Builder to create OData services that provide ODP based data for the {% if page.meta.product == 'xtract-universal' %}[{{ odata }} {{ component }}](../documentation/odata/index.md){% else %}[{{ odpOdata }} {{ component }}](../documentation/odp-odata/index.md){% endif %} of {{ productName }}.
+This article shows how to use the SAP Gateway Builder to create OData services that provide ODP based data for the {% if page.meta.product == 'xtract-for-alteryx' %}[{{ odpOdata }} {{ component }}](../documentation/odp-odata/index.md){% else %}[{{ odata }} {{ component }}](../documentation/odata/index.md){% endif %} of {{ productName }}.
 
 !!! note
 	This article focuses on SAP on-premise systems. 
@@ -122,13 +122,23 @@ Follow the steps below to register and activate the service:
 7. Check the service information and click **Continue** (:material-check:). The window "Add Service" closes.
 8. Exit the "Add Selected Services" menu and check if the service is now listed in the service catalog.
 
-The service can now be consumed by {{ productName }}'s {% if page.meta.product == 'xtract-universal' %}{{ odata }}{% else %}{{ odpOdata }}{% endif %} {{ component }}.
-For more information, see [Documentation: OData](../documentation/odata/index.md).
+The service can now be consumed by {{ productName }}'s {% if page.meta.product == 'xtract-for-alteryx' %}{{ odpOdata }}{% else %}{{ odata }}{% endif %} {{ component }}.
+
+{% if page.meta.product == 'board-connector' %}
+
+=== "Lookup"
+	![sap-gwb-{{ abbr }}](../assets/images/articles/odata/sap-gwb-xu.png)
+=== "Data Preview"
+	![sap-gwb-{{ abbr }}-preview](../assets/images/articles/odata/sap-gwb-xu-preview.png)
+
+{% else %}
 
 === "Lookup"
 	![sap-gwb-{{ abbr }}](../assets/images/articles/odata/sap-gwb-{{ abbr }}.png)
 === "Data Preview"
 	![sap-gwb-{{ abbr }}-preview](../assets/images/articles/odata/sap-gwb-{{ abbr }}-preview.png)
+
+{% endif %}
 
 *****
 

@@ -143,7 +143,11 @@ markdown_extensions:
       title: On this Page
   - pymdownx.snippets:
       base_path: includes
-  - pymdownx.superfences #for content tabs (version history)
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.keys
   - pymdownx.tabbed:
       alternate_style: true
