@@ -68,8 +68,8 @@ theme:
   font:
     text: Poppins
     code: Roboto Mono
-  #favicon: assets/images/logos/products/YunIO.png
-  #logo: assets/images/logos/products/YunIO.png
+  favicon: assets/images/logos/products/XtractCore.png
+  logo: assets/images/logos/products/XtractCore.png
 
 # Custom CSS
 extra_css:
