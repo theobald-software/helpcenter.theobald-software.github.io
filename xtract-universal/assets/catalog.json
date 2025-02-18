@@ -1,13 +1,19 @@
 [
   {
-    "Version": "2025.2.18.30",
+    "Version": "2025.2.18.32",
     "LegacyReleaseDate": "2025-02-18 00:00:00Z",
     "Changes": [
       {
         "Product": "XtractUniversal",
         "Component": "GoogleCloudStorage",
         "Message": "Fixed a bug where choosing large thresholds (&gt;1024MB) for file splitting could result in an error during extraction due to exceeding the maximum size allowed for buffers."
-      },
+      }
+    ]
+  },
+  {
+    "Version": "2025.2.18.30",
+    "LegacyReleaseDate": "2025-02-18 00:00:00Z",
+    "Changes": [
       {
         "Product": "Theobald.Extractors",
         "Component": "TableCDC",
