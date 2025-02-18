@@ -1,5 +1,16 @@
 [
   {
+    "Version": "2025.2.18.22",
+    "LegacyReleaseDate": "2025-02-18 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "TableCDC",
+        "Message": "Improved performance of log table clearance operation. Requires update of /THEO/CDC."
+      }
+    ]
+  },
+  {
     "Version": "2025.2.14.8",
     "LegacyReleaseDate": "2025-02-14 00:00:00Z",
     "Changes": [
