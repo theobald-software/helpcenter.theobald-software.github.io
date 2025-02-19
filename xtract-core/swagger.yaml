@@ -38,11 +38,13 @@ tags:
       An extraction can be executed synchronously (`run`) or asynchronously (`start`). 
       The response of an extraction run contains the following information:
 
-      | Response | Description |
-      |----------|-------------|
-      | HTTP status code | The HTTP status code 200 indicates a successful extraction call. It does not indicate a successful execution of the extraction. The HTTP status code 404 indicates that the called extraction does not exist. Detailed information can be found in the log of the web service. |
-      | HTTP header | Shows the timestamp of the extraction, e.g., X-XU-Timestamp: 2025-01-24_19:03:09.971. The timestamp is unique and can be used to query status information and logs of the extraction. |
-      | HTTP response body | The response body of the extraction contains the extraction log. |
+      - **HTTP Status Code** 
+        - The HTTP status code 200 indicates a successful extraction call. It does not indicate a successful execution of the extraction. 
+        - The HTTP status code 404 indicates that the called extraction does not exist. Detailed information can be found in the log of the web service. 
+      - **HTTP Header**
+        - Shows the timestamp of the extraction, e.g., X-XU-Timestamp: 2025-01-24_19:03:09.971. The timestamp is unique and can be used to query status information and logs of the extraction. 
+      - **HTTP Response Body**
+        - The response body of the extraction contains the extraction log. 
 
 paths:
   /v0/connections/sap/{name}:
