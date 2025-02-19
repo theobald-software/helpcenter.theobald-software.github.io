@@ -1,6 +1,8 @@
 ---
 title: Xtract Core API Reference
 description: Learn how to use the Xtract Core endpoints.
+api: true
+template: api.html
 hide:
   - navigation
   - tags
@@ -8,11 +10,12 @@ hide:
 ---
 
 <style>
-.md-grid {
-  max-width: 100%; /* or 100%, if you want to stretch to full-width */
-}
+
 .md-main__inner.md-grid{
   max-width: 100%;
+  display: flex;
+  height: 100%;
+  margin-top: 0rem
 }
 
 .md-typeset h1,

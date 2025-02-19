@@ -3,6 +3,9 @@
 <!-- taken from 
 https://github.com/squidfunk/mkdocs-material/blob/master/src/partials/source-file.html -->
 
+{% if page.meta.api %}
+{% else %}
+
 <hr />
 <div class="md-source-file">
 <small>
@@ -26,5 +29,7 @@ https://github.com/squidfunk/mkdocs-material/blob/master/src/partials/source-fil
     {% if page.meta.author %}
         Written by: {{ page.meta.author }}
     {% endif %}
+    
 </small>
 </div>
+{% endif %}

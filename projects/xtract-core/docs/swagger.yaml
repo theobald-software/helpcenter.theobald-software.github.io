@@ -17,10 +17,10 @@ info:
   version: 1.0.0
   title: Xtract Core
   x-logo:
-    url: 'https://helpcenter.theobald-software.com/assets/images/xtract-core.svg'
+    url: 'https://helpcenter.theobald-software.com/xtract-core/XtractCore.png'
     altText: Xtract Core logo
 host: localhost
-basePath: /v0
+#basePath: /v0
 tags:
   - name: Connections
     description: |
