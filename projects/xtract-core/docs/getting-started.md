@@ -375,7 +375,7 @@ Use the following endpoint to run an extraction and wait for the result:
 	```http
 	GET /run/{name} HTTP/1.1
 	Host: localhost:1337
-	
+	 
 	```
 
 @@@ GET http://localhost:1337/run/{name}/
@@ -393,7 +393,7 @@ Use the following endpoint to run an extraction without waiting for the results:
 	```http
 	GET /start/{name} HTTP/1.1
 	Host: localhost:1337
-	
+	 
 	```
 
 @@@ GET http://localhost:1337/start/{name}/
