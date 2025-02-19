@@ -108,6 +108,7 @@ plugins:
         - curl
         - javascript
   - awesome-pages # define navigation in .pages files
+  - redoc-tag
   - swagger-ui-tag:
       supportedSubmitMethods: []
       #filter: true

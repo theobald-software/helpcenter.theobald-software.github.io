@@ -8,10 +8,18 @@ hide:
 ---
 
 <style>
-  .md-typeset h1,
+.md-grid {
+  max-width: 100%; /* or 100%, if you want to stretch to full-width */
+}
+.md-main__inner.md-grid{
+  max-width: 100%;
+}
+
+.md-typeset h1,
   .md-content__button {
     display: none;
   }
+
 </style>
 
-<swagger-ui src="swagger.json"/>
+<redoc src="swagger.yaml"/>

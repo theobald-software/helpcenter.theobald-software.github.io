@@ -1,7 +1,8 @@
 nav:
     #- Home: index.md
     - Getting Started: getting-started.md
+    - API Reference (SwaggerUI): api-reference.md
+    - API Reference (Redoc): api-reference-redoc.md
     - Knowledge Base: knowledge-base/
-    - API Reference: api-reference.md
     #- Changelog: changelog.md
     - Support: https://support.theobald-software.com/helpdesk

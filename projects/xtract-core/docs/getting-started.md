@@ -152,9 +152,9 @@ You can change the port in the `listener.json` file using the property *securePo
 
 ## Connections
 
-At least 2 connections are required to extract data from SAP:
-- A connection to an SAP source system.
-- A connection to a destination in which the data is written.
+At least 2 connections are required to create extractions:
+- A connection to an SAP source system to extract data from.
+- A connection to a destination to write data to.
 
 For information on connection endpoints, refer to the [API Reference](api-reference.md).
 
@@ -263,7 +263,7 @@ POST /v0/connections/azureblob/{name}
 		**Storage accounts > [account_name] > Data storage > Containers > [container_name] > Generate SAS**. <br>
 		![container-sas](assets/images/documentation/destinations/azure-storage/container-sas.png)
 
-@@@ POST http://localhost:1337/v0/connections/sap/{name} "Account": "my-account", "Token": "sv=YYYY-MM-DD&ss=...%3D", "Container": "container"
+@@@ POST http://localhost:1337/v0/connections/azureblob/{name} "Account": "my-account", "Token": "sv=YYYY-MM-DD&ss=...%3D", "Container": "container"
     [Content-Type: application/json]
     [Content-Length: 223]
 
@@ -353,8 +353,8 @@ The HTTP request body for creating table extractions supports the following sett
 
 ## Run Extractions
 
-Extractions are triggered by an HTTP request and executed on the web server.
-Extractions can be started either synchronous or asynchronous. 
+Extractions are executed on the web server.
+An extraction can be executed synchronously (`run`) or asynchronously (`start`). 
 The response of an extraction run contains the following information:
 
 | Response | Description |
@@ -364,9 +364,6 @@ The response of an extraction run contains the following information:
 | HTTP response body | The response body of the extraction contains the extraction log. |
 
 For information, refer to the [API Reference](api-reference.md).
-
-!!! note 
-	The status code 200 indicates a successful extraction call. It does not indicate a successful execution of the extraction.
 
 
 ### :material-arrow-right-thin: Synchronous Extractions
@@ -381,11 +378,10 @@ Use the following endpoint to run an extraction and wait for the result:
 	
 	```
 
-@@@ GET http://localhost:1337/run{name}/
+@@@ GET http://localhost:1337/run/{name}/
 
 !!! note
 	Any issue that occure before the first data package is received, result in a 4XX or 5XX status code.
-
 
 ### :material-shuffle-disabled: Asynchronous Extractions
 
@@ -400,7 +396,7 @@ Use the following endpoint to run an extraction without waiting for the results:
 	
 	```
 
-@@@ GET http://localhost:1337/start{name}/
+@@@ GET http://localhost:1337/start/{name}/
 
 
 ### Extraction Parameters
