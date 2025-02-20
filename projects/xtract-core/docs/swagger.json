@@ -1,42 +1,30 @@
 {
   "swagger": "2.0",
   "info": {
-    "description": "Xtract Core is a whitelabel Web API server for developing your own SAP interfaces. \nThe Xtract Core API enables you to extract data from various SAP sytsems and write them to a target environment. \nFor more information about Xtract Core, refer to the [Xtract Core HelpCenter](https://helpcenter.theobald-software.com/xtract-core/).",
+    "description": "Xtract Core is a whitelabel Web API server for developing your own SAP interfaces. \nThe Xtract Core API enables you to extract data from various SAP sytsems and write them to a target environment. \nFor more information about Xtract Core, refer to the [Xtract Core HelpCenter](https://helpcenter.theobald-software.com/xtract-core/).\n\n## About Parameters\nThe Xtract Core API uses the following parameter types:\n- **Path parameters** are part of the request URL and are used to address specific resources. They are referenced by placeholders in curved brackets. Example: <br> */v0/connections/sap/<mark>{name}</mark>/tables?pattern=ma** \n- **Query parameters** are added to the end of a request URL, following '?'. They are listed in key-value pairs, separated by '&'. Query parameters can be used for filtering or sorting.  Example: <br> */v0/connections/sap/{name}/tables<mark>?pattern=ma*</mark>* \n- **Body parameters** are passed in the request body of POST methods to add or update structured data. \n",
     "version": "1.0.0",
     "title": "Xtract Core"
   },
   "host": "localhost",
   "tags": [
     {
-      "name": "connections",
-      "description": "Everything about your connections to data sources and target environments.",
-      "externalDocs": {
-        "description": "Find out more",
-        "url": "https://helpcenter.theobald-software.com/xtract-core/getting-started/#connections"
-      }
+      "name": "Connections",
+      "description": "How to create or access information in data sources and target environments."
     },
     {
-      "name": "extractions",
-      "description": "Everything about your data extractions.",
-      "externalDocs": {
-        "description": "Find out more",
-        "url": "https://helpcenter.theobald-software.com/xtract-coregetting-started/#extractions"
-      }
+      "name": "Extractions",
+      "description": "How to create extractons that load data from a source system into a target environment."
     },
     {
-      "name": "run",
-      "description": "Everything about running extractions.",
-      "externalDocs": {
-        "description": "Find out more",
-        "url": "https://helpcenter.theobald-software.com/xtract-coregetting-started/#run-extractions"
-      }
+      "name": "Run Extractions",
+      "description": "How to run data extractions on the web server."
     }
   ],
   "paths": {
     "/v0/connections/sap/{name}": {
       "post": {
         "tags": [
-          "connections"
+          "Connections"
         ],
         "summary": "Create a connection to an SAP system.",
         "description": "",
@@ -55,20 +43,56 @@
           {
             "in": "body",
             "name": "body",
-            "description": "Provide the connection settings of the SAP system. Values can be found in the *Properties* of the SAP Logon Pad or they can be requested from the SAP Basis team.<br><br>\n\n | Property | Description | Required |\n |-----------|------------|----------|\n | **Host**     | Host name or IP address of the SAP application server (Property *Host*) | Yes |\n | **Client**    | A three-digit number of the SAP client between 000 and 999, e.g., 800. | Yes |\n | **InstanceNo**    |  A two-digit number between 00 and 99 (Property *SystemNumber*). | Yes |\n | **Language**     | The logon language for the SAP system, e.g., 'EN' for English or 'DE' for German. | Yes |\n | **User**    | Name of an SAP dialog user. | Yes |\n | **Password**    |  Password of the SAP user. | Yes |\n",
+            "description": "Provide the connection settings of the SAP system. Values can be found in the *Properties* of the SAP Logon Pad or they can be requested from the SAP Basis team.\n",
             "required": true,
             "schema": {
-              "$ref": "#/definitions/SAP"
+              "type": "object",
+              "required": [
+                "Host",
+                "Client",
+                "InstanceNo",
+                "Language",
+                "User",
+                "Password"
+              ],
+              "properties": {
+                "Host": {
+                  "type": "string",
+                  "description": "Host name or IP address of the SAP application server (Property Host)",
+                  "example": "sap-erp-as05.example.com"
+                },
+                "Client": {
+                  "type": "string",
+                  "description": "A three-digit number of the SAP client between 000 and 999, e.g., 800.",
+                  "example": "100"
+                },
+                "InstanceNo": {
+                  "type": "number",
+                  "description": "A two-digit number between 00 and 99 (Property SystemNumber).",
+                  "example": 0
+                },
+                "Language": {
+                  "type": "string",
+                  "description": "The logon language for the SAP system, e.g., 'EN' for English or 'DE' for German.",
+                  "example": "en"
+                },
+                "User": {
+                  "type": "string",
+                  "description": "Name of an SAP dialog user.",
+                  "example": "alice"
+                },
+                "Password": {
+                  "type": "string",
+                  "description": "Password of the SAP user.",
+                  "example": "myPassword"
+                }
+              }
             }
           }
         ],
         "responses": {
           "200": {
-            "description": "Operation successful",
-            "schema": {
-              "type": "string",
-              "example": "The connection was created successfully. Connected to SAP host 'sap-erp-as05.example.com', instance 00, release 756, codepage 4103, user 'ALICE'"
-            }
+            "description": "Operation successful"
           },
           "500": {
             "description": "An error occured. The response body contains different error messages depending on the failure cause. All errors return a 500 status code."
@@ -79,7 +103,7 @@
     "/v0/connections/azureblob/{name}": {
       "post": {
         "tags": [
-          "connections"
+          "Connections"
         ],
         "summary": "Create a connection to an Azure Blob storage.",
         "description": "",
@@ -101,20 +125,38 @@
           {
             "in": "body",
             "name": "body",
-            "description": "Provide the connection settings of the Azure Blob storage.<br><br>\n\n | Property | Description | Required |\n |-----------|------------|----------|\n | **Account**     | Name of the storage account. Do not enter the full URL. | Yes |\n | **Container**    | Name of an existing Azure storage container. | Yes |\n | **Token**    |  The [Shared Access Signature (SAS) token](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/authentication/create-sas-tokens?view=doc-intel-4.0.0&tabs=azure-portal#use-the-azure-portal) of the storage container. | Yes |\n",
+            "description": "Provide the connection settings of the Azure Blob storage.\n",
             "required": true,
             "schema": {
-              "$ref": "#/definitions/Azure"
+              "type": "object",
+              "required": [
+                "Account",
+                "Container",
+                "Token"
+              ],
+              "properties": {
+                "Account": {
+                  "type": "string",
+                  "description": "Name of the storage account. Do not enter the full URL.",
+                  "example": "my-account"
+                },
+                "Container": {
+                  "type": "string",
+                  "description": "Name of an existing Azure storage container.",
+                  "example": "container"
+                },
+                "Token": {
+                  "type": "string",
+                  "description": "The [Shared Access Signature (SAS) token](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/authentication/create-sas-tokens?view=doc-intel-4.0.0&tabs=azure-portal#use-the-azure-portal) of the storage container.",
+                  "example": "sv=YYYY-MM-DD&ss=...%3D"
+                }
+              }
             }
           }
         ],
         "responses": {
           "200": {
-            "description": "Operation successful",
-            "schema": {
-              "type": "string",
-              "example": "The connection was tested and created succesfully."
-            }
+            "description": "Operation successful"
           },
           "500": {
             "description": "An error occured. The response body contains different error messages depending on the failure cause. All errors return a 500 status code."
@@ -125,7 +167,7 @@
     "/v0/connections/": {
       "get": {
         "tags": [
-          "connections"
+          "Connections"
         ],
         "summary": "Get a list of existing connections.",
         "description": "",
@@ -146,10 +188,12 @@
                     "properties": {
                       "name": {
                         "type": "string",
+                        "description": "Name of the SAP connection.",
                         "example": "s4hana"
                       },
                       "type": {
                         "type": "string",
+                        "description": "Type of the connection, e.g., \"SapRFC\" for SAP connections or \"AzureBlob\" for Azure storage connections.",
                         "example": "SapRfc"
                       }
                     }
@@ -164,7 +208,7 @@
     "/v0/connections/sap/{name}/test": {
       "get": {
         "tags": [
-          "connections"
+          "Connections"
         ],
         "summary": "Test a connection to an SAP system.",
         "description": "",
@@ -186,11 +230,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Operation successful",
-            "schema": {
-              "type": "string",
-              "example": "Connected to SAP host 'sap-erp-as05.example.com', instance 00, release 756, codepage 4103, user 'ALICE'"
-            }
+            "description": "Operation successful"
           },
           "404": {
             "description": "Indicates that the connection does not exist"
@@ -201,7 +241,7 @@
     "/v0/connections/sap/{name}/tables": {
       "get": {
         "tags": [
-          "connections"
+          "Connections"
         ],
         "summary": "Get name and description of all tables on the SAP system.",
         "description": "",
@@ -236,10 +276,12 @@
                 "properties": {
                   "name": {
                     "type": "string",
+                    "description": "Name of the SAP table.",
                     "example": "MARA"
                   },
                   "description": {
                     "type": "string",
+                    "description": "Description text of the SAP table.",
                     "example": "General Material Data"
                   }
                 }
@@ -255,7 +297,7 @@
     "/v0/connections/sap/{name}/tables/{table}": {
       "get": {
         "tags": [
-          "connections"
+          "Connections"
         ],
         "summary": "Get name, description and data type of all columns in an SAP table.",
         "description": "",
@@ -292,18 +334,22 @@
                     "properties": {
                       "name": {
                         "type": "string",
+                        "description": "Name of the table column.",
                         "example": "MANDT"
                       },
                       "description": {
                         "type": "string",
+                        "description": "Description text of the table column.",
                         "example": "Client"
                       },
                       "type": {
                         "type": "string",
+                        "description": "Data type of the table column.",
                         "example": "CharacterString"
                       },
                       "length": {
                         "type": "integer",
+                        "description": "Length of the fields inside the table column, e.g., \"3\" means that the fields inside the table columns can contain up to 3 characters.",
                         "example": 3
                       }
                     }
@@ -321,13 +367,13 @@
     "/v0/connections/{name}": {
       "delete": {
         "tags": [
-          "connections"
+          "Connections"
         ],
         "summary": "Delete a connection.",
         "description": "",
         "operationId": "deleteconnection",
         "produces": [
-          "string"
+          "text/plain"
         ],
         "parameters": [
           {
@@ -340,11 +386,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Operation successful",
-            "schema": {
-              "type": "string",
-              "example": "The connection was deleted successfully."
-            }
+            "description": "Operation successful"
           },
           "404": {
             "description": "Indicates that the connection does not exist."
@@ -355,7 +397,7 @@
     "/v0/extractions/table/{name}": {
       "post": {
         "tags": [
-          "extractions"
+          "Extractions"
         ],
         "summary": "Create an extraction that writes data from an SAP table to a destination.",
         "description": "",
@@ -364,7 +406,7 @@
           "application/json"
         ],
         "produces": [
-          "string"
+          "text/plain"
         ],
         "parameters": [
           {
@@ -377,20 +419,66 @@
           {
             "in": "body",
             "name": "body",
-            "description": "Extraction settings for the table extraction.<br><br>\n\n | Property | Description | Required |\n |-----------|------------|----------|\n | **Table**     | Name of the SAP table you want to extract data from. | Yes |\n | **Where**    | WHERE clause to filter table records. | Yes |\n | **Source**    | Name of an existing SAP connection. | Yes |\n | **Destination**| Name of a destination connection, e.g., to an Azure Blob Storage container. | Yes |\n | **Columns** | Define which SAP table columns to extract. If omitted, all columns are extracted. | No |\n | **ResultName** | Name of the new table in the target environment. If omitted, the name of the extration is also the name of the new table. | No |\n | **FunctionModule** | Name of the function module that is used to extract SAP tables. If omitted, the SAP standard function module *RFC_READ_TABLE* is used. The installation of */THEO/READ_TABLE* is recommended. For more information, see [Function Module for Tables](knowledge-base/custom-function-module-for-table-extraction.md). | No |\n",
+            "description": "Extraction settings for the table extraction.",
             "required": true,
             "schema": {
-              "$ref": "#/definitions/Table"
+              "type": "object",
+              "required": [
+                "Table",
+                "Where",
+                "Source",
+                "Destination"
+              ],
+              "properties": {
+                "Table": {
+                  "type": "string",
+                  "description": "Name of the SAP table you want to extract data from.",
+                  "example": "MARA"
+                },
+                "Where": {
+                  "type": "string",
+                  "description": "WHERE clause to filter table records.",
+                  "example": "MATNR = 000000000001"
+                },
+                "Source": {
+                  "type": "string",
+                  "description": "Name of an existing SAP connection.",
+                  "example": "s4hana"
+                },
+                "Destination": {
+                  "type": "string",
+                  "description": "Name of a destination connection, e.g., to an Azure Blob Storage container.",
+                  "example": "azure"
+                },
+                "Columns": {
+                  "type": "array",
+                  "description": "Define which SAP table columns to extract. If omitted, all columns are extracted.",
+                  "items": {
+                    "type": "string",
+                    "description": "List of table columns (technical names).",
+                    "example": [
+                      "MATNR",
+                      "MANDT"
+                    ]
+                  }
+                },
+                "ResultName": {
+                  "type": "string",
+                  "description": "Name of the new table in the target environment. If omitted, the name of the extration is also the name of the new table.",
+                  "example": "resultset"
+                },
+                "FunctionModule": {
+                  "type": "string",
+                  "description": "Name of the function module that is used to extract SAP tables. If omitted, the SAP standard function module *RFC_READ_TABLE* is used. The installation of */THEO/READ_TABLE* is recommended. For more information, see [Function Module for Tables](knowledge-base/custom-function-module-for-table-extraction.md).",
+                  "example": "/THEO/READ_TABLE"
+                }
+              }
             }
           }
         ],
         "responses": {
           "200": {
-            "description": "Operation successful",
-            "schema": {
-              "type": "string",
-              "example": "The extraction was created successfully."
-            }
+            "description": "Operation successful"
           },
           "500": {
             "description": "An error occured. The response body contains different error messages depending on the failure cause. All errors return a 500 status code."
@@ -401,7 +489,7 @@
     "/v0/extractions/": {
       "get": {
         "tags": [
-          "extractions"
+          "Extractions"
         ],
         "summary": "Get a list of existing extractions.",
         "description": "",
@@ -422,22 +510,27 @@
                     "properties": {
                       "name": {
                         "type": "string",
+                        "description": "Name of the extraction.",
                         "example": "mara"
                       },
                       "type": {
                         "type": "string",
+                        "description": "Extraction type.",
                         "example": "Table"
                       },
                       "sapObject": {
                         "type": "string",
+                        "description": "Name of the SAP source object that is extracted.",
                         "example": "MARA"
                       },
                       "source": {
                         "type": "string",
+                        "description": "Name of the source connection.",
                         "example": "s4hana"
                       },
                       "destination": {
                         "type": "string",
+                        "description": "Name of the target connection.",
                         "example": "azure"
                       },
                       "created": {
@@ -445,15 +538,18 @@
                         "properties": {
                           "machine": {
                             "type": "string",
+                            "description": "Name of the machine on which the extraction was created.",
                             "example": ""
                           },
                           "timestamp": {
                             "type": "string",
                             "format": "date-time",
+                            "description": "Timestamp of when the extraction was created.",
                             "example": "2025-01-24T09:05:26.000Z"
                           },
                           "user": {
                             "type": "string",
+                            "description": "Username of the user who created the extraction.",
                             "example": ""
                           }
                         }
@@ -463,15 +559,18 @@
                         "properties": {
                           "machine": {
                             "type": "string",
+                            "description": "Name of the machine on which the extraction was last changed.",
                             "example": ""
                           },
                           "timestamp": {
                             "type": "string",
                             "format": "date-time",
+                            "description": "Timestamp of when the extraction was last changed.",
                             "example": "2025-01-24T09:46:21.000Z"
                           },
                           "user": {
                             "type": "string",
+                            "description": "Username of the user who last changed the extraction.",
                             "example": ""
                           }
                         }
@@ -491,7 +590,7 @@
     "/v0/extractions/{name}": {
       "delete": {
         "tags": [
-          "extractions"
+          "Extractions"
         ],
         "summary": "Delete an extraction.",
         "description": "",
@@ -510,11 +609,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Operation successful",
-            "schema": {
-              "type": "string",
-              "example": "The extraction was deleted successfully."
-            }
+            "description": "Operation successful"
           },
           "404": {
             "description": "Indicates that tthe extraction does not exist."
@@ -525,13 +620,13 @@
     "/run/{name}": {
       "get": {
         "tags": [
-          "run"
+          "Run Extractions"
         ],
         "summary": "Run an extraction and wait for the result.",
         "description": "The `run` endpoint runs an extractions synchronously and returns the HTTP response head as soon as the server receives the first data package. The response header contains the timestamp of the extraction and the response body contains the logs of the extraction.",
         "operationId": "runextraction",
         "produces": [
-          "text/csv"
+          "text/plain"
         ],
         "parameters": [
           {
@@ -582,7 +677,7 @@
     "/start/{name}": {
       "get": {
         "tags": [
-          "run"
+          "Run Extractions"
         ],
         "summary": "Run an extraction without waiting for the result.",
         "description": "The `start` endpoint runs an extraction asynchronously and immediately returns the HTTP response head. The response header contains the timestamp of the extraction and the response body contains the logs of the extraction.",
@@ -633,93 +728,6 @@
           "500": {
             "description": "An error occured. The response body contains different error messages depending on the failure cause. All errors return a 500 status code."
           }
-        }
-      }
-    }
-  },
-  "definitions": {
-    "SAP": {
-      "type": "object",
-      "properties": {
-        "Host": {
-          "type": "string",
-          "example": "sap-erp-as05.example.com"
-        },
-        "Client": {
-          "type": "string",
-          "example": "100"
-        },
-        "InstanceNo": {
-          "type": "number",
-          "example": 0
-        },
-        "Language": {
-          "type": "string",
-          "example": "en"
-        },
-        "User": {
-          "type": "string",
-          "example": "alice"
-        },
-        "Password": {
-          "type": "string",
-          "example": "myPassword"
-        }
-      }
-    },
-    "Azure": {
-      "type": "object",
-      "properties": {
-        "Account": {
-          "type": "string",
-          "example": "my-account"
-        },
-        "Container": {
-          "type": "string",
-          "example": "container"
-        },
-        "Token": {
-          "type": "string",
-          "example": "sv=YYYY-MM-DD&ss=...%3D"
-        }
-      }
-    },
-    "Table": {
-      "type": "object",
-      "properties": {
-        "Table": {
-          "type": "string",
-          "example": "MARA"
-        },
-        "Where": {
-          "type": "string",
-          "example": "MATNR = 000000000001"
-        },
-        "Source": {
-          "type": "string",
-          "example": "s4hana"
-        },
-        "Destination": {
-          "type": "string",
-          "example": "azure"
-        },
-        "Columns": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "example": [
-            "MATNR",
-            "MANDT"
-          ]
-        },
-        "ResultName": {
-          "type": "string",
-          "example": "resultset"
-        },
-        "FunctionModule": {
-          "type": "string",
-          "example": "/THEO/READ_TABLE"
         }
       }
     }
