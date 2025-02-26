@@ -1,5 +1,16 @@
 [
   {
+    "Version": "2025.2.24.44",
+    "LegacyReleaseDate": "2025-02-24 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "OData",
+        "Message": "Fixed a bug that would parse OData V4 DateTimeOffset incorrectly"
+      }
+    ]
+  },
+  {
     "Version": "2025.2.18.32",
     "LegacyReleaseDate": "2025-02-18 00:00:00Z",
     "Changes": [
