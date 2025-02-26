@@ -3,7 +3,7 @@ title: Run Xtract Universal in a VM on AWS EC2
 description: Run Xtract Universal in a VM on AWS EC2
 ---
 
-The following article shows how to run {{ productName }} in a virtual machine on an AWS EC2.
+The following article shows how to run {{ productName }} in a virtual machine on an AWS EC2 instance.
 
 AWS enables running virtual servers (instances) in the cloud, see [AWS Documentation: EC2](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/concepts.html).
 Theobald Software offers {{ productName }} as an [Amazon Machine Image (AMI)](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/AMIs.html) for the following customer purposes:
