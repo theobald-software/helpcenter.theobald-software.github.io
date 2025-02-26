@@ -77,7 +77,6 @@ The following articles refer to specific [destinations](../documentation/destina
 ### :3rd-party-onelake: Microsoft Fabric (OneLake)
 
 - [Integration in Microsoft Fabric using Webservices](fabric-integration-using-webservices.md)
-- [Microsoft Fabric Mirroring of SAP using {{ productName }}](microsoft-fabric-mirroring.md)
 
 ### :simple-microsoftsqlserver: Microsoft SQL Server
 
