@@ -33,8 +33,7 @@ Make sure the authentication uses the following settings:
 	![authentication](../../assets/images/documentation/destinations/fabric/auth.png)
 	- Add the following [API permissions](https://learn.microsoft.com/en-us/entra/identity-platform/quickstart-configure-app-access-web-apis#add-permissions-to-access-your-web-api):
 		- Azure Storage - *user impersonation*
-		- Microsoft Graph - *User.Read*
-	
+		- Microsoft Graph - *User.Read*<br>
 	![API permissions](../../assets/images/documentation/destinations/fabric/api-permissions.png)
 
 
