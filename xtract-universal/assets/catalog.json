@@ -1,5 +1,16 @@
 [
   {
+    "Version": "2025.2.27.6",
+    "LegacyReleaseDate": "2025-02-27 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "BWCube",
+        "Message": "BICS: Added support for hierarchy and hierarchy node variables"
+      }
+    ]
+  },
+  {
     "Version": "2025.2.24.44",
     "LegacyReleaseDate": "2025-02-24 00:00:00Z",
     "Changes": [
