@@ -104,6 +104,8 @@ plugins:
   - macros:
       include_dir: includes # ../../includes for ERPConnect only
   #- glightbox #image zoom
+  - exclude-unused-files:
+      file_types_to_check: ["png", "jpg", "jpeg", "gif"]
 
 # Continuous integration
   - group:

@@ -110,7 +110,8 @@ plugins:
   #- swagger-ui-tag
   #- glightbox #image zoom
   #- tags # enables tags in front matter
-
+  - exclude-unused-files:
+      file_types_to_check: ["png", "jpg", "jpeg", "gif"]
 
 # Continuous integration
   - group:

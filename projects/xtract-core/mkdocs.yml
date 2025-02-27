@@ -108,6 +108,8 @@ plugins:
         - curl
         - javascript
   - awesome-pages # define navigation in .pages files
+  - exclude-unused-files:
+      file_types_to_check: ["png", "jpg", "jpeg", "gif"]
   - redoc-tag
   - swagger-ui-tag:
       supportedSubmitMethods: []
