@@ -244,6 +244,7 @@ extra:
   hierarchy: Xtract Hierarchy
   deltaq: Xtract DeltaQ  
   odata: Xtract OData
+  odpOdata: Xtract ODP(OData)
   odp: Xtract ODP
   ohs: Xtract OHS
   tableCDC: Xtract TableCDC
