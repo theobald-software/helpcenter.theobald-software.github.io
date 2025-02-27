@@ -1,5 +1,38 @@
 [
   {
+    "Version": "2025.2.24.43",
+    "LegacyReleaseDate": "2025-02-24 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "OData",
+        "Message": "Fixed a bug that would parse OData V4 DateTimeOffset incorrectly"
+      }
+    ]
+  },
+  {
+    "Version": "2025.2.18.29",
+    "LegacyReleaseDate": "2025-02-18 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "TableCDC",
+        "Message": "Improved performance of log table clearance operation. Requires update of /THEO/CDC."
+      }
+    ]
+  },
+  {
+    "Version": "2025.2.14.9",
+    "LegacyReleaseDate": "2025-02-14 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "Table",
+        "Message": "Fixed /THEO/READ_TABLE transports for version 710 and 740SP05"
+      }
+    ]
+  },
+  {
     "Version": "2025.2.11.57",
     "LegacyReleaseDate": "2025-02-11 00:00:00Z",
     "Changes": [
