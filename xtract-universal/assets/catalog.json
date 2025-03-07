@@ -1,5 +1,16 @@
 [
   {
+    "Version": "2025.3.7.23",
+    "LegacyReleaseDate": "2025-03-07 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "OData",
+        "Message": "Fixed a bug where EdmType.String was incorrectly mapped for fields without length information"
+      }
+    ]
+  },
+  {
     "Version": "2025.3.6.28",
     "LegacyReleaseDate": "2025-03-06 00:00:00Z",
     "IsBreaking": true,
