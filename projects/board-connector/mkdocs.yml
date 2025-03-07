@@ -120,9 +120,9 @@ plugins:
                - index.md
         #enable_creation_date: true
         #type: timeago
-         #- optimize
-         - minify:
-             minify_html: true
+         - optimize
+         #- minify:
+             #minify_html: true
          - social:
              cards_layout: default
              cards_layout_options:
