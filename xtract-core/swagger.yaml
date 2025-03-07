@@ -34,7 +34,7 @@ tags:
   - name: Run Extractions
     description: Run data extractions synchronously or asynchronously on the web server.
   - name: Logs
-    description: Fetch logs of extractions and extraction runs.
+    description: Fetch logs of extraction runs.
   - name: Version
     description: Fetch your current software version.
 paths:
