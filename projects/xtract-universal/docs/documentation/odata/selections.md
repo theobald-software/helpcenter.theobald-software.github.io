@@ -3,8 +3,8 @@ title: Selections
 description: ODP parameters
 ---
 
-This page shows how to filter the data that is extracted by the {{ odp }} {{ component }}.
-Selections limit the result set of the {{ odp }} {{ component }} to extract only records that match the selection.
+This page shows how to filter the data that is extracted by the {{ odata }} {{ component }}.
+Selections limit the result set of the {{ odata }} {{ component }} to extract only records that match the selection.
 
 
 {% include "components/selections.md"  %}
