@@ -87,7 +87,7 @@ An SPN is assigned in the following form:
 The service class and host name are required for authenticating a service instance to a logon account. 
 Domain Admin rights are required for processing *Manage Service Accounts* in Active Directory Users and Computers. 
 
-![AD User and computers - SPN](../assets/images/articles/ad_spn.png){:class="img-responsive"}
+![AD User and computers - SPN](../assets/images/articles/ad-spn.png){:class="img-responsive"}
 
 ### Windows Service does not Start
 
