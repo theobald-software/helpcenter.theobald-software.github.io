@@ -114,7 +114,7 @@ plugins:
   - group:
       enabled: !ENV CI
       plugins:
-        - exclude-unused-files:
+         - exclude-unused-files:
              file_types_to_check: ["png", "jpg", "jpeg", "gif"]
          - git-revision-date-localized:
              exclude:
