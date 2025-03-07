@@ -120,6 +120,8 @@ plugins:
   - group:
       enabled: !ENV CI
       plugins:
+        - exclude-unused-files:
+             file_types_to_check: ["png", "jpg", "jpeg", "gif"]
         - optimize # compresses images and files
         - minify: # minifies HTML by stripping all whitespace from the generated documentation
             minify_html: true
