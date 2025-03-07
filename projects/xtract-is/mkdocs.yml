@@ -112,13 +112,13 @@ plugins:
         'xtract-is-for-azure/introduction.md': 'xtract-is-for-azure.md'
   #      'old/file.md': 'new/file.md'
   #      'some_file.md': 'http://external.url.com/foobar'
-  - exclude-unused-files:
-      file_types_to_check: ["png", "jpg", "jpeg", "gif"]
 
 # Continuous integration
   - group:
       enabled: !ENV CI
       plugins:
+         - exclude-unused-files:
+             file_types_to_check: ["png", "jpg", "jpeg", "gif"]
          - git-revision-date-localized:
              exclude:
                - index.md
