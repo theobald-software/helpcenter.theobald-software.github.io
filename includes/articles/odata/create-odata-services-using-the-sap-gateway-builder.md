@@ -2,13 +2,13 @@
 This article shows how to use the SAP Gateway Builder to create OData services that provide ODP based data for the {% if page.meta.product == 'xtract-for-alteryx' %}[{{ odpOdata }} {{ component }}](../documentation/odp-odata/index.md){% else %}[{{ odata }} {{ component }}](../documentation/odata/index.md){% endif %} of {{ productName }}.
 
 !!! note
-	This article focuses on SAP on-premise systems. 
+	This article focuses on SAP on-premise systems.<br>
 	For information on how to create OData services in the SAP cloud, refer to [SAP Help: Setting up Communication Management](https://learning.sap.com/learning-journeys/implement-sap-s-4hana-cloud-public-edition-for-sourcing-and-procurement/setting-up-communication-management_a913171c-c96d-47a9-81ec-dc9ee8754320).
 
 ### Prerequisites
 
-- SAP NetWeaver Gateway Release 2.0 Support Package 4 or above. In SAP S/4HANA, the Gateway is embedded, but needs to be activated.
-- SAP user that has access to the SAP Gateway Service Builder.
+- SAP NetWeaver Gateway Release 2.0 Support Package 4 or higher. In SAP S/4HANA, the Gateway is embedded, but needs to be activated.
+- SAP user with access to the SAP Gateway Service Builder.
 - To extract data using the BW InfoProvider (ODP context BW), an open hub license is required.
 - Optional: to transport services from one SAP system to another, e.g., from a test environment to a production environment, authorization for CTS (Change and Transport System) is required.
 
@@ -28,7 +28,7 @@ graph TD
 
 ### Service Definition
 
-Follow the steps below to create a project that bundles all artifacts that are needed to develop a service:
+Follow the steps below to create a project that bundles all artifacts necessary to develop a service:
 
 1. Log in to the SAP GUI.
 2. Go to transaction SEGW. The SAP Gateway Builder opens.
@@ -37,18 +37,18 @@ Follow the steps below to create a project that bundles all artifacts that are n
 4. Enter a name and description for the OData service.<br>
 ![sap-gwb-create](../assets/images/articles/odata/sap-gwb-create.png)
 5. In the field **Project Type**, select *Service with SAP Annotations*.
-6. If you want to transport the service to another SAP system, define a transport package. 
-If not, enter *$TMP* (temporary objects). 
+6. If you want to transport the service to another SAP system, define a transport package. <br>
+Otherwise, enter *$TMP* (temporary objects). 
 7. Click **Continue** (:material-check:) to create the project. 
 
 The new project is listed in the main window of the SAP Gateway Builder.
 
 ### Data Model Definition
 
-Follow the steps below to define the model that the service is based on:
+Follow the steps below to define the model the service is based on:
 
-1. In the main window of the SAP Gateway Builder, select your project and navigate to the *DataModel* folder of the project.
-2. Right-click the *DataModel* folder and select **Redefine > ODP Extraction** from the context menu.<br>
+1. In the main window of the SAP Gateway Builder, select your project and navigate to the *DataModel* directory of the project.
+2. Right-click the *DataModel* directory and select **Redefine > ODP Extraction** from the context menu.<br>
 ![sap-gw-data-model-odp](../assets/images/articles/odata/sap-gw-data-model-odp.png) <br>
 The window "Wizard step 1: OData access for Operational Data Provisioning" opens.
 3. In the field **ODP Context**, select a provider context that can access the SAP data source you want to extract.
@@ -77,7 +77,7 @@ The depicted example uses the *DataSources/Extractors* context.
 
 10. Click **Finish** (:material-clock-check-outline:).
 
-The subfolders of the *DataModel* folder now contain the selected entities and artifacts.
+The subdirectories of the *DataModel* directory now contain the selected entities and artifacts.
 
 ### Service Implementation
 

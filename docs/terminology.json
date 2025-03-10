@@ -9,4 +9,6 @@
     "sanity check": ["validation check", "integrity check"],
     "guys": ["folks", "everyone", "team"]
 	"take a while": ["This process may take several seconds to complete"],
-}
+	"or above": ["or higher"],
+	"folder": ["directory"],
+}	
