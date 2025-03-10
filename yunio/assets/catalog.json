@@ -1,12 +1,23 @@
 [
   {
-    "Version": "2025.2.24.43",
-    "LegacyReleaseDate": "2025-02-24 00:00:00Z",
+    "Version": "2025.3.10.39",
+    "LegacyReleaseDate": "2025-03-10 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "YunIO",
+        "Component": "General",
+        "Message": "Fix for incorrect connection type in some cases and config version file not being updated correctly."
+      }
+    ]
+  },
+  {
+    "Version": "2025.3.7.57",
+    "LegacyReleaseDate": "2025-03-07 00:00:00Z",
     "Changes": [
       {
         "Product": "Theobald.Extractors",
-        "Component": "OData",
-        "Message": "Fixed a bug that would parse OData V4 DateTimeOffset incorrectly"
+        "Component": "Table",
+        "Message": "Fixed /THEO/READ_TABLE transport for version 640"
       }
     ]
   },
