@@ -37,7 +37,6 @@ The API allows you to:
     ---
 
     - Azure Blob Storage
-	- In development: CSV flat-file
 	
 </div>
 
@@ -81,7 +80,7 @@ The installation directory contains the following files:
 |  private directory | Directory that contains keys to encrypt passwords. This directory is created when running an extraction for the first time. |
 |  Transport directory |	Directory that contains SAP function modules. Read the README.pdf within the directory for more information.  | 
 |  Cleaner.exe |	Application that deletes all cached results and log files.  | 
-|  ConfigConverter.exe | Application that converts extractions, connections, etc. from previous a version format to the new format. Use the ConfigConverter.exe when installing major releases and upgrading, e.g., from version 1.x to 2.x.|
+|  ConfigConverter.exe | Application that converts extractions, connections, etc. from previous a version format to the new format.|
 |  listener.exe |	Application that starts one worker per incomming connection. listener.exe can be renamed (make sure to rename the listener.json as well and update the content of theobald.service.definition.json). | 
 |  listener.json | Contains the default settings of the web server. listener.json can be renamed (make sure that the listener.json has the same name as the listener.exe). |
 |  service.exe |	Application that installs Xtract Core.  | 
@@ -96,14 +95,17 @@ The name (`serviceName`), display name (`displayName`) and description (`descrip
 
 ```json title="theobald.service.definition.json"
 {
-	"serviceName": "SAP Connector Service",
-	"displayName": "SAP Connector",
-	"description": "SAP Connector windows service for configuration and execution of SAP extractions.",
-	"servers": [
-	{
-		"displayName": "listener",
-		"path": "listener.exe"}
-	]
+  "serviceName": "SAP Connector Service",
+  "displayName": "SAP Connector",
+  "description": "SAP Connector windows service for configuration and execution of SAP extractions.",
+  "convertConfig": true,
+  "currentVersion": "2025.2.30.0",
+  "minCfgVersion": "2024.12.3.4",
+  "servers": [
+    {
+      "displayName": "listener",
+      "path": "listener.exe"}
+  ]
 }
 ```
 	
