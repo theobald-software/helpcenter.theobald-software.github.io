@@ -680,6 +680,17 @@ paths:
       operationId: logsextractions
       produces:
         - application/json
+      parameters:
+        - name: min
+          in: query
+          description: A timestamp in the format *yyyy-MM-dd_HH:mm:ss.SSS*. Returns the extraction runs after the specified date and time.
+          required: false
+          type: string
+        - name: max
+          in: query
+          description: A timestamp in the format *yyyy-MM-dd_HH:mm:ss.SSS*. Returns the extraction runs before the specified date and time.
+          required: false
+          type: string
       responses:
         '200':
           description: Operation successful
@@ -723,6 +734,67 @@ paths:
                             type: string
                             example: '2025-01-30_08:51:19.007'
                             description: Timestamp of the extraction run.
+        '500':
+          description: >-
+            An error occurred. The response body contains different error
+            messages depending on the failure cause.
+  /logs/extractions/{name}:
+    get:
+      tags:
+        - Logs
+      summary: Get a list of extraction runs of the specified extraction.
+      description: ''
+      operationId: logsextraction
+      produces:
+        - application/json
+      parameters:
+        - name: name
+          in: path
+          description: Name of an existing extraction.
+          required: true
+          type: string
+        - name: min
+          in: query
+          description: A timestamp in the format *yyyy-MM-dd_HH:mm:ss.SSS*. Returns the extraction runs after the specified date and time.
+          required: false
+          type: string
+        - name: max
+          in: query
+          description: A timestamp in the format *yyyy-MM-dd_HH:mm:ss.SSS*. Returns the extraction runs before the specified date and time.
+          required: false
+          type: string
+      responses:
+        '200':
+          description: Operation successful
+          schema:
+            type: object
+            properties:
+              runs:
+                type: array
+                description: Contains the logs of the extraction runs.
+                items:
+                  type: object
+                  properties:
+                    rowCount:
+                      type: integer
+                      example: 5000
+                      description: Number of extracted data records.
+                    duration:
+                      type: string
+                      example: 'PT00H00M01.369S'
+                      description: Duration of the exraction run.
+                    state:
+                      type: string
+                      example: 'FinishedNoErrors'
+                      description: Status of the extraction. Possible values are *Running*, *FinishedNoErrors*, and *FinishedErrors*.
+                    webServerLog:
+                      type: string
+                      example: '2025-01-30_08:51:18.976'
+                      description: Timestamp of the server log that corresponds to the extraction run.
+                    startedAt:
+                      type: string
+                      example: '2025-01-30_08:51:19.007'
+                      description: Timestamp of the extraction run.
         '500':
           description: >-
             An error occurred. The response body contains different error
