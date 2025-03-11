@@ -38,8 +38,15 @@ function scroll() {
     if(anchor == null || anchor.getAttribute("is-anchor") != "true") {
         return
     }
-    anchor.scrollIntoView({behavior: "smooth", block: "center"})
 
+	
+    var elementPosition = anchor.getBoundingClientRect().top;
+   
+    window.scrollTo({
+         top: elementPosition,
+         behavior: "smooth"
+    });
+	
     let anchor_parent = anchor.parentElement
     let btn = anchor_parent.querySelector(".opblock-control-arrow, .expand-operation")
     if(btn != null) {
@@ -47,6 +54,7 @@ function scroll() {
             btn.click()
         }
     }
+
 }
 
 function setUpAnchors() {
