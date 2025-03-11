@@ -1,23 +1,5 @@
 swagger: '2.0'
 info:
-  description: >
-    Xtract Core is a whitelabel Web API server for developing your own SAP
-    interfaces. 
-
-    The Xtract Core API enables you to extract data from various SAP sytsems and
-    write them to a target environment. 
-     The API uses the following parameter types:
-    - **Path parameters** are part of the request URL and are used to address
-    specific resources. They are referenced by placeholders in curved brackets.
-    Example: <br> */v1/connections/sap/<mark>{name}</mark>/tables?pattern=ma** 
-
-    - **Query parameters** are added to the end of a request URL, following '?'.
-    They are listed in key-value pairs, separated by '&'. Query parameters can
-    be used for filtering or sorting.  Example: <br>
-    */v1/connections/sap/{name}/tables<mark>?pattern=ma*</mark>* 
-
-    - **Body parameters** are passed in the request body of POST methods to add
-    or update structured data. 
   version: 1.0.0
   title: Xtract Core
 host: localhost
@@ -217,6 +199,44 @@ paths:
                         connections or "AzureBlob" for Azure storage
                         connections.
                       example: SapRfc
+                    created:
+                      type: object
+                      properties:
+                        machine:
+                          type: string
+                          description: >-
+                            Name of the machine on which the connection was
+                            created.
+                          example: 'ALICE'
+                        timestamp:
+                          type: string
+                          format: date-time
+                          description: Timestamp of when the connection was created.
+                          example: '2025-01-24T09:05:26.000Z'
+                        user:
+                          type: string
+                          description: Username of the user who created the extraction.
+                          example: 'SAP Connector Service'
+                    lastChange:
+                      type: object
+                      properties:
+                        machine:
+                          type: string
+                          description: >-
+                            Name of the machine on which the connection was last
+                            changed.
+                          example: 'ALICE'
+                        timestamp:
+                          type: string
+                          format: date-time
+                          description: Timestamp of when the connection was last changed.
+                          example: '2025-01-24T09:46:21.000Z'
+                        user:
+                          type: string
+                          description: >-
+                            Username of the user who last changed the
+                            extraction.
+                          example: 'SAP Connector Service'
   /connections/sap/{name}/test:
     get:
       tags:
@@ -243,7 +263,7 @@ paths:
     get:
       tags:
         - Connections
-      summary: Get name and description of all tables on the SAP system.
+      summary: Get name and description of all tables in the SAP system.
       description: ''
       operationId: metaconnection
       produces:
@@ -496,7 +516,7 @@ paths:
                           description: >-
                             Name of the machine on which the extraction was
                             created.
-                          example: ''
+                          example: 'ALICE'
                         timestamp:
                           type: string
                           format: date-time
@@ -505,7 +525,7 @@ paths:
                         user:
                           type: string
                           description: Username of the user who created the extraction.
-                          example: ''
+                          example: 'SAP Connector Service'
                     lastChange:
                       type: object
                       properties:
@@ -514,7 +534,7 @@ paths:
                           description: >-
                             Name of the machine on which the extraction was last
                             changed.
-                          example: ''
+                          example: 'ALICE'
                         timestamp:
                           type: string
                           format: date-time
@@ -525,7 +545,7 @@ paths:
                           description: >-
                             Username of the user who last changed the
                             extraction.
-                          example: ''
+                          example: 'SAP Connector Service'
         '500':
           description: >-
             An error occurred. The response body contains different error
@@ -681,12 +701,12 @@ paths:
       produces:
         - application/json
       parameters:
-        - name: min
+        - name: after
           in: query
           description: A timestamp in the format *yyyy-MM-dd_HH:mm:ss.SSS*. Returns the extraction runs after the specified date and time.
           required: false
           type: string
-        - name: max
+        - name: before
           in: query
           description: A timestamp in the format *yyyy-MM-dd_HH:mm:ss.SSS*. Returns the extraction runs before the specified date and time.
           required: false
