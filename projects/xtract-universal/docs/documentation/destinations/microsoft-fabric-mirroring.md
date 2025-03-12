@@ -25,7 +25,8 @@ For more information, see [Microsoft Documentation: Open mirroring in Microsoft 
 
 
 - An active and running Fabric capacity is required. A paused or deleted capacity affects Mirroring so that no data is replicated.
-- The {{ page.meta.title }} destination is currently only supported by the [Table CDC](../documentation/table-cdc/index.md) extraction type. Table CDC requires the installation of the corresponding [custom function modules](../documentation/setup-in-sap/custom-function-module-for-tablecdc.md) in SAP. 
+- The {{ page.meta.title }} destination is currently only supported by the [Table CDC](../table-cdc/index.md) extraction type. 
+Table CDC requires the installation of the corresponding [custom function modules](../setup-in-sap/custom-function-module-for-tablecdc.md) in SAP. 
 Also note that Table CDC is licensed and purchased separately from other extraction types.
 - The {{ page.meta.title }} destination uses [Microsoft Entra ID (formerly Azure Active Directory)](https://www.microsoft.com/en-us/security/business/identity-access/microsoft-entra-id) with OAuth 2.0 for authentication.
 Make sure the authentication uses the following settings:
@@ -37,21 +38,41 @@ Make sure the authentication uses the following settings:
 	![API permissions](../../assets/images/documentation/destinations/fabric/api-permissions.png)
 
 
+!!! tip
+	You can also use the regular [Table](../table/index.md) extraction type to extract the initial full load of the Table.
+
+
 {% include "destinations/create-destination.md" %}
 
-...
+![Destination-Details](../../assets/images/documentation/destinations/fabric-mirroring/destination-details.png){:class="img-responsive"}
 
-!!! tip
-	You can also use the regular [Table](../documentation/table/index.md) extraction type to extract the initial full load of the Table.
+{% include "destinations/fabric.md" %}
+
+## Connection Retry and Rollback
+
+{% include "destinations/connection-retry.md" %}
+
+{% include "destinations/connection-retry-cloud.md" %}
+
+	
+{% include "destinations/assign-destination.md" %}
+
+![Destination-settings](../../assets/images/documentation/destinations/fabric-mirroring/destination-settings.png){:class="img-responsive"}
+
+{% include "destinations/file-name.md" %}
+
+!!! note
+	When an object's name does not start with a letter, an 'x' is added at the beginning. , e.g., `_namespace_tabname.csv` becomes `x_namespace_tabname.csv` when uploaded. <br> This ensures compatibility with Azure Data Factory, Hadoop, and Spark, which require names to start with a letter or handle certain symbols differently.
+
+{% include "parameters/file-name-script-expressions.md" %}
+
+{% include "destinations/column-name-style.md" %}
+
+{% include "destinations/date-conversion.md" %}
 
 
-RowMaker value should be 0 for INSERT by default. User has the option to change it e.g. to 4 for UPSERT
-Default option for Table is to use an existing one if available. User has the option to set it to: Drop and create.
 
-
-******
-
-#### Related Links
+## Related Links
 - [Microsoft Documentation: What is Mirroring in Fabric?](https://learn.microsoft.com/en-us/fabric/database/mirrored-database/overview)
 - [Microsoft Documentation: Open mirroring in Microsoft Fabric](https://learn.microsoft.com/en-us/fabric/database/mirrored-database/open-mirroring)
 - [Microsoft Documentation: Tutorial Configure Microsoft Fabric open mirrored databases](https://learn.microsoft.com/en-us/fabric/database/mirrored-database/open-mirroring-tutorial)
