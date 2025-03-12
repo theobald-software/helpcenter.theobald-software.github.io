@@ -25,10 +25,10 @@ Make sure to have a TLS certificate issued by your IT network team considering t
 When activating TLS, the *Subject Alternative Name* is used as the new hostname. 
 2. The certificate common name (CN) attribute contains the DNS name of the server. 
 To display the Common Name (CN) of the certificate, double-click the certificate in the Cetrificate Manager and navigate to the *Details* tab.
-3. Import the certificate to the [Windows Certificate Store](https://technet.microsoft.com/en-us/ms788967(v=vs.91)) of the machine, that runs the {{ serviceName }} Windows service using the Microsoft Management Console (mmc).
+3. Import the certificate to the [Windows Certificate Store](https://technet.microsoft.com/en-us/ms788967(v=vs.91)) of the machine, that runs the {{ serviceName }} Windows service using the Microsoft Management Console (mmc.exe).
 The depicted example uses the server name "TODD":<br>
 ![X509-MMC](/{{ product }}/assets/images/documentation/access-restriction/X509-MMC.png){:class="img-responsive"}
-4. After importing the X.509 certificate, manage its private keys to add a permission entry for the Windows user.
+4. After importing the X.509 certificate, right-click the certificate to access the **Manage private keys** menu and add a permission entry for the Windows user that runs the {{ serviceName }} Windows service.
 5. Click **[Pick Certificate]** and select the X.509 certificate from the list of available certificates.
 6. Enter "NT Service\{{ serviceName }} Service" within the object picker menu, click **[Check Names]** and apply the changes.<br>
 ![certificate](/{{ product }}/assets/images/documentation/access-restriction/x509-certificate-permission.png){:class="img-responsive"}
@@ -41,11 +41,34 @@ The certificate is now available on your machine.
     Configure your Firefox browser to trust certificates in the Windows certificate store or import the certificate via an enterprise policy, see [Mozilla Support: Setting Up Certificate Authorities (CAs) in Firefox](https://support.mozilla.org/en-US/kb/setting-certificate-authorities-firefox).
 
 
-{% if page.meta.product != "xtract-core" %}
+{% if page.meta.product == "xtract-core" %}
+
+### Enable TLS in Xtract Core
+
+Follow the steps below to enable TLS for the Xtract Core Windows service:
+
+1. Open the following file in the Xtract Core installation directory: `config/servers/tls.json`. If the directory and file do not exist, create them.
+2. Enable TLS in the `tls.json` file and add the details of the certificate. Example:
+	```json title="tls.json"
+	{
+		"tlsEnabled": true,
+		"certificate": {
+		"subjectAltName": "BOB.theobald.local",
+		"issuer": "CN=Theobald CA, DC=theobald, DC=local",
+		"notAfter": "20250717T152041.000Z",
+		"thumbprint": "0C32EEE1053DA57E88E6AE22832DFB13775250F9"
+		}
+	}
+	```
+3. Restart the Xtract Core service to restart the listener.
+
+The web server now uses the HTTPS protocol for communication. 
+The default port for secured communication is {{ port_https }}.
+You can change the port in the `listener.json` file using the property *securePort*, see [Network Settings](../getting-started.md/#network-settings).
+
+{% elif page.meta.product == "yunio" %}
 
 ### Integrate the X.509 Certificate
-
-{% if page.meta.product == "yunio" %}
 
 1. Import the certificate to the Windows Certificate Store using Microsoft Management Console (mmc).
 In the example shown, the server name is "sherri":<br>
@@ -66,6 +89,8 @@ The yunIO Designer and the services created in yunIO are now accessible via http
 
 {% else %}
 
+### Integrate the X.509 Certificate
+
 1. Open **Server > Settings** from the main window of the Designer. <br>
 ![security-manage-users](/{{ product }}/assets/images/documentation/access-restriction/server-settings_manage.png){:class="img-responsive"}
 2. In the tab *Web Server*, click **[Select X.509 certificate]**. The window "Edit certificate location" opens.
@@ -79,5 +104,4 @@ The {{ productName }} server is now accessible via https protocol.
 #### Related Links
 - [Knowledge Base Article: Enable Secure Network Communication (SNC) via X.509 certificate](../../knowledge-base/enable-snc-using-pse-file.md)
 - [Change Service Account](../server/service-account.md)
-{% endif %}
 {% endif %}

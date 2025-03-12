@@ -72,7 +72,7 @@ For more information on system requirements and supported SAP systems, see [Know
 
 Follow the steps below to install the Xtract Core Windows service:
 
-1. Extract all files from the `XtractCore_native.zip` archive into the directory where you want to install Xtract Core.
+1. Extract all files from the `XtractCore.zip` archive into the directory where you want to install Xtract Core.
 2. Open a command line tool with administrator rights and navigate to the installation directory.
 3. Run the following command to install the Xtract Core Windows service and to create a dedicated user for the service:
 	```terminal
@@ -85,7 +85,7 @@ The Xtract Core Windows service can now receive HTTP requests.
 For information on how to change the default settings of the Xtract Core service, refer to the [service settings](#service-settings) and [network-settings](#network-settings).
 
 !!! note
-	To uninstall the Xtract Core service, use the `service.exe -u`  command.
+	To update Xtract Core replace the files in the installation directory with the new Xtract Core installation files.
 
 ### Files in the Installation Directory
 
@@ -126,9 +126,11 @@ The name (`serviceName`), displayed name (`displayName`) and description (`descr
     "currentVersion": "9925.3.12.51",
     "serviceName": "SAP Connector Service"
 }
-
 ```
-	
+
+!!! note
+	Do not change any values for `convertConfig`, `minCfgVersion` and `currentVersion`.
+
 ### Network Settings
 
 The network settings of the web server can be changed in the `listener.json` file. 
@@ -151,27 +153,7 @@ The network settings of the web server can be changed in the `listener.json` fil
 ### TLS Configuration
 
 You can enable Transport Layer Security (TLS) to use secured HTTPS communication for the web server.
-Follow the steps below to set up TLS:
-
-1. Install a valid X.509 certificate in the Windows certificate store of the machine that runs Xtract Core. For more information, see [Install an X.509 certificate](knowledge-base/install-x.509-certificate.md).
-2. Open the following file in the Xtract Core installation directory: `config/servers/tls.json`. If the directory and file do not exist, create them.
-3. Enable TLS in the `tls.json` file and add the details of the certificate. Example:
-	```json title="tls.json"
-	{
-		"tlsEnabled": true,
-		"certificate": {
-		"subjectAltName": "BOB.theobald.local",
-		"issuer": "CN=Theobald CA, DC=theobald, DC=local",
-		"notAfter": "20250717T152041.000Z",
-		"thumbprint": "0C32EEE1053DA57E88E6AE22832DFB13775250F9"
-		}
-	}
-	```
-4. Restart the Xtract Core service to restart the listener.
-
-The web server now uses the HTTPS protocol for communication. 
-The default port for secured communication is {{ port_https }}.
-You can change the port in the `listener.json` file using the property *securePort*, see [Network Settings](#network-settings).
+For information on how to set up TLS with Xtract Core, refer to the [Knowledge Base Article: Install an X.509 Certificate](./knowledge-base/install-x.509-certificate.md).
 
 ## How to use the API
 
