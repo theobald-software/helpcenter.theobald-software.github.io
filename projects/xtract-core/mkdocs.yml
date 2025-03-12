@@ -255,4 +255,5 @@ extra:
   Extraction: API call
   port: 1337
   port_https: 1338
+  serviceName: SAP Connector
   

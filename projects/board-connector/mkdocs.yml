@@ -270,3 +270,4 @@ extra:
   run_extractions: run-extractions.md
   runBtn: __[Run in Browser]__
   service: BCService
+  serviceName: BOARD Connector

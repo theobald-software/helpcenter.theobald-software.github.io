@@ -149,9 +149,10 @@ The network settings of the web server can be changed in the `listener.json` fil
 
 ### TLS Configuration
 
-Enable Transport Layer Security (TLS) to use secured HTTPS communication for the web server:
+You can enable Transport Layer Security (TLS) to use secured HTTPS communication for the web server.
+Follow the steps below to set up TLS:
 
-1. Make sure to have a valid X.509 certificate. If the certificate is not listed in the Windows certificate store, [install an X.509 certificate](knowledge-base/install-x.509-certificate.md).
+1. Install a valid X.509 certificate in the Windows certificate store of the machine that runs Xtract Core. For more information, see [Install an X.509 certificate](knowledge-base/install-x.509-certificate.md).
 2. Open the following file in the Xtract Core installation directory: `config/servers/tls.json`. If the directory and file do not exist, create them.
 3. Enable TLS in the `tls.json` file and add the details of the certificate. Example:
 	```json title="tls.json"

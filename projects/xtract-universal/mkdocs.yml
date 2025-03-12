@@ -276,3 +276,4 @@ extra:
   run_extractions: execute-and-automate/run-an-extraction.md
   runBtn: __[Run]__
   service: XtractService
+  serviceName: XtractUniversal
