@@ -5446,10 +5446,10 @@ The installation of an X.509 certificate is required to use <a href="https://lea
 When activating TLS, the <em>Subject Alternative Name</em> is used as the new hostname. </li>
 <li>The certificate common name (CN) attribute contains the DNS name of the server. 
 To display the Common Name (CN) of the certificate, double-click the certificate in the Cetrificate Manager and navigate to the <em>Details</em> tab.</li>
-<li>Import the certificate to the <a href="https://technet.microsoft.com/en-us/ms788967(v=vs.91)" target="_blank" rel="noopener">Windows Certificate Store</a> of the machine, that runs the BOARD Connector Windows service using the Microsoft Management Console (mmc).
+<li>Import the certificate to the <a href="https://technet.microsoft.com/en-us/ms788967(v=vs.91)" target="_blank" rel="noopener">Windows Certificate Store</a> of the machine, that runs the BOARD Connector Windows service using the Microsoft Management Console (mmc.exe).
 The depicted example uses the server name "TODD":<br>
 <img alt="X509-MMC" class="img-responsive" src="/board-connector/assets/images/documentation/access-restriction/X509-MMC.png" /></li>
-<li>After importing the X.509 certificate, manage its private keys to add a permission entry for the Windows user.</li>
+<li>After importing the X.509 certificate, right-click the certificate to access the <strong>Manage private keys</strong> menu and add a permission entry for the Windows user that runs the BOARD Connector Windows service.</li>
 <li>Click <strong>[Pick Certificate]</strong> and select the X.509 certificate from the list of available certificates.</li>
 <li>Enter "NT Service\BOARD Connector Service" within the object picker menu, click <strong>[Check Names]</strong> and apply the changes.<br>
 <img alt="certificate" class="img-responsive" src="/board-connector/assets/images/documentation/access-restriction/x509-certificate-permission.png" /></li>
