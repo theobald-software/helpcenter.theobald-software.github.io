@@ -62,7 +62,6 @@ The service and network settings of Xtract Core can be configured using the file
 
 - Contact the Theobald Software [sales team](mailto:sales@theobald-software.com?subject=Requesting%20Xtract%20Core%20Trial&body=I'd%20like%20to%20receive%20a%202-month%20demo%20version%20of%20Xtract%20Core.) to get a 2 month trial version of Xtract Core. <!-- or download the latest version from the [customer portal](https://my.theobald-software.com/).-->
 - Download and install the [.NET8.0 Desktop Runtime from Microsoft](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-desktop-8.0.11-windows-x64-installer) and install it.
-- Download the SAP Netweaver library from the [SAP Software Download Center](https://me.sap.com/swdcnav/products/_APP=00200682500000001943&_EVENT=DISPHIER&HEADER=Y&FUNCTIONBAR=N&EVENT=TREE&NE=NAVIGATE&ENR=01200314690100002214&V=MAINT) and place it in the `C:\Windows\System32` folder of the machine that runs Xtract Core. 
 - Optional: Install the THEO/READ_TABLE function module in SAP to boost the capabilities of SAP table extractions. 
 For more information, see [Knowledge Base: Function Module for Tables](knowledge-base/custom-function-module-for-table-extraction.md).
 
@@ -105,7 +104,7 @@ The installation directory contains the following files:
 |  service.exe |	Application that installs Xtract Core.  | 
 |  theobald.service.definition.json | Contains the configuration of the Xtract Core Windows service. theobald.service.definition.json cannot be renamed. |
 |  worker.exe |	Application that handles HTTP requests. worker.exe can be renamed (make sure to update the content of listener.json). | 
-<!--|  XtractUniversalLicense.json |	License file with information about the server, the component and runtime. | -->
+|  XtractCoreLicense.json |	License file. | 
 
 
 ### Service Settings
@@ -114,18 +113,20 @@ The name (`serviceName`), displayed name (`displayName`) and description (`descr
 
 ```json title="theobald.service.definition.json"
 {
-  "serviceName": "SAP Connector Service",
-  "displayName": "SAP Connector",
-  "description": "SAP Connector windows service for configuration and execution of SAP extractions.",
-  "convertConfig": true,
-  "currentVersion": "2025.2.30.0",
-  "minCfgVersion": "2024.12.3.4",
-  "servers": [
-    {
-      "displayName": "listener",
-      "path": "listener.exe"}
-  ]
+    "servers": [
+        {
+            "path": "listener.exe",
+            "displayName": "listener"
+        }
+    ],
+    "displayName": "SAPConnector",
+    "description": "A web API for extracting data from SAP systems",
+    "convertConfig": false,
+    "minCfgVersion": "2024.10.30.35",
+    "currentVersion": "9925.3.12.51",
+    "serviceName": "SAP Connector Service"
 }
+
 ```
 	
 ### Network Settings
@@ -179,7 +180,9 @@ The general workflow for Xtract Core includes the following steps:
 
 1. Create a [connection to an SAP source system](#create-sap-connections) to extract data from.
 2. Create a [connection to a target environment / destination](#create-azure-blob-storage-connections) to write data to.
-3. Optional: Fetch the [names and descriptions of all tables](api-reference.md/#/connections/metaconnection) in your SAP source system.
+3. Optional: Fetch information about the tables in your SAP source system. For Example:
+	- [names and descriptions of tables](api-reference.md/#/connections/metaconnection) 
+	- [names and descriptions of table columns](api-reference.md/#/connections/metatable)
 4. Create a reusable [extraction](#create-table-extractions) that defines which SAP table data to extract.
 5. [Run](#run-extractions) the extraction.
 

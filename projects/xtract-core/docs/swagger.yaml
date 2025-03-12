@@ -613,9 +613,7 @@ paths:
         - name: whereClause
           in: query
           description: >-
-            WHERE clause to filter table records. For more information, see
-            [WHERE Clause
-            Syntax](https://helpcenter.theobald-software.com/xtract-core/knowledge-base/where-clause).
+            WHERE clause to filter table records. For more information, see [WHERE Clause Syntax](https://helpcenter.theobald-software.com/xtract-core/knowledge-base/where-clause).
           required: false
           type: string
           x-example: ERSDA GT '2025'
@@ -624,6 +622,10 @@ paths:
           description: >-
             Indicates a successful extraction call. It does not indicate a
             successful execution of the extraction.
+          schema:
+            type: string
+            example: >-
+              LineCount,Name,Timestamp,State,StateDescr,LogLevel,Source,Message
         '404':
           description: Indicates that the extraction does not exist.
         '500':
@@ -684,6 +686,20 @@ paths:
           description: >-
             Indicates a successful extraction call. It does not indicate a
             successful execution of the extraction.
+          schema:
+            type: object
+            properties:
+              state:
+                type: string
+                example: 'Running'
+                description: Status of the extraction. Possible values are *Running*, *FinishedNoErrors*, and *FinishedErrors*.
+              processId:
+                type: number
+                example: 14496
+              webLogTimestamp:
+                type: string
+                example: '2025-01-30_14:17:44.189'
+                description: Timestamp of the server log that corresponds to the extraction run.
         '404':
           description: Indicates that the extraction does not exist.
         '500':
