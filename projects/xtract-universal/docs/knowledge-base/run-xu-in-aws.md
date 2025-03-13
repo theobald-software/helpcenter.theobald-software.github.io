@@ -37,7 +37,7 @@ There are multiple ways to set up {{ productName }} in EC2:
 === "Set Up from the AWS Marketplace"
 
 	1. Log in to AWS marketplace and open the [{{ productName }} product page in AWS](https://aws.amazon.com/marketplace/pp/prodview-anarfo2osmhl4?sr=0-1&ref_=beagle&applicationId=AWSMPContessa#pdp-reviews).
-	2. Click **[Continue to Subscribe]** to [subscribe](https://docs.aws.amazon.com/marketplace/latest/buyerguide/buyer-ami-contracts.html) to {{ productName }}.<br>
+	2. Click **[View Purchase Options]** and [subscribe](https://docs.aws.amazon.com/marketplace/latest/buyerguide/buyer-ami-contracts.html) to {{ productName }}.<br>
 	![XUinAWS-marketplace](../assets/images/articles/xu/XUinAWS-marketplace.png)
 	3. Click **[Continue to Configuration]** to select a software version and a region for hosting {{ productName }}.
 	4. Click **[Continue to Launch]**. <br>
@@ -46,8 +46,7 @@ There are multiple ways to set up {{ productName }} in EC2:
 	![XUinAWS-launch](../assets/images/articles/xu/XUinAWS-launch.png)
 	6. Click **[Launch]**. The EC2 console opens.
 	7. Set up your virtual machine, see [AWS Documentation: Launch an Instance](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/EC2_GetStarted.html#ec2-launch-instance).
-	The {{ productName }} AMI is already selected.<br>
-	![XUinAWS-ec2setup](../assets/images/articles/xu/XUinAWS-ec2setup.png)
+	The {{ productName }} AMI is already selected.
 	8. Start the EC2 instance and connect to it, see [AWS Documentation: Connect to an Instance](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/EC2_GetStarted.html#ec2-connect-to-instance-windows).
 	9. When connected, the {{ productName }} Designer is located on the Desktop. Start the {{ productName }} Designer.
 	10. Set up an SAP connection and extractions, see [Documentation: Getting Started](../getting-started.md).
@@ -63,8 +62,7 @@ There are multiple ways to set up {{ productName }} in EC2:
 	5. Click **[Select]**. The application returns to the EC2 console.<br>
 	![XUinAWS-ec2-select](../assets/images/articles/xu/XUinAWS-ec2-select.png)
 	6. Set up your virtual machine, see [AWS Documentation: Launch an Instance](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/EC2_GetStarted.html#ec2-launch-instance).
-	The {{ productName }} AMI is already selected.<br>
-	![XUinAWS-ec2setup](../assets/images/articles/xu/XUinAWS-ec2setup.png)
+	The {{ productName }} AMI is already selected.
 	7. Start the EC2 instance and connect to it, see [AWS Documentation: Connect to an Instance](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/EC2_GetStarted.html#ec2-connect-to-instance-windows).
 	8. When connected, the {{ productName }} Designer is located on the Desktop. 
 	9. Start the {{ productName }} Designer and click **[:designer-connect: Connect]** to [connect to the {{ productName }} Server](../documentation/designer.md/#connect-the-designer-to-a-server).<br>
