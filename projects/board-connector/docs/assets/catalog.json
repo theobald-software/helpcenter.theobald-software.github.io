@@ -1,5 +1,38 @@
 [
   {
+    "Version": "2025.3.7.61",
+    "LegacyReleaseDate": "2025-03-07 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "Table",
+        "Message": "Fixed /THEO/READ_TABLE transport for version 640"
+      }
+    ]
+  },
+  {
+    "Version": "2025.3.7.25",
+    "LegacyReleaseDate": "2025-03-07 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "OData",
+        "Message": "Fixed a bug where EdmType.String was incorrectly mapped for fields without length information"
+      }
+    ]
+  },
+  {
+    "Version": "2025.3.7.11",
+    "LegacyReleaseDate": "2025-03-07 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "BoardConnector",
+        "Component": "General",
+        "Message": "Fix in config converter for failing source upgrades from Board Connector versions before 5.0."
+      }
+    ]
+  },
+  {
     "Version": "2025.2.27.7",
     "LegacyReleaseDate": "2025-02-27 00:00:00Z",
     "Changes": [
