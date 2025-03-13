@@ -36,14 +36,14 @@ Defines which users and user groups have access to the Designer.
 For more information, see [Access Management](../access-restrictions/index.md).
 
 
-### Web Server
+## Web Server
 
 The web server accepts extraction calls via HTTP(S).
 
 ![ServerSettings_web_tab](../../assets/images/documentation/server/ServerSettings_web_tab.png){:class="img-responsive"} 
 
 
-#### Protocol 
+### Protocol 
 
 | Protocol | Description |
 |------------|--------------|
@@ -67,15 +67,32 @@ Defines the port number, on which the Server receives HTTPS requests of an extra
 Select an X.509 certificate that is used for for transport encryption and authentication, when running extractions.
 For more information, see [Install an X.509 certificate](../access-restrictions/install-x.509-certificate.md).
 
+### Misc
+
 ####  Keep log files (days)
 Defines the maximum age of the web server [log files](../logs.md#access-extraction-logs) in days. After this period the log files are deleted.
 
+#### Collect Usage Data
+
+When this checkbox is active, usage data is stored in your local installation directory.
+If this checkbox is deactivated, no usage data is collected.
+
+Usage data is collected to improve {{ productName }} and better cater to customer needs. Typical usage data includes the source type and extraction types that are in use, referenced SAP objects, statistics about axtraction runs, etc.
+For more information, refer to our [privacy policy](https://theobald-software.com/en/privacy-policy/).
+
+
+#### Upload Usage Data
+
+When this checkbox is active, usage data is sent to Theobald Software for analysis. 
+This requires a connection to the internet.
+
+
 #### Enable setup distribution for clients
 Defines whether the setup of the product version that runs on the server needs to be downloaded. 
-When an older Designer version is connected to a newer Server version, you are be prompted to download and update the Designer with the product version. 
+When an older Designer version is connected to a newer Server version, you are prompted to download and update the Designer with the product version. 
 
 
-#### Result cache
+### Result cache
 
 {% if page.meta.product == "xtract-universal" %}
 

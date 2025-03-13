@@ -84,3 +84,21 @@ It is not recommended to use ports below 1000, because they are often already ta
 |Services|8075|8175|This port is used by the web server, which handles the requests to invoke a service.|
 |Designer|8077|8177|This port is used to open the yunIO Designer on a client machine.|
 |WebSockets|8076|8176|This port is used by the yunIO Designer to read and write configurations, services, etc.|
+
+### Usage Analytics
+
+![Server-Settings-usage-analytics](../assets/images/yunio/documentation/server-settings-usage-analytics.png){:class="img-responsive" }
+
+To improve {{ productName }} and better cater to customer needs, {{ productName }} collects usage data, e.g., the components that are in use, referenced SAP objects, statistics about data extractions, etc.
+For more information, refer to our [privacy policy](https://theobald-software.com/en/privacy-policy/).
+
+
+#### Collect Usage Data
+
+When this checkbox is active, usage data is stored in your local installation directory.
+If this checkbox is deactivated, no usage data is collected.
+
+#### Upload Usage Data
+
+When this checkbox is active, usage data is sent to Theobald Software for analysis. 
+This requires a connection to the internet.
