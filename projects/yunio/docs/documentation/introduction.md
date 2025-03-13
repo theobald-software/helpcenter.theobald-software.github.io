@@ -12,7 +12,7 @@ Find more information on how to use and navigate through the user documentation 
 yunIO is a no-code application for designing, automating, and integrating SAP processes in the cloud. <br>
 The service offers easy integration of SAP data and business processes in different platforms and applications. 
 
-yunIO provides REST-based services to read and write data from an to connected SAP systems. <br>
+yunIO provides REST-based services to read and write data from and to connected SAP systems. <br>
 The web services can be easily integrated into your process automation solutions, e.g. Power Automate, Nintex, etc.
 
 === "Automation"
@@ -32,7 +32,7 @@ The web services can be easily integrated into your process automation solutions
 
 yunIO comes with an embedded Web UI, the yunIO Designer, that can be accessed through a standard web browser. A Windows service enables connectivity with SAP. <br>
 The yunIO service is installed on a local or cloud-hosted Windows server environment. <br>
-If yunIO is installed on a local server environment, a Gateway instance of your choice (e.g. Microsoft om-premises data gateway) can be used to securely tunnel the connection. <br> 
+If yunIO is installed on a local server environment, a Gateway instance of your choice (e.g. Microsoft on-premises data gateway) can be used to securely tunnel the connection. <br> 
 
 ![yunIO-Components](../assets/images/yunio/documentation/theobald-software_architecture_yunio.png){:class="img-responsive" width="800px" }
 
