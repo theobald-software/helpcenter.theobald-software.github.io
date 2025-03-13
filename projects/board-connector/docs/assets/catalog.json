@@ -1,5 +1,16 @@
 [
   {
+    "Version": "2025.3.13.37",
+    "LegacyReleaseDate": "2025-03-13 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "BoardConnector",
+        "Component": "General",
+        "Message": "Fixed a bug where AD Accounts could not be enumerated because of a library version mismatch."
+      }
+    ]
+  },
+  {
     "Version": "2025.3.7.61",
     "LegacyReleaseDate": "2025-03-07 00:00:00Z",
     "Changes": [
