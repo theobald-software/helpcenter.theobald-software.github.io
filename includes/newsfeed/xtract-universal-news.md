@@ -11,21 +11,11 @@
 
     :material-clock-time-two-outline: 2025-03-27
 
--   **:material-video: Webinar: Microsoft Fabric Open Mirroring**
-
-    ---
-
-    [Join our webinar](https://theobald-software.com/optimierung-der-sap-datenintegration-mit-microsoft-fabric-open-mirroring-und-xtract-universal/) on 2025-03-13 - 10:00AM CET to learn how to optimize your data integration with Microsoft Open Mirroring and Xtract Universal. This webinar is for German speakers, but there will be an English webinar soon.
-
-    ---
-
-    :material-clock-time-two-outline: 2025-03-13
-
 -   **:material-alert-decagram: OData Connectivity Added (Beta)**
 
     ---
 
-    The new [OData connectivity](documentation/sap-connection/index.md/#connect-to-sap) enables communication to SAP on-premises and SAP cloud systems to consume data provided by SAP OData services. The [OData component](documentation/odata/index.md) is a beta release for upcoming features. 
+    The new [OData connectivity](documentation/sap-connection/index.md/#connect-to-sap) enables communication to SAP on-premises and SAP cloud systems to consume data provided by SAP OData services. The [OData component](documentation/odata/index.md) is a beta release for upcoming features.
 
     ---
 
