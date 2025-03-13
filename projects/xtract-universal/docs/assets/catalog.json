@@ -1,5 +1,16 @@
 [
   {
+    "Version": "2025.3.7.59",
+    "LegacyReleaseDate": "2025-03-07 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "Table",
+        "Message": "Fixed /THEO/READ_TABLE transport for version 640"
+      }
+    ]
+  },
+  {
     "Version": "2025.3.7.23",
     "LegacyReleaseDate": "2025-03-07 00:00:00Z",
     "Changes": [
