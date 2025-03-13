@@ -154,7 +154,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#system-wide-configuration-in-the-windows-settings" class="md-skip">
+        <a href="#proxy-server-settings-in-board-connector" class="md-skip">
           Skip to content
         </a>
       
@@ -4809,24 +4809,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#system-wide-configuration-in-the-windows-settings" class="md-nav__link">
-    System-Wide Configuration in the Windows Settings
+  <a href="#proxy-server-settings-in-board-connector" class="md-nav__link">
+    Proxy Server Settings in Board Connector
   </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#application-specific-configuration" class="md-nav__link">
-    Application Specific Configuration
-  </a>
-  
-    <nav class="md-nav" aria-label="Application Specific Configuration">
-      <ul class="md-nav__list">
-        
-		
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -5303,24 +5288,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#system-wide-configuration-in-the-windows-settings" class="md-nav__link">
-    System-Wide Configuration in the Windows Settings
+  <a href="#proxy-server-settings-in-board-connector" class="md-nav__link">
+    Proxy Server Settings in Board Connector
   </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#application-specific-configuration" class="md-nav__link">
-    Application Specific Configuration
-  </a>
-  
-    <nav class="md-nav" aria-label="Application Specific Configuration">
-      <ul class="md-nav__list">
-        
-		
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -5393,16 +5363,26 @@
 
   <h1>Proxy Server Settings</h1>
 
-<p>The following article shows how to configure a proxy server in Board Connector. <br>
-Due to corporate network regulations there can be the requirement that all web traffic needs to go through a web proxy. </p>
-<h3 id="system-wide-configuration-in-the-windows-settings">System-Wide Configuration in the Windows Settings<a class="headerlink" data-preview="" href="#system-wide-configuration-in-the-windows-settings" title="Permanent link"></a></h3>
-<p>Open the settings <em>Network and Internet</em> in your Windows start menu and set the respective proxy server settings. </p>
-<p><img alt="XU-proxy-settings-01" class="img-responsive" src="../../assets/images/articles/proxy-settings-01.png" /></p>
-<h3 id="application-specific-configuration">Application Specific Configuration<a class="headerlink" data-preview="" href="#application-specific-configuration" title="Permanent link"></a></h3>
-<p>Follow the <a href="https://docs.microsoft.com/en-us/dotnet/framework/network-programming/proxy-configuration" target="_blank" rel="noopener">Microsoft guidelines</a> to configure the proxy server.</p>
-<p>Open the installation directory of Board Connector, e.g., <code>C:\Program Files\BOARDConnector</code>.
-Modify the files <strong>Theobald.Bc.Web.Worker.exe.config</strong> and <strong>BCDesigner.exe.config</strong> . 
-Enter the following section in both files: </p>
+<p>The following article shows how to configure a proxy server in Board Connector. </p>
+<p>Due to corporate network regulations it can be the required that all web traffic needs to go through a web proxy. </p>
+<h3 id="proxy-server-settings-in-board-connector">Proxy Server Settings in Board Connector<a class="headerlink" data-preview="" href="#proxy-server-settings-in-board-connector" title="Permanent link"></a></h3>
+<p>By default, Board Connector uses the proxy configuration defined by the Windows environment variables.
+For information about the necessary environment variable and how to configure them, refer to the <a href="https://learn.microsoft.com/en-us/dotnet/azure/sdk/configure-proxy?tabs=cmd#configure-using-environment-variables" target="_blank" rel="noopener">Microsoft Documentation: Configure a proxy using environment variables</a>.</p>
+<!--
+### System-Wide Configuration in the Windows Settings
+
+Open the settings *Network and Internet* in your Windows start menu and set the respective proxy server settings. 
+
+
+
+### Application Specific Configuration
+
+Follow the [Microsoft guidelines](https://docs.microsoft.com/en-us/dotnet/framework/network-programming/proxy-configuration) to configure the proxy server.
+
+Open the installation directory of Board Connector, e.g., `C:\Program Files\BOARDConnector`.
+Modify the files **Theobald.Bc.Web.Worker.exe.config** and **BCDesigner.exe.config** . 
+Enter the following section in both files: 
+
 <div class="language-xml highlight"><span class="filename">Proxy Configuration</span><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nt">&lt;system.net&gt;</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="nt">&lt;defaultProxy&gt;</span>
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">        </span><span class="nt">&lt;proxy</span><span class="w">  </span><span class="na">proxyaddress=</span><span class="s">&quot;http://[My_Proxyserver]:3128&quot;</span>
@@ -5411,11 +5391,12 @@ Enter the following section in both files: </p>
 </span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">    </span><span class="nt">&lt;/defaultProxy&gt;</span>
 </span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="nt">&lt;/system.net&gt;</span>
 </span></code></pre></div>
-<p>Examples:</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1"><strong>Theobald.Bc.Web.Worker.exe.config</strong></label><label for="__tabbed_1_2"><strong>BCDesigner.exe.config</strong> </label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<div class="language-xml highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;</span>
+
+Examples:
+
+=== "**Theobald.Bc.Web.Worker.exe.config**"
+
+    <div class="language-xml highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;</span>
 </span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nt">&lt;configuration&gt;</span>
 </span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">    </span><span class="nt">&lt;system.net&gt;</span>
 </span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">        </span><span class="nt">&lt;defaultProxy&gt;</span>
@@ -5423,20 +5404,21 @@ Enter the following section in both files: </p>
 </span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">        </span><span class="nt">&lt;/defaultProxy&gt;</span>
 </span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">    </span><span class="nt">&lt;/system.net&gt;</span>
 </span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">    </span><span class="nt">&lt;startup&gt;</span>
-</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="w">        </span><span class="cm">&lt;!-- ... --&gt;</span>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="w">        </span>...
 </span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="w">    </span><span class="nt">&lt;/startup&gt;</span>
 </span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="w">    </span><span class="nt">&lt;runtime&gt;</span>
-</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="w">        </span><span class="cm">&lt;!-- ... --&gt;</span>
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="w">        </span>...
 </span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="w">    </span><span class="nt">&lt;/runtime&gt;</span>
 </span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="nt">&lt;/configuration&gt;</span>
 </span></code></pre></div>
-</div>
-<div class="tabbed-block">
-<div class="language-xml highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;</span>
+
+=== "**BCDesigner.exe.config** "
+
+    <div class="language-xml highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;</span>
 </span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="nt">&lt;configuration&gt;</span>
 </span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>​
 </span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">    </span><span class="nt">&lt;configSections&gt;</span>
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">        </span><span class="cm">&lt;!-- ... --&gt;</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">        </span>...<span class="w"> </span>
 </span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">    </span><span class="nt">&lt;/configSections&gt;</span>
 </span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>​
 </span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">    </span><span class="nt">&lt;system.net&gt;</span><span class="w">  </span>
@@ -5447,14 +5429,7 @@ Enter the following section in both files: </p>
 </span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="w">        </span><span class="nt">&lt;/defaultProxy&gt;</span><span class="w">  </span>
 </span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="w">    </span><span class="nt">&lt;/system.net&gt;</span>
 </span></code></pre></div>
-</div>
-</div>
-</div>
-<hr />
-<h4 id="related-links">Related Links<a class="headerlink" data-preview="" href="#related-links" title="Permanent link"></a></h4>
-<ul>
-<li><a href="https://docs.microsoft.com/en-us/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings" target="_blank" rel="noopener">Microsoft Help: &lt; defaultProxy &gt; Element (Network Settings)</a></li>
-</ul>
+-->
 
 
 <!-- taken from 
