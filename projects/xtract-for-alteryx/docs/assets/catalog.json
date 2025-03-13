@@ -1,5 +1,16 @@
 [
   {
+    "Version": "2025.3.7.55",
+    "LegacyReleaseDate": "2025-03-07 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "Table",
+        "Message": "Fixed /THEO/READ_TABLE transport for version 640"
+      }
+    ]
+  },
+  {
     "Version": "2025.2.27.3",
     "LegacyReleaseDate": "2025-02-27 00:00:00Z",
     "Changes": [
@@ -7,17 +18,6 @@
         "Product": "Theobald.Extractors",
         "Component": "BWCube",
         "Message": "BICS: Added support for hierarchy and hierarchy node variables"
-      }
-    ]
-  },
-  {
-    "Version": "2025.2.24.39",
-    "LegacyReleaseDate": "2025-02-24 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "OData",
-        "Message": "Fixed a bug that would parse OData V4 DateTimeOffset incorrectly"
       }
     ]
   },
