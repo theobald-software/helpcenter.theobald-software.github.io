@@ -19,6 +19,7 @@ hide:
 - [Execute & Schedule all Extractions using an SSIS Package](execute_all_defined_xu_extractions.md)
 - [Insert Extraction Events into Windows Logs](insert-extraction-events-into-the-windows-logs.md)
 - [Load Balancing](load-balancer.md)
+- [Proxy Server Settings](proxy-server-settings.md)
 - [SAP Access with {{ productName }} and Powershell](sap-access-with-xtract-universal-and-powershell.md)
 - [Run {{ productName }} in a VM on AWS EC2](run-xu-in-aws.md)
 - [Target Principal Field (TPN)](target-principal-TPN.md)
