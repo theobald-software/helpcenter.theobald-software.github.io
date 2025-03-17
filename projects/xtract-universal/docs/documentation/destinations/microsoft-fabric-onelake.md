@@ -27,6 +27,25 @@ Make sure the authentication uses the following settings:
 
 {% include "destinations/fabric.md" %}
 
+
+### Files Folder
+
+#### URL
+
+Enter the URL of the Lakehouse, including the folder path in which the data is written.
+The URL uses the following format:<br>
+`https://onelake.dfs.fabric.microsoft.com/<workspaceGUID>/<itemGUID>/<folder>/`
+
+Example: 
+`https://onelake.dfs.fabric.microsoft.com/12345678-aaaa-bbbb-cccc-123456789abc/12345678-dddd-ffff-gggg-123456789abc/folder-name`
+
+
+You can copy the URL in the [Microsoft Fabric portal](https://app.fabric.microsoft.com/home) using the properties of a OneLake folder:
+	
+![xu-onelake-url](../../assets/images/documentation/destinations/fabric/url.png)
+
+
+
 ### File Format
 
 Select the required file format. You can choose between *CSV*, *JSON* and *Parquet*.

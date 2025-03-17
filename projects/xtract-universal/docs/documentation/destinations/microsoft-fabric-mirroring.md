@@ -25,6 +25,7 @@ For more information, see [Microsoft Documentation: Open mirroring in Microsoft 
 
 
 - An active and running Fabric capacity is required. A paused or deleted capacity affects Mirroring so that no data is replicated.
+- Create a mirrored database in Microsoft OneLake, see [Microsoft Tutorial: Configure Microsoft Fabric open mirrored databases](https://learn.microsoft.com/en-us/fabric/database/mirrored-database/open-mirroring-tutorial).
 - The {{ page.meta.title }} destination is currently only supported by the [Table CDC](../table-cdc/index.md) extraction type. 
 Table CDC requires the installation of the corresponding [custom function modules](../setup-in-sap/custom-function-module-for-tablecdc.md) in SAP. 
 Also note that Table CDC is licensed and purchased separately from other extraction types.
@@ -47,6 +48,24 @@ Make sure the authentication uses the following settings:
 ![Destination-Details](../../assets/images/documentation/destinations/fabric-mirroring/destination-details.png){:class="img-responsive"}
 
 {% include "destinations/fabric.md" %}
+
+
+### Landing Zone
+
+#### URL
+
+Enter the URL of the Microsoft Fabric Mirroring Landing Zone.
+The URL uses the following format:<br>
+`https://onelake.dfs.fabric.microsoft.com/<workspace id>/<mirrored database id>/Files/LandingZone/`
+
+Example: 
+`https://onelake.dfs.fabric.microsoft.com/12345678-aaaa-bbbb-cccc-123456789abc/12345678-dddd-ffff-gggg-123456789abc/Files/LandingZone`
+
+
+You can copy the URL from the [Microsoft Fabric portal](https://app.fabric.microsoft.com/home).
+The Landing Zone URL is displayed in the details section on the Home screen of the mirrored database.
+
+![mirroring-landing-zone-url](../../assets/images/documentation/destinations/fabric-mirroring/mirroring-landing-zone-url.png)
 
 ## Connection Retry and Rollback
 

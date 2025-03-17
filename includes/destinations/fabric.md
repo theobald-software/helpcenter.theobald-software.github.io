@@ -29,20 +29,3 @@ If the connection is successful, a "Connection successful" info window opens.
 	If the window "Entra ID" shows a blank screen, the content is likely blocked by the Internet Explorer ESC (Enhanced Security Configuration) on Windows servers.
 	To disable the Internet Explorer ESC, refer to the instructions in the [Microsoft Documentation: How to turn off Internet Explorer ESC on Windows servers](https://learn.microsoft.com/en-us/previous-versions/troubleshoot/browsers/security-privacy/enhanced-security-configuration-faq#how-to-turn-off-internet-explorer-esc-on-windows-servers).
 
-
-### Files Folder
-
-#### URL
-
-Enter the URL of the Lakehouse, including the folder path in which the data is written.
-The URL uses the following format:<br>
-`https://onelake.dfs.fabric.microsoft.com/<workspaceGUID>/<itemGUID>/<folder>/`
-
-Example: 
-`https://onelake.dfs.fabric.microsoft.com/12345678-aaaa-bbbb-cccc-123456789abc/12345678-dddd-ffff-gggg-123456789abc/folder-name`
-
-
-You can copy the URL in the [Microsoft Fabric portal](https://app.fabric.microsoft.com/home) using the properties of a OneLake folder:
-	
-![xu-onelake-url](../../assets/images/documentation/destinations/fabric/url.png)
-
