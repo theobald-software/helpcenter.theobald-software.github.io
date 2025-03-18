@@ -20,7 +20,24 @@ For more information, see [Microsoft Documentation: Open mirroring in Microsoft 
 !!! note
 	Note that Microsoft Fabric Open Mirroring is still in preview. During preview, not all Fabric regions support Mirroring.
 	For more information, see [Microsoft Documentation: Microsoft Fabric preview information](https://learn.microsoft.com/en-us/fabric/fundamentals/preview).
-	
+
+### Workflow
+
+1. Create a mirrored database in Microsoft Fabric.
+2. Create a Microsoft Fabric Mirroring destination in {{ productName }}.
+3. Create a [TableCDC extraction](../table-cdc/index.md) in {{ productName }} and assign the Microsoft Fabric Mirroring destination.
+4. Run the extraction to initialize the delta mechanism and optionally load the fist data to Microsoft Fabric.
+5. Schedule the extraction in an interval of your choice, see [Execute and Automate - Call via Scheduler](../execute-and-automate/call-via-scheduler.md).
+
+
+``` mermaid
+graph TD
+  A[Create a mirrored database in Microsoft Fabric.] --> B[Create a Microsoft Fabric Mirroring destination in Xtract Unviersal];
+  B -->C[Create a TableCDC extraction in Xtract Universal and assign the Microsoft Fabric Mirroring destination.];
+  C --> D[Run the extraction to initialize the delta mechanism and optionally load the fist data to Microsoft Fabric.];
+  D --> [Schedule the extraction in an interval of your choice, see];
+```
+
 ## Requirements
 
 
