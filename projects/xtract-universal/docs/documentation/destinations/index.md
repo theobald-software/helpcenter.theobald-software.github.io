@@ -172,7 +172,7 @@ The window "Manage Destinations" opens. Here, you can edit, delete and add new d
   url: site:documentation/destinations/microsoft-fabric-onelake
   
 - title: Microsoft Fabric Open Mirroring <br><br><span class="keyword">push-destination</span> 
-  image: site:assets/images/documentation/destinations/logos/onelake.png
+  image: site:assets/images/documentation/destinations/logos/mirroring.png
   url: site:documentation/destinations/microsoft-fabric-mirroring
   
 ::/cards::
