@@ -19,6 +19,7 @@ hide:
 - [Execute & Schedule all Extractions using an SSIS Package](execute_all_defined_xu_extractions.md)
 - [Insert Extraction Events into Windows Logs](insert-extraction-events-into-the-windows-logs.md)
 - [Load Balancing](load-balancer.md)
+- [Proxy Server Settings](proxy-server-settings.md)
 - [SAP Access with {{ productName }} and Powershell](sap-access-with-xtract-universal-and-powershell.md)
 - [Run {{ productName }} in a VM on AWS EC2](run-xu-in-aws.md)
 - [Target Principal Field (TPN)](target-principal-TPN.md)
@@ -135,6 +136,14 @@ The following articles refer to specific [{{ components }}](../documentation/int
 
 </div>
 
+### :component-odata: OData
+
+<div class="mdx-columns" markdown>
+
+- [Create OData Services using the SAP Gateway Builder :material-alert-decagram:](create-odata-services-using-the-sap-gateway-builder.md)
+
+</div>
+
 
 ### :component-odp: ODP
 
@@ -151,7 +160,7 @@ The following articles refer to specific [{{ components }}](../documentation/int
 
 - [Authorize Access to Reports via Authorization Groups](authorize-access-to-specific-reports.md)
 - [Create the Custom Authorization Object Z_TS_PROG](create-the-custom-authority-object-z-ts-prog.md)
-- [Parse Reports in {{ productName }} :material-alert-decagram:](parse-reports.md)
+- [Parse Reports in {{ productName }}](parse-reports.md)
 
 </div>
 

@@ -1,5 +1,115 @@
 [
   {
+    "Version": "2025.3.13.37",
+    "LegacyReleaseDate": "2025-03-13 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "BoardConnector",
+        "Component": "General",
+        "Message": "Fixed a bug where AD Accounts could not be enumerated because of a library version mismatch."
+      }
+    ]
+  },
+  {
+    "Version": "2025.3.7.61",
+    "LegacyReleaseDate": "2025-03-07 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "Table",
+        "Message": "Fixed /THEO/READ_TABLE transport for version 640"
+      }
+    ]
+  },
+  {
+    "Version": "2025.3.7.25",
+    "LegacyReleaseDate": "2025-03-07 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "OData",
+        "Message": "Fixed a bug where EdmType.String was incorrectly mapped for fields without length information"
+      }
+    ]
+  },
+  {
+    "Version": "2025.3.7.11",
+    "LegacyReleaseDate": "2025-03-07 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "BoardConnector",
+        "Component": "General",
+        "Message": "Fix in config converter for failing source upgrades from Board Connector versions before 5.0."
+      }
+    ]
+  },
+  {
+    "Version": "2025.2.27.7",
+    "LegacyReleaseDate": "2025-02-27 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "BWCube",
+        "Message": "BICS: Added support for hierarchy and hierarchy node variables"
+      }
+    ]
+  },
+  {
+    "Version": "2025.2.24.48",
+    "LegacyReleaseDate": "2025-02-24 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "OData",
+        "Message": "Fixed a bug that would parse OData V4 DateTimeOffset incorrectly"
+      }
+    ]
+  },
+  {
+    "Version": "2025.2.18.31",
+    "LegacyReleaseDate": "2025-02-18 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "TableCDC",
+        "Message": "Improved performance of log table clearance operation. Requires update of /THEO/CDC."
+      }
+    ]
+  },
+  {
+    "Version": "2025.2.14.11",
+    "LegacyReleaseDate": "2025-02-14 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "Table",
+        "Message": "Fixed /THEO/READ_TABLE transports for version 710 and 740SP05"
+      }
+    ]
+  },
+  {
+    "Version": "2025.2.12.26",
+    "LegacyReleaseDate": "2025-02-12 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "OData",
+        "Message": "Added filters, packaging and rows limit features for the OData extractor"
+      },
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "Table",
+        "Message": "Fixed conversion exits in /THEO/READ_TABLE"
+      },
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "BWCube",
+        "Message": "MDX Cube: fix for failing extraction when the cache is enabled. Added handling for custom exceptional value markers in cell data.",
+        "ReleaseNote": "## What's New?\n* Fix for failing extractions in MDX mode when the cache is enabled\n* This release contains logic to handle custom strings for exceptional values e.g. for division by zero in MDX mode\n## Impact\nFrom this version on the extractor loads these settings from RSADMINC. In order to read the exceptional value display setting, read access to the table RSADMINC is required. If this authorization is not provided, the default value \"X\" will be used."
+      }
+    ]
+  },
+  {
     "Version": "2025.1.27.106",
     "LegacyReleaseDate": "2025-01-27 00:00:00Z",
     "Changes": [

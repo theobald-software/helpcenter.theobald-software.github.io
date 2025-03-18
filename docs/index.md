@@ -76,8 +76,8 @@ Choose your product:
   url: https://helpcenter.theobald-software.com/board-connector
   
 - title: Xtract Core
-  icon: ./assets/images/xtract-for-alteryx.svg
-  content: Integrate your SAP data into Alteryx with this drag & drop toolbox for the Alteryx Designer.
+  icon: ./assets/images/xtract-core.svg
+  content: The whitelabel Web API server to develop your own SAP interfaces.
   url: https://helpcenter.theobald-software.com/xtract-core
 
 - title: yunIO

@@ -1,5 +1,60 @@
 [
   {
+    "Version": "2025.3.7.55",
+    "LegacyReleaseDate": "2025-03-07 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "Table",
+        "Message": "Fixed /THEO/READ_TABLE transport for version 640"
+      }
+    ]
+  },
+  {
+    "Version": "2025.2.27.3",
+    "LegacyReleaseDate": "2025-02-27 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "BWCube",
+        "Message": "BICS: Added support for hierarchy and hierarchy node variables"
+      }
+    ]
+  },
+  {
+    "Version": "2025.2.18.21",
+    "LegacyReleaseDate": "2025-02-18 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "TableCDC",
+        "Message": "Improved performance of log table clearance operation. Requires update of /THEO/CDC."
+      }
+    ]
+  },
+  {
+    "Version": "2025.2.14.7",
+    "LegacyReleaseDate": "2025-02-14 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "Table",
+        "Message": "Fixed /THEO/READ_TABLE transports for version 710 and 740SP05"
+      }
+    ]
+  },
+  {
+    "Version": "2025.2.11.55",
+    "LegacyReleaseDate": "2025-02-11 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "Table",
+        "Message": "Fixed conversion exits in /THEO/READ_TABLE"
+      }
+    ]
+  },
+  {
     "Version": "2025.2.7.65",
     "LegacyReleaseDate": "2025-02-07 00:00:00Z",
     "Changes": [

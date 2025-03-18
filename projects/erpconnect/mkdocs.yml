@@ -104,15 +104,17 @@ plugins:
   - macros:
       include_dir: includes # ../../includes for ERPConnect only
   #- glightbox #image zoom
-
 # Continuous integration
   - group:
       enabled: !ENV CI
       plugins:
+        - exclude-unused-files:
+             file_types_to_check: ["png", "jpg", "jpeg", "gif"]
         - git-revision-date-localized:
              exclude:
                - index.md
         #enable_creation_date: true
+        - optimize
         #type: timeago
         - minify:
             minify_html: true        

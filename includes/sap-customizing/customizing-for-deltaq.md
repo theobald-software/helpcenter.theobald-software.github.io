@@ -72,10 +72,12 @@ I_RLOGSYS | XTRACT01
 ### Register the RFC Server  
 
 !!! note
-	Registering an RFC Server in SAP Releases only applies to SAP kernel version 720 and higher.
+	Registering an RFC Server in SAP Releases is only necessary for SAP kernel version 720 and higher.
 
-Follow the instructions in the [Knowledge Base Article: Register an RFC Server in SAP with Kernel Release 720 and higher](../../knowledge-base/register-rfc-server-in-sap-releases-in-kernel-release-720-and-higher.md).
+1. [Set the profile parameter *gw/acl_mode*](../../knowledge-base/register-rfc-server-in-sap-releases-in-kernel-release-720-and-higher.md/#change-the-profile-parameter-gwacl_mode) to 0 (default is 1).
+2. [Add the RFC Destination to the whitelist](../../knowledge-base/register-rfc-server-in-sap-releases-in-kernel-release-720-and-higher.md/#define-a-whitelist-of-programs-at-the-sap-gateway) of programs that can register at the SAP Gateway.
 
+For more information, refer to the [Knowledge Base Article: Register an RFC Server in SAP with Kernel Release 720 and higher](../../knowledge-base/register-rfc-server-in-sap-releases-in-kernel-release-720-and-higher.md).
 
 
 ### qRFC Monitor (QOUT Scheduler)

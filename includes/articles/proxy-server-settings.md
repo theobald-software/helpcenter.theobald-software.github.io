@@ -1,14 +1,22 @@
 
-The following article shows how to configure a proxy server in {{ productName }}. <br>
-Due to corporate network regulations there can be the requirement that all web traffic needs to go through a web proxy. 
+The following article shows how to configure a proxy server in {{ productName }}. 
+
+Due to corporate network regulations it can be the required that all web traffic needs to go through a web proxy. 
 {% if page.meta.product == "xtract-universal" %}This means that {{ productName }} must also connect to a destination via a proxy server. {% endif %}
 
+
+### Proxy Server Settings in {{ productName }}
+By default, {{ productName }} uses the proxy configuration defined by the Windows environment variables.
+For information about the necessary environment variable and how to configure them, refer to the [Microsoft Documentation: Configure a proxy using environment variables](https://learn.microsoft.com/en-us/dotnet/azure/sdk/configure-proxy?tabs=cmd#configure-using-environment-variables).
+
+
+
+<!--
 ### System-Wide Configuration in the Windows Settings
 
 Open the settings *Network and Internet* in your Windows start menu and set the respective proxy server settings. 
 {% if page.meta.product == "xtract-universal" %}When connecting to a destination in {{ productName }} the connection is routed through the proxy server. {% endif %}
 
-![XU-proxy-settings-01](../assets/images/articles/proxy-settings-01.png){:class="img-responsive"}
 
 ### Application Specific Configuration
 
@@ -41,10 +49,10 @@ Examples:
 			</defaultProxy>
 		</system.net>
 		<startup>
-			<!-- ... -->
+			...
 		</startup>
 		<runtime>
-			<!-- ... -->
+			...
 		</runtime>
 	</configuration>
 	```
@@ -56,7 +64,7 @@ Examples:
 	<configuration>
 	​
 		<configSections>
-			<!-- ... -->
+			... 
 		</configSections>
 	​
 		<system.net>  
@@ -68,13 +76,7 @@ Examples:
 		</system.net>
 		
 	```
-
-*****
-#### Related Links
-
-- [Microsoft Help: < defaultProxy > Element (Network Settings)](https://docs.microsoft.com/en-us/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings)
-
-
+-->
 
 
 

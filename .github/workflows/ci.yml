@@ -30,7 +30,6 @@ jobs:
           python-version: 3.x
       #- name: execute py script # run file
       #  run: pip install requests
-      #  run: python docs/test-environment-troubleshooting-2/troubleshooting.py
       - run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV
       - uses: actions/cache@v3
         with:
@@ -38,12 +37,13 @@ jobs:
           path: .cache
           restore-keys: |
             mkdocs-material-
-      #- run: sudo apt-get install -y pngquant
+      - run: sudo apt-get install -y pngquant
       - run: pip install git+https://${GH_TOKEN}@github.com/squidfunk/mkdocs-material-insiders.git@9.5.21-insiders-4.53.8
       - run: pip install "mkdocs-material[imaging]"
       - run: pip install git+https://github.com/Andre601/mkdocs-pagenav-generator
       - run: pip install mkdocs-encryptcontent-plugin
       - run: pip install mkdocs-git-revision-date-localized-plugin
+      - run: pip install mkdocs-exclude-unused-files
       - run: pip install mkdocs-macros-plugin
       - run: pip install mkdocs-awesome-pages-plugin
       - run: pip install mkdocs-minify-plugin

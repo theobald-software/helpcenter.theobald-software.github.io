@@ -60,6 +60,7 @@ tags:
 ### Xtract Universal - Troubleshooting
 
 <div class="mdx-columns" markdown>
+- [Authentication failed: The credentials supplied to the package were not recognized](https://support.theobald-software.com/helpdesk/KB/View/27056-)
 - [Copy Command for Snowflake Destination failing / TheoReadTableException: An error occured in PROCESS_PACKAGE callback](https://support.theobald-software.com/helpdesk/KB/View/21807-copy-command-for-snowflake-destination-failing)
 - [Insert Statement failed for empty values using Snowflake Destination](https://support.theobald-software.com/helpdesk/KB/View/14372-insert-statement-failed-for-empty-values-using-snowflake-destination)
 - [Key not valid for use in specified state](https://support.theobald-software.com/helpdesk/KB/View/14295-key-not-valid-for-use-in-specified-state-)
@@ -67,7 +68,6 @@ tags:
 - [Table Export Parameter missing for BAPI Extraction Type](https://support.theobald-software.com/helpdesk/KB/View/14786-table-export-parameter-missing-for-bapi-extraction-type)
 - [The certificate for the remote host could not be validated](https://support.theobald-software.com/helpdesk/KB/View/14247-the-certificate-for-the-remote-host-could-not-be-validated-)
 - [The remote host's name did not match the name on the provided certificate](https://support.theobald-software.com/helpdesk/KB/View/20153-the-remote-host-s-name-did-not-match-the-name-on-the-provided-certificate-)
-
 </div>
 
 <!---

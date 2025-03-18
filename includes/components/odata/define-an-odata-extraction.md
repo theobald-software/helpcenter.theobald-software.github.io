@@ -8,7 +8,7 @@ Use wildcards (*), if needed.<br>
 3. Click **[Search]**. Search results are displayed.
 ![Look-Up-ODP](../../assets/images/documentation/components/odata/odata-lookup.png){:class="img-responsive"}	
 4. Click **[:material-greater-than:]** to select a service :number-2:. 
-The SAP objects that are available via the service are displayed in the right screen of the menu:
+The SAP objects that are available via the service are displayed in the right screen of the menu.
 5. Select a service entity :number-3: and click **[OK]** to confirm.
 
 The application now returns to the main window of the {{ component }}.
@@ -21,8 +21,10 @@ The {{ odata }} {{ component }} offers the following options for data extraction
 1. In the section *Service Fields*, select the items to extract.<br>
 ![Datasource Preview](../../assets/images/documentation/components/odata/{{ abbr }}/define-odata.png){:class="img-responsive"}
 2. Click **[Load Preview]** to display a live preview of the first 100 records.
-{% if page.meta.product == "xtract-universal" or page.meta.product == "board-connector"%}3. Check the [General Settings](general-settings.md) before running the {{ extraction }}.{% endif %}
-3. Click **[OK]** to save the {{ component }}.
+3. Optional: edit selections to apply (dynamic) filters. 
+For more information, see [Edit Selections](selections.md/#edit-selections).<br>
+4. Check the [{{ Settings }}](settings.md){% if page.meta.product == "xtract-universal" or page.meta.product == "board-connector"%} and the [General Settings](general-settings.md){% endif %} before running the {{ extraction }}.
+5. Click **[OK]** to save the {{ component }}.
 {% if page.meta.product == "xtract-for-alteryx" %}4. Optional: Check the column name style and date conversion options in the [tool configuration](tool-configuration.md) of the {{ component }}. {% endif %}
 
 

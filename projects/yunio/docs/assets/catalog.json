@@ -1,5 +1,60 @@
 [
   {
+    "Version": "2025.3.10.39",
+    "LegacyReleaseDate": "2025-03-10 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "YunIO",
+        "Component": "General",
+        "Message": "Fix for incorrect connection type in some cases and config version file not being updated correctly."
+      }
+    ]
+  },
+  {
+    "Version": "2025.3.7.57",
+    "LegacyReleaseDate": "2025-03-07 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "Table",
+        "Message": "Fixed /THEO/READ_TABLE transport for version 640"
+      }
+    ]
+  },
+  {
+    "Version": "2025.2.18.29",
+    "LegacyReleaseDate": "2025-02-18 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "TableCDC",
+        "Message": "Improved performance of log table clearance operation. Requires update of /THEO/CDC."
+      }
+    ]
+  },
+  {
+    "Version": "2025.2.14.9",
+    "LegacyReleaseDate": "2025-02-14 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "Table",
+        "Message": "Fixed /THEO/READ_TABLE transports for version 710 and 740SP05"
+      }
+    ]
+  },
+  {
+    "Version": "2025.2.11.57",
+    "LegacyReleaseDate": "2025-02-11 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "Table",
+        "Message": "Fixed conversion exits in /THEO/READ_TABLE"
+      }
+    ]
+  },
+  {
     "Version": "2025.2.7.67",
     "LegacyReleaseDate": "2025-02-07 00:00:00Z",
     "Changes": [
@@ -19,17 +74,6 @@
         "Product": "YunIO",
         "Component": "General",
         "Message": "Fixed an issue where starting transactions would not work (Bug introduced in 2024.10.30.34)"
-      }
-    ]
-  },
-  {
-    "Version": "2025.1.28.1",
-    "LegacyReleaseDate": "2025-01-28 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "OData",
-        "Message": "Added the OData extractor (preview)"
       }
     ]
   },

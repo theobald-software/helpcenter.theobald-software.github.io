@@ -1,5 +1,49 @@
 [
   {
+    "Version": "2025.3.7.56",
+    "LegacyReleaseDate": "2025-03-07 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "Table",
+        "Message": "Fixed /THEO/READ_TABLE transport for version 640"
+      }
+    ]
+  },
+  {
+    "Version": "2025.2.18.22",
+    "LegacyReleaseDate": "2025-02-18 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "TableCDC",
+        "Message": "Improved performance of log table clearance operation. Requires update of /THEO/CDC."
+      }
+    ]
+  },
+  {
+    "Version": "2025.2.14.8",
+    "LegacyReleaseDate": "2025-02-14 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "Table",
+        "Message": "Fixed /THEO/READ_TABLE transports for version 710 and 740SP05"
+      }
+    ]
+  },
+  {
+    "Version": "2025.2.11.56",
+    "LegacyReleaseDate": "2025-02-11 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "Table",
+        "Message": "Fixed conversion exits in /THEO/READ_TABLE"
+      }
+    ]
+  },
+  {
     "Version": "2025.1.23.30",
     "LegacyReleaseDate": "2025-01-23 00:00:00Z",
     "Changes": [

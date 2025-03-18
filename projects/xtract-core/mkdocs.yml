@@ -68,8 +68,8 @@ theme:
   font:
     text: Poppins
     code: Roboto Mono
-  #favicon: assets/images/logos/products/YunIO.png
-  #logo: assets/images/logos/products/YunIO.png
+  favicon: assets/images/logos/products/XtractCore.png
+  logo: assets/images/logos/products/XtractCore.png
 
 # Custom CSS
 extra_css:
@@ -108,6 +108,7 @@ plugins:
         - curl
         - javascript
   - awesome-pages # define navigation in .pages files
+  - redoc-tag
   - swagger-ui-tag:
       supportedSubmitMethods: []
       #filter: true
@@ -119,6 +120,8 @@ plugins:
   - group:
       enabled: !ENV CI
       plugins:
+        - exclude-unused-files:
+             file_types_to_check: ["png", "jpg", "jpeg", "gif"]
         - git-revision-date-localized:
              exclude:
                - index.md
@@ -252,4 +255,5 @@ extra:
   Extraction: API call
   port: 1337
   port_https: 1338
+  serviceName: SAP Connector
   

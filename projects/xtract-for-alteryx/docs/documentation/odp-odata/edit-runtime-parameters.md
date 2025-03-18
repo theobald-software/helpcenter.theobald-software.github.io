@@ -8,7 +8,7 @@ They can be created in context of [Selections](selections.md).
 
 {% include "components/edit-runtime-parameters.md" %}
 
-### Assign Runtime Parameters
+## Assign Runtime Parameters
 Follow the steps below to assign the runtime parameters to selections.
 
 1. In the main window of the component, click the **[Edit]** button next to the selection you want to parameterize. 
