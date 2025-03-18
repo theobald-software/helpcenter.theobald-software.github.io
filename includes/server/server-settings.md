@@ -7,22 +7,24 @@ To open the server settings, navigate to **[Server] > [Settings]** in the main w
 !!! note
 	The settings are stored in the following directory: `{{ installationDir }}\config\server` (by default).
 
-### Configuration Server
+## Configuration Server
 
  The configuration server communicates with the {{ productName }} Designer.
  
 ![ServerSettings_config_tab](../../assets/images/documentation/server/ServerSettings_config_tab.png){:class="img-responsive"}
 
+### Designer Connection
+
 #### Port 
 
 Defines the port number for communication between Server and Designer. 
-The default is {{ port_designer }}. If you set a different port, add the new port number to the host name on the [logon screen](../designer.md/#connect-the-designer-to-a-server) ([host name]:[port]).
+The default is {{ port_designer }}. If you set a different port, add the new port number to the host name on the [logon screen](../designer.md/#connect-the-designer-to-a-server) (`[host name]:[port]`).
 
 #### Max. age of log files (days)
 Defines the maximum age of the config server [log files](../logs.md#access-server-logs) in days. 
 After this period the log files are deleted.
 
-#### Authentication methods
+### Authentication Methods
 Defines the authentication methods that are available when connecting a Designer to the {{ productName }} Server.
 For more information, see [Authentication Between Designer and Server](../access-restrictions/index.md/#authentication-between-designer-and-server).
 
@@ -31,7 +33,7 @@ Select an X.509 certificate that is used for for transport encryption and authen
 For more information, see [Install an X.509 certificate](../access-restrictions/install-x.509-certificate.md).
 
 
-#### Access Management
+### Access Management
 Defines which users and user groups have access to the Designer.
 For more information, see [Access Management](../access-restrictions/index.md).
 
