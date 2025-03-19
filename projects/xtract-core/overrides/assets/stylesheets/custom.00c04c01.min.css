@@ -24,7 +24,7 @@
 .md-typeset .workflow ol > li {
     counter-increment: workflow-counter;
     position: relative;
-    padding: 1rem 1rem 1rem 2.0rem; /* Space for numbering */
+    padding: 0.5rem 0.5rem 0.5rem 2.0rem; /* Space for numbering */
     margin-bottom: 0.7rem; /* Space between steps */
     background: rgba(240, 162, 2, 0.1); /* Light background */
     border-radius: 15px;
@@ -48,7 +48,7 @@
     content: counter(workflow-counter);
     position: absolute;
     left: -1rem;
-    top: 1.7rem;
+    top: 1.2rem;
     transform: translateY(-50%);
     width: 2rem;
     height: 2rem;
