@@ -163,7 +163,7 @@ The general workflow for Xtract Core includes the following steps:
 
 1. Create a [connection to an SAP source system](#create-sap-connections) to extract data from.
 2. Create a [connection to a target environment / destination](#create-azure-blob-storage-connections) to write data to.
-3. Optional: Fetch information about the tables in your SAP source system. For Example:
+3. Optional: Fetch information about the tables in your SAP source system. For example:
 	- [names and descriptions of tables](api-reference.md/#/connections/metaconnection) 
 	- [names and descriptions of table columns](api-reference.md/#/connections/metatable)
 4. Create a reusable [extraction](#create-table-extractions) that defines which SAP table data to extract.
