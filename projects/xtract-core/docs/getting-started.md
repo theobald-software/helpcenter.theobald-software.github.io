@@ -176,11 +176,8 @@ The Xtract Core API uses the following parameter types:
 | :------ |:--- | :--- |
 | Path | Path parameters are part of the request URL and are used to address specific resources. They are referenced by placeholders in curved brackets.| */connections/sap/<span style="color:red">{name}</span>/tables?pattern=ma** |
 | Query | Query parameters are added to the end of a request URL, following '?'. They are listed in key-value pairs, separated by '&'. Query parameters can be used for filtering or sorting. | */connections/sap/{name}/tables<span style="color:red">?pattern=ma*</span>* |
-| Body | Body parameters are passed in the request body of POST methods to add or update structured data.  | - |
+| Body | Body parameters are passed in the request body of POST methods to add or update structured data. A list of mandatory and optional body parameters is provided in the data model of an API call. In the API reference, expand the data model to display the descriptions of the parameters. | - |
 
-To display the description of items inside a request body of an API call, expand the data model of the request body:<br>
-![body-params](assets/images/documentation/introduction/xc/body-parameters.png)
-	
 
 ### Create SAP Connections
 
