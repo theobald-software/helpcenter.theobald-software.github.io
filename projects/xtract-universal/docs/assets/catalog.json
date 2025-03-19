@@ -1,5 +1,21 @@
 [
   {
+    "Version": "2025.3.19.68",
+    "LegacyReleaseDate": "2025-03-19 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "XtractUniversal",
+        "Component": "Designer",
+        "Message": "Fixed a bug where xu.exe would not correctly supply credentials for Negotiate authentication when cancelling an extraction."
+      },
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "BWCube",
+        "Message": "MDX: Fixed an issue that prevented editing variable values (Bug introduced in 2025.2.27.6)"
+      }
+    ]
+  },
+  {
     "Version": "2025.3.7.59",
     "LegacyReleaseDate": "2025-03-07 00:00:00Z",
     "Changes": [
