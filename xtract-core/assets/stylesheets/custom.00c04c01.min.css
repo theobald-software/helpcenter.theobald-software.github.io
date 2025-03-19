@@ -10,6 +10,73 @@
     transform: scale(1.15);
   }
 }
+
+
+/* Target ordered lists inside workflow containers */
+.md-typeset .workflow ol {
+    counter-reset: workflow-counter;
+    list-style: none;
+    padding-left: 0;
+    position: relative;
+}
+
+/* Style each list item */
+.md-typeset .workflow ol > li {
+    counter-increment: workflow-counter;
+    position: relative;
+    padding: 0.5rem 0.5rem 0.5rem 2.0rem; /* Space for numbering */
+    margin-bottom: 0.7rem; /* Space between steps */
+    background: rgba(240, 162, 2, 0.1); /* Light background */
+    border-radius: 15px;
+}
+
+
+/* Vertical line connecting the steps (now above the shadow) */
+.md-typeset .workflow ol > li::after {
+    content: "";
+    position: absolute;
+    left: -0.05rem; /* Align with the center of the number */
+    top: 1.8rem; /* Start below the number */
+    width: 5px; /* Line thickness */
+    height: calc(100% + 0.5rem); /* Extend to the next item */
+    background-color: #F0A202;
+    z-index: 2; /* Ensure it appears above the shadow */
+}
+
+/* Custom step number */
+.md-typeset .workflow ol > li::before {
+    content: counter(workflow-counter);
+    position: absolute;
+    left: -1rem;
+    top: 1.2rem;
+    transform: translateY(-50%);
+    width: 2rem;
+    height: 2rem;
+    background-color: #F0A202; /* Step color */
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    z-index: 3; /* Ensures number is on top */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Reduce shadow to avoid visual break */
+}
+
+/* Remove the line from the last item */
+.md-typeset .workflow ol > li:last-child::after {
+    display: none;
+}
+
+/* Ensure nested lists remain as bullet points */
+.md-typeset .workflow ol > li ul {
+    list-style: disc;
+    padding-left: 1.2rem;
+}
+
+
+
+
 .md-typeset .twitter {
   color: #00acee;
 }
