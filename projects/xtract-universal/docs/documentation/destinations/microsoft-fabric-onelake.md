@@ -84,7 +84,7 @@ In these cases, Xtract Universal attempts to delete any files created in the Lak
 {% include "destinations/file-name.md" %}
 
 !!! note
-	When an object's name does not start with a letter, an 'x' is added at the beginning. , e.g., `_namespace_tabname.csv` becomes `x_namespace_tabname.csv` when uploaded. <br> This ensures compatibility with Azure Data Factory, Hadoop, and Spark, which require names to start with a letter or handle certain symbols differently.
+	If an object's name does not begin with a letter, the prefix 'x' is automatically appended, e.g., `_namespace_tabname.csv` is renamed to `x_namespace_tabname.csv` upon upload. <br> This ensures compatibility with Azure Data Factory, Hadoop, and Spark, which require names to start with a letter or handle certain symbols differently.
 
 {% include "parameters/file-name-script-expressions.md" %}
 
