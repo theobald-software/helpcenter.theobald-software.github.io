@@ -1,5 +1,27 @@
 [
   {
+    "Version": "2025.3.20.50",
+    "LegacyReleaseDate": "2025-03-20 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "XtractUniversal",
+        "Component": "Salesforce",
+        "Message": "Salesforce destination: Fixed a bug that would not complete data upload, leaving empty jobs in Salesforce (bug introduced in 2025.1.20.38)"
+      }
+    ]
+  },
+  {
+    "Version": "2025.3.20.26",
+    "LegacyReleaseDate": "2025-03-20 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "Report",
+        "Message": "Fixed transport request for systems that do no have data element \"c1\" present."
+      }
+    ]
+  },
+  {
     "Version": "2025.3.19.68",
     "LegacyReleaseDate": "2025-03-19 00:00:00Z",
     "Changes": [
