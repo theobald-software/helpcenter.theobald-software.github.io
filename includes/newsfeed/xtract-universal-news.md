@@ -5,7 +5,7 @@
 
     ---
 
-    [Join our webinar](https://theobald-software.com/en/webinars-en/low-cost-and-low-latency-sap-data-integration-with-microsoft-fabric-open-mirroring/) on 2025-04-17 - 11:00AM PDT to learn how to optimize your near real-time SAP data integration with Microsoft Open Mirroring and Xtract Universal. 
+    [Join our webinar](https://theobald-software.com/en/webinars-en/low-cost-and-low-latency-sap-data-integration-with-microsoft-fabric-open-mirroring/) on 2025-04-17 - 11:00AM PDT to learn how to optimize your data integration with near real-time SAP data synchronization in Microsoft Open Mirroring and Xtract Universal. 
 
     ---
 
