@@ -1,5 +1,16 @@
 [
   {
+    "Version": "2025.3.21.63",
+    "LegacyReleaseDate": "2025-03-21 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "XtractUniversal",
+        "Component": "Designer",
+        "Message": "Added help link (F1) for OData main window"
+      }
+    ]
+  },
+  {
     "Version": "2025.3.20.50",
     "LegacyReleaseDate": "2025-03-20 00:00:00Z",
     "Changes": [
