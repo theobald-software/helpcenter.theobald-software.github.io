@@ -458,7 +458,7 @@ paths:
                   *RFC_READ_TABLE* is used. The installation of
                   */THEO/READ_TABLE* is recommended. For more information, see
                   [Function Module for
-                  Tables](knowledge-base/custom-function-module-for-table-extraction.md).
+                  Tables](https://helpcenter.theobald-software.com/xtract-core/knowledge-base/custom-function-module-for-table-extraction).
                 example: /THEO/READ_TABLE
       responses:
         '200':
