@@ -4009,8 +4009,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#create-the-x509-certificate" class="md-nav__link">
-    Create the X.509 Certificate
+  <a href="#create-and-import-the-x509-certificate" class="md-nav__link">
+    Create and Import the X.509 Certificate
   </a>
   
 </li>
@@ -5319,8 +5319,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#create-the-x509-certificate" class="md-nav__link">
-    Create the X.509 Certificate
+  <a href="#create-and-import-the-x509-certificate" class="md-nav__link">
+    Create and Import the X.509 Certificate
   </a>
   
 </li>
@@ -5439,7 +5439,7 @@ The installation of an X.509 certificate is required to use <a href="https://lea
 <p class="admonition-title">Note</p>
 <p>When using Board Cloud, make sure to use a certificate released by a public certification authority (CA).</p>
 </div>
-<h3 id="create-the-x509-certificate">Create the X.509 Certificate<a class="headerlink" data-preview="" href="#create-the-x509-certificate" title="Permanent link"></a></h3>
+<h3 id="create-and-import-the-x509-certificate">Create and Import the X.509 Certificate<a class="headerlink" data-preview="" href="#create-and-import-the-x509-certificate" title="Permanent link"></a></h3>
 <p>Make sure to have a TLS certificate issued by your IT network team considering the following points:</p>
 <ol>
 <li>The certificate property “Subject Alternative Name” contains the DNS name of the server that runs the BOARD Connector Windows service. 
@@ -5449,9 +5449,8 @@ To display the Common Name (CN) of the certificate, double-click the certificate
 <li>Import the certificate to the <a href="https://technet.microsoft.com/en-us/ms788967(v=vs.91)" target="_blank" rel="noopener">Windows Certificate Store</a> of the machine, that runs the BOARD Connector Windows service using the Microsoft Management Console (mmc.exe).
 The depicted example uses the server name "TODD":<br>
 <img alt="X509-MMC" class="img-responsive" src="/board-connector/assets/images/documentation/access-restriction/X509-MMC.png" /></li>
-<li>After importing the X.509 certificate, right-click the certificate to access the <strong>Manage private keys</strong> menu and add a permission entry for the Windows user that runs the BOARD Connector Windows service.</li>
-<li>Click <strong>[Pick Certificate]</strong> and select the X.509 certificate from the list of available certificates.</li>
-<li>Enter "NT Service\BOARD Connector Service" within the object picker menu, click <strong>[Check Names]</strong> and apply the changes.<br>
+<li>Right-click the certificate and navigate to <strong>All Tasks &gt; Manage private keys</strong> to add a new permission entry for the Windows user that runs the BOARD Connector Windows service.</li>
+<li>Enter the object name "NT Service\BOARD Connector Service" and click <strong>[Check Names]</strong> before applying the changes.<br>
 <img alt="certificate" class="img-responsive" src="/board-connector/assets/images/documentation/access-restriction/x509-certificate-permission.png" /></li>
 </ol>
 <p>The certificate is now available on your machine.</p>
