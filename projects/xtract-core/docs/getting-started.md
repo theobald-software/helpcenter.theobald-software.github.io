@@ -149,7 +149,6 @@ The network settings of the web server can be changed in the `listener.json` fil
 	- *Localhost* only listens on the loopback interface. 
 		
 
-
 ### TLS Configuration
 
 You can enable Transport Layer Security (TLS) to use secured HTTPS communication for the web server.
