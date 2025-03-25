@@ -85,7 +85,7 @@ It is not recommended to use ports below 1000, because they are often already ta
 |Designer|8077|8177|This port is used to open the yunIO Designer on a client machine.|
 |WebSockets|8076|8176|This port is used by the yunIO Designer to read and write configurations, services, etc.|
 
-### Usage Analytics
+### Usage Data
 
 ![Server-Settings-usage-analytics](../assets/images/yunio/documentation/server-settings-usage-analytics.png){:class="img-responsive" }
 
@@ -101,4 +101,8 @@ If this checkbox is deactivated, no usage data is collected.
 #### Upload Usage Data
 
 When this checkbox is active, usage data is sent to Theobald Software for analysis. 
-This requires a connection to the internet.
+An internet connection is required to use this option.
+
+#### Transfer SAP Object Names
+
+When this checkbox is active, the names of the SAP objects used in extractions are included in the usage data upload.

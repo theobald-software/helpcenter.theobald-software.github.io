@@ -86,7 +86,11 @@ For more information, refer to our [privacy policy](https://theobald-software.co
 #### Upload Usage Data
 
 When this checkbox is active, usage data is sent to Theobald Software for analysis. 
-This requires a connection to the internet.
+An internet connection is required to use this option.
+
+#### Transfer SAP Object Names
+
+When this checkbox is active, the names of the SAP objects that are used in extractions are included in the usage data upload.
 
 
 #### Enable setup distribution for clients
