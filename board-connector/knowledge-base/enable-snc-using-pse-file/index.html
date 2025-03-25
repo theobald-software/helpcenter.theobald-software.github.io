@@ -5411,6 +5411,7 @@
 <p>The depicted approach uses an X.509 certificate that provides the logon data of the Windows AD user. 
 The correctness of this X.509 certificate is ensured via the company's internal certification authority (ca).</p>
 <h3 id="workflow">Workflow<a class="headerlink" data-preview="" href="#workflow" title="Permanent link"></a></h3>
+<div class="workflow">
 <ol>
 <li>Upon connection start, the Secure Login Client retrieves the SNC name from the SAP NetWeaver AS ABAP.</li>
 <li>The Secure Login Client uses the authentication profile for this SNC name.</li>
@@ -5419,6 +5420,7 @@ The correctness of this X.509 certificate is ensured via the company's internal 
 <li>The Secure Login Client provides the X.509 certificate for single sign-on and secure communication between SAP GUI or Web GUI and the AS ABAP.</li>
 <li>The user is authenticated and the communication is secured.</li>
 </ol>
+</div>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>The configuration of the X.509 certificate should be implemented by the network &amp; SAP Basis team and requires basic knowledge in this area.</p>
