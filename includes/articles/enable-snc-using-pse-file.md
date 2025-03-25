@@ -6,12 +6,16 @@ The correctness of this X.509 certificate is ensured via the company's internal 
 
 ### Workflow
 
+<div class="workflow" markdown>
+
 1. Upon connection start, the Secure Login Client retrieves the SNC name from the SAP NetWeaver AS ABAP.
 2. The Secure Login Client uses the authentication profile for this SNC name.
 3. The user unlocks the security token, for example, by entering the PIN or password.
 4. The Secure Login Client receives the X.509 certificate from the user security token. 
 5. The Secure Login Client provides the X.509 certificate for single sign-on and secure communication between SAP GUI or Web GUI and the AS ABAP.
 6. The user is authenticated and the communication is secured.
+
+</div>
 
 !!! tip
 	The configuration of the X.509 certificate should be implemented by the network & SAP Basis team and requires basic knowledge in this area.
