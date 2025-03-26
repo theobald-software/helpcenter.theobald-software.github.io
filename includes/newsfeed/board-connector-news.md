@@ -15,7 +15,7 @@
 
     ---
 
-    Find out how your usage data can help [improve our products](https://theobald-software.com/en/xu-beyond/). For more information on how we handle your data, refer to our [privacy policy](https://theobald-software.com/en/privacy-policy/). <br>Of course, you can opt-out anytime using the [server settings](documentation/server/server-settings/#web-server). 
+    Find out how your usage data can help [improve our products](https://theobald-software.com/en/xu-beyond/). For more information on how we handle your data, refer to our [privacy policy](https://theobald-software.com/en/privacy-policy/). <br>Of course, you can opt-out anytime using the [server settings](knowledge-base/deactivate-usage-analytics/). 
 
     ---
 
