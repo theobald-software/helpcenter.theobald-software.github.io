@@ -73,6 +73,7 @@ extra_javascript:
 # Plugins
 plugins:
   - meta
+  - bpmn
   - typeset
   - awesome-pages
   - pagenav-generator
@@ -129,6 +130,7 @@ plugins:
 
 # Additional configuration
 extra:
+  generate_404: true  # Ensures static files are served
   generator: false #footer display Made with Material for MkDocs
   status:
     new: Recently added
