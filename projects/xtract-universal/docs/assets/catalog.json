@@ -1,5 +1,28 @@
 [
   {
+    "Version": "2025.3.26.15",
+    "LegacyReleaseDate": "2025-03-26 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "XtractUniversal",
+        "Component": "MicrosoftFabricOpenMirroring",
+        "Message": "Added the Microsoft Fabric Open Mirroring destination (preview)"
+      }
+    ]
+  },
+  {
+    "Version": "2025.3.26.13",
+    "LegacyReleaseDate": "2025-03-26 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Server",
+        "Component": "General",
+        "Message": "Collection of usage statistics to improve user experience",
+        "ReleaseNote": "To better understand how our products are used, we now collect usage statistics. \nEnvironment statistics:\n* Information about sources and destinations\n  * the name of the source or destination\n  * the type of the source or destination\n* Information about extraction configuration \n  * the name of the extraction \n  * the name of the configured source\n  * the name of the configured destination \n  * the extraction type\n  * the names of the sap objects \nExtraction statistics:\n* the timestamp when the extraction was executed \n* the number of rows being extracted\n* the state of the extraction (successful/failure)\n* the duration of the extraction \n* the extraction, source and destination name\n* information about the sap system (deployment model, version, product name, application server, system id)\n* the license number \n\nAll possible sensitive information is transfered as hashed data and cannot be reverted.\nThe collection and upload can be enabled/disabled in the server settings."
+      }
+    ]
+  },
+  {
     "Version": "2025.3.25.66",
     "LegacyReleaseDate": "2025-03-25 00:00:00Z",
     "Changes": [
