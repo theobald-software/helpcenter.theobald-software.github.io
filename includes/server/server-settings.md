@@ -77,11 +77,7 @@ Defines the maximum age of the web server [log files](../logs.md#access-extracti
 #### Collect Usage Data
 
 When this checkbox is active, usage data is stored in your local installation directory.
-If this checkbox is deactivated, no usage data is collected.
-
-Usage data is collected to improve {{ productName }} and better cater to customer needs. Typical usage data includes the source type and extraction types that are in use, referenced SAP objects, statistics about axtraction runs, etc.
-For more information, refer to our [privacy policy](https://theobald-software.com/en/privacy-policy/).
-
+If this checkbox is deactivated, no usage data is collected. 
 
 #### Upload Usage Data
 
