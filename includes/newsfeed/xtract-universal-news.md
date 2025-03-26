@@ -21,6 +21,16 @@
 
     :material-clock-time-two-outline: 2025-03-27
 
+-   **:material-alert-decagram: Usage Analytics**
+
+    ---
+
+    Find out how your usage data can help [improve our products](https://theobald-software.com/en/xu-beyond/). For more information on how we handle your data, refer to our [privacy policy](https://theobald-software.com/en/privacy-policy/). <br>Of course, you can opt-out anytime using the [server settings](documentation/server/server-settings/#web-server). 
+
+    ---
+
+    :material-clock-time-two-outline: 2025-03-26
+
 -   **:material-alert-decagram: OData Connectivity Added (Beta)**
 
     ---
