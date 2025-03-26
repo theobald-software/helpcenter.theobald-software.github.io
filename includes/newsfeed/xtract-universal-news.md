@@ -31,6 +31,16 @@
 
     :material-clock-time-two-outline: 2025-03-26
 
+-   **:material-alert-decagram: Microsoft Fabric Mirroring Destination**
+
+    ---
+
+    Synch your SAP data in near real-time with Microsoft Fabric using our new [Microsoft Fabric Mirroring destination](documentation/destinations/microsoft-fabric-mirroring.md) destination. For more information about Mirroring and upcoming webinars, refer to our [website](https://theobald-software.com/en/fabric-mirroring/).
+
+    ---
+
+    :material-clock-time-two-outline: 2025-03-26
+
 -   **:material-alert-decagram: OData Connectivity Added (Beta)**
 
     ---
