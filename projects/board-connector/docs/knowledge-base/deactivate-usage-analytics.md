@@ -1,5 +1,5 @@
 ---
-title: Deactivate Usage Analytics
+title: Deactivate Usage Data Colelction
 description: How to opt-out of usage data collections.
 author: Valerie Schipka
 ---
