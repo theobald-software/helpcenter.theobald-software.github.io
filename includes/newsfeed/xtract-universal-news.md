@@ -11,21 +11,11 @@
 
     :material-clock-time-two-outline: 2025-04-17
 
--   **:material-video: Webinar: Stay SAP ODP-compliant with OData & CDC**
-
-    ---
-
-    [Join our webinar](https://theobald-software.com/en/2025-en/adhere-to-new-sap-guidelines-using-theobald-softwares-odp-with-odata-and-change-data-capturing-features/) on 2025-03-27 - 11:00AM PDT to learn how to handle the SAP note 3255746. You will also learn how to replace your existing ODP extractions with other extraction types.
-
-    ---
-
-    :material-clock-time-two-outline: 2025-03-27
-
 -   **:material-alert-decagram: Usage Analytics**
 
     ---
 
-    Find out how your usage data can help [improve our products](https://theobald-software.com/en/xu-beyond/). For more information on how we handle your data, refer to our [privacy policy](https://theobald-software.com/en/privacy-policy/). <br>Of course, you can opt-out anytime using the [server settings](documentation/server/server-settings/#web-server). 
+    Find out how your usage data can help [improve our products and your user experience](https://theobald-software.com/en/xu-beyond/). For more information on how we handle your data, refer to our [privacy policy](https://theobald-software.com/en/privacy-policy/). <br>Of course, you can [opt-out](knowledge-base/deactivate-usage-analytics.md) anytime. 
 
     ---
 
