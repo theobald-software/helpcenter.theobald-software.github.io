@@ -28,6 +28,12 @@
   display: none;
 }
 
+.mk-bpmn-container {
+    border: 2px solid grey;
+    display: block; /* Ensures the border wraps correctly */
+	background-color: white;
+}
+
 /* Custom beta status */
 .md-status--beta::after {
     background-color: var(--md-default-fg-color--light);

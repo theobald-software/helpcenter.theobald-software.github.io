@@ -5381,11 +5381,11 @@
   <h1>Table CDC</h1>
 
 <p>This page shows how to use the Table CDC extraction type.<br>
-The Table CDC extraction type can be used to extract delta content from SAP Tables.
-It creates a log table in SAP that records insert, update, and delete activities that apply to a selected SAP table.<br></p>
+The Table CDC extraction type can be used to map data from SAP Tables to various target environments.
+Unlike a full data load, where all records in a table are transferred from the source to the target environment, Table CDC captures only the data changes since the last load. </p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Table CDC is an Add-On that requires a license. 
+<p>Table CDC is an Add-On that requires a separate license. 
 For more information, contact Theobald Software's sales team at <a href="mailto:sales@theobald-software.com">sales@theobald-software.com</a>.</p>
 </div>
 <h3 id="about-table-cdc">About Table CDC<a class="headerlink" data-preview="" href="#about-table-cdc" title="Permanent link"></a></h3>
@@ -5488,7 +5488,7 @@ Deselect the columns you do not want to extract.<br>
 <img alt="Table-CDC-Setup" class="img-responsive" src="../../assets/images/documentation/components/table-cdc/table-cdc-kna1.png" /></li>
 <li>If you want to extract the table when first running the extraction, activate <strong>[Extract table on first run]</strong>.</li>
 <li>
-<p>Optional: You can set a maximum number of rows that the log table can contain. The default is disabled (Value 0). <br>
+<p>Optional: You can set a maximum number of rows that the log table can contain. The default is disabled (Value 0).
 If the row limit is reached, the extraction fails with an exception. The maximum row limit of a log table is 500.000.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
