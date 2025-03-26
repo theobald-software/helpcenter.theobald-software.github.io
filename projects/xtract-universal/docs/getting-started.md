@@ -62,6 +62,7 @@ For more information about destination details, select your destination: <select
 	<option value="azure-storage">Microsoft Azure Storage</option>
 	<option value="azure-synapse-analytics">Microsoft Azure Synapse Analytics</option>
 	<option value="microsoft-fabric-onelake">Microsoft Fabric (OneLake)</option>
+	<option value="microsoft-fabric-mirroring">Microsoft Fabric Open Mirroring</option>
 	<option value="Power-BI-Connector">Microsoft Power BI</option>
 	<option value="server-report-services">Microsoft Power BI Report Server</option>
 	<option value="sharepoint">Microsoft SharePoint</option>
@@ -122,6 +123,7 @@ For more information about destination settings, select your destination: <selec
 	<option value="azure-storage">Microsoft Azure Storage</option>
 	<option value="azure-synapse-analytics">Microsoft Azure Synapse Analytics</option>
 	<option value="microsoft-fabric-onelake">Microsoft Fabric (OneLake)</option>
+	<option value="microsoft-fabric-mirroring">Microsoft Fabric Open Mirroring</option>
 	<option value="Power-BI-Connector">Microsoft Power BI</option>
 	<option value="server-report-services">Microsoft Power BI Report Server</option>
 	<option value="sharepoint">Microsoft SharePoint</option>
