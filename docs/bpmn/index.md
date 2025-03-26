@@ -18,12 +18,12 @@ hide:
 	```
 - How to use:
 	```markdown
-	![Delta](../sample.bpmn){height="400px"}
+	![sample](../sample.bpmn){height="400px"}
 	```
 
 ### Custom Styling
 
-Add the following to the `extra.css` file od each product:
+Add the following to the `extra.css` file of each product:
 
 ```css
 .mk-bpmn-container {
