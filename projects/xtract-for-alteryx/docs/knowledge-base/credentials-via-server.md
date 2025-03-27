@@ -6,6 +6,8 @@ author: Simon Rech, Valerie Schipka
 
 This article provides examples on how to handle credentials and authorization for {{ productName }} workflows on Alteryx Servers.
 
+### About the Use Case
+
 When creating workflows, it is common for the creator to provide their own SAP credentials.
 Once the workflow is shared with other users on the Alteryx Server, it can be necesary for users to provide their own SAP credentials to meet security guidelines.
 As {{ productName }} does not support external management of credentials by Alteryx's Data Connection Manager (DCM), alternative approaches are necessary to ensure data security.
