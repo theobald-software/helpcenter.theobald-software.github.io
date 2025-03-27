@@ -15,7 +15,7 @@ hide:
   }
 </style>
 
-<swagger-ui src="swagger.yaml"/>
+<swagger-ui src="swagger.json"/>
 
 <script>
 function scroll() {
