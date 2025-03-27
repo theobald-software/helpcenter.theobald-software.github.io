@@ -6,6 +6,7 @@ search:
   exclude: true
 ---
 
+
 This article provides examples on how to handle SAP credentials and authorization for {{ productName }} workflows on the Alteryx Server.
 
 ### About the Use Case
