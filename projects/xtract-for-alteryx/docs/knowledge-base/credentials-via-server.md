@@ -4,12 +4,12 @@ description: How to handle SAP credentials and authorization for {{ productName 
 author: Simon Rech, Valerie Schipka
 ---
 
-This article provides examples on how to handle credentials and authorization for {{ productName }} workflows on Alteryx Servers.
+This article provides examples on how to handle SAP credentials and authorization for {{ productName }} workflows on the Alteryx Server.
 
 ### About the Use Case
 
 When creating workflows, it is common for the creator to provide their own SAP credentials.
-Once the workflow is shared with other users on the Alteryx Server, it can be necesary for users to provide their own SAP credentials to meet security guidelines.
+Once the workflow is shared with other users on the Alteryx Server, it can be necesary for the users to provide their own SAP credentials to meet security guidelines.
 As {{ productName }} does not support external management of credentials by Alteryx's Data Connection Manager (DCM), alternative approaches are necessary to ensure data security.
 
 The approaches presented in this article are no best practices or recommendations. 
@@ -44,16 +44,17 @@ So we can't just experiment much with SSO there.
 
 ### Single Technical User
 
-One way to ensure that no authorized users have access is by controlling which Gallery Users are allowed to run the workflow on the Alteryx Server.
+One way to ensure that no unauthorized users have access, is by controlling which Gallery Users are allowed to run the workflow on the Alteryx Server.
+How to set up authorizations for the workflow:
 
 <div class="workflow" markdown>
 
 1. Set up your workflow with an [SAP connection](../documentation/sap-connection/index.md) that uses the credentials of an SAP Technical User.
 2. Share your workflow on an Alteryx Server.
 3. Use the authorization options provided by Alteryx to control which users can run the workflow. Examples:
-	- Use Collections to control access by inviting only users or groups to the collection that should have access and assign "Run" persmissions to the allowed users.
-	- Restrict Access in the workflow settings to remove any public or unwanted access.
-	- If the Alteryx Server is connected to an authentication system (e.g., EntraID), set permission at the user level or group levelse Gallery permissions
+	- Use Collections to control access by inviting only users or groups to the collection that should have access and assign "Run" permissions to the allowed users.
+	- Restrict access in the workflow settings to remove any public or unwanted access.
+	- If the Alteryx Server is connected to an authentication system (e.g., EntraID), set permissions at the user level or group levels.
 
 </div>
 
