@@ -2,6 +2,8 @@
 title: Pass Credentials on the Alteryx Server
 description: How to handle SAP credentials and authorization for {{ productName }} workflows on Alteryx Servers.
 author: Simon Rech, Valerie Schipka
+search:
+  exclude: true
 ---
 
 This article provides examples on how to handle SAP credentials and authorization for {{ productName }} workflows on the Alteryx Server.
