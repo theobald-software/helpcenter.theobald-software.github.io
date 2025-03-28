@@ -51,7 +51,7 @@ Check with dev if this is a new product or a new tool for XfA:
 - [ ] Add Dashboard in Google Analytics
 - [ ] Index product pages in Google Console (SEO)
 
-- [ ] ## Xtract Phoenix
+## Xtract Phoenix
 
 - [ ] Create new git Branch for the product
 	- [ ] Create/copy a project folder 
