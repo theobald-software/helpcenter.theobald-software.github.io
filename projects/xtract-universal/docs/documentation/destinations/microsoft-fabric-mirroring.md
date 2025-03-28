@@ -99,7 +99,7 @@ Example:
 
 {% include "parameters/file-name-script-expressions.md" %}
 
-{% include "destinations/column-name-style.md" %}
+<!-- {% include "destinations/column-name-style.md" %} -->
 
 {% include "destinations/date-conversion.md" %}
 
