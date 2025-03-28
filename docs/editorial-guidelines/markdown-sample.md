@@ -366,6 +366,10 @@ Click **[:material-pencil-outline:]** to edit an entry.
 	:products-xtract-universal: `:products-xtract-universal:`
 	
 	:products-yunio: `:products-yunio:`
+	
+	:products-xtract-core: `:products-xtract-core:`
+	
+	:products-xtract-sap-concur: `:products-xtract-sap-concur:`
 
 === "Components"
 
@@ -396,6 +400,8 @@ Click **[:material-pencil-outline:]** to edit an entry.
 	:component-table-cdc: `:component-table-cdc:`
 	
 	:component-transaction: `:component-transaction:`
+	
+	:component-sap-concur: `:component-sap-concur:`
 	
 === "Numbers"
 

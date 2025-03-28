@@ -1,11 +1,11 @@
 # Copyright (c) 2016-2023 Martin Donath <martin.donath@squidfunk.com>
 
 # Project information
-site_name: Xtract Concur HelpCenter
-site_url: https://helpcenter.theobald-software.com/xtract-concur/
+site_name: Xtract SAP Concur HelpCenter
+site_url: https://helpcenter.theobald-software.com/xtract-sap-concur/
 #site_author: Valerie Schipka
 site_description: >-
-  Integrate your SAP Concur data into Alteryx with Xtract Concur. Learn how to use Xtract Concur by browsing our documentation, articles, templates and more.
+  Integrate your SAP Concur data into Alteryx with Xtract SAP Concur. Learn how to use Xtract SAP Concur by browsing our documentation.
 
 # Repository
 # repo_name: theobald-software/helpcenter.theobald-software.github.io
@@ -13,8 +13,6 @@ site_description: >-
 
 # Copyright
 copyright: Copyright &copy; 2025 Theobald Software GmbH <br> <span style="color:#CA5D27"><a  style="color:#CA5D27" href="https://theobald-software.com/en/privacy-policy/" target="_blank" rel="noopener">privacy policy</a> - <a  style="color:#CA5D27" href="https://theobald-software.com/en/legal-notice" target="_blank" rel="noopener">legal notice</a> - <a style="color:#CA5D27" href="https://theobald-software.com/en/" target="_blank" rel="noopener">website</a></span>
-watch:
-  - includes
 
 # Configuration
 theme:
@@ -68,8 +66,8 @@ theme:
   font:
     text: Poppins
     code: Roboto Mono
-  favicon: assets/images/logos/products/XtractAlteryx.png
-  logo: assets/images/logos/products/XtractAlteryx.png
+  favicon: assets/images/XtractSAPConcur.png
+  logo: assets/images/XtractSAPConcur.png
 
 # Custom CSS
 extra_css:
@@ -103,8 +101,8 @@ plugins:
   - typeset # preserve format of titles and headlines in navigation and toc
   - awesome-pages # define navigation in .pages files
   - pagenav-generator
-  - macros:
-      include_dir: includes
+  - macros
+      #include_dir: includes
   #- swagger-ui-tag
   #- glightbox #image zoom
   #- tags # enables tags in front matter
@@ -223,35 +221,16 @@ extra:
     - icon: fontawesome/solid/envelope
       link: https://theobald-software.com/en/newsletter/
       name: Newsletter
-  productName: Xtract for Alteryx
-  Abbr: XfA
-  abbr: xfa
-  component: component
-  Component: Component
-  Components: Components
-  components: components
+  productName: Xtract SAP Concur
+  Abbr: XSC
+  abbr: xsc
+  component: tool
+  Component: Tool
+  Components: Tools
+  components: tools
   extraction: workflow
   extractions: workflows
-  installationDir: C:\Program Files\XtractForAlteryx
-  setup: XtractForAlteryx
-  bapi: Xtract BAPI
-  table: Xtract Table
-  tableCDC: Xtract Table CDC
-  bapi: Xtract BAPI
-  bwcube: Xtract Cube
-  bwloader:  
-  hierarchy: Xtract Hierarchy
-  deltaq: Xtract DeltaQ
-  odp: Xtract ODP
-  odpOdata: Xtract ODP (OData)
-  ohs: Xtract OHS
-  query: Xtract Query
-  report: Xtract Report
-  settings: extraction settings
-  Settings: Extraction Settings
-  settingsBtn: __[Extraction Settings]__
-  parameterBtn: __[Edit Parameters]__
-  variable: runtime parameter
-  variables: runtime parameters
-  Variables: Runtime parameters
-  previewBtn: __[Load live preview]__
+  concur: SapConcur
+  installationDir: C:\Program Files\XtractSAPConcur
+  setup: XtractSAPConcur
+ 
