@@ -48,9 +48,9 @@ Internal Changelogs:
 
 [:material-rocket: __Product Launches 2025__](product-launches/index.md)
 
-[:material-update: __Internal Changelog__](changelog/changelog-xu.md)
-
 [:material-sign-direction: __Roadmap__](roadmap/index.md)
+
+[:fontawesome-solid-diagram-project: __BPMN Diagrams__](bpmn/index.md)
 
 [:material-file-document-edit-outline: __Drafts__](drafts/index.md)
 

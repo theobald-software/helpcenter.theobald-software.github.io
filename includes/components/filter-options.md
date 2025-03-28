@@ -1,7 +1,6 @@
 
-### Available Filter Options
+### Filter Options
 
-You can enter filter values directly in the {{ page.meta.componentName }} {{ component }} {% if page.meta.componentFolder == "bwcube" %}, select pre-defined values from SAP{% endif %} or define {% if page.meta.product != "xtract-is" %} [{{ variables }}](edit-runtime-parameters.md) {% else %} {{ variables }} {% endif %} to pass values during runtime.
 
 The {{ page.meta.componentName }} {{ component }} offers the following filter options:
 

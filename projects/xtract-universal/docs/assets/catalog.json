@@ -1,5 +1,333 @@
 [
   {
+    "Version": "2025.3.26.15",
+    "LegacyReleaseDate": "2025-03-26 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "XtractUniversal",
+        "Component": "MicrosoftFabricOpenMirroring",
+        "Message": "Added the Microsoft Fabric Open Mirroring destination (preview)"
+      }
+    ]
+  },
+  {
+    "Version": "2025.3.26.13",
+    "LegacyReleaseDate": "2025-03-26 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Server",
+        "Component": "General",
+        "Message": "Collection of usage statistics to improve user experience",
+        "ReleaseNote": "To better understand how our products are used, we now collect usage statistics. \nEnvironment statistics:\n* Information about sources and destinations\n  * the name of the source or destination\n  * the type of the source or destination\n* Information about extraction configuration \n  * the name of the extraction \n  * the name of the configured source\n  * the name of the configured destination \n  * the extraction type\n  * the names of the sap objects \nExtraction statistics:\n* the timestamp when the extraction was executed \n* the number of rows being extracted\n* the state of the extraction (successful/failure)\n* the duration of the extraction \n* the extraction, source and destination name\n* information about the sap system (deployment model, version, product name, application server, system id)\n* the license number \n\nAll possible sensitive information is transfered as hashed data and cannot be reverted.\nThe collection and upload can be enabled/disabled in the server settings."
+      }
+    ]
+  },
+  {
+    "Version": "2025.3.25.66",
+    "LegacyReleaseDate": "2025-03-25 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "XtractUniversal",
+        "Component": "Snowflake",
+        "Message": "Snowflake Destination: Changed File Format parameter not to fail on column count mismatch between CSV file its respective table"
+      }
+    ]
+  },
+  {
+    "Version": "2025.3.21.63",
+    "LegacyReleaseDate": "2025-03-21 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "XtractUniversal",
+        "Component": "Designer",
+        "Message": "Added help link (F1) for OData main window"
+      }
+    ]
+  },
+  {
+    "Version": "2025.3.20.50",
+    "LegacyReleaseDate": "2025-03-20 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "XtractUniversal",
+        "Component": "Salesforce",
+        "Message": "Salesforce destination: Fixed a bug that would not complete data upload, leaving empty jobs in Salesforce (bug introduced in 2025.1.20.38)"
+      }
+    ]
+  },
+  {
+    "Version": "2025.3.20.26",
+    "LegacyReleaseDate": "2025-03-20 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "Report",
+        "Message": "Fixed transport request for systems that do no have data element \"c1\" present."
+      }
+    ]
+  },
+  {
+    "Version": "2025.3.19.68",
+    "LegacyReleaseDate": "2025-03-19 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "XtractUniversal",
+        "Component": "Designer",
+        "Message": "Fixed a bug where xu.exe would not correctly supply credentials for Negotiate authentication when cancelling an extraction."
+      },
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "BWCube",
+        "Message": "MDX: Fixed an issue that prevented editing variable values (Bug introduced in 2025.2.27.6)"
+      }
+    ]
+  },
+  {
+    "Version": "2025.3.7.59",
+    "LegacyReleaseDate": "2025-03-07 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "Table",
+        "Message": "Fixed /THEO/READ_TABLE transport for version 640"
+      }
+    ]
+  },
+  {
+    "Version": "2025.3.7.23",
+    "LegacyReleaseDate": "2025-03-07 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "OData",
+        "Message": "Fixed a bug where EdmType.String was incorrectly mapped for fields without length information"
+      }
+    ]
+  },
+  {
+    "Version": "2025.3.6.28",
+    "LegacyReleaseDate": "2025-03-06 00:00:00Z",
+    "IsBreaking": true,
+    "Changes": [
+      {
+        "Product": "XtractUniversal",
+        "Component": "General",
+        "Message": "Fix in config converter for failing source upgrades from Xtract Universal versions before 5.0 and handling of duplicate source and destination names.",
+        "ReleaseNote": "## What's New?\nThe configuration converter now handles cases where a source and a destination may have the same name when upgrading from Xtract Universal versions before 2024.10.30.35.\nIn these version the uniqueness of names was only required within the sources or destinations. From version 2024.10.30.35 the sources and destinations are merged into connections causing conflicts if there is a source and a destination with the same name.\n\nThis release handles this case by ensuring unique names during configuration upgrades. If a duplicate name is detected in a destination, the destination name will be updated with the suffix _dest.\n\n### Example\n\n**Before upgrade**\n* Extraction_1\n  * Source: Connection\n  * Destination: Connection\n* Extraction_2\n  * Source: Connection1\n  * Destination: ConnectionUnique\n\n\n**After upgrade**\n* Extraction_1\n  * Source: Connection\n  * Destination: Connection_dest\n* Extraction_2\n  * Source: Connection1\n  * Destination: ConnectionUnique\n\n## Impact\n\nThis change may be breaking in the following case: there is at least one destination with the same name as a source and the destination is used in paramterization e.g. within a script.\nIn this case parameterizations using the names of affected destinations must be updated with the new unique destination name or the destination names must be changed to unique names before upgrading to the latest version."
+      }
+    ]
+  },
+  {
+    "Version": "2025.3.5.8",
+    "LegacyReleaseDate": "2025-03-05 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "XtractUniversal",
+        "Component": "Destinations",
+        "Message": "Microsoft Azure Storage destination: Fixed a regression bug that crashed extractions when using folders with backslash (bug introduced in version 2024.8.26.25)"
+      }
+    ]
+  },
+  {
+    "Version": "2025.3.4.25",
+    "LegacyReleaseDate": "2025-03-04 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "XtractUniversal",
+        "Component": "Destinations",
+        "Message": "Alteryx Plugin: Fixed an issue that prevents the use of HTTPS connections (Bug introduced in 2024.11.19.91)"
+      }
+    ]
+  },
+  {
+    "Version": "2025.2.27.6",
+    "LegacyReleaseDate": "2025-02-27 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "BWCube",
+        "Message": "BICS: Added support for hierarchy and hierarchy node variables"
+      }
+    ]
+  },
+  {
+    "Version": "2025.2.24.44",
+    "LegacyReleaseDate": "2025-02-24 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "OData",
+        "Message": "Fixed a bug that would parse OData V4 DateTimeOffset incorrectly"
+      }
+    ]
+  },
+  {
+    "Version": "2025.2.18.32",
+    "LegacyReleaseDate": "2025-02-18 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "XtractUniversal",
+        "Component": "GoogleCloudStorage",
+        "Message": "Fixed a bug where choosing large thresholds (&gt;1024MB) for file splitting could result in an error during extraction due to exceeding the maximum size allowed for buffers."
+      }
+    ]
+  },
+  {
+    "Version": "2025.2.18.30",
+    "LegacyReleaseDate": "2025-02-18 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "TableCDC",
+        "Message": "Improved performance of log table clearance operation. Requires update of /THEO/CDC."
+      }
+    ]
+  },
+  {
+    "Version": "2025.2.14.10",
+    "LegacyReleaseDate": "2025-02-14 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "Table",
+        "Message": "Fixed /THEO/READ_TABLE transports for version 710 and 740SP05"
+      }
+    ]
+  },
+  {
+    "Version": "2025.2.14.2",
+    "LegacyReleaseDate": "2025-02-14 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "XtractUniversal",
+        "Component": "Designer",
+        "Message": "Fixed a bug which incorrectly disabled the set user password top menu button"
+      }
+    ]
+  },
+  {
+    "Version": "2025.2.12.25",
+    "LegacyReleaseDate": "2025-02-12 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "OData",
+        "Message": "Added filters, packaging and rows limit features for the OData extractor"
+      }
+    ]
+  },
+  {
+    "Version": "2025.2.11.58",
+    "LegacyReleaseDate": "2025-02-11 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "Table",
+        "Message": "Fixed conversion exits in /THEO/READ_TABLE"
+      }
+    ]
+  },
+  {
+    "Version": "2025.2.11.22",
+    "LegacyReleaseDate": "2025-02-11 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "XtractUniversal",
+        "Component": "Snowflake",
+        "Message": "Fixed a bug that would leave staged files in Snowflake upon merge operation"
+      }
+    ]
+  },
+  {
+    "Version": "2025.2.11.12",
+    "LegacyReleaseDate": "2025-02-11 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "XtractUniversal",
+        "Component": "Designer",
+        "Message": "Fixed a bug that would display an error message upon extraction execution when run window had already been closed before."
+      }
+    ]
+  },
+  {
+    "Version": "2025.2.7.68",
+    "LegacyReleaseDate": "2025-02-07 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "BWCube",
+        "Message": "MDX Cube: fix for failing extraction when the cache is enabled. Added handling for custom exceptional value markers in cell data.",
+        "ReleaseNote": "## What's New?\n* Fix for failing extractions in MDX mode when the cache is enabled\n* This release contains logic to handle custom strings for exceptional values e.g. for division by zero in MDX mode\n## Impact\nFrom this version on the extractor loads these settings from RSADMINC. In order to read the exceptional value display setting, read access to the table RSADMINC is required. If this authorization is not provided, the default value \"X\" will be used."
+      }
+    ]
+  },
+  {
+    "Version": "2025.2.7.59",
+    "LegacyReleaseDate": "2025-02-07 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "XtractUniversal",
+        "Component": "FlatFileCsv",
+        "Message": "Fixed a bug where the settings for the file csv destination would not be loaded or stored correctly"
+      }
+    ]
+  },
+  {
+    "Version": "2025.2.7.0",
+    "LegacyReleaseDate": "2025-02-07 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "XtractUniversal",
+        "Component": "Destinations",
+        "Message": "Fixed an issue where destination settings for cloud (S3, Azure Storage and GCS) destinations where not converted for extractions inside of sub folders."
+      }
+    ]
+  },
+  {
+    "Version": "2025.1.27.41",
+    "LegacyReleaseDate": "2025-01-27 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "OData",
+        "Message": "Added the OData extractor (preview)"
+      }
+    ]
+  },
+  {
+    "Version": "2025.1.23.90",
+    "LegacyReleaseDate": "2025-01-23 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "BWCube",
+        "Message": "Fixed an error that could occur when loading an MDX definition with filters defined."
+      }
+    ]
+  },
+  {
+    "Version": "2025.1.23.13",
+    "LegacyReleaseDate": "2025-01-23 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "XtractUniversal",
+        "Component": "Destinations",
+        "Message": "Microsoft SQL Server destination: improved security of SQL statement generator."
+      }
+    ]
+  },
+  {
+    "Version": "2025.1.22.40",
+    "LegacyReleaseDate": "2025-01-22 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "XtractUniversal",
+        "Component": "Server",
+        "Message": "Fixed a bug where a timeout while connecting to SAP with SNC enabled would terminate the process causing orphaned run information. Such an extraction run would always keep the state 'Running'."
+      }
+    ]
+  },
+  {
     "Version": "2025.1.20.38",
     "LegacyReleaseDate": "2025-01-20 00:00:00Z",
     "Changes": [
@@ -7,6 +335,17 @@
         "Product": "XtractUniversal",
         "Component": "GoogleCloudStorage",
         "Message": "Fixed a bug where not all data would be written to Google Cloud Storage due to the destination not following the API specification correctly."
+      }
+    ]
+  },
+  {
+    "Version": "2025.1.13.43",
+    "LegacyReleaseDate": "2025-01-13 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "BWCube",
+        "Message": "Bics mode now supports dimension attributes"
       }
     ]
   },

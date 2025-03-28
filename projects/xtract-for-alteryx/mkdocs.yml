@@ -108,17 +108,18 @@ plugins:
   #- swagger-ui-tag
   #- glightbox #image zoom
   #- tags # enables tags in front matter
-
 # Continuous integration
   - group:
       enabled: !ENV CI
       plugins:
+         - exclude-unused-files:
+             file_types_to_check: ["png", "jpg", "jpeg", "gif"]
          - git-revision-date-localized:
              exclude:
                - index.md
         #enable_creation_date: true
         #type: timeago
-         #- optimize
+         - optimize
          - minify:
              minify_html: true
          - social:
@@ -142,7 +143,11 @@ markdown_extensions:
       title: On this Page
   - pymdownx.snippets:
       base_path: includes
-  - pymdownx.superfences #for content tabs (version history)
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.keys
   - pymdownx.tabbed:
       alternate_style: true
@@ -243,6 +248,7 @@ extra:
   hierarchy: Xtract Hierarchy
   deltaq: Xtract DeltaQ
   odp: Xtract ODP
+  odata: Xtract OData
   odpOdata: Xtract ODP (OData)
   ohs: Xtract OHS
   query: Xtract Query

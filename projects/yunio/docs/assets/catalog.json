@@ -1,5 +1,128 @@
 [
   {
+    "Version": "2025.3.26.12",
+    "LegacyReleaseDate": "2025-03-26 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Server",
+        "Component": "General",
+        "Message": "Collection of usage statistics to improve user experience",
+        "ReleaseNote": "To better understand how our products are used, we now collect usage statistics. \nEnvironment statistics:\n* Information about sources and destinations\n  * the name of the source or destination\n  * the type of the source or destination\n* Information about extraction configuration \n  * the name of the extraction \n  * the name of the configured source\n  * the name of the configured destination \n  * the extraction type\n  * the names of the sap objects \nExtraction statistics:\n* the timestamp when the extraction was executed \n* the number of rows being extracted\n* the state of the extraction (successful/failure)\n* the duration of the extraction \n* the extraction, source and destination name\n* information about the sap system (deployment model, version, product name, application server, system id)\n* the license number \n\nAll possible sensitive information is transfered as hashed data and cannot be reverted.\nThe collection and upload can be enabled/disabled in the server settings."
+      }
+    ]
+  },
+  {
+    "Version": "2025.3.20.25",
+    "LegacyReleaseDate": "2025-03-20 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "Report",
+        "Message": "Fixed transport request for systems that do no have data element \"c1\" present."
+      }
+    ]
+  },
+  {
+    "Version": "2025.3.10.39",
+    "LegacyReleaseDate": "2025-03-10 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "YunIO",
+        "Component": "General",
+        "Message": "Fix for incorrect connection type in some cases and config version file not being updated correctly."
+      }
+    ]
+  },
+  {
+    "Version": "2025.3.7.57",
+    "LegacyReleaseDate": "2025-03-07 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "Table",
+        "Message": "Fixed /THEO/READ_TABLE transport for version 640"
+      }
+    ]
+  },
+  {
+    "Version": "2025.2.18.29",
+    "LegacyReleaseDate": "2025-02-18 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "TableCDC",
+        "Message": "Improved performance of log table clearance operation. Requires update of /THEO/CDC."
+      }
+    ]
+  },
+  {
+    "Version": "2025.2.14.9",
+    "LegacyReleaseDate": "2025-02-14 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "Table",
+        "Message": "Fixed /THEO/READ_TABLE transports for version 710 and 740SP05"
+      }
+    ]
+  },
+  {
+    "Version": "2025.2.11.57",
+    "LegacyReleaseDate": "2025-02-11 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "Table",
+        "Message": "Fixed conversion exits in /THEO/READ_TABLE"
+      }
+    ]
+  },
+  {
+    "Version": "2025.2.7.67",
+    "LegacyReleaseDate": "2025-02-07 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "BWCube",
+        "Message": "MDX Cube: fix for failing extraction when the cache is enabled. Added handling for custom exceptional value markers in cell data.",
+        "ReleaseNote": "## What's New?\n* Fix for failing extractions in MDX mode when the cache is enabled\n* This release contains logic to handle custom strings for exceptional values e.g. for division by zero in MDX mode\n## Impact\nFrom this version on the extractor loads these settings from RSADMINC. In order to read the exceptional value display setting, read access to the table RSADMINC is required. If this authorization is not provided, the default value \"X\" will be used."
+      }
+    ]
+  },
+  {
+    "Version": "2025.1.30.9",
+    "LegacyReleaseDate": "2025-01-30 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "YunIO",
+        "Component": "General",
+        "Message": "Fixed an issue where starting transactions would not work (Bug introduced in 2024.10.30.34)"
+      }
+    ]
+  },
+  {
+    "Version": "2025.1.23.86",
+    "LegacyReleaseDate": "2025-01-23 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "BWCube",
+        "Message": "Fixed an error that could occur when loading an MDX definition with filters defined."
+      }
+    ]
+  },
+  {
+    "Version": "2025.1.13.42",
+    "LegacyReleaseDate": "2025-01-13 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "BWCube",
+        "Message": "Bics mode now supports dimension attributes"
+      }
+    ]
+  },
+  {
     "Version": "2025.1.8.34",
     "LegacyReleaseDate": "2025-01-08 00:00:00Z",
     "IsBreaking": true,

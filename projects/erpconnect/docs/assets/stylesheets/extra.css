@@ -176,3 +176,7 @@
   &:hover {
     background-color: hsla(var(--md-primary-fg-color--light), 50%, 50%, 0.5);
   }
+  
+  .do-not-display {
+  display: none;
+}

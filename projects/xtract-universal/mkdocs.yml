@@ -110,18 +110,18 @@ plugins:
   #- swagger-ui-tag
   #- glightbox #image zoom
   #- tags # enables tags in front matter
-
-
 # Continuous integration
   - group:
       enabled: !ENV CI
       plugins:
+         - exclude-unused-files:
+             file_types_to_check: ["png", "jpg", "jpeg", "gif"]
          - git-revision-date-localized:
              exclude:
                - index.md
         #enable_creation_date: true
         #type: timeago
-         #- optimize
+         - optimize
          #- ultralytics:
           #   default_image: "https://helpcenter.theobald-software.com/assets/external/dummyimage.com/600x400/f5f5f5/aaaaaa.8f6c0d08.png"
           #   add_share_buttons: False
@@ -152,7 +152,11 @@ markdown_extensions:
       title: On this Page
   - pymdownx.snippets:
       base_path: includes
-  - pymdownx.superfences #for content tabs (version history)
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.keys
   - pymdownx.tabbed:
       alternate_style: true
@@ -251,6 +255,7 @@ extra:
   hierarchy: BW Hierarchy
   deltaq: DeltaQ
   odp: ODP
+  odata: OData
   ohs: OHS
   query: Query
   report: Report
@@ -271,3 +276,4 @@ extra:
   run_extractions: execute-and-automate/run-an-extraction.md
   runBtn: __[Run]__
   service: XtractService
+  serviceName: XtractUniversal

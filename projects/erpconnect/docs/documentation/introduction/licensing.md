@@ -12,14 +12,34 @@ A regular license is provided in the [Theobald Software Customer Portal](https:/
 
 ### Installing the ERPConnect License 
 
-After the end of the test period ERPConnect will not run without a valid license.
+The demo license is valid for one month after downloading. 
+After this period, a valid license key or license file must be provided.
 
-Because ERPConnect checks the licence number on every call (client and server), you need to set your license number before the first connection to SAP is established.<br>
-Set the license during runtime through the static class `ERPConnect.LIC` as shown in the code below.
+ERPConnect checks the licence number on every call (client and server). 
+Set the license during runtime before the first connection to SAP is established.
 
-```csharp linenums="1"
-ERPConnect.LIC.SetLic("XXXXXXXXXX");
-```
+=== "ERPConnectStandard20.dll"
+
+	The `ERPConenctLicense.json` file that contains the license is provided in the [Customer Portal - My Theobald Software](https://my.theobald-software.com/). 
+	Use one of the following methods to set the license.
+	
+	- Read the license file and apply the license:
+		``` csharp
+		ERPConnect.LIC.LoadJsonLicense(string filename);
+		```
+	- Copy and paste the content of the `ERPConnectLicense.json` file into a constant string in the code and use the string to set the license:
+		``` chsarp
+		ERPConnect.LIC.SetJsonLicense(string json); 
+		```
+
+=== "ERPConnect35.dll"
+
+	Use the following command to set the license number:
+	
+	```csharp 
+	ERPConnect.LIC.SetLic("XXXXXXXXXX");
+	```
+
 
 
 ### Maintenance

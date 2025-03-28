@@ -30,6 +30,11 @@
   --md-accent-fg-color: FF003C;
   */
 
+.mk-bpmn-container {
+    border: 2px solid grey;
+    display: block; /* Ensures the border wraps correctly */
+	background-color: white;
+}
 
 /* right navigation (toc): title */	
 .md-nav__title {
@@ -203,3 +208,6 @@
         background-color: hsla(var(--md-primary-fg-color--light), 50%, 50%, 0.5);
     }
 	
+.do-not-display {
+  display: none;
+}

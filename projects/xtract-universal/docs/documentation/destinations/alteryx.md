@@ -11,20 +11,19 @@ The {{ page.meta.title }} destination enables users to load SAP data directly fr
 
 To use the {{ page.meta.title }} destination, the Xtract Universal Alteryx plugin for the Alteryx Designer must be installed. 
 
-=== "Installation using the Xtract Universal Setup"
+The Xtract Universal setup installs the Xtract Universal Alteryx plugin if there is a valid Alteryx installation on the current system.
+If you install Alteryx after installing Xtract Universal, run the Xtract Universal setup again.
+The Xtract Universal setup creates the following entries and extensions in the installation directory of that Alteryx installation:
+- `Alteryx\Settings\AdditionalPlugins\XtractUniversal.ini`
+- `Alteryx\bin\RuntimeData\icons\categories\XtractUniversal.png`
+- `Alteryx\bin\RuntimeData\DefaultSettings.xml`
 
-	The Xtract Universal setup installs the Xtract Universal Alteryx plugin if there is a valid Alteryx installation on the current system.
-	If you install Alteryx after installing Xtract Universal, run the Xtract Universal setup again.
-	The Xtract Universal setup creates the following entries and extensions in the installation directory of that Alteryx installation:
-	- `Alteryx\Settings\AdditionalPlugins\XtractUniversal.ini`
-	- `Alteryx\bin\RuntimeData\icons\categories\XtractUniversal.png`
-	- `Alteryx\bin\RuntimeData\DefaultSettings.xml`
+!!! note
+	Run the Xtract Universal setup on every machine that needs the Xtract Universal Alteryx plugin. 
+	If there is more than one Alteryx installation on your system, the Xtract Universal setup only detects one installation. 
+	In this case, a manual installation is required.
 
-	!!! note
-		Run the Xtract Universal setup on every machine that needs the Xtract Universal Alteryx plugin. 
-		If there is more than one Alteryx installation on your system, the Xtract Universal setup only detects one installation. 
-		In this case, a manual installation is required.
-
+<!--
 === "Manual installation (for a separate Alteryx system)"
 
 	1. Copy the Alteryx folder `{{ installationDir }}\alteryx` from your local Xtract Universal installation directory to any directory on the server you want to install the plug-in. 
@@ -34,7 +33,7 @@ To use the {{ page.meta.title }} destination, the Xtract Universal Alteryx plugi
 		The following commands are supported followed by a parameter pointing to the Alteryx installation directory: 
 		- */i* (for install) e.g., `{{ installationDir }}\alteryx>AlteryxPluginSetup /i "C:\Users\mywindowsuser\AppData\Local\Alteryx"`
 		- */u* (for uninstall)
-
+-->
 When encountering issues during or after the installation of the plugin (e.g., the plugin is not showing in Alteryx), send the setup.log file located in `{{ installationDir }}\alteryx\setup.log` to the [Theobald Support](https://support.theobald-software.com).
 
 

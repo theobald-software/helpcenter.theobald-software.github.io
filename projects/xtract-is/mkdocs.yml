@@ -117,12 +117,14 @@ plugins:
   - group:
       enabled: !ENV CI
       plugins:
+         - exclude-unused-files:
+             file_types_to_check: ["png", "jpg", "jpeg", "gif"]
          - git-revision-date-localized:
              exclude:
                - index.md
         #enable_creation_date: true
         #type: timeago
-         #- optimize
+         - optimize
          - minify:
              minify_html: true
          - social:
@@ -242,7 +244,8 @@ extra:
   tablecdc: Xtract TableCDC
   bwcube: Xtract BWCube
   hierarchy: Xtract Hierarchy
-  deltaq: Xtract DeltaQ
+  deltaq: Xtract DeltaQ  
+  odata: Xtract OData
   odp: Xtract ODP
   ohs: Xtract OHS
   tableCDC: Xtract TableCDC

@@ -1,27 +1,36 @@
-DATE                                              20190802                                          154237
+DATE                                              20250211                                          094319
 RELEASE                                           740
 LOADED_AGRS                                       ZXTBWCUBE
-AGR_DEFINE                                        800ZXTBWCUBE                                                   STEFFAN     20190802135153000000000000000STEFFAN     20190802150857000000000000000
-AGR_1250                                          800ZXTBWCUBE                     000001S_RFC     T-B212002100    U  O000004Berechtigungsprüfung beim RFC-Zugriff
-AGR_1250                                          800ZXTBWCUBE                     000002S_RS_COMP T-B212002100    U  O000024Business Explorer - Components
-AGR_1250                                          800ZXTBWCUBE                     000003S_TABU_NAMT-B212002100    U  O000010Tabellenzugriff über generische Standardtools
+AGR_DEFINE                                        800ZXTBWCUBE                                                   STEFFAN     20190802135153000000000000000STEFFAN     20250211094210000000000000000
+AGR_1250                                          800ZXTBWCUBE                     000001S_ADMI_FCDT-B212002100    U  O000014Systemberechtigungen
+AGR_1250                                          800ZXTBWCUBE                     000002S_RFC     T-B212002100    U  O000004Berechtigungsprüfung beim RFC-Zugriff
+AGR_1250                                          800ZXTBWCUBE                     000003S_RFC     T-B212002101    U  O000008Berechtigungsprüfung beim RFC-Zugriff
+AGR_1250                                          800ZXTBWCUBE                     000004S_RS_COMP T-B212002100    U  O000022Business Explorer - Components
+AGR_1250                                          800ZXTBWCUBE                     000005S_TABU_NAMT-B212002100    U  O000017Tabellenzugriff über generische Standardtools
 AGR_1251                                          800ZXTBWCUBE                     000001S_RFC     T-B212002100    ACTVT     16                                                                              U  O000005
 AGR_1251                                          800ZXTBWCUBE                     000002S_RFC     T-B212002100    RFC_NAME  RRX1                                                                            U  O000006
 AGR_1251                                          800ZXTBWCUBE                     000003S_RFC     T-B212002100    RFC_NAME  RSOB                                                                            U  O000006
 AGR_1251                                          800ZXTBWCUBE                     000004S_RFC     T-B212002100    RFC_TYPE  FUGR                                                                            U  O000007
-AGR_1251                                          800ZXTBWCUBE                     000005S_TABU_NAMT-B212002100    ACTVT     03                                                                              U  O000011
-AGR_1251                                          800ZXTBWCUBE                     000006S_TABU_NAMT-B212002100    TABLE     DD03L                                                                           U  O000012
-AGR_1251                                          800ZXTBWCUBE                     000007S_TABU_NAMT-B212002100    TABLE     RSRREPDIR                                                                       U  O000012
-AGR_1251                                          800ZXTBWCUBE                     000008S_RS_COMP T-B212002100    ACTVT     *                                                                               U  O000025
-AGR_1251                                          800ZXTBWCUBE                     000009S_RS_COMP T-B212002100    RSINFOAREA*                                                                               U  O000026
-AGR_1251                                          800ZXTBWCUBE                     000010S_RS_COMP T-B212002100    RSINFOCUBE*                                                                               U  O000027
-AGR_1251                                          800ZXTBWCUBE                     000011S_RS_COMP T-B212002100    RSZCOMPID *                                                                               U  O000028
-AGR_1251                                          800ZXTBWCUBE                     000012S_RS_COMP T-B212002100    RSZCOMPTP *                                                                               U  O000029
+AGR_1251                                          800ZXTBWCUBE                     000005S_TABU_NAMT-B212002100    ACTVT     03                                                                              U  O000018
+AGR_1251                                          800ZXTBWCUBE                     000006S_TABU_NAMT-B212002100    TABLE     DD03L                                                                           U  O000019
+AGR_1251                                          800ZXTBWCUBE                     000007S_TABU_NAMT-B212002100    TABLE     RSRREPDIR                                                                       U  O000019
+AGR_1251                                          800ZXTBWCUBE                     000008S_RS_COMP T-B212002100    ACTVT     *                                                                               U  O000023
+AGR_1251                                          800ZXTBWCUBE                     000009S_RS_COMP T-B212002100    RSINFOAREA*                                                                               U  O000024
+AGR_1251                                          800ZXTBWCUBE                     000010S_RS_COMP T-B212002100    RSINFOCUBE*                                                                               U  O000025
+AGR_1251                                          800ZXTBWCUBE                     000011S_RS_COMP T-B212002100    RSZCOMPID *                                                                               U  O000026
+AGR_1251                                          800ZXTBWCUBE                     000012S_RS_COMP T-B212002100    RSZCOMPTP *                                                                               U  O000027
+AGR_1251                                          800ZXTBWCUBE                     000013S_TABU_NAMT-B212002100    TABLE     RSZGLOBV                                                                        U  O000019
+AGR_1251                                          800ZXTBWCUBE                     000014S_RFC     T-B212002101    ACTVT     16                                                                              U  O000009
+AGR_1251                                          800ZXTBWCUBE                     000015S_RFC     T-B212002101    RFC_NAME  RSR_MDX_CREATE_OBJECT                                                           U  O000010
+AGR_1251                                          800ZXTBWCUBE                     000016S_RFC     T-B212002101    RFC_TYPE  FUNC                                                                            U  O000011
+AGR_1251                                          800ZXTBWCUBE                     000017S_RFC     T-B212002101    RFC_NAME  Z_RRX_VARIABLES_FLUSH                                                           U  O000010
+AGR_1251                                          800ZXTBWCUBE                     000018S_ADMI_FCDT-B212002100    S_ADMI_FCDPADM                                                                            U  O000015
+AGR_1251                                          800ZXTBWCUBE                     000019S_TABU_NAMT-B212002100    TABLE     RSADMINC                                                                        U  O000019
 AGR_TEXTS                                         800ZXTBWCUBE                     D00000authority objects needed fpr BW Cubes / BW Query
 AGR_FLAGS                                         800ZXTBWCUBE                     COLL_AGR  STEFFAN     20190802135153STEFFAN     20190802135153
 AGR_FLAGS                                         800ZXTBWCUBE                     DEVCLASS  STEFFAN     20190802135153STEFFAN     20190802135153
-AGR_FLAGS                                         800ZXTBWCUBE                     FORCE_MIX STEFFAN     20190802135418STEFFAN     20190802150856
+AGR_FLAGS                                         800ZXTBWCUBE                     FORCE_MIX STEFFAN     20190802135418STEFFAN     20250211094208
 AGR_FLAGS                                         800ZXTBWCUBE                     MASTER_LANSTEFFAN     20190802135153STEFFAN     20190802135153D
 AGR_FLAGS                                         800ZXTBWCUBE                     RESP_USER STEFFAN     20190802135153STEFFAN     20190802135153
-AGR_TIME                                          800ZXTBWCUBE                     PROFILE   STEFFAN     20190802135418000000000000000STEFFAN     20190802150856000000000000000
+AGR_TIME                                          800ZXTBWCUBE                     PROFILE   STEFFAN     20190802135418000000000000000STEFFAN     20250211094208000000000000000
 AGR_LSD                                           800ZXTBWCUBE                                                   D

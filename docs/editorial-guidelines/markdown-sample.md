@@ -308,7 +308,7 @@ There are two methods to create grid cards:
 		---
 		
 		The flexible SAP interface for databases, analytics, BI or cloud solutions.<br>
-		[:octicons-arrow-right-24: Xtract Universal](https://help.theobald-software.com/en/xtract-universal/)
+		[:octicons-arrow-right-24: Xtract Universal](https://helpcenter.theobald-software.com/xtract-universal/)
 
 	</div>
 	```
@@ -322,7 +322,7 @@ There are two methods to create grid cards:
 		
 		The flexible SAP interface for databases, analytics, BI or cloud solutions.
 
-		[:octicons-arrow-right-24: Xtract Universal](https://help.theobald-software.com/en/xtract-universal/)
+		[:octicons-arrow-right-24: Xtract Universal](https://helpcenter.theobald-software.com/xtract-universal/)
 
 	</div>
 	</div>
@@ -673,7 +673,31 @@ Downside: broken links do not cause errors or warnings when building the project
 		- Some item.
 		
 	</div>
+	
+=== "Linear Workflows"
 
+	``` markdown
+	<div class="workflow" markdown>
+
+	1. First item.
+	2. Second item.
+	3. Third item.
+	4. Fourth item.
+
+	</div>
+    ```
+
+    <div class="result" markdown>
+	<div class="workflow" markdown>
+
+	1. First item.
+	2. Second item.
+	3. Third item.
+	4. Fourth item.
+
+	</div>
+	</div>
+	
 ### Keyboard Keys
 
 Keyboard keys can be styled.
@@ -745,7 +769,7 @@ plugins:
 	If one of those links changes due to editing .md files, a redirection link must be added. Otherwise KNIME needs to release a new software version to correct broken links.
 
 	List of documentation links in KNIME (last updated March 2023):
-
+	```
 	-	https://help.theobald-software.com/en/xtract-universal/introduction/requirements
 	-	https://help.theobald-software.com/en/xtract-universal/advanced-techniques/metadata-access-via-http
 	-	https://help.theobald-software.com/en/xtract-universal/destinations/csv-via-http
@@ -755,7 +779,8 @@ plugins:
 	-	https://help.theobald-software.com/en/xtract-universal/advanced-techniques/user-defined-variables
 	-	https://help.theobald-software.com/en/xtract-universal/destinations/csv-via-http#csv-settings
 	-	https://help.theobald-software.com/en/xtract-universal/destinations/csv-via-http#convert--encoding
-
+	```
+	
 ### Search
 
 The Material search function allows to exclude pages and single sections of text from the search results.

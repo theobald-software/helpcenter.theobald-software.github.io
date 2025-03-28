@@ -1,5 +1,5 @@
 ---
-title: Access Data in the SAP Public Cloud
+title: Access Data in the SAP Public Cloud using RFC BAPI
 description: How to execute BAPIs in the SAP Public Cloud using {{ productName }}
 author: Valerie Schipka
 ---

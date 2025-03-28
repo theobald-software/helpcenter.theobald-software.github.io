@@ -124,23 +124,33 @@
 
 .nt-card:nth-child(3) a:hover,
 .nt-card:nth-child(3) a:focus {
-  color: #CA5D27;
+  color: #00ADE6;
 }
 
 .nt-card:nth-child(4) a:hover,
 .nt-card:nth-child(4) a:focus {
-  color: #004990;
+  color: #CA5D27;
 }
 
 .nt-card:nth-child(5) a:hover,
 .nt-card:nth-child(5) a:focus {
-  color: #22A285;
+  color: #004990;
 }
 
 .nt-card:nth-child(6) a:hover,
 .nt-card:nth-child(6) a:focus {
+  color: #F0A202;
+}
+
+.nt-card:nth-child(7) a:hover,
+.nt-card:nth-child(7) a:focus {
+  color: #22A285;
+}
+.nt-card:nth-child(8) a:hover,
+.nt-card:nth-child(8) a:focus {
   color: #ED1A33;
 }
+
 
 .nt-card h2 {
   margin: 0;

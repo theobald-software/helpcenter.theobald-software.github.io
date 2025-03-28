@@ -6,9 +6,10 @@ description: Filter the data that is returned by a DeltaQ datasource.
 This page shows how to filter the data that is extracted by the {{ deltaq }} {{ component }}.
 Selections limit the result set of the {{ deltaq }} {{ component }} to extract only records that match the selection.
 
-{% include "components/filter-options.md" %}
-
 {% include "components/selections.md" %}
+
+
+{% include "components/filter-options.md" %}
 
 ### Script Expressions for DeltaQ
 

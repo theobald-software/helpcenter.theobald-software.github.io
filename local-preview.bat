@@ -10,6 +10,7 @@ echo 3 - Board Connector
 echo 4 - Xtract Universal
 echo 5 - Xtract IS
 echo 6 - Xtract for Alteryx
+echo 7 - Xtract Core
 set /p numbers=
 
 
@@ -60,6 +61,11 @@ for %%i in (%numbers%) do (
         set "folder=C:\Source\helpcenter.theobald-software.github.io\projects\xtract-for-alteryx"
         set "port=8006"
 		set "product=Xtract for Alteryx"
+    )
+	if %%i==7 (
+        set "folder=C:\Source\helpcenter.theobald-software.github.io\projects\xtract-core"
+        set "port=8007"
+		set "product=Xtract Core"
     )
     if not defined folder (
         echo Invalid input for website number %%i

@@ -15,17 +15,17 @@ hide:
 
 - [Call Extractions via Script](call-extraction-via-script.md)
 - [Create Extractions via Commandline](config-command-line-tool.md)
+- [Deactivate Usage Data Collection](deactivate-usage-analytics.md)
 - [Deploy Extractions Using Git Version Control](deploy-extractions-using-Git-version-control.md)
 - [Execute & Schedule all Extractions using an SSIS Package](execute_all_defined_xu_extractions.md)
 - [Insert Extraction Events into Windows Logs](insert-extraction-events-into-the-windows-logs.md)
 - [Load Balancing](load-balancer.md)
+- [Proxy Server Settings](proxy-server-settings.md)
 - [SAP Access with {{ productName }} and Powershell](sap-access-with-xtract-universal-and-powershell.md)
 - [Run {{ productName }} in a VM on AWS EC2](run-xu-in-aws.md)
 - [Target Principal Field (TPN)](target-principal-TPN.md)
-- [Proxy Server Settings in {{ productName }}](proxy-server-settings.md)
 - [SharePoint Lists Notification using Intelligent Merge Procedure](sharepoint-lists-notification-using-intelligent-merge-procedure.md)
 
-<!--- - [Log Access via Web Service](log-access-via-http.md) -->
 
 </div>
 
@@ -36,7 +36,7 @@ hide:
 <div class="mdx-columns" markdown>
 
 - [Check the Accessibility to an SAP System](check-the-accessibility-to-an-sap-system.md)
-- [Access Data in the SAP Public Cloud](access-data-in-the-sap-public-cloud.md) 
+- [Access Data in the SAP Public Cloud using RFC BAPI](access-data-in-the-sap-public-cloud.md) 
 - [Authorize Access to Reports via Authorization Groups](authorize-access-to-specific-reports.md)
 - [Create the Custom Authorization Object Z_TS_PROG](create-the-custom-authority-object-z-ts-prog.md)
 - [Create a Client PSE to connect to SAP Cloud Systems](create-personal-security-environment.md)
@@ -75,6 +75,10 @@ The following articles refer to specific [destinations](../documentation/destina
 - [Integration in Azure Data Factory using Webservices](adf-integration-using-webservices.md)
 - [Call Dynamic Extractions with Variables in ADF](call-dynamic-extractions-with-variables-in-adf.md)
 - [Run an ADF Pipeline when an SAP Extraction File is uploaded to Azure Storage](run-an-ADF-pipeline-when-sap-extraction-file-is-successfully-uploaded-to-Azure-storage.md)
+
+### :3rd-party-onelake: Microsoft Fabric (OneLake)
+
+- [Integration in Microsoft Fabric using Webservices](fabric-integration-using-webservices.md)
 
 ### :simple-microsoftsqlserver: Microsoft SQL Server
 
@@ -118,7 +122,7 @@ The following articles refer to specific [{{ components }}](../documentation/int
 ### :component-bapi: BAPI
 
 <div class="mdx-columns" markdown>
-- [Access Data in the SAP Public Cloud :material-alert-decagram:](access-data-in-the-sap-public-cloud.md) 
+- [Access Data in the SAP Public Cloud using RFC BAPI](access-data-in-the-sap-public-cloud.md) 
 - [Read Data from Cluster Fields in Tables PCL1 and PCL2 (Payroll)](read-data-from-cluster-fields-in-the-tables-pcl1-and-pcl2-payroll.md)
 
 </div>
@@ -130,6 +134,14 @@ The following articles refer to specific [{{ components }}](../documentation/int
 
 - [Create Generic DataSources](create-generic-datasource-using-function-module-and-timestamps.md)
 - [Register an RFC Server in SAP with Kernel Release 720 and higher](register-rfc-server-in-sap-releases-in-kernel-release-720-and-higher.md)
+
+</div>
+
+### :component-odata: OData
+
+<div class="mdx-columns" markdown>
+
+- [Create OData Services using the SAP Gateway Builder :material-alert-decagram:](create-odata-services-using-the-sap-gateway-builder.md)
 
 </div>
 
@@ -149,7 +161,7 @@ The following articles refer to specific [{{ components }}](../documentation/int
 
 - [Authorize Access to Reports via Authorization Groups](authorize-access-to-specific-reports.md)
 - [Create the Custom Authorization Object Z_TS_PROG](create-the-custom-authority-object-z-ts-prog.md)
-- [Parse Reports in {{ productName }} :material-alert-decagram:](parse-reports.md)
+- [Parse Reports in {{ productName }}](parse-reports.md)
 
 </div>
 

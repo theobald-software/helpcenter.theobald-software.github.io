@@ -73,6 +73,7 @@ extra_javascript:
 # Plugins
 plugins:
   - meta
+  - bpmn
   - typeset
   - awesome-pages
   - pagenav-generator
@@ -120,13 +121,16 @@ plugins:
   - group:
       enabled: !ENV CI
       plugins:
-        #- optimize # compresses images and files
+        - exclude-unused-files:
+             file_types_to_check: ["png", "jpg", "jpeg", "gif"]
+        - optimize # compresses images and files
         - minify: # minifies HTML by stripping all whitespace from the generated documentation
             minify_html: true
 
 
 # Additional configuration
 extra:
+  generate_404: true  # Ensures static files are served
   generator: false #footer display Made with Material for MkDocs
   status:
     new: Recently added

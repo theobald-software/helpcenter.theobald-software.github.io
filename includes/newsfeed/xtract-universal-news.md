@@ -1,6 +1,46 @@
 <div class="grid cards" markdown>
 
 
+-   **:material-video: Webinar: SAP Data Integration with Microsoft Fabric Open Mirroring**
+
+    ---
+
+    [Join our webinar](https://theobald-software.com/en/webinars-en/low-cost-and-low-latency-sap-data-integration-with-microsoft-fabric-open-mirroring/) on 2025-04-17 - 11:00AM PDT to learn how to optimize your near real-time data integration with Microsoft Open Mirroring and Xtract Universal. 
+
+    ---
+
+    :material-clock-time-two-outline: 2025-04-17
+
+-   **:material-alert-decagram: Microsoft Fabric Mirroring Destination**
+
+    ---
+
+    Synch your SAP data in near real-time with Microsoft Fabric using our new [Microsoft Fabric Mirroring destination](documentation/destinations/microsoft-fabric-mirroring.md) destination. For more information about Mirroring and upcoming webinars, refer to our [website](https://theobald-software.com/en/fabric-mirroring/).
+
+    ---
+
+    :material-clock-time-two-outline: 2025-03-26
+
+-   **:material-alert-decagram: Usage Analytics**
+
+    ---
+
+    Find out how your usage data can help [improve our products and your user experience](https://theobald-software.com/en/xu-beyond/). For more information on how we handle your data, refer to our [privacy policy](https://theobald-software.com/en/privacy-policy/). <br>Of course, you can [opt-out](knowledge-base/deactivate-usage-analytics.md) anytime. 
+
+    ---
+
+    :material-clock-time-two-outline: 2025-03-25
+
+-   **:material-alert-decagram: OData Connectivity Added (Beta)**
+
+    ---
+
+    The new [OData connectivity](documentation/sap-connection/index.md/#connect-to-sap) enables communication to SAP on-premises and SAP cloud systems to consume data provided by SAP OData services. The [OData component](documentation/odata/index.md) is a beta release for upcoming features.
+
+    ---
+
+    :material-clock-time-two-outline: 2025-01-27
+
 -   **:material-file-document-outline: How to Parse Reports**
 
     ---

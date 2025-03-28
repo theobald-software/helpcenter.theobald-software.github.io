@@ -45,24 +45,15 @@ The *OpenAPI Target Kind* defines properties that can be added to the Swagger/Op
 ![Server-Settings-TLS](../assets/images/yunio/documentation/server-settings-tls.png){:class="img-responsive"}
 
 Transport Layer Security (TLS) protocol allows the user to communicate with the respective service in a secure way by encrypting the communication with that service (HTTPS).
-This requires the installation of an X.509 certificate, see [Install an X.509 Certificate](../knowledge-base/x509-certificate.md). <br>
-For more information on TLS, see [Microsoft: Transport Layer Security Protocol](https://docs.microsoft.com/en-us/windows/win32/secauthn/transport-layer-security-protocol).
+This requires the installation of an X.509 certificate. 
+For more information about the X.509 certificate setup, see [Install an X.509 Certificate](../knowledge-base/x509-certificate.md). <br>
 
 !!! note
     Depending on whether yunIO is hosted on a local server or a cloud environment, the procedure for certificate creation differs.
     Refer to the documentation available on the internet or contact your network administrators.
 
-#### Certificate Access
-1. Import the certificate to the Windows Certificate Store using the Microsoft Management Console (mmc).
-2. If the certificate is not listed in the menu or in the Windows certificate store, install the X.509 certificate.
-The certificate must have an *Subject Alternative Name*. When activating TLS, the *Subject Alternative Name* is used as the new hostname. 
-A custom hostname can be entered in the [Services Endpoint](#services-endpoint) setting.
-3. After importing the desired X.509 certificate, manage its private keys to add a permission entry for the Windows user. 
-4. Click **[Pick Certificate]** and select an X.509 certificate from the list of available certificates.
-5. Enter "NT Service\yunIO Service" within the Object picker UI, check the granted permission and apply the changes. <br>
-![Access](../assets/images/yunio/documentation/x509-certificate-permission.png){:class="img-responsive" width="500px"}
+For more information on TLS, see [Microsoft: Transport Layer Security Protocol](https://docs.microsoft.com/en-us/windows/win32/secauthn/transport-layer-security-protocol).
 
-For information on how to renew a certificate, see [Certificate Renewal for TLS](../knowledge-base/certificate-renewal.md).
 
 #### TLS enabled
 
@@ -93,3 +84,25 @@ It is not recommended to use ports below 1000, because they are often already ta
 |Services|8075|8175|This port is used by the web server, which handles the requests to invoke a service.|
 |Designer|8077|8177|This port is used to open the yunIO Designer on a client machine.|
 |WebSockets|8076|8176|This port is used by the yunIO Designer to read and write configurations, services, etc.|
+
+### Usage Data
+
+![Server-Settings-usage-analytics](../assets/images/yunio/documentation/server-settings-usage-analytics.png){:class="img-responsive" }
+
+To improve {{ productName }} and better cater to customer needs, {{ productName }} collects usage data, e.g., the components that are in use, referenced SAP objects, statistics about data extractions, etc.
+For more information, refer to our [privacy policy](https://theobald-software.com/en/privacy-policy/).
+
+
+#### Collect Usage Data
+
+When this checkbox is active, usage data is stored in your local installation directory.
+If this checkbox is deactivated, no usage data is collected.
+
+#### Upload Usage Data
+
+When this checkbox is active, usage data is sent to Theobald Software for analysis. 
+An internet connection is required to use this option.
+
+#### Transfer SAP Object Names
+
+When this checkbox is active, the names of the SAP objects used in extractions are included in the usage data upload.

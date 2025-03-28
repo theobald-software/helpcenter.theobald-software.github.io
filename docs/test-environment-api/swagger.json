@@ -1,1036 +1,726 @@
 {
-    "swagger": "2.0",
-    "info": {
-      "description": "This is a sample server Petstore server.  You can find out more about Swagger at [http://swagger.io](http://swagger.io) or on [irc.freenode.net, #swagger](http://swagger.io/irc/).  For this sample, you can use the api key `special-key` to test the authorization filters.",
-      "version": "1.0.0",
-      "title": "Swagger Petstore",
-      "termsOfService": "http://swagger.io/terms/",
-      "contact": {
-        "email": "apiteam@swagger.io"
-      },
-      "license": {
-        "name": "Apache 2.0",
-        "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+  "swagger": "2.0",
+  "info": {
+    "description": "Xtract Core is a whitelabel Web API server for developing your own SAP interfaces. You can use the Xtract Core API to extract data from SAP Tables and write them to various supported target environments.",
+    "version": "1.0.0",
+    "title": "Xtract Core"
+  },
+  "tags": [
+    {
+      "name": "connections",
+      "description": "Everything about your connections to data sources and target environments.",
+      "externalDocs": {
+        "description": "Find out more",
+        "url": "https://helpcenter.theobald-software.com/xtract-core/getting-started/#connections"
       }
     },
-    "host": "petstore.swagger.io",
-    "basePath": "/v2",
-    "tags": [
-      {
-        "name": "pet",
-        "description": "Everything about your Pets",
-        "externalDocs": {
-          "description": "Find out more",
-          "url": "http://swagger.io"
-        }
-      },
-      {
-        "name": "store",
-        "description": "Access to Petstore orders"
-      },
-      {
-        "name": "user",
-        "description": "Operations about user",
-        "externalDocs": {
-          "description": "Find out more about our store",
-          "url": "http://swagger.io"
-        }
-      }
-    ],
-    "schemes": [
-      "https",
-      "http"
-    ],
-    "paths": {
-      "/pet": {
-        "post": {
-          "tags": [
-            "pet"
-          ],
-          "summary": "Add a new pet to the store",
-          "description": "",
-          "operationId": "addPet",
-          "consumes": [
-            "application/json",
-            "application/xml"
-          ],
-          "produces": [
-            "application/xml",
-            "application/json"
-          ],
-          "parameters": [
-            {
-              "in": "body",
-              "name": "body",
-              "description": "Pet object that needs to be added to the store",
-              "required": true,
-              "schema": {
-                "$ref": "#/definitions/Pet"
-              }
-            }
-          ],
-          "responses": {
-            "405": {
-              "description": "Invalid input"
-            }
-          },
-          "security": [
-            {
-              "petstore_auth": [
-                "write:pets",
-                "read:pets"
-              ]
-            }
-          ]
-        },
-        "put": {
-          "tags": [
-            "pet"
-          ],
-          "summary": "Update an existing pet",
-          "description": "",
-          "operationId": "updatePet",
-          "consumes": [
-            "application/json",
-            "application/xml"
-          ],
-          "produces": [
-            "application/xml",
-            "application/json"
-          ],
-          "parameters": [
-            {
-              "in": "body",
-              "name": "body",
-              "description": "Pet object that needs to be added to the store",
-              "required": true,
-              "schema": {
-                "$ref": "#/definitions/Pet"
-              }
-            }
-          ],
-          "responses": {
-            "400": {
-              "description": "Invalid ID supplied"
-            },
-            "404": {
-              "description": "Pet not found"
-            },
-            "405": {
-              "description": "Validation exception"
-            }
-          },
-          "security": [
-            {
-              "petstore_auth": [
-                "write:pets",
-                "read:pets"
-              ]
-            }
-          ]
-        }
-      },
-      "/pet/findByStatus": {
-        "get": {
-          "tags": [
-            "pet"
-          ],
-          "summary": "Finds Pets by status",
-          "description": "Multiple status values can be provided with comma separated strings",
-          "operationId": "findPetsByStatus",
-          "produces": [
-            "application/xml",
-            "application/json"
-          ],
-          "parameters": [
-            {
-              "name": "status",
-              "in": "query",
-              "description": "Status values that need to be considered for filter",
-              "required": true,
-              "type": "array",
-              "items": {
-                "type": "string",
-                "enum": [
-                  "available",
-                  "pending",
-                  "sold"
-                ],
-                "default": "available"
-              },
-              "collectionFormat": "multi"
-            }
-          ],
-          "responses": {
-            "200": {
-              "description": "successful operation",
-              "schema": {
-                "type": "array",
-                "items": {
-                  "$ref": "#/definitions/Pet"
-                }
-              }
-            },
-            "400": {
-              "description": "Invalid status value"
-            }
-          },
-          "security": [
-            {
-              "petstore_auth": [
-                "write:pets",
-                "read:pets"
-              ]
-            }
-          ]
-        }
-      },
-      "/pet/findByTags": {
-        "get": {
-          "tags": [
-            "pet"
-          ],
-          "summary": "Finds Pets by tags",
-          "description": "Muliple tags can be provided with comma separated strings. Use tag1, tag2, tag3 for testing.",
-          "operationId": "findPetsByTags",
-          "produces": [
-            "application/xml",
-            "application/json"
-          ],
-          "parameters": [
-            {
-              "name": "tags",
-              "in": "query",
-              "description": "Tags to filter by",
-              "required": true,
-              "type": "array",
-              "items": {
-                "type": "string"
-              },
-              "collectionFormat": "multi"
-            }
-          ],
-          "responses": {
-            "200": {
-              "description": "successful operation",
-              "schema": {
-                "type": "array",
-                "items": {
-                  "$ref": "#/definitions/Pet"
-                }
-              }
-            },
-            "400": {
-              "description": "Invalid tag value"
-            }
-          },
-          "security": [
-            {
-              "petstore_auth": [
-                "write:pets",
-                "read:pets"
-              ]
-            }
-          ],
-          "deprecated": true
-        }
-      },
-      "/pet/{petId}": {
-        "get": {
-          "tags": [
-            "pet"
-          ],
-          "summary": "Find pet by ID",
-          "description": "Returns a single pet",
-          "operationId": "getPetById",
-          "produces": [
-            "application/xml",
-            "application/json"
-          ],
-          "parameters": [
-            {
-              "name": "petId",
-              "in": "path",
-              "description": "ID of pet to return",
-              "required": true,
-              "type": "integer",
-              "format": "int64"
-            }
-          ],
-          "responses": {
-            "200": {
-              "description": "successful operation",
-              "schema": {
-                "$ref": "#/definitions/Pet"
-              }
-            },
-            "400": {
-              "description": "Invalid ID supplied"
-            },
-            "404": {
-              "description": "Pet not found"
-            }
-          },
-          "security": [
-            {
-              "api_key": []
-            }
-          ]
-        },
-        "post": {
-          "tags": [
-            "pet"
-          ],
-          "summary": "Updates a pet in the store with form data",
-          "description": "",
-          "operationId": "updatePetWithForm",
-          "consumes": [
-            "application/x-www-form-urlencoded"
-          ],
-          "produces": [
-            "application/xml",
-            "application/json"
-          ],
-          "parameters": [
-            {
-              "name": "petId",
-              "in": "path",
-              "description": "ID of pet that needs to be updated",
-              "required": true,
-              "type": "integer",
-              "format": "int64"
-            },
-            {
-              "name": "name",
-              "in": "formData",
-              "description": "Updated name of the pet",
-              "required": false,
-              "type": "string"
-            },
-            {
-              "name": "status",
-              "in": "formData",
-              "description": "Updated status of the pet",
-              "required": false,
-              "type": "string"
-            }
-          ],
-          "responses": {
-            "405": {
-              "description": "Invalid input"
-            }
-          },
-          "security": [
-            {
-              "petstore_auth": [
-                "write:pets",
-                "read:pets"
-              ]
-            }
-          ]
-        },
-        "delete": {
-          "tags": [
-            "pet"
-          ],
-          "summary": "Deletes a pet",
-          "description": "",
-          "operationId": "deletePet",
-          "produces": [
-            "application/xml",
-            "application/json"
-          ],
-          "parameters": [
-            {
-              "name": "api_key",
-              "in": "header",
-              "required": false,
-              "type": "string"
-            },
-            {
-              "name": "petId",
-              "in": "path",
-              "description": "Pet id to delete",
-              "required": true,
-              "type": "integer",
-              "format": "int64"
-            }
-          ],
-          "responses": {
-            "400": {
-              "description": "Invalid ID supplied"
-            },
-            "404": {
-              "description": "Pet not found"
-            }
-          },
-          "security": [
-            {
-              "petstore_auth": [
-                "write:pets",
-                "read:pets"
-              ]
-            }
-          ]
-        }
-      },
-      "/pet/{petId}/uploadImage": {
-        "post": {
-          "tags": [
-            "pet"
-          ],
-          "summary": "uploads an image",
-          "description": "",
-          "operationId": "uploadFile",
-          "consumes": [
-            "multipart/form-data"
-          ],
-          "produces": [
-            "application/json"
-          ],
-          "parameters": [
-            {
-              "name": "petId",
-              "in": "path",
-              "description": "ID of pet to update",
-              "required": true,
-              "type": "integer",
-              "format": "int64"
-            },
-            {
-              "name": "additionalMetadata",
-              "in": "formData",
-              "description": "Additional data to pass to server",
-              "required": false,
-              "type": "string"
-            },
-            {
-              "name": "file",
-              "in": "formData",
-              "description": "file to upload",
-              "required": false,
-              "type": "file"
-            }
-          ],
-          "responses": {
-            "200": {
-              "description": "successful operation",
-              "schema": {
-                "$ref": "#/definitions/ApiResponse"
-              }
-            }
-          },
-          "security": [
-            {
-              "petstore_auth": [
-                "write:pets",
-                "read:pets"
-              ]
-            }
-          ]
-        }
-      },
-      "/store/inventory": {
-        "get": {
-          "tags": [
-            "store"
-          ],
-          "summary": "Returns pet inventories by status",
-          "description": "Returns a map of status codes to quantities",
-          "operationId": "getInventory",
-          "produces": [
-            "application/json"
-          ],
-          "parameters": [],
-          "responses": {
-            "200": {
-              "description": "successful operation",
-              "schema": {
-                "type": "object",
-                "additionalProperties": {
-                  "type": "integer",
-                  "format": "int32"
-                }
-              }
-            }
-          },
-          "security": [
-            {
-              "api_key": []
-            }
-          ]
-        }
-      },
-      "/store/order": {
-        "post": {
-          "tags": [
-            "store"
-          ],
-          "summary": "Place an order for a pet",
-          "description": "",
-          "operationId": "placeOrder",
-          "produces": [
-            "application/xml",
-            "application/json"
-          ],
-          "parameters": [
-            {
-              "in": "body",
-              "name": "body",
-              "description": "order placed for purchasing the pet",
-              "required": true,
-              "schema": {
-                "$ref": "#/definitions/Order"
-              }
-            }
-          ],
-          "responses": {
-            "200": {
-              "description": "successful operation",
-              "schema": {
-                "$ref": "#/definitions/Order"
-              }
-            },
-            "400": {
-              "description": "Invalid Order"
-            }
-          }
-        }
-      },
-      "/store/order/{orderId}": {
-        "get": {
-          "tags": [
-            "store"
-          ],
-          "summary": "Find purchase order by ID",
-          "description": "For valid response try integer IDs with value >= 1 and <= 10. Other values will generated exceptions",
-          "operationId": "getOrderById",
-          "produces": [
-            "application/xml",
-            "application/json"
-          ],
-          "parameters": [
-            {
-              "name": "orderId",
-              "in": "path",
-              "description": "ID of pet that needs to be fetched",
-              "required": true,
-              "type": "integer",
-              "maximum": 10,
-              "minimum": 1,
-              "format": "int64"
-            }
-          ],
-          "responses": {
-            "200": {
-              "description": "successful operation",
-              "schema": {
-                "$ref": "#/definitions/Order"
-              }
-            },
-            "400": {
-              "description": "Invalid ID supplied"
-            },
-            "404": {
-              "description": "Order not found"
-            }
-          }
-        },
-        "delete": {
-          "tags": [
-            "store"
-          ],
-          "summary": "Delete purchase order by ID",
-          "description": "For valid response try integer IDs with positive integer value. Negative or non-integer values will generate API errors",
-          "operationId": "deleteOrder",
-          "produces": [
-            "application/xml",
-            "application/json"
-          ],
-          "parameters": [
-            {
-              "name": "orderId",
-              "in": "path",
-              "description": "ID of the order that needs to be deleted",
-              "required": true,
-              "type": "integer",
-              "minimum": 1,
-              "format": "int64"
-            }
-          ],
-          "responses": {
-            "400": {
-              "description": "Invalid ID supplied"
-            },
-            "404": {
-              "description": "Order not found"
-            }
-          }
-        }
-      },
-      "/user": {
-        "post": {
-          "tags": [
-            "user"
-          ],
-          "summary": "Create user",
-          "description": "This can only be done by the logged in user.",
-          "operationId": "createUser",
-          "produces": [
-            "application/xml",
-            "application/json"
-          ],
-          "parameters": [
-            {
-              "in": "body",
-              "name": "body",
-              "description": "Created user object",
-              "required": true,
-              "schema": {
-                "$ref": "#/definitions/User"
-              }
-            }
-          ],
-          "responses": {
-            "default": {
-              "description": "successful operation"
-            }
-          }
-        }
-      },
-      "/user/createWithArray": {
-        "post": {
-          "tags": [
-            "user"
-          ],
-          "summary": "Creates list of users with given input array",
-          "description": "",
-          "operationId": "createUsersWithArrayInput",
-          "produces": [
-            "application/xml",
-            "application/json"
-          ],
-          "parameters": [
-            {
-              "in": "body",
-              "name": "body",
-              "description": "List of user object",
-              "required": true,
-              "schema": {
-                "type": "array",
-                "items": {
-                  "$ref": "#/definitions/User"
-                }
-              }
-            }
-          ],
-          "responses": {
-            "default": {
-              "description": "successful operation"
-            }
-          }
-        }
-      },
-      "/user/createWithList": {
-        "post": {
-          "tags": [
-            "user"
-          ],
-          "summary": "Creates list of users with given input array",
-          "description": "",
-          "operationId": "createUsersWithListInput",
-          "produces": [
-            "application/xml",
-            "application/json"
-          ],
-          "parameters": [
-            {
-              "in": "body",
-              "name": "body",
-              "description": "List of user object",
-              "required": true,
-              "schema": {
-                "type": "array",
-                "items": {
-                  "$ref": "#/definitions/User"
-                }
-              }
-            }
-          ],
-          "responses": {
-            "default": {
-              "description": "successful operation"
-            }
-          }
-        }
-      },
-      "/user/login": {
-        "get": {
-          "tags": [
-            "user"
-          ],
-          "summary": "Logs user into the system",
-          "description": "",
-          "operationId": "loginUser",
-          "produces": [
-            "application/xml",
-            "application/json"
-          ],
-          "parameters": [
-            {
-              "name": "username",
-              "in": "query",
-              "description": "The user name for login",
-              "required": true,
-              "type": "string"
-            },
-            {
-              "name": "password",
-              "in": "query",
-              "description": "The password for login in clear text",
-              "required": true,
-              "type": "string"
-            }
-          ],
-          "responses": {
-            "200": {
-              "description": "successful operation",
-              "schema": {
-                "type": "string"
-              },
-              "headers": {
-                "X-Rate-Limit": {
-                  "type": "integer",
-                  "format": "int32",
-                  "description": "calls per hour allowed by the user"
-                },
-                "X-Expires-After": {
-                  "type": "string",
-                  "format": "date-time",
-                  "description": "date in UTC when token expires"
-                }
-              }
-            },
-            "400": {
-              "description": "Invalid username/password supplied"
-            }
-          }
-        }
-      },
-      "/user/logout": {
-        "get": {
-          "tags": [
-            "user"
-          ],
-          "summary": "Logs out current logged in user session",
-          "description": "",
-          "operationId": "logoutUser",
-          "produces": [
-            "application/xml",
-            "application/json"
-          ],
-          "parameters": [],
-          "responses": {
-            "default": {
-              "description": "successful operation"
-            }
-          }
-        }
-      },
-      "/user/{username}": {
-        "get": {
-          "tags": [
-            "user"
-          ],
-          "summary": "Get user by user name",
-          "description": "",
-          "operationId": "getUserByName",
-          "produces": [
-            "application/xml",
-            "application/json"
-          ],
-          "parameters": [
-            {
-              "name": "username",
-              "in": "path",
-              "description": "The name that needs to be fetched. Use user1 for testing. ",
-              "required": true,
-              "type": "string"
-            }
-          ],
-          "responses": {
-            "200": {
-              "description": "successful operation",
-              "schema": {
-                "$ref": "#/definitions/User"
-              }
-            },
-            "400": {
-              "description": "Invalid username supplied"
-            },
-            "404": {
-              "description": "User not found"
-            }
-          }
-        },
-        "put": {
-          "tags": [
-            "user"
-          ],
-          "summary": "Updated user",
-          "description": "This can only be done by the logged in user.",
-          "operationId": "updateUser",
-          "produces": [
-            "application/xml",
-            "application/json"
-          ],
-          "parameters": [
-            {
-              "name": "username",
-              "in": "path",
-              "description": "name that need to be updated",
-              "required": true,
-              "type": "string"
-            },
-            {
-              "in": "body",
-              "name": "body",
-              "description": "Updated user object",
-              "required": true,
-              "schema": {
-                "$ref": "#/definitions/User"
-              }
-            }
-          ],
-          "responses": {
-            "400": {
-              "description": "Invalid user supplied"
-            },
-            "404": {
-              "description": "User not found"
-            }
-          }
-        },
-        "delete": {
-          "tags": [
-            "user"
-          ],
-          "summary": "Delete user",
-          "description": "This can only be done by the logged in user.",
-          "operationId": "deleteUser",
-          "produces": [
-            "application/xml",
-            "application/json"
-          ],
-          "parameters": [
-            {
-              "name": "username",
-              "in": "path",
-              "description": "The name that needs to be deleted",
-              "required": true,
-              "type": "string"
-            }
-          ],
-          "responses": {
-            "400": {
-              "description": "Invalid username supplied"
-            },
-            "404": {
-              "description": "User not found"
-            }
-          }
-        }
+    {
+      "name": "extractions",
+      "description": "Everything about your data extractions.",
+      "externalDocs": {
+        "description": "Find out more",
+        "url": "https://helpcenter.theobald-software.com/xtract-coregetting-started/#extractions"
       }
     },
-    "securityDefinitions": {
-      "petstore_auth": {
-        "type": "oauth2",
-        "authorizationUrl": "https://petstore.swagger.io/oauth/dialog",
-        "flow": "implicit",
-        "scopes": {
-          "write:pets": "modify pets in your account",
-          "read:pets": "read your pets"
-        }
-      },
-      "api_key": {
-        "type": "apiKey",
-        "name": "api_key",
-        "in": "header"
+    {
+      "name": "run",
+      "description": "Everything about running extractions.",
+      "externalDocs": {
+        "description": "Find out more",
+        "url": "https://helpcenter.theobald-software.com/xtract-coregetting-started/#run-extractions"
       }
-    },
-    "definitions": {
-      "Order": {
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "integer",
-            "format": "int64"
-          },
-          "petId": {
-            "type": "integer",
-            "format": "int64"
-          },
-          "quantity": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "shipDate": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "status": {
-            "type": "string",
-            "description": "Order Status",
-            "enum": [
-              "placed",
-              "approved",
-              "delivered"
-            ]
-          },
-          "complete": {
-            "type": "boolean",
-            "default": false
-          }
-        },
-        "xml": {
-          "name": "Order"
-        }
-      },
-      "User": {
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "integer",
-            "format": "int64"
-          },
-          "username": {
-            "type": "string"
-          },
-          "firstName": {
-            "type": "string"
-          },
-          "lastName": {
-            "type": "string"
-          },
-          "email": {
-            "type": "string"
-          },
-          "password": {
-            "type": "string"
-          },
-          "phone": {
-            "type": "string"
-          },
-          "userStatus": {
-            "type": "integer",
-            "format": "int32",
-            "description": "User Status"
-          }
-        },
-        "xml": {
-          "name": "User"
-        }
-      },
-      "Category": {
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "integer",
-            "format": "int64"
-          },
-          "name": {
-            "type": "string"
-          }
-        },
-        "xml": {
-          "name": "Category"
-        }
-      },
-      "Tag": {
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "integer",
-            "format": "int64"
-          },
-          "name": {
-            "type": "string"
-          }
-        },
-        "xml": {
-          "name": "Tag"
-        }
-      },
-      "Pet": {
-        "type": "object",
-        "required": [
-          "name",
-          "photoUrls"
+    }
+  ],
+  "paths": {
+    "/v0/connections/": {
+      "get": {
+        "tags": [
+          "connections"
         ],
-        "properties": {
-          "id": {
-            "type": "integer",
-            "format": "int64"
-          },
-          "category": {
-            "$ref": "#/definitions/Category"
-          },
-          "name": {
-            "type": "string",
-            "example": "doggie"
-          },
-          "photoUrls": {
-            "type": "array",
-            "xml": {
-              "name": "photoUrl",
-              "wrapped": true
-            },
-            "items": {
-              "type": "string"
+        "summary": "Get a list of existing connections.",
+        "description": "",
+        "operationId": "listconnections",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Operation successful",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "connections": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "name": {
+                        "type": "string",
+                        "example": "s4hana"
+                      },
+                      "type": {
+                        "type": "string",
+                        "example": "SapRfc"
+                      }
+                    }
+                  }
+                }
+              }
             }
-          },
-          "tags": {
-            "type": "array",
-            "xml": {
-              "name": "tag",
-              "wrapped": true
-            },
-            "items": {
-              "$ref": "#/definitions/Tag"
-            }
-          },
-          "status": {
-            "type": "string",
-            "description": "pet status in the store",
-            "enum": [
-              "available",
-              "pending",
-              "sold"
-            ]
-          }
-        },
-        "xml": {
-          "name": "Pet"
-        }
-      },
-      "ApiResponse": {
-        "type": "object",
-        "properties": {
-          "code": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "type": {
-            "type": "string"
-          },
-          "message": {
-            "type": "string"
           }
         }
       }
     },
-    "externalDocs": {
-      "description": "Find out more about Swagger",
-      "url": "http://swagger.io"
+    "/v0/connections/sap/{name}": {
+      "post": {
+        "tags": [
+          "connections"
+        ],
+        "summary": "Create a connection to an SAP system.",
+        "description": "",
+        "operationId": "addsap",
+        "produces": [
+          "text/plain"
+        ],
+        "parameters": [
+          {
+            "name": "name",
+            "in": "path",
+            "description": "Name for the new SAP connection. Allowed characters are [a-zA-Z0-9]. The name must not start with a number. Because the names of connections map to a directory on the file system, names are unique and not case sensitive.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "description": "Connection settings of the SAP system. Values can be found in the *Properties* of the SAP Logon Pad or they can be requested from the SAP Basis team.<br><br>\n\n | Property | Description | Required |\n |-----------|------------|----------|\n | **Host**     | Host name or IP address of the SAP application server (Property *Host*) | Yes |\n | **Client**    | A three-digit number of the SAP client between 000 and 999, e.g., 800. | Yes |\n | **InstanceNo**    |  A two-digit number between 00 and 99 (Property *SystemNumber*). | Yes |\n | **Language**     | The logon language for the SAP system, e.g., 'EN' for English or 'DE' for German. | Yes |\n | **User**    | Name of an SAP dialog user. | Yes |\n | **Password**    |  Password of the SAP user. | Yes |\n",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/SAP"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Operation successful",
+            "schema": {
+              "type": "string",
+              "example": "The connection was created successfully. Connected to SAP host 'sap-erp-as05.example.com', instance 00, release 756, codepage 4103, user 'ALICE'"
+            }
+          },
+          "500": {
+            "description": "An error occured. The response body contains different error messages depending on the failure cause. All errors return a 500 status code."
+          }
+        }
+      }
+    },
+    "/v0/connections/sap/{name}/test": {
+      "get": {
+        "tags": [
+          "connections"
+        ],
+        "summary": "Test a connection to an SAP system.",
+        "description": "",
+        "operationId": "testsap",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "text/plain"
+        ],
+        "parameters": [
+          {
+            "name": "name",
+            "in": "path",
+            "description": "Name for the SAP connection you want to test.",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Operation successful",
+            "schema": {
+              "type": "string",
+              "example": "Connected to SAP host 'sap-erp-as05.example.com', instance 00, release 756, codepage 4103, user 'ALICE'"
+            }
+          },
+          "404": {
+            "description": "Indicates that the connection does not exist"
+          }
+        }
+      }
+    },
+    "/v0/connections/azureblob/{name}": {
+      "post": {
+        "tags": [
+          "connections"
+        ],
+        "summary": "Create a connection to an Azure Blob storage.",
+        "description": "",
+        "operationId": "addazure",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "text/plain"
+        ],
+        "parameters": [
+          {
+            "name": "name",
+            "in": "path",
+            "description": "Name for the new Azure Blob storage connection. Allowed characters are [a-zA-Z0-9]. The name must not start with a number. Because the names of connections map to a directory on the file system, names are unique and not case sensitive.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "description": "Connection settings of the Azure Blob storage.<br><br>\n\n | Property | Description | Required |\n |-----------|------------|----------|\n | **Account**     | Name of the storage account. Do not enter the full URL. | Yes |\n | **Container**    | Name of an existing Azure storage container. | Yes |\n | **Token**    |  The [Shared Access Signature (SAS) token](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/authentication/create-sas-tokens?view=doc-intel-4.0.0&tabs=azure-portal#use-the-azure-portal) of the storage container. | Yes |\n",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/Azure"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Operation successful",
+            "schema": {
+              "type": "string",
+              "example": "The connection was tested and created succesfully."
+            }
+          },
+          "500": {
+            "description": "An error occured. The response body contains different error messages depending on the failure cause. All errors return a 500 status code."
+          }
+        }
+      }
+    },
+    "/v0/connections/{name}": {
+      "delete": {
+        "tags": [
+          "connections"
+        ],
+        "summary": "Delete a connection.",
+        "description": "",
+        "operationId": "deleteconnection",
+        "produces": [
+          "string"
+        ],
+        "parameters": [
+          {
+            "name": "name",
+            "in": "path",
+            "description": "Name of the connection you want to delete.",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Operation successful",
+            "schema": {
+              "type": "string",
+              "example": "The connection was deleted successfully."
+            }
+          },
+          "404": {
+            "description": "Indicates that the connection does not exist."
+          }
+        }
+      }
+    },
+    "/v0/connections/sap/{name}/tables": {
+      "get": {
+        "tags": [
+          "connections"
+        ],
+        "summary": "Get name and description of all tables on the SAP system.",
+        "description": "",
+        "operationId": "metaconnection",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "name",
+            "in": "path",
+            "description": "Name of an existing SAP connection.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "pattern",
+            "in": "query",
+            "description": "Define a search pattern for SAP tables. Wildcards (*) are supported. If *pattern* is omitted, this call may take very long and yield multiple MB of data.",
+            "required": false,
+            "type": "string",
+            "x-example": "?pattern=ma*"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Operation successful",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "example": "MARA"
+                  },
+                  "description": {
+                    "type": "string",
+                    "example": "General Material Data"
+                  }
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "An error occured. The response body contains different error messages depending on the failure cause. All errors return a 500 status code."
+          }
+        }
+      }
+    },
+    "/v0/connections/sap/{name}/tables/{table}": {
+      "get": {
+        "tags": [
+          "connections"
+        ],
+        "summary": "Get name, description and data type of all columns in an SAP table.",
+        "description": "",
+        "operationId": "metatable",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "name",
+            "in": "path",
+            "description": "Name of an existing SAP connection.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "table",
+            "in": "path",
+            "description": "Technical name of an SAP table.",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Operation successful",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "fields": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "name": {
+                        "type": "string",
+                        "example": "MANDT"
+                      },
+                      "description": {
+                        "type": "string",
+                        "example": "Client"
+                      },
+                      "type": {
+                        "type": "string",
+                        "example": "CharacterString"
+                      },
+                      "length": {
+                        "type": "integer",
+                        "example": 3
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "An error occured. The response body contains different error messages depending on the failure cause. All errors return a 500 status code."
+          }
+        }
+      }
+    },
+    "/v0/extractions/": {
+      "get": {
+        "tags": [
+          "extractions"
+        ],
+        "summary": "Get a list of existing extractions.",
+        "description": "",
+        "operationId": "listextractions",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Operation successful",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "extractions": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "name": {
+                        "type": "string",
+                        "example": "mara"
+                      },
+                      "type": {
+                        "type": "string",
+                        "example": "Table"
+                      },
+                      "sapObject": {
+                        "type": "string",
+                        "example": "MARA"
+                      },
+                      "source": {
+                        "type": "string",
+                        "example": "s4hana"
+                      },
+                      "destination": {
+                        "type": "string",
+                        "example": "azure"
+                      },
+                      "created": {
+                        "type": "object",
+                        "properties": {
+                          "machine": {
+                            "type": "string",
+                            "example": ""
+                          },
+                          "timestamp": {
+                            "type": "string",
+                            "format": "date-time",
+                            "example": "2025-01-24T09:05:26.000Z"
+                          },
+                          "user": {
+                            "type": "string",
+                            "example": ""
+                          }
+                        }
+                      },
+                      "lastChange": {
+                        "type": "object",
+                        "properties": {
+                          "machine": {
+                            "type": "string",
+                            "example": ""
+                          },
+                          "timestamp": {
+                            "type": "string",
+                            "format": "date-time",
+                            "example": "2025-01-24T09:46:21.000Z"
+                          },
+                          "user": {
+                            "type": "string",
+                            "example": ""
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "An error occured. The response body contains different error messages depending on the failure cause. All errors return a 500 status code."
+          }
+        }
+      }
+    },
+    "/v0/extractions/table/{name}": {
+      "post": {
+        "tags": [
+          "extractions"
+        ],
+        "summary": "Create an extraction that writes data from an SAP table to a destination.",
+        "description": "",
+        "operationId": "addextraction",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "string"
+        ],
+        "parameters": [
+          {
+            "name": "name",
+            "in": "path",
+            "description": "Name for the new extraction. Allowed characters are [a-zA-Z0-9]. The name must not start with a number. Because the names of extractions map to a directory on the file system, names are unique and not case sensitive.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "description": "Extraction settings for the table extraction.<br><br>\n\n | Property | Description | Required |\n |-----------|------------|----------|\n | **Table**     | Name of the SAP table you want to extract data from. | Yes |\n | **Where**    | WHERE clause to filter table records. | Yes |\n | **Source**    | Name of an existing SAP connection. | Yes |\n | **Destination**| Name of a destination connection, e.g., to an Azure Blob Storage container. | Yes |\n | **Columns** | Define which SAP table columns to extract. If omitted, all columns are extracted. | No |\n | **ResultName** | Name of the new table in the target environment. If omitted, the name of the extration is also the name of the new table. | No |\n | **FunctionModule** | Name of the function module that is used to extract SAP tables. If omitted, the SAP standard function module *RFC_READ_TABLE* is used. The installation of */THEO/READ_TABLE* is recommended. For more information, see [Function Module for Tables](knowledge-base/custom-function-module-for-table-extraction.md). | No |\n",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/Table"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Operation successful",
+            "schema": {
+              "type": "string",
+              "example": "The extraction was created successfully."
+            }
+          },
+          "500": {
+            "description": "An error occured. The response body contains different error messages depending on the failure cause. All errors return a 500 status code."
+          }
+        }
+      }
+    },
+    "/v0/extractions/{name}": {
+      "delete": {
+        "tags": [
+          "extractions"
+        ],
+        "summary": "Delete an extraction.",
+        "description": "",
+        "operationId": "deleteextraction",
+        "produces": [
+          "text/plain"
+        ],
+        "parameters": [
+          {
+            "name": "name",
+            "in": "path",
+            "description": "Name of the extraction you want to delete.",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Operation successful",
+            "schema": {
+              "type": "string",
+              "example": "The extraction was deleted successfully."
+            }
+          },
+          "404": {
+            "description": "Indicates that tthe extraction does not exist."
+          }
+        }
+      }
+    },
+    "/run/{name}": {
+      "get": {
+        "tags": [
+          "run"
+        ],
+        "summary": "Run an extraction and wait for the result.",
+        "description": "TThe `run` endpoint runs an extractions synchronously and returns the HTTP response head as soon as the server receives the first data package. The response header contains the timestamp of the extraction and the response body contains the logs of the extraction.",
+        "operationId": "runextraction",
+        "produces": [
+          "text/csv"
+        ],
+        "parameters": [
+          {
+            "name": "name",
+            "in": "path",
+            "description": "Name of the extraction you want to execute.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "packageSize",
+            "in": "query",
+            "description": "The extracted data is split into packages of the defined size. The default value is 50000 lines. A package size between 20000 and 50000 is advisable for large amounts of data. 0 means no packaging. Not using packaging can lead to an RFC timeout for large data extractions.",
+            "required": false,
+            "type": "number",
+            "x-example": "?packageSize=1000"
+          },
+          {
+            "name": "rows",
+            "in": "query",
+            "description": "Set a maximum number of rows to be extracted. 0 extracts all data. You can use this option to perform tests with a small amount of data by entering a row limit of e.g., 100.",
+            "required": false,
+            "type": "number",
+            "x-example": "?rows=10"
+          },
+          {
+            "name": "whereClause",
+            "in": "query",
+            "description": "WHERE clause to filter table records. For more information, see [WHERE Clause Syntax](https://helpcenter.theobald-software.com/xtract-core/knowledge-base/where-clause).",
+            "required": false,
+            "type": "string",
+            "x-example": "?whereClause=ERSDA GT '2025'"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Indicates a successful extraction call. It does not indicate a successful execution of the extraction."
+          },
+          "404": {
+            "description": "Indicates that the extraction does not exist."
+          },
+          "500": {
+            "description": "An error occured. The response body contains different error messages depending on the failure cause. All errors return a 500 status code."
+          }
+        }
+      }
+    },
+    "/start/{name}": {
+      "get": {
+        "tags": [
+          "run"
+        ],
+        "summary": "Run an extraction without waiting for the result.",
+        "description": "The `start` endpoint runs an extraction asynchronously and immediately returns the HTTP response head. The response header contains the timestamp of the extraction and the response body contains the logs of the extraction.",
+        "operationId": "startextraction",
+        "produces": [
+          "text/csv"
+        ],
+        "parameters": [
+          {
+            "name": "name",
+            "in": "path",
+            "description": "Name of the extraction you want to execute.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "packageSize",
+            "in": "query",
+            "description": "The extracted data is split into packages of the defined size. The default value is 50000 lines. A package size between 20000 and 50000 is advisable for large amounts of data. 0 means no packaging. Not using packaging can lead to an RFC timeout for large data extractions.",
+            "required": false,
+            "type": "number",
+            "x-example": "?packageSize=1000"
+          },
+          {
+            "name": "rows",
+            "in": "query",
+            "description": "Set a maximum number of rows to be extracted. 0 extracts all data. You can use this option to perform tests with a small amount of data by entering a row limit of e.g., 100.",
+            "required": false,
+            "type": "number",
+            "x-example": "?rows=10"
+          },
+          {
+            "name": "whereClause",
+            "in": "query",
+            "description": "WHERE clause to filter table records. For more information, see [WHERE Clause Syntax](https://helpcenter.theobald-software.com/xtract-core/knowledge-base/where-clause).",
+            "required": false,
+            "type": "string",
+            "x-example": "?whereClause=ERSDA GT '2025'"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Indicates a successful extraction call. It does not indicate a successful execution of the extraction."
+          },
+          "404": {
+            "description": "Indicates that the extraction does not exist."
+          },
+          "500": {
+            "description": "An error occured. The response body contains different error messages depending on the failure cause. All errors return a 500 status code."
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "SAP": {
+      "type": "object",
+      "properties": {
+        "Host": {
+          "type": "string",
+          "example": "sap-erp-as05.example.com"
+        },
+        "Client": {
+          "type": "string",
+          "example": "100"
+        },
+        "InstanceNo": {
+          "type": "number",
+          "example": 0
+        },
+        "Language": {
+          "type": "string",
+          "example": "en"
+        },
+        "User": {
+          "type": "string",
+          "example": "alice"
+        },
+        "Password": {
+          "type": "string",
+          "example": "myPassword"
+        }
+      }
+    },
+    "Azure": {
+      "type": "object",
+      "properties": {
+        "Account": {
+          "type": "string",
+          "example": "my-account"
+        },
+        "Container": {
+          "type": "string",
+          "example": "container"
+        },
+        "Token": {
+          "type": "string",
+          "example": "sv=YYYY-MM-DD&ss=...%3D"
+        }
+      }
+    },
+    "Table": {
+      "type": "object",
+      "properties": {
+        "Table": {
+          "type": "string",
+          "example": "MARA"
+        },
+        "Where": {
+          "type": "string",
+          "example": "MATNR = 000000000001"
+        },
+        "Source": {
+          "type": "string",
+          "example": "s4hana"
+        },
+        "Destination": {
+          "type": "string",
+          "example": "azure"
+        },
+        "Columns": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "example": [
+            "MATNR",
+            "MANDT"
+          ]
+        },
+        "ResultName": {
+          "type": "string",
+          "example": "resultset"
+        },
+        "FunctionModule": {
+          "type": "string",
+          "example": "/THEO/READ_TABLE"
+        }
+      }
     }
   }
+}

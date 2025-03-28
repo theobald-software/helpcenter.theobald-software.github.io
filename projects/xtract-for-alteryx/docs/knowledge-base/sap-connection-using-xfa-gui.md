@@ -97,7 +97,7 @@ The following authentication methods are supported:
 		Check the SAP parameter *snc/gssapi_lib* to determine which library is used for encryption in your SAP system.
 		Your SAP basis has to import and configure the same library on the application server and on the machine that runs {{ productName }}.
 		
-		For more information on SNC, see [Enabling Secure Network Communication (SNC) via X.509 certificate](https://kb.theobald-software.com/sap/enable-snc-using-pse-file).
+		For more information on SNC, see [Enabling Secure Network Communication (SNC) via X.509 certificate](enable-snc-using-pse-file.md).
 
 === "Plain :number-2:"
 

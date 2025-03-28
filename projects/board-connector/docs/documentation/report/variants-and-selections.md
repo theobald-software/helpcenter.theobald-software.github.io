@@ -6,9 +6,9 @@ description: Variants and Selections
 {% include "components/variants.md" %}
 
 
-{% include "components/filter-options.md" %}
-
 {% include "components/selections.md" %}
+
+{% include "components/filter-options.md" %}
 
 ### Data Format
 

@@ -1,0 +1,7 @@
+nav:
+    #- Home: index.md
+    - Getting Started: getting-started.md
+    - API Reference: api-reference.md
+    - Knowledge Base: knowledge-base/
+    #- Changelog: changelog.md
+    - Support: https://support.theobald-software.com/helpdesk

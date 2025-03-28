@@ -1,5 +1,16 @@
 [
   {
+    "Version": "2025.1.29.58",
+    "LegacyReleaseDate": "2025-01-29 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "ERPConnect",
+        "Component": "Licensing",
+        "Message": "Added JSON license file mechanism to ERPConnect"
+      }
+    ]
+  },
+  {
     "Version": "2024.12.16.10",
     "LegacyReleaseDate": "2024-12-16 00:00:00Z",
     "Changes": [

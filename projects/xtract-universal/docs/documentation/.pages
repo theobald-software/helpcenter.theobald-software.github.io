@@ -8,6 +8,7 @@ nav:
     - BW Cube: bwcube
     - BW Hierarchy: hierarchy
     - DeltaQ: deltaq
+    - OData: odata
     - ODP: odp
     - Open Hub Services: ohs
     - Query: query

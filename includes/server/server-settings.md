@@ -7,22 +7,24 @@ To open the server settings, navigate to **[Server] > [Settings]** in the main w
 !!! note
 	The settings are stored in the following directory: `{{ installationDir }}\config\server` (by default).
 
-### Configuration Server
+## Configuration Server
 
  The configuration server communicates with the {{ productName }} Designer.
  
 ![ServerSettings_config_tab](../../assets/images/documentation/server/ServerSettings_config_tab.png){:class="img-responsive"}
 
+### Designer Connection
+
 #### Port 
 
 Defines the port number for communication between Server and Designer. 
-The default is {{ port_designer }}. If you set a different port, add the new port number to the host name on the [logon screen](../designer.md/#connect-the-designer-to-a-server) ([host name]:[port]).
+The default is {{ port_designer }}. If you set a different port, add the new port number to the host name on the [logon screen](../designer.md/#connect-the-designer-to-a-server) (`[host name]:[port]`).
 
 #### Max. age of log files (days)
 Defines the maximum age of the config server [log files](../logs.md#access-server-logs) in days. 
 After this period the log files are deleted.
 
-#### Authentication methods
+### Authentication Methods
 Defines the authentication methods that are available when connecting a Designer to the {{ productName }} Server.
 For more information, see [Authentication Between Designer and Server](../access-restrictions/index.md/#authentication-between-designer-and-server).
 
@@ -31,19 +33,19 @@ Select an X.509 certificate that is used for for transport encryption and authen
 For more information, see [Install an X.509 certificate](../access-restrictions/install-x.509-certificate.md).
 
 
-#### Access Management
+### Access Management
 Defines which users and user groups have access to the Designer.
 For more information, see [Access Management](../access-restrictions/index.md).
 
 
-### Web Server
+## Web Server
 
 The web server accepts extraction calls via HTTP(S).
 
 ![ServerSettings_web_tab](../../assets/images/documentation/server/ServerSettings_web_tab.png){:class="img-responsive"} 
 
 
-#### Protocol 
+### Protocol 
 
 | Protocol | Description |
 |------------|--------------|
@@ -67,15 +69,32 @@ Defines the port number, on which the Server receives HTTPS requests of an extra
 Select an X.509 certificate that is used for for transport encryption and authentication, when running extractions.
 For more information, see [Install an X.509 certificate](../access-restrictions/install-x.509-certificate.md).
 
+### Misc
+
 ####  Keep log files (days)
 Defines the maximum age of the web server [log files](../logs.md#access-extraction-logs) in days. After this period the log files are deleted.
 
+#### Collect Usage Data
+
+When this checkbox is active, usage data is stored in your local installation directory.
+If this checkbox is deactivated, no usage data is collected. 
+
+#### Upload Usage Data
+
+When this checkbox is active, usage data is sent to Theobald Software for analysis. 
+An internet connection is required to use this option.
+
+#### Transfer SAP Object Names
+
+When this checkbox is active, the names of the SAP objects that are used in extractions are included in the usage data upload.
+
+
 #### Enable setup distribution for clients
 Defines whether the setup of the product version that runs on the server needs to be downloaded. 
-When an older Designer version is connected to a newer Server version, you are be prompted to download and update the Designer with the product version. 
+When an older Designer version is connected to a newer Server version, you are prompted to download and update the Designer with the product version. 
 
 
-#### Result cache
+### Result cache
 
 {% if page.meta.product == "xtract-universal" %}
 

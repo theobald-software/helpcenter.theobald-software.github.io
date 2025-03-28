@@ -4,10 +4,13 @@ We recommend checking for updates at least every three months.
 
 [:material-download-circle: Download the latest version](https://portal.theobald-software.com/){ .md-button .md-button--primary }
 
+### Latest Software Updates { data-search-exclude }	
 
-!!! note
-	If the installed version isn't listed, this is expected (by design). Refer to the changelog entry with the next lower version than the one currently installed on your system.
-    
+Releases can be marked as *critical* (:critical:) or *breaking* (:link_broken:):
+- Critical releases contain important updates. Installation is highly recommended.
+- Breaking releases can affect (break) an existing setup. Testing on a QA environment is highly recommended.
+
+If an installed version is not listed below, refer to the changelog entry with the next lower version.
 
 <!---
 
@@ -30,4 +33,3 @@ Format: **A.B.C [X]**
 - `critical change` shows important software releases
 -->
 
-### Latest Software Updates { data-search-exclude }	

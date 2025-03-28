@@ -1,11 +1,10 @@
 This page shows how to use the {{ tableCDC }} {{ component }}.<br>
-The {{ tableCDC }} {{ component }} can be used to extract delta content from SAP Tables.
-It creates a log table in SAP that records insert, update, and delete activities that apply to a selected SAP table.<br>
+The {{ tableCDC }} {{ component }} can be used to map data from SAP Tables to various target environments.
+Unlike a full data load, where all records in a table are transferred from the source to the target environment, Table CDC captures only the data changes since the last load. 
 
 !!! note
-	Table CDC is an Add-On that requires a license. 
+	Table CDC is an Add-On that requires a separate license. 
 	For more information, contact Theobald Software's sales team at [sales@theobald-software.com](mailto:sales@theobald-software.com).
-
 
 ### About Table CDC
 

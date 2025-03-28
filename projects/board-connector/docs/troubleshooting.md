@@ -21,7 +21,6 @@ tags:
 <div class="mdx-columns" markdown>
 
 - [Board Connector Server Troubleshooting](https://support.theobald-software.com/helpdesk/KB/View/20074-board-connector-server-troubleshooting)
-- [Proxy server settings in {{ productName }}](https://support.theobald-software.com/helpdesk/KB/View/13367-proxy-server-settings-in-xtract-universal-and-board-connector)
 - [How to activate tracing in {{ productName }}](https://support.theobald-software.com/helpdesk/KB/View/14455-how-to-activate-tracing-for-xtract-products)
 - [Required Support Information for Board Connector](https://support.theobald-software.com/helpdesk/KB/View/14975-required-support-information-for-board-connector)
 

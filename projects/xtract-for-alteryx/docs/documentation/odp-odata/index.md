@@ -28,6 +28,9 @@ Once the service is registered in the SAP Gateway system, {{ productName }} can 
 
 For more information, see [SAP Help: ODP-Based Data Extraction via OData](https://help.sap.com/doc/saphelp_nw75/7.5.5/en-US/11/853413cf124dde91925284133c007d/frameset.htm).
 
+!!! tip
+	For information on how to create OData services that provide ODP based data, refer to the [Knowledge Base Article: Create OData Services using the SAP Gateway Builder](../../knowledge-base/create-odata-services-using-the-sap-gateway-builder.md).
+
 
 ### Prerequisites
 

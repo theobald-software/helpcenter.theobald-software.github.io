@@ -12,62 +12,7 @@ hide:
 
 Choose your product:
 
-<!---
-<div class="grid cards" markdown>
-
--   :products-xtract-universal: __Xtract Universal__
-
-	---
-	
-    The flexible SAP interface for databases, analytics, BI or cloud solutions.
-
-    [:octicons-arrow-right-24: Xtract Universal](https://help.theobald-software.com/en/xtract-universal/)
-
--   :products-xtract-is: __Xtract IS__
-
-    ---
-
-    The powerful SAP plug-in for SQL Server Integration Services to extract mass data.
-
-    [:octicons-arrow-right-24: Xtract IS](https://help.theobald-software.com/en/xtract-is/)
-
--   :products-xtract-for-alteryx: __Xtract for Alteryx__
-
-    ---
-
-    Integrate your SAP data into Alteryx with this drag & drop toolbox for the Alteryx Designer.
-
-    [:octicons-arrow-right-24: Xtract for Alteryx](https://help.theobald-software.com/en/xtract-for-alteryx/)
-
--   :products-board-connector: __Board Connector__
-
-    ---
-
-    Access your SAP data directly from Board, without an additional data warehouse.
-
-    [:octicons-arrow-right-24: Board Connector](https://help.theobald-software.com/en/board-connector/)
-	
--   :products-yunio: __yunIO__
-
-    ---
-
-    SAP process automation via web services for cloud environments.
-
-    [:octicons-arrow-right-24: yunIO](https://helpcenter.theobald-software.com/yunio)
-	
--   :products-erpconnect: __ERPConnect__
-
-    ---
-
-    The .NET programming library to develop your own SAP interfaces.
-	
-	[:octicons-arrow-right-24: ERPConnect](https://helpcenter.theobald-software.com/erpconnect)
-
-</div>
-
--->
-
-::cards:: cols=3
+::cards:: cols=4
 
 - title: Xtract Universal
   icon: ./assets/images/xtract-universal.svg
@@ -78,7 +23,12 @@ Choose your product:
   icon: ./assets/images/xtract-is.svg
   content: The powerful SAP plug-in for SQL Server Integration Services to extract mass data.
   url: https://helpcenter.theobald-software.com/xtract-is
-  
+
+- title: Xtract IS for Azure
+  icon: ./assets/images/xtract-is-for-azure.svg
+  content: The Plug’n’Play solution for SAP and Azure SQL Server Integration Services.
+  url: https://helpcenter.theobald-software.com/xtract-is/xtract-is-for-azure/
+    
 - title: Xtract for Alteryx
   icon: ./assets/images/xtract-for-alteryx.svg
   content: Integrate your SAP data into Alteryx with this drag & drop toolbox for the Alteryx Designer.
@@ -89,6 +39,11 @@ Choose your product:
   content: Access your SAP data directly from Board, without an additional data warehouse.
   url: https://helpcenter.theobald-software.com/board-connector
   
+- title: Xtract Core
+  icon: ./assets/images/xtract-core.svg
+  content: The whitelabel Web API server to develop your own SAP interfaces.
+  url: https://helpcenter.theobald-software.com/xtract-core
+
 - title: yunIO
   icon: ./assets/images/yunio.svg
   content: SAP process automation via web services for cloud environments.
