@@ -168,6 +168,8 @@ The Xtract Core API uses the following parameter types:
 
 ### General Workflow
 
+The general workflow for first-time {{ productName }} users includes the following steps:
+
 <div class="workflow" markdown>
 
 1. Create a [connection to an SAP source system](#create-sap-connections) to extract data from.
