@@ -1,11 +1,11 @@
 ---
 title: Integration with Cloud Interfaces
-description: This article describes a use case where Xtract Core is integrated into a cloud application.
+description: This article describes a use case where Xtract Core is integrated into a customer application.
 search:
   exclude: true
 ---
 
-This article describes an example integration of {{ productName }} into a customer application.
+This article describes a use case where {{ productName }} is integrated into an on-premise application that uses a cloud interface.
 
 ### About the Application
 
@@ -24,6 +24,6 @@ The application uses {{ productName }} to:
 
 ### Integration of {{ productName }}
 
-The following graphic shows how {{ productName }} was integrated into the software architecture of the cloud application:
+The following graphic shows how {{ productName }} was integrated into the software architecture of the application:
 
 ![cloud-application](../assets/images/articles/xc/cloud-application.svg){ width="100%" }
