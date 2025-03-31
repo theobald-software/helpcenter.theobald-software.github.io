@@ -5,7 +5,7 @@ search:
   exclude: true
 ---
 
-This article describes the integration of {{ productName }} into a customer application.
+This article describes an example integration of {{ productName }} into a customer application.
 
 ### About the Application
 
