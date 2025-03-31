@@ -13,8 +13,8 @@ For more information, refer to our  [Privacy Policy](https://theobald-software.c
 ![server-settings](../assets/images/documentation/access-restriction/server-settings_manage.png)
 2. Open the *Web Server* tab.
 3. Deactivate the following checkboxes:
-	- [Collect Usage Data](../../documentation/server/server-settings/#collect-usage-data)
-	- [Upload Usage Data](../../documentation/server/server-settings/#upload-usage-data)
-	- [Transfer SAP Object Names](../../documentation/server/server-settings/#transfer-sap-object-names)
+	- [Collect Usage Data](../documentation/server/server-settings.md/#collect-usage-data)
+	- [Upload Usage Data](../documentation/server/server-settings.md/#upload-usage-data)
+	- [Transfer SAP Object Names](../documentation/server/server-settings.md/#transfer-sap-object-names)
 
 You can opt-in again by reactivating the checkboxes.
