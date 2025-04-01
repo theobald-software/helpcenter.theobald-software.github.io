@@ -1,8 +1,7 @@
 
 ### Installation of /THEO/READ_TABLE
 
-An SAP transport request for the installation of the function module is provided in the installation directory 
-{% if page.meta.product == "xtract-core" %}of Xtract Core in the `Transports` folder.{% else %}: `{{ installationDir }}\ABAP\`.<br>{% endif %}
+An SAP transport request for the installation of the function module is provided in the installation directory of {{ productName }}{% if page.meta.product == "xtract-core" %} in the `Transports` folder.{% else %}: `{{ installationDir }}\ABAP\`.<br>{% endif %}
 Transport requests are imported into SAP by your SAP Basis team. For more information, see [Knowledge Base: Import an SAP Transport Request](/{{ product }}/knowledge-base/import-an-sap-transport-request/).
 
 {% if page.meta.product != "xtract-core" %}
