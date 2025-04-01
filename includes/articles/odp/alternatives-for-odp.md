@@ -2,9 +2,10 @@
 
 The following article shows how to replace most {{ odp }} [provider contexts](../documentation/odp/provider-context.md) with other {{ components }}.
 
-{% if page.meta.product == "xtract-for-alteryx" %}Aside from the {{ components }} presented in this article, {{ productName }} offers the [{{ odpOdata }}](../documentation/odp-odata/index.md) {{ component }} that enables users to extract ODP data via OData protocol. {% else %}Aside from the {{ components }} presented in this article, {{ productName }} will offer ODP via OData protocol. The OData connectivity is currently in development and scheduled to be released in Q4 2024.{% endif %}
-For more information, see [Guidance on SAP Note 3255746 for Theobald Software Xtract Products](https://theobald-software.com/en/products-technology-en/guidance-on-sap-note-3255746-for-theobald-software-xtract-products/).
+{% if page.meta.product == "xtract-for-alteryx" %}Aside from the {{ components }} presented in this article, {{ productName }} offers the [{{ odpOdata }}](../documentation/odp-odata/index.md) {{ component }} that enables users to extract ODP data via OData protocol. {% else %}Aside from the {{ components }} presented in this article, {{ productName }} offers ODP data extraction via OData protocol.{% endif %}
+While {% if page.meta.product != "xtract-for-alteryx" %}[{{ odata }}](../documentation/odata/index.md){% else %} {{ odpOdata }}{% endif %} covers all provider contexts, the extraction time for large data sets is longer compared to components that use the standard RFC protocol.
 
+ 
 | Provider Context | Alternative | 
 |-------------|-------------|
 | ABAP Core Data Services [[ABAP_CDS](../documentation/odp/provider-context.md/#abap-cds-views)] | [{{ table }}](../documentation/table/index.md) | 
@@ -13,7 +14,7 @@ For more information, see [Guidance on SAP Note 3255746 for Theobald Software Xt
 | Datasources/Extractors [[SAPI](../documentation/odp/provider-context.md/#extractors)] |  {% if page.meta.product == "xtract-for-alteryx" %} - {% else %} [{{ deltaq }}](../documentation/deltaq/index.md) {% endif %} | 
 | SAP LT Queue Alias [[SLT~your_queue_alias](../documentation/odp/provider-context.md/#slt-server)] | [{{ table }}](../documentation/table/index.md){% if page.meta.product != "xtract-for-alteryx" %} <br> [{{ tableCDC }}](../documentation/table-cdc/index.md) {% endif %} | 
 
- 
+
 ### Extract Data from CDS Views
 
 Alternative for the *ABAP Core Data Services [ABAP_CDS]* provider context:<br>
@@ -111,3 +112,9 @@ Alternative for the *SAP LT Queue Alias [SLT~your_queue_alias]* provider context
 {% endif %}
 
 -->
+
+----
+
+#### Related Links
+- [Guidance on SAP Note 3255746 for Theobald Software Xtract Products](https://theobald-software.com/en/products-technology-en/guidance-on-sap-note-3255746-for-theobald-software-xtract-products/).
+- [Create (ODP) OData Services using the SAP Gateway Builder](create-odata-services-using-the-sap-gateway-builder.md)
