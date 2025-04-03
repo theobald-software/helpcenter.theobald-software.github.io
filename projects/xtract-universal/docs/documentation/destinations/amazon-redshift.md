@@ -27,8 +27,10 @@ If the driver is missing, the connection test fails.<br>
 ![Destination-Details](../../assets/images/documentation/destinations/amazon-redshift/destination-details.png){:class="img-responsive"}
 
 #### Endpoint
-Enter the server address of the Amazon Redshift System.
-(Found in the Redshift Management Console)
+Enter the server address of the Amazon Redshift system. The server address uses the following format:<br>
+`<cluster-name>.<random-id>.<region>.redshift.amazonaws.com`
+
+You can find the server address in the properties of your cluster database.
 
 #### Port
 Enter the port number for the connection.
