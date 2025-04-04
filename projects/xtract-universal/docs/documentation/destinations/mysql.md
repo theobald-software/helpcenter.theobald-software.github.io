@@ -17,6 +17,24 @@ There are no additional installations needed to use MySQL database destination.
 ![Destination-Details](../../assets/images/documentation/destinations/my-sql/destination-details.png){:class="img-responsive"}
 
 
+#### Server Name
+Enter the name of the server the MySQL database is hosted on.
+
+#### Server Port
+Enter the port of the server the MySQL database is hosted on.
+
+#### User Name
+Enter the MySQL database user ID.
+
+#### Password
+Enter the password of the database user.
+
+#### Database
+Enter the name of the MySQL database.
+
+#### Test Connection
+Check the database connection. 
+
 {% include "destinations/assign-destination.md" %}
 
 ![Destination-settings](../../assets/images/documentation/destinations/my-sql/destination-settings.png){:class="img-responsive"}

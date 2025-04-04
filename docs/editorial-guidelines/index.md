@@ -28,6 +28,10 @@ It is recommended to use the following example values when creating content for 
 - mssql42.example.com
 - oracle23.example.com
 
+#### IP Address
+
+- 192.168.1.1
+
 #### Usernames
 
 - Alice
@@ -43,6 +47,12 @@ See also [Numbers](style-guide.md#numbers)
 #### Generic Strings
 
 Foo, Bar, Baz, Qux
+
+#### Tenant and Client IDs
+
+- 123e4567-e89b-12d3-a456-426614174000
+- 987fbc97-4bed-5078-b5a0-1361e2c7adea
+
 
 ******
 #### Related Links:
