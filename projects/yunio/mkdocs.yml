@@ -108,11 +108,11 @@ plugins:
   - group:
       enabled: !ENV CI
       plugins:
-        #- exclude-unused-files:
-        #     file_types_to_check: ["png", "jpg", "jpeg", "gif"]
-        #- git-revision-date-localized:
-        #     exclude:
-        #       - index.md
+        - exclude-unused-files:
+             file_types_to_check: ["png", "jpg", "jpeg", "gif"]
+        - git-revision-date-localized:
+             exclude:
+               - index.md
         #enable_creation_date: true
         #type: timeago
         #- optimize #requires pngquant to be installed, see https://github.com/squidfunk/mkdocs-material/discussions/4989
