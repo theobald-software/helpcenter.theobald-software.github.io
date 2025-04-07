@@ -25,4 +25,4 @@ hide:
 
 </style>
 
-<redoc src="swagger-redoc.yaml"/>
+<redoc src="swagger.yaml"/>
