@@ -4,15 +4,15 @@
 <head>
   <meta charset="UTF-8">
   <title>Swagger UI</title>
-  <link rel="stylesheet" type="text/css" href="../../assets/stylesheets/swagger-ui.css" />
-  <link rel="stylesheet" type="text/css" id="slate-css" media="none" href="../../assets/stylesheets/swagger-ui-dark.css" />
+  <link rel="stylesheet" type="text/css" href="../assets/stylesheets/swagger-ui.css" />
+  <link rel="stylesheet" type="text/css" id="slate-css" media="none" href="../assets/stylesheets/swagger-ui-dark.css" />
   
 </head>
 
-<body style="overflow:hidden;">
+<body style="overflow:hidden;background: ;">
   <div id="swagger-ui"></div>
-  <script src="../../assets/javascripts/swagger-ui-bundle.js" charset="UTF-8"> </script>
-  <script src="../../assets/javascripts/swagger-ui-standalone-preset.js" charset="UTF-8"> </script>
+  <script src="../assets/javascripts/swagger-ui-bundle.js" charset="UTF-8"> </script>
+  <script src="../assets/javascripts/swagger-ui-standalone-preset.js" charset="UTF-8"> </script>
   <script>
     window.onload = function () {
       window.ui = SwaggerUIBundle({
@@ -23,10 +23,10 @@
           SwaggerUIStandalonePreset
         ],
         
-        url: "../swagger_67c046180f0a40a9b4771973aa7354ed.json",
+        url: "../swagger.yaml",
         
         
-        "oauth2RedirectUrl": new URL("../../assets/swagger-ui/oauth2-redirect.html",window.location.href).href,
+        "oauth2RedirectUrl": new URL("../assets/swagger-ui/oauth2-redirect.html",window.location.href).href,
         
         "validatorUrl": "none",
         
@@ -37,14 +37,14 @@
     "validatorUrl": "none",
     "extra_css": [],
     "dark_scheme_name": "slate",
-    "filter_files": [],
     "syntaxHighlight.theme": "agate"
 
       })
 
       
 
-      if (parent.__init_is_dark_mode) {
+      const scheme = parent.scheme
+      if (scheme === "slate") {
           enable_dark_mode();
       }
     }
@@ -58,7 +58,7 @@
     }
 
     const resize_ob = new ResizeObserver(function(entries) {
-      parent.update_swagger_ui_iframe_height("5288a0c8");
+      parent.update_swagger_ui_iframe_height("54d42507");
     });
 
     // start observing for resizing
