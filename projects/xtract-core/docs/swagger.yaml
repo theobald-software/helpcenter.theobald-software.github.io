@@ -2,6 +2,7 @@ swagger: '2.0'
 info:
   version: 1.0.0
   title: Xtract Core
+  description: Xtract Core is a whitelabel Web API server for developing your own SAP interfaces. The Xtract Core API enables you to extract data from SAP Tables and write them to target environments.
 basePath: /v1
 tags:
   - name: Connections
