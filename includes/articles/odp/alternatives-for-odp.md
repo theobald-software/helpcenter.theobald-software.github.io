@@ -1,10 +1,10 @@
 
 
 The following article shows how to replace most {{ odp }} [provider contexts](../documentation/odp/provider-context.md) with other {{ components }}.
-
+{% if page.meta.product != "xtract-is" %}
 {% if page.meta.product == "xtract-for-alteryx" %}Aside from the {{ components }} presented in this article, {{ productName }} offers the [{{ odpOdata }}](../documentation/odp-odata/index.md) {{ component }} that enables users to extract ODP data via OData protocol. {% else %}Aside from the {{ components }} presented in this article, {{ productName }} offers ODP data extraction via OData protocol.{% endif %}
 While {% if page.meta.product != "xtract-for-alteryx" %}[{{ odata }}](../documentation/odata/index.md){% else %} {{ odpOdata }}{% endif %} covers all provider contexts, the extraction time for large data sets is longer compared to components that use the standard RFC protocol.
-
+{% endif %}
  
 | Provider Context | Alternative | 
 |-------------|-------------|
