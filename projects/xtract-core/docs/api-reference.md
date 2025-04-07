@@ -10,10 +10,21 @@ hide:
 
 
 <style>
-  .md-typeset h1,
+
+.md-main__inner.md-grid{
+  max-width: 100%;
+  display: flex;
+  height: 100%;
+  margin-top: 0rem
+}
+
+.md-typeset h1,
   .md-content__button {
     display: none;
   }
+
 </style>
 
-<swagger-ui src="swagger.yaml"/>
+<redoc src="swagger.yaml"/>
+
+
