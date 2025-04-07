@@ -55,7 +55,7 @@ jobs:
       - run: pip install mkdocs-apicall-plugin
       - run: pip install mkdocs-pdf
       - run: pip install mkdocs-render-swagger-plugin
-      - run: pip install mkdocs-swagger-ui-tag
+      - run: pip install mkdocs-swagger-ui-tag==0.6.11
       - run: pip install mkdocs-redoc-tag
       - run: mkdocs gh-deploy --force
 env:
