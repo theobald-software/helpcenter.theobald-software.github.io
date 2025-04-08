@@ -116,5 +116,5 @@ Alternative for the *SAP LT Queue Alias [SLT~your_queue_alias]* provider context
 ----
 
 #### Related Links
-- [Guidance on SAP Note 3255746 for Theobald Software Xtract Products](https://theobald-software.com/en/products-technology-en/guidance-on-sap-note-3255746-for-theobald-software-xtract-products/).
-- [Create (ODP) OData Services using the SAP Gateway Builder](create-odata-services-using-the-sap-gateway-builder.md)
+- [Guidance on SAP Note 3255746 for Theobald Software Xtract Products](https://theobald-software.com/en/products-technology-en/guidance-on-sap-note-3255746-for-theobald-software-xtract-products/). {% if page.meta.product != "xtract-is" %}
+- [Create (ODP) OData Services using the SAP Gateway Builder](create-odata-services-using-the-sap-gateway-builder.md){% endif %}
