@@ -52,7 +52,7 @@ Follow the steps below to set up the authentication with Microsoft:
 		- **Azure Storage > user impersonation** <br>
 		This allows {{ productName }} to act on behalf of the signed-in user and access Azure Storage resources like OneLake.
 		- **Microsoft Graph > User.Read**<br>
-		This allows {{ productName }} to read the profile of the signed-in user like name and tenant ID.
+		This allows {{ productName }} to read the profile of the signed-in user.
 		
 		For more information, see [Microsoft Documentation: Add permissions to your web API](https://learn.microsoft.com/en-us/entra/identity-platform/quickstart-configure-app-access-web-apis#add-permissions-to-access-your-web-api).<br>
 		![API permissions](../../assets/images/documentation/destinations/fabric/api-permissions.png)
