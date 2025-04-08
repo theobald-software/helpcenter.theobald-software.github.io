@@ -9,7 +9,7 @@ The {{ page.meta.title }} destination loads data to QlikSense or QlikView.
 ## About
 
 The {{ page.meta.title }} destination [generates a data load script](#generate-a-data-load-script), that needs to be inserted into the data load editor of your Qlik application. 
-Depending on whether you run a QlikSense of QlikView application, Xtract Univeral creates a different data load script.
+Depending on whether you run a QlikSense or QlikView application, Xtract Univeral creates a different data load script.
 
 Running the Qlik application triggers the respective Xtract Universal extraction via the data load script. 
 Xtract Universal sends the extracted SAP data through an HTTP-CSV stream directly to your Qlik application.

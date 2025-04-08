@@ -71,8 +71,7 @@ Enter the name of your organization.
 Authentication via the account name in your organization is the preferred way of identifying youself against Snowflake, see [Snowflake Documentation: Account Name in Your Organization](https://docs.snowflake.com/en/user-guide/admin-account-identifier.html#format-1-preferred-account-name-in-your-organization)
 
 #### Region (legacy)
-Select the region of the Snowflake environment from the drop-down-menu.<br>
-In the example above, the region *AWS - EU (Frankfurt)* is selected. 
+Select the region of the Snowflake environment from the drop-down-menu. 
 The selected region must match the information in the assigned account. 
 
 !!! note

@@ -9,17 +9,26 @@ The {{ page.meta.title }} destination enables users to load SAP data to a Micros
 
 
 ## Requirements
+
 The {{ page.meta.title }} destination uses [Microsoft Entra ID (formerly Azure Active Directory)](https://www.microsoft.com/en-us/security/business/identity-access/microsoft-entra-id) with OAuth 2.0 for authentication.
-Make sure the authentication uses the following settings:
-- Register Microsoft Fabric OneLake as a *Mobile and desktop application*, see [Microsoft Documentation: Configure platform settings](https://learn.microsoft.com/en-us/entra/identity-platform/quickstart-register-app?tabs=certificate#configure-platform-settings):<br>
+Follow the steps below to set up the authentication with Microsoft:
+1. Register Microsoft Fabric OneLake as an app using the [Azure portal > App registrations](https://portal.azure.com/#view/Microsoft_AAD_RegisteredApps/ApplicationsListBlade) service.
+For more information, see [Microsoft Documentation: Register an application in Microsoft Entra ID](https://learn.microsoft.com/en-us/entra/identity-platform/quickstart-register-app?tabs=certificate#configure-platform-settings).
+2. Make sure the registered app allows authentication from *Mobile and desktop applications*:<br>
 ![authentication](../../assets/images/documentation/destinations/fabric/auth.png)
-- Add the following API permissions:
-	- Azure Storage - *user impersonation*
-	- Microsoft Graph - *User.Read*
+3. Add the following API permissions to the registered app:
+	- **Azure Storage > user impersonation** <br>
+	This allows {{ productName }} to act on behalf of the signed-in user and access Azure Storage resources like OneLake.
+	- **Microsoft Graph > User.Read**<br>
+	This allows {{ productName }} to read the profile of the signed-in user like name and tenant ID.
 	
 	For more information, see [Microsoft Documentation: Add permissions to your web API](https://learn.microsoft.com/en-us/entra/identity-platform/quickstart-configure-app-access-web-apis#add-permissions-to-access-your-web-api).<br>
 	![API permissions](../../assets/images/documentation/destinations/fabric/api-permissions.png)
+4. When connecting {{ productName }} to Microsoft Fabric, make sure to provide the credentials of a Microsoft user that has one of the following user roles:
+	- Storage Blob Data Contributor
+	- Storage Blob Data Owner
 	
+	For more information, see [Microsoft Documentation: Assign an Azure role](https://learn.microsoft.com/en-us/azure/storage/blobs/assign-azure-role-data-access?tabs=portal#assign-an-azure-role).
 
 {% include "destinations/create-destination.md" %}
 
