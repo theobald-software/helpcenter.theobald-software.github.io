@@ -1,5 +1,17 @@
 [
   {
+    "Version": "2025.4.7.70",
+    "LegacyReleaseDate": "2025-04-07 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Server",
+        "Component": "General",
+        "Message": "Usage Analytics: Fixed a bug where running extractions would not be included in the next collection",
+        "ReleaseNote": "* unfinished runs will be considered for the next collection\n* version number will always be the one of the installed product\n* unattended setup will write config into the correct directory"
+      }
+    ]
+  },
+  {
     "Version": "2025.3.26.14",
     "LegacyReleaseDate": "2025-03-26 00:00:00Z",
     "Changes": [
