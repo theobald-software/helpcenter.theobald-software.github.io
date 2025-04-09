@@ -1,7 +1,7 @@
 ---
 title: ODP(OData)
 description: Operational Data Provisioning (ODP) based data via OData Services
-status: new
+status: beta
 icon: component/odp-odata
 ---
 
