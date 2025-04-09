@@ -1,5 +1,16 @@
 [
   {
+    "Version": "2025.3.20.24",
+    "LegacyReleaseDate": "2025-03-20 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "Report",
+        "Message": "Fixed transport request for systems that do no have data element \"c1\" present."
+      }
+    ]
+  },
+  {
     "Version": "2025.3.7.56",
     "LegacyReleaseDate": "2025-03-07 00:00:00Z",
     "Changes": [
