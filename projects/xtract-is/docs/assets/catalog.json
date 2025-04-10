@@ -1,5 +1,16 @@
 [
   {
+    "Version": "2025.4.10.50",
+    "LegacyReleaseDate": "2025-04-10 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "XtractIS",
+        "Component": "DeltaQ",
+        "Message": "Fixed a bug that would not display parametrized field selectors correctly (bug introduced in 7.4.3.0)"
+      }
+    ]
+  },
+  {
     "Version": "2025.3.20.24",
     "LegacyReleaseDate": "2025-03-20 00:00:00Z",
     "Changes": [
