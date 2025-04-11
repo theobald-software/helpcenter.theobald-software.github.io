@@ -12,7 +12,7 @@ This article outlines a use case where {{ productName }} is deployed within a hy
 
 As a white-label solution, {{ productName }} enables third-party applications to extract data from SAP systems via RESTful services.
 A typical implementation scenario involves integration into a hybrid cloud architecture. 
-In this setup, {{ productName }} is deployed within the end customer’s on-premises network to maintain direct access to their SAP environment, ensuring secure and compliant data extraction.
+In this setup, {{ productName }} is deployed within the end customer’s on-premises network to maintain direct access to their SAP environment and to ensure secure and compliant data extraction.
 Meanwhile, the cloud-based component of the application delivers the user interface.
 
 The application uses {{ productName }} to:
