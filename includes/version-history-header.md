@@ -1,8 +1,13 @@
 
+{% if page.meta.product != "xtract-core" %}
+
 ### Recommended Update Interval
 We recommend checking for updates at least every three months. 
 
 [:material-download-circle: Download the latest version](https://portal.theobald-software.com/){ .md-button .md-button--primary }
+
+
+{% endif %}
 
 ### Latest Software Updates { data-search-exclude }	
 

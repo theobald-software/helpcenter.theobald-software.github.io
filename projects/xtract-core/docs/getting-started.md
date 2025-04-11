@@ -113,18 +113,15 @@ The name (`serviceName`), displayed name (`displayName`) and description (`descr
 
 ```json title="theobald.service.definition.json"
 {
+    "description": "A web API for extracting data from SAP systems",
+    "displayName": "SAPConnector",
+    "serviceName": "SAP Connector Service",
     "servers": [
         {
-            "path": "listener.exe",
-            "displayName": "listener"
+            "displayName": "listener",
+            "path": "listener.exe"
         }
-    ],
-    "displayName": "SAPConnector",
-    "description": "A web API for extracting data from SAP systems",
-    "convertConfig": false,
-    "minCfgVersion": "2024.10.30.35",
-    "currentVersion": "9925.3.12.51",
-    "serviceName": "SAP Connector Service"
+    ]
 }
 ```
 

@@ -1,17 +1,19 @@
 ---
-title: Integration with Cloud Interfaces
+title: "Xtract Core in a Hybrid Cloud Architecture"
 description: This article describes a use case where Xtract Core is integrated into a customer application.
 search:
   exclude: true
 ---
 
-This article describes a use case where {{ productName }} is integrated into an on-premise application that uses a cloud interface.
+This article outlines a use case where {{ productName }} is deployed within a hybrid cloud architecture, combining on-premises SAP connectivity with a cloud-based user interface.
 
 ### About the Application
 
-As a whitelabel solution, {{ productName }} can be used to create custom SAP interfaces.
-The initial use case for {{ productName }} was an integration into a hybrid cloud application.
-In this scenario, {{ productName }} operates on-premise within the customer's infrastructure, while a cloud-based application handles the user interface. 
+
+As a white-label solution, {{ productName }} enables third-party applications to extract data from SAP systems via RESTful services.
+A typical implementation scenario involves integration into a hybrid cloud architecture. 
+In this setup, {{ productName }} is deployed within the end customer’s on-premises network to maintain direct access to their SAP environment, ensuring secure and compliant data extraction.
+Meanwhile, the cloud-based component of the application delivers the user interface.
 
 The application uses {{ productName }} to:
 
@@ -24,6 +26,6 @@ The application uses {{ productName }} to:
 
 ### Integration of {{ productName }}
 
-The following graphic shows how {{ productName }} was integrated into the software architecture of the application:
+The following graphic shows how {{ productName }} was integrated into the architecture of the application:
 
 ![cloud-application](../assets/images/articles/xc/cloud-application.svg){ width="100%" }
