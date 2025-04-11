@@ -49,10 +49,6 @@
          <lastmod>2025-04-11</lastmod>
     </url>
     <url>
-         <loc>https://helpcenter.theobald-software.com/xtract-core/knowledge-base/integration-with-cloud-interfaces/</loc>
-         <lastmod>2025-04-11</lastmod>
-    </url>
-    <url>
          <loc>https://helpcenter.theobald-software.com/xtract-core/knowledge-base/requirements/</loc>
          <lastmod>2025-04-11</lastmod>
     </url>
@@ -70,6 +66,10 @@
     </url>
     <url>
          <loc>https://helpcenter.theobald-software.com/xtract-core/knowledge-base/where-clause/</loc>
+         <lastmod>2025-04-11</lastmod>
+    </url>
+    <url>
+         <loc>https://helpcenter.theobald-software.com/xtract-core/knowledge-base/xtract-core-in-a-hybrid-cloud-architecture/</loc>
          <lastmod>2025-04-11</lastmod>
     </url>
 </urlset>
