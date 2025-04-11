@@ -12,7 +12,7 @@ The {{ page.meta.title }} destination loads data into a Snowflake environment.
 The connection to the Snowflake target environment is made via the ODBC driver for Windows 64-bit architectures.
 No additional installations are required to use the Snowflake destination.
 
-- Download and install the [SnowflakeDSIIDriver](https://sfc-repo.snowflakecomputing.com/odbc/win64/latest/index.html).
+- Download and install the [SnowflakeDSIIDriver](https://sfc-repo.snowflakecomputing.com/odbc/win64/latest/index.html) on the machines that run the Xtract Universal server and the Xtract Universal Designer.
 - To connect through a proxy server, configure the following environment variables: `http_proxy`, `https_proxy`, `no_proxy`.<br>
 For more information, see [Snowflake: ODBC Configuration and Connection Parameters](https://docs.snowflake.com/en/user-guide/odbc-parameters.html#using-environment-variables).
 - The ODBC default port (443) for HTTPS is enabled and allows outbound traffic from the network to Snowflake's services.
