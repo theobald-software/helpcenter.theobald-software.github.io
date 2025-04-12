@@ -6,7 +6,7 @@
       {
         "Product": "XtractIS",
         "Component": "DeltaQ",
-        "Message": "Fixed a bug when reading legacy packages to form field selectors that share the same variable or parameter in the same package"
+        "Message": "Fixed a bug when reading legacy packages to form field selectors that share the same variable or parameter within the same package (bug introduced in 7.5.0.0) "
       }
     ]
   },
