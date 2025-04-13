@@ -3,6 +3,7 @@ title: "Xtract Core in a Hybrid Cloud Architecture"
 description: This article describes a use case where Xtract Core is integrated into a customer application.
 search:
   exclude: true
+author: Valerie Schipka, Christoph Schuler
 ---
 
 This article outlines a use case where {{ productName }} is deployed within a hybrid cloud architecture, combining on-premises SAP connectivity with a cloud-based user interface.
