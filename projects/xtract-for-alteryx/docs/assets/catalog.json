@@ -1,5 +1,16 @@
 [
   {
+    "Version": "2025.4.16.16",
+    "LegacyReleaseDate": "2025-04-16 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "TableCDC",
+        "Message": "Added a validation to check if extraction's CDC Watch is in an expected state"
+      }
+    ]
+  },
+  {
     "Version": "2025.4.9.3",
     "LegacyReleaseDate": "2025-04-09 00:00:00Z",
     "Changes": [
