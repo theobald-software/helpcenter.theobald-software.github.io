@@ -1,5 +1,43 @@
 [
   {
+    "Version": "2025.4.16.25",
+    "LegacyReleaseDate": "2025-04-16 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "TableCDC",
+        "Message": "Added a validation to check if extraction's CDC Watch is in an expected state"
+      }
+    ]
+  },
+  {
+    "Version": "2025.4.16.0",
+    "LegacyReleaseDate": "2025-04-16 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "XtractUniversal",
+        "Component": "General",
+        "Message": "Fixed a bug in the config converter which skipped cloud destinations legacy settings conversion on failure"
+      }
+    ]
+  },
+  {
+    "Version": "2025.4.10.57",
+    "LegacyReleaseDate": "2025-04-10 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "XtractUniversal",
+        "Component": "General",
+        "Message": "Fixed various minor stability and UI issues."
+      },
+      {
+        "Product": "theobald-server-rs",
+        "Component": "General",
+        "Message": "Fixed multiple issues when handling invalid or unknown config version."
+      }
+    ]
+  },
+  {
     "Version": "2025.4.7.68",
     "LegacyReleaseDate": "2025-04-07 00:00:00Z",
     "Changes": [
