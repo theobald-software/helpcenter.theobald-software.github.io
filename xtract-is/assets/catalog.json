@@ -1,5 +1,16 @@
 [
   {
+    "Version": "2025.4.17.28",
+    "LegacyReleaseDate": "2025-04-17 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "General",
+        "Message": "Improved the functionality of the f1 help hotkey in all windows"
+      }
+    ]
+  },
+  {
     "Version": "2025.4.16.17",
     "LegacyReleaseDate": "2025-04-16 00:00:00Z",
     "Changes": [
