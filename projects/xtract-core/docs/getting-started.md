@@ -74,7 +74,7 @@ Follow the steps below to install the Xtract Core Windows service:
 
 1. Extract all files from the `XtractCore.zip` archive into the directory where you want to install Xtract Core.
 2. Open a command line tool with administrator rights and navigate to the installation directory.
-3. Run the following command to install the Xtract Core Windows service and to create a dedicated user for the service:
+3. Run the following command to install the Xtract Core Windows service and to create a dedicated virtual user that runs the service:
 	```terminal
 	service.exe -i --virtual-service-user 
 	```
@@ -86,6 +86,13 @@ For information on how to change the default settings of the Xtract Core service
 
 !!! note
 	To update Xtract Core replace the files in the installation directory with the new Xtract Core installation files.
+
+!!! warning
+	**Access is denied.**<br>
+	The virtual user that is created during the installation of {{ productName }} has minimal access rights.
+	If {{ productName }} is installed in a user-specific directory (e.g., `C:\Users\<username>\Documents`), the virtual user cannot access the files. 
+	To successfully run the Windows service, grant the virtual user access rights to the directory or install {{ productName }} in a system-level directory, e.g., `C:\XtractCore`.
+	
 
 ### Files in the Installation Directory
 
