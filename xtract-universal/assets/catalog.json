@@ -1,5 +1,16 @@
 [
   {
+    "Version": "2025.4.22.47",
+    "LegacyReleaseDate": "2025-04-22 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "XtractUniversal",
+        "Component": "Designer",
+        "Message": "Fixed deployment issues causing bad performance and crashes in the standalone designer."
+      }
+    ]
+  },
+  {
     "Version": "2025.4.17.30",
     "LegacyReleaseDate": "2025-04-17 00:00:00Z",
     "Changes": [
