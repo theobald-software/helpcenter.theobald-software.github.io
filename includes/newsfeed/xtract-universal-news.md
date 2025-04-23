@@ -1,16 +1,6 @@
 <div class="grid cards" markdown>
 
 
--   **:material-video: Webinar: SAP Data Integration with Microsoft Fabric Open Mirroring**
-
-    ---
-
-    [Join our webinar](https://theobald-software.com/en/webinars-en/low-cost-and-low-latency-sap-data-integration-with-microsoft-fabric-open-mirroring/) on 2025-04-17 - 11:00AM PDT to learn how to optimize your near real-time data integration with Microsoft Open Mirroring and Xtract Universal. 
-
-    ---
-
-    :material-clock-time-two-outline: 2025-04-17
-
 -   **:material-alert-decagram: Microsoft Fabric Mirroring Destination**
 
     ---
@@ -25,7 +15,7 @@
 
     ---
 
-    Find out how your usage data can help [improve our products and your user experience](https://theobald-software.com/en/xu-beyond/). For more information on how we handle your data, refer to our [privacy policy](https://theobald-software.com/en/privacy-policy/). <br>Of course, you can [opt-out](knowledge-base/deactivate-usage-analytics.md) anytime. 
+    Find out how your usage data can help [improve our products and your user experience](https://theobald-software.com/en/xu-beyond/). For more information on how we handle your data, refer to our [privacy policy](https://theobald-software.com/en/privacy-policy/#productanalytics). <br>Of course, you can [opt-out](knowledge-base/deactivate-usage-analytics.md) anytime. 
 
     ---
 
