@@ -6,8 +6,9 @@ site_url: https://helpcenter.theobald-software.com/xtract-universal/
 
 #site_author: Valerie Schipka
 site_description: >-
-  Xtract Universal is an SAP interface for databases, BI or cloud solutions. Learn how to use Xtract Universal by browsing our documentation, articles and more.
-  
+  Optimal data flow between SAP and databases, BI or cloud solutions – stable and fully automated.
+  Xtract Universal is our Swiss Army knife when it comes to SAP data integration.<br>Learn how to use Xtract Universal by browsing our user documentation, articles and more.
+
 # Repository
 # repo_name: theobald-software/helpcenter.theobald-software.github.io
 # repo_url: https://github.com/theobald-software/oh.theobald-software.github.io.git
@@ -60,13 +61,13 @@ theme:
       primary: custom
       accent: custom
       toggle:
-        icon: material/lightbulb
+        icon: material/toggle-switch-off
         name: Switch to dark mode
     - scheme: slate
       primary: custom
       accent: custom
       toggle:
-        icon: material/lightbulb-outline
+        icon: material/toggle-switch
         name: Switch to light mode
   font:
     text: Poppins
@@ -84,7 +85,7 @@ extra_css:
 extra_javascript:
   - assets/javascripts/hyperscript.min.js
   - assets/javascripts/changelog.js
-  
+
 # Plugins
 plugins:
   - redirects: #redirect URLs when renaming/moving .md files
@@ -134,7 +135,6 @@ plugins:
              cards_layout_options:
                background_color: "#98892C"
 
-  
 # Hook for Relative Links
 hooks:
   - overrides/site-urls.py

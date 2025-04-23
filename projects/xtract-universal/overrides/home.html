@@ -70,6 +70,7 @@
 
     .tx-container {
         padding-top: .0rem;
+        /* background: linear-gradient(to bottom, var(--md-primary-fg-color), #786c1f) */
         background: linear-gradient(to bottom, var(--md-primary-fg-color), #786c1f)
     }
 
@@ -82,7 +83,7 @@
     .tx-hero h1 {
         margin-bottom: 1rem;
         color: currentColor;
-        font-weight: 700
+        font-weight: 800;
     }
 
     .tx-hero__content {
@@ -92,9 +93,9 @@
 
     .tx-hero__image{
         width:15rem;
-        height:12rem;
+        height:15rem;
         order:1;
-        padding-right: 0.5rem;
+        padding-right: 0rem;
     }
 
     .tx-hero .md-button {
@@ -105,7 +106,7 @@
 
     .tx-hero .md-button--primary {
         background-color: var(--md-primary-bg-color);
-        color: hsla(280deg, 37%, 48%, 1);
+        color: var(--md-primary-fg-color);
         border-color: var(--md-primary-bg-color)
     }
 
@@ -183,11 +184,11 @@
         .tx-hero {
             display: flex;
             align-items: left;
-            justify-content: left;
+            justify-content: space-between;
         }
 
         .tx-hero__content {
-            max-width: 22rem;
+            max-width: 60%;
             margin-top: 2.5rem;
             margin-bottom: 2.5rem;
             margin-left: 1.0rem;
@@ -235,36 +236,23 @@
         padding-bottom: 10px;
     }
 
-    .logos {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-flow: row wrap;
-        margin: 0 auto;
-    }
+.blinking-cursor {
+  display: inline-block;
+  width: 8px; /* about the size of a character */
+  height: 1em;  /* match the line height */
+  background-color: white;
+  animation: blink 1s steps(1) infinite;
+  vertical-align: text-bottom;
+}
 
-    .logos img {
-        flex: 1 1 auto;
-        padding: 25px;
-        max-height: 130px;
-        vertical-align: middle;
-    }
-
-    .hr-logos {
-        margin-top: 0;
-        margin-bottom: 30px;
-    }
-
-    .md-footer-meta__inner {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        margin-top: 1.0rem;
-    }
-
-    .md-footer-social {
-        padding-top: 20px;
-    }
+@keyframes blink {
+  0%, 50% {
+    opacity: 1;
+  }
+  50.01%, 100% {
+    opacity: 0;
+  }
+}
 </style>
 
 <!-- Main site Entry button descriptions -->
@@ -278,16 +266,16 @@
           <!--<img src="assets/images/logos/products/XtractUniversal.png" draggable="false">-->
         </div>
         <div class="tx-hero__content">
-          <h1>Xtract Universal</h1>
+          <h1>&lt;We make difficult easy <span class="blinking-cursor"></span>&gt;</h1>
           <p> {{ config.site_description }}</p>
-          <!-- 
-          <a href="{{ page.next_page.url | url }}" title="{{ page.next_page.title | striptags }}" class="md-button md-button--primary">
-            Get started
+          
+          <a href="getting-started/" title="Go to Getting Started" class="md-button md-button--primary">
+            Get Started
           </a>
-          <a href="{{ config.repo_url }}" title="{{ lang.t('source.link.title') }}" class="md-button">
-            Go to GitHub
+          <a href="https://portal.theobald-software.com/" title="Open the Theobald Software Customer Portal" class="md-button">
+            Get the latest Version
           </a>
-        -->
+        
         </div>
       </div>
     </div>

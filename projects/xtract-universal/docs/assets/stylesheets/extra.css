@@ -1,4 +1,5 @@
 :root {
+	
   --md-primary-fg-color:        #98892C;
   --md-primary-fg-color--light: #CCB63B;
   --md-primary-fg-color--dark:  #786c1f;
@@ -149,6 +150,11 @@
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
+  color: black;
+}
+
+.modal-content h1 {
+	color: black;
 }
 
 .close {
@@ -181,6 +187,7 @@
 
 }
 
+
 @keyframes gradientAnimation {
   0% {
     background-position: 200% 0;
@@ -211,3 +218,4 @@
 .do-not-display {
   display: none;
 }
+
