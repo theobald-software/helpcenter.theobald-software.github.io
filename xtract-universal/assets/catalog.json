@@ -1,5 +1,16 @@
 [
   {
+    "Version": "2025.4.23.65",
+    "LegacyReleaseDate": "2025-04-23 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Server",
+        "Component": "General",
+        "Message": "Fix for failing extractions for some SAP systems."
+      }
+    ]
+  },
+  {
     "Version": "2025.4.22.47",
     "LegacyReleaseDate": "2025-04-22 00:00:00Z",
     "Changes": [
