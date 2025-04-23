@@ -50,6 +50,8 @@ Internal Changelogs:
 
 [:material-sign-direction: __Roadmap__](roadmap/index.md)
 
+[:fontawesome-solid-diagram-project: __BPMN Diagrams__](bpmn/index.md)
+
 [:material-file-document-edit-outline: __Drafts__](drafts/index.md)
 
 [:material-file-document-edit-outline: __Draft: OData__](draft-odata/sap-connection/index.md)

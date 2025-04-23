@@ -1,5 +1,84 @@
 [
   {
+    "Version": "2025.4.17.32",
+    "LegacyReleaseDate": "2025-04-17 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "General",
+        "Message": "Improved the functionality of the f1 help hotkey in all windows"
+      }
+    ]
+  },
+  {
+    "Version": "2025.4.16.26",
+    "LegacyReleaseDate": "2025-04-16 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "TableCDC",
+        "Message": "Added a validation to check if extraction's CDC Watch is in an expected state"
+      }
+    ]
+  },
+  {
+    "Version": "2025.4.14.7",
+    "LegacyReleaseDate": "2025-04-14 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "theobald-server-rs",
+        "Component": "General",
+        "Message": "Fixed multiple issues when handling invalid or unknown config version."
+      }
+    ]
+  },
+  {
+    "Version": "2025.4.7.70",
+    "LegacyReleaseDate": "2025-04-07 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Server",
+        "Component": "General",
+        "Message": "Usage Analytics: Fixed a bug where running extractions would not be included in the next collection",
+        "ReleaseNote": "* unfinished runs will be considered for the next collection\n* version number will always be the one of the installed product\n* unattended setup will write config into the correct directory"
+      }
+    ]
+  },
+  {
+    "Version": "2025.3.26.14",
+    "LegacyReleaseDate": "2025-03-26 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Server",
+        "Component": "General",
+        "Message": "Collection of usage statistics to improve user experience",
+        "ReleaseNote": "To better understand how our products are used, we now collect usage statistics. \nEnvironment statistics:\n* Information about sources and destinations\n  * the name of the source or destination\n  * the type of the source or destination\n* Information about extraction configuration \n  * the name of the extraction \n  * the name of the configured source\n  * the name of the configured destination \n  * the extraction type\n  * the names of the sap objects \nExtraction statistics:\n* the timestamp when the extraction was executed \n* the number of rows being extracted\n* the state of the extraction (successful/failure)\n* the duration of the extraction \n* the extraction, source and destination name\n* information about the sap system (deployment model, version, product name, application server, system id)\n* the license number \n\nAll possible sensitive information is transfered as hashed data and cannot be reverted.\nThe collection and upload can be enabled/disabled in the server settings."
+      }
+    ]
+  },
+  {
+    "Version": "2025.3.20.34",
+    "LegacyReleaseDate": "2025-03-20 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "Report",
+        "Message": "Fixed transport request for systems that do no have data element \"c1\" present."
+      }
+    ]
+  },
+  {
+    "Version": "2025.3.19.69",
+    "LegacyReleaseDate": "2025-03-19 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "BWCube",
+        "Message": "MDX: Fixed an issue that prevented editing variable values (Bug introduced in 2025.2.27.6)"
+      }
+    ]
+  },
+  {
     "Version": "2025.3.13.37",
     "LegacyReleaseDate": "2025-03-13 00:00:00Z",
     "Changes": [

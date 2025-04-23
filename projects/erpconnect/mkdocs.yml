@@ -114,7 +114,7 @@ plugins:
              exclude:
                - index.md
         #enable_creation_date: true
-        - optimize
+        #- optimize
         #type: timeago
         - minify:
             minify_html: true        

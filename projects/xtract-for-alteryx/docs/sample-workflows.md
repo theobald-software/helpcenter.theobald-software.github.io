@@ -23,16 +23,18 @@ hide:
 }
 </style>
 
-!!! note
-	![example-workflow](assets/images/documentation/introduction/xfa/example-workflow.png){ width="40%" align=right }
+<hr>
 
-	How to get started with Theobald Software sample workflows:
+How to get started:
 
-	1. Download a sample workflow.
-	2. Open the workflow in the Alterx Designer.
-	2. Assign a valid [SAP Connection](documentation/sap-connection/index.md) to all Xtract components in the workflow.
-	3. Read the intro section that explains the workflow.
-	4. Start using the workflow or start editing until the workflow suits your requirements.
+<div class="workflow" markdown>
+
+1. Download one of the sample workflows.
+2. Open the workflow in your Alterx Designer.
+3. Assign a valid [SAP Connection](documentation/sap-connection/index.md) to all Xtract components in the workflow.
+4. Start using the workflow or start editing until the workflow suits your requirements.
+
+</div>
 
 <!---
 | Category | Description |
@@ -45,6 +47,8 @@ hide:
 | [:component-report: Xtract Report](#xtract-report) | Workflows that extract data from SAP ABAP Reports |
 | [:component-table: Xtract Table](#xtract-table) | Workflows that extract data from SPA table and Views |
 -->
+
+<hr>
 
 ### :simple-sap: SAP Migration Scenarios
 

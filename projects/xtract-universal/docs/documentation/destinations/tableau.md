@@ -40,7 +40,11 @@ Option to upload the extracted file (as a data source) to Tableau Server or Tabl
 Option to remove the local file after a successful upload.
 
 #### Host
-Enter the IP address or domain name of the remote server, starting with `http://` or `https://`.
+Enter the IP address or domain name of the remote server, starting with `http://` or `https://`. Examples:
+- `https://my-site.tableau.com` 
+- `https://my-site.us-west-2.tableau.com`
+- `http://192.168.1.1`
+- `https://us-west-2b.online.tableau.com` (for Tableau Cloud)
 
 #### PAT name
 Enter the name of your [Personal Access Token (PAT)](https://help.tableau.com/current/api/rest_api/en-us/REST/rest_api_concepts_auth.htm#make-a-sign-in-request-with-a-personal-access-token).<br>
@@ -50,9 +54,8 @@ To extract data to Tableau Server the site role "Server Administrator" is requir
 Enter a valid token secret that corresponds to your token name.
 
 #### Site (for Tableau Cloud)
-Enter the ID of the site for publishing your data source. 
-This field is mandatory and cannot be left blank. <br>
-Get the correct site URL from [Tableau Cloud](https://online.tableau.com/#/site/Site/workbooks).
+Enter the name of a Tableau Cloud site. 
+This field is mandatory for connecting to the Tableau Cloud. 
 
 #### [Test Connection]
 Check the database connection. 

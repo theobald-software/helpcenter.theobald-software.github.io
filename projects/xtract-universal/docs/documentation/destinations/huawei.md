@@ -25,10 +25,10 @@ The {{ page.meta.title }} destination loads data to a Huawei Cloud Object Storag
 
 #### Access Key ID (AK)
 Enter the access key of the Huawei Cloud OBS account. 
-For more information on how to create access keys, see [Huawei Cloud Support: Creating Access Keys (AK and SK)](https://support.huaweicloud.com/intl/en-us/clientogw-obs/obs_03_0405.html)
+For more information on how to create access keys, see [Huawei Cloud Support: Managing Access Keys (AK and SK)](https://support.huaweicloud.com/intl/en-us/usermanual-iam/iam_02_0003.html).
  
 #### Secret Access Key ID (SK)
-Enter the secret access key of the Huawei Cloud OBS account. For more information on how to create access keys, see [Huawei Cloud Support: Creating Access Keys (AK and SK)](https://support.huaweicloud.com/intl/en-us/clientogw-obs/obs_03_0405.html)
+Enter the secret access key of the Huawei Cloud OBS account. For more information on how to create access keys, see [Huawei Cloud Support: Managing Access Keys (AK and SK)](https://support.huaweicloud.com/intl/en-us/usermanual-iam/iam_02_0003.html).
 
 #### Region
 Select the region of the data storage.

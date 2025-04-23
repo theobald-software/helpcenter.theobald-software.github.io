@@ -23,7 +23,7 @@ Enter the name or IP of the DB2 server and the port number.
 Enter the user ID and password of the database user.
 
 #### Schema
-Enter the schema of the database.
+Enter the schema name of the database.
   
 #### Test Connection
 Checks the database connection.

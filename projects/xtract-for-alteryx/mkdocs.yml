@@ -119,7 +119,7 @@ plugins:
                - index.md
         #enable_creation_date: true
         #type: timeago
-         - optimize
+         #- optimize
          - minify:
              minify_html: true
          - social:

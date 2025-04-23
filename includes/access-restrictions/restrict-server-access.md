@@ -15,7 +15,7 @@ Windows AD credentials or credentials of a custom user must be submitted when ru
 
 Access restrictions require users to access the web server through an https connection (TLS encryption). 
 This requires the installation of an X.509 certificate.
-If the certificate is not listed in the Windows certificate store, [install the X.509 certificate](install-x.509-certificate.md/#create-the-x509-certificate).
+If the certificate is not listed in the Windows certificate store, [install the X.509 certificate](install-x.509-certificate.md/#create-and-import-the-x509-certificate).
 
 1. Open **Server > Settings** from the main window of the Designer.<br>
 ![security-manage-users](../../assets/images/documentation/access-restriction/server-settings_manage.png){:class="img-responsive"}

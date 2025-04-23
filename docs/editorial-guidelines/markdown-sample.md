@@ -673,7 +673,31 @@ Downside: broken links do not cause errors or warnings when building the project
 		- Some item.
 		
 	</div>
+	
+=== "Linear Workflows"
 
+	``` markdown
+	<div class="workflow" markdown>
+
+	1. First item.
+	2. Second item.
+	3. Third item.
+	4. Fourth item.
+
+	</div>
+    ```
+
+    <div class="result" markdown>
+	<div class="workflow" markdown>
+
+	1. First item.
+	2. Second item.
+	3. Third item.
+	4. Fourth item.
+
+	</div>
+	</div>
+	
 ### Keyboard Keys
 
 Keyboard keys can be styled.

@@ -43,6 +43,7 @@ jobs:
       - run: pip install git+https://github.com/Andre601/mkdocs-pagenav-generator
       - run: pip install mkdocs-encryptcontent-plugin
       - run: pip install mkdocs-git-revision-date-localized-plugin
+      - run: pip install mkdocs-bpmn
       - run: pip install mkdocs-exclude-unused-files
       - run: pip install mkdocs-macros-plugin
       - run: pip install mkdocs-awesome-pages-plugin
@@ -54,7 +55,7 @@ jobs:
       - run: pip install mkdocs-apicall-plugin
       - run: pip install mkdocs-pdf
       - run: pip install mkdocs-render-swagger-plugin
-      - run: pip install mkdocs-swagger-ui-tag
+      - run: pip install mkdocs-swagger-ui-tag==0.6.11
       - run: pip install mkdocs-redoc-tag
       - run: mkdocs gh-deploy --force
 env:

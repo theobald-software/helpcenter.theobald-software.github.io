@@ -1,15 +1,25 @@
 <div class="grid cards" markdown>
 
 
--   **:material-video: Webinar: Stay SAP ODP-compliant with OData & CDC**
+-   **:material-alert-decagram: Microsoft Fabric Mirroring Destination**
 
     ---
 
-    [Join our webinar](https://theobald-software.com/en/2025-en/adhere-to-new-sap-guidelines-using-theobald-softwares-odp-with-odata-and-change-data-capturing-features/) on 2025-03-27 - 11:00AM PDT to learn how to handle the SAP note 3255746. You will also learn how to replace your existing ODP extractions with other extraction types.
+    Synch your SAP data in near real-time with Microsoft Fabric using our new [Microsoft Fabric Mirroring destination](documentation/destinations/microsoft-fabric-mirroring.md). For more information about Mirroring and upcoming webinars, refer to our [website](https://theobald-software.com/en/fabric-mirroring/).
 
     ---
 
-    :material-clock-time-two-outline: 2025-03-27
+    :material-clock-time-two-outline: 2025-03-26
+
+-   **:material-alert-decagram: Usage Analytics**
+
+    ---
+
+    Find out how your usage data can help [improve our products and your user experience](https://theobald-software.com/en/xu-beyond/). For more information on how we handle your data, refer to our [privacy policy](https://theobald-software.com/en/privacy-policy/#productanalytics). <br>Of course, you can [opt-out](knowledge-base/deactivate-usage-analytics.md) anytime. 
+
+    ---
+
+    :material-clock-time-two-outline: 2025-03-25
 
 -   **:material-alert-decagram: OData Connectivity Added (Beta)**
 
