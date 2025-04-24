@@ -1,5 +1,27 @@
 [
   {
+    "Version": "2025.4.23.66",
+    "LegacyReleaseDate": "2025-04-23 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Server",
+        "Component": "General",
+        "Message": "Fix for failing extractions for some SAP systems."
+      }
+    ]
+  },
+  {
+    "Version": "2025.4.23.58",
+    "LegacyReleaseDate": "2025-04-23 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "BoardConnector",
+        "Component": "General",
+        "Message": "Fixed a bug where the service would not start after a fresh installation due to a file name mismatch."
+      }
+    ]
+  },
+  {
     "Version": "2025.4.17.32",
     "LegacyReleaseDate": "2025-04-17 00:00:00Z",
     "Changes": [
