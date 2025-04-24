@@ -43,7 +43,7 @@ Follow the steps below to add a new destination to {{ productName }}:
 A list of connection details opens.
 5. Fill out the destination details to connect to the destination.<br>
 Destination details vary depending on the destination type.
-For more information about destination details, select your destination: <select name="destinationlist" id="destination" onChange="getSelectedValueDetails();" style="font-family:'Poppins'; font-size:16px; padding-top:3px; padding-bottom:3px;">
+For more information about destination details, select your destination: <select name="destinationlist" id="destination" onChange="getSelectedValueDetails();" style="font-family:'Poppins'; font-size:16px; border-radius: 0.5rem; padding-top:3px; padding-bottom:3px;">
     <option value=" " disabled selected>Select a destination</option>
 	<option value="alteryx">Alteryx</option>
 	<option value="amazon-aws-s3">Amazon S3</option>
@@ -104,7 +104,7 @@ Follow the steps below to assign a destination to an extraction:
 ![assign-destination](assets/images/documentation/destinations/assign-destination.png){:class="img-responsive"}
 4. Optional: change the destination settings.<br>
 Destination settings are specific to the selected extraction and vary depending on the destination type.
-For more information about destination settings, select your destination: <select id="destinationsettings" onChange="getSelectedValueSettings();" style="font-family:'Poppins'; font-size:16px; padding-top:3px; padding-bottom:3px;">
+For more information about destination settings, select your destination: <select id="destinationsettings" onChange="getSelectedValueSettings();" style="font-family:'Poppins'; font-size:16px; border-radius: 0.5rem; padding-top:3px; padding-bottom:3px;">
     <option value=" " disabled selected>Select a destination</option>
 	<option value="alteryx">Alteryx</option>
 	<option value="amazon-aws-s3">Amazon S3</option>

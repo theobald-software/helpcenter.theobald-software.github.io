@@ -10,6 +10,8 @@
 {% block extrahead %}
 
   <link rel="stylesheet" href="{{ 'assets/stylesheets/custom.00c04c02.min.css' | url }}">
+  <link rel="stylesheet" href="{{ 'assets/stylesheets/round-edges.css' | url }}">
+  <link rel="stylesheet" href="{{ 'assets/stylesheets/home.css' | url }}">
 
 <script type="application/ld+json">
     {
@@ -57,203 +59,6 @@
 {% block tabs %}
   
 {{ super() }}
-<style>
-
-    .md-main {
-        flex-grow: 0
-    }
-
-    .md-main__inner {
-        display: flex;
-        height: 100%;
-    }
-
-    .tx-container {
-        padding-top: .0rem;
-        /* background: linear-gradient(to bottom, var(--md-primary-fg-color), #786c1f) */
-        background: linear-gradient(to bottom, var(--md-primary-fg-color), #786c1f)
-    }
-
-    .tx-hero {
-        margin: 30px 0rem;
-        color: var(--md-primary-bg-color);
-        justify-content: space-between;
-    }
-
-    .tx-hero h1 {
-        margin-bottom: 1rem;
-        color: currentColor;
-        font-weight: 800;
-    }
-
-    .tx-hero__content {
-        padding-bottom: 1rem;
-        margin: 0 auto;
-    }
-
-    .tx-hero__image{
-        width:15rem;
-        height:15rem;
-        order:1;
-        padding-right: 0rem;
-    }
-
-    .tx-hero .md-button {
-        margin-top: .5rem;
-        margin-right: .5rem;
-        color: var(--md-primary-bg-color)
-    }
-
-    .tx-hero .md-button--primary {
-        background-color: var(--md-primary-bg-color);
-        color: var(--md-primary-fg-color);
-        border-color: var(--md-primary-bg-color)
-    }
-
-    .tx-hero .md-button:focus,
-    .tx-hero .md-button:hover {
-        background-color: var(--md-accent-fg-color);
-        color: var(--md-default-bg-color);
-        border-color: var(--md-accent-fg-color)
-    }
-
-    .feature-item h2 svg {
-        height: 30px;
-        float: left;
-        margin-right: 10px;
-        transform: translateY(10%);
-    }
-
-    .top-hr {
-        margin-top: 42px;
-    }
-
-    .feature-item {
-        font-family: 'Lato', sans-serif;
-        font-weight: 300;
-        box-sizing: border-box;
-        padding: 0 15px;
-        word-break: break-word
-    }
-
-    .feature-item h2 {
-        color: #333;
-        font-weight: 300;
-        font-size: 25px;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        line-height: normal;
-        margin-top: 20px;
-        margin-bottom: 10px;
-        font-family: inherit;
-    }
-
-    .feature-item p {
-        font-size: 16px;
-        line-height: 1.8em;
-        text-rendering: optimizeLegibility;
-        -webkit-font-smoothing: antialiased;
-        color: #111;
-        margin: 0 0 10px;
-        display: block;
-    }
-
-    @media screen and (max-width:30em) {
-        .tx-hero h1 {
-            font-size: 1.4rem
-        }
-        
-        .tx-hero__image{
-            display: none
-        }
-    }
-
-    @media screen and (max-width:60em) {
-
-        .tx-hero__image{
-            display: none
-        }
-    }
-
-    @media screen and (min-width:60em) {
-        .md-sidebar--secondary {
-            display: none
-        }
-
-        .tx-hero {
-            display: flex;
-            align-items: left;
-            justify-content: space-between;
-        }
-
-        .tx-hero__content {
-            max-width: 60%;
-            margin-top: 2.5rem;
-            margin-bottom: 2.5rem;
-            margin-left: 1.0rem;
-            margin-right: 4.0rem;
-            align-items: left;
-        }
-    }
-
-    @media screen and (min-width:76.25em) {
-        .md-sidebar--primary {
-            display: none
-        }
-
-        .top-hr {
-            width: 100%;
-            display: flex;
-            max-width: 61rem;
-            margin-right: auto;
-            margin-left: auto;
-            padding: 0 .2rem;
-        }
-
-        .feature-item {
-            flex: 1;
-            min-width: 0;
-        }
-
-        .feature-item:hover {
-            background-color: #526cfe47;
-            border-radius: 3px;
-        }
-    }
-
-
-    .text-center {
-        text-align: center;
-        padding-right: 15px;
-        padding-left: 15px;
-        margin-right: auto;
-        margin-left: auto;
-        margin-top: 15px;
-        font-family: 'Lato', sans-serif;
-        font-size: 23px;
-        font-weight: 300;
-        padding-bottom: 10px;
-    }
-
-.blinking-cursor {
-  display: inline-block;
-  width: 8px; /* about the size of a character */
-  height: 1em;  /* match the line height */
-  background-color: white;
-  animation: blink 1s steps(1) infinite;
-  vertical-align: text-bottom;
-}
-
-@keyframes blink {
-  0%, 50% {
-    opacity: 1;
-  }
-  50.01%, 100% {
-    opacity: 0;
-  }
-}
-</style>
 
 <!-- Main site Entry button descriptions -->
 <section class="tx-container">
@@ -266,7 +71,7 @@
           <!--<img src="assets/images/logos/products/XtractUniversal.png" draggable="false">-->
         </div>
         <div class="tx-hero__content">
-          <h1>&lt;We make difficult easy <span class="blinking-cursor"></span>&gt;</h1>
+          <h1>Connect. Integrate. Simplify.</h1>
           <p> {{ config.site_description }}</p>
           
           <a href="getting-started/" title="Go to Getting Started" class="md-button md-button--primary">

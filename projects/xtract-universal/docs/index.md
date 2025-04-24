@@ -15,46 +15,7 @@ hide:
 </div>
 -->
 
-<style>
-.animated-separator {
-  position: relative;
-  width: 100%;
-  max-height: 20px;
-  height: 8px;
-  background-color: #e0e0e0;
-  overflow: hidden;
-  border-radius: 10px;
-  margin: 20px 0;
-}
-
-.animated-separator::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  height: 100%;
-  background: linear-gradient(to right, #98892C, #786c1f);
-  animation: expandCollapsePause 4s ease-in-out infinite;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 0%;
-  border-radius: 10px;
-}
-
-@keyframes expandCollapsePause {
-  0% {
-    width: 0%;
-  }
-  50% {
-    width: 100%;
-  }
-  100% {
-    width: 0%;
-  }
-}
-
-</style>
-
-### Latest News
+## Latest News
 
 
 <div class="grid cards" markdown>
@@ -68,8 +29,7 @@ hide:
 
 <div class="animated-separator"></div>
 
-
-### Additional Resources
+## Resources
 
 ::cards:: cols=3
   
