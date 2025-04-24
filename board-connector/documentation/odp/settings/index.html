@@ -5437,14 +5437,9 @@
 <h3 id="extraction-settings">Extraction Settings<a class="headerlink" data-preview="" href="#extraction-settings" title="Permanent link"></a></h3>
 <p><img alt="ODP Advanced Settings" class="img-responsive" src="../../../assets/images/documentation/components/odp/extraction-settings.png" /></p>
 <h4 id="package-size">Package Size<a class="headerlink" data-preview="" href="#package-size" title="Permanent link"></a></h4>
-<p>The extracted data is split into packages of the defined size. The default value is 50000 lines.<br>
-A package size between 20000 and 50000 is advisable for large amounts of data. 0 means no packaging. 
-Not using packaging can lead to an RFC timeout for large data extractions.</p>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p><strong>RFC_ERROR_SYSTEM_FAILURE - No more storage space available for extending an internal table</strong><br>
-To avoid a memory overflow on the SAP source system and to avoid huge overheads, choose a package size that suits your memory capacity.</p>
-</div>
+<p>The extracted data is split into packages of the defined size. 
+The default package size is 14400000 bytes.
+When the package size is set to 0, SAP uses the default ODP packaging size.</p>
 <p>Make sure that your SAP version includes the necessary notes, see <a data-preview="" href="../#prerequisites">Prerequisites</a>. <br></p>
 <h4 id="adjust-currency-decimals">Adjust Currency Decimals<a class="headerlink" data-preview="" href="#adjust-currency-decimals" title="Permanent link"></a></h4>
 <p>The default number of decimal places for a currency in the SAP database is 2 decimals.
@@ -5498,7 +5493,7 @@ https://github.com/squidfunk/mkdocs-material/blob/master/src/partials/source-fil
     <!-- mkdocs-git-revision-date-localized-plugin -->
     
     Last update:
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="July 4, 2024 08:25:44">July 4, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="April 24, 2025 08:01:45">April 24, 2025</span>
     
 
     <!-- mkdocs-git-revision-date-plugin-->
