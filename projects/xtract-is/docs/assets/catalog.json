@@ -1,5 +1,16 @@
 [
   {
+    "Version": "2025.4.25.16",
+    "LegacyReleaseDate": "2025-04-25 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "TableCDC",
+        "Message": "Fixed a bug which miscounted the entries from the log table due to uncommitted transactions. Requires update of /THEO/CDC_ECC."
+      }
+    ]
+  },
+  {
     "Version": "2025.4.17.28",
     "LegacyReleaseDate": "2025-04-17 00:00:00Z",
     "Changes": [
