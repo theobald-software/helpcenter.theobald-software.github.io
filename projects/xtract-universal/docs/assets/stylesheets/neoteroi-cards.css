@@ -61,7 +61,6 @@
 }
 
 .nt-card {
-  padding: 10px;
   margin-bottom: 0.5rem;
   border-radius: 0.5rem;
 }
@@ -97,6 +96,7 @@
 
 .nt-card-icon {
   text-align: center;
+  padding-top: 5px;
   border-radius: 2px;
   background-position: center top;
   background-size: cover;
@@ -110,7 +110,7 @@
 
 .nt-card .nt-card-image img {
   height: 105px;
-  margin-top: 5px;
+  margin-top: 15px;
 }
 
 .nt-card a:hover,

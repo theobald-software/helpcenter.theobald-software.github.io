@@ -148,7 +148,7 @@
   width: 100%;
   max-height: 20px;
   height: 8px;
-  background-color: rgb(193, 193, 193, 0.7);
+  background-color: rgb(193, 193, 193, 0.5);
   overflow: hidden;
   border-radius: 10px;
   margin: 20px 0;
@@ -178,3 +178,70 @@
     width: 0%;
   }
 }
+
+.home-show-more p {
+  text-align: right;
+}
+
+/* home grid */
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0; /* No gap to avoid double borders */
+  padding: 20px;
+}
+
+.grid-item {
+  background-color: transparent;
+  padding: 20px;
+  text-align: center;
+  border-left: 1px solid rgba(128, 128, 128, 0.2);
+  /*box-shadow: -1px 0 4px rgba(0, 0, 0, 0.05);  subtle shadow on the left side */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Ensures content starts from the top */
+  align-items: center;
+  height: 100%; /* Ensures each grid item is flexible */
+}
+
+.grid-item:first-child {
+  border-left: none;
+  box-shadow: none;
+}
+
+.grid-item img {
+  width: 100px;
+  height: 100px; /* Fixed height to ensure all icons are uniform */
+  margin-bottom: 15px;
+}
+
+.grid-item h3 {
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 22px;
+  margin: 10px 0;
+  text-align: center;
+  color: inherit; /* Inherit color from parent */
+  flex-grow: 0; /* Prevents growing and misaligning */
+}
+
+.grid-item p {
+  font-size: inherit;
+  color: inherit; /* Inherit color from parent */
+}
+
+/* Make the whole grid item clickable */
+.grid-item a {
+  display: flex;  /* Use flex to fill the entire card */
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none; /* Remove default link styling */
+  color: inherit; /* Inherit text color */
+  height: 100%; /* Make the link fill the entire card */
+}
+
+.grid-item a:hover {
+  color: var(--md-accent-fg-color); /* Change text color on hover */
+  background-color: rgba(0, 0, 0, 0.05); /* Optional: Add a subtle background change */
+}
+
