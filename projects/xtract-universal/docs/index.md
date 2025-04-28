@@ -17,7 +17,6 @@ hide:
 
 ## Latest News
 
-
 <div class="grid cards" markdown>
 
 --8<-- "newsfeed/xtract-universal-news.md:3:33"
@@ -26,10 +25,19 @@ hide:
 
 <div class="home-show-more" markdown>[:octicons-arrow-right-16: **Show more**](news.md)</div>
 
-
+<!--
 <div class="animated-separator"></div>
+-->
 
-## Resources
+## Feedback 
+
+We are constantly striving to improve our products and would love to get your feedback. <br>
+For leaving feedback or feature requests, we offer the following options:
+
+:material-email: Fill out our feedback form. The feedback form is very straight-to-the point, you can just write down what you want us to know.<br>
+:material-email: Contact us directly via email.
+
+## Additional Resources
 
 <div class="home-grid">
   <div class="grid-item">
@@ -63,7 +71,7 @@ hide:
     <p>Find out about upcoming events and Webinars. Join our live webinars and experience interactive communication or visit our SAP experts live at an event. </p>
 	</a>
   </div>
-
+	<!-- 
   <div class="grid-item">
 	<a title="Open the Feedback Form" href="https://theobald-software.typeform.com/to/CnpfiiIN">
     <img src="./assets/images/logos/feedback-form-XU.svg" alt="Feedback Form">
@@ -72,8 +80,6 @@ hide:
 	</a>
   </div>
 
-  <!-- Add more grid items here -->
+  -->
 </div>
-
-<div class="animated-separator"></div>
 
