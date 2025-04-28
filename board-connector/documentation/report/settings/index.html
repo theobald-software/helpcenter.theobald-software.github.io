@@ -5476,7 +5476,6 @@
 <p><img alt="Extraction-Settings" src="../../../assets/images/documentation/components/report/extraction-settings.png" /></p>
 <h4 id="use-background-mode">Use Background Mode<a class="headerlink" data-preview="" href="#use-background-mode" title="Permanent link"></a></h4>
 <p>If you choose this option, the ABAP report is executed as a batch job in SAP. 
-A spool is generated in SAP (transaction SP01) which is later fetched by the Report extraction type. 
 Use this option for long running reports in SAP that would run into an RFC timeout when called in dialog mode. 
 Certain reports that throw an error message when running in dialog mode can be extracted when run in background mode.</p>
 <h4 id="background-job-timeout">Background Job Timeout<a class="headerlink" data-preview="" href="#background-job-timeout" title="Permanent link"></a></h4>
@@ -5486,7 +5485,10 @@ If the SAP batch job is not finished by the specified time period, the extractio
 <h4 id="background-job-name">Background Job Name<a class="headerlink" data-preview="" href="#background-job-name" title="Permanent link"></a></h4>
 <p>The name of the background job under which the report is run in SAP.</p>
 <h4 id="spool-destination">Spool Destination<a class="headerlink" data-preview="" href="#spool-destination" title="Permanent link"></a></h4>
-<p>Enter the name of the spool destination (printer).</p>
+<p>Enter the name of the spool destination (printer).
+If the ABAP report produces an output, a spool destination is generated.
+The spool destination defines where the output would go if printed, e.g., LP01 or LOCL. 
+You can display all spool requests in SAP using the SAP transaction SP01.</p>
 <!---
 
 ### Automatic Detection
