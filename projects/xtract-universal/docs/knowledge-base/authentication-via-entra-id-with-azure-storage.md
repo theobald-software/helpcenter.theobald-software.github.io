@@ -27,6 +27,8 @@ Follow the steps below to register a new app with your Entra ID tenant:
 7. Click **Grant admin consent**.<br>
 ![azure-app-grant-permission](../assets/images/articles/xu/azure-storage/azure-app-grant-permission.png){:class="img-responsive"}
 
+The app is now registered.
+
 ### Access Rights in Azure Storage
 
 Follow the steps below to assign access rights for the [new Azure app](#app-registration) in Azure Storage using the Storage Blob Data Contributor role:
@@ -40,6 +42,8 @@ Follow the steps below to assign access rights for the [new Azure app](#app-regi
 ![azure-storage-members](../assets/images/articles/xu/azure-storage/azure-storage-members.png){:class="img-responsive"}
 5. Click **[Next]** to continue, then click **[Review + assign]** to assign the access rights.<br>
 ![azure-storage-review+assign](../assets/images/articles/xu/azure-storage/azure-storage-review+assign.png){:class="img-responsive"}
+
+Access rights are now assigned.
 
 ### Connect to Azure Storage
 
@@ -60,3 +64,4 @@ Make sure that the user meets the following requirements:
 ![azure-auth-in-xu](../assets/images/articles/xu/azure-storage/azure-auth-in-xu.png){:class="img-responsive"}
 8. If the connection is successful, a "Connection successful" message is displayed in a pop-up window.
 
+The destination is now ready to use.
