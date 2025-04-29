@@ -148,12 +148,23 @@ The input fields in the subsection *Access key parameters* / *SAS parameters* va
 	
 	#### Connect
 	
-	Click **[Connect]** to establish a connection to the storage account. 
-	A browser window pops up, where you have to sign in using your Azure AD credentials.
-	The "Permissions requested" window lists the requested permissions, see [Knowledge Base Article: Authentication via Microsoft Entra ID](../../knowledge-base/authentication-via-entra-id-with-azure-storage.md). 
-	Click **[Accept]**. If the connection is successful, a "Connection successful" info window opens. <br>
+	Follow the steps below to authenticate {{ productName }} against Microsoft:
 
+	1. Click **[Connect]**. The window "Azure OAuth 2.0" opens.
+	2. When prompted, sign in with your Microsoft credentials. Make sure that the user meets the following requirements:
+		- The user has the 'Storage Blob Data Contributor' or 'Owner' role in Azure Storage.
+		- The user does not use Multifactor Authentication (MFA) as extractions fail when the MFA of the user expires.
+	3. After the sign in, a list of requested permissions is displayed, see [Knowledge Base Article: Authentication via Microsoft Entra ID](../../knowledge-base/authentication-via-entra-id-with-azure-storage.md). <br>
 	![xu-azure-blob-con-4](../../assets/images/documentation/destinations/azure-storage/xu-azure-blob-con_4.png){:class="img-responsive"}
+	4. Click **[Accept]** to establish a connection to the storage account.
+
+	If the connection is successful, a "Connection successful" info window opens. 
+
+	!!! warning
+		**The window "Entra ID" shows a blank screen.**<br>
+		If the window "Entra ID" shows a blank screen, the content is likely blocked by the Internet Explorer ESC (Enhanced Security Configuration) on Windows servers. <br>
+		To disable the Internet Explorer ESC, refer to the instructions in the [Microsoft Documentation: How to turn off Internet Explorer ESC on Windows servers](https://learn.microsoft.com/en-us/previous-versions/troubleshoot/browsers/security-privacy/enhanced-security-configuration-faq#how-to-turn-off-internet-explorer-esc-on-windows-servers).
+
 
 === ":octicons-person-16: SAS (Account)"
 

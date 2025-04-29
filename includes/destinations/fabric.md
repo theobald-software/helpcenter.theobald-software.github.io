@@ -16,10 +16,13 @@ Enter the Application (client) ID of the registered app.
 
 #### Authenticate using Entra ID
 
+Follow the steps below to authenticate {{ productName }} against Microsoft:
+
 1. Click **[Authenticate using Entra ID]**. The window "Entra ID" opens.
-2. When prompted, sign in with your Microsoft credentials.
+2. When prompted, sign in with your Microsoft credentials. 
+Make sure that the Microsoft user does not use Multifactor Authentication (MFA) as extractions fail when the MFA of the user expires. 
 3. After the sign in, a list of requested permissions is displayed, see [Knowledge Base Article: Authentication via Microsoft Entra ID](../../knowledge-base/authentication-via-entra-id-with-azure-storage.md). <br>
-![xu-entraID](../../assets/images/documentation/destinations/azure-storage/xu-azure-blob-con_4.png){:class="img-responsive" width="350px"}
+![xu-entraID](../../assets/images/documentation/destinations/azure-storage/xu-azure-blob-con_4.png){:class="img-responsive" }
 4. Click **[Accept]** to establish a connection to the storage account.
 
 If the connection is successful, a "Connection successful" info window opens. 

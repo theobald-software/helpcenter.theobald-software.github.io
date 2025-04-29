@@ -53,7 +53,9 @@ Follow the steps below to connect {{ productName }} to the Azure Storage destina
 ![azure-info](../assets/images/articles/xu/azure-storage/azure-info.png){:class="img-responsive"}
 5. Click **[Connect]**. The window "Azure OAuth 2.0" opens.
 6. When prompted, provide the credentials of a Microsoft service user for the OAuth connection. 
-Make sure that the service user is also assigned the 'Storage Blob Data Contributor' or 'Owner' role in Azure Storage.
+Make sure that the user meets the following requirements:
+	- The user has the 'Storage Blob Data Contributor' or 'Owner' role in Azure Storage.
+	- The user does not use Multifactor Authentication (MFA) as extractions fail when the MFA of the user expires.
 7. Click **[Accept]** to grant the permission to access data in Microsoft. <br>
 ![azure-auth-in-xu](../assets/images/articles/xu/azure-storage/azure-auth-in-xu.png){:class="img-responsive"}
 8. If the connection is successful, a "Connection successful" message is displayed in a pop-up window.
