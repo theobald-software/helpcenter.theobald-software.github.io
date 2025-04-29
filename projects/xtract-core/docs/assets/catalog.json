@@ -1,44 +1,34 @@
 [
   {
+    "Version": "2025.4.24.14",
+    "LegacyReleaseDate": "2025-04-24 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Server",
+        "Component": "General",
+        "Message": "Fixed a bug where the usage analytics tool would fill its log with large amounts of data in case of errors during the collection."
+      }
+    ]
+  },
+  {
+    "Version": "2025.4.23.65",
+    "LegacyReleaseDate": "2025-04-23 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Server",
+        "Component": "General",
+        "Message": "Fix for failing extractions for some SAP systems."
+      }
+    ]
+  },
+  {
     "Version": "2025.4.10.57",
     "LegacyReleaseDate": "2025-04-10 00:00:00Z",
-    "IsCritical": true,
     "Changes": [
       {
         "Product": "XtractCore",
         "Component": "General",
         "Message": "General availability of Xtract Core. Contact Theobald Software sales at https://theobald-software.com/en/contact/ for more information."
-      },
-      {
-        "Product": "ERPConnect",
-        "Component": "Licensing",
-        "Message": "Added JSON license file mechanism to ERPConnect"
-      },
-      {
-        "Product": "Common",
-        "Component": "General",
-        "Message": "Fix log file collisions"
-      },
-      {
-        "Product": "Setup",
-        "Component": "General",
-        "Message": "Fix arithmetic overflow error"
-      },
-      {
-        "Product": "Theobald.Extractors",
-        "Component": "Report",
-        "Message": "Fixed transport request for systems that do no have data element \"c1\" present."
-      },
-      {
-        "Product": "Theobald.Server",
-        "Component": "General",
-        "Message": "Usage Analytics: Fixed a bug where running extractions would not be included in the next collection",
-        "ReleaseNote": "* unfinished runs will be considered for the next collection\n* version number will always be the one of the installed product\n* unattended setup will write config into the correct directory"
-      },
-      {
-        "Product": "theobald-server-rs",
-        "Component": "General",
-        "Message": "Fixed multiple issues when handling invalid or unknown config version."
       }
     ]
   }
