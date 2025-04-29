@@ -32,12 +32,6 @@ For more information, see [Microsoft Documentation: Azure storage account overvi
 
 The subsection *Connection Type* offers the following methods for authenticating and authorizing access to Azure storage:
 
-- Access Key
-- Entra ID
-- Shared Access Signature (SAS)
-
-For information on advantages and disadvantages of the different authentication methods, see [Microsoft Documentation: Choosing the right authentication method](https://learn.microsoft.com/en-us/azure/storage/common/storage-explorer-security).
-
 <div class="grid cards" markdown>
 
 -   :octicons-key-16: __Access Key__
@@ -70,18 +64,9 @@ For information on advantages and disadvantages of the different authentication 
 
 </div>
 
-	
-!!! note
-	The following permissions are required when using Shared Access Signature (SAS):
-	<div class="mdx-columns" markdown>
+For information on advantages and disadvantages of the different authentication methods, see [Microsoft Documentation: Choosing the right authentication method](https://learn.microsoft.com/en-us/azure/storage/common/storage-explorer-security).
 
-	- Add
-	- Create
-	- Write
-	- Delete
-	- List
 
-	</div>
 
 <!---
 Removed according to Bharat
@@ -172,7 +157,12 @@ The input fields in the subsection *Access key parameters* / *SAS parameters* va
 	Enter your storage account name. Do not enter the full URL.
 	
 	#### SAS token
-	Enter the SAS token at the Azure Storage container level. 
+	Enter the SAS token at the Azure Storage container level. The following permissions are required when using Shared Access Signature (SAS):
+	- Add
+	- Create
+	- Write
+	- Delete
+	- List
 	
 	!!! tip
 		You can copy the SAS token from the Azure portal (**Storage accounts > [account_name] > Security + networking > Shared access signature**).
@@ -180,7 +170,7 @@ The input fields in the subsection *Access key parameters* / *SAS parameters* va
 	#### Connect
 	Click **[Connect]** to establish a connection to the storage account. 
 	If the connection is successful, you can select an existing container from the drop down list **Container**.
-
+	
 	
 === ":octicons-package-16: SAS (Container)"
 
@@ -191,13 +181,19 @@ The input fields in the subsection *Access key parameters* / *SAS parameters* va
 	Enter the name of an existing Azure storage container.
 	
 	#### SAS token
-	Enter the SAS token generated at the Azure Storage container level. 
+	Enter the SAS token generated at the Azure Storage container level. The following permissions are required when using Shared Access Signature (SAS):
+	- Add
+	- Create
+	- Write
+	- Delete
+	- List
 
 	!!! tip
 		You can copy the SAS token from the Azure portal (**Storage accounts > [account_name] > Data storage > Containers > [account_name] > Generate SAS**).
 		
 	#### Connect
 	Click **[Connect]** to establish a connection to the storage account. 
+	
 
 	
 ### Container 
