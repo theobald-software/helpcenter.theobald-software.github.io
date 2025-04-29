@@ -12,58 +12,6 @@
 }
 
 
-
-/* Target ordered lists inside workflow containers */
-.md-typeset .workflow ol {
-    counter-reset: workflow-counter;
-    list-style: none;
-    padding-left: 0;
-    position: relative;
-}
-
-/* Style each list item */
-.md-typeset .workflow ol > li {
-    counter-increment: workflow-counter;
-    position: relative;
-    padding: 0.4rem 0.4rem 0.3rem 1.5rem; /* Space for numbering */
-    margin-bottom: 0.7rem; /* Space between steps */
-    background: rgba(152, 137, 44, 0.1); /* Light background */
-    border-radius: 0px;
-    border-left: 2px solid #98892C; /* Left border */
-    margin-left: 2.5rem; /* Shift the entire text box to the right */
-}
-
-/* Custom step number */
-.md-typeset .workflow ol > li::before {
-    content: counter(workflow-counter);
-    position: absolute;
-    left: -2.0rem; /* Keep the number at the start */
-    top: 1.0rem;
-    transform: translateY(-50%);
-    width: 2rem;
-    height: 2rem;
-    background-color: #98892C; /* Step color */
-    color: white;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 0%;
-    z-index: 3; /* Ensures number is on top */
-}
-
-/* Remove the line from the last item */
-.md-typeset .workflow ol > li:last-child::after {
-    display: none;
-}
-
-/* Ensure nested lists remain as bullet points */
-.md-typeset .workflow ol > li ul {
-    list-style: disc;
-    padding-left: 1.2rem;
-}
-
-
 .md-typeset .twitter {
   color: #00acee;
 }
