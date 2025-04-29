@@ -28,7 +28,7 @@ Follow the workflow below to set up Open Mirroring with {{ productName }}:
 <div class="workflow" markdown>
 
 1. Create a mirrored database in Microsoft Fabric.
-2. [Create a Microsoft Fabric Mirroring destination](#create-a-new-microsoft-fabric-open-mirroring-destination) in {{ productName }}.
+2. [Create a Microsoft Fabric Mirroring destination](#create-a-new-microsoft-fabric-mirroring-destination) in {{ productName }}.
 3. Create a [TableCDC extraction](../table-cdc/index.md) and assign the {{ page.meta.title }} destination.
 4. [Run the extraction](../execute-and-automate/run-an-extraction.md#run-extractions-in-the-designer) to initialize the delta mechanism and optionally load the fist data to Microsoft Fabric.
 5. [Schedule the extraction](../execute-and-automate/call-via-scheduler.md) to run in an interval of your choice.

@@ -102,7 +102,7 @@ Follow the steps below to connect Power BI with Xtract Universal
 ![powerbi-XU_URL](../../assets/images/documentation/destinations/power-bi/XU_pbi_connector_XU_URL.png){:class="img-responsive"}
 
 	When prompted for *Anonymous*, *Basic* or *Windows* authentication, follow the steps as outlined in [Single Sign On and SAP authentication](#single-sign-on-and-sap-authentication).<br>
-	The "Navigator" window lists all extractions that are [assigned to a {{ page.meta.title }} destination](#assign-the-power-bi-connector-destination-to-an-extraction) in Xtract Universal. 
+	The "Navigator" window lists all extractions that are [assigned to a {{ page.meta.title }} destination](#assign-the-microsoft-power-bi-destination-to-an-extraction) in Xtract Universal. 
 4. Select an extraction from the list. The preview data shows the actual SAP column headers and preview data (real data or dummy data, depending on the extraction type).
 5. Click the **[Load]** button. This triggers an extraction in Xtract Universal and writes the extracted data to Power BI.<br>
 ![powerbi-navigator](../../assets/images/documentation/destinations/power-bi/XU_pbi_connector_navigator.png){:class="img-responsive"}

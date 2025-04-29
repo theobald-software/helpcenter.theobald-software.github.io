@@ -30,7 +30,7 @@ Follow the steps below to create a source that connects to SAP:
 	3. Enter a name for the SAP connection in the field **Name**.
 	4. Select **RFC** as the source type. <br>
 	![sap-source-general](../../assets/images/documentation/sap-connection/sap-source-general.png){:class="img-responsive"}
-	5. In the *General* tab, select a connection method and enter the [system details](settings.md#general) of your SAP system. 
+	5. In the *General* tab, select a connection method and enter the [system details](settings.md/#general) of your SAP system. 
 
 		!!! tip
 			Input values for the SAP connection can be found in the Properties of the SAP Logon Pad, alternatively request the input values from the SAP Basis team.
