@@ -1,16 +1,5 @@
 [
   {
-    "Version": "2025.4.24.14",
-    "LegacyReleaseDate": "2025-04-24 00:00:00Z",
-    "Changes": [
-      {
-        "Product": "Theobald.Server",
-        "Component": "General",
-        "Message": "Fixed a bug where the usage analytics tool would fill its log with large amounts of data in case of errors during the collection."
-      }
-    ]
-  },
-  {
     "Version": "2025.4.23.65",
     "LegacyReleaseDate": "2025-04-23 00:00:00Z",
     "Changes": [
