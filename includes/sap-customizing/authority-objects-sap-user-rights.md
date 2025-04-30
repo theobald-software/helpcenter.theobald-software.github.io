@@ -74,9 +74,10 @@ You can download the SAP profiles and upload them to your SAP system:
 The following authorization objects are required to establish a connection to SAP. 
 
 ``` title="Necessary SAP authorizations"
-S_RFC            RFC_TYPE=FUGR; RFC_NAME=SYST; ACTVT=16
-S_RFC            RFC_TYPE=FUGR; RFC_NAME=SRFC; ACTVT=16
-S_RFC            RFC_TYPE=FUGR; RFC_NAME=RFC1; ACTVT=16
+S_RFC           RFC_TYPE=FUGR; RFC_NAME=SYST; ACTVT=16
+S_RFC           RFC_TYPE=FUGR; RFC_NAME=SRFC; ACTVT=16
+S_RFC           RFC_TYPE=FUGR; RFC_NAME=RFC1; ACTVT=16
+S_RFC 			RFC_TYPE=FUGR; RFC_NAME=OCS_CRM; ACTVT=16
 ```
 
 [:material-download-circle: Download SAP profile for general authorization](site:assets/files/sap_roles/ZXTGENERAL.SAP){ .md-button .md-button--primary }
