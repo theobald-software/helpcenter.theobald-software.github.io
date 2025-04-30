@@ -20,8 +20,8 @@ tags:
 this script generates a link to the destination details of the selected destination (in step 5)
 the option in the list must be set as follows:
 	<option value="name-of-the-md-file-of-the-destination">DisplayedName</option>
-	
 -->
+
   <script>
   function getSelectedValueDetails(){
 	var selectedValueD = document.getElementById("destination").value;
@@ -41,9 +41,10 @@ Follow the steps below to add a new destination to {{ productName }}:
 3. Enter a **Name** for the destination.
 4. Select a destination type from the drop-down menu. 
 A list of connection details opens.
-5. Fill out the destination details to connect to the destination.<br>
+5. Fill out the destination details to connect to the destination.
 Destination details vary depending on the destination type.
-For more information about destination details, select your destination: <select name="destinationlist" id="destination" onChange="getSelectedValueDetails();" style="font-family:'Poppins'; font-size:16px; border-radius: 0.5rem; padding-top:3px; padding-bottom:3px;">
+For more information about destination details, select your destination: <br>
+<select class="custom-dropdown" name="destinationlist" id="destination" onChange="getSelectedValueDetails();">
     <option value=" " disabled selected>Select a destination</option>
 	<option value="alteryx">Alteryx</option>
 	<option value="amazon-aws-s3">Amazon S3</option>
@@ -82,6 +83,7 @@ The destination is now available and can be assigned to extractions.
 
 #### Assign a Destination to an Extraction
 
+
 <!---
 this script generates a link to the destination settings of the selected destination (in step 4)
 the option in the list must be set as follows:
@@ -102,9 +104,10 @@ Follow the steps below to assign a destination to an extraction:
 ![xu_designer_destination](assets/images/documentation/destinations/xu_designer_destination.png){:class="img-responsive"}
 3. In the “Destination Settings” window, select a destination from the drop down menu.<br>
 ![assign-destination](assets/images/documentation/destinations/assign-destination.png){:class="img-responsive"}
-4. Optional: change the destination settings.<br>
+4. Optional: change the destination settings.
 Destination settings are specific to the selected extraction and vary depending on the destination type.
-For more information about destination settings, select your destination: <select id="destinationsettings" onChange="getSelectedValueSettings();" style="font-family:'Poppins'; font-size:16px; border-radius: 0.5rem; padding-top:3px; padding-bottom:3px;">
+For more information about destination settings, select your destination: <br>
+<select class="custom-dropdown" id="destinationsettings" onChange="getSelectedValueSettings();">
     <option value=" " disabled selected>Select a destination</option>
 	<option value="alteryx">Alteryx</option>
 	<option value="amazon-aws-s3">Amazon S3</option>

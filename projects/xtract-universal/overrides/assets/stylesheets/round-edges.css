@@ -2,6 +2,37 @@
   --base-border-radius: 0.5rem;
 }
 
+/* Dropdown */
+.custom-dropdown {
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 0.5rem;
+    background-color: var(--md-code-bg-color);
+    margin-top: .5rem;
+    margin-right: .5rem;
+    padding: .625em 1em .625em 1em; /* more right padding for a bigger arrow */
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+	color: var(--md-default-fg-color);
+    background-image: url('data:image/svg+xml;utf8,<svg height="24" fill="grey" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 1em center;
+    background-size: 1.5em;
+}
+
+@media (prefers-color-scheme: dark) {
+  .custom-dropdown {
+    color: white; /* Arrow color changes here */
+  }
+}
+
+/* Admonitions */
+.md-typeset .admonition {
+	border-radius: var(--base-border-radius);
+}
+
 /* Tabs */
 .md-typeset .tabbed-set>input:first-child:checked~.tabbed-labels>:first-child, .md-typeset .tabbed-set>input:nth-child(10):checked~.tabbed-labels>:nth-child(10), .md-typeset .tabbed-set>input:nth-child(11):checked~.tabbed-labels>:nth-child(11), .md-typeset .tabbed-set>input:nth-child(12):checked~.tabbed-labels>:nth-child(12), .md-typeset .tabbed-set>input:nth-child(13):checked~.tabbed-labels>:nth-child(13), .md-typeset .tabbed-set>input:nth-child(14):checked~.tabbed-labels>:nth-child(14), .md-typeset .tabbed-set>input:nth-child(15):checked~.tabbed-labels>:nth-child(15), .md-typeset .tabbed-set>input:nth-child(16):checked~.tabbed-labels>:nth-child(16), .md-typeset .tabbed-set>input:nth-child(17):checked~.tabbed-labels>:nth-child(17), .md-typeset .tabbed-set>input:nth-child(18):checked~.tabbed-labels>:nth-child(18), .md-typeset .tabbed-set>input:nth-child(19):checked~.tabbed-labels>:nth-child(19), .md-typeset .tabbed-set>input:nth-child(2):checked~.tabbed-labels>:nth-child(2), .md-typeset .tabbed-set>input:nth-child(20):checked~.tabbed-labels>:nth-child(20), .md-typeset .tabbed-set>input:nth-child(3):checked~.tabbed-labels>:nth-child(3), .md-typeset .tabbed-set>input:nth-child(4):checked~.tabbed-labels>:nth-child(4), .md-typeset .tabbed-set>input:nth-child(5):checked~.tabbed-labels>:nth-child(5), .md-typeset .tabbed-set>input:nth-child(6):checked~.tabbed-labels>:nth-child(6), .md-typeset .tabbed-set>input:nth-child(7):checked~.tabbed-labels>:nth-child(7), .md-typeset .tabbed-set>input:nth-child(8):checked~.tabbed-labels>:nth-child(8), .md-typeset .tabbed-set>input:nth-child(9):checked~.tabbed-labels>:nth-child(9) {
 	background-color: var(--md-primary-fg-color);

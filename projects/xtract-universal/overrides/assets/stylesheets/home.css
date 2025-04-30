@@ -26,7 +26,6 @@
     /* background: linear-gradient(to bottom, var(--md-primary-fg-color), var(--md-primary-fg-color--dark)) */
 	background-image: url("../image/banner.png");
 	background-size: cover;
-	z-index: -1; 
 	position: relative;
 }
 
@@ -68,9 +67,9 @@
 
 .tx-hero .md-button:focus,
 .tx-hero .md-button:hover {
-    background-color: var(--md-accent-fg-color);
+    background-color: var(--md-primary-fg-color--light);
     color: var(--md-default-bg-color);
-    border-color: var(--md-accent-fg-color)
+    border-color: var(--md-primary-fg-color--light)
 }
 
 
