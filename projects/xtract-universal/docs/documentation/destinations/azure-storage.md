@@ -107,10 +107,8 @@ The input fields in the subsection *Access key parameters* / *SAS parameters* va
 	
 	#### Access key
 	Enter the access key of the Azure Storage account. 
-	
-	!!! tip
-		You can copy the storage account name and access key from the [Azure Portal](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?toc=/azure/storage/blobs/toc.json#view-access-keys-and-connection-string).<br>
-		![xu-azure-blob-con](../../assets/images/documentation/destinations/azure-storage/xu-azure-blob-con.png){:class="img-responsive"}
+	You can copy the storage account name and access key from the [Azure Portal](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?toc=/azure/storage/blobs/toc.json#view-access-keys-and-connection-string).<br>
+	![xu-azure-blob-con](../../assets/images/documentation/destinations/azure-storage/xu-azure-blob-con.png){:class="img-responsive"}
 
 	#### Connect
 	Click **[Connect]** to establish a connection to the storage account. 
@@ -126,10 +124,8 @@ The input fields in the subsection *Access key parameters* / *SAS parameters* va
 	
 	#### Client ID
 	Enter the ID of the registered app. 
-
-	!!! tip
-		You can copy the tenant ID and client ID in the [Azure portal](https://portal.azure.com/).<br>
-		![xu-azure-blob-con-3](../../assets/images/documentation/destinations/azure-storage/xu-azure-blob-con_3.png){:class="img-responsive"}
+	You can copy the tenant ID and client ID in the [Azure portal](https://portal.azure.com/).<br>
+	![xu-azure-blob-con-3](../../assets/images/documentation/destinations/azure-storage/xu-azure-blob-con_3.png){:class="img-responsive"}
 	
 	#### Connect
 	
@@ -157,15 +153,14 @@ The input fields in the subsection *Access key parameters* / *SAS parameters* va
 	Enter your storage account name. Do not enter the full URL.
 	
 	#### SAS token
-	Enter the SAS token at the Azure Storage container level. The following permissions are required when using Shared Access Signature (SAS):
+	Enter the SAS token at the Azure Storage container level. You can copy the SAS token from the Azure portal in the following menu:
+	**Storage accounts > [account_name] > Security + networking > Shared access signature**.
+	Note that the following permissions are required when using Shared Access Signature (SAS):
 	- Add
 	- Create
 	- Write
 	- Delete
 	- List
-	
-	!!! tip
-		You can copy the SAS token from the Azure portal (**Storage accounts > [account_name] > Security + networking > Shared access signature**).
 		
 	#### Connect
 	Click **[Connect]** to establish a connection to the storage account. 
@@ -181,16 +176,16 @@ The input fields in the subsection *Access key parameters* / *SAS parameters* va
 	Enter the name of an existing Azure storage container.
 	
 	#### SAS token
-	Enter the SAS token generated at the Azure Storage container level. The following permissions are required when using Shared Access Signature (SAS):
+	Enter the SAS token generated at the Azure Storage container level. You can copy the SAS token from the Azure portal in the following menu:
+	**Storage accounts > [account_name] > Data storage > Containers > [account_name] > Generate SAS**.
+	Note that the following permissions are required when using Shared Access Signature (SAS):
 	- Add
 	- Create
 	- Write
 	- Delete
 	- List
 
-	!!! tip
-		You can copy the SAS token from the Azure portal (**Storage accounts > [account_name] > Data storage > Containers > [account_name] > Generate SAS**).
-		
+	
 	#### Connect
 	Click **[Connect]** to establish a connection to the storage account. 
 	
