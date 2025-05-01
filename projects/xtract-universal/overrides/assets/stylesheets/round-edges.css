@@ -86,7 +86,7 @@
 }
 
 
-/* Change font family of filename present on top of code block. */
+/* Code Block */
 .highlight span.filename {
     border-radius: var(--base-border-radius); 
     border-bottom-left-radius: 0; 
@@ -105,6 +105,18 @@
 .md-typeset pre>code {
 	border-radius: var(--base-border-radius);	
 	scrollbar-width: auto;
+}
+
+.md-typeset pre>code:hover {
+    scrollbar-color: var(--md-code-fg-color) #0000
+}
+
+.md-typeset pre>code::-webkit-scrollbar-thumb {
+    background-color: var(--md-default-fg-color--lighter)
+}
+
+.md-typeset pre>code::-webkit-scrollbar-thumb:hover {
+    background-color: var(--md-code-fg-color)
 }
 
 
