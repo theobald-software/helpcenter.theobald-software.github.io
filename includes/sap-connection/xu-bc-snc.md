@@ -3,7 +3,7 @@
 
 Follow the steps below to set up an SAP connection that uses SNC:
 
-1. Create or open an SAP source. For more information, see [Connect to SAP](index.md#connect-to-sap).
+1. Create or open an SAP source. For more information, see [Connect to SAP](index.md).
 2. In the *General* tab, enter the system details of your SAP system.  
 
 	!!! tip

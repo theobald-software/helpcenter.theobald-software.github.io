@@ -27,7 +27,6 @@ hide:
 
 <!--
 <div class="animated-separator"></div>
--->
 
 
 ## Feedback 
@@ -37,6 +36,8 @@ For leaving feedback or feature requests, we offer the following options:
 
 :material-email: Fill out our feedback form. The feedback form is very straight-to-the point, you can just write down what you want us to know.<br>
 :material-email: Contact us directly via email.
+-->
+
 
 ## Additional Resources
 
