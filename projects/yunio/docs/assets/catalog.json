@@ -1,5 +1,43 @@
 [
   {
+    "Version": "2025.4.24.13",
+    "LegacyReleaseDate": "2025-04-24 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Server",
+        "Component": "General",
+        "Message": "Fixed a bug where the usage analytics tool would fill its log with large amounts of data in case of errors during the collection."
+      }
+    ]
+  },
+  {
+    "Version": "2025.4.23.64",
+    "LegacyReleaseDate": "2025-04-23 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "YunIO",
+        "Component": "Server",
+        "Message": "Fixed a bug where the service would not start after a fresh installation due to inconsistent version information. Please delete the config directory and run the installation again, if you encountered this issue. This only affects NEW installations."
+      },
+      {
+        "Product": "Theobald.Server",
+        "Component": "General",
+        "Message": "Fix for failing extractions for some SAP systems."
+      }
+    ]
+  },
+  {
+    "Version": "2025.4.22.71",
+    "LegacyReleaseDate": "2025-04-22 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "YunIO",
+        "Component": "Server",
+        "Message": "Fixed a bug where the AzureRelay would not be started by the service."
+      }
+    ]
+  },
+  {
     "Version": "2025.4.10.56",
     "LegacyReleaseDate": "2025-04-10 00:00:00Z",
     "Changes": [

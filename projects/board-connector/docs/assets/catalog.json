@@ -1,5 +1,49 @@
 [
   {
+    "Version": "2025.4.25.19",
+    "LegacyReleaseDate": "2025-04-25 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "TableCDC",
+        "Message": "Fixed a bug which miscounted the entries from the log table due to uncommitted transactions. Requires update of /THEO/CDC_ECC."
+      }
+    ]
+  },
+  {
+    "Version": "2025.4.24.17",
+    "LegacyReleaseDate": "2025-04-24 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Server",
+        "Component": "General",
+        "Message": "Fixed a bug where the usage analytics tool would fill its log with large amounts of data in case of errors during the collection."
+      }
+    ]
+  },
+  {
+    "Version": "2025.4.23.66",
+    "LegacyReleaseDate": "2025-04-23 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Server",
+        "Component": "General",
+        "Message": "Fix for failing extractions for some SAP systems."
+      }
+    ]
+  },
+  {
+    "Version": "2025.4.23.58",
+    "LegacyReleaseDate": "2025-04-23 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "BoardConnector",
+        "Component": "General",
+        "Message": "Fixed a bug where the service would not start after a fresh installation due to a file name mismatch."
+      }
+    ]
+  },
+  {
     "Version": "2025.4.17.32",
     "LegacyReleaseDate": "2025-04-17 00:00:00Z",
     "Changes": [
