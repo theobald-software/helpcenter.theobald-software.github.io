@@ -32,7 +32,7 @@ Need help getting started? Browse our user documentation, knowledge base article
     
 - title: Xtract for Alteryx
   icon: ./assets/images/xtract-for-alteryx.svg
-  content: Integrate your SAP data into Alteryx with this drag & drop toolbox for Alteryx.
+  content: Integrate your SAP data into Alteryx with this drag & drop toolbox for the Alteryx Designer.
   url: https://helpcenter.theobald-software.com/xtract-for-alteryx
 
 - title: Board Connector
