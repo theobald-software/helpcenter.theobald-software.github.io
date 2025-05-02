@@ -75,7 +75,6 @@ theme:
 extra_css:
   - assets/stylesheets/extra.css
   - assets/stylesheets/neoteroi-cards.css 
-  - assets/stylesheets/hyperscript.css
   - assets/stylesheets/github-permalink-style.css
   
 extra_javascript:

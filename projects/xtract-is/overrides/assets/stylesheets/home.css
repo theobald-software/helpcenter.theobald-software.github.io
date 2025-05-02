@@ -1,9 +1,10 @@
 
 /* Landing page */
+
 .md-header {
     position: static;
 }	
-
+	
 .md-main__inner {
     display: flex;
     height: 100%;

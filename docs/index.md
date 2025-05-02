@@ -8,9 +8,10 @@ hide:
 <link rel="stylesheet" href="/assets/stylesheets/no_search.css">
 
 
-# Welcome to the Theobald Software HelpCenter
+# Documentation Hub
 
-Choose your product:
+Need help getting started? Browse our user documentation, knowledge base articles, and more. Choose your product:
+<!-- Browse our HelpCenter to find answers. Select your product to continue: -->
 
 ::cards:: cols=4
 

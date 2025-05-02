@@ -8,12 +8,9 @@ hide:
 ---
 
 <!--
-<div class="full-width-background"></div>
-<div class="banner-text">
-	<h1> &lt; Welcome to {{ productName }}! &gt; </h1>
-	<p>Xtract Universal is a flexible SAP interface for databases, analytics, BI or cloud solutions. Learn how to use Xtract Universal by browsing our user documentation, knowledge base and more.</p>
-</div>
+<h1> Xtract Universal HelpCenter </h1>
 -->
+
 
 ## Latest News
 
@@ -73,15 +70,6 @@ For leaving feedback or feature requests, we offer the following options:
     <p>Find out about upcoming events and Webinars. Join our live webinars and experience interactive communication or visit our SAP experts live at an event. </p>
 	</a>
   </div>
-	<!-- 
-  <div class="grid-item">
-	<a title="Open the Feedback Form" href="https://theobald-software.typeform.com/to/CnpfiiIN">
-    <img src="./assets/images/logos/feedback-form-XU.svg" alt="Feedback Form">
-    <h3>Feedback Form</h3>
-    <p>We are constantly striving to improve our products and would love to get your feedback. Our feedback form is very straight-to-the point, you can just write down what you want us to know.</p>
-	</a>
-  </div>
 
-  -->
 </div>
 

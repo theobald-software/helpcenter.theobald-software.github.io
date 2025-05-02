@@ -213,7 +213,7 @@ del.critic {
     position: relative;
     padding: 0.4rem 0.4rem 0.3rem 1.5rem; /* Space for numbering */
     margin-bottom: 0.7rem; /* Space between steps */
-    background: rgba(152, 137, 44, 0.1); /* Light background */
+    background: rgba(0, 73, 144, 0.1); /* Light background */
     border-top-left-radius: 0px;
 	border-bottom-left-radius: 0px;
 	border-top-right-radius: var(--base-border-radius);

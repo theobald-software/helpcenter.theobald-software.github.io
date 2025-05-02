@@ -103,7 +103,7 @@ Authorizations for the underlying Queries, Cubes, InfoAreas and analysis need to
 
 === "Authorization objects"
 
-    ``` 
+    ``` title="Necessary SAP authorizations"
 	S_RFC            RFC_TYPE=FUGR; RFC_NAME=RSOB; ACTVT=16
 	S_RFC            RFC_TYPE=FUGR; RFC_NAME=RRX1; ACTVT=16
 	S_TABU_NAM       ACTVT=03; TABLE=RSRREPDIR
@@ -113,7 +113,7 @@ Authorizations for the underlying Queries, Cubes, InfoAreas and analysis need to
 {% if page.meta.product != "erpconnect" %}
 === "BICS mode"
 
-    ``` 
+    ``` title="Necessary SAP authorizations"
 	S_RFC            RFC_TYPE=FUGR;RFC_NAME=SYST;ACTVT=16;type=RF;name=RFCPING;
 	S_RFC            RFC_TYPE=FUGR; RFC_NAME=RSOBJS_RFC_INTERFACE; ACTVT=16; type=RF;name=RSOBJS_GET_NODES;
 	S_RFC            RFC_TYPE=FUGR;RFC_NAME=RSAO_CORE;ACTVT=16;type=RF;name=RSAO_BICS_SESSION_INITIALIZE
@@ -125,7 +125,7 @@ Authorizations for the underlying Queries, Cubes, InfoAreas and analysis need to
 {% endif %}
 === "Date conversion (optional)"
 
-	``` 
+	``` title="Necessary SAP authorizations"
 	S_TABU_NAM       ACTVT=03; TABLE=DD03L
 	```
 
@@ -263,20 +263,20 @@ Additional options:
 
 === "Run Z_THEO_READ_TABLE in the background"
 
-    ``` 
+    ``` title="Necessary SAP authorizations"
 	S_BTCH_ADM       BTCADMIN=Y
 	S_BTCH_JOB       JOBGROUP=*; JOBACTION=RELE
 	```
 
 === "<i>Count Rows</i> button"
 
-	``` 
+	``` title="Necessary SAP authorizations"
 	S_RFC            RFC_TYPE=FUNC; RFC_NAME=EM_GET_NUMBER_OF_ENTRIES; ACTVT=16  
 	```
 
 === "<i>Adjust currency decimals</i> setting"
 
-	``` 
+	``` title="Necessary SAP authorizations"
 	S_TABU_NAM       ACTVT=03; TABLE=TCURX
 	```
 
@@ -312,7 +312,7 @@ XXXX (stands for a placeholder) is the authorization group for the source table.
 
 === "Customizing check"
 
-	```
+	``` title="Necessary SAP authorizations"
 	S_RFC           RFC_TYPE=FUGR; RFC_NAME=SUSR; ACTVT=16  
 	S_RFC           RFC_TYPE=FUNC; RFC_NAME=RFC_GET_SYSTEM_INFO; ACTVT= 16 
 	S_ADMI_FCD      S_ADMI_FCD=NADM
@@ -324,7 +324,7 @@ XXXX (stands for a placeholder) is the authorization group for the source table.
 
 === "Initial DataSource activation"
 
-	```
+	``` title="Necessary SAP authorizations"
 	S_RFC            RFC_TYPE=FUGR; RFC_NAME=SDIFRUNTIME; ACTVT=16 
 	S_RFC            RFC_TYPE=FUGR; RFC_NAME=RSAG; ACTVT=16 
 	S_TABU_DIS       ACTVT=03; DICBERCLS=SS                                                
@@ -335,7 +335,7 @@ XXXX (stands for a placeholder) is the authorization group for the source table.
 
 === "Re-activating a DataSource"
 
-	```
+	``` title="Necessary SAP authorizations"
 	S_RFC           RFC_TYPE=FUGR; RFC_NAME=SDIFRUNTIME; ACTVT=16
 	S_TABU_DIS      ACTVT=03; DICBERCLS=SS                                 
 	S_TABU_DIS      ACTVT=03; DICBERCLS=SC                                               
@@ -344,7 +344,7 @@ XXXX (stands for a placeholder) is the authorization group for the source table.
 
 === "Processing"
 
-	``` 
+	``` title="Necessary SAP authorizations"
 	S_RFC            RFC_TYPE=FUGR; RFC_NAME=EDI1; ACTVT=16
 	S_RFC            RFC_TYPE=FUGR; RFC_NAME=BATG; ACTVT=16
 	S_RFC            RFC_TYPE=FUGR; RFC_NAME=EDIMEXT; ACTVT=16 

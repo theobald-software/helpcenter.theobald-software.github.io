@@ -20,7 +20,3 @@ In addition, a query object contains a *Fields* collection that in turn contains
 The figure below shows the object hierarchy that is provided by the Queries classes in ERPConnect.<br>
 ![SAP Query Object Model](site:assets/images/erpconnect/documentation/SAP-Query-Object-Model.png){:class="img-responsive" width="450"}
 
-****
-More information on working with the ERPConnect Queries classes is provided in the following sections:
-
- 

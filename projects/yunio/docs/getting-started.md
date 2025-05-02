@@ -65,9 +65,8 @@ The settings of the selected {{ component }} open and the service is now availab
 
 ![yunIO-service](./assets/images/yunio/getting-started/yunio-services.gif){:class="img-responsive" style="border:1px solid black" }
 
-!!! note
-	Click :yunio-edit-general: to edit the name, description and source of an existing service.<br>
-	Click :yunio-edit: to edit the {{ component }} settings of the service. <br>
+To edit the name, description and source of an existing service click :yunio-edit-general:.<br>
+To edit the {{ component }} settings of the service click :yunio-edit:.
 
 
 #### A Simple Service for Beginners
@@ -133,9 +132,10 @@ Web services created with yunIO can be integrated into all cloud applications th
 
 ### Run Services
 
-Follow the steps below to run services:
 
 === ":material-web: Testrun Services in the browser"
+
+	Follow the steps below to run services in your browser:
 
 	1. Navigate to the :yunio-nav-services: *Services* menu at the left side navigation area of the Designer.
 	2. Click :yunio-copy: under *Service* to copy the service URL of a service.
@@ -147,6 +147,8 @@ Follow the steps below to run services:
 
 
 === ":products-yunio: Testrun Services in yunIO"
+
+	Follow the steps below to run services directly in {{ productName }}:
 
 	1. Navigate to the :yunio-nav-services: *Services* menu at the left side navigation area of the Designer.
 	2. Click :yunio-run: to open the *Run Service* menu of a service.

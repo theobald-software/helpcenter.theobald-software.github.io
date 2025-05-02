@@ -43,9 +43,13 @@
         </div>
       </div>
     </div>
-	
-	<a style="margin-right: 5px; color: white; border: 2px solid white; padding: 5px 10px; text-align: center; display: inline-block; cursor: pointer; border-radius: 8px; font-size: 13px; font-family: 'Helvetica';" target="_blank" rel="noopener noreferrer" href="https://theobald-software.com/en/download-trial/"><b>Start Trial</b></a>
-	
+    <div class="md-header__option">
+      <a href="https://theobald-software.com/en/download-trial/" title="Get a trial version">
+        <button class="md-header__button md-icon" aria-label="Get a trial version" style="padding-right: 0;">
+        {% include ".icons/material/download.svg" %}
+        </button>
+      </a>
+    </div>
     {% if config.theme.palette %}
       {% if not config.theme.palette is mapping %}
         {% include "partials/palette.html" %}
