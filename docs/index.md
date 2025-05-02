@@ -8,7 +8,7 @@ hide:
 <link rel="stylesheet" href="/assets/stylesheets/no_search.css">
 
 
-# Documentation Hub
+# Welcome to the Theobald Software HelpCenter
 
 Need help getting started? Browse our user documentation, knowledge base articles, and more. Choose your product:
 <!-- Browse our HelpCenter to find answers. Select your product to continue: -->
