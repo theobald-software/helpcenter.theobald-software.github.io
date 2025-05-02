@@ -71,8 +71,6 @@
     
       <link rel="stylesheet" href="../../assets/stylesheets/neoteroi-cards.css">
     
-      <link rel="stylesheet" href="../../assets/stylesheets/hyperscript.css">
-    
       <link rel="stylesheet" href="../../assets/stylesheets/github-permalink-style.css">
     
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
@@ -92,6 +90,7 @@
     
     
   <link rel="stylesheet" href="../../assets/stylesheets/custom.00c04c01.min.css">
+  <link rel="stylesheet" href="../../assets/stylesheets/round-edges.css">
 
 <script type="application/ld+json">
     {
@@ -154,7 +153,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#connect-to-sap" class="md-skip">
+        <a href="#connect-to-sap-via-rfc-protocol" class="md-skip">
           Skip to content
         </a>
       
@@ -221,9 +220,13 @@
         </div>
       </div>
     </div>
-	
-	<a style="margin-right: 5px; color: white; border: 2px solid white; padding: 5px 10px; text-align: center; display: inline-block; cursor: pointer; border-radius: 8px; font-size: 13px; font-family: 'Helvetica';" target="_blank" rel="noopener noreferrer" href="https://theobald-software.com/en/download-trial/"><b>Start Trial</b></a>
-	
+    <div class="md-header__option">
+      <a href="https://theobald-software.com/en/download-trial/" title="Get a trial version" target="_blank" rel="noopener">
+        <button class="md-header__button md-icon" aria-label="Get a trial version" style="padding-right: 0;">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 20h14v-2H5m14-9h-4V3H9v6H5l7 7 7-7Z"/></svg>
+        </button>
+      </a>
+    </div>
     
       
         <form class="md-header__option" data-md-component="palette">
@@ -5268,8 +5271,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#connect-to-sap" class="md-nav__link">
-    Connect to SAP
+  <a href="#connect-to-sap-via-rfc-protocol" class="md-nav__link">
+    Connect to SAP via RFC Protocol
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#connect-to-sap-via-odata-protocol" class="md-nav__link">
+    Connect to SAP via OData Protocol
   </a>
   
 </li>
@@ -5419,11 +5429,8 @@ Adjust the <a href="/board-connector/documentation/setup-in-sap/sap-authority-ob
 <li><a data-preview="" href="snc-authentication/">Secure Network Communication (SNC)</a> using username and password via basic authentication</li>
 <li><a data-preview="" href="sso-with-logon-ticket/">SSO with Logon-Ticket</a> using username and password via basic authentication</li>
 </ul>
-<h3 id="connect-to-sap">Connect to SAP<a class="headerlink" data-preview="" href="#connect-to-sap" title="Permanent link"></a></h3>
-<p>Follow the steps below to create a source that connects to SAP:</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Connect via RFC protocol</label><label for="__tabbed_1_2">Connect via OData protocol</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
+<h3 id="connect-to-sap-via-rfc-protocol">Connect to SAP via RFC Protocol<a class="headerlink" data-preview="" href="#connect-to-sap-via-rfc-protocol" title="Permanent link"></a></h3>
+<p>Follow the steps below to create a source that connects to SAP via RFC protocol:</p>
 <ol>
 <li>In the main window of the Designer, navigate to the menu bar and select <strong>Server &gt; Manage Sources</strong>. The window "Manage Sources" opens.  <br>
 <img alt="Create-Connection" class="img-responsive" src="../../assets/images/documentation/sap-connection/bc/open-manage-sources.png" /></li>
@@ -5469,8 +5476,9 @@ Adjust the <a href="/board-connector/documentation/setup-in-sap/sap-authority-ob
 <li>Click <strong>[Test server connection]</strong> to validate the connection between the Board Connector Server and the SAP system. </li>
 <li>Click <strong>[OK]</strong> to save the SAP source.</li>
 </ol>
-</div>
-<div class="tabbed-block">
+<p>For more information on the input options, see <a data-preview="" href="settings/#source-type-rfc">Connection Settings</a>.</p>
+<h3 id="connect-to-sap-via-odata-protocol">Connect to SAP via OData Protocol<a class="headerlink" data-preview="" href="#connect-to-sap-via-odata-protocol" title="Permanent link"></a></h3>
+<p>Follow the steps below to create a source that connects to SAP via OData protocol:</p>
 <ol>
 <li>In the main window of the Designer, navigate to the menu bar and select <strong>Server &gt; Manage Sources</strong>. The window "Manage Sources" opens.  <br>
 <img alt="Create-Connection" class="img-responsive" src="../../assets/images/documentation/sap-connection/bc/open-manage-sources.png" /></li>
@@ -5501,10 +5509,7 @@ Adjust the <a href="/board-connector/documentation/setup-in-sap/sap-authority-ob
 <li>Optional: In the <em>Access Control</em> tab, you can restrict read and write access to the SAP source, see <a data-preview="" href="../access-restrictions/restrict-designer-access/#restrict-access-to-the-designer">Access Management</a>.</li>
 <li>Click <strong>[OK]</strong> to save the SAP source.</li>
 </ol>
-</div>
-</div>
-</div>
-<p>For more information on the input options, see <a data-preview="" href="settings/">Connection Settings</a>.</p>
+<p>For more information on the input options, see <a data-preview="" href="settings/#source-type-odata">Connection Settings</a>.</p>
 <h3 id="assign-an-sap-source-to-extractions">Assign an SAP Source to Extractions<a class="headerlink" data-preview="" href="#assign-an-sap-source-to-extractions" title="Permanent link"></a></h3>
 <p>An SAP source is assigned when <a data-preview="" href="../../getting-started/#create-an-extraction">creating an extraction</a>. <br>
 Follow the steps below to change the SAP source of an existing extraction:</p>

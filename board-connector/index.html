@@ -69,8 +69,6 @@
     
       <link rel="stylesheet" href="assets/stylesheets/neoteroi-cards.css">
     
-      <link rel="stylesheet" href="assets/stylesheets/hyperscript.css">
-    
       <link rel="stylesheet" href="assets/stylesheets/github-permalink-style.css">
     
     <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
@@ -91,6 +89,8 @@
     
 
   <link rel="stylesheet" href="assets/stylesheets/custom.00c04c02.min.css">
+  <link rel="stylesheet" href="assets/stylesheets/round-edges.css">
+  <link rel="stylesheet" href="assets/stylesheets/home.css">
 
 <script type="application/ld+json">
     {
@@ -220,9 +220,13 @@
         </div>
       </div>
     </div>
-	
-	<a style="margin-right: 5px; color: white; border: 2px solid white; padding: 5px 10px; text-align: center; display: inline-block; cursor: pointer; border-radius: 8px; font-size: 13px; font-family: 'Helvetica';" target="_blank" rel="noopener noreferrer" href="https://theobald-software.com/en/download-trial/"><b>Start Trial</b></a>
-	
+    <div class="md-header__option">
+      <a href="https://theobald-software.com/en/download-trial/" title="Get a trial version" target="_blank" rel="noopener">
+        <button class="md-header__button md-icon" aria-label="Get a trial version" style="padding-right: 0;">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 20h14v-2H5m14-9h-4V3H9v6H5l7 7 7-7Z"/></svg>
+        </button>
+      </a>
+    </div>
     
       
         <form class="md-header__option" data-md-component="palette">
@@ -462,8 +466,38 @@
     <div class="md-container" data-md-component="container">
       
       
+  
+
         
       
+
+<!-- Main site Entry button descriptions -->
+<section class="tx-container">
+    <div class="md-grid md-typeset">
+      <div class="tx-hero">
+        <div class="tx-hero__image">
+            <svg width="100%" height="100%" viewBox="0 0 10 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+              <path d="M2.46,6.705c-0.01,-0.504 -0.005,-3.827 -0.005,-4.564l0.8,-0.801l0.801,0.801l0.004,3.772c0,0.042 0.006,0.083 0.018,0.123c0.036,0.115 0.123,0.21 0.234,0.257c0.045,0.019 0.091,0.029 0.14,0.032c0.367,0.014 0.736,0.014 1.104,0c0.048,-0.003 0.095,-0.013 0.139,-0.032c0.102,-0.042 0.184,-0.126 0.224,-0.229c0.016,-0.041 0.025,-0.085 0.028,-0.13c0.021,-0.527 0.021,-0.577 0,-1.104c-0.003,-0.045 -0.012,-0.089 -0.028,-0.13c-0.038,-0.096 -0.112,-0.176 -0.205,-0.221c-0.037,-0.018 -0.076,-0.029 -0.116,-0.036c-0.014,-0.002 -0.042,-0.004 -0.042,-0.004c0,0 -0.289,-0.001 -0.404,-0.001l0,-1.601l1.142,0c0.142,0.001 0.283,0.024 0.417,0.071c0.238,0.084 0.448,0.241 0.597,0.445c0.072,0.099 0.129,0.207 0.17,0.322c0.043,0.123 0.066,0.253 0.07,0.384c0.018,1.036 0.008,1.593 0,2.63c-0.002,0.136 -0.025,0.272 -0.07,0.4c-0.048,0.134 -0.118,0.259 -0.207,0.369c-0.145,0.181 -0.341,0.321 -0.56,0.398c-0.134,0.047 -0.275,0.07 -0.417,0.071c-0.871,0 -1.742,0.016 -2.613,-0.001c-0.136,-0.004 -0.271,-0.029 -0.399,-0.075c-0.142,-0.053 -0.275,-0.131 -0.389,-0.23c-0.157,-0.136 -0.279,-0.309 -0.352,-0.503c-0.051,-0.132 -0.077,-0.272 -0.081,-0.413Z" style="fill:#fff;"/>
+            </svg>
+          <!--<img src="assets/images/logos/products/XtractUniversal.png" draggable="false">-->
+        </div>
+        <div class="tx-hero__content">
+          <h1>Connect. Integrate. Simplify.</h1>
+          <p> Access your SAP data directly from Board, without an additional data warehouse.  Learn how to use Board Connector by browsing our user documentation, knowledge base and more.</p>
+          
+          <a href="getting-started/" title="Go to Getting Started" class="md-button md-button--primary">
+            Get Started
+          </a>
+          <a href="https://portal.theobald-software.com/" title="Open the Theobald Software Customer Portal" class="md-button" target="_blank" rel="noopener">
+            Get the latest Version
+          </a>
+        
+        </div>
+      </div>
+    </div>
+</section>
+
+
       <main class="md-main" data-md-component="main">
         <div class="md-main__inner md-grid">
           
@@ -5360,13 +5394,11 @@
 
 
 
-<div class="full-width-background"></div>
-<div class="banner-text">
-    <h1> &lt; Welcome to Board Connector! &gt; </h1>
-    <p>Access your SAP data directly from Board, without an additional data warehouse.  Learn how to use Board Connector by browsing our user documentation, knowledge base and more.</p>
-</div>
+<!--
+<h1> Board Connector HelpCenter </h1>
+-->
 
-<h3 id="latest-news">Latest News<a class="headerlink" href="#latest-news" title="Permanent link"></a></h3>
+<h2 id="latest-news">Latest News<a class="headerlink" href="#latest-news" title="Permanent link"></a></h2>
 <div class="grid cards">
 <ul>
 <li>
@@ -5392,16 +5424,43 @@
 </li>
 </ul>
 </div>
-<p><a href="news/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"/></svg></span> Show more</a></p>
-<p><img alt="threshold" src="assets/images/logos/DataStream_Board.png" /></p>
-<h3 id="additional-resources">Additional Resources<a class="headerlink" href="#additional-resources" title="Permanent link"></a></h3>
-<div class="nt-cards nt-grid cols-3">
-<div class="nt-card"><a href="https://theobald-software.com/en/board-connector/" target="_blank" rel="noopener"><div><div class="nt-card-icon"><img alt="step icon" class="icon" src="assets/images/logos/product-information-Board.svg" /></div><div class="nt-card-content"><p class="nt-card-title">Product Information</p><p class="nt-card-text">Visit our official Board Connector website to take a look at the advantages Board Connector offers, a list of FAQs and more.</p></div></div></a></div>
-<div class="nt-card"><a href="https://theobald-software.com/en/resources/success-stories?filter_one=default&amp;filter_two=board-connector" target="_blank" rel="noopener"><div><div class="nt-card-icon"><img alt="step icon" class="icon" src="assets/images/logos/success-stories-Board.svg" /></div><div class="nt-card-content"><p class="nt-card-title">Success Stories</p><p class="nt-card-text">Get to know real customer scenarios with Board Connector by reading one of our success stories.</p></div></div></a></div>
-<div class="nt-card"><a href="https://theobald-software.com/en/blog/" target="_blank" rel="noopener"><div><div class="nt-card-icon"><img alt="step icon" class="icon" src="assets/images/logos/blog-Board.svg" /></div><div class="nt-card-content"><p class="nt-card-title">Blog</p><p class="nt-card-text">Discover exciting articles and helpful tips about SAP data and cloud integration, SAP process automation and more.</p></div></div></a></div>
-<div class="nt-card"><a href="https://theobald-software.com/en/resources/events-and-webinars/" target="_blank" rel="noopener"><div><div class="nt-card-icon"><img alt="step icon" class="icon" src="assets/images/logos/events-webinars-Board.svg" /></div><div class="nt-card-content"><p class="nt-card-title">Events &amp; Webinars</p><p class="nt-card-text">Find out about upcoming events and Webinars. <br>Join our live webinars and experience interactive communication or visit our SAP experts live at an event.</p></div></div></a></div>
-<div class="nt-card"><a href="https://theobald-software.com/en/newsletter/" target="_blank" rel="noopener"><div><div class="nt-card-icon"><img alt="step icon" class="icon" src="assets/images/logos/technical-newsletter-Board.svg" /></div><div class="nt-card-content"><p class="nt-card-title">Technical Newsletter</p><p class="nt-card-text">Our technical newsletter informs you once a month about new features, releases, breaking changes and articles.</p></div></div></a></div>
-<div class="nt-card"><a href="https://theobald-software.typeform.com/to/CnpfiiIN" target="_blank" rel="noopener"><div><div class="nt-card-icon"><img alt="step icon" class="icon" src="assets/images/logos/feedback-form-Board.svg" /></div><div class="nt-card-content"><p class="nt-card-title">Feedback Form</p><p class="nt-card-text">We are constantly striving to improve our products and would love to get your feedback. Our feedback form is very short, just write down what you want us to know <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.456 14.494a.75.75 0 0 1 1.068.17 3.08 3.08 0 0 0 .572.492A3.381 3.381 0 0 0 12 15.72c.855 0 1.487-.283 1.904-.562a3.081 3.081 0 0 0 .572-.492l.021-.026a.75.75 0 0 1 1.197.905l-.027.034c-.013.016-.03.038-.052.063-.044.05-.105.119-.184.198a4.569 4.569 0 0 1-.695.566A4.88 4.88 0 0 1 12 17.22a4.88 4.88 0 0 1-2.736-.814 4.57 4.57 0 0 1-.695-.566 3.253 3.253 0 0 1-.236-.261c-.259-.332-.223-.824.123-1.084Z"/><path d="M12 1c6.075 0 11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12 5.925 1 12 1ZM2.5 12a9.5 9.5 0 0 0 9.5 9.5 9.5 9.5 0 0 0 9.5-9.5A9.5 9.5 0 0 0 12 2.5 9.5 9.5 0 0 0 2.5 12Z"/><path d="M9 10.75a1.25 1.25 0 1 1-2.5 0 1.25 1.25 0 0 1 2.5 0ZM16.25 12a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5Z"/></svg></span>.</p></div></div></a></div>
+<div class="home-show-more">
+<p><a href="news/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M8.22 2.97a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l2.97-2.97H3.75a.75.75 0 0 1 0-1.5h7.44L8.22 4.03a.75.75 0 0 1 0-1.06Z"/></svg></span> <strong>Show more</strong></a></p>
+</div>
+<h2 id="additional-resources">Additional Resources<a class="headerlink" href="#additional-resources" title="Permanent link"></a></h2>
+<div class="home-grid">
+  <div class="grid-item">
+    <a title="Open the Product Page" href="https://theobald-software.com/en/board-connector/" target="_blank" rel="noopener">
+        <img src="./assets/images/logos/product-information-Board.svg" alt="Product Icon">
+        <h3>Product Information</h3>
+        <p>Visit our official Xtract Universal website to learn about the advantages that Xtract Universal has to offer. You will also find a list of FAQs, contact information and more.</p>
+    </a>
+  </div>
+
+  <div class="grid-item">
+    <a title="Open Success Stories" href=" https://theobald-software.com/en/resources/success-stories?filter_one=default&filter_two=board-connector">
+    <img src="./assets/images/logos/success-stories-Board.svg" alt="Success Stories">
+    <h3>Success Stories</h3>
+    <p>Get to know real customer scenarios with Xtract Universal. Learn from our customer's journeys and get inspiration for your own data integration approach.</p>
+    </a>
+  </div>
+
+  <div class="grid-item">
+    <a title="Open the Theobald Software Blog" href="https://theobald-software.com/en/blog/" target="_blank" rel="noopener">
+    <img src="./assets/images/logos/blog-Board.svg" alt="Blog">
+    <h3>Blog Posts</h3>
+    <p>Discover exciting articles and helpful tips on the topics of SAP data and cloud integration, SAP process automation and more - and don't miss the latest news about and from Theobald Software.</p>
+    </a>
+  </div>
+
+  <div class="grid-item">
+    <a title="Open Events and Webinars" href="https://theobald-software.com/en/resources/events-and-webinars/" target="_blank" rel="noopener">
+    <img src="./assets/images/logos/events-webinars-Board.svg" alt="Events & Webinars">
+    <h3>Events & Webinars</h3>
+    <p>Find out about upcoming events and Webinars. Join our live webinars and experience interactive communication or visit our SAP experts live at an event. </p>
+    </a>
+  </div>
+
 </div>
 
 

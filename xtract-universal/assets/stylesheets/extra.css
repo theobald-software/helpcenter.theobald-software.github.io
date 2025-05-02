@@ -1,4 +1,5 @@
 :root {
+	
   --md-primary-fg-color:        #98892C;
   --md-primary-fg-color--light: #CCB63B;
   --md-primary-fg-color--dark:  #786c1f;
@@ -153,7 +154,7 @@
 }
 
 .modal-content h1 {
-  color: black;
+	color: black;
 }
 
 .close {
@@ -185,6 +186,7 @@
   background-size: 200% 100%;
 
 }
+
 
 @keyframes gradientAnimation {
   0% {

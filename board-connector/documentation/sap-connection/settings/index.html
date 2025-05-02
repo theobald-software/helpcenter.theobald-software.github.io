@@ -71,8 +71,6 @@
     
       <link rel="stylesheet" href="../../../assets/stylesheets/neoteroi-cards.css">
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/hyperscript.css">
-    
       <link rel="stylesheet" href="../../../assets/stylesheets/github-permalink-style.css">
     
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
@@ -92,6 +90,7 @@
     
     
   <link rel="stylesheet" href="../../../assets/stylesheets/custom.00c04c01.min.css">
+  <link rel="stylesheet" href="../../../assets/stylesheets/round-edges.css">
 
 <script type="application/ld+json">
     {
@@ -221,9 +220,13 @@
         </div>
       </div>
     </div>
-	
-	<a style="margin-right: 5px; color: white; border: 2px solid white; padding: 5px 10px; text-align: center; display: inline-block; cursor: pointer; border-radius: 8px; font-size: 13px; font-family: 'Helvetica';" target="_blank" rel="noopener noreferrer" href="https://theobald-software.com/en/download-trial/"><b>Start Trial</b></a>
-	
+    <div class="md-header__option">
+      <a href="https://theobald-software.com/en/download-trial/" title="Get a trial version" target="_blank" rel="noopener">
+        <button class="md-header__button md-icon" aria-label="Get a trial version" style="padding-right: 0;">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 20h14v-2H5m14-9h-4V3H9v6H5l7 7 7-7Z"/></svg>
+        </button>
+      </a>
+    </div>
     
       
         <form class="md-header__option" data-md-component="palette">
@@ -5859,7 +5862,7 @@ The RFC connectivity supports connections to single application servers, message
 <p>If this option is active, the name entered in the field <strong>User</strong> is used as the internet user alias, e.g., the communication user in the SAP Public Cloud. 
 Activate this option when connecting to an SAP cloud system using the WebSocket connection method, see <a data-preview="" href="../../../knowledge-base/access-data-in-the-sap-public-cloud/">Knowledge Base Article: Access Data in the SAP Public Cloud</a>. </p>
 <h4 id="request-sap-credentials-from-caller-when-running-extractions">Request SAP credentials from caller when running extractions<a class="headerlink" data-preview="" href="#request-sap-credentials-from-caller-when-running-extractions" title="Permanent link"></a></h4>
-<p>If this option is active, SAP credentials entered in the <strong>User</strong> and <strong>Password</strong> fields are ignored. <br>
+<p>If this option is active, SAP credentials entered in the <strong>User</strong> and <strong>Password</strong> fields are ignored.
 Provide SAP credentials via basic authentication when running an extraction. Caching the result of extractions is inactive. </p>
 </div>
 <div class="tabbed-block">
@@ -5884,27 +5887,27 @@ If this option is active, SAP credentials entered in the fields <strong>User</st
 Provide SAP credentials via basic authentication when running an extraction. </p>
 <h4 id="sso-log-in-as-caller-via-external-id">SSO - Log in as caller via External ID<a class="headerlink" data-preview="" href="#sso-log-in-as-caller-via-external-id" title="Permanent link"></a></h4>
 <p>This option activates SSO with External ID. 
-SSO with External ID uses a Personal Security Environment (PSE) to create a trust relationship between the SAP application server and the service account that runs Board Connector. <br>
+SSO with External ID uses a Personal Security Environment (PSE) to create a trust relationship between the SAP application server and the service account that runs Board Connector. 
 This allows Board Connector to impersonate any SAP user. For more information, see <a data-preview="" href="../../../knowledge-base/sso-with-external-id/">Knowledge Base Article: SSO with External ID</a>. </p>
 <h4 id="sso-impersonate-caller-via-kerberos">SSO - Impersonate caller via Kerberos<a class="headerlink" data-preview="" href="#sso-impersonate-caller-via-kerberos" title="Permanent link"></a></h4>
 <p>This option activates Kerberos SSO. 
 The Windows Active Directory user is used for authentication. 
-For this scenario “HTTPS - Restricted to AD users with Designer read access” must be selected and configured in the <a data-preview="" href="../../server/server-settings/#web-server">Server Settings</a>. <br>
+For this scenario “HTTPS - Restricted to AD users with Designer read access” must be selected and configured in the <a data-preview="" href="../../server/server-settings/#web-server">Server Settings</a>. 
 For more information, see <a data-preview="" href="../../../knowledge-base/sso-with-kerberos-snc/">Knowledge Base Article: SSO with Kerberos SNC</a>. </p>
 <h4 id="sso-enroll-certificate-on-behalf-of-caller">SSO - Enroll certificate on behalf of caller<a class="headerlink" data-preview="" href="#sso-enroll-certificate-on-behalf-of-caller" title="Permanent link"></a></h4>
 <p>This option activates Certificate SSO. 
-The Certificate SSO authentication uses Certificate Enrollment (Enroll-On-Behalf-Of) via Active Directory Certificate Services for the Windows Active Directory user that calls the extraction. <br>
+The Certificate SSO authentication uses Certificate Enrollment (Enroll-On-Behalf-Of) via Active Directory Certificate Services for the Windows Active Directory user that calls the extraction. 
 For this scenario “HTTPS - Restricted to AD users with Designer read access” must be configured in the <a data-preview="" href="../../server/server-settings/#web-server">Server Settings</a>. 
 For more information, see <a data-preview="" href="../../../knowledge-base/sso-with-client-certificates/">Knowledge Base Article: SSO with Client Certificates</a>. </p>
 </div>
 <div class="tabbed-block">
 <p><img alt="sap-source-authentication-logon-ticket" class="img-responsive" src="../../../assets/images/documentation/sap-connection/sap-source-authentication-logon-ticket.png" /></p>
 <h4 id="ticket-issuer-url">Ticket issuer URL<a class="headerlink" data-preview="" href="#ticket-issuer-url" title="Permanent link"></a></h4>
-<p>URL of an Application Server Java (AS Java) that is configured to issue logon tickets. <br>
+<p>URL of an Application Server Java (AS Java) that is configured to issue logon tickets.
 For more information, see <a href="https://help.sap.com/doc/saphelp_nw75/7.5.5/EN-US/4a/412251343f2ab1e10000000a42189c/frameset.htm" target="_blank" rel="noopener">SAP Help: Configuring the AS Java to Issue Logon Tickets</a>. </p>
 <h4 id="impersonate-caller-when-running-extractions-kerberos-sso">Impersonate caller when running extractions (Kerberos SSO)<a class="headerlink" data-preview="" href="#impersonate-caller-when-running-extractions-kerberos-sso" title="Permanent link"></a></h4>
-<p>Activate this option to open the connection in the Windows Active Directory user context of the caller. <br>
-Otherwise the connection is opened in the context of the service account running the Board Connector Windows service. <br>
+<p>Activate this option to open the connection in the Windows Active Directory user context of the caller. 
+Otherwise the connection is opened in the context of the service account running the Board Connector Windows service. 
 For more information, see <a data-preview="" href="../../../knowledge-base/sso-with-logon-ticket/">Knowledge Base Article: SSO with Logon-Ticket</a>.</p>
 </div>
 </div>
