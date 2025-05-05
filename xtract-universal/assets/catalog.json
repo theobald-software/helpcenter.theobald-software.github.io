@@ -1,5 +1,16 @@
 [
   {
+    "Version": "2025.5.5.11",
+    "LegacyReleaseDate": "2025-05-05 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "TableCDC",
+        "Message": "Updated /THEO/CDC to version 1.10. Requires update of /THEO/CDC."
+      }
+    ]
+  },
+  {
     "Version": "2025.4.25.18",
     "LegacyReleaseDate": "2025-04-25 00:00:00Z",
     "Changes": [
