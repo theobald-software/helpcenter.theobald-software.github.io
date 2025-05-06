@@ -17,14 +17,6 @@ With the Power Query M-script you can additionally directly integrate data into 
 ![Power-BI-Connector](../../assets/images/documentation/destinations/power-bi/PowerBI_Connector_Architecture_SSO.png){:class="img-responsive"}
 
 
-## Video Tutorial
-
-The following YouTube tutorial shows how to install the Power BI Custom Connector and how to use Xtract Universal with Power BI:
-
-<div class="video-wrapper">
-	<iframe src="https://www.youtube.com/embed/al1FOtJjVIM?si=EJgku3sgYMhGk1BM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
-
 ## Supported Power BI Environments
 
 Xtract Universal supports the following environments:
@@ -38,6 +30,16 @@ Xtract Universal supports the following environments:
 | Power BI Desktop       |         :white_check_mark:        |     :white_check_mark:   |
 | Power BI Service       |         :white_check_mark:       |     :white_check_mark:   |
 | Power BI Report Server |         :x:        |     :white_check_mark:   |
+
+
+## Video Tutorial
+
+The following YouTube tutorial shows how to install the Power BI Custom Connector and how to use Xtract Universal with Power BI:
+
+<div class="video-wrapper">
+	<iframe src="https://www.youtube.com/embed/al1FOtJjVIM?si=EJgku3sgYMhGk1BM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
 
 {% include "destinations/create-destination.md" %}
 To use the {{ page.meta.title }} destination, no further settings are necessary.
