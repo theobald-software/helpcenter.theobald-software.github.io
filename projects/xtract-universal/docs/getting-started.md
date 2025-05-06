@@ -17,30 +17,44 @@ tags:
 ### Write Data to a Target Environment
 
 <!---
-this script generates a link to the destination details of the selected destination (in step 5)
+this script generates a link to the destination details / destination settings of the selected destination.
 the option in the list must be set as follows:
 	<option value="name-of-the-md-file-of-the-destination">DisplayedName</option>
 -->
 
   <script>
+  function getSelectedValueSettings(){
+	var selectedValueS = document.getElementById("destinationsettings").value;
+	window.location = "../documentation/destinations/" + selectedValueS + "#destination-settings"
+	}
+	
   function getSelectedValueDetails(){
 	var selectedValueD = document.getElementById("destination").value;
 	window.location = "../documentation/destinations/" + selectedValueD + "#destination-details"
 	}
   </script> 
-  
+ 
 {{ productName }} allows you to load data to a wide range of target environments, including databases, cloud storages, BI tools, etc.
 By default, extractions use the [**http-csv**](documentation/destinations/csv-via-http.md) destination as a target environment.
 
 Follow the steps below to add a new destination to {{ productName }}:
 
-1. In the main window of the Designer, navigate to **Server > Manage Destinations**. The window “Manage Destinations” opens.<br>
-![xu-destinations](assets/images/documentation/destinations/xu_destination.png)
-2. Click **[Add]** to create a new destination. The window "Destination Details" opens.<br>
-![destinations_load_manage_shared](assets/images/documentation/destinations/destinations_load_manage_shared.png)
-3. Enter a **Name** for the destination.
-4. Select a destination type from the drop-down menu. 
-A list of connection details opens.
+
+1. In the main window of the Designer, select an extraction.
+2. Click **[:designer-destination:Destination]**. The window “Destination Settings” opens.<br>
+![xu_designer_destination](assets/images/documentation/destinations/xu_designer_destination.png){:class="img-responsive"}
+3. In the “Destination Settings” window, click **[+]** to add a new destination. <br>
+![add-destination](assets/images/documentation/destinations/add-destination.png){:class="img-responsive"}
+
+	!!! note
+		To write data to an existing destination, select the destination from the **Destination** dropdown list.
+		The following default destinations are available after installation:
+		- [http-csv](documentation/destinations/csv-via-http.md)
+		- [http-json](documentation/destinations/json-via-http.md)
+
+4. In the window "Destination Details", enter a name for the destination.
+4. Select a destination type from the drop-down menu. A list of connection details opens.<br>
+![select-destination-type](assets/images/documentation/destinations/select-destination-type.png){:class="img-responsive"}
 5. Fill out the destination details to connect to the destination.
 Destination details vary depending on the destination type.
 For more information about destination details, select your destination: <br>
@@ -77,34 +91,8 @@ For more information about destination details, select your destination: <br>
 	<option value="snowflake">Snowflake</option>
 	<option value="tableau">Tableau</option>
   </select>
-5. Click **[OK]** to confirm your input.
-
-The destination is now available and can be assigned to extractions.
-
-#### Assign a Destination to an Extraction
-
-
-<!---
-this script generates a link to the destination settings of the selected destination (in step 4)
-the option in the list must be set as follows:
-	<option value="name-of-the-md-file-of-the-destination">DisplayedName</option>
--->
-  <script>
-  function getSelectedValueSettings(){
-	var selectedValueS = document.getElementById("destinationsettings").value;
-	window.location = "../documentation/destinations/" + selectedValueS + "#destination-settings"
-	}
-  </script> 
-  
-Extractions write data to their assigned destination.
-Follow the steps below to assign a destination to an extraction:
-
-1. In the main window of the Designer, select an extraction.
-2. Click **[:designer-destination:Destination]**. The window “Destination Settings” opens.<br>
-![xu_designer_destination](assets/images/documentation/destinations/xu_designer_destination.png){:class="img-responsive"}
-3. In the “Destination Settings” window, select a destination from the drop down menu.<br>
-![assign-destination](assets/images/documentation/destinations/assign-destination.png){:class="img-responsive"}
-4. Optional: change the destination settings.
+5. Click **[OK]** to confirm your input. The window "Destination Details" closes.
+4. Optional: change the default destination settings.
 Destination settings are specific to the selected extraction and vary depending on the destination type.
 For more information about destination settings, select your destination: <br>
 <select class="custom-dropdown" id="destinationsettings" onChange="getSelectedValueSettings();">
