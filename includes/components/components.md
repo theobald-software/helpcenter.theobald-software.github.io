@@ -95,7 +95,7 @@
   
 - title: {{ ohs }}
   icon: site:assets/images/logos/components/Open-Hub.svg
-  content: Extract data from InfoSpokes and OHS destinations. <br> <br> <br><span class="keyword">BW</span> <span class="keyword">BW/4HANA</span>
+  content: Extract data from InfoSpokes and OHS destinations. <br> <br> <span class="keyword">BW</span> <span class="keyword">BW/4HANA</span>
   url: site:documentation/ohs/
   
 - title: {{ query }}
