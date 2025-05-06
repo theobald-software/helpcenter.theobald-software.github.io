@@ -4,7 +4,7 @@ description: How to use yunIO with Power Automate to create multiple items in SA
 author: Christian Tauchmann, Valerie Schipka
 ---
 
-The following article shows how to use yunIO with Microsoft Power Automate to create multiple items in SAP with one service call.<br>
+The following article shows how to use yunIO with Microsoft Power Automate to create multiple items in SAP with one service call.
 Power Automate is a cloud-based process automation service provided by Microsoft. For more Information on Power Automate see [Microsoft Power Automate Documentation](https://docs.microsoft.com/en-us/power-automate/).
 
 ### About

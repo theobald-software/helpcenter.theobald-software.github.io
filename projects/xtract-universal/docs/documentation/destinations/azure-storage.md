@@ -9,6 +9,15 @@ location: container
 This page shows how to set up and use the {{ page.meta.title }} destination. 
 The {{ page.meta.title }} destination loads data to a cloud based Azure Storage. 
 
+
+## Video Tutorial
+
+The following YouTube tutorial shows how to set up Xtract Universal with the Azure Storage destination:
+
+<div class="video-wrapper">
+	<iframe src="https://www.youtube.com/embed/Q9mF-vsFxnQ?si=ou7o3dVY-1_t11qa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
 ## Requirements
 
 The Azure Storage (Blob / Data Lake) destination supports the following Azure storage account types:
@@ -297,14 +306,6 @@ Enter a name for the generated .cdm.json file.
 Enter the name of your manifest file.
 
 -->
-
-## Tutorial
-
-The following YouTube tutorial shows how to set up Xtract Universal with the Azure Storage destination:
-
-<div class="video-wrapper">
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/Q9mF-vsFxnQ?si=ou7o3dVY-1_t11qa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
 
 ****
 
