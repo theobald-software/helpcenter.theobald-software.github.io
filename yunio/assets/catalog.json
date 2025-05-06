@@ -1,5 +1,16 @@
 [
   {
+    "Version": "2025.5.6.13",
+    "LegacyReleaseDate": "2025-05-06 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "YunIO",
+        "Component": "Designer",
+        "Message": "Replace blocking modal with status bar in SAP search dialogs"
+      }
+    ]
+  },
+  {
     "Version": "2025.4.24.13",
     "LegacyReleaseDate": "2025-04-24 00:00:00Z",
     "Changes": [
