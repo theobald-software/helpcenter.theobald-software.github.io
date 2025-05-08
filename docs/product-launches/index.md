@@ -11,7 +11,7 @@ This page contains general to-do lists for product launches.
 
 - [x] Create new git Branch for the product
 	- [x] Create/copy a project folder 
-	- [ ] Define the following (in the `mkdocs.yml` file):
+	- [x] Define the following (in the `mkdocs.yml` file):
 		- [x] product name
 		- [x] product description
 		- [x] icons 
@@ -26,7 +26,7 @@ This page contains general to-do lists for product launches.
 	- [x] Create a new product option in the SharePoint list of the newsfeed
 	- [x] Edit the Power Automate workflow to include the new product newsfeed
 	- [ ] Create at least 3 new Newsfeed texts
-- [ ] Contact dev for location of the version history (Catalog.json).
+- [x] Contact dev for location of the version history (Catalog.json).
 - [ ] Update html generation for techn. Newsletter
 - [x] Add Dashboard in Google Analytics
 - [x] Index product pages in Google Console (SEO)

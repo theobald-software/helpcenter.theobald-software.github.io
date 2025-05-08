@@ -61,13 +61,13 @@ theme:
       primary: custom
       accent: custom
       toggle:
-        icon: material/toggle-switch-off
+        icon: material/lightbulb
         name: Switch to dark mode
     - scheme: slate
       primary: custom
       accent: custom
       toggle:
-        icon: material/toggle-switch
+        icon: material/lightbulb-outline
         name: Switch to light mode
   font:
     text: Poppins
