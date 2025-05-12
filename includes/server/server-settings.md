@@ -98,14 +98,19 @@ When an older Designer version is connected to a newer Server version, you are p
 
 {% if page.meta.product == "xtract-universal" %}
 
-!!! note
-	The *Cache results* option is only available in [pull destinations](../destinations/index.md) (e.g., PBI, Qlik etc.).
+The *Cache results* option is only available in [pull destinations](../destinations/index.md) (e.g., PBI, Qlik etc.).
 
 {% endif %}
 
-| Option | Description |
-|------------|--------------|
-| **Target directory** | Sets the directory for the buffer files. The default directory is the result-cache folder in the installation directory, e.g., `{{ installationDir }}\result-cache`. |
-| **Max. cached runs** | Defines the maximum count of results of different extractions in the buffer. |
-| **Max. age (minutes)** | Defines the maximum age in minutes of an extraction in the buffer. |
+#### Target directory
+
+Sets the directory for the buffer files. The default directory is the result-cache folder in the installation directory, e.g., `{{ installationDir }}\result-cache`. 
+
+#### Max. cached runs
+
+Defines the maximum count of results of different extractions in the buffer. 
+
+#### Max. age (minutes)
+
+Defines the maximum age in minutes of an extraction in the buffer. 
 
