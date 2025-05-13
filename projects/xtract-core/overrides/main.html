@@ -10,43 +10,24 @@
 {% block extrahead %}
   <link rel="stylesheet" href="{{ 'assets/stylesheets/custom.00c04c01.min.css' | url }}">
   <link rel="stylesheet" href="{{ 'assets/stylesheets/round-edges.css' | url }}">
-
-
-<script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Article",
-      "author": [{
-          "@type": "Organization",
-          "name": "Theobald Software GmbH",
-          "url": "https://theobald-software.com/"
-      }]
-	}
-</script>
   
-   <meta property="og:url" content="{{ page.canonical_url }}">
-  {% if page and page.meta and page.meta.title %}
-    <meta property="og:title" content="{{ page.meta.title }}">
-  {% elif page and page.title and not page.is_homepage %}
-    <meta property="og:title" content="{{ page.title }} - {{ config.site_name }}">
-  {% else %}
-    <meta property="og:title" content="{{ config.site_name }}">
+  {% if page.meta %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "{{ page.title }}",
+    "description": "{{ page.meta.description | default('Technical documentation page.') }}",
+    "author": {
+      "@type": "Person",
+      "name": "Theobald Software GmbH"
+    },
+    "datePublished": "{{ git_creation_date_localized | default('2024-08-01') }}",
+    "url": "{{ page.canonical_url }}"
+  }
+  </script>
   {% endif %}
-  <meta property="og:description" content="{{ config.site_description }}">
-  <meta property="og:image:alt" content="Image alt">
 
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:site" content="@username">
-  <meta name="twitter:creator" content="@username">
-  {% if page and page.meta and page.meta.title %}
-    <meta property="twitter:title" content="{{ page.meta.title }}">
-  {% elif page and page.title and not page.is_homepage %}
-    <meta property="twitter:title" content="{{ page.title }} - {{ config.site_name }}">
-  {% else %}
-    <meta property="twitter:title" content="{{ config.site_name }}">
-  {% endif %}
-  <meta name="twitter:description" content="{{ config.site_description }}">
-  <meta name="twitter:image:alt" content="Image alt">
 
 {% endblock %}
 
