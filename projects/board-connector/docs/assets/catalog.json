@@ -1,5 +1,21 @@
 [
   {
+    "Version": "2025.5.14.29",
+    "LegacyReleaseDate": "2025-05-14 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "BoardConnector",
+        "Component": "General",
+        "Message": "Fixed a deployment issue where the DeltaQ server pool would not be installed by the setup."
+      },
+      {
+        "Product": "Theobald.Server",
+        "Component": "General",
+        "Message": "Reworked error handling during extraction cancellation. A new state for extractions is introduced: 'Cancelled'. Fixed logging for the extraction cancellation."
+      }
+    ]
+  },
+  {
     "Version": "2025.5.5.19",
     "LegacyReleaseDate": "2025-05-05 00:00:00Z",
     "Changes": [
