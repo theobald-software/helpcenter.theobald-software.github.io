@@ -1,5 +1,21 @@
 [
   {
+    "Version": "2025.5.14.26",
+    "LegacyReleaseDate": "2025-05-14 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "XtractUniversal",
+        "Component": "General",
+        "Message": "Fixed issues in the run window when cancelling extractions while using windows authentication. The HTTP API may now yield the new extraction state 'Cancelled', which means that an extraction was stopped by a user."
+      },
+      {
+        "Product": "Theobald.Server",
+        "Component": "General",
+        "Message": "Reworked error handling during extraction cancellation. A new state for extractions is introduced: 'Cancelled'. Fixed logging for the extraction cancellation."
+      }
+    ]
+  },
+  {
     "Version": "2025.5.5.11",
     "LegacyReleaseDate": "2025-05-05 00:00:00Z",
     "Changes": [
