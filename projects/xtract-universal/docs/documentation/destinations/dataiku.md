@@ -64,8 +64,8 @@ Connections that are created at the plugin level are available in all projects a
 Add a description of the connection.
 
 #### Xtract Universal Server
-Enter the name, IP or domain and port to access the server that runs Xtract Universal within the network.
-The Xtract Universal server is the hostname or IP address without the port. The port is specified in the **Customize Port** option.
+Enter the hostname or IP address of the server that runs Xtract Universal without the port. The port is specified in the **Customize Port** option.
+
 
 #### Transport Layer Security (HTTPS)
 Activate this option if [TLS is enabled in Xtract Universal](../access-restrictions/restrict-server-access.md/#activate-tls-encryption).

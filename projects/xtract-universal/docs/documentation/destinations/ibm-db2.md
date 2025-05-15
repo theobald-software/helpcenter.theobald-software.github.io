@@ -20,7 +20,7 @@ If a fixed version is available, download the fixed version of the provider from
 ![Destination-Details](../../assets/images/documentation/destinations/ibm-db/destination-details.png){:class="img-responsive"}
 
 #### Provider
-Enter the .Net provider for DB2. To install the provider refer to requirements.
+Select a .Net provider for DB2. To install a provider, refer to [requirements](#requirements).
 
 #### Host Name / Port
 Enter the name or IP of the DB2 server and the port number. 

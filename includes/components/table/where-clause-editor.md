@@ -4,7 +4,7 @@
 {% if page.meta.componentFolder != "table-cdc" %}
 The WHERE clause editor offers a toolkit for those who are not familiar with the syntax of the WHERE clause.
 {% if page.meta.product == "yunio" %}Use the toggle to switch between *Text mode* and *Editor mode*.
-![WHERE-Clause-Builder-01](../../assets/images/yunio/documentation/where-clause-editor-mode.png){:class="img-responsive"}{% else %}Click **[Editor mode]** to open the editor. 
+![WHERE-Clause-Builder-01](../../assets/images/yunio/documentation/where-clause-editor-mode.png){:class="img-responsive"}{% else %}Click **[Editor mode]** to open the editor. <br>
 ![WHERE-Clause-Builder-01](../../assets/images/documentation/components/table/where-clause-builder.png){:class="img-responsive"}
 {% endif %} {% endif %}
 

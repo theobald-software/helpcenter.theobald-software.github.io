@@ -1,5 +1,82 @@
 [
   {
+    "Version": "2025.5.5.9",
+    "LegacyReleaseDate": "2025-05-05 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "TableCDC",
+        "Message": "Updated /THEO/CDC to version 1.10. Requires update of /THEO/CDC."
+      }
+    ]
+  },
+  {
+    "Version": "2025.4.25.16",
+    "LegacyReleaseDate": "2025-04-25 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "TableCDC",
+        "Message": "Fixed a bug which miscounted the entries from the log table due to uncommitted transactions. Requires update of /THEO/CDC_ECC."
+      }
+    ]
+  },
+  {
+    "Version": "2025.4.17.28",
+    "LegacyReleaseDate": "2025-04-17 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "General",
+        "Message": "Improved the functionality of the f1 help hotkey in all windows"
+      }
+    ]
+  },
+  {
+    "Version": "2025.4.16.17",
+    "LegacyReleaseDate": "2025-04-16 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "TableCDC",
+        "Message": "Added a validation to check if extraction's CDC Watch is in an expected state"
+      }
+    ]
+  },
+  {
+    "Version": "2025.4.11.4",
+    "LegacyReleaseDate": "2025-04-11 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "XtractIS",
+        "Component": "DeltaQ",
+        "Message": "Fixed a bug when reading legacy packages to form field selectors that share the same variable or parameter within the same package (bug introduced in 7.5.0.0) "
+      }
+    ]
+  },
+  {
+    "Version": "2025.4.10.50",
+    "LegacyReleaseDate": "2025-04-10 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "XtractIS",
+        "Component": "DeltaQ",
+        "Message": "Fixed a bug that would not display parametrized field selectors correctly (bug introduced in 7.5.0.0)"
+      }
+    ]
+  },
+  {
+    "Version": "2025.3.20.24",
+    "LegacyReleaseDate": "2025-03-20 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "Report",
+        "Message": "Fixed transport request for systems that do no have data element \"c1\" present."
+      }
+    ]
+  },
+  {
     "Version": "2025.3.7.56",
     "LegacyReleaseDate": "2025-03-07 00:00:00Z",
     "Changes": [

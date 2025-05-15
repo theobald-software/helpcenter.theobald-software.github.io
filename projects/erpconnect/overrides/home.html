@@ -3,50 +3,32 @@
 -#}
 {% extends "base.html" %}
 
-{% block announce %}
-  <p>Join us on our <a href="https://communityday25.theobald-software.com/">Community Days</a> on May 6 in Stuttgart or on October 30 in Cologne! This event for partners and customers is all about networking, exciting sessions about new innovations and the direct exchange with our SAP data integration experts.<p>
-{% endblock %}
-
 {% block extrahead %}
 
   <link rel="stylesheet" href="{{ 'assets/stylesheets/custom.00c04c02.min.css' | url }}">
   <link rel="stylesheet" href="{{ 'assets/stylesheets/chatbot.css' | url }}">
+  <link rel="stylesheet" href="{{ 'assets/stylesheets/round-edges.css' | url }}">
+  <link rel="stylesheet" href="{{ 'assets/stylesheets/home.css' | url }}">
 
-<script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Article",
-      "author": [{
-          "@type": "Organization",
-          "name": "Theobald Software GmbH",
-          "url": "https://theobald-software.com/"
-      }]
-	}
-</script>
-  
-   <meta property="og:url" content="{{ page.canonical_url }}">
-  {% if page and page.meta and page.meta.title %}
-    <meta property="og:title" content="{{ page.meta.title }}">
-  {% elif page and page.title and not page.is_homepage %}
-    <meta property="og:title" content="{{ page.title }} - {{ config.site_name }}">
-  {% else %}
-    <meta property="og:title" content="{{ config.site_name }}">
+  {% if page.meta %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "ERPConnect",
+    "operatingSystem": "Windows",
+    "applicationCategory": "BusinessApplication",
+    "applicationCategory": "DeveloperApplication",
+    "url": "https://theobald-software.com/en/erpconnect/",
+    "description": "{{ page.description | default('Technical documentation of ERPConnect.') }}",
+    "author": {
+      "@type": "Organization",
+      "name": "Theobald Software",
+      "url": "https://theobald-software.com/"
+    }
+  }
+  </script>
   {% endif %}
-  <meta property="og:description" content="{{ config.site_description }}">
-  <meta property="og:image:alt" content="Image alt">
-
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:site" content="@username">
-  <meta name="twitter:creator" content="@username">
-  {% if page and page.meta and page.meta.title %}
-    <meta property="twitter:title" content="{{ page.meta.title }}">
-  {% elif page and page.title and not page.is_homepage %}
-    <meta property="twitter:title" content="{{ page.title }} - {{ config.site_name }}">
-  {% else %}
-    <meta property="twitter:title" content="{{ config.site_name }}">
-  {% endif %}
-  <meta name="twitter:description" content="{{ config.site_description }}">
-  <meta name="twitter:image:alt" content="Image alt">
 
 {% endblock %}
 
@@ -72,4 +54,37 @@
 		  <button id="close_button" onclick="closeChatbot()" title="Close Chatbot" style="position: absolute; right: 10px; color: white"><span class="twemoji" style="font-size: 20px">{% include ".icons/material/close.svg" %} </span></button> 
 	  </div>
   </div>
+{% endblock %}
+
+
+{% block tabs %}
+  
+{{ super() }}
+
+<!-- Main site Entry button descriptions -->
+<section class="tx-container">
+    <div class="md-grid md-typeset">
+      <div class="tx-hero">
+        <div class="tx-hero__image">
+            <svg width="100%" height="100%" viewBox="0 0 10 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+              <path d="M3.306,2.18c-0.142,0 -0.283,0.023 -0.417,0.071c-0.219,0.077 -0.415,0.216 -0.561,0.397c-0.088,0.11 -0.158,0.235 -0.206,0.369c-0.045,0.129 -0.068,0.264 -0.07,0.4c-0.008,1.037 -0.018,2.074 0,3.11c0.004,0.131 0.027,0.261 0.07,0.384c0.041,0.115 0.098,0.224 0.17,0.322c0.149,0.204 0.359,0.361 0.597,0.445c0.134,0.047 0.275,0.07 0.417,0.071l4.344,0l0.8,-0.801l-0.8,-0.8c-1.202,0 -2.405,0.044 -3.606,0c-0.014,-0.001 -0.028,-0.003 -0.042,-0.005c-0.04,-0.006 -0.079,-0.018 -0.116,-0.036c-0.093,-0.044 -0.167,-0.124 -0.205,-0.22c-0.016,-0.042 -0.025,-0.086 -0.028,-0.131c-0.021,-0.527 -0.021,-1.056 0,-1.584c0.003,-0.045 0.012,-0.088 0.028,-0.13c0.04,-0.102 0.122,-0.186 0.224,-0.229c0.044,-0.019 0.091,-0.029 0.139,-0.032c0.368,-0.014 0.737,-0.014 1.104,0c0.048,0.003 0.095,0.013 0.14,0.032c0.111,0.047 0.198,0.142 0.233,0.258c0.013,0.039 0.019,0.08 0.019,0.122l0,0.961l1.601,0c0,-0.504 0.009,-1.249 -0.001,-1.753c-0.004,-0.141 -0.03,-0.281 -0.081,-0.413c-0.073,-0.193 -0.195,-0.367 -0.352,-0.503c-0.114,-0.099 -0.247,-0.177 -0.389,-0.229c-0.128,-0.047 -0.263,-0.072 -0.399,-0.076c-0.871,-0.017 -1.742,0 -2.613,0Z" style="fill:#fff;"/>
+            </svg>
+          <!--<img src="assets/images/logos/products/XtractUniversal.png" draggable="false">-->
+        </div>
+        <div class="tx-hero__content">
+          <h1>Connect. Integrate. Simplify.</h1>
+          <p> {{ config.site_description }}</p>
+          
+          <a href="getting-started/" title="Go to Getting Started" class="md-button md-button--primary">
+            Get Started
+          </a>
+          <a href="https://portal.theobald-software.com/" title="Open the Theobald Software Customer Portal" class="md-button">
+            Get the latest Version
+          </a>
+        
+        </div>
+      </div>
+    </div>
+</section>
+
 {% endblock %}

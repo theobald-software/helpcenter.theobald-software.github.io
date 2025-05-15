@@ -1,8 +1,12 @@
 swagger: '2.0'
 info:
-  version: 1.0.0
+  version: V1
   title: Xtract Core
-host: localhost
+  description: >-
+    Xtract Core is a whitelabel Web API server for developing your own SAP interfaces. 
+    The Xtract Core API enables you to extract data from SAP Tables and write them to target environments.
+    For more information on how to use the API, refer to the [Getting Started with Xtract Core](https://helpcenter.theobald-software.com/xtract-core/getting-started/).
+host: localhost:1337
 basePath: /v1
 tags:
   - name: Connections
@@ -37,7 +41,7 @@ paths:
             properties:
               version:
                 type: string
-                example: "2025.3.5.54" 
+                example: 2025.3.5.54
   /connections/sap/{name}:
     post:
       tags:
@@ -207,7 +211,7 @@ paths:
                           description: >-
                             Name of the machine on which the connection was
                             created.
-                          example: 'ALICE'
+                          example: ALICE
                         timestamp:
                           type: string
                           format: date-time
@@ -216,7 +220,7 @@ paths:
                         user:
                           type: string
                           description: Username of the user who created the extraction.
-                          example: 'SAP Connector Service'
+                          example: SAP Connector Service
                     lastChange:
                       type: object
                       properties:
@@ -225,7 +229,7 @@ paths:
                           description: >-
                             Name of the machine on which the connection was last
                             changed.
-                          example: 'ALICE'
+                          example: ALICE
                         timestamp:
                           type: string
                           format: date-time
@@ -236,7 +240,7 @@ paths:
                           description: >-
                             Username of the user who last changed the
                             extraction.
-                          example: 'SAP Connector Service'
+                          example: SAP Connector Service
   /connections/sap/{name}/test:
     get:
       tags:
@@ -442,8 +446,13 @@ paths:
                   type: string
                   description: List of table columns (technical names).
                 example:
-                    - MATNR
-                    - MANDT
+                  - MATNR
+                  - MANDT
+              FolderPath:
+                type: string
+                description: Folder path in the target environment.
+                example: >-
+                  abcdefgh-1234-ijkl-5679-ijklmnopqrst/SOMETABLE/year=2025/month=12/day=19
               ResultName:
                 type: string
                 description: >-
@@ -458,7 +467,7 @@ paths:
                   *RFC_READ_TABLE* is used. The installation of
                   */THEO/READ_TABLE* is recommended. For more information, see
                   [Function Module for
-                  Tables](knowledge-base/custom-function-module-for-table-extraction.md).
+                  Tables](https://helpcenter.theobald-software.com/xtract-core/knowledge-base/custom-function-module-for-table-extraction).
                 example: /THEO/READ_TABLE
       responses:
         '200':
@@ -516,7 +525,7 @@ paths:
                           description: >-
                             Name of the machine on which the extraction was
                             created.
-                          example: 'ALICE'
+                          example: ALICE
                         timestamp:
                           type: string
                           format: date-time
@@ -525,7 +534,7 @@ paths:
                         user:
                           type: string
                           description: Username of the user who created the extraction.
-                          example: 'SAP Connector Service'
+                          example: SAP Connector Service
                     lastChange:
                       type: object
                       properties:
@@ -534,7 +543,7 @@ paths:
                           description: >-
                             Name of the machine on which the extraction was last
                             changed.
-                          example: 'ALICE'
+                          example: ALICE
                         timestamp:
                           type: string
                           format: date-time
@@ -545,7 +554,7 @@ paths:
                           description: >-
                             Username of the user who last changed the
                             extraction.
-                          example: 'SAP Connector Service'
+                          example: SAP Connector Service
         '500':
           description: >-
             An error occurred. The response body contains different error
@@ -613,7 +622,9 @@ paths:
         - name: whereClause
           in: query
           description: >-
-            WHERE clause to filter table records. For more information, see [WHERE Clause Syntax](https://helpcenter.theobald-software.com/xtract-core/knowledge-base/where-clause).
+            WHERE clause to filter table records. For more information, see
+            [WHERE Clause
+            Syntax](https://helpcenter.theobald-software.com/xtract-core/knowledge-base/where-clause).
           required: false
           type: string
           x-example: ERSDA GT '2025'
@@ -624,8 +635,7 @@ paths:
             successful execution of the extraction.
           schema:
             type: string
-            example: >-
-              LineCount,Name,Timestamp,State,StateDescr,LogLevel,Source,Message
+            example: LineCount,Name,Timestamp,State,StateDescr,LogLevel,Source,Message
         '404':
           description: Indicates that the extraction does not exist.
         '500':
@@ -691,15 +701,19 @@ paths:
             properties:
               state:
                 type: string
-                example: 'Running'
-                description: Status of the extraction. Possible values are *Running*, *FinishedNoErrors*, and *FinishedErrors*.
+                example: Running
+                description: >-
+                  Status of the extraction. Possible values are *Running*,
+                  *FinishedNoErrors*, and *FinishedErrors*.
               processId:
                 type: number
                 example: 14496
               webLogTimestamp:
                 type: string
-                example: '2025-01-30_14:17:44.189'
-                description: Timestamp of the server log that corresponds to the extraction run.
+                example: 2025-01-30_14:17:44.189
+                description: >-
+                  Timestamp of the server log that corresponds to the extraction
+                  run.
         '404':
           description: Indicates that the extraction does not exist.
         '500':
@@ -719,12 +733,16 @@ paths:
       parameters:
         - name: after
           in: query
-          description: A timestamp in the format *yyyy-MM-dd_HH:mm:ss.SSS*. Returns the extraction runs after the specified date and time.
+          description: >-
+            A timestamp in the format *yyyy-MM-dd_HH:mm:ss.SSS*. Returns the
+            extraction runs after the specified date and time.
           required: false
           type: string
         - name: before
           in: query
-          description: A timestamp in the format *yyyy-MM-dd_HH:mm:ss.SSS*. Returns the extraction runs before the specified date and time.
+          description: >-
+            A timestamp in the format *yyyy-MM-dd_HH:mm:ss.SSS*. Returns the
+            extraction runs before the specified date and time.
           required: false
           type: string
       responses:
@@ -742,7 +760,7 @@ paths:
                       type: array
                       items:
                         type: string
-                      example: 'mara'
+                      example: mara
                       description: Name of the extraction.
                     runs:
                       type: array
@@ -756,19 +774,24 @@ paths:
                             description: Number of extracted data records.
                           duration:
                             type: string
-                            example: 'PT00H00M01.369S'
+                            example: PT00H00M01.369S
                             description: Duration of the exraction run.
                           state:
                             type: string
-                            example: 'FinishedNoErrors'
-                            description: Status of the extraction. Possible values are *Running*, *FinishedNoErrors*, and *FinishedErrors*.
+                            example: FinishedNoErrors
+                            description: >-
+                              Status of the extraction. Possible values are
+                              *Running*, *FinishedNoErrors*, and
+                              *FinishedErrors*.
                           webServerLog:
                             type: string
-                            example: '2025-01-30_08:51:18.976'
-                            description: Timestamp of the server log that corresponds to the extraction run.
+                            example: 2025-01-30_08:51:18.976
+                            description: >-
+                              Timestamp of the server log that corresponds to
+                              the extraction run.
                           startedAt:
                             type: string
-                            example: '2025-01-30_08:51:19.007'
+                            example: 2025-01-30_08:51:19.007
                             description: Timestamp of the extraction run.
         '500':
           description: >-
@@ -791,12 +814,16 @@ paths:
           type: string
         - name: min
           in: query
-          description: A timestamp in the format *yyyy-MM-dd_HH:mm:ss.SSS*. Returns the extraction runs after the specified date and time.
+          description: >-
+            A timestamp in the format *yyyy-MM-dd_HH:mm:ss.SSS*. Returns the
+            extraction runs after the specified date and time.
           required: false
           type: string
         - name: max
           in: query
-          description: A timestamp in the format *yyyy-MM-dd_HH:mm:ss.SSS*. Returns the extraction runs before the specified date and time.
+          description: >-
+            A timestamp in the format *yyyy-MM-dd_HH:mm:ss.SSS*. Returns the
+            extraction runs before the specified date and time.
           required: false
           type: string
       responses:
@@ -817,19 +844,23 @@ paths:
                       description: Number of extracted data records.
                     duration:
                       type: string
-                      example: 'PT00H00M01.369S'
+                      example: PT00H00M01.369S
                       description: Duration of the exraction run.
                     state:
                       type: string
-                      example: 'FinishedNoErrors'
-                      description: Status of the extraction. Possible values are *Running*, *FinishedNoErrors*, and *FinishedErrors*.
+                      example: FinishedNoErrors
+                      description: >-
+                        Status of the extraction. Possible values are *Running*,
+                        *FinishedNoErrors*, and *FinishedErrors*.
                     webServerLog:
                       type: string
-                      example: '2025-01-30_08:51:18.976'
-                      description: Timestamp of the server log that corresponds to the extraction run.
+                      example: 2025-01-30_08:51:18.976
+                      description: >-
+                        Timestamp of the server log that corresponds to the
+                        extraction run.
                     startedAt:
                       type: string
-                      example: '2025-01-30_08:51:19.007'
+                      example: 2025-01-30_08:51:19.007
                       description: Timestamp of the extraction run.
         '500':
           description: >-
@@ -845,18 +876,18 @@ paths:
       produces:
         - application/json
       parameters:
-      - name: name
-        in: path
-        description: Name of an existing extraction.
-        required: true
-        type: string
-        x-example: 'mara'
-      - name: timestamp
-        in: path
-        description: Timestamp of the extraction run you want to query.
-        required: true
-        type: string
-        x-example: '2025-01-30_08:51:19.007'
+        - name: name
+          in: path
+          description: Name of an existing extraction.
+          required: true
+          type: string
+          x-example: mara
+        - name: timestamp
+          in: path
+          description: Timestamp of the extraction run you want to query.
+          required: true
+          type: string
+          x-example: 2025-01-30_08:51:19.007
       responses:
         '200':
           description: Operation successful
@@ -869,19 +900,23 @@ paths:
                 description: Number of extracted data records.
               duration:
                 type: string
-                example: 'PT00H00M01.369S'
+                example: PT00H00M01.369S
                 description: Duration of the exraction run.
               state:
                 type: string
-                example: 'FinishedNoErrors'
-                description: Status of the extraction. Possible values are *Running*, *FinishedNoErrors*, and *FinishedErrors*.
+                example: FinishedNoErrors
+                description: >-
+                  Status of the extraction. Possible values are *Running*,
+                  *FinishedNoErrors*, and *FinishedErrors*.
               webServerLog:
                 type: string
-                example: '2025-01-30_08:51:18.976'
-                description: Timestamp of the server log that corresponds to the extraction run.
+                example: 2025-01-30_08:51:18.976
+                description: >-
+                  Timestamp of the server log that corresponds to the extraction
+                  run.
               startedAt:
                 type: string
-                example: '2025-01-30_08:51:19.007'
+                example: 2025-01-30_08:51:19.007
                 description: Timestamp of the extraction run.
         '404':
           description: Indicates that the extraction or the run does not exist.
@@ -899,18 +934,18 @@ paths:
       produces:
         - application/json
       parameters:
-      - name: name
-        in: path
-        description: Name of an existing extraction.
-        required: true
-        type: string
-        x-example: 'mara'
-      - name: timestamp
-        in: path
-        description: Timestamp of the extraction run you want to query.
-        required: true
-        type: string
-        x-example: '2025-01-30_08:51:19.007'
+        - name: name
+          in: path
+          description: Name of an existing extraction.
+          required: true
+          type: string
+          x-example: mara
+        - name: timestamp
+          in: path
+          description: Timestamp of the extraction run you want to query.
+          required: true
+          type: string
+          x-example: 2025-01-30_08:51:19.007
       responses:
         '200':
           description: Operation successful
@@ -923,19 +958,23 @@ paths:
                 description: Number of extracted data records.
               duration:
                 type: string
-                example: 'PT00H00M01.369S'
+                example: PT00H00M01.369S
                 description: Duration of the exraction run.
               state:
                 type: string
-                example: 'FinishedNoErrors'
-                description: Status of the extraction. Possible values are *Running*, *FinishedNoErrors*, and *FinishedErrors*.
+                example: FinishedNoErrors
+                description: >-
+                  Status of the extraction. Possible values are *Running*,
+                  *FinishedNoErrors*, and *FinishedErrors*.
               webServerLog:
                 type: string
-                example: '2025-01-30_08:51:18.976'
-                description: Timestamp of the server log that corresponds to the extraction run.
+                example: 2025-01-30_08:51:18.976
+                description: >-
+                  Timestamp of the server log that corresponds to the extraction
+                  run.
               startedAt:
                 type: string
-                example: '2025-01-30_08:51:19.007'
+                example: 2025-01-30_08:51:19.007
                 description: Timestamp of the extraction run.
               logEntries:
                 type: array
@@ -945,19 +984,29 @@ paths:
                   properties:
                     timestamp:
                       type: string
-                      example: '2025-01-30_08:51:19.010'
+                      example: 2025-01-30_08:51:19.010
                       description: Timestamp of the log entry.
                     logLevel:
                       type: string
-                      example: 'Info'
-                      description: Type of the log entry. Possible values are\:<br> "Error" - Error messages issued during the extraction. process.<br> "Info" - Status messages, about processes that do not lead to an error. <br> "Warnings" - Information about problems that do not lead to an extraction error, e.g., authentication errors. <br> "Debug" - Detailed information that helps finding error cause.
+                      example: Info
+                      description: >-
+                        Type of the log entry. Possible values are\:<br> "Error"
+                        - Error messages issued during the extraction.
+                        process.<br> "Info" - Status messages, about processes
+                        that do not lead to an error. <br> "Warnings" -
+                        Information about problems that do not lead to an
+                        extraction error, e.g., authentication errors. <br>
+                        "Debug" - Detailed information that helps finding error
+                        cause.
                     source:
                       type: string
-                      description: The Xtract Core component that the log entry originates from.
-                      example: 'Table'
+                      description: >-
+                        The Xtract Core component that the log entry originates
+                        from.
+                      example: Table
                     message:
                       type: string
-                      example: "Attempting to run Table extraction 'mara'" 
+                      example: Attempting to run Table extraction 'mara'
                       description: The content of the log entry.
         '404':
           description: Indicates that the extraction or the run does not exist.
@@ -979,13 +1028,17 @@ paths:
           description: Operation successful
           schema:
             type: object
-            description: A list of server log timestamps that correspond to extraction runs.
+            description: >-
+              A list of server log timestamps that correspond to extraction
+              runs.
             properties:
               logs:
                 type: array
                 items:
                   type: string
-                example: ["2025-01-30_14:17:44.189", "2025-01-30_14:17:44.190"]
+                example:
+                  - 2025-01-30_14:17:44.189
+                  - 2025-01-30_14:17:44.190
         '500':
           description: >-
             An error occurred. The response body contains different error
@@ -1005,7 +1058,7 @@ paths:
           description: Timestamp of the extraction run you want to query.
           required: true
           type: string
-          x-example: '2025-01-30_14:17:44.189'
+          x-example: 2025-01-30_14:17:44.189
       responses:
         '200':
           description: Operation successful
@@ -1020,19 +1073,31 @@ paths:
                   properties:
                     timestamp:
                       type: string
-                      example: '2025-01-23_14:45:19.151'
+                      example: 2025-01-23_14:45:19.151
                       description: Timestamp of the log entry.
                     logLevel:
                       type: string
-                      example: 'Info'
-                      description: Type of the log entry. Possible values are\:<br> "Error" - Error messages issued during the extraction. process.<br> "Info" - Status messages, about processes that do not lead to an error. <br> "Warnings" - Information about problems that do not lead to an extraction error, e.g., authentication errors. <br> "Debug" - Detailed information that helps finding error cause.
+                      example: Info
+                      description: >-
+                        Type of the log entry. Possible values are\:<br> "Error"
+                        - Error messages issued during the extraction.
+                        process.<br> "Info" - Status messages, about processes
+                        that do not lead to an error. <br> "Warnings" -
+                        Information about problems that do not lead to an
+                        extraction error, e.g., authentication errors. <br>
+                        "Debug" - Detailed information that helps finding error
+                        cause.
                     source:
                       type: string
-                      example: 'HttpServer'
-                      description: The Xtract Core component that the log entry originates from.
+                      example: HttpServer
+                      description: >-
+                        The Xtract Core component that the log entry originates
+                        from.
                     message:
                       type: string
-                      example: "Server does not require authentication. Setting anonymous user context."
+                      example: >-
+                        Server does not require authentication. Setting
+                        anonymous user context.
                       description: The content of the log entry.
         '404':
           description: Indicates that the log does not exist.

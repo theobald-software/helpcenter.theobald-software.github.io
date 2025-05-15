@@ -73,6 +73,18 @@ tags:
 
 ---
 
+### TableCDC - Troubleshooting
+
+
+<div class="mdx-columns" markdown>
+
+- [TableCDC: SOURCETAB_NOT_PRESENT_ON_DB](https://support.theobald-software.com/helpdesk/KB/View/28656-tablecdc-sourcetab-not-present-on-db)
+- [TableCDC: TABLE_IS_COMPATIBILITY_VIEW](https://support.theobald-software.com/helpdesk/KB/View/28655-tablecdc-table-is-compatibility-view)
+
+</div>
+
+---
+
 ### DeltaQ - Troubleshooting
 
 <div class="mdx-columns" markdown>

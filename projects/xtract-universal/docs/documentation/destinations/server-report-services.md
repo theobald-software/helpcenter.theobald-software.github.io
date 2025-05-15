@@ -58,13 +58,14 @@ You can restart the server in the Report Server Configuration Manager by clickin
 	If the *Reporting Services Projects* plugin for Visual Studio is updated, the Xtract Universal Report Server Plugin is not available anymore. 
 	The Report Server Plugin must be reinstalled.
 
-After installation of Xtract Universal Report Server Plugin the following entries and extensions are available in the Visual Studio installation directory:
+After installation of Xtract Universal Report Server Plugin the following entries and extensions are available in the Visual Studio installation directory `C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\CommonExtensions\Microsoft\SSRS\`:
 
-- `C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\CommonExtensions\Microsoft\SSRS\XUDataExtension2020.05.dll`
-- `C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\CommonExtensions\Microsoft\SSRS\Theobald.Common.dll`
-- `C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\CommonExtensions\Microsoft\SSRS\Theobald.Distillery.Common.dll`
-- `C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\CommonExtensions\Microsoft\SSRS\Theobald.Net.dll`
-- `C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\CommonExtensions\Microsoft\SSRS\RSReportDesigner.config`
+- XUDataExtension2020.05.dll
+- Theobald.Common.dll
+- Theobald.Distillery.Common.dll
+- Theobald.Net.dll
+- RSReportDesigner.config
+
 
 
 {% include "destinations/create-destination.md" %}

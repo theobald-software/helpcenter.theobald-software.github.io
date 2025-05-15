@@ -7,15 +7,12 @@ hide:
   - toc
 ---
 
-<div class="full-width-background"></div>
-<div class="banner-text">
-	<h1> &lt; Welcome to {{ productName }}! &gt; </h1>
-	<p>Xtract Universal is a flexible SAP interface for databases, analytics, BI or cloud solutions. Learn how to use Xtract Universal by browsing our user documentation, knowledge base and more.</p>
-</div>
+<!--
+<h1> Xtract Universal HelpCenter </h1>
+-->
 
 
-### Latest News
-
+## Latest News
 
 <div class="grid cards" markdown>
 
@@ -23,48 +20,56 @@ hide:
 
 </div>
 
-[:octicons-arrow-right-24: Show more](news.md)
+<div class="home-show-more" markdown>[:octicons-arrow-right-16: **Show more**](news.md)</div>
+
+<!--
+<div class="animated-separator"></div>
 
 
-![threshold](assets/images/logos/DataStream_XU.png)
+## Feedback 
 
+We are constantly striving to improve our products and would love to get your feedback. <br>
+For leaving feedback or feature requests, we offer the following options:
 
-### Additional Resources
-
-::cards:: cols=3
-  
-- title: Product Information
-  icon: ./assets/images/logos/product-information-XU.svg
-  content: Visit our official Xtract Universal website to take a look at the advantages Xtract Universal offers, a list of FAQs and more.
-  url: https://theobald-software.com/en/xtract-universal/
-  
-- title: Success Stories
-  icon: ./assets/images/logos/success-stories-XU.svg
-  content: Get to know real customer scenarios with Xtract Universal by reading one of our success stories.
-  url: https://theobald-software.com/en/resources/success-stories?filter_one=default&filter_two=xtract-universal
-
-- title: Blog
-  icon: ./assets/images/logos/blog-XU.svg
-  content: Discover exciting articles and helpful tips about SAP data and cloud integration, SAP process automation and more.
-  url: https://theobald-software.com/en/blog/
-  
-- title: Events & Webinars
-  icon: ./assets/images/logos/events-webinars-XU.svg
-  content: Find out about upcoming events and Webinars. <br>Join our live webinars and experience interactive communication or visit our SAP experts live at an event. 
-  url: https://theobald-software.com/en/resources/events-and-webinars/
-  
-- title: Technical Newsletter
-  icon: ./assets/images/logos/technical-newsletter-XU.svg
-  content: Our technical newsletter informs you once a month about new features, releases, breaking changes and articles.
-  url: https://theobald-software.com/en/newsletter/
-
-- title: Feedback Form
-  icon: ./assets/images/logos/feedback-form-XU.svg
-  content: We are constantly striving to improve our products and would love to get your feedback. Our feedback form is very short, just write down what you want us to know :octicons-smiley-24:.
-  url: https://theobald-software.typeform.com/to/CnpfiiIN
-
-::/cards::
-
-<!---
-test
+:material-email: Fill out our feedback form. The feedback form is very straight-to-the point, you can just write down what you want us to know.<br>
+:material-email: Contact us directly via email.
 -->
+
+
+## Additional Resources
+
+<div class="home-grid">
+  <div class="grid-item">
+	<a title="Open the Product Page" href="https://theobald-software.com/en/xtract-universal/">
+		<img src="./assets/images/logos/product-information-XU.svg" alt="Product Icon">
+		<h3>Product Information</h3>
+		<p>Visit our official Xtract Universal website to learn about the advantages that Xtract Universal has to offer. You will also find a list of FAQs, contact information and more.</p>
+	</a>
+  </div>
+
+  <div class="grid-item">
+	<a title="Open Success Stories" href=" https://theobald-software.com/en/resources/success-stories?filter_one=default&filter_two=xtract-universal">
+    <img src="./assets/images/logos/success-stories-XU.svg" alt="Success Stories">
+    <h3>Success Stories</h3>
+    <p>Get to know real customer scenarios with Xtract Universal. Learn from our customer's journeys and get inspiration for your own data integration approach.</p>
+	</a>
+  </div>
+  
+  <div class="grid-item">
+	<a title="Open the Theobald Software Blog" href="https://theobald-software.com/en/blog/">
+    <img src="./assets/images/logos/blog-XU.svg" alt="Blog">
+    <h3>Blog Posts</h3>
+    <p>Discover exciting articles and helpful tips on the topics of SAP data and cloud integration, SAP process automation and more - and don't miss the latest news about and from Theobald Software.</p>
+	</a>
+  </div>
+
+  <div class="grid-item">
+	<a title="Open Events and Webinars" href="https://theobald-software.com/en/resources/events-and-webinars/">
+    <img src="./assets/images/logos/events-webinars-XU.svg" alt="Events & Webinars">
+    <h3>Events & Webinars</h3>
+    <p>Find out about upcoming events and Webinars. Join our live webinars and experience interactive communication or visit our SAP experts live at an event. </p>
+	</a>
+  </div>
+
+</div>
+

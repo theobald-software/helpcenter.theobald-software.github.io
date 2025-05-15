@@ -8,6 +8,7 @@ hide:
   - toc
 ---
 
+
 <style>
   .md-typeset h1,
   .md-content__button {
@@ -16,6 +17,7 @@ hide:
 </style>
 
 <swagger-ui src="swagger.yaml"/>
+
 
 <script>
 function scroll() {
@@ -103,4 +105,3 @@ document.querySelector('iframe').onload = function() {
         scroll();
     }, 1000);
 }</script>
-

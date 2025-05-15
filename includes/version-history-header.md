@@ -1,8 +1,13 @@
 
+{% if page.meta.product != "xtract-core" %}
+
 ### Recommended Update Interval
 We recommend checking for updates at least every three months. 
 
-[:material-download-circle: Download the latest version](https://portal.theobald-software.com/){ .md-button .md-button--primary }
+[Get the latest version](https://portal.theobald-software.com/){ .md-button .md-button--primary }
+
+
+{% endif %}
 
 ### Latest Software Updates { data-search-exclude }	
 
@@ -25,7 +30,6 @@ Format: **A.B.C [X]**
     * *H - High*:   Install immediately.
     * *M - Medium*: Install within your usual update interval.
     * *L - Low*:    Install only if advised by the support team.
-
 
 - `1.2.3` shows the software release of version, e.g., `5.6.2`.
 - `>1.2.3` shows all software releases that came after the specified version, e.g., `>5.6.2`.

@@ -16,6 +16,7 @@ With the Power Query M-script you can additionally directly integrate data into 
 
 ![Power-BI-Connector](../../assets/images/documentation/destinations/power-bi/PowerBI_Connector_Architecture_SSO.png){:class="img-responsive"}
 
+
 ## Supported Power BI Environments
 
 Xtract Universal supports the following environments:
@@ -29,6 +30,16 @@ Xtract Universal supports the following environments:
 | Power BI Desktop       |         :white_check_mark:        |     :white_check_mark:   |
 | Power BI Service       |         :white_check_mark:       |     :white_check_mark:   |
 | Power BI Report Server |         :x:        |     :white_check_mark:   |
+
+
+## Video Tutorial
+
+The following YouTube tutorial shows how to install the Power BI Custom Connector and how to use Xtract Universal with Power BI:
+
+<div class="video-wrapper">
+	<iframe src="https://www.youtube.com/embed/al1FOtJjVIM?si=EJgku3sgYMhGk1BM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
 
 {% include "destinations/create-destination.md" %}
 To use the {{ page.meta.title }} destination, no further settings are necessary.
@@ -102,21 +113,13 @@ Follow the steps below to connect Power BI with Xtract Universal
 ![powerbi-XU_URL](../../assets/images/documentation/destinations/power-bi/XU_pbi_connector_XU_URL.png){:class="img-responsive"}
 
 	When prompted for *Anonymous*, *Basic* or *Windows* authentication, follow the steps as outlined in [Single Sign On and SAP authentication](#single-sign-on-and-sap-authentication).<br>
-	The "Navigator" window lists all extractions that are [assigned to a {{ page.meta.title }} destination](#assign-the-power-bi-connector-destination-to-an-extraction) in Xtract Universal. 
+	The "Navigator" window lists all extractions that are [assigned to a {{ page.meta.title }} destination](#assign-the-microsoft-power-bi-destination-to-an-extraction) in Xtract Universal. 
 4. Select an extraction from the list. The preview data shows the actual SAP column headers and preview data (real data or dummy data, depending on the extraction type).
 5. Click the **[Load]** button. This triggers an extraction in Xtract Universal and writes the extracted data to Power BI.<br>
 ![powerbi-navigator](../../assets/images/documentation/destinations/power-bi/XU_pbi_connector_navigator.png){:class="img-responsive"}
 
 The data is now available for further processing.
 
-
-### Tutorial
-
-The following YouTube tutorial shows how to install the Power BI Connector and how to use Xtract Universal with Power BI:
-
-<div class="video-wrapper">
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/al1FOtJjVIM?si=EJgku3sgYMhGk1BM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
 
 ### Parameterizing in Power BI Custom Connector 
 

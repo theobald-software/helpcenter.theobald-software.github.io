@@ -1,7 +1,6 @@
 ---
 title: Microsoft Fabric (OneLake)
 description: Write SAP data to Microsoft Fabric OneLake
-status: new
 attempt: seven
 ---
 
@@ -10,53 +9,32 @@ The {{ page.meta.title }} destination enables users to load SAP data to a Micros
 
 
 ## Requirements
+
 The {{ page.meta.title }} destination uses [Microsoft Entra ID (formerly Azure Active Directory)](https://www.microsoft.com/en-us/security/business/identity-access/microsoft-entra-id) with OAuth 2.0 for authentication.
-Make sure the authentication uses the following settings:
-- Register Microsoft Fabric OneLake as a *Mobile and desktop application*, see [Microsoft Documentation: Configure platform settings](https://learn.microsoft.com/en-us/entra/identity-platform/quickstart-register-app?tabs=certificate#configure-platform-settings):<br>
+Follow the steps below to set up the authentication with Microsoft:
+1. Register Microsoft Fabric OneLake as an app using the [Azure portal > App registrations](https://portal.azure.com/#view/Microsoft_AAD_RegisteredApps/ApplicationsListBlade) service.
+For more information, see [Microsoft Documentation: Register an application in Microsoft Entra ID](https://learn.microsoft.com/en-us/entra/identity-platform/quickstart-register-app?tabs=certificate#configure-platform-settings).
+2. Make sure the registered app allows authentication from *Mobile and desktop applications*:<br>
 ![authentication](../../assets/images/documentation/destinations/fabric/auth.png)
-- Add the following API permissions:
-	- Azure Storage - *user impersonation*
-	- Microsoft Graph - *User.Read*
+3. Add the following API permissions to the registered app:
+	- **Azure Storage > user impersonation** <br>
+	This allows {{ productName }} to act on behalf of the signed-in user and access Azure Storage resources like OneLake.
+	- **Microsoft Graph > User.Read**<br>
+	This allows {{ productName }} to read the profile of the signed-in user.
 	
 	For more information, see [Microsoft Documentation: Add permissions to your web API](https://learn.microsoft.com/en-us/entra/identity-platform/quickstart-configure-app-access-web-apis#add-permissions-to-access-your-web-api).<br>
 	![API permissions](../../assets/images/documentation/destinations/fabric/api-permissions.png)
+4. When connecting {{ productName }} to Microsoft Fabric, make sure to provide the credentials of a Microsoft user that has one of the following user roles:
+	- Storage Blob Data Contributor
+	- Storage Blob Data Owner
 	
+	For more information, see [Microsoft Documentation: Assign an Azure role](https://learn.microsoft.com/en-us/azure/storage/blobs/assign-azure-role-data-access?tabs=portal#assign-an-azure-role).
 
 {% include "destinations/create-destination.md" %}
 
 ![Destination-Details](../../assets/images/documentation/destinations/fabric/destination-details.png){:class="img-responsive"}
 
-### Authentication
-
-The {{ page.meta.title }} destination uses [Microsoft Entra ID](https://www.microsoft.com/en-us/security/business/identity-access/microsoft-entra-id) for authentication.
-Register Microsoft OneLake as an application in Entra ID and configure OneLake to use the registered application.
-	
-#### Tenant ID
-Enter the Directory (tenant) ID of the registered app.
-	
-#### Client ID
-Enter the Application (client) ID of the registered app. 
-
-!!! tip
-	You can copy the tenant ID and client ID in the [Microsoft Entra admin center](https://entra.microsoft.com/#home) or the [Azure portal](https://portal.azure.com/), where the app is registered.<br>
-	![xu-azure-blob-con-3](../../assets/images/documentation/destinations/fabric/entraID.png){:class="img-responsive"}
-
-#### Authenticate using Entra ID
-
-1. Click **[Authenticate using Entra ID]**. The window "Entra ID" opens.
-2. When prompted, sign in with your Microsoft credentials.
-3. After the sign in, a list of requested permissions is displayed, see [Knowledge Base Article: Authentication via Microsoft Entra ID](../../knowledge-base/authentication-via-entra-id-with-azure-storage.md). <br>
-![xu-entraID](../../assets/images/documentation/destinations/azure-storage/xu-azure-blob-con_4.png){:class="img-responsive" width="350px"}
-4. Click **[Accept]** to establish a connection to the storage account.
-
-If the connection is successful, a "Connection successful" info window opens. 
-
-!!! warning
-	**The window "Entra ID" shows a blank screen.**<br>
-	If the window "Entra ID" shows a blank screen, the content is likely blocked by the Internet Explorer ESC (Enhanced Security Configuration) on Windows servers.
-	To disable the Internet Explorer ESC, refer to the instructions in the [Microsoft Documentation: How to turn off Internet Explorer ESC on Windows servers](https://learn.microsoft.com/en-us/previous-versions/troubleshoot/browsers/security-privacy/enhanced-security-configuration-faq#how-to-turn-off-internet-explorer-esc-on-windows-servers).
-	
-	
+{% include "destinations/fabric.md" %}
 
 
 ### Files Folder
@@ -64,17 +42,13 @@ If the connection is successful, a "Connection successful" info window opens.
 #### URL
 
 Enter the URL of the Lakehouse, including the folder path in which the data is written.
-The URL uses the following format:<br>
-`https://onelake.dfs.fabric.microsoft.com/<workspaceGUID>/<itemGUID>/<folder>/`
+Example:<br>
+`https://onelake.dfs.fabric.microsoft.com/my-workspace/my-lakehouse.Lakehouse/my-folder`
 
 You can copy the URL in the [Microsoft Fabric portal](https://app.fabric.microsoft.com/home) using the properties of a OneLake folder:
 	
 ![xu-onelake-url](../../assets/images/documentation/destinations/fabric/url.png)
 
-
-``` title="Example URL:"
-https://onelake.dfs.fabric.microsoft.com/12345678-aaaa-bbbb-cccc-123456789abc/12345678-dddd-ffff-gggg-123456789abc/folder-name
-```
 
 
 ### File Format
@@ -115,7 +89,7 @@ In these cases, Xtract Universal attempts to delete any files created in the Lak
 {% include "destinations/file-name.md" %}
 
 !!! note
-	When an object's name doesn't start with a letter, an 'x' is added at the beginning. , e.g., `_namespace_tabname.csv` becomes `x_namespace_tabname.csv` when uploaded. <br> This ensures compatibility with Azure Data Factory, Hadoop, and Spark, which require names to start with a letter or handle certain symbols differently.
+	If an object's name does not begin with a letter, the prefix 'x' is automatically appended, e.g., `_namespace_tabname.csv` is renamed to `x_namespace_tabname.csv` upon upload. <br> This ensures compatibility with Azure Data Factory, Hadoop, and Spark, which require names to start with a letter or handle certain symbols differently.
 
 {% include "parameters/file-name-script-expressions.md" %}
 

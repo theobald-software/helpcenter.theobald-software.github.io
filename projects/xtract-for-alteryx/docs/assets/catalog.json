@@ -1,5 +1,38 @@
 [
   {
+    "Version": "2025.4.17.27",
+    "LegacyReleaseDate": "2025-04-17 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "General",
+        "Message": "Improved the functionality of the f1 help hotkey in all windows"
+      }
+    ]
+  },
+  {
+    "Version": "2025.4.9.3",
+    "LegacyReleaseDate": "2025-04-09 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "XtractForAlteryx",
+        "Component": "ODP OData",
+        "Message": "Fixed an issue that caused DCM errors in Alteryx &lt; 2024.2 (Bug introduced in 2024.12.5.3)"
+      }
+    ]
+  },
+  {
+    "Version": "2025.3.20.23",
+    "LegacyReleaseDate": "2025-03-20 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "Report",
+        "Message": "Fixed transport request for systems that do no have data element \"c1\" present."
+      }
+    ]
+  },
+  {
     "Version": "2025.3.19.3",
     "LegacyReleaseDate": "2025-03-19 00:00:00Z",
     "Changes": [

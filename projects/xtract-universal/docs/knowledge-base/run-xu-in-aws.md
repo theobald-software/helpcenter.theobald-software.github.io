@@ -78,5 +78,4 @@ After {{ productName }} is set up on AWS,  the following steps are required to s
 - [Create an extraction](../getting-started.md#create-an-extraction) that defines which SAP data to extract.
 - [Testrun the extraction](../getting-started.md#run-an-extraction) in the {{ productName }} Designer to preview the extracted data.
 - [Add a destination](../getting-started.md#write-data-to-a-target-environment) to connect {{ productName }} to load the data into a target environment.
-- [Assign the destination to your extraction](../getting-started.md#assign-a-destination-to-an-extraction).
 - Optional: [Automate your extractions](../documentation/execute-and-automate/index.md) using a scheduler, script or ETL tool.

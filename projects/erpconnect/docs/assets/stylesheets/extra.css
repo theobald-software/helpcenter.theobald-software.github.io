@@ -1,6 +1,6 @@
 :root {
   --md-primary-fg-color: #ED1A33;
-  --md-primary-fg-color--light: #ED2939;
+  --md-primary-fg-color--light: #ff8090;
   --md-primary-fg-color--dark: #7a1b21;
   --md-accent-fg-color: #FF2643;
   --md-color-accent: #ED1A33;
@@ -24,8 +24,8 @@
   top: 0;
   bottom: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 99%;
+  height: 99%;
   border: 1px solid black
 }
 
@@ -119,6 +119,11 @@
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
+  color: black;
+}
+
+.modal-content h1 {
+  color: black;
 }
 
 .close {

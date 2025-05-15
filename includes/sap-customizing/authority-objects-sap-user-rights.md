@@ -51,7 +51,7 @@ You can download the SAP profiles and upload them to your SAP system:
 [Report](#report)|[ZXREPORT.SAP](site:assets/files/sap_roles/ZXREPORT.SAP)
 [Table](#table) | [ZXTABLE.SAP](site:assets/files/sap_roles/ZXTABLE.SAP) 
 [Table CDC](#table-cdc) | [ZXTABLECDC.SAP](site:assets/files/sap_roles/ZXTABLECDC.SAP)
-[DeltaQ ](#deltaq) |[ZXTDELTAQ.SAP](site:assets//files/sap_roles/ZXTDELTAQ.SAP),[DELTAQ_CUSTOMIZING_CHECK](site:assets/files/sap_roles/DELTAQ_CUSTOMIZING_CHECK.SAP)
+[DeltaQ ](#deltaq) |[ZXTDELTAQ.SAP](site:assets//files/sap_roles/ZXTDELTAQ.SAP), [DELTAQ_CUSTOMIZING_CHECK](site:assets/files/sap_roles/DELTAQ_CUSTOMIZING_CHECK.SAP)
 {% endif %}
 
 {% if page.meta.product == "xtract-for-alteryx" %}
@@ -74,9 +74,10 @@ You can download the SAP profiles and upload them to your SAP system:
 The following authorization objects are required to establish a connection to SAP. 
 
 ``` title="Necessary SAP authorizations"
-S_RFC            RFC_TYPE=FUGR; RFC_NAME=SYST; ACTVT=16
-S_RFC            RFC_TYPE=FUGR; RFC_NAME=SRFC; ACTVT=16
-S_RFC            RFC_TYPE=FUGR; RFC_NAME=RFC1; ACTVT=16
+S_RFC           RFC_TYPE=FUGR; RFC_NAME=SYST; ACTVT=16
+S_RFC           RFC_TYPE=FUGR; RFC_NAME=SRFC; ACTVT=16
+S_RFC           RFC_TYPE=FUGR; RFC_NAME=RFC1; ACTVT=16
+S_RFC 			RFC_TYPE=FUGR; RFC_NAME=OCS_CRM; ACTVT=16
 ```
 
 [:material-download-circle: Download SAP profile for general authorization](site:assets/files/sap_roles/ZXTGENERAL.SAP){ .md-button .md-button--primary }
@@ -150,11 +151,11 @@ S_RFC          RFC_TYPE=FUNC, FUGR; RFC_NAME=SDIFRUNTIME; ACTVT=16
 S_RFC          RFC_TYPE=FUNC, FUGR; RFC_NAME=SDTX; ACTVT=16
 S_RFC          RFC_TYPE=FUNC, FUGR; RFC_NAME=SYST; ACTVT=16
 S_RS_ADMWB     RSADMWBOBJ=INFOOBJECT; ACTVT=03
-S_TABU_DIS     ACTVT=02, 03; DICBERCLS=BWC
-S_TABU_DIS     ACTVT=02, 03; DICBERCLS=BWG
-S_TABU_NAM     ACTVT=02, 03; TABLE=/BIC/*
-S_TABU_NAM     ACTVT=02, 03; TABLE=ENLFDIR
-S_TABU_NAM     ACTVT=02, 03; TABLE=RSHIEDIR
+S_TABU_DIS     ACTVT=03; DICBERCLS=BWC
+S_TABU_DIS     ACTVT=03; DICBERCLS=BWG
+S_TABU_NAM     ACTVT=03; TABLE=/BIC/*
+S_TABU_NAM     ACTVT=03; TABLE=ENLFDIR
+S_TABU_NAM     ACTVT=03; TABLE=RSHIEDIR
 ```
 
 [:material-download-circle: Download SAP profile for BW Hierarchy](site:assets/files/sap_roles/ZXTBWHIERARCHY.SAP){ .md-button .md-button--primary }
@@ -245,10 +246,10 @@ S_TABU_DIS       ACTVT=03; DICBERCLS=XXXX
 S_TABU_NAM       ACTVT=03; TABLE=DD02V, DD17S, DD27S, ENLFDIR
 S_DSAUTH         ACTVT=16;    
 ```
-<div class="result" markdown>
+
 XXXX (stands for a placeholder) is the authorization group for the table. To determine, which authorization group belongs to which table, check the table TDDAT - Maintenance Areas for Tables. 
 If the table is not listed, the authorization group is &NC&. For authorizing specific tables use authorization object S_TABU_NAM instead of S_TABU_DIS.
-</div>
+
 
 {% if page.meta.product != "xtract-core" %}
 {% if page.meta.product != "erpconnect" %}
@@ -296,9 +297,9 @@ S_TABU_CLI       CLIIDMAINT=X
 S_TABU_NAM       ACTVT=03; TABLE=DD02V, D17S, D27S, ENLFDIR
 S_DEVELOP        ACTVT=02; DEVCLASS=$TMP; OBJNAME=ZTSCDC_*; OBJTYPE=*; P_GROUP=*
 ```
-<div class="result" markdown>
+
 XXXX (stands for a placeholder) is the authorization group for the source table. To determine, which authorization group belongs to which table, check the table TDDAT - Maintenance Areas for Tables. If the table is not listed, the authorization group is &NC&. For authorizing specific tables use authorization object S_TABU_NAM instead of S_TABU_DIS.
-</div>
+
 
 !!! note
     The transport requests for the required function groups */THEO/READ_TABLE* are located in ```C:\Program Files\[XtractProduct]\ABAP\TableCDC``` and ```C:\Program Files\[XtractProduct]\ABAP\Table```. 
@@ -311,7 +312,7 @@ XXXX (stands for a placeholder) is the authorization group for the source table.
 
 === "Customizing check"
 
-	```title="Necessary SAP authorizations"
+	``` title="Necessary SAP authorizations"
 	S_RFC           RFC_TYPE=FUGR; RFC_NAME=SUSR; ACTVT=16  
 	S_RFC           RFC_TYPE=FUNC; RFC_NAME=RFC_GET_SYSTEM_INFO; ACTVT= 16 
 	S_ADMI_FCD      S_ADMI_FCD=NADM
@@ -323,7 +324,7 @@ XXXX (stands for a placeholder) is the authorization group for the source table.
 
 === "Initial DataSource activation"
 
-	```title="Necessary SAP authorizations"
+	``` title="Necessary SAP authorizations"
 	S_RFC            RFC_TYPE=FUGR; RFC_NAME=SDIFRUNTIME; ACTVT=16 
 	S_RFC            RFC_TYPE=FUGR; RFC_NAME=RSAG; ACTVT=16 
 	S_TABU_DIS       ACTVT=03; DICBERCLS=SS                                                
@@ -334,7 +335,7 @@ XXXX (stands for a placeholder) is the authorization group for the source table.
 
 === "Re-activating a DataSource"
 
-	```title="Necessary SAP authorizations"
+	``` title="Necessary SAP authorizations"
 	S_RFC           RFC_TYPE=FUGR; RFC_NAME=SDIFRUNTIME; ACTVT=16
 	S_TABU_DIS      ACTVT=03; DICBERCLS=SS                                 
 	S_TABU_DIS      ACTVT=03; DICBERCLS=SC                                               

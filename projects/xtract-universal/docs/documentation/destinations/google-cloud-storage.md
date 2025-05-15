@@ -37,8 +37,7 @@ To access all settings and services use the navigation menu on the upper left si
 
 ![Destination-Details](../../assets/images/documentation/destinations/googlecloudstorage/destination-details_1.png){:class="img-responsive"}
 
-#### Connection Type
-
+### Connection Type & Parameters
 
 The subsection *Connection Type* offers two different methods for authenticating and authorizing access to an Azure Storage account:
 
@@ -66,8 +65,11 @@ The following input fields vary depending on the selected authentication method.
 === "Authentication via User Login"
 
 	#### Client ID
-	Enter the client ID created in the OAuth 2.0 setup. 
+	Enter the client ID created in the OAuth 2.0 setup. The client ID uses the following format:<br>
+	`<project-number>-<unique-identifier>.apps.googleusercontent.com`
 	
+	Example: *123456789012-abcdefghijklmnopqrstuvwxyz123456.apps.googleusercontent.com*
+
 	#### Client Secret
 	Enter the client secret created in the OAuth 2.0 setup. 
 
@@ -120,7 +122,7 @@ If you check the *Customer-supplied* option, you need to provide a valid AES256 
 The Crypto key is not stored in the GCP and demands the additional effort to be able to to decrypt your data later. 
 
 #### Crypto key
-If *Customer Supplied* is selected as the encryption method, enter the cryptographic key into.
+When the encryption method *Customer Supplied* is active, enter the cryptographic key for the encryption.
 
 ### Misc
 

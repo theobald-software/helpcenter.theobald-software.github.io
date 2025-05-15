@@ -39,7 +39,8 @@ gatewayService | Gateway Service | Available for [DeltaQ](../deltaq/deltaq-custo
 programID | Program ID | Available for [DeltaQ](../deltaq/deltaq-customization.md)
 logicalDestination | Logical Destination | Available for [DeltaQ](../deltaq/deltaq-customization.md)
 requestID | Request ID (for Repair Request only) | Available for [DeltaQ](../deltaq/deltaq-customization.md)
-updateType | Sets the update mode to use for the run: F (Full), C (Delta Init), S (Init no data), D (Delta Update), R (Repeat)| Available for [DeltaQ](../deltaq/update-mode.md)
+updateMode | Sets the update mode to use for the run: Init, Full, Delta, Activate, InitNoDelta, InitNoncumulative, Repeat| Available for [DeltaQ](../deltaq/update-mode.md)
+updateType (deprecated) | Sets the update mode to use for the run: F (Full), C (Delta Init), S (Init no data), D (Delta Update), R (Repeat), A (Activate)| Available for [DeltaQ](../deltaq/update-mode.md)
 decimalSeparator | Sets a symbol between integer and fractional part | Available for CSV destinations
 columnSeparator |  Sets a symbol which indicates the start of a new column | Available for CSV destinations
 

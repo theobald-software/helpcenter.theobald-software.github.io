@@ -5,7 +5,7 @@ Currencies that do not have decimals are also stored in this format, e.g. JPY, V
 Example:
 
 | Currency  | Actual Amount  | Amount stored in SAP database |
-| ------------- |:-------------:| -----:|
+| ------------- |:-------------:| :-----:|
 | JPY | 100	|1.00|
 | KRW | 10000	|100.00|
 

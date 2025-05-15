@@ -74,7 +74,7 @@ Follow the steps below to install the Xtract Core Windows service:
 
 1. Extract all files from the `XtractCore.zip` archive into the directory where you want to install Xtract Core.
 2. Open a command line tool with administrator rights and navigate to the installation directory.
-3. Run the following command to install the Xtract Core Windows service and to create a dedicated user for the service:
+3. Run the following command to install the Xtract Core Windows service and to create a dedicated virtual user that runs the service:
 	```terminal
 	service.exe -i --virtual-service-user 
 	```
@@ -86,6 +86,13 @@ For information on how to change the default settings of the Xtract Core service
 
 !!! note
 	To update Xtract Core replace the files in the installation directory with the new Xtract Core installation files.
+
+!!! warning
+	**Access is denied.**<br>
+	The virtual user that is created during the installation of {{ productName }} has minimal access rights.
+	If {{ productName }} is installed in a user-specific directory (e.g., `C:\Users\<username>\Documents`), the virtual user cannot access the files. 
+	To successfully run the Windows service, grant the virtual user access rights to the directory or install {{ productName }} in a system-level directory, e.g., `C:\XtractCore`.
+	
 
 ### Files in the Installation Directory
 
@@ -113,18 +120,15 @@ The name (`serviceName`), displayed name (`displayName`) and description (`descr
 
 ```json title="theobald.service.definition.json"
 {
+    "description": "A web API for extracting data from SAP systems",
+    "displayName": "SAPConnector",
+    "serviceName": "SAP Connector Service",
     "servers": [
         {
-            "path": "listener.exe",
-            "displayName": "listener"
+            "displayName": "listener",
+            "path": "listener.exe"
         }
-    ],
-    "displayName": "SAPConnector",
-    "description": "A web API for extracting data from SAP systems",
-    "convertConfig": false,
-    "minCfgVersion": "2024.10.30.35",
-    "currentVersion": "9925.3.12.51",
-    "serviceName": "SAP Connector Service"
+    ]
 }
 ```
 
@@ -149,24 +153,12 @@ The network settings of the web server can be changed in the `listener.json` fil
 	- *Localhost* only listens on the loopback interface. 
 		
 
-
 ### TLS Configuration
 
 You can enable Transport Layer Security (TLS) to use secured HTTPS communication for the web server.
 For information on how to set up TLS with Xtract Core, refer to the [Knowledge Base Article: Install an X.509 Certificate](./knowledge-base/install-x.509-certificate.md).
 
 ## How to use the API
-
-
-The general workflow for Xtract Core includes the following steps:
-
-1. Create a [connection to an SAP source system](#create-sap-connections) to extract data from.
-2. Create a [connection to a target environment / destination](#create-azure-blob-storage-connections) to write data to.
-3. Optional: Fetch information about the tables in your SAP source system. For Example:
-	- [names and descriptions of tables](api-reference.md/#/connections/metaconnection) 
-	- [names and descriptions of table columns](api-reference.md/#/connections/metatable)
-4. Create a reusable [extraction](#create-table-extractions) that defines which SAP table data to extract.
-5. [Run](#run-extractions) the extraction.
 
 The [API Reference](api-reference.md) lists all available Xtract Core endpoints.
 It includes descriptions of all endpoints and their parameters. 
@@ -178,6 +170,21 @@ The Xtract Core API uses the following parameter types:
 | Query | Query parameters are added to the end of a request URL, following '?'. They are listed in key-value pairs, separated by '&'. Query parameters can be used for filtering or sorting. | */connections/sap/{name}/tables<span style="color:red">?pattern=ma*</span>* |
 | Body | Body parameters are passed in the request body of POST methods to add or update structured data. A list of mandatory and optional body parameters is provided in the data model of an API call. In the API reference, expand the data model to display the descriptions of the parameters. | - |
 
+### General Workflow
+
+The general workflow for first-time {{ productName }} users includes the following steps:
+
+<div class="workflow" markdown>
+
+1. Create a [connection to an SAP source system](#create-sap-connections) to extract data from.
+2. Create a [connection to a target environment / destination](#create-azure-blob-storage-connections) to write data to.
+3. Optional: Fetch information about the tables in your SAP source system. For example:
+	- [names and descriptions of tables](api-reference.md/#/connections/metaconnection) 
+	- [names and descriptions of table columns](api-reference.md/#/connections/metatable)
+4. Create a reusable [extraction](#create-table-extractions) that defines which SAP table data to extract.
+5. [Run](#run-extractions) the extraction.
+
+</div>
 
 ### Create SAP Connections
 

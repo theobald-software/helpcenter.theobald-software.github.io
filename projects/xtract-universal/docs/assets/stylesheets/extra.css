@@ -1,4 +1,5 @@
 :root {
+	
   --md-primary-fg-color:        #98892C;
   --md-primary-fg-color--light: #CCB63B;
   --md-primary-fg-color--dark:  #786c1f;
@@ -18,8 +19,8 @@
   top: 0;
   bottom: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 99%;
+  height: 99%;
   border: 1px solid black
 }
 
@@ -30,6 +31,11 @@
   --md-accent-fg-color: FF003C;
   */
 
+.mk-bpmn-container {
+    border: 2px solid grey;
+    display: block; /* Ensures the border wraps correctly */
+	background-color: white;
+}
 
 /* right navigation (toc): title */	
 .md-nav__title {
@@ -144,6 +150,11 @@
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
+  color: black;
+}
+
+.modal-content h1 {
+	color: black;
 }
 
 .close {
@@ -175,6 +186,7 @@
   background-size: 200% 100%;
 
 }
+
 
 @keyframes gradientAnimation {
   0% {

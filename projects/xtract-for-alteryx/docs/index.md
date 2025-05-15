@@ -7,14 +7,11 @@ hide:
   - toc
 ---
 
-<div class="full-width-background"></div>
-<div class="banner-text">
-	<h1> &lt; Welcome to {{ productName }}! &gt; </h1>
-	<p>Integrate your SAP data into Alteryx with the Xtract for Alteryx drag & drop toolbox for the Alteryx Designer. Learn how to use Xtract for Alteryx by browsing our user documentation, knowledge base, templates and more.</p>
-</div>
+<!--
+<h1> Xtract for Alteryx HelpCenter </h1>
+-->
 
-
-### Latest News
+## Latest News
 
 <div class="grid cards" markdown>
 
@@ -22,44 +19,42 @@ hide:
 
 </div>
 
-[:octicons-arrow-right-24: Show more](news.md)
+<div class="home-show-more" markdown>[:octicons-arrow-right-16: **Show more**](news.md)</div>
 
+## Additional Resources
 
-![threshold](assets/images/logos/DataStream_XfA.png)
+<div class="home-grid">
+  <div class="grid-item">
+	<a title="Open the Product Page" href="https://theobald-software.com/en/xtract-for-alteryx/">
+		<img src="./assets/images/logos/product-information-XfA.svg" alt="Product Icon">
+		<h3>Product Information</h3>
+		<p>Visit our official Xtract Universal website to learn about the advantages that Xtract Universal has to offer. You will also find a list of FAQs, contact information and more.</p>
+	</a>
+  </div>
 
-
-### Additional Resources
-
-::cards:: cols=3
+  <div class="grid-item">
+	<a title="Open Success Stories" href=" https://theobald-software.com/en/resources/success-stories?filter_one=default&filter_two=xtract-for-alteryx">
+    <img src="./assets/images/logos/success-stories-XfA.svg" alt="Success Stories">
+    <h3>Success Stories</h3>
+    <p>Get to know real customer scenarios with Xtract Universal. Learn from our customer's journeys and get inspiration for your own data integration approach.</p>
+	</a>
+  </div>
   
-- title: Product Information
-  icon: ./assets/images/logos/product-information-XfA.svg
-  content: Visit our official Xtract for Alteryx website to take a look at the advantages Xtract for Alteryx offers, a list of FAQs and more.
-  url: https://theobald-software.com/en/xtract-for-alteryx/
-  
-- title: Success Stories
-  icon: ./assets/images/logos/success-stories-XfA.svg
-  content: Get to know real customer scenarios with Xtract for Alteryx by reading one of our success stories.
-  url: https://theobald-software.com/en/resources/success-stories?filter_one=default&filter_two=xtract-for-alteryx
+  <div class="grid-item">
+	<a title="Open the Theobald Software Blog" href="https://theobald-software.com/en/blog/">
+    <img src="./assets/images/logos/blog-XfA.svg" alt="Blog">
+    <h3>Blog Posts</h3>
+    <p>Discover exciting articles and helpful tips on the topics of SAP data and cloud integration, SAP process automation and more - and don't miss the latest news about and from Theobald Software.</p>
+	</a>
+  </div>
 
-- title: Blog
-  icon: ./assets/images/logos/blog-XfA.svg
-  content: Discover exciting articles and helpful tips about SAP data and cloud integration, SAP process automation and more.
-  url: https://theobald-software.com/en/blog/
-  
-- title: Events & Webinars
-  icon: ./assets/images/logos/events-webinars-XfA.svg 
-  content: Find out about upcoming events and Webinars. <br>Join our live webinars and experience interactive communication or visit our SAP experts live at an event. 
-  url: https://theobald-software.com/en/resources/events-and-webinars/
-  
-- title: Technical Newsletter
-  icon: ./assets/images/logos/technical-newsletterXfA.svg
-  content: Our technical newsletter informs you once a month about new features, releases, breaking changes and articles.
-  url: https://theobald-software.com/en/newsletter/
+  <div class="grid-item">
+	<a title="Open Events and Webinars" href="https://theobald-software.com/en/resources/events-and-webinars/">
+    <img src="./assets/images/logos/events-webinars-XfA.svg" alt="Events & Webinars">
+    <h3>Events & Webinars</h3>
+    <p>Find out about upcoming events and Webinars. Join our live webinars and experience interactive communication or visit our SAP experts live at an event. </p>
+	</a>
+  </div>
 
-- title: Feedback Form
-  icon: ./assets/images/logos/feedback-form-XfA.svg
-  content: We are constantly striving to improve our products and would love to get your feedback. Our feedback form is very short, just write down what you want us to know :octicons-smiley-24:.
-  url: https://theobald-software.typeform.com/to/CnpfiiIN
+</div>
 
-::/cards::

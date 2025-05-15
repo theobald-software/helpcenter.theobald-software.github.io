@@ -13,6 +13,7 @@ hide:
 
 <div class="mdx-columns" markdown>
 
+- [Deactivate Usage Data Collection](deactivate-usage-analytics.md)
 - [Deploy Extractions Using Git Version Control](deploy-extractions-using-Git-version-control.md)
 - [Load Balancing](load-balancer.md)
 - [Proxy Server Settings](proxy-server-settings.md)

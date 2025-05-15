@@ -14,6 +14,7 @@ hide:
 
 - [Requirements for Xtract Core](requirements.md)
 - [Install an X.509 Certificate](install-x.509-certificate.md)
+- [Xtract Core in a Hybrid Cloud Architecture](xtract-core-in-a-hybrid-cloud-architecture.md)
 
 </div>
 

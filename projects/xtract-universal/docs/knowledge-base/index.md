@@ -15,6 +15,7 @@ hide:
 
 - [Call Extractions via Script](call-extraction-via-script.md)
 - [Create Extractions via Commandline](config-command-line-tool.md)
+- [Deactivate Usage Data Collection](deactivate-usage-analytics.md)
 - [Deploy Extractions Using Git Version Control](deploy-extractions-using-Git-version-control.md)
 - [Execute & Schedule all Extractions using an SSIS Package](execute_all_defined_xu_extractions.md)
 - [Insert Extraction Events into Windows Logs](insert-extraction-events-into-the-windows-logs.md)

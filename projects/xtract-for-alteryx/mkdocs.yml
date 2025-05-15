@@ -75,7 +75,6 @@ theme:
 extra_css:
   - assets/stylesheets/extra.css
   - assets/stylesheets/neoteroi-cards.css 
-  - assets/stylesheets/hyperscript.css
   - assets/stylesheets/github-permalink-style.css
  
 extra_javascript:
@@ -119,7 +118,7 @@ plugins:
                - index.md
         #enable_creation_date: true
         #type: timeago
-         - optimize
+         #- optimize
          - minify:
              minify_html: true
          - social:

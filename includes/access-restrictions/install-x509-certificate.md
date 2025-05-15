@@ -17,7 +17,7 @@ On test environments you can use a self-signed certificate. For production envir
 
 {% endif %}
 
-### Create the X.509 Certificate
+### Create and Import the X.509 Certificate
 
 Make sure to have a TLS certificate issued by your IT network team considering the following points:
  
@@ -28,9 +28,8 @@ To display the Common Name (CN) of the certificate, double-click the certificate
 3. Import the certificate to the [Windows Certificate Store](https://technet.microsoft.com/en-us/ms788967(v=vs.91)) of the machine, that runs the {{ serviceName }} Windows service using the Microsoft Management Console (mmc.exe).
 The depicted example uses the server name "TODD":<br>
 ![X509-MMC](/{{ product }}/assets/images/documentation/access-restriction/X509-MMC.png){:class="img-responsive"}
-4. After importing the X.509 certificate, right-click the certificate to access the **Manage private keys** menu and add a permission entry for the Windows user that runs the {{ serviceName }} Windows service.
-5. Click **[Pick Certificate]** and select the X.509 certificate from the list of available certificates.
-6. Enter "NT Service\{{ serviceName }} Service" within the object picker menu, click **[Check Names]** and apply the changes.<br>
+4. Right-click the certificate and navigate to **All Tasks > Manage private keys** to add a new permission entry for the Windows user that runs the {{ serviceName }} Windows service.
+5. Enter the object name "NT Service\{{ serviceName }} Service" and click **[Check Names]** before applying the changes.<br>
 ![certificate](/{{ product }}/assets/images/documentation/access-restriction/x509-certificate-permission.png){:class="img-responsive"}
 
 The certificate is now available on your machine.

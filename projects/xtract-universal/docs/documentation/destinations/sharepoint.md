@@ -20,11 +20,16 @@ If your SharePoint server isn't configured for remote access already, go to **Ce
 
 
 #### SharePoint on-premises or SharePoint Online
-Select the type of SharePoint environment you are going to export to.
+Select the type of SharePoint environment to write data to.
 
 #### Site URL
-Enter the URL of your SharePoint server here (optionally including sub-directories if you want to export into a specific site on the server).<br>
-Make sure you only enter the base path, omit page information a browser might show you in the address line like `_layouts/15/start.aspx#/` or similar.
+Enter the URL of your SharePoint server. To write data to a specific site on the server, include the sub-directories in the URL.
+The URL uses the following format: 
+- SharePoint Online: `https://<your-tenant>.sharepoint.com/sites/<your-site-name>`
+- SharePoint on-premises: `http(s)://<your-server-name or domain>/<site-path>`
+
+!!! note
+	Make sure you only enter the base path, omit page information a browser might show you in the address line like `_layouts/15/start.aspx#/` or similar.
 
 #### User
 Enter your SharePoint user name.

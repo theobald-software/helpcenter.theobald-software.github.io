@@ -3,53 +3,65 @@
 -#}
 {% extends "base.html" %}
 
-{% block announce %}
-  <p>Join us on our <a href="https://communityday25.theobald-software.com/">Community Days</a> on May 6 in Stuttgart or on October 30 in Cologne! This event for partners and customers is all about networking, exciting sessions about new innovations and the direct exchange with our SAP data integration experts.<p>
-{% endblock %}
 
 {% block extrahead %}
 
   <link rel="stylesheet" href="{{ 'assets/stylesheets/custom.00c04c02.min.css' | url }}">
-
-<script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Article",
-      "author": [{
-          "@type": "Organization",
-          "name": "Theobald Software GmbH",
-          "url": "https://theobald-software.com/"
-      }]
-	}
-</script>
-  
-   <meta property="og:url" content="{{ page.canonical_url }}">
-  {% if page and page.meta and page.meta.title %}
-    <meta property="og:title" content="{{ page.meta.title }}">
-  {% elif page and page.title and not page.is_homepage %}
-    <meta property="og:title" content="{{ page.title }} - {{ config.site_name }}">
-  {% else %}
-    <meta property="og:title" content="{{ config.site_name }}">
+  <link rel="stylesheet" href="{{ 'assets/stylesheets/round-edges.css' | url }}">
+  <link rel="stylesheet" href="{{ 'assets/stylesheets/home.css' | url }}">
+  {% if page.meta %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Xtract Universal",
+    "operatingSystem": "Windows",
+    "applicationCategory": "BusinessApplication",
+    "url": "https://theobald-software.com/en/xtract-universal/",
+    "description": "{{ page.description | default('Technical documentation of Xtract Universal.') }}",
+    "author": {
+      "@type": "Organization",
+      "name": "Theobald Software",
+      "url": "https://theobald-software.com/"
+    }
+  }
+  </script>
   {% endif %}
-  <meta property="og:description" content="{{ config.site_description }}">
-  <meta property="og:image:alt" content="Image alt">
-
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:site" content="@username">
-  <meta name="twitter:creator" content="@username">
-  {% if page and page.meta and page.meta.title %}
-    <meta property="twitter:title" content="{{ page.meta.title }}">
-  {% elif page and page.title and not page.is_homepage %}
-    <meta property="twitter:title" content="{{ page.title }} - {{ config.site_name }}">
-  {% else %}
-    <meta property="twitter:title" content="{{ config.site_name }}">
-  {% endif %}
-  <meta name="twitter:description" content="{{ config.site_description }}">
-  <meta name="twitter:image:alt" content="Image alt">
-
 {% endblock %}
 
 {% block scripts %}
   {{ super() }}
   <script src="{{ 'assets/javascripts/custom.9c11c319.min.js' | url }}"></script>
+{% endblock %}
+
+{% block tabs %}
+  
+{{ super() }}
+
+<!-- Main site Entry button descriptions -->
+<section class="tx-container">
+    <div class="md-grid md-typeset">
+      <div class="tx-hero">
+        <div class="tx-hero__image">
+            <svg width="100%" height="100%" viewBox="0 0 10 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+                <path d="M4.055,2.944c-0.005,0.276 -0.002,2.712 0.008,2.988c0.003,0.048 0.013,0.095 0.032,0.139c0.043,0.102 0.127,0.184 0.229,0.224c0.042,0.016 0.085,0.025 0.13,0.028c0.528,0.021 0.583,0.021 1.111,0c0.045,-0.003 0.088,-0.012 0.13,-0.028c0.096,-0.038 0.176,-0.112 0.221,-0.205c0.018,-0.037 0.029,-0.076 0.036,-0.116c0.002,-0.014 0,0.023 0.004,-0.042c0.045,-1.201 0.001,-2.404 0.001,-3.606l0.8,-0.801l0.801,0.801l0,4.344c-0.001,0.154 -0.024,0.283 -0.071,0.417c-0.084,0.238 -0.241,0.448 -0.445,0.597c-0.099,0.072 -0.207,0.129 -0.322,0.17c-0.124,0.043 -0.253,0.066 -0.384,0.07c-1.036,0.018 -1.6,0.008 -2.637,0c-0.136,-0.002 -0.271,-0.025 -0.4,-0.07c-0.133,-0.048 -0.259,-0.118 -0.369,-0.207c-0.181,-0.145 -0.32,-0.341 -0.397,-0.56c-0.048,-0.134 -0.07,-0.275 -0.071,-0.417c0,-0.522 -0.006,-3.204 -0.007,-3.726l1.6,0Z" style="fill:#fff;"/>
+            </svg>
+          <!--<img src="assets/images/logos/products/XtractUniversal.png" draggable="false">-->
+        </div>
+        <div class="tx-hero__content">
+          <h1>Connect. Integrate. Simplify.</h1>
+          <p> {{ config.site_description }}</p>
+          
+          <a href="getting-started/" title="Go to Getting Started" class="md-button md-button--primary">
+            Get Started
+          </a>
+          <a href="https://portal.theobald-software.com/" title="Open the Theobald Software Customer Portal" class="md-button">
+            Get the latest Version
+          </a>
+        
+        </div>
+      </div>
+    </div>
+</section>
+
 {% endblock %}
