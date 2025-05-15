@@ -58,8 +58,8 @@ The following Xtract Universal specific custom script expressions are supported:
 |<pre>#{Extraction.FullyQualifiedExtractionName}#</pre> | Name of the extraction. If the extraction is part of an [extraction group](../organize-extractions.md), the name of the extraction group is included in the extraction name. This option avoids conflicts, when the extraction names are not unique. |
 |<pre>#{Extraction.TableName }#</pre> |  Name of the database table extracted data is written to. |
 |<pre>#{Extraction.RowsCount }#</pre> | Count of the extracted rows. |
-|<pre>#{Extraction.RunState}#</pre> |  Status of the extraction (Running, FinishedNoErrors, FinishedErrors). |
-|<pre>#{(int)Extraction.RunState}#</pre> |  Status of the extraction as number (2 = Running, 3 = FinishedNoErrors, 4 = FinishedErrors). |
+|<pre>#{Extraction.RunState}#</pre> |  Status of the extraction (Running, FinishedNoErrors, FinishedErrors, Cancelled). |
+|<pre>#{(int)Extraction.RunState}#</pre> |  Status of the extraction as number (2 = Running, 3 = FinishedNoErrors, 4 = FinishedErrors, 6 = Cancelled). |
 |<pre>#{Extraction.Timestamp}#</pre> |  Timestamp of the extraction.  |
 
 <!--- --8<-- [end:script] -->

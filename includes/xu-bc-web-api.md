@@ -193,6 +193,7 @@ Returns the status of a (running) extraction at the specified timestamp. <br>
 | Running          | The extraction is running.                                   |
 | FinishedNoErrors | The extraction is finished without errors.             |
 | FinishedErrors   | The extraction is finished, but with at least one error. |
+| Cancelled        | The extraction is finished and was cancelled by the user. |
 
 #### Example
 
@@ -223,7 +224,7 @@ The result contains the following elements:
 | runs  | contains *rowCount*, *duration*, *state*, *webServerLog* and *startedAt* of extraction runs |
 | row count| number of extracted data records |
 | duration | duration of the execution |
-| state| status of the extraction (*Running*, *FinishedNoErrors*, *FinishedErrors*) |
+| state| status of the extraction (*Running*, *FinishedNoErrors*, *FinishedErrors*, *Cancelled*) |
 | webServerLog| timestamp of the corresponding [server log](documentation/logs.md#log-levels) |
 | startedAt| timestamp of the execution |
 
@@ -575,7 +576,7 @@ The result contains the following elements:
 | latestRun| contains *rowCount*, *duration*, *state* and *startedAt* of the latest extraction run |
 | rowCount| number of the last extracted data records |
 | duration | duration of the last execution |
-| state| status of the extraction (*Running*, *FinishedNoErrors*, *FinishedErrors*) |
+| state| status of the extraction (*Running*, *FinishedNoErrors*, *FinishedErrors*, *Cancelled*) |
 | startedAt| timestamp of the last execution |
 | created| contains *machine*, *timestamp* and *user* of when the extraction was created|
 | machine| machine on which the extraction was created |
