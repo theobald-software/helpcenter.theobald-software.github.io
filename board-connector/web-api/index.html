@@ -5829,6 +5829,10 @@ The web API returns the result as an http-json stream.</p>
 <td>FinishedErrors</td>
 <td>The extraction is finished, but with at least one error.</td>
 </tr>
+<tr>
+<td>Cancelled</td>
+<td>The extraction is finished and was cancelled by the user.</td>
+</tr>
 </tbody>
 </table>
 <h4 id="example_1">Example<a class="headerlink" data-preview="" href="#example_1" title="Permanent link"></a></h4>
@@ -5871,7 +5875,7 @@ The web API returns the result as an http-json stream.</p>
 </tr>
 <tr>
 <td>state</td>
-<td>status of the extraction (<em>Running</em>, <em>FinishedNoErrors</em>, <em>FinishedErrors</em>)</td>
+<td>status of the extraction (<em>Running</em>, <em>FinishedNoErrors</em>, <em>FinishedErrors</em>, <em>Cancelled</em>)</td>
 </tr>
 <tr>
 <td>webServerLog</td>
@@ -6230,7 +6234,7 @@ Response:
 </tr>
 <tr>
 <td>state</td>
-<td>status of the extraction (<em>Running</em>, <em>FinishedNoErrors</em>, <em>FinishedErrors</em>)</td>
+<td>status of the extraction (<em>Running</em>, <em>FinishedNoErrors</em>, <em>FinishedErrors</em>, <em>Cancelled</em>)</td>
 </tr>
 <tr>
 <td>startedAt</td>
