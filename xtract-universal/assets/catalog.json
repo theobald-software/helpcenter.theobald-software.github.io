@@ -1,5 +1,16 @@
 [
   {
+    "Version": "2025.5.22.0",
+    "LegacyReleaseDate": "2025-05-22 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "XtractUniversal",
+        "Component": "Designer",
+        "Message": "Fixed a bug where the designer logon with a different domain user would not work. Fixed extraction cancellation not working in the designer due to missing credentials when using custom users."
+      }
+    ]
+  },
+  {
     "Version": "2025.5.14.26",
     "LegacyReleaseDate": "2025-05-14 00:00:00Z",
     "Changes": [
