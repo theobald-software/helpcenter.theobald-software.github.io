@@ -1,5 +1,16 @@
 [
   {
+    "Version": "2025.5.22.15",
+    "LegacyReleaseDate": "2025-05-22 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "BWCube",
+        "Message": "MDX: fixed a bug where value lookup for variables would throw an exception when extraction was created with version not supporting hierarchies"
+      }
+    ]
+  },
+  {
     "Version": "2025.4.17.27",
     "LegacyReleaseDate": "2025-04-17 00:00:00Z",
     "Changes": [
