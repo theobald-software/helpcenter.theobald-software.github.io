@@ -1,5 +1,27 @@
 [
   {
+    "Version": "2025.5.26.1",
+    "LegacyReleaseDate": "2025-05-26 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "XtractUniversal",
+        "Component": "Parquet",
+        "Message": "Fixed a bug where the parquet destination type is not selected in the edit details window"
+      }
+    ]
+  },
+  {
+    "Version": "2025.5.22.22",
+    "LegacyReleaseDate": "2025-05-22 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "BWCube",
+        "Message": "MDX: fixed a bug where value lookup for variables would throw an exception when extraction was created with version not supporting hierarchies"
+      }
+    ]
+  },
+  {
     "Version": "2025.5.22.0",
     "LegacyReleaseDate": "2025-05-22 00:00:00Z",
     "Changes": [
