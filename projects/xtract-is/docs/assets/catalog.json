@@ -1,5 +1,16 @@
 [
   {
+    "Version": "2025.5.29.0",
+    "LegacyReleaseDate": "2025-05-29 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "XtractIS",
+        "Component": "DeltaQ",
+        "Message": "Fixed a bug when reading variables from legacy packages when they were persisted with their full qualified name (bug introduced in 2025.4.10.50)"
+      }
+    ]
+  },
+  {
     "Version": "2025.5.22.17",
     "LegacyReleaseDate": "2025-05-22 00:00:00Z",
     "Changes": [
