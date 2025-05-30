@@ -66,6 +66,13 @@ Follow the steps below to set up the authentication with Microsoft:
 !!! tip
 	You can also use the regular [Table](../table/index.md) extraction type to extract the initial full load of the Table.
 
+## Video Demo
+
+The following YouTube video demonstrates how to set up the {{ page.meta.title }} destination to synchronize SAP data.
+
+<div class="video-wrapper"> 
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/036KkyIvtS0?si=o4xcKqjD0Qdu4Khm&amp;start=1336" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 
 
 {% include "destinations/create-destination.md" %}
