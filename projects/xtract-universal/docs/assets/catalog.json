@@ -1,5 +1,16 @@
 [
   {
+    "Version": "2025.5.30.26",
+    "LegacyReleaseDate": "2025-05-30 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "XtractUniversal",
+        "Component": "Designer",
+        "Message": "Fixed a bug where the output tab in the run window would not show any data."
+      }
+    ]
+  },
+  {
     "Version": "2025.5.30.19",
     "LegacyReleaseDate": "2025-05-30 00:00:00Z",
     "Changes": [
