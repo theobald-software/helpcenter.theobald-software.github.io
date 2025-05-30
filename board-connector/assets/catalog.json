@@ -1,5 +1,16 @@
 [
   {
+    "Version": "2025.5.29.8",
+    "LegacyReleaseDate": "2025-05-29 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "TableCDC",
+        "Message": "Fixed a bug which did not display the field ascending index icon upon metadata refresh"
+      }
+    ]
+  },
+  {
     "Version": "2025.5.28.16",
     "LegacyReleaseDate": "2025-05-28 00:00:00Z",
     "Changes": [
