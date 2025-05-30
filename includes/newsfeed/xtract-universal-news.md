@@ -1,6 +1,16 @@
 <div class="grid cards" markdown>
 
 
+-   **:fontawesome-solid-triangle-exclamation: Deprecated Authenthication for Snowflake**
+
+    ---
+
+    Snowflake has [announced](https://docs.snowflake.com/en/user-guide/security-mfa-rollout) the deprecation of single-factor password authentication. Users currently using basic authentication for their Snowflake destination should therefore migrate to [Key Pair authentication](./documentation/destinations/snowflake.md/#authentication).
+
+    ---
+
+    :material-clock-time-two-outline: 2025-05-30
+
 -   **:material-alert-decagram: Microsoft Fabric Mirroring Destination**
 
     ---
@@ -25,7 +35,7 @@
 
     ---
 
-    The new [OData connectivity](documentation/sap-connection/index.md) enables communication to SAP on-premises and SAP cloud systems to consume data provided by SAP OData services. The [OData component](documentation/odata/index.md) is a beta release for upcoming features.
+    The new [OData connectivity](documentation/sap-connection/index.md/#connect-to-sap) enables communication to SAP on-premises and SAP cloud systems to consume data provided by SAP OData services. The [OData component](documentation/odata/index.md) is a beta release for upcoming features.
 
     ---
 
