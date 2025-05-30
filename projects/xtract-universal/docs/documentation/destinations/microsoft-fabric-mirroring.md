@@ -3,6 +3,7 @@ title: Microsoft Fabric Mirroring
 description: How to set up open mirroring of SAP in Xtract Universal
 status: beta
 attempt: seven
+id: mirroring
 ---
 
 This page shows how to set up and use the {{ page.meta.title }} destination.
@@ -66,7 +67,7 @@ Follow the steps below to set up the authentication with Microsoft:
 !!! tip
 	You can also use the regular [Table](../table/index.md) extraction type to extract the initial full load of the Table.
 
-## Video Demo
+## Demonstration Video
 
 The following YouTube video demonstrates how to set up the {{ page.meta.title }} destination to synchronize SAP data.
 
