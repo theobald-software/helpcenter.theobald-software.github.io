@@ -83,12 +83,24 @@ The selected region must match the information in the assigned account.
 
 ![Destination-Details](../../assets/images/documentation/destinations/snowflake/destination-details_3.png){:class="img-responsive"}
 
+
 #### Username
 Enter the Snowflake authentication user name. 
 
 #### Basic
 If this option is active, basic authentication is used for authentication.
 Enter the Snowflake authentication password of the user in the field **Password**.
+
+
+!!! warning 
+	**Deprecation of single-factor password sign-ins.**<br>
+	Snowflake announced the deprecation of single-factor password sign-ins to enforce more secure authentication.
+	This affects the basic authentication option in {{ productName }}.
+	To comply with the new authentication policy, we recommend using Key Pair authentication.
+	Snowflake will enforce the new authentication policy around June to October 2025.
+	For more information, refer to the [Snowflake Documentation: Deprecation of single-factor password sign-ins](https://docs.snowflake.com/en/user-guide/security-mfa-rollout).
+
+
 
 #### Key Pair
 If this option is active, key pairs are used for authentication, see [Snowflake Documentation: Key Pair Authentication & Key Pair Rotation](https://docs.snowflake.com/en/user-guide/key-pair-auth).
