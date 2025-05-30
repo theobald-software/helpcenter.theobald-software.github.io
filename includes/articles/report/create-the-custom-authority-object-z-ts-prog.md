@@ -1,5 +1,5 @@
 
-The following article shows how to create the Z_TS_PROG authorization object for the custom function module Z_XTRACT_IS_REMOTE_REPORT.<br>
+The following article shows how to create the Z_TS_PROG authorization object for the custom function module The Theobald Software custom function module [Z_XTRACT_IS_REMOTE_REPORT](../documentation/setup-in-sap/custom-function-module-for-reports.md) enables the extractions of reports from SAP systems.<br>
 
 The Theobald Software custom function module Z_XTRACT_IS_REMOTE_REPORT enables the extractions of reports from SAP systems.
 If no authorization group is assigned to a report, Z_XTRACT_IS_REMOTE_REPORT uses a custom authorization object Z_TS_PROG to verify whether the SAP user is allowed to extract a report. 
@@ -35,4 +35,3 @@ The access to reports is granted based on the name of the report.
 #### Related Links
 - [Authorize Access to Reports via Authorization Groups](./authorize-access-to-specific-reports.md)
 - [SAP Authorization Objects for Reports](../documentation/setup-in-sap/sap-authority-objects.md/#report)
-- [Documentation: Report](../documentation/report/index.md)

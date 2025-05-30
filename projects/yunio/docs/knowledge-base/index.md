@@ -23,6 +23,7 @@ hide:
 <div class="mdx-columns" markdown>
 
 - [Check the Accessibility to an SAP System](check-the-accessibility-to-an-sap-system.md)
+- [Create / Configure the Custom Authorization Object Z_TS_PROG](create-the-custom-authority-object-z-ts-prog.md)
 - [Import an SAP Transport Request](import-an-sap-transport-request.md)
 - [Supported SAP S/4HANA Versions](supported-sap-and-hana-versions.md)
 

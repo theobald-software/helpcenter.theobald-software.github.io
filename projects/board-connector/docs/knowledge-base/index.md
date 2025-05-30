@@ -30,7 +30,7 @@ hide:
 - [Check the Accessibility to an SAP System](check-the-accessibility-to-an-sap-system.md)
 - [Access Data in the SAP Public Cloud](access-data-in-the-sap-public-cloud.md) 
 - [Authorize Access to Reports via Authorization Groups](authorize-access-to-specific-reports.md)
-- [Create the Custom Authorization Object Z_TS_PROG](create-the-custom-authority-object-z-ts-prog.md)
+- [Create / Configure the Custom Authorization Object Z_TS_PROG](create-the-custom-authority-object-z-ts-prog.md)
 - [Create a Client PSE to connect to SAP Cloud Systems](create-personal-security-environment.md)
 - [Enable Secure Network Communication (SNC) via X.509 certificate](enable-snc-using-pse-file.md)
 - [Import an SAP Transport Request](import-an-sap-transport-request.md)
@@ -104,7 +104,7 @@ hide:
 <div class="mdx-columns" markdown>
 
 - [Authorize Access to Reports via Authorization Groups](authorize-access-to-specific-reports.md)
-- [Create the Custom Authorization Object Z_TS_PROG](create-the-custom-authority-object-z-ts-prog.md)
+- [Create / Configure the Custom Authorization Object Z_TS_PROG](create-the-custom-authority-object-z-ts-prog.md)
 - [Parse Reports in {{ productName }} :material-alert-decagram:](parse-reports.md)
 
 </div>
