@@ -1,5 +1,16 @@
 [
   {
+    "Version": "2025.5.30.2",
+    "LegacyReleaseDate": "2025-05-30 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "XtractIS",
+        "Component": "ODP",
+        "Message": "Fixed an issue where values of fields of type posting period (ACCP) were not set correctly"
+      }
+    ]
+  },
+  {
     "Version": "2025.5.29.5",
     "LegacyReleaseDate": "2025-05-29 00:00:00Z",
     "Changes": [
