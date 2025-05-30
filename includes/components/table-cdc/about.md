@@ -32,7 +32,7 @@ For a detailed overview of this process, refer to the Knowledge Base article [De
 ### Prerequisites
 
 - SAP custom function module [/THEO/CDC_ECC or /THEO/CDC_S4](../setup-in-sap/custom-function-module-for-tablecdc.md) is installed in SAP.
-- SAP custom function module [/THEO/READ_TABLE or Z_THEO_READ_TABLE](../setup-in-sap/custom-function-module-for-table-extraction.md) version 2.10 or higher is installed in SAP.
+- SAP custom function module [/THEO/READ_TABLE](../setup-in-sap/custom-function-module-for-table-extraction.md) is installed in SAP.
 - A connection to an SAP system is available, see [SAP Connection](../sap-connection/index.md).
 - The SAP user has sufficient user rights, see [SAP Authority Objects](../setup-in-sap/sap-authority-objects.md/#table-cdc).
 

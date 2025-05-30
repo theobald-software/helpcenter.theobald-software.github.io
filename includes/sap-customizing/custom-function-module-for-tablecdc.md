@@ -10,9 +10,9 @@ Make sure to install the correct transport request for your SAP system:
 
 | SAP System | Function Group | Directory |
 |-----------|------------------------|------------|
-| SAP ECC Systems | THEO_CDC_ECC | <pre>{{ installationDir }}\ABAP\TableCDC\THEO_CDC_ECC.zip</pre> |
-| SAP S/4 Systems with SAP_BASIS Version < 7.55 | THEO_CDC_S4 | <pre>{{ installationDir }}\ABAP\TableCDC\THEO_CDC_S4.zip</pre> |
-| SAP S/4 Systems with SAP_BASIS Version &GreaterEqual; 7.55 | THEO_CDC_S4_755 | <pre>{{ installationDir }}\ABAP\TableCDC\THEO_CDC_S4_755.zip</pre> |
+| SAP ECC Systems | THEO_CDC_ECC | *{{ installationDir }}\ABAP\TableCDC\THEO_CDC_ECC.zip* |
+| SAP S/4 Systems with SAP_BASIS Version < 7.55 | THEO_CDC_S4 | *{{ installationDir }}\ABAP\TableCDC\THEO_CDC_S4.zip* |
+| SAP S/4 Systems with SAP_BASIS Version &GreaterEqual; 7.55 | THEO_CDC_S4_755 | *{{ installationDir }}\ABAP\TableCDC\THEO_CDC_S4_755.zip* |
 
 
 The transport request needs to be imported into SAP by your SAP Basis team.<br>

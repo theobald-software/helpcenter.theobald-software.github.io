@@ -21,14 +21,14 @@ The access to reports is granted based on the name of the report.
 
 
 ### Configure the Custom Authorization Object Z_TS_PROG
-1. Either download the provided [SAP role](../documentation/setup-in-sap/sap-authority-objects.md/#sap-authorization-profiles) or create the [Custom Authorization Object](#create-the-custom-authorization-object-z_ts_prog).
-2. To configure the object, enter the change mode within the "Role Maintenance" window.
-3. Navigate to *Authorizations* and click [**:pen-button:**] *Change Authorization Data*. The window "Change Role: Authorizations" opens.
-4. Expand the tree "Basis: Administration" > "Theobald Software authorization for reports".<br>
+1. Either download the provided [SAP role](../documentation/setup-in-sap/sap-authority-objects.md/#sap-authorization-profiles) or manually [create the Custom Authorization Object Z_TS_PROG](#create-the-custom-authorization-object-z_ts_prog).
+2. Enter the change mode within the "Role Maintenance" window to configure the object.
+3. Navigate to *Authorizations* and click *Change Authorization Data* (:pen-button:). The window "Change Role: Authorizations" opens.
+4. Expand the tree view **Basis: Administration > Theobald Software authorization for reports**.<br>
 ![change-role](site:assets/images/articles/report/sap-change-role-authorizations.png) 
-5. Click [**:pen-button:**], "Field values" window opens.<br>
+5. Click **[:pen-button:]**. The window "Field values" opens.<br>
 ![report-field-values](site:assets/images/articles/report/sap-edit-authorization-object-field-values.png)
-6. Enter the names of the concerned ABAP report names and transfer the values.
+6. Enter the names of relevant ABAP reports and transfer the corresponding values.
 
 *****
 
