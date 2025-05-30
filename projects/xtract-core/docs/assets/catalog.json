@@ -1,5 +1,49 @@
 [
   {
+    "Version": "2025.5.30.19",
+    "LegacyReleaseDate": "2025-05-30 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "BWCube",
+        "Message": "MDX: fixed a bug where a dot (.) in BEx variable value would cause errors"
+      }
+    ]
+  },
+  {
+    "Version": "2025.5.28.14",
+    "LegacyReleaseDate": "2025-05-28 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Server",
+        "Component": "General",
+        "Message": "Fixed parallelization issues during extraction initialization. This disables multiple extractions running in the same process. Any subsequent extraction request will wait. Improved logging in the config server. Create, update and delete operations for most objects will now be logged."
+      }
+    ]
+  },
+  {
+    "Version": "2025.5.22.22",
+    "LegacyReleaseDate": "2025-05-22 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "BWCube",
+        "Message": "MDX: fixed a bug where value lookup for variables would throw an exception when extraction was created with version not supporting hierarchies"
+      }
+    ]
+  },
+  {
+    "Version": "2025.5.14.26",
+    "LegacyReleaseDate": "2025-05-14 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Server",
+        "Component": "General",
+        "Message": "Reworked error handling during extraction cancellation. A new state for extractions is introduced: 'Cancelled'. Fixed logging for the extraction cancellation."
+      }
+    ]
+  },
+  {
     "Version": "2025.4.23.65",
     "LegacyReleaseDate": "2025-04-23 00:00:00Z",
     "Changes": [
