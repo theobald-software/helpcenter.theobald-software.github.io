@@ -1,5 +1,27 @@
 [
   {
+    "Version": "2025.6.3.30",
+    "LegacyReleaseDate": "2025-06-03 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "BWCube",
+        "Message": "BICS: Support for filters on dimension attributes"
+      }
+    ]
+  },
+  {
+    "Version": "2025.6.2.70",
+    "LegacyReleaseDate": "2025-06-02 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "BWCube",
+        "Message": "BICS: Fixed a bug where dimensions with multiple value representations could lead to errors"
+      }
+    ]
+  },
+  {
     "Version": "2025.5.30.20",
     "LegacyReleaseDate": "2025-05-30 00:00:00Z",
     "Changes": [
