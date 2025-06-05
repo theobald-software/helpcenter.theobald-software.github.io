@@ -2,10 +2,6 @@
 The following article shows how to access data from the SAP S/4HANA Public Cloud.
 {{ productName }} can access BAPIs / Function Modules that are available via SAP *Communication Scenarios*.
 
-!!! note
-	{{ productName }} only supports data extraction via RFC service using the [{{ bapi }} {{ component }}](../documentation/bapi/index.md). 
-	Data extraction via OData is currently in development and is scheduled to be released in Q4 2024.
-	Other {{ components }} cannot access data in the SAP Public Cloud. 
 
 ### About Communication Scenarios
 

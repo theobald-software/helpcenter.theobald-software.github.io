@@ -1,7 +1,9 @@
 
 ### Installation
 
-![Designer-Login](assets/images/getting-started/{{ abbr }}/Designer-login.png){:class="img-responsive" align=right width="380px"}
+Follow the steps below to install {{ productName }} for the first time:
+
+![Designer-Login](assets/images/getting-started/{{ abbr }}/Designer-login.png){:class="img-responsive" align=right width="370px"}
 
 1. [Download](https://theobald-software.com/en/download-trial/) a 30 day trial version of {{ productName }}.
 2. Run the {{ productName }} executable ({{ setup }}Setup.exe) to install the [{{ productName }} Designer and the {{ productName }} Server](documentation/introduction.md/#software-architecture).
@@ -17,7 +19,7 @@ There are two types of SAP connections:
 - connect via [RFC protocol](documentation/sap-connection/settings.md/#source-type-rfc) (default)
 - connect via [OData protocol](documentation/sap-connection/settings.md/#source-type-odata)
 
-The depicted example shows how to connect to SAP using the RFC protocol. 
+Follow the steps below to connect to SAP using the standard RFC protocol.
 
 1. Before connecting to SAP via RFC for the first time, set up an SAP dialog user with the necessary [SAP user rights](documentation/setup-in-sap/sap-authority-objects.md/#general-authorization-objects).
 2. In the main window of the Designer, click **[:material-plus-thick:New]**. The window "Change Source" opens.<br>

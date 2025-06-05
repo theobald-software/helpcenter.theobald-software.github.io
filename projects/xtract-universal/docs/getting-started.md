@@ -11,6 +11,13 @@ tags:
 
 ![img](assets/images/logos/theo-thumbs.png){ .lg .middle width="30px"} This section shows how to install and set up {{ productName }} for the first time. 
 
+
+Get started with {{ productName }} by watching our onboarding video or following the step-by-step instructions below.
+
+<div class="video-wrapper"> 
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/8rMl0NN00c8?si=Q9Z0J7rdXHsQ_hZD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
 {% include "xu-bc-getting-started.md" %}
 
 
@@ -48,9 +55,7 @@ Follow the steps below to add a new destination to {{ productName }}:
 
 	!!! note
 		To write data to an existing destination, select the destination from the **Destination** dropdown list.
-		The following default destinations are available after installation:
-		- [http-csv](documentation/destinations/csv-via-http.md)
-		- [http-json](documentation/destinations/json-via-http.md)
+		[http-csv](documentation/destinations/csv-via-http.md) and [http-json](documentation/destinations/json-via-http.md) are available by default.
 
 4. In the window "Destination Details", enter a name for the destination.
 4. Select a destination type from the drop-down menu. A list of connection details opens.<br>
