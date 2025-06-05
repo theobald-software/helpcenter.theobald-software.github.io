@@ -12,11 +12,12 @@ tags:
 ![img](assets/images/logos/theo-thumbs.png){ .lg .middle width="30px"} This section shows how to install and set up {{ productName }} for the first time. 
 
 
+### Video Introduction
+
 Get started with {{ productName }} by watching our onboarding video or following the step-by-step instructions below.
 
-<div class="video-wrapper"> 
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/8rMl0NN00c8?si=Q9Z0J7rdXHsQ_hZD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
+<iframe style="border: 1px solid black;" width="800" height="450" src="https://www.youtube.com/embed/8rMl0NN00c8?si=Q9Z0J7rdXHsQ_hZD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 
 {% include "xu-bc-getting-started.md" %}
 
