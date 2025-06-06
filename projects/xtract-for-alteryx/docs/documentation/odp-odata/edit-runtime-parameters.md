@@ -8,6 +8,7 @@ They can be created in context of [Selections](selections.md).
 
 {% include "components/edit-runtime-parameters.md" %}
 
+{% include "components/assign-runtime-parameters.md" %}
 ## Assign Runtime Parameters
 Follow the steps below to assign the runtime parameters to selections.
 

@@ -255,6 +255,7 @@ extra:
   deltaq: DeltaQ
   odp: ODP
   odata: OData
+  odpOdata: ODP(OData)
   ohs: OHS
   query: Query
   report: Report

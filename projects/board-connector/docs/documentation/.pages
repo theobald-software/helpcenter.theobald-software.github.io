@@ -9,6 +9,7 @@ nav:
     - BW Hierarchy: hierarchy
     - DeltaQ: deltaq
     - OData: odata
+    - ODP(OData): odp-odata
     - ODP: odp
     - Open Hub Services: ohs
     - Query: query
