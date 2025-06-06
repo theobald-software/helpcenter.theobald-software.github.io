@@ -1,5 +1,16 @@
 [
   {
+    "Version": "2025.6.6.25",
+    "LegacyReleaseDate": "2025-06-06 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "XtractUniversal",
+        "Component": "ODP OData",
+        "Message": "Added the ODP OData extractor (preview)"
+      }
+    ]
+  },
+  {
     "Version": "2025.6.3.29",
     "LegacyReleaseDate": "2025-06-03 00:00:00Z",
     "Changes": [
