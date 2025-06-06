@@ -1,6 +1,16 @@
 <div class="grid cards" markdown>
 
 
+-   **:material-alert-decagram: New ODP (OData) Extraction Type**
+
+    ---
+
+    In response to [SAP Note 3255746](https://me.sap.com/notesLatestChanges/0003255746/E/diff), we now offer ODP data extractions via OData protocol. Our new [ODP(OData)](./documentation/odp-odata/index.md) extraction type supports delta updates for ODP sources and is the latest addition to our OData connectivity. 
+
+    ---
+
+    :material-clock-time-two-outline: 2025-06-06
+
 -   **:fontawesome-solid-triangle-exclamation: Deprecated Authenthication for Snowflake**
 
     ---
