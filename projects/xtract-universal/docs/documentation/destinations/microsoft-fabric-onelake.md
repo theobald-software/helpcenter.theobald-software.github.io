@@ -8,6 +8,15 @@ This page shows how to set up and use the {{ page.meta.title }} destination.
 The {{ page.meta.title }} destination enables users to load SAP data to a Microsoft Fabric Lakehouse.
 
 
+## Demonstration Video
+
+The following video demonstrates how to set up the {{ page.meta.title }} destination and how to load SAP data into a Microsoft Fabric Lakehouse.
+
+<div class="video-wrapper"> 
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/2J00qUiKDkM?si=AdVqxKAndvuoUG_G&amp;start=1052" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+
 ## Requirements
 
 The {{ page.meta.title }} destination uses [Microsoft Entra ID (formerly Azure Active Directory)](https://www.microsoft.com/en-us/security/business/identity-access/microsoft-entra-id) with OAuth 2.0 for authentication.
@@ -29,6 +38,7 @@ For more information, see [Microsoft Documentation: Register an application in M
 	- Storage Blob Data Owner
 	
 	For more information, see [Microsoft Documentation: Assign an Azure role](https://learn.microsoft.com/en-us/azure/storage/blobs/assign-azure-role-data-access?tabs=portal#assign-an-azure-role).
+
 
 {% include "destinations/create-destination.md" %}
 

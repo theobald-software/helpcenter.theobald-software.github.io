@@ -22,6 +22,15 @@ For more information, see [Microsoft Documentation: Open mirroring in Microsoft 
 	Note that Microsoft Fabric Open Mirroring is still in preview. During preview, not all Fabric regions support Mirroring.
 	For more information, see [Microsoft Documentation: Microsoft Fabric preview information](https://learn.microsoft.com/en-us/fabric/fundamentals/preview).
 
+
+## Demonstration Video
+
+The following video demonstrates how to set up the {{ page.meta.title }} destination to synchronize SAP data with Microsoft Fabric.
+
+<div class="video-wrapper"> 
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/ey2lQDJIMB4?si=hgMHSDxK-A9KjghB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
 ## Workflow
 
 Follow the workflow below to set up Open Mirroring with {{ productName }}:
@@ -66,14 +75,6 @@ Follow the steps below to set up the authentication with Microsoft:
 
 !!! tip
 	You can also use the regular [Table](../table/index.md) extraction type to extract the initial full load of the Table.
-
-## Demonstration Video
-
-The following YouTube video demonstrates how to set up the {{ page.meta.title }} destination to synchronize SAP data.
-
-<div class="video-wrapper"> 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/036KkyIvtS0?si=o4xcKqjD0Qdu4Khm&amp;start=1336" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
 
 
 {% include "destinations/create-destination.md" %}
