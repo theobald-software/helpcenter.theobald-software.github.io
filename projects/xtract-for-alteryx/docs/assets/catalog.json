@@ -1,5 +1,16 @@
 [
   {
+    "Version": "2025.6.10.12",
+    "LegacyReleaseDate": "2025-06-10 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "XtractForAlteryx",
+        "Component": "General",
+        "Message": "Fixed an issue that caused DCM issues with Alteryx version 2025.1"
+      }
+    ]
+  },
+  {
     "Version": "2025.6.3.24",
     "LegacyReleaseDate": "2025-06-03 00:00:00Z",
     "Changes": [
