@@ -76,7 +76,7 @@ logonTicket | Changes the ticket issuer of the [SAP logon ticket](../sap-connect
 	- Extraction URL before changing the parameter:<br>
 	`http://sherri.theobald.local:8065/start/KNA1/`
 	- Extraction URL after editing the parameter **lang** (language setting for the SAP source system):<br>
-	`http://sherri.theobald.local:8065/start/KNA1/&lang=DE` 
+	`http://sherri.theobald.local:8065/start/KNA1/&lang=EN` 
 
 
 ### Custom
