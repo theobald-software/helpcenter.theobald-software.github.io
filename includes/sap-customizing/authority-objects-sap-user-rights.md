@@ -256,30 +256,37 @@ If the table is not listed, the authorization group is &NC&. For authorizing spe
 
 
 !!! note
-    The transport request for function group */THEO/READ_TABLE* and *Z_THEO_READ_TABLE* is located in the following path: ```C:\Program Files\[XtractProduct]\ABAP\Table``` of the default installation. 
+    The transport request for function group */THEO/READ_TABLE* and *Z_THEO_READ_TABLE* is located in the following path: ```{{ installationDir }}\ABAP\Table``` of the default installation. 
 
 
 Additional options:
 
-=== "Run Z_THEO_READ_TABLE in the background"
+=== "Run FM in the background"
 
     ``` title="Necessary SAP authorizations"
 	S_BTCH_ADM       BTCADMIN=Y
 	S_BTCH_JOB       JOBGROUP=*; JOBACTION=RELE
 	```
 
-=== "<i>Count Rows</i> button"
+=== "Count Rows button"
 
 	``` title="Necessary SAP authorizations"
 	S_RFC            RFC_TYPE=FUNC; RFC_NAME=EM_GET_NUMBER_OF_ENTRIES; ACTVT=16  
 	```
-
-=== "<i>Adjust currency decimals</i> setting"
+	
+=== "Adjust currency decimals"
 
 	``` title="Necessary SAP authorizations"
 	S_TABU_NAM       ACTVT=03; TABLE=TCURX
 	```
 
+<!--
+=== "<i>CDS Views with parameters</i> setting"
+
+	``` title="Necessary SAP authorizations"
+	S_TABU_NAM       ACTVT=03; TABLE=TCURX
+	```
+-->
 {% endif %}
 
 [:material-download-circle: Download SAP profile for Table](site:assets/files/sap_roles/ZXTABLE.SAP){ .md-button .md-button--primary }
@@ -302,7 +309,7 @@ XXXX (stands for a placeholder) is the authorization group for the source table.
 
 
 !!! note
-    The transport requests for the required function groups */THEO/READ_TABLE* are located in ```C:\Program Files\[XtractProduct]\ABAP\TableCDC``` and ```C:\Program Files\[XtractProduct]\ABAP\Table```. 
+    The transport requests for the required function groups */THEO/READ_TABLE* are located in ```{{ installationDir }}\ABAP\TableCDC``` and ```{{ installationDir }}\ABAP\Table```. 
 
 [:material-download-circle: Download SAP profile for Table CDC](site:assets/files/sap_roles/ZXTABLECDC.SAP){ .md-button .md-button--primary }
 
