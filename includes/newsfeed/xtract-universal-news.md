@@ -45,7 +45,7 @@
 
     ---
 
-    The new [OData connectivity](documentation/sap-connection/index.md/#connect-to-sap) enables communication to SAP on-premises and SAP cloud systems to consume data provided by SAP OData services. The [OData component](documentation/odata/index.md) is a beta release for upcoming features.
+    The new [OData connectivity](documentation/sap-connection/index.md) enables communication to SAP on-premises and SAP cloud systems to consume data provided by SAP OData services. The [OData component](documentation/odata/index.md) is a beta release for upcoming features.
 
     ---
 
