@@ -27,10 +27,10 @@ When activating TLS, the *Subject Alternative Name* is used as the new hostname.
 To display the Common Name (CN) of the certificate, double-click the certificate in the Cetrificate Manager and navigate to the *Details* tab.
 3. Import the certificate to the [Windows Certificate Store](https://technet.microsoft.com/en-us/ms788967(v=vs.91)) of the machine, that runs the {{ serviceName }} Windows service using the Microsoft Management Console (mmc.exe).
 The depicted example uses the server name "TODD":<br>
-![X509-MMC](/{{ product }}/assets/images/documentation/access-restriction/X509-MMC.png){:class="img-responsive"}
+![X509-MMC](site:{{ product }}/assets/images/documentation/access-restriction/X509-MMC.png){:class="img-responsive"}
 4. Right-click the certificate and navigate to **All Tasks > Manage private keys** to add a new permission entry for the Windows user that runs the {{ serviceName }} Windows service.
 5. Enter the object name "NT Service\{{ serviceName }} Service" and click **[Check Names]** before applying the changes.<br>
-![certificate](/{{ product }}/assets/images/documentation/access-restriction/x509-certificate-permission.png){:class="img-responsive"}
+![certificate](site:{{ product }}/assets/images/documentation/access-restriction/x509-certificate-permission.png){:class="img-responsive"}
 
 The certificate is now available on your machine.
 {% if page.meta.product == "yunio" %}For information on how to renew a certificate, see [Certificate Renewal for TLS](../knowledge-base/certificate-renewal.md).{% endif %}
@@ -91,10 +91,10 @@ The yunIO Designer and the services created in yunIO are now accessible via http
 ### Integrate the X.509 Certificate
 
 1. Open **Server > Settings** from the main window of the Designer. <br>
-![security-manage-users](/{{ product }}/assets/images/documentation/access-restriction/server-settings_manage.png){:class="img-responsive"}
+![security-manage-users](site:{{ product }}/assets/images/documentation/access-restriction/server-settings_manage.png){:class="img-responsive"}
 2. In the tab *Web Server*, click **[Select X.509 certificate]**. The window "Edit certificate location" opens.
 3. Select the X.509 certificate created for your machine under **Local Machine > Personal**.<br>
-![certificate-edit-location](/{{ product }}/assets/images/documentation/access-restriction/certificate-edit-location.png){:class="img-responsive"}
+![certificate-edit-location](site:{{ product }}/assets/images/documentation/access-restriction/certificate-edit-location.png){:class="img-responsive"}
 4. Click **[OK]** to confirm your input. If prompted, restart the server.
 
 The {{ productName }} server is now accessible via https protocol. 
