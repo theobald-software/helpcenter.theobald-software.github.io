@@ -1,5 +1,32 @@
 [
   {
+    "Version": "2025.6.13.21",
+    "LegacyReleaseDate": "2025-06-13 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "BoardConnector",
+        "Component": "General",
+        "Message": "Fixed a bug where the config converter would not call the correct executable for cleanup."
+      },
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "OHS",
+        "Message": "Fixed a bug where OHS data packages would not correctly communicate their size."
+      }
+    ]
+  },
+  {
+    "Version": "2025.6.12.22",
+    "LegacyReleaseDate": "2025-06-12 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Server",
+        "Component": "General",
+        "Message": "Fixed a bug where error information would not be handled correctly by the server causing broken responses or missing error information."
+      }
+    ]
+  },
+  {
     "Version": "2025.6.6.26",
     "LegacyReleaseDate": "2025-06-06 00:00:00Z",
     "Changes": [
