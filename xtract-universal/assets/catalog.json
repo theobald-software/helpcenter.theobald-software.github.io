@@ -1,5 +1,27 @@
 [
   {
+    "Version": "2025.6.12.21",
+    "LegacyReleaseDate": "2025-06-12 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Server",
+        "Component": "General",
+        "Message": "Fixed a bug where error information would not be handled correctly by the server causing broken responses or missing error information."
+      }
+    ]
+  },
+  {
+    "Version": "2025.6.10.5",
+    "LegacyReleaseDate": "2025-06-10 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "XtractUniversal",
+        "Component": "PostgreSQL",
+        "Message": "Fixed a bug to write Timestamp without time zone data type correctly (bug introduced in 2025.6.6.25)"
+      }
+    ]
+  },
+  {
     "Version": "2025.6.6.25",
     "LegacyReleaseDate": "2025-06-06 00:00:00Z",
     "Changes": [
