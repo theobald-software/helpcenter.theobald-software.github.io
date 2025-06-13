@@ -5700,10 +5700,10 @@ When activating TLS, the <em>Subject Alternative Name</em> is used as the new ho
 To display the Common Name (CN) of the certificate, double-click the certificate in the Cetrificate Manager and navigate to the <em>Details</em> tab.</li>
 <li>Import the certificate to the <a href="https://technet.microsoft.com/en-us/ms788967(v=vs.91)" target="_blank" rel="noopener">Windows Certificate Store</a> of the machine, that runs the BOARD Connector Windows service using the Microsoft Management Console (mmc.exe).
 The depicted example uses the server name "TODD":<br>
-<img alt="X509-MMC" class="img-responsive" src="/board-connector/board-connector/assets/images/documentation/access-restriction/X509-MMC.png" /></li>
+<img alt="X509-MMC" class="img-responsive" src="/board-connector/assets/images/documentation/access-restriction/X509-MMC.png" /></li>
 <li>Right-click the certificate and navigate to <strong>All Tasks &gt; Manage private keys</strong> to add a new permission entry for the Windows user that runs the BOARD Connector Windows service.</li>
 <li>Enter the object name "NT Service\BOARD Connector Service" and click <strong>[Check Names]</strong> before applying the changes.<br>
-<img alt="certificate" class="img-responsive" src="/board-connector/board-connector/assets/images/documentation/access-restriction/x509-certificate-permission.png" /></li>
+<img alt="certificate" class="img-responsive" src="/board-connector/assets/images/documentation/access-restriction/x509-certificate-permission.png" /></li>
 </ol>
 <p>The certificate is now available on your machine.</p>
 <div class="admonition note">
@@ -5714,10 +5714,10 @@ Configure your Firefox browser to trust certificates in the Windows certificate 
 <h3 id="integrate-the-x509-certificate">Integrate the X.509 Certificate<a class="headerlink" data-preview="" href="#integrate-the-x509-certificate" title="Permanent link"></a></h3>
 <ol>
 <li>Open <strong>Server &gt; Settings</strong> from the main window of the Designer. <br>
-<img alt="security-manage-users" class="img-responsive" src="/board-connector/board-connector/assets/images/documentation/access-restriction/server-settings_manage.png" /></li>
+<img alt="security-manage-users" class="img-responsive" src="/board-connector/assets/images/documentation/access-restriction/server-settings_manage.png" /></li>
 <li>In the tab <em>Web Server</em>, click <strong>[Select X.509 certificate]</strong>. The window "Edit certificate location" opens.</li>
 <li>Select the X.509 certificate created for your machine under <strong>Local Machine &gt; Personal</strong>.<br>
-<img alt="certificate-edit-location" class="img-responsive" src="/board-connector/board-connector/assets/images/documentation/access-restriction/certificate-edit-location.png" /></li>
+<img alt="certificate-edit-location" class="img-responsive" src="/board-connector/assets/images/documentation/access-restriction/certificate-edit-location.png" /></li>
 <li>Click <strong>[OK]</strong> to confirm your input. If prompted, restart the server.</li>
 </ol>
 <p>The Board Connector server is now accessible via https protocol. </p>
