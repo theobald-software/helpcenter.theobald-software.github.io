@@ -1,5 +1,16 @@
 [
   {
+    "Version": "2025.6.13.20",
+    "LegacyReleaseDate": "2025-06-13 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "OHS",
+        "Message": "Fixed a bug where OHS data packages would not correctly communicate their size."
+      }
+    ]
+  },
+  {
     "Version": "2025.6.12.21",
     "LegacyReleaseDate": "2025-06-12 00:00:00Z",
     "Changes": [
