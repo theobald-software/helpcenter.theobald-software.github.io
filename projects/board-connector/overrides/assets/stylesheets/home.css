@@ -253,3 +253,70 @@
   /* background-color: rgba(0, 0, 0, 0.05); /* Optional: Add a subtle background change */
 }
 
+
+.exploded-cards {
+    margin: 2.4rem 0;
+}
+
+.exploded-cards h2 {
+    font-weight: 700;
+    margin-top: .175em;
+}
+
+.exploded-cards h2 + h3 {
+    font-size: 1em;
+    margin-top: -.8em;
+}
+
+.exploded-cards > ul ul {
+    margin-left: 0 !important;
+}
+
+.exploded-cards > ul li {
+    margin-left: 0 !important;
+}
+
+.exploded-cards > ul {
+    display: flex !important;
+    flex-flow: row wrap;
+    gap: 1.6rem;
+    padding: 0;
+}
+
+.exploded-cards > ul > li {
+    display: flex;
+    flex: 1 0 48%;
+    gap: .6rem;
+    margin: 0;
+    max-width: 50%;
+    transition: transform .75s cubic-bezier(.075, .85, .175, 1), opacity .75s;
+}
+
+@media screen and (max-width: 55em) {
+    .exploded-cards > ul > li {
+        max-width: initial;
+    }
+}
+
+.exploded-card-icon .twemoji {
+    all: revert !important;
+}
+
+.exploded-card-icon .twemoji svg {
+    all: revert !important;
+}
+
+.exploded-card-icon {
+    fill: currentcolor;
+    background-color: #DBDBDB;
+    border-radius: 100%;
+    flex-shrink: 0;
+    height: 2.2rem;
+    padding: .4rem;
+    width: 2.2rem;
+}
+
+.exploded-card-description > :last-child {
+    margin-bottom: 0;
+}
+
