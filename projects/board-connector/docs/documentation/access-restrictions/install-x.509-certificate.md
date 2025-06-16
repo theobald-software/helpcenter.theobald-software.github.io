@@ -1,6 +1,6 @@
 ---
 title: Install an X.509 Certificate
-description: Installing an X.509 Certificate
+description: How to install an X.509 Certificate for Transport Layer Security (TLS)
 ---
 
 

@@ -1,6 +1,6 @@
 ---
 title: Server Access
-description: Server Security
+description: How to restrict access to the server that runs extractions to specific specific users.
 ---
 
 

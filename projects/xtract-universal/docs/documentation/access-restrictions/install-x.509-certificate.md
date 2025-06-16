@@ -1,6 +1,6 @@
 ---
 title: Install an X.509 Certificate
-description: Installing an X.509 Certificate
+description: How to restrict access to the Designer, Sources or Extractions to specific specific users.
 ---
 
 
