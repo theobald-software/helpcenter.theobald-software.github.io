@@ -144,11 +144,7 @@ The input fields in the subsection *Access key parameters* / *SAS parameters* va
 	2. When prompted, sign in with your Microsoft credentials. Make sure that the user meets the following requirements:
 		- The user has the 'Storage Blob Data Contributor' or 'Owner' role in Azure Storage.
 		- The user does not use Multifactor Authentication (MFA) as extractions fail when the MFA of the user expires.
-	3. After the sign in, a list of requested permissions is displayed, see [Knowledge Base Article: Authentication via Microsoft Entra ID](../../knowledge-base/authentication-via-entra-id-with-azure-storage.md). <br>
-	![xu-azure-blob-con-4](../../assets/images/documentation/destinations/azure-storage/xu-azure-blob-con_4.png){:class="img-responsive"}
-	4. Click **[Accept]** to establish a connection to the storage account.
-
-	If the connection is successful, a "Connection successful" info window opens. 
+	3. If the connection is successful, a "Connection successful" info window opens. 
 
 	!!! warning
 		**The window "Entra ID" shows a blank screen.**<br>

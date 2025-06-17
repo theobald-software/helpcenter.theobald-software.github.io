@@ -60,8 +60,6 @@ Follow the steps below to connect {{ productName }} to the Azure Storage destina
 Make sure that the user meets the following requirements:
 	- The user has the 'Storage Blob Data Contributor' or 'Owner' role in Azure Storage.
 	- The user does not use Multifactor Authentication (MFA) as extractions fail when the MFA of the user expires.
-7. Click **[Accept]** to grant the permission to access data in Microsoft. <br>
-![azure-auth-in-xu](../assets/images/articles/xu/azure-storage/azure-auth-in-xu.png){:class="img-responsive"}
 8. If the connection is successful, a "Connection successful" message is displayed in a pop-up window.
 
 The destination is now ready to use.
