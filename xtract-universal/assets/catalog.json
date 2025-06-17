@@ -1,5 +1,16 @@
 [
   {
+    "Version": "2025.6.17.20",
+    "LegacyReleaseDate": "2025-06-17 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "XtractUniversal",
+        "Component": "Destinations",
+        "Message": "Changed EntraId authentication prompt mode in order to skip consent grant on MS Azure Storage, MS Fabric OneLake and MS Fabric Mirroring destinations."
+      }
+    ]
+  },
+  {
     "Version": "2025.6.13.20",
     "LegacyReleaseDate": "2025-06-13 00:00:00Z",
     "Changes": [
