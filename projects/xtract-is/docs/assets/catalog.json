@@ -1,5 +1,27 @@
 [
   {
+    "Version": "2025.6.18.8",
+    "LegacyReleaseDate": "2025-06-18 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "BAPI",
+        "Message": "Fixed an issue where input of decimal values was not possible"
+      }
+    ]
+  },
+  {
+    "Version": "2025.6.13.17",
+    "LegacyReleaseDate": "2025-06-13 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "OHS",
+        "Message": "Fixed a bug where OHS data packages would not correctly communicate their size."
+      }
+    ]
+  },
+  {
     "Version": "2025.5.30.17",
     "LegacyReleaseDate": "2025-05-30 00:00:00Z",
     "Changes": [
