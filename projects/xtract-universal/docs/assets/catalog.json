@@ -1,5 +1,27 @@
 [
   {
+    "Version": "2025.6.18.14",
+    "LegacyReleaseDate": "2025-06-18 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "XtractUniversal",
+        "Component": "DeltaQ",
+        "Message": "Fixed an UI bug that prevented changing the extractions timeout."
+      }
+    ]
+  },
+  {
+    "Version": "2025.6.18.10",
+    "LegacyReleaseDate": "2025-06-18 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "BAPI",
+        "Message": "Fixed an issue where input of decimal values was not possible"
+      }
+    ]
+  },
+  {
     "Version": "2025.6.17.20",
     "LegacyReleaseDate": "2025-06-17 00:00:00Z",
     "Changes": [
