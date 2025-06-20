@@ -1,5 +1,16 @@
 [
   {
+    "Version": "2025.6.20.10",
+    "LegacyReleaseDate": "2025-06-20 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Server",
+        "Component": "General",
+        "Message": "Fixed a soundness issue during worker startup, where workers could be killed while serving requests leading to corrupt extraction states in the worst case."
+      }
+    ]
+  },
+  {
     "Version": "2025.6.18.14",
     "LegacyReleaseDate": "2025-06-18 00:00:00Z",
     "Changes": [
