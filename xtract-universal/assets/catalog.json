@@ -1,5 +1,16 @@
 [
   {
+    "Version": "2025.6.20.13",
+    "LegacyReleaseDate": "2025-06-20 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "XtractUniversal",
+        "Component": "TableCDC",
+        "Message": "Changed the __rowMarker__ column to the last position and added _partnerEvents.json file upload on root folder."
+      }
+    ]
+  },
+  {
     "Version": "2025.6.20.10",
     "LegacyReleaseDate": "2025-06-20 00:00:00Z",
     "Changes": [
