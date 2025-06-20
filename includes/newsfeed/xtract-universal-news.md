@@ -1,6 +1,16 @@
 <div class="grid cards" markdown>
 
 
+-   **:material-file-document-outline: Extract Reports with ALV Layouts**
+
+    ---
+
+    You want to extract ABAP reports using the same ABAP List Viewer (ALV) layouts that you use in SAP? Our [Knowledge Base Article: Extract Reports with ALV Layouts](./knowledge-base/extract-report-layouts.md) shows you exactly how to do that. 
+
+    ---
+
+    :material-clock-time-two-outline: 2025-06-20
+
 -   **:material-alert-decagram: New ODP (OData) Extraction Type**
 
     ---
