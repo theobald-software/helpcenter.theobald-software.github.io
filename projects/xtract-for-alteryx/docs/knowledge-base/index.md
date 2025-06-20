@@ -76,6 +76,7 @@ hide:
 
 - [Authorize Access to Reports via Authorization Groups](authorize-access-to-specific-reports.md)
 - [Create / Configure the Custom Authorization Object Z_TS_PROG](create-the-custom-authority-object-z-ts-prog.md)
+- [Extract Reports with ALV Layouts](extract-report-layouts.md)
 - [Parse Reports in {{ productName }} :material-alert-decagram:](parse-reports.md)
 
 </div>
