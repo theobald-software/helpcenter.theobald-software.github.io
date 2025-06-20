@@ -1,5 +1,5 @@
 
-The following article shows how to extract data from ABAP reports using a pre-defined ABAP List Viewer (ALV) layout.
+The following article shows how to extract ABAP reports that use an SAP ABAP List Viewer (ALV) layout.
 
 ### About Layouts
 
