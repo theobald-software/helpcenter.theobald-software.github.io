@@ -112,10 +112,10 @@ plugins:
   - privacy:
       links_attr_map:
         target: _blank # opens all external links in new tabs
-  - projects:
-      projects_dir: projects
+  #- projects:
+      #projects_dir: projects
       #cache: false
-      hoisting: false
+      #hoisting: false
       #projects_config_transform: !!python/name:projects.transform
 # Continuous integration
   - group:
