@@ -23,7 +23,7 @@ Ziel ist es, Inhalte:
 |-------------------------------------------|--------------------------------------|-----------|
 | **Modularisierung**                        | :white_check_mark: vorhanden        | Includes (Dateifragmente) und kleinen Markdown-Dateien |
 | **Wiederverwendung**                       | :white_check_mark: vorhanden                         | Durch Includes, Snippets und Variablen |
-| **Variantenmanagement**                    | :white_check_mark: vorhanden                         | Mittels Variablen und bedingter Inhalte |
+| **Variantenmanagement**                    | :white_check_mark: vorhanden                         | Mittels Variablen und bedingter Inhalte (Frontmatter)|
 | **Metadatensteuerung**                     | :fontawesome-solid-circle-half-stroke: teilweise                         | Durch Dateinamen, Ordnerstruktur, Konventionen – kein Metadatenlayer |
 | **Semantische Struktur (z. B. Topic-Typen)** | :x: nicht explizit                   | Keine systematische Auszeichnung von Tasks, Concepts, Referenzen |
 | **Publikationsunabhängigkeit**             | :white_check_mark: vorhanden                         | Inhalte werden aus Quellmodulen dynamisch zusammengestellt |
@@ -31,6 +31,10 @@ Ziel ist es, Inhalte:
 | **Redaktionssystem / CCMS**                | :x: nicht vorhanden                   | Dateien auf Git, kein strukturiertes CMS |
 
 ---
+
+### Metadatensteuerung
+Metadaten im Frontmatter...
+
 
 ###  Fazit
 

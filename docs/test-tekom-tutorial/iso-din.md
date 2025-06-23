@@ -99,3 +99,4 @@ ISO/IEC 26514 hilft, Software-Dokumentationen nutzerfreundlich, verständlich un
 
 - [Best Practices der klassischen Technischen Dokumentation](classic-td-best-practices.md)
 - [Funktionsdesign und Strukturprinzipien](fuktionsdesign.md)
+- [ReX-Light-Ansatz in der Anwenderdokumentation von Theobald Software](rex-light.md)  

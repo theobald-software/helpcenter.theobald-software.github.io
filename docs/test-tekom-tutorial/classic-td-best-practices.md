@@ -127,5 +127,5 @@ Diese Übersicht hilft dabei:
 ###  Weiterführende Themen
 
 - [ReX-Light-Ansatz in der Anwenderdokumentation von Theobald Software](rex-light.md)  
-  Wie weit folgt unser Setup den Prinzipien eines ReX-Systems – auch ohne vollständiges XML oder CCMS?
 - [Funktionsdesign und Strukturprinzipien](fuktionsdesign.md)
+- [[Docs-as-Code trifft ISO – ein Vergleich](iso-din.md)]
