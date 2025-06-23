@@ -11,7 +11,7 @@ Diese Dokumentation analysiert, inwiefern das aktuelle Help-Center von Theobald 
 
 ---
 
-### 🔍 Überblick über Einzelthemen
+### Überblick über Einzelthemen
 
 - [Best Practices der klassischen Technischen Dokumentation](classic-td-best-practices.md)  
   Welche bewährten Methoden aus der klassischen Technischen Dokumentation finden sich in unserer Doku wieder?
@@ -22,9 +22,5 @@ Diese Dokumentation analysiert, inwiefern das aktuelle Help-Center von Theobald 
 - [Funktionsdesign und Strukturprinzipien](fuktionsdesign.md)  
   Wie ist unsere Doku inhaltlich aufgebaut? Gibt es Hinweise auf Funktionsdesign, Topic-Typen oder eine aufgabenorientierte Gliederung?
 
----
 
-### ✍️ Ziel dieser Sammlung
-
-Diese Dokumentation dient der systematischen Bewertung und Einordnung unserer technischen Inhalte im Spannungsfeld zwischen klassischen Methoden und moderner, dateibasierter Redaktion.
 
