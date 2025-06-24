@@ -1,5 +1,16 @@
 [
   {
+    "Version": "2025.6.24.28",
+    "LegacyReleaseDate": "2025-06-24 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "XtractUniversal",
+        "Component": "Destinations",
+        "Message": "Snowflake destination: Fixed a validation which blocked the key pair authentication method usage."
+      }
+    ]
+  },
+  {
     "Version": "2025.6.24.23",
     "LegacyReleaseDate": "2025-06-24 00:00:00Z",
     "Changes": [
