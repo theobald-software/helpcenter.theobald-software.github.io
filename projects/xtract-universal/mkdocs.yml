@@ -277,3 +277,4 @@ extra:
   runBtn: __[Run]__
   service: XtractService
   serviceName: XtractUniversal
+  certificateRenewal: xu-le.ps1

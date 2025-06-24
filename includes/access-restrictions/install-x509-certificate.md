@@ -102,5 +102,6 @@ The {{ productName }} server is now accessible via https protocol.
 *****
 #### Related Links
 - [Knowledge Base Article: Enable Secure Network Communication (SNC) via X.509 certificate](../../knowledge-base/enable-snc-using-pse-file.md)
+- [Knowledge Base Article: Certificate Renewal for TLS](../../knowledge-base/certificate-renewal.md)
 - [Change Service Account](../server/service-account.md)
 {% endif %}

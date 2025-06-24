@@ -237,3 +237,4 @@ extra:
   extraction: service
   Extraction: Service
   serviceName: yunIO
+  certificateRenewal: yunio-le.ps1
