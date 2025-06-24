@@ -4487,6 +4487,8 @@
       
         
       
+        
+      
     
     
       
@@ -4609,6 +4611,33 @@
     
   
     Authorize Access to Reports via Authorization Groups
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../certificate-renewal/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Certificate Renewal for TLS
   
 
     
@@ -5736,9 +5765,10 @@ The correctness of this X.509 certificate is ensured via the company's internal 
 </tbody>
 </table>
 <h3 id="step-by-step-guide">Step-by-Step Guide<a class="headerlink" data-preview="" href="#step-by-step-guide" title="Permanent link"></a></h3>
+<p>Follow the steps below to set up the SNC connectivity ins SAP:</p>
 <ol>
 <li>
-<p>Generate certificate for the application server and AD-user context from common Certificate Authority (ca).<br>
+<p>Generate the certificate for the application server and AD-user context from common Certificate Authority (ca).<br>
 <img alt="X.509 Certificate Details" class="img-responsive" src="/board-connector/assets/images/articles/x509-certificate_example.png" /></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -5746,7 +5776,7 @@ The correctness of this X.509 certificate is ensured via the company's internal 
 </div>
 </li>
 <li>
-<p>Convert pfx file to SAP PSE format e.g., <code>sapgenpse.exe import_p12 -p cert.pse cert.pfx</code>.</p>
+<p>Convert the .pfx file to SAP PSE format e.g., <code>sapgenpse.exe import_p12 -p cert.pse cert.pfx</code>.</p>
 </li>
 <li>Import the created PSE file via <strong>TA STRUST &gt; Edit mode &gt; PSE Import &gt; PSE Save as SNC Libcrypto</strong>.</li>
 <li>Edit the SNC configuration of the corresponding SAP user via transaction SU01 <span class="twemoji"><?xml version="1.0" encoding="UTF-8"?>
@@ -5754,17 +5784,18 @@ The correctness of this X.509 certificate is ensured via the company's internal 
 <defs><style>.cls-1,.cls-2{stroke-width:0px; }.cls-2{fill:none;}</style></defs>
 <path class="cls-2" d="m14.54,12.09c-.89.73-2.13,1.35-3.74,1.87v3.87c1.09-.33,1.99-.68,2.72-1.04.72-.36,1.47-.84,2.24-1.42v11.32h4.77V9.4h-3.9c-.5,1.07-1.2,1.96-2.09,2.69Z"/>
 <path d="m18,0C8.06,0,0,8.06,0,18s8.06,18,18,18,18-8.06,18-18S27.94,0,18,0Zm2.53,26.67h-4.77v-11.32c-.77.59-1.52,1.06-2.24,1.42-.72.36-1.63.71-2.72,1.04v-3.87c1.61-.52,2.85-1.14,3.74-1.87.89-.73,1.58-1.62,2.09-2.69h3.9v17.27Z"/>
-</svg></span>, <strong>SNC</strong> <span class="twemoji"><?xml version="1.0" encoding="UTF-8"?><svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36"><defs><style>.cls-1,.cls-2{stroke-width:0px;}.cls-2{fill:none;}</style></defs>
+</svg></span> &gt; <strong>SNC</strong> <span class="twemoji"><?xml version="1.0" encoding="UTF-8"?><svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36"><defs><style>.cls-1,.cls-2{stroke-width:0px;}.cls-2{fill:none;}</style></defs>
 <path class="cls-2" d="m18.63,21.79c.32-.26.96-.72,1.91-1.38,1.6-1.13,2.7-2.16,3.31-3.1s.91-1.93.91-2.97c0-.97-.26-1.85-.79-2.64s-1.25-1.36-2.18-1.74-2.21-.57-3.88-.57-2.84.2-3.74.6c-.9.4-1.6.97-2.09,1.71-.49.75-.83,1.78-1.02,3.11l4.73.38c.13-.96.39-1.63.77-2s.88-.57,1.48-.57,1.06.18,1.44.55c.38.37.57.81.57,1.33,0,.48-.19.98-.58,1.52-.39.53-1.27,1.31-2.65,2.34-2.26,1.68-3.81,3.13-4.63,4.36-.82,1.23-1.31,2.55-1.48,3.94h14.16v-3.85h-7.37c.43-.42.81-.77,1.13-1.03Z"/>
-<path d="m18,0C8.06,0,0,8.06,0,18s8.06,18,18,18,18-8.06,18-18S27.94,0,18,0Zm6.87,26.67h-14.16c.16-1.4.65-2.71,1.48-3.94.82-1.23,2.37-2.69,4.63-4.36,1.38-1.03,2.27-1.81,2.65-2.34.39-.53.58-1.04.58-1.52,0-.52-.19-.96-.57-1.33-.38-.37-.86-.55-1.44-.55s-1.09.19-1.48.57-.64,1.05-.77,2l-4.73-.38c.19-1.33.53-2.36,1.02-3.11.49-.75,1.19-1.32,2.09-1.71.9-.4,2.15-.6,3.74-.6s2.95.19,3.88.57,1.65.96,2.18,1.74.79,1.66.79,2.64c0,1.04-.3,2.02-.91,2.97s-1.71,1.98-3.31,3.1c-.95.66-1.59,1.12-1.91,1.38s-.7.61-1.13,1.03h7.37v3.85Z"/></svg></span>, <strong>SNC Name</strong> <span class="twemoji"><?xml version="1.0" encoding="UTF-8"?><svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36"><defs><style>.cls-1,.cls-2{stroke-width:0px;}.cls-2{fill:none;}</style></defs>
+<path d="m18,0C8.06,0,0,8.06,0,18s8.06,18,18,18,18-8.06,18-18S27.94,0,18,0Zm6.87,26.67h-14.16c.16-1.4.65-2.71,1.48-3.94.82-1.23,2.37-2.69,4.63-4.36,1.38-1.03,2.27-1.81,2.65-2.34.39-.53.58-1.04.58-1.52,0-.52-.19-.96-.57-1.33-.38-.37-.86-.55-1.44-.55s-1.09.19-1.48.57-.64,1.05-.77,2l-4.73-.38c.19-1.33.53-2.36,1.02-3.11.49-.75,1.19-1.32,2.09-1.71.9-.4,2.15-.6,3.74-.6s2.95.19,3.88.57,1.65.96,2.18,1.74.79,1.66.79,2.64c0,1.04-.3,2.02-.91,2.97s-1.71,1.98-3.31,3.1c-.95.66-1.59,1.12-1.91,1.38s-.7.61-1.13,1.03h7.37v3.85Z"/></svg></span> &gt; <strong>SNC Name</strong> <span class="twemoji"><?xml version="1.0" encoding="UTF-8"?><svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36"><defs><style>.cls-1,.cls-2{stroke-width:0px;}.cls-2{fill:none;}</style></defs>
 <path class="cls-2" d="m23.42,17.88c-.35-.22-.85-.41-1.51-.57.81-.45,1.42-.97,1.82-1.56.4-.59.6-1.26.6-1.99,0-1.25-.5-2.29-1.48-3.12-.99-.83-2.59-1.24-4.81-1.24-1.93,0-3.42.38-4.48,1.14-1.05.76-1.77,1.85-2.14,3.27l4.46.8c.12-.84.36-1.43.71-1.77.35-.34.8-.5,1.35-.5s.97.15,1.27.46c.31.31.46.72.46,1.24s-.21,1.01-.62,1.4c-.41.39-.93.59-1.55.59-.15,0-.35-.02-.61-.06l-.24,3.37c.65-.19,1.16-.28,1.53-.28.69,0,1.25.22,1.65.65s.61,1.04.61,1.83-.21,1.39-.63,1.85c-.42.46-.95.69-1.58.69s-1.1-.18-1.49-.55c-.39-.37-.68-1.03-.86-1.97l-4.71.62c.31,1.06.75,1.94,1.33,2.64s1.31,1.23,2.2,1.59c.89.36,2.11.54,3.66.54s2.86-.25,3.83-.74,1.72-1.19,2.24-2.1.78-1.86.78-2.84c0-.79-.16-1.47-.47-2.03-.31-.57-.75-1.02-1.32-1.37Z"/>
-<path d="m18.25,0C8.31,0,.25,8.06.25,18s8.06,18,18,18,18-8.06,18-18S28.19,0,18.25,0Zm6.17,24.13c-.52.91-1.26,1.61-2.24,2.1s-2.25.74-3.83.74-2.76-.18-3.66-.54c-.89-.36-1.63-.89-2.2-1.59s-1.02-1.58-1.33-2.64l4.71-.62c.19.95.47,1.61.86,1.97.39.37.89.55,1.49.55.63,0,1.16-.23,1.58-.69.42-.46.63-1.08.63-1.85s-.2-1.4-.61-1.83-.96-.65-1.65-.65c-.37,0-.88.09-1.53.28l.24-3.37c.26.04.47.06.61.06.62,0,1.13-.2,1.55-.59.41-.39.62-.86.62-1.4s-.16-.93-.46-1.24c-.31-.31-.73-.46-1.27-.46s-1.01.17-1.35.5c-.35.34-.58.93-.71,1.77l-4.46-.8c.37-1.42,1.08-2.51,2.14-3.27,1.05-.76,2.55-1.14,4.48-1.14,2.22,0,3.82.41,4.81,1.24.99.83,1.48,1.86,1.48,3.12,0,.73-.2,1.4-.6,1.99-.4.59-1.01,1.12-1.82,1.56.66.16,1.16.35,1.51.57.56.35,1,.81,1.32,1.37.31.57.47,1.25.47,2.03,0,.99-.26,1.94-.78,2.84Z"/></svg></span> = p:\&lt;Full Distinguished_Name&gt; <br> e.g., <code>p:EMAIL="RandomUser@domain",CN="Random User",OU="Users",OU="TheobaldSoftware",DC="theobald",DC="local"</code>.<br>
+<path d="m18.25,0C8.31,0,.25,8.06.25,18s8.06,18,18,18,18-8.06,18-18S28.19,0,18.25,0Zm6.17,24.13c-.52.91-1.26,1.61-2.24,2.1s-2.25.74-3.83.74-2.76-.18-3.66-.54c-.89-.36-1.63-.89-2.2-1.59s-1.02-1.58-1.33-2.64l4.71-.62c.19.95.47,1.61.86,1.97.39.37.89.55,1.49.55.63,0,1.16-.23,1.58-.69.42-.46.63-1.08.63-1.85s-.2-1.4-.61-1.83-.96-.65-1.65-.65c-.37,0-.88.09-1.53.28l.24-3.37c.26.04.47.06.61.06.62,0,1.13-.2,1.55-.59.41-.39.62-.86.62-1.4s-.16-.93-.46-1.24c-.31-.31-.73-.46-1.27-.46s-1.01.17-1.35.5c-.35.34-.58.93-.71,1.77l-4.46-.8c.37-1.42,1.08-2.51,2.14-3.27,1.05-.76,2.55-1.14,4.48-1.14,2.22,0,3.82.41,4.81,1.24.99.83,1.48,1.86,1.48,3.12,0,.73-.2,1.4-.6,1.99-.4.59-1.01,1.12-1.82,1.56.66.16,1.16.35,1.51.57.56.35,1,.81,1.32,1.37.31.57.47,1.25.47,2.03,0,.99-.26,1.94-.78,2.84Z"/></svg></span> = p:\&lt;Full Distinguished_Name&gt;, e.g., <code>p:EMAIL="RandomUser@domain",CN="Random User",OU="Users",OU="TheobaldSoftware",DC="theobald",DC="local"</code>.<br>
 <img alt="SNC User Settings" class="img-responsive" src="/board-connector/assets/images/articles/snc_user_settings.png" /></li>
-<li>Set up SNC authentication in the Board Connector SAP connection settings.</li>
+<li>Set up SNC authentication in the Board Connector SAP connection settings, see <a data-preview="" href="../../documentation/sap-connection/snc-authentication/#configure-snc-in-the-sap-source">Configure SNC in the SAP Source</a>.</li>
 </ol>
 <hr />
 <h4 id="releated-links">Releated Links<a class="headerlink" data-preview="" href="#releated-links" title="Permanent link"></a></h4>
 <ul>
+<li><a data-preview="" href="../certificate-renewal/">Certificate Renewal</a></li>
 <li><a href="https://help.sap.com/viewer/df185fd53bb645b1bd99284ee4e4a750/3.0/en-US/06d9e59a0fd44aa4aa082ffad7d618e3.html" target="_blank" rel="noopener">SAP Help: Workflow with X.509 Certificate without Secure Login Server</a></li>
 <li><a href="https://help.sap.com/doc/saphelp_nw70/7.0.31/en-us/e6/56f466e99a11d1a5b00000e835363f/content.htm?no_cache=true" target="_blank" rel="noopener">SAP Help: Secure Network Communications (SNC)</a></li>
 <li><a href="https://help.sap.com/doc/saphelp_nwpi71/7.1/en-US/d9/e8a740bbaa4d8f8bee6f7b173bd99f/content.htm?loaded_from_frameset=true" target="_blank" rel="noopener">SAP Help: Configuring SNC: External Programs AS ABAP Using RFC </a></li>
