@@ -24,22 +24,23 @@ The following article shows how to manually and automatically renew a X.509 cert
 	4. Renew the certificate with the same key using Windows AD Certificate Services.
 	5. Enable TLS in the Designer with the new certificate.
 	6. Disable anonymous access in the Designer.
-	7. Allow external access to yunIO using the firewall.
+	7. Allow external access to {{ productName }} using the firewall.
 
 {% else %}=== "Renew a Certificate with the Same Key"
 
-	1. Open the {{ productName }} Designer and navigate to **Settings > Server**.
-	2. In the *Web Server* tab, select the protocol **HTTP - Unrestricted** to disable TLS.
-	3. Click **[OK]** to save the settings. When prompted to restart the service, click **[OK]** again.
-	4. Renew the certificate with the same key using Windows AD Certificate Services.
-	5. Open the {{ productName }} Designer and 
-	6. Reference the new certificate, see [Install an X.509 Certificate](../documentation/access-restrictions/install-x.509-certificate.md/#integrate-the-x509-certificate).
+	1. Block external access to the {{ productName }} server using the firewall.
+	2. Open the {{ productName }} Designer and navigate to **Settings > Server**.
+	3. In the *Web Server* tab, select the protocol **HTTP - Unrestricted** to disable TLS.
+	4. Click **[OK]** to save the settings. When prompted to restart the service, click **[OK]** again.
+	5. Renew the certificate with the same key using Windows AD Certificate Services.
+	6. Open the {{ productName }} Designer and enable TLS with the new certificate, see [Activate TLS Encryption](../documentation/access-restrictions/restrict-server-access.md/#activate-tls-encryption).
 	7. Click **[OK]** to save the settings. When prompted to restart the service, click **[OK]** again.
+	8. Allow external access to the {{ productName }} server using the firewall.
 
 	
 !!! note
 		
-	If you use TLS encryption for the communication with the {{ productName }} Designer, make sure to reference the new certificate in the [*Configuration Server* tab](../documentation/server/server-settings.md/#configuration-server) of the server settings,.
+	If you use TLS encryption for the communication with the {{ productName }} Designer, make sure to also reference the new certificate in the [*Configuration Server*](../documentation/server/server-settings.md/#configuration-server) tab of the server settings.
 
 {% endif %}
 
