@@ -1,5 +1,16 @@
 [
   {
+    "Version": "2025.6.24.24",
+    "LegacyReleaseDate": "2025-06-24 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "TableCDC",
+        "Message": "Fixed a bug on where clause conversion, which created invalid statements when table had similar columns names."
+      }
+    ]
+  },
+  {
     "Version": "2025.6.20.11",
     "LegacyReleaseDate": "2025-06-20 00:00:00Z",
     "Changes": [
