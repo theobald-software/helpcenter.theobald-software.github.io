@@ -82,6 +82,12 @@ plugins:
   - mkdocs-pdf
   - render_swagger
   - redoc-tag
+  - llmstxt:
+      markdown_description: Long description of my project.
+      full_output: llms-full.txt
+      sections:
+        Usage documentation:
+          - xtract-universal/*
   - swagger-ui-tag:
       supportedSubmitMethods: []
   - neoteroi.mkdocsoad:
