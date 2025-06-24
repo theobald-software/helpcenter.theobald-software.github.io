@@ -14,6 +14,7 @@ hide:
 <div class="mdx-columns" markdown>
 
 - [Call Extractions via Script](call-extraction-via-script.md)
+- [Certificate Renewal for TLS](certificate-renewal.md)
 - [Create Extractions via Commandline](config-command-line-tool.md)
 - [Deactivate Usage Data Collection](deactivate-usage-analytics.md)
 - [Deploy Extractions Using Git Version Control](deploy-extractions-using-Git-version-control.md)

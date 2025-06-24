@@ -13,6 +13,7 @@ hide:
 
 <div class="mdx-columns" markdown>
 
+- [Certificate Renewal for TLS](certificate-renewal.md)
 - [Deactivate Usage Data Collection](deactivate-usage-analytics.md)
 - [Deploy Extractions Using Git Version Control](deploy-extractions-using-Git-version-control.md)
 - [Load Balancing](load-balancer.md)

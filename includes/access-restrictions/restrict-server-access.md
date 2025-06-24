@@ -79,4 +79,5 @@ For more information, see [Designer Access](restrict-designer-access.md/#restric
 #### Related Links
 - [Wikipedia: SPNEGO](https://en.wikipedia.org/wiki/SPNEGO)
 - [Knowledge Base Article: Enable Secure Network Communication (SNC) via X.509 certificate](../../knowledge-base/enable-snc-using-pse-file.md)
+- [Knowledge Base Article: Certificate Renewal for TLS](../../knowledge-base/certificate-renewal.md)
 - [Server Settings](../server/server-settings.md)

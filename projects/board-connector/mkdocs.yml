@@ -271,3 +271,4 @@ extra:
   runBtn: __[Run in Browser]__
   service: BCService
   serviceName: BOARD Connector
+  certificateRenewal: bc-le.ps1
