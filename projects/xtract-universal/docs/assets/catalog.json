@@ -1,5 +1,16 @@
 [
   {
+    "Version": "2025.6.26.18",
+    "LegacyReleaseDate": "2025-06-26 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Server",
+        "Component": "Server",
+        "Message": "Improved confidentiality of destination secrets"
+      }
+    ]
+  },
+  {
     "Version": "2025.6.24.28",
     "LegacyReleaseDate": "2025-06-24 00:00:00Z",
     "Changes": [
