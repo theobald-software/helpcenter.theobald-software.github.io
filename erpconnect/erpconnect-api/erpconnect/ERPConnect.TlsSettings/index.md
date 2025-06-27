@@ -1,0 +1,91 @@
+Namespace: [ERPConnect](../)\
+Assembly: ERPConnectStandard20.dll
+
+```csharp
+public sealed class TlsSettings
+
+```
+
+#### Inheritance
+
+[object](https://learn.microsoft.com/dotnet/api/system.object) ← [TlsSettings](./)
+
+#### Inherited Members
+
+[object.GetType()](https://learn.microsoft.com/dotnet/api/system.object.gettype), [object.ToString()](https://learn.microsoft.com/dotnet/api/system.object.tostring), [object.Equals(object?)](<https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)>), [object.Equals(object?, object?)](<https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)>), [object.ReferenceEquals(object?, object?)](https://learn.microsoft.com/dotnet/api/system.object.referenceequals), [object.GetHashCode()](https://learn.microsoft.com/dotnet/api/system.object.gethashcode)
+
+## Constructors
+
+### TlsSettings()
+
+```csharp
+public TlsSettings()
+
+```
+
+## Properties
+
+### ClientCertificateLogon
+
+Gets or sets whether a certificate found in the `ERPConnect.TlsSettings.ClientPse` should be used for authentication instead of user and password. If unset (null) the default NetWeaver library value is used. Corresponds to NetWeaver connection parameter "TLS_CLIENT_CERTIFICATE_LOGON".
+
+```csharp
+public bool? ClientCertificateLogon { get; set; }
+
+```
+
+#### Property Value
+
+[bool](https://learn.microsoft.com/dotnet/api/system.boolean)?
+
+### ClientPse
+
+The name of the client PSE file to use. When using `ERPConnect.TlsSettings.ClientCertificateLogon` it should also contain the client certificate used for authentication. Corresponds to NetWeaver connection parameter "TLS_CLIENT_PSE".
+
+```csharp
+public string ClientPse { get; set; }
+
+```
+
+#### Property Value
+
+[string](https://learn.microsoft.com/dotnet/api/system.string)
+
+### CryptoLibrary
+
+Gets or sets the path to the crypto library to use. The library will be loaded when opening an `ERPConnect.R3Connection` and cannot be changed once loaded for the current process, even when using a different `ERPConnect.R3Connection`. Corresponds fo NetWeaver ini parameter "TLS_SAPCRYPTOLIB".
+
+```csharp
+public string CryptoLibrary { get; set; }
+
+```
+
+#### Property Value
+
+[string](https://learn.microsoft.com/dotnet/api/system.string)
+
+### IsEnabled
+
+Gets or sets whether TLS is enabled. If unset (null) the default NetWeaver library value is used. Corresponds to NetWeaver connection parameter "USE_TLS".
+
+```csharp
+public bool? IsEnabled { get; set; }
+
+```
+
+#### Property Value
+
+[bool](https://learn.microsoft.com/dotnet/api/system.boolean)?
+
+### TrustAll
+
+Gets or sets whether certificate trust checks should be skipped. If unset (null) the default NetWeaver library value is used. Corresponds to NetWeaver connection parameter "TLS_TRUST_ALL".
+
+```csharp
+public bool? TrustAll { get; set; }
+
+```
+
+#### Property Value
+
+[bool](https://learn.microsoft.com/dotnet/api/system.boolean)?

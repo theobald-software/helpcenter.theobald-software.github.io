@@ -1,0 +1,28 @@
+# Xtract Core HelpCenter
+
+> Xtract Core is a Web API server solution for creating and configuring data extractions from SAP systems. Learn how to use Xtract Core by browsing our user documentation, changelog and more.
+
+Full: https://helpcenter.theobald-software.com/xtract-core/llms-full.txt
+
+## Getting Started
+
+- [Getting Started](https://helpcenter.theobald-software.com/xtract-core/getting-started/index.md)
+
+## Knowledge Base Articles
+
+- [Knowledge Base](https://helpcenter.theobald-software.com/xtract-core/knowledge-base/index.md)
+- [Check the Accessibility to an SAP System](https://helpcenter.theobald-software.com/xtract-core/knowledge-base/check-the-accessibility-to-an-sap-system/index.md)
+- [Function Module for Tables](https://helpcenter.theobald-software.com/xtract-core/knowledge-base/custom-function-module-for-table-extraction/index.md)
+- [Import an SAP Transport Request](https://helpcenter.theobald-software.com/xtract-core/knowledge-base/import-an-sap-transport-request/index.md)
+- [Install an X.509 Certificate](https://helpcenter.theobald-software.com/xtract-core/knowledge-base/install-x.509-certificate/index.md)
+- [Requirements](https://helpcenter.theobald-software.com/xtract-core/knowledge-base/requirements/index.md)
+- [SAP Authorization Objects](https://helpcenter.theobald-software.com/xtract-core/knowledge-base/sap-authority-objects/index.md)
+- [Supported SAP S/4HANA Versions](https://helpcenter.theobald-software.com/xtract-core/knowledge-base/supported-sap-and-hana-versions/index.md)
+- [Extraction Mechanism of Table](https://helpcenter.theobald-software.com/xtract-core/knowledge-base/table-extraction-mechanism/index.md)
+- [WHERE Clause Syntax](https://helpcenter.theobald-software.com/xtract-core/knowledge-base/where-clause/index.md)
+- [Xtract Core in a Hybrid Cloud Architecture](https://helpcenter.theobald-software.com/xtract-core/knowledge-base/xtract-core-in-a-hybrid-cloud-architecture/index.md)
+
+## API Reference
+
+- [API Reference](https://helpcenter.theobald-software.com/xtract-core/api-reference/index.md)
+

@@ -1,0 +1,140 @@
+Namespace: [Theobald.Ogc](../)\
+Assembly: ERPConnectStandard20.dll
+
+```csharp
+public readonly struct Xyz : IWellKnownSerializable<Xyz>
+
+```
+
+#### Implements
+
+[IWellKnownSerializable<Xyz>](../Theobald.Ogc.IWellKnownSerializable-1/)
+
+#### Inherited Members
+
+[object.GetType()](https://learn.microsoft.com/dotnet/api/system.object.gettype), [object.ToString()](https://learn.microsoft.com/dotnet/api/system.object.tostring), [object.Equals(object?)](<https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)>), [object.Equals(object?, object?)](<https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)>), [object.ReferenceEquals(object?, object?)](https://learn.microsoft.com/dotnet/api/system.object.referenceequals), [object.GetHashCode()](https://learn.microsoft.com/dotnet/api/system.object.gethashcode)
+
+## Constructors
+
+### Xyz(in double, in double, in double)
+
+```csharp
+public Xyz(in double x, in double y, in double z)
+
+```
+
+#### Parameters
+
+`x` [double](https://learn.microsoft.com/dotnet/api/system.double)
+
+`y` [double](https://learn.microsoft.com/dotnet/api/system.double)
+
+`z` [double](https://learn.microsoft.com/dotnet/api/system.double)
+
+## Properties
+
+### WkbDimensions
+
+```csharp
+public WkbDimensions WkbDimensions { get; }
+
+```
+
+#### Property Value
+
+[WkbDimensions](../Theobald.Ogc.WkbDimensions/)
+
+### X
+
+```csharp
+public double X { get; }
+
+```
+
+#### Property Value
+
+[double](https://learn.microsoft.com/dotnet/api/system.double)
+
+### Y
+
+```csharp
+public double Y { get; }
+
+```
+
+#### Property Value
+
+[double](https://learn.microsoft.com/dotnet/api/system.double)
+
+### Z
+
+```csharp
+public double Z { get; }
+
+```
+
+#### Property Value
+
+[double](https://learn.microsoft.com/dotnet/api/system.double)
+
+## Methods
+
+### AsBinary(in EwkbWriter)
+
+```csharp
+public EwkbWriter AsBinary(in EwkbWriter writer)
+
+```
+
+#### Parameters
+
+`writer` [EwkbWriter](../Theobald.Ogc.EwkbWriter/)
+
+#### Returns
+
+[EwkbWriter](../Theobald.Ogc.EwkbWriter/)
+
+### AsText(in StringBuilder)
+
+```csharp
+public void AsText(in StringBuilder builder)
+
+```
+
+#### Parameters
+
+`builder` [StringBuilder](https://learn.microsoft.com/dotnet/api/system.text.stringbuilder)
+
+### FromBinary(in EwkbReader, out Xyz)
+
+```csharp
+public static EwkbReader FromBinary(in EwkbReader reader, out Xyz xyz)
+
+```
+
+#### Parameters
+
+`reader` [EwkbReader](../Theobald.Ogc.EwkbReader/)
+
+`xyz` [Xyz](./)
+
+#### Returns
+
+[EwkbReader](../Theobald.Ogc.EwkbReader/)
+
+### Read(in EwkbReader, out Xyz)
+
+```csharp
+public EwkbReader Read(in EwkbReader reader, out Xyz xyz)
+
+```
+
+#### Parameters
+
+`reader` [EwkbReader](../Theobald.Ogc.EwkbReader/)
+
+`xyz` [Xyz](./)
+
+#### Returns
+
+[EwkbReader](../Theobald.Ogc.EwkbReader/)

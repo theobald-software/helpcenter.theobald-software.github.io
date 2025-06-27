@@ -1,0 +1,44 @@
+The following article shows how to install an X.509 certificate for transport encryption.\
+The installation of an X.509 certificate is required to use [Transport Layer Security (TLS)](https://learn.microsoft.com/en-us/windows/win32/secauthn/transport-layer-security-protocol) and secure authentication with yunIO.
+
+### About X.509 Certificates
+
+There are two main approaches for creating an X.509 certificate:
+
+- Certificate released by an (internal) certification authority (CA)
+- Self-signed certificate
+
+On test environments you can use a self-signed certificate. For production environment it is recommended to use a certificate released by an (internal) certificate authority (CA).
+
+### Create and Import the X.509 Certificate
+
+Make sure to have a TLS certificate issued by your IT network team considering the following points:
+
+1. The certificate property “Subject Alternative Name” contains the DNS name of the server that runs the yunIO Windows service. When activating TLS, the *Subject Alternative Name* is used as the new hostname.
+1. The certificate common name (CN) attribute contains the DNS name of the server. To display the Common Name (CN) of the certificate, double-click the certificate in the Cetrificate Manager and navigate to the *Details* tab.
+1. Import the certificate to the [Windows Certificate Store](<https://technet.microsoft.com/en-us/ms788967(v=vs.91)>) of the machine, that runs the yunIO Windows service using the Microsoft Management Console (mmc.exe). The depicted example uses the server name "TODD":
+1. Right-click the certificate and navigate to **All Tasks > Manage private keys** to add a new permission entry for the Windows user that runs the yunIO Windows service.
+1. Enter the object name "NT Service\\yunIO Service" and click **[Check Names]** before applying the changes.
+
+The certificate is now available on your machine. For information on how to renew a certificate, see [Certificate Renewal for TLS](../certificate-renewal/).
+
+Note
+
+The Windows Certificate Store works with most browsers. NMozilla Firefox offers its own certificate storage. Configure your Firefox browser to trust certificates in the Windows certificate store or import the certificate via an enterprise policy, see [Mozilla Support: Setting Up Certificate Authorities (CAs) in Firefox](https://support.mozilla.org/en-US/kb/setting-certificate-authorities-firefox).
+
+### Integrate the X.509 Certificate
+
+1. Import the certificate to the Windows Certificate Store using Microsoft Management Console (mmc). In the example shown, the server name is "sherri":
+1. Open the yunIO Designer and navigate to the *Settings* menu.
+1. Click **[Pick Certificate]** to reference the X.509 certificate.\
+   Information about the currently saved certificate is displayed in the Transport Layer Security section of the menu.
+1. Click **Enable TLS** to activate Transport Layer Security, see [Documentation: Server Settings](../../documentation/server-settings/).
+1. Click **[Save]** and restart the yunIO Windows service to implement the changes.
+
+The yunIO Designer and the services created in yunIO are now accessible via https protocol.
+
+#### Related Links:
+
+- [Certificate Renewal for TLS](../certificate-renewal/)
+- [Enable Secure Network Communication (SNC) via X.509 certificate](../enable-snc-using-pse-file/)
+- [Documentation: Server Settings](../../documentation/server-settings/)
