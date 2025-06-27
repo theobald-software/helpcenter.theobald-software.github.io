@@ -92,6 +92,17 @@ plugins:
         target: _blank # opens all external links in new tabs
   - meta # define front matter of multiple ,md files in .meta.yml file 
   - tags # enables tags in front matter
+  - llmstxt:
+      markdown_description: >-
+        Full: https://helpcenter.theobald-software.com/yunio/llms-full.txt
+      full_output: llms-full.txt
+      sections:
+        Getting Started:
+         - getting-started.md
+        User Documentation:
+         - documentation/*.md
+        Knowledge Base Articles:
+         - knowledge-base/*.md
   - search:
       lang: en
       #separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
@@ -107,8 +118,6 @@ plugins:
   - group:
       enabled: !ENV CI
       plugins:
-        - exclude-unused-files:
-             file_types_to_check: ["png", "jpg", "jpeg", "gif"]
         - git-revision-date-localized:
              exclude:
                - index.md

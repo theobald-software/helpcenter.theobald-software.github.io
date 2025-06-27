@@ -5,7 +5,14 @@ site_name: Theobald Software HelpCenter
 site_url: https://helpcenter.theobald-software.com/
 #site_author: Valerie Schipka
 site_description: >-
-  The Theobald Software HelpCenters contain all documentation about our products.
+  The Theobald Software HelpCenter contains user documentation and knowledge base article for the following products:
+  Xtract Universal
+  Xtract IS
+  Xtract for Alteryx
+  Board Connector
+  ERPConnect
+  yunIO
+  Xtract Core
 
 # Repository
 repo_name: theobald-software/helpcenter.theobald-software.github.io
@@ -83,11 +90,37 @@ plugins:
   - render_swagger
   - redoc-tag
   - llmstxt:
-      markdown_description: Long description of my project.
-      full_output: llms-full.txt
+      markdown_description: >-
+        # User Documentation and Knowledge Base for Xtract IS
+        Xtract IS is a powerful SAP plug-in for SQL Server Integration Services to extract mass data.
+        Full: https://helpcenter.theobald-software.com/xtract-is/llms-full.txt
+
+        # User Documentation and Knowledge Base for Xtract Universal
+        Xtract Universal is a flexible SAP interface for databases, analytics, BI or cloud solutions.
+        Full: https://helpcenter.theobald-software.com/xtract-universal/llms-full.txt
+
+        # User Documentation Knowledge Base and Templates for Xtract for Alteryx
+        Xtract for Alteryx integrates SAP data into Alteryx by offering a simple toolbox for the Alteryx Designer.
+        Full: https://helpcenter.theobald-software.com/xtract-for-alteryx/llms-full.txt
+
+        # User Documentation and Knowledge Base for Xtract Core
+        Xtract Core is a web API server to extract SAP data and to write them to target environments using web calls. It can be used as a whitelabel solution.
+        Full: https://helpcenter.theobald-software.com/xtract-core/llms-full.txt
+
+        # User Documentation and Knowledge Base for Board Connector
+        Board Connector makes SAP data available directly from Board, without an additional data warehouse. 
+        Full: https://helpcenter.theobald-software.com/board-connector/llms-full.txt
+
+        # HelpCenter with User Documentation and Knowledge Base for ERPConnect
+        ERPConnect is a .NET programming library to develop SAP interfaces.
+        Full: https://helpcenter.theobald-software.com/erpconnect/llms-full.txt
+
+        # HelpCenter with User Documentation and Knowledge Base for yunIO
+        yunIO is an SAP process automation tool for cloud environment that accesses SAP via web services.
+
       sections:
-        Usage documentation:
-          - xtract-universal/*
+        Theobald Software Products:
+         - index.md
   - swagger-ui-tag:
       supportedSubmitMethods: []
   - neoteroi.mkdocsoad:
@@ -127,9 +160,6 @@ plugins:
   - group:
       enabled: !ENV CI
       plugins:
-        - exclude-unused-files:
-             file_types_to_check: ["png", "jpg", "jpeg", "gif"]
-        - optimize # compresses images and files
         - minify: # minifies HTML by stripping all whitespace from the generated documentation
             minify_html: true
 
