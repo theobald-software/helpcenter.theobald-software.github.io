@@ -37,11 +37,11 @@ Diese Übersicht hilft dabei:
 
 | Best Practices-Kriterium                                     | Umsetzung bei TS       | Bemerkung |
 |--------------------------------------------------------------|-------------------------|-----------|
-| Modularisierung: Inhalte in wiederverwendbare Einheiten      | ✅ / ◑ / ❌          |           |
-| Topic-orientierung: Ein Topic = eine Informationseinheit     | ✅ / ◑ / ❌          |           |
-| Funktionale Gliederung (Task, Concept, Reference)            | ✅ / ◑ / ❌          |           |
-| Informationsmuster (Chunking, klare Topic-Strukturen)        | ✅ / ◑ / ❌          |           |
-| Inhaltsstruktur konsistent über das gesamte Werk             | ✅ / ◑ / ❌          |           |
+| Modularisierung: Inhalte in wiederverwendbare Einheiten      | ✅          |           |
+| Topic-orientierung: Ein Topic = eine Informationseinheit     | ◑          |  mehr Info notwendig       |
+| Funktionale Gliederung (Task, Concept, Reference)            | ✅          | z. B. auch API          |
+| Informationsmuster (Chunking, klare Topic-Strukturen)        | ✅           |           |
+| Inhaltsstruktur konsistent über das gesamte Werk             | ✅ / ◑ / ❌          |     ?      |
 
 ---
 
@@ -49,11 +49,11 @@ Diese Übersicht hilft dabei:
 
 | Best Practices-Kriterium                                     | Umsetzung bei TS       | Bemerkung |
 |--------------------------------------------------------------|-------------------------|-----------|
-| Single Source Publishing aktiv genutzt                       | ✅ / ◑ / ❌          |           |
-| Includes systematisch eingesetzt                             | ✅ / ◑ / ❌          |           |
-| Variablen / Conditional Text im Einsatz                      | ✅ / ◑ / ❌          |           |
-| Varianten durch Metadaten oder Strukturen steuerbar          | ✅ / ◑ / ❌          |           |
-| Kein Copy & Paste, sondern zentrale Steuerung                | ✅ / ◑ / ❌          |           |
+| Single Source Publishing aktiv genutzt                       | ✅         |           |
+| Includes systematisch eingesetzt                             | ✅        |           |
+| Variablen / Conditional Text im Einsatz                      | ✅        |           |
+| Varianten durch Metadaten oder Strukturen steuerbar          | ✅   |           |
+| Kein Copy & Paste, sondern zentrale Steuerung                | ◑        |           |
 
 ---
 
@@ -61,10 +61,10 @@ Diese Übersicht hilft dabei:
 
 | Best Practices-Kriterium                                     | Umsetzung bei TS       | Bemerkung |
 |--------------------------------------------------------------|-------------------------|-----------|
-| Inhaltsverzeichnis, Breadcrumbs, Index vorhanden             | ✅ / ◑ / ❌          |           |
-| Navigationsstruktur logisch und zielgruppengerecht           | ✅ / ◑ / ❌          |           |
-| Interne Verlinkung systematisch aufgebaut                    | ✅ / ◑ / ❌          |           |
-| Orientierungsinfos (Version, Zielgruppe) vorhanden           | ✅ / ◑ / ❌          |           |
+| Inhaltsverzeichnis, Breadcrumbs, Index vorhanden             | ✅         |           |
+| Navigationsstruktur logisch und zielgruppengerecht           | ✅         |           |
+| Interne Verlinkung systematisch aufgebaut                    | ❌          |           |
+| Orientierungsinfos (Version, Zielgruppe) vorhanden           | ✅          |           |
 
 ---
 
@@ -72,10 +72,10 @@ Diese Übersicht hilft dabei:
 
 | Best Practices-Kriterium                                     | Umsetzung bei TS       | Bemerkung |
 |--------------------------------------------------------------|-------------------------|-----------|
-| Konsistente Terminologie, ggf. mit Glossar / Termbank        | ✅ / ◑ / ❌          |           |
-| Imperativ, Aktivform, kurze Sätze                            | ✅ / ◑ / ❌          |           |
-| Zielgruppenorientierte Sprache                               | ✅ / ◑ / ❌          |           |
-| Sprachstandard dokumentiert (Sprachleitfaden)                | ✅ / ◑ / ❌          |           |
+| Konsistente Terminologie, ggf. mit Glossar / Termbank        | ◑          |           |
+| Imperativ, Aktivform, kurze Sätze                            | ✅          |           |
+| Zielgruppenorientierte Sprache                               | ✅        |           |
+| Sprachstandard dokumentiert (Sprachleitfaden)                | ✅       |           |
 
 ---
 
@@ -83,10 +83,10 @@ Diese Übersicht hilft dabei:
 
 | Best Practices-Kriterium                                     | Umsetzung bei TS       | Bemerkung |
 |--------------------------------------------------------------|-------------------------|-----------|
-| Warnungen normkonform formuliert                             | ✅ / ◑ / ❌          |           |
-| Warnhinweise visuell hervorgehoben                           | ✅ / ◑ / ❌          |           |
-| Sicherheitsinformationen vor Aufgaben platziert              | ✅ / ◑ / ❌          |           |
-| CE-/rechtliche Anforderungen berücksichtigt                  | ✅ / ◑ / ❌          |           |
+| Warnungen normkonform formuliert                             | ✅         |           |
+| Warnhinweise visuell hervorgehoben                           | ✅          |           |
+| Sicherheitsinformationen vor Aufgaben platziert              | ✅          |   in Makrdown Samples bei Waning einfügen, dass es immer zu Anfang steht        |
+| CE-/rechtliche Anforderungen berücksichtigt                  | ❌          |           |
 
 ---
 
@@ -94,11 +94,11 @@ Diese Übersicht hilft dabei:
 
 | Best Practices-Kriterium                                     | Umsetzung bei TS       | Bemerkung |
 |--------------------------------------------------------------|-------------------------|-----------|
-| Einheitlicher Grafikstil und Formatvorgaben                  | ✅ / ◑ / ❌          |           |
-| Einsatz von Icons und Screenshots geregelt                   | ✅ / ◑ / ❌          |           |
-| Tabellen für strukturierte Infos genutzt                     | ✅ / ◑ / ❌          |           |
-| Mobile Darstellung / Responsive Design berücksichtigt        | ✅ / ◑ / ❌          |           |
-| Barrierefreiheit: Alternativtexte, klare Kontraste           | ✅ / ◑ / ❌          |           |
+| Einheitlicher Grafikstil und Formatvorgaben                  | ✅       |           |
+| Einsatz von Icons und Screenshots geregelt                   | ✅      |           |
+| Tabellen für strukturierte Infos genutzt                     | ✅        |           |
+| Mobile Darstellung / Responsive Design berücksichtigt        | ✅     |           |
+| Barrierefreiheit: Alternativtexte, klare Kontraste           | ◑          |MKDocs interne Konfiguration           |
 
 ---
 
@@ -106,11 +106,11 @@ Diese Übersicht hilft dabei:
 
 | Best Practices-Kriterium                                     | Umsetzung bei TS       | Bemerkung |
 |--------------------------------------------------------------|-------------------------|-----------|
-| Redaktionsprozess definiert und dokumentiert                 | ✅ / ◑ / ❌          |           |
-| Redaktionsleitfaden vorhanden (Text, Auszeichnung, Stil)     | ✅ / ◑ / ❌          |           |
-| Reviewverfahren regelmäßig durchgeführt                      | ✅ / ◑ / ❌          |           |
-| Technische Prüfung (Linter, Broken Links, Validierung)       | ✅ / ◑ / ❌          |           |
-| Versionskontrolle (z. B. Git) im Einsatz                     | ✅ / ◑ / ❌          |           |
+| Redaktionsprozess definiert und dokumentiert                 | ✅          |           |
+| Redaktionsleitfaden vorhanden (Text, Auszeichnung, Stil)     | ✅          |           |
+| Reviewverfahren regelmäßig durchgeführt                      | ✅         |           |
+| Technische Prüfung (Linter, Broken Links, Validierung)       | ✅          |           |
+| Versionskontrolle (z. B. Git) im Einsatz                     | ✅         |           |
 
 ---
 
@@ -118,10 +118,10 @@ Diese Übersicht hilft dabei:
 
 | Best Practices-Kriterium                                     | Umsetzung bei TS       | Bemerkung |
 |--------------------------------------------------------------|-------------------------|-----------|
-| Einheitliches Metadatenmodell                                | ✅ / ◑ / ❌          |           |
-| iiRDS- oder Content-Delivery-kompatibel                      | ✅ / ◑ / ❌          |           |
-| Suchfunktion und Filterbarkeit gegeben                       | ✅ / ◑ / ❌          |           |
-| Versionierung & Veröffentlichung nachvollziehbar dokumentiert| ✅ / ◑ / ❌          |           |
+| Einheitliches Metadatenmodell                                | ✅           |           |
+| iiRDS- oder Content-Delivery-kompatibel                      | ❌          |   trifft nicht zu        |
+| Suchfunktion und Filterbarkeit gegeben                       | ✅          |Filterbarkeit?           |
+| Versionierung & Veröffentlichung nachvollziehbar dokumentiert| ✅         |           |
 
 ****
 ###  Weiterführende Themen

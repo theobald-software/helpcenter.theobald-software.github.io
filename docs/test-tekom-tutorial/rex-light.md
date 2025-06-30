@@ -33,7 +33,12 @@ Ziel ist es, Inhalte:
 ---
 
 ### Metadatensteuerung
-Metadaten im Frontmatter...
+Erweitertes dateibasiertes Modell:
+- Strikte Ordnerstruktur + Naming Conventions
+- Includes zur Wiederverwendung
+- Variablen für Varianten
+- YAML-/Frontmatter oder Build-Metadaten (z. B. Produkt, Variablenausgaben)
+- Redaktionsleitfaden für Struktur, Benennung, Inhalte
 
 
 ###  Fazit
@@ -44,6 +49,8 @@ Das Help Center von Theobald Software orientiert sich an zentralen Prinzipien de
 - **Wiederverwendung**
 - **Variantensteuerung**
 - **Single Source Publishing**
+
+ ✅ / ◑ / ❌ 
 
 Da jedoch strukturierte Metadaten, Topic-Typisierung und ein Redaktionssystem fehlen, sprechen wir von einem **ReX-light-Ansatz**.
 
