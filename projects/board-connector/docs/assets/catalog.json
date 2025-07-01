@@ -1,5 +1,17 @@
 [
   {
+    "Version": "2025.6.30.22",
+    "LegacyReleaseDate": "2025-06-30 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Server",
+        "Component": "General",
+        "Message": "Fixed multiple bugs in the usage analytics feature",
+        "ReleaseNote": "- Fixed a bug where usage analytics feature missed time frame for data collection\n- Fixed a bug where usage analytics feature prevented the service from stopping gracefully"
+      }
+    ]
+  },
+  {
     "Version": "2025.6.26.19",
     "LegacyReleaseDate": "2025-06-26 00:00:00Z",
     "Changes": [
