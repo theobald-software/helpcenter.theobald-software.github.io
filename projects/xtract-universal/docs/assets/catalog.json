@@ -1,5 +1,27 @@
 [
   {
+    "Version": "2025.7.1.24",
+    "LegacyReleaseDate": "2025-07-01 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "TableCDC",
+        "Message": "Fixed a bug on the function modules to get DB triggers for DB2, DB4 and DB6. Requires update of /THEO/CDC_ECC."
+      }
+    ]
+  },
+  {
+    "Version": "2025.7.1.7",
+    "LegacyReleaseDate": "2025-07-01 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "TableCDC",
+        "Message": "Fixed a bug on where clause conversion when a field is present multiple times in the statement."
+      }
+    ]
+  },
+  {
     "Version": "2025.6.30.20",
     "LegacyReleaseDate": "2025-06-30 00:00:00Z",
     "Changes": [
