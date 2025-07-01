@@ -1,5 +1,72 @@
 [
   {
+    "Version": "2025.6.30.20",
+    "LegacyReleaseDate": "2025-06-30 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Server",
+        "Component": "General",
+        "Message": "Fixed multiple bugs in the usage analytics feature",
+        "ReleaseNote": "- Fixed a bug where usage analytics feature missed time frame for data collection\n- Fixed a bug where usage analytics feature prevented the service from stopping gracefully"
+      }
+    ]
+  },
+  {
+    "Version": "2025.6.26.18",
+    "LegacyReleaseDate": "2025-06-26 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Server",
+        "Component": "Server",
+        "Message": "Improved confidentiality of destination secrets"
+      }
+    ]
+  },
+  {
+    "Version": "2025.6.20.10",
+    "LegacyReleaseDate": "2025-06-20 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Server",
+        "Component": "General",
+        "Message": "Fixed a soundness issue during worker startup, where workers could be killed while serving requests leading to corrupt extraction states in the worst case."
+      }
+    ]
+  },
+  {
+    "Version": "2025.6.18.10",
+    "LegacyReleaseDate": "2025-06-18 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "BAPI",
+        "Message": "Fixed an issue where input of decimal values was not possible"
+      }
+    ]
+  },
+  {
+    "Version": "2025.6.13.20",
+    "LegacyReleaseDate": "2025-06-13 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Extractors",
+        "Component": "OHS",
+        "Message": "Fixed a bug where OHS data packages would not correctly communicate their size."
+      }
+    ]
+  },
+  {
+    "Version": "2025.6.12.21",
+    "LegacyReleaseDate": "2025-06-12 00:00:00Z",
+    "Changes": [
+      {
+        "Product": "Theobald.Server",
+        "Component": "General",
+        "Message": "Fixed a bug where error information would not be handled correctly by the server causing broken responses or missing error information."
+      }
+    ]
+  },
+  {
     "Version": "2025.5.28.14",
     "LegacyReleaseDate": "2025-05-28 00:00:00Z",
     "Changes": [
